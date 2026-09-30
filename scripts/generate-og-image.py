@@ -8,12 +8,15 @@ WIDTH = 1200
 HEIGHT = 630
 
 # Paths
-LOGO_PATH = "public/UpdatedWhenLogo.png"
+LOGO_PATH = "assets/icon/icon-master.jpg"
 OUTPUT_PATH = "public/og-image.png"
 
 def main():
     # Load logo
     logo = Image.open(LOGO_PATH).convert("RGBA")
+    # The master painting is 1024px square; fit it to the card's height.
+    if logo.height > HEIGHT:
+        logo = logo.resize((HEIGHT, HEIGHT), Image.LANCZOS)
 
     # Sample background color from top-left corner of the logo
     background_color = logo.getpixel((0, 0))[:3]

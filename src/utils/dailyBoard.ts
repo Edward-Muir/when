@@ -23,7 +23,7 @@ import { readJson, writeJson } from './storage';
 const DAILY_BOARD_KEY = 'when-daily-board';
 
 /** A failed placement with its event reduced to a slug. */
-interface StoredFailure {
+export interface StoredFailure {
   name: string;
   attemptedPosition: number;
   correctPosition?: number;

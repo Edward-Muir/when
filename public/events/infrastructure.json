@@ -14,7 +14,11 @@
     "color": "#202122",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -8000
+    "year_end": -8000,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "jericho-walls",
@@ -31,7 +35,10 @@
     "color": "#302013",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -7800
+    "year_end": -7800,
+    "regions": [
+      "Palestine"
+    ]
   },
   {
     "name": "catalhoyuk-settlement",
@@ -48,7 +55,11 @@
     "color": "#2a1e18",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -5950
+    "year_end": -5950,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "skara-brae",
@@ -65,7 +76,10 @@
     "color": "#271f1a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -2500
+    "year_end": -2500,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "stonehenge-begins",
@@ -81,7 +95,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stonehenge",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "step-pyramid-djoser",
@@ -97,7 +114,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pyramid_of_Djoser",
     "color": "#2e364b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "pyramids",
@@ -113,7 +133,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
     "color": "#261f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "stonehenge",
@@ -129,7 +152,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stonehenge",
     "color": "#403e3f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "sphinx-built",
@@ -145,7 +171,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza",
     "color": "#7c5832",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "mohenjo-daro",
@@ -161,7 +190,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mohenjo-daro",
     "color": "#342622",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Pakistan"
+    ]
   },
   {
     "name": "ziggurat-ur",
@@ -177,7 +209,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ziggurat_of_Ur",
     "color": "#261f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "palace-knossos",
@@ -193,7 +228,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Knossos",
     "color": "#3d3128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "mycenaean-citadels",
@@ -210,7 +248,10 @@
     "color": "#5a4231",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -1200
+    "year_end": -1200,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "lion-gate-mycenae",
@@ -226,7 +267,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lion_Gate",
     "color": "#a37235",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "solomons-temple",
@@ -242,7 +286,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "rome-founded",
@@ -258,7 +306,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Founding_of_Rome",
     "color": "#393036",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "ishtar-gate",
@@ -274,7 +325,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ishtar_Gate",
     "color": "#291f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "persepolis-founded",
@@ -290,7 +344,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Persepolis",
     "color": "#533a28",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "parthenon-completed",
@@ -306,7 +363,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Parthenon",
     "color": "#9a8b81",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "colossus-rhodes",
@@ -322,7 +382,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rhodes_Colossus",
     "color": "#464444",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "lighthouse-alexandria",
@@ -338,7 +401,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria",
     "color": "#212123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "terracotta-army",
@@ -354,7 +420,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
     "color": "#584130",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "trajan-column",
@@ -370,7 +439,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan's_Column",
     "color": "#202125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "hadrians-wall",
@@ -386,7 +458,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hadrian's_Wall",
     "color": "#271d2a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "baths-caracalla",
@@ -402,7 +478,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Baths_of_Caracalla",
     "color": "#4f413a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "constantinople-founded",
@@ -418,7 +497,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
     "color": "#232021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "grand-canal-china",
@@ -434,7 +517,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Canal_(China)",
     "color": "#212123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "dome-rock-completed",
@@ -450,7 +536,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dome_of_the_Rock",
     "color": "#232324",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine",
+      "Syria"
+    ]
   },
   {
     "name": "nara-todaiji",
@@ -466,7 +557,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tōdai-ji",
     "color": "#271e20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "great-mosque-cordoba",
@@ -482,7 +576,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mosque–Cathedral_of_Córdoba",
     "color": "#3c2b1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "tower-london",
@@ -498,7 +595,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tower_of_London",
     "color": "#383c36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "great-zimbabwe",
@@ -515,7 +615,10 @@
     "color": "#a39d89",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1450
+    "year_end": 1450,
+    "regions": [
+      "Zimbabwe"
+    ]
   },
   {
     "name": "leaning-tower-pisa",
@@ -531,7 +634,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_Baptistery",
     "color": "#484b31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "sistine-chapel-completed",
@@ -547,7 +653,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sistine_Chapel",
     "color": "#212028",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "kremlin-walls",
@@ -563,7 +673,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Kremlin_Wall",
     "color": "#391410",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "st-peters-basilica-begins",
@@ -579,7 +693,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/St._Peter's_Basilica",
     "color": "#2c1d16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "chateau-chambord",
@@ -595,7 +713,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Château_de_Chambord",
     "color": "#433e3f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "escorial-palace",
@@ -611,7 +732,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/El_Escorial",
     "color": "#272219",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "golden-temple-amritsar",
@@ -627,7 +751,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Temple",
     "color": "#25201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "rialto-bridge",
@@ -643,7 +770,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rialto_Bridge",
     "color": "#1d2320",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "taj-mahal-built",
@@ -659,7 +789,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mumtaz_Mahal",
     "color": "#40302b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "potala-palace",
@@ -675,7 +808,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Potala_Palace",
     "color": "#493122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "taj-mahal-completed",
@@ -691,7 +827,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Taj_Mahal",
     "color": "#716b61",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "versailles-expanded",
@@ -707,7 +846,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Palace_of_Versailles",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "buckingham-palace",
@@ -723,7 +865,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Buckingham_Palace",
     "color": "#281f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "st-pauls-completed",
@@ -739,7 +884,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/St_Paul's_Cathedral",
     "color": "#2a1d1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "ladoga-canal",
@@ -755,7 +903,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ladoga_Canal",
     "color": "#2c1b21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "schonbrunn-palace",
@@ -771,7 +923,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Schönbrunn_Palace",
     "color": "#2a1f16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "catherine-palace",
@@ -787,7 +942,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Catherine_Palace",
     "color": "#442c1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "winter-palace-completed",
@@ -803,7 +962,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Winter_Palace",
     "color": "#8b6242",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "steam-engine",
@@ -819,7 +982,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
     "color": "#23211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "iron-bridge",
@@ -835,7 +1001,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Iron_Bridge",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "white-house-completed",
@@ -851,7 +1020,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/White_House",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "singapore-founded",
@@ -867,7 +1039,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trading_post",
     "color": "#b0ae9c",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Singapore",
+      "United Kingdom"
+    ]
   },
   {
     "name": "erie-canal",
@@ -883,7 +1059,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Erie_Canal",
     "color": "#2e2f2c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-railway",
@@ -899,7 +1078,10 @@
     "image_height": 440,
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "ohio-canals-authorized",
@@ -915,7 +1097,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ohio_and_Erie_Canal",
     "color": "#2c2b26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "menai-suspension-bridge",
@@ -931,7 +1116,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Menai_Suspension_Bridge",
     "color": "#afaea5",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "liverpool-manchester-railway",
@@ -947,7 +1135,10 @@
     "image_height": 440,
     "color": "#b6ae8f",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "telegraph",
@@ -963,7 +1154,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Electrical_telegraph",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "crystal-palace",
@@ -979,13 +1173,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Crystal_Palace",
     "color": "#33322b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "india-first-railway",
     "friendly_name": "India's First Railway",
     "year": 1853,
-    "category": "media",
+    "category": "architecture",
     "description": "India's first passenger train ran between Mumbai and Thane.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/india-first-railway_zt7esw?_a=BAMAMikS0",
@@ -995,7 +1192,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "United Kingdom"
+    ]
   },
   {
     "name": "london-underground",
@@ -1011,7 +1212,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/London_Underground",
     "color": "#23211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "brooklyn-bridge-begins",
@@ -1027,7 +1231,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
     "color": "#313434",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "suez-canal",
@@ -1043,7 +1250,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Suez_Canal",
     "color": "#313636",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "France"
+    ]
   },
   {
     "name": "transcontinental-railroad",
@@ -1059,7 +1270,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Transcontinental_railroad",
     "color": "#332920",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "light-bulb",
@@ -1075,7 +1289,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Edison_light_bulb",
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "brooklyn-bridge-completed",
@@ -1091,7 +1308,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
     "color": "#2a2f32",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "canadian-pacific-railway",
@@ -1107,7 +1327,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Canadian_Pacific_Railway",
     "color": "#1e2225",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "automobile",
@@ -1123,7 +1346,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen",
     "color": "#1f2125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "statue-liberty",
@@ -1139,7 +1365,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Liberty_Island",
     "color": "#7d7b73",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United States"
+    ]
   },
   {
     "name": "eiffel-tower",
@@ -1155,13 +1385,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Eiffel_Tower_replicas_and_derivatives",
     "color": "#322921",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "ferris-wheel-invented",
     "friendly_name": "First Ferris Wheel Built",
     "year": 1893,
-    "category": "media",
+    "category": "architecture",
     "description": "George Ferris built his wheel for the Chicago World's Fair.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ferris-wheel-invented_kbf2cg?_a=BAMAMikS0",
@@ -1171,7 +1404,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ferris_Wheel_(1893)",
     "color": "#2f302e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "tower-bridge-london",
@@ -1187,7 +1423,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tower_Bridge",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "flatiron-building",
@@ -1203,7 +1442,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Flatiron_Building",
     "color": "#b2ad9f",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "trans-siberian-railway",
@@ -1219,7 +1461,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway",
     "color": "#22211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "panama-canal",
@@ -1235,7 +1482,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Panama_Canal",
     "color": "#291f15",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Panama",
+      "United States"
+    ]
   },
   {
     "name": "lincoln-memorial",
@@ -1251,7 +1502,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lincoln_Memorial",
     "color": "#493623",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "television",
@@ -1267,7 +1521,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_television",
     "color": "#262019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "la-city-hall",
@@ -1283,7 +1540,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_City_Hall",
     "color": "#262019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "chrysler-building",
@@ -1299,7 +1559,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chrysler_Building",
     "color": "#1d2227",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "empire-state-building",
@@ -1315,7 +1578,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Empire_State_Building",
     "color": "#413221",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "radio-city-music-hall",
@@ -1331,7 +1597,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Radio_City_Music_Hall",
     "color": "#2f2013",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "vatican-museum-spiral-staircase",
@@ -1347,7 +1616,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vatican_Museums",
     "color": "#38291a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "sydney-harbour-bridge",
@@ -1363,7 +1636,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Harbour_Bridge",
     "color": "#281f16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "hoover-dam",
@@ -1379,7 +1655,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hoover_Dam",
     "color": "#4a3a23",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "golden-gate-bridge",
@@ -1395,7 +1674,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
     "color": "#4e3325",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "oil-discovery-saudi",
@@ -1411,7 +1693,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Aramco",
     "color": "#26201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia",
+      "United States"
+    ]
   },
   {
     "name": "rockefeller-center",
@@ -1427,7 +1713,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rockefeller_Center",
     "color": "#473623",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "fallingwater",
@@ -1443,7 +1732,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fallingwater",
     "color": "#22211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mount-rushmore",
@@ -1459,7 +1751,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Rushmore",
     "color": "#292115",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "autobahn-expanded",
@@ -1475,7 +1770,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Autobahn",
     "color": "#291f16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "pentagon-completed",
@@ -1491,7 +1789,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Pentagon",
     "color": "#2c1e13",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "jefferson-memorial",
@@ -1507,7 +1808,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jefferson_Memorial",
     "color": "#514631",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "british-railways-nationalized",
@@ -1523,7 +1827,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nationalization",
     "color": "#4d3a26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "trans-arabian-pipeline",
@@ -1539,7 +1846,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline",
     "color": "#17222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Jordan",
+      "Lebanon",
+      "Saudi Arabia",
+      "Syria"
+    ]
   },
   {
     "name": "farnsworth-house",
@@ -1555,7 +1868,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Farnsworth_House",
     "color": "#2b3035",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "united-nations-hq",
@@ -1571,7 +1887,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations",
     "color": "#a8afb1",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lever-house",
@@ -1587,7 +1906,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lever_House",
     "color": "#323c44",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "notre-dame-du-haut",
@@ -1603,7 +1925,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_du_Haut",
     "color": "#6d8797",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "interstate-highway-begins",
@@ -1619,7 +1944,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_future_Interstate_Highways",
     "color": "#52493f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "seagram-building",
@@ -1635,7 +1963,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Seagram_Building",
     "color": "#3b4651",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lego-brick-patent",
@@ -1651,7 +1982,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lego_clone",
     "color": "#2d1b1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Denmark"
+    ]
   },
   {
     "name": "sydney-opera-house-begins",
@@ -1667,14 +2001,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
     "color": "#4f4a41",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "brasilia-built",
     "friendly_name": "Brasília Inaugurated",
     "year": 1960,
     "category": "architecture",
-    "description": "Brazil's modernist capital city was completed in just four years.",
+    "description": "Brazil's modernist capital city was raised from open savanna in only a few years.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brasilia-built_fs8dvh?_a=BAMAMikS0",
     "image_width": 330,
@@ -1683,7 +2020,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Brasília",
     "color": "#7a96a4",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Brazil"
+    ]
   },
   {
     "name": "berlin-wall-built",
@@ -1699,7 +2039,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Wall",
     "color": "#a8afb2",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "seattle-space-needle",
@@ -1715,7 +2058,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Needle",
     "color": "#a6b0af",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "twa-terminal",
@@ -1731,7 +2077,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/TWA_Flight_Center",
     "color": "#19222c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "marina-city",
@@ -1747,7 +2096,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_City",
     "color": "#1e303c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "verrazano-narrows-bridge",
@@ -1763,7 +2115,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Verrazzano–Narrows_Bridge",
     "color": "#687477",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "shinkansen-opens",
@@ -1779,7 +2134,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Shinkansen",
     "color": "#3c4853",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "gateway-arch",
@@ -1795,7 +2153,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gateway_Arch",
     "color": "#768b98",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "astrodome-opens",
@@ -1811,7 +2172,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Astrodome",
     "color": "#39454e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "vehicle-assembly-building",
@@ -1827,7 +2191,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vehicle_Assembly_Building",
     "color": "#19222a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "world-trade-center-begins",
@@ -1843,7 +2210,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Construction_of_the_World_Trade_Center",
     "color": "#242c34",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "john-hancock-center",
@@ -1859,7 +2229,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/875_North_Michigan_Avenue",
     "color": "#587280",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lake-pontchartrain-causeway",
@@ -1875,7 +2248,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Pontchartrain",
     "color": "#34444a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "aswan-high-dam",
@@ -1891,7 +2267,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Aswan_Dam",
     "color": "#b4ae95",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "transamerica-pyramid",
@@ -1907,7 +2286,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Transamerica_Pyramid",
     "color": "#1d212a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "sydney-opera-house-completed",
@@ -1923,7 +2305,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
     "color": "#2a3c53",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "sears-tower",
@@ -1939,7 +2324,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Willis_Tower",
     "color": "#605b60",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "cn-tower",
@@ -1955,7 +2343,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/CN_Tower",
     "color": "#9fb1b6",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "apple-founded",
@@ -1971,7 +2362,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Apple_Inc.",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "pompidou-center",
@@ -1987,7 +2381,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Centre_Pompidou",
     "color": "#516a77",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "st-gotthard-road-tunnel",
@@ -2003,7 +2400,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gotthard_Road_Tunnel",
     "color": "#acaeaa",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "humber-bridge",
@@ -2019,7 +2419,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Humber_Bridge",
     "color": "#364c5b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "itaipu-dam",
@@ -2035,7 +2438,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Itaipu_Dam",
     "color": "#a8b0a9",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Brazil",
+      "Paraguay"
+    ]
   },
   {
     "name": "at-and-t-building",
@@ -2051,7 +2458,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/AT&T_Building_(Indianapolis)",
     "color": "#3a373f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lloyds-building",
@@ -2067,7 +2477,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lloyd's_building",
     "color": "#5e7583",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "sunshine-skyway-bridge",
@@ -2083,7 +2496,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge",
     "color": "#1a212e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "channel-tunnel-begins",
@@ -2099,7 +2515,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Channel_Tunnel",
     "color": "#1a222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "seikan-tunnel",
@@ -2115,7 +2535,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Seikan_Tunnel",
     "color": "#2f414c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "louvre-pyramid",
@@ -2131,13 +2554,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Louvre_Pyramid",
     "color": "#abafaa",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "eurotunnel-boring",
     "friendly_name": "Channel Tunnel Breakthrough",
     "year": 1990,
-    "category": "media",
+    "category": "architecture",
     "description": "British and French tunneling teams met under the English Channel.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eurotunnel-boring_gzr6tk?_a=BAMAMikS0",
@@ -2147,7 +2573,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Breakthrough",
     "color": "#2f4959",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "bank-of-china-tower",
@@ -2163,7 +2593,10 @@
     "image_height": 440,
     "color": "#1c212d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Hong Kong"
+    ]
   },
   {
     "name": "canary-wharf-tower",
@@ -2179,7 +2612,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/One_Canada_Square",
     "color": "#3c4f5c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "chunnel-completed",
@@ -2195,7 +2631,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Channel_Tunnel",
     "color": "#273946",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "denver-airport",
@@ -2211,7 +2651,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport",
     "color": "#364f60",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "bilbao-metro",
@@ -2227,7 +2670,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_metro",
     "color": "#1b212c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "guggenheim-bilbao",
@@ -2243,7 +2689,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao",
     "color": "#768d9e",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "confederation-bridge",
@@ -2259,7 +2708,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Confederation_Bridge",
     "color": "#a3b0b5",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "petronas-towers",
@@ -2275,7 +2727,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Petronas_Towers",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Malaysia"
+    ]
   },
   {
     "name": "hong-kong-airport",
@@ -2291,7 +2746,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport",
     "color": "#354d5d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Hong Kong"
+    ]
   },
   {
     "name": "akashi-kaikyo-bridge",
@@ -2307,7 +2765,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Akashi_Kaikyo_Bridge",
     "color": "#687e8c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "great-belt-bridge",
@@ -2323,7 +2784,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Belt_Bridge",
     "color": "#374e5d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Denmark"
+    ]
   },
   {
     "name": "international-space-station",
@@ -2339,7 +2803,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/International_Space_Station",
     "color": "#1b212d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kazakhstan",
+      "Russia",
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "millennium-dome",
@@ -2355,7 +2825,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Millennium_Dome",
     "color": "#32434d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "burj-al-arab",
@@ -2371,7 +2844,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Burj_Al_Arab",
     "color": "#36404e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Arab Emirates"
+    ]
   },
   {
     "name": "tate-modern",
@@ -2387,7 +2863,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tate_Modern",
     "color": "#467ab3",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "oresund-bridge",
@@ -2403,7 +2882,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Øresund_Bridge",
     "color": "#112330",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Denmark",
+      "Sweden"
+    ]
   },
   {
     "name": "london-eye",
@@ -2419,7 +2902,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/London_Eye",
     "color": "#2d4655",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "jewish-museum-berlin",
@@ -2435,7 +2921,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jewish_Museum_Berlin",
     "color": "#182130",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "delhi-metro",
@@ -2451,7 +2940,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Metro",
     "color": "#173643",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "gwadar-port",
@@ -2467,7 +2959,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gwadar_Port",
     "color": "#294760",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Pakistan"
+    ]
   },
   {
     "name": "swiss-re-building",
@@ -2483,7 +2979,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gherkin",
     "color": "#182130",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "millau-viaduct",
@@ -2499,7 +2998,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Millau_Viaduct",
     "color": "#102333",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "taipei-101",
@@ -2515,7 +3017,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Taipei_101",
     "color": "#1b222a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Taiwan"
+    ]
   },
   {
     "name": "three-gorges-dam",
@@ -2531,7 +3036,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Gorges_Dam",
     "color": "#284f66",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "palm-jumeirah",
@@ -2547,7 +3055,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Jumeirah",
     "color": "#667875",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Arab Emirates"
+    ]
   },
   {
     "name": "beijing-national-stadium",
@@ -2563,7 +3074,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_National_Stadium",
     "color": "#22211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "cern-lhc",
@@ -2579,7 +3093,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Large_Hadron_Collider",
     "color": "#182132",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Switzerland"
+    ]
   },
   {
     "name": "singapore-flyer",
@@ -2595,7 +3113,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Singapore"
+    ]
   },
   {
     "name": "china-high-speed-rail",
@@ -2611,7 +3132,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/High-speed_rail_in_China",
     "color": "#162334",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "crossrail-begins",
@@ -2627,7 +3151,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crossrail_2",
     "color": "#19222c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "burj-khalifa",
@@ -2643,7 +3170,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Burj_Khalifa",
     "color": "#acaeae",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Arab Emirates"
+    ]
   },
   {
     "name": "marina-bay-sands",
@@ -2659,7 +3189,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_Bay_Sands",
     "color": "#162135",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Singapore"
+    ]
   },
   {
     "name": "danyang-kunshan-grand-bridge",
@@ -2675,7 +3208,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Danyang–Kunshan_Grand_Bridge",
     "color": "#acaea9",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "shard-completed",
@@ -2691,7 +3227,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Shard",
     "color": "#22314e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "jeddah-tower-begins",
@@ -2707,7 +3246,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jeddah_Tower",
     "color": "#1b3646",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "one-world-trade",
@@ -2723,7 +3265,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/One_World_Trade_Center",
     "color": "#163352",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gotthard-base-tunnel",
@@ -2739,7 +3284,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gotthard_Base_Tunnel",
     "color": "#102234",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "apple-park",
@@ -2755,7 +3303,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Apple_Park",
     "color": "#112332",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hong-kong-zhuhai-macau-bridge",
@@ -2771,7 +3322,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong–Zhuhai–Macau_Bridge",
     "color": "#122235",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Hong Kong",
+      "Macau"
+    ]
   },
   {
     "name": "crimean-bridge",
@@ -2787,7 +3343,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crimean_Bridge",
     "color": "#0c2a3f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "statue-unity",
@@ -2803,7 +3364,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Statue_of_Unity",
     "color": "#1a222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "sagrada-familia-progress",
@@ -2819,7 +3383,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sagrada_Família",
     "color": "#252320",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "crossrail-elizabeth-line",
@@ -2835,7 +3402,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Elizabeth_line",
     "color": "#172132",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "merdeka-118",
@@ -2851,7 +3421,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Merdeka_118",
     "color": "#16232e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Malaysia"
+    ]
   },
   {
     "name": "newgrange-built",
@@ -2868,13 +3441,16 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -3100
+    "year_end": -3100,
+    "regions": [
+      "Ireland"
+    ]
   },
   {
     "name": "museum-alexandria-founded",
     "friendly_name": "Museum of Alexandria Founded",
     "year": -290,
-    "category": "commerce",
+    "category": "science",
     "description": "The Mouseion of Alexandria was established by Ptolemy I as a center of learning, housing the famous Library of Alexandria.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/museum-alexandria-founded_uls9ff?_a=BAMAMikS0",
@@ -2884,13 +3460,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria",
     "color": "#262019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "globe-theatre-built",
     "friendly_name": "Globe Theatre Built",
     "year": 1599,
-    "category": "commerce",
+    "category": "architecture",
     "description": "Shakespeare's Globe Theatre was constructed in London, becoming the primary venue for his plays and the Lord Chamberlain's Men.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/globe-theatre-built_qgjjcv?_a=BAMAMikS0",
@@ -2900,7 +3479,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "new-amsterdam-becomes-new-york",
@@ -2916,7 +3498,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam,_New_York",
     "color": "#2a1e17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "metropolitan-police-founded",
@@ -2932,7 +3519,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Metropolitan_Police",
     "color": "#373939",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "transatlantic-cable-completed",
@@ -2948,7 +3538,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "Ireland"
+    ]
   },
   {
     "name": "great-railroad-strike-1877",
@@ -2964,7 +3558,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-commercial-radio-broadcast",
@@ -2980,7 +3577,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "punt-trade-egypt",
@@ -2995,7 +3595,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -1155
+    "year_end": -1155,
+    "regions": [
+      "Egypt",
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "teotihuacan-pyramid-founded",
@@ -3009,7 +3613,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "first-aqueduct",
@@ -3023,11 +3630,14 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "colosseum-architecture-ancient",
-    "friendly_name": "Colosseum Rome Constructed",
+    "friendly_name": "Colosseum Construction Begins",
     "year": 72,
     "category": "architecture",
     "description": "Emperor Vespasian began construction of the Flavian Amphitheatre, the largest amphitheater ever built.",
@@ -3037,21 +3647,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
-  },
-  {
-    "name": "vespasian-colosseum-begun",
-    "friendly_name": "Vespasian Begins Colosseum",
-    "year": 72,
-    "category": "empires",
-    "description": "Vespasian ordered construction of the Colosseum on the site of Nero's drained artificial lake.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vespasian-colosseum-begun_x9epit?_a=BAMAMikS0",
-    "color": "#3b2a1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "colosseum-rome",
@@ -3065,7 +3664,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "silk-road-major-routes",
@@ -3079,7 +3681,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Italy",
+      "Middle East & North Africa",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "nabataean-petra-city",
@@ -3094,7 +3702,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 106
+    "year_end": 106,
+    "regions": [
+      "Jordan"
+    ]
   },
   {
     "name": "bactria-silk-road",
@@ -3109,11 +3720,15 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -130
+    "year_end": -130,
+    "regions": [
+      "Afghanistan",
+      "Uzbekistan"
+    ]
   },
   {
     "name": "aqueduct-pont-garros",
-    "friendly_name": "Pont Garros Aqueduct",
+    "friendly_name": "Pont du Gard Aqueduct",
     "year": -19,
     "category": "architecture",
     "description": "The Pont du Gard aqueduct bridge was built in southern France to carry water to the Roman colony of Nemausus.",
@@ -3123,7 +3738,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "hadrian-wall-construction",
@@ -3138,7 +3756,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 128
+    "year_end": 128,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "pantheon-rome-built",
@@ -3152,7 +3774,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "moche-mound-construction",
@@ -3167,7 +3792,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 800
+    "year_end": 800,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "roman-roads-network",
@@ -3181,7 +3809,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "hopewell-culture",
@@ -3196,27 +3828,33 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 500
+    "year_end": 500,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "damascus-steel-pattern",
-    "friendly_name": "Damascus Steel and Pattern Welding",
+    "friendly_name": "Damascus Steel (Wootz)",
     "year": -300,
     "category": "craft",
-    "description": "Pattern-welded steel with distinctive wavy patterns was developed in Persia and traded across the ancient world.",
+    "description": "Wootz, a crucible steel with a distinctive watered pattern, was first made in southern India and traded across the ancient world.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/damascus-steel-pattern_amkqqp?_a=BAMAMikS0",
     "color": "#2a1d1c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "roman-roads",
     "friendly_name": "Roman Road System",
     "year": -312,
-    "category": "writing",
+    "category": "architecture",
     "description": "The Via Appia, Rome's first major highway, was built by censor Appius Claudius Caecus from Rome to Capua.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-roads_tqorsn?_a=BAMAMikS0",
@@ -3224,7 +3862,10 @@
     "image_height": 440,
     "color": "#2d1c18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "samarkand-founded",
@@ -3238,7 +3879,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "postal-system-persia",
@@ -3252,7 +3896,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "crucible-steel-wootz",
@@ -3267,7 +3916,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 200
+    "year_end": 200,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "beacon-fire-chains",
@@ -3281,7 +3933,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beacon-fire-chains_hyncpu?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "tiwanaku-monumental-center",
@@ -3295,7 +3950,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bolivia"
+    ]
   },
   {
     "name": "nazca-puquios-aqueducts",
@@ -3309,7 +3967,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "tunnel-engineering",
@@ -3323,7 +3984,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "construction-hagia-sophia",
@@ -3337,7 +4001,11 @@
     "image_height": 440,
     "color": "#4e4130",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "temple-apollo-corinth",
@@ -3351,7 +4019,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "byzantine-church-architecture",
@@ -3366,7 +4037,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 565
+    "year_end": 565,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "hanging-gardens-babylon",
@@ -3380,7 +4056,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "ellora-caves",
@@ -3395,7 +4074,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ellora-caves_uazoqn?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1000
+    "year_end": 1000,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "first-sewer-system",
@@ -3409,7 +4091,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "camel-adoption-sahara",
@@ -3424,7 +4109,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 800
+    "year_end": 800,
+    "regions": [
+      "Middle East & North Africa",
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "anglo-saxon-stone-churches",
@@ -3439,7 +4128,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 682
+    "year_end": 682,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "palenque-city",
@@ -3453,7 +4145,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "pallava-shore-temples",
@@ -3467,7 +4162,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "great-wall-china",
@@ -3481,7 +4179,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "tikal-great-plaza",
@@ -3495,7 +4196,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala"
+    ]
   },
   {
     "name": "tang-trade-networks",
@@ -3509,7 +4213,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "bulguksa-temple",
@@ -3523,7 +4231,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "bukhara-trading-city",
@@ -3538,7 +4249,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 999
+    "year_end": 999,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "ghana-gold-trade",
@@ -3553,7 +4267,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1200
+    "year_end": 1200,
+    "regions": [
+      "Mali",
+      "Mauritania"
+    ]
   },
   {
     "name": "mound-builders",
@@ -3567,7 +4285,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "borobudur-construction",
@@ -3582,7 +4303,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 825
+    "year_end": 825,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "jenne-city-foundation",
@@ -3596,7 +4320,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "prambanan-temple",
@@ -3611,7 +4338,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 856
+    "year_end": 856,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "chichen-itza-peak",
@@ -3626,7 +4356,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1200
+    "year_end": 1200,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "toltec-teotihuacan-influence",
@@ -3641,7 +4374,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1150
+    "year_end": 1150,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "pueblo-bonito",
@@ -3656,7 +4392,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1130
+    "year_end": 1130,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "canal-system",
@@ -3670,7 +4409,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "amber-trade-routes",
@@ -3685,7 +4427,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -500
+    "year_end": -500,
+    "regions": [
+      "Egypt",
+      "Greece",
+      "Lithuania",
+      "Poland"
+    ]
   },
   {
     "name": "lapis-lazuli-trade",
@@ -3699,7 +4447,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan",
+      "Egypt",
+      "Iraq"
+    ]
   },
   {
     "name": "incense-trade-frankincense",
@@ -3713,7 +4466,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Iraq",
+      "Oman",
+      "Yemen"
+    ]
   },
   {
     "name": "caravan-routes-central-asia",
@@ -3727,7 +4486,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "escapement-mechanism",
@@ -3741,7 +4503,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "drum-signal-codes",
@@ -3755,7 +4520,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "arch-mechanics-understanding",
@@ -3769,7 +4537,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "chaco-canyon-great-roads",
@@ -3784,12 +4555,15 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1100
+    "year_end": 1100,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "kowoj-maya-settlement",
     "friendly_name": "Kowoj Maya Settlement Lakeside",
-    "year": 1000,
+    "year": 1441,
     "category": "architecture",
     "description": "The Kowoj Maya established lakeside settlements in the Peten region of Guatemala during the Postclassic period.",
     "difficulty": "hard",
@@ -3798,7 +4572,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala"
+    ]
   },
   {
     "name": "cathedral-construction-boom",
@@ -3812,7 +4589,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "tanjore-temple",
@@ -3826,7 +4606,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "metal-type-development",
@@ -3840,7 +4623,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "South Korea"
+    ]
   },
   {
     "name": "anasazi-cliff-dwellings",
@@ -3855,7 +4642,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1300
+    "year_end": 1300,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "romanesque-architecture-style",
@@ -3870,7 +4660,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1200
+    "year_end": 1200,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "mississippian-cahokia-settlement",
@@ -3885,7 +4678,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1350
+    "year_end": 1350,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "shwesandaw-pagoda",
@@ -3899,7 +4695,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Myanmar"
+    ]
   },
   {
     "name": "chaco-canyon-development",
@@ -3914,7 +4713,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1115
+    "year_end": 1115,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "angkor-period-peak",
@@ -3928,7 +4730,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cambodia"
+    ]
   },
   {
     "name": "song-maritime-commerce",
@@ -3942,7 +4747,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "compass-navigation",
@@ -3956,7 +4764,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "khmer-baray-hydraulics",
@@ -3971,7 +4782,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1066
+    "year_end": 1066,
+    "regions": [
+      "Cambodia"
+    ]
   },
   {
     "name": "angkor-wat-temple",
@@ -3986,21 +4800,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1150
-  },
-  {
-    "name": "cahokia-moundbuilder",
-    "friendly_name": "Cahokia Mound City Flourishes",
-    "year": 1150,
-    "category": "architecture",
-    "description": "Cahokia's Monks Mound, the largest earthwork in the Americas, anchored a thriving urban center.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cahokia-moundbuilder_jqyd9r?_a=BAMAMikS0",
-    "color": "#99937a",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true
+    "year_end": 1150,
+    "regions": [
+      "Cambodia"
+    ]
   },
   {
     "name": "great-zimbabwe-stone-construction",
@@ -4015,7 +4818,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1450
+    "year_end": 1450,
+    "regions": [
+      "Zimbabwe"
+    ]
   },
   {
     "name": "gothic-architecture-emergence",
@@ -4029,7 +4835,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "templars-banking-network",
@@ -4043,7 +4852,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "khmer-temple-architecture",
@@ -4057,7 +4870,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cambodia"
+    ]
   },
   {
     "name": "pont-old-london",
@@ -4071,7 +4887,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "cliff-palace",
@@ -4086,7 +4905,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1280
+    "year_end": 1280,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mesa-verde-cliff-dwellings",
@@ -4100,21 +4922,27 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gothic-cathedral-construction",
-    "friendly_name": "Chartres Cathedral Construction",
+    "friendly_name": "Chartres Rebuilding Begins",
     "year": 1194,
     "category": "architecture",
-    "description": "Chartres Cathedral was rebuilt in the Gothic style after a fire, with pioneering flying buttresses and stained glass.",
+    "description": "After a fire gutted the church, Chartres started rebuilding in the new Gothic manner with flying buttresses.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gothic-cathedral-construction_osuqsm?_a=BAMAMikS0",
     "color": "#1f221d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "ethiopian-lalibela-churches",
@@ -4128,7 +4956,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "chimor-chan-chan-city",
@@ -4143,7 +4974,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1470
+    "year_end": 1470,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "rapa-nui-moai",
@@ -4157,7 +4991,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile"
+    ]
   },
   {
     "name": "tonga-maritime-network",
@@ -4171,7 +5008,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Fiji",
+      "Samoa",
+      "Tonga"
+    ]
   },
   {
     "name": "lapita-culture",
@@ -4186,7 +5028,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -500
+    "year_end": -500,
+    "regions": [
+      "Oceania"
+    ]
   },
   {
     "name": "khwarezm-development-canal",
@@ -4200,7 +5045,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkmenistan",
+      "Uzbekistan"
+    ]
   },
   {
     "name": "mound-builder-tradition",
@@ -4214,7 +5063,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "tin-trade-cornwall",
@@ -4228,7 +5080,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "perfume-trade-arabia",
@@ -4242,7 +5097,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "slave-trade-arab",
@@ -4256,7 +5115,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Middle East & North Africa",
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "verge-escapement",
@@ -4270,7 +5133,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "brick-mortar-improvements",
@@ -4284,7 +5150,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "vault-construction-techniques",
@@ -4298,7 +5167,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "nan-madol-city-construction",
@@ -4313,7 +5185,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1628
+    "year_end": 1628,
+    "regions": [
+      "Micronesia"
+    ]
   },
   {
     "name": "pacific-northwest-cedar-houses",
@@ -4327,7 +5202,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "United States"
+    ]
   },
   {
     "name": "notre-dame-reims-built",
@@ -4341,11 +5220,14 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "chartres-cathedral-construction",
-    "friendly_name": "Chartres Cathedral Built",
+    "friendly_name": "Chartres Cathedral Completed",
     "year": 1220,
     "category": "architecture",
     "description": "Chartres Cathedral was largely completed, renowned for its 176 stained glass windows and Gothic design.",
@@ -4355,7 +5237,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "cologne-cathedral-begun",
@@ -4369,7 +5254,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "letters-exchange-banking",
@@ -4383,7 +5271,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "yuan-grand-canal",
@@ -4397,7 +5288,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "wool-merchant-regulations",
@@ -4411,7 +5305,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "coral-trade-mediterranean",
@@ -4425,7 +5322,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "herring-trade-northern",
@@ -4439,7 +5341,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Sweden"
+    ]
   },
   {
     "name": "banking-loans-innovation",
@@ -4453,7 +5359,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "foliot-balance",
@@ -4467,7 +5376,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "buttress-flying-buttress",
@@ -4482,22 +5394,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1300
-  },
-  {
-    "name": "nan-madol-basalt-engineering",
-    "friendly_name": "Nan Madol Basalt City",
-    "year": 1180,
-    "category": "architecture",
-    "description": "Nan Madol's basalt log-cabin walls on Pohnpei demonstrate advanced engineering on artificial coral reef islands.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nan-madol-basalt-engineering_magwon?_a=BAMAMikS0",
-    "color": "#1e2126",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "year_end": 1628
+    "year_end": 1300,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "casa-grande-pueblo",
@@ -4511,7 +5411,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gila-cliff-dwellings",
@@ -4525,7 +5428,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "golden-horde-sarai-al-jadid",
@@ -4539,7 +5445,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "bruges-bourse-trading",
@@ -4553,7 +5463,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium"
+    ]
   },
   {
     "name": "alhambra-palace-built",
@@ -4568,7 +5481,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1492
+    "year_end": 1492,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "chimú-chan-chan-peak",
@@ -4583,7 +5499,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1470
+    "year_end": 1470,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "genovese-banking-families",
@@ -4597,7 +5516,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "monopoly-privileges-medieval",
@@ -4611,7 +5533,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "wool-staple-monopoly",
@@ -4625,7 +5551,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "tulum-city",
@@ -4639,7 +5568,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "mamluk-sultanate-splendor",
@@ -4654,7 +5586,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1517
+    "year_end": 1517,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "saffron-trade-persia",
@@ -4668,7 +5603,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Italy"
+    ]
   },
   {
     "name": "cashmere-wool-trade",
@@ -4682,7 +5621,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "grain-trade-monopoly",
@@ -4696,7 +5638,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "madder-dye-monopoly",
@@ -4710,7 +5656,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "slave-trade-ottomans",
@@ -4724,7 +5673,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "bankruptcy-legal-framework",
@@ -4738,7 +5692,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "cast-iron-production",
@@ -4752,21 +5709,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
-  },
-  {
-    "name": "dome-construction-mastery",
-    "friendly_name": "Dome Construction and Mechanics",
-    "year": 1420,
-    "category": "art",
-    "description": "Renaissance architects mastered dome construction techniques, culminating in Brunelleschi's revolutionary Florence Cathedral dome.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dome-construction-mastery_tdwukz?_a=BAMAMikS0",
-    "color": "#6e432b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Germany",
+      "Netherlands"
+    ]
   },
   {
     "name": "swahili-stone-architecture",
@@ -4780,7 +5728,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kenya",
+      "Tanzania"
+    ]
   },
   {
     "name": "tuvalu-mausoleum-built",
@@ -4794,7 +5746,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "ming-forbidden-city",
@@ -4808,7 +5763,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "florence-cathedral-dome",
@@ -4822,7 +5780,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "oil-based-printing-ink",
@@ -4836,7 +5797,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "samarkand-ulugh-beg-madrasah",
@@ -4850,7 +5814,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "printing-engraving",
@@ -4864,7 +5831,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "medici-florentine-bank",
@@ -4878,7 +5849,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "brunelleschi-dome",
@@ -4892,7 +5866,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "malacca-entrepot",
@@ -4906,7 +5883,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Malaysia"
+    ]
   },
   {
     "name": "qhapaq-nan-expansion",
@@ -4921,7 +5901,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1532
+    "year_end": 1532,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "machu-picchu-construction",
@@ -4935,7 +5918,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "printing-color",
@@ -4949,7 +5935,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "antwerp-bourse-replacement",
@@ -4963,7 +5952,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium"
+    ]
   },
   {
     "name": "ottoman-topkapi-palace",
@@ -4977,7 +5969,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "fugger-banking-empire",
@@ -4991,13 +5987,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "kongo-portuguese-contact",
     "friendly_name": "Kongo Meets the Portuguese",
     "year": 1483,
-    "category": "migration",
+    "category": "diplomacy",
     "description": "Portuguese navigator Diogo Cão reached the Kongo Kingdom, initiating trade and diplomatic relations.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kongo-portuguese-contact_vr26tl?_a=BAMAMikS0",
@@ -5005,7 +6004,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Angola",
+      "Democratic Republic of the Congo",
+      "Portugal"
+    ]
   },
   {
     "name": "kongo-mani-congo-capital",
@@ -5019,7 +6023,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Angola"
+    ]
   },
   {
     "name": "first-globe",
@@ -5033,7 +6040,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "publishing-house",
@@ -5047,11 +6057,14 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "first-almanac",
-    "friendly_name": "Almanach des Bergers",
+    "friendly_name": "Kalendrier des Bergers",
     "year": 1491,
     "category": "writing",
     "description": "The Kalendrier des Bergers was published in Paris, becoming one of the first widely distributed almanacs in Europe.",
@@ -5061,7 +6074,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "songhai-timbuktu",
@@ -5075,7 +6091,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "silk-debasement-trade",
@@ -5089,7 +6108,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Turkey",
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "cotton-trade-begins",
@@ -5103,7 +6128,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Portugal"
+    ]
   },
   {
     "name": "indigo-dye-trade",
@@ -5117,7 +6146,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Portugal"
+    ]
   },
   {
     "name": "fur-trade-russian",
@@ -5131,7 +6164,12 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "cod-fishery-expansion",
@@ -5145,7 +6183,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "Europe"
+    ]
   },
   {
     "name": "quenching-tempering-steel",
@@ -5159,21 +6201,27 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "rozwi-stone-fortifications",
-    "friendly_name": "Rozwi Stone Fortifications",
+    "friendly_name": "Rozwi Stone Capitals",
     "year": 1690,
     "category": "architecture",
-    "description": "The Rozwi Kingdom in southern Africa built stone-walled enclosures and fortifications across the Zimbabwe Plateau.",
+    "description": "The Rozwi kingdom took over the dry-stone walled towns of the earlier Torwa state and kept building in the Khami style.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rozwi-stone-fortifications_xuu3md?_a=BAMAMikS0",
     "color": "#2b1e19",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Zimbabwe"
+    ]
   },
   {
     "name": "canal-building-netherlands",
@@ -5187,7 +6235,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "postal-system-expansion",
@@ -5201,11 +6252,15 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Belgium"
+    ]
   },
   {
     "name": "first-map-printing",
-    "friendly_name": "Waldsemuller Map",
+    "friendly_name": "Waldseemuller Map",
     "year": 1507,
     "category": "migration",
     "description": "Martin Waldseemuller printed a world map that first used the name \"America\" for the New World continents.",
@@ -5215,7 +6270,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "vijayanagara-architecture",
@@ -5230,7 +6288,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1529
+    "year_end": 1529,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "sher-shah-architecture",
@@ -5244,7 +6305,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "muscovy-company-founding",
@@ -5258,7 +6322,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "United Kingdom",
+      "Europe"
+    ]
   },
   {
     "name": "ottoman-architecture-peak",
@@ -5272,7 +6341,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "galleon-trade-route",
@@ -5287,7 +6360,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1815
+    "year_end": 1815,
+    "regions": [
+      "Mexico",
+      "Philippines",
+      "Spain"
+    ]
   },
   {
     "name": "songhai-djinguereber-mosque",
@@ -5301,7 +6379,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "first-atlas",
@@ -5315,7 +6396,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium"
+    ]
   },
   {
     "name": "mughal-architecture-akbar",
@@ -5330,7 +6414,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1585
+    "year_end": 1585,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "levant-company-charter",
@@ -5344,7 +6431,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "United Kingdom",
+      "Europe"
+    ]
   },
   {
     "name": "chocolate-trade-establishment",
@@ -5358,7 +6450,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Spain"
+    ]
   },
   {
     "name": "mombasa-fort-jesus-construction",
@@ -5372,7 +6468,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kenya",
+      "Portugal"
+    ]
   },
   {
     "name": "isfahan-city-building",
@@ -5387,7 +6487,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1629
+    "year_end": 1629,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "beaver-pelt-european-demand",
@@ -5401,7 +6504,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "United States"
+    ]
   },
   {
     "name": "color-printing-techniques",
@@ -5415,7 +6522,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Netherlands"
+    ]
   },
   {
     "name": "flag-signal-development",
@@ -5429,7 +6540,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flag-signal-development_us5nt5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "iron-reinforcement-concept",
@@ -5443,7 +6557,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "voc-dutch-east-india",
@@ -5457,7 +6574,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "istanbul-blue-mosque",
@@ -5471,7 +6591,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "isfahan-bazaar-construction",
@@ -5485,13 +6609,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "edo-castle-architecture",
     "friendly_name": "Japanese Castle Boom",
     "year": 1603,
-    "category": "art",
+    "category": "architecture",
     "description": "Japanese daimyo built massive stone castles across Japan during the early Edo period's castle-building boom.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edo-castle-architecture_vxf2rn?_a=BAMAMikS0",
@@ -5500,7 +6627,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1615
+    "year_end": 1615,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "spice-monopoly-nutmeg",
@@ -5514,7 +6644,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia",
+      "Netherlands"
+    ]
   },
   {
     "name": "st-peters-basilica-completion",
@@ -5528,7 +6662,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "edo-castle-completion",
@@ -5542,7 +6680,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "gondar-castles-construction",
@@ -5557,7 +6698,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1700
+    "year_end": 1700,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "tea-trade-begins",
@@ -5571,7 +6715,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Netherlands"
+    ]
   },
   {
     "name": "whale-oil-trade",
@@ -5585,13 +6733,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "baroque-church-architecture",
     "friendly_name": "Baroque Churches Spread",
     "year": 1650,
-    "category": "empires",
+    "category": "architecture",
     "description": "Elaborate Baroque churches spread across Catholic Europe with dramatic facades, domes, and ornate interiors.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/baroque-church-architecture_yoxzxz?_a=BAMAMikS0",
@@ -5599,12 +6750,15 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "poverty-point-earthworks",
     "friendly_name": "Poverty Point Earthworks",
-    "year": -1500,
+    "year": -1800,
     "category": "architecture",
     "description": "Ancient peoples in Louisiana built massive concentric earthwork ridges and mounds at Poverty Point.",
     "difficulty": "hard",
@@ -5614,7 +6768,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -1200
+    "year_end": -1200,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "anchor-escapement",
@@ -5628,7 +6785,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "hairspring-balance-wheel",
@@ -5642,7 +6802,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Netherlands"
+    ]
   },
   {
     "name": "versailles-construction",
@@ -5657,13 +6821,16 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1715
+    "year_end": 1715,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "bus-service",
     "friendly_name": "Public Bus Service",
     "year": 1662,
-    "category": "media",
+    "category": "invention",
     "description": "Blaise Pascal helped launch the first public transit system in Paris with horse-drawn carriages on fixed routes.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bus-service_yry5la?_a=BAMAMikS0",
@@ -5671,7 +6838,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "dojima-rice-exchange",
@@ -5685,13 +6855,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "wren-st-pauls-cathedral",
     "friendly_name": "Wren Designs St Paul's Cathedral",
     "year": 1675,
-    "category": "writing",
+    "category": "architecture",
     "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wren-st-pauls-cathedral_vxy0jj?_a=BAMAMikS0",
@@ -5700,7 +6873,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1710
+    "year_end": 1710,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "rococo-architecture-style",
@@ -5714,7 +6890,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "harrison-chronometer-series",
@@ -5728,7 +6907,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "flying-shuttle-refinement",
@@ -5742,7 +6924,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "detent-escapement",
@@ -5756,7 +6941,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "canal-network-britain",
@@ -5771,7 +6959,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1772
+    "year_end": 1772,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "wrought-iron-puddling",
@@ -5785,7 +6976,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "stereotyping-process",
@@ -5799,7 +6993,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "dobby-mechanism",
@@ -5813,7 +7010,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "power-loom-mechanical",
@@ -5827,7 +7027,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "railroad-station",
@@ -5841,7 +7044,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "electrotyping-process",
@@ -5855,7 +7061,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "telegraph-sounder-design",
@@ -5869,7 +7079,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "geunjeongjeon-completion",
@@ -5883,7 +7096,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "microphone-technology",
@@ -5897,7 +7113,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "telephone-exchange-system",
@@ -5911,7 +7130,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mild-steel-production",
@@ -5925,7 +7147,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "nickel-steel-development",
@@ -5939,7 +7165,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "time-zone-development",
@@ -5953,7 +7183,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "transportation-map",
@@ -5967,13 +7200,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "handloom-frame-loom",
     "friendly_name": "Frame Loom Developed",
     "year": -2000,
-    "category": "agriculture",
+    "category": "craft",
     "description": "Early frame looms were developed in Anatolia and the Near East, enabling more efficient textile production.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/handloom-frame-loom_os5qy5?_a=BAMAMikS0",
@@ -5981,7 +7217,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "reed-shuttle-developed",
@@ -5995,7 +7235,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "clay-brick-kiln",
@@ -6009,7 +7252,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "bronze-casting-techniques",
@@ -6023,7 +7269,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "drop-spindle-invented",
@@ -6037,7 +7286,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "gnomon-shadow-clock",
@@ -6051,7 +7303,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "smoke-signal-systems",
@@ -6065,7 +7320,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "tin-smelting-mines",
@@ -6080,7 +7338,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -2000
+    "year_end": -2000,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "fiber-preparation-flax",
@@ -6095,7 +7358,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -3100
+    "year_end": -3100,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "copper-smelting-developed",
@@ -6110,7 +7376,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -4500
+    "year_end": -4500,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "native-copper-working",
@@ -6125,7 +7394,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -6000
+    "year_end": -6000,
+    "regions": [
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "batavia-founded",
@@ -6139,6 +7411,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/batavia-founded_dpdhxs?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia",
+      "Netherlands"
+    ]
   }
 ]

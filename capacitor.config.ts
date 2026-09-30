@@ -16,7 +16,8 @@ const config: CapacitorConfig = {
     },
     SplashScreen: {
       launchAutoHide: true,
-      backgroundColor: '#FAF8F5',
+      // The launch storyboard's colour (the icon painting's corner), so launch -> splash has no seam.
+      backgroundColor: '#030c1d',
       showSpinner: false,
     },
     StatusBar: {

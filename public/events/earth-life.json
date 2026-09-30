@@ -12,7 +12,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moon-forming-impact_w3dso3?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -4350000000
+    "year_end": -4350000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "earth-oceans-form",
@@ -27,7 +30,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/earth-oceans-form_iy5oin?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -3800000000
+    "year_end": -3800000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "late-heavy-bombardment",
@@ -42,7 +48,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-heavy-bombardment_ssnibr?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -3800000000
+    "year_end": -3800000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-cyanobacteria",
@@ -57,7 +66,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cyanobacteria_i1bydy?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2150000000
+    "year_end": -2150000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "oldest-stromatolites",
@@ -72,7 +84,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oldest-stromatolites_gqemfi?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -3430000000
+    "year_end": -3430000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-multicellular-life",
@@ -87,7 +102,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-multicellular-life_k1biyq?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -1000000000
+    "year_end": -1000000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "ediacaran-biota",
@@ -102,7 +120,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ediacaran-biota_vspdrm?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -538800000
+    "year_end": -538800000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "cambrian-explosion",
@@ -117,7 +138,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cambrian-explosion_vj3xcl?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -509000000
+    "year_end": -509000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-trilobites",
@@ -132,7 +156,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-trilobites_atdqtc?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -514000000
+    "year_end": -514000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-vertebrates",
@@ -147,7 +174,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-vertebrates_w9yolm?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -480000000
+    "year_end": -480000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-coral-reefs",
@@ -162,13 +192,16 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-coral-reefs_b7mbp9?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -450000000
+    "year_end": -450000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "plants-colonize-land",
     "friendly_name": "Plants Colonize Land",
     "year": -470000000,
-    "category": "agriculture",
+    "category": "nature",
     "description": "Simple plants spread from water onto the continents, greening the once-barren land surfaces.",
     "difficulty": "easy",
     "color": "#553815",
@@ -177,7 +210,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plants-colonize-land_vwpr5t?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -425000000
+    "year_end": -425000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "ordovician-mass-extinction",
@@ -192,7 +228,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ordovician-mass-extinction_cbv2lz?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -443800000
+    "year_end": -443800000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-jawed-fish",
@@ -207,7 +246,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-jawed-fish_amnqe6?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -425000000
+    "year_end": -425000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "arthropods-colonize-land",
@@ -222,7 +264,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arthropods-colonize-land_qn1kgn?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -407000000
+    "year_end": -407000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "age-of-fishes",
@@ -237,7 +282,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/age-of-fishes_bljukr?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -358900000
+    "year_end": -358900000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-forests",
@@ -252,7 +300,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-forests_f0dgov?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -385000000
+    "year_end": -385000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "fish-walk-onto-land",
@@ -267,7 +318,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fish-walk-onto-land_vtuwwe?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -365000000
+    "year_end": -365000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "late-devonian-extinction",
@@ -282,7 +336,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-devonian-extinction_busxae?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -358900000
+    "year_end": -358900000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-amniote-egg",
@@ -297,7 +354,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-amniote-egg_jaoi1l?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -318000000
+    "year_end": -318000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "giant-insects-of-carboniferous",
@@ -312,7 +372,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/giant-insects-of-carboniferous_ca8c4t?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -272000000
+    "year_end": -272000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "pangaea-forms",
@@ -327,7 +390,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pangaea-forms_zn5ita?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -300000000
+    "year_end": -300000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-dinosaurs-appear",
@@ -342,7 +408,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dinosaurs-appear_yfd2kn?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -231400000
+    "year_end": -231400000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "pangaea-breaks-apart",
@@ -357,7 +426,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pangaea-breaks-apart_vueiz5?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -100000000
+    "year_end": -100000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "age-of-dinosaurs",
@@ -372,7 +444,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/age-of-dinosaurs_fcraek?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -145000000
+    "year_end": -145000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-flowering-plants",
@@ -387,7 +462,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-flowering-plants_dm1qsj?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -100000000
+    "year_end": -100000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-bees",
@@ -402,7 +480,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-bees_atiudu?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -100000000
+    "year_end": -100000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-grasses",
@@ -417,7 +498,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-grasses_jc4noy?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -8000000
+    "year_end": -8000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-primates",
@@ -432,7 +516,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-primates_dwpjnh?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -56000000
+    "year_end": -56000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "whales-return-to-sea",
@@ -447,13 +534,16 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/whales-return-to-sea_fnqbvf?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -38000000
+    "year_end": -38000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "himalayas-rise",
     "friendly_name": "The Himalayas Begin to Rise",
     "year": -59000000,
-    "category": "empires",
+    "category": "nature",
     "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
     "difficulty": "easy",
     "color": "#5d341d",
@@ -462,7 +552,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/himalayas-rise_tjgqey?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -40000000
+    "year_end": -40000000,
+    "regions": [
+      "China",
+      "India"
+    ]
   },
   {
     "name": "first-apes",
@@ -477,7 +571,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-apes_mnrsvx?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -17000000
+    "year_end": -17000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "human-chimp-split",
@@ -492,7 +589,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/human-chimp-split_hluidn?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -5000000
+    "year_end": -5000000,
+    "regions": [
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "first-upright-walkers",
@@ -507,7 +607,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-upright-walkers_xt5og3?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -3660000
+    "year_end": -3660000,
+    "regions": [
+      "Chad",
+      "Kenya"
+    ]
   },
   {
     "name": "lucy-australopithecus-lived",
@@ -522,7 +626,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lucy-australopithecus-lived_subca9?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -3170000
+    "year_end": -3170000,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "woolly-mammoths-appear",
@@ -537,7 +644,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/woolly-mammoths-appear_op3zre?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -400000
+    "year_end": -400000,
+    "regions": [
+      "Europe",
+      "North & Central Asia",
+      "East Asia"
+    ]
   },
   {
     "name": "saber-toothed-cats",
@@ -552,7 +664,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saber-toothed-cats_nlfj53?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -9000
+    "year_end": -9000,
+    "regions": [
+      "United States",
+      "South America"
+    ]
   },
   {
     "name": "ice-age-megafauna-extinction",
@@ -567,7 +683,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ice-age-megafauna-extinction_fu1wrc?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2000
+    "year_end": -2000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "dog-becomes-companion",
@@ -582,7 +701,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dog-becomes-companion_jh4xqd?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -14000
+    "year_end": -14000,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "cats-domesticated",
@@ -597,7 +719,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cats-domesticated_pox2am?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2000
+    "year_end": -2000,
+    "regions": [
+      "Cyprus",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "silkworm-domesticated",
@@ -612,7 +738,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silkworm-domesticated_evyi7u?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2700
+    "year_end": -2700,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "giant-ground-sloths-roam",
@@ -627,7 +756,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/giant-ground-sloths-roam_qrbn15?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -9000
+    "year_end": -9000,
+    "regions": [
+      "North America",
+      "South America"
+    ]
   },
   {
     "name": "honeybee-keeping-begins",
@@ -641,7 +774,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/honeybee-keeping-begins_fvvavh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "aristotle-studies-animals",
@@ -655,7 +791,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aristotle-studies-animals_xhkwjh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "shen-kuo-explains-fossils",
@@ -669,7 +808,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shen-kuo-explains-fossils_kbiurf?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "steno-fossils-rock-layers",
@@ -683,7 +825,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steno-fossils-rock-layers_i0bfq5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "hutton-deep-time",
@@ -697,7 +842,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hutton-deep-time_bvmi1i?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "cuvier-proves-extinction",
@@ -711,7 +859,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuvier-proves-extinction_x5b0np?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "smith-geological-map",
@@ -725,7 +876,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smith-geological-map_gaz5vv?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "anning-finds-ichthyosaur",
@@ -739,7 +893,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anning-finds-ichthyosaur_r2gegk?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "lyell-principles-geology",
@@ -754,7 +911,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lyell-principles-geology_s60qfp?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1833
+    "year_end": 1833,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "dinosaur-word-coined",
@@ -768,7 +928,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dinosaur-word-coined_s5irs2?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "ice-age-theory-proposed",
@@ -782,7 +945,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ice-age-theory-proposed_j9dirn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "neanderthal-fossil-found",
@@ -796,7 +962,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neanderthal-fossil-found_gkhwke?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "archaeopteryx-discovered",
@@ -810,7 +979,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archaeopteryx-discovered_awozxr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "pasteur-disproves-spontaneous",
@@ -824,7 +996,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasteur-disproves-spontaneous_gnmckh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "last-aurochs-dies",
@@ -838,13 +1013,16 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-aurochs-dies_brpsbt?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Poland"
+    ]
   },
   {
     "name": "dodo-driven-extinct",
     "friendly_name": "The Dodo Goes Extinct",
     "year": 1681,
-    "category": "disasters",
+    "category": "nature",
     "description": "The flightless dodo of Mauritius vanished within decades of sailors reaching the island.",
     "difficulty": "easy",
     "color": "#2c1d18",
@@ -852,7 +1030,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dodo-driven-extinct_jreav4?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mauritius"
+    ]
   },
   {
     "name": "wallace-line-described",
@@ -866,7 +1047,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wallace-line-described_rokdvo?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "last-quagga-dies",
@@ -880,7 +1064,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-quagga-dies_wtmfsp?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "passenger-pigeon-extinct",
@@ -894,7 +1081,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/passenger-pigeon-extinct_zovrmg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "java-man-discovered",
@@ -908,7 +1098,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/java-man-discovered_p54j8k?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "tutankhamun-fossil-coelacanth",
@@ -922,7 +1115,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tutankhamun-fossil-coelacanth_sslnpm?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "last-thylacine-dies",
@@ -936,7 +1132,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-thylacine-dies_mwgkgh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "miller-urey-experiment",
@@ -950,13 +1149,16 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/miller-urey-experiment_dt9zth?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "olduvai-tools-found",
     "friendly_name": "Oldest Stone Tools Found",
     "year": 1959,
-    "category": "architecture",
+    "category": "science",
     "description": "The Leakeys uncovered early human fossils and stone tools at Olduvai Gorge in Tanzania.",
     "difficulty": "hard",
     "color": "#222024",
@@ -964,7 +1166,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/olduvai-tools-found_lgpxis?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Tanzania"
+    ]
   },
   {
     "name": "seafloor-spreading-confirmed",
@@ -978,7 +1183,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seafloor-spreading-confirmed_pbptw4?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "asteroid-killed-dinosaurs",
@@ -992,7 +1200,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/asteroid-killed-dinosaurs_kgikvn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "United States"
+    ]
   },
   {
     "name": "chicxulub-crater-confirmed",
@@ -1006,7 +1218,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chicxulub-crater-confirmed_aeed9h?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "ardi-fossil-described",
@@ -1020,7 +1235,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ardi-fossil-described_smsvgj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "denisovans-identified",
@@ -1034,7 +1252,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/denisovans-identified_jsl33u?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "northern-white-rhino-decline",
@@ -1048,6 +1271,9 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/northern-white-rhino-decline_i0ncmb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kenya"
+    ]
   }
 ]

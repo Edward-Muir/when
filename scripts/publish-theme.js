@@ -28,6 +28,7 @@ const {
   spreadReport,
 } = require('./themes/catalogue');
 
+/** Below this a theme is reported as clustered. Advisory: narrow-range themes are allowed. */
 const MIN_OCCUPIED_BINS = 6;
 const MIN_BAND_ZERO = 5;
 
@@ -84,13 +85,12 @@ function inspectTheme(theme, events, index) {
     console.log(`  range      ${formatYear(years[0])} to ${formatYear(years[years.length - 1])}`);
   }
 
+  // Advisory only. A theme may deliberately live in one stretch of history (a single
+  // dynasty, a single century of flight); the order within it is still a real puzzle, and the
+  // opening hand is protected by the band-0 gate below, not by spread.
   if (spread.occupied < MIN_OCCUPIED_BINS) {
-    const empty = spread.bins
-      .map((count, bin) => (count === 0 ? binLabel(events, index, bin) : null))
-      .filter(Boolean);
-    problems.push(
-      `only ${spread.occupied}/${spread.total} timeline bins are covered — a theme this ` +
-        `clustered plays as one long guess.\n   Missing roughly: ${empty.join('; ')}`
+    console.log(
+      `  note       clustered: ${spread.occupied}/${spread.total} bins (advisory, not a failure)`
     );
   }
 

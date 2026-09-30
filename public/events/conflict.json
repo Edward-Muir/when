@@ -13,7 +13,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)",
     "color": "#392114",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Israel"
+    ]
   },
   {
     "name": "battle-kadesh",
@@ -29,7 +33,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kadesh",
     "color": "#674f3a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Syria",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "persian-wars-begin",
@@ -45,7 +55,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Greco-Persian_Wars",
     "color": "#271f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Iran",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "battle-marathon",
@@ -61,7 +77,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marathon",
     "color": "#3a2d27",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Iran"
+    ]
   },
   {
     "name": "battle-thermopylae",
@@ -77,7 +97,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
     "color": "#3c3028",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Iran"
+    ]
   },
   {
     "name": "battle-salamis",
@@ -93,7 +117,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Salamis",
     "color": "#563f3c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Iran"
+    ]
   },
   {
     "name": "peloponnesian-war",
@@ -109,7 +137,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Peloponnesian_War",
     "color": "#534039",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "alexander-empire",
@@ -125,7 +156,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great",
     "color": "#322218",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "first-punic-war",
@@ -141,7 +177,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Punic_people",
     "color": "#3b2e29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "hannibal-crosses-alps",
@@ -157,7 +197,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hannibal's_crossing_of_the_Alps",
     "color": "#42474a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "battle-cannae",
@@ -173,7 +218,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
     "color": "#563e2e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "siege-syracuse",
@@ -190,7 +239,10 @@
     "color": "#2d251a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -212
+    "year_end": -212,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "battle-zama",
@@ -206,7 +258,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Zama",
     "color": "#60422f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "third-punic-war",
@@ -222,7 +278,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Carthage_(Third_Punic_War)",
     "color": "#413127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "spartacus-revolt",
@@ -239,7 +299,10 @@
     "color": "#3d2a20",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -71
+    "year_end": -71,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "crossing-rubicon",
@@ -255,7 +318,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon",
     "color": "#2c2935",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "julius-caesar",
@@ -271,7 +337,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
     "color": "#281f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "battle-actium",
@@ -287,7 +356,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Actium",
     "color": "#241f23",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Greece",
+      "Italy"
+    ]
   },
   {
     "name": "battle-teutoburg-forest",
@@ -303,7 +377,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
     "color": "#20221b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "jewish-revolt-begins",
@@ -320,7 +398,12 @@
     "color": "#242021",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 73
+    "year_end": 73,
+    "regions": [
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "siege-masada",
@@ -336,7 +419,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Masada",
     "color": "#2c1d18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Italy"
+    ]
   },
   {
     "name": "bar-kokhba-revolt",
@@ -353,7 +440,12 @@
     "color": "#271f1c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 135
+    "year_end": 135,
+    "regions": [
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "battle-adrianople",
@@ -369,7 +461,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Adrianople",
     "color": "#382d29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "sack-rome-visigoths",
@@ -385,7 +481,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
     "color": "#402923",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "attila-invasion",
@@ -401,7 +500,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Attila",
     "color": "#372b2e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "sack-rome-vandals",
@@ -417,7 +519,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)",
     "color": "#281f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "rome-falls",
@@ -433,7 +539,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
     "color": "#26201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "arab-conquest-persia",
@@ -450,7 +559,13 @@
     "color": "#242020",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 651
+    "year_end": 651,
+    "regions": [
+      "Iran",
+      "Iraq",
+      "Saudi Arabia",
+      "Turkmenistan"
+    ]
   },
   {
     "name": "battle-tours",
@@ -466,7 +581,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
     "color": "#272011",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "viking-lindisfarne",
@@ -482,7 +601,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lindisfarne",
     "color": "#4a5354",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "charlemagne",
@@ -498,7 +620,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
     "color": "#281f17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "battle-lechfeld",
@@ -514,7 +642,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld",
     "color": "#292823",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Hungary"
+    ]
   },
   {
     "name": "battle-manzikert",
@@ -530,7 +662,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert",
     "color": "#26201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "first-crusade",
@@ -546,7 +682,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "third-crusade",
@@ -562,7 +703,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Crusade",
     "color": "#373027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "genghis-khan",
@@ -578,7 +723,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Genghis_Khan",
     "color": "#3e3936",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mongolia"
+    ]
   },
   {
     "name": "mongol-invasion-rus",
@@ -595,7 +743,13 @@
     "color": "#353432",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1240
+    "year_end": 1240,
+    "regions": [
+      "Mongolia",
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "mongol-baghdad",
@@ -611,7 +765,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad",
     "color": "#6f5844",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Mongolia"
+    ]
   },
   {
     "name": "hundred-years-war-start",
@@ -627,7 +785,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Hundred_Years'_War",
     "color": "#39342a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-crecy",
@@ -643,13 +805,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Crécy",
     "color": "#3c342d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "gunpowder-europe",
     "friendly_name": "Gunpowder Warfare in Europe",
     "year": 1350,
-    "category": "agriculture",
+    "category": "warfare",
     "description": "The introduction of gunpowder weapons revolutionized European warfare.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-europe_ehxp1y?_a=BAMAMikS0",
@@ -660,7 +826,11 @@
     "color": "#25201e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1450
+    "year_end": 1450,
+    "regions": [
+      "China",
+      "Europe"
+    ]
   },
   {
     "name": "battle-poitiers",
@@ -676,7 +846,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Poitiers",
     "color": "#312d23",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-kulikovo",
@@ -692,7 +866,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kulikovo",
     "color": "#332d25",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-agincourt",
@@ -708,7 +886,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Agincourt",
     "color": "#3a3a36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "joan-of-arc",
@@ -724,7 +906,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Joan_of_Arc",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "constantinople-fall",
@@ -740,7 +925,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
     "color": "#2b1e17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "wars-of-roses",
@@ -756,7 +945,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses",
     "color": "#2f251a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "siege-vienna-first",
@@ -772,7 +964,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Vienna_(1529)",
     "color": "#372e2f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "dutch-revolt",
@@ -788,7 +985,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Eighty_Years'_War",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands",
+      "Spain"
+    ]
   },
   {
     "name": "battle-lepanto",
@@ -804,7 +1005,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Lepanto",
     "color": "#261f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "spanish-armada",
@@ -820,7 +1026,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Defeat_of_the_Spanish_Armada",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain",
+      "United Kingdom"
+    ]
   },
   {
     "name": "imjin-war",
@@ -837,7 +1048,13 @@
     "color": "#2b2c2e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1598
+    "year_end": 1598,
+    "regions": [
+      "China",
+      "Japan",
+      "North Korea",
+      "South Korea"
+    ]
   },
   {
     "name": "thirty-years-war-begins",
@@ -853,7 +1070,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Thirty_Years'_War",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Czechia"
+    ]
   },
   {
     "name": "battle-breitenfeld",
@@ -869,7 +1090,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Breitenfeld_(1631)",
     "color": "#291e18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Sweden"
+    ]
   },
   {
     "name": "english-civil-war-start",
@@ -885,7 +1110,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/English_Civil_War",
     "color": "#504d44",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-marston-moor",
@@ -901,7 +1129,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marston_Moor",
     "color": "#26201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "peace-westphalia",
@@ -917,7 +1148,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "Sweden"
+    ]
   },
   {
     "name": "charles-i-execution",
@@ -933,7 +1169,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_I_of_England",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-vienna",
@@ -949,7 +1188,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Vienna",
     "color": "#31231d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Poland",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "glorious-revolution",
@@ -966,7 +1211,11 @@
     "color": "#7b8790",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1689
+    "year_end": 1689,
+    "regions": [
+      "Netherlands",
+      "United Kingdom"
+    ]
   },
   {
     "name": "great-northern-war",
@@ -982,7 +1231,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Northern_War",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Estonia",
+      "Russia",
+      "Sweden",
+      "Europe"
+    ]
   },
   {
     "name": "battle-blenheim",
@@ -998,7 +1253,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Blenheim",
     "color": "#554235",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-poltava",
@@ -1014,7 +1274,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Poltava",
     "color": "#524e49",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Sweden",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "jacobite-rising",
@@ -1031,7 +1297,10 @@
     "color": "#271f1c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1746
+    "year_end": 1746,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "seven-years-war-start",
@@ -1047,7 +1316,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Years'_War",
     "color": "#212124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom",
+      "Global"
+    ]
   },
   {
     "name": "battle-plassey",
@@ -1063,7 +1337,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Plassey",
     "color": "#27201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-quebec",
@@ -1079,7 +1357,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Quebec",
     "color": "#281f16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "boston-massacre",
@@ -1095,7 +1378,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Massacre",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "boston-tea-party",
@@ -1111,7 +1398,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Tea_Party",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "american-revolution-start",
@@ -1127,7 +1417,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
     "color": "#24211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "battle-bunker-hill",
@@ -1143,7 +1437,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bunker_Hill",
     "color": "#291e1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "battle-princeton-1777",
@@ -1159,7 +1457,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Princeton",
     "color": "#24211b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "battle-yorktown",
@@ -1175,7 +1477,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown",
     "color": "#483521",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "french-revolution-start",
@@ -1191,7 +1498,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/French_Revolution_of_1848",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "storming-tuileries",
@@ -1207,7 +1517,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Insurrection_of_10_August_1792",
     "color": "#271f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "louis-xvi-execution",
@@ -1223,7 +1536,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Execution_of_Louis_XVI",
     "color": "#22211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "reign-of-terror-begins",
@@ -1239,7 +1555,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Timeline_of_the_French_Revolution",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "battle-marengo",
@@ -1255,7 +1574,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marengo",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "haitian-revolution",
@@ -1271,7 +1595,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Haiti"
+    ]
   },
   {
     "name": "battle-austerlitz",
@@ -1287,7 +1615,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Austerlitz",
     "color": "#70716a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia",
+      "France"
+    ]
   },
   {
     "name": "battle-trafalgar",
@@ -1303,7 +1635,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Trafalgar",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain",
+      "United Kingdom"
+    ]
   },
   {
     "name": "napoleon-russia",
@@ -1319,7 +1656,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_French_Empire",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-leipzig",
@@ -1335,7 +1677,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig",
     "color": "#323434",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "battle-new-orleans",
@@ -1351,7 +1696,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_New_Orleans",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "napoleon-escapes-elba",
@@ -1367,7 +1716,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Principality_of_Elba",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "napoleon-hundred-days",
@@ -1383,7 +1736,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hundred_Days",
     "color": "#37322e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "greek-independence",
@@ -1399,7 +1755,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Celebration_of_the_Greek_Revolution",
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "texas-revolution-alamo",
@@ -1415,7 +1776,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Alamo",
     "color": "#312f2b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "United States"
+    ]
   },
   {
     "name": "first-opium-war",
@@ -1431,7 +1796,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Opium_War",
     "color": "#1f2222",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "United Kingdom"
+    ]
   },
   {
     "name": "mexican-american-war",
@@ -1447,7 +1816,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mexican–American_War",
     "color": "#1f2224",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "United States"
+    ]
   },
   {
     "name": "spring-of-nations",
@@ -1464,7 +1837,10 @@
     "color": "#23211e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1849
+    "year_end": 1849,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "taiping-rebellion",
@@ -1480,7 +1856,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Taiping_Rebellion",
     "color": "#443b33",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "crimean-war",
@@ -1496,7 +1875,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crimean_War",
     "color": "#212122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ukraine"
+    ]
   },
   {
     "name": "charge-light-brigade",
@@ -1512,7 +1894,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Charge_of_the_Light_Brigade",
     "color": "#4f443b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ukraine",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-antietam",
@@ -1528,7 +1914,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Antietam",
     "color": "#202220",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "battle-hampton-roads",
@@ -1544,7 +1933,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hampton_Roads",
     "color": "#3e3932",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gettysburg",
@@ -1560,7 +1952,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gettysburg_Address",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "battle-gettysburg",
@@ -1576,7 +1971,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Gettysburg",
     "color": "#473d31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "shermans-march",
@@ -1592,7 +1990,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sherman's_March_to_the_Sea",
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "us-civil-war-end",
@@ -1608,7 +2009,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/American_Civil_War",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lincoln-assassination",
@@ -1624,7 +2028,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Abraham_Lincoln",
     "color": "#332824",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "austro-prussian-war",
@@ -1640,7 +2047,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Austro-Prussian_War",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Czechia",
+      "Germany"
+    ]
   },
   {
     "name": "franco-prussian-war",
@@ -1656,7 +2068,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Franco-Prussian_War",
     "color": "#44392f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "battle-sedan",
@@ -1672,7 +2088,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Sedan",
     "color": "#222121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "italian-unification",
@@ -1688,7 +2108,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Unification_of_Italy",
     "color": "#3e352b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "german-unification",
@@ -1704,7 +2127,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Unification_of_Germany",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "paris-commune",
@@ -1720,7 +2147,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Paris_Commune",
     "color": "#3d322d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "battle-little-bighorn",
@@ -1736,7 +2166,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Little_Bighorn",
     "color": "#37332c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "zulu-war",
@@ -1752,7 +2185,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Anglo-Zulu_War",
     "color": "#3a3129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa",
+      "United Kingdom"
+    ]
   },
   {
     "name": "spanish-american-war",
@@ -1768,7 +2205,14 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish–American_War",
     "color": "#21211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cuba",
+      "Philippines",
+      "Puerto Rico",
+      "Spain",
+      "United States"
+    ]
   },
   {
     "name": "boer-war",
@@ -1784,7 +2228,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Boer_War",
     "color": "#36322e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa",
+      "United Kingdom"
+    ]
   },
   {
     "name": "boxer-rebellion",
@@ -1800,7 +2248,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Boxer_Rebellion",
     "color": "#362215",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "russo-japanese-war",
@@ -1817,7 +2268,13 @@
     "color": "#372b22",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1905
+    "year_end": 1905,
+    "regions": [
+      "China",
+      "Japan",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "first-russian-revolution",
@@ -1834,7 +2291,11 @@
     "color": "#2c1d16",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1907
+    "year_end": 1907,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-tsushima",
@@ -1850,7 +2311,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tsushima",
     "color": "#24201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "mexican-revolution",
@@ -1866,7 +2332,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mexican_Revolution",
     "color": "#37281d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "chinese-revolution",
@@ -1883,7 +2352,10 @@
     "color": "#5b3c2b",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1912
+    "year_end": 1912,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "wwi-start",
@@ -1899,7 +2371,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_I",
     "color": "#36251a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Bosnia and Herzegovina",
+      "Serbia"
+    ]
   },
   {
     "name": "ludlow-massacre",
@@ -1915,7 +2392,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ludlow_Massacre",
     "color": "#443526",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lusitania-sinking",
@@ -1931,7 +2411,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_RMS_Lusitania",
     "color": "#3e3528",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-somme",
@@ -1947,7 +2432,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Somme",
     "color": "#3f3126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-verdun",
@@ -1963,7 +2453,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Verdun",
     "color": "#4c3323",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "battle-jutland",
@@ -1979,7 +2473,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Jutland",
     "color": "#413b3a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Denmark",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "easter-rising",
@@ -1995,7 +2494,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Easter_Rising",
     "color": "#342619",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "gallipoli-ends",
@@ -2011,7 +2514,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
     "color": "#2f2a29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "United Kingdom",
+      "Europe"
+    ]
   },
   {
     "name": "battle-passchendaele",
@@ -2027,7 +2535,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Passchendaele",
     "color": "#4b3929",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "wwi-end",
@@ -2043,13 +2556,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Aftermath_of_World_War_I",
     "color": "#3d3123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "red-army-formed",
     "friendly_name": "Red Army Founded",
     "year": 1918,
-    "category": "commerce",
+    "category": "warfare",
     "description": "Trotsky organized the Workers' and Peasants' Red Army to defend the Revolution.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/red-army-formed_fwupin?_a=BAMAMikS0",
@@ -2059,7 +2576,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Red_Army",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "finnish-civil-war-begins",
@@ -2075,7 +2596,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Finnish_Civil_War",
     "color": "#25201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Finland"
+    ]
   },
   {
     "name": "treaty-versailles",
@@ -2091,7 +2615,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
     "color": "#4b3b29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "irish-independence",
@@ -2107,7 +2635,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_War_of_Independence",
     "color": "#23211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "march-first-movement",
@@ -2123,7 +2655,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/March_First_Movement",
     "color": "#3b2c1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "South Korea"
+    ]
   },
   {
     "name": "jallianwala-bagh-massacre",
@@ -2139,7 +2675,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre",
     "color": "#4d2f1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "United Kingdom"
+    ]
   },
   {
     "name": "mussolini-power",
@@ -2155,7 +2695,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mussolini:_Son_of_the_Century",
     "color": "#33241b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "russian-civil-war-ends",
@@ -2171,7 +2714,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
     "color": "#a59b84",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "hitler-chancellor",
@@ -2187,7 +2734,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hitler_cabinet",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "long-march-begins",
@@ -2203,7 +2753,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Long_March",
     "color": "#281f16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "spanish-civil-war",
@@ -2219,7 +2772,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nationalist_faction_(Spanish_Civil_War)",
     "color": "#24201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Morocco",
+      "Spain"
+    ]
   },
   {
     "name": "sino-japanese-war",
@@ -2236,7 +2793,11 @@
     "color": "#35251c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1945
+    "year_end": 1945,
+    "regions": [
+      "China",
+      "Japan"
+    ]
   },
   {
     "name": "rape-nanking",
@@ -2252,7 +2813,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nanjing_Massacre",
     "color": "#372c23",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Japan"
+    ]
   },
   {
     "name": "kristallnacht",
@@ -2268,7 +2833,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kristallnacht",
     "color": "#3d2f20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Germany"
+    ]
   },
   {
     "name": "munich-agreement",
@@ -2284,7 +2853,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_Agreement",
     "color": "#25201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia",
+      "Germany"
+    ]
   },
   {
     "name": "wwii-start",
@@ -2300,7 +2873,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_II",
     "color": "#37291d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "battle-britain",
@@ -2316,7 +2893,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
     "color": "#281f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "fall-of-france",
@@ -2332,7 +2913,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_France",
     "color": "#3e342b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "dunkirk-evacuation",
@@ -2348,7 +2933,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dunkirk_evacuation",
     "color": "#262019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "pearl-harbor",
@@ -2364,7 +2953,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor",
     "color": "#382820",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "siege-leningrad",
@@ -2380,7 +2973,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-el-alamein",
@@ -2396,7 +2994,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein",
     "color": "#2b1e14",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-midway",
@@ -2412,7 +3015,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Midway",
     "color": "#3d3123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "stalingrad",
@@ -2428,7 +3035,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
     "color": "#4c392e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-kursk",
@@ -2444,7 +3056,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kursk",
     "color": "#392a1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "d-day",
@@ -2460,7 +3077,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Normandy_landings",
     "color": "#3a3d3b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "battle-bulge",
@@ -2476,13 +3098,18 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
     "color": "#23211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Germany",
+      "United States"
+    ]
   },
   {
     "name": "siege-leningrad-lifted",
     "friendly_name": "Siege of Leningrad Lifted",
     "year": 1944,
-    "category": "architecture",
+    "category": "warfare",
     "description": "The 900-day Siege of Leningrad by German forces ends.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-leningrad-lifted_qoopft?_a=BAMAMikS0",
@@ -2492,7 +3119,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
     "color": "#442d1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-monte-cassino-begins",
@@ -2508,7 +3139,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Timeline_of_World_War_II_(1944)",
     "color": "#393126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "wwii-end-europe",
@@ -2524,7 +3158,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/V_Day",
     "color": "#25201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "nuremberg-trials",
@@ -2540,7 +3178,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nuremberg_trials",
     "color": "#25201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "hiroshima",
@@ -2556,7 +3197,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
     "color": "#272019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "fall-of-berlin",
@@ -2572,7 +3217,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Berlin",
     "color": "#423429",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "wwii-end",
@@ -2588,7 +3238,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_World_War_II",
     "color": "#403625",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "chinese-communist-victory",
@@ -2604,7 +3259,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Communist_Revolution",
     "color": "#3f2819",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "korean-war-start",
@@ -2620,7 +3278,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
     "color": "#232c31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "North Korea",
+      "South Korea"
+    ]
   },
   {
     "name": "batista-cuba-coup",
@@ -2636,7 +3298,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1952_Cuban_coup_d'état",
     "color": "#20303b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cuba"
+    ]
   },
   {
     "name": "korean-war-armistice",
@@ -2652,7 +3317,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Korean_Armistice_Agreement",
     "color": "#393e41",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "North Korea",
+      "South Korea"
+    ]
   },
   {
     "name": "battle-dien-bien-phu",
@@ -2668,7 +3338,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Vietnam"
+    ]
   },
   {
     "name": "suez-crisis",
@@ -2685,7 +3359,12 @@
     "color": "#a4b0b4",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1957
+    "year_end": 1957,
+    "regions": [
+      "Egypt",
+      "Israel",
+      "Europe"
+    ]
   },
   {
     "name": "hungarian-revolution",
@@ -2701,7 +3380,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
     "color": "#252c31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Hungary",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "cuban-revolution",
@@ -2717,7 +3401,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cuban_Revolution",
     "color": "#39474d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cuba"
+    ]
   },
   {
     "name": "congo-crisis",
@@ -2734,7 +3421,11 @@
     "color": "#48464a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1965
+    "year_end": 1965,
+    "regions": [
+      "Belgium",
+      "Democratic Republic of the Congo"
+    ]
   },
   {
     "name": "bay-of-pigs",
@@ -2750,7 +3441,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion",
     "color": "#343d46",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cuba",
+      "United States"
+    ]
   },
   {
     "name": "lumumba-assassination",
@@ -2766,13 +3461,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Patrice_Lumumba",
     "color": "#212027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Democratic Republic of the Congo"
+    ]
   },
   {
     "name": "operation-chopper-vietnam",
     "friendly_name": "Operation Chopper Vietnam",
     "year": 1962,
-    "category": "media",
+    "category": "warfare",
     "description": "Operation Chopper, the first American combat mission in the Vietnam War, takes place.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/operation-chopper-vietnam_ub18y4?_a=BAMAMikS0",
@@ -2782,7 +3481,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Operation_Chopper_(Vietnam)",
     "color": "#202127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Vietnam"
+    ]
   },
   {
     "name": "jfk-assassination",
@@ -2798,7 +3501,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy",
     "color": "#1b212d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "zanzibar-revolution",
@@ -2814,7 +3520,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Zanzibar_Revolution",
     "color": "#1d2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Tanzania"
+    ]
   },
   {
     "name": "vietnam-war-start",
@@ -2830,7 +3539,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Opposition_to_United_States_involvement_in_the_Vietnam_War",
     "color": "#33393e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Vietnam"
+    ]
   },
   {
     "name": "six-day-war",
@@ -2846,7 +3559,14 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Six-Day_War",
     "color": "#212122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Israel",
+      "Jordan",
+      "Palestine",
+      "Syria"
+    ]
   },
   {
     "name": "mlk-assassination",
@@ -2862,7 +3582,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Martin_Luther_King_Jr.",
     "color": "#1b212b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "prague-spring",
@@ -2878,7 +3601,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Spring",
     "color": "#33363c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "tet-offensive",
@@ -2894,7 +3622,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tet_Offensive",
     "color": "#1e2126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Vietnam"
+    ]
   },
   {
     "name": "battle-khe-sanh-begins",
@@ -2910,7 +3642,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Khe_Sanh",
     "color": "#383d48",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Vietnam"
+    ]
   },
   {
     "name": "uss-pueblo-seized",
@@ -2926,7 +3662,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/USS_Pueblo_(AGER-2)",
     "color": "#1d2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "North Korea",
+      "United States"
+    ]
   },
   {
     "name": "jan-palach-death",
@@ -2942,7 +3682,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jan_Palach",
     "color": "#2c333e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia"
+    ]
   },
   {
     "name": "biafra-capitulates",
@@ -2958,7 +3701,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/January_12",
     "color": "#1e2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "bangladesh-liberation-war",
@@ -2974,7 +3720,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bangladesh_Liberation_War",
     "color": "#19222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bangladesh",
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "yom-kippur-war",
@@ -2990,7 +3741,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Yom_Kippur_War",
     "color": "#1d2227",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Israel",
+      "Syria"
+    ]
   },
   {
     "name": "watergate",
@@ -3006,7 +3762,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Watergate_scandal",
     "color": "#1e2225",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ethiopian-revolution",
@@ -3022,7 +3781,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ethiopian_Revolution",
     "color": "#696f72",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "patty-hearst-kidnapped",
@@ -3038,7 +3800,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Patty_Hearst",
     "color": "#1e2126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "vietnam-war-end",
@@ -3054,14 +3819,18 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
     "color": "#1d2225",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Vietnam"
+    ]
   },
   {
     "name": "cambodian-genocide",
-    "friendly_name": "Khmer Rouge Takes Power",
+    "friendly_name": "Khmer Rouge Genocide",
     "year": 1975,
     "category": "revolution",
-    "description": "The Khmer Rouge seized Cambodia and began a genocide killing nearly two million.",
+    "description": "The Khmer Rouge regime killed well over a million Cambodians through execution, starvation and forced labour.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cambodian-genocide_ujovcg?_a=BAMAMikS0",
     "image_width": 330,
@@ -3071,7 +3840,10 @@
     "color": "#38464e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1979
+    "year_end": 1979,
+    "regions": [
+      "Cambodia"
+    ]
   },
   {
     "name": "angolan-civil-war",
@@ -3087,7 +3859,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Angolan_Civil_War",
     "color": "#1e2126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Angola"
+    ]
   },
   {
     "name": "iranian-revolution",
@@ -3104,7 +3879,10 @@
     "color": "#333e47",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1979
+    "year_end": 1979,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "soviet-afghanistan",
@@ -3120,7 +3898,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Soviet–Afghan_War",
     "color": "#1c2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "iran-iraq-war",
@@ -3136,7 +3919,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iran–Iraq_War",
     "color": "#1f2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "gwangju-uprising",
@@ -3152,7 +3939,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gwangju_Uprising",
     "color": "#42494d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "falklands-war",
@@ -3168,7 +3958,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Falklands_War",
     "color": "#3a4249",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Argentina",
+      "Falkland Islands",
+      "United Kingdom"
+    ]
   },
   {
     "name": "grenada-invasion",
@@ -3184,7 +3979,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_invasion_of_Grenada",
     "color": "#484e52",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Grenada",
+      "United States"
+    ]
   },
   {
     "name": "first-intifada",
@@ -3201,7 +4000,11 @@
     "color": "#46545d",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1993
+    "year_end": 1993,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "berlin-wall-fall",
@@ -3217,7 +4020,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
     "color": "#1d2127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "tiananmen-square",
@@ -3233,7 +4039,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre",
     "color": "#39485e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "soviet-union-collapse",
@@ -3249,13 +4058,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
     "color": "#202027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "gulf-war",
     "friendly_name": "Gulf War Begins",
     "year": 1991,
-    "category": "revolution",
+    "category": "warfare",
     "description": "A US-led coalition launched Operation Desert Storm to liberate Kuwait.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gulf-war_etoosv?_a=BAMAMikS0",
@@ -3265,7 +4078,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gulf_War",
     "color": "#333d4a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Kuwait",
+      "United States"
+    ]
   },
   {
     "name": "yugoslavia-wars-start",
@@ -3281,7 +4099,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Yugoslav_Wars",
     "color": "#1c2228",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Croatia",
+      "Serbia",
+      "Slovenia"
+    ]
   },
   {
     "name": "apartheid-ends",
@@ -3297,7 +4120,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid",
     "color": "#202027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "rwandan-genocide",
@@ -3313,7 +4139,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rwandan_genocide",
     "color": "#1e2127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Rwanda"
+    ]
   },
   {
     "name": "oklahoma-city-bombing",
@@ -3329,7 +4158,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Oklahoma_City_bombing",
     "color": "#3e434e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "srebrenica-massacre",
@@ -3345,7 +4177,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Srebrenica_massacre",
     "color": "#2a2e35",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bosnia and Herzegovina"
+    ]
   },
   {
     "name": "kosovo-war",
@@ -3361,7 +4196,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kosovo_War",
     "color": "#2f3844",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kosovo",
+      "Serbia"
+    ]
   },
   {
     "name": "second-intifada",
@@ -3377,7 +4216,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Intifada",
     "color": "#232020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "september-11",
@@ -3393,7 +4236,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/September_11_attacks",
     "color": "#223b4e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "afghanistan-war-start",
@@ -3409,7 +4255,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001–2021)",
     "color": "#1e2125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "saddam-hussein-captured",
@@ -3425,7 +4276,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Capture_of_Saddam_Hussein",
     "color": "#1e2126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "United States"
+    ]
   },
   {
     "name": "iraq-war-start",
@@ -3441,7 +4296,12 @@
     "image_height": 440,
     "color": "#75624e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "madrid-bombings",
@@ -3457,7 +4317,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2004_Madrid_train_bombings",
     "color": "#2c363e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "beslan-school-siege",
@@ -3473,7 +4336,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Beslan_school_siege",
     "color": "#1f2125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "london-bombings",
@@ -3489,7 +4356,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/7_July_2005_London_bombings",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "obama-elected",
@@ -3505,7 +4375,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Barack_Obama",
     "color": "#201f2c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "georgia-russia-war",
@@ -3521,7 +4394,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russo-Georgian_War",
     "color": "#172231",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Georgia",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "bin-laden-killed",
@@ -3537,7 +4415,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Killing_of_Osama_bin_Laden",
     "color": "#1d2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Pakistan",
+      "United States"
+    ]
   },
   {
     "name": "arab-spring",
@@ -3553,7 +4435,15 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_Spring",
     "color": "#2d2627",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bahrain",
+      "Egypt",
+      "Libya",
+      "Syria",
+      "Tunisia",
+      "Yemen"
+    ]
   },
   {
     "name": "syrian-civil-war",
@@ -3569,7 +4459,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Syrian_civil_war",
     "color": "#382b20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Syria"
+    ]
   },
   {
     "name": "libyan-civil-war",
@@ -3585,7 +4478,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Libyan_civil_war_(2014–2020)",
     "color": "#172230",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Libya"
+    ]
   },
   {
     "name": "crimea-annexation",
@@ -3601,7 +4497,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_occupation_of_Crimea",
     "color": "#212e36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "isis-caliphate",
@@ -3617,7 +4518,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Islamic_State",
     "color": "#875638",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Syria"
+    ]
   },
   {
     "name": "brexit-vote",
@@ -3633,7 +4538,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2016_United_Kingdom_European_Union_membership_referendum",
     "color": "#222024",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "capitol-riot-2021",
@@ -3649,7 +4557,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack",
     "color": "#301d19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "myanmar-coup-2021",
@@ -3665,7 +4576,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d'état",
     "color": "#252117",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Myanmar"
+    ]
   },
   {
     "name": "russia-ukraine-invasion",
@@ -3681,7 +4595,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine",
     "color": "#333735",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "reichstag-fire",
@@ -3697,7 +4616,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Reichstag_fire",
     "color": "#432e1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "operation-barbarossa",
@@ -3713,7 +4635,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
     "color": "#3a2f27",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "wannsee-conference",
@@ -3729,7 +4656,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wannsee_Conference",
     "color": "#7b6c5a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "warsaw-ghetto-uprising",
@@ -3745,7 +4675,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Warsaw_Ghetto_Uprising",
     "color": "#322418",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "italy-surrenders-ww2",
@@ -3761,7 +4695,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Armistice_of_Cassibile",
     "color": "#272019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "tehran-conference",
@@ -3777,7 +4714,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tehran_Conference",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "liberation-paris",
@@ -3793,7 +4733,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
     "color": "#3d2a1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "liberation-auschwitz",
@@ -3809,13 +4752,18 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Liberation_of_Auschwitz_concentration_camp",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Poland",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "death-fdr",
     "friendly_name": "Death of FDR",
     "year": 1945,
-    "category": "revolution",
+    "category": "figures",
     "description": "President Franklin D. Roosevelt died in office, just weeks before Germany's surrender.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-fdr_nxzpfa?_a=BAMAMikS0",
@@ -3825,13 +4773,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Franklin_D._Roosevelt",
     "color": "#4a311e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "death-hitler",
     "friendly_name": "Death of Hitler",
     "year": 1945,
-    "category": "revolution",
+    "category": "figures",
     "description": "Adolf Hitler died by suicide in his Berlin bunker as Allied forces closed in.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-hitler_q0xqjj?_a=BAMAMikS0",
@@ -3841,7 +4792,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Adolf_Hitler",
     "color": "#24211b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "gandhi-assassination",
@@ -3857,7 +4811,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Mahatma_Gandhi",
     "color": "#272017",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "rfk-assassination",
@@ -3873,7 +4830,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Robert_F._Kennedy",
     "color": "#212026",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "shaka-zulu-kingdom",
@@ -3889,7 +4849,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Shaka",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "trail-of-tears",
@@ -3905,7 +4868,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trail_of_Tears",
     "color": "#302e2a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "sargon-akkad-empire",
@@ -3921,7 +4887,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sargon_of_Akkad",
     "color": "#413435",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "babylonian-captivity",
@@ -3937,7 +4906,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Babylonian_captivity",
     "color": "#212026",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "fall-han-dynasty",
@@ -3953,7 +4927,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_the_Han_dynasty",
     "color": "#241f27",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "new-kingdom-egypt-begins",
@@ -3969,7 +4946,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Twentieth_Dynasty_of_Egypt",
     "color": "#2d1d15",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "peisistratos-tyrant",
@@ -3986,7 +4966,10 @@
     "color": "#261f21",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -527
+    "year_end": -527,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "battle-leuctra",
@@ -4002,7 +4985,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Leuctra",
     "color": "#2b1e18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "battle-pydna",
@@ -4018,13 +5004,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Pydna",
     "color": "#2b1e1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Italy"
+    ]
   },
   {
     "name": "death-qin-shi-huang",
     "friendly_name": "Death of Qin Shi Huang",
     "year": -210,
-    "category": "revolution",
+    "category": "figures",
     "description": "China's first emperor died while seeking immortality, leaving a vast terracotta army.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-qin-shi-huang_donii9?_a=BAMAMikS0",
@@ -4034,7 +5024,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
     "color": "#24201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "battle-carrhae",
@@ -4050,7 +5043,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
     "color": "#163f60",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Italy",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "battle-pharsalus",
@@ -4066,7 +5065,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
     "color": "#271f20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Italy"
+    ]
   },
   {
     "name": "year-four-emperors",
@@ -4082,7 +5085,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_the_Four_Emperors",
     "color": "#2e1f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "year-five-emperors",
@@ -4098,7 +5104,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_the_Five_Emperors",
     "color": "#271f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "yellow-turban-rebellion",
@@ -4115,7 +5124,10 @@
     "color": "#532e26",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 205
+    "year_end": 205,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "battle-milvian-bridge",
@@ -4131,7 +5143,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge",
     "color": "#46423e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "crossing-of-the-rhine",
@@ -4147,7 +5162,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crossing_of_the_Rhine",
     "color": "#1f2123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "vandals-conquer-north-africa",
@@ -4164,7 +5183,11 @@
     "color": "#232021",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 439
+    "year_end": 439,
+    "regions": [
+      "Spain",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "vandals-take-carthage",
@@ -4180,7 +5203,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Carthage",
     "color": "#3b2821",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "nika-riots",
@@ -4196,7 +5223,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
     "color": "#281f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "first-islamic-civil-war",
@@ -4213,7 +5244,12 @@
     "color": "#22211c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 661
+    "year_end": 661,
+    "regions": [
+      "Iraq",
+      "Saudi Arabia",
+      "Syria"
+    ]
   },
   {
     "name": "battle-of-guadalete",
@@ -4229,7 +5265,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Guadalete",
     "color": "#2b2019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "siege-of-constantinople-717",
@@ -4245,7 +5284,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_sieges_of_Constantinople",
     "color": "#37271e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Syria",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "an-lushan-rebellion",
@@ -4262,7 +5306,10 @@
     "color": "#22211f",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 763
+    "year_end": 763,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "great-heathen-army",
@@ -4279,7 +5326,10 @@
     "color": "#2e3131",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 878
+    "year_end": 878,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-hastings",
@@ -4295,7 +5345,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
     "color": "#3b362d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-stamford-bridge",
@@ -4311,7 +5365,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
     "color": "#242727",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Norway",
+      "United Kingdom"
+    ]
   },
   {
     "name": "capture-of-jerusalem-1099",
@@ -4327,7 +5385,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "battle-of-legnano",
@@ -4343,7 +5406,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Legnano",
     "color": "#2c2923",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "battle-of-hattin",
@@ -4359,7 +5426,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hattin",
     "color": "#292a26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel"
+    ]
   },
   {
     "name": "saladin-recaptures-jerusalem",
@@ -4375,7 +5445,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem",
     "color": "#393124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "battle-of-arsuf",
@@ -4391,7 +5465,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Arsuf",
     "color": "#26201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "United Kingdom"
+    ]
   },
   {
     "name": "albigensian-crusade-begins",
@@ -4407,7 +5485,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Albigensian_Crusade",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "childrens-crusade",
@@ -4423,7 +5505,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Children's_Crusade",
     "color": "#22211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "battle-of-bouvines",
@@ -4439,7 +5526,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bouvines",
     "color": "#312b21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-legnica",
@@ -4455,7 +5547,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Legnica",
     "color": "#362d25",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mongolia",
+      "Poland"
+    ]
   },
   {
     "name": "battle-of-ain-jalut",
@@ -4471,7 +5567,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut",
     "color": "#232020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Israel",
+      "Mongolia"
+    ]
   },
   {
     "name": "kamikaze-mongol-fleet",
@@ -4487,7 +5588,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kamikaze_(typhoon)",
     "color": "#172328",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Japan"
+    ]
   },
   {
     "name": "battle-of-golden-spurs",
@@ -4503,7 +5608,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Golden_Spurs",
     "color": "#312a20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "France"
+    ]
   },
   {
     "name": "battle-of-bannockburn",
@@ -4519,7 +5628,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bannockburn",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-sluys",
@@ -4535,7 +5647,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Sluys",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Netherlands",
+      "United Kingdom"
+    ]
   },
   {
     "name": "peasants-revolt-england",
@@ -4551,7 +5668,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Peasants'_Revolt",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-kosovo",
@@ -4567,7 +5687,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kosovo",
     "color": "#2c2019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kosovo",
+      "Serbia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "battle-of-grunwald",
@@ -4583,7 +5709,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Grunwald",
     "color": "#221f28",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Lithuania",
+      "Poland"
+    ]
   },
   {
     "name": "joan-of-arc-executed",
@@ -4599,7 +5729,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trial_of_Joan_of_Arc",
     "color": "#202123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-nancy",
@@ -4615,7 +5749,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Nancy",
     "color": "#1e2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Switzerland"
+    ]
   },
   {
     "name": "battle-of-bosworth-field",
@@ -4631,7 +5769,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field",
     "color": "#25201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-flodden",
@@ -4647,7 +5788,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Flodden",
     "color": "#6c756d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-marignano",
@@ -4663,7 +5807,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marignano",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Switzerland"
+    ]
   },
   {
     "name": "fall-of-tenochtitlan",
@@ -4679,7 +5828,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan",
     "color": "#3c2c23",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Spain"
+    ]
   },
   {
     "name": "hyksos-invasion-of-egypt",
@@ -4695,7 +5848,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hyksos",
     "color": "#a07a4e",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "pompey-conquers-jerusalem",
@@ -4711,7 +5867,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_the_Roman_Empire",
     "color": "#392314",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "roman-conquest-of-britain",
@@ -4728,7 +5889,11 @@
     "color": "#676a6a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 84
+    "year_end": 84,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-badr",
@@ -4744,7 +5909,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Badr",
     "color": "#232024",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "conquest-of-mecca",
@@ -4760,7 +5928,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Conquest_of_Mecca",
     "color": "#281e22",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "battle-of-yarmouk",
@@ -4776,7 +5947,14 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Yarmuk",
     "color": "#271f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Jordan",
+      "Saudi Arabia",
+      "Syria",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "arab-conquest-of-egypt",
@@ -4793,7 +5971,13 @@
     "color": "#352419",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 642
+    "year_end": 642,
+    "regions": [
+      "Egypt",
+      "Saudi Arabia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "battle-of-talas",
@@ -4809,7 +5993,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Talas",
     "color": "#222121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Iraq",
+      "Kyrgyzstan"
+    ]
   },
   {
     "name": "alfred-the-great-recaptures-london",
@@ -4825,7 +6014,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_battles_301–1300",
     "color": "#291f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "fourth-crusade-called",
@@ -4841,7 +6033,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fourth_Crusade",
     "color": "#202121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "sixth-crusade-treaty",
@@ -4857,7 +6052,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sixth_Crusade",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "siege-of-montsegur",
@@ -4873,7 +6074,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Montségur",
     "color": "#30241c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "jacquerie-peasant-revolt",
@@ -4889,7 +6093,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jacquerie",
     "color": "#2d1d12",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "battle-of-varna",
@@ -4905,7 +6112,14 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Varna",
     "color": "#25201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bulgaria",
+      "Hungary",
+      "Poland",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "edward-iv-crowned",
@@ -4921,7 +6135,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/St_Edward's_Crown",
     "color": "#212028",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "german-peasants-war-begins",
@@ -4937,7 +6154,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/German_Peasants'_War",
     "color": "#311b12",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "st-bartholomews-day-massacre",
@@ -4953,7 +6173,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/St._Bartholomew's_Day_massacre",
     "color": "#281f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "grotius-publishes-on-the-law-of-war-and-peace",
@@ -4969,7 +6192,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hugo_Grotius",
     "color": "#261f22",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "irish-rebellion-of-1641",
@@ -4985,7 +6211,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_Rebellion_of_1641",
     "color": "#291f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "franco-dutch-war-begins",
@@ -5001,7 +6231,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Anglo-Dutch_War",
     "color": "#271f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Netherlands"
+    ]
   },
   {
     "name": "king-philips-war",
@@ -5018,7 +6252,10 @@
     "color": "#2b1d19",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1678
+    "year_end": 1678,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "siege-of-derry",
@@ -5034,7 +6271,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Derry",
     "color": "#abafa7",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-the-boyne",
@@ -5050,7 +6290,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Boyne",
     "color": "#777167",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "war-of-spanish-succession-begins",
@@ -5066,7 +6310,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession",
     "color": "#281f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "nadir-shah-sacks-delhi",
@@ -5082,7 +6330,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nader_Shah's_invasion_of_India",
     "color": "#291e1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Iran"
+    ]
   },
   {
     "name": "war-of-jenkins-ear",
@@ -5099,7 +6351,11 @@
     "color": "#281f19",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1748
+    "year_end": 1748,
+    "regions": [
+      "Spain",
+      "United Kingdom"
+    ]
   },
   {
     "name": "war-of-austrian-succession-begins",
@@ -5115,7 +6371,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession",
     "color": "#2c1d17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "shays-rebellion",
@@ -5131,7 +6392,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Shays's_Rebellion",
     "color": "#362b22",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "irish-rebellion-of-1798",
@@ -5147,7 +6411,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_Rebellion_of_1798",
     "color": "#291e1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "war-of-1812-begins",
@@ -5163,7 +6432,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Timeline_of_the_War_of_1812",
     "color": "#2f2924",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "peterloo-massacre",
@@ -5179,7 +6452,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Peterloo_Massacre",
     "color": "#242020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-ayacucho",
@@ -5195,7 +6471,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ayacucho",
     "color": "#3b3229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru",
+      "Spain"
+    ]
   },
   {
     "name": "battle-of-navarino",
@@ -5211,7 +6491,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Navarino",
     "color": "#392e25",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Greece",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "nat-turners-rebellion",
@@ -5227,7 +6513,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nat_Turner's_Rebellion",
     "color": "#22211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "sepoy-mutiny",
@@ -5244,7 +6533,11 @@
     "color": "#1e2223",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1858
+    "year_end": 1858,
+    "regions": [
+      "India",
+      "United Kingdom"
+    ]
   },
   {
     "name": "sand-creek-massacre",
@@ -5260,7 +6553,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sand_Creek_massacre",
     "color": "#32312c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nez-perce-war",
@@ -5276,7 +6572,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nez_Perce_War",
     "color": "#383733",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "war-of-the-pacific",
@@ -5293,7 +6592,12 @@
     "color": "#393b3a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1884
+    "year_end": 1884,
+    "regions": [
+      "Bolivia",
+      "Chile",
+      "Peru"
+    ]
   },
   {
     "name": "first-boer-war",
@@ -5310,7 +6614,11 @@
     "color": "#1e2126",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1881
+    "year_end": 1881,
+    "regions": [
+      "South Africa",
+      "United Kingdom"
+    ]
   },
   {
     "name": "assassination-of-alexander-ii",
@@ -5326,7 +6634,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Alexander_II_of_Russia",
     "color": "#46433f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "assassination-of-garfield",
@@ -5342,7 +6654,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_James_A._Garfield",
     "color": "#212122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "jack-the-ripper-murders",
@@ -5358,7 +6673,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jack_the_Ripper",
     "color": "#1d2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "wounded-knee-massacre",
@@ -5374,7 +6692,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wounded_Knee_Massacre",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-sino-japanese-war",
@@ -5391,7 +6712,13 @@
     "color": "#3d3c39",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1895
+    "year_end": 1895,
+    "regions": [
+      "China",
+      "Japan",
+      "North Korea",
+      "South Korea"
+    ]
   },
   {
     "name": "philippine-american-war",
@@ -5408,7 +6735,11 @@
     "color": "#20221e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1902
+    "year_end": 1902,
+    "regions": [
+      "Philippines",
+      "United States"
+    ]
   },
   {
     "name": "assassination-of-mckinley",
@@ -5424,7 +6755,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_William_McKinley",
     "color": "#1f2222",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "end-of-philippine-american-war",
@@ -5440,7 +6774,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
     "color": "#3b3027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Philippines",
+      "United States"
+    ]
   },
   {
     "name": "kishinev-pogrom",
@@ -5456,7 +6794,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kishinev_pogrom",
     "color": "#463021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Moldova"
+    ]
   },
   {
     "name": "herero-genocide",
@@ -5473,7 +6814,11 @@
     "color": "#492714",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1908
+    "year_end": 1908,
+    "regions": [
+      "Germany",
+      "Namibia"
+    ]
   },
   {
     "name": "potemkin-mutiny",
@@ -5489,7 +6834,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_battleship_Potemkin",
     "color": "#3d2d1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Romania",
+      "Ukraine"
+    ]
   },
   {
     "name": "first-balkan-war",
@@ -5506,7 +6855,11 @@
     "color": "#382b1e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1913
+    "year_end": 1913,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "second-balkan-war",
@@ -5522,7 +6875,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Balkan_War",
     "color": "#2f2214",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bulgaria",
+      "Greece",
+      "Serbia"
+    ]
   },
   {
     "name": "archduke-franz-ferdinand-assassinated",
@@ -5538,7 +6896,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Bosnia and Herzegovina",
+      "Serbia"
+    ]
   },
   {
     "name": "first-battle-of-the-marne",
@@ -5554,7 +6917,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Battle_of_the_Marne",
     "color": "#423226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "armenian-genocide-begins",
@@ -5570,7 +6938,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Armenian_genocide_recognition",
     "color": "#372a1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "second-battle-of-ypres-first-gas-attack",
@@ -5586,7 +6959,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Battle_of_Ypres",
     "color": "#383627",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Germany"
+    ]
   },
   {
     "name": "us-enters-world-war-i",
@@ -5602,7 +6979,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_in_World_War_I",
     "color": "#443b3e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United States"
+    ]
   },
   {
     "name": "third-afghan-war",
@@ -5618,14 +6999,19 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Anglo-Afghan_War",
     "color": "#3c2b1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan",
+      "Pakistan",
+      "United Kingdom"
+    ]
   },
   {
     "name": "polish-soviet-war",
-    "friendly_name": "Polish-Soviet War",
+    "friendly_name": "Battle of Warsaw",
     "year": 1920,
     "category": "warfare",
-    "description": "Poland defeated the Soviet Red Army at the Battle of Warsaw, halting communist expansion into Europe and securing Polish independence.",
+    "description": "Polish forces broke the Red Army's advance outside the capital, ending Soviet hopes of carrying revolution westward.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/polish-soviet-war_pwbzin?_a=BAMAMikS0",
     "image_width": 330,
@@ -5634,7 +7020,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Polish–Soviet_War",
     "color": "#312a21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Poland",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "turkish-war-of-independence",
@@ -5651,7 +7042,12 @@
     "color": "#271f1a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1923
+    "year_end": 1923,
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "katyn-massacre",
@@ -5667,7 +7063,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Katyn_massacre",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Poland",
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "trotsky-assassinated",
@@ -5683,7 +7085,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Leon_Trotsky",
     "color": "#291e1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-of-the-philippine-sea",
@@ -5699,13 +7106,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea",
     "color": "#483b2c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "dresden-bombing",
     "friendly_name": "Dresden Bombing",
     "year": 1945,
-    "category": "revolution",
+    "category": "warfare",
     "description": "Allied firebombing of Dresden killed approximately 25,000 people and destroyed the historic city center, becoming one of WWII's most controversial attacks.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dresden-bombing_atclq3?_a=BAMAMikS0",
@@ -5715,7 +7126,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bombing_of_Dresden",
     "color": "#271f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "french-indochina-war-begins",
@@ -5731,7 +7147,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Indochina_War",
     "color": "#24201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Vietnam"
+    ]
   },
   {
     "name": "first-arab-israeli-war",
@@ -5748,7 +7168,11 @@
     "color": "#b5ad9b",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1949
+    "year_end": 1949,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "tibet-invasion",
@@ -5764,7 +7188,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Annexation_of_Tibet_by_the_People's_Republic_of_China",
     "color": "#38414c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "cia-coup-in-iran",
@@ -5780,7 +7207,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1953_Iranian_coup_d'état",
     "color": "#19222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "east-german-uprising",
@@ -5796,7 +7228,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/East_German_uprising_of_1953",
     "color": "#3c3b41",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "algerian-war-begins",
@@ -5812,7 +7249,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Torture_during_the_Algerian_War",
     "color": "#1a222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Algeria",
+      "France"
+    ]
   },
   {
     "name": "cia-coup-in-guatemala",
@@ -5828,7 +7269,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1954_Guatemalan_coup_d'état",
     "color": "#222027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala",
+      "Honduras",
+      "United States"
+    ]
   },
   {
     "name": "great-leap-forward",
@@ -5845,7 +7291,10 @@
     "color": "#281e22",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1962
+    "year_end": 1962,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "sharpeville-massacre",
@@ -5861,7 +7310,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sharpeville_massacre",
     "color": "#2f3339",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "south-vietnam-coup",
@@ -5877,7 +7329,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1963_South_Vietnamese_coup_d'état",
     "color": "#1e2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Vietnam"
+    ]
   },
   {
     "name": "malcolm-x-assassinated",
@@ -5893,7 +7348,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Malcolm_X",
     "color": "#3b383e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "che-guevara-killed",
@@ -5909,7 +7367,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Che_Guevara_Mausoleum",
     "color": "#1a222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bolivia",
+      "Cuba"
+    ]
   },
   {
     "name": "tlatelolco-massacre",
@@ -5925,7 +7387,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tlatelolco_massacre",
     "color": "#202027",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "chilean-coup",
@@ -5941,7 +7406,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1973_Chilean_coup_d'état",
     "color": "#344048",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile"
+    ]
   },
   {
     "name": "soweto-uprising",
@@ -5957,7 +7425,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Soweto_uprising",
     "color": "#464c56",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "iran-hostage-crisis",
@@ -5974,7 +7445,11 @@
     "color": "#273542",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1981
+    "year_end": 1981,
+    "regions": [
+      "Iran",
+      "United States"
+    ]
   },
   {
     "name": "john-lennon-killed",
@@ -5990,7 +7465,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Julia_Lennon",
     "color": "#28303b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "assassination-attempt-on-reagan",
@@ -6006,7 +7485,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Attempted_assassination_of_Ronald_Reagan",
     "color": "#627174",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "assassination-attempt-on-pope",
@@ -6022,7 +7504,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Attempted_assassination_of_Pope_John_Paul_II",
     "color": "#1e212b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "lebanon-war-1982",
@@ -6038,7 +7524,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lebanon_War",
     "color": "#404b53",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Lebanon"
+    ]
   },
   {
     "name": "sabra-and-shatila-massacre",
@@ -6054,7 +7544,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sabra_and_Shatila_massacre",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Lebanon"
+    ]
   },
   {
     "name": "korean-air-lines-007-shot-down",
@@ -6070,7 +7564,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Korean_Air_Lines_Flight_007_alternative_theories",
     "color": "#495460",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "South Korea",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "beirut-barracks-bombing",
@@ -6086,7 +7585,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1983_Beirut_barracks_bombings",
     "color": "#20262c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Lebanon",
+      "United States"
+    ]
   },
   {
     "name": "assassination-of-indira-gandhi",
@@ -6102,7 +7606,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Indira_Gandhi",
     "color": "#1e2127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "iran-iraq-war-ends",
@@ -6118,7 +7625,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iran–Iraq_War",
     "color": "#3a434d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "panama-invasion",
@@ -6135,7 +7646,11 @@
     "color": "#1d2129",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1990
+    "year_end": 1990,
+    "regions": [
+      "Panama",
+      "United States"
+    ]
   },
   {
     "name": "siege-of-sarajevo-begins",
@@ -6151,7 +7666,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Sarajevo",
     "color": "#252b32",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bosnia and Herzegovina"
+    ]
   },
   {
     "name": "la-riots",
@@ -6167,7 +7685,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1992_Los_Angeles_riots",
     "color": "#303841",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "us-embassy-bombings",
@@ -6183,7 +7704,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1998_United_States_embassy_bombings",
     "color": "#3f454c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kenya",
+      "Tanzania",
+      "United States"
+    ]
   },
   {
     "name": "bali-bombings",
@@ -6199,7 +7725,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2002_Bali_bombings",
     "color": "#1d2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "moscow-theatre-hostage-crisis",
@@ -6215,7 +7744,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_theater_hostage_crisis",
     "color": "#19222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "darfur-genocide-begins",
@@ -6231,7 +7764,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_in_Darfur",
     "color": "#17222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Sudan"
+    ]
   },
   {
     "name": "norway-attacks",
@@ -6247,7 +7783,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Norway_attacks",
     "color": "#14232c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Norway"
+    ]
   },
   {
     "name": "boston-marathon-bombing",
@@ -6263,7 +7802,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Marathon_bombing",
     "color": "#454547",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "charlie-hebdo-attack",
@@ -6279,7 +7821,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Charlie_Hebdo_shooting",
     "color": "#1d2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "san-bernardino-attack",
@@ -6295,7 +7840,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2015_San_Bernardino_attack",
     "color": "#1d212c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nice-truck-attack",
@@ -6311,7 +7859,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2016_Nice_truck_attack",
     "color": "#3f4057",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "khashoggi-murder",
@@ -6327,7 +7878,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Jamal_Khashoggi",
     "color": "#222121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "nagorno-karabakh-war-2020",
@@ -6343,7 +7899,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Nagorno-Karabakh_War",
     "color": "#321f2e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Armenia",
+      "Azerbaijan",
+      "Europe"
+    ]
   },
   {
     "name": "sudan-civil-war-2023",
@@ -6359,7 +7920,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sudanese_civil_war_(2023–present)",
     "color": "#432217",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Sudan"
+    ]
   },
   {
     "name": "vercingetorix-gallic-revolt",
@@ -6373,7 +7937,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "julius-caesar-conquest-gaul",
@@ -6388,7 +7956,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -50
+    "year_end": -50,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "siege-of-jerusalem-70ce",
@@ -6402,7 +7974,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "agricola-britain-conquest",
@@ -6416,7 +7993,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "xiongnu-conflicts-han",
@@ -6431,21 +8012,28 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 89
+    "year_end": 89,
+    "regions": [
+      "China",
+      "Mongolia"
+    ]
   },
   {
     "name": "battle-of-wei-qiao",
-    "friendly_name": "Battle of Wei Qiao",
+    "friendly_name": "Ambush at Mayi",
     "year": -133,
     "category": "warfare",
-    "description": "Han Emperor Wu launched an ambush campaign against the Xiongnu, escalating their frontier conflict.",
+    "description": "Han Emperor Wu laid a trap for the Xiongnu at a border town, but the plot was found out and no fighting followed.",
     "difficulty": "very-hard",
     "color": "#2a1e1b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-wei-qiao_ft9b3y?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "han-expansion",
@@ -6460,7 +8048,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -108
+    "year_end": -108,
+    "regions": [
+      "China",
+      "North Korea",
+      "Vietnam",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "punic-wars-second",
@@ -6475,7 +8069,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -201
+    "year_end": -201,
+    "regions": [
+      "France",
+      "Italy",
+      "Spain",
+      "Tunisia"
+    ]
   },
   {
     "name": "aurelian-reunites-empire",
@@ -6489,11 +8089,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Syria"
+    ]
   },
   {
     "name": "sima-yan-jin-unification",
-    "friendly_name": "Sima Yan Founds Jin Dynasty",
+    "friendly_name": "Sima Yan Reunifies China",
     "year": 280,
     "category": "empires",
     "description": "Sima Yan conquered the Wu kingdom, reuniting China under the Jin Dynasty after decades of fragmentation.",
@@ -6503,7 +8108,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "samudragupta-deccan-campaigns",
@@ -6517,7 +8125,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "aksumite-nubian-conflicts",
@@ -6531,7 +8142,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Eritrea",
+      "Ethiopia",
+      "Sudan"
+    ]
   },
   {
     "name": "stilicho-roman-general",
@@ -6546,7 +8162,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 408
+    "year_end": 408,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "anglo-saxon-migration",
@@ -6561,7 +8180,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 600
+    "year_end": 600,
+    "regions": [
+      "Denmark",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "attila-hunnic-invasions",
@@ -6576,7 +8200,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 452
+    "year_end": 452,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "battle-of-catalaunian-plains",
@@ -6590,7 +8218,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "skandagupta-gupta-restoration",
@@ -6604,7 +8236,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "hephthalite-invasions",
@@ -6618,7 +8253,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan",
+      "Iran"
+    ]
   },
   {
     "name": "battle-of-vouille",
@@ -6632,7 +8271,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "clovis-frankish-expansion",
@@ -6646,7 +8288,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "justinian-gothic-war",
@@ -6661,7 +8306,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 554
+    "year_end": 554,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "belisarius-gothic-war",
@@ -6676,7 +8326,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 540
+    "year_end": 540,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "standing-army",
@@ -6690,7 +8345,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "gokturk-empire-expansion",
@@ -6705,7 +8363,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gokturk-empire-expansion_szxl0k?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 581
+    "year_end": 581,
+    "regions": [
+      "Mongolia",
+      "Europe",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "stirrup-adoption-europe",
@@ -6719,7 +8382,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "early-tang-expansion",
@@ -6733,7 +8400,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Mongolia"
+    ]
   },
   {
     "name": "heraclius-campaigns-persia",
@@ -6748,7 +8419,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 628
+    "year_end": 628,
+    "regions": [
+      "Iran",
+      "Iraq",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "battle-of-mu-ta",
@@ -6762,7 +8439,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Jordan",
+      "Saudi Arabia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "siege-of-damascus-636",
@@ -6776,7 +8459,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia",
+      "Syria"
+    ]
   },
   {
     "name": "siege-of-jerusalem-638",
@@ -6790,11 +8477,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine",
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "goguryeo-namgnang-battle",
-    "friendly_name": "Battle of Namgnang",
+    "friendly_name": "Siege of Ansi Fortress",
     "year": 645,
     "category": "warfare",
     "description": "Tang China's invasion of Goguryeo was repelled at Ansi Fortress, preserving Korean independence.",
@@ -6804,7 +8496,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "North Korea"
+    ]
   },
   {
     "name": "battle-karbala-husayn",
@@ -6818,7 +8514,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Syria"
+    ]
   },
   {
     "name": "tikal-calakmul-war",
@@ -6832,7 +8532,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "charlemagne-saxon-wars",
@@ -6847,7 +8551,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 804
+    "year_end": 804,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "viking-raids-begin",
@@ -6861,7 +8569,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "longship-technology",
@@ -6875,7 +8586,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Norway"
+    ]
   },
   {
     "name": "chain-mail-evolution",
@@ -6889,7 +8603,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "viking-dublin-settlement",
@@ -6903,7 +8620,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland"
+    ]
   },
   {
     "name": "chola-naval-supremacy",
@@ -6918,7 +8638,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1014
+    "year_end": 1014,
+    "regions": [
+      "India",
+      "Maldives",
+      "Sri Lanka"
+    ]
   },
   {
     "name": "gunpowder-china-adoption",
@@ -6933,7 +8658,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1250
+    "year_end": 1250,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "crossbow-adoption-medieval",
@@ -6947,7 +8675,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "castle-fortification-shift",
@@ -6961,11 +8692,15 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "basil-ii-bulgar-victories",
-    "friendly_name": "Battle of Serres Basil II Victory",
+    "friendly_name": "Basil II Victory at Kleidion",
     "year": 1014,
     "category": "warfare",
     "description": "Emperor Basil II crushed the Bulgarian army at Kleidion and blinded thousands of captives.",
@@ -6975,7 +8710,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bulgaria",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "basil-ii-bulgar-slayer",
@@ -6989,7 +8729,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bulgaria",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "antioch-crusader-conflicts",
@@ -7003,7 +8748,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "second-crusade",
@@ -7018,7 +8767,14 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1149
+    "year_end": 1149,
+    "regions": [
+      "France",
+      "Germany",
+      "Syria",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "dorian-invasion",
@@ -7032,7 +8788,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "ayyubid-saladin-crusades",
@@ -7046,7 +8805,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Syria"
+    ]
   },
   {
     "name": "montgisard-crusaders-saladin",
@@ -7060,7 +8823,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel"
+    ]
   },
   {
     "name": "jaffa-crusades",
@@ -7074,7 +8840,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "United Kingdom"
+    ]
   },
   {
     "name": "rajasthan-kingdoms",
@@ -7089,7 +8859,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1192
+    "year_end": 1192,
+    "regions": [
+      "Afghanistan",
+      "India"
+    ]
   },
   {
     "name": "maya-postclassic-conflicts",
@@ -7104,7 +8878,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1441
+    "year_end": 1441,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "tonga-tongan-conquest",
@@ -7118,7 +8895,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Fiji",
+      "Samoa",
+      "Tonga"
+    ]
   },
   {
     "name": "iron-stirrups-africa",
@@ -7132,7 +8914,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "mongolian-stirrup-cavalry",
@@ -7146,7 +8931,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mongolia"
+    ]
   },
   {
     "name": "fourth-crusade-byzantine",
@@ -7160,7 +8948,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "mongol-conquest-china",
@@ -7174,7 +8967,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Mongolia"
+    ]
   },
   {
     "name": "damietta-crusade-fifth",
@@ -7188,7 +8985,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "mongol-conquest-khwarezm",
@@ -7203,7 +9003,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1221
+    "year_end": 1221,
+    "regions": [
+      "Kazakhstan",
+      "Mongolia",
+      "Uzbekistan"
+    ]
   },
   {
     "name": "mongol-invasions-europe",
@@ -7217,21 +9022,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
-  },
-  {
-    "name": "mongol-invasion-hungary",
-    "friendly_name": "Mongol Invasion of Hungary",
-    "year": 1241,
-    "category": "warfare",
-    "description": "Batu Khan's forces crushed the Hungarian army at Mohi, killing much of the country's population.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-hungary_jeoqpk?_a=BAMAMikS0",
-    "color": "#574d3b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Hungary",
+      "Mongolia",
+      "Poland"
+    ]
   },
   {
     "name": "seventh-crusade",
@@ -7246,7 +9042,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1250
+    "year_end": 1250,
+    "regions": [
+      "Egypt",
+      "France"
+    ]
   },
   {
     "name": "long-bow-english-development",
@@ -7260,7 +9060,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "mongol-naval-expeditions",
@@ -7274,7 +9077,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Japan"
+    ]
   },
   {
     "name": "mongol-khubilai-conquest",
@@ -7288,7 +9095,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "acre-final-siege",
@@ -7302,7 +9112,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Israel"
+    ]
   },
   {
     "name": "alauddin-khalji-conquest",
@@ -7317,7 +9131,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1316
+    "year_end": 1316,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "champa-vietnam-conflicts",
@@ -7331,7 +9148,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Vietnam"
+    ]
   },
   {
     "name": "maori-pa-fortification",
@@ -7345,7 +9166,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "catalan-grand-company",
@@ -7360,7 +9184,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1311
+    "year_end": 1311,
+    "regions": [
+      "Greece",
+      "Spain",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "mali-civil-war",
@@ -7374,13 +9204,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "ottoman-standing-army",
     "friendly_name": "Janissary Corps",
     "year": 1363,
-    "category": "commerce",
+    "category": "warfare",
     "description": "The Ottomans created the Janissary corps, an elite slave-soldier infantry that became Europe's first standing army.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-standing-army_ycvrgd?_a=BAMAMikS0",
@@ -7388,7 +9221,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "timur-tamerlane-conqueror",
@@ -7402,7 +9239,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Iran",
+      "Uzbekistan"
+    ]
   },
   {
     "name": "gunpowder-weapons-adoption",
@@ -7417,7 +9259,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1494
+    "year_end": 1494,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "ottoman-military-innovation",
@@ -7431,7 +9276,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "oyo-empire-military-innovation",
@@ -7445,7 +9294,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "hussite-wars",
@@ -7460,11 +9312,14 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1434
+    "year_end": 1434,
+    "regions": [
+      "Czechia"
+    ]
   },
   {
     "name": "ottoman-siege-galata",
-    "friendly_name": "Ottoman Siege of Galata",
+    "friendly_name": "Murad II Besieges Constantinople",
     "year": 1422,
     "category": "warfare",
     "description": "Sultan Murad II besieged Constantinople but failed to breach its walls, delaying Ottoman conquest by decades.",
@@ -7474,7 +9329,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "aztec-expansion-conquests",
@@ -7489,7 +9348,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1469
+    "year_end": 1469,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "gunpowder-military-adoption-europe",
@@ -7504,7 +9366,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1530
+    "year_end": 1530,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "hundred-years-war-conclusion",
@@ -7518,7 +9383,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "shimazu-sengoku",
@@ -7532,7 +9401,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "inca-conquest-expansion",
@@ -7547,7 +9419,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1493
+    "year_end": 1493,
+    "regions": [
+      "Chile",
+      "Ecuador",
+      "Peru"
+    ]
   },
   {
     "name": "inca-tupac-amaru",
@@ -7561,7 +9438,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bolivia",
+      "Peru"
+    ]
   },
   {
     "name": "reconquista-completion",
@@ -7575,7 +9456,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "italian-wars",
@@ -7589,7 +9473,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "songhai-expansion",
@@ -7604,7 +9492,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1528
+    "year_end": 1528,
+    "regions": [
+      "Burkina Faso",
+      "Mali"
+    ]
   },
   {
     "name": "oromo-expansion",
@@ -7619,7 +9511,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1700
+    "year_end": 1700,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "ming-great-wall",
@@ -7633,7 +9528,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "songhai-military-gunpowder",
@@ -7647,7 +9545,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "inca-civil-war-dispute",
@@ -7662,7 +9563,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1532
+    "year_end": 1532,
+    "regions": [
+      "Ecuador",
+      "Peru"
+    ]
   },
   {
     "name": "kanem-bornu-gunpowder-adoption",
@@ -7676,7 +9581,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chad",
+      "Nigeria"
+    ]
   },
   {
     "name": "songhai-military-organization",
@@ -7690,7 +9599,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "mombasa-portuguese-control",
@@ -7704,7 +9616,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kenya",
+      "Portugal"
+    ]
   },
   {
     "name": "shaybanid-bukhara-captured",
@@ -7718,7 +9634,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "portuguese-goa-conquest",
@@ -7732,7 +9651,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Portugal"
+    ]
   },
   {
     "name": "portuguese-calicut-control",
@@ -7746,7 +9669,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Portugal"
+    ]
   },
   {
     "name": "safavid-battled-ottomans",
@@ -7760,7 +9687,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "madura-sultanate-fall",
@@ -7774,7 +9706,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "spanish-tercio-formation",
@@ -7788,11 +9723,14 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "inca-conflict-spanish",
-    "friendly_name": "Inca Civil War",
+    "friendly_name": "Capture of Atahualpa",
     "year": 1532,
     "category": "warfare",
     "description": "Pizarro captured Atahualpa at Cajamarca during the Inca civil war, beginning Spain's conquest of Peru.",
@@ -7802,7 +9740,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru",
+      "Spain"
+    ]
   },
   {
     "name": "spanish-conquest-peru",
@@ -7816,7 +9758,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru",
+      "Spain"
+    ]
   },
   {
     "name": "araucanians",
@@ -7830,7 +9776,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile",
+      "Spain"
+    ]
   },
   {
     "name": "mapuche-arauco-war",
@@ -7844,7 +9794,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile",
+      "Spain"
+    ]
   },
   {
     "name": "mughal-akbar",
@@ -7858,7 +9812,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "wars-of-religion-france",
@@ -7873,7 +9830,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1598
+    "year_end": 1598,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "oda-nobunaga-unification",
@@ -7888,7 +9848,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1582
+    "year_end": 1582,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "ottoman-janissary-corps",
@@ -7902,13 +9865,17 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "imjin-war-turtle-ship",
     "friendly_name": "First Turtle Ship Combat Victory",
     "year": 1592,
-    "category": "media",
+    "category": "warfare",
     "description": "Admiral Yi Sun-sin deployed armored turtle ships to devastating effect against the Japanese navy.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/imjin-war-turtle-ship_g4dvic?_a=BAMAMikS0",
@@ -7916,7 +9883,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "South Korea"
+    ]
   },
   {
     "name": "imjin-war-second-invasion",
@@ -7931,7 +9902,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1598
+    "year_end": 1598,
+    "regions": [
+      "Japan",
+      "South Korea"
+    ]
   },
   {
     "name": "russo-swedish-wars",
@@ -7945,7 +9920,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Sweden",
+      "Europe"
+    ]
   },
   {
     "name": "spanish-armada-aftermath",
@@ -7959,7 +9939,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain",
+      "United Kingdom"
+    ]
   },
   {
     "name": "russian-expansion-siberia",
@@ -7973,7 +9957,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "trinh-nguyen-civil-war",
@@ -7988,7 +9976,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1672
+    "year_end": 1672,
+    "regions": [
+      "Vietnam"
+    ]
   },
   {
     "name": "shimabara-rebellion",
@@ -8002,7 +9993,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "portuguese-restoration-war",
@@ -8017,7 +10011,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1668
+    "year_end": 1668,
+    "regions": [
+      "Portugal",
+      "Spain"
+    ]
   },
   {
     "name": "swedish-empire-peak",
@@ -8031,7 +10029,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Sweden"
+    ]
   },
   {
     "name": "louis-xiv-expansion",
@@ -8045,7 +10047,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "asante-confederacy-military",
@@ -8059,21 +10066,27 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ghana"
+    ]
   },
   {
     "name": "llanquihue-battle",
-    "friendly_name": "Battle of Llanquihue",
+    "friendly_name": "Great Mapuche Uprising",
     "year": 1655,
     "category": "warfare",
-    "description": "Mapuche forces defeated Spanish settlers in southern Chile during a widespread indigenous uprising.",
+    "description": "Mapuche forces rose across southern Chile and drove Spanish settlers from their forts and farms in a widespread indigenous revolt.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/llanquihue-battle_tsqpij?_a=BAMAMikS0",
     "color": "#393530",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile"
+    ]
   },
   {
     "name": "aurangzeb-expansion-begin",
@@ -8087,7 +10100,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "danish-swedish-wars",
@@ -8101,7 +10117,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Denmark",
+      "Sweden"
+    ]
   },
   {
     "name": "peter-great-reforms",
@@ -8115,7 +10135,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "kangxi-military-campaigns",
@@ -8129,7 +10153,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Mongolia",
+      "Taiwan"
+    ]
   },
   {
     "name": "deccan-campaigns-mughal",
@@ -8143,7 +10172,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "qing-conquers-mongolia",
@@ -8157,13 +10189,17 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Mongolia"
+    ]
   },
   {
     "name": "sikh-khalsa-panth",
     "friendly_name": "Khalsa Panth Founded",
     "year": 1699,
-    "category": "commerce",
+    "category": "warfare",
     "description": "Guru Gobind Singh founded the Khalsa, transforming the Sikh community into a martial brotherhood.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sikh-khalsa-panth_pbm1di?_a=BAMAMikS0",
@@ -8171,13 +10207,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "prussian-discipline-training",
     "friendly_name": "Prussian Military Training System",
     "year": 1713,
-    "category": "commerce",
+    "category": "warfare",
     "description": "Frederick William I created Prussia's rigorous military drill system, building Europe's most disciplined army.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/prussian-discipline-training_kjagqa?_a=BAMAMikS0",
@@ -8185,13 +10224,16 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "military-academy-russia",
     "friendly_name": "Cadet Academy",
     "year": 1731,
-    "category": "commerce",
+    "category": "warfare",
     "description": "Russia established the Noble Cadet Corps in St. Petersburg, formalizing military officer training.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/military-academy-russia_mmfkk2?_a=BAMAMikS0",
@@ -8199,7 +10241,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "sikh-mughal-conflicts",
@@ -8213,7 +10259,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sikh-mughal-conflicts_z6pip3?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "asante-akwamu-conquest",
@@ -8227,7 +10276,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ghana"
+    ]
   },
   {
     "name": "maroon-wars-jamaica",
@@ -8242,7 +10294,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1739
+    "year_end": 1739,
+    "regions": [
+      "Jamaica",
+      "United Kingdom"
+    ]
   },
   {
     "name": "frederick-great-militarism",
@@ -8256,7 +10312,12 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "qing-xinjiang-conquest",
@@ -8271,7 +10332,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1759
+    "year_end": 1759,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "burmese-siamese-wars",
@@ -8286,7 +10350,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1767
+    "year_end": 1767,
+    "regions": [
+      "Myanmar",
+      "Thailand"
+    ]
   },
   {
     "name": "ayutthaya-fall",
@@ -8300,7 +10368,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Myanmar",
+      "Thailand"
+    ]
   },
   {
     "name": "tay-son-rebellion",
@@ -8315,7 +10387,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1789
+    "year_end": 1789,
+    "regions": [
+      "Vietnam"
+    ]
   },
   {
     "name": "washington-appointed-commander",
@@ -8329,7 +10404,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "valley-forge-winter",
@@ -8344,7 +10422,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1778
+    "year_end": 1778,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "war-declared-austria",
@@ -8358,7 +10439,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "France"
+    ]
   },
   {
     "name": "barbary-wars",
@@ -8372,7 +10457,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Libya",
+      "United States"
+    ]
   },
   {
     "name": "napoleonic-wars-begin",
@@ -8386,7 +10475,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "peninsular-war",
@@ -8400,7 +10493,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "battle-waterloo-napoleon",
@@ -8414,7 +10511,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "France"
+    ]
   },
   {
     "name": "zulu-military-innovation",
@@ -8428,7 +10529,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "mfecane-wars",
@@ -8443,7 +10547,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1840
+    "year_end": 1840,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "sotho-moshoeshoe-reforms",
@@ -8457,7 +10564,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Lesotho"
+    ]
   },
   {
     "name": "maori-musket-wars",
@@ -8472,7 +10582,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1840
+    "year_end": 1840,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "opium-wars-second",
@@ -8487,7 +10600,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1860
+    "year_end": 1860,
+    "regions": [
+      "China",
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "american-civil-war",
@@ -8501,7 +10619,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "atomic-bomb-nagasaki-ww2",
@@ -8515,7 +10636,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "airlangga-unites-java",
@@ -8530,7 +10655,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/airlangga-unites-java_gme5wu?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1042
+    "year_end": 1042,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "demak-sultanate-founded",
@@ -8544,7 +10672,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/demak-sultanate-founded_fcur0s?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "java-war-diponegoro",
@@ -8558,7 +10689,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/java-war-diponegoro_x5sp8c?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia",
+      "Netherlands"
+    ]
   },
   {
     "name": "budi-utomo-founded",
@@ -8572,7 +10707,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/budi-utomo-founded_fvclcc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "sumpah-pemuda-youth-pledge",
@@ -8586,7 +10724,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sumpah-pemuda-youth-pledge_mzbfyx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "japanese-occupation-indies",
@@ -8601,7 +10742,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japanese-occupation-indies_l7qjmh?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1945
+    "year_end": 1945,
+    "regions": [
+      "Indonesia",
+      "Japan"
+    ]
   },
   {
     "name": "suharto-new-order",
@@ -8615,7 +10760,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/suharto-new-order_rrvz2m?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "indonesia-invades-east-timor",
@@ -8629,7 +10777,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indonesia-invades-east-timor_gfjpis?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "East Timor",
+      "Indonesia"
+    ]
   },
   {
     "name": "fall-of-suharto",
@@ -8643,6 +10795,9 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-of-suharto_rsfjnj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   }
 ]

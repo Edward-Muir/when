@@ -6,13 +6,7 @@ import {
   GameConfig,
   GamePopupData,
 } from '../types';
-import {
-  loadAllEvents,
-  getCachedEvents,
-  filterByDifficulty,
-  filterByCategory,
-  filterByEra,
-} from '../utils/eventLoader';
+import { loadAllEvents, getCachedEvents, filterPool } from '../utils/eventLoader';
 import { GameMilestone } from '../utils/statsStorage';
 import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { useSaveDailyResult } from './useSaveDailyResult';
@@ -32,6 +26,7 @@ import {
   loadCuratedThemes,
 } from '../utils/curatedThemes';
 import { buildThemeReplayDeck, withFreshReplaySeed } from '../utils/themeReplay';
+import { resumeDailyProgress, saveDailyPlacement } from '../utils/dailyProgress';
 import {
   validatePlacement,
   calculatePlacementResult,
@@ -157,14 +152,7 @@ function applyTurnUpdate(
 }
 
 function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
-  const {
-    mode,
-    dailySeed,
-    curatedThemeId,
-    selectedDifficulties,
-    selectedCategories,
-    selectedEras,
-  } = config;
+  const { mode, dailySeed, curatedThemeId } = config;
 
   if (mode === 'daily' && dailySeed) return buildDailyDeck(allEvents, dailySeed);
 
@@ -173,10 +161,12 @@ function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): Historic
     return theme ? buildThemeReplayDeck(allEvents, theme, config.challengeSeed) : [];
   }
 
-  const filtered = filterByEra(
-    filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
-    selectedEras
-  );
+  const filtered = filterPool(allEvents, {
+    difficulties: config.selectedDifficulties,
+    categories: config.selectedCategories,
+    eras: config.selectedEras,
+    regions: config.selectedRegions,
+  });
   return buildRampedDeck(filtered, config.challengeSeed, { allEvents });
 }
 
@@ -232,6 +222,11 @@ export function useWhenGame(): UseWhenGameReturn {
 
       const isDaily = mode === 'daily' && Boolean(dailySeed);
       const shuffled = composeDeck(config, allEvents);
+
+      // A daily already under way resumes rather than re-dealing, whichever way it was entered
+      // (utils/dailyProgress.ts). A save the rebuilt deck no longer matches is dropped.
+      const resumed = isDaily ? resumeDailyProgress(shuffled, config) : null;
+      if (resumed) return setState(resumed);
 
       // Checked against the composed deck, not the pre-filter pool: a curated theme's pool is
       // a couple of dozen cards while the unfiltered catalogue is thousands, so testing the
@@ -314,6 +309,7 @@ export function useWhenGame(): UseWhenGameReturn {
 
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
+      saveDailyPlacement(state, activeCard, insertionIndex, result);
 
       // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
       // the tombstone reveal + miss banner instead of a blocking popup.
