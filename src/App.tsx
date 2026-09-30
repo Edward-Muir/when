@@ -48,6 +48,13 @@ function App({
 }: AppProps) {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
   useEffect(() => {
+    // Where dvh exists, let --vh follow it. An innerHeight snapshot goes stale when iOS Safari's
+    // toolbars collapse and return without a resize, and `min-h-screen-safe` then holds the page
+    // taller than the screen, its bottom unreachable under `overflow-hidden`.
+    if (typeof CSS !== 'undefined' && CSS.supports?.('height', '100dvh')) {
+      document.documentElement.style.setProperty('--vh', '1dvh');
+      return;
+    }
     const setVh = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);

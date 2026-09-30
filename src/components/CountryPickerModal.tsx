@@ -148,13 +148,14 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search countries"
               aria-label="Search countries"
-              className="min-w-0 flex-1 bg-transparent py-2 text-sm text-text font-body focus:outline-none"
+              className="min-w-0 flex-1 bg-transparent py-2 text-base text-text font-body focus:outline-none"
             />
           </label>
         </div>
       }
     >
-      <div className="min-h-0 flex-1 space-y-4 overflow-y-auto px-4 py-3">
+      {/* overscroll-contain: at the list's end, a swipe must not scroll the page behind. */}
+      <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain px-4 py-3">
         {groups.map((group) => (
           <RegionCountries
             key={group.region}
