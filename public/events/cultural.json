@@ -1794,7 +1794,7 @@
   {
     "name": "boy-scouts-founded",
     "friendly_name": "Boy Scouts Founded",
-    "year": 1910,
+    "year": 1907,
     "category": "commerce",
     "description": "Robert Baden-Powell founded the Boy Scouts in the United Kingdom.",
     "difficulty": "medium",
@@ -3550,7 +3550,7 @@
   {
     "name": "kingdom-kush-flourishes",
     "friendly_name": "Kingdom of Kush Flourishes",
-    "year": -1500,
+    "year": -1070,
     "category": "empires",
     "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
     "difficulty": "medium",
@@ -3565,7 +3565,8 @@
     "regions": [
       "Egypt",
       "Sudan"
-    ]
+    ],
+    "year_end": 350
   },
   {
     "name": "exodus-biblical",
@@ -7219,7 +7220,7 @@
   {
     "name": "anglo-saxon-manuscript-art",
     "friendly_name": "Anglo-Saxon Manuscript Illumination",
-    "year": 700,
+    "year": 690,
     "category": "writing",
     "description": "Anglo-Saxon scribes developed distinctive manuscript illumination blending Celtic, Germanic, and Mediterranean styles.",
     "difficulty": "hard",
@@ -7231,7 +7232,8 @@
     "has_detail": true,
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "year_end": 721
   },
   {
     "name": "beowulf-composition",
@@ -8022,7 +8024,7 @@
   {
     "name": "champa-hindu-culture",
     "friendly_name": "Champa Hindu Kingdom Culture Peak",
-    "year": 1100,
+    "year": 875,
     "category": "architecture",
     "description": "The Champa kingdom in present-day Vietnam flourished with Hindu temple towers and Sanskrit-influenced art and religion.",
     "difficulty": "hard",
@@ -8034,7 +8036,8 @@
     "has_detail": true,
     "regions": [
       "Vietnam"
-    ]
+    ],
+    "year_end": 982
   },
   {
     "name": "mixtec-codices",
@@ -10595,7 +10598,7 @@
   {
     "name": "baroque-period-peak",
     "friendly_name": "Baroque Period Artistic Peak",
-    "year": 1650,
+    "year": 1625,
     "category": "art",
     "description": "Baroque art reached its peak across Europe with dramatic works by Bernini, Rubens, and Rembrandt.",
     "difficulty": "medium",
@@ -10609,7 +10612,8 @@
       "Belgium",
       "Italy",
       "Netherlands"
-    ]
+    ],
+    "year_end": 1675
   },
   {
     "name": "kabuki-women-actors",
@@ -11190,7 +11194,7 @@
   {
     "name": "haida-totem-poles",
     "friendly_name": "Haida Totem Pole Carving Peak",
-    "year": 1800,
+    "year": 1830,
     "category": "architecture",
     "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
     "difficulty": "hard",
@@ -11202,7 +11206,8 @@
     "has_detail": true,
     "regions": [
       "Canada"
-    ]
+    ],
+    "year_end": 1880
   },
   {
     "name": "goethe-faust-publication",

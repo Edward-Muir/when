@@ -4982,7 +4982,7 @@
   {
     "name": "zwicky-dark-matter",
     "friendly_name": "Zwicky Infers Dark Matter",
-    "year": 1937,
+    "year": 1933,
     "category": "science",
     "description": "Galaxies in the Coma cluster moved far too fast for their visible mass, implying unseen matter holds them.",
     "difficulty": "hard",
@@ -5067,7 +5067,7 @@
   {
     "name": "colossus-lorenz-codebreaker",
     "friendly_name": "Colossus Attacks Lorenz Cipher",
-    "year": 1943,
+    "year": 1944,
     "category": "invention",
     "description": "Bletchley Park's Colossus, the first programmable electronic computer, hunted the settings of Hitler's teleprinter cipher.",
     "difficulty": "medium",
@@ -6712,7 +6712,7 @@
   {
     "name": "bengal-famine-company-rule",
     "friendly_name": "Bengal Famine Under Company Rule",
-    "year": 1770,
+    "year": 1769,
     "category": "disasters",
     "description": "Drought and East India Company tax policy combined to kill roughly a third of Bengal's population.",
     "difficulty": "medium",
@@ -6724,7 +6724,8 @@
       "Bangladesh",
       "India",
       "United Kingdom"
-    ]
+    ],
+    "year_end": 1770
   },
   {
     "name": "guano-boom-fertilizer-trade",
@@ -7621,7 +7622,8 @@
       "Switzerland",
       "United Arab Emirates",
       "Global"
-    ]
+    ],
+    "year_end": 2016
   },
   {
     "name": "paris-parisii-settlement",
@@ -11980,7 +11982,7 @@
   {
     "name": "walls-of-benin-city-built",
     "friendly_name": "Walls of Benin City Built",
-    "year": 1400,
+    "year": 1280,
     "category": "architecture",
     "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
     "difficulty": "hard",

@@ -1092,7 +1092,7 @@
   {
     "name": "stirrup-invented",
     "friendly_name": "Stirrup Invented",
-    "year": 322,
+    "year": 302,
     "category": "invention",
     "description": "Riders in East Asia developed the stirrup, giving mounted warriors a stable platform that transformed cavalry warfare.",
     "difficulty": "hard",
@@ -1104,7 +1104,8 @@
     "has_detail": true,
     "regions": [
       "China"
-    ]
+    ],
+    "year_end": 415
   },
   {
     "name": "horseshoe-invented",
@@ -9046,7 +9047,7 @@
   {
     "name": "docks",
     "friendly_name": "Docks",
-    "year": -2556,
+    "year": -2300,
     "category": "architecture",
     "description": "The tidal dock at Lothal in India, claimed as one of the earliest known maritime docking structures.",
     "difficulty": "hard",
@@ -9430,7 +9431,7 @@
   {
     "name": "toe-stirrup",
     "friendly_name": "Toe Stirrup",
-    "year": -500,
+    "year": -125,
     "category": "craft",
     "description": "Foot loops attached to saddles giving riders better balance and control while mounted.",
     "difficulty": "very-hard",
@@ -9498,7 +9499,7 @@
   {
     "name": "loan-deeds",
     "friendly_name": "Loan Deeds",
-    "year": -500,
+    "year": -2000,
     "category": "writing",
     "description": "Written contracts documenting loans and repayment terms in ancient Mesopotamia.",
     "difficulty": "hard",
@@ -9710,7 +9711,7 @@
   {
     "name": "canal-lock",
     "friendly_name": "Canal Lock",
-    "year": -283,
+    "year": 984,
     "category": "craft",
     "description": "Gated chambers allowing boats to navigate changes in water level, first built in China.",
     "difficulty": "medium",
@@ -9900,7 +9901,7 @@
   {
     "name": "noodles",
     "friendly_name": "Noodles",
-    "year": 25,
+    "year": -2000,
     "category": "craft",
     "description": "Long strands of dough boiled or fried as a staple food, with the oldest known bowl found in northwest China.",
     "difficulty": "easy",
@@ -13271,7 +13272,7 @@
   {
     "name": "hanzi-script-standardization",
     "friendly_name": "Qin Standardizes Hanzi Script",
-    "year": -206,
+    "year": -221,
     "category": "writing",
     "description": "The Qin chancellor Li Si standardized Chinese characters after unification, enabling administration across the empire.",
     "difficulty": "hard",
@@ -14889,7 +14890,7 @@
   {
     "name": "breast-wheel-design",
     "friendly_name": "Breast Wheel Water Mill",
-    "year": 1200,
+    "year": 175,
     "category": "craft",
     "description": "The breastshot water wheel improved on earlier designs by striking the wheel at axle height for greater efficiency.",
     "difficulty": "very-hard",
@@ -15395,7 +15396,7 @@
   {
     "name": "moldboard-plow-improvements",
     "friendly_name": "Moldboard Plow Improvements",
-    "year": 1400,
+    "year": 1730,
     "category": "agriculture",
     "description": "A lighter plough with an iron-covered mouldboard turned soil more easily and needed fewer draught animals.",
     "difficulty": "very-hard",
@@ -15843,7 +15844,7 @@
   {
     "name": "enclosure-movement",
     "friendly_name": "English Parliamentary Enclosure",
-    "year": 1500,
+    "year": 1760,
     "category": "agriculture",
     "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
     "difficulty": "hard",
@@ -15855,7 +15856,8 @@
     "has_detail": true,
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "year_end": 1832
   },
   {
     "name": "printing-impact-literacy",

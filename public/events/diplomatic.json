@@ -7407,7 +7407,7 @@
   {
     "name": "model-t-production-begins",
     "friendly_name": "Model T Production Begins",
-    "year": 1909,
+    "year": 1908,
     "category": "media",
     "description": "Ford's affordable Model T automobile made car ownership accessible to middle-class Americans.",
     "difficulty": "easy",
@@ -12461,7 +12461,7 @@
   {
     "name": "goryeo-dynasty",
     "friendly_name": "Goryeo Prosperity Under Munjong",
-    "year": 1000,
+    "year": 1046,
     "category": "empires",
     "description": "Under King Munjong, Korea's Goryeo kingdom enjoyed its most settled and prosperous years.",
     "difficulty": "hard",
@@ -12474,7 +12474,8 @@
     "regions": [
       "North Korea",
       "South Korea"
-    ]
+    ],
+    "year_end": 1083
   },
   {
     "name": "samoa-kingdoms",
