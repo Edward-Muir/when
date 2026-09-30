@@ -1,13 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
-import { ALL_REGIONS } from '../utils/regions';
-
-// Max gap (ms) between two taps on the same pill to count as a double-tap.
-// 400ms matches macOS/Windows double-click defaults and sits just above
-// WebKit's 350ms touch threshold. Safe to be generous since a single tap
-// fires instantly (no debounce), so a wider window adds no input lag.
-const DOUBLE_TAP_MS = 400;
+import { ALL_REGIONS, REGION_DISPLAY_ORDER } from '../utils/regions';
+import CountryRefine from './CountryRefine';
+import { RegionSelection, regionStatus, toggleRegion } from '../utils/countrySelection';
+import { pillClass } from './filterPill';
+import { usePillTap } from '../hooks/usePillTap';
 
 const DIFFICULTY_LABELS = new Map<Difficulty, string>([
   ['easy', 'Easy'],
@@ -25,17 +23,16 @@ export interface FilterControlsProps {
   onErasChange: (eras: Era[]) => void;
   selectedRegions: string[];
   onRegionsChange: (regions: string[]) => void;
+  // The Countries row shows only when all three are passed. Pairs switched off within the
+  // selected regions (`src/utils/countrySelection.ts`); a region with any is drawn partial.
+  excludedCountries?: string[];
+  onExcludedChange?: (excluded: string[]) => void;
+  countryOptions?: Map<string, string[]>;
+  // Cards the selection deals, shown in the country picker, which hides the Play button.
+  matchCount?: number;
   // When true, show an `n/N` (or `All`) selected-count next to each group header.
   showCounts?: boolean;
 }
-
-// Shared pill button shape. Selected = blue (accent-secondary); unselected = white outline.
-const pillClass = (isSelected: boolean): string =>
-  `px-3 py-1.5 rounded-full text-sm font-medium font-body transition-all active:scale-95 border capitalize ${
-    isSelected
-      ? 'bg-accent-secondary text-white border-transparent'
-      : 'bg-surface text-text border-border hover:border-accent-secondary/50'
-  }`;
 
 const GroupHeader: React.FC<{ label: string; count?: { selected: number; total: number } }> = ({
   label,
@@ -62,6 +59,10 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   onErasChange,
   selectedRegions,
   onRegionsChange,
+  excludedCountries,
+  onExcludedChange,
+  countryOptions,
+  matchCount,
   showCounts = false,
 }) => {
   const toggleDifficulty = (difficulty: Difficulty) => {
@@ -86,44 +87,26 @@ const FilterControls: React.FC<FilterControlsProps> = ({
     );
   };
 
-  const toggleRegion = (region: string) => {
-    onRegionsChange(
-      selectedRegions.includes(region)
-        ? selectedRegions.filter((r) => r !== region)
-        : [...selectedRegions, region]
-    );
+  // Regions are tri-state: off → whole, whole → off, partial → whole (its countries back on).
+  const regionSelection: RegionSelection = {
+    regions: selectedRegions,
+    excluded: excludedCountries ?? [],
+  };
+  const applyRegionSelection = (next: RegionSelection) => {
+    // Regions first: their prune runs on the old exclusions, so the new ones survive it.
+    if (next.regions !== regionSelection.regions) onRegionsChange(next.regions);
+    if (next.excluded !== regionSelection.excluded) onExcludedChange?.(next.excluded);
+  };
+  const tapRegion = (region: string) => applyRegionSelection(toggleRegion(regionSelection, region));
+  // A double-tap isolates or restores regions; restoring every region also puts every country
+  // back, so "all" means all.
+  const setRegionsFromDoubleTap = (regions: string[]) => {
+    onRegionsChange(regions);
+    if (regions.length === ALL_REGIONS.length) onExcludedChange?.([]);
   };
 
-  // Plotly-style tap handling. Single-tap toggles a pill INSTANTLY (no debounce,
-  // so it never feels laggy). A second tap on the same pill within the window is
-  // a double-tap: the two toggles cancel out (net no-op on that pill), so we
-  // isolate to just that pill — or restore all if it was already the only one.
-  // We act on the state captured at the first tap (`before`), not the live prop,
-  // so the result is correct regardless of re-render timing. Works on touch too.
-  const lastTap = useRef<{ key: string; time: number; before: unknown[] } | null>(null);
-
-  function handlePillTap<T>(
-    item: T,
-    key: string,
-    selected: T[],
-    all: T[],
-    onChange: (next: T[]) => void,
-    toggle: (item: T) => void
-  ) {
-    const now = Date.now();
-    const prev = lastTap.current;
-    if (prev && prev.key === key && now - prev.time < DOUBLE_TAP_MS) {
-      // Double-tap: undo the flicker and isolate/restore from the pre-tap state.
-      lastTap.current = null;
-      const before = prev.before as T[];
-      const wasOnlyThis = before.length === 1 && before[0] === item;
-      onChange(wasOnlyThis ? [...all] : [item]); // restore all ↔ isolate one
-    } else {
-      // First tap: toggle immediately and remember the state for a possible double.
-      lastTap.current = { key, time: now, before: selected };
-      toggle(item);
-    }
-  }
+  // Shared with the country picker, so every filter pill taps and double-taps alike.
+  const handlePillTap = usePillTap();
 
   return (
     <div className="space-y-4">
@@ -241,27 +224,41 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           }
         />
         <div className="flex flex-wrap gap-2">
-          {ALL_REGIONS.map((region) => (
-            <button
-              key={region}
-              onClick={() =>
-                handlePillTap(
-                  region,
-                  `region:${region}`,
-                  selectedRegions,
-                  [...ALL_REGIONS],
-                  onRegionsChange,
-                  toggleRegion
-                )
-              }
-              className={pillClass(selectedRegions.includes(region))}
-            >
-              {region}
-            </button>
-          ))}
+          {REGION_DISPLAY_ORDER.map((region) => {
+            const status = regionStatus(region, regionSelection);
+            return (
+              <button
+                key={region}
+                onClick={() =>
+                  handlePillTap(
+                    region,
+                    `region:${region}`,
+                    selectedRegions,
+                    [...ALL_REGIONS],
+                    setRegionsFromDoubleTap,
+                    tapRegion
+                  )
+                }
+                aria-pressed={status === 'partial' ? 'mixed' : status === 'full'}
+                className={pillClass(status === 'partial' ? 'partial' : status === 'full')}
+              >
+                {region}
+              </button>
+            );
+          })}
         </div>
         {selectedRegions.length === 0 && (
           <p className="text-error text-xs mt-1 font-body">Select at least one region</p>
+        )}
+        {excludedCountries && onExcludedChange && countryOptions && (
+          <CountryRefine
+            selectedRegions={selectedRegions}
+            onRegionsChange={onRegionsChange}
+            excludedCountries={excludedCountries}
+            onExcludedChange={onExcludedChange}
+            countryOptions={countryOptions}
+            matchCount={matchCount}
+          />
         )}
       </div>
     </div>

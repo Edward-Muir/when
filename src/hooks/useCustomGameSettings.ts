@@ -9,11 +9,13 @@ import {
   DEFAULT_DIFFICULTIES,
 } from '../types';
 import { ALL_ERAS } from '../utils/eras';
-import { ALL_REGIONS } from '../utils/regions';
+import { ALL_REGIONS, countryOptionsByRegion } from '../utils/regions';
 import { filterPool } from '../utils/eventLoader';
 import { getCustomSettings, saveCustomSettings } from '../utils/playerStorage';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 import { minDeckSize } from '../utils/gameLogic';
+import { useRegionSelection } from './useRegionSelection';
+import { legacyPicksToExclusions } from '../utils/countrySelection';
 
 // Default hand size by player count (1–6 players); anything else falls back to 5.
 const DEFAULT_HAND_SIZES = [7, 6, 5, 4, 3, 3];
@@ -50,10 +52,19 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
   const [selectedEras, setSelectedEras] = useState<Era[]>(
     savedSettings?.selectedEras ?? [...ALL_ERAS]
   );
-  // Settings saved before the region filter have no regions, and mean all of them.
-  const [selectedRegions, setSelectedRegions] = useState<string[]>(() =>
-    restoreSelection(savedSettings?.selectedRegions, ALL_REGIONS)
-  );
+  // Settings saved before the region filter have no regions, and mean all of them. Settings
+  // saved with country picks (before exclusions) are converted to the pool they dealt.
+  const [restoredRegions] = useState(() => {
+    const regions = restoreSelection(savedSettings?.selectedRegions, ALL_REGIONS);
+    const excluded =
+      savedSettings?.excludedCountries ??
+      legacyPicksToExclusions(regions, savedSettings?.selectedCountries ?? []);
+    return { regions, excluded };
+  });
+  const { selectedRegions, setSelectedRegions, excludedCountries, setExcludedCountries } =
+    useRegionSelection(() => restoredRegions.regions, restoredRegions.excluded);
+  // Offered countries come from the whole catalogue, most-tagged first.
+  const countryOptions = useMemo(() => countryOptionsByRegion(allEvents), [allEvents]);
 
   // Player settings (the players UI is hidden; `playerNames` is unused until it returns)
   const [playerCount, setPlayerCount] = useState(savedSettings?.playerCount ?? 1);
@@ -73,6 +84,7 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
       selectedCategories,
       selectedEras,
       selectedRegions,
+      excludedCountries,
       playerCount,
       cardsPerHand,
       suddenDeathHandSize,
@@ -82,6 +94,7 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
     selectedCategories,
     selectedEras,
     selectedRegions,
+    excludedCountries,
     playerCount,
     cardsPerHand,
     suddenDeathHandSize,
@@ -100,8 +113,16 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
         categories: selectedCategories,
         eras: selectedEras,
         regions: selectedRegions,
+        excludedCountries,
       }).length,
-    [allEvents, selectedDifficulties, selectedCategories, selectedEras, selectedRegions]
+    [
+      allEvents,
+      selectedDifficulties,
+      selectedCategories,
+      selectedEras,
+      selectedRegions,
+      excludedCountries,
+    ]
   );
 
   const groupEmpty =
@@ -124,6 +145,7 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
       categories: selectedCategories,
       eras: selectedEras,
       regions: selectedRegions,
+      excludedCountries,
       seed: generateChallengeSeed(),
     });
 
@@ -133,6 +155,7 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
       selectedCategories,
       selectedEras,
       selectedRegions,
+      excludedCountries,
       challengeSeed: challengeCode,
       challengeCode,
       playerCount,
@@ -153,6 +176,9 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
       setSelectedEras,
       selectedRegions,
       setSelectedRegions,
+      excludedCountries,
+      setExcludedCountries,
+      countryOptions,
       playerCount,
       onPlayerCountChange,
       suddenDeathHandSize,

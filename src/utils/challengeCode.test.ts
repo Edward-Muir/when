@@ -1,7 +1,8 @@
 import { encodeChallengeCode, decodeChallengeCode, ChallengeConfig } from './challengeCode';
 import { ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ALL_ERAS } from './eras';
-import { ALL_REGIONS } from './regions';
+import { ALL_REGIONS, countriesInRegion } from './regions';
+import { legacyPicksToExclusions, pairKey } from './countrySelection';
 import { WORDLIST, wordMap } from './wordlists';
 
 /**
@@ -24,6 +25,7 @@ const baseConfig: ChallengeConfig = {
   categories: ['empires', 'warfare', 'art'],
   eras: [...ALL_ERAS],
   regions: [...ALL_REGIONS],
+  excludedCountries: [],
   seed: 12345,
 };
 
@@ -148,9 +150,105 @@ describe('challengeCode encode/decode', () => {
       expect(decodeChallengeCode(`${six}-${WORDLIST[1 << ALL_REGIONS.length]}`)).toBeNull();
       expect(decodeChallengeCode(`${six}-${WORDLIST[1]}`)?.regions).toEqual(['Europe']);
     });
+  });
 
-    it('rejects an 8-word token', () => {
-      expect(decodeChallengeCode(`${encodeChallengeCode(narrowed)}-${WORDLIST[1]}`)).toBeNull();
+  describe('words 8 onward: countries', () => {
+    // A country word is its ISO alpha-2 code as (first letter) * 26 + (second letter).
+    const isoValue = (iso: string) => (iso.charCodeAt(0) - 65) * 26 + (iso.charCodeAt(1) - 65);
+    const isoWord = (iso: string) => WORDLIST[isoValue(iso)];
+    const sorted = (keys: string[] | undefined) => [...(keys ?? [])].sort();
+    const EXCLUDE = 2048;
+    const SIDE = 26 * 26;
+
+    describe('the first format: picks, from before exclusions', () => {
+      const europe: ChallengeConfig = { ...baseConfig, regions: ['Europe', 'East Asia'] };
+      const seven = encodeChallengeCode(europe);
+
+      it('decodes a pick as its region narrowed to it, other regions whole', () => {
+        const decoded = decodeChallengeCode(`${seven}-${isoWord('DE')}-${isoWord('FR')}`);
+        expect(sorted(decoded?.excludedCountries)).toEqual(
+          sorted(legacyPicksToExclusions(['Europe', 'East Asia'], ['Germany', 'France']))
+        );
+        expect(decoded?.excludedCountries.some((k) => k.startsWith('East Asia|'))).toBe(false);
+      });
+
+      it('rejects an unknown code, a repeat, or a country outside the decoded regions', () => {
+        expect(decodeChallengeCode(`${seven}-${isoWord('ZZ')}`)).toBeNull();
+        expect(decodeChallengeCode(`${seven}-${WORDLIST[26 * 26]}`)).toBeNull();
+        expect(decodeChallengeCode(`${seven}-${isoWord('DE')}-${isoWord('DE')}`)).toBeNull();
+        expect(decodeChallengeCode(`${seven}-${isoWord('BR')}`)).toBeNull();
+      });
+    });
+
+    describe('the pair format', () => {
+      const europeOnly = (on: string[]) =>
+        countriesInRegion('Europe')
+          .filter((c) => !on.includes(c))
+          .map((c) => pairKey('Europe', c));
+
+      it('writes "only the UK" as one include word, and round-trips', () => {
+        const ukOnly: ChallengeConfig = {
+          ...baseConfig,
+          regions: ['Europe'],
+          excludedCountries: europeOnly(['United Kingdom']),
+        };
+        const token = encodeChallengeCode(ukOnly);
+        expect(token.split('-')).toHaveLength(8);
+        expect(token.split('-')[7]).toBe(isoWord('GB'));
+        const decoded = decodeChallengeCode(token);
+        expect(sorted(decoded?.excludedCountries)).toEqual(sorted(ukOnly.excludedCountries));
+      });
+
+      it('writes "Europe without the UK" as one exclude word, even with every region on', () => {
+        const noUk: ChallengeConfig = {
+          ...baseConfig,
+          excludedCountries: [pairKey('Europe', 'United Kingdom')],
+        };
+        const token = encodeChallengeCode(noUk);
+        expect(token.split('-')).toHaveLength(8);
+        expect(token.split('-')[7]).toBe(WORDLIST[isoValue('GB') + EXCLUDE]);
+        expect(decodeChallengeCode(token)).toEqual(noUk);
+      });
+
+      it('names the side of a transcontinental country', () => {
+        const siberiaOff: ChallengeConfig = {
+          ...baseConfig,
+          excludedCountries: [pairKey('North & Central Asia', 'Russia')],
+        };
+        const token = encodeChallengeCode(siberiaOff);
+        expect(token.split('-')[7]).toBe(WORDLIST[isoValue('RU') + SIDE + EXCLUDE]);
+        expect(decodeChallengeCode(token)).toEqual(siberiaOff);
+      });
+
+      it('encodes a selection to one token whatever order it was built in', () => {
+        const a = [pairKey('Europe', 'France'), pairKey('Europe', 'Germany')];
+        const token = encodeChallengeCode({ ...baseConfig, excludedCountries: a });
+        expect(encodeChallengeCode({ ...baseConfig, excludedCountries: [...a].reverse() })).toBe(
+          token
+        );
+      });
+
+      it('rejects mixed forms in one region, and a format bit with no country words', () => {
+        const token = encodeChallengeCode({
+          ...baseConfig,
+          excludedCountries: [pairKey('Europe', 'France')],
+        });
+        const seven = token.split('-').slice(0, 7).join('-');
+        const include = isoWord('DE');
+        const exclude = WORDLIST[isoValue('FR') + EXCLUDE];
+        expect(decodeChallengeCode(`${seven}-${include}-${exclude}`)).toBeNull();
+        expect(decodeChallengeCode(seven)).toBeNull();
+      });
+
+      it('rejects a pair in a region the code does not select', () => {
+        const token = encodeChallengeCode({
+          ...baseConfig,
+          regions: ['East Asia'],
+          excludedCountries: [pairKey('East Asia', 'Japan')],
+        });
+        const seven = token.split('-').slice(0, 7).join('-');
+        expect(decodeChallengeCode(`${seven}-${WORDLIST[isoValue('DE') + EXCLUDE]}`)).toBeNull();
+      });
     });
   });
 });

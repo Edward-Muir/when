@@ -232,6 +232,12 @@ export interface GameConfig {
    * which is what the daily, a theme replay and a 6-word challenge code all get.
    */
   selectedRegions?: string[];
+  /**
+   * (region, country) pairs switched off within the selected regions (`pairKey` in
+   * src/utils/countrySelection.ts, applied by `filterByRegion`). Missing or empty means none, so
+   * every selected region is dealt whole.
+   */
+  excludedCountries?: string[];
   dailySeed?: string;
 
   /**

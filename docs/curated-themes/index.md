@@ -79,6 +79,59 @@ in which dates the calendar holds, so changing it means re-publishing each unpla
 id with new `dates` (dates that have not opened can be dropped freely). The current plan is the
 schedule table at the top of [publish-inputs.md](publish-inputs.md).
 
+## Seeded themes: the dated menu (2026-10)
+
+The days no curated theme claims used to be "Everything" half the time and one of the 21
+categories otherwise. From **2026-10-06** they draw from a menu that also holds regions
+("East Asia"), countries ("Italy") and category + place pairings ("Art in Italy",
+"Warfare in the United States"), weighted Everything 30, category 25, region 10, country 15,
+pairing 20. The menu is `src/data/dailyThemeMenu.json`, written by
+`npm run daily-menu` (`scripts/daily-theme-menu.js`); the draw is `menuTheme` in
+`dailyTheme.ts`. The pool is `filterPool` over every region, then `eventInPlace` (`regions.ts`):
+a region through `eventRegionSet`, a country by its own tag. Deliberately not the Custom region
+filter, whose rules are the picker's to change; a daily's pool must never move.
+
+**The menu is frozen and dated, never derived at runtime.** A seeded theme is
+`list[floor(random() * list.length)]`, so any change to a list re-themes every date it covers,
+including days already played; the recency chain then replays decks nobody was dealt, and
+stored results name the wrong theme. So the menu is a list of **epochs**, each in force from its
+`from` date. Dates before the first epoch run the original generator untouched (a test pins
+every date from #1 to 2026-10-05), and each epoch carries its own copy of the category list, so
+a future 22nd category can no longer re-roll a live epoch. Computing candidates from `allEvents`
+at load was rejected for the same reason: any catalogue edit could add or drop a candidate and
+shift every later index. **Change the menu by appending an epoch from a date that has not
+opened** (`npm run daily-menu -- --from YYYY-MM-DD`, which refuses an opened date), never by
+editing a live one.
+
+**Two gates, and the second is the one that matters.** An entry needs 30+ cards and **8+ in
+band 0**, both measured over the pool the daily would deal. Pool size says little about easy
+cards: South Korea has 56 cards and 1 in band 0, Sports in France 43 and 1, Greece 185 and 111.
+The ramp's opening takes about 4 from band 0, so 8 leaves room for an overlapping theme earlier
+in the week (Italy, then Art in Italy) having used some. At the first epoch this admitted 10
+regions (Global is a footprint, not a theme), 28 countries and 78 pairings; the script prints
+what it rejected and what sits near a gate. `dailyThemeMenu.test.ts` re-checks the latest
+epoch against the live catalogue, so catalogue work that pushes an entry under a gate fails
+CI; the fix is a new epoch.
+
+**Place and pairing days get the curated escape hatches below, plus `footholdFloor`.**
+Measured over 240 days, pairings on the default options dealt the hardest quartile into the
+opening hand on **39.5%** of days; with `bandSpread: 1` and the lowered exclusion floor they
+match ordinary days (9.3% against 9.8%, and 2.7-3.1 band-0 cards in the first six against
+2.9). `footholdFloor: 4` lets band 0 alone ignore the seven-day exclusion when it would leave
+fewer than 4 easy cards. It never fired in that measurement, since the 8-card gate already
+covers it; it is the guarantee rather than the mechanism. "Everything", category and curated
+days keep exactly their old options, because their past decks sit in the recency chain.
+
+**Smaller things.** Names reach 46 characters ("Architecture in the Middle East & North Africa").
+The home card wraps them, and the in-game `TopBar` pill now wraps to two lines instead of
+truncating, since a pairing's place comes last and was the part one line cut off. The Middle
+East & North Africa pairings still clip on a 320px phone ("Architecture in / the Middle…");
+the home card and the share text carry the full name. A daily deck of 60 cards or fewer is
+kept out of the intro in full, like a curated one (`THIN_DAILY_DECK` in `App.tsx`). Nothing server-side
+changed: the bot ceiling of 20 is below any 30-card pool, and the API never derives a theme.
+"Theme Cleared!" stays curated-only, although a 30-card pairing is clearable; that and keeping
+the same place off consecutive days are open follow-ups.
+
 ## Two deck-builder escape hatches, and why they are not optional
 
 Both default to today's values, so nothing outside a curated day changes.

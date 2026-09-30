@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Custom games can now include or leave out individual countries within a region.",
+    "Daily themes now include regions, countries and pairings such as Art in Italy."
+  ],
   "releases": [
     {
       "version": "1.30.0",

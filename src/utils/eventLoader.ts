@@ -1,6 +1,7 @@
 import { HistoricalEvent, EventManifest, Difficulty, Category, Era } from '../types';
 import { ERA_DEFINITIONS } from './eras';
-import { ALL_REGIONS, eventRegionSet } from './regions';
+import { ALL_REGIONS, countryMacros, eventCountrySet, eventRegionSet } from './regions';
+import { pairKey, parsePair } from './countrySelection';
 import { isCloudinaryImage } from './cloudinaryImage';
 
 /**
@@ -168,15 +169,34 @@ export function filterByEra(events: HistoricalEvent[], eras: Era[]): HistoricalE
 }
 
 /**
- * Filter events by macro-region (docs/regions/index.md). Every region selected means no
- * filtering at all, so an event with no tags is still dealt in an unfiltered game. Otherwise an
- * event stays when any region it resolves to is selected; "Global" matches Global-tagged events.
+ * Filter events by macro-region and the countries switched off within them (docs/regions/,
+ * `src/utils/countrySelection.ts`). Every region selected with nothing excluded means no
+ * filtering at all, so an event with no tags is still dealt in an unfiltered game.
+ *
+ * Otherwise an event stays when some region it resolves to is selected and either that region
+ * is whole (nothing in it switched off), or the event carries a country of that region whose
+ * pair is still on. So an event tagged only with a region ("Europe") is dealt while the region
+ * is whole and drops out once any of its countries is off: it belongs to none of them.
  */
-export function filterByRegion(events: HistoricalEvent[], regions: string[]): HistoricalEvent[] {
-  if (ALL_REGIONS.every((r) => regions.includes(r))) return events;
-  const wanted = new Set(regions);
+export function filterByRegion(
+  events: HistoricalEvent[],
+  regions: string[],
+  excluded: string[] = []
+): HistoricalEvent[] {
+  if (excluded.length === 0 && ALL_REGIONS.every((r) => regions.includes(r))) return events;
+  const selected = new Set(regions);
+  const off = new Set(excluded);
+  const partial = new Set(excluded.map((key) => parsePair(key)?.region));
   return events.filter((event) => {
-    for (const region of eventRegionSet(event)) if (wanted.has(region)) return true;
+    for (const region of eventRegionSet(event)) {
+      if (!selected.has(region)) continue;
+      if (!partial.has(region)) return true;
+      for (const country of eventCountrySet(event)) {
+        if (countryMacros(country).includes(region) && !off.has(pairKey(region, country))) {
+          return true;
+        }
+      }
+    }
     return false;
   });
 }
@@ -187,6 +207,8 @@ export interface PoolFilters {
   eras: Era[];
   /** Missing means every region: configs and settings saved before the filter existed. */
   regions?: string[];
+  /** `pairKey(region, country)` switched off within those regions; missing means none. */
+  excludedCountries?: string[];
 }
 
 /**
@@ -196,5 +218,6 @@ export interface PoolFilters {
 export function filterPool(events: HistoricalEvent[], filters: PoolFilters): HistoricalEvent[] {
   const byDifficulty = filterByDifficulty(events, filters.difficulties);
   const byEra = filterByEra(filterByCategory(byDifficulty, filters.categories), filters.eras);
-  return filters.regions ? filterByRegion(byEra, filters.regions) : byEra;
+  const regions = filters.regions ?? [...ALL_REGIONS];
+  return filterByRegion(byEra, regions, filters.excludedCountries ?? []);
 }

@@ -247,6 +247,47 @@ describe('buildRampedDeck', () => {
       expect(hardestInHandFull).toBeLessThan(60 * 0.35);
     });
 
+    /**
+     * `footholdFloor`, the place and pairing daily's guarantee that the seven-day exclusion
+     * cannot strip a thin pool of the band-0 cards its opening is made of.
+     */
+    describe('footholdFloor', () => {
+      const pool = catalogue.filter(
+        (e) => e.category === 'art' && (e.regions ?? []).includes('Italy')
+      );
+      const easy = pool.filter((e) => index.bandOf(e) === 0);
+      const bandZeroIn = (deck: HistoricalEvent[]) =>
+        deck.slice(0, RAMP_WINDOW).filter((e) => index.bandOf(e) === 0).length;
+      const names = (deck: HistoricalEvent[]) => deck.map((e) => e.name);
+
+      it('is a no-op at its default', () => {
+        const exclude = new Set(easy.map((e) => e.name));
+        const base = { allEvents: catalogue, exclude, bandSpread: 1, minAfterExclusion: 12 };
+        expect(names(buildRampedDeck(pool, 'floor', { ...base, footholdFloor: 0 }))).toEqual(
+          names(buildRampedDeck(pool, 'floor', base))
+        );
+      });
+
+      it('restores band 0 when the exclusion would take it below the floor', () => {
+        expect(easy.length).toBeGreaterThanOrEqual(4);
+        const exclude = new Set(easy.map((e) => e.name));
+        const base = { allEvents: catalogue, exclude, bandSpread: 1, minAfterExclusion: 12 };
+
+        expect(bandZeroIn(buildRampedDeck(pool, 'floor', base))).toBe(0);
+        expect(
+          bandZeroIn(buildRampedDeck(pool, 'floor', { ...base, footholdFloor: 4 }))
+        ).toBeGreaterThan(0);
+      });
+
+      it('leaves the exclusion alone while band 0 has enough', () => {
+        const exclude = new Set(easy.slice(0, easy.length - 4).map((e) => e.name));
+        const base = { allEvents: catalogue, exclude, bandSpread: 1, minAfterExclusion: 12 };
+        const deck = buildRampedDeck(pool, 'floor', { ...base, footholdFloor: 4 });
+        expect(names(deck)).toEqual(names(buildRampedDeck(pool, 'floor', base)));
+        expect(deck.some((e) => exclude.has(e.name))).toBe(false);
+      });
+    });
+
     function deckHasBand3InHand(deck: HistoricalEvent[]): boolean {
       return deck.slice(1, 6).some((card) => index.bandOf(card) === 3);
     }
@@ -368,7 +409,13 @@ describe('the seven-day no-repeat guarantee', () => {
    * should scatter the decks, and instead correcting years that were round-number guesses
    * slightly de-clusters the catalogue and makes the ramp's spacing kernel work better.
    *
-   * **The bound stays at 12 deliberately, even though 4 is a third of it.** The number has
+   * **Then 10, then 9 (2026-09-30).** Re-measured before the dated theme menu went in, the
+   * reading had drifted to 10 on catalogue work nobody re-measured after; 5 of those land on
+   * 2026-10-05 alone. The menu starts on 2026-10-06, inside this window, and re-themes its last
+   * six days (Turkey, Figures in Europe, France...), which took it to 9. Days before the menu
+   * are byte-identical, so the 2026-10-05 cluster is untouched.
+   *
+   * **The bound stays at 12 deliberately.** The number has
    * swung across 4-11 on ordinary catalogue work, so a bound set tight to the latest measurement
    * would fail on the next change without indicating a real regression. Re-measure before
    * moving it in either direction; do not tighten it just because the current reading is low.

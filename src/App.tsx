@@ -30,6 +30,9 @@ import GameStartTransition from './components/GameStartTransition';
 // hand-copied mirror of this number.
 export const DAILY_SPOILER_DEPTH = 15;
 
+/** A daily deck this small is kept out of the intro in full, like a curated one. */
+export const THIN_DAILY_DECK = 60;
+
 interface AppProps {
   /** Home-pager tab to open on; the URL names it (`src/pages/Home.tsx`). */
   initialTab?: NavDest;
@@ -48,6 +51,13 @@ function App({
 }: AppProps) {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
   useEffect(() => {
+    // Where dvh exists, let --vh follow it. An innerHeight snapshot goes stale when iOS Safari's
+    // toolbars collapse and return without a resize, and `min-h-screen-safe` then holds the page
+    // taller than the screen, its bottom unreachable under `overflow-hidden`.
+    if (typeof CSS !== 'undefined' && CSS.supports?.('height', '100dvh')) {
+      document.documentElement.style.setProperty('--vh', '1dvh');
+      return;
+    }
     const setVh = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -158,15 +168,17 @@ function App({
   // spoil the same leaderboard-scored puzzle for everyone, on every replay. Excluding after
   // the pool is drawn means replacements come from the same pool, so the budget is untouched.
   //
-  // A curated day is excluded in full rather than to the usual depth. The budget assumes a
-  // deck thousands deep, where 15 cards is the slice a player could plausibly reach; a
-  // curated theme is a couple of dozen cards total, so a fixed depth would leave most of the
-  // day's deck showing in the intro. Excluding all of it is safe — the intro pool is drawn
-  // from the whole catalogue, so a theme this size barely dents it.
+  // A curated day is excluded in full rather than to the usual depth, and so is any other
+  // thin day (a 30-card pairing like "Art in Italy"). The budget assumes a deck thousands
+  // deep, where 15 cards is the slice a player could plausibly reach; a theme a few dozen
+  // cards deep would leave much of the day's deck showing in the intro. Excluding all of it
+  // is safe — the intro pool is drawn from the whole catalogue, so a theme this size barely
+  // dents it.
   const dailyDeckNames = useMemo(() => {
     const deck = buildDailyDeck(allEvents, introDate);
     const theme = getDailyTheme(introDate);
-    const depth = theme.type === 'curated' ? deck.length : DAILY_SPOILER_DEPTH;
+    const whole = theme.type === 'curated' || deck.length <= THIN_DAILY_DECK;
+    const depth = whole ? deck.length : DAILY_SPOILER_DEPTH;
     return new Set(deck.slice(0, depth).map((e) => e.name));
   }, [allEvents, introDate]);
 

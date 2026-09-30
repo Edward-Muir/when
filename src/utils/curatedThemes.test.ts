@@ -101,13 +101,20 @@ describe('curated themes', () => {
     });
   });
 
-  it('lifts the band cap and lowers the exclusion floor only for curated days', () => {
+  it('lifts the band cap and lowers the exclusion floor for a curated day, not an ordinary one', () => {
     withCuratedTheme(() => {
       expect(getDailyBuildOptions(CURATED_DATE)).toEqual({
         bandSpread: 1,
         minAfterExclusion: expect.any(Number),
       });
-      expect(getDailyBuildOptions('2030-04-11')).toEqual({});
+      // Place and pairing days take these too (dailyThemeMenu.test.ts); an Everything or
+      // category day takes neither.
+      const ordinary = Array.from(
+        { length: 30 },
+        (_, n) => `2030-05-${String(n + 1).padStart(2, '0')}`
+      ).find((d) => ['all', 'category'].includes(getDailyTheme(d).type));
+      expect(ordinary).toBeDefined();
+      expect(getDailyBuildOptions(ordinary as string)).toEqual({});
     });
   });
 

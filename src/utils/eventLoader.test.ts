@@ -1,5 +1,6 @@
 import { filterByRegion, filterPool } from './eventLoader';
 import { ALL_REGIONS } from './regions';
+import { pairKey } from './countrySelection';
 import { ALL_ERAS } from './eras';
 import { HistoricalEvent } from '../types';
 
@@ -44,6 +45,70 @@ describe('filterByRegion', () => {
   it('never deals an untagged card into a narrowed game', () => {
     const everyRegionButOne = ALL_REGIONS.slice(1);
     expect(names(filterByRegion(pool, everyRegionButOne))).not.toContain('untagged');
+  });
+});
+
+describe('filterByRegion with countries switched off', () => {
+  const countryPool = [
+    card('berlin', ['Germany']),
+    card('bonn-paris', ['Germany', 'France']),
+    card('paris', ['France']),
+    card('alps', ['Europe']),
+    card('cairo', ['Egypt']),
+    card('moscow', ['Russia', 'Europe']),
+    card('siberia', ['Russia', 'North & Central Asia']),
+    card('untagged'),
+  ];
+  const off = (...pairs: [string, string][]) => pairs.map(([r, c]) => pairKey(r, c));
+
+  it('changes nothing when nothing is switched off', () => {
+    expect(filterByRegion(countryPool, ['Europe'], [])).toEqual(
+      filterByRegion(countryPool, ['Europe'])
+    );
+  });
+
+  it('drops a switched-off country, keeping cards another country still carries', () => {
+    expect(names(filterByRegion(countryPool, ['Europe'], off(['Europe', 'France'])))).toEqual([
+      'berlin',
+      'bonn-paris',
+      'moscow',
+    ]);
+  });
+
+  it('drops cards tagged only with a region once any of its countries is off', () => {
+    expect(names(filterByRegion(countryPool, ['Europe'], off(['Europe', 'France'])))).not.toContain(
+      'alps'
+    );
+  });
+
+  it('keeps a whole region whole beside a partial one', () => {
+    expect(
+      names(
+        filterByRegion(
+          countryPool,
+          ['Europe', 'Middle East & North Africa'],
+          off(['Europe', 'Germany'], ['Europe', 'Russia'])
+        )
+      )
+    ).toEqual(['bonn-paris', 'paris', 'cairo']);
+  });
+
+  it('narrows even when every region is selected', () => {
+    const narrowed = names(
+      filterByRegion(countryPool, [...ALL_REGIONS], off(['Middle East & North Africa', 'Egypt']))
+    );
+    expect(narrowed).toEqual(['berlin', 'bonn-paris', 'paris', 'alps', 'moscow', 'siberia']);
+    expect(narrowed).not.toContain('untagged');
+  });
+
+  it('switches a transcontinental country off one side only', () => {
+    const regions = ['Europe', 'North & Central Asia'];
+    expect(names(filterByRegion(countryPool, regions, off(['Europe', 'Russia'])))).toEqual([
+      'berlin',
+      'bonn-paris',
+      'paris',
+      'siberia',
+    ]);
   });
 });
 

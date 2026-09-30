@@ -94,6 +94,16 @@ body {
   }
 }
 
+/* A filter pill that is partly on: a region chip with some of its countries switched off. Same
+   trap as `.bg-player-row`, so the selected blue is mixed into the surface here rather than
+   written as `bg-accent-secondary/25`. The text stays the body colour so it reads in both
+   themes; the full-strength border is what ties it to the selected blue. */
+@layer utilities {
+  .bg-pill-partial {
+    background-color: color-mix(in srgb, var(--color-accent-secondary) 25%, var(--color-surface));
+  }
+}
+
 /* Stats page fills. Same trap as `.bg-player-row` above: `bg-accent/70` would compile to
    nothing, so the calendar and score bars mix the accent into the surface here. */
 @layer utilities {

@@ -243,6 +243,20 @@ export interface BuildRampedDeckOptions {
    */
   minAfterExclusion?: number;
   /**
+   * Band-0 cards the seven-day exclusion may not take a pool below.
+   *
+   * Place and pairing daily escape hatch; the default, 0, is a no-op. When excluding the last
+   * week's cards would leave the easiest band with fewer than this, band 0 alone ignores the
+   * exclusion. A 30-card pairing may hold only 8 band-0 cards, and an Everything day or an
+   * overlapping theme earlier in the week (Italy, then Art in Italy) can take several; the
+   * opening is made of them, so without this such a day opens on hard cards.
+   *
+   * The same trade `minAfterExclusion` makes: an easy card repeated within the week is mildly
+   * annoying, a hard opening costs the day. It reaches the recency chain through
+   * getDailyBuildOptions like the other two, so the chain replays what was really dealt.
+   */
+  footholdFloor?: number;
+  /**
    * Return only the composed window, skipping the tail shuffle.
    *
    * Nobody plays past the window, but a real deck still needs the tail so the game
@@ -271,6 +285,7 @@ export function buildRampedDeck(
     windowOnly = false,
     bandSpread = SPREAD,
     minAfterExclusion = MIN_POOL_AFTER_EXCLUSION,
+    footholdFloor = 0,
   } = options;
   if (pool.length === 0) return [];
 
@@ -289,10 +304,9 @@ export function buildRampedDeck(
   const queues = new Map<DifficultyBand, BandQueue>();
   for (const band of ALL_BANDS) {
     const banded = partition.at(band) ?? [];
-    const cards = shuffleArraySeeded(
-      dropRecent ? banded.filter(keep) : banded,
-      `${seed}:band${band}`
-    );
+    const kept = dropRecent ? banded.filter(keep) : banded;
+    const footholdsShort = band === 0 && kept.length < footholdFloor;
+    const cards = shuffleArraySeeded(footholdsShort ? banded : kept, `${seed}:band${band}`);
     queues.set(band, {
       cards,
       taken: 0,

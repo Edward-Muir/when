@@ -166,6 +166,7 @@ function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): Historic
     categories: config.selectedCategories,
     eras: config.selectedEras,
     regions: config.selectedRegions,
+    excludedCountries: config.excludedCountries,
   });
   return buildRampedDeck(filtered, config.challengeSeed, { allEvents });
 }

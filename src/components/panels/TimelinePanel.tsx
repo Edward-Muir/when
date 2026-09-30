@@ -12,13 +12,14 @@ import {
 import { filterPool } from '../../utils/eventLoader';
 import { getCollectionState } from '../../utils/statsStorage';
 import { ERA_DEFINITIONS } from '../../utils/eras';
-import { ALL_REGIONS } from '../../utils/regions';
+import { ALL_REGIONS, countryOptionsByRegion } from '../../utils/regions';
 import Timeline from '../Timeline/Timeline';
 import FilterPopup from '../FilterPopup';
 import GamePopup from '../GamePopup';
 import HintStrip from '../HintStrip';
 import { tabHintText } from '../../utils/hintCopy';
 import { useTabHint } from '../../hooks/useTabHint';
+import { useRegionSelection } from '../../hooks/useRegionSelection';
 
 interface TimelinePanelProps {
   allEvents: HistoricalEvent[];
@@ -42,7 +43,8 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
   ]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>(ERA_DEFINITIONS.map((e) => e.id));
-  const [selectedRegions, setSelectedRegions] = useState<string[]>([...ALL_REGIONS]);
+  const { selectedRegions, setSelectedRegions, excludedCountries, setExcludedCountries } =
+    useRegionSelection(() => [...ALL_REGIONS]);
 
   // UI state
   const [showFilterPopup, setShowFilterPopup] = useState(false);
@@ -68,6 +70,9 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
     return allEvents.filter((e) => owned.has(e.name));
   }, [allEvents]);
 
+  // Only countries the player has collected are offered as refinements.
+  const countryOptions = useMemo(() => countryOptionsByRegion(collectedEvents), [collectedEvents]);
+
   // Collection counts (collected vs full catalogue).
   const collected = collectedEvents.length;
   const total = allEvents.length;
@@ -79,10 +84,18 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
       categories: selectedCategories,
       eras: selectedEras,
       regions: selectedRegions,
+      excludedCountries,
     });
     // Sort by year for chronological display
     return [...events].sort((a, b) => a.year - b.year);
-  }, [collectedEvents, selectedDifficulties, selectedCategories, selectedEras, selectedRegions]);
+  }, [
+    collectedEvents,
+    selectedDifficulties,
+    selectedCategories,
+    selectedEras,
+    selectedRegions,
+    excludedCountries,
+  ]);
 
   // Handle event tap to show description
   const handleEventTap = (event: HistoricalEvent) => {
@@ -169,6 +182,9 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
         setSelectedEras={setSelectedEras}
         selectedRegions={selectedRegions}
         setSelectedRegions={setSelectedRegions}
+        excludedCountries={excludedCountries}
+        setExcludedCountries={setExcludedCountries}
+        countryOptions={countryOptions}
       />
 
       {/* Event Description Popup */}

@@ -213,11 +213,14 @@ const TopBar: React.FC<TopBarProps> = ({
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-                    // max-w + truncate because curated theme names run to 20 characters
-                    // ("Crowns & Coronations") against a longest category name of 12
-                    // ("Architecture"). Unconstrained, the pill pushes into the nav row on a
-                    // 320px screen. The full name is on the Daily hero card either way.
-                    className="mt-1 max-w-[9.5rem] truncate px-2 py-0.5 text-xs font-body font-medium bg-accent text-white rounded-full whitespace-nowrap"
+                    // max-w because curated theme names run to 20 characters ("Crowns &
+                    // Coronations") and daily pairings to 46 ("Architecture in the Middle East
+                    // & North Africa"). Unconstrained, the pill pushes into the nav row on a
+                    // 320px screen. It wraps to two lines rather than truncating, because a
+                    // pairing's place comes last and is the part a single line cut off; two
+                    // lines still fit the nav buttons' 38px row. The full name is on the
+                    // Daily hero card either way.
+                    className="mt-1 max-w-[9.5rem] line-clamp-2 px-2 py-0.5 text-xs leading-[1.2] font-body font-medium bg-accent text-white rounded-xl"
                     title={dailyTheme}
                   >
                     {dailyTheme}
