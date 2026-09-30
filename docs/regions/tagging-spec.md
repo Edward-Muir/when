@@ -209,8 +209,19 @@ Follow borders as the United Nations recognises them, and do not adjudicate:
 - **Migration and diaspora.** Tag the origin plus the destination. Partition is Bangladesh, India
   and Pakistan.
 - **"First X in Y".** Tag Y, plus the foreign actor if there was one.
-- **Species, fossils and prehistory.** Tag where the defining evidence was found (Plateosaurus is
-  France, Germany and Switzerland). Planet-wide geology, climate and atmosphere are Global.
+- **Species, fossils and prehistory.** Three cases, and the difference matters:
+  - **A named species or a named find** is tagged where its fossils were found. Plateosaurus is
+    France, Germany and Switzerland; Tiktaalik is Canada; Lucy is Ethiopia.
+  - **An evolutionary milestone** ("First Fish", "Plants Colonize Land", "First Mammals", "Cambrian
+    Explosion") is **Global alone**. It happened to life on Earth; the oldest fossil's site is only
+    where evidence happened to surface, and the next find moves it. First Jawed Fish is Global, not
+    China.
+  - **Human evolution** keeps its places: hominins really did evolve in Africa, so walking upright,
+    the first stone tools and Homo sapiens are tagged where they are found.
+  - **Geological period and epoch boundaries** are Global alone. The type section (GSSP) that
+    defines a boundary is a reference point, not where the event happened. A boundary that _is_ an
+    event keeps its place: the Paleocene begins with the Chicxulub impact, so it is Mexico, Global.
+  - Other planet-wide geology, climate and atmosphere are Global.
 - **Sport.** Tag the host, plus the winning nation whenever the card's own text names one (the first
   Women's World Cup is China, United States). A team of several nations, like the West Indies, is
   its region (North America). A winning athlete is a person, not an actor.
@@ -270,6 +281,7 @@ are on the cards and `region-report.js` skips them. Several appear in the tables
 | Chernobyl disaster               | Ukraine                                                  | A Soviet-era place is tagged by its republic                    |
 | Mount Tambora erupts             | Indonesia                                                | Consequences are the next card                                  |
 | Treaty of Tordesillas            | Portugal, Spain                                          | About the world, but not Global                                 |
+| First Jawed Fish                 | Global                                                   | A milestone for life on Earth, not its oldest fossil site       |
 
 **The audit flags some of these, and that is expected.** `region-audit.js` flags three of them:
 

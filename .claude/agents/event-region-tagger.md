@@ -38,8 +38,10 @@ This is the mistake that matters most. A famous event is not global:
 - The Treaty of Tordesillas divided the world, and it is "Portugal", "Spain".
 
 Global means the event happened worldwide. When it does, add the focal place beside it:
-"China", "Global" for COVID. Global alone is for events with no honest focal place, mostly
-geology and climate. It needs a `note` naming why no place is focal, and every note is read.
+"China", "Global" for COVID. Global alone is for events with no honest focal place: geology,
+climate, period boundaries, and evolutionary milestones ("First Fish", not the country of its
+oldest fossil; a named species like Plateosaurus is still where it was found). It needs a
+`note` naming why no place is focal, and every note is read.
 
 The second most common mistake is tagging consequences. "Triggering declarations of war from
 Britain and France" does not make Britain or France a place the event happened.

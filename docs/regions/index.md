@@ -124,14 +124,21 @@ failed went back to a tagger with the findings, at most twice. A two-chunk pilot
 
 - **Outcome.** All 104 fan-out batches passed: 85 first time, 17 after one fix round, 2 after two.
   About 250 agents, about 70 minutes, almost no web searches: the detail prose names the places.
-- **Distribution.** Europe 3,087, North America 1,330, Middle East & North Africa 700, East Asia
-  542, South Asia 270, Sub-Saharan Africa 268, Southeast Asia 155, South America 135, Oceania 122,
-  North & Central Asia 105, Global 92. Europe-heavy, as the catalogue is; an East Asia game has a
-  542-card pool.
-- **Global alone is on 40 cards (0.7%)**, almost all geology, eon and period boundaries,
-  climate, and prehistoric practices with no traceable origin, plus Y2K, Bitcoin and the first
-  leap second. Every note was read. Three were overturned on a source (first jawed fish is
-  China, first land animals the United Kingdom, the compound air compressor the United Kingdom).
+- **Distribution.** Europe 3,078, North America 1,319, Middle East & North Africa 698, East Asia
+  535, South Asia 268, Sub-Saharan Africa 264, Southeast Asia 154, South America 134, Oceania 118,
+  Global 118, North & Central Asia 105. Europe-heavy, as the catalogue is; an East Asia game has a
+  535-card pool.
+- **Global alone is on 72 cards (1.2%)**: geology, eon and period boundaries, climate,
+  evolutionary milestones, and prehistoric practices with no traceable origin, plus Y2K, Bitcoin
+  and the first leap second. Every note was read. One was overturned on a source (the compound
+  air compressor is William Mann's 1829 London patent, so United Kingdom).
+- **Evolutionary milestones are Global, not their fossil site.** The spec used to say "tag where
+  the defining evidence was found", and taggers applied it to "First Fish" (China), "First
+  Mammals" (United Kingdom) and "Cambrian Explosion" (Canada, China). Review made it worse by
+  moving First Jawed Fish and First Land Animals off Global onto their find sites. The maintainer
+  overruled that: a milestone happened to life on Earth, and the oldest fossil is only where the
+  evidence surfaced. 27 milestones and 5 period boundaries that still carried a type-section site
+  were re-tagged Global alone. Named species and human evolution keep their places.
 - **The 3% Global-only warning was dropped** before the fan-out. See the Global decision above.
 - **The pilot settled rules the spec had left open**, now in [tagging-spec.md](tagging-spec.md):
   stateless peoples and culture adjectives are not actors, "war begins" cards, colonial powers in

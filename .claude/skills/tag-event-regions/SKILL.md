@@ -137,6 +137,10 @@ A country already implies its region: ["Germany"] is in Europe. Don't add "Europ
 15. **Card and prose disagree on the origin.** Tag both, and report it as a catalogue error.
 16. **Sport.** The host, plus the winning nation whenever the card names one. A multi-nation
     team (West Indies) is its region; a winning athlete is a person, not an actor.
+17. **Deep time.** An evolutionary milestone ("First Fish", "First Mammals", "Cambrian
+    Explosion") is Global alone, not its oldest fossil site. A named species (Plateosaurus, T. rex,
+    Tiktaalik) is where its fossils are. Human evolution keeps its African places. Period and
+    epoch boundaries are Global alone; the type section is not the event.
 
 ## Common mistakes
 
@@ -151,6 +155,7 @@ A country already implies its region: ["Germany"] is in Europe. Don't add "Europ
 | USA / UK / Britain                                           | United States / United Kingdom | Tags are exact names                                         |
 | Treaty of Tordesillas: Global                                | Portugal, Spain                | About the world is not worldwide                             |
 | Chernobyl: Ukraine, Russia, Europe                           | Ukraine                        | A Soviet-era place is its republic; fallout is a consequence |
+| First Jawed Fish: China                                      | Global                         | A milestone for life on Earth, not its oldest fossil site    |
 
 ## Workflow for a batch (the orchestrating session)
 
