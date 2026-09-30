@@ -135,6 +135,8 @@ A country already implies its region: ["Germany"] is in Europe. Don't add "Europ
     event (Boston Massacre), not when colonists acted against it (Boston Tea Party).
 14. **Written works.** Where written or researched, else the author's base; not the birthplace.
 15. **Card and prose disagree on the origin.** Tag both, and report it as a catalogue error.
+16. **Sport.** The host, plus the winning nation whenever the card names one. A multi-nation
+    team (West Indies) is its region; a winning athlete is a person, not an actor.
 
 ## Common mistakes
 

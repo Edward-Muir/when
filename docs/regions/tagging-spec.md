@@ -211,7 +211,9 @@ Follow borders as the United Nations recognises them, and do not adjudicate:
 - **"First X in Y".** Tag Y, plus the foreign actor if there was one.
 - **Species, fossils and prehistory.** Tag where the defining evidence was found (Plateosaurus is
   France, Germany and Switzerland). Planet-wide geology, climate and atmosphere are Global.
-- **Sport.** Tag the host, plus the winner when the card is about the win.
+- **Sport.** Tag the host, plus the winning nation whenever the card's own text names one (the first
+  Women's World Cup is China, United States). A team of several nations, like the West Indies, is
+  its region (North America). A winning athlete is a person, not an actor.
 - **Wars and their outbreak.** A "war begins" card is the outbreak: where the fighting or the
   declaration happened, plus the principal belligerents (at most two, else their region). Add
   Global only when the card's own text frames the war as fought worldwide (Seven Years' War

@@ -12,7 +12,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/senet-board-game-egypt_ob4mlr?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2620
+    "year_end": -2620,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "royal-game-of-ur",
@@ -26,7 +29,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/royal-game-of-ur_qq24p6?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "mehen-snake-game",
@@ -40,7 +46,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mehen-snake-game_m122tz?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "minoan-bull-leaping",
@@ -55,7 +64,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/minoan-bull-leaping_mexxce?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -1400
+    "year_end": -1400,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "egyptian-wrestling-beni-hasan",
@@ -69,7 +81,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-wrestling-beni-hasan_lg9sdw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "go-game-china",
@@ -83,7 +98,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/go-game-china_lv4ec1?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "pankration-added-olympics",
@@ -97,7 +115,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pankration-added-olympics_dmtiw1?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "pythian-games-founded",
@@ -111,7 +132,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pythian-games-founded_rty0q6?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "knucklebones-astragaloi",
@@ -125,7 +149,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/knucklebones-astragaloi_ocky2y?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Italy"
+    ]
   },
   {
     "name": "mesoamerican-ballgame-rise",
@@ -139,7 +167,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mesoamerican-ballgame-rise_w8wuya?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "petteia-greek-board-game",
@@ -153,7 +184,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/petteia-greek-board-game_oc4oev?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "cuju-football-china",
@@ -168,7 +202,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuju-football-china_l5bpy1?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 220
+    "year_end": 220,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "circus-maximus-races",
@@ -182,7 +219,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/circus-maximus-races_ruyvpe?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "first-roman-gladiator-games",
@@ -196,7 +236,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-roman-gladiator-games_ranqxj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "ludus-latrunculorum",
@@ -210,7 +253,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ludus-latrunculorum_jap4z5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "tabula-roman-backgammon",
@@ -224,7 +270,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tabula-roman-backgammon_gdugka?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "patolli-aztec-game",
@@ -238,7 +289,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/patolli-aztec-game_nnagql?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "chess-emerges-india",
@@ -252,7 +306,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chess-emerges-india_clx3lr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "playing-cards-tang-china",
@@ -266,7 +323,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/playing-cards-tang-china_oi3ati?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "hnefatafl-viking-game",
@@ -280,7 +340,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hnefatafl-viking-game_t3ecaz?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "shogi-japan",
@@ -294,7 +357,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shogi-japan_tq1o0g?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "xiangqi-chinese-chess",
@@ -308,7 +374,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/xiangqi-chinese-chess_xbwaj2?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "byzantine-hippodrome-races",
@@ -322,7 +391,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/byzantine-hippodrome-races_sqqg60?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "real-tennis-medieval",
@@ -336,7 +409,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/real-tennis-medieval_us2s35?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "mob-football-england",
@@ -350,7 +426,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mob-football-england_argc3z?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "scotland-bans-golf-1457",
@@ -364,7 +443,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scotland-bans-golf-1457_evw3kr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "medieval-jousting-tournaments",
@@ -378,7 +460,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/medieval-jousting-tournaments_peydlf?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "tarot-cards-italy",
@@ -392,7 +477,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tarot-cards-italy_bvqmsg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "modern-chess-queen-rules",
@@ -406,7 +494,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/modern-chess-queen-rules_hmciqp?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Spain"
+    ]
   },
   {
     "name": "mary-queen-scots-billiards",
@@ -420,7 +512,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mary-queen-scots-billiards_vi4dvc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "first-recorded-cricket",
@@ -434,7 +529,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-recorded-cricket_fsq6qb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "ascot-racecourse-founded",
@@ -448,7 +546,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ascot-racecourse-founded_mptmyv?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-boxing-rules-broughton",
@@ -462,7 +563,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-boxing-rules-broughton_uvyfhn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "jockey-club-founded",
@@ -476,7 +580,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jockey-club-founded_bvlawu?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "marylebone-cricket-club",
@@ -490,7 +597,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marylebone-cricket-club_c9eate?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-epsom-derby",
@@ -504,7 +614,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-epsom-derby_ray8fx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "snakes-and-ladders-india",
@@ -518,7 +631,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/snakes-and-ladders-india_rlkxzi?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "first-jigsaw-puzzle",
@@ -532,7 +648,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-jigsaw-puzzle_gxfxuj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "checkers-draughts-standardized",
@@ -546,7 +665,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/checkers-draughts-standardized_kog8zi?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-baseball-knickerbocker",
@@ -560,7 +682,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-baseball-knickerbocker_vvut6a?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-modern-rugby",
@@ -574,7 +699,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-modern-rugby_vizee7?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "queensberry-boxing-rules",
@@ -588,7 +716,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/queensberry-boxing-rules_of4dkh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "fa-football-rules-1863",
@@ -602,7 +733,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fa-football-rules-1863_ctgtkc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-kentucky-derby",
@@ -616,7 +750,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-kentucky-derby_totqfk?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-wimbledon-championship",
@@ -630,7 +767,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-wimbledon-championship_lafodl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-test-cricket-match",
@@ -644,7 +784,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-test-cricket-match_gaztui?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia",
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-stanley-cup",
@@ -658,7 +802,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-stanley-cup_tpqdhv?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "basketball-invented-naismith",
@@ -672,7 +819,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/basketball-invented-naismith_e275yf?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "volleyball-invented",
@@ -686,7 +836,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/volleyball-invented_apmjfy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ioc-founded-coubertin",
@@ -700,7 +853,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ioc-founded-coubertin_jbw9a1?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-boston-marathon",
@@ -714,7 +870,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-boston-marathon_iusgz1?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-tour-de-france",
@@ -728,7 +887,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-tour-de-france_cfxpc6?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "fifa-founded",
@@ -742,7 +904,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fifa-founded_fgtipn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-world-series",
@@ -756,7 +921,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-world-series_p9x6fl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-indianapolis-500",
@@ -770,7 +938,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-indianapolis-500_ijzbrn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "monopoly-board-game",
@@ -784,7 +955,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/monopoly-board-game_zc39wj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-world-cup-1930",
@@ -798,7 +972,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-world-cup-1930_vvltw5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uruguay"
+    ]
   },
   {
     "name": "babe-ruth-60-home-runs",
@@ -812,7 +989,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/babe-ruth-60-home-runs_z6fcdd?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "crossword-puzzle-published",
@@ -826,7 +1006,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crossword-puzzle-published_gsyjfa?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "scrabble-invented",
@@ -840,7 +1023,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scrabble-invented_ixbdfg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "jesse-owens-four-golds",
@@ -854,7 +1040,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jesse-owens-four-golds_kttngg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United States"
+    ]
   },
   {
     "name": "jackie-robinson-mlb-debut",
@@ -868,7 +1058,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jackie-robinson-mlb-debut_l4cpqa?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "bannister-four-minute-mile",
@@ -882,7 +1075,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bannister-four-minute-mile_yyi6ls?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-summer-paralympics",
@@ -896,7 +1092,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-summer-paralympics_gxslxy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "pele-first-world-cup-win",
@@ -910,7 +1109,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pele-first-world-cup-win_smxm0r?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Brazil",
+      "Sweden"
+    ]
   },
   {
     "name": "ali-defeats-liston",
@@ -924,7 +1127,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ali-defeats-liston_xc33bl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rubiks-cube-invented",
@@ -938,7 +1144,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rubiks-cube-invented_plktiy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Hungary"
+    ]
   },
   {
     "name": "dungeons-and-dragons-released",
@@ -952,7 +1161,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dungeons-and-dragons-released_tonf4y?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "billie-jean-king-battle-sexes",
@@ -966,7 +1178,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/billie-jean-king-battle-sexes_fkahte?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "fischer-spassky-world-chess",
@@ -980,7 +1195,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fischer-spassky-world-chess_dvf2xj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iceland",
+      "Russia",
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "nadia-comaneci-perfect-ten",
@@ -994,7 +1215,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nadia-comaneci-perfect-ten_lnsttl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "Romania"
+    ]
   },
   {
     "name": "miracle-on-ice",
@@ -1008,7 +1233,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/miracle-on-ice_yefvdj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "trivial-pursuit-launched",
@@ -1022,7 +1252,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trivial-pursuit-launched_qymjvl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "deep-blue-beats-kasparov",
@@ -1036,7 +1269,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/deep-blue-beats-kasparov_qg9z5x?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "tiger-woods-first-masters",
@@ -1050,7 +1286,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiger-woods-first-masters_iyfucl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "settlers-of-catan-released",
@@ -1064,7 +1303,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlers-of-catan-released_jqrmgr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "alphago-beats-lee-sedol",
@@ -1078,7 +1320,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alphago-beats-lee-sedol_ikfwzy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea",
+      "United Kingdom"
+    ]
   },
   {
     "name": "usain-bolt-world-record",
@@ -1092,7 +1338,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/usain-bolt-world-record_hza50b?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Jamaica"
+    ]
   },
   {
     "name": "wii-motion-gaming",
@@ -1106,6 +1356,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wii-motion-gaming_vijvay?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "North America"
+    ]
   }
 ]

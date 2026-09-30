@@ -1,9 +1,8 @@
 # Region tags
 
-**Status (2026-09-30):** the tagging system is built. The taxonomy, validator, report, apply and
-audit scripts, the tagger agent and skill, and the corpus test are all in place. 61 gold-set
-events are tagged. The sweep of the other ~5,800 and the player-facing filter are next. Rules
-for choosing tags: [tagging-spec.md](tagging-spec.md).
+**Status (2026-09-30):** done. Every one of the 5,874 events is tagged, `REQUIRE_REGIONS` is on,
+and the Custom-page filter is built. Rules for choosing tags: [tagging-spec.md](tagging-spec.md).
+How the sweep ran, and what it turned up: [the sweep](#the-sweep-2026-09-30).
 
 ## Why this exists
 
@@ -115,6 +114,41 @@ Built 2026-09-30 as designed here:
   shared) decodes as all regions. See [../sharing-challenges/](../sharing-challenges/index.md).
 - **Unaffected.** The daily and curated themes. Region tags do make a "Chinese history week" theme
   trivial to assemble later.
+
+## The sweep (2026-09-30)
+
+5,813 events in 106 chunks of up to 60, run as one workflow: a Sonnet `event-region-tagger` per
+chunk, then a Sonnet checker that ran completeness, `region-apply.js --dry-run` and the audit,
+cold-read five entries against the spec, and judged every Global-only note. A batch the checker
+failed went back to a tagger with the findings, at most twice. A two-chunk pilot came first.
+
+- **Outcome.** All 104 fan-out batches passed: 85 first time, 17 after one fix round, 2 after two.
+  About 250 agents, about 70 minutes, almost no web searches: the detail prose names the places.
+- **Distribution.** Europe 3,087, North America 1,330, Middle East & North Africa 700, East Asia
+  542, South Asia 270, Sub-Saharan Africa 268, Southeast Asia 155, South America 135, Oceania 122,
+  North & Central Asia 105, Global 92. Europe-heavy, as the catalogue is; an East Asia game has a
+  542-card pool.
+- **Global alone is on 40 cards (0.7%)**, almost all geology, eon and period boundaries,
+  climate, and prehistoric practices with no traceable origin, plus Y2K, Bitcoin and the first
+  leap second. Every note was read. Three were overturned on a source (first jawed fish is
+  China, first land animals the United Kingdom, the compound air compressor the United Kingdom).
+- **The 3% Global-only warning was dropped** before the fan-out. See the Global decision above.
+- **The pilot settled rules the spec had left open**, now in [tagging-spec.md](tagging-spec.md):
+  stateless peoples and culture adjectives are not actors, "war begins" cards, colonial powers in
+  protest events, written works, card-versus-prose origin disagreements, sport winners, and more
+  extinct-state seats.
+- **The gate caught a canonicalisation bug.** `canonicalRegions` dropped any region a country
+  implied, including one that was a transcontinental country's required side
+  (`[Syria, Turkey, Middle East & North Africa]` lost its region, leaving Turkey sideless). It
+  passed the apply script's input validation and failed the corpus test on the stored form, on
+  106 cards. Fixed at the source; the region is now kept whenever a transcontinental tag needs it.
+- **The audit's residue is mostly demonyms**: "British", "Greek", "Mongol", "Spanish" in text about
+  consequences, colonisers acted against, or cultures. Read at the end, it surfaced five real
+  misses, all sport winners or a diffusion origin, fixed before applying.
+- **Taxonomy gaps reported, not added**: Cook Islands, Niue, Wallis and Futuna, South Georgia, the
+  Isle of Man. Each card was covered by its sovereign or its region, which is the rule.
+- **Catalogue errors** the taggers reported went through triage into
+  [the backlog](../events-images/catalogue-error-backlog.md#raised-by-the-region-sweep-2026-09-30).
 
 ## Known, not chased
 

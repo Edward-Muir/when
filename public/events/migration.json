@@ -31,7 +31,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-reach-australia_ok34l8?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -45000
+    "year_end": -45000,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "humans-settle-near-oceania",
@@ -46,7 +49,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-settle-near-oceania_m818ag?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -20000
+    "year_end": -20000,
+    "regions": [
+      "Papua New Guinea"
+    ]
   },
   {
     "name": "humans-enter-europe",
@@ -61,7 +67,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-enter-europe_pr45n4?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -40000
+    "year_end": -40000,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "humans-settle-japan",
@@ -76,7 +85,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-settle-japan_zskhwf?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -32000
+    "year_end": -32000,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "humans-reach-siberia",
@@ -91,7 +103,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-reach-siberia_n9pqet?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -32000
+    "year_end": -32000,
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "settlement-south-america",
@@ -106,7 +122,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlement-south-america_kartza?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -11000
+    "year_end": -11000,
+    "regions": [
+      "Chile"
+    ]
   },
   {
     "name": "settlement-caribbean-islands",
@@ -121,7 +140,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlement-caribbean-islands_vp7wvy?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -500
+    "year_end": -500,
+    "regions": [
+      "North America",
+      "South America"
+    ]
   },
   {
     "name": "neolithic-farmers-europe",
@@ -136,7 +159,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neolithic-farmers-europe_iuqx0u?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -4000
+    "year_end": -4000,
+    "regions": [
+      "Turkey",
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "austronesian-expansion-begins",
@@ -150,7 +178,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/austronesian-expansion-begins_kjwzmm?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Taiwan",
+      "Southeast Asia",
+      "Oceania"
+    ]
   },
   {
     "name": "yamnaya-migration-europe",
@@ -164,7 +197,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yamnaya-migration-europe_ajl8tx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "settlement-of-madagascar",
@@ -178,7 +216,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlement-of-madagascar_jfko8e?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia",
+      "Madagascar"
+    ]
   },
   {
     "name": "sea-peoples-migrations",
@@ -192,7 +234,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sea-peoples-migrations_dfhqzj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Greece",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "indo-aryan-migration",
@@ -206,7 +254,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indo-aryan-migration_o3tv5d?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "greek-colonization-mediterranean",
@@ -221,7 +273,16 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-colonization-mediterranean_iza9xy?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -550
+    "year_end": -550,
+    "regions": [
+      "France",
+      "Greece",
+      "Italy",
+      "Spain",
+      "Turkey",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "phoenician-colonization",
@@ -236,7 +297,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phoenician-colonization_lvasyx?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -750
+    "year_end": -750,
+    "regions": [
+      "Lebanon",
+      "Spain",
+      "Tunisia"
+    ]
   },
   {
     "name": "bantu-reach-southern-africa",
@@ -250,7 +316,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bantu-reach-southern-africa_eifrew?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cameroon",
+      "Nigeria",
+      "South Africa"
+    ]
   },
   {
     "name": "germanic-migration-period",
@@ -265,7 +336,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/germanic-migration-period_rwkh7b?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 568
+    "year_end": 568,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "huns-migrate-into-europe",
@@ -279,7 +353,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huns-migrate-into-europe_kahggc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ukraine",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "slavic-migrations",
@@ -293,7 +371,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/slavic-migrations_agt1eu?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "settlement-of-polynesia-east",
@@ -307,7 +388,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlement-of-polynesia-east_xvn466?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "French Polynesia"
+    ]
   },
   {
     "name": "settlement-of-hawaii",
@@ -321,7 +405,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlement-of-hawaii_m5fybp?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "magyars-settle-hungary",
@@ -335,7 +422,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magyars-settle-hungary_mllxge?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Hungary",
+      "Ukraine"
+    ]
   },
   {
     "name": "maori-reach-new-zealand",
@@ -349,7 +440,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maori-reach-new-zealand_w6axda?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "moriori-settle-chathams",
@@ -363,7 +457,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moriori-settle-chathams_tfrwm8?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "transatlantic-slave-trade-begins",
@@ -377,7 +474,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/transatlantic-slave-trade-begins_psjmkx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain",
+      "United States",
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "huguenot-diaspora",
@@ -391,7 +493,14 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huguenot-diaspora_olnhdj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "Netherlands",
+      "South Africa",
+      "United Kingdom"
+    ]
   },
   {
     "name": "puritan-great-migration",
@@ -406,7 +515,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/puritan-great-migration_bir5o9?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1640
+    "year_end": 1640,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "expulsion-of-the-acadians",
@@ -421,7 +534,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/expulsion-of-the-acadians_c2ksv9?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1764
+    "year_end": 1764,
+    "regions": [
+      "Canada",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "scotch-irish-migration",
@@ -435,7 +553,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scotch-irish-migration_pqmihh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "great-trek-south-africa",
@@ -450,7 +572,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-trek-south-africa_l81ivf?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1846
+    "year_end": 1846,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "mormon-trek-to-utah",
@@ -464,7 +589,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mormon-trek-to-utah_nzctmw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "oregon-trail-migration",
@@ -479,7 +607,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oregon-trail-migration_vvuxcn?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1869
+    "year_end": 1869,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "freed-slaves-settle-liberia",
@@ -493,7 +624,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/freed-slaves-settle-liberia_n6lpeg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Liberia",
+      "United States"
+    ]
   },
   {
     "name": "european-emigration-peak",
@@ -507,7 +642,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/european-emigration-peak_ofjltk?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "chinese-emigration-gold-rush",
@@ -521,7 +660,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chinese-emigration-gold-rush_yappzz?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "United States"
+    ]
   },
   {
     "name": "indentured-labor-diaspora",
@@ -536,7 +679,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indentured-labor-diaspora_tsdvtw?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1917
+    "year_end": 1917,
+    "regions": [
+      "India",
+      "United Kingdom",
+      "Global"
+    ]
   },
   {
     "name": "great-migration-black-americans",
@@ -551,7 +699,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-migration-black-americans_zevllp?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1970
+    "year_end": 1970,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dust-bowl-migration",
@@ -566,7 +717,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dust-bowl-migration_rdj6dj?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1940
+    "year_end": 1940,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "partition-of-india-migration",
@@ -599,7 +753,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windrush-arrival_dw4g1z?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Jamaica",
+      "United Kingdom"
+    ]
   },
   {
     "name": "palestinian-exodus",
@@ -613,7 +771,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/palestinian-exodus_rxmn7p?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "post-war-german-expulsions",
@@ -628,7 +790,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/post-war-german-expulsions_ybyqwr?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1950
+    "year_end": 1950,
+    "regions": [
+      "Czechia",
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "bracero-program-begins",
@@ -642,7 +809,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bracero-program-begins_ccbfnc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "United States"
+    ]
   },
   {
     "name": "gastarbeiter-migration",
@@ -656,7 +827,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gastarbeiter-migration_fhd5hg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "vietnamese-boat-people",
@@ -671,7 +847,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vietnamese-boat-people_lqgpu8?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1995
+    "year_end": 1995,
+    "regions": [
+      "Vietnam"
+    ]
   },
   {
     "name": "soviet-jewish-emigration",
@@ -685,7 +864,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soviet-jewish-emigration_skdoug?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Russia",
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "european-migrant-crisis",
@@ -700,7 +885,13 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/european-migrant-crisis_wovdel?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 2016
+    "year_end": 2016,
+    "regions": [
+      "Syria",
+      "Turkey",
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "settlement-of-fiji",
@@ -714,7 +905,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlement-of-fiji_nsh48a?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Fiji"
+    ]
   },
   {
     "name": "thule-reach-greenland",
@@ -729,7 +923,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thule-reach-greenland_tkmnun?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1300
+    "year_end": 1300,
+    "regions": [
+      "Canada",
+      "Greenland",
+      "United States"
+    ]
   },
   {
     "name": "vandals-migrate-to-africa",
@@ -743,7 +942,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vandals-migrate-to-africa_invwvw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain",
+      "Tunisia"
+    ]
   },
   {
     "name": "anglo-saxons-settle-britain",
@@ -758,7 +961,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anglo-saxons-settle-britain_n7nsqy?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 600
+    "year_end": 600,
+    "regions": [
+      "Denmark",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "cuban-exile-to-miami",
@@ -773,7 +981,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuban-exile-to-miami_qzogxn?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1962
+    "year_end": 1962,
+    "regions": [
+      "Cuba",
+      "United States"
+    ]
   },
   {
     "name": "gold-rush-to-australia",
@@ -788,6 +1000,9 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gold-rush-to-australia_jpufag?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1869
+    "year_end": 1869,
+    "regions": [
+      "Australia"
+    ]
   }
 ]

@@ -18,7 +18,7 @@ const spec = require('../../scripts/events/region-spec.js');
  * event is simply not done yet; after it, an untagged event is one that `add-events` let
  * through, and a region filter would silently never deal it.
  */
-const REQUIRE_REGIONS = false;
+const REQUIRE_REGIONS = true;
 
 const EVENTS_DIR = path.join(__dirname, '..', '..', 'public', 'events');
 const MANIFEST_FILES: string[] = JSON.parse(
@@ -124,6 +124,15 @@ describe('region tag validator', () => {
     ]);
     // Turkey spans two regions, so the explicit side stays.
     expect(spec.canonicalRegions(['Europe', 'Turkey'])).toEqual(['Turkey', 'Europe']);
+    // ...even when another country implies the same region: it still says which Turkey.
+    const kadesh = ['Syria', 'Egypt', 'Turkey', 'Middle East & North Africa'];
+    expect(spec.canonicalRegions(kadesh)).toEqual([
+      'Egypt',
+      'Syria',
+      'Turkey',
+      'Middle East & North Africa',
+    ]);
+    expect(problemsFor(spec.canonicalRegions(kadesh))).toEqual([]);
   });
 });
 

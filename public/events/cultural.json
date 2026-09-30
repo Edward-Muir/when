@@ -14,7 +14,11 @@
     "color": "#281f19",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -40800
+    "year_end": -40800,
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "lascaux-cave-paintings",
@@ -31,7 +35,10 @@
     "color": "#26201c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -15000
+    "year_end": -15000,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-writing",
@@ -48,7 +55,10 @@
     "color": "#26201b",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -2600
+    "year_end": -2600,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "epic-gilgamesh",
@@ -64,7 +74,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh",
     "color": "#422929",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "book-of-dead",
@@ -80,7 +93,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_the_Dead",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "rigveda-composed",
@@ -96,7 +112,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rigveda",
     "color": "#221f29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "zoroaster-teaches",
@@ -112,7 +132,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Zoroaster",
     "color": "#281f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "i-ching-compiled",
@@ -128,7 +152,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/I_Ching",
     "color": "#212124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "upanishads-composed",
@@ -144,7 +171,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Upanishads",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "first-olympics",
@@ -160,7 +190,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "aesops-fables",
@@ -176,7 +209,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Aesop's_Fables",
     "color": "#352415",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "pythagoras-school",
@@ -192,7 +228,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pythagoras",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "buddha-enlightenment",
@@ -208,7 +247,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Enlightenment_in_Buddhism",
     "color": "#443f3c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "confucius-teachings",
@@ -224,7 +266,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Analects",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "dead-sea-scrolls-written",
@@ -240,7 +285,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Palestine"
+    ]
   },
   {
     "name": "jesus-birth",
@@ -256,7 +304,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nativity_of_Jesus",
     "color": "#24201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Palestine"
+    ]
   },
   {
     "name": "jesus-crucifixion",
@@ -272,7 +323,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Crucifixion_of_Jesus",
     "color": "#342c31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "bible-latin-vulgate",
@@ -288,7 +344,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vulgate",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Palestine"
+    ]
   },
   {
     "name": "council-chalcedon",
@@ -304,7 +363,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "monte-cassino-founded",
@@ -320,7 +383,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Monte_Cassino",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "muhammad-revelation",
@@ -336,7 +402,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "islam-founded",
@@ -352,7 +421,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Islamic_schools_and_branches",
     "color": "#4c3d39",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "quran-compiled",
@@ -368,7 +440,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "nara-period-begins",
@@ -384,7 +459,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/8th_century",
     "color": "#2a1e1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "heian-period-begins",
@@ -400,7 +478,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Heian_period",
     "color": "#2f2924",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "book-of-kells",
@@ -416,7 +497,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_Kells",
     "color": "#232021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "great-schism",
@@ -432,7 +517,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/East–West_Schism",
     "color": "#2e2316",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "notre-dame-construction",
@@ -448,7 +538,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris",
     "color": "#2c3028",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "oxford-founded",
@@ -464,7 +557,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/University_of_Oxford",
     "color": "#292622",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "franciscan-order",
@@ -480,7 +576,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Order_of_Saint_Francis",
     "color": "#23211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "aquinas-summa",
@@ -496,7 +595,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Aquinas",
     "color": "#25201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "marco-polo-china",
@@ -532,7 +635,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Divine_Comedy",
     "color": "#1f2222",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "petrarch-sonnets",
@@ -548,7 +654,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Petrarchan_sonnet",
     "color": "#2b2923",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "wycliffe-bible",
@@ -564,7 +673,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wycliffe's_Bible",
     "color": "#23211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "chaucer-canterbury",
@@ -580,7 +692,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Canterbury_Tales",
     "color": "#22211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "gutenberg-bible",
@@ -596,7 +711,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gutenberg_Bible",
     "color": "#261f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "botticelli-venus",
@@ -612,7 +730,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Birth_of_Venus",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "leonardo-mona-lisa",
@@ -628,7 +749,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mona_Lisa",
     "color": "#281f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "michelangelo-david",
@@ -644,7 +768,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "machiavelli-prince",
@@ -660,7 +787,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "protestant-reformation",
@@ -676,7 +806,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Protestantism",
     "color": "#212024",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "council-trent",
@@ -692,7 +825,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Trent",
     "color": "#26201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "shakespeare-born",
@@ -708,7 +844,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/John_Shakespeare",
     "color": "#25201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "shakespeare-hamlet",
@@ -724,7 +863,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hamlet",
     "color": "#291e1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "king-james-bible",
@@ -740,7 +882,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/King_James_Version",
     "color": "#232021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "rembrandt-night-watch",
@@ -756,7 +901,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Watch",
     "color": "#23201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "russia-anno-domini",
@@ -772,7 +920,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
     "color": "#261f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "handel-messiah",
@@ -788,7 +940,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Messiah_(Handel)",
     "color": "#291e1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland"
+    ]
   },
   {
     "name": "bach-death",
@@ -804,7 +959,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach",
     "color": "#251f1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "voltaire-candide",
@@ -820,7 +978,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Candide",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Switzerland"
+    ]
   },
   {
     "name": "britannica-first",
@@ -836,7 +998,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Encyclopædia_Britannica_Eleventh_Edition",
     "color": "#291e1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "marie-antoinette-wedding",
@@ -852,7 +1017,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_XVII",
     "color": "#26201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "France"
+    ]
   },
   {
     "name": "wealth-of-nations",
@@ -868,7 +1037,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations",
     "color": "#2b2320",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "mozart-don-giovanni",
@@ -884,7 +1056,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Giovanni",
     "color": "#261f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia"
+    ]
   },
   {
     "name": "mozart-dies",
@@ -900,7 +1075,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Wolfgang_Amadeus_Mozart",
     "color": "#291e1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "louvre-opens",
@@ -916,7 +1094,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Louvre",
     "color": "#281f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "beethoven-first-symphony",
@@ -932,7 +1113,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "beethoven-fifth",
@@ -948,7 +1132,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Beethoven)",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "grimm-fairy-tales",
@@ -964,7 +1151,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Grimms'_Fairy_Tales",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "pride-prejudice",
@@ -980,7 +1170,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice_and_Zombies",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "frankenstein-published",
@@ -996,7 +1189,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Frankenstein",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "schubert-unfinished",
@@ -1012,7 +1209,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Schubert)",
     "color": "#22211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "beethoven-ninth",
@@ -1028,7 +1228,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "first-photograph",
@@ -1044,7 +1247,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Photograph",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "book-of-mormon-published",
@@ -1060,7 +1266,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_Mormon",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "slavery-abolished-uk",
@@ -1076,7 +1285,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Slavery_Abolition_Act_1833",
     "color": "#202121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-kindergarten",
@@ -1092,7 +1304,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Kindergarten",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "morse-code-invented",
@@ -1108,7 +1323,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Morse_code",
     "color": "#22211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ymca-founded",
@@ -1124,7 +1342,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/YMCA",
     "color": "#22211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "communist-manifesto",
@@ -1140,7 +1361,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
     "color": "#23211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "United Kingdom"
+    ]
   },
   {
     "name": "seneca-falls-convention",
@@ -1156,7 +1381,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Seneca_Falls_Convention",
     "color": "#22211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "origin-of-species",
@@ -1172,7 +1400,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species",
     "color": "#24211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "les-miserables",
@@ -1188,7 +1419,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Misérables",
     "color": "#42423a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "slavery-abolished-us",
@@ -1204,7 +1440,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_slavery_in_the_United_States",
     "color": "#202123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "salvation-army-founded",
@@ -1220,7 +1459,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Salvation_Army",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-impressionist-exhibition",
@@ -1236,7 +1478,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Impressionist_Exhibition",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "phonograph-invented",
@@ -1252,7 +1497,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Phonograph",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "tchaikovsky-swan-lake",
@@ -1268,7 +1516,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Swan_Lake",
     "color": "#202121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "dostoevsky-karamazov",
@@ -1284,7 +1536,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov",
     "color": "#24231d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "rodin-thinker",
@@ -1300,7 +1556,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Think_break",
     "color": "#21221f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-labor-day",
@@ -1316,7 +1575,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Labor_Day",
     "color": "#27221b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "esperanto-created",
@@ -1332,7 +1594,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Esperanto",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Poland"
+    ]
   },
   {
     "name": "van-gogh-starry-night",
@@ -1348,7 +1613,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Starry_Night",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "hull-house-founded",
@@ -1364,7 +1632,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hull_House",
     "color": "#202123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dvorak-new-world",
@@ -1380,7 +1651,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Dvořák)",
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "womens-suffrage-nz",
@@ -1396,7 +1670,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Women's_suffrage_in_New_Zealand",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "first-motion-picture",
@@ -1412,7 +1689,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cinematograph",
     "color": "#23211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-modern-olympics",
@@ -1428,7 +1708,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
     "color": "#2e2920",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "freud-interpretation-dreams",
@@ -1444,7 +1727,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "picasso-blue-period",
@@ -1460,7 +1746,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pablo_Picasso",
     "color": "#24211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "nobel-prizes-first",
@@ -1476,7 +1766,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nobel_Prize",
     "color": "#291f17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Norway",
+      "Sweden"
+    ]
   },
   {
     "name": "picasso-demoiselles",
@@ -1492,7 +1786,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Demoiselles_d'Avignon",
     "color": "#3a291a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "boy-scouts-founded",
@@ -1508,7 +1805,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Scouting_America",
     "color": "#3a2a1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "girl-scouts-founded",
@@ -1524,7 +1824,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Girl_Scouts_of_the_USA",
     "color": "#271f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rite-of-spring",
@@ -1540,7 +1843,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rite_of_Spring",
     "color": "#24201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "ford-five-dollar-wage",
@@ -1556,7 +1862,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_Ford",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dada-movement",
@@ -1572,7 +1881,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dada",
     "color": "#22211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "women-suffrage-uk",
@@ -1588,7 +1900,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Riley_Gaines",
     "color": "#24211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "bauhaus-founded",
@@ -1604,7 +1919,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bauhaus",
     "color": "#3a2e1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "harlem-renaissance",
@@ -1620,7 +1938,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Harlem_Renaissance",
     "color": "#2e251b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-miss-america",
@@ -1636,7 +1957,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Miss_America",
     "color": "#443424",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ulysses-published",
@@ -1652,7 +1976,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ulysses_(novel)",
     "color": "#272018",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "surrealist-manifesto",
@@ -1668,7 +1995,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Surrealist_Manifesto",
     "color": "#302516",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-winter-olympics",
@@ -1684,7 +2014,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1924_Winter_Olympics",
     "color": "#baac8c",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "rhapsody-in-blue-premiere",
@@ -1700,7 +2033,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsody_in_Blue",
     "color": "#24211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ibm-founded",
@@ -1716,7 +2052,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/IBM",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "islamic-caliphate-abolished",
@@ -1732,7 +2071,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Abolition_of_the_Caliphate",
     "color": "#31291d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "great-gatsby",
@@ -1748,7 +2091,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Great_Gatsby",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-talking-film",
@@ -1764,7 +2110,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Jazz_Singer",
     "color": "#2c2820",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mickey-mouse-debut",
@@ -1780,7 +2129,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mickey_Mouse",
     "color": "#352b1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gandhi-salt-march",
@@ -1796,7 +2148,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_March",
     "color": "#3d2e20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "lindbergh-baby-kidnapping",
@@ -1812,7 +2167,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lindbergh_kidnapping",
     "color": "#31271c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "alcatraz-federal-prison",
@@ -1828,7 +2186,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alcatraz_Federal_Penitentiary",
     "color": "#291e1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "alcoholics-anonymous",
@@ -1844,7 +2205,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Alcoholics_Anonymous",
     "color": "#291f14",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-television-broadcast",
@@ -1860,7 +2224,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Public_broadcasting",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "guernica-painted",
@@ -1876,7 +2243,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)",
     "color": "#23211b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "wizard-of-oz",
@@ -1892,7 +2263,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz",
     "color": "#25201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gone-with-wind-film",
@@ -1908,7 +2282,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "pinocchio-premieres",
@@ -1924,7 +2301,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pinocchio_(1940_film)",
     "color": "#37362a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "citizen-kane",
@@ -1940,7 +2320,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Citizen_Kane",
     "color": "#262018",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "casablanca-released",
@@ -1956,7 +2339,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Casablanca_(film)",
     "color": "#b1a386",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "abstract-expressionism",
@@ -1972,7 +2358,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Abstract_expressionism",
     "color": "#4a3d30",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nascar-incorporated",
@@ -1988,7 +2377,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Safety_in_NASCAR",
     "color": "#26201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nineteen-eighty-four",
@@ -2004,7 +2396,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four",
     "color": "#29231c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "nbc-today-debuts",
@@ -2020,7 +2415,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Today_(American_TV_program)",
     "color": "#202125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "elvis-first-single",
@@ -2036,7 +2434,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/That's_All_Right",
     "color": "#1a222c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "lord-of-rings",
@@ -2052,7 +2453,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings",
     "color": "#332b2f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "disneyland-opens",
@@ -2068,7 +2472,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_Disneyland",
     "color": "#232120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "elvis-ed-sullivan",
@@ -2084,7 +2491,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ed_Sullivan_Show",
     "color": "#1f2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "west-side-story-opens",
@@ -2100,7 +2510,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/West_Side_Story",
     "color": "#202125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "beatles-form",
@@ -2116,7 +2529,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beatles",
     "color": "#202125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "catch-22-published",
@@ -2132,7 +2548,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Catch-22",
     "color": "#2a3234",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "warhol-soup-cans",
@@ -2148,7 +2567,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Campbell's_Soup_Cans",
     "color": "#202126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "march-on-washington",
@@ -2164,7 +2586,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/March_on_Washington",
     "color": "#2d3139",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "beatles-ed-sullivan",
@@ -2180,7 +2605,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beatles_on_The_Ed_Sullivan_Show",
     "color": "#222023",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "tokyo-olympics-1964",
@@ -2196,7 +2625,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2020_Summer_Olympics",
     "color": "#2f3a45",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "blue-ribbon-sports-founded",
@@ -2212,7 +2644,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pabst_Blue_Ribbon",
     "color": "#322c2b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dylan-goes-electric",
@@ -2228,7 +2663,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Electric_Dylan_controversy",
     "color": "#1b212b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "monterey-pop",
@@ -2244,7 +2682,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Monterey_International_Pop_Festival",
     "color": "#1b212b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "one-hundred-years-solitude",
@@ -2260,7 +2701,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude",
     "color": "#212122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Argentina",
+      "Mexico"
+    ]
   },
   {
     "name": "prague-spring-begins",
@@ -2276,7 +2721,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Spring",
     "color": "#787370",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia"
+    ]
   },
   {
     "name": "johnny-cash-folsom-prison",
@@ -2292,7 +2740,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/At_Folsom_Prison",
     "color": "#1d2225",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "woodstock",
@@ -2308,7 +2759,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Woodstock",
     "color": "#3f3f44",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "stonewall-riots",
@@ -2324,7 +2778,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stonewall_riots",
     "color": "#1e2224",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "sesame-street-debut",
@@ -2340,7 +2797,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sesame_Street_characters",
     "color": "#212026",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-earth-day",
@@ -2356,7 +2816,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Earth_Day",
     "color": "#202126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-email",
@@ -2372,7 +2835,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_email",
     "color": "#1a2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "roe-v-wade",
@@ -2388,7 +2854,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Roe_v._Wade",
     "color": "#33393e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "disco-era-begins",
@@ -2404,7 +2873,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Disco",
     "color": "#1e2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "punk-rock-emerges",
@@ -2420,7 +2892,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Garage_rock",
     "color": "#2a2d32",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "star-wars",
@@ -2436,7 +2912,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Changes_in_Star_Wars_re-releases",
     "color": "#1e2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "walkman-released",
@@ -2452,7 +2931,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Walkman",
     "color": "#272b2f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "hip-hop-emerges",
@@ -2468,7 +2950,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Southern_hip-hop",
     "color": "#1f202c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mtv-launches",
@@ -2484,7 +2969,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/MTV",
     "color": "#212123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "michael-jackson-thriller",
@@ -2500,7 +2988,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Thriller_(album)",
     "color": "#1e1f32",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "thriller-video",
@@ -2516,7 +3007,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_Jackson's_Thriller_(music_video)",
     "color": "#251f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "live-aid",
@@ -2532,7 +3026,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Live_Aid",
     "color": "#1e202c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "aids-quilt",
@@ -2548,7 +3046,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/NAMES_Project_AIDS_Memorial_Quilt",
     "color": "#1f202b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "seoul-olympics-1988",
@@ -2564,7 +3065,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1988_Summer_Olympics",
     "color": "#1e202c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "human-genome-project",
@@ -2580,7 +3084,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Human_Genome_Project",
     "color": "#1e2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nelson-mandela-freed",
@@ -2596,7 +3103,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Free_Nelson_Mandela",
     "color": "#3b3f4a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "nevermind-album",
@@ -2612,7 +3122,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nevermind",
     "color": "#212124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "pulp-fiction-released",
@@ -2628,7 +3141,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pulp_Fiction_(soundtrack)",
     "color": "#202126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "million-man-march",
@@ -2644,7 +3160,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Million_Man_March",
     "color": "#1b212c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dolly-sheep-cloned",
@@ -2660,7 +3179,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dolly_(sheep)",
     "color": "#1b2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "harry-potter-published",
@@ -2676,7 +3198,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Cursed_Child",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "google-founded",
@@ -2692,7 +3217,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Google",
     "color": "#1b2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "y2k",
@@ -2708,7 +3236,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Year_2000_problem",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "ipod-released",
@@ -2724,7 +3255,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/IPod",
     "color": "#19222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "world-cup-soccer-2002",
@@ -2740,7 +3274,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup",
     "color": "#19222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "South Korea"
+    ]
   },
   {
     "name": "facebook-launched",
@@ -2756,7 +3294,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Facebook",
     "color": "#232021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "youtube-founded",
@@ -2772,7 +3313,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_most-subscribed_YouTube_channels",
     "color": "#1d2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "twitter-launched",
@@ -2788,7 +3332,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Twitter",
     "color": "#28353b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "iphone-released",
@@ -2823,7 +3370,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2022_Winter_Olympics",
     "color": "#241f25",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "bitcoin-created",
@@ -2839,7 +3389,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bitcoin",
     "color": "#18222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "instagram-launched",
@@ -2855,7 +3408,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Instagram",
     "color": "#1c2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "black-lives-matter-founded",
@@ -2871,7 +3427,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Lives_Matter",
     "color": "#324052",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "marriage-equality-us",
@@ -2887,7 +3446,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Same-sex_marriage_in_tribal_nations_in_the_United_States",
     "color": "#1c2030",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "metoo-movement",
@@ -2903,7 +3465,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/MeToo_movement",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "chatgpt-released",
@@ -2919,7 +3485,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/ChatGPT",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "war-of-worlds-broadcast",
@@ -2935,7 +3504,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)",
     "color": "#26201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "code-ur-nammu",
@@ -2951,7 +3523,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Code_of_Ur-Nammu",
     "color": "#3c2c1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "shang-dynasty-established",
@@ -2967,7 +3542,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Shang_dynasty",
     "color": "#261f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "kingdom-kush-flourishes",
@@ -2983,7 +3561,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Kush",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Sudan"
+    ]
   },
   {
     "name": "exodus-biblical",
@@ -2999,7 +3581,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Exodus",
     "color": "#261f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "king-david-rules",
@@ -3015,7 +3600,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/David",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "chola-dynasty-expansion",
@@ -3032,7 +3621,11 @@
     "color": "#2e3633",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1070
+    "year_end": 1070,
+    "regions": [
+      "India",
+      "Malaysia"
+    ]
   },
   {
     "name": "timbuktu-learning-center",
@@ -3049,7 +3642,10 @@
     "color": "#24201f",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1591
+    "year_end": 1591,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "mansa-musa-pilgrimage",
@@ -3065,7 +3661,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mansa_Musa",
     "color": "#261f1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Mali",
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "songhai-empire",
@@ -3081,7 +3682,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Songhai_Empire",
     "color": "#301b11",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "peter-great-modernizes",
@@ -3098,7 +3702,13 @@
     "color": "#281e1c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1725
+    "year_end": 1725,
+    "regions": [
+      "Netherlands",
+      "Russia",
+      "United Kingdom",
+      "Europe"
+    ]
   },
   {
     "name": "british-slave-trade-abolished",
@@ -3114,7 +3724,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Slave_Trade_Act_1807",
     "color": "#242021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "daguerreotype-invented",
@@ -3130,7 +3743,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Daguerreotype",
     "color": "#23211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "ghana-independence",
@@ -3146,7 +3762,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ghana",
     "color": "#1c222a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ghana",
+      "United Kingdom"
+    ]
   },
   {
     "name": "akhenaten-religious-revolution",
@@ -3163,7 +3783,10 @@
     "color": "#281e1e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -1336
+    "year_end": -1336,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "death-tutankhamun",
@@ -3179,7 +3802,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tutankhamun",
     "color": "#271f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "trojan-war",
@@ -3195,7 +3821,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trojan_War",
     "color": "#271e24",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "phoenician-alphabet",
@@ -3211,7 +3842,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet",
     "color": "#242022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Lebanon"
+    ]
   },
   {
     "name": "draco-law-code",
@@ -3227,7 +3862,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Draco_(legislator)",
     "color": "#291f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "birth-buddha",
@@ -3243,7 +3881,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lumbini",
     "color": "#261f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nepal"
+    ]
   },
   {
     "name": "birth-confucius",
@@ -3259,7 +3900,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Confucius'_Birthday",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "birth-mencius",
@@ -3275,7 +3919,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mencius",
     "color": "#281e1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "qin-book-burning",
@@ -3291,7 +3938,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Burning_of_books_and_burying_of_scholars",
     "color": "#34201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "maccabean-revolt",
@@ -3307,7 +3957,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Maccabean_Revolt",
     "color": "#282324",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "god-emperor-golden-throne",
@@ -3323,7 +3977,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Throne",
     "color": "#202123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "reign-of-caligula",
@@ -3339,7 +3996,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Caligula",
     "color": "#2a1e1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "peter-paul-martyred",
@@ -3355,7 +4015,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Peter",
     "color": "#2c2119",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "book-of-revelation",
@@ -3371,7 +4035,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_Revelation",
     "color": "#281f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "synod-of-whitby",
@@ -3387,7 +4054,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "cluny-abbey-founded",
@@ -3403,7 +4073,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cluny_Abbey",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "christianization-kievan-rus",
@@ -3419,7 +4092,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus'",
     "color": "#25201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ukraine"
+    ]
   },
   {
     "name": "murder-thomas-becket",
@@ -3435,7 +4111,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Becket",
     "color": "#212124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "death-el-cid",
@@ -3451,7 +4130,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/El_Cid",
     "color": "#232120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "inquisition-established",
@@ -3467,7 +4149,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Papal_Inquisition_in_Spain",
     "color": "#271f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "papal-bull-unam-sanctam",
@@ -3483,7 +4169,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Unam_sanctam",
     "color": "#21211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "knights-templar-arrested",
@@ -3499,7 +4189,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trials_of_the_Knights_Templar",
     "color": "#21211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "avignon-papacy-begins",
@@ -3515,7 +4208,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pope",
     "color": "#1f2124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "avignon-papacy-ends",
@@ -3531,7 +4228,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Avignon_Papacy",
     "color": "#22211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "western-schism-begins",
@@ -3547,7 +4248,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Western_Schism",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "florence-baptistery-competition",
@@ -3563,7 +4268,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/North_Doors_of_the_Florence_Baptistery",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "council-of-constance",
@@ -3579,7 +4287,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Constance",
     "color": "#242020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "spanish-inquisition-begins",
@@ -3595,7 +4306,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Portuguese_Inquisition",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "diet-of-worms",
@@ -3611,7 +4325,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Diet_of_Worms",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "carthage-founded",
@@ -3627,7 +4344,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Carthage",
     "color": "#361f13",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Lebanon",
+      "Tunisia"
+    ]
   },
   {
     "name": "birth-socrates",
@@ -3643,7 +4364,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sócrates",
     "color": "#232020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "birth-hippocrates",
@@ -3659,7 +4383,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hippocrates",
     "color": "#271f1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "death-pericles",
@@ -3675,7 +4402,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pericles",
     "color": "#271f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "plato-writes-republic",
@@ -3691,7 +4421,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Plato",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "birth-alexander-great",
@@ -3707,7 +4440,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
     "color": "#25201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "aristotle-tutors-alexander",
@@ -3723,7 +4459,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Aristotle",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "death-cleopatra",
@@ -3739,7 +4478,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Cleopatra",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Italy"
+    ]
   },
   {
     "name": "ministry-jesus-begins",
@@ -3755,7 +4498,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Jesus",
     "color": "#291f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "great-persecution-christians",
@@ -3771,7 +4518,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
     "color": "#3f2b21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "julian-pagan-revival",
@@ -3787,7 +4538,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "pope-leo-meets-attila",
@@ -3803,7 +4558,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Leo_I",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "birth-muhammad",
@@ -3819,7 +4577,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad_in_Islam",
     "color": "#271f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "gregory-great-becomes-pope",
@@ -3835,7 +4596,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Gregory_I",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "augustine-arrives-england",
@@ -3851,7 +4615,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Confessions_(Augustine)",
     "color": "#1f2220",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "arabs-capture-carthage",
@@ -3867,7 +4635,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Carthage_(698)",
     "color": "#2e2227",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Syria",
+      "Tunisia"
+    ]
   },
   {
     "name": "harun-al-rashid-caliph",
@@ -3883,7 +4655,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "caliphate-cordoba-falls",
@@ -3899,7 +4674,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Timeline_of_the_Muslim_presence_in_the_Iberian_Peninsula",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "expulsion-jews-england",
@@ -3915,7 +4693,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Edict_of_Expulsion",
     "color": "#222218",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "flagellant-movement",
@@ -3932,7 +4713,10 @@
     "color": "#21211f",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1349
+    "year_end": 1349,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "birth-martin-luther",
@@ -3948,7 +4732,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_Luther's_Birth_House",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "expulsion-jews-spain",
@@ -3964,7 +4751,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Expulsion_of_Jews_from_Spain",
     "color": "#271f1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "utopia-published",
@@ -3980,7 +4770,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Utopia",
     "color": "#261f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "United Kingdom"
+    ]
   },
   {
     "name": "death-leonardo-da-vinci",
@@ -3996,7 +4790,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/The_Death_of_Leonardo_da_Vinci",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "dutch-iconoclasm",
@@ -4012,7 +4810,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Beeldenstorm",
     "color": "#2c1f15",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "France",
+      "Netherlands"
+    ]
   },
   {
     "name": "el-greco-arrives-spain",
@@ -4028,7 +4831,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/El_Greco",
     "color": "#232022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "death-shakespeare",
@@ -4044,7 +4850,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hamnet_Shakespeare",
     "color": "#271f1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "death-cervantes",
@@ -4060,7 +4869,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes",
     "color": "#261f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "descartes-discourse-method",
@@ -4076,7 +4888,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Discourse_on_the_Method",
     "color": "#261f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "death-oliver-cromwell",
@@ -4092,7 +4907,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Oliver_Cromwell",
     "color": "#222022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "spinoza-ethics-published",
@@ -4108,7 +4926,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spinoza's_Ethics",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "two-treatises-government",
@@ -4124,7 +4945,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Treatises_of_Government",
     "color": "#242020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "death-louis-xiv",
@@ -4140,7 +4964,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_XIV",
     "color": "#281f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "birth-napoleon",
@@ -4176,7 +5003,11 @@
     "color": "#26201d",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1789
+    "year_end": 1789,
+    "regions": [
+      "Switzerland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "burke-reflections-published",
@@ -4192,7 +5023,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Reflections_on_the_Revolution_in_France",
     "color": "#25201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "third-partition-poland",
@@ -4208,7 +5042,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Partition_of_Poland",
     "color": "#291e1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Poland"
+    ]
   },
   {
     "name": "birth-charles-darwin",
@@ -4224,7 +5061,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin–Wedgwood_family",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "death-napoleon",
@@ -4240,7 +5080,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Napoleon",
     "color": "#22211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Saint Helena"
+    ]
   },
   {
     "name": "christmas-carol-published",
@@ -4256,7 +5100,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Christmas_carol",
     "color": "#22211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "uncle-toms-cabin-published",
@@ -4272,7 +5119,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Uncle_Tom's_Cabin",
     "color": "#adadac",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "republican-party-founded",
@@ -4288,7 +5138,10 @@
     "image_height": 440,
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "das-kapital-published",
@@ -4304,7 +5157,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Kapital",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "queen-victoria-dies",
@@ -4320,7 +5177,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Queen_Victoria",
     "color": "#25201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "gandhi-non-cooperation-movement",
@@ -4337,7 +5197,10 @@
     "color": "#262019",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1922
+    "year_end": 1922,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "communist-party-china-founded",
@@ -4353,7 +5216,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Communist_Party",
     "color": "#24211a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "death-lenin",
@@ -4369,7 +5235,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Vladimir_Lenin",
     "color": "#25201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "mein-kampf-published",
@@ -4385,7 +5255,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mein_Kampf",
     "color": "#2f2217",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "churchill-iron-curtain-speech",
@@ -4401,7 +5274,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fulton_Speech",
     "color": "#2c231b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "un-partition-plan-palestine",
@@ -4417,7 +5293,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/United_Nations_Partition_Plan_for_Palestine",
     "color": "#2b2720",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine",
+      "United States"
+    ]
   },
   {
     "name": "apartheid-begins",
@@ -4433,7 +5314,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid",
     "color": "#25201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "mccarthyism-begins",
@@ -4449,7 +5333,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/McCarthyism",
     "color": "#222022",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "stalin-dies",
@@ -4465,7 +5352,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Joseph_Stalin",
     "color": "#1f2126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "mccarthy-hearings",
@@ -4481,7 +5372,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Army–McCarthy_hearings",
     "color": "#37363e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "silent-spring-published",
@@ -4497,7 +5391,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Silent_Spring",
     "color": "#424245",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-heart-transplant",
@@ -4513,7 +5410,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Heart_transplantation",
     "color": "#1c212a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "death-mao-zedong",
@@ -4529,7 +5429,10 @@
     "image_height": 440,
     "color": "#2b2a2f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "year-three-popes",
@@ -4545,7 +5448,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_three_popes",
     "color": "#adadad",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "first-artificial-heart",
@@ -4561,7 +5468,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Artificial_heart",
     "color": "#241f25",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ayatollah-khomeini-dies",
@@ -4577,7 +5487,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ruhollah_Khomeini",
     "color": "#281d29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "rio-earth-summit",
@@ -4593,7 +5506,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Earth_Summit",
     "color": "#313a40",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Brazil"
+    ]
   },
   {
     "name": "iran-green-movement",
@@ -4610,7 +5526,10 @@
     "color": "#2a3632",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 2010
+    "year_end": 2010,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "death-steve-jobs",
@@ -4626,7 +5545,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Steve_Jobs",
     "color": "#1a212e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "pope-benedict-resigns",
@@ -4642,7 +5564,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Resignation_of_Pope_Benedict_XVI",
     "color": "#1e212b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "queen-elizabeth-ii-dies",
@@ -4658,7 +5584,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Elizabeth_II",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "aboriginal-australian",
@@ -4673,7 +5602,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -45000
+    "year_end": -45000,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "indus-valley-civilization",
@@ -4688,7 +5620,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -1900
+    "year_end": -1900,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "aboriginal-rock-art",
@@ -4702,7 +5638,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "aboriginal-songlines-mapping",
@@ -4716,7 +5655,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "aboriginal-uluru-site",
@@ -4730,7 +5672,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "lapita-culture-expansion",
@@ -4745,7 +5690,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -500
+    "year_end": -500,
+    "regions": [
+      "Oceania"
+    ]
   },
   {
     "name": "aboriginal-didgeridoo-ceremonial",
@@ -4759,7 +5707,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "ovid-metamorphoses",
@@ -4773,7 +5724,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "livy-ab-urbe-condita",
@@ -4787,7 +5741,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "virgil-aeneid-composition",
@@ -4801,7 +5758,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "augustan-age-begins",
@@ -4815,7 +5775,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "paul-apostle-missions",
@@ -4830,7 +5793,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 57
+    "year_end": 57,
+    "regions": [
+      "Cyprus",
+      "Greece",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "council-of-jerusalem",
@@ -4844,7 +5813,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "thomas-apostle-india",
@@ -4858,7 +5831,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "lucan-pharsalia",
@@ -4872,7 +5848,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "tacitus-histories-written",
@@ -4886,7 +5865,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "ancestral-puebloan-development",
@@ -4900,7 +5882,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "roman-fresco-paintings",
@@ -4914,7 +5899,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "kushana-buddhism",
@@ -4929,7 +5917,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 150
+    "year_end": 150,
+    "regions": [
+      "Afghanistan",
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "marcus-aurelius-meditations",
@@ -4943,7 +5936,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Italy",
+      "Slovakia"
+    ]
   },
   {
     "name": "apuleius-golden-ass",
@@ -4957,7 +5955,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Tunisia"
+    ]
   },
   {
     "name": "library-pergamum",
@@ -4971,7 +5972,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "ajanta-caves",
@@ -4985,7 +5990,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "nazca-lines",
@@ -5000,7 +6008,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 500
+    "year_end": 500,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "buddhism-spreads-central-asia",
@@ -5014,7 +6025,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "India"
+    ]
   },
   {
     "name": "mogollon-culture-agriculture",
@@ -5028,7 +6043,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mahabharata-complete",
@@ -5042,7 +6060,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "ramayana-classic-version",
@@ -5056,7 +6077,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "silk-road-textile-exchange",
@@ -5090,7 +6114,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "cyprian-bishop-carthage",
@@ -5104,7 +6131,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Tunisia"
+    ]
   },
   {
     "name": "mayan-written-calendar",
@@ -5118,7 +6148,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "hopewell-mound-group",
@@ -5132,7 +6166,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "greek-mosaic-tradition",
@@ -5146,7 +6183,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "donatist-controversy",
@@ -5160,7 +6200,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Tunisia"
+    ]
   },
   {
     "name": "constantine-conversion",
@@ -5174,7 +6217,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "arianism-controversy",
@@ -5188,7 +6234,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "council-of-antioch",
@@ -5202,7 +6251,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "alexander-spreading-hellenism",
@@ -5217,7 +6270,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -323
+    "year_end": -323,
+    "regions": [
+      "Greece",
+      "Middle East & North Africa",
+      "North & Central Asia",
+      "South Asia"
+    ]
   },
   {
     "name": "aksumite-christianity",
@@ -5231,7 +6290,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Eritrea",
+      "Ethiopia"
+    ]
   },
   {
     "name": "wang-xifeng-calligraphy",
@@ -5245,7 +6308,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "moche-portrait-pottery",
@@ -5259,7 +6325,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "legalist-philosophy-qi",
@@ -5273,7 +6342,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "theodosius-christianity-official",
@@ -5287,7 +6359,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "plato-founds-academy",
@@ -5301,7 +6376,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "cassian-monasticism",
@@ -5315,7 +6393,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "moche-civilization",
@@ -5330,7 +6411,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 600
+    "year_end": 600,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "gupta-golden-age",
@@ -5344,7 +6428,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "maya-writing-system",
@@ -5358,7 +6445,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "nestorian-missionaries-asia",
@@ -5372,7 +6463,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Iran",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "zoroastrian-avesta",
@@ -5387,7 +6483,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 600
+    "year_end": 600,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "kalidasa-shakuntala",
@@ -5401,7 +6500,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "kalidasa-drama",
@@ -5415,7 +6517,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "scythian-mound-burials",
@@ -5429,7 +6534,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "pelagian-controversy",
@@ -5444,7 +6554,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 418
+    "year_end": 418,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "euripides-medea",
@@ -5458,7 +6572,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "sophocles-oedipus",
@@ -5472,7 +6589,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "nestorian-schism",
@@ -5486,7 +6606,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "saint-patrick-ireland",
@@ -5500,7 +6624,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "democritus-atomism",
@@ -5514,7 +6642,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "aristophanes-comedy",
@@ -5529,7 +6660,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -386
+    "year_end": -386,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "bhartrihari-poetry",
@@ -5543,7 +6677,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "nasca-settlement-cahuachi",
@@ -5558,7 +6695,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 500
+    "year_end": 500,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "aeschylus-tragedy-origins",
@@ -5572,7 +6712,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "ancestral-dorset",
@@ -5587,7 +6730,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ancestral-dorset_oaywhi?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1350
+    "year_end": 1350,
+    "regions": [
+      "Canada",
+      "Greenland"
+    ]
   },
   {
     "name": "nok-civilization-nigeria",
@@ -5601,7 +6748,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "takshashila-university-scholars",
@@ -5616,7 +6766,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 470
+    "year_end": 470,
+    "regions": [
+      "Pakistan"
+    ]
   },
   {
     "name": "boethius-logic-translation",
@@ -5630,7 +6783,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "bamiyan-buddha-colossal",
@@ -5644,7 +6800,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan"
+    ]
   },
   {
     "name": "adena-mound-burials",
@@ -5659,7 +6818,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 100
+    "year_end": 100,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "boethius-consolation",
@@ -5673,7 +6835,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "greek-vase-painting-golden-age",
@@ -5688,7 +6853,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -400
+    "year_end": -400,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "dunhuang-mogao-caves",
@@ -5703,7 +6871,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1368
+    "year_end": 1368,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "columba-scotland-monasticism",
@@ -5717,7 +6888,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "irish-monasticism-height",
@@ -5731,7 +6906,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland"
+    ]
   },
   {
     "name": "maya-classical-period",
@@ -5746,7 +6924,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 900
+    "year_end": 900,
+    "regions": [
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "moche-civilization-peru",
@@ -5761,7 +6943,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 800
+    "year_end": 800,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "fremont-culture",
@@ -5776,7 +6961,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1301
+    "year_end": 1301,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "byzantine-mosaic-tradition",
@@ -5790,7 +6978,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "irish-monastery-art",
@@ -5805,7 +6998,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 900
+    "year_end": 900,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "nazca-pottery-style",
@@ -5820,7 +7017,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 750
+    "year_end": 750,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "goguryeo-murals-tombs",
@@ -5835,7 +7035,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 668
+    "year_end": 668,
+    "regions": [
+      "China",
+      "North Korea"
+    ]
   },
   {
     "name": "spread-of-islam-arabian-peninsula",
@@ -5849,7 +7053,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "samarkand-zoroastrian-temple",
@@ -5863,7 +7070,10 @@
     "image_height": 440,
     "color": "#4d2115",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "hejira-prophet-muhammad",
@@ -5877,7 +7087,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "sutton-hoo-burial",
@@ -5891,7 +7104,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "isidore-seville-encyclopedia",
@@ -5905,7 +7121,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "sappho-poetry",
@@ -5919,7 +7138,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "durrow-gospel-manuscript",
@@ -5933,7 +7155,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "umayyad-mosaics-art",
@@ -5948,7 +7174,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 715
+    "year_end": 715,
+    "regions": [
+      "Israel",
+      "Palestine",
+      "Syria"
+    ]
   },
   {
     "name": "chavin-culture",
@@ -5963,7 +7194,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -250
+    "year_end": -250,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "tang-poetry-golden-age",
@@ -5978,7 +7212,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 765
+    "year_end": 765,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "tang-luoyang-capital",
@@ -5992,7 +7229,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "islamic-calligraphy-tradition",
@@ -6006,7 +7246,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "lindisfarne-gospels",
@@ -6020,7 +7263,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "anglo-saxon-manuscript-art",
@@ -6034,7 +7280,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "beowulf-composition",
@@ -6048,7 +7297,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "byzantine-image-dispute",
@@ -6063,7 +7315,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 842
+    "year_end": 842,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "bede-ecclesiastical-history",
@@ -6077,7 +7333,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "copan-ruler-18-rabbit",
@@ -6092,7 +7351,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 738
+    "year_end": 738,
+    "regions": [
+      "Honduras"
+    ]
   },
   {
     "name": "tang-cosmopolitan-cities",
@@ -6106,7 +7368,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "maya-cities-peak",
@@ -6120,7 +7385,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belize",
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "seokguram-grotto",
@@ -6134,7 +7404,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "archaic-period-greece",
@@ -6148,7 +7421,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "mayan-classic-period",
@@ -6163,7 +7439,12 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 900
+    "year_end": 900,
+    "regions": [
+      "Guatemala",
+      "Honduras",
+      "Mexico"
+    ]
   },
   {
     "name": "adena-culture",
@@ -6178,7 +7459,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 100
+    "year_end": 100,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mon-buddhism",
@@ -6192,7 +7476,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Myanmar",
+      "Thailand"
+    ]
   },
   {
     "name": "homer-iliad-odyssey",
@@ -6206,7 +7494,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "byzantine-icon-painting",
@@ -6220,7 +7511,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "japanese-calligraphy-art",
@@ -6234,7 +7529,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "java-temple-sculpture",
@@ -6249,7 +7547,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 930
+    "year_end": 930,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "la-venta-olmec",
@@ -6263,7 +7564,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "bayt-al-hikma",
@@ -6277,7 +7581,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "arabian-nights-codification",
@@ -6291,7 +7598,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "gregorian-chant-codified",
@@ -6305,7 +7615,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "split-sunni-shia-islam",
@@ -6319,7 +7633,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/split-sunni-shia-islam_jzizif?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "igbo-ukwu-bronzes",
@@ -6333,7 +7650,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "yoruba-ife-kingdom",
@@ -6348,7 +7668,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1400
+    "year_end": 1400,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "organum-medieval-polyphony",
@@ -6362,7 +7685,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "monastic-scriptoriums",
@@ -6376,7 +7702,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "bukhara-samanid-scholars",
@@ -6391,7 +7721,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 999
+    "year_end": 999,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "constantine-vii-purple-porphyrogenitus",
@@ -6406,7 +7739,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 959
+    "year_end": 959,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "macedonian-renaissance-byzant",
@@ -6421,7 +7758,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1056
+    "year_end": 1056,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "chinese-landscape-painting",
@@ -6435,7 +7776,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "heian-aesthetic-culture",
@@ -6449,7 +7793,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "fatimid-al-azhar-mosque",
@@ -6463,7 +7810,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "song-neo-confucianism",
@@ -6477,7 +7827,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "heian-period-cultural-peak",
@@ -6491,7 +7844,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "vedic-brahmanism",
@@ -6505,7 +7861,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "sei-shonagon-pillow-book",
@@ -6519,7 +7879,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "islamic-bookbinding",
@@ -6533,7 +7896,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "confucian-printing",
@@ -6548,7 +7914,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 953
+    "year_end": 953,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "murasaki-shikibu-genji",
@@ -6562,7 +7931,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "heian-women-literature",
@@ -6576,7 +7948,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "mi-fu-landscape-art",
@@ -6590,7 +7965,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "madrasa-education-flourishes",
@@ -6604,7 +7982,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "su-shi-literati-painting",
@@ -6618,7 +8000,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "dom-university-bologna",
@@ -6632,7 +8017,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "al-ghazali-philosophy",
@@ -6646,7 +8034,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-ghazali-philosophy_ephv7k?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "dom-university-oxford",
@@ -6660,7 +8051,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "mississippian-culture",
@@ -6675,7 +8069,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1200
+    "year_end": 1200,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ancestral-puebloans",
@@ -6689,7 +8086,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "champa-hindu-culture",
@@ -6703,7 +8103,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Vietnam"
+    ]
   },
   {
     "name": "mixtec-codices",
@@ -6717,7 +8120,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "cathedral-school-emergence",
@@ -6731,7 +8137,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "troubadour-tradition",
@@ -6745,7 +8154,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "tepeyac-sanctuary",
@@ -6759,7 +8171,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "cistercian-order",
@@ -6774,7 +8189,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1153
+    "year_end": 1153,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "scholasticism-development",
@@ -6788,7 +8206,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "cathars-heresy",
@@ -6803,7 +8224,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cathars-heresy_e4mlbm?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1244
+    "year_end": 1244,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "dom-university-paris",
@@ -6817,7 +8241,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "averroes-aristotle-commentary",
@@ -6831,7 +8258,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "goryeo-celadon-pottery",
@@ -6845,7 +8275,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "toledo-translation-movement",
@@ -6860,7 +8293,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1284
+    "year_end": 1284,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "minnesinger-tradition",
@@ -6874,7 +8310,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "seljuk-tilework",
@@ -6888,7 +8327,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "waldensian-movement",
@@ -6902,7 +8346,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "ma-yuan-painting-style",
@@ -6916,7 +8363,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "zagwe-rock-churches",
@@ -6931,7 +8381,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1221
+    "year_end": 1221,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "dogon-settlement",
@@ -6945,7 +8398,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "oxford-university-influence",
@@ -6959,7 +8415,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "arabic-numerals-adoption",
@@ -6973,7 +8432,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "olmec-stone-heads",
@@ -6988,7 +8450,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -400
+    "year_end": -400,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "sepik-river-art",
@@ -7002,7 +8467,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Papua New Guinea"
+    ]
   },
   {
     "name": "vedic-civilization-vedas",
@@ -7016,7 +8484,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "bagobo-culture",
@@ -7030,7 +8502,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Philippines"
+    ]
   },
   {
     "name": "toraja-culture",
@@ -7044,7 +8519,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "zen-buddhism-development",
@@ -7058,7 +8536,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Japan"
+    ]
   },
   {
     "name": "university-paris-founding",
@@ -7072,7 +8554,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "translation-movement-sicily",
@@ -7086,7 +8571,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "epic-gilgamesh-written",
@@ -7100,7 +8588,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "egyptian-wall-painting-tradition",
@@ -7114,7 +8605,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "arabic-manuscript-illumination",
@@ -7128,7 +8622,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt",
+      "Iraq",
+      "Spain"
+    ]
   },
   {
     "name": "al-jazari-mechanical-art",
@@ -7142,7 +8641,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "damascene-silk-weaving",
@@ -7156,7 +8659,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Syria"
+    ]
   },
   {
     "name": "san-lorenzo-olmec",
@@ -7171,7 +8677,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -900
+    "year_end": -900,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "samarkand-conquerors-city",
@@ -7185,7 +8694,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "university-expansion-europe",
@@ -7199,7 +8711,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "cambridge-university-founded",
@@ -7213,7 +8728,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "salamanca-university-founded",
@@ -7227,7 +8745,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "padua-university-founded",
@@ -7241,7 +8762,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "goryeo-tripitaka",
@@ -7256,7 +8780,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1251
+    "year_end": 1251,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "mon-khmer-integration",
@@ -7270,7 +8797,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cambodia",
+      "Myanmar",
+      "Thailand"
+    ]
   },
   {
     "name": "university-paris-sorbonne",
@@ -7284,7 +8816,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "palaiologan-revival",
@@ -7298,7 +8833,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "thomas-aquinas-synthesis",
@@ -7312,7 +8852,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "sukhothai-thai-script",
@@ -7326,7 +8869,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Thailand"
+    ]
   },
   {
     "name": "sukhothai-pottery",
@@ -7340,7 +8886,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Thailand"
+    ]
   },
   {
     "name": "ancestral-puebloan-migration",
@@ -7355,7 +8904,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1300
+    "year_end": 1300,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "duns-scotus-philosophy",
@@ -7369,7 +8921,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "egyptian-sculpture-tradition",
@@ -7383,7 +8940,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "persian-miniature-tradition",
@@ -7397,7 +8957,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "giotto-fresco-revolution",
@@ -7411,7 +8975,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "duccio-painting-innovation",
@@ -7425,7 +8992,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "timbuktu-university-development",
@@ -7439,7 +9009,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "william-of-ockham-logic",
@@ -7453,7 +9026,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "simone-martini-painting",
@@ -7467,7 +9043,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "petrarch-humanism",
@@ -7481,7 +9060,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "italian-renaissance-begins",
@@ -7495,7 +9078,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "bukhara-cultural-center",
@@ -7509,7 +9095,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "sumptuary-laws-fashion",
@@ -7523,7 +9112,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "boccaccio-decameron",
@@ -7537,7 +9131,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "ashikaga-cultural-patronage",
@@ -7551,7 +9148,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashikaga-cultural-patronage_fuv93w?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "samarkand-library-school",
@@ -7565,7 +9165,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "lollards-wycliffe",
@@ -7579,7 +9182,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "noh-theater-emergence",
@@ -7593,7 +9199,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "heidelberg-university",
@@ -7607,7 +9216,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "samarkand-cultural-center",
@@ -7621,7 +9233,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Uzbekistan"
+    ]
   },
   {
     "name": "benin-edo-kingdom",
@@ -7635,7 +9250,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "muisca-gold-culture",
@@ -7649,7 +9267,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Colombia"
+    ]
   },
   {
     "name": "muromachi-zen-ink-painting",
@@ -7663,7 +9284,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "mycenaean-warrior-art",
@@ -7678,7 +9302,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -1200
+    "year_end": -1200,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "zeami-noh-dramatist",
@@ -7692,7 +9319,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "javanese-court-dance",
@@ -7706,7 +9336,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "benin-bronze-casting-peak",
@@ -7720,7 +9353,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "wolof-teranga-culture",
@@ -7734,7 +9370,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Senegal"
+    ]
   },
   {
     "name": "taino-cohoba-ceremony",
@@ -7748,7 +9387,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "North America"
+    ]
   },
   {
     "name": "brunelleschi-perspective",
@@ -7762,7 +9404,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "jan-hus-execution",
@@ -7776,7 +9421,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Czechia",
+      "Germany"
+    ]
   },
   {
     "name": "hussite-movement",
@@ -7791,7 +9440,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1436
+    "year_end": 1436,
+    "regions": [
+      "Czechia"
+    ]
   },
   {
     "name": "timurid-renaissance",
@@ -7806,7 +9458,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1507
+    "year_end": 1507,
+    "regions": [
+      "Afghanistan",
+      "Uzbekistan"
+    ]
   },
   {
     "name": "masaccio-fresco-innovation",
@@ -7820,7 +9476,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "donatello-bronze-sculpture",
@@ -7834,7 +9493,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "printing-press-revolution",
@@ -7865,7 +9527,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "incunabula-books",
@@ -7880,7 +9545,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1500
+    "year_end": 1500,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "timbuktu-university",
@@ -7894,7 +9562,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "mamluk-cairo-libraries",
@@ -7908,7 +9579,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "filippo-lippi-painting",
@@ -7922,7 +9596,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "harpsichord-invented",
@@ -7936,7 +9613,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "court-ballet-origins",
@@ -7950,7 +9631,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "songhai-university-timbuktu",
@@ -7964,7 +9648,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "byzantine-scholars-flee",
@@ -7978,7 +9665,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "sikh-movement-begins",
@@ -7992,7 +9684,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "bihzad-persian-painting",
@@ -8006,7 +9702,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Afghanistan"
+    ]
   },
   {
     "name": "perugino-christ-keys",
@@ -8020,7 +9719,11 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "kongo-christianity-adoption",
@@ -8034,7 +9737,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Angola",
+      "Portugal"
+    ]
   },
   {
     "name": "leonardo-da-vinci-art",
@@ -8048,7 +9755,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "vedic-period",
@@ -8062,7 +9772,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "vijayanagara-flowering",
@@ -8077,7 +9791,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1529
+    "year_end": 1529,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "joseon-confucian-renaissance",
@@ -8091,7 +9808,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "ayutthaya-golden-age",
@@ -8105,7 +9825,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Thailand"
+    ]
   },
   {
     "name": "benin-art-renaissance",
@@ -8120,7 +9843,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1550
+    "year_end": 1550,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "joseon-hahoetal-masks",
@@ -8134,7 +9860,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "songhai-scholars",
@@ -8149,7 +9878,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1591
+    "year_end": 1591,
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "raphael-school-athens",
@@ -8163,7 +9895,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "michelangelo-sistine-chapel",
@@ -8196,7 +9932,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "reformation-anabaptists",
@@ -8210,7 +9949,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reformation-anabaptists_hwr7qk?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "english-reformation-henry",
@@ -8224,7 +9966,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "mannerism-art-style",
@@ -8238,7 +9983,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "rabelais-gargantua",
@@ -8252,7 +10000,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "jesuits-founded",
@@ -8266,7 +10017,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "titian-venetian-color",
@@ -8280,7 +10034,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "commedia-dell-arte-emerges",
@@ -8294,7 +10051,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "ottoman-miniature-art",
@@ -8308,7 +10068,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "spanish-inquisition-intensified",
@@ -8322,7 +10086,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "violin-developed",
@@ -8336,7 +10103,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "persian-carpet-tradition",
@@ -8350,7 +10120,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "venetian-lace-tradition",
@@ -8364,7 +10137,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "kongo-christianization-depth",
@@ -8378,7 +10154,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Angola",
+      "Portugal"
+    ]
   },
   {
     "name": "coffee-house-emergence",
@@ -8392,7 +10172,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "scots-reformation-movement",
@@ -8406,7 +10190,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "goa-inquisition",
@@ -8420,7 +10207,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Portugal"
+    ]
   },
   {
     "name": "safavid-golden-age",
@@ -8434,7 +10225,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "jesuit-missions-asia",
@@ -8448,7 +10242,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "India",
+      "Japan",
+      "Macau"
+    ]
   },
   {
     "name": "heresy-trials-witch-hunts",
@@ -8462,7 +10262,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "montaigne-essays",
@@ -8476,7 +10279,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "tea-ceremony-codification",
@@ -8490,7 +10296,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "ballet-de-cour-france",
@@ -8504,7 +10313,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "akbar-din-ilahi",
@@ -8518,7 +10330,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "chocolate-introduced-europe",
@@ -8532,7 +10347,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Spain"
+    ]
   },
   {
     "name": "christopher-marlowe",
@@ -8547,7 +10366,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1593
+    "year_end": 1593,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "spenser-faerie-queene",
@@ -8561,7 +10383,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "shakespeare-early-plays",
@@ -8575,7 +10401,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "opera-emerges-florence",
@@ -8589,7 +10418,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "safavid-textile-arts",
@@ -8603,7 +10435,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "minoan-frescoes",
@@ -8618,7 +10453,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": -1450
+    "year_end": -1450,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "kabuki-theater-begins",
@@ -8632,7 +10470,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "shakespeare-hamlet-othello",
@@ -8646,7 +10487,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "kathak-classical-dance",
@@ -8660,7 +10504,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "coffee-houses-cairo",
@@ -8674,7 +10521,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "kuba-royal-masks",
@@ -8688,7 +10538,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Democratic Republic of the Congo"
+    ]
   },
   {
     "name": "cervantes-don-quixote",
@@ -8702,7 +10555,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "monteverdi-orfeo",
@@ -8716,7 +10572,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "shakespeare-sonnets",
@@ -8730,7 +10589,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "safavid-miniature-painting",
@@ -8744,7 +10606,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "port-royal-convent",
@@ -8758,7 +10623,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "spanish-baroque-drama",
@@ -8772,7 +10640,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "corneille-le-cid",
@@ -8786,7 +10657,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "jansenism-controversy",
@@ -8800,7 +10674,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "France"
+    ]
   },
   {
     "name": "enlightenment-age-begins",
@@ -8814,7 +10692,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "kuba-raffia-textiles",
@@ -8828,7 +10710,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Democratic Republic of the Congo"
+    ]
   },
   {
     "name": "quaker-founding",
@@ -8842,7 +10727,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "baroque-period-peak",
@@ -8856,7 +10744,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Italy",
+      "Netherlands"
+    ]
   },
   {
     "name": "kabuki-women-actors",
@@ -8870,7 +10763,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "moronobu-woodblock-pioneer",
@@ -8884,7 +10780,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "hobbes-leviathan",
@@ -8898,7 +10797,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "louis-xiv-ballet",
@@ -8912,7 +10815,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "moliere-comedies",
@@ -8926,7 +10832,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "racine-theatre",
@@ -8940,7 +10849,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "milton-paradise-lost",
@@ -8954,7 +10866,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "aurangzeb-orthodox-policies",
@@ -8968,7 +10883,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "ukiyo-e-art-development",
@@ -8983,7 +10901,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1868
+    "year_end": 1868,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "pietism-germany",
@@ -8997,7 +10918,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "baroque-music-development",
@@ -9011,7 +10935,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "haiku-poetry-tradition",
@@ -9025,7 +10953,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "genroku-era-culture",
@@ -9040,7 +10971,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genroku-era-culture_hcw926?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1704
+    "year_end": 1704,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "tokugawa-edo-period-culture",
@@ -9055,7 +10989,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1868
+    "year_end": 1868,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "ethiopian-gondar-cultural-center",
@@ -9069,7 +11006,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "asante-golden-stool",
@@ -9083,7 +11023,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ghana"
+    ]
   },
   {
     "name": "handel-baroque-music",
@@ -9097,7 +11040,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "paris-salon-culture",
@@ -9111,7 +11057,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "tulip-era-ottoman",
@@ -9126,7 +11075,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1730
+    "year_end": 1730,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "bach-welltempered-clavier",
@@ -9140,7 +11093,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "vivaldi-four-seasons",
@@ -9154,7 +11110,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "french-enlightenment-peak",
@@ -9169,7 +11128,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1789
+    "year_end": 1789,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "voltaire-major-works",
@@ -9183,7 +11145,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "muhendishane-school",
@@ -9197,7 +11163,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "montesquieu-spirit-laws",
@@ -9211,7 +11181,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Switzerland"
+    ]
   },
   {
     "name": "bach-mass-in-b-minor",
@@ -9225,7 +11199,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "ukiyo-woodblock-prints",
@@ -9239,7 +11216,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "encyclopedie-diderot",
@@ -9253,7 +11233,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "haydn-symphonies",
@@ -9268,7 +11251,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1795
+    "year_end": 1795,
+    "regions": [
+      "Austria",
+      "Hungary"
+    ]
   },
   {
     "name": "maori-european-encounters",
@@ -9282,7 +11269,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand",
+      "United Kingdom"
+    ]
   },
   {
     "name": "kant-critique-pure-reason",
@@ -9296,7 +11287,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "schiller-major-plays",
@@ -9310,7 +11305,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "civil-constitution-clergy",
@@ -9324,7 +11322,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "haida-totem-poles",
@@ -9338,7 +11339,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "goethe-faust-publication",
@@ -9352,7 +11356,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "hokusai-great-wave",
@@ -9366,7 +11373,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "hiroshige-landscape-prints",
@@ -9380,7 +11390,10 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "bharatanatyam-tradition",
@@ -9394,7 +11407,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "roaring-twenties-era",
@@ -9409,7 +11425,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1929
+    "year_end": 1929,
+    "regions": [
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "kutai-yupa-inscriptions",
@@ -9423,6 +11443,9 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kutai-yupa-inscriptions_g1q61c?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   }
 ]

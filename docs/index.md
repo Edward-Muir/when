@@ -53,8 +53,9 @@ original per-session write-ups if you need the blow-by-blow.
 - [regions/](regions/index.md) — region tags (where an event happened, on today's map): why
   tags are readable names rather than codes, why Global sits beside focal places instead of
   excluding them, the eleven macro-regions and the transcontinental rule, the map-then-apply
-  pipeline, and the designed-but-unbuilt Custom filter and challenge-code word. Its
-  [tagging-spec.md](regions/tagging-spec.md) holds the tagging rules and the 61-event gold set
+  pipeline, the Custom filter and its optional 7th challenge-code word, and how the 5,874-card
+  sweep ran. Its [tagging-spec.md](regions/tagging-spec.md) holds the tagging rules and the
+  61-event gold set
 - [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
   the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
   measured symptoms, and a sequenced fix list

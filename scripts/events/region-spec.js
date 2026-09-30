@@ -51,12 +51,20 @@ function regionSetOf(tags) {
  * dropped ("Germany" is already in Europe), countries alphabetically, then regions in taxonomy
  * order. The apply script writes this form and the corpus test insists on it, so a writer
  * never has to think about order and two batches that agree produce the same bytes.
+ *
+ * A region that names a transcontinental country's side is never dropped, even when another
+ * country implies it: in ["Syria", "Turkey", "Middle East & North Africa"] the region is what
+ * says which Turkey, and without it the stored form fails the transcontinental rule.
  */
 function canonicalRegions(tags) {
   const unique = [...new Set(tags)];
   const implied = new Set();
   for (const tag of unique) {
     if (isCountry(tag) && COUNTRIES[tag].region) implied.add(COUNTRIES[tag].region);
+  }
+  for (const tag of unique) {
+    const spans = isCountry(tag) && COUNTRIES[tag].spans;
+    if (spans) spans.forEach((side) => implied.delete(side));
   }
   const countries = unique.filter(isCountry).sort((a, b) => a.localeCompare(b, 'en'));
   const regions = REGIONS.filter((r) => unique.includes(r) && !implied.has(r));

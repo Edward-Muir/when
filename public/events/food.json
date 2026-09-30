@@ -12,7 +12,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cooking-with-fire_cgc2n0?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -780000
+    "year_end": -780000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "wild-grain-harvesting",
@@ -27,7 +30,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wild-grain-harvesting_pranb4?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -11700
+    "year_end": -11700,
+    "regions": [
+      "Israel"
+    ]
   },
   {
     "name": "barley-domesticated",
@@ -42,7 +48,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barley-domesticated_sj5krt?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -7500
+    "year_end": -7500,
+    "regions": [
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "first-beer-brewed",
@@ -57,7 +66,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-beer-brewed_vm7r7s?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -7000
+    "year_end": -7000,
+    "regions": [
+      "China",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "goat-milk-dairying",
@@ -72,7 +85,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goat-milk-dairying_yyzo2z?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -6000
+    "year_end": -6000,
+    "regions": [
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "chickens-domesticated",
@@ -86,7 +102,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chickens-domesticated_mpcrbg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Thailand"
+    ]
   },
   {
     "name": "first-wine-making",
@@ -101,7 +120,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-wine-making_vdbstu?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -5800
+    "year_end": -5800,
+    "regions": [
+      "Georgia",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "olive-cultivation-begins",
@@ -116,7 +139,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/olive-cultivation-begins_zbsllg?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -3000
+    "year_end": -3000,
+    "regions": [
+      "Europe",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "honey-collecting-depicted",
@@ -131,7 +158,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/honey-collecting-depicted_sgjjez?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -6000
+    "year_end": -6000,
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "first-sugarcane-cultivation",
@@ -146,7 +176,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-sugarcane-cultivation_paeed9?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -5000
+    "year_end": -5000,
+    "regions": [
+      "Papua New Guinea"
+    ]
   },
   {
     "name": "salt-evaporation-ponds",
@@ -161,7 +194,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/salt-evaporation-ponds_fwrxyb?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -5500
+    "year_end": -5500,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "bananas-cultivated",
@@ -176,7 +212,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bananas-cultivated_bviweg?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -4450
+    "year_end": -4450,
+    "regions": [
+      "Papua New Guinea"
+    ]
   },
   {
     "name": "egyptian-leavened-bread",
@@ -190,7 +229,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-leavened-bread_vs54x7?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "first-recipes-written",
@@ -204,7 +246,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-recipes-written_ow7ium?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "tea-discovered-china",
@@ -218,7 +263,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tea-discovered-china_qsjy8i?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "soybean-domesticated",
@@ -232,7 +280,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soybean-domesticated_pyv5fd?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "chocolate-in-mesoamerica",
@@ -246,7 +297,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chocolate-in-mesoamerica_vdqvyv?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "North America"
+    ]
   },
   {
     "name": "garum-fish-sauce",
@@ -260,7 +314,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/garum-fish-sauce_i9oibe?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Spain",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "first-cookbook-apicius",
@@ -274,7 +333,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cookbook-apicius_ia2a0e?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "vineyards-spread-rome",
@@ -288,7 +350,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vineyards-spread-rome_jxyv7a?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy",
+      "Spain",
+      "United Kingdom"
+    ]
   },
   {
     "name": "watermelon-cultivated-egypt",
@@ -302,7 +370,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/watermelon-cultivated-egypt_urrhsl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "rice-paddy-cultivation",
@@ -317,7 +388,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rice-paddy-cultivation_zsh7uf?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2350
+    "year_end": -2350,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "spice-trade-incense-route",
@@ -331,7 +405,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spice-trade-incense-route_jc6o9i?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Middle East & North Africa",
+      "South Asia",
+      "Southeast Asia"
+    ]
   },
   {
     "name": "noodles-in-china",
@@ -345,7 +424,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/noodles-in-china_lqiztt?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "first-cabbage-cultivation",
@@ -359,7 +441,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cabbage-cultivation_uibpvq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "tofu-invented-china",
@@ -373,7 +458,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tofu-invented-china_ulzclq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "coffee-origins-ethiopia",
@@ -387,7 +475,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coffee-origins-ethiopia_ufzp9y?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "yemen-coffee-cultivation",
@@ -401,7 +492,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yemen-coffee-cultivation_dkxdwu?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Yemen"
+    ]
   },
   {
     "name": "pasta-dried-sicily",
@@ -415,7 +509,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasta-dried-sicily_i2er3u?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "champagne-region-wine",
@@ -429,7 +526,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/champagne-region-wine_t1xphx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "medieval-guild-bakers",
@@ -443,7 +543,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/medieval-guild-bakers_e1f1wo?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "marco-polo-asian-foods",
@@ -457,7 +560,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marco-polo-asian-foods_gjf1oo?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Italy"
+    ]
   },
   {
     "name": "aztec-chinampa-farming",
@@ -471,7 +578,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aztec-chinampa-farming_xwteel?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "tomato-reaches-europe",
@@ -485,7 +595,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tomato-reaches-europe_eukhrc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Spain"
+    ]
   },
   {
     "name": "chili-peppers-spread",
@@ -500,7 +614,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chili-peppers-spread_pcpvob?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1614
+    "year_end": 1614,
+    "regions": [
+      "Mexico",
+      "Portugal",
+      "Global"
+    ]
   },
   {
     "name": "turkey-reaches-europe",
@@ -514,7 +633,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/turkey-reaches-europe_jfv2sw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Spain"
+    ]
   },
   {
     "name": "first-european-coffeehouse",
@@ -528,7 +651,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-european-coffeehouse_n7ppzd?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "london-coffeehouse-opens",
@@ -542,7 +668,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/london-coffeehouse-opens_wkqe4v?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "tea-craze-britain",
@@ -556,7 +685,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tea-craze-britain_ce4v1r?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "United Kingdom"
+    ]
   },
   {
     "name": "champagne-region-bubbly",
@@ -570,7 +703,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/champagne-region-bubbly_vbhhxc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "gin-craze-london",
@@ -585,7 +721,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gin-craze-london_iyx1oj?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1751
+    "year_end": 1751,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-restaurant-paris",
@@ -599,7 +738,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-restaurant-paris_lcqehv?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "potato-embraced-europe",
@@ -613,7 +755,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/potato-embraced-europe_iynobq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "sandwich-named",
@@ -627,7 +772,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sandwich-named_rxnbcj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "canning-food-preservation",
@@ -641,7 +789,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canning-food-preservation_zbodlq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-chocolate-bar",
@@ -655,7 +807,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-chocolate-bar_ytjylq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "margarine-invented",
@@ -669,7 +824,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/margarine-invented_rlemdg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "milk-chocolate-invented",
@@ -683,7 +841,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/milk-chocolate-invented_avm0to?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "mechanical-refrigeration-meat",
@@ -697,7 +858,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mechanical-refrigeration-meat_uhw7je?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Argentina",
+      "France"
+    ]
   },
   {
     "name": "first-breakfast-cereal",
@@ -711,7 +876,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-breakfast-cereal_h6srg1?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "phylloxera-wine-blight",
@@ -726,7 +894,11 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phylloxera-wine-blight_nyrnmo?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1900
+    "year_end": 1900,
+    "regions": [
+      "France",
+      "United States"
+    ]
   },
   {
     "name": "first-hamburger-served",
@@ -740,7 +912,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-hamburger-served_zzy8bg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ice-cream-cone-debut",
@@ -754,7 +929,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ice-cream-cone-debut_h2vd61?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "instant-coffee-introduced",
@@ -768,7 +946,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/instant-coffee-introduced_gw3mah?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "household-refrigerator-sold",
@@ -782,7 +963,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/household-refrigerator-sold_octkkq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "frozen-food-flash-freezing",
@@ -796,7 +980,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/frozen-food-flash-freezing_osblwa?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "sliced-bread-sold",
@@ -810,7 +997,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sliced-bread-sold_fhnaj5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "chocolate-chip-cookie",
@@ -824,7 +1014,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chocolate-chip-cookie_iiwblg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "supermarket-self-service",
@@ -838,7 +1031,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/supermarket-self-service_diaq85?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-mcdonalds-franchise",
@@ -852,7 +1048,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-mcdonalds-franchise_etwfbb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "tv-dinner-launched",
@@ -866,7 +1065,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tv-dinner-launched_lj0sn4?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "green-revolution-begins",
@@ -880,7 +1082,12 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/green-revolution-begins_crjxoq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Mexico",
+      "Pakistan"
+    ]
   },
   {
     "name": "microwave-meals-spread",
@@ -895,7 +1102,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/microwave-meals-spread_pmktk4?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": 1985
+    "year_end": 1985,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "instant-noodles-invented",
@@ -909,7 +1119,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/instant-noodles-invented_tmu8yj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "fair-trade-coffee-movement",
@@ -923,7 +1136,11 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fair-trade-coffee-movement_eproq5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Netherlands"
+    ]
   },
   {
     "name": "starbucks-coffee-chain",
@@ -937,7 +1154,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/starbucks-coffee-chain_gi0tpc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "genetically-modified-crop",
@@ -951,7 +1171,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genetically-modified-crop_zni78r?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "plant-based-meat-mainstream",
@@ -965,7 +1188,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plant-based-meat-mainstream_knin9j?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "food-delivery-apps-rise",
@@ -979,6 +1205,9 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/food-delivery-apps-rise_vlfxgw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   }
 ]
