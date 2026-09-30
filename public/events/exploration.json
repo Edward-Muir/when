@@ -325,6 +325,7 @@
     "has_detail": true,
     "year_end": -2800,
     "regions": [
+      "Egypt",
       "India",
       "Iraq"
     ]
@@ -429,7 +430,6 @@
     "text_color": "light",
     "has_detail": true,
     "regions": [
-      "Egypt",
       "Italy"
     ]
   },
@@ -1217,8 +1217,9 @@
     "text_color": "light",
     "has_detail": true,
     "regions": [
-      "Bulgaria",
-      "Czechia"
+      "Czechia",
+      "Turkey",
+      "Europe"
     ]
   },
   {
@@ -8310,7 +8311,7 @@
   {
     "name": "star-chart",
     "friendly_name": "Star Chart",
-    "year": -21000,
+    "year": -19000,
     "category": "writing",
     "description": "Cave paintings mapping star positions, among the earliest astronomical records ever created.",
     "difficulty": "hard",
@@ -8328,7 +8329,7 @@
   {
     "name": "bread",
     "friendly_name": "Bread",
-    "year": -14500,
+    "year": -12500,
     "category": "agriculture",
     "description": "Flour from wild cereals mixed with water and baked, predating agriculture by thousands of years.",
     "difficulty": "medium",
@@ -9092,8 +9093,7 @@
     "image_height": 440,
     "has_detail": true,
     "regions": [
-      "China",
-      "Iraq"
+      "China"
     ]
   },
   {
@@ -12813,6 +12813,7 @@
     "image_height": 440,
     "has_detail": true,
     "regions": [
+      "Denmark",
       "Germany"
     ]
   },
@@ -15407,7 +15408,7 @@
     "image_height": 440,
     "has_detail": true,
     "regions": [
-      "Europe"
+      "United Kingdom"
     ]
   },
   {
@@ -16841,7 +16842,6 @@
     "image_height": 440,
     "has_detail": true,
     "regions": [
-      "France",
       "Germany"
     ]
   },
@@ -17637,8 +17637,7 @@
     "regions": [
       "Iraq",
       "Turkey",
-      "Middle East & North Africa",
-      "North & Central Asia"
+      "Middle East & North Africa"
     ]
   },
   {
