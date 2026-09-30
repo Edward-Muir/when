@@ -1,5 +1,5 @@
 import { GameConfig, HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
-import { getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
+import { getDailyTheme, getThemedCategories, getThemedEras, getThemedPlaces } from './dailyTheme';
 import { buildRampedDeck } from './deckBuilder';
 import { buildDailyPool, getDailyBuildOptions } from './dailyPool';
 import { getRecentDailyCardNames } from './dailyRecency';
@@ -21,12 +21,15 @@ export const DAILY_HAND_SIZE = 5;
 export function buildDailyConfig(): GameConfig {
   const dailySeed = getLocalDateString();
   const dailyTheme = getDailyTheme(dailySeed);
+  const places = getThemedPlaces(dailyTheme);
 
   return {
     mode: 'daily',
     selectedDifficulties: [...DEFAULT_DIFFICULTIES],
     selectedCategories: getThemedCategories(dailyTheme),
     selectedEras: getThemedEras(dailyTheme),
+    selectedRegions: places.regions,
+    selectedCountries: places.countries,
     dailySeed,
     playerCount: 1,
     playerNames: ['Player 1'],

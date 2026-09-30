@@ -112,8 +112,10 @@ Built 2026-09-30 as designed here:
 - **Challenge codes.** All 72 bits were taken, so an optional 7th 12-bit word holds the regions
   in `ALL_REGIONS` order, written only when they are narrowed. A 6-word code (every link already
   shared) decodes as all regions. See [../sharing-challenges/](../sharing-challenges/index.md).
-- **Unaffected.** The daily and curated themes. Region tags do make a "Chinese history week" theme
-  trivial to assemble later.
+- **The daily** draws regions, countries and category + place pairings as themes from
+  2026-10-06, gated on 30+ cards and 8+ easy ones. See
+  [the dated menu](../curated-themes/index.md#seeded-themes-the-dated-menu-2026-10). Curated
+  themes are unaffected, though region tags make a "Chinese history week" theme trivial to assemble.
 
 ## The country picker (2026-09-30)
 

@@ -1,6 +1,12 @@
 import { HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
-import { DailyTheme, getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
-import { filterByDifficulty, filterByCategory, filterByEra } from './eventLoader';
+import {
+  DailyTheme,
+  getDailyTheme,
+  getThemedCategories,
+  getThemedEras,
+  getThemedPlaces,
+} from './dailyTheme';
+import { filterPool } from './eventLoader';
 import type { BuildRampedDeckOptions } from './deckBuilder';
 import type { CuratedTheme } from './curatedThemes';
 
@@ -11,10 +17,10 @@ import type { CuratedTheme } from './curatedThemes';
  * it, and having either import the other would be circular.
  */
 
-// A pool depends only on the day's theme, and there are just 21 of those (20
-// categories plus "Everything"). The recency chain builds a pool per day for weeks
-// at a time, and `filterByEra` alone is a linear scan of the era table for every
-// event, so without this the walk spends most of its time re-deriving 21 answers.
+// A pool depends only on the day's theme, and there are a bounded number of those
+// (the categories, "Everything", and the menu's places and pairings). The recency chain
+// builds a pool per day for weeks at a time, and `filterByEra` alone is a linear scan of
+// the era table for every event, so without this the walk re-derives the same answers.
 const poolCache = new Map<string, HistoricalEvent[]>();
 let cachedFor: HistoricalEvent[] | null = null;
 
@@ -28,6 +34,14 @@ let cachedFor: HistoricalEvent[] | null = null;
  */
 export const CURATED_MIN_AFTER_EXCLUSION = 12;
 
+/**
+ * Band-0 cards a place or pairing day keeps however many the last week used.
+ *
+ * The number the ramp's opening actually consumes: positions 0-5 draw about 3 from band 0 and
+ * the composed window about 4. See `footholdFloor` in BuildRampedDeckOptions.
+ */
+export const FOOTHOLD_FLOOR = 4;
+
 export function buildDailyPool(
   allEvents: HistoricalEvent[],
   dateString: string
@@ -39,13 +53,16 @@ export function buildDailyPool(
   const cached = readPoolCache(allEvents, key);
   if (cached) return cached;
 
-  const pool = filterByEra(
-    filterByCategory(
-      filterByDifficulty(allEvents, [...DEFAULT_DIFFICULTIES]),
-      getThemedCategories(theme)
-    ),
-    getThemedEras(theme)
-  );
+  // The Custom page's filter chain. For "Everything" and category days the region step is a
+  // no-op (every region, no countries), so their pools are exactly what they always were.
+  const places = getThemedPlaces(theme);
+  const pool = filterPool(allEvents, {
+    difficulties: [...DEFAULT_DIFFICULTIES],
+    categories: getThemedCategories(theme),
+    eras: getThemedEras(theme),
+    regions: places.regions,
+    countries: places.countries,
+  });
 
   poolCache.set(key, pool);
   return pool;
@@ -84,6 +101,8 @@ function readPoolCache(allEvents: HistoricalEvent[], key: string): HistoricalEve
 }
 
 function poolCacheKey(theme: DailyTheme): string {
+  if (theme.type === 'place') return `place:${theme.place}`;
+  if (theme.type === 'mix') return `mix:${theme.value}:${theme.place}`;
   return theme.type === 'all' ? 'all' : `category:${theme.value}`;
 }
 
@@ -105,13 +124,31 @@ function poolCacheKey(theme: DailyTheme): string {
  *   minAfterExclusion   -- a curated pool is far below the default floor, so without this
  *                          the seven-day no-repeat filter would always back out and a
  *                          curated day would get no protection at all.
+ *
+ * Place and pairing days get both, for the same reasons (a pairing can be 30 cards), plus
+ * `footholdFloor`: the menu admits them on 8+ band-0 cards, but the week before may have used
+ * some, and those are what the opening is made of. On a big place (Europe) all three are
+ * no-ops in practice.
+ *
+ * "Everything" and category days get the defaults, and curated days keep exactly the two
+ * options above: past days' decks are replayed by the recency chain, so their options must
+ * never move.
  */
 export function getDailyBuildOptions(
   dateString: string
-): Pick<BuildRampedDeckOptions, 'bandSpread' | 'minAfterExclusion'> {
+): Pick<BuildRampedDeckOptions, 'bandSpread' | 'minAfterExclusion' | 'footholdFloor'> {
   const theme = getDailyTheme(dateString);
-  if (theme.type !== 'curated') return {};
-  return { bandSpread: 1, minAfterExclusion: CURATED_MIN_AFTER_EXCLUSION };
+  if (theme.type === 'curated') {
+    return { bandSpread: 1, minAfterExclusion: CURATED_MIN_AFTER_EXCLUSION };
+  }
+  if (theme.type === 'place' || theme.type === 'mix') {
+    return {
+      bandSpread: 1,
+      minAfterExclusion: CURATED_MIN_AFTER_EXCLUSION,
+      footholdFloor: FOOTHOLD_FLOOR,
+    };
+  }
+  return {};
 }
 
 /** Test seam — the cache is a pure memo, so clearing it can only cost time. */
