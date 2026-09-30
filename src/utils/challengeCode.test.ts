@@ -1,6 +1,7 @@
 import { encodeChallengeCode, decodeChallengeCode, ChallengeConfig } from './challengeCode';
 import { ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ALL_ERAS } from './eras';
+import { ALL_REGIONS } from './regions';
 import { WORDLIST, wordMap } from './wordlists';
 
 /**
@@ -22,6 +23,7 @@ const baseConfig: ChallengeConfig = {
   difficulties: ['easy', 'medium', 'hard'],
   categories: ['empires', 'warfare', 'art'],
   eras: [...ALL_ERAS],
+  regions: [...ALL_REGIONS],
   seed: 12345,
 };
 

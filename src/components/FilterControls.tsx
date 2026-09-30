@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
+import { ALL_REGIONS } from '../utils/regions';
 
 // Max gap (ms) between two taps on the same pill to count as a double-tap.
 // 400ms matches macOS/Windows double-click defaults and sits just above
@@ -22,6 +23,8 @@ export interface FilterControlsProps {
   onCategoriesChange: (categories: Category[]) => void;
   selectedEras: Era[];
   onErasChange: (eras: Era[]) => void;
+  selectedRegions: string[];
+  onRegionsChange: (regions: string[]) => void;
   // When true, show an `n/N` (or `All`) selected-count next to each group header.
   showCounts?: boolean;
 }
@@ -57,6 +60,8 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   onCategoriesChange,
   selectedEras,
   onErasChange,
+  selectedRegions,
+  onRegionsChange,
   showCounts = false,
 }) => {
   const toggleDifficulty = (difficulty: Difficulty) => {
@@ -78,6 +83,14 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   const toggleEra = (era: Era) => {
     onErasChange(
       selectedEras.includes(era) ? selectedEras.filter((e) => e !== era) : [...selectedEras, era]
+    );
+  };
+
+  const toggleRegion = (region: string) => {
+    onRegionsChange(
+      selectedRegions.includes(region)
+        ? selectedRegions.filter((r) => r !== region)
+        : [...selectedRegions, region]
     );
   };
 
@@ -216,6 +229,39 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         </div>
         {selectedEras.length === 0 && (
           <p className="text-error text-xs mt-1 font-body">Select at least one era</p>
+        )}
+      </div>
+
+      {/* Region selection. Keys are prefixed: the double-tap ref is shared by every group. */}
+      <div>
+        <GroupHeader
+          label="Regions"
+          count={
+            showCounts ? { selected: selectedRegions.length, total: ALL_REGIONS.length } : undefined
+          }
+        />
+        <div className="flex flex-wrap gap-2">
+          {ALL_REGIONS.map((region) => (
+            <button
+              key={region}
+              onClick={() =>
+                handlePillTap(
+                  region,
+                  `region:${region}`,
+                  selectedRegions,
+                  [...ALL_REGIONS],
+                  onRegionsChange,
+                  toggleRegion
+                )
+              }
+              className={pillClass(selectedRegions.includes(region))}
+            >
+              {region}
+            </button>
+          ))}
+        </div>
+        {selectedRegions.length === 0 && (
+          <p className="text-error text-xs mt-1 font-body">Select at least one region</p>
         )}
       </div>
     </div>

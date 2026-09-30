@@ -1,6 +1,7 @@
 import { Difficulty, Category, Era, GameConfig, ALL_DIFFICULTIES, ALL_CATEGORIES } from '../types';
 import { ALL_ERAS } from './eras';
 import { WORDLIST, wordMap } from './wordlists';
+import { ALL_REGIONS } from './regions';
 
 /**
  * Shareable-game encoding for custom games.
@@ -20,9 +21,15 @@ import { WORDLIST, wordMap } from './wordlists';
  *   offset 19, width 32:  Categories bitmask (up to 32 categories — fixed width so the
  *                         layout stays stable as the category list grows)
  *   offset 51, width 21:  Random seed (0 - 2,097,151)
+ *
+ * Optional 7th word (bits 72-83), added with the region filter once all 72 bits were taken:
+ *   offset 72, width 12:  Regions bitmask (`ALL_REGIONS` order, 11 used)
+ * It is written only when the regions are narrowed, so an all-regions game still encodes to
+ * the same 6 words as before, and every 6-word code ever shared decodes as all regions.
  */
 
 const WORD_COUNT = 6;
+const WORD_COUNT_WITH_REGIONS = 7;
 
 // BigInt is used for the 72-bit packed value (exceeds JS's 53-bit safe-integer range).
 // Literals (`12n`) require an ES2020 target, so the sanctioned `BigInt()` form is used.
@@ -39,6 +46,7 @@ const OFFSET_DIFF = BigInt(7);
 const OFFSET_ERA = BigInt(11);
 const OFFSET_CATEGORIES = BigInt(19);
 const OFFSET_SEED = BigInt(51);
+const OFFSET_REGIONS = BigInt(72);
 
 const MASK_3 = BigInt(0x7);
 const MASK_DIFF = BigInt(0xf); // 4 bits
@@ -54,6 +62,8 @@ export interface ChallengeConfig {
   difficulties: Difficulty[];
   categories: Category[];
   eras: Era[];
+  /** Macro-regions in `ALL_REGIONS`; every one of them when the code has no 7th word. */
+  regions: string[];
   seed: number; // 0 - 2,097,151
 }
 
@@ -90,14 +100,30 @@ export function encodeChallengeCode(config: ChallengeConfig): string {
   packed |= catBits << OFFSET_CATEGORIES;
   packed |= seedBits << OFFSET_SEED;
 
+  const allRegions = ALL_REGIONS.every((r) => config.regions.includes(r));
+  if (!allRegions) packed |= arrayToBitmask(config.regions, ALL_REGIONS) << OFFSET_REGIONS;
+
+  const wordCount = allRegions ? WORD_COUNT : WORD_COUNT_WITH_REGIONS;
   const words: string[] = [];
   let shift = ZERO;
-  for (let i = 0; i < WORD_COUNT; i++) {
+  for (let i = 0; i < wordCount; i++) {
     const idx = Number((packed >> shift) & WORD_MASK);
     words.push(WORDLIST.at(idx) ?? '');
     shift += WORD_BITS;
   }
   return words.join('-');
+}
+
+/**
+ * The regions a token carries: every one for a 6-word code, else the 7th word's mask. A 7th
+ * word with no region set, or a bit past the last region, is not a code this app wrote (null).
+ */
+function decodeRegions(packed: bigint, wordCount: number): string[] | null {
+  if (wordCount === WORD_COUNT) return [...ALL_REGIONS];
+  const bits = packed >> OFFSET_REGIONS;
+  if (bits >> BigInt(ALL_REGIONS.length) !== ZERO) return null;
+  const regions = bitmaskToArray(bits, ALL_REGIONS);
+  return regions.length > 0 ? regions : null;
 }
 
 /**
@@ -109,7 +135,7 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
   const token = afterChallenge.split(/[/?#]/)[0].trim().toLowerCase();
 
   const parts = token.split('-');
-  if (parts.length !== WORD_COUNT) return null;
+  if (parts.length !== WORD_COUNT && parts.length !== WORD_COUNT_WITH_REGIONS) return null;
 
   let packed = ZERO;
   let shift = ZERO;
@@ -134,6 +160,7 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
     ALL_CATEGORIES
   );
   const seed = Number((packed >> OFFSET_SEED) & MASK_SEED);
+  const regions = decodeRegions(packed, parts.length);
 
   // Validate
   if (handSize < 1 || handSize > 8) return null;
@@ -141,8 +168,9 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
   if (difficulties.length === 0) return null;
   if (categories.length === 0) return null;
   if (eras.length === 0) return null;
+  if (!regions) return null;
 
-  return { handSize, playerCount, difficulties, categories, eras, seed };
+  return { handSize, playerCount, difficulties, categories, eras, regions, seed };
 }
 
 /**
@@ -162,6 +190,7 @@ export function challengeConfigToGameConfig(config: ChallengeConfig): GameConfig
     selectedDifficulties: config.difficulties,
     selectedCategories: config.categories,
     selectedEras: config.eras,
+    selectedRegions: config.regions,
     playerCount: config.playerCount,
     playerNames: Array.from({ length: config.playerCount }, (_, i) => `Player ${i + 1}`),
     cardsPerHand: 5,

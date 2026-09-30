@@ -6,13 +6,7 @@ import {
   GameConfig,
   GamePopupData,
 } from '../types';
-import {
-  loadAllEvents,
-  getCachedEvents,
-  filterByDifficulty,
-  filterByCategory,
-  filterByEra,
-} from '../utils/eventLoader';
+import { loadAllEvents, getCachedEvents, filterPool } from '../utils/eventLoader';
 import { GameMilestone } from '../utils/statsStorage';
 import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { useSaveDailyResult } from './useSaveDailyResult';
@@ -120,14 +114,7 @@ interface PendingPopupState {
  * Custom and challenge games keep the filter chain; they have no date to key a pool on.
  */
 function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
-  const {
-    mode,
-    dailySeed,
-    curatedThemeId,
-    selectedDifficulties,
-    selectedCategories,
-    selectedEras,
-  } = config;
+  const { mode, dailySeed, curatedThemeId } = config;
 
   if (mode === 'daily' && dailySeed) return buildDailyDeck(allEvents, dailySeed);
 
@@ -136,10 +123,12 @@ function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): Historic
     return theme ? buildThemeReplayDeck(allEvents, theme, config.challengeSeed) : [];
   }
 
-  const filtered = filterByEra(
-    filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
-    selectedEras
-  );
+  const filtered = filterPool(allEvents, {
+    difficulties: config.selectedDifficulties,
+    categories: config.selectedCategories,
+    eras: config.selectedEras,
+    regions: config.selectedRegions,
+  });
   return buildRampedDeck(filtered, config.challengeSeed, { allEvents });
 }
 

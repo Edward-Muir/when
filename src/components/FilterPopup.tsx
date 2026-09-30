@@ -14,6 +14,8 @@ interface FilterPopupProps {
   setSelectedCategories: (categories: Category[]) => void;
   selectedEras: Era[];
   setSelectedEras: (eras: Era[]) => void;
+  selectedRegions: string[];
+  setSelectedRegions: (regions: string[]) => void;
 }
 
 const FilterPopup: React.FC<FilterPopupProps> = ({
@@ -27,6 +29,8 @@ const FilterPopup: React.FC<FilterPopupProps> = ({
   setSelectedCategories,
   selectedEras,
   setSelectedEras,
+  selectedRegions,
+  setSelectedRegions,
 }) => {
   if (!isOpen) return null;
 
@@ -53,6 +57,8 @@ const FilterPopup: React.FC<FilterPopupProps> = ({
           onCategoriesChange={setSelectedCategories}
           selectedEras={selectedEras}
           onErasChange={setSelectedEras}
+          selectedRegions={selectedRegions}
+          onRegionsChange={setSelectedRegions}
         />
 
         {/* Event counter */}

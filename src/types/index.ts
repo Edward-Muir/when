@@ -230,6 +230,11 @@ export interface GameConfig {
   selectedDifficulties: Difficulty[];
   selectedCategories: Category[];
   selectedEras: Era[];
+  /**
+   * Macro-region names from `ALL_REGIONS` (src/utils/regions.ts). Missing means every region,
+   * which is what the daily, a theme replay and a 6-word challenge code all get.
+   */
+  selectedRegions?: string[];
   dailySeed?: string;
 
   /**

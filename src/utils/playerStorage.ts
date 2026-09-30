@@ -559,6 +559,11 @@ export interface CustomSettings {
   selectedDifficulties: Difficulty[];
   selectedCategories: Category[];
   selectedEras: Era[];
+  /**
+   * Optional and deliberately not validated below: records saved before the region filter
+   * existed lack it, and they must restore (as every region) rather than reset.
+   */
+  selectedRegions?: string[];
   playerCount: number;
   cardsPerHand: number;
   suddenDeathHandSize: number;
