@@ -131,7 +131,9 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
       rounded="2xl"
       shadow="xl"
       scroll="body"
-      maxHeightClass="max-h-[85vh]"
+      // Not `vh`: iOS Safari measures vh as if its toolbars were hidden, so an expanded list
+      // spilled off both ends. 100% of the backdrop is the visible screen, minus its padding.
+      maxHeightClass="max-h-full"
       labelledBy="country-picker-title"
       header={
         <div className="space-y-3">
