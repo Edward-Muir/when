@@ -1,12 +1,7 @@
 import { HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
-import {
-  DailyTheme,
-  getDailyTheme,
-  getThemedCategories,
-  getThemedEras,
-  getThemedPlaces,
-} from './dailyTheme';
+import { DailyTheme, getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
 import { filterPool } from './eventLoader';
+import { eventInPlace } from './regions';
 import type { BuildRampedDeckOptions } from './deckBuilder';
 import type { CuratedTheme } from './curatedThemes';
 
@@ -53,16 +48,16 @@ export function buildDailyPool(
   const cached = readPoolCache(allEvents, key);
   if (cached) return cached;
 
-  // The Custom page's filter chain. For "Everything" and category days the region step is a
-  // no-op (every region, no countries), so their pools are exactly what they always were.
-  const places = getThemedPlaces(theme);
-  const pool = filterPool(allEvents, {
+  // The Custom page's filter chain with every region, which is no region filter at all, then the
+  // theme's place. Deliberately not the Custom region filter: a daily's pool must never move, and
+  // that filter's rules are the picker's to change.
+  const themed = filterPool(allEvents, {
     difficulties: [...DEFAULT_DIFFICULTIES],
     categories: getThemedCategories(theme),
     eras: getThemedEras(theme),
-    regions: places.regions,
-    countries: places.countries,
   });
+  const place = theme.type === 'place' || theme.type === 'mix' ? theme.place : undefined;
+  const pool = place ? themed.filter((event) => eventInPlace(event, place)) : themed;
 
   poolCache.set(key, pool);
   return pool;

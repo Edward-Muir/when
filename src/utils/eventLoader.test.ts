@@ -1,5 +1,6 @@
 import { filterByRegion, filterPool } from './eventLoader';
 import { ALL_REGIONS } from './regions';
+import { pairKey } from './countrySelection';
 import { ALL_ERAS } from './eras';
 import { HistoricalEvent } from '../types';
 
@@ -47,7 +48,7 @@ describe('filterByRegion', () => {
   });
 });
 
-describe('filterByRegion with countries', () => {
+describe('filterByRegion with countries switched off', () => {
   const countryPool = [
     card('berlin', ['Germany']),
     card('bonn-paris', ['Germany', 'France']),
@@ -58,43 +59,54 @@ describe('filterByRegion with countries', () => {
     card('siberia', ['Russia', 'North & Central Asia']),
     card('untagged'),
   ];
+  const off = (...pairs: [string, string][]) => pairs.map(([r, c]) => pairKey(r, c));
 
-  it('changes nothing when no country is picked', () => {
+  it('changes nothing when nothing is switched off', () => {
     expect(filterByRegion(countryPool, ['Europe'], [])).toEqual(
       filterByRegion(countryPool, ['Europe'])
     );
   });
 
-  it('narrows a region to its picked countries, dropping cards tagged only with the region', () => {
-    expect(names(filterByRegion(countryPool, ['Europe'], ['Germany']))).toEqual([
+  it('drops a switched-off country, keeping cards another country still carries', () => {
+    expect(names(filterByRegion(countryPool, ['Europe'], off(['Europe', 'France'])))).toEqual([
       'berlin',
       'bonn-paris',
+      'moscow',
     ]);
   });
 
-  it('keeps a selected region with no pick whole', () => {
+  it('drops cards tagged only with a region once any of its countries is off', () => {
+    expect(names(filterByRegion(countryPool, ['Europe'], off(['Europe', 'France'])))).not.toContain(
+      'alps'
+    );
+  });
+
+  it('keeps a whole region whole beside a partial one', () => {
     expect(
-      names(filterByRegion(countryPool, ['Europe', 'Middle East & North Africa'], ['France']))
+      names(
+        filterByRegion(
+          countryPool,
+          ['Europe', 'Middle East & North Africa'],
+          off(['Europe', 'Germany'], ['Europe', 'Russia'])
+        )
+      )
     ).toEqual(['bonn-paris', 'paris', 'cairo']);
   });
 
   it('narrows even when every region is selected', () => {
-    const narrowed = names(filterByRegion(countryPool, [...ALL_REGIONS], ['Egypt']));
-    expect(narrowed).toEqual([
-      'berlin',
-      'bonn-paris',
-      'paris',
-      'alps',
-      'cairo',
-      'moscow',
-      'siberia',
-    ]);
+    const narrowed = names(
+      filterByRegion(countryPool, [...ALL_REGIONS], off(['Middle East & North Africa', 'Egypt']))
+    );
+    expect(narrowed).toEqual(['berlin', 'bonn-paris', 'paris', 'alps', 'moscow', 'siberia']);
     expect(narrowed).not.toContain('untagged');
   });
 
-  it('matches a transcontinental country on either side', () => {
-    expect(names(filterByRegion(countryPool, ['Europe'], ['Russia']))).toEqual([
-      'moscow',
+  it('switches a transcontinental country off one side only', () => {
+    const regions = ['Europe', 'North & Central Asia'];
+    expect(names(filterByRegion(countryPool, regions, off(['Europe', 'Russia'])))).toEqual([
+      'berlin',
+      'bonn-paris',
+      'paris',
       'siberia',
     ]);
   });

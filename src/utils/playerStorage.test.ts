@@ -100,10 +100,10 @@ describe('custom settings storage', () => {
     expect(getCustomSettings()?.selectedRegions).toEqual(['East Asia']);
   });
 
-  it('round-trips a country selection, absent from older records', () => {
+  it('round-trips the switched-off countries, absent from older records', () => {
     localStorage.setItem('when-custom-settings', JSON.stringify(saved));
-    expect(getCustomSettings()?.selectedCountries).toBeUndefined();
-    saveCustomSettings({ ...saved, selectedRegions: ['Europe'], selectedCountries: ['Germany'] });
-    expect(getCustomSettings()?.selectedCountries).toEqual(['Germany']);
+    expect(getCustomSettings()?.excludedCountries).toBeUndefined();
+    saveCustomSettings({ ...saved, excludedCountries: ['Europe|Germany'] });
+    expect(getCustomSettings()?.excludedCountries).toEqual(['Europe|Germany']);
   });
 });

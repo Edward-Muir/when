@@ -322,25 +322,42 @@ words**. The 7th word (bits 72-83) is the region mask in `ALL_REGIONS` order
   appending it, which the taxonomy test's "Global is last" rule would force you to rethink
   first. `challengeCode.test.ts` pins the order so a reorder fails loudly.
 
-### Words 8 onward: countries (2026-09-30)
+### Words 8 onward: countries (2026-09-30, pair format 2026-10)
 
-The country picker (see [../regions/](../regions/index.md#the-country-picker-2026-09-30)) adds
-**one word per picked country** after the regions word.
+Country words follow the regions word. There are two formats, told apart by the **regions
+word's spare 12th bit** (`COUNTRY_FORMAT_BIT`; 11 regions use bits 0-10).
 
-- **A country word is its ISO 3166-1 alpha-2 code**, packed as `(first letter) * 26 + (second
-letter)` with A = 0, so 0-675. ISO codes are stable, so there is no pinned country order to
-  guard, unlike the regions word. The taxonomy test holds every `iso` to two unique capitals.
-- **The regions word is always written when a country is picked**, even with all 11 regions
+**The first format (bit clear), from the pick-to-narrow picker.** One word per _picked_ country,
+its ISO 3166-1 alpha-2 code packed as `(first letter) * 26 + (second letter)` with A = 0, so
+0-675. A pick narrowed every region it belongs to. These codes still decode: the picks go through
+`legacyPicksToExclusions` into the pool they always dealt. The one exception is that a
+transcontinental pick no longer reaches a side that is not selected; see
+[../regions/](../regions/index.md#the-country-picker-2026-10-select-all).
+
+**The pair format (bit set), from the select-all picker.** The state is excluded
+(region, country) pairs, so a word names a pair:
+
+- **Value** `iso + 676 * side`, where `side` is the region's index in the country's `spans`
+  (always 0 for a one-region country; Russia under North & Central Asia is `RU + 676`). Adding
+  `EXCLUDE_FLAG` (2048) marks the pair as switched off; without it the pair is listed as on.
+- **Each narrowed region is written in whichever form is shorter**, all its words in one form. An
+  include form lists the region's countries still on, and the decoder excludes the rest of the
+  region's taxonomy countries. So "only the UK" is one include word, "Europe without the UK" one
+  exclude word, and neither ever needs 51. A region with everything off stays in exclude form,
+  since zero include words would read as the whole region.
+- **Rejected:** an unknown value or side, a repeated pair, a pair outside the decoded regions, one
+  region mixing include and exclude words, or the format bit with no country words.
+
+Both formats share these rules:
+
+- **The regions word is always written when a country word is**, even with all 11 regions
   selected, because country words must start at word 8.
 - **Words are sorted by value**, so one selection always makes one token.
-- **Codes without country picks are unchanged** (6 or 7 words, byte-identical).
+- **Codes without country words are unchanged** (6 or 7 words, byte-identical).
 - **The decoder packs only the first 7 words.** Packing the country words too would push their
   bits into the regions mask and fail its range check.
-- **Rejected:** a value past 675 or not in the taxonomy, a repeated country, or a country in none
-  of the decoded regions.
-- **Builds from before the picker reject these codes**, since they accept only 6 or 7 words. The
-  maintainer accepted that over dropping picks from links, which would break "others play the
-  exact same game".
+- **Builds from before a format reject its codes.** The maintainer accepted that over dropping
+  countries from links, which would break "others play the exact same game".
 
 ### Decisions still in force
 

@@ -19,8 +19,8 @@ interface CustomGameSettingsProps {
   setSelectedEras: (eras: Era[]) => void;
   selectedRegions: string[];
   setSelectedRegions: (regions: string[]) => void;
-  selectedCountries: string[];
-  setSelectedCountries: (countries: string[]) => void;
+  excludedCountries: string[];
+  setExcludedCountries: (countries: string[]) => void;
   countryOptions: Map<string, string[]>;
   // Player / hand size — controls hidden, but values + setters feed the deck/share code
   playerCount: number;
@@ -51,8 +51,8 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   setSelectedEras,
   selectedRegions,
   setSelectedRegions,
-  selectedCountries,
-  setSelectedCountries,
+  excludedCountries,
+  setExcludedCountries,
   countryOptions,
   playerCount,
   onPlayerCountChange,
@@ -77,7 +77,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
         categories: selectedCategories,
         eras: selectedEras,
         regions: selectedRegions,
-        countries: selectedCountries,
+        excludedCountries,
         seed: challengeSeed,
       }),
     [
@@ -87,7 +87,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
       selectedCategories,
       selectedEras,
       selectedRegions,
-      selectedCountries,
+      excludedCountries,
       challengeSeed,
     ]
   );
@@ -118,7 +118,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
     setSelectedCategories(d.categories);
     setSelectedEras(d.eras);
     setSelectedRegions(d.regions);
-    setSelectedCountries(d.countries);
+    setExcludedCountries(d.excludedCountries);
     setChallengeSeed(d.seed);
   };
 
@@ -146,8 +146,8 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           onErasChange={setSelectedEras}
           selectedRegions={selectedRegions}
           onRegionsChange={setSelectedRegions}
-          selectedCountries={selectedCountries}
-          onCountriesChange={setSelectedCountries}
+          excludedCountries={excludedCountries}
+          onExcludedChange={setExcludedCountries}
           countryOptions={countryOptions}
           matchCount={deckCount}
         />

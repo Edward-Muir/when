@@ -3,6 +3,7 @@ import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../
 import { ERA_DEFINITIONS } from '../utils/eras';
 import { ALL_REGIONS, REGION_DISPLAY_ORDER } from '../utils/regions';
 import CountryRefine from './CountryRefine';
+import { RegionSelection, regionStatus, toggleRegion } from '../utils/countrySelection';
 import { pillClass } from './filterPill';
 
 // Max gap (ms) between two taps on the same pill to count as a double-tap.
@@ -27,9 +28,10 @@ export interface FilterControlsProps {
   onErasChange: (eras: Era[]) => void;
   selectedRegions: string[];
   onRegionsChange: (regions: string[]) => void;
-  // The "Refine by country" panel shows only when all three are passed.
-  selectedCountries?: string[];
-  onCountriesChange?: (countries: string[]) => void;
+  // The Countries row shows only when all three are passed. Pairs switched off within the
+  // selected regions (`src/utils/countrySelection.ts`); a region with any is drawn partial.
+  excludedCountries?: string[];
+  onExcludedChange?: (excluded: string[]) => void;
   countryOptions?: Map<string, string[]>;
   // Cards the selection deals, shown in the country picker, which hides the Play button.
   matchCount?: number;
@@ -62,8 +64,8 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   onErasChange,
   selectedRegions,
   onRegionsChange,
-  selectedCountries,
-  onCountriesChange,
+  excludedCountries,
+  onExcludedChange,
   countryOptions,
   matchCount,
   showCounts = false,
@@ -90,12 +92,22 @@ const FilterControls: React.FC<FilterControlsProps> = ({
     );
   };
 
-  const toggleRegion = (region: string) => {
-    onRegionsChange(
-      selectedRegions.includes(region)
-        ? selectedRegions.filter((r) => r !== region)
-        : [...selectedRegions, region]
-    );
+  // Regions are tri-state: off → whole, whole → off, partial → whole (its countries back on).
+  const regionSelection: RegionSelection = {
+    regions: selectedRegions,
+    excluded: excludedCountries ?? [],
+  };
+  const applyRegionSelection = (next: RegionSelection) => {
+    // Regions first: their prune runs on the old exclusions, so the new ones survive it.
+    if (next.regions !== regionSelection.regions) onRegionsChange(next.regions);
+    if (next.excluded !== regionSelection.excluded) onExcludedChange?.(next.excluded);
+  };
+  const tapRegion = (region: string) => applyRegionSelection(toggleRegion(regionSelection, region));
+  // A double-tap isolates or restores regions; restoring every region also puts every country
+  // back, so "all" means all.
+  const setRegionsFromDoubleTap = (regions: string[]) => {
+    onRegionsChange(regions);
+    if (regions.length === ALL_REGIONS.length) onExcludedChange?.([]);
   };
 
   // Plotly-style tap handling. Single-tap toggles a pill INSTANTLY (no debounce,
@@ -245,34 +257,38 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           }
         />
         <div className="flex flex-wrap gap-2">
-          {REGION_DISPLAY_ORDER.map((region) => (
-            <button
-              key={region}
-              onClick={() =>
-                handlePillTap(
-                  region,
-                  `region:${region}`,
-                  selectedRegions,
-                  [...ALL_REGIONS],
-                  onRegionsChange,
-                  toggleRegion
-                )
-              }
-              className={pillClass(selectedRegions.includes(region))}
-            >
-              {region}
-            </button>
-          ))}
+          {REGION_DISPLAY_ORDER.map((region) => {
+            const status = regionStatus(region, regionSelection);
+            return (
+              <button
+                key={region}
+                onClick={() =>
+                  handlePillTap(
+                    region,
+                    `region:${region}`,
+                    selectedRegions,
+                    [...ALL_REGIONS],
+                    setRegionsFromDoubleTap,
+                    tapRegion
+                  )
+                }
+                aria-pressed={status === 'partial' ? 'mixed' : status === 'full'}
+                className={pillClass(status === 'partial' ? 'partial' : status === 'full')}
+              >
+                {region}
+              </button>
+            );
+          })}
         </div>
         {selectedRegions.length === 0 && (
           <p className="text-error text-xs mt-1 font-body">Select at least one region</p>
         )}
-        {selectedCountries && onCountriesChange && countryOptions && (
+        {excludedCountries && onExcludedChange && countryOptions && (
           <CountryRefine
             selectedRegions={selectedRegions}
             onRegionsChange={onRegionsChange}
-            selectedCountries={selectedCountries}
-            onCountriesChange={onCountriesChange}
+            excludedCountries={excludedCountries}
+            onExcludedChange={onExcludedChange}
             countryOptions={countryOptions}
             matchCount={matchCount}
           />

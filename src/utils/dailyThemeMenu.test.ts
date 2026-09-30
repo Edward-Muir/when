@@ -8,7 +8,6 @@ import {
   getThemeDisplayName,
   getThemedCategories,
   getThemedEras,
-  getThemedPlaces,
   menuEpochFor,
 } from './dailyTheme';
 import {
@@ -22,7 +21,7 @@ import { clearRecencyCache, getRecentDailyCardNames } from './dailyRecency';
 import { RAMP_WINDOW } from './deckBuilder';
 import { buildDifficultyIndex } from './difficultyScore';
 import { filterPool } from './eventLoader';
-import { isCountryName, isRegionName } from './regions';
+import { eventInPlace, eventRegionSet, isCountryName, isRegionName } from './regions';
 import { __setCuratedThemesForTest } from './curatedThemes';
 import { isCloudinaryImage } from './cloudinaryImage';
 import { ALL_CATEGORIES, Category, DEFAULT_DIFFICULTIES, HistoricalEvent } from '../types';
@@ -174,14 +173,12 @@ describe('the menu', () => {
     ];
     const failures: string[] = [];
     for (const theme of themes) {
-      const places = getThemedPlaces(theme);
+      const place = (theme as { place: string }).place;
       const pool = filterPool(catalogue, {
         difficulties: [...DEFAULT_DIFFICULTIES],
         categories: getThemedCategories(theme),
         eras: getThemedEras(theme),
-        regions: places.regions,
-        countries: places.countries,
-      });
+      }).filter((e) => eventInPlace(e, place));
       const easy = pool.filter((e) => index.bandOf(e) === 0).length;
       if (pool.length < MIN_POOL || easy < MIN_BAND_ZERO_DAILY) {
         failures.push(`${getThemeDisplayName(theme)}: ${pool.length} cards, ${easy} easy`);
@@ -224,18 +221,14 @@ describe('dates from the first menu epoch', () => {
     );
   });
 
-  it('narrows a country day to that country, whichever side of a border it sits', () => {
-    expect(getThemedPlaces({ type: 'place', value: null, place: 'Italy' })).toEqual({
-      regions: ['Europe'],
-      countries: ['Italy'],
-    });
-    expect(getThemedPlaces({ type: 'place', value: null, place: 'East Asia' })).toEqual({
-      regions: ['East Asia'],
-      countries: [],
-    });
-    const turkey = getThemedPlaces({ type: 'place', value: null, place: 'Turkey' });
-    expect(turkey.countries).toEqual(['Turkey']);
-    expect(turkey.regions.length).toBe(2);
+  it('matches a country on its own tag, whichever side of a border it sits', () => {
+    const turkish = catalogue.filter((e) => (e.regions ?? []).includes('Turkey'));
+    const sides = new Set(turkish.flatMap((e) => [...eventRegionSet(e)]));
+    expect(sides.has('Europe') && sides.has('Middle East & North Africa')).toBe(true);
+    expect(catalogue.filter((e) => eventInPlace(e, 'Turkey'))).toEqual(turkish);
+    expect(catalogue.filter((e) => eventInPlace(e, 'East Asia'))).toEqual(
+      catalogue.filter((e) => eventRegionSet(e).has('East Asia'))
+    );
   });
 
   it("deals a pairing day only that category's cards from that place", () => {

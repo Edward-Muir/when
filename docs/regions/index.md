@@ -61,7 +61,8 @@ word.
 
 **Countries were tagged from the start, though the first filter showed only regions.** Tagging at
 country level meant the later country picker ("German history") needed no second sweep of 5,800
-cards. It shipped on 2026-09-30; see [The country picker](#the-country-picker-2026-09-30).
+cards. It shipped on 2026-09-30 and became select-all in 2026-10; see
+[The country picker](#the-country-picker-2026-10-select-all).
 
 **Inline, not a sidecar.** Deck building needs every event's tags at load. That is unlike the
 detail prose, which is needed one card at a time. Measured with worst-case random tags, it adds
@@ -114,53 +115,73 @@ Built 2026-09-30 as designed here:
   shared) decodes as all regions. See [../sharing-challenges/](../sharing-challenges/index.md).
 - **The daily** draws regions, countries and category + place pairings as themes from
   2026-10-06, gated on 30+ cards and 8+ easy ones. See
-  [the dated menu](../curated-themes/index.md#seeded-themes-the-dated-menu-2026-10). Curated
-  themes are unaffected, though region tags make a "Chinese history week" theme trivial to assemble.
+  [the dated menu](../curated-themes/index.md#seeded-themes-the-dated-menu-2026-10). It matches
+  its place with `eventInPlace`, not this filter, so picker changes can never move a daily's
+  pool. Curated themes are unaffected, though region tags make a "Chinese history week" theme
+  trivial to assemble.
 
-## The country picker (2026-09-30)
+## The country picker (2026-10, select-all)
 
 189 tagged countries are too many for one chip group. The Regions group ends in a single
-**Countries** row (`CountryRefine.tsx`) reading `All` or the picked names, which opens a popup
+**Countries** row (`CountryRefine.tsx`) summarising what is on, which opens a popup
 (`CountryPickerModal.tsx`) with a search box and the selected regions' countries grouped by region.
-The first build was an inline expanding panel; it made the Custom card scroll too far, so the
-card now never grows. The popup's Done button carries the live event count, since it hides the
+The card never grows; the popup's Done button carries the live event count, since it hides the
 Play button.
 
-- **Search reaches every region.** A match in a region not selected shows under that region,
-  marked "adds region", and picking it selects the region too, so "type Germany, tap" works from
-  any starting state. A transcontinental country already reachable through a selected side is
-  not offered again under the other. The grouping and matching (start of any word) are the pure
-  `matchCountries` in `src/utils/regions.ts`.
-- **Regions alphabetical, countries by card count.** Region chips and popup groups use
-  `REGION_DISPLAY_ORDER`: alphabetical, with Global last because it is not a place. That is
-  display only; `ALL_REGIONS` keeps the taxonomy order because it is the share code's bit order.
-  Countries stay most-tagged first, 8 per region before "+N more" (a picked one always shows),
-  so the United Kingdom, France and Italy lead Europe. An alphabetical country list was tried and
-  reverted: the maintainer preferred the big countries first. A search lists every match.
-- **A pick narrows its own region.** A region with any of its countries picked keeps only events
-  tagged with a picked country. A selected region with no pick stays whole, so "Europe + Middle
-  East & North Africa, Germany picked" is all of Germany plus all of the Middle East. Events tagged
-  only with the region ("Europe") drop out once it is refined. That is intended: they are not
-  German. The logic is `filterByRegion(events, regions, countries)`, still inside `filterPool`.
-- **Inclusion, not exclusion.** Country chips start unselected, and the sub-group reads `All`
-  until something is picked. Exclusion ("Europe except the UK") was not wanted, and it would cost
-  the share code more words. There is no double-tap on country chips: `handlePillTap` replaces a
-  whole selection array and would clobber the other sub-groups.
-- **A country is matched on its own tag, whichever side it sits.** Russia, Turkey and the Caucasus
-  states are listed under every region they span and toggle in sync. "Russia" picked under Europe
-  also deals Siberian Russia events. Splitting a country by side would need a region-qualified
-  pick and a wider share word, for 15 Siberian cards.
-- **Deselecting a region drops its countries** (`pruneCountries`, via `useRegionSelection`), so a
-  hidden pick never narrows the deck. A transcontinental country survives while either side is
-  selected. Stored settings are pruned the same way on restore.
+**Why it changed.** The first picker (2026-09-30) was inclusion-only: chips started unselected, a
+pick narrowed its own region to the picked countries, and every other selected region stayed
+whole. On the dev preview the maintainer picked United Kingdom with every region on and got 4,083
+events: the UK's 904 plus every other region whole. The filter was doing what it was designed to
+do, but the design read wrong, because in every other group blue means in the deck. The
+maintainer overruled the earlier "inclusion, not exclusion" decision and asked for the picker to
+work like the other groups. That is the model below.
+
+- **Every country starts on, and blue means in the deck.** The state is the selected regions plus
+  the **(region, country) pairs switched off** within them (`src/utils/countrySelection.ts`,
+  keys like `Europe|United Kingdom`). Nothing off is the default, so the stored and shared form
+  of "everything" is empty.
+- **A region chip has three states**: off (white), whole (blue), and partial (`.bg-pill-partial`,
+  a light blue with the selected border, `aria-pressed="mixed"`) when some of its countries are
+  off. Tapping works like a tri-state checkbox: off → whole, whole → off, partial → whole.
+  Deselecting a region switches all its countries off; selecting it switches them all back on.
+- **A country chip toggles.** Switching off a region's last listed country turns the region off.
+  Tapping a country found by search in an unselected region ("adds region") selects that region
+  with only that country on, which is the quick way to "only the UK". The region header reads
+  `All`, or `n of m · All` with a button to put the region back; the footer's **Select all**
+  clears every exclusion. Double-tapping a region chip still isolates or restores, and restoring
+  every region also clears every exclusion, so "all" means all.
+- **The filter** (`filterByRegion`): an event stays when some region it resolves to is selected
+  and either that region is whole, or the event carries a country of that region whose pair is on.
+  An event tagged only with the region ("Europe") is dealt while the region is whole and drops out
+  once any of its countries is off: it belongs to none of them.
+- **Pairs, not names, because of the transcontinental five.** Russia, Turkey, Georgia, Armenia and
+  Azerbaijan are listed under both sides, and each side is its own chip and switch. Keyed by name,
+  switching Russia off to narrow Europe would also cut Russia, and every event tagged only "North &
+  Central Asia", out of a whole North & Central Asia; the same trap would have broken the
+  conversion of old share codes. This reverses the first picker's "toggle in sync" rule.
+- **Old picks convert to the pool they dealt** (`legacyPicksToExclusions`), for settings saved
+  before the change and for share codes in the first format. A picked country's regions exclude
+  their other countries; unpicked regions stay whole. Exact except for one corner: a
+  transcontinental pick used to deal its other side's events even when that region was not
+  selected (Russia under Europe dealt Siberian Russia). Now only selected regions deal anything.
+- **Summary row.** `All`; the countries still on when every region with countries is partial
+  (named up to three: "United Kingdom"); otherwise the countries off ("All but France", or
+  "N countries off").
+- **Search reaches every region**, matching the start of any word (`matchCountries`). Regions
+  alphabetical with Global last (display only; `ALL_REGIONS` is the share code's bit order);
+  countries most-tagged first, 8 per region before "+N more". In a partial region, a country that
+  is still on stays visible in the collapsed tail. An alphabetical country list was tried and
+  reverted: the maintainer preferred the big countries first.
 - **Offered countries come from the pool.** `countryOptionsByRegion` lists only countries present.
   The Custom tab offers the whole catalogue; the Timeline popup offers only countries in the
   player's collection, and its picker stacks above the filter popup (`layer="reveal"`). Global
   and Antarctica have no group.
-- **State.** `selectedCountries` on `GameConfig` and `CustomSettings`, missing meaning none.
-  The Timeline tab keeps its own, unpersisted, like its regions.
-- **Share codes** carry picks in words 8 onward, one per country, keyed by ISO code. See
-  [../sharing-challenges/](../sharing-challenges/index.md#words-8-onward-countries-2026-09-30).
+- **State.** `excludedCountries` on `GameConfig` and `CustomSettings`, missing meaning none; the
+  retired `selectedCountries` is read once from old settings and converted. The Timeline tab keeps
+  its own, unpersisted, like its regions.
+- **Share codes** carry pairs in words 8 onward, each narrowed region in whichever of include or
+  exclude form is shorter. See
+  [../sharing-challenges/](../sharing-challenges/index.md#words-8-onward-countries-2026-09-30-pair-format-2026-10).
 
 ## The sweep (2026-09-30)
 

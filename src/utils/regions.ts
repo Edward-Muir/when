@@ -81,6 +81,28 @@ export function countryMacros(name: string): string[] {
   return entry.spans ?? (entry.region ? [entry.region] : []);
 }
 
+const COUNTRIES_BY_REGION = new Map<string, string[]>();
+for (const name of COUNTRIES.keys()) {
+  for (const region of countryMacros(name)) {
+    COUNTRIES_BY_REGION.set(region, [...(COUNTRIES_BY_REGION.get(region) ?? []), name]);
+  }
+}
+
+/** Every taxonomy country in a region, a transcontinental one under each side it spans. */
+export function countriesInRegion(region: string): readonly string[] {
+  return COUNTRIES_BY_REGION.get(region) ?? [];
+}
+
+/**
+ * Whether an event belongs to a daily theme's place: a region through `eventRegionSet`, a country
+ * by its own tag, whichever side of a transcontinental country the event sits.
+ */
+export function eventInPlace(event: Pick<HistoricalEvent, 'regions'>, place: string): boolean {
+  return REGION_SET.has(place)
+    ? eventRegionSet(event).has(place)
+    : (event.regions ?? []).includes(place);
+}
+
 /** The country tags on an event, ignoring its macro-region tags. */
 export function eventCountrySet(event: Pick<HistoricalEvent, 'regions'>): Set<string> {
   return new Set((event.regions ?? []).filter((tag) => COUNTRIES.has(tag)));
@@ -128,8 +150,8 @@ function matchesWordStart(name: string, query: string): boolean {
 
 /**
  * The picker's groups, in display order. With no query, every country of each selected region.
- * With one, the matching countries of every region; an unselected region lists only matches not
- * already reachable through a selected region, so Turkey is not offered twice.
+ * With one, the matching countries of every region; picking from an unselected region adds it.
+ * A transcontinental country is listed under each side, and each side is its own switch.
  */
 export function matchCountries(
   options: Map<string, string[]>,
@@ -137,27 +159,14 @@ export function matchCountries(
   selectedRegions: readonly string[]
 ): CountryGroup[] {
   const q = query.trim().toLowerCase();
-  const isSelected = (region: string) => selectedRegions.includes(region);
   const groups: CountryGroup[] = [];
   for (const region of REGION_DISPLAY_ORDER) {
-    const selected = isSelected(region);
+    const selected = selectedRegions.includes(region);
     if (!q && !selected) continue;
-    const countries = (options.get(region) ?? []).filter(
-      (c) => !q || (matchesWordStart(c, q) && (selected || !countryMacros(c).some(isSelected)))
-    );
+    const countries = (options.get(region) ?? []).filter((c) => !q || matchesWordStart(c, q));
     if (countries.length > 0) groups.push({ region, countries, selected });
   }
   return groups;
-}
-
-/**
- * The picked countries still reachable once `regions` is the region selection: known names in
- * at least one selected region. Deselecting Europe drops Germany; Turkey survives while either
- * of its sides is selected.
- */
-export function pruneCountries(countries: readonly string[], regions: readonly string[]): string[] {
-  const selected = new Set(regions);
-  return countries.filter((country) => countryMacros(country).some((r) => selected.has(r)));
 }
 
 /** A country's ISO 3166-1 alpha-2 code, the stable key a challenge code stores it by. */

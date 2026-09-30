@@ -615,7 +615,7 @@ describe('useWhenGame - region filter', () => {
     jest.clearAllMocks();
   });
 
-  async function dealt(selectedRegions?: string[], selectedCountries?: string[]) {
+  async function dealt(selectedRegions?: string[], excludedCountries?: string[]) {
     const { result } = renderHook(() => useWhenGame());
     await act(async () => {
       await Promise.resolve();
@@ -627,7 +627,7 @@ describe('useWhenGame - region filter', () => {
         selectedCategories: ['empires'],
         selectedEras: [...ALL_ERAS],
         selectedRegions,
-        selectedCountries,
+        excludedCountries,
         suddenDeathHandSize: 5,
       });
     });
@@ -646,10 +646,10 @@ describe('useWhenGame - region filter', () => {
     expect(await dealt([...ALL_REGIONS])).toHaveLength(60);
   });
 
-  it('narrows a region to its picked countries', async () => {
-    // Europe narrows to France; East Asia, with no pick, stays whole; untagged cards drop out.
-    const cards = await dealt([...ALL_REGIONS], ['France']);
-    expect(cards).toHaveLength(40);
-    for (const card of cards) expect(card.regions).toBeDefined();
+  it('drops the cards of a switched-off country, keeping the other regions whole', async () => {
+    // France off leaves Europe with nothing; East Asia stays whole; untagged cards drop out.
+    const cards = await dealt([...ALL_REGIONS], ['Europe|France']);
+    expect(cards).toHaveLength(20);
+    for (const card of cards) expect(card.regions).toEqual(['Japan']);
   });
 });

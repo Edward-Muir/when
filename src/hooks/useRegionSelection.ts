@@ -1,21 +1,21 @@
 import { useState } from 'react';
-import { pruneCountries } from '../utils/regions';
+import { pruneExclusions } from '../utils/countrySelection';
 
 /**
- * The region chips and the countries picked within them, kept consistent: deselecting a region
- * drops its countries, so a pick hidden with its region never goes on narrowing the pool.
- * Unknown names and orphaned countries in the initial values are dropped too.
+ * The region chips and the countries switched off within them, kept consistent: deselecting a
+ * region drops its exclusions, so a switch hidden with its region never goes on narrowing it.
+ * Unknown pairs and orphaned exclusions in the initial values are dropped too.
  */
-export function useRegionSelection(initialRegions: () => string[], initialCountries?: string[]) {
+export function useRegionSelection(initialRegions: () => string[], initialExcluded?: string[]) {
   const [selectedRegions, setRegionsOnly] = useState<string[]>(initialRegions);
-  const [selectedCountries, setSelectedCountries] = useState<string[]>(() =>
-    pruneCountries(initialCountries ?? [], selectedRegions)
+  const [excludedCountries, setExcludedCountries] = useState<string[]>(() =>
+    pruneExclusions(initialExcluded ?? [], selectedRegions)
   );
 
   const setSelectedRegions = (regions: string[]) => {
     setRegionsOnly(regions);
-    setSelectedCountries((countries) => pruneCountries(countries, regions));
+    setExcludedCountries((excluded) => pruneExclusions(excluded, regions));
   };
 
-  return { selectedRegions, setSelectedRegions, selectedCountries, setSelectedCountries };
+  return { selectedRegions, setSelectedRegions, excludedCountries, setExcludedCountries };
 }

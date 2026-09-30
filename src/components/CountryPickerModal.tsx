@@ -3,6 +3,14 @@ import { Search } from 'lucide-react';
 import Modal from './ui/Modal';
 import { matchCountries } from '../utils/regions';
 import { pillClass } from './filterPill';
+import {
+  RegionSelection,
+  RegionStatus,
+  isCountryOn,
+  regionStatus,
+  selectWholeRegion,
+  toggleCountry,
+} from '../utils/countrySelection';
 
 // Countries shown per region before its "more" toggle, while not searching. The first few
 // carry most of the cards; Europe alone lists 52.
@@ -13,8 +21,9 @@ export interface CountryPickerModalProps {
   onClose: () => void;
   selectedRegions: string[];
   onRegionsChange: (regions: string[]) => void;
-  selectedCountries: string[];
-  onCountriesChange: (countries: string[]) => void;
+  /** Pairs switched off within the selected regions (`src/utils/countrySelection.ts`). */
+  excludedCountries: string[];
+  onExcludedChange: (excluded: string[]) => void;
   /** Each region's pickable countries (`countryOptionsByRegion`). */
   countryOptions: Map<string, string[]>;
   /** Cards the current selection deals, shown on Done because the popup hides the Play count. */
@@ -24,34 +33,36 @@ export interface CountryPickerModalProps {
 const RegionCountries: React.FC<{
   region: string;
   countries: string[];
-  selected: boolean;
+  status: RegionStatus;
   /** Cap the list at the most-tagged few behind "+N more"; off while searching. */
   capped: boolean;
-  selectedCountries: string[];
+  isOn: (country: string) => boolean;
   onPick: (country: string) => void;
-  onClear: () => void;
-}> = ({ region, countries, selected, capped, selectedCountries, onPick, onClear }) => {
+  onSelectAll: () => void;
+}> = ({ region, countries, status, capped, isOn, onPick, onSelectAll }) => {
   const [showAll, setShowAll] = useState(false);
   const hidden = capped && !showAll ? countries.length - VISIBLE_COUNTRIES : 0;
-  // A picked country stays visible even when it sits in the collapsed tail.
+  // In a partial region the countries still on stay visible even in the collapsed tail, so
+  // "only Portugal" never hides the one chip that is on.
   const visible =
     hidden > 0
-      ? countries.filter((c, i) => i < VISIBLE_COUNTRIES || selectedCountries.includes(c))
+      ? countries.filter((c, i) => i < VISIBLE_COUNTRIES || (status === 'partial' && isOn(c)))
       : countries;
   const canCollapse = capped && showAll && countries.length > VISIBLE_COUNTRIES;
-  const picked = countries.filter((c) => selectedCountries.includes(c)).length;
-  const status = !selected ? (
-    <span className="text-xs text-text-muted font-body">adds region</span>
-  ) : picked === 0 ? (
-    <span className="text-xs font-medium text-text-muted font-body">All</span>
-  ) : (
-    <button
-      onClick={onClear}
-      className="text-xs font-medium text-text-muted font-body tabular-nums hover:text-text"
-    >
-      {picked} picked · Clear
-    </button>
-  );
+  const onCount = countries.filter(isOn).length;
+  const header =
+    status === 'off' ? (
+      <span className="text-xs text-text-muted font-body">adds region</span>
+    ) : status === 'full' ? (
+      <span className="text-xs font-medium text-text-muted font-body">All</span>
+    ) : (
+      <button
+        onClick={onSelectAll}
+        className="text-xs font-medium text-text-muted font-body tabular-nums hover:text-text"
+      >
+        {onCount} of {countries.length} · All
+      </button>
+    );
 
   return (
     <div>
@@ -59,15 +70,15 @@ const RegionCountries: React.FC<{
         <span className="text-xs font-medium uppercase tracking-wide text-text-muted font-body">
           {region}
         </span>
-        {status}
+        {header}
       </div>
       <div className="flex flex-wrap gap-2">
         {visible.map((country) => (
           <button
             key={country}
             onClick={() => onPick(country)}
-            aria-pressed={selectedCountries.includes(country)}
-            className={pillClass(selectedCountries.includes(country), 'sm')}
+            aria-pressed={isOn(country)}
+            className={pillClass(isOn(country), 'sm')}
           >
             {country}
           </button>
@@ -87,39 +98,37 @@ const RegionCountries: React.FC<{
 
 /**
  * The country picker behind the Regions group's "Countries" row: a search box over the selected
- * regions' countries, grouped by region. A search also reaches regions not selected, and picking
- * from one selects that region too. Rules: `filterByRegion` and docs/regions/index.md.
+ * regions' countries, grouped by region. Every country starts on, and a chip is blue exactly
+ * when its cards are in the deck. A search also reaches regions not selected, and picking from
+ * one selects that region with only that country. Rules: `src/utils/countrySelection.ts`.
  */
 const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
   open,
   onClose,
   selectedRegions,
   onRegionsChange,
-  selectedCountries,
-  onCountriesChange,
+  excludedCountries,
+  onExcludedChange,
   countryOptions,
   matchCount,
 }) => {
   const [query, setQuery] = useState('');
   const groups = matchCountries(countryOptions, query, selectedRegions);
+  const selection: RegionSelection = { regions: selectedRegions, excluded: excludedCountries };
 
   const close = () => {
     setQuery('');
     onClose();
   };
 
-  const pick = (country: string, region: string, regionSelected: boolean) => {
-    // Regions first: its prune runs on the old picks, so the new one survives it.
-    if (!regionSelected) onRegionsChange([...selectedRegions, region]);
-    onCountriesChange(
-      selectedCountries.includes(country)
-        ? selectedCountries.filter((c) => c !== country)
-        : [...selectedCountries, country]
-    );
+  const apply = (next: RegionSelection) => {
+    // Regions first: their prune runs on the old exclusions, so the new ones survive it.
+    if (next.regions !== selection.regions) onRegionsChange(next.regions);
+    if (next.excluded !== selection.excluded) onExcludedChange(next.excluded);
   };
 
-  const clearGroup = (countries: string[]) =>
-    onCountriesChange(selectedCountries.filter((c) => !countries.includes(c)));
+  const pick = (region: string, country: string) =>
+    apply(toggleCountry(selection, region, country, countryOptions.get(region) ?? []));
 
   return (
     <Modal
@@ -161,11 +170,11 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
             key={group.region}
             region={group.region}
             countries={group.countries}
-            selected={group.selected}
+            status={regionStatus(group.region, selection)}
             capped={query.trim() === ''}
-            selectedCountries={selectedCountries}
-            onPick={(country) => pick(country, group.region, group.selected)}
-            onClear={() => clearGroup(group.countries)}
+            isOn={(country) => isCountryOn(group.region, country, selection)}
+            onPick={(country) => pick(group.region, country)}
+            onSelectAll={() => apply(selectWholeRegion(selection, group.region))}
           />
         ))}
         {groups.length === 0 && (
@@ -174,11 +183,11 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
       </div>
       <div className="flex shrink-0 items-center gap-3 border-t border-border px-4 py-3">
         <button
-          onClick={() => onCountriesChange([])}
-          disabled={selectedCountries.length === 0}
+          onClick={() => onExcludedChange([])}
+          disabled={excludedCountries.length === 0}
           className="min-h-[44px] px-2 text-sm font-medium text-text-muted font-body hover:text-text disabled:opacity-40"
         >
-          Clear all
+          Select all
         </button>
         <button
           onClick={close}

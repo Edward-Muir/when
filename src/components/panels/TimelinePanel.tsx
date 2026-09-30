@@ -43,7 +43,7 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
   ]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>(ERA_DEFINITIONS.map((e) => e.id));
-  const { selectedRegions, setSelectedRegions, selectedCountries, setSelectedCountries } =
+  const { selectedRegions, setSelectedRegions, excludedCountries, setExcludedCountries } =
     useRegionSelection(() => [...ALL_REGIONS]);
 
   // UI state
@@ -84,7 +84,7 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
       categories: selectedCategories,
       eras: selectedEras,
       regions: selectedRegions,
-      countries: selectedCountries,
+      excludedCountries,
     });
     // Sort by year for chronological display
     return [...events].sort((a, b) => a.year - b.year);
@@ -94,7 +94,7 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
     selectedCategories,
     selectedEras,
     selectedRegions,
-    selectedCountries,
+    excludedCountries,
   ]);
 
   // Handle event tap to show description
@@ -182,8 +182,8 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
         setSelectedEras={setSelectedEras}
         selectedRegions={selectedRegions}
         setSelectedRegions={setSelectedRegions}
-        selectedCountries={selectedCountries}
-        setSelectedCountries={setSelectedCountries}
+        excludedCountries={excludedCountries}
+        setExcludedCountries={setExcludedCountries}
         countryOptions={countryOptions}
       />
 

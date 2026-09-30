@@ -2,7 +2,6 @@ import { Category, ALL_CATEGORIES } from '../types';
 import { seededRandom, stringToSeed, getCategoryDisplayName } from './gameLogic';
 import { ALL_ERAS } from './eras';
 import { CuratedTheme, getCuratedThemeForDate } from './curatedThemes';
-import { ALL_REGIONS, countryMacros, isRegionName } from './regions';
 import menu from '../data/dailyThemeMenu.json';
 
 export type DailyTheme =
@@ -174,20 +173,6 @@ export function getThemeDisplayName(theme: DailyTheme): string {
 export function getThemedCategories(theme: DailyTheme): Category[] {
   if (theme.type === 'category' || theme.type === 'mix') return [theme.value];
   return [...ALL_CATEGORIES];
-}
-
-/**
- * The region filter a theme implies, in the shape the Custom page's filter takes
- * (`filterByRegion`): a region theme selects that region; a country theme selects the
- * region(s) it sits in and picks the country, which narrows them to it. Anything else is
- * every region and no countries, which `filterByRegion` treats as no filter at all.
- */
-export function getThemedPlaces(theme: DailyTheme): { regions: string[]; countries: string[] } {
-  if (theme.type === 'place' || theme.type === 'mix') {
-    if (isRegionName(theme.place)) return { regions: [theme.place], countries: [] };
-    return { regions: countryMacros(theme.place), countries: [theme.place] };
-  }
-  return { regions: [...ALL_REGIONS], countries: [] };
 }
 
 /**

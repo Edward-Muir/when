@@ -6,7 +6,8 @@ import {
   countryOptionsByRegion,
   eventCountrySet,
   matchCountries,
-  pruneCountries,
+  countriesInRegion,
+  eventInPlace,
   ALL_REGIONS,
   REGION_DISPLAY_ORDER,
 } from './regions';
@@ -55,10 +56,20 @@ describe('country helpers', () => {
     expect(options.has('East Asia')).toBe(false);
   });
 
-  it('prunes countries whose regions are all deselected, and unknown names', () => {
-    expect(pruneCountries(['Germany', 'Japan', 'Atlantis'], ['East Asia'])).toEqual(['Japan']);
-    expect(pruneCountries(['Turkey'], ['Middle East & North Africa'])).toEqual(['Turkey']);
-    expect(pruneCountries(['Turkey'], ['Global'])).toEqual([]);
+  it('lists every taxonomy country of a region, a transcontinental one under each side', () => {
+    expect(countriesInRegion('Europe')).toContain('Germany');
+    expect(countriesInRegion('Europe')).toContain('Turkey');
+    expect(countriesInRegion('Middle East & North Africa')).toContain('Turkey');
+    expect(countriesInRegion('East Asia')).not.toContain('Germany');
+    expect(countriesInRegion('Global')).toEqual([]);
+  });
+
+  it('places a daily theme by region rollup, or a country by its own tag', () => {
+    expect(eventInPlace(tags('Germany'), 'Europe')).toBe(true);
+    expect(eventInPlace(tags('Germany'), 'Germany')).toBe(true);
+    expect(eventInPlace(tags('Germany'), 'East Asia')).toBe(false);
+    expect(eventInPlace(tags('Turkey', 'Middle East & North Africa'), 'Turkey')).toBe(true);
+    expect(eventInPlace(tags('Turkey', 'Middle East & North Africa'), 'Europe')).toBe(false);
   });
 });
 
@@ -93,10 +104,9 @@ describe('matchCountries', () => {
     expect(view('eg', ['Europe'])).toEqual([['Middle East & North Africa', ['Egypt'], false]]);
   });
 
-  it('does not offer a transcontinental country again under a side not selected', () => {
-    expect(view('tur', ['Europe'])).toEqual([['Europe', ['Turkey'], true]]);
-    expect(view('tur', ['East Asia'])).toEqual([
-      ['Europe', ['Turkey'], false],
+  it('offers a transcontinental country under every side, each its own switch', () => {
+    expect(view('tur', ['Europe'])).toEqual([
+      ['Europe', ['Turkey'], true],
       ['Middle East & North Africa', ['Turkey'], false],
     ]);
   });

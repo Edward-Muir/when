@@ -17,8 +17,8 @@ interface FilterPopupProps {
   setSelectedEras: (eras: Era[]) => void;
   selectedRegions: string[];
   setSelectedRegions: (regions: string[]) => void;
-  selectedCountries: string[];
-  setSelectedCountries: (countries: string[]) => void;
+  excludedCountries: string[];
+  setExcludedCountries: (countries: string[]) => void;
   countryOptions: Map<string, string[]>;
 }
 
@@ -35,8 +35,8 @@ const FilterPopup: React.FC<FilterPopupProps> = ({
   setSelectedEras,
   selectedRegions,
   setSelectedRegions,
-  selectedCountries,
-  setSelectedCountries,
+  excludedCountries,
+  setExcludedCountries,
   countryOptions,
 }) => {
   return (
@@ -69,8 +69,8 @@ const FilterPopup: React.FC<FilterPopupProps> = ({
         onErasChange={setSelectedEras}
         selectedRegions={selectedRegions}
         onRegionsChange={setSelectedRegions}
-        selectedCountries={selectedCountries}
-        onCountriesChange={setSelectedCountries}
+        excludedCountries={excludedCountries}
+        onExcludedChange={setExcludedCountries}
         countryOptions={countryOptions}
         matchCount={filteredCount}
       />

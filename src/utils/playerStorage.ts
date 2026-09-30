@@ -444,7 +444,12 @@ export interface CustomSettings {
    * existed lack it, and they must restore (as every region) rather than reset.
    */
   selectedRegions?: string[];
-  /** Optional for the same reason; stale names are pruned on restore, not here. */
+  /** Optional for the same reason; stale pairs are pruned on restore, not here. */
+  excludedCountries?: string[];
+  /**
+   * Retired: country picks in the model before exclusions, read once and converted on restore
+   * (`legacyPicksToExclusions`). Never written.
+   */
   selectedCountries?: string[];
   playerCount: number;
   cardsPerHand: number;

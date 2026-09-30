@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import CountryPickerModal from './CountryPickerModal';
+import { countriesInRegion } from '../utils/regions';
 
 const options = new Map([
   ['Europe', ['France', 'Germany']],
@@ -14,8 +15,8 @@ function setup(overrides: Partial<React.ComponentProps<typeof CountryPickerModal
     onClose: jest.fn(),
     selectedRegions: ['Europe'],
     onRegionsChange: jest.fn(),
-    selectedCountries: [] as string[],
-    onCountriesChange: jest.fn(),
+    excludedCountries: [] as string[],
+    onExcludedChange: jest.fn(),
     countryOptions: options,
     matchCount: 326,
     ...overrides,
@@ -24,52 +25,79 @@ function setup(overrides: Partial<React.ComponentProps<typeof CountryPickerModal
   return props;
 }
 
+const chip = (name: string) => screen.getByRole('button', { name });
+
 describe('CountryPickerModal', () => {
   it("lists only the selected regions' countries until a search", () => {
     setup();
-    expect(screen.getByRole('button', { name: 'Germany' })).toBeInTheDocument();
+    expect(chip('Germany')).toBeInTheDocument();
     expect(screen.queryByRole('button', { name: 'Japan' })).toBeNull();
   });
 
-  it('toggles a country', async () => {
-    const props = setup({ selectedCountries: ['France'] });
-    await userEvent.click(screen.getByRole('button', { name: 'Germany' }));
-    expect(props.onCountriesChange).toHaveBeenLastCalledWith(['France', 'Germany']);
-    await userEvent.click(screen.getByRole('button', { name: 'France' }));
-    expect(props.onCountriesChange).toHaveBeenLastCalledWith([]);
+  it('starts with every country on', () => {
+    setup();
+    expect(chip('France')).toHaveAttribute('aria-pressed', 'true');
+    expect(chip('Germany')).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByText('All')).toBeInTheDocument();
+  });
+
+  it('switches a country off, and back on', async () => {
+    const props = setup();
+    await userEvent.click(chip('Germany'));
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith(['Europe|Germany']);
     expect(props.onRegionsChange).not.toHaveBeenCalled();
   });
 
-  it('adds the region of a country found by search outside the selection', async () => {
-    const props = setup();
-    await userEvent.type(screen.getByRole('searchbox', { name: 'Search countries' }), 'jap');
-    await userEvent.click(screen.getByRole('button', { name: 'Japan' }));
-    expect(props.onRegionsChange).toHaveBeenCalledWith(['Europe', 'East Asia']);
-    expect(props.onCountriesChange).toHaveBeenCalledWith(['Japan']);
+  it('shows a switched-off country as off, with the region partial', async () => {
+    const props = setup({ excludedCountries: ['Europe|Germany'] });
+    expect(chip('Germany')).toHaveAttribute('aria-pressed', 'false');
+    await userEvent.click(chip('1 of 2 · All'));
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
+    await userEvent.click(chip('Germany'));
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
   });
 
-  it('clears every pick, and shows the deal count on Done', async () => {
-    const props = setup({ selectedCountries: ['Germany'] });
-    await userEvent.click(screen.getByRole('button', { name: 'Clear all' }));
-    expect(props.onCountriesChange).toHaveBeenCalledWith([]);
-    await userEvent.click(screen.getByRole('button', { name: 'Done · 326 events' }));
+  it('turns the region off with its last country', async () => {
+    const props = setup({ excludedCountries: ['Europe|Germany'] });
+    await userEvent.click(chip('France'));
+    expect(props.onRegionsChange).toHaveBeenCalledWith([]);
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
+  });
+
+  it('adds the region of a country found by search, with only that country on', async () => {
+    const props = setup();
+    await userEvent.type(screen.getByRole('searchbox', { name: 'Search countries' }), 'jap');
+    await userEvent.click(chip('Japan'));
+    expect(props.onRegionsChange).toHaveBeenCalledWith(['Europe', 'East Asia']);
+    const others = countriesInRegion('East Asia')
+      .filter((c) => c !== 'Japan')
+      .map((c) => `East Asia|${c}`);
+    expect(props.onExcludedChange).toHaveBeenCalledWith(others);
+  });
+
+  it('puts every country back with Select all, and shows the deal count on Done', async () => {
+    const props = setup({ excludedCountries: ['Europe|Germany'] });
+    await userEvent.click(chip('Select all'));
+    expect(props.onExcludedChange).toHaveBeenCalledWith([]);
+    await userEvent.click(chip('Done · 326 events'));
     expect(props.onClose).toHaveBeenCalledTimes(1);
   });
 
   it('shows the first eight behind "+N more", but every match while searching', async () => {
     const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Zed'];
-    setup({ countryOptions: new Map([['Europe', nine]]), selectedCountries: [] });
+    setup({ countryOptions: new Map([['Europe', nine]]) });
     expect(screen.queryByRole('button', { name: 'Zed' })).toBeNull();
-    await userEvent.click(screen.getByRole('button', { name: '+1 more' }));
-    expect(screen.getByRole('button', { name: 'Zed' })).toBeInTheDocument();
-    await userEvent.click(screen.getByRole('button', { name: 'Show fewer' }));
+    await userEvent.click(chip('+1 more'));
+    expect(chip('Zed')).toBeInTheDocument();
+    await userEvent.click(chip('Show fewer'));
     await userEvent.type(screen.getByRole('searchbox', { name: 'Search countries' }), 'z');
-    expect(screen.getByRole('button', { name: 'Zed' })).toBeInTheDocument();
+    expect(chip('Zed')).toBeInTheDocument();
   });
 
-  it('keeps a picked country visible in the collapsed tail', () => {
+  it('keeps a country that is still on visible in the collapsed tail of a partial region', () => {
     const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Zed'];
-    setup({ countryOptions: new Map([['Europe', nine]]), selectedCountries: ['Zed'] });
-    expect(screen.getByRole('button', { name: 'Zed' })).toBeInTheDocument();
+    const allButZed = nine.filter((c) => c !== 'Zed').map((c) => `Europe|${c}`);
+    setup({ countryOptions: new Map([['Europe', nine]]), excludedCountries: allButZed });
+    expect(chip('Zed')).toBeInTheDocument();
   });
 });

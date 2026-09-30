@@ -233,10 +233,11 @@ export interface GameConfig {
    */
   selectedRegions?: string[];
   /**
-   * Countries narrowing the regions they belong to (`filterByRegion`). Missing or empty means
-   * none, so every selected region is dealt whole.
+   * (region, country) pairs switched off within the selected regions (`pairKey` in
+   * src/utils/countrySelection.ts, applied by `filterByRegion`). Missing or empty means none, so
+   * every selected region is dealt whole.
    */
-  selectedCountries?: string[];
+  excludedCountries?: string[];
   dailySeed?: string;
 
   /**

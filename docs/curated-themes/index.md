@@ -87,7 +87,9 @@ categories otherwise. From **2026-10-06** they draw from a menu that also holds 
 "Warfare in the United States"), weighted Everything 30, category 25, region 10, country 15,
 pairing 20. The menu is `src/data/dailyThemeMenu.json`, written by
 `npm run daily-menu` (`scripts/daily-theme-menu.js`); the draw is `menuTheme` in
-`dailyTheme.ts`, and the pool goes through `filterPool`, the Custom page's own filter chain.
+`dailyTheme.ts`. The pool is `filterPool` over every region, then `eventInPlace` (`regions.ts`):
+a region through `eventRegionSet`, a country by its own tag. Deliberately not the Custom region
+filter, whose rules are the picker's to change; a daily's pool must never move.
 
 **The menu is frozen and dated, never derived at runtime.** A seeded theme is
 `list[floor(random() * list.length)]`, so any change to a list re-themes every date it covers,
@@ -125,8 +127,7 @@ The home card wraps them, and the in-game `TopBar` pill now wraps to two lines i
 truncating, since a pairing's place comes last and was the part one line cut off. The Middle
 East & North Africa pairings still clip on a 320px phone ("Architecture in / the Middle…");
 the home card and the share text carry the full name. A daily deck of 60 cards or fewer is
-kept out of the intro in full, like a curated one (`THIN_DAILY_DECK` in `App.tsx`). The daily's `GameConfig` now carries the place as
-`selectedRegions`/`selectedCountries`, informational like its categories. Nothing server-side
+kept out of the intro in full, like a curated one (`THIN_DAILY_DECK` in `App.tsx`). Nothing server-side
 changed: the bot ceiling of 20 is below any 30-card pool, and the API never derives a theme.
 "Theme Cleared!" stays curated-only, although a 30-card pairing is clearable; that and keeping
 the same place off consecutive days are open follow-ups.
