@@ -20,6 +20,29 @@ Bundle id `com.playwhen.app`; `ios/` is committed, `ios/App/App/public/` is giti
 Scripts: `npm run cap:sync`, `cap:open:ios`. (`cap:open:android` exists but there is no
 `android/` directory — Android was never added.)
 
+## UIScene lifecycle (required from the iOS 27 SDK)
+
+**1.28.0 was rejected by App Review for crashing on launch** on iOS 27.0 while running fine on
+an iOS 26.6 phone. The shell was the pre-scene Capacitor template: no
+`UIApplicationSceneManifest` in `Info.plist`, no scene delegate. From the iOS 27 SDK UIKit
+asserts scene adoption at launch (TN3187), so any binary built with Xcode 27 dies on iOS 27
+before `AppDelegate` runs, and the same binary launches normally on iOS 26. **Testing on an
+iOS 26 device proves nothing here; run on an iOS 27 simulator or device before submitting.**
+
+Fixed by moving to Capacitor 8.5, which adopts UIScene, and applying its migration exactly as
+its own template ships it: `SceneDelegate.swift` (builds the window around a
+`CAPBridgeViewController` and forwards to `SceneDelegateProxy`), the scene manifest in
+`Info.plist`, and `configurationForConnecting` in `AppDelegate`. Don't remove any of the three.
+With a manifest present iOS stops calling `AppDelegate`'s `open url:` / `continue
+userActivity:`; URL opens and universal links now arrive through `SceneDelegateProxy`, which
+`@capacitor/app` listens to. Notification taps are unaffected (they go through
+`UNUserNotificationCenter`).
+
+The migrator (`npx cap migrate`, or its `migrateToUIScene` step alone) wrote the
+`project.pbxproj` file reference with `explicitFileType = undefined` and reformatted
+`Info.plist`; both were hand-corrected to match Capacitor's template. Check that diff if it is
+ever re-run.
+
 ## Safe-area offsets — use the utilities, not pixels
 
 `TopBar` grows with the device inset via `pt-safe`, so its real height is
