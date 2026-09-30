@@ -2,1112 +2,997 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
-## [1.26.0](https://github.com/Edward-Muir/when/compare/v1.25.0...v1.26.0) (2026-09-22)
-
+## [1.29.0](https://github.com/Edward-Muir/when/compare/v1.28.0...v1.29.0) (2026-09-29)
 
 ### Features
 
-* evidence windows across the whole catalogue ([#62](https://github.com/Edward-Muir/when/issues/62)) ([eddd870](https://github.com/Edward-Muir/when/commit/eddd87000c602b4ac0c379007ea75495e90e366e))
+- resume an unfinished daily instead of dealing it again ([#66](https://github.com/Edward-Muir/when/issues/66)) ([40f1892](https://github.com/Edward-Muir/when/commit/40f18922de7238da2005ef8ec77a5996fdf6d394))
+
+## [1.28.0](https://github.com/Edward-Muir/when/compare/v1.27.0...v1.28.0) (2026-09-29)
+
+### Features
+
+- 414 curated theme events with images and colours ([#65](https://github.com/Edward-Muir/when/issues/65)) ([5aaae0d](https://github.com/Edward-Muir/when/commit/5aaae0d00ea1f67dc4f225432193dd6ade7224d8))
+
+## [1.27.0](https://github.com/Edward-Muir/when/compare/v1.26.0...v1.27.0) (2026-09-25)
+
+### Features
+
+- painted hourglass app icon, iOS launch screen and App Store screenshots ([#64](https://github.com/Edward-Muir/when/issues/64)) ([b06f37e](https://github.com/Edward-Muir/when/commit/b06f37e8b1424303b3dd4055a9a46f03683d0474))
+
+## [1.26.0](https://github.com/Edward-Muir/when/compare/v1.25.0...v1.26.0) (2026-09-22)
+
+### Features
+
+- evidence windows across the whole catalogue ([#62](https://github.com/Edward-Muir/when/issues/62)) ([eddd870](https://github.com/Edward-Muir/when/commit/eddd87000c602b4ac0c379007ea75495e90e366e))
 
 ## [1.25.0](https://github.com/Edward-Muir/when/compare/v1.24.0...v1.25.0) (2026-09-18)
 
-
 ### Features
 
-* reopen today's finished daily timeline from the Daily card ([#61](https://github.com/Edward-Muir/when/issues/61)) ([2350a10](https://github.com/Edward-Muir/when/commit/2350a10c5cb3848ec8c22c05afff5177f131ebdc))
+- reopen today's finished daily timeline from the Daily card ([#61](https://github.com/Edward-Muir/when/issues/61)) ([2350a10](https://github.com/Edward-Muir/when/commit/2350a10c5cb3848ec8c22c05afff5177f131ebdc))
 
 ## [1.24.0](https://github.com/Edward-Muir/when/compare/v1.23.0...v1.24.0) (2026-09-18)
 
-
 ### Features
 
-* evidence windows for events, and release notes players can read ([#60](https://github.com/Edward-Muir/when/issues/60)) ([6b4d317](https://github.com/Edward-Muir/when/commit/6b4d317fa4ce974c577f3721f5f3e01a4435ce84))
+- evidence windows for events, and release notes players can read ([#60](https://github.com/Edward-Muir/when/issues/60)) ([6b4d317](https://github.com/Edward-Muir/when/commit/6b4d317fa4ce974c577f3721f5f3e01a4435ce84))
 
 ## [1.23.0](https://github.com/Edward-Muir/when/compare/v1.22.0...v1.23.0) (2026-09-17)
 
-
 ### Features
 
-* **event-detail:** long-form prose for all 5,460 events ([#59](https://github.com/Edward-Muir/when/issues/59)) ([1481f03](https://github.com/Edward-Muir/when/commit/1481f035f8cf1dc9c5ba149b55b6420e5bc48266))
+- **event-detail:** long-form prose for all 5,460 events ([#59](https://github.com/Edward-Muir/when/issues/59)) ([1481f03](https://github.com/Edward-Muir/when/commit/1481f035f8cf1dc9c5ba149b55b6420e5bc48266))
 
 ## [1.22.0](https://github.com/Edward-Muir/when/compare/v1.21.0...v1.22.0) (2026-09-16)
 
-
 ### Features
 
-* **timeline:** a rail that grows with the board, and a marker that lands as its tick ([#58](https://github.com/Edward-Muir/when/issues/58)) ([1b0e202](https://github.com/Edward-Muir/when/commit/1b0e202a269cf15e2c5501375a56b8dd950dca66))
+- **timeline:** a rail that grows with the board, and a marker that lands as its tick ([#58](https://github.com/Edward-Muir/when/issues/58)) ([1b0e202](https://github.com/Edward-Muir/when/commit/1b0e202a269cf15e2c5501375a56b8dd950dca66))
 
 ## [1.21.0](https://github.com/Edward-Muir/when/compare/v1.20.0...v1.21.0) (2026-09-14)
 
-
 ### Features
 
-* draw the real number of cards in the hand counter ([#57](https://github.com/Edward-Muir/when/issues/57)) ([315bfc7](https://github.com/Edward-Muir/when/commit/315bfc702b95af55d348f67ee73ca69e6ffd7cbb))
+- draw the real number of cards in the hand counter ([#57](https://github.com/Edward-Muir/when/issues/57)) ([315bfc7](https://github.com/Edward-Muir/when/commit/315bfc702b95af55d348f67ee73ca69e6ffd7cbb))
 
 ## [1.20.0](https://github.com/Edward-Muir/when/compare/v1.19.0...v1.20.0) (2026-09-09)
 
-
 ### Features
 
-* centre the game board at desktop widths ([#56](https://github.com/Edward-Muir/when/issues/56)) ([6a2fc5c](https://github.com/Edward-Muir/when/commit/6a2fc5ccce889fc8e19d548ff719a843c4fcc5e0))
+- centre the game board at desktop widths ([#56](https://github.com/Edward-Muir/when/issues/56)) ([6a2fc5c](https://github.com/Edward-Muir/when/commit/6a2fc5ccce889fc8e19d548ff719a843c4fcc5e0))
 
 ## [1.19.0](https://github.com/Edward-Muir/when/compare/v1.18.0...v1.19.0) (2026-09-04)
 
-
 ### Features
 
-* contextual onboarding hints, one per placement, plus Reset Hints ([#55](https://github.com/Edward-Muir/when/issues/55)) ([ad46fc6](https://github.com/Edward-Muir/when/commit/ad46fc6c321daddbb4754a7823b527ddf5725c2e))
+- contextual onboarding hints, one per placement, plus Reset Hints ([#55](https://github.com/Edward-Muir/when/issues/55)) ([ad46fc6](https://github.com/Edward-Muir/when/commit/ad46fc6c321daddbb4754a7823b527ddf5725c2e))
 
 ## [1.18.0](https://github.com/Edward-Muir/when/compare/v1.17.1...v1.18.0) (2026-09-02)
 
-
 ### Features
 
-* Archive tab, rebuilt Stats page, discoverable Achievements and My Timeline ([#54](https://github.com/Edward-Muir/when/issues/54)) ([2b51ea3](https://github.com/Edward-Muir/when/commit/2b51ea36de071c8d53d8a0c88c2866ab561177c7))
+- Archive tab, rebuilt Stats page, discoverable Achievements and My Timeline ([#54](https://github.com/Edward-Muir/when/issues/54)) ([2b51ea3](https://github.com/Edward-Muir/when/commit/2b51ea36de071c8d53d8a0c88c2866ab561177c7))
 
 ## [1.17.1](https://github.com/Edward-Muir/when/compare/v1.17.0...v1.17.1) (2026-09-01)
 
-
 ### Bug Fixes
 
-* **themes:** bypass the shared cache when reading baseVersion ([#53](https://github.com/Edward-Muir/when/issues/53)) ([4ac31bd](https://github.com/Edward-Muir/when/commit/4ac31bd1f295125656ecb43e275c5da8fb7115bd))
+- **themes:** bypass the shared cache when reading baseVersion ([#53](https://github.com/Edward-Muir/when/issues/53)) ([4ac31bd](https://github.com/Edward-Muir/when/commit/4ac31bd1f295125656ecb43e275c5da8fb7115bd))
 
 ## [1.17.0](https://github.com/Edward-Muir/when/compare/v1.16.0...v1.17.0) (2026-08-27)
 
-
 ### Features
 
-* add images to the curated theme events ([0f52954](https://github.com/Edward-Muir/when/commit/0f52954f7d85588ea744af2151e7a26c57346092))
-* add the curated theme bank with illustrated events ([761ede5](https://github.com/Edward-Muir/when/commit/761ede564f6eda66fe57ff1f9d036600c17fcb73))
-* **events:** add themes.json for curated-theme events ([6a1d4c3](https://github.com/Edward-Muir/when/commit/6a1d4c3405af3c4b939e8dfcdab15e29fdb2a5eb))
-* **themes:** add ciphers, games, cosmic-ideas and the remaining decks ([f50b0a5](https://github.com/Edward-Muir/when/commit/f50b0a5a6d0ff0902d8043dd79f382eff1ad34fb))
-* **themes:** add money and what-we-drink decks ([2379e7e](https://github.com/Edward-Muir/when/commit/2379e7ee61fffbecc55a62c774feb3f0255741b3))
-* **themes:** add plagues, clockwork, automata and assassinations decks ([f1218b0](https://github.com/Edward-Muir/when/commit/f1218b02a540fad53cc2e852b48c4f02dc5bc037))
-* **themes:** add the eureka deck, completing nineteen themes ([cd7acf5](https://github.com/Edward-Muir/when/commit/cd7acf55a7817dbff7fb3e5af38a0e7037f2b59b))
-* **themes:** project theme gates over un-illustrated events ([50c6e4d](https://github.com/Edward-Muir/when/commit/50c6e4db67eff5f1d6c016d43335d9134aed1329))
-
+- add images to the curated theme events ([0f52954](https://github.com/Edward-Muir/when/commit/0f52954f7d85588ea744af2151e7a26c57346092))
+- add the curated theme bank with illustrated events ([761ede5](https://github.com/Edward-Muir/when/commit/761ede564f6eda66fe57ff1f9d036600c17fcb73))
+- **events:** add themes.json for curated-theme events ([6a1d4c3](https://github.com/Edward-Muir/when/commit/6a1d4c3405af3c4b939e8dfcdab15e29fdb2a5eb))
+- **themes:** add ciphers, games, cosmic-ideas and the remaining decks ([f50b0a5](https://github.com/Edward-Muir/when/commit/f50b0a5a6d0ff0902d8043dd79f382eff1ad34fb))
+- **themes:** add money and what-we-drink decks ([2379e7e](https://github.com/Edward-Muir/when/commit/2379e7ee61fffbecc55a62c774feb3f0255741b3))
+- **themes:** add plagues, clockwork, automata and assassinations decks ([f1218b0](https://github.com/Edward-Muir/when/commit/f1218b02a540fad53cc2e852b48c4f02dc5bc037))
+- **themes:** add the eureka deck, completing nineteen themes ([cd7acf5](https://github.com/Edward-Muir/when/commit/cd7acf55a7817dbff7fb3e5af38a0e7037f2b59b))
+- **themes:** project theme gates over un-illustrated events ([50c6e4d](https://github.com/Edward-Muir/when/commit/50c6e4db67eff5f1d6c016d43335d9134aed1329))
 
 ### Bug Fixes
 
-* **art:** emit the five-column prompt CSV the pipeline actually reads ([c1a8873](https://github.com/Edward-Muir/when/commit/c1a88739923a061d3026edb3b48291e968598ece))
-* **scripts:** stop find-duplicates crashing on a larger catalogue ([450eccb](https://github.com/Edward-Muir/when/commit/450eccbe75e8124ea21b85201752546d1751d04f))
-* **themes:** drop two events that duplicated existing cards ([3924ef2](https://github.com/Edward-Muir/when/commit/3924ef26d08d6cef40a37828132e81a06e16ccbb))
+- **art:** emit the five-column prompt CSV the pipeline actually reads ([c1a8873](https://github.com/Edward-Muir/when/commit/c1a88739923a061d3026edb3b48291e968598ece))
+- **scripts:** stop find-duplicates crashing on a larger catalogue ([450eccb](https://github.com/Edward-Muir/when/commit/450eccbe75e8124ea21b85201752546d1751d04f))
+- **themes:** drop two events that duplicated existing cards ([3924ef2](https://github.com/Edward-Muir/when/commit/3924ef26d08d6cef40a37828132e81a06e16ccbb))
 
 ## [1.16.0](https://github.com/Edward-Muir/when/compare/v1.15.2...v1.16.0) (2026-08-23)
 
-
 ### Features
 
-* Add indonesian events ([b4d373f](https://github.com/Edward-Muir/when/commit/b4d373fa2e0309e8e4e2b4a85c86619304b4031d))
+- Add indonesian events ([b4d373f](https://github.com/Edward-Muir/when/commit/b4d373fa2e0309e8e4e2b4a85c86619304b4031d))
 
 ## [1.15.2](https://github.com/Edward-Muir/when/compare/v1.15.1...v1.15.2) (2026-08-23)
 
-
 ### Bug Fixes
 
-* remove 522 duplicate events from the timeline deck ([#51](https://github.com/Edward-Muir/when/issues/51)) ([9233ffc](https://github.com/Edward-Muir/when/commit/9233ffc38bda9ce40e5f95790da8d07be7bc5e92)), closes [#26](https://github.com/Edward-Muir/when/issues/26)
+- remove 522 duplicate events from the timeline deck ([#51](https://github.com/Edward-Muir/when/issues/51)) ([9233ffc](https://github.com/Edward-Muir/when/commit/9233ffc38bda9ce40e5f95790da8d07be7bc5e92)), closes [#26](https://github.com/Edward-Muir/when/issues/26)
 
 ## [1.15.1](https://github.com/Edward-Muir/when/compare/v1.15.0...v1.15.1) (2026-08-22)
 
-
 ### Bug Fixes
 
-* take the date out of player-visible card text ([#50](https://github.com/Edward-Muir/when/issues/50)) ([489de75](https://github.com/Edward-Muir/when/commit/489de75222377182e25d6b5ef49f4263287ca7e1))
+- take the date out of player-visible card text ([#50](https://github.com/Edward-Muir/when/issues/50)) ([489de75](https://github.com/Edward-Muir/when/commit/489de75222377182e25d6b5ef49f4263287ca7e1))
 
 ## [1.15.0](https://github.com/Edward-Muir/when/compare/v1.14.0...v1.15.0) (2026-08-20)
 
-
 ### Features
 
-* Add sporting events ([fd15168](https://github.com/Edward-Muir/when/commit/fd15168088e0d6da0af884d0d20a7181d18db151))
+- Add sporting events ([fd15168](https://github.com/Edward-Muir/when/commit/fd15168088e0d6da0af884d0d20a7181d18db151))
 
 ## [1.14.0](https://github.com/Edward-Muir/when/compare/v1.13.0...v1.14.0) (2026-08-20)
 
-
 ### Features
 
-* Add sporting events ([81fdd91](https://github.com/Edward-Muir/when/commit/81fdd91935343ac62dabb41528cdd50514e194d0))
+- Add sporting events ([81fdd91](https://github.com/Edward-Muir/when/commit/81fdd91935343ac62dabb41528cdd50514e194d0))
 
 ## [1.13.0](https://github.com/Edward-Muir/when/compare/v1.12.2...v1.13.0) (2026-08-20)
 
-
 ### Features
 
-* add 14 Indonesian history events for a 36-card curated theme ([#49](https://github.com/Edward-Muir/when/issues/49)) ([7ef32be](https://github.com/Edward-Muir/when/commit/7ef32be84d1a842ed694919c05941fdb9636ea6f))
+- add 14 Indonesian history events for a 36-card curated theme ([#49](https://github.com/Edward-Muir/when/issues/49)) ([7ef32be](https://github.com/Edward-Muir/when/commit/7ef32be84d1a842ed694919c05941fdb9636ea6f))
 
 ## [1.12.2](https://github.com/Edward-Muir/when/compare/v1.12.1...v1.12.2) (2026-08-20)
 
-
 ### Bug Fixes
 
-* revert the curated theme label change ([#47](https://github.com/Edward-Muir/when/issues/47)) ([22c236b](https://github.com/Edward-Muir/when/commit/22c236be844e47b848ad44b120cf8e84a1e3891d)), closes [#46](https://github.com/Edward-Muir/when/issues/46)
+- revert the curated theme label change ([#47](https://github.com/Edward-Muir/when/issues/47)) ([22c236b](https://github.com/Edward-Muir/when/commit/22c236be844e47b848ad44b120cf8e84a1e3891d)), closes [#46](https://github.com/Edward-Muir/when/issues/46)
 
 ## [1.12.1](https://github.com/Edward-Muir/when/compare/v1.12.0...v1.12.1) (2026-08-20)
 
-
 ### Bug Fixes
 
-* show the curated theme name on the day it runs ([#46](https://github.com/Edward-Muir/when/issues/46)) ([6a29a8a](https://github.com/Edward-Muir/when/commit/6a29a8a878b4552f39cfa310113038e532a88502))
+- show the curated theme name on the day it runs ([#46](https://github.com/Edward-Muir/when/issues/46)) ([6a29a8a](https://github.com/Edward-Muir/when/commit/6a29a8a878b4552f39cfa310113038e532a88502))
 
 ## [1.12.0](https://github.com/Edward-Muir/when/compare/v1.11.2...v1.12.0) (2026-08-19)
 
-
 ### Features
 
-* hand-authored daily themes ([#44](https://github.com/Edward-Muir/when/issues/44)) ([5e1a605](https://github.com/Edward-Muir/when/commit/5e1a6056e6cc506026122f323fdae14f73d26aad))
+- hand-authored daily themes ([#44](https://github.com/Edward-Muir/when/issues/44)) ([5e1a605](https://github.com/Edward-Muir/when/commit/5e1a6056e6cc506026122f323fdae14f73d26aad))
 
 ## [1.11.2](https://github.com/Edward-Muir/when/compare/v1.11.1...v1.11.2) (2026-08-16)
 
-
 ### Bug Fixes
 
-* stop rejecting daily leaderboard submissions, and let a failed one be retried ([#43](https://github.com/Edward-Muir/when/issues/43)) ([8592f92](https://github.com/Edward-Muir/when/commit/8592f920d55cae5211f6c7d5c9ae96d4fee6ad70))
+- stop rejecting daily leaderboard submissions, and let a failed one be retried ([#43](https://github.com/Edward-Muir/when/issues/43)) ([8592f92](https://github.com/Edward-Muir/when/commit/8592f920d55cae5211f6c7d5c9ae96d4fee6ad70))
 
 ## [1.11.1](https://github.com/Edward-Muir/when/compare/v1.11.0...v1.11.1) (2026-08-15)
 
-
 ### Bug Fixes
 
-* make the game-start loading overlay readable and redesign it as a scrim band ([#42](https://github.com/Edward-Muir/when/issues/42)) ([9f72d6d](https://github.com/Edward-Muir/when/commit/9f72d6d8006ac2eaa21a76f287538a6c7aa871e0))
+- make the game-start loading overlay readable and redesign it as a scrim band ([#42](https://github.com/Edward-Muir/when/issues/42)) ([9f72d6d](https://github.com/Edward-Muir/when/commit/9f72d6d8006ac2eaa21a76f287538a6c7aa871e0))
 
 ## [1.11.0](https://github.com/Edward-Muir/when/compare/v1.10.0...v1.11.0) (2026-08-15)
 
-
 ### Features
 
-* make the share the finale of the end-of-game sequence ([#41](https://github.com/Edward-Muir/when/issues/41)) ([b40a37f](https://github.com/Edward-Muir/when/commit/b40a37fec6fc1bfef5b634ebdd41eb41ef6990f0)), closes [#49](https://github.com/Edward-Muir/when/issues/49)
+- make the share the finale of the end-of-game sequence ([#41](https://github.com/Edward-Muir/when/issues/41)) ([b40a37f](https://github.com/Edward-Muir/when/commit/b40a37fec6fc1bfef5b634ebdd41eb41ef6990f0)), closes [#49](https://github.com/Edward-Muir/when/issues/49)
 
 ## [1.10.0](https://github.com/Edward-Muir/when/compare/v1.9.0...v1.10.0) (2026-08-15)
 
-
 ### Features
 
-* add a sports category with 374 events ([#40](https://github.com/Edward-Muir/when/issues/40)) ([cfaafa0](https://github.com/Edward-Muir/when/commit/cfaafa00180005c582ee9a260e1dad759d39a08a))
+- add a sports category with 374 events ([#40](https://github.com/Edward-Muir/when/issues/40)) ([cfaafa0](https://github.com/Edward-Muir/when/commit/cfaafa00180005c582ee9a260e1dad759d39a08a))
 
 ## [1.9.0](https://github.com/Edward-Muir/when/compare/v1.8.1...v1.9.0) (2026-08-15)
 
-
 ### Features
 
-* attach a story card to shares and slim the share message ([#39](https://github.com/Edward-Muir/when/issues/39)) ([638c8bd](https://github.com/Edward-Muir/when/commit/638c8bdb770a8fb3be9c2820ccff9ab0c5ecdafe)), closes [#1](https://github.com/Edward-Muir/when/issues/1) [#21](https://github.com/Edward-Muir/when/issues/21)
+- attach a story card to shares and slim the share message ([#39](https://github.com/Edward-Muir/when/issues/39)) ([638c8bd](https://github.com/Edward-Muir/when/commit/638c8bdb770a8fb3be9c2820ccff9ab0c5ecdafe)), closes [#1](https://github.com/Edward-Muir/when/issues/1) [#21](https://github.com/Edward-Muir/when/issues/21)
 
 ## [1.8.1](https://github.com/Edward-Muir/when/compare/v1.8.0...v1.8.1) (2026-08-15)
 
-
 ### Bug Fixes
 
-* stop the leaderboard modal running under the iOS status bar ([#38](https://github.com/Edward-Muir/when/issues/38)) ([4021286](https://github.com/Edward-Muir/when/commit/40212863994275ff21d7d668bda60e90cde0a979))
+- stop the leaderboard modal running under the iOS status bar ([#38](https://github.com/Edward-Muir/when/issues/38)) ([4021286](https://github.com/Edward-Muir/when/commit/40212863994275ff21d7d668bda60e90cde0a979))
 
 ## [1.8.0](https://github.com/Edward-Muir/when/compare/v1.7.3...v1.8.0) (2026-08-15)
 
-
 ### Features
 
-* show the entire daily leaderboard ([#37](https://github.com/Edward-Muir/when/issues/37)) ([b026353](https://github.com/Edward-Muir/when/commit/b026353e7717a9ef34e1fda62a39ae49b3738575))
+- show the entire daily leaderboard ([#37](https://github.com/Edward-Muir/when/issues/37)) ([b026353](https://github.com/Edward-Muir/when/commit/b026353e7717a9ef34e1fda62a39ae49b3738575))
 
 ## [1.7.3](https://github.com/Edward-Muir/when/compare/v1.7.2...v1.7.3) (2026-08-15)
 
-
 ### Bug Fixes
 
-* block spoonerised slurs in leaderboard display names ([#35](https://github.com/Edward-Muir/when/issues/35)) ([fd87641](https://github.com/Edward-Muir/when/commit/fd876415683450667cb421183607a21fc2f32e34)), closes [#1](https://github.com/Edward-Muir/when/issues/1)
+- block spoonerised slurs in leaderboard display names ([#35](https://github.com/Edward-Muir/when/issues/35)) ([fd87641](https://github.com/Edward-Muir/when/commit/fd876415683450667cb421183607a21fc2f32e34)), closes [#1](https://github.com/Edward-Muir/when/issues/1)
 
 ## [1.7.2](https://github.com/Edward-Muir/when/compare/v1.7.1...v1.7.2) (2026-08-13)
 
-
 ### Bug Fixes
 
-* correct six player-reported event cards ([#34](https://github.com/Edward-Muir/when/issues/34)) ([ef4c37a](https://github.com/Edward-Muir/when/commit/ef4c37a53ce98dfb297f47babf31210a7146966d))
+- correct six player-reported event cards ([#34](https://github.com/Edward-Muir/when/issues/34)) ([ef4c37a](https://github.com/Edward-Muir/when/commit/ef4c37a53ce98dfb297f47babf31210a7146966d))
 
 ## [1.7.1](https://github.com/Edward-Muir/when/compare/v1.7.0...v1.7.1) (2026-08-13)
 
-
 ### Bug Fixes
 
-* regrade every event difficulty label against rubric v3 ([#33](https://github.com/Edward-Muir/when/issues/33)) ([9f9196c](https://github.com/Edward-Muir/when/commit/9f9196c17017244edc368c0ff11cb5dfe7357cf5))
+- regrade every event difficulty label against rubric v3 ([#33](https://github.com/Edward-Muir/when/issues/33)) ([9f9196c](https://github.com/Edward-Muir/when/commit/9f9196c17017244edc368c0ff11cb5dfe7357cf5))
 
 ## [1.7.0](https://github.com/Edward-Muir/when/compare/v1.6.4...v1.7.0) (2026-08-13)
 
-
 ### Features
 
-* compose decks with a difficulty ramp instead of a plain shuffle ([#32](https://github.com/Edward-Muir/when/issues/32)) ([6dc07b0](https://github.com/Edward-Muir/when/commit/6dc07b072119b847b872d95483ca716b69a47995))
+- compose decks with a difficulty ramp instead of a plain shuffle ([#32](https://github.com/Edward-Muir/when/issues/32)) ([6dc07b0](https://github.com/Edward-Muir/when/commit/6dc07b072119b847b872d95483ca716b69a47995))
 
 ## [1.6.4](https://github.com/Edward-Muir/when/compare/v1.6.3...v1.6.4) (2026-08-12)
 
-
 ### Bug Fixes
 
-* key the puzzle day on the player's local date ([#31](https://github.com/Edward-Muir/when/issues/31)) ([34a78ad](https://github.com/Edward-Muir/when/commit/34a78add4893188ea46725a1416e27f8b95e8cc5))
+- key the puzzle day on the player's local date ([#31](https://github.com/Edward-Muir/when/issues/31)) ([34a78ad](https://github.com/Edward-Muir/when/commit/34a78add4893188ea46725a1416e27f8b95e8cc5))
 
 ## [1.6.3](https://github.com/Edward-Muir/when/compare/v1.6.2...v1.6.3) (2026-08-10)
 
-
 ### Performance
 
-* bound the intro animation to a weekly image pool ([#30](https://github.com/Edward-Muir/when/issues/30)) ([7f0a911](https://github.com/Edward-Muir/when/commit/7f0a9112895dc6c706885fae78e1921bdbf3af49))
+- bound the intro animation to a weekly image pool ([#30](https://github.com/Edward-Muir/when/issues/30)) ([7f0a911](https://github.com/Edward-Muir/when/commit/7f0a9112895dc6c706885fae78e1921bdbf3af49))
 
 ## [1.6.2](https://github.com/Edward-Muir/when/compare/v1.6.1...v1.6.2) (2026-08-10)
 
-
 ### Bug Fixes
 
-* filter abusive leaderboard display names ([#29](https://github.com/Edward-Muir/when/issues/29)) ([c4ca7b1](https://github.com/Edward-Muir/when/commit/c4ca7b1a053440f30cfd6c524b4db5e7dfa1f654))
+- filter abusive leaderboard display names ([#29](https://github.com/Edward-Muir/when/issues/29)) ([c4ca7b1](https://github.com/Edward-Muir/when/commit/c4ca7b1a053440f30cfd6c524b4db5e7dfa1f654))
 
 ## [1.6.1](https://github.com/Edward-Muir/when/compare/v1.6.0...v1.6.1) (2026-08-10)
 
-
 ### Performance
 
-* cut Cloudinary bandwidth ~7x and close the abuse paths ([#28](https://github.com/Edward-Muir/when/issues/28)) ([57aea61](https://github.com/Edward-Muir/when/commit/57aea61942153ce288572ee94134f62a70b96fec))
+- cut Cloudinary bandwidth ~7x and close the abuse paths ([#28](https://github.com/Edward-Muir/when/issues/28)) ([57aea61](https://github.com/Edward-Muir/when/commit/57aea61942153ce288572ee94134f62a70b96fec))
 
 ## [1.6.0](https://github.com/Edward-Muir/when/compare/v1.5.0...v1.6.0) (2026-08-02)
 
-
 ### Features
 
-* report card issues from the card detail view ([#27](https://github.com/Edward-Muir/when/issues/27)) ([813b6bb](https://github.com/Edward-Muir/when/commit/813b6bb68a1ab3b9a58a24df541e778f0678bca3))
+- report card issues from the card detail view ([#27](https://github.com/Edward-Muir/when/issues/27)) ([813b6bb](https://github.com/Edward-Muir/when/commit/813b6bb68a1ab3b9a58a24df541e778f0678bca3))
 
 ## [1.5.0](https://github.com/Edward-Muir/when/compare/v1.4.0...v1.5.0) (2026-07-11)
 
-
 ### Features
 
-* full-screen placement pulse with camera-follow on incorrect placements ([#20](https://github.com/Edward-Muir/when/issues/20)) ([9011559](https://github.com/Edward-Muir/when/commit/90115599d665c88417d07c324e72110c8e512035))
+- full-screen placement pulse with camera-follow on incorrect placements ([#20](https://github.com/Edward-Muir/when/issues/20)) ([9011559](https://github.com/Edward-Muir/when/commit/90115599d665c88417d07c324e72110c8e512035))
 
 ## [1.4.0](https://github.com/Edward-Muir/when/compare/v1.3.0...v1.4.0) (2026-07-08)
 
-
 ### Features
 
-* Add push notifactions to ios app ([bc9422d](https://github.com/Edward-Muir/when/commit/bc9422d77c0eaf3984db51012d12916345b3ada3))
+- Add push notifactions to ios app ([bc9422d](https://github.com/Edward-Muir/when/commit/bc9422d77c0eaf3984db51012d12916345b3ada3))
 
 ## [1.3.0](https://github.com/Edward-Muir/when/compare/v1.2.3...v1.3.0) (2026-07-05)
 
-
 ### Features
 
-* Add tombstone cards to timeline ([57366d9](https://github.com/Edward-Muir/when/commit/57366d90333a0505ad0106a5c0fca3c0d17c3a0f))
-* Polish failure mode ([cb909f0](https://github.com/Edward-Muir/when/commit/cb909f0e78fbb7d234555617048d2d29de8c1e71))
+- Add tombstone cards to timeline ([57366d9](https://github.com/Edward-Muir/when/commit/57366d90333a0505ad0106a5c0fca3c0d17c3a0f))
+- Polish failure mode ([cb909f0](https://github.com/Edward-Muir/when/commit/cb909f0e78fbb7d234555617048d2d29de8c1e71))
 
 ## [1.2.3](https://github.com/Edward-Muir/when/compare/v1.2.2...v1.2.3) (2026-07-01)
 
-
 ### Bug Fixes
 
-* Fix achievment scrolling bug, add achievment modals ([28ba1aa](https://github.com/Edward-Muir/when/commit/28ba1aaa89d005182b2191e6fb66170c716894e8))
-* Remove give away dates in events ([08816cb](https://github.com/Edward-Muir/when/commit/08816cbef9d504d38eb8aea7d8e4a02aedcbaa58))
+- Fix achievment scrolling bug, add achievment modals ([28ba1aa](https://github.com/Edward-Muir/when/commit/28ba1aaa89d005182b2191e6fb66170c716894e8))
+- Remove give away dates in events ([08816cb](https://github.com/Edward-Muir/when/commit/08816cbef9d504d38eb8aea7d8e4a02aedcbaa58))
 
 ## [1.2.2](https://github.com/Edward-Muir/when/compare/v1.2.1...v1.2.2) (2026-06-28)
 
-
 ### Bug Fixes
 
-* Fix the flashing buttons whennaving ([3af98e6](https://github.com/Edward-Muir/when/commit/3af98e68ac9b18bc1ca03bd1b398a715948ee916))
+- Fix the flashing buttons whennaving ([3af98e6](https://github.com/Edward-Muir/when/commit/3af98e68ac9b18bc1ca03bd1b398a715948ee916))
 
 ## [1.2.1](https://github.com/Edward-Muir/when/compare/v1.2.0...v1.2.1) (2026-06-28)
 
-
 ### Bug Fixes
 
-* Fix margin widths ([1517d2e](https://github.com/Edward-Muir/when/commit/1517d2ed620a9ba0456eee6c161c5062eb396164))
+- Fix margin widths ([1517d2e](https://github.com/Edward-Muir/when/commit/1517d2ed620a9ba0456eee6c161c5062eb396164))
 
 ## [1.2.0](https://github.com/Edward-Muir/when/compare/v1.1.1...v1.2.0) (2026-06-28)
 
-
 ### Features
 
-* Unify navigation options ([5c19e66](https://github.com/Edward-Muir/when/commit/5c19e660e2cac869b673b6417fa1dacdd55ade80))
+- Unify navigation options ([5c19e66](https://github.com/Edward-Muir/when/commit/5c19e660e2cac869b673b6417fa1dacdd55ade80))
 
 ## [1.1.1](https://github.com/Edward-Muir/when/compare/v1.1.0...v1.1.1) (2026-06-28)
 
-
 ### Bug Fixes
 
-* Track custom streaks ([402a3f1](https://github.com/Edward-Muir/when/commit/402a3f1b0585e26c41ad66f33b03e33148693595))
+- Track custom streaks ([402a3f1](https://github.com/Edward-Muir/when/commit/402a3f1b0585e26c41ad66f33b03e33148693595))
 
 ## [1.1.0](https://github.com/Edward-Muir/when/compare/v1.0.0...v1.1.0) (2026-06-28)
 
-
 ### Features
 
-* Larger achievments, when bakc button, reminder ([bf170a5](https://github.com/Edward-Muir/when/commit/bf170a59075c72ec1de7c6293863d2552f9754be))
+- Larger achievments, when bakc button, reminder ([bf170a5](https://github.com/Edward-Muir/when/commit/bf170a59075c72ec1de7c6293863d2552f9754be))
 
 ## [1.0.0](https://github.com/Edward-Muir/when/compare/v0.11.3...v1.0.0) (2026-06-28)
 
-
 ### Features
 
-* Add stats tracking and achievements system ([10b917a](https://github.com/Edward-Muir/when/commit/10b917ac065b3f396aef5d1562287ab4195f34e2))
-* Cache events, move theme toggle to menu, reorder TopBar ([0144794](https://github.com/Edward-Muir/when/commit/01447943f62c6ab42d5695c90673bfd8701d4d9c))
-* Center my timeline ([87b558b](https://github.com/Edward-Muir/when/commit/87b558b15b2b9e3221a4f3af22bb0288bc912f23))
-* Image preload unification, my timeline page ([c5d9947](https://github.com/Edward-Muir/when/commit/c5d99474fc48247eda52b2f866fe7028072da24e))
-* Improve Navigation, add helper text ([b6f29f3](https://github.com/Edward-Muir/when/commit/b6f29f39e87372bee091fa517516d44bd4c38249))
-* Refining stats and achievments ([01d953d](https://github.com/Edward-Muir/when/commit/01d953d2b58299fc61bc5c0fd080237fc5d90690))
+- Add stats tracking and achievements system ([10b917a](https://github.com/Edward-Muir/when/commit/10b917ac065b3f396aef5d1562287ab4195f34e2))
+- Cache events, move theme toggle to menu, reorder TopBar ([0144794](https://github.com/Edward-Muir/when/commit/01447943f62c6ab42d5695c90673bfd8701d4d9c))
+- Center my timeline ([87b558b](https://github.com/Edward-Muir/when/commit/87b558b15b2b9e3221a4f3af22bb0288bc912f23))
+- Image preload unification, my timeline page ([c5d9947](https://github.com/Edward-Muir/when/commit/c5d99474fc48247eda52b2f866fe7028072da24e))
+- Improve Navigation, add helper text ([b6f29f3](https://github.com/Edward-Muir/when/commit/b6f29f39e87372bee091fa517516d44bd4c38249))
+- Refining stats and achievments ([01d953d](https://github.com/Edward-Muir/when/commit/01d953d2b58299fc61bc5c0fd080237fc5d90690))
 
 ## [0.11.3](https://github.com/Edward-Muir/when/compare/v0.11.2...v0.11.3) (2026-06-25)
 
-
 ### Bug Fixes
 
-* Fix qc page routing ([934afec](https://github.com/Edward-Muir/when/commit/934afeca08907cfd1d05ff52742a2186da3d4752))
+- Fix qc page routing ([934afec](https://github.com/Edward-Muir/when/commit/934afeca08907cfd1d05ff52742a2186da3d4752))
 
 ## [0.11.2](https://github.com/Edward-Muir/when/compare/v0.11.1...v0.11.2) (2026-06-25)
 
-
 ### Features
 
-* Improve QC page ([45b868f](https://github.com/Edward-Muir/when/commit/45b868f875565dc2c94220e57dc3950452440a1a))
+- Improve QC page ([45b868f](https://github.com/Edward-Muir/when/commit/45b868f875565dc2c94220e57dc3950452440a1a))
 
 ## [0.11.1](https://github.com/Edward-Muir/when/compare/v0.11.0...v0.11.1) (2026-06-25)
 
-
 ### Features
 
-* Add QC page ([affd977](https://github.com/Edward-Muir/when/commit/affd977b8b0747ca2f5ad454cc1e1abc04e4f62f))
+- Add QC page ([affd977](https://github.com/Edward-Muir/when/commit/affd977b8b0747ca2f5ad454cc1e1abc04e4f62f))
 
 ## 0.11.0 (2026-06-22)
 
-
 ### Features
 
-* Add advanced options ([8cc2c13](https://github.com/Edward-Muir/when/commit/8cc2c134be3899823e2359f16611aa52b848baad))
-* Add categories of events ([72a57ef](https://github.com/Edward-Muir/when/commit/72a57ef2c38106ece8bd79d663b363af3d57631b))
-* Add cloudinary image urls ([0a8b205](https://github.com/Edward-Muir/when/commit/0a8b205941de0828565db1f58dc2527e1e3f087a))
-* Add daily theme, clean up events ([77ccaa5](https://github.com/Edward-Muir/when/commit/77ccaa5cb0ea4789ec6352ec73c69b326ad8abf2))
-* Add description to incorrect card ([3bc2cf0](https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839))
-* Add extra share button and explaination ([7141d48](https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7))
-* Add feedback email button ([cf03901](https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3))
-* Add full timeline view ([01d4d88](https://github.com/Edward-Muir/when/commit/01d4d88cc868317058afc16b1f9a0dcdfd89e0a1))
-* Add game modes ([8d66c66](https://github.com/Edward-Muir/when/commit/8d66c6699192bbcb7d5bcfe1bf6faf8b3759685d))
-* Add game over screen ([f4dad4c](https://github.com/Edward-Muir/when/commit/f4dad4c6b5cba352ad22eb373e6db58f04a85009))
-* Add game stats ([c472da9](https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6))
-* Add global leaderboard ([f3816db](https://github.com/Edward-Muir/when/commit/f3816dbd7cf41f103b87cd92c344ec849cdfad8a))
-* Add hand mat ([94b4d1e](https://github.com/Edward-Muir/when/commit/94b4d1e1173a8fd14267c1391f18015baa57c05a))
-* Add hands, add hand cycling, fix awful z order bugs... ([9d61b96](https://github.com/Edward-Muir/when/commit/9d61b963a949c06150cd9535d62e520461823185))
-* Add haptic feedback ([5f92efb](https://github.com/Edward-Muir/when/commit/5f92efbe632ee91edbed594639bb58901444dbfd))
-* Add Haptics to card drag and drop ([9b7a5c6](https://github.com/Edward-Muir/when/commit/9b7a5c66f574930249855ac97527a7fab7669b5c))
-* Add images to new events ([7c8f4b5](https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f))
-* Add info bar ([1f761e6](https://github.com/Edward-Muir/when/commit/1f761e6bcb5b4c809802b6562fa8b36654aeb466))
-* Add IOS haptics ([8e49f7b](https://github.com/Edward-Muir/when/commit/8e49f7b650c60a60a13dcc6f2c4856d9c4db048e))
-* Add leaderboard placeholder for loading ([17ece49](https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c))
-* Add many new events ([c9f4bdf](https://github.com/Edward-Muir/when/commit/c9f4bdf6be37be6ada145ddbcf8b9226876e6dc2))
-* Add many new events ([8663d4c](https://github.com/Edward-Muir/when/commit/8663d4c985c47342b1bad16c26bcdff57740ac80))
-* Add missing images ([0367526](https://github.com/Edward-Muir/when/commit/0367526da9025ad30532fe04bfd08d2867a1648e))
-* Add more events ([5a5e632](https://github.com/Edward-Muir/when/commit/5a5e632a8ac2964cea0bc17df42d04571029dc58))
-* Add more events ([c08bd93](https://github.com/Edward-Muir/when/commit/c08bd93b38f71f8658eca1f913f69200415f612c))
-* Add more events ([31a44f7](https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a))
-* Add more images ([98e4fc1](https://github.com/Edward-Muir/when/commit/98e4fc1b2a00f7d202b7370cd56b5c92e8ec1252))
-* Add more images ([a824ca0](https://github.com/Edward-Muir/when/commit/a824ca0654fc0258a9f31fdee284fa752659c88d))
-* Add more images ([8000e00](https://github.com/Edward-Muir/when/commit/8000e00d70dbad49b74186555fc375fff9a08a02))
-* Add new images, colour cards by image ([b4c8aa7](https://github.com/Edward-Muir/when/commit/b4c8aa7641790f5f83e6d664243a01758c53c0f7))
-* Add pill note on daily challenge theme ([412077d](https://github.com/Edward-Muir/when/commit/412077d93560dd0344d03c749599111374bdaee8))
-* Add pop up ([c893218](https://github.com/Edward-Muir/when/commit/c893218f2862c36153de4e85b5521e5deb9d00b0))
-* Add preview to internal tool ([d5c789a](https://github.com/Edward-Muir/when/commit/d5c789addd22c3db48daa7dbd9e35966b626d784))
-* Add remaining images ([96584d8](https://github.com/Edward-Muir/when/commit/96584d8d86e48c939b6b88c49b9136f358023482))
-* Add share button to home screen ([ae4e0fe](https://github.com/Edward-Muir/when/commit/ae4e0fe8233fbce9e60ccce358e0daa917b8040a))
-* Add Streak indicator and animations ([d02077a](https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc))
-* Add Streak indicator and animations ([9042fd9](https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4))
-* Add terms and privacy policy for App submission ([eb40e75](https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308))
-* Add When mobile first game ([a9dc268](https://github.com/Edward-Muir/when/commit/a9dc26889207cb07c059744ad7a1cf0601e0af69))
-* Added more generated images ([e2922a7](https://github.com/Edward-Muir/when/commit/e2922a7d973c0212da31c4cc041eb341db2bf7a8))
-* Added new inventions category, updated events editor ([53acee1](https://github.com/Edward-Muir/when/commit/53acee14beaafc45619fc84658050b0018e2e4fb))
-* Adding more generated images ([e9253e2](https://github.com/Edward-Muir/when/commit/e9253e23eee83193d03a7ece5f2c4bfff861ed89))
-* Adding new events ([8916daf](https://github.com/Edward-Muir/when/commit/8916daf7fcd4e2ba4b53b35551aedfe8b660aaad))
-* Adjusting events ([9f325cd](https://github.com/Edward-Muir/when/commit/9f325cdecd55c232e292497b5dbc4518552bd6ff))
-* Auto start daily challenge ([f9e3a5a](https://github.com/Edward-Muir/when/commit/f9e3a5a35c1cbac061ab3d8b37496bc3439bdd9f))
-* Better info panel ([0b19c94](https://github.com/Edward-Muir/when/commit/0b19c94d348438daf5be08dd5559b1cca996a44b))
-* Burger menu ([5ab03c8](https://github.com/Edward-Muir/when/commit/5ab03c8112935fcf59c0f6a1adc70b3d30b712ae))
-* Center first timeline card and add elastic scrolling ([25d6aa2](https://github.com/Edward-Muir/when/commit/25d6aa22cc078d8002fc8a1f141384bfe431e5e3))
-* Check for updates ([6169025](https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff))
-* Clean up menu screen ([070a405](https://github.com/Edward-Muir/when/commit/070a40582461d1380c5ae59c42b0c6288f552983))
-* Clean up settings modal ([eaa4d97](https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5))
-* Correct colours of icons / titles ([affe544](https://github.com/Edward-Muir/when/commit/affe5447ee4143e922845fdd469874ca03da76ea))
-* Create internal tool for maintaining events ([5c6b090](https://github.com/Edward-Muir/when/commit/5c6b09005cd3417dd57504a487c364b1214929e8))
-* Cycle through hand ([20f7320](https://github.com/Edward-Muir/when/commit/20f7320fd4ba550a0dfba3fd3dde1353a1f21a6b))
-* Daily becomes inifinite mode ([95a76a1](https://github.com/Edward-Muir/when/commit/95a76a11ce93f75be2f6a5366a096019fcac8440))
-* Do not close timeline at end, add restart button ([699246a](https://github.com/Edward-Muir/when/commit/699246a055252dcba72dca8840ea5bbf16abf9ea))
-* Double tap custom pills, remove challenge codes ([f64bd7e](https://github.com/Edward-Muir/when/commit/f64bd7e3d24aff0b95117e431180f7499b0f8f86))
-* Engagement ([b541c9e](https://github.com/Edward-Muir/when/commit/b541c9ed2663a4e90a312e72fa96efafdc517de9))
-* FInding new events ([26d5dec](https://github.com/Edward-Muir/when/commit/26d5decdf2ff005330d3d74c01eb808997c1ba5b))
-* Fixing info panel ([cd64a2a](https://github.com/Edward-Muir/when/commit/cd64a2add48757296a5b0fef8ce7997af663243f))
-* Game transistion animations ([6f105f0](https://github.com/Edward-Muir/when/commit/6f105f0705853aff0eb508d644636bef49b9ab5b))
-* Improve custom mode UX ([7992c3f](https://github.com/Edward-Muir/when/commit/7992c3f8eb97baf1728fd93174f4251020462555))
-* Improve timeline UI ([8a2fa52](https://github.com/Edward-Muir/when/commit/8a2fa525fb06a6818a03f54bd3d2dfd13c3d4ec3))
-* Loading screen ([444587e](https://github.com/Edward-Muir/when/commit/444587e04b34915b8ebfb1ce8820978b9fb30ab1))
-* Make app installable ([99eb6c6](https://github.com/Edward-Muir/when/commit/99eb6c6f514456f563a3f4aa4417e463946307ce))
-* Make daily challenge category based only not era based ([833f46f](https://github.com/Edward-Muir/when/commit/833f46fecd5c13edac223a6b46fdf4dfbc1598ae))
-* Make Daily game playable once per day ([8171872](https://github.com/Edward-Muir/when/commit/817187225dc19af4fa87ff7fb1ef73f21eff9e44))
-* Make install button and top bar ([96c11cf](https://github.com/Edward-Muir/when/commit/96c11cfadcce06f85477ca694b4644a0489f58e5))
-* Make settings shareable ([a39430d](https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04))
-* Make the custom game work flow simpler ([890d041](https://github.com/Edward-Muir/when/commit/890d0411c02621523b451533f84c48559d45f479))
-* Mobile first design ([f2213ed](https://github.com/Edward-Muir/when/commit/f2213ed824eafe6189d40485327ea1ce4960fe4c))
-* Modern styling ([57268ff](https://github.com/Edward-Muir/when/commit/57268ffdb753aa119249a0e689d9bab2ef6c3a1a))
-* More events ([7481be8](https://github.com/Edward-Muir/when/commit/7481be8636f7811e475d172446ae599a4a61c47a))
-* More images ([ceb876d](https://github.com/Edward-Muir/when/commit/ceb876d78f61786cbfdccd61947d3efc5169a4d4))
-* More inventions ([3a0dbb4](https://github.com/Edward-Muir/when/commit/3a0dbb4d6d38f68c7d9ab3221484e7f1f59fdf0e))
-* Move version indicator ([df5d0cb](https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43))
-* Multiplayer readded, back to remove cards from hand game play ([481c4e1](https://github.com/Edward-Muir/when/commit/481c4e1f28324db35bf5e696ada6944643a5b5fa))
-* Only Easy and Medium events included in daily challenge by default ([60622f2](https://github.com/Edward-Muir/when/commit/60622f21ba96df7b8191117e7c2054634110e858))
-* options persistance and ux ([6369cdc](https://github.com/Edward-Muir/when/commit/6369cdcdde47319d9b195058ca9661c1b601a97a))
-* Placement animation ([2d92e89](https://github.com/Edward-Muir/when/commit/2d92e89ef710934287e2098265dc5f19a0bde114))
-* Redesign home UI ([4d92cfd](https://github.com/Edward-Muir/when/commit/4d92cfdd3952c81ad41cece78b91733e1027b981))
-* Remove emoji ([ee557f2](https://github.com/Edward-Muir/when/commit/ee557f283309666c8a2aaea2bd9d5389d4ee7785))
-* Resize image boxes to display full image ([9c6ecf9](https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7))
-* SEO chores ([6045ee9](https://github.com/Edward-Muir/when/commit/6045ee9e18e5a1e56090c1058f95f8a10d01b6a6))
-* Set defualt hand size to 5 ([00d30e5](https://github.com/Edward-Muir/when/commit/00d30e5b952bc61ade1ad9c7cf07e2f7d226ce49))
-* Share shows global rank ([23d077c](https://github.com/Edward-Muir/when/commit/23d077cb74f9acb85294a24c377655e8b2383404))
-* Show leaderboard right away ([4ee65d3](https://github.com/Edward-Muir/when/commit/4ee65d378c3cb7e525b48239d36f0ab001fe8717))
-* Simplify game menus ([6ea49be](https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415))
-* Simplify game modes ([73aacf4](https://github.com/Edward-Muir/when/commit/73aacf4ba3619fb9e05408d189e4325a29c27ded))
-* SImplify logo ([4dec65d](https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4))
-* uncurated-events ([02d83b0](https://github.com/Edward-Muir/when/commit/02d83b0bdf48d4d1d116031cbc55e9fc2725159a))
-* Unify text and shadows ([3682e3c](https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4))
-* Update colour palette ([2eb7f36](https://github.com/Edward-Muir/when/commit/2eb7f367fc500750280375ec5c4e147b7d744b8c))
-* Update colour pallete ([bc625cd](https://github.com/Edward-Muir/when/commit/bc625cd17861fd9bc57ba3240b8c7e30aaf4a86e))
-* Update event difficulties. Exclude very hard events by default ([50172be](https://github.com/Edward-Muir/when/commit/50172be35d6733a455b3ca01d348276c871b7c3d))
-* Update game select UI, fix timeline snap back ([50afd1c](https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c))
-* Update icons ([792934e](https://github.com/Edward-Muir/when/commit/792934e79ac19b80e9300fbd3a4d59e703455ed3))
-* Update install instructions ([90ec7cb](https://github.com/Edward-Muir/when/commit/90ec7cb3222fa9ad3c7347eb8c1dd8bd5c11c18e))
-* Update more images, adjust difficulty ([7d0d050](https://github.com/Edward-Muir/when/commit/7d0d050931ded0e2c4ef24f8c65e1713b8d73640))
-* Updating event images ([c7ce664](https://github.com/Edward-Muir/when/commit/c7ce664d65b1ebad3063b5335e274c760135d010))
-* Updating event images ([6b189df](https://github.com/Edward-Muir/when/commit/6b189df6d3caf25691ade671aac820dc87517ece))
-* Use react router, make challenge share directly to game ([9d767b1](https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226))
-* Use splayed cards for hand count symbol ([ccc2535](https://github.com/Edward-Muir/when/commit/ccc2535ac544597d27d25a8a739bd6a53173960b))
-* UX polish ([b68785a](https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca))
-* Wide layout ([36e2c7e](https://github.com/Edward-Muir/when/commit/36e2c7e11cff31a755311d15abffb2d1a1383e9c))
-* Yet more new images ([1de0e14](https://github.com/Edward-Muir/when/commit/1de0e147f5dee5eeeac9f496383bdbce80602994))
-
+- Add advanced options ([8cc2c13](https://github.com/Edward-Muir/when/commit/8cc2c134be3899823e2359f16611aa52b848baad))
+- Add categories of events ([72a57ef](https://github.com/Edward-Muir/when/commit/72a57ef2c38106ece8bd79d663b363af3d57631b))
+- Add cloudinary image urls ([0a8b205](https://github.com/Edward-Muir/when/commit/0a8b205941de0828565db1f58dc2527e1e3f087a))
+- Add daily theme, clean up events ([77ccaa5](https://github.com/Edward-Muir/when/commit/77ccaa5cb0ea4789ec6352ec73c69b326ad8abf2))
+- Add description to incorrect card ([3bc2cf0](https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839))
+- Add extra share button and explaination ([7141d48](https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7))
+- Add feedback email button ([cf03901](https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3))
+- Add full timeline view ([01d4d88](https://github.com/Edward-Muir/when/commit/01d4d88cc868317058afc16b1f9a0dcdfd89e0a1))
+- Add game modes ([8d66c66](https://github.com/Edward-Muir/when/commit/8d66c6699192bbcb7d5bcfe1bf6faf8b3759685d))
+- Add game over screen ([f4dad4c](https://github.com/Edward-Muir/when/commit/f4dad4c6b5cba352ad22eb373e6db58f04a85009))
+- Add game stats ([c472da9](https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6))
+- Add global leaderboard ([f3816db](https://github.com/Edward-Muir/when/commit/f3816dbd7cf41f103b87cd92c344ec849cdfad8a))
+- Add hand mat ([94b4d1e](https://github.com/Edward-Muir/when/commit/94b4d1e1173a8fd14267c1391f18015baa57c05a))
+- Add hands, add hand cycling, fix awful z order bugs... ([9d61b96](https://github.com/Edward-Muir/when/commit/9d61b963a949c06150cd9535d62e520461823185))
+- Add haptic feedback ([5f92efb](https://github.com/Edward-Muir/when/commit/5f92efbe632ee91edbed594639bb58901444dbfd))
+- Add Haptics to card drag and drop ([9b7a5c6](https://github.com/Edward-Muir/when/commit/9b7a5c66f574930249855ac97527a7fab7669b5c))
+- Add images to new events ([7c8f4b5](https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f))
+- Add info bar ([1f761e6](https://github.com/Edward-Muir/when/commit/1f761e6bcb5b4c809802b6562fa8b36654aeb466))
+- Add IOS haptics ([8e49f7b](https://github.com/Edward-Muir/when/commit/8e49f7b650c60a60a13dcc6f2c4856d9c4db048e))
+- Add leaderboard placeholder for loading ([17ece49](https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c))
+- Add many new events ([c9f4bdf](https://github.com/Edward-Muir/when/commit/c9f4bdf6be37be6ada145ddbcf8b9226876e6dc2))
+- Add many new events ([8663d4c](https://github.com/Edward-Muir/when/commit/8663d4c985c47342b1bad16c26bcdff57740ac80))
+- Add missing images ([0367526](https://github.com/Edward-Muir/when/commit/0367526da9025ad30532fe04bfd08d2867a1648e))
+- Add more events ([5a5e632](https://github.com/Edward-Muir/when/commit/5a5e632a8ac2964cea0bc17df42d04571029dc58))
+- Add more events ([c08bd93](https://github.com/Edward-Muir/when/commit/c08bd93b38f71f8658eca1f913f69200415f612c))
+- Add more events ([31a44f7](https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a))
+- Add more images ([98e4fc1](https://github.com/Edward-Muir/when/commit/98e4fc1b2a00f7d202b7370cd56b5c92e8ec1252))
+- Add more images ([a824ca0](https://github.com/Edward-Muir/when/commit/a824ca0654fc0258a9f31fdee284fa752659c88d))
+- Add more images ([8000e00](https://github.com/Edward-Muir/when/commit/8000e00d70dbad49b74186555fc375fff9a08a02))
+- Add new images, colour cards by image ([b4c8aa7](https://github.com/Edward-Muir/when/commit/b4c8aa7641790f5f83e6d664243a01758c53c0f7))
+- Add pill note on daily challenge theme ([412077d](https://github.com/Edward-Muir/when/commit/412077d93560dd0344d03c749599111374bdaee8))
+- Add pop up ([c893218](https://github.com/Edward-Muir/when/commit/c893218f2862c36153de4e85b5521e5deb9d00b0))
+- Add preview to internal tool ([d5c789a](https://github.com/Edward-Muir/when/commit/d5c789addd22c3db48daa7dbd9e35966b626d784))
+- Add remaining images ([96584d8](https://github.com/Edward-Muir/when/commit/96584d8d86e48c939b6b88c49b9136f358023482))
+- Add share button to home screen ([ae4e0fe](https://github.com/Edward-Muir/when/commit/ae4e0fe8233fbce9e60ccce358e0daa917b8040a))
+- Add Streak indicator and animations ([d02077a](https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc))
+- Add Streak indicator and animations ([9042fd9](https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4))
+- Add terms and privacy policy for App submission ([eb40e75](https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308))
+- Add When mobile first game ([a9dc268](https://github.com/Edward-Muir/when/commit/a9dc26889207cb07c059744ad7a1cf0601e0af69))
+- Added more generated images ([e2922a7](https://github.com/Edward-Muir/when/commit/e2922a7d973c0212da31c4cc041eb341db2bf7a8))
+- Added new inventions category, updated events editor ([53acee1](https://github.com/Edward-Muir/when/commit/53acee14beaafc45619fc84658050b0018e2e4fb))
+- Adding more generated images ([e9253e2](https://github.com/Edward-Muir/when/commit/e9253e23eee83193d03a7ece5f2c4bfff861ed89))
+- Adding new events ([8916daf](https://github.com/Edward-Muir/when/commit/8916daf7fcd4e2ba4b53b35551aedfe8b660aaad))
+- Adjusting events ([9f325cd](https://github.com/Edward-Muir/when/commit/9f325cdecd55c232e292497b5dbc4518552bd6ff))
+- Auto start daily challenge ([f9e3a5a](https://github.com/Edward-Muir/when/commit/f9e3a5a35c1cbac061ab3d8b37496bc3439bdd9f))
+- Better info panel ([0b19c94](https://github.com/Edward-Muir/when/commit/0b19c94d348438daf5be08dd5559b1cca996a44b))
+- Burger menu ([5ab03c8](https://github.com/Edward-Muir/when/commit/5ab03c8112935fcf59c0f6a1adc70b3d30b712ae))
+- Center first timeline card and add elastic scrolling ([25d6aa2](https://github.com/Edward-Muir/when/commit/25d6aa22cc078d8002fc8a1f141384bfe431e5e3))
+- Check for updates ([6169025](https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff))
+- Clean up menu screen ([070a405](https://github.com/Edward-Muir/when/commit/070a40582461d1380c5ae59c42b0c6288f552983))
+- Clean up settings modal ([eaa4d97](https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5))
+- Correct colours of icons / titles ([affe544](https://github.com/Edward-Muir/when/commit/affe5447ee4143e922845fdd469874ca03da76ea))
+- Create internal tool for maintaining events ([5c6b090](https://github.com/Edward-Muir/when/commit/5c6b09005cd3417dd57504a487c364b1214929e8))
+- Cycle through hand ([20f7320](https://github.com/Edward-Muir/when/commit/20f7320fd4ba550a0dfba3fd3dde1353a1f21a6b))
+- Daily becomes inifinite mode ([95a76a1](https://github.com/Edward-Muir/when/commit/95a76a11ce93f75be2f6a5366a096019fcac8440))
+- Do not close timeline at end, add restart button ([699246a](https://github.com/Edward-Muir/when/commit/699246a055252dcba72dca8840ea5bbf16abf9ea))
+- Double tap custom pills, remove challenge codes ([f64bd7e](https://github.com/Edward-Muir/when/commit/f64bd7e3d24aff0b95117e431180f7499b0f8f86))
+- Engagement ([b541c9e](https://github.com/Edward-Muir/when/commit/b541c9ed2663a4e90a312e72fa96efafdc517de9))
+- FInding new events ([26d5dec](https://github.com/Edward-Muir/when/commit/26d5decdf2ff005330d3d74c01eb808997c1ba5b))
+- Fixing info panel ([cd64a2a](https://github.com/Edward-Muir/when/commit/cd64a2add48757296a5b0fef8ce7997af663243f))
+- Game transistion animations ([6f105f0](https://github.com/Edward-Muir/when/commit/6f105f0705853aff0eb508d644636bef49b9ab5b))
+- Improve custom mode UX ([7992c3f](https://github.com/Edward-Muir/when/commit/7992c3f8eb97baf1728fd93174f4251020462555))
+- Improve timeline UI ([8a2fa52](https://github.com/Edward-Muir/when/commit/8a2fa525fb06a6818a03f54bd3d2dfd13c3d4ec3))
+- Loading screen ([444587e](https://github.com/Edward-Muir/when/commit/444587e04b34915b8ebfb1ce8820978b9fb30ab1))
+- Make app installable ([99eb6c6](https://github.com/Edward-Muir/when/commit/99eb6c6f514456f563a3f4aa4417e463946307ce))
+- Make daily challenge category based only not era based ([833f46f](https://github.com/Edward-Muir/when/commit/833f46fecd5c13edac223a6b46fdf4dfbc1598ae))
+- Make Daily game playable once per day ([8171872](https://github.com/Edward-Muir/when/commit/817187225dc19af4fa87ff7fb1ef73f21eff9e44))
+- Make install button and top bar ([96c11cf](https://github.com/Edward-Muir/when/commit/96c11cfadcce06f85477ca694b4644a0489f58e5))
+- Make settings shareable ([a39430d](https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04))
+- Make the custom game work flow simpler ([890d041](https://github.com/Edward-Muir/when/commit/890d0411c02621523b451533f84c48559d45f479))
+- Mobile first design ([f2213ed](https://github.com/Edward-Muir/when/commit/f2213ed824eafe6189d40485327ea1ce4960fe4c))
+- Modern styling ([57268ff](https://github.com/Edward-Muir/when/commit/57268ffdb753aa119249a0e689d9bab2ef6c3a1a))
+- More events ([7481be8](https://github.com/Edward-Muir/when/commit/7481be8636f7811e475d172446ae599a4a61c47a))
+- More images ([ceb876d](https://github.com/Edward-Muir/when/commit/ceb876d78f61786cbfdccd61947d3efc5169a4d4))
+- More inventions ([3a0dbb4](https://github.com/Edward-Muir/when/commit/3a0dbb4d6d38f68c7d9ab3221484e7f1f59fdf0e))
+- Move version indicator ([df5d0cb](https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43))
+- Multiplayer readded, back to remove cards from hand game play ([481c4e1](https://github.com/Edward-Muir/when/commit/481c4e1f28324db35bf5e696ada6944643a5b5fa))
+- Only Easy and Medium events included in daily challenge by default ([60622f2](https://github.com/Edward-Muir/when/commit/60622f21ba96df7b8191117e7c2054634110e858))
+- options persistance and ux ([6369cdc](https://github.com/Edward-Muir/when/commit/6369cdcdde47319d9b195058ca9661c1b601a97a))
+- Placement animation ([2d92e89](https://github.com/Edward-Muir/when/commit/2d92e89ef710934287e2098265dc5f19a0bde114))
+- Redesign home UI ([4d92cfd](https://github.com/Edward-Muir/when/commit/4d92cfdd3952c81ad41cece78b91733e1027b981))
+- Remove emoji ([ee557f2](https://github.com/Edward-Muir/when/commit/ee557f283309666c8a2aaea2bd9d5389d4ee7785))
+- Resize image boxes to display full image ([9c6ecf9](https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7))
+- SEO chores ([6045ee9](https://github.com/Edward-Muir/when/commit/6045ee9e18e5a1e56090c1058f95f8a10d01b6a6))
+- Set defualt hand size to 5 ([00d30e5](https://github.com/Edward-Muir/when/commit/00d30e5b952bc61ade1ad9c7cf07e2f7d226ce49))
+- Share shows global rank ([23d077c](https://github.com/Edward-Muir/when/commit/23d077cb74f9acb85294a24c377655e8b2383404))
+- Show leaderboard right away ([4ee65d3](https://github.com/Edward-Muir/when/commit/4ee65d378c3cb7e525b48239d36f0ab001fe8717))
+- Simplify game menus ([6ea49be](https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415))
+- Simplify game modes ([73aacf4](https://github.com/Edward-Muir/when/commit/73aacf4ba3619fb9e05408d189e4325a29c27ded))
+- SImplify logo ([4dec65d](https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4))
+- uncurated-events ([02d83b0](https://github.com/Edward-Muir/when/commit/02d83b0bdf48d4d1d116031cbc55e9fc2725159a))
+- Unify text and shadows ([3682e3c](https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4))
+- Update colour palette ([2eb7f36](https://github.com/Edward-Muir/when/commit/2eb7f367fc500750280375ec5c4e147b7d744b8c))
+- Update colour pallete ([bc625cd](https://github.com/Edward-Muir/when/commit/bc625cd17861fd9bc57ba3240b8c7e30aaf4a86e))
+- Update event difficulties. Exclude very hard events by default ([50172be](https://github.com/Edward-Muir/when/commit/50172be35d6733a455b3ca01d348276c871b7c3d))
+- Update game select UI, fix timeline snap back ([50afd1c](https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c))
+- Update icons ([792934e](https://github.com/Edward-Muir/when/commit/792934e79ac19b80e9300fbd3a4d59e703455ed3))
+- Update install instructions ([90ec7cb](https://github.com/Edward-Muir/when/commit/90ec7cb3222fa9ad3c7347eb8c1dd8bd5c11c18e))
+- Update more images, adjust difficulty ([7d0d050](https://github.com/Edward-Muir/when/commit/7d0d050931ded0e2c4ef24f8c65e1713b8d73640))
+- Updating event images ([c7ce664](https://github.com/Edward-Muir/when/commit/c7ce664d65b1ebad3063b5335e274c760135d010))
+- Updating event images ([6b189df](https://github.com/Edward-Muir/when/commit/6b189df6d3caf25691ade671aac820dc87517ece))
+- Use react router, make challenge share directly to game ([9d767b1](https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226))
+- Use splayed cards for hand count symbol ([ccc2535](https://github.com/Edward-Muir/when/commit/ccc2535ac544597d27d25a8a739bd6a53173960b))
+- UX polish ([b68785a](https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca))
+- Wide layout ([36e2c7e](https://github.com/Edward-Muir/when/commit/36e2c7e11cff31a755311d15abffb2d1a1383e9c))
+- Yet more new images ([1de0e14](https://github.com/Edward-Muir/when/commit/1de0e147f5dee5eeeac9f496383bdbce80602994))
 
 ### Bug Fixes
 
-* Add missing images ([6727ad7](https://github.com/Edward-Muir/when/commit/6727ad7a547ddf2b039cdf7c75c2dd62b30cda77))
-* Add more images ([16a2ee9](https://github.com/Edward-Muir/when/commit/16a2ee9613e43955ff36f8f8983912f09a3ce5a8))
-* Add wrong banner in single player ([118b948](https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786))
-* Better installation instructions ([4d0f6bb](https://github.com/Edward-Muir/when/commit/4d0f6bb7f4c36ab251b942dda1cf6d7cc17b36d7))
-* Change menu colours ([9f55d23](https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab))
-* Correct ESlint error ([e6cdb4d](https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1))
-* Correct number of events shared ([9cd7c78](https://github.com/Edward-Muir/when/commit/9cd7c7846df769856fe04b5ac959918e6eb249b1))
-* Correctly place wrong text in pop up, force update on new version ([8add150](https://github.com/Edward-Muir/when/commit/8add15075b3fbc24607e1984830a9e177fec0a00))
-* Fix build ([21b2171](https://github.com/Edward-Muir/when/commit/21b21714a016edb659dac199bc0453a01867ec7d))
-* Fix drag position, borders, tap for info ([c4f98c1](https://github.com/Edward-Muir/when/commit/c4f98c15f47ac183b5d31c084eda2fb805b0d86c))
-* Fix end of game in single player ([852b3f2](https://github.com/Edward-Muir/when/commit/852b3f2114302e423283c147fba837609e685e39))
-* Fix ESlint errors ([6098424](https://github.com/Edward-Muir/when/commit/6098424afb84628e2e60d091d60d7d19c2968733))
-* Fix ESlint errors ([9fe854a](https://github.com/Edward-Muir/when/commit/9fe854a017fca23263dae96e65bbad55c5bf079c))
-* Fix eslint security warning for use of roll... ([2b1ecb3](https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018))
-* FIx game end logic and card in hand bug ([7e5274b](https://github.com/Edward-Muir/when/commit/7e5274bc4d5240e1a57c3901ab77849e065c7e12))
-* Fix game rule text ([1aa32b6](https://github.com/Edward-Muir/when/commit/1aa32b6a0efaa0e87526c89798c1cbae120f5058))
-* Fix generation ([dfb6342](https://github.com/Edward-Muir/when/commit/dfb6342e7e47d69a8b13d498545c30cc2decb754))
-* Fix ghost card issues, drag card position, remove banner ([025808c](https://github.com/Edward-Muir/when/commit/025808cda75c12f71f48bb4edb9d01ae17c2dfdc))
-* Fix leaderboard message ([46039e7](https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690))
-* FIx leaderboard pop out infinite get glitch ([fb8f3ff](https://github.com/Edward-Muir/when/commit/fb8f3ff1724443424635402cb0358d5d19662b53))
-* FIx linting error ([6ec66b0](https://github.com/Edward-Muir/when/commit/6ec66b0018743eb7750f19bcb5c8b844c5545c83))
-* Fix placeholder spacing ([93c7418](https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7))
-* Fix refresh timing ([07e2b05](https://github.com/Edward-Muir/when/commit/07e2b0536df6e6e8b9e5ed455d8a8b561fe7d47e))
-* fix release script ([a7a01bd](https://github.com/Edward-Muir/when/commit/a7a01bde0be68f59c3488571ebecd778153c7bad))
-* fix release script ([b25aa77](https://github.com/Edward-Muir/when/commit/b25aa77d3247f2cff60ae69786c8d9f59250d163))
-* fix release script ([6cc7aec](https://github.com/Edward-Muir/when/commit/6cc7aec0174e3c98eee8819aca94375bcdd451b9))
-* Fix sudden death logic ([4440444](https://github.com/Edward-Muir/when/commit/4440444021eff238d71f0789867a16baa2fa3b85))
-* Fix verbose names, fix detailed image load time ([644a6ac](https://github.com/Edward-Muir/when/commit/644a6acea8a8c82206630706da9bea79a87dfe85))
-* Fix zoom issue and title cutoff ([841b3c6](https://github.com/Edward-Muir/when/commit/841b3c6c044d523fc264fccce05a629522334bfb))
-* Ignore long word list file ([7167029](https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6))
-* Improve settings UX ([b61b108](https://github.com/Edward-Muir/when/commit/b61b1084064b94b2faa44dec6b52c59a10344f0a))
-* Lower resolution of thumbnail images for faster loading ([4bc9a24](https://github.com/Edward-Muir/when/commit/4bc9a24d667a3d27aed88cd84e12e041027523f7))
-* Make challenge code readable ([70d0e9b](https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa))
-* Make next player turn more prominany ([e65e1eb](https://github.com/Edward-Muir/when/commit/e65e1eb0fbed5cd0ee69598175c0bc8bb318c12a))
-* Make settings button more visible ([b28cac8](https://github.com/Edward-Muir/when/commit/b28cac81a87cd40cadfcd92a994594d7d9724917))
-* Make timeline tick marks wider ([a3a9859](https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c))
-* Make update a pop up instead of small button ([6af2d07](https://github.com/Edward-Muir/when/commit/6af2d07db549c60d7871a529b0124a9cb82f2b6d))
-* Move images folders out of main project to fix vercel dev ([eeb6c64](https://github.com/Edward-Muir/when/commit/eeb6c640818715a77962395e5bef788da0129453))
-* Only 6 categories not 7 ([64bffd4](https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6))
-* Prevent the view timeline page from loading all deatiled images at once ([6a8cf28](https://github.com/Edward-Muir/when/commit/6a8cf28ef1c4ac84ce47460cc205ef16dc5a87aa))
-* Prune evenys ([640142e](https://github.com/Edward-Muir/when/commit/640142e181a7a2cfb99ff64b23df25fb569144d2))
-* reduce daily challenge cards ([0654873](https://github.com/Edward-Muir/when/commit/065487325e9dfa07340cd826110894b5b4398996))
-* Refresh the leaderboard more often ([d10d6a7](https://github.com/Edward-Muir/when/commit/d10d6a730a5c21ec567a64170412d0cdadab6e84))
-* Remove duplicate events ([a6b7e39](https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a))
-* Remove references to centuries and dates ([d59c625](https://github.com/Edward-Muir/when/commit/d59c625723aac359edf90473e8feb729c291646f))
-* remove uneeded bump files ([77873a5](https://github.com/Edward-Muir/when/commit/77873a5b8c958cefd477acd397cf2fdf5cd6bc9f))
-* remove When title from game select screen ([3842541](https://github.com/Edward-Muir/when/commit/3842541743ebeb9ca4214d086871c450f95b6d55))
-* Reveal bottom bar ([fa6facf](https://github.com/Edward-Muir/when/commit/fa6facf3bae41535aba5ada1052cf30f77090e94))
-* Show install button ([4584801](https://github.com/Edward-Muir/when/commit/45848010b7e65ce74052910832f7095f3393b267))
-* Smooth out design ([0f6eeb3](https://github.com/Edward-Muir/when/commit/0f6eeb3cd623b5d6991ef2b81a1a340993d57d46))
-* Start with 5 cards in daily challenge ([d437990](https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a))
-* Stop accidental leaderboard dismissal ([19f0dab](https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5))
-* Sync ios version with app version ([6a74a1c](https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85))
-* Trying to fix page level scroll ([9869479](https://github.com/Edward-Muir/when/commit/986947945e3e44e2368593eb93f1d3433f617a48))
-* Update image size ([e0c5e13](https://github.com/Edward-Muir/when/commit/e0c5e138947d2690ed3f7e3e60d7e91e9b1aeeb2))
-* Update the ripple mechanics ([67cd105](https://github.com/Edward-Muir/when/commit/67cd1055d6920769b3215a89db6069912c695f0e))
+- Add missing images ([6727ad7](https://github.com/Edward-Muir/when/commit/6727ad7a547ddf2b039cdf7c75c2dd62b30cda77))
+- Add more images ([16a2ee9](https://github.com/Edward-Muir/when/commit/16a2ee9613e43955ff36f8f8983912f09a3ce5a8))
+- Add wrong banner in single player ([118b948](https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786))
+- Better installation instructions ([4d0f6bb](https://github.com/Edward-Muir/when/commit/4d0f6bb7f4c36ab251b942dda1cf6d7cc17b36d7))
+- Change menu colours ([9f55d23](https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab))
+- Correct ESlint error ([e6cdb4d](https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1))
+- Correct number of events shared ([9cd7c78](https://github.com/Edward-Muir/when/commit/9cd7c7846df769856fe04b5ac959918e6eb249b1))
+- Correctly place wrong text in pop up, force update on new version ([8add150](https://github.com/Edward-Muir/when/commit/8add15075b3fbc24607e1984830a9e177fec0a00))
+- Fix build ([21b2171](https://github.com/Edward-Muir/when/commit/21b21714a016edb659dac199bc0453a01867ec7d))
+- Fix drag position, borders, tap for info ([c4f98c1](https://github.com/Edward-Muir/when/commit/c4f98c15f47ac183b5d31c084eda2fb805b0d86c))
+- Fix end of game in single player ([852b3f2](https://github.com/Edward-Muir/when/commit/852b3f2114302e423283c147fba837609e685e39))
+- Fix ESlint errors ([6098424](https://github.com/Edward-Muir/when/commit/6098424afb84628e2e60d091d60d7d19c2968733))
+- Fix ESlint errors ([9fe854a](https://github.com/Edward-Muir/when/commit/9fe854a017fca23263dae96e65bbad55c5bf079c))
+- Fix eslint security warning for use of roll... ([2b1ecb3](https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018))
+- FIx game end logic and card in hand bug ([7e5274b](https://github.com/Edward-Muir/when/commit/7e5274bc4d5240e1a57c3901ab77849e065c7e12))
+- Fix game rule text ([1aa32b6](https://github.com/Edward-Muir/when/commit/1aa32b6a0efaa0e87526c89798c1cbae120f5058))
+- Fix generation ([dfb6342](https://github.com/Edward-Muir/when/commit/dfb6342e7e47d69a8b13d498545c30cc2decb754))
+- Fix ghost card issues, drag card position, remove banner ([025808c](https://github.com/Edward-Muir/when/commit/025808cda75c12f71f48bb4edb9d01ae17c2dfdc))
+- Fix leaderboard message ([46039e7](https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690))
+- FIx leaderboard pop out infinite get glitch ([fb8f3ff](https://github.com/Edward-Muir/when/commit/fb8f3ff1724443424635402cb0358d5d19662b53))
+- FIx linting error ([6ec66b0](https://github.com/Edward-Muir/when/commit/6ec66b0018743eb7750f19bcb5c8b844c5545c83))
+- Fix placeholder spacing ([93c7418](https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7))
+- Fix refresh timing ([07e2b05](https://github.com/Edward-Muir/when/commit/07e2b0536df6e6e8b9e5ed455d8a8b561fe7d47e))
+- fix release script ([a7a01bd](https://github.com/Edward-Muir/when/commit/a7a01bde0be68f59c3488571ebecd778153c7bad))
+- fix release script ([b25aa77](https://github.com/Edward-Muir/when/commit/b25aa77d3247f2cff60ae69786c8d9f59250d163))
+- fix release script ([6cc7aec](https://github.com/Edward-Muir/when/commit/6cc7aec0174e3c98eee8819aca94375bcdd451b9))
+- Fix sudden death logic ([4440444](https://github.com/Edward-Muir/when/commit/4440444021eff238d71f0789867a16baa2fa3b85))
+- Fix verbose names, fix detailed image load time ([644a6ac](https://github.com/Edward-Muir/when/commit/644a6acea8a8c82206630706da9bea79a87dfe85))
+- Fix zoom issue and title cutoff ([841b3c6](https://github.com/Edward-Muir/when/commit/841b3c6c044d523fc264fccce05a629522334bfb))
+- Ignore long word list file ([7167029](https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6))
+- Improve settings UX ([b61b108](https://github.com/Edward-Muir/when/commit/b61b1084064b94b2faa44dec6b52c59a10344f0a))
+- Lower resolution of thumbnail images for faster loading ([4bc9a24](https://github.com/Edward-Muir/when/commit/4bc9a24d667a3d27aed88cd84e12e041027523f7))
+- Make challenge code readable ([70d0e9b](https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa))
+- Make next player turn more prominany ([e65e1eb](https://github.com/Edward-Muir/when/commit/e65e1eb0fbed5cd0ee69598175c0bc8bb318c12a))
+- Make settings button more visible ([b28cac8](https://github.com/Edward-Muir/when/commit/b28cac81a87cd40cadfcd92a994594d7d9724917))
+- Make timeline tick marks wider ([a3a9859](https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c))
+- Make update a pop up instead of small button ([6af2d07](https://github.com/Edward-Muir/when/commit/6af2d07db549c60d7871a529b0124a9cb82f2b6d))
+- Move images folders out of main project to fix vercel dev ([eeb6c64](https://github.com/Edward-Muir/when/commit/eeb6c640818715a77962395e5bef788da0129453))
+- Only 6 categories not 7 ([64bffd4](https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6))
+- Prevent the view timeline page from loading all deatiled images at once ([6a8cf28](https://github.com/Edward-Muir/when/commit/6a8cf28ef1c4ac84ce47460cc205ef16dc5a87aa))
+- Prune evenys ([640142e](https://github.com/Edward-Muir/when/commit/640142e181a7a2cfb99ff64b23df25fb569144d2))
+- reduce daily challenge cards ([0654873](https://github.com/Edward-Muir/when/commit/065487325e9dfa07340cd826110894b5b4398996))
+- Refresh the leaderboard more often ([d10d6a7](https://github.com/Edward-Muir/when/commit/d10d6a730a5c21ec567a64170412d0cdadab6e84))
+- Remove duplicate events ([a6b7e39](https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a))
+- Remove references to centuries and dates ([d59c625](https://github.com/Edward-Muir/when/commit/d59c625723aac359edf90473e8feb729c291646f))
+- remove uneeded bump files ([77873a5](https://github.com/Edward-Muir/when/commit/77873a5b8c958cefd477acd397cf2fdf5cd6bc9f))
+- remove When title from game select screen ([3842541](https://github.com/Edward-Muir/when/commit/3842541743ebeb9ca4214d086871c450f95b6d55))
+- Reveal bottom bar ([fa6facf](https://github.com/Edward-Muir/when/commit/fa6facf3bae41535aba5ada1052cf30f77090e94))
+- Show install button ([4584801](https://github.com/Edward-Muir/when/commit/45848010b7e65ce74052910832f7095f3393b267))
+- Smooth out design ([0f6eeb3](https://github.com/Edward-Muir/when/commit/0f6eeb3cd623b5d6991ef2b81a1a340993d57d46))
+- Start with 5 cards in daily challenge ([d437990](https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a))
+- Stop accidental leaderboard dismissal ([19f0dab](https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5))
+- Sync ios version with app version ([6a74a1c](https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85))
+- Trying to fix page level scroll ([9869479](https://github.com/Edward-Muir/when/commit/986947945e3e44e2368593eb93f1d3433f617a48))
+- Update image size ([e0c5e13](https://github.com/Edward-Muir/when/commit/e0c5e138947d2690ed3f7e3e60d7e91e9b1aeeb2))
+- Update the ripple mechanics ([67cd105](https://github.com/Edward-Muir/when/commit/67cd1055d6920769b3215a89db6069912c695f0e))
 
 ## [0.10.21](https://github.com/Edward-Muir/when/compare/v0.10.20...v0.10.21) (2026-06-07)
 
-
 ### Features
 
-* More events ([7481be8](https://github.com/Edward-Muir/when/commit/7481be8636f7811e475d172446ae599a4a61c47a))
+- More events ([7481be8](https://github.com/Edward-Muir/when/commit/7481be8636f7811e475d172446ae599a4a61c47a))
 
 ## [0.10.20](https://github.com/Edward-Muir/when/compare/v0.10.19...v0.10.20) (2026-06-04)
 
-
 ### Bug Fixes
 
-* FIx leaderboard pop out infinite get glitch ([fb8f3ff](https://github.com/Edward-Muir/when/commit/fb8f3ff1724443424635402cb0358d5d19662b53))
+- FIx leaderboard pop out infinite get glitch ([fb8f3ff](https://github.com/Edward-Muir/when/commit/fb8f3ff1724443424635402cb0358d5d19662b53))
 
 ## [0.10.19](https://github.com/Edward-Muir/when/compare/v0.10.18...v0.10.19) (2026-06-04)
 
-
 ### Bug Fixes
 
-* Refresh the leaderboard more often ([d10d6a7](https://github.com/Edward-Muir/when/commit/d10d6a730a5c21ec567a64170412d0cdadab6e84))
+- Refresh the leaderboard more often ([d10d6a7](https://github.com/Edward-Muir/when/commit/d10d6a730a5c21ec567a64170412d0cdadab6e84))
 
 ## [0.10.18](https://github.com/Edward-Muir/when/compare/v0.10.17...v0.10.18) (2026-06-04)
 
-
 ### Bug Fixes
 
-* Remove references to centuries and dates ([d59c625](https://github.com/Edward-Muir/when/commit/d59c625723aac359edf90473e8feb729c291646f))
+- Remove references to centuries and dates ([d59c625](https://github.com/Edward-Muir/when/commit/d59c625723aac359edf90473e8feb729c291646f))
 
 ## [0.10.17](https://github.com/Edward-Muir/when/compare/v0.10.16...v0.10.17) (2026-06-04)
 
-
 ### Features
 
-* Add more events ([5a5e632](https://github.com/Edward-Muir/when/commit/5a5e632a8ac2964cea0bc17df42d04571029dc58))
+- Add more events ([5a5e632](https://github.com/Edward-Muir/when/commit/5a5e632a8ac2964cea0bc17df42d04571029dc58))
 
 ## [0.10.16](https://github.com/Edward-Muir/when/compare/v0.10.15...v0.10.16) (2026-06-01)
 
-
 ### Features
 
-* options persistance and ux ([6369cdc](https://github.com/Edward-Muir/when/commit/6369cdcdde47319d9b195058ca9661c1b601a97a))
-
+- options persistance and ux ([6369cdc](https://github.com/Edward-Muir/when/commit/6369cdcdde47319d9b195058ca9661c1b601a97a))
 
 ### Bug Fixes
 
-* Fix refresh timing ([07e2b05](https://github.com/Edward-Muir/when/commit/07e2b0536df6e6e8b9e5ed455d8a8b561fe7d47e))
+- Fix refresh timing ([07e2b05](https://github.com/Edward-Muir/when/commit/07e2b0536df6e6e8b9e5ed455d8a8b561fe7d47e))
 
 ## [0.10.15](https://github.com/Edward-Muir/when/compare/v0.10.14...v0.10.15) (2026-05-28)
 
-
 ### Features
 
-* UX polish ([b68785a](https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca))
+- UX polish ([b68785a](https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca))
 
 ## [0.10.14](https://github.com/Edward-Muir/when/compare/v0.10.13...v0.10.14) (2026-05-28)
 
-
 ### Bug Fixes
 
-* Fix zoom issue and title cutoff ([841b3c6](https://github.com/Edward-Muir/when/commit/841b3c6c044d523fc264fccce05a629522334bfb))
+- Fix zoom issue and title cutoff ([841b3c6](https://github.com/Edward-Muir/when/commit/841b3c6c044d523fc264fccce05a629522334bfb))
 
 ## [0.10.13](https://github.com/Edward-Muir/when/compare/v0.10.12...v0.10.13) (2026-05-28)
 
-
 ### Features
 
-* Add more events ([c08bd93](https://github.com/Edward-Muir/when/commit/c08bd93b38f71f8658eca1f913f69200415f612c))
+- Add more events ([c08bd93](https://github.com/Edward-Muir/when/commit/c08bd93b38f71f8658eca1f913f69200415f612c))
 
 ## [0.10.12](https://github.com/Edward-Muir/when/compare/v0.10.11...v0.10.12) (2026-05-27)
 
-
 ### Features
 
-* Redesign home UI ([4d92cfd](https://github.com/Edward-Muir/when/commit/4d92cfdd3952c81ad41cece78b91733e1027b981))
+- Redesign home UI ([4d92cfd](https://github.com/Edward-Muir/when/commit/4d92cfdd3952c81ad41cece78b91733e1027b981))
 
 ## [0.10.11](https://github.com/Edward-Muir/when/compare/v0.10.10...v0.10.11) (2026-05-26)
 
-
 ### Features
 
-* Center first timeline card and add elastic scrolling ([25d6aa2](https://github.com/Edward-Muir/when/commit/25d6aa22cc078d8002fc8a1f141384bfe431e5e3))
+- Center first timeline card and add elastic scrolling ([25d6aa2](https://github.com/Edward-Muir/when/commit/25d6aa22cc078d8002fc8a1f141384bfe431e5e3))
 
 ## [0.10.10](https://github.com/Edward-Muir/when/compare/v0.10.9...v0.10.10) (2026-05-24)
 
-
 ### Bug Fixes
 
-* Prevent the view timeline page from loading all deatiled images at once ([6a8cf28](https://github.com/Edward-Muir/when/commit/6a8cf28ef1c4ac84ce47460cc205ef16dc5a87aa))
+- Prevent the view timeline page from loading all deatiled images at once ([6a8cf28](https://github.com/Edward-Muir/when/commit/6a8cf28ef1c4ac84ce47460cc205ef16dc5a87aa))
 
 ## [0.10.9](https://github.com/Edward-Muir/when/compare/v0.10.8...v0.10.9) (2026-05-24)
 
-
 ### Bug Fixes
 
-* Fix verbose names, fix detailed image load time ([644a6ac](https://github.com/Edward-Muir/when/commit/644a6acea8a8c82206630706da9bea79a87dfe85))
+- Fix verbose names, fix detailed image load time ([644a6ac](https://github.com/Edward-Muir/when/commit/644a6acea8a8c82206630706da9bea79a87dfe85))
 
 ## [0.10.8](https://github.com/Edward-Muir/when/compare/v0.10.7...v0.10.8) (2026-05-24)
 
-
 ### Bug Fixes
 
-* Lower resolution of thumbnail images for faster loading ([4bc9a24](https://github.com/Edward-Muir/when/commit/4bc9a24d667a3d27aed88cd84e12e041027523f7))
+- Lower resolution of thumbnail images for faster loading ([4bc9a24](https://github.com/Edward-Muir/when/commit/4bc9a24d667a3d27aed88cd84e12e041027523f7))
 
 ## [0.10.7](https://github.com/Edward-Muir/when/compare/v0.10.6...v0.10.7) (2026-05-24)
 
-
 ### Features
 
-* Add many new events ([c9f4bdf](https://github.com/Edward-Muir/when/commit/c9f4bdf6be37be6ada145ddbcf8b9226876e6dc2))
-* Add many new events ([8663d4c](https://github.com/Edward-Muir/when/commit/8663d4c985c47342b1bad16c26bcdff57740ac80))
+- Add many new events ([c9f4bdf](https://github.com/Edward-Muir/when/commit/c9f4bdf6be37be6ada145ddbcf8b9226876e6dc2))
+- Add many new events ([8663d4c](https://github.com/Edward-Muir/when/commit/8663d4c985c47342b1bad16c26bcdff57740ac80))
 
 ## [0.10.6](https://github.com/Edward-Muir/when/compare/v0.10.5...v0.10.6) (2026-04-24)
 
-
 ### Features
 
-* Yet more new images ([1de0e14](https://github.com/Edward-Muir/when/commit/1de0e147f5dee5eeeac9f496383bdbce80602994))
+- Yet more new images ([1de0e14](https://github.com/Edward-Muir/when/commit/1de0e147f5dee5eeeac9f496383bdbce80602994))
 
 ## [0.10.5](https://github.com/Edward-Muir/when/compare/v0.10.4...v0.10.5) (2026-04-21)
 
-
 ### Features
 
-* Adding more generated images ([e9253e2](https://github.com/Edward-Muir/when/commit/e9253e23eee83193d03a7ece5f2c4bfff861ed89))
+- Adding more generated images ([e9253e2](https://github.com/Edward-Muir/when/commit/e9253e23eee83193d03a7ece5f2c4bfff861ed89))
 
 ## [0.10.4](https://github.com/Edward-Muir/when/compare/v0.10.3...v0.10.4) (2026-04-16)
 
-
 ### Features
 
-* Add more images ([98e4fc1](https://github.com/Edward-Muir/when/commit/98e4fc1b2a00f7d202b7370cd56b5c92e8ec1252))
+- Add more images ([98e4fc1](https://github.com/Edward-Muir/when/commit/98e4fc1b2a00f7d202b7370cd56b5c92e8ec1252))
 
 ## [0.10.3](https://github.com/Edward-Muir/when/compare/v0.10.2...v0.10.3) (2026-04-11)
 
-
 ### Features
 
-* Add more images ([a824ca0](https://github.com/Edward-Muir/when/commit/a824ca0654fc0258a9f31fdee284fa752659c88d))
+- Add more images ([a824ca0](https://github.com/Edward-Muir/when/commit/a824ca0654fc0258a9f31fdee284fa752659c88d))
 
 ## [0.10.2](https://github.com/Edward-Muir/when/compare/v0.10.1...v0.10.2) (2026-04-07)
 
-
 ### Features
 
-* Add more images ([8000e00](https://github.com/Edward-Muir/when/commit/8000e00d70dbad49b74186555fc375fff9a08a02))
+- Add more images ([8000e00](https://github.com/Edward-Muir/when/commit/8000e00d70dbad49b74186555fc375fff9a08a02))
 
 ## [0.10.1](https://github.com/Edward-Muir/when/compare/v0.10.0...v0.10.1) (2026-04-02)
 
-
 ### Features
 
-* Added more generated images ([e2922a7](https://github.com/Edward-Muir/when/commit/e2922a7d973c0212da31c4cc041eb341db2bf7a8))
+- Added more generated images ([e2922a7](https://github.com/Edward-Muir/when/commit/e2922a7d973c0212da31c4cc041eb341db2bf7a8))
 
 ## [0.10.0](https://github.com/Edward-Muir/when/compare/v0.9.1...v0.10.0) (2026-03-31)
 
-
 ### Features
 
-* Add new images, colour cards by image ([b4c8aa7](https://github.com/Edward-Muir/when/commit/b4c8aa7641790f5f83e6d664243a01758c53c0f7))
+- Add new images, colour cards by image ([b4c8aa7](https://github.com/Edward-Muir/when/commit/b4c8aa7641790f5f83e6d664243a01758c53c0f7))
 
 ## [0.9.1](https://github.com/Edward-Muir/when/compare/v0.9.0...v0.9.1) (2026-03-22)
 
-
 ### Bug Fixes
 
-* Fix leaderboard message ([46039e7](https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690))
-* Sync ios version with app version ([6a74a1c](https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85))
+- Fix leaderboard message ([46039e7](https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690))
+- Sync ios version with app version ([6a74a1c](https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85))
 
 ## [0.9.0](https://github.com/Edward-Muir/when/compare/v0.8.0...v0.9.0) (2026-03-19)
 
-
 ### Features
 
-* Add terms and privacy policy for App submission ([eb40e75](https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308))
+- Add terms and privacy policy for App submission ([eb40e75](https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308))
 
 ## [0.8.0](https://github.com/Edward-Muir/when/compare/v0.7.3...v0.8.0) (2026-03-01)
 
 ## [0.7.3](https://github.com/Edward-Muir/when/compare/v0.7.2...v0.7.3) (2026-03-01)
 
-
 ### Features
 
-* Add extra share button and explaination ([7141d48](https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7))
-* Clean up settings modal ([eaa4d97](https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5))
-* Make settings shareable ([a39430d](https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04))
-
+- Add extra share button and explaination ([7141d48](https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7))
+- Clean up settings modal ([eaa4d97](https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5))
+- Make settings shareable ([a39430d](https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04))
 
 ### Bug Fixes
 
-* Ignore long word list file ([7167029](https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6))
-* Make challenge code readable ([70d0e9b](https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa))
+- Ignore long word list file ([7167029](https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6))
+- Make challenge code readable ([70d0e9b](https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa))
 
 ## [0.7.2](https://github.com/Edward-Muir/when/compare/v0.7.1...v0.7.2) (2026-02-28)
 
-
 ### Bug Fixes
 
-* Improve settings UX ([b61b108](https://github.com/Edward-Muir/when/commit/b61b1084064b94b2faa44dec6b52c59a10344f0a))
+- Improve settings UX ([b61b108](https://github.com/Edward-Muir/when/commit/b61b1084064b94b2faa44dec6b52c59a10344f0a))
 
 ## [0.7.1](https://github.com/Edward-Muir/when/compare/v0.7.0...v0.7.1) (2026-02-28)
 
-
 ### Features
 
-* Improve custom mode UX ([7992c3f](https://github.com/Edward-Muir/when/commit/7992c3f8eb97baf1728fd93174f4251020462555))
+- Improve custom mode UX ([7992c3f](https://github.com/Edward-Muir/when/commit/7992c3f8eb97baf1728fd93174f4251020462555))
 
 ## [0.7.0](https://github.com/Edward-Muir/when/compare/v0.6.0...v0.7.0) (2026-02-28)
 
-
 ### Features
 
-* Make the custom game work flow simpler ([890d041](https://github.com/Edward-Muir/when/commit/890d0411c02621523b451533f84c48559d45f479))
+- Make the custom game work flow simpler ([890d041](https://github.com/Edward-Muir/when/commit/890d0411c02621523b451533f84c48559d45f479))
 
 ## [0.6.0](https://github.com/Edward-Muir/when/compare/v0.5.10...v0.6.0) (2026-02-28)
 
-
 ### Features
 
-* Add leaderboard placeholder for loading ([17ece49](https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c))
-
+- Add leaderboard placeholder for loading ([17ece49](https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c))
 
 ### Bug Fixes
 
-* Fix placeholder spacing ([93c7418](https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7))
+- Fix placeholder spacing ([93c7418](https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7))
 
 ## [0.5.10](https://github.com/Edward-Muir/when/compare/v0.5.9...v0.5.10) (2026-02-28)
 
-
 ### Features
 
-* Move version indicator ([df5d0cb](https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43))
-* Update game select UI, fix timeline snap back ([50afd1c](https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c))
+- Move version indicator ([df5d0cb](https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43))
+- Update game select UI, fix timeline snap back ([50afd1c](https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c))
 
 ## [0.5.9](https://github.com/Edward-Muir/when/compare/v0.5.8...v0.5.9) (2026-02-25)
 
-
 ### Bug Fixes
 
-* Only 6 categories not 7 ([64bffd4](https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6))
+- Only 6 categories not 7 ([64bffd4](https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6))
 
 ## [0.5.8](https://github.com/Edward-Muir/when/compare/v0.5.7...v0.5.8) (2026-02-22)
 
-
 ### Features
 
-* Add IOS haptics ([8e49f7b](https://github.com/Edward-Muir/when/commit/8e49f7b650c60a60a13dcc6f2c4856d9c4db048e))
+- Add IOS haptics ([8e49f7b](https://github.com/Edward-Muir/when/commit/8e49f7b650c60a60a13dcc6f2c4856d9c4db048e))
 
 ## [0.5.7](https://github.com/Edward-Muir/when/compare/v0.5.6...v0.5.7) (2026-02-22)
 
 ## [0.5.6](https://github.com/Edward-Muir/when/compare/v0.5.5...v0.5.6) (2026-02-22)
 
-
 ### Features
 
-* Added new inventions category, updated events editor ([53acee1](https://github.com/Edward-Muir/when/commit/53acee14beaafc45619fc84658050b0018e2e4fb))
-* More inventions ([3a0dbb4](https://github.com/Edward-Muir/when/commit/3a0dbb4d6d38f68c7d9ab3221484e7f1f59fdf0e))
-* Updating event images ([c7ce664](https://github.com/Edward-Muir/when/commit/c7ce664d65b1ebad3063b5335e274c760135d010))
-* Updating event images ([6b189df](https://github.com/Edward-Muir/when/commit/6b189df6d3caf25691ade671aac820dc87517ece))
-
+- Added new inventions category, updated events editor ([53acee1](https://github.com/Edward-Muir/when/commit/53acee14beaafc45619fc84658050b0018e2e4fb))
+- More inventions ([3a0dbb4](https://github.com/Edward-Muir/when/commit/3a0dbb4d6d38f68c7d9ab3221484e7f1f59fdf0e))
+- Updating event images ([c7ce664](https://github.com/Edward-Muir/when/commit/c7ce664d65b1ebad3063b5335e274c760135d010))
+- Updating event images ([6b189df](https://github.com/Edward-Muir/when/commit/6b189df6d3caf25691ade671aac820dc87517ece))
 
 ### Bug Fixes
 
-* Add missing images ([6727ad7](https://github.com/Edward-Muir/when/commit/6727ad7a547ddf2b039cdf7c75c2dd62b30cda77))
+- Add missing images ([6727ad7](https://github.com/Edward-Muir/when/commit/6727ad7a547ddf2b039cdf7c75c2dd62b30cda77))
 
 ## [0.5.5](https://github.com/Edward-Muir/when/compare/v0.5.4...v0.5.5) (2026-02-07)
 
-
 ### Features
 
-* Adjusting events ([9f325cd](https://github.com/Edward-Muir/when/commit/9f325cdecd55c232e292497b5dbc4518552bd6ff))
+- Adjusting events ([9f325cd](https://github.com/Edward-Muir/when/commit/9f325cdecd55c232e292497b5dbc4518552bd6ff))
 
 ## [0.5.4](https://github.com/Edward-Muir/when/compare/v0.5.3...v0.5.4) (2026-02-07)
 
-
 ### Bug Fixes
 
-* Fix ESlint errors ([6098424](https://github.com/Edward-Muir/when/commit/6098424afb84628e2e60d091d60d7d19c2968733))
+- Fix ESlint errors ([6098424](https://github.com/Edward-Muir/when/commit/6098424afb84628e2e60d091d60d7d19c2968733))
 
 ## [0.5.3](https://github.com/Edward-Muir/when/compare/v0.5.2...v0.5.3) (2026-02-07)
 
-
 ### Features
 
-* Update more images, adjust difficulty ([7d0d050](https://github.com/Edward-Muir/when/commit/7d0d050931ded0e2c4ef24f8c65e1713b8d73640))
+- Update more images, adjust difficulty ([7d0d050](https://github.com/Edward-Muir/when/commit/7d0d050931ded0e2c4ef24f8c65e1713b8d73640))
 
 ## [0.5.2](https://github.com/Edward-Muir/when/compare/v0.5.1...v0.5.2) (2026-02-07)
 
-
 ### Features
 
-* Add Streak indicator and animations ([d02077a](https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc))
-* Add Streak indicator and animations ([9042fd9](https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4))
+- Add Streak indicator and animations ([d02077a](https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc))
+- Add Streak indicator and animations ([9042fd9](https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4))
 
 ## [0.5.1](https://github.com/Edward-Muir/when/compare/v0.5.0...v0.5.1) (2026-02-07)
 
-
 ### Features
 
-* Add description to incorrect card ([3bc2cf0](https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839))
-
+- Add description to incorrect card ([3bc2cf0](https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839))
 
 ### Bug Fixes
 
-* Stop accidental leaderboard dismissal ([19f0dab](https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5))
+- Stop accidental leaderboard dismissal ([19f0dab](https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5))
 
 ## [0.5.0](https://github.com/Edward-Muir/when/compare/v0.4.8...v0.5.0) (2026-02-07)
 
-
 ### Features
 
-* Use react router, make challenge share directly to game ([9d767b1](https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226))
+- Use react router, make challenge share directly to game ([9d767b1](https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226))
 
 ## [0.4.8](https://github.com/Edward-Muir/when/compare/v0.4.7...v0.4.8) (2026-02-07)
 
-
 ### Bug Fixes
 
-* Fix generation ([dfb6342](https://github.com/Edward-Muir/when/commit/dfb6342e7e47d69a8b13d498545c30cc2decb754))
+- Fix generation ([dfb6342](https://github.com/Edward-Muir/when/commit/dfb6342e7e47d69a8b13d498545c30cc2decb754))
 
 ## [0.4.7](https://github.com/Edward-Muir/when/compare/v0.4.6...v0.4.7) (2026-02-07)
 
-
 ### Bug Fixes
 
-* Fix build ([21b2171](https://github.com/Edward-Muir/when/commit/21b21714a016edb659dac199bc0453a01867ec7d))
+- Fix build ([21b2171](https://github.com/Edward-Muir/when/commit/21b21714a016edb659dac199bc0453a01867ec7d))
 
 ## [0.4.6](https://github.com/Edward-Muir/when/compare/v0.4.5...v0.4.6) (2026-02-07)
 
-
 ### Features
 
-* Engagement ([b541c9e](https://github.com/Edward-Muir/when/commit/b541c9ed2663a4e90a312e72fa96efafdc517de9))
-* Share shows global rank ([23d077c](https://github.com/Edward-Muir/when/commit/23d077cb74f9acb85294a24c377655e8b2383404))
+- Engagement ([b541c9e](https://github.com/Edward-Muir/when/commit/b541c9ed2663a4e90a312e72fa96efafdc517de9))
+- Share shows global rank ([23d077c](https://github.com/Edward-Muir/when/commit/23d077cb74f9acb85294a24c377655e8b2383404))
 
 ## [0.4.5](https://github.com/Edward-Muir/when/compare/v0.4.4...v0.4.5) (2026-02-03)
 
-
 ### Bug Fixes
 
-* FIx linting error ([6ec66b0](https://github.com/Edward-Muir/when/commit/6ec66b0018743eb7750f19bcb5c8b844c5545c83))
+- FIx linting error ([6ec66b0](https://github.com/Edward-Muir/when/commit/6ec66b0018743eb7750f19bcb5c8b844c5545c83))
 
 ## [0.4.4](https://github.com/Edward-Muir/when/compare/v0.4.3...v0.4.4) (2026-02-03)
 
-
 ### Features
 
-* SEO chores ([6045ee9](https://github.com/Edward-Muir/when/commit/6045ee9e18e5a1e56090c1058f95f8a10d01b6a6))
-* Show leaderboard right away ([4ee65d3](https://github.com/Edward-Muir/when/commit/4ee65d378c3cb7e525b48239d36f0ab001fe8717))
+- SEO chores ([6045ee9](https://github.com/Edward-Muir/when/commit/6045ee9e18e5a1e56090c1058f95f8a10d01b6a6))
+- Show leaderboard right away ([4ee65d3](https://github.com/Edward-Muir/when/commit/4ee65d378c3cb7e525b48239d36f0ab001fe8717))
 
 ## [0.4.3](https://github.com/Edward-Muir/when/compare/v0.4.2...v0.4.3) (2026-02-03)
 
-
 ### Features
 
-* Add global leaderboard ([f3816db](https://github.com/Edward-Muir/when/commit/f3816dbd7cf41f103b87cd92c344ec849cdfad8a))
-* Add preview to internal tool ([d5c789a](https://github.com/Edward-Muir/when/commit/d5c789addd22c3db48daa7dbd9e35966b626d784))
-* Create internal tool for maintaining events ([5c6b090](https://github.com/Edward-Muir/when/commit/5c6b09005cd3417dd57504a487c364b1214929e8))
+- Add global leaderboard ([f3816db](https://github.com/Edward-Muir/when/commit/f3816dbd7cf41f103b87cd92c344ec849cdfad8a))
+- Add preview to internal tool ([d5c789a](https://github.com/Edward-Muir/when/commit/d5c789addd22c3db48daa7dbd9e35966b626d784))
+- Create internal tool for maintaining events ([5c6b090](https://github.com/Edward-Muir/when/commit/5c6b09005cd3417dd57504a487c364b1214929e8))
 
 ## [0.4.2](https://github.com/Edward-Muir/when/compare/v0.4.1...v0.4.2) (2026-01-25)
 
-
 ### Bug Fixes
 
-* Make update a pop up instead of small button ([6af2d07](https://github.com/Edward-Muir/when/commit/6af2d07db549c60d7871a529b0124a9cb82f2b6d))
+- Make update a pop up instead of small button ([6af2d07](https://github.com/Edward-Muir/when/commit/6af2d07db549c60d7871a529b0124a9cb82f2b6d))
 
 ## [0.4.1](https://github.com/Edward-Muir/when/compare/v0.4.0...v0.4.1) (2026-01-25)
 
-
 ### Bug Fixes
 
-* Correct ESlint error ([e6cdb4d](https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1))
+- Correct ESlint error ([e6cdb4d](https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1))
 
 ## [0.4.0](https://github.com/Edward-Muir/when/compare/v0.3.13...v0.4.0) (2026-01-25)
 
-
 ### Features
 
-* Only Easy and Medium events included in daily challenge by default ([60622f2](https://github.com/Edward-Muir/when/commit/60622f21ba96df7b8191117e7c2054634110e858))
-* Update event difficulties. Exclude very hard events by default ([50172be](https://github.com/Edward-Muir/when/commit/50172be35d6733a455b3ca01d348276c871b7c3d))
-
+- Only Easy and Medium events included in daily challenge by default ([60622f2](https://github.com/Edward-Muir/when/commit/60622f21ba96df7b8191117e7c2054634110e858))
+- Update event difficulties. Exclude very hard events by default ([50172be](https://github.com/Edward-Muir/when/commit/50172be35d6733a455b3ca01d348276c871b7c3d))
 
 ### Bug Fixes
 
-* Prune evenys ([640142e](https://github.com/Edward-Muir/when/commit/640142e181a7a2cfb99ff64b23df25fb569144d2))
+- Prune evenys ([640142e](https://github.com/Edward-Muir/when/commit/640142e181a7a2cfb99ff64b23df25fb569144d2))
 
 ## [0.3.13](https://github.com/Edward-Muir/when/compare/v0.3.12...v0.3.13) (2026-01-25)
 
 ## [0.3.12](https://github.com/Edward-Muir/when/compare/v0.3.11...v0.3.12) (2026-01-21)
 
-
 ### Bug Fixes
 
-* Fix ESlint errors ([9fe854a](https://github.com/Edward-Muir/when/commit/9fe854a017fca23263dae96e65bbad55c5bf079c))
+- Fix ESlint errors ([9fe854a](https://github.com/Edward-Muir/when/commit/9fe854a017fca23263dae96e65bbad55c5bf079c))
 
 ## [0.3.11](https://github.com/Edward-Muir/when/compare/v0.3.10...v0.3.11) (2026-01-21)
 
-
 ### Bug Fixes
 
-* Fix eslint security warning for use of roll... ([2b1ecb3](https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018))
+- Fix eslint security warning for use of roll... ([2b1ecb3](https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018))
 
 ## [0.3.10](https://github.com/Edward-Muir/when/compare/v0.3.9...v0.3.10) (2026-01-21)
 
-
 ### Features
 
-* Make daily challenge category based only not era based ([833f46f](https://github.com/Edward-Muir/when/commit/833f46fecd5c13edac223a6b46fdf4dfbc1598ae))
+- Make daily challenge category based only not era based ([833f46f](https://github.com/Edward-Muir/when/commit/833f46fecd5c13edac223a6b46fdf4dfbc1598ae))
 
 ## [0.3.9](https://github.com/Edward-Muir/when/compare/v0.3.8...v0.3.9) (2026-01-13)
 
-
 ### Features
 
-* Add game stats ([c472da9](https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6))
+- Add game stats ([c472da9](https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6))
 
 ## [0.3.8](https://github.com/Edward-Muir/when/compare/v0.3.7...v0.3.8) (2026-01-13)
 
-
 ### Features
 
-* SImplify logo ([4dec65d](https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4))
-
+- SImplify logo ([4dec65d](https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4))
 
 ### Bug Fixes
 
-* Make timeline tick marks wider ([a3a9859](https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c))
+- Make timeline tick marks wider ([a3a9859](https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c))
 
 ## [0.3.7](https://github.com/Edward-Muir/when/compare/v0.3.6...v0.3.7) (2026-01-10)
 
-
 ### Bug Fixes
 
-* Fix game rule text ([1aa32b6](https://github.com/Edward-Muir/when/commit/1aa32b6a0efaa0e87526c89798c1cbae120f5058))
+- Fix game rule text ([1aa32b6](https://github.com/Edward-Muir/when/commit/1aa32b6a0efaa0e87526c89798c1cbae120f5058))
 
 ## [0.3.6](https://github.com/Edward-Muir/when/compare/v0.3.5...v0.3.6) (2026-01-10)
 
-
 ### Features
 
-* Add pill note on daily challenge theme ([412077d](https://github.com/Edward-Muir/when/commit/412077d93560dd0344d03c749599111374bdaee8))
+- Add pill note on daily challenge theme ([412077d](https://github.com/Edward-Muir/when/commit/412077d93560dd0344d03c749599111374bdaee8))
 
 ## [0.3.5](https://github.com/Edward-Muir/when/compare/v0.3.4...v0.3.5) (2026-01-07)
 
-
 ### Bug Fixes
 
-* Start with 5 cards in daily challenge ([d437990](https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a))
+- Start with 5 cards in daily challenge ([d437990](https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a))
 
 ## [0.3.4](https://github.com/Edward-Muir/when/compare/v0.3.3...v0.3.4) (2026-01-07)
 
-
 ### Features
 
-* Add remaining images ([96584d8](https://github.com/Edward-Muir/when/commit/96584d8d86e48c939b6b88c49b9136f358023482))
+- Add remaining images ([96584d8](https://github.com/Edward-Muir/when/commit/96584d8d86e48c939b6b88c49b9136f358023482))
 
 ## [0.3.3](https://github.com/Edward-Muir/when/compare/v0.3.2...v0.3.3) (2026-01-07)
 
-
 ### Features
 
-* Set defualt hand size to 5 ([00d30e5](https://github.com/Edward-Muir/when/commit/00d30e5b952bc61ade1ad9c7cf07e2f7d226ce49))
+- Set defualt hand size to 5 ([00d30e5](https://github.com/Edward-Muir/when/commit/00d30e5b952bc61ade1ad9c7cf07e2f7d226ce49))
 
 ## [0.3.2](https://github.com/Edward-Muir/when/compare/v0.3.1...v0.3.2) (2026-01-06)
 
-
 ### Bug Fixes
 
-* Update image size ([e0c5e13](https://github.com/Edward-Muir/when/commit/e0c5e138947d2690ed3f7e3e60d7e91e9b1aeeb2))
+- Update image size ([e0c5e13](https://github.com/Edward-Muir/when/commit/e0c5e138947d2690ed3f7e3e60d7e91e9b1aeeb2))
 
 ## [0.3.1](https://github.com/Edward-Muir/when/compare/v0.3.0...v0.3.1) (2026-01-06)
 
-
 ### Features
 
-* Add images to new events ([7c8f4b5](https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f))
-* Add more events ([31a44f7](https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a))
-* Check for updates ([6169025](https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff))
-
+- Add images to new events ([7c8f4b5](https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f))
+- Add more events ([31a44f7](https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a))
+- Check for updates ([6169025](https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff))
 
 ### Bug Fixes
 
-* Remove duplicate events ([a6b7e39](https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a))
+- Remove duplicate events ([a6b7e39](https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a))
 
 ## [0.3.0](https://github.com/Edward-Muir/when/compare/v0.2.2...v0.3.0) (2026-01-06)
 
-
 ### Features
 
-* Add full timeline view ([01d4d88](https://github.com/Edward-Muir/when/commit/01d4d88cc868317058afc16b1f9a0dcdfd89e0a1))
-
+- Add full timeline view ([01d4d88](https://github.com/Edward-Muir/when/commit/01d4d88cc868317058afc16b1f9a0dcdfd89e0a1))
 
 ### Bug Fixes
 
-* Correct number of events shared ([9cd7c78](https://github.com/Edward-Muir/when/commit/9cd7c7846df769856fe04b5ac959918e6eb249b1))
-* Make settings button more visible ([b28cac8](https://github.com/Edward-Muir/when/commit/b28cac81a87cd40cadfcd92a994594d7d9724917))
+- Correct number of events shared ([9cd7c78](https://github.com/Edward-Muir/when/commit/9cd7c7846df769856fe04b5ac959918e6eb249b1))
+- Make settings button more visible ([b28cac8](https://github.com/Edward-Muir/when/commit/b28cac81a87cd40cadfcd92a994594d7d9724917))
 
 ## [0.2.2](https://github.com/Edward-Muir/when/compare/v0.2.1...v0.2.2) (2026-01-06)
 
-
 ### Features
 
-* Add feedback email button ([cf03901](https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3))
-
+- Add feedback email button ([cf03901](https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3))
 
 ### Bug Fixes
 
-* Change menu colours ([9f55d23](https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab))
+- Change menu colours ([9f55d23](https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab))
 
 ## [0.2.1](https://github.com/Edward-Muir/when/compare/v0.2.0...v0.2.1) (2026-01-05)
 
-
 ### Bug Fixes
 
-* Correctly place wrong text in pop up, force update on new version ([8add150](https://github.com/Edward-Muir/when/commit/8add15075b3fbc24607e1984830a9e177fec0a00))
+- Correctly place wrong text in pop up, force update on new version ([8add150](https://github.com/Edward-Muir/when/commit/8add15075b3fbc24607e1984830a9e177fec0a00))
 
 ## [0.2.0](https://github.com/Edward-Muir/when/compare/v0.1.9...v0.2.0) (2026-01-05)
 
-
 ### Features
 
-* Correct colours of icons / titles ([affe544](https://github.com/Edward-Muir/when/commit/affe5447ee4143e922845fdd469874ca03da76ea))
-
+- Correct colours of icons / titles ([affe544](https://github.com/Edward-Muir/when/commit/affe5447ee4143e922845fdd469874ca03da76ea))
 
 ### Bug Fixes
 
-* remove When title from game select screen ([3842541](https://github.com/Edward-Muir/when/commit/3842541743ebeb9ca4214d086871c450f95b6d55))
+- remove When title from game select screen ([3842541](https://github.com/Edward-Muir/when/commit/3842541743ebeb9ca4214d086871c450f95b6d55))
 
 ## [0.1.9](https://github.com/Edward-Muir/when/compare/v0.1.8...v0.1.9) (2026-01-05)
 
-
 ### Features
 
-* Resize image boxes to display full image ([9c6ecf9](https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7))
-* Simplify game menus ([6ea49be](https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415))
-* Unify text and shadows ([3682e3c](https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4))
-
+- Resize image boxes to display full image ([9c6ecf9](https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7))
+- Simplify game menus ([6ea49be](https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415))
+- Unify text and shadows ([3682e3c](https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4))
 
 ### Bug Fixes
 
-* Add wrong banner in single player ([118b948](https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786))
+- Add wrong banner in single player ([118b948](https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786))
 
 ## [0.1.8](https://github.com/Edward-Muir/when/compare/v0.1.7...v0.1.8) (2026-01-05)
 
-
 ### Features
 
-* Burger menu ([5ab03c8](https://github.com/Edward-Muir/when/commit/5ab03c8112935fcf59c0f6a1adc70b3d30b712ae))
-* Update colour palette ([2eb7f36](https://github.com/Edward-Muir/when/commit/2eb7f367fc500750280375ec5c4e147b7d744b8c))
-* Update colour pallete ([bc625cd](https://github.com/Edward-Muir/when/commit/bc625cd17861fd9bc57ba3240b8c7e30aaf4a86e))
+- Burger menu ([5ab03c8](https://github.com/Edward-Muir/when/commit/5ab03c8112935fcf59c0f6a1adc70b3d30b712ae))
+- Update colour palette ([2eb7f36](https://github.com/Edward-Muir/when/commit/2eb7f367fc500750280375ec5c4e147b7d744b8c))
+- Update colour pallete ([bc625cd](https://github.com/Edward-Muir/when/commit/bc625cd17861fd9bc57ba3240b8c7e30aaf4a86e))
 
 ## [0.1.7](https://github.com/Edward-Muir/when/compare/v0.1.6...v0.1.7) (2026-01-05)
 
-
 ### Bug Fixes
 
-* fix release script ([a7a01bd](https://github.com/Edward-Muir/when/commit/a7a01bde0be68f59c3488571ebecd778153c7bad))
+- fix release script ([a7a01bd](https://github.com/Edward-Muir/when/commit/a7a01bde0be68f59c3488571ebecd778153c7bad))
 
 ## [0.1.6](https://github.com/Edward-Muir/when/compare/v0.1.5...v0.1.6) (2026-01-05)
 
-
 ### Bug Fixes
 
-* fix release script ([b25aa77](https://github.com/Edward-Muir/when/commit/b25aa77d3247f2cff60ae69786c8d9f59250d163))
+- fix release script ([b25aa77](https://github.com/Edward-Muir/when/commit/b25aa77d3247f2cff60ae69786c8d9f59250d163))
 
 ## [0.1.5](https://github.com/Edward-Muir/when/compare/v0.1.4...v0.1.5) (2026-01-05)
 
-
 ### Bug Fixes
 
-* fix release script ([6cc7aec](https://github.com/Edward-Muir/when/commit/6cc7aec0174e3c98eee8819aca94375bcdd451b9))
+- fix release script ([6cc7aec](https://github.com/Edward-Muir/when/commit/6cc7aec0174e3c98eee8819aca94375bcdd451b9))
 
 ## [0.1.4](https://github.com/Edward-Muir/when/compare/v0.1.3...v0.1.4) (2026-01-05)
 

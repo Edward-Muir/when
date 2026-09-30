@@ -1,8 +1,9 @@
 /**
  * Applies `slug -> { description?, friendly_name? }` rewrite maps to the event JSON.
  *
- *   node scripts/events/date-clues-apply.js            # dry run, validates only
- *   node scripts/events/date-clues-apply.js --apply    # write the files
+ *   node scripts/events/date-clues-apply.js                      # dry run, validates only
+ *   node scripts/events/date-clues-apply.js --apply              # write the files
+ *   node scripts/events/date-clues-apply.js rewrite-001.json ... # only these maps
  *
  * Maps are read from untracked_data/date-clues/rewrite-*.json (gitignored), so rewrites
  * can be authored in parallel across disjoint files while a single deterministic pass
@@ -32,9 +33,20 @@ const die = (msg, lines) => {
 };
 
 // ---- merge maps -------------------------------------------------------------
-const mapFiles = fs.existsSync(MAP_DIR)
-  ? fs.readdirSync(MAP_DIR).filter((f) => /^rewrite-.*\.json$/.test(f)).sort()
-  : [];
+// Named maps, like the other apply scripts, so one batch can be checked on its own while
+// others are still being written.
+const namedMaps = process.argv
+  .slice(2)
+  .filter((a) => !a.startsWith('--'))
+  .map((a) => path.basename(a));
+const mapFiles = namedMaps.length
+  ? namedMaps
+  : fs.existsSync(MAP_DIR)
+    ? fs
+        .readdirSync(MAP_DIR)
+        .filter((f) => /^rewrite-.*\.json$/.test(f))
+        .sort()
+    : [];
 if (!mapFiles.length) die(`no rewrite-*.json maps in ${path.relative(process.cwd(), MAP_DIR)}`);
 
 const merged = {};
@@ -69,7 +81,9 @@ for (const file of files) {
 }
 for (const [slug, entries] of catalogue) {
   if (entries.length > 1) {
-    console.warn(`! catalogue has ${entries.length} events with slug "${slug}" (${entries.map((e) => e.file).join(', ')})`);
+    console.warn(
+      `! catalogue has ${entries.length} events with slug "${slug}" (${entries.map((e) => e.file).join(', ')})`
+    );
   }
 }
 
@@ -88,7 +102,8 @@ for (const [slug, patch] of Object.entries(merged)) {
   const entry = entries[0];
   const keys = Object.keys(patch);
   const illegal = keys.filter((k) => !EDITABLE.includes(k));
-  if (illegal.length) errors.push(`${slug}: may only patch ${EDITABLE.join('/')}, got ${illegal.join('/')}`);
+  if (illegal.length)
+    errors.push(`${slug}: may only patch ${EDITABLE.join('/')}, got ${illegal.join('/')}`);
   if (!keys.length) errors.push(`${slug}: empty patch`);
 
   const proposed = { ...entry.event, ...patch };
@@ -96,15 +111,19 @@ for (const [slug, patch] of Object.entries(merged)) {
   // The applier re-runs the guard on its own input: a rewrite that reintroduces a clue
   // must never reach the catalogue.
   const clues = eventDateClues(proposed);
-  if (clues.length) errors.push(`${slug}: rewrite still has a date clue -> ${formatOffender(proposed, clues)}`);
+  if (clues.length)
+    errors.push(`${slug}: rewrite still has a date clue -> ${formatOffender(proposed, clues)}`);
 
   if (patch.friendly_name !== undefined) {
     const n = patch.friendly_name;
     if (n.length > MAX_FRIENDLY_NAME_LENGTH) {
-      errors.push(`${slug}: friendly_name is ${n.length} chars, limit ${MAX_FRIENDLY_NAME_LENGTH} -> "${n}"`);
+      errors.push(
+        `${slug}: friendly_name is ${n.length} chars, limit ${MAX_FRIENDLY_NAME_LENGTH} -> "${n}"`
+      );
     }
     const owners = (nameOwners.get(n) || []).filter((s) => s !== slug);
-    if (owners.length) errors.push(`${slug}: friendly_name "${n}" already used by ${owners.join(', ')}`);
+    if (owners.length)
+      errors.push(`${slug}: friendly_name "${n}" already used by ${owners.join(', ')}`);
   }
   if (patch.description !== undefined && !patch.description.trim()) {
     errors.push(`${slug}: empty description`);
@@ -133,7 +152,9 @@ for (const [slug, patch] of Object.entries(merged)) {
 }
 
 if (!apply) {
-  console.log(`\nDry run: ${changed} event(s) would change across ${touched.size} file(s). Re-run with --apply.`);
+  console.log(
+    `\nDry run: ${changed} event(s) would change across ${touched.size} file(s). Re-run with --apply.`
+  );
   process.exit(0);
 }
 

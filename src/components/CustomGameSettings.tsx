@@ -17,6 +17,8 @@ interface CustomGameSettingsProps {
   setSelectedCategories: (categories: Category[]) => void;
   selectedEras: Era[];
   setSelectedEras: (eras: Era[]) => void;
+  selectedRegions: string[];
+  setSelectedRegions: (regions: string[]) => void;
   // Player / hand size — controls hidden, but values + setters feed the deck/share code
   playerCount: number;
   onPlayerCountChange: (count: number) => void;
@@ -25,7 +27,7 @@ interface CustomGameSettingsProps {
   // Play action
   onPlay: () => void;
   isPlayValid: boolean;
-  // Total cards matching the current era/category/difficulty selection
+  // Total cards matching the current difficulty/category/era/region selection
   deckCount: number;
 }
 
@@ -44,6 +46,8 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   setSelectedCategories,
   selectedEras,
   setSelectedEras,
+  selectedRegions,
+  setSelectedRegions,
   playerCount,
   onPlayerCountChange,
   suddenDeathHandSize,
@@ -66,6 +70,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
         difficulties: selectedDifficulties,
         categories: selectedCategories,
         eras: selectedEras,
+        regions: selectedRegions,
         seed: challengeSeed,
       }),
     [
@@ -74,6 +79,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
       selectedDifficulties,
       selectedCategories,
       selectedEras,
+      selectedRegions,
       challengeSeed,
     ]
   );
@@ -103,6 +109,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
     setSelectedDifficulties(d.difficulties);
     setSelectedCategories(d.categories);
     setSelectedEras(d.eras);
+    setSelectedRegions(d.regions);
     setChallengeSeed(d.seed);
   };
 
@@ -119,7 +126,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
     <div className="flex flex-col flex-1 min-h-0 bg-surface rounded-2xl border border-border overflow-hidden">
       {/* Scrollable options */}
       <div className="flex-1 min-h-0 overflow-y-auto p-4 space-y-4">
-        {/* Filters (Categories, Eras, Difficulty) */}
+        {/* Filters (Difficulty, Categories, Eras, Regions) */}
         <FilterControls
           showCounts
           selectedDifficulties={selectedDifficulties}
@@ -128,6 +135,8 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           onCategoriesChange={setSelectedCategories}
           selectedEras={selectedEras}
           onErasChange={setSelectedEras}
+          selectedRegions={selectedRegions}
+          onRegionsChange={setSelectedRegions}
         />
 
         {/* Share this game — full game-state URL + shuffle + share */}

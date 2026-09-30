@@ -118,6 +118,16 @@ export interface HistoricalEvent {
    * `scripts/events/year-range-apply.js`, which is mechanically incapable of touching `year`.
    */
   year_end?: number;
+  /**
+   * Where on today's map the event happened: present-day country names ("Germany") and, where
+   * no country says it, macro-regions ("Europe", "Global"), all from `src/data/regions.json`.
+   * Plain readable names, never codes. `eventRegionSet` in `utils/regions.ts` resolves them to
+   * macro-regions for filtering.
+   *
+   * Written by `scripts/events/region-apply.js` in canonical order; the rules for choosing
+   * tags are in docs/regions/tagging-spec.md. Optional until the catalogue sweep lands.
+   */
+  regions?: string[];
 }
 
 export interface Player {
@@ -217,6 +227,11 @@ export interface GameConfig {
   selectedDifficulties: Difficulty[];
   selectedCategories: Category[];
   selectedEras: Era[];
+  /**
+   * Macro-region names from `ALL_REGIONS` (src/utils/regions.ts). Missing means every region,
+   * which is what the daily, a theme replay and a 6-word challenge code all get.
+   */
+  selectedRegions?: string[];
   dailySeed?: string;
 
   /**

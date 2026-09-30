@@ -3,6 +3,7 @@ import { useWhenGame } from './useWhenGame';
 import { loadAllEvents } from '../utils/eventLoader';
 import { HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
+import { ALL_REGIONS } from '../utils/regions';
 
 import * as gameLogic from '../utils/gameLogic';
 import { __setCuratedThemesForTest } from '../utils/curatedThemes';
@@ -592,5 +593,55 @@ describe('useWhenGame - Archive replay', () => {
       });
     }
     expect(result.current.state.lastConfig?.challengeSeed).not.toBe(firstSeed);
+  });
+});
+
+describe('useWhenGame - region filter', () => {
+  // Alternate East Asian and European cards, with some untagged, so a leak is easy to see.
+  const catalogue: HistoricalEvent[] = Array.from({ length: 60 }, (_, i) => ({
+    ...createTestEvent(`region-${i}`, 1000 + i * 10),
+    ...(i % 3 === 0 ? {} : { regions: i % 3 === 1 ? ['Japan'] : ['France'] }),
+  }));
+
+  beforeEach(() => {
+    jest.useFakeTimers();
+    mockedLoadAllEvents.mockResolvedValue(catalogue);
+    jest.spyOn(gameLogic, 'shuffleArray').mockImplementation(<T>(arr: T[]) => [...arr]);
+  });
+
+  afterEach(() => {
+    jest.runOnlyPendingTimers();
+    jest.useRealTimers();
+    jest.clearAllMocks();
+  });
+
+  async function dealt(selectedRegions?: string[]) {
+    const { result } = renderHook(() => useWhenGame());
+    await act(async () => {
+      await Promise.resolve();
+    });
+    act(() => {
+      result.current.startGame({
+        mode: 'suddenDeath',
+        selectedDifficulties: ['medium'],
+        selectedCategories: ['empires'],
+        selectedEras: [...ALL_ERAS],
+        selectedRegions,
+        suddenDeathHandSize: 5,
+      });
+    });
+    const { state } = result.current;
+    return [...state.timeline, ...state.players[0].hand, ...state.deck];
+  }
+
+  it('deals only cards that resolve to a selected region', async () => {
+    const cards = await dealt(['East Asia']);
+    expect(cards).toHaveLength(20);
+    for (const card of cards) expect(card.regions).toEqual(['Japan']);
+  });
+
+  it('deals the whole pool, untagged cards included, when regions are missing or all selected', async () => {
+    expect(await dealt(undefined)).toHaveLength(60);
+    expect(await dealt([...ALL_REGIONS])).toHaveLength(60);
   });
 });

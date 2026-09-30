@@ -1,11 +1,32 @@
 {
   "documentedFrom": "1.24.0",
   "unreleased": [
-    "Hundreds more events now cover a span of years rather than a single date.",
-    "Another 92 event dates were corrected against their sources.",
-    "The iPhone app is now ready for iOS 27 and opens normally on it."
+    "The iPhone app is now ready for iOS 27 and opens normally on it.",
+    "Custom games can now be filtered by world region, such as Europe or East Asia.",
+    "Names, dates and descriptions were corrected on over a hundred cards, and 33 duplicate cards were removed."
   ],
   "releases": [
+    {
+      "version": "1.29.0",
+      "date": "2026-09-29",
+      "notes": [
+        "A daily challenge left part-way now resumes where it stopped instead of dealing again."
+      ]
+    },
+    {
+      "version": "1.28.0",
+      "date": "2026-09-29",
+      "notes": [
+        "Curated themes now arrive every Monday and Friday, with twenty-two new decks from pharaohs to pirates."
+      ]
+    },
+    {
+      "version": "1.27.0",
+      "date": "2026-09-25",
+      "notes": [
+        "The app has a new painted hourglass icon and a matching launch screen."
+      ]
+    },
     {
       "version": "1.26.0",
       "date": "2026-09-22",

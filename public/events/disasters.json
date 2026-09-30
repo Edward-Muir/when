@@ -13,7 +13,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cretaceous–Paleogene_extinction_event",
     "color": "#25201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico",
+      "Global"
+    ]
   },
   {
     "name": "yellowstone-supervolcano",
@@ -29,7 +33,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowstone_Caldera",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "toba-supereruption",
@@ -45,7 +52,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Youngest_Toba_eruption",
     "color": "#281f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "storegga-tsunami",
@@ -61,7 +71,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Storegga_Slide",
     "color": "#412710",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Norway",
+      "United Kingdom"
+    ]
   },
   {
     "name": "black-sea-deluge",
@@ -78,7 +92,11 @@
     "color": "#291f17",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -5600
+    "year_end": -5600,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "thera-eruption",
@@ -94,7 +112,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_eruption",
     "color": "#4a352b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "bronze-age-collapse",
@@ -111,7 +132,12 @@
     "color": "#3c3b3c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -1150
+    "year_end": -1150,
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "late-bronze-age-drought",
@@ -128,7 +154,12 @@
     "color": "#25303e",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -900
+    "year_end": -900,
+    "regions": [
+      "Cyprus",
+      "Greece",
+      "Syria"
+    ]
   },
   {
     "name": "plague-of-athens",
@@ -145,7 +176,10 @@
     "color": "#261e26",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -426
+    "year_end": -426,
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "vesuvius-eruption",
@@ -161,7 +195,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
     "color": "#4a2b2f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "pompeii",
@@ -177,7 +214,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
     "color": "#2e1b1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "antonine-plague",
@@ -194,7 +234,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 180
+    "year_end": 180,
+    "regions": [
+      "Italy",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "hatepe-eruption",
@@ -210,7 +254,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hatepe_eruption",
     "color": "#2b1b27",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "plague-of-cyprian",
@@ -227,7 +274,11 @@
     "color": "#2b1d1c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 262
+    "year_end": 262,
+    "regions": [
+      "Italy",
+      "Tunisia"
+    ]
   },
   {
     "name": "365-crete-earthquake",
@@ -243,7 +294,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/365_Crete_earthquake",
     "color": "#281e21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cyprus",
+      "Egypt",
+      "Greece",
+      "Libya"
+    ]
   },
   {
     "name": "antioch-earthquake-526",
@@ -259,7 +316,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/526_Antioch_earthquake",
     "color": "#3a2c28",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "volcanic-winter-536",
@@ -276,7 +337,12 @@
     "color": "#342c24",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 537
+    "year_end": 537,
+    "regions": [
+      "Europe",
+      "Middle East & North Africa",
+      "East Asia"
+    ]
   },
   {
     "name": "plague-of-justinian",
@@ -293,7 +359,12 @@
     "color": "#2b221a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 549
+    "year_end": 549,
+    "regions": [
+      "Egypt",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "justinian-plague-recurrence",
@@ -310,7 +381,11 @@
     "color": "#26201d",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 628
+    "year_end": 628,
+    "regions": [
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "damghan-earthquake",
@@ -326,14 +401,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/856_Damghan_earthquake",
     "color": "#271f20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "aleppo-earthquake",
     "friendly_name": "Aleppo Earthquake",
     "year": 1138,
     "category": "disasters",
-    "description": "A devastating earthquake struck Syria, killing over 200,000 people.",
+    "description": "A devastating earthquake wrecked Aleppo and its citadel, and the often-quoted toll is a later chronicler's uncertain figure.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aleppo-earthquake_vo3ahf?_a=BAMAMikS0",
     "image_width": 330,
@@ -342,14 +420,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1138_Aleppo_earthquake",
     "color": "#1c2321",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Syria"
+    ]
   },
   {
     "name": "syria-earthquake-medieval",
     "friendly_name": "Great Syria Earthquake",
     "year": 1202,
     "category": "disasters",
-    "description": "A powerful earthquake killed over one million across the Middle East.",
+    "description": "A powerful earthquake devastated the Levant, and its famous toll was swollen by a famine in Egypt.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/syria-earthquake-medieval_ewy8ev?_a=BAMAMikS0",
     "image_width": 330,
@@ -358,7 +439,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes",
     "color": "#1e231f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Lebanon",
+      "Palestine",
+      "Syria"
+    ]
   },
   {
     "name": "samalas-eruption",
@@ -374,7 +460,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1257_Samalas_eruption",
     "color": "#4f3224",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "great-european-famine",
@@ -391,14 +480,17 @@
     "color": "#2e342c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1317
+    "year_end": 1317,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "mongol-black-death-spread",
     "friendly_name": "Siege of Caffa",
     "year": 1346,
     "category": "warfare",
-    "description": "Mongols catapulted plague victims into a city, spreading the Black Death to Europe.",
+    "description": "One later account says Mongol besiegers hurled plague victims into a Genoese port town as the Black Death neared Europe.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-black-death-spread_l0wypq?_a=BAMAMikS0",
     "image_width": 330,
@@ -407,7 +499,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Caffa",
     "color": "#333230",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "black-death-arrives",
@@ -423,7 +521,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death",
     "color": "#3f3b31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "black-death-peak",
@@ -439,7 +540,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death",
     "color": "#282f26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "sweating-sickness",
@@ -455,7 +559,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sweating_sickness",
     "color": "#25201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "dancing-plague",
@@ -471,14 +578,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
     "color": "#1f2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "shaanxi-earthquake",
     "friendly_name": "Shaanxi Earthquake",
     "year": 1556,
     "category": "disasters",
-    "description": "The deadliest earthquake in history killed approximately 830,000 people in China.",
+    "description": "The deadliest earthquake on record collapsed cave dwellings and towns across central China, and its toll is still debated.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shaanxi-earthquake_ahgiva?_a=BAMAMikS0",
     "image_width": 330,
@@ -487,7 +597,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1556_Shaanxi_earthquake",
     "color": "#222121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "huaynaputina-eruption",
@@ -503,7 +616,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Huaynaputina",
     "color": "#30252a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "russian-famine-troubles",
@@ -520,13 +636,17 @@
     "color": "#29282f",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1603
+    "year_end": 1603,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "vasa-sinking",
     "friendly_name": "Vasa Sinks",
     "year": 1628,
-    "category": "revolution",
+    "category": "disasters",
     "description": "The Swedish warship sank on its maiden voyage in Stockholm harbor.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vasa-sinking_xg5p7y?_a=BAMAMikS0",
@@ -536,7 +656,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vasa_(ship)",
     "color": "#95b3be",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Sweden"
+    ]
   },
   {
     "name": "italian-plague",
@@ -553,7 +676,10 @@
     "color": "#272017",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1631
+    "year_end": 1631,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "great-plague-london",
@@ -570,7 +696,10 @@
     "color": "#261f21",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1666
+    "year_end": 1666,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "great-fire-london",
@@ -586,7 +715,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "cascadia-earthquake-1700",
@@ -602,7 +734,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1700_Cascadia_earthquake",
     "color": "#2a1e1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "chile-earthquake-1730",
@@ -618,7 +754,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
     "color": "#261f1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile",
+      "Japan"
+    ]
   },
   {
     "name": "irish-famine-forgotten",
@@ -635,7 +775,10 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1741
+    "year_end": 1741,
+    "regions": [
+      "Ireland"
+    ]
   },
   {
     "name": "lisbon-earthquake",
@@ -651,7 +794,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
     "color": "#2a1d1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Portugal"
+    ]
   },
   {
     "name": "great-boston-fire-1760",
@@ -667,7 +813,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Boston_Fire_of_1760",
     "color": "#2b1d1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "great-hurricane-caribbean",
@@ -683,7 +832,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Hurricane_of_1780",
     "color": "#3c3a45",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Barbados",
+      "France",
+      "Netherlands",
+      "Saint Lucia"
+    ]
   },
   {
     "name": "laki-eruption",
@@ -699,7 +854,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Laki",
     "color": "#97aaae",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iceland"
+    ]
   },
   {
     "name": "chalisa-famine",
@@ -716,7 +874,10 @@
     "color": "#2a1e1c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1784
+    "year_end": 1784,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "calabria-earthquake",
@@ -732,7 +893,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1905_Calabria_earthquake",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "doji-bara-famine",
@@ -749,7 +913,10 @@
     "color": "#2b1e19",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1792
+    "year_end": 1792,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "unzen-eruption",
@@ -765,7 +932,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1792_Unzen_landslide_and_tsunami",
     "color": "#2a1e19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "yellow-fever-philadelphia",
@@ -781,7 +951,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1793_Philadelphia_yellow_fever_epidemic",
     "color": "#25201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "new-madrid-earthquakes",
@@ -797,7 +970,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1811–1812_New_Madrid_earthquakes",
     "color": "#363531",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "london-beer-flood",
@@ -813,7 +989,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/London_Beer_Flood",
     "color": "#453e33",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "tambora-eruption",
@@ -829,7 +1008,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
     "color": "#23211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "year-without-summer",
@@ -845,7 +1027,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
     "color": "#706f68",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe",
+      "North America",
+      "Global"
+    ]
   },
   {
     "name": "great-fire-new-york",
@@ -861,13 +1048,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_New_York",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "irish-potato-famine",
     "friendly_name": "Irish Potato Famine Begins",
     "year": 1845,
-    "category": "revolution",
+    "category": "disasters",
     "description": "A potato blight caused mass starvation and emigration from Ireland.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irish-potato-famine_srbxrf?_a=BAMAMikS0",
@@ -877,7 +1067,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)",
     "color": "#2c2c29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ireland",
+      "United Kingdom"
+    ]
   },
   {
     "name": "cholera-london",
@@ -893,7 +1087,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2010s_Haiti_cholera_outbreak",
     "color": "#1f2125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "third-plague-pandemic",
@@ -910,7 +1107,13 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1960
+    "year_end": 1960,
+    "regions": [
+      "China",
+      "Hong Kong",
+      "India",
+      "Global"
+    ]
   },
   {
     "name": "ansei-earthquake",
@@ -926,7 +1129,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "carrington-event",
@@ -942,7 +1148,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Carrington_Event",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "Global"
+    ]
   },
   {
     "name": "indian-rebellion-famine",
@@ -959,7 +1169,10 @@
     "color": "#202124",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1868
+    "year_end": 1868,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "finnish-famine",
@@ -976,7 +1189,10 @@
     "color": "#abaeac",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1868
+    "year_end": 1868,
+    "regions": [
+      "Finland"
+    ]
   },
   {
     "name": "peshtigo-fire",
@@ -992,7 +1208,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Peshtigo_fire",
     "color": "#2c1d17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "great-chicago-fire",
@@ -1008,7 +1227,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire",
     "color": "#512f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "princess-alice-disaster",
@@ -1024,7 +1246,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "krakatoa-eruption",
@@ -1040,7 +1265,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Krakatoa",
     "color": "#332d27",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "mount-tarawera-eruption",
@@ -1056,7 +1284,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1886_eruption_of_Mount_Tarawera",
     "color": "#23211b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "johnstown-flood",
@@ -1072,7 +1303,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Johnstown_Flood",
     "color": "#2d2d26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "russian-flu",
@@ -1089,7 +1323,11 @@
     "color": "#1f2125",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1890
+    "year_end": 1890,
+    "regions": [
+      "Uzbekistan",
+      "Global"
+    ]
   },
   {
     "name": "russian-famine-imperial",
@@ -1106,7 +1344,11 @@
     "color": "#585448",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1892
+    "year_end": 1892,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "galveston-hurricane",
@@ -1122,7 +1364,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1900_Galveston_hurricane",
     "color": "#3f301f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "general-slocum",
@@ -1138,7 +1383,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/PS_General_Slocum",
     "color": "#25201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "san-francisco-earthquake",
@@ -1154,7 +1402,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake",
     "color": "#4a331f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "valparaiso-earthquake",
@@ -1170,7 +1421,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1906_Valparaíso_earthquake",
     "color": "#3b2c1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile"
+    ]
   },
   {
     "name": "courrieres-mine",
@@ -1186,7 +1440,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Courrières_mine_disaster",
     "color": "#663820",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "messina-earthquake",
@@ -1202,7 +1459,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1908_Messina_earthquake",
     "color": "#543b26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "triangle-shirtwaist-fire",
@@ -1218,7 +1478,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire",
     "color": "#2a1e19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "titanic-disaster",
@@ -1234,7 +1497,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic",
     "color": "#282016",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "empress-ireland",
@@ -1250,7 +1517,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_RMS_Empress_of_Ireland",
     "color": "#3b2c1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "Norway"
+    ]
   },
   {
     "name": "eastland-disaster",
@@ -1266,7 +1537,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/SS_Eastland",
     "color": "#3c2e1f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ottawa-parliament-fire",
@@ -1282,7 +1556,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Parliament_Hill",
     "color": "#482413",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "persian-famine",
@@ -1299,7 +1576,10 @@
     "color": "#271f1a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1919
+    "year_end": 1919,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "halifax-explosion",
@@ -1315,7 +1595,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Explosion",
     "color": "#2c1e12",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "spanish-flu-begins",
@@ -1331,7 +1614,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_flu",
     "color": "#272019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "spanish-flu-peak",
@@ -1347,7 +1634,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_wave",
     "color": "#3f301e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "boston-molasses-flood",
@@ -1363,7 +1653,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood",
     "color": "#4a2e1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "haiyuan-earthquake",
@@ -1379,7 +1672,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1920_Haiyuan_earthquake",
     "color": "#482f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "russian-famine-civil-war",
@@ -1396,7 +1692,11 @@
     "color": "#2b1e13",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1922
+    "year_end": 1922,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "knickerbocker-storm",
@@ -1412,7 +1712,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Knickerbocker_storm",
     "color": "#291f16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "great-kanto-earthquake",
@@ -1428,7 +1731,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Kantō_Earthquake",
     "color": "#2c1d12",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "tri-state-tornado",
@@ -1444,7 +1750,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1925_Tri-State_tornado",
     "color": "#291f14",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "st-francis-dam-failure",
@@ -1460,7 +1769,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/St._Francis_Dam",
     "color": "#2c1d15",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "china-great-floods",
@@ -1476,7 +1788,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Flood_(China)",
     "color": "#53482d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "holodomor",
@@ -1493,7 +1808,12 @@
     "color": "#25201a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1933
+    "year_end": 1933,
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "dust-bowl",
@@ -1509,7 +1829,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dust_Bowl",
     "color": "#402b1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nepal-bihar-earthquake-1934",
@@ -1525,7 +1848,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1934_Nepal–Bihar_earthquake",
     "color": "#553c22",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Nepal"
+    ]
   },
   {
     "name": "quetta-earthquake",
@@ -1541,7 +1868,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1935_Quetta_earthquake",
     "color": "#57412f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Pakistan"
+    ]
   },
   {
     "name": "hindenburg-disaster",
@@ -1557,7 +1887,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hindenburg_disaster",
     "color": "#2b1e15",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "United States"
+    ]
   },
   {
     "name": "ohio-river-flood",
@@ -1573,7 +1907,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ohio_River_flood_of_1937",
     "color": "#281f17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "twa-flight-3-crash",
@@ -1589,7 +1926,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/TWA_Flight_3",
     "color": "#3b2a19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "bengal-famine-wwii",
@@ -1606,7 +1946,12 @@
     "color": "#4b331f",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1944
+    "year_end": 1944,
+    "regions": [
+      "Bangladesh",
+      "India",
+      "United Kingdom"
+    ]
   },
   {
     "name": "dutch-hunger-winter",
@@ -1623,13 +1968,17 @@
     "color": "#24211c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1945
+    "year_end": 1945,
+    "regions": [
+      "Germany",
+      "Netherlands"
+    ]
   },
   {
     "name": "wilhelm-gustloff",
     "friendly_name": "Wilhelm Gustloff Sinks",
     "year": 1945,
-    "category": "revolution",
+    "category": "disasters",
     "description": "A Soviet submarine sank a refugee ship, killing over 9,000.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wilhelm-gustloff_uhlj5w?_a=BAMAMikS0",
@@ -1639,7 +1988,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/MV_Wilhelm_Gustloff",
     "color": "#281f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Poland",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "texas-city-disaster",
@@ -1655,14 +2010,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Texas_City_disaster",
     "color": "#2e1d12",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ashgabat-earthquake",
     "friendly_name": "Ashgabat Earthquake",
     "year": 1948,
     "category": "disasters",
-    "description": "A massive earthquake killed over 100,000 in Soviet Turkmenistan.",
+    "description": "A massive earthquake destroyed most of Ashgabat in Soviet Turkmenistan, and the state hid the true toll for decades.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashgabat-earthquake_fak1ya?_a=BAMAMikS0",
     "image_width": 330,
@@ -1671,7 +2029,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1948_Ashgabat_earthquake",
     "color": "#3b2a1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkmenistan"
+    ]
   },
   {
     "name": "great-smog-london",
@@ -1687,7 +2048,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Smog_of_London",
     "color": "#6e6444",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "north-sea-flood",
@@ -1703,7 +2067,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/North_Sea_flood_of_1953",
     "color": "#364c54",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Belgium",
+      "Netherlands",
+      "United Kingdom"
+    ]
   },
   {
     "name": "andrea-doria",
@@ -1719,7 +2088,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/SS_Andrea_Doria",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy",
+      "Sweden",
+      "United States"
+    ]
   },
   {
     "name": "minamata-disease",
@@ -1735,7 +2109,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Minamata_disease",
     "color": "#4f5657",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "asian-flu",
@@ -1752,13 +2129,17 @@
     "color": "#1f202b",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1958
+    "year_end": 1958,
+    "regions": [
+      "China",
+      "Global"
+    ]
   },
   {
     "name": "great-leap-forward-famine",
     "friendly_name": "Great Chinese Famine Begins",
     "year": 1959,
-    "category": "revolution",
+    "category": "disasters",
     "description": "Mao's Great Leap Forward policies caused a famine killing tens of millions.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-leap-forward-famine_rflwt6?_a=BAMAMikS0",
@@ -1768,7 +2149,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)",
     "color": "#1d2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "valdivia-earthquake",
@@ -1784,7 +2168,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
     "color": "#3d434e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Chile"
+    ]
   },
   {
     "name": "thalidomide-scandal",
@@ -1800,7 +2187,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Thalidomide_scandal",
     "color": "#212123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Global"
+    ]
   },
   {
     "name": "vajont-dam",
@@ -1816,7 +2207,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vajont_Dam",
     "color": "#1d2228",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "alaska-earthquake",
@@ -1832,7 +2226,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1964_Alaska_earthquake",
     "color": "#5f7078",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "aberfan-disaster",
@@ -1848,7 +2245,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Aberfan_disaster",
     "color": "#1d2228",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "biafra-famine",
@@ -1865,7 +2265,10 @@
     "color": "#a5b0b2",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1970
+    "year_end": 1970,
+    "regions": [
+      "Nigeria"
+    ]
   },
   {
     "name": "hong-kong-flu",
@@ -1882,7 +2285,11 @@
     "color": "#384a59",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1970
+    "year_end": 1970,
+    "regions": [
+      "Hong Kong",
+      "Global"
+    ]
   },
   {
     "name": "thule-b52-crash",
@@ -1898,7 +2305,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1968_Thule_Air_Base_B-52_crash",
     "color": "#454d58",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greenland",
+      "United States"
+    ]
   },
   {
     "name": "bhola-cyclone",
@@ -1914,7 +2325,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Bhola_cyclone",
     "color": "#5b646b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bangladesh"
+    ]
   },
   {
     "name": "peru-earthquake",
@@ -1930,7 +2344,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Ancash_earthquake",
     "color": "#1f2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "tonghai-earthquake",
@@ -1946,7 +2363,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Tonghai_earthquake",
     "color": "#212025",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "munich-massacre",
@@ -1962,7 +2382,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_massacre",
     "color": "#1d2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Israel"
+    ]
   },
   {
     "name": "bangladesh-famine",
@@ -1978,14 +2402,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bangladesh_famine_of_1974",
     "color": "#21323e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bangladesh"
+    ]
   },
   {
     "name": "super-tornado-outbreak",
     "friendly_name": "Super Tornado Outbreak",
     "year": 1974,
     "category": "disasters",
-    "description": "148 tornadoes struck across 13 US states in just 16 hours.",
+    "description": "148 tornadoes tore across 13 US states in one of the most violent outbreaks ever recorded.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/super-tornado-outbreak_eodzmw?_a=BAMAMikS0",
     "wikipedia_views": 143682,
@@ -1994,7 +2421,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Canada",
+      "United States"
+    ]
   },
   {
     "name": "joelma-building-fire",
@@ -2010,14 +2441,17 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Joelma_Building_fire",
     "color": "#1a212e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Brazil"
+    ]
   },
   {
     "name": "banqiao-dam",
     "friendly_name": "Banqiao Dam Failure",
     "year": 1975,
     "category": "disasters",
-    "description": "Dam failures killed an estimated 170,000 in the deadliest dam collapse.",
+    "description": "Typhoon floods burst a chain of dams in Henan in the deadliest dam failure ever, and the toll is still disputed.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/banqiao-dam_x3vcki?_a=BAMAMikS0",
     "image_width": 330,
@@ -2026,7 +2460,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1975_Banqiao_Dam_failure",
     "color": "#506978",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "tangshan-earthquake",
@@ -2042,7 +2479,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1976_Tangshan_earthquake",
     "color": "#1e2128",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "guatemala-earthquake",
@@ -2058,7 +2498,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1976_Guatemala_earthquake",
     "color": "#202125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guatemala"
+    ]
   },
   {
     "name": "tenerife-airport",
@@ -2074,13 +2517,18 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_airport_disaster",
     "color": "#8099a9",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands",
+      "Spain",
+      "United States"
+    ]
   },
   {
     "name": "jonestown-massacre",
     "friendly_name": "Jonestown Massacre",
     "year": 1978,
-    "category": "revolution",
+    "category": "disasters",
     "description": "Over 900 members of a cult died in a mass murder-suicide in Guyana.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jonestown-massacre_wgrrvz?_a=BAMAMikS0",
@@ -2090,7 +2538,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jonestown",
     "color": "#1b2228",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Guyana",
+      "United States"
+    ]
   },
   {
     "name": "three-mile-island",
@@ -2106,7 +2558,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident",
     "color": "#222b33",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mount-st-helens",
@@ -2122,7 +2577,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_St._Helens",
     "color": "#69717b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "aids-epidemic-recognized",
@@ -2138,7 +2596,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Epidemiology_of_HIV/AIDS",
     "color": "#1d212a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ethiopian-famine",
@@ -2155,7 +2616,10 @@
     "color": "#8296a3",
     "text_color": "dark",
     "has_detail": true,
-    "year_end": 1985
+    "year_end": 1985,
+    "regions": [
+      "Ethiopia"
+    ]
   },
   {
     "name": "bhopal-gas-disaster",
@@ -2171,7 +2635,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_disaster",
     "color": "#1b222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "mexico-city-earthquake",
@@ -2187,7 +2654,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1985_Mexico_City_earthquake",
     "color": "#878c89",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "nevado-del-ruiz",
@@ -2203,7 +2673,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Armero_tragedy",
     "color": "#323b44",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Colombia"
+    ]
   },
   {
     "name": "japan-airlines-123",
@@ -2219,7 +2692,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Japan_Air_Lines_Flight_123",
     "color": "#272e36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "challenger-disaster",
@@ -2235,7 +2711,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster",
     "color": "#1d2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "chernobyl-disaster",
@@ -2251,7 +2730,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chernobyl_disaster",
     "color": "#202125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Ukraine"
+    ]
   },
   {
     "name": "lake-nyos",
@@ -2267,7 +2749,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Nyos_disaster",
     "color": "#364149",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Cameroon"
+    ]
   },
   {
     "name": "dona-paz-disaster",
@@ -2283,7 +2768,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/MV_Doña_Paz",
     "color": "#403e42",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Philippines"
+    ]
   },
   {
     "name": "lockerbie-bombing",
@@ -2299,7 +2787,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pan_Am_Flight_103",
     "color": "#1b212c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Libya",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "armenian-earthquake",
@@ -2315,7 +2808,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1988_Armenian_earthquake",
     "color": "#798080",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Armenia",
+      "Europe"
+    ]
   },
   {
     "name": "piper-alpha",
@@ -2331,7 +2828,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Piper_Alpha",
     "color": "#241f23",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "exxon-valdez",
@@ -2347,7 +2847,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill",
     "color": "#202126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hillsborough-disaster",
@@ -2363,7 +2866,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hillsborough_disaster",
     "color": "#1c2229",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "iran-earthquake-manjil",
@@ -2379,7 +2885,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1990_Manjil–Rudbar_earthquake",
     "color": "#3e454e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "bangladesh-cyclone-chittagong",
@@ -2395,7 +2904,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1991_Bangladesh_cyclone",
     "color": "#374951",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bangladesh"
+    ]
   },
   {
     "name": "pinatubo-eruption",
@@ -2411,7 +2923,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1991_eruption_of_Mount_Pinatubo",
     "color": "#3f4854",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Philippines"
+    ]
   },
   {
     "name": "somali-famine",
@@ -2428,7 +2943,10 @@
     "color": "#202127",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1993
+    "year_end": 1993,
+    "regions": [
+      "Somalia"
+    ]
   },
   {
     "name": "hurricane-andrew",
@@ -2444,7 +2962,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Andrew",
     "color": "#36494f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bahamas",
+      "United States"
+    ]
   },
   {
     "name": "waco-siege",
@@ -2460,7 +2982,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Waco_siege",
     "color": "#242023",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "northridge-earthquake",
@@ -2476,7 +3001,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1994_Northridge_earthquake",
     "color": "#414e5b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "estonia-ferry",
@@ -2492,7 +3020,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_MS_Estonia",
     "color": "#19222c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Estonia",
+      "Sweden"
+    ]
   },
   {
     "name": "kobe-earthquake",
@@ -2508,7 +3040,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_earthquake",
     "color": "#3c3339",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "north-korea-famine",
@@ -2525,7 +3060,10 @@
     "color": "#2a2f36",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1999
+    "year_end": 1999,
+    "regions": [
+      "North Korea"
+    ]
   },
   {
     "name": "tokyo-subway-attack",
@@ -2541,13 +3079,16 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo_subway_sarin_attack",
     "color": "#314445",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "princess-diana-death",
     "friendly_name": "Princess Diana Dies",
     "year": 1997,
-    "category": "revolution",
+    "category": "figures",
     "description": "Princess Diana was killed in a car crash in Paris, shocking the world.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/princess-diana-death_vbmkw5?_a=BAMAMikS0",
@@ -2557,7 +3098,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Diana,_Princess_of_Wales",
     "color": "#292e31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "asian-financial-crisis",
@@ -2574,7 +3119,11 @@
     "color": "#1f202c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1999
+    "year_end": 1999,
+    "regions": [
+      "Thailand",
+      "East Asia"
+    ]
   },
   {
     "name": "el-nino-super",
@@ -2591,7 +3140,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1998
+    "year_end": 1998,
+    "regions": [
+      "Peru",
+      "Global"
+    ]
   },
   {
     "name": "hurricane-mitch",
@@ -2607,7 +3160,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Mitch",
     "color": "#3b424c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Honduras",
+      "Nicaragua"
+    ]
   },
   {
     "name": "columbine-shooting",
@@ -2623,7 +3180,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Columbine_High_School_massacre",
     "color": "#4c545d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "concorde-crash",
@@ -2639,7 +3199,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Air_France_Flight_4590",
     "color": "#414041",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "sars-outbreak",
@@ -2656,7 +3219,12 @@
     "color": "#142138",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 2004
+    "year_end": 2004,
+    "regions": [
+      "China",
+      "Hong Kong",
+      "Global"
+    ]
   },
   {
     "name": "european-heat-wave",
@@ -2672,7 +3240,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Heat_wave",
     "color": "#adaea9",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "indian-ocean-tsunami",
@@ -2688,7 +3259,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami",
     "color": "#19222a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Indonesia",
+      "Sri Lanka",
+      "Thailand"
+    ]
   },
   {
     "name": "hurricane-katrina",
@@ -2704,7 +3281,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Katrina",
     "color": "#174464",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "kashmir-earthquake",
@@ -2720,7 +3300,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2005_Kashmir_earthquake",
     "color": "#344348",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "cyclone-nargis",
@@ -2736,7 +3320,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cyclone_Nargis",
     "color": "#1c3a42",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Myanmar"
+    ]
   },
   {
     "name": "sichuan-earthquake",
@@ -2752,7 +3339,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2008_Sichuan_earthquake",
     "color": "#143343",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "global-financial-crisis",
@@ -2768,7 +3358,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2008_financial_crisis",
     "color": "#2a3b5c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "swine-flu-pandemic",
@@ -2785,7 +3379,11 @@
     "color": "#2d7e96",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 2010
+    "year_end": 2010,
+    "regions": [
+      "Mexico",
+      "Global"
+    ]
   },
   {
     "name": "haiti-earthquake",
@@ -2801,7 +3399,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake",
     "color": "#243c50",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Haiti"
+    ]
   },
   {
     "name": "deepwater-horizon",
@@ -2817,7 +3418,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill",
     "color": "#1b222a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "fukushima-disaster",
@@ -2833,7 +3437,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fukushima_nuclear_accident",
     "color": "#2e555c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "tohoku-earthquake",
@@ -2849,7 +3456,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Tōhoku_earthquake_and_tsunami",
     "color": "#1b2226",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "christchurch-earthquake",
@@ -2865,7 +3475,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Christchurch_earthquake",
     "color": "#132137",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "costa-concordia",
@@ -2881,7 +3494,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Costa_Concordia_disaster",
     "color": "#132331",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "mers-outbreak",
@@ -2897,7 +3513,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/MERS_outbreak",
     "color": "#19222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Jordan",
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "typhoon-haiyan",
@@ -2913,7 +3533,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan",
     "color": "#132233",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Philippines"
+    ]
   },
   {
     "name": "rana-plaza-collapse",
@@ -2929,7 +3552,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rana_Plaza_collapse",
     "color": "#314658",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bangladesh"
+    ]
   },
   {
     "name": "ebola-outbreak",
@@ -2946,7 +3572,12 @@
     "color": "#1a2b36",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 2016
+    "year_end": 2016,
+    "regions": [
+      "Guinea",
+      "Liberia",
+      "Sierra Leone"
+    ]
   },
   {
     "name": "mh370-disappearance",
@@ -2962,7 +3593,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370_disappearance_theories",
     "color": "#172231",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Malaysia"
+    ]
   },
   {
     "name": "sewol-ferry",
@@ -2978,7 +3613,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol",
     "color": "#102237",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "nepal-earthquake",
@@ -2994,7 +3632,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake",
     "color": "#3b3a38",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Nepal"
+    ]
   },
   {
     "name": "paris-attacks",
@@ -3010,7 +3651,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/November_2015_Paris_attacks",
     "color": "#1b222b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "tianjin-explosions",
@@ -3026,7 +3670,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2015_Tianjin_explosions",
     "color": "#415661",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "zika-outbreak",
@@ -3043,7 +3690,11 @@
     "color": "#18222d",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 2016
+    "year_end": 2016,
+    "regions": [
+      "Brazil",
+      "North America"
+    ]
   },
   {
     "name": "grenfell-tower-fire",
@@ -3059,7 +3710,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Grenfell_Tower_fire",
     "color": "#272628",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "camp-fire-paradise",
@@ -3075,14 +3729,17 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "australia-bushfires",
     "friendly_name": "Australia Bushfires",
     "year": 2019,
     "category": "disasters",
-    "description": "Catastrophic bushfires burned 46 million acres and killed one billion animals.",
+    "description": "Catastrophic bushfires burned 46 million acres and killed or displaced nearly three billion animals.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/australia-bushfires_rudcxu?_a=BAMAMikS0",
     "image_width": 330,
@@ -3092,7 +3749,10 @@
     "color": "#0e223a",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 2020
+    "year_end": 2020,
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "covid-19-pandemic",
@@ -3108,7 +3768,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States",
     "color": "#16222f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Global"
+    ]
   },
   {
     "name": "beirut-explosion",
@@ -3124,7 +3788,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2020_Beirut_explosion",
     "color": "#43535e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Lebanon"
+    ]
   },
   {
     "name": "texas-winter-storm",
@@ -3140,7 +3807,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/February_13–17,_2021_North_American_winter_storm",
     "color": "#0e2431",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "turkey-syria-earthquake",
@@ -3156,14 +3826,19 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes",
     "color": "#424f57",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Syria",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "lahaina-fire",
     "friendly_name": "Lahaina Wildfire",
     "year": 2023,
     "category": "disasters",
-    "description": "A devastating wildfire destroyed the historic Hawaiian town and killed 97 people.",
+    "description": "A devastating wildfire destroyed the historic Hawaiian town and killed 102 people.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lahaina-fire_lqp0ac?_a=BAMAMikS0",
     "image_width": 330,
@@ -3172,7 +3847,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Hawaii_wildfires",
     "color": "#102333",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "neanderthal-extinction",
@@ -3189,7 +3867,11 @@
     "color": "#272622",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -39000
+    "year_end": -39000,
+    "regions": [
+      "Croatia",
+      "Gibraltar"
+    ]
   },
   {
     "name": "babylonian-destruction-jerusalem",
@@ -3205,7 +3887,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
     "color": "#222025",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "great-fire-rome",
@@ -3221,7 +3908,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_Rome",
     "color": "#4e261d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "younger-dryas-climate-event",
@@ -3238,13 +3928,16 @@
     "color": "#26201b",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -9700
+    "year_end": -9700,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "white-ship-sinks",
     "friendly_name": "White Ship Sinks",
     "year": 1120,
-    "category": "revolution",
+    "category": "disasters",
     "description": "The sinking of the White Ship off Normandy killed the heir to the English throne, triggering a succession crisis known as The Anarchy.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/white-ship-sinks_xpdhai?_a=BAMAMikS0",
@@ -3254,7 +3947,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/White_Ship_disaster",
     "color": "#1c2320",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "tulip-mania-crashes",
@@ -3270,7 +3967,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tulip_mania",
     "color": "#2b1d1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "space-shuttle-columbia-disaster",
@@ -3286,7 +3986,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia_disaster",
     "color": "#14406d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "copenhagen-climate-summit",
@@ -3302,7 +4005,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_climate_summit",
     "color": "#202028",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Denmark"
+    ]
   },
   {
     "name": "iceland-eyjafjallajokull-eruption",
@@ -3318,7 +4024,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2010_eruptions_of_Eyjafjallajökull",
     "color": "#152231",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iceland"
+    ]
   },
   {
     "name": "hurricane-sandy",
@@ -3334,7 +4043,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Sandy",
     "color": "#0f324b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "notre-dame-fire",
@@ -3350,7 +4062,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_fire",
     "color": "#293745",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "extinction-rebellion-protests",
@@ -3366,7 +4081,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Extinction_Rebellion",
     "color": "#1a212f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom",
+      "Global"
+    ]
   },
   {
     "name": "svb-collapse",
@@ -3382,6 +4101,9 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   }
 ]

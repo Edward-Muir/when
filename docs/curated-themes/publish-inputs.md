@@ -16,35 +16,56 @@ replays the last 28 days to build its exclusion chain, so a retroactive edit mak
 replay decks nobody played. See [index.md](index.md).
 
 **Run `mode: validate` first.** It writes nothing (`dryRun`) and reports what the
-catalogue-aware checks think. A theme carrying un-illustrated events will fail on
-unresolved slugs — that is expected, not a defect, and is the art column below.
+catalogue-aware checks think. A theme carrying un-illustrated events fails on unresolved
+slugs, because `loadAllEvents` hides any event without Cloudinary art.
 
-## Art status
+## Schedule
 
-`loadAllEvents` hides any event without Cloudinary art, so a deck cannot be dealt —
-or validated — until every slug in it is illustrated.
+Every event in both banks is illustrated, so every theme below is publishable. From October
+2026 curated themes run on **Mondays and Fridays**: the unplayed bank-1 themes were moved off
+their Sundays, and bank 2 follows on the same two weekdays. Themes dated 2026-09-27 or earlier
+were left where they ran. The live calendar is the source of truth; this table is the plan it
+was written from.
 
-| Theme               | Cards | Awaiting art | Publishable now |
-| ------------------- | ----: | -----------: | --------------- |
-| `assassinations`    |    36 |           22 | no              |
-| `automata`          |    35 |           21 | no              |
-| `ciphers`           |    36 |           34 | no              |
-| `clockwork`         |    36 |           21 | no              |
-| `cosmic-ideas`      |    36 |           19 | no              |
-| `crossings`         |    36 |           15 | no              |
-| `eureka`            |    36 |           10 | no              |
-| `games`             |    36 |           15 | no              |
-| `kings-of-england`  |    36 |           18 | no              |
-| `light`             |    35 |           22 | no              |
-| `lost-and-found`    |    35 |           25 | no              |
-| `mapmakers`         |    36 |           23 | no              |
-| `money`             |    36 |            7 | no              |
-| `nations-of-europe` |    35 |           23 | no              |
-| `numbers`           |    36 |           19 | no              |
-| `plagues`           |    36 |            9 | no              |
-| `the-deep`          |    34 |           30 | no              |
-| `upheaval`          |    36 |            8 | no              |
-| `what-we-drink`     |    36 |           15 | no              |
+| Date       | Day | Theme               | Bank |
+| ---------- | --- | ------------------- | ---- |
+| 2026-10-02 | Fri | `clockwork`         | 1    |
+| 2026-10-05 | Mon | `cosmic-ideas`      | 1    |
+| 2026-10-09 | Fri | `crossings`         | 1    |
+| 2026-10-12 | Mon | `eureka`            | 1    |
+| 2026-10-16 | Fri | `games`             | 1    |
+| 2026-10-19 | Mon | `light`             | 1    |
+| 2026-10-23 | Fri | `lost-and-found`    | 1    |
+| 2026-10-26 | Mon | `mapmakers`         | 1    |
+| 2026-10-30 | Fri | `money`             | 1    |
+| 2026-11-02 | Mon | `nations-of-europe` | 1    |
+| 2026-11-06 | Fri | `numbers`           | 1    |
+| 2026-11-09 | Mon | `plagues`           | 1    |
+| 2026-11-13 | Fri | `the-deep`          | 1    |
+| 2026-11-16 | Mon | `upheaval`          | 1    |
+| 2026-11-20 | Fri | `what-we-drink`     | 1    |
+| 2026-11-23 | Mon | `before-us`         | 2    |
+| 2026-11-27 | Fri | `founding-cities`   | 2    |
+| 2026-11-30 | Mon | `great-fires`       | 2    |
+| 2026-12-04 | Fri | `ends-of-the-earth` | 2    |
+| 2026-12-07 | Mon | `famine`            | 2    |
+| 2026-12-11 | Fri | `chinese-dynasties` | 2    |
+| 2026-12-14 | Mon | `on-stage`          | 2    |
+| 2026-12-18 | Fri | `peace`             | 2    |
+| 2026-12-21 | Mon | `pharaohs`          | 2    |
+| 2026-12-25 | Fri | `pirates`           | 2    |
+| 2026-12-28 | Mon | `schools`           | 2    |
+| 2027-01-01 | Fri | `ships`             | 2    |
+| 2027-01-04 | Mon | `heists`            | 2    |
+| 2027-01-08 | Fri | `flight`            | 2    |
+| 2027-01-11 | Mon | `skyline`           | 2    |
+| 2027-01-15 | Fri | `tamed`             | 2    |
+| 2027-01-18 | Mon | `first-women`       | 2    |
+| 2027-01-22 | Fri | `rome`              | 2    |
+| 2027-01-25 | Mon | `sieges`            | 2    |
+| 2027-01-29 | Fri | `under-the-knife`   | 2    |
+| 2027-02-01 | Mon | `walls`             | 2    |
+| 2027-02-05 | Fri | `waterworks`        | 2    |
 
 ## The themes
 
@@ -949,6 +970,1042 @@ or validated — until every slug in it is illustrated.
     "espresso-machine-crema",
     "starbucks-coffee-chain",
     "new-coke-launched"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+## Bank 2 (2026-09)
+
+Twenty-two themes authored spine-first in a second pass; see [index.md](index.md#bank-2-2026-09).
+Their dates are in the schedule at the top of this file.
+
+### Before Us — `before-us`
+
+```json
+{
+  "id": "before-us",
+  "name": "Before Us",
+  "eventNames": [
+    "first-life",
+    "first-cyanobacteria",
+    "eukaryotic-cell-evolution",
+    "snowball-earth-cryogenian",
+    "ediacaran-biota",
+    "cambrian-explosion",
+    "first-vertebrates",
+    "plants-colonize-land",
+    "ordovician-mass-extinction",
+    "first-insects-appear",
+    "first-amphibians-tiktaalik",
+    "late-devonian-extinction",
+    "end-permian-mass-extinction",
+    "first-dinosaurs-appear",
+    "first-mammals",
+    "jurassic-period-begins",
+    "pangaea-breaks-apart",
+    "first-birds-archaeopteryx",
+    "first-flowering-plants",
+    "dinosaur-extinction",
+    "first-primates",
+    "eocene-epoch-begins",
+    "whales-return-to-sea",
+    "oligocene-epoch-begins",
+    "first-apes",
+    "first-upright-walkers",
+    "lucy-australopithecus-lived",
+    "homo-habilis",
+    "homo-erectus-emerges",
+    "fire-mastery",
+    "homo-heidelbergensis-emerges",
+    "neanderthals-appear"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Capitals Founded — `founding-cities`
+
+```json
+{
+  "id": "founding-cities",
+  "name": "Capitals Founded",
+  "eventNames": [
+    "david-establishes-jerusalem-capital",
+    "rome-founded",
+    "paris-parisii-settlement",
+    "romans-found-londinium",
+    "baghdad-founded",
+    "viking-dublin-settlement",
+    "muhammad-i-founds-madrid-fortress",
+    "vikings-iceland",
+    "fatimids-conquer-egypt",
+    "ly-thai-to-founds-thang-long",
+    "moscow-first-chronicled",
+    "berthold-v-founds-bern",
+    "kublai-khan-builds-dadu",
+    "aztec-tenochtitlan-founding",
+    "taejo-founds-hanseong",
+    "ota-dokan-builds-edo-castle",
+    "pizarro-founds-lima",
+    "quesada-founds-bogota",
+    "valdivia-founds-santiago",
+    "gustav-vasa-founds-helsinki",
+    "legazpi-founds-manila",
+    "garay-refounds-buenos-aires",
+    "batavia-founded",
+    "rama-i-founds-bangkok",
+    "dc-established",
+    "john-by-founds-bytown",
+    "settlers-found-wellington",
+    "miners-found-kuala-lumpur",
+    "buda-pest-obuda-unite-budapest",
+    "menelik-founds-addis-ababa",
+    "railway-depot-becomes-nairobi",
+    "george-v-announces-new-delhi",
+    "foundation-stone-laid-canberra",
+    "brasilia-built",
+    "abuja-becomes-nigeria-capital"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Cities Ablaze — `great-fires`
+
+```json
+{
+  "id": "great-fires",
+  "name": "Cities Ablaze",
+  "eventNames": [
+    "burning-of-ugarit",
+    "babylonian-destruction-jerusalem",
+    "persians-burn-athens",
+    "burning-of-persepolis",
+    "alexandria-library-caesar-fire",
+    "rome-founds-vigiles",
+    "great-fire-rome",
+    "nika-riots",
+    "tatars-burn-moscow",
+    "sack-of-magdeburg",
+    "great-fire-of-meireki",
+    "great-fire-london",
+    "great-fire-of-copenhagen",
+    "franklin-founds-fire-company",
+    "lisbon-earthquake",
+    "great-boston-fire-1760",
+    "graff-post-fire-hydrant",
+    "burning-of-moscow",
+    "british-burn-washington",
+    "edinburgh-municipal-fire-brigade",
+    "great-fire-new-york",
+    "great-fire-of-hamburg",
+    "burning-of-atlanta",
+    "great-chicago-fire",
+    "parmelee-automatic-sprinkler",
+    "great-seattle-fire",
+    "nfpa-founded",
+    "iroquois-theatre-fire",
+    "san-francisco-earthquake",
+    "triangle-shirtwaist-fire",
+    "great-kanto-earthquake",
+    "cocoanut-grove-fire",
+    "hamburg-firestorm",
+    "nazis-raze-warsaw",
+    "tokyo-firebombing"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Ends of the Earth — `ends-of-the-earth`
+
+```json
+{
+  "id": "ends-of-the-earth",
+  "name": "Ends of the Earth",
+  "eventNames": [
+    "humans-reach-australia",
+    "humans-reach-the-americas",
+    "settlement-of-fiji",
+    "settlement-of-madagascar",
+    "faroe-islands-settled-monks",
+    "vikings-iceland",
+    "marquesas-settlement-east-polynesia",
+    "vikings-greenland",
+    "viking-america",
+    "polynesian-easter-island-settlement",
+    "maori-settlement-new-zealand",
+    "first-ascent-mont-blanc",
+    "ross-reaches-north-magnetic-pole",
+    "first-ascent-matterhorn",
+    "nansen-crosses-greenland-icecap",
+    "first-ascent-kilimanjaro",
+    "first-landing-on-antarctica",
+    "first-ascent-aconcagua",
+    "belgica-overwinters-antarctica",
+    "north-pole-reached",
+    "south-pole-reached",
+    "first-ascent-denali",
+    "first-auto-crossing-sahara",
+    "byrd-flies-over-south-pole",
+    "first-ascent-annapurna",
+    "everest",
+    "first-ascent-k2",
+    "first-land-crossing-antarctica",
+    "mariana-trench",
+    "first-ascent-vinson-massif",
+    "plaisted-reaches-north-pole",
+    "first-women-reach-south-pole",
+    "messner-solo-ascent-everest",
+    "unsupported-trek-to-north-pole",
+    "ousland-solo-crossing-antarctica",
+    "cameron-challenger-deep"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Famine Years — `famine`
+
+```json
+{
+  "id": "famine",
+  "name": "Famine Years",
+  "eventNames": [
+    "akkadian-empire-famine-collapse",
+    "grain-storage-silos",
+    "grain-price-controls",
+    "great-famine-cairo",
+    "great-european-famine",
+    "potato-introduction-europe",
+    "sweet-potato-reaches-china",
+    "english-poor-law-relief",
+    "deccan-famine-mughal-india",
+    "great-famine-france-louis-xiv",
+    "great-baltic-famine",
+    "bengal-famine-company-rule",
+    "chalisa-famine",
+    "doji-bara-famine",
+    "guano-boom-fertilizer-trade",
+    "irish-potato-famine",
+    "corn-laws-repealed-britain",
+    "finnish-famine",
+    "great-famine-british-india",
+    "indian-famine-codes-adopted",
+    "haber-process",
+    "russian-famine-civil-war",
+    "holodomor",
+    "bengal-famine-wwii",
+    "dutch-hunger-winter",
+    "great-leap-forward-famine",
+    "world-food-programme-founded",
+    "green-revolution-begins",
+    "biafra-famine",
+    "china-ends-collective-farming",
+    "ethiopian-famine",
+    "famine-early-warning-launched",
+    "north-korea-famine",
+    "horn-of-africa-famine",
+    "south-sudan-famine-declared",
+    "yemen-famine-crisis"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Mandate of Heaven — `chinese-dynasties`
+
+```json
+{
+  "id": "chinese-dynasties",
+  "name": "Mandate of Heaven",
+  "eventNames": [
+    "xia-dynasty",
+    "shang-dynasty-established",
+    "establishment-zhou-dynasty",
+    "qin-unification",
+    "qin-book-burning",
+    "han-dynasty",
+    "silk-trade-begins",
+    "wang-mang-usurps-han",
+    "yellow-turban-rebellion",
+    "battle-red-cliffs",
+    "fall-han-dynasty",
+    "sima-yan-jin-unification",
+    "fall-western-jin",
+    "grand-canal-china",
+    "tang-dynasty",
+    "princess-wu-empress",
+    "an-lushan-rebellion",
+    "fall-tang-dynasty",
+    "song-dynasty",
+    "jin-forces-sack-kaifeng",
+    "yuan-khanate-founded",
+    "mongol-khubilai-conquest",
+    "red-turban-rebellion-begins",
+    "ming-dynasty",
+    "ming-treasure-fleets",
+    "ming-forbidden-city",
+    "ming-emperor-captured-tumu",
+    "qing-dynasty",
+    "kangxi-military-campaigns",
+    "qing-xinjiang-conquest",
+    "macartney-mission-rebuffed",
+    "treaty-nanking",
+    "taiping-rebellion",
+    "boxer-rebellion",
+    "chinese-revolution",
+    "last-emperor-china-abdicates"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### On Stage — `on-stage`
+
+```json
+{
+  "id": "on-stage",
+  "name": "On Stage",
+  "eventNames": [
+    "thespis-first-actor",
+    "aeschylus-tragedy-origins",
+    "oresteia-trilogy-premieres",
+    "sophocles-oedipus",
+    "lysistrata-premieres",
+    "theatre-of-epidaurus-built",
+    "theatre-of-pompey-opens",
+    "noh-theater-emergence",
+    "commedia-dell-arte-emerges",
+    "ballet-de-cour-france",
+    "globe-theatre-built",
+    "kabuki-theater-begins",
+    "monteverdi-orfeo",
+    "san-cassiano-opera-house",
+    "moliere-comedies",
+    "beggars-opera-premieres",
+    "la-scala-opens",
+    "magic-flute-premieres",
+    "barber-of-seville-premieres",
+    "la-sylphide-premieres",
+    "giselle-premieres",
+    "la-traviata-premieres",
+    "tchaikovsky-swan-lake",
+    "dolls-house-premieres",
+    "earnest-premieres-london",
+    "stanislavski-seagull-triumph",
+    "rite-of-spring",
+    "show-boat-premieres",
+    "oklahoma-premieres",
+    "west-side-story-opens",
+    "hair-opens-broadway",
+    "chorus-line-premieres",
+    "cats-opens-west-end",
+    "phantom-of-opera-premieres",
+    "wicked-premieres-broadway",
+    "hamilton-opens-broadway"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Peace at Last — `peace`
+
+```json
+{
+  "id": "peace",
+  "name": "Peace at Last",
+  "eventNames": [
+    "first-peace-treaty",
+    "peace-of-callias",
+    "peace-of-nicias",
+    "first-treaty",
+    "treaty-wedmore",
+    "peace-of-constance",
+    "treaty-of-bretigny",
+    "peace-of-lodi",
+    "treaty-of-picquigny",
+    "treaty-madrid",
+    "peace-augsburg",
+    "peace-cateau-cambresis",
+    "peace-westphalia",
+    "treaty-breda",
+    "treaty-utrecht",
+    "treaty-aix-la-chapelle",
+    "treaty-paris-seven-years",
+    "treaty-paris-1783",
+    "peace-of-amiens",
+    "treaty-of-ghent",
+    "second-treaty-of-paris",
+    "treaty-nanking",
+    "treaty-of-guadalupe-hidalgo",
+    "treaty-of-paris-crimean-war",
+    "peace-of-prague",
+    "treaty-of-frankfurt",
+    "treaty-of-shimonoseki",
+    "wwi-end",
+    "treaty-versailles",
+    "wwii-end",
+    "korean-war-armistice",
+    "geneva-accords-indochina",
+    "paris-peace-accords-1973",
+    "egypt-israel-peace",
+    "dayton-accords"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Pharaohs — `pharaohs`
+
+```json
+{
+  "id": "pharaohs",
+  "name": "Pharaohs",
+  "eventNames": [
+    "unification-egypt",
+    "step-pyramid-djoser",
+    "sneferu-red-pyramid",
+    "pyramids",
+    "menkaure-pyramid-giza",
+    "sphinx-built",
+    "mentuhotep-ii-reunification",
+    "amenemhat-i-founds-dynasty",
+    "new-kingdom-egypt-begins",
+    "hatshepsut-becomes-pharaoh",
+    "battle-megiddo",
+    "akhenaten-religious-revolution",
+    "death-tutankhamun",
+    "seti-i-recovers-levant",
+    "battle-kadesh",
+    "first-peace-treaty",
+    "abu-simbel-temples-dedicated",
+    "merneptah-victory-stele",
+    "ramesses-iii-sea-peoples",
+    "ramesses-iii-assassinated",
+    "piye-conquers-egypt",
+    "taharqa-crowned-pharaoh",
+    "psamtik-i-reunifies-egypt",
+    "necho-ii-defeats-josiah",
+    "cambyses-conquers-egypt",
+    "nectanebo-i-founds-dynasty",
+    "last-native-pharaoh-flees",
+    "alexander-crowned-pharaoh",
+    "ptolemaic-kingdom-established",
+    "lighthouse-alexandria",
+    "cleopatra-vii-reign",
+    "cleopatra-caesar-alliance",
+    "battle-actium",
+    "death-cleopatra"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Pirates & Privateers — `pirates`
+
+```json
+{
+  "id": "pirates",
+  "name": "Pirates & Privateers",
+  "eventNames": [
+    "ramesses-iii-sea-peoples",
+    "rome-war-on-queen-teuta",
+    "caesar-captured-cilician-pirates",
+    "pompey-sweeps-mediterranean-pirates",
+    "viking-lindisfarne",
+    "vikings-sack-paris",
+    "stortebeker-executed-hamburg",
+    "barbarossa-brothers-seize-algiers",
+    "battle-of-preveza",
+    "wokou-raiders-besiege-nanjing",
+    "qi-jiguang-crushes-wokou",
+    "drake-raids-nombre-de-dios",
+    "drake-knighted-golden-hind",
+    "grace-omalley-meets-elizabeth",
+    "piet-heyn-captures-treasure-fleet",
+    "corsairs-sack-baltimore-ireland",
+    "morgan-sacks-panama-city",
+    "every-raids-ganj-i-sawai",
+    "captain-kidd-hanged-london",
+    "blackbeard-killed-ocracoke",
+    "bonny-read-convicted-piracy",
+    "bartholomew-roberts-killed",
+    "vijaydurg-falls-to-british",
+    "rachel-wall-hanged-piracy",
+    "surcouf-captures-kent",
+    "decatur-burns-philadelphia",
+    "zheng-yi-sao-fleet-surrenders",
+    "bombardment-algiers-slaves-freed",
+    "france-conquers-algiers",
+    "spain-storms-balanguingui",
+    "recaap-piracy-pact-signed",
+    "eu-operation-atalanta-launched",
+    "maersk-alabama-hijacked",
+    "somali-hijackings-fall-to-zero"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Places of Learning — `schools`
+
+```json
+{
+  "id": "schools",
+  "name": "Places of Learning",
+  "eventNames": [
+    "ashurbanipal-library-founded",
+    "plato-founds-academy",
+    "aristotle-peripatetic-school",
+    "first-public-library",
+    "han-civil-service",
+    "alexandria-library-caesar-fire",
+    "nalanda-university",
+    "bayt-al-hikma",
+    "al-qarawiyyin-university",
+    "fatimid-al-azhar-mosque",
+    "dom-university-bologna",
+    "dom-university-paris",
+    "oxford-founded",
+    "nalanda-destroyed",
+    "cambridge-university-founded",
+    "salamanca-university-founded",
+    "university-paris-sorbonne",
+    "house-of-wisdom-destroyed",
+    "charles-university-prague",
+    "heidelberg-university",
+    "eton-college-founded",
+    "leiden-university-founded",
+    "edinburgh-university-founded",
+    "harvard-college-founded",
+    "yale-founded",
+    "princeton-founded",
+    "west-point-founded",
+    "university-berlin-founded",
+    "vassar-college-founded",
+    "cornell-university-founded",
+    "johns-hopkins-founded",
+    "stanford-university-founded",
+    "louvain-library-burns",
+    "sarajevo-library-destroyed",
+    "mosul-libraries-destroyed"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Sail & Steam — `ships`
+
+```json
+{
+  "id": "ships",
+  "name": "Sail & Steam",
+  "eventNames": [
+    "khufu-ship",
+    "phoenician-bireme",
+    "greek-trireme",
+    "lateen-sail-spreads",
+    "polynesian-double-canoe-design",
+    "longship-technology",
+    "junk-watertight-bulkheads",
+    "venice-founds-arsenal",
+    "song-sternpost-rudder",
+    "hanseatic-cog",
+    "carrack-emerges",
+    "portuguese-caravels",
+    "dutch-fluyt",
+    "hms-sovereign-of-the-seas",
+    "turtle-submarine-attack",
+    "steamboat",
+    "fultons-steamboat",
+    "first-atlantic-steamship-crossing",
+    "rattler-beats-alecto",
+    "flying-cloud-record-run",
+    "french-ironclad-gloire",
+    "hms-warrior-launches",
+    "battle-hampton-roads",
+    "cutty-sark-launches",
+    "hms-havock-first-destroyer",
+    "turbinia-storms-spithead",
+    "uss-holland-commissioned",
+    "hms-dreadnought-launches",
+    "bells-hydrofoil-record",
+    "uss-nautilus-launched",
+    "hovercraft",
+    "ss-ideal-x-sails",
+    "ns-lenin-enters-service",
+    "caspian-sea-monster-flies",
+    "yara-birkeland-launches"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Stolen! — `heists`
+
+```json
+{
+  "id": "heists",
+  "name": "Stolen!",
+  "eventNames": [
+    "deir-el-medina-tomb-robberies",
+    "trial-verres-plunder",
+    "westminster-crown-jewels-heist",
+    "blood-crown-jewels-heist",
+    "south-sea-bubble",
+    "french-crown-jewels-theft",
+    "great-gold-robbery",
+    "irish-crown-jewels-theft",
+    "mona-lisa-theft",
+    "ponzi-scheme-exposed",
+    "kreuger-empire-collapse",
+    "just-judges-panel-theft",
+    "amber-room-looted",
+    "van-meegeren-fake-vermeer-sale",
+    "great-train-robbery-buckinghamshire",
+    "caravaggio-nativity-theft",
+    "baker-street-robbery",
+    "russborough-house-art-heist",
+    "lufthansa-heist",
+    "brinks-mat-robbery",
+    "gardner-museum-art-heist",
+    "theft-of-the-scream",
+    "enron-scandal",
+    "van-gogh-museum-theft",
+    "antwerp-diamond-heist",
+    "northern-bank-robbery",
+    "madoff-ponzi-scheme-unravels",
+    "paris-modern-art-museum-heist",
+    "kunsthal-rotterdam-art-heist",
+    "hatton-garden-vault-burglary",
+    "bangladesh-bank-cyber-heist",
+    "dresden-green-vault-heist",
+    "ftx-crypto-collapse"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Taking Flight — `flight`
+
+```json
+{
+  "id": "flight",
+  "name": "Taking Flight",
+  "eventNames": [
+    "eilmer-flying-monk",
+    "passarola-balloon-demonstration",
+    "hot-air-balloon",
+    "blanchard-jeffries-channel-crossing",
+    "garnerin-parachute-descent",
+    "cayley-glider-model",
+    "dirigible-airship",
+    "cayley-coachman-flight",
+    "ader-eole-liftoff",
+    "lilienthal-glider",
+    "zeppelin-airship",
+    "wright-brothers-flight",
+    "santos-dumont-14-bis",
+    "cornu-helicopter-hop",
+    "bleriot-channel-crossing",
+    "quimby-channel-flight",
+    "first-scheduled-airline",
+    "junkers-allmetal-aircraft",
+    "alcock-brown-transatlantic",
+    "coleman-earns-pilot-license",
+    "first-flight-around-world",
+    "spirit-of-st-louis",
+    "graf-zeppelin-world-circle",
+    "jet-engine-invented",
+    "amelia-earhart-atlantic",
+    "wiley-post-solo-world-flight",
+    "hindenburg-disaster",
+    "helicopter-modern",
+    "yeager-sound-barrier",
+    "dehavilland-comet-first-flight",
+    "cochran-sound-barrier",
+    "concorde-maiden-flight",
+    "boeing-747-enters-service",
+    "voyager-nonstop-world-flight",
+    "piccard-balloon-circumnavigation",
+    "solar-impulse-2-circles-globe"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Tallest in the World — `skyline`
+
+```json
+{
+  "id": "skyline",
+  "name": "Tallest in the World",
+  "eventNames": [
+    "step-pyramid-djoser",
+    "red-pyramid-sneferu",
+    "pyramids",
+    "lincoln-cathedral-spire",
+    "lincoln-spire-collapses",
+    "st-olafs-tallinn-spire",
+    "beauvais-cathedral-collapse",
+    "st-olafs-spire-burns",
+    "strasbourg-cathedral-tallest",
+    "elevator-invented",
+    "bessemer-steel-process",
+    "st-nicholas-church-hamburg",
+    "rouen-cathedral-iron-spire",
+    "cologne-cathedral-completed",
+    "washington-monument-completed",
+    "steel-frame-skyscraper",
+    "eiffel-tower",
+    "woolworth-building-opens",
+    "bank-of-manhattan-trust-tops-out",
+    "chrysler-building",
+    "empire-state-building",
+    "kvly-tv-mast-erected",
+    "ostankino-tower-completed",
+    "world-trade-center-tops-out",
+    "sears-tower",
+    "warsaw-radio-mast-erected",
+    "cn-tower",
+    "warsaw-mast-collapses",
+    "petronas-towers",
+    "taipei-101",
+    "burj-khalifa"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Tamed — `tamed`
+
+```json
+{
+  "id": "tamed",
+  "name": "Tamed",
+  "eventNames": [
+    "dog-becomes-companion",
+    "domestication-cattle",
+    "domestication-of-sheep-and-goats",
+    "cats-domesticated",
+    "domestication-of-donkeys",
+    "water-buffalo-domesticated",
+    "silkworm-domesticated",
+    "hierakonpolis-royal-menagerie",
+    "domestication-horses",
+    "dromedary-camel-domesticated",
+    "honeybee-keeping-begins",
+    "falconry-emerges-central-asia",
+    "chickens-domesticated",
+    "kikkuli-horse-training-text",
+    "rome-sacred-geese-alarm",
+    "hydaspes-war-elephants",
+    "hannibal-crosses-alps",
+    "battle-zama",
+    "mutina-pigeon-messengers",
+    "stirrup-invented",
+    "veterinary-school",
+    "general-stud-book-published",
+    "jardin-des-plantes-zoo-opens",
+    "barry-rescue-dog-legend",
+    "london-zoo-opens-regents-park",
+    "first-formal-dog-show",
+    "kennel-club-founded-britain",
+    "old-hemp-border-collie-ancestor",
+    "beersheba-cavalry-charge",
+    "seeing-eye-guide-dog-school",
+    "izbushensky-cavalry-charge",
+    "laika-in-space",
+    "przewalski-horses-rewilded",
+    "dolly-sheep-cloned"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### The First Woman — `first-women`
+
+```json
+{
+  "id": "first-women",
+  "name": "The First Woman",
+  "eventNames": [
+    "enheduanna-first-author-hymns",
+    "hatshepsut-crowned-pharaoh",
+    "hypatia-alexandria",
+    "princess-wu-empress",
+    "murasaki-shikibu-genji",
+    "gentileschi-joins-accademia",
+    "chatelet-fire-essay-published",
+    "baret-completes-world-circuit",
+    "herschel-discovers-comet",
+    "lovelace-publishes-algorithm",
+    "blackwell-earns-medical-degree",
+    "womens-suffrage-nz",
+    "curie-wins-nobel-prize",
+    "first-woman-in-parliament",
+    "rankin-elected-to-congress",
+    "astor-takes-commons-seat",
+    "coleman-earns-pilot-license",
+    "amelia-earhart-atlantic",
+    "hopper-builds-first-compiler",
+    "bandaranaike-becomes-worlds-first-pm",
+    "first-woman-space",
+    "gandhi-becomes-indias-pm",
+    "switzer-runs-boston-marathon",
+    "chisholm-elected-to-congress",
+    "meir-becomes-israels-pm",
+    "peron-becomes-worlds-first-president",
+    "tabei-summits-everest",
+    "thatcher-becomes-pm",
+    "oconnor-joins-supreme-court",
+    "ride-flies-into-space",
+    "jemison-flies-into-space",
+    "morrison-wins-nobel-prize",
+    "angela-merkel-elected",
+    "sirleaf-elected-liberias-president",
+    "lagarde-leads-the-imf",
+    "harris-becomes-vice-president"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### The Roman Story — `rome`
+
+```json
+{
+  "id": "rome",
+  "name": "The Roman Story",
+  "eventNames": [
+    "rome-founded",
+    "roman-republic",
+    "twelve-tables",
+    "gauls-sack-rome",
+    "pyrrhus-invades-italy",
+    "first-punic-war",
+    "hannibal-crosses-alps",
+    "battle-cannae",
+    "battle-zama",
+    "third-punic-war",
+    "tiberius-gracchus-reforms",
+    "sullas-civil-war",
+    "pompey-great-rome",
+    "crossing-rubicon",
+    "julius-caesar",
+    "battle-actium",
+    "roman-empire-founded",
+    "battle-teutoburg-forest",
+    "great-fire-rome",
+    "colosseum-rome",
+    "hadrian-wall-construction",
+    "edict-caracalla",
+    "diocletian-tetrarchy",
+    "edict-milan",
+    "council-nicaea",
+    "constantinople-founded",
+    "division-roman-empire",
+    "sack-rome-visigoths",
+    "rome-falls",
+    "justinian-becomes-emperor",
+    "construction-hagia-sophia",
+    "plague-of-justinian",
+    "siege-of-constantinople-717",
+    "great-schism",
+    "fourth-crusade-byzantine",
+    "constantinople-fall"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Under Siege — `sieges`
+
+```json
+{
+  "id": "sieges",
+  "name": "Under Siege",
+  "eventNames": [
+    "assyrian-siege-lachish",
+    "fall-of-babylon-cyrus",
+    "athenian-siege-syracuse",
+    "alexanders-siege-tyre",
+    "siege-syracuse",
+    "third-punic-war",
+    "vercingetorix-gallic-revolt",
+    "siege-of-jerusalem-70ce",
+    "siege-masada",
+    "siege-of-constantinople-717",
+    "viking-siege-of-paris",
+    "antioch-crusader-conflicts",
+    "capture-of-jerusalem-1099",
+    "third-crusade-siege-acre",
+    "fourth-crusade-byzantine",
+    "mongol-baghdad",
+    "siege-of-orleans",
+    "constantinople-fall",
+    "reconquista-completion",
+    "ottoman-siege-rhodes",
+    "siege-vienna-first",
+    "great-siege-of-malta",
+    "battle-vienna",
+    "siege-of-derry",
+    "battle-yorktown",
+    "siege-of-sevastopol",
+    "siege-of-vicksburg",
+    "prussian-siege-of-paris",
+    "siege-of-khartoum",
+    "siege-of-mafeking",
+    "siege-leningrad",
+    "siege-of-bastogne",
+    "siege-of-dien-bien-phu",
+    "battle-khe-sanh-begins",
+    "siege-of-sarajevo-begins",
+    "battle-to-retake-mosul"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Under the Knife — `under-the-knife`
+
+```json
+{
+  "id": "under-the-knife",
+  "name": "Under the Knife",
+  "eventNames": [
+    "trepanation-earliest-known",
+    "hammurabi-surgeon-laws",
+    "edwin-smith-surgical-papyrus",
+    "cataract-surgery-ancient",
+    "hippocratic-surgical-texts",
+    "celsus-de-medicina-encyclopedia",
+    "galen-medical-dominance",
+    "al-zahrawi-surgical-encyclopedia",
+    "guy-de-chauliac-surgery-text",
+    "pare-improves-wound-care",
+    "blood-transfusion",
+    "first-appendectomy",
+    "mcdowell-first-ovariotomy",
+    "anesthesia-invented",
+    "semmelweis-childbed-fever",
+    "chloroform-eases-childbirth",
+    "antiseptic-surgery",
+    "surgery-local-anesthesia",
+    "rubber-surgical-gloves",
+    "rehn-sutures-heart-wound",
+    "blood-types-discovered",
+    "citrate-blood-storage",
+    "magill-endotracheal-tube",
+    "blood-bank-established",
+    "first-blue-baby-operation",
+    "heart-lung-machine-first-use",
+    "first-organ-transplant",
+    "pacemaker-implanted",
+    "first-lung-transplant",
+    "first-heart-transplant",
+    "first-artificial-heart",
+    "keyhole-laparoscopic-surgery",
+    "first-hand-transplant",
+    "da-vinci-surgical-robot",
+    "first-face-transplant",
+    "first-pig-heart-transplant"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Walls & Fortresses — `walls`
+
+```json
+{
+  "id": "walls",
+  "name": "Walls & Fortresses",
+  "eventNames": [
+    "walls-of-uruk-raised",
+    "walls-of-babylon-rebuilt",
+    "long-walls-of-athens-built",
+    "long-walls-of-athens-torn-down",
+    "servian-wall-of-rome-built",
+    "great-wall-china",
+    "herod-builds-masada-fortress",
+    "hadrian-wall-construction",
+    "antonine-wall-built",
+    "aurelian-walls-encircle-rome",
+    "theodosian-walls-completed",
+    "sigiriya-rock-fortress-raised",
+    "offas-dyke-built",
+    "tower-london",
+    "krak-des-chevaliers-rebuilt",
+    "great-zimbabwe-stone-construction",
+    "malbork-castle-built",
+    "carcassonne-refortified",
+    "walls-of-benin-city-built",
+    "constantinople-fall",
+    "kumbhalgarh-fort-built",
+    "kremlin-walls",
+    "suleiman-rebuilds-jerusalem-walls",
+    "cartagena-walls-begun",
+    "mombasa-fort-jesus-construction",
+    "fort-ticonderoga-built",
+    "france-builds-maginot-line",
+    "warsaw-ghetto-wall-built",
+    "germany-builds-atlantic-wall",
+    "korean-dmz-fortified",
+    "berlin-wall-built",
+    "berlin-wall-fall",
+    "israel-builds-west-bank-barrier",
+    "us-secure-fence-act-signed"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Waterworks — `waterworks`
+
+```json
+{
+  "id": "waterworks",
+  "name": "Waterworks",
+  "eventNames": [
+    "first-irrigation-systems",
+    "lagash-girsu-canal-network",
+    "levee",
+    "mohenjo-daro-covered-drains",
+    "earliest-persian-qanats",
+    "great-dam-of-marib",
+    "hezekiah-tunnel-jerusalem",
+    "sennacherib-jerwan-aqueduct",
+    "first-sewer-system",
+    "roman-aqueducts",
+    "dujiangyan-irrigation-system",
+    "petra-nabataean-water-system",
+    "aqueduct-pont-garros",
+    "nazca-puquios-aqueducts",
+    "sigiriya-water-gardens",
+    "basilica-cistern-built",
+    "marib-dam-collapses",
+    "grand-canal-china",
+    "hohokam-canal-network",
+    "khmer-baray-hydraulics",
+    "yuan-grand-canal",
+    "machu-picchu-water-channels",
+    "chapultepec-aqueduct",
+    "beemster-polder-drained",
+    "great-level-fens-drained",
+    "erie-canal",
+    "croton-aqueduct-opens",
+    "london-main-drainage",
+    "suez-canal",
+    "chicago-river-reversal",
+    "la-aqueduct-owens-valley",
+    "panama-canal",
+    "afsluitdijk-completed",
+    "hoover-dam",
+    "aswan-high-dam",
+    "thames-barrier-completed"
   ],
   "dates": ["2099-01-01"]
 }

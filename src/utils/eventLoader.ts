@@ -1,5 +1,6 @@
 import { HistoricalEvent, EventManifest, Difficulty, Category, Era } from '../types';
 import { ERA_DEFINITIONS } from './eras';
+import { ALL_REGIONS, eventRegionSet } from './regions';
 import { isCloudinaryImage } from './cloudinaryImage';
 
 /**
@@ -164,4 +165,36 @@ export function filterByEra(events: HistoricalEvent[], eras: Era[]): HistoricalE
       return def && event.year >= def.startYear && event.year <= def.endYear;
     });
   });
+}
+
+/**
+ * Filter events by macro-region (docs/regions/index.md). Every region selected means no
+ * filtering at all, so an event with no tags is still dealt in an unfiltered game. Otherwise an
+ * event stays when any region it resolves to is selected; "Global" matches Global-tagged events.
+ */
+export function filterByRegion(events: HistoricalEvent[], regions: string[]): HistoricalEvent[] {
+  if (ALL_REGIONS.every((r) => regions.includes(r))) return events;
+  const wanted = new Set(regions);
+  return events.filter((event) => {
+    for (const region of eventRegionSet(event)) if (wanted.has(region)) return true;
+    return false;
+  });
+}
+
+export interface PoolFilters {
+  difficulties: Difficulty[];
+  categories: Category[];
+  eras: Era[];
+  /** Missing means every region: configs and settings saved before the filter existed. */
+  regions?: string[];
+}
+
+/**
+ * The Custom-game pool: every filter in one place, so the deck dealt, the count on the Play
+ * button, its validity check and the Timeline tab's view cannot drift apart.
+ */
+export function filterPool(events: HistoricalEvent[], filters: PoolFilters): HistoricalEvent[] {
+  const byDifficulty = filterByDifficulty(events, filters.difficulties);
+  const byEra = filterByEra(filterByCategory(byDifficulty, filters.categories), filters.eras);
+  return filters.regions ? filterByRegion(byEra, filters.regions) : byEra;
 }

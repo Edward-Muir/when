@@ -22,7 +22,7 @@ const CustomPanel: React.FC<CustomPanelProps> = ({ active, ...settings }) => {
       <div className="text-left mb-3">
         <h1 className="text-5xl font-bold text-text font-display leading-none">Custom</h1>
         <p className="text-text-muted text-sm mt-1 font-body">
-          Choose your eras, categories & difficulty
+          Choose your eras, regions, categories & difficulty
         </p>
         <HintStrip text={hint.show ? tabHintText('customTab') : null} onDismiss={hint.dismiss} />
       </div>

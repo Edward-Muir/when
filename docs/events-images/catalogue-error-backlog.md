@@ -6,9 +6,13 @@ found while writing the long-form detail prose for all 5,460 events (Phase 3, 20
 **Why this file exists.** The writers read a source for every entry, so they read 5,460 event
 records against the record more closely than anything else ever has. What they found was reported
 in ~35 commit messages and in a branch-scoped `HANDOFF.md` that was deleted when the event-detail
-branch merged. This file is where that survives. It is a backlog, not a change log: almost nothing
-here had been acted on until the 2026-09-18 evidence-window pass, which cleared the whole
-"Wrong year" section and most of "Imprecise year" and added a section of its own.
+branch merged. This file is where that survives. It began as a backlog: almost nothing here had
+been acted on until the 2026-09-18 evidence-window pass cleared the whole "Wrong year" section
+and most of "Imprecise year". **Everything left open was resolved on 2026-10-01**: see
+[Resolved in the 2026-10 backlog pass](#resolved-in-the-2026-10-backlog-pass). That section
+records what was fixed, what was retired, and what was dismissed or closed as won't-fix, with
+the reason for each. **Nothing in this file is open now.** A new finding goes in a new dated
+section at the end.
 
 **The `commit` citations below** point at the unsquashed history on
 `claude/event-detail-phase-3-cont-r2jjui`, which is kept for exactly that reason — this work was
@@ -201,355 +205,546 @@ thin to establish a replacement) · `salt-monopoly-china` -119 · `fall-of-israe
 `butterfly-separate-stroke-1953` (stored year is already 1952; only the slug says 1953) ·
 `charlemagne-king-franks` 768 (right for the coronation; "sole king" is the wrong part).
 
-## Raised by the evidence-window pass (2026-09-18), not yet acted on
+## Resolved in the 2026-10 backlog pass
 
-Reading ~290 records against sources to build their windows turned up problems a window cannot
-fix. Recorded here rather than acted on, in the same spirit as the rest of this file.
+Everything still open in this file on 2026-10-01, about 360 items across the sections from
+the 2026-09-18 evidence-window pass onwards, was resolved in one pass on `claude/region-tags`.
+The items were split by card into 31 packets so no two agents touched the same card. A Sonnet
+fixer checked each item against the record, its prose and a source, and either fixed it,
+dismissed it with a reason, or closed it as won't-fix. An independent Sonnet reviewer then
+re-verified every retirement and year move, plus a sample of the other fixes and dismissals.
+Five packets went back once on review findings.
 
-### Prose that contradicts its own card
+Every fix went through the house apply scripts, so it passed the same validators as the rest of
+the catalogue: `date-clues-apply.js` (names and descriptions), `detail-apply.js` (prose),
+`year-range-apply.js` (years) and `backlog-apply.js` (categories and retirements). The last of
+these was written for this pass. Cards whose text changed were then re-checked against the
+region spec, and 14 were re-tagged.
 
-The long-form detail prose was written before the years were corrected, so several entries now
-disagree with the record they sit on. A player reads the prose _after_ placing, so this is visible.
+The owner set three rules for the pass:
 
-- **`heavy-plow-adoption`** — its prose opens "spread across Europe mainly in the late eighth and
-  early ninth centuries" against a card anchored at 1000-1300. The card is right: Andersen, Jensen
-  and Skovsgaard use 1000 as the breakthrough and study 900-1300. The late-8th-century figure
-  describes the plough's _first appearance_, which is the sibling card. The sentence should say
-  "breakthrough c. 1000".
-- **`futures-market`** — the prose has Dojima licensed in 1697 and sanctioned in 1773. It is the
-  other way round: 1697 was the merchants' own informal market, 1730 the shogunal licence.
-- **`first-cyanobacteria`** — the prose rests on 2.7 Ga hopane biomarkers, which have since been
-  challenged as drilling contamination. The card's window now runs to the ~2.15 Ga microfossils.
-- **`first-multicellular-life`** — the prose's "1.2 billion year old" Bangiomorpha is the pre-2018
-  date; the Re-Os age is 1.047 Ga.
-- **`arthropods-colonize-land`** — the prose leans on Pneumodesmus newmani as the 425 Ma oldest
-  land animal. It was re-dated by U-Pb zircon to 413.7 ± 4.4 Ma, so that "oldest" claim is stale.
+- **Slugs are never renamed.** A slug is identity for collections, recency and curated themes,
+  and it is never shown to a player. So a slug-only mislabel is closed as won't-fix, and any
+  player-visible error on the same card is fixed.
+- **Duplicates.** A true duplicate is retired to `deprecated.json`, keeping the better card.
+  Near-duplicates that are distinct beats stay.
+- **Categories.** A card is recategorised only where an existing category is plainly better.
+  Religious and university cards that have no fitting category are left.
 
-### Cards whose name or slug does not describe their content
+**Deck impact, measured.** Cross-boundary daily repeats went from 6 to 5 after the year moves,
+then to 4 after the BP fixes below. The bound in `deckBuilder.test.ts` stays at 12.
 
-- **`andean-llama-domestication`** is not about domestication. Its title ("Andean Llama Herding
-  System Peak"), description and prose all describe the Inca-era herding and caravan system, which
-  is why its window is 1200-1532. Actual camelid domestication is 4,000-5,000 years earlier. The
-  slug is the misnomer, not the date.
-- **`horse-plough-agriculture`** is titled "Heavy Plow Invented" but its entire prose is about the
-  horse collar, and it duplicates `horse-collar-technology` — both now 800-1200 and 477-1200. One
-  of the pair is probably redundant.
+### Years and windows changed (33)
 
-### Dates still unsupported
+| Slug                               | Was              | Now              | Evidence                                                                                                                                                                                                                                  |
+| ---------------------------------- | ---------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `anglo-saxon-manuscript-art`       | 700              | 690 to 721       | The Lindisfarne Gospels were produced between about 690 and Eadfrith's death in 721, alongside Durrow and Echternach. (https://en.wikipedia.org/wiki/Insular_art)                                                                         |
+| `baroque-period-peak`              | 1650             | 1625 to 1675     | The High Baroque, the style's peak, is dated c. 1625 to c. 1675, spanning Bernini, Rubens and Rembrandt. (https://en.wikipedia.org/wiki/Baroque)                                                                                          |
+| `bengal-famine-company-rule`       | 1770             | 1769 to 1770     | English Wikipedia dates the famine 1769-1770 with the rains failing in summer 1769. (https://en.wikipedia.org/wiki/Great_Bengal_famine_of_1770)                                                                                           |
+| `boy-scouts-founded`               | 1910             | 1907             | 1910 is the association's formal incorporation; Scouting's founding camp was August 1907. (https://en.wikipedia.org/wiki/The_Scout_Association)                                                                                           |
+| `bread`                            | -14500           | -12500           | Shubayqa 1 is c. 14,500 years ago, so c. 12,500 BCE (BP age had been stored as BCE)                                                                                                                                                       |
+| `breast-wheel-design`              | 1200             | 175              | Wikipedia's Water wheel article says the breastshot wheel appears in archaeological evidence by the late 2nd century AD in central Gaul. (https://en.wikipedia.org/wiki/Water_wheel)                                                      |
+| `canal-lock`                       | -283             | 984              | Qiao Weiyue's twin sluice gates at Huai'an in 984 are the earliest pound lock; earlier Chinese locks were flash locks. (https://en.wikipedia.org/wiki/Lock_(water_navigation))                                                            |
+| `champa-hindu-culture`             | 1100             | 875 to 982       | Art historians date the golden age of Champa art and culture to 875-982. (https://en.wikipedia.org/wiki/Champa)                                                                                                                           |
+| `colossus-lorenz-codebreaker`      | 1943             | 1944             | Mark 1 was delivered to Bletchley around January 1944 and operationally activated 5 February 1944; only the Dollis Hill prototype ran in 1943. (https://en.wikipedia.org/wiki/Colossus_computer)                                          |
+| `docks`                            | -2556            | -2300            | Lothal dock is dated about 2300 BCE (city c. 2300; some sources 2400) and the earliest claim is contested by Wadi al-Jarf (2580-2550 BCE). (https://en.wikipedia.org/wiki/Lothal)                                                         |
+| `enclosure-movement`               | 1500             | 1760 to 1832     | The prose and the description's consolidation framing describe the Acts; the peak phase of parliamentary enclosure is dated 1760-1832 and the Tudor phase belongs to enclosure-movement-begins. (https://en.wikipedia.org/wiki/Enclosure) |
+| `first-jigsaw-puzzle`              | 1767             | 1766             | Guinness and the card's own prose both give 1766. (https://www.guinnessworldrecords.com/world-records/688261-first-jigsaw-puzzle)                                                                                                         |
+| `goryeo-dynasty`                   | 1000             | 1046 to 1083     | Goryeo's most prosperous and peaceful period is the reign of Munjong, 1046-1083, as the card's prose states. (https://en.wikipedia.org/wiki/Goryeo)                                                                                       |
+| `haida-totem-poles`                | 1800             | 1830 to 1880     | Monumental poles came after the early 1800s; fur-trade wealth funding pole potlatches ran 1830-1880 until the potlatch ban. (https://en.wikipedia.org/wiki/Totem_pole)                                                                    |
+| `hanzi-script-standardization`     | -206             | -221             | Li Si systematised small seal script as the Qin imperial standard after the 221 BCE unification; Han inherited it. (https://en.wikipedia.org/wiki/Li_Si)                                                                                  |
+| `honey-collecting-depicted`        | -8000 to -6000   | -6000 to -5500   | Bicorp painting is c. 8,000 to 7,500 years ago, c. 6000 to 5500 BCE (BP ages had been stored as BCE)                                                                                                                                      |
+| `kingdom-kush-flourishes`          | -1500            | -1070 to 350     | Kerma ended c. 1500 BCE; Kush became independent at Napata c. 1070 BCE and lasted to c. 350 CE. (https://en.wikipedia.org/wiki/Kingdom_of_Kush)                                                                                           |
+| `kowoj-maya-settlement`            | 1000             | 1441             | The Kowoj claimed to migrate from Mayapan after its 1441 collapse and held the eastern lakes around Salpeten and Yaxha. (https://en.wikipedia.org/wiki/Kowoj)                                                                             |
+| `loan-deeds`                       | -500             | -2000            | Wikipedia's History of banking places tablet-documented seed-grain loans with interest around 2000 BCE. (https://en.wikipedia.org/wiki/History_of_banking)                                                                                |
+| `model-t-production-begins`        | 1909             | 1908             | The Henry Ford's production card records the first production Model T on 27 September 1908 (August 12 was a pre-production build). (https://www.thehenryford.org/artifact/312908)                                                         |
+| `moldboard-plow-improvements`      | 1400             | 1730             | Little plough redesign occurred before the mid-1600s, and Foljambe patented the iron-covered Rotherham plough in November 1730. (https://en.wikipedia.org/wiki/Plough)                                                                    |
+| `noodles`                          | 25               | -2000            | Lajia millet noodles were radiocarbon dated to about 4,000 years ago; the Han date is only the earliest written record. (https://en.wikipedia.org/wiki/Lajia)                                                                             |
+| `patolli-aztec-game`               | 200              | -200             | Earliest records of patolli are from Teotihuacan, c. 200 BCE, matching the card's own prose. (https://en.wikipedia.org/wiki/Patolli)                                                                                                      |
+| `petra-treasury-carved`            | -100             | 1                | Carbon-dated incense offerings and pottery from the crypt place the Khazneh at the start of the first century CE under Aretas IV; -100 was the old outer edge. (https://madainproject.com/al_khazneh_crypt)                               |
+| `poverty-point-earthworks`         | -1500 to -1200   | -1800 to -1200   | Earthwork construction began as early as 1800 BCE and continued to as late as 1200 BCE. (https://en.wikipedia.org/wiki/Poverty_Point)                                                                                                     |
+| `solar-impulse-2-circles-globe`    | 2015             | 2015 to 2016     | Flight left Abu Dhabi 9 March 2015 and landed there 26 July 2016. (https://en.wikipedia.org/wiki/Solar_Impulse)                                                                                                                           |
+| `star-chart`                       | -21000 to -18900 | -19000 to -18900 | La Tete du Lion is more than 21,000 years ago, c. 19,000 BCE (BP age had been stored as BCE)                                                                                                                                              |
+| `stirrup-invented`                 | 322              | 302 to 415       | Changsha Western Jin figurine dated 302 is the earliest stirrup; earliest paired stirrups are Feng Sufu's tomb of 415. (https://en.wikipedia.org/wiki/Stirrup)                                                                            |
+| `toe-stirrup`                      | -500             | -125             | Wikipedia's Stirrup article gives late second century BC, with 500 BC only as 'may have appeared as early as'. (https://en.wikipedia.org/wiki/Stirrup)                                                                                    |
+| `transatlantic-slave-trade-begins` | 1526             | 1502             | The crown authorised black slaves for Hispaniola in 1501 and Ovando's fleet arrived in 1502; direct African shipments were licensed in 1518. (https://en.wikipedia.org/wiki/Nicol%C3%A1s_de_Ovando)                                       |
+| `walls-of-benin-city-built`        | 1400 to 1460     | 1280 to 1460     | Oguola c. 1280 and radiocarbon dates in the thirteenth century; inner city Iya c. 1460; the 800 start is only "may have begun as early as". (https://en.wikipedia.org/wiki/Walls_of_Benin)                                                |
+| `wild-grain-harvesting`            | -23000 to -11700 | -21000 to -9700  | Ohalo II is c. 23,000 years ago, c. 21,000 BCE; window closes c. 9700 BCE (BP ages had been stored as BCE)                                                                                                                                |
+| `zwicky-dark-matter`               | 1937             | 1933             | Zwicky's Coma cluster inference was published in 1933; 1937 was a follow-up paper. (https://en.wikipedia.org/wiki/Dark_matter)                                                                                                            |
 
-- **`compound-air-compressor`** — no corroboration was found for the stored 1829 patent at all. The
-  window 1829-1871 rests on the verified Mont Cenis end (Sommeiller's compressors approved 1857,
-  tunnel complete 1871). The start may be fictitious.
-- **`bullroarer`** — stored -22000 looks too old; the oldest cited examples are Ukrainian Upper
-  Palaeolithic pieces around 18,000 BCE. No defensible upper bound was established, so it was left
-  alone rather than given an invented one.
-- **`yellowstone-supervolcano`** — the Lava Creek Tuff has been re-dated (~640 vs ~631 ka) and the
-  redating could not be verified. Left as a point.
+**The BP/BCE conflation.** Ten pre-Holocene cards store a "years ago" figure as a BCE year.
+The four within about 23,000 years were corrected above: bread, wild grain harvesting, the La Tete du
+Lion star chart and the Bicorp honey painting. The rest sit 31,000 to 45,000 years ago, where the
+2,000-year offset is noise. They were deliberately left, as this file's earlier section on the
+conflation recommended: `humans-enter-europe`, `spear-thrower-atlatl`, `shoes`, `bone-eyed-needle`,
+`humans-settle-japan`, `amputation-and-surgery`.
 
-### The BP/BCE conflation, which is systemic
+### Duplicates retired (33)
 
-Many prehistoric cards use "years ago" directly as a BCE value — `toba-supereruption` at -74000 for
-an eruption 74,000 years _ago_, `spear-thrower-atlatl` at -42000 for Mungo Man at 42,000 BP. Others
-are properly converted (Lascaux, pottery, Monte Verde). The offset is ~2,000 years, which is noise
-at Palaeolithic scale and real at Holocene scale: **`woolly-mammoth-extinction` was stored at -4000
-for a Wrangel Island population that ends ~4,000 years _ago_, i.e. c. 2000 BCE** — a 2,000-year
-error, now corrected to a -3700..-1950 window.
+Each retired card moved to `deprecated.json` with a `_deprecatedReason`, together with its prose
+entry and its ledger line. None was in a live curated theme; `verify-themes.js` was checked
+against the live calendar.
 
-Window researchers were told to follow whichever convention each card already used, so the
-inconsistency is preserved rather than half-fixed. Fixing it properly means auditing every
-pre-Holocene card, and the payoff is small above ~20,000 years ago. Worth doing for the
-Holocene-adjacent ones if anyone touches that era again.
+| Retired                            | Reason                                                                                                                                                                                                                                                                                                               |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bantu-expansion`                  | Duplicate of bantu-expansion-africa: Same Bantu migration; the kept card carries the evidence window, this one a vague round-year completion at 1000.                                                                                                                                                                |
+| `benin-edo-kingdom`                | Duplicate of benin-bronze-casting-peak: Same Benin bronze-casting tradition; this card dates the plaques to 1400 but the plaques were commissioned in the early 1500s under Oba Esigie, so the kept card is the sounder framing.                                                                                     |
+| `cahokia-moundbuilder`             | Duplicate of mississippian-cahokia-settlement: A point-year restatement of Cahokia as the largest pre-Columbian city, entirely inside the kept card's 1050-1350 window, with near-identical prose.                                                                                                                   |
+| `crop-rotation-system`             | Duplicate of three-field-rotation: Same three-field rotation spreading across medieval Europe in the ninth to eleventh centuries; the kept card has the more specific text.                                                                                                                                          |
+| `dome-construction-mastery`        | Duplicate of florence-cathedral-dome: Vague umbrella framing of the same 1420 start of Brunelleschi's dome, with a poor category.                                                                                                                                                                                    |
+| `horse-plough-agriculture`         | Duplicate of horse-collar-technology: Titled Heavy Plow Invented but its whole prose is the padded horse collar, the same subject as horse-collar-technology, which has the better-sourced record; the heavy plow itself is covered by heavy-plow-adoption.                                                          |
+| `inca-terrace-agriculture`         | Duplicate of terrace-farming-andes: Same Inca terrace agriculture; the 80-year gap between the two cards has no source, and the kept card has the clearer framing.                                                                                                                                                   |
+| `iron-smelting-bantu-expansion`    | Duplicate of bantu-expansion-africa: Same window and same Bantu migration as the kept card; its own prose says iron came later, and its category was off.                                                                                                                                                            |
+| `jin-dynasty-reunifies-china`      | Duplicate of sima-yan-jin-unification: Same 280 CE conquest of Wu as sima-yan-jin-unification, which credits Sima Yan by name and is the card the curated Chinese-dynasties theme uses.                                                                                                                              |
+| `kalidasa-drama`                   | Duplicate of kalidasa-shakuntala: Same poet and same convention year as the Shakuntala card; 'pioneers Sanskrit drama' is vague (Bhasa preceded him) and the card sat in the wrong category.                                                                                                                         |
+| `kilwa-sultanate`                  | Duplicate of kilwa-khilafa-sultanate: Same state and same mid-14th-century prosperity as the kept card, with thinner text.                                                                                                                                                                                           |
+| `kongo-kingdom-structure`          | Duplicate of kongo-kingdom-founded: Same beat as the founding card: the manikongo and provincial governors of the c. 1390 centralised state, dated to a round 1400.                                                                                                                                                  |
+| `kushan-empire`                    | Duplicate of kushana-empire: Same empire under the same ruler, Kanishka I, framed twice a generation apart; the kept card has the sourced Rabatak inscription prose and the accession year.                                                                                                                          |
+| `lunda-expansion-network`          | Duplicate of lunda-empire-formation: Same event as lunda-empire-formation: the Lunda state growing through tribute and alliances with Muslim traders supplying arms; the retired card is the vaguer single-year framing and its description names goods the record does not document.                                |
+| `majapahit-administrative-system`  | Duplicate of majapahit-expansion: Restates Gajah Mada's rise-of-Majapahit beat inside the same window; its own prose says rule was tribute and trade rather than a sophisticated administration, and the kept card carries the 1334-1364 window.                                                                     |
+| `maori-iwi-tribal-identity`        | Duplicate of maori-iwi-development: Same undated process as the development card (iwi, hapu and rohe forming); the development card has the fuller text and no misfit category.                                                                                                                                      |
+| `mayan-astronomical-calculations`  | Duplicate of mayan-astronomy: Same Maya astronomy (Venus cycles, eclipse tables); the prose of both cards repeats the same Dresden Codex material.                                                                                                                                                                   |
+| `mayan-classic-period`             | Duplicate of maya-classical-period: Same Classic period with the identical 250-900 window; the kept card names Tikal and Palenque and is more specific.                                                                                                                                                              |
+| `medici-banking-innovations`       | Duplicate of medici-banking: Same event as medici-banking: Giovanni di Bicci founding the Medici Bank in Florence in 1397; the retired card's description overstates the Medici as pioneers of double-entry bookkeeping.                                                                                             |
+| `moche-civilization`               | Duplicate of moche-civilization-peru: Same subject as moche-civilization-peru (Moche pyramids and metalwork); its 'Peak' title names no datable event and its 300-600 window sits inside the other card's 100-800 culture window.                                                                                    |
+| `mongol-invasion-hungary`          | Duplicate of mongol-invasions-europe: Same 1241 campaign and the same Mohi battle; the Europe card covers Legnica and Mohi together with a more accurate description, while this one blames the battle for the country's population loss.                                                                            |
+| `nalanda-university-science`       | Duplicate of nalanda-university: Same institution; the curriculum card has no datable event behind its year and restates what the kept card's window covers.                                                                                                                                                         |
+| `nan-madol-basalt-engineering`     | Duplicate of nan-madol-city-construction: Same site and same 1180-1628 window as the kept card; it restates the basalt walls the kept card already names.                                                                                                                                                            |
+| `polynesian-navigation-technology` | Duplicate of polynesian-star-compass: Umbrella card that restates both the double canoe and the star compass, each of which has its own card.                                                                                                                                                                        |
+| `rhinoplasty`                      | Duplicate of susruta-samhita: Dated -3000 with no source; the card describes Sushruta's nose reconstruction, already covered (and correctly dated) by susruta-samhita.                                                                                                                                               |
+| `samarkand-library-school`         | Duplicate of samarkand-cultural-center: Timur's Samarkand as a centre of learning is the same beat as the cultural capital card; its prose is about Ulugh Beg, already covered by samarkand-ulugh-beg-madrasah and ulugh-beg-observatory.                                                                            |
+| `silk-trade-begins`                | Duplicate of silk-road-established: Both cards are Zhang Qian's missions at the same year with near-identical prose; the kept card carries the recognisable Silk Road framing and fuller regions.                                                                                                                    |
+| `songhai-university-timbuktu`      | Duplicate of timbuktu-university: Same event as timbuktu-university: Sankore as a centre of scholarship; 1468 is Sunni Ali's conquest, not a scholarly flowering.                                                                                                                                                    |
+| `tang-luoyang-capital`             | Duplicate of tang-cosmopolitan-cities: Same event as tang-cosmopolitan-cities: Chang'an as the million-strong cosmopolitan Tang capital; both prose entries share the 108-ward grid and Heian-kyo detail. The kept card has the firmer peak-era framing; the retired slug also names Luoyang while showing Chang'an. |
+| `timbuktu-university-development`  | Duplicate of timbuktu-university: Same event as timbuktu-university: Sankore as a centre of Islamic scholarship; the 1325 date has no scholarly-centre evidence behind it.                                                                                                                                           |
+| `vespasian-colosseum-begun`        | Duplicate of colosseum-architecture-ancient: Same event in the same year (Vespasian starts the Colosseum); the kept card has the fitting category.                                                                                                                                                                   |
+| `water-mill-europe`                | Duplicate of water-mill: Same medieval spread of European watermills; the two cards' prose repeats the same Domesday counts and uses.                                                                                                                                                                                |
+| `zhou-dynasty-begins`              | Duplicate of establishment-zhou-dynasty: Same Muye beat and year as establishment-zhou-dynasty, which has the clearer description and is the card the curated Chinese-dynasties theme uses.                                                                                                                          |
 
-## Raised by the catalogue-wide sweep (2026-09-19)
+### Names and descriptions corrected (109)
 
-The 2026-09-18 pass worked the shards a heuristic flagged. This one reviewed **every one of the
-5,205 un-ranged events**: 644 carried a window, 4,807 were recorded in
-`scripts/events/year-range-decided.json` as moments with a reason each, and 9 were left
-unresolved. A re-run the following day closed the last of it, so **every event in the manifest
-now has a verdict**: 675 with a window, 4,785 in the ledger, nothing remaining. What the readers
-found that a window cannot fix is recorded here.
+| Slug                                   | Change                                                                                                                                                            | Evidence                                                                                                                                                                                                                                                      |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `aksumite-decline`                     | Description now lists coinage ending, shifting Red Sea trade and highland pressures.                                                                              | Prose notes coin minting had stopped by the seventh century, before the Arab conquests. (https://en.wikipedia.org/wiki/Kingdom_of_Aksum)                                                                                                                      |
+| `alaric-visigoth-kingdom`              | Retitled to "Visigoth Kingdom in Aquitaine".                                                                                                                      | Alaric died in 410 and the Aquitaine settlement came in 418 under Wallia, as the card prose says.                                                                                                                                                             |
+| `aleppo-earthquake`                    | Description drops the toll and says the quoted figure is a later chronicler estimate.                                                                             | The card prose attributes 230,000 to a fifteenth century chronicler and notes it likely merges several quakes.                                                                                                                                                |
+| `aqueduct-pont-garros`                 | Retitled to "Pont du Gard Aqueduct".                                                                                                                              | The description and prose already say Pont du Gard.                                                                                                                                                                                                           |
+| `ashgabat-earthquake`                  | Description drops the 100,000 figure and notes the state concealed the true toll.                                                                                 | The card prose contrasts a Soviet figure of about 10,000 with later Turkmen figures of 110,000 to 176,000.                                                                                                                                                    |
+| `australia-bushfires`                  | Description now says killed or displaced nearly three billion animals.                                                                                            | The WWF-commissioned July 2020 study estimated nearly three billion animals killed or displaced. (https://en.wikipedia.org/wiki/2019%E2%80%9320_Australian_bushfire_season)                                                                                   |
+| `banqiao-dam`                          | Description drops 170,000 and says the toll is disputed.                                                                                                          | The card prose gives about 26,000 official against up to 240,000 independent estimates.                                                                                                                                                                       |
+| `bantu-expansion-africa`               | Kept as the canonical Bantu migration card; description no longer claims iron-working travelled with the migrants.                                                | The card prose says iron appears only centuries after the migration began.                                                                                                                                                                                    |
+| `barid-shahi-dynasty`                  | Retitled to "Barid Shahi Dynasty of Bidar".                                                                                                                       | The Barid Shahis ruled Bidar; Bijapur was the Adil Shahi state. (https://en.wikipedia.org/wiki/Barid_Shahi)                                                                                                                                                   |
+| `basil-ii-bulgar-victories`            | Retitled to "Basil II Victory at Kleidion".                                                                                                                       | Description and prose both describe Kleidion, 29 July 1014.                                                                                                                                                                                                   |
+| `battle-of-wei-qiao`                   | Renamed Ambush at Mayi and description says the trap was found out with no fighting.                                                                              | The prose and the record show the chanyu withdrew before any engagement at Mayi in 133 BCE. (https://en.wikipedia.org/wiki/Battle_of_Mayi)                                                                                                                    |
+| `boni-kingdom`                         | Renamed to Boni Kingdom of Borneo and rewrote the description to place it on Borneo.                                                                              | Boni/Po-ni in Chinese sources is the Brunei polity on Borneo; the prose already says so. (https://en.wikipedia.org/wiki/Brunei)                                                                                                                               |
+| `brasilia-built`                       | Description now says "in only a few years", consistent with the prose.                                                                                            | Construction ran from early 1957 to the April 1960 inauguration, about three years, so both sides are reconciled without stating a number.                                                                                                                    |
+| `cambodian-genocide`                   | Retitled Khmer Rouge Genocide and rewrote the description to cover the regime's killings, matching the 1975-1979 window and prose.                                | The card already carries a 1975-1979 window and prose about the regime's deaths, so the takeover-only title undersold the scope.                                                                                                                              |
+| `candle-invented`                      | Description now says wax or tallow candles on a fixed wick, dropping the Egyptian rush-and-fat claim.                                                             | Existing prose already says the Tutankhamun objects were probably not candles and the earliest trace is Etruscan.                                                                                                                                             |
+| `cave-paintings`                       | Description no longer names Lascaux; now describes cave painting generically.                                                                                     | Prose dates the El Castillo stencil to at least 40,800 years ago, roughly 25,000 years before Lascaux.                                                                                                                                                        |
+| `chainmail-armor`                      | Description now credits Celtic smiths instead of the Hellenistic world.                                                                                           | Oldest surviving mail is from the Carpathian Basin and its invention is usually credited to Celts.                                                                                                                                                            |
+| `change-4-landing`                     | Name is now Chang'e 4 Lands on Far Side of Moon (35 chars) and description reads China's.                                                                         | The probe is Chang'e 4, as the prose spells it.                                                                                                                                                                                                               |
+| `chartres-cathedral-construction`      | Kept as the completion beat; name changed to Chartres Cathedral Completed to separate it from the start card.                                                     | Prose says the rebuilt cathedral was largely finished within about twenty-six years of the 1194 fire.                                                                                                                                                         |
+| `chavin-culture`                       | friendly_name changed to 'Chavin Culture in the Andes'.                                                                                                           | Card window covers the whole culture (-900..-250) and the description covers its pan-Andean influence, so 'Peak' was unsupported.                                                                                                                             |
+| `china-un-seat`                        | Description now says PRC replaced Taiwan as China's UN representative, Security Council seat included.                                                            | Resolution 2758 gave the PRC China's UN seat and the Council seat followed. (https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758)                                                                                                   |
+| `chloroform-eases-childbirth`          | Description now says John Snow gave Victoria the chloroform.                                                                                                      | Snow administered it on 7 April 1853 at Prince Leopold's birth. (https://en.wikipedia.org/wiki/John_Snow)                                                                                                                                                     |
+| `circus-maximus-races`                 | Name and description now say the permanent starting gates, matching the 329 BCE year and the prose.                                                               | Livy 8.20.1 records carceres first set up in 329 BCE; racing there was far older. (https://en.wikipedia.org/wiki/Circus_Maximus)                                                                                                                              |
+| `code-of-lipit-ishtar`                 | Description now says the code was written in Sumerian by a king of Isin.                                                                                          | The code is in Sumerian, as the card's own prose states. (https://en.wikipedia.org/wiki/Code_of_Lipit-Ishtar)                                                                                                                                                 |
+| `colosseum-architecture-ancient`       | Kept as canonical Colosseum start card; name changed from Constructed to Construction Begins to match the year 72.                                                | Prose says Vespasian broke ground in 72 and it opened in 80.                                                                                                                                                                                                  |
+| `compass-invented`                     | Description now says the first compass was a lodestone pointer used for divination.                                                                               | Han compass was geomantic; navigational use is documented only from the 11th-12th century. (https://en.wikipedia.org/wiki/Compass)                                                                                                                            |
+| `copper-pipes`                         | Description now says copper tubing drained waste water in a royal temple complex.                                                                                 | Abusir Sahure complex copper pipes were a drainage system; year 2400 BCE kept. (https://ancientegyptonline.co.uk/sahure-pyramid/)                                                                                                                             |
+| `cyrillic-alphabet-created`            | Renamed to Glagolitic Script Devised and description now says Cyril and Methodius devised the first Slavic alphabet, later adapted into Cyrillic; year 863 stays. | Cyrillic was built later at Preslav by their students, so 863 fits Glagolitic only. (https://en.wikipedia.org/wiki/Cyrillic_script)                                                                                                                           |
+| `dahomey-rise-power`                   | Description now credits Agaja himself, whose reign began in 1718; prose 1708 corrected to 1718 to match.                                                          | Agaja ruled 1718-1740 and conquered Allada (1724) and Whydah (1727); 1708 is a minority dating. (https://en.wikipedia.org/wiki/Agaja)                                                                                                                         |
+| `damascus-steel-pattern`               | Description and name now describe wootz crucible steel first made in southern India; the prose already said so.                                                   | Wootz originated in India and Sri Lanka and reached the Middle East by trade; pattern welding is a separate European tradition.                                                                                                                               |
+| `dictionary`                           | Description now says bilingual Sumerian and Eblaite word lists, the oldest known dictionaries.                                                                    | The Ebla tablets pair Sumerian terms with Eblaite equivalents. (https://en.wikipedia.org/wiki/Ebla_tablets)                                                                                                                                                   |
+| `diphtheria-antitoxin-developed`       | Description now credits Behring and Kitasato.                                                                                                                     | Prose and record give the 1890 serum finding as joint work. (https://en.wikipedia.org/wiki/Shibasabur%C5%8D_Kitasato)                                                                                                                                         |
+| `edict-milan`                          | Description now says toleration granted by Constantine and Licinius with property restored.                                                                       | Edict granted toleration to all religions; Theodosius I made Christianity the state faith in 380. (https://en.wikipedia.org/wiki/Edict_of_Milan)                                                                                                              |
+| `enamel-development-techniques`        | Description now says artisans in Limoges.                                                                                                                         | Prose places the largest champleve workshops at Limoges in central France.                                                                                                                                                                                    |
+| `english-pound-sterling-origin`        | Renamed to Tealby Penny Introduced, description reframed, and prose no longer says the Tealby ratio gave sterling its name.                                       | The 240-penny pound dates to Anglo-Saxon times and sterling named the Norman silver penny before 1158. (https://www.etymonline.com/word/sterling)                                                                                                             |
+| `female-ruler-sargon`                  | Renamed the card Kubaba of Kish and rewrote the description; the prose already matched Kubaba and its lugal-title sentence was corrected.                         | The Sumerian King List names Kubaba, the innkeeper of Kish's third dynasty, as its only woman, reigning 100 years with the title lugal, which had no feminine form. (https://en.wikipedia.org/wiki/Kubaba)                                                    |
+| `female-ruler-sargon`                  | friendly_name is now Kubaba of Kish and the description names Kubaba; the stored year was left alone as the flag did not concern it.                              | Innkeeper, third dynasty of Kish and a hundred-year reign all match Kubaba on the King List. (https://en.wikipedia.org/wiki/Kubaba)                                                                                                                           |
+| `first-almanac`                        | friendly_name changed to Kalendrier des Bergers.                                                                                                                  | The 1491 Paris book is titled Kalendrier des Bergers, as description and prose both say. (https://en.wikipedia.org/wiki/Kalendrier_des_bergers)                                                                                                               |
+| `first-birds-archaeopteryx`            | Description now says long regarded as the earliest bird, though newer finds blur that line.                                                                       | Anchiornis and Xiaotingia from older-or-similar rocks blur Archaeopteryx's status, as the prose says. (https://en.wikipedia.org/wiki/Archaeopteryx)                                                                                                           |
+| `first-greenhouse`                     | Description drops monks and says Italian growers built sheltered houses for tender plants.                                                                        | Sources mention 13th-century Italians with protective plant houses but nothing about monks. (https://en.wikipedia.org/wiki/Greenhouse)                                                                                                                        |
+| `first-lung-transplant`                | Description now notes the patient survived only a few weeks.                                                                                                      | Hardy's patient John Russell died 18 days after surgery, as the prose states.                                                                                                                                                                                 |
+| `first-map-printing`                   | Corrected friendly_name to Waldseemuller Map.                                                                                                                     | Description and prose spell it Waldseemuller.                                                                                                                                                                                                                 |
+| `first-public-library`                 | Description now says founded by the Ptolemaic kings of Egypt, consistent with the prose.                                                                          | Prose says the opening most likely fell under Ptolemy II.                                                                                                                                                                                                     |
+| `first-thermometer`                    | Renamed Early Thermoscope and description now credits several inventors, Galileo among them.                                                                      | No Galileo instrument survives; Santorio, Drebbel and Fludd built similar devices. (https://en.wikipedia.org/wiki/Thermoscope)                                                                                                                                |
+| `first-thomas-cup-1949`                | Description now says Malaya won.                                                                                                                                  | Malaysia formed in 1963; the 1949 winner was Malaya, as the prose states. (https://en.wikipedia.org/wiki/1949_Thomas_Cup)                                                                                                                                     |
+| `fork`                                 | Description now says Bronze Age sites in China.                                                                                                                   | Qijia culture bone forks c. 2400-1900 BCE are the oldest cited; nothing supports Mesopotamia. (https://en.wikipedia.org/wiki/Fork)                                                                                                                            |
+| `geodesic-dome`                        | Renamed to Fuller's Geodesic Dome and description says he popularised it.                                                                                         | Bauersfeld's Zeiss planetarium dome at Jena opened in 1926, before Fuller. (https://en.wikipedia.org/wiki/Geodesic_dome)                                                                                                                                      |
+| `goguryeo-namgnang-battle`             | Renamed friendly_name to Siege of Ansi Fortress.                                                                                                                  | Description and prose both describe the 645 siege of Ansi.                                                                                                                                                                                                    |
+| `goryeo-dynasty`                       | Retitled to Goryeo Prosperity Under Munjong and rewrote the description, dropping the celadon and Tripitaka claims that fall outside the window.                  | The peak is the reign of Munjong; the Tripitaka recarving began in 1236 and the celadon sanggam height is a century later. (https://en.wikipedia.org/wiki/Munjong_of_Goryeo)                                                                                  |
+| `gothic-cathedral-construction`        | Kept as the start-of-rebuilding beat; name and description reworded to stop blurring with the completion card.                                                    | Prose describes the 1194 fire and the ensuing rebuild.                                                                                                                                                                                                        |
+| `great-gold-robbery`                   | Description now says a mail train bound for the Channel boats at Folkestone.                                                                                      | Prose has the train running London Bridge to Folkestone for onward shipment to Paris.                                                                                                                                                                         |
+| `handgun-first-use`                    | Rewrote the description as Perugia ordering handheld firearms, hedged as among the earliest recorded orders; year kept.                                           | Perugia ordered 500 palm-length hand bombards in 1364, the earliest documentary evidence of handguns. (https://dokumen.pub/the-earliest-hand-firearms.html)                                                                                                   |
+| `horizontal-water-wheel`               | Renamed to Horizontal Water Wheel and described flat wheels on vertical shafts.                                                                                   | A horizontal water wheel lies flat and turns on a vertical shaft, matching the prose. (https://en.wikipedia.org/wiki/Norse_mill)                                                                                                                              |
+| `human-genome-completed`               | Description now says the sequence was declared essentially finished, a working reference map.                                                                     | 2003 sequence left gaps and repeats; T2T gapless genome was 2022. (https://en.wikipedia.org/wiki/Human_Genome_Project)                                                                                                                                        |
+| `inca-conflict-spanish`                | Renamed friendly_name to 'Capture of Atahualpa' to match its Cajamarca content.                                                                                   | Description and prose are Pizarro's ambush and seizure of Atahualpa at Cajamarca.                                                                                                                                                                             |
+| `invention-sail`                       | Description now says early boats on the Persian Gulf and the Nile carried sails, without claiming Egyptian invention.                                             | Earliest sail image is Ubaid Persian Gulf pottery, with Egyptian images from around 3100 BCE. (https://en.wikipedia.org/wiki/Sail)                                                                                                                            |
+| `jefferson-wheel-cipher`               | Description now says thirty-six discs, and the prose's mistaken twenty-six comparison became the M-94's twenty-five.                                              | Jefferson's design had 36 disks each bearing the 26-letter alphabet; the M-94 used 25 disks. (https://en.wikipedia.org/wiki/Jefferson_disk)                                                                                                                   |
+| `kabuki-women-actors`                  | Description now says youths were barred after women, so it fits the 1652 year.                                                                                    | Prose records the 1629 ban on women and the 1652 restriction to adult male actors.                                                                                                                                                                            |
+| `kilwa-khilafa-sultanate`              | Kept as the Kilwa state card; description reworded so it no longer duplicates the gold-monopoly card.                                                             | Kilwa prospered under the Mahdali dynasty in the 14th century, Ibn Battuta visiting in 1331. (https://en.wikipedia.org/wiki/Kilwa_Sultanate)                                                                                                                  |
+| `king-david-rules`                     | Description now opens 'Biblical tradition holds that', matching the hedged prose.                                                                                 | No contemporary record of David exists; the Tel Dan Stele only may name a house of David, and the prose already hedges.                                                                                                                                       |
+| `lab-grown-burger`                     | Description now credits Mark Post's team with growing it and says it was tasted in London.                                                                        | Post grew it; Richard McGeown cooked it and Hanni Rutzler and Josh Schonwald tasted it on 5 August 2013. (https://en.wikipedia.org/wiki/Cultured_meat)                                                                                                        |
+| `lahaina-fire`                         | Description now says 102 people.                                                                                                                                  | Maui authorities revised the toll to 102 after DNA identification. (https://en.wikipedia.org/wiki/2023_Hawaii_wildfires)                                                                                                                                      |
+| `lightning-rod`                        | Description now says Franklin devised a pointed iron rod that carries a strike to the ground, with no sequence claim; year 1752 stays.                            | Franklin conceived the rod in 1749; rods were installed from 1752. (https://en.wikipedia.org/wiki/Lightning_rod)                                                                                                                                              |
+| `llanquihue-battle`                    | Renamed Great Mapuche Uprising with matching description, and dropped the unsupported Llanquihue claim from the prose in favour of the abandonment of Boroa.      | The 1655 event was a coordinated uprising from 14 February 1655; sources give no Battle of Llanquihue. (https://en.wikipedia.org/wiki/Mapuche_uprising_of_1655)                                                                                               |
+| `longbow-developed`                    | Removed yew from the description.                                                                                                                                 | Gerald of Wales wrote that Gwent bows were made of wild elm, neither horn, ash nor yew. (https://en.wikipedia.org/wiki/Welsh_bow)                                                                                                                             |
+| `mali-maritime-expansion`              | Description no longer names Abu Bakr II; prose already explains the error.                                                                                        | No such ruler existed; the voyage was by Musa's predecessor, per al-Umari, and the name arose from a misreading of Ibn Khaldun. (https://en.wikipedia.org/wiki/Muhammad_ibn_Qu)                                                                               |
+| `moldboard-plow-adoption`              | Kept as a distinct beat (late 8th century uptake, per the evidence-window skill) and rewrote the description around the moldboard itself.                         | Cards cover Roman-era spread (500), the 750-830 uptake and the 1000-1300 breakthrough, so retiring one would lose a beat; only the blurred description needed a fix.                                                                                          |
+| `mombasa-coastal-power`                | Description rewritten to drop the Kilwa rivalry claim.                                                                                                            | Sources place Mombasa under Kilwa's overlordship in the 14th-15th centuries; prose already says so. (https://en.wikipedia.org/wiki/Kilwa_Sultanate)                                                                                                           |
+| `mongol-black-death-spread`            | Description now attributes the catapulting to one later account.                                                                                                  | Prose says the only source is notary de Mussis's second-hand story and most historians doubt it.                                                                                                                                                              |
+| `mughal-aurengzeb-expansion`           | Corrected friendly_name to Aurangzeb's Mughal Expansion (28 chars); slug left alone.                                                                              | Description and prose on the same card spell it Aurangzeb.                                                                                                                                                                                                    |
+| `orient-express-first-run`             | Description now says the first journey left Paris and the Constantinople route came later.                                                                        | The 5 June 1883 run went Paris to Vienna; the Constantinople connection began 4 October 1883. (https://en.wikipedia.org/wiki/Orient_Express)                                                                                                                  |
+| `ottoman-siege-galata`                 | Renamed to Murad II Besieges Constantinople.                                                                                                                      | The 1422 siege was of Constantinople itself; the description and prose already say so. (https://en.wikipedia.org/wiki/Siege_of_Constantinople_(1422))                                                                                                         |
+| `paddle-wheel-boat`                    | Description now says the boats were first built as pedal-powered warships in China.                                                                               | Prose: built Chinese ships date to 418 and 552, while the De Rebus Bellicis ship survives only as text.                                                                                                                                                       |
+| `peron-becomes-worlds-first-president` | Description and prose now say first woman to hold the title of president, noting Tuva and Mongolia's earlier heads of state under other titles.                   | Anchimaa-Toka (Tuva, 1940-44) and Yanjmaa (Mongolia, 1953-54) headed states before 1974 under other titles. (https://en.wikipedia.org/wiki/Khertek_Anchimaa-Toka)                                                                                             |
+| `pinel-reforms-asylums`                | Description now credits Pinel and attendant Jean-Baptiste Pussin.                                                                                                 | Pussin carried out the unchaining and Pinel adopted and publicised it. (https://en.wikipedia.org/wiki/Jean-Baptiste_Pussin)                                                                                                                                   |
+| `pliocene-epoch-begins`                | Description now cites Australopithecus and the Panama land bridge instead of hominin origins.                                                                     | Sahelanthropus and Orrorin are late Miocene; Australopithecus anamensis and Panama closure fall in the Pliocene. (https://en.wikipedia.org/wiki/Pliocene)                                                                                                     |
+| `plow-invented`                        | Description now says the plow arose in several early farming regions.                                                                                             | Prose cites Kalibangan furrows c. 2800 BCE plus Egyptian and Akkadian evidence, and says the design did not start in one place.                                                                                                                               |
+| `pneumatic-tire`                       | Description now says his son's tricycle.                                                                                                                          | Dunlop first fitted the tyre to his son Johnnie's tricycle in 1887. (https://en.wikipedia.org/wiki/John_Boyd_Dunlop)                                                                                                                                          |
+| `polish-soviet-war`                    | Retitled Battle of Warsaw and reworded the description to the battle, matching the moment-year 1920 recorded in the ledger.                                       | The ledger decided this card is a single moment centred on the August 1920 battle, and the prose covers the battle and its Miracle on the Vistula framing.                                                                                                    |
+| `pottery-invented`                     | Description now says earliest vessels were fired in China with Jomon Japan following.                                                                             | Xianren Cave sherds date to about 20,000-19,000 years ago, older than Jomon; the existing window already fits. (https://en.wikipedia.org/wiki/Xianrendong_Cave)                                                                                               |
+| `protractor`                           | Description now says builders and astronomers used slope ratios and plumb lines before any graduated protractor; year kept as a stand-in.                         | No sourced date for a graduated protractor was found (the Kha tomb object is only suggested), so the year was not moved.                                                                                                                                      |
+| `recurved-bow-design`                  | Description drops the nomad attribution and keeps the energy-storage and mounted-archery framing.                                                                 | Earliest composite bow evidence is Mesopotamian or Anatolian; the prose says origin is unsettled. (https://en.wikipedia.org/wiki/Composite_bow)                                                                                                               |
+| `robotic-exoskeleton`                  | Dropped "First" from the description; year 1960 left as Hardiman is dated to the 1960s.                                                                           | Powered exoskeleton precursors (Yagn 1890, Kelley 1917) predate GE Hardiman, so "first" is unsupported. (https://en.wikipedia.org/wiki/Powered_exoskeleton)                                                                                                   |
+| `rozwi-stone-fortifications`           | Retitled Rozwi Stone Capitals with a description that they took over Torwa dry-stone towns and kept building in that style, and rewrote the prose to match.       | Wikipedia says the Changamires rarely built new zimbabwe and lived in old ruins; Naletale was begun under the Torwa and continued under Rozvi rule, with styles unchanged and only radiocarbon telling phases apart. (https://en.wikipedia.org/wiki/Naletale) |
+| `rubber-cultivation-begins`            | Description says shipped instead of smuggled.                                                                                                                     | No Brazilian law banned rubber seed exports in 1876 and the smuggling story is largely Wickham's own. (https://en.wikipedia.org/wiki/Henry_Wickham_(explorer))                                                                                                |
+| `school-lunch-program`                 | Description now says Sweden began meals for poor pupils that grew into a free lunch for all; year left as is (no source to move it).                              | Sweden's meals were means-tested before the 1930s, state-subsidised from 1946, and free for all later; 1894 is unverified. (https://voxeu.org/article/swedish-school-lunch-reform-nutrition-and-lifetime-income)                                              |
+| `shaanxi-earthquake`                   | Description drops 830,000 and says the toll is debated.                                                                                                           | The card prose already separates the administrative 830,000 from about 100,000 direct deaths.                                                                                                                                                                 |
+| `sikh-movement-begins`                 | Description now says Nanak began preaching, matching the 1499 year.                                                                                               | Prose and tradition place his birth in 1469 and the start of his mission around 1499.                                                                                                                                                                         |
+| `sima-yan-jin-unification`             | Kept as the survivor and renamed to Sima Yan Reunifies China, since Jin was founded in 266 and 280 is the conquest of Wu.                                         | The card's own description and prose date the founding to 266 and the card to the 280 conquest. (https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin)                                                                                                             |
+| `song-color-printing`                  | Description now says Song printers began adding more than one ink colour, dropping the separate-blocks claim.                                                     | Multicolour block technique matured in the Ming while Song work used added inks and multi-ink banknotes. (https://en.wikipedia.org/wiki/Color_printing)                                                                                                       |
+| `song-paper-money-system`              | Description rewritten to the Song government taking over Sichuan merchant notes.                                                                                  | Prose and year 1024 are Northern Song government jiaozi; Southern Song was after 1127.                                                                                                                                                                        |
+| `srivijaya-decline`                    | Description now says Srivijaya gave way to Melayu, then Majapahit and Malacca.                                                                                    | Authority passed to the Melayu kingdom at Jambi before Majapahit and Malacca, per the prose. (https://en.wikipedia.org/wiki/Srivijaya)                                                                                                                        |
+| `streptomycin-cures-tb`                | Description now names Albert Schatz as isolator in Waksman's lab.                                                                                                 | Schatz isolated streptomycin in 1943 and won legal recognition as co-discoverer. (https://en.wikipedia.org/wiki/Albert_Schatz)                                                                                                                                |
+| `sulfuric-acid-production`             | Description now says alchemists distilled oil of vitriol without naming a nationality.                                                                            | Vitriol distillation is far older than 1600 and not specifically German; the prose covers Glauber and Ward. (https://en.wikipedia.org/wiki/Sulfuric_acid)                                                                                                     |
+| `super-tornado-outbreak`               | Removed the hour count from description and prose so they no longer disagree.                                                                                     | Sources give varying durations (Wikipedia 1 day 1 hour overall); neither figure is firm. (https://en.wikipedia.org/wiki/1974_Super_Outbreak)                                                                                                                  |
+| `swahili-city-states`                  | Description swaps enslaved people for timber, matching the prose's gold, ivory and timber.                                                                        | Large-scale Swahili slave trade is mostly 18th-19th century, not c. 1200. (https://en.wikipedia.org/wiki/Swahili_coast)                                                                                                                                       |
+| `swahili-mombasa-rise`                 | Description rewritten to drop the Kilwa rivalry claim.                                                                                                            | Sources place Mombasa under Kilwa's overlordship in the 14th-15th centuries; prose already says so. (https://en.wikipedia.org/wiki/Kilwa_Sultanate)                                                                                                           |
+| `syria-earthquake-medieval`            | Description drops the one million figure and notes the famine that swelled the toll.                                                                              | Wikipedia and the Dead Sea quake catalogue put the quake near 30,000 and call larger figures exaggerated amid Nile famine. (https://en.wikipedia.org/wiki/1202_Syria_earthquake)                                                                              |
+| `tokugawa-rice-standardization`        | Renamed Koku Rice Tax Standard and description says the new shogunate kept the rice-yield system.                                                                 | Hideyoshi's land survey set the koku assessment before 1603 and the Tokugawa kept it. (https://en.wikipedia.org/wiki/Koku)                                                                                                                                    |
+| `treaty-of-aachen`                     | Description now says Michael I recognized Charlemagne as emperor but withheld the Romans title.                                                                   | Byzantium kept 'emperor of the Romans' for itself in 812. (https://en.wikipedia.org/wiki/Treaty_of_Aachen_(812))                                                                                                                                              |
+| `treaty-wedmore`                       | Description now states Guthrum's baptism and departure from Wessex instead of dividing England.                                                                   | The Danelaw boundary came from the later Treaty of Alfred and Guthrum. (https://en.wikipedia.org/wiki/Treaty_of_Wedmore)                                                                                                                                      |
+| `turbine-wheel-concept`                | Description no longer names France and describes the water-jet reaction wheel.                                                                                    | Segner's wheel was built in Goettingen; year 1750 unchanged. (https://en.wikipedia.org/wiki/Segner_wheel)                                                                                                                                                     |
+| `visigothic-spain-establishment`       | Name changed to 'Visigothic Kingdom Founded' and description limited to Gaul with later Iberian spread.                                                           | The 418 treaty settled the Visigoths around Toulouse; Iberia came by later conquest. (https://en.wikipedia.org/wiki/Visigothic_Kingdom)                                                                                                                       |
+| `vivaldi-four-seasons`                 | Removed the place from the description.                                                                                                                           | First edition of Op. 8 was printed by Le Cene in Amsterdam. (https://en.wikipedia.org/wiki/Il_cimento_dell%27armonia_e_dell%27inventione)                                                                                                                     |
+| `wari-empire`                          | Kept as a distinct peak card and reworded its description so it no longer repeats the expansion card's roads-and-administration line.                             | Both descriptions mentioned roads and administrative centres; the peak now speaks of greatest extent.                                                                                                                                                         |
+| `westminster-crown-jewels-heist`       | Description respelled to Pudlicott to match the prose.                                                                                                            | Wikipedia lists Richard of Pudlicott as the standard spelling; the tunnelling claim is confirmed by his confession. (https://en.wikipedia.org/wiki/Richard_Pudlicott)                                                                                         |
+| `wizard-of-oz`                         | Description now says it opened in American cinemas after a small-town test screening.                                                                             | First showing was 12 August 1939 in Oconomowoc, Hollywood premiere 15 August. (https://wpr.org/film/wizard-oz-debuted-week-1939-not-hollywood-oconomowoc)                                                                                                     |
+| `wokou-raiders-besiege-nanjing`        | Description now says coastal raiders, avoiding the wrong Japanese-led claim.                                                                                      | Prose (and the historiography) has mostly Chinese smugglers under a Japanese label.                                                                                                                                                                           |
+| `zhouyuan-sogdian-outpost`             | Renamed to Sogdian Merchant Colonies in China; description and prose already describe settlements in Chinese towns, and the slug is kept.                         | Zhouyuan is a Western Zhou site, while the card prose describes Sogdian communities in Tang-era Chinese towns such as Xi an.                                                                                                                                  |
 
-### The nine unresolved cards, resolved (2026-09-19)
+### Prose corrected (39)
 
-All nine now carry a verdict, so the report script counts none of them. Three took a window and
-six are rejections whose reasoning is in the ledger rather than only here.
+| Slug                               | Change                                                                                                                                                                                                               | Evidence                                                                                                                                                                                                                                                   |
+| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `aqua-vitae-distilled`             | Rewrote prose to call the Salerno attribution doubtful and credit Taddeo Alderotti of Bologna (1270s consilia); card year and description unchanged.                                                                 | Searches show the Salerno recipe attribution is a discounted older view while Alderotti Consilia (1276) is the firm early account. (https://academic.oup.com/shm/article-abstract/20/2/426/1647597)                                                        |
+| `arthropods-colonize-land`         | Prose now calls the Kerrera and Ludlow millipede-like fossils candidates for oldest, and states Pneumodesmus was re-dated to about 414 Ma with its age still argued.                                                 | Suarez et al. 2017 U-Pb zircon gave 413.7 +/- 4.4 Ma for the Cowie Harbour bed; Kerrera (425 Ma) and Ludlow (420 Ma) records are older. (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5489152/)                                                            |
+| `battle-marathon`                  | Removed the stray "a" so it reads "Persian ships".                                                                                                                                                                   | Plain grammatical typo in paragraph two.                                                                                                                                                                                                                   |
+| `budi-utomo-founded`               | Prose now says founded in Batavia at the STOVIA medical school.                                                                                                                                                      | Budi Utomo was founded on 20 May 1908 at STOVIA in Batavia; Yogyakarta hosted its first major congress that October. (https://en.wikipedia.org/wiki/Budi_Utomo)                                                                                            |
+| `charles-bridge-prague`            | Paragraph two now reads 1357, 9 July, 5:31 a.m., digits 135797531, palindromic.                                                                                                                                      | Foundation stone traditionally laid 9 July 1357 at 5:31 a.m., giving 1-3-5-7-9-7-5-3-1. (https://en.wikipedia.org/wiki/Charles_Bridge)                                                                                                                     |
+| `compound-air-compressor`          | The 1829 date is corroborated, so the year stays; the prose's claim that the idea entered mining and tunnelling in the late 1820s was wrong and now describes Mann's 1829 patent and later Mont Cenis use.           | Grace's Guide records William Mann of Brixton obtaining a patent in 1829 and advocating compression in stages; Sullair's history dates the first compound compressor patent to 1829. (https://www.gracesguide.co.uk/William_Mann)                          |
+| `dart-asteroid-impact`             | Sentence now reads 'The impact shortened that period by 32 minutes'.                                                                                                                                                 | Dimorphos's orbit was shortened by about 32 minutes against a 73-second success threshold. (https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test)                                                                                                |
+| `deccan-sultanates`                | Prose now says Golconda followed in 1518 and Bidar completed the set, spanning about three decades.                                                                                                                  | Golconda declared independence in 1518; Bidar's Barid Shahi is the last of the five (dated variously, so left undated). (https://en.wikipedia.org/wiki/Sultanate_of_Golconda)                                                                              |
+| `dom-university-paris`             | Replaced the papal-charter-in-1200 sentence with Philip II's 1200 royal charter followed by Innocent III's backing within about a decade.                                                                            | The 1200 charter was Philip II's, papal statutes date to about 1209 and Courcon's to 1215. (https://en.wikipedia.org/wiki/University_of_Paris)                                                                                                             |
+| `first-cyanobacteria`              | Replaced the unsupported 2.9 Ga South African biomarker claim with the 2015 contamination finding on 2.7 Ga hopanes and the roughly 2 Ga Belcher Group fossils.                                                      | French et al. 2015 showed the 2.7 Ga hydrocarbons entered the rock much later; the oldest accepted cyanobacterial fossils are Belcher Group, Canada, about 2 Ga. (https://pmc.ncbi.nlm.nih.gov/articles/PMC10697835/)                                      |
+| `first-liver-transplant`           | Description now says it was a failure that began the road to a routine operation; prose corrected that the child had biliary atresia, not haemophilia.                                                               | Bennie Solis had biliary atresia and bled to death on 1 March 1963; prose already said no early patient survived long. (https://en.wikipedia.org/wiki/Thomas_Starzl)                                                                                       |
+| `first-maternity-hospital`         | Rewrote paragraph one around Manningham's 1739 Jermyn Street General Lying-In Hospital.                                                                                                                              | Wikipedia: Manningham founded the General Lying-In Hospital in 1739, first of its kind in Britain. (https://en.wikipedia.org/wiki/Queen_Charlotte%27s_and_Chelsea_Hospital)                                                                                |
+| `first-mobile-game`                | Prose now calls Hagenuk a German firm from Kiel with a Danish development centre.                                                                                                                                    | Hagenuk was a Kiel company; the MT-2000 was designed and built at its Stovring, Denmark centre. (https://en.wikipedia.org/wiki/Hagenuk_MT-2000)                                                                                                            |
+| `first-multicellular-life`         | Changed Bangiomorpha's age to about 1.05 billion years, re-dated in 2018.                                                                                                                                            | Gibson et al. 2018 (Geology) Re-Os dating gave 1.047 Ga for the Hunting Formation, 150 million years younger than the older estimate. (https://authors.library.caltech.edu/83811)                                                                          |
+| `futures-market`                   | Prose now says merchants organised the market around 1697, the shogunate licensed it in 1730, and after famine riots in 1773 re-established the exchange under its own sponsorship and regulation.                   | Osaka Dojima Exchange and JPX histories date the shogunal licence to 1730 and 1697 to the merchants' own market; Wikipedia records the 1773 re-establishment under government sponsorship after famine riots. (https://www.odex.co.jp/en/about/derivative) |
+| `genghis-khan-stele-archery`       | Prose now says it turned up before 1818 near Nerchinsk and went to St Petersburg in 1829.                                                                                                                            | de Rachewiltz: found among ruins on the Khirkhira and Kondui, stored at Nerchinsk in 1818, sent to St Petersburg in 1829. (https://eah.anu.edu.au/42/rachewiltz-sino-mongolica-remota/index.html)                                                          |
+| `gondar-castles-construction`      | Kept the window and reworded prose: Gondar founded c. 1636, first castle usually dated 1645.                                                                                                                         | Wikipedia dates Fasilides' castle to 1645 while Gondar's founding is put at 1636, so both hold. (https://en.wikipedia.org/wiki/Fasil_Ghebbi)                                                                                                               |
+| `guggenheim-bilbao`                | Rewrote paragraph one to drop the unsupported cheap-titanium claim and keep CATIA and the sheet count.                                                                                                               | The Cold War price story is speculative even in the sources that repeat it; the sheet count, opening date and CATIA use are attested. (https://www.designingbuildings.co.uk/wiki/Guggenheim_Museum,_Bilbao)                                                |
+| `heavy-plow-adoption`              | Rewrote the first sentence to say the breakthrough came around 1000, dropping the eighth-century claim.                                                                                                              | Andersen, Jensen and Skovsgaard date the heavy plough breakthrough to about AD 1000. (https://www.sciencedirect.com/science/article/abs/pii/S0304387815000978)                                                                                             |
+| `itaipu-dam`                       | Replaced with 210 Maracana-sized stadiums, and corrected the stale claim that Itaipu still holds the annual output record (Three Gorges passed it in 2020).                                                          | Itaipu's 12.7 million cubic metres of concrete equals 210 Maracana stadiums; Three Gorges made 111.8 TWh in 2020 against Itaipu's 103 TWh in 2016. (https://turismoitaipu.com.br/en/the-itaipu-plant/curiosities/)                                         |
+| `junk-watertight-bulkheads`        | Left the window as a diffuse process but corrected the prose claim of Song accounts by 1000 to Zhu Yu 1119 and the 1277 Quanzhou wreck.                                                                              | The earliest cited text is Zhu Yu (1119); no precise Tang start could be sourced beyond a dynasty-wide bracket. (https://en.wikipedia.org/wiki/Junk_(ship))                                                                                                |
+| `kangnido-world-map`               | Description kept; prose now notes Korean and Japanese maps were added for the east alongside the two Chinese maps.                                                                                                   | Kwon Kun's sources were two Chinese maps plus Korean and Japanese maps, so the description was right and the prose incomplete. (https://en.wikipedia.org/wiki/Gangnido)                                                                                    |
+| `khmer-baray-hydraulics`           | Prose now dates the West Baray to the eleventh century; the 900-1066 window stands.                                                                                                                                  | West Baray was begun under Suryavarman I and completed under Udayadityavarman II, who reigned to 1066. (https://en.wikipedia.org/wiki/West_Baray)                                                                                                          |
+| `kobe-81-point-game-2006`          | Replaced the shot-clock phrase with the Hershey, 1962 setting; also corrected free throws to 18 of 20.                                                                                                               | Shot clock dates from 1954; box score is 28-of-46 and 18-of-20 at the line. (https://www.nba.com/news/kobe-bryant-81-point-game-20th-anniversary)                                                                                                          |
+| `madoff-ponzi-scheme-unravels`     | Prose now says Madoff put it at 50 billion when he confessed and prosecutors counted about 65 billion on client statements; description kept.                                                                        | Madoff told his sons 50 billion dollars; prosecutors later tallied 64.8 billion in client statements. (https://en.wikipedia.org/wiki/Madoff_investment_scandal)                                                                                            |
+| `mamun-opens-great-pyramid`        | Card year 832 kept; prose now says 832 and that Western books give 820 although medieval Arab sources name no such year.                                                                                             | Al-Ma'mun was in Baghdad in 820 and visited Egypt only once, in 832; the 820 date is not in the Arab sources (Dash). (https://www.smithsonianmag.com/travel/inside-the-great-pyramid-75164298/)                                                            |
+| `maurya-ashoka`                    | Kept year -250 (round year for the pillar programme); prose keeps the sourced 237-236 BCE date for the major pillar edicts (regnal years 26-27) and now says the Greek and Aramaic texts are on stones, not pillars. | Wikipedia's Major Pillar Edicts dates them to regnal years 26-27, 237-236 BCE; consecration dates vary c. 268-263 BCE, so the card's -250 stays as a round year. (https://en.wikipedia.org/wiki/Major_Pillar_Edicts)                                       |
+| `minoan-civilization-peak`         | Rewrote both paragraphs around the Neopalatial rebuilt palaces, trade reach and the c. 1450 BCE destruction.                                                                                                         | Neopalatial Knossos (1700-1450 BCE) marks the height of Minoan civilization, with an estimated 25,000-28,000 inhabitants. (https://en.wikipedia.org/wiki/Knossos)                                                                                          |
+| `nobel-prizes-first`               | Prose now says 10 December 1901, the fifth anniversary of Nobel's death, and drops the hedge about 1900.                                                                                                             | First ceremony was 10 December 1901 in Stockholm, with the peace prize presented separately in Christiania. (https://www.nobelprize.org/ceremony/from-the-first-nobel-prize-award-ceremony-1901/)                                                          |
+| `owens-six-records-ann-arbor-1935` | Card is correct (five plus a tie counting 200 m equivalents); the prose said four and a tie, so its closing sentence was corrected to five and a tie.                                                                | Wikipedia: five world records set and a sixth tied, the two 220-yard marks also counting as 200 m records. (https://en.wikipedia.org/wiki/Jesse_Owens)                                                                                                     |
+| `palmares-republic-zumbi`          | Reworded the opening to 'grew from about 1605 as people who had escaped slavery... built settlements'.                                                                                                               | The sentence lacked a noun after 1605; the rest of the prose is unchanged.                                                                                                                                                                                 |
+| `republic-florence-banking`        | Changed 'mid 13th century' to 'early 14th century'.                                                                                                                                                                  | Companies peaked in the early 1300s before Edward III's default ruined both, matching the card window. (https://en.wikipedia.org/wiki/Bardi_family)                                                                                                        |
+| `sonja-henie-first-olympic-gold`   | Removed the Norwegian-judges sentence and the unverified six-of-seven count; also corrected the record's duration to 70 years (Lipinski, 1998).                                                                      | A Norwegian, Oscar Kolderup, sat on the panel and no per-judge marks are sourced; Lipinski broke the record 70 years on. (https://en.wikipedia.org/wiki/Figure_skating_at_the_1928_Winter_Olympics_%E2%80%93_Ladies%27_singles)                            |
+| `stari-most-mostar`                | Sentence rewritten to about 30 m long, 4 m wide, 24 m above the river.                                                                                                                                               | Wikipedia gives 30 m long, 4 m wide, 24 m above the river. (https://en.wikipedia.org/wiki/Stari_Most)                                                                                                                                                      |
+| `statue-liberty`                   | Changed to 'Hungarian-born publisher Joseph Pulitzer'.                                                                                                                                                               | Pulitzer was born in Mako, Hungary and published the New York World. (https://www.mentalfloss.com/history/how-joseph-pulitzer-saved-the-statue-of-liberty)                                                                                                 |
+| `sync-swim-olympic-1984`           | Now says Ruiz won solo gold, Ruiz and Costie the duet gold, Waldo solo silver.                                                                                                                                       | Backlog cites Wikipedia's 1984 synchronized swimming results. (https://en.wikipedia.org/wiki/Synchronized_swimming_at_the_1984_Summer_Olympics)                                                                                                            |
+| `tasman-australia`                 | Now says a party landed and planted the Dutch flag in Tasmania before sailing to New Zealand, where he never set foot, and that renaming came in 1856.                                                               | Wikipedia's Abel Tasman article records the Blackman Bay landing and flag planting on 2-3 December 1642. (https://en.wikipedia.org/wiki/Abel_Tasman)                                                                                                       |
+| `tikal-calakmul-war`               | Removed the erroneous phrase, leaving Calakmul's ruler Yuknoom Yich'aak K'ahk'.                                                                                                                                      | Yik'in Chan K'awiil was Tikal's next king, the victor's son. (https://en.wikipedia.org/wiki/Jasaw_Chan_K%CA%BCawiil_I)                                                                                                                                     |
+| `womens-suffrage-nz`               | Rewrote the sentence: women voted in the general election of 28 November after a hurried enrolment drive.                                                                                                            | Royal assent 19 September, election 28 November 1893; twelve days is unsupported.                                                                                                                                                                          |
 
-**Windows, with the anchor deliberately left alone.** `lapita-pottery-trade` -1000..-500 and
-`poverty-point-earthworks` -1500..-1200 are both on the "checked and judged defensible as stored"
-list above, so a reviewer re-proposing a year move was a false positive both times. What the
-earlier passes were reaching for was a window, not a different point, and the schema now
-expresses it. `bantu-expansion-africa` is -400..500 with its `year` moved, on which see below.
+### Categories changed (104)
 
-**Rejections, and what makes each one final.** `gupta-golden-age`, `nok-civilization-nigeria`,
-`tiwanaku-monumental-center` and `swahili-stone-architecture` were each reviewed a third time and
-the disagreement held: sourced readings of the start sit more than fifty years apart (Gupta:
-the 320 empire founding against Samudragupta's c. 335 and Chandragupta II's 375; Nok still spans
-600 years). `silk-road-trade` and `bantu-expansion` have no dateable referent for their own claim
-— "Flourishes" at 1100 and "completed centuries of migration" at 1000 are not events any source
-places there.
+| Slug                             | Was          | Now          |
+| -------------------------------- | ------------ | ------------ |
+| `african-union`                  | commerce     | diplomacy    |
+| `air-jordan-sneakers`            | media        | commerce     |
+| `alcatraz-federal-prison`        | revolution   | law          |
+| `archaic-period-greece`          | nature       | empires      |
+| `astrolabe-navigation`           | media        | invention    |
+| `bach-death`                     | revolution   | figures      |
+| `ballet-de-cour-france`          | commerce     | art          |
+| `baroque-church-architecture`    | empires      | architecture |
+| `belt-road-initiative`           | architecture | diplomacy    |
+| `bikini-introduced`              | media        | craft        |
+| `blood-bank-established`         | commerce     | medicine     |
+| `bus-service`                    | media        | invention    |
+| `champagne-region-bubbly`        | art          | craft        |
+| `chinese-foot-binding-begins`    | agriculture  | craft        |
+| `cluny-abbey-founded`            | commerce     | architecture |
+| `diamond-mines`                  | agriculture  | craft        |
+| `distillation-techniques`        | art          | craft        |
+| `dodo-driven-extinct`            | disasters    | nature       |
+| `edo-castle-architecture`        | art          | architecture |
+| `eurotunnel-boring`              | media        | architecture |
+| `fatimid-al-azhar-mosque`        | commerce     | architecture |
+| `ferris-wheel-invented`          | media        | architecture |
+| `field-of-cloth-of-gold`         | warfare      | diplomacy    |
+| `first-ascent-mont-blanc`        | migration    | sports       |
+| `first-european-paper-mill`      | agriculture  | writing      |
+| `first-hamburger-served`         | agriculture  | commerce     |
+| `first-hospital-byzantine`       | commerce     | medicine     |
+| `first-labor-day`                | media        | commerce     |
+| `first-maternity-hospital`       | commerce     | medicine     |
+| `first-miss-america`             | commerce     | media        |
+| `first-nuclear-power-plant`      | media        | invention    |
+| `first-public-library`           | commerce     | writing      |
+| `first-stock-dividend-voc`       | media        | commerce     |
+| `fischer-spassky-world-chess`    | warfare      | sports       |
+| `ford-five-dollar-wage`          | media        | commerce     |
+| `gastarbeiter-migration`         | trade        | migration    |
+| `germanic-migration-period`      | empires      | migration    |
+| `glass-lens-grinding`            | agriculture  | craft        |
+| `globe-theatre-built`            | commerce     | architecture |
+| `great-leap-forward-famine`      | revolution   | disasters    |
+| `guantanamo-bay-opens`           | revolution   | law          |
+| `guillotine-first-used`          | medicine     | law          |
+| `gulf-war`                       | revolution   | warfare      |
+| `handloom-frame-loom`            | agriculture  | craft        |
+| `himalayas-rise`                 | empires      | nature       |
+| `household-refrigerator-sold`    | media        | invention    |
+| `imjin-war-turtle-ship`          | media        | warfare      |
+| `india-first-railway`            | media        | architecture |
+| `instant-coffee-introduced`      | media        | invention    |
+| `invention-sail`                 | migration    | invention    |
+| `irish-potato-famine`            | revolution   | disasters    |
+| `jonestown-massacre`             | revolution   | disasters    |
+| `khwarezm-al-biruni`             | architecture | science      |
+| `khwarezm-center-learning`       | architecture | science      |
+| `kongo-portuguese-contact`       | migration    | diplomacy    |
+| `lindbergh-baby-kidnapping`      | revolution   | law          |
+| `live-aid`                       | disasters    | media        |
+| `louis-xiv-ballet`               | commerce     | art          |
+| `mahabharata-complete`           | architecture | writing      |
+| `military-academy-russia`        | commerce     | warfare      |
+| `ministry-jesus-begins`          | commerce     | figures      |
+| `mozart-dies`                    | revolution   | figures      |
+| `museum-alexandria-founded`      | commerce     | science      |
+| `nazca-pottery-style`            | architecture | art          |
+| `neanderthals-thrive-europe`     | agriculture  | nature       |
+| `nitroglycerin`                  | medicine     | science      |
+| `nylon-stockings-debut`          | media        | commerce     |
+| `oj-simpson-trial`               | revolution   | law          |
+| `olduvai-tools-found`            | architecture | science      |
+| `operation-chopper-vietnam`      | media        | warfare      |
+| `ottoman-standing-army`          | commerce     | warfare      |
+| `palmares-republic-zumbi`        | architecture | revolution   |
+| `plants-colonize-land`           | agriculture  | nature       |
+| `polynesian-star-compass`        | writing      | science      |
+| `pottery-wheel`                  | agriculture  | craft        |
+| `princess-diana-death`           | revolution   | disasters    |
+| `prussian-discipline-training`   | commerce     | warfare      |
+| `queen-victoria-dies`            | revolution   | figures      |
+| `red-army-formed`                | commerce     | warfare      |
+| `rite-of-spring`                 | revolution   | art          |
+| `roman-roads`                    | writing      | architecture |
+| `scots-reformation-movement`     | commerce     | revolution   |
+| `siege-leningrad-lifted`         | architecture | warfare      |
+| `sikh-khalsa-panth`              | commerce     | warfare      |
+| `soap-making-improvements`       | agriculture  | craft        |
+| `source-of-nile`                 | architecture | migration    |
+| `spanish-pieces-of-eight`        | writing      | commerce     |
+| `stalin-dies`                    | revolution   | figures      |
+| `stirrup-development`            | agriculture  | warfare      |
+| `submarine-first-practical`      | media        | invention    |
+| `thatcher-becomes-pm`            | revolution   | diplomacy    |
+| `tin-extraction`                 | agriculture  | craft        |
+| `trial-of-socrates`              | revolution   | law          |
+| `trinity-nuclear-test`           | media        | science      |
+| `tutankhamun-gold-sandals`       | architecture | craft        |
+| `us-supreme-court-first-session` | commerce     | law          |
+| `vasa-sinking`                   | revolution   | disasters    |
+| `vending-machine`                | writing      | invention    |
+| `white-ship-sinks`               | revolution   | disasters    |
+| `wilhelm-gustloff`               | revolution   | disasters    |
+| `womens-guilds`                  | art          | craft        |
+| `wren-st-pauls-cathedral`        | writing      | architecture |
+| `zeppelin-airship`               | media        | invention    |
+| `zinc-production`                | agriculture  | craft        |
 
-**One verdict was overturned in review.** `gupta-golden-age` came back from a reader with `year`
-moved to 335 and a window to 455, on the argument that the spread "resolves" to Samudragupta's
-accession. It does not, and that reader's own reason named the 320/335/375 spread while claiming
-to settle it. This is precisely the case the fifty-year rule exists for, and the anchor is the
-field that moves daily decks. The lesson is narrow and worth keeping: **a third sourced reading
-that picks one of the two earlier readings has not settled anything.** It has made it three.
+**Two follow-ups beyond the flagged rows**, both for consistency:
 
-**`bantu-expansion-africa` is the one where the earlier objection was itself the answer.** It was
-stuck because every proposed move went to the start of the whole expansion, c. 4000 BC, which the
-card's "carrying iron-working" claim does not support. But the iron has its own date: definitive
-archaeological evidence of Bantu iron use from c. 400 BC, running to the Limpopo by AD 500. The
-window is the card's claim, and it is -400..500. The reader who worked it kept the stored 100 as
-the start and sourced only the end, which is the forward-only mistake in miniature; it was
-rewritten on review.
+- **Deaths of people.** 42 death-of-a-person cards had been filed in `revolution`, `empires`,
+  `disasters` or `warfare`, so Shakespeare, Leonardo and Steve Jobs were all "revolution". They
+  are now all `figures`, which is where all 289 birth cards already were. Kept as they were:
+  - `jan-palach-death`: a protest act, so `revolution`
+  - three species extinctions (`last-*-dies`): `nature`
+  - `death-penalty-abolished-uk`: `law`
+- **Category oddities** from "Noted and deliberately left" below: six more cards moved.
 
-### Records the sources do not support
+### Won't fix (31)
 
-- `female-ruler-sargon` ("Enmersi of Kish", -2295) claims to be recorded on the Sumerian King
-  List. No ruler of that name or any close variant appears on it. Needs a factual review.
-- `rozwi-stone-fortifications`: the Rozwi are documented as having rarely built in stone and as
-  having occupied existing ruins, which contradicts the card's premise.
-- `damascus-steel-pattern` says pattern welding was "developed in Persia". Pattern welding is
-  attested in Europe by c. 1100 BCE; wootz originated in India and Sri Lanka and reached Persia
-  by trade. Neither tradition is Persian in origin.
-- `kowoj-maya-settlement` stored at 1000, but the Kowoj appear as a distinct group only after the
-  Mayapan collapse (post-1441).
-- `moldboard-plow-improvements` (1400) sits in a documented gap: general adoption was 8th-9th
-  century, the major design improvements 18th.
-- `enclosure-movement` stored 1500 matches no sourced phase of English enclosure.
-- `petra-treasury-carved` stored -100; sources place Al-Khazneh in the late 1st c. BCE to
-  early-mid 1st c. CE, commonly tied to Aretas IV.
-- `legalist-philosophy-qi`: Legalism is attested in Qin, not Qi.
-- `dahomey-rise-power` (1718): the description credits Agaja's predecessors, who reigned entirely
-  before the stored year.
-- `sikh-movement-begins` (1499) describes Guru Nanak's birth; his birth is 1469, and 1499 is the
-  start of his mission.
-- `kabuki-women-actors` conflates the 1629 ban on women with the 1652 ban on wakashu actors.
+Mostly slug-only mislabels. The slug is identity and is not player-visible, and any
+player-visible error on the same card was fixed above. The rest are cards with no fitting category.
 
-### Title and description disagree about scope
+| Slug                            | Why                                                                                                    |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| `andean-llama-domestication`    | Slug is identity; not player-visible.                                                                  |
+| `apollo-11-treaty`              | Slug is identity; not player-visible.                                                                  |
+| `arianism-controversy`          | Left in empires: figures is not plainly better for a church dispute and there is no religion category. |
+| `beguine-movement`              | No category change: religious movement with no fitting category.                                       |
+| `council-of-antioch`            | Left in empires: figures is not plainly better for a church dispute and there is no religion category. |
+| `domesday-style-record-keeping` | Slug is identity; not player-visible.                                                                  |
+| `donatist-controversy`          | Left in empires: figures is not plainly better for a church dispute and there is no religion category. |
+| `end-medieval-period-1500`      | Slug is identity; not player-visible.                                                                  |
+| `first-aqueduct`                | slug is identity; not player-visible                                                                   |
+| `first-illustrated-paper-book`  | slug is identity; not player-visible                                                                   |
+| `first-treaty`                  | slug is identity; not player-visible                                                                   |
+| `gold-rush-currency-clipper`    | slug is identity; not player-visible                                                                   |
+| `guanahani-settlement`          | slug is identity; not player-visible                                                                   |
+| `heidelberg-university`         | Left in commerce with the other university-founding cards; no fitting category.                        |
+| `hospital-of-st-lawrence`       | slug is identity; not player-visible                                                                   |
+| `hoysala-dynasty`               | Slug is identity; not player-visible.                                                                  |
+| `inca-tupac-amaru`              | Slug is identity; not player-visible, and the visible title, description and prose already agree.      |
+| `indian-rebellion-famine`       | Slug is identity; not player-visible.                                                                  |
+| `model-parliament-statutes`     | Slug is identity; not player-visible, and name, description and prose agree.                           |
+| `nestorian-schism`              | Left in empires: figures is not plainly better for a church dispute and there is no religion category. |
+| `port-royal-convent`            | No existing category fits a religious-movement card; figures would only be a weak fit.                 |
+| `quaker-founding`               | No existing category fits a religious-movement card; figures would only be a weak fit.                 |
+| `shimazu-sengoku`               | Slug is identity; not player-visible.                                                                  |
+| `siege-of-damascus-636`         | slug is identity; not player-visible                                                                   |
+| `song-blue-white-porcelain`     | Slug is identity; not player-visible.                                                                  |
+| `songhai-djinguereber-mosque`   | slug is identity; not player-visible                                                                   |
+| `stiletto-three-piece-suit`     | Slug is identity; not player-visible.                                                                  |
+| `tutankhamun-fossil-coelacanth` | Slug is identity; not player-visible.                                                                  |
+| `tuvalu-mausoleum-built`        | slug is identity; not player-visible                                                                   |
+| `vietnamese-nam-vu`             | Slug is identity; not player-visible.                                                                  |
+| `wang-xifeng-calligraphy`       | slug is identity; not player-visible                                                                   |
 
-`global-financial-crisis` (titled for the crisis, described as the Lehman collapse),
-`cambodian-genocide` ("Khmer Rouge Takes Power" against a genocide description),
-`polish-soviet-war` (titled for the war, described as the Battle of Warsaw),
-`inca-tupac-amaru` (slugged for Tupac Amaru, describing Pachacuti's Titicaca conquest),
-`second-french-empire` and `directory-period` (period titles, founding descriptions).
+### Dismissed on checking (90)
 
-### Duplicate and near-duplicate clusters
+Checked against a source and not an error, already fixed by an earlier pass, or distinct beats
+rather than duplicates. Recorded so they are not raised again.
 
-`timbuktu-university-development` / `timbuktu-university` / `songhai-university-timbuktu` ·
-`maya-classical-period` / `mayan-classic-period` / `maya-cities-peak` ·
-`heian-aesthetic-culture` / `heian-period-cultural-peak` / `heian-women-literature` ·
-`bantu-expansion` / `bantu-expansion-africa` / `iron-smelting-bantu-expansion` ·
-`kilwa-khilafa-sultanate` / `kilwa-sultanate` / `kilwa-gold-monopoly` ·
-`polynesian-navigation-technology` / `polynesian-double-canoe-design` / `polynesian-star-compass` ·
-`colosseum-architecture-ancient` / `vespasian-colosseum-begun` ·
-`dome-construction-mastery` / `florence-cathedral-dome` / `brunelleschi-dome` ·
-`gothic-cathedral-construction` / `chartres-cathedral-construction` ·
-`nan-madol-city-construction` / `nan-madol-basalt-engineering` ·
-`three-field-rotation` / `crop-rotation-system` · `water-mill` / `water-mill-europe` ·
-`nalanda-university` / `nalanda-university-science` ·
-`mayan-astronomical-calculations` / `mayan-astronomy` · `heavy-plow` / `heavy-plow-adoption` ·
-`terrace-farming-andes` / `inca-terrace-agriculture` ·
-`enclosure-movement` / `enclosure-movement-begins` · `kushana-empire` / `kushan-empire` ·
-`wari-empire-expansion` / `wari-empire` · `samarkand-library-school` / `samarkand-cultural-center` ·
-`benin-edo-kingdom` / `benin-bronze-casting-peak` · `majapahit-administrative-system` /
-`majapahit-expansion` · `kalidasa-drama` / `kalidasa-shakuntala` ·
-`cahokia-moundbuilder` / `mississippian-cahokia-settlement`.
-
-### Categories that look wrong
-
-`blood-bank-established` under `commerce`; `first-european-paper-mill` under `agriculture`;
-`eurotunnel-boring` under `media` beside two `architecture` siblings; `wilhelm-gustloff` and
-`munich-massacre` under `revolution`.
-
-### A schema limit, not an error
-
-A span inside one calendar year cannot be written, because `year_end` is an integer year and
-must exceed `year`. So the 1974 Bengal famine (Mar-Dec), the 1518 dancing plague (Jul-Sep), the
-1931 China floods (Jun-Oct), the 2003 European heat wave, Deepwater Horizon, Fukushima, the
-siege of Masada, the 1886 world chess championship and the 1871 Paris Commune all stay points
-correctly. Worth knowing before someone "fixes" them.
-
-### Rejected for want of a source: re-run, and cleared (2026-09-19)
-
-The sweep's WebSearch budget ran out partway through the cultural shard and a run of genuinely
-period-shaped cards was rejected because nothing could be checked. **All of them have now been
-re-reviewed against sources and the section is closed.**
-
-Of 58 cards, **28 took a window and 30 were re-rejected on the merits.** A rate that high is not
-a slipped bar: this cohort was pre-selected as period-shaped, so it is the one batch where a
-normal two-or-three-in-forty result would have meant something was wrong.
-
-Three corrections to the list this section used to carry, all worth knowing before trusting a
-slug in this file:
-
-- **Four of its 52 slugs did not exist.** `nazca-pottery` is `nazca-pottery-style`,
-  `goguryeo-tomb-murals` is `goguryeo-murals-tombs`, `umayyad-mosaic-art` is
-  `umayyad-mosaics-art`, `islamic-calligraphy` is `islamic-calligraphy-tradition`. A slug written
-  from memory into a prose list is not checked by anything.
-- **`moche-civilization` was already done**, carrying a 300-600 window before the re-run started.
-- **Seven were missing from the list**, found by grepping the ledger for the wording its own
-  notes used ("not sourced this pass", "no verification available this session") rather than
-  trusting the prose: `anglo-saxon-manuscript-art`, `copan-ruler-18-rabbit`,
-  `irish-monastery-art`, `japanese-calligraphy-art`, `java-temple-sculpture`,
-  `moche-civilization-peru`, `phoenician-alphabet`. **The ledger is the index, not this file.**
-
-Deliberately **not** re-opened: the ~300 other ledger notes reading "no sourced bounds". They
-look similar and are not the same thing — an ongoing practice or a generic invention description
-with no sourceable ends is a correct Test D rejection, and re-opening them would re-litigate the
-sweep rather than repair it.
-
-### Raised by the re-run (2026-09-19)
-
-Reading these 67 records against sources turned up more that a window cannot fix.
-
-**Stored years that are stand-ins with nothing behind them**, found while rejecting the card:
-`baroque-period-peak` (1600), `champa-hindu-culture` (1100), `anglo-saxon-manuscript-art` (700),
-`goryeo-dynasty`, `haida-totem-poles`, `kuba-royal-masks`. Each is a "peak" or "tradition" card
-whose year no source supports and whose ends no source fixes, so the rejection is right and the
-year is still wrong.
-
-**Records the sources contradict:**
-
-- `kingdom-kush-flourishes` is stored -1500, which belongs to the **Kerma** culture. The Kingdom
-  of Kush proper is conventionally c. 780 BCE to 350 CE, and Kushite independence is c. 1070 BCE.
-  The card's year and its named subject are about different polities.
-- `king-david-rules` asserts a united monarchy ruled from Jerusalem that the record presents as
-  disputed in both date and extent.
-- `poverty-point-earthworks` understates its own subject: sourced construction begins c. 1800
-  BCE against a stored -1500. Left alone only because the anchor was ruled out of scope.
-- `yoruba-ife-kingdom` was stored at 1100, a full century before any sourced sculpture. Fixed
-  here by the move to 1200, but the stored value was wrong independently of any window.
-
-**Title, slug or category against content:**
-
-- `chavin-culture` is titled "Chavin Culture Peak" and its description covers the culture's whole
-  pan-Andean influence. No source identifies a distinct peak, so the window is the culture's full
-  -900..-250. The title is the part that is wrong.
-- `hoysala-dynasty` is slugged and filed (`diplomatic.json`) as a dynasty while its
-  `friendly_name`, description and category are all temple architecture.
-- `nazca-pottery-style` is categorised `architecture` and is entirely about pottery.
-- `vietnamese-nam-vu` looks like a typo for Nam tien.
-- `goryeo-dynasty` is titled "Goryeo Dynasty Peak", which names no datable event at all.
-
-**More near-duplicate clusters**, to add to the list below: `moche-civilization` (300-600) /
-`moche-civilization-peru` (100-800), the second being the culture and the first its peak, which
-is coherent but leaves two cards for one subject · `goryeo-dynasty` / `goryeo-celadon-pottery`,
-both resting on celadon · `kuba-kingdom` / `kuba-royal-masks` · `tokugawa-edo-period-culture`
-(1603-1868) / `ukiyo-e-art-development` (1670-1868), sharing an end date and most of a span.
-
-**A good rejection worth recording as calibration:** `igbo-ukwu-bronzes` was re-rejected because
-its 9th-century radiocarbon date is a point with an error bar, not a span of activity. That is
-Test C doing its job on a card whose earlier rejection note had said only that the dating was
-"disputed".
-
-## Player-visible `description` and `friendly_name` errors
-
-Not year problems. Every one of these is text a player reads **before** placing the card, so an
-edit has to stay date-free and clear `eventDateClues.test.ts`.
-
-**Plainly wrong, name or fact:**
-
-| Slug                                                   | The problem                                                                                                                                                                                            | Source               |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| `ottoman-siege-galata`                                 | `friendly_name` says "Ottoman Siege of Galata"; its own `description` correctly describes Murad II besieging **Constantinople** in 1422. The description is right, the name is wrong                   | `e092492`            |
-| `female-ruler-sargon`                                  | Names the woman ruling Kish "Enmersi" in both name and description. No source supports it; the figure matching every other detail (innkeeper, third dynasty of Kish, hundred-year reign) is **Kubaba** | `0243f2b`            |
-| `boni-kingdom`                                         | Named "Boni Kingdom Southern Philippines". Boni / Po-ni is what Chinese sources called a state in **Borneo**; the name redirects to the history of Brunei. Wrong region in both fields                 | `aa9961b`            |
-| `mali-maritime-expansion`                              | Names "Abu Bakr II", a 19th-century mistranslation of Ibn Khaldun; no such ruler                                                                                                                       | `4d56cef`            |
-| `cyrillic-alphabet-created`                            | Credits Cyril and Methodius at 863. They devised **Glagolitic**; Cyrillic was built afterwards by their students at Preslav                                                                            | `2e9f546`            |
-| `pottery-invented`                                     | Says the earliest ceramics were Japanese. **Xianren Cave** in China is several thousand years older                                                                                                    | `2e9f546`            |
-| `battle-of-wei-qiao`                                   | Names and describes as a battle what the record has as the **Mayi ambush** of 133 BCE, a deception called off before any fighting                                                                      | `e092492`            |
-| `code-of-lipit-ishtar`                                 | Calls a Sumerian code Akkadian                                                                                                                                                                         | `HANDOFF.md`         |
-| `first-thomas-cup-1949`                                | Says Malaysia won; Malaysia did not exist until 1963. It was **Malaya**                                                                                                                                | `6e04b48`            |
-| `owens-six-records-ann-arbor-1935`                     | Says five records and a tie; the sourced breakdown is **four** and a tie                                                                                                                               | `6e04b48`            |
-| `school-lunch-program`                                 | Credits Sweden with pioneering school lunches in 1894. The record has means-tested meals into the 1930s, national subsidies from 1946, universal entitlement 1973                                      | `e35e0a6`            |
-| `swahili-mombasa-rise` **and** `mombasa-coastal-power` | Both have Mombasa "rivaling Kilwa"; it was **part of** the Kilwa Sultanate until 1513. Two cards, same wrong relationship                                                                              | `27f6be5`, `e1bd4cc` |
-| `aksumite-decline`                                     | Gives Islamic expansion as the cause; the record has several pressures, some predating Islam                                                                                                           | `aa9961b`            |
-| `srivijaya-decline`                                    | Has Majapahit and Malacca succeeding directly; the Melayu kingdom at Jambi came between                                                                                                                | `0ace74e`            |
-| `lunda-expansion-network`                              | Names copper, salt and slaves where the record documents tribute and an arms trade                                                                                                                     | `0ace74e`            |
-| `lahaina-fire`                                         | Says 97 dead against the DNA-corrected **102**                                                                                                                                                         | `66efc07`            |
-| `australia-bushfires`                                  | Says one billion animals against the later WWF-commissioned estimate near **three billion**                                                                                                            | `66efc07`            |
-| `lightning-rod`                                        | Says Franklin invented the rod _after_ the kite experiment. He conceived it in 1749; the kite is 1752                                                                                                  | `5e33234`            |
-| `lab-grown-burger`                                     | Says Mark Post "publicly tasted" it. He created it at Maastricht; it was cooked by Richard McGeown and tasted by Hanni Rützler and Josh Schonwald                                                      | `2b5c48c`            |
-| `pneumatic-tire`                                       | Says Dunlop's tyre was for his son's **bicycle**; it was a tricycle                                                                                                                                    | `a29b670`            |
-
-**Medicine — eight descriptions, one shard** (`ba53bc9`). Priority disputes and tidy origin
-stories the record does not carry:
-
-- `diphtheria-antitoxin-developed` credits Behring alone; the 1890 work was joint with Shibasaburo Kitasato.
-- `chloroform-eases-childbirth` implies Simpson attended Victoria; it was **John Snow**.
-- `blood-groups-transfusion-safe` dates the grouping 1907; Landsteiner grouped blood in **1901**, and 1907 is Ottenberg's first matched transfusion.
-- `streptomycin-cures-tb` omits Schatz, who did the isolation and won legal recognition as co-discoverer.
-- `pinel-reforms-asylums` has Pinel striking off the chains; the record credits attendant Jean-Baptiste Pussin, with Pinel adopting and publicising it.
-- `trotula-women-medicine` has one female author; it is three texts, probably different authors, two likely male.
-- `human-genome-completed` — the 2003 sequence still had gaps; a gapless genome came only in 2022.
-- `first-liver-transplant` and `first-lung-transplant` are framed as pioneering successes; both patients died within weeks.
-
-**Overstated or conflated, weaker cases** (`08a6d11`, `fa2da19`, `f049c97`, `0243f2b`, `27f6be5`,
-`e95d4e3`, `4d56cef`, `bdd6d66`, `1ef3bc2`, `66efc07`, `115698f`):
-`edict-milan` ("legalized Christianity"; it granted toleration, Theodosius I made it the state
-religion in 380) · `treaty-wedmore` (Wedmore covered baptism and Guthrum's withdrawal; the Danelaw
-boundary is the later Treaty of Alfred and Guthrum) · `china-un-seat` (Resolution 2758 concerned
-the General Assembly seat; the Security Council seat transferred with it) ·
-`visigothic-spain-establishment` (the 418 grant was Aquitaine only; Iberia came later by conquest) ·
-`treaty-of-aachen` (frames 812 as one clean recognition; it withheld "emperor of the Romans") ·
-`swahili-city-states` (implies significant slave trading at a date the record puts mostly after the
-18th century) · `docks` (-2556; the Lothal dock reading is contested, Wadi al-Jarf is older, and the
-card's year matches Wadi al-Jarf rather than the Lothal it names) · `copper-pipes` ("water over long
-distances"; the Sahure temple pipe at Abusir is a waste pipe — the year is right) ·
-`song-color-printing` ("separate woodblocks for each colour" is douban, a Ming technique) ·
-`first-greenhouse` ("Italian monks"; the literature has Roman specularia and a 15th-century Korean
-heated greenhouse) · `terrace-farming-andes` / `inca-terrace-agriculture` · `first-thermometer`
-(credits Galileo) · `sulfuric-acid-production` (credits German alchemists) ·
-`glass-composition-improvements` (dates cristallo to 1600) · `tokugawa-rice-standardization`
-(credits the Tokugawa) · `turbine-wheel-concept` (places Segner's reaction wheel in France; it was
-Göttingen) · `rubber-cultivation-begins` (calls Wickham's seed export smuggled; no Brazilian law
-banned it and the theft narrative is largely mythologised) · `pliocene-epoch-begins` (says the
-Pliocene is when hominins appeared; Sahelanthropus and Orrorin are late Miocene) ·
-`first-birds-archaeopteryx` (implies Archaeopteryx is the first bird) · `recurved-bow-design`
-(credits Central Asian nomads; evidence points to Bronze Age Anatolia or Mesopotamia) ·
-`domestication-llama-alpaca` (implies one event; different wild ancestors in different ecozones) ·
-`virchow-cellular-pathology` (_omnis cellula e cellula_ is Raspail's phrase) · `candle-invented`
-(implies an Egyptian origin the object record does not support) · `english-pound-sterling-origin`
-("Pound Sterling Standardized" at 1158 overstates; the Tealby reform fixed the standard but the term
-predates it) · the contested-toll set in `disasters`, where the description repeats a familiar round
-number the prose now separates and attributes: `syria-earthquake-medieval`, `shaanxi-earthquake`,
-`banqiao-dam`, `aleppo-earthquake`, `ashgabat-earthquake`.
-
-## Duplicate cards
-
-Same event carried twice or more (`e1bd4cc`, `0ace74e`):
-
-- `medici-banking` / `medici-banking-innovations` — both Giovanni di Bicci founding the bank in Florence, 1397
-- `tokugawa-sakoku-isolation` / `sakoku-edicts-isolation`
-- `lunda-expansion-network` / `lunda-empire-formation`
-- `oyo-empire-expansion` / `yoruba-oyo-confederation`
-- `buganda-kingdom` / `buganda-kabaka-succession` / `buganda-kabaka-system`
-
-Removals go to `deprecated.json` rather than being deleted — see [../dedup/index.md](../dedup/index.md).
-
-## Slug-only mislabels
-
-**Not player-visible.** `friendly_name` and `description` are correct in every one; only the slug
-describes a different event. The slug is the key in the detail shards, `dailyRecency` and the
-curated theme lists, so renaming one is a wider change than it looks (`115698f`).
-
-| Slug                          | Actually                                                                                |
-| ----------------------------- | --------------------------------------------------------------------------------------- |
-| `gold-rush-currency-clipper`  | "Comstock Lode Silver Strike", 1859, Nevada silver — the original of this class         |
-| `tuvalu-mausoleum-built`      | The Gur-e-Amir in Samarkand                                                             |
-| `songhai-djinguereber-mosque` | A Mali-empire event, built under Mansa Musa in 1327; Songhai took Timbuktu only in 1468 |
-| `siege-of-damascus-636`       | Correctly stored at 634, the year the city fell                                         |
-| `wang-xifeng-calligraphy`     | Wang Xizhi                                                                              |
-| `hospital-of-st-lawrence`     | Santo Spirito                                                                           |
-| `zhouyuan-sogdian-outpost`    | Unsupported entirely — see the wrong-year table                                         |
+| Slug                                     | Flag                                                                                      | Why dismissed                                                                                                                                                       |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `african-agricultural-innovation-millet` | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries -2500..-2000.                                                                                       |
+| `andean-llama-domestication`             | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 1200-1532.                                                                                          |
+| `benin-bronze-casting-peak`              | Near-duplicate of benin-edo-kingdom                                                       | Kept as the surviving card; its twin benin-edo-kingdom is retired.                                                                                                  |
+| `blast-furnace-invented`                 | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries -400..100.                                                                                          |
+| `blood-groups-transfusion-safe`          | Dates grouping 1907; Landsteiner grouped blood in 1901                                    | Card is about matched transfusion, which is 1907 (Ottenberg); the 1901 grouping is stated in the prose.                                                             |
+| `brunelleschi-dome`                      | Duplicate/near-duplicate cluster listed in backlog                                        | Distinct beat: completion of the dome, separate from its start.                                                                                                     |
+| `buganda-kabaka-succession`              | Buganda kingdom / succession / kabaka-system flagged as duplicates                        | Three distinct beats (conquest and expansion, heir-selection rules, origins of the kabaka system), not one event.                                                   |
+| `buganda-kabaka-system`                  | Buganda kingdom / succession / kabaka-system flagged as duplicates                        | Three distinct beats (conquest and expansion, heir-selection rules, origins of the kabaka system), not one event.                                                   |
+| `buganda-kingdom`                        | Buganda kingdom / succession / kabaka-system flagged as duplicates                        | Three distinct beats (conquest and expansion, heir-selection rules, origins of the kabaka system), not one event.                                                   |
+| `bullroarer`                             | Stored -22000 looks too old; no defensible upper bound                                    | Left as is: sources for the oldest Mezin bullroarers conflict (17,000 BC, 18,000 BCE, 17,000 years ago) and none give a sourceable bound, per the ledger precedent. |
+| `cataract-surgery-ancient`               | Sibling of rhinoplasty: date -3000 conflict, this card correct at -600                    | No change: the card is not the flagged one and the backlog says its -600 is already fine.                                                                           |
+| `compass-invention-china`                | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 1040-1117.                                                                                          |
+| `directory-period`                       | Period title against a founding description                                               | The title already reads 'Established' and the description says the Directory took power, so the card is clearly the founding.                                       |
+| `domestication-horses`                   | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries -3500..-2000.                                                                                       |
+| `domestication-llama-alpaca`             | Description implies one domestication event                                               | Description says llamas and alpacas plural with no single-origin claim; the prose carries the separate guanaco and vicuna ancestry.                                 |
+| `elevator-invented`                      | 1852 vs Otis's public demonstration in 1853-54                                            | The card is about the invention of the brake, dated 1852 by common accounts; the public demonstration is a later beat the prose already states.                     |
+| `enclosure-movement`                     | enclosure-movement and enclosure-movement-begins near-duplicate                           | Distinct beats once separated: enclosure-movement-begins is the Tudor sheep-enclosure phase (1489 tillage act), while this card now names the parliamentary phase.  |
+| `enclosure-movement-begins`              | Duplicate cluster enclosure-movement / enclosure-movement-begins                          | Distinct beats: late fifteenth century sheep enclosure and the 1489 Tillage Act versus the long process ending in parliamentary acts.                               |
+| `establishment-zhou-dynasty`             | Duplicate of zhou-dynasty-begins; this is the keeper                                      | Kept as the surviving card of the pair; no change needed.                                                                                                           |
+| `fire-mastery`                           | Window starts -1790000 vs earliest accepted controlled fire around 790,000 years ago      | The 1.79 million year start matches 2026 Wonderwerk Cave burned-bone findings, and the window runs to Barnham's fire-making evidence around 400,000 years ago.      |
+| `first-twenty20-match-2003`              | Venue of first Twenty20 match uncertain (Rose Bowl vs Hove)                               | Card and prose match the standard record; no change.                                                                                                                |
+| `florence-cathedral-dome`                | Duplicate/near-duplicate cluster listed in backlog                                        | Distinct beat from the completion card: the start of the dome (1418-1420) versus its closing in 1436.                                                               |
+| `glass-composition-improvements`         | Dates cristallo to 1600 when invented c.1450                                              | Description states no date; 1600 is a round placement for ongoing Murano refinement and the prose gives the 1450 Barovier origin.                                   |
+| `global-financial-crisis`                | Title names the crisis, description names the Lehman collapse                             | The description names the crisis's defining trigger and 2008 is its peak year, so title and description agree well enough.                                          |
+| `goryeo-celadon-pottery`                 | Near-duplicate of goryeo-dynasty, both resting on celadon                                 | Distinct beats: the dynasty versus the celadon craft and its sanggam inlay.                                                                                         |
+| `goryeo-dynasty`                         | Near-duplicate of goryeo-celadon-pottery, both resting on celadon                         | Distinct beats: Munjong-era prosperity versus the celadon golden age; the text rewrite removes the celadon overlap.                                                 |
+| `goryeo-printing-woodblocks`             | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 1011-1251.                                                                                          |
+| `great-dam-of-marib`                     | Window covers Sabaean stonework only; full history 1750 BCE to 325 CE                     | The card claims the Sabaean earthen dam, so the window is right; the Himyarite rebuild is a later beat.                                                             |
+| `heavy-plow`                             | Duplicate cluster heavy-plow / heavy-plow-adoption                                        | Distinct beats: first post-Roman spread of the heavy plough versus the later adoption window; heavy-plow-adoption is another packet's card.                         |
+| `heavy-plow-adoption`                    | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 1000-1300.                                                                                          |
+| `heavy-plow-adoption`                    | Duplicate cluster heavy-plow / heavy-plow-adoption                                        | Distinct beats: heavy-plow is the first post-Roman spread (c.500), heavy-plow-adoption the c.1000 breakthrough.                                                     |
+| `heian-aesthetic-culture`                | Heian culture cards cluster                                                               | Distinct beats: this card is about the mono no aware aesthetic ideal.                                                                                               |
+| `heian-period-cultural-peak`             | Heian culture cards cluster                                                               | Distinct beats: this card is about the period-wide cultural zenith.                                                                                                 |
+| `heian-women-literature`                 | Heian culture cards cluster                                                               | Distinct beats: this card is about women writing in kana.                                                                                                           |
+| `helicopter-modern`                      | 1939 tethered hop vs free flight in 1940                                                  | The VS-300's first flight was 14 September 1939 and the ledger records this as a single first flight; the untethered flight is stated in the prose.                 |
+| `horse-collar-technology`                | Round year 800 outside evidence window (padded collar attested after c. 1000)             | Already resolved: the card now carries a window (800-1200 and 477-1200) that spans the evidence.                                                                    |
+| `horse-plough-agriculture`               | Round year 800 outside evidence window (padded collar attested after c. 1000)             | Already resolved: the card now carries a window (800-1200 and 477-1200) that spans the evidence.                                                                    |
+| `igbo-ukwu-bronzes`                      | Calibration note on 9th-century radiocarbon date rejection                                | Not an error; the rejection is correct calibration and the card stays a point.                                                                                      |
+| `inca-civil-war-dispute`                 | inca-conflict-spanish named Inca Civil War but is Cajamarca capture; repeats sibling name | Correctly titled for the Huascar-Atahualpa war; the naming clash is resolved by renaming the sibling.                                                               |
+| `inca-terrace-agriculture`               | Overstated or conflated (Inca credited with terracing)                                    | Moot because the card is retired as a duplicate; its prose already says terracing predates the state.                                                               |
+| `kalidasa-shakuntala`                    | Near-duplicate of kalidasa-drama                                                          | Kept as the surviving card; its twin kalidasa-drama is retired.                                                                                                     |
+| `kilwa-gold-monopoly`                    | Duplicate/near-duplicate cluster listed in backlog                                        | Distinct beat: control of the Sofala gold trade, a trade mechanism rather than the sultanate as a state.                                                            |
+| `kuba-kingdom`                           | Near-duplicate of kuba-royal-masks                                                        | Distinct beats: the state's founding and governance versus the royal mask art tradition.                                                                            |
+| `kuba-royal-masks`                       | Stand-in year 1600 for Kuba royal mask tradition                                          | No source dates the origin of the royal mask tradition, so any new year would be another stand-in.                                                                  |
+| `kuba-royal-masks`                       | Near-duplicate of kuba-kingdom                                                            | Distinct beats: the kingdom's unification and governance versus its royal mask art.                                                                                 |
+| `kushana-empire`                         | Near-duplicate of kushan-empire                                                           | Kept as the surviving card; its twin kushan-empire is retired.                                                                                                      |
+| `laker-nineteen-wickets-1956`            | Prose says Laker's 46 wickets remain an England record vs Australia                       | Claim holds; no change.                                                                                                                                             |
+| `legalist-philosophy-qi`                 | Legalism attested in Qin, not Qi                                                          | Card stands: Legalist thinkers were active in Qi and its prose already notes Qin is better documented.                                                              |
+| `lilienthal-glider`                      | 1894 vs first glides in 1891                                                              | The card is the standard glider (Normal-Segelapparat), which dates from 1894, not Lilienthal's first glides.                                                        |
+| `majapahit-expansion`                    | Near-duplicate of majapahit-administrative-system                                         | Kept as the surviving card; its twin majapahit-administrative-system is retired.                                                                                    |
+| `maya-cities-peak`                       | Maya cities peak vs Classic period cluster                                                | Distinct beat: peak city populations c. 750 before the collapse, not the whole Classic period.                                                                      |
+| `maya-classical-period`                  | Maya Classic period duplicate cluster                                                     | Kept as the surviving card of the pair.                                                                                                                             |
+| `mayan-astronomy`                        | Duplicate cluster mayan-astronomical-calculations / mayan-astronomy                       | Kept twin of a retired duplicate; no change to this card.                                                                                                           |
+| `mesoamerican-ballgame-rise`             | Year -1400 but prose dates oldest rubber balls to about 1600 BCE                          | The -1400 year matches the earliest ballcourt, and the 1600 BCE balls are only possibly ballgame equipment.                                                         |
+| `mississippian-cahokia-settlement`       | Near-duplicate of cahokia-moundbuilder                                                    | Kept as the surviving card; its twin cahokia-moundbuilder is retired.                                                                                               |
+| `moche-civilization-peru`                | Near-duplicate of moche-civilization                                                      | Kept as the surviving card; its duplicate moche-civilization is retired.                                                                                            |
+| `munich-massacre`                        | Filed under revolution                                                                    | Revolution is the catalogue's consistent bucket for political massacres and assassinations; disasters is not plainly better.                                        |
+| `nalanda-university`                     | Duplicate cluster nalanda-university / nalanda-university-science                         | Kept twin of a retired duplicate; no change to this card.                                                                                                           |
+| `nan-madol-city-construction`            | Duplicate cluster nan-madol pair                                                          | Kept twin of a retired duplicate; no change to this card.                                                                                                           |
+| `oldest-wooden-hunting-spears`           | Year corrected to -200000 after 2025 Schoningen re-dating                                 | Already corrected before commit; no further change needed.                                                                                                          |
+| `open-field-system-abandonment`          | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 1400-1600.                                                                                          |
+| `oyo-empire-expansion`                   | Duplicate of yoruba-oyo-confederation                                                     | Distinct beats: cavalry-led expansion versus the alaafin tribute system.                                                                                            |
+| `polynesian-double-canoe-design`         | Near-duplicate of navigation and star-compass cards; year 600 vs Lapita origin            | Distinct beat from the navigation and star-compass cards (vessel, not wayfinding), and no sourced bounds exist for the design's origin, so the year stays.          |
+| `sakoku-edicts-isolation`                | Duplicate of tokugawa-sakoku-isolation                                                    | Distinct beats: the 1639 final edict expelling the Portuguese, not the opening measure.                                                                             |
+| `samarkand-cultural-center`              | Near-duplicate of samarkand-library-school                                                | Kept as the surviving card; its twin samarkand-library-school is retired.                                                                                           |
+| `scissors-invented`                      | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries -1500..100.                                                                                         |
+| `second-french-empire`                   | Period title against a founding description                                               | The card is the founding moment (1852 proclamation); the description says 'establishing' and the prose narrates the proclamation.                                   |
+| `song-sternpost-rudder`                  | 1150 vs Han origin of the sternpost rudder                                                | The card claims the Song refinement, not the origin, so a Song-era year is right and the Han origin is covered in the prose.                                        |
+| `song-triple-harvest`                    | Round year outside evidence window (technology group)                                     | Year 1012 is not round-guess: it is the documented date Zhenzong distributed Champa rice, so it stays a moment.                                                     |
+| `spear-thrower-atlatl`                   | BP/BCE conflation: Mungo Man 42,000 BP stored as -42000                                   | Left as is: the card already carries a -42000..-15500 window, and a 2,000-year offset is noise at Palaeolithic scale.                                               |
+| `susruta-samhita`                        | Sibling of rhinoplasty: date -3000 conflict, this card correct at -600                    | Kept live as the survivor of the rhinoplasty retirement; its -600 is already accepted in the backlog.                                                               |
+| `terrace-farming-andes`                  | Duplicate cluster terrace-farming-andes / inca-terrace-agriculture                        | Kept twin of the retired inca-terrace-agriculture; no change to this card.                                                                                          |
+| `terrace-farming-andes`                  | Overstated or conflated (Inca credited with terracing)                                    | Description says the Inca expanded terracing, which is accurate; it does not claim they invented it.                                                                |
+| `three-field-rotation`                   | Duplicate cluster three-field-rotation / crop-rotation-system                             | Kept twin of a retired duplicate; no change to this card.                                                                                                           |
+| `timbuktu-university`                    | Timbuktu/Sankore triplicate cluster                                                       | Kept as the surviving card of the cluster.                                                                                                                          |
+| `toba-supereruption`                     | BP/BCE conflation: 74,000 years ago stored as -74000                                      | Left at -74000: about 2,000 years of offset is noise at 74,000-year scale, and the skill says to follow the card's convention.                                      |
+| `tokugawa-edo-period-culture`            | Overlaps ukiyo-e-art-development, sharing end date and most of span                       | Distinct: the period's whole urban culture versus one printmaking genre.                                                                                            |
+| `tokugawa-sakoku-isolation`              | Duplicate of sakoku-edicts-isolation                                                      | Distinct beats: first edict versus final edict; both stay.                                                                                                          |
+| `trebuchet-invented`                     | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 1097-1187.                                                                                          |
+| `trotula-women-medicine`                 | Implies one female author; it is three texts                                              | Description already says 'texts attributed to Trotula', which claims neither one text nor one author.                                                               |
+| `ukiyo-e-art-development`                | Overlaps tokugawa-edo-period-culture, sharing end date and most of span                   | Distinct: one printmaking genre versus the period's whole urban culture.                                                                                            |
+| `university-paris-founding`              | dom-university-paris prose says papal charter 1200, contradicting Philip II royal charter | Its prose (Philip II charter 1200, Courcon statutes 1215) is correct; the error was in the sibling and is fixed there.                                              |
+| `virchow-cellular-pathology`             | Latin phrase omnis cellula e cellula is Raspail's                                         | The description never attributes the phrase and the prose already credits Raspail.                                                                                  |
+| `wari-empire-expansion`                  | Near-duplicate of wari-empire                                                             | Distinct beats: expansion from about 700 versus peak, with non-overlapping windows.                                                                                 |
+| `water-mill`                             | Duplicate cluster water-mill / water-mill-europe                                          | Kept twin of a retired duplicate; no change to this card.                                                                                                           |
+| `water-power-industrial`                 | Round year outside evidence window (technology group)                                     | Already corrected by the evidence-window pass: card now carries 900-1384.                                                                                           |
+| `woolly-mammoth-extinction`              | BP/BCE conflation: stored -4000 for Wrangel ending c. 2000 BCE                            | Already corrected: the card stores -3700..-1950 (St Paul Island to Wrangel Island), as the backlog itself notes.                                                    |
+| `yellowstone-supervolcano`               | Lava Creek Tuff redated 640 vs 631 ka, unverified                                         | Kept as a single point: the 9 ka difference is within method-to-method scatter and the eruption is one near-instant event.                                          |
+| `yoruba-ife-kingdom`                     | Stored 1100 was a century before sourced sculpture                                        | Already corrected: the card now carries a 1200-1400 window.                                                                                                         |
+| `yoruba-oyo-confederation`               | Duplicate of oyo-empire-expansion                                                         | Distinct beats: political tribute structure, not military expansion.                                                                                                |
 
 ## Noted and deliberately left
 
 - **`god-emperor-golden-throne`** is Warhammer 40,000 lore dated to year 30000, `very-hard`, in an
   otherwise historical catalogue. Almost certainly a deliberate easter egg; its prose reports the
   fiction plainly rather than carrying a disclaimer about the data (`545580d`).
-- **Category oddities**, weak evidence given the June 2026 re-clustering, and not this work's to
-  re-tag: `gunpowder-europe` in `agriculture`; `dresden-bombing` and `east-german-uprising` in
-  `revolution`; `zoroaster-teaches`, `buddha-enlightenment`, `black-lives-matter-founded`,
-  `israel-founded` and `first-un-general-assembly` in `commerce`; `berlin-airlift` in `revolution`.
+- **Category oddities.** Resolved 2026-10-01 wherever an existing category plainly fits:
+  - `gunpowder-europe` and `dresden-bombing` are now `warfare`.
+  - `berlin-airlift`, `israel-founded` and `first-un-general-assembly` are now `diplomacy`.
+  - `black-lives-matter-founded` is now `revolution`, where the catalogue files movements and
+    upheavals.
+  - `east-german-uprising` stays in `revolution`, which fits it.
+  - `zoroaster-teaches` and `buddha-enlightenment` stay in `commerce`: there is no religion
+    category, and adding one is a taxonomy change (challenge-code bits, daily rotation), not a fix.

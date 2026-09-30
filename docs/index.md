@@ -1,6 +1,6 @@
 # Docs Index
 
-Reference docs for the "When" timeline game. Seventeen files, all maintained as **current** —
+Reference docs for the "When" timeline game. Eighteen files, all maintained as **current** —
 if one contradicts the code, the doc is wrong and should be fixed.
 
 These are digests, not a change log. They hold decisions and their rationale, rejected
@@ -40,9 +40,9 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
   push to full image coverage. Its
-  [catalogue-error-backlog.md](events-images/catalogue-error-backlog.md) is the standing list of
-  event records the sources do not support — wrong years, wrong names, duplicate cards — found by
-  reading all 5,460 against a source while writing the detail prose
+  [catalogue-error-backlog.md](events-images/catalogue-error-backlog.md) records every event
+  found not to match its sources (wrong years, wrong names, duplicate cards) and how each was
+  resolved: all of it fixed, retired, dismissed or closed as won't-fix by 2026-10-01
 - [event-detail/](event-detail/index.md) — the "read more" info button and the long-form prose
   behind it: why the prose replaces the description in place, why the button is
   unreachable before placement (and why that lets the prose state dates), the lazy sidecar
@@ -50,6 +50,12 @@ original per-session write-ups if you need the blow-by-blow.
   Its [writing-spec.md](event-detail/writing-spec.md) holds the voice rules — the length band
   as numbers, the register carve-out for atrocities, the `wikipedia_url` accuracy trap, and the
   banned machine tells (no em dashes) that `scripts/events/detail-spec.js` enforces
+- [regions/](regions/index.md) — region tags (where an event happened, on today's map): why
+  tags are readable names rather than codes, why Global sits beside focal places instead of
+  excluding them, the eleven macro-regions and the transcontinental rule, the map-then-apply
+  pipeline, the Custom filter and its optional 7th challenge-code word, and how the 5,874-card
+  sweep ran. Its [tagging-spec.md](regions/tagging-spec.md) holds the tagging rules and the
+  61-event gold set
 - [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
   the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
   measured symptoms, and a sequenced fix list
@@ -57,7 +63,12 @@ original per-session write-ups if you need the blow-by-blow.
   one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), Custom settings, and
   the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
-  ship instantly), safe-area utilities, daily reminders
+  ship instantly), safe-area utilities, daily reminders, and how the icon, splash and App Store
+  screenshots are generated
+- [app-icon/gemini-icon-prompts.md](app-icon/gemini-icon-prompts.md) — the app icon is
+  generated in Gemini in the card-art oil-painting style, not hand-drawn as vector art (four
+  rounds of vector concepts were rejected); the prompts, tuned to still read at 60 px. The
+  hourglass (prompt 1) is the icon
 - [release-notes.md](release-notes.md) — the hand-written history behind the update popup and
   the What's New page: why it is separate from the generated `CHANGELOG.md`, the version+date
   sync contract and its `documentedFrom` floor, and the two points where a missing note aborts
