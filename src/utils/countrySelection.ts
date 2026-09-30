@@ -105,6 +105,33 @@ export function selectWholeRegion(selection: RegionSelection, region: string): R
   return { regions, excluded: selection.excluded.filter((key) => !key.startsWith(prefix)) };
 }
 
+/**
+ * Set exactly which of a region's countries are on: a double-tap's isolate or restore. Every
+ * listed country on is the whole region; none turns the region off; otherwise the region is
+ * selected with every other country of it in the taxonomy switched off, like `toggleCountry`'s
+ * "only this one".
+ */
+export function setRegionCountries(
+  selection: RegionSelection,
+  region: string,
+  on: readonly string[],
+  listed: readonly string[]
+): RegionSelection {
+  if (listed.every((c) => on.includes(c))) return selectWholeRegion(selection, region);
+  const prefix = `${region}${SEPARATOR}`;
+  const others = selection.excluded.filter((key) => !key.startsWith(prefix));
+  if (on.length === 0) {
+    return { regions: selection.regions.filter((r) => r !== region), excluded: others };
+  }
+  const regions = selection.regions.includes(region)
+    ? selection.regions
+    : [...selection.regions, region];
+  const off = countriesInRegion(region)
+    .filter((c) => !on.includes(c))
+    .map((c) => pairKey(region, c));
+  return { regions, excluded: [...others, ...off] };
+}
+
 /** Tap a region chip, like a tri-state checkbox: off → full, full → off, partial → full. */
 export function toggleRegion(selection: RegionSelection, region: string): RegionSelection {
   if (regionStatus(region, selection) === 'full') {

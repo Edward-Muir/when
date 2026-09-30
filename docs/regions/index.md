@@ -144,15 +144,21 @@ work like the other groups. That is the model below.
   a light blue with the selected border, `aria-pressed="mixed"`) when some of its countries are
   off. Tapping works like a tri-state checkbox: off → whole, whole → off, partial → whole.
   Deselecting a region switches all its countries off; selecting it switches them all back on.
-- **A country chip toggles.** Switching off a region's last listed country turns the region off,
+- **Country chips tap like every other filter pill** (`usePillTap`, shared with
+  `FilterControls`), with each region its own group. A tap toggles; a double-tap leaves only that
+  country on in its region, and a double-tap on a region's only country restores the whole
+  region. Other regions are never touched. The first picker had no double-tap on country chips;
+  the maintainer asked for the same logic as the other Custom buttons. Double-tap keys carry the
+  region, so Turkey's two sides never pair up.
+- **Regions never vanish.** Switching off a region's last listed country turns the region off,
   but the region stays listed in the popup, in its place, with its chips white: the maintainer
   found a region vanishing mid-tap annoying, so **the popup lists every region, selected or not,
   in a fixed order**. Tapping a chip in a region that is off selects that region with only that
-  country on, which is the quick way to "only the UK". The region header reads `All`,
-  `n of m · All`, or `None · All`, the button putting the whole region back; the footer's
-  **Select all** turns every chip it shows back on: every listed region selected, nothing off.
-  Double-tapping a region chip still isolates or restores, and restoring
-  every region also clears every exclusion, so "all" means all.
+  country on, which is the quick way to "only the UK". Each region header counts like the other
+  groups' (`All` or `n/N`); the footer's **Select all** turns every chip it shows back on: every
+  listed region selected, nothing off. Double-tapping a region chip in the Regions group still
+  isolates or restores, and restoring every region also clears every exclusion, so "all" means
+  all.
 - **The filter** (`filterByRegion`): an event stays when some region it resolves to is selected
   and either that region is whole, or the event carries a country of that region whose pair is on.
   An event tagged only with the region ("Europe") is dealt while the region is whole and drops out
@@ -172,9 +178,11 @@ work like the other groups. That is the model below.
   "N countries off").
 - **Search narrows every region's list**, matching the start of any word (`matchCountries`). Regions
   alphabetical with Global last (display only; `ALL_REGIONS` is the share code's bit order);
-  countries most-tagged first, 8 per region before "+N more". In a partial region, a country that
-  is still on stays visible in the collapsed tail. An alphabetical country list was tried and
-  reverted: the maintainer preferred the big countries first.
+  countries most-tagged first, 8 per region before "+N more". The cut is fixed: an earlier rule
+  kept every country still on visible in a partial region, so switching off one country in a
+  whole Europe blew its list open to all 52. A tap never changes which chips are shown. An
+  alphabetical country list was tried and reverted: the maintainer preferred the big countries
+  first.
 - **Offered countries come from the pool.** `countryOptionsByRegion` lists only countries present.
   The Custom tab offers the whole catalogue; the Timeline popup offers only countries in the
   player's collection, and its picker stacks above the filter popup (`layer="reveal"`). Global

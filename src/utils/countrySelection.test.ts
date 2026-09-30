@@ -10,6 +10,7 @@ import {
   pruneExclusions,
   regionStatus,
   selectWholeRegion,
+  setRegionCountries,
   toggleCountry,
   toggleRegion,
 } from './countrySelection';
@@ -206,5 +207,34 @@ describe('against the real catalogue', () => {
     expect(legacy(['Europe', 'North & Central Asia'], ['Russia'])).toBe(166);
     expect(legacy(['Europe'], ['Russia'])).toBeLessThan(166);
     expect(legacy(['Europe'], [])).toBe(3071);
+  });
+});
+
+describe('setRegionCountries, the double-tap', () => {
+  const start: RegionSelection = {
+    regions: ['Europe', 'East Asia'],
+    excluded: [pairKey('East Asia', 'Japan')],
+  };
+
+  it('isolates one country, leaving other regions alone', () => {
+    const next = setRegionCountries(start, 'Europe', ['Germany'], EUROPE_LISTED);
+    expect(isCountryOn('Europe', 'Germany', next)).toBe(true);
+    expect(isCountryOn('Europe', 'France', next)).toBe(false);
+    expect(next.excluded).toContain(pairKey('East Asia', 'Japan'));
+  });
+
+  it('restores the whole region when every listed country is on', () => {
+    const isolated = setRegionCountries(start, 'Europe', ['Germany'], EUROPE_LISTED);
+    const whole = setRegionCountries(isolated, 'Europe', EUROPE_LISTED, EUROPE_LISTED);
+    expect(regionStatus('Europe', whole)).toBe('full');
+    expect(whole.excluded).toEqual([pairKey('East Asia', 'Japan')]);
+  });
+
+  it('turns the region off when nothing is on, and selects an off region to isolate', () => {
+    const none = setRegionCountries(start, 'Europe', [], EUROPE_LISTED);
+    expect(regionStatus('Europe', none)).toBe('off');
+    const back = setRegionCountries(none, 'Europe', ['France'], EUROPE_LISTED);
+    expect(back.regions).toContain('Europe');
+    expect(isCountryOn('Europe', 'France', back)).toBe(true);
   });
 });

@@ -1,16 +1,11 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
 import { ALL_REGIONS, REGION_DISPLAY_ORDER } from '../utils/regions';
 import CountryRefine from './CountryRefine';
 import { RegionSelection, regionStatus, toggleRegion } from '../utils/countrySelection';
 import { pillClass } from './filterPill';
-
-// Max gap (ms) between two taps on the same pill to count as a double-tap.
-// 400ms matches macOS/Windows double-click defaults and sits just above
-// WebKit's 350ms touch threshold. Safe to be generous since a single tap
-// fires instantly (no debounce), so a wider window adds no input lag.
-const DOUBLE_TAP_MS = 400;
+import { usePillTap } from '../hooks/usePillTap';
 
 const DIFFICULTY_LABELS = new Map<Difficulty, string>([
   ['easy', 'Easy'],
@@ -110,36 +105,8 @@ const FilterControls: React.FC<FilterControlsProps> = ({
     if (regions.length === ALL_REGIONS.length) onExcludedChange?.([]);
   };
 
-  // Plotly-style tap handling. Single-tap toggles a pill INSTANTLY (no debounce,
-  // so it never feels laggy). A second tap on the same pill within the window is
-  // a double-tap: the two toggles cancel out (net no-op on that pill), so we
-  // isolate to just that pill — or restore all if it was already the only one.
-  // We act on the state captured at the first tap (`before`), not the live prop,
-  // so the result is correct regardless of re-render timing. Works on touch too.
-  const lastTap = useRef<{ key: string; time: number; before: unknown[] } | null>(null);
-
-  function handlePillTap<T>(
-    item: T,
-    key: string,
-    selected: T[],
-    all: T[],
-    onChange: (next: T[]) => void,
-    toggle: (item: T) => void
-  ) {
-    const now = Date.now();
-    const prev = lastTap.current;
-    if (prev && prev.key === key && now - prev.time < DOUBLE_TAP_MS) {
-      // Double-tap: undo the flicker and isolate/restore from the pre-tap state.
-      lastTap.current = null;
-      const before = prev.before as T[];
-      const wasOnlyThis = before.length === 1 && before[0] === item;
-      onChange(wasOnlyThis ? [...all] : [item]); // restore all ↔ isolate one
-    } else {
-      // First tap: toggle immediately and remember the state for a possible double.
-      lastTap.current = { key, time: now, before: selected };
-      toggle(item);
-    }
-  }
+  // Shared with the country picker, so every filter pill taps and double-taps alike.
+  const handlePillTap = usePillTap();
 
   return (
     <div className="space-y-4">

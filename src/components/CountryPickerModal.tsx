@@ -5,12 +5,11 @@ import { matchCountries } from '../utils/regions';
 import { pillClass } from './filterPill';
 import {
   RegionSelection,
-  RegionStatus,
   isCountryOn,
-  regionStatus,
-  selectWholeRegion,
+  setRegionCountries,
   toggleCountry,
 } from '../utils/countrySelection';
+import { usePillTap } from '../hooks/usePillTap';
 
 // Countries shown per region before its "more" toggle, while not searching. The first few
 // carry most of the cards; Europe alone lists 52.
@@ -33,51 +32,34 @@ export interface CountryPickerModalProps {
 const RegionCountries: React.FC<{
   region: string;
   countries: string[];
-  status: RegionStatus;
   /** Cap the list at the most-tagged few behind "+N more"; off while searching. */
   capped: boolean;
   isOn: (country: string) => boolean;
-  onPick: (country: string) => void;
-  onSelectAll: () => void;
-}> = ({ region, countries, status, capped, isOn, onPick, onSelectAll }) => {
-  const selectAll = (label: string) => (
-    <button
-      onClick={onSelectAll}
-      className="text-xs font-medium text-text-muted font-body tabular-nums hover:text-text"
-    >
-      {label}
-    </button>
-  );
+  onTap: (country: string) => void;
+}> = ({ region, countries, capped, isOn, onTap }) => {
   const [showAll, setShowAll] = useState(false);
+  // A fixed cut, so a tap never changes which chips are shown.
   const hidden = capped && !showAll ? countries.length - VISIBLE_COUNTRIES : 0;
-  // In a partial region the countries still on stay visible even in the collapsed tail, so
-  // "only Portugal" never hides the one chip that is on.
-  const visible =
-    hidden > 0
-      ? countries.filter((c, i) => i < VISIBLE_COUNTRIES || (status === 'partial' && isOn(c)))
-      : countries;
+  const visible = hidden > 0 ? countries.slice(0, VISIBLE_COUNTRIES) : countries;
   const canCollapse = capped && showAll && countries.length > VISIBLE_COUNTRIES;
   const onCount = countries.filter(isOn).length;
-  const header =
-    status === 'full' ? (
-      <span className="text-xs font-medium text-text-muted font-body">All</span>
-    ) : (
-      selectAll(status === 'off' ? 'None · All' : `${onCount} of ${countries.length} · All`)
-    );
 
   return (
     <div>
-      <div className="mb-1.5 flex min-h-[28px] items-center justify-between gap-2">
+      {/* The same count as the other filter groups' headers. */}
+      <div className="mb-1.5 flex items-center justify-between gap-2">
         <span className="text-xs font-medium uppercase tracking-wide text-text-muted font-body">
           {region}
         </span>
-        {header}
+        <span className="text-xs font-medium text-text-muted font-body tabular-nums">
+          {onCount === countries.length ? 'All' : `${onCount}/${countries.length}`}
+        </span>
       </div>
       <div className="flex flex-wrap gap-2">
         {visible.map((country) => (
           <button
             key={country}
-            onClick={() => onPick(country)}
+            onClick={() => onTap(country)}
             aria-pressed={isOn(country)}
             className={pillClass(isOn(country), 'sm')}
           >
@@ -129,8 +111,20 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
     if (next.excluded !== selection.excluded) onExcludedChange(next.excluded);
   };
 
-  const pick = (region: string, country: string) =>
-    apply(toggleCountry(selection, region, country, countryOptions.get(region) ?? []));
+  // The same tap logic as every other filter pill, with each region its own group: a tap
+  // toggles, a double-tap leaves only that country on in its region, or restores the region.
+  const handlePillTap = usePillTap();
+  const tap = (region: string, country: string) => {
+    const listed = countryOptions.get(region) ?? [];
+    handlePillTap(
+      country,
+      `country:${region}:${country}`,
+      listed.filter((c) => isCountryOn(region, c, selection)),
+      listed,
+      (on) => apply(setRegionCountries(selection, region, on, listed)),
+      (c) => apply(toggleCountry(selection, region, c, listed))
+    );
+  };
 
   // Every chip the popup shows back on: each listed region selected, nothing switched off.
   // Regions without countries (Global) keep whatever they were.
@@ -185,11 +179,9 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
             key={group.region}
             region={group.region}
             countries={group.countries}
-            status={regionStatus(group.region, selection)}
             capped={query.trim() === ''}
             isOn={(country) => isCountryOn(group.region, country, selection)}
-            onPick={(country) => pick(group.region, country)}
-            onSelectAll={() => apply(selectWholeRegion(selection, group.region))}
+            onTap={(country) => tap(group.region, country)}
           />
         ))}
         {groups.length === 0 && (

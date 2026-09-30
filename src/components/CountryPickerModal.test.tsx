@@ -26,13 +26,27 @@ function setup(overrides: Partial<React.ComponentProps<typeof CountryPickerModal
 }
 
 const chip = (name: string) => screen.getByRole('button', { name });
+const doubleTap = async (name: string) => {
+  await userEvent.click(chip(name));
+  await userEvent.click(chip(name));
+};
+/** Every Europe country in the taxonomy except these, as switched-off pairs. */
+const europeExcept = (...on: string[]) =>
+  countriesInRegion('Europe')
+    .filter((c) => !on.includes(c))
+    .map((c) => `Europe|${c}`);
 
 describe('CountryPickerModal', () => {
   it('lists every region, an unselected one with its chips off', () => {
     setup();
     expect(chip('Germany')).toHaveAttribute('aria-pressed', 'true');
     expect(chip('Japan')).toHaveAttribute('aria-pressed', 'false');
-    expect(chip('None · All')).toBeInTheDocument();
+  });
+
+  it('counts each region like the other filter groups', () => {
+    setup({ excludedCountries: ['Europe|Germany'] });
+    expect(screen.getByText('1/2')).toBeInTheDocument();
+    expect(screen.getByText('0/1')).toBeInTheDocument();
   });
 
   it('starts with every country on', () => {
@@ -42,18 +56,16 @@ describe('CountryPickerModal', () => {
     expect(screen.getByText('All')).toBeInTheDocument();
   });
 
-  it('switches a country off, and back on', async () => {
+  it('switches a country off with one tap', async () => {
     const props = setup();
     await userEvent.click(chip('Germany'));
     expect(props.onExcludedChange).toHaveBeenLastCalledWith(['Europe|Germany']);
     expect(props.onRegionsChange).not.toHaveBeenCalled();
   });
 
-  it('shows a switched-off country as off, with the region partial', async () => {
+  it('shows a switched-off country as off, and turns it back on with one tap', async () => {
     const props = setup({ excludedCountries: ['Europe|Germany'] });
     expect(chip('Germany')).toHaveAttribute('aria-pressed', 'false');
-    await userEvent.click(chip('1 of 2 · All'));
-    expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
     await userEvent.click(chip('Germany'));
     expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
   });
@@ -75,22 +87,41 @@ describe('CountryPickerModal', () => {
     expect(props.onExcludedChange).toHaveBeenCalledWith(others);
   });
 
-  it('keeps a region listed after its last country is switched off', async () => {
-    const props = setup({ excludedCountries: ['Europe|Germany'] });
-    await userEvent.click(chip('France'));
-    expect(props.onRegionsChange).toHaveBeenCalledWith([]);
-    // Rendered again as the parent would, with Europe now off: still listed, all chips off.
-    render(<CountryPickerModal {...props} selectedRegions={[]} excludedCountries={[]} />);
-    expect(screen.getAllByRole('button', { name: 'France' }).at(-1)).toHaveAttribute(
-      'aria-pressed',
-      'false'
-    );
+  it('isolates a country within its region on double-tap, leaving other regions alone', async () => {
+    const props = setup({ selectedRegions: ['Europe', 'East Asia'] });
+    await doubleTap('Germany');
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith(europeExcept('Germany'));
+    expect(props.onRegionsChange).not.toHaveBeenCalled();
   });
 
-  it('switches a whole off region back on from its header', async () => {
-    const props = setup();
-    await userEvent.click(chip('None · All'));
-    expect(props.onRegionsChange).toHaveBeenCalledWith(['Europe', 'East Asia']);
+  it('restores the whole region on a double-tap of its only country', async () => {
+    // Stateful, as in the app: the first tap turns Europe off and the second must bring it back.
+    let latest = { regions: ['Europe'], excluded: europeExcept('Germany') };
+    const Harness = () => {
+      const [regions, setRegions] = React.useState(latest.regions);
+      const [excluded, setExcluded] = React.useState(latest.excluded);
+      latest = { regions, excluded };
+      return (
+        <CountryPickerModal
+          open
+          onClose={jest.fn()}
+          selectedRegions={regions}
+          onRegionsChange={setRegions}
+          excludedCountries={excluded}
+          onExcludedChange={setExcluded}
+          countryOptions={options}
+        />
+      );
+    };
+    render(<Harness />);
+    await doubleTap('Germany');
+    expect(latest).toEqual({ regions: ['Europe'], excluded: [] });
+  });
+
+  it('keeps a region listed after its last country is switched off', () => {
+    setup({ selectedRegions: [], excludedCountries: [] });
+    expect(chip('France')).toHaveAttribute('aria-pressed', 'false');
+    expect(screen.getByText('0/2')).toBeInTheDocument();
   });
 
   it('puts every chip back on with Select all, and shows the deal count on Done', async () => {
@@ -118,10 +149,10 @@ describe('CountryPickerModal', () => {
     expect(chip('Zed')).toBeInTheDocument();
   });
 
-  it('keeps a country that is still on visible in the collapsed tail of a partial region', () => {
+  it('never expands the collapsed list when a region turns partial', () => {
     const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Zed'];
-    const allButZed = nine.filter((c) => c !== 'Zed').map((c) => `Europe|${c}`);
-    setup({ countryOptions: new Map([['Europe', nine]]), excludedCountries: allButZed });
-    expect(chip('Zed')).toBeInTheDocument();
+    setup({ countryOptions: new Map([['Europe', nine]]), excludedCountries: ['Europe|A1'] });
+    expect(screen.queryByRole('button', { name: 'Zed' })).toBeNull();
+    expect(chip('+1 more')).toBeInTheDocument();
   });
 });
