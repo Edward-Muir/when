@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { readString, writeString } from '../utils/storage';
 
 type Theme = 'light' | 'dark';
 
@@ -8,7 +9,7 @@ export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
     // Check localStorage first
     if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem(THEME_KEY);
+      const stored = readString(THEME_KEY);
       if (stored === 'light' || stored === 'dark') {
         return stored;
       }
@@ -28,7 +29,7 @@ export function useTheme() {
     } else {
       root.classList.remove('dark');
     }
-    localStorage.setItem(THEME_KEY, theme);
+    writeString(THEME_KEY, theme, 'theme');
   }, [theme]);
 
   const toggleTheme = useCallback(() => {

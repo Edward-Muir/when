@@ -23,6 +23,7 @@ import { getLocalDateString } from '../utils/puzzleDate';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import StatsPopup from './StatsPopup';
+import Modal from './ui/Modal';
 import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
@@ -46,36 +47,43 @@ import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
-  setOpen: (open: boolean) => void;
+  open: boolean;
+  onClose: () => void;
   onConfirm: () => void;
   state: Pick<WhenGameState, 'gameMode'>;
-}> = ({ setOpen, onConfirm, state }) => (
-  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-    <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
-    <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full">
-      <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
-      <p className="text-text-muted text-sm mb-6 font-body">
-        {/* A daily is saved as it is played (utils/dailyProgress.ts), so leaving loses nothing. */}
-        {state.gameMode === 'daily'
-          ? 'Your progress is saved. Pick up where you left off from the Daily card.'
-          : 'Your current progress will be lost.'}
-      </p>
-      <div className="flex gap-3">
-        <button
-          onClick={() => setOpen(false)}
-          className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
-        >
-          Cancel
-        </button>
-        <button
-          onClick={onConfirm}
-          className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
-        >
-          Leave
-        </button>
-      </div>
+}> = ({ open, onClose, onConfirm, state }) => (
+  <Modal
+    open={open}
+    onDismiss={onClose}
+    backdrop="scrim"
+    widthClass="w-full max-w-sm"
+    rounded="2xl"
+    shadow="xl"
+    bordered={false}
+    cardClassName="p-6"
+  >
+    <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
+    <p className="text-text-muted text-sm mb-6 font-body">
+      {/* A daily is saved as it is played (utils/dailyProgress.ts), so leaving loses nothing. */}
+      {state.gameMode === 'daily'
+        ? 'Your progress is saved. Pick up where you left off from the Daily card.'
+        : 'Your current progress will be lost.'}
+    </p>
+    <div className="flex gap-3">
+      <button
+        onClick={onClose}
+        className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
+      >
+        Cancel
+      </button>
+      <button
+        onClick={onConfirm}
+        className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
+      >
+        Leave
+      </button>
     </div>
-  </div>
+  </Modal>
 );
 
 // Whether the popup should reveal the event's year: cards already on the timeline and
@@ -223,8 +231,7 @@ const Game: React.FC<GameProps> = ({
     const replayId = state.lastConfig?.curatedThemeId;
     if (replayId) return getCuratedThemeById(replayId)?.name;
     if (state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
-      const theme = getDailyTheme(state.lastConfig.dailySeed);
-      return getThemeDisplayName(theme);
+      return getThemeDisplayName(getDailyTheme(state.lastConfig.dailySeed));
     }
     return undefined;
   }, [state.gameMode, state.lastConfig?.dailySeed, state.lastConfig?.curatedThemeId]);
@@ -467,20 +474,18 @@ const Game: React.FC<GameProps> = ({
             document.body
           )}
 
-          {pendingPopup && (
-            <GamePopup
-              type={pendingPopup.type}
-              event={pendingPopup.event}
-              onDismiss={dismissPopup}
-              nextPlayer={pendingPopup.nextPlayer}
-              showYear={showYearInPopup}
-              gameState={pendingPopup.gameState}
-              closeEnough={pendingPopup.closeEnough}
-              tombstone={isTombstonePopup}
-              dailyResult={dailyResult}
-              leaderboard={leaderboard}
-            />
-          )}
+          <GamePopup
+            type={pendingPopup?.type ?? 'correct'}
+            event={pendingPopup?.event ?? null}
+            onDismiss={dismissPopup}
+            nextPlayer={pendingPopup?.nextPlayer}
+            showYear={showYearInPopup}
+            gameState={pendingPopup?.gameState}
+            closeEnough={pendingPopup?.closeEnough}
+            tombstone={isTombstonePopup}
+            dailyResult={dailyResult}
+            leaderboard={leaderboard}
+          />
 
           <StatsPopup
             isOpen={showStatsPopup}
@@ -496,9 +501,12 @@ const Game: React.FC<GameProps> = ({
             onClose={() => setShowToast(false)}
           />
 
-          {showHomeConfirm && (
-            <HomeConfirmModal setOpen={setShowHomeConfirm} onConfirm={onNewGame} state={state} />
-          )}
+          <HomeConfirmModal
+            open={showHomeConfirm}
+            onClose={() => setShowHomeConfirm(false)}
+            onConfirm={onNewGame}
+            state={state}
+          />
 
           {/* The end-of-game sequence. Each step dismisses to the next; the share always
               ends it, so the finale is the same screen whether or not this game unlocked

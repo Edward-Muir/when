@@ -33,6 +33,7 @@ Each event is a JSON object with these fields:
 | `category`      | string | One of the 20 category values below                                                       |
 | `description`   | string | 1-2 sentences, 80-150 characters. Factual, objective tone.                                |
 | `difficulty`    | string | `easy`, `medium`, `hard`, or `very-hard` — all four are in play                           |
+| `regions`       | array  | Where it happened on today's map: exact names from `src/data/regions.json`. See below.    |
 
 ### Optional Fields
 
@@ -42,6 +43,17 @@ Each event is a JSON object with these fields:
 | `image_width`  | number | Image width in pixels (typically 330)                                                      |
 | `image_height` | number | Image height in pixels                                                                     |
 | `year_end`     | number | End of the evidence window, where the record gives a window rather than a year. See below. |
+
+### `regions`: where it happened
+
+Every new event gets `regions`: present-day countries by their plain names (`["Bahamas", "Spain"]`),
+plus a region name only where no country says it (`["Turkey", "Europe"]`, `["China", "Global"]`).
+Never an abbreviation. The rules (place plus at most two acting states, extinct states by their seat
+at the time, Global is a footprint not importance) are in the `tag-event-regions` skill and
+[docs/regions/tagging-spec.md](../../../docs/regions/tagging-spec.md). Write them through a map and
+`node scripts/events/region-apply.js`, which validates them and puts them in canonical order,
+rather than by hand. Until the catalogue sweep lands the field is optional in the corpus test;
+after it, an untagged event fails the build.
 
 ### `year` + `year_end`: the evidence window
 
@@ -186,6 +198,7 @@ npm run find-duplicates  # Check for duplicate names
 npm run typecheck        # Category/difficulty values are typed
 npm test -- --watchAll=false eventNameLength   # 35-char friendly_name limit
 npm test -- --watchAll=false eventDateClues    # No dates in player-visible text
+npm test -- --watchAll=false eventRegions      # regions names exist and are canonical
 npm run build            # Verify JSON is valid
 ```
 

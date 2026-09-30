@@ -17,6 +17,7 @@ import { HistoricalEvent, WhenGameState } from '../types';
 import { getTimelineHighScore } from './playerStorage';
 import { dayDiff, getLocalDateString } from './puzzleDate';
 import { ACHIEVEMENT_TESTS, StatsSnapshot } from '../data/achievementLogic';
+import { readJson, writeJson } from './storage';
 
 // --- Lifetime Stats (bucketed by game mode; custom games count under `suddenDeath`) ---
 
@@ -99,44 +100,37 @@ export function getLifetimeStats(): LifetimeStats {
 }
 
 function readLifetimeStats(): LifetimeStats {
-  try {
-    const stored = localStorage.getItem(LIFETIME_STATS_KEY);
-    if (!stored) return defaultLifetimeStats();
+  return readJson(LIFETIME_STATS_KEY, defaultLifetimeStats(), normalizeLifetimeStats);
+}
 
-    const parsed = JSON.parse(stored) as Partial<
-      Omit<LifetimeStats, 'gamesPlayed' | 'timelineLengthSum' | 'longestTimeline'>
-    > & {
-      gamesPlayed?: LegacyPerMode;
-      timelineLengthSum?: LegacyPerMode;
-      longestTimeline?: LegacyPerMode;
-    };
-    const base = defaultLifetimeStats();
-    // Fields are listed explicitly rather than spread so retired keys (`freeplay`,
-    // `flawlessFreeplayGames`) are dropped rather than written back on the next save.
-    return {
-      gamesPlayed: foldPerMode(parsed.gamesPlayed, sum),
-      eventsPlacedCorrect: parsed.eventsPlacedCorrect ?? base.eventsPlacedCorrect,
-      eventsPlacedWrong: parsed.eventsPlacedWrong ?? base.eventsPlacedWrong,
-      timelineLengthSum: foldPerMode(parsed.timelineLengthSum, sum),
-      // A longest-ever is a max, not a total, so the legacy bucket folds by max().
-      longestTimeline: foldPerMode(parsed.longestTimeline, Math.max),
-      bestInGameStreakEver: parsed.bestInGameStreakEver ?? base.bestInGameStreakEver,
-      bestCustomStreakEver: parsed.bestCustomStreakEver ?? base.bestCustomStreakEver,
-      bestGameCorrectEver: parsed.bestGameCorrectEver ?? base.bestGameCorrectEver,
-      firstPlayedDate: parsed.firstPlayedDate ?? base.firstPlayedDate,
-      lastPlayedDate: parsed.lastPlayedDate ?? base.lastPlayedDate,
-    };
-  } catch {
-    return defaultLifetimeStats();
-  }
+function normalizeLifetimeStats(raw: unknown): LifetimeStats {
+  const parsed = raw as Partial<
+    Omit<LifetimeStats, 'gamesPlayed' | 'timelineLengthSum' | 'longestTimeline'>
+  > & {
+    gamesPlayed?: LegacyPerMode;
+    timelineLengthSum?: LegacyPerMode;
+    longestTimeline?: LegacyPerMode;
+  };
+  const base = defaultLifetimeStats();
+  // Fields are listed explicitly rather than spread so retired keys (`freeplay`,
+  // `flawlessFreeplayGames`) are dropped rather than written back on the next save.
+  return {
+    gamesPlayed: foldPerMode(parsed.gamesPlayed, sum),
+    eventsPlacedCorrect: parsed.eventsPlacedCorrect ?? base.eventsPlacedCorrect,
+    eventsPlacedWrong: parsed.eventsPlacedWrong ?? base.eventsPlacedWrong,
+    timelineLengthSum: foldPerMode(parsed.timelineLengthSum, sum),
+    // A longest-ever is a max, not a total, so the legacy bucket folds by max().
+    longestTimeline: foldPerMode(parsed.longestTimeline, Math.max),
+    bestInGameStreakEver: parsed.bestInGameStreakEver ?? base.bestInGameStreakEver,
+    bestCustomStreakEver: parsed.bestCustomStreakEver ?? base.bestCustomStreakEver,
+    bestGameCorrectEver: parsed.bestGameCorrectEver ?? base.bestGameCorrectEver,
+    firstPlayedDate: parsed.firstPlayedDate ?? base.firstPlayedDate,
+    lastPlayedDate: parsed.lastPlayedDate ?? base.lastPlayedDate,
+  };
 }
 
 export function saveLifetimeStats(stats: LifetimeStats): void {
-  try {
-    localStorage.setItem(LIFETIME_STATS_KEY, JSON.stringify(stats));
-  } catch {
-    console.warn('Failed to save lifetime stats to localStorage');
-  }
+  writeJson(LIFETIME_STATS_KEY, stats, 'lifetime stats');
 }
 
 // --- Collection (unique correctly-placed event names, ALL modes incl. custom) ---
@@ -152,26 +146,19 @@ function defaultCollectionState(): CollectionState {
 }
 
 export function getCollectionState(): CollectionState {
-  try {
-    const stored = localStorage.getItem(COLLECTION_KEY);
-    if (!stored) return defaultCollectionState();
+  return readJson(COLLECTION_KEY, defaultCollectionState(), normalizeCollectionState);
+}
 
-    const parsed = JSON.parse(stored) as Partial<CollectionState>;
-    const ids = Array.isArray(parsed.placedEventIds) ? parsed.placedEventIds : [];
-    // De-dupe defensively so a corrupted/duplicated store still reads clean.
-    return { placedEventIds: Array.from(new Set(ids)) };
-  } catch {
-    return defaultCollectionState();
-  }
+function normalizeCollectionState(raw: unknown): CollectionState {
+  const parsed = raw as Partial<CollectionState>;
+  const ids = Array.isArray(parsed.placedEventIds) ? parsed.placedEventIds : [];
+  // De-dupe defensively so a corrupted/duplicated store still reads clean.
+  return { placedEventIds: Array.from(new Set(ids)) };
 }
 
 export function saveCollectionState(state: CollectionState): void {
-  try {
-    const deduped = { placedEventIds: Array.from(new Set(state.placedEventIds)) };
-    localStorage.setItem(COLLECTION_KEY, JSON.stringify(deduped));
-  } catch {
-    console.warn('Failed to save collection state to localStorage');
-  }
+  const deduped = { placedEventIds: Array.from(new Set(state.placedEventIds)) };
+  writeJson(COLLECTION_KEY, deduped, 'collection state');
 }
 
 /**
@@ -212,31 +199,24 @@ function defaultDailyCadence(): DailyCadence {
 }
 
 export function getDailyCadence(): DailyCadence {
-  try {
-    const stored = localStorage.getItem(DAILY_CADENCE_KEY);
-    if (!stored) return defaultDailyCadence();
+  return readJson(DAILY_CADENCE_KEY, defaultDailyCadence(), normalizeDailyCadence);
+}
 
-    const parsed = JSON.parse(stored) as Partial<DailyCadence>;
-    const base = defaultDailyCadence();
-    return {
-      ...base,
-      ...parsed,
-      playedDates: Array.isArray(parsed.playedDates) ? parsed.playedDates : base.playedDates,
-      dailyCorrectHistogram: Array.isArray(parsed.dailyCorrectHistogram)
-        ? parsed.dailyCorrectHistogram
-        : base.dailyCorrectHistogram,
-    };
-  } catch {
-    return defaultDailyCadence();
-  }
+function normalizeDailyCadence(raw: unknown): DailyCadence {
+  const parsed = raw as Partial<DailyCadence>;
+  const base = defaultDailyCadence();
+  return {
+    ...base,
+    ...parsed,
+    playedDates: Array.isArray(parsed.playedDates) ? parsed.playedDates : base.playedDates,
+    dailyCorrectHistogram: Array.isArray(parsed.dailyCorrectHistogram)
+      ? parsed.dailyCorrectHistogram
+      : base.dailyCorrectHistogram,
+  };
 }
 
 export function saveDailyCadence(cadence: DailyCadence): void {
-  try {
-    localStorage.setItem(DAILY_CADENCE_KEY, JSON.stringify(cadence));
-  } catch {
-    console.warn('Failed to save daily cadence to localStorage');
-  }
+  writeJson(DAILY_CADENCE_KEY, cadence, 'daily cadence');
 }
 
 // --- Achievements (unlocked id -> ISO date) ---
@@ -252,24 +232,17 @@ function defaultAchievements(): Achievements {
 }
 
 export function getAchievements(): Achievements {
-  try {
-    const stored = localStorage.getItem(ACHIEVEMENTS_KEY);
-    if (!stored) return defaultAchievements();
+  return readJson(ACHIEVEMENTS_KEY, defaultAchievements(), normalizeAchievements);
+}
 
-    const parsed = JSON.parse(stored) as Partial<Achievements>;
-    const unlocked = parsed.unlocked && typeof parsed.unlocked === 'object' ? parsed.unlocked : {};
-    return { unlocked };
-  } catch {
-    return defaultAchievements();
-  }
+function normalizeAchievements(raw: unknown): Achievements {
+  const parsed = raw as Partial<Achievements>;
+  const unlocked = parsed.unlocked && typeof parsed.unlocked === 'object' ? parsed.unlocked : {};
+  return { unlocked };
 }
 
 export function saveAchievements(achievements: Achievements): void {
-  try {
-    localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(achievements));
-  } catch {
-    console.warn('Failed to save achievements to localStorage');
-  }
+  writeJson(ACHIEVEMENTS_KEY, achievements, 'achievements');
 }
 
 // --- Event lookup (pure, no storage) ---

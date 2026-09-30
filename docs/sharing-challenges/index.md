@@ -306,6 +306,22 @@ Two properties of the current layout are load-bearing:
   to `suddenDeath`. It cannot be reclaimed: the format is positional, so shifting it would
   misdecode _every_ link ever issued, not just freeplay ones.
 
+### The optional 7th word: regions (2026-09-30)
+
+The region filter needed 11 more bits when all 72 were taken, so a code is now **6 or 7
+words**. The 7th word (bits 72-83) is the region mask in `ALL_REGIONS` order
+(`src/data/regions.json`).
+
+- **It is written only when the regions are narrowed.** An all-regions game still encodes to
+  the same 6 words it always did, so a code's length tells you whether it filters by region.
+- **A 6-word code decodes as all regions.** That is every link shared before the filter, and
+  it must stay that way.
+- **A 7th word with no region set, or a bit past the last region, is rejected** as a code this
+  app did not write, the same way an empty category mask is.
+- **The region order is positional**, like everything else here. Adding a region means
+  appending it, which the taxonomy test's "Global is last" rule would force you to rethink
+  first. `challengeCode.test.ts` pins the order so a reorder fails loudly.
+
 ### Decisions still in force
 
 - **`WORDLIST` order is immutable.** Reordering or removing a word changes what every

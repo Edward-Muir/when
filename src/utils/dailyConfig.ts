@@ -24,7 +24,6 @@ export function buildDailyConfig(): GameConfig {
 
   return {
     mode: 'daily',
-    totalTurns: 7,
     selectedDifficulties: [...DEFAULT_DIFFICULTIES],
     selectedCategories: getThemedCategories(dailyTheme),
     selectedEras: getThemedEras(dailyTheme),

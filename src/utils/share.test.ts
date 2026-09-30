@@ -167,7 +167,6 @@ describe('generateShareText', () => {
         bestStreak: 2,
         lastConfig: {
           mode: 'daily',
-          totalTurns: 5,
           selectedDifficulties: [],
           selectedCategories: [],
           selectedEras: [],
@@ -212,7 +211,6 @@ describe('generateShareText', () => {
         placementHistory: [true, true],
         lastConfig: {
           mode: 'suddenDeath',
-          totalTurns: 5,
           selectedDifficulties: [],
           selectedCategories: [],
           selectedEras: [],
@@ -312,7 +310,6 @@ describe('the line every share carries', () => {
           placementHistory: [true],
           lastConfig: {
             mode: 'suddenDeath',
-            totalTurns: 5,
             selectedDifficulties: [],
             selectedCategories: [],
             selectedEras: [],

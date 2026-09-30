@@ -6,6 +6,7 @@ import { loadAllEvents } from '../utils/eventLoader';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import { formatEventYear } from '../utils/gameLogic';
 import { REPORT_REASONS, ReportReasonId } from '../utils/cardReport';
+import { readString, removeKeys, writeString } from '../utils/storage';
 
 /**
  * Hidden maintainer tool (route: /card-reports, not linked from any nav) listing
@@ -37,24 +38,16 @@ function formatWhen(timestamp: number): string {
 }
 
 // The REPORTS_ADMIN_KEY shared secret, kept so the page works from a bare
-// bookmark. Wrapped per the playerStorage.ts convention — storage can throw.
+// bookmark.
 const ADMIN_KEY_STORAGE = 'when-reports-key';
 
 function getStoredKey(): string {
-  try {
-    return localStorage.getItem(ADMIN_KEY_STORAGE) || '';
-  } catch {
-    return '';
-  }
+  return readString(ADMIN_KEY_STORAGE) || '';
 }
 
 function storeKey(key: string): void {
-  try {
-    if (key) localStorage.setItem(ADMIN_KEY_STORAGE, key);
-    else localStorage.removeItem(ADMIN_KEY_STORAGE);
-  } catch {
-    console.warn('Failed to save reports admin key to localStorage');
-  }
+  if (key) writeString(ADMIN_KEY_STORAGE, key, 'reports admin key');
+  else removeKeys([ADMIN_KEY_STORAGE], 'reports admin key');
 }
 
 /** The server's message when REPORTS_ADMIN_KEY is missing, as opposed to wrong. */

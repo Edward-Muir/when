@@ -9,9 +9,10 @@ import {
   ALL_CATEGORIES,
   ALL_DIFFICULTIES,
 } from '../../types';
-import { filterByDifficulty, filterByCategory, filterByEra } from '../../utils/eventLoader';
+import { filterPool } from '../../utils/eventLoader';
 import { getCollectionState } from '../../utils/statsStorage';
 import { ERA_DEFINITIONS } from '../../utils/eras';
+import { ALL_REGIONS } from '../../utils/regions';
 import Timeline from '../Timeline/Timeline';
 import FilterPopup from '../FilterPopup';
 import GamePopup from '../GamePopup';
@@ -41,6 +42,7 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
   ]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>(ERA_DEFINITIONS.map((e) => e.id));
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([...ALL_REGIONS]);
 
   // UI state
   const [showFilterPopup, setShowFilterPopup] = useState(false);
@@ -72,12 +74,15 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
 
   // Filter and sort the collection
   const filteredEvents = useMemo(() => {
-    let events = filterByDifficulty(collectedEvents, selectedDifficulties);
-    events = filterByCategory(events, selectedCategories);
-    events = filterByEra(events, selectedEras);
+    const events = filterPool(collectedEvents, {
+      difficulties: selectedDifficulties,
+      categories: selectedCategories,
+      eras: selectedEras,
+      regions: selectedRegions,
+    });
     // Sort by year for chronological display
     return [...events].sort((a, b) => a.year - b.year);
-  }, [collectedEvents, selectedDifficulties, selectedCategories, selectedEras]);
+  }, [collectedEvents, selectedDifficulties, selectedCategories, selectedEras, selectedRegions]);
 
   // Handle event tap to show description
   const handleEventTap = (event: HistoricalEvent) => {
@@ -143,7 +148,7 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
             <div className="text-center">
               <p className="text-text-muted text-lg font-body mb-2">No events match your filters</p>
               <p className="text-text-muted/60 text-sm font-body">
-                Try selecting more categories, difficulties, or eras
+                Try selecting more categories, difficulties, eras or regions
               </p>
             </div>
           </div>
@@ -162,6 +167,8 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
         setSelectedCategories={setSelectedCategories}
         selectedEras={selectedEras}
         setSelectedEras={setSelectedEras}
+        selectedRegions={selectedRegions}
+        setSelectedRegions={setSelectedRegions}
       />
 
       {/* Event Description Popup */}

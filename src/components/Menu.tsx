@@ -27,6 +27,7 @@ import { shareApp } from '../utils/share';
 import { resetHintsSeen } from '../utils/playerStorage';
 import { APP_VERSION } from '../version';
 import HowToPlayModal from './HowToPlayModal';
+import Modal from './ui/Modal';
 
 interface MenuProps {
   isOpen: boolean;
@@ -255,32 +256,17 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
       </AnimatePresence>
 
       {/* Install Instructions Modal */}
-      <AnimatePresence>
-        {showInstallModal && (
-          <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
-            <motion.div
-              className="absolute inset-0 bg-black/25"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setShowInstallModal(false)}
-            />
-            <motion.div
-              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-            >
-              <div className="px-4 py-3 border-b border-border">
-                <h2 className="text-lg font-display font-semibold text-text">Add to Home Screen</h2>
-              </div>
-              <div className="p-4">
-                <InstallInstructions scenario={installScenario} />
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
+      <Modal
+        open={showInstallModal}
+        onDismiss={() => setShowInstallModal(false)}
+        layer="reveal"
+        size="compact"
+        header="Add to Home Screen"
+      >
+        <div className="p-4">
+          <InstallInstructions scenario={installScenario} />
+        </div>
+      </Modal>
 
       {/* How to Play. Above the drawer (reveal layer) so it opens over the open menu. */}
       <HowToPlayModal open={showRulesModal} onDismiss={() => setShowRulesModal(false)} />

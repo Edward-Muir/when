@@ -6,9 +6,10 @@ preloading.
 - **Adding events by hand:** use the `add-events` skill — it carries the current taxonomy.
 - **Grading difficulty:** [difficulty-grading-rubric.md](difficulty-grading-rubric.md) is a
   live reference, kept as its own file.
-- **Known bad records:** [catalogue-error-backlog.md](catalogue-error-backlog.md) — years, names
-  and descriptions the sources do not support, plus the flags already checked and dismissed.
-  Check it before "fixing" an event, and add to it rather than to a commit message.
+- **Known bad records:** [catalogue-error-backlog.md](catalogue-error-backlog.md) — every year,
+  name and description found not to match its sources, and how each was resolved (all of it, as
+  of 2026-10-01), plus the flags checked and dismissed. Check it before "fixing" an event, and
+  add a new dated section for a new finding rather than a commit message.
 - **Delivering images:** [../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)
   owns the rung ladder, its hard rules, and the service-worker cache.
 - **Full coverage reached 2026-08-23:** every playable event has art —
@@ -161,7 +162,9 @@ a moment`, written by `year-range-apply.js` from `year_end: null` entries and co
   exists because "reviewed and left alone" is the commonest outcome of a sweep and had nowhere
   to live: without it the report script cannot tell an event nobody has looked at from one four
   readers have each dismissed. `eventYearRange.test.ts` pins it to the catalogue — every ledger
-  slug resolves, carries a reason, and does not also carry a `year_end`.
+  slug resolves, carries a reason, and does not also carry a `year_end`. Re-opening a decided
+  card means deleting its ledger line first; writing a window to one retracts its rejection
+  automatically.
 - **`eventRangeSignals` is a per-record hint now, not the worklist.** `--all` sweeps everything
   and an empty `signals` array is itself the hint that nothing flagged this card. The old
   `SPAN_NOUN` missed every plural, so `Hussite Wars` and `Three Kingdoms` returned nothing at

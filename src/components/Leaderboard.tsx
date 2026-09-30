@@ -1,5 +1,4 @@
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
@@ -7,6 +6,7 @@ import { resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardRow, { StickyPlayerRow } from './LeaderboardRow';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import { LeaderboardSubmitForm } from './LeaderboardSubmit';
+import Modal from './ui/Modal';
 
 interface LeaderboardProps {
   isOpen: boolean;
@@ -44,12 +44,6 @@ const LIST_MIN_HEIGHT = 'min-h-[min(320px,30vh)]';
 // ~320px of list, plus ~120px of form is over the card's 520px cap — and what falls off the
 // bottom is the submit button, i.e. the whole point of the form being there.
 const LIST_MIN_HEIGHT_WITH_FORM = 'min-h-[min(180px,20vh)]';
-
-const CARD_MOTION = {
-  initial: { scale: 0.9, opacity: 0 },
-  animate: { scale: 1, opacity: 1 },
-  exit: { scale: 0.9, opacity: 0 },
-} as const;
 
 // Poll `onRefresh` every `intervalMs` while `active` and the tab is visible.
 // Fires an immediate refresh whenever activation starts or the tab becomes visible.
@@ -175,17 +169,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   // exclusive with the pinned-player-row footer below: an unclaimed score has no row to pin.
   const showsSubmitForm = !!submit && !submit.submitted;
 
-  // Handle escape key
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
-      return () => document.removeEventListener('keydown', handleEscape);
-    }
-  }, [isOpen, onClose]);
-
   // Poll every 15s while the modal is open AND the tab is visible. The hook also
   // fires an immediate refresh on activation, so opening the modal triggers a
   // fresh fetch — no separate refetch-on-open effect needed.
@@ -206,106 +189,87 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     });
   }, []);
 
-  if (!isOpen) return null;
-
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <motion.div
-          data-testid="leaderboard-backdrop"
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.15 }}
-          onClick={onClose}
-        >
-          <motion.div
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="leaderboard-title"
-            // Keep a real height cap. Filling the backdrop's padded box was tried, to get an
-            // even gap on all four sides, and it shipped broken: `p-4` is 16px, but on iOS the
-            // webview extends under the status bar (`overlaysWebView: true`), so the card's top
-            // edge landed under the clock and camera. A short, centred card clears the inset by
-            // being centred, without needing to know what the inset is.
-            //
-            // Headless Chromium reports `env(safe-area-inset-*)` as 0, so a browser check
-            // cannot see that failure. Verify height changes on a real device or the PWA.
-            className="w-[90vw] max-w-[400px] max-h-[min(75vh,520px)] rounded-lg overflow-hidden border border-border bg-surface shadow-sm flex flex-col"
-            {...CARD_MOTION}
-            transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            // The backdrop closes the board; clicks that land on the card itself must not.
-            // Without this, tapping a row — or releasing a scrollbar drag — closes it.
-            onClick={(e) => e.stopPropagation()}
+    // Keep a real height cap. Filling the backdrop's padded box was tried, to get an even gap on
+    // all four sides, and it shipped broken: `p-4` is 16px, but on iOS the webview extends under
+    // the status bar (`overlaysWebView: true`), so the card's top edge landed under the clock and
+    // camera. A short, centred card clears the inset by being centred, without needing to know
+    // what the inset is.
+    //
+    // Headless Chromium reports `env(safe-area-inset-*)` as 0, so a browser check cannot see
+    // that failure. Verify height changes on a real device or the PWA.
+    <Modal
+      open={isOpen}
+      onDismiss={onClose}
+      size="wide"
+      scroll="body"
+      maxHeightClass="max-h-[min(75vh,520px)]"
+      labelledBy="leaderboard-title"
+      header={
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Trophy className="w-5 h-5 text-accent" />
+            <h2 id="leaderboard-title" className="text-lg font-display font-semibold text-text">
+              Daily Leaderboard
+            </h2>
+          </div>
+          <button
+            onClick={onClose}
+            className="p-1 rounded-lg hover:bg-border transition-colors"
+            aria-label="Close leaderboard"
           >
-            {/* Header */}
-            <div className="px-4 py-3 border-b border-border flex items-center justify-between shrink-0">
-              <div className="flex items-center gap-2">
-                <Trophy className="w-5 h-5 text-accent" />
-                <h2 id="leaderboard-title" className="text-lg font-display font-semibold text-text">
-                  Daily Leaderboard
-                </h2>
-              </div>
-              <button
-                onClick={onClose}
-                className="p-1 rounded-lg hover:bg-border transition-colors"
-                aria-label="Close leaderboard"
-              >
-                <X className="w-5 h-5 text-text-muted" />
-              </button>
-            </div>
-
-            {/* Player count. Also where truncation is disclosed: `totalPlayers` is the true
+            <X className="w-5 h-5 text-text-muted" />
+          </button>
+        </div>
+      }
+    >
+      {/* Player count. Also where truncation is disclosed: `totalPlayers` is the true
                 count while the list is capped, so without this the board would imply it is
                 showing everyone. */}
-            <div className="px-4 py-2 border-b border-border bg-bg flex items-center gap-2 shrink-0">
-              <Users className="w-4 h-4 text-text-muted" />
-              <span className="text-sm text-text-muted font-body">
-                {truncated
-                  ? `Showing ${entries.length} of ${totalPlayers} players today`
-                  : `${totalPlayers} player${totalPlayers !== 1 ? 's' : ''} today`}
-              </span>
-            </div>
+      <div className="px-4 py-2 border-b border-border bg-bg flex items-center gap-2 shrink-0">
+        <Users className="w-4 h-4 text-text-muted" />
+        <span className="text-sm text-text-muted font-body">
+          {truncated
+            ? `Showing ${entries.length} of ${totalPlayers} players today`
+            : `${totalPlayers} player${totalPlayers !== 1 ? 's' : ''} today`}
+        </span>
+      </div>
 
-            {/* Entries */}
-            <div
-              className={`overflow-y-auto flex-1 ${
-                showsSubmitForm ? LIST_MIN_HEIGHT_WITH_FORM : LIST_MIN_HEIGHT
-              } timeline-scroll-vertical`}
-              data-testid="leaderboard-list"
-            >
-              <LeaderboardList
-                entries={entries}
-                player={player}
-                isLoading={isLoading}
-                error={error}
-                onJumpToSelf={jumpToSelf}
-                playerRowRef={playerRowRef}
-              />
-            </div>
+      {/* Entries */}
+      <div
+        className={`overflow-y-auto flex-1 ${
+          showsSubmitForm ? LIST_MIN_HEIGHT_WITH_FORM : LIST_MIN_HEIGHT
+        } timeline-scroll-vertical`}
+        data-testid="leaderboard-list"
+      >
+        <LeaderboardList
+          entries={entries}
+          player={player}
+          isLoading={isLoading}
+          error={error}
+          onJumpToSelf={jumpToSelf}
+          playerRowRef={playerRowRef}
+        />
+      </div>
 
-            {/* Claim today's score. Sits under the live board, which keeps polling underneath it,
+      {/* Claim today's score. Sits under the live board, which keeps polling underneath it,
                 so the form is replaced by the player's own row the moment the score lands. */}
-            {showsSubmitForm && submit && (
-              <div className="shrink-0 border-t border-border p-3" data-testid="leaderboard-submit">
-                <p className="mb-2 text-xs text-text-muted font-body">
-                  Your score isn&apos;t on the board yet.
-                </p>
-                <LeaderboardSubmitForm leaderboard={submit} />
-              </div>
-            )}
-
-            {/* The player ranks below the served slice, so there is no row in the list to pin. */}
-            {!isLoading && !error && player.row && !player.inList && (
-              <div className="shrink-0 border-t border-border">
-                <LeaderboardRow entry={player.row} highlight />
-              </div>
-            )}
-          </motion.div>
-        </motion.div>
+      {showsSubmitForm && submit && (
+        <div className="shrink-0 border-t border-border p-3" data-testid="leaderboard-submit">
+          <p className="mb-2 text-xs text-text-muted font-body">
+            Your score isn&apos;t on the board yet.
+          </p>
+          <LeaderboardSubmitForm leaderboard={submit} />
+        </div>
       )}
-    </AnimatePresence>
+
+      {/* The player ranks below the served slice, so there is no row in the list to pin. */}
+      {!isLoading && !error && player.row && !player.inList && (
+        <div className="shrink-0 border-t border-border">
+          <LeaderboardRow entry={player.row} highlight />
+        </div>
+      )}
+    </Modal>
   );
 };
 

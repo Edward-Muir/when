@@ -1,5 +1,6 @@
 import { HistoricalEvent, EventManifest, Difficulty, Category, Era } from '../types';
 import { ERA_DEFINITIONS } from './eras';
+import { ALL_REGIONS, eventRegionSet } from './regions';
 import { isCloudinaryImage } from './cloudinaryImage';
 
 /**
@@ -90,6 +91,36 @@ export async function loadAllEvents(): Promise<HistoricalEvent[]> {
   return inflight;
 }
 
+/** An event annotated with the source file (without `.json`) it was loaded from. */
+export type EventWithSource = HistoricalEvent & { sourceFile: string };
+
+/**
+ * Load every event from every file WITHOUT the play-time filters (no Cloudinary-image
+ * requirement, no name-dedup), each tagged with its source file. Used by dev tooling —
+ * e.g. the `/admin/dedup` review page — that needs to see hidden/no-image events too and
+ * know which JSON file each lives in. Not cached: dev-only, called rarely.
+ */
+export async function loadAllEventsUnfiltered(): Promise<EventWithSource[]> {
+  try {
+    const manifestResponse = await fetch('/events/manifest.json');
+    if (!manifestResponse.ok) {
+      throw new Error('Failed to load events manifest');
+    }
+    const manifest: EventManifest = await manifestResponse.json();
+    const eventArrays = await Promise.all(
+      manifest.files.map(async (file) => {
+        const events = await loadEventFile(file);
+        const sourceFile = file.replace(/\.json$/, '');
+        return events.map((event) => ({ ...event, sourceFile }));
+      })
+    );
+    return eventArrays.flat();
+  } catch (error) {
+    console.error('Failed to load events (unfiltered):', error);
+    return [];
+  }
+}
+
 function deduplicateEvents(events: HistoricalEvent[]): HistoricalEvent[] {
   const seen = new Set<string>();
   const unique: HistoricalEvent[] = [];
@@ -134,4 +165,36 @@ export function filterByEra(events: HistoricalEvent[], eras: Era[]): HistoricalE
       return def && event.year >= def.startYear && event.year <= def.endYear;
     });
   });
+}
+
+/**
+ * Filter events by macro-region (docs/regions/index.md). Every region selected means no
+ * filtering at all, so an event with no tags is still dealt in an unfiltered game. Otherwise an
+ * event stays when any region it resolves to is selected; "Global" matches Global-tagged events.
+ */
+export function filterByRegion(events: HistoricalEvent[], regions: string[]): HistoricalEvent[] {
+  if (ALL_REGIONS.every((r) => regions.includes(r))) return events;
+  const wanted = new Set(regions);
+  return events.filter((event) => {
+    for (const region of eventRegionSet(event)) if (wanted.has(region)) return true;
+    return false;
+  });
+}
+
+export interface PoolFilters {
+  difficulties: Difficulty[];
+  categories: Category[];
+  eras: Era[];
+  /** Missing means every region: configs and settings saved before the filter existed. */
+  regions?: string[];
+}
+
+/**
+ * The Custom-game pool: every filter in one place, so the deck dealt, the count on the Play
+ * button, its validity check and the Timeline tab's view cannot drift apart.
+ */
+export function filterPool(events: HistoricalEvent[], filters: PoolFilters): HistoricalEvent[] {
+  const byDifficulty = filterByDifficulty(events, filters.difficulties);
+  const byEra = filterByEra(filterByCategory(byDifficulty, filters.categories), filters.eras);
+  return filters.regions ? filterByRegion(byEra, filters.regions) : byEra;
 }

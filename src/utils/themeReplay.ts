@@ -6,6 +6,7 @@ import { buildRampedDeck } from './deckBuilder';
 import { DAILY_HAND_SIZE } from './dailyConfig';
 import { getDailyTheme } from './dailyTheme';
 import { generateChallengeSeed } from './challengeCode';
+import { minDeckSize } from './gameLogic';
 
 /**
  * Replaying a curated theme after its day: the Archive tab.
@@ -29,12 +30,12 @@ import { generateChallengeSeed } from './challengeCode';
 export const REPLAY_HAND_SIZE = DAILY_HAND_SIZE;
 
 /**
- * Smallest resolved pool a replay can be dealt from. Mirrors `startGame`'s guard
- * (`playerCount * handSize + 1 + playerCount * 2`) for one player and the replay hand. A
+ * Smallest resolved pool a replay can be dealt from: `startGame`'s guard for one player and
+ * the replay hand. A
  * stored theme is at least 16 slugs, but slugs whose events lost their art resolve to
  * nothing, so the pool is checked rather than the theme.
  */
-export const REPLAY_MIN_POOL = 1 * REPLAY_HAND_SIZE + 1 + 1 * 2;
+export const REPLAY_MIN_POOL = minDeckSize(1, REPLAY_HAND_SIZE);
 
 /** One row of the Archive list. */
 export type ArchiveStatus =
@@ -148,7 +149,6 @@ export function withFreshReplaySeed(config: GameConfig): GameConfig {
 export function buildThemeReplayConfig(theme: CuratedTheme): GameConfig {
   return {
     mode: 'suddenDeath',
-    totalTurns: 7,
     selectedDifficulties: [...DEFAULT_DIFFICULTIES],
     selectedCategories: [...ALL_CATEGORIES],
     selectedEras: [...ALL_ERAS],

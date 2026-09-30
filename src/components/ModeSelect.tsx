@@ -2,18 +2,7 @@ import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
-import {
-  GameConfig,
-  Difficulty,
-  Category,
-  Era,
-  HistoricalEvent,
-  WhenGameState,
-  ALL_CATEGORIES,
-  DEFAULT_DIFFICULTIES,
-} from '../types';
-import { ALL_ERAS } from '../utils/eras';
-import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
+import { GameConfig, HistoricalEvent, WhenGameState } from '../types';
 import CustomPanel from './panels/CustomPanel';
 import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
@@ -29,17 +18,12 @@ import { buildThemeReplayConfig } from '../utils/themeReplay';
 import { buildDailyConfig, buildDailyDeck } from '../utils/dailyConfig';
 import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
 import { canResumeDailyProgress, getTodayDailyProgress } from '../utils/dailyProgress';
-import {
-  getTodayResult,
-  DailyResult,
-  getCustomSettings,
-  saveCustomSettings,
-} from '../utils/playerStorage';
+import { getTodayResult, DailyResult } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
-import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
 import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { useToday } from '../hooks/useToday';
+import { useCustomGameSettings } from '../hooks/useCustomGameSettings';
 
 import Leaderboard from './Leaderboard';
 import { useDailyTabHints } from '../hooks/useDailyTabHints';
@@ -130,11 +114,6 @@ function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard):
   return !board.submitted;
 }
 
-// Default hand size by player count (1–6 players); anything else falls back to 5.
-const DEFAULT_HAND_SIZES = [7, 6, 5, 4, 3, 3];
-const getDefaultHandSize = (count: number): number =>
-  (count >= 1 ? DEFAULT_HAND_SIZES.at(count - 1) : undefined) ?? 5;
-
 const ModeSelect: React.FC<ModeSelectProps> = ({
   onStart,
   onReviewDaily,
@@ -223,97 +202,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   const canSubmitScore = hasUnclaimedScore(todayResult, leaderboardState);
 
-  // Restore the player's last Custom-game configuration (read localStorage once on mount).
-  // The deck seed is NOT restored — it stays random per play, so a refresh keeps the settings
-  // but still yields a different game.
-  const [savedSettings] = useState(() => getCustomSettings());
-
-  // Play settings. The players and hand-size controls are hidden for now, but their setters
-  // are still wired so the Share Game Settings code input can apply a decoded code to all
-  // settings.
-  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(
-    savedSettings?.selectedDifficulties ?? [...DEFAULT_DIFFICULTIES]
-  );
-  const [selectedCategories, setSelectedCategories] = useState<Category[]>(() => {
-    // Drop any stale categories from a previous taxonomy in saved settings; if nothing
-    // valid remains (e.g. an old install), fall back to all categories.
-    const restored = savedSettings?.selectedCategories?.filter((c) => ALL_CATEGORIES.includes(c));
-    return restored && restored.length > 0 ? restored : [...ALL_CATEGORIES];
-  });
-  const [selectedEras, setSelectedEras] = useState<Era[]>(
-    savedSettings?.selectedEras ?? [...ALL_ERAS]
-  );
-
-  // Player settings (the players UI is hidden; `playerNames` is unused until it returns)
-  const [playerCount, setPlayerCount] = useState(savedSettings?.playerCount ?? 1);
-  const [playerNames] = useState<string[]>(['', '', '', '', '', '']);
-
-  // Hand size setting (3-8 cards) - default varies by player count
-  const [cardsPerHand, setCardsPerHand] = useState(savedSettings?.cardsPerHand ?? 7);
-
-  // Sudden death hand size (1-7 cards, acts as "lives")
-  const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(
-    savedSettings?.suddenDeathHandSize ?? 5
-  );
-
-  // Persist Custom-game settings on every change so they survive a refresh.
-  useEffect(() => {
-    saveCustomSettings({
-      selectedDifficulties,
-      selectedCategories,
-      selectedEras,
-      playerCount,
-      cardsPerHand,
-      suddenDeathHandSize,
-    });
-  }, [
-    selectedDifficulties,
-    selectedCategories,
-    selectedEras,
-    playerCount,
-    cardsPerHand,
-    suddenDeathHandSize,
-  ]);
-
-  const handlePlayerCountChange = (count: number) => {
-    setPlayerCount(count);
-    setCardsPerHand(getDefaultHandSize(count));
-  };
-
-  // Check if settings are valid
-  const isPlayValid = useMemo(() => {
-    if (
-      selectedDifficulties.length === 0 ||
-      selectedCategories.length === 0 ||
-      selectedEras.length === 0
-    ) {
-      return false;
-    }
-    const count = filterByEra(
-      filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
-      selectedEras
-    ).length;
-    // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
-    const minRequired = playerCount * suddenDeathHandSize + 1 + playerCount * 2;
-    return count >= minRequired;
-  }, [
-    allEvents,
-    selectedDifficulties,
-    selectedCategories,
-    selectedEras,
-    playerCount,
-    suddenDeathHandSize,
-  ]);
-
-  // Total cards matching the current selection — shown on the Custom page.
-  const deckCount = useMemo(
-    () =>
-      filterByEra(
-        filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
-        selectedEras
-      ).length,
-    [allEvents, selectedDifficulties, selectedCategories, selectedEras]
-  );
+  const customSettings = useCustomGameSettings(allEvents);
 
   // Daily theme + preview - keyed on `today` so they recompute when the day rolls over.
   const dailyTheme = useMemo(() => getDailyTheme(today), [today]);
@@ -367,35 +256,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     }
   };
 
-  const handlePlayStart = () => {
-    const names = playerNames
-      .slice(0, playerCount)
-      .map((name, i) => name.trim() || `Player ${i + 1}`);
-
-    // Generate a shareable challenge code encoding settings + random seed
-    const challengeCode = encodeChallengeCode({
-      handSize: suddenDeathHandSize,
-      playerCount,
-      difficulties: selectedDifficulties,
-      categories: selectedCategories,
-      eras: selectedEras,
-      seed: generateChallengeSeed(),
-    });
-
-    onStart({
-      mode: 'suddenDeath',
-      totalTurns: cardsPerHand,
-      selectedDifficulties,
-      selectedCategories,
-      selectedEras,
-      challengeSeed: challengeCode,
-      challengeCode,
-      playerCount,
-      playerNames: names,
-      cardsPerHand,
-      suddenDeathHandSize,
-    });
-  };
+  const handlePlayStart = () => onStart(customSettings.buildGameConfig());
 
   if (isLoading) {
     return <LoadingState />;
@@ -471,19 +332,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           {/* Custom page */}
           <CustomPanel
             active={activePage === indexForTabKey('custom')}
-            selectedDifficulties={selectedDifficulties}
-            setSelectedDifficulties={setSelectedDifficulties}
-            selectedCategories={selectedCategories}
-            setSelectedCategories={setSelectedCategories}
-            selectedEras={selectedEras}
-            setSelectedEras={setSelectedEras}
-            playerCount={playerCount}
-            onPlayerCountChange={handlePlayerCountChange}
-            suddenDeathHandSize={suddenDeathHandSize}
-            setSuddenDeathHandSize={setSuddenDeathHandSize}
+            {...customSettings.panelProps}
             onPlay={handlePlayStart}
-            deckCount={deckCount}
-            isPlayValid={isPlayValid}
           />
 
           {/* Stats page (lazy: mounted once first visited) */}
@@ -515,14 +365,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
       {/* The Daily hero's read-more. Its event is the deck's starting card, placed face-up with
           its year on turn 1, so the detail card opens on the prose like any other placed card. */}
-      {infoEvent && (
-        <GamePopup
-          type="description"
-          event={infoEvent}
-          onDismiss={() => setInfoEvent(null)}
-          showYear
-        />
-      )}
+      <GamePopup
+        type="description"
+        event={infoEvent}
+        onDismiss={() => setInfoEvent(null)}
+        showYear
+      />
 
       {/* Leaderboard Modal */}
       <Leaderboard

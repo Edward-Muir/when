@@ -165,7 +165,7 @@ const LEET_DIGIT_LETTERS = 'oizeasgtbg';
  * collapseDuplicatesTransformer does. LITERAL_HATE_TERMS above must keep running on its own
  * digits-preserved string; don't route it through here.
  */
-export function foldName(token: string): string {
+function foldName(token: string): string {
   return token
     .normalize('NFKD')
     .toLowerCase() // after NFKD: 'İ'.toLowerCase() emits a combining dot for the next step

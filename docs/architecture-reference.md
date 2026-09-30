@@ -76,11 +76,27 @@ Everything else (`gameLogic`, `placementLogic`, `eventLoader`, `playerStorage`,
 `dndSensors`, `eras`, `eventNameLength`, `introEvents`, `timelineRows`, `eventColor`, …)
 does what its name says.
 
+## Routes (`src/index.tsx`)
+
+Player-facing: `/:tab?` is the home pager (`/`, `/archive`, `/custom`, `/stats`, `/timeline`
+open it on that tab and the URL follows the swipe; see `src/pages/Home.tsx`), `/daily`,
+`/challenge/:code`, `/privacy`, `/terms`, `/support`, `/changelog`. `/achievements` is retired
+and redirects to `/stats`, where the badges live now. Anything else redirects to `/`.
+
+Unlinked maintainer tools: `/image-qc`, `/card-reports`, `/cards-preview`, `/unlock-preview`,
+`/anim-jig`, `/reminder-preview`, `/share-preview`, `/timeline-lab`, `/admin/dedup` (the
+duplicate-review tool; see [dedup/](dedup/index.md)).
+
+**A client route needs a rewrite in `vercel.json` or it 404s on a direct load in production.**
+Every tab path has one, and so does `/achievements` so its redirect can run on a hard load.
+Only `/image-qc`, `/card-reports` and `/admin/dedup` among the maintainer tools have one; the rest are local-dev
+only. Check `vercel.json` rather than trusting this list.
+
 ## Type Definitions (types/index.ts)
 
-Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePhase`, `GamePopupType`, `AnimationPhase`, `PlacementResult`, `Category` (20 values), `Difficulty` (4, incl. `very-hard`), `Era` (8), `GameMode` (2 — `daily` and `suddenDeath`, same mechanics, different deck source).
+Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePhase`, `GamePopupType`, `AnimationPhase`, `PlacementResult`, `Category` (the list is `ALL_CATEGORIES`), `Difficulty` (4, incl. `very-hard`), `Era` (8), `GameMode` (2 — `daily` and `suddenDeath`, same mechanics, different deck source).
 
-`GameConfig.totalTurns` is written by three callers and read by none — it is a leftover, not a turn limit. There is no turn cap in either mode.
+There is no turn cap in either mode: a game ends only when the hand empties.
 
 ## API Routes (Vercel Serverless)
 
@@ -143,13 +159,13 @@ Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
 
 ## Dependencies
 
-**Frontend**: `react`, `react-dom`, `react-router-dom`, `@dnd-kit/core`, `@dnd-kit/utilities`, `framer-motion`, `lucide-react`, `react-confetti-explosion`, `tailwindcss`
+**Frontend**: `react`, `react-dom`, `react-router-dom`, `@dnd-kit/core`, `framer-motion`, `lucide-react`, `react-confetti-explosion`, `tailwindcss`
 
 **Backend**: `@vercel/node`, `@upstash/redis`, `obscenity` (display-name filtering; server-only, never bundled into the client)
 
 **Mobile**: `@capacitor/core`, `@capacitor/haptics`, `@capacitor/ios`, `@capacitor/splash-screen`, `@capacitor/status-bar`
 
-**Dev**: `husky`, `lint-staged`, `prettier`, `commit-and-tag-version`, `eslint-plugin-security`, `puppeteer`, `sharp`. Note `typescript` sits in `dependencies`, not `devDependencies`, and `eslint` itself is not a declared dependency at all — it arrives transitively via `react-scripts`.
+**Dev**: `husky`, `lint-staged`, `prettier`, `commit-and-tag-version`, `eslint-plugin-security`, `puppeteer`. Note `typescript` sits in `dependencies`, not `devDependencies`, and `eslint` itself is not a declared dependency at all — it arrives transitively via `react-scripts`.
 
 ## Versioning & Releases
 
@@ -163,6 +179,26 @@ A release **aborts** unless a human note is staged, at the `prerelease` hook and
 workflow step; the `skip-note` dispatch input is the one way past it, and records a
 maintenance entry rather than nothing. See [release-notes.md](release-notes.md) for the
 sync contract between the two histories.
+
+**How a release runs.** `./scripts/release.sh [patch|minor|major]` (or `npm run release[:patch|:minor|:major]`)
+bumps `package.json`, regenerates `CHANGELOG.md`, runs the `postchangelog` hook
+(`scripts/release-notes.js` → `generate-rss.js` → `inject-version.js`, in that order, updating
+`public/release-notes.json`, `public/feed.xml`, `src/version.ts`, `public/version.json` and
+`public/service-worker.js`), commits `chore(release): x.y.z`, tags `vX.Y.Z` and pushes with
+`--follow-tags`.
+
+- **Bump auto-detect** reads Conventional Commits since the last tag: `feat` → minor,
+  `fix`/`perf` → patch; `docs`/`refactor`/`chore`/`ci` are hidden from the changelog.
+- **Automatic release on merge:** `.github/workflows/release.yml` runs on every push to `main`
+  with `GITHUB_TOKEN` (which can push to `main`), and releases only when the merge contains a
+  `feat`/`fix`/`perf` commit. Squash-merging a PR with a `feat:`/`fix:` title ships a release
+  with no further action; a docs/chore/ci/refactor-only merge is skipped.
+- **Manual release:** the same workflow's `workflow_dispatch` (Actions → Release → Run
+  workflow) forces a bump, including for a merge that auto-skipped, and its **skip-note** input
+  records a maintenance release with nothing to tell a player. The GitHub mobile app cannot
+  trigger workflows; mobile web can, at `github.com/Edward-Muir/when/actions/workflows/release.yml`.
+- **Why CI, not local:** cloud (Claude Code on the web) sessions are org-policy-blocked from
+  pushing to `main` (HTTP 403), so they open and merge PRs and leave the release to the Action.
 
 Key files: `src/version.ts` (auto-generated), `.versionrc.json` (config),
 `scripts/inject-version.js`, `scripts/generate-rss.js`, `scripts/release-notes-lib.js`
