@@ -17,8 +17,14 @@ Capacitor iOS wrapper, safe-area handling, and daily reminder notifications.
   plugin must feature-gate (see `isDailyReminderSupported()`), or a stale shell throws.
 
 Bundle id `com.playwhen.app`; `ios/` is committed, `ios/App/App/public/` is gitignored.
-Scripts: `npm run cap:sync`, `cap:open:ios`. (`cap:open:android` exists but there is no
-`android/` directory — Android was never added.)
+Scripts: `npm run cap:sync`, `cap:open:ios`, `cap:open:android`.
+
+**Android** (`android/`, added 2026-10 for Google Play) is the same remote-URL WebView shell.
+Icons and pre-Android-12 splash images come from the same painting via
+`npm run generate-icons:android`. Release builds are signed with the Play _upload_ key, which
+lives outside the repo in `../when-android-signing/` (keystore + `keystore.properties`; see
+`android/app/build.gradle`). Bump `versionCode` in `android/app/build.gradle` for every upload.
+Build: `cd android && ./gradlew bundleRelease` -> `app/build/outputs/bundle/release/app-release.aab`.
 
 ## UIScene lifecycle (required from the iOS 27 SDK)
 

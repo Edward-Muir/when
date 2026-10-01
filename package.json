@@ -3,6 +3,7 @@
   "version": "1.31.0",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^8.5.2",
     "@capacitor/app": "^8.1.1",
     "@capacitor/cli": "^8.5.2",
     "@capacitor/core": "^8.5.2",
@@ -69,7 +70,8 @@
     "generate-icons": "node scripts/generate-icons.js",
     "cap:sync": "cap sync",
     "cap:open:ios": "cap open ios",
-    "cap:open:android": "cap open android"
+    "cap:open:android": "cap open android",
+    "generate-icons:android": "node scripts/generate-android-icons.js"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
