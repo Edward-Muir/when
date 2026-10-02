@@ -78,7 +78,17 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
     savedSettings?.suddenDeathHandSize ?? 5
   );
 
+  const groupEmpty =
+    selectedDifficulties.length === 0 ||
+    selectedCategories.length === 0 ||
+    selectedEras.length === 0 ||
+    selectedRegions.length === 0;
+
+  // Saved on every change, except while a group is empty (Clear, on the way to a pick): an
+  // empty group fails `normalizeCustomSettings`, which would throw away every saved setting on
+  // the next load. Leaving the page mid-pick restores the last complete selection instead.
   useEffect(() => {
+    if (groupEmpty) return;
     saveCustomSettings({
       selectedDifficulties,
       selectedCategories,
@@ -98,6 +108,7 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
     playerCount,
     cardsPerHand,
     suddenDeathHandSize,
+    groupEmpty,
   ]);
 
   const onPlayerCountChange = (count: number) => {
@@ -125,11 +136,6 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
     ]
   );
 
-  const groupEmpty =
-    selectedDifficulties.length === 0 ||
-    selectedCategories.length === 0 ||
-    selectedEras.length === 0 ||
-    selectedRegions.length === 0;
   const isPlayValid = !groupEmpty && deckCount >= minDeckSize(playerCount, suddenDeathHandSize);
 
   /** A fresh game from the current settings, with a new seed packed into its share code. */

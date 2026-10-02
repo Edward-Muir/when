@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react';
+import { act, renderHook } from '@testing-library/react';
 import { useCustomGameSettings } from './useCustomGameSettings';
 import { legacyPicksToExclusions } from '../utils/countrySelection';
 import { getCustomSettings } from '../utils/playerStorage';
@@ -58,5 +58,25 @@ describe('useCustomGameSettings', () => {
     const { result } = renderHook(() => useCustomGameSettings(events));
     expect(result.current.panelProps.excludedCountries).toEqual([]);
     expect(result.current.panelProps.deckCount).toBe(events.length);
+  });
+
+  /**
+   * Clear empties a group on the way to a pick. An empty group would fail validation on the next
+   * load and reset every setting, so it is never saved: the last complete selection is.
+   */
+  it('saves nothing while a group is empty, keeping the last complete selection', () => {
+    const { result } = renderHook(() => useCustomGameSettings(events));
+    act(() => result.current.panelProps.setSelectedCategories(['science']));
+    expect(getCustomSettings()?.selectedCategories).toEqual(['science']);
+
+    act(() => result.current.panelProps.setSelectedCategories([]));
+    act(() => result.current.panelProps.setSelectedEras(['ancient']));
+    expect(result.current.panelProps.isPlayValid).toBe(false);
+    expect(getCustomSettings()?.selectedCategories).toEqual(['science']);
+    expect(getCustomSettings()?.selectedEras).toEqual([...ALL_ERAS]);
+
+    act(() => result.current.panelProps.setSelectedCategories(['art']));
+    expect(getCustomSettings()?.selectedCategories).toEqual(['art']);
+    expect(getCustomSettings()?.selectedEras).toEqual(['ancient']);
   });
 });

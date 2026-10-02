@@ -36,9 +36,9 @@ interface CustomGameSettingsProps {
 
 /**
  * Inline custom-game configuration for the Custom page of the mode-select pager.
- * The card is a bounded flex column: the options (Categories / Eras / Difficulty pill
- * filters + the editable Share Game Settings code) scroll, while the Play button stays
- * pinned in a fixed footer so it is always visible and clickable. The hand-size, players
+ * The card is a bounded flex column: the options (Difficulty / Categories / Eras / Regions
+ * pill filters + the editable share link) scroll, while the Play button stays pinned in a
+ * fixed footer so it is always visible and clickable. The hand-size, players
  * and player-name controls are hidden for now and kept as commented-out dead code at the
  * bottom of this file for easy reinstatement.
  */
@@ -93,15 +93,24 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   );
 
   const shareUrl = `${CHALLENGE_URL}/${challengeCode}`;
+  // A group emptied (by Clear, on the way to a pick) has no link: the code can't encode an
+  // empty group, so the one it would show wouldn't load for anyone. The input is left empty,
+  // still ready for a pasted link, and Share waits.
+  const groupsComplete = [
+    selectedDifficulties,
+    selectedCategories,
+    selectedEras,
+    selectedRegions,
+  ].every((group) => group.length > 0);
 
   // Sync the displayed share URL to the computed game state when settings change
   useEffect(() => {
     if (!applyingCodeRef.current) {
-      setCodeInput(shareUrl);
+      setCodeInput(groupsComplete ? shareUrl : '');
       setIsCodeValid(true);
     }
     applyingCodeRef.current = false;
-  }, [shareUrl]);
+  }, [shareUrl, groupsComplete]);
 
   const handleCodeInput = (value: string) => {
     setCodeInput(value);
@@ -180,8 +189,10 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
             </button>
             <button
               onClick={handleShareChallenge}
-              className="p-2 rounded-lg bg-border hover:bg-border/70 transition-colors flex-shrink-0"
+              disabled={!groupsComplete}
+              className="p-2 rounded-lg bg-border hover:bg-border/70 transition-colors flex-shrink-0 disabled:opacity-40"
               title="Share settings"
+              aria-label="Share settings"
             >
               <Share2 className="w-4 h-4 text-text-muted" />
             </button>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Search } from 'lucide-react';
 import Modal from './ui/Modal';
 import { matchCountries } from '../utils/regions';
-import { pillClass } from './filterPill';
+import FilterPill from './FilterPill';
+import FilterGroupHeader from './FilterGroupHeader';
 import {
   RegionSelection,
   isCountryOn,
@@ -36,7 +37,9 @@ const RegionCountries: React.FC<{
   capped: boolean;
   isOn: (country: string) => boolean;
   onTap: (country: string) => void;
-}> = ({ region, countries, capped, isOn, onTap }) => {
+  /** Switch every country this group lists on or off (only the matches while searching). */
+  onSetAll: (on: boolean) => void;
+}> = ({ region, countries, capped, isOn, onTap, onSetAll }) => {
   const [showAll, setShowAll] = useState(false);
   // A fixed cut, so a tap never changes which chips are shown.
   const hidden = capped && !showAll ? countries.length - VISIBLE_COUNTRIES : 0;
@@ -46,25 +49,20 @@ const RegionCountries: React.FC<{
 
   return (
     <div>
-      {/* The same count as the other filter groups' headers. */}
-      <div className="mb-1.5 flex items-center justify-between gap-2">
-        <span className="text-xs font-medium uppercase tracking-wide text-text-muted font-body">
-          {region}
-        </span>
-        <span className="text-xs font-medium text-text-muted font-body tabular-nums">
-          {onCount === countries.length ? 'All' : `${onCount}/${countries.length}`}
-        </span>
-      </div>
+      {/* The same header as the other filter groups: count, Select all and Clear. */}
+      <FilterGroupHeader
+        label={region}
+        count={{ selected: onCount, total: countries.length }}
+        allOn={onCount === countries.length}
+        noneOn={onCount === 0}
+        onSelectAll={() => onSetAll(true)}
+        onClear={() => onSetAll(false)}
+      />
       <div className="flex flex-wrap gap-2">
         {visible.map((country) => (
-          <button
-            key={country}
-            onClick={() => onTap(country)}
-            aria-pressed={isOn(country)}
-            className={pillClass(isOn(country), 'sm')}
-          >
+          <FilterPill key={country} size="sm" state={isOn(country)} onClick={() => onTap(country)}>
             {country}
-          </button>
+          </FilterPill>
         ))}
         {(hidden > 0 || canCollapse) && (
           <button
@@ -82,9 +80,10 @@ const RegionCountries: React.FC<{
 /**
  * The country picker behind the Regions group's "Countries" row: a search box over every
  * region's countries, grouped by region in a fixed order. Every country starts on, and a chip is
- * blue exactly when its cards are in the deck. A region that is off keeps its place with its
- * chips white, so switching off its last country never makes it vanish; tapping one of its
- * chips selects the region with only that country. Rules: `src/utils/countrySelection.ts`.
+ * ticked exactly when its cards are in the deck. A region that is off keeps its place with its
+ * chips white, so switching off its last country (or its header's Clear) never makes it vanish;
+ * tapping one of its chips selects the region with only that country. Rules:
+ * `src/utils/countrySelection.ts`.
  */
 const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
   open,
@@ -124,6 +123,18 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
       (on) => apply(setRegionCountries(selection, region, on, listed)),
       (c) => apply(toggleCountry(selection, region, c, listed))
     );
+  };
+
+  // A region header's Select all / Clear: every country the group lists on or off, the rest of
+  // the region as it was. Without a search that is the whole region, "+N more" included; while
+  // searching it is only the matches, so Clear never switches off a country out of sight.
+  const setGroup = (region: string, countries: readonly string[], on: boolean) => {
+    const listed = countryOptions.get(region) ?? [];
+    const current = listed.filter((c) => isCountryOn(region, c, selection));
+    const next = on
+      ? [...current, ...countries.filter((c) => !current.includes(c))]
+      : current.filter((c) => !countries.includes(c));
+    apply(setRegionCountries(selection, region, next, listed));
   };
 
   // Every chip the popup shows back on: each listed region selected, nothing switched off.
@@ -182,6 +193,7 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
             capped={query.trim() === ''}
             isOn={(country) => isCountryOn(group.region, country, selection)}
             onTap={(country) => tap(group.region, country)}
+            onSetAll={(on) => setGroup(group.region, group.countries, on)}
           />
         ))}
         {groups.length === 0 && (

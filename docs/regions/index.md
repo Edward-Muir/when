@@ -106,8 +106,10 @@ Built 2026-09-30 as designed here:
   validity check (`useCustomGameSettings`) and the Timeline tab, so they cannot drift. All
   regions selected means no filtering. Otherwise keep events whose `eventRegionSet` intersects
   the selection, where Global matches Global-tagged events.
-- **UI.** A "Regions" chip group in `FilterControls.tsx`, with the same double-tap and empty-group
-  behaviour as Categories and Eras. **No explanatory copy**: the maintainer ruled out "by today's
+- **UI.** A "Regions" chip group in `FilterControls.tsx`, with the same Select all / Clear header,
+  double-tap and empty-group behaviour as Categories and Eras. Its Select all also clears every
+  country exclusion, and its count is of whole (ticked) regions, so a partial region keeps it
+  off `All`. **No explanatory copy**: the maintainer ruled out "by today's
   borders"-style text. `FilterPopup` reuses `FilterControls`, so the Timeline panel gets it too.
   The existing `isPlayValid`/`deckCount` already block a pool that is too small.
 - **Challenge codes.** All 72 bits were taken, so an optional 7th 12-bit word holds the regions
@@ -136,13 +138,13 @@ do, but the design read wrong, because in every other group blue means in the de
 maintainer overruled the earlier "inclusion, not exclusion" decision and asked for the picker to
 work like the other groups. That is the model below.
 
-- **Every country starts on, and blue means in the deck.** The state is the selected regions plus
+- **Every country starts on, and a tick means in the deck** (a red cross means out). The state is the selected regions plus
   the **(region, country) pairs switched off** within them (`src/utils/countrySelection.ts`,
   keys like `Europe|United Kingdom`). Nothing off is the default, so the stored and shared form
   of "everything" is empty.
-- **A region chip has three states**: off (white), whole (blue), and partial (`.bg-pill-partial`,
-  a light blue with the selected border, `aria-pressed="mixed"`) when some of its countries are
-  off. Tapping works like a tri-state checkbox: off → whole, whole → off, partial → whole.
+- **A region chip has three states**: off (white, red cross), whole (ticked, `.bg-pill-on`), and partial
+  (a dash on the lighter `.bg-pill-partial`, `aria-pressed="mixed"`) when some of its countries
+  are off: the tri-state checkbox's tick and dash, on the shared `FilterPill`. Tapping works like a tri-state checkbox: off → whole, whole → off, partial → whole.
   Deselecting a region switches all its countries off; selecting it switches them all back on.
 - **Country chips tap like every other filter pill** (`usePillTap`, shared with
   `FilterControls`), with each region its own group. A tap toggles; a double-tap leaves only that
@@ -154,9 +156,14 @@ work like the other groups. That is the model below.
   but the region stays listed in the popup, in its place, with its chips white: the maintainer
   found a region vanishing mid-tap annoying, so **the popup lists every region, selected or not,
   in a fixed order**. Tapping a chip in a region that is off selects that region with only that
-  country on, which is the quick way to "only the UK". Each region header counts like the other
-  groups' (`All` or `n/N`); the footer's **Select all** turns every chip it shows back on: every
-  listed region selected, nothing off. Double-tapping a region chip in the Regions group still
+  country on, which is the quick way to "only the UK". Each region header is the other groups'
+  `FilterGroupHeader` (2026-10, at the maintainer's request that the picker match the Custom
+  page): an `All` or `n/N` count, then **Select all** and **Clear** for that region. They act on
+  the countries the group lists: the whole region, "+N more" included, or only the matches while
+  searching, so Clear never switches off a country out of sight. Both go through
+  `setRegionCountries`, so clearing a region turns it off and it stays listed, white. The
+  footer's **Select all** turns every chip it shows back on: every listed region selected,
+  nothing off. Double-tapping a region chip in the Regions group still
   isolates or restores, and restoring every region also clears every exclusion, so "all" means
   all.
 - **The filter** (`filterByRegion`): an event stays when some region it resolves to is selected
