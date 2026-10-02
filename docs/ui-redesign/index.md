@@ -528,8 +528,35 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
 
 ## Custom settings screen
 
-**Double-tap to isolate a filter pill** (Categories, Difficulty and Eras alike). With 20
-categories, isolating one used to mean tapping off 19.
+**Select all and Clear on every filter group (2026-10).** Watching a new player, the maintainer
+saw them fail to pick a single category: the double-tap below was undiscoverable, and the header's
+`All` / `n/N` looked like a control but was a label. Researched against the usual multi-select
+patterns (Material filter chips, NN/g on checkboxes and hidden gestures), the page keeps its
+include-list model (everything on by default) and adds the convention that goes with it:
+
+- **`FilterGroupHeader.tsx`, shared by all four groups, the Timeline popup and each region in the
+  country picker.** The count moves beside the label (`CATEGORIES · 2/21`) and **Select all** /
+  **Clear** sit on the right, each disabled when it would change nothing. They are verbs on
+  purpose: a button labelled `All` reads as a status, which is exactly what the old label did.
+  "Science only" is now Clear, then Science; "everything but Sports" stays one tap.
+- **Ticked chips, not solid ones (`FilterPill.tsx`).** Selected is a light blue tint
+  (`.bg-pill-on`) with a teal border and a leading tick; partial is a lighter tint with a dash;
+  off is the white outline. The old solid `bg-accent-secondary` was the Play button's colour, so
+  a page of selected chips read as buttons, and with every chip on there was nothing to compare
+  against to tell what "filled" meant. Every chip now has `aria-pressed`.
+- **A chip is the same width on and off.** The off padding equals the on padding plus the tick,
+  so a toggle never reflows the 21 wrapped categories and moves a chip out from under the finger
+  (a reflow would also land a double-tap's second tap on a different chip). The padding is kept
+  tight so the four difficulty chips share one row on a 375px phone, measured in Inter.
+- **An empty group is a normal step, not an error.** Its prompt ("Pick at least one category") is
+  muted, Play stays disabled, and the group is **neither saved nor shareable**: settings are not
+  written while a group is empty (an empty group fails `normalizeCustomSettings`, which used to
+  reset every saved setting on the next load), and the share input is left empty with Share
+  disabled, because a code can't encode an empty group and the link shown used not to load.
+- **The double-tap stays**, undocumented, as a shortcut for those who find it.
+
+**Double-tap to isolate a filter pill** (Categories, Difficulty and Eras alike). With 21
+categories, isolating one used to mean tapping off 20.
 
 - **Single tap is instant — no debounce.** The first implementation used a 250 ms timeout to
   disambiguate and felt "sticky/slow", and the double-click raced React re-renders.
@@ -549,8 +576,9 @@ seed is deliberately not persisted** — a refresh restores your filters but sti
 different deck.
 
 **Section headers show `n/N` selected**, or the literal `All` when everything is on, in
-`text-text-muted`. Gated behind a `showCounts` prop because `FilterControls` has a second
-consumer (the in-game `FilterPopup`), which has its own footer count and was left alone.
+`text-text-muted`, beside the label. Gated behind a `showCounts` prop because `FilterControls` has
+a second consumer (the Timeline tab's `FilterPopup`), which has its own footer count; Select all
+and Clear show in both.
 
 ## Dev-loop trap: the service worker used to serve stale code on localhost
 

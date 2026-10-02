@@ -94,13 +94,16 @@ body {
   }
 }
 
-/* A filter pill that is partly on: a region chip with some of its countries switched off. Same
-   trap as `.bg-player-row`, so the selected blue is mixed into the surface here rather than
-   written as `bg-accent-secondary/25`. The text stays the body colour so it reads in both
-   themes; the full-strength border is what ties it to the selected blue. */
+/* Filter pill fills (`FilterPill.tsx`): selected, and partly on (a region chip with some of its
+   countries switched off). Same trap as `.bg-player-row`, so the blue is mixed into the surface
+   here rather than written as `bg-accent-secondary/25`. The text stays the body colour so it
+   reads in both themes; the full-strength border and the tick or dash tie both to the blue. */
 @layer utilities {
+  .bg-pill-on {
+    background-color: color-mix(in srgb, var(--color-accent-secondary) 22%, var(--color-surface));
+  }
   .bg-pill-partial {
-    background-color: color-mix(in srgb, var(--color-accent-secondary) 25%, var(--color-surface));
+    background-color: color-mix(in srgb, var(--color-accent-secondary) 8%, var(--color-surface));
   }
 }
 

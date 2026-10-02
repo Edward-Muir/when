@@ -1,7 +1,8 @@
 {
   "documentedFrom": "1.24.0",
   "unreleased": [
-    "Card popups now have a close button beside a narrower report button, within thumb reach."
+    "Card popups now have a close button beside a narrower report button, within thumb reach.",
+    "Custom filters and the country picker gain Select all and Clear buttons, and chosen chips show a tick."
   ],
   "releases": [
     {
