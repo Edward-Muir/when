@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.32.0](https://github.com/Edward-Muir/when/compare/v1.31.0...v1.32.0) (2026-10-02)
+
+
+### Features
+
+* filter Select all / Clear, ticked chips, and a closer card close button ([#73](https://github.com/Edward-Muir/when/issues/73)) ([59ca5fc](https://github.com/Edward-Muir/when/commit/59ca5fcab688f4b152ab8de44b7cfa72c59e7724))
+
 ## [1.31.0](https://github.com/Edward-Muir/when/compare/v1.30.0...v1.31.0) (2026-09-30)
 
 

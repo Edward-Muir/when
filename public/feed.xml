@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 20:49:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 08:40:26 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.32.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.32.0</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>filter Select all / Clear, ticked chips, and a closer card close button (<a href="https://github.com/Edward-Muir/when/issues/73">#73</a>) (<a href="https://github.com/Edward-Muir/when/commit/59ca5fcab688f4b152ab8de44b7cfa72c59e7724">59ca5fc</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.31.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.23.0</guid>
       <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/>- **event-detail:** long-form prose for all 5,460 events (<a href="https://github.com/Edward-Muir/when/issues/59">#59</a>) (<a href="https://github.com/Edward-Muir/when/commit/1481f035f8cf1dc9c5ba149b55b6420e5bc48266">1481f03</a>)]]></description>
-    </item>
-    <item>
-      <title>When? v1.22.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.22.0</guid>
-      <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/>- **timeline:** a rail that grows with the board, and a marker that lands as its tick (<a href="https://github.com/Edward-Muir/when/issues/58">#58</a>) (<a href="https://github.com/Edward-Muir/when/commit/1b0e202a269cf15e2c5501375a56b8dd950dca66">1b0e202</a>)]]></description>
     </item>
   </channel>
 </rss>
