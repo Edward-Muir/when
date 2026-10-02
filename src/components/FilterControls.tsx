@@ -41,6 +41,8 @@ export interface FilterControlsProps {
  * One filter group: its header (label, count, Select all / Clear), its chips, and a quiet
  * prompt when it is empty. An empty group is a normal step on the way to a selection (Clear,
  * then pick), so the prompt is muted rather than an error; Play stays disabled meanwhile.
+ * The prompt's line is always there, blank while the group has a pick, so the prompt
+ * appearing never pushes the groups below it down.
  */
 const FilterGroup: React.FC<{
   label: string;
@@ -59,9 +61,9 @@ const FilterGroup: React.FC<{
       {...actions}
     />
     <div className="flex flex-wrap gap-2">{children}</div>
-    {actions.noneOn && (
-      <p className="text-text-muted text-xs mt-1 font-body">Pick at least one {noun}</p>
-    )}
+    <p className="mt-1 h-4 text-xs leading-4 text-text-muted font-body" aria-live="polite">
+      {actions.noneOn ? `Pick at least one ${noun}` : ''}
+    </p>
   </div>
 );
 
@@ -136,7 +138,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   const handlePillTap = usePillTap();
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-1">
       <FilterGroup
         label="Card Difficulty"
         noun="difficulty"

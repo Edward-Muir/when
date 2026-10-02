@@ -35,7 +35,7 @@ const CountryRefine: React.FC<CountryRefineProps> = (props) => {
         <button
           onClick={() => setOpen(true)}
           aria-haspopup="dialog"
-          className="mt-3 flex min-h-[44px] w-full items-center gap-3 rounded-xl border border-border px-3 text-sm font-body"
+          className="mt-1 flex min-h-[44px] w-full items-center gap-3 rounded-xl border border-border px-3 text-sm font-body"
         >
           <span className="flex-shrink-0 font-medium text-text">Countries</span>
           <span className="min-w-0 flex-1 truncate text-right text-text-muted">{summary}</span>
