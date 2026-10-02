@@ -158,7 +158,7 @@ const PAGE = (icon) => `<!doctype html><html><head><meta charset="utf-8">
 
     const end = window.allCaps.find((c) => c.pos === 'end');
     const E = document.getElementById('end');
-    if (t >= end.at - 0.25) {
+    if (end && t >= end.at - 0.25) {
       const p = clamp((t - end.at + 0.25) / 0.25);
       E.style.opacity = p;
       const i = outBack(clamp((t - end.at) / 0.5));

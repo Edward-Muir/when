@@ -1,8 +1,9 @@
 /**
  * The edit decision list: which footage plays when, the captions over it, and the music cues.
  *
- * Section boundaries sit on the 120 BPM grid from the logo hit (4.0 s), so the cuts land on
- * the beat. Footage windows are placed by the drop marks the capture recorded, so a re-capture
+ * Section boundaries sit on the 120 BPM half-second grid, so the cuts land on the beat. The
+ * cut keeps to the essentials (hook, drag, a miss, a card's story, the sweep) and ends holding
+ * on the daily screen, so every caption stays up for at least about two seconds. Footage windows are placed by the drop marks the capture recorded, so a re-capture
  * with slightly different timing still cuts on each placement. Every claim in a caption is
  * checked against the catalogue the cards come from (and the web) before it ships:
  *   - Death of Cleopatra (30 BCE) to the Moon landing (1969) is 1,999 years; back to the
@@ -10,15 +11,14 @@
  *   - University of Oxford Founded (1096) to Aztec Empire Established (1428) is 332 years.
  */
 
-const LOGO = 4.0;
-const RALLY_AT = 5.0;
-const WRONG_AT = 11.5;
-const DETAIL_AT = 14.5;
-const SWEEP_AT = 20.0;
-const DAILY_AT = 24.0;
-const ARCHIVE_AT = 25.5;
-const END_AT = 27.0;
-const DURATION = 29.4;
+const LOGO = 5.5;
+const RALLY_AT = 6.5;
+const RALLY_DROPS = 3;
+const WRONG_AT = 12.0;
+const DETAIL_AT = 17.0;
+const SWEEP_AT = 22.5;
+const DAILY_AT = 26.0;
+const DURATION = 29.5;
 
 function storyboard(clips, { playable, categories }) {
   const segments = [];
@@ -27,9 +27,9 @@ function storyboard(clips, { playable, categories }) {
   const drops = (name, type) => clips[name].marks.filter((m) => m.type === type).map((m) => m.t);
   const clipLength = (name) => clips[name].frames / 30;
 
-  // Hook: Cleopatra lands at 2.7 s, then holds on the finished timeline.
+  // Hook: Cleopatra lands at 3.0 s, then holds on the finished timeline.
   const hookDrop = drops('hook', 'correct')[0];
-  const hookFrom = Math.max(0, hookDrop - 2.7);
+  const hookFrom = Math.max(0, hookDrop - 3.0);
   segments.push({ clip: 'hook', at: 0, from: hookFrom, dur: LOGO, zoom: [1.0, 1.06] });
   correct.push(hookDrop - hookFrom);
   // Behind the logo: the same timeline, frozen and blurred.
@@ -43,7 +43,7 @@ function storyboard(clips, { playable, categories }) {
   });
 
   // Rally: one window per drop, cut on the pick-up and closing on the landing.
-  const rally = drops('rally', 'correct');
+  const rally = drops('rally', 'correct').slice(0, RALLY_DROPS);
   const span = (WRONG_AT - RALLY_AT) / rally.length;
   rally.forEach((t, i) => {
     const last = i === rally.length - 1;
@@ -55,7 +55,7 @@ function storyboard(clips, { playable, categories }) {
 
   // The miss: Oxford dropped after the Aztecs, then the shake and the tombstone.
   const miss = drops('wrong', 'wrong')[0];
-  const wrongLead = 1.25;
+  const wrongLead = 1.8;
   segments.push({ clip: 'wrong', at: WRONG_AT, from: miss - wrongLead, dur: DETAIL_AT - WRONG_AT });
   wrong.push(WRONG_AT + wrongLead);
 
@@ -79,21 +79,14 @@ function storyboard(clips, { playable, categories }) {
     speed: Math.max(1, (sweepLen - 0.5) / (DAILY_AT - SWEEP_AT)),
   });
 
+  // The last shot: today's challenge, held to the end.
   segments.push({
     clip: 'daily',
     at: DAILY_AT,
     from: 0.1,
-    dur: ARCHIVE_AT - DAILY_AT,
-    zoom: [1.0, 1.04],
+    dur: DURATION - DAILY_AT,
+    zoom: [1.0, 1.05],
   });
-  segments.push({
-    clip: 'archive',
-    at: ARCHIVE_AT,
-    from: 0.1,
-    dur: END_AT - ARCHIVE_AT,
-    zoom: [1.05, 1.0],
-  });
-  segments.push({ end: true, at: END_AT, dur: DURATION - END_AT });
 
   const events = `${(Math.floor(playable / 100) * 100).toLocaleString('en-US')}+`;
   const captions = [
@@ -105,15 +98,15 @@ function storyboard(clips, { playable, categories }) {
       lines: ['Cleopatra lived closer to <em>the Moon landing</em>'],
     },
     {
-      at: 1.55,
+      at: 1.8,
       out: LOGO,
       pos: 'top2',
       small: true,
       lines: ['than to the <em>Great Pyramid.</em>'],
     },
     { at: LOGO, out: RALLY_AT, pos: 'logo' },
-    { at: RALLY_AT - 0.5, out: 8.1, pos: 'top', lines: ['Drag each event <em>into place</em>'] },
-    { at: 8.1, out: WRONG_AT, pos: 'top', lines: ['Before or <em>after?</em>'] },
+    { at: RALLY_AT - 0.5, out: 9.0, pos: 'top', lines: ['Drag each event <em>into place</em>'] },
+    { at: 9.0, out: WRONG_AT, pos: 'top', lines: ['Before or <em>after?</em>'] },
     {
       at: WRONG_AT,
       out: WRONG_AT + wrongLead + 0.15,
@@ -141,18 +134,16 @@ function storyboard(clips, { playable, categories }) {
       lines: ['From <em>T. rex</em> to the <em>iPhone</em>'],
       sub: `${events} events across ${categories} categories`,
     },
-    { at: DAILY_AT, out: ARCHIVE_AT, pos: 'top', lines: ['A new challenge <em>every day</em>'] },
-    { at: ARCHIVE_AT, out: END_AT, pos: 'top', lines: ['Replay every <em>past theme</em>'] },
-    { at: END_AT, out: DURATION + 1, pos: 'end' },
+    { at: DAILY_AT, out: DURATION + 1, pos: 'top', lines: ['A new challenge <em>every day</em>'] },
   ];
 
   const cue = {
     duration: DURATION,
     logo: LOGO,
-    groove: [RALLY_AT - 1.0, END_AT],
+    groove: [LOGO, DAILY_AT],
     breakdown: [DETAIL_AT - 0.5, SWEEP_AT],
     build: SWEEP_AT,
-    end: END_AT,
+    end: DAILY_AT,
     correct,
     wrong,
   };

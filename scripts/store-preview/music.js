@@ -4,7 +4,7 @@
  * 120 BPM in A minor. A ticking clock and a low drone under the hook, a riser into the
  * logo, then a driving four-on-the-floor groove (Am-F-C-G) under the gameplay, a breakdown
  * while a card's story is read, a snare roll into the timeline sweep, and a resolved chord
- * under the end card. Chimes and thuds land on the storyboard's placement times.
+ * under the final shot. A thud lands on the miss; correct placements are left unscored.
  */
 
 const fs = require('fs');
@@ -168,25 +168,6 @@ function pad(mix, t, notes, len, gain = 1) {
         { gain: 0.045 * gain, pan: det < 0 ? -0.5 + j * 0.1 : 0.5 - j * 0.1, send: 0.5 }
       );
     }
-  }
-}
-
-function chime(mix, t, gain = 1) {
-  // Bright bell: E6 + B6 with inharmonic partials, the "correct!" sparkle.
-  for (const [n, g, d] of [
-    [88, 1, 0.5],
-    [95, 0.6, 0.35],
-    [100, 0.3, 0.2],
-  ]) {
-    const f = midi(n);
-    mix.add(
-      t,
-      1.2,
-      (x) =>
-        (Math.sin(TAU * f * x) + 0.25 * Math.sin(TAU * f * 2.76 * x) * Math.exp(-x / 0.08)) *
-        env(x, 0.001, d),
-      { gain: 0.07 * g * gain, pan: 0.1, send: 0.6 }
-    );
   }
 }
 
@@ -378,14 +359,12 @@ function render(cue, outFile) {
   impact(mix, cue.build, 0.55);
   if (cue.sweepHit) impact(mix, cue.sweepHit, 0.4);
 
-  // End card: impact, a ringing resolved chord, and a last chime.
+  // Final shot: impact and a ringing resolved chord.
   reverse(mix, cue.end - 1, 1, 0.8);
   impact(mix, cue.end, 0.9);
   pad(mix, cue.end, [45, 57, 64, 71, 76], cue.duration - cue.end + 0.4, 2);
   bass(mix, cue.end, 33, cue.duration - cue.end - 0.2, 0.8);
-  chime(mix, cue.end + 0.05, 1.2);
 
-  for (const t of cue.correct) chime(mix, t);
   for (const t of cue.wrong) thud(mix, t);
 
   // Reverb, master fade and soft clip.
@@ -428,7 +407,7 @@ function render(cue, outFile) {
   }
   fs.writeFileSync(outFile, out);
   console.log(
-    `  ✓ music: ${cue.duration.toFixed(1)}s, ${cue.correct.length} chimes, ${cue.wrong.length} thud`
+    `  ✓ music: ${cue.duration.toFixed(1)}s, ${cue.wrong.length} thud`
   );
 }
 
