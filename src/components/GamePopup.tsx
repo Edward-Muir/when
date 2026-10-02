@@ -74,48 +74,17 @@ function ResultBanner({ isCorrect, closeEnough }: { isCorrect: boolean; closeEno
   );
 }
 
-/** Header ✕. Flat and tinted like the card's own text, so it reads as part of the card. */
-function CloseButton({
-  event,
-  tombstone,
-  onClick,
-}: {
-  event: HistoricalEvent;
-  tombstone?: boolean;
-  onClick: () => void;
-}) {
-  const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
-  return (
-    <button
-      type="button"
-      aria-label="Close"
-      // Card taps advance past a description popup, so this has to stop there or the dismissal
-      // happens twice over.
-      onClick={(e) => {
-        e.stopPropagation();
-        onClick();
-      }}
-      className={`shrink-0 -my-1 w-11 h-11 flex items-center justify-center rounded-xl opacity-60 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
-    >
-      <X className="w-5 h-5" />
-    </button>
-  );
-}
-
 // Sub-component for event header (title + year)
 function EventHeader({
   event,
   showYear,
   isIncorrect,
   tombstone,
-  trailing,
 }: {
   event: HistoricalEvent;
   showYear: boolean;
   isIncorrect?: boolean;
   tombstone?: boolean;
-  /** The read-more control, rendered right of the title. */
-  trailing?: React.ReactNode;
 }) {
   const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
   return (
@@ -132,7 +101,6 @@ function EventHeader({
           </span>
         )}
       </div>
-      {trailing}
     </div>
   );
 }
@@ -368,11 +336,6 @@ function EventPopupContent({
         showYear={showYear}
         isIncorrect={isIncorrect}
         tombstone={tombstone}
-        trailing={
-          isDescription ? (
-            <CloseButton event={event} tombstone={tombstone} onClick={onDismiss} />
-          ) : undefined
-        }
       />
 
       {/* Showing the prose, this is a fixed box the image sits at the top of: scroll and the image
@@ -416,7 +379,9 @@ function EventPopupContent({
         )}
       </div>
 
-      {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
+      {isDescription && (
+        <ReportIssueButton event={event} tombstone={tombstone} onClose={onDismiss} />
+      )}
       {nextPlayer && (
         <div className="px-4 py-4 border-t border-border">
           <p className={`${getEventTextClass(event)} text-xl text-center font-display`}>
@@ -452,7 +417,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
   // claimed it.
   const showsSubmitForm = isGameOver && !!dailyResult && leaderboard?.submitted === false;
   // Tapping the card advances past a popup, which would eat every scroll drag through the prose.
-  // The backdrop, ESC and the card's own ✕ still get the player out. `showsProse` is only ever
+  // The backdrop, ESC and the ✕ beside the report button still get the player out. `showsProse` is only ever
   // true on a description popup, so this never reaches the game-over sequence.
   const dismiss: ModalDismissMode = showsProse
     ? 'backdrop'

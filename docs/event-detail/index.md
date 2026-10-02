@@ -45,8 +45,13 @@ rest read exactly as they did before it existed.
 **The description also shows where the prose must not**: a card still in the player's hand, and
 the correct/wrong reveals, which are a beat in the game loop rather than a reading surface.
 
-**A ✕ in the header, on the detail popup only.** The reveals keep their tap-to-advance, where a
-close button would read as a decision to make.
+**The ✕ shares the bottom row with "Report an issue", on every description popup.** Report takes
+the left half and the ✕ the right. It moved out of the header (2026-10) because the bottom of the
+card is where a thumb lands to dismiss it, and the old full-width report row caught those taps. It
+is a real button, not a decoration: a hand card closes on any tap anyway, but a card showing prose
+ignores taps on itself, so there the ✕ is the in-card way out. While the report reasons are up the
+✕ steps aside, since the 2x2 chips need the full width. The reveals keep their tap-to-advance,
+where a close button would read as a decision to make.
 
 **Everything between the header and the "Report an issue" row is one scroll region, image
 included.** The header and the report row stay put; the image scrolls up and out of the way and
@@ -154,7 +159,8 @@ reach.
 | Fetch-on-tap state, seeded from cache so re-flips don't flash | `src/hooks/useEventDetail.ts`                 |
 | The prose, and its fallback to the description                | `src/components/EventDetailText.tsx`          |
 | The (i) on the Daily hero's image                             | `src/components/ImageInfoWatermark.tsx`       |
-| Header, ✕, image, scroll region, dismissal, the gate          | `src/components/GamePopup.tsx`                |
+| Header, image, scroll region, dismissal, the gate             | `src/components/GamePopup.tsx`                |
+| Bottom row: report on the left, ✕ on the right                | `src/components/ReportIssueButton.tsx`        |
 | Shape **and voice** rules, shared by scripts and Jest         | `scripts/events/detail-spec.js`               |
 | Disk access, shard read/write, slug→file                      | `scripts/events/detail-catalogue.js`          |
 | Map-then-apply, writes prose **and** `has_detail`             | `scripts/events/detail-apply.js`              |

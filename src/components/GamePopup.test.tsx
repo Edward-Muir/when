@@ -139,4 +139,25 @@ describe('dismissal', () => {
     userEvent.click(card());
     expect(onDismiss).toHaveBeenCalledTimes(1);
   });
+
+  it('closes a card in hand on the ✕ once, not again through the card tap it sits in', async () => {
+    const { onDismiss } = renderPopup({ showYear: false });
+    await screen.findByText(event.description);
+
+    userEvent.click(screen.getByRole('button', { name: 'Close' }));
+    expect(onDismiss).toHaveBeenCalledTimes(1);
+  });
+
+  it('steps the ✕ aside while the report reasons are up, and brings it back on Cancel', async () => {
+    const { onDismiss } = renderPopup({ showYear: false });
+    await screen.findByText(event.description);
+
+    userEvent.click(screen.getByRole('button', { name: /report an issue/i }));
+    expect(screen.getByText(/what's wrong with this card/i)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Close' })).not.toBeInTheDocument();
+
+    userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
+    expect(screen.getByRole('button', { name: 'Close' })).toBeInTheDocument();
+    expect(onDismiss).not.toHaveBeenCalled();
+  });
 });
