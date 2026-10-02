@@ -1,4 +1,5 @@
 import React from 'react';
+import { Capacitor } from '@capacitor/core';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
@@ -20,6 +21,12 @@ import TimelineLab from './pages/TimelineLab';
 import AdminDedup from './pages/AdminDedup';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
+
+// Lets CSS target the Android app's WebView alone (see `.platform-android` in index.css).
+// The native bridge is injected before this script runs, so the platform is known here.
+if (Capacitor.getPlatform() === 'android') {
+  document.documentElement.classList.add('platform-android');
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(

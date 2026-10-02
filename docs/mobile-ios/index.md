@@ -26,6 +26,17 @@ lives outside the repo in `../when-android-signing/` (keystore + `keystore.prope
 `android/app/build.gradle`). Bump `versionCode` in `android/app/build.gradle` for every upload.
 Build: `cd android && ./gradlew bundleRelease` -> `app/build/outputs/bundle/release/app-release.aab`.
 
+**Tap flicker (2026-10).** Cards and buttons flickered on tap in the Android app only: not on
+iOS, and not in Chrome on the same phone, so the cause is something the WebView does differently,
+not the CSS as such. The tap highlight is ruled out: Tailwind's preflight already sets
+`-webkit-tap-highlight-color: transparent` on `html`. The suspect is the `active:scale-*` press
+(about 30 controls and the cards), which makes the pressed element its own layer for the tap.
+As an experiment, `src/index.tsx` adds `platform-android` to `<html>` in the Android app and
+`src/index.css` resets the Tailwind scale variables under `html.platform-android :active`, so the
+web and iOS keep the press. If Android players still see flicker, remove both and debug in the
+WebView itself: run a debug build, open `chrome://inspect`, and use Rendering → Paint flashing
+and Layer borders while tapping a card.
+
 ## UIScene lifecycle (required from the iOS 27 SDK)
 
 **1.28.0 was rejected by App Review for crashing on launch** on iOS 27.0 while running fine on
