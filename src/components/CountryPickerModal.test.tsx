@@ -138,6 +138,42 @@ describe('CountryPickerModal', () => {
     expect(chip('Select all')).toBeDisabled();
   });
 
+  it("turns a region off with its header's Clear, keeping its chips listed", async () => {
+    const props = setup({ excludedCountries: ['Europe|Germany'] });
+    await userEvent.click(chip('Clear Europe'));
+    expect(props.onRegionsChange).toHaveBeenCalledWith([]);
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
+  });
+
+  it("restores a whole region with its header's Select all", async () => {
+    const props = setup({ excludedCountries: ['Europe|Germany'] });
+    await userEvent.click(chip('Select all Europe'));
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith([]);
+    expect(props.onRegionsChange).not.toHaveBeenCalled();
+  });
+
+  it('selects an off region whole from its header', async () => {
+    const props = setup();
+    await userEvent.click(chip('Select all East Asia'));
+    expect(props.onRegionsChange).toHaveBeenCalledWith(['Europe', 'East Asia']);
+  });
+
+  it('disables a region header button that would change nothing', () => {
+    setup();
+    expect(chip('Select all Europe')).toBeDisabled();
+    expect(chip('Clear Europe')).toBeEnabled();
+    expect(chip('Select all East Asia')).toBeEnabled();
+    expect(chip('Clear East Asia')).toBeDisabled();
+  });
+
+  it('clears only the matching countries while searching', async () => {
+    const props = setup();
+    await userEvent.type(screen.getByRole('searchbox', { name: 'Search countries' }), 'ger');
+    await userEvent.click(chip('Clear Europe'));
+    expect(props.onExcludedChange).toHaveBeenLastCalledWith(europeExcept('France'));
+    expect(props.onRegionsChange).not.toHaveBeenCalled();
+  });
+
   it('shows the first eight behind "+N more", but every match while searching', async () => {
     const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Zed'];
     setup({ countryOptions: new Map([['Europe', nine]]) });

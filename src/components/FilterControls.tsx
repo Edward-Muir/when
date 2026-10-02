@@ -4,7 +4,8 @@ import { ERA_DEFINITIONS } from '../utils/eras';
 import { ALL_REGIONS, REGION_DISPLAY_ORDER } from '../utils/regions';
 import CountryRefine from './CountryRefine';
 import { RegionSelection, regionStatus, toggleRegion } from '../utils/countrySelection';
-import { pillClass } from './filterPill';
+import FilterPill from './FilterPill';
+import FilterGroupHeader, { FilterGroupActions, listGroupActions } from './FilterGroupHeader';
 import { usePillTap } from '../hooks/usePillTap';
 
 const DIFFICULTY_LABELS = new Map<Difficulty, string>([
@@ -13,6 +14,8 @@ const DIFFICULTY_LABELS = new Map<Difficulty, string>([
   ['hard', 'Hard'],
   ['very-hard', 'Expert'],
 ]);
+
+const ERA_IDS = ERA_DEFINITIONS.map((e) => e.id);
 
 export interface FilterControlsProps {
   selectedDifficulties: Difficulty[];
@@ -34,18 +37,30 @@ export interface FilterControlsProps {
   showCounts?: boolean;
 }
 
-const GroupHeader: React.FC<{ label: string; count?: { selected: number; total: number } }> = ({
-  label,
-  count,
-}) => (
-  <div className="mb-1.5 flex items-center justify-between">
-    <span className="text-xs font-medium uppercase tracking-wide text-text-muted font-body">
-      {label}
-    </span>
-    {count && (
-      <span className="text-xs font-medium text-text-muted font-body tabular-nums">
-        {count.selected === count.total ? 'All' : `${count.selected}/${count.total}`}
-      </span>
+/**
+ * One filter group: its header (label, count, Select all / Clear), its chips, and a quiet
+ * prompt when it is empty. An empty group is a normal step on the way to a selection (Clear,
+ * then pick), so the prompt is muted rather than an error; Play stays disabled meanwhile.
+ */
+const FilterGroup: React.FC<{
+  label: string;
+  /** Names one option in the empty prompt: "Pick at least one {noun}". */
+  noun: string;
+  selectedCount: number;
+  total: number;
+  showCount: boolean;
+  actions: FilterGroupActions;
+  children: React.ReactNode;
+}> = ({ label, noun, selectedCount, total, showCount, actions, children }) => (
+  <div>
+    <FilterGroupHeader
+      label={label}
+      count={showCount ? { selected: selectedCount, total } : undefined}
+      {...actions}
+    />
+    <div className="flex flex-wrap gap-2">{children}</div>
+    {actions.noneOn && (
+      <p className="text-text-muted text-xs mt-1 font-body">Pick at least one {noun}</p>
     )}
   </div>
 );
@@ -104,152 +119,130 @@ const FilterControls: React.FC<FilterControlsProps> = ({
     onRegionsChange(regions);
     if (regions.length === ALL_REGIONS.length) onExcludedChange?.([]);
   };
+  // Select all likewise means every region with every country; Clear drops the exclusions too.
+  // The count is of ticked chips, so a partial region keeps it off `All` while Select all is live.
+  const regionStatuses = REGION_DISPLAY_ORDER.map((region) => ({
+    region,
+    status: regionStatus(region, regionSelection),
+  }));
+  const regionActions: FilterGroupActions = {
+    allOn: selectedRegions.length === ALL_REGIONS.length && regionSelection.excluded.length === 0,
+    noneOn: selectedRegions.length === 0,
+    onSelectAll: () => applyRegionSelection({ regions: [...ALL_REGIONS], excluded: [] }),
+    onClear: () => applyRegionSelection({ regions: [], excluded: [] }),
+  };
 
   // Shared with the country picker, so every filter pill taps and double-taps alike.
   const handlePillTap = usePillTap();
 
   return (
     <div className="space-y-4">
-      {/* Difficulty selection */}
-      <div>
-        <GroupHeader
-          label="Card Difficulty"
-          count={
-            showCounts
-              ? { selected: selectedDifficulties.length, total: ALL_DIFFICULTIES.length }
-              : undefined
-          }
-        />
-        <div className="flex flex-wrap gap-2">
-          {ALL_DIFFICULTIES.map((difficulty) => (
-            <button
-              key={difficulty}
-              onClick={() =>
-                handlePillTap(
-                  difficulty,
-                  String(difficulty),
-                  selectedDifficulties,
-                  ALL_DIFFICULTIES,
-                  onDifficultiesChange,
-                  toggleDifficulty
-                )
-              }
-              className={pillClass(selectedDifficulties.includes(difficulty))}
-            >
-              {DIFFICULTY_LABELS.get(difficulty)}
-            </button>
-          ))}
-        </div>
-        {selectedDifficulties.length === 0 && (
-          <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
-        )}
-      </div>
+      <FilterGroup
+        label="Card Difficulty"
+        noun="difficulty"
+        selectedCount={selectedDifficulties.length}
+        total={ALL_DIFFICULTIES.length}
+        showCount={showCounts}
+        actions={listGroupActions(selectedDifficulties, ALL_DIFFICULTIES, onDifficultiesChange)}
+      >
+        {ALL_DIFFICULTIES.map((difficulty) => (
+          <FilterPill
+            key={difficulty}
+            state={selectedDifficulties.includes(difficulty)}
+            onClick={() =>
+              handlePillTap(
+                difficulty,
+                String(difficulty),
+                selectedDifficulties,
+                ALL_DIFFICULTIES,
+                onDifficultiesChange,
+                toggleDifficulty
+              )
+            }
+          >
+            {DIFFICULTY_LABELS.get(difficulty)}
+          </FilterPill>
+        ))}
+      </FilterGroup>
 
-      {/* Category selection */}
-      <div>
-        <GroupHeader
-          label="Categories"
-          count={
-            showCounts
-              ? { selected: selectedCategories.length, total: ALL_CATEGORIES.length }
-              : undefined
-          }
-        />
-        <div className="flex flex-wrap gap-2">
-          {ALL_CATEGORIES.map((category) => (
-            <button
-              key={category}
-              onClick={() =>
-                handlePillTap(
-                  category,
-                  String(category),
-                  selectedCategories,
-                  ALL_CATEGORIES,
-                  onCategoriesChange,
-                  toggleCategory
-                )
-              }
-              className={pillClass(selectedCategories.includes(category))}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-        {selectedCategories.length === 0 && (
-          <p className="text-error text-xs mt-1 font-body">Select at least one category</p>
-        )}
-      </div>
+      <FilterGroup
+        label="Categories"
+        noun="category"
+        selectedCount={selectedCategories.length}
+        total={ALL_CATEGORIES.length}
+        showCount={showCounts}
+        actions={listGroupActions(selectedCategories, ALL_CATEGORIES, onCategoriesChange)}
+      >
+        {ALL_CATEGORIES.map((category) => (
+          <FilterPill
+            key={category}
+            state={selectedCategories.includes(category)}
+            onClick={() =>
+              handlePillTap(
+                category,
+                String(category),
+                selectedCategories,
+                ALL_CATEGORIES,
+                onCategoriesChange,
+                toggleCategory
+              )
+            }
+          >
+            {category}
+          </FilterPill>
+        ))}
+      </FilterGroup>
 
-      {/* Era selection */}
-      <div>
-        <GroupHeader
-          label="Eras"
-          count={
-            showCounts
-              ? { selected: selectedEras.length, total: ERA_DEFINITIONS.length }
-              : undefined
-          }
-        />
-        <div className="flex flex-wrap gap-2">
-          {ERA_DEFINITIONS.map((era) => (
-            <button
-              key={era.id}
-              onClick={() =>
-                handlePillTap(
-                  era.id,
-                  era.id,
-                  selectedEras,
-                  ERA_DEFINITIONS.map((e) => e.id),
-                  onErasChange,
-                  toggleEra
-                )
-              }
-              className={pillClass(selectedEras.includes(era.id))}
-            >
-              {era.name}
-            </button>
-          ))}
-        </div>
-        {selectedEras.length === 0 && (
-          <p className="text-error text-xs mt-1 font-body">Select at least one era</p>
-        )}
-      </div>
+      <FilterGroup
+        label="Eras"
+        noun="era"
+        selectedCount={selectedEras.length}
+        total={ERA_IDS.length}
+        showCount={showCounts}
+        actions={listGroupActions(selectedEras, ERA_IDS, onErasChange)}
+      >
+        {ERA_DEFINITIONS.map((era) => (
+          <FilterPill
+            key={era.id}
+            state={selectedEras.includes(era.id)}
+            onClick={() =>
+              handlePillTap(era.id, era.id, selectedEras, ERA_IDS, onErasChange, toggleEra)
+            }
+          >
+            {era.name}
+          </FilterPill>
+        ))}
+      </FilterGroup>
 
       {/* Region selection. Keys are prefixed: the double-tap ref is shared by every group. */}
       <div>
-        <GroupHeader
+        <FilterGroup
           label="Regions"
-          count={
-            showCounts ? { selected: selectedRegions.length, total: ALL_REGIONS.length } : undefined
-          }
-        />
-        <div className="flex flex-wrap gap-2">
-          {REGION_DISPLAY_ORDER.map((region) => {
-            const status = regionStatus(region, regionSelection);
-            return (
-              <button
-                key={region}
-                onClick={() =>
-                  handlePillTap(
-                    region,
-                    `region:${region}`,
-                    selectedRegions,
-                    [...ALL_REGIONS],
-                    setRegionsFromDoubleTap,
-                    tapRegion
-                  )
-                }
-                aria-pressed={status === 'partial' ? 'mixed' : status === 'full'}
-                className={pillClass(status === 'partial' ? 'partial' : status === 'full')}
-              >
-                {region}
-              </button>
-            );
-          })}
-        </div>
-        {selectedRegions.length === 0 && (
-          <p className="text-error text-xs mt-1 font-body">Select at least one region</p>
-        )}
+          noun="region"
+          selectedCount={regionStatuses.filter((r) => r.status === 'full').length}
+          total={ALL_REGIONS.length}
+          showCount={showCounts}
+          actions={regionActions}
+        >
+          {regionStatuses.map(({ region, status }) => (
+            <FilterPill
+              key={region}
+              state={status === 'partial' ? 'partial' : status === 'full'}
+              onClick={() =>
+                handlePillTap(
+                  region,
+                  `region:${region}`,
+                  selectedRegions,
+                  [...ALL_REGIONS],
+                  setRegionsFromDoubleTap,
+                  tapRegion
+                )
+              }
+            >
+              {region}
+            </FilterPill>
+          ))}
+        </FilterGroup>
         {excludedCountries && onExcludedChange && countryOptions && (
           <CountryRefine
             selectedRegions={selectedRegions}
