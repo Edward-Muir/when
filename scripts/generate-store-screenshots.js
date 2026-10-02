@@ -19,22 +19,22 @@
 
 const fs = require('fs');
 const path = require('path');
-const { chromium } = require('playwright');
+const {
+  ROOT,
+  SITE,
+  answerKey,
+  launch,
+  seedStorage,
+  standInLeaderboard,
+  settle,
+  placeCard,
+} = require('./store-preview/shared');
 
-const ROOT = path.join(__dirname, '..');
 const RAW = path.join(ROOT, 'assets/app-store/raw');
 const OUT = path.join(ROOT, 'assets/app-store/screenshots');
-const SITE = 'https://www.play-when.com';
 const W = 440;
 const H = 956;
 const PLACEMENTS = 7;
-const STAND_IN_NAMES = [
-  'Amber Falcon',
-  'Sapphire Cobra',
-  'Ancient Badger',
-  'Jade Condor',
-  'Crimson Owl',
-];
 
 // Background and headline colours come from the icon painting.
 const SHOTS = [
@@ -65,101 +65,6 @@ const SHOTS = [
   },
 ];
 
-function answerKey() {
-  const dir = path.join(ROOT, 'public/events');
-  const years = new Map();
-  for (const f of JSON.parse(fs.readFileSync(path.join(dir, 'manifest.json'))).files)
-    for (const e of JSON.parse(fs.readFileSync(path.join(dir, f))))
-      if (e && e.friendly_name != null && e.year != null && !years.has(e.friendly_name))
-        years.set(e.friendly_name, e.year);
-  return years;
-}
-
-async function launch() {
-  const proxy = process.env.HTTPS_PROXY;
-  return chromium.launch({
-    executablePath: process.env.CHROMIUM_PATH || '/opt/pw-browsers/chromium',
-    args: ['--no-sandbox', '--ssl-version-max=tls1.2', '--disable-quic'],
-    proxy: proxy ? { server: proxy } : undefined,
-  });
-}
-
-// A returning player's storage: every one-shot hint and "new" tab dot already seen.
-function seedStorage() {
-  const hints = {};
-  for (const k of [
-    'drag',
-    'wrong',
-    'correct',
-    'closeEnough',
-    'tapCard',
-    'stats',
-    'swap',
-    'dailyTab',
-    'archiveTab',
-    'customTab',
-    'statsTab',
-    'timelineTab',
-    'reviewEye',
-  ])
-    hints[k] = true;
-  localStorage.setItem('when-hints-seen', JSON.stringify(hints));
-  localStorage.setItem(
-    'when-nav-seen',
-    JSON.stringify({ archive: true, stats: true, timeline: true })
-  );
-}
-
-async function settle(page, ms = 2500) {
-  await page.waitForTimeout(ms);
-  await page.evaluate(() => document.fonts.ready);
-}
-
-async function placeCard(page, years, { pauseMidDrag } = {}) {
-  const hand = page.locator('div.cursor-grab').first();
-  await hand.waitFor({ state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(500);
-  const box = await hand.boundingBox();
-  const name = (await hand.innerText()).trim().split('\n')[0].trim();
-  const year = years.get(name);
-  const marks = await page.$$eval('[data-timeline-year]', (els) =>
-    els.map((e) => +e.getAttribute('data-timeline-year'))
-  );
-  const k = year == null ? marks.length : marks.filter((y) => y < year).length;
-  await page.evaluate((i) => {
-    const els = [...document.querySelectorAll('[data-timeline-year]')];
-    els[Math.max(0, Math.min(els.length - 1, i))]?.scrollIntoView({
-      block: 'center',
-      behavior: 'instant',
-    });
-  }, k);
-  await page.waitForTimeout(600);
-  const pos = await page.$$eval('[data-timeline-year]', (els) =>
-    els.map((e) => e.getBoundingClientRect().top + e.getBoundingClientRect().height / 2)
-  );
-  const top = box.y;
-  const ty =
-    pos.length === 0
-      ? (140 + top - 30) / 2
-      : k <= 0
-        ? Math.max(148, pos[0] - 34)
-        : k >= pos.length
-          ? Math.min(top - 30, pos[pos.length - 1] + 34)
-          : (pos[k - 1] + pos[k]) / 2;
-  const cx = box.x + box.width / 2;
-  const cy = box.y + box.height / 2;
-  await page.mouse.move(cx, cy);
-  await page.mouse.down();
-  await page.mouse.move(cx, cy - 14, { steps: 4 });
-  await page.mouse.move(W / 2, ty, { steps: 28 });
-  await page.mouse.move(W / 2, ty, { steps: 4 });
-  await page.waitForTimeout(150);
-  if (pauseMidDrag) await pauseMidDrag();
-  await page.mouse.up();
-  await page.waitForTimeout(1800);
-  return name;
-}
-
 async function capture() {
   fs.mkdirSync(RAW, { recursive: true });
   const years = answerKey();
@@ -172,16 +77,7 @@ async function capture() {
   await ctx.addInitScript(seedStorage);
   const page = await ctx.newPage();
   await page.route(/google-analytics|googletagmanager/, (r) => r.abort());
-  // Real scores, but never real players' nicknames in a public store listing: swap each name
-  // for one in the style of the app's own random names.
-  await page.route(/\/api\/leaderboard\/\d{4}-\d{2}-\d{2}/, async (route) => {
-    const res = await route.fetch();
-    const body = await res.json();
-    (body.leaderboard || []).forEach(
-      (e, i) => (e.displayName = STAND_IN_NAMES[i % STAND_IN_NAMES.length])
-    );
-    await route.fulfill({ response: res, json: body });
-  });
+  await standInLeaderboard(page);
   const shot = async (file) => {
     await page.screenshot({ path: path.join(RAW, `${file}.png`), timeout: 30000 });
     console.log(`  ✓ raw/${file}.png`);

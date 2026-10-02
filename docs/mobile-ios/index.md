@@ -128,6 +128,25 @@ The prompts, tuned so one object reads at 60 px, are in
   before capture: a public listing must not show real players' names. Output:
   `assets/app-store/screenshots/`; `--compose` re-frames the saved raw captures without
   touching the site.
+- **Store preview video:** `node scripts/store-preview` records real play on the live site
+  and cuts a captioned, scored 29 s preview. It shares its Playwright helpers with the
+  screenshot script (`scripts/store-preview/shared.js`).
+  - Output: `scripts/outputs/store-preview/when-preview-886x1920.mp4` (gitignored).
+  - The spec it meets: 886x1920, which covers both the 6.9" and 6.5" slots, at 30 fps and
+    15-30 s. Video is H.264 at about 11 Mbps.
+  - **App Store Connect rejects a preview with no audio track.** The bed is synthesised in
+    `music.js`, so there is nothing to license.
+  - The decks are curated rather than faked. A route filters each catalogue file down to a
+    handful of marquee events, served verbatim. Both games are Custom games, so no score is
+    ever submitted.
+  - `Math.random` is seeded so the first deck deals the hook's cards. If the catalogue shifts
+    and the deal changes, `--find-seed` finds a new seed.
+  - Captions follow the screenshots' type and colours. Each claim in them is checked against
+    the card data (see the header of `storyboard.js`).
+  - Apple forbids device frames and hands in previews, so the app fills the frame and there
+    is no cursor.
+  - `--compose` re-cuts from the saved footage without touching the site. Capture loads about
+    30 card images, so keep re-runs occasional.
 
 ## Things that needed no work
 
