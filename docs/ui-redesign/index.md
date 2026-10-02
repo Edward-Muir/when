@@ -541,15 +541,20 @@ include-list model (everything on by default) and adds the convention that goes 
   "Science only" is now Clear, then Science; "everything but Sports" stays one tap.
 - **Ticked chips, not solid ones (`FilterPill.tsx`).** Selected is a light blue tint
   (`.bg-pill-on`) with a teal border and a leading tick; partial is a lighter tint with a dash;
-  off is the white outline. The old solid `bg-accent-secondary` was the Play button's colour, so
-  a page of selected chips read as buttons, and with every chip on there was nothing to compare
-  against to tell what "filled" meant. Every chip now has `aria-pressed`.
-- **A chip is the same width on and off.** The off padding equals the on padding plus the tick,
-  so a toggle never reflows the 21 wrapped categories and moves a chip out from under the finger
-  (a reflow would also land a double-tap's second tap on a different chip). The padding is kept
-  tight so the four difficulty chips share one row on a 375px phone, measured in Inter.
+  off is the white outline with a red cross. The old solid `bg-accent-secondary` was the Play
+  button's colour, so a page of selected chips read as buttons, and with every chip on there was
+  nothing to compare against to tell what "filled" meant. Every chip has `aria-pressed`.
+- **Nothing moves when you tap.** Every state carries an icon in the same slot with the same
+  padding, so a chip never changes width and its label never shifts. The first version dropped
+  the icon when off and padded the gap instead: the chip kept its width but the label jumped
+  sideways on every tap, which the maintainer found too jumpy on the dev preview, so off got the
+  red cross. A width change would also reflow the 21 wrapped categories and land a double-tap's
+  second tap on a different chip. The padding is tight so the four difficulty chips share one
+  row on a 375px phone, measured in Inter.
 - **An empty group is a normal step, not an error.** Its prompt ("Pick at least one category") is
-  muted, Play stays disabled, and the group is **neither saved nor shareable**: settings are not
+  muted and sits on a line that is always reserved under the chips (blank otherwise), so it
+  appearing never pushes the groups below down; that line carries most of the gap between
+  groups. Play stays disabled, and the group is **neither saved nor shareable**: settings are not
   written while a group is empty (an empty group fails `normalizeCustomSettings`, which used to
   reset every saved setting on the next load), and the share input is left empty with Share
   disabled, because a code can't encode an empty group and the link shown used not to load.

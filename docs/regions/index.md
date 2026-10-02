@@ -138,11 +138,11 @@ do, but the design read wrong, because in every other group blue means in the de
 maintainer overruled the earlier "inclusion, not exclusion" decision and asked for the picker to
 work like the other groups. That is the model below.
 
-- **Every country starts on, and a tick means in the deck.** The state is the selected regions plus
+- **Every country starts on, and a tick means in the deck** (a red cross means out). The state is the selected regions plus
   the **(region, country) pairs switched off** within them (`src/utils/countrySelection.ts`,
   keys like `Europe|United Kingdom`). Nothing off is the default, so the stored and shared form
   of "everything" is empty.
-- **A region chip has three states**: off (white), whole (ticked, `.bg-pill-on`), and partial
+- **A region chip has three states**: off (white, red cross), whole (ticked, `.bg-pill-on`), and partial
   (a dash on the lighter `.bg-pill-partial`, `aria-pressed="mixed"`) when some of its countries
   are off: the tri-state checkbox's tick and dash, on the shared `FilterPill`. Tapping works like a tri-state checkbox: off → whole, whole → off, partial → whole.
   Deselecting a region switches all its countries off; selecting it switches them all back on.
