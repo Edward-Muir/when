@@ -171,9 +171,14 @@ const Modal: React.FC<ModalProps> = ({
             className={cardClasses}
             style={cardStyle}
             onClick={dismiss === 'tap-advance' ? undefined : (e) => e.stopPropagation()}
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
+            // Scale only. The backdrop's fade already fades the card in and out, and a second
+            // opacity animation here flickered in the Android app: framer-motion hands opacity to
+            // the browser's animation engine, and the Android WebView drew a see-through frame
+            // when that animation finished, ~0.4s after every popup opened. Scale is driven by
+            // framer-motion itself and just stops. See docs/mobile-ios/index.md.
+            initial={{ scale: 0.9 }}
+            animate={{ scale: 1 }}
+            exit={{ scale: 0.9 }}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
           >
             {header !== undefined && header !== null && (

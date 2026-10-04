@@ -26,16 +26,26 @@ lives outside the repo in `../when-android-signing/` (keystore + `keystore.prope
 `android/app/build.gradle`). Bump `versionCode` in `android/app/build.gradle` for every upload.
 Build: `cd android && ./gradlew bundleRelease` -> `app/build/outputs/bundle/release/app-release.aab`.
 
-**Tap flicker (2026-10).** Cards and buttons flickered on tap in the Android app only: not on
-iOS, and not in Chrome on the same phone, so the cause is something the WebView does differently,
-not the CSS as such. The tap highlight is ruled out: Tailwind's preflight already sets
-`-webkit-tap-highlight-color: transparent` on `html`. The suspect is the `active:scale-*` press
-(about 30 controls and the cards), which makes the pressed element its own layer for the tap.
-As an experiment, `src/index.tsx` adds `platform-android` to `<html>` in the Android app and
-`src/index.css` resets the Tailwind scale variables under `html.platform-android :active`, so the
-web and iOS keep the press. If Android players still see flicker, remove both and debug in the
-WebView itself: run a debug build, open `chrome://inspect`, and use Rendering → Paint flashing
-and Layer borders while tapping a card.
+**Popup flicker (2026-10).** In the Android app only (not iOS, not Chrome on the same phone),
+every popup went see-through for a frame or two about 0.4s after opening. A phone video showed
+it frame by frame. The cause was the `Modal` card's own opacity fade: framer-motion runs opacity
+on the browser's animation engine, and when that animation finishes it writes the final value
+and cancels the animation; the Android WebView drew a stale frame at that hand-off. The card now
+animates `scale` only, which framer-motion drives itself, and the backdrop's fade carries the
+card in and out on every platform. **Don't add opacity back to the Modal card.** Ruled out on
+the way: the tap highlight (Tailwind's preflight already clears it) and the `active:scale-*`
+press (an Android-only override of it, shipped in #74, changed nothing and was removed).
+
+**Testing a branch in the Android app.** The app loads production, and WebView-only bugs don't
+reproduce in Chrome, so a preview has to be loaded by a test build of the app:
+
+1. In Vercel, open the branch's preview, then Share → "Anyone with the link" (previews sit
+   behind Vercel Authentication; Hobby allows one link at a time). Copy the link.
+2. `CAP_SERVER_URL='<link>' npx cap sync android` (see `capacitor.config.ts`), then
+   `cd android && ./gradlew assembleDebug` -> `app/build/outputs/apk/debug/app-debug.apk`.
+3. The debug build is "When? (test)", id `com.playwhen.app.preview`, so it installs beside the
+   Play version. Later pushes to the branch reach it without a rebuild.
+4. Run a plain `npx cap sync android` before any release build, so it points at production again.
 
 ## UIScene lifecycle (required from the iOS 27 SDK)
 

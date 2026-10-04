@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <!-- Debug builds are the test app (see buildTypes.debug in app/build.gradle). -->
+    <string name="app_name">When? (test)</string>
+    <string name="title_activity_main">When? (test)</string>
+</resources>
