@@ -340,19 +340,6 @@ body {
   display: none;
 }
 
-/* Android app only: no press-shrink. Taps made cards and buttons flicker in the Android
-   app's WebView, but not in Chrome on the same phone, nor on iOS. The tap highlight is not it
-   (Tailwind's preflight already clears it on `html`); the suspect is the `active:scale-*` press,
-   which makes the pressed element a layer of its own for the length of the tap. Resetting the
-   scale variables cancels every Tailwind press-scale without touching other transforms (the
-   inline `rotate()` on cards). Outside any @layer, and (0,2,1) beats `.active:scale-95:active`.
-   An experiment: if Android players still see flicker, remove this and look elsewhere.
-   See docs/mobile-ios/index.md. */
-html.platform-android :active {
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-}
-
 /* Touch-friendly styles */
 .touch-manipulation {
   touch-action: manipulation;

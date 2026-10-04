@@ -38,6 +38,12 @@ android {
         }
     }
     buildTypes {
+        // Debug builds are the test app: their own id, so they install beside the Play version
+        // (same id + a different signing key is refused), and their own name, "When? (test)",
+        // from src/debug/res/values/strings.xml.
+        debug {
+            applicationIdSuffix ".preview"
+        }
         release {
             if (keystorePropsFile.exists()) {
                 signingConfig signingConfigs.release

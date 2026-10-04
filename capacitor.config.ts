@@ -1,13 +1,23 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
+// The shells load the live site. To point a test build at a branch's Vercel preview instead,
+// set CAP_SERVER_URL to the preview's Shareable Link when running `npx cap sync` (recipe in
+// docs/mobile-ios/index.md). Unset, every build loads production as before.
+const serverUrl = process.env.CAP_SERVER_URL || 'https://play-when.com';
+const serverHost = new URL(serverUrl).host;
+
 const config: CapacitorConfig = {
   appId: 'com.playwhen.app',
   appName: 'When?',
   webDir: 'build',
   server: {
-    url: 'https://play-when.com',
+    url: serverUrl,
     cleartext: false,
-    allowNavigation: ['play-when.com', '*.play-when.com'],
+    allowNavigation: [
+      'play-when.com',
+      '*.play-when.com',
+      ...(serverHost.endsWith('play-when.com') ? [] : [serverHost]),
+    ],
   },
   plugins: {
     LocalNotifications: {
