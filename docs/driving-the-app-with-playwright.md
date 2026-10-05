@@ -102,8 +102,9 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   lines) and must stay so after the shard loads and after scrolling to the end.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
-- **Bottom-left counters:** big number = cards left; 📏 = events placed; ⚡ = current
-  streak. Tapping the counter opens the "Timeline Stats" popup.
+- **Bottom-left counters:** big number = cards left; 📏 = timeline length, including the
+  starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
+  the "Timeline Stats" popup.
 - **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
   pill beside the logo in game.
 - **No modal blocks the first drag.** How to Play opens from the menu only. To replay a
