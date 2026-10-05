@@ -202,6 +202,9 @@ function GameOverContent({
   const { winners, players, bestStreak } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
+  // Gold for a win: a multiplayer winner, or a single player who got through a curated theme.
+  const { survived } = getThemeOutcome(gameState);
+  const trophyWon = hasWinner || survived;
 
   const getPlayerStats = (player: Player) => {
     const correct = player.placementHistory.filter((p) => p).length;
@@ -221,7 +224,10 @@ function GameOverContent({
     <div className="px-4 py-4">
       {/* Trophy icon */}
       <div className="flex justify-center mb-4">
-        <Trophy className={`w-10 h-10 ${hasWinner ? 'text-accent' : 'text-text-muted'}`} />
+        <Trophy
+          data-testid="game-over-trophy"
+          className={`w-10 h-10 ${trophyWon ? 'text-accent' : 'text-text-muted'}`}
+        />
       </div>
 
       {/* Stats section */}
