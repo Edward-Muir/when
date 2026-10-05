@@ -1,10 +1,10 @@
-# Difficulty Grading Rubric v3
+# Difficulty Grading Rubric
 
 ## Overview
 
 This rubric grades historical events for the "When" timeline game.
 
-Since v1.7.0 the `difficulty` label is no longer the final word on how hard a card is. It is one input to a composite score in `src/utils/difficultyScore.ts`:
+The `difficulty` label is not the final word on how hard a card is. It is one input to a composite score in `src/utils/difficultyScore.ts`:
 
 ```
 C = 0.6 · recognition(label) + 0.4 · crowding(timeline density)
@@ -12,7 +12,7 @@ C = 0.6 · recognition(label) + 0.4 · crowding(timeline density)
 
 Cards are then sorted into four bands by the global quartiles of `C`, and `src/utils/deckBuilder.ts` composes the opening 24 cards from those bands. So the label feeds a function; it does not decide a card's fate on its own.
 
-That split is what changed between v2 and v3 of this rubric. **Three signals were previously tangled together, and only two of them belong in the label:**
+**Three signals are easy to tangle together, and only two of them belong in the label:**
 
 | Signal           | What it asks                                       | Who owns it                |
 | ---------------- | -------------------------------------------------- | -------------------------- |
@@ -20,11 +20,11 @@ That split is what changed between v2 and v3 of this rubric. **Three signals wer
 | **Inferability** | Do the name and description give temporal anchors? | **the label**              |
 | **Crowding**     | How many other events sit near it in time?         | **computed, never graded** |
 
-Rubric v2 called dimension 2 "placeability" and folded crowding into it. `difficultyScore.ts` independently computes crowding and _also_ called it placeability. They were never the same thing, but the overlap invited double-counting. v3 renames dimension 2 to **inferability** and removes crowding from the grader's job entirely.
+Don't call inferability "placeability": `difficultyScore.ts` uses that name for the crowding term it computes, and folding crowding into the grade double-counts it. Crowding is not the grader's job at all.
 
 > **Do not grade crowding.** Never mark an event harder because "that era is busy" or "lots happened around then". That is measured from the year distribution, it updates itself as events are added, and grading it by hand both double-counts it and goes stale. Grade only what is on the card.
 
-The key insight still stands: **an obscure event with strong contextual clues is easier than a famous event whose name gives nothing away.**
+The key insight: **an obscure event with strong contextual clues is easier than a famous event whose name gives nothing away.**
 
 ## The Two Dimensions of Difficulty
 
@@ -126,31 +126,31 @@ Targets are a **calibration anchor for a category, not a quota**. See "Targets a
   - "Nika Riots" (Byzantine, but unless you know that...)
   - Obscure treaties between minor powers with no era indicators
 
-## What Changed From v2
+## Rules That Are Easy to Get Wrong
 
-### Era-vagueness is no longer a downgrade
+### Era-vagueness is not a downgrade
 
-v2 pushed cards down a tier for "famous but the exact date is less known" — its worked example was _Magna Carta signed_ → Medium. That reasoning is now scored by the crowding term, so the card grades on recognition and anchors alone: high recognition, "Magna Carta" anchors firmly to medieval England, so **Easy**. The sparse medieval timeline around it is what the composite score is for.
+Don't push a card down a tier for "famous but the exact date is less known". That reasoning is scored by the crowding term, so the card grades on recognition and anchors alone. _Magna Carta signed_: high recognition, "Magna Carta" anchors firmly to medieval England, so **Easy**. The sparse medieval timeline around it is what the composite score is for.
 
 Concretely, if your only reason to downgrade is _"but when exactly?"_, don't. Downgrade only when the card's **text** fails to place it in an era.
 
 ### Targets are not quotas
 
-v2's process enforced per-file targets. That was wrong twice over.
+Enforcing the targets as quotas, or per file, is wrong twice over.
 
-Wrong unit: the game filters themed days on `category`, and a category is scattered across many JSON files. Measured, applying a target per file collapses `trade`'s band-0 warm-up pool from 30 cards to 17, while the same target applied per category lifts the catalogue-wide minimum from 27 to 33. **Grade and calibrate by category.**
+Wrong unit: the game filters themed days on `category`, and a category is scattered across many event files. Measured, applying a target per file collapses `trade`'s band-0 warm-up pool from 30 cards to 17, while the same target applied per category lifts the catalogue-wide minimum from 27 to 33. **Grade and calibrate by category.**
 
-Wrong strictness: some categories genuinely cannot reach 20% easy without lying. `trade` really is mostly Sogdian outposts and Xicalanco trade ports; `earth-life` really is mostly unrecognisable. Grade honestly, report what falls out, and note the deviation. A forced easy label is worse than a missed target, because it lands a genuinely obscure card in the opening foothold where a new player meets it first.
+Wrong strictness: some categories genuinely cannot reach 20% easy without lying. `trade` really is mostly Sogdian outposts and Xicalanco trade ports. Grade honestly, report what falls out, and note the deviation. A forced easy label is worse than a missed target, because it lands a genuinely obscure card in the opening foothold where a new player meets it first.
 
 The failure mode to actually avoid is the opposite one: a whole category piled into `medium`. That leaves the recognition term nearly constant, so band assignment for those cards is driven entirely by crowding — which is exactly the case where crowding cannot help, because dense modern categories saturate it.
 
 ### Wikipedia pageviews are not a grading input
 
-v2 used `wikipedia_views` as a tiebreaker. v3 does not use it at all:
+Not even as a tiebreaker:
 
-- **Coverage is worthless.** The 1,999 events carrying the field are exactly the events an older process already graded. Coverage of everything else is zero, so it can only ever confirm existing grades.
+- **Coverage is worthless.** Only about a third of the catalogue carries the field, and those are the events an older process already graded, so it can only ever confirm existing grades.
 - **It measures the wrong thing.** Views are article traffic, not event recognition. Compound cards inherit an unrelated article's fame — "AI Rapid Advancement (GPT-4)" resolves to the ChatGPT article and its 43M views. Topic articles inflate the same way: "Hydrogen Discovered" scores the _Hydrogen_ article.
-- **Several URLs are misattributed**, and the CSV is stale relative to the corrections file.
+- **Several URLs are misattributed.**
 
 The `wikipedia_views` / `wikipedia_url` fields remain in the event JSON and no app code reads them. Do not consult them when grading.
 
@@ -182,15 +182,15 @@ For each event, ask:
 | Nika Riots        | "Riots in Constantinople nearly overthrew Emperor Justinian"                 | Constantinople, Justinian → Byzantine, but when?       | No reduction, stays Very Hard  |
 | Taiping Rebellion | "Chinese civil war led by someone claiming to be Jesus's brother"            | China, Christian influence → 19th century colonial era | Reduces from Very Hard to Hard |
 
-## Examples of Re-graded Events
+## Worked Grades
 
-| Event                  | Old Grade | New Grade | Reasoning                                                                         |
-| ---------------------- | --------- | --------- | --------------------------------------------------------------------------------- |
-| Social War (Rome)      | Very Hard | Hard      | Low recognition, but "Rome" + "citizenship" = ancient anchor                      |
-| Nika Riots             | Hard      | Very Hard | Low recognition, "riots" gives no era clue                                        |
-| Fall of Constantinople | Medium    | Easy      | Medium recognition, and "Constantinople" anchors firmly                           |
-| Treaty of Westphalia   | Hard      | Medium    | Ends Thirty Years' War = strong anchor                                            |
-| Magna Carta signed     | Medium    | Easy      | v3: high recognition + medieval anchor; era-vagueness is now computed, not graded |
+| Event                  | Grade     | Reasoning                                                     |
+| ---------------------- | --------- | ------------------------------------------------------------- |
+| Social War (Rome)      | Hard      | Low recognition, but "Rome" + "citizenship" = ancient anchor  |
+| Nika Riots             | Very Hard | Low recognition, "riots" gives no era clue                    |
+| Fall of Constantinople | Easy      | Medium recognition, and "Constantinople" anchors firmly       |
+| Treaty of Westphalia   | Medium    | Ends Thirty Years' War = strong anchor                        |
+| Magna Carta signed     | Easy      | High recognition + medieval anchor; era-vagueness is computed |
 
 ## Implementation Notes
 
