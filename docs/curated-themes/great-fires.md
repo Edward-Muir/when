@@ -69,19 +69,20 @@ That last clause did real work:
 |  1944 | `nazis-raze-warsaw`                | NEW            |
 |  1945 | `tokyo-firebombing`                | foothold       |
 
-22 of the 35 are new. Measured against the merged catalogue: size **35**, band 0 **10**, bins **6/8** (advisory), same-year pairs **0**.
+22 of the 35 were authored for this theme.
 
-18 of the 35 are new. At authoring time, with the new cards loaded via `--include-pending
---extra`: size **35**, spread **7/8 bins**, band 0 **12**, same-year pairs **0**.
+Gates: size **35**, band 0 **10**, bins **6/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-```
-node scripts/theme-gap.js --include-pending --extra <staging file> --slugs <the 35 above>
+```bash
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds
 
-Twelve is a wide margin over the floor of 5, for a structural reason: the theme's oldest
-stretch sits in the emptiest part of the catalogue, exactly as with `clockwork`. `burning-of-ugarit`,
+Ten is a wide margin over the floor of 5, for a structural reason: the theme's oldest stretch
+sits in the emptiest part of the catalogue, exactly as with `clockwork`. `burning-of-ugarit`,
 `babylonian-destruction-jerusalem`, `third-punic-war`, `rome-founds-vigiles` and
 `great-fire-rome` span 1,200-odd years where almost nothing else in the catalogue competes for
 placement, so they land in band 0 on sparsity alone. `sack-rome-visigoths`, `great-fire-london`,
@@ -89,8 +90,9 @@ placement, so they land in band 0 on sparsity alone. `sack-rome-visigoths`, `gre
 famous fire independent of era. `tatars-burn-moscow`, `franklin-founds-fire-company`,
 `british-burn-washington` and `burning-of-atlanta` are new cards that land in band 0 for the
 same reasons as their neighbours (a sparse 16th-century Russian stretch, a famous name, two
-famous American war stories), not because the labels were graded down to fit — `burning-of-atlanta`
-and `british-burn-washington` are both graded `easy` on recognition, honestly.
+famous American war stories), not because the labels were graded down to fit —
+`burning-of-atlanta` and `british-burn-washington` are both graded `easy` on recognition,
+honestly.
 
 ## Deliberate omissions
 

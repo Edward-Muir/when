@@ -66,12 +66,14 @@ this theme; `foothold` marks band 0.
 |    2007 | `bhutto-assassinated`                   |          | NEW |
 |    2018 | `khashoggi-murder`                      |          |     |
 
-14 existing slugs, 22 newly authored. Read the current band and spread figures from the
-catalogue rather than from here — a card's band moves whenever the catalogue around its year
-does:
+14 existing slugs, 22 authored for this theme.
+
+Gates: size **36**, band 0 **10**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
 
 ## The footholds

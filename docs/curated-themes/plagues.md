@@ -66,16 +66,15 @@ Paste as `eventNames` into the workflow's `theme` input.
 |    2014 | `ebola-outbreak`                 |          |
 |    2020 | `covid-19-pandemic`              | foothold |
 
-Nine of these do not exist in the catalogue yet and are staged separately; the theme cannot
-be published until they are illustrated, because `loadAllEvents` hides an event with no
-Cloudinary art. Read the current figures from the catalogue rather than from here:
+Nine of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **11**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated> \
-  --include-pending --extra <staging>/plagues.json
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At time of writing: size 36, bins 8/8 `[1 6 3 5 6 5 4 6]`, band 0 = 11, same-year pairs 0.
 
 ## Why the footholds are the footholds
 
@@ -91,7 +90,8 @@ them is traded away:
 - **Sparse-era anchors.** `plague-of-athens` (430 BCE), `antonine-plague` (165) and
   `plague-of-justinian` (541) are band 0 far more for their neighbourhoods than for their
   fame. They carry the whole first third of the deck; the two ancient bins hold 1 and 6
-  cards, so losing one of these is the only realistic way to fail the spread gate.
+  cards, so losing one of these is the only realistic way to lose spread (advisory)
+  and the ancient footholds with it.
 - **School-curriculum cards in crowded years.** `black-death-arrives`,
   `population-collapse-americas`, `jenner-vaccination-smallpox`, `spanish-flu-begins`,
   `penicillin-discovered`, `polio-vaccine` and `covid-19-pandemic` are band 0 on recognition

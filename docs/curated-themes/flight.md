@@ -66,15 +66,15 @@ Two edges were argued rather than assumed:
 | 1999 | `piccard-balloon-circumnavigation`    | NEW            |
 | 2015 | `solar-impulse-2-circles-globe`       | NEW            |
 
-22 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **6**, bins **6/8** (advisory), same-year pairs **0**.
+22 of the 36 were authored for this theme.
 
-22 of the 36 are new.
+Gates: size **36**, band 0 **6**, bins **6/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
+```bash
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-node scripts/theme-gap.js --include-pending --extra staging/flight.json --slugs <the 36 above, comma-separated>
-```
-
-At authoring time: size **36**, bins **5/8** (advisory), band 0 **6**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 

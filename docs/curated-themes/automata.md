@@ -70,18 +70,15 @@ Paste as `eventNames` into the workflow's `theme` input.
 |    2016 | `alphago-beats-lee-sedol`         |              |
 |    2022 | `chatgpt-released`                | foothold     |
 
-`NEW` means the card was authored for this theme and **needs art before the theme can ship** —
-`loadAllEvents` hides an unillustrated event, so publish validation (which only ever sees
-playable events) reads 21 of these 35 as unresolved until the image pipeline has run. The figures
-below were measured with the new records projected in:
+`NEW` marks a card authored for this theme.
+
+Gates: size **35**, band 0 **7**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 35 above> --include-pending --extra <staging>/automata.json
-# size 35 (30-36) · bins 8/8 (6+) · band 0 7 (5+) · same-year pairs 0
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
-
-Read band and spread from the catalogue rather than from here — a card's band moves whenever
-the catalogue does.
 
 ## Why the footholds are the footholds
 

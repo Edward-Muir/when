@@ -63,14 +63,14 @@ the steel skeleton frame they made possible, are in.
 |  2004 | `taipei-101`                       |                |
 |  2010 | `burj-khalifa`                     | foothold       |
 
-18 of the 31 are new. Measured against the merged catalogue: size **31**, band 0 **8**, bins **7/8** (advisory), same-year pairs **0**.
+18 of the 31 were authored for this theme; 13 already sat on their exact beat in the catalogue.
 
-18 of the 31 are new; 13 already sat on their exact beat in the catalogue.
+Gates: size **31**, band 0 **8**, bins **7/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-At authoring time, with the new cards loaded via `--include-pending --extra`:
-
-```
-size 31   band 0 8   bins 7/8   same-year pairs 0
+```bash
+npm run theme:gap -- --slugs <the 31 above, comma-separated>
 ```
 
 All hard gates pass: size is inside 30-36, band 0 clears the floor of 5 by a comfortable

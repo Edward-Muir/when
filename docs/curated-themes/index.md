@@ -1,15 +1,15 @@
 # Curated daily themes
 
 Hand-authored themes — a named list of event slugs pinned to explicit dates — alongside the
-seeded category themes the daily has always had.
+seeded theme (Everything, category, region, country or pairing) the daily deals on every other
+day.
 
 ## Where they live, and why not in the repo
 
 The calendar is **one JSON document in Redis** under `themes:calendar`, served by
 `GET /api/themes` and written by `POST /api/themes/publish`. There is deliberately **no
 bundled fallback copy**: one home means a theme can never be half-published. Either the
-client has the calendar or the date falls through to the seeded category theme, exactly as
-before curated themes existed.
+client has the calendar or the date falls through to the seeded theme.
 
 Redis rather than a repo file because publishing a theme must not be a code change. Redis
 rather than a new backend because this is a ~10 KB read-mostly config blob with no relations,
@@ -66,49 +66,48 @@ exempt as it ages, or the document could never be edited again.
 **Never rewrite a date that is today or past.** `dailyRecency.ts` replays the last 28 days to
 build the exclusion chain, and a retroactive edit makes it replay decks nobody played.
 
-This is also why **reminder copy no longer names the theme**. Notifications are scheduled up
+This is also why **reminder copy never names the theme**. Notifications are scheduled up
 to `REMINDER_WINDOW_DAYS` (14) ahead and the OS keeps the text as written, so any theme name
 in the body is a promise about a date that may not be decided yet. Generic copy is what buys
 the scheduling freedom.
 
 ## Cadence: Mondays and Fridays
 
-Since October 2026 curated themes run twice a week, on Mondays and Fridays; every other day
-stays a seeded category theme. Nothing in the code knows about weekdays: the cadence exists only
-in which dates the calendar holds, so changing it means re-publishing each unplayed theme's
-id with new `dates` (dates that have not opened can be dropped freely). The current plan is the
-schedule table at the top of [publish-inputs.md](publish-inputs.md).
+Curated themes run twice a week, on Mondays and Fridays; every other day is a seeded theme
+(Everything, category, region, country or pairing). Nothing in the code knows about weekdays:
+the cadence exists only in which dates the calendar holds, so changing it means re-publishing
+each unplayed theme's id with new `dates` (dates that have not opened can be dropped freely).
+The current plan is the schedule table at the top of [publish-inputs.md](publish-inputs.md).
 
-## Seeded themes: the dated menu (2026-10)
+## Seeded themes: the dated menu
 
-The days no curated theme claims used to be "Everything" half the time and one of the 21
-categories otherwise. From **2026-10-06** they draw from a menu that also holds regions
-("East Asia"), countries ("Italy") and category + place pairings ("Art in Italy",
+The days no curated theme claims draw from a dated menu of Everything, the 21 categories,
+regions ("East Asia"), countries ("Italy") and category + place pairings ("Art in Italy",
 "Warfare in the United States"), weighted Everything 30, category 25, region 10, country 15,
-pairing 20. The menu is `src/data/dailyThemeMenu.json`, written by
-`npm run daily-menu` (`scripts/daily-theme-menu.js`); the draw is `menuTheme` in
+pairing 20 in the first epoch (from **2026-10-06**). The menu is `src/data/dailyThemeMenu.json`,
+written by `npm run daily-menu` (`scripts/daily-theme-menu.js`); the draw is `menuTheme` in
 `dailyTheme.ts`. The pool is `filterPool` over every region, then `eventInPlace` (`regions.ts`):
 a region through `eventRegionSet`, a country by its own tag. Deliberately not the Custom region
 filter, whose rules are the picker's to change; a daily's pool must never move.
 
 **The menu is frozen and dated, never derived at runtime.** A seeded theme is
 `list[floor(random() * list.length)]`, so any change to a list re-themes every date it covers,
-including days already played; the recency chain then replays decks nobody was dealt, and
-stored results name the wrong theme. So the menu is a list of **epochs**, each in force from its
-`from` date. Dates before the first epoch run the original generator untouched (a test pins
-every date from #1 to 2026-10-05), and each epoch carries its own copy of the category list, so
-a future 22nd category can no longer re-roll a live epoch. Computing candidates from `allEvents`
-at load was rejected for the same reason: any catalogue edit could add or drop a candidate and
-shift every later index. **Change the menu by appending an epoch from a date that has not
-opened** (`npm run daily-menu -- --from YYYY-MM-DD`, which refuses an opened date), never by
-editing a live one.
+including days already played; the recency chain then replays decks nobody was dealt, and stored
+results name the wrong theme. So the menu is a list of **epochs**, each in force from its `from`
+date. Dates before the first epoch run the original generator untouched, Everything about half
+the time and one category otherwise (a test pins every date from #1 to 2026-10-05), and each
+epoch carries its own copy of the category list, so a future 22nd category cannot re-roll a live
+epoch. Computing candidates from `allEvents` at load was rejected for the same reason: any
+catalogue edit could add or drop a candidate and shift every later index. **Change the menu by
+appending an epoch from a date that has not opened** (`npm run daily-menu -- --from YYYY-MM-DD`,
+which refuses an opened date), never by editing a live one.
 
 **Two gates, and the second is the one that matters.** An entry needs 30+ cards and **8+ in
 band 0**, both measured over the pool the daily would deal. Pool size says little about easy
 cards: South Korea has 56 cards and 1 in band 0, Sports in France 43 and 1, Greece 185 and 111.
 The ramp's opening takes about 4 from band 0, so 8 leaves room for an overlapping theme earlier
-in the week (Italy, then Art in Italy) having used some. At the first epoch this admitted 10
-regions (Global is a footprint, not a theme), 28 countries and 78 pairings; the script prints
+in the week (Italy, then Art in Italy) having used some. The first epoch holds 10 regions
+(Global is a footprint, not a theme), 28 countries and 78 pairings; the script prints
 what it rejected and what sits near a gate. `dailyThemeMenu.test.ts` re-checks the latest
 epoch against the live catalogue, so catalogue work that pushes an entry under a gate fails
 CI; the fix is a new epoch.
@@ -119,22 +118,24 @@ opening hand on **39.5%** of days; with `bandSpread: 1` and the lowered exclusio
 match ordinary days (9.3% against 9.8%, and 2.7-3.1 band-0 cards in the first six against
 2.9). `footholdFloor: 4` lets band 0 alone ignore the seven-day exclusion when it would leave
 fewer than 4 easy cards. It never fired in that measurement, since the 8-card gate already
-covers it; it is the guarantee rather than the mechanism. "Everything", category and curated
-days keep exactly their old options, because their past decks sit in the recency chain.
+covers it; it is the guarantee rather than the mechanism. Everything, category and curated
+days do not get it: their past decks sit in the recency chain, and changing their options would
+re-deal them.
 
-**Smaller things.** Names reach 46 characters ("Architecture in the Middle East & North Africa").
-The home card wraps them, and the in-game `TopBar` pill now wraps to two lines instead of
-truncating, since a pairing's place comes last and was the part one line cut off. The Middle
-East & North Africa pairings still clip on a 320px phone ("Architecture in / the Middle…");
-the home card and the share text carry the full name. A daily deck of 60 cards or fewer is
-kept out of the intro in full, like a curated one (`THIN_DAILY_DECK` in `App.tsx`). Nothing server-side
-changed: the bot ceiling of 20 is below any 30-card pool, and the API never derives a theme.
-"Theme Cleared!" stays curated-only, although a 30-card pairing is clearable; that and keeping
-the same place off consecutive days are open follow-ups.
+**Smaller things.** Names reach 46 characters ("Architecture in the Middle East & North
+Africa"). The home card wraps them, and the in-game `TopBar` pill wraps to two lines rather than
+truncating, since a pairing's place comes last and is the part one line would cut off. The
+Middle East & North Africa pairings still clip on a 320px phone ("Architecture in / the
+Middle…"); the home card and the share text carry the full name. A daily deck of 60 cards or
+fewer is kept out of the intro in full, like a curated one (`THIN_DAILY_DECK` in `App.tsx`).
+Nothing server-side depends on the menu: the bot ceiling of 20 is below any 30-card pool, and
+the API never derives a theme. "Theme Cleared!" stays curated-only, although a 30-card pairing
+is clearable; that and keeping the same place off consecutive days are open follow-ups.
 
 ## Two deck-builder escape hatches, and why they are not optional
 
-Both default to today's values, so nothing outside a curated day changes.
+Both default to the ordinary values, so only the days that pass them (curated, place and
+pairing days) change.
 
 **`bandSpread`.** `SPREAD = 6` gives each band a budget of `max(1, floor(bandSize / 6))`. On a
 pool small enough that every budget floors to 1, `availableBands` prefers bands still inside
@@ -166,21 +167,22 @@ curated day and asserts every card it dealt is in the next day's exclusion set.
 
 `getDailyTheme` checks the calendar and returns early _before_ touching `seededRandom`. Every
 ordinary day's theme depends on how many random numbers have been drawn from its seed, so a
-check that consumed one would silently re-theme the whole year — the failure mode adding the
-21st category caused (see `leaderboard-daily/`). A test pins 120 dates as unchanged.
+check that consumed one would silently re-theme the whole year — the same failure mode as
+changing a seeded list's length (see `leaderboard-daily/`). A test pins 120 dates as unchanged.
 
 ## Sizing
 
 Minimum **16** events, enforced by the API — but that is a backstop, not a target. The
-authoring floor is **30**, and the working band is **30-36**; every theme in the bank above
-sits in it. `scripts/theme-gap.js --slugs` reports the 30-36 band as a gate, alongside the
-band-zero and same-year checks the publish script enforces.
+authoring floor is **30**, and the working band is **30-36**; every banked theme sits in it.
+`scripts/theme-gap.js --slugs` reports the 30-36 band, band zero and same-year pairs as gates.
+The publish script enforces only resolvable slugs and band zero (the API enforces the minimum of
+16), so a same-year pair passes publishing: run `theme-gap` first.
 
-**Timeline spread is advisory, not a gate** (since 2026-09). A theme may deliberately live in one
+**Timeline spread is advisory, not a gate.** A theme may deliberately live in one
 stretch of history (a single dynasty, the age of the pharaohs, deep time) and the order within
 it is still a real puzzle. `theme-gap` prints the bins as `INFO` and `publish-theme.js` prints a
-"clustered" note instead of failing. What protects the opening hand is band 0, which stays a
-hard gate at 5; spread was only ever a proxy for it.
+"clustered" note instead of failing. What protects the opening hand is band 0, which is a
+hard gate at 5; spread is only a proxy for it.
 
 No hard maximum, but two soft notes:
 
@@ -192,8 +194,8 @@ No hard maximum, but two soft notes:
 
 Bots are clamped to the day's ceiling in `botGeneration.ts`, because they sample Poisson(6)
 with no idea how many cards exist. Reading the theme size from the stored calendar is **not**
-the pattern `submit.ts` forbids — what broke there was the API keeping its own copy of
-`ALL_CATEGORIES` and re-deriving the theme, and that copy drifting. Reading a count from the
+the pattern `submit.ts` forbids — that is the API keeping its own copy of `ALL_CATEGORIES` to
+re-derive the theme, which drifts. Reading a count from the
 one authoritative record has nothing to drift against, and it fails open.
 
 ## The cleared end state
@@ -207,12 +209,10 @@ It is **not** a claim the player saw every card: drawing the last card and then 
 times also exhausts the pool, with five mistakes. Hence "Theme Cleared!" rather than anything
 implying completeness; "Perfect Clear!" (zero mistakes) is exact.
 
-This also fixes thin category days — `sports` has ~50 playable events and has always been able
-to run the deck dry and call it Game Over.
-
 The outcome is gated to games that belong to a curated theme (`getCuratedThemeIdForConfig` in
 `themeReplay.ts`), **not** to any single-player game that ran dry. A Custom filter thin enough
-to exhaust is not a theme, and "Theme Cleared!" on it would be a lie.
+to exhaust is not a theme, and "Theme Cleared!" on it would be a lie; a seeded daily that runs
+dry ends as an ordinary game over.
 
 ## Replaying past decks: the Archive tab
 
@@ -233,7 +233,7 @@ it lands in. It carries no challenge code because a code cannot encode a hand-pi
 date-keyed daily concern; a replay has no date). Restart reseeds too. Rebuilding the day's
 exact deck was considered and rejected: it makes beating your best a memory test, and the
 exclusion chain would drop cards from the theme. `bandSpread: 1` still applies — the cap's
-rationale above assumed a curated theme fires on a handful of dates, and replays break that
+rationale above assumes a curated theme fires on a handful of dates, and replays break that
 assumption, so the same ~5 band-0 footholds will open most replays of a theme. Accepted: the
 alternative is the measured 99.7%-hardest-quartile opening.
 
@@ -254,7 +254,7 @@ under `REPLAY_MIN_POOL` (8, `startGame`'s own floor) renders disabled rather tha
 with a console error. "Today" is `useToday`'s date passed down as a prop, and the panel also
 takes a `calendarVersion` that `ModeSelect` bumps after each calendar refetch — the refetch
 mutates module state that nothing re-renders on, so without it a theme fetched after boot
-stayed invisible until the next unrelated render.
+stays invisible until the next unrelated render.
 
 **Personal bests** live in `when-theme-bests` (`themeBests.ts`), written by the stats recorder
 for the daily on a curated day and for every replay, so the day's score is the first record.
@@ -268,16 +268,16 @@ loading the real one.
 
 ## The theme bank
 
-Nineteen themes authored in one parallel pass, one note each. Every deck is 34-36 cards and
-clears all four gates as they stood then: size 30-36, 6+ of 8 spread bins (now advisory, see
-Sizing), 5+ band-zero footholds, no two cards sharing a year. Ready-to-paste workflow inputs are in
+Nineteen themes, one note each. Every deck is 34-36 cards, authored to size 30-36, 5+ band-zero
+footholds and no two cards sharing a year, and spread across 6+ of 8 bins (advisory, see
+Sizing). Ready-to-paste workflow inputs are in
 [publish-inputs.md](publish-inputs.md); art prompts for the events they needed are in
 [art/all_prompts.csv](art/all_prompts.csv), built by
 `scripts/events/theme-art-prompts.py` from the hand-authored scenes in `art/scenes/`.
 
-**That CSV is five columns**, `event_name,research_prompt,image_prompt,image_generated,saved_filename`,
-because the consumer sends the research prompt and the image prompt as two messages in one
-Gemini chat. Both in-repo generators used to write four and drop the research step; see
+**That CSV is five columns**,
+`event_name,research_prompt,image_prompt,image_generated,saved_filename`, because the consumer
+sends the research prompt and the image prompt as two messages in one Gemini chat; see
 [events-images/](../events-images/index.md) for the skeleton and why it is as short as it is.
 
 | Theme                | Note                                         | Scope rule — a card is in only if…                               |
@@ -301,23 +301,17 @@ Gemini chat. Both in-repo generators used to write four and drop the research st
 | The Deep             | [the-deep.md](the-deep.md)                   | it is going deliberately under water, or finding what sank       |
 | When the Earth Moved | [upheaval.md](upheaval.md)                   | it is an eruption, earthquake or tsunami                         |
 | What We Drink        | [what-we-drink.md](what-we-drink.md)         | it is a drink made on purpose, or a rule about drinking it       |
-| Indonesia            | [indonesia-theme.md](indonesia-theme.md)     | the first theme, and the model the rest follow                   |
+| Indonesia            | [indonesia-theme.md](indonesia-theme.md)     | the worked example: why these 36 and not others                  |
 
-**The scope rule is the theme.** Four of these started as concepts that a keyword net returned
-100-350 hits for — "scientific discoveries", "astrophysics", "European country foundings",
-"games" — which is the signature of a category rather than a deck. Each was narrowed to a rule
-answerable yes/no about any candidate, and each then netted 11-43. If a new theme's anchored
-probe returns more than ~100, narrow the rule before picking anything.
-
-**Anchor short alternatives with `\b`.** `theme-gap` matches `friendly_name description`, so
-bare `tea` matches "steam" and "instead", bare `led ` matches "called ", and `illuminat`
-matches manuscript illumination. Unanchored nets reported 714, 460 and 102 hits for themes
-whose real coverage was 34, 87 and 22.
+**The scope rule is the theme.** A concept a keyword net returns 100-350 hits for —
+"scientific discoveries", "astrophysics", "European country foundings", "games" — is a category
+rather than a deck. Narrowed to a rule answerable yes/no about any candidate, each of those nets
+11-43. If a new theme's anchored probe returns more than ~100, narrow the rule before picking
+anything.
 
 ## Traps found authoring the bank
 
-Four things cost real time across nineteen parallel themes. All four are cheap to avoid once
-named.
+Four traps, all cheap to avoid once named.
 
 **A slug can be named for the cause while its title names the event.** `english-civil-war-aftermath`
 _is_ the Restoration of Charles II card, with that exact `friendly_name`. An agent greps for
@@ -325,27 +319,27 @@ _is_ the Restoration of Charles II card, with that exact `friendly_name`. An age
 you either — it matches `friendly_name description`, never the slug. **Before authoring any
 card, check what already sits on its year**, not just what matches its name.
 
-**`candidates.json` is live.** The `add-events` skill calls it "events staged for review" and
-says not to hand-add to it, which reads as "not in the game". It is in `manifest.json`, so its
-events are dealt, validated and part of the slug namespace like any other file.
+**`candidates.json` is live.** It is in `manifest.json`, so its events are dealt, validated and
+part of the slug namespace like any other file; its name does not mean "staged".
 
-**Anchor short regex alternatives with `\b`.** Unanchored `tea` matches "s**tea**m" and
-"ins**tea**d"; `led ` matches "cal**led** "; `illuminat` matches manuscript illumination.
-These inflated three themes' nets to 714, 460 and 102 hits against real coverage of 34, 87
-and 22 — and an inflated net reads as "this theme is rich", which is the wrong conclusion.
+**Anchor short regex alternatives with `\b`.** `theme-gap` matches `friendly_name description`,
+so unanchored `tea` matches "s**tea**m" and "ins**tea**d"; `led ` matches "cal**led** ";
+`illuminat` matches manuscript illumination. Unanchored nets report 714, 460 and 102 hits for
+themes whose real coverage is 34, 87 and 22 — and an inflated net reads as "this theme is
+rich", which is the wrong conclusion.
 
 **A net above ~100 after anchoring means the concept is too loose.** "Scientific discoveries"
 and "European country foundings" are categories, not decks. Narrow the scope rule to something
 answerable yes/no about a single candidate, then re-probe.
 
-One tooling note: `npm run find-duplicates` is O(n²) in _pairs_, and at ~5,985 events it
-crashed on V8's maximum Set size until the redundant seen-sets were removed. If it ever dies
-with `RangeError` rather than reporting, that is the shape of the problem.
+One tooling note: `npm run find-duplicates` is O(n²) in _pairs_, so at catalogue scale a
+per-pair seen-set overflows V8's maximum Set size. If it ever dies with `RangeError` rather than
+reporting, that is the shape of the problem.
 
-## Bank 2 (2026-09)
+## Bank 2
 
-Twenty-two more themes, authored in one pass with Sonnet sub-agents in two strictly separated
-steps, which is the part worth copying:
+Twenty-two more themes, authored with Sonnet sub-agents in two strictly separated steps, which
+is the part worth copying:
 
 1. **A blind spine.** One agent per theme got only the name and the scope rule, and was told not
    to open anything in the repository. It wrote 40-45 dated beats from the subject alone, with a
@@ -358,12 +352,12 @@ steps, which is the part worth copying:
    one covered the beat, authored the rest, and cut to 30-36 against the gates.
 
 Every deck is 31-36 cards (Stolen! 33, Before Us 32 after review), band 0 at least 5 and no
-same-year pair, measured against the merged catalogue with `--include-pending`. Spread was not a
-gate for this bank (see Sizing): Pharaohs sits in 2 bins and Before Us in 1, by design.
+same-year pair, measured against the merged catalogue with `--include-pending`. Spread is not a
+gate (see Sizing): Pharaohs sits in 2 bins and Before Us in 1, by design.
 Ready-to-paste inputs are the second half of [publish-inputs.md](publish-inputs.md); art prompts
 are [art/bank-2_prompts.csv](art/bank-2_prompts.csv), built from `art/scenes-bank-2/` (a separate
 folder because `theme-art-prompts.py` refuses to run while any scene names an illustrated event,
-and the first bank is now fully illustrated).
+and the first bank is fully illustrated).
 
 | Theme                | Note                                         | Scope rule — a card is in only if…                                |
 | -------------------- | -------------------------------------------- | ----------------------------------------------------------------- |
@@ -427,24 +421,19 @@ blends the `difficulty` label with how sparse the timeline is around the event, 
 theme rarely holds enough of them and the footholds have to be found rather than graded into
 existence.
 
-**Images are a gate, but as of 2026-08-23 it is open.** `loadAllEvents` hides any event without
-Cloudinary art, so an unillustrated event can never be dealt. That gap is now **zero**: all 5,107
-playable events have art, including the 324 `sports` events that had long been curated but
-unillustrated (see
-[../events-images/session-2026-08-23-catalogue-image-completion.md](../events-images/session-2026-08-23-catalogue-image-completion.md)).
-Any event you author from here still needs art before it can be themed, and the image pipeline
-lives outside this repo — so confirm it still runs before committing to a theme that needs new
-art.
+**Images are a gate.** `loadAllEvents` hides any event without Cloudinary art, so an
+unillustrated event can never be dealt. Every live event has art; any event you author still
+needs art before it can be themed, and the image pipeline lives outside this repo — so confirm
+it runs before committing to a theme that needs new art.
 
 ## The scripts duplicate src/, on purpose
 
 `scripts/themes/catalogue.js` re-implements the playable-event filter and the difficulty index
 in plain CommonJS, because the workflow runs it with a bare `node` and no build step.
-`src/utils/themeScripts.test.ts` asserts the two agree, which is what makes that safe — it
-caught a real divergence already: `u` is an event's **position in the year-sorted catalogue**,
-not a binary search for its year, and on the catalogue's large year ties those differ by up to
-0.015, a fifth of a spread bin.
+`src/utils/themeScripts.test.ts` asserts the two agree, which is what makes that safe. The
+subtle case: `u` is an event's **position in the year-sorted catalogue**, not a binary search
+for its year, and on the catalogue's large year ties those differ by up to 0.015, a fifth of a
+spread bin.
 
-Note also that the eligible set is **5,289**, not 5,290: `ERA_DEFINITIONS` stops at year 2100
-and one event sits beyond it, so validating against the raw catalogue would let through a slug
-the daily can never deal.
+Note also that the eligible set excludes anything past year 2100: `ERA_DEFINITIONS` stops there,
+so validating against the raw catalogue would let through a slug the daily can never deal.

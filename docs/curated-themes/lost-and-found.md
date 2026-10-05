@@ -72,19 +72,19 @@ Paste as `eventNames` into the workflow's `theme` input.
 |  2000 | `thonis-heracleion-found`          | NEW            |
 |  2012 | `richard-iii-grave-found`          | NEW            |
 
-26 of the 35 are new. Read the current band and spread figures from the catalogue rather than
-from here — a card's band moves whenever the catalogue around its year does:
+26 of the 35 were authored for this theme.
+
+Gates: size **35**, band 0 **7**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 35 above, comma-separated>
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
-
-At authoring time: size 35, spread **8/8** bins `[3 4 3 3 7 6 4 5]`, band 0 **8**, same-year
-pairs **0**.
 
 ## The footholds, and why the ancient half exists
 
-Eight cards land in band 0. Five are the obvious ones — `rosetta-stone`,
+The footholds marked above were chosen as band-0 cards. Five are the obvious ones — `rosetta-stone`,
 `machu-picchu-discovered`, `tutankhamun-tomb`, `terracotta-warriors-discovered`,
 `titanic-wreck-found` — globally famous finds that carry an `easy` label and sit in stretches
 the catalogue does not crowd.
@@ -169,8 +169,8 @@ Real gaps, not filler, each blocked by a collision rather than by not being wort
 `terracotta-army-discovered` was authored on the finding that the catalogue held only the
 burial (`terracotta-army`, 210 BCE) and not the discovery. That was wrong: the discovery
 already existed as **`terracotta-warriors-discovered`** (1974, illustrated) — in
-`candidates.json`, which is easy to overlook because the `add-events` skill describes it as a
-staging file. It is in `manifest.json`, so its events are live and playable like any other.
+`candidates.json`, which is easy to overlook because the file name reads like staging. It is in
+`manifest.json`, so its events are live and playable like any other.
 
-The deck now points at the existing card. `sutton-hoo-excavated` was re-checked the same way
+The deck points at the existing card. `sutton-hoo-excavated` was re-checked the same way
 and is genuinely new — the catalogue holds only `sutton-hoo-burial` (625).

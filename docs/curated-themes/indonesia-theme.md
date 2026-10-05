@@ -6,11 +6,12 @@ deliberately left out.
 
 ## Why a theme at all
 
-There is no other mechanism. Custom filters by difficulty, category and era only
-(`src/components/FilterControls.tsx`) — events carry no region, no tags, no free text — and a
-challenge code packs filter bitmasks plus a seed, not an event list
-(`src/utils/challengeCode.ts`). A hand-picked set of slugs can only be played as a curated daily
-theme. 36 is the size at which a theme is still clearable; see [index.md](index.md), Sizing.
+Every event carries `regions`, so Custom's Regions and Countries filters can deal Indonesian
+history, but a filter deals every tagged card, not a hand-picked list, and a challenge code
+packs filter bitmasks plus a seed, not an event list (`src/utils/challengeCode.ts`). A
+hand-picked set of slugs plays only as a curated theme: as the daily on its dates, then as an
+Archive replay. 36 is the size at which a theme is still clearable; see [index.md](index.md),
+Sizing.
 
 ## The 36
 

@@ -71,17 +71,18 @@ Paste as `eventNames` into the workflow's `theme` input.
 |  1999 | `euro-introduced`                 | foothold |     |
 |  2009 | `bitcoin-created`                 |          |     |
 
-Seven of these are new and **have no art yet**, so `theme:gap` and the publish validator will
-read the theme as 29 cards until the image pipeline has run. Measure it the way it was
-authored:
+Seven of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **7**, bins **8/8** (advisory), same-year pairs **1**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above> --include-pending \
-  --extra <staging>/money.json
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
 
-Read the current band and spread figures from the catalogue rather than from here; a card's
-band depends on how crowded its neighbourhood is, so both move whenever the catalogue does.
+**The deck fails the same-year gate**: `first-coins` and `punch-marked-coins-india` are both
+dated 600 BCE. Swap one, and re-publish if the calendar holds the deck.
 
 ## Why the footholds are the footholds
 

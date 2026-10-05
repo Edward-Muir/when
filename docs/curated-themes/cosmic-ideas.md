@@ -72,15 +72,15 @@ an event authored for this theme and not previously in the catalogue.
 | 1998 | `dark-energy-discovered`           | NEW           |
 | 2015 | `gravitational-waves`              | foothold      |
 
-19 of the 36 are new. Read the current band and spread figures from the catalogue rather than
-from here — a card's band moves whenever the catalogue around its year does:
+19 of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **9**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, with the 19 new events supplied via `--extra` and `--include-pending`:
-size 36, bins 8/8, band 0 = 9, same-year pairs 0.
 
 ## Why the footholds are the footholds
 

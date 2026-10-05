@@ -72,17 +72,18 @@ Edges argued rather than assumed:
 |  2005 | `first-face-transplant`            |                |
 |  2022 | `first-pig-heart-transplant`       |                |
 
-12 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **5**, bins **8/8** (advisory), same-year pairs **0**.
+12 of the 36 were authored for this theme.
 
-11 of the 36 are new. At authoring time, with the new cards loaded via `--include-pending
---extra`:
+Gates: size **36**, band 0 **5**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
+```bash
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-size 36, bins 8/8 [5 2 2 2 4 8 7 6], band 0 5, same-year pairs 0
-```
 
-All four gates pass. Band 0 clears the floor of 5 with no margin, so read the next section
-before dropping anything from the ancient end.
+Band 0 clears the floor of 5 with no margin, so read the next section before dropping anything
+from the ancient end.
 
 ## Why the footholds are the footholds
 

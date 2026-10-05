@@ -67,12 +67,15 @@ Two edges were argued rather than assumed:
 |   1997 | `ousland-solo-crossing-antarctica`    | NEW      |
 |   2012 | `cameron-challenger-deep`             |          |
 
-21 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **5**, bins **7/8** (advisory), same-year pairs **0**.
+21 of the 36 were authored for this theme; 15 already existed in the catalogue and are reused as-is.
 
-21 of the 36 are new; 15 already existed in the catalogue and are reused as-is.
+Gates: size **36**, band 0 **5**, bins **7/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-At authoring time, with the new cards loaded via `--include-pending --extra`:
-size **36**, bins **7/8**, band 0 **5**, same-year pairs **0**.
+```bash
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
+```
 
 ## Why the footholds are the footholds
 

@@ -69,10 +69,12 @@ Paste as `eventNames` into the workflow's `theme` input.
 |  2012 | `cameron-challenger-deep`       |          | NEW |
 |  2023 | `titan-submersible-implosion`   | foothold | NEW |
 
-Measured with the new cards staged in (`--include-pending --extra`): size 34, spread 8/8 bins
-`[6 3 2 5 6 4 3 5]`, band 0 = 7, same-year pairs 0, and no pair inside eight years. Re-read
-those from the catalogue rather than from here once the art exists — a card's band depends on
-how crowded its neighbourhood is, and this theme adds 30 events to that neighbourhood itself:
+30 of the 34 were authored for this theme, which adds 30 events to the neighbourhood that
+decides their bands.
+
+Gates: size **34**, band 0 **7**, bins **8/8** (advisory), same-year pairs **0**. No pair sits
+inside 8 years. A card's band moves whenever the catalogue around its year does, so re-measure
+rather than trust these figures:
 
 ```bash
 npm run theme:gap -- --slugs <the 34 above, comma-separated>

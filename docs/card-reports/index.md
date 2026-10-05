@@ -3,16 +3,16 @@
 Players flag bad card data (wrong year/image/description) from the card detail popup;
 reports land in Upstash Redis and are read at the hidden `/card-reports` page.
 
-Shipped 2026-08-02. Endpoints, Redis keys, env vars and the `?key=` flow are documented in
+Endpoints, Redis keys, env vars and the `?key=` flow are documented in
 [../architecture-reference.md](../architecture-reference.md) — not repeated here. This file
 is the reasoning behind the design and the traps.
 
 ## Why it works the way it does
 
-- **In-app, not `mailto:`.** It started as a mail link and was converted mid-session: a
-  mail-app handoff bounces the player out of the game on mobile and most reports never get
-  finished.
-- **Minimal payload.** Only event id + reason id + timestamp + app version. The admin page
+- **In-app, not `mailto:`.** A mail-app handoff bounces the player out of the game on mobile,
+  and most reports never get finished.
+- **Minimal stored payload.** Only event id + reason id + timestamp + app version; the device
+  id is used for the dedup and rate-limit keys and never stored. The admin page
   joins the id back to the full card client-side via `loadAllEvents()`, so a report can't be
   forged to carry arbitrary display text.
 - **Dedup is the real anti-spam control; the rate limit only stops floods.** 20/hour per IP
@@ -39,27 +39,26 @@ is the reasoning behind the design and the traps.
 
 ## Gotchas
 
-- **The description popup dismisses on any click reaching the backdrop.** `GamePopup.tsx`
-  only calls `stopPropagation` for the `gameOver` variant, so every control in the report
-  row needs it or the card vanishes mid-report. The wrapper `<div>` carries it.
-- **Event ids are not all ASCII.** Three carry accents (`chimú-kingdom`,
-  `mining-mercury-potosí`, `chimú-chan-chan-peak`). The first validation regex was
-  `/^[a-z0-9-]+$/`, which would have silently made those cards unreportable. It is now
-  Unicode-aware (`\p{L}\p{N}`), pinned by a test.
+- **A `tap-advance` popup dismisses on any tap, the card included.** `Modal.tsx` stops
+  propagation at the card only in its other dismiss modes, so every control in the report row
+  (`ReportIssueButton.tsx`) stops it itself or the card vanishes mid-report. The wrapper
+  `<div>` carries it.
+- **Event ids are not all ASCII.** Two live ids carry accents (`mining-mercury-potosí`,
+  `chimú-chan-chan-peak`), so the validation regex is Unicode-aware (`\p{L}\p{N}`), pinned by
+  a test. An ASCII-only `/^[a-z0-9-]+$/` silently makes those cards unreportable.
 - **CRA's Jest sets `resetMocks: true`** — a `jest.mock()` factory's `mockResolvedValue` is
   wiped before each test; re-apply implementations in `beforeEach`.
-- **`src/` tests can import from `api/`** across the tsconfig boundary. That is how the
-  reason-id allowlist and the auth decision table are unit-tested.
+- **`src/` tests can import from `lib/`** across the tsconfig boundary. That is how the
+  reason-id allowlist (`lib/card-reports/reportSchema.ts`) and the auth decision table
+  (`lib/adminAuth.ts`) are unit-tested.
 - **Capacitor iOS needs no release for API changes.** `capacitor.config.ts` points
   `server.url` at the live site, so relative `/api/*` resolves the same as on web.
 
-## Open reports we could not close
+## Open reports
 
-A 2026-08-22 pass read the live reports and fixed every `bad-description`, `wrong-year` and
-`other` one. **Six `wrong-image` reports remain open and are blocked on Cloudinary
-credentials** — replacing a card's art means uploading a new asset, and no `CLOUDINARY_*`
-values are available to a sandboxed session. Triage, from fetching each image at the
-delivery rung the game actually uses:
+**Six `wrong-image` reports are open, blocked on Cloudinary credentials** — replacing a card's
+art means uploading a new asset, and no `CLOUDINARY_*` values are available to a sandboxed
+session. Triage, from fetching each image at the delivery rung the game uses:
 
 | card                                           | verdict                                                                |
 | ---------------------------------------------- | ---------------------------------------------------------------------- |
@@ -73,17 +72,15 @@ delivery rung the game actually uses:
 Each wrong image depicts a subject belonging to some _other_ card, and the asset is stored
 under the correct `public_id`, so the mis-assignment happened when the art was generated,
 not when the URL was built. Two of the four (`jackie-robinson-mlb-debut`,
-`medieval-jousting-tournaments`) already have correct prompts queued in `all_prompts.csv`
-and sit in its 654-row not-yet-generated backlog, so regenerating that backlog fixes them;
-the other two are not in that file at all and need prompts written.
+`medieval-jousting-tournaments`) have correct prompts in `all_prompts.csv`, not yet
+generated; the other two are not in that file and need prompts written.
 
 ## Known gaps
 
-- **The endpoints have never been run against real Redis.** No Upstash credentials were
-  available; logic is covered by unit tests and Playwright against stubbed responses. The
-  Redis wiring needs one manual pass.
+- **The Redis wiring is untested against real Upstash.** The logic is covered by unit tests
+  and Playwright against stubbed responses; the wiring needs one manual pass.
 - No notification — reports sit until someone visits `/card-reports`.
-- No free-text field. Deliberate for v1: it would bring back sanitization, length caps and
+- No free-text field. Deliberate: it would bring in sanitization, length caps and
   moderation. Cost is that "Other" reports say a card is wrong but not why.
 - Two feedback addresses coexist app-wide (`feedback@play-when.com` in Menu,
   `playwhenfeedback@gmail.com` in Support/Privacy/Terms). Unrelated, but worth unifying.

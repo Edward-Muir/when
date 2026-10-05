@@ -14,7 +14,7 @@ Edges argued rather than assumed:
   opens (Wang Mang's own Xin dynasty) never appears as its own card — Xin never gets a founding
   _or_ fall beat here, because nothing distinguishes it from the fall/restoration pair that
   already bracket it (`wang-mang-usurps-han` and `han-dynasty`'s own restoration are one story).
-- **`silk-trade-begins`** (Zhang Qian's mission) is in as a defining peak act of the Han court —
+- **`silk-road-established`** (Zhang Qian's mission) is in as a defining peak act of the Han court —
   a state-sponsored act of the imperial court, not merely a trade development, which is what
   keeps it inside the rule that a battle or a treaty needs a court or ruler behind it.
 - **`macartney-mission-rebuffed`** is in on the same reading: refusing a foreign trade mission is
@@ -33,7 +33,7 @@ Edges argued rather than assumed:
 |  -221 | `qin-unification`              | foothold       |
 |  -213 | `qin-book-burning`             | foothold       |
 |  -206 | `han-dynasty`                  | foothold       |
-|  -130 | `silk-trade-begins`            | foothold       |
+|  -130 | `silk-road-established`        | foothold       |
 |     9 | `wang-mang-usurps-han`         | NEW            |
 |   184 | `yellow-turban-rebellion`      |                |
 |   208 | `battle-red-cliffs`            | foothold · NEW |
@@ -64,21 +64,19 @@ Edges argued rather than assumed:
 |  1911 | `chinese-revolution`           |                |
 |  1912 | `last-emperor-china-abdicates` | foothold       |
 
-6 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **16**, bins **6/8** (advisory), same-year pairs **0**.
+6 of the 36 were authored for this theme.
 
-6 of the 36 are new. Figures at authoring time, with the new cards loaded via
-`--include-pending --extra`:
+Gates: size **36**, band 0 **16**, bins **6/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-```
-size 36                (want 30-36)   PASS
-bins 6/8                (advisory)    INFO
-band 0 15               (want 5+)     PASS
-same-year pairs 0       (want 0)      PASS
+```bash
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds
 
-Fifteen band-0 cards against a floor of 5 — the theme is unusually rich in them, for two
+Sixteen band-0 cards against a floor of 5 — the theme is unusually rich in them, for two
 structural reasons rather than luck:
 
 - **The dynastic foundings and endings that make a nation-state history textbook are
@@ -95,9 +93,9 @@ structural reasons rather than luck:
 
 - **Duplicate catalogue cards for the same beat**, kept out to avoid same-slug redundancy:
   `zhou-dynasty-begins` (Muye, same beat as `establishment-zhou-dynasty`, same year, same
-  wording almost); `silk-road-established` (same beat as `silk-trade-begins`, same year);
-  `three-kingdoms-period` (same beat as `fall-han-dynasty`, same year, weaker fit for "fall");
-  `jin-dynasty-reunifies-china` (same beat as `sima-yan-jin-unification`, same year).
+  wording almost); `three-kingdoms-period` (same beat as `fall-han-dynasty`, same year, weaker
+  fit for "fall"); `jin-dynasty-reunifies-china` (same beat as `sima-yan-jin-unification`, same
+  year).
 - **Spine beats cut for redundancy against a card already doing the job.** "Zhou Court Flees to
   Luoyang" (-770) is one year from "Death of King You Ends Western Zhou" (-771) and covers a
   weaker, more obscure act (an administrative relocation, not a fall or founding); both beats
@@ -120,7 +118,7 @@ structural reasons rather than luck:
 - **Catalogue doubts, reused anyway.** `han-dynasty` is dated -206 in the catalogue against the
   spine's -202 for Liu Bang's actual proclamation as emperor; the catalogue's date is the fall
   of Qin/rise of Liu Bang broadly, four years earlier than the formal declaration, and it is
-  reused rather than duplicated. `silk-trade-begins` is dated -130 against the spine's -138 for
+  reused rather than duplicated. `silk-road-established` is dated -130 against the spine's -138 for
   Zhang Qian's departure; the catalogue dates the trade route's opening rather than the envoy's
   departure. `kangxi-military-campaigns` is dated 1681 and bundles the Three Feudatories revolt,
   the Taiwan conquest and the Dzungar wars into one card; the actual fall of the last Ming

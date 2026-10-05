@@ -69,14 +69,15 @@ Two edges were argued rather than assumed:
 |  1979 | `egypt-israel-peace`          |          |
 |  1995 | `dayton-accords`              |          |
 
-10 of the 35 are new. Measured against the merged catalogue: size **35**, band 0 **8**, bins **8/8** (advisory), same-year pairs **0**.
+10 of the 35 were authored for this theme; the other 25 were already in the catalogue, exactly
+as the spine's own note expected ("the catalogue likely has many treaties").
 
-10 of the 35 are new; the other 25 were already in the catalogue, exactly as the spine's own
-note expected ("the catalogue likely has many treaties"). At authoring time, with the new
-cards loaded via `--include-pending --extra`:
+Gates: size **35**, band 0 **7**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-```
-size 35, bins 8/8, band 0 8, same-year pairs 0
+```bash
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds

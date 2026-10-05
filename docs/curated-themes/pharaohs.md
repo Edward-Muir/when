@@ -68,13 +68,14 @@ Narmer's unification to Cleopatra's death. Modern discoveries of their tombs are
 |   -31 | `battle-actium`                  | foothold       |
 |   -30 | `death-cleopatra`                | foothold       |
 
-18 of the 34 are new. Measured against the merged catalogue: size **34**, band 0 **21**, bins **2/8** (advisory), same-year pairs **0**.
+18 of the 34 were authored for this theme.
 
-18 of the 34 are new. At authoring time, with the new cards loaded via `--include-pending
---extra`:
+Gates: size **34**, band 0 **21**, bins **2/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-```
-size 34, bins 2/8, band 0 21, same-year pairs 0
+```bash
+npm run theme:gap -- --slugs <the 34 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds

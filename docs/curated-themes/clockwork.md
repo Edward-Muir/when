@@ -33,7 +33,7 @@ Two edges were argued rather than assumed:
 
 ## The 36
 
-Paste `eventNames` from `clockwork.theme.json` into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |  Year | Slug                           |                |
 | ----: | ------------------------------ | -------------- |
@@ -74,21 +74,21 @@ Paste `eventNames` from `clockwork.theme.json` into the workflow's `theme` input
 |  2000 | `y2k`                          | foothold       |
 |  2022 | `leap-second-retired`          | NEW            |
 
-21 of the 36 are new. Read the current band and spread figures from the catalogue rather than
-from here — a card's band moves whenever its neighbourhood does:
+21 of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **12**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`:
-size **36**, bins **8/8**, band 0 **11**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 
 Band 0 blends the `difficulty` label with how _sparse_ the timeline is around a year, so the
 footholds are the cards that are easy **to place**, not the cards a reader would call easy.
-This theme is unusually rich in them — 11 against a floor of 5 — and the reason is structural
+This theme is unusually rich in them — 12 against a floor of 5 — and the reason is structural
 rather than lucky: **timekeeping's origins sit in the emptiest part of the catalogue**.
 
 - `gnomon-shadow-clock`, `water-clock` and `sundial-invented` span 1,500 years apiece in a

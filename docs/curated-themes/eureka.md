@@ -27,7 +27,7 @@ Torricelli's barometer and Darwin's _Origin_ are all in the catalogue, all obvio
 
 ## The 36
 
-Paste `eventNames` from `eureka.theme.json` into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |    Year | Slug                               |          |     |
 | ------: | ---------------------------------- | -------- | --- |
@@ -68,18 +68,16 @@ Paste `eventNames` from `eureka.theme.json` into the workflow's `theme` input.
 |    2004 | `graphene-isolated`                |          | NEW |
 |    2015 | `gravitational-waves`              | foothold |     |
 
-Eight cards are new (`NEW`); `tycho-new-star` and `fermat-last-theorem-proved` already existed
-but were written for earlier themes and are **still unillustrated**, so ten of the 36 need art
-before this theme can be published. Read the current figures from the catalogue rather than
-from here:
+Eight cards were authored for this theme (`NEW`); `tycho-new-star` and
+`fermat-last-theorem-proved` were written for earlier themes.
+
+Gates: size **36**, band 0 **14**, bins **8/8** (advisory), same-year pairs **0**. No pair sits
+inside 8 years. A card's band moves whenever the catalogue around its year does, so re-measure
+rather than trust these figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above> --include-pending --extra <staging>/eureka.json
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time that read: size 36, bins 8/8 `[3 4 4 6 6 5 4 4]`, band 0 = 14, same-year
-pairs 0, and **no pair inside eight years** — the smallest gap in the deck is exactly 8
-(1788→1796, 1887→1895).
 
 ## The footholds are free here, and the spread was the hard part
 
