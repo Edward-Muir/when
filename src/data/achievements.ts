@@ -1,5 +1,5 @@
-// AUTO-GENERATED from when-achievement-badge-prompts.csv (session 1: card visual design).
-// Edit the CSV and regenerate, or hand-edit once real unlock logic lands.
+// The achievement catalogue: names, tiers, criteria copy and badge art. Hand-maintained; the
+// unlock rules live in achievementLogic.ts, keyed by `id`.
 
 export type AchievementTier =
   | 'none'
@@ -292,7 +292,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Peak Performance',
     family: 'Difficulty',
     tier: 'obsidian',
-    unlockCriteria: 'Place 10 very-hard events',
+    unlockCriteria: 'Place 10 Expert events',
     eventName: 'everest',
   },
   {

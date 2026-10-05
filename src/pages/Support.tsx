@@ -40,16 +40,16 @@ const Support: React.FC = () => (
     </div>
 
     <div className={faqCardClass}>
-      <h3 className={questionClass}>What are the game modes?</h3>
+      <h3 className={questionClass}>What can I play?</h3>
       <p className={answerClass}>
         <strong className="text-text">Daily Challenge:</strong> One deck a day, the same for
         everyone. Your score goes on that day&apos;s leaderboard.
         <br />
-        <strong className="text-text">Archive:</strong> Every past daily deck, replayable from the
-        day after it ran. Beat your best on each.
+        <strong className="text-text">Archive:</strong> Past themed daily decks, replayable from the
+        day after they ran. Beat your best on each.
         <br />
-        <strong className="text-text">Custom Game:</strong> Pick eras, categories, difficulty and
-        how many cards you start with. Sometimes called Sudden Death: every wrong placement costs a
+        <strong className="text-text">Custom Game:</strong> Pick eras, regions, countries,
+        categories and difficulty. Sometimes called Sudden Death: every wrong placement costs a
         card, and the game ends when they are gone.
       </p>
     </div>
@@ -57,9 +57,9 @@ const Support: React.FC = () => (
     <div className={faqCardClass}>
       <h3 className={questionClass}>How does scoring work?</h3>
       <p className={answerClass}>
-        Your score is the length of your timeline: every event you place correctly adds one. A wrong
-        placement adds nothing and costs you a card. Daily scores are ranked on that day&apos;s
-        leaderboard, and Stats keeps your records across every game.
+        Your score is the number of events you place correctly. A wrong placement adds nothing and
+        costs you a card. Daily scores are ranked on that day&apos;s leaderboard, and Stats keeps
+        your records across every game.
       </p>
     </div>
 

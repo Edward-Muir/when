@@ -41,7 +41,7 @@ interface GamePopupProps {
  *   post-placement and names dates freely, so showing it there would hand over the answer.
  *   See docs/event-detail/index.md.
  * - `has_detail`: set only where prose actually exists. Where it is not, the description is what
- *   renders — which is what lets the feature ship against a partly written corpus.
+ *   renders, so an event added without prose still gets a working popup.
  */
 function showsProseFor(type: GamePopupType, showYear: boolean, event: HistoricalEvent | null) {
   return type === 'description' && showYear && !!event?.has_detail;
@@ -169,7 +169,7 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
       // good one — "Game Over" reads as failure for a player who just got through the lot.
       if (perfect) return 'Perfect Clear!';
       if (survived) return 'Theme Cleared!';
-      return hasWinner ? 'You Won!' : 'Game Over';
+      return 'Game Over';
     }
     if (!hasWinner) {
       return 'Game Over';
