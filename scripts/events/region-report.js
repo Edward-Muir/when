@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Reports region-tagging progress and emits the worklist chunks for tagging what is left.
+ * Reports region coverage and emits the worklist chunks for any event without `regions`.
  *
  * Usage:
  *   node scripts/events/region-report.js                  # progress per shard, counts per region
@@ -8,9 +8,9 @@
  *   node scripts/events/region-report.js --file people.json
  *   node scripts/events/region-report.js --chunk-size 40
  *
- * The work queue is every event with no `regions`. An event leaves it by being tagged, so the
- * remaining count is the progress meter. Once the sweep is done, `REQUIRE_REGIONS` in
- * `src/utils/eventRegions.test.ts` is what gates it; this script always exits 0.
+ * The work queue is every event with no `regions`; an event leaves it by being tagged. The gate
+ * is `REQUIRE_REGIONS` in `src/utils/eventRegions.test.ts`, which is on, so an untagged manifest
+ * event fails the suite. This script always exits 0.
  *
  * Chunks land in `untracked_data/event-regions/worklist/` (gitignored) as `<shard>-NNN.json`.
  * Each record carries the card's text **and its detail paragraphs**: that prose was researched

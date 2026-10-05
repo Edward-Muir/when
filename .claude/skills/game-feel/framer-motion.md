@@ -27,6 +27,10 @@
 
 ### Drag Interactions
 
+Card placement in this game does not use Framer Motion drag: it is `@dnd-kit`
+(`src/hooks/useDragAndDrop.ts`, `src/utils/dndSensors.ts`). This pattern suits other draggable
+surfaces.
+
 ```typescript
 <motion.div
   drag

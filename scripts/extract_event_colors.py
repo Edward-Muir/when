@@ -3,7 +3,7 @@
 Extract dominant colors from event images and write them to event JSON files.
 
 Uses a simplified "Okmain" algorithm:
-  1. Download Wikipedia thumbnail
+  1. Download the card image (the Cloudinary `thumbnail` rung, 400x400)
   2. Resize to 64x64
   3. Convert to Oklab color space
   4. K-means cluster (K=4)
@@ -11,7 +11,14 @@ Uses a simplified "Okmain" algorithm:
   6. Clamp lightness, convert to hex
 
 Dependencies: pip install Pillow numpy requests
-Usage: python scripts/extract_event_colors.py [--force] [--category NAME] [--dry-run] [--sample N]
+Usage: python scripts/extract_event_colors.py [--force] [--file NAME] [--dry-run] [--sample N]
+
+Reads the event files listed in public/events/manifest.json (`{ "files": [...] }`).
+`--file` restricts the run to one of them, e.g. `--file themes.json`.
+
+Downloads use the same `thumbnail` transform as src/utils/cloudinaryImage.ts, so the
+script reuses a derived asset the game already requests instead of fetching the full
+original or minting a new transformation (see docs/cloudinary-cost-controls.md).
 """
 
 import argparse
@@ -31,7 +38,7 @@ MANIFEST_FILE = EVENTS_DIR / "manifest.json"
 DOWNSAMPLE_SIZE = 64
 K_CLUSTERS = 4
 KMEANS_MAX_ITER = 20
-RATE_LIMIT_S = 10  # 10s between downloads (Wikipedia rate limits aggressively)
+RATE_LIMIT_S = 0.2  # Pause between downloads
 MAX_RETRIES = 5
 RETRY_BACKOFF_S = 30  # Base backoff for 429 retries (doubles each retry)
 
@@ -41,6 +48,22 @@ SATURATION_WEIGHT = 0.5
 TEXT_COLOR_THRESHOLD = 0.6  # Oklab L above this -> dark text
 
 USER_AGENT = "Mozilla/5.0 (compatible; WhenTimelineGame/1.0; image-color-extraction)"
+
+# Must match the `thumbnail` rung in src/utils/cloudinaryImage.ts.
+UPLOAD_MARKER = "/image/upload/"
+THUMBNAIL_TRANSFORM = "c_fill,f_auto,g_auto,h_400,q_auto:good,w_400"
+TRANSFORM_TOKENS = ("c_", "q_", "f_", "w_", "h_", "g_", "dpr_")
+
+
+def download_url(url: str) -> str:
+    """Rewrite a Cloudinary delivery URL to the thumbnail rung; pass other URLs through."""
+    if "res.cloudinary.com" not in url or UPLOAD_MARKER not in url:
+        return url
+    left, rest = url.split(UPLOAD_MARKER, 1)
+    first, sep, tail = rest.partition("/")
+    if sep and ("," in first or first.startswith(TRANSFORM_TOKENS)):
+        rest = tail
+    return f"{left}{UPLOAD_MARKER}{THUMBNAIL_TRANSFORM}/{rest}"
 
 
 # ── Oklab color space conversions ──────────────────────────────────────────
@@ -213,77 +236,73 @@ def download_image(url: str) -> bytes | None:
 
 def process_events(args: argparse.Namespace) -> None:
     manifest = json.loads(MANIFEST_FILE.read_text())
-    categories = manifest["categories"]
+    files = manifest["files"]
 
-    if args.category:
-        categories = [c for c in categories if c["name"] == args.category]
-        if not categories:
-            print(f"Category '{args.category}' not found in manifest.", file=sys.stderr)
+    if args.file:
+        if args.file not in files:
+            print(f"File '{args.file}' is not listed in {MANIFEST_FILE.name}.", file=sys.stderr)
             sys.exit(1)
+        files = [args.file]
 
     total_processed = 0
     total_skipped = 0
     total_failed = 0
 
-    for cat in categories:
-        for filename in cat["files"]:
-            filepath = EVENTS_DIR / filename
-            if not filepath.exists():
-                print(f"File not found: {filepath}", file=sys.stderr)
-                continue
+    for filename in files:
+        filepath = EVENTS_DIR / filename
+        if not filepath.exists():
+            print(f"File not found: {filepath}", file=sys.stderr)
+            continue
 
-            events = json.loads(filepath.read_text())
-            modified = False
+        events = json.loads(filepath.read_text())
+        modified = False
 
-            for i, event in enumerate(events):
-                if args.sample and total_processed >= args.sample:
-                    break
-
-                name = event.get("friendly_name", event.get("name", "?"))
-                url = event.get("image_url")
-
-                if not url:
-                    total_skipped += 1
-                    continue
-
-                if event.get("color") and not args.force:
-                    total_skipped += 1
-                    continue
-
-                # Download
-                image_bytes = download_image(url)
-                if not image_bytes:
-                    total_failed += 1
-                    continue
-
-                # Extract
-                result = extract_color(image_bytes)
-                if not result:
-                    print(f"  ⚠ Could not extract color for: {name}", file=sys.stderr)
-                    total_failed += 1
-                    continue
-
-                hex_color, text_color = result
-
-                if args.dry_run:
-                    print(f"  {name}: {hex_color} (text: {text_color})")
-                else:
-                    event["color"] = hex_color
-                    event["text_color"] = text_color
-                    modified = True
-
-                total_processed += 1
-                if total_processed % 50 == 0:
-                    print(f"  Processed {total_processed} events...")
-
-                time.sleep(RATE_LIMIT_S)
-
-            if modified and not args.dry_run:
-                filepath.write_text(json.dumps(events, indent=2, ensure_ascii=False) + "\n")
-                print(f"  Updated {filepath.name}")
-
+        for event in events:
             if args.sample and total_processed >= args.sample:
                 break
+
+            name = event.get("friendly_name", event.get("name", "?"))
+            url = event.get("image_url")
+
+            if not url:
+                total_skipped += 1
+                continue
+
+            if event.get("color") and not args.force:
+                total_skipped += 1
+                continue
+
+            # Download
+            image_bytes = download_image(download_url(url))
+            if not image_bytes:
+                total_failed += 1
+                continue
+
+            # Extract
+            result = extract_color(image_bytes)
+            if not result:
+                print(f"  ⚠ Could not extract color for: {name}", file=sys.stderr)
+                total_failed += 1
+                continue
+
+            hex_color, text_color = result
+
+            if args.dry_run:
+                print(f"  {name}: {hex_color} (text: {text_color})")
+            else:
+                event["color"] = hex_color
+                event["text_color"] = text_color
+                modified = True
+
+            total_processed += 1
+            if total_processed % 50 == 0:
+                print(f"  Processed {total_processed} events...")
+
+            time.sleep(RATE_LIMIT_S)
+
+        if modified and not args.dry_run:
+            filepath.write_text(json.dumps(events, indent=2, ensure_ascii=False) + "\n")
+            print(f"  Updated {filepath.name}")
 
         if args.sample and total_processed >= args.sample:
             break
@@ -294,7 +313,7 @@ def process_events(args: argparse.Namespace) -> None:
 def main():
     parser = argparse.ArgumentParser(description="Extract dominant colors from event images")
     parser.add_argument("--force", action="store_true", help="Re-extract even if color already exists")
-    parser.add_argument("--category", type=str, help="Process only this category")
+    parser.add_argument("--file", type=str, help="Process only this manifest file, e.g. themes.json")
     parser.add_argument("--dry-run", action="store_true", help="Print colors without writing to JSON")
     parser.add_argument("--sample", type=int, help="Process only first N events")
     args = parser.parse_args()

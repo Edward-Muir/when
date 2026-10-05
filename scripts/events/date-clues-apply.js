@@ -7,14 +7,13 @@
  *
  * Maps are read from untracked_data/date-clues/rewrite-*.json (gitignored), so rewrites
  * can be authored in parallel across disjoint files while a single deterministic pass
- * touches the catalogue. This is the arrangement that kept the 2026-04 bulk rename clean
- * (scripts/shorten-names-apply.js) — agents editing a shared 186KB array corrupt it.
+ * touches the catalogue: agents editing a shared JSON array corrupt it.
  *
  * Every check runs across the whole merged map BEFORE any file is written, so a bad
  * entry aborts the run rather than leaving the catalogue half-rewritten. Application is
  * keyed by slug and idempotent, so a partial run is safe to repeat.
  *
- * One-off in intent, but kept: the next bulk import will want it.
+ * This is the route for any bulk change to names or descriptions.
  */
 const fs = require('fs');
 const path = require('path');

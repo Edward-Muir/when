@@ -4,8 +4,8 @@
  * Generate every app icon, the favicon and the iOS launch-screen image from one painting.
  *
  * The master is a Gemini oil painting (assets/icon/icon-master.jpg), made with the prompts in
- * docs/app-icon/gemini-icon-prompts.md. Vector icons were tried for four rounds and rejected;
- * the painting matches the card art. See docs/mobile-ios/index.md ("Icons, splash, store art").
+ * docs/app-icon/gemini-icon-prompts.md. It is a painting rather than a vector icon because it
+ * matches the card art. See docs/mobile-ios/index.md ("Icons, splash, store art").
  *
  * The icon is a centred crop of the master (CROP), because a hand-sized icon needs its one
  * object to fill more of the square than a card image does. Tested at 1024/180/60/40/29 px:

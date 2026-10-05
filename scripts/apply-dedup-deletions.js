@@ -4,15 +4,15 @@
  * Apply Dedup Deletions
  *
  * Consumes the delete-list exported from the `/admin/dedup` review tool
- * (`docs/dedup/dedup-delete-list.json`) and removes those events from the category
- * files in `public/events/`.
+ * (`docs/dedup/dedup-delete-list.json`) and removes those events from the event files
+ * listed in `public/events/manifest.json`.
  *
  * Nothing is hard-deleted: every removed event is appended to `public/events/deprecated.json`
- * with `_originalCategory` and `_deprecatedAt`, matching what the event-editor's
- * `deprecateEvent()` does. That keeps the removal reversible.
+ * with `_originalCategory` and `_deprecatedAt`, as `scripts/events/backlog-apply.js` does.
+ * That keeps the removal reversible.
  *
- * An id can legitimately appear in more than one category file, so every occurrence is
- * removed and each one is recorded separately in deprecated.json.
+ * An id can appear in more than one event file, so every occurrence is removed and each one
+ * is recorded separately in deprecated.json.
  *
  * Usage: node scripts/apply-dedup-deletions.js [--dry-run]
  */
@@ -41,15 +41,12 @@ function main() {
   const deleteList = JSON.parse(fs.readFileSync(DELETE_LIST, 'utf-8'));
   const doomed = new Set(deleteList.map((e) => e.name));
 
-  const categoryFiles = fs
-    .readdirSync(EVENTS_DIR)
-    .filter((f) => f.endsWith('.json') && f !== 'manifest.json' && f !== DEPRECATED)
-    .sort();
+  const eventFiles = readJson('manifest.json').files;
 
   const deprecated = readJson(DEPRECATED);
   const removed = [];
 
-  for (const filename of categoryFiles) {
+  for (const filename of eventFiles) {
     const events = readJson(filename);
     if (!Array.isArray(events)) continue;
 
@@ -61,7 +58,7 @@ function main() {
       removed.push(event.name);
       deprecated.push({
         ...event,
-        _originalCategory: filename.replace(/\.json$/, ''),
+        _originalCategory: event.category,
         _deprecatedAt: DEPRECATED_AT,
       });
     }
@@ -76,7 +73,7 @@ function main() {
   console.log(`\nremoved ${removed.length} event records for ${doomed.size - notFound.length} ids`);
   console.log(`deprecated.json: ${deprecated.length} entries`);
   if (notFound.length) {
-    console.log(`\n${notFound.length} id(s) in the delete-list were not in any category file:`);
+    console.log(`\n${notFound.length} id(s) in the delete-list were not in any event file:`);
     notFound.forEach((name) => console.log(`  - ${name}`));
   }
   if (DRY_RUN) console.log('\n(dry run — nothing written)');

@@ -57,14 +57,14 @@ and prose without a flag is writing nobody can reach.
 The reading surface is a 476px scroll region, about 20 lines on a 402px phone. Enforced by
 `scripts/events/detail-spec.js`; `src/utils/eventDetailCorpus.test.ts` runs it over the corpus.
 
-**Do not write to the ceiling.** 600 characters that have said the thing beats 830 padded. The
-band used to allow three paragraphs and 1,250 characters; every entry written under it came back
-at three, near the top, which is why it is two now. Expect to draft three and cut one.
+**Do not write to the ceiling.** 600 characters that have said the thing beats 830 padded. A
+three-paragraph, 1,250-character allowance reliably produces three paragraphs near the top, which
+is why the band is two. Expect to draft three and cut one.
 
 ## Rule 1: the first sentence carries the entry
 
 **Why:** the player just placed a card they already knew something about. If the first sentence
-tells them what they already had, the tap bought nothing. At 5,460 entries the real risk is that
+tells them what they already had, the tap bought nothing. At ~5,800 entries the real risk is that
 they all read the same, so vary the _kind_ of opening across a batch.
 
 Six kinds: **A** the correction (the famous version is wrong), **B** the near-miss, **C** the
@@ -105,8 +105,8 @@ Never describe the card art. Players can see it.
 ## Rule 3: difficulty is not depth
 
 **Why:** `difficulty` grades how hard the card is to **place** (recognition), not how much record
-exists. Roughly 2,600 of 5,460 events are `hard` or `very-hard`; treating those as thin hollows out
-half the corpus.
+exists. About half the catalogue is `hard` or `very-hard`; treating those as thin hollows out half
+the corpus.
 
 Write a `very-hard` card at the same length and depth as an `easy` one.
 `first-boxing-rules-broughton` is `very-hard` and has a documented life behind it.
@@ -129,7 +129,8 @@ Event: first-recorded-cricket (1611). Almost nothing is known about the match.
 **The lens has a stop: every paragraph must come back to the card's own event.** Context that
 widens and never returns is padding.
 
-There is no exemption. Every event gets an entry; `detail-report.js` demands 5,460 of 5,460.
+There is no exemption. Every manifest event gets an entry; `detail-report.js` exits non-zero
+while any lacks one.
 
 ## Rule 5: the voice is an interesting museum plaque
 
@@ -167,8 +168,8 @@ too, and it is exact, unshowy and unironic.
 ## Rule 6: draft, then check, then cut
 
 **Why:** confident fabrication is the failure that scales worst, and nothing in the pipeline
-catches it. A spot-check of the first ten entries, all written from memory, found a definite
-factual error in one and untraceable claims in most. Every one read convincingly.
+catches it. A spot-check of ten entries written from memory found a definite factual error in one
+and untraceable claims in most. Every one read convincingly.
 
 **The method: draft from what you know, then check it, then cut what does not survive.**
 
@@ -205,7 +206,7 @@ Nothing is stored. No sources sidecar, no citation trail, no two-source rule. Th
 ### Do not add `wikipedia_url` to the worklist
 
 A worklist chunk holds `name`, `friendly_name`, `year`, `category`, `difficulty` and `description`.
-That is the whole of it, deliberately. 1,830 events carry a `wikipedia_url`, but it is a byproduct
+That is the whole of it, deliberately. About 1,800 events carry a `wikipedia_url`, but it is a byproduct
 of `scripts/difficulty/wikipedia_pageviews.py` grading difficulty by pageviews, and it is not
 reliable: `battle-megiddo` is the 1457 BCE battle and links `Battle_of_Megiddo_(1918)`.
 
@@ -216,9 +217,9 @@ the data. Do not add it to the chunk.
 
 `metres`, `colour`, `armour`, `organised`, `centre`, `defence`, `recognise`, `travelled`.
 
-This deliberately differs from the 5,460 existing `description` strings, which are decisively
-American (`-ize` leads 429 to 167, `defense` 19 to nil). Those are not being rewritten and the
-prose replaces the description rather than sitting beside it, so a player never sees both at once.
+This deliberately differs from the `description` strings, which are decisively American (`-ize`
+over `-ise`, `defense` over `defence`). They are not rewritten to match, and the prose replaces the
+description rather than sitting beside it, so a player never sees both at once.
 Do not "fix" either side to match the other. Nothing enforces this and the surrounding data pulls
 the wrong way, so check it.
 
@@ -244,8 +245,8 @@ enhance, interplay, deep dive, "beacon of", "realm of", "in the heart of", "rich
 testament to", arguably, "it is worth noting", and sentence-initial Notably / Indeed / Ultimately /
 Moreover / Furthermore.
 
-Every ban was measured against all 5,460 existing descriptions before adoption; 20 of 37 have zero
-precedent in the catalogue. See the spec for the counts.
+Every ban is measured against the catalogue's existing descriptions before adoption, so none fires
+on good historical writing. See the spec for the counts.
 
 ## Workflow for a batch
 
@@ -260,8 +261,8 @@ slugs, titles, years, categories, difficulties and existing descriptions. Smalle
 
 ### 2. Read the gold set
 
-The ten calibration entries listed at the end of the spec are the corpus's first real prose. Read
-them before writing. They transmit tone better than any amount of rule text.
+The ten calibration entries listed at the end of the spec are the reference prose. Read them
+before writing. They transmit tone better than any amount of rule text.
 
 ### 3. Check before committing to a claim
 
@@ -274,7 +275,7 @@ because reading finished prose cold cannot catch a confident invention.
 Write `untracked_data/event-detail/batch-NNN.json` as `slug -> { paragraphs }`.
 
 **Never edit `public/events/detail/*.json` directly.** Parallel agents editing a shared 600 KB JSON
-array corrupt it; this repo has already paid for that lesson once.
+array corrupt it.
 
 ### 5. Apply
 
@@ -292,7 +293,7 @@ half-applied batch is unreachable. Writes the prose and `has_detail` together.
 npm run typecheck && npm run lint
 CI=true npm test -- --watchAll=false eventDetailCorpus
 CI=true npm run build
-node scripts/events/detail-report.js             # progress meter; non-zero until 5,460/5,460
+node scripts/events/detail-report.js             # exits non-zero while any manifest event lacks prose
 ```
 
 ### 7. Read five at random, cold, against the spec

@@ -2,7 +2,7 @@
 """Print the composite difficulty bands the game will compute for the catalogue.
 
 This is the acceptance gate for a regrade. The number that matters is the smallest
-band-0 pool across the 20 categories: that is the warm-up pool a themed day draws its
+band-0 pool across the categories: that is the warm-up pool a themed day draws its
 opening cards from, and it must not go down.
 
 Usage:

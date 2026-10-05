@@ -78,7 +78,7 @@ async function fetchCloudinaryImages() {
 
 /**
  * Extract event name from Cloudinary public_id
- * Format: when/<<event name>>_uid.png
+ * Format: <event name>_<uid> (prefixed with CLOUDINARY_FOLDER/ when one is set)
  */
 function extractEventName(publicId) {
   // Remove folder prefix (when/)

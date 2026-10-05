@@ -1,6 +1,6 @@
 ---
 name: event-detail-writer
-description: Writes two-paragraph long-form detail prose for events in the When timeline game, with light fact-checking. Use for Phase 3 batches from a detail-report.js worklist chunk.
+description: Writes two-paragraph long-form detail prose for events in the When timeline game, with light fact-checking. Use for new events from a detail-report.js worklist chunk.
 model: sonnet
 effort: low
 skills:
