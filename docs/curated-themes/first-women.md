@@ -63,20 +63,19 @@ Two edges were argued rather than assumed:
 |  2011 | `lagarde-leads-the-imf`                | NEW            |
 |  2021 | `harris-becomes-vice-president`        | foothold · NEW |
 
-27 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **13**, bins **8/8** (advisory), same-year pairs **0**.
-
-27 of the 36 are new. Existing catalogue matches: `hypatia-alexandria`, `princess-wu-empress`,
-`murasaki-shikibu-genji`, `womens-suffrage-nz`, `first-woman-in-parliament` (Finland, live in
-`candidates.json`), `amelia-earhart-atlantic`, `first-woman-space` (Tereshkova),
+27 of the 36 were authored for this theme. Existing catalogue matches: `hypatia-alexandria`,
+`princess-wu-empress`, `murasaki-shikibu-genji`, `womens-suffrage-nz`, `first-woman-in-parliament`
+(Finland, in `candidates.json`), `amelia-earhart-atlantic`, `first-woman-space` (Tereshkova),
 `thatcher-becomes-pm` and `angela-merkel-elected` were all already the right beat at the right
 year and were reused rather than duplicated.
 
-```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated>
-```
+Gates: size **36**, band 0 **13**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **36**, bins
-**8/8** `[2 2 1 1 5 6 8 11]`, band 0 **12**, same-year pairs **0**.
+```bash
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
+```
 
 ## Why the footholds are the footholds
 

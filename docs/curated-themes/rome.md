@@ -65,18 +65,19 @@ below).
 | 1204 | `fourth-crusade-byzantine`    |                |
 | 1453 | `constantinople-fall`         | foothold       |
 
-3 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **33**, bins **3/8** (advisory), same-year pairs **0**.
+Only 3 of the 36 were authored for this theme.
 
-Only 3 of the 36 are new. At authoring time, with the new cards loaded via
-`--include-pending --extra`:
+Gates: size **36**, band 0 **33**, bins **3/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
+```bash
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-size 36, bins 4/8, band 0 33, same-year pairs 0
-```
 
-Size and band-0 pass with a very large margin (33 of 36 land in band 0 — see below). Bins is
-informational only; the spread is 4/8 because this theme is deliberately narrow by design (a
-single state's history), which the brief allows explicitly.
+Size and band 0 pass with a very large margin (33 of 36 land in band 0 — see below). Bins is
+informational only; the spread is 3/8 because this theme is deliberately narrow (a single
+state's history), which the brief allows explicitly.
 
 ## Why the footholds are the footholds — and why there are so many
 

@@ -12,7 +12,7 @@ export type { CuratedTheme };
  *
  * There is deliberately no bundled fallback copy. The calendar has exactly one home, so a
  * theme can never be half-published: either the client has it or the date falls through to
- * the seeded category theme, exactly as before curated themes existed. A client that has
+ * the seeded theme. A client that has
  * loaded once keeps the calendar through the service worker's network-first cache, and one
  * that has never been online cannot submit a score anyway.
  */
@@ -55,7 +55,7 @@ export async function loadCuratedThemes(options: { force?: boolean } = {}): Prom
       themes = calendar.themes ?? [];
       loaded = true;
     } catch (error) {
-      console.warn('Failed to load curated themes; today falls back to a category theme', error);
+      console.warn('Failed to load curated themes; today falls back to a seeded theme', error);
     } finally {
       inflight = null;
     }

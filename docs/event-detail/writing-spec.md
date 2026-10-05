@@ -48,12 +48,10 @@ Both totals bind, which is the point of having them alongside the per-paragraph 
 paragraphs at the per-paragraph floor fall under `MIN_TOTAL_CHARS`, and two at the ceiling overrun
 `MAX_TOTAL_CHARS`. Neither a two-stub entry nor two walls of text can pass.
 
-**This band replaced a looser one, and the reason matters.** The first pass allowed 2-3 paragraphs
-and up to 1,250 characters, on the principle that three should be available when the third earned
-itself. Every one of the ten calibration entries came back at three paragraphs near the top of the
-band, and so did four of four sub-agent entries. A three-paragraph allowance does not produce
-occasional three-paragraph entries; it produces three-paragraph entries. Two is now the whole
-allowance rather than a floor to rise off, at roughly two thirds of the old length.
+**Two is the whole allowance, not a floor to rise off.** A three-paragraph allowance does not
+produce occasional three-paragraph entries; it produces three-paragraph entries. Given 2-3
+paragraphs and up to 1,250 characters, every calibration entry and every sub-agent entry came back
+at three, near the top of the band.
 
 **Do not write to the ceiling.** An entry that stops at 600 characters because it has said what it
 has to say is better than one padded to 830.
@@ -63,9 +61,10 @@ has to say is better than one padded to 830.
 The player has just placed a card they already knew something about. The first sentence has to hand
 them something they did not have.
 
-At 5,460 entries the risk is not that one is bad, it is that they all read the same. A spec that
-says "open with an interesting hook" reliably produces one formula repeated 5,460 times. So the
-rule names **kinds** of opening, and a batch may not lean on one kind repeatedly.
+Across thousands of entries the risk is not that one is bad, it is that they all read the same. A
+spec that says "open with an interesting hook" reliably produces one formula repeated across the
+whole catalogue. So the rule names **kinds** of opening, and a batch may not lean on one kind
+repeatedly.
 
 **A. The correction.** The famous version is wrong, or stops too early.
 
@@ -139,8 +138,8 @@ And never describe the card art. No "pictured", "depicted", "the image shows". P
 nothing about how much record exists. `first-boxing-rules-broughton` is `very-hard` and has a
 documented life behind it; `first-moon-landing` is `easy` and so is its research.
 
-**Write a `very-hard` card at the same length and depth as an `easy` one.** Roughly 2,600 of the
-5,460 events are `hard` or `very-hard`. Treating them as thin would hollow out half the corpus.
+**Write a `very-hard` card at the same length and depth as an `easy` one.** About half the
+catalogue is `hard` or `very-hard`. Treating them as thin would hollow out half the corpus.
 
 ## Rule 4: when the record itself is thin, widen the lens
 
@@ -157,8 +156,8 @@ both true and far better than a padded paragraph on the origins of bat-and-ball 
 The lens has a stop on it: **every paragraph must come back to the card's own event.** Context that
 widens and never returns is padding wearing a better coat.
 
-There is **no exemption**. Every event gets an entry. `detail-report.js` demands 5,460 of 5,460 and
-that is the merge gate.
+There is **no exemption**. Every event gets an entry: `detail-report.js` exits non-zero while any
+manifest event lacks prose.
 
 ## Rule 5: register, and the carve-out
 
@@ -223,10 +222,10 @@ and a wrong date in a museum plaque is worse than no plaque.
 
 **So the method is: draft from what you know, then check it, then cut what does not survive.**
 
-This rule used to read "write only what you would stake without a link", which is a rule against
-fabricating and not a rule for verifying. It told a writer to trust its own confidence, and that is
-exactly the failure mode. It was replaced after a spot-check of the first ten entries, all written
-that way, found a definite factual error in one and untraceable claims in most.
+"Write only what you would stake without a link" is not a substitute. It is a rule against
+fabricating, not a rule for verifying: it tells a writer to trust its own confidence, which is
+exactly the failure mode. Entries written that way read perfectly and still carry confident errors,
+such as an amphitheatre placed on the wrong street.
 
 **Light research, not a research project.** One or two searches per event. Skim the first few
 results, open a page or two. The purpose is to catch what a model states confidently and wrongly:
@@ -257,7 +256,7 @@ stores `{ paragraphs }` and nothing else. This is a check, not a bibliography.
 
 ### Do not add `wikipedia_url` to the worklist
 
-1,830 events carry a `wikipedia_url` field. **It is deliberately not passed to writers.**
+About a third of events carry a `wikipedia_url` field. **It is deliberately not passed to writers.**
 `detail-report.js` emits only `name`, `friendly_name`, `year`, `category`, `difficulty` and
 `description` into a worklist chunk, and that is the whole of what a writing agent sees.
 
@@ -274,10 +273,9 @@ field hands over a wrong one with the authority of being in the data.
 Write British English: `metres`, `colour`, `armour`, `organised`, `centre`, `defence`,
 `recognise`, `travelled`.
 
-**This differs from the rest of the catalogue on purpose.** The 5,460 existing `description`
-strings are decisively American: `-ize` beats `-ise` 429 to 167, `-or` beats `-our` 96 to 15,
-`meter` beats `metre` 32 to 4, and `defense` beats `defence` 19 to nil. Those are not being
-rewritten, so the two bodies of text will not match.
+**This differs from the rest of the catalogue on purpose.** The catalogue's `description`
+strings are decisively American (`-ize` over `-ise`, `-or` over `-our`, `meter`, `defense`). Those
+are not being rewritten, so the two bodies of text do not match.
 
 That is a maintainer decision, not an oversight, and it costs little: the prose _replaces_ the
 description rather than sitting beside it, so a player never sees both conventions at once. Do not
@@ -300,7 +298,7 @@ is towards American because that is what the surrounding data looks like.
 
 ## Rule 8: the machine tells
 
-This corpus will be written mostly by language models, and the thing that will make 5,460 entries
+This corpus is written mostly by language models, and the thing that makes it
 read as machine-written is not a factual error. It is a set of vocabulary and sentence habits every
 model shares. They are catalogued, so the corpus bans them rather than hoping.
 
@@ -329,22 +327,22 @@ enhance, interplay, deep dive, "beacon of", "realm of", "in the heart of", "rich
 Most of these are Rule 1's throat-clearing in better clothes. A plaque that calls something pivotal
 has used a word instead of a fact.
 
-### These were measured before being adopted
+### Every ban is measured before it is adopted
 
-A ban that fires on good historical writing would block Phase 3 for 137 batches, so every pattern
-was first run against all 5,460 existing `description` and `friendly_name` strings.
+A ban that fires on good historical writing blocks every batch, so a candidate pattern is first run
+against the catalogue's `description` and `friendly_name` strings.
 
 **20 of the 37 candidates have zero precedent in the catalogue at all**: every dash and quote rule,
 the "not just X but Y" parallelism, delve, tapestry, robust, boasts, nestled, multifaceted, "serves
 as", "paved the way", "lasting legacy", "would go on to", and the rest. The remainder hit between 1
 and 9 times each (_pivotal_ 3, _renowned_ 9, _showcase_ 9, _turning point_ 3), all in descriptions
-written years ago to a different standard and none being rewritten. A non-zero count means
+written to a different standard and none being rewritten. A non-zero count means
 "plausible enough English that a writer will reach for it", which argues for the ban rather than
 against it.
 
-One candidate was dropped for noise: a broad participial-clause regex at 39 hits, narrowed to seven
-verbs, which brings it to 17 and none in prose written to this spec. Each pattern in
-`detail-spec.js` carries its measured count in a comment so nobody re-litigates it blind.
+A pattern too noisy to ban outright is narrowed instead: the participial-clause rule names seven
+verbs rather than matching any trailing participle. Each pattern in `detail-spec.js` carries its
+measured count in a comment so nobody re-litigates it blind.
 
 **This ban list applies to event prose only**, not to this repository's own documentation, which
 uses em dashes as house style throughout. Do not go "fixing" the docs.
@@ -370,18 +368,18 @@ Roughly, and not a template to fill:
 Two paragraphs, and the second one has to do double duty: the texture and whatever the event left
 behind, if anything did. Most events do not need a legacy sentence at all.
 
-**The pressure runs towards more, always.** Every calibration entry and every sub-agent entry was
-written at three paragraphs first and cut back. Expect the same, and expect the cut to improve the
-entry rather than damage it. The ten now run 647 to 746 characters against a 830 ceiling, so the
-working range sits comfortably inside the band rather than pressed against the top of it.
+**The pressure runs towards more, always.** A first draft comes out at three paragraphs; expect to
+cut it back, and expect the cut to improve the entry rather than damage it. The calibration entries
+run 638 to 795 characters against an 830 ceiling, inside the band rather than pressed against the
+top of it.
 
-The floor earns its place too: at the earlier, looser band it caught a 223-character paragraph in
-the calibration set that wanted one more concrete fact rather than padding.
+The floor earns its place too: a paragraph under it usually wants one more concrete fact, not
+padding.
 
 ## The calibration set
 
-Ten entries were hand-written against this spec and read back cold against it. They are the corpus's
-first real prose, and they are the gold set: read them before writing a batch.
+Ten entries were hand-written against this spec and read back cold against it. They are the gold
+set: read them before writing a batch.
 
 | Slug                           | Year   | What it calibrates                                    |
 | ------------------------------ | ------ | ----------------------------------------------------- |
@@ -396,9 +394,7 @@ first real prose, and they are the gold set: read them before writing a batch.
 | `transistor-invented`          | 1947   | The unguessable-consequence hook                      |
 | `jallianwala-bagh-massacre`    | 1919   | The atrocity carve-out                                |
 
-`jallianwala-bagh-massacre` is in the set because of what it cost. A first draft ran to 1,428
-characters, over the caps even at the earlier looser band, because attributing a contested death
+`jallianwala-bagh-massacre` is in the set because of what it costs. Attributing a contested death
 toll (379 by the official inquiry, above a thousand by the Congress inquiry) costs characters that
-a bare number does not. It lost a paragraph following the story forward to 1940, then a second one
-when the band tightened, and kept the attribution both times. That is now Rule 6's last line, and
-at two paragraphs it binds harder than it did.
+a bare number does not, so the entry gives up the paragraph following the story forward to 1940 and
+keeps the attribution. That is Rule 6's last line, and at two paragraphs it binds hard.

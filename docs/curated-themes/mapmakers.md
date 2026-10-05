@@ -29,7 +29,7 @@ earth's surface. That is why Ptolemy is here for the _Geographia_ and not the _A
 
 ## The 36
 
-Paste `eventNames` from the theme file into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |  Year | Slug                               |          |     |
 | ----: | ---------------------------------- | -------- | --- |
@@ -70,21 +70,19 @@ Paste `eventNames` from the theme file into the workflow's `theme` input.
 |  1995 | `gps-full-coverage`                | foothold | NEW |
 |  2005 | `google-earth-launch`              | foothold | NEW |
 
-23 of the 36 are new, which is the honest measure of how little of this subject the
-catalogue held: a sweep for `map|cartograph|chart|atlas|globe|projection|survey|longitude|
-compass|triangulat|geograph|GPS` returned 53 candidates, of which 13 survived hand-picking.
-Everything between Ptolemy and the portolan charts, the whole of national survey, and the
-entire satellite era had to be written.
+23 of the 36 were authored for this theme, which is the honest measure of how little of this
+subject the catalogue held: a sweep for
+`map|cartograph|chart|atlas|globe|projection|survey|longitude| compass|triangulat|geograph|GPS`
+returned 53 candidates, of which 13 survived hand-picking. Everything between Ptolemy and the
+portolan charts, the whole of national survey, and the entire satellite era had to be written.
 
-Read the current band and spread figures from the catalogue rather than from here — a card's
-band moves whenever the catalogue around its year does:
+Gates: size **36**, band 0 **6**, bins **8/8** (advisory), same-year pairs **0**. No pair sits
+inside 8 years. A card's band moves whenever the catalogue around its year does, so re-measure
+rather than trust these figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, measured over playable + pending: size 36, bins 8/8, band 0 = 7,
-same-year pairs 0, and no pair within 8 years.
 
 ## Why the footholds are the footholds
 

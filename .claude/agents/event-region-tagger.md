@@ -18,7 +18,7 @@ edge cases. Do not ask for the spec to be repeated.
 ## Your job, per batch
 
 1. Read the worklist chunk you are given. Each event has `friendly_name`, `year`, `category`,
-   `description`, and usually `detail`: two researched paragraphs that name the places.
+   `description` and `detail`: two researched paragraphs that name the places.
    There is deliberately no `wikipedia_url`. It is wrong often enough to mislead, and you must never
    be given one.
 2. **Every slug in the chunk gets an entry.** Leaving one out is not an option.

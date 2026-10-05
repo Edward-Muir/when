@@ -24,7 +24,7 @@ not as a crossing — nobody crosses through it, they drink from what it carries
 
 ## The 36
 
-Paste `eventNames` from `waterworks.theme.json` into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |  Year | Slug                           |                |
 | ----: | ------------------------------ | -------------- |
@@ -65,22 +65,21 @@ Paste `eventNames` from `waterworks.theme.json` into the workflow's `theme` inpu
 |  1970 | `aswan-high-dam`               |                |
 |  1982 | `thames-barrier-completed`     | NEW            |
 
-20 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **13**, bins **8/8** (advisory), same-year pairs **0**.
+20 of the 36 were authored for this theme.
 
-20 of the 36 are new.
+Gates: size **36**, band 0 **13**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --include-pending --extra <staged file> --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **36**,
-bins **8/8** (11/9/1/4/2/5/3/1), band 0 **14**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 
 Band 0 blends the `difficulty` label with how sparse the timeline is around a year, so the
 footholds are the cards that are easy **to place**, not the cards a reader would call easy —
-14 against a floor of 5, comfortably clear.
+13 against a floor of 5, comfortably clear.
 
 - `first-irrigation-systems`, `lagash-girsu-canal-network` and `mohenjo-daro-covered-drains`
   span the emptiest stretch of the whole catalogue (6000-2450 BCE); nothing competes with

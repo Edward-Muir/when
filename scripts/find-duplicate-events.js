@@ -3,7 +3,8 @@
 /**
  * Find Duplicate Events Script
  *
- * Scans all event JSON files and identifies potential duplicates based on:
+ * Scans the live event files listed in public/events/manifest.json (so not deprecated.json,
+ * which holds retired events) and identifies potential duplicates based on:
  * 1. Exact name matches (same event ID in multiple files)
  * 2. Similar friendly names (fuzzy matching)
  * 3. Same year + similar description
@@ -16,9 +17,9 @@ const path = require('path');
 
 const EVENTS_DIR = path.join(__dirname, '../public/events');
 
-// Load all events from all JSON files
+// Load every live event from the files the manifest lists
 function loadAllEvents() {
-  const files = fs.readdirSync(EVENTS_DIR).filter(f => f.endsWith('.json') && f !== 'manifest.json');
+  const { files } = JSON.parse(fs.readFileSync(path.join(EVENTS_DIR, 'manifest.json'), 'utf-8'));
   const allEvents = [];
 
   for (const file of files) {
@@ -120,13 +121,9 @@ function findDuplicates(events) {
   // Find similar friendly names.
   //
   // The inner loop starts at i+1, so every unordered pair is visited exactly once and no
-  // seen-set is needed to deduplicate them. There used to be two, holding one string key per
-  // pair — which is O(n^2) memory for a guarantee the loop structure already gives, and at
-  // ~5,985 events that is ~17.9M entries, past V8's maximum Set size. The scan crashed with
-  // "Set maximum size exceeded" rather than reporting anything.
-  //
-  // The only keys those sets could ever have collided on were pairs sharing a name, and those
-  // are skipped on the next line regardless, so dropping them changes no output.
+  // seen-set is needed to deduplicate them. Do not add one: a string key per pair is O(n^2)
+  // memory, and at ~5,800 events that is ~17M entries, past V8's maximum Set size, so the scan
+  // crashes with "Set maximum size exceeded" rather than reporting anything.
   for (let i = 0; i < events.length; i++) {
     for (let j = i + 1; j < events.length; j++) {
       const e1 = events[i];

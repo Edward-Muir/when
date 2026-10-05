@@ -10,23 +10,19 @@ import { DAILY_HAND_SIZE } from '../../lib/leaderboard/handSize';
 const redis = Redis.fromEnv();
 
 /**
- * The daily theme is deliberately NOT validated here, and must not start being validated again.
+ * The daily theme is deliberately NOT validated here, and must not be.
  *
- * This file used to carry its own copy of the category list, the seeded RNG and `getDailyTheme`,
- * under comments saying each "must match the frontend", so it could compare the submitted theme
- * against a locally computed one. Adding `sports` to `src/types/index.ts` left that copy one entry
- * short; since the theme is `ALL_CATEGORIES[floor(random() * ALL_CATEGORIES.length)]`, a different
- * length picks a different category from the same seed, and roughly a quarter of all dates started
- * rejecting every submission with 'Invalid theme'. It shipped silently, because the ~half of days
- * themed "Everything" agree regardless of list length.
+ * Recomputing it would need a server-side copy of the category list, the seeded RNG, the dated
+ * menu epochs and the curated calendar, every one of which "must match the frontend". Any drift
+ * (a category list one entry short picks a different theme from the same seed) silently
+ * rejects every honest submission on the affected dates.
  *
- * The check could never have caught cheating in the first place — the theme is a value the client
- * supplies about a puzzle the client generated, so all it compared was whether the caller's code
- * agreed with this file's. Its only real effect was to break honest players whenever the two
- * drifted. What actually guards the board is below: the date window, the internal consistency of
- * the emoji grid against the counts, and the per-device dedupe key.
+ * And the check could never catch cheating: the theme is a value the client supplies about a
+ * puzzle the client generated, so all it would compare is whether the caller's code agrees with
+ * this file's. What actually guards the board is below: the date window, the internal
+ * consistency of the emoji grid against the counts, and the per-device dedupe key.
  *
- * Categories now live in exactly one place, `src/types/index.ts`. Nothing here needs to know them.
+ * Categories live in exactly one place, `src/types/index.ts`. Nothing here needs to know them.
  */
 interface SubmissionPayload {
   date: string;
@@ -74,10 +70,9 @@ function validateEmojiGrid(
   // placement only redraws if the deck still has a card (src/utils/placementLogic.ts), so
   // exhausting the day's pool shrinks the hand without a mistake and ends the game early.
   //
-  // That used to be theoretical (it needed ~100 correct placements against a realistic best
-  // of ~30). It is now routine: a curated theme is a couple of dozen cards, so every player
-  // who gets through one submits a short grid. DO NOT tighten this to an equality — it would
-  // reject every cleared run.
+  // This is routine: a curated theme is a couple of dozen cards, so every player who gets
+  // through one submits a short grid. DO NOT tighten this to an equality — it would reject
+  // every cleared run.
   if (redCount < 0 || redCount > DAILY_HAND_SIZE) return null;
   if (body.totalAttempts !== body.correctCount + redCount) return null;
   if (greenCount + redCount !== body.totalAttempts) return null;
@@ -145,12 +140,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Rank on correct count alone.
     //
-    // The score used to subtract the mistake count, described as a tie-break. It never was
-    // one: the daily deals a hand of DAILY_HAND_SIZE and a wrong placement discards without
-    // drawing a replacement, so the game ends precisely when the hand empties and **every
-    // finished daily has the same number of mistakes**. Subtracting it shifted every score
-    // by the same constant and ordered nothing. Don't reintroduce it — mistakes carry no
-    // information about how well someone did here.
+    // Subtracting the mistake count is no tie-break: the daily deals a hand of
+    // DAILY_HAND_SIZE and a wrong placement discards without drawing a replacement, so the
+    // game ends precisely when the hand empties and **almost every finished daily has the
+    // same number of mistakes** (a cleared curated theme can finish with fewer). Subtracting
+    // it would shift nearly every score by the same constant and order nothing. Don't add it
+    // — mistakes carry almost no information about how well someone did here.
     //
     // Equal correct counts therefore genuinely tie, and Redis orders them by the JSON member
     // string. Any real tie-break has to be a new term (time of submission, say), not this one.

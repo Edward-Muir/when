@@ -1,6 +1,8 @@
-# Python dependencies for the image pipeline scripts.
-#   scripts/extract_event_colors.py, scripts/generate_images.py
-#   images/scripts/downsample.py, images/scripts/extract_colors.py
+# Python dependencies for the scripts under scripts/.
+#   Pillow, numpy, requests: scripts/extract_event_colors.py
+#   Pillow: scripts/generate-og-image.py
+#   requests (+ python-dotenv): scripts/difficulty/wikipedia_pageviews.py
+#   numpy (+ matplotlib): scripts/difficulty/visualize_pageviews.py
 #
 # Install:  pip install -r scripts/requirements.txt
 Pillow==10.1.0

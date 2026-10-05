@@ -7,44 +7,54 @@ preloading.
 - **Grading difficulty:** [difficulty-grading-rubric.md](difficulty-grading-rubric.md) is a
   live reference, kept as its own file.
 - **Known bad records:** [catalogue-error-backlog.md](catalogue-error-backlog.md) — every year,
-  name and description found not to match its sources, and how each was resolved (all of it, as
-  of 2026-10-01), plus the flags checked and dismissed. Check it before "fixing" an event, and
-  add a new dated section for a new finding rather than a commit message.
+  name and description found not to match its sources, and how each was resolved, plus the
+  flags checked and dismissed. Check it before "fixing" an event, and add a new dated section
+  for a new finding rather than a commit message.
 - **Delivering images:** [../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)
   owns the rung ladder, its hard rules, and the service-worker cache.
-- **Full coverage reached 2026-08-23:** every playable event has art —
-  [session-2026-08-23-catalogue-image-completion.md](session-2026-08-23-catalogue-image-completion.md)
-  covers the last 16, the Unicode-churn diff trap, and how to verify the right image landed.
 
-## The image-generation pipeline is not in this repo
+## Every live event has art, because an event without it cannot be dealt
 
-Image work runs out of a `when-images/` tree **beside** this repo (`../when-images`), moved out
-of the project root to fix a `vercel dev` bug — see [../dev-tooling/index.md](../dev-tooling/index.md).
-It holds generated images, a downsampler, a colour extractor, a dedup sorter, an old-vs-new
-picker webapp, and a queued Cloudinary deletion list.
+`loadAllEvents` (`src/utils/eventLoader.ts`) drops any event whose `image_url` is not a
+Cloudinary URL (`isCloudinaryImage`). An unillustrated event is not a card with a missing
+picture; it is a card the game never deals, and a curated theme that names it reads as
+unresolved. So a new event ships with its art, and the "events in the files" count and the
+"events the game can use" count are the same number.
 
-**None of it is under version control**, so it exists only on the machine that made it. As of
-2026-08 the tree is intact and in active use: `sort_new_images.py`, `apply_decisions.py`,
-`delete_old_cloudinary.js`, `build_missing_prompts.py`, `downsample.py`, `extract_colors.py`,
-`find_images_to_upload.js` and the `compare-app` are all present, alongside a
-`build_sports_prompts.py` / `assemble_sports_prompts.py` pair added for the sports batch. What
-is tracked _here_ is `scripts/` at the repo root and the baked results in `public/events/*.json`.
+**A dedup can un-illustrate an event.** Image coverage is a property of the slug, not the
+content, so keeping the twin without an `image_url` silently drops the card. After any dedup or
+retirement, re-run the "which manifest events lack a Cloudinary `image_url`" check rather than
+trusting a list built before it.
 
-The pipeline is: prompts CSV → browser-driven Gemini job (**saves to `~/Downloads`, as `.jpeg`**)
-→ `downsample.py` → `extract_colors.py` → `find_images_to_upload.js` → manual Cloudinary upload
-→ `scripts/update-cloudinary-urls.js` in this repo.
+## The generation tree lives outside this repo
 
-One deferred item: `cloudinary_delete_list.json` holds ~295 superseded `public_id`s, **queued and
-never executed**. The `dpr_auto`-era derived assets from the August rung change are similarly
-still orphaned (noted in the Cloudinary doc's §4).
+Image generation runs out of a `when-images/` tree **beside** this repo (`../when-images`), kept
+out of the project root because of a `vercel dev` bug — see
+[../dev-tooling/index.md](../dev-tooling/index.md). It holds generated images, a downsampler
+(`downsample.py`), a colour and dimension extractor (`extract_colors.py`), a dedup sorter
+(`sort_new_images.py` / `apply_decisions.py`), an old-vs-new picker webapp (`compare-app`),
+`find_images_to_upload.js`, and a queued Cloudinary deletion list.
 
-## The prompt CSV contract, and the skeleton itself
+**None of it is under version control**, so it exists only on the machine that made it. What is
+tracked _here_ is the prompt builder, the scene files, the URL writer and the baked results in
+`public/events/*.json`. Anything that shapes a prompt belongs in git.
 
-Recorded here because the last version of it was lost. The Indonesia batch was built by
-`when-images/scripts/build_prompt_batch.py` with its scenes in `when-images/scenes/`; both were
-untracked, so when the prompts were next needed the skeleton had to be reconstructed from a
-prose description of it in [../sports-events/](../sports-events/session-2026-08-20-sports-image-pipeline.md).
-Anything that shapes a prompt belongs in git.
+The pipeline:
+
+1. `scripts/events/theme-art-prompts.py` writes the prompts CSV for every manifest event without
+   Cloudinary art, from hand-authored scenes.
+2. A scheduled browser task drives gemini.google.com through the CSV. It **saves to
+   `~/Downloads`, as `.jpeg`**, not into `when-images/`; move the files by matching stems against
+   the pending set, and make sure the downsampler accepts `.jpeg`.
+3. `downsample.py` → `extract_colors.py` → `find_images_to_upload.js` → manual Cloudinary upload.
+4. `scripts/update-cloudinary-urls.js` in this repo writes each event's `image_url`, matching a
+   Cloudinary `public_id` to a slug by stripping its suffix.
+
+`cloudinary_delete_list.json` in that tree holds replaced `public_id`s, queued and not yet
+executed; the orphaned derived assets are covered in the Cloudinary doc's console-lockdown
+section.
+
+## The prompt CSV contract
 
 **Five columns**, and this is the part that silently breaks a run:
 
@@ -52,13 +62,12 @@ Anything that shapes a prompt belongs in git.
 event_name,research_prompt,image_prompt,image_generated,saved_filename
 ```
 
-The consumer is a scheduled browser task driving gemini.google.com, and it sends **two messages
-in the same chat** — the research prompt, then the image prompt. Both in-repo generators
-(`regenerate_mobile_prompts.py`, and `scripts/events/theme-art-prompts.py` before it was
-rewritten) emitted four columns with no `research_prompt`, which drops the priming step the
-image prompt is written to rely on.
+The browser task sends **two messages in the same chat** — the research prompt, then the image
+prompt. The image prompt is written to rely on that priming step, so a four-column CSV with no
+`research_prompt` produces worse art without any error. Re-running the builder carries
+`image_generated` / `saved_filename` across by slug.
 
-The skeleton, as used for the 353 theme events:
+The skeleton (`SKELETON` and `RESEARCH` in `theme-art-prompts.py`):
 
 ```
 A dramatic chiaroscuro oil painting. 1:1 square composition optimized for small screen
@@ -70,55 +79,81 @@ Search the web for reference artworks and historical records of "{friendly_name}
 ({year_string}). Study the {research_focus} of this period.
 ```
 
-**No era palette.** Three generations of prompt each dropped weight — the four-colour palette
-became three, then went entirely — because shorter, less prescriptive prompts render better
-once the model has already researched the period, and the palette clause was fighting the
-scene. `get_era_palette` survives in `regenerate_mobile_prompts.py`, which is otherwise dead:
-it writes to `images/claude_prompts/`, which does not exist.
+**No era palette.** Shorter, less prescriptive prompts render better once the model has
+researched the period, and a palette clause fights the scene; colour comes from the research
+step. The only per-event text is the hand-authored scene.
 
-`scene` and `research_focus` are hand-authored per event and live in
-`docs/curated-themes/art/scenes/<theme>.json`. Scene rules, learned on the sports batch and
-still binding: never describe text (the renderer garbles it and the suffix bans it, so paint
-the cause or the object instead — a shot-clock rule became a fast break); no colour adjectives,
+`scene` and `research_focus` live in `docs/curated-themes/art/scenes/<theme>.json`, as
+`{slug: {research_focus, scene}}`. The join is by slug and every mismatch is a hard error: a
+scene for an unknown event, a scene for an already-illustrated event, or an unillustrated event
+with no scene all fail the run. The committed scene files name events that already have art, so
+point `--scenes` at a directory holding only the new batch.
+
+Scene rules: never describe text (the renderer garbles it and the suffix bans it, so paint the
+cause or the object instead — a shot-clock rule becomes a fast break); no colour adjectives,
 though material nouns like "bronze" or "silver" are fine and often necessary; figurative rather
 than establishing; likenesses by posture, not face; deaths and epidemics non-graphic.
 
-One measured effect of the rewrite: median prompt length fell from 732 characters to 496, and
-the share that is byte-identical boilerplate fell with it.
+## Writing image URLs
+
+`update-cloudinary-urls.js` matches by name, so its failure mode is an event silently acquiring
+another event's picture. Two checks after a run:
+
+- **No existing `image_url` was removed.** The script rewrites any URL that differs from what
+  `buildCloudinaryUrl` produces, so a non-zero count here means the builder has drifted and it
+  is rewriting the whole catalogue:
+
+  ```bash
+  git diff -- public/events/ | grep -c '^-.*"image_url"'    # 0 = purely additive
+  ```
+
+- **Each new URL's stem is its slug.** Strip Cloudinary's 6-character suffix from the
+  `public_id` and compare it to `event.name`.
+
+**A large line count is not the red flag.** The script re-serialises each touched file with
+`JSON.stringify`, so any escaped sequence (`á`) flips to the literal character. Same
+strings, different bytes; parsers cannot tell them apart, and a `name` caught in the churn is
+the same slug after decoding.
+
+The stored `image_url` carries `dpr_auto`, which contradicts the Cloudinary rules but never
+reaches the CDN: `getImageUrl` strips the stored transforms and substitutes the rung.
 
 ## Card colours
 
 Each event carries a `color` / `text_color` pair baked into its JSON, extracted **at build
 time from the image, never computed in the browser**. Extraction works in **Oklab**, which is
-perceptually uniform — averaging in sRGB produces muddy browns.
+perceptually uniform — averaging in sRGB produces muddy browns. In this repo the extractor is
+`scripts/extract_event_colors.py`: it reads the files listed in `manifest.json` (`--file` for
+one), downloads each image at the `thumbnail` rung, and skips events that already have a colour
+unless `--force` is passed.
 
 Canonical image dimensions are **330×440** — the _card_ aspect, not the source size (renders are
-square). The colour extractor writes `image_width` / `image_height` alongside the colours. The
-only events with other dimensions live in `deprecated.json`, which is absent from `manifest.json`
-and therefore never iterated — which is what makes an unfiltered `extract_colors.py` run safe.
+square). `image_width` / `image_height` are written alongside the colours by the `when-images`
+extractor, or by `scripts/fetch-image-dimensions.js`. The only events with other dimensions live
+in `deprecated.json`, which is absent from `manifest.json` and therefore never iterated — which
+is what makes an unfiltered extraction run safe: everything the manifest reaches already has a
+colour and dimensions, so only genuinely new events are processed.
 
 ## `friendly_name` is capped at 35 characters
 
-A 2026-04 bulk import added ~1,749 events, many with verbose titles that overflowed the card
-and got ellipsised. 639 were renamed and the cap became permanent
-(`MAX_FRIENDLY_NAME_LENGTH`, enforced by `src/utils/eventNameLength.test.ts`).
+`MAX_FRIENDLY_NAME_LENGTH`, enforced by `src/utils/eventNameLength.test.ts`, so a verbose title
+cannot overflow the card and get ellipsised.
 
 **35 comes from the portrait card**, which is the tightest surface: a `line-clamp-2` overlay
 ~128–144px wide at 14px fits about 35 characters across two lines. The landscape/timeline card
 uses `line-clamp-3` (~60 chars) and is _not_ the binding constraint — don't re-derive the limit
-from it. 40 and 30 were the alternatives considered.
+from it.
 
 ## `year` + `year_end`: the evidence window
 
 Some cards describe a process, a floruit or a reign the record does not pin to a year, and
 grading those against a single date grades a guess. Those carry an optional `year_end`, and a
-placement anywhere inside the window counts as a success.
+placement anywhere inside the window counts as a success. About 700 events carry one.
 
 **The pair is the window. `year` is simply its start** — not an anchor to hang a forward-only
-range off. Where the record puts the window somewhere else, `year` moves with it. Getting this
-backwards was the first pass's main mistake: it kept every stored year fixed and only extended
-forwards, so an event whose evidence began a century before its stored year got a window that
-started in the wrong place.
+range off. Where the record puts the window somewhere else, `year` moves with it; keeping `year`
+fixed and only extending forwards gives an event whose evidence begins a century earlier a
+window that starts in the wrong place.
 
 - Written by `scripts/events/year-range-report.js` / `-apply.js`, never by hand in bulk: the
   same "agents write maps, one pass writes the catalogue" arrangement as the detail prose.
@@ -129,48 +164,39 @@ started in the wrong place.
   scoring, deck composition, era filtering and recency. **Moving `year` very much can**, which
   is why it needs a `reason` and the apply script prints every move. The working discipline:
   apply range-only entries first and confirm the deck tests are untouched, then land year moves
-  in their own commit and re-measure `deckBuilder.test.ts`'s bound rather than widening it.
+  in their own commit and re-measure `deckBuilder.test.ts`'s bound rather than widening it. The
+  measurement is date-dependent, so compare before and after on the same day.
 - **Candidate detection reuses an existing exemption.** The duration phrases `date-clues.js`
   deliberately does _not_ flag as spoilers ("a 27-year war", "800 years of Muslim rule") are
   exactly the cards that name a period, so that carve-out doubles as a pre-built worklist.
-- **There is no cap on how wide a window may be, and the cap that once existed was a mistake.**
-  It was justified as game balance. But a prehistoric window really is millions of years wide,
-  and the cap's flat 1,000-year rule for -10000..0 bound hardest on the agriculture and
-  domestication cards, which are the clearest processes in the catalogue. Honesty about
-  uncertainty wins. What survives is visibility, not a block: the apply script prints the
-  widest ranges and any fully nested pairs after every run, and with nothing rejecting a
-  mis-keyed digit that printout is the only thing between a typo and a card placeable anywhere.
-- **Omitting is still usually right.** A precise, well-attested event must not get a window —
-  a ratified chronostratigraphic boundary (`jurassic-period-begins`, and anything else whose
+- **There is no cap on how wide a window may be.** A prehistoric window really is millions of
+  years wide, and a flat cap binds hardest on the agriculture and domestication cards, which
+  are the clearest processes in the catalogue. Honesty about uncertainty beats game balance.
+  What exists instead is visibility: the apply script prints the widest ranges and any fully
+  nested pairs after every run, and with nothing rejecting a mis-keyed digit that printout is
+  the only thing between a typo and a card placeable anywhere.
+- **Omitting is usually right.** A precise, well-attested event must not get a window — a
+  ratified chronostratigraphic boundary (`jurassic-period-begins`, and anything else whose
   stored value is unrounded like -201400000) carries a published age with an error bar, not a
   window, and is among the most defensible single years in the catalogue.
 
-### The catalogue has been swept (2026-09-19)
+### Every event carries a verdict
 
-**Every event in the manifest has now been reviewed and carries a verdict**, so do not re-run
-this from scratch. 675 of 5,460 carry a window (12.4%, up from 255), 4,785 are recorded as
-moments, and **nothing remains** — `year-range-report.js` reads 0.
-
-The sweep took two days. The first pass reviewed all 5,205 un-ranged events and left 644 windows,
-4,807 ledger entries and 9 unresolved cards. It also drained the session's shared WebSearch
-budget partway through, which rejected a run of genuinely period-shaped cards for want of a
-source rather than on the merits. The second day re-ran those 58, plus the 9: 31 more windows,
-and the rest re-rejected with real reasons. See the backlog for what that re-reading turned up.
+**Every event in the manifest has been reviewed**, so never re-run this from scratch: a future
+pass reviews only what `year-range-report.js` lists.
 
 - **The decided ledger is `scripts/events/year-range-decided.json`**, `slug -> why this card is
-a moment`, written by `year-range-apply.js` from `year_end: null` entries and committed. It
-  exists because "reviewed and left alone" is the commonest outcome of a sweep and had nowhere
-  to live: without it the report script cannot tell an event nobody has looked at from one four
-  readers have each dismissed. `eventYearRange.test.ts` pins it to the catalogue — every ledger
-  slug resolves, carries a reason, and does not also carry a `year_end`. Re-opening a decided
-  card means deleting its ledger line first; writing a window to one retracts its rejection
-  automatically.
-- **`eventRangeSignals` is a per-record hint now, not the worklist.** `--all` sweeps everything
-  and an empty `signals` array is itself the hint that nothing flagged this card. The old
-  `SPAN_NOUN` missed every plural, so `Hussite Wars` and `Three Kingdoms` returned nothing at
-  all; that is fixed, and a weaker `process-noun` tier reports under its own names so a writer
-  can tell a `siege` hit from a `dynasty` hit.
-- **The rule that decided the most cards is the title one.** A card whose title says Begins,
+a moment`, written by `year-range-apply.js` from `year_end: null` entries and committed.
+  "Reviewed and left alone" is the commonest outcome of a sweep, and without the ledger the
+  report script cannot tell an event nobody has looked at from one four readers have each
+  dismissed. `eventYearRange.test.ts` pins it to the catalogue — every ledger slug resolves,
+  carries a reason, and does not also carry a `year_end`. Re-opening a decided card means
+  deleting its ledger line first; writing a window to one retracts its rejection automatically.
+- **`eventRangeSignals` is a per-record hint, not the worklist.** `--all` sweeps everything and
+  an empty `signals` array is itself the hint that nothing flagged this card. A weaker
+  `process-noun` tier reports under its own names so a writer can tell a `siege` hit from a
+  `dynasty` hit.
+- **The rule that decides the most cards is the title one.** A card whose title says Begins,
   Founded, Established, Starts or Outbreak names that act, not the span that followed. It is
   what separates `Jewish Revolt Against Rome` (66-73) from `Peloponnesian War Begins`, and it
   is why `Pax Romana Begins`, `Delhi Sultanate Established` and `Kangxi Begins Reign` are all
@@ -178,22 +204,17 @@ a moment`, written by `year-range-apply.js` from `year_end: null` entries and co
 - **A span inside one calendar year cannot be expressed at all**, since `year_end` is an integer
   year that must exceed `year`. The 1974 Bengal famine and the 1518 dancing plague are points
   for that reason, not by oversight.
-- **A session's WebSearch budget is one pool shared by every sub-agent**, and a sweep this size
-  drains it. WebFetch against Wikipedia draws on no such pool and is the documented fallback in
-  the `set-evidence-window` skill. The re-run showed how lopsided that trade is: six readers
-  covering 67 cards spent **3 WebSearch calls between them** and sourced everything else by
-  fetching the article directly. Reach for the fetch first and the budget stops being a
-  constraint at all.
-- **The list of what to re-run belongs in the ledger, not in prose.** The backlog's own list of
-  source-starved rejections had four slugs that did not exist, one already done, and was missing
-  seven. Grepping `year-range-decided.json` for the wording those notes used found the real set
-  in one command.
-- **Where two sourced reviews of one card disagreed about the window's start by more than fifty
-  years, no year moved.** Disagreement that wide is evidence the record is not settled, and the
-  anchor is the field that moves daily decks.
-- **Deck impact, measured either side of each year-move commit on the same day: 3 and 3 on the
-  first day, then 3 and 4 for the re-run's 24 moves.** The bound stays at 12. Note the
-  measurement is date-dependent, so the 6 recorded for the pass before these is not comparable.
+- **A session's WebSearch budget is one pool shared by every sub-agent**, and a catalogue-wide
+  sweep drains it, which rejects period-shaped cards for want of a source rather than on the
+  merits. WebFetch against Wikipedia draws on no such pool and is the documented fallback in
+  the `set-evidence-window` skill; reach for the fetch first and the budget stops being a
+  constraint.
+- **The list of what to re-run belongs in the ledger, not in prose.** Grep
+  `year-range-decided.json` for the wording a rejection used rather than maintaining a list of
+  slugs by hand.
+- **Where two sourced reviews of one card disagree about the window's start by more than fifty
+  years, `year` does not move.** Disagreement that wide is evidence the record is not settled,
+  and the anchor is the field that moves daily decks.
 
 The rule that consumes this field, and why the obvious version of it is unsound, is in
 [../gameplay-feel/index.md](../gameplay-feel/index.md).
@@ -204,26 +225,24 @@ The rule that consumes this field, and why the obvious version of it is unsound,
 reference. Enforced by `src/utils/eventDateClues.test.ts` over every file in the manifest.
 
 **This is not redundant with the UI.** `shouldShowYearInPopup` (`src/components/Game.tsx`)
-already hides `event.year` while a card is still in the player's hand — _"that's the puzzle"_.
-But `GamePopup.tsx` renders `description` directly underneath it and `handleActiveCardTap`
-opens that same popup for the hand card, so prose defeats the guard completely.
-`friendly_name` is worse again: `Card.tsx` shows it on the card face at all times, so a title
-like _"1955 Le Mans Disaster"_ never even needs a tap.
+hides `event.year` while a card is still in the player's hand — _"that's the puzzle"_. But
+`GamePopup.tsx` renders `description` directly underneath it and `handleActiveCardTap` opens
+that same popup for the hand card, so prose defeats the guard completely. `friendly_name` is
+worse again: `Card.tsx` shows it on the card face at all times, so a title like _"1955 Le Mans
+Disaster"_ never even needs a tap.
 
-The 2026-08 sports import shipped 100 such events (84 descriptions, 9 titles, plus 11 older
-non-sport strays) because nothing checked. That is what the test is for — there is no CI on
-tests here, so it only fires when someone runs `npm test`; the `add-events` skill's verify
-block is the other half of the enforcement.
+There is no CI on pull requests. The test runs when someone runs `npm test`, and as the release
+workflow's gate (`.github/workflows/release.yml`), which runs after a merge to `main` has
+already deployed. The `add-events` skill's verify block is the other half of the enforcement.
 
 - **Relative durations are fine and deliberately not flagged** — _"a 27-year war"_, _"27 years
-  in prison"_, _"800 years of Muslim rule"_. About 86 events carry them. They are historical
-  content, not a statement of the answer. Don't "fix" them.
-- **When the text and the `year` field disagree, the text loses.** Seven sports cards named a
-  year that contradicted their own `year` (rowing said 1896 against a `year` of 1900). `year`
-  is the graded answer and feeds the difficulty percentile in `difficultyScore.ts`, so editing
-  it perturbs deterministic daily decks catalogue-wide; editing prose is inert. Change `year`
-  only if the text's year is the date of the card's _headline_ event, the slug doesn't
-  contradict it, and a source confirms — then in its own commit.
+  in prison"_, _"800 years of Muslim rule"_. They are historical content, not a statement of the
+  answer. Don't "fix" them.
+- **When the text and the `year` field disagree, the text loses.** `year` is the graded answer
+  and feeds the difficulty percentile in `difficultyScore.ts`, so editing it perturbs
+  deterministic daily decks catalogue-wide; editing prose is inert. Change `year` only if the
+  text's year is the date of the card's _headline_ event, the slug doesn't contradict it, and a
+  source confirms — then in its own commit.
 - **Slugs keep their years.** `le-mans-disaster-1955` is fine; slugs are never rendered, and
   curated themes pin them.
 - The detection rule lives in `scripts/events/date-clues.js` (plain CommonJS, so `node` runs
@@ -233,43 +252,35 @@ block is the other half of the enforcement.
 
 ### Bulk edits go through a map, never by hand
 
-`public/events/sports.json` is a single 186KB array; parallel hand-edits corrupt it and a
-dropped comma only surfaces at build. `scripts/events/date-clues-apply.js` follows the
-`shorten-names-apply.js` pattern: rewrites are authored as `slug -> {description?,
-friendly_name?}` maps in `untracked_data/`, and one deterministic pass validates _everything_
-before writing _anything_ — slug resolves, the rewrite re-passes the date-clue guard, names
-fit 35 chars and collide with nothing. Every file round-trips byte-identically under
-`JSON.stringify(arr, null, 2) + '\n'`, and `.prettierignore` covers `public/events/`, so
-diffs are exactly the edited lines.
+The event files are large single arrays; parallel hand-edits corrupt them and a dropped comma
+only surfaces at build. `scripts/events/date-clues-apply.js` is the house pattern: rewrites are
+authored as `slug -> {description?, friendly_name?}` maps in `untracked_data/date-clues/`, and
+one deterministic pass validates _everything_ before writing _anything_ — slug resolves, the
+rewrite re-passes the date-clue guard, names fit 35 chars and collide with nothing. Every file
+round-trips byte-identically under `JSON.stringify(arr, null, 2) + '\n'`, and `.prettierignore`
+covers `public/events/`, so diffs are exactly the edited lines.
 
-Two traps found doing this:
+Never rewrite the `name` slug: it is the identity used for dedup, collection tracking and
+recency.
 
+Traps:
+
+- **Parallel renames collide.** Two siblings shortened by different agents can land on the same
+  title, so dedupe names after merging the maps, not per batch.
 - **`npm run find-duplicates` shifts when you edit descriptions.** It scores same-year +
   similar-description, so deleting `"in 1966"` from two sibling cards _raises_ their
   similarity and manufactures new near-duplicate pairs. Capture a baseline before editing and
   diff against it; don't read the after-state cold.
-- **Slug uniqueness is now pinned** by `src/utils/eventSlugUniqueness.test.ts`, across
+- **Slug uniqueness is pinned** by `src/utils/eventSlugUniqueness.test.ts`, across
   `deprecated.json` as well as the manifest. It has to be: `buildEventsByName`
   (`statsStorage.ts`) is a last-write-wins `Map`, so a duplicate slug doesn't error — it
   silently makes one of the two events unreachable, and the collection then renders the
-  _other_ card for it. Two pairs had drifted that way and are fixed:
-  `human-genome-completed` was one event filed twice (merged; the twin is retired), and
-  `first-pharmacopoeia` was two unrelated events 1,481 years apart — the year-65 Dioscorides
-  card is now `dioscorides-de-materia-medica`, and 1546 Nuremberg keeps the original slug
-  because that is where lookups already resolved, so existing collections are unaffected.
-  Its borrowed artwork was dropped: both cards pointed at the one asset, which depicts a
-  Roman herbalist, so the 1546 card now renders the category-icon fallback and needs art.
-  Note the surviving asset's `public_id` still reads `first-pharmacopoeia_egs3i1` while
-  belonging to the Dioscorides card — `image_url` is explicit per event, so the mismatch is
-  cosmetic, but don't infer a slug from a `public_id`.
-
-Only `friendly_name` was ever touched. Never rewrite the `name` slug: it is the identity used
-for dedup, collection tracking and recency.
-
-**Lesson from doing it in parallel:** subagents wrote `slug → new_name` mapping files and a
-single deterministic script applied them, rather than letting agents edit shared JSON directly.
-That avoided corruption, but the parallel renames still produced **10 collisions** where two
-siblings shortened to the same title — dedupe after merging, not per-batch.
+  _other_ card for it. Where two different events share a slug, the one existing lookups
+  already resolve to keeps it, so collections are unaffected.
+- **Don't infer a slug from a `public_id`.** `image_url` is explicit per event, and an asset's
+  `public_id` can name a different card: `dioscorides-de-materia-medica` and
+  `first-pharmacopoeia` both point at `first-pharmacopoeia_egs3i1`, art made for the Dioscorides
+  card, so the 1546 pharmacopoeia card needs its own.
 
 ## Image preloading
 
@@ -290,12 +301,11 @@ Three layers, in order of increasing scope:
 | `transitioning`           | seed timeline + dealt hands only      | no pop-in entering play — deliberately not the whole deck, which won't finish in 3s |
 | `playing`                 | next 5 deck cards, re-warmed per draw | drawn cards appear instantly                                                        |
 
-**The orchestrator owns look-ahead warming only.** An earlier write-up described per-render
-`detail` warming in `Card.tsx` / `TimelineEvent.tsx` as "correct colocation" — that was
-**removed** in the August audit, because it fetched a full-size popup image for every card on
-screen whether or not the popup was opened. `GamePopup` now paints the already-cached thumbnail
-as a `backgroundImage` behind the detail `<img>`; the thumbnail is always warm because the
-player just tapped that card, so it still feels instant. Don't reintroduce the eager warm.
+**The orchestrator owns look-ahead warming only.** Never warm the `detail` rung per render in
+`Card.tsx` / `TimelineEvent.tsx`: that fetches a full-size popup image for every card on screen
+whether or not the popup is opened. `GamePopup` paints the already-cached thumbnail as a
+`backgroundImage` behind the detail `<img>`; the thumbnail is always warm because the player
+just tapped that card, so it still feels instant.
 
 Two panels gate their image warming behind an `active` / `hasBeenActive` prop
 (`StatsPanel`, whose Achievements section warms only the unlocked badges' art until expanded, and
@@ -308,19 +318,7 @@ The label grades **recognition and inferability only**. Crowding is computed, ne
 see the rubric, and [../gameplay-feel/index.md](../gameplay-feel/index.md) for why the label
 alone anti-correlates with real placement difficulty.
 
-Grading was done in bulk by parallel subagents against the rubric, batched **by category** so
-each agent owned one output file and merges couldn't conflict. `scripts/difficulty/` and the
-Wikipedia pageviews scripts (`wikipedia_pageviews.py`, used as a recognition signal) are the
-tracked remnants.
-
-## Event editor tool
-
-`tools/event-editor/` is a standalone local web tool for browsing, editing, adding and deleting
-events, moving them between files, and fetching image dimensions and Wikipedia pageviews. It has
-its own `package.json`:
-
-```bash
-cd tools/event-editor && npm install && npm run dev
-```
-
-Full guide: [event-editor-tool.md](event-editor-tool.md).
+Grading runs in bulk by parallel subagents against the rubric, batched **by `category`** so each
+agent owns one output file and merges can't conflict. The tooling is `scripts/difficulty/grade/`:
+`extract_batches.py`, `apply.py`, and `band_report.py`, whose band-0 pool floor is the acceptance
+gate. Wikipedia pageviews (`scripts/difficulty/wikipedia_pageviews.py`) are not a grading input.

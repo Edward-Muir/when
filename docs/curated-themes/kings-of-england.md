@@ -73,16 +73,15 @@ Paste as `eventNames` into the workflow's `theme` input.
 | 1952 | `elizabeth-ii-becomes-queen`      | foothold |     |
 | 2022 | `queen-elizabeth-ii-dies`         | foothold |     |
 
-19 of the 36 are new and **need art before the theme can be published** — the daily hides any
-event without Cloudinary imagery, so until the image pipeline has run this deck measures 17
-cards, not 36. Read the current figures from the catalogue rather than from here:
+19 of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **14**, bins **7/8** (advisory), same-year pairs **0**. No pair sits
+inside 8 years. A card's band moves whenever the catalogue around its year does, so re-measure
+rather than trust these figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, over `playable + pending`: **size 36, bins 7/8 `[0 5 14 9 4 1 2 1]`,
-band 0 = 14, same-year pairs 0, no pair inside 8 years.**
 
 ## Why the footholds are the footholds
 

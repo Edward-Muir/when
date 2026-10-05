@@ -9,12 +9,11 @@ import { legacyPicksToExclusions, pairKey, parsePair, pruneExclusions } from './
  *
  * A game is encoded as a hyphenated word-string (the "token") embedded in a share URL
  * (`/challenge/<token>`). Because a URL has no length budget, the token carries the FULL
- * game state — including an arbitrary multiselect of up to 32 categories — rather than the
- * old space-constrained 3-word code.
+ * game state, including an arbitrary multiselect of up to 32 categories.
  *
  * Bit layout (72 bits total = 6 × 12-bit WORDLIST indices):
- *   offset  0, width  1:  Reserved — legacy game-mode bit, always written as 0 and
- *                         ignored on read (see `decodeChallengeCode`)
+ *   offset  0, width  1:  Reserved: written as 0 and ignored on read (see
+ *                         `decodeChallengeCode`)
  *   offset  1, width  3:  Hand size (value - 1, range 0-7)
  *   offset  4, width  3:  Player count (value - 1, range 0-7)
  *   offset  7, width  4:  Difficulties bitmask (easy, medium, hard, very-hard)
@@ -23,18 +22,17 @@ import { legacyPicksToExclusions, pairKey, parsePair, pruneExclusions } from './
  *                         layout stays stable as the category list grows)
  *   offset 51, width 21:  Random seed (0 - 2,097,151)
  *
- * Optional 7th word (bits 72-83), added with the region filter once all 72 bits were taken:
+ * Optional 7th word (bits 72-83), since the 6 base words have no spare bits:
  *   offset 72, width 12:  Regions bitmask (`ALL_REGIONS` order, 11 used)
  * It is written only when the regions are narrowed or a country is picked, so an all-regions
- * game still encodes to the same 6 words as before, and every 6-word code ever shared decodes
- * as all regions.
+ * game encodes to 6 words, and every 6-word code decodes as all regions.
  *
  * Optional words 8 onward: countries, in one of two formats told apart by the regions word's
  * spare 12th bit (`COUNTRY_FORMAT_BIT`). Both hold a country's ISO 3166-1 alpha-2 code as
  * `(first letter) * 26 + (second letter)`, A = 0 (0-675); ISO codes are stable, so no pinned
  * country order is needed. Words are sorted, so a selection always encodes to one token.
  *
- * - Bit clear (2026-09-30 to 2026-10): one word per *picked* country, a pick narrowing every
+ * - Bit clear (the older pick format): one word per *picked* country, a pick narrowing every
  *   region it belongs to. Decoded through `legacyPicksToExclusions`.
  * - Bit set (the select-all picker): one word per (region, country) pair, `iso + 676 * side`
  *   where `side` is the region's index in the country's `spans` (0 for a one-region country),
@@ -62,8 +60,8 @@ const ONE = BigInt(1);
 const WORD_BITS = BigInt(12);
 const WORD_MASK = BigInt(0xfff);
 
-// Bit 0 has no constant because nothing reads or writes it: it is the retired game-mode
-// bit, reserved forever. OFFSET_HAND starting at 1 rather than 0 is what holds it open.
+// Bit 0 has no constant because nothing reads or writes it; it stays reserved. OFFSET_HAND
+// starting at 1 rather than 0 is what holds it open.
 const OFFSET_HAND = BigInt(1);
 const OFFSET_PLAYER = BigInt(4);
 const OFFSET_DIFF = BigInt(7);
@@ -298,11 +296,9 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
     shift += WORD_BITS;
   }
 
-  // Bit 0 is deliberately not read. It used to select the removed `freeplay` mode,
-  // and roughly half of all share links ever generated set it to 1 — those links now
-  // launch a normal sudden-death game rather than failing. The bit itself must stay in
-  // the layout: this is a positional format, so reclaiming it would shift every field
-  // after it and misdecode every link ever issued, not just the freeplay ones.
+  // Bit 0 is ignored; older codes may set it. It must stay in the layout: this is a
+  // positional format, so reclaiming it would shift every later field and misdecode every
+  // code ever issued.
   const handSize = Number((packed >> OFFSET_HAND) & MASK_3) + 1;
   const playerCount = Number((packed >> OFFSET_PLAYER) & MASK_3) + 1;
   const difficulties = bitmaskToArray((packed >> OFFSET_DIFF) & MASK_DIFF, ALL_DIFFICULTIES);

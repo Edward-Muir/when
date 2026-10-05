@@ -2,7 +2,7 @@
 
 Two things live here: the **share payload** (what a result looks like when a player posts
 it) and the **challenge code** (settings + seed packed into a token so a recipient plays
-the identical game). Challenge-code work is original to 2026-03-01, format since rewritten.
+the identical game).
 
 ## The share payload
 
@@ -12,33 +12,34 @@ both side by side and can fire a real share sheet.
 
 ### The frame is 4:5 because WhatsApp crops
 
-This shipped at 1080x1920 and WhatsApp **center-cropped it in chat**, showing roughly a
-1:1.41 slice — about 200px gone from the top and the bottom, which is exactly where the
-wordmark and the URL sat. Losing the URL is the serious half: the files-only share tier
-(below) drops the message text entirely, so the burned-in URL is the only thing telling a
-viewer where to play. Instagram DMs showed the full 9:16 fine; WhatsApp was the one that
-mangled it.
+WhatsApp **center-crops a tall image in chat** to roughly a 1:1.41 slice, so a 1080x1920 card
+loses about 200px from the top and the bottom, exactly where the wordmark and the URL sit.
+Losing the URL is the serious half: the files-only share tier (below) drops the message text
+entirely, so the burned-in URL is the only thing telling a viewer where to play. Instagram DMs
+show a full 9:16; WhatsApp is the one that mangles it.
 
 1080x1350 sits inside that threshold and is also the native max-portrait size for an
 Instagram feed post. The cost is that a Story shows it centred with bars rather than
 full-bleed — accepted, because chat is where most sharing happens.
-`shareImage.test.ts` pins the ratio at <= 1.41.
+`shareImage.test.ts` pins the ratio at <= 1.41. A 9:16 card with the content pulled into a
+safe band does not help: WhatsApp still crops the edges, so everything moves inward and the
+type gets _smaller_.
 
 ### Type is sized for a chat bubble, not a phone screen
 
 The binding constraint is **width**, not height: a bubble is ~400 CSS px wide, so the
 1080px canvas renders at ~0.37x and a 34px label lands at ~12px. Every size in the
 renderer is the intended on-screen size divided by 0.37, which is why they look
-oversized in a full-resolution render. `/share-preview` shows the card at 400px for
-exactly this reason — judge it there.
+oversized in a full-resolution render. This surface cannot be reviewed at its native
+resolution: `/share-preview` shows the card at 400px for exactly this reason — judge it
+there.
 
 The same arithmetic governs the art: its apparent size is purely `CARD_SIZE / WIDTH`
 times the bubble width, so shortening the canvas does nothing for it. The only lever is
-making the card wider relative to 1080, and the vertical budget caps that — currently 680,
-raised from 640 in 2026-08 by the space the seed card's year line used to occupy.
-Two remaining levers if it ever needs to be bigger: crop the art to a landscape rounded
+making the card wider relative to 1080, and the vertical budget caps that (`CARD_SIZE` is
+680). Two remaining levers if it ever needs to be bigger: crop the art to a landscape rounded
 rect (~83% of width, but discards ~30% of each square source), or move to a full-bleed
-poster layout with the text over a scrim.
+poster layout with the text over a scrim (~2.7x larger art).
 
 ### Why there is an image at all
 
@@ -81,35 +82,33 @@ cost is at worst one derived asset per day, since the daily seed card is the sam
 every player and is often already minted from someone tapping it in-game.
 
 The one deviation is `crossOrigin = 'anonymous'`, which is mandatory (an untagged image
-taints the canvas and `toBlob()` throws) and costs at most one extra fetch of an
-already-derived asset.
+taints the canvas and `toBlob()` throws) and is a different HTTP cache key from the game's
+plain `<img>` tags, so it costs at most one extra fetch of an already-derived asset —
+bandwidth, never a transformation.
 
 ### The image is the receipt; the caption is not a second copy of it
 
-Until 2026-08 the message repeated the card almost token for token — date, score, rank and
-URL were all burned into the image _and_ restated in the caption, so the text did no work
-at all. They now split the job:
+**The caption repeats nothing the card shows.** With date, score, rank and URL in both, the
+message is two voices saying the same thing, neither addressed to the person reading it. They
+split the job:
 
 - **The card** carries the puzzle identity, the score, the rank and the URL.
-- **The caption** carries identity, one descriptive line, and the link. No stats.
+- **The caption** carries identity, one line addressed to the reader, and the link. No stats.
 
 `generateDailyShareText` and `generateShareText` therefore return a `ShareMessage` with two
 forms rather than a single string. `withCard` is the stats-free caption; `textOnly` keeps
 the stat line, because `shareContent`'s tier-3 and clipboard paths ship no image and a
 stats-free caption there would send a bare invite with the player's result missing. The
 choice is made **per tier inside `shareContent`**, not once up front — tier 3 is reached
-both when there was never a file and when both file payloads failed.
+both when there was never a file and when both file payloads failed, so deciding once from
+`canShareFiles` silently drops the stats in the second case.
 
 ### The caption asks a question — and why the Wordle argument does not apply
-
-This briefly went the other way, and the reversal is worth recording so the argument is not
-had a third time.
 
 **Wordle's share has no call to action at all** — `Wordle 1,234 4/6` plus the grid, no URL,
 no verb, nothing aimed at the recipient. It reads as a _receipt_ rather than a _claim_, and
 it spreads because a recipient who cannot decode it has to ask what it is. That is genuinely
-why it works, and for a fortnight it was the reason this message carried a flat descriptive
-line instead of asking anything.
+why it works for Wordle.
 
 **It does not transfer.** Wordle can afford to withhold because a recipient who cannot decode
 the grid still recognises the brand. "When?" has no such recognition — a message that neither
@@ -121,11 +120,14 @@ explains itself nor asks for anything just gets scrolled past. So:
   (`DESCRIPTOR`). Tests pin which surfaces get which.
 
 Both name the mechanic rather than an abstract "score", so the whole message shares one
-vocabulary with the `Timeline of N` stat line and with the in-game "How to Play" modal, which
-already says _Build the longest timeline!_
+vocabulary with the `Timeline of N` stat line and with the How to Play modal (menu), which
+says _Build the longest timeline!_ The question is one fixed line, never score-adaptive or
+exhorting: `your turn` and `can you beat 5?` read as cringe.
 
-The genuinely transferable piece of Wordle remains **withholding** — see the seed-year note
-below — not the absence of a CTA.
+The genuinely transferable piece of Wordle is **withholding** — see the seed-year note
+below — not the absence of a CTA. Its `4/6` denominator does not transfer either: a run ends
+when the hand empties, so wrong placements nearly always equal the hand size and a `5/8`
+would be arithmetic rather than information. The only scaling stat available is the rank.
 
 ### No em dashes
 
@@ -137,51 +139,54 @@ different things.
 ### Decisions in force on the message
 
 - **The brand keeps its question mark.** "When?", matching the home-screen H1, the
-  manifest, the page title and the OG tags. The share text was the one place that dropped
-  it. `BRAND` in `share.ts` is the single source; the story card's wordmark matches.
+  manifest, the page title and the OG tags. `BRAND` in `share.ts` is the single source; the
+  story card's wordmark matches.
 - **The puzzle is identified by number, not date.** `Daily #49`, from
   `getDailyPuzzleNumber` in `puzzleDate.ts` (epoch `2026-06-28` = #1, immutable — moving it
-  renumbers every puzzle retroactively). A shared image is a forwardable object, so "Aug 15"
-  went stale overnight and duplicated the timestamp the chat app already stamps on the
+  renumbers every puzzle retroactively). A shared image is a forwardable object, so a date
+  goes stale overnight and duplicates the timestamp the chat app already stamps on the
   bubble. Same reasoning as `Connections #768`. It delegates to `dayDiff`, which reads both
   operands as UTC midnight — hand-rolled local-date arithmetic breaks on the two DST days a
   year. Pre-epoch and junk dates return `null` and fall back to a numberless label rather
-  than printing `#NaN`. `formatShareDate` survives for other callers.
-- **The shared card omits the seed card's year.** Printing it made the whole share legible
-  — score, rank, event, year, link — so a recipient could read it all and had no reason to
-  ask about any of it. Withholding one fact is the only lever this card has on Wordle's
-  actual mechanism. **The in-game seed card still shows its year**; only this render omits
-  it. (`shareImage.ts` no longer has a local `formatYear` — the one in `gameLogic.ts` was
-  always the real one.)
-- **No emoji grid.** Removed 2026-08. Unlike Wordle's 2D narrative, ours was a 1D run of
-  greens with at most `handSize` reds, restating the number on the line below it and
-  growing _longer_ the better you played. `generateEmojiGrid()` still exists — the daily
-  result stores it and the leaderboard renders it.
+  than printing `#NaN`. DST cases in its tests must sit after the epoch (the spring-forward
+  case is the 2027 transition), or `getDailyPuzzleNumber` correctly returns `null` and the
+  test fails on its own bug.
+- **The shared card omits the seed card's year.** With it the whole share is legible —
+  score, rank, event, year, link — so a recipient can read it all and has no reason to ask
+  about any of it. Withholding one fact is the only lever this card has on Wordle's actual
+  mechanism. **The in-game seed card still shows its year**; only this render omits it. A
+  gold `?` in its place is rejected: it draws attention to the absence and reads as a UI
+  element rather than a withheld fact.
+- **No emoji grid.** Unlike Wordle's 2D narrative, ours would be a 1D run of greens with at
+  most `handSize` reds, restating the number on the line below it and growing _longer_ the
+  better you played. `generateEmojiGrid()` exists because the daily result stores the grid
+  and the leaderboard submission is validated against it.
 - **No mode label on a non-daily game.** Naming a mode implies a choice of rule-sets the
-  UI does not offer; everything that is not the Daily is a Custom game. The old "Marathon"
-  label is gone from both the text and the card (the card simply omits its eyebrow).
-  Guarded by a test. See the CLAUDE.md naming note.
-- **No best-streak line.** Dropped 2026-08 as noise — the timeline length is the score.
-  `bestStreak` is still tracked in game state and on the stored daily result.
+  UI does not offer; everything that is not the Daily is a Custom game or an Archive replay,
+  and the card omits its eyebrow. Guarded by a test. See CLAUDE.md on game modes.
+- **One number, no best-streak line.** The daily share's number is the timeline length,
+  `correctCount + 1` (the seed card included, matching the on-screen timeline); a Custom
+  share's number is `correctCount`. The game-over popup and the leaderboard report events
+  placed (`correctCount`). `bestStreak` is still tracked in game state and on the stored
+  daily result.
 - **A challenge link states what it does.** `Same cards, same order.` is a fact about the
-  link, and it rides on both message forms. It lived as a fifth inline literal in
-  `CustomGameSettings.tsx` and is now `generateChallengeInviteText` in `share.ts`.
-- **A game-over share carries the rank.** `shareResults` takes it as an option. It used to
-  omit it entirely, so the game-over share was rankless even while the popup on screen showed
-  "#22 globally" — only the home screen's share had it. Both routes now agree: the popup
-  passes the rank up from `LeaderboardSubmit` via `onRankResolved`, and the bottom bar reads
-  it from the stored daily result.
+  link, and it rides on both message forms. It is `generateChallengeInviteText` in
+  `share.ts`, not an inline literal.
+- **A game-over share carries the rank.** `shareResults` takes it as an option, so the
+  game-over share agrees with the popup's "#22 globally" and with the home screen's share:
+  the popup passes the rank up from `LeaderboardSubmit` via `onRankResolved`, and the bottom
+  bar reads it from the stored daily result.
 - **The card is single-line everywhere.** Layout is fixed baselines, so a second line
   anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
   instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe (the
-  longest real names settle at ~50px against a 42px floor). The old two-line
-  `wrappedCenteredText` is gone — do not reintroduce wrapping without moving to a flow
-  layout.
+  longest real names settle at ~50px against a 42px floor). Do not introduce wrapping
+  without moving to a flow layout.
 - **The unit sits beside the number, not under it.** `drawScoreWithUnit` measures the
   numeral and the word, sums them and centres the pair — centring the numeral alone and
-  hanging the label off it puts the group visibly off-centre. They share a baseline, which
-  also means the old-style descender on `3 4 5 7 9` lands _beside_ the word rather than
-  on top of it. The rank gets its own muted line below.
+  hanging the label off it puts the group visibly off-centre. They share a baseline, so
+  Playfair Display's old-style descenders on `3 4 5 7 9` land _beside_ the word rather than
+  on top of it; a stacked label collides with `23` while looking fine against `11`. The rank
+  gets its own muted line below.
 - **The unit is "events" on both card types.** Not "events placed": the daily's number
   counts the whole timeline _including_ the pre-placed seed card, so a placement count
   would be one too many there, while a custom game's number really is one. One word is
@@ -217,56 +222,66 @@ share         ShareStepPopup — result, Share, reminder + next-daily countdown
 appear when there are any, so an "append to the last screen" scheme would make the finale
 different game to game. It ends the run every time.
 
-Two earlier arrangements, both wrong, worth not repeating:
+Two placements that don't work:
 
-- **Share only in `GameOverControls`** (the bottom bar) while the result was in `GamePopup` —
-  two layers, so the reading order dead-ended on "Come back tomorrow" beside a detached button
-  competing with the leaderboard submit, labelled "Challenge", and unable to carry the rank.
-- **Share inside the game-over popup** — better, but that popup is the _first_ screen, so the
-  share went out before the player saw what they had unlocked.
+- **Share only in `GameOverControls`** (the bottom bar) while the result is in `GamePopup` —
+  two layers, so the reading order dead-ends on "Come back tomorrow" beside a detached button
+  competing with the leaderboard submit and unable to carry the rank.
+- **Share inside the game-over popup** — that popup is the _first_ screen, so the share goes
+  out before the player sees what they unlocked.
 
 Constraints holding the current shape together:
 
-- **`GamePopup` stays out of the queue.** Its dismissal is gated by `useBackdropDismiss` so the
-  daily cannot pass it without submitting; folding it in would mean re-implementing that gate.
-  The flow is unified from that popup _onward_.
+- **`GamePopup` stays out of the queue.** Its dismissal is locked while a daily submission is
+  pending and possible (`gameOverDismiss`), so the daily cannot pass it without submitting;
+  folding it in would mean re-implementing that gate. The flow is unified from that popup
+  _onward_.
 - **The rank is lifted to `Game`.** `LeaderboardSubmit` → `onRankResolved` → `GamePopup` →
-  `Game` → `ShareStepPopup`, because the share is no longer a sibling of the leaderboard.
+  `Game` → `ShareStepPopup`, because the share step is not a sibling of the leaderboard.
 - **The bottom-bar Share hides for the whole sequence**, not just while the popup is open —
-  `isBottomBarShareVisible(pendingPopup, endStep)`. It is the post-sequence fallback only.
+  `isBottomBarShareVisible(pendingPopup, endStep)`. It is the post-sequence fallback only;
+  showing both puts two identical Share buttons on screen at once.
 - **No story-card preview on the share step.** It would mean a `renderShareCard` canvas pass
   on every game over instead of only when someone taps Share.
 
 **Trap, and the reason the sequence exists rather than more hand-wiring:** `MilestonePopup` and
-`AchievementUnlock` both called `onDismiss()` from inside a `setIndex` updater. Updaters must
-be pure — StrictMode double-invokes them — so `onDismiss` fired twice. That was invisible while
-dismissing meant `setShowUnlock(false)` twice, and became a real bug the moment dismissal
-advanced a queue: the share step was popped without ever rendering. Both now call `onDismiss`
-outside the updater. Any future step must not reintroduce a side effect in there.
+`AchievementUnlock` must not call `onDismiss()` from inside a `setIndex` updater. Updaters must
+be pure — StrictMode double-invokes them — so `onDismiss` fires twice, and with dismissal
+advancing a queue the next step (the share step) is popped without ever rendering. Any future
+step must keep side effects out of updaters.
+
+### Reviewing the card
+
+This surface has to be looked at, not reasoned about: both of its real layout defects were
+invisible in a full-resolution render and obvious in a phone screenshot. `/share-preview`
+has no `vercel.json` rewrite, so it 404s on a deployment, like the other maintainer tools.
+Screenshotting it with Playwright needs **both** `--ssl-version-max=tls1.2` and
+`proxy.bypass: 'localhost,127.0.0.1'`, and must not abort Cloudinary requests (the runbook's
+boilerplate does): without the art the page silently renders the no-art fallback, a
+plausible card that is not the real one. The tell is file size, ~200 KB with art and far
+smaller without. See [../driving-the-app-with-playwright.md](../driving-the-app-with-playwright.md).
 
 ### Not done yet
 
 The OG tags in `public/index.html` are static, so a `/daily` result and a
 `/challenge/<code>` invite both preview identically. A per-route OG image (Vercel edge +
-Satori) is still the obvious next win. Constraints if picked up: ~1200x630, **under 600
-KB**, JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh mechanism,
-so iterating needs a cache-busting query param.
+Satori) is the obvious next win. Constraints if picked up: ~1200x630, **under 600 KB**,
+JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh mechanism, so
+iterating needs a cache-busting query param.
 
 **Be clear about what it buys, though.** WhatsApp renders **no link preview at all** for a
 URL sitting in an image caption — which is the shape of every share that carries the card,
 i.e. the common case. The URL stays tappable, but `og-image.png` never appears there. A
 per-route OG image only helps the text-only tier, pasted links, and non-chat surfaces. It
-is not a fix for how a shared result looks in WhatsApp, and was ruled out of the 2026-08
-message work for that reason.
+is not a fix for how a shared result looks in WhatsApp.
 
 A one-tap "Add to Story" needs the native `instagram-stories://share` scheme plus the
 `com.instagram.sharedSticker.backgroundImage` pasteboard key and a Meta App ID. That is
 reachable from the Capacitor shell only — the web cannot do it.
 
-### Instagram: a tappable link is not available (2026-08)
+### Instagram: a tappable link is not available
 
-Investigated and closed, so it does not get re-opened. The ask was "tap the shared image,
-land on the site":
+Closed; do not re-open. The ask is "tap the shared image, land on the site":
 
 - **There is no mechanism for it in an Instagram DM.** A photo in a DM is a photo; nothing
   in the format attaches a destination URL to it. Nothing we can send changes that. The
@@ -280,66 +295,56 @@ land on the site":
   scheme above and would cover iOS-app users only.
 
 Decision: leave the printed URL on the card. It is short, set in full-strength ink, and
-nothing on offer justified its cost.
+nothing on offer justifies its cost. Also rejected: a QR code (a recipient reading on their
+phone cannot scan a code on that same phone) and copying the link to the clipboard on share.
 
 ## The challenge code
 
 **`src/utils/challengeCode.ts` is the source of truth for the wire format.** Its header
-comment carries the current bit layout. Read it before touching the encoding.
+comment carries the bit layout. Read it before touching the encoding.
 
-### The format was rewritten — old numbers are wrong
+A code is **6 base words** (72 bits from a single 4096-entry `WORDLIST`, 12 bits each:
+reserved bit, hand size, player count, difficulties, eras, a **fixed 32-bit** category mask and
+a 21-bit seed), then an **optional 7th word** for regions, then optional **country words**.
 
-The 2026-03-01 design was **33 bits → 3 words**, using three separate 2048-word lists
-(11 bits each), with a 6-bit category mask and an 8-bit seed. None of that is current.
+Two properties of the base layout are load-bearing:
 
-Today it is **72 bits → 6 words** from a single 4096-entry `WORDLIST` (12 bits each), with a
-**fixed 32-bit** category mask and a 21-bit seed. If you find a doc, comment or memory
-describing 3-word codes or 33 bits, it predates the rewrite.
+- **The category mask is fixed-width at 32 bits**, though `ALL_CATEGORIES` has 21. The fixed
+  width is what lets the taxonomy grow without invalidating existing links. Do not shrink it
+  to fit.
+- **Bit 0 is reserved: written as 0 and ignored on decode** (codes in circulation set it).
+  It cannot be reclaimed: the format is positional, so shifting it would misdecode _every_
+  existing link.
 
-Two properties of the current layout are load-bearing:
+### The optional 7th word: regions
 
-- **The category mask is fixed-width at 32 bits even though only 20 categories exist.** That
-  is what let the taxonomy grow from 6 to 20 without invalidating existing links. Do not
-  shrink it to fit.
-- **Bit 0 is reserved and ignored.** It used to select the removed `freeplay` mode; roughly
-  half of all links ever issued set it. Encoding always writes 0, decoding maps either value
-  to `suddenDeath`. It cannot be reclaimed: the format is positional, so shifting it would
-  misdecode _every_ link ever issued, not just freeplay ones.
+The 6 base words have no spare bits, so the region mask is a 7th word (bits 72-83), in
+`ALL_REGIONS` order (`src/data/regions.json`).
 
-### The optional 7th word: regions (2026-09-30)
-
-The region filter needed 11 more bits when all 72 were taken, so a code is now **6 or 7
-words**. The 7th word (bits 72-83) is the region mask in `ALL_REGIONS` order
-(`src/data/regions.json`).
-
-- **It is written only when the regions are narrowed.** An all-regions game still encodes to
-  the same 6 words it always did, so a code's length tells you whether it filters by region.
-- **A 6-word code decodes as all regions.** That is every link shared before the filter, and
-  it must stay that way.
+- **It is written only when the regions are narrowed or a country is picked.** An all-regions
+  game encodes to 6 words, so a code's length tells you whether it filters by region.
+- **A 6-word code decodes as all regions**, and must keep doing so: 6-word codes without a
+  region filter are in circulation.
 - **A 7th word with no region set, or a bit past the last region, is rejected** as a code this
   app did not write, the same way an empty category mask is.
 - **The region order is positional**, like everything else here. Adding a region means
   appending it, which the taxonomy test's "Global is last" rule would force you to rethink
   first. `challengeCode.test.ts` pins the order so a reorder fails loudly.
 
-### Words 8 onward: countries (2026-09-30, pair format 2026-10)
+### Words 8 onward: countries
 
 Country words follow the regions word. There are two formats, told apart by the **regions
-word's spare 12th bit** (`COUNTRY_FORMAT_BIT`; 11 regions use bits 0-10).
-
-**The first format (bit clear), from the pick-to-narrow picker.** One word per _picked_ country,
-its ISO 3166-1 alpha-2 code packed as `(first letter) * 26 + (second letter)` with A = 0, so
-0-675. A pick narrowed every region it belongs to. These codes still decode: the picks go through
-`legacyPicksToExclusions` into the pool they always dealt. The one exception is that a
-transcontinental pick no longer reaches a side that is not selected; see
-[../regions/](../regions/index.md#the-country-picker-2026-10-select-all).
+word's spare 12th bit** (`COUNTRY_FORMAT_BIT`; 11 regions use bits 0-10). The encoder writes
+only the pair format; the pick format is decoded for codes in circulation.
 
 **The pair format (bit set), from the select-all picker.** The state is excluded
 (region, country) pairs, so a word names a pair:
 
-- **Value** `iso + 676 * side`, where `side` is the region's index in the country's `spans`
-  (always 0 for a one-region country; Russia under North & Central Asia is `RU + 676`). Adding
-  `EXCLUDE_FLAG` (2048) marks the pair as switched off; without it the pair is listed as on.
+- **Value** `iso + 676 * side`, where `iso` is the country's ISO 3166-1 alpha-2 code packed as
+  `(first letter) * 26 + (second letter)` with A = 0 (0-675), and `side` is the region's index
+  in the country's `spans` (always 0 for a one-region country; Russia under North & Central
+  Asia is `RU + 676`). Adding `EXCLUDE_FLAG` (2048) marks the pair as switched off; without it
+  the pair is listed as on.
 - **Each narrowed region is written in whichever form is shorter**, all its words in one form. An
   include form lists the region's countries still on, and the decoder excludes the rest of the
   region's taxonomy countries. So "only the UK" is one include word, "Europe without the UK" one
@@ -348,38 +353,40 @@ transcontinental pick no longer reaches a side that is not selected; see
 - **Rejected:** an unknown value or side, a repeated pair, a pair outside the decoded regions, one
   region mixing include and exclude words, or the format bit with no country words.
 
+**The pick format (bit clear).** One word per _picked_ country, the packed ISO code alone. A
+pick narrows every region it belongs to; the picks go through `legacyPicksToExclusions` into
+the same pool. A transcontinental pick reaches only the sides whose regions are selected; see
+[../regions/](../regions/index.md#the-country-picker).
+
 Both formats share these rules:
 
 - **The regions word is always written when a country word is**, even with all 11 regions
   selected, because country words must start at word 8.
 - **Words are sorted by value**, so one selection always makes one token.
-- **Codes without country words are unchanged** (6 or 7 words, byte-identical).
+- **Codes without country words are 6 or 7 words**, unaffected by the country formats.
 - **The decoder packs only the first 7 words.** Packing the country words too would push their
   bits into the regions mask and fail its range check.
-- **Builds from before a format reject its codes.** The maintainer accepted that over dropping
-  countries from links, which would break "others play the exact same game".
+- **A build that predates a format rejects its codes.** Accepted over dropping countries from
+  links, which would break "others play the exact same game".
 
-### Decisions still in force
+### Decisions in force
 
 - **`WORDLIST` order is immutable.** Reordering or removing a word changes what every
   existing token decodes to. Append only, and only in multiples that keep the length a power
   of two.
 - **Player count travels with the challenge**, rather than being forced to single-player, so
-  a recipient can play multiplayer if they have people around. (Moot in practice — no UI
-  reaches multiplayer; see CLAUDE.md.)
+  a recipient can play multiplayer if they have people around. No menu builds a code with
+  `playerCount > 1`, but decoding one starts a multiplayer game (see CLAUDE.md).
 - **Restart re-rolls the seed** rather than replaying the identical game.
 - **BigInt via `BigInt()` calls, not `12n` literals.** The 72-bit value exceeds JS's 53-bit
-  safe-integer range, but the TS target is below ES2020 so literals won't parse. (The
-  original 33-bit version used plain arithmetic; that stopped being safe at 72 bits.)
+  safe-integer range, but the TS target is below ES2020 so literals won't parse.
 - **Event-set drift is accepted.** Adding or removing events can make an old token produce a
   different game — same tradeoff the daily makes.
 
-### Superseded UI work
+### The Custom tab's code field
 
-Two 2026-03-01 sessions built the share-code UI inside a `SettingsPopup`: a "Challenge a
-Friend" section, then an editable two-way code input that decodes a pasted code back into
-the form controls. **`SettingsPopup` no longer exists.** The two-way input survives, moved
-into `CustomGameSettings.tsx` on the Custom tab. One implementation note carried over:
+The share code on the Custom tab (`CustomGameSettings.tsx`) is a two-way field: it shows the
+code for the current filters, and a pasted code decodes back into the controls.
 
 - **A `useRef` flag guards the two-way sync.** Applying a decoded code updates the settings,
   which recomputes the code via `useMemo`, which would sync back and overwrite what the user

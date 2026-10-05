@@ -36,12 +36,6 @@ the wider catalogue that never surface here because nothing was actually taken).
 
 ## The 34
 
-```
-node scripts/theme-gap.js --include-pending --extra staging/pirates.json --slugs <the 34>
-```
-
-At authoring time: size **34**, bins **6/8**, band 0 **9**, same-year pairs **0**.
-
 |  Year | Slug                                  |                |
 | ----: | ------------------------------------- | -------------- |
 | -1175 | `ramesses-iii-sea-peoples`            | foothold · NEW |
@@ -79,10 +73,17 @@ At authoring time: size **34**, bins **6/8**, band 0 **9**, same-year pairs **0*
 |  2009 | `maersk-alabama-hijacked`             | foothold · NEW |
 |  2017 | `somali-hijackings-fall-to-zero`      | NEW            |
 
-33 of the 34 are new. Measured against the merged catalogue: size **34**, band 0 **9**, bins **6/8** (advisory), same-year pairs **0**.
+33 of the 34 were authored for this theme — the catalogue held almost nothing that named a
+specific raid, trial or battle, as opposed to the general subject of piracy (see "Deliberate
+omissions" below).
 
-33 of the 34 are new — the catalogue held almost nothing that named a specific raid, trial or
-battle, as opposed to the general subject of piracy (see "Deliberate omissions" below).
+Gates: size **34**, band 0 **9**, bins **6/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
+
+```bash
+npm run theme:gap -- --slugs <the 34 above, comma-separated>
+```
 
 ## Why the footholds are the footholds
 
@@ -132,9 +133,9 @@ founded` — an institutional founding with no raid or battle attached to it, th
   hundreds of unrelated descriptions; `read` matches "already", "spread" and "already read";
   `kidd` and `morgan` collide with `volleyball-invented` (William Morgan) and the 1907 banking
   panic (J.P. Morgan); `drake` also returns Drake the rapper's absence (none in this catalogue,
-  but the anchor still matters) and Nasa's Drake equation candidates in other themes' staging.
-  None of these needed anchoring fixes here because a manual per-beat `near.js year` check
-  caught them before any grep-based net was run.
+  but the anchor still matters) and the Drake equation.
+  None of these needed anchoring fixes here because a manual per-beat check of what already
+  sits on each year caught them before any grep-based net was run.
 
 ## Known crowding kept on purpose
 

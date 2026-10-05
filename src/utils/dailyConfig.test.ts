@@ -30,7 +30,7 @@ describe('buildDailyConfig — the puzzle day follows the player, not Greenwich'
   });
 
   it('does not roll over at UTC midnight', () => {
-    // 5pm local is 00:00 UTC the next day — the old boundary.
+    // 5pm local is 00:00 UTC the next day — a UTC seed would roll over here.
     const beforeUtcMidnight = new Date(2026, 7, 10, 16, 59);
     const afterUtcMidnight = new Date(2026, 7, 10, 17, 1);
     expect(afterUtcMidnight.toISOString().split('T')[0]).toBe('2026-08-11');

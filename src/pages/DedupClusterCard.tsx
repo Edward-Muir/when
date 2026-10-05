@@ -131,9 +131,7 @@ const MemberCard: React.FC<MemberCardProps> = ({
   const { event, name } = member;
   const hasCloudinary = isCloudinaryImage(event?.image_url);
   // The larger of the two rungs, so duplicate images can be compared closely. It is capped
-  // (w_768/h_768) like every other variant — see docs/cloudinary-cost-controls.md. This
-  // comment used to claim the variant had no width cap, which was true when the page was
-  // written and is not now.
+  // (w_768/h_768) like every other variant — see docs/cloudinary-cost-controls.md.
   const thumb = getImageUrl(event?.image_url, 'detail');
   const showImg = !!thumb && !imgError;
 

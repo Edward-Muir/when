@@ -1,12 +1,12 @@
 # Docs Index
 
-Reference docs for the "When" timeline game. Eighteen files, all maintained as **current** —
-if one contradicts the code, the doc is wrong and should be fixed.
+Reference docs for the "When" timeline game, all maintained as **current**: if one contradicts
+the code, the doc is wrong and should be fixed. Each describes its area as it is today, in the
+terms in CLAUDE.md's Vocabulary table.
 
-These are digests, not a change log. They hold decisions and their rationale, rejected
-approaches and why, and the constraints that are expensive to rediscover. They deliberately do
-not restate what the code says: for "how does X work", read the source. Git history holds the
-original per-session write-ups if you need the blow-by-blow.
+These are digests, not a change log. They hold decisions and their rationale, and the
+constraints that are expensive to rediscover. They deliberately do not restate what the code
+says: for "how does X work", read the source.
 
 ## Start here
 
@@ -46,19 +46,18 @@ original per-session write-ups if you need the blow-by-blow.
 - [event-detail/](event-detail/index.md) — the "read more" info button and the long-form prose
   behind it: why the prose replaces the description in place, why the button is
   unreachable before placement (and why that lets the prose state dates), the lazy sidecar
-  instead of inlining ~2.4 MiB gzipped, and how all 5,460 entries got written.
+  instead of inlining ~2.4 MiB gzipped, and the pipeline that writes prose for new events.
   Its [writing-spec.md](event-detail/writing-spec.md) holds the voice rules — the length band
   as numbers, the register carve-out for atrocities, the `wikipedia_url` accuracy trap, and the
   banned machine tells (no em dashes) that `scripts/events/detail-spec.js` enforces
 - [regions/](regions/index.md) — region tags (where an event happened, on today's map): why
   tags are readable names rather than codes, why Global sits beside focal places instead of
   excluding them, the eleven macro-regions and the transcontinental rule, the map-then-apply
-  pipeline, the Custom filter and its optional 7th challenge-code word, and how the 5,874-card
-  sweep ran. Its [tagging-spec.md](regions/tagging-spec.md) holds the tagging rules and the
+  pipeline, and the Custom region and country filters with their challenge-code words. Its [tagging-spec.md](regions/tagging-spec.md) holds the tagging rules and the
   61-event gold set
-- [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
-  the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
-  measured symptoms, and a sequenced fix list
+- [desktop-experience/](desktop-experience/index.md) — the game at laptop widths: the board is
+  centred from 1024px, and the open items (no breakpoint above `sm:` elsewhere player-facing),
+  with measured symptoms and a sequenced fix list
 - [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, the
   one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), Custom settings, and
   the service-worker dev-loop trap
@@ -74,7 +73,7 @@ original per-session write-ups if you need the blow-by-blow.
   sync contract and its `documentedFrom` floor, and the two points where a missing note aborts
   a release
 - [dev-tooling/](dev-tooling/index.md) — the `vercel dev` `spawn EBADF` root cause and fix, and
-  where the 20-category taxonomy came from
+  how the 21-category taxonomy is defined
 - [sports-events/](sports-events/index.md) — the `sports` category (sub-agent research +
   dedup), its image pipeline, and the game-wide duplicate audit
 - [dedup/](dedup/index.md) — the game-wide duplicate deletion: how keepers were chosen, why
@@ -87,12 +86,12 @@ original per-session write-ups if you need the blow-by-blow.
   deck-builder escape hatches thin pools need, and the Archive tab that replays them
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app
   end-to-end from a script, including the drag-and-drop recipe
-- [events-images/event-editor-tool.md](events-images/event-editor-tool.md) — the standalone
-  local event editor
 
 ## Keeping these useful
 
 When you finish a piece of work, fold what you learned into the relevant digest rather than
-adding a new dated file. The test for inclusion is **"would a future session make a worse
-decision without this?"** — a rejected approach and the reason it failed passes; a list of the
-files you touched does not, because the diff already says that.
+adding a new dated file, and write it in the present tense. The test for inclusion is **"would a
+future session make a worse decision without this?"** A constraint and the reason for it passes
+("comparing only adjacent cards is unsound, because…"); a history of past behaviour
+does not, and neither does a list of the files you touched, because the diff already says that.
+When a feature or term is retired, delete it from the docs rather than annotating it.

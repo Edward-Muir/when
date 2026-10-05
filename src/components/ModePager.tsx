@@ -1,7 +1,10 @@
 import React, { useCallback, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
 
 interface ModePagerProps {
-  /** Short labels for each page, shown in the indicator (e.g. ['Daily', 'Custom']). */
+  /**
+   * Short labels for each page, shown in the indicator (the home screen's five tabs:
+   * ['Daily', 'Archive', 'Custom', 'Stats', 'Timeline']).
+   */
   labels: string[];
   /** One child element per page, in order. */
   children: React.ReactNode;
@@ -22,7 +25,7 @@ export interface ModePagerHandle {
 }
 
 /**
- * Horizontal scroll-snap pager for the mode-select screen. Each page is ~90% wide so a
+ * Horizontal scroll-snap pager for the home screen. Each page is ~90% wide so a
  * sliver of the neighbour peeks (swipe affordance). Below the pages sits a tappable
  * page indicator.
  *

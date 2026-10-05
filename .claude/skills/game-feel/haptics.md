@@ -59,64 +59,38 @@ const haptics = {
 
 ## React Hook
 
+This project already has one: `src/hooks/useHaptics.ts`. It returns `{ isSupported, vibrate,
+haptics }`, where `haptics` has `light`, `medium`, `heavy`, `success`, `error`, `warning`,
+`impact`, `drop` and `select`. On the native apps each maps to `@capacitor/haptics`
+(`Haptics.impact`, `Haptics.notification`, `Haptics.selectionChanged`); on the web it falls back
+to the Vibration API patterns in the table above. Add a new pattern there rather than calling
+`navigator.vibrate` from a component.
+
 ```typescript
-function useHaptics() {
-  const isSupported = 'vibrate' in navigator;
+import { useHaptics } from '../hooks/useHaptics';
 
-  const vibrate = useCallback(
-    (pattern: number | number[]) => {
-      if (isSupported) {
-        navigator.vibrate(pattern);
-      }
-    },
-    [isSupported]
-  );
-
-  const haptics = useMemo(
-    () => ({
-      light: () => vibrate(10),
-      medium: () => vibrate(25),
-      heavy: () => vibrate(50),
-      success: () => vibrate([30, 50, 30]),
-      error: () => vibrate([50, 30, 50, 30, 80]),
-      impact: () => vibrate(80),
-    }),
-    [vibrate]
-  );
-
-  return { isSupported, vibrate, haptics };
-}
+const { haptics } = useHaptics();
+haptics.success();
 ```
 
 ## Multi-Sensory Feedback
 
-Always pair haptics with visual and audio feedback for the best experience:
+Pair haptics with visual feedback. This game has no audio, so a haptic pulse plus an animation
+is the whole of it (`useScreenShake` is `src/hooks/useScreenShake.ts`):
 
 ```typescript
 function useMultiSensoryFeedback() {
   const { haptics } = useHaptics();
-  const { playSound } = useSounds();
-  const { triggerFlash } = useFlash();
+  const { triggerShake } = useScreenShake();
 
-  const feedback = {
-    success: () => {
-      haptics.success();
-      playSound('success');
-      triggerFlash('success');
-    },
+  return {
+    success: () => haptics.success(),
     error: () => {
       haptics.error();
-      playSound('error');
-      triggerFlash('error');
       triggerShake('medium');
     },
-    impact: () => {
-      haptics.impact();
-      playSound('thud');
-    },
+    impact: () => haptics.impact(),
   };
-
-  return feedback;
 }
 ```
 

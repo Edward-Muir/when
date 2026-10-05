@@ -75,15 +75,13 @@ Paste as `eventNames` into the workflow's `theme` input.
 | 1994 | `fermat-last-theorem-proved`          |          | NEW |
 | 2003 | `poincare-conjecture-proved`          |          | NEW |
 
-Read the current band and spread figures from the catalogue rather than from here — a card's
-band moves whenever the catalogue around its year does:
+Gates: size **36**, band 0 **6**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
 npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, projected over playable + pending: **size 36, bins 8/8 `[6 6 3 5 6 3 3 4]`,
-band 0 = 6, same-year pairs 0**, range 585 BCE to 2003.
 
 ## Why the footholds are the footholds
 

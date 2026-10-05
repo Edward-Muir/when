@@ -5,14 +5,14 @@ import { ALL_BANDS, DifficultyBand, buildDifficultyIndex } from './difficultySco
 /**
  * Deck composition.
  *
- * Decks used to be a single shuffle of the whole eligible pool dealt off the top.
- * That pool is ~13% easy, so a game was usually hard and occasionally punishing, and
- * a first-timer's opening card was a coin flip. Worse, the *level* of a day swung
- * mostly with the daily theme — `trade` is 3.4% easy, `figures` is 33.6% — which is
- * far more variance than a player's skill moves in a day, so a score measured the
- * day rather than the player.
+ * A single shuffle of the whole eligible pool, dealt off the top, does not work. That
+ * pool is ~16% easy, so a game would usually be hard and occasionally punishing, and a
+ * first-timer's opening card a coin flip. Worse, the *level* of a day would swing
+ * mostly with the daily theme — `sports` is 9% easy, `figures` 26% — which is far more
+ * variance than a player's skill moves in a day, so a score would measure the day
+ * rather than the player.
  *
- * Now the first RAMP_WINDOW cards are composed deliberately and the rest of the pool
+ * So the first RAMP_WINDOW cards are composed deliberately and the rest of the pool
  * follows as a plain shuffle. Selection multiplies two independent weights over a
  * pool that recency has already filtered:
  *

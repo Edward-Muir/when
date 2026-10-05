@@ -12,8 +12,8 @@ const HOUR_MS = 3_600_000;
 
 describe('getLocalDateString', () => {
   it('returns the LOCAL date when UTC has already rolled over', () => {
-    // 6pm Aug 11 in LA (UTC-7) is 01:00 Aug 12 in UTC. This is the reported bug: the
-    // player is mid-evening on the 11th, but the old UTC seed handed them the 12th.
+    // 6pm Aug 11 in LA (UTC-7) is 01:00 Aug 12 in UTC. The player is mid-evening on the
+    // 11th, and a UTC seed would hand them the 12th.
     const evening = new Date(2026, 7, 11, 18, 0);
     expect(evening.toISOString().split('T')[0]).toBe('2026-08-12');
     expect(getLocalDateString(evening)).toBe('2026-08-11');
@@ -21,7 +21,7 @@ describe('getLocalDateString', () => {
 
   it('does not roll over between 4pm and 6pm — the same puzzle, twice', () => {
     // The concrete double-increment case: two plays two hours apart on one local evening
-    // used to straddle a UTC boundary and count as two separate puzzle days.
+    // straddle a UTC boundary, and must not count as two separate puzzle days.
     expect(getLocalDateString(new Date(2026, 7, 10, 16, 0))).toBe('2026-08-10');
     expect(getLocalDateString(new Date(2026, 7, 10, 18, 0))).toBe('2026-08-10');
   });

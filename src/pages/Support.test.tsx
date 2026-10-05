@@ -10,7 +10,7 @@ describe('Support page', () => {
         <Support />
       </MemoryRouter>
     );
-    // Placement is binary; the old "closer is better" line was wrong.
+    // Placement is binary: there is no "closer is better".
     expect(screen.queryByText(/closer your placement/i)).toBeNull();
     expect(screen.getByText(/your hand is one card smaller/)).toBeInTheDocument();
     expect(screen.getByText('Daily Challenge:')).toBeInTheDocument();

@@ -41,7 +41,7 @@ Two edges were argued rather than assumed:
 
 ## The 36
 
-Paste `eventNames` from `famine.theme.json` into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |  Year | Slug                              |          |
 | ----: | --------------------------------- | -------- |
@@ -82,17 +82,15 @@ Paste `eventNames` from `famine.theme.json` into the workflow's `theme` input.
 |  2017 | `south-sudan-famine-declared`     | NEW      |
 |  2018 | `yemen-famine-crisis`             | NEW      |
 
-18 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **5**, bins **8/8** (advisory), same-year pairs **0**.
+18 of the 36 were authored for this theme.
 
-18 of the 36 are new. Read the current band and spread figures from the catalogue rather than
-from here:
+Gates: size **36**, band 0 **5**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --include-pending --extra <staging>/famine.json --slugs <the 36 above>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time: size **36**, bins **8/8** `[2 1 2 6 6 5 7 7]`, band 0 **5**, same-year pairs
-**0**.
 
 ## Why the footholds are the footholds
 

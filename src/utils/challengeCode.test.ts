@@ -6,9 +6,9 @@ import { legacyPicksToExclusions, pairKey } from './countrySelection';
 import { WORDLIST, wordMap } from './wordlists';
 
 /**
- * Rewrite a token so bit 0 — the retired game-mode bit, once 1 for `freeplay` — is set,
- * reproducing a link generated before that mode was removed. Bit 0 is the low bit of the
- * first 12-bit word, so setting it is `idx | 1` on that word's WORDLIST index.
+ * Rewrite a token so bit 0 (reserved and ignored on read; older codes may set it) is set.
+ * Bit 0 is the low bit of the first 12-bit word, so setting it is `idx | 1` on that word's
+ * WORDLIST index.
  */
 function withLegacyModeBit(token: string): string {
   const parts = token.split('-');
@@ -60,14 +60,14 @@ describe('challengeCode encode/decode', () => {
     expect(decodeChallengeCode(encodeChallengeCode(config))).toEqual(config);
   });
 
-  it('never sets the retired mode bit when encoding', () => {
+  it('never sets bit 0 when encoding', () => {
     const token = encodeChallengeCode(baseConfig);
     expect(wordMap.get(token.split('-')[0])! & 1).toBe(0);
   });
 
-  // Roughly half of all share links ever issued set the retired mode bit. They must still
-  // launch, with every other field intact, rather than 404ing or misdecoding.
-  it('still decodes a legacy link that sets the retired mode bit', () => {
+  // Many issued share links set bit 0. They must still launch, with every other field
+  // intact, rather than 404ing or misdecoding.
+  it('decodes a code that sets bit 0', () => {
     const legacy = withLegacyModeBit(encodeChallengeCode(baseConfig));
     expect(legacy).not.toBe(encodeChallengeCode(baseConfig));
     expect(decodeChallengeCode(legacy)).toEqual(baseConfig);

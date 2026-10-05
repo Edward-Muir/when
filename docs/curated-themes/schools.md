@@ -78,23 +78,14 @@ center of learning, none dated to Sankore's actual founding), `bukhara-cultural-
 | 1992 | `sarajevo-library-destroyed`     | NEW            |
 | 2015 | `mosul-libraries-destroyed`      | NEW            |
 
-20 of the 35 are new. Measured against the merged catalogue: size **35**, band 0 **8**, bins **7/8** (advisory), same-year pairs **0**.
+20 of the 35 were authored for this theme.
 
-20 of the 35 are new.
+Gates: size **35**, band 0 **8**, bins **7/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-At authoring time, with the new cards loaded via `--include-pending --extra`:
-
-```
-Candidates   35
-Bands        easiest 8 / 18 / 8 / 1 hardest
-Spread       7/8 bins  [4 6 10 4 4 5 0 2]
-Range        668 BCE to 2015
-
-Gates:
-  PASS  size 35                (want 30-36)
-  INFO  bins 7/8               (advisory, 6+ is spread)
-  PASS  band 0 8               (want 5+)
-  PASS  same-year pairs 0      (want 0)
+```bash
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds

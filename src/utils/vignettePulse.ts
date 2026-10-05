@@ -7,7 +7,7 @@ import { getStreakFeedback } from './streakFeedback';
 // A close-enough hit is still a hit, so it keeps a positive colour, but it takes the
 // secondary accent rather than the streak colour: the player should be able to feel that
 // something different happened without being told they did worse. The parameter is optional
-// and defaults to the old behaviour, so every existing caller and test is unaffected.
+// and defaults to the streak colour.
 export function getVignetteColor(success: boolean, streak: number, closeEnough = false): string {
   if (!success) return 'var(--color-error)';
   if (closeEnough) return 'var(--color-accent-secondary)';

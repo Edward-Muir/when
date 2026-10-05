@@ -335,8 +335,8 @@ export async function ensureBotsExist(redis: Redis, date: string): Promise<boole
     // Add all bots to the sorted set
     for (const bot of bots) {
       // Must match submit.ts exactly, or bots and humans are ranked on different scales.
-      // It previously subtracted the bot's mistake count, which humans could never vary — so
-      // a bot that rolled few mistakes beat a human on the same correct count. See submit.ts.
+      // Subtracting the bot's mistake count, which humans cannot vary, would let a bot that
+      // rolled few mistakes beat a human on the same correct count. See submit.ts.
       const score = bot.correctCount * 100;
       await redis.zadd(leaderboardKey, {
         score,

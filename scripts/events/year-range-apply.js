@@ -30,14 +30,14 @@
  *
  * **Moving `year` is allowed and needs a `reason`.** It is also the one thing here with
  * consequences beyond the record it touches: a year re-scores its neighbours through
- * `difficultyScore.ts`, which feeds `deckBuilder.ts` — re-dating a single event
- * (`chickens-domesticated`) once moved a bound in `deckBuilder.test.ts` from 9 to 11. So the
- * run prints every move as a table for the commit message and for
+ * `difficultyScore.ts`, which feeds `deckBuilder.ts`, so re-dating a single event can move a
+ * bound in `deckBuilder.test.ts` (re-dating `chickens-domesticated` moved one from 9 to 11).
+ * So the run prints every move as a table for the commit message and for
  * docs/events-images/catalogue-error-backlog.md.
  *
- * The working discipline that replaces the old hard block: **apply range-only entries first**
- * and confirm the deck tests are untouched, then land the year moves in their own commit and
- * re-measure that bound rather than widening it. If the deck tests move on what was supposed
+ * The working discipline: **apply range-only entries first** and confirm the deck tests are
+ * untouched, then land the year moves in their own commit and re-measure that bound rather
+ * than widening it. If the deck tests move on what was supposed
  * to be a range-only batch, a year change leaked in.
  *
  * There is no cap on how wide a window may be — see the header of `year-range.js`. The widest
@@ -151,7 +151,7 @@ function applyEntries(merged, locate, decided) {
     }
     if (movesEnd) {
       // Appends `year_end` last, after `has_detail` — same as every other apply script. Placing
-      // it beside `year` would mean rebuilding all 5,460 records and burying the real change.
+      // it beside `year` would mean rebuilding every record and burying the real change.
       event.year_end = entry.year_end;
     }
 

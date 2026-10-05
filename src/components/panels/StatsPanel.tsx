@@ -200,7 +200,7 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
           </div>
         </StatCard>
 
-        {/* Achievements — last on the page, the expander's 60-card grid below everything else */}
+        {/* Achievements — last on the page, the expander's card grid below everything else */}
         <AchievementsSection
           unlockedMap={achievements.unlocked}
           eventsByName={eventsByName}

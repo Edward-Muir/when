@@ -64,11 +64,9 @@ function isRanged(event) {
 /**
  * Span nouns in a title are the strongest signal that a card names a period, not a moment.
  *
- * **Every plural used to miss.** The `\b` wrapped the whole alternation, so `wars`, `empires`,
- * `kingdoms`, `dynasties` and `reigns` all failed to match and `Hussite Wars` came back with no
- * signals at all — `crusades?` was the only member carrying its own plural, which is the tell
- * that this was noticed once and not generalised. The plural-bearing nouns now sit in their own
- * group with a trailing `s?`.
+ * **The plural-bearing nouns carry their own trailing `s?`.** A `\b` wrapped around the whole
+ * alternation without it misses every plural: `wars`, `empires`, `kingdoms`, `dynasties` and
+ * `reigns` fail to match, and `Hussite Wars` comes back with no signals at all.
  *
  * `rule` is deliberately left out of that group: "rules" is a false friend that fires on every
  * card about a rulebook ("set unified rules for soccer"). Same for the nouns that have no

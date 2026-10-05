@@ -23,7 +23,8 @@ export const GameRules: React.FC = () => (
       The game ends when your hand is empty. <strong>Build the longest timeline!</strong>
     </p>
     <p className="text-xs text-text-muted font-body leading-relaxed">
-      Daily is one shared deck for everyone, once a day. Archive and Custom are any deck, any time.
+      Daily is one shared deck for everyone, once a day. Archive replays past themed dailies, and
+      Custom is any deck you build, any time.
     </p>
   </div>
 );

@@ -16,38 +16,28 @@ Usage:
 
     event_name,research_prompt,image_prompt,image_generated,saved_filename
 
-The consumer is an hourly scheduled browser task driving gemini.google.com, and it sends **two
-messages in the same chat**: the research prompt first, then the image prompt
-(docs/sports-events/session-2026-08-20-sports-image-pipeline.md). Both in-repo generators used
-to write four columns with no research prompt, which silently drops the priming step the image
-prompt is written to depend on. Do not "simplify" this back to four.
+The consumer is a scheduled browser task driving gemini.google.com, and it sends **two
+messages in the same chat**: the research prompt first, then the image prompt. A four-column
+CSV with no research prompt silently drops the priming step the image prompt is written to
+depend on. Do not "simplify" this to four.
 
 ## Why the prompts are short
 
-Three prompt styles have existed, each lighter than the last, because shorter and less
-prescriptive prompts render better once the model has already researched the period:
-
-  1. regenerate_mobile_prompts.py — brushstroke/chiaroscuro preamble, a canned framing
-     paragraph, and a four-colour era palette. ~54% of every prompt was byte-identical
-     boilerplate.
-  2. The sports batch — preamble trimmed, framing paragraph dropped, palette cut to three
-     colours, scene hand-written.
-  3. This one — the era palette **dropped entirely**. The palette clause was fighting the
-     scene, and colour is meant to come from the research step.
-
-So the only per-event text is the hand-authored scene, which is the point: everything a
-template can supply is already in the skeleton.
+Shorter, less prescriptive prompts render better once the model has already researched the
+period. So the skeleton is one style sentence, the event's own name and description, and a
+fixed suffix. It carries no era palette (a palette clause fights the scene, and colour is meant
+to come from the research step) and no framing paragraph. The only per-event text is the
+hand-authored scene: everything a template can supply is already in the skeleton.
 
 ## Scenes are hand-authored and live in git
 
 `docs/curated-themes/art/scenes/<theme>.json` maps `{slug: {research_focus, scene}}`. They are
-committed deliberately. The equivalent files for the Indonesia batch were only ever kept in an
-untracked tree outside the repo and are now unrecoverable — the prompt skeleton that produced
-those images had to be reconstructed from a prose description of it.
+committed deliberately: anything that shapes a prompt belongs in git, because an untracked scene
+file cannot be recovered when the prompts are next needed.
 
 Joining is by slug and every mismatch is a hard error, never a skipped row: a scene for an
 unknown or already-illustrated event, or an un-illustrated event with no scene, fails the run.
-An earlier version of this pipeline matched positionally and silently dropped rows.
+A positional join silently drops rows.
 """
 
 import argparse
@@ -83,7 +73,7 @@ def year_string(year):
 
 
 def sentence(text):
-    """One trailing full stop, never two — the old builder appended one to an ended sentence."""
+    """One trailing full stop, never two, even when the text already ends a sentence."""
     return text if text.rstrip().endswith((".", "!", "?")) else text.rstrip() + "."
 
 

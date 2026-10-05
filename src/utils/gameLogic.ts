@@ -72,10 +72,10 @@ export function sortByYear(events: HistoricalEvent[]): HistoricalEvent[] {
  * correct wherever its interval can be read as fitting.
  *
  * The obvious rule — compare the card's interval against its two immediate neighbours — is
- * **unsound**, and was rejected. Counterexample: seed P = 2000-3000; drop Q = 1000-2500 after
+ * **unsound**. Counterexample: seed P = 2000-3000; drop Q = 1000-2500 after
  * it (passes, 2500 >= 2000); now drop C = 1100-1200 after Q (passes, 1200 >= 1000). The board
  * reads 2000-3000 | 1000-2500 | 1100-1200 and no left-to-right reading of it is
- * non-decreasing. The game would have said "correct" for putting an 1100-1200 event after a
+ * non-decreasing. The game would say "correct" for putting an 1100-1200 event after a
  * 2000-3000 one.
  *
  * So judge against the **accumulated** bounds instead: everything to the left has already
@@ -87,9 +87,8 @@ export function sortByYear(events: HistoricalEvent[]): HistoricalEvent[] {
  *   2. A valid gap always exists, so `findCorrectPosition` can never fall through wrongly.
  *   3. The valid gaps form one contiguous band. Adjacency produces non-contiguous bands
  *      (gaps 0 and 2 valid, gap 1 not), which is indefensible to a player.
- *   4. On a point-only timeline it is byte-identical to the old neighbour rule —
+ *   4. On a point-only timeline it reduces exactly to comparing neighbours —
  *      `leftBoundAt(i) === timeline[i-1].year` and `rightBoundAt(i) === timeline[i].year`.
- *      Nothing changes until `year_end` data lands.
  *
  * Both properties in (1) and (2) rest on `start <= end` for every event, which is why
  * `eventEnd` clamps rather than trusts: the JSON is hand-editable and fetched at runtime.
@@ -148,8 +147,8 @@ export function isPlacementCorrect(
 }
 
 /**
- * The same judgement with every interval collapsed to its `year`, i.e. what the old rule
- * would have said. Used only to decide whether a success was won on a range.
+ * The same judgement with every interval collapsed to its `year`, i.e. what the neighbour
+ * rule says. Used only to decide whether a success was won on a range.
  */
 export function isPointPlacementCorrect(
   timeline: HistoricalEvent[],

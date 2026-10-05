@@ -35,11 +35,11 @@ interface CustomGameSettingsProps {
 }
 
 /**
- * Inline custom-game configuration for the Custom page of the mode-select pager.
+ * Inline custom-game configuration for the Custom tab of the home screen pager.
  * The card is a bounded flex column: the options (Difficulty / Categories / Eras / Regions
  * pill filters + the editable share link) scroll, while the Play button stays pinned in a
  * fixed footer so it is always visible and clickable. The hand-size, players
- * and player-name controls are hidden for now and kept as commented-out dead code at the
+ * and player-name controls are hidden and kept as commented-out dead code at the
  * bottom of this file for easy reinstatement.
  */
 const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
@@ -231,16 +231,13 @@ export default CustomGameSettings;
 /* ---------------------------------------------------------------------------
  * DEAD CODE: hidden Custom-game controls, kept for reinstatement.
  *
- * The Starting Hand Size slider, Players counter and player-name inputs were removed from
- * the rendered UI. (The share-code section has been reinstated above.) Their implementation
- * is preserved below so the features can return.
- *
- * A Marathon/Casual mode selector used to live here too. It is gone for good: the `freeplay`
- * mode it toggled has been removed, and both remaining modes share one rule-set.
+ * The Starting Hand Size slider, Players counter and player-name inputs are not rendered.
+ * Their implementation is preserved below so the features can return.
  *
  * To reinstate:
  *  1. Re-add the `playerNames` / `setPlayerNames` props to CustomGameSettingsProps + the
- *     destructuring, and pass them again from ModeSelect (restore `setPlayerNames` there).
+ *     destructuring. The state lives in `useCustomGameSettings` (expose `setPlayerNames`
+ *     there) and flows in through `CustomPanel`'s props.
  *     The hand-size/player-count setters are already wired (the share-code input uses them).
  *  2. Restore the handlers + subcomponents and the JSX usages shown below.
  *

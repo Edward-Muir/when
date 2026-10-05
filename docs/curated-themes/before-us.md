@@ -66,24 +66,22 @@ to read as plain negative years (BCE-style, i.e. `-2400000` = 2.4 million years 
 |     -700000 | `homo-heidelbergensis-emerges` | foothold · NEW |
 |     -430000 | `neanderthals-appear`          | foothold       |
 
-3 of the 32 are new. Measured against the merged catalogue: size **32**, band 0 **28**, bins **1/8** (advisory), same-year pairs **0**.
+3 of the 32 were authored for this theme.
 
-Four of the 33 are new. Read the current band and spread figures from the catalogue rather than
-from here — a card's band moves whenever its neighbourhood does:
+Gates: size **32**, band 0 **28**, bins **1/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 33 above, comma-separated>
+npm run theme:gap -- --slugs <the 32 above, comma-separated>
 ```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **33**,
-bins **1/8** (advisory — see below), band 0 **29**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 
 Band 0 blends the `difficulty` label with how sparse the timeline is around a year, and deep
-time is the emptiest neighbourhood the catalogue has. **29 of the 33 cards land in band 0** —
-not because 29 of these facts are easy to _recognise_, but because almost nothing else in the
-5,461-event catalogue sits anywhere near a year like 445,000,000 BCE, so any card there is
+time is the emptiest neighbourhood the catalogue has. **28 of the 32 cards land in band 0** —
+not because 28 of these facts are easy to _recognise_, but because almost nothing else in the
+catalogue sits anywhere near a year like 445,000,000 BCE, so any card there is
 trivially easy to _place_. This theme does not need to go hunting for footholds the way a
 narrow modern theme does; the scope rule itself manufactures them. The handful marked above are
 simply the ones with an `easy` difficulty label layered on top of that sparsity — `first-life`,
@@ -104,7 +102,7 @@ Cards the spine named or a sweep would surface, left out on purpose.
   can ever be dealt. `ERA_DEFINITIONS` (`src/utils/eras.ts`) starts the `prehistory` era at
   -4,500,000,000 and nothing in the era table covers a year before that, exactly as one event
   beyond year 2100 sits outside the era table at the other end (see `docs/curated-themes/index.md`).
-  `theme-gap.js` reported both as "Unresolved slugs" even after `--include-pending`. Retiming
+  `theme-gap.js` reports both as unresolved slugs. Retiming
   either card to fit inside the boundary would misstate the actual age of the Earth and the
   Moon, so both stayed out rather than being fudged into range. This is a real catalogue gap,
   not a theme-authoring choice — the fix, if wanted, is widening `ERA_DEFINITIONS`, not
@@ -152,8 +150,7 @@ Cards the spine named or a sweep would surface, left out on purpose.
   -790,000 for "earliest controlled use of fire", and `first-cyanobacteria` (-3,500,000,000)
   against the spine's -2,400,000,000 for the Great Oxidation Event. Both are genuinely the same
   beat under a different, defensible date (early fire evidence and the oxygenation timeline are
-  both live scientific debates), so both were reused rather than duplicated or corrected —
-  per the brief, existing events are not edited from this pass.
+  both live scientific debates), so both were reused rather than duplicated or corrected.
 
 ## Still missing from the catalogue
 

@@ -1,29 +1,22 @@
 #!/usr/bin/env node
 /**
- * Fills every event with placeholder long-form prose, so the detail view's design can be judged
- * on real layout — varying paragraph counts and lengths, the real title and category — before a
- * single word of the actual corpus exists.
+ * Fills every event that has no written prose with placeholder long-form prose and sets its
+ * `has_detail`, so the detail view's design can be judged on real layout (varying paragraph
+ * counts and lengths, the real title and category) at catalogue scale.
  *
  * Usage:
  *   node scripts/events/detail-placeholder.js            # fill every event that has no real prose
- *   node scripts/events/detail-placeholder.js --revert   # undo: drop placeholder entries + flags
+ *   node scripts/events/detail-placeholder.js --revert   # drop placeholder entries + their flags
  *
  * BOTH MODES LEAVE WRITTEN PROSE ALONE. Only entries flagged `placeholder: true` are generated,
- * replaced or reverted; a real entry and its `has_detail` survive either run untouched. Before
- * Phase 2 there was no written prose to lose, and both paths took the whole shard — a `--revert`
- * (which docs/event-detail/index.md recommends before syncing with origin/main) would have
- * silently deleted the corpus.
+ * replaced or reverted; a real entry and its `has_detail` survive either run untouched.
  *
- * Its output IS committed on the feature branch, so the branch's preview deploy is testable —
- * without `has_detail` every card falls back to its short description, which makes the preview
- * useless for
- * looking at the thing it exists to show. What keeps that safe is not leaving it uncommitted but
- * that the branch never merges until the corpus is written, and that every entry is flagged
- * `placeholder: true` so `detail-report.js` refuses to call the job done. See Guardrail 1 in
- * docs/event-detail/index.md.
- *
- * `--revert` deletes the shards and strips the flags again — use it before merging `origin/main`
- * into the branch if main has touched any event JSON, then regenerate.
+ * NEVER RUN IT AGAINST A COMPLETE CORPUS. There is nothing to fill and nothing to revert, yet
+ * either mode rewrites every detail shard and every event file, so a run only risks the real
+ * prose. And any event that does lack prose gets `PLACEHOLDER:` lorem plus `has_detail: true`,
+ * which players would see once it reaches `main`. `detail-report.js` counts a flagged entry as
+ * unwritten and exits non-zero while any remain; that is the gate that keeps placeholder text
+ * from shipping. See Guardrail 1 in docs/event-detail/index.md.
  *
  * Text is seeded off the slug, so a re-run produces byte-identical output and reviewing a diff
  * stays meaningful.
@@ -99,13 +92,13 @@ function paragraph(next, sentences, prefixLength = 0, cap = MAX_PARAGRAPH_CHARS)
 
 function placeholderFor(event) {
   const next = rng(seedFrom(event.name));
-  // Derived from the spec rather than hardcoded, so a future change to the paragraph allowance
-  // does not silently produce a placeholder corpus its own validator rejects.
+  // Derived from the spec rather than hardcoded, so a change to the paragraph allowance cannot
+  // silently produce a placeholder corpus its own validator rejects.
   const count = MIN_PARAGRAPHS + Math.floor(next() * (MAX_PARAGRAPHS - MIN_PARAGRAPHS + 1));
 
-  // `PLACEHOLDER:` rather than `PLACEHOLDER —`: the em dash is banned in written prose from
-  // Phase 2 on, and a marker that fails the spec it is meant to sit inside is a confusing signal.
-  // The marker itself is load-bearing for Guardrail 1 and stays.
+  // `PLACEHOLDER:` rather than `PLACEHOLDER —`: the em dash is banned in written prose, and a
+  // marker that fails the spec it is meant to sit inside is a confusing signal. The marker itself
+  // is load-bearing for Guardrail 1.
   const prefix = `PLACEHOLDER: ${event.friendly_name}. `;
   const paragraphs = [`${prefix}${paragraph(next, 3, prefix.length)}`];
   for (let i = 1; i < count; i++) {
@@ -116,7 +109,7 @@ function placeholderFor(event) {
     const used = paragraphs.reduce((sum, p) => sum + p.length, 0);
     const remaining = count - i;
     // Clamped to the per-paragraph ceiling as well as the remaining total: with only two
-    // paragraphs the whole leftover budget lands on the second one, which overran 450 by itself.
+    // paragraphs the whole leftover budget lands on the second one, which can overrun the cap.
     const budget = Math.min(MAX_PARAGRAPH_CHARS, Math.floor((MAX_TOTAL_CHARS - used) / remaining));
     paragraphs.push(
       `${paragraph(next, 2 + Math.floor(next() * 3), suffix.length, budget)}${suffix}`
@@ -132,9 +125,9 @@ function placeholderFor(event) {
     paragraphs[last] = grown;
   }
   // Flagged so the tooling can tell placeholder from written prose. `detail-report.js` counts a
-  // flagged entry as still to do, which keeps the Phase 3 progress meter and worklist honest even
-  // though the whole corpus is committed; `detail-apply.js` replaces the entry wholesale, so a
-  // real entry drops the flag with no extra code. The runtime ignores it and reads `paragraphs`.
+  // flagged entry as still to do, so its worklist and exit code stay honest; `detail-apply.js`
+  // replaces the entry wholesale, so a real entry drops the flag with no extra code. The runtime
+  // ignores it and reads `paragraphs`.
   return { placeholder: true, paragraphs };
 }
 

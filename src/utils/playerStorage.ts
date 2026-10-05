@@ -2,6 +2,11 @@
  * localStorage utilities for tracking player data:
  * - Daily game completion (Wordle-style play-once-per-day)
  * - One-shot onboarding hints
+ * - Nav "new" dots
+ * - The pre-stats timeline high score (read once by the stats migration)
+ * - Leaderboard display name and today's submission
+ * - Daily reminder opt-out and reminder-priming dismissals
+ * - Custom-game settings
  */
 
 import { Difficulty, Category, Era } from '../types';
@@ -65,9 +70,9 @@ export function hasPlayedToday(): boolean {
  * game is done. Switch-based accessors, like `NavSeen` below, because the
  * `security/detect-object-injection` rule forbids indexing by a variable key.
  *
- * `timelineTab` falls back to the key it replaced, `when-timeline-intro-seen`, so an
- * upgrade does not re-show it. That key is read, never written. (`when-modes-played`, which
- * gated the old per-mode rules popup, is no longer read at all: the popup is gone.)
+ * `timelineTab` also counts as seen when `when-timeline-intro-seen` is set, so an upgrade does
+ * not re-show it. That key is read, never written. `resetHintsSeen` also clears
+ * `when-modes-played`, which nothing reads.
  */
 export type HintKey =
   | 'drag'
@@ -177,7 +182,7 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
   }
 }
 
-// The pre-2026-09 storage each key replaced. Read-only: nothing writes these any more.
+// Older storage that also counts a hint as seen. Read-only: nothing writes it.
 function legacyHintSeen(key: HintKey): boolean {
   switch (key) {
     case 'timelineTab':
@@ -188,7 +193,7 @@ function legacyHintSeen(key: HintKey): boolean {
 }
 
 /**
- * Whether a one-shot hint has already been shown (or its pre-2026-09 equivalent had).
+ * Whether a one-shot hint has already been shown (or its older storage key says so).
  */
 export function hasSeenHint(key: HintKey): boolean {
   return (
@@ -235,9 +240,8 @@ export function subscribeHintsReset(handler: () => void): () => void {
 // --- Nav "new" Dot Storage ---
 
 /**
- * Top-bar nav destinations that get a one-time "new" dot until first clicked. (A retired
- * `achievements` key may linger in stored JSON from before the badges moved onto Stats; it
- * is simply never read.)
+ * Top-bar nav destinations that get a one-time "new" dot until first clicked. (Stored JSON
+ * may also hold an `achievements` key; it is never read.)
  */
 export type NavKey = 'archive' | 'stats' | 'timeline';
 
@@ -249,7 +253,7 @@ interface NavSeen {
 
 const NAV_SEEN_KEY = 'when-nav-seen';
 
-// Switch-based access (mirrors getModePlayed/setModePlayed) to avoid dynamic key indexing.
+// Switch-based access (mirrors getHintSeen/setHintSeen) to avoid dynamic key indexing.
 function getNavSeen(data: NavSeen, key: NavKey): boolean {
   switch (key) {
     case 'archive':
@@ -312,7 +316,7 @@ export function markNavUnseen(key: NavKey): void {
 const TIMELINE_HIGH_SCORE_KEY = 'when-timeline-high-score';
 
 /**
- * Get the high score for Sudden Death mode (longest timeline)
+ * Pre-stats high score; read only by getLifetimeStats' one-time migration.
  */
 export function getTimelineHighScore(): number {
   return parseInt(readString(TIMELINE_HIGH_SCORE_KEY) ?? '', 10) || 0;
@@ -431,7 +435,7 @@ export function resetReminderPriming(): void {
 // --- Custom Game Settings Storage ---
 
 /**
- * The player's last Custom-game configuration, persisted so their tuned filters/mode
+ * The player's last Custom-game configuration, persisted so their tuned filters
  * survive a refresh. The random deck seed is intentionally NOT stored — it is generated
  * fresh per play, so reloading keeps the settings but still produces a different game.
  */
@@ -440,14 +444,14 @@ export interface CustomSettings {
   selectedCategories: Category[];
   selectedEras: Era[];
   /**
-   * Optional and deliberately not validated below: records saved before the region filter
-   * existed lack it, and they must restore (as every region) rather than reset.
+   * Optional and deliberately not validated below: older records lack it, and they must
+   * restore (as every region) rather than reset.
    */
   selectedRegions?: string[];
   /** Optional for the same reason; stale pairs are pruned on restore, not here. */
   excludedCountries?: string[];
   /**
-   * Retired: country picks in the model before exclusions, read once and converted on restore
+   * Country picks in the older pick model, read once and converted to exclusions on restore
    * (`legacyPicksToExclusions`). Never written.
    */
   selectedCountries?: string[];
@@ -478,9 +482,9 @@ export function getCustomSettings(): CustomSettings | null {
 function normalizeCustomSettings(raw: unknown): CustomSettings | null {
   const parsed = raw as Partial<CustomSettings>;
 
-  // Validate: filters must be non-empty arrays and numbers finite. A retired
-  // `isSuddenDeath` key may still be present in older records; it is simply ignored,
-  // deliberately not validated, so an old record still restores rather than resetting.
+  // Validate: filters must be non-empty arrays and numbers finite. An `isSuddenDeath` key
+  // may be present in older records; it is ignored, deliberately not validated, so such a
+  // record still restores rather than resetting.
   if (
     !isNonEmptyArray(parsed.selectedDifficulties) ||
     !isNonEmptyArray(parsed.selectedCategories) ||

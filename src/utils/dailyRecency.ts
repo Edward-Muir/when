@@ -61,7 +61,7 @@ function chainStart(dateString: string): string {
 }
 
 // Walking the chain is the same work for every caller on a given day, and both the
-// mode-select preview and the game start hit it in one session.
+// home-screen preview and the game start hit it in one session.
 const chainCache = new Map<string, Set<string>>();
 let cachedFor: HistoricalEvent[] | null = null;
 

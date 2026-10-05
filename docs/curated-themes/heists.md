@@ -25,13 +25,6 @@ technicality of motive.
 
 ## The 33
 
-```
-node scripts/theme-gap.js --slugs <the 34 below, comma-separated>
-```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **34**,
-bins **8/8**, band 0 **8**, same-year pairs **0**.
-
 |  Year | Slug                                  |                |
 | ----: | ------------------------------------- | -------------- |
 | -1110 | `deir-el-medina-tomb-robberies`       | NEW            |
@@ -68,16 +61,21 @@ bins **8/8**, band 0 **8**, same-year pairs **0**.
 |  2019 | `dresden-green-vault-heist`           | NEW            |
 |  2022 | `ftx-crypto-collapse`                 |                |
 
-30 of the 33 are new. Measured against the merged catalogue: size **33**, band 0 **8**, bins **8/8** (advisory), same-year pairs **0**.
+30 of the 33 were authored for this theme. Only three spine beats matched an existing card
+exactly on both name and year: the South Sea Bubble, the Enron scandal and the FTX collapse
+(`south-sea-bubble`, `enron-scandal`, `ftx-crypto-collapse`) are reused rather than duplicated.
+No other keyword sweep (`heist`, `robbery`, `\btheft\b`, `forger`, `counterfeit`, `\bfraud\b`,
+`stole|stolen`, `loot`) turned up an in-scope card on any other beat's year;
+`leonardo-mona-lisa` (1503, the painting itself) and `millennium-dome` (1999, the building) were
+the closest false positives — neither is the theft beat.
 
-31 of the 34 are new. Only three spine beats matched an existing card exactly on both name and
-year: the South Sea Bubble, the Enron scandal and the FTX collapse were all already in the
-catalogue (`south-sea-bubble` in `diplomatic.json`, `enron-scandal` in `diplomatic.json`,
-`ftx-crypto-collapse` in `money.json`) and are reused rather than duplicated. No other keyword
-sweep (`heist`, `robbery`, `\btheft\b`, `forger`, `counterfeit`, `\bfraud\b`, `stole|stolen`,
-`loot`) turned up an in-scope card on any other beat's year; `leonardo-mona-lisa` (1503, the
-painting itself) and `millennium-dome` (1999, the building) were the closest false positives —
-neither is the theft beat.
+Gates: size **33**, band 0 **8**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
+
+```bash
+npm run theme:gap -- --slugs <the 33 above, comma-separated>
+```
 
 ## Why the footholds are the footholds
 
@@ -148,8 +146,8 @@ genuinely cluster in the last sixty years**, the period with international news 
 televised trials and, later, the internet. A "Stolen!" theme that thinned every close pair to
 the clockwork standard of one sub-8-year pair would have to cut the deck to well under the
 30-card floor, discarding recognizable beats (the Gardner Museum, Antwerp, Hatton Garden,
-Dresden) to protect a spread that the subject itself doesn't have. All four hard gates pass
-regardless — size, band 0, and same-year pairs are unaffected by near-year crowding, which
+Dresden) to protect a spread that the subject itself doesn't have. The hard gates pass
+regardless — size, band 0 and same-year pairs are unaffected by near-year crowding, which
 `theme-gap` reports as advisory only.
 
 ## Still missing from the catalogue

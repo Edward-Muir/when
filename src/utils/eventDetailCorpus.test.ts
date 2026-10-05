@@ -5,7 +5,7 @@ import path from 'path';
 const spec = require('../../scripts/events/detail-spec.js');
 
 /**
- * The Phase 3 quality gate for long-form event prose.
+ * The quality gate for long-form event prose.
  *
  * `scripts/events/detail-spec.js` holds the shape rules in plain CommonJS so the maintainer
  * scripts can run them under a bare `node`; this test is what points them at the real catalogue.
@@ -16,8 +16,6 @@ const spec = require('../../scripts/events/detail-spec.js');
  * alone holds that prose, so either one without the other is a live defect a player would meet:
  * a flag with no prose is a card that falls back to its description after a failed fetch, and
  * prose with no flag is writing nobody can reach.
- *
- * Everything here passes trivially while the sidecar is empty — that is the Phase 1 state.
  */
 
 interface EventRecord {
@@ -85,7 +83,7 @@ describe('event detail sidecar', () => {
     });
   });
 
-  it('rejects the shapes Phase 3 is most likely to produce by accident', () => {
+  it('rejects the shapes a writer is most likely to produce by accident', () => {
     // Fixtures have to be valid prose in every respect but the one under test, now that the spec
     // checks voice as well as shape — a bare run of one letter fails terminal punctuation alone.
     // Half the total floor, so a pair of them is exactly the shortest legal entry.
@@ -123,9 +121,9 @@ describe('event detail sidecar', () => {
     paragraphs: [para(lead), para('The second paragraph')],
   });
 
-  it('rejects the voice Phase 3 is most likely to produce by accident', () => {
+  it('rejects the voice a writer is most likely to produce by accident', () => {
     // Every one of these is a real machine tell catalogued in docs/event-detail/writing-spec.md.
-    // The rules they enforce are the thing a sub-agent cannot be trusted to remember 137 times.
+    // The rules they enforce are the thing a sub-agent cannot be trusted to remember on every entry.
     expect(spec.entryProblems('s', entryWith('The fleet sailed at dawn'))).toEqual([]);
 
     const banned = [

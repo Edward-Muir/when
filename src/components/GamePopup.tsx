@@ -41,7 +41,7 @@ interface GamePopupProps {
  *   post-placement and names dates freely, so showing it there would hand over the answer.
  *   See docs/event-detail/index.md.
  * - `has_detail`: set only where prose actually exists. Where it is not, the description is what
- *   renders — which is what lets the feature ship against a partly written corpus.
+ *   renders, so an event added without prose still gets a working popup.
  */
 function showsProseFor(type: GamePopupType, showYear: boolean, event: HistoricalEvent | null) {
   return type === 'description' && showYear && !!event?.has_detail;
@@ -169,7 +169,7 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
       // good one — "Game Over" reads as failure for a player who just got through the lot.
       if (perfect) return 'Perfect Clear!';
       if (survived) return 'Theme Cleared!';
-      return hasWinner ? 'You Won!' : 'Game Over';
+      return 'Game Over';
     }
     if (!hasWinner) {
       return 'Game Over';
@@ -202,6 +202,9 @@ function GameOverContent({
   const { winners, players, bestStreak } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
+  // Gold for a win: a multiplayer winner, or a single player who got through a curated theme.
+  const { survived } = getThemeOutcome(gameState);
+  const trophyWon = hasWinner || survived;
 
   const getPlayerStats = (player: Player) => {
     const correct = player.placementHistory.filter((p) => p).length;
@@ -221,7 +224,10 @@ function GameOverContent({
     <div className="px-4 py-4">
       {/* Trophy icon */}
       <div className="flex justify-center mb-4">
-        <Trophy className={`w-10 h-10 ${hasWinner ? 'text-accent' : 'text-text-muted'}`} />
+        <Trophy
+          data-testid="game-over-trophy"
+          className={`w-10 h-10 ${trophyWon ? 'text-accent' : 'text-text-muted'}`}
+        />
       </div>
 
       {/* Stats section */}

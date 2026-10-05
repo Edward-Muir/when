@@ -16,10 +16,11 @@ interface LeaderboardEntry {
 }
 
 // Only what the board renders. `emojiGrid` and `totalAttempts` are stored on the entry and
-// used by submit-side validation, but neither reaches the client: no surface has ever shown
-// another player's grid (the share sheet builds its own from local placement history), and
-// `totalAttempts` was only ever used to derive a mistake count, which is the same number for
-// every player — see the scoring note in submit.ts. Both shipped on every 15s poll.
+// used by submit-side validation, but neither reaches the client: no surface shows another
+// player's grid (the share sheet builds its own from local placement history), and
+// `totalAttempts` only derives a mistake count, which is the same number for almost every
+// player (a cleared curated theme can finish with fewer) — see the scoring note in submit.ts.
+// Both would otherwise ship on every 15s poll.
 interface PublicLeaderboardEntry {
   displayName: string;
   correctCount: number;
@@ -49,9 +50,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Locating the caller means scanning the whole board, so when a deviceId is supplied
     // (always, from the app) one full ZRANGE serves everything: the rows, the total, and
-    // the player's position. Reading the entire set used to be an extra command on top of
-    // a limited ZRANGE and a ZCARD; folding them together makes serving the *whole* board
-    // cheaper than serving the old top-50 was. Upstash bills per command and this endpoint
+    // the player's position. Folding the rows, the count and the full scan into one command
+    // makes serving the *whole* board cheaper than a limited ZRANGE plus a ZCARD plus a
+    // separate full read. Upstash bills per command and this endpoint
     // is public and polled every 15s per open client, so the count matters.
     const needsAll = Boolean(deviceId);
     const rows = await redis.zrange(leaderboardKey, 0, needsAll ? -1 : limit - 1, {
@@ -66,8 +67,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     //
     // Names are filtered again here, not just on submit. The sorted set's member IS the
     // JSON entry, so renaming a stored entry would mean ZREM of the exact old blob plus
-    // a re-ZADD. Masking on read cleans entries submitted before the filter existed, and
-    // makes any later addition to nameFilter's lists apply to history on the next fetch.
+    // a re-ZADD. Masking on read cleans entries the filter would now block, and makes any
+    // later addition to nameFilter's lists apply to history on the next fetch.
     // Ranking is untouched — it comes from the sorted-set index, not from the name.
     //
     // A player always sees the name they typed, even once it has been swapped for everyone

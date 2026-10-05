@@ -225,7 +225,7 @@ describe('generateShareText', () => {
     }
   });
 
-  it('names the winner in a multiplayer marathon', () => {
+  it('names the winner in a multiplayer game', () => {
     const { withCard, textOnly } = generateShareText(
       makeState({
         players: [

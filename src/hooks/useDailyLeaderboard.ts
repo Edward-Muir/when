@@ -60,14 +60,13 @@ export interface DailyLeaderboardOptions {
 /**
  * The daily leaderboard, owned in one place.
  *
- * This exists because "has the player submitted today?" used to be tracked four separate ways —
- * a flag in `GamePopup`, a flag in `LeaderboardSubmit`, `useLeaderboard.hasSubmitted`, and
- * localStorage — kept in sync by callbacks. They could disagree, and when they did the
- * game-over popup's submit gate never opened and the popup became impossible to dismiss.
+ * "Has the player submitted today?" is answered here and nowhere else. Separate flags kept in
+ * sync by callbacks can disagree, and when they do the game-over popup's submit gate never
+ * opens and the popup becomes impossible to dismiss.
  *
- * The fix is not more syncing: `submitted` below is a single OR of every signal, so any one of
- * them saying yes is enough. Divergence can no longer strand anyone, and the localStorage copy
- * is *healed* from the server's answer rather than trusted as the truth.
+ * Nor is the answer more syncing: `submitted` below is a single OR of every signal, so any one
+ * of them saying yes is enough. Divergence cannot strand anyone, and the localStorage copy is
+ * *healed* from the server's answer rather than trusted as the truth.
  *
  * Pass `null` for a game with no leaderboard (anything that is not a completed daily) and the
  * hook stays inert — no fetch, no polling — unless `boardDate` gives it a board to read anyway.

@@ -37,7 +37,7 @@ describe('TimelinePanel first-visit hint', () => {
     settle();
     expect(screen.getByRole('status')).toHaveTextContent(TAB_HINT_TEXT.timelineTab);
     expect(hasSeenHint('timelineTab')).toBe(true);
-    // No modal: the old "Got it" explainer is gone.
+    // No modal explainer.
     expect(screen.queryByRole('button', { name: 'Got it' })).toBeNull();
   });
 

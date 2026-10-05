@@ -21,9 +21,9 @@
  * instead of inventing a range. Under `--all` a record with `signals: []` is one no heuristic
  * flagged at all, which is itself the strongest hint that the answer is no window.
  *
- * A chunk is **not** a map template, whatever an earlier version of this comment claimed: it
- * carries `friendly_name`, `category`, `difficulty`, `description` and `signals`, every one of
- * which `entryProblems` rejects as "may not set ...". The writer authors a fresh map.
+ * A chunk is **not** a map template: it carries `friendly_name`, `category`, `difficulty`,
+ * `description` and `signals`, every one of which `entryProblems` rejects as "may not set ...".
+ * The writer authors a fresh map.
  *
  * **Two things leave the remaining count**, and both are needed for it to be a progress meter:
  * an event given a window (it stops being un-ranged) and an event decided to be a moment (it

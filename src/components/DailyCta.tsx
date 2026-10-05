@@ -14,7 +14,7 @@ interface DailyCtaProps {
   /** Today's finished board can be restored, so the review button has somewhere to go. */
   canReview?: boolean;
   onReview?: () => void;
-  /** The strip pointing here is up: halo the eye, since the copy no longer names it. */
+  /** The strip pointing here is up: halo the eye, since the copy does not name it. */
   reviewNudge?: boolean;
   /** The "tap the button above" strip is up: make the Play button the obvious thing. */
   nudge?: boolean;

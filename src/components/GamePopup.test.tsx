@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import GamePopup from './GamePopup';
-import { HistoricalEvent } from '../types';
+import { HistoricalEvent, WhenGameState } from '../types';
 import { loadEventDetail, peekEventDetail } from '../utils/eventDetail';
 
 jest.mock('../utils/eventDetail', () => ({
@@ -159,5 +159,62 @@ describe('dismissal', () => {
     userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
     expect(screen.getByRole('button', { name: 'Close' })).toBeInTheDocument();
     expect(onDismiss).not.toHaveBeenCalled();
+  });
+});
+
+/**
+ * A curated theme is small enough to finish: the deck runs dry, the hand empties without five
+ * misses, and that ending is a win. A single player never has a `winner`, so the title and the
+ * trophy both come from `getThemeOutcome`.
+ */
+describe('game over', () => {
+  const finished = (correct: number, misses: number, curatedThemeId?: string): WhenGameState => {
+    const placementHistory = [...Array(correct).fill(true), ...Array(misses).fill(false)];
+    return {
+      gameMode: 'suddenDeath',
+      lastConfig: { mode: 'suddenDeath', suddenDeathHandSize: 5, curatedThemeId },
+      players: [
+        {
+          id: 0,
+          name: 'Player 1',
+          hand: [],
+          placementHistory,
+          isEliminated: true,
+          hasWon: false,
+        },
+      ],
+      winners: [],
+      placementHistory,
+      bestStreak: correct,
+    } as unknown as WhenGameState;
+  };
+
+  const renderGameOver = (gameState: WhenGameState) =>
+    render(<GamePopup type="gameOver" event={null} gameState={gameState} onDismiss={jest.fn()} />);
+  const trophy = () => screen.getByTestId('game-over-trophy');
+
+  it('reads Theme Cleared! with a gold trophy when a curated deck runs dry', () => {
+    renderGameOver(finished(28, 2, 'test-theme'));
+    expect(screen.getByText('Theme Cleared!')).toBeInTheDocument();
+    expect(trophy()).toHaveClass('text-accent');
+  });
+
+  it('reads Perfect Clear! when the deck ran dry without a miss', () => {
+    renderGameOver(finished(30, 0, 'test-theme'));
+    expect(screen.getByText('Perfect Clear!')).toBeInTheDocument();
+    expect(trophy()).toHaveClass('text-accent');
+  });
+
+  it('reads Game Over with a muted trophy when misses emptied the hand', () => {
+    renderGameOver(finished(20, 5, 'test-theme'));
+    expect(screen.getByText('Game Over')).toBeInTheDocument();
+    expect(trophy()).toHaveClass('text-text-muted');
+  });
+
+  it('never calls a Custom game a win, even one that ran dry', () => {
+    renderGameOver(finished(12, 2));
+    expect(screen.getByText('Game Over')).toBeInTheDocument();
+    expect(screen.queryByText(/won|cleared/i)).toBeNull();
+    expect(trophy()).toHaveClass('text-text-muted');
   });
 });

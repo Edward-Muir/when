@@ -14,9 +14,8 @@ const spec = require('../../scripts/events/region-spec.js');
  * validates against, so the corpus and the tool that writes it cannot drift apart. The rules
  * for *choosing* tags are prose, in docs/regions/tagging-spec.md, and no test can hold them.
  *
- * **`REQUIRE_REGIONS` flips to true once the catalogue sweep lands.** Until then an untagged
- * event is simply not done yet; after it, an untagged event is one that `add-events` let
- * through, and a region filter would silently never deal it.
+ * **`REQUIRE_REGIONS` is on: every event must be tagged.** An untagged event is one that
+ * `add-events` let through, and a region filter would silently never deal it.
  */
 const REQUIRE_REGIONS = true;
 

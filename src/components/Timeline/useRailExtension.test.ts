@@ -38,8 +38,8 @@ describe('useRailExtension', () => {
     expect(result.current.retracting).toBeNull();
   });
 
-  // The bug: the memory used to be keyed to the drag, so it survived the card being taken off
-  // the board and the second approach arrived at full length with no animation.
+  // The bug this guards: memory keyed to the drag survives the card being taken off the board,
+  // so the second approach arrives at full length with no animation.
   it('re-arms an end once the card leaves the board mid-drag', () => {
     const { result, rerender } = setup();
     rerender({ dragging: true, previewing: true, ext: 'earlier' });

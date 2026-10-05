@@ -51,7 +51,7 @@ describe('getThemeOutcome', () => {
 
   /**
    * The only other way a daily can end: the deck ran dry, so correct placements stopped
-   * drawing replacements and the hand drained without the player using up all five lives.
+   * drawing replacements and the hand drained without the player using up all five misses.
    */
   it('is survived when the hand emptied with mistakes to spare', () => {
     expect(getThemeOutcome(state(run(20, DAILY_HAND_SIZE - 1)))).toEqual({
@@ -97,14 +97,14 @@ describe('getThemeOutcome', () => {
         } as never,
       });
 
-    it('survives when the hand emptied with lives to spare', () => {
+    it('survives when the hand emptied with misses to spare', () => {
       expect(getThemeOutcome(replay(run(20, DAILY_HAND_SIZE - 1)))).toEqual({
         survived: true,
         perfect: false,
       });
     });
 
-    it('does not survive when every life was used', () => {
+    it('does not survive when every card was lost to a miss', () => {
       expect(getThemeOutcome(replay(run(20, DAILY_HAND_SIZE)))).toEqual({
         survived: false,
         perfect: false,
@@ -127,7 +127,8 @@ describe('getThemeOutcome', () => {
 
   /**
    * Round reprieves and eliminations break the "hand emptied means five mistakes" arithmetic.
-   * No UI reaches multiplayer, but the check should not quietly produce a wrong answer there.
+   * No menu builds a multiplayer game, but a challenge code with playerCount > 1 does; a curated
+   * replay is always single-player. The check should not quietly produce a wrong answer there.
    */
   it('ignores multiplayer', () => {
     expect(getThemeOutcome(state(run(20, 0), { players: [player(), player()] })).survived).toBe(

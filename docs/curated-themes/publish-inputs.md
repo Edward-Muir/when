@@ -16,16 +16,23 @@ replays the last 28 days to build its exclusion chain, so a retroactive edit mak
 replay decks nobody played. See [index.md](index.md).
 
 **Run `mode: validate` first.** It writes nothing (`dryRun`) and reports what the
-catalogue-aware checks think. A theme carrying un-illustrated events fails on unresolved
-slugs, because `loadAllEvents` hides any event without Cloudinary art.
+catalogue-aware checks think. A theme carrying un-illustrated or retired events fails on
+unresolved slugs, because `loadAllEvents` hides any event without Cloudinary art and
+`deprecated.json` is not in the manifest.
+
+The workflow's other inputs: `force` publishes a date that has already opened (it splits the
+day for UTC+13/+14), and `remove` takes a theme id to delete instead of adding one.
 
 ## Schedule
 
-Every event in both banks is illustrated, so every theme below is publishable. From October
-2026 curated themes run on **Mondays and Fridays**: the unplayed bank-1 themes were moved off
-their Sundays, and bank 2 follows on the same two weekdays. Themes dated 2026-09-27 or earlier
-were left where they ran. The live calendar is the source of truth; this table is the plan it
-was written from.
+Curated themes run on **Mondays and Fridays**. The live calendar is the source of truth; this
+table is the plan it is published from. Themes not in it (`assassinations`, `automata`,
+`ciphers`, `kings-of-england`) have already run.
+
+Two decks fail `theme-gap`'s same-year gate against the current catalogue, which the publish
+check does not test, and need a swap (re-publish one already in the calendar): `money`
+(`first-coins` and `punch-marked-coins-india`, both 600 BCE) and `walls`
+(`walls-of-benin-city-built` and `malbork-castle-built`, both 1280).
 
 | Date       | Day | Theme               | Bank |
 | ---------- | --- | ------------------- | ---- |
@@ -975,9 +982,9 @@ was written from.
 }
 ```
 
-## Bank 2 (2026-09)
+## Bank 2
 
-Twenty-two themes authored spine-first in a second pass; see [index.md](index.md#bank-2-2026-09).
+Twenty-two themes authored spine-first; see [index.md](index.md#bank-2).
 Their dates are in the schedule at the top of this file.
 
 ### Before Us — `before-us`
@@ -1227,7 +1234,7 @@ Their dates are in the schedule at the top of this file.
     "qin-unification",
     "qin-book-burning",
     "han-dynasty",
-    "silk-trade-begins",
+    "silk-road-established",
     "wang-mang-usurps-han",
     "yellow-turban-rebellion",
     "battle-red-cliffs",

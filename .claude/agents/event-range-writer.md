@@ -34,7 +34,7 @@ spec to be repeated.
 
 ## Rejection is the expected answer
 
-Most events are moments. Roughly 95% of the catalogue carries no window and that is correct, and
+Most events are moments. Nearly 90% of the catalogue carries no window and that is correct, and
 roughly three in four flagged candidates do not survive a check. **A chunk that comes back with
 two or three windows out of forty is a good batch, not a lazy one.**
 

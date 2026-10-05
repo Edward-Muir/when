@@ -76,16 +76,15 @@ Two edges argued rather than assumed:
 | 2003 | `wicked-premieres-broadway`    | foothold · NEW |
 | 2015 | `hamilton-opens-broadway`      | foothold · NEW |
 
-24 of the 36 are new. Measured against the merged catalogue: size **36**, band 0 **12**, bins **8/8** (advisory), same-year pairs **0**.
+24 of the 36 were authored for this theme.
 
-24 of the 36 are new.
+Gates: size **36**, band 0 **12**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --include-pending --extra staging/on-stage.json --slugs <the 36 above, comma-separated>
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **36**,
-bins **8/8**, band 0 **12**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 

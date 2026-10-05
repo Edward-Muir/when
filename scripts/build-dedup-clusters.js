@@ -11,9 +11,9 @@
  *   Columns: cluster, size, year, title, category_file, has_image, name
  *   Rows sharing a `cluster` number form one duplicate group.
  *
- * Fallback: if that CSV is absent, clusters are generated heuristically from the live
- * event data in `public/events/*.json` (very similar friendly names) so the tool still
- * works end-to-end. This is clearly logged so it's never mistaken for the real sweep.
+ * Fallback: if that CSV is absent, clusters are generated heuristically from the live events
+ * listed in `public/events/manifest.json` (very similar friendly names) so the tool still works
+ * end-to-end. This is clearly logged so it's never mistaken for the real sweep.
  *
  * Output shape (matches what the page expects): an array of clusters, each an array of
  * event `name` ids — e.g. [["wwi-end","world-war-one-ends"], ["moon-landing", ...]].
@@ -116,9 +116,7 @@ function clustersFromCsv(csvText) {
 // --- Heuristic fallback -----------------------------------------------------
 
 function loadEvents() {
-  const files = fs
-    .readdirSync(EVENTS_DIR)
-    .filter((f) => f.endsWith('.json') && f !== 'manifest.json');
+  const { files } = JSON.parse(fs.readFileSync(path.join(EVENTS_DIR, 'manifest.json'), 'utf-8'));
   const events = [];
   for (const file of files) {
     const content = JSON.parse(fs.readFileSync(path.join(EVENTS_DIR, file), 'utf-8'));
@@ -219,7 +217,7 @@ function main() {
     source = 'csv';
   } else {
     console.log('⚠️  Review CSV not found at docs/sports-events/duplicate-clusters-review.csv');
-    console.log('    Falling back to heuristic detection over public/events/*.json.');
+    console.log('    Falling back to heuristic detection over the manifest events.');
     console.log('    (Re-run this script once the real CSV is in place to use it instead.)');
     clusters = clustersFromEvents(loadEvents());
     source = 'heuristic';

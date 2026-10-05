@@ -20,7 +20,7 @@ jest.mock('../utils/eventLoader', () => {
 });
 
 // Same reasoning as above: the theme calendar is a network call, and these tests are about
-// sudden death, which never consults it. Left real, the unresolvable fetch would keep the hook
+// `suddenDeath` games, which never consult it. Left real, the unresolvable fetch would keep the hook
 // in `loading` past the single microtask flush setupGame does.
 jest.mock('../utils/curatedThemes', () => {
   const actual = jest.requireActual('../utils/curatedThemes');
@@ -63,7 +63,7 @@ function createTestEventDeck(count: number, startYear = 1800): HistoricalEvent[]
   );
 }
 
-describe('useWhenGame - Sudden Death Mode', () => {
+describe('useWhenGame - core rules', () => {
   beforeEach(() => {
     jest.useFakeTimers();
     // Default: 20 events, years 1800-1990 (10-year gaps)
@@ -90,7 +90,7 @@ describe('useWhenGame - Sudden Death Mode', () => {
     return result;
   }
 
-  // Helper to start a sudden death game
+  // Helper to start a `suddenDeath` (Custom) game
   function startSuddenDeathGame(
     result: ReturnType<typeof renderHook<ReturnType<typeof useWhenGame>, unknown>>['result'],
     options: {
@@ -181,7 +181,7 @@ describe('useWhenGame - Sudden Death Mode', () => {
       expect(result.current.state.players[0].isEliminated).toBeFalsy();
     });
 
-    it('single player loses when hand empties - game over with no winners', async () => {
+    it('game ends when the hand empties - game over with no winners', async () => {
       const result = await setupGame();
       startSuddenDeathGame(result, { suddenDeathHandSize: 1 });
 
@@ -196,7 +196,7 @@ describe('useWhenGame - Sudden Death Mode', () => {
       expect(result.current.state.winners).toHaveLength(0);
     });
 
-    it('single player loses after 3 incorrect placements with hand size 3', async () => {
+    it('game ends when the hand empties after 3 incorrect placements with hand size 3', async () => {
       const result = await setupGame();
       startSuddenDeathGame(result, { suddenDeathHandSize: 3 });
 
@@ -566,7 +566,7 @@ describe('useWhenGame - Archive replay', () => {
     for (const name of dealt) expect(theme.eventNames).toContain(name);
   });
 
-  it('refuses a theme the calendar no longer carries', async () => {
+  it('refuses a theme missing from the calendar', async () => {
     const result = await setup();
     const error = jest.spyOn(console, 'error').mockImplementation(() => {});
     act(() => {

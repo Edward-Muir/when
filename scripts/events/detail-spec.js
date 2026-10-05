@@ -22,16 +22,14 @@ const DETAIL_DIR = 'detail';
 const MIN_PARAGRAPHS = 2;
 const MAX_PARAGRAPHS = 2;
 
-// Settled in Phase 2 against ten hand-written entries and a sub-agent calibration run, then
-// tightened again to two paragraphs at two thirds of the length. The first pass allowed 2-3
-// paragraphs and up to 1,250 characters; every calibration entry and every sub-agent entry came
-// back at three paragraphs near the top of that band, which is what a three-paragraph allowance
-// reliably produces. Two is now the whole allowance, not a floor to rise off.
+// Two paragraphs is the whole allowance, not a floor to rise off: a 2-3 paragraph allowance up to
+// 1,250 characters reliably produced three paragraphs near the top of the band, from hand-written
+// calibration entries and sub-agents alike, which is more than the card's reading surface holds.
 //
-// The reading surface is a 476px scroll region, roughly 20 lines at a 402px-wide phone. The ten
-// calibration entries land at 647-746 characters, about half a screen of prose behind a 384px
-// image, so the card still overflows its region comfortably at every width and the constant
-// height never leaves dead space. Both totals bind: two paragraphs at the per-paragraph floor
+// The reading surface is a 476px scroll region, roughly 20 lines at a 402px-wide phone. The
+// middle half of the corpus lands at 645-746 characters, about half a screen of prose behind a
+// 384px image, so the card still overflows its region comfortably at every width and the
+// constant height never leaves dead space. Both totals bind: two paragraphs at the per-paragraph floor
 // fall under MIN_TOTAL_CHARS, and two at the per-paragraph ceiling overrun MAX_TOTAL_CHARS.
 const MIN_PARAGRAPH_CHARS = 220;
 const MAX_PARAGRAPH_CHARS = 450;
@@ -41,14 +39,15 @@ const MAX_TOTAL_CHARS = 830;
 /**
  * Patterns a written entry may not contain.
  *
- * Every one was measured against all 5,460 existing `description` + `friendly_name` strings before
- * being adopted, because a ban that fires on good historical writing would block Phase 3 for 137
- * batches. The `seen` count on each is that measurement: how many existing descriptions it
- * matches. Those descriptions were written years ago to a different standard and are not being
- * rewritten — a non-zero count means "plausible enough English that a writer will reach for it",
- * which is the argument for banning it here, not against.
+ * Every one is measured against the catalogue's existing `description` + `friendly_name` strings
+ * before being adopted, because a ban that fires on good historical writing blocks whole batches
+ * of new prose. The `seen` count on each is that measurement: how many existing descriptions it
+ * matched. Those descriptions are written to a different, shorter standard and are not rewritten
+ * to fit these rules. A non-zero count means "plausible enough English that a writer will reach
+ * for it", which is the argument for banning it here, not against.
  *
- * The broad participial-clause regex was dropped at 39 hits and narrowed to seven verbs (17).
+ * A broad participial-clause regex matched 39 descriptions; the rule is narrowed to seven verbs
+ * (17).
  *
  * Sources for the machine-tell list are cited in docs/event-detail/writing-spec.md.
  */

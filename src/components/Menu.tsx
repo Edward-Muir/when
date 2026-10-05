@@ -83,7 +83,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const [showRulesModal, setShowRulesModal] = React.useState(false);
 
   // Show the App Store link only to iOS users on the web — not inside the
-  // native Capacitor app (redundant) and not on Android/desktop (iOS-only app).
+  // native app (redundant) and not on Android/desktop (the menu links only the App Store).
   const isIosWeb = installScenario.startsWith('ios-') && !Capacitor.isNativePlatform();
 
   const handleShare = async () => {
@@ -197,8 +197,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                   </button>
                 )}
 
-                {/* Always here, not only in a game: the rules used to be unreachable from
-                    the home screen, which is where a new player looks for them. */}
+                {/* Always here, not only in a game: the home screen is where a new player
+                    looks for the rules. */}
                 <button onClick={handleRules} className={menuItemClass}>
                   <HelpCircle className={iconClass} />
                   <span className="font-body">How to Play</span>

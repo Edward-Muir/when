@@ -54,7 +54,7 @@ export function buildDailyDeck(
 }
 
 /**
- * Get the first card of today's daily deck, for previewing on the mode-select screen.
+ * Get the first card of today's daily deck, for previewing on the home screen.
  * Returns null if no events qualify.
  */
 export function getDailyPreviewEvent(

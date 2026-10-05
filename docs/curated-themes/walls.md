@@ -9,7 +9,7 @@ a 2006 act of Congress. This note is why these 34 and not others.
 An event is in only if it is **the building, or the fall or demolition, of a fortification
 built to keep people out**: city walls, border walls, castles, forts, defensive lines. A siege
 of a fortress is out unless the wall's fall is the point — another theme, Under Siege, takes
-sieges, and a `sieges.json` staging file already shares this catalogue pass.
+sieges.
 
 Two edges were argued rather than assumed:
 
@@ -61,16 +61,18 @@ Two edges were argued rather than assumed:
 |  2002 | `israel-builds-west-bank-barrier`   | NEW            |
 |  2006 | `us-secure-fence-act-signed`        | NEW            |
 
-24 of the 34 are new. Measured against the merged catalogue: size **34**, band 0 **12**, bins **7/8** (advisory), same-year pairs **0**.
+24 of the 34 were authored for this theme.
 
-24 of the 34 are new.
+Gates: size **34**, band 0 **12**, bins **7/8** (advisory), same-year pairs **1**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --include-pending --extra scratchpad/staging/walls.json --slugs <the 34 above, comma-separated>
+npm run theme:gap -- --slugs <the 34 above, comma-separated>
 ```
 
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **34**,
-bins **7/8**, band 0 **12**, same-year pairs **0**.
+**The deck fails the same-year gate**: `walls-of-benin-city-built` and `malbork-castle-built`
+are both dated 1280. Swap one before publishing.
 
 ## Why the footholds are the footholds
 
@@ -92,8 +94,7 @@ theme clears the floor by a wide margin — 12 against a floor of 5.
 
 **Cut for being a siege, not a wall's fall.** Three spine beats framed as a fortress "falling"
 were dropped because the catalogue's existing card for each is unmistakably about the siege or
-its human drama, not about a wall coming down, and a parallel `sieges.json` staging pass is
-already claiming this ground for an Under Siege theme:
+its human drama, not about a wall coming down, and Under Siege claims this ground:
 
 - **Masada falls** (73 CE) — the catalogue's `siege-masada` is about the mass suicide, not a
   breached wall. The fortress's _construction_ (`herod-builds-masada-fortress`, kept) stays

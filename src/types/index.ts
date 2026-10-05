@@ -49,10 +49,10 @@ export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';
 
 export const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard', 'very-hard'];
 
-// All four difficulties are in play. 'very-hard' used to be excluded as a blunt way
-// to stop decks being punishing, but the deck builder now places those events where
-// they belong — ~1% of opening cards and ~22% by the end of the ramp — and including
-// them measurably *increases* the variety a player sees over a year.
+// All four difficulties are in play. Excluding 'very-hard' would be a blunt way to stop
+// decks being punishing; the deck builder already places those events where they belong
+// — ~1% of opening cards and ~22% by the end of the ramp — and including them measurably
+// *increases* the variety a player sees over a year.
 export const DEFAULT_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard', 'very-hard'];
 
 export type Era =
@@ -66,13 +66,10 @@ export type Era =
   | 'modern';
 
 /**
- * Both modes run the same sudden-death mechanics (draw on correct, hand shrinks on a
- * miss, game over when the hand empties); they differ only in how the deck is built.
- * `daily` is seeded from the calendar date, `suddenDeath` from the Custom page's filters.
- *
- * There is no mode picker in the UI, and no third rule-set: a `freeplay` mode (empty
- * your hand to win, draw a replacement on a miss) existed until it was removed, having
- * become unreachable. Legacy share links still carry its bit — see `challengeCode.ts`.
+ * Both modes run the same mechanics (draw on correct, hand shrinks on a miss, game over
+ * when the hand empties); they differ only in how the deck is built. `daily` is seeded
+ * from the calendar date; `suddenDeath` is built from the Custom page's filters, or from a
+ * curated theme's pool for an Archive replay (`GameConfig.curatedThemeId`).
  */
 export type GameMode = 'daily' | 'suddenDeath';
 
@@ -125,7 +122,8 @@ export interface HistoricalEvent {
    * macro-regions for filtering.
    *
    * Written by `scripts/events/region-apply.js` in canonical order; the rules for choosing
-   * tags are in docs/regions/tagging-spec.md. Optional until the catalogue sweep lands.
+   * tags are in docs/regions/tagging-spec.md. Optional in the type; every catalogue event is
+   * tagged (eventRegions.test.ts enforces it).
    */
   regions?: string[];
 }
@@ -247,15 +245,15 @@ export interface GameConfig {
    */
   curatedThemeId?: string;
 
-  // Challenge mode (shareable seeded games)
+  // Challenge code (shareable seeded games)
   challengeSeed?: string; // Seed string for deterministic shuffle (the challenge code itself)
-  challengeCode?: string; // The 3-word challenge code for display/sharing
+  challengeCode?: string; // The challenge token (6+ hyphenated words), also the seed
 
   // Multiplayer settings
   playerCount?: number;
   playerNames?: string[];
-  cardsPerHand?: number;
+  cardsPerHand?: number; // Hand size for the daily (DAILY_HAND_SIZE)
 
-  // Sudden death settings
-  suddenDeathHandSize?: number; // 1-7 cards in hand for sudden death mode (default 5)
+  // Hand size
+  suddenDeathHandSize?: number; // Hand size for non-daily games (1-8, default 5)
 }

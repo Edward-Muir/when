@@ -167,9 +167,9 @@ describe('save/get round-trips', () => {
     expect(stats.longestTimeline).toEqual({ daily: 0, suddenDeath: 0 });
   });
 
-  describe('legacy freeplay migration', () => {
-    // Anyone who launched a pre-removal freeplay challenge link has counts under a
-    // `freeplay` key. They fold into `suddenDeath` so no lifetime total goes backwards.
+  describe('stored freeplay buckets', () => {
+    // A stored record may carry counts under a `freeplay` key. They fold into `suddenDeath`
+    // so no lifetime total goes backwards.
     const legacy = {
       gamesPlayed: { daily: 2, suddenDeath: 3, freeplay: 4 },
       timelineLengthSum: { daily: 20, suddenDeath: 30, freeplay: 40 },
@@ -197,7 +197,7 @@ describe('save/get round-trips', () => {
       expect(stats.longestTimeline).toEqual({ daily: 10, suddenDeath: 9 });
     });
 
-    it('drops retired keys on save rather than writing them back', () => {
+    it('drops unknown keys on save rather than writing them back', () => {
       localStorage.setItem('when-lifetime-stats', JSON.stringify(legacy));
       saveLifetimeStats(getLifetimeStats());
       const raw = JSON.parse(localStorage.getItem('when-lifetime-stats') as string);

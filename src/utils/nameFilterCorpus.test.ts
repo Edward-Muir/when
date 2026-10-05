@@ -23,26 +23,10 @@ import {
  */
 
 const EVENTS_DIR = path.join(__dirname, '..', '..', 'public', 'events');
-// The content event files loaded by the app (mirrors public/events/manifest.json).
-const EVENT_FILES = [
-  'conflict',
-  'cultural',
-  'diplomatic',
-  'disasters',
-  'exploration',
-  'infrastructure',
-  'people',
-  'clothing',
-  'communication',
-  'earth-life',
-  'food',
-  'games-sport',
-  'law',
-  'medicine',
-  'migration',
-  'money',
-  'candidates',
-];
+// The event files the app loads, straight from the manifest so a new file is covered.
+const MANIFEST_FILES: string[] = JSON.parse(
+  fs.readFileSync(path.join(EVENTS_DIR, 'manifest.json'), 'utf8')
+).files;
 
 /**
  * Prefill pairs the whole filter blocks, and should.
@@ -120,13 +104,13 @@ describe('display-name filter false positives', () => {
   // Event names are never display names — they are here as a large corpus of ordinary
   // historical English, which is exactly the register a plausible player name sits in. Only
   // the two word-level checks are measured: the shipped obscenity dataset flags a couple of
-  // dozen event titles on its own (Dickinson, Fukushima, Rape of Nanking), which predates
-  // this file and is irrelevant to names.
+  // dozen event titles on its own (Dickinson, Fukushima, Rape of Nanking), which is
+  // irrelevant to names.
   it('never flags event prose as a troll name', () => {
-    const names = EVENT_FILES.flatMap((file) => {
+    const names = MANIFEST_FILES.flatMap((file) => {
       const events = JSON.parse(
-        // eslint-disable-next-line security/detect-non-literal-fs-filename -- file is from a fixed allowlist
-        fs.readFileSync(path.join(EVENTS_DIR, `${file}.json`), 'utf8')
+        // eslint-disable-next-line security/detect-non-literal-fs-filename -- manifest-derived allowlist
+        fs.readFileSync(path.join(EVENTS_DIR, file), 'utf8')
       ) as Array<{ name: string; friendly_name: string }>;
       return events.flatMap((e) => [e.name, e.friendly_name].filter(Boolean));
     });

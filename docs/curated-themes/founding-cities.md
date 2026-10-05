@@ -80,17 +80,14 @@ were cut anyway.
 |  1960 | `brasilia-built`                      |                |
 |  1991 | `abuja-becomes-nigeria-capital`       | NEW            |
 
-25 of the 35 are new. Measured against the merged catalogue: size **35**, band 0 **10**, bins **8/8** (advisory), same-year pairs **0**.
+25 of the 35 were authored for this theme.
 
-25 of the 35 are new. At authoring time, with the new cards loaded via `--include-pending
---extra`:
+Gates: size **35**, band 0 **10**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
-```
-Gates:
-  PASS  size 35                (want 30-36)
-  INFO  bins 8/8               (advisory, 6+ is spread)
-  PASS  band 0 10              (want 5+)
-  PASS  same-year pairs 0      (want 0)
+```bash
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds

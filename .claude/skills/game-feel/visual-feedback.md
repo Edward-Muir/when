@@ -14,6 +14,9 @@ Use for impacts, errors, or important events. The intensity should match the sig
 
 ### CSS Implementation
 
+The live keyframes are in `src/index.css`. The `animate-shake` and `animate-screen-shake` entries
+in `tailwind.config.js` are unused.
+
 ```css
 @keyframes shake-light {
   0%,
@@ -114,18 +117,15 @@ const shakeVariants = {
 
 ### React Hook for Screen Shake
 
+This project already has one: `src/hooks/useScreenShake.ts`. `triggerShake(intensity)` sets the
+`animate-shake-{light,medium,heavy}` class (keyframes in `src/index.css`, matching the CSS above)
+for the animation's duration, and does nothing under reduced motion.
+
 ```typescript
-function useScreenShake() {
-  const [shake, setShake] = useState<'light' | 'medium' | 'heavy' | null>(null);
+const { shakeClassName, triggerShake } = useScreenShake();
 
-  const triggerShake = useCallback((intensity: 'light' | 'medium' | 'heavy') => {
-    setShake(intensity);
-    const duration = intensity === 'light' ? 200 : intensity === 'medium' ? 300 : 400;
-    setTimeout(() => setShake(null), duration);
-  }, []);
-
-  return { shake, triggerShake };
-}
+<div className={shakeClassName}>...</div>;
+triggerShake('medium');
 ```
 
 ## Color & Flash Effects

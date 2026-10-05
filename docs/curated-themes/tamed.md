@@ -63,16 +63,15 @@ One edge was argued rather than assumed:
 |   1992 | `przewalski-horses-rewilded`       | NEW            |
 |   1996 | `dolly-sheep-cloned`               | foothold       |
 
-19 of the 34 are new. Measured against the merged catalogue: size **34**, band 0 **17**, bins **6/8** (advisory), same-year pairs **0**.
+19 of the 34 were authored for this theme.
 
-19 of the 34 are new.
+Gates: size **34**, band 0 **17**, bins **6/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --include-pending --extra staging/tamed.json --slugs <the 34 above>
+npm run theme:gap -- --slugs <the 34 above, comma-separated>
 ```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **34**,
-bins **6/8**, band 0 **17**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 

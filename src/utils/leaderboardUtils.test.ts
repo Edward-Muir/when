@@ -33,9 +33,9 @@ describe('resolvePlayerRow', () => {
     expect(resolvePlayerRow(entries, null, null)).toEqual({ row: null, inList: false });
   });
 
-  // The regression this function exists for: the list is a capped slice, so a player ranked
-  // below the cap is absent from `entries` entirely. Searching the slice finds nothing, which
-  // is how the game-over preview used to silently drop the player's own row.
+  // Why this function exists: the list is a capped slice, so a player ranked below the cap is
+  // absent from `entries` entirely, and searching the slice would silently drop their own row
+  // from the game-over preview.
   it('returns the server row for a player ranked below the rendered slice', () => {
     const playerEntry = entry(87);
     const resolved = resolvePlayerRow(entries, 87, playerEntry);

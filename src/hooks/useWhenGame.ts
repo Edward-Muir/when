@@ -59,14 +59,14 @@ interface UseWhenGameReturn {
   showDescriptionPopup: (event: HistoricalEvent) => void;
   showGameOverPopup: () => void;
   dismissPopup: () => void;
-  /** Achievement ids unlocked by the most recently recorded game (for Phase 5 UI). */
+  /** Achievement ids unlocked by the most recently recorded game (for the end-of-game unlock reveal). */
   newlyUnlockedAchievements: string[];
   /** Personal-best milestones set by the most recently recorded game (text-only end-of-game popups). */
   gameMilestones: GameMilestone[];
 }
 
-// Miss-reveal choreography timings now live in the shared tuning module
-// (re-exported here for existing importers). The hook reads DEFAULT_TUNING
+// Miss-reveal choreography timings live in the shared tuning module
+// (re-exported here for importers). The hook reads DEFAULT_TUNING
 // directly — game sequencing is not affected by the jig's tuning provider.
 export { MISS_FLASH_MS, getMissTravelMs };
 
@@ -98,23 +98,6 @@ interface PendingPopupState {
   pendingStateUpdate: (() => void) | null;
 }
 
-/**
- * The deck a config should be dealt from, in dealing order (index 0 is the starting timeline
- * card).
- *
- * The daily goes through `buildDailyDeck` rather than re-deriving a pool from the config's
- * filters. Those were parallel implementations of the same thing, which
- * docs/gameplay-feel warns against: when they drift, the /daily preview card silently stops
- * matching the deck actually dealt. For a curated theme it is not drift but a straight
- * break — the theme's pool is an explicit event list no category filter can express, so the
- * filter chain would hand back the whole catalogue.
- *
- * An Archive replay names its theme on the config and is dealt from that theme's pool with
- * a fresh seed (`themeReplay.ts`). A theme the calendar no longer carries yields an empty
- * deck, so `startGame`'s size guard refuses it loudly rather than dealing the catalogue.
- *
- * Custom and challenge games keep the filter chain; they have no date to key a pool on.
- */
 /**
  * Fold a resolved turn into state, splitting off what multiplayer defers to popup dismissal.
  *
@@ -151,6 +134,23 @@ function applyTurnUpdate(
   return { next, deferred };
 }
 
+/**
+ * The deck a config should be dealt from, in dealing order (index 0 is the starting timeline
+ * card).
+ *
+ * The daily goes through `buildDailyDeck` rather than re-deriving a pool from the config's
+ * filters. Re-deriving it would be a parallel implementation of the same thing, which
+ * docs/gameplay-feel warns against: when they drift, the /daily preview card silently stops
+ * matching the deck actually dealt. For a curated theme it is not drift but a straight
+ * break — the theme's pool is an explicit event list no category filter can express, so the
+ * filter chain would hand back the whole catalogue.
+ *
+ * An Archive replay names its theme on the config and is dealt from that theme's pool with
+ * a fresh seed (`themeReplay.ts`). A theme missing from the calendar yields an empty deck,
+ * so `startGame`'s size guard refuses it loudly rather than dealing the catalogue.
+ *
+ * Custom and challenge games use the filter chain; they have no date to key a pool on.
+ */
 function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
   const { mode, dailySeed, curatedThemeId } = config;
 
@@ -172,13 +172,13 @@ function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): Historic
 }
 
 export function useWhenGame(): UseWhenGameReturn {
-  // On a warm cache (e.g. remount after visiting /stats or /achievements), start straight in
-  // modeSelect with the catalogue already in hand — no loading-screen flash. Cold first load
-  // still falls through to 'loading' and the effect below.
+  // On a warm cache (e.g. the remount on returning Home from /daily or /support), start
+  // straight in modeSelect with the catalogue already in hand — no loading-screen flash. Cold
+  // first load still falls through to 'loading' and the effect below.
   //
-  // The theme calendar has to be warm too, not just the events. Mode select computes today's
+  // The theme calendar has to be warm too, not just the events. The home screen computes today's
   // theme name and preview card synchronously on its first render, so shortcutting past a
-  // cold calendar would show a category theme on a curated day and then swap it underneath
+  // cold calendar would show a seeded theme on a curated day and then swap it underneath
   // the player.
   const [state, setState] = useState<WhenGameState>(() =>
     (getCachedEvents()?.length ?? 0) > 0 && areCuratedThemesLoaded()
@@ -192,7 +192,7 @@ export function useWhenGame(): UseWhenGameReturn {
     pendingStateUpdate: null,
   });
 
-  // Load events and the theme calendar on mount, then go to mode select. Both are needed
+  // Load events and the theme calendar on mount, then go to the home screen. Both are needed
   // before any puzzle can be decided; loadCuratedThemes never rejects, so a calendar outage
   // just means no curated day rather than a stuck loading screen.
   useEffect(() => {
@@ -218,7 +218,7 @@ export function useWhenGame(): UseWhenGameReturn {
         suddenDeathHandSize = 5,
       } = config;
 
-      // Use suddenDeathHandSize for sudden death mode, cardsPerHand otherwise
+      // The daily deals cardsPerHand (DAILY_HAND_SIZE); every other game deals suddenDeathHandSize
       const effectiveHandSize = mode === 'suddenDeath' ? suddenDeathHandSize : cardsPerHand;
 
       const isDaily = mode === 'daily' && Boolean(dailySeed);
@@ -234,8 +234,8 @@ export function useWhenGame(): UseWhenGameReturn {
       // wrong one would wave through a deck too short to deal.
       const minRequired = minDeckSize(playerCount, effectiveHandSize);
       if (shuffled.length < minRequired) {
-        // Loud, because the old quiet return left the player tapping Play on a screen that
-        // never changed, with nothing to explain it.
+        // Loud, because a quiet return leaves the player tapping Play on a screen that never
+        // changes, with nothing to explain it.
         console.error(
           `Not enough events to start the game: deck has ${shuffled.length}, need ${minRequired}` +
             (isDaily ? ` (daily ${dailySeed})` : '') +

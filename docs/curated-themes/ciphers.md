@@ -82,15 +82,13 @@ Paste as `eventNames` into the workflow's `theme` input.
 |  2013 | `snowden-revelations`             | foothold |     |
 |  2020 | `zodiac-cipher-solved`            |          | NEW |
 
-Read the current band and spread figures from the catalogue rather than from here — a card's
-band moves whenever the catalogue does:
+Gates: size **36**, band 0 **10**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated> \
-  --include-pending --extra <staging>/ciphers.json
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time: size 36, bins 8/8 `[5 4 1 5 3 5 6 7]`, band 0 = 10, same-year pairs 0.
 
 ## Why the footholds are the footholds
 

@@ -1,9 +1,9 @@
 /**
- * Daily-puzzle reminder notifications (iOS Capacitor app only).
+ * Daily-puzzle reminder notifications (native Capacitor app only).
  *
  * Schedules a rolling window of local notifications at 8:00 AM in the user's
- * local timezone, one per day, with per-day themed copy (the daily theme is
- * deterministic from the date, so future days can be computed ahead of time).
+ * local timezone, one per day, with generic copy that never names the theme
+ * (see getReminderCopy).
  * The OS delivers them even when the app is closed; the app only needs to be
  * opened occasionally so the window can be topped back up via resync.
  *
@@ -72,7 +72,7 @@ export function getNext8amDates(count: number, now: Date = new Date()): Date[] {
 /**
  * Notification copy for a reminder firing at `fireAt`.
  *
- * Deliberately says nothing about the theme, though it used to. These notifications are
+ * Deliberately says nothing about the theme. These notifications are
  * scheduled up to REMINDER_WINDOW_DAYS ahead and the OS holds the text as written, so a
  * curated theme published for a date already inside someone's queue would push a stale name
  * — the app would say "Crowns & Coronations" while the notification said "Medicine". Resync
@@ -82,7 +82,7 @@ export function getNext8amDates(count: number, now: Date = new Date()): Date[] {
  * Naming the theme was worth less than being able to schedule a theme for tomorrow, so the
  * copy is generic and the calendar is free.
  *
- * `fireAt` is still taken so callers keep a per-slot shape and this can vary again later.
+ * `fireAt` is taken so callers keep a per-slot shape and the copy can vary by slot.
  */
 export function getReminderCopy(_fireAt: Date): { title: string; body: string } {
   return {

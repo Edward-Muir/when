@@ -179,7 +179,7 @@ describe('difficulty badges', () => {
 // --- Config consistency ---
 
 describe('findAchievementConfigMismatches', () => {
-  it('reports no gaps once category cards exist (Phase 3)', () => {
+  it('reports no gaps between achievement cards and their tests', () => {
     const { missingTests, missingCards } = findAchievementConfigMismatches();
     expect(missingTests).toEqual([]);
     expect(missingCards).toEqual([]);

@@ -61,15 +61,15 @@ not yet illustrated; `foothold` = band 0, the cards the opening hand depends on.
 |   2011 | `tohoku-earthquake`           |                |
 |   2023 | `turkey-syria-earthquake`     |                |
 
-Bands and spread move whenever the catalogue does, so read them rather than trusting this
-note. While the eight new cards are unillustrated they are invisible to a bare run:
+Eight of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **7**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated> \
-  --include-pending --extra <staging>/upheaval.json
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At the time of writing: size 36, bins 8/8 `[5 5 3 5 5 4 3 6]`, band 0 = 7, same-year pairs 0.
 
 ## Why the footholds are the footholds
 

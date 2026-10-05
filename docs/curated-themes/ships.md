@@ -65,16 +65,15 @@ Two edges were argued rather than assumed:
 |  1966 | `caspian-sea-monster-flies`         | NEW            |
 |  2021 | `yara-birkeland-launches`           | NEW            |
 
-24 of the 35 are new. Measured against the merged catalogue: size **35**, band 0 **6**, bins **8/8** (advisory), same-year pairs **0**.
+24 of the 35 were authored for this theme.
 
-24 of the 35 are new.
+Gates: size **35**, band 0 **6**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
+```bash
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
-node scripts/theme-gap.js --include-pending --extra staging/ships.json --slugs <the 35 above>
-```
-
-At authoring time, with the new cards loaded via `--include-pending --extra`: size **35**,
-bins **8/8**, band 0 **6**, same-year pairs **0**.
 
 ## Why the footholds are the footholds
 
@@ -128,8 +127,8 @@ date kept, discrepancy noted rather than silently resolved.
 
 **Out of scope from the start.** Shipwrecks and underwater exploration (The Deep's territory);
 any of Cook's, Magellan's or Columbus's voyages, since the point there is the discovery, not
-the ship; pirate-era vessels from the in-flight `pirates.json` staging file, since piracy is
-about who commanded a ship, not what kind of ship it was.
+the ship; pirate-era vessels (Pirates & Privateers' territory), since piracy is about who
+commanded a ship, not what kind of ship it was.
 
 ## Still missing from the catalogue
 

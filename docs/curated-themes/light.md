@@ -26,7 +26,7 @@ is on for lighting Buffalo, not for the turbines.
 
 ## The 35
 
-Paste `eventNames` from `light.theme.json` into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |  Year | Slug                          |          |     |
 | ----: | ----------------------------- | -------- | --- |
@@ -66,13 +66,14 @@ Paste `eventNames` from `light.theme.json` into the workflow's `theme` input.
 |  1994 | `blue-led`                    |          | NEW |
 |  2007 | `incandescent-bulb-phase-out` |          | NEW |
 
-22 of the 35 are new, so **the theme cannot be dealt until the image pipeline has run over
-them** — `loadAllEvents` hides an unillustrated event and the publish validator only ever sees
-playable ones. Re-measure once the art lands, and read the current figures from the catalogue
-rather than from here:
+22 of the 35 were authored for this theme.
+
+Gates: size **35**, band 0 **6**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 35 above, comma-separated>
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
 
 ## Why the footholds are the footholds

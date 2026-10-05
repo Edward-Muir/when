@@ -9,9 +9,9 @@ interface LeaderboardSkeletonProps {
 /**
  * Placeholder rows for a leaderboard that is still loading.
  *
- * Shared by both surfaces so they load the same way. The game-over popup used to show a single
- * "Loading leaderboard..." line instead, which meant the card grew by several hundred pixels the
- * moment the data landed — the jump read as something being wrong.
+ * Shared by both surfaces so they load the same way. A single "Loading leaderboard..." line
+ * would let the card grow by several hundred pixels the moment the data lands — the jump reads
+ * as something being wrong.
  */
 const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant = 'full' }) => {
   const compact = variant === 'compact';

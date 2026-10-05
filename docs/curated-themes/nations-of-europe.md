@@ -71,15 +71,15 @@ Paste as `eventNames` into the workflow's `theme` input.
 | 1993 | Slovakia       | `slovakia-becomes-independent`       |          | NEW |
 | 2006 | Montenegro     | `montenegro-independence`            |          |     |
 
-23 of the 35 were authored for this theme; the catalogue only ever held the other 12. Read the
-current band and spread figures from the catalogue rather than from here — a card's band moves
-whenever the catalogue around its year does:
+23 of the 35 were authored for this theme; the catalogue held the other 12.
+
+Gates: size **35**, band 0 **6**, bins **7/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 35 above, comma-separated>
+npm run theme:gap -- --slugs <the 35 above, comma-separated>
 ```
-
-At authoring time: size 35, bins 7/8, band 0 = 6, same-year pairs 0.
 
 ## Why the footholds are the footholds
 

@@ -20,7 +20,7 @@ const BRAND = 'When?';
  *
  * It names the mechanic rather than an abstract "score" so the whole message shares one
  * vocabulary — this line, `DESCRIPTOR` and the `Timeline of N` stat line all say "timeline",
- * and the in-game "How to Play" modal already says "Build the longest timeline!".
+ * and the How to Play modal (menu) already says "Build the longest timeline!".
  */
 const SCORE_CTA = 'Can you make a longer timeline?';
 
@@ -77,10 +77,9 @@ export function formatShareDate(isoDate: string): string {
 /**
  * Emoji grid from placement history.
  *
- * No longer part of the share text — it was a flat run of greens with at most `handSize`
- * reds, restating the number on the line below it and growing longer the better you
- * played. It is still stored on the daily result and submitted to the leaderboard, which
- * renders it, so this stays.
+ * Not part of the share text: a flat run of greens with at most `handSize` reds restates
+ * the score and grows longer the better you play. It is stored on the daily result and
+ * submitted to the leaderboard, which validates it against the counts.
  */
 export function generateEmojiGrid(placementHistory: boolean[]): string {
   return placementHistory.map((correct) => (correct ? '🟩' : '🟥')).join('');
@@ -106,10 +105,9 @@ function composeShareText(headline: string, lines: string[], url: string): strin
 /**
  * The two forms every share needs.
  *
- * The card and the caption used to say the same thing twice — the message repeated the
- * date, the score, the rank and the URL that were all already burned into the image, so
- * it did no work at all. They now split the job: the image is the receipt, the caption is
- * identity plus the link.
+ * The card and the caption split the job: the image is the receipt (date, score, rank and
+ * URL are burned into it), the caption is identity plus the link. Repeating the receipt in
+ * the caption would do no work at all.
  *
  * That split only holds while the image actually travels. `shareContent`'s lower tiers
  * fall back to text alone and then to the clipboard, and on those paths a stats-free
@@ -171,10 +169,9 @@ export function generateDailyShareText(facts: DailyShareFacts): ShareMessage {
  * Generate the share text based on game mode and results.
  *
  * Only the daily is named, because it is the only thing a recipient can go and play a
- * shared instance of. A non-daily game carries no mode label at all: the internal
- * `suddenDeath` name never surfaced, and its old "Marathon" label implied a choice of
- * rule-sets that the UI does not offer — everything that is not the daily is a Custom
- * game. Do not reintroduce a mode word here.
+ * shared instance of. A non-daily game carries no mode label: the internal `suddenDeath`
+ * name never surfaces, and a mode word would imply a choice of rule-sets the game does not
+ * offer. Do not add one here.
  */
 export function generateShareText(state: WhenGameState): ShareMessage {
   const { gameMode, placementHistory, lastConfig, players, winners, roundNumber } = state;
@@ -330,9 +327,9 @@ export async function shareResults(
   const date = lastConfig?.dailySeed || getLocalDateString();
 
   // The rank only exists once the player has submitted, and only the daily has one. Passing
-  // it here is what stops a game-over share being weaker than the home screen's: this path
-  // used to omit it entirely, so it produced a rankless card even while the popup on screen
-  // was showing "#22 globally".
+  // it here is what stops a game-over share being weaker than the home screen's: without it
+  // this path would produce a rankless card even while the popup on screen shows
+  // "#22 globally".
   const shareText = isDaily
     ? generateDailyShareText({ date, correctCount, leaderboardRank })
     : generateShareText(state);
@@ -380,7 +377,7 @@ export async function shareApp(): Promise<boolean> {
 }
 
 /**
- * Share daily result from stored data (for completed daily on mode select screen).
+ * Share daily result from stored data (for a completed daily on the home screen).
  *
  * `seedEvent` is today's pre-placed card — the same one the home screen previews — and is
  * used as the story-card art. Returns true if copied to clipboard (toast should be shown).

@@ -31,7 +31,7 @@ named after games, so they are out.
 
 ## The 36
 
-Paste `eventNames` from `games.theme.json` into the workflow's `theme` input.
+The ready-to-paste workflow input is in [publish-inputs.md](publish-inputs.md).
 
 |  Year | Slug                              |          |     |
 | ----: | --------------------------------- | -------- | --- |
@@ -72,17 +72,15 @@ Paste `eventNames` from `games.theme.json` into the workflow's `theme` input.
 |  2007 | `chinook-solves-checkers`         |          | NEW |
 |  2016 | `alphago-beats-lee-sedol`         |          |     |
 
-15 of the 36 are new and need art before the daily can deal them. Read the current band and
-spread figures from the catalogue rather than from here — a card's band moves whenever the
-catalogue does:
+15 of the 36 were authored for this theme.
+
+Gates: size **36**, band 0 **7**, bins **8/8** (advisory), same-year pairs **0**. No pair sits
+inside 8 years. A card's band moves whenever the catalogue around its year does, so re-measure
+rather than trust these figures:
 
 ```bash
-node scripts/theme-gap.js --slugs <the 36 above, comma-separated> \
-  --include-pending --extra <staging>/games.json
+npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At the time of writing: size 36, bins 8/8 `[7 6 4 4 4 2 5 4]`, band 0 = 7, same-year pairs 0,
-no pair inside 8 years.
 
 ## Why the footholds are the footholds
 

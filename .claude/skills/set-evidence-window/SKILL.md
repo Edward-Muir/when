@@ -14,11 +14,11 @@ Background, in order of usefulness:
 [docs/gameplay-feel/index.md](../../../docs/gameplay-feel/index.md) (the placement rule and why
 the obvious version of it is unsound), and
 [docs/events-images/catalogue-error-backlog.md](../../../docs/events-images/catalogue-error-backlog.md)
-(what reading 5,460 records against sources actually turned up).
+(every known catalogue error and how it was resolved).
 
 ## The default is no window
 
-**Most events are a moment and must stay a single year.** Around 95% of the catalogue carries no
+**Most events are a moment and must stay a single year.** Nearly 90% of the catalogue carries no
 `year_end` and that is the correct state. A window invented for a card the record does date makes
 that card placeable almost anywhere on the board, which is worse for the player than no window at
 all — and nothing downstream can catch it. There is no test, no build step and no validator that
@@ -31,10 +31,9 @@ A batch that comes back with two or three windows out of forty is a normal, good
 Find the two ends from the record **independently**, then write both. Do not take the stored year
 as fixed and bolt an end onto it.
 
-This is the mistake the first pass made across the whole catalogue, and it has a measured shape:
-when the rule was corrected, **108 of the 130 moved years moved earlier and only 22 later**. A
-round stored year usually understates the earliest evidence. Four cards were filed as unfixable
-purely because a range could only extend forwards; all four are windows now.
+Extending forward from the stored year is the easy mistake, and it has a measured shape: of 130
+years moved to a window's sourced start, **108 moved earlier and only 22 later**. A round stored
+year usually understates the earliest evidence, and a forward-only range cannot fix it.
 
 If the window starts before the stored year, move `year` too — see _Moving `year`_ below.
 
@@ -98,7 +97,7 @@ invented one.
 
 ### When WebSearch is exhausted, fetch instead
 
-A session shares one WebSearch budget across every agent in it, and a large sweep runs it dry.
+A session shares one WebSearch budget across every agent in it, and a large batch runs it dry.
 When that happens, `WebSearch` returns "this session has used its web search budget" and
 **WebFetch still works** — it draws on no such budget. Fetch the English Wikipedia article
 directly:
@@ -158,8 +157,9 @@ The offset is ~2,000 years: noise at Palaeolithic scale, real at Holocene scale.
 - **Follow whichever convention the card already uses.** Do not half-fix it, and do not silently
   shift a stored year by 2,000 because you spotted the conflation.
 - A Holocene-scale case is worth proposing as a `year` move with the conversion spelled out in
-  the `reason`. `woolly-mammoth-extinction` was stored -4000 for a Wrangel Island population that
-  ended ~4,000 years _ago_, i.e. c. 2000 BCE — a 2,000-year error, now a -3700..-1950 window.
+  the `reason`. `woolly-mammoth-extinction` is the precedent: its Wrangel Island population ended
+  ~4,000 years _ago_, i.e. c. 2000 BCE, so a stored -4000 is a 2,000-year error. It is a
+  -3700..-1950 window.
 
 ## Entry format
 

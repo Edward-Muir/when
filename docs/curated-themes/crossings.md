@@ -70,15 +70,13 @@ Paste as `eventNames` into the workflow's `theme` input. `foothold` marks a band
 | 2004 | `millau-viaduct`            |               |
 | 2016 | `gotthard-base-tunnel`      |               |
 
-Read the current band and spread figures from the catalogue rather than from here — a card's
-band moves whenever the catalogue does, because it depends on how crowded the neighbourhood
-around its year is:
+Gates: size **36**, band 0 **11**, bins **8/8** (advisory), same-year pairs **0**. A card's band
+moves whenever the catalogue around its year does, so re-measure rather than trust these
+figures:
 
 ```bash
 npm run theme:gap -- --slugs <the 36 above, comma-separated>
 ```
-
-At authoring time: size 36, bins 8/8 `[5 5 5 4 6 4 3 4]`, band 0 = 11, same-year pairs = 0.
 
 ## Why the footholds are the footholds
 

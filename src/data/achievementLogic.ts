@@ -1,7 +1,7 @@
 /**
  * Hand-authored achievement unlock logic, keyed by the same ids as `ACHIEVEMENTS`
- * in `achievements.ts`. Kept SEPARATE from that file (which is nominally CSV-generated)
- * so these tests are never clobbered by a regenerate.
+ * in `achievements.ts`. Kept separate from that file, which holds only the catalogue (names,
+ * tiers, criteria copy and badge art).
  *
  * Design (see docs/stats-achievements/index.md): every test is a
  * pure predicate over a read-time `StatsSnapshot` plus a name->event map. Per-category and
@@ -191,8 +191,8 @@ for (const category of ALL_CATEGORIES) {
  * Dev-only consistency check: every achievement card should have a test and vice-versa.
  * Returns the symmetric difference between card ids and test ids.
  *
- * As of Phase 3 (20 `cat-*` cards replace the stale 7) this should report empty. Any
- * non-empty result is now a real bug: a card missing logic, or logic missing a card.
+ * There is one `cat-*` card per category (21), each with its test, so this reports empty. Any
+ * non-empty result is a real bug: a card missing logic, or logic missing a card.
  */
 export function findAchievementConfigMismatches(): {
   missingTests: string[];

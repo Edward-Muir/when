@@ -8,9 +8,9 @@
  *   node scripts/events/detail-apply.js --dry-run
  *
  * Input is one or more `slug -> { paragraphs: [...] }` maps in `untracked_data/event-detail/`
- * (gitignored). This is the house pattern from `date-clues-apply.js` and `shorten-names-apply.js`,
- * and it exists because parallel agents editing a shared 600 KB JSON array corrupt it: sub-agents
- * write maps, one deterministic pass writes the catalogue.
+ * (gitignored). This is the house pattern from `date-clues-apply.js`, and it exists because
+ * parallel agents editing a shared 600 KB JSON array corrupt it: sub-agents write maps, one
+ * deterministic pass writes the catalogue.
  *
  * Everything is validated before anything is written. A single bad entry aborts the whole run,
  * so a half-applied batch is not a state you can reach.
