@@ -39,7 +39,7 @@ function restoreSelection<T>(saved: T[] | undefined, all: readonly T[]): T[] {
 export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
   const [savedSettings] = useState(() => getCustomSettings());
 
-  // Play settings. The players and hand-size controls are hidden for now, but their setters
+  // Play settings. The players and hand-size controls are hidden, but their setters
   // are still wired so the Share Game Settings code input can apply a decoded code to all
   // settings.
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(
@@ -66,14 +66,15 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
   // Offered countries come from the whole catalogue, most-tagged first.
   const countryOptions = useMemo(() => countryOptionsByRegion(allEvents), [allEvents]);
 
-  // Player settings (the players UI is hidden; `playerNames` is unused until it returns)
+  // Player settings (the players UI is hidden; `playerNames` is unused while it is hidden)
   const [playerCount, setPlayerCount] = useState(savedSettings?.playerCount ?? 1);
   const [playerNames] = useState<string[]>(['', '', '', '', '', '']);
 
-  // Hand size setting (3-8 cards) - default varies by player count
+  // Persisted with the settings but not read by Custom games: only the daily deals
+  // `cardsPerHand` (DAILY_HAND_SIZE), and every other game deals `suddenDeathHandSize`.
   const [cardsPerHand, setCardsPerHand] = useState(savedSettings?.cardsPerHand ?? 7);
 
-  // Sudden death hand size (1-7 cards, acts as "lives")
+  // Hand size for Custom games (1-8): the cards dealt, and so the misses allowed.
   const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(
     savedSettings?.suddenDeathHandSize ?? 5
   );

@@ -11,8 +11,7 @@ type Mode = 'mixed' | 'unlocked' | 'locked';
 
 /**
  * Dev-only harness (route: /cards-preview) for iterating on the achievement-card
- * look before the real achievements page + stats tracking are built. Not linked
- * from the game UI.
+ * look in unlocked, locked and mixed states. Not linked from the game UI.
  */
 const CardsPreview: React.FC = () => {
   const { isDark, toggleTheme } = useTheme();

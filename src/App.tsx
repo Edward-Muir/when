@@ -163,9 +163,9 @@ function App({
   const [introDate] = useState(() => getLocalDateString());
   const [introRotation, setIntroRotation] = useState(0);
 
-  // The intro shows names and years, i.e. answers. Keep today's daily deck out of it: a
-  // collision used to be a ~1-in-20 fluke for one player, but a deterministic intro would
-  // spoil the same leaderboard-scored puzzle for everyone, on every replay. Excluding after
+  // The intro shows names and years, i.e. answers. Keep today's daily deck out of it: the
+  // intro is a shared week-seeded pool, so a collision would spoil the same
+  // leaderboard-scored puzzle for everyone, on every replay. Excluding after
   // the pool is drawn means replacements come from the same pool, so the budget is untouched.
   //
   // A curated day is excluded in full rather than to the usual depth, and so is any other

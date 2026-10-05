@@ -17,11 +17,10 @@ interface Props {
 
 /**
  * Achievements, inline at the bottom of the Stats page: the unlocked badges (most recent
- * first) and a "Show all" expander that reveals the locked ones. Replaces the standalone
- * Achievements page, which nobody found in the burger menu.
+ * first) and a "Show all" expander that reveals the locked ones.
  *
- * Two rules keep this from stalling the home pager, learned when the full grid was a tab of
- * its own (60 cards of real event art plus an image burst, mounted mid-swipe on iOS):
+ * Two rules keep this from stalling the home pager (the full grid is 60 cards of real event
+ * art; mounted mid-swipe with its image burst, it stalls iOS):
  * - the locked grid is mounted only while expanded, never pre-rendered;
  * - art is warmed only for the unlocked badges, and only once the tab is actually on screen
  *   (the pager pre-mounts this panel at idle for every home-screen visitor). Expanding warms

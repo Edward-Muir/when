@@ -21,8 +21,8 @@ describe('isDateWithinSubmissionWindow', () => {
   });
 
   it('accepts the earliest honest submission: UTC+14 opening its day', () => {
-    // Kiritimati (UTC+14) starts its Aug 13 at 2026-08-12T10:00Z. Under the old exact-match
-    // check that submission was rejected outright.
+    // Kiritimati (UTC+14) starts its Aug 13 at 2026-08-12T10:00Z. An exact-match check
+    // against the UTC date would reject that submission outright.
     expect(isDateWithinSubmissionWindow('2026-08-13', new Date('2026-08-12T10:00:00Z'))).toBe(true);
   });
 

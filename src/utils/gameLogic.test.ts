@@ -78,10 +78,10 @@ describe('eventEnd clamping', () => {
 });
 
 /**
- * The licence to ship the rule change ahead of any data: on a point-only timeline the
- * running-bound predicate must reproduce the old neighbour rule exactly.
+ * On a point-only timeline the running-bound predicate must reproduce the neighbour rule
+ * exactly.
  */
-describe('regression: point-only timelines behave exactly as before', () => {
+describe('regression: point-only timelines reduce to the neighbour rule', () => {
   const oldRule = (timeline: HistoricalEvent[], event: HistoricalEvent, i: number) => {
     const left = i > 0 ? timeline[i - 1] : null;
     const right = i < timeline.length ? timeline[i] : null;
@@ -100,7 +100,7 @@ describe('regression: point-only timelines behave exactly as before', () => {
   ];
   const candidates = [-4500000000, -3000, -1000, -500, 0, 500, 1066, 1800, 1850, 1900, 2001, 30000];
 
-  it('agrees with the old neighbour rule on every timeline, gap and candidate', () => {
+  it('agrees with the neighbour rule on every timeline, gap and candidate', () => {
     for (const timeline of timelines) {
       for (const year of candidates) {
         const card = ev('candidate', year);

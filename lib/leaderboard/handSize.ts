@@ -5,7 +5,7 @@
  * `api/tsconfig.json` is a separate project — the same reason `SUBMISSION_DEDUPE_TTL_SECONDS`
  * is duplicated in `dateWindow.ts`. If the daily's hand size ever changes, change it here too.
  *
- * The daily's hand size is fixed. Custom games let the player pick one (it acts as lives), but
+ * The daily's hand size is fixed. Custom games can deal a different size (the misses allowed), but
  * those never reach the leaderboard, so this bound only has to describe the daily.
  *
  * This is the mistake count of nearly every completed daily: a wrong placement discards the

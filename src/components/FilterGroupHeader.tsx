@@ -34,9 +34,8 @@ const ACTION_CLASS =
 
 /**
  * A filter group's header: its label and selected count on the left, Select all and Clear on
- * the right. They used to be a bare `All` / `n/N` label that looked like a control and wasn't,
- * and the only shortcut was an undiscovered double-tap. The buttons are verbs so they can't be
- * read as a status. Each is disabled when it would change nothing.
+ * the right. The buttons are verbs so they can't be read as a status (a bare `All` / `n/N`
+ * label looks like a control and isn't). Each is disabled when it would change nothing.
  *
  * The 44px button height (`index.css`) is pulled into the spacing around the header by `-my-2`,
  * so the header stays a line tall without shrinking the tap targets. The label wraps rather

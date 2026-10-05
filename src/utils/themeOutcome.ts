@@ -3,7 +3,7 @@ import { DAILY_HAND_SIZE } from './dailyConfig';
 import { getCuratedThemeIdForConfig } from './themeReplay';
 
 /**
- * Whether a finished game on a curated theme ran out of cards rather than out of lives.
+ * Whether a finished game on a curated theme ran out of cards rather than ending on misses.
  *
  * The game deals a hand and ends when that hand empties. The hand shrinks on a wrong
  * placement, which discards without drawing — and also on a *correct* one when the deck has
@@ -33,8 +33,10 @@ const NOT_A_THEME: ThemeOutcome = { survived: false, perfect: false };
 export function getThemeOutcome(state: WhenGameState): ThemeOutcome {
   const { lastConfig, players, placementHistory } = state;
 
-  // Multiplayer has round reprieves and eliminations, so "the hand emptied" no longer implies
-  // a fixed mistake count. No UI reaches it, but the arithmetic below would be wrong there.
+  // Multiplayer has round reprieves and eliminations, so "the hand emptied" does not imply a
+  // fixed mistake count. No menu builds a multiplayer game, but a challenge code with
+  // playerCount > 1 does; a curated replay is always single-player. The arithmetic below would
+  // be wrong there.
   //
   // Optional chaining because callers legitimately hand this partial state — buildDailyResult
   // is reached from tests and from a game that ended before players were seated.

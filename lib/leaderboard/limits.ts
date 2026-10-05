@@ -9,7 +9,8 @@
  * in `safeDisplayName` start to matter. The degradation order when that day comes is:
  * lean on the `truncated` flag to say so honestly in the UI first, and only then reach for
  * windowing on the client. Don't add shared/CDN caching to make a bigger payload cheaper —
- * the response body varies per device by design (see the shadowban note in [date].ts).
+ * the response body varies per device by design (see "A player always sees the name they
+ * typed" in [date].ts).
  */
 export const DEFAULT_LIMIT = 100;
 export const MAX_LIMIT = 500;

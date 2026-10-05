@@ -8,9 +8,9 @@ export const INTRO_EVENT_COUNT = 20;
 /**
  * How many distinct catalogue images the intro animation is allowed to touch in a week.
  *
- * This is a hard cost control, not a tuning knob. The intro is decorative, but it used to
- * draw its 20 cards uniformly at random from all 5,291 events on every entry to modeSelect
- * — so its ceiling was the whole catalogue, and each first-ever delivery URL mints a derived
+ * This is a hard cost control, not a tuning knob. The intro is decorative, but drawing its
+ * 20 cards uniformly at random from the whole catalogue on every entry to modeSelect would
+ * make its ceiling the whole catalogue, and each first-ever delivery URL mints a derived
  * asset (billed as a transformation, x3 formats on this account). Bounding the pool makes
  * the cost `POOL_SIZE x rungs x formats` per rotation — flat, and independent of traffic.
  * At 60/week that's ~783 transformations/month against a 25,000/month allowance.

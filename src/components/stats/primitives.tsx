@@ -2,7 +2,7 @@ import React from 'react';
 
 /**
  * The stats page's building blocks: a bordered surface card, an uppercase section heading,
- * and the icon-tile stat row that `StatsPopup` and the old panel both drew.
+ * and the icon-tile stat row that `StatsPopup` also draws.
  */
 
 export const iconClass = 'h-5 w-5 text-text-muted';

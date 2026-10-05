@@ -11,8 +11,7 @@ const SUBMITTED_KEY = 'when-leaderboard-submitted';
 
 // playerStorage stamps the submitted-marker with today's *local* date, so the two expectations
 // that read it have to move with the clock. RESULT.date below is only ever a board key, which is
-// why it can stay a literal. The literal that used to be here passed for one evening: the suite
-// landed at 23:46 Pacific on 2026-08-15 and failed every run after midnight.
+// why it can stay a literal. A literal TODAY would pass only until the next local midnight.
 const TODAY = getLocalDateString();
 
 const RESULT: DailyResult = {

@@ -69,7 +69,7 @@ afterEach(() => {
 });
 
 describe('pickHint', () => {
-  it('orders drag > wrong > correct > tapCard > stats > swap', () => {
+  it('orders drag > wrong > closeEnough > correct > tapCard > stats > swap', () => {
     expect(pickHint(['swap', 'correct'])).toBe('correct');
     expect(pickHint(['correct', 'wrong', 'swap'])).toBe('wrong');
     expect(pickHint(['swap', 'drag'])).toBe('drag');

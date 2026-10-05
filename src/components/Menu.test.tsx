@@ -54,7 +54,7 @@ describe('Menu', () => {
     expect(onClose).toHaveBeenCalled();
   });
 
-  it('no longer lists Achievements or My Timeline — both are home tabs now', () => {
+  it('does not list Achievements or My Timeline — both are home tabs', () => {
     renderMenu();
     expect(screen.queryByRole('link', { name: /achievements/i })).toBeNull();
     expect(screen.queryByRole('link', { name: /my timeline/i })).toBeNull();

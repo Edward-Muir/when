@@ -5,12 +5,12 @@ import Modal from './Modal';
 
 /**
  * The dismissal matrix is the part of `Modal` worth pinning: every popup picks one of these
- * four modes, and getting one wrong is silent — the popup still renders, it just becomes
+ * three modes, and getting one wrong is silent — the popup still renders, it just becomes
  * escapable (or inescapable) in a way nobody notices until a player is stuck or skips a step.
  *
- * `canDismiss` in particular guards a real regression: the daily game-over popup must not be
- * dismissable until the leaderboard submit resolves, and ESC used to slip past that gate while
- * the backdrop was correctly blocked.
+ * `'locked'` in particular guards a real regression: the daily game-over popup must not be
+ * dismissable until the leaderboard submit resolves, so ESC must be blocked as well as the
+ * backdrop.
  */
 
 const backdrop = () => screen.getByTestId('modal-backdrop');

@@ -119,9 +119,9 @@ function submitErrorMessage(error: string): string {
  * The leaderboard block inside the daily game-over popup: the top of today's board, and either
  * the player's placing or the form to claim it.
  *
- * Presentational — all leaderboard state lives in `useDailyLeaderboard`, owned by `Game`. It used
- * to hold its own `useLeaderboard` instance and report upward through `onSubmitted` /
- * `onRankResolved` callbacks, which is how the popup's submit gate could get permanently stuck.
+ * Presentational — all leaderboard state lives in `useDailyLeaderboard`, owned by `Game`. Giving
+ * it its own `useLeaderboard` instance that reports upward through callbacks would let the
+ * popup's submit gate get permanently stuck.
  */
 const LeaderboardSubmit: React.FC<{ leaderboard: DailyLeaderboard }> = ({ leaderboard }) => {
   const { entries, isLoading, rank, totalPlayers, playerEntry, submitted } = leaderboard;

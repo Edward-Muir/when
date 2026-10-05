@@ -63,8 +63,8 @@ describe('Leaderboard', () => {
     expect(screen.getByText('Player 23')).toBeInTheDocument();
   });
 
-  // The whole card used to carry onClick={onClose} alongside the backdrop, so any tap inside
-  // it dismissed the board. Invisible at five rows; unusable once the list scrolls.
+  // If the whole card carried onClick={onClose} alongside the backdrop, any tap inside it would
+  // dismiss the board. Invisible at five rows; unusable once the list scrolls.
   it('does not close when a row inside the sheet is clicked', () => {
     const { onClose } = renderBoard();
 

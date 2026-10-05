@@ -50,14 +50,11 @@ describe('getReminderCopy', () => {
   });
 
   /**
-   * The copy used to name the day's theme, and two tests here checked it named the LOCAL
-   * date's theme rather than the UTC one. It no longer names a theme at all.
-   *
    * These notifications are scheduled up to REMINDER_WINDOW_DAYS ahead and the OS keeps the
    * text as written, so any theme name in the body is a promise about a date that may not
    * have been decided yet. Curated themes can be published as late as the day before, which
-   * would leave a queued notification announcing the theme the date used to have. Generic
-   * copy is what buys that scheduling freedom, so this asserts the coupling stays gone.
+   * would leave a queued notification announcing a theme the date no longer has. Generic
+   * copy is what buys that scheduling freedom, so this asserts the copy names no theme.
    */
   it('does not name a theme, so a late-published theme cannot contradict it', () => {
     const fireAt = new Date(2026, 6, 9, 8, 0);

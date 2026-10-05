@@ -343,9 +343,9 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     // 42px floor: the longest names in the catalogue (35 chars) settle around 46px, so
     // the floor is headroom rather than something reached in practice.
     //
-    // The year is deliberately absent. It used to sit on a line below this one, and
-    // printing it made the share completely legible: score, rank, event, year, link — a
-    // recipient could read the whole thing and had no reason to ask about any of it.
+    // The year is deliberately absent. Printing it would make the share completely
+    // legible: score, rank, event, year, link — a recipient could read the whole thing and
+    // would have no reason to ask about any of it.
     // Withholding it is the one lever this card has on Wordle's actual mechanism, where a
     // grid you cannot decode is what makes someone ask what the game is. The in-game seed
     // card still shows its year; only this render omits it.

@@ -10,8 +10,8 @@ interface GameOverControlsProps {
   onShowToast: () => void;
   /**
    * False while the game-over popup is open — it carries its own, better-sequenced share, and
-   * two identical Share buttons on screen at once is what this bar used to look like. This
-   * one is the fallback for after the popup is dismissed.
+   * two identical Share buttons on screen at once would be confusing. This one is the
+   * fallback for after the popup is dismissed.
    */
   showShare?: boolean;
 }

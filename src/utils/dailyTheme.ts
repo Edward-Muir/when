@@ -177,7 +177,7 @@ export function getThemedCategories(theme: DailyTheme): Category[] {
 
 /**
  * Get the selected eras based on the daily theme
- * Always returns all eras (daily mode no longer filters by era)
+ * Always returns all eras (the daily does not filter by era)
  */
 export function getThemedEras(_theme: DailyTheme) {
   return [...ALL_ERAS];

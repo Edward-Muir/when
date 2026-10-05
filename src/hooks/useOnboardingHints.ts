@@ -236,12 +236,11 @@ function hintDurationMs(key: SettleHintKey): number {
  *    already changed by the time `swap` is shown. The "they swapped, hide it" effect
  *    therefore compares against `swapCardRef`, baselined at the instant `swap` is shown — not
  *    against last render's value, which would kill the hint the moment it appeared.
- * 4. **The bug this replaces.** `swap` used to hang off a `swapEligible` boolean feeding a
- *    1.5 s cooldown timer, whose effect cleanup cancelled and restarted the timer every time
- *    that boolean flipped — which it did on every drag frame and animation transition, so the
- *    quiet gap essentially never arrived and the hint never fired in real play. Only two
- *    `setTimeout`s remain: the idle nudge's (its gate flips at most once per install) and the
- *    hide timer inside `show()`. Don't reintroduce a timer gated on a churning boolean.
+ * 4. **No timer gated on a churning boolean.** A cooldown timer whose effect cleanup restarts
+ *    it every time an eligibility boolean flips — which happens on every drag frame and
+ *    animation transition — never reaches its quiet gap, so the hint never fires in real
+ *    play. There are two `setTimeout`s: the idle nudge's (its gate flips at most once per
+ *    install) and the hide timer inside `show()`.
  */
 export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHints {
   const {

@@ -11,8 +11,8 @@ const redis = Redis.fromEnv();
  * describes puzzles that are about to be public anyway.
  *
  * Shared-cached ON PURPOSE, which is the opposite of api/leaderboard/[date].ts. That
- * response varies per device (see the shadowban note there) so caching it would leak one
- * player's view to another; this one is byte-identical for every caller, so the CDN can
+ * response varies per device (see "A player always sees the name they typed" there), so
+ * caching it would leak one player's view to another; this one is byte-identical for every caller, so the CDN can
  * absorb essentially all reads and Upstash command volume stays flat no matter how many
  * people are playing. Do not "fix" one of these to match the other.
  *
@@ -35,7 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   } catch (error) {
     console.error('Failed to read theme calendar', error);
     // An empty calendar means "no curated day", which is the safe answer: every date falls
-    // through to the seeded category theme, exactly as before curated themes existed.
+    // through to the seeded theme.
     res.setHeader('Cache-Control', 'no-store');
     return res.status(200).json(EMPTY_CALENDAR);
   }

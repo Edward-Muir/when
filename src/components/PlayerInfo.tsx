@@ -232,7 +232,7 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
     </>
   );
 
-  // Wrap in tappable button for Sudden Death mode
+  // Wrap in tappable button for single-player
   if (showTimelineStats) {
     return (
       <button

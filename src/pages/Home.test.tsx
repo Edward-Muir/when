@@ -34,7 +34,7 @@ describe('HomeRoute', () => {
     expect(screen.getByText('App on home')).toBeInTheDocument();
   });
 
-  it('sends the retired Achievements path to the Stats tab', () => {
+  it('sends the /achievements path to the Stats tab', () => {
     renderAt('/achievements');
     expect(screen.getByText('App on stats')).toBeInTheDocument();
   });

@@ -9,14 +9,13 @@ import NextDailyCountdown from './NextDailyCountdown';
 /**
  * The last screen of the end-of-game sequence: gameOver → milestones → achievements → here.
  *
- * The share used to live inside the game-over popup, i.e. the *first* screen, so it went out
- * before the player knew what they had unlocked, and the genuinely final beat was a button in
- * the bottom bar nobody looks at. This is the finale instead, and it always renders — see
+ * The share is the finale rather than part of the game-over popup (the *first* screen), so
+ * it goes out after the player knows what they have unlocked. It always renders — see
  * `useEndOfGameSequence`.
  *
- * The daily's return hooks (reminder opt-in, next-daily countdown) moved here with it. They
- * are the "come back tomorrow" beat, so they belong on the last screen rather than three
- * screens earlier.
+ * The daily's return hooks (reminder opt-in, next-daily countdown) sit here too. They are the
+ * "come back tomorrow" beat, so they belong on the last screen rather than three screens
+ * earlier.
  *
  * No preview of the story card: rendering it would mean a `renderShareCard` canvas pass on
  * every single game over rather than only when someone actually taps Share, and this surface

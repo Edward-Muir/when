@@ -4,11 +4,10 @@ import { GamePhase, GamePopupType } from '../types';
 /**
  * The end-of-game screens, in the order they are shown.
  *
- * `share` is deliberately last and deliberately unconditional. It used to sit *inside* the
- * game-over popup, which is the first screen — so a player shared before finding out what
- * they had unlocked, and the genuinely last thing that happened was an unprominent button in
- * the bottom bar. Milestones and achievements only appear when there are any; the share
- * always ends the run, so the finale is the same screen every time.
+ * `share` is deliberately last and deliberately unconditional: inside the game-over popup (the
+ * first screen) a player would share before finding out what they had unlocked. Milestones
+ * and achievements only appear when there are any; the share always ends the run, so the
+ * finale is the same screen every time.
  */
 export type EndOfGameStep = 'milestones' | 'achievements' | 'share';
 
@@ -28,16 +27,14 @@ interface Options {
 }
 
 /**
- * The end-of-game screen queue.
- *
- * Before this, the chain was emergent from three hand-wired places: an effect watching the
- * popup-dismissal transition, `MilestonePopup`'s `onDismiss` reaching into achievement state,
- * and the daily's backdrop gate. Adding a fourth screen by hand would have made that worse,
- * so the queue the chain was imitating is now explicit.
+ * The end-of-game screen queue: the screens that follow the game-over popup, run in order
+ * from one explicit queue rather than hand-wired from screen to screen.
  *
  * **The game-over popup itself is not in the queue**, and that is on purpose. It lives on
- * `pendingPopup` in `useWhenGame`, and its dismissal is gated by `useBackdropDismiss` so the
- * daily cannot get past it without submitting to the leaderboard. Folding it in would mean
+ * `pendingPopup` in `useWhenGame`, and its dismissal is gated by `gameOverDismiss` in
+ * `GamePopup.tsx`: while a leaderboard submission is pending and possible the popup is
+ * `'locked'`, so the daily cannot get past it without submitting; if the board is unreachable
+ * the backdrop dismisses it; with nothing to submit any tap advances. Folding it in would mean
  * re-implementing that gate for no gain. So the flow is unified from the game-over popup
  * *onward* — this hook starts where that popup ends.
  */

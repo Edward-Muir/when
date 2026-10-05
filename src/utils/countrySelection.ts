@@ -142,13 +142,13 @@ export function toggleRegion(selection: RegionSelection, region: string): Region
 }
 
 /**
- * Picks in the model before exclusions (share codes and settings saved before 2026-10): a
- * picked country narrowed every region it belongs to, so each such region keeps only its picked
- * countries. A selected region with no pick stays whole.
+ * Picks in the older pick model (share codes and settings in that format): a picked country
+ * narrows every region it belongs to, so each such region keeps only its picked countries. A
+ * selected region with no pick stays whole.
  *
- * Exact for every pool but one corner: a transcontinental pick used to deal its other side's
- * events even when that region was not selected (Russia picked under Europe dealt Siberian
- * Russia). Now only selected regions deal anything.
+ * Exact for every pool but one corner: under picks, a transcontinental pick deals its other
+ * side's events even when that region is not selected (Russia picked under Europe deals
+ * Siberian Russia). The converted selection deals only selected regions.
  */
 export function legacyPicksToExclusions(
   regions: readonly string[],

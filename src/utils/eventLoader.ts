@@ -41,8 +41,8 @@ export function getSourceFile(name: string): string | null {
 }
 
 // Module-level cache. Events are static for a session, so the first successful load is
-// reused for the lifetime of the SPA — this is what lets a remount (e.g. navigating Home
-// from /stats or /achievements) start instantly instead of re-fetching and flashing the
+// reused for the lifetime of the SPA — this is what lets a remount (e.g. returning Home
+// from /daily or /support) start instantly instead of re-fetching and flashing the
 // loading screen. Only non-empty results are cached so a failed/empty load can still retry.
 let cachedEvents: HistoricalEvent[] | null = null;
 let inflight: Promise<HistoricalEvent[]> | null = null;

@@ -8,7 +8,7 @@ import { getThemeOutcome } from './themeOutcome';
  * The finished daily, in the shape the leaderboard API and the share both want.
  *
  * Lives here rather than in `playerStorage` so that module stays free of the share/theme
- * imports, and outside `GamePopup` because the game-over popup is no longer the only caller —
+ * imports, and outside `GamePopup` because the game-over popup is not the only caller —
  * `Game` needs it to drive `useDailyLeaderboard`.
  *
  * Returns null for anything that is not a completed daily. `dailySeed` is the load-bearing

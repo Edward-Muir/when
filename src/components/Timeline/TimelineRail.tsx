@@ -85,8 +85,8 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
         // No `initial`, `animate` or `exit`: binding the MotionValue directly means a segment
         // that mounts mid-flight paints at the length the end has RIGHT NOW and keeps moving.
         // Anything keyframed here would start it over from whatever this element happened to be
-        // born with, which is the whole bug — an `exit` used to be declared here and never ran,
-        // because nothing puts these rows in an AnimatePresence.
+        // born with. An `exit` would never run either: nothing puts these rows in an
+        // AnimatePresence.
         style={{ transformOrigin: origin, scaleY: scale } as CSSProperties}
       />
     </div>
@@ -94,8 +94,7 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
 };
 
 /**
- * The stub a retracting extension shrinks inside, once the ghost row that used to draw it is
- * gone.
+ * The stub a retracting extension shrinks inside, once the ghost row that drew it is gone.
  *
  * It cannot be the ghost row animating out. That row holds the dragged card, and the retract
  * only happens once the card has left the board — keeping the row alive would leave the card

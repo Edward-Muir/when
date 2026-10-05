@@ -54,7 +54,7 @@ const DAILY_EPOCH = '2026-06-28';
 const ISO_DATE = /^(\d{4})-(\d{2})-(\d{2})$/;
 
 /**
- * "2026-08-15" -> 49. The share's puzzle identifier, replacing the date it used to print.
+ * "2026-08-15" -> 49. The share's puzzle identifier, printed instead of the date.
  *
  * A number rather than a date because a shared image is a forwardable object: "Aug 15" is
  * stale by the next morning and duplicates the timestamp the chat app already stamps on

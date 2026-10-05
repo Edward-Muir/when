@@ -194,8 +194,8 @@ const Game: React.FC<GameProps> = ({
 
   // The daily leaderboard, owned here because three screens want it: the game-over popup shows
   // the board and the submit form, the popup's dismiss gate depends on whether the score is on
-  // it, and the share step prints the rank. One instance, read directly — it used to be owned
-  // by LeaderboardSubmit and reported upward through callbacks that could fall out of sync.
+  // it, and the share step prints the rank. One instance, read directly, rather than owned by
+  // LeaderboardSubmit and reported upward through callbacks that could fall out of sync.
   // A board being re-read has nothing to submit: its score is already on the board (or was
   // declined), so no result means `useDailyLeaderboard` stays idle.
   const dailyResult = useMemo(() => (state.isReview ? null : buildDailyResult(state)), [state]);

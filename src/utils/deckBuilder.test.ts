@@ -387,38 +387,18 @@ describe('the seven-day no-repeat guarantee', () => {
    *
    * This is the regression guard on that residual, not an endorsement of it.
    *
-   * The bound is headroom over a measured number, not a quality cliff, so it moves when
-   * the catalogue does. Adding the `sports` category took it from 7 to 9 over this
-   * window: `getDailyTheme` picks the themed category as `random() * ALL_CATEGORIES.length`,
-   * so a 21st category re-rolls which day is themed to what, and the decks land
-   * differently. The exact guarantee above still holds at 0 — only the residual moved.
+   * The bound is headroom over a measured number, not a quality cliff, and the number moves
+   * with the catalogue. Anything that changes which events exist, or any event's `year`,
+   * re-lands the decks: `difficultyScore` blends the label with how crowded the timeline is
+   * around each event, so re-dating one card re-scores its neighbours, and adding a category
+   * or a theme-menu entry re-rolls which day is themed to what. The exact guarantee above
+   * stays at 0 through all of it; only this residual moves. Correcting round-number guesses
+   * tends to lower it, because a less clustered catalogue suits the ramp's spacing kernel.
    *
-   * Correcting one event's `year` moves it too, for the same reason: `difficultyScore`
-   * blends the label with how crowded the timeline is around the event, so re-dating a
-   * card re-scores its neighbours and the ramp lands differently. Fixing
-   * `chickens-domesticated` from -6000 to -1500 (the 2022 PNAS re-dating) took this
-   * from 9 to 11, with the exact guarantee still at 0. Raised to 12 to keep the same
-   * headroom rather than sit on the bound.
-   *
-   * **Measured history of this number: 7, 9, 11, then 7, 6, 5, now 4.** The last four came from
-   * date-range work — two settlement dates corrected, then 130 more years moved to their
-   * evidence windows' starts, then the 2026-10 backlog pass (33 duplicates retired, 28 years
-   * moved: 6 after the retirements, 5 after the years), then four BP ages stored as BCE
-   * years corrected (4). Each time it went *down*, which is
-   * worth knowing because the intuition runs the other way: re-dating cards feels like it
-   * should scatter the decks, and instead correcting years that were round-number guesses
-   * slightly de-clusters the catalogue and makes the ramp's spacing kernel work better.
-   *
-   * **Then 10, then 9 (2026-09-30).** Re-measured before the dated theme menu went in, the
-   * reading had drifted to 10 on catalogue work nobody re-measured after; 5 of those land on
-   * 2026-10-05 alone. The menu starts on 2026-10-06, inside this window, and re-themes its last
-   * six days (Turkey, Figures in Europe, France...), which took it to 9. Days before the menu
-   * are byte-identical, so the 2026-10-05 cluster is untouched.
-   *
-   * **The bound stays at 12 deliberately.** The number has
-   * swung across 4-11 on ordinary catalogue work, so a bound set tight to the latest measurement
-   * would fail on the next change without indicating a real regression. Re-measure before
-   * moving it in either direction; do not tighten it just because the current reading is low.
+   * **The bound is 12, deliberately loose.** The reading swings across roughly 4-11 on ordinary
+   * catalogue work, so a bound set tight to the latest measurement fails on the next change
+   * without a real regression behind it. Re-measure after moving any `year` and before moving
+   * the bound in either direction; do not tighten it just because the current reading is low.
    */
   it('keeps cross-boundary repeats to a trickle', () => {
     const days = consecutiveDays(60, '2026-08-13');

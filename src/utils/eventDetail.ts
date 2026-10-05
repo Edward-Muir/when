@@ -5,12 +5,12 @@ import { getSourceFile } from './eventLoader';
  *
  * The prose lives in a sidecar under `public/events/detail/`, sharded to mirror the 19
  * manifest filenames exactly and keyed by slug. It is deliberately NOT part of the event
- * records: at full corpus it is roughly 2.4 MiB gzipped against a 0.49 MiB catalogue, and
+ * records: it is roughly 1.7 MB gzipped against a 0.6 MB catalogue, and
  * `loadAllEvents` blocks the loading screen. Inlining it would make every cold start pay for
  * text most players never open, so a shard is fetched only when someone actually asks for it.
  *
  * Why mirror the source files rather than shard evenly: the biggest shard (`exploration.json`,
- * 1,040 events) will land around 375 KB gzipped once written, which is a real first-tap cost —
+ * about 1,030 events) is about 300 KB gzipped, which is a real first-tap cost —
  * but it buys a layout where an authoring batch, a shard and a review unit are all the same
  * thing, and where the shard for a slug is derivable with no index file. After the first tap
  * the whole shard is warm, and the service worker already network-first caches `/events/*.json`.

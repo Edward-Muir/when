@@ -21,9 +21,9 @@ import { buildBoard, drawOrder, MAX_BOARD } from './timelineLab/board';
  *   ?n=<1..30>          cards placed — the same draw order cut short, so n=5 is n=30's opening
  *   ?ghost=earlier|later|<gap>  hold a fake drag at one end, or in any gap on the board
  *   ?over=0             card lifted OFF the board mid-drag (still dragging, no longer over it).
- *                       The one state the harness used to be unable to reach, because it tied
- *                       `isOverTimeline` to `isDragging` — and the only one the rail's retract
- *                       and its re-armed growth happen in. Pair with ?ghost=earlier|later.
+ *                       Reachable because `isOverTimeline` is not tied to `isDragging`, and
+ *                       the only state the rail's retract and its re-armed growth happen in.
+ *                       Pair with ?ghost=earlier|later.
  *   ?slowmo=<1..12>     stretch the rail's growth in time, for catching it in a still
  *   ?row=<index>        scroll this row to the middle
  *   ?theme=light|dark

@@ -1,5 +1,5 @@
 /**
- * localStorage utilities for the stats / achievements foundation.
+ * localStorage utilities for stats and achievements.
  *
  * Design principle (see docs/stats-achievements/index.md):
  * store generic primitives, derive every per-category stat at read time. The key
@@ -8,8 +8,8 @@
  * resolving each id against loaded event data; we never store Record<Category, number>
  * counters, so new/renamed categories need zero stored-data change.
  *
- * Mirrors the patterns in playerStorage.ts: one localStorage key per object, every
- * accessor wrapped in try/catch, fail-silent. Getters return a fully-populated
+ * One localStorage key per object; every accessor goes through storage.ts `readJson` /
+ * `writeJson`, which never throw. Getters return a fully-populated
  * zero-default object (never null) so callers can read nested fields without guards.
  */
 
@@ -41,11 +41,7 @@ export interface LifetimeStats {
   lastPlayedDate: string;
 }
 
-/**
- * The pre-`freeplay`-removal stored shape. Anyone who ever launched a legacy freeplay
- * challenge link has counts under these keys; `readLifetimeStats` folds them into
- * `suddenDeath` so their totals don't drop when the mode went away.
- */
+/** A stored per-mode record may also carry a `freeplay` count, folded into `suddenDeath`. */
 type LegacyPerMode = Partial<PerMode> & { freeplay?: number };
 
 const LIFETIME_STATS_KEY = 'when-lifetime-stats';
@@ -65,7 +61,7 @@ function defaultLifetimeStats(): LifetimeStats {
   };
 }
 
-/** Fold a stored per-mode record onto zero-defaults, summing away any legacy freeplay count. */
+/** Fold a stored per-mode record onto zero-defaults, combining `freeplay` into `suddenDeath`. */
 function foldPerMode(stored: LegacyPerMode | undefined, combine: (a: number, b: number) => number) {
   const daily = stored?.daily ?? 0;
   const suddenDeath = stored?.suddenDeath ?? 0;
@@ -77,13 +73,12 @@ const sum = (a: number, b: number) => a + b;
 
 /**
  * Get lifetime stats, merged over zero-defaults so older/partial stored shapes
- * still yield every field. `readLifetimeStats` also folds any legacy `freeplay`
- * bucket into `suddenDeath`, which is idempotent: once a save rewrites the record
- * in the current shape there is no `freeplay` key left to fold.
+ * still yield every field. `readLifetimeStats` also folds any stored `freeplay`
+ * bucket into `suddenDeath`, which is idempotent: a saved record has no `freeplay` key.
  *
- * Also performs a one-time, idempotent high-score migration: if the Sudden Death
- * longest-timeline is unset and the legacy `when-timeline-high-score` has a value,
- * seed it. Once seeded, the guard skips on every subsequent read.
+ * Also performs a one-time, idempotent high-score migration: if
+ * `longestTimeline.suddenDeath` is unset and the pre-stats `when-timeline-high-score` has a
+ * value, seed it. Once seeded, the guard skips on every subsequent read.
  */
 export function getLifetimeStats(): LifetimeStats {
   const stats = readLifetimeStats();
@@ -112,14 +107,14 @@ function normalizeLifetimeStats(raw: unknown): LifetimeStats {
     longestTimeline?: LegacyPerMode;
   };
   const base = defaultLifetimeStats();
-  // Fields are listed explicitly rather than spread so retired keys (`freeplay`,
+  // Fields are listed explicitly rather than spread so unknown stored keys (`freeplay`,
   // `flawlessFreeplayGames`) are dropped rather than written back on the next save.
   return {
     gamesPlayed: foldPerMode(parsed.gamesPlayed, sum),
     eventsPlacedCorrect: parsed.eventsPlacedCorrect ?? base.eventsPlacedCorrect,
     eventsPlacedWrong: parsed.eventsPlacedWrong ?? base.eventsPlacedWrong,
     timelineLengthSum: foldPerMode(parsed.timelineLengthSum, sum),
-    // A longest-ever is a max, not a total, so the legacy bucket folds by max().
+    // A longest-ever is a max, not a total, so the `freeplay` bucket folds by max().
     longestTimeline: foldPerMode(parsed.longestTimeline, Math.max),
     bestInGameStreakEver: parsed.bestInGameStreakEver ?? base.bestInGameStreakEver,
     bestCustomStreakEver: parsed.bestCustomStreakEver ?? base.bestCustomStreakEver,
@@ -249,7 +244,7 @@ export function saveAchievements(achievements: Achievements): void {
 
 /**
  * Build a name -> full-event lookup from the loaded catalogue. Keyed by the stable
- * `name` id; stores the whole event so later phases can derive category / era /
+ * `name` id; stores the whole event so callers can derive category / era /
  * difficulty without storing those derivations.
  */
 export function buildEventsByName(events: HistoricalEvent[]): Map<string, HistoricalEvent> {
@@ -272,8 +267,8 @@ export function buildEventsByName(events: HistoricalEvent[]): Map<string, Histor
  * daily-cadence streak advance on daily games only (so the in-game-streak and daily badges are
  * daily-only).
  *
- * Multiplayer v1: `state.timeline` / `state.placementHistory` are game-level (all players
- * combined); we union the whole final timeline as one personal collection — acceptable for now.
+ * In multiplayer, `state.timeline` / `state.placementHistory` are game-level (all players
+ * combined), so the whole final timeline is unioned as one personal collection.
  *
  * NOT idempotent (it increments) — callers must record each finished game exactly once.
  *

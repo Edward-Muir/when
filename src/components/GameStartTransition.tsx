@@ -112,8 +112,8 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, e
       </div>
 
       {/* Fade overlays. No `via-` stop: an alpha modifier on a theme token compiles to nothing
-          at all (see the note on .scrim-band in index.css), so the old `via-bg/90` was
-          already dead weight and these have always rendered as a two-stop gradient. */}
+          at all (see the note on .scrim-band in index.css), so a `via-bg/90` stop would be
+          dead weight; these render as a two-stop gradient. */}
       <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-bg to-transparent z-20 pointer-events-none" />
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-bg to-transparent z-20 pointer-events-none" />
 
