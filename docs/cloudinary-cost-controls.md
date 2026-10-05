@@ -1,8 +1,8 @@
 # Cloudinary cost controls
 
-How card images are delivered, why usage blew up in August 2026, and the console settings
-that keep it capped. Code-side changes are already shipped; the **console steps in §4 are
-manual** and still need doing.
+How card images are delivered, what multiplies their cost, and the console settings that keep
+it capped. The rules in §1 are enforced in code and tests; the **console steps in §4 are
+manual**, so check the console for their state rather than assuming it.
 
 ## 1. How images are delivered
 
@@ -32,12 +32,12 @@ string shown in the console's transformation list is exactly the string to allow
 - **Keep `f_auto` and `g_auto` in the delivery URL.** Both resolve per-request at the CDN
   edge and are inert inside named transformations.
 - **Don't add a third rung casually.** Cost scales as
-  `images touched × rungs × formats (~2–3)`. Across the full 5,291-image catalogue, each
-  rung is roughly 13,000 transformations — about half a month's free-plan allowance.
+  `images touched × rungs × formats (~2–3)`. Across the full catalogue (~5,800 images), each
+  rung is roughly 15,000 transformations — over half a month's free-plan allowance.
 - **Never sample the catalogue uniformly at random for a decorative surface.** Any screen
   that shows arbitrary events — the game-start intro animation, and any future "random card"
   surface — must draw from a **date-seeded bounded pool**, so its ceiling is the pool rather
-  than all 5,291 images. Distinct images touched is then
+  than the whole catalogue. Distinct images touched is then
   `POOL_SIZE × rungs × formats`, which is flat and **independent of traffic**. At
   `INTRO_POOL_SIZE = 60` per week that's ~783 transformations/month against a 25,000/month
   allowance; unbounded, the same screen projects to ~35,000/month. See
@@ -50,8 +50,8 @@ Cloudinary requests route to a dedicated `imageCacheFirst` handler in
 load-bearing and easy to undo:
 
 - **It re-issues the request in CORS mode inside the worker.** `<img>` requests are `no-cors`,
-  so their responses are opaque — `response.ok` is `false`, which is why an earlier version
-  silently never cached a single card image. Opaque responses are also **padded to several MB
+  so their responses are opaque — `response.ok` is `false`, so a handler that caches the
+  `<img>`'s own response silently never caches a single card image. Opaque responses are also **padded to several MB
   each** in storage-quota accounting, so caching them as-is would blow the origin quota and
   evict everything. Cloudinary sends `Access-Control-Allow-Origin: *`, so the re-issued request
   is charged at true size and carries a real status code. No `crossOrigin` attribute is needed
@@ -62,33 +62,30 @@ load-bearing and easy to undo:
   under auto-release-on-merge. A comment in `inject-version.js` records this.
 - It is bounded to **400 entries**, trimmed in insertion order behind a single in-flight promise.
 
-Related bug worth not reintroducing: `cacheFirst`'s catch used to return `/index.html` as the
-body of _any_ failed request. For an image that means an HTML document handed to an `<img>`,
-which fails to decode, fires `onError`, and permanently swaps in the category-icon fallback. It
-is now scoped to `request.destination === 'document'`.
+**`cacheFirst`'s offline fallback (`/index.html`) is scoped to
+`request.destination === 'document'`.** Returned for a failed image, it hands an HTML document
+to an `<img>`, which fails to decode, fires `onError`, and permanently swaps in the
+category-icon fallback.
 
-## 2. What went wrong in August 2026
+## 2. What multiplies the cost
 
-Bandwidth went from ~50 MB/day to 1.2 GB/day and transformations from ~30/day to 930/day,
-on roughly 4× the usual traffic. Per-session cost was the multiplier, not traffic:
+Per-session cost is the multiplier, not traffic. Together these take a session from ~1 MB of
+images to ~10 MB and drive bandwidth and transformations up at once:
 
-1. **`detail` had no width cap** — Cloudinary shipped the full 1024/2048px original
-   (191–818 KB per card) into a 340px popup.
-2. **`dpr_auto`** made a thumbnail cost 75–81 KB on a DPR-3 phone versus 9.5 KB at DPR 1,
-   and fanned each image out to ~18 derivatives per variant (≈6 DPRs × ~3 formats).
-   Transformations are billed **when a derived asset is created**, so that fan-out — not
-   delivery volume — drove the transformation spike.
-3. **The achievements panel** warmed all 60 badge thumbnails on a panel the pager
-   pre-mounts at idle, so every home-screen visitor paid ~4.4 MB for a tab most never open.
-4. **Every rendered card** eagerly warmed its full-size `detail` image, opened or not.
-5. **The game-start intro animation** drew 20 events uniformly at random from all 5,291 on
-   every entry to `modeSelect` — so once per game, and again on every Play Again — and
-   eagerly warmed all 20 thumbnails. That is the mechanism behind §6's "organic reach into a
-   5,291-image catalogue": a purely decorative screen whose transformation ceiling was the
-   whole catalogue, growing linearly with traffic. Fixed by bounding it to a weekly pool
-   (`INTRO_POOL_SIZE`); see the rule in §1.
-
-Measured cost fell from ~10 MB to ~1 MB per session.
+1. **A rung with no width cap** ships the full 1024/2048px original (191–818 KB per card) into
+   a 340px popup.
+2. **`dpr_auto`** makes a thumbnail cost 75–81 KB on a DPR-3 phone versus 9.5 KB at DPR 1, and
+   fans each image out to ~18 derivatives per variant (≈6 DPRs × ~3 formats). Transformations
+   are billed **when a derived asset is created**, so that fan-out — not delivery volume —
+   drives the transformation count.
+3. **Warming art on a pre-mounted panel.** The pager pre-mounts every panel at idle, so warming
+   all 60 badge thumbnails there charges every home-screen visitor ~4.4 MB for a tab most never
+   open. Badge art is warmed only for unlocked badges, once the Stats tab is on screen.
+4. **Eagerly warming every rendered card's `detail` image**, opened or not. `Card.tsx` doesn't.
+5. **Uniform random sampling for a decorative screen.** The game-start intro shows 20 events on
+   every entry to `modeSelect` — once per game, and again on every Restart. Drawn from the
+   whole catalogue, its transformation ceiling is the whole catalogue, growing linearly with
+   traffic; drawn from the weekly `INTRO_POOL_SIZE` pool, it is flat. See the rule in §1.
 
 ## 3. Billing model, in short
 
@@ -102,14 +99,14 @@ traffic, and why an abuser hammering one URL costs bandwidth but not transformat
 There is **no self-service spend cap**. On a fixed plan Cloudinary warns at ~90% and 100%,
 then **disables the account** — which takes every card image in the game down. Hence §5.
 
-## 4. Console lockdown (manual — not yet done)
+## 4. Console lockdown (manual)
 
 All under **Settings → Security** at `console.cloudinary.com` unless noted.
 
-### Do now — free, zero risk
+### Free, zero risk
 
 - **Allowed fetch domains** → set to `play-when.com`. The app never uses `/image/fetch/`,
-  but it is open today: anyone can pipe an arbitrary remote URL through the account and
+  but left open, anyone can pipe an arbitrary remote URL through the account and
   bill it for the fetch, the transformation _and_ the storage.
 - **Settings → Upload** → delete any unsigned upload presets.
 - **Restricted media types** → optionally restrict `video` and `raw` (both unused). Leave
@@ -122,7 +119,8 @@ This is the control that hard-caps the transformation line: with it on, an attac
 only ever request the derived assets you already generate, so URL-parameter fuzzing stops
 working. **Enabling it before allow-listing takes the site down**, so:
 
-1. Ship the current rung ladder and wait ~48h for real traffic to generate both strings.
+1. Make sure the current rung ladder has been live ~48h, so real traffic has generated both
+   strings.
 2. Console → **Transformations** → find each string below → kebab menu → **Allowed for
    strict transformations**:
    - `c_fill,f_auto,g_auto,h_400,q_auto:good,w_400`
@@ -142,17 +140,17 @@ invalidates and re-mints all its derived assets.
 Add `play-when.com`, plus `*.vercel.app` for previews and `localhost` for dev. This blunts
 casual hotlinking; it is spoofable, so treat it as friction, not security.
 
-**The iOS app is safe.** `capacitor.config.ts` sets `server.url = 'https://play-when.com'`,
-so the WKWebView loads the real site and sends a normal `play-when.com` referer. If that
-ever changes to bundled assets, the referer becomes `capacitor://localhost` and image
-delivery breaks on production iOS only — a miserable bug to track down. Also: never add
+**The native apps are safe.** `capacitor.config.ts` sets `server.url = 'https://play-when.com'`,
+so the WebView loads the real site and sends a normal `play-when.com` referer. Switching to
+bundled assets would make the referer `capacitor://localhost` (iOS) and break image delivery in
+the production apps only — a miserable bug to track down. Also: never add
 `<meta name="referrer" content="no-referrer">`.
 
-### After the new URLs are verified live
+### Orphaned derived assets
 
-Purge the orphaned `dpr_auto`-era derived assets (Console → Transformations → select the
-old string → Delete derived assets). This does not refund transformations already counted,
-but it reclaims storage credits.
+Derived assets for a transformation string the app does not request (a `dpr_auto` one, say)
+can be purged: Console → Transformations → select the string → Delete derived assets. This
+does not refund transformations already counted, but it reclaims storage credits.
 
 ## 5. Monitoring
 
@@ -162,8 +160,8 @@ npm run cloudinary:usage -- --json # machine-readable
 ```
 
 Needs `CLOUDINARY_API_KEY` and `CLOUDINARY_API_SECRET` (Console → Settings → API Keys) in
-`.env`. Read-only. Cloudinary's own alerts fire at ~90%, which at August's burn rate would
-have been far too late.
+`.env`. Read-only. Cloudinary's own alerts fire at ~90%, which at a bad burn rate is far too
+late.
 
 Watch **derived assets** alongside transformations: if transformations grow without a
 proportional rise in derived assets, someone is minting-and-discarding parameter
@@ -174,17 +172,15 @@ permutations — the classic abuse signature.
 Console → **Home → Delivery Reports**:
 
 - **Top Assets** — a few assets dominating means scripted hammering or a hotlink.
-  ⚠️ **The converse no longer holds.** A flat spread across hundreds of thumbnails used to
-  read as organic play; since the intro animation was bounded to a weekly pool (§1), the
-  handful of surfaces that touch arbitrary events are all bounded or seeded, so a broad flat
-  spread is now a **regression signal** — something has reintroduced uniform random sampling
-  over the catalogue. Check `INTRO_POOL_SIZE` and its test first.
+  ⚠️ **The converse does not mean organic play.** Every surface that touches arbitrary events
+  is bounded or seeded (§1), so a broad flat spread across hundreds of thumbnails is a
+  **regression signal** — something has reintroduced uniform random sampling over the
+  catalogue. Check `INTRO_POOL_SIZE` and its test first.
 - **Top Transformations** — entries with no transformation name are raw originals; many
   near-identical widths (`w_300`, `w_301`, …) means URL fuzzing.
 - **Top Browsers / Countries** — a single UA or country carrying a spike is the tell.
 - **Bandwidth ÷ requests** — the fastest single check. If average bytes per delivery sits
   near your largest asset, someone is pulling detail variants directly.
 
-For the August 2026 spike the evidence pointed to organic traffic: a _sustained_ ~930
-transformations/day is real users reaching into new corners of a 5,291-image catalogue,
-whereas a scraper produces a huge one-shot spike and then a flat line.
+A _sustained_ rise in transformations per day is real users reaching into new corners of the
+catalogue; a scraper produces a huge one-shot spike and then a flat line.

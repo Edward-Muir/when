@@ -9,16 +9,16 @@ list here only goes stale. What follows is the spine plus the relationships you 
 guess wrong.
 
 ```
-index.tsx                      # BrowserRouter + 13 routes
+index.tsx                      # BrowserRouter + the routes below
 ├── App.tsx                    # Phase router, viewport height fix
-│   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats/Timeline)
+│   ├── ModeSelect.tsx         # The home screen: five-tab pager via ModePager.tsx
+│   │   ├── TopBar.tsx              # Home + nav (also mounted by Game)
 │   │   ├── DailyCta.tsx            # Daily hero's Play / Share / Submit button
 │   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: filters + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
-│   │   ├── panels/                 # Archive, Custom, Stats, Timeline panels — one per tab
-│   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel (was /achievements)
-│   │   ├── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
-│   │   └── HowToPlayModal.tsx      # The rules in text; mounted by Menu only, never auto-shown
+│   │   ├── panels/                 # Daily, Archive, Custom, Stats, Timeline panels — one per tab
+│   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel
+│   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
 │       ├── ActiveCardDisplay.tsx → DraggableCard.tsx → Card.tsx
@@ -27,7 +27,11 @@ index.tsx                      # BrowserRouter + 13 routes
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
-│       │   ├── Menu.tsx                # Burger menu: theme, share, install, How to Play, What's New, Help & FAQ, legal
+│       │   ├── Menu.tsx                # Burger drawer: Dark Mode, Daily reminder (native), Share App,
+│       │   │   │                       # Download the App (iOS web) / Add to Home Screen, How to Play,
+│       │   │   │                       # Reset Hints, What's New, Help & FAQ, Send Feedback,
+│       │   │   │                       # Privacy Policy, Terms of Service
+│       │   │   └── HowToPlayModal.tsx  # The rules in text; opens from the menu only
 │       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game) — lists the new version's notes
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
@@ -65,9 +69,9 @@ comment worth reading before you change it:
 | `difficultyScore` | Composite: recognition label blended with timeline crowding                  |
 | `dailyRecency`    | Seven-day no-repeat chain for the daily                                      |
 | `puzzleDate`      | **Local** calendar day, never `toISOString()` — see the header comment       |
-| `challengeCode`   | Positional bit-packed share links; bit 0 is a reserved legacy mode bit       |
+| `challengeCode`   | Positional bit-packed share links; bit 0 is reserved and ignored on read     |
 | `cloudinaryImage` | Transform rung ladder with hard cost rules — see cloudinary-cost-controls.md |
-| `statsStorage`    | Persisted lifetime stats, achievements, and a legacy-shape fold on read      |
+| `statsStorage`    | Persisted lifetime stats and achievements; folds older stored shapes on read |
 | `themeReplay`     | Archive replays: why they are `suddenDeath`, reshuffled, and never dated     |
 | `themeBests`      | Per-curated-theme personal bests (`when-theme-bests`)                        |
 
@@ -80,8 +84,8 @@ does what its name says.
 
 Player-facing: `/:tab?` is the home pager (`/`, `/archive`, `/custom`, `/stats`, `/timeline`
 open it on that tab and the URL follows the swipe; see `src/pages/Home.tsx`), `/daily`,
-`/challenge/:code`, `/privacy`, `/terms`, `/support`, `/changelog`. `/achievements` is retired
-and redirects to `/stats`, where the badges live now. Anything else redirects to `/`.
+`/challenge/:code`, `/privacy`, `/terms`, `/support`, `/changelog`. `/achievements` redirects
+to `/stats`, where the badges live. Anything else redirects to `/`.
 
 Unlinked maintainer tools: `/image-qc`, `/card-reports`, `/cards-preview`, `/unlock-preview`,
 `/anim-jig`, `/reminder-preview`, `/share-preview`, `/timeline-lab`, `/admin/dedup` (the
@@ -108,10 +112,12 @@ Located in `api/`. Requires `vercel dev` to run locally.
 | `/api/leaderboard/submit`  | POST   | Submit daily score                                                    |
 | `/api/card-reports/submit` | POST   | Report a problem with a card's data                                   |
 | `/api/card-reports/list`   | GET    | Read reports (feeds the hidden `/card-reports` page) — **key-gated**  |
+| `/api/themes`              | GET    | The curated-theme calendar, read by every client at boot (CDN-cached) |
+| `/api/themes/publish`      | POST   | Write the curated-theme calendar — **key-gated** (`THEMES_ADMIN_KEY`) |
 
-Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-generated per date via `botGeneration.ts`.
+Backend uses **Upstash Redis** for the leaderboard, card reports and the theme calendar. Bot players are auto-generated per date via `botGeneration.ts`.
 
-Display names go through `nameFilter.ts` (built on `obscenity`) on **both** write and read — a blocked name is silently swapped for a deterministic generated one rather than rejected. Filtering on read is deliberate: the sorted set's member is the JSON entry itself, so masking on the way out cleans entries stored before the filter existed and makes any later word-list addition apply retroactively. See [Leaderboard & Daily Mode](leaderboard-daily/index.md).
+Display names go through `nameFilter.ts` (built on `obscenity`) on **both** write and read — a blocked name is silently swapped for a deterministic generated one rather than rejected. Filtering on read is deliberate: the sorted set's member is the JSON entry itself, so masking on the way out means any word-list addition applies to entries already stored. See [Leaderboard & Daily Mode](leaderboard-daily/index.md).
 
 Card reports store only an event id + reason id + timestamp under `cardreport:*` keys — no device id, no IP, no free text. Every key is TTL'd or capped. Abuse controls are a per-device-per-card dedup (30d) and a per-IP rate limit (20/hour); the IP is SHA-256 hashed and used only as an expiring rate-limit key. `npm run typecheck:api` type-checks `api/`, which `npm run typecheck` does not cover (root `tsconfig.json` has `"include": ["src"]`). `npm run lint` **does** cover it — it runs `eslint src api`.
 
@@ -119,6 +125,7 @@ Environment variables in `.env`:
 
 - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` - Redis connection
 - `REPORTS_ADMIN_KEY` - Shared secret for reading card reports (see below)
+- `THEMES_ADMIN_KEY` - Shared secret for publishing the theme calendar (held in GitHub Secrets for the publish-theme Action)
 - `CLOUDINARY_*` - Image hosting
 - `WIKI_*` - Wikipedia API access
 
@@ -146,13 +153,14 @@ Low to high. Verify against source before relying on it — grep `z-` in the thr
 
 Uses `@dnd-kit/core` with custom sensors in `utils/dndSensors.ts`. The `useDragAndDrop` hook manages drag state and calculates insertion index based on Y position relative to timeline events.
 
-## Capacitor (iOS)
+## Capacitor (iOS and Android)
 
-Native iOS wrapper in `ios/` directory. Key commands:
+Native shells in `ios/` and `android/`. Key commands:
 
 ```bash
-npm run cap:sync            # Sync web build to native project
-npm run cap:open:ios        # Open Xcode project
+npm run cap:sync            # Sync web build to the native projects
+npm run cap:open:ios        # Open the Xcode project
+npm run cap:open:android    # Open the Android Studio project
 ```
 
 Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
@@ -163,7 +171,7 @@ Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
 
 **Backend**: `@vercel/node`, `@upstash/redis`, `obscenity` (display-name filtering; server-only, never bundled into the client)
 
-**Mobile**: `@capacitor/core`, `@capacitor/haptics`, `@capacitor/ios`, `@capacitor/splash-screen`, `@capacitor/status-bar`
+**Mobile**: `@capacitor/core`, `@capacitor/android`, `@capacitor/app`, `@capacitor/haptics`, `@capacitor/ios`, `@capacitor/local-notifications`, `@capacitor/splash-screen`, `@capacitor/status-bar`
 
 **Dev**: `husky`, `lint-staged`, `prettier`, `commit-and-tag-version`, `eslint-plugin-security`, `puppeteer`. Note `typescript` sits in `dependencies`, not `devDependencies`, and `eslint` itself is not a declared dependency at all — it arrives transitively via `react-scripts`.
 
@@ -172,7 +180,7 @@ Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
 Uses conventional commits with `commit-and-tag-version` for semantic versioning.
 
 On release: bumps `package.json` version, updates `CHANGELOG.md`, moves the staged human
-notes into `public/release-notes.json`, regenerates `public/feed.xml` (RSS, still from the
+notes into `public/release-notes.json`, regenerates `public/feed.xml` (RSS, from the
 changelog) and `public/version.json` (version + that release's notes), creates git tag.
 
 A release **aborts** unless a human note is staged, at the `prerelease` hook and again as a
@@ -204,15 +212,3 @@ Key files: `src/version.ts` (auto-generated), `.versionrc.json` (config),
 `scripts/inject-version.js`, `scripts/generate-rss.js`, `scripts/release-notes-lib.js`
 (shared format rules + changelog parser), `scripts/release-notes.js`,
 `scripts/check-release-notes.js`, `src/utils/releaseNotes.ts` (what the app reads)
-
-## Event Editor (`tools/event-editor/`)
-
-Standalone web tool for managing historical events. Browse/edit/add/delete events, move between categories, fetch image dimensions and Wikipedia pageviews.
-
-```bash
-cd tools/event-editor
-npm install
-npm run dev
-```
-
-See [events-images/event-editor-tool.md](events-images/event-editor-tool.md) for full documentation.

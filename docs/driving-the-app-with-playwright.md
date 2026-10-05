@@ -2,9 +2,8 @@
 
 A runbook for automating the app end-to-end — launching it, clicking through
 it, placing cards, and (on production) playing the daily and submitting a
-leaderboard score. Written by a Claude instance that worked all of this out the
-hard way, so the next one doesn't have to. Everything here is stuff that is
-**not obvious** and cost real debugging time.
+leaderboard score. Everything here is **not obvious** and cost real debugging
+time to find.
 
 If you only need to confirm a change works in the running app, this is your
 fast path. Read it top-to-bottom once; after that the code blocks are
@@ -15,17 +14,18 @@ copy-pasteable.
 ## 1. Prerequisites (fresh container)
 
 ```bash
-npm install                                   # project deps aren't pre-populated
-PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 \
-  npm install --no-save playwright@latest      # driver only; browser is pre-installed
+npm install                                   # only for a local dev server; project deps aren't pre-populated
+NODE_PATH=/opt/node22/lib/node_modules node yourscript.js
 ```
 
+- The Playwright driver is installed globally (1.56, at
+  `/opt/node22/lib/node_modules/playwright`), so `npm install playwright` is
+  unnecessary: run any script, in the repo or a scratchpad, with
+  `NODE_PATH=/opt/node22/lib/node_modules`. Driving production needs no
+  `npm install` at all.
 - Chromium is already on disk at **`/opt/pw-browsers/chromium`** (a symlink).
   Never run `playwright install`. Always launch with
   `executablePath: '/opt/pw-browsers/chromium'`.
-- If your script lives outside the repo (e.g. a scratchpad), Node can't resolve
-  `playwright`. Either put the script in the repo tree or run it with
-  `NODE_PATH=/home/user/when/node_modules node yourscript.js`.
 
 ## 2. Launching the app
 
@@ -88,11 +88,13 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
 - **Active card (the drag handle):** `div.cursor-grab` (first match). Its
   `innerText` (first line) is the event's `friendly_name`.
 - **Placed timeline markers:** `[data-timeline-year]`. The attribute value is
-  the event's `year` (negative = BCE). **Tombstones (wrong placements) are
-  excluded** from this selector, so `[data-timeline-year]` count == your score.
+  the event's `year` (negative = BCE). It is on every timeline card, including
+  the pre-placed seed, and **tombstones (wrong placements) are excluded**, so
+  `[data-timeline-year]` count − 1 == your score.
   **It is the year label beside the card, not the card**, so clicking it opens
   nothing — which looks like a broken feature rather than a bad selector. To open
-  a placed card's detail popup, click the card itself:
+  a placed card's detail popup, click the card itself. Placed cards are buttons
+  with no `aria-label`, so their accessible name is their `friendly_name`:
   `page.getByRole('button', { name: /<friendly_name>/i })`.
 - **The detail popup:** `[data-testid="modal-card"]` is the card, and
   `[data-testid="detail-scroll"]` is the region holding the image and prose
@@ -100,10 +102,12 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   lines) and must stay so after the shard loads and after scrolling to the end.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
-- **Bottom-left counters:** big number = lives/"cards left"; 📏 = events placed;
-  ⚡ = current streak.
-- **There is no first-run modal** (2026-09; the old "How to Play" / "Got it" popup is
-  gone). Nothing blocks the first drag. To replay a fresh install's hints,
+- **Bottom-left counters:** big number = cards left; 📏 = events placed; ⚡ = current
+  streak. Tapping the counter opens the "Timeline Stats" popup.
+- **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
+  pill beside the logo in game.
+- **No modal blocks the first drag.** How to Play opens from the menu only. To replay a
+  fresh install's hints,
   `localStorage.removeItem('when-hints-seen')` — or click **Reset Hints** in the burger
   menu, which also works mid-game (it broadcasts, so the hook re-reads on the spot).
 - **Onboarding hint strips:** one-line pills in `[role="status"]` (the in-game one sits
@@ -118,16 +122,32 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   Playwright's actionability check call the element "stable", so the click times out after 30 s.
   This looks like a broken selector and is not: a real tap works fine. It bites the swap button,
   the Play button, the bottom-left counter and the top hand card, each while its hint is up.
+  On a fresh install **"Play Daily Challenge" carries `animate-hint-glow`**, so click it with
+  `{ force: true }`.
   The Daily card's eye is **not** affected: `animate-hint-halo` animates box-shadow only, so the
   element never moves and it clicks normally (measured at ~50 ms).
 - **The in-game ladder is one pill per placement**, shown when the placement animation
   settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap`.
-  Do **not** pause between drags to "let a hint appear" — that is what hid a real bug until
-  2026-09. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
+  Do **not** pause between drags to "let a hint appear": a test that waits never sees the
+  pills race each other, which is where bugs hide. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
   the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the
   bottom-left counter button for `stats`, the cycle button for `swap`.
-- **Mode select → start a game:** nav button `[aria-label="Custom game"]`, then
-  the button matching `/Play\s+·/` ("Play · N events"). Custom is the only mode there.
+- **The menu drawer:** opened by `[aria-label="Open menu"]`. It does **not** close on
+  Escape, and while open it swallows later clicks, so close it with
+  `[aria-label="Close menu"]` (or reload) before driving anything else.
+- **Home → Custom tab → start a game:** nav button `[aria-label="Custom game"]`, then
+  the button matching `/Play\s+·/` ("Play · N events").
+- **Custom filter chips** are `button[aria-pressed]`. A category chip's DOM text is the
+  lowercase category id (`sports`), capitalised only by CSS, so match case-insensitively
+  (`getByRole('button', { name: /^sports$/i })`); `:text-is("Sports")` never matches. Don't
+  guard a chip click with `if (await chip.count())`: a filter click that silently no-ops
+  looks exactly like a clean pass against an unfiltered deck.
+- **Archive tab** (`[aria-label="Past decks"]`): past curated decks, each row showing
+  "Not played yet", a best score, or "Replay tomorrow" (a deck becomes replayable the day
+  after it ran).
+- **Game over:** a Custom game shows **Restart** and **Home**. The daily shows Today's
+  Leaderboard and a name input pre-filled with a random name, with **Submit to
+  Leaderboard**, then a share step.
 - **Leaderboard submit (at game over):** `input[placeholder*="name" i]` (maxlength
   20, pre-filled with a random name — clear it first), then the button matching
   `/submit to leaderboard/i`.
@@ -190,7 +210,7 @@ marker may be **off-screen**:
 - Target **fully below the viewport** → drop is a **no-op** (card returns to
   hand, no penalty) — you get stuck re-drawing the same card forever.
 - Target maps to a **wrong on-screen slot** → registers as a **wrong placement**
-  (tombstone, costs a life).
+  (tombstone, hand shrinks by one).
 
 Fix: **scroll the insertion boundary to centre before every drag.**
 
@@ -210,22 +230,24 @@ A tall viewport (height ≥ 1200) also helps by fitting more markers at once.
 ## 7. Modes, scoring & the daily
 
 - **Game phases:** `loading → modeSelect → transitioning → playing → gameOver`.
-- **Sudden-death mechanics — the only rule-set, used by both modes:** the 5-card
-  hand is 5 **lives**. Correct placement → draw a replacement (streak++). Wrong
-  placement → tombstone, lose a card, streak resets. **Game over at 5 misses.**
-  Score = timeline length. The deck is huge ("Everything" theme), so the game
-  only ends by running out of lives — expect a long game if you play well.
-  There is **no mode picker to click**: `GameMode` is just `daily | suddenDeath`,
-  and they differ only in how the deck is seeded.
+- **One rule-set for every game:** a hand of 5, shown as "cards left". Correct
+  placement → the card stays, a replacement is drawn, streak +1. Wrong placement →
+  a grey tombstone at the card's true slot, hand −1, streak resets. **Game over when
+  the hand is empty** (5 misses), or when a small deck runs dry ("Theme Cleared!" /
+  "Perfect Clear!"). Score = events placed (the seed card excluded), plus best
+  streak. `GameMode` is just `daily | suddenDeath`; they differ only in how the deck
+  is built.
+- **Deck size depends on the day's theme:** curated decks are ~30-36 cards, so a
+  good game can clear one; seeded category/place days are filtered from the
+  catalogue; Custom is filtered by difficulty, category, era, region and country.
 - **Daily** (`/daily`, auto-starts): seeded per **local calendar date** — same
   cards, same order for everyone in the same timezone that day. Not UTC: see the
   header comment in `src/utils/puzzleDate.ts`, and note the test suite pins
   `TZ=America/Los_Angeles`. One-play-per-day is gated client-side, so a **fresh
   browser context replays the same seed** (useful if a tool bug forces a restart
-  _before_ you submit). Single-player suppresses per-placement popups, so it
-  flows fast.
-- **Custom:** same mechanics, deck built from the category/era/difficulty filters
-  on the Custom tab.
+  _before_ you submit). Single-player has no per-placement popups, so it flows
+  fast.
+- **Custom:** same mechanics, deck built from the Custom tab's filters.
 - **Submitting:** at game over a "Submit to Leaderboard" panel appears. Fill the
   name input, click submit. The API dedups by a per-context deviceId, so a fresh
   context can submit once.
@@ -238,10 +260,9 @@ A tall viewport (height ≥ 1200) also helps by fitting more markers at once.
 - **Honest play (for a real score):** only read the card's `friendly_name` and
   the already-**revealed** timeline years, and decide from your own knowledge —
   do **not** read the dataset. The hidden card's year is never in the DOM; the
-  placed markers give you legitimate anchors, exactly like a human sees. A
-  Claude playing honestly on 2026-07-24 scored **60, streak 27, #1** — the misses
-  were genuine judgment calls on ancient trade routes and "earliest-origin"
-  cards (e.g. the game dates _Cheque_ to 300 BCE, not the 9th-c. Islamic sakk).
+  placed markers give you legitimate anchors, exactly like a human sees. Watch
+  "earliest-origin" cards, which date an invention to its earliest form
+  (e.g. _Cheque_ is 300 BCE, not the 9th-c. Islamic sakk).
 
 **Interactive harness pattern** (lets _you_ make each placement decision without
 burning context on a giant script): run a long-lived Node process that, each
@@ -256,7 +277,7 @@ across your tool calls and keeps the answer key out of your view.
 A complete "does it boot, can it play, does placement work" smoke test:
 
 ```js
-// NODE_PATH=/home/user/when/node_modules node smoke.js   (app running on :3000)
+// NODE_PATH=/opt/node22/lib/node_modules node smoke.js   (app running on :3000)
 const fs = require('fs'),
   path = require('path'),
   { chromium } = require('playwright');
@@ -281,11 +302,8 @@ for (const f of JSON.parse(fs.readFileSync(`${EV}/manifest.json`)).files)
   await p.waitForTimeout(2500);
   await p.click('button[aria-label="Custom game"]');
   await p.waitForTimeout(800);
-  await p.getByRole('button', { name: /Play\s+·/ }).click();
+  await p.getByRole('button', { name: /Play\s+·/ }).click({ force: true }); // may carry a hint glow
   await p.waitForTimeout(2500);
-  try {
-    await p.getByRole('button', { name: /got it/i }).click({ timeout: 4000 });
-  } catch {}
 
   for (let turn = 0; turn < 8; turn++) {
     const h = p.locator('div.cursor-grab').first();
