@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Oct 2026 08:40:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 21:14:43 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.32.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.32.1</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>current-game wording everywhere, curated theme name on the Daily card, gold trophy on a clear (<a href="https://github.com/Edward-Muir/when/issues/76">#76</a>) (<a href="https://github.com/Edward-Muir/when/commit/5f639421f0c42ffe5f202a473df174b3df8699ee">5f63942</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.32.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.24.0</guid>
       <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/>- evidence windows for events, and release notes players can read (<a href="https://github.com/Edward-Muir/when/issues/60">#60</a>) (<a href="https://github.com/Edward-Muir/when/commit/6b4d317fa4ce974c577f3721f5f3e01a4435ce84">6b4d317</a>)]]></description>
-    </item>
-    <item>
-      <title>When? v1.23.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.23.0</guid>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/>- **event-detail:** long-form prose for all 5,460 events (<a href="https://github.com/Edward-Muir/when/issues/59">#59</a>) (<a href="https://github.com/Edward-Muir/when/commit/1481f035f8cf1dc9c5ba149b55b6420e5bc48266">1481f03</a>)]]></description>
     </item>
   </channel>
 </rss>

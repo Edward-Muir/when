@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.32.1](https://github.com/Edward-Muir/when/compare/v1.32.0...v1.32.1) (2026-10-05)
+
+
+### Bug Fixes
+
+* current-game wording everywhere, curated theme name on the Daily card, gold trophy on a clear ([#76](https://github.com/Edward-Muir/when/issues/76)) ([5f63942](https://github.com/Edward-Muir/when/commit/5f639421f0c42ffe5f202a473df174b3df8699ee))
+
 ## [1.32.0](https://github.com/Edward-Muir/when/compare/v1.31.0...v1.32.0) (2026-10-02)
 
 
