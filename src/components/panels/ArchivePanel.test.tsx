@@ -1,7 +1,7 @@
 import React from 'react';
 import { act, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import ArchivePanel from './ArchivePanel';
+import ArchivePanel, { LOCK_NOTE_MS } from './ArchivePanel';
 import { HistoricalEvent, ALL_CATEGORIES } from '../../types';
 import { CuratedTheme, __setCuratedThemesForTest } from '../../utils/curatedThemes';
 import { clearDailyPoolCache } from '../../utils/dailyPool';
@@ -77,6 +77,11 @@ const renderPanel = (props: Partial<React.ComponentProps<typeof ArchivePanel>> =
 /** The row for a date. */
 const row = (date: string) => within(screen.getByTestId(`archive-day-${date}`));
 
+/** The panel's two live regions, in DOM order: the tab hint under the heading, then the
+ * locked-row note floating over the timeline. */
+const tabHint = () => screen.getAllByRole('status')[0];
+const lockNote = () => screen.getAllByRole('status')[1];
+
 const playedDaily = (date: string, correct: string[]) =>
   localStorage.setItem(
     'when-game-history',
@@ -115,7 +120,9 @@ describe('ArchivePanel', () => {
     // Strictly thirty days: an older curated deck is gone, and only one future deck shows.
     expect(screen.queryByText('Plague Years')).toBeNull();
     expect(screen.queryByText('Much Later')).toBeNull();
-    expect(row('2030-05-01').getByRole('button', { name: 'Not Yet: coming May 1' })).toBeDisabled();
+    expect(
+      row('2030-05-01').getByRole('button', { name: 'Not Yet: coming May 1' })
+    ).toHaveAttribute('aria-disabled', 'true');
   });
 
   it('borders a curated day in gold, and no other', () => {
@@ -176,8 +183,43 @@ describe('ArchivePanel', () => {
     renderPanel();
     expect(
       row(TODAY).getByRole('button', { name: 'Running Today: replay tomorrow' })
-    ).toBeDisabled();
+    ).toHaveAttribute('aria-disabled', 'true');
     expect(row(TODAY).getByText('Replay tomorrow')).toBeInTheDocument();
+  });
+
+  it('says why today is locked when its row is tapped, and does not play it', async () => {
+    played(TODAY);
+    const { onPlay } = renderPanel();
+    expect(lockNote()).toBeEmptyDOMElement();
+    await userEvent.click(row(TODAY).getByRole('button'));
+    expect(lockNote()).toHaveTextContent('Done for today. Replay it tomorrow.');
+    expect(onPlay).not.toHaveBeenCalled();
+  });
+
+  it('says when the teaser opens when its row is tapped, and does not play it', async () => {
+    const { onPlay } = renderPanel();
+    await userEvent.click(row('2030-05-01').getByRole('button'));
+    expect(lockNote()).toHaveTextContent('Opens May 1 as the Daily Challenge');
+    expect(onPlay).not.toHaveBeenCalled();
+  });
+
+  it('says nothing when a playable row is tapped', async () => {
+    renderPanel();
+    await userEvent.click(row('2030-03-21').getByRole('button'));
+    expect(lockNote()).toBeEmptyDOMElement();
+  });
+
+  it('lets the locked-row note fade by itself', async () => {
+    jest.useFakeTimers();
+    try {
+      renderPanel();
+      await userEvent.click(row('2030-05-01').getByRole('button'));
+      expect(lockNote()).not.toBeEmptyDOMElement();
+      act(() => jest.advanceTimersByTime(LOCK_NOTE_MS + 1000));
+      await waitFor(() => expect(lockNote()).toBeEmptyDOMElement());
+    } finally {
+      jest.useRealTimers();
+    }
   });
 
   it('holds the rows back until the tab has been shown', () => {
@@ -193,9 +235,9 @@ describe('ArchivePanel first-visit hint', () => {
 
   it('shows once the tab is on screen, and not before', () => {
     renderPanel();
-    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+    expect(tabHint()).toBeEmptyDOMElement();
     settle();
-    expect(screen.getByRole('status')).toHaveTextContent(TAB_HINT_TEXT.archiveTab);
+    expect(tabHint()).toHaveTextContent(TAB_HINT_TEXT.archiveTab);
     expect(hasSeenHint('archiveTab')).toBe(true);
   });
 
@@ -210,7 +252,7 @@ describe('ArchivePanel first-visit hint', () => {
     markHintSeen('archiveTab');
     renderPanel();
     settle();
-    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+    expect(tabHint()).toBeEmptyDOMElement();
   });
 
   it('dismisses on tap', async () => {
@@ -219,6 +261,6 @@ describe('ArchivePanel first-visit hint', () => {
     await userEvent.click(screen.getByRole('button', { name: TAB_HINT_TEXT.archiveTab }));
     // The strip fades out; drive the exit animation to its end.
     act(() => jest.advanceTimersByTime(1000));
-    await waitFor(() => expect(screen.getByRole('status')).toBeEmptyDOMElement());
+    await waitFor(() => expect(tabHint()).toBeEmptyDOMElement());
   });
 });

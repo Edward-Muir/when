@@ -1,4 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Lock } from 'lucide-react';
 import { GameConfig, HistoricalEvent } from '../../types';
 import { getThemeSeedEvent } from '../../utils/themeReplay';
 import {
@@ -12,10 +13,14 @@ import { buildDailyConfig, getDailyPreviewEvent } from '../../utils/dailyConfig'
 import { getDailyCadence } from '../../utils/statsStorage';
 import { getGameHistory } from '../../utils/gameHistory';
 import { getThemeBests } from '../../utils/themeBests';
-import ArchiveDeckRow from '../ArchiveDeckRow';
+import ArchiveDeckRow, { lockedRowText } from '../ArchiveDeckRow';
 import HintStrip from '../HintStrip';
 import { tabHintText } from '../../utils/hintCopy';
 import { useTabHint } from '../../hooks/useTabHint';
+import { useHaptics } from '../../hooks/useHaptics';
+
+/** How long a locked row's reason stays up before it fades by itself. */
+export const LOCK_NOTE_MS = 3000;
 
 interface ArchivePanelProps {
   allEvents: HistoricalEvent[];
@@ -34,7 +39,10 @@ interface ArchivePanelProps {
  * `utils/dailyReplay.ts`): a missed day counts as that day's daily, a played one is
  * practice, and a curated day deals its theme reshuffled. Today's row plays the ordinary
  * daily until it is played, then locks until tomorrow; the next scheduled curated deck
- * closes the list as a locked teaser.
+ * closes the list as a locked teaser. Tapping a locked row says why, in a pill floating at
+ * the foot of the timeline: the list opens scrolled to the bottom, where both locked rows
+ * sit, so a pill under the heading would land far from the thumb and, by shrinking the
+ * scroll area, push the tapped row off screen.
  *
  * The list opens scrolled to today, the row most players are here for, so the "↑ Earlier"
  * fade works the same way it does in a game.
@@ -66,6 +74,19 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
 
   const seedEvents = useDaySeedEvents(hasBeenActive, allEvents, today, calendarVersion);
 
+  const { haptics } = useHaptics();
+  // `id` restarts the fade timer when the same row is tapped again.
+  const [lockNote, setLockNote] = useState<{ text: string; id: number } | null>(null);
+  useEffect(() => {
+    if (!lockNote) return;
+    const timer = setTimeout(() => setLockNote(null), LOCK_NOTE_MS);
+    return () => clearTimeout(timer);
+  }, [lockNote]);
+  const explainLock = (day: ArchiveDay) => {
+    haptics.warning();
+    setLockNote((prev) => ({ text: lockedRowText(day), id: (prev?.id ?? 0) + 1 }));
+  };
+
   const playFor = (day: ArchiveDay): (() => void) | undefined => {
     if (day.status === 'replayable') {
       return () => onPlay(buildDayReplayConfig(day.date, allEvents));
@@ -89,7 +110,18 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
         {!hasBeenActive ? (
           <div className="h-full" />
         ) : (
-          <ArchiveTimeline days={days} allEventsReady={allEvents.length > 0}>
+          <ArchiveTimeline
+            days={days}
+            allEventsReady={allEvents.length > 0}
+            overlay={
+              <HintStrip
+                placement="floating"
+                icon={Lock}
+                text={lockNote?.text ?? null}
+                onDismiss={() => setLockNote(null)}
+              />
+            }
+          >
             {days.map((day) => (
               <ArchiveDeckRow
                 key={day.date}
@@ -103,6 +135,7 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
                 }
                 best={day.curated ? undefined : dayBest(history, day.date)}
                 onPlay={playFor(day)}
+                onLockedTap={() => explainLock(day)}
               />
             ))}
           </ArchiveTimeline>
@@ -157,13 +190,15 @@ function useDaySeedEvents(
 /**
  * The timeline shell: spine, "Earlier"/"Later" fades and a native scroll container, as in
  * `Timeline/Timeline.tsx` but with no drop zone, ghost or tombstones — the rows here are
- * days, not events, which is why `Timeline` itself is not reused.
+ * days, not events, which is why `Timeline` itself is not reused. `overlay` is pinned over
+ * the shell rather than scrolled with the rows.
  */
 const ArchiveTimeline: React.FC<{
   days: ArchiveDay[];
   allEventsReady: boolean;
+  overlay?: React.ReactNode;
   children: React.ReactNode;
-}> = ({ days, allEventsReady, children }) => {
+}> = ({ days, allEventsReady, overlay, children }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasScrolledToEndRef = useRef(false);
 
@@ -205,6 +240,8 @@ const ArchiveTimeline: React.FC<{
           Later ↓
         </div>
       </div>
+
+      {overlay}
     </div>
   );
 };

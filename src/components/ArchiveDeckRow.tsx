@@ -17,8 +17,10 @@ interface ArchiveDeckRowProps {
   themeBest: ThemeBest | undefined;
   /** Ordinary days: the most events placed in any game of the day (`dayBest`). */
   best: number | undefined;
-  /** Starts the day; absent for a locked row, which renders disabled. */
+  /** Starts the day; absent for a locked row. */
   onPlay?: () => void;
+  /** A locked row's tap: the panel says why it is locked. */
+  onLockedTap?: () => void;
 }
 
 /**
@@ -29,6 +31,8 @@ interface ArchiveDeckRowProps {
  *
  * A curated day's card has a gold border. A missed day's art is greyed, the same treatment
  * a locked row gets, without the lock: it is the one the player can still go and fill in.
+ * A locked row is `aria-disabled` rather than `disabled`, so a tap still lands: the card
+ * shakes and the panel shows `lockedRowText`, instead of the tap doing nothing at all.
  * No opacity modifiers on theme tokens anywhere here — those compile to nothing (see
  * CLAUDE.md); dimming is `opacity-70` and `grayscale`.
  */
@@ -38,13 +42,26 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
   themeBest,
   best,
   onPlay,
+  onLockedTap,
 }) => {
   const [imageError, setImageError] = useState(false);
+  const [shaking, setShaking] = useState(false);
   const { date, status, played, curated } = day;
   const name = getThemeDisplayName(day.theme);
   const locked = !onPlay;
   const missed = !played && status === 'replayable';
   const hasImage = !!seedEvent?.image_url && !imageError;
+
+  const handleClick = () => {
+    if (onPlay) {
+      onPlay();
+      return;
+    }
+    onLockedTap?.();
+    // Off then on across a frame, so a tap mid-shake restarts it.
+    setShaking(false);
+    requestAnimationFrame(() => setShaking(true));
+  };
 
   return (
     <div className="flex items-center w-full py-1" data-testid={`archive-day-${date}`}>
@@ -60,12 +77,13 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
       {/* Card area - landscape card */}
       <div className="flex-1 pl-3">
         <button
-          onClick={onPlay}
-          disabled={locked}
+          onClick={handleClick}
+          onAnimationEnd={() => setShaking(false)}
+          aria-disabled={locked}
           aria-label={rowLabel(day, name, locked)}
           className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
             curated ? 'border-2 border-accent' : 'border border-border'
-          } ${locked ? 'opacity-70' : 'active:scale-95'}`}
+          } ${locked ? 'opacity-70' : 'active:scale-95'} ${shaking ? 'animate-shake-medium' : ''}`}
         >
           {/* Image section (40% width) */}
           <div className="w-[40%] h-full relative overflow-hidden">
@@ -110,6 +128,15 @@ function rowLabel({ date, status }: ArchiveDay, name: string, locked: boolean): 
   if (status === 'upcoming') return `${name}: coming ${formatShareDate(date)}`;
   if (status === 'today') return locked ? `${name}: replay tomorrow` : `Play ${name}, today`;
   return `Play ${name}, ${formatWeekdayDate(date)}`;
+}
+
+/**
+ * Why a locked row can't be played, for the pill its tap raises. One line on a 375px phone,
+ * so under ~36 characters (see `hintCopy.ts`); the longest date, "Sep 30", makes 35.
+ */
+export function lockedRowText({ date, status }: ArchiveDay): string {
+  if (status === 'upcoming') return `Opens ${formatShareDate(date)} as the Daily Challenge`;
+  return 'Done for today. Replay it tomorrow.';
 }
 
 /**

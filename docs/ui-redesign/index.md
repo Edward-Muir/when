@@ -40,6 +40,12 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   the game's own timeline by date, curated ones in a gold border — see
   [../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-tab).
   Like every tab it has a path (`/archive`) that opens the home screen on it (see below).
+  **A locked row (today once played, the upcoming teaser) still takes a tap**: it is
+  `aria-disabled`, not `disabled`, so the card shakes, the phone buzzes a warning and a
+  floating pill at the foot of the timeline says why (`lockedRowText` in `ArchiveDeckRow.tsx`).
+  The pill floats rather than sitting under the heading because the list opens scrolled to
+  the bottom, where both locked rows are; a heading pill would shrink the scroll area and push
+  the tapped row off screen. A silent `disabled` row read as broken.
 - **Achievements are a section of the Stats tab, not a page or a menu link** — nothing in the
   burger menu gets found. They sit at the very bottom of Stats (`stats/AchievementsSection.tsx`,
   after the collection meter): an "Achievements" header with the live count, the unlocked badges
