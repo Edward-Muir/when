@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.33.0](https://github.com/Edward-Muir/when/compare/v1.32.1...v1.33.0) (2026-10-07)
+
+
+### Features
+
+* the Archive lists every daily from the last 30 days ([#77](https://github.com/Edward-Muir/when/issues/77)) ([c4398e2](https://github.com/Edward-Muir/when/commit/c4398e2b74c450ecae974f2b50f139341ff7c2a5))
+
 ## [1.32.1](https://github.com/Edward-Muir/when/compare/v1.32.0...v1.32.1) (2026-10-05)
 
 

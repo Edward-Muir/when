@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Oct 2026 21:14:43 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 08:19:56 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.33.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.33.0</guid>
+      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>the Archive lists every daily from the last 30 days (<a href="https://github.com/Edward-Muir/when/issues/77">#77</a>) (<a href="https://github.com/Edward-Muir/when/commit/c4398e2b74c450ecae974f2b50f139341ff7c2a5">c4398e2</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.32.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.25.0</guid>
       <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/>- reopen today's finished daily timeline from the Daily card (<a href="https://github.com/Edward-Muir/when/issues/61">#61</a>) (<a href="https://github.com/Edward-Muir/when/commit/2350a10c5cb3848ec8c22c05afff5177f131ebdc">2350a10</a>)]]></description>
-    </item>
-    <item>
-      <title>When? v1.24.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.24.0</guid>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/>- evidence windows for events, and release notes players can read (<a href="https://github.com/Edward-Muir/when/issues/60">#60</a>) (<a href="https://github.com/Edward-Muir/when/commit/6b4d317fa4ce974c577f3721f5f3e01a4435ce84">6b4d317</a>)]]></description>
     </item>
   </channel>
 </rss>

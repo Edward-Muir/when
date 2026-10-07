@@ -1,9 +1,14 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "The Archive now lists every daily from the last 30 days, and a missed day can be played to keep a streak."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.33.0",
+      "date": "2026-10-07",
+      "notes": [
+        "The Archive now lists every daily from the last 30 days, and a missed day can be played to keep a streak."
+      ]
+    },
     {
       "version": "1.32.1",
       "date": "2026-10-05",
