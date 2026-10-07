@@ -36,8 +36,9 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   colours, the index↔key maps and the idle pre-mount set are all derived from it, and the
   `ModePager` children must be rendered in that order. Don't add a hand-maintained mirror of
   the list.
-- **Archive** (`panels/ArchivePanel.tsx`) is the past curated decks, laid out on the game's own
-  timeline by the date each ran — see [../curated-themes/](../curated-themes/index.md#replaying-past-decks-the-archive-tab).
+- **Archive** (`panels/ArchivePanel.tsx`) is every daily from the last 30 days, laid out on
+  the game's own timeline by date, curated ones in a gold border — see
+  [../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-tab).
   Like every tab it has a path (`/archive`) that opens the home screen on it (see below).
 - **Achievements are a section of the Stats tab, not a page or a menu link** — nothing in the
   burger menu gets found. They sit at the very bottom of Stats (`stats/AchievementsSection.tsx`,

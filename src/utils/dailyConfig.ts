@@ -46,10 +46,19 @@ export function buildDailyDeck(
   allEvents: HistoricalEvent[],
   dateString: string = getLocalDateString()
 ): HistoricalEvent[] {
+  return buildDailyDeckWith(allEvents, dateString, false);
+}
+
+function buildDailyDeckWith(
+  allEvents: HistoricalEvent[],
+  dateString: string,
+  windowOnly: boolean
+): HistoricalEvent[] {
   return buildRampedDeck(buildDailyPool(allEvents, dateString), dateString, {
     allEvents,
     exclude: getRecentDailyCardNames(allEvents, dateString),
     ...getDailyBuildOptions(dateString),
+    windowOnly,
   });
 }
 
@@ -61,5 +70,7 @@ export function getDailyPreviewEvent(
   allEvents: HistoricalEvent[],
   dateString: string = getLocalDateString()
 ): HistoricalEvent | null {
-  return buildDailyDeck(allEvents, dateString)[0] ?? null;
+  // Only the opening window: it is the deck's prefix, so its first card is the same, and the
+  // tail is about half the work. The Archive calls this for thirty days at a time.
+  return buildDailyDeckWith(allEvents, dateString, true)[0] ?? null;
 }

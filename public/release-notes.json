@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "The Archive now lists every daily from the last 30 days, and a missed day can be played to keep a streak."
+  ],
   "releases": [
     {
       "version": "1.32.1",

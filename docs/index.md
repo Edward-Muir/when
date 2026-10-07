@@ -83,7 +83,8 @@ says: for "how does X work", read the source.
   maintainer page
 - [curated-themes/](curated-themes/index.md) — hand-authored daily themes: where the calendar
   lives, how to publish one, the date rule that lets you schedule tomorrow, the two
-  deck-builder escape hatches thin pools need, and the Archive tab that replays them
+  deck-builder escape hatches thin pools need, and the Archive tab that replays the last
+  30 days of dailies
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app
   end-to-end from a script, including the drag-and-drop recipe
 

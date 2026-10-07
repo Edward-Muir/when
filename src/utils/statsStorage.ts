@@ -214,6 +214,27 @@ export function saveDailyCadence(cadence: DailyCadence): void {
   writeJson(DAILY_CADENCE_KEY, cadence, 'daily cadence');
 }
 
+/**
+ * The daily runs in a set of played dates, in any order: the run that ends on the latest
+ * date (`current`, ended or not), the longest run, and that latest date. A run is a chain of
+ * consecutive calendar days.
+ */
+export function dailyRuns(playedDates: string[]): {
+  current: number;
+  longest: number;
+  last: string;
+} {
+  const dates = Array.from(new Set(playedDates)).sort();
+  let run = 0;
+  let longest = 0;
+  for (let i = 0; i < dates.length; i++) {
+    // eslint-disable-next-line security/detect-object-injection -- i is a bounded index
+    run = i > 0 && dayDiff(dates[i - 1], dates[i]) === 1 ? run + 1 : 1;
+    longest = Math.max(longest, run);
+  }
+  return { current: run, longest, last: dates.at(-1) ?? '' };
+}
+
 // --- Achievements (unlocked id -> ISO date) ---
 
 export interface Achievements {
@@ -319,14 +340,13 @@ export function recordGameResult(
     const date = state.lastConfig!.dailySeed!;
     const cadence = getDailyCadence();
     if (!cadence.playedDates.includes(date)) {
-      if (cadence.lastDailyDate && dayDiff(cadence.lastDailyDate, date) === 1) {
-        cadence.currentDailyStreak += 1;
-      } else {
-        cadence.currentDailyStreak = 1;
-      }
-      cadence.maxDailyStreak = Math.max(cadence.maxDailyStreak, cadence.currentDailyStreak);
-      cadence.lastDailyDate = date;
       cadence.playedDates.push(date);
+      // Derived from the dates rather than counted up, because a past day played from the
+      // Archive calendar arrives out of order and can join two runs into one.
+      const runs = dailyRuns(cadence.playedDates);
+      cadence.currentDailyStreak = runs.current;
+      cadence.maxDailyStreak = Math.max(cadence.maxDailyStreak, runs.longest);
+      cadence.lastDailyDate = runs.last;
       cadence.bestDailyCorrect = Math.max(cadence.bestDailyCorrect, correct);
       cadence.dailyCorrectSum += correct;
       // eslint-disable-next-line security/detect-object-injection -- correct is a numeric count

@@ -22,6 +22,7 @@ import {
   detectMilestones,
   LifetimeStats,
   DailyCadence,
+  dailyRuns,
 } from './statsStorage';
 import { findAchievementConfigMismatches } from '../data/achievementLogic';
 
@@ -395,6 +396,50 @@ describe('recordGameResult', () => {
     expect(getDailyCadence().maxDailyStreak).toBe(2);
   });
 
+  it('a past day filled in late joins the runs either side of it', () => {
+    const daily = (date: string) =>
+      recordGameResult(
+        makeGameState({ gameMode: 'daily', dailySeed: date, placedNames: [date] }),
+        NO_EVENTS
+      );
+    daily('2026-06-01');
+    daily('2026-06-02');
+    daily('2026-06-04');
+    daily('2026-06-05');
+    expect(getDailyCadence().maxDailyStreak).toBe(2);
+
+    // Played from the Archive calendar, after the days on both sides of it.
+    daily('2026-06-03');
+    const cadence = getDailyCadence();
+    expect(cadence.maxDailyStreak).toBe(5);
+    expect(cadence.currentDailyStreak).toBe(5);
+    expect(cadence.lastDailyDate).toBe('2026-06-05');
+  });
+
+  it('an older day filled in leaves the current run and last date alone', () => {
+    const daily = (date: string) =>
+      recordGameResult(
+        makeGameState({ gameMode: 'daily', dailySeed: date, placedNames: [date] }),
+        NO_EVENTS
+      );
+    daily('2026-06-10');
+    daily('2026-06-11');
+    daily('2026-06-01');
+    const cadence = getDailyCadence();
+    expect(cadence.currentDailyStreak).toBe(2);
+    expect(cadence.lastDailyDate).toBe('2026-06-11');
+    expect(cadence.playedDates).toHaveLength(3);
+  });
+
+  it('never lowers a stored longest run', () => {
+    saveDailyCadence({ ...getDailyCadence(), maxDailyStreak: 9 });
+    recordGameResult(
+      makeGameState({ gameMode: 'daily', dailySeed: '2026-06-01', placedNames: ['a'] }),
+      NO_EVENTS
+    );
+    expect(getDailyCadence().maxDailyStreak).toBe(9);
+  });
+
   it('unlocks First Steps (id 01) on the first recorded game and is idempotent', () => {
     const first = recordGameResult(
       makeGameState({ gameMode: 'suddenDeath', placedNames: ['a'] }),
@@ -630,5 +675,18 @@ describe('collection / era / themed / meta achievement tests', () => {
 describe('achievement config consistency', () => {
   it('every card has a test and every test has a card', () => {
     expect(findAchievementConfigMismatches()).toEqual({ missingTests: [], missingCards: [] });
+  });
+});
+
+describe('dailyRuns', () => {
+  it('finds the latest and the longest chain of consecutive days, in any order', () => {
+    expect(dailyRuns([])).toEqual({ current: 0, longest: 0, last: '' });
+    expect(
+      dailyRuns(['2026-06-05', '2026-06-01', '2026-06-02', '2026-06-03', '2026-06-05'])
+    ).toEqual({ current: 1, longest: 3, last: '2026-06-05' });
+    // Across a month end and the US spring-forward day.
+    expect(
+      dailyRuns(['2026-02-28', '2026-03-01', '2026-03-07', '2026-03-08', '2026-03-09'])
+    ).toEqual({ current: 3, longest: 3, last: '2026-03-09' });
   });
 });

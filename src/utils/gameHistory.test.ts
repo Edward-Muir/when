@@ -147,6 +147,24 @@ describe('buildGameRecord', () => {
     expect(buildGameRecord(state)?.misses).toEqual([]);
   });
 
+  it('names the past day a practice replay was of, and round-trips it through storage', () => {
+    const practice = makeGameState({ placedNames: ['a'] });
+    practice.lastConfig = { ...practice.lastConfig, dailyReplayDate: '2026-08-02' } as never;
+    const built = buildGameRecord(practice);
+    expect(built).toMatchObject({ mode: 'suddenDeath', replayOf: '2026-08-02' });
+    appendGameRecord(built!);
+    expect(getGameHistory()[0].replayOf).toBe('2026-08-02');
+  });
+
+  it('gives a missed day recorded as its daily no replayOf, only its date', () => {
+    // What `asRecordedDaily` hands the recorder: the replay date has become the daily seed.
+    const filled = makeGameState({ gameMode: 'daily', dailySeed: '2026-08-02' });
+    filled.lastConfig = { ...filled.lastConfig, dailyReplayDate: '2026-08-02' } as never;
+    const built = buildGameRecord(filled);
+    expect(built).toMatchObject({ mode: 'daily', date: '2026-08-02' });
+    expect(built).not.toHaveProperty('replayOf');
+  });
+
   it('keeps the theme outcome only for theme games', () => {
     const state = makeGameState({ placedNames: ['a'] });
     expect(buildGameRecord(state, { cleared: true, perfect: true })).not.toHaveProperty('cleared');

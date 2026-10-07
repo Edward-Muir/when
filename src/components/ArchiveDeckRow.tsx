@@ -1,52 +1,58 @@
 import React, { useState } from 'react';
 import { Lock, Check, Trophy } from 'lucide-react';
 import { HistoricalEvent } from '../types';
-import { ArchiveEntry, ArchiveStatus } from '../utils/themeReplay';
+import { ArchiveDay } from '../utils/dailyReplay';
+import { getThemeDisplayName } from '../utils/dailyTheme';
 import { ThemeBest } from '../utils/themeBests';
 import { formatShareDate } from '../utils/share';
+import { formatWeekday, formatWeekdayDate } from '../utils/statsDerived';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
 
 interface ArchiveDeckRowProps {
-  entry: ArchiveEntry;
-  /** The deck's opening card, for the art. Null when the theme resolves to nothing. */
+  day: ArchiveDay;
+  /** The card that opened the day's deck, for the art. Null when the day resolves to nothing. */
   seedEvent: HistoricalEvent | null;
-  best: ThemeBest | undefined;
-  /** False for a locked or too-thin deck; the card renders disabled. */
-  playable: boolean;
-  onPlay: () => void;
+  /** Curated days: the stored best on the theme. */
+  themeBest: ThemeBest | undefined;
+  /** Ordinary days: the most events placed in any game of the day (`dayBest`). */
+  best: number | undefined;
+  /** Starts the day; absent for a locked row, which renders disabled. */
+  onPlay?: () => void;
 }
 
 /**
- * One deck on the Archive timeline: the game's own timeline row (date column, tick, landscape
- * card) with a theme in the card instead of an event. The row and card dimensions mirror
- * `Timeline/TimelineEvent.tsx` and `Card.tsx`'s landscape size exactly, so the Archive reads
- * as the same object the player builds in a game.
+ * One day on the Archive timeline: the game's own timeline row (date column, tick, landscape
+ * card) with the day's deck in the card instead of an event. The row and card dimensions
+ * mirror `Timeline/TimelineEvent.tsx` and `Card.tsx`'s landscape size exactly, so the Archive
+ * reads as the same object the player builds in a game.
  *
- * The date column shows the day the deck ran as the daily; the year sits beneath it because
- * the list will span years. No opacity modifiers on theme tokens anywhere here — those
- * compile to nothing (see CLAUDE.md); dimming is `opacity-70` and `grayscale`.
+ * A curated day's card has a gold border. A missed day's art is greyed, the same treatment
+ * a locked row gets, without the lock: it is the one the player can still go and fill in.
+ * No opacity modifiers on theme tokens anywhere here — those compile to nothing (see
+ * CLAUDE.md); dimming is `opacity-70` and `grayscale`.
  */
 const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
-  entry,
+  day,
   seedEvent,
+  themeBest,
   best,
-  playable,
   onPlay,
 }) => {
   const [imageError, setImageError] = useState(false);
-  const { theme, releaseDate, status, cardCount } = entry;
-  const locked = status !== 'replayable';
+  const { date, status, played, curated } = day;
+  const name = getThemeDisplayName(day.theme);
+  const locked = !onPlay;
+  const missed = !played && status === 'replayable';
   const hasImage = !!seedEvent?.image_url && !imageError;
-  const year = releaseDate.slice(0, 4);
 
   return (
-    <div className="flex items-center w-full py-1" data-archive-theme={theme.id}>
+    <div className="flex items-center w-full py-1" data-testid={`archive-day-${date}`}>
       {/* Date column (fixed 96px width) with tick */}
       <div className="w-24 pl-2 flex items-center justify-end shrink-0">
         <span className="pr-2 text-right leading-tight font-mono">
-          <span className="block text-text font-bold text-sm">{formatShareDate(releaseDate)}</span>
-          <span className="block text-text-muted text-xs">{year}</span>
+          <span className="block text-text font-bold text-sm">{formatShareDate(date)}</span>
+          <span className="block text-text-muted text-xs">{formatWeekday(date)}</span>
         </span>
         <div className="w-3 h-1 bg-accent shrink-0" />
       </div>
@@ -55,17 +61,11 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
       <div className="flex-1 pl-3">
         <button
           onClick={onPlay}
-          disabled={!playable}
-          aria-label={
-            status === 'upcoming'
-              ? `${theme.name}: coming ${formatShareDate(releaseDate)}`
-              : status === 'today'
-                ? `${theme.name}: replay tomorrow`
-                : `Play ${theme.name}`
-          }
-          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
-            playable ? 'active:scale-95' : 'opacity-70'
-          }`}
+          disabled={locked}
+          aria-label={rowLabel(day, name, locked)}
+          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
+            curated ? 'border-2 border-accent' : 'border border-border'
+          } ${locked ? 'opacity-70' : 'active:scale-95'}`}
         >
           {/* Image section (40% width) */}
           <div className="w-[40%] h-full relative overflow-hidden">
@@ -76,7 +76,7 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
                 loading="lazy"
                 decoding="async"
                 onError={() => setImageError(true)}
-                className={`w-full h-full object-cover ${locked ? 'grayscale' : ''}`}
+                className={`w-full h-full object-cover ${locked || missed ? 'grayscale' : ''}`}
               />
             ) : (
               <div className="w-full h-full flex items-center justify-center bg-border">
@@ -95,9 +95,9 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
           {/* Title section (60% width) */}
           <div className="w-[60%] h-full flex flex-col justify-center px-2 py-1 gap-0.5">
             <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
-              {theme.name}
+              {name}
             </span>
-            <BestLine best={best} status={status} playable={playable} cardCount={cardCount} />
+            <DayLine day={day} themeBest={themeBest} best={best} />
           </div>
         </button>
       </div>
@@ -105,36 +105,47 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
   );
 };
 
+/** What a screen reader hears for the row: what tapping it does, and which day it is. */
+function rowLabel({ date, status }: ArchiveDay, name: string, locked: boolean): string {
+  if (status === 'upcoming') return `${name}: coming ${formatShareDate(date)}`;
+  if (status === 'today') return locked ? `${name}: replay tomorrow` : `Play ${name}, today`;
+  return `Play ${name}, ${formatWeekdayDate(date)}`;
+}
+
 /**
- * The record line: what to beat, or why there is nothing to beat yet. The score is shown
- * over the cards a run can place — the resolved pool minus the seed card that opens the
- * timeline — so a perfect clear reads as a full fraction. The upcoming teaser carries no
- * line at all: its date column is already in the future, which says everything.
+ * The record line: how the player did, or why there is nothing to show. A curated day's best
+ * is over the cards a run can place — the resolved pool minus the seed card that opens the
+ * timeline — so a perfect clear reads as a full fraction. An ordinary day's pool is the
+ * catalogue, so its best is a bare count. The upcoming teaser carries no line at all: its
+ * date column is already in the future, which says everything.
  */
-const BestLine: React.FC<{
-  best: ThemeBest | undefined;
-  status: ArchiveStatus;
-  playable: boolean;
-  cardCount: number;
-}> = ({ best, status, playable, cardCount }) => {
+const DayLine: React.FC<{
+  day: ArchiveDay;
+  themeBest: ThemeBest | undefined;
+  best: number | undefined;
+}> = ({ day, themeBest, best }) => {
   const lineClass = 'flex items-center gap-1 text-xs leading-tight font-body';
-  if (status === 'upcoming') return null;
-  if (status === 'today') {
-    return <span className={`${lineClass} text-text-muted`}>Replay tomorrow</span>;
+  const muted = (text: string) => <span className={`${lineClass} text-text-muted`}>{text}</span>;
+  if (day.status === 'upcoming') return null;
+  if (day.status === 'today') return muted(day.played ? 'Replay tomorrow' : "Today's challenge");
+  if (!day.played) return muted('Missed');
+  if (day.curated && themeBest) {
+    const placeable = Math.max(1, (day.cardCount ?? 0) - 1);
+    return (
+      <span className={`${lineClass} text-accent font-semibold`}>
+        {themeBest.perfect ? (
+          <Trophy className="w-3 h-3 shrink-0" aria-label="Perfect clear" />
+        ) : themeBest.cleared ? (
+          <Check className="w-3 h-3 shrink-0" aria-label="Cleared" />
+        ) : null}
+        High score: {themeBest.correctCount}/{placeable}
+      </span>
+    );
   }
-  if (!playable) return <span className={`${lineClass} text-text-muted`}>Unavailable</span>;
-  if (!best) return <span className={`${lineClass} text-text-muted`}>Not played yet</span>;
-  const placeable = Math.max(1, cardCount - 1);
-  return (
-    <span className={`${lineClass} text-accent font-semibold`}>
-      {best.perfect ? (
-        <Trophy className="w-3 h-3 shrink-0" aria-label="Perfect clear" />
-      ) : best.cleared ? (
-        <Check className="w-3 h-3 shrink-0" aria-label="Cleared" />
-      ) : null}
-      High score: {best.correctCount}/{placeable}
-    </span>
-  );
+  if (!day.curated && best !== undefined) {
+    return <span className={`${lineClass} text-accent font-semibold`}>High score: {best}</span>;
+  }
+  return muted('Played');
 };
 
 export default ArchiveDeckRow;

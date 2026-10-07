@@ -48,6 +48,12 @@ export interface GameRecord {
   /** Theme games only: the deck ran dry / ran dry without a mistake. */
   cleared?: boolean;
   perfect?: boolean;
+  /**
+   * A practice replay of a past daily from the Archive: the day it replayed, so that day's
+   * high score can count it (`dayBest` in dailyReplay.ts). A missed day filled in from the
+   * Archive is recorded as that day's daily instead, and carries no `replayOf`.
+   */
+  replayOf?: string;
   /** Custom games only: the hand size, so scores group by comparable rules. */
   handSize?: number;
   /** Daily only, patched in once the leaderboard answers. */
@@ -99,6 +105,7 @@ const OPTIONAL_NUMBERS = ['handSize', 'rank', 'totalPlayers', 'durationMs'] as c
 
 function readOptionalFields(raw: Partial<GameRecord>, record: GameRecord): void {
   if (typeof raw.themeId === 'string') record.themeId = raw.themeId;
+  if (typeof raw.replayOf === 'string') record.replayOf = raw.replayOf;
   /* eslint-disable security/detect-object-injection -- keys come from the const lists above */
   for (const key of OPTIONAL_FLAGS) {
     if (typeof raw[key] === 'boolean') record[key] = raw[key];
@@ -178,6 +185,8 @@ export function buildGameRecord(
   }
   if (!dailySeed) {
     record.handSize = state.lastConfig?.suddenDeathHandSize ?? DAILY_HAND_SIZE;
+    const replayOf = state.lastConfig?.dailyReplayDate;
+    if (replayOf) record.replayOf = replayOf;
   }
   return record;
 }

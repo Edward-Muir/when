@@ -251,8 +251,7 @@ Fix: `lg:max-w-3xl` (or per-panel) plus `lg:grid-cols-*` on the chip and tile gr
 
 ### C5. Empty states span the full window while everything else is 384px
 
-On `/archive` and `/timeline`, the empty-state body text runs edge-to-edge across 1440px ("A
-curated daily appears here the day after it runs — come back and beat your score."), directly
+On `/timeline`, the empty-state body text runs edge-to-edge across 1440px, directly
 under a 384px hint pill. It's the one place the width _is_ used, and it's used wrongly. Fix:
 constrain to the same column.
 
