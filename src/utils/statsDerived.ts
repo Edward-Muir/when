@@ -42,10 +42,16 @@ export function formatShortDate(iso: string): string {
   return `${d} ${MONTHS.at(m - 1) ?? ''}`.trim();
 }
 
+/** "2026-08-14" -> "Fri". Junk gives "". */
+export function formatWeekday(iso: string): string {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) return '';
+  return WEEKDAYS.at(utcDate(iso).getUTCDay()) ?? '';
+}
+
 /** "2026-08-14" -> "Fri 14 Aug". */
 export function formatWeekdayDate(iso: string): string {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso;
-  return `${WEEKDAYS.at(utcDate(iso).getUTCDay())} ${formatShortDate(iso)}`;
+  return `${formatWeekday(iso)} ${formatShortDate(iso)}`;
 }
 
 /** Days since the Monday of `iso`'s week: Monday 0 … Sunday 6. */

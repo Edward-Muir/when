@@ -3,6 +3,7 @@ import {
   buildHeatmapWeeks,
   dailyAverage,
   formatShortDate,
+  formatWeekday,
   formatWeekdayDate,
   lifetimeFrom,
   recordsFrom,
@@ -27,6 +28,8 @@ describe('date helpers', () => {
     expect(formatShortDate('2026-06-28')).toBe('28 Jun');
     expect(formatWeekdayDate('2026-08-14')).toBe('Fri 14 Aug');
     expect(formatWeekdayDate('2026-03-08')).toBe('Sun 8 Mar');
+    expect(formatWeekday('2026-08-14')).toBe('Fri');
+    expect(formatWeekday('junk')).toBe('');
     expect(formatShortDate('junk')).toBe('junk');
   });
 });

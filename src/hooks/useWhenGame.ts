@@ -147,12 +147,15 @@ function applyTurnUpdate(
  *
  * An Archive replay names its theme on the config and is dealt from that theme's pool with
  * a fresh seed (`themeReplay.ts`). A theme missing from the calendar yields an empty deck,
- * so `startGame`'s size guard refuses it loudly rather than dealing the catalogue.
+ * so `startGame`'s size guard refuses it loudly rather than dealing the catalogue. A past
+ * ordinary day played from the Archive calendar deals that date's daily deck
+ * (`dailyReplay.ts`); a past curated day carries `curatedThemeId` too and takes the branch
+ * above.
  *
  * Custom and challenge games use the filter chain; they have no date to key a pool on.
  */
 function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
-  const { mode, dailySeed, curatedThemeId } = config;
+  const { mode, dailySeed, curatedThemeId, dailyReplayDate } = config;
 
   if (mode === 'daily' && dailySeed) return buildDailyDeck(allEvents, dailySeed);
 
@@ -160,6 +163,8 @@ function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): Historic
     const theme = getCuratedThemeById(curatedThemeId);
     return theme ? buildThemeReplayDeck(allEvents, theme, config.challengeSeed) : [];
   }
+
+  if (dailyReplayDate) return buildDailyDeck(allEvents, dailyReplayDate);
 
   const filtered = filterPool(allEvents, {
     difficulties: config.selectedDifficulties,

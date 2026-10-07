@@ -69,7 +69,8 @@ export type Era =
  * Both modes run the same mechanics (draw on correct, hand shrinks on a miss, game over
  * when the hand empties); they differ only in how the deck is built. `daily` is seeded
  * from the calendar date; `suddenDeath` is built from the Custom page's filters, or from a
- * curated theme's pool for an Archive replay (`GameConfig.curatedThemeId`).
+ * curated theme's pool for an Archive replay (`GameConfig.curatedThemeId`), or from a past
+ * day's daily deck for a day played from the Archive calendar (`GameConfig.dailyReplayDate`).
  */
 export type GameMode = 'daily' | 'suddenDeath';
 
@@ -244,6 +245,14 @@ export interface GameConfig {
    * not touch the daily's result, streak or leaderboard. See src/utils/themeReplay.ts.
    */
   curatedThemeId?: string;
+
+  /**
+   * A past day played from the Archive calendar (local `YYYY-MM-DD`). The mode stays
+   * `suddenDeath` for the same reason as `curatedThemeId`: the daily's result, progress and
+   * leaderboard hold today's game. A missed day still counts as that day's daily in the
+   * stats, through `asRecordedDaily`. See src/utils/dailyReplay.ts.
+   */
+  dailyReplayDate?: string;
 
   // Challenge code (shareable seeded games)
   challengeSeed?: string; // Seed string for deterministic shuffle (the challenge code itself)

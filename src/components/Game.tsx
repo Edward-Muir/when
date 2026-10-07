@@ -226,15 +226,14 @@ const Game: React.FC<GameProps> = ({
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
-  // Theme name for the TopBar pill: the daily's theme, or the deck an Archive replay is of.
+  // Theme name for the TopBar pill: the deck an Archive replay is of, or the theme of the day
+  // being played (today's daily, or a past day from the Archive calendar).
   const dailyThemeDisplay = useMemo(() => {
     const replayId = state.lastConfig?.curatedThemeId;
     if (replayId) return getCuratedThemeById(replayId)?.name;
-    if (state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
-      return getThemeDisplayName(getDailyTheme(state.lastConfig.dailySeed));
-    }
-    return undefined;
-  }, [state.gameMode, state.lastConfig?.dailySeed, state.lastConfig?.curatedThemeId]);
+    const date = state.lastConfig?.dailySeed ?? state.lastConfig?.dailyReplayDate;
+    return date ? getThemeDisplayName(getDailyTheme(date)) : undefined;
+  }, [state.lastConfig]);
 
   const { setNodeRef: setBottomBarRef } = useDroppable({ id: 'bottom-bar-zone' });
 
