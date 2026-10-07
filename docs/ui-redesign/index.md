@@ -23,8 +23,8 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
   place: the `BOARD COLUMN` comment in `src/index.css`. Read it before changing the gutter, the
   gap or the card width — all three feed the same `--board-*` vars, and getting it wrong
   detaches the accent rail from every row's tick. The same three classes (`board-center`,
-  `board-center-item`, `board-rail`) do the job in `Timeline`, `Game`'s bottom bar,
-  `GameStartTransition` and `ArchivePanel`.
+  `board-center-item`, `board-rail`) do the job in `Timeline`, `Game`'s bottom bar and
+  `GameStartTransition`.
 
 ## Home is a five-tab pager
 
@@ -36,8 +36,8 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   colours, the index↔key maps and the idle pre-mount set are all derived from it, and the
   `ModePager` children must be rendered in that order. Don't add a hand-maintained mirror of
   the list.
-- **Archive** (`panels/ArchivePanel.tsx`) is the past curated decks, laid out on the game's own
-  timeline by the date each ran — see [../curated-themes/](../curated-themes/index.md#replaying-past-decks-the-archive-tab).
+- **Archive** (`panels/ArchivePanel.tsx`) is a calendar of every past daily, each day playable
+  and the curated ones ringed gold — see [../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-calendar).
   Like every tab it has a path (`/archive`) that opens the home screen on it (see below).
 - **Achievements are a section of the Stats tab, not a page or a menu link** — nothing in the
   burger menu gets found. They sit at the very bottom of Stats (`stats/AchievementsSection.tsx`,
@@ -146,7 +146,7 @@ designed, and the clean board still looks better. **Do not build it.** What rema
   untinted: a tint would force a mask over the board's own content plus a `text-shadow` halo on
   the labels.
 - The scroller carries `data-board-scroller` as `scripts/tick-landing-probe.js`'s handle on the
-  scrolling element, since `board-center` is also on the hand bar and on ArchivePanel.
+  scrolling element, since `board-center` is also on the hand bar.
 
 The board has the rail, and the two lit things that ride it:
 

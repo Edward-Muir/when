@@ -111,6 +111,28 @@ describe('buildHeatmapWeeks', () => {
     ]);
   });
 
+  it('starts at `from` when given, blanking the days before it, and rings the curated days', () => {
+    const { weeks } = buildHeatmapWeeks({
+      playedDates: ['2026-06-01'],
+      unlocked: {},
+      today,
+      from: '2026-08-19', // a Wednesday
+      minWeeks: 1,
+      isCurated: (date) => date === '2026-08-21' || date === '2026-09-04',
+    });
+    expect(weeks).toHaveLength(3);
+    expect(weeks[0][0]).toMatchObject({ date: '2026-08-17', beforeRange: true });
+    expect(weeks[0][2]).toMatchObject({ date: '2026-08-19', beforeRange: false });
+    expect(weeks[0][4]).toMatchObject({ date: '2026-08-21', curated: true });
+    expect(weeks[2][4]).toMatchObject({ date: '2026-09-04', curated: true, isFuture: true });
+    expect(weeks.flat().filter((cell) => cell.curated)).toHaveLength(2);
+  });
+
+  it('marks nothing curated or out of range without the options (the Stats grid)', () => {
+    const { weeks } = buildHeatmapWeeks({ playedDates: [], unlocked: {}, today, minWeeks: 2 });
+    expect(weeks.flat().some((cell) => cell.curated || cell.beforeRange)).toBe(false);
+  });
+
   it('ignores traces from the future or of the wrong shape', () => {
     const { weeks } = buildHeatmapWeeks({
       playedDates: ['2030-01-01', 'not-a-date'],

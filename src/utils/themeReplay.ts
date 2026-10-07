@@ -9,7 +9,8 @@ import { generateChallengeSeed } from './challengeCode';
 import { minDeckSize } from './gameLogic';
 
 /**
- * Replaying a curated theme after its day: the Archive tab.
+ * Replaying a curated theme after its day: a gold-ringed day on the Archive calendar, which
+ * `dailyReplay.ts` turns into this replay plus the day's date.
  *
  * A replay is deliberately a `suddenDeath` game, not a `daily` with an old seed. Everything
  * keyed on `gameMode === 'daily'` / `dailySeed` — the single stored daily result, the daily
@@ -37,24 +38,6 @@ export const REPLAY_HAND_SIZE = DAILY_HAND_SIZE;
  */
 export const REPLAY_MIN_POOL = minDeckSize(1, REPLAY_HAND_SIZE);
 
-/** One row of the Archive list. */
-export type ArchiveStatus =
-  /** Ran on a past day; can be replayed. */
-  | 'replayable'
-  /** Running today — replayable from tomorrow. */
-  | 'today'
-  /** The next scheduled deck, teased but not yet playable. */
-  | 'upcoming';
-
-export interface ArchiveEntry {
-  theme: CuratedTheme;
-  /** The day the theme ran (earliest date on or before today), or will run for `upcoming`. */
-  releaseDate: string;
-  status: ArchiveStatus;
-  /** Events the theme resolves to in the current catalogue. */
-  cardCount: number;
-}
-
 /**
  * The curated theme a finished (or running) game belongs to, if any: an Archive replay names
  * it on the config, a daily on a curated day resolves it from the date. Undefined for an
@@ -64,67 +47,10 @@ export interface ArchiveEntry {
 export function getCuratedThemeIdForConfig(config: GameConfig | null): string | undefined {
   if (!config) return undefined;
   if (config.curatedThemeId) return config.curatedThemeId;
-  if (!config.dailySeed) return undefined;
-  const theme = getDailyTheme(config.dailySeed);
+  const date = config.dailySeed ?? config.dailyReplayDate;
+  if (!date) return undefined;
+  const theme = getDailyTheme(date);
   return theme.type === 'curated' ? theme.curated.id : undefined;
-}
-
-/**
- * Themes the Archive shows, oldest first, given the player's local date.
- *
- * A theme is listed once its earliest date is today or earlier: strictly past dates are
- * replayable, today's is shown locked so the list never looks empty on the first curated day
- * and the "day after" rule is visible. Of the themes still to come, exactly one — the next
- * scheduled — closes the list as a locked teaser; the rest stay hidden so the calendar is not
- * laid bare. `YYYY-MM-DD` strings compare correctly as strings, so no date parsing is involved.
- */
-export function getArchiveEntries(
-  themes: CuratedTheme[],
-  allEvents: HistoricalEvent[],
-  today: string
-): ArchiveEntry[] {
-  const entries: ArchiveEntry[] = [];
-  const cardCount = (theme: CuratedTheme) => buildCuratedPool(allEvents, theme).length;
-  const listed = new Set<string>();
-  for (const theme of themes) {
-    const dates = [...(theme.dates ?? [])].filter((date) => date <= today).sort();
-    const releaseDate = dates.at(0);
-    if (!releaseDate) continue;
-    listed.add(theme.id);
-    entries.push({
-      theme,
-      releaseDate,
-      status: releaseDate === today ? 'today' : 'replayable',
-      cardCount: cardCount(theme),
-    });
-  }
-
-  // The teaser: the nearest future date among themes not already on the list.
-  let upcoming: { theme: CuratedTheme; date: string } | undefined;
-  for (const theme of themes) {
-    if (listed.has(theme.id)) continue;
-    const date = [...(theme.dates ?? [])]
-      .filter((d) => d > today)
-      .sort()
-      .at(0);
-    if (date && (!upcoming || date < upcoming.date)) upcoming = { theme, date };
-  }
-  if (upcoming) {
-    entries.push({
-      theme: upcoming.theme,
-      releaseDate: upcoming.date,
-      status: 'upcoming',
-      cardCount: cardCount(upcoming.theme),
-    });
-  }
-
-  return entries.sort((a, b) =>
-    a.releaseDate === b.releaseDate
-      ? a.theme.id.localeCompare(b.theme.id)
-      : a.releaseDate < b.releaseDate
-        ? -1
-        : 1
-  );
 }
 
 /**
@@ -171,22 +97,4 @@ export function buildThemeReplayDeck(
   seed: string | undefined
 ): HistoricalEvent[] {
   return buildRampedDeck(buildCuratedPool(allEvents, theme), seed, { allEvents, bandSpread: 1 });
-}
-
-/**
- * The card that fronts a theme in the Archive: the opening card of the theme's deck seeded
- * on its release date. Usually the card the player saw on the day, but not guaranteed —
- * that deck also applied the seven-day exclusion, and reproducing it means walking the
- * recency chain for every listed theme, a few hundred milliseconds on the main thread for
- * a list this size. `windowOnly` because only index 0 is read.
- */
-export function getThemeSeedEvent(
-  allEvents: HistoricalEvent[],
-  theme: CuratedTheme,
-  releaseDate: string
-): HistoricalEvent | null {
-  const pool = buildCuratedPool(allEvents, theme);
-  return (
-    buildRampedDeck(pool, releaseDate, { allEvents, bandSpread: 1, windowOnly: true })[0] ?? null
-  );
 }

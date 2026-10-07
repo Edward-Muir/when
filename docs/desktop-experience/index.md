@@ -243,7 +243,8 @@ would genuinely use the width don't get it:
   scroll; two or three columns at `lg:` would fit far more on one screen.
 - **Stats**: the four stat tiles wrap their labels ("Longest / timeline") inside a 2-col grid
   while 1000px sits empty; the "Your Year" heatmap is squeezed.
-- **Archive / Timeline**: single-column lists that want a grid.
+- **Timeline**: a single-column list that wants a grid. (The Archive calendar is 384px wide
+  and scrolls sideways; at `lg:` it could show the whole year unscrolled.)
 - **Daily**: the hero card is a 360×570 portrait, so on a 900px-tall laptop the Play button is
   near the fold with nothing else on screen.
 
@@ -251,8 +252,7 @@ Fix: `lg:max-w-3xl` (or per-panel) plus `lg:grid-cols-*` on the chip and tile gr
 
 ### C5. Empty states span the full window while everything else is 384px
 
-On `/archive` and `/timeline`, the empty-state body text runs edge-to-edge across 1440px ("A
-curated daily appears here the day after it runs — come back and beat your score."), directly
+On `/timeline`, the empty-state body text runs edge-to-edge across 1440px, directly
 under a 384px hint pill. It's the one place the width _is_ used, and it's used wrongly. Fix:
 constrain to the same column.
 

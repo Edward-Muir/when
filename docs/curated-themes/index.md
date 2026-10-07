@@ -214,56 +214,65 @@ The outcome is gated to games that belong to a curated theme (`getCuratedThemeId
 to exhaust is not a theme, and "Theme Cleared!" on it would be a lie; a seeded daily that runs
 dry ends as an ordinary game over.
 
-## Replaying past decks: the Archive tab
+## Replaying past days: the Archive calendar
 
-The home pager's second tab lists every theme whose date has passed, on the game's own
-timeline by the date it ran, each carrying the player's best on it. Tapping one replays it.
-The pieces, and the decisions behind them:
+The home pager's second tab is a GitHub-style calendar of every daily since 2026-07-01
+(`DAILY_REPLAY_FROM`): the days the player played are filled, and the curated days are ringed
+in gold. Tapping a day opens a day card (`ArchiveDayCard`) that plays it. The pieces, and the
+decisions behind them:
 
-**A replay is a `suddenDeath` game with `curatedThemeId` on the config, never a `daily` with
-an old seed.** Everything keyed on `gameMode === 'daily'` / `dailySeed` — the single stored
-daily result, the cadence streak, the leaderboard warm and submit, the reminder — would
-otherwise fire for a date that is not today, and the first of those would overwrite today's
-result with yesterday's. `composeDeck` in `useWhenGame` routes a `curatedThemeId` to the
-theme's pool; everything else about the game is a Custom game, including which stats buckets
-it lands in. It carries no challenge code because a code cannot encode a hand-picked pool.
+**A past day is a `suddenDeath` game with `dailyReplayDate` on the config, never a `daily`
+with an old seed.** Everything keyed on `gameMode === 'daily'` / `dailySeed` — the single
+stored daily result and board, the in-progress save, the leaderboard warm and submit, the
+reminder — would otherwise fire for a date that is not today, and the first of those would
+overwrite today's result with yesterday's. The leaderboard also accepts yesterday's date, so
+only the client keeps a replay off it. It carries no challenge code because a code cannot encode
+a date-seeded deck or a hand-picked pool. `src/utils/dailyReplay.ts` builds the config.
 
-**Reshuffled every play, from the whole theme.** `buildThemeReplayDeck` seeds
-`buildRampedDeck` with `archive:<id>:<random>` and applies no seven-day exclusion (that is a
-date-keyed daily concern; a replay has no date). Restart reseeds too. Rebuilding the day's
-exact deck was considered and rejected: it makes beating your best a memory test, and the
-exclusion chain would drop cards from the theme. `bandSpread: 1` still applies — the cap's
-rationale above assumes a curated theme fires on a handful of dates, and replays break that
-assumption, so the same ~5 band-0 footholds will open most replays of a theme. Accepted: the
-alternative is the measured 99.7%-hardest-quartile opening.
+**What a day deals.** An ordinary day deals its own daily deck, `buildDailyDeck(date)`, rebuilt
+from today's catalogue, so it can differ slightly from what was dealt on the day; the point is
+to play the day, not reproduce it. A curated day deals the theme's reshuffled replay
+(`buildThemeReplayConfig` plus the date): `buildThemeReplayDeck` seeds `buildRampedDeck` with
+`archive:<id>:<random>` and applies no seven-day exclusion, and Restart reseeds too. Rebuilding
+a curated day's exact deck was considered and rejected: it makes beating your best a memory
+test, and the exclusion chain would drop cards from the theme. `bandSpread: 1` still applies —
+the cap's rationale above assumes a curated theme fires on a handful of dates, and replays
+break that assumption, so the same ~5 band-0 footholds will open most replays of a theme.
+Accepted: the alternative is the measured 99.7%-hardest-quartile opening. A curated day whose
+resolved pool has fallen under `REPLAY_MIN_POOL` (8, `startGame`'s own floor) deals the date's
+deck instead of failing.
 
-**The card that fronts a deck is `getThemeSeedEvent`, not `buildDailyDeck(date)[0]`.** The
-latter is the card the player actually saw, but it walks the 28-56-day recency chain per
-date, a few hundred milliseconds on the main thread for a list this size. The cheap version
-seeds the theme's own pool on the release date with `windowOnly`, and is usually but not
-always the same card.
+**A missed day counts; a played one is practice.** The stats recorder passes the finished game
+through `asRecordedDaily`, which turns a replay of a day not in `playedDates` into that day's
+daily (mode `daily`, the date as `dailySeed`) for recording only, so it fills the square and
+rejoins the daily run. A day already played records like any other replay. See
+[../stats-achievements/](../stats-achievements/index.md#back-filled-days).
 
-**Listing rule.** A theme is shown once its earliest date is today or earlier: strictly past
-dates are replayable, today's is a locked "Replay tomorrow" card (so the list is never empty
-on the first curated day and the rule is visible), and of the themes still to come exactly one —
-the next scheduled — closes the list as a locked teaser (name, date and opening art; the seed
-card is the one card shown face-up on the day anyway). Anything beyond it stays hidden so the
-calendar is not laid bare. The card count comes from the
-**resolved** pool, because slugs whose events lost their art drop out of `allEvents`; a deck
-under `REPLAY_MIN_POOL` (8, `startGame`'s own floor) renders disabled rather than failing
-with a console error. "Today" is `useToday`'s date passed down as a prop, and the panel also
-takes a `calendarVersion` that `ModeSelect` bumps after each calendar refetch — the refetch
-mutates module state that nothing re-renders on, so without it a theme fetched after boot
-stays invisible until the next unrelated render.
+**Today.** Today's square opens the ordinary daily while it is unplayed, so the result, resume and
+leaderboard work as on the Daily tab; once played it says "Replay from tomorrow".
+
+**The day card's art is the real opening card**, `getDailyPreviewEvent(date)`, which walks the
+28-56-day recency chain (a couple of hundred milliseconds the first time). A list of every day
+could not afford that, but one tap can: it runs a frame after the card opens, behind a
+placeholder. The grid itself draws no art, so nothing downloads until a day is opened, and each
+opening card already fronted the Daily tab on its day, so the card adds no new Cloudinary
+conversions.
+
+**The teaser.** Of the curated days still to come, exactly one — the next scheduled — is ringed
+(not tappable) and named under the grid; the rest stay hidden so the calendar is not laid bare.
+"Today" is `useToday`'s date passed down as a prop, and the panel also takes a
+`calendarVersion` that `ModeSelect` bumps after each calendar refetch — the refetch mutates
+module state that nothing re-renders on, so without it a theme fetched after boot stays
+unringed until the next unrelated render.
 
 **Personal bests** live in `when-theme-bests` (`themeBests.ts`), written by the stats recorder
 for the daily on a curated day and for every replay, so the day's score is the first record.
-`correctCount` is stored — the leaderboard's number, not the timeline length — and the card
-says "High score: N/M", M being the resolved pool minus the seed card so a perfect clear is a full fraction. A `bestThemeScore` milestone fires when a run beats a previous non-zero
+`correctCount` is stored — the leaderboard's number, not the timeline length — and a curated
+day's card says "High score: N/M", M being the resolved pool minus the seed card so a perfect clear is a full fraction. A `bestThemeScore` milestone fires when a run beats a previous non-zero
 record. See [../stats-achievements/](../stats-achievements/index.md).
 
 **Tests seam.** `__setCuratedThemesForTest` populates the list as well as the date index;
-`themeReplay.test.ts` and `ArchivePanel.test.tsx` build synthetic catalogues rather than
+`themeReplay.test.ts`, `dailyReplay.test.ts` and `ArchivePanel.test.tsx` build synthetic catalogues rather than
 loading the real one.
 
 ## The theme bank

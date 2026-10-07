@@ -12,8 +12,7 @@ import TimelinePanel from './panels/TimelinePanel';
 import DailyPanel from './panels/DailyPanel';
 import GamePopup from './GamePopup';
 import DailyCta from './DailyCta';
-import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
-import { buildThemeReplayConfig } from '../utils/themeReplay';
+import { loadCuratedThemes } from '../utils/curatedThemes';
 import { buildDailyConfig } from '../utils/dailyConfig';
 import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
 import { canResumeDailyProgress, getTodayDailyProgress } from '../utils/dailyProgress';
@@ -175,7 +174,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // calendar, so without this it would miss a theme scheduled for the day it just rolled into.
   //
   // The refetch mutates module state, which nothing re-renders on; `calendarVersion` is the
-  // signal the Archive tab recomputes its list on, so a theme fetched after boot appears.
+  // signal the Archive tab recomputes its gold rings on, so a theme fetched after boot shows.
   const [calendarVersion, setCalendarVersion] = useState(0);
   const today = useToday((date) => {
     refreshBoardRef.current(date);
@@ -233,10 +232,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   const handleDailyStart = () => {
     onStart(buildDailyConfig());
-  };
-
-  const handleArchivePlay = (theme: CuratedTheme) => {
-    onStart(buildThemeReplayConfig(theme));
   };
 
   const handleShareDaily = async () => {
@@ -321,12 +316,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             onReadMore={() => setInfoEvent(previewEvent)}
           />
 
-          {/* Archive page: past curated decks, replayable from the day after they ran */}
+          {/* Archive page: every past daily as a calendar, each day playable */}
           <ArchivePanel
             allEvents={allEvents}
             today={today}
             calendarVersion={calendarVersion}
-            onPlay={handleArchivePlay}
+            onPlay={onStart}
             active={activePage === indexForTabKey('archive')}
           />
 

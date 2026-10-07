@@ -8,6 +8,7 @@ import { clearDailyPoolCache } from '../../utils/dailyPool';
 import { recordThemeResult } from '../../utils/themeBests';
 import { hasSeenHint, markHintSeen } from '../../utils/playerStorage';
 import { TAB_HINT_TEXT } from '../../utils/hintCopy';
+import { formatWeekdayDate } from '../../utils/statsDerived';
 import { TAB_HINT_MOUNT_DELAY_MS } from '../../hooks/useTabHint';
 
 const catalogue: HistoricalEvent[] = Array.from({ length: 80 }, (_, i) => ({
@@ -74,67 +75,100 @@ const renderPanel = (props: Partial<React.ComponentProps<typeof ArchivePanel>> =
   return { onPlay };
 };
 
-describe('ArchivePanel', () => {
-  it('lists past decks oldest first, then today locked, then the next deck teased', () => {
-    renderPanel();
-    const cards = screen.getAllByRole('button');
-    expect(cards.map((c) => c.getAttribute('aria-label'))).toEqual([
-      'Play Plague Years',
-      'Play Kings of England',
-      'Running Today: replay tomorrow',
-      'Not Yet: coming May 1',
-    ]);
-    expect(screen.queryByText('Much Later')).toBeNull();
-    expect(cards[2]).toBeDisabled();
-    expect(within(cards[2]).getByText('Replay tomorrow')).toBeInTheDocument();
-    // The teaser is locked with no record line: its future date says what it is.
-    expect(cards[3]).toBeDisabled();
-    expect(within(cards[3]).getByText('Not Yet')).toBeInTheDocument();
-    expect(screen.getByText('May 1')).toBeInTheDocument();
-    expect(within(cards[3]).queryByText(/Replay tomorrow|Not played yet|High score/)).toBeNull();
-  });
+/** A day's square on the calendar, by the date its label starts with ("Fri 1 Mar, …"). */
+const findSquare = (date: string) =>
+  screen
+    .queryAllByRole('button')
+    .find((button) => button.getAttribute('aria-label')?.startsWith(`${formatWeekdayDate(date)},`));
 
-  it('reads like the Daily and Custom pages, with no deck count', () => {
+const square = (date: string) => {
+  const found = findSquare(date);
+  if (!found) throw new Error(`no square for ${date}`);
+  return found;
+};
+
+describe('ArchivePanel', () => {
+  it('reads like the Daily and Custom pages', () => {
     renderPanel();
     expect(screen.getByRole('heading', { level: 1, name: 'Archive' })).toBeInTheDocument();
-    expect(screen.getByText(/Replay past daily decks/)).toBeInTheDocument();
-    expect(screen.queryByText(/\d+ decks?$/)).toBeNull();
+    expect(screen.getByText(/Every past daily/)).toBeInTheDocument();
   });
 
-  it('shows the date each deck ran', () => {
+  it('draws every past day, ringing the curated ones', () => {
     renderPanel();
-    expect(screen.getByText('Mar 1')).toBeInTheDocument();
-    expect(screen.getByText('Jan 15')).toBeInTheDocument();
+    expect(square('2030-03-01')).toHaveAccessibleName(/missed, curated$/);
+    expect(square('2030-03-02')).toHaveAccessibleName(/missed$/);
+    expect(square(TODAY)).toHaveAccessibleName(/curated$/);
+    // The future is drawn blank: only today's week is shown past today, and none of it taps.
+    expect(findSquare('2030-04-11')).toBeUndefined();
   });
 
-  it('shows the stored best beside a deck, and nothing to beat otherwise', () => {
-    recordThemeResult('kings', { correctCount: 12, cleared: true, perfect: false });
+  it('fills the days the player played, from the daily cadence', () => {
+    localStorage.setItem('when-daily-cadence', JSON.stringify({ playedDates: ['2030-04-08'] }));
     renderPanel();
-    const kings = screen.getByRole('button', { name: 'Play Kings of England' });
-    // Over the 19 placeable cards: the 20-card pool minus the seed card.
-    expect(within(kings).getByText('High score: 12/19')).toBeInTheDocument();
-    expect(within(kings).getByLabelText('Cleared')).toBeInTheDocument();
-    const plagues = screen.getByRole('button', { name: 'Play Plague Years' });
-    expect(within(plagues).getByText('Not played yet')).toBeInTheDocument();
+    expect(square('2030-04-08')).toHaveAccessibleName(/played$/);
   });
 
-  it('starts a replay of the tapped deck', async () => {
+  it('names the next curated deck, and only that one', () => {
+    renderPanel();
+    expect(screen.getByText('Not Yet')).toBeInTheDocument();
+    expect(screen.getByText(/Next curated deck/)).toHaveTextContent(
+      formatWeekdayDate('2030-05-01')
+    );
+    expect(screen.queryByText('Much Later')).toBeNull();
+  });
+
+  it('plays a missed ordinary day as that date', async () => {
     const { onPlay } = renderPanel();
-    await userEvent.click(screen.getByRole('button', { name: 'Play Kings of England' }));
+    await userEvent.click(square('2030-03-02'));
+    expect(within(await screen.findByRole('dialog')).getByText('Missed')).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Play this day' }));
     expect(onPlay).toHaveBeenCalledTimes(1);
-    expect(onPlay.mock.calls[0][0].id).toBe('kings');
+    expect(onPlay.mock.calls[0][0]).toMatchObject({
+      mode: 'suddenDeath',
+      dailyReplayDate: '2030-03-02',
+    });
+    expect(onPlay.mock.calls[0][0].curatedThemeId).toBeUndefined();
   });
 
-  it('explains itself when nothing is scheduled at all', () => {
-    __setCuratedThemesForTest([]);
+  it('plays a curated day as the reshuffled theme, with its best on the card', async () => {
+    recordThemeResult('kings', { correctCount: 12, cleared: true, perfect: false });
+    const { onPlay } = renderPanel();
+    await userEvent.click(square('2030-03-01'));
+    const card = within(await screen.findByRole('dialog'));
+    expect(card.getByText('Kings of England')).toBeInTheDocument();
+    expect(card.getByText('Curated')).toBeInTheDocument();
+    // Over the 19 placeable cards: the 20-card pool minus the seed card.
+    expect(screen.getByText('High score: 12/19')).toBeInTheDocument();
+    expect(screen.getByLabelText('Cleared')).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Play this day' }));
+    expect(onPlay.mock.calls[0][0]).toMatchObject({
+      mode: 'suddenDeath',
+      curatedThemeId: 'kings',
+      dailyReplayDate: '2030-03-01',
+    });
+  });
+
+  it('offers a played day as a replay', async () => {
+    localStorage.setItem('when-daily-cadence', JSON.stringify({ playedDates: ['2030-04-08'] }));
     renderPanel();
-    expect(screen.getByText('No past decks yet')).toBeInTheDocument();
-    expect(screen.queryByRole('button')).toBeNull();
+    await userEvent.click(square('2030-04-08'));
+    expect(await screen.findByRole('button', { name: 'Replay' })).toBeInTheDocument();
   });
 
-  it('holds the rows back until the tab has been shown', () => {
-    renderPanel({ active: false });
-    expect(screen.queryByRole('button')).toBeNull();
+  it("offers today's ordinary daily while it is unplayed", async () => {
+    const { onPlay } = renderPanel();
+    await userEvent.click(square(TODAY));
+    await userEvent.click(await screen.findByRole('button', { name: "Play today's challenge" }));
+    expect(onPlay.mock.calls[0][0].mode).toBe('daily');
+  });
+
+  it('holds today back once played: replayable from tomorrow', async () => {
+    localStorage.setItem('when-daily-cadence', JSON.stringify({ playedDates: [TODAY] }));
+    renderPanel();
+    await userEvent.click(square(TODAY));
+    expect(await screen.findByText('Replay from tomorrow')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /Play|Replay/ })).toBeNull();
   });
 });
 

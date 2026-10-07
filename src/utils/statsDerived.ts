@@ -61,6 +61,10 @@ export interface HeatCell {
   isToday: boolean;
   /** After today: drawn blank so the current week keeps its shape. */
   isFuture: boolean;
+  /** Before the grid's `from` date: drawn blank, like the future. */
+  beforeRange: boolean;
+  /** `isCurated` said so: a curated theme's day, ringed in gold. */
+  curated: boolean;
 }
 
 export interface HeatmapModel {
@@ -84,15 +88,54 @@ export interface HeatmapInput {
   maxWeeks?: number;
   /** Never fewer, so a new player sees a strip rather than a stub. */
   minWeeks?: number;
+  /**
+   * Start here instead of at the player's earliest trace (still within `maxWeeks`); days
+   * before it in the first week are blank. The Archive starts at the first playable day.
+   */
+  from?: string;
+  /** Which days to ring as curated. */
+  isCurated?: (date: string) => boolean;
+}
+
+/** The earliest well-formed, non-future date the player has any trace of; today if none. */
+function earliestTrace(
+  playedDates: string[],
+  badgeDates: Iterable<string>,
+  firstPlayedDate: string | undefined,
+  today: string
+): string {
+  const traces = [...playedDates, ...badgeDates, firstPlayedDate ?? ''].filter(
+    (date) => /^\d{4}-\d{2}-\d{2}$/.test(date) && date <= today
+  );
+  return traces.length ? traces.reduce((a, b) => (a < b ? a : b)) : today;
+}
+
+/** The Monday the grid opens on: `first`'s week, kept within `minWeeks`..`maxWeeks` of today. */
+function gridStart(first: string, today: string, minWeeks: number, maxWeeks: number): string {
+  const oldestAllowed = addDays(today, -(maxWeeks - 1) * 7);
+  const youngestAllowed = addDays(today, -(minWeeks - 1) * 7);
+  const clamped =
+    first < oldestAllowed ? oldestAllowed : first > youngestAllowed ? youngestAllowed : first;
+  return addDays(clamped, -daysIntoWeek(clamped));
 }
 
 /**
- * The calendar as columns of weeks, ending on the week that holds today. Starts at the
- * earliest date the player has any trace of (first game, first daily, first badge),
- * clamped between `minWeeks` and `maxWeeks` back from today, and snapped to a Monday.
+ * The calendar as columns of weeks, ending on the week that holds today. Starts at `from`
+ * if given, else at the earliest date the player has any trace of (first game, first daily,
+ * first badge), clamped between `minWeeks` and `maxWeeks` back from today, and snapped to a
+ * Monday.
  */
 export function buildHeatmapWeeks(input: HeatmapInput): HeatmapModel {
-  const { playedDates, unlocked, firstPlayedDate, today, maxWeeks = 53, minWeeks = 20 } = input;
+  const {
+    playedDates,
+    unlocked,
+    firstPlayedDate,
+    today,
+    maxWeeks = 53,
+    minWeeks = 20,
+    from,
+    isCurated,
+  } = input;
 
   const badgesByDate = new Map<string, string[]>();
   for (const [id, date] of Object.entries(unlocked)) {
@@ -100,19 +143,8 @@ export function buildHeatmapWeeks(input: HeatmapInput): HeatmapModel {
   }
   const played = new Set(playedDates);
 
-  const traces = [...playedDates, ...badgesByDate.keys(), firstPlayedDate ?? ''].filter(
-    (date) => /^\d{4}-\d{2}-\d{2}$/.test(date) && date <= today
-  );
-  const earliestTrace = traces.length ? traces.reduce((a, b) => (a < b ? a : b)) : today;
-  const oldestAllowed = addDays(today, -(maxWeeks - 1) * 7);
-  const youngestAllowed = addDays(today, -(minWeeks - 1) * 7);
-  const clamped =
-    earliestTrace < oldestAllowed
-      ? oldestAllowed
-      : earliestTrace > youngestAllowed
-        ? youngestAllowed
-        : earliestTrace;
-  const start = addDays(clamped, -daysIntoWeek(clamped));
+  const first = from ?? earliestTrace(playedDates, badgesByDate.keys(), firstPlayedDate, today);
+  const start = gridStart(first, today, minWeeks, maxWeeks);
   const end = addDays(today, 6 - daysIntoWeek(today));
 
   const weeks: HeatCell[][] = [];
@@ -138,6 +170,8 @@ export function buildHeatmapWeeks(input: HeatmapInput): HeatmapModel {
         badgeIds: badgesByDate.get(date) ?? [],
         isToday: date === today,
         isFuture: date > today,
+        beforeRange: from !== undefined && date < from,
+        curated: isCurated?.(date) ?? false,
       });
     }
     weeks.push(week);

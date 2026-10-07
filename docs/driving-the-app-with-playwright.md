@@ -143,9 +143,10 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   (`getByRole('button', { name: /^sports$/i })`); `:text-is("Sports")` never matches. Don't
   guard a chip click with `if (await chip.count())`: a filter click that silently no-ops
   looks exactly like a clean pass against an unfiltered deck.
-- **Archive tab** (`[aria-label="Past decks"]`): past curated decks, each row showing
-  "Not played yet", a best score, or "Replay tomorrow" (a deck becomes replayable the day
-  after it ran).
+- **Archive tab** (`[role="grid"][aria-label="Past daily challenges"]`): one button per day
+  since 2026-07-01, named like `Fri 4 Sep, missed, curated`. Clicking one opens a `dialog`
+  with **Play this day** (missed), **Replay** (played), **Play today's challenge** (today,
+  unplayed) or "Replay from tomorrow" (today, played).
 - **Game over:** a Custom game shows **Restart** and **Home**. The daily shows Today's
   Leaderboard and a name input pre-filled with a random name, with **Submit to
   Leaderboard**, then a share step.

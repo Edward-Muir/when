@@ -18,7 +18,7 @@ index.tsx                      # BrowserRouter + the routes below
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
 │   │   ├── panels/                 # Daily, Archive, Custom, Stats, Timeline panels — one per tab
 │   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel
-│   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
+│   │   └── ArchiveDayCard.tsx      # The popup a tapped Archive calendar day opens: art, score, Play
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
 │       ├── ActiveCardDisplay.tsx → DraggableCard.tsx → Card.tsx
@@ -72,7 +72,8 @@ comment worth reading before you change it:
 | `challengeCode`   | Positional bit-packed share links; bit 0 is reserved and ignored on read     |
 | `cloudinaryImage` | Transform rung ladder with hard cost rules — see cloudinary-cost-controls.md |
 | `statsStorage`    | Persisted lifetime stats and achievements; folds older stored shapes on read |
-| `themeReplay`     | Archive replays: why they are `suddenDeath`, reshuffled, and never dated     |
+| `dailyReplay`     | Past days from the Archive calendar: `suddenDeath`, recorded as that day     |
+| `themeReplay`     | Curated-theme replays: why they are `suddenDeath` and reshuffled             |
 | `themeBests`      | Per-curated-theme personal bests (`when-theme-bests`)                        |
 
 Everything else (`gameLogic`, `placementLogic`, `eventLoader`, `playerStorage`,

@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "The Archive is now a calendar of every past daily, and a missed day can be played to fill its streak square."
+  ],
   "releases": [
     {
       "version": "1.32.1",

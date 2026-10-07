@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react';
 import { useWhenGame } from './useWhenGame';
 import { loadAllEvents } from '../utils/eventLoader';
-import { HistoricalEvent } from '../types';
+import { HistoricalEvent, Difficulty, ALL_CATEGORIES } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { ALL_REGIONS } from '../utils/regions';
 
@@ -9,6 +9,8 @@ import * as gameLogic from '../utils/gameLogic';
 import { __setCuratedThemesForTest } from '../utils/curatedThemes';
 import { clearDailyPoolCache } from '../utils/dailyPool';
 import { buildThemeReplayConfig } from '../utils/themeReplay';
+import { buildDailyDeck } from '../utils/dailyConfig';
+import { saveDailyResult } from '../utils/playerStorage';
 
 // Mock only loadAllEvents (the network call), keep filter functions real
 jest.mock('../utils/eventLoader', () => {
@@ -593,6 +595,72 @@ describe('useWhenGame - Archive replay', () => {
       });
     }
     expect(result.current.state.lastConfig?.challengeSeed).not.toBe(firstSeed);
+  });
+});
+
+describe('useWhenGame - past day from the Archive calendar', () => {
+  const catalogue = createTestEventDeck(40);
+  const date = '2030-01-01';
+  // The day was curated, so its daily pool is this list whatever the catalogue holds.
+  const theme = {
+    id: 'test-theme',
+    name: 'Test Theme',
+    eventNames: catalogue.filter((_, i) => i % 2 === 0).map((e) => e.name),
+    dates: [date],
+  };
+  const pastDay = {
+    mode: 'suddenDeath' as const,
+    selectedDifficulties: ['easy', 'medium', 'hard', 'very-hard'] as Difficulty[],
+    selectedCategories: [...ALL_CATEGORIES],
+    selectedEras: [...ALL_ERAS],
+    dailyReplayDate: date,
+    playerCount: 1,
+    suddenDeathHandSize: 5,
+  };
+
+  beforeEach(() => {
+    jest.useFakeTimers();
+    localStorage.clear();
+    mockedLoadAllEvents.mockResolvedValue(catalogue);
+    __setCuratedThemesForTest([theme]);
+    clearDailyPoolCache();
+  });
+
+  afterEach(() => {
+    jest.runOnlyPendingTimers();
+    jest.useRealTimers();
+    jest.clearAllMocks();
+    __setCuratedThemesForTest(null);
+    clearDailyPoolCache();
+  });
+
+  it("deals that date's daily deck, in its dealing order", async () => {
+    const { result } = renderHook(() => useWhenGame());
+    await act(async () => {
+      await Promise.resolve();
+    });
+    act(() => {
+      result.current.startGame(pastDay);
+    });
+    const { state } = result.current;
+    expect(state.gameMode).toBe('suddenDeath');
+    const dealt = [...state.timeline, ...state.players[0].hand, ...state.deck].map((e) => e.name);
+    expect(dealt).toEqual(buildDailyDeck(catalogue, date).map((e) => e.name));
+  });
+
+  it("never touches today's daily slots", async () => {
+    const { result } = renderHook(() => useWhenGame());
+    await act(async () => {
+      await Promise.resolve();
+    });
+    act(() => {
+      result.current.startGame(pastDay);
+    });
+    act(() => {
+      jest.runOnlyPendingTimers();
+    });
+    expect(localStorage.getItem('when-daily-progress')).toBeNull();
+    expect(saveDailyResult).not.toHaveBeenCalled();
   });
 });
 

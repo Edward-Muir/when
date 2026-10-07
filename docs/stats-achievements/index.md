@@ -33,8 +33,9 @@ the defaults.
 
 `recordGameResult` splits on **daily vs non-daily only**, via `lastConfig.dailySeed`. Every
 non-daily game is `suddenDeath`: a Custom game from the Custom page or a challenge code (both
-carry a code), or an Archive replay of a curated theme (which carries `curatedThemeId` instead,
-since a code cannot encode a hand-picked pool). Archive replays count in the `suddenDeath`
+carry a code), or a day replayed from the Archive calendar (which carries `dailyReplayDate`,
+plus `curatedThemeId` on a curated day, since a code cannot encode either). Except for a
+missed day (see [Back-filled days](#back-filled-days)), Archive replays count in the `suddenDeath`
 buckets like any Custom game.
 
 **`when-theme-bests` is the one per-thing record**, and it is keyed by theme id rather than
@@ -45,6 +46,25 @@ replay — so the day's score is the first "best" a replay tries to beat.
 
 `getLifetimeStats()` folds retired stored shapes onto the current one, idempotently, on read.
 Copy that pattern for future shape changes rather than migrating in place.
+
+### Back-filled days
+
+A past day played from the Archive calendar ([../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-calendar))
+runs as `suddenDeath` so it can never touch today's single daily slots. If the player missed
+that day, `useGameStatsRecorder` passes the finished game through `asRecordedDaily`
+(`dailyReplay.ts`), which hands every recorder the same game with mode `daily` and the replay
+date as `dailySeed`. The day then counts exactly as if it had been played on the day: the
+cadence and score histogram, the `daily` lifetime bucket, the daily-only in-game streak, a
+`when-game-history` record dated on that day, the milestones, and the theme best. Badges it
+earns are dated today, the day they were earned. A day already played records as an ordinary
+replay and leaves the day's own record alone. Streak badges can be farmed this way; that is
+accepted, the point being to let people play.
+
+**The daily run is derived from `playedDates`, not counted up.** `recordGameResult` re-runs
+`dailyRuns(playedDates)` after adding a date: `currentDailyStreak` is the run ending on the
+latest played date, and `maxDailyStreak` is the longest run, never lowered below the stored
+value. Counting up (+1 when the new date is one day after `lastDailyDate`) breaks the moment
+a date arrives out of order: a filled gap reset the run to 1 and never joined the two sides.
 
 ## Per-game history (`when-game-history`)
 
@@ -81,6 +101,9 @@ lifetime totals, the collection meter, and last the **Achievements** section.
 
 Decisions, so they are not re-litigated:
 
+- **The Stats calendar is read-only.** The same component (`stats/CalendarHeatmap.tsx`), with
+  bigger squares and gold curated rings, is the Archive tab, which is where a day is played.
+  Tapping a square here only reads it out beneath the grid.
 - **The calendar is weeks-as-columns with horizontal scroll** (the GitHub look), opened on
   the latest weeks. `overscroll-x-contain` keeps the swipe from chaining into the pager's
   own horizontal track. It shows played / skipped only, with a star on badge-unlock days and
