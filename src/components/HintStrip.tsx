@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
-import { Lightbulb, X } from 'lucide-react';
+import { Lightbulb, LucideIcon, X } from 'lucide-react';
 
 interface HintStripProps {
   /** The hint to show, or null for hidden. Keep the component mounted and drive this. */
@@ -11,6 +11,8 @@ interface HintStripProps {
    * `inline`: a block under a home-tab heading.
    */
   placement?: 'floating' | 'inline';
+  /** The leading icon; a lightbulb for a hint. */
+  icon?: LucideIcon;
 }
 
 /**
@@ -25,7 +27,12 @@ interface HintStripProps {
  * The positioned wrapper is a plain div because framer writes `transform` inline, which
  * would override a Tailwind translate.
  */
-const HintStrip: React.FC<HintStripProps> = ({ text, onDismiss, placement = 'inline' }) => {
+const HintStrip: React.FC<HintStripProps> = ({
+  text,
+  onDismiss,
+  placement = 'inline',
+  icon: Icon = Lightbulb,
+}) => {
   const reduceMotion = useReducedMotion();
   const floating = placement === 'floating';
   const motionProps = reduceMotion
@@ -57,7 +64,7 @@ const HintStrip: React.FC<HintStripProps> = ({ text, onDismiss, placement = 'inl
                 floating ? 'rounded-full whitespace-nowrap' : 'rounded-xl'
               }`}
             >
-              <Lightbulb className="h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
+              <Icon className="h-4 w-4 shrink-0 text-accent" aria-hidden="true" />
               <span className={floating ? 'truncate' : 'flex-1'}>{text}</span>
               <X className="h-4 w-4 shrink-0 text-text-muted" aria-hidden="true" />
             </button>
