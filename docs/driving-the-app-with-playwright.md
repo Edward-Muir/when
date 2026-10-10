@@ -143,7 +143,7 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   (`getByRole('button', { name: /^sports$/i })`); `:text-is("Sports")` never matches. Don't
   guard a chip click with `if (await chip.count())`: a filter click that silently no-ops
   looks exactly like a clean pass against an unfiltered deck.
-- **Archive tab**: one row per day for the last 30 days, then the next curated deck locked,
+- **Archive tab**: one row per day for the last 30 days, then tomorrow's daily locked,
   each `[data-testid="archive-day-YYYY-MM-DD"]` holding one button ("Play Clockwork, Fri 2
   Oct"; today's is "Play <theme>, today"). The line reads "Missed", "High score: N" (or
   "N/M" on a curated day), "Played", "Today's challenge" or "Replay tomorrow". A row's art

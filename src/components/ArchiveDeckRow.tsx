@@ -125,17 +125,17 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
 
 /** What a screen reader hears for the row: what tapping it does, and which day it is. */
 function rowLabel({ date, status }: ArchiveDay, name: string, locked: boolean): string {
-  if (status === 'upcoming') return `${name}: coming ${formatShareDate(date)}`;
+  if (status === 'upcoming') return `${name}: coming tomorrow`;
   if (status === 'today') return locked ? `${name}: replay tomorrow` : `Play ${name}, today`;
   return `Play ${name}, ${formatWeekdayDate(date)}`;
 }
 
 /**
  * Why a locked row can't be played, for the pill its tap raises. One line on a 375px phone,
- * so under ~36 characters (see `hintCopy.ts`); the longest date, "Sep 30", makes 35.
+ * so under ~36 characters (see `hintCopy.ts`). The teaser is always tomorrow.
  */
-export function lockedRowText({ date, status }: ArchiveDay): string {
-  if (status === 'upcoming') return `Opens ${formatShareDate(date)} as the Daily Challenge`;
+export function lockedRowText({ status }: ArchiveDay): string {
+  if (status === 'upcoming') return 'Opens tomorrow as the Daily Challenge';
   return 'Done for today. Replay it tomorrow.';
 }
 

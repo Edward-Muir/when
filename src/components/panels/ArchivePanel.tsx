@@ -38,8 +38,8 @@ interface ArchivePanelProps {
  * timeline by date, curated days in a gold border. Tapping a past day plays it (see
  * `utils/dailyReplay.ts`): a missed day counts as that day's daily, a played one is
  * practice, and a curated day deals its theme reshuffled. Today's row plays the ordinary
- * daily until it is played, then locks until tomorrow; the next scheduled curated deck
- * closes the list as a locked teaser. Tapping a locked row says why, in a pill floating at
+ * daily until it is played, then locks until tomorrow; tomorrow's daily closes the list
+ * as a locked teaser. Tapping a locked row says why, in a pill floating at
  * the foot of the timeline: the list opens scrolled to the bottom, where both locked rows
  * sit, so a pill under the heading would land far from the thumb and, by shrinking the
  * scroll area, push the tapped row off screen.
@@ -155,7 +155,8 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
  * while the art arrives. Newest first: the list opens on today. Nothing starts until the tab
  * has been shown, and a new day or catalogue starts over.
  *
- * The teaser has no dealt deck yet, so it shows its theme's seeded opening card as before.
+ * The teaser on a curated day shows its theme's seeded opening card; on any other day it is
+ * tomorrow's real opening card, the art the Daily tab will front then.
  */
 function useDaySeedEvents(
   enabled: boolean,
