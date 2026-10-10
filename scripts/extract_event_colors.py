@@ -11,10 +11,11 @@ Uses a simplified "Okmain" algorithm:
   6. Clamp lightness, convert to hex
 
 Dependencies: pip install Pillow numpy requests
-Usage: python scripts/extract_event_colors.py [--force] [--file NAME] [--dry-run] [--sample N]
+Usage: python scripts/extract_event_colors.py [--force] [--file NAME] [--slugs a,b] [--dry-run] [--sample N]
 
 Reads the event files listed in public/events/manifest.json (`{ "files": [...] }`).
-`--file` restricts the run to one of them, e.g. `--file themes.json`.
+`--file` restricts the run to one of them, e.g. `--file themes.json`. `--slugs` restricts it to
+the named events, so `--force --slugs a,b` re-extracts only replaced art, not a whole shard.
 
 Downloads use the same `thumbnail` transform as src/utils/cloudinaryImage.ts, so the
 script reuses a derived asset the game already requests instead of fetching the full
@@ -244,6 +245,9 @@ def process_events(args: argparse.Namespace) -> None:
             sys.exit(1)
         files = [args.file]
 
+    slugs = {s.strip() for s in args.slugs.split(",") if s.strip()} if args.slugs else None
+    seen_slugs: set[str] = set()
+
     total_processed = 0
     total_skipped = 0
     total_failed = 0
@@ -260,6 +264,11 @@ def process_events(args: argparse.Namespace) -> None:
         for event in events:
             if args.sample and total_processed >= args.sample:
                 break
+
+            if slugs is not None:
+                if event.get("name") not in slugs:
+                    continue
+                seen_slugs.add(event["name"])
 
             name = event.get("friendly_name", event.get("name", "?"))
             url = event.get("image_url")
@@ -307,6 +316,9 @@ def process_events(args: argparse.Namespace) -> None:
         if args.sample and total_processed >= args.sample:
             break
 
+    if slugs is not None and slugs - seen_slugs:
+        print(f"⚠ No event found for: {', '.join(sorted(slugs - seen_slugs))}", file=sys.stderr)
+
     print(f"\nDone: {total_processed} extracted, {total_skipped} skipped, {total_failed} failed")
 
 
@@ -314,6 +326,7 @@ def main():
     parser = argparse.ArgumentParser(description="Extract dominant colors from event images")
     parser.add_argument("--force", action="store_true", help="Re-extract even if color already exists")
     parser.add_argument("--file", type=str, help="Process only this manifest file, e.g. themes.json")
+    parser.add_argument("--slugs", type=str, help="Process only these event names, comma-separated")
     parser.add_argument("--dry-run", action="store_true", help="Print colors without writing to JSON")
     parser.add_argument("--sample", type=int, help="Process only first N events")
     args = parser.parse_args()

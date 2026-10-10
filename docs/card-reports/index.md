@@ -58,11 +58,18 @@ is the reasoning behind the design and the traps.
 
 **Triaged 2026-10-10: 49 reports on 43 cards.** The text and year reports were acted on and are
 recorded in [catalogue-error-backlog.md](../events-images/catalogue-error-backlog.md#2026-10-10-card-report-pass).
-What is left is art. **26 cards are queued for new images** in
-[`card-report-remakes_prompts.csv`](../curated-themes/art/card-report-remakes_prompts.csv), built
-by `theme-art-prompts.py --remake` from
-[`scenes-remake/`](../curated-themes/art/scenes-remake/card-reports-2026-10.json). Uploading
-them needs Cloudinary credentials, which a sandboxed session does not have.
+**All 26 art remakes shipped on 2026-10-10, and none is pending.** Every card in the first
+three rows of the table below has new art, generated from
+[`card-report-remakes_prompts.csv`](../curated-themes/art/card-report-remakes_prompts.csv)
+(built by `theme-art-prompts.py --remake` from
+[`scenes-remake/`](../curated-themes/art/scenes-remake/card-reports-2026-10.json)). Each image
+was checked by eye against its prompt before upload, and none was rejected. The 26 old assets
+were deleted from Cloudinary, and the replaced sources are kept in
+`when-images/_replaced/card-reports-2026-10/`. `first-pharmacopoeia`'s old asset was the one
+`dioscorides-de-materia-medica` also pointed at, so that picture was first copied to a
+Dioscorides-owned asset (`dioscorides-de-materia-medica_xxj2v7`): Dioscorides keeps the same art
+under its own `public_id`. Colours were re-extracted for just these cards with
+`extract_event_colors.py --force --slugs`.
 
 **The main cause is art uploaded under the wrong card.** 17 reported images show another
 event entirely, and several are pixel-identical to that event's own image under a different
@@ -86,8 +93,10 @@ card would find them, at a Cloudinary cost to plan for first
 **"Birth of X" cards picture X's active life, not the birth.** The card stands for the era the
 person shaped, so a nursery scene misleads; the remake scenes for Napoleon and Nixon say so
 explicitly. **When replacing an asset, delete the old one** (or queue it in
-`cloudinary_delete_list.json`): `update-cloudinary-urls.js` keeps whichever asset of a slug is
-listed last.
+`when-images/compare-app/cloudinary_delete_list.json`, the path both `find_images_to_upload.js`
+and `delete_old_cloudinary.js` read): `update-cloudinary-urls.js` keeps whichever asset of a
+slug is listed last. The Admin API lists newest first, so that is the **oldest** one. Before
+deleting, check that no other event's `image_url` points at the asset.
 
 ## Known gaps
 
