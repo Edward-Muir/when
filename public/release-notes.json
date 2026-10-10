@@ -1,10 +1,15 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "Three duplicate cards were retired and several confusing card descriptions were corrected.",
-    "Twenty-six cards with wrong or flawed pictures now have new artwork."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.33.1",
+      "date": "2026-10-10",
+      "notes": [
+        "Three duplicate cards were retired and several confusing card descriptions were corrected.",
+        "Twenty-six cards with wrong or flawed pictures now have new artwork."
+      ]
+    },
     {
       "version": "1.33.0",
       "date": "2026-10-07",

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.33.1](https://github.com/Edward-Muir/when/compare/v1.33.0...v1.33.1) (2026-10-10)
+
+
+### Bug Fixes
+
+* act on the 2026-10 player card reports: new art for 26 cards, text and year fixes ([#80](https://github.com/Edward-Muir/when/issues/80)) ([36c06c3](https://github.com/Edward-Muir/when/commit/36c06c3d9ebc7261519e3836ef792528a29f4aca))
+
 ## [1.33.0](https://github.com/Edward-Muir/when/compare/v1.32.1...v1.33.0) (2026-10-07)
 
 
