@@ -48,7 +48,7 @@ beforeEach(() => {
   });
   __setCuratedThemesForTest([
     theme('later', 'Much Later', ['2030-06-01']),
-    theme('future', 'Not Yet', ['2030-05-01']),
+    theme('future', 'Not Yet', ['2030-04-11']),
     theme('today', 'Running Today', [TODAY], 20),
     theme('kings', 'Kings of England', ['2030-03-20'], 40),
     theme('plagues', 'Plague Years', ['2030-01-15'], 60),
@@ -108,7 +108,7 @@ describe('ArchivePanel', () => {
     expect(screen.getByText(/The last 30 days/)).toBeInTheDocument();
   });
 
-  it('lists the last thirty days, oldest first, then the next curated deck teased', () => {
+  it("lists the last thirty days, oldest first, then tomorrow's daily teased", () => {
     renderPanel();
     const dates = screen
       .getAllByTestId(/^archive-day-/)
@@ -116,13 +116,24 @@ describe('ArchivePanel', () => {
     expect(dates).toHaveLength(31);
     expect(dates[0]).toBe('2030-03-12');
     expect(dates.at(-2)).toBe(TODAY);
-    expect(dates.at(-1)).toBe('2030-05-01');
-    // Strictly thirty days: an older curated deck is gone, and only one future deck shows.
+    expect(dates.at(-1)).toBe('2030-04-11');
+    // Strictly thirty days: an older curated deck is gone, and only tomorrow shows ahead.
     expect(screen.queryByText('Plague Years')).toBeNull();
     expect(screen.queryByText('Much Later')).toBeNull();
     expect(
-      row('2030-05-01').getByRole('button', { name: 'Not Yet: coming May 1' })
+      row('2030-04-11').getByRole('button', { name: 'Not Yet: coming tomorrow' })
     ).toHaveAttribute('aria-disabled', 'true');
+    expect(row('2030-04-11').getByRole('button')).toHaveClass('border-accent');
+  });
+
+  it('teases tomorrow even when no curated deck is scheduled for it', () => {
+    __setCuratedThemesForTest([theme('later', 'Much Later', ['2030-06-01'])]);
+    renderPanel();
+    const rows = screen.getAllByTestId(/^archive-day-/);
+    expect(rows.at(-1)).toHaveAttribute('data-testid', 'archive-day-2030-04-11');
+    expect(row('2030-04-11').getByRole('button')).toHaveAttribute('aria-disabled', 'true');
+    expect(row('2030-04-11').getByRole('button')).not.toHaveClass('border-accent');
+    expect(screen.queryByText('Much Later')).toBeNull();
   });
 
   it('borders a curated day in gold, and no other', () => {
@@ -198,8 +209,8 @@ describe('ArchivePanel', () => {
 
   it('says when the teaser opens when its row is tapped, and does not play it', async () => {
     const { onPlay } = renderPanel();
-    await userEvent.click(row('2030-05-01').getByRole('button'));
-    expect(lockNote()).toHaveTextContent('Opens May 1 as the Daily Challenge');
+    await userEvent.click(row('2030-04-11').getByRole('button'));
+    expect(lockNote()).toHaveTextContent('Opens tomorrow as the Daily Challenge');
     expect(onPlay).not.toHaveBeenCalled();
   });
 
@@ -213,7 +224,7 @@ describe('ArchivePanel', () => {
     jest.useFakeTimers();
     try {
       renderPanel();
-      await userEvent.click(row('2030-05-01').getByRole('button'));
+      await userEvent.click(row('2030-04-11').getByRole('button'));
       expect(lockNote()).not.toBeEmptyDOMElement();
       act(() => jest.advanceTimersByTime(LOCK_NOTE_MS + 1000));
       await waitFor(() => expect(lockNote()).toBeEmptyDOMElement());
