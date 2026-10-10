@@ -53,7 +53,7 @@ describe('isReplayableDay', () => {
 describe('getArchiveDays', () => {
   const today = '2026-10-07';
 
-  it('lists the last thirty days oldest first, then the next curated deck', () => {
+  it("lists the last thirty days oldest first, then tomorrow's daily", () => {
     __setCuratedThemesForTest([
       theme('kings', ['2026-09-20'], 20),
       theme('old', ['2026-08-01'], 20),
@@ -65,14 +65,26 @@ describe('getArchiveDays', () => {
     expect(days[0].date).toBe('2026-09-08');
     expect(days.at(-2)).toMatchObject({ date: today, status: 'today', played: false });
     expect(days.at(-3)).toMatchObject({ date: '2026-10-06', status: 'replayable', played: true });
-    expect(days.at(-1)).toMatchObject({ date: '2026-10-09', status: 'upcoming' });
+    // Tomorrow, though the next curated deck is two days out.
+    expect(days.at(-1)).toMatchObject({ date: '2026-10-08', status: 'upcoming' });
+    expect(days.at(-1)?.curated).toBeUndefined();
     expect(days.find((d) => d.date === '2026-09-20')).toMatchObject({
       curated: { id: 'kings' },
       cardCount: 20,
     });
     // Strictly thirty days: an older curated deck is gone.
     expect(days.some((d) => d.curated?.id === 'old')).toBe(false);
-    expect(days.filter((d) => d.curated).map((d) => d.curated?.id)).toEqual(['kings', 'next']);
+    expect(days.filter((d) => d.curated).map((d) => d.curated?.id)).toEqual(['kings']);
+  });
+
+  it("teases tomorrow's curated deck as curated", () => {
+    __setCuratedThemesForTest([theme('next', ['2026-10-08'], 20)]);
+    expect(getArchiveDays(catalogue, today, []).at(-1)).toMatchObject({
+      date: '2026-10-08',
+      status: 'upcoming',
+      curated: { id: 'next' },
+      cardCount: 20,
+    });
   });
 
   it('never reaches back before the first puzzle', () => {

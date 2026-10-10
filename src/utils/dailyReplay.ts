@@ -8,7 +8,7 @@ import {
 import { ALL_ERAS } from './eras';
 import { DAILY_HAND_SIZE } from './dailyConfig';
 import { buildCuratedPool } from './dailyPool';
-import { CuratedTheme, getCuratedThemeForDate, listCuratedThemes } from './curatedThemes';
+import { CuratedTheme, getCuratedThemeForDate } from './curatedThemes';
 import { DailyTheme, getDailyTheme } from './dailyTheme';
 import { dayDiff, getDailyPuzzleNumber } from './puzzleDate';
 import { addDays } from './statsDerived';
@@ -53,7 +53,7 @@ export type ArchiveDayStatus =
   | 'replayable'
   /** Today: the ordinary daily while unplayed, then replayable from tomorrow. */
   | 'today'
-  /** The next scheduled curated deck, teased but not yet playable. */
+  /** Tomorrow's daily, teased but not yet playable. */
   | 'upcoming';
 
 /** One row of the Archive. */
@@ -71,8 +71,9 @@ export interface ArchiveDay {
 
 /**
  * The Archive's rows, oldest first: each of the last `ARCHIVE_DAYS` days ending today
- * (never before the first puzzle), then the next scheduled curated deck as a locked teaser.
- * The rest of the calendar stays hidden so it is teased rather than laid bare.
+ * (never before the first puzzle), then tomorrow's daily as a locked teaser, curated or not.
+ * Always tomorrow, never the next curated deck: a teaser days away leaves a gap on the
+ * timeline that reads as a missing day. The rest of the calendar stays hidden.
  */
 export function getArchiveDays(
   allEvents: HistoricalEvent[],
@@ -99,13 +100,8 @@ export function getArchiveDays(
     days.push(row(date, back === 0 ? 'today' : 'replayable'));
   }
 
-  let upcoming: string | undefined;
-  for (const theme of listCuratedThemes()) {
-    for (const date of theme.dates ?? []) {
-      if (date > today && (!upcoming || date < upcoming)) upcoming = date;
-    }
-  }
-  if (upcoming) days.push(row(upcoming, 'upcoming'));
+  const tomorrow = addDays(today, 1);
+  if (getDailyPuzzleNumber(tomorrow) !== null) days.push(row(tomorrow, 'upcoming'));
   return days;
 }
 

@@ -256,8 +256,10 @@ the deck's opening window. Each past day still walks its own 28-56-day recency c
 cache memoises only each walk's end), so thirty days measured ~700ms of main thread in one go.
 `useDaySeedEvents` in `ArchivePanel` therefore fills the art one day per macrotask, newest
 first, after the tab has first been shown; no long task is left. The rows render at once with a
-placeholder. The next scheduled curated deck closes the list as a locked teaser with its
-theme's seeded opening card (`getThemeSeedEvent`); the rest of the calendar stays hidden.
+placeholder. Tomorrow's daily closes the list as a locked teaser: a curated day with its
+theme's seeded opening card (`getThemeSeedEvent`), any other with its real opening card. Always
+tomorrow, never the next curated deck: a teaser days away left a gap on the timeline that read
+as a missing day. The rest of the calendar stays hidden.
 Every row image already fronted the Daily tab on its day, so the Archive adds no Cloudinary
 conversions.
 
