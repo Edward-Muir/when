@@ -8976,5 +8976,66 @@
     "_originalCategory": "migration",
     "_deprecatedAt": "2026-10-01T00:00:00.000Z",
     "_deprecatedReason": "Duplicate of maori-iwi-development: Same undated process as the development card (iwi, hapu and rohe forming); the development card has the fuller text and no misfit category."
+  },
+  {
+    "name": "maori-reach-new-zealand",
+    "friendly_name": "Maori Reach New Zealand",
+    "year": 1300,
+    "category": "migration",
+    "description": "Polynesian voyagers settled New Zealand, the last major landmass reached by humans, becoming the Maori.",
+    "difficulty": "medium",
+    "color": "#3d2e27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maori-reach-new-zealand_w6axda?_a=BAMAMikS0",
+    "has_detail": true,
+    "regions": [
+      "New Zealand"
+    ],
+    "_originalCategory": "migration",
+    "_deprecatedAt": "2026-10-10T00:00:00.000Z",
+    "_deprecatedReason": "Duplicate of maori-settlement-new-zealand: Same Polynesian landfall in Aotearoa, dated twenty years later, so the pair forced an arbitrary order; the kept card is in the ends-of-the-earth theme."
+  },
+  {
+    "name": "heavy-plow",
+    "friendly_name": "Heavy Plow Technology Spreads",
+    "year": 500,
+    "category": "agriculture",
+    "description": "The heavy wheeled plow spread through Northern Europe, enabling cultivation of dense clay soils for the first time.",
+    "difficulty": "hard",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heavy-plow_irbmv6?_a=BAMAMikS0",
+    "color": "#291e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ],
+    "_originalCategory": "agriculture",
+    "_deprecatedAt": "2026-10-10T00:00:00.000Z",
+    "_deprecatedReason": "Duplicate of moldboard-plow-adoption: Its year of 500 had no source and its own prose dated the plough to 643 and the eighth and ninth centuries, the window the kept card already carries; reverses the earlier distinct-beats dismissal after a player report."
+  },
+  {
+    "name": "stirrup-development",
+    "friendly_name": "Stirrup Development and Adoption",
+    "year": 600,
+    "category": "warfare",
+    "description": "The paired metal stirrup spread from Central Asia, transforming mounted warfare by providing riders with stability.",
+    "difficulty": "hard",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stirrup-development_nptsy5?_a=BAMAMikS0",
+    "color": "#5c3a25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Hungary"
+    ],
+    "_originalCategory": "warfare",
+    "_deprecatedAt": "2026-10-10T00:00:00.000Z",
+    "_deprecatedReason": "Duplicate of stirrup-adoption-europe: A single point at 600 wedged between stirrup-invented and stirrup-adoption-europe, with prose covering both beats; a player placing either beat was marked wrong."
   }
 ]

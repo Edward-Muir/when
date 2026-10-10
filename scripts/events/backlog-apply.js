@@ -44,7 +44,7 @@ const ROOT = path.join(__dirname, '..', '..');
 const MAPS_DIR = path.join(ROOT, 'untracked_data', 'backlog-fixes');
 const LEDGER = path.join(__dirname, 'year-range-decided.json');
 const DEPRECATED = path.join(EVENTS_DIR, 'deprecated.json');
-const DEPRECATED_AT = '2026-10-01T00:00:00.000Z';
+const DEPRECATED_AT = '2026-10-10T00:00:00.000Z';
 
 const die = (msg, lines) => {
   console.error(`ABORT: ${msg}`);

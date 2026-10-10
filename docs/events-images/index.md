@@ -42,7 +42,9 @@ tracked _here_ is the prompt builder, the scene files, the URL writer and the ba
 The pipeline:
 
 1. `scripts/events/theme-art-prompts.py` writes the prompts CSV for every manifest event without
-   Cloudinary art, from hand-authored scenes.
+   Cloudinary art, from hand-authored scenes. With `--remake` it writes rows for exactly the
+   slugs in `--scenes` instead, art or not: that is how bad live art is re-queued
+   (`docs/curated-themes/art/card-report-remakes_prompts.csv`, from the player reports).
 2. A scheduled browser task drives gemini.google.com through the CSV. It **saves to
    `~/Downloads`, as `.jpeg`**, not into `when-images/`; move the files by matching stems against
    the pending set, and make sure the downsampler accepts `.jpeg`.
@@ -92,7 +94,9 @@ point `--scenes` at a directory holding only the new batch.
 Scene rules: never describe text (the renderer garbles it and the suffix bans it, so paint the
 cause or the object instead — a shot-clock rule becomes a fast break); no colour adjectives,
 though material nouns like "bronze" or "silver" are fine and often necessary; figurative rather
-than establishing; likenesses by posture, not face; deaths and epidemics non-graphic.
+than establishing; likenesses by posture, not face; deaths and epidemics non-graphic. A "Birth of
+X" card pictures X in their active years, not the birth: the card stands for the era they shaped,
+and the scene should say "not a birth scene" because the title and description pull the other way.
 
 ## Writing image URLs
 

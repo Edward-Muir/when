@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Three duplicate cards were retired and several confusing card descriptions were corrected.",
+    "Twenty-six cards with wrong or flawed pictures now have new artwork."
+  ],
   "releases": [
     {
       "version": "1.33.0",

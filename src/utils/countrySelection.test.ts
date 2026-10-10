@@ -193,20 +193,21 @@ describe('against the real catalogue', () => {
 
   /**
    * Settings and share codes from before exclusions stored picks. Converted, each deals the
-   * pool it always did, measured with the old filter on 2026-09-30 over this same loader.
+   * pool it always did, measured with the old filter on 2026-09-30 over this same loader, less
+   * the cards retired since (two Europe-tagged duplicates on 2026-10-10).
    * The one exception is recorded in `legacyPicksToExclusions`: a transcontinental pick no
    * longer reaches a side that is not selected.
    */
   it('converts old picks to the pool they dealt', () => {
     const legacy = (regions: string[], countries: string[]) =>
       count({ regions, excluded: legacyPicksToExclusions(regions, countries) });
-    expect(legacy([...ALL_REGIONS], ['United Kingdom'])).toBe(4086);
+    expect(legacy([...ALL_REGIONS], ['United Kingdom'])).toBe(4084);
     expect(legacy(['Europe'], ['Germany'])).toBe(326);
     expect(legacy(['Europe', 'East Asia'], ['Germany', 'Japan'])).toBe(473);
     expect(legacy(['Europe', 'Middle East & North Africa'], ['Turkey'])).toBe(163);
     expect(legacy(['Europe', 'North & Central Asia'], ['Russia'])).toBe(166);
     expect(legacy(['Europe'], ['Russia'])).toBeLessThan(166);
-    expect(legacy(['Europe'], [])).toBe(3071);
+    expect(legacy(['Europe'], [])).toBe(3069);
   });
 });
 
