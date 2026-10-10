@@ -8420,7 +8420,7 @@
     "friendly_name": "Pesse Canoe",
     "year": -8040,
     "category": "craft",
-    "description": "A dugout canoe discovered in the Netherlands, the oldest known surviving boat in the world.",
+    "description": "Mesolithic people hollowed a Scots pine log into this dugout, preserved in Dutch peat as the oldest known surviving boat.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pesse-canoe_dkbecc?_a=BAMAMikS0",
     "color": "#25201c",
@@ -13223,7 +13223,7 @@
     "friendly_name": "Galen Systematizes Anatomy",
     "year": 200,
     "category": "medicine",
-    "description": "Galen, physician to Rome's emperors, built a system of anatomy and physiology from dissection that dominated medicine for centuries.",
+    "description": "Galen, physician to Rome's emperors, built a system of anatomy from dissecting apes and pigs that dominated medicine for centuries.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galen-medical-dominance_jiywcf?_a=BAMAMikS0",
     "color": "#2e1c18",
@@ -13512,23 +13512,6 @@
     ]
   },
   {
-    "name": "heavy-plow",
-    "friendly_name": "Heavy Plow Technology Spreads",
-    "year": 500,
-    "category": "agriculture",
-    "description": "The heavy wheeled plow spread through Northern Europe, enabling cultivation of dense clay soils for the first time.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heavy-plow_irbmv6?_a=BAMAMikS0",
-    "color": "#291e1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Europe"
-    ]
-  },
-  {
     "name": "zero-concept-india",
     "friendly_name": "Zero Emerges in India",
     "year": 500,
@@ -13751,24 +13734,6 @@
     "regions": [
       "Europe",
       "Middle East & North Africa"
-    ]
-  },
-  {
-    "name": "stirrup-development",
-    "friendly_name": "Stirrup Development and Adoption",
-    "year": 600,
-    "category": "warfare",
-    "description": "The paired metal stirrup spread from Central Asia, transforming mounted warfare by providing riders with stability.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stirrup-development_nptsy5?_a=BAMAMikS0",
-    "color": "#5c3a25",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "China",
-      "Hungary"
     ]
   },
   {
