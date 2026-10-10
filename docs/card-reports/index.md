@@ -56,24 +56,38 @@ is the reasoning behind the design and the traps.
 
 ## Open reports
 
-**Six `wrong-image` reports are open, blocked on Cloudinary credentials** — replacing a card's
-art means uploading a new asset, and no `CLOUDINARY_*` values are available to a sandboxed
-session. Triage, from fetching each image at the delivery rung the game uses:
+**Triaged 2026-10-10: 49 reports on 43 cards.** The text and year reports were acted on and are
+recorded in [catalogue-error-backlog.md](../events-images/catalogue-error-backlog.md#2026-10-10-card-report-pass).
+What is left is art. **26 cards are queued for new images** in
+[`card-report-remakes_prompts.csv`](../curated-themes/art/card-report-remakes_prompts.csv), built
+by `theme-art-prompts.py --remake` from
+[`scenes-remake/`](../curated-themes/art/scenes-remake/card-reports-2026-10.json). Uploading
+them needs Cloudinary credentials, which a sandboxed session does not have.
 
-| card                                           | verdict                                                                |
-| ---------------------------------------------- | ---------------------------------------------------------------------- |
-| `qhapaq-nan-expansion` (Inca roads)            | **wrong** — a Florence Nightingale hospital ward. Reported twice.      |
-| `jackie-robinson-mlb-debut`                    | **wrong** — a honey-hunter on ropes at a cliff hive.                   |
-| `medieval-jousting-tournaments`                | **wrong** — a 20th-century American courtroom with press cameras.      |
-| `sulfuric-acid-production` (German alchemists) | **wrong** — an Islamic courtyard majlis with musicians.                |
-| `telescope-invention`                          | fine — a period Dutch spyglass scene. No action.                       |
-| `birth-napoleon`                               | borderline — on-topic, but an adult's bicorne hangs in the birth room. |
+**The main cause is art uploaded under the wrong card.** 17 reported images show another
+event entirely, and several are pixel-identical to that event's own image under a different
+`public_id`: `crossbow-adoption-medieval` is the Pluto discovery, `medieval-jousting-tournaments`
+the Lindbergh trial, `tea-ceremony-codification` the VOC nutmeg plantation,
+`virchow-cellular-pathology` Great Zimbabwe, `paris-salon-culture` an iron bloomery and
+`jackie-robinson-mlb-debut` a honey hunter. Art also moved in chains: Wat Tyler's scene sits on
+`stari-most-mostar` while `wat-tyler-killed` shows a map being drawn, and the NS Lenin icebreaker
+sits on `world-food-programme-founded` while `ns-lenin-enters-service` shows a snow vehicle.
+**Expect more unreported swaps** from the same uploads. Comparing every live image against its
+card would find them, at a Cloudinary cost to plan for first
+([cloudinary-cost-controls.md](../cloudinary-cost-controls.md)).
 
-Each wrong image depicts a subject belonging to some _other_ card, and the asset is stored
-under the correct `public_id`, so the mis-assignment happened when the art was generated,
-not when the URL was built. Two of the four (`jackie-robinson-mlb-debut`,
-`medieval-jousting-tournaments`) have correct prompts in `all_prompts.csv`, not yet
-generated; the other two are not in that file and need prompts written.
+| Verdict                   | Cards                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Wrong subject (17)        | `crossbow-adoption-medieval`, `qhapaq-nan-expansion`, `world-food-programme-founded`, `wat-tyler-killed`, `stari-most-mostar`, `tea-ceremony-codification`, `medieval-jousting-tournaments`, `virchow-cellular-pathology`, `paris-salon-culture`, `jackie-robinson-mlb-debut`, `pascal-probability-theory`, `first-pharmacopoeia` (shares the Dioscorides asset), `sulfuric-acid-production`, `apuleius-golden-ass`, `birth-richard-nixon` (Churchill), `antioch-crusader-conflicts`, `ns-lenin-enters-service` (unreported) |
+| On topic, clear error (5) | `tv-remote-control` (a real-looking handgun), `telescope-invention` (19th-century dress and spyglass), `statue-unity` (about 5x human scale), `servetus-burned-at-stake` (mockup border, unclothed, night), `treaty-of-bretigny` (mockup frame, wrong heraldry)                                                                                                                                                                                                                                                              |
+| Remade by request (4)     | `birth-napoleon`, `human-genome-project` (double helix reads as 1953), `ripken-breaks-iron-man-record-1995` (road greys), `scots-reformation-movement` (19th-century oil lamp)                                                                                                                                                                                                                                                                                                                                               |
+| Fine, no action (2)       | `hippocratic-surgical-texts`, `jaffa-crusades` (the fault was its title, now fixed)                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+**"Birth of X" cards picture X's active life, not the birth.** The card stands for the era the
+person shaped, so a nursery scene misleads; the remake scenes for Napoleon and Nixon say so
+explicitly. **When replacing an asset, delete the old one** (or queue it in
+`cloudinary_delete_list.json`): `update-cloudinary-urls.js` keeps whichever asset of a slug is
+listed last.
 
 ## Known gaps
 

@@ -11,6 +11,7 @@ publish validator reads as unresolved. This emits the file that gets them illust
 Usage:
   python3 scripts/events/theme-art-prompts.py
   python3 scripts/events/theme-art-prompts.py --out path/to.csv --scenes path/to/scenes
+  python3 scripts/events/theme-art-prompts.py --remake --scenes path/to/scenes --out path/to.csv
 
 ## The CSV contract is five columns, not four
 
@@ -38,6 +39,13 @@ file cannot be recovered when the prompts are next needed.
 Joining is by slug and every mismatch is a hard error, never a skipped row: a scene for an
 unknown or already-illustrated event, or an un-illustrated event with no scene, fails the run.
 A positional join silently drops rows.
+
+## Remaking art that is already live
+
+`--remake` builds rows for exactly the slugs in `--scenes`, illustrated or not, for art that has
+to be redone (a player report, an asset uploaded under the wrong card). It drops the
+"un-illustrated event has no scene" check, since the batch is the scene file, and keeps the
+unknown-slug error. The prompts are the same skeleton, so a remake matches the house style.
 """
 
 import argparse
@@ -144,12 +152,24 @@ def main():
     parser = argparse.ArgumentParser(description="Build the art-prompt CSV for un-illustrated events.")
     parser.add_argument("--out", default=DEFAULT_OUT, help="CSV path to write")
     parser.add_argument("--scenes", default=DEFAULT_SCENES, help="Directory of scene JSON files")
+    parser.add_argument(
+        "--remake",
+        action="store_true",
+        help="Build rows for exactly the scened slugs, including events that already have art",
+    )
     args = parser.parse_args()
 
+    if args.remake and (args.out == DEFAULT_OUT or args.scenes == DEFAULT_SCENES):
+        sys.exit("--remake needs its own --scenes and --out, or it would overwrite the theme batch")
+
     events = load_events()
-    pending = {e["name"]: e for e in events if not has_art(e)}
-    illustrated = {e["name"] for e in events if has_art(e)}
     scenes = load_scenes(args.scenes)
+    if args.remake:
+        pending = {e["name"]: e for e in events if e["name"] in scenes}
+        illustrated = set()
+    else:
+        pending = {e["name"]: e for e in events if not has_art(e)}
+        illustrated = {e["name"] for e in events if has_art(e)}
 
     # Hard errors, both directions. A silently skipped row is how a batch ends up half-generated.
     unknown = sorted(s for s in scenes if s not in pending and s not in illustrated)

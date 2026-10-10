@@ -748,3 +748,60 @@ rather than duplicates. Recorded so they are not raised again.
   - `east-german-uprising` stays in `revolution`, which fits it.
   - `zoroaster-teaches` and `buddha-enlightenment` stay in `commerce`: there is no religion
     category, and adding one is a taxonomy change (challenge-code bits, daily rotation), not a fix.
+
+## 2026-10-10 card-report pass
+
+Raised by players through the in-app report button (`/card-reports`, 49 reports on 43 cards
+from 2026-08-02 to 2026-10-10), not by the writers. Image reports are triaged in
+[card-reports/](../card-reports/index.md#open-reports). Four of the reported cards
+(`windmills-grind-grain`, `trade-route-risk-reduction`, `polynesian-navigation-technology`,
+`muromachi-noh-theater`) had already been retired, and `polynesian-settlement-expansion` had
+already been given its window.
+
+**Deck impact, measured.** Cross-boundary daily repeats in `deckBuilder.test.ts` read 9 before
+this pass, 8 after the retirements and 5 after the two windows. The bound stays at 12.
+
+**Three ledger notes were wrong.** `year-range-decided.json` said `turfan-oasis-city`,
+`stirrup-development` and `heavy-plow` had no sourced bounds; Wikipedia gives both ends for all
+three. Two are now retired and the third has its window, so the notes are gone with them.
+
+### Duplicates retired (3)
+
+| Retired                   | Reason                                                                                                                                                                                                                                                           |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `maori-reach-new-zealand` | Duplicate of maori-settlement-new-zealand: Same Polynesian landfall in Aotearoa, dated twenty years later, so the pair forced an arbitrary order; the kept card is in the ends-of-the-earth theme.                                                               |
+| `heavy-plow`              | Duplicate of moldboard-plow-adoption: Its year of 500 had no source and its own prose dated the plough to 643 and the eighth and ninth centuries, the window the kept card already carries; reverses the earlier distinct-beats dismissal after a player report. |
+| `stirrup-development`     | Duplicate of stirrup-adoption-europe: A single point at 600 wedged between stirrup-invented and stirrup-adoption-europe, with prose covering both beats; a player placing either beat was marked wrong.                                                          |
+
+### Years and windows changed (2)
+
+| Slug                   | Was  | Now       | Evidence                                                                                                                                    |
+| ---------------------- | ---- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `turfan-oasis-city`    | 600  | 460-640   | Kan Bozhou made king 460, Tang annexation 640; 600 predated the Tang the description named. (https://en.wikipedia.org/wiki/Gaochang)        |
+| `panniers-wide-skirts` | 1720 | 1710-1780 | Met: in fashion around 1710, largest in the 1740s-50s, gone by the 1780s. (https://artsandculture.google.com/asset/panniers/DwGKkhcQ0y8xkQ) |
+
+### Names and descriptions corrected (6)
+
+| Slug                      | Change                                                                                                     | Evidence                                                                                                    |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `locarno-treaties`        | "European nations agreed to mutual borders" now names Germany, France, Belgium and the guarantors.         | Reported as unplaceable. (https://en.wikipedia.org/wiki/Locarno_Treaties)                                   |
+| `panniers-wide-skirts`    | Now hooped petticoats spreading court skirts, a fashion lasting decades; no longer side hoops at the hips. | The side-hoop shape is the 1740s form, not the 1710 start. Met, as above.                                   |
+| `galen-medical-dominance` | "From dissection" is now from dissecting apes and pigs.                                                    | Roman law barred human dissection; his own prose says so. (https://en.wikipedia.org/wiki/Galen)             |
+| `pesse-canoe`             | Leads with the Mesolithic dugout instead of its 1955 discovery.                                            | The window was right; the description invited placing the find. (https://en.wikipedia.org/wiki/Pesse_canoe) |
+| `turfan-oasis-city`       | Dropped "Tang" from the description and the prose.                                                         | The Tang dynasty began in 618, inside a kingdom that ran from 460.                                          |
+| `jaffa-crusades`          | Retitled Richard Relieves Jaffa.                                                                           | The title said Capture while the description and prose describe the 1192 relief.                            |
+
+### Prose corrected (1)
+
+| Slug                          | Change                                                                                                                                     | Evidence                                                                                                                                   |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| `coppi-giro-tour-double-1949` | Rewritten: Bartali five years older, not twelve; 1949 was his first Tour start; Coppi repeated the double in 1952; Pogačar did it in 2024. | (https://en.wikipedia.org/wiki/1949_Tour_de_France), (https://www.cyclingweekly.com/news/giro-d-italia-tour-de-france-double-winners-club) |
+
+### Dismissed on checking (4)
+
+| Slug                           | Flag            | Why dismissed                                                                                              |
+| ------------------------------ | --------------- | ---------------------------------------------------------------------------------------------------------- |
+| `rowing-olympic-debut-1900`    | bad-description | Accurate: rowing was cancelled for weather in 1896 and first held in 1900.                                 |
+| `windmill-introduction`        | wrong-year      | Weedley 1185 is right; the clashing 1180 duplicates the report came from were since retired.               |
+| `maori-settlement-new-zealand` | wrong-year      | 1280 is defensible; the clash was its 1300 twin, retired above.                                            |
+| `human-genome-project`         | other           | Text is right (launched 1990). The double-helix art reads as 1953, so the card is in the art remake batch. |
