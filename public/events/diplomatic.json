@@ -11446,7 +11446,7 @@
   {
     "name": "turfan-oasis-city",
     "friendly_name": "Gaochang Kingdom at Turfan",
-    "year": 600,
+    "year": 460,
     "category": "trade",
     "description": "The Gaochang kingdom ruled the Turfan oasis, growing rich taxing Silk Road caravans between China and Sogdiana.",
     "difficulty": "hard",
@@ -11458,7 +11458,8 @@
     "has_detail": true,
     "regions": [
       "China"
-    ]
+    ],
+    "year_end": 640
   },
   {
     "name": "harsha-empire",
