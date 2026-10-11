@@ -79,9 +79,30 @@ the Lindbergh trial, `tea-ceremony-codification` the VOC nutmeg plantation,
 `jackie-robinson-mlb-debut` a honey hunter. Art also moved in chains: Wat Tyler's scene sits on
 `stari-most-mostar` while `wat-tyler-killed` shows a map being drawn, and the NS Lenin icebreaker
 sits on `world-food-programme-founded` while `ns-lenin-enters-service` shows a snow vehicle.
-**Expect more unreported swaps** from the same uploads. Comparing every live image against its
-card would find them, at a Cloudinary cost to plan for first
-([cloudinary-cost-controls.md](../cloudinary-cost-controls.md)).
+**The unreported swaps were audited on 2026-10-10, and 44 more cards were remade.** Every live
+image was compared against its card, and the 44 ruled wrong got new art from
+[`art-audit-remakes_prompts.csv`](../curated-themes/art/art-audit-remakes_prompts.csv) (scenes in
+[`scenes-remake/art-audit-2026-10.json`](../curated-themes/art/scenes-remake/art-audit-2026-10.json)):
+37 showed another card's picture and 7 were framed or canvas mockups.
+
+What the audit established, for a future pass:
+
+- **The swaps were made before upload, not during it.** 24 of the 26 known-bad assets were
+  byte-identical to the local `downsampled_generated_images/<slug>.jpg` they came from, so the
+  wrong picture was already in `when-images`. A free "local bytes == Cloudinary bytes" check
+  therefore catches none of them. The audit has to look at the pictures.
+- **That listing is still useful.** It tells you which local file faithfully stands in for the
+  live asset (5,369 of 5,838), so only the rest need fetching, at the `thumbnail` rung.
+- **A dHash duplicate pass is free and exact.** Same picture on two cards means one is wrong;
+  it found 16 such cards on its own.
+- **Haiku reviewers need structure to be reliable.** 3×3 contact sheets with the card text kept
+  out of the image, a "describe every tile before judging" step, and a pilot with planted known
+  swaps (4×4 sheets missed 3 of 8). They also skip sheets, so check each agent's transcript for
+  both reads of every sheet. Their flag rate (~8%) needs a second, stricter pass and a human trim.
+- **Many swaps were alphabetical neighbours** (`mehen-snake-game` held `medieval-pointed-shoes`,
+  which held `medieval-jousting-tournaments`), consistent with an off-by-one rename when moving
+  files out of `~/Downloads`. The Haiku pass is not exhaustive, so checking the neighbours of
+  known swaps is the cheapest next lead if more turn up.
 
 | Verdict                   | Cards                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
