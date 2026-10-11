@@ -1,9 +1,14 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "Forty-four more cards that showed the wrong picture or a framed mockup now have new artwork."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.33.2",
+      "date": "2026-10-11",
+      "notes": [
+        "Forty-four more cards that showed the wrong picture or a framed mockup now have new artwork."
+      ]
+    },
     {
       "version": "1.33.1",
       "date": "2026-10-10",

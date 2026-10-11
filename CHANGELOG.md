@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.33.2](https://github.com/Edward-Muir/when/compare/v1.33.1...v1.33.2) (2026-10-11)
+
+
+### Bug Fixes
+
+* **art:** new artwork for 44 cards found by the art audit ([#81](https://github.com/Edward-Muir/when/issues/81)) ([dcdbc5d](https://github.com/Edward-Muir/when/commit/dcdbc5d16fb88499b7bddf349d5868a447dc0f26))
+
 ## [1.33.1](https://github.com/Edward-Muir/when/compare/v1.33.0...v1.33.1) (2026-10-10)
 
 

@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 16:16:37 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 08:44:44 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.33.2</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.33.2</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>**art:** new artwork for 44 cards found by the art audit (<a href="https://github.com/Edward-Muir/when/issues/81">#81</a>) (<a href="https://github.com/Edward-Muir/when/commit/dcdbc5d16fb88499b7bddf349d5868a447dc0f26">dcdbc5d</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.33.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.27.0</guid>
       <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/>- painted hourglass app icon, iOS launch screen and App Store screenshots (<a href="https://github.com/Edward-Muir/when/issues/64">#64</a>) (<a href="https://github.com/Edward-Muir/when/commit/b06f37e8b1424303b3dd4055a9a46f03683d0474">b06f37e</a>)]]></description>
-    </item>
-    <item>
-      <title>When? v1.26.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.26.0</guid>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/>- evidence windows across the whole catalogue (<a href="https://github.com/Edward-Muir/when/issues/62">#62</a>) (<a href="https://github.com/Edward-Muir/when/commit/eddd87000c602b4ac0c379007ea75495e90e366e">eddd870</a>)]]></description>
     </item>
   </channel>
 </rss>
