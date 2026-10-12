@@ -88,6 +88,8 @@ says: for "how does X work", read the source.
   lives, how to publish one, the date rule that lets you schedule tomorrow, the two
   deck-builder escape hatches thin pools need, and the Archive tab that replays the last
   30 days of dailies
+- [curated-themes/factory.md](curated-themes/factory.md) — the planned deck factory: scheduled
+  tasks on the laptop that author, illustrate, QC and open one curated deck PR a day
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app
   end-to-end from a script, including the drag-and-drop recipe
 
