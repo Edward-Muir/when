@@ -102,7 +102,7 @@ Seeing the whole list at once is what keeps themes from overlapping. Each new th
    - Enter them as `status: "done"`, so new themes are drawn around them.
    - The input is theme names and scope rules only, never events. This keeps the blind principle.
 2. **Generate against a coverage grid.**
-   - Candidates are spread across the 21 categories × 6 eras × the macro-regions in `src/data/regions.json`.
+   - Candidates are spread across the 21 categories × 8 eras × the macro-regions in `src/data/regions.json`.
    - Each grid cell shows how many themes already touch it, so thin areas get filled. Today's list leans to Europe, war and early-modern.
    - Several parallel Sonnet agents each take one slice of the grid and propose 40–60 themes.
 3. **Overlap pass.**
@@ -116,22 +116,51 @@ Seeing the whole list at once is what keeps themes from overlapping. Each new th
 5. **Order the list** so consecutive days vary. No two neighbours share a category, a dominant era or a dominant region. Big crowd-pleasers are spread out rather than front-loaded.
 6. **Edward reviews the list** as a PR: reorders, cuts, adds. After merge the factory only reads it, apart from marking progress.
 
-**One entry in `backlog.json`:**
+**One entry in `backlog.json`** (the file is `{"about": …, "themes": [...]}`, and `src/utils/backlogSchema.test.ts` checks it):
 
 ```json
 {
-  "id": "sea-battles",
-  "name": "Sea Battles",
-  "scope": "Yes if it is a named naval engagement between fleets.",
-  "boundary": "Ships, the vessels themselves; Pirates; Crossings, the voyages",
-  "neighbours": ["ships", "pirates", "crossings"],
-  "grid": { "categories": ["conflict"], "eras": ["ancient", "modern"], "regions": ["Global"] },
-  "example_beats": ["Salamis", "Lepanto", "Trafalgar", "Midway"],
+  "id": "broadsides",
+  "name": "Broadsides",
+  "scope": "Yes if it is a battle fought mainly between fleets at sea",
+  "boundary": "Broadsides: fleet against fleet; piracy goes to Pirates & Privateers, ship designs to Sail & Steam, the Armada and Trafalgar to English History.",
+  "neighbours": ["pirates", "ships", "english-history"],
+  "grid": {
+    "categories": ["warfare"],
+    "eras": ["ancient", "medieval", "earlyModern"],
+    "regions": ["Europe", "East Asia"]
+  },
+  "example_beats": ["Salamis (480 BC)", "Sluys (1340)", "Lepanto (1571)", "..."],
+  "probe": "naval (battle|victory|defeat)|sea battle|battle of (salamis|lepanto|jutland|midway)",
+  "appeal": 3,
   "status": "queued"
 }
 ```
 
+`probe` is the regex Task B passes to `npm run theme:gap`, and `appeal` (1-3) is how broad a crowd-pleaser the theme is. Entries marked `done` carry no boundary, since their decks already exist.
+
 `status` moves `queued` → `authoring` → `pr-open` → `done`. A theme can also be marked `skipped` with a reason, for example when it can't fill 30 cards.
+
+### The first build (2026-10-12)
+
+- **210 themes:** the 43 existing ones as `done`, then 167 `queued`. Every merge and cut, with its reason, is in [backlog-clusters.md](backlog-clusters.md).
+- **Generation:** five Sonnet agents, blind to the catalogue, proposed 262 candidates. The slices were culture, power, knowledge, trade and war, and world regions and eras.
+- **Overlap pass:** one agent merged 69 candidates and cut 40.
+  - Ten ideas had been proposed by two slices independently, and each pair was merged.
+  - Every probe was tightened and re-run against the catalogue. Hits now run from 0 to 91, and about 40 themes return fewer than 10, so those decks are mostly fresh authoring.
+- **Every war-in-one-decade deck was cut:** both World Wars, the Pacific War and the US Civil War.
+  - A war of four to six years can't give 30 cards in mostly different years.
+  - Their turning points already sit in Under Siege, Peace at Last and Codes & Ciphers.
+  - Allowing same-year cards would be a gate change, not a list change.
+- **Periods and dynasties inside a seeded country stay**, on the Kings of England precedent: Shogun!, Meiji Leap, The Romanovs, The Raj, Convicts & Gold, Siberia. A theme that was simply a country, such as Tsar & Commissar, was cut.
+- **Order:**
+  - The first eight are crowd-pleasers the catalogue already covers (25-99 probe hits), so the factory is proven on decks that need little new art.
+  - After that, each appeal tier is spread evenly, and no two neighbours share a category, a lead era or a lead region.
+  - `appeal` came back inflated (96 of 167 are 3), so the spread does little. Reorder by hand freely; the order is not tested.
+- **The new list's lean:**
+  - Eras: industrial, then the 20th century.
+  - Regions: Global, Europe, then North America.
+  - Places it adds: Africa, the Americas, South, Southeast and Central Asia, and Oceania.
 
 ### Overlap control while decks are authored
 
