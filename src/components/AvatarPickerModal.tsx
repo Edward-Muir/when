@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from './ui/Modal';
 import Portrait, { tintStyle } from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { AVATAR_ANIMALS, AVATAR_THEMES, avatarForName, getTheme } from '../utils/avatar';
+import { AVATAR_ANIMALS, AVATAR_THEMES, getTheme } from '../utils/avatar';
 
 interface AvatarPickerModalProps {
   open: boolean;
@@ -23,7 +23,7 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
 
 /**
  * Choose your portrait and its tint. Each tap saves at once and the tile at the top previews
- * it. "Match my name" drops the pick, so the avatar follows the name again.
+ * it. Until a first pick, the avatar follows the name.
  *
  * Opened from the menu's "Your Avatar" row only: avatars are a quiet touch, not a profile
  * page. On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
@@ -31,8 +31,7 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
  * the way out is always on screen.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }) => {
-  const { name, avatar, chosen, setAvatar } = usePlayerProfile();
-  const fromName = avatarForName(name);
+  const { name, avatar, setAvatar } = usePlayerProfile();
 
   return (
     <Modal
@@ -110,20 +109,6 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
       </div>
 
       <div className="shrink-0 border-t border-border p-4 space-y-2">
-        <button
-          type="button"
-          onClick={() => setAvatar(null)}
-          disabled={!chosen}
-          className="w-full py-2 rounded-lg border border-border text-text font-body text-sm disabled:opacity-50"
-        >
-          Match my name
-          {chosen && (
-            <span className="text-text-muted">
-              {' '}
-              ({AVATAR_ANIMALS.find((a) => a.id === fromName.animal)?.label})
-            </span>
-          )}
-        </button>
         <p className="text-xs text-text-muted font-body text-center">
           Shown with your next daily leaderboard score.
         </p>

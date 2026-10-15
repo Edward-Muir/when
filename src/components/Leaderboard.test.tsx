@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor, within } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Leaderboard from './Leaderboard';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
@@ -119,58 +119,8 @@ describe('Leaderboard', () => {
       ];
       renderBoard({ entries, playerRank: 2, playerEntry: entries[1] as LeaderboardEntry });
 
-      const own = screen.getByRole('button', { name: 'View your portrait' });
+      const own = screen.getByRole('button', { name: /your rank/i });
       expect(within(own).getByTestId('portrait').dataset.animal).toBe('panda');
-      localStorage.clear();
-    });
-  });
-
-  describe('a portrait up close', () => {
-    const entries: LeaderboardEntry[] = [
-      { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
-      { displayName: 'Swift Hawk', correctCount: 7, rank: 2, avatar: 'koala.viking' },
-    ];
-
-    it('opens when a player’s row is tapped, and closes on any tap', async () => {
-      renderBoard({ entries });
-
-      userEvent.click(screen.getByRole('button', { name: "View Swift Hawk's portrait" }));
-
-      const viewer = screen.getByRole('dialog', { name: 'Swift Hawk' });
-      expect(within(viewer).getByTestId('portrait').dataset.animal).toBe('koala');
-      expect(within(viewer).getByText(/Koala/)).toBeInTheDocument();
-
-      userEvent.click(viewer);
-      await waitFor(() =>
-        expect(screen.queryByRole('dialog', { name: 'Swift Hawk' })).not.toBeInTheDocument()
-      );
-    });
-
-    it('closes on ESC without closing the board under it', async () => {
-      const { onClose } = renderBoard({ entries });
-
-      userEvent.click(screen.getByRole('button', { name: "View Brave Otter's portrait" }));
-      userEvent.keyboard('{Escape}');
-
-      await waitFor(() =>
-        expect(screen.queryByRole('dialog', { name: 'Brave Otter' })).not.toBeInTheDocument()
-      );
-      expect(onClose).not.toHaveBeenCalled();
-    });
-
-    it('shows the player’s current pick from their pinned row', () => {
-      localStorage.setItem('when-avatar', 'panda.roman');
-      const mine: LeaderboardEntry = { displayName: 'Me Platypus', correctCount: 8, rank: 2 };
-      renderBoard({
-        entries: [entries[0] as LeaderboardEntry, mine],
-        playerRank: 2,
-        playerEntry: mine,
-      });
-
-      userEvent.click(screen.getByRole('button', { name: 'View your portrait' }));
-
-      const viewer = screen.getByRole('dialog', { name: 'Me Platypus' });
-      expect(within(viewer).getByTestId('portrait').dataset.animal).toBe('panda');
       localStorage.clear();
     });
   });
@@ -188,7 +138,7 @@ describe('Leaderboard', () => {
     it('is pinned to both edges of the scroll area so it stays on screen', () => {
       renderBoard({ entries, playerRank: playerEntry.rank, playerEntry });
 
-      const row = screen.getByTestId('player-sticky-row');
+      const row = screen.getByRole('button', { name: /your rank/i });
       expect(row.className).toContain('sticky');
       expect(row.className).toContain('top-0');
       expect(row.className).toContain('bottom-0');

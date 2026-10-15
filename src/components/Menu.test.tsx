@@ -87,10 +87,6 @@ describe('Menu', () => {
 
     expect(localStorage.getItem('when-avatar')).toBe('koala.viking');
     expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
-
-    await userEvent.click(screen.getByRole('button', { name: /match my name/i }));
-    expect(localStorage.getItem('when-avatar')).toBeNull();
-    expect(within(item).getByTestId('portrait').dataset.animal).toBe('platypus');
   });
 
   it("links What's New to the changelog and closes", async () => {

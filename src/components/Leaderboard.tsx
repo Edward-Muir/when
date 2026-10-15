@@ -1,13 +1,12 @@
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
-import LeaderboardRow, { StickyPlayerRow, ViewPortrait } from './LeaderboardRow';
+import LeaderboardRow, { StickyPlayerRow } from './LeaderboardRow';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import { LeaderboardSubmitForm } from './LeaderboardSubmit';
 import Modal from './ui/Modal';
-import PortraitViewerModal, { ViewedPortrait } from './PortraitViewerModal';
 
 interface LeaderboardProps {
   isOpen: boolean;
@@ -105,7 +104,6 @@ interface LeaderboardListProps {
   error?: string | null;
   onJumpToSelf: () => void;
   playerRowRef: React.Ref<HTMLButtonElement>;
-  onView: ViewPortrait;
 }
 
 /**
@@ -119,7 +117,6 @@ const LeaderboardList: React.FC<LeaderboardListProps> = ({
   error,
   onJumpToSelf,
   playerRowRef,
-  onView,
 }) => {
   if (isLoading) {
     return <LeaderboardSkeleton rows={SKELETON_ROWS} />;
@@ -144,10 +141,9 @@ const LeaderboardList: React.FC<LeaderboardListProps> = ({
             entry={player.row}
             onJump={onJumpToSelf}
             rowRef={playerRowRef}
-            onView={onView}
           />
         ) : (
-          <LeaderboardRow key={entry.rank} entry={entry} onView={onView} />
+          <LeaderboardRow key={entry.rank} entry={entry} />
         )
       )}
     </div>
@@ -168,20 +164,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   submit = null,
 }) => {
   const playerRowRef = useRef<HTMLButtonElement | null>(null);
-
-  // A tapped player's portrait, up close. `viewed` outlives `viewerOpen` so the viewer keeps
-  // its content while it animates out.
-  const [viewed, setViewed] = useState<ViewedPortrait | null>(null);
-  const [viewerOpen, setViewerOpen] = useState(false);
-  const viewPortrait = useCallback<ViewPortrait>((entry, avatar) => {
-    setViewed({ entry, avatar });
-    setViewerOpen(true);
-  }, []);
-  const closeViewer = useCallback(() => setViewerOpen(false), []);
-  // A board closed some other way must not reopen on the viewer next time.
-  useEffect(() => {
-    if (!isOpen) setViewerOpen(false);
-  }, [isOpen]);
 
   // The score is claimable exactly when there is one and it is not on the board yet. Mutually
   // exclusive with the pinned-player-row footer below: an unclaimed score has no row to pin.
@@ -216,87 +198,78 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     //
     // Headless Chromium reports `env(safe-area-inset-*)` as 0, so a browser check cannot see
     // that failure. Verify height changes on a real device or the PWA.
-    //
-    // The portrait viewer is a sibling, not a child: the card is transformed by its scale
-    // animation, which would re-anchor a nested `fixed` backdrop to the card. While it is open
-    // the board is locked, so ESC closes only the viewer.
-    <>
-      <Modal
-        open={isOpen}
-        onDismiss={onClose}
-        dismiss={viewerOpen ? 'locked' : 'backdrop'}
-        size="wide"
-        scroll="body"
-        maxHeightClass="max-h-[min(75vh,520px)]"
-        labelledBy="leaderboard-title"
-        header={
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Trophy className="w-5 h-5 text-accent" />
-              <h2 id="leaderboard-title" className="text-lg font-display font-semibold text-text">
-                Daily Leaderboard
-              </h2>
-            </div>
-            <button
-              onClick={onClose}
-              className="p-1 rounded-lg hover:bg-border transition-colors"
-              aria-label="Close leaderboard"
-            >
-              <X className="w-5 h-5 text-text-muted" />
-            </button>
+    <Modal
+      open={isOpen}
+      onDismiss={onClose}
+      size="wide"
+      scroll="body"
+      maxHeightClass="max-h-[min(75vh,520px)]"
+      labelledBy="leaderboard-title"
+      header={
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Trophy className="w-5 h-5 text-accent" />
+            <h2 id="leaderboard-title" className="text-lg font-display font-semibold text-text">
+              Daily Leaderboard
+            </h2>
           </div>
-        }
-      >
-        {/* Player count. Also where truncation is disclosed: `totalPlayers` is the true
+          <button
+            onClick={onClose}
+            className="p-1 rounded-lg hover:bg-border transition-colors"
+            aria-label="Close leaderboard"
+          >
+            <X className="w-5 h-5 text-text-muted" />
+          </button>
+        </div>
+      }
+    >
+      {/* Player count. Also where truncation is disclosed: `totalPlayers` is the true
                 count while the list is capped, so without this the board would imply it is
                 showing everyone. */}
-        <div className="px-4 py-2 border-b border-border bg-bg flex items-center gap-2 shrink-0">
-          <Users className="w-4 h-4 text-text-muted" />
-          <span className="text-sm text-text-muted font-body">
-            {truncated
-              ? `Showing ${entries.length} of ${totalPlayers} players today`
-              : `${totalPlayers} player${totalPlayers !== 1 ? 's' : ''} today`}
-          </span>
-        </div>
+      <div className="px-4 py-2 border-b border-border bg-bg flex items-center gap-2 shrink-0">
+        <Users className="w-4 h-4 text-text-muted" />
+        <span className="text-sm text-text-muted font-body">
+          {truncated
+            ? `Showing ${entries.length} of ${totalPlayers} players today`
+            : `${totalPlayers} player${totalPlayers !== 1 ? 's' : ''} today`}
+        </span>
+      </div>
 
-        {/* Entries */}
-        <div
-          className={`overflow-y-auto flex-1 ${
-            showsSubmitForm ? LIST_MIN_HEIGHT_WITH_FORM : LIST_MIN_HEIGHT
-          } timeline-scroll-vertical`}
-          data-testid="leaderboard-list"
-        >
-          <LeaderboardList
-            entries={entries}
-            player={player}
-            isLoading={isLoading}
-            error={error}
-            onJumpToSelf={jumpToSelf}
-            playerRowRef={playerRowRef}
-            onView={viewPortrait}
-          />
-        </div>
+      {/* Entries */}
+      <div
+        className={`overflow-y-auto flex-1 ${
+          showsSubmitForm ? LIST_MIN_HEIGHT_WITH_FORM : LIST_MIN_HEIGHT
+        } timeline-scroll-vertical`}
+        data-testid="leaderboard-list"
+      >
+        <LeaderboardList
+          entries={entries}
+          player={player}
+          isLoading={isLoading}
+          error={error}
+          onJumpToSelf={jumpToSelf}
+          playerRowRef={playerRowRef}
+        />
+      </div>
 
-        {/* Claim today's score. Sits under the live board, which keeps polling underneath it,
+      {/* Claim today's score. Sits under the live board, which keeps polling underneath it,
                 so the form is replaced by the player's own row the moment the score lands. */}
-        {showsSubmitForm && submit && (
-          <div className="shrink-0 border-t border-border p-3" data-testid="leaderboard-submit">
-            <p className="mb-2 text-xs text-text-muted font-body">
-              Your score isn&apos;t on the board yet.
-            </p>
-            <LeaderboardSubmitForm leaderboard={submit} />
-          </div>
-        )}
+      {showsSubmitForm && submit && (
+        <div className="shrink-0 border-t border-border p-3" data-testid="leaderboard-submit">
+          <p className="mb-2 text-xs text-text-muted font-body">
+            Your score isn&apos;t on the board yet.
+          </p>
+          <LeaderboardSubmitForm leaderboard={submit} />
+        </div>
+      )}
 
-        {/* The player ranks below the served slice, so there is no row in the list to pin. */}
-        {!isLoading && !error && player.row && !player.inList && (
-          <div className="shrink-0 border-t border-border">
-            <LeaderboardRow entry={player.row} highlight onView={viewPortrait} />
-          </div>
-        )}
-      </Modal>
-      <PortraitViewerModal open={isOpen && viewerOpen} viewing={viewed} onDismiss={closeViewer} />
-    </>
+      {/* The player ranks below the served slice, so there is no row in the list to pin. */}
+      {!isLoading && !error && player.row && !player.inList && (
+        <div className="shrink-0 border-t border-border">
+          <LeaderboardRow entry={player.row} highlight />
+        </div>
+      )}
+    </Modal>
   );
 };
 
