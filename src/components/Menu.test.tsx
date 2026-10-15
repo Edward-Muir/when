@@ -67,30 +67,30 @@ describe('Menu', () => {
     expect(screen.getByText('Build the longest timeline!')).toBeInTheDocument();
   });
 
-  it('shows who the player is at the top of the drawer', () => {
+  it('keeps the plain header and shows the player as the Your Avatar icon', () => {
     localStorage.setItem('when-display-name', 'Linguistic Platypus');
     renderMenu();
-    const banner = screen.getByTestId('profile-banner');
-    expect(banner).toHaveTextContent('Linguistic Platypus');
-    expect(within(banner).getByTestId('portrait').dataset.animal).toBe('platypus');
+    expect(screen.getByText('Menu')).toBeInTheDocument();
+    expect(screen.queryByTestId('profile-banner')).toBeNull();
+    const item = screen.getByRole('button', { name: /your avatar/i });
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('platypus');
   });
 
-  it('opens the avatar picker, and a pick updates the banner and is saved', async () => {
+  it('opens the avatar picker, and a pick updates the icon and is saved', async () => {
     localStorage.setItem('when-display-name', 'Linguistic Platypus');
     renderMenu();
-    await userEvent.click(screen.getByRole('button', { name: /^your avatar$/i }));
+    const item = screen.getByRole('button', { name: /your avatar/i });
+    await userEvent.click(item);
 
-    const picker = screen.getByRole('radiogroup', { name: 'Portrait' });
-    await userEvent.click(within(picker).getByRole('radio', { name: 'Koala' }));
-    await userEvent.click(screen.getByRole('radio', { name: /viking/i }));
+    await userEvent.click(screen.getByRole('radio', { name: 'Koala' }));
+    await userEvent.click(screen.getByRole('radio', { name: 'Viking' }));
 
     expect(localStorage.getItem('when-avatar')).toBe('koala.viking');
-    const drawerBanner = screen.getAllByTestId('profile-banner')[0] as HTMLElement;
-    expect(within(drawerBanner).getByTestId('portrait').dataset.animal).toBe('koala');
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
 
     await userEvent.click(screen.getByRole('button', { name: /match my name/i }));
     expect(localStorage.getItem('when-avatar')).toBeNull();
-    expect(within(drawerBanner).getByTestId('portrait').dataset.animal).toBe('platypus');
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('platypus');
   });
 
   it("links What's New to the changelog and closes", async () => {

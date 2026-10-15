@@ -1,14 +1,14 @@
 /**
- * Player avatars: a portrait (an animal) over a background (a history theme).
+ * Player avatars: a portrait (an animal) on a tile faintly tinted by a theme.
  *
  * The fun name decides both by default: the last word picks the animal and the first word
- * picks the theme, so "Linguistic Platypus" is a platypus in the scholar's library. A player
+ * picks the theme, so "Linguistic Platypus" is a platypus on the scholar's tint. A player
  * can override either from the picker, and that choice travels with their leaderboard score.
  * Everyone else on the board — bots, legacy entries, names the filter replaced, free-typed
  * names — resolves from the name alone, client-side. See docs/avatars/index.md.
  *
- * The art does not exist yet: `portraitArtUrl` / `backgroundArtUrl` are the one seam it plugs
- * into, and until they return a URL every surface draws a placeholder.
+ * The art does not exist yet: `portraitArtUrl` is the one seam it plugs into, and until it
+ * returns a URL every surface draws a placeholder.
  */
 import { uniqueNamesGenerator, adjectives } from 'unique-names-generator';
 import data from '../data/avatars.json';
@@ -23,9 +23,7 @@ export interface AvatarAnimal {
 export interface AvatarTheme {
   id: string;
   label: string;
-  /** The historic place its background painting shows. */
-  place: string;
-  /** Placeholder fill, and a hint for the art. */
+  /** Mixed faintly into the tile behind the portrait (`Portrait.tsx`). */
   color: string;
 }
 
@@ -112,11 +110,6 @@ export function resolveAvatar(entry: { displayName: string; avatar?: string }): 
 
 /** Portrait art for an animal, or null while it only has a placeholder. */
 export function portraitArtUrl(_animal: string): string | null {
-  return null;
-}
-
-/** Background art for a theme, or null while it only has a placeholder. */
-export function backgroundArtUrl(_theme: string): string | null {
   return null;
 }
 

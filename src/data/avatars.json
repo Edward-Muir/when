@@ -1,87 +1,386 @@
 {
   "animals": [
-    { "id": "platypus", "label": "Platypus" },
-    { "id": "goldfish", "label": "Goldfish", "emoji": "🐠" },
-    { "id": "penguin", "label": "Penguin", "emoji": "🐧" },
-    { "id": "tiger", "label": "Tiger", "emoji": "🐯" },
-    { "id": "fox", "label": "Fox", "emoji": "🦊" },
-    { "id": "eagle", "label": "Eagle", "emoji": "🦅" },
-    { "id": "wolf", "label": "Wolf", "emoji": "🐺" },
-    { "id": "bear", "label": "Bear", "emoji": "🐻" },
-    { "id": "hawk", "label": "Hawk" },
-    { "id": "lion", "label": "Lion", "emoji": "🦁" },
-    { "id": "panther", "label": "Panther" },
-    { "id": "falcon", "label": "Falcon" },
-    { "id": "owl", "label": "Owl", "emoji": "🦉" },
-    { "id": "shark", "label": "Shark", "emoji": "🦈" },
-    { "id": "dragon", "label": "Dragon", "emoji": "🐉" },
-    { "id": "phoenix", "label": "Phoenix" },
-    { "id": "raven", "label": "Raven" },
-    { "id": "cobra", "label": "Cobra", "emoji": "🐍" },
-    { "id": "viper", "label": "Viper" },
-    { "id": "jaguar", "label": "Jaguar" },
-    { "id": "leopard", "label": "Leopard", "emoji": "🐆" },
-    { "id": "lynx", "label": "Lynx" },
-    { "id": "otter", "label": "Otter", "emoji": "🦦" },
-    { "id": "badger", "label": "Badger", "emoji": "🦡" },
-    { "id": "wolverine", "label": "Wolverine" },
-    { "id": "mongoose", "label": "Mongoose" },
-    { "id": "heron", "label": "Heron" },
-    { "id": "crane", "label": "Crane" },
-    { "id": "osprey", "label": "Osprey" },
-    { "id": "condor", "label": "Condor" },
-    { "id": "albatross", "label": "Albatross" },
-    { "id": "aardvark", "label": "Aardvark" },
-    { "id": "elephant", "label": "Elephant", "emoji": "🐘" },
-    { "id": "giraffe", "label": "Giraffe", "emoji": "🦒" },
-    { "id": "hippo", "label": "Hippo", "emoji": "🦛" },
-    { "id": "rhino", "label": "Rhino", "emoji": "🦏" },
-    { "id": "camel", "label": "Camel", "emoji": "🐫" },
-    { "id": "llama", "label": "Llama", "emoji": "🦙" },
-    { "id": "panda", "label": "Panda", "emoji": "🐼" },
-    { "id": "koala", "label": "Koala", "emoji": "🐨" },
-    { "id": "kangaroo", "label": "Kangaroo", "emoji": "🦘" },
-    { "id": "sloth", "label": "Sloth", "emoji": "🦥" },
-    { "id": "hedgehog", "label": "Hedgehog", "emoji": "🦔" },
-    { "id": "rabbit", "label": "Rabbit", "emoji": "🐰" },
-    { "id": "squirrel", "label": "Squirrel", "emoji": "🐿️" },
-    { "id": "beaver", "label": "Beaver", "emoji": "🦫" },
-    { "id": "walrus", "label": "Walrus", "emoji": "🦭" },
-    { "id": "octopus", "label": "Octopus", "emoji": "🐙" },
-    { "id": "tortoise", "label": "Tortoise", "emoji": "🐢" },
-    { "id": "frog", "label": "Frog", "emoji": "🐸" },
-    { "id": "crocodile", "label": "Crocodile", "emoji": "🐊" },
-    { "id": "flamingo", "label": "Flamingo", "emoji": "🦩" },
-    { "id": "peacock", "label": "Peacock", "emoji": "🦚" },
-    { "id": "pelican", "label": "Pelican" },
-    { "id": "parrot", "label": "Parrot", "emoji": "🦜" },
-    { "id": "toucan", "label": "Toucan" },
-    { "id": "gorilla", "label": "Gorilla", "emoji": "🦍" },
-    { "id": "raccoon", "label": "Raccoon", "emoji": "🦝" },
-    { "id": "mole", "label": "Mole" },
-    { "id": "moose", "label": "Moose" }
+    {
+      "id": "platypus",
+      "label": "Platypus"
+    },
+    {
+      "id": "goldfish",
+      "label": "Goldfish",
+      "emoji": "🐠"
+    },
+    {
+      "id": "penguin",
+      "label": "Penguin",
+      "emoji": "🐧"
+    },
+    {
+      "id": "tiger",
+      "label": "Tiger",
+      "emoji": "🐯"
+    },
+    {
+      "id": "fox",
+      "label": "Fox",
+      "emoji": "🦊"
+    },
+    {
+      "id": "eagle",
+      "label": "Eagle",
+      "emoji": "🦅"
+    },
+    {
+      "id": "wolf",
+      "label": "Wolf",
+      "emoji": "🐺"
+    },
+    {
+      "id": "bear",
+      "label": "Bear",
+      "emoji": "🐻"
+    },
+    {
+      "id": "hawk",
+      "label": "Hawk"
+    },
+    {
+      "id": "lion",
+      "label": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "panther",
+      "label": "Panther"
+    },
+    {
+      "id": "falcon",
+      "label": "Falcon"
+    },
+    {
+      "id": "owl",
+      "label": "Owl",
+      "emoji": "🦉"
+    },
+    {
+      "id": "shark",
+      "label": "Shark",
+      "emoji": "🦈"
+    },
+    {
+      "id": "dragon",
+      "label": "Dragon",
+      "emoji": "🐉"
+    },
+    {
+      "id": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "id": "raven",
+      "label": "Raven"
+    },
+    {
+      "id": "cobra",
+      "label": "Cobra",
+      "emoji": "🐍"
+    },
+    {
+      "id": "viper",
+      "label": "Viper"
+    },
+    {
+      "id": "jaguar",
+      "label": "Jaguar"
+    },
+    {
+      "id": "leopard",
+      "label": "Leopard",
+      "emoji": "🐆"
+    },
+    {
+      "id": "lynx",
+      "label": "Lynx"
+    },
+    {
+      "id": "otter",
+      "label": "Otter",
+      "emoji": "🦦"
+    },
+    {
+      "id": "badger",
+      "label": "Badger",
+      "emoji": "🦡"
+    },
+    {
+      "id": "wolverine",
+      "label": "Wolverine"
+    },
+    {
+      "id": "mongoose",
+      "label": "Mongoose"
+    },
+    {
+      "id": "heron",
+      "label": "Heron"
+    },
+    {
+      "id": "crane",
+      "label": "Crane"
+    },
+    {
+      "id": "osprey",
+      "label": "Osprey"
+    },
+    {
+      "id": "condor",
+      "label": "Condor"
+    },
+    {
+      "id": "albatross",
+      "label": "Albatross"
+    },
+    {
+      "id": "aardvark",
+      "label": "Aardvark"
+    },
+    {
+      "id": "elephant",
+      "label": "Elephant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "giraffe",
+      "label": "Giraffe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "hippo",
+      "label": "Hippo",
+      "emoji": "🦛"
+    },
+    {
+      "id": "rhino",
+      "label": "Rhino",
+      "emoji": "🦏"
+    },
+    {
+      "id": "camel",
+      "label": "Camel",
+      "emoji": "🐫"
+    },
+    {
+      "id": "llama",
+      "label": "Llama",
+      "emoji": "🦙"
+    },
+    {
+      "id": "panda",
+      "label": "Panda",
+      "emoji": "🐼"
+    },
+    {
+      "id": "koala",
+      "label": "Koala",
+      "emoji": "🐨"
+    },
+    {
+      "id": "kangaroo",
+      "label": "Kangaroo",
+      "emoji": "🦘"
+    },
+    {
+      "id": "sloth",
+      "label": "Sloth",
+      "emoji": "🦥"
+    },
+    {
+      "id": "hedgehog",
+      "label": "Hedgehog",
+      "emoji": "🦔"
+    },
+    {
+      "id": "rabbit",
+      "label": "Rabbit",
+      "emoji": "🐰"
+    },
+    {
+      "id": "squirrel",
+      "label": "Squirrel",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "beaver",
+      "label": "Beaver",
+      "emoji": "🦫"
+    },
+    {
+      "id": "walrus",
+      "label": "Walrus",
+      "emoji": "🦭"
+    },
+    {
+      "id": "octopus",
+      "label": "Octopus",
+      "emoji": "🐙"
+    },
+    {
+      "id": "tortoise",
+      "label": "Tortoise",
+      "emoji": "🐢"
+    },
+    {
+      "id": "frog",
+      "label": "Frog",
+      "emoji": "🐸"
+    },
+    {
+      "id": "crocodile",
+      "label": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "flamingo",
+      "label": "Flamingo",
+      "emoji": "🦩"
+    },
+    {
+      "id": "peacock",
+      "label": "Peacock",
+      "emoji": "🦚"
+    },
+    {
+      "id": "pelican",
+      "label": "Pelican"
+    },
+    {
+      "id": "parrot",
+      "label": "Parrot",
+      "emoji": "🦜"
+    },
+    {
+      "id": "toucan",
+      "label": "Toucan"
+    },
+    {
+      "id": "gorilla",
+      "label": "Gorilla",
+      "emoji": "🦍"
+    },
+    {
+      "id": "raccoon",
+      "label": "Raccoon",
+      "emoji": "🦝"
+    },
+    {
+      "id": "mole",
+      "label": "Mole"
+    },
+    {
+      "id": "moose",
+      "label": "Moose"
+    }
   ],
   "themes": [
-    { "id": "scholar", "label": "Scholar", "place": "Library of Alexandria", "color": "#8a5a2b" },
-    { "id": "explorer", "label": "Explorer", "place": "Age of Sail harbour", "color": "#2f6f8f" },
-    { "id": "royal", "label": "Royal", "place": "Palace hall", "color": "#6b3fa0" },
-    { "id": "knight", "label": "Knight", "place": "Castle on a hill", "color": "#5b6770" },
-    { "id": "inventor", "label": "Inventor", "place": "Workshop town", "color": "#9a6324" },
-    { "id": "astronomer", "label": "Astronomer", "place": "Observatory", "color": "#283d7a" },
-    { "id": "alchemist", "label": "Alchemist", "place": "Alchemist's tower", "color": "#4f7a3a" },
-    { "id": "bard", "label": "Bard", "place": "Globe Theatre", "color": "#a03c4b" },
-    { "id": "monk", "label": "Monk", "place": "Mountain monastery", "color": "#a8742c" },
-    { "id": "merchant", "label": "Merchant", "place": "Silk Road market", "color": "#b5562a" },
-    { "id": "farmer", "label": "Farmer", "place": "Windmill fields", "color": "#6b8e23" },
-    { "id": "jester", "label": "Jester", "place": "Carnival square", "color": "#c0398a" },
-    { "id": "pharaoh", "label": "Pharaoh", "place": "Pyramids on the Nile", "color": "#b8902a" },
-    { "id": "roman", "label": "Roman", "place": "The Forum", "color": "#8c2f2f" },
-    { "id": "viking", "label": "Viking", "place": "Fjord with longships", "color": "#3d6b74" },
-    { "id": "samurai", "label": "Samurai", "place": "Castle garden", "color": "#b23a48" },
-    { "id": "ancient", "label": "Ancient", "place": "Stonehenge", "color": "#66705c" },
-    { "id": "frontier", "label": "Frontier", "place": "Wild West town", "color": "#a0522d" },
-    { "id": "mariner", "label": "Mariner", "place": "Polynesian voyage", "color": "#1f7a7a" },
-    { "id": "space-age", "label": "Space Age", "place": "Launch pad", "color": "#2c2f5e" }
+    {
+      "id": "scholar",
+      "label": "Scholar",
+      "color": "#8a5a2b"
+    },
+    {
+      "id": "explorer",
+      "label": "Explorer",
+      "color": "#2f6f8f"
+    },
+    {
+      "id": "royal",
+      "label": "Royal",
+      "color": "#6b3fa0"
+    },
+    {
+      "id": "knight",
+      "label": "Knight",
+      "color": "#5b6770"
+    },
+    {
+      "id": "inventor",
+      "label": "Inventor",
+      "color": "#9a6324"
+    },
+    {
+      "id": "astronomer",
+      "label": "Astronomer",
+      "color": "#283d7a"
+    },
+    {
+      "id": "alchemist",
+      "label": "Alchemist",
+      "color": "#4f7a3a"
+    },
+    {
+      "id": "bard",
+      "label": "Bard",
+      "color": "#a03c4b"
+    },
+    {
+      "id": "monk",
+      "label": "Monk",
+      "color": "#a8742c"
+    },
+    {
+      "id": "merchant",
+      "label": "Merchant",
+      "color": "#b5562a"
+    },
+    {
+      "id": "farmer",
+      "label": "Farmer",
+      "color": "#6b8e23"
+    },
+    {
+      "id": "jester",
+      "label": "Jester",
+      "color": "#c0398a"
+    },
+    {
+      "id": "pharaoh",
+      "label": "Pharaoh",
+      "color": "#b8902a"
+    },
+    {
+      "id": "roman",
+      "label": "Roman",
+      "color": "#8c2f2f"
+    },
+    {
+      "id": "viking",
+      "label": "Viking",
+      "color": "#3d6b74"
+    },
+    {
+      "id": "samurai",
+      "label": "Samurai",
+      "color": "#b23a48"
+    },
+    {
+      "id": "ancient",
+      "label": "Ancient",
+      "color": "#66705c"
+    },
+    {
+      "id": "frontier",
+      "label": "Frontier",
+      "color": "#a0522d"
+    },
+    {
+      "id": "mariner",
+      "label": "Mariner",
+      "color": "#1f7a7a"
+    },
+    {
+      "id": "space-age",
+      "label": "Space Age",
+      "color": "#2c2f5e"
+    }
   ],
   "adjectiveThemes": {}
 }

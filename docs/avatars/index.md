@@ -1,30 +1,31 @@
 # Player avatars
 
-Every player has a **portrait** (an animal) and a **background** (a history theme), after the
-portrait and background pickers in the digital edition of Wingspan. The portrait shows wherever
-a player is named. The background is a wide painted place shown only as a profile banner (the
-menu drawer, the Stats tab, the picker), because it is far too detailed for a 32px row.
+Every player has a **portrait**: an animal on a small square tile, faintly tinted by a
+**theme** (one of 20 named colours). It is a deliberately quiet touch. It shows on leaderboard
+rows, beside the name box when a daily score is submitted, and as the icon of the menu's "Your
+Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
+tab: an earlier pass had both and read as far too prominent.
 
 As of this writing the art does not exist: every surface draws a placeholder. The prompts and
 the Cloudinary pipeline are the next piece of work (see [Still to do](#still-to-do)).
 
 ## Where things live
 
-| What                                                       | Where                                                 |
-| ---------------------------------------------------------- | ----------------------------------------------------- |
-| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                               |
-| Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                                 |
-| The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`                          |
-| Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`                       |
-| The square tile / the banner                               | `src/components/ui/Portrait.tsx`, `ProfileBanner.tsx` |
-| The picker (menu item "Your Avatar", or tap a banner)      | `src/components/AvatarPickerModal.tsx`                |
-| Server format check                                        | `lib/leaderboard/avatar.ts`                           |
+| What                                                       | Where                                  |
+| ---------------------------------------------------------- | -------------------------------------- |
+| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                |
+| Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                  |
+| The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`           |
+| Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`        |
+| The tinted square tile                                     | `src/components/ui/Portrait.tsx`       |
+| The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx` |
+| Server format check                                        | `lib/leaderboard/avatar.ts`            |
 
 ## Decisions
 
 **The name decides the avatar by default.** The last word of the fun name picks the animal and
 the first word picks the theme through `adjectiveThemes`, so "Linguistic Platypus" is a
-platypus, and every "Linguistic" player shares a background. Anything outside the lists (a
+platypus, and every "Linguistic" player shares a tint. Anything outside the lists (a
 free-typed name, "Anonymous", an animal from before the list was cut) falls back to a hash of
 that word. The fallback is deterministic on purpose: the board polls every 15 seconds and must
 never reshuffle anyone.
@@ -60,44 +61,53 @@ per-session re-roll, because the name now shows outside the submit form. It also
 generated name in memory for the session: where storage is blocked, a name re-rolled on every
 read would make `usePlayerProfile`'s snapshot change forever.
 
-**Placeholders are first-class.** `portraitArtUrl` / `backgroundArtUrl` return null until the art
-exists, and they are the only seam. The tile shows the animal's emoji, or its initial where no
+**Placeholders are first-class.** `portraitArtUrl` returns null until the art exists, and it is
+the only seam. The tile shows the animal's emoji, or its initial where no
 emoji reads as that animal; ZWJ emoji (phoenix, raven, moose) are skipped because older
-WebViews draw them as two glyphs. Banners use a gradient of the theme's `color`. Colours are
-inline styles or the `paper` / `ink` tokens, never `bg-token/NN`, which compiles to nothing
-(see CLAUDE.md, Styling).
+WebViews draw them as two glyphs.
+
+**The theme is a tint, not a picture.** Each theme's `color` is mixed at 22% into the paper
+behind the portrait (`tintStyle` in `Portrait.tsx`, shared with the picker's swatches), so
+players read apart at a glance without the tile shouting. The mix is an inline `color-mix`,
+never `bg-token/NN`, which compiles to nothing (see CLAUDE.md, Styling). There is no background
+art: a painted landscape per theme was planned, but with no banner to show it on, it would only
+ever appear in the picker.
 
 ## The art spec, from the Wingspan reference
 
-- **Portraits.** A square head-and-shoulders bust of the animal in ink linework and soft
-  watercolour on textured cream paper, with no scene behind it. Each animal has one fun history
-  persona, such as a scholarly platypus with spectacles and a quill, or a knightly aardvark in
-  a helm.
-- **Backgrounds.** 2:1 landscapes of historic places in the same style, with torn watercolour
-  edges, for example the Library of Alexandria, a Viking fjord or a Silk Road market. One per
-  theme in `avatars.json` (`place`).
+**Portraits only.** A square head-and-shoulders bust of the animal in ink linework and soft
+watercolour, after the portrait cards in the digital edition of Wingspan. Each animal has one
+fun history persona, such as a scholarly platypus with spectacles and a quill, or a knightly
+aardvark in a helm.
+
+**Transparent background.** The tint has to show behind the animal, so each portrait is a
+cut-out with no paper or scene of its own. Generate on a flat plain background and remove it
+(Cloudinary's background removal or rembg; decide when the art is made).
 
 ### It must work very small
 
-Portraits mostly show at **20–32px** (leaderboard rows) and at most 96px (the banner). Every
-portrait prompt must ask for:
+Portraits mostly show at **20–32px** (leaderboard rows, the menu icon) and at most 72px (the
+picker). Every portrait prompt must ask for:
 
 - a large head filling most of the frame, in a tight bust crop;
-- one strong, simple silhouette with high contrast against the paper;
+- one strong, simple silhouette that holds up against a pale tint;
 - at most one bold costume element and one prop;
 - no fine detail, small text or busy pattern;
 - a clear colour identity for each animal.
 
-Check every generated portrait downscaled to 20px and 32px before accepting it. Backgrounds need
-a calm, low-detail lower-left area, because the portrait tile sits there.
+Check every generated portrait downscaled to 20px and 32px, on a tinted tile, before
+accepting it.
 
 ## Still to do
 
-1. **Bucket the adjectives.** Sort all 1,202 package adjectives plus the 35 bot adjectives into
-   the 20 themes, filling `adjectiveThemes`, with a coverage test.
-2. **Write the prompts.** Give each animal a persona and write `scripts/avatars/prompts.json`
-   with a shared style preamble (Sonnet agents), then review them in a gallery.
-3. **Deliver through Cloudinary.** Upload the art and wire the two `*ArtUrl` functions through
-   the `cloudinaryImage.ts` patterns. Read
+1. **Bucket the adjectives** (optional now that a theme is only a tint). Sort all 1,202 package
+   adjectives plus the 35 bot adjectives into the 20 themes, filling `adjectiveThemes`, with a
+   coverage test. Until then the tint is a stable hash of the first word.
+2. **Write the prompts.** Give each of the 60 animals a persona and write
+   `scripts/avatars/prompts.json` with a shared style preamble (Sonnet agents), then review
+   them in a gallery. Portraits only; no background prompts.
+3. **Deliver through Cloudinary.** Upload the art and wire `portraitArtUrl` through the
+   `cloudinaryImage.ts` patterns, keeping transparency (`f_auto` picks WebP or AVIF, both of
+   which have alpha). Read
    [cloudinary-cost-controls.md](../cloudinary-cost-controls.md) first: no `dpr_auto`, capped
    widths, square rungs for portraits.

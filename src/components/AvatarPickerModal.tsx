@@ -1,9 +1,8 @@
 import React from 'react';
 import Modal from './ui/Modal';
-import Portrait from './ui/Portrait';
-import ProfileBanner from './ui/ProfileBanner';
+import Portrait, { tintStyle } from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { AVATAR_ANIMALS, AVATAR_THEMES, avatarForName } from '../utils/avatar';
+import { AVATAR_ANIMALS, AVATAR_THEMES, avatarForName, getTheme } from '../utils/avatar';
 
 interface AvatarPickerModalProps {
   open: boolean;
@@ -16,13 +15,14 @@ const SECTION_HEADING =
 // are sized at or above that rather than fighting it.
 const TILE = 'flex flex-col items-center gap-1 rounded-lg p-1 transition-colors';
 const SELECTED = 'ring-2 ring-accent';
+const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
 
 /**
- * Choose your portrait and background, after Wingspan's two pickers. Each tap saves at once
- * and the banner on top previews it. "Match my name" drops the pick, so the avatar follows
- * the name again.
+ * Choose your portrait and its tint. Each tap saves at once and the tile at the top previews
+ * it. "Match my name" drops the pick, so the avatar follows the name again.
  *
- * On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
+ * Opened from the menu's "Your Avatar" row only: avatars are a quiet touch, not a profile
+ * page. On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
  * drawer it opens from.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }) => {
@@ -39,15 +39,17 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
       scroll="card"
     >
       <div className="p-4 space-y-5">
-        <ProfileBanner name={name} avatar={avatar} />
+        <div className="flex items-center gap-3">
+          <Portrait avatar={avatar} size="lg" />
+          <div className="min-w-0">
+            <div className="font-display font-semibold text-lg text-text truncate">{name}</div>
+            <div className="text-xs text-text-muted font-body">{getTheme(avatar.theme)?.label}</div>
+          </div>
+        </div>
 
         <section>
           <h3 className={SECTION_HEADING}>Portrait</h3>
-          <div
-            className="grid grid-cols-4 min-[380px]:grid-cols-5 gap-2"
-            role="radiogroup"
-            aria-label="Portrait"
-          >
+          <div className={GRID} role="radiogroup" aria-label="Portrait">
             {AVATAR_ANIMALS.map((animal) => {
               const selected = animal.id === avatar.animal;
               return (
@@ -71,8 +73,8 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
         </section>
 
         <section>
-          <h3 className={SECTION_HEADING}>Background</h3>
-          <div className="grid grid-cols-2 gap-2" role="radiogroup" aria-label="Background">
+          <h3 className={SECTION_HEADING}>Tint</h3>
+          <div className={GRID} role="radiogroup" aria-label="Tint">
             {AVATAR_THEMES.map((theme) => {
               const selected = theme.id === avatar.theme;
               return (
@@ -81,18 +83,16 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
                   type="button"
                   role="radio"
                   aria-checked={selected}
-                  aria-label={`${theme.label}, ${theme.place}`}
+                  aria-label={theme.label}
                   onClick={() => setAvatar({ ...avatar, theme: theme.id })}
-                  className={`relative flex flex-col justify-end h-14 rounded-lg overflow-hidden px-2 py-1 text-left ${selected ? SELECTED : ''}`}
-                  style={{
-                    background: `linear-gradient(135deg, ${theme.color}, color-mix(in srgb, ${theme.color} 55%, #000))`,
-                  }}
+                  className={`${TILE} ${selected ? SELECTED : ''}`}
                 >
-                  <span className="text-xs font-semibold text-white font-body leading-tight">
+                  <span
+                    className="w-11 h-11 rounded-md border border-border"
+                    style={tintStyle(theme.color)}
+                  />
+                  <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
                     {theme.label}
-                  </span>
-                  <span className="text-[10px] text-white font-body leading-tight opacity-80 truncate">
-                    {theme.place}
                   </span>
                 </button>
               );

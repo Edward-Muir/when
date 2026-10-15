@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Avatar, getAnimal, portraitArtUrl } from '../../utils/avatar';
+import { Avatar, getAnimal, getTheme, portraitArtUrl } from '../../utils/avatar';
 
 export type PortraitSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
@@ -11,6 +11,15 @@ const SIZE_CLASSES: Record<PortraitSize, string> = {
   lg: 'w-[72px] h-[72px] rounded-lg text-4xl',
   xl: 'w-24 h-24 rounded-lg text-5xl',
 };
+
+/**
+ * The tile fill for a theme colour: a faint mix into the paper. A standard colour mixed into
+ * the token, because `bg-paper/NN`-style modifiers on theme tokens compile to nothing
+ * (CLAUDE.md, Styling). Shared with the picker's tint swatches.
+ */
+export function tintStyle(color: string): React.CSSProperties {
+  return { background: `color-mix(in srgb, ${color} 22%, var(--color-paper))` };
+}
 
 // Art that failed once is not retried by every row on every 15s poll.
 const failedArt = new Set<string>();
@@ -24,7 +33,8 @@ interface PortraitProps {
 }
 
 /**
- * The player's animal on a square paper tile, after Wingspan's portrait cards.
+ * The player's animal on a square paper tile, after Wingspan's portrait cards, faintly tinted
+ * by their theme so players read apart at a glance without the tile shouting.
  *
  * Until the art exists (`portraitArtUrl` returns null) the tile shows the animal's emoji, or
  * its initial where no emoji reads as that animal. See docs/avatars/index.md.
@@ -35,11 +45,13 @@ const Portrait: React.FC<PortraitProps> = ({ avatar, size, labelled = false, cla
   const [, setFailed] = useState(0);
   const showArt = art !== null && !failedArt.has(art);
   const label = animal?.label ?? avatar.animal;
+  const tint = getTheme(avatar.theme)?.color;
 
   return (
     <span
       // eslint-disable-next-line security/detect-object-injection -- union-typed key into const map
       className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden bg-paper text-ink border border-border leading-none select-none ${SIZE_CLASSES[size]} ${className}`}
+      style={tint ? tintStyle(tint) : undefined}
       role={labelled ? 'img' : undefined}
       aria-label={labelled ? label : undefined}
       aria-hidden={labelled ? undefined : true}

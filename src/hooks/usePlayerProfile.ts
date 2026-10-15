@@ -26,8 +26,8 @@ function readSnapshot(): string {
 }
 
 /**
- * The player's own name and avatar, live: a pick in the avatar picker updates the menu, the
- * Stats banner and their own leaderboard row at once. Generates and saves a name on first use,
+ * The player's own name and avatar, live: a pick in the avatar picker updates the menu item,
+ * the submit form and their own leaderboard row at once. Generates and saves a name on first use,
  * so there is always one to show.
  */
 export function usePlayerProfile(): PlayerProfile {

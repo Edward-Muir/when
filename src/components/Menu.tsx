@@ -16,7 +16,6 @@ import {
   LifeBuoy,
   RotateCcw,
   Sparkles,
-  UserRound,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
@@ -30,7 +29,7 @@ import { APP_VERSION } from '../version';
 import HowToPlayModal from './HowToPlayModal';
 import AvatarPickerModal from './AvatarPickerModal';
 import Modal from './ui/Modal';
-import ProfileBanner from './ui/ProfileBanner';
+import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
 
 interface MenuProps {
@@ -160,28 +159,24 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                 if (info.offset.x > 100) onClose();
               }}
             >
-              {/* Header: who you are, over your theme's background. Tapping it opens the
-                  avatar picker; the close button sits on top as a sibling, not inside it. */}
-              <div className="relative border-b border-border">
-                <ProfileBanner
-                  name={profile.name}
-                  avatar={profile.avatar}
-                  compact
-                  onClick={handleAvatar}
-                />
+              {/* Header */}
+              <div className="flex items-center justify-between px-4 py-3 border-b border-border">
+                <span className="font-display font-semibold text-lg text-text">Menu</span>
                 <button
                   onClick={onClose}
-                  className="absolute top-1 right-1 p-2 rounded-lg text-white"
+                  className="p-2 -mr-2 rounded-lg hover:bg-border/50 transition-colors"
                   aria-label="Close menu"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-5 h-5 text-text-muted" />
                 </button>
               </div>
 
               {/* Menu Items */}
-              <div className="py-2 flex-1 min-h-0 overflow-y-auto">
+              <div className="py-2 flex-1">
+                {/* The player's own portrait stands in for the icon: the one quiet place they
+                    see what they look like on the board, and the way to change it. */}
                 <button onClick={handleAvatar} className={menuItemClass}>
-                  <UserRound className={iconClass} />
+                  <Portrait avatar={profile.avatar} size="xs" />
                   <span className="font-body">Your Avatar</span>
                 </button>
 
