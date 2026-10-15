@@ -52,7 +52,7 @@ FIELDS = ["role", "persona", "feature", "expression", "costume", "prop", "light"
 SKELETON = (
     "A dramatic chiaroscuro oil painting in the manner of an Old Master {role} portrait. "
     "1:1 square composition optimized for very small screen viewing (it must read at 24 pixels). "
-    "A tight head-and-shoulders bust of a {animal} as {persona}, its {feature} filling most of "
+    "A tight head-and-shoulders bust of {a_animal} as {persona}, its {feature} filling most of "
     "the frame, turned three-quarters toward the viewer with {expression}. It wears {costume}. "
     "One prop only: {prop}. Strong simple silhouette, high contrast, warm {light} from one side, "
     "rich painterly brushwork but no fine detail. Set against a plain dark painted backdrop, like "
@@ -62,7 +62,7 @@ SKELETON = (
 
 RESEARCH = (
     "Search the web for reference photographs of the {animal}, and for Old Master and period "
-    "portraits of a {role}. Study the {research_focus}."
+    "portraits of {a_role}. Study the {research_focus}."
 )
 
 # The card rules carry over: no colour adjectives (material nouns such as bronze are fine, and
@@ -78,6 +78,11 @@ TEXT_WORDS = [
     "label", "labels", "newspaper", "page", "pages", "chart", "charts", "diploma",
 ]
 BANNED = re.compile(r"\b(" + "|".join(COLOUR_WORDS + TEXT_WORDS) + r")\b", re.IGNORECASE)
+
+
+def article(phrase):
+    """'an owl', 'an Imperial Vienna concert conductor', 'a tiger'."""
+    return ("an " if phrase[:1].lower() in "aeiou" else "a ") + phrase
 
 
 def load_json(path):
@@ -151,8 +156,10 @@ def main():
         rows.append(
             {
                 "event_name": animal_id,
-                "research_prompt": RESEARCH.format(animal=name, **p),
-                "image_prompt": SKELETON.format(animal=name, **p),
+                "research_prompt": RESEARCH.format(
+                    animal=name, a_role=article(p["role"]), **p
+                ),
+                "image_prompt": SKELETON.format(animal=name, a_animal=article(name), **p),
                 "image_generated": done.get("image_generated", ""),
                 "saved_filename": done.get("saved_filename", ""),
             }
