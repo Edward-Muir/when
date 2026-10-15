@@ -6,20 +6,23 @@ rows, beside the name box when a daily score is submitted, and as the icon of th
 Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
-As of this writing the art does not exist: every surface draws a placeholder. The prompts and
-the Cloudinary pipeline are the next piece of work (see [Still to do](#still-to-do)).
+As of this writing two portraits exist (platypus, goldfish) and the prompts for the other 58 are
+written; generating them and the Cloudinary pipeline are the next piece of work (see
+[Still to do](#still-to-do)).
 
 ## Where things live
 
-| What                                                       | Where                                  |
-| ---------------------------------------------------------- | -------------------------------------- |
-| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                |
-| Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                  |
-| The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`           |
-| Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`        |
-| The tinted square tile                                     | `src/components/ui/Portrait.tsx`       |
-| The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx` |
-| Server format check                                        | `lib/leaderboard/avatar.ts`            |
+| What                                                       | Where                                                                          |
+| ---------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                                                        |
+| Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                                                          |
+| The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`                                                   |
+| Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`                                                |
+| The tinted square tile                                     | `src/components/ui/Portrait.tsx`                                               |
+| The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx`                                         |
+| Server format check                                        | `lib/leaderboard/avatar.ts`                                                    |
+| Each animal's persona (hand-reviewed, from Sonnet agents)  | `scripts/avatars/personas.json`                                                |
+| The prompts CSV, and the script that builds it             | `docs/avatars/art/avatar_prompts.csv`, `scripts/avatars/avatar-art-prompts.py` |
 
 ## Decisions
 
@@ -71,10 +74,10 @@ portrait, and the top three portraits get a gold, silver or bronze frame (`getMe
 `leaderboardUtils.ts`) in place of the old medal emoji column. The game-over preview does the
 same.
 
-**Preview art is temporary.** Two finished portraits (platypus, goldfish) live in
+**The two preview portraits are final art.** Platypus and goldfish live in
 `public/avatars/preview/` and `portraitArtUrl` serves them for every animal, the other 58
-borrowing one by hash, so the look can be judged in the app. Remove `PREVIEW_ART` and the
-folder when the Cloudinary set lands.
+borrowing one by hash, so the look can be judged in the app. They have no row in the prompts
+CSV: upload them to Cloudinary with the rest, then remove `PREVIEW_ART` and the folder.
 
 **The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
 supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card
@@ -117,14 +120,26 @@ Worked example, the platypus: a learned linguist, its broad flat bill and head f
 frame, small round brass spectacles perched on the bill, a dark scholar's robe with a white
 ruff collar, a quill pen held up beside its face, candlelight.
 
-**Transparent background.** The tint has to show behind the animal, so each portrait is a
-cut-out with no paper or scene of its own. Generate on a flat plain background and remove it
-(Cloudinary's background removal or rembg; decide when the art is made).
+**A dark painted backdrop, not a cut-out.** The plan was a transparent cut-out so the tint
+showed behind the animal. The two finished previews have a plain dark painted backdrop and read
+well, so the rest match them: the prompt asks for "a plain dark painted backdrop, like a gallery
+portrait", and no background-removal step is needed. The tint shows only at the tile's edge.
+
+**The prompts CSV.** `scripts/avatars/avatar-art-prompts.py` fills the template above (with the
+backdrop clause in place of "isolated on a flat plain uniform background") from
+`scripts/avatars/personas.json`, one persona per animal: a distinct role, spread across eras and
+cultures, archetypes rather than real people, one costume element and one prop that is not text.
+It writes the event cards' five-column contract
+(`event_name,research_prompt,image_prompt,image_generated,saved_filename`; see
+[events-images/](../events-images/index.md#the-prompt-csv-contract)) with the animal id as
+`event_name`, so the same browser task runs it, and it fails on a missing or unknown animal, an
+empty field, a colour adjective or anything that would be lettered. Edit a persona, not the CSV,
+and re-run; progress columns carry over by id.
 
 ### It must work very small
 
 Portraits mostly show at **20–44px** (the game-over preview at 20px; leaderboard rows, the
-menu icon and the picker grid at 44px) and at most 72px (the picker's preview). Every portrait
+menu icon and the picker grid at 44px) and at most 96px (the picker's preview). Every portrait
 prompt must ask for:
 
 - a large head filling most of the frame, in a tight bust crop;
@@ -141,11 +156,11 @@ accepting it.
 1. **Bucket the adjectives** (optional now that a theme is only a tint). Sort all 1,202 package
    adjectives plus the 35 bot adjectives into the 20 themes, filling `adjectiveThemes`, with a
    coverage test. Until then the tint is a stable hash of the first word.
-2. **Write the prompts.** Give each of the 60 animals a persona and write
-   `scripts/avatars/prompts.json` with a shared style preamble (Sonnet agents), then review
-   them in a gallery. Portraits only; no background prompts.
-3. **Deliver through Cloudinary.** Upload the art and wire `portraitArtUrl` through the
-   `cloudinaryImage.ts` patterns, keeping transparency (`f_auto` picks WebP or AVIF, both of
-   which have alpha). Read
+2. **Generate the art** from `docs/avatars/art/avatar_prompts.csv` (58 rows), checking each at
+   20px and 32px on a tinted tile.
+3. **Deliver through Cloudinary.** Upload the 58 plus the two previews and wire
+   `portraitArtUrl` through the `cloudinaryImage.ts` patterns. It stays the only URL seam, so
+   every portrait keeps loading through `Portrait`'s one `<img loading="lazy" decoding="async">`
+   (pinned by `Portrait.test.tsx`); add no eager path. Read
    [cloudinary-cost-controls.md](../cloudinary-cost-controls.md) first: no `dpr_auto`, capped
    widths, square rungs for portraits.
