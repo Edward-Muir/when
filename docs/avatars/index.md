@@ -73,12 +73,33 @@ never `bg-token/NN`, which compiles to nothing (see CLAUDE.md, Styling). There i
 art: a painted landscape per theme was planned, but with no banner to show it on, it would only
 ever appear in the picker.
 
-## The art spec, from the Wingspan reference
+## The art spec: the game's own oil-painting style
 
-**Portraits only.** A square head-and-shoulders bust of the animal in ink linework and soft
-watercolour, after the portrait cards in the digital edition of Wingspan. Each animal has one
-fun history persona, such as a scholarly platypus with spectacles and a quill, or a knightly
-aardvark in a helm.
+**Portraits only, painted like the event cards.** The idea of a portrait per animal came from
+the digital edition of Wingspan, but the look is the game's own: the dramatic chiaroscuro oil
+painting of every event card (the skeleton in
+[events-images/](../events-images/index.md#the-prompt-csv-contract)), not Wingspan's ink and
+watercolour. Each portrait is a square head-and-shoulders bust of the animal in an Old Master
+portrait manner, with one fun history persona, such as a scholarly platypus with spectacles and
+a quill, or a knightly aardvark in a helm. The card rules carry over: no text or lettering
+(no books with writing, no maps), no colour adjectives, one prop.
+
+The template, with only the second half changing per animal:
+
+```
+A dramatic chiaroscuro oil painting in the manner of an Old Master {role}'s portrait.
+1:1 square composition optimized for very small screen viewing (it must read at 24 pixels).
+A tight head-and-shoulders bust of a {animal} as {persona}, its {defining feature} filling
+most of the frame, turned three-quarters toward the viewer with {expression}. It wears
+{costume}. One prop only: {prop}. Strong simple silhouette, high contrast, warm {light}
+from one side, rich painterly brushwork but no fine detail. Isolated on a flat plain
+uniform background with nothing behind the figure. No text, no letters, no numbers, no
+labels, no borders, no frame, no watermarks.
+```
+
+Worked example, the platypus: a learned linguist, its broad flat bill and head filling the
+frame, small round brass spectacles perched on the bill, a dark scholar's robe with a white
+ruff collar, a quill pen held up beside its face, candlelight.
 
 **Transparent background.** The tint has to show behind the animal, so each portrait is a
 cut-out with no paper or scene of its own. Generate on a flat plain background and remove it
