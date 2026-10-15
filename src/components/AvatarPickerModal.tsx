@@ -16,6 +16,10 @@ const SECTION_HEADING =
 const TILE = 'flex flex-col items-center gap-1 rounded-lg p-1 transition-colors';
 const SELECTED = 'ring-2 ring-accent';
 const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
+// The cap follows the *visible* viewport: `--vh` is `1dvh` where supported (App.tsx). Plain
+// `vh` is the large viewport on iOS browsers, so with their toolbars showing a 90vh card ran
+// off both ends of the screen, header and Done button with it.
+const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
 
 /**
  * Choose your portrait and its tint. Each tap saves at once and the tile at the top previews
@@ -23,7 +27,8 @@ const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
  *
  * Opened from the menu's "Your Avatar" row only: avatars are a quiet touch, not a profile
  * page. On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
- * drawer it opens from.
+ * drawer it opens from. The preview and the footer are pinned and only the grids scroll, so
+ * the way out is always on screen.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }) => {
   const { name, avatar, chosen, setAvatar } = usePlayerProfile();
@@ -36,9 +41,10 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
       header="Your Avatar"
       size="wide"
       layer="reveal"
-      scroll="card"
+      scroll="body"
+      maxHeightClass={MAX_HEIGHT}
     >
-      <div className="p-4 space-y-5">
+      <div className="shrink-0 px-4 py-3 border-b border-border">
         <div className="flex items-center gap-3">
           <Portrait avatar={avatar} size="lg" />
           <div className="min-w-0">
@@ -46,7 +52,9 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
             <div className="text-xs text-text-muted font-body">{getTheme(avatar.theme)?.label}</div>
           </div>
         </div>
+      </div>
 
+      <div className="flex-1 min-h-0 overflow-y-auto p-4 space-y-5" data-testid="avatar-grids">
         <section>
           <h3 className={SECTION_HEADING}>Portrait</h3>
           <div className={GRID} role="radiogroup" aria-label="Portrait">
@@ -99,33 +107,33 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
             })}
           </div>
         </section>
+      </div>
 
-        <div className="space-y-2">
-          <button
-            type="button"
-            onClick={() => setAvatar(null)}
-            disabled={!chosen}
-            className="w-full py-2 rounded-lg border border-border text-text font-body text-sm disabled:opacity-50"
-          >
-            Match my name
-            {chosen && (
-              <span className="text-text-muted">
-                {' '}
-                ({AVATAR_ANIMALS.find((a) => a.id === fromName.animal)?.label})
-              </span>
-            )}
-          </button>
-          <p className="text-xs text-text-muted font-body text-center">
-            Shown with your next daily leaderboard score.
-          </p>
-          <button
-            type="button"
-            onClick={onDismiss}
-            className="w-full py-3 bg-accent text-white rounded-xl font-medium font-body"
-          >
-            Done
-          </button>
-        </div>
+      <div className="shrink-0 border-t border-border p-4 space-y-2">
+        <button
+          type="button"
+          onClick={() => setAvatar(null)}
+          disabled={!chosen}
+          className="w-full py-2 rounded-lg border border-border text-text font-body text-sm disabled:opacity-50"
+        >
+          Match my name
+          {chosen && (
+            <span className="text-text-muted">
+              {' '}
+              ({AVATAR_ANIMALS.find((a) => a.id === fromName.animal)?.label})
+            </span>
+          )}
+        </button>
+        <p className="text-xs text-text-muted font-body text-center">
+          Shown with your next daily leaderboard score.
+        </p>
+        <button
+          type="button"
+          onClick={onDismiss}
+          className="w-full py-3 bg-accent text-white rounded-xl font-medium font-body"
+        >
+          Done
+        </button>
       </div>
     </Modal>
   );

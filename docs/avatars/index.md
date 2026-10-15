@@ -3,7 +3,8 @@
 Every player has a **portrait**: an animal on a small square tile, faintly tinted by a
 **theme** (one of 20 named colours). It is a deliberately quiet touch. It shows on leaderboard
 rows, beside the name box when a daily score is submitted, and as the icon of the menu's "Your
-Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
+Avatar" row, which opens the picker. Tapping a row on the daily leaderboard shows that player's
+portrait up close. There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
 As of this writing the art does not exist: every surface draws a placeholder. The prompts and
@@ -11,15 +12,16 @@ the Cloudinary pipeline are the next piece of work (see [Still to do](#still-to-
 
 ## Where things live
 
-| What                                                       | Where                                  |
-| ---------------------------------------------------------- | -------------------------------------- |
-| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                |
-| Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                  |
-| The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`           |
-| Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`        |
-| The tinted square tile                                     | `src/components/ui/Portrait.tsx`       |
-| The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx` |
-| Server format check                                        | `lib/leaderboard/avatar.ts`            |
+| What                                                       | Where                                    |
+| ---------------------------------------------------------- | ---------------------------------------- |
+| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                  |
+| Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                    |
+| The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`             |
+| Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`          |
+| The tinted square tile                                     | `src/components/ui/Portrait.tsx`         |
+| The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx`   |
+| A player's portrait up close (tap a leaderboard row)       | `src/components/PortraitViewerModal.tsx` |
+| Server format check                                        | `lib/leaderboard/avatar.ts`              |
 
 ## Decisions
 
@@ -76,6 +78,17 @@ same.
 borrowing one by hash, so the look can be judged in the app. Remove `PREVIEW_ART` and the
 folder when the Cloudinary set lands.
 
+**The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
+supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card
+ran off both ends with the toolbars showing. The preview and the Done footer are pinned and only
+the grids scroll, so the way out is always on screen.
+
+**The board's own row is two buttons.** Every leaderboard row is a button that opens the
+portrait up close, but the player's sticky row already jumps back to their place, and buttons
+cannot nest. Its rank and portrait open the portrait; its name and score jump. The viewer is a
+sibling of the board's `Modal`, not a child, and locks the board while open so ESC closes only
+the viewer.
+
 **The theme is a tint, not a picture.** Each theme's `color` is mixed at 22% into the paper
 behind the portrait (`tintStyle` in `Portrait.tsx`, shared with the picker's swatches), so
 players read apart at a glance without the tile shouting. The mix is an inline `color-mix`,
@@ -117,8 +130,9 @@ cut-out with no paper or scene of its own. Generate on a flat plain background a
 
 ### It must work very small
 
-Portraits mostly show at **20–32px** (leaderboard rows, the menu icon) and at most 72px (the
-picker). Every portrait prompt must ask for:
+Portraits mostly show at **20–44px** (the game-over preview at 20px; leaderboard rows, the
+menu icon and the picker grid at 44px), the picker's preview at 72px, and up to **192px** in the
+tap-to-view popup. Cloudinary's large rung has to cover that 192px. Every portrait prompt must ask for:
 
 - a large head filling most of the frame, in a tight bust crop;
 - one strong, simple silhouette that holds up against a pale tint;

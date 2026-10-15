@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Avatar, getAnimal, getTheme, portraitArtUrl } from '../../utils/avatar';
 
-export type PortraitSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type PortraitSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 
 // Literal strings so Tailwind's JIT sees them. Box, corner and placeholder glyph per size.
 const SIZE_CLASSES: Record<PortraitSize, string> = {
@@ -10,6 +10,7 @@ const SIZE_CLASSES: Record<PortraitSize, string> = {
   md: 'w-11 h-11 rounded-md text-2xl',
   lg: 'w-[72px] h-[72px] rounded-lg text-4xl',
   xl: 'w-24 h-24 rounded-lg text-5xl',
+  '2xl': 'w-48 h-48 rounded-xl text-8xl',
 };
 
 /**

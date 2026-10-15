@@ -175,8 +175,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
               <div className="py-2 flex-1">
                 {/* The player's own portrait stands in for the icon: the one quiet place they
                     see what they look like on the board, and the way to change it. */}
-                <button onClick={handleAvatar} className={menuItemClass}>
-                  <Portrait avatar={profile.avatar} size="xs" />
+                {/* The same 44px tile as the leaderboard, with the row's padding trimmed so it is not
+                    twice the height of its neighbours. */}
+                <button onClick={handleAvatar} className={`${menuItemClass} !py-2`}>
+                  <Portrait avatar={profile.avatar} size="md" />
                   <span className="font-body">Your Avatar</span>
                 </button>
 

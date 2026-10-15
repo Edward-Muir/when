@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": ["Players can now pick an animal avatar for the daily leaderboard."],
+  "unreleased": [
+    "Players can now pick an animal avatar for the daily leaderboard.",
+    "Tapping a player on the daily leaderboard now shows their portrait up close."
+  ],
   "releases": [
     {
       "version": "1.33.2",
