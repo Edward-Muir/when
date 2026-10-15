@@ -23,16 +23,16 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
           key={i}
           data-testid="leaderboard-skeleton-row"
           className={
-            compact ? 'px-2 py-1 flex items-center gap-2' : 'px-4 py-3 flex items-center gap-3'
+            compact ? 'px-2 py-1 flex items-center gap-2' : 'px-4 py-2 flex items-center gap-3'
           }
         >
           {/* The rank number, then the portrait tile */}
           <div
             className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
           />
-          {/* The portrait tile, at the size the loaded row draws it (Portrait xs / sm). */}
+          {/* The portrait tile, at the size the loaded row draws it (Portrait xs / md). */}
           <div
-            className={`bg-border animate-pulse shrink-0 ${compact ? 'w-5 h-5 rounded-[3px]' : 'w-8 h-8 rounded'}`}
+            className={`bg-border animate-pulse shrink-0 ${compact ? 'w-5 h-5 rounded-[3px]' : 'w-11 h-11 rounded-md'}`}
           />
           <div
             className={`bg-border rounded animate-pulse ${compact ? 'h-4' : 'h-5'}`}

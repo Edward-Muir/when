@@ -6,7 +6,7 @@ import { Avatar, resolveAvatar } from '../utils/avatar';
 import Portrait from './ui/Portrait';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
-const ROW_LAYOUT = 'w-full px-4 py-3 flex items-center gap-3 text-left';
+const ROW_LAYOUT = 'w-full px-4 py-2 flex items-center gap-3 text-left';
 
 /**
  * Rank, portrait, name, score. The podium is marked by framing the top three portraits in
@@ -17,7 +17,7 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar }> = ({ entry
   <>
     <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{entry.rank}</div>
 
-    <Portrait avatar={avatar} size="sm" frame={getMedalColor(entry.rank)} />
+    <Portrait avatar={avatar} size="md" frame={getMedalColor(entry.rank)} />
 
     <div className="flex-1 min-w-0">
       <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
