@@ -45,9 +45,9 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
     >
       <div className="shrink-0 px-4 py-3 border-b border-border">
         <div className="flex items-center gap-3">
-          <Portrait avatar={avatar} size="lg" />
+          <Portrait avatar={avatar} size="xl" />
           <div className="min-w-0">
-            <div className="font-display font-semibold text-lg text-text truncate">{name}</div>
+            <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
             <div className="text-xs text-text-muted font-body">{getTheme(avatar.theme)?.label}</div>
           </div>
         </div>
