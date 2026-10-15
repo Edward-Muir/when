@@ -1,38 +1,33 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { getMedalEmoji } from '../utils/leaderboardUtils';
+import { getMedalColor } from '../utils/leaderboardUtils';
 import { Avatar, resolveAvatar } from '../utils/avatar';
 import Portrait from './ui/Portrait';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
 const ROW_LAYOUT = 'w-full px-4 py-3 flex items-center gap-3 text-left';
 
-const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar }> = ({ entry, avatar }) => {
-  const medal = getMedalEmoji(entry.rank);
+/**
+ * Rank, portrait, name, score. The podium is marked by framing the top three portraits in
+ * gold, silver and bronze rather than with medal emoji, so the rank is a plain number for
+ * everyone and the portrait carries the honour.
+ */
+const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar }> = ({ entry, avatar }) => (
+  <>
+    <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{entry.rank}</div>
 
-  return (
-    <>
-      <div className="w-8 text-center shrink-0">
-        {medal ? (
-          <span className="text-lg">{medal}</span>
-        ) : (
-          <span className="text-sm text-text-muted font-mono">#{entry.rank}</span>
-        )}
-      </div>
+    <Portrait avatar={avatar} size="sm" frame={getMedalColor(entry.rank)} />
 
-      <Portrait avatar={avatar} size="sm" />
+    <div className="flex-1 min-w-0">
+      <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
+    </div>
 
-      <div className="flex-1 min-w-0">
-        <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
-      </div>
-
-      <div className="text-right shrink-0">
-        <span className="text-lg font-bold font-mono text-accent">{entry.correctCount}</span>
-      </div>
-    </>
-  );
-};
+    <div className="text-right shrink-0">
+      <span className="text-lg font-bold font-mono text-accent">{entry.correctCount}</span>
+    </div>
+  </>
+);
 
 interface LeaderboardRowProps {
   entry: LeaderboardEntry;

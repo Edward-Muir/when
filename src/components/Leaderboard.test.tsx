@@ -102,6 +102,15 @@ describe('Leaderboard', () => {
       expect(animals).toEqual(['otter', 'koala', 'hawk']);
     });
 
+    it('frames the podium instead of showing medal emoji', () => {
+      renderBoard();
+      const frames = screen.getAllByTestId('portrait').map((p) => p.dataset.frame);
+      expect(frames.slice(0, 3).every(Boolean)).toBe(true);
+      expect(new Set(frames.slice(0, 3)).size).toBe(3);
+      expect(frames.slice(3).some(Boolean)).toBe(false);
+      expect(screen.queryByText('🥇')).toBeNull();
+    });
+
     it('shows the player’s current pick on their own row, not the one stored with the score', () => {
       localStorage.setItem('when-avatar', 'panda.roman');
       const entries: LeaderboardEntry[] = [
@@ -160,7 +169,7 @@ describe('Leaderboard', () => {
       });
 
       expect(screen.getByText('Late Finisher')).toBeInTheDocument();
-      expect(screen.getByText('#312')).toBeInTheDocument();
+      expect(screen.getByText('312')).toBeInTheDocument();
       // It sits outside the scrolling list, so it cannot also be a sticky row.
       const list = screen.getByTestId('leaderboard-list');
       expect(within(list).queryByText('Late Finisher')).not.toBeInTheDocument();

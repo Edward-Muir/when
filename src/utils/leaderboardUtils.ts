@@ -1,15 +1,19 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 
-export function getMedalEmoji(rank: number): string {
+/**
+ * The podium's frame colour for a rank's portrait, or null past third. The board marks the top
+ * three by framing their portrait rather than with medal emoji beside it (LeaderboardRow).
+ */
+export function getMedalColor(rank: number): string | null {
   switch (rank) {
     case 1:
-      return '🥇';
+      return '#d4a72c';
     case 2:
-      return '🥈';
+      return '#aeb4bc';
     case 3:
-      return '🥉';
+      return '#b8733d';
     default:
-      return '';
+      return null;
   }
 }
 

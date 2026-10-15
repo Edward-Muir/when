@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Trophy } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
-import { getMedalEmoji, resolvePlayerRow } from '../utils/leaderboardUtils';
+import { getMedalColor, resolvePlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
@@ -19,14 +19,22 @@ function PreviewHeader() {
   );
 }
 
-function OwnPortrait() {
+function OwnPortrait({ frame }: { frame: string | null }) {
   const { avatar } = usePlayerProfile();
-  return <Portrait avatar={avatar} size="xs" />;
+  return <Portrait avatar={avatar} size="xs" frame={frame} />;
 }
 
-/** The player's own row shows their current avatar, as on the full board (LeaderboardRow). */
+/**
+ * The podium is framed in gold, silver and bronze, as on the full board (LeaderboardRow), and
+ * the player's own row shows their current avatar.
+ */
 function PreviewPortrait({ entry, own }: { entry: LeaderboardEntry; own: boolean }) {
-  return own ? <OwnPortrait /> : <Portrait avatar={resolveAvatar(entry)} size="xs" />;
+  const frame = getMedalColor(entry.rank);
+  return own ? (
+    <OwnPortrait frame={frame} />
+  ) : (
+    <Portrait avatar={resolveAvatar(entry)} size="xs" frame={frame} />
+  );
 }
 
 // Leaderboard preview showing top 3 + player's entry if outside top 3
@@ -57,7 +65,7 @@ function LeaderboardPreview({
           key={entry.rank}
           className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-player-row' : ''}`}
         >
-          <span className="w-5 text-center">{getMedalEmoji(entry.rank)}</span>
+          <span className="w-5 text-right text-xs text-text-muted font-mono">{entry.rank}</span>
           <PreviewPortrait entry={entry} own={playerRank === entry.rank} />
           <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
           <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
@@ -67,8 +75,8 @@ function LeaderboardPreview({
         <>
           <div className="text-xs text-text-muted text-center py-1">...</div>
           <div className="flex items-center gap-2 text-sm px-2 py-1 rounded bg-player-row">
-            <span className="w-5 text-center text-xs text-text-muted font-mono">
-              #{playerRow.rank}
+            <span className="w-5 text-right text-xs text-text-muted font-mono">
+              {playerRow.rank}
             </span>
             <PreviewPortrait entry={playerRow} own />
             <span className="flex-1 truncate font-body text-text">{playerRow.displayName}</span>

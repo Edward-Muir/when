@@ -1,5 +1,5 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalEmoji, resolvePlayerRow } from './leaderboardUtils';
+import { getMedalColor, resolvePlayerRow } from './leaderboardUtils';
 
 const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): LeaderboardEntry => ({
   displayName: `Player ${rank}`,
@@ -8,16 +8,16 @@ const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): Leaderb
   ...overrides,
 });
 
-describe('getMedalEmoji', () => {
-  it('medals the podium', () => {
-    expect(getMedalEmoji(1)).toBe('🥇');
-    expect(getMedalEmoji(2)).toBe('🥈');
-    expect(getMedalEmoji(3)).toBe('🥉');
+describe('getMedalColor', () => {
+  it('gives the podium three distinct frames', () => {
+    const podium = [1, 2, 3].map(getMedalColor);
+    expect(podium.every(Boolean)).toBe(true);
+    expect(new Set(podium).size).toBe(3);
   });
 
-  it('returns an empty string past the podium, so the caller falls back to #N', () => {
-    expect(getMedalEmoji(4)).toBe('');
-    expect(getMedalEmoji(50)).toBe('');
+  it('frames nobody past the podium', () => {
+    expect(getMedalColor(4)).toBeNull();
+    expect(getMedalColor(50)).toBeNull();
   });
 });
 

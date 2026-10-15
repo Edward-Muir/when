@@ -66,6 +66,16 @@ the only seam. The tile shows the animal's emoji, or its initial where no
 emoji reads as that animal; ZWJ emoji (phoenix, raven, moose) are skipped because older
 WebViews draw them as two glyphs.
 
+**The podium is a frame, not a medal.** Leaderboard rows show a plain rank number beside the
+portrait, and the top three portraits get a gold, silver or bronze frame (`getMedalColor` in
+`leaderboardUtils.ts`) in place of the old medal emoji column. The game-over preview does the
+same.
+
+**Preview art is temporary.** Two finished portraits (platypus, goldfish) live in
+`public/avatars/preview/` and `portraitArtUrl` serves them for every animal, the other 58
+borrowing one by hash, so the look can be judged in the app. Remove `PREVIEW_ART` and the
+folder when the Cloudinary set lands.
+
 **The theme is a tint, not a picture.** Each theme's `color` is mixed at 22% into the paper
 behind the portrait (`tintStyle` in `Portrait.tsx`, shared with the picker's swatches), so
 players read apart at a glance without the tile shouting. The mix is an inline `color-mix`,

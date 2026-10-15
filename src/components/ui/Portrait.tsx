@@ -29,6 +29,8 @@ interface PortraitProps {
   size: PortraitSize;
   /** Give the tile an accessible name. Off by default: almost everywhere the name sits beside it. */
   labelled?: boolean;
+  /** A heavier frame in this colour: the leaderboard's podium (`getMedalColor`). */
+  frame?: string | null;
   className?: string;
 }
 
@@ -39,7 +41,13 @@ interface PortraitProps {
  * Until the art exists (`portraitArtUrl` returns null) the tile shows the animal's emoji, or
  * its initial where no emoji reads as that animal. See docs/avatars/index.md.
  */
-const Portrait: React.FC<PortraitProps> = ({ avatar, size, labelled = false, className = '' }) => {
+const Portrait: React.FC<PortraitProps> = ({
+  avatar,
+  size,
+  labelled = false,
+  frame = null,
+  className = '',
+}) => {
   const animal = getAnimal(avatar.animal);
   const art = portraitArtUrl(avatar.animal);
   const [, setFailed] = useState(0);
@@ -50,13 +58,14 @@ const Portrait: React.FC<PortraitProps> = ({ avatar, size, labelled = false, cla
   return (
     <span
       // eslint-disable-next-line security/detect-object-injection -- union-typed key into const map
-      className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden bg-paper text-ink border border-border leading-none select-none ${SIZE_CLASSES[size]} ${className}`}
-      style={tint ? tintStyle(tint) : undefined}
+      className={`relative inline-flex items-center justify-center shrink-0 overflow-hidden bg-paper text-ink leading-none select-none ${frame ? 'border-2' : 'border border-border'} ${SIZE_CLASSES[size]} ${className}`}
+      style={{ ...(tint ? tintStyle(tint) : {}), ...(frame ? { borderColor: frame } : {}) }}
       role={labelled ? 'img' : undefined}
       aria-label={labelled ? label : undefined}
       aria-hidden={labelled ? undefined : true}
       data-testid="portrait"
       data-animal={avatar.animal}
+      data-frame={frame ?? undefined}
     >
       {showArt ? (
         <img

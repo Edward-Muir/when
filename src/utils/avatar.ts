@@ -108,9 +108,18 @@ export function resolveAvatar(entry: { displayName: string; avatar?: string }): 
   return parseAvatar(entry.avatar) ?? avatarForName(entry.displayName);
 }
 
+/**
+ * TEMPORARY PREVIEW, not the delivery path. Two finished portraits (platypus, goldfish) are
+ * served from public/avatars/preview/ so the look can be judged in the app before the full set
+ * exists; every other animal borrows one of the two, picked by a stable hash. Replace with the
+ * Cloudinary URLs when the 60 portraits are made (docs/avatars/index.md, Still to do).
+ */
+const PREVIEW_ART = ['platypus', 'goldfish'] as const;
+
 /** Portrait art for an animal, or null while it only has a placeholder. */
-export function portraitArtUrl(_animal: string): string | null {
-  return null;
+export function portraitArtUrl(animal: string): string | null {
+  const own = PREVIEW_ART.find((id) => id === animal);
+  return `/avatars/preview/${own ?? pick(PREVIEW_ART, `art:${animal}`)}.webp`;
 }
 
 /**

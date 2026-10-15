@@ -26,8 +26,9 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
             compact ? 'px-2 py-1 flex items-center gap-2' : 'px-4 py-3 flex items-center gap-3'
           }
         >
+          {/* The rank number, then the portrait tile */}
           <div
-            className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-8 h-6'}`}
+            className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
           />
           {/* The portrait tile, at the size the loaded row draws it (Portrait xs / sm). */}
           <div
