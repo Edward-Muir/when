@@ -1,15 +1,16 @@
 import { useCallback, useEffect, useState } from 'react';
-import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
 import { useLeaderboard, LeaderboardEntry } from './useLeaderboard';
 import {
   DailyResult,
-  getDisplayName,
+  getAvatarChoice,
+  getOrCreateDisplayName,
   saveDisplayName,
   hasSubmittedToLeaderboard,
   markLeaderboardSubmitted,
   updateDailyResultWithLeaderboard,
 } from '../utils/playerStorage';
 import { patchDailyRank } from '../utils/gameHistory';
+import { avatarForName, formatAvatar } from '../utils/avatar';
 
 export interface DailyLeaderboard {
   entries: LeaderboardEntry[];
@@ -96,7 +97,7 @@ export function useDailyLeaderboard(
     fetchLeaderboard,
   } = useLeaderboard();
 
-  const [suggestedName] = useState(() => getDisplayName() || generateRandomName());
+  const [suggestedName] = useState(getOrCreateDisplayName);
 
   // Seeded from localStorage so a returning player never sees the submit form flash before the
   // server confirms what we already know.
@@ -170,7 +171,11 @@ export function useDailyLeaderboard(
     async (displayName: string) => {
       if (!dailyResult) return;
       saveDisplayName(displayName);
-      const success = await submitResult(dailyResult, displayName || 'Anonymous');
+      const name = displayName || 'Anonymous';
+      // Always sent, picked or not, so the board shows what the player saw in the form even if
+      // the name filter later swaps the name the avatar was derived from.
+      const avatar = formatAvatar(getAvatarChoice() ?? avatarForName(name));
+      const success = await submitResult(dailyResult, name, avatar);
       if (success) {
         markLeaderboardSubmitted();
         setSubmittedLocally(true);
@@ -204,13 +209,4 @@ export function useDailyLeaderboard(
     submit,
     refresh,
   };
-}
-
-function generateRandomName(): string {
-  return uniqueNamesGenerator({
-    dictionaries: [adjectives, animals],
-    separator: ' ',
-    style: 'capital',
-    length: 2,
-  });
 }

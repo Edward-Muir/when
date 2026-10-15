@@ -89,6 +89,33 @@ describe('Leaderboard', () => {
     expect(onClose).toHaveBeenCalled();
   });
 
+  describe('portraits', () => {
+    it('gives every row a portrait, from the pick when there is one and the name otherwise', () => {
+      const entries: LeaderboardEntry[] = [
+        { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
+        { displayName: 'Linguistic Platypus', correctCount: 8, rank: 2, avatar: 'koala.viking' },
+        { displayName: 'Swift Hawk', correctCount: 7, rank: 3, avatar: 'unicorn.viking' },
+      ];
+      renderBoard({ entries });
+
+      const animals = screen.getAllByTestId('portrait').map((p) => p.dataset.animal);
+      expect(animals).toEqual(['otter', 'koala', 'hawk']);
+    });
+
+    it('shows the player’s current pick on their own row, not the one stored with the score', () => {
+      localStorage.setItem('when-avatar', 'panda.roman');
+      const entries: LeaderboardEntry[] = [
+        { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
+        { displayName: 'Me Platypus', correctCount: 8, rank: 2, avatar: 'platypus.scholar' },
+      ];
+      renderBoard({ entries, playerRank: 2, playerEntry: entries[1] as LeaderboardEntry });
+
+      const own = screen.getByRole('button', { name: /your rank/i });
+      expect(within(own).getByTestId('portrait').dataset.animal).toBe('panda');
+      localStorage.clear();
+    });
+  });
+
   describe('the player’s own row', () => {
     const entries = makeEntries(BOARD_SIZE);
     const playerEntry = entries[19] as LeaderboardEntry;

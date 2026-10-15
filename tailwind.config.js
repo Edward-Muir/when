@@ -42,6 +42,8 @@ module.exports = {
         'accent-secondary': 'var(--color-accent-secondary)',
         'success': 'var(--color-success)',
         'error': 'var(--color-error)',
+        'paper': 'var(--color-paper)',
+        'ink': 'var(--color-ink)',
         // Keep for overlays and utilities
         'transparent': 'transparent',
         'white': '#FFFFFF',

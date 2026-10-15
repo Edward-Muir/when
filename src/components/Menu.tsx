@@ -16,6 +16,7 @@ import {
   LifeBuoy,
   RotateCcw,
   Sparkles,
+  UserRound,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
@@ -27,7 +28,10 @@ import { shareApp } from '../utils/share';
 import { resetHintsSeen } from '../utils/playerStorage';
 import { APP_VERSION } from '../version';
 import HowToPlayModal from './HowToPlayModal';
+import AvatarPickerModal from './AvatarPickerModal';
 import Modal from './ui/Modal';
+import ProfileBanner from './ui/ProfileBanner';
+import { usePlayerProfile } from '../hooks/usePlayerProfile';
 
 interface MenuProps {
   isOpen: boolean;
@@ -81,6 +85,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
+  const [showAvatarPicker, setShowAvatarPicker] = React.useState(false);
+  const profile = usePlayerProfile();
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native app (redundant) and not on Android/desktop (the menu links only the App Store).
@@ -103,6 +109,10 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
 
   const handleRules = () => {
     setShowRulesModal(true);
+  };
+
+  const handleAvatar = () => {
+    setShowAvatarPicker(true);
   };
 
   // No confirm and no confirmation text: nothing is lost, the hints just come back. Closing
@@ -150,20 +160,31 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                 if (info.offset.x > 100) onClose();
               }}
             >
-              {/* Header */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-                <span className="font-display font-semibold text-lg text-text">Menu</span>
+              {/* Header: who you are, over your theme's background. Tapping it opens the
+                  avatar picker; the close button sits on top as a sibling, not inside it. */}
+              <div className="relative border-b border-border">
+                <ProfileBanner
+                  name={profile.name}
+                  avatar={profile.avatar}
+                  compact
+                  onClick={handleAvatar}
+                />
                 <button
                   onClick={onClose}
-                  className="p-2 -mr-2 rounded-lg hover:bg-border/50 transition-colors"
+                  className="absolute top-1 right-1 p-2 rounded-lg text-white"
                   aria-label="Close menu"
                 >
-                  <X className="w-5 h-5 text-text-muted" />
+                  <X className="w-5 h-5" />
                 </button>
               </div>
 
               {/* Menu Items */}
-              <div className="py-2 flex-1">
+              <div className="py-2 flex-1 min-h-0 overflow-y-auto">
+                <button onClick={handleAvatar} className={menuItemClass}>
+                  <UserRound className={iconClass} />
+                  <span className="font-body">Your Avatar</span>
+                </button>
+
                 {/* Theme toggle — kept open so the user sees the switch and can toggle back. */}
                 <button onClick={toggleTheme} className={menuItemClass}>
                   {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
@@ -270,6 +291,9 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
 
       {/* How to Play. Above the drawer (reveal layer) so it opens over the open menu. */}
       <HowToPlayModal open={showRulesModal} onDismiss={() => setShowRulesModal(false)} />
+
+      {/* Avatar picker. Reveal layer too, so it opens over the drawer. */}
+      <AvatarPickerModal open={showAvatarPicker} onDismiss={() => setShowAvatarPicker(false)} />
     </>
   );
 };

@@ -6,6 +6,12 @@ import {
   HintKey,
   getCustomSettings,
   saveCustomSettings,
+  getDisplayName,
+  saveDisplayName,
+  getOrCreateDisplayName,
+  getAvatarChoice,
+  saveAvatarChoice,
+  subscribeToProfile,
 } from './playerStorage';
 
 const ALL_KEYS: HintKey[] = [
@@ -105,5 +111,43 @@ describe('custom settings storage', () => {
     expect(getCustomSettings()?.excludedCountries).toBeUndefined();
     saveCustomSettings({ ...saved, excludedCountries: ['Europe|Germany'] });
     expect(getCustomSettings()?.excludedCountries).toEqual(['Europe|Germany']);
+  });
+});
+
+describe('display name and avatar storage', () => {
+  it('generates a display name once and keeps it', () => {
+    const first = getOrCreateDisplayName();
+    expect(first).toMatch(/^\S+ \S+$/);
+    expect(getDisplayName()).toBe(first);
+    expect(getOrCreateDisplayName()).toBe(first);
+  });
+
+  it('never replaces a saved name', () => {
+    saveDisplayName('Ada');
+    expect(getOrCreateDisplayName()).toBe('Ada');
+  });
+
+  it('round-trips the avatar pick, including clearing it', () => {
+    expect(getAvatarChoice()).toBeNull();
+    saveAvatarChoice({ animal: 'platypus', theme: 'scholar' });
+    expect(getAvatarChoice()).toEqual({ animal: 'platypus', theme: 'scholar' });
+    saveAvatarChoice(null);
+    expect(getAvatarChoice()).toBeNull();
+  });
+
+  it('ignores a stored pick this build does not know', () => {
+    localStorage.setItem('when-avatar', 'unicorn.scholar');
+    expect(getAvatarChoice()).toBeNull();
+  });
+
+  it('tells subscribers when the profile changes', () => {
+    const listener = jest.fn();
+    const unsubscribe = subscribeToProfile(listener);
+    saveAvatarChoice({ animal: 'koala', theme: 'viking' });
+    saveDisplayName('Grace');
+    expect(listener).toHaveBeenCalledTimes(2);
+    unsubscribe();
+    saveAvatarChoice(null);
+    expect(listener).toHaveBeenCalledTimes(2);
   });
 });

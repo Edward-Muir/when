@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import Menu from './Menu';
@@ -65,6 +65,32 @@ describe('Menu', () => {
     await userEvent.click(screen.getByRole('button', { name: /how to play/i }));
     expect(screen.getByRole('heading', { name: 'How to Play' })).toBeInTheDocument();
     expect(screen.getByText('Build the longest timeline!')).toBeInTheDocument();
+  });
+
+  it('shows who the player is at the top of the drawer', () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    renderMenu();
+    const banner = screen.getByTestId('profile-banner');
+    expect(banner).toHaveTextContent('Linguistic Platypus');
+    expect(within(banner).getByTestId('portrait').dataset.animal).toBe('platypus');
+  });
+
+  it('opens the avatar picker, and a pick updates the banner and is saved', async () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    renderMenu();
+    await userEvent.click(screen.getByRole('button', { name: /^your avatar$/i }));
+
+    const picker = screen.getByRole('radiogroup', { name: 'Portrait' });
+    await userEvent.click(within(picker).getByRole('radio', { name: 'Koala' }));
+    await userEvent.click(screen.getByRole('radio', { name: /viking/i }));
+
+    expect(localStorage.getItem('when-avatar')).toBe('koala.viking');
+    const drawerBanner = screen.getAllByTestId('profile-banner')[0] as HTMLElement;
+    expect(within(drawerBanner).getByTestId('portrait').dataset.animal).toBe('koala');
+
+    await userEvent.click(screen.getByRole('button', { name: /match my name/i }));
+    expect(localStorage.getItem('when-avatar')).toBeNull();
+    expect(within(drawerBanner).getByTestId('portrait').dataset.animal).toBe('platypus');
   });
 
   it("links What's New to the changelog and closes", async () => {

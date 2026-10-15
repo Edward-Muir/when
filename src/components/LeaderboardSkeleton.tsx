@@ -29,6 +29,10 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
           <div
             className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-8 h-6'}`}
           />
+          {/* The portrait tile, at the size the loaded row draws it (Portrait xs / sm). */}
+          <div
+            className={`bg-border animate-pulse shrink-0 ${compact ? 'w-5 h-5 rounded-[3px]' : 'w-8 h-8 rounded'}`}
+          />
           <div
             className={`bg-border rounded animate-pulse ${compact ? 'h-4' : 'h-5'}`}
             // The taper only reads as a list for the first few rows; past that a flat width

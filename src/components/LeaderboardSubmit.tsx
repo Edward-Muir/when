@@ -4,6 +4,9 @@ import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { getMedalEmoji, resolvePlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
+import Portrait from './ui/Portrait';
+import { usePlayerProfile } from '../hooks/usePlayerProfile';
+import { avatarForName, resolveAvatar } from '../utils/avatar';
 
 const PREVIEW_ROWS = 3;
 
@@ -14,6 +17,16 @@ function PreviewHeader() {
       <span>Today&apos;s Leaderboard</span>
     </div>
   );
+}
+
+function OwnPortrait() {
+  const { avatar } = usePlayerProfile();
+  return <Portrait avatar={avatar} size="xs" />;
+}
+
+/** The player's own row shows their current avatar, as on the full board (LeaderboardRow). */
+function PreviewPortrait({ entry, own }: { entry: LeaderboardEntry; own: boolean }) {
+  return own ? <OwnPortrait /> : <Portrait avatar={resolveAvatar(entry)} size="xs" />;
 }
 
 // Leaderboard preview showing top 3 + player's entry if outside top 3
@@ -45,6 +58,7 @@ function LeaderboardPreview({
           className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-player-row' : ''}`}
         >
           <span className="w-5 text-center">{getMedalEmoji(entry.rank)}</span>
+          <PreviewPortrait entry={entry} own={playerRank === entry.rank} />
           <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
           <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
         </div>
@@ -56,6 +70,7 @@ function LeaderboardPreview({
             <span className="w-5 text-center text-xs text-text-muted font-mono">
               #{playerRow.rank}
             </span>
+            <PreviewPortrait entry={playerRow} own />
             <span className="flex-1 truncate font-body text-text">{playerRow.displayName}</span>
             <span className="font-mono text-accent font-medium">{playerRow.correctCount}</span>
           </div>
@@ -77,17 +92,25 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
   leaderboard,
 }) => {
   const [name, setName] = useState(leaderboard.suggestedName);
+  const profile = usePlayerProfile();
+  // A picked avatar wins; otherwise it follows the name as it is typed, so the player sees
+  // what the board will show before they submit.
+  const avatar = profile.chosen ? profile.avatar : avatarForName(name || 'Anonymous');
 
   return (
     <div className="space-y-2">
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Your name (optional)"
-        maxLength={20}
-        className="w-full px-3 py-2 rounded-lg border border-border bg-bg text-text font-body text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-      />
+      <div className="flex items-center gap-2">
+        <Portrait avatar={avatar} size="md" />
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your name (optional)"
+          maxLength={20}
+          aria-label="Your name"
+          className="flex-1 min-w-0 px-3 py-2 rounded-lg border border-border bg-bg text-text font-body text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+        />
+      </div>
       <button
         onClick={() => void leaderboard.submit(name)}
         disabled={leaderboard.isSubmitting}

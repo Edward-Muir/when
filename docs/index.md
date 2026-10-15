@@ -35,6 +35,9 @@ says: for "how does X work", read the source.
 
 - [leaderboard-daily/](leaderboard-daily/index.md) — the local-calendar puzzle day (and why it
   is not UTC), submission validation, bots, display-name filtering
+- [avatars/](avatars/index.md) — player portraits and backgrounds: why the name decides the
+  avatar, why 60 animals (and which must stay), why the server checks only the format, the
+  placeholder seam, and the art spec (it must read at 20px)
 - [stats-achievements/](stats-achievements/index.md) — the store-primitives-derive-everything
   rule, storage keys, milestones, badge design
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char

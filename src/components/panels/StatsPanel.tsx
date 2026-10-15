@@ -37,6 +37,9 @@ import type { HistoricalEvent } from '../../types';
 import HintStrip from '../HintStrip';
 import { tabHintText } from '../../utils/hintCopy';
 import { useTabHint } from '../../hooks/useTabHint';
+import { usePlayerProfile } from '../../hooks/usePlayerProfile';
+import ProfileBanner from '../ui/ProfileBanner';
+import AvatarPickerModal from '../AvatarPickerModal';
 
 const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
 
@@ -62,6 +65,8 @@ interface StatsPanelProps {
 const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
   const today = useToday();
   const hint = useTabHint('statsTab', active);
+  const profile = usePlayerProfile();
+  const [showAvatarPicker, setShowAvatarPicker] = useState(false);
   // The catalogue, for the collection total and the badges' art. Seeded synchronously from
   // the module-level cache (populated during the app's loading phase) so remounts render
   // badge art immediately instead of flashing art-less cards.
@@ -106,6 +111,13 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
       </div>
 
       <div className="flex flex-col gap-3 pb-4">
+        {/* Who these stats belong to, as the daily leaderboard shows them. */}
+        <ProfileBanner
+          name={profile.name}
+          avatar={profile.avatar}
+          onClick={() => setShowAvatarPicker(true)}
+        />
+
         <StatCard>
           <div className="grid grid-cols-2 gap-x-3 gap-y-4">
             <StatRow
@@ -207,6 +219,8 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
           active={active}
         />
       </div>
+
+      <AvatarPickerModal open={showAvatarPicker} onDismiss={() => setShowAvatarPicker(false)} />
     </div>
   );
 };

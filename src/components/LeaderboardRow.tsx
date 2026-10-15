@@ -1,11 +1,14 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
+import { usePlayerProfile } from '../hooks/usePlayerProfile';
 import { getMedalEmoji } from '../utils/leaderboardUtils';
+import { Avatar, resolveAvatar } from '../utils/avatar';
+import Portrait from './ui/Portrait';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
 const ROW_LAYOUT = 'w-full px-4 py-3 flex items-center gap-3 text-left';
 
-const RowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
+const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar }> = ({ entry, avatar }) => {
   const medal = getMedalEmoji(entry.rank);
 
   return (
@@ -17,6 +20,8 @@ const RowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
           <span className="text-sm text-text-muted font-mono">#{entry.rank}</span>
         )}
       </div>
+
+      <Portrait avatar={avatar} size="sm" />
 
       <div className="flex-1 min-w-0">
         <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
@@ -35,10 +40,23 @@ interface LeaderboardRowProps {
   highlight?: boolean;
 }
 
+/**
+ * The player's own row shows the avatar they have now, not the one stored with today's score:
+ * a pick made after submitting would otherwise only appear tomorrow, on their own screen too.
+ */
+const OwnRowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
+  const { avatar } = usePlayerProfile();
+  return <RowCells entry={entry} avatar={avatar} />;
+};
+
 /** A plain row. Used for everyone else, and for the pinned footer when the board is truncated. */
 const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ entry, highlight = false }) => (
   <div className={`${ROW_LAYOUT} ${highlight ? 'bg-player-row' : ''}`}>
-    <RowCells entry={entry} />
+    {highlight ? (
+      <OwnRowCells entry={entry} />
+    ) : (
+      <RowCells entry={entry} avatar={resolveAvatar(entry)} />
+    )}
   </div>
 );
 
@@ -72,7 +90,7 @@ const StickyPlayerRow: React.FC<StickyPlayerRowProps> = ({ entry, onJump, rowRef
     aria-label={`Your rank, ${entry.rank}. Scroll to your position.`}
     className={`${ROW_LAYOUT} sticky top-0 bottom-0 z-10 bg-player-row border-y border-accent shadow-sm`}
   >
-    <RowCells entry={entry} />
+    <OwnRowCells entry={entry} />
   </button>
 );
 

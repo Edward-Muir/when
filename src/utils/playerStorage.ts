@@ -4,13 +4,14 @@
  * - One-shot onboarding hints
  * - Nav "new" dots
  * - The pre-stats timeline high score (read once by the stats migration)
- * - Leaderboard display name and today's submission
+ * - Leaderboard display name, chosen avatar and today's submission
  * - Daily reminder opt-out and reminder-priming dismissals
  * - Custom-game settings
  */
 
 import { Difficulty, Category, Era } from '../types';
 import { getLocalDateString } from './puzzleDate';
+import { Avatar, formatAvatar, generateRandomName, parseAvatar } from './avatar';
 import { readJson, readString, removeKeys, writeJson, writeString } from './storage';
 
 // --- Daily Result Storage ---
@@ -338,6 +339,56 @@ export function getDisplayName(): string {
  */
 export function saveDisplayName(name: string): void {
   writeString(DISPLAY_NAME_KEY, name, 'display name');
+  notifyProfileChanged();
+}
+
+let generatedName: string | null = null;
+
+/**
+ * The saved display name, or a freshly generated one saved on the spot.
+ *
+ * Saved rather than re-rolled per session because the name now shows outside the submit form
+ * (the menu and Stats banners, the avatar it implies), and a player's identity changing every
+ * launch until they first submit would read as a bug.
+ */
+export function getOrCreateDisplayName(): string {
+  const saved = getDisplayName();
+  if (saved) return saved;
+  // Held for the session too: where storage is blocked the write below is lost, and a name
+  // re-rolled on every read would make `usePlayerProfile`'s snapshot change forever. No
+  // notification either: this runs during render, and every reader already gets this value.
+  generatedName ??= generateRandomName();
+  writeString(DISPLAY_NAME_KEY, generatedName, 'display name');
+  return generatedName;
+}
+
+// --- Avatar Choice Storage ---
+
+const AVATAR_KEY = 'when-avatar';
+
+/** The avatar the player picked, or null to follow their name (see `avatarForName`). */
+export function getAvatarChoice(): Avatar | null {
+  return parseAvatar(readString(AVATAR_KEY));
+}
+
+/** Save a picked avatar; null goes back to following the name. */
+export function saveAvatarChoice(avatar: Avatar | null): void {
+  if (avatar) writeString(AVATAR_KEY, formatAvatar(avatar), 'avatar');
+  else removeKeys([AVATAR_KEY], 'avatar');
+  notifyProfileChanged();
+}
+
+// Name and avatar both show in several mounted places at once (menu, Stats, the board's own
+// row), so a change from any one of them is broadcast here. `usePlayerProfile` subscribes.
+const profileListeners = new Set<() => void>();
+
+export function subscribeToProfile(listener: () => void): () => void {
+  profileListeners.add(listener);
+  return () => profileListeners.delete(listener);
+}
+
+function notifyProfileChanged(): void {
+  profileListeners.forEach((listener) => listener());
 }
 
 // --- Leaderboard Submission Tracking ---

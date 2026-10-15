@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { adjectives, animals } from 'unique-names-generator';
+import { adjectives } from 'unique-names-generator';
 import { ADJECTIVES, ANIMALS } from '../../lib/leaderboard/botGeneration';
+import { AVATAR_ANIMALS, MAX_NAME_LENGTH } from './avatar';
 import {
   isKnownTrollName,
   isNameAllowed,
@@ -28,27 +29,6 @@ const MANIFEST_FILES: string[] = JSON.parse(
   fs.readFileSync(path.join(EVENTS_DIR, 'manifest.json'), 'utf8')
 ).files;
 
-/**
- * Prefill pairs the whole filter blocks, and should.
- *
- * These are not false positives — MAX_DISPLAY_NAME_LENGTH cuts them mid-word and what is
- * left really is profane on the card: "Straightforward Cockroach" displays as
- * "Straightforward Cock". The filter is reading the truncated string, correctly. Listed
- * explicitly so the set is visible; the fix, if one is wanted, belongs in
- * normalizeDisplayName (truncate on a word boundary), not here.
- */
-const EXPECTED_PREFILL_BLOCKS = [
-  'Administrative Cuckoo',
-  'Characteristic Cuckoo',
-  'Constitutional Cuckoo',
-  'Organisational Cuckoo',
-  'Quintessential Cuckoo',
-  'Representative Cuckoo',
-  'Straightforward Booby',
-  'Straightforward Cockroach',
-  'Straightforward Cuckoo',
-];
-
 function blockedAmong(names: Iterable<string>): string[] {
   const offenders: string[] = [];
   for (const name of names) {
@@ -69,26 +49,33 @@ function capitalize(word: string): string {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
+/**
+ * Every name `generateRandomName()` (src/utils/avatar.ts) can prefill: any package adjective
+ * with one of the avatar animals, never longer than the board's cap. The cap matters to the
+ * filter: before it, pairs cut mid-word by MAX_DISPLAY_NAME_LENGTH read as profane on the card
+ * ("Straightforward Cockroach" displayed as "Straightforward Cock") and the filter blocked
+ * them, correctly. Generated names now always fit, so nothing in this corpus is truncated.
+ */
+const PREFILL_NAMES: string[] = AVATAR_ANIMALS.flatMap((animal) =>
+  adjectives
+    .filter((adj) => adj.length + 1 + animal.label.length <= MAX_NAME_LENGTH)
+    .map((adj) => `${capitalize(adj)} ${animal.label}`)
+);
+
 describe('display-name filter false positives', () => {
   // A dependency bump that reshapes the dictionaries would silently shrink the corpus the
   // assertions below claim to cover, so pin the sizes and fail loudly instead.
   it('the client name dictionaries are the size this corpus assumes', () => {
     expect(adjectives).toHaveLength(1202);
-    expect(animals).toHaveLength(355);
+    expect(AVATAR_ANIMALS).toHaveLength(60);
+    expect(PREFILL_NAMES.length).toBeGreaterThan(50_000);
   });
 
-  // LeaderboardSubmit's generateRandomName() prefills the input from these two dictionaries.
-  // A false positive here is worse than a filter miss: the app would show a player a name in
-  // the box and then silently replace it on submit.
+  // generateRandomName() prefills the input from exactly this corpus. A false positive here
+  // is worse than a filter miss: the app would show a player a name in the box and then
+  // silently replace it on submit.
   it('never flags a name the client can prefill', () => {
-    const names: string[] = [];
-    for (const adjective of adjectives) {
-      for (const animal of animals) {
-        names.push(`${capitalize(adjective)} ${capitalize(animal)}`);
-      }
-    }
-    expect(names).toHaveLength(adjectives.length * animals.length);
-    expect(blockedAmong(names).sort()).toEqual([...EXPECTED_PREFILL_BLOCKS].sort());
+    expect(blockedAmong(PREFILL_NAMES)).toEqual([]);
   });
 
   // safeDisplayName draws replacements from these, so a hit here means a blocked name gets
@@ -122,11 +109,7 @@ describe('display-name filter false positives', () => {
   // Same measurement, isolated, for the two corpora above: whatever the shipped dataset
   // does, the checks added for "Numb Digger" must contribute no blocks of their own.
   it('the word-level checks flag nothing the app generates', () => {
-    const prefill: string[] = [];
-    for (const adjective of adjectives) {
-      for (const animal of animals) prefill.push(`${capitalize(adjective)} ${capitalize(animal)}`);
-    }
-    expect(trollFlaggedAmong(prefill)).toEqual([]);
+    expect(trollFlaggedAmong(PREFILL_NAMES)).toEqual([]);
 
     const bots: string[] = [];
     for (const adjective of ADJECTIVES) {

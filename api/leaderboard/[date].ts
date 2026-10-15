@@ -3,6 +3,7 @@ import { Redis } from '@upstash/redis';
 import { ensureBotsExist } from '../../lib/leaderboard/botGeneration';
 import { normalizeDisplayName, safeDisplayName } from '../../lib/leaderboard/nameFilter';
 import { resolveLimit } from '../../lib/leaderboard/limits';
+import { sanitizeAvatar } from '../../lib/leaderboard/avatar';
 
 const redis = Redis.fromEnv();
 
@@ -13,6 +14,7 @@ interface LeaderboardEntry {
   emojiGrid: string;
   deviceId: string;
   timestamp: number;
+  avatar?: string;
 }
 
 // Only what the board renders. `emojiGrid` and `totalAttempts` are stored on the entry and
@@ -21,10 +23,15 @@ interface LeaderboardEntry {
 // `totalAttempts` only derives a mistake count, which is the same number for almost every
 // player (a cleared curated theme can finish with fewer) — see the scoring note in submit.ts.
 // Both would otherwise ship on every 15s poll.
+//
+// `avatar` is the player's pick ("platypus.scholar"), absent for bots and older scores; the
+// client derives those from the name. Checked again on read, like names, so nothing stored
+// before the check existed (or written around it) reaches the board.
 interface PublicLeaderboardEntry {
   displayName: string;
   correctCount: number;
   rank: number;
+  avatar?: string;
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -83,11 +90,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           safeDisplayName(entry.displayName, entry.deviceId)
         : safeDisplayName(entry.displayName, entry.deviceId);
 
-    const toPublicEntry = (entry: LeaderboardEntry, rank: number): PublicLeaderboardEntry => ({
-      displayName: displayNameFor(entry),
-      correctCount: entry.correctCount,
-      rank,
-    });
+    const toPublicEntry = (entry: LeaderboardEntry, rank: number): PublicLeaderboardEntry => {
+      const avatar = sanitizeAvatar(entry.avatar);
+      return {
+        displayName: displayNameFor(entry),
+        correctCount: entry.correctCount,
+        rank,
+        ...(avatar ? { avatar } : {}),
+      };
+    };
 
     const leaderboard: PublicLeaderboardEntry[] = entries.map((entryData, index) =>
       toPublicEntry(entryData as LeaderboardEntry, index + 1)
