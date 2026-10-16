@@ -1,8 +1,8 @@
 import React from 'react';
 import Modal from './ui/Modal';
-import Portrait, { tintStyle } from './ui/Portrait';
+import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { AVATAR_ANIMALS, AVATAR_THEMES, getTheme } from '../utils/avatar';
+import { AVATAR_ANIMALS, getAnimal } from '../utils/avatar';
 
 interface AvatarPickerModalProps {
   open: boolean;
@@ -22,12 +22,13 @@ const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
 const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
 
 /**
- * Choose your portrait and its tint. Each tap saves at once and the tile at the top previews
- * it. Until a first pick, the avatar follows the name.
+ * Choose your portrait. Each tap saves at once and the tile at the top previews it. Until a
+ * first pick, the avatar follows the name. There is no tint picker: the tint always follows
+ * the name, a quiet touch not worth a second grid.
  *
  * Opened from the menu's "Your Avatar" row only: avatars are a quiet touch, not a profile
  * page. On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
- * drawer it opens from. The preview and the footer are pinned and only the grids scroll, so
+ * drawer it opens from. The preview and the footer are pinned and only the grid scrolls, so
  * the way out is always on screen.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }) => {
@@ -48,7 +49,9 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
           <Portrait avatar={avatar} size="xl" />
           <div className="min-w-0">
             <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
-            <div className="text-xs text-text-muted font-body">{getTheme(avatar.theme)?.label}</div>
+            <div className="text-xs text-text-muted font-body">
+              {getAnimal(avatar.animal)?.label}
+            </div>
           </div>
         </div>
       </div>
@@ -72,34 +75,6 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
                   <Portrait avatar={{ animal: animal.id, theme: avatar.theme }} size="md" />
                   <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
                     {animal.label}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </section>
-
-        <section>
-          <h3 className={SECTION_HEADING}>Tint</h3>
-          <div className={GRID} role="radiogroup" aria-label="Tint">
-            {AVATAR_THEMES.map((theme) => {
-              const selected = theme.id === avatar.theme;
-              return (
-                <button
-                  key={theme.id}
-                  type="button"
-                  role="radio"
-                  aria-checked={selected}
-                  aria-label={theme.label}
-                  onClick={() => setAvatar({ ...avatar, theme: theme.id })}
-                  className={`${TILE} ${selected ? SELECTED : ''}`}
-                >
-                  <span
-                    className="w-11 h-11 rounded-md border border-border"
-                    style={tintStyle(theme.color)}
-                  />
-                  <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
-                    {theme.label}
                   </span>
                 </button>
               );

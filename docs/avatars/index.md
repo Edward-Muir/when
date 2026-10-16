@@ -90,21 +90,23 @@ painting; it crops it (`Portrait`'s `crop`, `podiumStyle`). First place shows th
 60px, and each smaller tile shows the middle of the same 60px painting, anchored a little above
 centre (`50% 30%`) so the head stays in frame. So the 44px rows read as head-and-shoulders
 rather than a tiny whole figure, and first place shows more of the scene instead of looking out
-of scale. Each portrait sits centred in a slot as wide as first place's tile (`PORTRAIT_SLOT`), so every
-name starts on the same line as the top one.
+of scale. Each portrait sits flush against its rank number in a slot as wide as first place's
+tile (`PORTRAIT_SLOT`), so every name starts on the same line as the top one.
 
 **The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
 supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card
 ran off both ends with the toolbars showing. The preview and the Done footer are pinned and only
-the grids scroll, so the way out is always on screen. There is no "match my name" reset: once
-picked, an avatar stays picked.
+the grid scrolls, so the way out is always on screen. There is no "match my name" reset: once
+picked, an avatar stays picked. There is no tint picker either: the player picks only the
+animal, and the tint always follows the name. A second grid of 20 near-identical pale swatches
+was clutter for a detail that is meant to be quiet.
 
 **The theme is a tint, not a picture.** Each theme's `color` is mixed at 22% into the paper
-behind the portrait (`tintStyle` in `Portrait.tsx`, shared with the picker's swatches), so
-players read apart at a glance without the tile shouting. The mix is an inline `color-mix`,
+behind the portrait (`tintStyle` in `Portrait.tsx`), so players read apart at a glance
+without the tile shouting. The mix is an inline `color-mix`,
 never `bg-token/NN`, which compiles to nothing (see CLAUDE.md, Styling). There is no background
-art: a painted landscape per theme was planned, but with no banner to show it on, it would only
-ever appear in the picker.
+art: a painted landscape per theme was planned, but with no banner to show it on, it would have
+had nowhere to appear.
 
 ## The art spec: the game's own oil-painting style
 

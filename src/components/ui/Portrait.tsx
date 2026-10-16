@@ -19,7 +19,7 @@ export const SIZE_CLASSES: Record<PortraitSize, string> = {
 /**
  * The tile fill for a theme colour: a faint mix into the paper. A standard colour mixed into
  * the token, because `bg-paper/NN`-style modifiers on theme tokens compile to nothing
- * (CLAUDE.md, Styling). Shared with the picker's tint swatches.
+ * (CLAUDE.md, Styling).
  */
 export function tintStyle(color: string): React.CSSProperties {
   return { background: `color-mix(in srgb, ${color} 22%, var(--color-paper))` };
