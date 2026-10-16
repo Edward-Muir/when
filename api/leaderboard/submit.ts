@@ -6,6 +6,7 @@ import {
   SUBMISSION_DEDUPE_TTL_SECONDS,
 } from '../../lib/leaderboard/dateWindow';
 import { DAILY_HAND_SIZE } from '../../lib/leaderboard/handSize';
+import { sanitizeAvatar } from '../../lib/leaderboard/avatar';
 
 const redis = Redis.fromEnv();
 
@@ -31,6 +32,8 @@ interface SubmissionPayload {
   totalAttempts: number;
   emojiGrid: string;
   deviceId: string;
+  /** Optional, and never a reason to reject: see lib/leaderboard/avatar.ts. */
+  avatar?: unknown;
 }
 
 interface LeaderboardEntry {
@@ -40,6 +43,7 @@ interface LeaderboardEntry {
   emojiGrid: string;
   deviceId: string;
   timestamp: number;
+  avatar?: string;
 }
 
 interface ValidationResult {
@@ -137,6 +141,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       deviceId: body.deviceId,
       timestamp: Date.now(),
     };
+    const avatar = sanitizeAvatar(body.avatar);
+    if (avatar) entry.avatar = avatar;
 
     // Rank on correct count alone.
     //

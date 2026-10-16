@@ -1,29 +1,52 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalEmoji } from '../utils/leaderboardUtils';
+import { getMedalColor } from '../utils/leaderboardUtils';
+import { resolveAvatar } from '../utils/avatar';
+import { PAINTED_AT, podiumStyle, PORTRAIT_SLOT } from './leaderboardLayout';
+import Portrait from './ui/Portrait';
+import OwnPortrait from './ui/OwnPortrait';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
-const ROW_LAYOUT = 'w-full px-4 py-3 flex items-center gap-3 text-left';
+const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
 
-const RowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
-  const medal = getMedalEmoji(entry.rank);
-
+/**
+ * Rank, portrait, name, score. The podium is marked by framing the top three portraits in
+ * gold, silver and bronze rather than with medal emoji, so the rank is a plain number for
+ * everyone and the portrait carries the honour. The podium's portraits also step down gently
+ * in size from first place (`podiumStyle`). The number, frame and size all follow the row's
+ * place, not the server's rank, so tied scores share all three (`podiumPlaces`).
+ *
+ * `own` rows show the player's current pick (`OwnPortrait`), not the one stored with the score.
+ */
+const RowCells: React.FC<{ entry: LeaderboardEntry; place: number; own: boolean }> = ({
+  entry,
+  place,
+  own,
+}) => {
+  const style = podiumStyle(place);
+  const portrait = { size: style.portrait, frame: getMedalColor(place), paintedAt: PAINTED_AT };
   return (
     <>
-      <div className="w-8 text-center shrink-0">
-        {medal ? (
-          <span className="text-lg">{medal}</span>
+      <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{place}</div>
+
+      <div className={PORTRAIT_SLOT}>
+        {own ? (
+          <OwnPortrait {...portrait} />
         ) : (
-          <span className="text-sm text-text-muted font-mono">#{entry.rank}</span>
+          <Portrait animal={resolveAvatar(entry)} {...portrait} />
         )}
       </div>
 
       <div className="flex-1 min-w-0">
-        <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
+        <div className={`font-medium text-text truncate font-body ${style.name}`}>
+          {entry.displayName}
+        </div>
       </div>
 
       <div className="text-right shrink-0">
-        <span className="text-lg font-bold font-mono text-accent">{entry.correctCount}</span>
+        <span className={`font-bold font-mono text-accent ${style.score}`}>
+          {entry.correctCount}
+        </span>
       </div>
     </>
   );
@@ -31,14 +54,23 @@ const RowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
 
 interface LeaderboardRowProps {
   entry: LeaderboardEntry;
-  /** Paint the player's own highlight. Opaque by design — see `.bg-player-row` in index.css. */
+  /**
+   * The player's own row: their live avatar, and the highlight (opaque by design — see
+   * `.bg-player-row` in index.css).
+   */
   highlight?: boolean;
+  /** Place for the number, frame and size (`podiumPlaces`); defaults to the rank. */
+  place?: number;
 }
 
 /** A plain row. Used for everyone else, and for the pinned footer when the board is truncated. */
-const LeaderboardRow: React.FC<LeaderboardRowProps> = ({ entry, highlight = false }) => (
-  <div className={`${ROW_LAYOUT} ${highlight ? 'bg-player-row' : ''}`}>
-    <RowCells entry={entry} />
+const LeaderboardRow: React.FC<LeaderboardRowProps> = ({
+  entry,
+  highlight = false,
+  place = entry.rank,
+}) => (
+  <div className={`${ROW_LAYOUT} ${podiumStyle(place).pad} ${highlight ? 'bg-player-row' : ''}`}>
+    <RowCells entry={entry} place={place} own={highlight} />
   </div>
 );
 
@@ -46,6 +78,7 @@ interface StickyPlayerRowProps {
   entry: LeaderboardEntry;
   onJump: () => void;
   rowRef: React.Ref<HTMLButtonElement>;
+  place?: number;
 }
 
 /**
@@ -64,15 +97,20 @@ interface StickyPlayerRowProps {
  * The whole row is the button, not an icon inside it — index.css forces `min-height: 44px` on
  * every button, which suits a full row and would distort a small control.
  */
-const StickyPlayerRow: React.FC<StickyPlayerRowProps> = ({ entry, onJump, rowRef }) => (
+const StickyPlayerRow: React.FC<StickyPlayerRowProps> = ({
+  entry,
+  onJump,
+  rowRef,
+  place = entry.rank,
+}) => (
   <button
     ref={rowRef}
     type="button"
     onClick={onJump}
-    aria-label={`Your rank, ${entry.rank}. Scroll to your position.`}
-    className={`${ROW_LAYOUT} sticky top-0 bottom-0 z-10 bg-player-row border-y border-accent shadow-sm`}
+    aria-label={`Your rank, ${place}. Scroll to your position.`}
+    className={`${ROW_LAYOUT} ${podiumStyle(place).pad} sticky top-0 bottom-0 z-10 bg-player-row border-y border-accent shadow-sm`}
   >
-    <RowCells entry={entry} />
+    <RowCells entry={entry} place={place} own />
   </button>
 );
 

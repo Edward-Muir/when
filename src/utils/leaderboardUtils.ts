@@ -1,16 +1,35 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 
-export function getMedalEmoji(rank: number): string {
-  switch (rank) {
+/**
+ * The podium's frame colour for a place's portrait, or null past third. The board marks the top
+ * three by framing their portrait rather than with medal emoji beside it (LeaderboardRow).
+ */
+export function getMedalColor(place: number): string | null {
+  switch (place) {
     case 1:
-      return '🥇';
+      return '#d4a72c';
     case 2:
-      return '🥈';
+      return '#aeb4bc';
     case 3:
-      return '🥉';
+      return '#b8733d';
     default:
-      return '';
+      return null;
   }
+}
+
+/**
+ * Each row's place, which decides its number, frame and size. Tied scores share the place of the
+ * first row with that score (standard competition ranking), so scores 11, 9, 7, 7, 7 read 1, 2,
+ * 3, 3, 3 and are framed gold, silver, bronze, bronze, bronze. A row whose score is not in
+ * `entries` (the player below a capped slice) keeps its own rank.
+ */
+export function podiumPlaces(entries: LeaderboardEntry[]): (entry: LeaderboardEntry) => number {
+  const firstRank = new Map<number, number>();
+  for (const { correctCount, rank } of entries) {
+    const seen = firstRank.get(correctCount);
+    if (seen === undefined || rank < seen) firstRank.set(correctCount, rank);
+  }
+  return (entry) => Math.min(entry.rank, firstRank.get(entry.correctCount) ?? entry.rank);
 }
 
 export interface ResolvedPlayerRow {

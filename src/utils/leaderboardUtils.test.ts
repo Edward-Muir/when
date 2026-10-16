@@ -1,5 +1,5 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalEmoji, resolvePlayerRow } from './leaderboardUtils';
+import { getMedalColor, podiumPlaces, resolvePlayerRow } from './leaderboardUtils';
 
 const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): LeaderboardEntry => ({
   displayName: `Player ${rank}`,
@@ -8,16 +8,36 @@ const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): Leaderb
   ...overrides,
 });
 
-describe('getMedalEmoji', () => {
-  it('medals the podium', () => {
-    expect(getMedalEmoji(1)).toBe('🥇');
-    expect(getMedalEmoji(2)).toBe('🥈');
-    expect(getMedalEmoji(3)).toBe('🥉');
+describe('getMedalColor', () => {
+  it('gives the podium three distinct frames', () => {
+    const podium = [1, 2, 3].map(getMedalColor);
+    expect(podium.every(Boolean)).toBe(true);
+    expect(new Set(podium).size).toBe(3);
   });
 
-  it('returns an empty string past the podium, so the caller falls back to #N', () => {
-    expect(getMedalEmoji(4)).toBe('');
-    expect(getMedalEmoji(50)).toBe('');
+  it('frames nobody past the podium', () => {
+    expect(getMedalColor(4)).toBeNull();
+    expect(getMedalColor(50)).toBeNull();
+  });
+});
+
+describe('podiumPlaces', () => {
+  const board = (scores: number[]): LeaderboardEntry[] =>
+    scores.map((correctCount, i) => ({ displayName: `P${i + 1}`, correctCount, rank: i + 1 }));
+
+  it('gives tied scores the place of the first row with that score', () => {
+    const entries = board([11, 9, 7, 7, 7, 5]);
+    expect(entries.map(podiumPlaces(entries))).toEqual([1, 2, 3, 3, 3, 6]);
+  });
+
+  it('skips the places a tie covers, as competition ranking does', () => {
+    const entries = board([11, 11, 9, 8]);
+    expect(entries.map(podiumPlaces(entries))).toEqual([1, 1, 3, 4]);
+  });
+
+  it('keeps the rank of a row whose score is not on the served slice', () => {
+    const placeOf = podiumPlaces(board([11, 9, 7]));
+    expect(placeOf({ displayName: 'Me', correctCount: 2, rank: 40 })).toBe(40);
   });
 });
 

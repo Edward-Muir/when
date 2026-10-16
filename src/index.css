@@ -35,6 +35,11 @@ html {
   /* Status */
   --color-success: #6aaa64;
   --color-error: #e57373;
+
+  /* Avatar portrait tiles: cream paper with dark ink, like the art painted on it. Stays
+     light in dark mode (dimmed, not inverted) because the portraits are drawn on paper. */
+  --color-paper: #f6efe0;
+  --color-ink: #3b2f22;
 }
 
 .dark {
@@ -47,6 +52,8 @@ html {
   --color-accent-secondary: #22a0b0;
   --color-success: #7abf70;
   --color-error: #f87171;
+  --color-paper: #ddd3bd;
+  --color-ink: #3b2f22;
 }
 
 body {

@@ -1,9 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
-import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
 import { useLeaderboard, LeaderboardEntry } from './useLeaderboard';
 import {
   DailyResult,
-  getDisplayName,
+  getOrCreateDisplayName,
   saveDisplayName,
   hasSubmittedToLeaderboard,
   markLeaderboardSubmitted,
@@ -34,7 +33,12 @@ export interface DailyLeaderboard {
   submitError: string | null;
   /** The name to prefill the submit form with. */
   suggestedName: string;
-  submit: (displayName: string) => Promise<void>;
+  /**
+   * Send the score. `avatar` is the animal the form showed, picked or implied by the name; it is
+   * always sent, so the board shows what the player saw even if the name filter later swaps the
+   * name it was derived from.
+   */
+  submit: (displayName: string, avatar: string) => Promise<void>;
   /** Refetch the board. Defaults to the date being tracked; pass one to follow a day rollover. */
   refresh: (date?: string) => void;
 }
@@ -96,7 +100,7 @@ export function useDailyLeaderboard(
     fetchLeaderboard,
   } = useLeaderboard();
 
-  const [suggestedName] = useState(() => getDisplayName() || generateRandomName());
+  const [suggestedName] = useState(getOrCreateDisplayName);
 
   // Seeded from localStorage so a returning player never sees the submit form flash before the
   // server confirms what we already know.
@@ -167,10 +171,10 @@ export function useDailyLeaderboard(
   }, [rank, totalPlayers, dailyResult?.date]);
 
   const submit = useCallback(
-    async (displayName: string) => {
+    async (displayName: string, avatar: string) => {
       if (!dailyResult) return;
       saveDisplayName(displayName);
-      const success = await submitResult(dailyResult, displayName || 'Anonymous');
+      const success = await submitResult(dailyResult, displayName || 'Anonymous', avatar);
       if (success) {
         markLeaderboardSubmitted();
         setSubmittedLocally(true);
@@ -204,13 +208,4 @@ export function useDailyLeaderboard(
     submit,
     refresh,
   };
-}
-
-function generateRandomName(): string {
-  return uniqueNamesGenerator({
-    dictionaries: [adjectives, animals],
-    separator: ' ',
-    style: 'capital',
-    length: 2,
-  });
 }

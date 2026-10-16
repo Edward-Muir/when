@@ -1,0 +1,593 @@
+{
+  "penguin": {
+    "role": "Imperial Vienna concert conductor",
+    "persona": "a celebrated concert conductor",
+    "feature": "sleek rounded head and short stout pointed beak",
+    "expression": "a rapt, commanding look",
+    "costume": "a starched wing collar and crisp bow tie under a dark tailcoat",
+    "prop": "a slim baton raised in one flipper beside its face",
+    "light": "stage light",
+    "research_focus": "nineteenth-century Viennese conductor portraits, white tie and tails with a starched wing collar and black tailcoat, and the gilded concert halls of the Musikverein"
+  },
+  "tiger": {
+    "role": "Joseon royal guard captain",
+    "persona": "a Joseon royal guard captain",
+    "feature": "broad striped face and long whiskers",
+    "expression": "a stern, watchful gaze",
+    "costume": "a tall horsehair gat hat with a plume of dangling tassels and a dark military robe",
+    "prop": "a ceremonial lacquered bow held upright beside its face",
+    "light": "lantern light",
+    "research_focus": "sixteenth-century Joseon dynasty military officials, black horsehair gat hats with red tassels and plumes, dark blue and red court robes, and lacquered ceremonial bows"
+  },
+  "fox": {
+    "role": "Edo kabuki actor",
+    "persona": "a celebrated kabuki stage actor",
+    "feature": "pointed ears and slender narrow muzzle",
+    "expression": "a sly, theatrical smirk",
+    "costume": "bold painted stage makeup lines on its face and a wide stiff silk collar",
+    "prop": "a gilded folding fan held open beside its face",
+    "light": "lantern light",
+    "research_focus": "eighteenth-century Edo-period ukiyo-e portraits of kabuki actors, bold red and white kumadori stage makeup, silk kimono collars and gold-leaf folding fans"
+  },
+  "eagle": {
+    "role": "Roman centurion",
+    "persona": "a Roman centurion",
+    "feature": "heavy hooked beak and fierce brow over shaggy neck feathers",
+    "expression": "a proud, unflinching stare",
+    "costume": "a polished bronze helmet with a bold transverse crest and a leather cuirass",
+    "prop": "a knobbly vine-wood staff of rank held upright beside its face",
+    "light": "torchlight",
+    "research_focus": "first-century Roman legionary centurions, polished bronze Imperial Gallic helmets with crimson transverse crests, leather and bronze cuirasses, and the vine-wood vitis staff of rank"
+  },
+  "wolf": {
+    "role": "Mongol imperial relay courier",
+    "persona": "a Mongol imperial relay courier",
+    "feature": "long muzzle, upright pointed ears and thick ruff of fur",
+    "expression": "a keen, tireless gaze",
+    "costume": "a tall fur-trimmed felt hat with a single feather and a heavy quilted coat",
+    "prop": "a brass horse-bell on a short cord held up beside its face",
+    "light": "firelight",
+    "research_focus": "thirteenth-century Mongol Empire yam postal couriers, tall fur-trimmed felt hats with feathers, quilted deel coats, and brass horse bells"
+  },
+  "bear": {
+    "role": "Soviet cosmonaut",
+    "persona": "a Soviet cosmonaut",
+    "feature": "broad round head with small round ears and wide muzzle",
+    "expression": "a calm, wondering look",
+    "costume": "a padded flight helmet with an open visor and a bold stripe over a bulky flight suit collar",
+    "prop": "a small polished metal sphere satellite held up in one paw",
+    "light": "window light",
+    "research_focus": "1960s Soviet cosmonaut portraits, white padded SK-1 helmets with red stripes and open visors, orange flight suit collars, and the polished sphere of Sputnik"
+  },
+  "hawk": {
+    "role": "Sengoku samurai commander",
+    "persona": "a Sengoku samurai commander",
+    "feature": "sharp hooked beak and stern forward-set eyes under a hard brow line",
+    "expression": "a cool, disciplined stare",
+    "costume": "a lacquered kabuto helmet with a gilded crescent crest and layered shoulder plates",
+    "prop": "a sheathed ceremonial sword held upright before its chest",
+    "light": "lantern light",
+    "research_focus": "sixteenth-century Sengoku-period Japanese armour, lacquered kabuto helmets with gold crescent maedate crests, lamellar shoulder plates in dark lacquer with red cord lacing, and sheathed tachi swords"
+  },
+  "lion": {
+    "role": "Mali Empire gold lord",
+    "persona": "a Mali Empire gold lord",
+    "feature": "great full mane and broad flat muzzle",
+    "expression": "a serene, regal gaze",
+    "costume": "a tall conical cap woven of gold wire over a rich dark robe",
+    "prop": "a gold-tipped ceremonial staff held upright beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "fourteenth-century Mali Empire court dress of Mansa Musa's era, tall conical gold-wire caps, deep indigo robes, gold-tipped staffs, and the mud-brick Sahelian architecture of Timbuktu"
+  },
+  "panther": {
+    "role": "Harlem Renaissance jazz trumpeter",
+    "persona": "a Harlem jazz trumpeter",
+    "feature": "sleek solid dark head with no spots, round ears and bright eyes",
+    "expression": "a cool, dreamy half-lidded look",
+    "costume": "a pale trilby hat with a dark band and a crisp bow tie",
+    "prop": "a gleaming brass trumpet raised beside its face",
+    "light": "stage light",
+    "research_focus": "1920s Harlem Renaissance portraits by James Van Der Zee, cream trilby hats with dark bands, bow ties, and the gleaming brass trumpets of the jazz age"
+  },
+  "falcon": {
+    "role": "early aviation pioneer",
+    "persona": "a pioneer aviator",
+    "feature": "dark hooded head with bold cheek stripes beneath large round eyes and a short hooked beak",
+    "expression": "a bold, eager look",
+    "costume": "a leather flying helmet with goggles pushed up on the forehead and a long silk scarf",
+    "prop": "a small wooden propeller held up beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "1910s French and English pioneer aviators, brown leather flying helmets with goggles pushed up, long white silk scarves, and carved wooden propellers"
+  },
+  "owl": {
+    "role": "Ming court astronomer",
+    "persona": "a Ming court astronomer",
+    "feature": "huge round forward-facing eyes in a flat heart-shaped facial disc",
+    "expression": "a calm, knowing gaze",
+    "costume": "a winged-ear official's hat of dark gauze over a silk court robe with a round collar",
+    "prop": "a small bronze armillary sphere held up beside its face",
+    "light": "lantern light",
+    "research_focus": "fifteenth-century Ming dynasty officials' black winged-ear hats and vermilion court robes, and the bronze armillary spheres of the Beijing Ancient Observatory"
+  },
+  "shark": {
+    "role": "Victorian deep-sea diver",
+    "persona": "a Victorian deep-sea diver",
+    "feature": "broad pointed snout, gill slits and rows of triangular teeth",
+    "expression": "a proud, toothy grin",
+    "costume": "a great round brass diving helmet with the faceplate open and gleaming rivets over a heavy canvas suit collar",
+    "prop": "an open oyster shell holding a single large pearl, held out in one fin",
+    "light": "lantern light",
+    "research_focus": "1870s Victorian Siebe diving helmets of polished brass with riveted seams, heavy canvas diving suits, and pearl oysters"
+  },
+  "dragon": {
+    "role": "Rudolfine Prague court alchemist",
+    "persona": "a Renaissance court alchemist",
+    "feature": "horned scaly head with a long toothed snout and flared nostrils",
+    "expression": "a wise, mischievous look",
+    "costume": "a tall pointed alchemist's cap dotted with a few gold stars, sitting between its horns, and a dark hooded robe",
+    "prop": "a round glass flask glowing with bright fire held up beside its face",
+    "light": "firelight",
+    "research_focus": "sixteenth-century Renaissance Prague of Rudolf II, alchemists' tall indigo pointed caps with gold stars, dark robes, and round glass flasks glowing with orange fire"
+  },
+  "phoenix": {
+    "role": "Victorian fire brigade captain",
+    "persona": "a Victorian fire brigade captain",
+    "feature": "sharp curved beak and flame-like crest feathers streaming from under the helmet",
+    "expression": "a fierce, steadfast stare",
+    "costume": "a tall polished brass fire helmet with a flaring crest and a double-breasted coat",
+    "prop": "a brass speaking-trumpet held up in one claw",
+    "light": "torchlight",
+    "research_focus": "1880s Victorian American and British fire brigade captains, tall polished brass helmets with flaring crests, double-breasted tunics, and brass speaking-trumpets"
+  },
+  "raven": {
+    "role": "Tudor Tower of London yeoman warder",
+    "persona": "a Tudor yeoman warder of the Tower of London",
+    "feature": "thick heavy beak and glossy shaggy throat feathers",
+    "expression": "a grave, watchful gaze",
+    "costume": "a flat velvet bonnet with ribbon rosettes and a quilted tunic crossed with gold braid",
+    "prop": "a ceremonial halberd held upright beside its face",
+    "light": "window light",
+    "research_focus": "sixteenth-century Tudor Yeomen of the Guard and Tower of London warders, flat black velvet bonnets with ribbon rosettes, red and gold tunics, and ceremonial halberds"
+  },
+  "cobra": {
+    "role": "New Kingdom Egyptian pharaoh",
+    "persona": "a New Kingdom pharaoh",
+    "feature": "broad flared hood and rearing head",
+    "expression": "a calm, regal, unblinking gaze",
+    "costume": "a striped nemes headcloth with a rearing gilded uraeus on the brow and a broad gold collar",
+    "prop": "a gilded shepherd's crook held crossed against its chest",
+    "light": "torchlight",
+    "research_focus": "Eighteenth Dynasty royal portraiture, the blue-and-gold striped nemes headcloth of Tutankhamun's mask, the uraeus cobra, and the crook and flail"
+  },
+  "viper": {
+    "role": "Renaissance Florentine apothecary",
+    "persona": "a Medici-era Florentine apothecary",
+    "feature": "broad triangular head and slit-pupilled eyes",
+    "expression": "a shrewd, quietly watchful look",
+    "costume": "a soft velvet beret with a dark feather and a high ruffled collar",
+    "prop": "a stone mortar held up beside its face with the pestle resting in it",
+    "light": "window light",
+    "research_focus": "sixteenth-century Florentine portraits by Bronzino and Pontormo, soft green velvet berets with feathers, small ruffled collars, and stone apothecary mortars"
+  },
+  "jaguar": {
+    "role": "Classic Maya noble",
+    "persona": "a Classic Maya noble",
+    "feature": "broad rosette-spotted head and powerful rounded jaw",
+    "expression": "a proud, steady stare",
+    "costume": "a tall headdress of quetzal feathers and carved jade beads, with large jade ear flares",
+    "prop": "a tall painted cacao vessel held up in one paw",
+    "light": "torchlight",
+    "research_focus": "eighth-century Maya lowland nobility as seen on Bonampak murals and carved Palenque reliefs, quetzal feather headdresses, jade ear flares and polychrome cylinder vessels"
+  },
+  "leopard": {
+    "role": "Benin royal bronze-caster",
+    "persona": "a royal bronze-caster of Benin",
+    "feature": "round head covered in rosette spots with a pale muzzle",
+    "expression": "a composed, dignified gaze",
+    "costume": "a towering coral-bead collar reaching the chin and a coral-bead cap",
+    "prop": "a small cast bronze hand bell held up beside its face",
+    "light": "firelight",
+    "research_focus": "sixteenth-century Kingdom of Benin court dress, the red coral bead collars and caps on brass plaques, and cast bronze bells from the Oba's guild of casters"
+  },
+  "lynx": {
+    "role": "French-Canadian fur-trade voyageur",
+    "persona": "a fur-trade voyageur",
+    "feature": "tall tufted ear tips and ruffed cheek whiskers",
+    "expression": "a keen, alert look",
+    "costume": "a knitted tuque with a pompom and a woven sash across the shoulder",
+    "prop": "a wooden snowshoe held upright beside its face",
+    "light": "firelight",
+    "research_focus": "eighteenth-century New France voyageurs, the red knitted tuque and arrow-pattern ceinture fléchée sash, and webbed wooden snowshoes, in the style of Frances Anne Hopkins's canoe paintings"
+  },
+  "otter": {
+    "role": "Venetian gondolier",
+    "persona": "a Venetian gondolier",
+    "feature": "blunt whiskered muzzle and small round ears",
+    "expression": "a cheerful, mischievous grin",
+    "costume": "a flat straw hat with a long ribbon trailing past one shoulder and a striped shirt",
+    "prop": "a carved wooden oar held upright beside it",
+    "light": "late-afternoon sunlight",
+    "research_focus": "eighteenth-century Venetian gondoliers in paintings by Canaletto and Pietro Longhi, flat straw hats with red ribbons, striped shirts, and the carved forcola oar rest"
+  },
+  "badger": {
+    "role": "Victorian gentleman's barber",
+    "persona": "a Victorian gentleman's barber",
+    "feature": "bold dark-and-pale striped face and pointed snout",
+    "expression": "a confident, faintly smug smile",
+    "costume": "a starched wing collar with a silk cravat under a dark frock coat",
+    "prop": "a lathered shaving brush held up beside its face",
+    "light": "lamplight",
+    "research_focus": "1880s London barbershop portraits, white starched wing collars with black cravats, pomaded hair, and the badger-hair shaving brush"
+  },
+  "wolverine": {
+    "role": "Klondike gold prospector",
+    "persona": "a Klondike gold prospector",
+    "feature": "broad rugged face with rounded ears and a heavy jaw",
+    "expression": "a fierce, determined squint",
+    "costume": "a battered wide-brim felt hat with a rope hatband and a heavy wool coat",
+    "prop": "a dented tin pan held out with a few nuggets glinting in it",
+    "light": "firelight",
+    "research_focus": "1898 Yukon Gold Rush photographs of prospectors, battered felt slouch hats, heavy wool mackinaw coats, and tin gold pans with nuggets"
+  },
+  "mongoose": {
+    "role": "Mughal court miniature painter",
+    "persona": "a Mughal court miniature painter",
+    "feature": "slender pointed face with small rounded ears and bright alert eyes",
+    "expression": "a focused, refined look",
+    "costume": "a wrapped turban with a jewelled feather aigrette and a long-sleeved jama",
+    "prop": "a fine paintbrush held delicately up beside its face",
+    "light": "window light",
+    "research_focus": "seventeenth-century Mughal portraits from the courts of Jahangir and Shah Jahan, pearl-pink wrapped turbans with jewelled sarpech aigrettes, and fine squirrel-hair brushes"
+  },
+  "heron": {
+    "role": "Edwardian fly-fishing gentleman",
+    "persona": "an Edwardian gentleman angler",
+    "feature": "long dagger bill and slender curving neck with a trailing crest",
+    "expression": "a patient, serene gaze",
+    "costume": "a floppy tweed hat studded with fishing flies and a tweed Norfolk jacket",
+    "prop": "a slim bamboo fly rod held upright beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "Edwardian Scottish sporting portraits, tweed Norfolk jackets, hats decorated with colourful fishing flies, and split-cane bamboo fly rods"
+  },
+  "crane": {
+    "role": "1930s skyscraper steel rigger",
+    "persona": "a 1930s skyscraper steel rigger",
+    "feature": "long straight bill and tall slender neck with a pale cheek stripe",
+    "expression": "a cool, unbothered look",
+    "costume": "a dented steel hard hat and a heavy canvas work jacket",
+    "prop": "a battered tin lunch pail held up beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "Lewis Hine's 1930s photographs of Empire State Building ironworkers, dented steel hard hats, canvas work jackets, and tin lunch pails"
+  },
+  "osprey": {
+    "role": "Bronze Age Minoan fisherman",
+    "persona": "a Minoan fisherman",
+    "feature": "hooked bill and pale head with a bold dark eye stripe",
+    "expression": "a proud, sharp-eyed look",
+    "costume": "a plain headband with a lily blossom, a curled forelock and a broad bead collar",
+    "prop": "a string of fresh glistening fish held up in one talon",
+    "light": "late-afternoon sunlight",
+    "research_focus": "fifteenth-century BCE Minoan frescoes from Akrotiri, the Fisherman fresco, blue-and-ochre headbands, white lilies, and the Spring Fresco style"
+  },
+  "condor": {
+    "role": "Inca quipu-keeper",
+    "persona": "an Inca quipu-keeper",
+    "feature": "bare wrinkled head, hooked beak and fluffy neck ruff",
+    "expression": "a solemn, ancient gaze",
+    "costume": "a braided llautu headband with two tall feathers and a woven tunic",
+    "prop": "a bundle of knotted cords held up from one raised wing",
+    "light": "torchlight",
+    "research_focus": "fifteenth-century Inca Empire dress, the braided red llautu headband with two tall black-and-white feathers, geometric tocapu tunics, and knotted-cord khipu"
+  },
+  "albatross": {
+    "role": "Atlantic lighthouse keeper",
+    "persona": "a nineteenth-century lighthouse keeper",
+    "feature": "huge hooked bill with tubular nostrils and broad gentle head",
+    "expression": "a weathered, faithful gaze",
+    "costume": "an oilskin sou'wester hat tied under the chin and a heavy pea coat",
+    "prop": "a brass storm lantern held up beside its face",
+    "light": "lantern light",
+    "research_focus": "nineteenth-century Atlantic coast lighthouse keepers, yellow oilskin sou'wester hats, wool pea coats, and brass storm lanterns, in the manner of Winslow Homer's seafaring portraits"
+  },
+  "aardvark": {
+    "role": "Edwardian field archaeologist",
+    "persona": "an Edwardian field archaeologist",
+    "feature": "long tubular snout and tall upright ears",
+    "expression": "an eager, curious look",
+    "costume": "a cork pith helmet with a neck flap and a buttoned field jacket",
+    "prop": "a small pointed trowel held up beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "1900s Egypt excavation photographs of Flinders Petrie's teams, white cork pith helmets with cloth neck flaps, khaki field jackets, and pointed mason's trowels"
+  },
+  "elephant": {
+    "role": "Khmer temple king",
+    "persona": "a Khmer temple king",
+    "feature": "broad domed forehead, long trunk and curved ivory tusks",
+    "expression": "a calm, serene gaze",
+    "costume": "a tall tiered pointed gold crown with gold pendants over the ears, and a broad gold collar",
+    "prop": "a closed lotus bud on a long stem held aloft in its trunk",
+    "light": "torchlight",
+    "research_focus": "twelfth-century Angkor Khmer royalty, tiered pointed gold crowns and ear pendants as seen on Bayon and Angkor Wat bas-reliefs, and sacred lotus buds"
+  },
+  "giraffe": {
+    "role": "Victorian gas-lamp lighter",
+    "persona": "a Victorian London gas-lamp lighter",
+    "feature": "long neck, two knobbed horns and long lashes",
+    "expression": "a patient, gentle look",
+    "costume": "a worn flat cap and a long knitted scarf wound around its neck",
+    "prop": "a tall lamplighter's pole tipped with a small flame held upright beside its face",
+    "light": "lamplight",
+    "research_focus": "1860s London lamplighters, worn flat caps and long scarves, and the brass-tipped poles used to light street gas lamps at dusk"
+  },
+  "hippo": {
+    "role": "Belle Epoque opera diva",
+    "persona": "a Belle Epoque opera prima donna",
+    "feature": "huge wide muzzle, broad nostrils and small round ears",
+    "expression": "a proud, theatrical look with its chin lifted",
+    "costume": "a jewelled tiara crowned with tall ostrich plumes and a triple strand pearl necklace",
+    "prop": "a bouquet of roses clutched against its chest",
+    "light": "stage light",
+    "research_focus": "1890s Paris opera divas, jewelled tiaras with tall white ostrich plumes, triple pearl necklaces, and bouquets of red roses thrown on stage"
+  },
+  "rhino": {
+    "role": "medieval tournament knight",
+    "persona": "a jousting knight of a late medieval tournament",
+    "feature": "massive head with a great horn rising from its snout",
+    "expression": "a stern but noble gaze",
+    "costume": "a plumed steel great helm tilted back with its visor raised, and a mail collar",
+    "prop": "a silk rose favour held up in a steel gauntlet beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "fourteenth-century French tournament knights, plumed steel great helms with raised visors, mail collars, gauntlets, and red silk favours given by ladies"
+  },
+  "camel": {
+    "role": "Sogdian silk-road merchant",
+    "persona": "a Sogdian silk-road merchant",
+    "feature": "long face with heavy-lidded eyes, split upper lip and two humps rising behind its shoulders",
+    "expression": "a shrewd, unhurried look",
+    "costume": "a pointed felt cap with a turned-up fur brim, and a caftan with a broad lapel collar",
+    "prop": "a folded bolt of shimmering silk held up in front of its chest",
+    "light": "lamplight",
+    "research_focus": "eighth-century Sogdian merchants of Samarkand, pointed felt caps with turned-up fur brims, belted caftans with wide lapels, and Silk Road caravan traders as in Afrasiab murals"
+  },
+  "llama": {
+    "role": "Andean highland weaver",
+    "persona": "an Andean highland weaver",
+    "feature": "long face with tall curved banana-shaped ears and woolly neck",
+    "expression": "a gentle, patient gaze",
+    "costume": "a knitted chullo cap with earflaps and dangling tassels, over a woven poncho",
+    "prop": "a wooden drop-spindle wound with wool held up beside its face",
+    "light": "firelight",
+    "research_focus": "eighteenth-century Peruvian highland weavers, colourful knitted chullo caps with earflaps and tassels, woven ponchos, and wooden drop-spindles wound with bright wool"
+  },
+  "panda": {
+    "role": "Tang court musician",
+    "persona": "a Tang court pipa player",
+    "feature": "round face with large dark eye patches and small round ears",
+    "expression": "a serene, absorbed look",
+    "costume": "a crown of peonies with jade hairpins, and silk court robes with wide sleeves",
+    "prop": "a pear-shaped pipa lute cradled upright against its shoulder",
+    "light": "lantern light",
+    "research_focus": "eighth-century Tang dynasty court ladies and musicians, peony headdresses and jade hairpins, wide-sleeved silk robes, and the pear-shaped four-string pipa lute"
+  },
+  "koala": {
+    "role": "Australian outback drover",
+    "persona": "an Australian outback drover",
+    "feature": "big round fluffy ears and a large dark spoon-shaped nose",
+    "expression": "a weathered, easygoing look",
+    "costume": "a wide-brim felt hat fringed with dangling corks, and a rolled neckerchief",
+    "prop": "a battered tin billy can held up by its wire handle beside its face",
+    "light": "firelight",
+    "research_focus": "1880s Australian bush drovers and stockmen, wide-brim felt hats with dangling fly corks, neckerchiefs, and smoke-blackened tin billy cans over campfires"
+  },
+  "kangaroo": {
+    "role": "1930s surf lifesaver",
+    "persona": "a Bondi Beach surf lifesaver of the 1930s",
+    "feature": "long muzzle with tall upright ears",
+    "expression": "a steady, vigilant gaze",
+    "costume": "a quartered lifesaver's cap and a striped swim top",
+    "prop": "a round rescue ring buoy held up beside its shoulder",
+    "light": "late-afternoon sunlight",
+    "research_focus": "1930s Bondi Beach surf lifesavers, quartered red-and-yellow lifesaver caps, striped woollen swim tops, and white-and-red rescue ring buoys"
+  },
+  "sloth": {
+    "role": "Georgian gentleman",
+    "persona": "a drowsy Georgian gentleman",
+    "feature": "gently smiling flat face with dark eye stripes and shaggy fur",
+    "expression": "a sleepy, contented half-smile",
+    "costume": "a long floppy nightcap with a tassel drooping over one shoulder, and a quilted dressing gown",
+    "prop": "a brass chamber candlestick with a tiny flame held up in one hand",
+    "light": "candlelight",
+    "research_focus": "eighteenth-century Georgian English gentlemen in white linen nightcaps and banyan dressing gowns, and brass chamber candlesticks, in candlelit bedroom portraits"
+  },
+  "hedgehog": {
+    "role": "Victorian chimney sweep",
+    "persona": "a Victorian chimney sweep",
+    "feature": "pointed snout, small round ears and a bristling coat of spines",
+    "expression": "a cheerful, cheeky look",
+    "costume": "a battered soot-smudged top hat and a rough work jacket",
+    "prop": "a round-bristled chimney brush held up beside its face",
+    "light": "lamplight",
+    "research_focus": "1850s London chimney sweeps, soot-smudged battered top hats, rough work jackets, and round-bristled chimney brushes on long rods"
+  },
+  "rabbit": {
+    "role": "Elizabethan court jester",
+    "persona": "an Elizabethan court jester",
+    "feature": "long upright ears and a twitching whiskered nose",
+    "expression": "a mischievous, knowing grin",
+    "costume": "a two-pointed motley jester's hood with jingling bells, the long ears poking through, and a ruffled collar",
+    "prop": "a little bell-tipped marotte stick held up beside its face",
+    "light": "firelight",
+    "research_focus": "sixteenth-century English court fools, two-pointed motley hoods in red and yellow with bells, ruffled collars, and carved marotte sceptres"
+  },
+  "squirrel": {
+    "role": "medieval greenwood forester",
+    "persona": "a greenwood forester of medieval England",
+    "feature": "tufted ears, bright eyes and a great bushy tail curling up behind its head",
+    "expression": "a keen, alert look",
+    "costume": "a deep forester's hood topped with a long feather, and a leather jerkin",
+    "prop": "a curved brass hunting horn held up at its side",
+    "light": "late-afternoon sunlight",
+    "research_focus": "thirteenth-century English foresters and outlaws of Sherwood, Lincoln-green hoods with long red feathers, leather jerkins, and curved hunting horns"
+  },
+  "beaver": {
+    "role": "Dutch hydraulic engineer",
+    "persona": "a Dutch dike and polder engineer",
+    "feature": "blunt rounded muzzle with two large prominent front teeth",
+    "expression": "a focused, industrious look",
+    "costume": "a broad flat-brimmed felt hat and a plain starched collar",
+    "prop": "a brass-weighted plumb bob hanging on a string held up in one hand",
+    "light": "window light",
+    "research_focus": "Dutch Golden Age engineers and burghers, broad flat-brimmed black felt hats, plain white collars, and brass plumb bobs used for polder and dike surveying"
+  },
+  "walrus": {
+    "role": "Norse Greenland ivory trader",
+    "persona": "a Norse Greenland ivory trader",
+    "feature": "huge ivory tusks and bristly whiskered muzzle",
+    "expression": "a shrewd, patient gaze",
+    "costume": "a round iron helm with a nose guard and a heavy fur-trimmed cloak",
+    "prop": "a carved ivory chess rook held up beside its face",
+    "light": "firelight",
+    "research_focus": "eleventh-century Norse Greenland: Viking-age spectacle helms with nose guards, fur-trimmed wool cloaks, and the Lewis chessmen carved from walrus ivory"
+  },
+  "octopus": {
+    "role": "Geneva master clockmaker",
+    "persona": "a Geneva master clockmaker",
+    "feature": "bulbous domed head and large round eyes above curling arms",
+    "expression": "a focused, quietly pleased look",
+    "costume": "a dark velvet cap with a jeweller's loupe flipped up on the brow and a plain linen collar",
+    "prop": "a tiny brass gear held up in a pair of tweezers beside its face",
+    "light": "candlelight",
+    "research_focus": "eighteenth-century Geneva watchmakers' portraits, velvet caps, jewellers' loupes and the brass wheels and tweezers of the bench"
+  },
+  "tortoise": {
+    "role": "Neo-Babylonian royal gardener",
+    "persona": "a royal gardener of Babylon",
+    "feature": "high domed shell and wrinkled beaked head",
+    "expression": "a calm, patient gaze",
+    "costume": "a tall banded tiered woollen cap with tassels and a fringed robe",
+    "prop": "a clay pot holding a young fig sapling, cradled up in front of its chest",
+    "light": "lamplight",
+    "research_focus": "sixth-century BCE Neo-Babylonian court dress, tiered banded caps and fringed robes seen in glazed-brick reliefs of the Ishtar Gate, and clay garden pots"
+  },
+  "frog": {
+    "role": "Mississippi riverboat captain",
+    "persona": "a Mississippi riverboat captain",
+    "feature": "wide smiling mouth and bulging eyes",
+    "expression": "a confident, unhurried look",
+    "costume": "a peaked captain's cap with a plain gold braid band and a brass-buttoned coat",
+    "prop": "an open brass pocket watch on its chain held up beside its face",
+    "light": "lantern light",
+    "research_focus": "1850s American steamboat captains' portraits, dark blue peaked caps with gold braid, brass-buttoned coats and pocket watches"
+  },
+  "crocodile": {
+    "role": "silent film director",
+    "persona": "a silent film director",
+    "feature": "long toothy snout and heavy ridged brow",
+    "expression": "a bossy, theatrical glare",
+    "costume": "a tweed newsboy cap worn backward and an open-collared linen shirt",
+    "prop": "a large tin megaphone held up beside its face",
+    "light": "stage light",
+    "research_focus": "1920s Hollywood silent-era directors on set, backward flat caps, open-collared white shirts and large tin megaphones"
+  },
+  "flamingo": {
+    "role": "Andalusian flamenco dancer",
+    "persona": "an Andalusian flamenco dancer",
+    "feature": "long curved neck and heavy downturned bill",
+    "expression": "a proud, passionate gaze",
+    "costume": "a tall tortoiseshell comb with a carnation in the hair and a fringed shawl",
+    "prop": "a pair of wooden castanets raised beside its face",
+    "light": "lantern light",
+    "research_focus": "nineteenth-century Andalusian flamenco portraits, tall tortoiseshell peinetas, red carnations in the hair, fringed Manila shawls and wooden castanets"
+  },
+  "peacock": {
+    "role": "Versailles court dandy",
+    "persona": "a Versailles court dandy",
+    "feature": "slender crested head, long shimmering neck and a fan of eyed tail feathers",
+    "expression": "a vain, delighted smirk",
+    "costume": "a towering powdered wig tied with a silk bow and a lace jabot",
+    "prop": "a gilded enamel snuffbox held open in one hand beside its face",
+    "light": "candlelight",
+    "research_focus": "Rococo French court portraits of the eighteenth century, towering powdered wigs with pale blue silk bows, lace jabots and gilded enamel snuffboxes"
+  },
+  "pelican": {
+    "role": "Victorian village postman",
+    "persona": "a Victorian village postman",
+    "feature": "enormous pouched bill",
+    "expression": "a cheerful, dutiful look",
+    "costume": "a stiff peaked postman's cap with a plain brass badge and a trimmed jacket",
+    "prop": "a small plain parcel tied with string, held up beside its face",
+    "light": "late-afternoon sunlight",
+    "research_focus": "1880s British Post Office postmen, stiff peaked caps with brass badges, red-trimmed dark jackets and brown paper parcels tied with string"
+  },
+  "parrot": {
+    "role": "Caribbean buccaneer",
+    "persona": "a Caribbean buccaneer",
+    "feature": "great hooked beak and bare cheek patch",
+    "expression": "a roguish, squinting grin",
+    "costume": "a knotted bandana and a gold hoop earring",
+    "prop": "a brass spyglass held up beside its face",
+    "light": "lantern light",
+    "research_focus": "Golden Age of Piracy illustrations of the 1710s, bright red knotted bandanas, gold hoop earrings, black eyepatches and brass telescopes"
+  },
+  "toucan": {
+    "role": "mariachi violinist",
+    "persona": "a mariachi violinist",
+    "feature": "enormous curved bill",
+    "expression": "a soulful, serenading look",
+    "costume": "a wide silver-embroidered charro sombrero and a large bow tie",
+    "prop": "a violin tucked under its chin",
+    "light": "stage light",
+    "research_focus": "1950s Jalisco mariachi ensembles, wide silver-embroidered charro sombreros, red bow ties, tailored charro suits and the violin"
+  },
+  "gorilla": {
+    "role": "Victorian circus strongman",
+    "persona": "a Victorian circus strongman",
+    "feature": "heavy brow ridge and broad dark muzzle",
+    "expression": "a proud, steady stare",
+    "costume": "a waxed handlebar moustache and a striped sleeveless leotard",
+    "prop": "a heavy barbell hoisted up beside its head",
+    "light": "stage light",
+    "research_focus": "1890s travelling circus strongmen photographs, waxed handlebar moustaches, striped sleeveless leotards and black iron barbells"
+  },
+  "raccoon": {
+    "role": "Ottoman coffee-house keeper",
+    "persona": "an Ottoman coffee-house keeper",
+    "feature": "banded eye mask and pointed whiskered muzzle",
+    "expression": "a warm, welcoming look",
+    "costume": "a tall cylindrical kavuk cap wrapped in cloth and an embroidered vest",
+    "prop": "a long-handled brass coffee pot held up beside its face",
+    "light": "lamplight",
+    "research_focus": "seventeenth-century Istanbul coffee houses, tall kavuk caps wrapped in white cloth, embroidered vests and long-handled brass cezve coffee pots"
+  },
+  "mole": {
+    "role": "Cornish tin miner",
+    "persona": "a Cornish tin miner",
+    "feature": "long pointed snout and broad digging paws",
+    "expression": "a squinting, determined look",
+    "costume": "a hard felt miner's hat with a lit candle stuck on the front in a lump of clay and a rough wool jacket",
+    "prop": "a short miner's pick held over one shoulder",
+    "light": "candlelight",
+    "research_focus": "1850s Cornish tin miners, hard felt hats with candles stuck on in lumps of clay, rough wool jackets and short miner's picks"
+  },
+  "moose": {
+    "role": "logging-camp lumberjack",
+    "persona": "a logging-camp lumberjack",
+    "feature": "broad palmate antlers and long drooping muzzle",
+    "expression": "a stoic, good-natured gaze",
+    "costume": "a thick checked wool jacket with suspenders",
+    "prop": "a long iron-hooked log-driver's peavey held upright beside its face",
+    "light": "firelight",
+    "research_focus": "1900s Canadian timberland logging camps, red-and-black checked wool jackets, suspenders and iron-hooked peavey tools of river log drivers"
+  },
+  "cat": {
+    "animal": "Burmilla cat",
+    "role": "1920s Mayfair socialite",
+    "persona": "a 1920s Mayfair socialite",
+    "feature": "round head, wide outlined almond eyes and soft shimmering coat",
+    "expression": "a languid, self-assured gaze",
+    "costume": "a beaded cloche hat and a long string of pearls",
+    "prop": "a crystal champagne coupe raised beside its face",
+    "light": "candlelight",
+    "research_focus": "1920s London society portraits of Bright Young Things, beaded cloche hats, long strings of pearls and crystal champagne coupes, and the shaded silver coat and green kohl-rimmed eyes of the Burmilla breed"
+  }
+}

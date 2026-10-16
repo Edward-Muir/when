@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { Trophy } from 'lucide-react';
+import { Pencil, Trophy } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
-import { getMedalEmoji, resolvePlayerRow } from '../utils/leaderboardUtils';
+import { getMedalColor, podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
+import Portrait from './ui/Portrait';
+import OwnPortrait from './ui/OwnPortrait';
+import AvatarPickerModal from './AvatarPickerModal';
+import { usePlayerProfile } from '../hooks/usePlayerProfile';
+import { avatarForName, resolveAvatar } from '../utils/avatar';
 
 const PREVIEW_ROWS = 3;
 
@@ -12,6 +17,37 @@ function PreviewHeader() {
     <div className="flex items-center gap-1 text-xs text-text-muted mb-2">
       <Trophy className="w-3 h-3" />
       <span>Today&apos;s Leaderboard</span>
+    </div>
+  );
+}
+
+/**
+ * One preview row: place, portrait, name, score. The podium is framed in gold, silver and bronze,
+ * as on the full board (LeaderboardRow), and tied scores share a place (`podiumPlaces`). The
+ * player's own row is highlighted and shows their current avatar.
+ */
+function PreviewRow({
+  entry,
+  place,
+  own,
+}: {
+  entry: LeaderboardEntry;
+  place: number;
+  own: boolean;
+}) {
+  const frame = getMedalColor(place);
+  return (
+    <div
+      className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${own ? 'bg-player-row' : ''}`}
+    >
+      <span className="w-5 text-right text-xs text-text-muted font-mono">{place}</span>
+      {own ? (
+        <OwnPortrait size={20} frame={frame} />
+      ) : (
+        <Portrait animal={resolveAvatar(entry)} size={20} frame={frame} />
+      )}
+      <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
+      <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
     </div>
   );
 }
@@ -31,6 +67,7 @@ function LeaderboardPreview({
   }
 
   const top3 = entries.slice(0, PREVIEW_ROWS);
+  const placeOf = podiumPlaces(entries);
   // The server's own row for the caller, not a lookup in `entries` — the list is a capped
   // slice, so searching it silently finds nothing once the player ranks below the cap.
   const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
@@ -40,25 +77,17 @@ function LeaderboardPreview({
     <div className="space-y-1">
       <PreviewHeader />
       {top3.map((entry) => (
-        <div
+        <PreviewRow
           key={entry.rank}
-          className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-player-row' : ''}`}
-        >
-          <span className="w-5 text-center">{getMedalEmoji(entry.rank)}</span>
-          <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
-          <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
-        </div>
+          entry={entry}
+          place={placeOf(entry)}
+          own={playerRank === entry.rank}
+        />
       ))}
       {outsideTop3 && playerRow && (
         <>
           <div className="text-xs text-text-muted text-center py-1">...</div>
-          <div className="flex items-center gap-2 text-sm px-2 py-1 rounded bg-player-row">
-            <span className="w-5 text-center text-xs text-text-muted font-mono">
-              #{playerRow.rank}
-            </span>
-            <span className="flex-1 truncate font-body text-text">{playerRow.displayName}</span>
-            <span className="font-mono text-accent font-medium">{playerRow.correctCount}</span>
-          </div>
+          <PreviewRow entry={playerRow} place={placeOf(playerRow)} own />
         </>
       )}
     </div>
@@ -77,19 +106,40 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
   leaderboard,
 }) => {
   const [name, setName] = useState(leaderboard.suggestedName);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const profile = usePlayerProfile();
+  // A picked avatar wins; otherwise it follows the name as it is typed, so the player sees
+  // what the board will show before they submit. Sent with the score as shown.
+  const avatar = profile.choice ?? avatarForName(name || 'Anonymous');
 
   return (
     <div className="space-y-2">
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Your name (optional)"
-        maxLength={20}
-        className="w-full px-3 py-2 rounded-lg border border-border bg-bg text-text font-body text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-      />
+      <div className="flex items-center gap-2">
+        {/* The same picker as the menu's: a first-time player is here before they have ever
+            opened the menu. The pencil says the portrait can be tapped. */}
+        <button
+          type="button"
+          onClick={() => setPickerOpen(true)}
+          aria-label="Choose your avatar"
+          className="relative shrink-0 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        >
+          <Portrait animal={avatar} size={44} />
+          <span className="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-white">
+            <Pencil className="h-2.5 w-2.5" aria-hidden="true" />
+          </span>
+        </button>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your name (optional)"
+          maxLength={20}
+          aria-label="Your name"
+          className="flex-1 min-w-0 px-3 py-2 rounded-lg border border-border bg-bg text-text font-body text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+        />
+      </div>
       <button
-        onClick={() => void leaderboard.submit(name)}
+        onClick={() => void leaderboard.submit(name, avatar)}
         disabled={leaderboard.isSubmitting}
         className="w-full py-2 bg-accent hover:bg-accent/90 text-white rounded-lg font-medium font-body text-sm transition-colors disabled:opacity-50"
       >
@@ -100,6 +150,12 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
           {submitErrorMessage(leaderboard.submitError)}
         </div>
       )}
+      <AvatarPickerModal
+        open={pickerOpen}
+        onDismiss={() => setPickerOpen(false)}
+        name={name || 'Anonymous'}
+        note="Shown beside this score."
+      />
     </div>
   );
 };

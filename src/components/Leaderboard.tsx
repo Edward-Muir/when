@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
-import { resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
+import { podiumPlaces, resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardRow, { StickyPlayerRow } from './LeaderboardRow';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import { LeaderboardSubmitForm } from './LeaderboardSubmit';
@@ -104,6 +104,8 @@ interface LeaderboardListProps {
   error?: string | null;
   onJumpToSelf: () => void;
   playerRowRef: React.Ref<HTMLButtonElement>;
+  /** Podium place per row, so tied scores share a frame and size. */
+  placeOf: (entry: LeaderboardEntry) => number;
 }
 
 /**
@@ -117,6 +119,7 @@ const LeaderboardList: React.FC<LeaderboardListProps> = ({
   error,
   onJumpToSelf,
   playerRowRef,
+  placeOf,
 }) => {
   if (isLoading) {
     return <LeaderboardSkeleton rows={SKELETON_ROWS} />;
@@ -141,9 +144,10 @@ const LeaderboardList: React.FC<LeaderboardListProps> = ({
             entry={player.row}
             onJump={onJumpToSelf}
             rowRef={playerRowRef}
+            place={placeOf(player.row)}
           />
         ) : (
-          <LeaderboardRow key={entry.rank} entry={entry} />
+          <LeaderboardRow key={entry.rank} entry={entry} place={placeOf(entry)} />
         )
       )}
     </div>
@@ -173,6 +177,8 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   // fires an immediate refresh on activation, so opening the modal triggers a
   // fresh fetch — no separate refetch-on-open effect needed.
   useVisiblePolling(isOpen, POLL_INTERVAL_MS, onRefresh);
+
+  const placeOf = useMemo(() => podiumPlaces(entries), [entries]);
 
   const player = useMemo(
     () => resolvePlayerRow(entries, playerRank, playerEntry),
@@ -249,6 +255,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
           error={error}
           onJumpToSelf={jumpToSelf}
           playerRowRef={playerRowRef}
+          placeOf={placeOf}
         />
       </div>
 
@@ -266,7 +273,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       {/* The player ranks below the served slice, so there is no row in the list to pin. */}
       {!isLoading && !error && player.row && !player.inList && (
         <div className="shrink-0 border-t border-border">
-          <LeaderboardRow entry={player.row} highlight />
+          <LeaderboardRow entry={player.row} highlight place={placeOf(player.row)} />
         </div>
       )}
     </Modal>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import Menu from './Menu';
@@ -65,6 +65,27 @@ describe('Menu', () => {
     await userEvent.click(screen.getByRole('button', { name: /how to play/i }));
     expect(screen.getByRole('heading', { name: 'How to Play' })).toBeInTheDocument();
     expect(screen.getByText('Build the longest timeline!')).toBeInTheDocument();
+  });
+
+  it('keeps the plain header and shows the player as the Your Avatar icon', () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    renderMenu();
+    expect(screen.getByText('Menu')).toBeInTheDocument();
+    expect(screen.queryByTestId('profile-banner')).toBeNull();
+    const item = screen.getByRole('button', { name: /your avatar/i });
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('platypus');
+  });
+
+  it('opens the avatar picker, and a pick updates the icon and is saved', async () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    renderMenu();
+    const item = screen.getByRole('button', { name: /your avatar/i });
+    await userEvent.click(item);
+
+    await userEvent.click(screen.getByRole('radio', { name: 'Koala' }));
+
+    expect(localStorage.getItem('when-avatar')).toBe('koala');
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
   });
 
   it("links What's New to the changelog and closes", async () => {

@@ -8,6 +8,12 @@ export interface LeaderboardEntry {
   displayName: string;
   correctCount: number;
   rank: number;
+  /**
+   * The animal the player showed when they submitted (`"platypus"`). Absent for bots and for
+   * scores from before avatars: those resolve from the name.
+   * Read it through `resolveAvatar`, which also discards ids this build does not know.
+   */
+  avatar?: string;
 }
 
 export interface LeaderboardData {
@@ -59,7 +65,7 @@ export function useLeaderboard() {
    * Submit a daily result to the leaderboard
    */
   const submitResult = useCallback(
-    async (result: DailyResult, displayName: string): Promise<boolean> => {
+    async (result: DailyResult, displayName: string, avatar?: string): Promise<boolean> => {
       setState((prev) => ({
         ...prev,
         isSubmitting: true,
@@ -82,6 +88,7 @@ export function useLeaderboard() {
             totalAttempts: result.totalAttempts,
             emojiGrid: result.emojiGrid,
             deviceId,
+            avatar,
           }),
         });
 

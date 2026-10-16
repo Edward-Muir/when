@@ -1,0 +1,293 @@
+{
+  "animals": [
+    {
+      "id": "platypus",
+      "label": "Platypus"
+    },
+    {
+      "id": "goldfish",
+      "label": "Goldfish",
+      "emoji": "🐠"
+    },
+    {
+      "id": "penguin",
+      "label": "Penguin",
+      "emoji": "🐧"
+    },
+    {
+      "id": "tiger",
+      "label": "Tiger",
+      "emoji": "🐯"
+    },
+    {
+      "id": "fox",
+      "label": "Fox",
+      "emoji": "🦊"
+    },
+    {
+      "id": "eagle",
+      "label": "Eagle",
+      "emoji": "🦅"
+    },
+    {
+      "id": "wolf",
+      "label": "Wolf",
+      "emoji": "🐺"
+    },
+    {
+      "id": "bear",
+      "label": "Bear",
+      "emoji": "🐻"
+    },
+    {
+      "id": "hawk",
+      "label": "Hawk"
+    },
+    {
+      "id": "lion",
+      "label": "Lion",
+      "emoji": "🦁"
+    },
+    {
+      "id": "panther",
+      "label": "Panther"
+    },
+    {
+      "id": "falcon",
+      "label": "Falcon"
+    },
+    {
+      "id": "owl",
+      "label": "Owl",
+      "emoji": "🦉"
+    },
+    {
+      "id": "shark",
+      "label": "Shark",
+      "emoji": "🦈"
+    },
+    {
+      "id": "dragon",
+      "label": "Dragon",
+      "emoji": "🐉"
+    },
+    {
+      "id": "phoenix",
+      "label": "Phoenix"
+    },
+    {
+      "id": "raven",
+      "label": "Raven"
+    },
+    {
+      "id": "cobra",
+      "label": "Cobra",
+      "emoji": "🐍"
+    },
+    {
+      "id": "viper",
+      "label": "Viper"
+    },
+    {
+      "id": "jaguar",
+      "label": "Jaguar"
+    },
+    {
+      "id": "leopard",
+      "label": "Leopard",
+      "emoji": "🐆"
+    },
+    {
+      "id": "lynx",
+      "label": "Lynx"
+    },
+    {
+      "id": "otter",
+      "label": "Otter",
+      "emoji": "🦦"
+    },
+    {
+      "id": "badger",
+      "label": "Badger",
+      "emoji": "🦡"
+    },
+    {
+      "id": "wolverine",
+      "label": "Wolverine"
+    },
+    {
+      "id": "mongoose",
+      "label": "Mongoose"
+    },
+    {
+      "id": "heron",
+      "label": "Heron"
+    },
+    {
+      "id": "crane",
+      "label": "Crane"
+    },
+    {
+      "id": "osprey",
+      "label": "Osprey"
+    },
+    {
+      "id": "condor",
+      "label": "Condor"
+    },
+    {
+      "id": "albatross",
+      "label": "Albatross"
+    },
+    {
+      "id": "aardvark",
+      "label": "Aardvark"
+    },
+    {
+      "id": "elephant",
+      "label": "Elephant",
+      "emoji": "🐘"
+    },
+    {
+      "id": "giraffe",
+      "label": "Giraffe",
+      "emoji": "🦒"
+    },
+    {
+      "id": "hippo",
+      "label": "Hippo",
+      "emoji": "🦛"
+    },
+    {
+      "id": "rhino",
+      "label": "Rhino",
+      "emoji": "🦏"
+    },
+    {
+      "id": "camel",
+      "label": "Camel",
+      "emoji": "🐫"
+    },
+    {
+      "id": "llama",
+      "label": "Llama",
+      "emoji": "🦙"
+    },
+    {
+      "id": "panda",
+      "label": "Panda",
+      "emoji": "🐼"
+    },
+    {
+      "id": "koala",
+      "label": "Koala",
+      "emoji": "🐨"
+    },
+    {
+      "id": "kangaroo",
+      "label": "Kangaroo",
+      "emoji": "🦘"
+    },
+    {
+      "id": "sloth",
+      "label": "Sloth",
+      "emoji": "🦥"
+    },
+    {
+      "id": "hedgehog",
+      "label": "Hedgehog",
+      "emoji": "🦔"
+    },
+    {
+      "id": "rabbit",
+      "label": "Rabbit",
+      "emoji": "🐰"
+    },
+    {
+      "id": "squirrel",
+      "label": "Squirrel",
+      "emoji": "🐿️"
+    },
+    {
+      "id": "beaver",
+      "label": "Beaver",
+      "emoji": "🦫"
+    },
+    {
+      "id": "walrus",
+      "label": "Walrus",
+      "emoji": "🦭"
+    },
+    {
+      "id": "octopus",
+      "label": "Octopus",
+      "emoji": "🐙"
+    },
+    {
+      "id": "tortoise",
+      "label": "Tortoise",
+      "emoji": "🐢"
+    },
+    {
+      "id": "frog",
+      "label": "Frog",
+      "emoji": "🐸"
+    },
+    {
+      "id": "crocodile",
+      "label": "Crocodile",
+      "emoji": "🐊"
+    },
+    {
+      "id": "flamingo",
+      "label": "Flamingo",
+      "emoji": "🦩"
+    },
+    {
+      "id": "peacock",
+      "label": "Peacock",
+      "emoji": "🦚"
+    },
+    {
+      "id": "pelican",
+      "label": "Pelican"
+    },
+    {
+      "id": "parrot",
+      "label": "Parrot",
+      "emoji": "🦜"
+    },
+    {
+      "id": "toucan",
+      "label": "Toucan"
+    },
+    {
+      "id": "gorilla",
+      "label": "Gorilla",
+      "emoji": "🦍"
+    },
+    {
+      "id": "raccoon",
+      "label": "Raccoon",
+      "emoji": "🦝"
+    },
+    {
+      "id": "mole",
+      "label": "Mole"
+    },
+    {
+      "id": "moose",
+      "label": "Moose"
+    },
+    {
+      "id": "cat",
+      "label": "Cat",
+      "emoji": "🐈"
+    },
+    {
+      "id": "dog",
+      "label": "Dog",
+      "emoji": "🐕"
+    }
+  ]
+}

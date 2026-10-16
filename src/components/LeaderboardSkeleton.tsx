@@ -1,4 +1,6 @@
 import React from 'react';
+import { SIZE_CLASSES } from './ui/Portrait';
+import { podiumStyle, PORTRAIT_SLOT } from './leaderboardLayout';
 
 interface LeaderboardSkeletonProps {
   rows: number;
@@ -18,28 +20,42 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
 
   return (
     <div className={compact ? 'space-y-1' : 'divide-y divide-border'}>
-      {Array.from({ length: rows }, (_, i) => (
-        <div
-          key={i}
-          data-testid="leaderboard-skeleton-row"
-          className={
-            compact ? 'px-2 py-1 flex items-center gap-2' : 'px-4 py-3 flex items-center gap-3'
-          }
-        >
+      {Array.from({ length: rows }, (_, i) => {
+        // The full board's podium rows are taller, with larger tiles (`podiumStyle`).
+        const podium = podiumStyle(i + 1);
+        return (
           <div
-            className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-8 h-6'}`}
-          />
-          <div
-            className={`bg-border rounded animate-pulse ${compact ? 'h-4' : 'h-5'}`}
-            // The taper only reads as a list for the first few rows; past that a flat width
-            // looks less like a pattern than a formula run off the end of its range.
-            style={{ width: i < 5 ? `${70 - i * 8}%` : '34%' }}
-          />
-          <div
-            className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-8 h-6'}`}
-          />
-        </div>
-      ))}
+            key={i}
+            data-testid="leaderboard-skeleton-row"
+            className={
+              compact
+                ? 'px-2 py-1 flex items-center gap-2'
+                : `px-4 ${podium.pad} flex items-center gap-3`
+            }
+          >
+            {/* The rank number, then the portrait tile at the loaded row's size */}
+            <div
+              className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
+            />
+            {compact ? (
+              <div className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES[20]}`} />
+            ) : (
+              <div className={PORTRAIT_SLOT}>
+                <div className={`bg-border animate-pulse ${SIZE_CLASSES[podium.portrait]}`} />
+              </div>
+            )}
+            <div
+              className={`bg-border rounded animate-pulse ${compact ? 'h-4' : 'h-5'}`}
+              // The taper only reads as a list for the first few rows; past that a flat width
+              // looks less like a pattern than a formula run off the end of its range.
+              style={{ width: i < 5 ? `${70 - i * 8}%` : '34%' }}
+            />
+            <div
+              className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-8 h-6'}`}
+            />
+          </div>
+        );
+      })}
     </div>
   );
 };
