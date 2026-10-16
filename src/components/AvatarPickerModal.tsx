@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { X } from 'lucide-react';
 import Modal from './ui/Modal';
 import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { AVATAR_ANIMALS, avatarForName, getAnimal } from '../utils/avatar';
+import { saveDisplayName } from '../utils/playerStorage';
+import { AVATAR_ANIMALS, MAX_NAME_LENGTH, avatarForName, getAnimal } from '../utils/avatar';
 
 interface AvatarPickerModalProps {
   open: boolean;
   onDismiss: () => void;
   /** The name to preview, when it is not the saved one: the submit form passes the name as typed,
-   *  so until a first pick the preview and the checked tile follow what the form shows. */
+   *  so until a first pick the preview and the checked tile follow what the form shows. Without
+   *  it the modal is the menu's Profile, where the name itself is edited. */
   name?: string;
   /** The line above Done. */
   note?: string;
@@ -27,14 +30,16 @@ const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
 const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
 
 /**
- * Choose your portrait. Each tap saves at once and the tile at the top previews it. Until a
- * first pick, the avatar follows the name.
+ * Choose your portrait, and from the menu your leaderboard name. Each tap saves at once and the
+ * tile at the top previews it. Until a first pick, the avatar follows the name.
  *
- * Opened from the menu's "Your Avatar" row and from the portrait beside the leaderboard name
- * box, where a first-time player claims their first score before ever opening the menu.
- * Avatars stay a quiet touch, not a profile page. On `ui/Modal`: keep it mounted and drive
- * `open`. `reveal` layer so it clears the menu drawer or popup it opens from. The preview and
- * the footer are pinned and only the grid scrolls, so the way out is always on screen.
+ * Opened from the menu's "Profile" row and from the portrait beside the leaderboard name box,
+ * where a first-time player claims their first score before ever opening the menu. From there
+ * it is portraits only: the form's own input is the name box, and two inputs for one name would
+ * fight. The Profile name commits on blur, Enter, Done or dismiss rather than per keystroke, so
+ * half-typed names are never broadcast. On `ui/Modal`: keep it mounted and drive `open`.
+ * `reveal` layer so it clears the menu drawer or popup it opens from. The preview and the footer
+ * are pinned and only the grid scrolls, so the way out is always on screen.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   open,
@@ -43,15 +48,58 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   note = 'Shown with your next daily leaderboard score.',
 }) => {
   const profile = usePlayerProfile();
+  const editsName = previewName === undefined;
   const name = previewName ?? profile.name;
   const avatar = profile.choice ?? avatarForName(name);
   const { setAvatar } = profile;
 
+  // The name being typed. Re-seeded from the saved name each time the modal opens, so a rename
+  // made elsewhere (the submit form saves the name it sends) is what the field starts from.
+  const [draft, setDraft] = useState(profile.name);
+  const [wasOpen, setWasOpen] = useState(open);
+  if (open !== wasOpen) {
+    setWasOpen(open);
+    if (open) setDraft(profile.name);
+  }
+
+  const commitName = () => {
+    const next = draft.trim();
+    if (!next || next === profile.name) {
+      setDraft(profile.name);
+      return;
+    }
+    // Until a first pick the avatar follows the name, so renaming "Linguistic Platypus" to "Ed"
+    // would silently swap the portrait for a hashed stranger. Pin the one on screen first.
+    if (profile.choice === null) setAvatar(profile.avatar);
+    saveDisplayName(next);
+    setDraft(next);
+  };
+
+  const dismiss = () => {
+    if (editsName) commitName();
+    onDismiss();
+  };
+
   return (
     <Modal
       open={open}
-      onDismiss={onDismiss}
-      header="Your Avatar"
+      onDismiss={dismiss}
+      labelledBy="avatar-picker-title"
+      header={
+        <div className="flex items-center justify-between">
+          <h2 id="avatar-picker-title" className="text-lg font-display font-semibold text-text">
+            {editsName ? 'Profile' : 'Your Avatar'}
+          </h2>
+          <button
+            type="button"
+            onClick={dismiss}
+            className="p-1 rounded-lg hover:bg-border transition-colors"
+            aria-label="Close"
+          >
+            <X className="w-5 h-5 text-text-muted" />
+          </button>
+        </div>
+      }
       size="wide"
       layer="reveal"
       scroll="body"
@@ -60,9 +108,29 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
       <div className="shrink-0 px-4 py-3 border-b border-border">
         <div className="flex items-center gap-3">
           <Portrait animal={avatar} size={96} />
-          <div className="min-w-0">
-            <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
-            <div className="text-xs text-text-muted font-body">{getAnimal(avatar)?.label}</div>
+          <div className="min-w-0 flex-1">
+            {editsName ? (
+              // 16px text: iOS zooms the page into any smaller input on focus.
+              <input
+                type="text"
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                onBlur={commitName}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') e.currentTarget.blur();
+                }}
+                maxLength={MAX_NAME_LENGTH}
+                aria-label="Your name"
+                autoComplete="off"
+                autoCapitalize="words"
+                className="w-full px-3 py-2 rounded-lg border border-border bg-bg text-text font-body text-base focus:outline-none focus:ring-2 focus:ring-accent"
+              />
+            ) : (
+              <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
+            )}
+            <div className={`text-xs text-text-muted font-body ${editsName ? 'mt-1 px-1' : ''}`}>
+              {getAnimal(avatar)?.label}
+            </div>
           </div>
         </div>
       </div>
@@ -98,7 +166,7 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
         <p className="text-xs text-text-muted font-body text-center">{note}</p>
         <button
           type="button"
-          onClick={onDismiss}
+          onClick={dismiss}
           className="w-full py-3 bg-accent text-white rounded-xl font-medium font-body"
         >
           Done

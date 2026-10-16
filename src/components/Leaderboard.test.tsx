@@ -153,11 +153,30 @@ describe('Leaderboard', () => {
       expect(within(own).getByTestId('portrait').dataset.animal).toBe('panda');
       localStorage.clear();
     });
+
+    it('shows the player’s current name on their own row, not the one stored with the score', () => {
+      localStorage.setItem('when-display-name', 'Ed');
+      const entries: LeaderboardEntry[] = [
+        { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
+        { displayName: 'Me Platypus', correctCount: 8, rank: 2 },
+      ];
+      renderBoard({ entries, playerRank: 2, playerEntry: entries[1] as LeaderboardEntry });
+
+      const own = screen.getByRole('button', { name: /your rank/i });
+      expect(own).toHaveTextContent('Ed');
+      expect(own).not.toHaveTextContent('Me Platypus');
+      expect(screen.getByText('Brave Otter')).toBeInTheDocument();
+      localStorage.clear();
+    });
   });
 
   describe('the player’s own row', () => {
     const entries = makeEntries(BOARD_SIZE);
     const playerEntry = entries[19] as LeaderboardEntry;
+
+    // The own row shows the saved name (`OwnName`), which is the name the score went up with.
+    beforeEach(() => localStorage.setItem('when-display-name', playerEntry.displayName));
+    afterEach(() => localStorage.clear());
 
     it('appears exactly once — pinned in place, never duplicated', () => {
       renderBoard({ entries, playerRank: playerEntry.rank, playerEntry });
@@ -190,6 +209,7 @@ describe('Leaderboard', () => {
         correctCount: 3,
         rank: 312,
       };
+      localStorage.setItem('when-display-name', playerBelowCut.displayName);
       // Distinct scores, all above the player's: a real capped slice, so the player is not tied
       // with anyone shown and keeps the server's rank.
       const served = entries.map((e) => ({ ...e, correctCount: 100 - e.rank }));
@@ -314,6 +334,10 @@ describe('Leaderboard', () => {
       await userEvent.clear(input);
       await userEvent.type(input, 'Brave Otter');
       await userEvent.click(screen.getByRole('button', { name: /choose your avatar/i }));
+
+      // Portraits only from here: the form's input is the name box.
+      expect(screen.getByRole('heading', { name: 'Your Avatar' })).toBeInTheDocument();
+      expect(screen.getAllByRole('textbox', { name: /your name/i })).toHaveLength(1);
 
       // Until a first pick, the picker follows the name as typed, not the saved one.
       const grid = screen.getByRole('radiogroup', { name: /portrait/i });

@@ -67,25 +67,82 @@ describe('Menu', () => {
     expect(screen.getByText('Build the longest timeline!')).toBeInTheDocument();
   });
 
-  it('keeps the plain header and shows the player as the Your Avatar icon', () => {
+  it('keeps the plain header and shows the player as the Profile icon', () => {
     localStorage.setItem('when-display-name', 'Linguistic Platypus');
     renderMenu();
     expect(screen.getByText('Menu')).toBeInTheDocument();
     expect(screen.queryByTestId('profile-banner')).toBeNull();
-    const item = screen.getByRole('button', { name: /your avatar/i });
+    const item = screen.getByRole('button', { name: /profile/i });
     expect(within(item).getByTestId('portrait').dataset.animal).toBe('platypus');
   });
 
-  it('opens the avatar picker, and a pick updates the icon and is saved', async () => {
+  it('opens Profile, and a pick updates the icon and is saved', async () => {
     localStorage.setItem('when-display-name', 'Linguistic Platypus');
     renderMenu();
-    const item = screen.getByRole('button', { name: /your avatar/i });
+    const item = screen.getByRole('button', { name: /profile/i });
     await userEvent.click(item);
 
     await userEvent.click(screen.getByRole('radio', { name: 'Koala' }));
 
     expect(localStorage.getItem('when-avatar')).toBe('koala');
     expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
+  });
+
+  describe('renaming in Profile', () => {
+    const openProfile = async () => {
+      localStorage.setItem('when-display-name', 'Linguistic Platypus');
+      renderMenu();
+      const item = screen.getByRole('button', { name: /profile/i });
+      await userEvent.click(item);
+      expect(screen.getByRole('heading', { name: 'Profile' })).toBeInTheDocument();
+      return { item, input: screen.getByRole('textbox', { name: /your name/i }) };
+    };
+
+    it('saves the new name on Enter, trimmed', async () => {
+      const { input } = await openProfile();
+      expect(input).toHaveValue('Linguistic Platypus');
+      await userEvent.clear(input);
+      await userEvent.type(input, '  Ed {Enter}');
+
+      expect(localStorage.getItem('when-display-name')).toBe('Ed');
+      expect(input).toHaveValue('Ed');
+    });
+
+    it('saves a name still being typed when Done is pressed', async () => {
+      const { input } = await openProfile();
+      await userEvent.clear(input);
+      await userEvent.type(input, 'Ed');
+      await userEvent.click(screen.getByRole('button', { name: /^done$/i }));
+
+      expect(localStorage.getItem('when-display-name')).toBe('Ed');
+    });
+
+    it('saves a name still being typed when the close button is pressed', async () => {
+      const { input } = await openProfile();
+      await userEvent.clear(input);
+      await userEvent.type(input, 'Ed');
+      await userEvent.click(screen.getByRole('button', { name: 'Close' }));
+
+      expect(localStorage.getItem('when-display-name')).toBe('Ed');
+    });
+
+    it('keeps the old name when the field is left blank', async () => {
+      const { input } = await openProfile();
+      await userEvent.clear(input);
+      await userEvent.tab();
+
+      expect(localStorage.getItem('when-display-name')).toBe('Linguistic Platypus');
+      expect(input).toHaveValue('Linguistic Platypus');
+    });
+
+    it('keeps the portrait the old name implied, rather than following the new name', async () => {
+      const { item, input } = await openProfile();
+      await userEvent.clear(input);
+      await userEvent.type(input, 'Sleepy Koala{Enter}');
+
+      expect(localStorage.getItem('when-avatar')).toBe('platypus');
+      expect(within(item).getByTestId('portrait').dataset.animal).toBe('platypus');
+    });
   });
 
   it("links What's New to the changelog and closes", async () => {

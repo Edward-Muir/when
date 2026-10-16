@@ -335,10 +335,13 @@ export function getDisplayName(): string {
 }
 
 /**
- * Save the display name for future leaderboard submissions
+ * Save the display name for future leaderboard submissions. A blank name keeps the saved one:
+ * saving it would leave nothing to read, and `getOrCreateDisplayName` would roll a stranger.
  */
 export function saveDisplayName(name: string): void {
-  writeString(DISPLAY_NAME_KEY, name, 'display name');
+  const trimmed = name.trim();
+  if (!trimmed) return;
+  writeString(DISPLAY_NAME_KEY, trimmed, 'display name');
   notifyProfileChanged();
 }
 
@@ -377,8 +380,8 @@ export function saveAvatarChoice(animal: string): void {
   notifyProfileChanged();
 }
 
-// Name and avatar both show in several mounted places at once (the menu, the picker, the board's
-// own row), so a change from any one of them is broadcast here. `usePlayerProfile` subscribes.
+// Name and avatar both show in several mounted places at once (the menu, the Profile modal, the
+// board's own row), so a change from any one of them is broadcast here. `usePlayerProfile` subscribes.
 const profileListeners = new Set<() => void>();
 
 export function subscribeToProfile(listener: () => void): () => void {

@@ -2,8 +2,9 @@
 
 Every player has a **portrait**: an animal painted on a small square tile. An avatar is just the
 animal's id (`"platypus"`). It is a deliberately quiet touch. It shows on leaderboard
-rows, beside the name box when a daily score is submitted, and as the icon of the menu's "Your
-Avatar" row. Both the menu row and the portrait beside the name box open the picker. There are no profile banners and no presence on the Stats
+rows, beside the name box when a daily score is submitted, and as the icon of the menu's
+"Profile" row. Both the menu row and the portrait beside the name box open the picker; from the
+menu it is also where the leaderboard name is edited (see [Profile](#decisions)). There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
 All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)).
@@ -17,7 +18,8 @@ All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)
 | The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`                                                   |
 | Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`                                                |
 | The square tile, and the player's own live one             | `src/components/ui/Portrait.tsx`, `OwnPortrait.tsx`                            |
-| The picker (menu "Your Avatar", or the submit portrait)    | `src/components/AvatarPickerModal.tsx`                                         |
+| The player's own live name on their rows                   | `src/components/ui/OwnName.tsx`                                                |
+| The picker (menu "Profile", or the submit portrait)        | `src/components/AvatarPickerModal.tsx`                                         |
 | Server format check                                        | `lib/leaderboard/avatar.ts`                                                    |
 | Each animal's persona (hand-reviewed, from Sonnet agents)  | `scripts/avatars/personas.json`                                                |
 | The prompts CSV, and the script that builds it             | `docs/avatars/art/avatar_prompts.csv`, `scripts/avatars/avatar-art-prompts.py` |
@@ -59,6 +61,19 @@ not know and falls back to the name, so a forged value can only be ignored.
 
 A pick made after submitting reaches other players with the next day's score. The player's own
 row, the menu icon and the game-over preview always show their current pick (`OwnPortrait`).
+
+**Profile edits the name too, and it behaves like the pick.** The menu row is "Profile", and
+opened from there the picker's preview name is a text field (20 characters, the board's cap).
+A rename shows at once on the player's own rows (`OwnName`, on the full board, the game-over
+preview and the home "Longest Timelines" teaser) and prefills the submit form; others see it with
+the next score, because the sorted-set member is the stored entry and is never rewritten. This
+matches `[date].ts` already showing the caller their own name unfiltered. The field commits on
+blur, Enter, Done or dismiss, never per keystroke, and a blank field keeps the old name
+(`saveDisplayName` ignores blanks, which also stops an "Anonymous" submission rolling a fresh
+random name). A rename with no pick yet first pins the portrait on screen: otherwise renaming
+"Linguistic Platypus" to "Ed" would swap the platypus for a hashed stranger. Opened from the
+submit form the modal stays "Your Avatar" with no name field, since the form's input is the name
+box there.
 
 **The name is created on first use and saved.** `getOrCreateDisplayName()` replaces the old
 per-session re-roll, because the name now shows outside the submit form. It also holds the
