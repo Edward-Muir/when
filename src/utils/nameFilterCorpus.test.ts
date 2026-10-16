@@ -67,7 +67,7 @@ describe('display-name filter false positives', () => {
   // assertions below claim to cover, so pin the sizes and fail loudly instead.
   it('the client name dictionaries are the size this corpus assumes', () => {
     expect(adjectives).toHaveLength(1202);
-    expect(AVATAR_ANIMALS).toHaveLength(60);
+    expect(AVATAR_ANIMALS).toHaveLength(62);
     expect(PREFILL_NAMES.length).toBeGreaterThan(50_000);
   });
 

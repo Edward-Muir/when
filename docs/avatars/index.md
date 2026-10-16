@@ -6,15 +6,13 @@ rows, beside the name box when a daily score is submitted, and as the icon of th
 Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
-As of this writing two portraits exist (platypus, goldfish) and the prompts for the other 58 are
-written; generating them and the Cloudinary pipeline are the next piece of work (see
-[Still to do](#still-to-do)).
+All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)).
 
 ## Where things live
 
 | What                                                       | Where                                                                          |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| The 60 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                                                        |
+| The 62 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                                                        |
 | Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                                                          |
 | The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`                                                   |
 | Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`                                                |
@@ -33,13 +31,18 @@ free-typed name, "Anonymous", an animal from before the list was cut) falls back
 that word. The fallback is deterministic on purpose: the board polls every 15 seconds and must
 never reshuffle anyone.
 
-**60 animals, not the package's 355.** One portrait per animal is the expensive part of the
+**62 animals, not the package's 355.** One portrait per animal is the expensive part of the
 art. `generateRandomName()` still uses all of `unique-names-generator`'s adjectives but draws
-the animal from our 60, so every new name has a portrait. The list was chosen to contain:
+the animal from our 62, so every new name has a portrait. The list was chosen to contain:
 
 - **Platypus and Goldfish**, the two animals real players had when the list was cut;
 - **all 29 bot animals** (`lib/leaderboard/botGeneration.ts`), so bots, which never send an
-  avatar, always match their portrait. `avatar.test.ts` enforces both.
+  avatar, always match their portrait. `avatar.test.ts` enforces both;
+- **a cat**, added after the first 60 on request. Its portrait is specifically a Burmilla: the
+  persona's optional `animal` field ("Burmilla cat") names the breed in the prompt while the
+  player-facing label stays "Cat";
+- **a dog**, added with the cat. Its portrait (a hussar) was made by hand outside the CSV, so
+  like platypus and goldfish it has no persona and the prompt builder skips it.
 
 Don't drop an animal from the list: saved names and stored picks that use it fall back to a
 hashed stranger.
@@ -64,8 +67,8 @@ per-session re-roll, because the name now shows outside the submit form. It also
 generated name in memory for the session: where storage is blocked, a name re-rolled on every
 read would make `usePlayerProfile`'s snapshot change forever.
 
-**Placeholders are first-class.** `portraitArtUrl` returns null until the art exists, and it is
-the only seam. The tile shows the animal's emoji, or its initial where no
+**Placeholders are first-class.** `portraitArtUrl` is the only seam, and it returns null for an
+id it does not know. The tile then shows the animal's emoji, or its initial where no
 emoji reads as that animal; ZWJ emoji (phoenix, raven, moose) are skipped because older
 WebViews draw them as two glyphs.
 
@@ -86,12 +89,6 @@ painting; it crops it (`Portrait`'s `crop`, `podiumStyle`). First place shows th
 centre (`50% 30%`) so the head stays in frame. So the 44px rows read as head-and-shoulders
 rather than a tiny whole figure, and first place shows more of the scene instead of looking out
 of scale.
-
-**The two preview portraits are final art.** Platypus and goldfish live in
-`public/avatars/preview/` and `portraitArtUrl` serves them for every animal, the other 58
-borrowing one by hash, so the look can be judged in the app. A third, `cat.webp` (a 1920s
-flapper), is in the borrowing pool for testing only: the cat is not one of the 60 animals. They have no row in the prompts
-CSV: upload them to Cloudinary with the rest, then remove `PREVIEW_ART` and the folder.
 
 **The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
 supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card
@@ -166,16 +163,37 @@ prompt must ask for:
 Check every generated portrait downscaled to 20px and 32px, on a tinted tile, before
 accepting it.
 
+## Delivery
+
+Every portrait is on Cloudinary at the public id `avatars/<animal id>`, so `portraitArtUrl`
+builds the URL from the id; nothing is stored per animal. It goes through `getImageUrl(…,
+'thumbnail')`, the existing square 400px rung: that covers the 96px picker preview at DPR 3,
+costs about 15–20 KB a tile, and adds no transformation string to allow-list. A third,
+portrait-sized rung would be smaller per tile but mints new derived assets
+([cloudinary-cost-controls.md](../cloudinary-cost-controls.md)). Every portrait still loads
+through `Portrait`'s one `<img loading="lazy" decoding="async">`, pinned by `Portrait.test.tsx`;
+add no eager path.
+
+The pipeline is the event cards' tooling in `../when-images`, run on its own folders:
+
+1. Put the 2048px originals in `when-images/avatars/generated/`, named by animal id.
+2. Run `scripts/downsample.py`'s code against that folder, writing `avatars/downsampled/`
+   (the script's directories are module constants; override `INPUT_DIR` / `OUTPUT_DIR`).
+3. `node ../when-images/scripts/upload_to_cloudinary.js --avatars` for a dry run, then with
+   `--upload`. It matches stems against `avatars.json`, uploads to `avatars/<id>` and never
+   overwrites, so replacing a portrait means deleting the old asset first.
+
+There is no URL-writing step. A new animal needs only its id in `avatars.json` and an upload.
+
+The first 24 uploads (platypus to badger in list order) went up as 1024px JPEGs from an ad-hoc
+downsample, the rest as `downsample.py`'s 2048px quality-80 output. Delivery resizes both to the
+same 400px rung, so they look identical in the app.
+
 ## Still to do
 
 1. **Bucket the adjectives** (optional now that a theme is only a tint). Sort all 1,202 package
    adjectives plus the 35 bot adjectives into the 20 themes, filling `adjectiveThemes`, with a
    coverage test. Until then the tint is a stable hash of the first word.
-2. **Generate the art** from `docs/avatars/art/avatar_prompts.csv` (58 rows), checking each at
-   20px and 32px on a tinted tile.
-3. **Deliver through Cloudinary.** Upload the 58 plus the two previews and wire
-   `portraitArtUrl` through the `cloudinaryImage.ts` patterns. It stays the only URL seam, so
-   every portrait keeps loading through `Portrait`'s one `<img loading="lazy" decoding="async">`
-   (pinned by `Portrait.test.tsx`); add no eager path. Read
-   [cloudinary-cost-controls.md](../cloudinary-cost-controls.md) first: no `dpr_auto`, capped
-   widths, square rungs for portraits.
+2. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
+   one by one at 20px and 32px on a tinted tile. Re-run any that do not read, then replace the
+   asset as described under [Delivery](#delivery).
