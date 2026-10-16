@@ -2,11 +2,16 @@ import React from 'react';
 import Modal from './ui/Modal';
 import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { AVATAR_ANIMALS, getAnimal } from '../utils/avatar';
+import { AVATAR_ANIMALS, avatarForName, getAnimal } from '../utils/avatar';
 
 interface AvatarPickerModalProps {
   open: boolean;
   onDismiss: () => void;
+  /** The name to preview, when it is not the saved one: the submit form passes the name as typed,
+   *  so until a first pick the preview and the checked tile follow what the form shows. */
+  name?: string;
+  /** The line above Done. */
+  note?: string;
 }
 
 const SECTION_HEADING =
@@ -25,13 +30,22 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
  * Choose your portrait. Each tap saves at once and the tile at the top previews it. Until a
  * first pick, the avatar follows the name.
  *
- * Opened from the menu's "Your Avatar" row only: avatars are a quiet touch, not a profile
- * page. On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
- * drawer it opens from. The preview and the footer are pinned and only the grid scrolls, so
- * the way out is always on screen.
+ * Opened from the menu's "Your Avatar" row and from the portrait beside the leaderboard name
+ * box, where a first-time player claims their first score before ever opening the menu.
+ * Avatars stay a quiet touch, not a profile page. On `ui/Modal`: keep it mounted and drive
+ * `open`. `reveal` layer so it clears the menu drawer or popup it opens from. The preview and
+ * the footer are pinned and only the grid scrolls, so the way out is always on screen.
  */
-const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }) => {
-  const { name, avatar, setAvatar } = usePlayerProfile();
+const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
+  open,
+  onDismiss,
+  name: previewName,
+  note = 'Shown with your next daily leaderboard score.',
+}) => {
+  const profile = usePlayerProfile();
+  const name = previewName ?? profile.name;
+  const avatar = profile.choice ?? avatarForName(name);
+  const { setAvatar } = profile;
 
   return (
     <Modal
@@ -81,9 +95,7 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
       </div>
 
       <div className="shrink-0 border-t border-border p-4 space-y-2">
-        <p className="text-xs text-text-muted font-body text-center">
-          Shown with your next daily leaderboard score.
-        </p>
+        <p className="text-xs text-text-muted font-body text-center">{note}</p>
         <button
           type="button"
           onClick={onDismiss}

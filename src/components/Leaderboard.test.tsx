@@ -304,6 +304,32 @@ describe('Leaderboard', () => {
       expect(submit).toHaveBeenCalledWith('Brave Otter', 'otter');
     });
 
+    // A first-time player claims their first score before ever opening the menu.
+    it('opens the avatar picker from the portrait, and the pick is sent with the score', async () => {
+      localStorage.clear();
+      const submit = jest.fn();
+      renderBoard({ submit: makeSubmit({ submit }) });
+
+      const input = screen.getByPlaceholderText(/your name/i);
+      await userEvent.clear(input);
+      await userEvent.type(input, 'Brave Otter');
+      await userEvent.click(screen.getByRole('button', { name: /choose your avatar/i }));
+
+      // Until a first pick, the picker follows the name as typed, not the saved one.
+      const grid = screen.getByRole('radiogroup', { name: /portrait/i });
+      expect(within(grid).getByRole('radio', { name: 'Otter' })).toHaveAttribute(
+        'aria-checked',
+        'true'
+      );
+
+      await userEvent.click(within(grid).getByRole('radio', { name: 'Koala' }));
+      await userEvent.click(screen.getByRole('button', { name: /^done$/i }));
+      expect(localStorage.getItem('when-avatar')).toBe('koala');
+
+      await userEvent.click(screen.getByRole('button', { name: /submit to leaderboard/i }));
+      expect(submit).toHaveBeenCalledWith('Brave Otter', 'koala');
+    });
+
     it('drops the form once the score is on the board', () => {
       renderBoard({ submit: makeSubmit({ submitted: true }) });
 

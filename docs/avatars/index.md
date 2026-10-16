@@ -3,7 +3,7 @@
 Every player has a **portrait**: an animal painted on a small square tile. An avatar is just the
 animal's id (`"platypus"`). It is a deliberately quiet touch. It shows on leaderboard
 rows, beside the name box when a daily score is submitted, and as the icon of the menu's "Your
-Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
+Avatar" row. Both the menu row and the portrait beside the name box open the picker. There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
 All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)).
@@ -17,7 +17,7 @@ All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)
 | The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`                                                   |
 | Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`                                                |
 | The square tile, and the player's own live one             | `src/components/ui/Portrait.tsx`, `OwnPortrait.tsx`                            |
-| The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx`                                         |
+| The picker (menu "Your Avatar", or the submit portrait)    | `src/components/AvatarPickerModal.tsx`                                         |
 | Server format check                                        | `lib/leaderboard/avatar.ts`                                                    |
 | Each animal's persona (hand-reviewed, from Sonnet agents)  | `scripts/avatars/personas.json`                                                |
 | The prompts CSV, and the script that builds it             | `docs/avatars/art/avatar_prompts.csv`, `scripts/avatars/avatar-art-prompts.py` |
@@ -90,6 +90,16 @@ centre (`50% 30%`) so the head stays in frame. So the 44px rows read as head-and
 rather than a tiny whole figure, and first place shows more of the scene instead of looking out
 of scale. Each portrait sits flush against its rank number in a slot as wide as first place's
 tile (`PORTRAIT_SLOT`), so every name starts on the same line as the top one.
+
+**The picker opens from the submit form too.** A first-time player finishes the daily and
+claims a score before ever opening the menu, so the portrait beside the name box
+(`LeaderboardSubmitForm`) is a button, marked with a small pencil, that opens the same picker.
+It is the same saved pick as the menu's, for new and existing players alike. From there the
+picker previews the name as typed (its `name` prop), so until a first pick the checked tile is
+the animal the form shows, not the one the saved name implies. It renders inside the host
+popup's card on the `reveal` layer; that card's scale spring settles to `transform: none`, so
+`fixed` resolves to the viewport. Once today's score is submitted the form is gone, and the
+menu is the way back in.
 
 **The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
 supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card
@@ -196,3 +206,45 @@ same 400px rung, so they look identical in the app.
 1. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
    one by one at 20px and 32px on a paper tile. Re-run any that do not read, then replace the
    asset as described under [Delivery](#delivery).
+
+## Ideas for later
+
+Not built. Recorded so a later pass starts from the reasoning rather than from scratch.
+
+**Earned portraits as variants, never locked animals.** The idea is to reward achievements
+with portraits: placing 20 Art events (`cat-art`, "Maestro") might earn a painter aardvark.
+Lock **variants** of existing animals, not the 62 base animals. The name decides the avatar
+by default, so a locked base animal would break a generated name ("Artistic Aardvark" with no
+aardvark), and the 62 must stay complete for the name generator and the bots. A variant is
+pick-only and never implied by a name.
+
+- **One variant per category achievement**, so 21 paintings (`ACHIEVEMENTS` in
+  `src/data/achievements.ts`), plus perhaps a few rare ones for the top milestones (Time Lord,
+  Keeper of Time, The Complete Collection). A costume of _every_ animal per achievement would be
+  62 × 21 = 1,302 paintings. The personas already lean towards categories (the penguin
+  conducts, the mongoose paints miniatures, the owl watches the stars), so a variant can take
+  an animal somewhere its base persona does not, such as the archaeologist aardvark at an easel.
+- **The wire format already allows it.** An id such as `aardvark-maestro` passes the server's
+  format check (`/^[a-z0-9-]{1,24}$/`), and a client that does not know an id falls back to
+  the name. Achievements are stored on the device, so a variant can be forged; acceptable for a
+  cosmetic.
+- **The name word could unlock too.** Earning Maestro might add "Maestro" as a pickable first
+  word, so name and portrait match, within the 20-character cap.
+- **In the picker**, locked variants show greyed with their unlock line, so the picker also
+  says what is left to earn.
+
+Traps: don't mark an earned portrait with a metal frame (gold, silver and bronze already mean
+podium place on the board, and achievement badges carry metal rings); keep the quiet touch
+(profile banners and a Stats-tab presence were tried and removed); every variant must still
+read at 20px, as above.
+
+**Other uses considered**, in rough order of fit:
+
+- seasonal or curated-theme portraits, earned by playing that day (missing one is final, which
+  must be a deliberate choice);
+- a collection goal across the variants, a long arc the daily score does not give;
+- the sender's portrait on a challenge ("Beat Linguistic Platypus's 14"), which touches the
+  challenge-code encoding ([sharing-challenges/](../sharing-challenges/index.md));
+- turn markers in multiplayer, which the engine supports and no screen offers;
+- a portrait on a generated share image;
+- reactions (a different expression on a win or a loss), which multiply the art cost.

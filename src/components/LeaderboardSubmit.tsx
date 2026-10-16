@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Trophy } from 'lucide-react';
+import { Pencil, Trophy } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { getMedalColor, podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import Portrait from './ui/Portrait';
 import OwnPortrait from './ui/OwnPortrait';
+import AvatarPickerModal from './AvatarPickerModal';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
 import { avatarForName, resolveAvatar } from '../utils/avatar';
 
@@ -105,6 +106,7 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
   leaderboard,
 }) => {
   const [name, setName] = useState(leaderboard.suggestedName);
+  const [pickerOpen, setPickerOpen] = useState(false);
   const profile = usePlayerProfile();
   // A picked avatar wins; otherwise it follows the name as it is typed, so the player sees
   // what the board will show before they submit. Sent with the score as shown.
@@ -113,7 +115,19 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        <Portrait animal={avatar} size={44} />
+        {/* The same picker as the menu's: a first-time player is here before they have ever
+            opened the menu. The pencil says the portrait can be tapped. */}
+        <button
+          type="button"
+          onClick={() => setPickerOpen(true)}
+          aria-label="Choose your avatar"
+          className="relative shrink-0 rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+        >
+          <Portrait animal={avatar} size={44} />
+          <span className="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-accent text-white">
+            <Pencil className="h-2.5 w-2.5" aria-hidden="true" />
+          </span>
+        </button>
         <input
           type="text"
           value={name}
@@ -136,6 +150,12 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
           {submitErrorMessage(leaderboard.submitError)}
         </div>
       )}
+      <AvatarPickerModal
+        open={pickerOpen}
+        onDismiss={() => setPickerOpen(false)}
+        name={name || 'Anonymous'}
+        note="Shown beside this score."
+      />
     </div>
   );
 };
