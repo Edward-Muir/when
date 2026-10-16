@@ -84,9 +84,7 @@ describe('Menu', () => {
 
     await userEvent.click(screen.getByRole('radio', { name: 'Koala' }));
 
-    // Only the animal is picked; the tint stays the one the name implies.
-    expect(localStorage.getItem('when-avatar')).toMatch(/^koala\./);
-    expect(screen.queryByRole('radiogroup', { name: 'Tint' })).toBeNull();
+    expect(localStorage.getItem('when-avatar')).toBe('koala');
     expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
   });
 

@@ -1,12 +1,11 @@
-import type { PortraitSize } from '../components/ui/Portrait';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 
 /**
- * The podium's frame colour for a rank's portrait, or null past third. The board marks the top
+ * The podium's frame colour for a place's portrait, or null past third. The board marks the top
  * three by framing their portrait rather than with medal emoji beside it (LeaderboardRow).
  */
-export function getMedalColor(rank: number): string | null {
-  switch (rank) {
+export function getMedalColor(place: number): string | null {
+  switch (place) {
     case 1:
       return '#d4a72c';
     case 2:
@@ -19,10 +18,10 @@ export function getMedalColor(rank: number): string | null {
 }
 
 /**
- * Each row's podium place, which decides its frame and size. Tied scores share the place of the
- * first row with that score (standard competition ranking), so scores 11, 9, 7, 7, 7 are framed
- * gold, silver, bronze, bronze, bronze. The rank number on the row stays the server's. A row
- * whose score is not in `entries` (the player below a capped slice) keeps its own rank.
+ * Each row's place, which decides its number, frame and size. Tied scores share the place of the
+ * first row with that score (standard competition ranking), so scores 11, 9, 7, 7, 7 read 1, 2,
+ * 3, 3, 3 and are framed gold, silver, bronze, bronze, bronze. A row whose score is not in
+ * `entries` (the player below a capped slice) keeps its own rank.
  */
 export function podiumPlaces(entries: LeaderboardEntry[]): (entry: LeaderboardEntry) => number {
   const firstRank = new Map<number, number>();
@@ -63,50 +62,4 @@ export function resolvePlayerRow(
   const inList = rank !== null && entries.some((entry) => entry.rank === rank);
 
   return { row: playerEntry, inList };
-}
-
-export interface PodiumStyle {
-  portrait: PortraitSize;
-  /** Vertical padding: the podium rows are a little taller. */
-  pad: string;
-  name: string;
-  score: string;
-  /**
-   * How far to zoom the art (`Portrait`'s `crop`). Every row draws its painting at first
-   * place's 60px scale and crops it to its own tile, so smaller tiles show a tighter
-   * head-and-shoulders view instead of a tiny whole figure, and first place shows the most.
-   */
-  crop: number;
-}
-
-// Literal strings so Tailwind's JIT sees them. Used by LeaderboardRow, and by LeaderboardSkeleton
-// so the loading rows are the height the loaded ones will be.
-// The steps are deliberately gentle (60, 52, 48, then 44px): enough to lead the eye to first
-// place without the podium shouting over the rest of the board.
-// First place's tile; every other tile crops the art drawn at this size.
-const FIRST_PX = 60;
-
-/**
- * Every row's portrait sits flush against its rank number in a slot as wide as first place's
- * tile, so all the names start on one line however the portraits step down. A literal string
- * for Tailwind's JIT.
- */
-export const PORTRAIT_SLOT = 'w-[60px] shrink-0 flex justify-start';
-
-const PODIUM: readonly PodiumStyle[] = [
-  { portrait: 'md3', pad: 'py-2.5', name: 'font-semibold', score: 'text-2xl', crop: 1 },
-  { portrait: 'md2', pad: 'py-2.5', name: '', score: 'text-xl', crop: FIRST_PX / 52 },
-  { portrait: 'md1', pad: 'py-2', name: '', score: 'text-xl', crop: FIRST_PX / 48 },
-];
-const FIELD: PodiumStyle = {
-  portrait: 'md',
-  pad: 'py-2',
-  name: '',
-  score: 'text-lg',
-  crop: FIRST_PX / 44,
-};
-
-/** First place is the largest, then second, then third; everyone else shares one size. */
-export function podiumStyle(rank: number): PodiumStyle {
-  return (rank >= 1 ? PODIUM.at(rank - 1) : undefined) ?? FIELD;
 }

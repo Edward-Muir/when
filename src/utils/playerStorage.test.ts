@@ -127,27 +127,25 @@ describe('display name and avatar storage', () => {
     expect(getOrCreateDisplayName()).toBe('Ada');
   });
 
-  it('round-trips the avatar pick, including clearing it', () => {
+  it('round-trips the avatar pick', () => {
     expect(getAvatarChoice()).toBeNull();
-    saveAvatarChoice({ animal: 'platypus', theme: 'scholar' });
-    expect(getAvatarChoice()).toEqual({ animal: 'platypus', theme: 'scholar' });
-    saveAvatarChoice(null);
-    expect(getAvatarChoice()).toBeNull();
+    saveAvatarChoice('platypus');
+    expect(getAvatarChoice()).toBe('platypus');
   });
 
   it('ignores a stored pick this build does not know', () => {
-    localStorage.setItem('when-avatar', 'unicorn.scholar');
+    localStorage.setItem('when-avatar', 'unicorn');
     expect(getAvatarChoice()).toBeNull();
   });
 
   it('tells subscribers when the profile changes', () => {
     const listener = jest.fn();
     const unsubscribe = subscribeToProfile(listener);
-    saveAvatarChoice({ animal: 'koala', theme: 'viking' });
+    saveAvatarChoice('koala');
     saveDisplayName('Grace');
     expect(listener).toHaveBeenCalledTimes(2);
     unsubscribe();
-    saveAvatarChoice(null);
+    saveAvatarChoice('panda');
     expect(listener).toHaveBeenCalledTimes(2);
   });
 });

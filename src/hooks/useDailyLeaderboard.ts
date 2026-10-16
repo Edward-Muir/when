@@ -2,7 +2,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { useLeaderboard, LeaderboardEntry } from './useLeaderboard';
 import {
   DailyResult,
-  getAvatarChoice,
   getOrCreateDisplayName,
   saveDisplayName,
   hasSubmittedToLeaderboard,
@@ -10,7 +9,6 @@ import {
   updateDailyResultWithLeaderboard,
 } from '../utils/playerStorage';
 import { patchDailyRank } from '../utils/gameHistory';
-import { avatarForName, formatAvatar } from '../utils/avatar';
 
 export interface DailyLeaderboard {
   entries: LeaderboardEntry[];
@@ -35,7 +33,12 @@ export interface DailyLeaderboard {
   submitError: string | null;
   /** The name to prefill the submit form with. */
   suggestedName: string;
-  submit: (displayName: string) => Promise<void>;
+  /**
+   * Send the score. `avatar` is the animal the form showed, picked or implied by the name; it is
+   * always sent, so the board shows what the player saw even if the name filter later swaps the
+   * name it was derived from.
+   */
+  submit: (displayName: string, avatar: string) => Promise<void>;
   /** Refetch the board. Defaults to the date being tracked; pass one to follow a day rollover. */
   refresh: (date?: string) => void;
 }
@@ -168,14 +171,10 @@ export function useDailyLeaderboard(
   }, [rank, totalPlayers, dailyResult?.date]);
 
   const submit = useCallback(
-    async (displayName: string) => {
+    async (displayName: string, avatar: string) => {
       if (!dailyResult) return;
       saveDisplayName(displayName);
-      const name = displayName || 'Anonymous';
-      // Always sent, picked or not, so the board shows what the player saw in the form even if
-      // the name filter later swaps the name the avatar was derived from.
-      const avatar = formatAvatar(getAvatarChoice() ?? avatarForName(name));
-      const success = await submitResult(dailyResult, name, avatar);
+      const success = await submitResult(dailyResult, displayName || 'Anonymous', avatar);
       if (success) {
         markLeaderboardSubmitted();
         setSubmittedLocally(true);

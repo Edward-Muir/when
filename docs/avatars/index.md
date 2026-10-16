@@ -1,7 +1,7 @@
 # Player avatars
 
-Every player has a **portrait**: an animal on a small square tile, faintly tinted by a
-**theme** (one of 20 named colours). It is a deliberately quiet touch. It shows on leaderboard
+Every player has a **portrait**: an animal painted on a small square tile. An avatar is just the
+animal's id (`"platypus"`). It is a deliberately quiet touch. It shows on leaderboard
 rows, beside the name box when a daily score is submitted, and as the icon of the menu's "Your
 Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
@@ -12,11 +12,11 @@ All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)
 
 | What                                                       | Where                                                                          |
 | ---------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| The 62 animals, the 20 themes, the adjective→theme map     | `src/data/avatars.json`                                                        |
+| The 62 animals                                             | `src/data/avatars.json`                                                        |
 | Identity rules, wire format, the art seam, name generation | `src/utils/avatar.ts`                                                          |
 | The saved pick (`when-avatar`) and display name            | `src/utils/playerStorage.ts`                                                   |
 | Live name + avatar for the player's own surfaces           | `src/hooks/usePlayerProfile.ts`                                                |
-| The tinted square tile                                     | `src/components/ui/Portrait.tsx`                                               |
+| The square tile, and the player's own live one             | `src/components/ui/Portrait.tsx`, `OwnPortrait.tsx`                            |
 | The picker (menu item "Your Avatar")                       | `src/components/AvatarPickerModal.tsx`                                         |
 | Server format check                                        | `lib/leaderboard/avatar.ts`                                                    |
 | Each animal's persona (hand-reviewed, from Sonnet agents)  | `scripts/avatars/personas.json`                                                |
@@ -24,11 +24,9 @@ All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)
 
 ## Decisions
 
-**The name decides the avatar by default.** The last word of the fun name picks the animal and
-the first word picks the theme through `adjectiveThemes`, so "Linguistic Platypus" is a
-platypus, and every "Linguistic" player shares a tint. Anything outside the lists (a
-free-typed name, "Anonymous", an animal from before the list was cut) falls back to a hash of
-that word. The fallback is deterministic on purpose: the board polls every 15 seconds and must
+**The name decides the avatar by default.** The last word of the fun name picks the animal, so
+"Linguistic Platypus" is a platypus. Anything outside the list (a free-typed name,
+"Anonymous", an animal from before the list was cut) falls back to a hash of that word. The fallback is deterministic on purpose: the board polls every 15 seconds and must
 never reshuffle anyone.
 
 **62 animals, not the package's 355.** One portrait per animal is the expensive part of the
@@ -52,25 +50,25 @@ the board ("Straightforward Cock…"), which here would also lose the animal. Pa
 fit are never drawn, and the name-filter corpus test covers exactly the drawable set.
 
 **A pick travels with the score; everything else resolves from the name.** The client always
-sends `avatar` (`"platypus.scholar"`) with a daily score: the pick, or what the name implied.
-The server stores it in the sorted-set member and returns it. It checks the **format only**
-(`/^[a-z0-9-]{1,24}\.[a-z0-9-]{1,24}$/`) and drops rather than rejects anything else. A
-server-side copy of the lists would drift as art is added and start discarding honest picks
-(the failure `submit.ts` documents for themes). The client's `parseAvatar` ignores ids it does
+sends `avatar` (`"platypus"`) with a daily score: exactly what the submit form showed, the pick
+or what the typed name implied. The server stores it in the sorted-set member and returns it.
+It checks the **format only** (`/^[a-z0-9-]{1,24}$/`) and drops rather than rejects anything
+else. A server-side copy of the list would drift as art is added and start discarding honest picks
+(the failure `submit.ts` documents for daily themes). The client's `parseAvatar` ignores ids it does
 not know and falls back to the name, so a forged value can only be ignored.
 
 A pick made after submitting reaches other players with the next day's score. The player's own
-row always shows their current pick (`OwnRowCells` in `LeaderboardRow.tsx`).
+row, the menu icon and the game-over preview always show their current pick (`OwnPortrait`).
 
 **The name is created on first use and saved.** `getOrCreateDisplayName()` replaces the old
 per-session re-roll, because the name now shows outside the submit form. It also holds the
 generated name in memory for the session: where storage is blocked, a name re-rolled on every
 read would make `usePlayerProfile`'s snapshot change forever.
 
-**Placeholders are first-class.** `portraitArtUrl` is the only seam, and it returns null for an
-id it does not know. The tile then shows the animal's emoji, or its initial where no
-emoji reads as that animal; ZWJ emoji (phoenix, raven, moose) are skipped because older
-WebViews draw them as two glyphs.
+**A fallback for failed art.** `portraitArtUrl` is the only URL seam. If the art fails to load
+(offline, say), the tile shows the animal's emoji, or its initial where no emoji reads as that
+animal; ZWJ emoji (phoenix, raven, moose) are skipped because older WebViews draw them as two
+glyphs.
 
 **The podium is a frame, not a medal.** Leaderboard rows show a plain rank number beside the
 portrait, and the top three portraits get a gold, silver or bronze frame (`getMedalColor` in
@@ -86,7 +84,7 @@ Timelines" teaser number rows the same way. The share text and saved stats keep 
 rank: it only knows positions, not who is tied.
 
 **Every board portrait is painted at first place's scale.** A smaller tile does not shrink the
-painting; it crops it (`Portrait`'s `crop`, `podiumStyle`). First place shows the whole bust at
+painting; it crops it (`Portrait`'s `paintedAt`, `PAINTED_AT` in `leaderboardLayout.ts`). First place shows the whole bust at
 60px, and each smaller tile shows the middle of the same 60px painting, anchored a little above
 centre (`50% 30%`) so the head stays in frame. So the 44px rows read as head-and-shoulders
 rather than a tiny whole figure, and first place shows more of the scene instead of looking out
@@ -97,16 +95,15 @@ tile (`PORTRAIT_SLOT`), so every name starts on the same line as the top one.
 supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card
 ran off both ends with the toolbars showing. The preview and the Done footer are pinned and only
 the grid scrolls, so the way out is always on screen. There is no "match my name" reset: once
-picked, an avatar stays picked. There is no tint picker either: the player picks only the
-animal, and the tint always follows the name. A second grid of 20 near-identical pale swatches
-was clutter for a detail that is meant to be quiet.
+picked, an avatar stays picked.
 
-**The theme is a tint, not a picture.** Each theme's `color` is mixed at 22% into the paper
-behind the portrait (`tintStyle` in `Portrait.tsx`), so players read apart at a glance
-without the tile shouting. The mix is an inline `color-mix`,
-never `bg-token/NN`, which compiles to nothing (see CLAUDE.md, Styling). There is no background
-art: a painted landscape per theme was planned, but with no banner to show it on, it would have
-had nowhere to appear.
+**No colour themes.** Each avatar once carried one of 20 colour themes, picked by the name's
+first word and mixed faintly into the tile, first with a tint picker and later without. It was
+dropped: the art is `object-cover` with an opaque painted backdrop, so the tint showed only
+while an image loaded, yet it cost a second half in the stored pick, the wire format and the
+server check, plus an always-empty adjective map. The plain paper tile (`bg-paper`) is the
+loading backdrop. Painted background art per theme was also planned and dropped earlier, for
+want of anywhere to show it.
 
 ## The art spec: the game's own oil-painting style
 
@@ -139,7 +136,7 @@ ruff collar, a quill pen held up beside its face, candlelight.
 **A dark painted backdrop, not a cut-out.** The plan was a transparent cut-out so the tint
 showed behind the animal. The two finished previews have a plain dark painted backdrop and read
 well, so the rest match them: the prompt asks for "a plain dark painted backdrop, like a gallery
-portrait", and no background-removal step is needed. The tint shows only at the tile's edge.
+portrait", and no background-removal step is needed.
 
 **The prompts CSV.** `scripts/avatars/avatar-art-prompts.py` fills the template above (with the
 backdrop clause in place of "isolated on a flat plain uniform background") from
@@ -160,12 +157,12 @@ picker's preview). Every portrait
 prompt must ask for:
 
 - a large head filling most of the frame, in a tight bust crop;
-- one strong, simple silhouette that holds up against a pale tint;
+- one strong, simple silhouette that holds up at a glance;
 - at most one bold costume element and one prop;
 - no fine detail, small text or busy pattern;
 - a clear colour identity for each animal.
 
-Check every generated portrait downscaled to 20px and 32px, on a tinted tile, before
+Check every generated portrait downscaled to 20px and 32px, on a paper tile, before
 accepting it.
 
 ## Delivery
@@ -196,9 +193,6 @@ same 400px rung, so they look identical in the app.
 
 ## Still to do
 
-1. **Bucket the adjectives** (optional now that a theme is only a tint). Sort all 1,202 package
-   adjectives plus the 35 bot adjectives into the 20 themes, filling `adjectiveThemes`, with a
-   coverage test. Until then the tint is a stable hash of the first word.
-2. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
-   one by one at 20px and 32px on a tinted tile. Re-run any that do not read, then replace the
+1. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
+   one by one at 20px and 32px on a paper tile. Re-run any that do not read, then replace the
    asset as described under [Delivery](#delivery).

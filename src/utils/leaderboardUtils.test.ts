@@ -1,5 +1,5 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalColor, podiumPlaces, podiumStyle, resolvePlayerRow } from './leaderboardUtils';
+import { getMedalColor, podiumPlaces, resolvePlayerRow } from './leaderboardUtils';
 
 const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): LeaderboardEntry => ({
   displayName: `Player ${rank}`,
@@ -18,19 +18,6 @@ describe('getMedalColor', () => {
   it('frames nobody past the podium', () => {
     expect(getMedalColor(4)).toBeNull();
     expect(getMedalColor(50)).toBeNull();
-  });
-});
-
-describe('podiumStyle', () => {
-  // Every tile draws its art at first place's 60px scale, so the crop is 60 / tile size.
-  it('shows first place whole and crops smaller tiles tighter', () => {
-    expect([1, 2, 3, 4, 40].map((place) => podiumStyle(place).crop)).toEqual([
-      1,
-      60 / 52,
-      60 / 48,
-      60 / 44,
-      60 / 44,
-    ]);
   });
 });
 

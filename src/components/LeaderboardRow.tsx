@@ -1,9 +1,10 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { getMedalColor, podiumStyle, PORTRAIT_SLOT } from '../utils/leaderboardUtils';
-import { Avatar, resolveAvatar } from '../utils/avatar';
+import { getMedalColor } from '../utils/leaderboardUtils';
+import { resolveAvatar } from '../utils/avatar';
+import { PAINTED_AT, podiumStyle, PORTRAIT_SLOT } from './leaderboardLayout';
 import Portrait from './ui/Portrait';
+import OwnPortrait from './ui/OwnPortrait';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
 const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
@@ -14,24 +15,26 @@ const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
  * everyone and the portrait carries the honour. The podium's portraits also step down gently
  * in size from first place (`podiumStyle`). The number, frame and size all follow the row's
  * place, not the server's rank, so tied scores share all three (`podiumPlaces`).
+ *
+ * `own` rows show the player's current pick (`OwnPortrait`), not the one stored with the score.
  */
-const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar; place: number }> = ({
+const RowCells: React.FC<{ entry: LeaderboardEntry; place: number; own: boolean }> = ({
   entry,
-  avatar,
   place,
+  own,
 }) => {
   const style = podiumStyle(place);
+  const portrait = { size: style.portrait, frame: getMedalColor(place), paintedAt: PAINTED_AT };
   return (
     <>
       <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{place}</div>
 
       <div className={PORTRAIT_SLOT}>
-        <Portrait
-          avatar={avatar}
-          size={style.portrait}
-          frame={getMedalColor(place)}
-          crop={style.crop}
-        />
+        {own ? (
+          <OwnPortrait {...portrait} />
+        ) : (
+          <Portrait animal={resolveAvatar(entry)} {...portrait} />
+        )}
       </div>
 
       <div className="flex-1 min-w-0">
@@ -51,20 +54,14 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar; place: numbe
 
 interface LeaderboardRowProps {
   entry: LeaderboardEntry;
-  /** Paint the player's own highlight. Opaque by design — see `.bg-player-row` in index.css. */
+  /**
+   * The player's own row: their live avatar, and the highlight (opaque by design — see
+   * `.bg-player-row` in index.css).
+   */
   highlight?: boolean;
-  /** Podium place for the frame and size (`podiumPlaces`); defaults to the rank. */
+  /** Place for the number, frame and size (`podiumPlaces`); defaults to the rank. */
   place?: number;
 }
-
-/**
- * The player's own row shows the avatar they have now, not the one stored with today's score:
- * a pick made after submitting would otherwise only appear tomorrow, on their own screen too.
- */
-const OwnRowCells: React.FC<{ entry: LeaderboardEntry; place: number }> = ({ entry, place }) => {
-  const { avatar } = usePlayerProfile();
-  return <RowCells entry={entry} avatar={avatar} place={place} />;
-};
 
 /** A plain row. Used for everyone else, and for the pinned footer when the board is truncated. */
 const LeaderboardRow: React.FC<LeaderboardRowProps> = ({
@@ -73,11 +70,7 @@ const LeaderboardRow: React.FC<LeaderboardRowProps> = ({
   place = entry.rank,
 }) => (
   <div className={`${ROW_LAYOUT} ${podiumStyle(place).pad} ${highlight ? 'bg-player-row' : ''}`}>
-    {highlight ? (
-      <OwnRowCells entry={entry} place={place} />
-    ) : (
-      <RowCells entry={entry} avatar={resolveAvatar(entry)} place={place} />
-    )}
+    <RowCells entry={entry} place={place} own={highlight} />
   </div>
 );
 
@@ -117,7 +110,7 @@ const StickyPlayerRow: React.FC<StickyPlayerRowProps> = ({
     aria-label={`Your rank, ${place}. Scroll to your position.`}
     className={`${ROW_LAYOUT} ${podiumStyle(place).pad} sticky top-0 bottom-0 z-10 bg-player-row border-y border-accent shadow-sm`}
   >
-    <OwnRowCells entry={entry} place={place} />
+    <RowCells entry={entry} place={place} own />
   </button>
 );
 

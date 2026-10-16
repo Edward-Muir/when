@@ -24,7 +24,7 @@ interface LeaderboardEntry {
 // player (a cleared curated theme can finish with fewer) — see the scoring note in submit.ts.
 // Both would otherwise ship on every 15s poll.
 //
-// `avatar` is the player's pick ("platypus.scholar"), absent for bots and older scores; the
+// `avatar` is the player's animal ("platypus"), absent for bots and older scores; the
 // client derives those from the name. Checked again on read, like names, so nothing stored
 // before the check existed (or written around it) reaches the board.
 interface PublicLeaderboardEntry {

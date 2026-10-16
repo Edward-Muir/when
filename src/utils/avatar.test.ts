@@ -3,25 +3,19 @@ import { MAX_DISPLAY_NAME_LENGTH } from '../../lib/leaderboard/nameFilter';
 import { sanitizeAvatar } from '../../lib/leaderboard/avatar';
 import {
   AVATAR_ANIMALS,
-  AVATAR_THEMES,
   MAX_NAME_LENGTH,
   avatarForName,
-  formatAvatar,
   generateRandomName,
-  getTheme,
   parseAvatar,
   portraitArtUrl,
   resolveAvatar,
 } from './avatar';
-import data from '../data/avatars.json';
 
 const animalIds = AVATAR_ANIMALS.map((a) => a.id);
-const themeIds = AVATAR_THEMES.map((t) => t.id);
 
-describe('the avatar lists', () => {
-  it('has 62 unique animals and 20 unique themes', () => {
+describe('the avatar list', () => {
+  it('has 62 unique animals', () => {
     expect(new Set(animalIds).size).toBe(62);
-    expect(new Set(themeIds).size).toBe(20);
   });
 
   // The two animals real players were using when the list was cut from 355 to 60.
@@ -35,17 +29,7 @@ describe('the avatar lists', () => {
   });
 
   it('uses ids that pass the server format check', () => {
-    for (const animal of animalIds) {
-      for (const theme of themeIds) {
-        expect(sanitizeAvatar(formatAvatar({ animal, theme }))).toBeDefined();
-      }
-    }
-  });
-
-  it('maps adjectives only to themes that exist', () => {
-    for (const theme of Object.values(data.adjectiveThemes as Record<string, string>)) {
-      expect(getTheme(theme)).toBeDefined();
-    }
+    for (const animal of animalIds) expect(sanitizeAvatar(animal)).toBe(animal);
   });
 
   it('mirrors the server name cap', () => {
@@ -55,38 +39,28 @@ describe('the avatar lists', () => {
 
 describe('avatarForName', () => {
   it('takes the portrait from the last word', () => {
-    expect(avatarForName('Linguistic Platypus').animal).toBe('platypus');
-    expect(avatarForName('  golden   GOLDFISH ').animal).toBe('goldfish');
+    expect(avatarForName('Linguistic Platypus')).toBe('platypus');
+    expect(avatarForName('  golden   GOLDFISH ')).toBe('goldfish');
   });
 
-  it('is deterministic for names outside the lists', () => {
+  it('is deterministic for names outside the list', () => {
     const bob = avatarForName('Bob');
-    expect(avatarForName('Bob')).toEqual(bob);
-    expect(animalIds).toContain(bob.animal);
-    expect(themeIds).toContain(bob.theme);
-    expect(avatarForName('Linguistic Aardwolf')).toEqual(avatarForName('Linguistic Aardwolf'));
-  });
-
-  it('gives names sharing a first word the same theme', () => {
-    expect(avatarForName('Brave Otter').theme).toBe(avatarForName('Brave Lion').theme);
+    expect(avatarForName('Bob')).toBe(bob);
+    expect(animalIds).toContain(bob);
+    expect(avatarForName('Linguistic Aardwolf')).toBe(avatarForName('Linguistic Aardwolf'));
   });
 
   it('copes with an empty name', () => {
-    const empty = avatarForName('');
-    expect(animalIds).toContain(empty.animal);
-    expect(themeIds).toContain(empty.theme);
+    expect(animalIds).toContain(avatarForName(''));
   });
 });
 
 describe('parseAvatar / resolveAvatar', () => {
-  it('round-trips the wire form', () => {
-    expect(parseAvatar(formatAvatar({ animal: 'platypus', theme: 'scholar' }))).toEqual({
-      animal: 'platypus',
-      theme: 'scholar',
-    });
+  it('accepts a known animal id', () => {
+    expect(parseAvatar('platypus')).toBe('platypus');
   });
 
-  it.each([undefined, null, 42, '', 'platypus', 'unicorn.scholar', 'platypus.atlantis', 'a.b.c'])(
+  it.each([undefined, null, 42, '', 'unicorn', 'Platypus', 'platypus.scholar'])(
     'rejects %p',
     (value) => {
       expect(parseAvatar(value)).toBeNull();
@@ -94,14 +68,9 @@ describe('parseAvatar / resolveAvatar', () => {
   );
 
   it('prefers a valid pick and falls back to the name otherwise', () => {
-    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'koala.viking' })).toEqual({
-      animal: 'koala',
-      theme: 'viking',
-    });
-    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'unicorn.viking' })).toEqual(
-      avatarForName('Brave Otter')
-    );
-    expect(resolveAvatar({ displayName: 'Brave Otter' })).toEqual(avatarForName('Brave Otter'));
+    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'koala' })).toBe('koala');
+    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'unicorn' })).toBe('otter');
+    expect(resolveAvatar({ displayName: 'Brave Otter' })).toBe('otter');
   });
 });
 
@@ -111,18 +80,19 @@ describe('generateRandomName', () => {
       const name = generateRandomName();
       expect(name.length).toBeLessThanOrEqual(MAX_NAME_LENGTH);
       const last = name.split(' ').at(-1)?.toLowerCase();
-      expect(avatarForName(name).animal).toBe(last);
+      expect(avatarForName(name)).toBe(last);
     }
   });
 });
 
 describe('sanitizeAvatar (server)', () => {
   it('keeps well-formed values and drops everything else', () => {
-    expect(sanitizeAvatar('platypus.scholar')).toBe('platypus.scholar');
-    expect(sanitizeAvatar('space-age.space-age')).toBe('space-age.space-age');
-    expect(sanitizeAvatar('Platypus.scholar')).toBeUndefined();
-    expect(sanitizeAvatar('<script>.x')).toBeUndefined();
-    expect(sanitizeAvatar('a'.repeat(25) + '.b')).toBeUndefined();
+    expect(sanitizeAvatar('platypus')).toBe('platypus');
+    expect(sanitizeAvatar('sea-otter')).toBe('sea-otter');
+    expect(sanitizeAvatar('Platypus')).toBeUndefined();
+    expect(sanitizeAvatar('platypus.scholar')).toBeUndefined();
+    expect(sanitizeAvatar('<script>')).toBeUndefined();
+    expect(sanitizeAvatar('a'.repeat(25))).toBeUndefined();
     expect(sanitizeAvatar(7)).toBeUndefined();
     expect(sanitizeAvatar(undefined)).toBeUndefined();
   });

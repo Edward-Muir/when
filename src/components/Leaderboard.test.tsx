@@ -93,8 +93,8 @@ describe('Leaderboard', () => {
     it('gives every row a portrait, from the pick when there is one and the name otherwise', () => {
       const entries: LeaderboardEntry[] = [
         { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
-        { displayName: 'Linguistic Platypus', correctCount: 8, rank: 2, avatar: 'koala.viking' },
-        { displayName: 'Swift Hawk', correctCount: 7, rank: 3, avatar: 'unicorn.viking' },
+        { displayName: 'Linguistic Platypus', correctCount: 8, rank: 2, avatar: 'koala' },
+        { displayName: 'Swift Hawk', correctCount: 7, rank: 3, avatar: 'unicorn' },
       ];
       renderBoard({ entries });
 
@@ -126,7 +126,7 @@ describe('Leaderboard', () => {
       expect(new Set(frames.slice(2, 5)).size).toBe(1);
       expect(frames[2]).toBeTruthy();
       expect(frames[5]).toBeUndefined();
-      expect(sizes).toEqual(['md3', 'md2', 'md1', 'md1', 'md1', 'md']);
+      expect(sizes).toEqual(['60', '52', '48', '48', '48', '44']);
       // Competition ranking: the three tied on 7 are all third, and the next row is sixth.
       expect(screen.getAllByText('3', { exact: true })).toHaveLength(3);
       expect(screen.getByText('4', { exact: true })).toBeInTheDocument(); // the score, not a rank
@@ -137,15 +137,15 @@ describe('Leaderboard', () => {
     it('steps the podium portraits down in size from first place', () => {
       renderBoard();
       const sizes = screen.getAllByTestId('portrait').map((p) => p.dataset.size);
-      expect(sizes.slice(0, 4)).toEqual(['md3', 'md2', 'md1', 'md']);
-      expect(new Set(sizes.slice(3))).toEqual(new Set(['md']));
+      expect(sizes.slice(0, 4)).toEqual(['60', '52', '48', '44']);
+      expect(new Set(sizes.slice(3))).toEqual(new Set(['44']));
     });
 
     it('shows the player’s current pick on their own row, not the one stored with the score', () => {
-      localStorage.setItem('when-avatar', 'panda.roman');
+      localStorage.setItem('when-avatar', 'panda');
       const entries: LeaderboardEntry[] = [
         { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
-        { displayName: 'Me Platypus', correctCount: 8, rank: 2, avatar: 'platypus.scholar' },
+        { displayName: 'Me Platypus', correctCount: 8, rank: 2, avatar: 'platypus' },
       ];
       renderBoard({ entries, playerRank: 2, playerEntry: entries[1] as LeaderboardEntry });
 
@@ -291,16 +291,17 @@ describe('Leaderboard', () => {
       expect(screen.getByRole('button', { name: /submit to leaderboard/i })).toBeInTheDocument();
     });
 
-    it('submits the typed name', async () => {
+    it('submits the typed name with the avatar the form shows', async () => {
       const submit = jest.fn();
       renderBoard({ submit: makeSubmit({ submit }) });
 
       const input = screen.getByPlaceholderText(/your name/i);
       await userEvent.clear(input);
-      await userEvent.type(input, 'Ed');
+      await userEvent.type(input, 'Brave Otter');
       await userEvent.click(screen.getByRole('button', { name: /submit to leaderboard/i }));
 
-      expect(submit).toHaveBeenCalledWith('Ed');
+      // No pick saved, so the avatar follows the name as typed.
+      expect(submit).toHaveBeenCalledWith('Brave Otter', 'otter');
     });
 
     it('drops the form once the score is on the board', () => {

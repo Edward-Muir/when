@@ -11,7 +11,7 @@
 
 import { Difficulty, Category, Era } from '../types';
 import { getLocalDateString } from './puzzleDate';
-import { Avatar, formatAvatar, generateRandomName, parseAvatar } from './avatar';
+import { generateRandomName, parseAvatar } from './avatar';
 import { readJson, readString, removeKeys, writeJson, writeString } from './storage';
 
 // --- Daily Result Storage ---
@@ -348,8 +348,8 @@ let generatedName: string | null = null;
  * The saved display name, or a freshly generated one saved on the spot.
  *
  * Saved rather than re-rolled per session because the name now shows outside the submit form
- * (the menu and Stats banners, the avatar it implies), and a player's identity changing every
- * launch until they first submit would read as a bug.
+ * (the avatar picker, and the avatar it implies in the menu), and a player's identity changing
+ * every launch until they first submit would read as a bug.
  */
 export function getOrCreateDisplayName(): string {
   const saved = getDisplayName();
@@ -366,20 +366,19 @@ export function getOrCreateDisplayName(): string {
 
 const AVATAR_KEY = 'when-avatar';
 
-/** The avatar the player picked, or null to follow their name (see `avatarForName`). */
-export function getAvatarChoice(): Avatar | null {
+/** The animal the player picked, or null to follow their name (see `avatarForName`). */
+export function getAvatarChoice(): string | null {
   return parseAvatar(readString(AVATAR_KEY));
 }
 
-/** Save a picked avatar; null goes back to following the name. */
-export function saveAvatarChoice(avatar: Avatar | null): void {
-  if (avatar) writeString(AVATAR_KEY, formatAvatar(avatar), 'avatar');
-  else removeKeys([AVATAR_KEY], 'avatar');
+/** Save a picked animal. There is no way back to following the name: a pick stays picked. */
+export function saveAvatarChoice(animal: string): void {
+  writeString(AVATAR_KEY, animal, 'avatar');
   notifyProfileChanged();
 }
 
-// Name and avatar both show in several mounted places at once (menu, Stats, the board's own
-// row), so a change from any one of them is broadcast here. `usePlayerProfile` subscribes.
+// Name and avatar both show in several mounted places at once (the menu, the picker, the board's
+// own row), so a change from any one of them is broadcast here. `usePlayerProfile` subscribes.
 const profileListeners = new Set<() => void>();
 
 export function subscribeToProfile(listener: () => void): () => void {

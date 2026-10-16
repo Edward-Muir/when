@@ -1,14 +1,11 @@
 /**
- * Player avatars: a portrait (an animal) on a tile faintly tinted by a theme.
+ * Player avatars: a portrait of an animal on a small paper tile.
  *
- * The fun name decides both by default: the last word picks the animal and the first word
- * picks the theme, so "Linguistic Platypus" is a platypus on the scholar's tint. A player
- * can override either from the picker, and that choice travels with their leaderboard score.
- * Everyone else on the board — bots, legacy entries, names the filter replaced, free-typed
- * names — resolves from the name alone, client-side. See docs/avatars/index.md.
- *
- * `portraitArtUrl` is the one seam the art plugs into; where it returns null, a surface draws
- * a placeholder.
+ * An avatar is just an animal id (`"platypus"`). The fun name decides it by default (the last
+ * word, so "Linguistic Platypus" is a platypus); a player can pick another in the avatar picker,
+ * and that pick travels with their leaderboard score. Everyone else on the board (bots, legacy
+ * entries, names the filter replaced, free-typed names) resolves from the name alone,
+ * client-side. See docs/avatars/index.md.
  */
 import { uniqueNamesGenerator, adjectives } from 'unique-names-generator';
 import data from '../data/avatars.json';
@@ -17,28 +14,12 @@ import { getImageUrl } from './cloudinaryImage';
 export interface AvatarAnimal {
   id: string;
   label: string;
-  /** Placeholder glyph until the art lands. Absent where no emoji reads as the animal. */
+  /** Drawn if the art fails to load. Absent where no emoji reads as the animal. */
   emoji?: string;
 }
 
-export interface AvatarTheme {
-  id: string;
-  label: string;
-  /** Mixed faintly into the tile behind the portrait (`Portrait.tsx`). */
-  color: string;
-}
-
-export interface Avatar {
-  animal: string;
-  theme: string;
-}
-
 export const AVATAR_ANIMALS: readonly AvatarAnimal[] = data.animals;
-export const AVATAR_THEMES: readonly AvatarTheme[] = data.themes;
-const ADJECTIVE_THEMES = new Map<string, string>(Object.entries(data.adjectiveThemes));
-
 const ANIMALS_BY_ID = new Map(AVATAR_ANIMALS.map((a) => [a.id, a]));
-const THEMES_BY_ID = new Map(AVATAR_THEMES.map((t) => [t.id, t]));
 
 /**
  * The leaderboard's name cap, mirrored from MAX_DISPLAY_NAME_LENGTH in
@@ -52,10 +33,6 @@ export function getAnimal(id: string): AvatarAnimal | undefined {
   return ANIMALS_BY_ID.get(id);
 }
 
-export function getTheme(id: string): AvatarTheme | undefined {
-  return THEMES_BY_ID.get(id);
-}
-
 /** FNV-1a. Stable across sessions and devices, which is all the fallback needs. */
 function hashString(value: string): number {
   let hash = 0x811c9dc5;
@@ -66,46 +43,24 @@ function hashString(value: string): number {
   return hash >>> 0;
 }
 
-function pick<T>(list: readonly T[], seed: string): T {
-  return list[hashString(seed) % list.length] as T;
-}
-
 /**
- * The avatar a name implies. Deterministic, so the board's 15s poll never reshuffles anyone.
- *
- * A word that is not in the lists (a free-typed name, "Anonymous", an animal from before the
- * list was cut to 60) falls back to a hash of that word, salted per list so a one-word name
- * does not tie its animal to its theme.
+ * The animal a name implies: its last word, if that is one of ours. Anything else (a
+ * free-typed name, "Anonymous", an animal from before the list was cut) falls back to a hash of
+ * that word. Deterministic, so the board's 15s poll never reshuffles anyone.
  */
-export function avatarForName(name: string): Avatar {
-  const words = name.trim().toLowerCase().split(/\s+/).filter(Boolean);
-  const first = words[0] ?? '';
-  const last = words[words.length - 1] ?? '';
-
-  const animal = ANIMALS_BY_ID.has(last) ? last : pick(AVATAR_ANIMALS, `animal:${last}`).id;
-  const mapped = ADJECTIVE_THEMES.get(first);
-  const theme =
-    mapped && THEMES_BY_ID.has(mapped) ? mapped : pick(AVATAR_THEMES, `theme:${first}`).id;
-
-  return { animal, theme };
+export function avatarForName(name: string): string {
+  const last = name.trim().toLowerCase().split(/\s+/).at(-1) ?? '';
+  if (ANIMALS_BY_ID.has(last)) return last;
+  return (AVATAR_ANIMALS[hashString(last) % AVATAR_ANIMALS.length] as AvatarAnimal).id;
 }
 
-/** The wire form sent with a score: `"platypus.scholar"`. */
-export function formatAvatar(avatar: Avatar): string {
-  return `${avatar.animal}.${avatar.theme}`;
-}
-
-/** Null for anything that does not name a known animal and theme — stale or bogus values. */
-export function parseAvatar(value: unknown): Avatar | null {
-  if (typeof value !== 'string') return null;
-  const [animal, theme, extra] = value.split('.');
-  if (extra !== undefined || !animal || !theme) return null;
-  if (!ANIMALS_BY_ID.has(animal) || !THEMES_BY_ID.has(theme)) return null;
-  return { animal, theme };
+/** The animal id, or null for anything this build does not know: stale or bogus values. */
+export function parseAvatar(value: unknown): string | null {
+  return typeof value === 'string' && ANIMALS_BY_ID.has(value) ? value : null;
 }
 
 /** A leaderboard row's avatar: the one the player chose, else the one their name implies. */
-export function resolveAvatar(entry: { displayName: string; avatar?: string }): Avatar {
+export function resolveAvatar(entry: { displayName: string; avatar?: string }): string {
   return parseAvatar(entry.avatar) ?? avatarForName(entry.displayName);
 }
 

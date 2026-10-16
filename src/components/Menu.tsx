@@ -29,8 +29,7 @@ import { APP_VERSION } from '../version';
 import HowToPlayModal from './HowToPlayModal';
 import AvatarPickerModal from './AvatarPickerModal';
 import Modal from './ui/Modal';
-import Portrait from './ui/Portrait';
-import { usePlayerProfile } from '../hooks/usePlayerProfile';
+import OwnPortrait from './ui/OwnPortrait';
 
 interface MenuProps {
   isOpen: boolean;
@@ -85,7 +84,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
   const [showAvatarPicker, setShowAvatarPicker] = React.useState(false);
-  const profile = usePlayerProfile();
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native app (redundant) and not on Android/desktop (the menu links only the App Store).
@@ -174,11 +172,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
               {/* Menu Items */}
               <div className="py-2 flex-1">
                 {/* The player's own portrait stands in for the icon: the one quiet place they
-                    see what they look like on the board, and the way to change it. */}
-                {/* The same 44px tile as the leaderboard, with the row's padding trimmed so it is not
-                    twice the height of its neighbours. */}
+                    see what they look like on the board, and the way to change it. The same 44px
+                    tile as the leaderboard, with the row's padding trimmed so it is not twice the
+                    height of its neighbours. */}
                 <button onClick={handleAvatar} className={`${menuItemClass} !py-2`}>
-                  <Portrait avatar={profile.avatar} size="md" />
+                  <OwnPortrait size={44} />
                   <span className="font-body">Your Avatar</span>
                 </button>
 

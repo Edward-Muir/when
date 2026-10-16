@@ -9,8 +9,8 @@ export interface LeaderboardEntry {
   correctCount: number;
   rank: number;
   /**
-   * The avatar the player picked, in wire form (`"platypus.scholar"`). Absent for bots, for
-   * scores from before avatars, and for anyone who never picked: those resolve from the name.
+   * The animal the player showed when they submitted (`"platypus"`). Absent for bots and for
+   * scores from before avatars: those resolve from the name.
    * Read it through `resolveAvatar`, which also discards ids this build does not know.
    */
   avatar?: string;

@@ -23,8 +23,7 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
 
 /**
  * Choose your portrait. Each tap saves at once and the tile at the top previews it. Until a
- * first pick, the avatar follows the name. There is no tint picker: the tint always follows
- * the name, a quiet touch not worth a second grid.
+ * first pick, the avatar follows the name.
  *
  * Opened from the menu's "Your Avatar" row only: avatars are a quiet touch, not a profile
  * page. On `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu
@@ -46,12 +45,10 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
     >
       <div className="shrink-0 px-4 py-3 border-b border-border">
         <div className="flex items-center gap-3">
-          <Portrait avatar={avatar} size="xl" />
+          <Portrait animal={avatar} size={96} />
           <div className="min-w-0">
             <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
-            <div className="text-xs text-text-muted font-body">
-              {getAnimal(avatar.animal)?.label}
-            </div>
+            <div className="text-xs text-text-muted font-body">{getAnimal(avatar)?.label}</div>
           </div>
         </div>
       </div>
@@ -61,7 +58,7 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
           <h3 className={SECTION_HEADING}>Portrait</h3>
           <div className={GRID} role="radiogroup" aria-label="Portrait">
             {AVATAR_ANIMALS.map((animal) => {
-              const selected = animal.id === avatar.animal;
+              const selected = animal.id === avatar;
               return (
                 <button
                   key={animal.id}
@@ -69,10 +66,10 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({ open, onDismiss }
                   role="radio"
                   aria-checked={selected}
                   aria-label={animal.label}
-                  onClick={() => setAvatar({ ...avatar, animal: animal.id })}
+                  onClick={() => setAvatar(animal.id)}
                   className={`${TILE} ${selected ? SELECTED : ''}`}
                 >
-                  <Portrait avatar={{ animal: animal.id, theme: avatar.theme }} size="md" />
+                  <Portrait animal={animal.id} size={44} />
                   <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
                     {animal.label}
                   </span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SIZE_CLASSES } from './ui/Portrait';
-import { podiumStyle, PORTRAIT_SLOT } from '../utils/leaderboardUtils';
+import { podiumStyle, PORTRAIT_SLOT } from './leaderboardLayout';
 
 interface LeaderboardSkeletonProps {
   rows: number;
@@ -38,7 +38,7 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
               className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
             />
             {compact ? (
-              <div className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES.xs}`} />
+              <div className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES[20]}`} />
             ) : (
               <div className={PORTRAIT_SLOT}>
                 <div className={`bg-border animate-pulse ${SIZE_CLASSES[podium.portrait]}`} />

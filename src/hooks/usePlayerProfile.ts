@@ -1,28 +1,27 @@
-import { useCallback, useSyncExternalStore } from 'react';
+import { useSyncExternalStore } from 'react';
 import {
   getAvatarChoice,
   getOrCreateDisplayName,
   saveAvatarChoice,
   subscribeToProfile,
 } from '../utils/playerStorage';
-import { Avatar, avatarForName, formatAvatar, parseAvatar } from '../utils/avatar';
+import { avatarForName, parseAvatar } from '../utils/avatar';
 
 export interface PlayerProfile {
   name: string;
-  /** What the player looks like: their pick, else what their name implies. */
-  avatar: Avatar;
-  /** True when `avatar` is an explicit pick rather than derived from the name. */
-  chosen: boolean;
-  /** Save a pick, or null to follow the name again. */
-  setAvatar: (avatar: Avatar | null) => void;
+  /** The animal the player shows as: their pick, else what their name implies. */
+  avatar: string;
+  /** The explicit pick, or null while the avatar still follows the name. */
+  choice: string | null;
+  /** Save a pick. */
+  setAvatar: (animal: string) => void;
 }
 
 // useSyncExternalStore compares snapshots with Object.is, so the snapshot is a string built
 // from storage rather than a fresh object per read — that would re-render forever. The name
 // goes last because it is the only part that can contain the separator.
 function readSnapshot(): string {
-  const choice = getAvatarChoice();
-  return `${choice ? formatAvatar(choice) : ''}|${getOrCreateDisplayName()}`;
+  return `${getAvatarChoice() ?? ''}|${getOrCreateDisplayName()}`;
 }
 
 /**
@@ -32,11 +31,10 @@ function readSnapshot(): string {
  */
 export function usePlayerProfile(): PlayerProfile {
   const snapshot = useSyncExternalStore(subscribeToProfile, readSnapshot);
-  const setAvatar = useCallback((avatar: Avatar | null) => saveAvatarChoice(avatar), []);
 
   const at = snapshot.indexOf('|');
   const choice = parseAvatar(snapshot.slice(0, at));
   const name = snapshot.slice(at + 1);
 
-  return { name, avatar: choice ?? avatarForName(name), chosen: choice !== null, setAvatar };
+  return { name, avatar: choice ?? avatarForName(name), choice, setAvatar: saveAvatarChoice };
 }
