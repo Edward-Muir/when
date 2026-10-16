@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { X } from 'lucide-react';
 import Modal from './ui/Modal';
 import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
@@ -83,7 +84,22 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
     <Modal
       open={open}
       onDismiss={dismiss}
-      header={editsName ? 'Profile' : 'Your Avatar'}
+      labelledBy="avatar-picker-title"
+      header={
+        <div className="flex items-center justify-between">
+          <h2 id="avatar-picker-title" className="text-lg font-display font-semibold text-text">
+            {editsName ? 'Profile' : 'Your Avatar'}
+          </h2>
+          <button
+            type="button"
+            onClick={dismiss}
+            className="p-1 rounded-lg hover:bg-border transition-colors"
+            aria-label="Close"
+          >
+            <X className="w-5 h-5 text-text-muted" />
+          </button>
+        </div>
+      }
       size="wide"
       layer="reveal"
       scroll="body"

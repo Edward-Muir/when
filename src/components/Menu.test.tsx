@@ -117,6 +117,15 @@ describe('Menu', () => {
       expect(localStorage.getItem('when-display-name')).toBe('Ed');
     });
 
+    it('saves a name still being typed when the close button is pressed', async () => {
+      const { input } = await openProfile();
+      await userEvent.clear(input);
+      await userEvent.type(input, 'Ed');
+      await userEvent.click(screen.getByRole('button', { name: 'Close' }));
+
+      expect(localStorage.getItem('when-display-name')).toBe('Ed');
+    });
+
     it('keeps the old name when the field is left blank', async () => {
       const { input } = await openProfile();
       await userEvent.clear(input);
