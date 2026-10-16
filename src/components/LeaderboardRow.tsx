@@ -11,28 +11,16 @@ const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
 /**
  * Rank, portrait, name, score. The podium is marked by framing the top three portraits in
  * gold, silver and bronze rather than with medal emoji, so the rank is a plain number for
- * the rest and the portrait carries the honour. On the podium the frame replaces the number
- * outright, and the portraits step down gently in size from first place (`podiumStyle`).
+ * everyone and the portrait carries the honour. The podium's portraits also step down gently
+ * in size from first place (`podiumStyle`).
  */
 const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar }> = ({ entry, avatar }) => {
   const style = podiumStyle(entry.rank);
   return (
     <>
-      {style.podium ? (
-        // The rank number and the 44px tile below it span 80px (w-6 + gap-3 + w-11). The podium
-        // tile sits right-aligned in the same width, so every name starts on one line.
-        <div className="w-20 shrink-0 flex justify-end">
-          <span className="sr-only">Rank {entry.rank}</span>
-          <Portrait avatar={avatar} size={style.portrait} frame={getMedalColor(entry.rank)} />
-        </div>
-      ) : (
-        <>
-          <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">
-            {entry.rank}
-          </div>
-          <Portrait avatar={avatar} size={style.portrait} frame={getMedalColor(entry.rank)} />
-        </>
-      )}
+      <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{entry.rank}</div>
+
+      <Portrait avatar={avatar} size={style.portrait} frame={getMedalColor(entry.rank)} />
 
       <div className="flex-1 min-w-0">
         <div className={`font-medium text-text truncate font-body ${style.name}`}>

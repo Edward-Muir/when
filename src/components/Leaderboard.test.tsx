@@ -111,14 +111,6 @@ describe('Leaderboard', () => {
       expect(screen.queryByText('🥇')).toBeNull();
     });
 
-    it('drops the rank number on the podium but keeps it for screen readers', () => {
-      const entries = makeEntries(4).map((e) => ({ ...e, correctCount: 90 + e.rank }));
-      renderBoard({ entries });
-      expect(screen.getByText('Rank 1')).toHaveClass('sr-only');
-      expect(screen.queryByText('1', { exact: true })).toBeNull();
-      expect(screen.getByText('4', { exact: true })).toBeInTheDocument();
-    });
-
     it('steps the podium portraits down in size from first place', () => {
       renderBoard();
       const sizes = screen.getAllByTestId('portrait').map((p) => p.dataset.size);

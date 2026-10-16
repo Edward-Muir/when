@@ -33,22 +33,13 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
                 : `px-4 ${podium.pad} flex items-center gap-3`
             }
           >
-            {!compact && podium.podium ? (
-              // The podium has no rank number: its tile sits right-aligned in the same width.
-              <div className="w-20 shrink-0 flex justify-end">
-                <div className={`bg-border animate-pulse ${SIZE_CLASSES[podium.portrait]}`} />
-              </div>
-            ) : (
-              <>
-                {/* The rank number, then the portrait tile at the loaded row's size */}
-                <div
-                  className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
-                />
-                <div
-                  className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES[compact ? 'xs' : podium.portrait]}`}
-                />
-              </>
-            )}
+            {/* The rank number, then the portrait tile at the loaded row's size */}
+            <div
+              className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
+            />
+            <div
+              className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES[compact ? 'xs' : podium.portrait]}`}
+            />
             <div
               className={`bg-border rounded animate-pulse ${compact ? 'h-4' : 'h-5'}`}
               // The taper only reads as a list for the first few rows; past that a flat width
