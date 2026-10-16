@@ -78,10 +78,12 @@ portrait, and the top three portraits get a gold, silver or bronze frame (`getMe
 same. On the full board the podium also steps down gently in size so first place leads the
 eye: 60px, 52px and 48px portraits in slightly taller rows, then 44px for everyone else
 (`podiumStyle`, shared with the loading skeleton so the card does not jump when data lands).
-Every row keeps its rank number: dropping it on the podium was tried and read worse. Frame and
-size follow the podium _place_, not the rank: tied scores share the place of the first row with
-that score (`podiumPlaces`), so 11, 9, 7, 7, 7 is gold, silver and three bronzes, while the
-numbers still read 1 to 5.
+Every row keeps its number: dropping it on the podium was tried and read worse. Number, frame
+and size all follow the row's _place_, not the server's rank: tied scores share the place of the
+first row with that score (`podiumPlaces`, competition ranking), so 11, 9, 7, 7, 7, 5 reads 1, 2,
+3, 3, 3, 6 and is gold, silver and three bronzes. The game-over preview and the home "Longest
+Timelines" teaser number rows the same way. The share text and saved stats keep the server's
+rank: it only knows positions, not who is tied.
 
 **Every board portrait is painted at first place's scale.** A smaller tile does not shrink the
 painting; it crops it (`Portrait`'s `crop`, `podiumStyle`). First place shows the whole bust at

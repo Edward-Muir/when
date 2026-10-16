@@ -111,7 +111,7 @@ describe('Leaderboard', () => {
       expect(screen.queryByText('🥇')).toBeNull();
     });
 
-    it('frames and sizes tied scores alike, keeping their rank numbers', () => {
+    it('numbers, frames and sizes tied scores alike', () => {
       const scores = [11, 9, 7, 7, 7, 4];
       const entries = scores.map((correctCount, i) => ({
         displayName: `Player ${i + 1}`,
@@ -127,7 +127,11 @@ describe('Leaderboard', () => {
       expect(frames[2]).toBeTruthy();
       expect(frames[5]).toBeUndefined();
       expect(sizes).toEqual(['md3', 'md2', 'md1', 'md1', 'md1', 'md']);
-      expect(screen.getByText('5', { exact: true })).toBeInTheDocument();
+      // Competition ranking: the three tied on 7 are all third, and the next row is sixth.
+      expect(screen.getAllByText('3', { exact: true })).toHaveLength(3);
+      expect(screen.getByText('4', { exact: true })).toBeInTheDocument(); // the score, not a rank
+      expect(screen.queryByText('5', { exact: true })).toBeNull();
+      expect(screen.getByText('6', { exact: true })).toBeInTheDocument();
     });
 
     it('steps the podium portraits down in size from first place', () => {
@@ -186,8 +190,11 @@ describe('Leaderboard', () => {
         correctCount: 3,
         rank: 312,
       };
+      // Distinct scores, all above the player's: a real capped slice, so the player is not tied
+      // with anyone shown and keeps the server's rank.
+      const served = entries.map((e) => ({ ...e, correctCount: 100 - e.rank }));
       renderBoard({
-        entries,
+        entries: served,
         playerRank: playerBelowCut.rank,
         playerEntry: playerBelowCut,
         totalPlayers: 312,

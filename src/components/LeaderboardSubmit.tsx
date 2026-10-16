@@ -74,7 +74,7 @@ function LeaderboardPreview({
           key={entry.rank}
           className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-player-row' : ''}`}
         >
-          <span className="w-5 text-right text-xs text-text-muted font-mono">{entry.rank}</span>
+          <span className="w-5 text-right text-xs text-text-muted font-mono">{placeOf(entry)}</span>
           <PreviewPortrait entry={entry} own={playerRank === entry.rank} place={placeOf(entry)} />
           <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
           <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
@@ -85,7 +85,7 @@ function LeaderboardPreview({
           <div className="text-xs text-text-muted text-center py-1">...</div>
           <div className="flex items-center gap-2 text-sm px-2 py-1 rounded bg-player-row">
             <span className="w-5 text-right text-xs text-text-muted font-mono">
-              {playerRow.rank}
+              {placeOf(playerRow)}
             </span>
             <PreviewPortrait entry={playerRow} own place={placeOf(playerRow)} />
             <span className="flex-1 truncate font-body text-text">{playerRow.displayName}</span>

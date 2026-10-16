@@ -1,6 +1,6 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { resolvePlayerRow } from '../utils/leaderboardUtils';
+import { podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
 
 interface TodaysLongestProps {
   entries: LeaderboardEntry[];
@@ -49,6 +49,8 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
   const top3 = entries.slice(0, 3);
   const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
   const showYouRow = playerRow !== null && !inList;
+  // Tied scores share a number, as on the full board (`podiumPlaces`).
+  const placeOf = podiumPlaces(entries);
 
   return (
     <button
@@ -80,7 +82,12 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
               );
             }
             return entry ? (
-              <Row key={i} rank={entry.rank} name={entry.displayName} score={entry.correctCount} />
+              <Row
+                key={i}
+                rank={placeOf(entry)}
+                name={entry.displayName}
+                score={entry.correctCount}
+              />
             ) : (
               <div key={i} className="text-sm py-0.5">
                 <span className="invisible">&nbsp;</span>
@@ -91,12 +98,7 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
           {showYouRow && playerRow && (
             <>
               <div className="border-t border-border my-1" />
-              <Row
-                rank={playerRow.rank ?? playerRank ?? '—'}
-                name="You"
-                score={playerRow.correctCount}
-                highlight
-              />
+              <Row rank={placeOf(playerRow)} name="You" score={playerRow.correctCount} highlight />
             </>
           )}
         </div>

@@ -12,8 +12,8 @@ const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
  * Rank, portrait, name, score. The podium is marked by framing the top three portraits in
  * gold, silver and bronze rather than with medal emoji, so the rank is a plain number for
  * everyone and the portrait carries the honour. The podium's portraits also step down gently
- * in size from first place (`podiumStyle`). Both follow the row's podium place, not its rank,
- * so tied scores look alike (`podiumPlaces`).
+ * in size from first place (`podiumStyle`). The number, frame and size all follow the row's
+ * place, not the server's rank, so tied scores share all three (`podiumPlaces`).
  */
 const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar; place: number }> = ({
   entry,
@@ -23,7 +23,7 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar; place: numbe
   const style = podiumStyle(place);
   return (
     <>
-      <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{entry.rank}</div>
+      <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{place}</div>
 
       <Portrait
         avatar={avatar}
@@ -112,7 +112,7 @@ const StickyPlayerRow: React.FC<StickyPlayerRowProps> = ({
     ref={rowRef}
     type="button"
     onClick={onJump}
-    aria-label={`Your rank, ${entry.rank}. Scroll to your position.`}
+    aria-label={`Your rank, ${place}. Scroll to your position.`}
     className={`${ROW_LAYOUT} ${podiumStyle(place).pad} sticky top-0 bottom-0 z-10 bg-player-row border-y border-accent shadow-sm`}
   >
     <OwnRowCells entry={entry} place={place} />
