@@ -111,6 +111,21 @@ describe('Leaderboard', () => {
       expect(screen.queryByText('🥇')).toBeNull();
     });
 
+    it('drops the rank number on the podium but keeps it for screen readers', () => {
+      const entries = makeEntries(4).map((e) => ({ ...e, correctCount: 90 + e.rank }));
+      renderBoard({ entries });
+      expect(screen.getByText('Rank 1')).toHaveClass('sr-only');
+      expect(screen.queryByText('1', { exact: true })).toBeNull();
+      expect(screen.getByText('4', { exact: true })).toBeInTheDocument();
+    });
+
+    it('steps the podium portraits down in size from first place', () => {
+      renderBoard();
+      const sizes = screen.getAllByTestId('portrait').map((p) => p.dataset.size);
+      expect(sizes.slice(0, 4)).toEqual(['md3', 'md2', 'md1', 'md']);
+      expect(new Set(sizes.slice(3))).toEqual(new Set(['md']));
+    });
+
     it('shows the player’s current pick on their own row, not the one stored with the score', () => {
       localStorage.setItem('when-avatar', 'panda.roman');
       const entries: LeaderboardEntry[] = [

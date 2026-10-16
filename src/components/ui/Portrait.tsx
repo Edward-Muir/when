@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Avatar, getAnimal, getTheme, portraitArtUrl } from '../../utils/avatar';
 
-export type PortraitSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+export type PortraitSize = 'xs' | 'sm' | 'md' | 'md1' | 'md2' | 'md3' | 'lg' | 'xl';
 
 // Literal strings so Tailwind's JIT sees them. Box, corner and placeholder glyph per size.
-const SIZE_CLASSES: Record<PortraitSize, string> = {
+// Exported for LeaderboardSkeleton, whose loading tiles match the loaded ones.
+export const SIZE_CLASSES: Record<PortraitSize, string> = {
   xs: 'w-5 h-5 rounded-[3px] text-[11px]',
   sm: 'w-8 h-8 rounded text-lg',
   md: 'w-11 h-11 rounded-md text-2xl',
+  md1: 'w-12 h-12 rounded-md text-[26px]',
+  md2: 'w-[52px] h-[52px] rounded-md text-[28px]',
+  md3: 'w-[60px] h-[60px] rounded-lg text-[32px]',
   lg: 'w-[72px] h-[72px] rounded-lg text-4xl',
   xl: 'w-24 h-24 rounded-lg text-5xl',
 };
@@ -65,6 +69,7 @@ const Portrait: React.FC<PortraitProps> = ({
       aria-hidden={labelled ? undefined : true}
       data-testid="portrait"
       data-animal={avatar.animal}
+      data-size={size}
       data-frame={frame ?? undefined}
     >
       {showArt ? (

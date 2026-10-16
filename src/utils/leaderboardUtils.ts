@@ -1,3 +1,4 @@
+import type { PortraitSize } from '../components/ui/Portrait';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 
 /**
@@ -47,4 +48,36 @@ export function resolvePlayerRow(
   const inList = rank !== null && entries.some((entry) => entry.rank === rank);
 
   return { row: playerEntry, inList };
+}
+
+export interface PodiumStyle {
+  portrait: PortraitSize;
+  /** Vertical padding: the podium rows are a little taller. */
+  pad: string;
+  /** The podium drops the rank number: the framed portrait takes its place. */
+  podium: boolean;
+  name: string;
+  score: string;
+}
+
+// Literal strings so Tailwind's JIT sees them. Used by LeaderboardRow, and by LeaderboardSkeleton
+// so the loading rows are the height the loaded ones will be.
+// The steps are deliberately gentle (60, 52, 48, then 44px): enough to lead the eye to first
+// place without the podium shouting over the rest of the board.
+const PODIUM: readonly PodiumStyle[] = [
+  { portrait: 'md3', pad: 'py-2.5', podium: true, name: 'font-semibold', score: 'text-2xl' },
+  { portrait: 'md2', pad: 'py-2.5', podium: true, name: '', score: 'text-xl' },
+  { portrait: 'md1', pad: 'py-2', podium: true, name: '', score: 'text-xl' },
+];
+const FIELD: PodiumStyle = {
+  portrait: 'md',
+  pad: 'py-2',
+  podium: false,
+  name: '',
+  score: 'text-lg',
+};
+
+/** First place is the largest, then second, then third; everyone else shares one size. */
+export function podiumStyle(rank: number): PodiumStyle {
+  return (rank >= 1 ? PODIUM.at(rank - 1) : undefined) ?? FIELD;
 }

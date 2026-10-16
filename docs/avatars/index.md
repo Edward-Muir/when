@@ -72,11 +72,15 @@ WebViews draw them as two glyphs.
 **The podium is a frame, not a medal.** Leaderboard rows show a plain rank number beside the
 portrait, and the top three portraits get a gold, silver or bronze frame (`getMedalColor` in
 `leaderboardUtils.ts`) in place of the old medal emoji column. The game-over preview does the
-same.
+same. On the full board the podium's framed portrait replaces its rank number (kept for screen
+readers), and the podium steps down gently in size so first place leads the eye: 60px, 52px and
+48px portraits in slightly taller rows, then 44px for everyone else (`podiumStyle`, shared with
+the loading skeleton so the card does not jump when data lands).
 
 **The two preview portraits are final art.** Platypus and goldfish live in
 `public/avatars/preview/` and `portraitArtUrl` serves them for every animal, the other 58
-borrowing one by hash, so the look can be judged in the app. They have no row in the prompts
+borrowing one by hash, so the look can be judged in the app. A third, `cat.webp` (a 1920s
+flapper), is in the borrowing pool for testing only: the cat is not one of the 60 animals. They have no row in the prompts
 CSV: upload them to Cloudinary with the rest, then remove `PREVIEW_ART` and the folder.
 
 **The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
@@ -139,7 +143,8 @@ and re-run; progress columns carry over by id.
 ### It must work very small
 
 Portraits mostly show at **20–44px** (the game-over preview at 20px; leaderboard rows, the
-menu icon and the picker grid at 44px) and at most 96px (the picker's preview). Every portrait
+menu icon and the picker grid at 44px), 48–60px on the board's podium, and at most 96px (the
+picker's preview). Every portrait
 prompt must ask for:
 
 - a large head filling most of the frame, in a tight bust crop;
