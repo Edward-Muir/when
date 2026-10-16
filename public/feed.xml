@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 16 Oct 2026 11:40:56 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 16:01:16 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.35.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.35.0</guid>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Profile page with an editable leaderboard name (<a href="https://github.com/Edward-Muir/when/issues/83">#83</a>) (<a href="https://github.com/Edward-Muir/when/commit/9544415c1d670721e3b96e377dabbb08326003a6">9544415</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.34.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.29.0</guid>
       <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/>- resume an unfinished daily instead of dealing it again (<a href="https://github.com/Edward-Muir/when/issues/66">#66</a>) (<a href="https://github.com/Edward-Muir/when/commit/40f18922de7238da2005ef8ec77a5996fdf6d394">40f1892</a>)]]></description>
-    </item>
-    <item>
-      <title>When? v1.28.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.28.0</guid>
-      <pubDate>Tue, 29 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/>- 414 curated theme events with images and colours (<a href="https://github.com/Edward-Muir/when/issues/65">#65</a>) (<a href="https://github.com/Edward-Muir/when/commit/5aaae0d00ea1f67dc4f225432193dd6ade7224d8">5aaae0d</a>)]]></description>
     </item>
   </channel>
 </rss>

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.35.0](https://github.com/Edward-Muir/when/compare/v1.34.0...v1.35.0) (2026-10-16)
+
+
+### Features
+
+* Profile page with an editable leaderboard name ([#83](https://github.com/Edward-Muir/when/issues/83)) ([9544415](https://github.com/Edward-Muir/when/commit/9544415c1d670721e3b96e377dabbb08326003a6))
+
 ## [1.34.0](https://github.com/Edward-Muir/when/compare/v1.33.2...v1.34.0) (2026-10-16)
 
 
