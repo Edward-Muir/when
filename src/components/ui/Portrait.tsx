@@ -35,8 +35,18 @@ interface PortraitProps {
   labelled?: boolean;
   /** A heavier frame in this colour: the leaderboard's podium (`getMedalColor`). */
   frame?: string | null;
+  /**
+   * Zoom the art by this factor, so a tile drawn smaller than its neighbours shows less of the
+   * painting rather than a shrunken whole figure. The leaderboard draws every portrait at first
+   * place's scale this way (`podiumStyle`).
+   */
+  crop?: number;
   className?: string;
 }
+
+// Where the zoom is anchored: centred across, a little above centre down, because every
+// portrait is a bust whose head sits in the upper half. A crop keeps the face, not the chest.
+const CROP_ORIGIN = '50% 30%';
 
 /**
  * The player's animal on a square paper tile, after Wingspan's portrait cards, faintly tinted
@@ -50,6 +60,7 @@ const Portrait: React.FC<PortraitProps> = ({
   size,
   labelled = false,
   frame = null,
+  crop = 1,
   className = '',
 }) => {
   const animal = getAnimal(avatar.animal);
@@ -80,6 +91,9 @@ const Portrait: React.FC<PortraitProps> = ({
           decoding="async"
           draggable={false}
           className="absolute inset-0 w-full h-full object-cover"
+          style={
+            crop > 1 ? { transform: `scale(${crop})`, transformOrigin: CROP_ORIGIN } : undefined
+          }
           onError={() => {
             failedArt.add(art);
             setFailed((n) => n + 1);

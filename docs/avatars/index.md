@@ -80,6 +80,13 @@ size follow the podium _place_, not the rank: tied scores share the place of the
 that score (`podiumPlaces`), so 11, 9, 7, 7, 7 is gold, silver and three bronzes, while the
 numbers still read 1 to 5.
 
+**Every board portrait is painted at first place's scale.** A smaller tile does not shrink the
+painting; it crops it (`Portrait`'s `crop`, `podiumStyle`). First place shows the whole bust at
+60px, and each smaller tile shows the middle of the same 60px painting, anchored a little above
+centre (`50% 30%`) so the head stays in frame. So the 44px rows read as head-and-shoulders
+rather than a tiny whole figure, and first place shows more of the scene instead of looking out
+of scale.
+
 **The two preview portraits are final art.** Platypus and goldfish live in
 `public/avatars/preview/` and `portraitArtUrl` serves them for every animal, the other 58
 borrowing one by hash, so the look can be judged in the app. A third, `cat.webp` (a 1920s

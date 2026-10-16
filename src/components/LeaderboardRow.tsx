@@ -25,7 +25,12 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar; place: numbe
     <>
       <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{entry.rank}</div>
 
-      <Portrait avatar={avatar} size={style.portrait} frame={getMedalColor(place)} />
+      <Portrait
+        avatar={avatar}
+        size={style.portrait}
+        frame={getMedalColor(place)}
+        crop={style.crop}
+      />
 
       <div className="flex-1 min-w-0">
         <div className={`font-medium text-text truncate font-body ${style.name}`}>

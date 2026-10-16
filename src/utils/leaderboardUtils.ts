@@ -71,18 +71,33 @@ export interface PodiumStyle {
   pad: string;
   name: string;
   score: string;
+  /**
+   * How far to zoom the art (`Portrait`'s `crop`). Every row draws its painting at first
+   * place's 60px scale and crops it to its own tile, so smaller tiles show a tighter
+   * head-and-shoulders view instead of a tiny whole figure, and first place shows the most.
+   */
+  crop: number;
 }
 
 // Literal strings so Tailwind's JIT sees them. Used by LeaderboardRow, and by LeaderboardSkeleton
 // so the loading rows are the height the loaded ones will be.
 // The steps are deliberately gentle (60, 52, 48, then 44px): enough to lead the eye to first
 // place without the podium shouting over the rest of the board.
+// First place's tile; every other tile crops the art drawn at this size.
+const FIRST_PX = 60;
+
 const PODIUM: readonly PodiumStyle[] = [
-  { portrait: 'md3', pad: 'py-2.5', name: 'font-semibold', score: 'text-2xl' },
-  { portrait: 'md2', pad: 'py-2.5', name: '', score: 'text-xl' },
-  { portrait: 'md1', pad: 'py-2', name: '', score: 'text-xl' },
+  { portrait: 'md3', pad: 'py-2.5', name: 'font-semibold', score: 'text-2xl', crop: 1 },
+  { portrait: 'md2', pad: 'py-2.5', name: '', score: 'text-xl', crop: FIRST_PX / 52 },
+  { portrait: 'md1', pad: 'py-2', name: '', score: 'text-xl', crop: FIRST_PX / 48 },
 ];
-const FIELD: PodiumStyle = { portrait: 'md', pad: 'py-2', name: '', score: 'text-lg' };
+const FIELD: PodiumStyle = {
+  portrait: 'md',
+  pad: 'py-2',
+  name: '',
+  score: 'text-lg',
+  crop: FIRST_PX / 44,
+};
 
 /** First place is the largest, then second, then third; everyone else shares one size. */
 export function podiumStyle(rank: number): PodiumStyle {

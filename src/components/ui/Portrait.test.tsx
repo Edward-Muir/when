@@ -14,4 +14,17 @@ describe('Portrait', () => {
     expect(img).toHaveAttribute('loading', 'lazy');
     expect(img).toHaveAttribute('decoding', 'async');
   });
+
+  it('zooms the art about the face when cropped, and not otherwise', () => {
+    const { rerender } = render(
+      <Portrait avatar={{ animal: 'goldfish', theme: 'mariner' }} size="md" labelled crop={1.5} />
+    );
+    expect(screen.getByRole('presentation')).toHaveStyle({
+      transform: 'scale(1.5)',
+      transformOrigin: '50% 30%',
+    });
+
+    rerender(<Portrait avatar={{ animal: 'goldfish', theme: 'mariner' }} size="md" labelled />);
+    expect(screen.getByRole('presentation').style.transform).toBe('');
+  });
 });
