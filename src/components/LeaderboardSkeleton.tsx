@@ -1,6 +1,6 @@
 import React from 'react';
 import { SIZE_CLASSES } from './ui/Portrait';
-import { podiumStyle } from '../utils/leaderboardUtils';
+import { podiumStyle, PORTRAIT_SLOT } from '../utils/leaderboardUtils';
 
 interface LeaderboardSkeletonProps {
   rows: number;
@@ -37,9 +37,13 @@ const LeaderboardSkeleton: React.FC<LeaderboardSkeletonProps> = ({ rows, variant
             <div
               className={`bg-border rounded animate-pulse shrink-0 ${compact ? 'w-5 h-4' : 'w-6 h-5'}`}
             />
-            <div
-              className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES[compact ? 'xs' : podium.portrait]}`}
-            />
+            {compact ? (
+              <div className={`bg-border animate-pulse shrink-0 ${SIZE_CLASSES.xs}`} />
+            ) : (
+              <div className={PORTRAIT_SLOT}>
+                <div className={`bg-border animate-pulse ${SIZE_CLASSES[podium.portrait]}`} />
+              </div>
+            )}
             <div
               className={`bg-border rounded animate-pulse ${compact ? 'h-4' : 'h-5'}`}
               // The taper only reads as a list for the first few rows; past that a flat width

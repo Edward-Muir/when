@@ -86,6 +86,12 @@ export interface PodiumStyle {
 // First place's tile; every other tile crops the art drawn at this size.
 const FIRST_PX = 60;
 
+/**
+ * Every row's portrait sits centred in a slot as wide as first place's tile, so all the names
+ * start on one line however the portraits step down. A literal string for Tailwind's JIT.
+ */
+export const PORTRAIT_SLOT = 'w-[60px] shrink-0 flex justify-center';
+
 const PODIUM: readonly PodiumStyle[] = [
   { portrait: 'md3', pad: 'py-2.5', name: 'font-semibold', score: 'text-2xl', crop: 1 },
   { portrait: 'md2', pad: 'py-2.5', name: '', score: 'text-xl', crop: FIRST_PX / 52 },

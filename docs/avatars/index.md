@@ -90,7 +90,8 @@ painting; it crops it (`Portrait`'s `crop`, `podiumStyle`). First place shows th
 60px, and each smaller tile shows the middle of the same 60px painting, anchored a little above
 centre (`50% 30%`) so the head stays in frame. So the 44px rows read as head-and-shoulders
 rather than a tiny whole figure, and first place shows more of the scene instead of looking out
-of scale.
+of scale. Each portrait sits centred in a slot as wide as first place's tile (`PORTRAIT_SLOT`), so every
+name starts on the same line as the top one.
 
 **The picker fits the visible screen.** It is capped at 80% of `--vh` (`1dvh` where
 supported), not `vh`, which on iOS browsers is the viewport with the toolbars hidden: a 90vh card

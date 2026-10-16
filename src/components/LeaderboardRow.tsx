@@ -1,7 +1,7 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
-import { getMedalColor, podiumStyle } from '../utils/leaderboardUtils';
+import { getMedalColor, podiumStyle, PORTRAIT_SLOT } from '../utils/leaderboardUtils';
 import { Avatar, resolveAvatar } from '../utils/avatar';
 import Portrait from './ui/Portrait';
 
@@ -25,12 +25,14 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; avatar: Avatar; place: numbe
     <>
       <div className="w-6 text-right shrink-0 text-sm text-text-muted font-mono">{place}</div>
 
-      <Portrait
-        avatar={avatar}
-        size={style.portrait}
-        frame={getMedalColor(place)}
-        crop={style.crop}
-      />
+      <div className={PORTRAIT_SLOT}>
+        <Portrait
+          avatar={avatar}
+          size={style.portrait}
+          frame={getMedalColor(place)}
+          crop={style.crop}
+        />
+      </div>
 
       <div className="flex-1 min-w-0">
         <div className={`font-medium text-text truncate font-body ${style.name}`}>
