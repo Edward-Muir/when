@@ -49,15 +49,11 @@ const DailyPanel: React.FC<DailyPanelProps> = ({
       </p>
     </div>
 
-    {/* `flex-1` takes the spare height, and `min-h-min` stops the card shrinking below its
-        image's 180px floor plus the band and the Play button. Its `overflow-hidden` zeroes the
-        usual automatic minimum, so without this a short phone clipped the Play button away.
-        There the panel scrolls instead (ModePager's panels are `overflow-y-auto`). */}
     <DailyDeckPreview
       event={previewEvent}
       themeName={themeName}
       cta={cta}
-      className="flex-1 min-h-min"
+      className="flex-1 min-h-0"
       onInfoClick={onReadMore}
     />
 

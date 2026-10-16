@@ -2,8 +2,8 @@
 
 Every player has a **portrait**: an animal painted on a small square tile. An avatar is just the
 animal's id (`"platypus"`). It is a deliberately quiet touch. It shows on leaderboard
-rows, on the Daily tab's "Longest Timelines" teaser, beside the name box when a daily score is
-submitted, and as the icon of the menu's "Your Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
+rows, beside the name box when a daily score is submitted, and as the icon of the menu's "Your
+Avatar" row, which opens the picker. There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
 All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)).
@@ -80,11 +80,7 @@ Every row keeps its number: dropping it on the podium was tried and read worse. 
 and size all follow the row's _place_, not the server's rank: tied scores share the place of the
 first row with that score (`podiumPlaces`, competition ranking), so 11, 9, 7, 7, 7, 5 reads 1, 2,
 3, 3, 3, 6 and is gold, silver and three bronzes. The game-over preview and the home "Longest
-Timelines" teaser number and frame rows the same way. The teaser does not step its sizes: every
-tile is the field's 44px (`FIELD_PORTRAIT`), cropped like the board's rows below the podium, so
-its frames carry the podium on their own. The 44px rows cost the hero card above about 90px.
-On a phone around 667px tall that used to clip the card's Play button away, so the card now has
-a content floor (`min-h-min` in `DailyPanel.tsx`) and the Daily panel scrolls instead. The share text and saved stats keep the server's
+Timelines" teaser number rows the same way. The share text and saved stats keep the server's
 rank: it only knows positions, not who is tied.
 
 **Every board portrait is painted at first place's scale.** A smaller tile does not shrink the
@@ -156,7 +152,7 @@ and re-run; progress columns carry over by id.
 ### It must work very small
 
 Portraits mostly show at **20–44px** (the game-over preview at 20px; leaderboard rows, the
-home teaser, the menu icon and the picker grid at 44px), 48–60px on the board's podium, and at most 96px (the
+menu icon and the picker grid at 44px), 48–60px on the board's podium, and at most 96px (the
 picker's preview). Every portrait
 prompt must ask for:
 

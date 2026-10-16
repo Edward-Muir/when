@@ -30,9 +30,7 @@ const PODIUM: readonly PodiumStyle[] = [
   { portrait: 52, pad: 'py-2.5', name: '', score: 'text-xl' },
   { portrait: 48, pad: 'py-2', name: '', score: 'text-xl' },
 ];
-/** Everyone below the podium. The home teaser draws all of its tiles at this size too. */
-export const FIELD_PORTRAIT: PortraitSize = 44;
-const FIELD: PodiumStyle = { portrait: FIELD_PORTRAIT, pad: 'py-2', name: '', score: 'text-lg' };
+const FIELD: PodiumStyle = { portrait: 44, pad: 'py-2', name: '', score: 'text-lg' };
 
 /** First place is the largest, then second, then third; everyone else shares one size. */
 export function podiumStyle(place: number): PodiumStyle {
