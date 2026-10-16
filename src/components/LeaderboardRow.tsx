@@ -5,6 +5,7 @@ import { resolveAvatar } from '../utils/avatar';
 import { PAINTED_AT, podiumStyle, PORTRAIT_SLOT } from './leaderboardLayout';
 import Portrait from './ui/Portrait';
 import OwnPortrait from './ui/OwnPortrait';
+import OwnName from './ui/OwnName';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
 const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
@@ -16,7 +17,8 @@ const ROW_LAYOUT = 'w-full px-4 flex items-center gap-3 text-left';
  * in size from first place (`podiumStyle`). The number, frame and size all follow the row's
  * place, not the server's rank, so tied scores share all three (`podiumPlaces`).
  *
- * `own` rows show the player's current pick (`OwnPortrait`), not the one stored with the score.
+ * `own` rows show the player's current pick and name (`OwnPortrait`, `OwnName`), not the ones
+ * stored with the score.
  */
 const RowCells: React.FC<{ entry: LeaderboardEntry; place: number; own: boolean }> = ({
   entry,
@@ -39,7 +41,7 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; place: number; own: boolean 
 
       <div className="flex-1 min-w-0">
         <div className={`font-medium text-text truncate font-body ${style.name}`}>
-          {entry.displayName}
+          {own ? <OwnName /> : entry.displayName}
         </div>
       </div>
 
@@ -55,7 +57,7 @@ const RowCells: React.FC<{ entry: LeaderboardEntry; place: number; own: boolean 
 interface LeaderboardRowProps {
   entry: LeaderboardEntry;
   /**
-   * The player's own row: their live avatar, and the highlight (opaque by design — see
+   * The player's own row: their live avatar and name, and the highlight (opaque by design — see
    * `.bg-player-row` in index.css).
    */
   highlight?: boolean;

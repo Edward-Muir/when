@@ -127,6 +127,13 @@ describe('display name and avatar storage', () => {
     expect(getOrCreateDisplayName()).toBe('Ada');
   });
 
+  it('trims a saved name, and a blank one keeps the name already saved', () => {
+    saveDisplayName('  Ada  ');
+    expect(getDisplayName()).toBe('Ada');
+    saveDisplayName('   ');
+    expect(getDisplayName()).toBe('Ada');
+  });
+
   it('round-trips the avatar pick', () => {
     expect(getAvatarChoice()).toBeNull();
     saveAvatarChoice('platypus');

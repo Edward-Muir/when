@@ -2,13 +2,13 @@ import { useCallback, useEffect, useState } from 'react';
 import { useLeaderboard, LeaderboardEntry } from './useLeaderboard';
 import {
   DailyResult,
-  getOrCreateDisplayName,
   saveDisplayName,
   hasSubmittedToLeaderboard,
   markLeaderboardSubmitted,
   updateDailyResultWithLeaderboard,
 } from '../utils/playerStorage';
 import { patchDailyRank } from '../utils/gameHistory';
+import { usePlayerProfile } from './usePlayerProfile';
 
 export interface DailyLeaderboard {
   entries: LeaderboardEntry[];
@@ -100,7 +100,8 @@ export function useDailyLeaderboard(
     fetchLeaderboard,
   } = useLeaderboard();
 
-  const [suggestedName] = useState(getOrCreateDisplayName);
+  // Live, so a rename in Profile prefills the submit form even while this hook stays mounted.
+  const { name: suggestedName } = usePlayerProfile();
 
   // Seeded from localStorage so a returning player never sees the submit form flash before the
   // server confirms what we already know.

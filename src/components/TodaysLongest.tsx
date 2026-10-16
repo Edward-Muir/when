@@ -1,6 +1,7 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
+import OwnName from './ui/OwnName';
 
 interface TodaysLongestProps {
   entries: LeaderboardEntry[];
@@ -12,7 +13,7 @@ interface TodaysLongestProps {
 
 const Row: React.FC<{
   rank: number | string;
-  name: string;
+  name: React.ReactNode;
   score: number;
   highlight?: boolean;
 }> = ({ rank, name, score, highlight = false }) => (
@@ -85,7 +86,8 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
               <Row
                 key={i}
                 rank={placeOf(entry)}
-                name={entry.displayName}
+                // The player's own row shows their live name, as on the full board.
+                name={entry.rank === playerRank ? <OwnName /> : entry.displayName}
                 score={entry.correctCount}
               />
             ) : (

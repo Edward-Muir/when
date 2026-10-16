@@ -6,6 +6,7 @@ import { getMedalColor, podiumPlaces, resolvePlayerRow } from '../utils/leaderbo
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import Portrait from './ui/Portrait';
 import OwnPortrait from './ui/OwnPortrait';
+import OwnName from './ui/OwnName';
 import AvatarPickerModal from './AvatarPickerModal';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
 import { avatarForName, resolveAvatar } from '../utils/avatar';
@@ -24,7 +25,7 @@ function PreviewHeader() {
 /**
  * One preview row: place, portrait, name, score. The podium is framed in gold, silver and bronze,
  * as on the full board (LeaderboardRow), and tied scores share a place (`podiumPlaces`). The
- * player's own row is highlighted and shows their current avatar.
+ * player's own row is highlighted and shows their current avatar and name.
  */
 function PreviewRow({
   entry,
@@ -46,7 +47,9 @@ function PreviewRow({
       ) : (
         <Portrait animal={resolveAvatar(entry)} size={20} frame={frame} />
       )}
-      <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
+      <span className="flex-1 truncate font-body text-text">
+        {own ? <OwnName /> : entry.displayName}
+      </span>
       <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
     </div>
   );
@@ -106,6 +109,12 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
   leaderboard,
 }) => {
   const [name, setName] = useState(leaderboard.suggestedName);
+  // Follow a rename made in Profile while this form is mounted (the board modal keeps it so).
+  const [seededFrom, setSeededFrom] = useState(leaderboard.suggestedName);
+  if (leaderboard.suggestedName !== seededFrom) {
+    setSeededFrom(leaderboard.suggestedName);
+    setName(leaderboard.suggestedName);
+  }
   const [pickerOpen, setPickerOpen] = useState(false);
   const profile = usePlayerProfile();
   // A picked avatar wins; otherwise it follows the name as it is typed, so the player sees

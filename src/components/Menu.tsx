@@ -83,7 +83,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
-  const [showAvatarPicker, setShowAvatarPicker] = React.useState(false);
+  const [showProfile, setShowProfile] = React.useState(false);
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native app (redundant) and not on Android/desktop (the menu links only the App Store).
@@ -108,8 +108,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
     setShowRulesModal(true);
   };
 
-  const handleAvatar = () => {
-    setShowAvatarPicker(true);
+  const handleProfile = () => {
+    setShowProfile(true);
   };
 
   // No confirm and no confirmation text: nothing is lost, the hints just come back. Closing
@@ -172,12 +172,12 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
               {/* Menu Items */}
               <div className="py-2 flex-1">
                 {/* The player's own portrait stands in for the icon: the one quiet place they
-                    see what they look like on the board, and the way to change it. The same 44px
-                    tile as the leaderboard, with the row's padding trimmed so it is not twice the
-                    height of its neighbours. */}
-                <button onClick={handleAvatar} className={`${menuItemClass} !py-2`}>
+                    see what they look like on the board, and the way to change it and their
+                    name. The same 44px tile as the leaderboard, with the row's padding trimmed
+                    so it is not twice the height of its neighbours. */}
+                <button onClick={handleProfile} className={`${menuItemClass} !py-2`}>
                   <OwnPortrait size={44} />
-                  <span className="font-body">Your Avatar</span>
+                  <span className="font-body">Profile</span>
                 </button>
 
                 {/* Theme toggle — kept open so the user sees the switch and can toggle back. */}
@@ -287,8 +287,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
       {/* How to Play. Above the drawer (reveal layer) so it opens over the open menu. */}
       <HowToPlayModal open={showRulesModal} onDismiss={() => setShowRulesModal(false)} />
 
-      {/* Avatar picker. Reveal layer too, so it opens over the drawer. */}
-      <AvatarPickerModal open={showAvatarPicker} onDismiss={() => setShowAvatarPicker(false)} />
+      {/* Profile: name and avatar. Reveal layer too, so it opens over the drawer. */}
+      <AvatarPickerModal open={showProfile} onDismiss={() => setShowProfile(false)} />
     </>
   );
 };
