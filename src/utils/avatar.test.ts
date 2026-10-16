@@ -10,6 +10,7 @@ import {
   generateRandomName,
   getTheme,
   parseAvatar,
+  portraitArtUrl,
   resolveAvatar,
 } from './avatar';
 import data from '../data/avatars.json';
@@ -18,8 +19,8 @@ const animalIds = AVATAR_ANIMALS.map((a) => a.id);
 const themeIds = AVATAR_THEMES.map((t) => t.id);
 
 describe('the avatar lists', () => {
-  it('has 60 unique animals and 20 unique themes', () => {
-    expect(new Set(animalIds).size).toBe(60);
+  it('has 62 unique animals and 20 unique themes', () => {
+    expect(new Set(animalIds).size).toBe(62);
     expect(new Set(themeIds).size).toBe(20);
   });
 
@@ -124,5 +125,20 @@ describe('sanitizeAvatar (server)', () => {
     expect(sanitizeAvatar('a'.repeat(25) + '.b')).toBeUndefined();
     expect(sanitizeAvatar(7)).toBeUndefined();
     expect(sanitizeAvatar(undefined)).toBeUndefined();
+  });
+});
+
+describe('portraitArtUrl', () => {
+  // Every animal was uploaded to Cloudinary as avatars/<id>; the URL is built, not stored.
+  it('serves every animal from Cloudinary through the square thumbnail rung', () => {
+    for (const id of animalIds) {
+      expect(portraitArtUrl(id)).toBe(
+        `https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_400/avatars/${id}`
+      );
+    }
+  });
+
+  it('returns null for an id that is not in the list', () => {
+    expect(portraitArtUrl('unicorn')).toBeNull();
   });
 });

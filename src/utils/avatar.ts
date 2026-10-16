@@ -7,11 +7,12 @@
  * Everyone else on the board — bots, legacy entries, names the filter replaced, free-typed
  * names — resolves from the name alone, client-side. See docs/avatars/index.md.
  *
- * The art does not exist yet: `portraitArtUrl` is the one seam it plugs into, and until it
- * returns a URL every surface draws a placeholder.
+ * `portraitArtUrl` is the one seam the art plugs into; where it returns null, a surface draws
+ * a placeholder.
  */
 import { uniqueNamesGenerator, adjectives } from 'unique-names-generator';
 import data from '../data/avatars.json';
+import { getImageUrl } from './cloudinaryImage';
 
 export interface AvatarAnimal {
   id: string;
@@ -109,18 +110,20 @@ export function resolveAvatar(entry: { displayName: string; avatar?: string }): 
 }
 
 /**
- * TEMPORARY PREVIEW, not the delivery path. Finished portraits are served from
- * public/avatars/preview/ so the look can be judged in the app before the full set exists; every
- * other animal borrows one of them, picked by a stable hash. Platypus and goldfish are final art.
- * The cat is test-only: it is not one of the 60 animals, so it is only ever borrowed. Replace with the
- * Cloudinary URLs when the 60 portraits are made (docs/avatars/index.md, Still to do).
+ * Every animal's portrait is uploaded to Cloudinary at `avatars/<animal id>` (the uploader's
+ * `--avatars` mode in ../when-images), so the URL is built from the id rather than stored.
  */
-const PREVIEW_ART = ['platypus', 'goldfish', 'cat'] as const;
+const PORTRAIT_BASE = 'https://res.cloudinary.com/dscb8inz1/image/upload/avatars/';
 
-/** Portrait art for an animal, or null while it only has a placeholder. */
+/**
+ * Portrait art for an animal, or null for an id that is not in the list. Delivered through the
+ * existing square `thumbnail` rung rather than a portrait-sized one: a third rung would mint new
+ * derived assets and another string to allow-list (docs/cloudinary-cost-controls.md), and 400px
+ * covers the largest tile (the picker's 96px preview) at DPR 3.
+ */
 export function portraitArtUrl(animal: string): string | null {
-  const own = PREVIEW_ART.find((id) => id === animal);
-  return `/avatars/preview/${own ?? pick(PREVIEW_ART, `art:${animal}`)}.webp`;
+  if (!ANIMALS_BY_ID.has(animal)) return null;
+  return getImageUrl(`${PORTRAIT_BASE}${animal}`, 'thumbnail') ?? null;
 }
 
 /**

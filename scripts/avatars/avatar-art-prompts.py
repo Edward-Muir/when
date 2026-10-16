@@ -44,10 +44,12 @@ DEFAULT_OUT = os.path.join(BASE_DIR, "docs", "avatars", "art", "avatar_prompts.c
 
 COLUMNS = ["event_name", "research_prompt", "image_prompt", "image_generated", "saved_filename"]
 
-# The art that already exists and is final.
-SKIPPED = {"platypus", "goldfish"}
+# The art that already exists and is final: the two previews, and a dog made outside the CSV.
+SKIPPED = {"platypus", "goldfish", "dog"}
 
 FIELDS = ["role", "persona", "feature", "expression", "costume", "prop", "light", "research_focus"]
+# Optional: how the prompt names the animal when the label is too plain ("Burmilla cat" for Cat).
+OPTIONAL_FIELDS = ["animal"]
 
 SKELETON = (
     "A dramatic chiaroscuro oil painting in the manner of an Old Master {role} portrait. "
@@ -117,7 +119,11 @@ def check(animals, personas):
             hit = BANNED.search(value)
             if hit:
                 errors.append(f"{animal_id}.{field}: banned word {hit.group(0)!r} in {value!r}")
-        extra = set(persona) - set(FIELDS)
+        for field in OPTIONAL_FIELDS:
+            value = persona.get(field)
+            if value is not None and (not isinstance(value, str) or BANNED.search(value)):
+                errors.append(f"{animal_id}.{field}: must be a plain string, got {value!r}")
+        extra = set(persona) - set(FIELDS) - set(OPTIONAL_FIELDS)
         if extra:
             errors.append(f"{animal_id}: unexpected fields {sorted(extra)}")
     return errors
@@ -151,7 +157,7 @@ def main():
         if animal_id in SKIPPED:
             continue
         p = {k: v.strip() for k, v in personas[animal_id].items()}
-        name = animal["label"].lower()
+        name = p.pop("animal", None) or animal["label"].lower()
         done = progress.get(animal_id, {})
         rows.append(
             {
