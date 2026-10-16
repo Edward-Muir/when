@@ -1,6 +1,10 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
+import { getMedalColor, podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
+import { resolveAvatar } from '../utils/avatar';
+import { FIELD_PORTRAIT, PAINTED_AT } from './leaderboardLayout';
+import Portrait, { SIZE_CLASSES } from './ui/Portrait';
+import OwnPortrait from './ui/OwnPortrait';
 
 interface TodaysLongestProps {
   entries: LeaderboardEntry[];
@@ -10,30 +14,47 @@ interface TodaysLongestProps {
   onOpenFull: () => void;
 }
 
+/**
+ * Place, portrait, name, score. Every tile is the full board's field size, cropped close the
+ * same way (painted at first place's size), with the podium framed in gold, silver and bronze;
+ * tied scores share a place and so a frame (`podiumPlaces`). `own` rows show the player's
+ * current pick, as on the board.
+ */
 const Row: React.FC<{
-  rank: number | string;
-  name: string;
-  score: number;
+  entry: LeaderboardEntry;
+  place: number;
+  own: boolean;
+  name?: string;
   highlight?: boolean;
-}> = ({ rank, name, score, highlight = false }) => (
-  <div className={`flex items-center gap-2 text-sm py-0.5 ${highlight ? 'text-accent' : ''}`}>
-    <span
-      className={`w-6 text-center flex-shrink-0 font-body ${
-        highlight ? 'text-accent font-semibold' : 'text-text-muted'
-      }`}
-    >
-      {rank}
-    </span>
-    <span
-      className={`flex-1 text-left truncate font-body ${
-        highlight ? 'text-accent font-semibold' : 'text-text'
-      }`}
-    >
-      {name}
-    </span>
-    <span className="font-body text-accent font-semibold flex-shrink-0">{score}</span>
-  </div>
-);
+}> = ({ entry, place, own, name = entry.displayName, highlight = false }) => {
+  const portrait = { size: FIELD_PORTRAIT, frame: getMedalColor(place), paintedAt: PAINTED_AT };
+  return (
+    <div className={`flex items-center gap-2 text-sm ${highlight ? 'text-accent' : ''}`}>
+      <span
+        className={`w-6 text-center flex-shrink-0 font-body ${
+          highlight ? 'text-accent font-semibold' : 'text-text-muted'
+        }`}
+      >
+        {place}
+      </span>
+      {own ? (
+        <OwnPortrait {...portrait} />
+      ) : (
+        <Portrait animal={resolveAvatar(entry)} {...portrait} />
+      )}
+      <span
+        className={`flex-1 text-left truncate font-body ${
+          highlight ? 'text-accent font-semibold' : 'text-text'
+        }`}
+      >
+        {name}
+      </span>
+      <span className="font-body text-accent font-semibold flex-shrink-0">
+        {entry.correctCount}
+      </span>
+    </div>
+  );
+};
 
 /**
  * "Today's Longest" leaderboard for the Daily page: top 3 entries plus a highlighted
@@ -49,7 +70,7 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
   const top3 = entries.slice(0, 3);
   const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
   const showYouRow = playerRow !== null && !inList;
-  // Tied scores share a number, as on the full board (`podiumPlaces`).
+  // Tied scores share a number and a frame, as on the full board (`podiumPlaces`).
   const placeOf = podiumPlaces(entries);
 
   return (
@@ -66,13 +87,18 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
           No entries yet. Be the first!
         </div>
       ) : (
-        <div className="space-y-0.5">
+        <div className="space-y-1">
           {[0, 1, 2].map((i) => {
             const entry = !isLoading ? (top3.at(i) ?? null) : null;
             if (isLoading) {
+              // The loaded row's shape, tile included, so the teaser does not jump when data lands.
               return (
-                <div key={i} className="flex items-center gap-2 text-sm py-0.5">
-                  <div className="w-6 h-5 bg-border rounded animate-pulse" />
+                <div key={i} className="flex items-center gap-2 text-sm">
+                  <div className="w-6 h-5 bg-border rounded animate-pulse flex-shrink-0" />
+                  <div
+                    // eslint-disable-next-line security/detect-object-injection -- typed key into const map
+                    className={`bg-border animate-pulse flex-shrink-0 ${SIZE_CLASSES[FIELD_PORTRAIT]}`}
+                  />
                   <div
                     className="flex-1 h-5 bg-border rounded animate-pulse"
                     style={{ width: `${65 - i * 10}%` }}
@@ -84,21 +110,19 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
             return entry ? (
               <Row
                 key={i}
-                rank={placeOf(entry)}
-                name={entry.displayName}
-                score={entry.correctCount}
+                entry={entry}
+                place={placeOf(entry)}
+                own={playerRank !== null && playerRank === entry.rank}
               />
             ) : (
-              <div key={i} className="text-sm py-0.5">
-                <span className="invisible">&nbsp;</span>
-              </div>
+              <div key={i} className="h-11" />
             );
           })}
 
           {showYouRow && playerRow && (
             <>
               <div className="border-t border-border my-1" />
-              <Row rank={placeOf(playerRow)} name="You" score={playerRow.correctCount} highlight />
+              <Row entry={playerRow} place={placeOf(playerRow)} own name="You" highlight />
             </>
           )}
         </div>
