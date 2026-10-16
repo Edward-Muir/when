@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.34.0](https://github.com/Edward-Muir/when/compare/v1.33.2...v1.34.0) (2026-10-16)
+
+
+### Features
+
+* **avatars:** player portraits and an avatar picker for the daily leaderboard ([#82](https://github.com/Edward-Muir/when/issues/82)) ([2de69fa](https://github.com/Edward-Muir/when/commit/2de69fabc02d358f9c6a6f9312ea72ddc3b1b1a2))
+
 ## [1.33.2](https://github.com/Edward-Muir/when/compare/v1.33.1...v1.33.2) (2026-10-11)
 
 

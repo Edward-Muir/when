@@ -1,11 +1,16 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "Players can now pick an animal avatar for the daily leaderboard.",
-    "The top three players on the daily leaderboard now stand out with larger portraits.",
-    "The portrait beside the leaderboard name box now opens the avatar picker."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.34.0",
+      "date": "2026-10-16",
+      "notes": [
+        "Players can now pick an animal avatar for the daily leaderboard.",
+        "The top three players on the daily leaderboard now stand out with larger portraits.",
+        "The portrait beside the leaderboard name box now opens the avatar picker."
+      ]
+    },
     {
       "version": "1.33.2",
       "date": "2026-10-11",
