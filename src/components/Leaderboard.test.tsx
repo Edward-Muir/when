@@ -111,6 +111,25 @@ describe('Leaderboard', () => {
       expect(screen.queryByText('🥇')).toBeNull();
     });
 
+    it('frames and sizes tied scores alike, keeping their rank numbers', () => {
+      const scores = [11, 9, 7, 7, 7, 4];
+      const entries = scores.map((correctCount, i) => ({
+        displayName: `Player ${i + 1}`,
+        correctCount,
+        rank: i + 1,
+      }));
+      renderBoard({ entries });
+
+      const portraits = screen.getAllByTestId('portrait');
+      const frames = portraits.map((p) => p.dataset.frame);
+      const sizes = portraits.map((p) => p.dataset.size);
+      expect(new Set(frames.slice(2, 5)).size).toBe(1);
+      expect(frames[2]).toBeTruthy();
+      expect(frames[5]).toBeUndefined();
+      expect(sizes).toEqual(['md3', 'md2', 'md1', 'md1', 'md1', 'md']);
+      expect(screen.getByText('5', { exact: true })).toBeInTheDocument();
+    });
+
     it('steps the podium portraits down in size from first place', () => {
       renderBoard();
       const sizes = screen.getAllByTestId('portrait').map((p) => p.dataset.size);

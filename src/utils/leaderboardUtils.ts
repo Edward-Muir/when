@@ -18,6 +18,21 @@ export function getMedalColor(rank: number): string | null {
   }
 }
 
+/**
+ * Each row's podium place, which decides its frame and size. Tied scores share the place of the
+ * first row with that score (standard competition ranking), so scores 11, 9, 7, 7, 7 are framed
+ * gold, silver, bronze, bronze, bronze. The rank number on the row stays the server's. A row
+ * whose score is not in `entries` (the player below a capped slice) keeps its own rank.
+ */
+export function podiumPlaces(entries: LeaderboardEntry[]): (entry: LeaderboardEntry) => number {
+  const firstRank = new Map<number, number>();
+  for (const { correctCount, rank } of entries) {
+    const seen = firstRank.get(correctCount);
+    if (seen === undefined || rank < seen) firstRank.set(correctCount, rank);
+  }
+  return (entry) => Math.min(entry.rank, firstRank.get(entry.correctCount) ?? entry.rank);
+}
+
 export interface ResolvedPlayerRow {
   /** The player's row, or null when they have not submitted today. */
   row: LeaderboardEntry | null;

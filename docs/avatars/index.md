@@ -75,7 +75,10 @@ portrait, and the top three portraits get a gold, silver or bronze frame (`getMe
 same. On the full board the podium also steps down gently in size so first place leads the
 eye: 60px, 52px and 48px portraits in slightly taller rows, then 44px for everyone else
 (`podiumStyle`, shared with the loading skeleton so the card does not jump when data lands).
-Every row keeps its rank number: dropping it on the podium was tried and read worse.
+Every row keeps its rank number: dropping it on the podium was tried and read worse. Frame and
+size follow the podium _place_, not the rank: tied scores share the place of the first row with
+that score (`podiumPlaces`), so 11, 9, 7, 7, 7 is gold, silver and three bronzes, while the
+numbers still read 1 to 5.
 
 **The two preview portraits are final art.** Platypus and goldfish live in
 `public/avatars/preview/` and `portraitArtUrl` serves them for every animal, the other 58

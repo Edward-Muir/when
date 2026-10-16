@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Trophy } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
-import { getMedalColor, resolvePlayerRow } from '../utils/leaderboardUtils';
+import { getMedalColor, podiumPlaces, resolvePlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
 import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
@@ -26,10 +26,18 @@ function OwnPortrait({ frame }: { frame: string | null }) {
 
 /**
  * The podium is framed in gold, silver and bronze, as on the full board (LeaderboardRow), and
- * the player's own row shows their current avatar.
+ * the player's own row shows their current avatar. Tied scores share a frame (`podiumPlaces`).
  */
-function PreviewPortrait({ entry, own }: { entry: LeaderboardEntry; own: boolean }) {
-  const frame = getMedalColor(entry.rank);
+function PreviewPortrait({
+  entry,
+  own,
+  place,
+}: {
+  entry: LeaderboardEntry;
+  own: boolean;
+  place: number;
+}) {
+  const frame = getMedalColor(place);
   return own ? (
     <OwnPortrait frame={frame} />
   ) : (
@@ -52,6 +60,7 @@ function LeaderboardPreview({
   }
 
   const top3 = entries.slice(0, PREVIEW_ROWS);
+  const placeOf = podiumPlaces(entries);
   // The server's own row for the caller, not a lookup in `entries` — the list is a capped
   // slice, so searching it silently finds nothing once the player ranks below the cap.
   const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
@@ -66,7 +75,7 @@ function LeaderboardPreview({
           className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-player-row' : ''}`}
         >
           <span className="w-5 text-right text-xs text-text-muted font-mono">{entry.rank}</span>
-          <PreviewPortrait entry={entry} own={playerRank === entry.rank} />
+          <PreviewPortrait entry={entry} own={playerRank === entry.rank} place={placeOf(entry)} />
           <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
           <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
         </div>
@@ -78,7 +87,7 @@ function LeaderboardPreview({
             <span className="w-5 text-right text-xs text-text-muted font-mono">
               {playerRow.rank}
             </span>
-            <PreviewPortrait entry={playerRow} own />
+            <PreviewPortrait entry={playerRow} own place={placeOf(playerRow)} />
             <span className="flex-1 truncate font-body text-text">{playerRow.displayName}</span>
             <span className="font-mono text-accent font-medium">{playerRow.correctCount}</span>
           </div>
