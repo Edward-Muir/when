@@ -60,3 +60,6 @@ experiments/category-clustering/output/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Deck factory: QC review copies, regenerable by image-precheck.py
+/factory/decks/*/qc/img/

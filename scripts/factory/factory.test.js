@@ -344,3 +344,208 @@ describe('the prompts CSV reader', () => {
     assert.deepEqual(rows, [{ a: 'x, y', b: 'say "hi"', c: '' }]);
   });
 });
+
+describe('inbox.js: one download per slug', () => {
+  const setup = () => {
+    const root = tmp();
+    const env = {
+      ...process.env,
+      FACTORY_DECKS_DIR: path.join(root, 'decks'),
+      WHEN_IMAGES_DIR: path.join(root, 'images'),
+      FACTORY_DOWNLOADS_DIR: path.join(root, 'Downloads'),
+    };
+    fs.mkdirSync(env.FACTORY_DOWNLOADS_DIR, { recursive: true });
+    fs.writeFileSync(path.join(env.FACTORY_DOWNLOADS_DIR, 'old-download.jpeg'), 'old');
+    const call = (script, ...args) =>
+      execFileSync(process.execPath, [path.join(__dirname, script), ...args], {
+        encoding: 'utf8',
+        env,
+        stdio: 'pipe',
+      });
+    call('status.js', 'init', '--deck', 'demo', '--slugs', 'alpha,beta');
+    fs.writeFileSync(
+      path.join(env.FACTORY_DECKS_DIR, 'demo', 'prompts.csv'),
+      'event_name,research_prompt,image_prompt,image_generated,saved_filename\nalpha,r,i,,\nbeta,r,i,,\n'
+    );
+    return {
+      env,
+      call,
+      downloads: env.FACTORY_DOWNLOADS_DIR,
+      inbox: path.join(env.WHEN_IMAGES_DIR, 'inbox', 'demo'),
+    };
+  };
+  const exitCode = (fn) => {
+    try {
+      fn();
+      return 0;
+    } catch (error) {
+      return error.status;
+    }
+  };
+
+  it('moves exactly one new file onto its slug, records it, and marks it downloaded', () => {
+    const { call, downloads, inbox, env } = setup();
+    call('inbox.js', 'snapshot', '--deck', 'demo', '--slug', 'alpha');
+    fs.writeFileSync(path.join(downloads, 'Gemini_Generated_Image_x1.jpeg'), 'picture of alpha');
+    call('inbox.js', 'take', '--deck', 'demo', '--slug', 'alpha', '--wait', '10');
+    assert.equal(fs.readFileSync(path.join(inbox, 'alpha.jpeg'), 'utf8'), 'picture of alpha');
+    assert.ok(
+      fs.existsSync(path.join(downloads, 'old-download.jpeg')),
+      'older downloads are left alone'
+    );
+    const [line] = fs
+      .readFileSync(path.join(inbox, 'manifest.jsonl'), 'utf8')
+      .trim()
+      .split('\n')
+      .map(JSON.parse);
+    const expected = require('node:crypto')
+      .createHash('sha256')
+      .update('picture of alpha')
+      .digest('hex');
+    assert.equal(line.sha256, expected);
+    const status = JSON.parse(
+      fs.readFileSync(path.join(env.FACTORY_DECKS_DIR, 'demo', 'status.json'), 'utf8')
+    );
+    assert.equal(status.slugs.alpha.state, 'downloaded');
+    assert.equal(status.slugs.alpha.sha256, expected);
+  });
+
+  it('moves nothing when there is no new file, or two', () => {
+    const { call, downloads, inbox } = setup();
+    call('inbox.js', 'snapshot', '--deck', 'demo', '--slug', 'beta');
+    assert.equal(
+      exitCode(() => call('inbox.js', 'take', '--deck', 'demo', '--slug', 'beta', '--wait', '3')),
+      4
+    );
+    fs.writeFileSync(path.join(downloads, 'Gemini_Generated_Image_a.jpeg'), 'one');
+    fs.writeFileSync(path.join(downloads, 'Gemini_Generated_Image_b.jpeg'), 'two');
+    assert.equal(
+      exitCode(() => call('inbox.js', 'take', '--deck', 'demo', '--slug', 'beta', '--wait', '10')),
+      5
+    );
+    assert.ok(!fs.existsSync(path.join(inbox, 'beta.jpeg')));
+    assert.equal(fs.readdirSync(downloads).length, 3);
+  });
+
+  it('refuses a take without its own snapshot', () => {
+    const { call } = setup();
+    call('inbox.js', 'snapshot', '--deck', 'demo', '--slug', 'alpha');
+    assert.equal(
+      exitCode(() => call('inbox.js', 'take', '--deck', 'demo', '--slug', 'beta', '--wait', '3')),
+      1
+    );
+  });
+});
+
+describe('qc-collect.js', () => {
+  const { verdictProblem } = require('./qc-collect');
+  const verdict = (slug, grade = 'pass', extra = {}) => ({
+    slug,
+    description: 'A steam locomotive crossing a stone viaduct at dusk.',
+    checks: {
+      subject: grade,
+      era: 'pass',
+      no_text: 'pass',
+      no_frame: 'pass',
+      not_graphic: 'pass',
+      birth_adult: 'pass',
+      scene_rules: 'pass',
+    },
+    verdict: grade,
+    reason: grade === 'pass' ? '' : 'shows the wrong thing',
+    ...extra,
+  });
+
+  it('rejects a malformed or inconsistent verdict', () => {
+    assert.equal(verdictProblem(verdict('a'), 'a'), null);
+    assert.match(verdictProblem(verdict('b'), 'a'), /names b/);
+    assert.match(
+      verdictProblem(verdict('a', 'pass', { description: '' }), 'a'),
+      /cold description/
+    );
+    assert.match(verdictProblem(verdict('a', 'fail', { verdict: 'pass' }), 'a'), /does not follow/);
+    assert.match(verdictProblem(verdict('a', 'fail', { reason: ' ' }), 'a'), /needs a reason/);
+    const partial = verdict('a');
+    delete partial.checks.no_frame;
+    assert.match(verdictProblem(partial, 'a'), /no_frame/);
+  });
+
+  it('fails while any verdict file is missing, asks for second opinions, then applies', () => {
+    const decks = path.join(tmp(), 'decks');
+    const env = { ...process.env, FACTORY_DECKS_DIR: decks };
+    const call = (script, ...args) =>
+      execFileSync(process.execPath, [path.join(__dirname, script), ...args], {
+        encoding: 'utf8',
+        env,
+        stdio: 'pipe',
+      });
+    const status = (code, ...args) => {
+      try {
+        return { code: 0, out: call('qc-collect.js', ...args) };
+      } catch (error) {
+        assert.equal(error.status, code);
+        return { code: error.status, out: error.stdout };
+      }
+    };
+    call('status.js', 'init', '--deck', 'demo', '--slugs', 'good,bad,dup');
+    for (const s of ['good', 'bad', 'dup'])
+      call('status.js', 'mark', '--deck', 'demo', s, 'downloaded', '--sha256', SHA);
+    const qc = path.join(decks, 'demo', 'qc');
+    fs.mkdirSync(qc, { recursive: true });
+    const write = (name, value) => fs.writeFileSync(path.join(qc, name), JSON.stringify(value));
+    write('good.precheck.json', { sha256: SHA, ok: true, problems: [] });
+    write('bad.precheck.json', { sha256: SHA, ok: true, problems: [] });
+    write('dup.precheck.json', {
+      sha256: SHA,
+      ok: false,
+      problems: ['near-duplicate of moon-landing'],
+    });
+    write('good.json', verdict('good'));
+    // bad.json is missing: the collector must fail and name it.
+    let r = status(2, '--deck', 'demo');
+    assert.deepEqual(
+      JSON.parse(r.out).review.map((x) => x.slug),
+      ['bad']
+    );
+    assert.equal(
+      status(2, '--deck', 'demo', '--apply').code,
+      2,
+      'apply refuses while a review is missing'
+    );
+
+    write('bad.json', verdict('bad', 'fail'));
+    r = status(3, '--deck', 'demo');
+    assert.deepEqual(
+      JSON.parse(r.out).recheck.map((x) => x.slug),
+      ['bad']
+    );
+
+    write(
+      'bad.recheck.json',
+      verdict('bad', 'fail', { reason: 'a sailing ship, not a locomotive' })
+    );
+    call('qc-collect.js', '--deck', 'demo', '--apply');
+    const s = JSON.parse(fs.readFileSync(path.join(decks, 'demo', 'status.json'), 'utf8'));
+    assert.equal(s.slugs.good.state, 'qc-pass');
+    assert.equal(s.slugs.bad.state, 'qc-fail');
+    assert.equal(s.slugs.bad.reason, 'a sailing ship, not a locomotive');
+    assert.equal(s.slugs.dup.state, 'qc-fail');
+    assert.match(s.slugs.dup.reason, /^precheck: near-duplicate/);
+    assert.ok(!fs.existsSync(path.join(qc, 'bad.json')), 'a failed verdict moves to history');
+    assert.ok(fs.existsSync(path.join(qc, 'history', 'bad.a1.review.json')));
+    assert.ok(fs.existsSync(path.join(qc, 'good.json')), 'a pass stays for the PR body');
+  });
+});
+
+describe('next-slot', () => {
+  const { slots, opensAt, weekday } = require('./next-slot');
+
+  it('offers only Mondays and Fridays that open more than 48 hours away, skipping held dates', () => {
+    const now = Date.parse('2026-10-18T20:00:00Z'); // a Sunday
+    const open = slots([{ id: 'x', dates: ['2026-10-26'] }], now);
+    assert.ok(open.every((s) => [1, 5].includes(weekday(s.date))));
+    assert.ok(open.every((s) => opensAt(s.date) - now >= 48 * 3600 * 1000));
+    assert.equal(open[0].date, '2026-10-23', 'Friday the 23rd opens 22 Oct 10:00Z, 62 hours away');
+    assert.equal(open.find((s) => s.date === '2026-10-26').holder, 'x');
+  });
+});
