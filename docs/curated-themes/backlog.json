@@ -1,0 +1,4155 @@
+{
+  "about": "The curated deck factory works through this list from the top. See docs/curated-themes/factory.md.",
+  "themes": [
+    {
+      "id": "english-history",
+      "name": "English History",
+      "scope": "Yes if it is a defining moment of English history, Stonehenge to the present",
+      "neighbours": [],
+      "grid": {
+        "categories": ["warfare"],
+        "eras": ["medieval", "earlyModern"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "indonesia",
+      "name": "Indonesia",
+      "scope": "Yes if it happened in what is now Indonesia",
+      "neighbours": [],
+      "grid": {
+        "categories": ["empires"],
+        "eras": ["medieval"],
+        "regions": ["Southeast Asia", "Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "kings-of-england",
+      "name": "Kings of England",
+      "scope": "Yes if it is a monarch's accession, death or defining act",
+      "neighbours": [],
+      "grid": {
+        "categories": ["empires"],
+        "eras": ["medieval", "earlyModern"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "assassinations",
+      "name": "Assassinations",
+      "scope": "Yes if a named person was killed for political reasons",
+      "neighbours": [],
+      "grid": {
+        "categories": ["revolution"],
+        "eras": ["medieval"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "automata",
+      "name": "Automata",
+      "scope": "Yes if it is a machine built to act on its own",
+      "neighbours": [],
+      "grid": {
+        "categories": ["invention"],
+        "eras": ["industrial", "medieval"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "ciphers",
+      "name": "Codes & Ciphers",
+      "scope": "Yes if it makes or breaks secret writing",
+      "neighbours": [],
+      "grid": {
+        "categories": ["invention", "science"],
+        "eras": ["ancient"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "clockwork",
+      "name": "Clockwork",
+      "scope": "Yes if it is a device or convention for measuring time",
+      "neighbours": [],
+      "grid": {
+        "categories": ["invention"],
+        "eras": ["medieval", "ancient"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "cosmic-ideas",
+      "name": "Cosmic Ideas",
+      "scope": "Yes if it is an idea about what the universe is",
+      "neighbours": [],
+      "grid": {
+        "categories": ["science"],
+        "eras": ["ancient"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "crossings",
+      "name": "Bridges & Tunnels",
+      "scope": "Yes if it is a built crossing of water, valley or rock",
+      "neighbours": [],
+      "grid": {
+        "categories": ["architecture"],
+        "eras": ["ancient"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "eureka",
+      "name": "Eureka Moments",
+      "scope": "Yes if it is the specific moment a discovery landed",
+      "neighbours": [],
+      "grid": {
+        "categories": ["science"],
+        "eras": ["industrial"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "games",
+      "name": "The Games Board",
+      "scope": "Yes if it is a game played at a table, or a machine that beat us at one",
+      "neighbours": [],
+      "grid": {
+        "categories": ["craft"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "light",
+      "name": "Let There Be Light",
+      "scope": "Yes if it is a way of making artificial light",
+      "neighbours": [],
+      "grid": {
+        "categories": ["invention", "craft"],
+        "eras": ["industrial", "medieval"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "lost-and-found",
+      "name": "Lost & Found",
+      "scope": "Yes if something buried was found, or a dead script read",
+      "neighbours": [],
+      "grid": {
+        "categories": ["writing", "architecture"],
+        "eras": ["industrial"],
+        "regions": ["Europe", "Middle East & North Africa"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "mapmakers",
+      "name": "Mapmakers",
+      "scope": "Yes if it changed what people thought the world looked like",
+      "neighbours": [],
+      "grid": {
+        "categories": ["writing", "science"],
+        "eras": ["medieval", "ancient"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "money",
+      "name": "Hard Currency",
+      "scope": "Yes if it is a form of money, or the institution issuing one",
+      "neighbours": [],
+      "grid": {
+        "categories": ["commerce", "writing"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "nations-of-europe",
+      "name": "Nations of Europe",
+      "scope": "Yes if it is the founding moment of a European country",
+      "neighbours": [],
+      "grid": {
+        "categories": ["empires", "diplomacy"],
+        "eras": ["medieval", "industrial"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers & Proofs",
+      "scope": "Yes if it is a mathematical idea entering human thought",
+      "neighbours": [],
+      "grid": {
+        "categories": ["science", "writing"],
+        "eras": ["ancient"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "plagues",
+      "name": "Plague Years",
+      "scope": "Yes if it is a named outbreak, or a decisive step in ending one",
+      "neighbours": [],
+      "grid": {
+        "categories": ["disasters", "medicine"],
+        "eras": ["industrial", "medieval"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "the-deep",
+      "name": "The Deep",
+      "scope": "Yes if it is going deliberately under water, or finding what sank",
+      "neighbours": [],
+      "grid": {
+        "categories": ["invention", "science"],
+        "eras": ["industrial", "ancient"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "upheaval",
+      "name": "When the Earth Moved",
+      "scope": "Yes if it is an eruption, earthquake or tsunami",
+      "neighbours": [],
+      "grid": {
+        "categories": ["disasters"],
+        "eras": [],
+        "regions": ["Europe", "East Asia"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "what-we-drink",
+      "name": "What We Drink",
+      "scope": "Yes if it is a drink made on purpose, or a rule about drinking it",
+      "neighbours": [],
+      "grid": {
+        "categories": ["agriculture"],
+        "eras": ["earlyModern"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "before-us",
+      "name": "Before Us",
+      "scope": "Yes if it happened before Homo sapiens existed",
+      "neighbours": [],
+      "grid": {
+        "categories": ["nature"],
+        "eras": ["prehistory"],
+        "regions": ["Global"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "founding-cities",
+      "name": "Capitals Founded",
+      "scope": "Yes if it founded a city that is a national capital today",
+      "neighbours": [],
+      "grid": {
+        "categories": ["migration", "architecture"],
+        "eras": ["medieval", "industrial", "earlyModern"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "great-fires",
+      "name": "Cities Ablaze",
+      "scope": "Yes if a city burned, or it is a step in fighting urban fire",
+      "neighbours": [],
+      "grid": {
+        "categories": ["disasters", "warfare"],
+        "eras": ["industrial", "ancient", "earlyModern"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "ends-of-the-earth",
+      "name": "Ends of the Earth",
+      "scope": "Yes if people first reached a pole, a summit or an unvisited extreme",
+      "neighbours": [],
+      "grid": {
+        "categories": ["migration"],
+        "eras": ["industrial", "coldWar", "medieval"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "famine",
+      "name": "Famine Years",
+      "scope": "Yes if it is a named famine, or a decisive step in ending one",
+      "neighbours": [],
+      "grid": {
+        "categories": ["disasters"],
+        "eras": ["industrial"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "chinese-dynasties",
+      "name": "Mandate of Heaven",
+      "scope": "Yes if it is a Chinese dynasty's founding, peak act or fall",
+      "neighbours": [],
+      "grid": {
+        "categories": ["empires"],
+        "eras": ["medieval", "ancient"],
+        "regions": ["East Asia"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "on-stage",
+      "name": "On Stage",
+      "scope": "Yes if it is a stage form, a landmark premiere or a famous playhouse",
+      "neighbours": [],
+      "grid": {
+        "categories": ["art"],
+        "eras": ["industrial", "earlyModern"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "peace",
+      "name": "Peace at Last",
+      "scope": "Yes if it is a treaty or armistice that ended a named war",
+      "neighbours": [],
+      "grid": {
+        "categories": ["diplomacy"],
+        "eras": ["industrial", "earlyModern"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "pharaohs",
+      "name": "Pharaohs",
+      "scope": "Yes if it is an act of an Egyptian ruler, Narmer to Cleopatra",
+      "neighbours": [],
+      "grid": {
+        "categories": ["empires", "architecture", "figures"],
+        "eras": ["ancient"],
+        "regions": ["Middle East & North Africa"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "pirates",
+      "name": "Pirates & Privateers",
+      "scope": "Yes if it is armed robbery at sea, or the war on it",
+      "neighbours": [],
+      "grid": {
+        "categories": ["warfare"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "schools",
+      "name": "Places of Learning",
+      "scope": "Yes if it founded or destroyed a school, university or great library",
+      "neighbours": [],
+      "grid": {
+        "categories": ["commerce"],
+        "eras": ["medieval", "ancient"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "ships",
+      "name": "Sail & Steam",
+      "scope": "Yes if it is a new kind of ship, or one vessel that changed seafaring",
+      "neighbours": [],
+      "grid": {
+        "categories": ["warfare", "invention", "craft"],
+        "eras": ["industrial", "medieval"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "heists",
+      "name": "Stolen!",
+      "scope": "Yes if it is a famous theft, robbery or fraud carried out for gain",
+      "neighbours": [],
+      "grid": {
+        "categories": ["commerce", "art"],
+        "eras": ["modern", "coldWar"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "flight",
+      "name": "Taking Flight",
+      "scope": "Yes if a person left the ground in a craft (atmosphere only)",
+      "neighbours": [],
+      "grid": {
+        "categories": ["invention", "migration"],
+        "eras": ["industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "skyline",
+      "name": "Tallest in the World",
+      "scope": "Yes if it became the tallest structure of its day, or let us build up",
+      "neighbours": [],
+      "grid": {
+        "categories": ["architecture"],
+        "eras": ["industrial", "coldWar"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "tamed",
+      "name": "Tamed",
+      "scope": "Yes if it is an animal brought into human service",
+      "neighbours": [],
+      "grid": {
+        "categories": ["agriculture"],
+        "eras": ["ancient", "prehistory", "industrial"],
+        "regions": ["Europe", "Middle East & North Africa"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "first-women",
+      "name": "The First Woman",
+      "scope": "Yes if it is the first time a woman did or held something",
+      "neighbours": [],
+      "grid": {
+        "categories": ["diplomacy"],
+        "eras": ["coldWar"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "rome",
+      "name": "The Roman Story",
+      "scope": "Yes if it is a defining moment of the Roman state, to 1453",
+      "neighbours": [],
+      "grid": {
+        "categories": ["empires"],
+        "eras": ["ancient"],
+        "regions": ["Europe", "Middle East & North Africa"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "sieges",
+      "name": "Under Siege",
+      "scope": "Yes if it is the siege of a named city or fortress",
+      "neighbours": [],
+      "grid": {
+        "categories": ["warfare", "empires"],
+        "eras": ["medieval", "ancient"],
+        "regions": ["Europe", "Middle East & North Africa"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "under-the-knife",
+      "name": "Under the Knife",
+      "scope": "Yes if it is a surgical procedure or tool, or a way to survive one",
+      "neighbours": [],
+      "grid": {
+        "categories": ["medicine"],
+        "eras": ["industrial"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "walls",
+      "name": "Walls & Fortresses",
+      "scope": "Yes if it built or brought down a fortification meant to keep people out",
+      "neighbours": [],
+      "grid": {
+        "categories": ["architecture"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "waterworks",
+      "name": "Waterworks",
+      "scope": "Yes if it moves or holds back water by design",
+      "neighbours": [],
+      "grid": {
+        "categories": ["architecture"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["Middle East & North Africa", "Europe"]
+      },
+      "example_beats": [],
+      "status": "done"
+    },
+    {
+      "id": "sweet-tooth",
+      "name": "Sweet Tooth",
+      "scope": "Yes if it is a sweet treat",
+      "boundary": "Sweet Tooth: candy, chocolate, biscuits and desserts; savoury dishes go to Born in a Kitchen, canning and freezing to Food Tech, cocoa and other drinks to What We Drink.",
+      "neighbours": ["born-in-a-kitchen", "what-we-drink", "food-tech"],
+      "grid": {
+        "categories": ["commerce", "invention", "craft"],
+        "eras": ["industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Fry's makes the first chocolate bar (1847)",
+        "Daniel Peter makes milk chocolate (1875)",
+        "Hershey's bar launched (1900)",
+        "Ice cream cone at the St Louis fair (1904)",
+        "Oreo introduced (1912)",
+        "Pavlova created (1926)",
+        "Mars bar launched (1932)",
+        "Kit Kat launched (1935)",
+        "Toll House chocolate chip cookie (1938)",
+        "Nutella launched (1964)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "ottomans",
+      "name": "Sublime Porte",
+      "scope": "Yes if it is a defining moment of the Ottoman Empire",
+      "boundary": "Sublime Porte: the Ottoman story; the great sieges (Vienna, Malta) go to Under Siege, caliphs before 1517 to The Caliphs, Lepanto to Broadsides.",
+      "neighbours": ["sieges", "caliphates", "broadsides"],
+      "grid": {
+        "categories": ["empires", "warfare", "figures"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Middle East & North Africa", "Europe"]
+      },
+      "example_beats": [
+        "Osman founds the beylik (1299)",
+        "Battle of Kosovo (1389)",
+        "Mehmed II takes Constantinople (1453)",
+        "Selim I conquers Egypt (1517)",
+        "Suleiman crowned (1520)",
+        "Battle of Mohacs (1526)",
+        "Treaty of Karlowitz (1699)",
+        "Janissaries abolished (1826)",
+        "Tanzimat reforms (1839)",
+        "Sultanate abolished (1922)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "silicon-dreams",
+      "name": "Silicon Dreams",
+      "scope": "Yes if it is a computer, chip or other computing hardware",
+      "boundary": "Silicon Dreams: the machines; mechanical calculators go to Automata, wartime codebreaking machines to Codes & Ciphers, software to Hello, World, pocket devices to In Your Pocket.",
+      "neighbours": ["ciphers", "software-and-ai", "in-your-pocket"],
+      "grid": {
+        "categories": ["invention", "science"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["North America", "Europe"]
+      },
+      "example_beats": [
+        "Zuse's Z3 (1941)",
+        "ENIAC unveiled (1946)",
+        "Transistor invented at Bell Labs (1947)",
+        "UNIVAC I delivered (1951)",
+        "Integrated circuit demonstrated (1958)",
+        "IBM System/360 (1964)",
+        "Intel 4004 microprocessor (1971)",
+        "Apple II goes on sale (1977)",
+        "IBM PC launched (1981)",
+        "Apple Macintosh (1984)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "the-liberators",
+      "name": "The Liberators",
+      "scope": "Yes if it is part of Latin America's struggle for independence",
+      "boundary": "The Liberators: Latin American independence wars; the Spanish conquest goes to Conquistadors, the end of slavery to Chains Broken, Tupac Amaru's rising to Rise Up!",
+      "neighbours": ["conquistadors", "chains-broken", "rise-up"],
+      "grid": {
+        "categories": ["revolution", "warfare", "figures"],
+        "eras": ["industrial"],
+        "regions": ["South America", "North America"]
+      },
+      "example_beats": [
+        "Haitian Revolution begins (1791)",
+        "Haiti declares independence (1804)",
+        "Grito de Dolores in Mexico (1810)",
+        "Bolivar's Jamaica Letter (1815)",
+        "San Martin crosses the Andes (1817)",
+        "Battle of Boyaca (1819)",
+        "Battle of Carabobo (1821)",
+        "Brazil's Cry of Ipiranga (1822)",
+        "Battle of Ayacucho (1824)",
+        "Spain loses Cuba and Puerto Rico (1898)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "gone-forever",
+      "name": "Gone Forever",
+      "scope": "Yes if it is a species going extinct",
+      "boundary": "Gone Forever owns extinctions in the human era, last named survivors such as Martha included; mass extinctions and prehistoric species go to Before Us, rescue and protection to Back from the Brink.",
+      "neighbours": ["back-from-the-brink", "before-us", "newfound-beasts"],
+      "grid": {
+        "categories": ["nature"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Last aurochs dies (1627)",
+        "Dodo last seen (c. 1662)",
+        "Steller's sea cow gone (1768)",
+        "Great auk killed (1844)",
+        "Quagga dies in Amsterdam (1883)",
+        "Martha, last passenger pigeon, dies (1914)",
+        "Heath hen extinct (1932)",
+        "Benjamin, last thylacine, dies (1936)",
+        "Baiji declared functionally extinct (2006)",
+        "Lonesome George dies (2012)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "whodunit",
+      "name": "Whodunit",
+      "scope": "Yes if it is a detective or crime novel, or a famous sleuth's debut",
+      "boundary": "Whodunit: invented crimes and sleuths; real police and prisons go to Crime & Punishment, horror to Fright Night, spies to Spy Games.",
+      "neighbours": ["crime-and-punishment", "fright-night", "spy-games"],
+      "grid": {
+        "categories": ["writing", "media"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Poe's Murders in the Rue Morgue (1841)",
+        "The Moonstone (1868)",
+        "Sherlock Holmes debuts (1887)",
+        "Poirot debuts in The Mysterious Affair at Styles (1920)",
+        "The Maltese Falcon (1930)",
+        "Perry Mason debuts (1933)",
+        "Murder on the Orient Express (1934)",
+        "The Big Sleep introduces Philip Marlowe (1939)",
+        "Inspector Morse debuts (1975)",
+        "The Da Vinci Code (2003)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "day-in-court",
+      "name": "Day in Court",
+      "scope": "Yes if it is a famous trial or court ruling",
+      "boundary": "Day in Court: the courtroom; civil-rights rulings share with Civil Rights Road, trials of books, Galileo's included, go to Banned!, police and prisons to Crime & Punishment, written law to Law of the Land.",
+      "neighbours": ["civil-rights", "banned", "crime-and-punishment"],
+      "grid": {
+        "categories": ["law", "figures"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Socrates tried in Athens (399 BC)",
+        "Joan of Arc tried (1431)",
+        "Sacco and Vanzetti convicted (1921)",
+        "Salem witch trials (1692)",
+        "Marbury v. Madison (1803)",
+        "Dreyfus Affair begins (1894)",
+        "Scopes Monkey Trial (1925)",
+        "Nuremberg trials open (1945)",
+        "Eichmann trial opens (1961)",
+        "O. J. Simpson verdict (1995)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "black-gold",
+      "name": "Black Gold",
+      "scope": "Yes if it is a milestone in oil or gas",
+      "boundary": "Black Gold: oil and gas; gold and diamond rushes go to Strike It Rich, other industrial blasts to When It Went Wrong, lamp oil to Let There Be Light.",
+      "neighbours": ["strike-it-rich", "when-it-went-wrong", "light"],
+      "grid": {
+        "categories": ["commerce", "science", "disasters"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Middle East & North Africa", "North America", "Global"]
+      },
+      "example_beats": [
+        "Drake strikes oil in Pennsylvania (1859)",
+        "Standard Oil founded (1870)",
+        "Spindletop gusher (1901)",
+        "Oil found in Persia (1908)",
+        "Saudi oil discovered at Dammam (1938)",
+        "OPEC founded (1960)",
+        "Torrey Canyon spill (1967)",
+        "Arab oil embargo (1973)",
+        "Exxon Valdez spill (1989)",
+        "Deepwater Horizon spill (2010)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "rise-up",
+      "name": "Rise Up!",
+      "scope": "Yes if it is an uprising of ordinary people against their rulers",
+      "boundary": "Rise Up!: popular uprisings, Pugachev and the Paris Commune included; plots and putsches go to Coup!, peaceful marches to Take to the Streets, wars of independence to The Liberators, the 1857 rebellion to The Raj.",
+      "neighbours": ["coup", "take-to-the-streets", "chinese-dynasties"],
+      "grid": {
+        "categories": ["revolution", "warfare"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Spartacus leads slave revolt (73 BC)",
+        "Zanj Rebellion (869)",
+        "Jacquerie (1358)",
+        "Wat Tyler's Peasants' Revolt (1381)",
+        "German Peasants' War (1525)",
+        "Pugachev's Rebellion (1773)",
+        "Nat Turner's Rebellion (1831)",
+        "Taiping Rebellion begins (1850)",
+        "Boxer Rebellion (1900)",
+        "Paris Commune (1871)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "romanovs",
+      "name": "The Romanovs",
+      "scope": "Yes if it is a defining moment of Romanov Russia",
+      "boundary": "The Romanovs: Russia from 1613 to 1917, Catherine the Great included; communism goes to Red Flags, Pugachev's revolt to Rise Up!.",
+      "neighbours": ["red-flags"],
+      "grid": {
+        "categories": ["empires", "figures"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North & Central Asia"]
+      },
+      "example_beats": [
+        "Michael Romanov elected tsar (1613)",
+        "Peter becomes sole tsar (1696)",
+        "St Petersburg founded (1703)",
+        "Battle of Poltava (1709)",
+        "Catherine seizes the throne (1762)",
+        "Alexander II becomes tsar (1855)",
+        "Decembrist revolt (1825)",
+        "First Faberge imperial egg (1885)",
+        "Bloody Sunday (1905)",
+        "Nicholas II abdicates (1917)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "message-sent",
+      "name": "Message Sent",
+      "scope": "Yes if it is a way of sending a message or parcel across distance",
+      "boundary": "Message Sent: carried or wired messages and mail; broadcasting goes to Tune In, the internet to Going Online, pocket gadgets to In Your Pocket.",
+      "neighbours": ["tune-in", "going-online", "in-your-pocket"],
+      "grid": {
+        "categories": ["invention", "media", "commerce"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Augustus creates the Cursus Publicus (27 BC)",
+        "Chappe's semaphore line (1794)",
+        "Penny Black stamp (1840)",
+        "Morse sends the first telegraph message (1844)",
+        "Pony Express launched (1860)",
+        "Bell patents the telephone (1876)",
+        "Marconi's transatlantic radio signal (1901)",
+        "First official airmail flight (1911)",
+        "Telstar relays live television (1962)",
+        "FedEx begins deliveries (1973)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "before-columbus",
+      "name": "Before Columbus",
+      "scope": "Yes if it is from the pre-Columbian Americas",
+      "boundary": "Before Columbus: Maya, Aztec, Inca and earlier worlds; the Spanish conquest goes to Conquistadors, peoples of the US and Canada to Native Nations, Tenochtitlan's founding to Capitals Founded.",
+      "neighbours": ["conquistadors", "native-nations", "stone-age-firsts"],
+      "grid": {
+        "categories": ["architecture", "empires", "agriculture"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["South America", "North America"]
+      },
+      "example_beats": [
+        "Olmec rise at San Lorenzo (1200 BC)",
+        "Teotihuacan conquers Tikal (378)",
+        "Pakal takes the throne at Palenque (615)",
+        "Chichen Itza rises (987)",
+        "Aztec Triple Alliance formed (1428)",
+        "Pachacuti becomes Inca ruler (1438)",
+        "Machu Picchu built (1450)",
+        "Inca conquer the Chimu kingdom (1470)",
+        "Great Temple of Tenochtitlan dedicated (1487)",
+        "Moctezuma II crowned (1502)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "votes-for-women",
+      "name": "Votes for Women",
+      "scope": "Yes if it is women winning the vote, or the fight for it",
+      "boundary": "Votes for Women owns women's suffrage; other voting milestones go to The Ballot Box, other women's firsts to The First Woman.",
+      "neighbours": ["ballot-box", "first-women"],
+      "grid": {
+        "categories": ["law", "revolution"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Seneca Falls convention (1848)",
+        "Wyoming Territory women vote (1869)",
+        "New Zealand women vote (1893)",
+        "Finland first in Europe (1906)",
+        "Emily Davison at the Derby (1913)",
+        "Representation of the People Act (1918)",
+        "19th Amendment ratified (1920)",
+        "Turkey grants women the vote (1934)",
+        "France (1944)",
+        "Switzerland federal vote (1971)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "sell-sell-sell",
+      "name": "Sell, Sell, Sell",
+      "scope": "Yes if it is a famous advertisement, slogan or brand mascot",
+      "boundary": "Sell, Sell, Sell: the pitch itself; shops go to Retail Therapy, the founding of companies to Still Trading, broadcast milestones to Tune In.",
+      "neighbours": ["retail-therapy", "still-trading", "tune-in"],
+      "grid": {
+        "categories": ["commerce", "media"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["North America", "Europe", "Global"]
+      },
+      "example_beats": [
+        "Caxton prints one of the first advertisements (1477)",
+        "Michelin Man debuts (1898)",
+        "Coca-Cola's Santa Claus (1931)",
+        "Bulova's first TV commercial (1941)",
+        "De Beers 'A Diamond Is Forever' (1947)",
+        "Volkswagen's 'Think Small' (1959)",
+        "Apple's '1984' Super Bowl ad (1984)",
+        "Nike 'Just Do It' (1988)",
+        "Got Milk? (1993)",
+        "Old Spice 'The Man Your Man Could Smell Like' (2010)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "seeing-inside",
+      "name": "Seeing Inside",
+      "scope": "Yes if it is a way of looking inside or testing the body",
+      "boundary": "Seeing Inside owns diagnosis and scanning; the discovery of X-rays goes to Eureka Moments, operations to Under the Knife, drugs to Wonder Drugs, genetics to Code of Life.",
+      "neighbours": ["under-the-knife", "wonder-drugs", "code-of-life"],
+      "grid": {
+        "categories": ["medicine", "invention"],
+        "eras": ["industrial", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Auenbrugger's chest percussion (1761)",
+        "Laennec invents the stethoscope (1816)",
+        "Ophthalmoscope (1851)",
+        "Clinical thermometer (1867)",
+        "Bozzini's Lichtleiter, the first endoscope (1806)",
+        "Riva-Rocci's blood pressure cuff (1896)",
+        "ECG machine (1903)",
+        "Pregnancy ultrasound (1958)",
+        "First CT scan (1971)",
+        "First MRI scan of a human (1977)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "face-to-face",
+      "name": "Face to Face",
+      "scope": "Yes if it is a summit of rulers or an embassy to a foreign court",
+      "boundary": "Face to Face: meetings and missions; war-ending treaties, Tilsit included, go to Peace at Last, Cold War crises to Iron Curtain, merchants and pilgrims on the caravan roads to Silk Road.",
+      "neighbours": ["peace", "iron-curtain", "silk-road"],
+      "grid": {
+        "categories": ["diplomacy", "figures"],
+        "eras": ["earlyModern", "industrial", "coldWar"],
+        "regions": ["Europe", "Global"]
+      },
+      "example_beats": [
+        "Harun al-Rashid's elephant reaches Charlemagne (802)",
+        "Ibn Fadlan's embassy to the Volga (921)",
+        "Rabban Sauma reaches Europe (1287)",
+        "Field of the Cloth of Gold (1520)",
+        "Hasekura Tsunenaga visits Rome (1615)",
+        "Siamese embassy to Louis XIV (1686)",
+        "Macartney's embassy to the Qianlong Emperor (1793)",
+        "Congress of Berlin (1878)",
+        "Yalta (1945)",
+        "Nixon visits China (1972)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "live-wire",
+      "name": "Live Wire",
+      "scope": "Yes if it is a way of making, storing or moving electric power",
+      "boundary": "Live Wire: electric power and its grids, batteries included; lamps go to Let There Be Light, dams to Waterworks, nuclear stations to The Atomic Age, Faraday's induction to Eureka Moments.",
+      "neighbours": ["light", "waterworks", "atomic-age"],
+      "grid": {
+        "categories": ["science", "invention", "commerce"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "Volta's pile (1800)",
+        "Siemens' self-excited dynamo (1866)",
+        "Pearl Street Station opens (1882)",
+        "Brush's wind turbine (1888)",
+        "Niagara Falls AC power (1895)",
+        "Larderello geothermal plant (1904)",
+        "Britain's National Grid switched on (1933)",
+        "Bell Labs solar cell (1954)",
+        "Lithium-ion battery released (1991)",
+        "Hornsea offshore wind farm opens (2019)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "faiths-of-asia",
+      "name": "Faiths of Asia",
+      "scope": "Yes if it is a milestone of Buddhism, Hinduism or another Asian faith",
+      "boundary": "Faiths of Asia: Asia's religions, their founding and Sikhism included; temples as buildings go to Houses of Worship, Islam to The Caliphs, the Diamond Sutra to Letters & Type.",
+      "neighbours": ["faith-founded", "houses-of-worship", "temple-kingdoms"],
+      "grid": {
+        "categories": ["figures", "architecture"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["South Asia", "East Asia", "Southeast Asia"]
+      },
+      "example_beats": [
+        "Siddhartha attains enlightenment (c. 528 BC)",
+        "Ashoka converts after Kalinga (261 BC)",
+        "Buddhism enters China (67)",
+        "Zhang Daoling founds the Celestial Masters (142)",
+        "Buddhism reaches Japan (552)",
+        "Samye, Tibet's first monastery (779)",
+        "Dalai Lama title created (1578)",
+        "Eisai brings Zen to Japan (1191)",
+        "Guru Granth Sahib compiled (1604)",
+        "Bamiyan Buddhas destroyed (2001)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "dress-code",
+      "name": "Dress Code",
+      "scope": "Yes if it is a garment, fabric or fashion house",
+      "boundary": "Dress Code: clothes and the cloth they are cut from, spinning and weaving machines and new fibres included; engines and factory methods go to Made by Machine, the ads behind brands to Sell, Sell, Sell, other new materials to Material World.",
+      "neighbours": ["made-by-machine", "sell-sell-sell", "material-world"],
+      "grid": {
+        "categories": ["craft", "commerce", "art"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Kay's flying shuttle (1733)",
+        "Perkin's mauve dye (1856)",
+        "Charles Worth opens a Paris couture house (1858)",
+        "Levi's riveted jeans patent (1873)",
+        "Chanel's little black dress (1926)",
+        "Nylon (1935)",
+        "The bikini (1946)",
+        "Dior's New Look (1947)",
+        "Mary Quant's miniskirt (1964)",
+        "Air Jordan (1985)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "faith-founded",
+      "name": "Faith Founded",
+      "scope": "Yes if it is the founding of a religion, sect or religious order",
+      "boundary": "Faith Founded owns the beginnings of faiths, sects and orders; Asia's religions and Sikhism go to Faiths of Asia, the papacy to Habemus Papam, the caliphate to The Caliphs.",
+      "neighbours": ["habemus-papam", "faiths-of-asia", "caliphates"],
+      "grid": {
+        "categories": ["figures", "revolution"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Benedict founds Monte Cassino (529)",
+        "The Hijra to Medina (622)",
+        "Cluny Abbey founded (910)",
+        "Francis founds the Franciscans (1209)",
+        "George Fox founds the Quakers (1652)",
+        "Luther's Ninety-five Theses (1517)",
+        "Ignatius founds the Jesuits (1540)",
+        "Wesley's heart 'strangely warmed', Methodism begins (1738)",
+        "Joseph Smith founds the Church of Christ (1830)",
+        "Salvation Army founded (1865)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "in-your-pocket",
+      "name": "In Your Pocket",
+      "scope": "Yes if it is a phone or other gadget you carry around",
+      "boundary": "In Your Pocket: carry-anywhere devices; watches go to Clockwork, handheld game consoles to Insert Coin, recorded-music formats to Press Play, home appliances to Household Gadgets.",
+      "neighbours": ["household-gadgets", "press-play", "insert-coin"],
+      "grid": {
+        "categories": ["invention", "commerce"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["North America", "East Asia", "Global"]
+      },
+      "example_beats": [
+        "Regency TR-1, first transistor radio (1954)",
+        "HP-35 pocket calculator (1972)",
+        "Motorola makes the first mobile phone call (1973)",
+        "Sony Walkman (1979)",
+        "DynaTAC goes on sale (1983)",
+        "Nokia 1011 and the SMS era begin (1992)",
+        "BlackBerry pager (1999)",
+        "First camera phone (2000)",
+        "Apple iPod (2001)",
+        "iPhone unveiled (2007)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "flying-colours",
+      "name": "Flying Colours",
+      "scope": "Yes if it is a country's flag first being raised",
+      "boundary": "Flying Colours: a national flag first raised or adopted; independence itself goes to Flags Come Down, countries' founding moments to Nations of Europe, colonial footholds to Flag Planted.",
+      "neighbours": ["flags-come-down", "nations-of-europe", "colonies-founded"],
+      "grid": {
+        "categories": ["diplomacy", "art"],
+        "eras": ["earlyModern", "industrial", "coldWar"],
+        "regions": ["Global", "Europe"]
+      },
+      "example_beats": [
+        "The Dannebrog falls from the sky at Lyndanisse (1219)",
+        "The first Union Flag (1606)",
+        "The Flag Act adopts the Stars and Stripes (1777)",
+        "France adopts the tricolour (1794)",
+        "Italy's tricolore first flown at Reggio Emilia (1797)",
+        "The Union Flag gains the cross of St Patrick (1801)",
+        "Brazil raises its green and gold flag (1889)",
+        "The Australian flag is first flown (1901)",
+        "Canada raises the Maple Leaf (1965)",
+        "South Africa's new flag (1994)"
+      ],
+      "appeal": 2,
+      "notes": "Famous flags only, dated to when each was first hoisted or officially adopted.",
+      "status": "queued"
+    },
+    {
+      "id": "mughals",
+      "name": "Peacock Throne",
+      "scope": "Yes if it is an act of a Delhi sultan or Mughal emperor",
+      "boundary": "Peacock Throne: Muslim rulers of Delhi and the Mughal court, the Taj Mahal and Timur's sack of Delhi included; the Company's rise goes to The Raj, Persian shahs to Kings of Kings, Ottoman sultans to Sublime Porte, Razia Sultana to Crowned Queens.",
+      "neighbours": ["the-raj", "ottomans", "kings-of-kings"],
+      "grid": {
+        "categories": ["empires", "architecture", "warfare"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["South Asia"]
+      },
+      "example_beats": [
+        "Qutb ud-Din Aibak founds the Delhi Sultanate (1206)",
+        "Tughluq moves the capital to Daulatabad (1327)",
+        "Timur sacks Delhi (1398)",
+        "Babur wins at Panipat (1526)",
+        "Akbar is crowned (1556)",
+        "Fatehpur Sikri founded (1571)",
+        "Shah Jahan begins the Taj Mahal (1632)",
+        "Aurangzeb seizes the throne (1658)",
+        "Nadir Shah sacks Delhi (1739)",
+        "Last Mughal emperor deposed (1857)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "strike-it-rich",
+      "name": "Strike It Rich",
+      "scope": "Yes if it is a gold, silver or diamond strike or rush",
+      "boundary": "Strike It Rich: rushes and finds of precious metals and gems; oil goes to Black Gold, the conquest that found Potosi to Conquistadors.",
+      "neighbours": ["black-gold", "conquistadors", "colonies-founded"],
+      "grid": {
+        "categories": ["commerce", "migration", "trade"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["North America", "Oceania", "Sub-Saharan Africa"]
+      },
+      "example_beats": [
+        "Silver found at Potosi (1545)",
+        "Gold at Sutter's Mill (1848)",
+        "Ballarat gold rush (1851)",
+        "Comstock Lode (1859)",
+        "Diamonds found at Kimberley (1871)",
+        "Gold on the Witwatersrand (1886)",
+        "Coolgardie gold rush (1892)",
+        "Klondike gold rush (1896)",
+        "Cullinan diamond found (1905)",
+        "Argyle diamond mine opens (1983)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "war-machines",
+      "name": "War Machines",
+      "scope": "Yes if it is a famous weapon or fighting machine",
+      "boundary": "War Machines: weapons from Greek fire to drones; nuclear bombs go to The Atomic Age, rockets as launchers to Lift-Off!, warship designs to Sail & Steam.",
+      "neighbours": ["atomic-age", "lift-off", "ships"],
+      "grid": {
+        "categories": ["warfare", "invention"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Greek fire used at Constantinople (674)",
+        "Gatling gun patented (1861)",
+        "Maxim machine gun (1884)",
+        "Poison gas at Ypres (1915)",
+        "Tanks debut at the Somme (1916)",
+        "Radar network built in Britain (1935)",
+        "Me 262 jet fighter enters combat (1944)",
+        "AK-47 adopted (1947)",
+        "F-117 stealth fighter enters service (1983)",
+        "Predator drone's first missile strike (2001)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "taxing-times",
+      "name": "Taxing Times",
+      "scope": "Yes if it is a tax, tariff or census",
+      "boundary": "Taxing Times: what states took and counted; the revolts taxes sparked go to Rise Up!, the Boston Tea Party to What We Drink, money itself to Hard Currency.",
+      "neighbours": ["money", "what-we-drink", "english-history"],
+      "grid": {
+        "categories": ["law", "commerce", "revolution"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Domesday Book (1086)",
+        "Window tax introduced in England (1696)",
+        "Stamp Act (1765)",
+        "First US census (1790)",
+        "Pitt introduces income tax (1799)",
+        "Corn Laws repealed (1846)",
+        "Sixteenth Amendment allows income tax (1913)",
+        "Smoot-Hawley Tariff (1930)",
+        "France introduces VAT (1954)",
+        "Poll tax riots (1990)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "scramble-for-africa",
+      "name": "Scramble for Africa",
+      "scope": "Yes if it is a foreign expedition, claim or conquest in Africa",
+      "boundary": "Scramble for Africa: outsiders' expeditions and claims in Africa and the resistance to them; forts and colonies such as Elmina and Cape Town go to Flag Planted, African states' own story to African Kingdoms, independence to Flags Come Down.",
+      "neighbours": ["african-kingdoms", "colonies-founded", "flags-come-down"],
+      "grid": {
+        "categories": ["empires", "warfare", "diplomacy"],
+        "eras": ["industrial", "worldWars"],
+        "regions": ["Sub-Saharan Africa", "Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Mungo Park reaches the Niger (1796)",
+        "Italy invades Ethiopia (1935)",
+        "France invades Algiers (1830)",
+        "Livingstone sees Victoria Falls (1855)",
+        "Speke finds the Nile's source (1858)",
+        "Stanley finds Livingstone (1871)",
+        "Zulu War (1879)",
+        "Berlin Conference (1885)",
+        "Fashoda crisis (1898)",
+        "Boer War begins (1899)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "scope": "Yes if it is a famous album",
+      "boundary": "Platinum: the albums themselves; single anthems, protest songs and charity singles go to Sing Out!, the birth of styles to Born to Groove, concerts to Crowd Roars, formats such as the LP to Press Play.",
+      "neighbours": ["sing-out", "born-to-groove", "press-play"],
+      "grid": {
+        "categories": ["media", "art", "commerce"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["North America", "Europe", "Global"]
+      },
+      "example_beats": [
+        "Kind of Blue (1959)",
+        "Pet Sounds (1966)",
+        "Sgt. Pepper's Lonely Hearts Club Band (1967)",
+        "The Dark Side of the Moon (1973)",
+        "Rumours (1977)",
+        "Thriller (1982)",
+        "The Joshua Tree (1987)",
+        "Nevermind (1991)",
+        "Back to Black (2006)",
+        "Adele's 21 (2011)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "mind-the-gap",
+      "name": "Mind the Gap",
+      "scope": "Yes if it is the opening of a city metro, tram or bus system",
+      "boundary": "Mind the Gap owns urban transit; intercity railways go to All Aboard!, tunnels as engineering feats to Bridges & Tunnels.",
+      "neighbours": ["all-aboard", "crossings", "pedal-and-petrol"],
+      "grid": {
+        "categories": ["invention", "architecture"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Pascal's five-sol coaches in Paris (1662)",
+        "Shillibeer's London omnibus (1829)",
+        "San Francisco cable car (1873)",
+        "Lichterfelde electric tram (1881)",
+        "Budapest metro (1896)",
+        "Paris Metro (1900)",
+        "New York subway (1904)",
+        "Tokyo Ginza Line (1927)",
+        "Moscow Metro (1935)",
+        "Mexico City Metro (1969)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "caliphates",
+      "name": "The Caliphs",
+      "scope": "Yes if it is a defining act of a caliph or caliphate",
+      "boundary": "The Caliphs owns the caliphate; Ottoman sultans go to Sublime Porte, the Crusades to The Crusades, schools and libraries to Places of Learning.",
+      "neighbours": ["ottomans", "crusades", "schools"],
+      "grid": {
+        "categories": ["empires", "figures"],
+        "eras": ["medieval"],
+        "regions": ["Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Death of Muhammad (632)",
+        "Muslims take Jerusalem (637)",
+        "Battle of the Camel (656)",
+        "Battle of Karbala (680)",
+        "Dome of the Rock completed (691)",
+        "Umayyad conquest of Spain (711)",
+        "Abbasid revolution (750)",
+        "Harun al-Rashid becomes caliph (786)",
+        "Cordoba caliphate proclaimed (929)",
+        "Abbasid caliphate restored in Cairo (1261)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "inside-the-mind",
+      "name": "Inside the Mind",
+      "scope": "Yes if it is a landmark of psychology, psychiatry or brain science",
+      "boundary": "Inside the Mind owns the mind and brain, psychiatric drugs included; other medicines go to Wonder Drugs, scanners to Seeing Inside.",
+      "neighbours": ["wonder-drugs", "seeing-inside", "under-the-knife"],
+      "grid": {
+        "categories": ["science", "medicine"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Bethlem takes its first patients (1247)",
+        "Pinel unchains the insane (1793)",
+        "Phineas Gage's accident (1848)",
+        "Broca finds the speech area (1861)",
+        "Wundt opens first psychology lab (1879)",
+        "Freud's Interpretation of Dreams (1899)",
+        "Binet's intelligence test (1905)",
+        "Rorschach's inkblot test (1921)",
+        "Chlorpromazine, the first antipsychotic (1952)",
+        "Milgram's obedience experiment (1961)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "letters-and-type",
+      "name": "Letters & Type",
+      "scope": "Yes if it is a milestone in printing, typing or typefaces",
+      "boundary": "Letters & Type: the look and mechanics of text, the Diamond Sutra and Jikji included; secret writing goes to Codes & Ciphers, Hangul to Korean Wave, reference books to Look It Up.",
+      "neighbours": ["ciphers", "korean-wave", "look-it-up"],
+      "grid": {
+        "categories": ["writing", "invention", "media"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Europe", "East Asia", "Global"]
+      },
+      "example_beats": [
+        "Diamond Sutra printed in China (868)",
+        "Jikji printed with metal type in Korea (1377)",
+        "Baskerville's typeface (1757)",
+        "Gutenberg Bible printed (1455)",
+        "Aldus Manutius introduces italic type (1501)",
+        "Louis Braille's tactile alphabet (1824)",
+        "Sholes typewriter patented (1868)",
+        "Linotype machine debuts (1886)",
+        "Helvetica released (1957)",
+        "Unicode first published (1991)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "code-of-life",
+      "name": "Code of Life",
+      "scope": "Yes if it is a step in discovering or editing DNA and genes",
+      "boundary": "Code of Life owns genetics; evolution and natural history go to Field Notes, scanning to Seeing Inside, domesticated animals to Tamed.",
+      "neighbours": ["field-notes", "seeing-inside", "tamed"],
+      "grid": {
+        "categories": ["science", "medicine"],
+        "eras": ["industrial", "coldWar", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Mendel's pea experiments published (1866)",
+        "Morgan's fruit flies map genes (1910)",
+        "Griffith's transforming principle (1928)",
+        "Avery shows DNA carries heredity (1944)",
+        "Watson and Crick's double helix (1953)",
+        "Genetic code cracked (1966)",
+        "Recombinant DNA (1973)",
+        "PCR invented (1983)",
+        "Human Genome Project completed (2003)",
+        "CRISPR gene editing demonstrated (2012)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "between-the-rivers",
+      "name": "Between the Rivers",
+      "scope": "Yes if it is an event of Sumer, Babylon or Assyria",
+      "boundary": "Between the Rivers: Sumer, Babylon and Assyria; Persia from Cyrus on goes to Kings of Kings, sieges to Under Siege, Egypt to Pharaohs, Ashurbanipal's library to Places of Learning.",
+      "neighbours": ["kings-of-kings", "pharaohs", "schools"],
+      "grid": {
+        "categories": ["empires", "writing", "law"],
+        "eras": ["prehistory", "ancient"],
+        "regions": ["Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Uruk becomes the first city (c. 3500 BC)",
+        "Cuneiform writing emerges (c. 3200 BC)",
+        "Sargon of Akkad founds his empire (2334 BC)",
+        "Code of Ur-Nammu (c. 2100 BC)",
+        "Hammurabi takes the throne (1792 BC)",
+        "Hittites sack Babylon (1595 BC)",
+        "Tiglath-Pileser III revives Assyria (745 BC)",
+        "Sennacherib builds his Nineveh palace (700 BC)",
+        "Fall of Nineveh (612 BC)",
+        "Nebuchadnezzar first takes Jerusalem (597 BC)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "iron-curtain",
+      "name": "Iron Curtain",
+      "scope": "Yes if it is a Cold War crisis or proxy war",
+      "boundary": "Iron Curtain: the blocs' confrontation, the Berlin Wall and the Cuban Missile Crisis included; bombs and arms treaties go to The Atomic Age, alliances to Safety in Numbers, communism's own revolutions to Red Flags, spies to Spy Games.",
+      "neighbours": ["atomic-age", "red-flags", "spy-games"],
+      "grid": {
+        "categories": ["diplomacy", "warfare", "revolution"],
+        "eras": ["coldWar"],
+        "regions": ["Global", "Europe", "East Asia"]
+      },
+      "example_beats": [
+        "Churchill's Iron Curtain speech (1946)",
+        "Cuban Missile Crisis (1962)",
+        "Berlin Airlift (1948)",
+        "Korean War begins (1950)",
+        "Hungarian uprising (1956)",
+        "Bay of Pigs (1961)",
+        "Gulf of Tonkin incident (1964)",
+        "Prague Spring crushed (1968)",
+        "Soviet invasion of Afghanistan (1979)",
+        "Reagan says 'Tear down this wall' (1987)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "houses-of-worship",
+      "name": "Houses of Worship",
+      "scope": "Yes if it is the building of a famous temple, church, mosque or shrine",
+      "boundary": "Houses of Worship: sacred buildings; spires that set height records go to Tallest in the World, Angkor Wat to Temple Kingdoms, the Golden Temple to Faiths of Asia, the Dome of the Rock to The Caliphs, Hagia Sophia to The Roman Story.",
+      "neighbours": ["skyline", "caliphates", "rome"],
+      "grid": {
+        "categories": ["architecture", "art"],
+        "eras": ["ancient", "medieval", "earlyModern"],
+        "regions": ["Europe", "Middle East & North Africa", "South Asia"]
+      },
+      "example_beats": [
+        "Parthenon completed (432 BC)",
+        "Pantheon rebuilt (126)",
+        "Great Mosque of Cordoba begun (785)",
+        "Brihadeeswarar Temple completed (1010)",
+        "Notre-Dame begun (1163)",
+        "Florence dome completed (1436)",
+        "St Basil's Cathedral (1561)",
+        "Chartres Cathedral rebuilt (1194)",
+        "Blue Mosque (1616)",
+        "Sagrada Familia begun (1882)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "take-to-the-streets",
+      "name": "Take to the Streets",
+      "scope": "Yes if it is a famous protest march or demonstration",
+      "boundary": "Take to the Streets: protests and marches; strikes go to Down Tools, racial-equality protests to Civil Rights Road, Gandhi's Salt March to The Raj, armed uprisings to Rise Up!",
+      "neighbours": ["down-tools", "civil-rights", "rise-up"],
+      "grid": {
+        "categories": ["revolution", "law"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Women's March on Versailles (1789)",
+        "Peterloo (1819)",
+        "Chartists rally at Kennington Common (1848)",
+        "Bonus Army marches on Washington (1932)",
+        "Jarrow March (1936)",
+        "First Aldermaston march (1958)",
+        "May 68 in Paris (1968)",
+        "Stonewall (1969)",
+        "People Power Revolution in Manila (1986)",
+        "Tiananmen Square protests (1989)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "habemus-papam",
+      "name": "Habemus Papam",
+      "scope": "Yes if it is a moment in the history of the papacy",
+      "boundary": "Habemus Papam owns popes and councils; religious beginnings go to Faith Founded, the Crusades to The Crusades.",
+      "neighbours": ["faith-founded", "crusades", "kings-of-france"],
+      "grid": {
+        "categories": ["figures", "diplomacy"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [
+        "Leo I meets Attila (452)",
+        "Gregory I elected (590)",
+        "Leo III crowns Charlemagne (800)",
+        "Gregory VII and Canossa (1077)",
+        "Avignon papacy begins (1309)",
+        "Council of Constance ends the Western Schism (1417)",
+        "Julius II commissions St Peter's (1506)",
+        "Council of Trent opens (1545)",
+        "Papal infallibility declared (1870)",
+        "Lateran Treaty (1929)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "crime-and-punishment",
+      "name": "Crime & Punishment",
+      "scope": "Yes if it is a milestone in policing or punishing crime",
+      "boundary": "Crime & Punishment: police, prisons and detection; trials go to Day in Court, invented detectives to Whodunit, robberies to Stolen!",
+      "neighbours": ["day-in-court", "whodunit", "heists"],
+      "grid": {
+        "categories": ["law", "invention"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Bow Street Runners formed (1749)",
+        "First guillotine execution (1792)",
+        "Metropolitan Police founded (1829)",
+        "Pinkerton agency founded (1850)",
+        "Bertillon's identification system (1879)",
+        "First electric chair execution (1890)",
+        "FBI founded (1908)",
+        "Interpol founded (1923)",
+        "Alcatraz opens as a federal prison (1934)",
+        "DNA fingerprinting developed (1984)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "crowd-roars",
+      "name": "Crowd Roars",
+      "scope": "Yes if it is a famous concert, tour or music festival",
+      "boundary": "Crowd Roars: a dated live performance or music festival; carnivals and parades go to Let's Celebrate, opera and theatre premieres to On Stage.",
+      "neighbours": ["lets-celebrate", "platinum", "on-stage"],
+      "grid": {
+        "categories": ["media", "art"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["North America", "Europe", "Global"]
+      },
+      "example_beats": [
+        "Benny Goodman at Carnegie Hall (1938)",
+        "Dylan goes electric at Newport (1965)",
+        "Monterey Pop Festival (1967)",
+        "Woodstock (1969)",
+        "First Glastonbury (1970)",
+        "Concert for Bangladesh (1971)",
+        "Live Aid (1985)",
+        "Three Tenors in Rome (1990)",
+        "Coachella first held (1999)",
+        "Live 8 (2005)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "material-world",
+      "name": "Material World",
+      "scope": "Yes if it is a material people learned to make",
+      "boundary": "Material World: new stuff to make things from, copper and bronze to plastics; fibres such as nylon go to Dress Code, tall-building steel to Tallest in the World, writing surfaces to Letters & Type.",
+      "neighbours": ["dress-code", "skyline", "eureka"],
+      "grid": {
+        "categories": ["invention", "craft", "science"],
+        "eras": ["prehistory", "ancient", "industrial"],
+        "regions": ["Global", "Middle East & North Africa", "Europe"]
+      },
+      "example_beats": [
+        "Copper is first smelted (5000 BC)",
+        "Bronze in Sumer (3300 BC)",
+        "Glass in Mesopotamia (2500 BC)",
+        "Hittite iron (1400 BC)",
+        "Roman concrete (200 BC)",
+        "Damascus steel (900)",
+        "Bessemer steel process (1856)",
+        "Bakelite, the first plastic (1907)",
+        "Stainless steel (1913)",
+        "Kevlar (1965)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "civil-rights",
+      "name": "Civil Rights Road",
+      "scope": "Yes if it is a moment in a fight for racial equality",
+      "boundary": "Civil Rights Road: struggles against segregation and racial discrimination anywhere, the US and South Africa included; ending slavery goes to Chains Broken, other marches to Take to the Streets, other trials to Day in Court.",
+      "neighbours": ["chains-broken", "take-to-the-streets", "day-in-court"],
+      "grid": {
+        "categories": ["revolution", "law", "figures"],
+        "eras": ["industrial", "coldWar", "modern"],
+        "regions": ["North America", "Sub-Saharan Africa", "Global"]
+      },
+      "example_beats": [
+        "Plessy v. Ferguson (1896)",
+        "NAACP founded (1909)",
+        "Truman desegregates the armed forces (1948)",
+        "Brown v. Board of Education (1954)",
+        "Montgomery bus boycott (1955)",
+        "Sharpeville (1960)",
+        "March on Washington (1963)",
+        "Selma marches (1965)",
+        "Soweto uprising (1976)",
+        "Mandela freed (1990)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "taking-measure",
+      "name": "Taking Measure",
+      "scope": "Yes if it is a unit, scale or standard of measurement",
+      "boundary": "Taking Measure owns units and scales, the Richter scale included; clocks, calendars and Greenwich time go to Clockwork, weather instruments to Weather Eye, maps to Mapmakers.",
+      "neighbours": ["clockwork", "weather-eye", "reading-the-rocks"],
+      "grid": {
+        "categories": ["science", "invention"],
+        "eras": ["earlyModern", "industrial", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Fahrenheit's thermometer scale (1724)",
+        "Celsius scale (1742)",
+        "Metric system adopted in France (1795)",
+        "Beaufort wind scale (1805)",
+        "Mohs hardness scale (1812)",
+        "Imperial units standardised (1824)",
+        "pH scale (1909)",
+        "Richter scale (1935)",
+        "SI system adopted (1960)",
+        "Kilogram redefined by a constant (2019)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "funny-pages",
+      "name": "Funny Pages",
+      "scope": "Yes if it is a comic strip, comic book or comics hero",
+      "boundary": "Funny Pages: comics; manga share a few with Cool Japan, animated cartoons go to Drawn to Life.",
+      "neighbours": ["cool-japan", "drawn-to-life"],
+      "grid": {
+        "categories": ["media", "art", "writing"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Europe"]
+      },
+      "example_beats": [
+        "The Yellow Kid (1895)",
+        "Tintin debuts (1929)",
+        "Superman in Action Comics (1938)",
+        "Wonder Woman debuts (1941)",
+        "Peanuts debuts (1950)",
+        "Asterix debuts (1959)",
+        "Spider-Man debuts (1962)",
+        "Garfield debuts (1978)",
+        "Calvin and Hobbes (1985)",
+        "Watchmen (1986)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "chains-broken",
+      "name": "Chains Broken",
+      "scope": "Yes if it is a step toward ending slavery or serfdom",
+      "boundary": "Chains Broken owns abolition and emancipation, the Emancipation Proclamation and 13th Amendment included; revolts go to Rise Up!, the later fight against segregation to Civil Rights Road, Haiti's revolution to The Liberators.",
+      "neighbours": ["rise-up", "civil-rights", "the-liberators"],
+      "grid": {
+        "categories": ["law", "revolution"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Quakers petition against slavery (1688)",
+        "Somerset v Stewart (1772)",
+        "Britain ends the slave trade (1807)",
+        "Slavery Abolition Act (1833)",
+        "France abolishes slavery (1848)",
+        "Russian serfs freed (1861)",
+        "Emancipation Proclamation (1863)",
+        "13th Amendment (1865)",
+        "Brazil's Golden Law (1888)",
+        "Mauritania criminalizes slavery (1981)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "pedal-and-petrol",
+      "name": "Pedal & Petrol",
+      "scope": "Yes if it is a milestone of the car, motorcycle or bicycle",
+      "boundary": "Pedal & Petrol: road vehicles with wheels; company foundings go to Still Trading, roads to The Open Road, factory methods to Made by Machine.",
+      "neighbours": ["open-road", "made-by-machine"],
+      "grid": {
+        "categories": ["invention", "commerce"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Cugnot's steam carriage (1769)",
+        "Draisine hobby-horse (1817)",
+        "Benz Patent-Motorwagen (1886)",
+        "Daimler's Reitwagen, first motorcycle (1885)",
+        "Model T launched (1908)",
+        "Volkswagen Beetle (1938)",
+        "Vespa scooter (1946)",
+        "Mini (1959)",
+        "First mountain bikes in Marin County (1977)",
+        "Tesla Roadster delivered (2008)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "steppe-riders",
+      "name": "Horse Lords",
+      "scope": "Yes if it is a deed of the steppe nomads, from Scythians to Mongols",
+      "boundary": "Horse Lords: Scythians, Huns, Turks, Seljuks and the Mongol empire; China's own dynasties, the Yuan included, go to Mandate of Heaven, caravan trade to Silk Road, Timur in Delhi to Peacock Throne, the Mongol fleets off Japan to Shogun!, Hungary's and Bulgaria's founding to Nations of Europe.",
+      "neighbours": ["chinese-dynasties", "silk-road", "nations-of-europe"],
+      "grid": {
+        "categories": ["empires", "warfare", "figures"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["North & Central Asia", "Europe", "East Asia"]
+      },
+      "example_beats": [
+        "Modu unites the Xiongnu (209 BC)",
+        "Attila at the Catalaunian Plains (451)",
+        "Gokturk Khaganate founded (552)",
+        "Magyars defeated at Lechfeld (955)",
+        "Seljuks win at Manzikert (1071)",
+        "Temujin proclaimed Genghis Khan (1206)",
+        "Battle of Mohi (1241)",
+        "Battle of Ain Jalut (1260)",
+        "Batu founds the Golden Horde (1242)",
+        "Battle of Kulikovo (1380)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "when-it-went-wrong",
+      "name": "When It Went Wrong",
+      "scope": "Yes if it is an industrial or engineering disaster",
+      "boundary": "When It Went Wrong: engineering failures; bridge collapses go to Bridges & Tunnels, dam bursts other than Vajont to Waterworks, fires to Cities Ablaze, nuclear accidents to The Atomic Age, oil spills to Black Gold.",
+      "neighbours": ["crossings", "waterworks", "atomic-age"],
+      "grid": {
+        "categories": ["disasters", "invention"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "Courrieres mine disaster (1906)",
+        "Boston Molasses Flood (1919)",
+        "Halifax explosion (1917)",
+        "Texas City disaster (1947)",
+        "Vajont Dam disaster (1963)",
+        "Aberfan disaster (1966)",
+        "Bhopal gas leak (1984)",
+        "Challenger explodes (1986)",
+        "Rana Plaza collapses (2013)",
+        "Beirut port explosion (2020)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "conquistadors",
+      "name": "Conquistadors",
+      "scope": "Yes if it is part of the Spanish conquest or colonisation of the Americas",
+      "boundary": "Conquistadors: Spain in the Americas; Columbus's crossing goes to Landfall!, the civilisations before it to Before Columbus, cities still capitals today to Capitals Founded, silver rushes to Strike It Rich.",
+      "neighbours": ["before-columbus", "founding-cities", "strike-it-rich"],
+      "grid": {
+        "categories": ["warfare", "empires", "migration"],
+        "eras": ["earlyModern"],
+        "regions": ["South America", "North America"]
+      },
+      "example_beats": [
+        "Coronado hunts the Seven Cities of Gold (1540)",
+        "Balboa sights the Pacific (1513)",
+        "Cortes lands in Mexico (1519)",
+        "Tenochtitlan falls (1521)",
+        "Pizarro captures Atahualpa (1532)",
+        "De Soto reaches the Mississippi (1541)",
+        "Orellana descends the Amazon (1542)",
+        "Valladolid debate on the Indians (1550)",
+        "St Augustine founded in Florida (1565)",
+        "Last Inca ruler Tupac Amaru executed (1572)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "press-play",
+      "name": "Press Play",
+      "scope": "Yes if it is a way of recording, selling or hearing music",
+      "boundary": "Press Play: the music business and its formats; instruments go to Strike a Chord, radio and TV to Tune In, pocket players such as the Walkman and iPod to In Your Pocket, which owns them.",
+      "neighbours": ["strike-a-chord", "tune-in", "in-your-pocket"],
+      "grid": {
+        "categories": ["invention", "media", "commerce"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Global"]
+      },
+      "example_beats": [
+        "Edison's phonograph (1877)",
+        "Berliner's gramophone disc (1887)",
+        "Magnetic tape recorder, the Magnetophon (1935)",
+        "Columbia launches the LP (1948)",
+        "Motown founded (1959)",
+        "Philips compact cassette (1963)",
+        "Compact disc goes on sale (1982)",
+        "MP3 format standardised (1993)",
+        "Napster launches (1999)",
+        "Spotify launches (2008)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "pens-over-swords",
+      "name": "Pens Over Swords",
+      "scope": "Yes if it is a famous book or pamphlet of political ideas",
+      "boundary": "Pens Over Swords: political thought in print; the Communist Manifesto goes to Red Flags, constitutions to Law of the Land, books that were banned to Banned!",
+      "neighbours": ["red-flags", "law-of-the-land", "banned"],
+      "grid": {
+        "categories": ["writing", "law", "revolution"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "The Prince (1532)",
+        "Hobbes's Leviathan (1651)",
+        "Locke's Two Treatises of Government (1689)",
+        "Rousseau's The Social Contract (1762)",
+        "Paine's Common Sense (1776)",
+        "Burke's Reflections on the Revolution in France (1790)",
+        "Wollstonecraft's Vindication of the Rights of Woman (1792)",
+        "Mill's On Liberty (1859)",
+        "Hayek's The Road to Serfdom (1944)",
+        "Arendt's Origins of Totalitarianism (1951)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "spy-games",
+      "name": "Spy Games",
+      "scope": "Yes if it is a famous spy, spy ring or espionage operation",
+      "boundary": "Spy Games: espionage; making and breaking codes goes to Codes & Ciphers, Cold War crises to Iron Curtain, political murders to Assassinations.",
+      "neighbours": ["ciphers", "iron-curtain", "assassinations"],
+      "grid": {
+        "categories": ["warfare", "figures", "diplomacy"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Nathan Hale hanged (1776)",
+        "MI5 founded (1909)",
+        "Mata Hari executed (1917)",
+        "Operation Mincemeat (1943)",
+        "CIA founded (1947)",
+        "Rosenbergs executed (1953)",
+        "U-2 pilot Gary Powers shot down (1960)",
+        "Kim Philby defects to Moscow (1963)",
+        "Aldrich Ames arrested (1994)",
+        "Litvinenko poisoned in London (2006)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "made-by-machine",
+      "name": "Made by Machine",
+      "scope": "Yes if it is an engine, machine tool or factory method",
+      "boundary": "Made by Machine: engines, tools and factories; textile machines go to Dress Code, robots to Automata, steel for skyscrapers to Tallest in the World.",
+      "neighbours": ["dress-code", "automata", "skyline"],
+      "grid": {
+        "categories": ["invention", "commerce", "craft"],
+        "eras": ["earlyModern", "industrial", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Newcomen's steam engine (1712)",
+        "Watt's separate condenser (1769)",
+        "Maudslay's screw-cutting lathe (1800)",
+        "Lenoir's internal combustion engine (1860)",
+        "Otto's four-stroke engine (1876)",
+        "Diesel's first working engine (1893)",
+        "Ford's moving assembly line (1913)",
+        "Whittle's jet engine runs (1937)",
+        "First numerically controlled machine tool (1952)",
+        "First 3D printer (1984)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "wonder-drugs",
+      "name": "Wonder Drugs",
+      "scope": "Yes if it is a medicine or drug being discovered or first used",
+      "boundary": "Wonder Drugs owns medicines; vaccines and epidemics go to Plague Years, psychiatric landmarks to Inside the Mind, operations to Under the Knife.",
+      "neighbours": ["plagues", "under-the-knife", "inside-the-mind"],
+      "grid": {
+        "categories": ["medicine", "science"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Withering publishes on digitalis (1785)",
+        "Morphine isolated (1804)",
+        "Quinine isolated (1820)",
+        "Aspirin synthesised at Bayer (1897)",
+        "Salvarsan, the first magic bullet (1909)",
+        "Insulin first used on a patient (1922)",
+        "Prontosil, the first sulfa drug (1935)",
+        "The Pill approved (1960)",
+        "Artemisinin isolated (1972)",
+        "Statins, Mevacor (1987)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "sing-out",
+      "name": "Sing Out!",
+      "scope": "Yes if it is an anthem or a song for a cause",
+      "boundary": "Sing Out!: songs that carry a cause, charity singles included; albums go to Platinum, the birth of styles to Born to Groove, benefit concerts to Crowd Roars.",
+      "neighbours": ["platinum", "born-to-groove", "crowd-roars"],
+      "grid": {
+        "categories": ["art", "media"],
+        "eras": ["earlyModern", "industrial", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "God Save the King first performed (1745)",
+        "La Marseillaise (1792)",
+        "The Star-Spangled Banner (1814)",
+        "The Internationale (1888)",
+        "Nkosi Sikelel' iAfrika (1897)",
+        "Strange Fruit (1939)",
+        "Blowin' in the Wind (1963)",
+        "Imagine (1971)",
+        "Do They Know It's Christmas? (1984)",
+        "Wind of Change (1990)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "other-worlds",
+      "name": "Other Worlds",
+      "scope": "Yes if it is a spacecraft reaching another world",
+      "boundary": "Other Worlds: probes and landings beyond Earth orbit, the Moon landings included; Earth-orbit flights and rockets go to Lift-Off!, planets spotted from the ground to Stargazers.",
+      "neighbours": ["lift-off", "stargazers", "cosmic-ideas"],
+      "grid": {
+        "categories": ["science", "invention"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["Global", "North America", "North & Central Asia"]
+      },
+      "example_beats": [
+        "Luna 2 hits the Moon (1959)",
+        "Mariner 2 flies past Venus (1962)",
+        "Luna 9 soft-lands on the Moon (1966)",
+        "Apollo 8 orbits the Moon (1968)",
+        "Apollo 11 lands on the Moon (1969)",
+        "Viking 1 lands on Mars (1976)",
+        "Voyager 2 flies past Neptune (1989)",
+        "Huygens lands on Titan (2005)",
+        "Curiosity lands on Mars (2012)",
+        "New Horizons flies past Pluto (2015)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "beyond-the-stars",
+      "name": "Beyond the Stars",
+      "scope": "Yes if it is a science fiction or fantasy book",
+      "boundary": "Beyond the Stars: speculative books; horror, Frankenstein included, goes to Fright Night, children's classics to Bedtime Stories, real space exploration to Other Worlds.",
+      "neighbours": ["fright-night", "bedtime-stories", "other-worlds"],
+      "grid": {
+        "categories": ["writing", "media"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Gulliver's Travels (1726)",
+        "Twenty Thousand Leagues Under the Sea (1870)",
+        "The Time Machine (1895)",
+        "The War of the Worlds (1898)",
+        "Brave New World (1932)",
+        "Nineteen Eighty-Four (1949)",
+        "The Lord of the Rings (1954)",
+        "Dune (1965)",
+        "The Hitchhiker's Guide to the Galaxy (1979)",
+        "Neuromancer (1984)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "newfound-beasts",
+      "name": "Newfound Beasts",
+      "scope": "Yes if it is an animal first described to science or found alive",
+      "boundary": "Newfound Beasts owns an animal species coming to light; single famous animals go to Famous Animals, fossils to Bone Hunters, deep-sea exploration to The Deep.",
+      "neighbours": ["famous-animals", "bone-hunters", "the-deep"],
+      "grid": {
+        "categories": ["nature", "science"],
+        "eras": ["earlyModern", "industrial", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Kangaroo described from Cook's voyage (1770)",
+        "Platypus reaches Britain (1799)",
+        "Gorilla described to science (1847)",
+        "Giant panda described (1869)",
+        "Okapi identified (1901)",
+        "Komodo dragon reported (1910)",
+        "Coelacanth caught alive (1938)",
+        "Megamouth shark found (1976)",
+        "Saola found in Vietnam (1992)",
+        "Giant squid filmed alive (2004)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "unveiled",
+      "name": "Unveiled!",
+      "scope": "Yes if it is a famous statue, memorial or monument",
+      "boundary": "Unveiled!: monuments that honour; pyramids go to Pharaohs, monuments that set height records to Tallest in the World, Mughal tombs to Peacock Throne.",
+      "neighbours": ["pharaohs", "skyline", "mughals"],
+      "grid": {
+        "categories": ["art", "architecture"],
+        "eras": ["ancient", "industrial", "worldWars"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Trajan's Column dedicated in Rome (113)",
+        "Michelangelo's David unveiled (1504)",
+        "Arc de Triomphe completed (1836)",
+        "Statue of Liberty dedicated (1886)",
+        "The Little Mermaid unveiled in Copenhagen (1913)",
+        "Lincoln Memorial dedicated (1922)",
+        "Christ the Redeemer completed (1931)",
+        "Mount Rushmore completed (1941)",
+        "Vietnam Veterans Memorial dedicated (1982)",
+        "Statue of Unity inaugurated (2018)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "food-tech",
+      "name": "Food Tech",
+      "scope": "Yes if it is a way of preserving or mass-producing food",
+      "boundary": "Food Tech: food from the factory; dishes from the kitchen go to Born in a Kitchen, sweets to Sweet Tooth, pasteurised drinks to What We Drink, fridges and microwaves to Household Gadgets.",
+      "neighbours": ["born-in-a-kitchen", "sweet-tooth", "household-gadgets"],
+      "grid": {
+        "categories": ["invention", "agriculture", "commerce"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "Appert invents canning (1809)",
+        "Borden's condensed milk (1856)",
+        "Pasteurisation developed (1862)",
+        "Margarine invented (1869)",
+        "Birdseye's frozen foods (1924)",
+        "Sliced bread sold (1928)",
+        "Spam launched (1937)",
+        "Kellogg's Corn Flakes (1894)",
+        "TV dinner introduced (1953)",
+        "Instant noodles invented (1958)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "against-the-odds",
+      "name": "Against the Odds",
+      "scope": "Yes if it is a small force's famous victory or last stand",
+      "boundary": "Against the Odds: the few against the many in open battle; sieges, the Alamo included, go to Under Siege, Agincourt stays with Kings of England, Adwa with African Kingdoms.",
+      "neighbours": ["sieges", "kings-of-england"],
+      "grid": {
+        "categories": ["warfare"],
+        "eras": ["ancient", "medieval", "industrial"],
+        "regions": ["Europe", "Global", "Sub-Saharan Africa"]
+      },
+      "example_beats": [
+        "Marathon (490 BC)",
+        "Thermopylae (480 BC)",
+        "Stirling Bridge (1297)",
+        "Crecy (1346)",
+        "Cannae (216 BC)",
+        "Camaron (1863)",
+        "Rorke's Drift (1879)",
+        "Morgarten (1315)",
+        "Battle of Britain (1940)",
+        "Suomussalmi (1939)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "famous-animals",
+      "name": "Famous Animals",
+      "scope": "Yes if it is a moment in the life of a famous individual animal",
+      "boundary": "Famous Animals owns named individual animals, space dogs, sled dogs and clones included; species-level stories go to Newfound Beasts, the last of a species to Gone Forever, kinds of animal put to work to Tamed.",
+      "neighbours": ["tamed", "gone-forever", "newfound-beasts"],
+      "grid": {
+        "categories": ["nature", "media"],
+        "eras": ["industrial", "worldWars", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Jumbo arrives at London Zoo (1865)",
+        "Greyfriars Bobby dies (1872)",
+        "Clever Hans the counting horse (1904)",
+        "Balto and the serum run (1925)",
+        "Hachiko's statue unveiled (1934)",
+        "Laika orbits the Earth (1957)",
+        "Ham the chimp flies into space (1961)",
+        "Koko the gorilla starts learning sign language (1972)",
+        "Dolly the sheep is cloned (1996)",
+        "Knut the polar bear cub (2007)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "crusades",
+      "name": "The Crusades",
+      "scope": "Yes if it is a moment in the Crusades",
+      "boundary": "The Crusades owns the holy wars; its great sieges (Jerusalem, Antioch, Acre) share with Under Siege, the caliphate's story goes to The Caliphs, popes to Habemus Papam.",
+      "neighbours": ["habemus-papam", "caliphates", "sieges"],
+      "grid": {
+        "categories": ["warfare", "empires"],
+        "eras": ["medieval"],
+        "regions": ["Middle East & North Africa", "Europe"]
+      },
+      "example_beats": [
+        "Council of Clermont (1095)",
+        "Knights Templar founded (1119)",
+        "Bernard preaches the Second Crusade at Vezelay (1146)",
+        "Saladin becomes sultan of Egypt (1171)",
+        "Battle of Hattin (1187)",
+        "Richard I wins at Arsuf (1191)",
+        "Children's Crusade (1212)",
+        "Frederick II regains Jerusalem by treaty (1229)",
+        "Louis IX captured at Mansoura (1250)",
+        "Fall of Acre (1291)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "weather-eye",
+      "name": "Weather Eye",
+      "scope": "Yes if it is a landmark in understanding or forecasting weather and climate",
+      "boundary": "Weather Eye owns weather and climate science; extreme events go to Wild Weather, units and scales to Taking Measure, protecting wildlife to Back from the Brink.",
+      "neighbours": ["wild-weather", "taking-measure", "back-from-the-brink"],
+      "grid": {
+        "categories": ["science", "invention"],
+        "eras": ["earlyModern", "industrial", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Torricelli invents the barometer (1643)",
+        "Howard names the clouds (1802)",
+        "FitzRoy issues the first public forecast (1861)",
+        "Arrhenius calculates CO2 warming (1896)",
+        "First numerical forecast on ENIAC (1950)",
+        "Keeling curve begins (1958)",
+        "TIROS-1 weather satellite (1960)",
+        "Ozone hole discovered (1985)",
+        "IPCC founded (1988)",
+        "Paris Agreement (2015)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "isms",
+      "name": "Isms",
+      "scope": "Yes if it is the launch of an art movement",
+      "boundary": "Isms: the birth of a movement; single famous paintings go to Gallery Greats, modern buildings to Modern Marvels.",
+      "neighbours": ["gallery-greats", "modern-marvels"],
+      "grid": {
+        "categories": ["art"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Pre-Raphaelite Brotherhood formed (1848)",
+        "First Impressionist exhibition (1874)",
+        "Fauvism debuts at the Salon d'Automne (1905)",
+        "Futurist Manifesto published (1909)",
+        "Armory Show brings modern art to America (1913)",
+        "Dada begins at Cabaret Voltaire (1916)",
+        "Bauhaus founded (1919)",
+        "Surrealist Manifesto (1924)",
+        "Pop art's first collage (1956)",
+        "Fluxus festival in Wiesbaden (1962)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "atomic-age",
+      "name": "The Atomic Age",
+      "scope": "Yes if it is a nuclear bomb, reactor, treaty or accident",
+      "boundary": "The Atomic Age: all things nuclear, arms treaties, civil power and its accidents included; fission's discovery stays with Eureka Moments, particles go to Building Blocks, the Cuban Missile Crisis to Iron Curtain.",
+      "neighbours": ["iron-curtain", "building-blocks", "eureka"],
+      "grid": {
+        "categories": ["warfare", "science", "diplomacy"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "First chain reaction in Chicago (1942)",
+        "Hiroshima bombed (1945)",
+        "First Soviet atomic bomb (1949)",
+        "First hydrogen bomb tested (1952)",
+        "Obninsk, first grid nuclear plant (1954)",
+        "Partial Test Ban Treaty (1963)",
+        "Non-Proliferation Treaty (1968)",
+        "Three Mile Island accident (1979)",
+        "Chernobyl disaster (1986)",
+        "Fukushima disaster (2011)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "cut-a-rug",
+      "name": "Cut a Rug",
+      "scope": "Yes if it is a dance or dance craze",
+      "boundary": "Cut a Rug: the dances themselves, folk, court and craze; music styles go to Born to Groove, ballet and stage premieres to On Stage, carnivals and parades to Let's Celebrate.",
+      "neighbours": ["born-to-groove", "on-stage", "lets-celebrate"],
+      "grid": {
+        "categories": ["art", "craft"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America", "South America"]
+      },
+      "example_beats": [
+        "Dancing plague of Strasbourg (1518)",
+        "Louis XIV founds the Royal Academy of Dance (1661)",
+        "The waltz sweeps the Congress of Vienna (1815)",
+        "Polka craze reaches Paris (1840)",
+        "Can-can at the new Moulin Rouge (1889)",
+        "Tango arrives in Paris (1912)",
+        "The Charleston (1923)",
+        "The Twist (1960)",
+        "Michael Jackson's moonwalk (1983)",
+        "Macarena (1996)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "crowned-queens",
+      "name": "Crowned Queens",
+      "scope": "Yes if it is a woman ruling a country in her own right",
+      "boundary": "Crowned Queens owns women who ruled, Razia Sultana and Nzinga included; English and British queens go to Kings of England, Egypt's to Pharaohs, Catherine the Great to The Romanovs, other women's firsts to The First Woman.",
+      "neighbours": ["kings-of-england", "pharaohs", "first-women"],
+      "grid": {
+        "categories": ["empires", "figures"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Zenobia of Palmyra rebels (270)",
+        "Empress Suiko crowned (593)",
+        "Irene becomes sole ruler of Byzantium (797)",
+        "Tamar crowned King of Georgia (1184)",
+        "Razia Sultana takes the Delhi throne (1236)",
+        "Isabella of Castile crowned (1474)",
+        "Nzinga becomes ruler of Ndongo (1624)",
+        "Maria Theresa inherits the Habsburg lands (1740)",
+        "Wilhelmina becomes Queen of the Netherlands (1890)",
+        "Liliuokalani becomes Hawaii's queen (1891)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "gallery-greats",
+      "name": "Gallery Greats",
+      "scope": "Yes if it is a single famous painting",
+      "boundary": "Gallery Greats: one famous picture; statues and memorials go to Unveiled!, the movements behind them to Isms, their thefts to Stolen!",
+      "neighbours": ["unveiled", "isms", "heists"],
+      "grid": {
+        "categories": ["art"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "The Last Supper (1498)",
+        "Mona Lisa (1503)",
+        "The Night Watch (1642)",
+        "Las Meninas (1656)",
+        "Girl with a Pearl Earring (1665)",
+        "Liberty Leading the People (1830)",
+        "The Starry Night (1889)",
+        "The Scream (1893)",
+        "The Persistence of Memory (1931)",
+        "Guernica (1937)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "red-flags",
+      "name": "Red Flags",
+      "scope": "Yes if it is a defining act of communism or a communist state",
+      "boundary": "Red Flags: communism's own story inside its states; standoffs with the West, the Berlin Wall and Soviet tanks in Budapest and Prague go to Iron Curtain, the Paris Commune to Rise Up!, the Romanov fall to The Romanovs, other political books to Pens Over Swords.",
+      "neighbours": ["iron-curtain", "romanovs", "pens-over-swords"],
+      "grid": {
+        "categories": ["revolution", "empires", "figures"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "Europe", "North & Central Asia"]
+      },
+      "example_beats": [
+        "Communist Manifesto (1848)",
+        "Lenin's New Economic Policy (1921)",
+        "Bolshevik Revolution (1917)",
+        "Comintern founded (1919)",
+        "USSR formed (1922)",
+        "First Five-Year Plan (1928)",
+        "Long March begins (1934)",
+        "People's Republic of China proclaimed (1949)",
+        "Cuban Revolution triumphs (1959)",
+        "Cultural Revolution begins (1966)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "front-pages",
+      "name": "Front Pages",
+      "scope": "Yes if it is the launch of a newspaper or magazine",
+      "boundary": "Front Pages: newspapers and magazines; reference works go to Look It Up, broadcast news to Tune In.",
+      "neighbours": ["look-it-up", "tune-in"],
+      "grid": {
+        "categories": ["media", "writing"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Relation, the first weekly paper, printed in Strasbourg (1605)",
+        "London Gazette first published (1665)",
+        "The Times founded (1785)",
+        "The Economist launched (1843)",
+        "New York Times founded (1851)",
+        "National Geographic launched (1888)",
+        "Vogue launched (1892)",
+        "Time magazine launched (1923)",
+        "The New Yorker launched (1925)",
+        "Rolling Stone launched (1967)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "software-and-ai",
+      "name": "Hello, World",
+      "scope": "Yes if it is a landmark of software or AI",
+      "boundary": "Hello, World: programs, languages and artificial intelligence; the machines go to Silicon Dreams, the web to Going Online, machines that beat us at chess or Go to The Games Board, Lovelace and Hopper to The First Woman.",
+      "neighbours": ["silicon-dreams", "going-online"],
+      "grid": {
+        "categories": ["invention", "science"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["North America", "Global"]
+      },
+      "example_beats": [
+        "Turing proposes his imitation game (1950)",
+        "Fortran released (1957)",
+        "ELIZA chatbot (1966)",
+        "Unix born at Bell Labs (1969)",
+        "VisiCalc, the first spreadsheet (1979)",
+        "Windows 1.0 (1985)",
+        "Linux announced by Torvalds (1991)",
+        "AlexNet wins ImageNet (2012)",
+        "Transformer paper (2017)",
+        "ChatGPT released (2022)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "cool-japan",
+      "name": "Cool Japan",
+      "scope": "Yes if it is Japanese pop culture",
+      "boundary": "Cool Japan: prints, films, manga, anime, characters and music, Godzilla and Ghibli included; video games go to Insert Coin, portable gadgets to In Your Pocket, the samurai age to Shogun!",
+      "neighbours": ["insert-coin", "in-your-pocket", "shogun"],
+      "grid": {
+        "categories": ["art", "media"],
+        "eras": ["industrial", "coldWar", "modern"],
+        "regions": ["East Asia"]
+      },
+      "example_beats": [
+        "Hokusai's Great Wave (1831)",
+        "Rashomon wins at Venice (1951)",
+        "Godzilla (1954)",
+        "Sukiyaki tops the US charts (1963)",
+        "Hello Kitty debuts (1974)",
+        "Dragon Ball debuts (1984)",
+        "Studio Ghibli founded (1985)",
+        "Akira (1988)",
+        "Sailor Moon (1992)",
+        "Naruto debuts (1999)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "field-notes",
+      "name": "Field Notes",
+      "scope": "Yes if it is a naturalist's voyage, book or big idea about life",
+      "boundary": "Field Notes owns natural history, evolution's story included; Cook's Endeavour voyage goes to Landfall!, fossils to Bone Hunters, new species to Newfound Beasts, genes to Code of Life, TV shows to Prime Time.",
+      "neighbours": ["newfound-beasts", "bone-hunters", "code-of-life"],
+      "grid": {
+        "categories": ["nature", "science", "writing"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Merian's Metamorphosis of the Insects of Surinam (1705)",
+        "Linnaeus publishes Systema Naturae (1735)",
+        "Gilbert White's Natural History of Selborne (1789)",
+        "Cuvier proves extinction is real (1796)",
+        "Humboldt reaches South America (1799)",
+        "Beagle leaves Plymouth (1831)",
+        "On the Origin of Species (1859)",
+        "Goodall begins at Gombe (1960)",
+        "Silent Spring (1962)",
+        "Wallace's letter from Ternate (1858)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "going-online",
+      "name": "Going Online",
+      "scope": "Yes if it is a milestone of the internet or the web",
+      "boundary": "Going Online: networks, protocols, browsers, search and early online services; phones go to In Your Pocket, the machines to Silicon Dreams.",
+      "neighbours": ["in-your-pocket"],
+      "grid": {
+        "categories": ["invention", "commerce", "media"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["North America", "Global"]
+      },
+      "example_beats": [
+        "ARPANET's first message (1969)",
+        "First email sent (1971)",
+        "TCP/IP adopted (1983)",
+        "First .com domain registered (1985)",
+        "Berners-Lee proposes the Web (1989)",
+        "First website goes live (1991)",
+        "Mosaic browser released (1993)",
+        "Amazon sells its first book (1995)",
+        "Google launched (1998)",
+        "Wikipedia launched (2001)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "doors-open",
+      "name": "Doors Open",
+      "scope": "Yes if it is a famous museum or gallery opening",
+      "boundary": "Doors Open: museums and galleries; schools and libraries go to Places of Learning, other landmark buildings to Modern Marvels.",
+      "neighbours": ["schools", "modern-marvels"],
+      "grid": {
+        "categories": ["art", "architecture"],
+        "eras": ["earlyModern", "industrial", "modern"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Capitoline Museums open in Rome (1471)",
+        "Ashmolean Museum opens (1683)",
+        "British Museum opens (1759)",
+        "Louvre opens to the public (1793)",
+        "Prado opens (1819)",
+        "Metropolitan Museum of Art opens (1872)",
+        "MoMA opens (1929)",
+        "Centre Pompidou opens (1977)",
+        "Guggenheim Bilbao opens (1997)",
+        "Tate Modern opens (2000)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "abdicated",
+      "name": "Abdicated!",
+      "scope": "Yes if it is a monarch abdicating or being forced off the throne",
+      "boundary": "Abdicated!: thrones given up or lost, including the last emperors of fallen empires; the exiles that followed go to Banished!, plots to Coup!, the Romanov end shares with The Romanovs, English kings with Kings of England.",
+      "neighbours": ["banished", "coup", "kings-of-england"],
+      "grid": {
+        "categories": ["empires", "figures"],
+        "eras": ["medieval", "industrial", "worldWars"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Diocletian retires (305)",
+        "Charles V abdicates (1556)",
+        "Queen Christina abdicates (1654)",
+        "Napoleon abdicates (1814)",
+        "Louis-Philippe flees Paris (1848)",
+        "Last Qing emperor Puyi abdicates (1912)",
+        "Nicholas II abdicates (1917)",
+        "Kaiser Wilhelm II abdicates (1918)",
+        "Edward VIII abdicates (1936)",
+        "Emperor Akihito abdicates (2019)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "bedtime-stories",
+      "name": "Bedtime Stories",
+      "scope": "Yes if it is a children's book or fairy-tale collection",
+      "boundary": "Bedtime Stories: books for children, children's fantasy included; fantasy aimed at adults goes to Beyond the Stars, toys of the characters to Toy Box.",
+      "neighbours": ["beyond-the-stars", "toy-box"],
+      "grid": {
+        "categories": ["writing", "media"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Grimm's Fairy Tales (1812)",
+        "Alice's Adventures in Wonderland (1865)",
+        "Pinocchio (1883)",
+        "The Tale of Peter Rabbit (1902)",
+        "Winnie-the-Pooh (1926)",
+        "The Hobbit (1937)",
+        "The Cat in the Hat (1957)",
+        "Where the Wild Things Are (1963)",
+        "The Very Hungry Caterpillar (1969)",
+        "Harry Potter and the Philosopher's Stone (1997)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "colonies-founded",
+      "name": "Flag Planted",
+      "scope": "Yes if it is the founding of a colony or trading post",
+      "boundary": "Flag Planted: footholds abroad, from Elmina to Cape Town and Botany Bay; the voyages that found the coasts go to Landfall!, cities now national capitals to Capitals Founded, Spain's American towns to Conquistadors, later inland claims in Africa to Scramble for Africa.",
+      "neighbours": ["sea-voyages", "founding-cities", "conquistadors"],
+      "grid": {
+        "categories": ["empires", "trade", "migration"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["North America", "South Asia", "Oceania"]
+      },
+      "example_beats": [
+        "Portuguese build Elmina (1482)",
+        "Portuguese take Goa (1510)",
+        "Macau leased (1557)",
+        "Jamestown founded (1607)",
+        "Quebec founded (1608)",
+        "Pilgrims land at Plymouth (1620)",
+        "Dejima trading island (1641)",
+        "Calcutta founded (1690)",
+        "First Fleet lands at Sydney Cove (1788)",
+        "Hong Kong ceded (1841)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "open-road",
+      "name": "The Open Road",
+      "scope": "Yes if it is a famous road, highway or rule of the road",
+      "boundary": "The Open Road owns roads and traffic rules; vehicles go to Pedal & Petrol, bridges and tunnels to Bridges & Tunnels, Roman roads may also fit The Roman Story.",
+      "neighbours": ["pedal-and-petrol", "crossings", "rome"],
+      "grid": {
+        "categories": ["invention", "architecture"],
+        "eras": ["ancient", "industrial", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Persian Royal Road (c. 500 BC)",
+        "Appian Way begun (312 BC)",
+        "McAdam's road surface (1816)",
+        "Red Flag Act (1865)",
+        "First traffic light, London (1868)",
+        "Lincoln Highway (1913)",
+        "Route 66 commissioned (1926)",
+        "Autobahn first section opens (1932)",
+        "Interstate Highway Act (1956)",
+        "Karakoram Highway opens (1979)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "still-trading",
+      "name": "Still Trading",
+      "scope": "Yes if it is the founding of a famous company that still exists",
+      "boundary": "Still Trading: the birth of a business, shop chains included; a firm's products go to the theme for what it makes (Pedal & Petrol, Insert Coin), restaurant chains to Order Up!, web platforms to Going Online, Coca-Cola to What We Drink, central banks to Hard Currency.",
+      "neighbours": ["retail-therapy", "money", "pedal-and-petrol"],
+      "grid": {
+        "categories": ["commerce", "craft"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Kongo Gumi builds Shitenno-ji (578)",
+        "Beretta founded (1526)",
+        "Hudson's Bay Company chartered (1670)",
+        "Wedgwood founded (1759)",
+        "Procter & Gamble founded (1837)",
+        "Nokia founded as a paper mill (1865)",
+        "Ford Motor Company founded (1903)",
+        "Disney brothers start their studio (1923)",
+        "Apple founded (1976)",
+        "Samsung founded (1938)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "say-cheese",
+      "name": "Say Cheese",
+      "scope": "Yes if it is a famous photograph or camera breakthrough",
+      "boundary": "Say Cheese: still photographs and cameras; moving pictures go to Roll Camera, phone cameras to In Your Pocket, Earthrise to Other Worlds, Tiananmen to Take to the Streets.",
+      "neighbours": ["roll-camera", "in-your-pocket"],
+      "grid": {
+        "categories": ["media", "invention", "art"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "First surviving photograph (1826)",
+        "Daguerreotype announced (1839)",
+        "Kodak camera launched (1888)",
+        "Migrant Mother (1936)",
+        "V-J Day kiss in Times Square (1945)",
+        "Polaroid instant camera (1948)",
+        "Guerrillero Heroico portrait of Che (1960)",
+        "Napalm girl photograph (1972)",
+        "Afghan Girl on the cover of National Geographic (1984)",
+        "Lunch atop a Skyscraper (1932)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "lines-on-a-map",
+      "name": "Lines on a Map",
+      "scope": "Yes if it is a border drawn or a territory bought, sold or swapped",
+      "boundary": "Lines on a Map: borders and land deals; treaties that ended wars go to Peace at Last, which owns the contested ones, alliances to Safety in Numbers, how maps were made to Mapmakers.",
+      "neighbours": ["peace", "safety-in-numbers", "mapmakers"],
+      "grid": {
+        "categories": ["diplomacy", "law", "empires"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Treaty of Tordesillas (1494)",
+        "Treaty of Nerchinsk (1689)",
+        "Mason-Dixon line surveyed (1767)",
+        "First Partition of Poland (1772)",
+        "Louisiana Purchase (1803)",
+        "Oregon Treaty sets the 49th parallel (1846)",
+        "Alaska purchased (1867)",
+        "Heligoland-Zanzibar Treaty (1890)",
+        "Sykes-Picot Agreement (1916)",
+        "Durand Line drawn (1893)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "banished",
+      "name": "Banished!",
+      "scope": "Yes if it is a famous exile or banishment",
+      "boundary": "Banished! owns exile; rulers fleeing or losing their thrones go to Abdicated!, communist leaders' careers to Red Flags.",
+      "neighbours": ["abdicated", "red-flags"],
+      "grid": {
+        "categories": ["figures", "revolution"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Ovid banished to Tomis (8)",
+        "Dante exiled from Florence (1302)",
+        "Voltaire exiled to England (1726)",
+        "Napoleon sent to St Helena (1815)",
+        "Marx settles in London (1849)",
+        "Trotsky expelled from the USSR (1929)",
+        "Einstein leaves Germany (1933)",
+        "Dalai Lama flees Tibet (1959)",
+        "Solzhenitsyn expelled from the USSR (1974)",
+        "Victor Hugo exiled to Guernsey (1855)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "broadsides",
+      "name": "Broadsides",
+      "scope": "Yes if it is a naval battle",
+      "boundary": "Broadsides: fleet against fleet, Actium, the Armada and Trafalgar included; piracy goes to Pirates & Privateers, ship designs to Sail & Steam.",
+      "neighbours": ["pirates", "ships", "against-the-odds"],
+      "grid": {
+        "categories": ["warfare"],
+        "eras": ["ancient", "earlyModern", "worldWars"],
+        "regions": ["Europe", "East Asia", "Global"]
+      },
+      "example_beats": [
+        "Salamis (480 BC)",
+        "Actium (31 BC)",
+        "Lepanto (1571)",
+        "Myeongnyang (1597)",
+        "Battle of the Nile (1798)",
+        "Hampton Roads (1862)",
+        "Tsushima (1905)",
+        "Jutland (1916)",
+        "Midway (1942)",
+        "Leyte Gulf (1944)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "drawn-to-life",
+      "name": "Drawn to Life",
+      "scope": "Yes if it is a milestone in animation",
+      "boundary": "Drawn to Life: animated films, characters and techniques; animated TV series go to Prime Time, anime to Cool Japan, live-action effects to Roll Camera.",
+      "neighbours": ["cool-japan", "roll-camera", "prime-time"],
+      "grid": {
+        "categories": ["media", "art", "invention"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Europe", "East Asia"]
+      },
+      "example_beats": [
+        "Fantasmagorie, first hand-drawn cartoon (1908)",
+        "Gertie the Dinosaur (1914)",
+        "Steamboat Willie, Mickey's debut (1928)",
+        "Snow White, first cel-animated feature (1937)",
+        "Tom and Jerry debut (1940)",
+        "The Jungle Book (1967)",
+        "Who Framed Roger Rabbit (1988)",
+        "Toy Story, first computer-animated feature (1995)",
+        "Shrek (2001)",
+        "Frozen (2013)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "sea-voyages",
+      "name": "Landfall!",
+      "scope": "Yes if it is a voyage of discovery across the sea",
+      "boundary": "Landfall!: voyages that found or crossed new waters, the Pacific included; the colonies that followed go to Flag Planted, polar pushes and summits to Ends of the Earth, ship designs to Sail & Steam.",
+      "neighbours": ["colonies-founded", "ends-of-the-earth", "ships"],
+      "grid": {
+        "categories": ["trade", "nature", "figures"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Global", "Oceania", "South America"]
+      },
+      "example_beats": [
+        "Zheng He's first voyage (1405)",
+        "Dias rounds the Cape (1488)",
+        "Columbus reaches the Bahamas (1492)",
+        "Da Gama reaches Calicut (1498)",
+        "Magellan's fleet sets out (1519)",
+        "Drake begins his circumnavigation (1577)",
+        "Tasman reaches New Zealand (1642)",
+        "Cook's Endeavour sails (1768)",
+        "Kon-Tiki sails to Polynesia (1947)",
+        "Hokule'a sails to Tahiti (1976)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "meiji-leap",
+      "name": "Meiji Leap",
+      "scope": "Yes if it is a milestone of Japan opening up and modernising",
+      "boundary": "Meiji Leap: Perry's arrival to the Meiji Emperor's death; the samurai age goes to Shogun!, constitutions share with Law of the Land, sea battles, Tsushima included, go to Broadsides.",
+      "neighbours": ["shogun", "law-of-the-land", "broadsides"],
+      "grid": {
+        "categories": ["revolution", "invention", "empires"],
+        "eras": ["industrial"],
+        "regions": ["East Asia"]
+      },
+      "example_beats": [
+        "Perry's Black Ships arrive (1853)",
+        "Meiji Restoration (1868)",
+        "Iwakura Mission sails (1871)",
+        "Tokyo to Yokohama railway opens (1872)",
+        "Satsuma Rebellion, last samurai uprising (1877)",
+        "Meiji Constitution promulgated (1889)",
+        "First Sino-Japanese War begins (1894)",
+        "Anglo-Japanese Alliance signed (1902)",
+        "Rokumeikan opens for Western-style balls (1883)",
+        "Emperor Meiji dies (1912)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "modern-marvels",
+      "name": "Modern Marvels",
+      "scope": "Yes if it is a celebrated modern building",
+      "boundary": "Modern Marvels: landmark modern design; record-height towers go to Tallest in the World, museums to Doors Open, world's fair pavilions to Step Right Up.",
+      "neighbours": ["skyline", "doors-open", "step-right-up"],
+      "grid": {
+        "categories": ["architecture", "art"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["Europe", "North America", "East Asia"]
+      },
+      "example_beats": [
+        "Gaudi's Casa Mila (1910)",
+        "Bauhaus building in Dessau (1926)",
+        "Villa Savoye (1931)",
+        "Fallingwater (1937)",
+        "Unite d'Habitation (1952)",
+        "Seagram Building (1958)",
+        "TWA Flight Center (1962)",
+        "Sydney Opera House (1973)",
+        "Lloyd's building (1986)",
+        "Guggenheim Bilbao (1997)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "bad-science",
+      "name": "Bad Science",
+      "scope": "Yes if it is a scientific hoax, fraud or blunder",
+      "boundary": "Bad Science: science gone wrong, harmful products sold as safe included; frauds for money go to Stolen!, medicines that worked to Wonder Drugs.",
+      "neighbours": ["heists", "wonder-drugs"],
+      "grid": {
+        "categories": ["science", "medicine", "media"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Vulcan, the planet that wasn't (1859)",
+        "N-rays (1903)",
+        "Piltdown Man (1912)",
+        "Tetraethyl lead added to petrol (1921)",
+        "Lysenko's attack on genetics (1948)",
+        "Thalidomide (1957)",
+        "Cold fusion claimed (1989)",
+        "Wakefield's MMR paper (1998)",
+        "Hwang's stem-cell fraud (2005)",
+        "Radium Girls case (1928)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "banned",
+      "name": "Banned!",
+      "scope": "Yes if it is a book that was banned, burned or put on trial",
+      "boundary": "Banned!: books under attack; other famous trials go to Day in Court, destroyed libraries to Places of Learning, political classics that were never banned to Pens Over Swords.",
+      "neighbours": ["day-in-court", "pens-over-swords", "schools"],
+      "grid": {
+        "categories": ["writing", "law"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Savonarola's Bonfire of the Vanities (1497)",
+        "First Index of Prohibited Books (1559)",
+        "Galileo's Dialogue banned (1633)",
+        "Candide banned in Paris (1759)",
+        "Madame Bovary put on trial (1857)",
+        "Ulysses banned in the United States (1921)",
+        "Nazis burn books in Berlin (1933)",
+        "Grapes of Wrath burned in California (1939)",
+        "Lady Chatterley's Lover trial (1960)",
+        "Satanic Verses provokes a fatwa (1989)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "lift-off",
+      "name": "Lift-Off!",
+      "scope": "Yes if it is a rocket or a flight in Earth orbit",
+      "boundary": "Lift-Off!: rockets and Earth-orbit flights; trips to the Moon and planets go to Other Worlds, space telescopes to Stargazers, rocket weapons to War Machines, atmosphere-only flight to Taking Flight.",
+      "neighbours": ["other-worlds", "war-machines", "flight"],
+      "grid": {
+        "categories": ["science", "invention", "warfare"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["Global", "North America", "North & Central Asia"]
+      },
+      "example_beats": [
+        "Goddard launches a liquid-fuel rocket (1926)",
+        "V-2 reaches space (1944)",
+        "Sputnik 1 launched (1957)",
+        "Gagarin orbits the Earth (1961)",
+        "Leonov's first spacewalk (1965)",
+        "Salyut 1, first space station (1971)",
+        "Space Shuttle Columbia's first launch (1981)",
+        "Mir's core module launched (1986)",
+        "First ISS module launched (1998)",
+        "Falcon 9 booster lands upright (2015)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "born-to-groove",
+      "name": "Born to Groove",
+      "scope": "Yes if it is a style of music",
+      "boundary": "Born to Groove: the birth of a music style; dances go to Cut a Rug, albums to Platinum, anthems and protest songs to Sing Out!.",
+      "neighbours": ["cut-a-rug", "platinum", "sing-out"],
+      "grid": {
+        "categories": ["art", "media"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "South America", "Europe"]
+      },
+      "example_beats": [
+        "Maple Leaf Rag and ragtime (1899)",
+        "Memphis Blues is published (1912)",
+        "First jazz record (1917)",
+        "Rocket 88 and rock and roll (1951)",
+        "Chega de Saudade starts bossa nova (1958)",
+        "Reggae gets its name (1968)",
+        "DJ Kool Herc's party sparks hip-hop (1973)",
+        "The Ramones and punk (1976)",
+        "Chicago house takes shape (1984)",
+        "Strings of Life and Detroit techno (1987)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "plow-and-harvest",
+      "name": "Plow & Harvest",
+      "scope": "Yes if it is a tool or technique that changed farming",
+      "boundary": "Plow & Harvest owns farm machines and methods; crops on the move go to Plant Hunters, irrigation to Waterworks, starvation to Famine Years.",
+      "neighbours": ["plant-hunters", "famine", "waterworks"],
+      "grid": {
+        "categories": ["agriculture", "invention"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Jethro Tull's seed drill (1701)",
+        "Rotherham plough (1730)",
+        "Meikle's threshing machine (1786)",
+        "McCormick reaper (1831)",
+        "John Deere's steel plow (1837)",
+        "Lawes patents superphosphate (1842)",
+        "Barbed wire patented (1874)",
+        "Froelich's tractor (1892)",
+        "Fordson tractor (1917)",
+        "GM crops first planted commercially (1996)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "nobel-winners",
+      "name": "Nobel Winners",
+      "scope": "Yes if it is the work that won a Nobel Prize",
+      "boundary": "Nobel Winners: the book, discovery or campaign a prize was given for, dated to when it was done; discoveries that are famous as the moment itself go to Eureka Moments and Building Blocks, the rights struggles to Civil Rights Road.",
+      "neighbours": ["building-blocks", "civil-rights", "first-women"],
+      "grid": {
+        "categories": ["science", "writing", "diplomacy"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Dunant founds the Red Cross (1863)",
+        "The Jungle Book (1894)",
+        "Pavlov's dogs (1897)",
+        "Marie Curie discovers radium (1898)",
+        "Einstein's photoelectric paper (1905)",
+        "Mother Teresa founds her mission (1950)",
+        "The Old Man and the Sea (1952)",
+        "Like a Rolling Stone (1965)",
+        "One Hundred Years of Solitude (1967)",
+        "Beloved (1987)"
+      ],
+      "appeal": 3,
+      "notes": "Date each card to the seminal work, not to the year of the prize.",
+      "status": "queued"
+    },
+    {
+      "id": "korean-wave",
+      "name": "Korean Wave",
+      "scope": "Yes if it is a milestone of Korean culture, from Hangul to K-pop",
+      "boundary": "Korean Wave: Korea's cultural gifts, Hangul and Gangnam Style included; the Korean War goes to Iron Curtain, turtle ships to Broadsides, Seoul's founding to Capitals Founded.",
+      "neighbours": ["letters-and-type", "prime-time"],
+      "grid": {
+        "categories": ["media", "art", "invention"],
+        "eras": ["medieval", "coldWar", "modern"],
+        "regions": ["East Asia"]
+      },
+      "example_beats": [
+        "Tripitaka Koreana completed (1251)",
+        "Hangul created (1443)",
+        "Donguibogam medical encyclopedia (1613)",
+        "Taekwondo named (1955)",
+        "Nam June Paik's first video art show (1963)",
+        "Seo Taiji and Boys debut (1992)",
+        "Winter Sonata sweeps Asia (2002)",
+        "Gangnam Style (2012)",
+        "Parasite wins Best Picture (2020)",
+        "Squid Game (2021)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "master-plans",
+      "name": "Master Plans",
+      "scope": "Yes if it is a planned city, new town or city plan",
+      "boundary": "Master Plans: cities and districts laid out by design; planned national capitals such as Brasilia and Canberra go to Capitals Founded, which owns them, and grand showpiece buildings to Palaces & Power.",
+      "neighbours": ["founding-cities", "palaces-and-power", "modern-marvels"],
+      "grid": {
+        "categories": ["architecture", "empires"],
+        "eras": ["earlyModern", "industrial", "coldWar"],
+        "regions": ["Europe", "North America", "East Asia"]
+      },
+      "example_beats": [
+        "Palmanova laid out (1593)",
+        "William Penn's plan for Philadelphia (1682)",
+        "Savannah's grid of squares (1733)",
+        "Edinburgh New Town (1767)",
+        "Haussmann rebuilds Paris (1853)",
+        "Cerda's Eixample in Barcelona (1859)",
+        "Howard's Garden Cities of To-morrow (1898)",
+        "Letchworth, the first garden city (1903)",
+        "Levittown (1947)",
+        "Shenzhen becomes a special economic zone (1980)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "roll-camera",
+      "name": "Roll Camera",
+      "scope": "Yes if it is a landmark film or a breakthrough in filmmaking",
+      "boundary": "Roll Camera: live-action film and its machinery; animation goes to Drawn to Life, horror films to Fright Night, television to Tune In and Prime Time, still photography to Say Cheese.",
+      "neighbours": ["drawn-to-life", "prime-time", "say-cheese"],
+      "grid": {
+        "categories": ["media", "invention", "art"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Europe", "Global"]
+      },
+      "example_beats": [
+        "Lumiere brothers' first public film show (1895)",
+        "A Trip to the Moon (1902)",
+        "The Birth of a Nation (1915)",
+        "The Jazz Singer, first talkie (1927)",
+        "Gone with the Wind and The Wizard of Oz in Technicolor (1939)",
+        "Citizen Kane (1941)",
+        "Jaws, the first summer blockbuster (1975)",
+        "Star Wars (1977)",
+        "Jurassic Park's digital dinosaurs (1993)",
+        "Avatar and 3D's big comeback (2009)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "kings-of-france",
+      "name": "Kings of France",
+      "scope": "Yes if it is a French king's accession, death or defining act",
+      "boundary": "Kings of France owns the French monarchy to 1848; English kings to Kings of England, popes to Habemus Papam.",
+      "neighbours": ["kings-of-england", "habemus-papam"],
+      "grid": {
+        "categories": ["empires", "figures"],
+        "eras": ["medieval", "earlyModern"],
+        "regions": ["Europe"]
+      },
+      "example_beats": [
+        "Clovis baptised (496)",
+        "Hugh Capet elected (987)",
+        "Philip II wins at Bouvines (1214)",
+        "Louis IX leaves on Crusade (1248)",
+        "Francis I wins at Marignano (1515)",
+        "Edict of Nantes (1598)",
+        "Louis XIV takes personal rule (1661)",
+        "Versailles becomes the court (1682)",
+        "Louis XVI guillotined (1793)",
+        "Charles X overthrown (1830)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "toy-box",
+      "name": "Toy Box",
+      "scope": "Yes if it is a toy",
+      "boundary": "Toy Box: playthings; board and card games go to The Games Board, video games to Insert Coin, skateboards to Board Riders.",
+      "neighbours": ["games", "insert-coin"],
+      "grid": {
+        "categories": ["commerce", "invention", "craft"],
+        "eras": ["worldWars", "coldWar", "modern"],
+        "regions": ["North America", "Europe"]
+      },
+      "example_beats": [
+        "Meccano (1898)",
+        "Teddy bear (1902)",
+        "Lincoln Logs (1916)",
+        "Slinky (1945)",
+        "Mr. Potato Head (1952)",
+        "Frisbee (1957)",
+        "LEGO brick as we know it (1958)",
+        "Barbie (1959)",
+        "Rubik's Cube (1974)",
+        "Tamagotchi (1996)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "african-kingdoms",
+      "name": "African Kingdoms",
+      "scope": "Yes if it is a defining moment of a sub-Saharan African kingdom or empire",
+      "boundary": "African Kingdoms: states ruled from Africa, Mansa Musa and Adwa included; outsiders' exploration and conquest go to Scramble for Africa, Kush's pharaohs to Pharaohs, Queen Nzinga to Crowned Queens.",
+      "neighbours": ["scramble-for-africa", "pharaohs", "flags-come-down"],
+      "grid": {
+        "categories": ["empires", "figures", "trade"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Sub-Saharan Africa"]
+      },
+      "example_beats": [
+        "Al-Bakri describes the Ghana Empire (1068)",
+        "Ezana of Aksum converts to Christianity (330)",
+        "Sundiata founds the Mali Empire (1235)",
+        "Mansa Musa's pilgrimage to Mecca (1324)",
+        "Askia the Great takes power in Songhai (1493)",
+        "Afonso I rules the Kingdom of Kongo (1506)",
+        "Oba Ewuare rebuilds Benin City (1440)",
+        "Asante Golden Stool (1701)",
+        "Shaka forms the Zulu kingdom (1816)",
+        "Ethiopia wins at Adwa (1896)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "building-blocks",
+      "name": "Building Blocks",
+      "scope": "Yes if it is a discovery about atoms or the chemical elements",
+      "boundary": "Building Blocks owns the stuff matter is made of; bombs, reactors and arms control go to The Atomic Age, new materials to Material World, ideas about the cosmos to Cosmic Ideas.",
+      "neighbours": ["atomic-age", "material-world", "cosmic-ideas"],
+      "grid": {
+        "categories": ["science", "invention"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Brand isolates phosphorus (1669)",
+        "Cavendish identifies hydrogen (1766)",
+        "Priestley and Scheele find oxygen (1774)",
+        "Dalton's atomic theory (1803)",
+        "Mendeleev's periodic table (1869)",
+        "Thomson finds the electron (1897)",
+        "Curies discover radium (1898)",
+        "Rutherford finds the nucleus (1911)",
+        "Chadwick finds the neutron (1932)",
+        "Higgs boson announced (2012)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "lets-celebrate",
+      "name": "Let's Celebrate",
+      "scope": "Yes if it is a holiday, festival or parade",
+      "boundary": "Let's Celebrate: days and festivals people keep; music festivals and concerts go to Crowd Roars, calendars and daylight saving to Clockwork, May Day's labour origins to Down Tools.",
+      "neighbours": ["crowd-roars", "clockwork", "down-tools"],
+      "grid": {
+        "categories": ["media", "art", "commerce"],
+        "eras": ["medieval", "industrial", "worldWars"],
+        "regions": ["Europe", "North America", "South America"]
+      },
+      "example_beats": [
+        "Christmas set on 25 December (336)",
+        "Venice Carnival (1296)",
+        "New Orleans' first Mardi Gras (1699)",
+        "Oktoberfest (1810)",
+        "First commercial Christmas card (1843)",
+        "Thanksgiving made a national holiday (1863)",
+        "Rose Parade in Pasadena (1890)",
+        "Mother's Day first celebrated (1908)",
+        "Macy's Thanksgiving Day Parade (1924)",
+        "Kwanzaa (1966)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "stargazers",
+      "name": "Stargazers",
+      "scope": "Yes if it is a telescope, or something new spotted through one",
+      "boundary": "Stargazers: telescopes and the planets, moons and stars they found, space telescopes included; ideas about what the universe is, such as the Big Bang, go to Cosmic Ideas, sky spectacles to Sky Show, spacecraft visits to Other Worlds.",
+      "neighbours": ["sky-show", "cosmic-ideas", "other-worlds"],
+      "grid": {
+        "categories": ["science", "invention"],
+        "eras": ["earlyModern", "industrial", "modern"],
+        "regions": ["Global", "Europe", "North America"]
+      },
+      "example_beats": [
+        "Galileo's telescope (1609)",
+        "Herschel discovers Uranus (1781)",
+        "Neptune found (1846)",
+        "Hooker telescope at Mount Wilson (1917)",
+        "Pluto discovered (1930)",
+        "Palomar 200-inch telescope (1948)",
+        "First pulsar detected (1967)",
+        "First exoplanet around a Sun-like star (1995)",
+        "Hubble Space Telescope launched (1990)",
+        "James Webb Space Telescope launched (2021)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "temple-kingdoms",
+      "name": "Temple Kingdoms",
+      "scope": "Yes if it is a king or kingdom of mainland Southeast Asia",
+      "boundary": "Temple Kingdoms: Khmer, Burmese, Thai and Vietnamese kingdoms; the Indonesian islands go to Indonesia, independence to Flags Come Down, city foundings to Capitals Founded.",
+      "neighbours": ["indonesia", "flags-come-down", "founding-cities"],
+      "grid": {
+        "categories": ["empires", "architecture", "warfare"],
+        "eras": ["ancient", "medieval", "earlyModern"],
+        "regions": ["Southeast Asia"]
+      },
+      "example_beats": [
+        "Trung sisters revolt against China (40)",
+        "Jayavarman II proclaimed god-king at Angkor (802)",
+        "Vietnam defeats China at Bach Dang (938)",
+        "Anawrahta founds the Pagan Empire (1057)",
+        "Angkor Wat begun (1113)",
+        "Sukhothai kingdom founded (1238)",
+        "Ayutthaya founded (1351)",
+        "Le Loi expels the Ming (1428)",
+        "Burmese sack Ayutthaya (1767)",
+        "Gia Long founds the Nguyen dynasty (1802)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "tune-in",
+      "name": "Tune In",
+      "scope": "Yes if it is a radio or TV station or network",
+      "boundary": "Tune In: the stations and networks themselves; individual TV shows go to Prime Time, telegraph and telephone to Message Sent.",
+      "neighbours": ["message-sent", "prime-time"],
+      "grid": {
+        "categories": ["media", "commerce"],
+        "eras": ["worldWars", "coldWar"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "KDKA begins regular radio broadcasts (1920)",
+        "BBC founded (1922)",
+        "NBC founded (1926)",
+        "BBC starts the first regular TV service (1936)",
+        "Voice of America goes on air (1942)",
+        "ITV launches (1955)",
+        "Doordarshan begins in Delhi (1959)",
+        "Radio Caroline (1964)",
+        "CNN launches (1980)",
+        "MTV launches (1981)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "shogun",
+      "name": "Shogun!",
+      "scope": "Yes if it is a defining act of a samurai or shogun",
+      "boundary": "Shogun!: samurai rule up to the shogunate's end, the Mongol fleets of 1274 and 1281 included; Perry's Black Ships and the Meiji era go to Meiji Leap, anime and manga to Cool Japan.",
+      "neighbours": ["meiji-leap", "cool-japan", "steppe-riders"],
+      "grid": {
+        "categories": ["empires", "warfare", "figures"],
+        "eras": ["medieval", "earlyModern"],
+        "regions": ["East Asia"]
+      },
+      "example_beats": [
+        "Yoritomo becomes the first shogun (1192)",
+        "Mongol fleet scattered by typhoon (1281)",
+        "Portuguese bring guns to Japan (1543)",
+        "Nobunaga wins at Okehazama (1560)",
+        "Nobunaga dies at Honno-ji (1582)",
+        "Battle of Sekigahara (1600)",
+        "Tokugawa Ieyasu becomes shogun (1603)",
+        "Japan closes its doors (1639)",
+        "The 47 Ronin avenge their lord (1703)",
+        "Last shogun resigns (1867)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "ballot-box",
+      "name": "The Ballot Box",
+      "scope": "Yes if it is a landmark election or a new way of voting",
+      "boundary": "The Ballot Box owns elections and voting methods; women winning the vote go to Votes for Women, South Africa's 1994 vote shares with Civil Rights Road, constitutions to Law of the Land.",
+      "neighbours": ["votes-for-women", "civil-rights", "law-of-the-land"],
+      "grid": {
+        "categories": ["law", "revolution"],
+        "eras": ["ancient", "industrial", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Ostracism vote in Athens (487 BC)",
+        "First US presidential election (1789)",
+        "Great Reform Act (1832)",
+        "Australian secret ballot (1856)",
+        "Lincoln elected (1860)",
+        "India's first general election (1951)",
+        "Kennedy-Nixon televised debate (1960)",
+        "Portugal's first free election (1975)",
+        "Chile's plebiscite (1988)",
+        "Poland's semi-free vote (1989)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "order-up",
+      "name": "Order Up!",
+      "scope": "Yes if it is a famous restaurant or food chain",
+      "boundary": "Order Up!: restaurants and chains; dishes go to Born in a Kitchen, coffee houses and bars to What We Drink, shops to Retail Therapy.",
+      "neighbours": ["born-in-a-kitchen", "what-we-drink", "retail-therapy"],
+      "grid": {
+        "categories": ["commerce", "trade"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Boulanger's Paris restaurant (1765)",
+        "Delmonico's opens in New York (1827)",
+        "Katz's Delicatessen opens (1888)",
+        "White Castle opens, the first burger chain (1921)",
+        "Colonel Sanders starts serving chicken (1930)",
+        "McDonald's opens in San Bernardino (1940)",
+        "Pizza Hut opens (1958)",
+        "Chez Panisse opens (1971)",
+        "McDonald's opens in Moscow (1990)",
+        "Noma opens in Copenhagen (2003)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "law-of-the-land",
+      "name": "Law of the Land",
+      "scope": "Yes if it is a law code, charter or constitution",
+      "boundary": "Law of the Land: written law; trials and court rulings go to Day in Court, police and prisons to Crime & Punishment, Magna Carta shares with Kings of England.",
+      "neighbours": ["day-in-court", "kings-of-england", "ballot-box"],
+      "grid": {
+        "categories": ["law", "writing", "revolution"],
+        "eras": ["ancient", "earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Code of Hammurabi (1754 BC)",
+        "Draco's laws in Athens (621 BC)",
+        "Twelve Tables of Rome (451 BC)",
+        "Edicts of Ashoka (250 BC)",
+        "Justinian's Code (529)",
+        "Magna Carta (1215)",
+        "English Bill of Rights (1689)",
+        "US Constitution signed (1787)",
+        "Napoleonic Code (1804)",
+        "Constitution of India takes effect (1950)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "native-nations",
+      "name": "Native Nations",
+      "scope": "Yes if it is a battle, treaty or leader of a Native American nation",
+      "boundary": "Native Nations: Indigenous peoples of the US and Canada; Mesoamerica and the Andes go to Before Columbus, the Spanish conquest to Conquistadors, the Pueblo Revolt stays here.",
+      "neighbours": ["before-columbus", "conquistadors", "rise-up"],
+      "grid": {
+        "categories": ["warfare", "figures", "diplomacy"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["North America"]
+      },
+      "example_beats": [
+        "Squanto and the first Thanksgiving (1621)",
+        "Pontiac's War (1763)",
+        "Tecumseh's confederacy falls at Tippecanoe (1811)",
+        "Sequoyah's Cherokee syllabary (1821)",
+        "Trail of Tears (1838)",
+        "Battle of Little Bighorn (1876)",
+        "Chief Joseph surrenders (1877)",
+        "Wounded Knee (1890)",
+        "Indian Citizenship Act (1924)",
+        "Occupation of Alcatraz begins (1969)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "stone-age-firsts",
+      "name": "Stone Age Firsts",
+      "scope": "Yes if it is a find, site or achievement of Stone Age people",
+      "boundary": "Stone Age Firsts owns what early Homo sapiens made, dated to its making; hominin bones go to Bone Hunters, life before Homo sapiens to Before Us.",
+      "neighbours": ["before-us", "bone-hunters", "lost-and-found"],
+      "grid": {
+        "categories": ["art", "architecture"],
+        "eras": ["prehistory"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Homo sapiens at Jebel Irhoud (300,000 BC)",
+        "Blombos ochre engraving (75,000 BC)",
+        "Oldest cave art in Sulawesi (45,500 BC)",
+        "Chauvet Cave paintings (30,000 BC)",
+        "Lascaux paintings (17,000 BC)",
+        "Jomon pottery in Japan (14,000 BC)",
+        "Gobekli Tepe built (9500 BC)",
+        "Jericho's tower (8000 BC)",
+        "Catalhoyuk settled (7100 BC)",
+        "Skara Brae houses built (3180 BC)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "the-raj",
+      "name": "The Raj",
+      "scope": "Yes if it is British rule in India, or the fight against it",
+      "boundary": "The Raj: Company and Crown rule and the freedom movement; the Mughal court goes to Peacock Throne, famines to Famine Years, and India's 1947 independence stays here.",
+      "neighbours": ["mughals", "famine", "flags-come-down"],
+      "grid": {
+        "categories": ["empires", "revolution", "commerce"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["South Asia"]
+      },
+      "example_beats": [
+        "Battle of Plassey (1757)",
+        "Tipu Sultan killed at Seringapatam (1799)",
+        "Sati banned (1829)",
+        "First Indian railway opens (1853)",
+        "Indian Rebellion begins (1857)",
+        "Victoria proclaimed Empress of India (1877)",
+        "Indian National Congress founded (1885)",
+        "Jallianwala Bagh massacre (1919)",
+        "Gandhi's Salt March (1930)",
+        "Independence and Partition (1947)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "back-from-the-brink",
+      "name": "Back from the Brink",
+      "scope": "Yes if it is a step in protecting wildlife or wild places",
+      "boundary": "Back from the Brink owns conservation law, parks and rescues; extinctions go to Gone Forever, wild animals tamed for service to Tamed.",
+      "neighbours": ["gone-forever", "tamed", "field-notes"],
+      "grid": {
+        "categories": ["nature", "law"],
+        "eras": ["industrial", "coldWar", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Yosemite Grant (1864)",
+        "Yellowstone, first national park (1872)",
+        "Lacey Act protects wildlife (1900)",
+        "Kruger National Park (1926)",
+        "IUCN founded (1948)",
+        "WWF founded (1961)",
+        "Endangered Species Act (1973)",
+        "Whaling moratorium (1986)",
+        "Wolves reintroduced to Yellowstone (1995)",
+        "Giant panda downlisted from endangered (2016)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "kings-of-kings",
+      "name": "Kings of Kings",
+      "scope": "Yes if it is a defining act of a Persian or Iranian king or dynasty",
+      "boundary": "Kings of Kings: Persia's rulers and dynasties; Persepolis burning goes to Cities Ablaze, Thermopylae to Against the Odds, Nader Shah's sack of Delhi to Peacock Throne.",
+      "neighbours": ["mughals", "great-fires", "against-the-odds"],
+      "grid": {
+        "categories": ["empires", "figures", "warfare"],
+        "eras": ["ancient", "medieval", "earlyModern"],
+        "regions": ["Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Cyrus founds the Achaemenid Empire (550 BC)",
+        "Cyrus Cylinder (539 BC)",
+        "Darius carves the Behistun inscription (520 BC)",
+        "Ardashir founds the Sasanian Empire (224)",
+        "Shapur captures Valerian (260)",
+        "Khosrow I takes the throne (531)",
+        "Ismail founds the Safavids (1501)",
+        "Shah Abbas moves to Isfahan (1598)",
+        "Qajar dynasty founded (1789)",
+        "Constitutional Revolution (1906)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "boom-and-bust",
+      "name": "Boom & Bust",
+      "scope": "Yes if it is a financial bubble, crash or bank failure",
+      "boundary": "Boom & Bust: markets breaking; frauds stay with Stolen!, currencies and hyperinflation with Hard Currency.",
+      "neighbours": ["heists", "money", "taxing-times"],
+      "grid": {
+        "categories": ["commerce"],
+        "eras": ["earlyModern", "industrial", "modern"],
+        "regions": ["Global", "North America", "Europe"]
+      },
+      "example_beats": [
+        "Tulip mania peaks (1637)",
+        "South Sea Bubble bursts (1720)",
+        "Panic of 1873 (1873)",
+        "Panic of 1907 (1907)",
+        "Wall Street Crash (1929)",
+        "Black Monday (1987)",
+        "Japan's bubble bursts (1990)",
+        "Barings Bank collapses (1995)",
+        "Dot-com bubble bursts (2000)",
+        "Lehman Brothers collapses (2008)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "down-tools",
+      "name": "Down Tools",
+      "scope": "Yes if it is a strike, a union or a workers' rights moment",
+      "boundary": "Down Tools owns labour history; peaceful mass protests go to Take to the Streets, communist movements to Red Flags.",
+      "neighbours": ["take-to-the-streets", "red-flags"],
+      "grid": {
+        "categories": ["law", "revolution"],
+        "eras": ["industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Tolpuddle Martyrs (1834)",
+        "Ten Hours Act (1847)",
+        "Haymarket affair (1886)",
+        "Matchgirls' strike (1888)",
+        "Pullman strike (1894)",
+        "Ford's five-dollar day (1914)",
+        "General Strike in Britain (1926)",
+        "Wagner Act (1935)",
+        "Fair Labor Standards Act (1938)",
+        "Solidarity founded (1980)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "royal-weddings",
+      "name": "Royal Weddings",
+      "scope": "Yes if it is a royal wedding",
+      "boundary": "Royal Weddings owns royal marriages; queens who ruled go to Crowned Queens, the founding of states to Nations of Europe.",
+      "neighbours": ["crowned-queens", "nations-of-europe", "kings-of-england"],
+      "grid": {
+        "categories": ["figures", "diplomacy"],
+        "eras": ["medieval", "earlyModern", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Wang Zhaojun marries the Xiongnu khan (33 BC)",
+        "Princess Wencheng weds Songtsen Gampo (641)",
+        "Eleanor of Aquitaine weds Henry (1152)",
+        "Jadwiga marries Jogaila (1386)",
+        "Maximilian marries Mary of Burgundy (1477)",
+        "Henry VIII marries Anne Boleyn (1533)",
+        "Louis XVI marries Marie Antoinette (1770)",
+        "Victoria marries Albert (1840)",
+        "Grace Kelly marries Prince Rainier (1956)",
+        "Charles and Diana wed (1981)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "insert-coin",
+      "name": "Insert Coin",
+      "scope": "Yes if it is a video game or game console",
+      "boundary": "Insert Coin: video games and consoles, Japanese ones included; table games and machines that beat us at them go to The Games Board, non-game gadgets to In Your Pocket.",
+      "neighbours": ["games", "in-your-pocket", "cool-japan"],
+      "grid": {
+        "categories": ["media", "invention", "art"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["North America", "East Asia", "Global"]
+      },
+      "example_beats": [
+        "Spacewar! (1962)",
+        "Pong arrives in arcades (1972)",
+        "Space Invaders (1978)",
+        "Pac-Man (1980)",
+        "Tetris (1984)",
+        "Super Mario Bros. (1985)",
+        "Game Boy released (1989)",
+        "Doom (1993)",
+        "Nintendo Wii (2006)",
+        "Minecraft 1.0 (2011)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "wild-weather",
+      "name": "Wild Weather",
+      "scope": "Yes if it is a famous storm, flood, heatwave or other extreme weather",
+      "boundary": "Wild Weather owns extreme weather; quakes and eruptions go to When the Earth Moved, fires to Cities Ablaze, droughts that starved people to Famine Years.",
+      "neighbours": ["upheaval", "famine", "great-fires"],
+      "grid": {
+        "categories": ["disasters", "nature"],
+        "eras": ["industrial", "worldWars", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Great Storm hits England (1703)",
+        "Year Without a Summer (1816)",
+        "Galveston hurricane (1900)",
+        "Death Valley hits 134F (1913)",
+        "Tri-State tornado (1925)",
+        "Dust Bowl Black Sunday (1935)",
+        "Great Smog of London (1952)",
+        "Bhola cyclone (1970)",
+        "Vostok records -89C (1983)",
+        "Hurricane Katrina (2005)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "palaces-and-power",
+      "name": "Palaces & Power",
+      "scope": "Yes if it is the building of a palace or seat of government",
+      "boundary": "Palaces & Power: where rulers lived and governed; castles and forts built for defence go to Walls & Fortresses, the Forbidden City stays with Mandate of Heaven, Versailles with Kings of France.",
+      "neighbours": ["walls", "chinese-dynasties", "kings-of-france"],
+      "grid": {
+        "categories": ["architecture", "empires"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Europe", "East Asia", "Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Persepolis begun (518 BC)",
+        "Alhambra expanded (1238)",
+        "Gyeongbokgung Palace built (1395)",
+        "Topkapi Palace begun (1459)",
+        "Escorial completed (1584)",
+        "Potala Palace rebuilt (1645)",
+        "Sanssouci (1747)",
+        "Winter Palace completed (1762)",
+        "White House occupied (1800)",
+        "Neuschwanstein begun (1869)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "all-aboard",
+      "name": "All Aboard!",
+      "scope": "Yes if it is a railway line, locomotive or famous train",
+      "boundary": "All Aboard! owns the railway between towns; city metros, trams and buses go to Mind the Gap, bridges and tunnels to Bridges & Tunnels.",
+      "neighbours": ["mind-the-gap", "crossings"],
+      "grid": {
+        "categories": ["invention", "trade"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Stockton & Darlington opens (1825)",
+        "Liverpool & Manchester Railway (1830)",
+        "Pullman sleeper car (1865)",
+        "First US transcontinental completed (1869)",
+        "Orient Express first runs (1883)",
+        "Trans-Siberian completed (1904)",
+        "Mallard steam speed record (1938)",
+        "Shinkansen opens (1964)",
+        "TGV enters service (1981)",
+        "Shanghai Maglev opens (2004)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "look-it-up",
+      "name": "Look It Up",
+      "scope": "Yes if it is a famous dictionary, encyclopedia or other reference book",
+      "boundary": "Look It Up: reference works in print; newspapers go to Front Pages, typefaces to Letters & Type, Wikipedia to Going Online.",
+      "neighbours": ["front-pages", "letters-and-type", "going-online"],
+      "grid": {
+        "categories": ["writing", "media"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America", "East Asia"]
+      },
+      "example_beats": [
+        "Yongle Encyclopedia completed (1408)",
+        "Diderot's Encyclopedie begins (1751)",
+        "Johnson's Dictionary published (1755)",
+        "Encyclopaedia Britannica first edition (1768)",
+        "Webster's American Dictionary (1828)",
+        "Roget's Thesaurus (1852)",
+        "First part of the Oxford English Dictionary (1884)",
+        "First Michelin Guide (1900)",
+        "Guinness Book of Records (1955)",
+        "Lonely Planet's first guide (1973)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "sky-show",
+      "name": "Sky Show",
+      "scope": "Yes if it is a famous comet, eclipse, supernova, meteor or aurora",
+      "boundary": "Sky Show: spectacles seen from Earth; telescopes and new worlds go to Stargazers, the ideas they inspired, Eddington's eclipse included, to Cosmic Ideas.",
+      "neighbours": ["stargazers", "cosmic-ideas", "upheaval"],
+      "grid": {
+        "categories": ["science", "nature", "disasters"],
+        "eras": ["medieval", "earlyModern", "industrial"],
+        "regions": ["Global", "Europe", "East Asia"]
+      },
+      "example_beats": [
+        "Thales predicts an eclipse (585 BC)",
+        "Crab Nebula supernova (1054)",
+        "Tycho's supernova (1572)",
+        "Halley's comet returns as predicted (1758)",
+        "Leonid meteor storm (1833)",
+        "Carrington solar storm (1859)",
+        "Tunguska explosion (1908)",
+        "Earth passes through Halley's comet's tail (1910)",
+        "Supernova 1987A (1987)",
+        "Chelyabinsk meteor (2013)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "step-right-up",
+      "name": "Step Right Up",
+      "scope": "Yes if it is a world's fair, amusement park or fairground ride",
+      "boundary": "Step Right Up: crowds out for the spectacle; record-height towers go to Tallest in the World, lasting modern buildings to Modern Marvels, circuses and stage shows to On Stage.",
+      "neighbours": ["skyline", "modern-marvels", "on-stage"],
+      "grid": {
+        "categories": ["commerce", "architecture", "media"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Europe", "East Asia"]
+      },
+      "example_beats": [
+        "Tivoli Gardens opens (1843)",
+        "Great Exhibition at the Crystal Palace (1851)",
+        "Paris Exposition Universelle (1889)",
+        "Ferris wheel debuts in Chicago (1893)",
+        "Luna Park at Coney Island (1903)",
+        "New York World's Fair (1939)",
+        "Disneyland opens (1955)",
+        "Expo 67, Montreal (1967)",
+        "Walt Disney World opens (1971)",
+        "Tokyo Disneyland (1983)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "plant-hunters",
+      "name": "Plant Hunters",
+      "scope": "Yes if it is a crop or plant that spread across the world",
+      "boundary": "Plant Hunters owns plants on the move; farm tools and methods go to Plow & Harvest, drinks to What We Drink, starvation to Famine Years.",
+      "neighbours": ["plow-and-harvest", "what-we-drink", "famine"],
+      "grid": {
+        "categories": ["agriculture", "trade"],
+        "eras": ["earlyModern", "industrial"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Columbus brings maize to Spain (1493)",
+        "Potato reaches Spain (1570)",
+        "Clusius plants tulips at Leiden (1593)",
+        "Tomato reaches Italy (1548)",
+        "Bligh delivers breadfruit to Jamaica (1793)",
+        "The Wardian case (1829)",
+        "Hass avocado patented (1935)",
+        "Ledger smuggles cinchona seeds (1865)",
+        "Wickham smuggles rubber seeds out of Brazil (1876)",
+        "Borlaug's dwarf wheat reaches India (1966)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "household-gadgets",
+      "name": "Household Gadgets",
+      "scope": "Yes if it is an appliance or gadget for the home",
+      "boundary": "Household Gadgets: machines for the home; lighting goes to Let There Be Light, food preserving to Food Tech, portable gadgets to In Your Pocket.",
+      "neighbours": ["light", "food-tech", "in-your-pocket"],
+      "grid": {
+        "categories": ["invention", "commerce", "craft"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Europe"]
+      },
+      "example_beats": [
+        "Cummings patents the S-bend toilet (1775)",
+        "Mechanical dishwasher patented by Josephine Cochrane (1886)",
+        "Electric toaster (1893)",
+        "Hoover vacuum cleaner (1908)",
+        "Domestic refrigerator, Domelre (1913)",
+        "Pop-up toaster (1919)",
+        "Tupperware (1946)",
+        "Microwave oven (1947)",
+        "Home smoke detector (1965)",
+        "Roomba (2002)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "reading-the-rocks",
+      "name": "Reading the Rocks",
+      "scope": "Yes if it is a landmark of geology",
+      "boundary": "Reading the Rocks owns discoveries about the Earth itself; quakes and eruptions go to When the Earth Moved, fossils to Bone Hunters, scales such as Richter's to Taking Measure.",
+      "neighbours": ["upheaval", "bone-hunters", "stargazers"],
+      "grid": {
+        "categories": ["science", "nature"],
+        "eras": ["earlyModern", "industrial", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Steno's laws of strata (1669)",
+        "Hutton's Theory of the Earth (1788)",
+        "William Smith's geological map (1815)",
+        "Lyell's Principles of Geology (1830)",
+        "Agassiz proposes the ice age (1837)",
+        "Wegener proposes continental drift (1912)",
+        "Mohorovicic finds the base of the crust (1909)",
+        "Patterson dates the Earth (1956)",
+        "Hess proposes seafloor spreading (1962)",
+        "Chicxulub crater identified (1991)"
+      ],
+      "appeal": 1,
+      "status": "queued"
+    },
+    {
+      "id": "silk-road",
+      "name": "Silk Road",
+      "scope": "Yes if it is an event on the Silk Road",
+      "boundary": "Silk Road: the overland caravans and what travelled with them; steppe conquests go to Horse Lords, embassies between courts to Face to Face, the Black Death to Plague Years, the Diamond Sutra to Letters & Type, Constantinople's fall to Sublime Porte.",
+      "neighbours": ["steppe-riders", "face-to-face"],
+      "grid": {
+        "categories": ["trade", "commerce", "migration"],
+        "eras": ["ancient", "medieval"],
+        "regions": ["North & Central Asia", "East Asia", "Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Zhang Qian sets out for the West (138 BC)",
+        "Mogao Caves begun at Dunhuang (366)",
+        "Xuanzang leaves China for India (629)",
+        "Battle of Talas (751)",
+        "The Travels of Marco Polo published (1300)",
+        "Marco Polo leaves Venice (1271)",
+        "Ibn Battuta begins his travels (1325)",
+        "Timur makes Samarkand his capital (1370)",
+        "Bukhara's Kalyan Minaret built (1127)",
+        "Richthofen names the Silk Road (1877)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "safety-in-numbers",
+      "name": "Safety in Numbers",
+      "scope": "Yes if it is the founding of an alliance or international organisation",
+      "boundary": "Safety in Numbers: alliances and international bodies; war-ending treaties go to Peace at Last, borders to Lines on a Map, sports bodies to their own sport's theme, OPEC to Black Gold.",
+      "neighbours": ["peace", "lines-on-a-map", "black-gold"],
+      "grid": {
+        "categories": ["diplomacy", "law"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "Delian League formed (478 BC)",
+        "Auld Alliance (1295)",
+        "Holy Alliance (1815)",
+        "Red Cross founded (1863)",
+        "Triple Alliance (1882)",
+        "Entente Cordiale (1904)",
+        "League of Nations (1920)",
+        "United Nations (1945)",
+        "NATO founded (1949)",
+        "Treaty of Rome creates the EEC (1957)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "prime-time",
+      "name": "Prime Time",
+      "scope": "Yes if it is a TV show",
+      "boundary": "Prime Time: the shows, animated sitcoms included; channels and networks go to Tune In, cartoon films to Drawn to Life, Korean dramas share with Korean Wave.",
+      "neighbours": ["tune-in", "drawn-to-life", "korean-wave"],
+      "grid": {
+        "categories": ["media"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["North America", "Europe"]
+      },
+      "example_beats": [
+        "I Love Lucy (1951)",
+        "Doctor Who (1963)",
+        "Star Trek (1966)",
+        "Sesame Street (1969)",
+        "Dallas (1978)",
+        "The Simpsons (1989)",
+        "Friends (1994)",
+        "The Sopranos (1999)",
+        "Breaking Bad (2008)",
+        "Game of Thrones (2011)"
+      ],
+      "appeal": 3,
+      "notes": "Spread the shows across every decade, from the first TV shows to now.",
+      "status": "queued"
+    },
+    {
+      "id": "born-in-a-kitchen",
+      "name": "Born in a Kitchen",
+      "scope": "Yes if it is a famous dish or snack",
+      "boundary": "Born in a Kitchen: dishes and snacks cooks invented; desserts and sweets go to Sweet Tooth, factory foods to Food Tech, restaurants to Order Up!",
+      "neighbours": ["sweet-tooth", "food-tech", "order-up"],
+      "grid": {
+        "categories": ["craft", "commerce", "agriculture"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Europe", "North America", "Global"]
+      },
+      "example_beats": [
+        "The sandwich named for Lord Sandwich (1762)",
+        "Potato chips invented (1853)",
+        "Margherita pizza created in Naples (1889)",
+        "Eggs Benedict first served (1894)",
+        "The hamburger arrives at Louis' Lunch (1900)",
+        "Caesar salad invented in Tijuana (1924)",
+        "Pad thai promoted in Thailand (1938)",
+        "Nachos invented in Mexico (1943)",
+        "Buffalo wings created (1964)",
+        "The Cronut debuts in New York (2013)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
+      "id": "flags-come-down",
+      "name": "Flags Come Down",
+      "scope": "Yes if it is a colony gaining independence, or a decisive step toward it",
+      "boundary": "Flags Come Down: decolonisation worldwide; India goes to The Raj, Indonesia to Indonesia, Latin America's wars of independence to The Liberators.",
+      "neighbours": ["the-raj", "indonesia", "the-liberators"],
+      "grid": {
+        "categories": ["revolution", "diplomacy", "empires"],
+        "eras": ["coldWar", "modern"],
+        "regions": ["Sub-Saharan Africa", "South Asia", "Southeast Asia"]
+      },
+      "example_beats": [
+        "Philippines independent (1946)",
+        "Bandung Conference (1955)",
+        "Ghana independent (1957)",
+        "Year of Africa (1960)",
+        "Algeria independent (1962)",
+        "Kenya independent (1963)",
+        "Angola and Mozambique independent (1975)",
+        "Zimbabwe independent (1980)",
+        "Namibia independent (1990)",
+        "Hong Kong handed back to China (1997)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "fright-night",
+      "name": "Fright Night",
+      "scope": "Yes if it is a horror story or film",
+      "boundary": "Fright Night: works made to frighten, Frankenstein included; science fiction and fantasy go to Beyond the Stars, detective fiction to Whodunit, Godzilla to Cool Japan.",
+      "neighbours": ["beyond-the-stars", "whodunit"],
+      "grid": {
+        "categories": ["media", "writing", "art"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["North America", "Europe"]
+      },
+      "example_beats": [
+        "Frankenstein is published (1818)",
+        "Dr Jekyll and Mr Hyde (1886)",
+        "Dracula is published (1897)",
+        "Nosferatu (1922)",
+        "Universal's Dracula film (1931)",
+        "Psycho (1960)",
+        "Night of the Living Dead (1968)",
+        "The Exorcist (1973)",
+        "Halloween (1978)",
+        "Scream (1996)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "retail-therapy",
+      "name": "Retail Therapy",
+      "scope": "Yes if it is a great market or a new way to shop",
+      "boundary": "Retail Therapy: markets and ways of shopping; the founding of shop chains goes to Still Trading, advertising to Sell, Sell, Sell, money and credit cards to Hard Currency, restaurants to Order Up!",
+      "neighbours": ["still-trading", "sell-sell-sell", "money"],
+      "grid": {
+        "categories": ["commerce", "invention"],
+        "eras": ["ancient", "industrial", "coldWar"],
+        "regions": ["Europe", "North America", "Middle East & North Africa"]
+      },
+      "example_beats": [
+        "Trajan's Market opens (113)",
+        "Grand Bazaar of Istanbul begun (1461)",
+        "Bon Marche, the first department store (1852)",
+        "Montgomery Ward's mail-order catalogue (1872)",
+        "Cash register patented (1879)",
+        "Piggly Wiggly self-service (1916)",
+        "Shopping cart invented (1937)",
+        "Southdale, first enclosed mall (1956)",
+        "Barcode first scanned (1974)",
+        "First secure online purchase (1994)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "coup",
+      "name": "Coup!",
+      "scope": "Yes if it is a coup, putsch or military takeover",
+      "boundary": "Coup! owns seizures of power by plot or force from above; popular uprisings go to Rise Up!, forced abdications to Abdicated!.",
+      "neighbours": ["rise-up", "abdicated"],
+      "grid": {
+        "categories": ["revolution", "warfare"],
+        "eras": ["industrial", "worldWars", "coldWar"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Praetorians sell the throne (193)",
+        "Gaddafi seizes power in Libya (1969)",
+        "Louis-Napoleon's coup (1851)",
+        "Young Turk Revolution (1908)",
+        "Beer Hall Putsch (1923)",
+        "Franco's uprising (1936)",
+        "Free Officers coup in Egypt (1952)",
+        "Mossadegh ousted in Iran (1953)",
+        "Chile's coup (1973)",
+        "Moscow August coup (1991)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "strike-a-chord",
+      "name": "Strike a Chord",
+      "scope": "Yes if it is a musical instrument, or a famous model of one",
+      "boundary": "Strike a Chord: the instruments themselves; recording and selling go to Press Play, styles of music and dance to Born to Groove.",
+      "neighbours": ["press-play", "born-to-groove"],
+      "grid": {
+        "categories": ["invention", "craft", "art"],
+        "eras": ["earlyModern", "industrial", "worldWars"],
+        "regions": ["Europe", "North America"]
+      },
+      "example_beats": [
+        "Cristofori builds the first piano (1700)",
+        "Wheatstone patents the concertina (1829)",
+        "Adolphe Sax patents the saxophone (1846)",
+        "Theremin invented (1920)",
+        "Rickenbacker 'Frying Pan' electric guitar (1931)",
+        "Hammond organ (1935)",
+        "Fender Telecaster (1950)",
+        "Moog synthesizer (1964)",
+        "Roland TR-808 (1980)",
+        "Yamaha DX7 and MIDI standard (1983)"
+      ],
+      "appeal": 2,
+      "status": "queued"
+    },
+    {
+      "id": "bone-hunters",
+      "name": "Bone Hunters",
+      "scope": "Yes if it is a famous fossil discovery",
+      "boundary": "Bone Hunters owns fossil finds, dinosaurs and early humans included; prehistoric events themselves go to Before Us, ancient human sites to Stone Age Firsts.",
+      "neighbours": ["before-us", "stone-age-firsts", "lost-and-found"],
+      "grid": {
+        "categories": ["science", "nature"],
+        "eras": ["industrial", "coldWar", "modern"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Mary Anning finds an ichthyosaur (1811)",
+        "Megalosaurus, first named dinosaur (1824)",
+        "Neanderthal found in the Neander valley (1856)",
+        "Archaeopteryx found (1861)",
+        "The Bone Wars begin (1877)",
+        "Burgess Shale found (1909)",
+        "Taung Child (1924)",
+        "Lucy found in Ethiopia (1974)",
+        "Sue the T. rex (1990)",
+        "Homo floresiensis, the Hobbit (2003)"
+      ],
+      "appeal": 3,
+      "status": "queued"
+    }
+  ]
+}

@@ -172,9 +172,10 @@ changing a seeded list's length (see `leaderboard-daily/`). A test pins 120 date
 
 ## Sizing
 
-Minimum **16** events, enforced by the API — but that is a backstop, not a target. The
-authoring floor is **30**, and the working band is **30-36**; every banked theme sits in it.
-`scripts/theme-gap.js --slugs` reports the 30-36 band, band zero and same-year pairs as gates.
+Minimum **16** events, enforced by the API — but that is a backstop, not a target. **New decks
+are exactly 30** (decided 2026-10-18): a perfect run on a 35-card deck proved too hard. The first
+two banks were authored to a 30-36 band and stay as they are.
+`scripts/theme-gap.js --slugs` gates the size at 30, plus band zero and same-year pairs.
 The publish script enforces only resolvable slugs and band zero (the API enforces the minimum of
 16), so a same-year pair passes publishing: run `theme-gap` first.
 
