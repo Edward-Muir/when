@@ -1,0 +1,15 @@
+{
+  "slug": "g074",
+  "description": "A dark, oil-painting-style scene of a man in a wide-brimmed hat, brown doublet with a white collar, sash and bandolier, standing upright and holding a long musket. He stands in a grove of trees bearing yellow-orange fruit split open to show red seeds. Behind him, on a bay under a stormy sky, a three-masted sailing ship with large sails carrying a monogram-like emblem and a small flag at the masthead, with smaller boats and a dark headland on the left. A small white sparkle logo sits in the bottom-right corner. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a 17th-century Dutch East India-style sailing ship and a musketeer among spice trees, not the Japanese tea ceremony. The ship and flag date to after 1600, so they do not fit a Japanese setting in 1580. The sails carry a monogram that reads as letters (VOC-like), which breaks the no-text rule."
+}

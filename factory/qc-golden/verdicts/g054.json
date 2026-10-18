@@ -1,0 +1,15 @@
+{
+  "slug": "g054",
+  "description": "A man in a khaki peaked cap and olive greatcoat sits on a stool, eye pressed to the eyepiece of a large dark-metal and brass measuring instrument. Its round white dial shows dots and the letters A and B with small arrows. Above him a telescope tube points out of a domed observatory with rough stone walls, and a faint wisp of breath or steam rises near his face. A small sparkle logo sits in the bottom-right corner. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a 20th-century observer at a precision measuring instrument in a domed observatory, not a medieval crossbow in warfare; the khaki service cap and greatcoat are wrong for 1100. The letters A and B are painted on the instrument dial."
+}

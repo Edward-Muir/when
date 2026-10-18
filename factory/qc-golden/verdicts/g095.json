@@ -1,0 +1,15 @@
+{
+  "slug": "g095",
+  "description": "A man in a dark long coat and high collar, shown in profile, holds an open book up in one hand toward a glowing light and looks at its pages. Behind him a swirling vortex of dark and amber brushstrokes surrounds a pale light. Smoke rises from industrial chimneys on the right, a dim town skyline with lit windows sits behind him, and two shadowy men in hats stand at the left and right edges. The painting is a square canvas on a pale grey wall, with the wall visible around its edges. A tiny sparkle logo sits in the bottom-right corner. There is no readable text and nothing gory.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas hung on a pale grey wall, with the wall visible on all four sides; it must fill the image edge to edge. The picture is also only a generic reader with a book, so it is unclear it shows A Christmas Carol rather than any novel."
+}

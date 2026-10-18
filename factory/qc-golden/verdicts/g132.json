@@ -1,0 +1,15 @@
+{
+  "slug": "g132",
+  "description": "A large icebreaker ship with a rust-red hull and white-trimmed bow pushes through broken ice floes in dark polar water. Its tall superstructure has a lattice mast, a round funnel-like housing and rows of portholes, suggesting a mid-20th-century steel vessel. Dark stormy clouds fill the sky and snowy mountains sit at the horizon on both sides. No text, letters or frame are visible, and the painting runs edge to edge. Nothing is graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a red icebreaker forcing through polar ice, but the card is the founding of the UN World Food Programme. Nothing in the picture shows food aid, the United Nations or relief work; swap in art of food being delivered or of the agency's work."
+}

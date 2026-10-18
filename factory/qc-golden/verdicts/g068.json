@@ -1,0 +1,15 @@
+{
+  "slug": "g068",
+  "description": "An elderly man in a patterned cloth wrap, a coral-bead necklace and a gold-trimmed cap kneels in a dim earthen workshop and pours glowing molten metal from a crucible with tongs into a rough clay mould. Behind him on a shelf stand gold-coloured cast heads and figures, with a charcoal furnace, pots, tools and a second worker at a fire on the left. Smoke rises and there are no letters or frame; a small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a traditional metal caster pouring molten metal into a clay mould in a pre-industrial workshop, but the card is the 1954 IBM machine translation demonstration in New York. Nothing in the picture is a computer, office or 1950s setting."
+}

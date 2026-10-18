@@ -1,0 +1,15 @@
+{
+  "slug": "g021",
+  "description": "Two masked performers dance by torchlight in a South Asian palace courtyard at night. The left figure wears a horned gilded mask and flowing magenta and teal silks; the right figure has a dark painted face and a brown and gold coat. Carved arches and columns frame the scene, with onlookers and two women reclining on cushions at the right. The painting fills the image edge to edge, with no letters or numbers, and only a small sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows masked dancers in an Indian palace courtyard, but the card is the earliest reference to a harpsichord in Padua, Italy. No harpsichord, keyboard instrument or Italian setting appears; this looks like another card's art."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g124",
+  "description": "A dark, night-time oil painting of a medieval siege. An armoured soldier in chain mail and a kettle helmet, holding a long shield and a flaming torch, climbs a wooden ladder up a brick-and-stone castle wall. At the top, a man in a brown robe leans over the parapet with his arms reaching down. Below, other helmeted men in mail hold torches and a spear. Sparks drift through a smoky sky. A faint scribbled mark, possibly a painter's signature, sits in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A faint scribbled mark, possibly a painter's signature, sits in the bottom-right corner. It is not clearly letters, so it may need cropping or removal before this image passes."
+}

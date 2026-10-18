@@ -63,3 +63,4 @@ __pycache__/
 
 # Deck factory: QC review copies, regenerable by image-precheck.py
 /factory/decks/*/qc/img/
+/factory/qc-golden/img/

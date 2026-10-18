@@ -1,0 +1,15 @@
+{
+  "slug": "g133",
+  "description": "Two mountaineers climb an icy snow ridge toward a sharp rock spire under a dark, stormy sky. The front climber wears a red down suit and dark helmet, reaches up to the rock with a gloved hand, and carries an ice axe and harness clips. A second climber in a navy padded jacket and hood follows below, with a rope running between them. The style is loose oil-paint brushwork. I see no text, no frame or border, and no blood or nudity. The gear (puffer jackets, crampons, axe, harness) reads as modern mountaineering.",
+  "checks": {
+    "subject": "fail",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The picture shows two mountaineers climbing an icy ridge, but the card is the 1954 Geneva Accords on Indochina, a diplomatic settlement between France and the Viet Minh. Nothing in the image refers to the treaty, the negotiators, Vietnam or Indochina."
+}

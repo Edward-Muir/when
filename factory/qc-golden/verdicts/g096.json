@@ -1,0 +1,15 @@
+{
+  "slug": "g096",
+  "description": "A dim, ornate caravanserai courtyard with pointed-arch brick arcades and blue-and-ochre tiled patterns on the walls. In the foreground a mounted rider in a dark cloak and a helmet with a mail aventail sits on a dark horse, seen from behind. Around them are camels with bundled packs, robed merchants, a man kneeling to unroll striped textiles, and sacks of spice and grain with rolled carpets on the cobbles. Light falls through an opening in the roof. There are no legible letters or numbers, the painting runs edge to edge with no frame, and nothing is gory or nude. Era cues point to a medieval or early-modern Central Asian trade city.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

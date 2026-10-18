@@ -1,0 +1,15 @@
+{
+  "slug": "g005",
+  "description": "A young dark-haired man in a simple tunic sits at a small round table by an oil lamp, writing with a stylus or pen on a sheet, with a scroll beside him. Behind him, under a red, fiery smoky sky, a battle rages: soldiers in Roman legionary armour with crested helmets, rectangular red shields, spears and a tall standard advance, and a man lies fallen on the ground. No visible letters or numbers apart from a small sparkle logo in the bottom-right corner; the painting fills the image edge to edge, with a dark doorway edge at left that is part of the scene, not a frame. Some violence implied but no gore or visible wounds.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a scribe by an oil lamp with ancient Roman legionaries fighting behind him, but the card is the Polish-Lithuanian Golden Age of 1573. Roman armour, scutum shields and standards are a clear anachronism and the subject is a different event. Repaint with 16th-century Polish-Lithuanian Commonwealth imagery, such as a Sejm assembly, winged hussars, nobles in kontusz dress or Renaissance Krakow."
+}

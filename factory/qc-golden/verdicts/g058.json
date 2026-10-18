@@ -1,0 +1,15 @@
+{
+  "slug": "g058",
+  "description": "A man in a dark knit cardigan sits in an upholstered armchair in a dim, lamp-lit room, aiming a green-and-brass handheld device that throws a beam of light toward a wooden-cabinet television set. The room has patterned wallpaper, a table lamp and a sofa, and the TV's styling and the room's furnishings suggest the 1950s. There are no letters, numbers or signature, no visible frame or mat around the picture (the dark picture frames at the top are on the room's walls, inside the scene), and nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

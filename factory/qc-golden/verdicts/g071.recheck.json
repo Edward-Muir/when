@@ -1,0 +1,15 @@
+{
+  "slug": "g071",
+  "description": "A close-up of two hands clasped in a handshake at the centre, with dark suit sleeves entering from the left and right edges. Behind them is a dark wood-panelled room with a raised bench and chair, men in early 20th century suits seated at desks with brass lamps and papers, and others standing. There are no letters, numbers or signature, no border or frame, and nothing graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a handshake in a panelled courtroom or council chamber, but the card is the Australian Light Horse cavalry charge at Beersheba in 1917. Redo the painting as the charge itself: mounted horsemen galloping across open desert ground toward the town."
+}

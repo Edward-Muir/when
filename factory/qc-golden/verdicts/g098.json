@@ -1,0 +1,15 @@
+{
+  "slug": "g098",
+  "description": "A mounted warrior in dark lamellar armour with maroon lacing and a helmet with a dark plume raises a gold sword above a dark bay horse with a white blaze. Behind him a broken wooden gate sits between stone walls, with smoke and fire at the edges. Maroon banners with gold glyphs flank the scene, and armoured foot soldiers with spears and red-plumed helmets stand in front, with riders in the smoke behind. Nothing else is visible: no frame, no bloodshed, and no Latin-script text.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a mounted battle at a breached gate, not a flying shuttle or a loom; the card is John Kay's 1733 weaving invention. The armour, horse-borne warfare and banners fit neither the event nor an 18th-century English setting. The banners carry gold character-like glyphs, which is painted text."
+}

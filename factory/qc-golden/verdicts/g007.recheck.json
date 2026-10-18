@@ -1,0 +1,15 @@
+{
+  "slug": "g007",
+  "description": "An oil painting of a woman in a dark patterned headscarf and shawl cradling a thin, solemn child against her. Behind them is a tattered tent canopy, stacked grain sacks and several shadowed people, with dry ground and bare thorny trees in bright sun. No letters, frame, border or violence; fills the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a mother and child at a famine-relief style camp with grain sacks under a tent, but the card is the 2015 Hatton Garden safe-deposit vault burglary in London; the picture is of a different event, with no vault, drilled wall, safe-deposit boxes or burglars."
+}

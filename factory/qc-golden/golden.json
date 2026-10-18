@@ -1,0 +1,982 @@
+[
+  {
+    "id": "g001",
+    "slug": "maccabean-revolt",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/maccabean-revolt.jpg"
+  },
+  {
+    "id": "g002",
+    "slug": "antioch-crusader-conflicts",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/antioch-crusader-conflicts.jpg"
+  },
+  {
+    "id": "g003",
+    "slug": "soga-kingdom",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/soga-kingdom.jpg"
+  },
+  {
+    "id": "g004",
+    "slug": "birth-napoleon",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/birth-napoleon.jpg"
+  },
+  {
+    "id": "g005",
+    "slug": "polish-lithuanian-golden-age",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/polish-lithuanian-golden-age.jpg"
+  },
+  {
+    "id": "g006",
+    "slug": "ss-ideal-x-sails",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/ss-ideal-x-sails.jpg"
+  },
+  {
+    "id": "g007",
+    "slug": "hatton-garden-vault-burglary",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/hatton-garden-vault-burglary.jpg"
+  },
+  {
+    "id": "g008",
+    "slug": "ns-lenin-enters-service",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/ns-lenin-enters-service.jpg"
+  },
+  {
+    "id": "g009",
+    "slug": "horn-of-africa-famine",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/horn-of-africa-famine.jpg"
+  },
+  {
+    "id": "g010",
+    "slug": "spice-monopoly-dutch",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/spice-monopoly-dutch.jpg"
+  },
+  {
+    "id": "g011",
+    "slug": "citrate-blood-storage",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/citrate-blood-storage.jpg"
+  },
+  {
+    "id": "g012",
+    "slug": "mehen-snake-game",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/mehen-snake-game.jpg"
+  },
+  {
+    "id": "g013",
+    "slug": "monets-impression-sunrise",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/monets-impression-sunrise.jpg"
+  },
+  {
+    "id": "g014",
+    "slug": "servetus-burned-at-stake",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/servetus-burned-at-stake.jpg"
+  },
+  {
+    "id": "g015",
+    "slug": "plant-based-meat-mainstream",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/plant-based-meat-mainstream.jpg"
+  },
+  {
+    "id": "g016",
+    "slug": "istanbul-blue-mosque",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/istanbul-blue-mosque.jpg"
+  },
+  {
+    "id": "g017",
+    "slug": "smithsonian-agreement",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/smithsonian-agreement.jpg"
+  },
+  {
+    "id": "g018",
+    "slug": "deccan-sultanates",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/deccan-sultanates.jpg"
+  },
+  {
+    "id": "g019",
+    "slug": "year-three-popes",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/year-three-popes.jpg"
+  },
+  {
+    "id": "g020",
+    "slug": "statue-unity",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/statue-unity.jpg"
+  },
+  {
+    "id": "g021",
+    "slug": "harpsichord-invented",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/harpsichord-invented.jpg"
+  },
+  {
+    "id": "g022",
+    "slug": "slave-trade-arab",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/slave-trade-arab.jpg"
+  },
+  {
+    "id": "g023",
+    "slug": "astor-takes-commons-seat",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/astor-takes-commons-seat.jpg"
+  },
+  {
+    "id": "g024",
+    "slug": "mongol-khubilai-conquest",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/mongol-khubilai-conquest.jpg"
+  },
+  {
+    "id": "g025",
+    "slug": "paris-salon-culture",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/paris-salon-culture.jpg"
+  },
+  {
+    "id": "g026",
+    "slug": "ripken-breaks-iron-man-record-1995",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/ripken-breaks-iron-man-record-1995.jpg"
+  },
+  {
+    "id": "g027",
+    "slug": "horn-of-africa-famine",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/horn-of-africa-famine.jpg"
+  },
+  {
+    "id": "g028",
+    "slug": "wat-tyler-killed",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/wat-tyler-killed.jpg"
+  },
+  {
+    "id": "g029",
+    "slug": "medieval-jousting-tournaments",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/medieval-jousting-tournaments.jpg"
+  },
+  {
+    "id": "g030",
+    "slug": "general-anesthetic",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/general-anesthetic.jpg"
+  },
+  {
+    "id": "g031",
+    "slug": "wat-tyler-killed",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/wat-tyler-killed.jpg"
+  },
+  {
+    "id": "g032",
+    "slug": "louvain-library-burns",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/louvain-library-burns.jpg"
+  },
+  {
+    "id": "g033",
+    "slug": "paris-salon-culture",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/paris-salon-culture.jpg"
+  },
+  {
+    "id": "g034",
+    "slug": "servetus-burned-at-stake",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/servetus-burned-at-stake.jpg"
+  },
+  {
+    "id": "g035",
+    "slug": "first-land-crossing-antarctica",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/first-land-crossing-antarctica.jpg"
+  },
+  {
+    "id": "g036",
+    "slug": "medieval-jousting-tournaments",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/medieval-jousting-tournaments.jpg"
+  },
+  {
+    "id": "g037",
+    "slug": "medieval-pointed-shoes",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/medieval-pointed-shoes.jpg"
+  },
+  {
+    "id": "g038",
+    "slug": "qhapaq-nan-expansion",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/qhapaq-nan-expansion.jpg"
+  },
+  {
+    "id": "g039",
+    "slug": "birth-napoleon",
+    "label": "bad",
+    "kind": "remake",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/birth-napoleon.jpg"
+  },
+  {
+    "id": "g040",
+    "slug": "magna-carta-consequences",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/magna-carta-consequences.jpg"
+  },
+  {
+    "id": "g041",
+    "slug": "tea-ceremony-codification",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/tea-ceremony-codification.jpg"
+  },
+  {
+    "id": "g042",
+    "slug": "pride-prejudice",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/pride-prejudice.jpg"
+  },
+  {
+    "id": "g043",
+    "slug": "japanese-kana-developed",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/japanese-kana-developed.jpg"
+  },
+  {
+    "id": "g044",
+    "slug": "peninsular-war",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/peninsular-war.jpg"
+  },
+  {
+    "id": "g045",
+    "slug": "slave-trade-arab",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/slave-trade-arab.jpg"
+  },
+  {
+    "id": "g046",
+    "slug": "human-genome-project",
+    "label": "bad",
+    "kind": "remake",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/human-genome-project.jpg"
+  },
+  {
+    "id": "g047",
+    "slug": "namibia-independence",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/namibia-independence.jpg"
+  },
+  {
+    "id": "g048",
+    "slug": "polish-lithuanian-golden-age",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/polish-lithuanian-golden-age.jpg"
+  },
+  {
+    "id": "g049",
+    "slug": "pascal-probability-theory",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/pascal-probability-theory.jpg"
+  },
+  {
+    "id": "g050",
+    "slug": "hatton-garden-vault-burglary",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/hatton-garden-vault-burglary.jpg"
+  },
+  {
+    "id": "g051",
+    "slug": "citrate-blood-storage",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/citrate-blood-storage.jpg"
+  },
+  {
+    "id": "g052",
+    "slug": "bells-hydrofoil-record",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/bells-hydrofoil-record.jpg"
+  },
+  {
+    "id": "g053",
+    "slug": "mississippian-cahokia-decline",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/mississippian-cahokia-decline.jpg"
+  },
+  {
+    "id": "g054",
+    "slug": "crossbow-adoption-medieval",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/crossbow-adoption-medieval.jpg"
+  },
+  {
+    "id": "g055",
+    "slug": "georgetown-ibm-machine-translation",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/georgetown-ibm-machine-translation.jpg"
+  },
+  {
+    "id": "g056",
+    "slug": "first-pharmacopoeia",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/first-pharmacopoeia.jpg"
+  },
+  {
+    "id": "g057",
+    "slug": "crossbow-adoption-medieval",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/crossbow-adoption-medieval.jpg"
+  },
+  {
+    "id": "g058",
+    "slug": "tv-remote-control",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/tv-remote-control.jpg"
+  },
+  {
+    "id": "g059",
+    "slug": "apuleius-golden-ass",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/apuleius-golden-ass.jpg"
+  },
+  {
+    "id": "g060",
+    "slug": "apuleius-golden-ass",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/apuleius-golden-ass.jpg"
+  },
+  {
+    "id": "g061",
+    "slug": "junkers-allmetal-aircraft",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/junkers-allmetal-aircraft.jpg"
+  },
+  {
+    "id": "g062",
+    "slug": "peninsular-war",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/peninsular-war.jpg"
+  },
+  {
+    "id": "g063",
+    "slug": "ripken-breaks-iron-man-record-1995",
+    "label": "bad",
+    "kind": "remake",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/ripken-breaks-iron-man-record-1995.jpg"
+  },
+  {
+    "id": "g064",
+    "slug": "japanese-kana-developed",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/japanese-kana-developed.jpg"
+  },
+  {
+    "id": "g065",
+    "slug": "mongol-khubilai-conquest",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/mongol-khubilai-conquest.jpg"
+  },
+  {
+    "id": "g066",
+    "slug": "world-food-programme-founded",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/world-food-programme-founded.jpg"
+  },
+  {
+    "id": "g067",
+    "slug": "smithsonian-agreement",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/smithsonian-agreement.jpg"
+  },
+  {
+    "id": "g068",
+    "slug": "georgetown-ibm-machine-translation",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/georgetown-ibm-machine-translation.jpg"
+  },
+  {
+    "id": "g069",
+    "slug": "virchow-cellular-pathology",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/virchow-cellular-pathology.jpg"
+  },
+  {
+    "id": "g070",
+    "slug": "grimm-fairy-tales",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/grimm-fairy-tales.jpg"
+  },
+  {
+    "id": "g071",
+    "slug": "beersheba-cavalry-charge",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/beersheba-cavalry-charge.jpg"
+  },
+  {
+    "id": "g072",
+    "slug": "grameen-microcredit",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/grameen-microcredit.jpg"
+  },
+  {
+    "id": "g073",
+    "slug": "first-pharmacopoeia",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/first-pharmacopoeia.jpg"
+  },
+  {
+    "id": "g074",
+    "slug": "tea-ceremony-codification",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/tea-ceremony-codification.jpg"
+  },
+  {
+    "id": "g075",
+    "slug": "bells-hydrofoil-record",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/bells-hydrofoil-record.jpg"
+  },
+  {
+    "id": "g076",
+    "slug": "maccabean-revolt",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/maccabean-revolt.jpg"
+  },
+  {
+    "id": "g077",
+    "slug": "frankenstein-published",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/frankenstein-published.jpg"
+  },
+  {
+    "id": "g078",
+    "slug": "pascal-probability-theory",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/pascal-probability-theory.jpg"
+  },
+  {
+    "id": "g079",
+    "slug": "stari-most-mostar",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/stari-most-mostar.jpg"
+  },
+  {
+    "id": "g080",
+    "slug": "ns-lenin-enters-service",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/ns-lenin-enters-service.jpg"
+  },
+  {
+    "id": "g081",
+    "slug": "stari-most-mostar",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/stari-most-mostar.jpg"
+  },
+  {
+    "id": "g082",
+    "slug": "telescope-invention",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/telescope-invention.jpg"
+  },
+  {
+    "id": "g083",
+    "slug": "tv-remote-control",
+    "label": "bad",
+    "kind": "error",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/tv-remote-control.jpg"
+  },
+  {
+    "id": "g084",
+    "slug": "scots-reformation-movement",
+    "label": "bad",
+    "kind": "remake",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/scots-reformation-movement.jpg"
+  },
+  {
+    "id": "g085",
+    "slug": "fischer-tropsch-process",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/fischer-tropsch-process.jpg"
+  },
+  {
+    "id": "g086",
+    "slug": "darius-i-persian-king",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/darius-i-persian-king.jpg"
+  },
+  {
+    "id": "g087",
+    "slug": "junkers-allmetal-aircraft",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/junkers-allmetal-aircraft.jpg"
+  },
+  {
+    "id": "g088",
+    "slug": "rapa-nui-moai",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/rapa-nui-moai.jpg"
+  },
+  {
+    "id": "g089",
+    "slug": "rapa-nui-moai",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/rapa-nui-moai.jpg"
+  },
+  {
+    "id": "g090",
+    "slug": "jackie-robinson-mlb-debut",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/jackie-robinson-mlb-debut.jpg"
+  },
+  {
+    "id": "g091",
+    "slug": "spice-monopoly-dutch",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/spice-monopoly-dutch.jpg"
+  },
+  {
+    "id": "g092",
+    "slug": "year-three-popes",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/year-three-popes.jpg"
+  },
+  {
+    "id": "g093",
+    "slug": "caravanserai-samarkand",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/caravanserai-samarkand.jpg"
+  },
+  {
+    "id": "g094",
+    "slug": "beersheba-cavalry-charge",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/beersheba-cavalry-charge.jpg"
+  },
+  {
+    "id": "g095",
+    "slug": "christmas-carol-published",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/christmas-carol-published.jpg"
+  },
+  {
+    "id": "g096",
+    "slug": "caravanserai-samarkand",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/caravanserai-samarkand.jpg"
+  },
+  {
+    "id": "g097",
+    "slug": "fischer-tropsch-process",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/fischer-tropsch-process.jpg"
+  },
+  {
+    "id": "g098",
+    "slug": "flying-shuttle-refinement",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/flying-shuttle-refinement.jpg"
+  },
+  {
+    "id": "g099",
+    "slug": "istanbul-blue-mosque",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/istanbul-blue-mosque.jpg"
+  },
+  {
+    "id": "g100",
+    "slug": "harpsichord-invented",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/harpsichord-invented.jpg"
+  },
+  {
+    "id": "g101",
+    "slug": "general-anesthetic",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/general-anesthetic.jpg"
+  },
+  {
+    "id": "g102",
+    "slug": "astor-takes-commons-seat",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/astor-takes-commons-seat.jpg"
+  },
+  {
+    "id": "g103",
+    "slug": "human-genome-project",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/human-genome-project.jpg"
+  },
+  {
+    "id": "g104",
+    "slug": "african-yam-cultivation",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/african-yam-cultivation.jpg"
+  },
+  {
+    "id": "g105",
+    "slug": "sulfuric-acid-production",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/sulfuric-acid-production.jpg"
+  },
+  {
+    "id": "g106",
+    "slug": "pride-prejudice",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/pride-prejudice.jpg"
+  },
+  {
+    "id": "g107",
+    "slug": "grimm-fairy-tales",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/grimm-fairy-tales.jpg"
+  },
+  {
+    "id": "g108",
+    "slug": "treaty-of-bretigny",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/treaty-of-bretigny.jpg"
+  },
+  {
+    "id": "g109",
+    "slug": "louvain-library-burns",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/louvain-library-burns.jpg"
+  },
+  {
+    "id": "g110",
+    "slug": "deccan-sultanates",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/deccan-sultanates.jpg"
+  },
+  {
+    "id": "g111",
+    "slug": "telescope-invention",
+    "label": "bad",
+    "kind": "error",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/telescope-invention.jpg"
+  },
+  {
+    "id": "g112",
+    "slug": "african-yam-cultivation",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/african-yam-cultivation.jpg"
+  },
+  {
+    "id": "g113",
+    "slug": "ss-ideal-x-sails",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/ss-ideal-x-sails.jpg"
+  },
+  {
+    "id": "g114",
+    "slug": "medieval-pointed-shoes",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/medieval-pointed-shoes.jpg"
+  },
+  {
+    "id": "g115",
+    "slug": "plant-based-meat-mainstream",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/plant-based-meat-mainstream.jpg"
+  },
+  {
+    "id": "g116",
+    "slug": "magna-carta-consequences",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/magna-carta-consequences.jpg"
+  },
+  {
+    "id": "g117",
+    "slug": "darius-i-persian-king",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/darius-i-persian-king.jpg"
+  },
+  {
+    "id": "g118",
+    "slug": "mehen-snake-game",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/mehen-snake-game.jpg"
+  },
+  {
+    "id": "g119",
+    "slug": "monets-impression-sunrise",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/monets-impression-sunrise.jpg"
+  },
+  {
+    "id": "g120",
+    "slug": "christmas-carol-published",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/christmas-carol-published.jpg"
+  },
+  {
+    "id": "g121",
+    "slug": "first-land-crossing-antarctica",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/first-land-crossing-antarctica.jpg"
+  },
+  {
+    "id": "g122",
+    "slug": "sulfuric-acid-production",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/sulfuric-acid-production.jpg"
+  },
+  {
+    "id": "g123",
+    "slug": "flying-shuttle-refinement",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/flying-shuttle-refinement.jpg"
+  },
+  {
+    "id": "g124",
+    "slug": "antioch-crusader-conflicts",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/antioch-crusader-conflicts.jpg"
+  },
+  {
+    "id": "g125",
+    "slug": "virchow-cellular-pathology",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/virchow-cellular-pathology.jpg"
+  },
+  {
+    "id": "g126",
+    "slug": "namibia-independence",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/namibia-independence.jpg"
+  },
+  {
+    "id": "g127",
+    "slug": "soga-kingdom",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/soga-kingdom.jpg"
+  },
+  {
+    "id": "g128",
+    "slug": "statue-unity",
+    "label": "bad",
+    "kind": "error",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/statue-unity.jpg"
+  },
+  {
+    "id": "g129",
+    "slug": "frankenstein-published",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/frankenstein-published.jpg"
+  },
+  {
+    "id": "g130",
+    "slug": "birth-richard-nixon",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/birth-richard-nixon.jpg"
+  },
+  {
+    "id": "g131",
+    "slug": "treaty-of-bretigny",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/treaty-of-bretigny.jpg"
+  },
+  {
+    "id": "g132",
+    "slug": "world-food-programme-founded",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/world-food-programme-founded.jpg"
+  },
+  {
+    "id": "g133",
+    "slug": "geneva-accords-indochina",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/geneva-accords-indochina.jpg"
+  },
+  {
+    "id": "g134",
+    "slug": "qhapaq-nan-expansion",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/qhapaq-nan-expansion.jpg"
+  },
+  {
+    "id": "g135",
+    "slug": "mississippian-cahokia-decline",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/mississippian-cahokia-decline.jpg"
+  },
+  {
+    "id": "g136",
+    "slug": "scots-reformation-movement",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/scots-reformation-movement.jpg"
+  },
+  {
+    "id": "g137",
+    "slug": "birth-richard-nixon",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/birth-richard-nixon.jpg"
+  },
+  {
+    "id": "g138",
+    "slug": "grameen-microcredit",
+    "label": "bad",
+    "kind": "mockup",
+    "src": "_replaced/art-audit-2026-10/downsampled_generated_images/grameen-microcredit.jpg"
+  },
+  {
+    "id": "g139",
+    "slug": "geneva-accords-indochina",
+    "label": "good",
+    "kind": "good",
+    "src": "downsampled_generated_images/geneva-accords-indochina.jpg"
+  },
+  {
+    "id": "g140",
+    "slug": "jackie-robinson-mlb-debut",
+    "label": "bad",
+    "kind": "swap",
+    "src": "_replaced/card-reports-2026-10/downsampled_generated_images/jackie-robinson-mlb-debut.jpg"
+  }
+]

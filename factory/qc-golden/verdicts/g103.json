@@ -1,0 +1,15 @@
+{
+  "slug": "g103",
+  "description": "A man in a white lab coat and white gloves, seen from behind and to the side, holds a multichannel pipette over a glass gel-style plate on a beige bench. Beside him a beige CRT monitor shows green and orange jagged trace lines, like sequencing or chromatogram output. Dim shelves of bottles and jars fill the background. The equipment and monitor suggest the 1980s or 1990s. No legible text, frame or border; the painting runs edge to edge in dark oil style. Nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

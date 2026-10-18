@@ -1,0 +1,15 @@
+{
+  "slug": "g004",
+  "description": "A painted scene of a man in a long dark greatcoat and black bicorn hat, standing in the foreground seen from the side and facing left across a battlefield. To the right, mounted officers in blue and white uniforms with gold braid and plumed bicorns sit on dark horses; to the left, more cavalry and infantry in shakos move through white smoke. Fires glow on a distant plain under a dark, stormy sky. Era cues are early nineteenth-century military dress, bicorn hats, sabres and horses. No text, no frame, nothing gory is visible, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

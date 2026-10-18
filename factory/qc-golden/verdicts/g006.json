@@ -1,0 +1,15 @@
+{
+  "slug": "g006",
+  "description": "A painted scene of soldiers moving through a muddy trench lined with sandbags and timber props. The foreground soldier wears a steel helmet and a long rain cape and carries a bolt-action rifle; a hanging oil lantern lights the trench wall. Three more helmeted soldiers follow in single file. Beyond the trench, misty jungle-covered hills and a distant clearing with low buildings, a lit flare, and a long strip of ground. The painting fills the frame edge to edge. No text, frame or gore is visible. Era cues are a WWII-style helmet and rifle.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows soldiers in a trench, but the card is a container ship (the Ideal X, a converted tanker carrying truck trailers). The picture has no ship, port, or cargo."
+}

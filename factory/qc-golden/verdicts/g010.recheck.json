@@ -1,0 +1,15 @@
+{
+  "slug": "g010",
+  "description": "A row of tall carved stone heads (Easter Island moai style) with long faces, some wearing red cylindrical topknots, stands on a stone platform beside the sea under a red and orange sunset sky. Barefoot loincloth-wearing men haul on ropes and a long timber lever to raise one topknot, and a loose red stone cylinder sits on the platform at right. It is an oil-like painting in a dark, earthy palette. The painting is surrounded by an aged, cream, cracked and torn paper edge, and a small white sparkle logo sits in the bottom-right corner. No legible letters or numbers.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows Easter Island moai being raised with ropes and a timber lever, not the Dutch VOC spice monopoly in the East Indies (ships, traders, spices, fort). The painting also sits inside a cream, cracked, torn-paper border instead of filling the image edge to edge."
+}

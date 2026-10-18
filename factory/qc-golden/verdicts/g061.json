@@ -1,0 +1,15 @@
+{
+  "slug": "g061",
+  "description": "A dark, low-key oil painting of a laboratory bench. A dark-gloved hand pours a pale yellow liquid from a small glass vessel into a clear glass bottle holding dark red-brown liquid. Behind them are a glass flask, a brass fitting, and a wooden rack of test tubes with small paper labels that carry faint marks. The table is wooden, the setting is a 19th-century-style laboratory, and the painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a chemistry lab with a gloved hand pouring liquid into a bottle, not an aircraft; the card is the Junkers J1 all-metal plane, so the art needs an aircraft. The test-tube labels also carry handwriting-like marks, which must not appear."
+}

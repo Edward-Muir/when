@@ -1,0 +1,15 @@
+{
+  "slug": "g015",
+  "description": "An oil painting on a stretched canvas, with the canvas edges and a plain white wall visible around it. A large, dark brown, crusted mound sits at the centre, dotted with red-pink patches and blue-grey highlights, as if charred or burnt. Orange flames and blue-grey smoke rise behind and around it, and white, ash-like splashes sit on the lower right. There are no letters, numbers or signature, and nothing is clearly gory, though the red patches on the mound are notable.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits on a stretched canvas with its edges and a white wall showing around it, so it does not fill the image edge to edge. The subject is also unclear: it shows a charred mound in flames, which does not plainly read as a plant-based burger."
+}

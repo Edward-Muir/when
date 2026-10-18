@@ -1,0 +1,15 @@
+{
+  "slug": "g031",
+  "description": "An old, weathered hand holds a brass stylus over a large parchment portolan-style chart covered in red and blue rhumb lines, with a compass rose and a small figure on a camel near a coastline at right. Shell dishes of red, blue and yellow pigment and a jar of brushes sit at left, in a dim timber-beamed stone workshop. No letters, border or frame, nothing graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a cartographer's hand drawing rhumb lines on a medieval sea chart with pigments and a camel rider, but the card is the 1381 killing of Wat Tyler at Smithfield. Nothing of the parley, the king, the peasants or the London setting appears; repaint it as the confrontation at Smithfield."
+}

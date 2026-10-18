@@ -1,0 +1,15 @@
+{
+  "slug": "g003",
+  "description": "A young girl with a long dark braid, wearing a dark pinafore, leans over a wooden table and spoons soup from a bowl, steam rising. Other children sit at the same table with bowls in front of them, and one bowl sits on the table near the foreground. A woman in a white cap and apron stands at the right, ladling from a large metal pot. The room is plain, with tall windows, bare walls and a wall-mounted oil lamp, and the scene is painted in muted greys and browns. No legible text. A small sparkle logo sits in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a European-style soup kitchen with children eating from bowls, not the Busoga kingdoms of eastern Uganda in 1400. The pinafores, white cap and multi-pane windows read as 19th-century European, not a 1400 East African setting."
+}

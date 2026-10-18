@@ -2,7 +2,7 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. Still to do: the QC calibration on the golden set, the six tasks, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags). Still to do: the six tasks, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
@@ -375,10 +375,34 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 
 #### Calibration before trusting it
 
-- Build `factory/qc-golden/` from the 70 known-bad images kept in `when-images/_replaced/`, plus about 70 known-good.
-- Record recall and false-flag rate in this doc.
-- Target: catches every swap and mockup, with fewer than 10% false flags.
-- Re-run it whenever the QC prompt changes.
+- The golden set is `factory/qc-golden/`, built by `python3 scripts/factory/qc-golden.py build` and scored by `… score`.
+  - **Bad:** the 70 images replaced in October 2026, kept in `when-images/_replaced/`: 54 swaps, 9 mockups, 3 on-topic errors and 4 remakes done on request.
+  - **Good:** the art that replaced them, the same 70 cards. A paired design: every card is seen once with the wrong picture and once with the right one.
+  - The images get neutral ids (`g001`…) in a fixed shuffle, so a file name never hints at the label. The images are gitignored; `golden.json`, the cards and every verdict are committed, so a re-run after a prompt change can be compared.
+- Target: catches every swap and mockup, with fewer than 10% false flags. Re-run it whenever the QC prompt changes.
+
+**Results, 2026-10-18.** One Haiku reviewer per image, with the `card-art-qc` prompt; then a Sonnet second opinion on every flag.
+
+| Set            |   n | Haiku flagged | Still flagged after Sonnet |
+| -------------- | --: | ------------: | -------------------------: |
+| swap           |  54 |     54 (100%) |                   51 (94%) |
+| mockup         |   9 |      9 (100%) |                   9 (100%) |
+| on-topic error |   3 |             1 |                          1 |
+| remake         |   4 |             1 |                          1 |
+| good           |  70 |       9 (13%) |                     1 (1%) |
+
+- **Haiku alone caught every swap and mockup**, at a 13% false-flag rate: just over the target, so the second opinion is needed. Seven of the nine were `unsure` on a generic subject ("could be any negotiation").
+- **The second opinion cut false flags to 1 in 70.** That one, `antioch-crusader-conflicts`, has a painter's signature in its corner and arguably should fail anyway.
+- **But it also cleared 3 real swaps**, all of which Haiku had marked only `unsure`: `darius-i-persian-king`, `caravanserai-samarkand` and `birth-richard-nixon` (Churchill's V-sign picture).
+  - The precheck's dHash catches the first two: each is a copy of another card's art, at distance 0.
+  - **With dHash, the pipeline catches 62 of 63.** The miss is Churchill on Nixon's birth card, a picture of a different real person in a pose both men were known for.
+  - In production a swap is an off-by-one rename, so it is always a copy of another image in the deck or the catalogue: exactly what dHash sees.
+- **On-topic errors are the weak spot.** It caught the handgun-like TV remote (it reads `ZENITH` lettering). It missed the 19th-century telescope and the Statue of Unity's scale, which the rubric can't see without a scene warning. So a scene that knows the trap should say so in `qc_warnings`.
+- Two prompt fixes came out of the run, both in `card-art-qc.md`:
+  - On a birth card, the era is judged against the person's adult life, not the birth year. Before this fix, Napoleon's correct art failed on era.
+  - The second opinion reads the first verdict only **after** writing its own cold description, so the flag can't steer what it sees (`qc.md`).
+- **Cost:** a Haiku review is about 70k tokens, mostly fixed overhead, and a deck of 30 needs about 30 plus a handful of Sonnet rechecks.
+- The run used `general-purpose` agents with the `card-art-qc` prompt and model, because a new agent type registers only in a fresh session. A scheduled run uses the agent itself.
 
 ### C3. Ship (daily 18:05): upload, wire, open the PR
 
@@ -496,6 +520,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 - **QC:**
   - Run the golden set and report recall and false-flag rate.
   - Plant 3 swaps and one framed image in a test deck; all 4 must be caught.
+  - **Golden set, 2026-10-18: done.** The results are in [Calibration](#calibration-before-trusting-it): 62 of 63 swaps and mockups caught with dHash, and 1 of 70 false flags.
   - Delete one verdict file; the collector must fail.
 - **Batching:**
   - Seed a test deck with 23 `pending` slugs. C1 must run 3 sessions (10, 10, 3), and a fourth run must exit at once.

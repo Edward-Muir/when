@@ -1,0 +1,15 @@
+{
+  "slug": "g003",
+  "description": "An oil painting of a girl in profile with a dark braid and a pinafore, spooning soup from a steaming bowl at a worn wooden table. Other children eat from bowls behind her, and a woman in a white cap and apron ladles from a large pot at the right. The room has tall multi-pane windows, plain walls and a wall-mounted oil lamp. The clothing and fittings read as late 19th or early 20th century European. No text, no frame, nothing graphic; a small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a European-style soup kitchen or school meal with children in pinafores, a woman in a white cap and an oil lamp, not the Busoga kingdoms of eastern Uganda in 1400. The dress, glazed windows and lamp are 19th or early 20th century European, so both subject and era are wrong."
+}

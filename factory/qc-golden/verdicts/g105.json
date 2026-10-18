@@ -1,0 +1,15 @@
+{
+  "slug": "g105",
+  "description": "A richly decorated Islamic-style courtyard with pointed arches, carved stucco and calligraphic bands, lit by hanging brass lanterns, with a tiered fountain in the centre. A man in a gold robe sits at a low table with an open book, while a man in a blue robe gestures beside him. To the right, a group plays lutes and a stringed instrument, and a figure in a dark silhouette sits in the right foreground. A calligraphy panel stands in the background, and robed and turbaned men stand around the courtyard. The painting fills the frame edge to edge, with a small sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a courtyard of scholars, a reader and a lute-playing band, not alchemists distilling oil of vitriol. There is no still, retort, furnace or distillation apparatus. The calligraphy on the wall panel and the open book carries script-like letters painted into the scene."
+}

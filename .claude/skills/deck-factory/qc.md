@@ -35,10 +35,14 @@ Don't tell it what the image should show: the card file does that, after the des
 Run `qc-collect.js --deck <deck>` again. For each slug in `recheck` (a first verdict of `fail`
 or `unsure`), dispatch one `card-art-qc` agent **with `model: "sonnet"`**. The prompt is:
 
-> Strict second opinion. A first reviewer flagged this image: "<its reason>". Image:
-> `factory/decks/<deck>/qc/img/<slug>.jpg`. Card: `factory/decks/<deck>/qc/cards/<slug>.json`.
-> Describe the image cold before reading the card. Write your verdict to
+> Strict second opinion on one card image. Image: `factory/decks/<deck>/qc/img/<slug>.jpg`.
+> Card: `factory/decks/<deck>/qc/cards/<slug>.json`. Describe the image cold before you read
+> the card. Then read the first reviewer's verdict, `factory/decks/<deck>/qc/<slug>.json`, and
+> decide whether its flag is right. Write your verdict to
 > `factory/decks/<deck>/qc/<slug>.recheck.json`.
+
+It reads the first verdict only after its own description, so the flag can't steer what it
+sees.
 
 ## 4. Completeness, then apply
 

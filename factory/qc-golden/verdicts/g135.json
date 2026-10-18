@@ -1,0 +1,15 @@
+{
+  "slug": "g135",
+  "description": "A large domed mosque at dusk or night, with several tall slender minarets, a cluster of domes over a central hall, and arcaded galleries around a wide courtyard. The courtyard paving is wet and reflects the lights, and a small domed fountain stands in the middle. Several small figures with umbrellas walk across it. Some arches glow teal and gold. There is a small calligraphic band above the central portal, and a sparkle logo in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows the Blue Mosque in Istanbul, an Ottoman building of the early 1600s with minarets and a domed courtyard. The card is Cahokia around 1250, a Mississippian earthen-mound city near St. Louis with no minarets or domed mosques. The art should show Cahokia's flat-topped earthen platform mounds, a timber palisade, and a plaza of thatched or wattle houses. The inscription band above the portal may also read as lettering."
+}

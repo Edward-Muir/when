@@ -1,0 +1,15 @@
+{
+  "slug": "g021",
+  "description": "Two performers dance in a torch-lit courtyard at night. The figure on the left wears a horned, gilded mask with a fanged face, a flowing magenta and teal robe and gold jewellery, arms flung wide. The figure on the right has a dark painted face, a brown and gold embroidered coat, and reaches toward the other. Carved stone arches and columns frame the palace, with turbaned onlookers at the right and two women reclining on cushions. There is no instrument or keyboard in the picture, and the only mark is a small sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows masked dancers performing in a palace courtyard, not a harpsichord. The card is the harpsichord's earliest reference in Padua, and no keyboard instrument or Italian setting appears anywhere in the picture."
+}

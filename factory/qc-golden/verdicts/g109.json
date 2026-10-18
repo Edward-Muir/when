@@ -1,0 +1,15 @@
+{
+  "slug": "g109",
+  "description": "A Gothic stone interior with tall wooden bookshelves and balconies, all on fire. Soldiers in long coats and spiked helmets stand among the flames. A foreground figure raises a burning torch, another on the right holds a rifle, and loose pages drift through smoke and embers. No legible text, no frame, and the painting runs edge to edge. Nothing is shown in close gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g067",
+  "description": "An oil painting of a grey-haired man in a black coat with a white clerical collar band, seated at a rough wooden table with an open ledger and a few coins, extending his open hand to an elderly man in a knit cap and worn brown coat who holds a coin; an older woman in a patterned headscarf and dark shawl clings to the old man's arm. The setting is a dim rustic timber-and-stone interior with a wall-mounted oil lamp and a wooden box. Dress, lamp and furnishings read as 18th or 19th century. No text, no frame; a small sparkle logo in the bottom-right corner. Nothing graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a clergyman taking coins from a poor elderly couple in a 19th-century cottage, not the 1971 Smithsonian Agreement on currency realignment between nations. The oil lamp, dress and rustic interior are 18th or 19th century, a clear anachronism for a 1971 card."
+}

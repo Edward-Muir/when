@@ -1,0 +1,15 @@
+{
+  "slug": "g074",
+  "description": "A dark oil-painting-style scene of a bearded man in a wide-brimmed black hat, brown leather doublet with white collar, bandolier and sash, standing upright holding a long musket. He stands in a grove of trees bearing yellow fruit split open to show red seeds (nutmeg and mace). Behind him on a bay under a stormy sky sits a large three-masted sailing ship with a Dutch-style tricolour flag and the letters VOC painted on its sails, with smaller boats and a smoking volcanic headland on the left. A small white sparkle logo sits in the bottom-right corner. The painting fills the frame edge to edge, with no border.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a Dutch East India Company musketeer in a nutmeg grove beside a VOC ship, not Sen no Rikyu and the Japanese tea ceremony. The VOC (founded 1602) ship and dress are anachronistic for 1580. The letters VOC are painted on the sails, which breaks the no-text rule. The first reviewer's flag is right."
+}

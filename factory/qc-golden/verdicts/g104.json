@@ -1,0 +1,15 @@
+{
+  "slug": "g104",
+  "description": "A bearded man in a hooded, tattered brown robe and dark cloak stands in a stone workshop, pouring glowing yellow-green liquid from a round flask into a narrow glass vessel while smoke curls upward. Behind him are shelves of glass bottles and flasks, some with cobwebs, and a lit candle sits on a wooden table beside bottles of red-brown liquid. A small white sparkle logo sits in the bottom-right corner, and there is no other visible text. The painting fills the image edge to edge, with no frame and no gore.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an alchemist pouring liquid between glass flasks in a stone workshop, but the card is yam cultivation in West Africa; there is no yam, field, farm or farmer in the picture."
+}

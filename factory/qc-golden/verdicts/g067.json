@@ -1,0 +1,15 @@
+{
+  "slug": "g067",
+  "description": "A grey-haired man in a black coat with a white collar band sits at a rough wooden table with an open ledger and a few coins, holding out his hand. Facing him, an older man in a dark knit cap and worn brown coat holds a coin, and beside him an older woman in a patterned headscarf and dark shawl watches with her hands clasped. The room is a rustic timber-beamed interior with stone walls, a lit oil lamp on the wall and a wooden box; the dress and furnishings look 18th or 19th century. A small sparkle logo sits in the bottom-right corner. The painting fills the image edge to edge, with no frame.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a cottage scene of a man handing coins to an elderly couple across a ledger, not the 1971 Smithsonian currency realignment between nations. The dress, lamp and interior look 18th or 19th century, a clear anachronism for a 1971 card."
+}

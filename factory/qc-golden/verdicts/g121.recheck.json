@@ -1,0 +1,15 @@
+{
+  "slug": "g121",
+  "description": "A dark oil painting of a night-time container port. A large steel gantry crane on the right lifts a shipping container above the deck of a dark-hulled cargo ship, with more containers stacked on the quay in the foreground and further cranes and ships fading into the background under a harsh overhead light. There is no visible text, no frame or border, and nothing graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a container port with a gantry crane loading a shipping container onto a cargo ship, but the card is the first overland crossing of Antarctica (1958). It should show an expedition party with tracked vehicles and dog sledges on polar ice. The stacked-container port is also a modern-era look that does not fit 1958."
+}

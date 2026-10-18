@@ -1,0 +1,15 @@
+{
+  "slug": "g070",
+  "description": "An oil-painting-style interior. A sleeping infant wrapped in white cloth lies in a dark, carved wooden rocking cradle. A sunlit window is on the left, and a side table holds a stack of old books with a small globe on top; the book spines show partial lettering that looks like \"NATURAL\" and \"HISTORY\". Through the window is a smoky industrial skyline with tall chimneys and rows of houses with lit windows. There is a scrawled signature in the bottom right. The painting sits inside a thin white margin on all sides, so it does not fill the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a sleeping baby in a cradle in front of an industrial skyline; the card is the 1812 publication of Grimm's folk tales, and the books are only a background prop. The book spines carry painted lettering (it reads like NATURAL and HISTORY) and there is a scrawled signature in the bottom right. A thin white margin surrounds the painting on all four sides, so it is a mat or border rather than an edge-to-edge painting."
+}

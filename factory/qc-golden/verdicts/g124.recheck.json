@@ -1,0 +1,15 @@
+{
+  "slug": "g124",
+  "description": "A dark night-time oil painting of a medieval siege. A soldier in chain mail and a nasal helmet, with a kite shield and a flaming torch, climbs a wooden ladder against a brick-and-stone tower wall. At the top a bearded man in a brown robe leans over the battlement, reaching his hands down toward him. More helmeted, mailed men with torches and spears crowd the foreground below, and sparks drift through a smoky sky. In the bottom-right corner there is a cursive painted signature in light strokes. The painting fills the image edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "A cursive painter's signature is painted into the bottom-right corner, inside the image rather than cropped away. It reads as handwritten letters, so it counts as text. Ask for a new painting with no signature, or crop it out."
+}

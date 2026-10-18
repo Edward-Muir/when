@@ -1,0 +1,15 @@
+{
+  "slug": "g025",
+  "description": "A thickly brushed oil-style painting at night. A tall, tapering dark brown structure, possibly a furnace, kiln or forge, glows white-orange at its base, with flames licking up from the top. Sparks spray to the left across dark, hulking shapes in the foreground. The background is dark navy brushwork. There are no legible letters, no frame or border, and nothing gory. A small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a furnace or forge with sparks, but the card is Parisian salon culture. No salon, people or room appears in the picture."
+}

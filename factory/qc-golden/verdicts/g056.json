@@ -1,0 +1,15 @@
+{
+  "slug": "g056",
+  "description": "A dark-haired man in a white head cloth and a deep red mantle over a white tunic with gold trim sits on a stone bench, bundling dried herbs and sprigs. Woven baskets of dried roots, leaves and herbs sit on the stone ledge in front of him, with a mortar and pestle at the right edge. Behind him are an olive tree, flowering plants and a weathered stone wall with columns. A small white sparkle logo sits in the bottom-right corner, and the painting fills the image edge to edge with no frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The man wears classical, antiquity-style dress (white head cloth, draped toga-like tunic, red mantle) in a Mediterranean garden with columns and an olive tree. The card is 1546 Nuremberg apothecaries, so the dress and setting do not fit the 16th century. The picture is also a generic herbalist with no book, no list and no Nuremberg setting, so it could illustrate many herb cards rather than this one."
+}

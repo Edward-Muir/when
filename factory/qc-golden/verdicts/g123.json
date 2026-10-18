@@ -1,0 +1,15 @@
+{
+  "slug": "g123",
+  "description": "A man in a dark, shadowy workshop, in a sleeveless vest over rolled-sleeve shirt, leans over a large wooden loom and pulls a cord with one hand while the other rests on a wooden beam. A wooden shuttle with pointed iron ends is shown in mid-air, passing through a sheet of taut warp threads. The background holds wooden framing, pulleys and gears, and shelves with objects. Era cues are a hand-operated wooden loom and pre-industrial clothing. No text, letters or numbers are visible, and no frame or border; the painting fills the image edge to edge. Nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

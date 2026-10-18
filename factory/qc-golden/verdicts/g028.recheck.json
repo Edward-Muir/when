@@ -1,0 +1,15 @@
+{
+  "slug": "g028",
+  "description": "A dark oil painting of a muddy medieval market street. In the foreground a hooded figure in a quilted, padded jacket lies slumped on the ground beside a thatched stall with crates of bread, a dropped spear and a torn cloth near his hand. Behind him armoured riders in helmets and dark cloaks ride through half-timbered houses, with more armed men in the background. No letters or numbers, no border or frame, no blood or visible wounds, no nudity.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

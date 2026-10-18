@@ -1,0 +1,15 @@
+{
+  "slug": "g092",
+  "description": "A square oil painting of three tall gold-and-cream domed headpieces with small crosses on top, resting on folds of crimson cloth. Behind them a large dark dome with a lantern and cross rises under a dusky blue-grey sky, with a smaller dome at the right edge. The canvas is shown hung on a pale grey wall with a drop shadow, and a small sparkle logo sits in the bottom-right corner outside the painting. No people, legible text, or blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is a stretched canvas hung on a pale grey wall with a drop shadow, not a painting that fills the image edge to edge."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g085",
+  "description": "A barefoot man in torn, dark-stained robes, with a dark cloth over his head and face in shadow, walks down a stone-paved street. An older bearded cleric in black and white vestments with gold trim holds up a large ornate key toward him, while turbaned and robed onlookers watch from doorways and windows. Behind them is a large grey-domed stone building in misty light. The architecture and dress look medieval or Near Eastern, with no modern objects. There is no visible text, a small sparkle logo sits at the bottom right corner, and no frame or border is visible.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a robed cleric handing a large key to a ragged man in a medieval-style stone street, a scene of a religious or historical handover. The card is the Fischer-Tropsch Process, a 1925 chemical process, and nothing in the picture relates to chemistry, industry or 1925."
+}

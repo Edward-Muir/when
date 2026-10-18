@@ -1,0 +1,15 @@
+{
+  "slug": "g055",
+  "description": "A dim 1950s-style room with a tall grey cabinet of reel-to-reel tape drives and a panel of glowing vacuum tubes. In the foreground a man in a white shirt and dark trousers feeds a stack of punched paper through a grey machine, and a second man in a dark suit leans over a printer with a long paper strip spilling out. Several men in suits and fedora hats watch from the background, and a wisp of smoke or steam rises by the machine. The paper and printouts show only illegible marks, with no readable letters, numbers or signature. The painting fills the frame edge to edge with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

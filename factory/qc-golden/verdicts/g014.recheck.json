@@ -1,0 +1,15 @@
+{
+  "slug": "g014",
+  "description": "A dark oil painting of a thin, bare-chested man in a loincloth standing in a column of flames on a pyre, head tilted back, with a charred stake above his head and smoke billowing behind. An old white-bearded man in a black robe holds an open book on the left, and a crowd in dark 16th-17th century clothing watches from both sides in a cobbled square at night. The painting does not reach the image edges: a clean white margin of uniform width surrounds it on all four sides, like a mat, and a small sparkle mark sits in the bottom right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "the painting sits inside a wide white mat or border on all four sides; it should fill the image edge to edge."
+}

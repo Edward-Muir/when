@@ -1,0 +1,15 @@
+{
+  "slug": "g083",
+  "description": "A dark, grey-blue living room in thick oil brushstrokes, seen from a first-person view. A hand in the foreground grips a pistol-shaped grey device, and legible lettering on its side reads 'ZENITH' over 'FLASH-MATIC'. It points at a 1950s wooden console television with a bright static-filled screen, beside a table lamp and curtains. A small sparkle logo sits in the bottom-right corner; there is no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The device has clear painted lettering, 'ZENITH' and 'FLASH-MATIC', on its side. Repaint the remote with a blank body and no words; the corner sparkle logo is fine."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g022",
+  "description": "A night painting of a wooden dhow with a large dark lateen sail, carrying robed and turbaned passengers with small lanterns across choppy dark water under a crescent moon and green-grey clouds. A palm-fringed walled coastal town with a tower sits on the left. The whole painting is enclosed by a thick dark brown wooden picture frame on all four sides, and a small white sparkle logo sits in the bottom-right corner. No letters or numbers, no violence or nudity.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits inside a thick dark wooden picture frame on all four sides. Crop to the painting so it fills the image edge to edge."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g130",
+  "description": "An oil painting of an older, stocky man in a brown felt hat and a tweed three-piece suit with tie, smiling with both arms raised high, each hand making a V-for-victory sign. Press photographers with flash cameras crowd both sides, a uniformed soldier photographs on the right, microphones on stands, flags and bright lights fill a dim, gritty background. Mid-20th-century dress and equipment, painterly dark palette. No legible letters or numbers, no frame or canvas edge, nothing graphic. A small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

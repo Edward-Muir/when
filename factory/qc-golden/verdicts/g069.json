@@ -1,0 +1,15 @@
+{
+  "slug": "g069",
+  "description": "A large dry-stone wall of rough-cut, pale brownish blocks fills most of the frame, with a curved section on the left and a narrow dark passage between two wall faces. Behind it is open grassland under a dusk sky of dark blue and orange clouds, with flat-topped acacia-type trees, a few brown and white cattle, and two small human figures at lower left. A small white sparkle logo sits in the bottom-right corner. Nothing gory, no frame, no border, and no legible text.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a stone enclosure wall in a grassland landscape with grazing cattle, not Virchow's Cellular Pathology (1858): there is no book, no microscope, no cells, no medical or scientific setting. The picture depicts a different subject, so it needs a new painting of a book, a microscope view of cells, or a 19th-century medical study."
+}

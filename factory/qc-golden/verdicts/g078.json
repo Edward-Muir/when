@@ -1,0 +1,15 @@
+{
+  "slug": "g078",
+  "description": "A dim, painterly interior. A middle-aged man with slicked-back dark hair, in a dark work shirt with rolled sleeves and work trousers, looks down while his hands rest on a large cylindrical reel wound with a thick coil of tubing, set in a silver metal frame on a pedestal base, with a hose running down to the floor. Behind him are wooden cabinets, a bench with glass flasks and beakers, and an iron-frame bed at right. The clothing and reel suggest the mid-20th century. No letters or numbers are visible; a small sparkle logo sits in the bottom-right corner. The painting fills the image edge to edge, with no frame. Nothing gory or nude.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a 20th-century worker at a coiled-tubing reel in a modern lab-like room, but the card is Pascal and Fermat's 1654 letters founding probability: the picture does not show that event or anything tied to it, and the clothing and machinery are a clear anachronism for 1654. The art needs a 17th-century scene connected to the problem of points, such as gamblers and dice or a study with letters and dice."
+}

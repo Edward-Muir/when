@@ -1,0 +1,15 @@
+{
+  "slug": "g077",
+  "description": "A woman with dark hair pinned up, in a dark high-necked dress with a white collar, sits at a wooden table writing with a quill pen by candlelight. A lit candle in a brass holder, several inkwells, loose handwritten pages and leather-bound books are on the table; a bookshelf and a fireplace fill the dim room behind her, with a dark-paned window on the right. Era cues: quill and inkwells, candle light, a high-collared 19th-century-style dress. The pages carry rows of scribbled, handwriting-like marks, not readable letters. The painting runs edge to edge in an oil-painting style with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

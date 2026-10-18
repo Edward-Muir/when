@@ -1,0 +1,15 @@
+{
+  "slug": "g023",
+  "description": "A mounted soldier in khaki with a wide-brimmed slouch hat, a plume on the hat, and a rifle with a fixed bayonet, riding a dark bay horse at a gallop over dusty, smoky, churned ground. Other mounted riders in similar hats show through the haze behind him, and a distant town skyline with a spire sits on the right horizon. The oil-painting style is warm browns and ochres, the painting fills the frame edge to edge, and there is no visible text.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a mounted soldier charging with a bayonet rifle across a battlefield, but the card is Nancy Astor taking her seat in the House of Commons. Nothing in the picture shows Parliament or a woman MP; repaint as a woman entering a chamber of the Commons in 1919."
+}

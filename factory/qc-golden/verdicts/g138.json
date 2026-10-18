@@ -1,0 +1,15 @@
+{
+  "slug": "g138",
+  "description": "A man in a long pale kurta leans forward and hands a banknote to a woman seated on a woven mat on a dirt floor. She holds out an open palm, and a small child clings to her back. Behind them are a thatched roof and bamboo-wattle walls, with a potted plant at the left edge. The palette is monochrome grey with red accents at the edges. The painting is shown as a canvas on a white wall, with a white margin and a dark canvas edge around it. There is no legible text, and nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas hung on a white wall, with a white margin and a dark canvas edge around it. It does not fill the image edge to edge."
+}

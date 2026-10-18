@@ -1,0 +1,15 @@
+{
+  "slug": "g111",
+  "description": "An oil-painted scene of a bearded man in a dark coat and white collar, seen from the side, looking through a brass telescope held up at an open window. The telescope's lens shows a Gothic church with two tall spires. Through the window are a canal with a boat, brick houses with stepped gables and a distant spire. On the sill at lower left sit a brass telescope on a stand and a second brass telescope lying flat. The only mark is a small sparkle logo in the bottom-right corner, and the painting runs edge to edge with no frame. Nothing violent or graphic is shown.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

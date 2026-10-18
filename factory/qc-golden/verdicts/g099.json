@@ -1,0 +1,15 @@
+{
+  "slug": "g099",
+  "description": "Two bearded men in dark and tan robes work at a large wooden loom, weaving a carpet with a tree of life, animals, a stream and floral borders. The workshop is dim, lit by candles and oil lamps, with a dyeing vat and other workers in the background. The wooden loom and lamps suggest a pre-modern workshop. No letters or numbers are visible, only a small sparkle logo in the bottom-right corner; the painting fills the frame edge to edge with no border or wall, and nothing is violent or nude.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows men weaving a carpet at a loom in a candlelit workshop, but the card is the Blue Mosque in Istanbul."
+}

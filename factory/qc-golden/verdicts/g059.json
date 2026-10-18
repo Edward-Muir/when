@@ -1,0 +1,15 @@
+{
+  "slug": "g059",
+  "description": "A sunset painting of a large domed city with a tall spiral-banded minaret, glazed turquoise and gold tilework, arched gateways, walls and smaller domes. A winding river runs across flat land with small boats on it; in the foreground a camel caravan and two horse riders cross the riverbank. The sky is orange, pink and purple. The painting fills the frame edge to edge with no border; no readable letters or numbers, only a small white sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a glazed-tile Islamic city with a spiral minaret and domes, not the Roman-era writer or his novel; the card is Apuleius writing The Golden Ass in 170 CE. Redraw as a 2nd-century Roman scene (a writer, a book roll, or a Roman North African town) with no Islamic domes or minarets."
+}

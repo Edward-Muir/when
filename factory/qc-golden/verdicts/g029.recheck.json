@@ -1,0 +1,15 @@
+{
+  "slug": "g029",
+  "description": "A man in a dark suit stands head bowed with his hands cuffed behind his back in a crowded courtroom. Press photographers with flash-bulb cameras and reporters with notepads crowd a wooden rail on the left, a uniformed officer in olive green stands on the right, and a judge in black sits at a bench beside an American flag at top right. Dress, flash cameras and flag point to roughly the 1930s-50s. The painting fills the frame edge to edge with no legible text apart from a small sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a modern courtroom arrest with handcuffs, press flash cameras and an American flag, not European knights jousting in a medieval tournament. The card is dated 1100, so the suits, cameras and flag are anachronistic. Repaint with armoured knights charging with lances at a tournament."
+}

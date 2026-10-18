@@ -1,0 +1,15 @@
+{
+  "slug": "g076",
+  "description": "A young dark-haired man in bronze cuirass, red cloak and purple sash holds a lit seven-branched menorah high in his raised right hand while a curved sword hangs in his left. He stands beside an ivy-wrapped stone column under a stormy sky, with rubble and smoke behind him. The oil painting does not fill the image: it sits inset on a plain white field with a grey drop shadow along its left and bottom edges, like a print or canvas mounted on a wall. A faint painter's squiggle is in the lower right of the painting.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits inset on a white margin with a grey drop shadow, so it reads as a mounted print rather than filling the image edge to edge. Repaint it full-bleed with no white surround or shadow."
+}

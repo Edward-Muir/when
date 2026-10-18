@@ -1,0 +1,15 @@
+{
+  "slug": "g031",
+  "description": "An aged, wrinkled hand holds a brass pen or compass-tipped stylus over a parchment map crossed with red and blue rhumb lines. A compass rose sits lower left and a small camel with a rider lower right, near a fragment of coastline. On the left are bowls of red, blue and yellow pigment and brushes in a jar, in a dim timber-beamed stone room. No text, numbers or frame are visible, and nothing is graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a hand drawing rhumb lines on a map beside pigment bowls, with a camel rider, but the card is the 1381 killing of Wat Tyler at Smithfield. Nothing of that parley or the rising appears."
+}

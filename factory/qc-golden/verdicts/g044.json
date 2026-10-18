@@ -1,0 +1,15 @@
+{
+  "slug": "g044",
+  "description": "A dense cluster of brass and black gears interlocks on a dark iron machine frame, with a long paper tape punched with rows of holes winding through the wheels. Smoke or steam rises from pipes at the top and left. The background is a dim industrial interior with faint shelving or structures. No people, no soldiers, no landscape. The only lettering-like mark is a small sparkle logo in the bottom-right corner. The painting fills the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a brass gear machine with a punched paper tape, but the card is the Peninsular War: no soldiers, no war, no Spain or Napoleon. The picture is an unrelated mechanism."
+}

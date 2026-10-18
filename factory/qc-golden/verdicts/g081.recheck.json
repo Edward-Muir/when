@@ -1,0 +1,15 @@
+{
+  "slug": "g081",
+  "description": "A dark oil painting of a street brawl. A bearded man in a rough brown jerkin is bent backward while a man in a black coat thrusts a short dagger at his chest. A red banner and a spear lie on the cobblestones. Behind them are canvas tents, a wooden table, hooded onlookers, armoured soldiers, and a crowned rider in armour on a horse with more mounted men and a red pennant. The dress and armour are late medieval or early modern. No text, frame or border; the painting fills the image. A blade is at the chest but no blood or wound is visible.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a man being stabbed in a camp or street with a crowned rider and soldiers behind. The card is the completed Stari Most stone arch bridge over the Neretva gorge at Mostar, and no bridge, gorge, river or arch appears in the picture."
+}

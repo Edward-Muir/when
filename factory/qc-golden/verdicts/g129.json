@@ -1,0 +1,15 @@
+{
+  "slug": "g129",
+  "description": "A baby sleeps in a dark carved wooden rocking cradle, wrapped in white linen, in a dim room lit from a window at upper left. On a table at left sit a stack of old leather-bound books, with faint lettering on their spines, and a small black-and-brass globe. Through the window behind, a grey industrial city shows smokestacks, smoke plumes and rows of lit windows in low brick houses. The painting has a plain white border around it, and there is a painted signature in the lower right corner.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits inside a plain white border rather than filling the image edge to edge. Book spines carry painted lettering, and a signature sits in the lower right corner. The picture shows a sleeping baby in a cradle with books and a globe, with nothing that plainly shows the publication of Frankenstein."
+}

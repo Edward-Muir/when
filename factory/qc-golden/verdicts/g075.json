@@ -1,0 +1,15 @@
+{
+  "slug": "g075",
+  "description": "A woman in a dark navy long coat and wide-brimmed dark hat sits forward on a green leather bench in a dark wood-paneled chamber. Men in dark suits and white collars sit on the benches behind and beside her, and a carved wooden rail runs along the front. The painting fills the frame edge to edge; the clothing reads as early 1900s. A tiny multicolored mark sits in the bottom-right corner, and there are no legible letters or numbers.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a woman among men in a wood-paneled legislative chamber on green benches, but the card is Bell's hydrofoil boat on a Nova Scotia lake. The picture has no boat, water or foils."
+}

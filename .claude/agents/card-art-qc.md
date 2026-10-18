@@ -23,15 +23,15 @@ painting of it. The paintings are generated, and the known failures are a pictur
    `year`, the `scene` the artist was asked for, and any `warnings`.
 4. **Grade each check on its own**, from your description and a second look at the image:
 
-| Check         | Pass when                                                                                                                                        |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `subject`     | The picture shows this event, or its object or its people. Fail if it plainly shows a different event or thing.                                  |
-| `era`         | Dress, buildings and technology fit the year. Fail on a clear anachronism: a handgun on a 1950s TV remote, Victorian dress on a 1600s telescope. |
-| `no_text`     | No letters, numbers, dates, labels or watermark. A small sparkle logo in a corner is fine: it is cropped.                                        |
-| `no_frame`    | The painting fills the image edge to edge. Fail on any frame, mat, mount, border, a canvas hung on a wall, or a room around the painting.        |
-| `not_graphic` | Nothing gory, no visible wounds or blood, no nudity. Deaths and epidemics are shown without detail.                                              |
-| `birth_adult` | Only for a card about someone's birth: it shows the person as an adult in their active years, not a baby. `pass` for every other card.           |
-| `scene_rules` | Nothing the card's `warnings` rule out. `pass` if there are none.                                                                                |
+| Check         | Pass when                                                                                                                                                                                                                       |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `subject`     | The picture shows this event, or its object or its people. Fail if it plainly shows a different event or thing.                                                                                                                 |
+| `era`         | Dress, buildings and technology fit the year. Fail on a clear anachronism: a handgun on a 1950s TV remote, Victorian dress on a 1600s telescope. On a birth card, judge the era of the person's adult life, not the birth year. |
+| `no_text`     | No letters, numbers, dates, labels or watermark. A small sparkle logo in a corner is fine: it is cropped.                                                                                                                       |
+| `no_frame`    | The painting fills the image edge to edge. Fail on any frame, mat, mount, border, a canvas hung on a wall, or a room around the painting.                                                                                       |
+| `not_graphic` | Nothing gory, no visible wounds or blood, no nudity. Deaths and epidemics are shown without detail.                                                                                                                             |
+| `birth_adult` | Only for a card about someone's birth: it shows the person as an adult in their active years, not a baby. `pass` for every other card.                                                                                          |
+| `scene_rules` | Nothing the card's `warnings` rule out. `pass` if there are none.                                                                                                                                                               |
 
 Each is `pass`, `fail` or `unsure`. Use `unsure` when you can't tell from the picture, for
 example a subject that could be this event or a similar one. Don't use it to avoid a call you
@@ -70,4 +70,4 @@ Write exactly one JSON file to the path you were given, and nothing else:
 }
 ```
 
-Reply with one line: the slug and the verdict.
+Reply with one line only: the slug and the verdict.

@@ -1,0 +1,15 @@
+{
+  "slug": "g134",
+  "description": "A woman seen from behind in a long dark dress, white apron and white cap holds a glowing oil lantern in a long vaulted hospital ward. Iron-framed beds with patients line both sides, with chandeliers overhead and wooden floorboards. No letters, numbers, border or frame; the painting runs edge to edge, with a small sparkle logo in the bottom-right corner. Nothing gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a 19th-century nurse with a lantern in a Victorian iron-bedded hospital ward (Nightingale-style), but the card is the Inca Qhapaq Ñan road network in 1450 in the Andes. Nothing depicts roads, mountains or Inca people, and the dress, beds and chandeliers are anachronistic. This looks like another card's art; repaint with an Andean mountain road scene."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g089",
+  "description": "An older grey-haired man in a pale toga sits on a wooden chair in a marble colonnaded hall lined with scroll shelves, reading and writing on a long unrolled scroll. Behind him on the right, a painted wall mural shows two crowned figures clasping arms, a wolf above them, a burning city with smoke, and Roman legionaries with red shields and spears. Other robed figures stand in the background. The scroll marks are illegible, and a small sparkle logo sits in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an ancient Roman scholar reading in a colonnaded library, with a mural of Roman legionaries and a burning city. The card is the Rapa Nui carving and moving of moai statues on Easter Island in 1250, and no moai, island, or Polynesian people appear. Redo the art for the Easter Island moai."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g019",
+  "description": "A dim, candlelit chapel with a vast painted fresco of many tangled figures on the end wall and ceiling, and painted panels along the side walls. In the foreground a man in red cardinal's robes and a red skullcap drops a folded blank paper into a silver chalice on a draped table; a line of red-robed, some hooded, clergy stands behind him and pink-robed clergy stand at left. A black cast-iron stove with a chimney pipe stands at right, with candles and an altar with a crucifix in the background, on a patterned marble inlay floor. Modern-era vestments and stove; no legible text; painting fills the image edge to edge with no frame; the only nudity is the distant, dark, painterly figures within the wall fresco.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

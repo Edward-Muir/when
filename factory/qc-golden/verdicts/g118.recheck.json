@@ -1,0 +1,15 @@
+{
+  "slug": "g118",
+  "description": "A pair of green leather pointed shoes with long upturned curled gold toes and gold stitching, decorated with heraldic shields (lions, fleurs-de-lis, crown) and a buckled strap, worn by a person in dark blue hose standing on a grey stone floor. Oil-painting style filling the image edge to edge, no border or frame. No letters or numbers; only a small sparkle logo in the bottom-right corner. Nothing graphic. Era cues point to medieval poulaines.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows medieval poulaine shoes with heraldic shields, but the card is the ancient Egyptian Mehen snake board game (about 3000 BCE). The footwear and heraldry are a clear anachronism and show nothing of the game, its spiral snake board, marble pieces or lions."
+}

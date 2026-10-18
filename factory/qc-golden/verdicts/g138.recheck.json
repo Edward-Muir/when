@@ -1,0 +1,15 @@
+{
+  "slug": "g138",
+  "description": "A man in a long pale kurta leans forward and hands a wad of banknotes to a barefoot woman in a sari, seated on a woven mat outside a thatched hut; a small child clings to her back and she holds out an open palm. The setting is a rural village with thatch and bamboo walls and a potted plant at left. The palette is monochrome grey-blue with red accents at the edges. The whole painting is a stretched canvas photographed on a plain white wall, with a wide white margin, a visible canvas edge and a soft shadow around it. No legible text, nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas hung on a white wall, with a white margin, visible canvas edge and shadow around it, so it does not fill the image edge to edge. Repaint it full-bleed, with no wall or canvas edge."
+}

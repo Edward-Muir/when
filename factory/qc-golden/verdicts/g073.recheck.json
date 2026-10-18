@@ -1,0 +1,15 @@
+{
+  "slug": "g073",
+  "description": "A middle-aged man with greying hair and a short beard, in a dark gown with a heavy fur collar, stands at a wooden counter and reads a large open book, a hand on each page. The setting is a dim, candlelit apothecary: shelves of ceramic jars and glass flasks, bundles of dried herbs hanging from the beams, a brass mortar and pestle, a balance scale, small vials and scattered herbs on the counter. The dress, jars and scale fit the 16th century. Some jars carry small pale label patches with a few illegible brown marks, and the book pages are soft horizontal brushstrokes. There is no border, frame or canvas edge, and nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

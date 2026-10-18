@@ -1,0 +1,15 @@
+{
+  "slug": "g042",
+  "description": "A painted interior in loose oil brushwork. A baby sleeps in a dark carved wooden rocking cradle in the centre, wrapped in white cloth. On the left, a black globe sits on a stack of old leather-bound books, and one spine has faded lettering. Through the window and behind the cradle is a grey industrial skyline with smoking chimneys and lit windows in low brick houses. There is a signature in the lower right of the painting and a white margin around the painted area. A small grey mark sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a baby asleep in a cradle over an industrial skyline, not Austen's novel or its manners and marriage theme. The book spines carry legible painted lettering and there is a signature in the lower right. The painting sits inside a white border instead of filling the image edge to edge."
+}

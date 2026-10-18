@@ -1,0 +1,15 @@
+{
+  "slug": "g002",
+  "description": "An oil-style painting, edge to edge. In the centre a mounted man in a tricorn hat with a white plume, long wavy hair and blue-and-gold plate armour rears a white horse. Both sides are packed with rows of soldiers in grey-blue coats, tricorn hats and long muskets with bayonets. Behind them a dark sky of smoke and fire, with a walled town with towers burning on the left. Only text is a small sparkle logo in the bottom-right corner. Nothing gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an early-modern battle: tricorn hats, flintlock muskets with bayonets in rank, and a rider in blue-and-gold plate with a periwig-length hairstyle. That is roughly the 1690s to 1720s, not the 1098 Crusader siege of Antioch. Redraw with First Crusade-era dress and arms (mail, kite shields, lances, medieval walls) and no firearms or tricorns."
+}

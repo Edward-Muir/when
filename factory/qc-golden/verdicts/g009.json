@@ -1,0 +1,15 @@
+{
+  "slug": "g009",
+  "description": "Three men in dark work jackets and hard hats stand around a large cable winch drum on a steel frame, with cables running up over pulley blocks to a tall lattice steel derrick at right. A dramatic overcast sky breaks into golden light, over a flat dark landscape with rails in the foreground. Oil-painting style, edge to edge. No visible text, frame or border. Nothing gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows workers at a cable winch and lattice derrick under a stormy sky, which is industrial work, not a drought or famine in the Horn of Africa; the card is about the 2011 famine. The equipment also looks older than 2011, so the era is doubtful."
+}

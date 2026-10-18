@@ -1,0 +1,15 @@
+{
+  "slug": "g132",
+  "description": "A large rust-red icebreaker ship with a white-trimmed bow, a tall lattice mast and a black funnel ploughs through broken pack ice under a dark stormy sky. Snowy mountains sit on the horizon at both sides. The steel vessel looks mid to late 20th century. There is no text, border or frame, the painting fills the image edge to edge, and nothing is graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a polar icebreaker forcing through pack ice, but the card is the founding of the UN World Food Programme. Nothing in the picture relates to food aid, hunger relief or the United Nations; it plainly shows a different thing. Repaint with food aid being delivered, such as sacks of grain unloaded and distributed."
+}
