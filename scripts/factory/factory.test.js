@@ -1,0 +1,346 @@
+/**
+ * Tests for the deck factory's state engine (docs/curated-themes/factory.md, section 10).
+ *
+ *   node --test scripts/factory/
+ *
+ * Plain node:test, not Jest: the scripts are CommonJS run by a bare `node`, outside src/.
+ */
+
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const { execFileSync } = require('node:child_process');
+const { describe, it } = require('node:test');
+
+const lib = require('./status-lib');
+const lock = require('./lock');
+const { merge3, Conflict } = require('./json-merge');
+const backlog = require('./backlog');
+const { guardProblem, pickDeck } = require('./start');
+const { parseCsv } = require('./cli');
+const { LOCK_STALE_MS, MAX_RETRIES } = require('./config');
+
+const SHA = 'a'.repeat(64);
+const slugsOf = (n) =>
+  Array.from({ length: n }, (_, i) => `card-${String(i + 1).padStart(2, '0')}`);
+const tmp = () => fs.mkdtempSync(path.join(os.tmpdir(), 'factory-test-'));
+
+describe('slug transitions', () => {
+  it('walks the happy path and derives the deck stage', () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a', 'b'] });
+    assert.equal(s.stage, 'authored');
+    lib.mark(s, 'a', 'downloaded', { sha256: SHA });
+    assert.equal(s.stage, 'art-in-progress');
+    lib.mark(s, 'a', 'qc-pass');
+    lib.mark(s, 'b', 'needs-human', { reason: 'Gemini refused a public figure' });
+    assert.equal(s.stage, 'ready-to-ship');
+    assert.deepEqual(
+      s.stage_history.map((h) => h.stage),
+      ['authored', 'art-in-progress', 'ready-to-ship']
+    );
+  });
+
+  it('rejects illegal moves and missing evidence', () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a'] });
+    assert.throws(() => lib.mark(s, 'a', 'qc-pass'), /pending -> qc-pass/);
+    assert.throws(() => lib.mark(s, 'a', 'downloaded'), /sha256/);
+    assert.throws(() => lib.mark(s, 'nope', 'downloaded', { sha256: SHA }), /not in deck/);
+    lib.mark(s, 'a', 'downloaded', { sha256: SHA });
+    assert.throws(() => lib.mark(s, 'a', 'qc-fail'), /needs --reason/);
+    assert.throws(
+      () => lib.mark(s, 'a', 'downloaded', { sha256: SHA }),
+      /downloaded -> downloaded/
+    );
+    lib.mark(s, 'a', 'qc-pass');
+    assert.throws(() => lib.mark(s, 'a', 'qc-fail', { reason: 'x' }), /qc-pass -> qc-fail/);
+  });
+
+  it('sets the later stages only in order, and never the derived ones', () => {
+    const s = lib.create({ deck: 'demo', slugs: [] });
+    assert.equal(s.stage, 'ready-to-ship', 'a deck that reuses every card needs no art');
+    assert.throws(() => lib.stage(s, 'pr-open'), /needs uploaded/);
+    assert.throws(() => lib.stage(s, 'art-in-progress'), /derived/);
+    lib.stage(s, 'uploaded');
+    lib.stage(s, 'pr-open');
+    assert.throws(() => lib.reset(s, 'x'), /not in deck|is at/);
+    lib.stage(s, 'merged');
+    lib.stage(s, 'scheduled');
+    assert.equal(s.stage, 'scheduled');
+  });
+
+  it('freezes the slugs once the deck is uploaded', () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a'] });
+    lib.mark(s, 'a', 'needs-human', { reason: 'refused' });
+    lib.stage(s, 'uploaded');
+    assert.throws(() => lib.reset(s, 'a'), /is at uploaded/);
+  });
+
+  it('rejects a hand-edited file that no longer makes sense', () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a'] });
+    s.slugs.a.state = 'qc-pass';
+    assert.throws(() => lib.validate(s), /without a sha256/);
+  });
+});
+
+describe('retry cap', () => {
+  it(`allows ${MAX_RETRIES} regenerations, then needs a human`, () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a'] });
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      lib.mark(s, 'a', 'downloaded', { sha256: SHA });
+      assert.equal(lib.mark(s, 'a', 'qc-fail', { reason: `wrong ${attempt}` }).state, 'qc-fail');
+      assert.equal(lib.nextBatch(s)[0].retry_reason, `wrong ${attempt}`);
+    }
+    lib.mark(s, 'a', 'downloaded', { sha256: SHA });
+    assert.equal(lib.mark(s, 'a', 'qc-fail', { reason: 'still wrong' }).state, 'needs-human');
+    assert.equal(s.slugs.a.attempts, MAX_RETRIES + 1);
+    assert.match(s.slugs.a.reason, /failed QC 3 times; last: still wrong/);
+    assert.equal(s.stage, 'ready-to-ship');
+    assert.deepEqual(lib.nextBatch(s), []);
+  });
+
+  it('a human reset gives a fresh budget', () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a'] });
+    lib.mark(s, 'a', 'needs-human', { reason: 'refused' });
+    lib.reset(s, 'a');
+    assert.equal(s.stage, 'authored');
+    assert.equal(lib.nextBatch(s)[0].attempt, 1);
+  });
+
+  it('puts the QC reason into the retry prompt', () => {
+    assert.equal(lib.retryPrompt('Paint it.', null), 'Paint it.');
+    assert.match(
+      lib.retryPrompt('Paint it.', 'it showed a handgun'),
+      /^Paint it\. The previous image for this card was rejected: it showed a handgun\. /
+    );
+  });
+});
+
+describe('batching, end to end through status.js', () => {
+  const run = (dir, ...args) =>
+    execFileSync(process.execPath, [path.join(__dirname, 'status.js'), ...args], {
+      encoding: 'utf8',
+      env: { ...process.env, FACTORY_DECKS_DIR: dir },
+    });
+
+  it('a 23-slug deck batches 10, 10, 3, then nothing', () => {
+    const dir = tmp();
+    const slugs = slugsOf(23);
+    run(dir, 'init', '--deck', 'demo', '--name', 'Demo', '--slugs', slugs.join(','));
+    const csv = ['event_name,research_prompt,image_prompt,image_generated,saved_filename']
+      .concat(slugs.map((s) => `${s},"Research ${s}, carefully","Paint ""${s}"".",,`))
+      .join('\n');
+    fs.writeFileSync(path.join(dir, 'demo', 'prompts.csv'), csv + '\n');
+
+    const sizes = [];
+    for (let session = 0; session < 4; session++) {
+      const batch = JSON.parse(run(dir, 'next-batch', '--deck', 'demo', '--max', '10'));
+      sizes.push(batch.length);
+      for (const item of batch) {
+        assert.equal(item.research_prompt, `Research ${item.slug}, carefully`);
+        assert.equal(item.image_prompt, `Paint "${item.slug}".`);
+        run(dir, 'mark', '--deck', 'demo', item.slug, 'downloaded', '--sha256', SHA);
+      }
+    }
+    assert.deepEqual(sizes, [10, 10, 3, 0]);
+    assert.match(run(dir, 'summary', '--deck', 'demo'), /art-in-progress[\s\S]*23 downloaded/);
+  });
+
+  it('refuses a batch above the cap, and a second init', () => {
+    const dir = tmp();
+    run(dir, 'init', '--deck', 'demo', '--slugs', 'a,b');
+    assert.throws(() => run(dir, 'next-batch', '--deck', 'demo', '--max', '11'), /capped at 10/);
+    assert.throws(() => run(dir, 'init', '--deck', 'demo', '--slugs', 'a'), /never re-initialised/);
+  });
+
+  it('a session killed mid-batch redoes only the slug in flight', () => {
+    const s = lib.create({ deck: 'demo', slugs: slugsOf(5) });
+    const first = lib.nextBatch(s, 10).map((b) => b.slug);
+    // The session marked two slugs, then died while the third was downloading.
+    lib.mark(s, first[0], 'downloaded', { sha256: SHA });
+    lib.mark(s, first[1], 'downloaded', { sha256: SHA });
+    assert.deepEqual(
+      lib.nextBatch(s, 10).map((b) => b.slug),
+      first.slice(2)
+    );
+  });
+});
+
+describe('the lock', () => {
+  const alive = () => true;
+
+  it('holds against a second run, and only its token releases it', () => {
+    const file = path.join(tmp(), 'factory.lock');
+    const first = lock.acquire({ stage: 'art-batch', file, pid: 4242, alive });
+    assert.ok(first.ok);
+    const second = lock.acquire({ stage: 'art-batch', file, pid: 4343, alive });
+    assert.equal(second.ok, false);
+    assert.equal(second.holder.pid, 4242);
+    assert.equal(lock.release({ token: 'wrong', file }).ok, false);
+    assert.ok(lock.release({ token: first.lock.token, file }).ok);
+    assert.ok(lock.acquire({ stage: 'qc', file, pid: 4343, alive }).ok);
+  });
+
+  it('is stale after two hours, whatever the pid says', () => {
+    const file = path.join(tmp(), 'factory.lock');
+    const then = Date.now() - LOCK_STALE_MS - 1000;
+    assert.ok(lock.acquire({ stage: 'author', file, pid: 4242, now: then, alive }).ok);
+    const next = lock.acquire({ stage: 'qc', file, pid: 4343, alive });
+    assert.ok(next.ok);
+    assert.match(next.replaced, /older than 2h/);
+  });
+
+  it('is stale once its process has died', () => {
+    const file = path.join(tmp(), 'factory.lock');
+    assert.ok(lock.acquire({ stage: 'author', file, pid: 4242, alive }).ok);
+    const next = lock.acquire({ stage: 'qc', file, pid: 4343, alive: () => false });
+    assert.ok(next.ok);
+    assert.match(next.replaced, /pid 4242 is not running/);
+  });
+
+  it('a refresh restarts the clock', () => {
+    const file = path.join(tmp(), 'factory.lock');
+    const then = Date.now() - LOCK_STALE_MS + 60000;
+    const held = lock.acquire({ stage: 'author', file, pid: 4242, now: then, alive });
+    assert.ok(lock.refresh({ token: held.lock.token, file }).ok);
+    assert.equal(
+      lock.acquire({ stage: 'qc', file, pid: 4343, now: Date.now() + 120000, alive }).ok,
+      false
+    );
+  });
+
+  it('treats a half-written lock as stale', () => {
+    const file = path.join(tmp(), 'factory.lock');
+    fs.writeFileSync(file, '{"pid": 12');
+    assert.ok(lock.acquire({ stage: 'qc', file, pid: 1, alive }).ok);
+  });
+});
+
+describe('json-merge', () => {
+  const event = (name, extra = {}) => ({ name, year: 1900, ...extra });
+
+  it('keeps both decks’ new events in one shard', () => {
+    const base = [event('a'), event('b')];
+    const ours = [...base, event('ours-1')];
+    const theirs = [event('a', { year: 1901 }), event('b'), event('theirs-1')];
+    assert.deepEqual(merge3(base, ours, theirs), [
+      event('a', { year: 1901 }),
+      event('b'),
+      event('ours-1'),
+      event('theirs-1'),
+    ]);
+  });
+
+  it('keeps an alphabetical ledger sorted', () => {
+    const base = { b: 1, d: 1 };
+    const merged = merge3(base, { b: 1, c: 1, d: 1 }, { a: 1, b: 1, d: 1, e: 1 });
+    assert.deepEqual(Object.keys(merged), ['a', 'b', 'c', 'd', 'e']);
+  });
+
+  it('merges the manifest as a set', () => {
+    assert.deepEqual(merge3(['x', 'y'], ['x', 'y', 'ours'], ['x', 'theirs']), [
+      'x',
+      'ours',
+      'theirs',
+    ]);
+  });
+
+  it('reports a real collision', () => {
+    assert.throws(
+      () => merge3([event('a')], [event('a', { year: 1 })], [event('a', { year: 2 })]),
+      Conflict
+    );
+    assert.throws(() => merge3({ k: 1 }, {}, { k: 2 }), /deleted on one side/);
+  });
+});
+
+describe('backlog', () => {
+  const themes = () => [
+    { id: 'one', status: 'done' },
+    { id: 'two', status: 'queued' },
+    { id: 'three', status: 'queued' },
+  ];
+
+  it('skips a theme whose branch is already on origin', () => {
+    assert.equal(backlog.nextTheme(themes(), new Set()).id, 'two');
+    assert.equal(backlog.nextTheme(themes(), new Set(['two'])).id, 'three');
+    assert.equal(backlog.nextTheme(themes(), new Set(['two', 'three'])), null);
+  });
+
+  it('allows only the legal status moves', () => {
+    const list = themes();
+    backlog.setStatus(list, 'two', 'authoring');
+    backlog.setStatus(list, 'two', 'done');
+    assert.throws(() => backlog.setStatus(list, 'two', 'queued'), /done -> queued/);
+    assert.throws(() => backlog.setStatus(list, 'three', 'skipped'), /needs --reason/);
+    backlog.setStatus(list, 'three', 'skipped', 'cannot fill 30 years');
+    assert.equal(list[2].reason, 'cannot fill 30 years');
+  });
+
+  it('matches the statuses backlogSchema.test.ts allows', () => {
+    const test = fs.readFileSync(
+      path.join(__dirname, '../../src/utils/backlogSchema.test.ts'),
+      'utf8'
+    );
+    const allowed = JSON.parse(test.match(/const STATUSES = (\[[^\]]*\])/)[1].replace(/'/g, '"'));
+    assert.deepEqual(backlog.STATUSES, allowed);
+  });
+});
+
+describe('picking a deck', () => {
+  const deck = (id, stage, states = []) => ({
+    id,
+    status: stage && {
+      stage,
+      slugs: Object.fromEntries(states.map((s, i) => [`${id}-${i}`, { state: s }])),
+    },
+    backlogStatus: stage ? 'authoring' : 'authoring',
+  });
+
+  it('art takes the oldest deck with slugs to draw', () => {
+    const decks = [
+      deck('old', 'art-in-progress', ['downloaded']),
+      deck('new', 'authored', ['pending']),
+    ];
+    assert.equal(pickDeck('art-batch', decks).deck, 'new');
+    assert.equal(pickDeck('qc', decks).deck, 'old');
+    assert.match(pickDeck('ship', decks).exit, /no deck has work/);
+  });
+
+  it('author resumes a crashed deck before starting a new one, within the cap', () => {
+    const next = { id: 'fresh' };
+    assert.equal(pickDeck('author', [deck('crashed', null)], next).deck, 'crashed');
+    assert.equal(pickDeck('author', [deck('a', 'pr-open')], next).deck, 'fresh');
+    assert.match(
+      pickDeck('author', [deck('a', 'authored'), deck('b', 'uploaded')], next).exit,
+      /cap is 2/
+    );
+    assert.match(pickDeck('author', [], null).exit, /no queued theme/);
+  });
+});
+
+describe('the guard', () => {
+  it('refuses any folder but a when-factory clone', () => {
+    const root = tmp();
+    assert.match(guardProblem(root, root), /not a when-factory clone/);
+    const factory = path.join(root, 'when-factory');
+    fs.mkdirSync(path.join(factory, '.git'), { recursive: true });
+    assert.equal(guardProblem(factory, factory), null);
+    assert.match(guardProblem(root, factory), /outside/);
+    const worktree = path.join(root, 'w', 'when-factory');
+    fs.mkdirSync(worktree, { recursive: true });
+    fs.writeFileSync(path.join(worktree, '.git'), 'gitdir: elsewhere');
+    assert.match(guardProblem(worktree, worktree), /worktree/);
+  });
+
+  it('refuses this checkout', () => {
+    assert.ok(guardProblem());
+  });
+});
+
+describe('the prompts CSV reader', () => {
+  it('handles quotes, commas and blank trailing fields', () => {
+    const rows = parseCsv('a,b,c\n"x, y","say ""hi""",\n');
+    assert.deepEqual(rows, [{ a: 'x, y', b: 'say "hi"', c: '' }]);
+  });
+});

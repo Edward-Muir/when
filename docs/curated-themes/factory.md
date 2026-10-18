@@ -91,13 +91,46 @@ Today each curated theme is built by hand across several sessions:
 **State lives on each deck branch** in `factory/decks/<id>/status.json`:
 
 - **Deck `stage`:** `authored` → `art-in-progress` → `ready-to-ship` → `uploaded` → `pr-open` → `merged` → `scheduled`
-- **Per-slug `state`:** `pending` → `downloaded` → `qc-pass` | `qc-fail` (back to C1, at most 2 retries) | `needs-human`
-- Each slug also records an attempt count, the last QC reason (fed into the retry prompt) and its file's sha256.
-- A deck becomes `ready-to-ship` when every slug is `qc-pass` or `needs-human`.
-- `scripts/factory/status.js` is the only code that reads and writes this file:
-  - `next-batch --max 10` returns the next slugs for an art session.
-  - `mark <slug> <state>` updates one slug.
-  - `summary` prints the deck's progress.
+  - The first three are **derived from the slugs**, never set: `ready-to-ship` exactly when every slug is `qc-pass` or `needs-human`. A deck that reuses every card is `ready-to-ship` from the start.
+  - The rest are set one step at a time (`status.js stage`), each only from the one before it. Once a deck is `uploaded`, its slugs are frozen.
+  - `merged` and `scheduled` happen after the branch has merged, and a stage can't commit to main. Task D therefore reads them from GitHub and `/api/themes`, not from the file. The copy that reaches main stays at `pr-open`.
+- **Per-slug `state`:** `pending` → `downloaded` → `qc-pass` | `qc-fail` | `needs-human`
+  - `qc-fail` goes back to C1 (`qc-fail` → `downloaded`), at most 2 times. The third fail is recorded as `needs-human`, with the reason.
+  - `pending` → `needs-human` is allowed, for an image Gemini refuses to make.
+  - `status.js reset <slug>` is a human's way back to `pending`, with a fresh retry budget.
+- Each slug records `attempts` (downloads so far), the last QC `reason` and its file's `sha256`. `downloaded` refuses to record without a sha256.
+- **`scripts/factory/status.js` is the only code that reads and writes this file.** The rules are pure functions in `status-lib.js`, tested in `factory.test.js` (`npm run factory:test`, also in CI).
+  - `init --deck <id> --name <Name> --slugs a,b,…` creates it, once.
+  - `next-batch --deck <id> --max 10` prints the next slugs as JSON: retries first, then pending, in deck order, with both prompts from the deck's `prompts.csv`. A retry's image prompt already carries the last QC reason. The cap of 10 is enforced in code, and `--max 11` is refused.
+  - `mark --deck <id> <slug> <state> [--sha256 …] [--reason …]` moves one slug and re-derives the stage.
+  - `stage`, `reset`, `summary`, and `lock` / `refresh` / `unlock` / `lock-status` for the global lock.
+- **`scripts/factory/backlog.js`** reads the theme list and changes only a theme's `status`:
+  - `next` returns the first `queued` theme that has no `claude/deck-<id>` branch on origin. Every status change is committed on the deck's branch and reaches main only when its PR merges, so a branch on origin is what marks a theme as in flight.
+  - `set-status <id> <status> [--reason …]` enforces queued → authoring → done, or skipped with a reason. The ship stage writes `done` into the deck PR itself, since merging it is what makes that true.
+  - `count` gives the numbers for list health.
+- **`scripts/factory/decks.js`** lists every deck on origin with its stage, read from the branches without checking any out.
+
+**`scripts/factory/start.js <stage>` is the shared preamble, in code.** It runs before anything else in a stage and prints one JSON line: `run` (with the deck, branch and lock token), `exit` (nothing to do, lock released) or `blocked` (needs Edward, lock released).
+
+1. The guard, then the lock.
+2. Fetch, then a hard reset to a detached `origin/main` and `git clean -ffdx`, keeping only `node_modules`, `.env` and `.claude/settings.local.json`.
+3. It re-runs itself from that fresh checkout, so the rest is always main's version of the script.
+4. It picks the oldest deck with work for the stage:
+   - C1: a deck with `pending` or `qc-fail` slugs;
+   - C2: a deck with `downloaded` slugs;
+   - C3: a deck at `ready-to-ship` or `uploaded`;
+   - B: first a deck whose authoring crashed (a branch with no `status.json` yet), otherwise the next theme, but only while fewer than 2 decks are between authoring and `pr-open`.
+5. It checks out the deck branch, merges `origin/main` into it and pushes the merge, then runs `npm ci` only if `package-lock.json` has changed since the last install.
+
+**A structural JSON merge driver keeps decks mergeable.** Every deck appends to the same files: `public/events/themes.json`, its detail sidecar and `year-range-decided.json`. A line merge calls two decks in flight a conflict even though nothing collides.
+
+- `scripts/factory/json-merge.js` merges by structure:
+  - event records by `name`;
+  - object keys one by one, keeping an alphabetical ledger sorted;
+  - string arrays as sets.
+- It fails only on a real collision: the same field changed two ways, or a record deleted on one side and edited on the other.
+- `start.js` registers it in the clone's own `.git/config` and `.git/info/attributes`, so it never applies in Edward's checkout.
+- GitHub's merge button doesn't run custom drivers, which is why every stage merges main into its deck first. A conflict comes back as `blocked`, naming the files.
 
 Every stage reads the status, does the next step, commits and pushes. That makes it safe for:
 

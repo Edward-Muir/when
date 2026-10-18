@@ -49,6 +49,10 @@ jobs:
       - name: Test
         run: npm test -- --watchAll=false
 
+      # The deck factory's own scripts (scripts/factory/), plain node:test outside Jest.
+      - name: Test the factory scripts
+        run: npm run factory:test
+
       - name: Build
         run: npm run build
 
