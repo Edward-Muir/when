@@ -1,10 +1,155 @@
-# Theme list: clusters and cuts
+# Theme list: merges, cuts and changes
 
-The overlap pass of the first theme-list build (2026-10-12; see [factory.md](factory.md#the-first-build-2026-10-12)). 262 candidates became the 167 queued themes in [backlog.json](backlog.json).
+The record behind [backlog.json](backlog.json). Version 2 (2026-10-18) is the live list; the version 1 clusters below it explain where most themes came from. Read this before proposing new themes, so a cut idea isn't proposed again.
 
-Each cluster lists the existing themes it was drawn around, every candidate in it, and what happened to it. **Kept** means it survives, with any candidates merged into it. Read this before proposing new themes, so a cut idea isn't proposed again.
+## Version 2 (2026-10-18)
 
-## Film, TV and broadcasting
+Rewritten to rubric v2 ([factory.md](factory.md#the-rubric-version-2)): one plain idea per theme, exactly 30 cards, and events chosen blind. Four agents each rewrote whole clusters, and one cross-slice pass removed the collisions that broadening created.
+
+### Review decisions
+
+- **No go:** Monster Sightings, Pop Goes Global.
+- **Cut a Rug** is all dance forms, split back out of the music deck, which is now Born to Groove (music styles).
+- **Prime Time** is all TV shows. **Still Trading** lost its before-1800 clause.
+- **No sports themes.** Eight sports decks were cut, and sport beats were swapped out of Civil Rights Road, Famous Animals and Modern Marvels.
+- **No go:** Bonaparte (no individuals: one life bunches its events), Bugs & Breaches (too specific), Siberia. Gone Viral was cut, because social media spans under 30 years.
+- **Material World** now runs from copper smelting to Kevlar. **Nobel Winners** is the work a prize was given for, dated to when it was done.
+- **Added:** Flying Colours, when famous national flags were first raised.
+- Authoring notes from the review now ride in each theme's `notes` field (Nobel Winners, Prime Time).
+
+### Merged
+
+- Against Apartheid into **Civil Rights Road**
+- Alphabet Soup into **Safety in Numbers**
+- Atoms for Peace into **The Atomic Age**
+- Buddha's Path into **Faiths of Asia**
+- Convicts & Gold into **Flag Planted**
+- Element Hunters into **Building Blocks**
+- Evolving Ideas into **Field Notes**
+- Expo Fever into **Step Right Up**
+- Forecast! into **Weather Eye**
+- Founding Documents into **Law of the Land**
+- Heating Up into **Weather Eye**
+- Horseless Carriages into **Pedal & Petrol**
+- Inside the Atom into **Building Blocks**
+- Into Orbit into **Lift-Off!**
+- Lawgivers into **Law of the Land**
+- Long Distance into **Message Sent**
+- Mongol Storm into **Horse Lords**
+- Moves & Grooves into **Born to Groove**
+- Nobel Pages into **Nobel Winners**
+- Nobel Peace Prize into **Nobel Winners**
+- Pacific Voyagers into **Landfall!**
+- Party Starter into **Let's Celebrate**
+- Planet Spotting into **Stargazers**
+- Powder & Shot into **War Machines**
+- Red-Letter Days into **Let's Celebrate**
+- Signed & Sealed into **Safety in Numbers**
+- Special Delivery into **Message Sent**
+- Spun Yarn into **Dress Code**
+- Telescope Time into **Stargazers**
+- Thinking Machines into **Hello, World**
+- Thrill Rides into **Step Right Up**
+- Two Wheels into **Pedal & Petrol**
+- Uhuru into **Flags Come Down**
+
+### Cut
+
+- **Amazon Basin** `amazon-basin`: Thin, with its best beats owned by Conquistadors and Plant Hunters; stays cut.
+- **Battles of WWII** `battles-of-wwii`: Stays cut: same year-count problem as Second World War.
+- **Between the Wars** `between-the-wars`: Stays cut: 21 years and a period sampler, not an idea.
+- **Big Deals** `big-deals`: Still cut: mergers and antitrust cases are low-appeal and hard to place by year.
+- **Blue & Grey** `blue-and-grey`: The US Civil War spans only five years; stays cut.
+- **Doctor's Orders** `doctors-orders`: Stays cut: 'medicine in general' is the plain Medicine category, so it is not a theme.
+- **Duel in the Sky** `duel-in-the-sky`: Stays cut: its fighters and bombers are now in War Machines, the rest in Lift-Off! and Taking Flight.
+- **Empire Falls** `empire-falls`: Cut in the cross-slice pass: every famous fall of an empire is the last beat of a dynasty deck (The Roman Story, Between the Rivers, Kings of Kings, Mandate of Heaven, Sublime Porte, The Romanovs, The Caliphs, Before Columbus) or of Abdicated!, so it was a sampler with no events of its own.
+- **First Australians** `first-australians`: Still cut: pre-contact beats are circa and overlap Ends of the Earth and Stone Age Firsts; Australia is also a seeded country.
+- **Franchise Origins** `franchise-origins`: Would still be a sampler of Roll Camera, Insert Coin, Funny Pages, Beyond the Stars and Prime Time; stays cut.
+- **Gone Forever** `gone-forever--movement`: Still cut: lost buildings are mostly claimed by Cities Ablaze, Places of Learning, Walls & Fortresses and When the Earth Moved, all fixed existing themes.
+- **Hooves of War** `hooves-of-war`: Stays cut: close to the seeded warfare category, and Tamed holds the famous charges.
+- **Long Marches** `long-marches`: Stays cut: almost every famous march already belongs to a neighbour (Take to the Streets, Native Nations, Red Flags, Tamed).
+- **Made in China** `made-in-china`: Still essentially the seeded invention-plus-China pairing; stays cut.
+- **Made in India** `made-in-india`: Mostly circa dates and its best beats belong to Numbers & Proofs and The Games Board; stays cut.
+- **Malacca Strait** `malacca-strait`: Too thin even when broadened; stays cut.
+- **Maurya & Gupta** `maurya-gupta`: Ancient India yields too few precisely dated events to reach 30 distinct years; stays cut.
+- **Metal Ages** `metal-ages`: Still cut: prehistoric metalworking dates are almost all circa, too few distinct years.
+- **Monster Sightings** `monster-sightings`: No go in the review on 2026-10-18.
+- **Moving Day** `moving-day`: Still cut: essentially the seeded migration category.
+- **Oscar Firsts** `oscar-firsts`: Only about a dozen truly famous Oscar moments; stays cut.
+- **Pacific War** `pacific-war`: Stays cut: five years; carrier battles are in Broadsides.
+- **Pop Goes Global** `pop-goes-global`: No go in the review on 2026-10-18.
+- **Raising Armies** `raising-armies`: Stays cut: close to warfare; its orders and corps belong to The Crusades, Sublime Porte and Shogun!.
+- **Second World War** `second-world-war`: Stays cut: six years cannot hold 30 distinct years; its weapons beats now live in War Machines.
+- **Sleeping Dragon** `sleeping-dragon`: Close to the seeded China theme and to live politics; stays cut.
+- **Smugglers' Run** `smugglers-run`: Stays cut: best beats are claimed by Silk Road, Plant Hunters, Stolen! and What We Drink, and drugs risk taste.
+- **Stadium Stories** `stadium-stories`: Stays cut: fewer than 60 truly famous stadium openings, the Colosseum and modern arenas are claimed by Roman Story and Modern Marvels.
+- **The Great Game** `great-game`: Too few famous dated beats and a live border dispute; stays cut.
+- **The Great War** `great-war--movement`: Stays cut: four war years cannot supply 30 distinct years, and a 1900-1950 war deck would be a period sampler of Assassinations, Peace at Last and Under Siege.
+- **The Great War** `great-war--world`: Stays cut with its twin: too few distinct years.
+- **The Spice Race** `spice-race`: Stays cut: its beats are the Indonesia deck, Landfall! and Flag Planted, not 60 of its own.
+- **Tiny Worlds** `tiny-worlds`: Stays cut: germ theory and microscopy are the core of Plague Years and Eureka Moments, it is niche, and the life-science decks are already crowded.
+- **Wall Writers** `wall-writers`: Street art has too few precisely dated landmarks; stays cut.
+- **Wheels & Rails** `wheels-and-rails`: Stays cut: an umbrella over All Aboard!, Horseless Carriages, Two Wheels and The Open Road.
+- **Whose Land?** `whose-land`: Diffuse theme that still collides with English History, Famine Years and Rise Up!; stays cut.
+- **Wildfire** `wildfire`: Stays cut: only about 3 distinct famous events, and the town-razing fires belong to Cities Ablaze.
+- **Beautiful Game** `beautiful-game`: No sports themes, decided in the review on 2026-10-18.
+- **Extreme Sports** `extreme-sports`: No sports themes, decided in the review on 2026-10-18.
+- **Giant Killers** `giant-killers`: No sports themes, decided in the review on 2026-10-18.
+- **Gold Medal Moments** `gold-medal-moments`: No sports themes, decided in the review on 2026-10-18.
+- **In the Ring** `in-the-ring`: No sports themes, decided in the review on 2026-10-18.
+- **Magic Numbers** `magic-numbers`: No sports themes, decided in the review on 2026-10-18.
+- **Opening Whistle** `opening-whistle`: No sports themes, decided in the review on 2026-10-18.
+- **Rule Book** `rule-book`: No sports themes, decided in the review on 2026-10-18.
+- **Bonaparte** `bonaparte`: No go in the review on 2026-10-18: one person's life bunches its events too close together.
+- **Bugs & Breaches** `bugs-and-breaches`: No go in the review on 2026-10-18: too specific.
+- **Siberia** `siberia`: No go in the review on 2026-10-18.
+- **Gone Viral** `gone-viral`: Social media spans under 30 years, so a 30-card deck cannot have each card in a different year.
+
+### Cross-slice pass
+
+153 themes in, **150 out** (3 removed: Nobel Pages and Against Apartheid merged, Empire Falls cut). Appeal 3: 40 of 150 (27%). Every check in `validate_final.py` passes.
+
+- Merged **Nobel Pages** into **Nobel Winners**: the literature prize is a subset of 'a famous Nobel Prize win'; Kipling joins its beats.
+- Merged **Civil Rights Road** and **Against Apartheid** into one **Civil Rights Road** (new id `civil-rights`), 'a moment in a fight for racial equality'. Apartheid alone was a period of a seeded country and thin; together they are one plain idea.
+- Cut **Empire Falls**: each fall is the finale of a dynasty deck or an Abdicated! beat (Nineveh, Babylon, Rome, Constantinople, Tenochtitlan, the Qing, the Romanovs), so it shared 5+ events with Abdicated! and 2 with most dynasty decks.
+- Re-cut **Platinum** to 'a famous album'. As 'a famous album or song' it swallowed Sing Out!'s anthems, Pop Goes Global's hits and Moves & Grooves' first records.
+- **Sing Out!** scope became 'an anthem or a song for a cause', so it now owns the charity singles Platinum used to claim.
+- **Pop Goes Global**: scope simplified to 'a foreign-language hit that went global'. Afrobeat moved out because it is a style (Moves & Grooves); Volare came in.
+- Re-cut **Tune In** to 'a radio or TV station or network'. Its old word 'broadcast' took in shows (War of the Worlds) and TV events (Moon landing, Live Aid) owned by Prime Time, Other Worlds and Crowd Roars.
+- Re-cut **Stargazers** from 'astronomical discovery' to 'a telescope, or something new spotted through one', so theories (expanding universe, gravitational waves) stay with existing Cosmic Ideas. It also takes Hubble from Lift-Off!.
+- **Sky Show**: Eddington's 1919 eclipse moved to Cosmic Ideas, where relativity lives, and Halley's 1910 return replaced it.
+- **Iron Curtain** dropped 'treaty' from its scope, so arms treaties go to The Atomic Age and alliances to Safety in Numbers. It gets the Cuban Missile Crisis back from The Atomic Age. Red Flags keeps communism inside its own states.
+- **Fright Night** dropped 'or monster' and **Monster Sightings** became 'a reported sighting'. The two had both claimed monsters.
+- **Beyond the Stars**: Frankenstein was in both it and Fright Night; Fright Night keeps it and Gulliver's Travels replaces it.
+- Re-cut **Retail Therapy** to 'a great market or a new way to shop'. 'A famous shop' overlapped Still Trading (Selfridges, Sears, Walmart, IKEA), which now owns shop chains. Still Trading also gave Amazon to Going Online and Coca-Cola to What We Drink.
+- **Cool Japan** is now 'Japanese pop culture' rather than 'art or pop culture', which was close to a seeded art-plus-Japan day. **Drawn to Life** handed it Astro Boy and Spirited Away.
+- Removed three repeated beats: Hangul (Letters & Type and Korean Wave), Gangnam Style (Gone Viral and Korean Wave) and the Seoul Olympics, which belong to Gold Medal Moments.
+- Protest cluster: the Salt March went to The Raj (Take to the Streets now has the Bonus Army). The Indian Rebellion also went to The Raj, and Rise Up! took the Boxers. Pugachev went to Rise Up! (The Romanovs took Alexander II), and the Peasants' Revolt to Rise Up! (Taxing Times took the window tax). The Paris Commune went to Rise Up! (Red Flags took the NEP). Coup! gave 18 Brumaire to Bonaparte and took Gaddafi's coup.
+- **Banished!** gave the Shah and Haile Selassie (rulers losing thrones) to Abdicated! and took Victor Hugo and Einstein.
+- Dynasty decks: removed repeated beats. Razia goes to Crowned Queens, Nzinga to Crowned Queens and Catherine to The Romanovs. Timur's sack of Delhi goes to Peacock Throne and Kublai's Yuan to Mandate of Heaven, so Horse Lords takes Kulikovo and the Golden Horde. Piye goes to Pharaohs.
+- **Silk Road** had four beats that belonged elsewhere: the Roman embassy (Face to Face), the Diamond Sutra (three decks), the Black Death (Plague Years) and Constantinople (Sublime Porte, The Roman Story, Under Siege). It now has Dunhuang, Marco Polo's book, Samarkand and Bukhara.
+- **Faith Founded / Faiths of Asia**: every Asian founding, Sikhism included, now goes to Faiths of Asia. Faith Founded swapped Guru Nanak for the Quakers, and Houses of Worship swapped the Golden Temple for Chartres, which had duplicated the 1604 Granth beat.
+- Colonies cluster: Columbus is only in Landfall!. Cape Town and Elmina belong to Flag Planted, so Scramble for Africa took Mungo Park and Italy in Ethiopia, and Napoleon in Egypt went to Bonaparte. India's 1947 independence stays only with The Raj (Flags Come Down took the Philippines, Lines on a Map took the Durand Line), and Flags Come Down now names The Liberators as owner of Latin America.
+- Law cluster: the line holds (written law, trials, policing). Galileo's 1633 trial was in both Day in Court and Banned!, so Banned! keeps it and Sacco and Vanzetti replace it. Banned! swapped Rousseau for Candide, because Pens Over Swords has the Social Contract.
+- Gadgets cluster: the line holds (home, pocket, hardware, software). The microwave was in both Household Gadgets and Food Tech, and Food Tech took Corn Flakes. Nylon was in both Dress Code and Material World. Dress Code and Made by Machine each claimed the textile machines, and Dress Code now owns them.
+- **Live Wire** gave its dams (Hoover, Three Gorges) to existing Waterworks and Faraday's 1831 induction to Eureka Moments. Its boundary had also handed away Volta's pile while listing it.
+- **When It Went Wrong** gave the Tay and Tacoma Narrows bridges to existing Bridges & Tunnels and Johnstown's dam to Waterworks.
+- **Against the Odds** gave the Alamo and Dien Bien Phu (sieges) to Under Siege and Adwa to African Kingdoms.
+- **Giant Killers / In the Ring**: Clay v Liston was in both. Fight upsets now go to In the Ring, and Giant Killers keeps four football upsets so it does not eat Beautiful Game.
+- Other repeated beats removed: Earthrise (Say Cheese / Other Worlds), Tank Man (Say Cheese / Take to the Streets), Banks's Endeavour (Field Notes / Landfall!), the Richter scale (Reading the Rocks / Taking Measure), Greenwich time (Taking Measure / Clockwork), X-rays (Seeing Inside / Eureka Moments), and coffee and tea in Plant Hunters, whose own boundary gives drinks to What We Drink.
+- **Famous Animals vs Tamed**: Famous Animals owns named individuals (Laika, Balto) and Tamed owns kinds of animal put to work. Gone Forever owns last survivors such as Martha. The old boundary gave Laika and Balto away while listing them.
+- **The Crusades** swapped two siege beats (Edessa, Damascus) for Vezelay and Saladin, to stay under 4 shared events with Under Siege. Step Right Up dropped the Eiffel Tower from its 1889 beat (Tallest in the World).
+- Housekeeping: trimmed three grids that listed four eras, and fixed boundary lines that still named merged themes (Spun Yarn, Mongol Storm, Inside the Atom, Atoms for Peace, Planet Spotting, Thrill Rides, Long Distance, Founding Documents, Nobel Peace Prize, Uhuru, Against Apartheid).
+- **Kept, no change needed**: Wild Weather vs Weather Eye vs When the Earth Moved (events, the science, and geology are separate). Message Sent vs Codes & Ciphers (open messages vs secret ones). Votes for Women, Down Tools and The Liberators (each has a clear owner line). Landfall! vs Flag Planted (voyages vs footholds). Household Gadgets, In Your Pocket, Silicon Dreams and Hello, World (home, pocket, hardware, software).
+- **Shared on purpose**: Tunguska (Sky Show and Siberia) and Nicholas II's abdication (The Romanovs and Abdicated!) are the only beats still repeated across decks. One shared famous event is within the limit of about 4.
+
+---
+
+## Version 1 clusters (2026-10-12, superseded)
+
+262 blind candidates became 167 themes. Each cluster lists the existing themes it was drawn around, every candidate in it, and what happened to it. Version 2 then merged and re-scoped many of the kept themes.
+
+### Film, TV and broadcasting
 
 _Drawn around:_ On Stage
 
@@ -19,7 +164,7 @@ _Drawn around:_ On Stage
 
 _Why:_ Split by medium: live-action film tech, animation, broadcasting, TV shows, social media. A world-wide broadcast is a broadcasting milestone, so World Watching folded into Tune In; Oscars and franchise origins only re-deal other decks' cards.
 
-## Music and dance
+### Music and dance
 
 _Drawn around:_ On Stage
 
@@ -34,7 +179,7 @@ _Drawn around:_ On Stage
 
 _Why:_ Eight distinct lines (format, instrument, genre, concert, album, anthem, dance, crossover) with almost no shared events once Korea and Japan were given to their own decks; all kept.
 
-## Japan and Korea
+### Japan and Korea
 
 _Drawn around:_ The Games Board
 
@@ -44,7 +189,7 @@ _Drawn around:_ The Games Board
 
 _Why:_ Made in Japan's products collided with gadget, train and car decks, so it merged with Ukiyo-e to Anime as Cool Japan (art and pop culture only). Video games, Japanese ones included, all go to Insert Coin.
 
-## Art, photography and monuments
+### Art, photography and monuments
 
 _Drawn around:_ Stolen!, Tallest in the World, Pharaohs
 
@@ -58,7 +203,7 @@ _Drawn around:_ Stolen!, Tallest in the World, Pharaohs
 
 _Why:_ Movement launches, single paintings, museums, photography, comics and monuments are clean lines. Unveiled! and Built to Remember shared their headline beats and merged; street art cannot reach 30 firm dates.
 
-## Books and print
+### Books and print
 
 _Drawn around:_ Places of Learning, Codes & Ciphers
 
@@ -74,7 +219,7 @@ _Drawn around:_ Places of Learning, Codes & Ciphers
 
 _Why:_ Genres and formats with clear yes/no lines. Nobel Pages was a second prize-list deck next to Nobel Peace Prize and the weaker of the two.
 
-## Sport
+### Sport
 
 _Drawn around:_ The Games Board, The First Woman
 
@@ -90,7 +235,7 @@ _Drawn around:_ The Games Board, The First Woman
 
 _Why:_ Re-scoped so each event has one home: first editions, Olympics (all Olympic moments), inventions, records outside the Games, upsets outside the Games, football, combat sports, board sports. Stadium Stories was the ninth and weakest.
 
-## Food and drink
+### Food and drink
 
 _Drawn around:_ What We Drink, Famine Years
 
@@ -102,7 +247,7 @@ _Drawn around:_ What We Drink, Famine Years
 
 _Why:_ Kitchen dishes, sweets, restaurants and factory food are separate decks around What We Drink; Food Firsts straddled two of them and was split between them.
 
-## Leisure, fashion and commerce
+### Leisure, fashion and commerce
 
 _Drawn around:_ Hard Currency, Stolen!
 
@@ -120,7 +265,7 @@ _Drawn around:_ Hard Currency, Stolen!
 
 _Why:_ Brand Births admitted every company and hit every product deck, so it was narrowed to pre-1800 firms (Still Trading). Party Starter (staged in one place) and Red-Letter Days (kept everywhere) split cleanly.
 
-## Money, trade and resources
+### Money, trade and resources
 
 _Drawn around:_ Hard Currency, Stolen!, Indonesia, Let There Be Light
 
@@ -135,7 +280,7 @@ _Drawn around:_ Hard Currency, Stolen!, Indonesia, Let There Be Light
 
 _Why:_ Spice Race's spine is the Indonesia deck's spine, so it was cut. Smuggling's best beats belong to Silk Road, Plant Hunters and What We Drink. Tariffs folded into Taxing Times; the rest of Trade Wars is the seeded trade category.
 
-## Rights, protest and power from below
+### Rights, protest and power from below
 
 _Drawn around:_ The First Woman, English History
 
@@ -151,7 +296,7 @@ _Drawn around:_ The First Woman, English History
 
 _Why:_ Each line is drawn by method: votes, elections, US civil rights, abolition, apartheid, peaceful protest, labour, armed rising, coup. Two pairs were duplicates and merged.
 
-## Law and order
+### Law and order
 
 _Drawn around:_ Kings of England, The Roman Story
 
@@ -163,7 +308,7 @@ _Drawn around:_ Kings of England, The Roman Story
 
 _Why:_ Codes, constitutions, trials and policing are four clean lines; land reform was diffuse and collided with English History and Famine Years.
 
-## Diplomacy
+### Diplomacy
 
 _Drawn around:_ Peace at Last, Nations of Europe
 
@@ -175,7 +320,7 @@ _Drawn around:_ Peace at Last, Nations of Europe
 
 _Why:_ Drawn around Peace at Last: alliances, borders, meetings and embassies, global bodies, the prize. Envoys and summits are one idea and merged.
 
-## Monarchs and courts of Europe
+### Monarchs and courts of Europe
 
 _Drawn around:_ Kings of England, Assassinations, Nations of Europe
 
@@ -190,7 +335,7 @@ _Drawn around:_ Kings of England, Assassinations, Nations of Europe
 
 _Why:_ Tsar & Commissar was effectively the seeded Russia theme, so the Romanov dynasty kept its core. Crowned Queens excludes English and Egyptian queens to stay clear of Kings of England and Pharaohs. Empire Falls only re-dealt other decks' closing cards.
 
-## Faith
+### Faith
 
 _Drawn around:_ Places of Learning, The Roman Story, Under Siege
 
@@ -202,7 +347,7 @@ _Drawn around:_ Places of Learning, The Roman Story, Under Siege
 
 _Why:_ Three Crusades decks became one, with its sieges left to Under Siege. Caliphs run 632 to 1517 so they hand over to Sublime Porte without overlap.
 
-## Middle East and the steppe
+### Middle East and the steppe
 
 _Drawn around:_ Pharaohs, Under Siege, Mandate of Heaven
 
@@ -215,7 +360,7 @@ _Drawn around:_ Pharaohs, Under Siege, Mandate of Heaven
 
 _Why:_ Two duplicate pairs merged. Horse Lords was cut back to before 1206 so it no longer contains Mongol Storm. Bronze Age's Aegean beats were circa and already in Pharaohs, Peace at Last and When the Earth Moved.
 
-## South and East Asia
+### South and East Asia
 
 _Drawn around:_ Mandate of Heaven, Indonesia, Famine Years
 
@@ -234,7 +379,7 @@ _Drawn around:_ Mandate of Heaven, Indonesia, Famine Years
 
 _Why:_ The biggest merge cluster. Made in China is the seeded invention-plus-China pairing; Sleeping Dragon repeats Mandate of Heaven's ending; ancient India and the Malacca Strait cannot reach 30 firm dates. Japan splits at 1853 into Shogun! and Meiji Leap.
 
-## Africa and the end of empire
+### Africa and the end of empire
 
 _Drawn around:_ Pharaohs, Indonesia
 
@@ -245,7 +390,7 @@ _Drawn around:_ Pharaohs, Indonesia
 
 _Why:_ Four overlapping African-state decks became one (African Kingdoms); exploration and conquest became one (Scramble for Africa); independence became one (Uhuru). Decolonisation splits at the Sahara: Uhuru south of it, Flags Come Down (Asia Awakens merged) everywhere else. Apartheid sits with the rights cluster.
 
-## The Americas
+### The Americas
 
 _Drawn around:_ Capitals Founded, Waterworks
 
@@ -258,7 +403,7 @@ _Drawn around:_ Capitals Founded, Waterworks
 
 _Why:_ Pre-contact civilisations merged so the deck reaches 30 firm Maya and Inca dates; the conquest is its own deck; Native Nations is north of Mexico. The US Civil War spans five years.
 
-## Oceans, voyages and colonies
+### Oceans, voyages and colonies
 
 _Drawn around:_ Ends of the Earth, Mapmakers, Sail & Steam, Pirates & Privateers
 
@@ -272,7 +417,7 @@ _Drawn around:_ Ends of the Earth, Mapmakers, Sail & Steam, Pirates & Privateers
 
 _Why:_ Landfall! was limited to 1400-1800 outside the Pacific so it clears Ends of the Earth's island settlements and Pacific Voyagers. Peaks & Poles duplicates Ends of the Earth; Moving Day is the seeded migration category.
 
-## The twentieth century at war
+### The twentieth century at war
 
 _Drawn around:_ Peace at Last, Walls & Fortresses, Codes & Ciphers, Assassinations
 
@@ -292,7 +437,7 @@ _Drawn around:_ Peace at Last, Walls & Fortresses, Codes & Ciphers, Assassinatio
 
 _Why:_ Every World War deck fails the 30-distinct-years test (the wars last 4 to 6 years). Iron Curtain (1946-1991), Red Flags (1848-1949), Spy Games and The Atomic Age survive; civil nuclear power split off as Atoms for Peace.
 
-## Battles and weapons
+### Battles and weapons
 
 _Drawn around:_ Under Siege, Tamed, Walls & Fortresses
 
@@ -305,7 +450,7 @@ _Drawn around:_ Under Siege, Tamed, Walls & Fortresses
 
 _Why:_ Fleet battles, small-force victories and gunpowder weapons are clean lines. Cavalry battles and army foundings are the seeded warfare category by another name; Long Marches collided with five neighbours.
 
-## Space
+### Space
 
 _Drawn around:_ Cosmic Ideas, Eureka Moments, Taking Flight
 
@@ -318,7 +463,7 @@ _Drawn around:_ Cosmic Ideas, Eureka Moments, Taking Flight
 
 _Why:_ Split by where and what: beyond Earth orbit, Earth orbit, the rockets, the instruments, new worlds found, spectacles seen. Cosmic Whispers' best beats were already Cosmic Ideas and Eureka Moments cards.
 
-## Computing and gadgets
+### Computing and gadgets
 
 _Drawn around:_ Automata, Codes & Ciphers, The Games Board
 
@@ -332,7 +477,7 @@ _Drawn around:_ Automata, Codes & Ciphers, The Games Board
 
 _Why:_ Hardware, software, the net, AI, failures, pocket devices and home appliances. Company foundings are the same events as the products, so Garage Startups folded into Silicon Dreams. Thinking Machines excludes robots to stay clear of Automata.
 
-## Energy, materials and industry
+### Energy, materials and industry
 
 _Drawn around:_ Let There Be Light, Eureka Moments, Tallest in the World, Automata
 
@@ -345,7 +490,7 @@ _Drawn around:_ Let There Be Light, Eureka Moments, Tallest in the World, Automa
 
 _Why:_ Electric Age's best beats were Let There Be Light cards, so it merged with Clean Power as Live Wire (generation, storage, grids). Wheels & Rails was an umbrella over four transport decks.
 
-## Transport
+### Transport
 
 _Drawn around:_ Sail & Steam, Taking Flight, Bridges & Tunnels
 
@@ -358,7 +503,7 @@ _Drawn around:_ Sail & Steam, Taking Flight, Bridges & Tunnels
 
 _Why:_ Mainline rail, city transit, roads, cars and bikes split cleanly; Jet Set's airliners are Taking Flight cards.
 
-## Physical sciences
+### Physical sciences
 
 _Drawn around:_ Eureka Moments, Cosmic Ideas, Numbers & Proofs, Clockwork
 
@@ -370,7 +515,7 @@ _Drawn around:_ Eureka Moments, Cosmic Ideas, Numbers & Proofs, Clockwork
 
 _Why:_ Laws of Nature would take Archimedes, Newton and electromagnetism straight out of Eureka Moments; Taking Measure collides with Clockwork and Forecast!
 
-## Life and medicine
+### Life and medicine
 
 _Drawn around:_ Plague Years, Under the Knife, Eureka Moments, Tamed
 
@@ -384,7 +529,7 @@ _Drawn around:_ Plague Years, Under the Knife, Eureka Moments, Tamed
 
 _Why:_ Drawn around Plague Years and Under the Knife: drugs, diagnosis, genes, mind, evolution. Tiny Worlds and Doctor's Orders were mostly Plague Years cards.
 
-## Weather and climate
+### Weather and climate
 
 _Drawn around:_ When the Earth Moved, Cities Ablaze, Famine Years
 
@@ -395,7 +540,7 @@ _Drawn around:_ When the Earth Moved, Cities Ablaze, Famine Years
 
 _Why:_ Storms and extremes merged into Wild Weather; instruments (Forecast!) and climate change (Heating Up) stay separate. Wildfires that razed towns are Cities Ablaze cards.
 
-## Nature and deep time
+### Nature and deep time
 
 _Drawn around:_ Before Us, Tamed, Lost & Found, The Deep
 
@@ -411,7 +556,7 @@ _Drawn around:_ Before Us, Tamed, Lost & Found, The Deep
 
 _Why:_ Extinctions, conservation, fossils, new species, celebrity animals, plants, farming, naturalists and the human Stone Age. Three Stone Age decks merged; Famous Animals excludes Tamed's working animals, Laika and Dolly.
 
-## Architecture
+### Architecture
 
 _Drawn around:_ Tallest in the World, Walls & Fortresses, Bridges & Tunnels, Capitals Founded
 
@@ -423,7 +568,7 @@ _Drawn around:_ Tallest in the World, Walls & Fortresses, Bridges & Tunnels, Cap
 
 _Why:_ Sacred buildings, palaces and modern design are kept; Modern Marvels excludes record towers and museums. Planned cities are mostly capitals already, and the buildings half of Gone Forever was a different idea whose beats belong to existing decks.
 
-## Strange and false
+### Strange and false
 
 _Drawn around:_ Stolen!
 

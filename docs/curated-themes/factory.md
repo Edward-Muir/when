@@ -111,8 +111,10 @@ Seeing the whole list at once is what keeps themes from overlapping. Each new th
    - Near-duplicates are merged or cut, and too-broad themes are split.
 4. **Gate each survivor.**
    - Name: 20 characters or fewer, and a unique id.
-   - Scope rule: yes/no, and `npm run theme:gap -- --list` returns fewer than about 100 `\b` keyword hits.
-   - Expected size: the agent sketches about 10 example beats to show the theme can fill 30–36 cards.
+   - Scope rule: one plain yes/no idea that players get from the name, with no stacked qualifiers, carve-outs or date ranges. "Prime Time: Yes if it is a TV show" is the model.
+   - Easy to fill: there are 60+ well-known candidates, so 30 famous events in 30 different years come without hunting.
+   - Expected size: the agent sketches 10 example beats in different years. A deck is exactly 30 cards.
+   - No coverage metric. Themes are never measured against the catalogue: what the game already holds plays no part in choosing a theme or its events.
 5. **Order the list** so consecutive days vary. No two neighbours share a category, a dominant era or a dominant region. Big crowd-pleasers are spread out rather than front-loaded.
 6. **Edward reviews the list** as a PR: reorders, cuts, adds. After merge the factory only reads it, apart from marking progress.
 
@@ -122,7 +124,7 @@ Seeing the whole list at once is what keeps themes from overlapping. Each new th
 {
   "id": "broadsides",
   "name": "Broadsides",
-  "scope": "Yes if it is a battle fought mainly between fleets at sea",
+  "scope": "Yes if it is a naval battle",
   "boundary": "Broadsides: fleet against fleet; piracy goes to Pirates & Privateers, ship designs to Sail & Steam, the Armada and Trafalgar to English History.",
   "neighbours": ["pirates", "ships", "english-history"],
   "grid": {
@@ -131,36 +133,54 @@ Seeing the whole list at once is what keeps themes from overlapping. Each new th
     "regions": ["Europe", "East Asia"]
   },
   "example_beats": ["Salamis (480 BC)", "Sluys (1340)", "Lepanto (1571)", "..."],
-  "probe": "naval (battle|victory|defeat)|sea battle|battle of (salamis|lepanto|jutland|midway)",
   "appeal": 3,
   "status": "queued"
 }
 ```
 
-`probe` is the regex Task B passes to `npm run theme:gap`, and `appeal` (1-3) is how broad a crowd-pleaser the theme is. Entries marked `done` carry no boundary, since their decks already exist.
+`appeal` (1-3) is how broad a crowd-pleaser the theme is; at most about a third are 3. An optional `notes` carries Edward's authoring instructions for that deck, such as "date each card to the seminal work, not the prize", and Task B passes it to the spine writer. Entries marked `done` carry no boundary, since their decks already exist.
 
 `status` moves `queued` → `authoring` → `pr-open` → `done`. A theme can also be marked `skipped` with a reason, for example when it can't fill 30 cards.
 
-### The first build (2026-10-12)
+### How the list was built
 
-- **210 themes:** the 43 existing ones as `done`, then 167 `queued`. Every merge and cut, with its reason, is in [backlog-clusters.md](backlog-clusters.md).
-- **Generation:** five Sonnet agents, blind to the catalogue, proposed 262 candidates. The slices were culture, power, knowledge, trade and war, and world regions and eras.
-- **Overlap pass:** one agent merged 69 candidates and cut 40.
-  - Ten ideas had been proposed by two slices independently, and each pair was merged.
-  - Every probe was tightened and re-run against the catalogue. Hits now run from 0 to 91, and about 40 themes return fewer than 10, so those decks are mostly fresh authoring.
-- **Every war-in-one-decade deck was cut:** both World Wars, the Pacific War and the US Civil War.
-  - A war of four to six years can't give 30 cards in mostly different years.
-  - Their turning points already sit in Under Siege, Peace at Last and Codes & Ciphers.
-  - Allowing same-year cards would be a gate change, not a list change.
-- **Periods and dynasties inside a seeded country stay**, on the Kings of England precedent: Shogun!, Meiji Leap, The Romanovs, The Raj, Convicts & Gold, Siberia. A theme that was simply a country, such as Tsar & Commissar, was cut.
+- **Version 1 (2026-10-12):** five Sonnet agents proposed 262 candidates without seeing the catalogue, and one overlap pass cut them to 167.
+  - The scopes came back too specific, with stacked qualifiers, date ranges and carve-outs.
+  - The list was also ordered by how many existing cards each theme's keyword search matched. Both were wrong for a factory that exists to add cards.
+- **Version 2 (2026-10-18)** rewrote the list to [rubric v2](#the-rubric-version-2). Four agents each rewrote whole clusters, and one cross-slice pass removed the collisions that broadening created. The review then applied:
+  - No go on Monster Sightings and Pop Goes Global;
+  - Cut a Rug as all dance forms, split back out of the music deck;
+  - no sports themes at all. Eight were dropped, and sport beats were swapped out of other decks;
+  - No go on Bonaparte (one life is too short and its events bunch), Bugs & Breaches (too specific) and Siberia;
+  - Material World widened to all of history, from copper and bronze to plastics;
+  - Nobel Winners re-scoped to the work a prize was given for, dated to when it was done.
+  - Gone Viral was cut, because social media spans under 30 years.
+- **Result:**
+  - 181 themes: the 43 existing ones `done`, then 138 `queued`.
+  - Appeal 3 on about a quarter.
+  - Every merge, cut and re-scope is in [backlog-clusters.md](backlog-clusters.md).
+- **Every war-in-one-decade deck stays cut:** both World Wars, the Pacific War and the US Civil War.
+  - A war of four to six years can't give 30 cards in different years.
+  - Their weapons live in War Machines.
+- **Periods and dynasties inside a seeded country stay**, on the Kings of England precedent: Shogun!, Meiji Leap, The Romanovs, The Raj, Siberia.
 - **Order:**
-  - The first eight are crowd-pleasers the catalogue already covers (25-99 probe hits), so the factory is proven on decks that need little new art.
-  - After that, each appeal tier is spread evenly, and no two neighbours share a category, a lead era or a lead region.
-  - `appeal` came back inflated (96 of 167 are 3), so the spread does little. Reorder by hand freely; the order is not tested.
-- **The new list's lean:**
-  - Eras: industrial, then the 20th century.
-  - Regions: Global, Europe, then North America.
-  - Places it adds: Africa, the Americas, South, Southeast and Central Asia, and Oceania.
+  - It opens on a crowd-pleaser, and each appeal tier is spread evenly from there.
+  - No two neighbours share a category, a lead era or a lead region.
+  - Nothing about the catalogue is consulted. Reorder by hand freely; the order is not tested.
+
+### The rubric, version 2
+
+1. **One plain idea.** The scope is one short sentence that players get from the name: "Prime Time: Yes if it is a TV show." No stacked qualifiers, carve-outs or date ranges. A line between neighbours goes in `boundary`, never in the scope.
+2. **Easy to fill.** There are 60+ well-known candidate events, so 30 famous ones in 30 different years come without hunting.
+3. **Not a seeded day.** Narrower than a plain category, country, macro-region or category + place pairing. A dynasty, movement or route inside one is fine.
+4. **Exactly 30 cards, each in a different year,** spread over a stretch long enough that events don't bunch. A subject that spans under about 30 years (one war, social media) can't work.
+5. **Chosen blind.** Themes and their events never depend on what the catalogue holds. These decks are how new cards enter the game.
+6. **Distinct.** At most about 4 famous events are shared with any other theme, the existing ones included.
+7. **The name** is 20 characters or fewer.
+8. **Appeal is honest.**
+9. **Tasteful.** No deck whose point is atrocity, and nothing about live politics.
+10. **No individuals.** A deck about one person's life bunches its events too close together (Bonaparte was cut for this). A dynasty or a line of rulers is fine.
+11. **No sports.** Edward's call in the 2026-10-18 review: no sports themes, and no sport events as filler in other decks.
 
 ### Overlap control while decks are authored
 
@@ -186,15 +206,16 @@ A light weekly check, not a generator:
 
 ## 4. Task B: Author one deck (daily)
 
-Takes the first `queued` theme in `backlog.json`, sets it to `authoring`, and runs the Bank 2 method. The spine agent gets the theme's scope rule and boundary line, so it stays inside its lane. The blind step is enforced by which tools each agent gets, not by asking nicely.
+Takes the first `queued` theme in `backlog.json`, sets it to `authoring`, and runs the Bank 2 method. The spine agent gets the theme's scope rule, boundary line and any `notes`, so it stays inside its lane and follows Edward's instructions for that deck. The blind step is enforced by which tools each agent gets, not by asking nicely.
 
 1. **Blind spine.** New agent `.claude/agents/theme-spine-writer.md` (Sonnet).
    - Tools: `WebSearch, Write` only. With no Read, Glob or Grep it **cannot** see the catalogue.
-   - Writes 40–45 dated beats, with one search per date.
+   - Writes about 40 dated beats in different years, with one search per date. That leaves about 10 spares for the reconcile to swap in.
+   - **The deck's events are chosen here, and only here.** These decks are how new cards enter the game, so nothing the catalogue already holds may shape the choice.
 2. **Reconcile.** New agent `.claude/agents/deck-reconciler.md` (Sonnet, full read access).
    - Matches beats by year and name, the `english-civil-war-aftermath` trap.
-   - Reuses existing cards and writes new events per the `add-events` skill.
-   - Cuts the deck to 30–36 cards against the gates in `scripts/theme-gap.js`: size, at least 5 band-0 footholds, no two cards in the same year.
+   - **Reuses an existing card only when it names essentially the same event**: the same thing, in the same year. Everything else is written new per the `add-events` skill. The reconcile never adds a beat the spine didn't write, and never swaps a beat for a catalogue card because one is handy.
+   - Cuts the deck to **exactly 30 cards** against the gates in `scripts/theme-gap.js`: size 30, at least 5 band-0 footholds, no two cards in the same year. A failed gate is fixed from the spine's own spares, never from the catalogue.
    - **Overlap gate:** at most 4 cards shared with any single earlier theme. Gate checks go in `scripts/theme-gap.js` as a new `--overlap` flag.
 3. **Fact check.** New agent `.claude/agents/deck-fact-checker.md` (Sonnet, WebSearch).
    - Checks each new event's year, name and description against sources.

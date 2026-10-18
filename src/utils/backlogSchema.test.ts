@@ -19,8 +19,8 @@ interface BacklogTheme {
   neighbours?: string[];
   grid: { categories: string[]; eras: string[]; regions: string[] };
   example_beats?: string[];
-  probe?: string;
   appeal?: number;
+  notes?: string;
   status: string;
   reason?: string;
 }
@@ -51,6 +51,18 @@ describe('backlog.json', () => {
     expect(themes.filter((t) => t.status === 'skipped' && !t.reason).map((t) => t.id)).toEqual([]);
   });
 
+  it('keeps notes, where present, to one short instruction', () => {
+    expect(
+      themes
+        .filter(
+          (t) =>
+            t.notes !== undefined &&
+            (typeof t.notes !== 'string' || !t.notes.trim() || t.notes.length > 300)
+        )
+        .map((t) => t.id)
+    ).toEqual([]);
+  });
+
   it('writes every scope as a yes/no rule', () => {
     expect(themes.filter((t) => !/^Yes if /.test(t.scope)).map((t) => t.id)).toEqual([]);
   });
@@ -75,19 +87,5 @@ describe('backlog.json', () => {
       ...t.grid.regions.filter((r) => !regions.has(r)).map((r) => `${t.id}: ${r}`),
     ]);
     expect(bad).toEqual([]);
-  });
-
-  it('has probes that compile, for theme:gap', () => {
-    const broken = themes.filter((t) => {
-      if (!t.probe) return false;
-      try {
-        // eslint-disable-next-line security/detect-non-literal-regexp -- authored data, compile check only
-        new RegExp(t.probe, 'i');
-        return false;
-      } catch {
-        return true;
-      }
-    });
-    expect(broken.map((t) => t.id)).toEqual([]);
   });
 });

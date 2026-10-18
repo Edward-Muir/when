@@ -48,12 +48,17 @@ const MIN_BAND_ZERO = 5;
  * The authoring target, which is not the API minimum.
  *
  * 16 is the floor the API refuses to go below; a theme that size caps human scores so low
- * that it is not worth a day. 30 is where a curated day plays like a real one, and ~36 is the
- * ceiling — "Theme Cleared!" needs n-6 correct placements against a realistic best of ~30, so
- * a bigger deck can never be cleared. See docs/curated-themes/index.md, Sizing.
+ * that it is not worth a day. 30 is where a curated day plays like a real one, and since
+ * 2026-10-18 it is also the ceiling: a perfect run (no misses) on 35 proved too hard, so new
+ * decks are exactly 30. The first two banks (31-36) predate that. See
+ * docs/curated-themes/index.md, Sizing.
  */
 const TARGET_THEME_EVENTS = 30;
-const MAX_THEME_EVENTS = 36;
+const MAX_THEME_EVENTS = 30;
+const SIZE_WANTED =
+  TARGET_THEME_EVENTS === MAX_THEME_EVENTS
+    ? `want exactly ${TARGET_THEME_EVENTS}`
+    : `want ${TARGET_THEME_EVENTS}-${MAX_THEME_EVENTS}`;
 
 /** Two cards on the same year are a coin flip; this close, the placement is mostly luck. */
 const CROWDING_YEARS = 8;
@@ -150,7 +155,7 @@ function main() {
       [
         `size ${matched.length}`,
         matched.length >= TARGET_THEME_EVENTS && matched.length <= MAX_THEME_EVENTS,
-        `want ${TARGET_THEME_EVENTS}-${MAX_THEME_EVENTS}`,
+        SIZE_WANTED,
       ],
       [
         `bins ${spread.occupied}/${spread.total}`,
