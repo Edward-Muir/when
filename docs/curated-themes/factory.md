@@ -2,7 +2,7 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84) and the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`). Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver) and the `when-factory` clone. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
@@ -437,7 +437,7 @@ Runs only on a deck in `ready-to-ship`. Otherwise it exits.
 
 - `.claude/skills/deck-factory/`: `SKILL.md`, plus one file per stage: `theme-list.md` (the build session), `health.md`, `author.md`, `art-batch.md`, `qc.md`, `ship.md`, `schedule.md`
 - `.claude/agents/`: `theme-spine-writer.md`, `deck-reconciler.md`, `deck-fact-checker.md`, `card-art-qc.md`
-- `scripts/factory/`: `status.js`, `image-precheck.py`, `qc-collect.js`, `cloudinary-upload.js`, `pr-body.js`, `next-slot.js`
+- `scripts/factory/`: `status.js` (with `status-lib.js`), `backlog.js`, `decks.js`, `start.js`, `lock.js`, `json-merge.js`, `cli.js`, `factory.test.js`, `image-precheck.py`, `qc-collect.js`, `cloudinary-upload.js`, `pr-body.js`, `next-slot.js`
 - `scripts/images/`: `downsample.py`, `extract_colors.py`, `find_images_to_upload.js`, `paths.py`
 - `scripts/factory/config.js`: the shared paths
 - `.github/workflows/ci.yml`
@@ -471,6 +471,14 @@ Runs only on a deck in `ready-to-ship`. Otherwise it exits.
 - **Batching:**
   - Seed a test deck with 23 `pending` slugs. C1 must run 3 sessions (10, 10, 3), and a fourth run must exit at once.
   - Kill a session mid-batch. Only the in-flight slug is redone.
+  - **State engine, 2026-10-18: passed.** `factory.test.js` (28 tests) covers:
+    - the 23-slug deck, through `status.js`: 10, 10, 3, then an empty batch;
+    - a session killed mid-batch;
+    - every transition, the retry cap, a stale lock (by age, by a dead PID, half-written) and a held one;
+    - the merge driver;
+    - deck picking and the guard.
+  - In the clone, two `start.js qc` started at once: one took the lock and the other exited with "locked by qc". Run from Edward's `when` checkout, `start.js` refused (exit 2) without touching anything.
+  - A real `git merge` of two branches that each appended a card to a copy of `themes.json` merged cleanly with the driver: a 4-line diff, the file's layout kept.
 - **Naming:** a 3-slug dry run of C1. The manifest sha256, the inbox file and the Cloudinary bytes fetched back must all match.
 - **End to end:** one deck goes from backlog to an open PR with no manual step. CI is green. After merge, D's validate dispatch reports the theme clean.
 - **Resilience:**
