@@ -11,7 +11,6 @@
  * refuses to run anywhere else.
  */
 
-const fs = require('fs');
 const path = require('path');
 
 const REPO_ROOT = path.join(__dirname, '..', '..');
@@ -27,6 +26,11 @@ function imagesDir() {
 
 const IMAGES_DIR = imagesDir();
 
+/** Overridable so the tests can work in a temporary folder. */
+const DECKS_DIR = process.env.FACTORY_DECKS_DIR
+  ? path.resolve(process.env.FACTORY_DECKS_DIR)
+  : path.join(REPO_ROOT, 'factory', 'decks');
+
 module.exports = {
   REPO_ROOT,
   FACTORY_DIRNAME,
@@ -40,8 +44,20 @@ module.exports = {
   /** Assets to delete once Edward approves (see find_images_to_upload.js). */
   DELETE_LIST: path.join(IMAGES_DIR, 'compare-app', 'cloudinary_delete_list.json'),
   /** The one lock every stage takes: all six share one working tree. */
-  LOCK_FILE: path.join(IMAGES_DIR, 'factory.lock'),
+  LOCK_FILE: process.env.FACTORY_LOCK_FILE
+    ? path.resolve(process.env.FACTORY_LOCK_FILE)
+    : path.join(IMAGES_DIR, 'factory.lock'),
   EVENTS_DIR: path.join(REPO_ROOT, 'public', 'events'),
-  DECKS_DIR: path.join(REPO_ROOT, 'factory', 'decks'),
+  DECKS_DIR,
   BACKLOG_FILE: path.join(REPO_ROOT, 'docs', 'curated-themes', 'backlog.json'),
+  /** Branch prefix for a deck; the theme id follows it. */
+  DECK_BRANCH_PREFIX: 'claude/deck-',
+  /** Images per art session. Sonnet loses track beyond about 10 while driving the browser. */
+  MAX_BATCH: 10,
+  /** Regenerations after a QC fail. The third fail makes the slug needs-human. */
+  MAX_RETRIES: 2,
+  /** A lock older than this is stale, whatever its PID says. */
+  LOCK_STALE_MS: 2 * 60 * 60 * 1000,
+  /** Decks authored but not yet at pr-open. Task B waits rather than start another. */
+  MAX_IN_FLIGHT: 2,
 };
