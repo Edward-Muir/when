@@ -1,0 +1,58 @@
+name: CI
+
+# The checks a pull request must pass before it is merged. Every push to main deploys to
+# production straight away (Vercel's Git integration), so without this the suite first runs
+# after a change is already live. The curated deck factory opens one PR a day unattended
+# (docs/curated-themes/factory.md), and this is the gate those PRs are judged by.
+#
+# The build runs with CI=true because Vercel does: CRA turns every warning into an error there,
+# and a plain build prints the same warning above a success banner.
+
+on:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+      # puppeteer is a devDependency for local UI scripts; nothing here drives a browser.
+      PUPPETEER_SKIP_DOWNLOAD: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck (src)
+        run: npm run typecheck
+
+      - name: Typecheck (api)
+        run: npm run typecheck:api
+
+      # Through npm, never npx jest: the script pins TZ=America/Los_Angeles, and the date
+      # suites assert real US DST transitions.
+      - name: Test
+        run: npm test -- --watchAll=false
+
+      - name: Build
+        run: npm run build
+
+      # Re-checks the live calendar against this branch's catalogue, so a PR that retires or
+      # renames a scheduled card fails here rather than on the day its theme runs.
+      - name: Verify scheduled themes
+        run: npm run theme:verify
