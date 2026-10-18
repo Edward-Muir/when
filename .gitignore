@@ -43,6 +43,8 @@ android/local.properties
 .claude/scheduled_tasks.lock
 
 images/
+# The bare pattern above would also swallow the image scripts.
+!/scripts/images/
 untracked_data/
 
 # python virtualenvs

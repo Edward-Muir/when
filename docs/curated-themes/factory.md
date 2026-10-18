@@ -2,7 +2,14 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: planned, not built.** Nothing below exists yet except the scripts listed as reused. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84) and the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`). Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+
+**Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
+
+1. The factory runs in a **dedicated clone, `when-factory`**, never in worktrees ([section 2](#the-clone)).
+2. The art stage drives Gemini through **Claude in Chrome**, not computer use ([C1](#c1-art-batch-hourly-claude-in-chrome-gemini-web-at-most-10-images-per-session)).
+3. Decks are **exactly 30 cards**, from a spine of about 40 beats ([section 4](#4-task-b-author-one-deck-daily)).
+4. The six tasks are created with **no schedule**, Run now only, and get their schedules during rollout ([section 8](#8-rollout-and-the-path-to-full-automation)).
 
 ---
 
@@ -33,8 +40,8 @@ Today each curated theme is built by hand across several sessions:
 
 - Everything runs as Desktop scheduled tasks on the laptop.
 - Themes come from one long list built up front, so they don't overlap. The factory works through it in order.
-- Art runs in sessions of at most 10 images, because Sonnet loses track beyond that while controlling the computer.
-- Gemini in the browser makes the images, driven by computer use.
+- Art runs in sessions of at most 10 images, because Sonnet loses track beyond that while driving the browser.
+- Gemini in the browser makes the images, driven through Claude in Chrome (Edward's signed-in Chrome), the way his hand-run art task already works.
 - QC runs on Claude Code Haiku sub-agents.
 - Cloudinary upload is automatic, using keys from the laptop's `.env`.
 - For now each deck arrives as a PR to review and merge.
@@ -43,7 +50,7 @@ Today each curated theme is built by hand across several sessions:
 
 ## 2. The shape: six local tasks and a state machine
 
-| Task                    | Schedule                                             | Does                                                                                  | Leaves behind                                                              |
+| Task                    | Schedule (when switched on)                          | Does                                                                                  | Leaves behind                                                              |
 | ----------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | _(once)_ **Theme list** | interactive session, repeated when the list runs low | builds the ordered list of about 200 themes, kept apart from each other               | `docs/curated-themes/backlog.json`                                         |
 | **A. List health**      | weekly, Sun 07:05                                    | themes left, calendar buffer and drift, skipped themes                                | a health report                                                            |
@@ -53,7 +60,7 @@ Today each curated theme is built by hand across several sessions:
 | **C3. Ship**            | daily 18:05                                          | once no slug is `pending`, `downloaded` or `qc-fail`: upload, wire, test, open the PR | deck `stage=pr-open`                                                       |
 | **D. Schedule**         | daily 19:05                                          | dispatches merged decks onto the calendar                                             | a theme on `/api/themes`                                                   |
 
-**Why art runs in batches of 10.** Sonnet loses track when it controls the computer for more than about 10 images in one session. So each art session handles at most 10 slugs, then ends.
+**Why art runs in batches of 10.** Sonnet loses track when it drives the browser for more than about 10 images in one session. So each art session handles at most 10 slugs, then ends.
 
 - The next hourly run starts a fresh session with a clean context and takes the next 10 `pending` or `qc-fail` slugs.
 - A typical deck has about 25–30 new images, so it takes 3–4 art sessions plus a retry session. The deck is ready to ship the same afternoon.
@@ -62,9 +69,22 @@ Today each curated theme is built by hand across several sessions:
 
 **How the tasks are set up** (Claude Desktop, Code tab, then Routines, New routine, **Local**):
 
-- **Worktree on** for each task, so runs never touch Edward's working copy.
+- **Folder `when-factory`, Worktree off** for each task. The clone is what keeps runs away from Edward's working copy (see [The clone](#the-clone)).
+- **Created with no schedule**: each starts as Run now only, and gets its cron during rollout (section 8). The cron strings, in local time:
+
+  | Task | Cron            |
+  | ---- | --------------- |
+  | A    | `5 7 * * 0`     |
+  | B    | `5 6 * * *`     |
+  | C1   | `5 8-17 * * *`  |
+  | C2   | `40 8-17 * * *` |
+  | C3   | `5 18 * * *`    |
+  | D    | `5 19 * * *`    |
+
 - **"Keep computer awake" on** in Settings.
-- **Permissions approved once:** click **Run now** once and choose "always allow" for each prompt, so scheduled runs don't stall.
+- **Permissions approved once:** the repo's `.claude/settings.json` allows the narrow set of commands the stages run, and denies force-pushes, pushes to `main`, `gh pr merge` and publish dispatches. Click **Run now** once and choose "always allow" for anything still prompting, so scheduled runs don't stall.
+  - The Desktop docs promise only that allow rules in `~/.claude/settings.json` apply to scheduled runs; they don't say whether a project's `.claude/settings.json` does. The first Run now of each task settles it. If the project rules aren't honoured, copy the allow and deny lists into the user settings.
+  - Bash rules match command text, and a rule must match every part of a chained command. So the stages run single commands, and the scripts do the multi-step work.
 - **Staggered start times:** Desktop skips a run while another scheduled task is still running, so the start times are hours apart.
 - **One-line prompts.** Each prompt is just "Run the deck-factory skill, stage: <name>". The logic lives in versioned files in the repo (`.claude/skills/deck-factory/`).
 
@@ -85,7 +105,21 @@ Every stage reads the status, does the next step, commits and pushes. That makes
 - **skipped runs:** the next run just picks up;
 - **crashes:** a re-run resumes from `status.json`.
 
-A lock file (`../when-images/factory.lock`) stops two runs of the same stage overlapping. Each run handles **one deck at most**.
+A lock file (`../when-images/factory.lock`) stops two runs overlapping. Each run handles **one deck at most**.
+
+### The clone
+
+The factory runs in its own clone, `/Users/emuir/Documents/GitHub/Vibes/timeline/when-factory`, a sibling of `when` and `when-images`. Worktrees were the first design and broke three things: the gitignored `.env`, `node_modules`, and the relative `../when-images` path. Edward also edits in `when` while the factory runs, and a stage resets its working tree.
+
+- **One-time setup:** `git clone` the repo to `when-factory`, copy `.env` from `when`, `npm ci`, `pip3 install imagehash`.
+- **Every stage starts the same way:**
+  1. `git fetch origin`.
+  2. Check out `claude/deck-<id>` from origin if it exists, otherwise branch it off `origin/main`.
+  3. Reset and clean, inside the clone only.
+  4. `npm ci`, only if `package-lock.json` changed.
+- **The guard:** a stage refuses to run unless the working directory's basename is `when-factory`, so it can never reset Edward's `when` checkout.
+- **One global lock**, `../when-images/factory.lock` (PID plus timestamp, stale after 2 hours), because all six stages share one working tree. A second run that finds the lock held exits at once.
+- **Paths:** `scripts/factory/config.js` (and `scripts/images/paths.py` for the Python scripts) resolve `WHEN_IMAGES_DIR` from the environment or `.env`, relative to the repo root, defaulting to `../when-images`.
 
 ---
 
@@ -235,7 +269,7 @@ Takes the first `queued` theme in `backlog.json`, sets it to `authoring`, and ru
 
 ## 5. Tasks C1–C3: Art, QC, upload, PR
 
-### C1. Art batch (hourly, computer use, Gemini web, at most 10 images per session)
+### C1. Art batch (hourly, Claude in Chrome, Gemini web, at most 10 images per session)
 
 **At the start of a session:**
 
@@ -248,6 +282,8 @@ Takes the first `queued` theme in `backlog.json`, sets it to `authoring`, and ru
 - After each image, `status.js mark <slug> downloaded`, commit and push. A session that loses track or crashes mid-batch loses at most one image.
 - At 10 images, the session ends, even if more slugs are pending.
 
+**The browser.** C1 uses the `mcp__claude-in-chrome__*` tools: Edward's real Chrome, already signed in to Google. The built-in browser pane has its own profile with no Google session, so Gemini loads signed out there, and credentials are never entered. Desktop scheduled runs can use the Chrome tools (Edward confirmed this on 2026-10-18). The working steps (send routine, completion polling, the download icon, the recovery playbook, the model chip) are carried over from his hand-run art task, `~/Documents/Claude/Scheduled/when-image-gen/SKILL.md`, into `.claude/skills/deck-factory/art-batch.md`.
+
 This fixes the swap bug at its source:
 
 - **One slug at a time:** list `~/Downloads`, send the research prompt and then the image prompt in one fresh chat, download, and wait for exactly one new file.
@@ -257,7 +293,7 @@ This fixes the swap bug at its source:
 - **Zero or two new files means retry that slug.** It never guesses.
 - **Quota:** a deck needs about 25–30 new images plus retries, well inside Google AI Pro's ~100 images a day. Ten hourly sessions of 10 images can't go over it.
 
-### C2. QC (hourly at :40, its own session, no computer use)
+### C2. QC (hourly at :40, its own session, no browser)
 
 Picks up every slug in `downloaded`, whichever art batch produced it. Each slug then becomes `qc-pass`, `qc-fail` or `needs-human`.
 
@@ -344,8 +380,9 @@ Runs only on a deck in `ready-to-ship`. Otherwise it exits.
    - Move the eight stray Sunday themes onto Mon/Fri.
    - Apply the same-year fixes for `money` and `walls`.
    - Publish bank 2's 22 ready themes. That gives about 11 weeks of buffer while the factory is built.
-2. **Add CI on pull requests.** New `.github/workflows/ci.yml` runs lint, typecheck, tests, build and `theme:verify`. Today tests run only after a merge has already deployed.
-3. **Move the image scripts into the repo.** `downsample.py` and `find_images_to_upload.js` move from `when-images` to `scripts/images/`. The images themselves stay outside git.
+2. **Add CI on pull requests. Done.** `.github/workflows/ci.yml` runs `npm ci`, lint, both typechecks, the tests, a `CI=true` build and `theme:verify` on every pull request. Before it, tests ran only after a merge had already deployed.
+   - `theme:verify` gates only themes with a date still to come. A theme whose dates have all passed can't be rewritten (the date rule in [index.md](index.md)), so it is reported but never fails the run. English History (2026-08-20) lost `church-of-england` to a duplicate retirement, and would otherwise fail every PR.
+3. **Move the image scripts into the repo. Done.** `downsample.py`, `extract_colors.py` and `find_images_to_upload.js` are copied from `when-images/scripts/` to `scripts/images/`. They find the image folders through `WHEN_IMAGES_DIR`, and `downsample.py` and `extract_colors.py` take `--slugs`, so the ship stage can process one deck's art and nothing else. The images themselves stay outside git.
 4. **Build the theme list** (section 3) in one interactive session. Edward reviews and merges it.
 
 ## 8. Rollout and the path to full automation
@@ -368,21 +405,24 @@ Runs only on a deck in `ready-to-ship`. Otherwise it exits.
 - `.claude/skills/deck-factory/`: `SKILL.md`, plus one file per stage: `theme-list.md` (the build session), `health.md`, `author.md`, `art-batch.md`, `qc.md`, `ship.md`, `schedule.md`
 - `.claude/agents/`: `theme-spine-writer.md`, `deck-reconciler.md`, `deck-fact-checker.md`, `card-art-qc.md`
 - `scripts/factory/`: `status.js`, `image-precheck.py`, `qc-collect.js`, `cloudinary-upload.js`, `pr-body.js`, `next-slot.js`
-- `scripts/images/`
+- `scripts/images/`: `downsample.py`, `extract_colors.py`, `find_images_to_upload.js`, `paths.py`
+- `scripts/factory/config.js`: the shared paths
 - `.github/workflows/ci.yml`
+- `.claude/settings.json`: the allow and deny lists for unattended runs
 - `docs/curated-themes/factory.md` (this document)
 - `docs/curated-themes/backlog.json` (the ordered theme list), checked by a new test, `backlogSchema.test.ts`: unique ids, names of 20 characters or fewer, a status from the allowed set, and every neighbour id present in the list
 
 **Changed:**
 
 - `scripts/theme-gap.js`: a new `--overlap` flag, which counts the cards a deck shares with each earlier theme
+- `scripts/verify-themes.js`: gates only themes with a date still to come
 
 **Reused unchanged:**
 
 - `theme-art-prompts.py`
 - the region, year-range and detail pipelines and their agents
 - `update-cloudinary-urls.js`, `extract_event_colors.py`
-- `publish-theme.js` / `publish-theme.yml`, `verify-themes.js`
+- `publish-theme.js` / `publish-theme.yml`
 
 ## 10. Verification
 
