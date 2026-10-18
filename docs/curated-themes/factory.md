@@ -2,7 +2,7 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver) and the `when-factory` clone. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. Still to do: the QC calibration on the golden set, the six tasks, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
@@ -267,36 +267,41 @@ A light weekly check, not a generator:
 - calendar drift
 - pending gate failures
 - skipped themes and why
-- The report goes in a weekly PR description or a short `factory/health.md` commit.
+- **Built:** `node scripts/factory/health.js` assembles all of it, plus the decks on origin (any with no change for 3 days is flagged), open factory PRs, and the Cloudinary assets of any closed unmerged.
+- It saves the report to `../when-images/factory-reports/health-<date>.md`, and the run's reply carries the headlines. Nothing is committed, because a stage can't write to main.
 
 ---
 
 ## 4. Task B: Author one deck (daily)
 
-Takes the first `queued` theme in `backlog.json`, sets it to `authoring`, and runs the Bank 2 method. The spine agent gets the theme's scope rule, boundary line and any `notes`, so it stays inside its lane and follows Edward's instructions for that deck. The blind step is enforced by which tools each agent gets, not by asking nicely.
+Takes the first `queued` theme in `backlog.json` that has no branch on origin, sets it to `authoring`, and runs the Bank 2 method. It waits instead while 2 decks are already between authoring and `pr-open`. The steps are `.claude/skills/deck-factory/author.md`. Each step ends in a file in `factory/decks/<id>/`, and a re-run skips any step whose file exists. The spine agent gets the theme's scope rule, boundary line and any `notes`, so it stays inside its lane and follows Edward's instructions for that deck. The blind step is enforced by which tools each agent gets, not by asking nicely.
 
 1. **Blind spine.** New agent `.claude/agents/theme-spine-writer.md` (Sonnet).
    - Tools: `WebSearch, Write` only. With no Read, Glob or Grep it **cannot** see the catalogue.
    - Writes about 40 dated beats in different years, with one search per date. That leaves about 10 spares for the reconcile to swap in.
    - **The deck's events are chosen here, and only here.** These decks are how new cards enter the game, so nothing the catalogue already holds may shape the choice.
+   - Writes `spine.json`. `scripts/factory/spine-matches.js` then checks it (at least 34 beats, unique years, no date in a title or description). For each beat it lists the catalogue cards within a year, or whose evidence window covers it, in `matches.json`. Given a Restoration beat, it ranks `english-civil-war-aftermath` first.
 2. **Reconcile.** New agent `.claude/agents/deck-reconciler.md` (Sonnet, full read access).
    - Matches beats by year and name, the `english-civil-war-aftermath` trap.
    - **Reuses an existing card only when it names essentially the same event**: the same thing, in the same year. Everything else is written new per the `add-events` skill. The reconcile never adds a beat the spine didn't write, and never swaps a beat for a catalogue card because one is handy.
    - Cuts the deck to **exactly 30 cards** against the gates in `scripts/theme-gap.js`: size 30, at least 5 band-0 footholds, no two cards in the same year. A failed gate is fixed from the spine's own spares, never from the catalogue.
-   - **Overlap gate:** at most 4 cards shared with any single earlier theme. Gate checks go in `scripts/theme-gap.js` as a new `--overlap` flag.
+   - **Overlap gate:** at most 4 cards shared with any single earlier theme, checked by `theme-gap.js --overlap <id>`. The earlier themes are `publish-inputs.md`, merged factory decks (`factory/decks/*/deck.json`), decks still on their branches, and the live calendar, 42 themes today.
+   - Writes `deck.json` (the 30), `new-events.json` (the new records) and `reconcile.json` (every beat's decision, and why for each reuse and cut). If the gates can't be met, it writes `skip.json` instead: the theme is marked `skipped`, and a small PR carries that to main.
 3. **Fact check.** New agent `.claude/agents/deck-fact-checker.md` (Sonnet, WebSearch).
    - Checks each new event's year, name and description against sources.
    - Lists anything it can't support for the PR. This stands in for Bank 2's hand "Review edits".
+   - It runs **before** the new events are appended, so a clear `fix` (a year every source agrees on) is applied to `new-events.json` first.
+   - Then `scripts/factory/add-deck-events.js` appends the records to `public/events/themes.json`. It checks every rule a hand author would: the slug unique across all files including `deprecated.json`, the name length, the category against `ALL_CATEGORIES`, the difficulty, a description of 80-150 characters, and no date clue (the same `date-clues.js` the tests use).
 4. **Existing pipelines, unchanged:**
    - `region-report.js` → `event-region-tagger` → `region-apply.js`
    - `year-range-report.js` → `event-range-writer` → `year-range-apply.js` (ledger in `year-range-decided.json`)
    - `detail-report.js` → `event-detail-writer` → `detail-apply.js`
    - Difficulty set against `docs/events-images/difficulty-grading-rubric.md`
 5. **Theme note and scenes.**
-   - Writes the theme note (the existing template), and the scene file `docs/curated-themes/art/scenes-factory/<id>.json`.
-   - Runs `python3 scripts/events/theme-art-prompts.py --scenes … --out factory/decks/<id>/prompts.csv`.
+   - Writes the theme note (the existing template), and the scene file `docs/curated-themes/art/scenes-factory/<id>/scenes.json`. Each deck gets its own folder, because `theme-art-prompts.py` refuses a scene for an already-illustrated event, which every merged deck's scenes become. A scene may carry `qc_warnings`, which the QC reviewer checks.
+   - Runs `python3 scripts/events/theme-art-prompts.py --scenes docs/curated-themes/art/scenes-factory/<id> --out factory/decks/<id>/prompts.csv`.
 6. **Event tests:** `eventCategories`, `eventRegions`, `eventSlugUniqueness`, `eventYearRange`, `eventDetailCorpus`, `eventDateClues`, `eventNameLength`. New events have no art yet, so they are never dealt.
-7. **Commit and push.** Commits to `claude/deck-<id>` with `status=authored`.
+7. **Commit and push.** `status.js init` creates the state with every new slug `pending`, and the deck is `authored`.
 
 ---
 
@@ -319,11 +324,11 @@ Takes the first `queued` theme in `backlog.json`, sets it to `authoring`, and ru
 
 This fixes the swap bug at its source:
 
-- **One slug at a time:** list `~/Downloads`, send the research prompt and then the image prompt in one fresh chat, download, and wait for exactly one new file.
+- **One slug at a time, in code:** `scripts/factory/inbox.js snapshot` lists `~/Downloads` before the prompts. After the download, `inbox.js take` waits until the new files stop growing, then moves the one new image onto the slug. It records it and marks the slug `downloaded` through `status.js`. The session never renames a file itself.
 - **Retries:** a `qc-fail` slug's retry prompt adds the last QC reason, for example "the previous image showed a handgun; the Flash-Matic must look like a toy ray gun".
 - **Move immediately:** move it at once to `../when-images/inbox/<deck>/<slug>.jpeg`, never in a batch.
-- **Record it:** append `{slug, sha256, prompt_hash, downloaded_at}` to `inbox/<deck>/manifest.jsonl`.
-- **Zero or two new files means retry that slug.** It never guesses.
+- **Record it:** append `{slug, sha256, prompt_hash, attempt, source_name, bytes, downloaded_at}` to `inbox/<deck>/manifest.jsonl`. A retry's earlier file is kept as `inbox/<deck>/rejected/<slug>.<attempt>.jpeg`.
+- **Zero or two new files means retry that slug** (exit 4 or 5, and nothing moved). It never guesses.
 - **Quota:** a deck needs about 25–30 new images plus retries, well inside Google AI Pro's ~100 images a day. Ten hourly sessions of 10 images can't go over it.
 
 ### C2. QC (hourly at :40, its own session, no browser)
@@ -333,8 +338,16 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 #### Deterministic pre-checks (new `scripts/factory/image-precheck.py`, free)
 
 - The file decodes and is square, 1024 or 2048 px.
-- Its sha256 is unique within the deck and across `downsampled_generated_images/`.
-- **dHash** against every image in the deck _and_ the whole catalogue. A near-duplicate fails.
+- Its sha256 is the one `status.json` and the inbox manifest recorded at download, and no other image in the deck has the same bytes.
+  - Comparing against `downsampled_generated_images/` by sha256, as first planned, can never match: those are re-encoded JPEGs. dHash covers that comparison.
+- **dHash** (64-bit) against every image in the deck _and_ the whole catalogue. A distance of 6 or less fails.
+  - The catalogue's hashes are cached in `../when-images/factory-cache/dhash.json` and refreshed by size and mtime. The first run hashes all 6,406 images in about a minute.
+- **The threshold was measured on 2026-10-18:**
+  - Of the 26 card-report rejects in `_replaced/`, the 9 that showed another card's picture sit at distance 0 or 1 from that card. The rest, the on-topic errors and the remakes, sit at 11-17.
+  - Every catalogue image's nearest neighbour is 7 or more away, except 28 images, which are at 0, 1 or 5.
+  - So 6 flags no natural pair, and catches every swap.
+- **The 28 near-identical images include possible live swaps.** Most pair a live card with an orphan file. But `arpanet-created` and `khorezm-state` (both live) have identical local art, and `bosman-ruling-1995` / `civil-rights-act` sit at distance 5. These are worth a look, separately from the factory.
+- It also writes what the reviewer reads: a 768 px copy (`qc/img/`, gitignored, inside the repo so the agent's reads stay in the project) and the card file (`qc/cards/`).
 
 #### Haiku vision QC
 
@@ -355,9 +368,10 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 
 **Collector (new `scripts/factory/qc-collect.js`):**
 
-- **Completeness:** every slug needs a valid verdict file. Missing ones are re-run, and the stage fails until all are present. This answers the skipped-sheet problem with code, not trust.
-- **Second opinion:** any `fail` or `unsure` goes to a Sonnet re-check, the audit's stricter pass.
+- **Completeness:** every slug needs a valid verdict file. That means its slug, a cold description, all seven checks graded, and a verdict that follows from them. Missing or invalid ones are listed for a re-run, and `--apply` refuses to record anything until all are present (exit 2). This answers the skipped-sheet problem with code, not trust.
+- **Second opinion:** any `fail` or `unsure` goes to a re-check, the audit's stricter pass. This is `card-art-qc` again with `model: sonnet`, writing `<slug>.recheck.json`. The re-check's verdict decides: pass, `qc-fail`, or `needs-human` if it is unsure too.
 - **Retries:** a confirmed fail sets the slug to `qc-fail` with its reason. The next C1 batch regenerates it with that reason in the prompt, at most twice. After that it becomes `needs-human` and is listed in the PR.
+- A failed slug's verdict files move to `qc/history/`, so the next attempt starts clean. `qc/summary.json` keeps one row per slug for the PR body.
 
 #### Calibration before trusting it
 
@@ -368,40 +382,47 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 
 ### C3. Ship (daily 18:05): upload, wire, open the PR
 
-Runs only on a deck in `ready-to-ship`. Otherwise it exits.
+Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Otherwise it exits. The steps are `.claude/skills/deck-factory/ship.md`, and every one is safe to repeat.
 
-1. **Downsample:** `downsample.py`, moved into the repo as `scripts/images/`.
-2. **Upload:** new `scripts/factory/cloudinary-upload.js`.
-   - Uses the `cloudinary` SDK already in package.json and reads keys from `.env`.
-   - Sets `public_id = <slug>_<6-char suffix>`.
-   - Fetches each asset back and compares its hash with the manifest.
-3. **Write URLs:** `node scripts/update-cloudinary-urls.js`. Then an automatic check that exits non-zero on failure, replacing two manual checks:
-   - The count of changed `image_url` lines equals the deck's new slugs.
-   - Every URL's stem equals its slug.
-4. **Colours:** `python3 scripts/extract_event_colors.py --force --slugs <new slugs>`.
-5. **Verify:** `CI=true npm test -- --watchAll=false`, `npm run lint`, `npm run typecheck`, `CI=true npm run build`.
+1. **Upload:** `scripts/factory/cloudinary-upload.js --deck <id>`, for every `qc-pass` slug:
+   - checks that the inbox file is still the one QC passed (its sha256);
+   - archives it to `generated_images/` and downsamples it with `scripts/images/downsample.py --slugs`;
+   - refuses a slug that already has an asset it didn't upload, because `update-cloudinary-urls.js` keeps a slug's _oldest_ asset;
+   - uploads with `public_id = <slug>_<6-char suffix>`, using the `cloudinary` SDK and the keys in `.env`;
+   - checks the returned etag (an MD5 of the bytes received), then fetches the original back from the CDN, with no transformation, and compares its sha256;
+   - records each in `factory/decks/<id>/uploads.json`, so a re-run skips what is done, and moves the deck to `uploaded`.
+2. **Write URLs:** `node scripts/update-cloudinary-urls.js`. Then `cloudinary-upload.js --verify-urls`, which exits non-zero on failure and replaces the two checks done by eye:
+   - no existing `image_url` line removed, and exactly one added per uploaded slug;
+   - every URL names its own uploaded public_id, whose stem is the slug.
+3. **Colours:** `python3 scripts/images/extract_colors.py --force --slugs <new slugs>`. This is the local version of `extract_event_colors.py`: it reads the downsampled JPEG on disk, so it needs no download and mints no thumbnail asset ahead of the game.
+4. **Verify:** `CI=true npm test -- --watchAll=false`, `npm run lint`, `npm run typecheck`, `CI=true npm run build`. A failure stops here, with the deck left at `uploaded`.
 
 #### Open the PR
 
 - **Title:** `chore(events): add the <Theme> curated deck`. A chore title means no daily release and no release note. Use `feat` plus a note if decks should show up in the changelog.
+- `backlog.js set-status <id> done` goes into the PR, since merging it is what makes the theme done. The deck moves to `pr-open` once the PR exists.
 - **Body** (new `scripts/factory/pr-body.js`):
   - The deck: year, card, NEW or reused, difficulty band.
   - The gate report, and the fact-check flags.
   - **A QC table of thumbnails** with each verdict and reason. Thumbnails use the existing `thumbnail` size, so no new transformation size (see `docs/cloudinary-cost-controls.md`).
   - The `needs-human` list.
   - The theme JSON ready to dispatch.
-- **If a PR is closed unmerged,** its assets are queued in `cloudinary_delete_list.json`. Deleting still waits for Edward's approval.
+- **If a PR is closed unmerged,** list health lists its assets for `cloudinary_delete_list.json`. Queuing and deleting both wait for Edward's approval.
 
 ---
 
 ## 6. Task D: Schedule merged decks (daily)
 
 - **Scheduling stays a workflow dispatch, never a commit** (a CLAUDE.md rule).
-- **For each merged deck PR:**
-  1. New `scripts/factory/next-slot.js` reads `/api/themes` and picks the earliest open date.
-  2. It runs `gh workflow run publish-theme.yml` with `mode=validate`, then `mode=publish`.
-  3. It records the date in the theme note.
-- **At first, D only prepares the dispatch and reports it.** Edward switches on publishing once he trusts it.
+- **A merged deck** is one whose `factory/decks/<id>/deck.json` is on main. It is pending until its id is on `/api/themes`, so D needs no state of its own.
+- **For each pending deck** (`.claude/skills/deck-factory/schedule.md`):
+  1. `scripts/factory/next-slot.js --deck <id>` reads `/api/themes` and picks the earliest open Monday or Friday, gaps included. The date must open (D-1 10:00Z) more than 48 hours from now, so a validate today and a publish tomorrow both land before it goes live anywhere.
+     - A second pending deck in the same run gets the next slot.
+     - The theme JSON, with its date, goes to `factory/dispatch/<id>.json`, plus a lasting copy in `../when-images/factory-reports/`.
+  2. It runs `gh workflow run publish-theme.yml -f mode=validate -F theme=@…` and reads the run's report.
+  3. The calendar is the record of the date; nothing is committed.
+- **For now D only validates and reports**, with the exact publish command for Edward. Publishing waits for his approval; the settings deny `mode=publish`. He switches it on once he trusts it.
+- `next-slot.js --report` gives the buffer, as days to the first open Monday or Friday. On 2026-10-18 that was 8 days, to 2026-10-26: the gap phase 0 names, plus the eight Sunday themes.
 - **No code needs changing to go beyond Mon/Fri:** curated themes can sit on any date, and no code knows about weekdays. Curated days are added as the buffer allows.
 
 ---
@@ -437,9 +458,17 @@ Runs only on a deck in `ready-to-ship`. Otherwise it exits.
 
 - `.claude/skills/deck-factory/`: `SKILL.md`, plus one file per stage: `theme-list.md` (the build session), `health.md`, `author.md`, `art-batch.md`, `qc.md`, `ship.md`, `schedule.md`
 - `.claude/agents/`: `theme-spine-writer.md`, `deck-reconciler.md`, `deck-fact-checker.md`, `card-art-qc.md`
-- `scripts/factory/`: `status.js` (with `status-lib.js`), `backlog.js`, `decks.js`, `start.js`, `lock.js`, `json-merge.js`, `cli.js`, `factory.test.js`, `image-precheck.py`, `qc-collect.js`, `cloudinary-upload.js`, `pr-body.js`, `next-slot.js`
+- `scripts/factory/`:
+  - the state: `status.js` (with `status-lib.js`), `backlog.js`, `decks.js`, `lock.js`
+  - the preamble and merging: `start.js`, `json-merge.js`
+  - authoring: `spine-matches.js`, `add-deck-events.js`
+  - art and QC: `inbox.js`, `image-precheck.py`, `qc-collect.js`
+  - shipping: `cloudinary-upload.js`, `pr-body.js`
+  - scheduling and health: `next-slot.js`, `health.js`
+  - shared: `cli.js`, `config.js`
+  - tests: `factory.test.js`
+- `scripts/themes/earlier-themes.js`: every theme a new deck must stay distinct from, for `--overlap`
 - `scripts/images/`: `downsample.py`, `extract_colors.py`, `find_images_to_upload.js`, `paths.py`
-- `scripts/factory/config.js`: the shared paths
 - `.github/workflows/ci.yml`
 - `.claude/settings.json`: the allow and deny lists for unattended runs
 - `docs/curated-themes/factory.md` (this document)
@@ -454,7 +483,7 @@ Runs only on a deck in `ready-to-ship`. Otherwise it exits.
 
 - `theme-art-prompts.py`
 - the region, year-range and detail pipelines and their agents
-- `update-cloudinary-urls.js`, `extract_event_colors.py`
+- `update-cloudinary-urls.js`
 - `publish-theme.js` / `publish-theme.yml`
 
 ## 10. Verification

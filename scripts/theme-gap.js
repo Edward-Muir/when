@@ -27,8 +27,14 @@
  *                              (repeatable)
  *
  * Neither affects publish validation, which only ever sees playable events.
+ *
+ *   --overlap <deck-id>        with --slugs: count the cards shared with every earlier theme
+ *                              (publish-inputs.md, merged and in-flight factory decks, the live
+ *                              calendar), and gate at MAX_SHARED_WITH_ONE per theme. The id is
+ *                              this deck's own, so it is not counted against itself.
  */
 
+const { loadEarlierThemes, overlapReport } = require('./themes/earlier-themes');
 const {
   binLabel,
   buildIndex,
@@ -60,6 +66,9 @@ const SIZE_WANTED =
     ? `want exactly ${TARGET_THEME_EVENTS}`
     : `want ${TARGET_THEME_EVENTS}-${MAX_THEME_EVENTS}`;
 
+/** At most this many cards shared with any single earlier theme (factory.md, section 3). */
+const MAX_SHARED_WITH_ONE = 4;
+
 /** Two cards on the same year are a coin flip; this close, the placement is mostly luck. */
 const CROWDING_YEARS = 8;
 
@@ -70,6 +79,7 @@ function parseArgs(argv) {
     list: false,
     includePending: false,
     extraFiles: [],
+    overlap: null,
   };
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
@@ -78,7 +88,8 @@ function parseArgs(argv) {
     else if (arg === '--extra') {
       const file = argv[++i];
       if (file) args.extraFiles.push(file);
-    } else if (arg === '--slugs') args.slugs = (argv[++i] || '').split(',').filter(Boolean);
+    } else if (arg === '--overlap') args.overlap = argv[++i] || '';
+    else if (arg === '--slugs') args.slugs = (argv[++i] || '').split(',').filter(Boolean);
     else if (!args.pattern) args.pattern = arg;
   }
   return args;
@@ -100,8 +111,12 @@ function collisionReport(events) {
   return { sameYear, crowded };
 }
 
-function main() {
+async function main() {
   const args = parseArgs(process.argv.slice(2));
+  if (args.overlap !== null && (!args.slugs || !args.overlap)) {
+    console.error('--overlap <deck-id> needs --slugs');
+    process.exit(1);
+  }
   if (!args.pattern && !args.slugs) {
     console.error(
       'Usage: theme-gap.js "<keyword regex>" [--list]  |  --slugs a,b,c\n' +
@@ -165,10 +180,37 @@ function main() {
       [`band 0 ${bandCounts[0]}`, bandCounts[0] >= MIN_BAND_ZERO, `want ${MIN_BAND_ZERO}+`],
       [`same-year pairs ${sameYear.length}`, sameYear.length === 0, 'want 0'],
     ];
+    let overlap = null;
+    if (args.overlap) {
+      const earlier = await loadEarlierThemes(args.overlap);
+      overlap = { ...earlier, report: overlapReport(args.slugs, earlier.themes) };
+      const worst = overlap.report[0];
+      gates.push([
+        `shared ${worst ? `${worst.shared.length} (${worst.id})` : 0}`,
+        !worst || worst.shared.length <= MAX_SHARED_WITH_ONE,
+        `want ${MAX_SHARED_WITH_ONE} or fewer with any one theme`,
+      ]);
+    }
     console.log('\nGates:');
     for (const [label, ok, want] of gates) {
       const verdict = ok === null ? 'INFO' : ok ? 'PASS' : 'FAIL';
       console.log(`  ${verdict}  ${label.padEnd(22)} (${want})`);
+    }
+
+    if (overlap) {
+      console.log(
+        `\nOverlap against ${overlap.themes.length} earlier themes` +
+          (overlap.warnings.length ? ` (${overlap.warnings.join('; ')})` : '') +
+          ':'
+      );
+      if (!overlap.report.length) console.log('  no card is shared with any earlier theme');
+      for (const theme of overlap.report) {
+        const flag = theme.shared.length > MAX_SHARED_WITH_ONE ? 'FAIL' : '    ';
+        console.log(
+          `  ${flag} ${String(theme.shared.length).padStart(2)}  ${theme.id.padEnd(22)} ` +
+            `${theme.shared.join(', ')}`
+        );
+      }
     }
 
     if (sameYear.length) {
@@ -229,4 +271,7 @@ function main() {
   }
 }
 
-main();
+main().catch((error) => {
+  console.error(error.stack || String(error));
+  process.exit(1);
+});
