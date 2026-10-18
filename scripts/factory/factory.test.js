@@ -333,8 +333,10 @@ describe('the guard', () => {
     assert.match(guardProblem(worktree, worktree), /worktree/);
   });
 
-  it('refuses this checkout', () => {
-    assert.ok(guardProblem());
+  it('passes in the factory clone and refuses any other checkout', () => {
+    const { FACTORY_DIRNAME, REPO_ROOT } = require('./config');
+    const inFactory = path.basename(REPO_ROOT) === FACTORY_DIRNAME;
+    assert.equal(Boolean(guardProblem()), !inFactory);
   });
 });
 
