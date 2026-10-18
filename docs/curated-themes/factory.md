@@ -2,7 +2,7 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags). Still to do: the six tasks, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags), and the six tasks exist with no schedule. Still to do: set each task's folder, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
@@ -82,6 +82,19 @@ Today each curated theme is built by hand across several sessions:
   | D    | `5 19 * * *`    |
 
 - **"Keep computer awake" on** in Settings.
+- **Created on 2026-10-18**, all manual only:
+
+  | Task                        | id                          | Prompt                                       |
+  | --------------------------- | --------------------------- | -------------------------------------------- |
+  | Deck factory A: list health | `deck-factory-a-health`     | Run the deck-factory skill, stage: health    |
+  | Deck factory B: author      | `deck-factory-b-author`     | Run the deck-factory skill, stage: author    |
+  | Deck factory C1: art batch  | `deck-factory-c1-art-batch` | Run the deck-factory skill, stage: art-batch |
+  | Deck factory C2: QC         | `deck-factory-c2-qc`        | Run the deck-factory skill, stage: qc        |
+  | Deck factory C3: ship       | `deck-factory-c3-ship`      | Run the deck-factory skill, stage: ship      |
+  | Deck factory D: schedule    | `deck-factory-d-schedule`   | Run the deck-factory skill, stage: schedule  |
+
+  The task-creation tool has no folder field, so **each task's folder is set by hand** in its Edit screen: `when-factory`, Worktree off. Each task's permission mode is set there too. Until the folder is set, a run starts in the wrong place, and `start.js` refuses it (exit 2).
+
 - **Permissions approved once:** the repo's `.claude/settings.json` allows the narrow set of commands the stages run, and denies force-pushes, pushes to `main`, `gh pr merge` and publish dispatches. Click **Run now** once and choose "always allow" for anything still prompting, so scheduled runs don't stall.
   - The Desktop docs promise only that allow rules in `~/.claude/settings.json` apply to scheduled runs; they don't say whether a project's `.claude/settings.json` does. The first Run now of each task settles it. If the project rules aren't honoured, copy the allow and deny lists into the user settings.
   - Bash rules match command text, and a rule must match every part of a chained command. So the stages run single commands, and the scripts do the multi-step work.
