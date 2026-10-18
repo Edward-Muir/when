@@ -1,0 +1,15 @@
+{
+  "slug": "g128",
+  "description": "A giant pale statue of a bald man in a long buttoned coat and loose trousers stands on a plinth, gazing up at a dark, stormy sky. Two small dark silhouetted figures stand at its base on the platform, with a dim shoreline and distant hills across the water. The painting is loose and expressive in blue-grey brushwork, with a small white sparkle logo in the bottom-right corner and no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

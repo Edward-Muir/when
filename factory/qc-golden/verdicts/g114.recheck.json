@@ -1,0 +1,15 @@
+{
+  "slug": "g114",
+  "description": "A mounted knight in plate armour with a red plume, red and green tabard and a couched lance charges a second knight in blue and gold, whose round wooden shield is struck so that splinters fly. The dark horse wears a red and blue zigzag caparison; a wooden rail barrier runs along the right, with a stormy sky, a castle on the left and helmeted spectators behind. No letters, numbers or signature, only a small sparkle logo in the bottom right corner. The painting fills the frame edge to edge with no border, and nothing is gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a joust, a knight's lance shattering a shield, but the card is Pointed Poulaine Shoes. No fashionable dress or long-pointed shoes are featured; the picture plainly depicts a different subject."
+}

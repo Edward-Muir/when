@@ -1,0 +1,15 @@
+{
+  "slug": "g129",
+  "description": "An oil painting of a swaddled baby asleep in a dark carved wooden rocking cradle, in a dim room lit by a window at upper left. At left a small black-and-brass globe sits on a stack of old leather-bound books, and the top spine carries legible painted lettering that begins NATURAL. Through the window a grey industrial city shows tall smokestacks, smoke plumes and low houses with lit windows. A plain white margin surrounds the painting on all sides, so it does not fill the image, and a scrawled signature sits in the lower right of the painting.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits inside a plain white border instead of filling the image edge to edge. Book spines show painted lettering (NATURAL...) and there is a signature in the lower right corner. The scene is a baby in a cradle with books and a globe beside a smoky industrial city, which could loosely suggest creation or a new age but does not clearly show the publication of Frankenstein."
+}

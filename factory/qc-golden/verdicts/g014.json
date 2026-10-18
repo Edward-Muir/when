@@ -1,0 +1,15 @@
+{
+  "slug": "g014",
+  "description": "A painted night scene of a shirtless, thin man with a loincloth, tied to a stake and standing in a tall column of flames with smoke rising behind him. On the left, an elderly white-bearded man in a black robe holds an open book, and a crowd in dark period clothing stands on both sides, one man sitting on the right. Faggots are piled at the base of the fire, with dark buildings and a night sky behind. The painting has a thin white border on all four sides, like a mat, and there is a small mark at the bottom right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "the painting sits inside a thin white mat or border on all four sides; it should fill the image edge to edge."
+}

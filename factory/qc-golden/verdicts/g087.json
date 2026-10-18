@@ -1,0 +1,15 @@
+{
+  "slug": "g087",
+  "description": "A silver, corrugated-metal monoplane with a single nose propeller banks steeply through a dark, stormy sky, with a pilot visible in an open cockpit. Below, a small airfield shows a hangar, tents, a small vehicle and a group of silhouetted onlookers on grass. There is no visible text, frame or border, and nothing graphic. The aircraft's corrugated skin, braceless wings and fixed gear suggest the early aviation era.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

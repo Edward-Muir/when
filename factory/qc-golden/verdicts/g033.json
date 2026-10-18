@@ -1,0 +1,15 @@
+{
+  "slug": "g033",
+  "description": "An elderly woman in a grey-black silk gown and white lace cap sits in a carved wooden armchair, one hand raised in conversation, looking up at a circle of men in early-18th-century dress: long curled periwigs, embroidered and frock coats, lace jabots. Lit candles on brass holders and a table of open books, stacked leather volumes, quill pens and inkwells fill a dim panelled room with carved wood walls and a large gilt-framed mirror inside the scene. The painting fills the image edge to edge, with no frame or border, and no legible text: the open book pages show only dense marks. Nothing violent or nude.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

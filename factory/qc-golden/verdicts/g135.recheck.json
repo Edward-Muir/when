@@ -1,0 +1,15 @@
+{
+  "slug": "g135",
+  "description": "A large domed mosque at night under a stormy blue sky, with six tall minarets, stacked domes over a central hall, and an arcaded courtyard whose arches glow teal and gold. The courtyard paving is wet and mirrors the lights, a small domed ablution fountain stands in the middle, and a few small figures walk with umbrellas. A green plaque with Arabic-style calligraphy sits above the central arch. A sparkle logo is in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an Ottoman mosque (Blue Mosque style, minarets and domed courtyard, with umbrellas), but the card is Cahokia around 1250, a Mississippian earthen-mound city near St. Louis. The art should show flat-topped earthen platform mounds, a timber palisade and a plaza of thatched houses. The small calligraphic plaque above the central arch is minor and secondary to the wrong-subject failure."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g098",
+  "description": "A mounted commander in dark lamellar armour and a plumed helmet raises a gold sword from a brown horse, riding out through a splintered wooden gate in a stone wall. Smoke and fire fill the background, riders trail behind him, and armoured foot soldiers carry spears and maroon banners marked with gold Chinese-style characters. The painting fills the image edge to edge with no frame, and nothing is bloody or nude.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a mounted army breaking through a burning city gate, not John Kay's flying shuttle or a loom, so it is the wrong event. East Asian lamellar armour and cavalry warfare do not fit an 1733 English textile invention. The banners carry gold character glyphs, which count as painted text."
+}

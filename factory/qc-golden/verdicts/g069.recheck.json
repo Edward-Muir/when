@@ -1,0 +1,15 @@
+{
+  "slug": "g069",
+  "description": "A tall, curved dry-stone wall built of small, evenly coursed granite-like blocks, with a narrow dark passage between two wall faces, rises over a grassy hillside. Acacia trees dot the savanna, a few cattle and two small herders graze at lower left, and the sky is a dramatic dusk of deep blue and orange clouds. A small sparkle logo sits in the bottom-right corner. No frame, border, text, or gore.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows the dry-stone walls of an African savanna ruin (Great Zimbabwe-style) with grazing cattle, not Virchow's Cellular Pathology (1858). There is no book, microscope, cells, laboratory or 19th-century medical setting. Repaint it as a 19th-century scholar's study or microscope scene with a Virchow-style physician examining tissue under a microscope."
+}

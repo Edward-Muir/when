@@ -2,7 +2,7 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. Still to do: the QC calibration on the golden set, the six tasks, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags), and the six tasks exist with no schedule. Merged to main on 2026-10-18 (#85 to #88). Still to do: set each task's folder, then the first Run now of each, following [the checklist](#the-first-run-now-of-each-stage). Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
@@ -82,6 +82,19 @@ Today each curated theme is built by hand across several sessions:
   | D    | `5 19 * * *`    |
 
 - **"Keep computer awake" on** in Settings.
+- **Created on 2026-10-18**, all manual only:
+
+  | Task                        | id                          | Prompt                                       |
+  | --------------------------- | --------------------------- | -------------------------------------------- |
+  | Deck factory A: list health | `deck-factory-a-health`     | Run the deck-factory skill, stage: health    |
+  | Deck factory B: author      | `deck-factory-b-author`     | Run the deck-factory skill, stage: author    |
+  | Deck factory C1: art batch  | `deck-factory-c1-art-batch` | Run the deck-factory skill, stage: art-batch |
+  | Deck factory C2: QC         | `deck-factory-c2-qc`        | Run the deck-factory skill, stage: qc        |
+  | Deck factory C3: ship       | `deck-factory-c3-ship`      | Run the deck-factory skill, stage: ship      |
+  | Deck factory D: schedule    | `deck-factory-d-schedule`   | Run the deck-factory skill, stage: schedule  |
+
+  The task-creation tool has no folder field, so **each task's folder is set by hand** in its Edit screen: `when-factory`, Worktree off. Each task's permission mode is set there too. Until the folder is set, a run starts in the wrong place, and `start.js` refuses it (exit 2).
+
 - **Permissions approved once:** the repo's `.claude/settings.json` allows the narrow set of commands the stages run, and denies force-pushes, pushes to `main`, `gh pr merge` and publish dispatches. Click **Run now** once and choose "always allow" for anything still prompting, so scheduled runs don't stall.
   - The Desktop docs promise only that allow rules in `~/.claude/settings.json` apply to scheduled runs; they don't say whether a project's `.claude/settings.json` does. The first Run now of each task settles it. If the project rules aren't honoured, copy the allow and deny lists into the user settings.
   - Bash rules match command text, and a rule must match every part of a chained command. So the stages run single commands, and the scripts do the multi-step work.
@@ -375,10 +388,34 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 
 #### Calibration before trusting it
 
-- Build `factory/qc-golden/` from the 70 known-bad images kept in `when-images/_replaced/`, plus about 70 known-good.
-- Record recall and false-flag rate in this doc.
-- Target: catches every swap and mockup, with fewer than 10% false flags.
-- Re-run it whenever the QC prompt changes.
+- The golden set is `factory/qc-golden/`, built by `python3 scripts/factory/qc-golden.py build` and scored by `… score`.
+  - **Bad:** the 70 images replaced in October 2026, kept in `when-images/_replaced/`: 54 swaps, 9 mockups, 3 on-topic errors and 4 remakes done on request.
+  - **Good:** the art that replaced them, the same 70 cards. A paired design: every card is seen once with the wrong picture and once with the right one.
+  - The images get neutral ids (`g001`…) in a fixed shuffle, so a file name never hints at the label. The images are gitignored; `golden.json`, the cards and every verdict are committed, so a re-run after a prompt change can be compared.
+- Target: catches every swap and mockup, with fewer than 10% false flags. Re-run it whenever the QC prompt changes.
+
+**Results, 2026-10-18.** One Haiku reviewer per image, with the `card-art-qc` prompt; then a Sonnet second opinion on every flag.
+
+| Set            |   n | Haiku flagged | Still flagged after Sonnet |
+| -------------- | --: | ------------: | -------------------------: |
+| swap           |  54 |     54 (100%) |                   51 (94%) |
+| mockup         |   9 |      9 (100%) |                   9 (100%) |
+| on-topic error |   3 |             1 |                          1 |
+| remake         |   4 |             1 |                          1 |
+| good           |  70 |       9 (13%) |                     1 (1%) |
+
+- **Haiku alone caught every swap and mockup**, at a 13% false-flag rate: just over the target, so the second opinion is needed. Seven of the nine were `unsure` on a generic subject ("could be any negotiation").
+- **The second opinion cut false flags to 1 in 70.** That one, `antioch-crusader-conflicts`, has a painter's signature in its corner and arguably should fail anyway.
+- **But it also cleared 3 real swaps**, all of which Haiku had marked only `unsure`: `darius-i-persian-king`, `caravanserai-samarkand` and `birth-richard-nixon` (Churchill's V-sign picture).
+  - The precheck's dHash catches the first two: each is a copy of another card's art, at distance 0.
+  - **With dHash, the pipeline catches 62 of 63.** The miss is Churchill on Nixon's birth card, a picture of a different real person in a pose both men were known for.
+  - In production a swap is an off-by-one rename, so it is always a copy of another image in the deck or the catalogue: exactly what dHash sees.
+- **On-topic errors are the weak spot.** It caught the handgun-like TV remote (it reads `ZENITH` lettering). It missed the 19th-century telescope and the Statue of Unity's scale, which the rubric can't see without a scene warning. So a scene that knows the trap should say so in `qc_warnings`.
+- Two prompt fixes came out of the run, both in `card-art-qc.md`:
+  - On a birth card, the era is judged against the person's adult life, not the birth year. Before this fix, Napoleon's correct art failed on era.
+  - The second opinion reads the first verdict only **after** writing its own cold description, so the flag can't steer what it sees (`qc.md`).
+- **Cost:** a Haiku review is about 70k tokens, mostly fixed overhead, and a deck of 30 needs about 30 plus a handful of Sonnet rechecks.
+- The run used `general-purpose` agents with the `card-art-qc` prompt and model, because a new agent type registers only in a fresh session. A scheduled run uses the agent itself.
 
 ### C3. Ship (daily 18:05): upload, wire, open the PR
 
@@ -442,7 +479,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 ## 8. Rollout and the path to full automation
 
 1. **QC first.** Build the agent, collector and golden set. This is also useful for re-auditing the whole catalogue.
-2. **C1–C3 by hand.** Run them with **Run now** on a hand-authored deck, approving each task's permissions. Confirm that C1 stops at 10 images and that the next run carries on.
+2. **Each stage by hand.** Run them with **Run now**, approving each task's permissions, following [the checklist below](#the-first-run-now-of-each-stage). Confirm that C1 stops at 10 images and that the next run carries on.
 3. **Turn on B daily, C1/C2 hourly in the daytime, and C3 daily.** Hourly schedules within a time window are set by asking Claude in a Desktop session, because the preset picker only offers plain Hourly. Production runs ahead of the calendar until there are about 6 weeks of buffer.
 4. **Turn on A (list health) weekly and D daily** (D in prepare-only mode at first).
 5. **Graduate to auto-merge when:**
@@ -451,6 +488,45 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
    - card reports on factory decks stay at or below the catalogue's ~1.2%.
 
    Then turn on GitHub auto-merge for factory PRs that pass every check, keep a daily digest, and keep a blind human spot check of about 5% of auto-approved images.
+
+### The first Run now of each stage
+
+A checklist for the first manual run of each task. Do them in this order, because each stage feeds the next. The first deck is a real one: Sweet Tooth, the top of the list. A deck made only for testing would mean uploading throwaway art to Cloudinary and then deleting it. Its PR is reviewed like any other.
+
+**Once, before any run:**
+
+1. In Claude Desktop, open each of the six "Deck factory" tasks in Scheduled and click Edit:
+   - Folder `…/timeline/when-factory`;
+   - **Worktree off**;
+   - permission mode **Ask**, so the first run's approvals are stored on the task.
+
+   Open the folder once in a normal session and accept the workspace-trust prompt. A project's `.claude/settings.json` applies only to a trusted folder.
+
+2. Chrome is signed in to Google, the Claude in Chrome extension is connected, and Gemini offers Pro.
+3. "Keep computer awake" is on.
+
+**Then, one task at a time.** Click Run now, approve each prompt with "always allow", and check:
+
+| #   | Task               | What a good run leaves                                                                                                                                                                                                                                           |
+| --- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | A: list health     | A report in the run, and `../when-images/factory-reports/health-<date>.md`. Nothing committed.                                                                                                                                                                   |
+| 2   | D: schedule        | "No merged deck is pending", and an exit. No factory deck has merged yet.                                                                                                                                                                                        |
+| 3   | B: author          | Branch `claude/deck-sweet-tooth` on origin, and `node scripts/factory/decks.js` in the clone shows `sweet-tooth: authored`. Read `spine.json`, `deck.json` and `fact-check.json` in `factory/decks/sweet-tooth/`. This is the long one: allow a couple of hours. |
+| 4   | C1: art batch      | At most 10 images in `../when-images/inbox/sweet-tooth/`, one `downloaded` commit each, and the session stops at 10. Run it again: it takes the next 10. After the first batch, check that each file's `shasum -a 256` matches its line in `manifest.jsonl`.     |
+| 5   | C2: QC             | `qc/<slug>.json` for every downloaded slug, `qc/summary.json`, and each slug `qc-pass`, `qc-fail` or `needs-human`.                                                                                                                                              |
+| 6   | C1 and C2 again    | Until `node scripts/factory/status.js summary --deck sweet-tooth` says `ready-to-ship`.                                                                                                                                                                          |
+| 7   | C3: ship           | `uploads.json` with every asset verified, a green `--verify-urls`, and a PR titled "chore(events): add the Sweet Tooth curated deck" whose CI passes.                                                                                                            |
+| 8   | D, after the merge | A validate run for Sweet Tooth's date, and the exact publish command. Publishing is Edward's to run.                                                                                                                                                             |
+
+**Resilience, once C1 has run cleanly** (the checks in section 10):
+
+- Run C1 twice at once: the second must exit with "locked by art-batch".
+- Stop C3 partway through, then run it again: it must resume from `status.json`, skipping the uploads already verified.
+
+**Things the first runs settle:**
+
+- Whether scheduled runs honour the project's `.claude/settings.json`. If a run keeps asking for commands the allow list covers, copy the lists into `~/.claude/settings.json`.
+- Whether the deny list holds. In the session that built the factory, a `gh pr merge` the project settings deny went through. That session most likely loaded its settings before the file existed. A fresh scheduled run should be refused; check that once by asking a run to try it.
 
 ## 9. Files
 
@@ -496,6 +572,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 - **QC:**
   - Run the golden set and report recall and false-flag rate.
   - Plant 3 swaps and one framed image in a test deck; all 4 must be caught.
+  - **Golden set, 2026-10-18: done.** The results are in [Calibration](#calibration-before-trusting-it): 62 of 63 swaps and mockups caught with dHash, and 1 of 70 false flags.
   - Delete one verdict file; the collector must fail.
 - **Batching:**
   - Seed a test deck with 23 `pending` slugs. C1 must run 3 sessions (10, 10, 3), and a fourth run must exit at once.

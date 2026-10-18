@@ -1,0 +1,15 @@
+{
+  "slug": "g043",
+  "description": "A sepia-toned painting of a baseball player in a light jersey with the number 42 on the back, sliding into a base in a cloud of dust while reaching out with one arm. On the right, a fielder in a cap reaches toward him with a glove. The background shows a blurred crowd in stands under a roofed structure. The painting fills the frame edge to edge. A small sparkle logo sits in the bottom right corner. No blood or violence is visible.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a mid-20th-century baseball slide, not Japanese kana developing around 900. The baseball uniforms and caps do not fit the year. The number 42 is painted on the jersey, which is a number in the image."
+}

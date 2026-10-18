@@ -1,0 +1,15 @@
+{
+  "slug": "g083",
+  "description": "A dim living room in loose, heavy brushstrokes. In the foreground a hand painted in dark red-brown grips a silver-grey pistol-shaped object, and lettering on its side reads 'ZENITH' over 'FLASH-MATIC'. Behind it stands a wooden cabinet television with a bright, static-filled screen, beside a table lamp and drawn curtains. A small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The gun-shaped remote has the printed words 'ZENITH' and 'FLASH-MATIC' on its side. Paint the device without any lettering; the sparkle logo in the corner is fine."
+}

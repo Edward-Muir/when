@@ -1,0 +1,15 @@
+{
+  "slug": "g047",
+  "description": "An oil painting of a flag (blue triangle with a golden sun, red band with white edges, green triangle) flying from a tall wooden pole over red desert dunes at sunset, with acacia trees silhouetted against a glowing sun and clouds. The painting is a stretched canvas with visible side edges and a drop shadow, photographed against a plain white wall with a margin all round, and a small sparkle logo sits in the bottom right corner. No readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas hung on a white wall, with visible stretcher edges, a shadow and a wide white margin, instead of filling the image edge to edge. Repaint it full-bleed with no canvas, wall or mockup."
+}

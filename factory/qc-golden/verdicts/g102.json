@@ -1,0 +1,15 @@
+{
+  "slug": "g102",
+  "description": "A woman seen from behind, in a dark jacket, long dark skirt and a dark flat-topped hat, raises her right hand in front of a wooden desk that holds a gilded box, a book and a rolled paper. The setting is a wood-panelled chamber with a spectator gallery above and rows of men in dark suits and bow ties seated below, all lit by a shaft of light from above. The era cues are early 20th-century suits and interior, with no legible letters or numbers, no frame, and no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

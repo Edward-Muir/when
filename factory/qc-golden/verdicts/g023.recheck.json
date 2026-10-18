@@ -1,0 +1,15 @@
+{
+  "slug": "g023",
+  "description": "A mounted soldier in khaki with a plumed slouch hat gallops a dark horse across dusty, smoky, churned ground, carrying a rifle with a fixed bayonet. Other riders in similar hats appear through the haze behind him, and a distant town with a spire or minaret sits on the right horizon. It is a warm brown and ochre oil painting that fills the frame edge to edge, with no text, frame or gore.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a First World War mounted cavalry charge with bayonet rifles, but the card is Nancy Astor taking her seat as the first woman in the House of Commons in 1919. Nothing shows Parliament, a chamber, or a woman. Repaint as a woman in 1919 dress entering the Commons chamber among seated MPs."
+}

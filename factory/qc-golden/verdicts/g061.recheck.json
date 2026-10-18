@@ -1,0 +1,15 @@
+{
+  "slug": "g061",
+  "description": "A dark oil painting of a laboratory bench. A gloved hand reaches in from the upper left and pours pale liquid from a small glass vessel into a clear bottle holding dark red liquid. Behind are a glass flask, a brass microscope-like fitting and a wooden rack of test tubes with small paper labels bearing only illegible scribbles. The setting looks 19th-century, with no frame or border, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a chemistry laboratory with a gloved hand pouring liquid, not an aircraft; the card is the Junkers J1 all-metal plane, so the art needs a 1915 metal monoplane. The test-tube labels hold only illegible marks, so there is no text problem."
+}

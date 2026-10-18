@@ -1,0 +1,15 @@
+{
+  "slug": "g078",
+  "description": "A dim, painterly interior. A middle-aged man with short dark hair, in a dark button-up work shirt with rolled sleeves and trousers, stands bent over a large drum-like reel wound with coiled tubing, set in a silver metal frame on a wooden pedestal, with a hose hanging to the floor. Behind him is an iron-frame bed with a figure under a blanket, wooden cabinets, and shelves with glass flasks. Clothing, bed and machine suggest the mid-20th century. No letters or numbers; a small sparkle logo in the bottom-right corner. Painting fills the image edge to edge; nothing gory or nude.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a 20th-century man tending a tube-wound drum machine beside a hospital-style iron bed, not Pascal and Fermat's 1654 letters on probability. The clothing, bed and machinery are anachronistic for 1654. Repaint as a 17th-century scene of the problem of points, such as gamblers at dice or a candlelit study with letters and dice."
+}

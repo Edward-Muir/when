@@ -1,0 +1,15 @@
+{
+  "slug": "g032",
+  "description": "Two men in wide-brimmed felt hats stand at the edge of a concrete-lined irrigation channel that winds through an arid desert valley under mountains and a cloudy sky. The man on the left wears a brown vest over a light work shirt and points down the water; the man on the right wears dark work clothes and looks down at the channel. The clothing and hats suggest the early twentieth century American West. There is no visible text, frame or border, and nothing violent or nude.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "shows two men inspecting an irrigation canal in a desert, but the card is the 1914 burning of the Louvain library; nothing in the picture is a library, a book, a fire or a German soldier"
+}

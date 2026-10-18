@@ -1,0 +1,15 @@
+{
+  "slug": "g007",
+  "description": "A painting of a woman in a dark patterned headscarf and shawl holds a small child against her chest; both look straight out with grave expressions. Behind them, under a ragged canvas awning, stand sacks stacked along the side and several other people in shadow, with a sunlit dry landscape and bare thorny trees beyond. There is no visible text, no frame, and nothing graphic; the dress and setting look like a rural East African relief camp, with no modern technology visible.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a mother and child beside grain sacks under a tent in a dry camp setting, but the card is a 2015 London safe-deposit vault burglary, so the picture is of a different event."
+}

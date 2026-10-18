@@ -1,0 +1,15 @@
+{
+  "slug": "g119",
+  "description": "A bearded man in a dark cape and brimmed hat sits at a small easel on a harbour quay, painting with a palette and brush. Beyond him is a misty harbour at sunset with tall-masted sailing ships on the left and a smoking steamship on the right, a low orange sun, and gold reflections on the water in loose, thick brushwork. Dark stone pillars stand at the left and right edges and a dark empty picture frame leans against the quay wall at lower left, all inside the scene. The painting runs to every edge, with no mat, border or room around it, and there is no text or graphic content.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

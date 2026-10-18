@@ -1,0 +1,15 @@
+{
+  "slug": "g035",
+  "description": "A painting of a snowy polar landscape under a dark, stormy sky with a bright sunrise glow on the horizon. An orange tracked vehicle with a truck cab, roof lamps and caterpillar treads pulls a canvas-covered sledge or trailer across the snow. Several figures in heavy fur-hooded parkas trek behind it, and a figure in the foreground leans on a long pole. No visible text, frame or wounds; the era cues (tracked tractor, canvas-covered load, fur clothing) suggest a mid-20th-century polar expedition.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

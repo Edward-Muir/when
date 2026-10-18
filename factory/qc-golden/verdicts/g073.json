@@ -1,0 +1,15 @@
+{
+  "slug": "g073",
+  "description": "A dim, candlelit apothecary. A man with grey shoulder-length hair and a short beard, in a dark robe with a thick fur collar, leans over a large open book on a wooden table and rests his hands on its pages. Behind him, shelves hold stoneware jars and glass bottles with pale label panels, and dried herb bundles hang from the beams. On the table are a lit candle, a brass mortar and pestle, a brass balance scale, small vials and scattered dried herbs. The clothing, jars and scale suggest the 16th or 17th century. The painting fills the frame edge to edge with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The jars carry pale label panels with marks I cannot read, and the open book's pages show dense text-like lines. I cannot tell whether these are letters, so the artist should check that no legible or pseudo-text is painted on the jars or the book."
+}

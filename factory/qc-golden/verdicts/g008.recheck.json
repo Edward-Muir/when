@@ -1,0 +1,15 @@
+{
+  "slug": "g008",
+  "description": "An orange tracked over-snow vehicle with an enclosed boxy cab sits on two caterpillar tracks in a snowy, ice-ridged landscape. Rope coils hang from it, a roof rack carries a barrel and green canvas bundles, and oil drums are strapped on at the rear. Small flags on poles stand in the snow at left under a dark, stormy sky. No letters, numbers, frame or gore; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an orange tracked snow tractor crossing ice, but the card is the nuclear icebreaker Lenin, a ship. The picture needs a large icebreaking ship cutting through Arctic sea ice."
+}

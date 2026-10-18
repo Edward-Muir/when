@@ -1,0 +1,15 @@
+{
+  "slug": "g026",
+  "description": "A baseball player in a white home uniform with orange piping and an orange-and-black cap runs along a dirt path toward a brick wall, reaching out to slap hands with fans leaning over it. Stadium floodlights glow in a dark night sky, a brick grandstand with lit windows rises behind, and orange and white balloons float above. An orange logo sits on the cap and a partial orange script letter is on the jersey; the image fills edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g071",
+  "description": "A close-up of two men shaking hands in the centre of the frame, with dark suit sleeves entering from the left and right edges. Behind them is a dark, wood-panelled room with a raised chair. Men in suits sit at desks with brass lamps and papers on either side, and others stand in the background. The clothing suggests the early 20th century. There are no readable letters or numbers, only a tiny mark in the bottom-right corner. The painting runs edge to edge with no frame, and nothing is graphic.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows two men shaking hands in a panelled room, a diplomatic or legal agreement, but the card is a mounted cavalry charge at Beersheba in 1917. Redo the painting as the charge itself: horsemen in action on open ground."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g013",
+  "description": "An 18th-century man with powdered grey hair, in a burgundy velvet coat, pale blue waistcoat and white cravat, raises his right hand as if taking an oath, his left hand resting on an open book on a dark wooden table. Several other men in dark 18th-century coats raise their hands in the background, with candles glowing at right and tall windows in a dim interior. The open book has legible printed words, including CONSTITUTION and SERMENT, painted on its pages. A small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an 18th-century oath-taking scene in an interior, with a book labelled CONSTITUTION and SERMENT, not Monet's Impression, Sunrise, a harbour seascape of 1872. The dress is 1780s-90s, not 1872. The book has painted text that must go."
+}

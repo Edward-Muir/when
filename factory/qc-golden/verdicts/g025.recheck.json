@@ -1,0 +1,15 @@
+{
+  "slug": "g025",
+  "description": "A thickly brushed oil painting at night: a tall tapering furnace or kiln with a glowing white-orange molten core and flame at its top, sparks flying left, and what looks like a bellows in the lower left foreground. The setting is a dark navy night sky and dark ground. There are no people, no letters or numbers, no frame or border, and nothing gory. A small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a furnace or forge with a bellows and flying sparks, but the card is Parisian salon culture (elite women hosting Enlightenment conversation in 1715). There is no salon, drawing room, people or conversation; repaint it as a candlelit Parisian salon with gathered figures."
+}

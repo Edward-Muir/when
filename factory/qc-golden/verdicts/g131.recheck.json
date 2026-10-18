@@ -1,0 +1,15 @@
+{
+  "slug": "g131",
+  "description": "An oil-style painting of two men in medieval dress at a stone table in a dim stone room. The left man wears polished plate armour, a red cape and a blue surcoat with red lions, and holds a parchment; the right man wears a green cloak with gold fleur-de-lis and gestures toward it. An iron key lies on the table, and two shadowy helmeted figures stand behind. The painting is shown as a square canvas on a light grey wall, with a visible edge, a drop shadow and a wide margin around it. A faint scribble at the bottom-left of the painting is not legible as letters; a small sparkle logo sits in the lower right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas hung on a grey wall, with a drop shadow and wide margin, so it does not fill the image edge to edge. Remove the wall and canvas edge and paint the scene full-bleed."
+}

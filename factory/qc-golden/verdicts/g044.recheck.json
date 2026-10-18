@@ -1,0 +1,15 @@
+{
+  "slug": "g044",
+  "description": "A dense cluster of brass and black iron gears interlocks on a dark machine frame, with a long strip of paper tape punched with rows of small holes looping through the wheels. Puffs of steam rise from pipes at the top and sides. The setting is a dim industrial workshop. There are no people, weapons or landscape. A small sparkle logo sits cropped in the bottom-right corner. The painting fills the image edge to edge with no frame or border.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a brass gear machine with punched paper tape, but the card is the Peninsular War (Napoleon's invasion of Spain, 1808). There are no soldiers, guerrillas, Spanish landscape or battle; this looks like art for a different card (a mechanical loom or computing engine). Repaint it as the Peninsular War."
+}

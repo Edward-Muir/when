@@ -1,0 +1,15 @@
+{
+  "slug": "g075",
+  "description": "A woman in a dark navy tailored coat, long skirt, gloves and a wide-brimmed dark hat sits sideways on a green leather bench in a dark wood-paneled legislative-style chamber, one gloved hand on a carved wooden rail. Dark-suited, mustached men in early 1900s dress sit on benches around her. The painting fills the frame edge to edge, with no border or frame. No legible letters or numbers; a tiny multicolored mark sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a woman among men in a parliamentary chamber with green benches, but the card is Bell's hydrofoil boat setting a water speed record on a Nova Scotia lake. There is no boat, water, foils or Bell in the picture."
+}

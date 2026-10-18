@@ -1,0 +1,15 @@
+{
+  "slug": "g115",
+  "description": "A dark, painterly close-up of a seared, browned meat patty on a metal griddle tray, with flames licking at its left side and smoke rising behind it. A hand in a dark sleeve holds a metal spatula pressed against the patty. To the right are bowls of green peas, red beets with leaves, and pale beans or legumes. The background is near-black with an apron strap at top right. No text, numbers or signature are visible. The painting runs edge to edge, with the tray rim as part of the scene and no frame or wall. No gore or nudity.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

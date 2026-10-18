@@ -1,0 +1,15 @@
+{
+  "slug": "g104",
+  "description": "A bearded man in a tattered hooded brown robe and dark cloak stands in a dim stone cellar workshop, pouring glowing yellow-green liquid from a round flask into a smaller glass flask while smoke curls upward. Shelves of glass bottles with cobwebs line the walls, and a lit candle sits on a wooden table beside more bottles. Era cues are medieval or early modern European alchemy. The only mark is a small sparkle logo in the bottom-right corner; there is no frame, border, other text or gore.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a European alchemist pouring liquid between glass flasks in a stone laboratory, but the card is yam cultivation in West Africa, c. 800. There is no yam, field, farm, farmer or West African setting in the picture."
+}

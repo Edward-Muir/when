@@ -1,0 +1,15 @@
+{
+  "slug": "g032",
+  "description": "Two men in wide-brimmed hats, vests and work shirts stand on either side of a concrete-lined water canal that winds through an arid desert toward distant mountains under a cloudy sky; the man on the left points at the water. The dress and the concrete channel suggest the early twentieth century. There are no letters, no border or frame, and nothing violent or nude; the oil painting fills the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "shows two men inspecting an irrigation canal in a desert, but the card is the 1914 burning of the Louvain library in Belgium; there is no library, book, fire or soldier in the picture, so it is the wrong event"
+}

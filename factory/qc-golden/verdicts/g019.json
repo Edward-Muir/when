@@ -1,0 +1,15 @@
+{
+  "slug": "g019",
+  "description": "A candlelit chamber with a painted ceiling and walls. The large fresco shows a crowd of nude, tangled figures, like a Last Judgment scene. In the foreground, a man in a red cardinal's robe and red skullcap drops a folded paper into a silver chalice on a draped table. Other red- and pink-robed clergy stand at the left and in a line on the right, and a hooded red-robed figure is among them. A black cast-iron stove sits at right, with candles and an altar with a crucifix in the background. The floor is a patterned marble inlay. The image is full-bleed with no frame. I see no legible text, though the paper in the cardinal's hand is blank.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The fresco covering the ceiling and back walls shows many nude figures; repaint them clothed or remove them from the picture."
+}

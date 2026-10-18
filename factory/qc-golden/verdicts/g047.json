@@ -1,0 +1,15 @@
+{
+  "slug": "g047",
+  "description": "An oil painting of a tall wooden flagpole in a desert at sunset. A flag with a blue upper triangle, a yellow sun emblem, a red band with a white edge stripe, and a green lower section flies from the pole. Acacia trees silhouette against orange dunes, with a glowing sun on the horizon. The painting is shown on a visible canvas with stretcher edges, set against a white wall, and a small sparkle logo sits in the lower right corner. There is no readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas with visible stretcher edges on a white wall, not filling the image edge to edge."
+}

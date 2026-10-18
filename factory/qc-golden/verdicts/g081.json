@@ -1,0 +1,15 @@
+{
+  "slug": "g081",
+  "description": "A dark oil-painting street scene. In the foreground a bearded man in a rough grey tunic and leather jerkin staggers backward while a man in a black long coat grips him by the shoulder and holds a short blade at his chest. A torn red banner and a dropped spear lie on the cobbles. Behind them are hooded townsfolk, helmeted soldiers, canvas tents, a wooden table at the left, and a crowned rider in armour on a brown horse with more mounted men and a red pennant beyond. The dress, armour and tents suggest the late medieval or early modern period. No text, frame or border is visible, and the painting fills the canvas edge to edge. The blade is at the chest, but no wound or blood is visible.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a street confrontation, a man seized and stabbed beside a dropped banner, with soldiers and tents behind. The card is the Stari Most stone arch over the Neretva gorge at Mostar, and no bridge, gorge or arch appears in the picture."
+}

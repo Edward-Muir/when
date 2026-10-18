@@ -1,0 +1,15 @@
+{
+  "slug": "g092",
+  "description": "Three gilded, cream-and-gold domed papal tiara-like crowns topped with small crosses sit on folds of crimson velvet, with a large dark basilica dome (St. Peter's style) behind under a dusky blue-grey sky. The painting is a stretched canvas shown on a pale grey wall with a drop shadow and visible canvas edges, so the artwork does not fill the image. A small sparkle logo sits in the bottom-right corner. No people, text or blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is a stretched canvas photographed on a pale grey wall with a drop shadow and a wide blank margin, not a painting filling the image edge to edge. Regenerate with the artwork cropped to fill the whole image."
+}

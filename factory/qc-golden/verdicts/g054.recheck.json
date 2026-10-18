@@ -1,0 +1,15 @@
+{
+  "slug": "g054",
+  "description": "A young man in a khaki peaked cap and olive military-style greatcoat sits on a stool, one eye at the eyepiece of a large iron measuring machine with a round white dial. The dial shows two small circles labeled with the letters A and B, joined by an arrow, plus scattered dots. Behind him a telescope tube and a curved dome with rough stone walls suggest an observatory. A small sparkle logo is in the bottom-right corner, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an early 20th-century observer using a plate-measuring instrument in an observatory, not a medieval crossbow in European warfare; the peaked cap, greatcoat and machinery are far too late for 1100. The letters A and B are painted on the instrument dial."
+}

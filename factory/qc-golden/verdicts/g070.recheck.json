@@ -1,0 +1,15 @@
+{
+  "slug": "g070",
+  "description": "An oil painting of a sleeping infant swaddled in white in a carved wooden rocking cradle, in a dim room with a sunlit window on the left. A side table holds a stack of old books with a small brass globe on top, and the book spines carry legible lettering that starts NATUR. Through the window is a smoky industrial skyline of tall chimneys and houses with lit windows. There is a scrawled signature at the bottom right, and the painting sits inside a plain white margin on every side rather than filling the image.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a baby in a cradle before a factory skyline, with books as a minor prop; nothing depicts the Brothers Grimm publishing their folk tales (for example, a storyteller or a fairy tale scene, or the book itself as the focus). The book spines carry painted lettering (NATUR...) and there is a scrawled signature in the bottom right. A white margin surrounds the painting on all four sides, so it reads as a mat or border rather than an edge-to-edge painting."
+}

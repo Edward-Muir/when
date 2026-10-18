@@ -1,0 +1,15 @@
+{
+  "slug": "g105",
+  "description": "An ornate Islamic-style courtyard with horseshoe arches, carved stucco and hanging brass lanterns, a tiered fountain at the centre. Robed and turbaned men stand about; one in a gold robe sits at a table reading an open book while a man in blue gestures to him. At right, men play lutes. In the background a man holds up a board bearing Arabic-style script, and a large calligraphic panel is carved into a wall niche. The painting fills the frame edge to edge, with a small sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The card is oil of vitriol (sulfuric acid) distilled by alchemists, but the picture is a courtyard of scholars, a reader and a lute band, with no still, retort, furnace, glassware or any distilling. It needs a laboratory scene with distillation apparatus. A man also holds up a board of Arabic script and a large inscription panel fills a wall niche; these read as painted-in lettering, so remove them."
+}

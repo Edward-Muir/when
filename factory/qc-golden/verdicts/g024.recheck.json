@@ -1,0 +1,15 @@
+{
+  "slug": "g024",
+  "description": "A man with wavy dark hair in a brown 18th-century coat with a white cravat and ruffled cuffs reaches one open hand toward twisted metal wires strung between two wooden posts, while his other hand grips a wire; smoke and small sparks rise from the wires. The setting is a dim stone laboratory with shelves of books and bottles, a candle at the left, a glass flask and a stack of leather-bound books on a wooden bench. Thick oil-paint style filling the whole square, no border or frame, no lettering; a small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a European scientist in 18th-century dress doing an electrical experiment in a laboratory, but the card is the 1279 naval Battle of Yamen where the Mongol Yuan defeated the Southern Song. Paint Mongol and Song war fleets at sea, with 13th-century Chinese and Mongol dress and ships, not a lab."
+}

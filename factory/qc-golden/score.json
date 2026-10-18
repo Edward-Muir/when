@@ -1,0 +1,11 @@
+{
+  "recall": [60, 63],
+  "false_flags": [1, 70],
+  "missed": ["darius-i-persian-king", "caravanserai-samarkand", "birth-richard-nixon"],
+  "false_flagged": [
+    {
+      "slug": "antioch-crusader-conflicts",
+      "reason": "A cursive painter's signature is painted into the bottom-right corner, inside the image rather than cropped away. It reads as handwritten letters, so it counts as text. Ask for a new painting with no signature, or crop it out."
+    }
+  ]
+}

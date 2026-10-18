@@ -1,0 +1,15 @@
+{
+  "slug": "g030",
+  "description": "A topknotted man in a grey-brown robe kneels over an older grey-haired woman lying on a futon, and holds a small blade to her abdomen where a thin red incision line shows. Dark-kimono attendants in a dim room hold a tray of surgical instruments and a lit candle lantern, and a second tray and bowls sit on the tatami floor. There is no visible text, no frame, and the painting fills the image edge to edge. Dress, tatami, lantern and instruments read as Edo-period Japan.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

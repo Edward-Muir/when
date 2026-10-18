@@ -1,0 +1,15 @@
+{
+  "slug": "g040",
+  "description": "A man in a black coat, white cravat and grey powdered wig stands at centre, pointing at a tall stack of metal discs on a wooden table with a thin wire and a small spark. Around him, astonished onlookers in 18th-century dress (a pale blue gown, brocade and velvet coats, a man in spectacles) crowd in a candlelit panelled room with dark drapes. There is no frame, gore or text apart from a small sparkle logo in the bottom right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an 18th-century demonstration of an electric battery to wigged onlookers in Georgian dress, but the card is Simon de Montfort's 1265 Parliament. Paint a 13th-century English assembly of nobles, clergy and commoners in medieval dress and a hall."
+}

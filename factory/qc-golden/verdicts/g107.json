@@ -1,0 +1,15 @@
+{
+  "slug": "g107",
+  "description": "An oil-painted interior of a rustic stone-hearthed cottage at night, lit by a glowing fire. An elderly grey-haired woman in a dark dress sits on the left, gesturing with open hands toward two young men in dark 19th-century frock coats and white collars. The man on the right writes with a quill on paper at a small wooden table, while the other leans in and listens. Copper and brass pots hang on the wall, and a spinning wheel stands at the right. No letters, numbers or signature are visible, and the painting runs edge to edge with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

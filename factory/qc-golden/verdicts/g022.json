@@ -1,0 +1,15 @@
+{
+  "slug": "g022",
+  "description": "A night scene at sea. A large dark lateen sail rises over a low wooden boat crowded with robed figures, several holding small lanterns, with a man in a red garment standing at the stern. A crescent moon shines through green-grey clouds above choppy dark water. On the left, a shoreline with palm trees and low flat-roofed buildings, one with a tower. A thick dark wooden picture frame surrounds the painting on all four sides, and a small white sparkle logo sits in the bottom-right corner. No visible text, no violence, no era-inconsistent objects.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits inside a dark wooden picture frame on all four sides. Crop to the painting so it fills the image edge to edge."
+}

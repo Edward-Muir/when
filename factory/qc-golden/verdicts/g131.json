@@ -1,0 +1,15 @@
+{
+  "slug": "g131",
+  "description": "A painted scene of two men in a stone-walled room. On the left, a smiling man in polished plate armour with a red cape and a blue tabard bearing red lions holds a folded parchment. On the right, a man in a green cloak with gold fleur-de-lis trim gestures toward the parchment. An iron key lies on a stone table in the foreground, and two dark silhouetted figures in helmets stand in the background. Light falls from the upper left. The painting sits on a grey mat-like backdrop with a visible canvas edge and shadow, and there is a faint mark at the bottom-left of the painting that could be a signature.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas on a grey wall, with a visible edge and shadow around it, so it does not fill the image edge to edge. Remove the wall, mat and canvas edge and crop to the painting. Also check the faint mark at the bottom-left for a signature, which counts as text. The picture is a generic medieval document scene with red-lion blue heraldry, not clearly the Treaty of Brétigny between England and France, so it may need a clearer English and French cue."
+}

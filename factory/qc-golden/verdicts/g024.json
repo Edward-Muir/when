@@ -1,0 +1,15 @@
+{
+  "slug": "g024",
+  "description": "A man with wild dark hair in a dark brown coat and white cravat stretches one hand out over a wooden frame strung with twisted metal wires, while his other hand grips a wire. Thin smoke rises near the wires. Behind him are shelves of bottles and books, candles glow at the left edge, and a glass flask and stacked leather-bound books sit on a wooden table. The style is a thick oil painting that fills the whole square. Dress and apparatus look late 18th or early 19th century European. A small sparkle logo sits in the bottom-right corner. No other legible text.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a European in a late-18th or early-19th century coat conducting an electrical experiment in a laboratory, but the card is the 1279 naval Battle of Yamen between Mongol and Southern Song fleets. The dress and apparatus are also anachronistic for 1279, and no ships or battle appear."
+}

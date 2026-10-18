@@ -1,0 +1,15 @@
+{
+  "slug": "g121",
+  "description": "A dark, oil-painted night scene at a container port. A steel gantry crane on the right lifts a rust-brown shipping container over the dark-hulled deck of a cargo ship, with its bridge superstructure visible. Stacked containers sit on the quay in the foreground, and more cranes and ships fade into the background under a harsh overhead light. There is no visible text, frame or border, and nothing graphic. The technology looks modern, consistent with the container-shipping era.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a container port, with a gantry crane lifting a shipping container onto a cargo ship, but the card is the first overland crossing of Antarctica (1958), which involves no ports, ships or cranes. The crane and container technology is also a clear anachronism for 1958."
+}

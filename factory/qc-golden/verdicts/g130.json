@@ -1,0 +1,15 @@
+{
+  "slug": "g130",
+  "description": "An oil-painted scene of a stocky, smiling adult man in a grey felt hat and dark three-piece suit with tie, both arms raised in a V-for-victory sign. Behind and around him are photographers holding flash cameras, a man in a military-style cap and uniform photographing on the right, a microphone on a stand at lower right, flags and bright stage lights in a dim, crowded background. Painterly, dark, muted palette. No legible text, no frame, a small sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "Shows an adult politician-style figure at a press event, not a birth. Nothing in the picture ties it to Richard Nixon by name, caption or setting, and the identity cannot be confirmed from the face. Could be this person or a similar public figure, so subject is unsure."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g133",
+  "description": "Two roped mountaineers in padded down suits, one red and one blue, climb a steep snowy rock ridge toward a dark summit under a stormy sky. They carry an ice axe and wear crampons and harnesses. The painting fills the frame edge to edge in loose oil brushwork. I see no text, border, frame, blood or nudity.",
+  "checks": {
+    "subject": "fail",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The picture shows two mountaineers climbing a snowy ridge, but the card is the 1954 Geneva Accords on Indochina, a diplomatic settlement between France and the Viet Minh. Nothing in the image refers to a treaty, negotiators, Vietnam or Indochina; it needs a painting of the conference or its people."
+}

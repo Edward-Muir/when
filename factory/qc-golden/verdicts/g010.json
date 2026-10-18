@@ -1,0 +1,15 @@
+{
+  "slug": "g010",
+  "description": "A row of large monolithic stone heads with long noses and red cylindrical topknots stands on a stone platform at the edge of the sea, under a red and orange sunset sky. Men on the lower left haul on ropes and a long timber lever to move one of the figures, and a loose red stone cylinder sits on the platform at right. The style is an oil-like painting with a dark, earthy palette. The picture is enclosed in an aged, cream-coloured, cracked and torn paper border, and a small white sparkle logo sits in the bottom-right corner. No legible letters or dates appear.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows Easter Island moai being hauled into place with ropes and a timber lever, not the Dutch VOC spice monopoly in the East Indies. The painting also sits inside a cream, cracked, torn-paper border, which counts as a frame."
+}

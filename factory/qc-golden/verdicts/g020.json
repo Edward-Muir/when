@@ -1,0 +1,15 @@
+{
+  "slug": "g020",
+  "description": "An oil-style painting of a colossal bronze-coloured statue of a bald man in a long coat and loose trousers, standing on a rocky island in a dark river. Beneath his feet is a large red-brick, stepped building with tiny figures on its roofs and terraces, and a concrete structure runs off to the right. Dark, stormy mountains and clouds fill the background. There is no visible text, frame or border, and nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

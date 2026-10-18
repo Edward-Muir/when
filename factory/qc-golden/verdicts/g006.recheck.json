@@ -1,0 +1,15 @@
+{
+  "slug": "g006",
+  "description": "Soldiers in steel helmets and ponchos, one carrying a bolt-action rifle, file through a muddy sandbagged trench at night, lit by a hanging oil lantern. Behind them is a misty jungle valley with hills, a moon, a flare or fire, and a small clearing with low buildings and a strip of ground. The painting fills the image edge to edge, with no text, frame or gore.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows infantry in a wartime trench, but the card is the SS Ideal X, a converted tanker carrying truck trailers on the first container-ship voyage. There is no ship, port, crane, trailer or cargo anywhere in the picture."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "g015",
+  "description": "An oil painting on a stretched canvas photographed against a plain white wall, with the canvas edges, its shadow and the wall all visible around it. A dark, crusted, round patty-like mound with red-pink patches sits at the centre, with orange flames and blue-grey smoke around it and white splashes at the lower right. No letters, numbers or signature, and nothing is gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is a canvas hung on a white wall, with its edges, shadow and the wall showing around it, so it does not fill the image edge to edge. Repaint it full-bleed with no canvas or wall. The subject (a burger-like patty) is acceptable."
+}

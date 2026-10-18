@@ -1,0 +1,15 @@
+{
+  "slug": "g009",
+  "description": "Three workers in hard hats and heavy work jackets operate a large cable winch drum on a wooden and steel platform. Cables run over pulley blocks up to a tall lattice-steel mast, with guy lines fanning out across an open rural hillside. A dramatic stormy sky breaks into golden light. Oil-painting style, filling the image edge to edge. No letters, numbers, border or frame, and nothing gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows workers running a winch and lattice derrick, which is industrial or oil-rig work, but the card is the 2011 Horn of Africa famine. Nothing shows drought, hunger, displaced people or the Somali region; repaint with a drought-cracked landscape and people affected by famine."
+}

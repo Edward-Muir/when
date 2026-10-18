@@ -1,0 +1,15 @@
+{
+  "slug": "g076",
+  "description": "A man with short dark hair in bronze armour and a red cloak with a purple sash holds a lit seven-branched candelabra high in his right hand, and a curved sword hangs low in his left. He stands beside a weathered stone column wrapped in ivy, under a dark stormy sky, with broken stones and rubble on the ground. The painting sits on a white background with a grey drop shadow, like a print mounted on a wall, and a faint painter's mark is in the lower right.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits on a white margin with a grey drop shadow, so it reads as a print on a wall rather than filling the image edge to edge."
+}

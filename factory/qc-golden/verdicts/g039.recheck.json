@@ -1,0 +1,15 @@
+{
+  "slug": "g039",
+  "description": "A dark, candlelit oil painting of an interior. A man in dark, rough clothing, mostly in shadow on the right, holds a swaddled newborn baby with eyes closed. Behind them stands a carved wooden high-backed chair, and on the left a lit candle in a brass holder sits on a rough wooden table. A dark blue bicorne hat hangs on a pale blue stone wall above the chair. There is no text apart from a small sparkle logo in the bottom-right corner, and no frame or border. Nothing is gory or nude.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "fail",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "This is a birth card, but the painting centres on a newborn baby in swaddling. It must show Napoleon as an adult in his active years, for example in a bicorne and military coat. Repaint with an adult figure and no infant."
+}

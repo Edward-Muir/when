@@ -1,0 +1,15 @@
+{
+  "slug": "g110",
+  "description": "A man in a dark beret, dark coat, leather apron and white ruffled collar bends over a small brass object at a cluttered table in a workshop. Around him are brass telescopes on tripods, a brass microscope, brass sextant-like instruments, glass flasks of amber and blue liquid, wooden boxes, candles and shelves of jars and tools, lit by a leaded window at left. The only mark is a small sparkle logo in the bottom-right corner. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a European-style instrument maker's workshop, not the Deccan Sultanates or Indo-Islamic culture of 1490; nothing in the picture refers to the Deccan plateau or the Bahmani successor states. The brass telescopes and compound microscope are also anachronistic for 1490, since both date from around 1600 or later, and the 17th-century costume does not fit either. The art should show a Deccan sultanate scene of the late 15th century, such as a court, a fortified city or Indo-Islamic architecture, with no scientific instruments."
+}

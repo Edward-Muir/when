@@ -1,0 +1,15 @@
+{
+  "slug": "g002",
+  "description": "An oil-style painting filling the image edge to edge. A man in a tricorn hat with a white plume, long curled wig-like hair and blue-and-gold plate armour rides a rearing white horse at the centre. Ranks of soldiers in grey-blue long coats, tricorn hats and long muskets or pikes stand on both sides. Behind them a smoky, fiery sky and a walled town with towers burning on the left. Only lettering-like mark is a small sparkle logo in the bottom-right corner. No frame, no gore.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Flag confirmed. The painting is a late 17th or early 18th century baroque battle scene: tricorn hats, periwig, long grey-blue coats and musket-armed line infantry. The card is the 1098 Crusader capture of Antioch, so it needs medieval dress and arms (mail, conical helmets, kite shields, lances, swords, crenellated stone walls) with no tricorns, wigs or firearms."
+}

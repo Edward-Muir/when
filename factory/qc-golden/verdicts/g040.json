@@ -1,0 +1,15 @@
+{
+  "slug": "g040",
+  "description": "A man in a black coat, white cravat and grey powdered wig stands at centre, holding a thin wire that leads to a tall cylindrical stack of metal discs on a wooden table, with a small spark glowing at the top. Around him, onlookers in 18th-century dress (brocade coats, a pale blue gown, mustard and maroon waistcoats, a man in spectacles) react with alarm, in a candlelit panelled room with dark drapes. The only mark is a small white sparkle logo in the bottom right corner; there is no frame, gore or visible text.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an 18th-century electrical demonstration (a man with a voltaic-pile-style stack and wire, with onlookers in Georgian dress and candlelit panelling), but the card is the 1265 English Parliament of Simon de Montfort, which should show nobles and commoners in 13th-century dress and setting. Paint a medieval English assembly instead."
+}

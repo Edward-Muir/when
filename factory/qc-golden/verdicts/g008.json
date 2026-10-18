@@ -1,0 +1,15 @@
+{
+  "slug": "g008",
+  "description": "An orange tracked over-snow vehicle with an enclosed cab rides on two caterpillar tracks across snow and ice. A roof rack carries rope coils, a rust-red barrel and green canvas bags, and oil drums are strapped at the rear. Thin flags on poles stand in the snow at left, under a dark, stormy polar sky. No letters, frame or gore are visible, and the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows an orange tracked snow vehicle crossing ice, but the card is the nuclear icebreaker Lenin, a ship. The picture needs a ship breaking ice in Arctic water."
+}

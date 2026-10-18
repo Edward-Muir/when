@@ -1,0 +1,15 @@
+{
+  "slug": "g095",
+  "description": "A man in a long dark coat with a high collar, seen in profile, holds an open book up in one hand toward a pale glowing light. Swirling dark, grey and amber impasto strokes form a vortex behind him. Smoking factory chimneys stand on the right, a dim town with lit windows behind, and two shadowy hatted men at the left and right edges. The oil painting is a square canvas sitting on a pale grey wall with the wall visible on all four sides and a soft edge shadow. A tiny sparkle logo sits in the bottom-right corner. No readable text, nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting is shown as a canvas hung on a pale grey wall, with the wall visible around all four edges; it must fill the image edge to edge with no wall, mat or canvas edge."
+}

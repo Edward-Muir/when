@@ -1,0 +1,15 @@
+{
+  "slug": "g011",
+  "description": "An oil painting of a large ornate Gothic stone building on a cobbled street at dusk, its tall tracery windows full of flame with bookshelves visible inside and smoke billowing out. In the foreground a column of soldiers in spiked pickelhaube-style helmets with rifles marches past in silhouette, one carrying a torch. Uniforms and architecture suggest early 20th-century Europe. No letters, numbers or signature, no frame or border, and no blood or nudity.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows German-style soldiers marching past a burning library in a wartime arson scene, but the card is about sodium citrate keeping donated blood from clotting. Repaint with blood storage, such as physicians in a 1914 hospital with a citrated blood flask and transfusion apparatus."
+}

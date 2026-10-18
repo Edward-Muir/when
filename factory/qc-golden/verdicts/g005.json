@@ -1,0 +1,15 @@
+{
+  "slug": "g005",
+  "description": "A young dark-haired man in a dark tunic with an orange-brown wrap sits at a small round table, writing on a sheet with a pen, lit by an oil lamp with a flame; a rolled scroll lies beside it. Behind him, in a red-orange smoky sky, Roman-style soldiers with red-crested helmets, large curved shields and tall standards fight and advance, and a figure lies fallen on the ground. The setting is ancient, with armour, helmets and shields of a Roman legionary kind, and there is no visible text except a small sparkle logo in the bottom-right corner. The painting fills the image edge to edge with no frame or border.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows ancient Roman legionaries in a battle and a scribe by an oil lamp, not the 16th-century Polish-Lithuanian Commonwealth; the subject and the era (Roman armour and weapons in 1573) do not match the card."
+}

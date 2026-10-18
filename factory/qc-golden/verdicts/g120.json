@@ -1,0 +1,15 @@
+{
+  "slug": "g120",
+  "description": "A snowy cobbled street at night, lit by a gas lamp on the right and warm windows in brick buildings behind. A tall man with dark swept-back hair, in a brown patterned quilted coat over a white shirt and cream apron, stoops with an outstretched hand and a tearful expression toward a small ragged boy in a torn coat and scarf, who stands holding a wooden crutch. The clothing and street are Dickensian, Victorian-era. Falling snow throughout. A tiny multicolored logo sits in the bottom-right corner. The painting runs edge to edge with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

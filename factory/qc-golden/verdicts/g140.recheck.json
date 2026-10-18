@@ -1,0 +1,15 @@
+{
+  "slug": "g140",
+  "description": "A dark-skinned man in a loincloth climbs a steep rock cliff on hanging ropes, reaching into a large golden honeycomb with honey dripping and bees swarming around him. A woven basket is slung on his back, a fire glows at the lower left, and vines hang in a narrow canyon. There is no lettering and no frame; the painting fills the image edge to edge, with only a small cropped sparkle logo in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a man harvesting wild honey from a cliff with ropes and a basket, but the card is Jackie Robinson's 1947 debut for the Brooklyn Dodgers. Nothing in the picture is baseball, a stadium or mid-20th-century America, and the loincloth and rope-and-cliff setting reads as a traditional or prehistoric scene. Repaint as Robinson in a Dodgers uniform on a 1947 ballfield."
+}

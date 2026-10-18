@@ -1,0 +1,15 @@
+{
+  "slug": "g056",
+  "description": "A dark-haired man in classical Roman-style dress, a white head cloth with a gold band, a white draped toga-like tunic and a deep red mantle with gold trim, sits on a stone ledge bundling dried herb sprigs. Wicker baskets of roots, leaves and dried herbs sit on the ledge in front of him, with a small mortar-like vessel in the right basket. Behind him is a sunlit Mediterranean garden with an olive tree, flowering plants and weathered stone walls. A small white sparkle logo sits in the bottom-right corner; the painting fills the image edge to edge with no frame, no text and nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The man is dressed as an ancient Roman (toga-like white tunic, red mantle, gold headband) in a Mediterranean garden with an olive tree, but the card is a 1546 Nuremberg pharmacopoeia. Repaint him as a 16th-century German apothecary or physician in period dress (doublet, cap or furred gown) in a workshop with jars, a mortar and a book of recipes, not a classical herb gatherer."
+}

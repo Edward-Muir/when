@@ -1,0 +1,15 @@
+{
+  "slug": "g119",
+  "description": "A bearded man in a dark coat and wide-brimmed hat sits on a stone quay at a wooden easel, holding a palette and brushes, painting. Behind him a harbour at sunset: tall-masted sailing ships on the left, a steamship with a funnel trailing black smoke on the right, and a low orange sun in a hazy sky. The water reflects gold light in loose, broken brushstrokes. A dark rectangular wooden frame leans against the wall in the lower-left corner, and dark stone pillars run down the left and right edges. No text is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "A dark wooden picture frame leans against the wall in the lower-left corner, so the painting does not fill the image edge to edge. Crop it out or repaint that corner without the frame."
+}

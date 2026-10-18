@@ -1,0 +1,15 @@
+{
+  "slug": "g125",
+  "description": "A bearded man in a dark long coat leans over a polished brass microscope on a wooden table, adjusting it with both hands. Behind him a crowd of men in dark suits and bow ties leans in to watch, and a tiered wooden gallery of seated men fills the back of the room. Shelves of glass jars line the wall, and the table holds glass specimen jars with preserved items, a brown glass bottle, a glass vial and slides. The setting looks like a 19th-century laboratory or lecture hall, in a dark, painterly oil style, with no legible letters or numbers. The painting fills the image edge to edge, and nothing is gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

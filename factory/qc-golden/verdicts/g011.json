@@ -1,0 +1,15 @@
+{
+  "slug": "g011",
+  "description": "A large Gothic stone building with pointed arched tracery windows is on fire, with flames and smoke pouring from the windows and roofline. In the foreground, several soldiers in spiked pickelhaube-style helmets carry rifles along a cobbled street, and one holds a torch. The uniforms and helmets look early-20th-century German, and the architecture is Gothic Revival. There is no visible text, lettering or signature, no frame or border, and no visible blood or nudity.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows soldiers with torches and rifles setting fire to a Gothic building, a wartime arson scene. The card is about sodium citrate stopping donated blood from clotting, and nothing in the picture relates to blood or medicine."
+}

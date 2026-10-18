@@ -1,0 +1,15 @@
+{
+  "slug": "g042",
+  "description": "An oil painting of a baby asleep in a dark carved wooden rocking cradle beside a sunlit window. On the left a globe sits on a stack of old books on a table, and the top spine reads \"NATURAL\" in painted letters. Outside, a grey industrial skyline of smoking chimneys and low houses with lit windows. A signature sits in the lower right, and the painting is inset within a wide white margin on all sides.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a sleeping baby in a cradle over a smoking industrial city, not a novel being published or Austen's world of manners and marriage; it reads as a birth in the Industrial Revolution. The book spines carry legible painted lettering (\"NATURAL...\") and there is a painted signature in the lower right. The painting sits inside a white border instead of filling the image edge to edge."
+}

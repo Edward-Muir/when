@@ -1,0 +1,15 @@
+{
+  "slug": "g059",
+  "description": "An oil painting of a walled Central Asian style city at sunset: a huge ribbed dome with blue tilework, a tall spiral-patterned minaret, smaller teal and gold domes, arched tiled gateways and crenellated walls. A river winds across flat land with small boats; in the foreground a camel caravan and two horse riders pass along the bank. The sky is orange, pink and purple. The painting fills the frame edge to edge with no border and no letters or numbers; only a small sparkle logo sits in the bottom-right corner.",
+  "checks": {
+    "subject": "fail",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a medieval Islamic Silk Road city with a spiral minaret and glazed-tile domes, not Apuleius or The Golden Ass; the card is a 2nd-century (170 CE) Roman novel. Redraw as a Roman-era scene (a writer with scrolls, a donkey, or a Roman North African town) with no minarets or Islamic domes."
+}
