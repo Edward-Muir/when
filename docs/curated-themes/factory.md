@@ -2,7 +2,7 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags), and the six tasks exist with no schedule. Still to do: set each task's folder, and the first Run now of each. Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags), and the six tasks exist with no schedule. Merged to main on 2026-10-18 (#85 to #88). Still to do: set each task's folder, then the first Run now of each, following [the checklist](#the-first-run-now-of-each-stage). Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
@@ -479,7 +479,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 ## 8. Rollout and the path to full automation
 
 1. **QC first.** Build the agent, collector and golden set. This is also useful for re-auditing the whole catalogue.
-2. **C1–C3 by hand.** Run them with **Run now** on a hand-authored deck, approving each task's permissions. Confirm that C1 stops at 10 images and that the next run carries on.
+2. **Each stage by hand.** Run them with **Run now**, approving each task's permissions, following [the checklist below](#the-first-run-now-of-each-stage). Confirm that C1 stops at 10 images and that the next run carries on.
 3. **Turn on B daily, C1/C2 hourly in the daytime, and C3 daily.** Hourly schedules within a time window are set by asking Claude in a Desktop session, because the preset picker only offers plain Hourly. Production runs ahead of the calendar until there are about 6 weeks of buffer.
 4. **Turn on A (list health) weekly and D daily** (D in prepare-only mode at first).
 5. **Graduate to auto-merge when:**
@@ -488,6 +488,45 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
    - card reports on factory decks stay at or below the catalogue's ~1.2%.
 
    Then turn on GitHub auto-merge for factory PRs that pass every check, keep a daily digest, and keep a blind human spot check of about 5% of auto-approved images.
+
+### The first Run now of each stage
+
+A checklist for the first manual run of each task. Do them in this order, because each stage feeds the next. The first deck is a real one: Sweet Tooth, the top of the list. A deck made only for testing would mean uploading throwaway art to Cloudinary and then deleting it. Its PR is reviewed like any other.
+
+**Once, before any run:**
+
+1. In Claude Desktop, open each of the six "Deck factory" tasks in Scheduled and click Edit:
+   - Folder `…/timeline/when-factory`;
+   - **Worktree off**;
+   - permission mode **Ask**, so the first run's approvals are stored on the task.
+
+   Open the folder once in a normal session and accept the workspace-trust prompt. A project's `.claude/settings.json` applies only to a trusted folder.
+
+2. Chrome is signed in to Google, the Claude in Chrome extension is connected, and Gemini offers Pro.
+3. "Keep computer awake" is on.
+
+**Then, one task at a time.** Click Run now, approve each prompt with "always allow", and check:
+
+| #   | Task               | What a good run leaves                                                                                                                                                                                                                                           |
+| --- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | A: list health     | A report in the run, and `../when-images/factory-reports/health-<date>.md`. Nothing committed.                                                                                                                                                                   |
+| 2   | D: schedule        | "No merged deck is pending", and an exit. No factory deck has merged yet.                                                                                                                                                                                        |
+| 3   | B: author          | Branch `claude/deck-sweet-tooth` on origin, and `node scripts/factory/decks.js` in the clone shows `sweet-tooth: authored`. Read `spine.json`, `deck.json` and `fact-check.json` in `factory/decks/sweet-tooth/`. This is the long one: allow a couple of hours. |
+| 4   | C1: art batch      | At most 10 images in `../when-images/inbox/sweet-tooth/`, one `downloaded` commit each, and the session stops at 10. Run it again: it takes the next 10. After the first batch, check that each file's `shasum -a 256` matches its line in `manifest.jsonl`.     |
+| 5   | C2: QC             | `qc/<slug>.json` for every downloaded slug, `qc/summary.json`, and each slug `qc-pass`, `qc-fail` or `needs-human`.                                                                                                                                              |
+| 6   | C1 and C2 again    | Until `node scripts/factory/status.js summary --deck sweet-tooth` says `ready-to-ship`.                                                                                                                                                                          |
+| 7   | C3: ship           | `uploads.json` with every asset verified, a green `--verify-urls`, and a PR titled "chore(events): add the Sweet Tooth curated deck" whose CI passes.                                                                                                            |
+| 8   | D, after the merge | A validate run for Sweet Tooth's date, and the exact publish command. Publishing is Edward's to run.                                                                                                                                                             |
+
+**Resilience, once C1 has run cleanly** (the checks in section 10):
+
+- Run C1 twice at once: the second must exit with "locked by art-batch".
+- Stop C3 partway through, then run it again: it must resume from `status.json`, skipping the uploads already verified.
+
+**Things the first runs settle:**
+
+- Whether scheduled runs honour the project's `.claude/settings.json`. If a run keeps asking for commands the allow list covers, copy the lists into `~/.claude/settings.json`.
+- Whether the deny list holds. In the session that built the factory, a `gh pr merge` the project settings deny went through. That session most likely loaded its settings before the file existed. A fresh scheduled run should be refused; check that once by asking a run to try it.
 
 ## 9. Files
 
