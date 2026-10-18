@@ -49,6 +49,8 @@ function listDecks() {
     const status = showJson(ref, `factory/decks/${id}/status.json`);
     const backlog = showJson(ref, 'docs/curated-themes/backlog.json');
     const theme = backlog && backlog.themes.find((t) => t.id === id);
+    // A branch that only shares the prefix (claude/deck-factory-plan, the list's own PR) is not a deck.
+    if (!status && !theme) continue;
     decks.push({
       id,
       branch,

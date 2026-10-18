@@ -135,7 +135,8 @@ function npmCiIfNeeded() {
   if (installed === hash && fs.existsSync(path.join(REPO_ROOT, 'node_modules'))) return false;
   const result = spawnSync('npm', ['ci'], {
     cwd: REPO_ROOT,
-    stdio: ['ignore', 'inherit', 'inherit'],
+    // npm's chatter goes to stderr: stdout carries only the JSON result.
+    stdio: ['ignore', process.stderr, process.stderr],
     env: { ...process.env, PUPPETEER_SKIP_DOWNLOAD: 'true' },
   });
   if (result.status !== 0) throw new Error('npm ci failed');
