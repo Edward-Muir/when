@@ -667,3 +667,48 @@ describe('auto: one task, the state machine picks the stage', () => {
     assert.equal(log.qc.outcome, 'blocked');
   });
 });
+
+describe('bunching', () => {
+  const { bunchLimit, bunchingReport, densestWindow } = require('../themes/bunching');
+  const { spineProblems } = require('./spine-matches');
+
+  it('finds the densest 10-year window', () => {
+    assert.deepEqual(densestWindow([1900, 1904, 1905, 1907, 1908, 1920]), {
+      count: 5,
+      from: 1900,
+      to: 1908,
+    });
+    assert.equal(
+      densestWindow([1900, 1910, 1920]).count,
+      1,
+      'a window is 10 years, so 1900 and 1910 are apart'
+    );
+  });
+
+  it('scales the limit with the span, never under 3', () => {
+    assert.equal(bunchLimit(30, 189), 3);
+    assert.equal(bunchLimit(30, 70), 7);
+    assert.equal(bunchLimit(30, 5000), 3);
+  });
+
+  it('fails the first Sweet Tooth deck and passes the same count spread evenly', () => {
+    const sweet = [
+      1832, 1847, 1873, 1875, 1893, 1896, 1897, 1900, 1904, 1905, 1907, 1908, 1912, 1920, 1923,
+      1926, 1928, 1930, 1932, 1935, 1937, 1938, 1941, 1964, 1971, 1974, 1978, 1989, 2013, 2021,
+    ];
+    assert.equal(bunchingReport(sweet).ok, false);
+    const even = Array.from({ length: 30 }, (_, i) => 1832 + Math.round((i * 189) / 29));
+    assert.equal(bunchingReport(even).ok, true);
+  });
+
+  it('sends back a bunched spine, naming the window and the limit', () => {
+    const beats = Array.from({ length: 40 }, (_, i) => ({
+      year: i < 8 ? 1920 + i : 1000 + i * 12,
+      title: `Beat ${i}`,
+      description: 'Something sweet happened.',
+    }));
+    const problems = spineProblems({ beats });
+    assert.equal(problems.length, 1);
+    assert.match(problems[0], /^8 beats fall in 1920-1927; no 10-year window may hold more than 3/);
+  });
+});

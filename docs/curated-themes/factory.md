@@ -253,7 +253,7 @@ Seeing the whole list at once is what keeps themes from overlapping. Each new th
 1. **One plain idea.** The scope is one short sentence that players get from the name: "Prime Time: Yes if it is a TV show." No stacked qualifiers, carve-outs or date ranges. A line between neighbours goes in `boundary`, never in the scope.
 2. **Easy to fill.** There are 60+ well-known candidate events, so 30 famous ones in 30 different years come without hunting.
 3. **Not a seeded day.** Narrower than a plain category, country, macro-region or category + place pairing. A dynasty, movement or route inside one is fine.
-4. **Exactly 30 cards, each in a different year,** spread over a stretch long enough that events don't bunch. A subject that spans under about 30 years (one war, social media) can't work.
+4. **Exactly 30 cards, each in a different year,** spread over a stretch long enough that events don't bunch. A subject that spans under about 30 years (one war, social media) can't work. Since 2026-10-19 the spread is measured: see [Spread](#spread-the-bunching-gate).
 5. **Chosen blind.** Themes and their events never depend on what the catalogue holds. These decks are how new cards enter the game.
 6. **Distinct.** At most about 4 famous events are shared with any other theme, the existing ones included.
 7. **The name** is 20 characters or fewer.
@@ -297,7 +297,7 @@ Takes the first `queued` theme in `backlog.json` that has no branch on origin, s
 2. **Reconcile.** New agent `.claude/agents/deck-reconciler.md` (Sonnet, full read access).
    - Matches beats by year and name, the `english-civil-war-aftermath` trap.
    - **Reuses an existing card only when it names essentially the same event**: the same thing, in the same year. Everything else is written new per the `add-events` skill. The reconcile never adds a beat the spine didn't write, and never swaps a beat for a catalogue card because one is handy.
-   - Cuts the deck to **exactly 30 cards** against the gates in `scripts/theme-gap.js`: size 30, at least 5 band-0 footholds, no two cards in the same year. A failed gate is fixed from the spine's own spares, never from the catalogue.
+   - Cuts the deck to **exactly 30 cards** against the gates in `scripts/theme-gap.js`: size 30, at least 5 band-0 footholds, no two cards in the same year, and no bunching (below). A failed gate is fixed from the spine's own spares, never from the catalogue.
    - **Overlap gate:** at most 4 cards shared with any single earlier theme, checked by `theme-gap.js --overlap <id>`. The earlier themes are `publish-inputs.md`, merged factory decks (`factory/decks/*/deck.json`), decks still on their branches, and the live calendar, 42 themes today.
    - Writes `deck.json` (the 30), `new-events.json` (the new records) and `reconcile.json` (every beat's decision, and why for each reuse and cut). If the gates can't be met, it writes `skip.json` instead: the theme is marked `skipped`, and a small PR carries that to main.
 3. **Fact check.** New agent `.claude/agents/deck-fact-checker.md` (Sonnet, WebSearch).
@@ -317,6 +317,21 @@ Takes the first `queued` theme in `backlog.json` that has no branch on origin, s
 7. **Commit and push.** `status.js init` creates the state with every new slug `pending`, and the deck is `authored`.
 
 ---
+
+### Spread: the bunching gate
+
+**The first factory deck bunched.** Sweet Tooth (2026-10-19) passed every gate of the day with 5 cards in 1900-1909 and 18 of 30 in 1896-1941. Within a curated deck the other cards are the timeline, so four cards in five years is close to a coin flip, however famous each one is. The cause was the spine: of its 38 beats only one came before 1832, and the rest were mostly brand launches, which crowd the industrial era. The reconciler can only use the spine's own spares, so it couldn't have fixed it.
+
+**The measure** (`scripts/themes/bunching.js`) is the most cards any 10-year window holds.
+
+- The limit is 1.5 times the deck's own average per decade, and never under 3. So a subject that only exists for 70 years (television) may hold up to 7 a decade, and a 190-year one 3.
+- Sweet Tooth's first deck scored 5 against a limit of 3.
+
+**Where it's enforced:**
+
+- `spine-matches.js` rejects a bunched spine, and the spine writer gets two tries to fix it before the theme is skipped.
+- The spine writer is told to find the subject's whole span first, its earliest famous milestones included, and to share beats out by era length, not by how many famous events an era has.
+- `theme-gap.js --slugs` has a `bunching` gate, which the reconciler must pass. It cuts from the densest decade first.
 
 ## 5. Tasks C1–C3: Art, QC, upload, PR
 

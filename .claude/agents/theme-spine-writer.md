@@ -27,8 +27,7 @@ About **40 beats**, so the reconcile step has about 10 spares to swap in. Every 
   Nothing that the boundary gives to a neighbour;
 - is **famous**: something a curious adult may have heard of. Aim for at least 10 that almost
   everyone knows (fame 3), the cards that open the deck gently;
-- sits in a **different year from every other beat**, and the years spread across the whole
-  stretch the subject covers. Don't let a decade hold more than a handful;
+- sits in a **different year from every other beat**;
 - is **one moment**, a thing that happened in a year: a first, a founding, a launch, a discovery,
   a battle, a release. Not a trend, an era or a life;
 - is **dated by a search**. One quick search per beat; take the year the sources agree on. If
@@ -41,6 +40,18 @@ Never include:
 - anything whose point is an atrocity, or anything about live politics;
 - more than about 4 beats that obviously belong to another famous theme, such as the Moon
   landing in a theme that isn't about space.
+
+## Spread the beats: plan this before you search
+
+A deck is played as one timeline, so cards bunched in a few years are close to a coin flip, however famous each one is. The first deck the factory made, about sweet treats, came back with five beats in 1900-1909 and most of the rest in 1896-1941. Brand launches crowd the industrial era, and that is where a search for "famous X" lands first.
+
+1. **Find the subject's whole span first.** Where are its earliest famous milestones? Sweets go back to honey cakes, marzipan, baklava, gingerbread and Neapolitan ice cream long before any chocolate bar. Most subjects have a deep past; use it.
+2. **Plan the eras** the span runs through, and give each a share of the 40 beats in proportion to its length, not to how many famous events it has.
+3. **The rule the checker enforces:** no 10-year window may hold more than 1.5 times your average per decade, and never more than 3 if that average is under 2.
+   - Across 250 years, 40 beats is about 1.6 a decade, so the limit is 3.
+   - A subject that really only spans 70 years may hold up to 9.
+   - A spine that breaks the rule is sent back.
+4. **When an era is crowded, keep the most famous few and move on.** A dozen 1920s chocolate bars is a list, not a deck.
 
 ## Writing each beat
 

@@ -35,6 +35,7 @@
  */
 
 const { loadEarlierThemes, overlapReport } = require('./themes/earlier-themes');
+const { bunchingReport } = require('./themes/bunching');
 const {
   binLabel,
   buildIndex,
@@ -180,6 +181,12 @@ async function main() {
       [`band 0 ${bandCounts[0]}`, bandCounts[0] >= MIN_BAND_ZERO, `want ${MIN_BAND_ZERO}+`],
       [`same-year pairs ${sameYear.length}`, sameYear.length === 0, 'want 0'],
     ];
+    const bunch = bunchingReport(matched.map((e) => e.year));
+    gates.push([
+      `bunching ${bunch.densest.count} in ${bunch.densest.from}-${bunch.densest.to}`,
+      bunch.ok,
+      `want ${bunch.limit} or fewer in any 10 years`,
+    ]);
     let overlap = null;
     if (args.overlap) {
       const earlier = await loadEarlierThemes(args.overlap);

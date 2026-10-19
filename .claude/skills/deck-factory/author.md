@@ -35,7 +35,9 @@ report. The deck's events are chosen here, and only here.
 
 Then run `node scripts/factory/spine-matches.js --deck <id>`. It checks the spine and writes
 `D/matches.json`. If it rejects the spine (too few beats, two beats in one year, a date in a
-title), send the problems back to the same agent once to fix. Commit `D/spine.json` and
+title, beats bunched into one stretch), send the problems back to the same agent to fix, at most
+twice. For bunching, quote the checker's line: it names the crowded window and the limit. If the
+third spine still fails, skip the theme (step 3's skip path) with the reason. Commit `D/spine.json` and
 `D/matches.json`.
 
 ## 3. Reconcile → `D/deck.json`, `D/new-events.json`, `D/reconcile.json`
