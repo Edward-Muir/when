@@ -1,21 +1,26 @@
 {
   "deck": "sweet-tooth",
   "name": "Sweet Tooth",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:04:21.280Z",
+  "updated_at": "2026-10-19T20:31:14.287Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-19T20:04:21.280Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-19T20:31:14.287Z"
     }
   ],
   "slugs": {
     "cato-honey-cheesecake-recipe": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1f23776e0a71e9f274738a0f48cfb0d81b016b53b0f2d151e70ed2eb67698788",
+      "updated_at": "2026-10-19T20:31:14.287Z"
     },
     "indian-sugar-crystallisation": {
       "state": "pending",
