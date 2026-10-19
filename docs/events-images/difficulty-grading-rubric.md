@@ -54,12 +54,20 @@ Inferability is about _which era_, not _which year_. "This is clearly the Roman 
 
 ## Difficulty Matrix
 
+**Placement first (2026-10-19).** The game is placing a card on a timeline, so the label measures how hard a card is to _place_. A card whose text makes its era obvious is easy, however obscure the event. "Cato's Honey Cheesecake Recipe", which describes "a Roman statesman's farming handbook", goes at the ancient end of any timeline without the player ever having heard of it.
+
+So **high inferability is Easy whatever the recognition**. Medium inferability is one step easier than before at the low end, and a card whose text gives nothing away keeps its old grade.
+
 |                          | High Inferability | Medium Inferability | Low Inferability |
 | ------------------------ | ----------------- | ------------------- | ---------------- |
 | **High Recognition**     | Easy              | Easy                | Medium           |
 | **Medium Recognition**   | Easy              | Medium              | Hard             |
-| **Low Recognition**      | Medium            | Hard                | Very Hard        |
-| **Very Low Recognition** | Hard              | Very Hard           | Very Hard        |
+| **Low Recognition**      | Easy              | Medium              | Very Hard        |
+| **Very Low Recognition** | Easy              | Hard                | Very Hard        |
+
+"Very low" inferability (misleading, or no temporal context at all) uses the Low column.
+
+**Where this applies, so far.** The deck factory grades every new event with this grid: `scripts/factory/grade-deck.js` holds it in code, and the `deck-difficulty-grader` agent rates recognition and inferability blind to the year. The roughly 5,800 events graded before 2026-10-19 used the earlier grid, which gave High inferability Medium (low recognition) and Hard (very low). Re-grading them is a separate job, because labels feed how dailies are dealt (`difficultyScore.ts`, `deckBuilder.ts`). Until then, the two grids coexist.
 
 ## Contextual Clues That REDUCE Difficulty
 

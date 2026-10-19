@@ -68,6 +68,20 @@ that field in `D/new-events.json` to the suggested value. Leave `unsupported` on
 go in the PR. If a fix changed a year, re-run the theme-gap command from step 3, which must
 still pass.
 
+### Grade, blind → `D/grades.json` (skip if it exists)
+
+The reconciler knows each card's date, so its difficulty is only a placeholder. Now grade from
+what a player sees:
+
+1. `node scripts/factory/grade-deck.js --deck <id> --worklist` writes `D/grade-worklist.json`:
+   names, descriptions and categories, **no years**.
+2. Dispatch one `deck-difficulty-grader` agent with the worklist path and the output path
+   `factory/decks/<id>/grades.json`. Pass nothing else: no years, no spine.
+3. `node scripts/factory/grade-deck.js --deck <id> --apply` turns its ratings into each card's
+   difficulty with the placement-first grid, and writes them into `D/new-events.json`.
+4. If a difficulty changed, re-run the theme-gap command from step 3. Band 0 can move, and it
+   must still pass.
+
 Then append the new events to the catalogue:
 
 1. `node scripts/factory/add-deck-events.js --deck <id> --dry-run`, then without `--dry-run`.

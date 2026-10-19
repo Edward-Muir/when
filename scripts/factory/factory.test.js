@@ -821,3 +821,78 @@ describe('refreshing open deck PRs (main merged into the branch, never the rever
     );
   });
 });
+
+describe('placement-first difficulty', () => {
+  const { anchorsIn, difficultyFor } = require('./difficulty');
+  const { problemsWith } = require('./add-deck-events');
+  const cato = {
+    name: 'cato-honey-cheesecake',
+    friendly_name: "Cato's Honey Cheesecake Recipe",
+    year: -160,
+    category: 'craft',
+    description:
+      "A Roman statesman's farming handbook set down a baked cheese-and-flour cake finished with a coating of honey.",
+    difficulty: 'very-hard',
+  };
+
+  it('grades an obscure card whose text places its era as easy', () => {
+    assert.equal(difficultyFor('very-low', 'high'), 'easy');
+    assert.equal(difficultyFor('high', 'low'), 'medium');
+    assert.equal(difficultyFor('low', 'medium'), 'medium');
+    assert.equal(difficultyFor('very-low', 'very-low'), 'very-hard');
+    assert.throws(() => difficultyFor('famous', 'high'), /recognition must be/);
+  });
+
+  it('finds strong era anchors, but not Roman Catholic', () => {
+    assert.deepEqual(anchorsIn(cato), ['Roman']);
+    assert.deepEqual(anchorsIn({ description: 'The Roman Catholic church split.' }), []);
+    assert.deepEqual(
+      anchorsIn({ friendly_name: 'Viking Raid', description: 'A medieval monastery burned.' }),
+      ['Viking', 'medieval']
+    );
+  });
+
+  it('refuses a hard grade on a card whose text names an era anchor', () => {
+    const p = problemsWith(cato, new Set(['craft']), new Map(), 2026);
+    assert.ok(p.some((x) => /graded very-hard, but its text names Roman/.test(x)));
+    assert.ok(
+      !problemsWith({ ...cato, difficulty: 'easy' }, new Set(['craft']), new Map(), 2026).some(
+        (x) => /names Roman/.test(x)
+      )
+    );
+  });
+
+  it('grade-deck: a worklist without years, then the grid applied to the ratings', () => {
+    const decks = path.join(tmp(), 'decks');
+    fs.mkdirSync(path.join(decks, 'demo'), { recursive: true });
+    fs.writeFileSync(path.join(decks, 'demo', 'new-events.json'), JSON.stringify([cato]));
+    const run = (...args) =>
+      execFileSync(
+        process.execPath,
+        [path.join(__dirname, 'grade-deck.js'), '--deck', 'demo', ...args],
+        {
+          encoding: 'utf8',
+          env: { ...process.env, FACTORY_DECKS_DIR: decks },
+        }
+      );
+    run('--worklist');
+    const worklist = JSON.parse(
+      fs.readFileSync(path.join(decks, 'demo', 'grade-worklist.json'), 'utf8')
+    );
+    assert.equal(worklist[0].year, undefined, 'the grader never sees the year');
+    fs.writeFileSync(
+      path.join(decks, 'demo', 'grades.json'),
+      JSON.stringify({
+        'cato-honey-cheesecake': {
+          recognition: 'very-low',
+          inferability: 'high',
+          anchors: ['Roman'],
+          why: 'Roman',
+        },
+      })
+    );
+    assert.match(run('--apply'), /cato-honey-cheesecake: very-hard -> easy/);
+    const after = JSON.parse(fs.readFileSync(path.join(decks, 'demo', 'new-events.json'), 'utf8'));
+    assert.equal(after[0].difficulty, 'easy');
+  });
+});
