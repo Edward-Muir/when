@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T21:07:27.306Z",
+  "updated_at": "2026-10-19T21:12:53.066Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-19T21:07:27.306Z"
     },
     "fry-chocolate-easter-egg": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "11fc40bccc3844a756920c738fe4cad53ae3b0bc6467add796ed4924a0d36064",
+      "updated_at": "2026-10-19T21:12:53.066Z"
     },
     "cracker-jack-debuts": {
       "state": "pending",
