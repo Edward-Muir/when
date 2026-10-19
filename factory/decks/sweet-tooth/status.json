@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T23:16:46.247Z",
+  "updated_at": "2026-10-19T23:20:06.908Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-10-19T23:16:46.247Z"
     },
     "ben-jerrys-scoop-shop": {
-      "state": "pending",
+      "state": "needs-human",
       "attempts": 0,
-      "reason": null,
-      "sha256": null
+      "reason": "Gemini refused to depict a real person",
+      "sha256": null,
+      "updated_at": "2026-10-19T23:20:06.908Z"
     },
     "cronut-hits-new-york": {
       "state": "pending",
