@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T23:11:35.585Z",
+  "updated_at": "2026-10-19T23:14:13.492Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-19T23:11:35.585Z"
     },
     "cadbury-creme-egg-named": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a227def70c8d45ae201cd5d72420dec25bf0e637bec472450532d727ecb2343a",
+      "updated_at": "2026-10-19T23:14:13.492Z"
     },
     "kinder-surprise-launched": {
       "state": "pending",
