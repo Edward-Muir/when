@@ -135,6 +135,14 @@ Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The out
    - B: first a deck whose authoring crashed (a branch with no `status.json` yet), otherwise the next theme, but only while fewer than 2 decks are between authoring and `pr-open`.
 5. It checks out the deck branch, merges `origin/main` into it and pushes the merge, then runs `npm ci` only if `package-lock.json` has changed since the last install.
 
+**Keeping open PRs mergeable.** Main only ever flows **into** deck branches. A deck reaches main only when Edward merges its PR.
+
+- A deck at `pr-open` is never picked by a stage again. So without help, its branch stops taking in main. Once another deck's PR merges, it conflicts on GitHub, which can't run the merge driver below.
+- So **every run starts by refreshing the open deck PRs** (`refreshOpenDecks` in `start.js`). For each deck at `pr-open` whose PR GitHub reports as open and whose branch is behind main, it merges main in with the driver and pushes. That's GitHub's "Update branch", done with the driver.
+- A merge commit rather than a rebase: a rebase rewrites the branch, so it could only be pushed with a force-push, which is denied. The PR diff is the same either way, and Edward's squash-merge flattens it to one commit.
+- Updated PRs are reported as `refreshed_prs`. A real conflict is aborted and reported as `refresh_blocked`, for Edward to resolve.
+- Merged and closed PRs are left alone. Open deck PRs can be merged in any order.
+
 **A structural JSON merge driver keeps decks mergeable.** Every deck appends to the same files: `public/events/themes.json`, its detail sidecar and `year-range-decided.json`. A line merge calls two decks in flight a conflict even though nothing collides.
 
 - `scripts/factory/json-merge.js` merges by structure:
@@ -497,12 +505,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 2. **By hand first.** Click **Run now** on the one task, approving its permissions, until a deck has gone all the way through, following [the checklist below](#the-first-runs). Confirm that C1 stops at 10 images and that the next art run carries on.
 3. **Give the task its cron**, `5 * * * *` (hourly) or `5 */2 * * *` (section 2 has the pace of each). Production runs ahead of the calendar until there are about 6 weeks of buffer. D stays validate-only: publishing is Edward's.
 4. _(Folded into step 3: list health and scheduling run when due, from the same task.)_
-5. **Graduate to auto-merge when:**
-   - 10 decks in a row are merged with no edits;
-   - golden-set recall stays at 100%;
-   - card reports on factory decks stay at or below the catalogue's ~1.2%.
-
-   Then turn on GitHub auto-merge for factory PRs that pass every check, keep a daily digest, and keep a blind human spot check of about 5% of auto-approved images.
+5. **No auto-merge, ever** (Edward, 2026-10-19). Every factory PR is reviewed and merged by hand. Nothing in the factory merges into main or publishes a theme. `.claude/settings.json` denies `gh pr merge`, pushes to main and publish dispatches, and the skill forbids them. This replaces the first design's "graduate to auto-merge" step.
 
 ### The first runs
 

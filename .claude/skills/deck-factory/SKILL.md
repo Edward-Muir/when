@@ -50,6 +50,10 @@ preamble below.
      work). Reply with its `reason` in one line and stop. Don't commit anything.
    - `"action": "blocked"`: something needs Edward (a merge conflict, a failed sync). Reply with
      the reason and any `conflicted` files, and stop.
+   - Whatever the action, the JSON may also carry `refreshed_prs` (open deck PRs that were
+     brought up to date with main) and `refresh_blocked` (ones whose update conflicts, with the
+     files). Mention both in the report. A `refresh_blocked` needs Edward. Never merge a PR or push
+     to main to resolve it.
    - `"action": "run"`: carry on. Keep its `stage`, `token`, `deck` and `branch` for the rest
      of the run.
 3. Follow the file for that `stage`.

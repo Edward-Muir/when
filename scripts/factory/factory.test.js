@@ -712,3 +712,112 @@ describe('bunching', () => {
     assert.match(problems[0], /^8 beats fall in 1920-1927; no 10-year window may hold more than 3/);
   });
 });
+
+describe('refreshing open deck PRs (main merged into the branch, never the reverse)', () => {
+  const { refreshOpenDecks } = require('./start');
+  const sh = (cwd, ...args) =>
+    execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  const writeEvents = (dir, names) =>
+    fs.writeFileSync(
+      path.join(dir, 'events.json'),
+      JSON.stringify(
+        names.map((name) => ({ name, year: 1900 })),
+        null,
+        2
+      ) + '\n'
+    );
+
+  function setup() {
+    const root = tmp();
+    const origin = path.join(root, 'origin.git');
+    const clone = path.join(root, 'clone');
+    sh(root, 'init', '-q', '--bare', '-b', 'main', origin);
+    sh(root, 'clone', '-q', origin, clone);
+    sh(clone, 'config', 'user.email', 't@t');
+    sh(clone, 'config', 'user.name', 't');
+    sh(
+      clone,
+      'config',
+      'merge.factory-json.driver',
+      `node ${path.join(__dirname, 'json-merge.js')} %O %A %B %P`
+    );
+    fs.writeFileSync(path.join(clone, '.git', 'info', 'attributes'), '*.json merge=factory-json\n');
+    writeEvents(clone, ['base']);
+    sh(clone, 'add', '-A');
+    sh(clone, 'commit', '-qm', 'base');
+    sh(clone, 'push', '-q', 'origin', 'main');
+    // Three decks with PRs: one that appends a card, one with no open PR, one that edits `base`.
+    for (const [id, events] of [
+      ['x', ['base', 'x-card']],
+      ['y', ['base', 'y-card']],
+      ['z', ['base-edited-by-z']],
+    ]) {
+      sh(clone, 'checkout', '-q', '-b', `claude/deck-${id}`, 'main');
+      writeEvents(clone, events);
+      sh(clone, 'add', '-A');
+      sh(clone, 'commit', '-qm', id);
+      sh(clone, 'push', '-q', 'origin', `claude/deck-${id}`);
+    }
+    // Main moves on: another deck merged, appending its card and editing `base`.
+    sh(clone, 'checkout', '-q', 'main');
+    fs.writeFileSync(
+      path.join(clone, 'events.json'),
+      JSON.stringify(
+        [
+          { name: 'base', year: 1901 },
+          { name: 'merged-card', year: 1900 },
+        ],
+        null,
+        2
+      ) + '\n'
+    );
+    sh(clone, 'commit', '-qam', 'another deck merged');
+    sh(clone, 'push', '-q', 'origin', 'main');
+    sh(clone, 'fetch', '-q', 'origin');
+    return { origin, clone };
+  }
+
+  it('updates open PR branches from main, skips the rest, and reports a real conflict', () => {
+    const { clone } = setup();
+    const mainBefore = sh(clone, 'rev-parse', 'origin/main').trim();
+    const decks = ['x', 'y', 'z'].map((id) => ({ id, status: { stage: 'pr-open' } }));
+    const states = { 'claude/deck-x': 'OPEN', 'claude/deck-y': 'MERGED', 'claude/deck-z': 'OPEN' };
+    const result = refreshOpenDecks(decks, {
+      base: 'origin/main',
+      cwd: clone,
+      stateOf: (b) => states[b],
+    });
+
+    assert.deepEqual(result.refreshed, ['x']);
+    assert.deepEqual(
+      result.blocked.map((b) => b.deck),
+      ['z']
+    );
+    sh(clone, 'fetch', '-q', 'origin');
+    const x = JSON.parse(sh(clone, 'show', 'origin/claude/deck-x:events.json'));
+    assert.deepEqual(
+      x.map((e) => e.name),
+      ['base', 'x-card', 'merged-card'],
+      "x keeps its card and gains main's"
+    );
+    assert.equal(x[0].year, 1901, "main's edit to base came through");
+    sh(clone, 'merge-base', '--is-ancestor', 'origin/main', 'origin/claude/deck-x');
+    assert.equal(
+      sh(clone, 'rev-parse', 'origin/main').trim(),
+      mainBefore,
+      'main itself is untouched'
+    );
+    assert.throws(
+      () => sh(clone, 'merge-base', '--is-ancestor', 'origin/main', 'origin/claude/deck-y'),
+      'a merged PR is left alone'
+    );
+    assert.match(sh(clone, 'status', '-sb'), /HEAD \(no branch\)/, 'the clone ends back on main');
+
+    // A second run finds x already up to date.
+    assert.deepEqual(
+      refreshOpenDecks(decks, { base: 'origin/main', cwd: clone, stateOf: (b) => states[b] })
+        .refreshed,
+      []
+    );
+  });
+});
