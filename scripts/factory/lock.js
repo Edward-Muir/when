@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-const { LOCK_FILE, LOCK_STALE_MS } = require('./config');
+const { LOCK_FILE, LOCK_STALE_MS, RUN_LOG } = require('./config');
 
 function isAlive(pid) {
   if (!Number.isInteger(pid) || pid <= 0) return false;
@@ -101,13 +101,47 @@ function release({ token, force = false, file = LOCK_FILE } = {}) {
   return { ok: true };
 }
 
-/** Restart the clock on a held lock, for a long stage such as authoring. */
-function refresh({ token, file = LOCK_FILE, now = Date.now() } = {}) {
+/**
+ * Restart the clock on a held lock, for a long stage such as authoring. `stage` renames it:
+ * `start.js auto` takes the lock before it knows which stage it will run.
+ */
+function refresh({ token, stage, file = LOCK_FILE, now = Date.now() } = {}) {
   const existing = read(file);
   if (!existing || existing.token !== token) return { ok: false, holder: existing };
-  const lock = { ...existing, at: new Date(now).toISOString() };
+  const lock = { ...existing, ...(stage ? { stage } : {}), at: new Date(now).toISOString() };
   fs.writeFileSync(file, JSON.stringify(lock, null, 2) + '\n');
   return { ok: true, lock };
 }
 
-module.exports = { acquire, release, refresh, read, staleReason, isAlive, ownerPid };
+const OUTCOMES = ['ok', 'blocked', 'failed', 'quota'];
+
+/** `{stage: {at, outcome}}`: the last run of each stage, kept outside git beside the lock. */
+function readRunLog(file = RUN_LOG) {
+  try {
+    return JSON.parse(fs.readFileSync(file, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+function recordRun({ stage, outcome, file = RUN_LOG, now = Date.now() }) {
+  if (!OUTCOMES.includes(outcome)) throw new Error(`outcome must be one of ${OUTCOMES.join(', ')}`);
+  const log = readRunLog(file);
+  log[stage] = { at: new Date(now).toISOString(), outcome };
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.writeFileSync(file, JSON.stringify(log, null, 2) + '\n');
+  return log;
+}
+
+module.exports = {
+  OUTCOMES,
+  acquire,
+  release,
+  refresh,
+  read,
+  readRunLog,
+  recordRun,
+  staleReason,
+  isAlive,
+  ownerPid,
+};

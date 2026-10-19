@@ -2,14 +2,15 @@
 
 A set of scheduled tasks on Edward's laptop that turns out one finished curated deck per day as a pull request. Edward reviews and merges each one, and it gets scheduled. The aim is full automation once the factory has earned it.
 
-**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags), and the six tasks exist with no schedule. Merged to main on 2026-10-18 (#85 to #88). Still to do: set each task's folder, then the first Run now of each, following [the checklist](#the-first-run-now-of-each-stage). Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
+**Status: being built (October 2026).** Landed so far: the theme list (#84), the groundwork (CI on pull requests, the image scripts in `scripts/images/`, a shared `.claude/settings.json`), the state engine (`status.js`, `backlog.js`, `decks.js`, the lock, the `start.js` preamble and the JSON merge driver), the `when-factory` clone, the four agents, the `deck-factory` skill with one file per stage, and the remaining scripts. The QC calibration is done (62 of 63 caught, 1% false flags), and one scheduled task, with no schedule yet, runs every stage. Merged to main on 2026-10-18 (#85 to #88). Still to do: set the task's folder, then the first runs, following [the checklist](#the-first-runs). Everything else below is still the design. Build it in the order in section 8, and update this page as each piece lands.
 
 **Decisions of 2026-10-18 that changed the design** (each is written into the section it belongs to):
 
 1. The factory runs in a **dedicated clone, `when-factory`**, never in worktrees ([section 2](#the-clone)).
-2. The art stage drives Gemini through **Claude in Chrome**, not computer use ([C1](#c1-art-batch-hourly-claude-in-chrome-gemini-web-at-most-10-images-per-session)).
-3. Decks are **exactly 30 cards**, from a spine of about 40 beats ([section 4](#4-task-b-author-one-deck-daily)).
-4. The six tasks are created with **no schedule**, Run now only, and get their schedules during rollout ([section 8](#8-rollout-and-the-path-to-full-automation)).
+2. The art stage drives Gemini through **Claude in Chrome**, not computer use ([C1](#c1-art-batch-claude-in-chrome-gemini-web-at-most-10-images-per-session)).
+3. Decks are **exactly 30 cards**, from a spine of about 40 beats ([section 4](#4-task-b-author-one-deck)).
+4. The task is created with **no schedule**, Run now only, and gets its cron during rollout ([section 8](#8-rollout-and-the-path-to-full-automation)).
+5. **One task runs every stage**, and the state machine picks the stage (2026-10-19, replacing a task per stage; [section 2](#2-the-shape-one-local-task-and-a-state-machine)).
 
 ---
 
@@ -48,58 +49,57 @@ Today each curated theme is built by hand across several sessions:
 
 ---
 
-## 2. The shape: six local tasks and a state machine
+## 2. The shape: one local task and a state machine
 
-| Task                    | Schedule (when switched on)                          | Does                                                                                  | Leaves behind                                                              |
-| ----------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| _(once)_ **Theme list** | interactive session, repeated when the list runs low | builds the ordered list of about 200 themes, kept apart from each other               | `docs/curated-themes/backlog.json`                                         |
-| **A. List health**      | weekly, Sun 07:05                                    | themes left, calendar buffer and drift, skipped themes                                | a health report                                                            |
-| **B. Author**           | daily 06:05                                          | takes the next `queued` theme from the list and writes the deck, without images       | branch `claude/deck-<id>`, deck `stage=authored`, every new slug `pending` |
-| **C1. Art batch**       | hourly :05, 08:05 to 17:05                           | generates **at most 10 images**, then the session ends                                | those slugs `downloaded`                                                   |
-| **C2. QC**              | hourly :40, 08:40 to 17:40                           | pre-checks and Haiku QC on every `downloaded` slug                                    | each slug `qc-pass`, `qc-fail` (goes back to C1) or `needs-human`          |
-| **C3. Ship**            | daily 18:05                                          | once no slug is `pending`, `downloaded` or `qc-fail`: upload, wire, test, open the PR | deck `stage=pr-open`                                                       |
-| **D. Schedule**         | daily 19:05                                          | dispatches merged decks onto the calendar                                             | a theme on `/api/themes`                                                   |
+**One scheduled task runs the whole factory** (decided 2026-10-19). Each run does exactly one stage, and the state machine picks which. The six stages (named A to D in the first design, which had a task each) are:
 
-**Why art runs in batches of 10.** Sonnet loses track when it drives the browser for more than about 10 images in one session. So each art session handles at most 10 slugs, then ends.
+| Stage                   | Does                                                                                  | Leaves behind                                                              |
+| ----------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| _(once)_ **Theme list** | interactive session, repeated when the list runs low: builds the ordered list         | `docs/curated-themes/backlog.json`                                         |
+| **A. List health**      | themes left, calendar buffer and drift, skipped themes                                | a health report                                                            |
+| **B. Author**           | takes the next `queued` theme from the list and writes the deck, without images       | branch `claude/deck-<id>`, deck `stage=authored`, every new slug `pending` |
+| **C1. Art batch**       | generates **at most 10 images**, then the session ends                                | those slugs `downloaded`                                                   |
+| **C2. QC**              | pre-checks and Haiku QC on every `downloaded` slug                                    | each slug `qc-pass`, `qc-fail` (goes back to C1) or `needs-human`          |
+| **C3. Ship**            | once no slug is `pending`, `downloaded` or `qc-fail`: upload, wire, test, open the PR | deck `stage=pr-open`                                                       |
+| **D. Schedule**         | validates merged decks against the calendar                                           | a dispatch ready for Edward to publish                                     |
 
-- The next hourly run starts a fresh session with a clean context and takes the next 10 `pending` or `qc-fail` slugs.
-- A typical deck has about 25–30 new images, so it takes 3–4 art sessions plus a retry session. The deck is ready to ship the same afternoon.
-- Ten hourly slots is at most 100 images a day, the same as the Google AI Pro daily cap. So the schedule itself keeps the factory inside the quota.
-- QC is a separate task, so the art session's context holds only Gemini work. A QC failure flips the slug back to `qc-fail`, and the next art batch picks it up.
+**How a run picks its stage** (`pickStage` in `scripts/factory/start.js`). The first match wins:
 
-**How the tasks are set up** (Claude Desktop, Code tab, then Routines, New routine, **Local**):
+1. **list health**, when its last run is a week old;
+2. **schedule**, when a merged deck isn't on the calendar and it hasn't run today;
+3. **ship**, then **QC**, then an **art batch**: downstream first, so the deck in flight finishes before another starts;
+4. **author**, while fewer than 2 decks are between authoring and `pr-open`;
+5. otherwise the run exits at once, which costs almost nothing.
 
-- **Folder `when-factory`, Worktree off** for each task. The clone is what keeps runs away from Edward's working copy (see [The clone](#the-clone)).
-- **Created with no schedule**: each starts as Run now only, and gets its cron during rollout (section 8). The cron strings, in local time:
+Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The outcome goes to a run log, `../when-images/factory-runs.json`, outside git.
 
-  | Task | Cron            |
-  | ---- | --------------- |
-  | A    | `5 7 * * 0`     |
-  | B    | `5 6 * * *`     |
-  | C1   | `5 8-17 * * *`  |
-  | C2   | `40 8-17 * * *` |
-  | C3   | `5 18 * * *`    |
-  | D    | `5 19 * * *`    |
+- A stage whose last run ended `blocked` or `failed` is skipped for 6 hours, so one broken stage can't take every run. Chrome signed out is one example; a merge conflict is another, and `start.js` logs that one itself.
+- An art batch that hit Gemini's daily cap is skipped until the next local day.
+- Naming a stage forces it and ignores the backoff: "Run the deck-factory skill, stage: qc" in an ordinary session in the clone. That is for debugging and manual runs.
 
+**Why one task rather than six.** The state machine already knew what every deck needed, so a task per stage only encoded "which stage to try". That cost six folders to set by hand, six permission lists to approve and six schedules to stagger. Desktop also skips a run while another is running, which the lock handles anyway. One task needs one folder and one set of approvals. Each run is still a fresh session doing one stage, so art stays capped at 10 images a session, and QC never shares a context with the browser work.
+
+**Why art runs in batches of 10.** Sonnet loses track when it drives the browser for more than about 10 images in one session. So each art session handles at most 10 slugs, then ends. The next art run starts a fresh session with a clean context and takes the next 10 `pending` or `qc-fail` slugs. A QC failure flips the slug back to `qc-fail`, and the next art batch picks it up.
+
+**Pace and quota.** A deck takes about 9 runs: author 1, art 3-4, QC 3-4 (one after each batch), ship 1.
+
+- **Hourly, `5 * * * *` in local time, is the recommended cron:** about 14 waking runs a day, roughly a deck a day.
+- **Every 2 hours, `5 */2 * * *`,** gives about half a deck a day.
+- Art runs at most every other run, because QC follows each batch, and takes at most 10 images. So even hourly, a day stays under Google AI Pro's ~100 images, and a `quota` outcome stops art for the day if it doesn't.
+
+**How the task is set up** (Claude Desktop, Code tab, then Routines, **Local**):
+
+- **"Deck factory"**, id `deck-factory`, with the prompt "Run the deck-factory skill".
+- **Created with no schedule**: Run now only, until rollout (section 8) gives it a cron.
+- **Folder `when-factory`, Worktree off.** The clone is what keeps runs away from Edward's working copy (see [The clone](#the-clone)).
+  - The task-creation tool has no folder field, so the folder and the permission mode are set by hand in the task's Edit screen.
+  - Until the folder is set, a run starts in the wrong place, and `start.js` refuses it (exit 2).
 - **"Keep computer awake" on** in Settings.
-- **Created on 2026-10-18**, all manual only:
-
-  | Task                        | id                          | Prompt                                       |
-  | --------------------------- | --------------------------- | -------------------------------------------- |
-  | Deck factory A: list health | `deck-factory-a-health`     | Run the deck-factory skill, stage: health    |
-  | Deck factory B: author      | `deck-factory-b-author`     | Run the deck-factory skill, stage: author    |
-  | Deck factory C1: art batch  | `deck-factory-c1-art-batch` | Run the deck-factory skill, stage: art-batch |
-  | Deck factory C2: QC         | `deck-factory-c2-qc`        | Run the deck-factory skill, stage: qc        |
-  | Deck factory C3: ship       | `deck-factory-c3-ship`      | Run the deck-factory skill, stage: ship      |
-  | Deck factory D: schedule    | `deck-factory-d-schedule`   | Run the deck-factory skill, stage: schedule  |
-
-  The task-creation tool has no folder field, so **each task's folder is set by hand** in its Edit screen: `when-factory`, Worktree off. Each task's permission mode is set there too. Until the folder is set, a run starts in the wrong place, and `start.js` refuses it (exit 2).
-
-- **Permissions approved once:** the repo's `.claude/settings.json` allows the narrow set of commands the stages run, and denies force-pushes, pushes to `main`, `gh pr merge` and publish dispatches. Click **Run now** once and choose "always allow" for anything still prompting, so scheduled runs don't stall.
-  - The Desktop docs promise only that allow rules in `~/.claude/settings.json` apply to scheduled runs; they don't say whether a project's `.claude/settings.json` does. The first Run now of each task settles it. If the project rules aren't honoured, copy the allow and deny lists into the user settings.
+- **Permissions approved once:** the repo's `.claude/settings.json` allows the narrow set of commands the stages run, and denies force-pushes, pushes to `main`, `gh pr merge` and publish dispatches. Click **Run now** and choose "always allow" for anything still prompting; the approvals are stored on the task, so later runs don't stall.
+  - The Desktop docs promise only that allow rules in `~/.claude/settings.json` apply to scheduled runs; they don't say whether a project's `.claude/settings.json` does. The first runs settle it. If the project rules aren't honoured, copy the allow and deny lists into the user settings.
   - Bash rules match command text, and a rule must match every part of a chained command. So the stages run single commands, and the scripts do the multi-step work.
-- **Staggered start times:** Desktop skips a run while another scheduled task is still running, so the start times are hours apart.
-- **One-line prompts.** Each prompt is just "Run the deck-factory skill, stage: <name>". The logic lives in versioned files in the repo (`.claude/skills/deck-factory/`).
+- **A one-line prompt.** The logic lives in versioned files in the repo (`.claude/skills/deck-factory/`).
+  - A run reads `SKILL.md` from the clone as it stands when the run starts, before `start.js` syncs it. So a change to `SKILL.md` (or to `start.js`'s first phase) takes effect one run after it merges. The stage files are read after the sync, so they are always current. After merging a factory change, sync the clone by hand (`git checkout --detach origin/main` in `when-factory`) when it can't wait a run.
 
 **State lives on each deck branch** in `factory/decks/<id>/status.json`:
 
@@ -164,14 +164,14 @@ The factory runs in its own clone, `/Users/emuir/Documents/GitHub/Vibes/timeline
   3. Reset and clean, inside the clone only.
   4. `npm ci`, only if `package-lock.json` changed.
 - **The guard:** a stage refuses to run unless the working directory's basename is `when-factory`, so it can never reset Edward's `when` checkout.
-- **One global lock**, `../when-images/factory.lock` (PID plus timestamp, stale after 2 hours), because all six stages share one working tree. A second run that finds the lock held exits at once.
+- **One global lock**, `../when-images/factory.lock` (PID plus timestamp, stale after 2 hours), because every stage shares one working tree. A second run that finds the lock held exits at once.
 - **Paths:** `scripts/factory/config.js` (and `scripts/images/paths.py` for the Python scripts) resolve `WHEN_IMAGES_DIR` from the environment or `.env`, relative to the repo root, defaulting to `../when-images`.
 
 ---
 
 ## 3. The theme list: built once up front, then worked through
 
-Themes are not invented one at a time. One interactive session with Edward builds a **long, ordered list of about 200 themes** in `docs/curated-themes/backlog.json`. That is roughly six months of daily decks. Task B takes the next theme from the top each day.
+Themes are not invented one at a time. One interactive session with Edward builds a **long, ordered list of about 200 themes** in `docs/curated-themes/backlog.json`. That is roughly six months of daily decks. Task B takes the next theme from the top.
 
 Seeing the whole list at once is what keeps themes from overlapping. Each new theme is drawn against every theme already on the list, rather than against a memory of last week's.
 
@@ -270,7 +270,7 @@ The list keeps themes apart, but cards can still be shared: 59 slugs already app
 - **Gate: at most 4 cards shared with any single earlier theme.** Above that, the deck swaps in alternatives or drops to 30 cards.
 - If the gate can't be met, the theme is marked `skipped` with a reason, and the day falls back to the next theme on the list.
 
-### Task A: list health (weekly)
+### Task A: list health (weekly, when due)
 
 A light weekly check, not a generator:
 
@@ -285,7 +285,7 @@ A light weekly check, not a generator:
 
 ---
 
-## 4. Task B: Author one deck (daily)
+## 4. Task B: Author one deck
 
 Takes the first `queued` theme in `backlog.json` that has no branch on origin, sets it to `authoring`, and runs the Bank 2 method. It waits instead while 2 decks are already between authoring and `pr-open`. The steps are `.claude/skills/deck-factory/author.md`. Each step ends in a file in `factory/decks/<id>/`, and a re-run skips any step whose file exists. The spine agent gets the theme's scope rule, boundary line and any `notes`, so it stays inside its lane and follows Edward's instructions for that deck. The blind step is enforced by which tools each agent gets, not by asking nicely.
 
@@ -320,7 +320,7 @@ Takes the first `queued` theme in `backlog.json` that has no branch on origin, s
 
 ## 5. Tasks C1–C3: Art, QC, upload, PR
 
-### C1. Art batch (hourly, Claude in Chrome, Gemini web, at most 10 images per session)
+### C1. Art batch (Claude in Chrome, Gemini web, at most 10 images per session)
 
 **At the start of a session:**
 
@@ -344,7 +344,7 @@ This fixes the swap bug at its source:
 - **Zero or two new files means retry that slug** (exit 4 or 5, and nothing moved). It never guesses.
 - **Quota:** a deck needs about 25–30 new images plus retries, well inside Google AI Pro's ~100 images a day. Ten hourly sessions of 10 images can't go over it.
 
-### C2. QC (hourly at :40, its own session, no browser)
+### C2. QC (its own session, no browser)
 
 Picks up every slug in `downloaded`, whichever art batch produced it. Each slug then becomes `qc-pass`, `qc-fail` or `needs-human`.
 
@@ -417,7 +417,7 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 - **Cost:** a Haiku review is about 70k tokens, mostly fixed overhead, and a deck of 30 needs about 30 plus a handful of Sonnet rechecks.
 - The run used `general-purpose` agents with the `card-art-qc` prompt and model, because a new agent type registers only in a fresh session. A scheduled run uses the agent itself.
 
-### C3. Ship (daily 18:05): upload, wire, open the PR
+### C3. Ship: upload, wire, open the PR
 
 Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Otherwise it exits. The steps are `.claude/skills/deck-factory/ship.md`, and every one is safe to repeat.
 
@@ -448,7 +448,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 
 ---
 
-## 6. Task D: Schedule merged decks (daily)
+## 6. Task D: Schedule merged decks (at most daily)
 
 - **Scheduling stays a workflow dispatch, never a commit** (a CLAUDE.md rule).
 - **A merged deck** is one whose `factory/decks/<id>/deck.json` is on main. It is pending until its id is on `/api/themes`, so D needs no state of its own.
@@ -479,9 +479,9 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 ## 8. Rollout and the path to full automation
 
 1. **QC first.** Build the agent, collector and golden set. This is also useful for re-auditing the whole catalogue.
-2. **Each stage by hand.** Run them with **Run now**, approving each task's permissions, following [the checklist below](#the-first-run-now-of-each-stage). Confirm that C1 stops at 10 images and that the next run carries on.
-3. **Turn on B daily, C1/C2 hourly in the daytime, and C3 daily.** Hourly schedules within a time window are set by asking Claude in a Desktop session, because the preset picker only offers plain Hourly. Production runs ahead of the calendar until there are about 6 weeks of buffer.
-4. **Turn on A (list health) weekly and D daily** (D in prepare-only mode at first).
+2. **By hand first.** Click **Run now** on the one task, approving its permissions, until a deck has gone all the way through, following [the checklist below](#the-first-runs). Confirm that C1 stops at 10 images and that the next art run carries on.
+3. **Give the task its cron**, `5 * * * *` (hourly) or `5 */2 * * *` (section 2 has the pace of each). Production runs ahead of the calendar until there are about 6 weeks of buffer. D stays validate-only: publishing is Edward's.
+4. _(Folded into step 3: list health and scheduling run when due, from the same task.)_
 5. **Graduate to auto-merge when:**
    - 10 decks in a row are merged with no edits;
    - golden-set recall stays at 100%;
@@ -489,38 +489,41 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 
    Then turn on GitHub auto-merge for factory PRs that pass every check, keep a daily digest, and keep a blind human spot check of about 5% of auto-approved images.
 
-### The first Run now of each stage
+### The first runs
 
-A checklist for the first manual run of each task. Do them in this order, because each stage feeds the next. The first deck is a real one: Sweet Tooth, the top of the list. A deck made only for testing would mean uploading throwaway art to Cloudinary and then deleting it. Its PR is reviewed like any other.
+A checklist for the first manual runs of the one task. Each Run now does one stage, the one the state machine picks, and its reply says which. The first deck is a real one: Sweet Tooth, the top of the list. A deck made only for testing would mean uploading throwaway art to Cloudinary and then deleting it. Its PR is reviewed like any other.
 
 **Once, before any run:**
 
-1. In Claude Desktop, open each of the six "Deck factory" tasks in Scheduled and click Edit:
+1. In Claude Desktop, open the **Deck factory** task in Scheduled and click Edit:
    - Folder `…/timeline/when-factory`;
    - **Worktree off**;
-   - permission mode **Ask**, so the first run's approvals are stored on the task.
+   - permission mode **Ask**, so the first runs' approvals are stored on the task.
 
    Open the folder once in a normal session and accept the workspace-trust prompt. A project's `.claude/settings.json` applies only to a trusted folder.
 
 2. Chrome is signed in to Google, the Claude in Chrome extension is connected, and Gemini offers Pro.
 3. "Keep computer awake" is on.
 
-**Then, one task at a time.** Click Run now, approve each prompt with "always allow", and check:
+**Then click Run now, one run at a time.** Approve each prompt with "always allow", and check what the stage it took leaves. On a fresh factory the runs come in this order:
 
-| #   | Task               | What a good run leaves                                                                                                                                                                                                                                           |
+| #   | Stage `auto` takes | What a good run leaves                                                                                                                                                                                                                                           |
 | --- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | A: list health     | A report in the run, and `../when-images/factory-reports/health-<date>.md`. Nothing committed.                                                                                                                                                                   |
-| 2   | D: schedule        | "No merged deck is pending", and an exit. No factory deck has merged yet.                                                                                                                                                                                        |
-| 3   | B: author          | Branch `claude/deck-sweet-tooth` on origin, and `node scripts/factory/decks.js` in the clone shows `sweet-tooth: authored`. Read `spine.json`, `deck.json` and `fact-check.json` in `factory/decks/sweet-tooth/`. This is the long one: allow a couple of hours. |
-| 4   | C1: art batch      | At most 10 images in `../when-images/inbox/sweet-tooth/`, one `downloaded` commit each, and the session stops at 10. Run it again: it takes the next 10. After the first batch, check that each file's `shasum -a 256` matches its line in `manifest.jsonl`.     |
-| 5   | C2: QC             | `qc/<slug>.json` for every downloaded slug, `qc/summary.json`, and each slug `qc-pass`, `qc-fail` or `needs-human`.                                                                                                                                              |
-| 6   | C1 and C2 again    | Until `node scripts/factory/status.js summary --deck sweet-tooth` says `ready-to-ship`.                                                                                                                                                                          |
-| 7   | C3: ship           | `uploads.json` with every asset verified, a green `--verify-urls`, and a PR titled "chore(events): add the Sweet Tooth curated deck" whose CI passes.                                                                                                            |
-| 8   | D, after the merge | A validate run for Sweet Tooth's date, and the exact publish command. Publishing is Edward's to run.                                                                                                                                                             |
+| 1   | A: list health     | A report in the run, and `../when-images/factory-reports/health-<date>.md`. Nothing committed. It has never run, so it goes first.                                                                                                                               |
+| 2   | B: author          | Branch `claude/deck-sweet-tooth` on origin, and `node scripts/factory/decks.js` in the clone shows `sweet-tooth: authored`. Read `spine.json`, `deck.json` and `fact-check.json` in `factory/decks/sweet-tooth/`. This is the long one: allow a couple of hours. |
+| 3   | C1: art batch      | At most 10 images in `../when-images/inbox/sweet-tooth/`, one `downloaded` commit each, and the session stops at 10. Then check that each file's `shasum -a 256` matches its line in `manifest.jsonl`.                                                           |
+| 4   | C2: QC             | `qc/<slug>.json` for every downloaded slug, `qc/summary.json`, and each slug `qc-pass`, `qc-fail` or `needs-human`. QC comes before the next art batch, since it is further downstream.                                                                          |
+| 5   | C1, C2, C1, C2 …   | Until `node scripts/factory/status.js summary --deck sweet-tooth` says `ready-to-ship`.                                                                                                                                                                          |
+| 6   | C3: ship           | `uploads.json` with every asset verified, a green `--verify-urls`, and a PR titled "chore(events): add the Sweet Tooth curated deck" whose CI passes.                                                                                                            |
+| 7   | B: author, again   | The next theme on the list. A PR waiting for review doesn't hold the factory up: only decks between authoring and `pr-open` count towards the cap of 2.                                                                                                          |
+| 8   | D: schedule        | Once the PR has merged: a validate run for Sweet Tooth's date, and the exact publish command. Publishing is Edward's to run.                                                                                                                                     |
+
+`../when-images/factory-runs.json` shows each stage's last run and outcome. To force a stage, run "Run the deck-factory skill, stage: <name>" in an ordinary session in the clone.
 
 **Resilience, once C1 has run cleanly** (the checks in section 10):
 
-- Run C1 twice at once: the second must exit with "locked by art-batch".
+- Click Run now while an art batch is running: the second run must exit with "locked by art-batch".
+- Force a stage to fail (sign Chrome out before an art run): it must end `blocked`, and the next runs must skip art for 6 hours while QC and ship carry on.
 - Stop C3 partway through, then run it again: it must resume from `status.json`, skipping the uploads already verified.
 
 **Things the first runs settle:**

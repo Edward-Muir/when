@@ -156,4 +156,11 @@ async function main() {
 
 if (require.main === module) run(main);
 
-module.exports = { report, slots, opensAt, weekday };
+/** Merged decks whose id isn't on the calendar yet: the schedule stage's work. */
+async function pendingDecks() {
+  const cal = await calendar();
+  const onCalendar = new Set((cal.themes || []).map((t) => t.id));
+  return mergedDecks().filter((d) => !onCalendar.has(d.id));
+}
+
+module.exports = { mergedDecks, opensAt, pendingDecks, report, slots, weekday };

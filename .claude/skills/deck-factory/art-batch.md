@@ -114,8 +114,8 @@ click it and choose Pro.
   the run, and report that Chrome is signed out of Google, so Edward needs to sign in.
 - **Three full recoveries fail on one slug:** leave it as it is (it stays in the queue) and go
   on to the next.
-- **"I can't create more images for you today":** stop the whole session. The quota resets
-  tomorrow.
+- **"I can't create more images for you today":** stop the whole session, and unlock with
+  `--outcome quota`, so no art batch runs again until tomorrow, when the quota resets.
 
 ## When to stop
 

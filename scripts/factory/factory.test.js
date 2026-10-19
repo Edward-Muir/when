@@ -551,3 +551,119 @@ describe('next-slot', () => {
     assert.equal(open.find((s) => s.date === '2026-10-26').holder, 'x');
   });
 });
+
+describe('auto: one task, the state machine picks the stage', () => {
+  const { pickStage } = require('./start');
+  const { BACKOFF_MS, HEALTH_EVERY_MS } = require('./config');
+  const now = Date.parse('2026-10-19T15:00:00Z');
+  const ago = (ms) => new Date(now - ms).toISOString();
+  const ran = (outcome = 'ok', ms = 60000) => ({ at: ago(ms), outcome });
+  const deck = (id, stage, states = []) => ({
+    id,
+    status: stage && {
+      stage,
+      slugs: Object.fromEntries(states.map((s, i) => [`${id}-${i}`, { state: s }])),
+    },
+    backlogStatus: 'authoring',
+  });
+  const healthy = { health: ran(), schedule: ran() };
+  const next = { id: 'sweet-tooth' };
+
+  it('runs list health first when it has never run, or is a week old', () => {
+    assert.equal(pickStage({ decks: [], next, now }).stage, 'health');
+    assert.equal(
+      pickStage({ decks: [], next, now, runLog: { health: ran('ok', HEALTH_EVERY_MS) } }).stage,
+      'health'
+    );
+    assert.equal(pickStage({ decks: [], next, now, runLog: healthy }).stage, 'author');
+  });
+
+  it('schedules at most once a day, and only with a merged deck pending', () => {
+    const log = { health: ran() };
+    assert.equal(pickStage({ decks: [], next, now, runLog: log, pending: 1 }).stage, 'schedule');
+    assert.equal(pickStage({ decks: [], next, now, runLog: log, pending: 0 }).stage, 'author');
+    assert.equal(
+      pickStage({
+        decks: [],
+        next,
+        now,
+        runLog: { ...log, schedule: ran('ok', 3600000) },
+        pending: 1,
+      }).stage,
+      'author'
+    );
+  });
+
+  it('finishes the deck in flight before starting another: ship, then qc, then art', () => {
+    const decks = [
+      deck('a', 'art-in-progress', ['pending', 'downloaded']),
+      deck('b', 'ready-to-ship', ['qc-pass']),
+    ];
+    assert.deepEqual(
+      [pickStage({ decks, next, now, runLog: healthy })].map((p) => [p.stage, p.deck]),
+      [['ship', 'b']]
+    );
+    assert.equal(pickStage({ decks: decks.slice(0, 1), next, now, runLog: healthy }).stage, 'qc');
+    assert.equal(
+      pickStage({ decks: [deck('a', 'authored', ['pending'])], next, now, runLog: healthy }).stage,
+      'art-batch'
+    );
+  });
+
+  it('backs off a stage that ended blocked or failed, and art that hit the quota until tomorrow', () => {
+    const decks = [deck('a', 'authored', ['pending'])];
+    const blocked = { ...healthy, 'art-batch': ran('blocked', BACKOFF_MS - 60000) };
+    assert.equal(
+      pickStage({ decks, next, now, runLog: blocked }).stage,
+      'author',
+      'art waits, the rest carry on'
+    );
+    const later = { ...healthy, 'art-batch': ran('failed', BACKOFF_MS + 60000) };
+    assert.equal(pickStage({ decks, next, now, runLog: later }).stage, 'art-batch');
+    const quota = { ...healthy, 'art-batch': ran('quota', 60000) };
+    assert.equal(pickStage({ decks, next, now, runLog: quota }).stage, 'author');
+    const yesterday = { ...healthy, 'art-batch': ran('quota', 26 * 3600000) };
+    assert.equal(pickStage({ decks, next, now, runLog: yesterday }).stage, 'art-batch');
+  });
+
+  it('exits when nothing has work, naming what is waiting', () => {
+    const full = [
+      deck('a', 'pr-open'),
+      deck('b', 'authored', ['pending']),
+      deck('c', 'uploaded', []),
+    ];
+    const log = { ...healthy, 'art-batch': ran('quota'), ship: ran('blocked') };
+    const pick = pickStage({ decks: full, next, now, runLog: log });
+    assert.match(
+      pick.exit,
+      /^nothing to do; waiting: ship .*art-batch \(image quota used up today\)/
+    );
+    assert.match(
+      pickStage({ decks: [], next: null, now, runLog: healthy }).exit,
+      /^nothing to do$/
+    );
+  });
+
+  it('unlock --outcome records the run against the stage the lock names', () => {
+    const dir = tmp();
+    const env = {
+      ...process.env,
+      FACTORY_LOCK_FILE: path.join(dir, 'factory.lock'),
+      FACTORY_RUN_LOG: path.join(dir, 'runs.json'),
+    };
+    const run = (...args) =>
+      execFileSync(process.execPath, [path.join(__dirname, 'status.js'), ...args], {
+        encoding: 'utf8',
+        env,
+        stdio: 'pipe',
+      });
+    const token = run('lock', '--stage', 'auto').trim().split(' ').pop();
+    run('refresh', '--token', token);
+    lock.refresh({ token, stage: 'qc', file: env.FACTORY_LOCK_FILE });
+    assert.throws(() => run('unlock', '--token', token, '--outcome', 'meh'), /must be one of/);
+    assert.ok(fs.existsSync(env.FACTORY_LOCK_FILE), 'a bad outcome leaves the lock held');
+    assert.match(run('unlock', '--token', token, '--outcome', 'blocked'), /qc recorded as blocked/);
+    const log = JSON.parse(fs.readFileSync(env.FACTORY_RUN_LOG, 'utf8'));
+    assert.equal(log.qc.outcome, 'blocked');
+  });
+});
