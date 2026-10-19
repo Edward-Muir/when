@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:51:54.264Z",
+  "updated_at": "2026-10-19T20:54:26.188Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-19T20:51:54.264Z"
     },
     "cadbury-chocolate-box": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c46fc9bd8dea4b849af684b62b90c06f56ae4fc866a4ed20d000326b1fe929fa",
+      "updated_at": "2026-10-19T20:54:26.188Z"
     },
     "fry-chocolate-easter-egg": {
       "state": "pending",
