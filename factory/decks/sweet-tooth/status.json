@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T23:08:59.705Z",
+  "updated_at": "2026-10-19T23:11:35.585Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-19T23:08:59.705Z"
     },
     "nutella-launched": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a736fd1f9309b9add40360b08533fb3eab312079cbc6b8c41d2a8b34a7305605",
+      "updated_at": "2026-10-19T23:11:35.585Z"
     },
     "cadbury-creme-egg-named": {
       "state": "pending",
