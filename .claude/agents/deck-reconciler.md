@@ -54,10 +54,12 @@ beat, the catalogue cards within a year of it, or whose evidence window covers i
    - size 30;
    - band 0 at least 5 (the easy footholds that open the deck);
    - no two cards in the same year, reused cards included;
+   - **no bunching:** no 10-year window holds more than the limit theme-gap prints. It is 1.5 times the deck's average per decade, and at least 3;
    - at most 4 cards shared with any single earlier theme.
 
-   Cut first what is weakest on the scope rule, then what crowds another card within a few
-   years, then the least famous. To raise band 0, swap in a fame-3 spare. To fix overlap, drop a
+   Cut first what is weakest on the scope rule, then from the **densest decade** (crowding is
+   what makes a deck a coin flip), then the least famous. When choosing between two spares, take
+   the one that fills the emptier stretch of the timeline. To raise band 0, swap in a fame-3 spare. To fix overlap, drop a
    shared card for a spare.
 
 6. **If the gates can't be met from the spine**, don't force it: write the skip file (below)

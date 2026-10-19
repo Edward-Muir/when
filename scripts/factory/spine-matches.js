@@ -13,8 +13,10 @@
  * script, decides whether a candidate names essentially the same event.
  *
  * It checks the spine first and refuses one the reconciler couldn't cut to 30: fewer than
- * MIN_BEATS beats, two beats in one year, a title over 35 characters, or a date in a title or
- * description.
+ * MIN_BEATS beats, two beats in one year, a title over 35 characters, a date in a title or
+ * description, or beats bunched into one stretch (scripts/themes/bunching.js). Bunching has to be
+ * caught here: the reconciler may only use the spine's own spares, so a bunched spine can only
+ * ever give a bunched deck.
  */
 
 const fs = require('fs');
@@ -23,6 +25,7 @@ const path = require('path');
 const { DECKS_DIR } = require('./config');
 const { loadEligibleEvents } = require('../themes/catalogue');
 const { eventDateClues } = require('../events/date-clues');
+const { bunchingReport } = require('../themes/bunching');
 const { parseArgs, readJson, run, writeJson } = require('./cli');
 
 /** About 40 are asked for; 34 still leaves the reconciler a few spares above 30. */
@@ -47,6 +50,14 @@ function spineProblems(spine) {
     });
     if (clues.length) p.push(`${label}: states a date (${clues.map((c) => c.match).join(', ')})`);
   });
+  const bunch = bunchingReport(beats.map((b) => b.year).filter(Number.isInteger));
+  if (!bunch.ok) {
+    p.push(
+      `${bunch.densest.count} beats fall in ${bunch.densest.from}-${bunch.densest.to}; ` +
+        `no 10-year window may hold more than ${bunch.limit} across a ${bunch.span}-year span. ` +
+        'Spread the beats wider, and reach further back if the subject has earlier history'
+    );
+  }
   return p;
 }
 
