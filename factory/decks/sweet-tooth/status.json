@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:33:56.893Z",
+  "updated_at": "2026-10-19T20:36:30.791Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-19T20:33:56.893Z"
     },
     "gingerbread-reaches-europe": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "556273d1813d3d842bc7605400d6b346ec103653a9b095d4c78cb67d3c3886b6",
+      "updated_at": "2026-10-19T20:36:30.791Z"
     },
     "nuremberg-lebkuchen-recorded": {
       "state": "pending",
