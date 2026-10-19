@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:41:38.435Z",
+  "updated_at": "2026-10-19T20:44:14.174Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-19T20:41:38.435Z"
     },
     "cafe-procope-gelato": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5517fcbb1d5c7a20d3d93de6fd69030ecf092b77c0aa2ad31979a7880a95e5e5",
+      "updated_at": "2026-10-19T20:44:14.174Z"
     },
     "bakers-chocolate-founded": {
       "state": "pending",
