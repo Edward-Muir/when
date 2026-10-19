@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T21:28:54.328Z",
+  "updated_at": "2026-10-19T21:31:34.092Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-19T21:28:54.328Z"
     },
     "pavlova-created": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a7be3de4e9d1602fff03a07eea3fcd23785ae6904387ae2c357a6773c6636a9b",
+      "updated_at": "2026-10-19T21:31:34.092Z"
     },
     "mars-bar-launched": {
       "state": "pending",
