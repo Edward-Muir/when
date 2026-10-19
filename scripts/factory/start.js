@@ -28,6 +28,8 @@
  *   7. Check out claude/deck-<id> from origin, or branch it off origin/main for a new deck, and
  *      merge origin/main into an existing one so the deck stays mergeable and runs current code.
  *   8. `npm ci`, only if package-lock.json changed since the last install.
+ * Before picking, every run also brings each open deck PR's branch up to date with main
+ * (refreshOpenDecks), reported as `refreshed_prs` / `refresh_blocked`.
  */
 
 const crypto = require('crypto');
@@ -60,6 +62,74 @@ const BASE = process.env.FACTORY_BASE_REF || 'origin/main';
 
 function git(args, opts = {}) {
   return execFileSync('git', args, { cwd: REPO_ROOT, encoding: 'utf8', ...opts });
+}
+
+/**
+ * Check out a deck branch from origin and merge `base` into it with the JSON merge driver,
+ * pushing the merge commit if there was one. **Main is only ever merged into a deck branch,
+ * never the other way:** a deck reaches main only when Edward merges its PR by hand.
+ * Returns {merged} or {conflicted: [files]}, leaving the branch checked out (or the merge aborted).
+ */
+function mergeBaseInto(branch, { base = BASE, cwd = REPO_ROOT } = {}) {
+  const g = (args, opts = {}) => execFileSync('git', args, { cwd, encoding: 'utf8', ...opts });
+  g(['checkout', '-B', branch, `origin/${branch}`], { stdio: 'ignore' });
+  const before = g(['rev-parse', 'HEAD']).trim();
+  try {
+    g(['merge', '--no-edit', base], { stdio: ['ignore', 'ignore', 'pipe'] });
+  } catch {
+    const conflicted = g(['diff', '--name-only', '--diff-filter=U'])
+      .trim()
+      .split('\n')
+      .filter(Boolean);
+    g(['merge', '--abort'], { stdio: 'ignore' });
+    return { conflicted };
+  }
+  const merged = g(['rev-parse', 'HEAD']).trim() !== before;
+  if (merged) g(['push', 'origin', branch], { stdio: 'ignore' });
+  return { merged };
+}
+
+/** The GitHub state of a branch's PR (OPEN, MERGED, CLOSED), or null if there is none or gh fails. */
+function prState(branch, cwd = REPO_ROOT) {
+  try {
+    return execFileSync('gh', ['pr', 'view', branch, '--json', 'state', '-q', '.state'], {
+      cwd,
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Keep every open deck PR up to date with main, at the start of every run (factory.md,
+ * "Keeping open PRs mergeable"). A deck at pr-open is never picked by a stage again, so without
+ * this its branch would stop taking in main, and after another deck merged its PR would conflict
+ * on GitHub, which can't run the JSON merge driver. This is GitHub's "Update branch", done with
+ * the driver: main is merged into the PR's branch, and the PR itself is left for Edward.
+ * Returns {refreshed: [ids], blocked: [{deck, conflicted}]}; the clone ends back on `base`.
+ */
+function refreshOpenDecks(decks, { base = BASE, cwd = REPO_ROOT, stateOf = prState } = {}) {
+  const g = (args, opts = {}) => execFileSync('git', args, { cwd, encoding: 'utf8', ...opts });
+  const refreshed = [];
+  const blocked = [];
+  for (const deck of decks) {
+    if (!deck.status || deck.status.stage !== 'pr-open') continue;
+    const branch = `${DECK_BRANCH_PREFIX}${deck.id}`;
+    if (stateOf(branch, cwd) !== 'OPEN') continue;
+    try {
+      g(['merge-base', '--is-ancestor', base, `origin/${branch}`], { stdio: 'ignore' });
+      continue; // already contains main
+    } catch {
+      // behind main: bring it up to date
+    }
+    const result = mergeBaseInto(branch, { base, cwd });
+    if (result.conflicted) blocked.push({ deck: deck.id, conflicted: result.conflicted });
+    else if (result.merged) refreshed.push(deck.id);
+  }
+  g(['checkout', '--force', '--detach', base], { stdio: 'ignore' });
+  return { refreshed, blocked };
 }
 
 function emit(result) {
@@ -240,7 +310,10 @@ function phase1(stage) {
 
 async function phase2(requested, token) {
   let stage = requested;
+  let refresh = { refreshed: [], blocked: [] };
   const finish = (result) => {
+    if (refresh.refreshed.length) result.refreshed_prs = refresh.refreshed;
+    if (refresh.blocked.length) result.refresh_blocked = refresh.blocked;
     if (result.action !== 'run') lock.release({ token });
     // A stage that can't even start is backed off like one that failed, or every auto run
     // would pick it again.
@@ -254,6 +327,7 @@ async function phase2(requested, token) {
     const { listDecks } = require('./decks');
     const backlog = require('./backlog');
     const decks = listDecks();
+    refresh = refreshOpenDecks(decks);
     const doc = JSON.parse(fs.readFileSync(config.BACKLOG_FILE, 'utf8'));
     const next = backlog.nextTheme(doc.themes, backlog.inFlightIds());
 
@@ -298,26 +372,15 @@ async function phase2(requested, token) {
     if (pick.isNew) {
       git(['checkout', '-B', branch, BASE], { stdio: 'ignore' });
     } else {
-      git(['checkout', '-B', branch, `origin/${branch}`], { stdio: 'ignore' });
-      const before = git(['rev-parse', 'HEAD']).trim();
-      try {
-        git(['merge', '--no-edit', BASE], { stdio: ['ignore', 'ignore', 'pipe'] });
-      } catch (error) {
-        const conflicted = git(['diff', '--name-only', '--diff-filter=U'])
-          .trim()
-          .split('\n')
-          .filter(Boolean);
-        git(['merge', '--abort'], { stdio: 'ignore' });
+      const result = mergeBaseInto(branch);
+      if (result.conflicted) {
         finish({
           action: 'blocked',
           reason: `merging ${BASE} into ${branch} conflicts`,
           deck: pick.deck,
-          conflicted,
+          conflicted: result.conflicted,
         });
         return;
-      }
-      if (git(['rev-parse', 'HEAD']).trim() !== before) {
-        git(['push', 'origin', branch], { stdio: 'ignore' });
       }
     }
     const installed = npmCiIfNeeded();
@@ -350,4 +413,14 @@ if (require.main === module) {
   else phase1(stage);
 }
 
-module.exports = { AUTO_ORDER, backoffReason, guardProblem, hasWork, pickDeck, pickStage, STAGES };
+module.exports = {
+  AUTO_ORDER,
+  backoffReason,
+  guardProblem,
+  hasWork,
+  mergeBaseInto,
+  pickDeck,
+  pickStage,
+  refreshOpenDecks,
+  STAGES,
+};
