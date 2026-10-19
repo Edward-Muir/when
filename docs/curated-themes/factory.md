@@ -326,6 +326,24 @@ Takes the first `queued` theme in `backlog.json` that has no branch on origin, s
 
 ---
 
+### Difficulty: graded blind, placement first
+
+**The rebuilt Sweet Tooth (2026-10-19) graded its earliest cards very hard,** "Cato's Honey Cheesecake Recipe" among them, although the card says "a Roman statesman". The game is placing cards, and that text places the card at the ancient end of any timeline. The reconciler had graded what it knew (that few people know the recipe), not what a player sees.
+
+**Two changes, for every deck from then on:**
+
+- **Graded blind.** After the fact check, `scripts/factory/grade-deck.js --worklist` writes the new cards' names, descriptions and categories, **without years**.
+  - The `deck-difficulty-grader` agent (Sonnet) rates each card's recognition and inferability.
+  - `--apply` turns the ratings into a difficulty with the grid, so the arithmetic is code, not a model.
+  - The reconciler's own difficulty is only a placeholder.
+- **The placement-first grid** (`scripts/factory/difficulty.js`, and the rubric's "Difficulty Matrix"):
+  - high inferability is Easy whatever the recognition;
+  - medium inferability is one step easier than before at the low end.
+
+**A check in the validator.** `add-deck-events.js` refuses a card graded hard or very hard whose text names a strong era anchor: Roman, medieval, Victorian, Viking, pharaoh, samurai, a World War, and so on.
+
+**The existing catalogue** was graded with the old grid and isn't re-graded yet. That's a separate job, because labels feed how dailies are dealt.
+
 ### Spread: the bunching gate
 
 **The first factory deck bunched.** Sweet Tooth (2026-10-19) passed every gate of the day with 5 cards in 1900-1909 and 18 of 30 in 1896-1941. Within a curated deck the other cards are the timeline, so four cards in five years is close to a coin flip, however famous each one is. The cause was the spine: of its 38 beats only one came before 1832, and the rest were mostly brand launches, which crowd the industrial era. The reconciler can only use the spine's own spares, so it couldn't have fixed it.
