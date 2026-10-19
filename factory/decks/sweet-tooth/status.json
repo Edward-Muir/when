@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T21:18:21.102Z",
+  "updated_at": "2026-10-19T21:20:56.986Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-19T21:18:21.102Z"
     },
     "hersheys-milk-chocolate-bar": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1828e7ede941faa70fcf3814e6fd530a5526477b4a8c61a8799716c2eb36ccb3",
+      "updated_at": "2026-10-19T21:20:56.986Z"
     },
     "oreo-introduced": {
       "state": "pending",
