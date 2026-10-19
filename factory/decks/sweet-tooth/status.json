@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:44:14.174Z",
+  "updated_at": "2026-10-19T20:46:46.101Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-19T20:44:14.174Z"
     },
     "bakers-chocolate-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9b17d03b7fd7170ff0e9b3963bbb1bc57c97d80d8ad49792df901ea3bde26ce5",
+      "updated_at": "2026-10-19T20:46:46.101Z"
     },
     "turkish-delight-on-sale": {
       "state": "pending",
