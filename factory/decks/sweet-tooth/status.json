@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:46:46.101Z",
+  "updated_at": "2026-10-19T20:49:21.969Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-19T20:46:46.101Z"
     },
     "turkish-delight-on-sale": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "96581c93bcc9057e9293fec9db070279dcd0b5d5923785408600bcc753b3f3bf",
+      "updated_at": "2026-10-19T20:49:21.969Z"
     },
     "sachertorte-invented": {
       "state": "pending",
