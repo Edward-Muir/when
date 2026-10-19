@@ -99,6 +99,7 @@ Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The out
   - The Desktop docs promise only that allow rules in `~/.claude/settings.json` apply to scheduled runs; they don't say whether a project's `.claude/settings.json` does. The first runs settle it. If the project rules aren't honoured, copy the allow and deny lists into the user settings.
   - Bash rules match command text, and a rule must match every part of a chained command. So the stages run single commands, and the scripts do the multi-step work.
 - **A one-line prompt.** The logic lives in versioned files in the repo (`.claude/skills/deck-factory/`).
+  - A run reads `SKILL.md` from the clone as it stands when the run starts, before `start.js` syncs it. So a change to `SKILL.md` (or to `start.js`'s first phase) takes effect one run after it merges. The stage files are read after the sync, so they are always current. After merging a factory change, sync the clone by hand (`git checkout --detach origin/main` in `when-factory`) when it can't wait a run.
 
 **State lives on each deck branch** in `factory/decks/<id>/status.json`:
 
