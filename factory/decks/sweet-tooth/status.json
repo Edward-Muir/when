@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:39:05.241Z",
+  "updated_at": "2026-10-19T20:41:38.435Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-19T20:39:05.241Z"
     },
     "candy-cane-first-handed-out": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2226f7b471564d6e5ebcb841811b1931aded91aa2757c97c0d8dbec6ebf1716a",
+      "updated_at": "2026-10-19T20:41:38.435Z"
     },
     "cafe-procope-gelato": {
       "state": "pending",
