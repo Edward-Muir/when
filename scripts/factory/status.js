@@ -13,7 +13,7 @@
  *   node scripts/factory/status.js summary --deck <id> [--json]
  *   node scripts/factory/status.js lock --stage <name>              # prints the token
  *   node scripts/factory/status.js refresh --token <t>
- *   node scripts/factory/status.js unlock --token <t> [--force]
+ *   node scripts/factory/status.js unlock --token <t> --outcome ok|blocked|failed|quota [--force]
  *   node scripts/factory/status.js lock-status
  *
  * next-batch prints a JSON array. Each item carries the slug, its attempt number, the research
@@ -128,9 +128,17 @@ function main() {
       return;
     }
     case 'unlock': {
+      // The stage comes from the lock itself, so a run only has to say how it ended.
+      if (args.outcome && !lock.OUTCOMES.includes(args.outcome)) {
+        throw new Error(`--outcome must be one of ${lock.OUTCOMES.join(', ')}`);
+      }
+      const held = lock.read();
       const result = lock.release({ token: args.token, force: args.force });
       if (!result.ok) throw new Error(result.note);
-      console.log(result.note || 'unlocked');
+      if (args.outcome && held && held.stage) {
+        lock.recordRun({ stage: held.stage, outcome: args.outcome });
+        console.log(`unlocked; ${held.stage} recorded as ${args.outcome}`);
+      } else console.log(result.note || 'unlocked');
       return;
     }
     case 'lock-status': {

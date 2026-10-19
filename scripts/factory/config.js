@@ -47,6 +47,10 @@ module.exports = {
   LOCK_FILE: process.env.FACTORY_LOCK_FILE
     ? path.resolve(process.env.FACTORY_LOCK_FILE)
     : path.join(IMAGES_DIR, 'factory.lock'),
+  /** When each stage last ran and how it ended, so `start.js auto` can back off a broken one. */
+  RUN_LOG: process.env.FACTORY_RUN_LOG
+    ? path.resolve(process.env.FACTORY_RUN_LOG)
+    : path.join(IMAGES_DIR, 'factory-runs.json'),
   EVENTS_DIR: path.join(REPO_ROOT, 'public', 'events'),
   DECKS_DIR,
   BACKLOG_FILE: path.join(REPO_ROOT, 'docs', 'curated-themes', 'backlog.json'),
@@ -60,4 +64,8 @@ module.exports = {
   LOCK_STALE_MS: 2 * 60 * 60 * 1000,
   /** Decks authored but not yet at pr-open. Task B waits rather than start another. */
   MAX_IN_FLIGHT: 2,
+  /** `auto` skips a stage for this long after it ended blocked or failed. */
+  BACKOFF_MS: 6 * 60 * 60 * 1000,
+  /** List health runs when its last run is older than this. */
+  HEALTH_EVERY_MS: 7 * 24 * 60 * 60 * 1000,
 };

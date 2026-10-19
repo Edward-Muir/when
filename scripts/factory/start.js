@@ -3,7 +3,12 @@
  * The preamble every factory stage runs first (factory.md, The clone), in code rather than in
  * the skill's prose, because it is the part that can destroy work if it runs in the wrong place.
  *
- *   node scripts/factory/start.js <health|author|art-batch|qc|ship|schedule>
+ *   node scripts/factory/start.js            # auto: the state machine picks the stage
+ *   node scripts/factory/start.js <health|author|art-batch|qc|ship|schedule>   # force one
+ *
+ * **One scheduled task runs the whole factory** (factory.md, section 2). With no stage, or
+ * `auto`, phase 2 picks the first stage that has work, downstream first so a deck in flight
+ * finishes before another starts (pickStage, below). Each run still does exactly one stage.
  *
  * It prints one JSON object as its last line:
  *   {"action": "run", "stage", "deck", "branch", "token", ...}  do the stage, then unlock
@@ -33,8 +38,17 @@ const { execFileSync, spawnSync } = require('child_process');
 const config = require('./config');
 const lock = require('./lock');
 
-const { REPO_ROOT, FACTORY_DIRNAME, DECK_BRANCH_PREFIX, MAX_IN_FLIGHT } = config;
+const {
+  REPO_ROOT,
+  FACTORY_DIRNAME,
+  DECK_BRANCH_PREFIX,
+  MAX_IN_FLIGHT,
+  BACKOFF_MS,
+  HEALTH_EVERY_MS,
+} = config;
 const STAGES = ['health', 'author', 'art-batch', 'qc', 'ship', 'schedule'];
+/** The order `auto` tries them in: cheap periodic checks when due, then downstream first. */
+const AUTO_ORDER = ['health', 'schedule', 'ship', 'qc', 'art-batch', 'author'];
 /** Stages that work on main and need no deck. */
 const NO_DECK = new Set(['health', 'schedule']);
 const KEEP = ['node_modules', '.env', '.claude/settings.local.json'];
@@ -111,6 +125,55 @@ function pickDeck(stage, decks, next) {
   return deck ? { deck: deck.id, isNew: false } : { exit: `no deck has work for ${stage}` };
 }
 
+/** The local calendar day, for "once a day" and "until tomorrow". */
+const localDay = (t) => new Date(t).toLocaleDateString('en-CA');
+
+/**
+ * Why `auto` should leave a stage alone for now, or null. A stage that ended blocked or failed
+ * waits BACKOFF_MS, so one broken stage (Chrome signed out, a merge conflict) can't take every
+ * run; art that hit Gemini's daily cap waits for the next local day. Forcing a stage ignores it.
+ */
+function backoffReason(stage, runLog, now) {
+  const last = runLog[stage];
+  if (!last) return null;
+  const at = Date.parse(last.at);
+  if (last.outcome === 'quota' && localDay(at) === localDay(now))
+    return 'image quota used up today';
+  if ((last.outcome === 'blocked' || last.outcome === 'failed') && now - at < BACKOFF_MS) {
+    return `${last.outcome} at ${last.at}; waiting ${BACKOFF_MS / 3600000}h`;
+  }
+  return null;
+}
+
+/**
+ * Which stage an `auto` run takes. Returns pickDeck's result plus `stage`, or {exit: reason}.
+ * `pending` is how many merged decks are not on the calendar yet.
+ */
+function pickStage({ decks, next, runLog = {}, now = Date.now(), pending = 0 }) {
+  const waiting = [];
+  for (const stage of AUTO_ORDER) {
+    const why = backoffReason(stage, runLog, now);
+    const last = runLog[stage];
+    let pick = null;
+    if (stage === 'health') {
+      if (!last || now - Date.parse(last.at) >= HEALTH_EVERY_MS) pick = { deck: null };
+    } else if (stage === 'schedule') {
+      if (pending > 0 && (!last || localDay(Date.parse(last.at)) !== localDay(now)))
+        pick = { deck: null };
+    } else {
+      const p = pickDeck(stage, decks, next);
+      if (!p.exit) pick = p;
+    }
+    if (!pick) continue;
+    if (why) {
+      waiting.push(`${stage} (${why})`);
+      continue;
+    }
+    return { stage, ...pick };
+  }
+  return { exit: `nothing to do${waiting.length ? `; waiting: ${waiting.join(', ')}` : ''}` };
+}
+
 function registerMergeDriver() {
   const driver = `node ${path.join(REPO_ROOT, 'scripts', 'factory', 'json-merge.js')} %O %A %B %P`;
   git(['config', 'merge.factory-json.name', 'structural JSON merge for the deck factory']);
@@ -175,9 +238,15 @@ function phase1(stage) {
   process.exit(result.status ?? 1);
 }
 
-function phase2(stage, token) {
+async function phase2(requested, token) {
+  let stage = requested;
   const finish = (result) => {
     if (result.action !== 'run') lock.release({ token });
+    // A stage that can't even start is backed off like one that failed, or every auto run
+    // would pick it again.
+    if (result.action === 'blocked' && stage !== 'auto') {
+      lock.recordRun({ stage, outcome: 'blocked' });
+    }
     emit(result);
   };
   try {
@@ -185,6 +254,26 @@ function phase2(stage, token) {
     const { listDecks } = require('./decks');
     const backlog = require('./backlog');
     const decks = listDecks();
+    const doc = JSON.parse(fs.readFileSync(config.BACKLOG_FILE, 'utf8'));
+    const next = backlog.nextTheme(doc.themes, backlog.inFlightIds());
+
+    let pick = null;
+    if (requested === 'auto') {
+      let pending = 0;
+      try {
+        pending = (await require('./next-slot').pendingDecks()).length;
+      } catch {
+        // No calendar, no scheduling this run; every other stage still works offline.
+      }
+      pick = pickStage({ decks, next, runLog: lock.readRunLog(), pending });
+      if (pick.exit) {
+        finish({ action: 'exit', reason: pick.exit });
+        return;
+      }
+      stage = pick.stage;
+      // The lock was taken as `auto`; name the stage, so its outcome is logged against it.
+      lock.refresh({ token, stage });
+    }
 
     if (NO_DECK.has(stage)) {
       npmCiIfNeeded();
@@ -199,9 +288,7 @@ function phase2(stage, token) {
       return;
     }
 
-    const doc = JSON.parse(fs.readFileSync(config.BACKLOG_FILE, 'utf8'));
-    const next = backlog.nextTheme(doc.themes, backlog.inFlightIds());
-    const pick = pickDeck(stage, decks, next);
+    if (!pick) pick = pickDeck(stage, decks, next);
     if (pick.exit) {
       finish({ action: 'exit', reason: pick.exit });
       return;
@@ -252,13 +339,15 @@ function phase2(stage, token) {
 }
 
 if (require.main === module) {
-  const [stage, flag, token] = process.argv.slice(2);
-  if (!STAGES.includes(stage)) {
-    console.error(`usage: start.js <${STAGES.join('|')}>`);
+  const argv = process.argv.slice(2);
+  const stage = argv[0] && !argv[0].startsWith('--') ? argv.shift() : 'auto';
+  const [flag, token] = argv;
+  if (stage !== 'auto' && !STAGES.includes(stage)) {
+    console.error(`usage: start.js [auto|${STAGES.join('|')}]`);
     process.exit(1);
   }
   if (flag === '--phase2') phase2(stage, token);
   else phase1(stage);
 }
 
-module.exports = { guardProblem, hasWork, pickDeck, STAGES };
+module.exports = { AUTO_ORDER, backoffReason, guardProblem, hasWork, pickDeck, pickStage, STAGES };
