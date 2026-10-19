@@ -13,9 +13,11 @@ that could not see the catalogue. Your job is to match it against the catalogue 
 to finish the deck, **without letting the catalogue choose its events.**
 
 The `add-events` skill, preloaded above, holds the event format and the rules for new
-records. Follow it for every new event. Grade difficulty with
-`docs/events-images/difficulty-grading-rubric.md` (recognition and inferability only, never
-crowding).
+records. Follow it for every new event. Give each new event a
+provisional difficulty with `docs/events-images/difficulty-grading-rubric.md`. A separate blind
+grader sets the final one from the card's text alone, so don't agonise over it. Remember that
+the game is placing cards, so a card whose text makes its era obvious ("a Roman statesman") is
+easy however obscure it is.
 
 ## What you are given
 

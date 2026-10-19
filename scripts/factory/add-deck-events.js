@@ -18,6 +18,7 @@ const path = require('path');
 
 const { DECKS_DIR, EVENTS_DIR, REPO_ROOT } = require('./config');
 const { eventDateClues } = require('../events/date-clues');
+const { anchorsIn } = require('./difficulty');
 const { parseArgs, readJson, run, writeJson } = require('./cli');
 
 const TARGET_FILE = 'themes.json';
@@ -70,6 +71,13 @@ function problemsWith(record, categories, existing, thisYear) {
   const len = (record.description || '').length;
   if (len < DESCRIPTION[0] || len > DESCRIPTION[1]) {
     p.push(`description is ${len} characters; want ${DESCRIPTION[0]}-${DESCRIPTION[1]}`);
+  }
+  const anchors = anchorsIn(record);
+  if (anchors.length && (record.difficulty === 'hard' || record.difficulty === 'very-hard')) {
+    p.push(
+      `graded ${record.difficulty}, but its text names ${anchors.join(', ')}, which places its era; ` +
+        'under the placement-first grid that is easy or medium'
+    );
   }
   const clues = eventDateClues(record);
   if (clues.length) p.push(`states a date: ${clues.map((c) => `"${c.match}"`).join(', ')}`);
