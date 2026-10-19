@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T21:20:56.986Z",
+  "updated_at": "2026-10-19T21:23:31.572Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-19T21:20:56.986Z"
     },
     "oreo-introduced": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "89ec446152d4cd5a5d02ae17b4a5cd60fe748138e2ad3025cd41a06825d634a6",
+      "updated_at": "2026-10-19T21:23:31.572Z"
     },
     "eskimo-pie-patented": {
       "state": "pending",
