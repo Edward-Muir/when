@@ -3,7 +3,7 @@
   "name": "Sweet Tooth",
   "stage": "art-in-progress",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T20:54:26.188Z",
+  "updated_at": "2026-10-19T21:07:27.306Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "cato-honey-cheesecake-recipe": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1f23776e0a71e9f274738a0f48cfb0d81b016b53b0f2d151e70ed2eb67698788",
-      "updated_at": "2026-10-19T20:31:14.287Z"
+      "updated_at": "2026-10-19T21:07:27.030Z"
     },
     "indian-sugar-crystallisation": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d2011cac03b5aacc75163dfc3b596637e9bbb7f8a09a08b5f209f3d0da19d9e7",
-      "updated_at": "2026-10-19T20:33:56.893Z"
+      "updated_at": "2026-10-19T21:07:27.061Z"
     },
     "gingerbread-reaches-europe": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "556273d1813d3d842bc7605400d6b346ec103653a9b095d4c78cb67d3c3886b6",
-      "updated_at": "2026-10-19T20:36:30.791Z"
+      "updated_at": "2026-10-19T21:07:27.092Z"
     },
     "nuremberg-lebkuchen-recorded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a6f25097a4128fac44a11fa8b3de2288108a42335c35942a6d68bf03fe9589d2",
-      "updated_at": "2026-10-19T20:39:05.241Z"
+      "updated_at": "2026-10-19T21:07:27.123Z"
     },
     "candy-cane-first-handed-out": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2226f7b471564d6e5ebcb841811b1931aded91aa2757c97c0d8dbec6ebf1716a",
-      "updated_at": "2026-10-19T20:41:38.435Z"
+      "updated_at": "2026-10-19T21:07:27.154Z"
     },
     "cafe-procope-gelato": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5517fcbb1d5c7a20d3d93de6fd69030ecf092b77c0aa2ad31979a7880a95e5e5",
-      "updated_at": "2026-10-19T20:44:14.174Z"
+      "updated_at": "2026-10-19T21:07:27.184Z"
     },
     "bakers-chocolate-founded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9b17d03b7fd7170ff0e9b3963bbb1bc57c97d80d8ad49792df901ea3bde26ce5",
-      "updated_at": "2026-10-19T20:46:46.101Z"
+      "updated_at": "2026-10-19T21:07:27.214Z"
     },
     "turkish-delight-on-sale": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "96581c93bcc9057e9293fec9db070279dcd0b5d5923785408600bcc753b3f3bf",
-      "updated_at": "2026-10-19T20:49:21.969Z"
+      "updated_at": "2026-10-19T21:07:27.245Z"
     },
     "sachertorte-invented": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b1911c0f23563789482f411775108466f93eccbb224543ab299acf9f4d1cf3d7",
-      "updated_at": "2026-10-19T20:51:54.264Z"
+      "updated_at": "2026-10-19T21:07:27.275Z"
     },
     "cadbury-chocolate-box": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c46fc9bd8dea4b849af684b62b90c06f56ae4fc866a4ed20d000326b1fe929fa",
-      "updated_at": "2026-10-19T20:54:26.188Z"
+      "updated_at": "2026-10-19T21:07:27.306Z"
     },
     "fry-chocolate-easter-egg": {
       "state": "pending",

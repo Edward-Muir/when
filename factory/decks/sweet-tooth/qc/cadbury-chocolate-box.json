@@ -1,0 +1,15 @@
+{
+  "slug": "cadbury-chocolate-box",
+  "description": "A bearded man in a dark Victorian-style suit and waistcoat leans over a wooden table, lifting the lid of an ornate heart-shaped box of chocolates lined with white paper. The lid has a painted scene of a girl in a pink dress holding a grey-and-white cat. Scattered wrappers, a pink ribbon, a knife and a warm lamp glow fill the room. The painting appears full-bleed with no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
