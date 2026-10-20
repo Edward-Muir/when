@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:48:54.449Z",
+  "updated_at": "2026-10-20T12:51:36.408Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-20T12:48:54.449Z"
     },
     "roadrunner-petaflop-supercomputer": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bdb5ccc0c1503f3753b3523442ea41d241142d512f46d28532063f7985cde050",
+      "updated_at": "2026-10-20T12:51:36.408Z"
     },
     "ibm-watson-jeopardy": {
       "state": "pending",
