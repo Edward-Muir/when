@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T11:58:38.299Z",
+  "updated_at": "2026-10-20T12:01:47.986Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-20T11:58:38.299Z"
     },
     "manchester-baby-runs-program": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3a9e1785d6cfd4c2b950de1d31385d9a4b5fa8a029b5b15d0eb4ad82da211701",
+      "updated_at": "2026-10-20T12:01:47.986Z"
     },
     "univac-i-delivered": {
       "state": "pending",
