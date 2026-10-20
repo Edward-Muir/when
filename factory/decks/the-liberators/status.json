@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T23:37:00.919Z",
+  "updated_at": "2026-10-20T23:40:16.439Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -177,10 +177,11 @@
       "updated_at": "2026-10-20T23:37:00.919Z"
     },
     "antonio-maceo-killed": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7a0cb37611da731f5390e62fe3bb7ac46ecb00110e43fd0eaf6d60242195a83d",
+      "updated_at": "2026-10-20T23:40:16.439Z"
     },
     "treaty-paris-spain-cedes-colonies": {
       "state": "pending",
