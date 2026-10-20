@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T21:16:21.646Z",
+  "updated_at": "2026-10-20T21:18:53.442Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-20T21:16:21.646Z"
     },
     "bolivar-named-el-libertador": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b2d3d35ad1e1a21bb18fe8176868cca215dd391de637ed974edf1c804115caab",
+      "updated_at": "2026-10-20T21:18:53.442Z"
     },
     "san-martin-crosses-andes": {
       "state": "pending",
