@@ -1,8 +1,18 @@
 # Stage C3: ship a deck
 
-Runs on a deck at `ready-to-ship` (every slug `qc-pass` or `needs-human`), or one left at
-`uploaded` by a run that died. It uploads the art, wires it into the catalogue, verifies the
-build and opens the pull request. A re-run resumes: every step below is safe to repeat.
+Runs on a deck at `ready-to-ship` (every slug `qc-pass`), or one left at `uploaded` by a run
+that died. It uploads the art, wires it into the catalogue, verifies the build and opens the pull
+request. A re-run resumes: every step below is safe to repeat.
+
+**A deck ships complete, or not at all.** Every one of its 30 cards must be playable, so a card
+with no art holds the whole deck back.
+
+## 0. No card without art
+
+If any slug is `needs-human`, stop: unlock with `--outcome blocked`, and report the slug and its
+reason. `auto` never picks such a deck, so this only happens on a forced run. Edward rewrites the
+card's scene and runs `node scripts/factory/status.js reset --deck <deck> <slug>`, which sends
+the deck back to the art stage, even from `uploaded`.
 
 ## 1. Upload (skip if the deck is already `uploaded`)
 
@@ -39,6 +49,9 @@ Commit `public/events/`: "chore(events): colours for the <Name> deck".
 
 ## 4. Verify, all through npm
 
+0. `node scripts/factory/check-playable.js --deck <deck>`: every card in `deck.json` has its art.
+   No test catches an artless card, because the catalogue allows them on purpose; the game
+   just hides them. Unlock with `--outcome blocked` and report the cards it names.
 1. `CI=true npm test -- --watchAll=false`
 2. `npm run lint`
 3. `npm run typecheck`
@@ -61,8 +74,7 @@ ship run retries from here.
 5. `node scripts/factory/status.js stage --deck <deck> pr-open`, then commit "chore(factory):
    <Name> PR open" and push.
 
-The report gives the PR link, the counts of new and reused cards, any `needs-human` slugs, and
-the CI state.
+The report gives the PR link, the counts of new and reused cards, and the CI state.
 
 ## If Edward closes the PR unmerged
 

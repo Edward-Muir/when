@@ -161,7 +161,10 @@ function hasWork(stage, status) {
     case 'qc':
       return states.includes('downloaded');
     case 'ship':
-      return ['ready-to-ship', 'uploaded'].includes(status.stage);
+      // A card with no art means an unplayable deck: it waits for Edward, not for ship.
+      return (
+        ['ready-to-ship', 'uploaded'].includes(status.stage) && !states.includes('needs-human')
+      );
     default:
       return false;
   }
@@ -197,6 +200,19 @@ function pickDeck(stage, decks, next) {
 
 /** The local calendar day, for "once a day" and "until tomorrow". */
 const localDay = (t) => new Date(t).toLocaleDateString('en-CA');
+
+/** Finished decks that ship won't take until Edward resets their card that has no art. */
+function waitingOnEdward(decks) {
+  return decks
+    .filter((d) => d.status && ['ready-to-ship', 'uploaded'].includes(d.status.stage))
+    .map((d) => {
+      const human = Object.keys(d.status.slugs).filter(
+        (slug) => d.status.slugs[slug].state === 'needs-human'
+      );
+      return human.length ? `${d.id} needs Edward for ${human.join(', ')}` : null;
+    })
+    .filter(Boolean);
+}
 
 /**
  * Why `auto` should leave a stage alone for now, or null. A stage that ended blocked or failed
@@ -241,6 +257,7 @@ function pickStage({ decks, next, runLog = {}, now = Date.now(), pending = 0 }) 
     }
     return { stage, ...pick };
   }
+  waiting.push(...waitingOnEdward(decks));
   return { exit: `nothing to do${waiting.length ? `; waiting: ${waiting.join(', ')}` : ''}` };
 }
 
