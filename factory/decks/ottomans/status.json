@@ -3,7 +3,7 @@
   "name": "Sublime Porte",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T02:19:33.015Z",
-  "updated_at": "2026-10-20T03:31:11.995Z",
+  "updated_at": "2026-10-20T03:34:02.914Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-20T03:31:11.995Z"
     },
     "ottoman-constitution-midhat-pasha": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4309695f50b2093bc3760e17b72f1efbff52e4db24e1e2b93c6ab7a7c562a600",
+      "updated_at": "2026-10-20T03:34:02.914Z"
     },
     "ottomans-enter-first-world-war": {
       "state": "pending",
