@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T19:35:52.153Z",
+  "updated_at": "2026-10-20T20:07:11.543Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,18 +16,18 @@
   ],
   "slugs": {
     "comuneros-revolt-new-granada": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f49f79f40a357ef9015cc79cd25c4d51d7c74e497c2ac88f689058cf4700accd",
-      "updated_at": "2026-10-20T19:08:47.002Z"
+      "updated_at": "2026-10-20T20:07:11.444Z"
     },
     "inconfidencia-mineira-plot": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e7e7d0c8040d544286ed0a034642aef7b835ba49b91188eb90086f65b032239e",
-      "updated_at": "2026-10-20T19:12:37.681Z"
+      "updated_at": "2026-10-20T20:07:11.476Z"
     },
     "haitian-revolution-uprising-begins": {
       "state": "pending",
@@ -36,18 +36,18 @@
       "sha256": null
     },
     "narino-prints-rights-of-man": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5ef73991eb173f9cdf8457ec5b0eb626cf257fc84fd3605149cd81265c0b526f",
-      "updated_at": "2026-10-20T19:26:20.180Z"
+      "updated_at": "2026-10-20T20:07:11.510Z"
     },
     "gual-espana-conspiracy": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e17a7c63ee767a5edce260329b26a5212fb414bd9f1946d728a6c6740df1316a",
-      "updated_at": "2026-10-20T19:35:52.153Z"
+      "updated_at": "2026-10-20T20:07:11.543Z"
     },
     "toussaint-louverture-captured": {
       "state": "pending",
