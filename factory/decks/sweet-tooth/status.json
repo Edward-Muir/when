@@ -1,9 +1,9 @@
 {
   "deck": "sweet-tooth",
   "name": "Sweet Tooth",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-20T00:06:44.295Z",
+  "updated_at": "2026-10-20T01:06:46.654Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-20T00:06:44.295Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-20T01:06:46.654Z"
     }
   ],
   "slugs": {
