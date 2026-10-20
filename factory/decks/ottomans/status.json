@@ -3,7 +3,7 @@
   "name": "Sublime Porte",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T02:19:33.015Z",
-  "updated_at": "2026-10-20T05:11:23.193Z",
+  "updated_at": "2026-10-20T05:13:54.829Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-20T05:11:23.193Z"
     },
     "ottoman-sultanate-abolished": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "14257de4471d430adaa4246039af6b9498cfd4b6783da0bdbcae17dab6d99af5",
+      "updated_at": "2026-10-20T05:13:54.829Z"
     }
   }
 }
