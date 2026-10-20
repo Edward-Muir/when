@@ -1,0 +1,15 @@
+{
+  "slug": "ibm-pc-launched",
+  "description": "A painted, dimly lit office desk with a beige boxy desktop computer, a CRT monitor on top showing green text, and a separate beige keyboard in front. A hand is pushing a black floppy disk into the drive slot on the case, and stacks of floppy disks and loose papers sit on the desk. A green desk lamp glows at the left and a lamp at the upper right. The case has a small 'IBM' badge. Edge to edge, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

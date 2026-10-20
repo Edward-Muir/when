@@ -1,0 +1,15 @@
+{
+  "slug": "nvidia-geforce-256-gpu",
+  "description": "A painting of an open beige desktop PC case seen from above and to the side. A green circuit-board graphics card with a black fan and metal heatsink sits seated in a slot, with RAM sticks, a power supply, and ribbon and power cables around it. Two beige CRT monitors on the desk show low-poly green and blue landscapes, and a desk lamp glows at the top. The scene is dim and warm, with no people and no legible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

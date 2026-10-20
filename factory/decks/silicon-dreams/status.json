@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:57:03.242Z",
+  "updated_at": "2026-10-20T13:07:23.109Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,11 +58,11 @@
       "updated_at": "2026-10-20T12:14:58.008Z"
     },
     "univac-i-delivered": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Legible lettering 'UNIVAC I' is painted on the top edge of the console. Regenerate without any readable name on the machine.",
+      "reason": null,
       "sha256": "bd1a4b5c36f2c0aa0f8a1b42ede40630c2422e0f2b94de740786657002cff5dc",
-      "updated_at": "2026-10-20T12:33:18.600Z"
+      "updated_at": "2026-10-20T13:07:22.814Z"
     },
     "kilby-first-integrated-circuit": {
       "state": "qc-pass",
@@ -72,11 +72,11 @@
       "updated_at": "2026-10-20T12:14:58.069Z"
     },
     "ibm-system-360-announced": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Legible 'IBM' lettering is painted on the blue cabinets (centre and left background). Repaint the cabinets plain, without the logo.",
+      "reason": null,
       "sha256": "5add18dbd9e4cc1b213f48daa05185cf51e642924c7de028daba8e9e2842d940",
-      "updated_at": "2026-10-20T12:35:52.354Z"
+      "updated_at": "2026-10-20T13:07:22.848Z"
     },
     "apple-ii-released": {
       "state": "qc-pass",
@@ -86,60 +86,60 @@
       "updated_at": "2026-10-20T12:14:58.133Z"
     },
     "ibm-pc-launched": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d4ee4addac348ec3b388772e57bfeb5d83d8ddc03c83c3cfbeb09f4cd55d1e74",
-      "updated_at": "2026-10-20T12:38:21.964Z"
+      "updated_at": "2026-10-20T13:07:22.880Z"
     },
     "arm1-processor-first-runs": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ffd3f641deb977b9996a6538545cfef20b30f7a2adad7cb44620e97a5aed77c8",
-      "updated_at": "2026-10-20T12:41:07.975Z"
+      "updated_at": "2026-10-20T13:07:22.912Z"
     },
     "imac-launched": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The word 'iMac' is clearly legible on the bezel below the screen. Repaint the chin without any lettering.",
       "sha256": "6678e10702d1a452c32772e470552406cb3bc5d7ee14bc6df32e32632c7c5b48",
-      "updated_at": "2026-10-20T12:43:48.426Z"
+      "updated_at": "2026-10-20T13:07:22.946Z"
     },
     "nvidia-geforce-256-gpu": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9d259e9f430ba64144e98277c41ab3e2355fb64ce1f6df4b06c23d8ec81de7a3",
-      "updated_at": "2026-10-20T12:46:20.276Z"
+      "updated_at": "2026-10-20T13:07:22.977Z"
     },
     "ibm-quantum-factors-15": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "134d15e0abf00e05337661c4fa096a02910127779f6be4dba433f32f48a1d049",
-      "updated_at": "2026-10-20T12:48:54.449Z"
+      "updated_at": "2026-10-20T13:07:23.011Z"
     },
     "roadrunner-petaflop-supercomputer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bdb5ccc0c1503f3753b3523442ea41d241142d512f46d28532063f7985cde050",
-      "updated_at": "2026-10-20T12:51:36.408Z"
+      "updated_at": "2026-10-20T13:07:23.044Z"
     },
     "ibm-watson-jeopardy": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7d7de4aafa4d0282be49e8bf852ea0a628be09847bfcaae8011193cece5bfa0c",
-      "updated_at": "2026-10-20T12:54:25.741Z"
+      "updated_at": "2026-10-20T13:07:23.078Z"
     },
     "raspberry-pi-released": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e58bb88b43bd8ab698a6490de1a66528f5def7ce755e0bdd6495b99f3284e07c",
-      "updated_at": "2026-10-20T12:57:03.242Z"
+      "updated_at": "2026-10-20T13:07:23.109Z"
     },
     "apple-m1-chip": {
       "state": "pending",
