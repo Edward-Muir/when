@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:01:47.986Z",
+  "updated_at": "2026-10-20T12:04:29.082Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-20T12:01:47.986Z"
     },
     "univac-i-delivered": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ba3a09bc18226c783b34117ccd9d0638ff105e4d989f6928f6d41af14dd2ad53",
+      "updated_at": "2026-10-20T12:04:29.082Z"
     },
     "kilby-first-integrated-circuit": {
       "state": "pending",
