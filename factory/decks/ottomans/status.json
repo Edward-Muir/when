@@ -3,7 +3,7 @@
   "name": "Sublime Porte",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T02:19:33.015Z",
-  "updated_at": "2026-10-20T03:11:14.752Z",
+  "updated_at": "2026-10-20T03:13:54.282Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-20T03:11:14.752Z"
     },
     "selim-i-conquers-egypt-mamluks": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4bba0c5a11e31f3e0b1fc7ee05f4600e5edafc0e2c313c745e7fb0177f36a0be",
+      "updated_at": "2026-10-20T03:13:54.282Z"
     },
     "battle-of-mohacs-ottoman-hungary": {
       "state": "pending",
