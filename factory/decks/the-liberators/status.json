@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T23:30:28.494Z",
+  "updated_at": "2026-10-20T23:33:45.777Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-20T23:30:28.494Z"
     },
     "marti-founds-cuban-revolutionary-party": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "aad98bf6f11456100484c621b77fc3ecbefea61e65d16d5f0d7c726f6b72577a",
+      "updated_at": "2026-10-20T23:33:45.777Z"
     },
     "grito-de-baire": {
       "state": "pending",
