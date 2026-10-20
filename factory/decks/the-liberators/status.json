@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T21:26:28.854Z",
+  "updated_at": "2026-10-20T21:29:01.119Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-20T21:26:28.854Z"
     },
     "spain-recognizes-mexico": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e1cfeabf27aeabb1088445610ccfabacbc18d440e0542b8761285547e7dcfc7a",
+      "updated_at": "2026-10-20T21:29:01.119Z"
     },
     "duarte-founds-la-trinitaria": {
       "state": "pending",
