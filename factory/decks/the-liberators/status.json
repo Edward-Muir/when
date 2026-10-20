@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T22:06:55.288Z",
+  "updated_at": "2026-10-20T23:10:37.743Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-20T22:06:55.288Z"
     },
     "dominican-independence-declared": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "45857ee51f2e23ccebfea74d50eb2d0350a42def2230ec79d5a79eae26c45fcc",
+      "updated_at": "2026-10-20T23:10:37.743Z"
     },
     "narciso-lopez-invades-cuba": {
       "state": "pending",
