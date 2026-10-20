@@ -1,9 +1,9 @@
 {
   "deck": "sweet-tooth",
   "name": "Sweet Tooth",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-19T20:04:21.280Z",
-  "updated_at": "2026-10-19T23:23:47.153Z",
+  "updated_at": "2026-10-20T00:06:44.295Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-19T20:31:14.287Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-20T00:06:44.295Z"
     }
   ],
   "slugs": {
@@ -156,32 +160,32 @@
       "updated_at": "2026-10-19T22:07:10.615Z"
     },
     "chupa-chups-lollipop": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9ec9dae8e64adace74a28befaec58fad29c59e327f6efa2aa9b81bfe4fed75a6",
-      "updated_at": "2026-10-19T23:08:59.705Z"
+      "updated_at": "2026-10-20T00:06:44.159Z"
     },
     "nutella-launched": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a736fd1f9309b9add40360b08533fb3eab312079cbc6b8c41d2a8b34a7305605",
-      "updated_at": "2026-10-19T23:11:35.585Z"
+      "updated_at": "2026-10-20T00:06:44.194Z"
     },
     "cadbury-creme-egg-named": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a227def70c8d45ae201cd5d72420dec25bf0e637bec472450532d727ecb2343a",
-      "updated_at": "2026-10-19T23:14:13.492Z"
+      "updated_at": "2026-10-20T00:06:44.228Z"
     },
     "kinder-surprise-launched": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "69ae0191a659fac797d5f255eb0a0353c18ff87bebd9b60286f03ee980fb420c",
-      "updated_at": "2026-10-19T23:16:46.247Z"
+      "updated_at": "2026-10-20T00:06:44.262Z"
     },
     "ben-jerrys-scoop-shop": {
       "state": "needs-human",
@@ -191,11 +195,11 @@
       "updated_at": "2026-10-19T23:20:06.908Z"
     },
     "cronut-hits-new-york": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f2fe01ded5fef54a592ec15fa97259bc8b70899b6f0964055741c72f1049c8c0",
-      "updated_at": "2026-10-19T23:23:47.153Z"
+      "updated_at": "2026-10-20T00:06:44.295Z"
     }
   }
 }
