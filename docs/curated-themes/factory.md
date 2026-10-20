@@ -68,7 +68,7 @@ Today each curated theme is built by hand across several sessions:
 1. **list health**, when its last run is a week old;
 2. **schedule**, when a merged deck isn't on the calendar and it hasn't run today;
 3. **ship**, then **QC**, then an **art batch**: downstream first, so the deck in flight finishes before another starts;
-4. **author**, while fewer than 2 decks are between authoring and `pr-open`;
+4. **author**, while fewer than 2 decks are between authoring and `pr-open`. A deck waiting only on Edward (a `needs-human` card) doesn't count, so the factory keeps making decks while it waits;
 5. otherwise the run exits at once, which costs almost nothing.
 
 Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The outcome goes to a run log, `../when-images/factory-runs.json`, outside git.
@@ -76,6 +76,24 @@ Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The out
 - A stage whose last run ended `blocked` or `failed` is skipped for 6 hours, so one broken stage can't take every run. Chrome signed out is one example; a merge conflict is another, and `start.js` logs that one itself.
 - An art batch that hit Gemini's daily cap is skipped until the next local day.
 - Naming a stage forces it and ignores the backoff: "Run the deck-factory skill, stage: qc" in an ordinary session in the clone. That is for debugging and manual runs.
+
+**How it stalls, and what each needs.** Edward checks the runs himself (no notifications, his call on 2026-10-20), so every stall either fixes itself or names itself in the run's report.
+
+- **Fixed in code, so they don't stall it:**
+  - a re-run of ship doesn't upload twice, and resumes;
+  - a card with no art never ships, and its deck stops taking an author slot;
+  - an art batch in which no slug moved (a changed Gemini page, say) ends `blocked`, so art backs off for 6 hours and the other stages run meanwhile. Before, it ended `ok` and repeated every run.
+- **Edward's, named in the report** (the exit reason, `refresh_blocked`, or a `blocked` outcome with its reason):
+
+  | Stall                                           | What Edward does                                              |
+  | ----------------------------------------------- | ------------------------------------------------------------- |
+  | a `needs-human` card                            | rewrites its scene, regenerates the prompt, `status.js reset` |
+  | a merge conflict between main and a deck branch | resolves it on the deck branch                                |
+  | a merged deck not on the calendar               | dispatches the publish                                        |
+  | a failing test or check at ship                 | fixes the test or the deck; the next ship retries             |
+  | a Cloudinary refusal                            | sorts the slug's asset out by hand                            |
+  | Chrome signed out of Google                     | signs in                                                      |
+  | the backlog is empty                            | runs a `theme-list` session                                   |
 
 **Why one task rather than six.** The state machine already knew what every deck needed, so a task per stage only encoded "which stage to try". That cost six folders to set by hand, six permission lists to approve and six schedules to stagger. Desktop also skips a run while another is running, which the lock handles anyway. One task needs one folder and one set of approvals. Each run is still a fresh session doing one stage, so art stays capped at 10 images a session, and QC never shares a context with the browser work.
 
@@ -105,12 +123,13 @@ Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The out
 
 - **Deck `stage`:** `authored` → `art-in-progress` → `ready-to-ship` → `uploaded` → `pr-open` → `merged` → `scheduled`
   - The first three are **derived from the slugs**, never set: `ready-to-ship` exactly when every slug is `qc-pass` or `needs-human`. A deck that reuses every card is `ready-to-ship` from the start.
-  - The rest are set one step at a time (`status.js stage`), each only from the one before it. Once a deck is `uploaded`, its slugs are frozen.
+  - The rest are set one step at a time (`status.js stage`), each only from the one before it. Once a deck is `uploaded`, its slugs are frozen, except that a reset of a `needs-human` card sends the deck back to `art-in-progress`.
+  - A `needs-human` card makes the deck `ready-to-ship` but not shippable: ship takes a deck only when every card has art (below, "A deck ships complete").
   - `merged` and `scheduled` happen after the branch has merged, and a stage can't commit to main. Task D therefore reads them from GitHub and `/api/themes`, not from the file. The copy that reaches main stays at `pr-open`.
 - **Per-slug `state`:** `pending` → `downloaded` → `qc-pass` | `qc-fail` | `needs-human`
   - `qc-fail` goes back to C1 (`qc-fail` → `downloaded`), at most 2 times. The third fail is recorded as `needs-human`, with the reason.
   - `pending` → `needs-human` is allowed, for an image Gemini refuses to make.
-  - `status.js reset <slug>` is a human's way back to `pending`, with a fresh retry budget.
+  - `status.js reset <slug>` is a human's way back to `pending`, with a fresh retry budget. It works until the PR is open. On an `uploaded` deck it takes only a `needs-human` card, since the rest are already on Cloudinary, and ship later uploads just that one.
 - Each slug records `attempts` (downloads so far), the last QC `reason` and its file's `sha256`. `downloaded` refuses to record without a sha256.
 - **`scripts/factory/status.js` is the only code that reads and writes this file.** The rules are pure functions in `status-lib.js`, tested in `factory.test.js` (`npm run factory:test`, also in CI).
   - `init --deck <id> --name <Name> --slugs a,b,…` creates it, once.
@@ -459,6 +478,23 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 - The run used `general-purpose` agents with the `card-art-qc` prompt and model, because a new agent type registers only in a fresh session. A scheduled run uses the agent itself.
 
 ### C3. Ship: upload, wire, open the PR
+
+**Two fixes from the first real ship, 2026-10-20.** Sweet Tooth's ship run stopped at the tests, and its re-run six hours later found two bugs:
+
+- **The re-run uploaded 10 images a second time.** The uploader judged "already uploaded" by the downsampled JPEG's bytes, and downsampling again doesn't always give the same bytes.
+  - `planUploads` now judges by the source image QC passed (`source_sha256`): a verified upload of the same source is skipped.
+  - A card whose source changed after its upload is refused, to be replaced by hand.
+  - The 10 duplicates were left unused on Cloudinary, for Edward to delete.
+- **`--verify-urls` counted only uncommitted changes,** so on a resumed ship it saw none. It now diffs the deck branch from where it left main.
+
+**A deck ships complete, or not at all.** Sweet Tooth's ship got as far as `uploaded` with Ben & Jerry's still `needs-human`: Gemini had refused its scene, "two bearded young men in aprons scooping". No test could have stopped it, because every new card starts without art and the catalogue allows artless cards on purpose (the game hides them). Only publishing would have refused the theme, after Edward had reviewed and merged it. So now:
+
+- **The gate:** `scripts/factory/check-playable.js --deck <id>` fails unless every `deck.json` card is playable (has its Cloudinary art) and no card is `needs-human`. Ship runs it first in its verify step, before the PR.
+- **`auto` skips such a deck:** ship has no work while a card is `needs-human`, and the exit reason names the deck and the card ("sweet-tooth needs Edward for ben-jerrys-scoop-shop").
+- **The way back:** Edward rewrites the scene, regenerates the prompt, and runs `status.js reset`. That works from `uploaded` too, and the next art batch makes just that card.
+- **Fewer refusals to begin with:** author's scene rules now say that a recent event about famous real people shows the place, the object or the result, never the people. Art's refusal retry removes the people from the picture entirely, not just their names, before it gives up.
+
+**The test that blocked it:** `countrySelection.test.ts` pinned legacy pool sizes measured on the 2026-09-30 catalogue. Any new card moved them, so every deck would have failed ship. It now leaves out the cards factory decks added (`factory/decks/*/new-events.json`), so the numbers move only when a measured card changes.
 
 Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Otherwise it exits. The steps are `.claude/skills/deck-factory/ship.md`, and every one is safe to repeat.
 

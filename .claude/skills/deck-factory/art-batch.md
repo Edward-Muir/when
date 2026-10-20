@@ -104,14 +104,20 @@ click it and choose Pro.
   failure, about one attempt in three. It comes from clicking before the page has hydrated, or
   from a stale coordinate (the viewport resizes between screenshots). Take a fresh screenshot,
   read the composer position from it, click, wait 1 s, retype, confirm. Up to 3 tries.
-- **STATE C: Gemini refuses the image because the prompt names a real person.** Try once more
-  with the person's name, team and number removed ("a gymnast", "a statesman"), keeping
-  everything else. If it refuses that too, don't keep rewriting it to get past the filter. Mark
-  the slug and move on:
-  `node scripts/factory/status.js mark --deck <deck> <slug> needs-human --reason "Gemini refused to depict a real person"`
-  Then commit and push the status, as in step 9.
+- **STATE C: Gemini refuses the image because it would show a real person.** Taking the names
+  out isn't enough: the scene still asks for those people ("two bearded young men scooping"),
+  so Gemini still refuses. Retry once with **no people in the picture at all**. Rewrite the
+  prompt around the place, the object or the result the event left: the shop front, the product
+  on the counter, the empty stage after the show. Keep the setting, the era and every object the
+  scene names, and add "no people". A far-off crowd with no faces is fine; a figure meant to be
+  the person isn't. If Gemini refuses that too, don't keep rewriting it to get past the filter.
+  Mark the slug and move on:
+  `node scripts/factory/status.js mark --deck <deck> <slug> needs-human --reason "Gemini refused to depict a real person; no-people retry refused too"`
+  Then commit and push the status, as in step 9. The deck can't ship until Edward rewrites the
+  scene and resets the card.
 - **STATE D: a Google sign-in screen.** Don't enter credentials. Leave the slug as it is, stop
-  the run, and report that Chrome is signed out of Google, so Edward needs to sign in.
+  the run, unlock with `--outcome blocked`, and report that Chrome is signed out of Google, so
+  Edward needs to sign in.
 - **Three full recoveries fail on one slug:** leave it as it is (it stays in the queue) and go
   on to the next.
 - **"I can't create more images for you today":** stop the whole session, and unlock with
@@ -120,5 +126,14 @@ click it and choose Pro.
 ## When to stop
 
 After the last item of the batch, or one of the stops above. Budget about 3 minutes per slug.
-Then unlock. The report gives the images taken, any slug left or marked `needs-human`, and what
+Then unlock:
+
+- **`--outcome blocked` if no slug moved:** nothing downloaded and nothing marked `needs-human`,
+  without the quota message. That means Gemini or Chrome is broken in a way the playbook doesn't
+  cover, such as a changed page. Report what the page showed. The `blocked` outcome makes `auto`
+  leave art alone for 6 hours, instead of repeating the same failing batch every run while the
+  other stages wait.
+- `--outcome ok` otherwise, even if some slugs were left in the queue.
+
+The report gives the images taken, any slug left or marked `needs-human`, and what
 `status.js summary --deck <deck>` says.

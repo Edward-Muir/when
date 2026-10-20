@@ -70,6 +70,30 @@ function suffix() {
   return Array.from(crypto.randomBytes(6), (b) => alphabet[b % alphabet.length]).join('');
 }
 
+/**
+ * Which qc-pass slugs still need uploading. A slug is done once `uploads.json` records a verified
+ * upload of the same source image (the Gemini download QC passed, `source_sha256`).
+ *
+ * Done-ness is never judged by the downsampled JPEG's bytes: downsampling again does not always
+ * give the same bytes, and on 2026-10-20 a re-run of ship took that as "changed" and uploaded 10
+ * Sweet Tooth images a second time under new ids. A slug whose source changed after its upload is
+ * a `conflict`, refused rather than uploaded again, so a duplicate can't be created by accident.
+ */
+function planUploads(status, uploads) {
+  const todo = [];
+  const done = [];
+  const conflicts = [];
+  for (const [slug, s] of Object.entries(status.slugs)) {
+    if (s.state !== 'qc-pass') continue;
+    const u = uploads[slug];
+    if (!u) todo.push(slug);
+    else if (u.verified && u.source_sha256 === s.sha256) done.push(slug);
+    else if (u.verified) conflicts.push(slug);
+    else todo.push(slug);
+  }
+  return { todo, done, conflicts };
+}
+
 async function upload(deck) {
   const dir = path.join(DECKS_DIR, deck);
   const status = readJson(path.join(dir, 'status.json'));
@@ -78,9 +102,16 @@ async function upload(deck) {
   }
   const uploadsFile = path.join(dir, 'uploads.json');
   const uploads = fs.existsSync(uploadsFile) ? readJson(uploadsFile) : {};
-  const slugs = Object.entries(status.slugs)
-    .filter(([, s]) => s.state === 'qc-pass')
-    .map(([slug]) => slug);
+  const plan = planUploads(status, uploads);
+  if (plan.conflicts.length) {
+    throw new Error(
+      `${plan.conflicts.join(', ')}: already uploaded from a different source image; ` +
+        'replace those by hand (and queue the old asset for deletion) rather than upload again'
+    );
+  }
+  const slugs = plan.todo;
+  if (!slugs.length)
+    console.log(`all ${plan.done.length} qc-pass images are already uploaded and verified`);
 
   // 1-2: check the source, archive it, downsample it.
   for (const slug of slugs) {
@@ -121,7 +152,6 @@ async function upload(deck) {
     const bytes = fs.readFileSync(local);
     const sha = hash('sha256', bytes);
     const done = uploads[slug];
-    if (done && done.sha256 === sha && done.verified) continue;
 
     // 3: nothing else may already sit on this slug.
     const listed = await sdk.api.resources({ type: 'upload', prefix: `${slug}_`, max_results: 50 });
@@ -135,10 +165,11 @@ async function upload(deck) {
     }
 
     // 4: upload, then prove the bytes.
-    const publicId = done && done.sha256 === sha ? done.public_id : `${slug}_${suffix()}`;
+    // An earlier attempt that never verified keeps its id and is overwritten, never duplicated.
+    const publicId = done ? done.public_id : `${slug}_${suffix()}`;
     const result = await sdk.uploader.upload(local, {
       public_id: publicId,
-      overwrite: Boolean(done && done.public_id === publicId),
+      overwrite: Boolean(done),
       resource_type: 'image',
       unique_filename: false,
       use_filename: false,
@@ -190,11 +221,13 @@ function verifyUrls(deck) {
     : {};
   const problems = [];
 
-  const diff = execFileSync('git', ['diff', '--unified=0', '--', 'public/events/'], {
-    cwd: REPO_ROOT,
-    encoding: 'utf8',
-    maxBuffer: 64 * 1024 * 1024,
-  });
+  // Everything this deck branch changed in the catalogue, committed or not, measured from where
+  // it left main. A resumed ship has already committed its URLs, so the working-tree diff alone
+  // would count none of them.
+  const git = (args) =>
+    execFileSync('git', args, { cwd: REPO_ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  const base = git(['merge-base', 'HEAD', process.env.FACTORY_BASE_REF || 'origin/main']).trim();
+  const diff = git(['diff', '--unified=0', base, '--', 'public/events/']);
   const removed = diff.split('\n').filter((l) => /^-\s*"image_url"/.test(l)).length;
   const added = diff.split('\n').filter((l) => /^\+\s*"image_url"/.test(l)).length;
   const expected = Object.keys(uploads).length;
@@ -230,4 +263,4 @@ async function main() {
 
 if (require.main === module) run(main);
 
-module.exports = { stemOf };
+module.exports = { planUploads, stemOf };
