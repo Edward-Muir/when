@@ -69,11 +69,29 @@ describe('slug transitions', () => {
     assert.equal(s.stage, 'scheduled');
   });
 
-  it('freezes the slugs once the deck is uploaded', () => {
+  it('freezes the slugs once the deck is uploaded, except a reset of a card with no art', () => {
+    const s = lib.create({ deck: 'demo', slugs: ['a', 'b'] });
+    lib.mark(s, 'a', 'downloaded', { sha256: SHA });
+    lib.mark(s, 'a', 'qc-pass');
+    lib.mark(s, 'b', 'needs-human', { reason: 'refused' });
+    lib.stage(s, 'uploaded');
+    assert.throws(() => lib.mark(s, 'b', 'downloaded', { sha256: SHA }), /is at uploaded/);
+    assert.throws(() => lib.reset(s, 'a'), /a is qc-pass and deck demo is uploaded/);
+    lib.reset(s, 'b');
+    assert.equal(s.stage, 'art-in-progress', 'back to art, so the next art batch takes it');
+    assert.deepEqual(
+      lib.nextBatch(s).map((e) => e.slug),
+      ['b']
+    );
+    assert.throws(() => lib.stage(s, 'pr-open'), /needs uploaded/);
+  });
+
+  it('refuses a reset once the PR is open', () => {
     const s = lib.create({ deck: 'demo', slugs: ['a'] });
     lib.mark(s, 'a', 'needs-human', { reason: 'refused' });
     lib.stage(s, 'uploaded');
-    assert.throws(() => lib.reset(s, 'a'), /is at uploaded/);
+    lib.stage(s, 'pr-open');
+    assert.throws(() => lib.reset(s, 'a'), /is at pr-open/);
   });
 
   it('rejects a hand-edited file that no longer makes sense', () => {
@@ -610,6 +628,38 @@ describe('auto: one task, the state machine picks the stage', () => {
     );
   });
 
+  it("never ships a deck with a card that has no art, and says it's waiting on Edward", () => {
+    const decks = [
+      deck('a', 'uploaded', ['qc-pass', 'needs-human']),
+      deck('b', 'ready-to-ship', ['needs-human']),
+    ];
+    const pick = pickStage({ decks, next: null, now, runLog: healthy });
+    assert.match(
+      pick.exit,
+      /^nothing to do; waiting: a needs Edward for a-1, b needs Edward for b-0$/
+    );
+    const reset = [deck('a', 'art-in-progress', ['qc-pass', 'pending'])];
+    assert.deepEqual(
+      [pickStage({ decks: reset, next, now, runLog: healthy })].map((p) => [p.stage, p.deck]),
+      [['art-batch', 'a']],
+      'once reset, the card goes back through art'
+    );
+  });
+
+  it('keeps authoring while decks wait on Edward, but not past 2 decks with work left', () => {
+    const stuck = [
+      deck('a', 'uploaded', ['qc-pass', 'needs-human']),
+      deck('b', 'ready-to-ship', ['needs-human']),
+    ];
+    const pick = pickStage({ decks: stuck, next, now, runLog: healthy });
+    assert.deepEqual([pick.stage, pick.deck], ['author', 'sweet-tooth']);
+    const working = [deck('c', 'ready-to-ship', ['qc-pass']), deck('d', 'authored', ['pending'])];
+    assert.match(
+      pickDeck('author', [...stuck, ...working], next).exit,
+      /^2 decks are still in progress \(c, d\)/
+    );
+  });
+
   it('backs off a stage that ended blocked or failed, and art that hit the quota until tomorrow', () => {
     const decks = [deck('a', 'authored', ['pending'])];
     const blocked = { ...healthy, 'art-batch': ran('blocked', BACKOFF_MS - 60000) };
@@ -894,5 +944,43 @@ describe('placement-first difficulty', () => {
     assert.match(run('--apply'), /cato-honey-cheesecake: very-hard -> easy/);
     const after = JSON.parse(fs.readFileSync(path.join(decks, 'demo', 'new-events.json'), 'utf8'));
     assert.equal(after[0].difficulty, 'easy');
+  });
+});
+
+describe('cloudinary-upload: never uploads a card twice', () => {
+  const { planUploads } = require('./cloudinary-upload');
+  const A = 'a'.repeat(64);
+  const B = 'b'.repeat(64);
+  const status = {
+    slugs: {
+      fresh: { state: 'qc-pass', sha256: A },
+      done: { state: 'qc-pass', sha256: A },
+      unverified: { state: 'qc-pass', sha256: A },
+      changed: { state: 'qc-pass', sha256: B },
+      missing: { state: 'needs-human', sha256: null },
+    },
+  };
+  const uploads = {
+    done: {
+      public_id: 'done_abc123',
+      source_sha256: A,
+      sha256: 'whatever-the-jpeg-was',
+      verified: true,
+    },
+    unverified: { public_id: 'unverified_def456', source_sha256: A, verified: false },
+    changed: { public_id: 'changed_ghi789', source_sha256: A, verified: true },
+  };
+
+  it('skips a verified upload of the same source, whatever a new downsample would give', () => {
+    assert.deepEqual(planUploads(status, uploads), {
+      todo: ['fresh', 'unverified'],
+      done: ['done'],
+      conflicts: ['changed'],
+    });
+  });
+
+  it('has nothing to do when every card is already uploaded', () => {
+    const all = { slugs: { done: status.slugs.done } };
+    assert.deepEqual(planUploads(all, uploads), { todo: [], done: ['done'], conflicts: [] });
   });
 });

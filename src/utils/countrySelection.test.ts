@@ -26,6 +26,28 @@ import { isCloudinaryImage } from './cloudinaryImage';
 import { HistoricalEvent } from '../types';
 
 const EVENTS_DIR = path.join(__dirname, '..', '..', 'public', 'events');
+const FACTORY_DECKS_DIR = path.join(__dirname, '..', '..', 'factory', 'decks');
+
+/**
+ * Every card a factory deck added (factory/decks/<id>/new-events.json; see
+ * docs/curated-themes/factory.md). Snapshot counts measured before the factory leave these out,
+ * so a new deck doesn't break a test about something else.
+ */
+function factoryAddedSlugs(): Set<string> {
+  const slugs = new Set<string>();
+  // eslint-disable-next-line security/detect-non-literal-fs-filename -- fixed path
+  if (!fs.existsSync(FACTORY_DECKS_DIR)) return slugs;
+  // eslint-disable-next-line security/detect-non-literal-fs-filename -- fixed path
+  for (const deck of fs.readdirSync(FACTORY_DECKS_DIR)) {
+    const file = path.join(FACTORY_DECKS_DIR, deck, 'new-events.json');
+    // eslint-disable-next-line security/detect-non-literal-fs-filename -- under a fixed path
+    if (!fs.existsSync(file)) continue;
+    // eslint-disable-next-line security/detect-non-literal-fs-filename -- under a fixed path
+    const added = JSON.parse(fs.readFileSync(file, 'utf8')) as { name: string }[];
+    for (const event of added) slugs.add(event.name);
+  }
+  return slugs;
+}
 
 function loadCatalogue(): HistoricalEvent[] {
   const manifest = JSON.parse(
@@ -194,13 +216,16 @@ describe('against the real catalogue', () => {
   /**
    * Settings and share codes from before exclusions stored picks. Converted, each deals the
    * pool it always did, measured with the old filter on 2026-09-30 over this same loader, less
-   * the cards retired since (two Europe-tagged duplicates on 2026-10-10).
+   * the cards retired since (two Europe-tagged duplicates on 2026-10-10). Cards added by factory
+   * decks are left out, so the numbers move only when a card measured here changes.
    * The one exception is recorded in `legacyPicksToExclusions`: a transcontinental pick no
    * longer reaches a side that is not selected.
    */
   it('converts old picks to the pool they dealt', () => {
+    const factoryAdded = factoryAddedSlugs();
+    const measured = catalogue.filter((e) => !factoryAdded.has(e.name));
     const legacy = (regions: string[], countries: string[]) =>
-      count({ regions, excluded: legacyPicksToExclusions(regions, countries) });
+      filterByRegion(measured, regions, legacyPicksToExclusions(regions, countries)).length;
     expect(legacy([...ALL_REGIONS], ['United Kingdom'])).toBe(4084);
     expect(legacy(['Europe'], ['Germany'])).toBe(326);
     expect(legacy(['Europe', 'East Asia'], ['Germany', 'Japan'])).toBe(473);
