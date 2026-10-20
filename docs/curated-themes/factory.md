@@ -68,7 +68,7 @@ Today each curated theme is built by hand across several sessions:
 1. **list health**, when its last run is a week old;
 2. **schedule**, when a merged deck isn't on the calendar and it hasn't run today;
 3. **ship**, then **QC**, then an **art batch**: downstream first, so the deck in flight finishes before another starts;
-4. **author**, while fewer than 2 decks are between authoring and `pr-open`;
+4. **author**, while fewer than 2 decks are between authoring and `pr-open`. A deck waiting only on Edward (a `needs-human` card) doesn't count, so the factory keeps making decks while it waits;
 5. otherwise the run exits at once, which costs almost nothing.
 
 Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The outcome goes to a run log, `../when-images/factory-runs.json`, outside git.
@@ -76,6 +76,24 @@ Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The out
 - A stage whose last run ended `blocked` or `failed` is skipped for 6 hours, so one broken stage can't take every run. Chrome signed out is one example; a merge conflict is another, and `start.js` logs that one itself.
 - An art batch that hit Gemini's daily cap is skipped until the next local day.
 - Naming a stage forces it and ignores the backoff: "Run the deck-factory skill, stage: qc" in an ordinary session in the clone. That is for debugging and manual runs.
+
+**How it stalls, and what each needs.** Edward checks the runs himself (no notifications, his call on 2026-10-20), so every stall either fixes itself or names itself in the run's report.
+
+- **Fixed in code, so they don't stall it:**
+  - a re-run of ship doesn't upload twice, and resumes;
+  - a card with no art never ships, and its deck stops taking an author slot;
+  - an art batch in which no slug moved (a changed Gemini page, say) ends `blocked`, so art backs off for 6 hours and the other stages run meanwhile. Before, it ended `ok` and repeated every run.
+- **Edward's, named in the report** (the exit reason, `refresh_blocked`, or a `blocked` outcome with its reason):
+
+  | Stall                                           | What Edward does                                              |
+  | ----------------------------------------------- | ------------------------------------------------------------- |
+  | a `needs-human` card                            | rewrites its scene, regenerates the prompt, `status.js reset` |
+  | a merge conflict between main and a deck branch | resolves it on the deck branch                                |
+  | a merged deck not on the calendar               | dispatches the publish                                        |
+  | a failing test or check at ship                 | fixes the test or the deck; the next ship retries             |
+  | a Cloudinary refusal                            | sorts the slug's asset out by hand                            |
+  | Chrome signed out of Google                     | signs in                                                      |
+  | the backlog is empty                            | runs a `theme-list` session                                   |
 
 **Why one task rather than six.** The state machine already knew what every deck needed, so a task per stage only encoded "which stage to try". That cost six folders to set by hand, six permission lists to approve and six schedules to stagger. Desktop also skips a run while another is running, which the lock handles anyway. One task needs one folder and one set of approvals. Each run is still a fresh session doing one stage, so art stays capped at 10 images a session, and QC never shares a context with the browser work.
 

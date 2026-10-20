@@ -116,7 +116,8 @@ click it and choose Pro.
   Then commit and push the status, as in step 9. The deck can't ship until Edward rewrites the
   scene and resets the card.
 - **STATE D: a Google sign-in screen.** Don't enter credentials. Leave the slug as it is, stop
-  the run, and report that Chrome is signed out of Google, so Edward needs to sign in.
+  the run, unlock with `--outcome blocked`, and report that Chrome is signed out of Google, so
+  Edward needs to sign in.
 - **Three full recoveries fail on one slug:** leave it as it is (it stays in the queue) and go
   on to the next.
 - **"I can't create more images for you today":** stop the whole session, and unlock with
@@ -125,5 +126,14 @@ click it and choose Pro.
 ## When to stop
 
 After the last item of the batch, or one of the stops above. Budget about 3 minutes per slug.
-Then unlock. The report gives the images taken, any slug left or marked `needs-human`, and what
+Then unlock:
+
+- **`--outcome blocked` if no slug moved:** nothing downloaded and nothing marked `needs-human`,
+  without the quota message. That means Gemini or Chrome is broken in a way the playbook doesn't
+  cover, such as a changed page. Report what the page showed. The `blocked` outcome makes `auto`
+  leave art alone for 6 hours, instead of repeating the same failing batch every run while the
+  other stages wait.
+- `--outcome ok` otherwise, even if some slugs were left in the queue.
+
+The report gives the images taken, any slug left or marked `needs-human`, and what
 `status.js summary --deck <deck>` says.

@@ -181,10 +181,12 @@ function pickDeck(stage, decks, next) {
     // A deck whose authoring crashed has a branch but no status.json yet: finish it first.
     const resume = decks.find((d) => !d.status && d.backlogStatus === 'authoring');
     if (resume) return { deck: resume.id, isNew: false, resumed: true };
+    // A deck waiting only on Edward (a card with no art) doesn't hold a slot: the factory keeps
+    // making decks while it waits, and the exit reason keeps naming it.
     const inFlight = decks.filter(
       (d) =>
         (!d.status && d.backlogStatus === 'authoring') ||
-        (d.status && IN_FLIGHT_STAGES.has(d.status.stage))
+        (d.status && IN_FLIGHT_STAGES.has(d.status.stage) && !needsHuman(d).length)
     );
     if (inFlight.length >= MAX_IN_FLIGHT) {
       return {
@@ -201,17 +203,16 @@ function pickDeck(stage, decks, next) {
 /** The local calendar day, for "once a day" and "until tomorrow". */
 const localDay = (t) => new Date(t).toLocaleDateString('en-CA');
 
-/** Finished decks that ship won't take until Edward resets their card that has no art. */
+/** A finished deck's cards that have no art, which ship won't take until Edward resets them. */
+function needsHuman(d) {
+  if (!d.status || !['ready-to-ship', 'uploaded'].includes(d.status.stage)) return [];
+  return Object.keys(d.status.slugs).filter((slug) => d.status.slugs[slug].state === 'needs-human');
+}
+
 function waitingOnEdward(decks) {
   return decks
-    .filter((d) => d.status && ['ready-to-ship', 'uploaded'].includes(d.status.stage))
-    .map((d) => {
-      const human = Object.keys(d.status.slugs).filter(
-        (slug) => d.status.slugs[slug].state === 'needs-human'
-      );
-      return human.length ? `${d.id} needs Edward for ${human.join(', ')}` : null;
-    })
-    .filter(Boolean);
+    .filter((d) => needsHuman(d).length)
+    .map((d) => `${d.id} needs Edward for ${needsHuman(d).join(', ')}`);
 }
 
 /**

@@ -633,8 +633,7 @@ describe('auto: one task, the state machine picks the stage', () => {
       deck('a', 'uploaded', ['qc-pass', 'needs-human']),
       deck('b', 'ready-to-ship', ['needs-human']),
     ];
-    const busy = Array.from({ length: 2 }, (_, i) => deck(`f${i}`, 'pr-open', ['qc-pass']));
-    const pick = pickStage({ decks: [...decks, ...busy], next, now, runLog: healthy });
+    const pick = pickStage({ decks, next: null, now, runLog: healthy });
     assert.match(
       pick.exit,
       /^nothing to do; waiting: a needs Edward for a-1, b needs Edward for b-0$/
@@ -644,6 +643,20 @@ describe('auto: one task, the state machine picks the stage', () => {
       [pickStage({ decks: reset, next, now, runLog: healthy })].map((p) => [p.stage, p.deck]),
       [['art-batch', 'a']],
       'once reset, the card goes back through art'
+    );
+  });
+
+  it('keeps authoring while decks wait on Edward, but not past 2 decks with work left', () => {
+    const stuck = [
+      deck('a', 'uploaded', ['qc-pass', 'needs-human']),
+      deck('b', 'ready-to-ship', ['needs-human']),
+    ];
+    const pick = pickStage({ decks: stuck, next, now, runLog: healthy });
+    assert.deepEqual([pick.stage, pick.deck], ['author', 'sweet-tooth']);
+    const working = [deck('c', 'ready-to-ship', ['qc-pass']), deck('d', 'authored', ['pending'])];
+    assert.match(
+      pickDeck('author', [...stuck, ...working], next).exit,
+      /^2 decks are still in progress \(c, d\)/
     );
   });
 
