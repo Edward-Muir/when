@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T20:07:11.543Z",
+  "updated_at": "2026-10-20T21:08:37.461Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-20T20:07:11.476Z"
     },
     "haitian-revolution-uprising-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "02303cf00b535f5933f226dcf05b960fbd1028e4abc21f5c6cb613a9d9ce1050",
+      "updated_at": "2026-10-20T21:08:37.461Z"
     },
     "narino-prints-rights-of-man": {
       "state": "qc-pass",
