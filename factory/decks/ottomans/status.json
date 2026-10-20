@@ -1,21 +1,26 @@
 {
   "deck": "ottomans",
   "name": "Sublime Porte",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-20T02:19:33.015Z",
-  "updated_at": "2026-10-20T02:19:33.015Z",
+  "updated_at": "2026-10-20T03:08:43.694Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-20T02:19:33.015Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-20T03:08:43.694Z"
     }
   ],
   "slugs": {
     "battle-of-ankara-timur-bayezid": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4b4e509411e0e32f4cc315745970d2cb80fd7ce5da8b40c055f415ddb5b45411",
+      "updated_at": "2026-10-20T03:08:43.694Z"
     },
     "bayezid-welcomes-sephardic-jews": {
       "state": "pending",
