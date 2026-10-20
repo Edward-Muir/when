@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T23:17:27.443Z",
+  "updated_at": "2026-10-20T23:20:43.616Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-20T23:17:27.443Z"
     },
     "spain-leaves-santo-domingo": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8119da171bb0d6de97087a1fb378cb9469ea680e044f655c0160242c21c5d072",
+      "updated_at": "2026-10-20T23:20:43.616Z"
     },
     "grito-de-yara": {
       "state": "pending",
