@@ -12513,7 +12513,12 @@
     "year": 1402,
     "category": "empires",
     "description": "Timur's army crushed the Ottomans and captured Sultan Bayezid, plunging the young state into a decade of civil war.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Uzbekistan",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "bayezid-welcomes-sephardic-jews",
@@ -12521,7 +12526,13 @@
     "year": 1492,
     "category": "migration",
     "description": "Fleeing expulsion from Spain, Jewish refugees were invited into Ottoman lands, settling in Salonica and Istanbul.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Spain",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "selim-i-conquers-egypt-mamluks",
@@ -12529,7 +12540,12 @@
     "year": 1517,
     "category": "empires",
     "description": "Sultan Selim defeated the Mamluks and took Cairo, bringing the Arab heartlands and the holy cities under Ottoman rule.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "battle-of-mohacs-ottoman-hungary",
@@ -12537,7 +12553,12 @@
     "year": 1526,
     "category": "warfare",
     "description": "Suleiman's army destroyed the Hungarian royal host in under two hours, killing King Louis II and opening central Europe.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Hungary",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "treaty-of-karlowitz-ottoman",
@@ -12545,7 +12566,14 @@
     "year": 1699,
     "category": "diplomacy",
     "description": "Defeated by the Holy League, the Ottomans ceded Hungary and Transylvania to the Habsburgs in their first major territorial loss.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Austria",
+      "Hungary",
+      "Serbia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "ibrahim-muteferrika-first-printed-book",
@@ -12553,7 +12581,11 @@
     "year": 1729,
     "category": "writing",
     "description": "Ibrahim Muteferrika, a Hungarian-born convert, ran the first Muslim-run Ottoman press and issued a dictionary in Turkish.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "treaty-of-kucuk-kaynarca",
@@ -12561,7 +12593,13 @@
     "year": 1774,
     "category": "diplomacy",
     "description": "A crushing defeat by Catherine the Great's Russia forced the Ottomans to cede Black Sea ports and free the Crimean Khanate.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Bulgaria",
+      "Russia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "janissaries-abolished-auspicious-incident",
@@ -12569,7 +12607,11 @@
     "year": 1826,
     "category": "warfare",
     "description": "Sultan Mahmud II destroyed the rebellious elite infantry corps in an Istanbul massacre, clearing the way for a modern army.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "tanzimat-reforms-gulhane-edict",
@@ -12577,7 +12619,11 @@
     "year": 1839,
     "category": "law",
     "description": "The Gulhane decree promised all Ottoman subjects security of life and property, launching decades of modernising reform.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "ottoman-constitution-midhat-pasha",
@@ -12585,7 +12631,11 @@
     "year": 1876,
     "category": "law",
     "description": "Drafted by Midhat Pasha, a constitution created a parliament for the empire, but the sultan suspended it within two years.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "ottomans-enter-first-world-war",
@@ -12593,7 +12643,13 @@
     "year": 1914,
     "category": "warfare",
     "description": "Ottoman warships shelled Russian Black Sea ports, bringing the empire into the conflict alongside Germany.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Turkey",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "armistice-of-mudros",
@@ -12601,7 +12657,13 @@
     "year": 1918,
     "category": "diplomacy",
     "description": "Aboard a British warship, the Ottomans signed an armistice ending their fighting and opening Istanbul to Allied occupation.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Turkey",
+      "United Kingdom",
+      "Europe"
+    ]
   },
   {
     "name": "ottoman-sultanate-abolished",
@@ -12609,6 +12671,11 @@
     "year": 1922,
     "category": "empires",
     "description": "Turkey's nationalist assembly ended the sultanate, and the last sultan, Mehmed VI, left Istanbul aboard a British warship.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe",
+      "Middle East & North Africa"
+    ]
   }
 ]
