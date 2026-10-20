@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T21:18:53.442Z",
+  "updated_at": "2026-10-20T21:21:24.509Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-20T21:18:53.442Z"
     },
     "san-martin-crosses-andes": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ce650ad0fb94d58d6801a6002b83ebc1b139604ee6bca3fce9336eb9c589f0ef",
+      "updated_at": "2026-10-20T21:21:24.509Z"
     },
     "battle-of-boyaca": {
       "state": "pending",
