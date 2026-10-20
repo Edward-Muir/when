@@ -1,9 +1,9 @@
 {
   "deck": "silicon-dreams",
   "name": "Silicon Dreams",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T17:06:56.559Z",
+  "updated_at": "2026-10-20T18:06:47.899Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-20T17:06:56.559Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-20T18:06:47.899Z"
     }
   ],
   "slugs": {
