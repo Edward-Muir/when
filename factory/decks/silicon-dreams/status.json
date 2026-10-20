@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T13:07:23.109Z",
+  "updated_at": "2026-10-20T16:49:45.589Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,11 +100,11 @@
       "updated_at": "2026-10-20T13:07:22.912Z"
     },
     "imac-launched": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The word 'iMac' is clearly legible on the bezel below the screen. Repaint the chin without any lettering.",
-      "sha256": "6678e10702d1a452c32772e470552406cb3bc5d7ee14bc6df32e32632c7c5b48",
-      "updated_at": "2026-10-20T13:07:22.946Z"
+      "sha256": "0fcc6985ea128f7f157e4612eb0f8faf68122613d005fb81d69d5c022f7648cf",
+      "updated_at": "2026-10-20T16:49:45.589Z"
     },
     "nvidia-geforce-256-gpu": {
       "state": "qc-pass",
