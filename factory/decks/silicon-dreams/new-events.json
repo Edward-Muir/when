@@ -13,7 +13,7 @@
     "year": 1906,
     "category": "invention",
     "description": "A three-element vacuum tube could amplify and switch signals, the building block of early electronic computers.",
-    "difficulty": "hard"
+    "difficulty": "easy"
   },
   {
     "name": "eccles-jordan-flip-flop",
@@ -21,7 +21,7 @@
     "year": 1918,
     "category": "invention",
     "description": "Two vacuum tubes wired to hold one of two stable states gave electronics its first memory cell.",
-    "difficulty": "very-hard"
+    "difficulty": "hard"
   },
   {
     "name": "bush-differential-analyzer",
@@ -29,7 +29,7 @@
     "year": 1931,
     "category": "invention",
     "description": "A room-sized analog machine at MIT solved differential equations with rotating shafts and gears.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "zuse-z3-computer",
@@ -37,7 +37,7 @@
     "year": 1941,
     "category": "invention",
     "description": "The first working programmable, fully automatic digital computer ran on telephone relays in Berlin.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "manchester-baby-runs-program",
@@ -45,7 +45,7 @@
     "year": 1948,
     "category": "invention",
     "description": "The first computer to run a program from electronic memory filled a room at a British university.",
-    "difficulty": "hard"
+    "difficulty": "easy"
   },
   {
     "name": "univac-i-delivered",
@@ -53,7 +53,7 @@
     "year": 1951,
     "category": "invention",
     "description": "The first commercial computer built in the United States went to the Census Bureau and later predicted an election.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "kilby-first-integrated-circuit",
@@ -61,7 +61,7 @@
     "year": 1958,
     "category": "invention",
     "description": "Jack Kilby built a working circuit with several components on one slice of semiconductor, shrinking electronics for good.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "ibm-system-360-announced",
@@ -69,7 +69,7 @@
     "year": 1964,
     "category": "invention",
     "description": "IBM bet the company on one family of compatible mainframes sharing software across a range of sizes and prices.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "apple-ii-released",
@@ -93,7 +93,7 @@
     "year": 1985,
     "category": "invention",
     "description": "A small British team's low-power RISC chip worked on its first try and later powered most mobile devices.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "imac-launched",
@@ -109,7 +109,7 @@
     "year": 1999,
     "category": "invention",
     "description": "Nvidia's GeForce 256 put transform and lighting on one graphics chip and popularised the term GPU.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "ibm-quantum-factors-15",
@@ -117,7 +117,7 @@
     "year": 2001,
     "category": "science",
     "description": "A seven-qubit molecule-based machine ran Shor's algorithm to factor a small number, a first for quantum hardware.",
-    "difficulty": "very-hard"
+    "difficulty": "medium"
   },
   {
     "name": "roadrunner-petaflop-supercomputer",
@@ -125,7 +125,7 @@
     "year": 2008,
     "category": "invention",
     "description": "Los Alamos's Cell-and-Opteron machine was the first supercomputer to sustain a quadrillion operations per second.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "ibm-watson-jeopardy",
@@ -149,7 +149,7 @@
     "year": 2020,
     "category": "invention",
     "description": "Apple's own Arm-based system-on-a-chip replaced Intel processors in its Mac computers.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "frontier-exascale-supercomputer",
@@ -157,7 +157,7 @@
     "year": 2022,
     "category": "invention",
     "description": "Oak Ridge's Frontier became the first supercomputer to top a quintillion calculations per second.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "google-willow-quantum-chip",
@@ -165,6 +165,6 @@
     "year": 2024,
     "category": "invention",
     "description": "Google's 105-qubit chip showed error rates falling as qubits were added, a milestone for quantum error correction.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   }
 ]

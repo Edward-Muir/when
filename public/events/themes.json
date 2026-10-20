@@ -12506,5 +12506,173 @@
     "regions": [
       "United Kingdom"
     ]
+  },
+  {
+    "name": "hollerith-tabulator-census",
+    "friendly_name": "Hollerith Tabulator Tallies Census",
+    "year": 1890,
+    "category": "invention",
+    "description": "Punched cards fed an electric tabulating machine that counted a national population far faster than hand tallying.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "de-forest-triode-audion",
+    "friendly_name": "De Forest Invents the Triode Tube",
+    "year": 1906,
+    "category": "invention",
+    "description": "A three-element vacuum tube could amplify and switch signals, the building block of early electronic computers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "eccles-jordan-flip-flop",
+    "friendly_name": "Eccles-Jordan Flip-Flop Circuit",
+    "year": 1918,
+    "category": "invention",
+    "description": "Two vacuum tubes wired to hold one of two stable states gave electronics its first memory cell.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bush-differential-analyzer",
+    "friendly_name": "Bush's Differential Analyzer Runs",
+    "year": 1931,
+    "category": "invention",
+    "description": "A room-sized analog machine at MIT solved differential equations with rotating shafts and gears.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zuse-z3-computer",
+    "friendly_name": "Zuse's Z3 Computes",
+    "year": 1941,
+    "category": "invention",
+    "description": "The first working programmable, fully automatic digital computer ran on telephone relays in Berlin.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "manchester-baby-runs-program",
+    "friendly_name": "Manchester Baby Runs a Program",
+    "year": 1948,
+    "category": "invention",
+    "description": "The first computer to run a program from electronic memory filled a room at a British university.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "univac-i-delivered",
+    "friendly_name": "UNIVAC I Delivered",
+    "year": 1951,
+    "category": "invention",
+    "description": "The first commercial computer built in the United States went to the Census Bureau and later predicted an election.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kilby-first-integrated-circuit",
+    "friendly_name": "First Integrated Circuit Built",
+    "year": 1958,
+    "category": "invention",
+    "description": "Jack Kilby built a working circuit with several components on one slice of semiconductor, shrinking electronics for good.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ibm-system-360-announced",
+    "friendly_name": "IBM Announces System/360",
+    "year": 1964,
+    "category": "invention",
+    "description": "IBM bet the company on one family of compatible mainframes sharing software across a range of sizes and prices.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "apple-ii-released",
+    "friendly_name": "Apple II Goes on Sale",
+    "year": 1977,
+    "category": "invention",
+    "description": "A colour-capable, ready-to-use microcomputer in a plastic case brought home computing to ordinary buyers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ibm-pc-launched",
+    "friendly_name": "IBM PC Launched",
+    "year": 1981,
+    "category": "invention",
+    "description": "IBM's open-architecture desktop machine with an Intel chip set the standard for personal computers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "arm1-processor-first-runs",
+    "friendly_name": "ARM1 Processor First Runs",
+    "year": 1985,
+    "category": "invention",
+    "description": "A small British team's low-power RISC chip worked on its first try and later powered most mobile devices.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "imac-launched",
+    "friendly_name": "Apple Launches the Original iMac",
+    "year": 1998,
+    "category": "invention",
+    "description": "A translucent, all-in-one computer with no floppy drive revived Apple and made computers look friendly.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "nvidia-geforce-256-gpu",
+    "friendly_name": "Nvidia Brands the First GPU",
+    "year": 1999,
+    "category": "invention",
+    "description": "Nvidia's GeForce 256 put transform and lighting on one graphics chip and popularised the term GPU.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ibm-quantum-factors-15",
+    "friendly_name": "IBM Quantum Computer Factors 15",
+    "year": 2001,
+    "category": "science",
+    "description": "A seven-qubit molecule-based machine ran Shor's algorithm to factor a small number, a first for quantum hardware.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roadrunner-petaflop-supercomputer",
+    "friendly_name": "Roadrunner Hits a Petaflop",
+    "year": 2008,
+    "category": "invention",
+    "description": "Los Alamos's Cell-and-Opteron machine was the first supercomputer to sustain a quadrillion operations per second.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ibm-watson-jeopardy",
+    "friendly_name": "IBM Watson Wins at Jeopardy",
+    "year": 2011,
+    "category": "invention",
+    "description": "IBM's question-answering supercomputer beat two champions on a televised quiz show.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "raspberry-pi-released",
+    "friendly_name": "Raspberry Pi Goes on Sale",
+    "year": 2012,
+    "category": "invention",
+    "description": "A credit-card-sized, cheap single-board computer was launched to teach programming and sold in millions.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "apple-m1-chip",
+    "friendly_name": "Apple Unveils the M1 Chip",
+    "year": 2020,
+    "category": "invention",
+    "description": "Apple's own Arm-based system-on-a-chip replaced Intel processors in its Mac computers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "frontier-exascale-supercomputer",
+    "friendly_name": "Frontier Reaches Exascale",
+    "year": 2022,
+    "category": "invention",
+    "description": "Oak Ridge's Frontier became the first supercomputer to top a quintillion calculations per second.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "google-willow-quantum-chip",
+    "friendly_name": "Google Unveils Willow Quantum Chip",
+    "year": 2024,
+    "category": "invention",
+    "description": "Google's 105-qubit chip showed error rates falling as qubits were added, a milestone for quantum error correction.",
+    "difficulty": "medium"
   }
 ]
