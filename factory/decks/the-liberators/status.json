@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T19:12:37.681Z",
+  "updated_at": "2026-10-20T19:26:20.180Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -36,10 +36,11 @@
       "sha256": null
     },
     "narino-prints-rights-of-man": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5ef73991eb173f9cdf8457ec5b0eb626cf257fc84fd3605149cd81265c0b526f",
+      "updated_at": "2026-10-20T19:26:20.180Z"
     },
     "gual-espana-conspiracy": {
       "state": "pending",
