@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:04:29.082Z",
+  "updated_at": "2026-10-20T12:07:06.627Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-20T12:04:29.082Z"
     },
     "kilby-first-integrated-circuit": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a81d3e759a5c3b84849eb54e7730733c3cb668dfc752398351fece98178e9d8b",
+      "updated_at": "2026-10-20T12:07:06.627Z"
     },
     "ibm-system-360-announced": {
       "state": "pending",
