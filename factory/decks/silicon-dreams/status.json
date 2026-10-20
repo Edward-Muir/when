@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T16:55:09.478Z",
+  "updated_at": "2026-10-20T16:57:39.777Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-20T16:55:09.478Z"
     },
     "google-willow-quantum-chip": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cab3c75e00c0a34b1a57b637ed7c3e66c8ca607d9ebb7320258220bb67a33904",
+      "updated_at": "2026-10-20T16:57:39.777Z"
     }
   }
 }
