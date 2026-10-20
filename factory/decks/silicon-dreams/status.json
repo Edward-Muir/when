@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:41:07.975Z",
+  "updated_at": "2026-10-20T12:43:48.426Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-20T12:41:07.975Z"
     },
     "imac-launched": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6678e10702d1a452c32772e470552406cb3bc5d7ee14bc6df32e32632c7c5b48",
+      "updated_at": "2026-10-20T12:43:48.426Z"
     },
     "nvidia-geforce-256-gpu": {
       "state": "pending",
