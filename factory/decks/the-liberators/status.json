@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T21:29:01.119Z",
+  "updated_at": "2026-10-20T21:32:57.817Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-20T21:29:01.119Z"
     },
     "duarte-founds-la-trinitaria": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5a632802ec6be5387c9590c022361905cf0861fd8041c93d584699ec04525873",
+      "updated_at": "2026-10-20T21:32:57.817Z"
     },
     "dominican-independence-declared": {
       "state": "pending",
