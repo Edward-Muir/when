@@ -123,6 +123,12 @@ Commit after each pipeline, with a message naming it.
    - Follow the scene rules in `docs/events-images/index.md`: never describe text, no colour
      adjectives, figurative not establishing, likenesses by posture, deaths non-graphic, and a
      "Birth of X" card pictures X in their active years ("not a birth scene").
+   - **Recent, famous, real people are never in the picture.** For an event from about the last
+     century whose story is a few named, recognisable people (founders, bands, athletes,
+     politicians), the scene shows the place, the object or the result: the converted petrol
+     station that became the first scoop shop, the cones on its counter, and no people. Gemini
+     refuses likenesses of real people, and a refused card leaves the whole deck unshippable. An
+     older figure in a crowd scene, or a figure who is only a posture, is still fine.
    - Keep each `scene` to one or two sentences. Name what must be in the picture and anything
      easy to get wrong ("the remote is a toy-like ray gun, not a handgun").
 3. **The prompts**:

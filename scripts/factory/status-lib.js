@@ -138,10 +138,20 @@ function mark(status, slug, state, opts = {}, now = Date.now()) {
   return { state: recorded };
 }
 
-/** A human's way back: the slug starts again with a fresh retry budget. */
+/**
+ * A human's way back: the slug starts again with a fresh retry budget. Allowed until the PR is
+ * open; an `uploaded` deck goes back to the art stages, and ship later uploads only the cards it
+ * hasn't (cloudinary-upload.js planUploads).
+ */
 function reset(status, slug, now = Date.now()) {
   const entry = status.slugs[slug];
   if (!entry) fail(`${slug} is not in deck ${status.deck}`);
+  if (status.stage === 'uploaded') {
+    // Its other cards' art is already on Cloudinary; only a card that never got art can restart.
+    if (entry.state !== 'needs-human')
+      fail(`${slug} is ${entry.state} and deck ${status.deck} is uploaded`);
+    setStage(status, 'art-in-progress', now);
+  }
   if (!ART_STAGES.includes(status.stage)) fail(`deck ${status.deck} is at ${status.stage}`);
   Object.assign(entry, { state: 'pending', attempts: 0, reason: null, sha256: null });
   entry.updated_at = iso(now);
