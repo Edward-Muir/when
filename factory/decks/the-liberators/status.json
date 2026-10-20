@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T23:10:37.743Z",
+  "updated_at": "2026-10-20T23:14:11.449Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-20T23:10:37.743Z"
     },
     "narciso-lopez-invades-cuba": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "20f3b87fe0ad0b60ebd9a4b593b9d081ca868e80730df641f9147517dce96e56",
+      "updated_at": "2026-10-20T23:14:11.449Z"
     },
     "dominicans-rise-capotillo": {
       "state": "pending",
