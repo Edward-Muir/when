@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T21:32:57.817Z",
+  "updated_at": "2026-10-20T22:06:55.288Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-10-20T20:07:11.476Z"
     },
     "haitian-revolution-uprising-begins": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "02303cf00b535f5933f226dcf05b960fbd1028e4abc21f5c6cb613a9d9ce1050",
-      "updated_at": "2026-10-20T21:08:37.461Z"
+      "updated_at": "2026-10-20T22:06:55.010Z"
     },
     "narino-prints-rights-of-man": {
       "state": "qc-pass",
@@ -51,67 +51,67 @@
       "updated_at": "2026-10-20T20:07:11.543Z"
     },
     "toussaint-louverture-captured": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "48ffbab2bc418756337495ac08479ecc21a416aa5fc2dbcf56393be1699b530b",
-      "updated_at": "2026-10-20T21:11:15.315Z"
+      "updated_at": "2026-10-20T22:06:55.041Z"
     },
     "portuguese-court-reaches-brazil": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "522c338175419045b9d49665b745ebc8b8c03b4311b5b80e5313f69537fb44b9",
-      "updated_at": "2026-10-20T21:13:48.351Z"
+      "updated_at": "2026-10-20T22:06:55.071Z"
     },
     "grito-de-dolores": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e000e967157559059a4ccbfd063d871064b02d57280ede2ce8bdd771f8c0f258",
-      "updated_at": "2026-10-20T21:16:21.646Z"
+      "updated_at": "2026-10-20T22:06:55.101Z"
     },
     "bolivar-named-el-libertador": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b2d3d35ad1e1a21bb18fe8176868cca215dd391de637ed974edf1c804115caab",
-      "updated_at": "2026-10-20T21:18:53.442Z"
+      "updated_at": "2026-10-20T22:06:55.132Z"
     },
     "san-martin-crosses-andes": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ce650ad0fb94d58d6801a6002b83ebc1b139604ee6bca3fce9336eb9c589f0ef",
-      "updated_at": "2026-10-20T21:21:24.509Z"
+      "updated_at": "2026-10-20T22:06:55.163Z"
     },
     "battle-of-boyaca": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "808f14d0880a2e33e71f8230c0900e992cb461ab6175132aa5fc5839834d2581",
-      "updated_at": "2026-10-20T21:23:57.201Z"
+      "updated_at": "2026-10-20T22:06:55.194Z"
     },
     "bolivar-dies-santa-marta": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a9c8e235fad30695388f31e5d5e98aa8d4a568dd6506e9612d4b2ff4c795e24a",
-      "updated_at": "2026-10-20T21:26:28.854Z"
+      "updated_at": "2026-10-20T22:06:55.224Z"
     },
     "spain-recognizes-mexico": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e1cfeabf27aeabb1088445610ccfabacbc18d440e0542b8761285547e7dcfc7a",
-      "updated_at": "2026-10-20T21:29:01.119Z"
+      "updated_at": "2026-10-20T22:06:55.255Z"
     },
     "duarte-founds-la-trinitaria": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5a632802ec6be5387c9590c022361905cf0861fd8041c93d584699ec04525873",
-      "updated_at": "2026-10-20T21:32:57.817Z"
+      "updated_at": "2026-10-20T22:06:55.288Z"
     },
     "dominican-independence-declared": {
       "state": "pending",
