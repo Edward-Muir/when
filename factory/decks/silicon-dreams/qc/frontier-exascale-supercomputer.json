@@ -1,0 +1,15 @@
+{
+  "slug": "frontier-exascale-supercomputer",
+  "description": "A dark, painterly interior of a long server hall. Rows of tall black cabinets line both sides, with small blue and orange status lights glowing on them. Thick cables run along the ceiling and large silver pipes run along the floor. A single figure in a dark jacket stands at a lit terminal at the far end of the aisle. No visible text, frame or border; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

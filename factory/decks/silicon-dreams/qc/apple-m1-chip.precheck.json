@@ -1,0 +1,20 @@
+{
+  "slug": "apple-m1-chip",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "015d98a0e11bdbc47c18d5b1b03275b3c7926d3559554c2ccace61a68c4d282c",
+  "dhash": "60d0b0b094e4f060",
+  "nearest": {
+    "deck": {
+      "slug": "roadrunner-petaflop-supercomputer",
+      "distance": 18
+    },
+    "catalogue": {
+      "slug": "jamestown-founded",
+      "distance": 11
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

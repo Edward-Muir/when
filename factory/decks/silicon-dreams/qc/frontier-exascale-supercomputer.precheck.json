@@ -1,0 +1,20 @@
+{
+  "slug": "frontier-exascale-supercomputer",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "03786b98c11d02230837b86c561a0b3e67aad542e80e3089bbe7345ecb7e04d8",
+  "dhash": "5ddcccecccf878cc",
+  "nearest": {
+    "deck": {
+      "slug": "roadrunner-petaflop-supercomputer",
+      "distance": 20
+    },
+    "catalogue": {
+      "slug": "immaculate-reception",
+      "distance": 13
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

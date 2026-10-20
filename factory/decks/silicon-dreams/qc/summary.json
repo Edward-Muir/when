@@ -84,11 +84,11 @@
     "description": "A dim, candlelit electronics workbench painting. A analog multimeter with a needle dial and red and black probes sits at left, with a lit candle behind it. At the back sits a beige 1980s desktop computer with a CRT monitor and a floppy drive. In the centre, a green circuit board holds a large square chip in a ceramic package, surrounded by ribbon cables, capacitors and resistors. Notebooks with scribbled handwriting lie at the edges. No people are visible."
   },
   "imac-launched": {
-    "state": "qc-fail",
-    "reason": "The word 'iMac' is clearly legible on the bezel below the screen. Repaint the chin without any lettering.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An oil painting of a rounded, translucent teal-and-white all-in-one computer with a handle on top, its internals visible through the shell, on a wooden table beside a round clear mouse, in a dim kitchen with cabinets and clutter. The word 'iMac' is legibly painted on the bezel below the screen. No frame, no people, nothing graphic."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "An oil-painted, rounded all-in-one computer with a translucent teal-and-white shell and a blank CRT screen, showing its inner parts through the side. It sits on a wooden table in a dim room beside a round teal mouse with a cord, a mug and papers. No people, no visible text."
   },
   "nvidia-geforce-256-gpu": {
     "state": "qc-pass",
@@ -124,5 +124,26 @@
     "by": "review",
     "attempts": 1,
     "description": "A boy with short hair and a dark sweater leans over a wooden table in a dim room, pushing a black cable into a green circuit board with a silver-cased chip and small ports, a Raspberry Pi-style board. Beside it sit a beige keyboard, a bulky CRT monitor with a glowing screen, and a tangle of cables including a yellow RCA plug. A second child sits at a desk in the blurred background in front of a dark chalkboard. The style is an oil painting with visible brushwork, and the scene is edge to edge with no frame."
+  },
+  "apple-m1-chip": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painterly close-up of a circuit board inside a metal casing. A large square chip package sits at the centre with two smaller chips beside it, surrounded by gold traces, small components and connectors. The metal edges of the housing curve across the top and bottom, on a near-black brown background. No people, no visible text."
+  },
+  "frontier-exascale-supercomputer": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painterly interior of a long server hall. Rows of tall black cabinets line both sides, with small blue and orange status lights glowing on them. Thick cables run along the ceiling and large silver pipes run along the floor. A single figure in a dark jacket stands at a lit terminal at the far end of the aisle. No visible text, frame or border; the painting fills the image edge to edge."
+  },
+  "google-willow-quantum-chip": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A tall, hanging, tiered cylinder of gold-coloured brass plates with dense bundles of silver and copper cables and a metal central column, suspended in a dark room. A small square chip sits at the bottom of the stack. The style is painterly, with dark wooden beams overhead. No visible text, frame, or people."
   }
 }

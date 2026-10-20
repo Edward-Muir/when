@@ -1,0 +1,20 @@
+{
+  "slug": "google-willow-quantum-chip",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "cab3c75e00c0a34b1a57b637ed7c3e66c8ca607d9ebb7320258220bb67a33904",
+  "dhash": "c06141e0c0617038",
+  "nearest": {
+    "deck": {
+      "slug": "roadrunner-petaflop-supercomputer",
+      "distance": 21
+    },
+    "catalogue": {
+      "slug": "baker-street-robbery",
+      "distance": 14
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,9 +1,9 @@
 {
   "deck": "silicon-dreams",
   "name": "Silicon Dreams",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T16:57:39.777Z",
+  "updated_at": "2026-10-20T17:06:56.559Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-20T11:47:49.468Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-20T17:06:56.559Z"
     }
   ],
   "slugs": {
@@ -100,11 +104,11 @@
       "updated_at": "2026-10-20T13:07:22.912Z"
     },
     "imac-launched": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The word 'iMac' is clearly legible on the bezel below the screen. Repaint the chin without any lettering.",
+      "reason": null,
       "sha256": "0fcc6985ea128f7f157e4612eb0f8faf68122613d005fb81d69d5c022f7648cf",
-      "updated_at": "2026-10-20T16:49:45.589Z"
+      "updated_at": "2026-10-20T17:06:56.465Z"
     },
     "nvidia-geforce-256-gpu": {
       "state": "qc-pass",
@@ -142,25 +146,25 @@
       "updated_at": "2026-10-20T13:07:23.109Z"
     },
     "apple-m1-chip": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "015d98a0e11bdbc47c18d5b1b03275b3c7926d3559554c2ccace61a68c4d282c",
-      "updated_at": "2026-10-20T16:52:39.997Z"
+      "updated_at": "2026-10-20T17:06:56.498Z"
     },
     "frontier-exascale-supercomputer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "03786b98c11d02230837b86c561a0b3e67aad542e80e3089bbe7345ecb7e04d8",
-      "updated_at": "2026-10-20T16:55:09.478Z"
+      "updated_at": "2026-10-20T17:06:56.529Z"
     },
     "google-willow-quantum-chip": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cab3c75e00c0a34b1a57b637ed7c3e66c8ca607d9ebb7320258220bb67a33904",
-      "updated_at": "2026-10-20T16:57:39.777Z"
+      "updated_at": "2026-10-20T17:06:56.559Z"
     }
   }
 }
