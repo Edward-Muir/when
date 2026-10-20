@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:33:18.600Z",
+  "updated_at": "2026-10-20T12:35:52.354Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,11 +72,11 @@
       "updated_at": "2026-10-20T12:14:58.069Z"
     },
     "ibm-system-360-announced": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Legible 'IBM' lettering is painted on the blue cabinets (centre and left background). Repaint the cabinets plain, without the logo.",
-      "sha256": "c2228b60eb7ccb3ec17161157be387470ab3918607b41f8a61d76d5e1822c68a",
-      "updated_at": "2026-10-20T12:14:58.100Z"
+      "sha256": "5add18dbd9e4cc1b213f48daa05185cf51e642924c7de028daba8e9e2842d940",
+      "updated_at": "2026-10-20T12:35:52.354Z"
     },
     "apple-ii-released": {
       "state": "qc-pass",
