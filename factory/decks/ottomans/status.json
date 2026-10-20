@@ -3,7 +3,7 @@
   "name": "Sublime Porte",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T02:19:33.015Z",
-  "updated_at": "2026-10-20T03:25:27.436Z",
+  "updated_at": "2026-10-20T03:28:21.243Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-20T03:25:27.436Z"
     },
     "janissaries-abolished-auspicious-incident": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "05c337cb8220646a1222ddde08df168e456ac4fc511372bd2a7fe514e4d69d42",
+      "updated_at": "2026-10-20T03:28:21.243Z"
     },
     "tanzimat-reforms-gulhane-edict": {
       "state": "pending",
