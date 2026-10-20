@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T23:33:45.777Z",
+  "updated_at": "2026-10-20T23:37:00.919Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-20T23:33:45.777Z"
     },
     "grito-de-baire": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4524fdc940a4abb761a1371a6ef68d73f62b1bb7537eb615f8f9d033f64c4b6d",
+      "updated_at": "2026-10-20T23:37:00.919Z"
     },
     "antonio-maceo-killed": {
       "state": "pending",
