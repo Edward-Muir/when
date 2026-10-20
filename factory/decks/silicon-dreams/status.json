@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:14:58.133Z",
+  "updated_at": "2026-10-20T12:33:18.600Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,11 +58,11 @@
       "updated_at": "2026-10-20T12:14:58.008Z"
     },
     "univac-i-delivered": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Legible lettering 'UNIVAC I' is painted on the top edge of the console. Regenerate without any readable name on the machine.",
-      "sha256": "ba3a09bc18226c783b34117ccd9d0638ff105e4d989f6928f6d41af14dd2ad53",
-      "updated_at": "2026-10-20T12:14:58.038Z"
+      "sha256": "bd1a4b5c36f2c0aa0f8a1b42ede40630c2422e0f2b94de740786657002cff5dc",
+      "updated_at": "2026-10-20T12:33:18.600Z"
     },
     "kilby-first-integrated-circuit": {
       "state": "qc-pass",
