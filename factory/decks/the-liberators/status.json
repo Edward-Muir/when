@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-20T23:20:43.616Z",
+  "updated_at": "2026-10-20T23:23:58.448Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-10-20T23:20:43.616Z"
     },
     "grito-de-yara": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "78e6f2cfbc49463655de81f3003771a8b0ab263f40b16e45cf7a4529a9dbc639",
+      "updated_at": "2026-10-20T23:23:58.448Z"
     },
     "virginius-affair": {
       "state": "pending",
