@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:54:25.741Z",
+  "updated_at": "2026-10-20T12:57:03.242Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-20T12:54:25.741Z"
     },
     "raspberry-pi-released": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e58bb88b43bd8ab698a6490de1a66528f5def7ce755e0bdd6495b99f3284e07c",
+      "updated_at": "2026-10-20T12:57:03.242Z"
     },
     "apple-m1-chip": {
       "state": "pending",
