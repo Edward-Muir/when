@@ -12513,7 +12513,10 @@
     "year": 1890,
     "category": "invention",
     "description": "Punched cards fed an electric tabulating machine that counted a national population far faster than hand tallying.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "de-forest-triode-audion",
@@ -12521,7 +12524,10 @@
     "year": 1906,
     "category": "invention",
     "description": "A three-element vacuum tube could amplify and switch signals, the building block of early electronic computers.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "eccles-jordan-flip-flop",
@@ -12529,7 +12535,10 @@
     "year": 1918,
     "category": "invention",
     "description": "Two vacuum tubes wired to hold one of two stable states gave electronics its first memory cell.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "bush-differential-analyzer",
@@ -12537,7 +12546,10 @@
     "year": 1931,
     "category": "invention",
     "description": "A room-sized analog machine at MIT solved differential equations with rotating shafts and gears.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "zuse-z3-computer",
@@ -12545,7 +12557,10 @@
     "year": 1941,
     "category": "invention",
     "description": "The first working programmable, fully automatic digital computer ran on telephone relays in Berlin.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "manchester-baby-runs-program",
@@ -12553,7 +12568,10 @@
     "year": 1948,
     "category": "invention",
     "description": "The first computer to run a program from electronic memory filled a room at a British university.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "univac-i-delivered",
@@ -12561,7 +12579,10 @@
     "year": 1951,
     "category": "invention",
     "description": "The first commercial computer built in the United States went to the Census Bureau and later predicted an election.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "kilby-first-integrated-circuit",
@@ -12569,7 +12590,10 @@
     "year": 1958,
     "category": "invention",
     "description": "Jack Kilby built a working circuit with several components on one slice of semiconductor, shrinking electronics for good.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ibm-system-360-announced",
@@ -12577,7 +12601,10 @@
     "year": 1964,
     "category": "invention",
     "description": "IBM bet the company on one family of compatible mainframes sharing software across a range of sizes and prices.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "apple-ii-released",
@@ -12585,7 +12612,10 @@
     "year": 1977,
     "category": "invention",
     "description": "A colour-capable, ready-to-use microcomputer in a plastic case brought home computing to ordinary buyers.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ibm-pc-launched",
@@ -12593,7 +12623,10 @@
     "year": 1981,
     "category": "invention",
     "description": "IBM's open-architecture desktop machine with an Intel chip set the standard for personal computers.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "arm1-processor-first-runs",
@@ -12601,7 +12634,10 @@
     "year": 1985,
     "category": "invention",
     "description": "A small British team's low-power RISC chip worked on its first try and later powered most mobile devices.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "imac-launched",
@@ -12609,7 +12645,10 @@
     "year": 1998,
     "category": "invention",
     "description": "A translucent, all-in-one computer with no floppy drive revived Apple and made computers look friendly.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "nvidia-geforce-256-gpu",
@@ -12617,7 +12656,10 @@
     "year": 1999,
     "category": "invention",
     "description": "Nvidia's GeForce 256 put transform and lighting on one graphics chip and popularised the term GPU.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ibm-quantum-factors-15",
@@ -12625,7 +12667,10 @@
     "year": 2001,
     "category": "science",
     "description": "A seven-qubit molecule-based machine ran Shor's algorithm to factor a small number, a first for quantum hardware.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "roadrunner-petaflop-supercomputer",
@@ -12633,7 +12678,10 @@
     "year": 2008,
     "category": "invention",
     "description": "Los Alamos's Cell-and-Opteron machine was the first supercomputer to sustain a quadrillion operations per second.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ibm-watson-jeopardy",
@@ -12641,7 +12689,10 @@
     "year": 2011,
     "category": "invention",
     "description": "IBM's question-answering supercomputer beat two champions on a televised quiz show.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "raspberry-pi-released",
@@ -12649,7 +12700,10 @@
     "year": 2012,
     "category": "invention",
     "description": "A credit-card-sized, cheap single-board computer was launched to teach programming and sold in millions.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "apple-m1-chip",
@@ -12657,7 +12711,10 @@
     "year": 2020,
     "category": "invention",
     "description": "Apple's own Arm-based system-on-a-chip replaced Intel processors in its Mac computers.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "frontier-exascale-supercomputer",
@@ -12665,7 +12722,10 @@
     "year": 2022,
     "category": "invention",
     "description": "Oak Ridge's Frontier became the first supercomputer to top a quintillion calculations per second.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "google-willow-quantum-chip",
@@ -12673,6 +12733,9 @@
     "year": 2024,
     "category": "invention",
     "description": "Google's 105-qubit chip showed error rates falling as qubits were added, a milestone for quantum error correction.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   }
 ]
