@@ -460,6 +460,16 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
 
 ### C3. Ship: upload, wire, open the PR
 
+**Two fixes from the first real ship, 2026-10-20.** Sweet Tooth's ship run stopped at the tests, and its re-run six hours later found two bugs:
+
+- **The re-run uploaded 10 images a second time.** The uploader judged "already uploaded" by the downsampled JPEG's bytes, and downsampling again doesn't always give the same bytes.
+  - `planUploads` now judges by the source image QC passed (`source_sha256`): a verified upload of the same source is skipped.
+  - A card whose source changed after its upload is refused, to be replaced by hand.
+  - The 10 duplicates were left unused on Cloudinary, for Edward to delete.
+- **`--verify-urls` counted only uncommitted changes,** so on a resumed ship it saw none. It now diffs the deck branch from where it left main.
+
+**The test that blocked it:** `countrySelection.test.ts` pinned legacy pool sizes measured on the 2026-09-30 catalogue. Any new card moved them, so every deck would have failed ship. It now leaves out the cards factory decks added (`factory/decks/*/new-events.json`), so the numbers move only when a measured card changes.
+
 Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Otherwise it exits. The steps are `.claude/skills/deck-factory/ship.md`, and every one is safe to repeat.
 
 1. **Upload:** `scripts/factory/cloudinary-upload.js --deck <id>`, for every `qc-pass` slug:

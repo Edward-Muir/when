@@ -896,3 +896,41 @@ describe('placement-first difficulty', () => {
     assert.equal(after[0].difficulty, 'easy');
   });
 });
+
+describe('cloudinary-upload: never uploads a card twice', () => {
+  const { planUploads } = require('./cloudinary-upload');
+  const A = 'a'.repeat(64);
+  const B = 'b'.repeat(64);
+  const status = {
+    slugs: {
+      fresh: { state: 'qc-pass', sha256: A },
+      done: { state: 'qc-pass', sha256: A },
+      unverified: { state: 'qc-pass', sha256: A },
+      changed: { state: 'qc-pass', sha256: B },
+      missing: { state: 'needs-human', sha256: null },
+    },
+  };
+  const uploads = {
+    done: {
+      public_id: 'done_abc123',
+      source_sha256: A,
+      sha256: 'whatever-the-jpeg-was',
+      verified: true,
+    },
+    unverified: { public_id: 'unverified_def456', source_sha256: A, verified: false },
+    changed: { public_id: 'changed_ghi789', source_sha256: A, verified: true },
+  };
+
+  it('skips a verified upload of the same source, whatever a new downsample would give', () => {
+    assert.deepEqual(planUploads(status, uploads), {
+      todo: ['fresh', 'unverified'],
+      done: ['done'],
+      conflicts: ['changed'],
+    });
+  });
+
+  it('has nothing to do when every card is already uploaded', () => {
+    const all = { slugs: { done: status.slugs.done } };
+    assert.deepEqual(planUploads(all, uploads), { todo: [], done: ['done'], conflicts: [] });
+  });
+});
