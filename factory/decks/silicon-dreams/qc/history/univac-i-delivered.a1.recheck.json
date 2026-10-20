@@ -1,0 +1,15 @@
+{
+  "slug": "univac-i-delivered",
+  "description": "A dark, painterly machine room with grey computer cabinets and vents. A man in a brown 1950s suit sits at a slanted console of knobs and switches with a typewriter in front of him; reel-to-reel tape drives stand on the right under a hanging lamp. The console has legible lettering 'UNIVAC I' on its top edge. The painting fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible lettering 'UNIVAC I' is painted on the top edge of the console. Regenerate without any readable name on the machine."
+}

@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:12:42.669Z",
+  "updated_at": "2026-10-20T12:14:58.133Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "hollerith-tabulator-census": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ec86cd9a0d9504347fc4c96d054a6ec32850677f7b5b396c90f6ca2411114270",
-      "updated_at": "2026-10-20T11:47:49.468Z"
+      "updated_at": "2026-10-20T12:14:57.855Z"
     },
     "de-forest-triode-audion": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2d759e7c28b877630a89ec3eda1aea9e2bc96da30a4f4a4a8fa77ef86118b721",
-      "updated_at": "2026-10-20T11:50:28.291Z"
+      "updated_at": "2026-10-20T12:14:57.887Z"
     },
     "eccles-jordan-flip-flop": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "637363dea381a958e7ca047af4238229a401ee7ff7ad272223dc690b63ed6482",
-      "updated_at": "2026-10-20T11:53:08.939Z"
+      "updated_at": "2026-10-20T12:14:57.917Z"
     },
     "bush-differential-analyzer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9ed7065ba9d214c09d38ff8140194e52bde551d2c263e652c04b07d7f67baf3d",
-      "updated_at": "2026-10-20T11:55:57.499Z"
+      "updated_at": "2026-10-20T12:14:57.947Z"
     },
     "zuse-z3-computer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d448c0c9981a1019988cf97366a4b2d41284124f14939b73b5e59550c634e83d",
-      "updated_at": "2026-10-20T11:58:38.299Z"
+      "updated_at": "2026-10-20T12:14:57.977Z"
     },
     "manchester-baby-runs-program": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3a9e1785d6cfd4c2b950de1d31385d9a4b5fa8a029b5b15d0eb4ad82da211701",
-      "updated_at": "2026-10-20T12:01:47.986Z"
+      "updated_at": "2026-10-20T12:14:58.008Z"
     },
     "univac-i-delivered": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible lettering 'UNIVAC I' is painted on the top edge of the console. Regenerate without any readable name on the machine.",
       "sha256": "ba3a09bc18226c783b34117ccd9d0638ff105e4d989f6928f6d41af14dd2ad53",
-      "updated_at": "2026-10-20T12:04:29.082Z"
+      "updated_at": "2026-10-20T12:14:58.038Z"
     },
     "kilby-first-integrated-circuit": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a81d3e759a5c3b84849eb54e7730733c3cb668dfc752398351fece98178e9d8b",
-      "updated_at": "2026-10-20T12:07:06.627Z"
+      "updated_at": "2026-10-20T12:14:58.069Z"
     },
     "ibm-system-360-announced": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible 'IBM' lettering is painted on the blue cabinets (centre and left background). Repaint the cabinets plain, without the logo.",
       "sha256": "c2228b60eb7ccb3ec17161157be387470ab3918607b41f8a61d76d5e1822c68a",
-      "updated_at": "2026-10-20T12:09:59.107Z"
+      "updated_at": "2026-10-20T12:14:58.100Z"
     },
     "apple-ii-released": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7a4b16f70b03abfb37fc9c4ede2947a548a8aafc1e36e6ef658f6ad75b1dfda9",
-      "updated_at": "2026-10-20T12:12:42.669Z"
+      "updated_at": "2026-10-20T12:14:58.133Z"
     },
     "ibm-pc-launched": {
       "state": "pending",

@@ -1,0 +1,72 @@
+{
+  "hollerith-tabulator-census": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A woman in a dark high-necked dress sits in profile at a wooden desk, feeding a punched card into a metal press. Behind her is a tall wooden cabinet with rows of round dials, some lit, and a candle burns at the top right. Stacks of paper cards sit on the desk and in drawers, and the scene is painted in dim, warm browns. The painting fills the frame edge to edge, with no visible letters or border."
+  },
+  "de-forest-triode-audion": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man with slicked-back dark hair, in a dark waistcoat and rolled white sleeves, bends over a wooden workbench wiring a small board. In the foreground a large glowing glass bulb-like vacuum tube with a bright filament sits on the table, with copper coils, a lit oil lamp, glass jars, a dark wooden box and headphones around it. The setting is a dim, cluttered workshop with warm lamplight, in a painterly oil style. No frame or text is visible, and the painting runs edge to edge."
+  },
+  "eccles-jordan-flip-flop": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painted still life of two glass vacuum tubes standing on a wooden board. The left tube glows orange-red inside while the right one is dark. Copper wires and small resistors link the two tubes, and dim battery-like boxes and tools sit in the shadowy background. There is no visible text, frame or border, and the painting fills the image edge to edge."
+  },
+  "bush-differential-analyzer": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim workshop with brick walls and a hanging lamp. A man in a white shirt, dark tie and rolled sleeves bends over a long machine of horizontal steel shafts, brass gears and glass wheel-discs, adjusting a gear. At the right edge, a second man in shirtsleeves draws a curve with a pen on graph paper on a wooden table. The machinery and clothing look early twentieth century. No text or frame is visible; the painting runs edge to edge."
+  },
+  "zuse-z3-computer": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, old-fashioned room with a wooden desk holding a small keyboard-like console and a reel of punched film or tape. Two tall open glass-fronted cabinets are packed with rows of small cylindrical components and wiring. Papers with diagrams lie on the floor, with curtains, a lamp and a doorway in the background. No people are visible, and no legible text is visible."
+  },
+  "manchester-baby-runs-program": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Two men in white shirts with rolled sleeves lean toward a rack of electronics. A round green-glowing screen in the middle shows a faint grid of dots. Racks on both sides are packed with glowing vacuum tubes, cables and meters. Dark, oil-painted style, with no visible text and no frame."
+  },
+  "univac-i-delivered": {
+    "state": "qc-fail",
+    "reason": "Legible lettering 'UNIVAC I' is painted on the top edge of the console. Regenerate without any readable name on the machine.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark, painterly machine room with grey computer cabinets and vents. A man in a brown 1950s suit sits at a slanted console of knobs and switches with a typewriter in front of him; reel-to-reel tape drives stand on the right under a hanging lamp. The console has legible lettering 'UNIVAC I' on its top edge. The painting fills the frame with no border."
+  },
+  "kilby-first-integrated-circuit": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting of a small dark circuit assembly on a clear glass plate, with fine gold wires joining metal pads, set on a dark wooden bench. A brass microscope and a glowing lamp sit above, with a soldering iron or probe on the right and an old knobbed instrument at top left. No legible text is visible, and the painting fills the frame edge to edge."
+  },
+  "ibm-system-360-announced": {
+    "state": "qc-fail",
+    "reason": "Legible 'IBM' lettering is painted on the blue cabinets (centre and left background). Repaint the cabinets plain, without the logo.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A man in glasses and a white shirt with rolled sleeves works the switches and indicator lights of a console in the foreground. Behind him a man in a dark suit leans against a tall blue cabinet, with reel-to-reel tape drives along the back wall and two people in white coats at left. The room is dark with overhead lamps. Two blue cabinets carry clearly legible 'IBM' lettering. No frame or border, nothing graphic."
+  },
+  "apple-ii-released": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A young person with shaggy brown hair and a patterned shirt sits at a wooden desk typing on a beige plastic computer with a built-in keyboard. A small CRT monitor on top shows a simple green and pink blocky picture, and a cassette recorder sits beside the machine. The room behind is dark, with bookshelves and a framed picture in the top left corner. The style is a dark oil painting that fills the frame edge to edge."
+  }
+}
