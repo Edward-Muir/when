@@ -3,7 +3,7 @@
   "name": "Silicon Dreams",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T11:20:08.519Z",
-  "updated_at": "2026-10-20T12:09:59.107Z",
+  "updated_at": "2026-10-20T12:12:42.669Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-20T12:09:59.107Z"
     },
     "apple-ii-released": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7a4b16f70b03abfb37fc9c4ede2947a548a8aafc1e36e6ef658f6ad75b1dfda9",
+      "updated_at": "2026-10-20T12:12:42.669Z"
     },
     "ibm-pc-launched": {
       "state": "pending",
