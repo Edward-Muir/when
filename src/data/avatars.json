@@ -346,7 +346,7 @@
       "label": "Tyrannosaurus",
       "achievementId": "cat-empires",
       "emoji": "🦖",
-      "placeholder": true
+      "preview": true
     },
     {
       "id": "fire-salamander",
@@ -403,7 +403,7 @@
       "id": "tardigrade",
       "label": "Tardigrade",
       "achievementId": "cat-disasters",
-      "placeholder": true
+      "preview": true
     },
     {
       "id": "money-toad",
@@ -417,7 +417,7 @@
       "label": "Ram",
       "achievementId": "cat-law",
       "emoji": "🐏",
-      "placeholder": true
+      "preview": true
     },
     {
       "id": "aurochs",
@@ -515,7 +515,7 @@
       "label": "Werewolf",
       "achievementId": "21",
       "emoji": "🐺",
-      "placeholder": true
+      "preview": true
     },
     {
       "id": "triceratops",
@@ -680,7 +680,7 @@
       "label": "Kitsune",
       "achievementId": "meta-categories",
       "emoji": "🦊",
-      "placeholder": true
+      "preview": true
     }
   ]
 }

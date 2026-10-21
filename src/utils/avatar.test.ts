@@ -124,12 +124,15 @@ describe('portraitArtUrl', () => {
   });
 
   // Until its art is uploaded, an earned portrait draws its emoji or initial instead.
-  it('returns null for a placeholder and the Cloudinary URL once the art is live', () => {
+  // A preview is art under review, committed under public/ until it reaches Cloudinary.
+  it('returns null for a placeholder, the local file for a preview, else Cloudinary', () => {
     for (const portrait of EARNED_PORTRAITS) {
       expect(portraitArtUrl(portrait.id)).toBe(
         portrait.placeholder
           ? null
-          : `https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_400/avatars/${portrait.id}`
+          : portrait.preview
+            ? `/avatars/preview/${portrait.id}.jpg`
+            : `https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_400/avatars/${portrait.id}`
       );
     }
   });

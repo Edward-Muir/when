@@ -170,6 +170,8 @@ place on the board, and badges carry metal rings.
 **Placeholders until the art lands.** An entry with `placeholder: true` has no art yet:
 `portraitArtUrl` returns null for it, so the tile draws the emoji or initial without asking
 Cloudinary for a missing image. Remove the flag once that portrait is uploaded.
+`preview: true` instead serves a committed file from `public/avatars/preview/<id>.jpg` while
+the art is reviewed on a branch deploy; once it is on Cloudinary, delete the file and the flag.
 
 ## The art spec: the game's own oil-painting style
 
