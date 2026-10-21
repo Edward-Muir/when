@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T21:18:09.690Z",
+  "updated_at": "2026-10-21T21:21:12.500Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-21T21:18:09.690Z"
     },
     "caspian-tiger-extinct": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b5d9a636dcccca4822369dd2d283ffa624c1e274de472348fa8fc93f3e5146b1",
+      "updated_at": "2026-10-21T21:21:12.500Z"
     },
     "javan-tiger-last-recorded": {
       "state": "pending",
