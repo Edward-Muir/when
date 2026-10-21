@@ -6,6 +6,10 @@
  * and that pick travels with their leaderboard score. Everyone else on the board (bots, legacy
  * entries, names the filter replaced, free-typed names) resolves from the name alone,
  * client-side. See docs/avatars/index.md.
+ *
+ * Earned portraits are a second, pick-only list: one creature per achievement, owned once its
+ * badge is unlocked. A name never implies one, so the 62 animals stay the whole range of
+ * `avatarForName` and `generateRandomName`.
  */
 import { uniqueNamesGenerator, adjectives } from 'unique-names-generator';
 import data from '../data/avatars.json';
@@ -18,8 +22,26 @@ export interface AvatarAnimal {
   emoji?: string;
 }
 
+export interface EarnedPortrait extends AvatarAnimal {
+  /** The achievement (`AchievementDef.id`) that unlocks it. */
+  achievementId: string;
+  /** No art uploaded yet: the tile shows the emoji or initial instead of requesting it. */
+  placeholder?: boolean;
+}
+
 export const AVATAR_ANIMALS: readonly AvatarAnimal[] = data.animals;
 const ANIMALS_BY_ID = new Map(AVATAR_ANIMALS.map((a) => [a.id, a]));
+
+/** In achievement-catalogue order. */
+export const EARNED_PORTRAITS: readonly EarnedPortrait[] = data.earned;
+
+// Everything a tile can draw: what rendering and parsing a pick look up. Name resolution
+// deliberately uses ANIMALS_BY_ID alone.
+const PORTRAITS_BY_ID = new Map<string, AvatarAnimal | EarnedPortrait>([
+  ...ANIMALS_BY_ID,
+  ...EARNED_PORTRAITS.map((p) => [p.id, p] as const),
+]);
+const EARNED_BY_ACHIEVEMENT = new Map(EARNED_PORTRAITS.map((p) => [p.achievementId, p]));
 
 /**
  * The leaderboard's name cap, mirrored from MAX_DISPLAY_NAME_LENGTH in
@@ -29,8 +51,19 @@ const ANIMALS_BY_ID = new Map(AVATAR_ANIMALS.map((a) => [a.id, a]));
  */
 export const MAX_NAME_LENGTH = 20;
 
-export function getAnimal(id: string): AvatarAnimal | undefined {
-  return ANIMALS_BY_ID.get(id);
+/** An animal or an earned portrait. */
+export function getAnimal(id: string): AvatarAnimal | EarnedPortrait | undefined {
+  return PORTRAITS_BY_ID.get(id);
+}
+
+/** The portrait an achievement unlocks, if it has one. */
+export function earnedPortraitFor(achievementId: string): EarnedPortrait | undefined {
+  return EARNED_BY_ACHIEVEMENT.get(achievementId);
+}
+
+/** The earned portraits a player owns, from `getAchievements().unlocked`. */
+export function ownedEarnedPortraits(unlocked: Readonly<Record<string, string>>): Set<string> {
+  return new Set(EARNED_PORTRAITS.filter((p) => unlocked[p.achievementId]).map((p) => p.id));
 }
 
 /** FNV-1a. Stable across sessions and devices, which is all the fallback needs. */
@@ -54,9 +87,13 @@ export function avatarForName(name: string): string {
   return (AVATAR_ANIMALS[hashString(last) % AVATAR_ANIMALS.length] as AvatarAnimal).id;
 }
 
-/** The animal id, or null for anything this build does not know: stale or bogus values. */
+/**
+ * The animal or earned-portrait id, or null for anything this build does not know: stale or
+ * bogus values. Ownership is not checked: achievements live on the device, so a forged pick is
+ * possible anyway, and others must see an earned portrait on the board.
+ */
 export function parseAvatar(value: unknown): string | null {
-  return typeof value === 'string' && ANIMALS_BY_ID.has(value) ? value : null;
+  return typeof value === 'string' && PORTRAITS_BY_ID.has(value) ? value : null;
 }
 
 /** A leaderboard row's avatar: the one the player chose, else the one their name implies. */
@@ -65,19 +102,21 @@ export function resolveAvatar(entry: { displayName: string; avatar?: string }): 
 }
 
 /**
- * Every animal's portrait is uploaded to Cloudinary at `avatars/<animal id>` (the uploader's
- * `--avatars` mode in ../when-images), so the URL is built from the id rather than stored.
+ * Every portrait is uploaded to Cloudinary at `avatars/<id>` (the uploader's `--avatars` mode
+ * in ../when-images), so the URL is built from the id rather than stored.
  */
 const PORTRAIT_BASE = 'https://res.cloudinary.com/dscb8inz1/image/upload/avatars/';
 
 /**
- * Portrait art for an animal, or null for an id that is not in the list. Delivered through the
+ * Portrait art, or null for an id that is not in either list or whose art is still a
+ * placeholder (the tile then draws the emoji or initial). Delivered through the
  * existing square `thumbnail` rung rather than a portrait-sized one: a third rung would mint new
  * derived assets and another string to allow-list (docs/cloudinary-cost-controls.md), and 400px
  * covers the largest tile (the picker's 96px preview) at DPR 3.
  */
 export function portraitArtUrl(animal: string): string | null {
-  if (!ANIMALS_BY_ID.has(animal)) return null;
+  const portrait = PORTRAITS_BY_ID.get(animal);
+  if (!portrait || ('placeholder' in portrait && portrait.placeholder)) return null;
   return getImageUrl(`${PORTRAIT_BASE}${animal}`, 'thumbnail') ?? null;
 }
 

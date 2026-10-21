@@ -9,6 +9,11 @@ tab: an earlier pass had both and read as far too prominent.
 
 All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)).
 
+Beside the 62 animals sit **60 earned portraits**, one per achievement: dinosaurs, creatures of
+legend and horror, and real oddities, each in a costume tied to its badge (see
+[Earned portraits](#earned-portraits)). Their art is not made yet; until it is, each tile shows the
+creature's emoji or initial.
+
 ## Where things live
 
 | What                                                       | Where                                                                          |
@@ -23,6 +28,8 @@ All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)
 | Server format check                                        | `lib/leaderboard/avatar.ts`                                                    |
 | Each animal's persona (hand-reviewed, from Sonnet agents)  | `scripts/avatars/personas.json`                                                |
 | The prompts CSV, and the script that builds it             | `docs/avatars/art/avatar_prompts.csv`, `scripts/avatars/avatar-art-prompts.py` |
+| The 60 earned portraits (the `earned` list)                | `src/data/avatars.json`                                                        |
+| Their personas and prompts CSV (`--earned`)                | `scripts/avatars/earned-personas.json`, `docs/avatars/art/earned_prompts.csv`  |
 
 ## Decisions
 
@@ -130,6 +137,39 @@ server check, plus an always-empty adjective map. The plain paper tile (`bg-pape
 loading backdrop. Painted background art per theme was also planned and dropped earlier, for
 want of anywhere to show it.
 
+## Earned portraits
+
+**One creature per achievement, earned by unlocking the badge.** The `earned` list in
+`avatars.json` maps each of the 60 badges (`ACHIEVEMENTS`) to a creature: Maestro earns a painter
+chameleon, Magistrate a ram in a judge's wool wig, Time Immemorial a unicorn, The Complete
+Collection a nine-tailed kitsune. Rarer tiers get the more legendary creatures. A test pins the
+list to the badge catalogue, one each, in order.
+
+**New creatures, never locked animals.** An earlier sketch had costume variants of the 62; new
+creatures do the same job with more range. The rule behind either: **never lock a base animal**. The name decides the avatar by default, so a locked base animal
+would break a generated name ("Artistic Aardvark" with no aardvark), and the 62 must stay
+complete for the name generator and the bots. An earned portrait is pick-only:
+`avatarForName` and `generateRandomName` reach only the 62, and earned ids never clash with
+them (`mummy-cat`, not `cat`; `hatchling`, not `dragon`).
+
+**Nothing new is stored.** Ownership is derived from `when-achievements`
+(`ownedEarnedPortraits`), so a player who already holds a badge already owns its portrait, and
+the pick is the same `when-avatar` value as any other. `parseAvatar` knows both lists, so an
+earned pick travels with the score like any other and other players see it; the server's
+format-only check needed no change. Achievements live on the device, so a pick can be forged;
+acceptable for a cosmetic.
+
+**Where it shows.** The picker lists them under "Earned" with a count. A locked one shows greyed
+behind a small lock, the tease the locked badges use, and tapping it previews it at the top
+with its unlock line without saving; any real pick or reopening clears the preview. The large
+achievement card (the unlock reveal and the detail popup) names the portrait a badge earns,
+greyed while locked. No metal frame on an earned portrait: gold, silver and bronze mean podium
+place on the board, and badges carry metal rings.
+
+**Placeholders until the art lands.** An entry with `placeholder: true` has no art yet:
+`portraitArtUrl` returns null for it, so the tile draws the emoji or initial without asking
+Cloudinary for a missing image. Remove the flag once that portrait is uploaded.
+
 ## The art spec: the game's own oil-painting style
 
 **Portraits only, painted like the event cards.** The idea of a portrait per animal came from
@@ -174,6 +214,11 @@ It writes the event cards' five-column contract
 empty field, a colour adjective or anything that would be lettered. Edit a persona, not the CSV,
 and re-run; progress columns carry over by id.
 
+`--earned` builds the earned portraits' CSV the same way from `earned-personas.json`, with no
+skipped ids, a check that every `achievementId` is a real badge with one portrait, and a research
+line asking for "reference images" rather than photographs: a sirrush or a unicorn has none, so
+each research focus names fossil reconstructions or the classic depictions in art.
+
 ### It must work very small
 
 Portraits mostly show at **20–44px** (the game-over preview at 20px; leaderboard rows, the
@@ -211,6 +256,8 @@ The pipeline is the event cards' tooling in `../when-images`, run on its own fol
    overwrites, so replacing a portrait means deleting the old asset first.
 
 There is no URL-writing step. A new animal needs only its id in `avatars.json` and an upload.
+The uploader matches stems against the `animals` list, so the earned portraits need it to read
+`earned` too, or to be given their ids.
 
 The first 24 uploads (platypus to badger in list order) went up as 1024px JPEGs from an ad-hoc
 downsample, the rest as `downsample.py`'s 2048px quality-80 output. Delivery resizes both to the
@@ -218,7 +265,11 @@ same 400px rung, so they look identical in the app.
 
 ## Still to do
 
-1. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
+1. **Paint the 60 earned portraits.** Run `docs/avatars/art/earned_prompts.csv` through the
+   browser task, check each one at 20px and 32px on a paper tile (Tardigrade, Bookworm and
+   Spider are the riskiest silhouettes; Kitsune's nine tails must read as one fan), upload them
+   as in [Delivery](#delivery), then drop each uploaded portrait's `placeholder` flag.
+2. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
    one by one at 20px and 32px on a paper tile. Re-run any that do not read, then replace the
    asset as described under [Delivery](#delivery).
 
@@ -226,38 +277,15 @@ same 400px rung, so they look identical in the app.
 
 Not built. Recorded so a later pass starts from the reasoning rather than from scratch.
 
-**Earned portraits as variants, never locked animals.** The idea is to reward achievements
-with portraits: placing 20 Art events (`cat-art`, "Maestro") might earn a painter aardvark.
-Lock **variants** of existing animals, not the 62 base animals. The name decides the avatar
-by default, so a locked base animal would break a generated name ("Artistic Aardvark" with no
-aardvark), and the 62 must stay complete for the name generator and the bots. A variant is
-pick-only and never implied by a name.
-
-- **One variant per category achievement**, so 21 paintings (`ACHIEVEMENTS` in
-  `src/data/achievements.ts`), plus perhaps a few rare ones for the top milestones (Time Lord,
-  Keeper of Time, The Complete Collection). A costume of _every_ animal per achievement would be
-  62 × 21 = 1,302 paintings. The personas already lean towards categories (the penguin
-  conducts, the mongoose paints miniatures, the owl watches the stars), so a variant can take
-  an animal somewhere its base persona does not, such as the archaeologist aardvark at an easel.
-- **The wire format already allows it.** An id such as `aardvark-maestro` passes the server's
-  format check (`/^[a-z0-9-]{1,24}$/`), and a client that does not know an id falls back to
-  the name. Achievements are stored on the device, so a variant can be forged; acceptable for a
-  cosmetic.
-- **The name word could unlock too.** Earning Maestro might add "Maestro" as a pickable first
-  word, so name and portrait match, within the 20-character cap.
-- **In the picker**, locked variants show greyed with their unlock line, so the picker also
-  says what is left to earn.
-
-Traps: don't mark an earned portrait with a metal frame (gold, silver and bronze already mean
-podium place on the board, and achievement badges carry metal rings); keep the quiet touch
-(profile banners and a Stats-tab presence were tried and removed); every variant must still
-read at 20px, as above.
+**The badge name as a name word.** Earning Maestro might add "Maestro" as a pickable first
+word, so name and portrait match ("Maestro Chameleon"), within the 20-character cap. Not built:
+it touches the name filter and the cap.
 
 **Other uses considered**, in rough order of fit:
 
 - seasonal or curated-theme portraits, earned by playing that day (missing one is final, which
   must be a deliberate choice);
-- a collection goal across the variants, a long arc the daily score does not give;
+- a collection goal across the earned portraits, a long arc the daily score does not give;
 - the sender's portrait on a challenge ("Beat Linguistic Platypus's 14"), which touches the
   challenge-code encoding ([sharing-challenges/](../sharing-challenges/index.md));
 - turn markers in multiplayer, which the engine supports and no screen offers;
