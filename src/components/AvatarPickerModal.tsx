@@ -212,7 +212,7 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
               · {owned.size} of {EARNED_PORTRAITS.length}
             </span>
           </h3>
-          <div className={GRID} role="radiogroup" aria-label="Earned portrait">
+          <div className={GRID} role="radiogroup" aria-label="Earned">
             {EARNED_PORTRAITS.map((portrait) => {
               const unlocked = owned.has(portrait.id);
               const selected = portrait.id === (peek ?? avatar);
@@ -222,7 +222,6 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
                   type="button"
                   role="radio"
                   aria-checked={unlocked && selected}
-                  aria-disabled={!unlocked}
                   aria-label={unlocked ? portrait.label : `${portrait.label}, locked`}
                   onClick={() => (unlocked ? setAvatar(portrait.id) : setPeek(portrait.id))}
                   className={`${TILE} ${selected ? SELECTED : ''}`}

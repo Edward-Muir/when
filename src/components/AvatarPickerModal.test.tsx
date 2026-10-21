@@ -27,7 +27,7 @@ beforeEach(() => {
   });
 });
 
-const earnedGrid = () => screen.getByRole('radiogroup', { name: 'Earned portrait' });
+const earnedGrid = () => screen.getByRole('radiogroup', { name: 'Earned' });
 
 describe('AvatarPickerModal earned portraits', () => {
   it('lists every earned portrait and counts the unlocked ones', () => {
@@ -36,8 +36,8 @@ describe('AvatarPickerModal earned portraits', () => {
     expect(within(earnedGrid()).getAllByRole('radio')).toHaveLength(60);
     expect(within(earnedGrid()).getByRole('radio', { name: 'Chameleon' })).toBeInTheDocument();
     expect(within(earnedGrid()).getByRole('radio', { name: 'Unicorn, locked' })).toHaveAttribute(
-      'aria-disabled',
-      'true'
+      'aria-checked',
+      'false'
     );
   });
 
