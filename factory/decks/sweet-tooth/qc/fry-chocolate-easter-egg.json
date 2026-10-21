@@ -1,0 +1,15 @@
+{
+  "slug": "fry-chocolate-easter-egg",
+  "description": "An elderly man in a canvas apron and dark waistcoat, sleeves rolled, lifts the top half of a two-part metal mould on a workbench, revealing a glossy dark chocolate egg with a textured shell. Steam rises from the mould. Several finished chocolate eggs and empty moulds sit on the wooden bench, with a clamp and tools at left, a brick wall behind, and a stoneware jug of yellow daffodils at lower right. The painting is warm and dark, in an oil-painting style, and fills the frame with no visible border or text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

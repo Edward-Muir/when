@@ -1,0 +1,225 @@
+{
+  "deck": "sweet-tooth",
+  "name": "Sweet Tooth",
+  "stage": "pr-open",
+  "created_at": "2026-10-19T20:04:21.280Z",
+  "updated_at": "2026-10-20T10:43:37.589Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-19T20:04:21.280Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-19T20:31:14.287Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-20T00:06:44.295Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-20T01:06:46.654Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-20T09:09:04.182Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-20T10:06:30.012Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-20T10:42:04.579Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-20T10:43:37.589Z"
+    }
+  ],
+  "slugs": {
+    "cato-honey-cheesecake-recipe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1f23776e0a71e9f274738a0f48cfb0d81b016b53b0f2d151e70ed2eb67698788",
+      "updated_at": "2026-10-19T21:07:27.030Z"
+    },
+    "indian-sugar-crystallisation": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d2011cac03b5aacc75163dfc3b596637e9bbb7f8a09a08b5f209f3d0da19d9e7",
+      "updated_at": "2026-10-19T21:07:27.061Z"
+    },
+    "gingerbread-reaches-europe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "556273d1813d3d842bc7605400d6b346ec103653a9b095d4c78cb67d3c3886b6",
+      "updated_at": "2026-10-19T21:07:27.092Z"
+    },
+    "nuremberg-lebkuchen-recorded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a6f25097a4128fac44a11fa8b3de2288108a42335c35942a6d68bf03fe9589d2",
+      "updated_at": "2026-10-19T21:07:27.123Z"
+    },
+    "candy-cane-first-handed-out": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2226f7b471564d6e5ebcb841811b1931aded91aa2757c97c0d8dbec6ebf1716a",
+      "updated_at": "2026-10-19T21:07:27.154Z"
+    },
+    "cafe-procope-gelato": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5517fcbb1d5c7a20d3d93de6fd69030ecf092b77c0aa2ad31979a7880a95e5e5",
+      "updated_at": "2026-10-19T21:07:27.184Z"
+    },
+    "bakers-chocolate-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9b17d03b7fd7170ff0e9b3963bbb1bc57c97d80d8ad49792df901ea3bde26ce5",
+      "updated_at": "2026-10-19T21:07:27.214Z"
+    },
+    "turkish-delight-on-sale": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "96581c93bcc9057e9293fec9db070279dcd0b5d5923785408600bcc753b3f3bf",
+      "updated_at": "2026-10-19T21:07:27.245Z"
+    },
+    "sachertorte-invented": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b1911c0f23563789482f411775108466f93eccbb224543ab299acf9f4d1cf3d7",
+      "updated_at": "2026-10-19T21:07:27.275Z"
+    },
+    "cadbury-chocolate-box": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c46fc9bd8dea4b849af684b62b90c06f56ae4fc866a4ed20d000326b1fe929fa",
+      "updated_at": "2026-10-19T21:07:27.306Z"
+    },
+    "fry-chocolate-easter-egg": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "11fc40bccc3844a756920c738fe4cad53ae3b0bc6467add796ed4924a0d36064",
+      "updated_at": "2026-10-19T22:07:10.310Z"
+    },
+    "cracker-jack-debuts": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "42ab5399982ad46eae0f22e50db30c0d23650706171bb5738aa1f22d49686b8f",
+      "updated_at": "2026-10-19T22:07:10.345Z"
+    },
+    "jell-o-sold-as-dessert": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "966587db64cabe568bb75e6887cdb8d6c7ebed20f5cbadff69977b98befed353",
+      "updated_at": "2026-10-19T22:07:10.376Z"
+    },
+    "hersheys-milk-chocolate-bar": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1828e7ede941faa70fcf3814e6fd530a5526477b4a8c61a8799716c2eb36ccb3",
+      "updated_at": "2026-10-19T22:07:10.410Z"
+    },
+    "oreo-introduced": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "89ec446152d4cd5a5d02ae17b4a5cd60fe748138e2ad3025cd41a06825d634a6",
+      "updated_at": "2026-10-19T22:07:10.443Z"
+    },
+    "eskimo-pie-patented": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ed0f9b142e4f807bca29f039eb3d74b3f537d9ab1938747038ca1ae7ca59031f",
+      "updated_at": "2026-10-19T22:07:10.478Z"
+    },
+    "haribo-gummy-bear": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0490cceecac014d7c1480d0fca173551d1f42411f175ad0a096a780d1f06b7d2",
+      "updated_at": "2026-10-19T22:07:10.513Z"
+    },
+    "pavlova-created": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a7be3de4e9d1602fff03a07eea3fcd23785ae6904387ae2c357a6773c6636a9b",
+      "updated_at": "2026-10-19T22:07:10.549Z"
+    },
+    "mars-bar-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3b97cf2fa8d8b60fabd7d50cde16cc597f3dbc9de6f752dd899aaa8595abc475",
+      "updated_at": "2026-10-19T22:07:10.581Z"
+    },
+    "kit-kat-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e03b0fbb310bd9af6552cf923cc28ae8980ac603ad39b5616d30a8615d0a1b8a",
+      "updated_at": "2026-10-19T22:07:10.615Z"
+    },
+    "chupa-chups-lollipop": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9ec9dae8e64adace74a28befaec58fad29c59e327f6efa2aa9b81bfe4fed75a6",
+      "updated_at": "2026-10-20T00:06:44.159Z"
+    },
+    "nutella-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a736fd1f9309b9add40360b08533fb3eab312079cbc6b8c41d2a8b34a7305605",
+      "updated_at": "2026-10-20T00:06:44.194Z"
+    },
+    "cadbury-creme-egg-named": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a227def70c8d45ae201cd5d72420dec25bf0e637bec472450532d727ecb2343a",
+      "updated_at": "2026-10-20T00:06:44.228Z"
+    },
+    "kinder-surprise-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "69ae0191a659fac797d5f255eb0a0353c18ff87bebd9b60286f03ee980fb420c",
+      "updated_at": "2026-10-20T00:06:44.262Z"
+    },
+    "ben-jerrys-scoop-shop": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ddb311d3c1a37c1b49c8cd32d5f89badf9780791d8095058de20fb5741a0585b",
+      "updated_at": "2026-10-20T10:06:30.012Z"
+    },
+    "cronut-hits-new-york": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f2fe01ded5fef54a592ec15fa97259bc8b70899b6f0964055741c72f1049c8c0",
+      "updated_at": "2026-10-20T00:06:44.295Z"
+    }
+  }
+}

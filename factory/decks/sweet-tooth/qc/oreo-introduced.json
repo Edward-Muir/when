@@ -1,0 +1,15 @@
+{
+  "slug": "oreo-introduced",
+  "description": "A man in a flat cap and dark shirt with a white apron stands in a dim industrial bakery, holding a dark round sandwich cookie in both hands and looking down at it. Behind him are trays of similar dark round cookies on a conveyor and rows of cookies on racks, with old iron machinery, gears, pipes, a brick wall and a window with steam. The style is a painterly oil-like rendering, filling the whole frame with no visible text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
