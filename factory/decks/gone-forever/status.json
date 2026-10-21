@@ -1,21 +1,26 @@
 {
   "deck": "gone-forever",
   "name": "Gone Forever",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T04:19:36.677Z",
+  "updated_at": "2026-10-21T12:11:41.789Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-21T04:19:36.677Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-21T12:11:41.789Z"
     }
   ],
   "slugs": {
     "elephant-birds-vanish-madagascar": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7f3f0c002635e973048323727637c7a65331f1d43bc29705c4b08caf7e685b9f",
+      "updated_at": "2026-10-21T12:11:41.789Z"
     },
     "moa-extinct-new-zealand": {
       "state": "pending",
