@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-21T00:07:09.828Z",
+  "updated_at": "2026-10-21T01:09:40.912Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-10-21T00:07:09.828Z"
     },
     "treaty-paris-spain-cedes-colonies": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f1fb9adf342ab1f41db860ba893fc4234f6c80ddc797437efc40022ffee2c69f",
+      "updated_at": "2026-10-21T01:09:40.912Z"
     },
     "cuba-becomes-republic": {
       "state": "pending",
