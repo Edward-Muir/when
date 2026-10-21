@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T23:10:30.086Z",
+  "updated_at": "2026-10-21T23:14:20.387Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-21T23:10:30.086Z"
     },
     "ivory-billed-woodpecker-proposed-extinct": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1b109f120f2aa1c01e9d4b715a34604a616206f535eeffffd85a45c8c38f2e9e",
+      "updated_at": "2026-10-21T23:14:20.387Z"
     },
     "chinese-paddlefish-declared-extinct": {
       "state": "pending",
