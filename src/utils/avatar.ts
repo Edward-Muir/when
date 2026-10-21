@@ -27,6 +27,11 @@ export interface EarnedPortrait extends AvatarAnimal {
   achievementId: string;
   /** No art uploaded yet: the tile shows the emoji or initial instead of requesting it. */
   placeholder?: boolean;
+  /**
+   * Temporary: art under review, served from public/avatars/preview/ until it is on Cloudinary.
+   * Delete the file and the flag once it is uploaded.
+   */
+  preview?: boolean;
 }
 
 export const AVATAR_ANIMALS: readonly AvatarAnimal[] = data.animals;
@@ -115,8 +120,10 @@ const PORTRAIT_BASE = 'https://res.cloudinary.com/dscb8inz1/image/upload/avatars
  * covers the largest tile (the picker's 96px preview) at DPR 3.
  */
 export function portraitArtUrl(animal: string): string | null {
-  const portrait = PORTRAITS_BY_ID.get(animal);
-  if (!portrait || ('placeholder' in portrait && portrait.placeholder)) return null;
+  const portrait: (AvatarAnimal & Partial<EarnedPortrait>) | undefined =
+    PORTRAITS_BY_ID.get(animal);
+  if (!portrait || portrait.placeholder) return null;
+  if (portrait.preview) return `/avatars/preview/${animal}.jpg`;
   return getImageUrl(`${PORTRAIT_BASE}${animal}`, 'thumbnail') ?? null;
 }
 
