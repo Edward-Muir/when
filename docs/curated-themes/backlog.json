@@ -561,6 +561,35 @@
       "status": "done"
     },
     {
+      "id": "dinosaurs",
+      "name": "Dinosaurs",
+      "scope": "Yes if it is a dinosaur, dated to when it lived, or a turning point in the dinosaurs' own story",
+      "boundary": "Dinosaurs owns the animals themselves and the bookends of their reign; their discovery goes to Bone Hunters, and the life around them (mammals, pterosaurs, sea reptiles, flowering plants) stays in Before Us.",
+      "neighbours": ["before-us", "bone-hunters"],
+      "grid": {
+        "categories": ["nature"],
+        "eras": ["prehistory"],
+        "regions": ["Global"]
+      },
+      "example_beats": [
+        "Eoraptor, one of the first dinosaurs (231 million years ago)",
+        "Coelophysis hunts in packs (215 million years ago)",
+        "Plateosaurus, an early long-neck (214 million years ago)",
+        "Dilophosaurus (193 million years ago)",
+        "Allosaurus (155 million years ago)",
+        "Stegosaurus (155 million years ago)",
+        "Archaeopteryx, the first bird (150 million years ago)",
+        "Iguanodon (126 million years ago)",
+        "Spinosaurus (99 million years ago)",
+        "Velociraptor (75 million years ago)",
+        "Tyrannosaurus rex (68 million years ago)",
+        "The asteroid ends their reign (66 million years ago)"
+      ],
+      "notes": "Edward wants to learn the order the dinosaurs lived in. One beat per dinosaur, dated to the start of its fossil range, with the range in `note`, plus the bookends: the first dinosaurs and the asteroid. Spread the beats across the Triassic, Jurassic and Cretaceous in proportion to their length (about 50, 56 and 79 million years). The 10-year bunching check can't see deep time, so this spread is yours to keep. Never name a period, 'million years' or 'prehistoric' in a title or description, since when each one lived is the whole game.",
+      "appeal": 3,
+      "status": "queued"
+    },
+    {
       "id": "sweet-tooth",
       "name": "Sweet Tooth",
       "scope": "Yes if it is a sweet treat",
