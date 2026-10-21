@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T19:11:24.505Z",
+  "updated_at": "2026-10-21T19:14:35.596Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-21T19:11:24.505Z"
     },
     "last-great-auks-killed": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2f19ad7f4936897fb9633790f4deef97b6e4eced15d62d8bbd9570d1a9ab8ca1",
+      "updated_at": "2026-10-21T19:14:35.596Z"
     },
     "last-cape-lion-shot": {
       "state": "pending",
