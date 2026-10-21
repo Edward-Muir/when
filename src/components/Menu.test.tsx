@@ -88,6 +88,19 @@ describe('Menu', () => {
     expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
   });
 
+  it('wears an earned portrait once its badge is unlocked', async () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    localStorage.setItem('when-achievements', JSON.stringify({ unlocked: { '27': '2026-10-01' } }));
+    renderMenu();
+    const item = screen.getByRole('button', { name: /profile/i });
+    await userEvent.click(item);
+
+    await userEvent.click(screen.getByRole('radio', { name: 'Unicorn' }));
+
+    expect(localStorage.getItem('when-avatar')).toBe('unicorn');
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('unicorn');
+  });
+
   describe('renaming in Profile', () => {
     const openProfile = async () => {
       localStorage.setItem('when-display-name', 'Linguistic Platypus');

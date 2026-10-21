@@ -5,6 +5,7 @@ Build the art-generation CSV for the avatar portraits.
 Usage:
   python3 scripts/avatars/avatar-art-prompts.py
   python3 scripts/avatars/avatar-art-prompts.py --out path/to.csv
+  python3 scripts/avatars/avatar-art-prompts.py --earned
 
 One row per animal in src/data/avatars.json, from the hand-reviewed personas in
 scripts/avatars/personas.json. See docs/avatars/index.md for the art spec.
@@ -24,6 +25,14 @@ Their preview portraits (public/avatars/preview/) are the final art, so they hav
 no row. Every other animal must have exactly one persona; a missing or unknown id is a hard error,
 never a skipped row.
 
+## --earned: the achievement portraits
+
+The pick-only creatures in avatars.json's `earned` list (one per achievement), from
+scripts/avatars/earned-personas.json, into docs/avatars/art/earned_prompts.csv. Same template,
+same rules, same contract. None is skipped, every `achievementId` must be a badge id in
+src/data/achievements.ts, and no badge may have two. Their research line asks for reference
+images rather than photographs, since a unicorn or a sirrush has none.
+
 ## A dark painted backdrop, not a cut-out
 
 The prompt asks for the plain dark backdrop of the two previews, so a portrait needs no
@@ -41,6 +50,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 AVATARS = os.path.join(BASE_DIR, "src", "data", "avatars.json")
 PERSONAS = os.path.join(BASE_DIR, "scripts", "avatars", "personas.json")
 DEFAULT_OUT = os.path.join(BASE_DIR, "docs", "avatars", "art", "avatar_prompts.csv")
+EARNED_PERSONAS = os.path.join(BASE_DIR, "scripts", "avatars", "earned-personas.json")
+EARNED_OUT = os.path.join(BASE_DIR, "docs", "avatars", "art", "earned_prompts.csv")
+ACHIEVEMENTS = os.path.join(BASE_DIR, "src", "data", "achievements.ts")
 
 COLUMNS = ["event_name", "research_prompt", "image_prompt", "image_generated", "saved_filename"]
 
@@ -64,6 +76,12 @@ SKELETON = (
 
 RESEARCH = (
     "Search the web for reference photographs of the {animal}, and for Old Master and period "
+    "portraits of {a_role}. Study the {research_focus}."
+)
+# Dinosaurs and creatures of legend have no photographs: fossil reconstructions and the classic
+# depictions in art stand in, and the research focus names which.
+RESEARCH_EARNED = (
+    "Search the web for reference images of the {animal}, and for Old Master and period "
     "portraits of {a_role}. Study the {research_focus}."
 )
 
@@ -92,18 +110,18 @@ def load_json(path):
         return json.load(f)
 
 
-def check(animals, personas):
-    """Every animal but the skipped two has exactly one complete, rule-abiding persona."""
+def check(animals, personas, skipped):
+    """Every animal but the skipped ones has exactly one complete, rule-abiding persona."""
     errors = []
     known = {a["id"] for a in animals}
     for animal_id in personas:
         if animal_id not in known:
-            errors.append(f"{animal_id}: not an animal in avatars.json")
-        elif animal_id in SKIPPED:
+            errors.append(f"{animal_id}: not in avatars.json")
+        elif animal_id in skipped:
             errors.append(f"{animal_id}: has final preview art and must not have a persona")
     for animal in animals:
         animal_id = animal["id"]
-        if animal_id in SKIPPED:
+        if animal_id in skipped:
             continue
         persona = personas.get(animal_id)
         if persona is None:
@@ -129,6 +147,23 @@ def check(animals, personas):
     return errors
 
 
+def check_badges(earned):
+    """Every earned portrait names a real badge, and no badge has two."""
+    with open(ACHIEVEMENTS, encoding="utf-8") as f:
+        badges = set(re.findall(r"^\s*id: '([^']+)',", f.read(), re.MULTILINE))
+    errors = []
+    seen = {}
+    for portrait in earned:
+        badge = portrait.get("achievementId")
+        if badge not in badges:
+            errors.append(f"{portrait['id']}: achievementId {badge!r} is not a badge")
+        elif badge in seen:
+            errors.append(f"{portrait['id']}: badge {badge} already earns {seen[badge]}")
+        else:
+            seen[badge] = portrait["id"]
+    return errors
+
+
 def previous_progress(path):
     """Carry image_generated / saved_filename across re-runs, by animal id."""
     if not os.path.exists(path):
@@ -139,22 +174,31 @@ def previous_progress(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    parser.add_argument("--out", default=DEFAULT_OUT)
+    parser.add_argument("--out")
+    parser.add_argument(
+        "--earned", action="store_true", help="the achievement portraits, not the 62 animals"
+    )
     args = parser.parse_args()
 
-    animals = load_json(AVATARS)["animals"]
-    personas = load_json(PERSONAS)
-
-    errors = check(animals, personas)
+    if args.earned:
+        animals = load_json(AVATARS)["earned"]
+        personas = load_json(EARNED_PERSONAS)
+        skipped, research, out = set(), RESEARCH_EARNED, args.out or EARNED_OUT
+        errors = check(animals, personas, skipped) + check_badges(animals)
+    else:
+        animals = load_json(AVATARS)["animals"]
+        personas = load_json(PERSONAS)
+        skipped, research, out = SKIPPED, RESEARCH, args.out or DEFAULT_OUT
+        errors = check(animals, personas, skipped)
     if errors:
         print("\n".join(errors), file=sys.stderr)
         sys.exit(1)
 
-    progress = previous_progress(args.out)
+    progress = previous_progress(out)
     rows = []
     for animal in animals:
         animal_id = animal["id"]
-        if animal_id in SKIPPED:
+        if animal_id in skipped:
             continue
         p = {k: v.strip() for k, v in personas[animal_id].items()}
         name = p.pop("animal", None) or animal["label"].lower()
@@ -162,7 +206,7 @@ def main():
         rows.append(
             {
                 "event_name": animal_id,
-                "research_prompt": RESEARCH.format(
+                "research_prompt": research.format(
                     animal=name, a_role=article(p["role"]), **p
                 ),
                 "image_prompt": SKELETON.format(animal=name, a_animal=article(name), **p),
@@ -171,12 +215,12 @@ def main():
             }
         )
 
-    os.makedirs(os.path.dirname(args.out), exist_ok=True)
-    with open(args.out, "w", encoding="utf-8", newline="") as f:
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    with open(out, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=COLUMNS)
         writer.writeheader()
         writer.writerows(rows)
-    print(f"Wrote {len(rows)} rows to {os.path.relpath(args.out, BASE_DIR)}")
+    print(f"Wrote {len(rows)} rows to {os.path.relpath(out, BASE_DIR)}")
 
 
 if __name__ == "__main__":

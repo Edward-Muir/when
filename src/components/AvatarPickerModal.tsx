@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import React, { useMemo, useState } from 'react';
+import { Lock, X } from 'lucide-react';
 import Modal from './ui/Modal';
 import Portrait from './ui/Portrait';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
 import { saveDisplayName } from '../utils/playerStorage';
-import { AVATAR_ANIMALS, MAX_NAME_LENGTH, avatarForName, getAnimal } from '../utils/avatar';
+import { getAchievements } from '../utils/statsStorage';
+import { ACHIEVEMENTS } from '../data/achievements';
+import {
+  AVATAR_ANIMALS,
+  EARNED_PORTRAITS,
+  MAX_NAME_LENGTH,
+  avatarForName,
+  getAnimal,
+  ownedEarnedPortraits,
+} from '../utils/avatar';
 
 interface AvatarPickerModalProps {
   open: boolean;
@@ -24,6 +33,10 @@ const SECTION_HEADING =
 const TILE = 'flex flex-col items-center gap-1 rounded-lg p-1 transition-colors';
 const SELECTED = 'ring-2 ring-accent';
 const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
+// The locked tease, as on locked achievement badges: greyed art behind a lock.
+const LOCKED_ART = 'grayscale opacity-50';
+
+const CRITERIA_BY_ACHIEVEMENT = new Map(ACHIEVEMENTS.map((a) => [a.id, a.unlockCriteria]));
 // The cap follows the *visible* viewport: `--vh` is `1dvh` where supported (App.tsx). Plain
 // `vh` is the large viewport on iOS browsers, so with their toolbars showing a 90vh card ran
 // off both ends of the screen, header and Done button with it.
@@ -40,6 +53,9 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
  * half-typed names are never broadcast. On `ui/Modal`: keep it mounted and drive `open`.
  * `reveal` layer so it clears the menu drawer or popup it opens from. The preview and the footer
  * are pinned and only the grid scrolls, so the way out is always on screen.
+ *
+ * Below the animals, the earned portraits: one per achievement. A locked one can be tapped to
+ * preview it with its unlock line, which never saves; any pick or reopening clears the preview.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   open,
@@ -51,7 +67,13 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   const editsName = previewName === undefined;
   const name = previewName ?? profile.name;
   const avatar = profile.choice ?? avatarForName(name);
-  const { setAvatar } = profile;
+  const { setAvatar: saveAvatar } = profile;
+  // A locked earned portrait being previewed, or null to show the saved one.
+  const [peek, setPeek] = useState<string | null>(null);
+  const setAvatar = (id: string) => {
+    setPeek(null);
+    saveAvatar(id);
+  };
 
   // The name being typed. Re-seeded from the saved name each time the modal opens, so a rename
   // made elsewhere (the submit form saves the name it sends) is what the field starts from.
@@ -59,8 +81,18 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   const [wasOpen, setWasOpen] = useState(open);
   if (open !== wasOpen) {
     setWasOpen(open);
-    if (open) setDraft(profile.name);
+    if (open) {
+      setDraft(profile.name);
+      setPeek(null);
+    }
   }
+  // Read once per opening: badges are only earned at the end of a game, never while this is up.
+  const owned = useMemo(
+    () => (open ? ownedEarnedPortraits(getAchievements().unlocked) : new Set<string>()),
+    [open]
+  );
+  const peeked = EARNED_PORTRAITS.find((p) => p.id === peek);
+  const peekCriteria = peeked ? CRITERIA_BY_ACHIEVEMENT.get(peeked.achievementId) : null;
 
   const commitName = () => {
     const next = draft.trim();
@@ -107,9 +139,19 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
     >
       <div className="shrink-0 px-4 py-3 border-b border-border">
         <div className="flex items-center gap-3">
-          <Portrait animal={avatar} size={96} />
+          <Portrait animal={peek ?? avatar} size={96} className={peek ? LOCKED_ART : ''} />
           <div className="min-w-0 flex-1">
-            {editsName ? (
+            {peekCriteria ? (
+              <div data-testid="locked-preview">
+                <div className="font-display font-semibold text-lg text-text truncate">
+                  {peeked?.label}
+                </div>
+                <div className="flex items-center gap-1 text-xs text-text-muted font-body">
+                  <Lock className="w-3 h-3 shrink-0" aria-hidden />
+                  <span>{peekCriteria}</span>
+                </div>
+              </div>
+            ) : editsName ? (
               // 16px text: iOS zooms the page into any smaller input on focus.
               <input
                 type="text"
@@ -128,9 +170,11 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
             ) : (
               <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
             )}
-            <div className={`text-xs text-text-muted font-body ${editsName ? 'mt-1 px-1' : ''}`}>
-              {getAnimal(avatar)?.label}
-            </div>
+            {!peekCriteria && (
+              <div className={`text-xs text-text-muted font-body ${editsName ? 'mt-1 px-1' : ''}`}>
+                {getAnimal(avatar)?.label}
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -154,6 +198,49 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
                   <Portrait animal={animal.id} size={44} />
                   <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
                     {animal.label}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </section>
+
+        <section>
+          <h3 className={SECTION_HEADING}>
+            Earned{' '}
+            <span className="normal-case tracking-normal font-normal">
+              · {owned.size} of {EARNED_PORTRAITS.length}
+            </span>
+          </h3>
+          <div className={GRID} role="radiogroup" aria-label="Earned portrait">
+            {EARNED_PORTRAITS.map((portrait) => {
+              const unlocked = owned.has(portrait.id);
+              const selected = portrait.id === (peek ?? avatar);
+              return (
+                <button
+                  key={portrait.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={unlocked && selected}
+                  aria-disabled={!unlocked}
+                  aria-label={unlocked ? portrait.label : `${portrait.label}, locked`}
+                  onClick={() => (unlocked ? setAvatar(portrait.id) : setPeek(portrait.id))}
+                  className={`${TILE} ${selected ? SELECTED : ''}`}
+                >
+                  <span className="relative">
+                    <Portrait
+                      animal={portrait.id}
+                      size={44}
+                      className={unlocked ? '' : LOCKED_ART}
+                    />
+                    {!unlocked && (
+                      <span className="absolute -bottom-1 -right-1 flex items-center justify-center w-4 h-4 rounded-full bg-surface border border-border">
+                        <Lock className="w-2.5 h-2.5 text-text-muted" aria-hidden />
+                      </span>
+                    )}
+                  </span>
+                  <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
+                    {portrait.label}
                   </span>
                 </button>
               );

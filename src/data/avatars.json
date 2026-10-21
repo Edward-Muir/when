@@ -289,5 +289,398 @@
       "label": "Dog",
       "emoji": "🐕"
     }
+  ],
+  "earned": [
+    {
+      "id": "hatchling",
+      "label": "Hatchling",
+      "achievementId": "01",
+      "emoji": "🐣",
+      "placeholder": true
+    },
+    {
+      "id": "capybara",
+      "label": "Capybara",
+      "achievementId": "02",
+      "placeholder": true
+    },
+    {
+      "id": "yak",
+      "label": "Yak",
+      "achievementId": "03",
+      "placeholder": true
+    },
+    {
+      "id": "smilodon",
+      "label": "Smilodon",
+      "achievementId": "04",
+      "emoji": "🐅",
+      "placeholder": true
+    },
+    {
+      "id": "wombat",
+      "label": "Wombat",
+      "achievementId": "05",
+      "placeholder": true
+    },
+    {
+      "id": "ankylosaurus",
+      "label": "Ankylosaurus",
+      "achievementId": "06",
+      "placeholder": true
+    },
+    {
+      "id": "stegosaurus",
+      "label": "Stegosaurus",
+      "achievementId": "07",
+      "placeholder": true
+    },
+    {
+      "id": "griffin",
+      "label": "Griffin",
+      "achievementId": "08",
+      "placeholder": true
+    },
+    {
+      "id": "tyrannosaurus",
+      "label": "Tyrannosaurus",
+      "achievementId": "cat-empires",
+      "emoji": "🦖",
+      "placeholder": true
+    },
+    {
+      "id": "fire-salamander",
+      "label": "Fire Salamander",
+      "achievementId": "cat-revolution",
+      "placeholder": true
+    },
+    {
+      "id": "weaverbird",
+      "label": "Weaverbird",
+      "achievementId": "cat-architecture",
+      "emoji": "🐦",
+      "placeholder": true
+    },
+    {
+      "id": "vampire-bat",
+      "label": "Vampire Bat",
+      "achievementId": "cat-writing",
+      "emoji": "🦇",
+      "placeholder": true
+    },
+    {
+      "id": "magpie",
+      "label": "Magpie",
+      "achievementId": "cat-invention",
+      "placeholder": true
+    },
+    {
+      "id": "lyrebird",
+      "label": "Lyrebird",
+      "achievementId": "cat-figures",
+      "placeholder": true
+    },
+    {
+      "id": "axolotl",
+      "label": "Axolotl",
+      "achievementId": "cat-media",
+      "placeholder": true
+    },
+    {
+      "id": "pangolin",
+      "label": "Pangolin",
+      "achievementId": "cat-craft",
+      "placeholder": true
+    },
+    {
+      "id": "ibex",
+      "label": "Ibex",
+      "achievementId": "cat-diplomacy",
+      "emoji": "🐐",
+      "placeholder": true
+    },
+    {
+      "id": "tardigrade",
+      "label": "Tardigrade",
+      "achievementId": "cat-disasters",
+      "placeholder": true
+    },
+    {
+      "id": "money-toad",
+      "label": "Money Toad",
+      "achievementId": "cat-commerce",
+      "emoji": "🐸",
+      "placeholder": true
+    },
+    {
+      "id": "ram",
+      "label": "Ram",
+      "achievementId": "cat-law",
+      "emoji": "🐏",
+      "placeholder": true
+    },
+    {
+      "id": "aurochs",
+      "label": "Aurochs",
+      "achievementId": "cat-agriculture",
+      "emoji": "🐂",
+      "placeholder": true
+    },
+    {
+      "id": "minotaur",
+      "label": "Minotaur",
+      "achievementId": "cat-warfare",
+      "placeholder": true
+    },
+    {
+      "id": "lab-rat",
+      "label": "Lab Rat",
+      "achievementId": "cat-science",
+      "emoji": "🐀",
+      "placeholder": true
+    },
+    {
+      "id": "narwhal",
+      "label": "Narwhal",
+      "achievementId": "cat-trade",
+      "placeholder": true
+    },
+    {
+      "id": "arctic-tern",
+      "label": "Arctic Tern",
+      "achievementId": "cat-migration",
+      "placeholder": true
+    },
+    {
+      "id": "chameleon",
+      "label": "Chameleon",
+      "achievementId": "cat-art",
+      "emoji": "🦎",
+      "placeholder": true
+    },
+    {
+      "id": "ibis",
+      "label": "Ibis",
+      "achievementId": "cat-medicine",
+      "placeholder": true
+    },
+    {
+      "id": "dodo",
+      "label": "Dodo",
+      "achievementId": "cat-nature",
+      "emoji": "🦤",
+      "placeholder": true
+    },
+    {
+      "id": "cheetah",
+      "label": "Cheetah",
+      "achievementId": "cat-sports",
+      "emoji": "🐆",
+      "placeholder": true
+    },
+    {
+      "id": "mummy-cat",
+      "label": "Mummy Cat",
+      "achievementId": "16",
+      "emoji": "🐈",
+      "placeholder": true
+    },
+    {
+      "id": "qilin",
+      "label": "Qilin",
+      "achievementId": "17",
+      "placeholder": true
+    },
+    {
+      "id": "yeti",
+      "label": "Yeti",
+      "achievementId": "18",
+      "placeholder": true
+    },
+    {
+      "id": "armadillo",
+      "label": "Armadillo",
+      "achievementId": "19",
+      "placeholder": true
+    },
+    {
+      "id": "bison",
+      "label": "Bison",
+      "achievementId": "20",
+      "emoji": "🦬",
+      "placeholder": true
+    },
+    {
+      "id": "werewolf",
+      "label": "Werewolf",
+      "achievementId": "21",
+      "emoji": "🐺",
+      "placeholder": true
+    },
+    {
+      "id": "triceratops",
+      "label": "Triceratops",
+      "achievementId": "22",
+      "placeholder": true
+    },
+    {
+      "id": "spinosaurus",
+      "label": "Spinosaurus",
+      "achievementId": "23",
+      "placeholder": true
+    },
+    {
+      "id": "hamster",
+      "label": "Hamster",
+      "achievementId": "24",
+      "emoji": "🐹",
+      "placeholder": true
+    },
+    {
+      "id": "rooster",
+      "label": "Rooster",
+      "achievementId": "25",
+      "emoji": "🐓",
+      "placeholder": true
+    },
+    {
+      "id": "quetzalcoatl",
+      "label": "Quetzalcoatl",
+      "achievementId": "26",
+      "emoji": "🐍",
+      "placeholder": true
+    },
+    {
+      "id": "unicorn",
+      "label": "Unicorn",
+      "achievementId": "27",
+      "emoji": "🦄",
+      "placeholder": true
+    },
+    {
+      "id": "meerkat",
+      "label": "Meerkat",
+      "achievementId": "28",
+      "placeholder": true
+    },
+    {
+      "id": "clockwork-mouse",
+      "label": "Clockwork Mouse",
+      "achievementId": "29",
+      "emoji": "🐭",
+      "placeholder": true
+    },
+    {
+      "id": "sea-lion",
+      "label": "Sea Lion",
+      "achievementId": "30",
+      "emoji": "🦭",
+      "placeholder": true
+    },
+    {
+      "id": "cuckoo",
+      "label": "Cuckoo",
+      "achievementId": "31",
+      "placeholder": true
+    },
+    {
+      "id": "sphinx",
+      "label": "Sphinx",
+      "achievementId": "32",
+      "placeholder": true
+    },
+    {
+      "id": "phantom-hound",
+      "label": "Phantom Hound",
+      "achievementId": "33",
+      "emoji": "👻",
+      "placeholder": true
+    },
+    {
+      "id": "red-panda",
+      "label": "Red Panda",
+      "achievementId": "34",
+      "placeholder": true
+    },
+    {
+      "id": "zebra",
+      "label": "Zebra",
+      "achievementId": "35",
+      "emoji": "🦓",
+      "placeholder": true
+    },
+    {
+      "id": "woolly-mammoth",
+      "label": "Woolly Mammoth",
+      "achievementId": "36",
+      "emoji": "🦣",
+      "placeholder": true
+    },
+    {
+      "id": "bowerbird",
+      "label": "Bowerbird",
+      "achievementId": "coll-100",
+      "placeholder": true
+    },
+    {
+      "id": "bookworm",
+      "label": "Bookworm",
+      "achievementId": "coll-500",
+      "emoji": "🐛",
+      "placeholder": true
+    },
+    {
+      "id": "gargoyle",
+      "label": "Gargoyle",
+      "achievementId": "coll-1500",
+      "placeholder": true
+    },
+    {
+      "id": "great-elk",
+      "label": "Great Elk",
+      "achievementId": "coll-3000",
+      "emoji": "🦌",
+      "placeholder": true
+    },
+    {
+      "id": "sirrush",
+      "label": "Sirrush",
+      "achievementId": "era-bce",
+      "emoji": "🐲",
+      "placeholder": true
+    },
+    {
+      "id": "pigeon",
+      "label": "Pigeon",
+      "achievementId": "era-modern",
+      "placeholder": true
+    },
+    {
+      "id": "jackalope",
+      "label": "Jackalope",
+      "achievementId": "era-epochs",
+      "emoji": "🐇",
+      "placeholder": true
+    },
+    {
+      "id": "pegasus",
+      "label": "Pegasus",
+      "achievementId": "theme-renaissance",
+      "placeholder": true
+    },
+    {
+      "id": "spider",
+      "label": "Spider",
+      "achievementId": "theme-statecraft",
+      "emoji": "🕷",
+      "placeholder": true
+    },
+    {
+      "id": "kitsune",
+      "label": "Kitsune",
+      "achievementId": "meta-categories",
+      "emoji": "🦊",
+      "placeholder": true
+    }
   ]
 }
