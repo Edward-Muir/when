@@ -46,6 +46,7 @@ const {
   DECK_BRANCH_PREFIX,
   MAX_IN_FLIGHT,
   BACKOFF_MS,
+  NO_BACKOFF,
   HEALTH_EVERY_MS,
 } = config;
 const STAGES = ['health', 'author', 'art-batch', 'qc', 'ship', 'schedule'];
@@ -218,7 +219,8 @@ function waitingOnEdward(decks) {
 /**
  * Why `auto` should leave a stage alone for now, or null. A stage that ended blocked or failed
  * waits BACKOFF_MS, so one broken stage (Chrome signed out, a merge conflict) can't take every
- * run; art that hit Gemini's daily cap waits for the next local day. Forcing a stage ignores it.
+ * run; art that hit Gemini's daily cap waits for the next local day. A blocked art batch doesn't
+ * wait (NO_BACKOFF): Gemini's outages pass quickly. Forcing a stage ignores all of it.
  */
 function backoffReason(stage, runLog, now) {
   const last = runLog[stage];
@@ -226,6 +228,7 @@ function backoffReason(stage, runLog, now) {
   const at = Date.parse(last.at);
   if (last.outcome === 'quota' && localDay(at) === localDay(now))
     return 'image quota used up today';
+  if (NO_BACKOFF.includes(stage)) return null;
   if ((last.outcome === 'blocked' || last.outcome === 'failed') && now - at < BACKOFF_MS) {
     return `${last.outcome} at ${last.at}; waiting ${BACKOFF_MS / 3600000}h`;
   }
