@@ -141,7 +141,7 @@ describe('display name and avatar storage', () => {
   });
 
   it('ignores a stored pick this build does not know', () => {
-    localStorage.setItem('when-avatar', 'unicorn');
+    localStorage.setItem('when-avatar', 'manticore');
     expect(getAvatarChoice()).toBeNull();
   });
 
