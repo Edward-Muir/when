@@ -12513,7 +12513,10 @@
     "year": 1000,
     "category": "nature",
     "description": "The largest birds ever to live, towering flightless giants of an Indian Ocean island, vanished after people settled there.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Madagascar"
+    ]
   },
   {
     "name": "moa-extinct-new-zealand",
@@ -12521,7 +12524,10 @@
     "year": 1445,
     "category": "nature",
     "description": "Hunting by the first Polynesian settlers wiped out all nine species of towering flightless birds within about a century.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "stellers-sea-cow-hunted-out",
@@ -12529,7 +12535,11 @@
     "year": 1768,
     "category": "nature",
     "description": "A giant, gentle relative of the manatee was wiped out in the Bering Sea within decades of its discovery by Europeans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "last-great-auks-killed",
@@ -12537,7 +12547,10 @@
     "year": 1844,
     "category": "nature",
     "description": "Fishermen strangled the last known pair of the North Atlantic's flightless penguin-like seabird on a rocky Icelandic islet.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Iceland"
+    ]
   },
   {
     "name": "last-cape-lion-shot",
@@ -12545,7 +12558,10 @@
     "year": 1858,
     "category": "nature",
     "description": "The large black-maned lion of South Africa's southern tip was shot out by hunters and settlers, ending a distinct subspecies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "South Africa"
+    ]
   },
   {
     "name": "tasmanian-emu-extinct",
@@ -12553,7 +12569,10 @@
     "year": 1865,
     "category": "nature",
     "description": "A dwarf emu of an island south of Australia was shot out by settlers and its last birds vanished from the wild.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "falkland-islands-wolf-extinct",
@@ -12561,7 +12580,10 @@
     "year": 1876,
     "category": "nature",
     "description": "The only native land mammal of its remote South Atlantic archipelago was hunted and poisoned out by settlers and sheep farmers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Falkland Islands"
+    ]
   },
   {
     "name": "stephens-island-wren-extinct",
@@ -12569,7 +12591,10 @@
     "year": 1895,
     "category": "nature",
     "description": "A tiny flightless songbird of a small New Zealand island was destroyed soon after a lighthouse keeper's cat arrived.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "rocky-mountain-locust-extinct",
@@ -12577,7 +12602,11 @@
     "year": 1902,
     "category": "nature",
     "description": "Swarms once the size of a large state had darkened the American plains, yet the insect was gone after one last live specimen.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada",
+      "United States"
+    ]
   },
   {
     "name": "huia-last-seen",
@@ -12585,7 +12614,10 @@
     "year": 1907,
     "category": "nature",
     "description": "A prized New Zealand songbird, whose tail feathers were worn as ornaments and whose forest was cleared, was last seen alive.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "New Zealand"
+    ]
   },
   {
     "name": "last-carolina-parakeet-dies",
@@ -12593,7 +12625,10 @@
     "year": 1918,
     "category": "nature",
     "description": "The only parrot native to the eastern United States ended its story when its last captive, Incas, died in a Cincinnati zoo.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "last-wild-barbary-lion-shot",
@@ -12601,7 +12636,10 @@
     "year": 1922,
     "category": "nature",
     "description": "The big, dark-maned lion of North Africa, a favourite of the Roman arena, was last shot in the wild in the Atlas Mountains.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Morocco"
+    ]
   },
   {
     "name": "last-heath-hen-booming-ben",
@@ -12609,7 +12647,10 @@
     "year": 1932,
     "category": "nature",
     "description": "The final eastern prairie chicken, a lone male nicknamed for his call, was last seen on an island off Massachusetts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "xerces-blue-butterfly-extinct",
@@ -12617,7 +12658,10 @@
     "year": 1941,
     "category": "nature",
     "description": "A small blue butterfly of the San Francisco peninsula became the first American insect known to vanish through urban development.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "caribbean-monk-seal-last-sighted",
@@ -12625,7 +12669,10 @@
     "year": 1952,
     "category": "nature",
     "description": "The only seal native to the warm Caribbean waters was last seen on a remote bank, after centuries of hunting for oil.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Colombia"
+    ]
   },
   {
     "name": "caspian-tiger-extinct",
@@ -12633,7 +12680,10 @@
     "year": 1970,
     "category": "nature",
     "description": "A long-legged tiger of the lands around an inland sea was last seen, victim of hunting and the loss of its river forests.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "javan-tiger-last-recorded",
@@ -12641,7 +12691,10 @@
     "year": 1976,
     "category": "nature",
     "description": "A small island tiger, once found across its Indonesian homeland, slipped away as forests were turned into farmland.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Indonesia"
+    ]
   },
   {
     "name": "dusky-seaside-sparrow-last-dies",
@@ -12649,7 +12702,10 @@
     "year": 1987,
     "category": "nature",
     "description": "The final bird of a marsh sparrow found only on one Florida coast died in captivity, a lone male named Orange Band.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "golden-toad-last-seen",
@@ -12657,7 +12713,10 @@
     "year": 1989,
     "category": "nature",
     "description": "A brilliant orange amphibian from one Costa Rican cloud forest vanished, a warning sign of climate change and disease.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Costa Rica"
+    ]
   },
   {
     "name": "celia-last-pyrenean-ibex-dies",
@@ -12665,7 +12724,10 @@
     "year": 2000,
     "category": "nature",
     "description": "The last wild wild-goat of her mountain range was found crushed by a fallen tree, later briefly cloned, then lost again.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "baiji-functionally-extinct",
@@ -12673,7 +12735,10 @@
     "year": 2006,
     "category": "nature",
     "description": "A survey of the Yangtze failed to find a single freshwater dolphin, the first dolphin lost to human activity.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "lonesome-george-dies",
@@ -12681,7 +12746,10 @@
     "year": 2012,
     "category": "nature",
     "description": "The last Pinta Island giant tortoise, long the world's rarest creature, died in the Galapagos after decades without a mate.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Ecuador"
+    ]
   },
   {
     "name": "ivory-billed-woodpecker-proposed-extinct",
@@ -12689,7 +12757,10 @@
     "year": 2021,
     "category": "nature",
     "description": "A wildlife agency proposed declaring a giant swamp woodpecker, long searched for in Southern forests, extinct.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "chinese-paddlefish-declared-extinct",
@@ -12697,6 +12768,9 @@
     "year": 2022,
     "category": "nature",
     "description": "One of the largest freshwater fish on Earth, a Yangtze giant from the age of dinosaurs, was officially declared lost.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China"
+    ]
   }
 ]
