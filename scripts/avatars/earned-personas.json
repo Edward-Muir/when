@@ -79,7 +79,7 @@
     "prop": "a small wooden model of a flapping-wing flying machine held up in one talon",
     "light": "studio window light",
     "research_focus": "Leonardo da Vinci's self-portrait and ornithopter designs, Renaissance berets, and griffins in medieval and Renaissance art",
-    "animal": "griffin, with an eagle's head and a lion's mane"
+    "animal": "griffin (eagle's head, lion's mane)"
   },
   "tyrannosaurus": {
     "role": "Roman emperor",
@@ -146,7 +146,7 @@
     "research_focus": "Elizabethan theatre and the Globe, portraits of Shakespeare-era actors in ruffs, Hamlet's 'Alas, poor Yorick' scene, and superb lyrebird reference photographs with tail display"
   },
   "axolotl": {
-    "role": "celebrity glamour",
+    "role": "Hollywood celebrity",
     "persona": "a glamorous trendsetter",
     "feature": "wide smiling face and feathery frilled gills fanning from its head",
     "expression": "a cheeky, camera-ready smile",
@@ -185,7 +185,7 @@
     "prop": "a dented ship's lantern held up in one stubby claw",
     "light": "lantern light",
     "research_focus": "tardigrade microscope images and illustrations, Titanic-era cork life jackets, and 1912 lifeboat survivor photographs",
-    "animal": "tardigrade, the microscopic water bear"
+    "animal": "tardigrade (microscopic water bear)"
   },
   "money-toad": {
     "role": "Gilded Age tycoon",
@@ -227,11 +227,11 @@
     "prop": "a double-headed labrys axe held upright beside its face",
     "light": "firelight",
     "research_focus": "Mycenaean warriors and boar's-tusk helmets, the Minoan labrys double axe, and the Minotaur in Greek vase painting",
-    "animal": "minotaur, a bull-headed warrior"
+    "animal": "minotaur (bull-headed warrior)"
   },
   "lab-rat": {
     "role": "nineteenth-century laboratory chemist",
-    "persona": "a laboratory scientist, the lab rat turned experimenter",
+    "persona": "a lab rat turned laboratory scientist",
     "feature": "long whiskered snout and large round ears",
     "expression": "an intent, scrutinising squint",
     "costume": "round protective laboratory goggles",
@@ -303,7 +303,7 @@
     "research_focus": "1930 FIFA World Cup in Uruguay, 1930s football kit and laced leather balls, and cheetah reference photographs"
   },
   "mummy-cat": {
-    "role": "ancient Egyptian temple",
+    "role": "ancient Egyptian temple priest",
     "persona": "a sacred temple cat risen from its tomb",
     "feature": "tall pointed ears and gleaming eyes peering out from its wrappings",
     "expression": "an eerie, ageless stare",
@@ -322,7 +322,7 @@
     "prop": "an hourglass held up beside its face",
     "light": "lantern light",
     "research_focus": "qilin in Ming dynasty art and embroidery, Ming official hats with side wings (wushamao), the Great Wall, and antique hourglasses",
-    "animal": "qilin, the scaled and antlered beast of Chinese legend"
+    "animal": "qilin (scaled, antlered beast of Chinese legend)"
   },
   "yeti": {
     "role": "1950s Himalayan mountaineer",
@@ -355,8 +355,8 @@
     "research_focus": "Genghis Khan-era Mongol warriors' helmets and the sulde horsehair standard, and American bison reference photographs"
   },
   "werewolf": {
-    "role": "Victorian gothic horror",
-    "persona": "a werewolf on a moonlit rampage",
+    "role": "Victorian gothic gentleman",
+    "persona": "a gentleman cursed to rampage under the full moon",
     "feature": "bristling wolfish snout, bared fangs and wild mane",
     "expression": "a savage, snarling howl",
     "costume": "the torn collar of a gentleman's frock coat",
@@ -416,8 +416,8 @@
     "animal": "feathered serpent of Mesoamerican legend"
   },
   "unicorn": {
-    "role": "medieval royal court",
-    "persona": "a legendary noble beast of the royal court",
+    "role": "medieval monarch",
+    "persona": "the legendary emblem of a royal court",
     "feature": "long spiralled horn and flowing mane",
     "expression": "a gentle, timeless serenity",
     "costume": "an ermine-trimmed mantle",
@@ -438,7 +438,7 @@
   },
   "clockwork-mouse": {
     "role": "Swiss automaton maker",
-    "persona": "a wind-up clockwork automaton",
+    "persona": "a tireless wind-up toy",
     "feature": "round riveted ears, pointed snout and a large wind-up key in its back",
     "expression": "a jaunty, mechanical stare",
     "costume": "a tiny tinker's waistcoat",
@@ -481,7 +481,7 @@
     "animal": "winged sphinx with a lion's face"
   },
   "phantom-hound": {
-    "role": "Victorian ghost-story",
+    "role": "Victorian churchyard watchman",
     "persona": "a faithful ghost dog still keeping its watch",
     "feature": "translucent glowing face with long drooping ears",
     "expression": "a mournful, loyal gaze",
@@ -513,7 +513,7 @@
     "research_focus": "Edwardian jockeys' silks and caps, early horse domestication, and plains zebra reference photographs"
   },
   "woolly-mammoth": {
-    "role": "Carthaginian war elephant",
+    "role": "Carthaginian general",
     "persona": "one of Hannibal's war beasts crossing the Alps",
     "feature": "shaggy domed head and great curling tusks",
     "expression": "a dogged, determined look",
@@ -554,7 +554,7 @@
     "prop": "a heavy ring of iron keys held up in one claw",
     "light": "torchlight",
     "research_focus": "Notre-Dame gargoyles and chimeras, Gothic grotesques, museum custodians' key rings, and the British Museum",
-    "animal": "stone gargoyle, a winged grotesque beast"
+    "animal": "stone gargoyle (winged grotesque beast)"
   },
   "great-elk": {
     "role": "Stonehenge druid",
@@ -568,7 +568,7 @@
     "animal": "giant Irish elk"
   },
   "sirrush": {
-    "role": "Neo-Babylonian royal",
+    "role": "Neo-Babylonian king",
     "persona": "a guardian beast of the Ishtar Gate",
     "feature": "slender scaled serpent head with a single straight horn and forked tongue",
     "expression": "a regal, ancient stare",
@@ -576,11 +576,11 @@
     "prop": "a small stone cylinder seal held up in one claw",
     "light": "brazier light",
     "research_focus": "mushhushshu dragon on the glazed bricks of the Ishtar Gate, Babylonian jewellery, cylinder seals, and the Code of Hammurabi",
-    "animal": "sirrush, the horned scaly dragon of Babylon"
+    "animal": "sirrush (horned scaly dragon of Babylon)"
   },
   "pigeon": {
     "role": "twenty-first-century city dweller",
-    "persona": "a thoroughly modern city pigeon",
+    "persona": "a thoroughly modern city dweller",
     "feature": "small round head and iridescent neck feathers",
     "expression": "a distracted, scrolling stare",
     "costume": "a hooded sweatshirt with earbuds in",
@@ -597,7 +597,7 @@
     "prop": "a corroded bronze geared mechanism held up in both paws",
     "light": "electric glow",
     "research_focus": "Antikythera mechanism, H. G. Wells' The Time Machine, steampunk goggles, and jackalope taxidermy and folklore",
-    "animal": "jackalope, a hare with small antlers"
+    "animal": "jackalope (hare with small antlers)"
   },
   "pegasus": {
     "role": "Florentine Renaissance poet",
@@ -608,7 +608,7 @@
     "prop": "a laurel sprig held in its mouth",
     "light": "Tuscan light",
     "research_focus": "Pegasus and the Muses in Renaissance painting, Florentine Renaissance caps (cappuccio), and Dante's laurel crown",
-    "animal": "pegasus, a winged horse"
+    "animal": "pegasus (winged horse)"
   },
   "spider": {
     "role": "seventeenth-century French cardinal",
@@ -622,7 +622,7 @@
     "animal": "jumping spider"
   },
   "kitsune": {
-    "role": "Heian court",
+    "role": "Heian court noble",
     "persona": "an ancient fox spirit who has gathered all wisdom",
     "feature": "sharp knowing face with nine tails fanned in one great arc behind it",
     "expression": "a sly, serene smile",
@@ -630,6 +630,6 @@
     "prop": "a glowing flame-tipped pearl held up in one paw",
     "light": "spirit-fire glow",
     "research_focus": "kitsune in ukiyo-e prints by Hokusai and Yoshitoshi, the hoshi no tama jewel, and the fox statues of Fushimi Inari shrine",
-    "animal": "kitsune, a nine-tailed fox spirit"
+    "animal": "kitsune (nine-tailed fox spirit)"
   }
 }
