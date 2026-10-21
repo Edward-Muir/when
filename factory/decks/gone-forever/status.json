@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T21:11:44.057Z",
+  "updated_at": "2026-10-21T21:15:08.291Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-21T21:11:44.057Z"
     },
     "xerces-blue-butterfly-extinct": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2f02c39d2c1e8a8546c96f829d17f39f7fdcc99d9ac7fe469817f3d86f36c66f",
+      "updated_at": "2026-10-21T21:15:08.291Z"
     },
     "caribbean-monk-seal-last-sighted": {
       "state": "pending",
