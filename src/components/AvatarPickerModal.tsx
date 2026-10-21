@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { Lock, X } from 'lucide-react';
 import Modal from './ui/Modal';
 import Portrait from './ui/Portrait';
+import AchievementPortraits from './AchievementPortraits';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
 import { saveDisplayName } from '../utils/playerStorage';
-import { getAchievements } from '../utils/statsStorage';
 import { ACHIEVEMENTS } from '../data/achievements';
 import {
   AVATAR_ANIMALS,
@@ -12,7 +12,6 @@ import {
   MAX_NAME_LENGTH,
   avatarForName,
   getAnimal,
-  ownedEarnedPortraits,
 } from '../utils/avatar';
 
 interface AvatarPickerModalProps {
@@ -54,8 +53,9 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
  * `reveal` layer so it clears the menu drawer or popup it opens from. The preview and the footer
  * are pinned and only the grid scrolls, so the way out is always on screen.
  *
- * Below the animals, the earned portraits: one per achievement. A locked one can be tapped to
- * preview it with its unlock line, which never saves; any pick or reopening clears the preview.
+ * Below the animals, the achievement portraits (`AchievementPortraits`). A locked one can be
+ * tapped to preview it with its unlock line, which never saves; any pick or reopening clears
+ * the preview.
  */
 const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   open,
@@ -79,26 +79,17 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
   // made elsewhere (the submit form saves the name it sends) is what the field starts from.
   const [draft, setDraft] = useState(profile.name);
   const [wasOpen, setWasOpen] = useState(open);
+  // Counts openings, so the achievement section re-reads what is new each time. Its own `open`
+  // prop is not enough: the modal freezes its content while it animates out.
+  const [visit, setVisit] = useState(0);
   if (open !== wasOpen) {
     setWasOpen(open);
     if (open) {
       setDraft(profile.name);
       setPeek(null);
+      setVisit((v) => v + 1);
     }
   }
-  // Read once per opening: badges are only earned at the end of a game, never while this is up.
-  const owned = useMemo(
-    () => (open ? ownedEarnedPortraits(getAchievements().unlocked) : new Set<string>()),
-    [open]
-  );
-  // The ones the player can wear first, then everything still locked; catalogue order within each.
-  const earned = useMemo(
-    () => [
-      ...EARNED_PORTRAITS.filter((p) => owned.has(p.id)),
-      ...EARNED_PORTRAITS.filter((p) => !owned.has(p.id)),
-    ],
-    [owned]
-  );
   const peeked = EARNED_PORTRAITS.find((p) => p.id === peek);
   const peekCriteria = peeked ? CRITERIA_BY_ACHIEVEMENT.get(peeked.achievementId) : null;
 
@@ -213,47 +204,18 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
           </div>
         </section>
 
-        <section>
-          <h3 className={SECTION_HEADING}>
-            Earned{' '}
-            <span className="normal-case tracking-normal font-normal">
-              · {owned.size} of {EARNED_PORTRAITS.length}
-            </span>
-          </h3>
-          <div className={GRID} role="radiogroup" aria-label="Earned">
-            {earned.map((portrait) => {
-              const unlocked = owned.has(portrait.id);
-              const selected = portrait.id === (peek ?? avatar);
-              return (
-                <button
-                  key={portrait.id}
-                  type="button"
-                  role="radio"
-                  aria-checked={unlocked && selected}
-                  aria-label={unlocked ? portrait.label : `${portrait.label}, locked`}
-                  onClick={() => (unlocked ? setAvatar(portrait.id) : setPeek(portrait.id))}
-                  className={`${TILE} ${selected ? SELECTED : ''}`}
-                >
-                  <span className="relative">
-                    <Portrait
-                      animal={portrait.id}
-                      size={44}
-                      className={unlocked ? '' : LOCKED_ART}
-                    />
-                    {!unlocked && (
-                      <span className="absolute -bottom-1 -right-1 flex items-center justify-center w-4 h-4 rounded-full bg-surface border border-border">
-                        <Lock className="w-2.5 h-2.5 text-text-muted" aria-hidden />
-                      </span>
-                    )}
-                  </span>
-                  <span className="text-[10px] leading-tight text-text-muted font-body truncate max-w-full">
-                    {portrait.label}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        </section>
+        <AchievementPortraits
+          key={visit}
+          open={open}
+          selectedId={peek ?? avatar}
+          onPick={setAvatar}
+          onPeek={setPeek}
+          headingClass={SECTION_HEADING}
+          gridClass={GRID}
+          tileClass={TILE}
+          selectedClass={SELECTED}
+          lockedArtClass={LOCKED_ART}
+        />
       </div>
 
       <div className="shrink-0 border-t border-border p-4 space-y-2">

@@ -152,20 +152,31 @@ complete for the name generator and the bots. An earned portrait is pick-only:
 `avatarForName` and `generateRandomName` reach only the 62, and earned ids never clash with
 them (`mummy-cat`, not `cat`; `hatchling`, not `dragon`).
 
-**Nothing new is stored.** Ownership is derived from `when-achievements`
+**Ownership is never stored.** It is derived from `when-achievements`
 (`ownedEarnedPortraits`), so a player who already holds a badge already owns its portrait, and
 the pick is the same `when-avatar` value as any other. `parseAvatar` knows both lists, so an
 earned pick travels with the score like any other and other players see it; the server's
 format-only check needed no change. Achievements live on the device, so a pick can be forged;
 acceptable for a cosmetic.
 
-**Where it shows.** The picker lists them under "Earned" with a count, the
-unlocked ones first and every locked one after them, each group in catalogue order. A locked one shows greyed
+**Where it shows.** The picker lists them under "Achievements" with a count (its own section,
+`AchievementPortraits`): new ones first, then the other unlocked ones, then every locked one,
+each group in catalogue order. A locked one shows greyed
 behind a small lock, the tease the locked badges use, and tapping it previews it at the top
 with its unlock line without saving; any real pick or reopening clears the preview. The large
 achievement card (the unlock reveal and the detail popup) names the portrait a badge earns,
 greyed while locked. No metal frame on an earned portrait: gold, silver and bronze mean podium
 place on the board, and badges carry metal rings.
+
+**New ones are flagged once.** A portrait is new while it is owned but not yet in
+`when-portraits-seen` (the ids the picker has shown; its own key in `playerStorage.ts`, since it
+is a growing set rather than a hint's boolean). New ones get a small gold "New" tag and lead the
+section, and the menu's Profile row carries the top bar's gold "new" dot while any exist.
+Opening the picker marks everything owned as seen, so the tags last that visit and the dot
+clears when it closes. Because "new" is owned minus seen, an unlock needs no re-arming (unlike
+the Stats tab's dot), and a player who already held badges when this shipped sees those
+portraits as new once. The picker remounts the section on every opening (`visit`), because the
+modal freezes its content while animating out and a reopen could otherwise reuse a stale read.
 
 **Placeholders until the art lands.** An entry with `placeholder: true` has no art yet:
 `portraitArtUrl` returns null for it, so the tile draws the emoji or initial without asking

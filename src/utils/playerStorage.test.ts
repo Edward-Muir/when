@@ -12,6 +12,8 @@ import {
   getAvatarChoice,
   saveAvatarChoice,
   subscribeToProfile,
+  getSeenPortraits,
+  markPortraitsSeen,
 } from './playerStorage';
 
 const ALL_KEYS: HintKey[] = [
@@ -154,5 +156,25 @@ describe('display name and avatar storage', () => {
     unsubscribe();
     saveAvatarChoice('panda');
     expect(listener).toHaveBeenCalledTimes(2);
+  });
+});
+
+describe('seen achievement portraits storage', () => {
+  beforeEach(() => localStorage.clear());
+
+  it('starts empty and accumulates what it is given', () => {
+    expect(getSeenPortraits()).toEqual(new Set());
+    markPortraitsSeen(['unicorn']);
+    markPortraitsSeen(new Set(['unicorn', 'yeti']));
+    expect(getSeenPortraits()).toEqual(new Set(['unicorn', 'yeti']));
+  });
+
+  it('drops anything that is not a list of ids', () => {
+    localStorage.setItem('when-portraits-seen', JSON.stringify(['unicorn', 7, null]));
+    expect(getSeenPortraits()).toEqual(new Set(['unicorn']));
+    localStorage.setItem('when-portraits-seen', '{"oops":true}');
+    expect(getSeenPortraits()).toEqual(new Set());
+    localStorage.setItem('when-portraits-seen', 'not json');
+    expect(getSeenPortraits()).toEqual(new Set());
   });
 });

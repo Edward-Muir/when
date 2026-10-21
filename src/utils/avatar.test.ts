@@ -9,6 +9,7 @@ import {
   avatarForName,
   earnedPortraitFor,
   generateRandomName,
+  newEarnedPortraits,
   ownedEarnedPortraits,
   parseAvatar,
   portraitArtUrl,
@@ -168,6 +169,14 @@ describe('earned portraits', () => {
     expect(ownedEarnedPortraits({})).toEqual(new Set());
     expect(ownedEarnedPortraits({ 'cat-art': '2026-10-01', '27': '2026-10-02' })).toEqual(
       new Set(['chameleon', 'unicorn'])
+    );
+  });
+
+  it('is new while owned but not yet shown', () => {
+    const unlocked = { 'cat-art': '2026-10-01', '27': '2026-10-02' };
+    expect(newEarnedPortraits(unlocked, new Set())).toEqual(new Set(['chameleon', 'unicorn']));
+    expect(newEarnedPortraits(unlocked, new Set(['unicorn', 'yeti']))).toEqual(
+      new Set(['chameleon'])
     );
   });
 });
