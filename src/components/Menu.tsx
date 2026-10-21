@@ -24,7 +24,9 @@ import InstallInstructions from './InstallInstructions';
 import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
-import { resetHintsSeen } from '../utils/playerStorage';
+import { getSeenPortraits, resetHintsSeen } from '../utils/playerStorage';
+import { getAchievements } from '../utils/statsStorage';
+import { newEarnedPortraits } from '../utils/avatar';
 import { APP_VERSION } from '../version';
 import HowToPlayModal from './HowToPlayModal';
 import AvatarPickerModal from './AvatarPickerModal';
@@ -84,6 +86,9 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
   const [showProfile, setShowProfile] = React.useState(false);
+  // Read on render: the menu re-renders when the picker closes, which is what clears it.
+  const hasNewPortraits =
+    newEarnedPortraits(getAchievements().unlocked, getSeenPortraits()).size > 0;
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native app (redundant) and not on Android/desktop (the menu links only the App Store).
@@ -176,7 +181,18 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                     name. The same 44px tile as the leaderboard, with the row's padding trimmed
                     so it is not twice the height of its neighbours. */}
                 <button onClick={handleProfile} className={`${menuItemClass} !py-2`}>
-                  <OwnPortrait size={44} />
+                  {/* Gold "new" dot, as on the top bar, while an achievement portrait has not
+                      been shown in the picker yet. Opening the picker clears it. */}
+                  <span className="relative">
+                    <OwnPortrait size={44} />
+                    {hasNewPortraits && (
+                      <span
+                        role="img"
+                        aria-label="New"
+                        className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg"
+                      />
+                    )}
+                  </span>
                   <span className="font-body">Profile</span>
                 </button>
 

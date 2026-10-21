@@ -71,6 +71,14 @@ export function ownedEarnedPortraits(unlocked: Readonly<Record<string, string>>)
   return new Set(EARNED_PORTRAITS.filter((p) => unlocked[p.achievementId]).map((p) => p.id));
 }
 
+/** Owned portraits the player has not been shown yet: the picker's "New" tags, the menu's dot. */
+export function newEarnedPortraits(
+  unlocked: Readonly<Record<string, string>>,
+  seen: ReadonlySet<string>
+): Set<string> {
+  return new Set([...ownedEarnedPortraits(unlocked)].filter((id) => !seen.has(id)));
+}
+
 /** FNV-1a. Stable across sessions and devices, which is all the fallback needs. */
 function hashString(value: string): number {
   let hash = 0x811c9dc5;
