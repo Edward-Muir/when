@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T21:15:08.291Z",
+  "updated_at": "2026-10-21T21:18:09.690Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-21T21:15:08.291Z"
     },
     "caribbean-monk-seal-last-sighted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a300666335067f2a5f24c4e06afb31dfccaef9c6097fd68f85fd71ffb0309d07",
+      "updated_at": "2026-10-21T21:18:09.690Z"
     },
     "caspian-tiger-extinct": {
       "state": "pending",
