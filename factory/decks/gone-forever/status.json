@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T19:14:35.596Z",
+  "updated_at": "2026-10-21T19:22:38.599Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-21T19:14:35.596Z"
     },
     "last-cape-lion-shot": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2963b1302161b9da3cd031e04c51524c086a828899e0bfdf7f9ad9bb3d035778",
+      "updated_at": "2026-10-21T19:22:38.599Z"
     },
     "tasmanian-emu-extinct": {
       "state": "pending",
