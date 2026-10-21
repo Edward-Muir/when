@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T21:24:13.897Z",
+  "updated_at": "2026-10-21T21:27:15.048Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-21T21:24:13.897Z"
     },
     "dusky-seaside-sparrow-last-dies": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d2a9ce6b6432965f7d6e25f4ca4b8a4c105e527d60fa5a7d35a2f66200d0e13a",
+      "updated_at": "2026-10-21T21:27:15.048Z"
     },
     "golden-toad-last-seen": {
       "state": "pending",
