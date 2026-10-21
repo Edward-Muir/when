@@ -24,8 +24,8 @@ What `auto` takes, first match wins:
 3. ship, then QC, then an art batch, so the deck in flight finishes first;
 4. author, while fewer than 2 decks are in flight.
 
-A stage that last ended `blocked` or `failed` is skipped for 6 hours. An art batch that hit
-Gemini's daily cap is skipped until tomorrow.
+A stage that last ended `blocked` or `failed` is skipped for 6 hours, except an art batch, which
+is simply tried again next run. An art batch that hit Gemini's daily cap is skipped until tomorrow.
 
 | Stage        | Was | File            | Does                                                     |
 | ------------ | --- | --------------- | -------------------------------------------------------- |
