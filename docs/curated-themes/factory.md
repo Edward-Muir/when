@@ -74,6 +74,7 @@ Today each curated theme is built by hand across several sessions:
 Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The outcome goes to a run log, `../when-images/factory-runs.json`, outside git.
 
 - A stage whose last run ended `blocked` or `failed` is skipped for 6 hours, so one broken stage can't take every run. Chrome signed out is one example; a merge conflict is another, and `start.js` logs that one itself.
+- **Except the art batch** (`NO_BACKOFF` in `config.js`; Edward, 2026-10-21). Gemini's outages pass within the hour, so a blocked art batch is tried again on the next run. On 2026-10-21 Gemini stopped answering for an afternoon: the 6-hour wait cost more than retrying would have. The cost is that during a long outage every run goes to art, and author waits.
 - An art batch that hit Gemini's daily cap is skipped until the next local day.
 - Naming a stage forces it and ignores the backoff: "Run the deck-factory skill, stage: qc" in an ordinary session in the clone. That is for debugging and manual runs.
 
@@ -82,7 +83,7 @@ Each run ends with `status.js unlock --outcome ok|blocked|failed|quota`. The out
 - **Fixed in code, so they don't stall it:**
   - a re-run of ship doesn't upload twice, and resumes;
   - a card with no art never ships, and its deck stops taking an author slot;
-  - an art batch in which no slug moved (a changed Gemini page, say) ends `blocked`, so art backs off for 6 hours and the other stages run meanwhile. Before, it ended `ok` and repeated every run.
+  - an art batch in which no slug moved (a changed Gemini page, or Gemini not answering) ends `blocked` and names what the page showed. Art has no backoff, so the next run simply tries again.
 - **Edward's, named in the report** (the exit reason, `refresh_blocked`, or a `blocked` outcome with its reason):
 
   | Stall                                           | What Edward does                                              |
@@ -595,7 +596,7 @@ A checklist for the first manual runs of the one task. Each Run now does one sta
 **Resilience, once C1 has run cleanly** (the checks in section 10):
 
 - Click Run now while an art batch is running: the second run must exit with "locked by art-batch".
-- Force a stage to fail (sign Chrome out before an art run): it must end `blocked`, and the next runs must skip art for 6 hours while QC and ship carry on.
+- Force a stage to fail (sign Chrome out before an art run): it must end `blocked`. Art is retried the next run; any other blocked stage is skipped for 6 hours while the rest carry on.
 - Stop C3 partway through, then run it again: it must resume from `status.json`, skipping the uploads already verified.
 
 **Things the first runs settle:**
