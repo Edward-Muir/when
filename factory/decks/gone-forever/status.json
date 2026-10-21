@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T12:11:41.789Z",
+  "updated_at": "2026-10-21T13:06:33.792Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,11 +16,11 @@
   ],
   "slugs": {
     "elephant-birds-vanish-madagascar": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7f3f0c002635e973048323727637c7a65331f1d43bc29705c4b08caf7e685b9f",
-      "updated_at": "2026-10-21T12:11:41.789Z"
+      "updated_at": "2026-10-21T13:06:33.792Z"
     },
     "moa-extinct-new-zealand": {
       "state": "pending",
