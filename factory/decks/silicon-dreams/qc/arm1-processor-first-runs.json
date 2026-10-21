@@ -1,0 +1,15 @@
+{
+  "slug": "arm1-processor-first-runs",
+  "description": "A dim, candlelit electronics workbench painting. A analog multimeter with a needle dial and red and black probes sits at left, with a lit candle behind it. At the back sits a beige 1980s desktop computer with a CRT monitor and a floppy drive. In the centre, a green circuit board holds a large square chip in a ceramic package, surrounded by ribbon cables, capacitors and resistors. Notebooks with scribbled handwriting lie at the edges. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

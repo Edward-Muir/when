@@ -1,0 +1,15 @@
+{
+  "slug": "apple-m1-chip",
+  "description": "A dark, painterly close-up of a circuit board inside a metal casing. A large square chip package sits at the centre with two smaller chips beside it, surrounded by gold traces, small components and connectors. The metal edges of the housing curve across the top and bottom, on a near-black brown background. No people, no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

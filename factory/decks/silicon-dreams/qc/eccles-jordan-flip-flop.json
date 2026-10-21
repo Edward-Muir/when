@@ -1,0 +1,15 @@
+{
+  "slug": "eccles-jordan-flip-flop",
+  "description": "An oil-painted still life of two glass vacuum tubes standing on a wooden board. The left tube glows orange-red inside while the right one is dark. Copper wires and small resistors link the two tubes, and dim battery-like boxes and tools sit in the shadowy background. There is no visible text, frame or border, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

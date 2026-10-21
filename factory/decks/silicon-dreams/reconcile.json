@@ -1,0 +1,248 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "hollerith-tabulator-census",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "de-forest-triode-audion",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "eccles-jordan-flip-flop",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "bush-differential-analyzer",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "programmable-computer-z1",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "zuse-z3-computer",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 6,
+      "decision": "reuse",
+      "slug": "first-eniac-computer",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "transistor-invented",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "manchester-baby-runs-program",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "univac-i-delivered",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 10,
+      "decision": "cut",
+      "slug": "",
+      "why": "TRADIC: dense 1946-1958 stretch, least famous"
+    },
+    {
+      "beat": 11,
+      "decision": "reuse",
+      "slug": "hard-disk-drive",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "kilby-first-integrated-circuit",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 13,
+      "decision": "cut",
+      "slug": "",
+      "why": "PDP-1: crowded 1960s, fame 1"
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "ibm-system-360-announced",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": "",
+      "why": "PDP-8: crowded 1960s, fame 1"
+    },
+    {
+      "beat": 16,
+      "decision": "reuse",
+      "slug": "microprocessor-invented",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 17,
+      "decision": "cut",
+      "slug": "",
+      "why": "Xerox Alto: 1971-1984 window is the densest; fame 1 (existing xerox-alto-gui left unused)"
+    },
+    {
+      "beat": 18,
+      "decision": "reuse",
+      "slug": "personal-computer",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 19,
+      "decision": "spare",
+      "slug": "",
+      "why": "Cray-1: cut for bunching 1975-1984"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "apple-ii-released",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "ibm-pc-launched",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "apple-macintosh-1984",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "arm1-processor-first-runs",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": "",
+      "why": "486: crowded 1980s, fame 1"
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": "",
+      "why": "Pentium: crowded late 1990s"
+    },
+    {
+      "beat": 26,
+      "decision": "reuse",
+      "slug": "deep-blue-beats-kasparov",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "imac-launched",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "nvidia-geforce-256-gpu",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "ibm-quantum-factors-15",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 30,
+      "decision": "cut",
+      "slug": "",
+      "why": "Opteron: crowded around 1997-2003, fame 1"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "roadrunner-petaflop-supercomputer",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "ibm-watson-jeopardy",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "raspberry-pi-released",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 34,
+      "decision": "cut",
+      "slug": "",
+      "why": "TPU: crowded 2010s, fame 1"
+    },
+    {
+      "beat": 35,
+      "decision": "reuse",
+      "slug": "quantum-computing-supremacy",
+      "why": "Same event, same year as the existing card"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "apple-m1-chip",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "frontier-exascale-supercomputer",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 38,
+      "decision": "new",
+      "slug": "google-willow-quantum-chip",
+      "why": "No catalogue card for this event"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 3/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 4 in 1938-1947 (want 4 or fewer in any 10 years)\n  PASS  shared 1 (automata)    (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 45 earlier themes:\n        1  automata               deep-blue-beats-kasparov\n        1  games                  deep-blue-beats-kasparov",
+  "footholds": [
+    "transistor-invented",
+    "personal-computer",
+    "apple-ii-released",
+    "ibm-pc-launched",
+    "imac-launched",
+    "ibm-watson-jeopardy"
+  ]
+}

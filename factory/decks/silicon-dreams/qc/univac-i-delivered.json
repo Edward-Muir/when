@@ -1,0 +1,15 @@
+{
+  "slug": "univac-i-delivered",
+  "description": "A dim, moody oil-style painting of a man in a dark suit seated at a large control console covered in switches and small indicator lights, with a teleprinter-style typewriter unit in front of him. Behind him stand tall grey cabinets with reel-to-reel tape drives, and loose cables run across the floor. The room is dark and cluttered with a few overhead lights, and the painting fills the whole image with no visible frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

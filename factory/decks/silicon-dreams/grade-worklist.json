@@ -1,0 +1,128 @@
+[
+  {
+    "name": "hollerith-tabulator-census",
+    "friendly_name": "Hollerith Tabulator Tallies Census",
+    "description": "Punched cards fed an electric tabulating machine that counted a national population far faster than hand tallying.",
+    "category": "invention"
+  },
+  {
+    "name": "de-forest-triode-audion",
+    "friendly_name": "De Forest Invents the Triode Tube",
+    "description": "A three-element vacuum tube could amplify and switch signals, the building block of early electronic computers.",
+    "category": "invention"
+  },
+  {
+    "name": "eccles-jordan-flip-flop",
+    "friendly_name": "Eccles-Jordan Flip-Flop Circuit",
+    "description": "Two vacuum tubes wired to hold one of two stable states gave electronics its first memory cell.",
+    "category": "invention"
+  },
+  {
+    "name": "bush-differential-analyzer",
+    "friendly_name": "Bush's Differential Analyzer Runs",
+    "description": "A room-sized analog machine at MIT solved differential equations with rotating shafts and gears.",
+    "category": "invention"
+  },
+  {
+    "name": "zuse-z3-computer",
+    "friendly_name": "Zuse's Z3 Computes",
+    "description": "The first working programmable, fully automatic digital computer ran on telephone relays in Berlin.",
+    "category": "invention"
+  },
+  {
+    "name": "manchester-baby-runs-program",
+    "friendly_name": "Manchester Baby Runs a Program",
+    "description": "The first computer to run a program from electronic memory filled a room at a British university.",
+    "category": "invention"
+  },
+  {
+    "name": "univac-i-delivered",
+    "friendly_name": "UNIVAC I Delivered",
+    "description": "The first commercial computer built in the United States went to the Census Bureau and later predicted an election.",
+    "category": "invention"
+  },
+  {
+    "name": "kilby-first-integrated-circuit",
+    "friendly_name": "First Integrated Circuit Built",
+    "description": "Jack Kilby built a working circuit with several components on one slice of semiconductor, shrinking electronics for good.",
+    "category": "invention"
+  },
+  {
+    "name": "ibm-system-360-announced",
+    "friendly_name": "IBM Announces System/360",
+    "description": "IBM bet the company on one family of compatible mainframes sharing software across a range of sizes and prices.",
+    "category": "invention"
+  },
+  {
+    "name": "apple-ii-released",
+    "friendly_name": "Apple II Goes on Sale",
+    "description": "A colour-capable, ready-to-use microcomputer in a plastic case brought home computing to ordinary buyers.",
+    "category": "invention"
+  },
+  {
+    "name": "ibm-pc-launched",
+    "friendly_name": "IBM PC Launched",
+    "description": "IBM's open-architecture desktop machine with an Intel chip set the standard for personal computers.",
+    "category": "invention"
+  },
+  {
+    "name": "arm1-processor-first-runs",
+    "friendly_name": "ARM1 Processor First Runs",
+    "description": "A small British team's low-power RISC chip worked on its first try and later powered most mobile devices.",
+    "category": "invention"
+  },
+  {
+    "name": "imac-launched",
+    "friendly_name": "Apple Launches the Original iMac",
+    "description": "A translucent, all-in-one computer with no floppy drive revived Apple and made computers look friendly.",
+    "category": "invention"
+  },
+  {
+    "name": "nvidia-geforce-256-gpu",
+    "friendly_name": "Nvidia Brands the First GPU",
+    "description": "Nvidia's GeForce 256 put transform and lighting on one graphics chip and popularised the term GPU.",
+    "category": "invention"
+  },
+  {
+    "name": "ibm-quantum-factors-15",
+    "friendly_name": "IBM Quantum Computer Factors 15",
+    "description": "A seven-qubit molecule-based machine ran Shor's algorithm to factor a small number, a first for quantum hardware.",
+    "category": "science"
+  },
+  {
+    "name": "roadrunner-petaflop-supercomputer",
+    "friendly_name": "Roadrunner Hits a Petaflop",
+    "description": "Los Alamos's Cell-and-Opteron machine was the first supercomputer to sustain a quadrillion operations per second.",
+    "category": "invention"
+  },
+  {
+    "name": "ibm-watson-jeopardy",
+    "friendly_name": "IBM Watson Wins at Jeopardy",
+    "description": "IBM's question-answering supercomputer beat two champions on a televised quiz show.",
+    "category": "invention"
+  },
+  {
+    "name": "raspberry-pi-released",
+    "friendly_name": "Raspberry Pi Goes on Sale",
+    "description": "A credit-card-sized, cheap single-board computer was launched to teach programming and sold in millions.",
+    "category": "invention"
+  },
+  {
+    "name": "apple-m1-chip",
+    "friendly_name": "Apple Unveils the M1 Chip",
+    "description": "Apple's own Arm-based system-on-a-chip replaced Intel processors in its Mac computers.",
+    "category": "invention"
+  },
+  {
+    "name": "frontier-exascale-supercomputer",
+    "friendly_name": "Frontier Reaches Exascale",
+    "description": "Oak Ridge's Frontier became the first supercomputer to top a quintillion calculations per second.",
+    "category": "invention"
+  },
+  {
+    "name": "google-willow-quantum-chip",
+    "friendly_name": "Google Unveils Willow Quantum Chip",
+    "description": "Google's 105-qubit chip showed error rates falling as qubits were added, a milestone for quantum error correction.",
+    "category": "invention"
+  }
+]
