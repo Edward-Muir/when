@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T19:27:24.374Z",
+  "updated_at": "2026-10-21T19:42:56.658Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -64,10 +64,11 @@
       "sha256": null
     },
     "stephens-island-wren-extinct": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "90edcbeaf3a3baa2b403b207dcebe6a862d1725844a4832a14967114caae1ec3",
+      "updated_at": "2026-10-21T19:42:56.658Z"
     },
     "rocky-mountain-locust-extinct": {
       "state": "pending",
