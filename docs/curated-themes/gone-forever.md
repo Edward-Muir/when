@@ -96,3 +96,8 @@ sea cow graded medium or hard, because nothing in their text dates them.
   widely cited one.
 - **`caspian-tiger-extinct` (year 1970)**: one disputed date among several. Sources range from
   the late 1950s to a 1998 sighting, with survival in Turkey reported into the early 1990s.
+- **`last-wild-barbary-lion-shot` (year 1922)**: the fact check passed 1922, but the detail
+  writer found it is the popular date only. A 2013 PLOS ONE review puts the last wild lion shot
+  at Tizi n'Tichka in 1942, with Morocco's lions gone around 1948. The detail prose says so.
+  Moving the card to 1942 would put 4 cards in 1932-1942, over the bunching limit, so the year
+  needs Edward's call.
