@@ -130,9 +130,9 @@ Then unlock:
 
 - **`--outcome blocked` if no slug moved:** nothing downloaded and nothing marked `needs-human`,
   without the quota message. That means Gemini or Chrome is broken in a way the playbook doesn't
-  cover, such as a changed page. Report what the page showed. The `blocked` outcome makes `auto`
-  leave art alone for 6 hours, instead of repeating the same failing batch every run while the
-  other stages wait.
+  cover, such as a changed page or Gemini not answering. Report what the page showed. Art has no
+  backoff, so the next run tries again; the `blocked` outcome is what tells Edward it is the
+  page, not the deck.
 - `--outcome ok` otherwise, even if some slugs were left in the queue.
 
 The report gives the images taken, any slug left or marked `needs-human`, and what
