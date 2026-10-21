@@ -1,0 +1,242 @@
+[
+  {
+    "name": "poe-murders-rue-morgue",
+    "friendly_name": "Poe's Murders in the Rue Morgue",
+    "year": 1841,
+    "category": "writing",
+    "description": "Auguste Dupin solves a gruesome double killing in a locked room, launching the detective story as a form.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dickens-bleak-house-inspector-bucket",
+    "friendly_name": "Bleak House Brings Inspector Bucket",
+    "year": 1852,
+    "category": "writing",
+    "description": "Dickens serialises a sprawling novel in which a shrewd police detective investigates a lawyer's murder.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "collins-woman-in-white",
+    "friendly_name": "The Woman in White Serialised",
+    "year": 1859,
+    "category": "writing",
+    "description": "Wilkie Collins serialises a tale of switched identities, a sinister count and an amateur sleuth, a sensation with readers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "collins-the-moonstone",
+    "friendly_name": "Collins Publishes The Moonstone",
+    "year": 1868,
+    "category": "writing",
+    "description": "A stolen Indian diamond, a bumbling household and the dogged Sergeant Cuff form the first great English detective novel.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "doyle-study-in-scarlet-holmes",
+    "friendly_name": "Sherlock Holmes Debuts",
+    "year": 1887,
+    "category": "writing",
+    "description": "A Study in Scarlet introduces a consulting detective and his doctor friend to the reading public.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "holmes-strand-scandal-in-bohemia",
+    "friendly_name": "Holmes Conquers the Strand",
+    "year": 1891,
+    "category": "writing",
+    "description": "A magazine short story about a king and a photograph begins a run of tales that turn the detective into a sensation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "doyle-hound-of-the-baskervilles",
+    "friendly_name": "The Hound of the Baskervilles",
+    "year": 1902,
+    "category": "writing",
+    "description": "A spectral dog haunts a moorland estate, and Holmes is called back to confront the legend of a cursed family.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "leroux-mystery-of-the-yellow-room",
+    "friendly_name": "The Mystery of the Yellow Room",
+    "year": 1907,
+    "category": "writing",
+    "description": "A French novel poses the classic locked-room puzzle: a woman attacked in a chamber no one could have entered or left.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chesterton-father-brown-debut",
+    "friendly_name": "Father Brown Debuts",
+    "year": 1910,
+    "category": "writing",
+    "description": "G. K. Chesterton's unassuming priest solves a crime with insight into human nature in The Blue Cross.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "christie-poirot-debut-styles",
+    "friendly_name": "Poirot Debuts at Styles",
+    "year": 1920,
+    "category": "writing",
+    "description": "A Belgian refugee with an egg-shaped head and little grey cells solves a poisoning at an Essex country house.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sayers-lord-peter-wimsey-debut",
+    "friendly_name": "Lord Peter Wimsey Debuts",
+    "year": 1923,
+    "category": "writing",
+    "description": "Dorothy L. Sayers introduces an aristocratic amateur detective who finds a corpse in a bathtub wearing only a pince-nez.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "christie-murder-of-roger-ackroyd",
+    "friendly_name": "The Murder of Roger Ackroyd",
+    "year": 1926,
+    "category": "writing",
+    "description": "Christie's notorious novel springs a narrator twist that divided critics and changed what a mystery could do.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hammett-the-maltese-falcon",
+    "friendly_name": "Hammett's The Maltese Falcon",
+    "year": 1930,
+    "category": "writing",
+    "description": "Sam Spade hunts a jewelled bird statuette among liars and killers in the defining hard-boiled detective novel.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "christie-murder-on-the-orient-express-novel",
+    "friendly_name": "Murder on the Orient Express",
+    "year": 1934,
+    "category": "writing",
+    "description": "A snowbound luxury train, a stabbed American tycoon and a carriage full of suspects confront Poirot.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "chandler-the-big-sleep-marlowe",
+    "friendly_name": "The Big Sleep Introduces Marlowe",
+    "year": 1939,
+    "category": "writing",
+    "description": "Raymond Chandler sends a wisecracking private eye into a Los Angeles blackmail case among a wealthy family.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "spillane-mike-hammer-i-the-jury",
+    "friendly_name": "Mike Hammer Debuts",
+    "year": 1947,
+    "category": "writing",
+    "description": "Mickey Spillane's violent private eye avenges the murder of a friend in a bestseller of brutal, pulpy crime fiction.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "macdonald-lew-archer-moving-target",
+    "friendly_name": "Lew Archer Debuts",
+    "year": 1949,
+    "category": "writing",
+    "description": "Ross Macdonald's California private eye takes on a missing-millionaire case in the first of a long, psychologically deep series.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "highsmith-talented-mr-ripley",
+    "friendly_name": "Tom Ripley Debuts",
+    "year": 1955,
+    "category": "writing",
+    "description": "Patricia Highsmith's charming con man murders his way into a rich man's life in a chilling crime novel set in Italy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "james-dalgliesh-cover-her-face",
+    "friendly_name": "Dalgliesh Debuts",
+    "year": 1962,
+    "category": "writing",
+    "description": "P. D. James introduces a poetry-writing police detective investigating a poisoning at a manor house.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dexter-inspector-morse-debut",
+    "friendly_name": "Inspector Morse Debuts",
+    "year": 1975,
+    "category": "writing",
+    "description": "Colin Dexter's cerebral, opera-loving Oxford detective appears in Last Bus to Woodstock.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "eco-the-name-of-the-rose",
+    "friendly_name": "The Name of the Rose",
+    "year": 1980,
+    "category": "writing",
+    "description": "A friar investigates a string of deaths in a remote abbey in Umberto Eco's erudite, bestselling mystery.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "grafton-a-is-for-alibi",
+    "friendly_name": "A Is for Alibi",
+    "year": 1982,
+    "category": "writing",
+    "description": "Sue Grafton's Kinsey Millhone, a Californian private investigator, opens an alphabet-titled series of mysteries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cornwell-scarpetta-postmortem",
+    "friendly_name": "Scarpetta Debuts in Postmortem",
+    "year": 1990,
+    "category": "writing",
+    "description": "Patricia Cornwell's Virginia medical examiner hunts a serial strangler, launching the forensic crime novel boom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tartt-the-secret-history",
+    "friendly_name": "Donna Tartt's The Secret History",
+    "year": 1992,
+    "category": "writing",
+    "description": "A group of classics students at a New England college kill a friend, with the reader told the crime on the first page.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mccall-smith-no1-ladies-detective-agency",
+    "friendly_name": "The No. 1 Ladies' Detective Agency",
+    "year": 1998,
+    "category": "writing",
+    "description": "Alexander McCall Smith's gentle Botswana mysteries follow Precious Ramotswe, her country's first female private detective.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "brown-the-da-vinci-code",
+    "friendly_name": "Dan Brown's The Da Vinci Code",
+    "year": 2003,
+    "category": "writing",
+    "description": "A symbologist races across Europe to decode a murder at a museum and a secret long guarded by a brotherhood.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "larsson-girl-with-the-dragon-tattoo",
+    "friendly_name": "The Girl with the Dragon Tattoo",
+    "year": 2005,
+    "category": "writing",
+    "description": "A disgraced journalist and a hacker investigate a long-ago disappearance in Stieg Larsson's Swedish crime sensation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "flynn-gone-girl",
+    "friendly_name": "Gillian Flynn's Gone Girl",
+    "year": 2012,
+    "category": "writing",
+    "description": "A wife vanishes on her wedding anniversary and her husband becomes the prime suspect in a twisty psychological thriller.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "galbraith-cormoran-strike-debut",
+    "friendly_name": "Cormoran Strike Debuts",
+    "year": 2013,
+    "category": "writing",
+    "description": "J. K. Rowling, writing as Robert Galbraith, introduces a one-legged war veteran turned private eye in The Cuckoo's Calling.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "osman-thursday-murder-club",
+    "friendly_name": "The Thursday Murder Club",
+    "year": 2020,
+    "category": "writing",
+    "description": "Richard Osman's debut follows four retirees who meet weekly to solve cold cases and stumble onto a fresh killing.",
+    "difficulty": "medium"
+  }
+]
