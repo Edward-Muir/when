@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T20:01:18.872Z",
+  "updated_at": "2026-10-21T20:06:30.567Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -92,10 +92,11 @@
       "updated_at": "2026-10-21T20:01:18.872Z"
     },
     "last-wild-barbary-lion-shot": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "918d1d39d2daefce8ed3ca9b855ed97bfdb44b57db91089813022cf2cd0315c5",
+      "updated_at": "2026-10-21T20:06:30.567Z"
     },
     "last-heath-hen-booming-ben": {
       "state": "pending",
