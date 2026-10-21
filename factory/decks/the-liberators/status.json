@@ -3,7 +3,7 @@
   "name": "The Liberators",
   "stage": "art-in-progress",
   "created_at": "2026-10-20T15:23:06.801Z",
-  "updated_at": "2026-10-21T01:09:40.912Z",
+  "updated_at": "2026-10-21T01:12:08.908Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-10-21T01:09:40.912Z"
     },
     "cuba-becomes-republic": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a4c73aa5d8ac58b56d5cb6a0c2d2c73b1504e6f164ca6cc2ef2315ba1da56c57",
+      "updated_at": "2026-10-21T01:12:08.908Z"
     }
   }
 }
