@@ -1,0 +1,229 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "comuneros-revolt-new-granada",
+      "why": "written new"
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "inconfidencia-mineira-plot",
+      "why": "written new"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "haitian-revolution-uprising-begins",
+      "why": "written new"
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "narino-prints-rights-of-man",
+      "why": "written new"
+    },
+    {
+      "beat": 4,
+      "decision": "new",
+      "slug": "gual-espana-conspiracy",
+      "why": "written new"
+    },
+    {
+      "beat": 5,
+      "decision": "cut",
+      "slug": null,
+      "why": "density: 1802-1813 held too many; Haiti already covered"
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "toussaint-louverture-captured",
+      "why": "written new"
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "haitian-revolution",
+      "why": "Same event: Haiti proclaiming independence, 1804"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "portuguese-court-reaches-brazil",
+      "why": "written new"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "grito-de-dolores",
+      "why": "written new"
+    },
+    {
+      "beat": 10,
+      "decision": "cut",
+      "slug": null,
+      "why": "density cut (1810-1819 over limit); reusable card spared"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "bolivar-named-el-libertador",
+      "why": "written new"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "san-martin-crosses-andes",
+      "why": "written new"
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "battle-of-boyaca",
+      "why": "written new"
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": null,
+      "why": "density cut (1819-1828 over limit); Venezuela independence already won in spine elsewhere"
+    },
+    {
+      "beat": 15,
+      "decision": "reuse",
+      "slug": "brazil-independence",
+      "why": "Same event: Brazil declared independence from Portugal, 1822"
+    },
+    {
+      "beat": 16,
+      "decision": "reuse",
+      "slug": "battle-of-ayacucho",
+      "why": "Same battle, same year"
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "uruguay-independence",
+      "why": "Same event: Uruguay independence, 1828"
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "bolivar-dies-santa-marta",
+      "why": "written new"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "spain-recognizes-mexico",
+      "why": "written new"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "duarte-founds-la-trinitaria",
+      "why": "written new"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "dominican-independence-declared",
+      "why": "written new"
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "narciso-lopez-invades-cuba",
+      "why": "written new"
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": null,
+      "why": "scope: defence against France, not independence"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "dominicans-rise-capotillo",
+      "why": "written new"
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "spain-leaves-santo-domingo",
+      "why": "written new"
+    },
+    {
+      "beat": 26,
+      "decision": "cut",
+      "slug": null,
+      "why": "scope: sovereignty against France, not independence"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "grito-de-yara",
+      "why": "written new"
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "virginius-affair",
+      "why": "written new"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "protest-of-baragua",
+      "why": "written new"
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "marti-founds-cuban-revolutionary-party",
+      "why": "written new"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "grito-de-baire",
+      "why": "written new"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "antonio-maceo-killed",
+      "why": "written new"
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": null,
+      "why": "density cut in 1892-1902 and weakest on scope (autonomy charter)"
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "treaty-paris-spain-cedes-colonies",
+      "why": "written new"
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "cuba-becomes-republic",
+      "why": "written new"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 2/8               (advisory, 6+ is spread)\n  PASS  band 0 5               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 4 in 1789-1797 (want 4 or fewer in any 10 years)\n  PASS  shared 0               (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 46 earlier themes:\n  no card is shared with any earlier theme",
+  "footholds": [
+    "haitian-revolution-uprising-begins",
+    "grito-de-dolores",
+    "san-martin-crosses-andes",
+    "battle-of-boyaca",
+    "treaty-paris-spain-cedes-colonies"
+  ]
+}
