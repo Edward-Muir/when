@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T21:42:08.869Z",
+  "updated_at": "2026-10-21T22:07:17.950Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,11 +58,11 @@
       "updated_at": "2026-10-21T20:08:58.171Z"
     },
     "falkland-islands-wolf-extinct": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7bd8ce742fc53c5ae6b471bf671de1721356ad233e6795255506462bd6a039d8",
-      "updated_at": "2026-10-21T21:08:42.748Z"
+      "updated_at": "2026-10-21T22:07:17.678Z"
     },
     "stephens-island-wren-extinct": {
       "state": "qc-pass",
@@ -100,67 +100,67 @@
       "updated_at": "2026-10-21T20:08:58.329Z"
     },
     "last-heath-hen-booming-ben": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3126a550e83b49d5e599667243dd046338838ba76d80a98f1d9e9cce9ad94e69",
-      "updated_at": "2026-10-21T21:11:44.057Z"
+      "updated_at": "2026-10-21T22:07:17.709Z"
     },
     "xerces-blue-butterfly-extinct": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2f02c39d2c1e8a8546c96f829d17f39f7fdcc99d9ac7fe469817f3d86f36c66f",
-      "updated_at": "2026-10-21T21:15:08.291Z"
+      "updated_at": "2026-10-21T22:07:17.740Z"
     },
     "caribbean-monk-seal-last-sighted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a300666335067f2a5f24c4e06afb31dfccaef9c6097fd68f85fd71ffb0309d07",
-      "updated_at": "2026-10-21T21:18:09.690Z"
+      "updated_at": "2026-10-21T22:07:17.770Z"
     },
     "caspian-tiger-extinct": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b5d9a636dcccca4822369dd2d283ffa624c1e274de472348fa8fc93f3e5146b1",
-      "updated_at": "2026-10-21T21:21:12.500Z"
+      "updated_at": "2026-10-21T22:07:17.799Z"
     },
     "javan-tiger-last-recorded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "839cd376385f264c470c6709aabf4ced85f323fb37eb84ce7369382c288d694c",
-      "updated_at": "2026-10-21T21:24:13.897Z"
+      "updated_at": "2026-10-21T22:07:17.829Z"
     },
     "dusky-seaside-sparrow-last-dies": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d2a9ce6b6432965f7d6e25f4ca4b8a4c105e527d60fa5a7d35a2f66200d0e13a",
-      "updated_at": "2026-10-21T21:27:15.048Z"
+      "updated_at": "2026-10-21T22:07:17.859Z"
     },
     "golden-toad-last-seen": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "76d428c9b45736404633e8b960b58f45f7ba1597dbe4cc02fcd487d08ebf93d2",
-      "updated_at": "2026-10-21T21:31:13.432Z"
+      "updated_at": "2026-10-21T22:07:17.889Z"
     },
     "celia-last-pyrenean-ibex-dies": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "491e084e783e7e99eeb465165c1a56b8940901cb4924384b3969c99b65bb4d86",
-      "updated_at": "2026-10-21T21:35:12.509Z"
+      "updated_at": "2026-10-21T22:07:17.921Z"
     },
     "baiji-functionally-extinct": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d409b04c74fd0158b39982dfb7c1c77252bb5025d4356b65705fe364af593cde",
-      "updated_at": "2026-10-21T21:42:08.869Z"
+      "updated_at": "2026-10-21T22:07:17.950Z"
     },
     "lonesome-george-dies": {
       "state": "pending",

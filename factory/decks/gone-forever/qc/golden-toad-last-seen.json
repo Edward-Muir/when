@@ -1,0 +1,15 @@
+{
+  "slug": "golden-toad-last-seen",
+  "description": "A glowing orange-yellow frog or toad sits on a patch of wet green moss beside a dark, shallow forest stream. Around it are large dark leaves, ferns and tangled roots in a misty, dim rainforest rendered in painterly oil style. No people, no buildings, no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
