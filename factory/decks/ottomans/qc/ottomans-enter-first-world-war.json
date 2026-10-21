@@ -1,0 +1,15 @@
+{
+  "slug": "ottomans-enter-first-world-war",
+  "description": "A dark oil-painting style scene of a large grey battleship with two funnels and a crescent-and-star flag on its mast, firing its guns amid fireballs and black smoke over a choppy sea at dusk. Behind it, a harbour town on a hillside is burning, with smoke rising from the quayside and small white buildings and a minaret-like tower visible. Small figures stand on the deck, and splashes from near-miss shells dot the water. No text or frame is visible, and the painting fills the whole image.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

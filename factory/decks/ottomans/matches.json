@@ -1,0 +1,3115 @@
+[
+  {
+    "beat": 0,
+    "year": 1299,
+    "title": "Osman Founds the Ottoman Beylik",
+    "candidates": [
+      {
+        "name": "ottoman-empire-founded",
+        "friendly_name": "Ottoman Empire Founded",
+        "year": 1299,
+        "description": "Osman I established the dynasty that would rule for over 600 years.",
+        "score": 3,
+        "shared": [
+          "osman",
+          "ottoman",
+          "empire"
+        ]
+      },
+      {
+        "name": "womens-guilds",
+        "friendly_name": "Women's Craft Guilds Emerge",
+        "year": 1300,
+        "description": "Women formed independent craft guilds in Paris and Cologne, working in silk-weaving, brewing, and textile trades.",
+        "score": 1,
+        "shared": [
+          "independent"
+        ]
+      },
+      {
+        "name": "burmese-kingdom-restoration",
+        "friendly_name": "Burmese Kingdom Restoration Toungoo",
+        "year": 1300,
+        "description": "After Pagan's fall, small Burmese kingdoms competed for power, setting the stage for the later Toungoo reunification.",
+        "score": 1,
+        "shared": [
+          "small"
+        ]
+      },
+      {
+        "name": "kilwa-gold-monopoly",
+        "friendly_name": "Kilwa Gold Monopoly",
+        "year": 1300,
+        "description": "Kilwa Kisiwani monopolized the gold trade flowing from Great Zimbabwe mines to the Indian Ocean.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "ancestral-puebloan-migration",
+        "friendly_name": "Ancestral Puebloan Great Migration",
+        "year": 1276,
+        "year_end": 1300,
+        "description": "Ancestral Puebloans abandoned cliff dwellings at Mesa Verde and Chaco Canyon, migrating south due to prolonged drought.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "zimbabwe-trading-network",
+        "friendly_name": "Great Zimbabwe Trade",
+        "year": 1220,
+        "year_end": 1450,
+        "description": "Great Zimbabwe became a major trading center connecting interior African gold and ivory to Swahili coastal ports.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "tonga-empire",
+        "friendly_name": "Tongan Empire Peak",
+        "year": 1200,
+        "year_end": 1500,
+        "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "great-zimbabwe-stone-construction",
+        "friendly_name": "Great Zimbabwe Stone Architecture",
+        "year": 1200,
+        "year_end": 1450,
+        "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "great-zimbabwe",
+        "friendly_name": "Great Zimbabwe Built",
+        "year": 1100,
+        "year_end": 1450,
+        "description": "The medieval African city's massive stone structures were constructed.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 1326,
+    "title": "Orhan Captures Bursa",
+    "candidates": [
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 2,
+        "shared": [
+          "city",
+          "great"
+        ]
+      },
+      {
+        "name": "maya-postclassic-conflicts",
+        "friendly_name": "Maya Postclassic Period Conflicts",
+        "year": 1200,
+        "year_end": 1441,
+        "description": "Postclassic Maya city-states like Mayapan waged wars for dominance after the Classic period collapse.",
+        "score": 2,
+        "shared": [
+          "after",
+          "city"
+        ]
+      },
+      {
+        "name": "great-zimbabwe",
+        "friendly_name": "Great Zimbabwe Built",
+        "year": 1100,
+        "year_end": 1450,
+        "description": "The medieval African city's massive stone structures were constructed.",
+        "score": 2,
+        "shared": [
+          "city",
+          "great"
+        ]
+      },
+      {
+        "name": "chimor-chan-chan-city",
+        "friendly_name": "Chan Chan Capital City Flourishes",
+        "year": 900,
+        "year_end": 1470,
+        "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
+        "score": 2,
+        "shared": [
+          "city",
+          "capital"
+        ]
+      },
+      {
+        "name": "edward-ii-deposed",
+        "friendly_name": "Edward II Deposed",
+        "year": 1327,
+        "description": "Parliament forced Edward II to give up the crown to his young son after years of misrule; he died in captivity soon after.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "walls-of-benin-city-built",
+        "friendly_name": "Walls of Benin City Built",
+        "year": 1280,
+        "year_end": 1460,
+        "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "zimbabwe-trading-network",
+        "friendly_name": "Great Zimbabwe Trade",
+        "year": 1220,
+        "year_end": 1450,
+        "description": "Great Zimbabwe became a major trading center connecting interior African gold and ivory to Swahili coastal ports.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "great-zimbabwe-stone-construction",
+        "friendly_name": "Great Zimbabwe Stone Architecture",
+        "year": 1200,
+        "year_end": 1450,
+        "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 1354,
+    "title": "Ottomans Seize Gallipoli",
+    "candidates": [
+      {
+        "name": "carcassonne-refortified",
+        "friendly_name": "Carcassonne Refortified",
+        "year": 1355,
+        "description": "The French crown had the double walled fortress city of Carcassonne reinforced against English raids.",
+        "score": 1,
+        "shared": [
+          "fortress"
+        ]
+      },
+      {
+        "name": "gunpowder-europe",
+        "friendly_name": "Gunpowder Warfare in Europe",
+        "year": 1350,
+        "year_end": 1450,
+        "description": "The introduction of gunpowder weapons revolutionized European warfare.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "walls-of-benin-city-built",
+        "friendly_name": "Walls of Benin City Built",
+        "year": 1280,
+        "year_end": 1460,
+        "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
+        "score": 1,
+        "shared": [
+          "walls"
+        ]
+      },
+      {
+        "name": "maya-postclassic-conflicts",
+        "friendly_name": "Maya Postclassic Period Conflicts",
+        "year": 1200,
+        "year_end": 1441,
+        "description": "Postclassic Maya city-states like Mayapan waged wars for dominance after the Classic period collapse.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "great-zimbabwe-stone-construction",
+        "friendly_name": "Great Zimbabwe Stone Architecture",
+        "year": 1200,
+        "year_end": 1450,
+        "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+        "score": 1,
+        "shared": [
+          "walls"
+        ]
+      },
+      {
+        "name": "strasbourg-clock-rooster",
+        "friendly_name": "Strasbourg Clock Rooster",
+        "year": 1354,
+        "description": "The cathedral clock carried a gilded cock that flapped its wings, opened its beak and crowed at midday.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1389,
+    "title": "Battle of Kosovo",
+    "candidates": [
+      {
+        "name": "battle-of-kosovo",
+        "friendly_name": "Battle of Kosovo",
+        "year": 1389,
+        "description": "Ottomans defeated the Serbs in a battle that became central to Serbian national identity.",
+        "score": 3,
+        "shared": [
+          "battle",
+          "kosovo",
+          "serbian"
+        ]
+      },
+      {
+        "name": "double-entry-bookkeeping",
+        "friendly_name": "Double-Entry Bookkeeping",
+        "year": 1300,
+        "year_end": 1494,
+        "description": "Accounting method recording every transaction as both a debit and credit, refined by medieval Italian merchants.",
+        "score": 1,
+        "shared": [
+          "both"
+        ]
+      },
+      {
+        "name": "birth-cosimo-medici",
+        "friendly_name": "Birth of Cosimo de Medici",
+        "year": 1389,
+        "description": "The Florentine banker who founded Medici power and patronized Renaissance art and learning.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kongo-kingdom-founded",
+        "friendly_name": "Kongo Kingdom Established",
+        "year": 1390,
+        "description": "The Kingdom of Kongo was established in Central Africa along the Congo River with a centralized government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "grain-trade-monopoly",
+        "friendly_name": "Grain Trade Monopoly in Baltic",
+        "year": 1390,
+        "description": "Hanseatic League merchants dominated Baltic grain trade, controlling shipments from Prussia to western Europe.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "medieval-pointed-shoes",
+        "friendly_name": "Pointed Poulaine Shoes",
+        "year": 1390,
+        "description": "Fashionable medieval Europeans wore poulaines, shoes with exaggerated long points that signaled wealth and leisure.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1396,
+    "title": "Crusaders Crushed at Nicopolis",
+    "candidates": [
+      {
+        "name": "gunpowder-europe",
+        "friendly_name": "Gunpowder Warfare in Europe",
+        "year": 1350,
+        "year_end": 1450,
+        "description": "The introduction of gunpowder weapons revolutionized European warfare.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "somali-adal-sultanate",
+        "friendly_name": "Adal Sultanate Emerges in Somalia",
+        "year": 1300,
+        "year_end": 1415,
+        "description": "The Adal Sultanate emerged in the Horn of Africa as an Islamic trading state rivaling Christian Ethiopia.",
+        "score": 1,
+        "shared": [
+          "christian"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "magdeburg-rights-spread",
+        "friendly_name": "Magdeburg Rights Spread",
+        "year": 1200,
+        "year_end": 1400,
+        "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "drive"
+        ]
+      },
+      {
+        "name": "harpsichord-invented",
+        "friendly_name": "Harpsichord Invented",
+        "year": 1397,
+        "description": "The earliest known reference to a harpsichord appears in Padua, Italy, launching centuries of keyboard music.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1402,
+    "title": "Timur Defeats Bayezid at Ankara",
+    "candidates": [
+      {
+        "name": "timurid-renaissance",
+        "friendly_name": "Timurid Renaissance",
+        "year": 1370,
+        "year_end": 1507,
+        "description": "The Timurid dynasty fostered a cultural golden age of Persian miniature painting, architecture, and literature in Central Asia.",
+        "score": 1,
+        "shared": [
+          "central"
+        ]
+      },
+      {
+        "name": "somali-adal-sultanate",
+        "friendly_name": "Adal Sultanate Emerges in Somalia",
+        "year": 1300,
+        "year_end": 1415,
+        "description": "The Adal Sultanate emerged in the Horn of Africa as an Islamic trading state rivaling Christian Ethiopia.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "kangnido-world-map",
+        "friendly_name": "Kangnido World Map",
+        "year": 1402,
+        "description": "Korean scholars merged Chinese, Islamic and Japanese sources into a world map reaching as far as Africa and Europe.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "florence-baptistery-competition",
+        "friendly_name": "Florence Baptistery Contest",
+        "year": 1401,
+        "description": "A competition for the Baptistery doors launched the careers of Brunelleschi and Ghiberti, sparking the Renaissance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stortebeker-executed-hamburg",
+        "friendly_name": "Baltic Pirate Stortebeker Beheaded",
+        "year": 1401,
+        "description": "Baltic pirate captain Klaus Stortebeker, leader of the Victual Brothers, was captured at sea by Hamburg's fleet and beheaded with dozens of his crew.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1444,
+    "title": "Battle of Varna",
+    "candidates": [
+      {
+        "name": "battle-of-varna",
+        "friendly_name": "Battle of Varna",
+        "year": 1444,
+        "description": "Ottoman forces defeated a crusading army led by King Władysław III of Poland, who was killed in battle, ending the Crusade of Varna.",
+        "score": 5,
+        "shared": [
+          "battle",
+          "varna",
+          "crusading",
+          "army",
+          "ending"
+        ]
+      },
+      {
+        "name": "swahili-kilwa-sultanate",
+        "friendly_name": "Kilwa Sultanate Swahili Peak",
+        "year": 1300,
+        "year_end": 1450,
+        "description": "The Kilwa Sultanate reached its apex as a Swahili trading power on the East African coast.",
+        "score": 1,
+        "shared": [
+          "coast"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "sejong-hangul-invention",
+        "friendly_name": "King Sejong Invents Hangul Alphabet",
+        "year": 1443,
+        "description": "King Sejong the Great of Korea promulgated Hangul, a phonetic alphabet designed to increase literacy among commoners.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "aztec-expansion-conquests",
+        "friendly_name": "Aztec Expansion Military Campaigns",
+        "year": 1440,
+        "year_end": 1469,
+        "description": "Under Montezuma I, the Aztec Triple Alliance expanded aggressively through central Mexico.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "benin-edo-palace-system",
+        "friendly_name": "Benin Palace Government",
+        "year": 1440,
+        "year_end": 1473,
+        "description": "The Benin Kingdom developed a sophisticated palace-based government under Oba Ewuare the Great.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1453,
+    "title": "Mehmed II Takes Constantinople",
+    "candidates": [
+      {
+        "name": "byzantine-scholars-flee",
+        "friendly_name": "Byzantine Scholars Flee West",
+        "year": 1453,
+        "description": "After Constantinople's fall to the Ottomans, Greek scholars fled west, fueling the Italian Renaissance.",
+        "score": 4,
+        "shared": [
+          "constantinople",
+          "after",
+          "ottomans",
+          "byzantine"
+        ]
+      },
+      {
+        "name": "constantinople-fall",
+        "friendly_name": "Fall of Constantinople",
+        "year": 1453,
+        "description": "Ottoman forces conquered the Byzantine capital, ending the Eastern Roman Empire.",
+        "score": 3,
+        "shared": [
+          "constantinople",
+          "byzantine",
+          "empire"
+        ]
+      },
+      {
+        "name": "hundred-years-war-conclusion",
+        "friendly_name": "Hundred Years War Ends",
+        "year": 1453,
+        "description": "France's victory at Castillon ended the 116-year Anglo-French conflict, expelling England from the continent.",
+        "score": 1,
+        "shared": [
+          "year"
+        ]
+      },
+      {
+        "name": "silk-road-decline",
+        "friendly_name": "Silk Road Trade Decline Begins",
+        "year": 1453,
+        "description": "Ottoman conquest of Constantinople disrupted overland Silk Road trade, spurring European maritime exploration.",
+        "score": 1,
+        "shared": [
+          "constantinople"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "birth-amerigo-vespucci",
+        "friendly_name": "Birth of Amerigo Vespucci",
+        "year": 1454,
+        "description": "The Italian explorer for whom the Americas were named after he recognized them as a new continent.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "qhapaq-nan-expansion",
+        "friendly_name": "Qhapaq Ñan Road Network Expanded",
+        "year": 1450,
+        "year_end": 1532,
+        "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "inca-empire-expansion",
+        "friendly_name": "Inca Empire Rise",
+        "year": 1438,
+        "year_end": 1471,
+        "description": "Under Pachacuti, the Inca rapidly expanded from the Cusco valley to build the largest empire in pre-Columbian Americas.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "inca-quipu-standardized",
+        "friendly_name": "Quipu Recording System Standardized",
+        "year": 1438,
+        "year_end": 1533,
+        "description": "The Inca Empire standardized quipu knotted-string records for census, taxation, and administrative data.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "timurid-dynasty",
+        "friendly_name": "Timurid Dynasty Power",
+        "year": 1405,
+        "year_end": 1507,
+        "description": "The Timurid dynasty ruled Central Asia after Timur's death, fostering a golden age of Persian art and science.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "gunpowder-weapons-adoption",
+        "friendly_name": "Gunpowder Weapons Widely Adopted",
+        "year": 1380,
+        "year_end": 1494,
+        "description": "European armies began deploying cannons and early firearms, transforming siege and battlefield tactics.",
+        "score": 1,
+        "shared": [
+          "siege"
+        ]
+      },
+      {
+        "name": "mali-decline",
+        "friendly_name": "Mali Empire Decline",
+        "year": 1360,
+        "year_end": 1599,
+        "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1465,
+    "title": "Topkapi Palace Completed",
+    "candidates": [
+      {
+        "name": "ottoman-topkapi-palace",
+        "friendly_name": "Topkapi Palace Construction",
+        "year": 1465,
+        "description": "Sultan Mehmed II began building Topkapi Palace in Constantinople as the primary residence of Ottoman sultans.",
+        "score": 4,
+        "shared": [
+          "topkapi",
+          "palace",
+          "constantinople",
+          "sultans"
+        ]
+      },
+      {
+        "name": "alhambra-palace-built",
+        "friendly_name": "Alhambra Palace Built",
+        "year": 1333,
+        "year_end": 1492,
+        "description": "The Nasrid sultans expanded the Alhambra in Granada into a masterpiece of Islamic palatial architecture.",
+        "score": 2,
+        "shared": [
+          "palace",
+          "sultans"
+        ]
+      },
+      {
+        "name": "benin-edo-palace-system",
+        "friendly_name": "Benin Palace Government",
+        "year": 1440,
+        "year_end": 1473,
+        "description": "The Benin Kingdom developed a sophisticated palace-based government under Oba Ewuare the Great.",
+        "score": 1,
+        "shared": [
+          "palace"
+        ]
+      },
+      {
+        "name": "kerala-school-mathematics",
+        "friendly_name": "Kerala School Calculus",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "The Kerala school of mathematics in India developed infinite series expansions, anticipating European calculus by centuries.",
+        "score": 1,
+        "shared": [
+          "centuries"
+        ]
+      },
+      {
+        "name": "kazakh-khanate-zhanibek",
+        "friendly_name": "Zhanibek Khan Founds Kazakh Khanate",
+        "year": 1465,
+        "description": "Zhanibek and Kerey Khan broke from the Uzbek Khanate and founded the independent Kazakh Khanate.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "songhai-empire",
+        "friendly_name": "Songhai Empire Established",
+        "year": 1464,
+        "description": "Sunni Ali founded the largest empire in African history, succeeding Mali.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1492,
+    "title": "Sultan Welcomes Sephardic Jews",
+    "candidates": [
+      {
+        "name": "expulsion-jews-spain",
+        "friendly_name": "Expulsion of Jews from Spain",
+        "year": 1492,
+        "description": "Ferdinand and Isabella ordered all Jews to convert or leave Spain, ending centuries of Jewish presence.",
+        "score": 2,
+        "shared": [
+          "jews",
+          "spain"
+        ]
+      },
+      {
+        "name": "printing-press-diffusion",
+        "friendly_name": "Printing Press Spreads",
+        "year": 1450,
+        "year_end": 1500,
+        "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
+        "score": 2,
+        "shared": [
+          "across",
+          "cities"
+        ]
+      },
+      {
+        "name": "songhai-expansion",
+        "friendly_name": "Songhai Expands Under Askia",
+        "year": 1493,
+        "year_end": 1528,
+        "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "qhapaq-nan-expansion",
+        "friendly_name": "Qhapaq Ñan Road Network Expanded",
+        "year": 1450,
+        "year_end": 1532,
+        "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "tonga-empire",
+        "friendly_name": "Tongan Empire Peak",
+        "year": 1200,
+        "year_end": 1500,
+        "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "andean-llama-domestication",
+        "friendly_name": "Andean Llama Herding System Peak",
+        "year": 1200,
+        "year_end": 1532,
+        "description": "Andean civilizations perfected llama herding systems for transport, wool, and meat across highland trade networks.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1514,
+    "title": "Battle of Chaldiran",
+    "candidates": [
+      {
+        "name": "safavid-battled-ottomans",
+        "friendly_name": "Safavid-Ottoman Military Conflicts",
+        "year": 1514,
+        "description": "The Ottoman victory at Chaldiran established the border between Sunni Ottoman and Shia Safavid empires.",
+        "score": 3,
+        "shared": [
+          "chaldiran",
+          "ottoman",
+          "safavid"
+        ]
+      },
+      {
+        "name": "battle-of-flodden",
+        "friendly_name": "Battle of Flodden",
+        "year": 1513,
+        "description": "England defeated Scotland, killing King James IV and much of the Scottish nobility.",
+        "score": 1,
+        "shared": [
+          "battle"
+        ]
+      },
+      {
+        "name": "battle-of-marignano",
+        "friendly_name": "Battle of Marignano",
+        "year": 1515,
+        "description": "Francis I of France defeated the Swiss, conquering Milan and establishing French dominance in Italy.",
+        "score": 1,
+        "shared": [
+          "battle"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "machiavelli-prince",
+        "friendly_name": "The Prince Written",
+        "year": 1513,
+        "description": "Machiavelli wrote his influential treatise on political power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "balboa-pacific",
+        "friendly_name": "Balboa Sees the Pacific",
+        "year": 1513,
+        "description": "Vasco Núñez de Balboa became the first European to see the Pacific Ocean from the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1517,
+    "title": "Selim I Conquers Egypt",
+    "candidates": [
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 3,
+        "shared": [
+          "mamluk",
+          "sultanate",
+          "cairo"
+        ]
+      },
+      {
+        "name": "mamluk-mosque-lamps",
+        "friendly_name": "Enamelled Mosque Lamps",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "Cairo glassmakers gilded and enamelled oil lamps that hung by the dozen in Mamluk mosques, prized far beyond Egypt.",
+        "score": 3,
+        "shared": [
+          "egypt",
+          "mamluk",
+          "cairo"
+        ]
+      },
+      {
+        "name": "barbarossa-brothers-seize-algiers",
+        "friendly_name": "Barbarossa Brothers Seize Algiers",
+        "year": 1516,
+        "description": "Corsair brothers Aruj and Hayreddin Barbarossa seized control of Algiers, turning it into the base of Ottoman aligned piracy in the western sea.",
+        "score": 1,
+        "shared": [
+          "control"
+        ]
+      },
+      {
+        "name": "adil-shahi-dynasty",
+        "friendly_name": "Adil Shahi Dynasty Rules Bijapur",
+        "year": 1490,
+        "year_end": 1686,
+        "description": "Yusuf Adil Shah founded the Adil Shahi dynasty, ruling the Bijapur Sultanate in the Deccan region of India.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      },
+      {
+        "name": "deccan-sultanates",
+        "friendly_name": "Deccan Sultanates Flourish",
+        "year": 1490,
+        "year_end": 1518,
+        "description": "Five successor states of the Bahmani Sultanate ruled the Deccan plateau, fostering Indo-Islamic culture.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      },
+      {
+        "name": "barid-shahi-dynasty",
+        "friendly_name": "Barid Shahi Dynasty of Bidar",
+        "year": 1487,
+        "year_end": 1542,
+        "description": "The Barid Shahi dynasty established the Bidar Sultanate as one of the five Deccan successor states.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1520,
+    "title": "Suleiman Takes the Throne",
+    "candidates": [
+      {
+        "name": "ottoman-suleiman-magnificent",
+        "friendly_name": "Suleiman the Magnificent's Reign",
+        "year": 1520,
+        "year_end": 1566,
+        "description": "Suleiman the Magnificent began his 46-year reign, expanding the Ottoman Empire to its greatest extent.",
+        "score": 4,
+        "shared": [
+          "suleiman",
+          "reign",
+          "empire",
+          "greatest"
+        ]
+      },
+      {
+        "name": "fall-of-tenochtitlan",
+        "friendly_name": "Fall of Tenochtitlan",
+        "year": 1521,
+        "description": "Hernán Cortés and his indigenous allies conquered the Aztec capital, ending the Aztec Empire.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "charles-v-holy-roman-emperor",
+        "friendly_name": "Charles V Crowned Emperor",
+        "year": 1519,
+        "description": "Charles V's election united Spain, the Netherlands, Austria, and the Holy Roman Empire under one ruler.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "cortes-meets-aztecs",
+        "friendly_name": "Cortés Meets Aztecs",
+        "year": 1519,
+        "description": "Hernán Cortés first encountered the Aztec Empire in Mexico.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "vijayanagara-flowering",
+        "friendly_name": "Vijayanagara Cultural Zenith",
+        "year": 1509,
+        "year_end": 1529,
+        "description": "Under Krishna Deva Raya, the Vijayanagara Empire reached its cultural zenith in art, architecture, and literature.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "vijayanagara-architecture",
+        "friendly_name": "Vijayanagara Temples Peak",
+        "year": 1509,
+        "year_end": 1529,
+        "description": "The Vijayanagara Empire produced monumental Dravidian temple complexes at Hampi under Krishna Deva Raya.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "aztec-peak",
+        "friendly_name": "Aztec Empire Peak",
+        "year": 1502,
+        "year_end": 1520,
+        "description": "The Aztec Empire reached peak power under Moctezuma II, ruling over 5 million people from Tenochtitlan.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "luba-empire",
+        "friendly_name": "Luba Empire Expands",
+        "year": 1500,
+        "year_end": 1750,
+        "description": "The Luba Empire expanded in the Congo basin, establishing a sophisticated system of divine kingship.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "songhai-expansion",
+        "friendly_name": "Songhai Expands Under Askia",
+        "year": 1493,
+        "year_end": 1528,
+        "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "songhai-scholars",
+        "friendly_name": "Songhai Islamic Scholars",
+        "year": 1493,
+        "year_end": 1591,
+        "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "qhapaq-nan-expansion",
+        "friendly_name": "Qhapaq Ñan Road Network Expanded",
+        "year": 1450,
+        "year_end": 1532,
+        "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1526,
+    "title": "Battle of Mohacs",
+    "candidates": [
+      {
+        "name": "treaty-madrid",
+        "friendly_name": "Treaty of Madrid",
+        "year": 1526,
+        "description": "Captured French King Francis I ceded territories to Emperor Charles V.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "mughal-babur-founds",
+        "friendly_name": "Mughal Empire Founded by Babur",
+        "year": 1526,
+        "description": "Babur defeated the Delhi Sultanate at the Battle of Panipat and founded the Mughal Empire in India.",
+        "score": 1,
+        "shared": [
+          "battle"
+        ]
+      },
+      {
+        "name": "ottoman-suleiman-magnificent",
+        "friendly_name": "Suleiman the Magnificent's Reign",
+        "year": 1520,
+        "year_end": 1566,
+        "description": "Suleiman the Magnificent began his 46-year reign, expanding the Ottoman Empire to its greatest extent.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "vijayanagara-flowering",
+        "friendly_name": "Vijayanagara Cultural Zenith",
+        "year": 1509,
+        "year_end": 1529,
+        "description": "Under Krishna Deva Raya, the Vijayanagara Empire reached its cultural zenith in art, architecture, and literature.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "vijayanagara-architecture",
+        "friendly_name": "Vijayanagara Temples Peak",
+        "year": 1509,
+        "year_end": 1529,
+        "description": "The Vijayanagara Empire produced monumental Dravidian temple complexes at Hampi under Krishna Deva Raya.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "benin-art-renaissance",
+        "friendly_name": "Benin Kingdom Art Renaissance",
+        "year": 1504,
+        "year_end": 1550,
+        "description": "The Benin Kingdom produced masterful bronze and ivory sculptures celebrating royal power and spiritual life.",
+        "score": 1,
+        "shared": [
+          "royal"
+        ]
+      },
+      {
+        "name": "songhai-expansion",
+        "friendly_name": "Songhai Expands Under Askia",
+        "year": 1493,
+        "year_end": 1528,
+        "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1534,
+    "title": "Suleiman Enters Baghdad",
+    "candidates": [
+      {
+        "name": "ottoman-suleiman-magnificent",
+        "friendly_name": "Suleiman the Magnificent's Reign",
+        "year": 1520,
+        "year_end": 1566,
+        "description": "Suleiman the Magnificent began his 46-year reign, expanding the Ottoman Empire to its greatest extent.",
+        "score": 3,
+        "shared": [
+          "suleiman",
+          "ottoman",
+          "empire"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 2,
+        "shared": [
+          "ottoman",
+          "empire"
+        ]
+      },
+      {
+        "name": "spanish-conquest-peru",
+        "friendly_name": "Conquest of Peru by Spain",
+        "year": 1533,
+        "description": "Pizarro executed Atahualpa and captured Cusco, toppling the Inca Empire.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "pizarro-founds-lima",
+        "friendly_name": "Pizarro Founds Lima",
+        "year": 1535,
+        "description": "Francisco Pizarro founded a colonial capital he called the City of Kings on the Rimac river, later named Lima.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "luba-empire",
+        "friendly_name": "Luba Empire Expands",
+        "year": 1500,
+        "year_end": 1750,
+        "description": "The Luba Empire expanded in the Congo basin, establishing a sophisticated system of divine kingship.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "songhai-scholars",
+        "friendly_name": "Songhai Islamic Scholars",
+        "year": 1493,
+        "year_end": 1591,
+        "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "mali-decline",
+        "friendly_name": "Mali Empire Decline",
+        "year": 1360,
+        "year_end": 1599,
+        "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1538,
+    "title": "Battle of Preveza",
+    "candidates": [
+      {
+        "name": "battle-of-preveza",
+        "friendly_name": "Battle of Preveza",
+        "year": 1538,
+        "description": "Corsair admiral Barbarossa's Ottoman fleet routed a Holy League armada off western Greece, securing corsair dominance of the sea for decades.",
+        "score": 10,
+        "shared": [
+          "battle",
+          "preveza",
+          "barbarossa",
+          "ottoman",
+          "fleet",
+          "holy",
+          "league",
+          "armada",
+          "off",
+          "securing"
+        ]
+      },
+      {
+        "name": "suleiman-rebuilds-jerusalem-walls",
+        "friendly_name": "Suleiman Rebuilds Jerusalem Walls",
+        "year": 1538,
+        "year_end": 1541,
+        "description": "An Ottoman sultan had the walls around Jerusalem's Old City torn down and reconstructed during his long reign.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "ottoman-suleiman-magnificent",
+        "friendly_name": "Suleiman the Magnificent's Reign",
+        "year": 1520,
+        "year_end": 1566,
+        "description": "Suleiman the Magnificent began his 46-year reign, expanding the Ottoman Empire to its greatest extent.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "off"
+        ]
+      },
+      {
+        "name": "titian-venetian-color",
+        "friendly_name": "Titian Masters Venetian Color",
+        "year": 1538,
+        "description": "Titian's masterful use of color and dynamic brushwork defined the Venetian school and influenced European painting.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1554,
+    "title": "First Coffeehouses Open",
+    "candidates": [
+      {
+        "name": "coffee-house-emergence",
+        "friendly_name": "Ottoman Coffeehouses Emerge",
+        "year": 1555,
+        "description": "The first coffeehouses opened in Constantinople, becoming centers for socializing, news, and intellectual exchange.",
+        "score": 2,
+        "shared": [
+          "coffeehouses",
+          "coffee"
+        ]
+      },
+      {
+        "name": "spanish-price-revolution",
+        "friendly_name": "Spanish Price Revolution",
+        "year": 1550,
+        "year_end": 1650,
+        "description": "A flood of New World silver caused sustained inflation across Europe over the sixteenth century.",
+        "score": 2,
+        "shared": [
+          "across",
+          "europe"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 2,
+        "shared": [
+          "coffeehouses",
+          "coffee"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 2,
+        "shared": [
+          "social",
+          "across"
+        ]
+      },
+      {
+        "name": "wokou-raiders-besiege-nanjing",
+        "friendly_name": "Wokou Raiders Besiege Nanjing",
+        "year": 1555,
+        "description": "At the peak of the wokou crisis, coastal raiders pushed deep into China and briefly besieged the great walled city of Nanjing.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "chili-peppers-spread",
+        "friendly_name": "Chili Peppers Spread Worldwide",
+        "year": 1500,
+        "year_end": 1614,
+        "description": "Traders carried American chili peppers across Asia and Africa, transforming cuisines from India to Korea.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "painting-canvas",
+        "friendly_name": "Painting Canvas",
+        "year": 1410,
+        "year_end": 1600,
+        "description": "Stretched fabric replacing wood panels as a portable, lightweight surface for painting in medieval Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "open-field-system-abandonment",
+        "friendly_name": "Open Field System Declines",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+        "score": 1,
+        "shared": [
+          "open"
+        ]
+      },
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1557,
+    "title": "Suleymaniye Mosque Completed",
+    "candidates": [
+      {
+        "name": "ottoman-architecture-peak",
+        "friendly_name": "Suleymaniye Mosque Built",
+        "year": 1557,
+        "description": "Architect Sinan completed the Suleymaniye Mosque in Istanbul, the masterpiece of Ottoman imperial architecture.",
+        "score": 5,
+        "shared": [
+          "suleymaniye",
+          "mosque",
+          "completed",
+          "architect",
+          "sinan"
+        ]
+      },
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "complex"
+        ]
+      },
+      {
+        "name": "mughal-akbar",
+        "friendly_name": "Akbar Expands Mughal Empire",
+        "year": 1556,
+        "description": "Emperor Akbar won the Second Battle of Panipat and expanded Mughal rule across most of the Indian subcontinent.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "shaanxi-earthquake",
+        "friendly_name": "Shaanxi Earthquake",
+        "year": 1556,
+        "description": "The deadliest earthquake on record collapsed cave dwellings and towns across central China, and its toll is still debated.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "greshams-law-coinage",
+        "friendly_name": "Gresham's Law Described",
+        "year": 1558,
+        "description": "Financier Thomas Gresham observed that bad money drives good money out of circulation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1566,
+    "title": "Suleiman Dies at Szigetvar",
+    "candidates": [
+      {
+        "name": "death-suleiman",
+        "friendly_name": "Death of Suleiman",
+        "year": 1566,
+        "description": "The Ottoman sultan who expanded the empire to its peak and reformed its laws, dying on campaign in Hungary.",
+        "score": 5,
+        "shared": [
+          "suleiman",
+          "sultan",
+          "campaign",
+          "hungary",
+          "death"
+        ]
+      },
+      {
+        "name": "ottoman-suleiman-magnificent",
+        "friendly_name": "Suleiman the Magnificent's Reign",
+        "year": 1520,
+        "year_end": 1566,
+        "description": "Suleiman the Magnificent began his 46-year reign, expanding the Ottoman Empire to its greatest extent.",
+        "score": 2,
+        "shared": [
+          "suleiman",
+          "his"
+        ]
+      },
+      {
+        "name": "murder-of-lord-darnley",
+        "friendly_name": "Murder of Lord Darnley",
+        "year": 1567,
+        "description": "The consort of Mary, Queen of Scots died when his Edinburgh lodging was destroyed, wrecking her hold on the throne.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "dutch-iconoclasm",
+        "friendly_name": "Dutch Iconoclasm",
+        "year": 1566,
+        "description": "Protestant mobs destroyed religious images across the Netherlands in the Beeldenstorm wave of destruction.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stari-most-mostar",
+        "friendly_name": "Stari Most Completed",
+        "year": 1566,
+        "description": "Ottoman architect Mimar Hayruddin threw a single soaring stone arch across the Neretva gorge at Mostar.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1570,
+    "title": "Ottomans Invade Cyprus",
+    "candidates": [
+      {
+        "name": "battle-lepanto",
+        "friendly_name": "Battle of Lepanto",
+        "year": 1571,
+        "description": "A Christian fleet destroyed the Ottoman navy in the last major galley battle.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "safavid-mughal-relations",
+        "friendly_name": "Safavid-Mughal Diplomatic Relations",
+        "year": 1570,
+        "description": "The Safavid and Mughal empires maintained complex diplomatic relations marked by rivalry over Kandahar.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "potato-introduction-europe",
+        "friendly_name": "Potatoes Introduced to Europe",
+        "year": 1570,
+        "description": "Spanish explorers brought potatoes from South America to Europe, where they gradually became a staple crop.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-atlas",
+        "friendly_name": "Theatrum Orbis Terrarum",
+        "year": 1570,
+        "description": "Abraham Ortelius published the Theatrum Orbis Terrarum in Antwerp, considered the first modern world atlas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "copperplate-engraved-printing",
+        "friendly_name": "Engraved Map Printing",
+        "year": 1570,
+        "description": "Copperplate engraving let printers reproduce detailed maps and illustrations far more precisely.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mercator-projection-map",
+        "friendly_name": "Mercator Projection Map",
+        "year": 1569,
+        "description": "Gerardus Mercator published his world map with a new projection that enabled straight-line navigation, revolutionizing seafaring.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1616,
+    "title": "Blue Mosque Completed",
+    "candidates": [
+      {
+        "name": "istanbul-blue-mosque",
+        "friendly_name": "Blue Mosque Built in Istanbul",
+        "year": 1616,
+        "description": "The Sultan Ahmed Mosque (Blue Mosque) was completed in Istanbul, notable for its six minarets and blue tile interior.",
+        "score": 6,
+        "shared": [
+          "blue",
+          "mosque",
+          "completed",
+          "sultan",
+          "ahmed",
+          "six"
+        ]
+      },
+      {
+        "name": "aceh-sultanate",
+        "friendly_name": "Aceh Sultanate Peak Power",
+        "year": 1607,
+        "year_end": 1636,
+        "description": "The Aceh Sultanate in northern Sumatra reached peak power under Sultan Iskandar Muda.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "isfahan-city-building",
+        "friendly_name": "Isfahan Built as Safavid Capital",
+        "year": 1598,
+        "year_end": 1629,
+        "description": "Shah Abbas I moved the Safavid capital to Isfahan and transformed it with grand mosques, bazaars, and bridges.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "abbas-great-reforms",
+        "friendly_name": "Shah Abbas Reforms Safavids",
+        "year": 1588,
+        "year_end": 1629,
+        "description": "Shah Abbas I modernized the Safavid military, centralized governance, and made Isfahan a magnificent capital.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "death-shakespeare",
+        "friendly_name": "Death of Shakespeare",
+        "year": 1616,
+        "description": "William Shakespeare died in Stratford-upon-Avon, leaving behind the greatest body of work in English literature.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-cervantes",
+        "friendly_name": "Death of Cervantes",
+        "year": 1616,
+        "description": "Miguel de Cervantes, author of Don Quixote, died in Madrid the same year as Shakespeare.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1699,
+    "title": "Treaty of Karlowitz",
+    "candidates": [
+      {
+        "name": "zanzibar-spice-trade",
+        "friendly_name": "Zanzibar Becomes Spice Trade Center",
+        "year": 1698,
+        "description": "Zanzibar emerged as a major Indian Ocean spice trading hub under Omani influence, exporting cloves, nutmeg, and cinnamon.",
+        "score": 1,
+        "shared": [
+          "major"
+        ]
+      },
+      {
+        "name": "genroku-era-culture",
+        "friendly_name": "Genroku Cultural Peak",
+        "year": 1688,
+        "year_end": 1704,
+        "description": "Japan's Genroku era saw a cultural explosion in kabuki, haiku, and woodblock prints during Tokugawa peace.",
+        "score": 1,
+        "shared": [
+          "peace"
+        ]
+      },
+      {
+        "name": "mughal-aurengzeb-expansion",
+        "friendly_name": "Aurangzeb's Mughal Expansion",
+        "year": 1658,
+        "year_end": 1707,
+        "description": "Aurangzeb seized the Mughal throne, expanding the empire to its greatest territorial extent across the Indian subcontinent.",
+        "score": 1,
+        "shared": [
+          "territorial"
+        ]
+      },
+      {
+        "name": "sikh-khalsa-panth",
+        "friendly_name": "Khalsa Panth Founded",
+        "year": 1699,
+        "description": "Guru Gobind Singh founded the Khalsa, transforming the Sikh community into a martial brotherhood.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-northern-war",
+        "friendly_name": "Great Northern War Begins",
+        "year": 1700,
+        "description": "Sweden faced a coalition that would end its status as a great power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "peter-great-reforms",
+        "friendly_name": "Peter the Great's Army Reforms",
+        "year": 1698,
+        "description": "Peter the Great rebuilt Russia's army along European lines after his Grand Embassy tour of the West.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1718,
+    "title": "The Tulip Era Begins",
+    "candidates": [
+      {
+        "name": "tulip-era-ottoman",
+        "friendly_name": "Ottoman Tulip Era",
+        "year": 1718,
+        "year_end": 1730,
+        "description": "The Ottoman Tulip Era brought European-influenced art, gardens, and cultural openness under Sultan Ahmed III.",
+        "score": 3,
+        "shared": [
+          "tulip",
+          "era",
+          "gardens"
+        ]
+      },
+      {
+        "name": "blackbeard-killed-ocracoke",
+        "friendly_name": "Blackbeard Killed at Ocracoke",
+        "year": 1718,
+        "description": "Royal Navy lieutenant Robert Maynard cornered and killed the pirate Blackbeard off the Carolina coast after a fierce shipboard fight.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "panniers-wide-skirts",
+        "friendly_name": "Panniers Widen Court Skirts",
+        "year": 1710,
+        "year_end": 1780,
+        "description": "Hooped petticoats called panniers spread court skirts out wide, a fashion that ruled European courts for decades.",
+        "score": 1,
+        "shared": [
+          "court"
+        ]
+      },
+      {
+        "name": "dahomey-rise-power",
+        "friendly_name": "Rise of Dahomey",
+        "year": 1718,
+        "description": "Under King Agaja, Dahomey built a centralized state around a powerful army and began conquering its coastal neighbours.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scotch-irish-migration",
+        "friendly_name": "Scots-Irish Emigration",
+        "year": 1718,
+        "description": "Ulster Scots emigrated to the American colonies, settling the Appalachian backcountry frontier.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1729,
+    "title": "First Ottoman Printed Book",
+    "candidates": [
+      {
+        "name": "great-fire-of-copenhagen",
+        "friendly_name": "Great Fire of Copenhagen",
+        "year": 1728,
+        "description": "A blaze burned for three days through the Danish capital, destroying about a quarter of the city and most of the university library.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "tulip-era-ottoman",
+        "friendly_name": "Ottoman Tulip Era",
+        "year": 1718,
+        "year_end": 1730,
+        "description": "The Ottoman Tulip Era brought European-influenced art, gardens, and cultural openness under Sultan Ahmed III.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "birth-edmund-burke",
+        "friendly_name": "Birth of Edmund Burke",
+        "year": 1729,
+        "description": "The Irish statesman and philosopher whose writings on tradition founded modern conservative thought.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maroon-wars-jamaica",
+        "friendly_name": "Maroon Wars for Freedom in Jamaica",
+        "year": 1728,
+        "year_end": 1739,
+        "description": "Jamaican Maroons fought the British to a peace treaty recognizing their autonomy and land rights.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chile-earthquake-1730",
+        "friendly_name": "Chilean Earthquake and Tsunami",
+        "year": 1730,
+        "description": "An estimated magnitude 8.7 earthquake caused a tsunami damaging over 1,000 km of Chilean coastline.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bering-strait",
+        "friendly_name": "Bering Discovers Bering Strait",
+        "year": 1728,
+        "description": "Vitus Bering proved that Asia and North America were separate continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1774,
+    "title": "Treaty of Kucuk Kaynarca",
+    "candidates": [
+      {
+        "name": "intolerable-acts",
+        "friendly_name": "Intolerable Acts Passed",
+        "year": 1774,
+        "description": "Britain passed the Coercive Acts to punish Massachusetts after the Boston Tea Party, pushing American colonies toward revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-continental-congress",
+        "friendly_name": "First Continental Congress",
+        "year": 1774,
+        "description": "Delegates from twelve colonies met in Philadelphia to coordinate a response to British policies, establishing colonial unity.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "oxygen-discovered",
+        "friendly_name": "Oxygen Discovered",
+        "year": 1774,
+        "description": "Joseph Priestley and Carl Wilhelm Scheele independently discovered oxygen.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "boring-machine",
+        "friendly_name": "Boring Machine",
+        "year": 1774,
+        "description": "John Wilkinson's precision machine for boring cannon and engine cylinders with high accuracy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "marie-antoinette-pouf",
+        "friendly_name": "Marie Antoinette's Pouf Hair",
+        "year": 1774,
+        "description": "French court fashion reached extremes with towering pouf hairstyles adorned with feathers, ribbons and models.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "jaquet-droz-writer-automaton",
+        "friendly_name": "The Writer Automaton",
+        "year": 1774,
+        "description": "Pierre Jaquet-Droz built a clockwork boy that dipped a quill and wrote any short text set on its cam wheel.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1789,
+    "title": "Selim III Becomes Sultan",
+    "candidates": [
+      {
+        "name": "prison-reform",
+        "friendly_name": "Prison Penitentiary System",
+        "year": 1790,
+        "description": "Philadelphia's Walnut Street Jail pioneered the penitentiary model focused on solitary confinement and rehabilitation over punishment.",
+        "score": 1,
+        "shared": [
+          "reform"
+        ]
+      },
+      {
+        "name": "haydn-symphonies",
+        "friendly_name": "Haydn Composes Symphony Series",
+        "year": 1761,
+        "year_end": 1795,
+        "description": "Joseph Haydn became Kapellmeister to the Esterházy court, composing symphonies that defined the Classical style.",
+        "score": 1,
+        "shared": [
+          "style"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "reform"
+        ]
+      },
+      {
+        "name": "french-revolution-start",
+        "friendly_name": "French Revolution Begins",
+        "year": 1789,
+        "description": "The storming of the Bastille ignited revolutionary fervor across France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "french-declaration-rights",
+        "friendly_name": "Declaration of the Rights of Man",
+        "year": 1789,
+        "description": "Revolutionary France proclaimed fundamental rights and freedoms.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tennis-court-oath",
+        "friendly_name": "Tennis Court Oath",
+        "year": 1789,
+        "description": "French National Assembly members swore not to disband until they had written a constitution, defying royal authority.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1805,
+    "title": "Muhammad Ali Governs Egypt",
+    "candidates": [
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 2,
+        "shared": [
+          "independent",
+          "state"
+        ]
+      },
+      {
+        "name": "battle-austerlitz",
+        "friendly_name": "Battle of Austerlitz",
+        "year": 1805,
+        "description": "Napoleon's masterpiece victory destroyed the Third Coalition against France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-trafalgar",
+        "friendly_name": "Battle of Trafalgar",
+        "year": 1805,
+        "description": "Nelson's victory ensured British naval supremacy but cost him his life.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mungo-park-niger",
+        "friendly_name": "Mungo Park Explores Niger",
+        "year": 1805,
+        "year_end": 1806,
+        "description": "The Scottish explorer traced the course of the Niger River in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-andersen",
+        "friendly_name": "Birth of H.C. Andersen",
+        "year": 1805,
+        "description": "The Danish author of beloved fairy tales including The Little Mermaid and The Ugly Duckling.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-horatio-nelson",
+        "friendly_name": "Death of Horatio Nelson",
+        "year": 1805,
+        "description": "The British admiral who crushed Napoleon's fleet at Trafalgar, where he was mortally wounded in victory.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1821,
+    "title": "Greek War of Independence Begins",
+    "candidates": [
+      {
+        "name": "greek-independence",
+        "friendly_name": "Greek War of Independence Begins",
+        "year": 1821,
+        "description": "Greeks revolted against Ottoman rule, seeking national independence.",
+        "score": 6,
+        "shared": [
+          "greek",
+          "war",
+          "independence",
+          "begins",
+          "ottoman",
+          "rule"
+        ]
+      },
+      {
+        "name": "mexican-independence",
+        "friendly_name": "Mexican Independence",
+        "year": 1821,
+        "description": "Mexico gained independence from Spain after an eleven-year war, establishing the First Mexican Empire.",
+        "score": 2,
+        "shared": [
+          "war",
+          "independence"
+        ]
+      },
+      {
+        "name": "latin-american-independence",
+        "friendly_name": "Latin American Independence",
+        "year": 1821,
+        "description": "Mexico and other Spanish colonies gained independence in rapid succession.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "brazil-independence",
+        "friendly_name": "Brazil Independence",
+        "year": 1822,
+        "description": "Prince Pedro declared Brazil's independence from Portugal, becoming Emperor Pedro I of the new Brazilian Empire.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "venus-de-milo-discovered",
+        "friendly_name": "Venus de Milo Discovered",
+        "year": 1820,
+        "description": "The famous ancient Greek statue Venus de Milo was discovered on the Aegean island of Milos.",
+        "score": 1,
+        "shared": [
+          "greek"
+        ]
+      },
+      {
+        "name": "ampere-electromagnetism",
+        "friendly_name": "Ampere Develops Electromagnetism",
+        "year": 1820,
+        "description": "André-Marie Ampère formulated the mathematical theory of electromagnetism and the right-hand rule for current.",
+        "score": 1,
+        "shared": [
+          "rule"
+        ]
+      },
+      {
+        "name": "birth-nightingale",
+        "friendly_name": "Birth of F. Nightingale",
+        "year": 1820,
+        "description": "The British nurse who reformed sanitation in the Crimean War and founded modern professional nursing.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "birth-susan-b-anthony",
+        "friendly_name": "Birth of Susan B. Anthony",
+        "year": 1820,
+        "description": "The American suffragist who led the decades-long campaign to win women the right to vote.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1826,
+    "title": "Janissaries Abolished",
+    "candidates": [
+      {
+        "name": "first-photograph",
+        "friendly_name": "First Photograph Taken",
+        "year": 1826,
+        "description": "Joseph Nicéphore Niépce captured the world's first permanent photograph.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gas-stove",
+        "friendly_name": "Gas Stove",
+        "year": 1826,
+        "description": "James Sharp patented the first practical gas-burning cooking stove for domestic use.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "menai-suspension-bridge",
+        "friendly_name": "Menai Suspension Bridge Completed",
+        "year": 1826,
+        "description": "The first major suspension bridge connected Wales to Anglesey.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "american-temperance-society",
+        "friendly_name": "American Temperance Society",
+        "year": 1826,
+        "description": "Reformers in Boston founded a national society urging Americans to give up spirits, seeding the drive for prohibition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "john-by-founds-bytown",
+        "friendly_name": "John By Founds Bytown",
+        "year": 1826,
+        "description": "Lieutenant Colonel John By founded a canal workers settlement called Bytown, which was later renamed Ottawa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-of-navarino",
+        "friendly_name": "Battle of Navarino",
+        "year": 1827,
+        "description": "British, French, and Russian fleets destroyed the Ottoman-Egyptian fleet in Greece, the last major naval battle fought entirely with sailing ships.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1839,
+    "title": "Tanzimat Reforms Proclaimed",
+    "candidates": [
+      {
+        "name": "cell-theory",
+        "friendly_name": "Cell Theory Established",
+        "year": 1839,
+        "description": "Schleiden and Schwann formulated the theory that all living things are made of cells.",
+        "score": 1,
+        "shared": [
+          "all"
+        ]
+      },
+      {
+        "name": "zanzibar-clove-cultivation",
+        "friendly_name": "Zanzibar Clove Plantations",
+        "year": 1840,
+        "description": "The Sultan of Zanzibar established clove plantations that made the island the world's leading spice exporter.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "first-opium-war",
+        "friendly_name": "First Opium War Begins",
+        "year": 1839,
+        "description": "Britain went to war with China over trade restrictions on opium.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "daguerreotype-invented",
+        "friendly_name": "Daguerreotype Photography",
+        "year": 1839,
+        "description": "Louis Daguerre's practical photographic process made portraits available to the masses.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "vulcanized-rubber",
+        "friendly_name": "Vulcanized Rubber Invented",
+        "year": 1839,
+        "description": "Charles Goodyear discovered vulcanization, making rubber durable and weather-resistant for industrial use.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "steam-shovel",
+        "friendly_name": "Steam Shovel",
+        "year": 1839,
+        "description": "William Otis invented the first mechanical excavator, powered by steam for digging earth.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1853,
+    "title": "Crimean War Begins",
+    "candidates": [
+      {
+        "name": "crimean-war",
+        "friendly_name": "Crimean War Begins",
+        "year": 1853,
+        "description": "Britain, France, and the Ottoman Empire fought against Russian expansion.",
+        "score": 5,
+        "shared": [
+          "crimean",
+          "war",
+          "begins",
+          "britain",
+          "france"
+        ]
+      },
+      {
+        "name": "charge-light-brigade",
+        "friendly_name": "Charge of the Light Brigade",
+        "year": 1854,
+        "description": "British cavalry charged Russian guns in a tragic miscommunication during the Crimean War.",
+        "score": 2,
+        "shared": [
+          "crimean",
+          "war"
+        ]
+      },
+      {
+        "name": "playfair-cipher-invented",
+        "friendly_name": "The Playfair Cipher",
+        "year": 1854,
+        "description": "Charles Wheatstone devised a cipher that scrambled letters in pairs on a small grid, and Britain took it to war.",
+        "score": 2,
+        "shared": [
+          "war",
+          "britain"
+        ]
+      },
+      {
+        "name": "perry-expedition-japan",
+        "friendly_name": "Perry Expedition Opens Japan",
+        "year": 1853,
+        "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "kerosene-lamp",
+        "friendly_name": "Kerosene Lamp Invented",
+        "year": 1853,
+        "description": "Ignacy Lukasiewicz built a lamp burning distilled rock oil, a cheap bright fuel that soon displaced whale oil.",
+        "score": 1,
+        "shared": [
+          "soon"
+        ]
+      },
+      {
+        "name": "snow-cholera-map",
+        "friendly_name": "Snow's Cholera Map of Soho",
+        "year": 1854,
+        "description": "John Snow plotted cholera deaths as bars on a street plan, showing them clustered around a single water pump.",
+        "score": 1,
+        "shared": [
+          "them"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1856,
+    "title": "Reform Edict Promises Equality",
+    "candidates": [
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 1,
+        "shared": [
+          "reform"
+        ]
+      },
+      {
+        "name": "opium-wars-second",
+        "friendly_name": "Second Opium War",
+        "year": 1856,
+        "year_end": 1860,
+        "description": "Britain and France forced China to open more ports and legalize the opium trade after military defeat.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bessemer-steel-process",
+        "friendly_name": "Bessemer Steel Process",
+        "year": 1856,
+        "description": "Henry Bessemer invented a process for mass-producing steel cheaply, enabling skyscrapers and railways.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "celluloid-first-plastic",
+        "friendly_name": "Celluloid (First Plastic)",
+        "year": 1856,
+        "description": "Alexander Parkes created parkesine, the first man-made plastic derived from cellulose.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ice-making-machine",
+        "friendly_name": "Ice Making Machine",
+        "year": 1856,
+        "description": "James Harrison's mechanical refrigeration system for commercial ice production in Australia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "synthetic-dye-mauveine",
+        "friendly_name": "Synthetic Dye (Mauveine)",
+        "year": 1856,
+        "description": "William Perkin accidentally created the first synthetic dye from coal tar, launching a new industry.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1876,
+    "title": "First Ottoman Constitution",
+    "candidates": [
+      {
+        "name": "serbia-independence",
+        "friendly_name": "Serbia Independence",
+        "year": 1876,
+        "year_end": 1878,
+        "description": "Serbia declared independence from the Ottoman Empire, later recognized at the Congress of Berlin.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "battle-little-bighorn",
+        "friendly_name": "Battle of Little Bighorn",
+        "year": 1876,
+        "description": "Lakota and Cheyenne warriors annihilated Custer's cavalry at Last Stand Hill.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "centennial-exhibition",
+        "friendly_name": "Centennial Exhibition",
+        "year": 1876,
+        "description": "First official World's Fair in the US celebrated America's 100th anniversary in Philadelphia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bell-telephone",
+        "friendly_name": "Bell Invents Telephone",
+        "year": 1876,
+        "description": "Alexander Graham Bell patented the first practical telephone.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "four-stroke-engine",
+        "friendly_name": "Four-Stroke Engine",
+        "year": 1876,
+        "description": "Nikolaus Otto built the first practical four-stroke internal combustion engine.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rubber-cultivation-begins",
+        "friendly_name": "Rubber Cultivation in Asia",
+        "year": 1876,
+        "description": "Henry Wickham shipped rubber seeds from Brazil to Kew Gardens, enabling plantation cultivation in Southeast Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1878,
+    "title": "Congress of Berlin",
+    "candidates": [
+      {
+        "name": "congress-of-berlin",
+        "friendly_name": "Congress of Berlin",
+        "year": 1878,
+        "description": "Major powers redrew Balkan boundaries after the Russo-Turkish War, creating new independent states.",
+        "score": 4,
+        "shared": [
+          "congress",
+          "berlin",
+          "powers",
+          "independent"
+        ]
+      },
+      {
+        "name": "romania-independence-recognized",
+        "friendly_name": "Romania Wins Independence",
+        "year": 1878,
+        "description": "The great powers recognised Romania as a sovereign state after it fought the Ottomans alongside Russia.",
+        "score": 3,
+        "shared": [
+          "powers",
+          "russia",
+          "romania"
+        ]
+      },
+      {
+        "name": "serbia-independence",
+        "friendly_name": "Serbia Independence",
+        "year": 1876,
+        "year_end": 1878,
+        "description": "Serbia declared independence from the Ottoman Empire, later recognized at the Congress of Berlin.",
+        "score": 3,
+        "shared": [
+          "congress",
+          "berlin",
+          "serbia"
+        ]
+      },
+      {
+        "name": "bulgaria-independence",
+        "friendly_name": "Bulgaria Independence",
+        "year": 1878,
+        "description": "Bulgaria gained autonomy from the Ottoman Empire following the Congress of Berlin.",
+        "score": 2,
+        "shared": [
+          "congress",
+          "berlin"
+        ]
+      },
+      {
+        "name": "great-famine-british-india",
+        "friendly_name": "Great Famine of British India",
+        "year": 1876,
+        "year_end": 1878,
+        "description": "A severe monsoon failure tied to a harsh El Nino triggered mass starvation across British ruled India, killing millions.",
+        "score": 1,
+        "shared": [
+          "harsh"
+        ]
+      },
+      {
+        "name": "princess-alice-disaster",
+        "friendly_name": "Princess Alice Disaster",
+        "year": 1878,
+        "description": "A pleasure steamer collision killed over 650 in the Thames River.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1908,
+    "title": "Young Turk Revolution",
+    "candidates": [
+      {
+        "name": "young-turk-revolution",
+        "friendly_name": "Young Turk Revolution",
+        "year": 1908,
+        "description": "Military officers forced the Ottoman sultan to restore the constitution and parliament.",
+        "score": 7,
+        "shared": [
+          "young",
+          "turk",
+          "revolution",
+          "officers",
+          "sultan",
+          "restore",
+          "constitution"
+        ]
+      },
+      {
+        "name": "budi-utomo-founded",
+        "friendly_name": "Budi Utomo Founded",
+        "year": 1908,
+        "description": "Javanese students formed the first modern nationalist society, marking Indonesia's awakening.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tunguska-event",
+        "friendly_name": "Tunguska Event",
+        "year": 1908,
+        "description": "Massive explosion over Siberia flattened 2,000 square kilometers of forest, likely caused by a meteor.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "austria-annexes-bosnia",
+        "friendly_name": "Austria Annexes Bosnia",
+        "year": 1908,
+        "description": "Austria-Hungary formally annexed Bosnia-Herzegovina, inflaming Serbian nationalism and Balkan tensions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "model-t-production-begins",
+        "friendly_name": "Model T Production Begins",
+        "year": 1908,
+        "description": "Ford's affordable Model T automobile made car ownership accessible to middle-class Americans.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "messina-earthquake",
+        "friendly_name": "Messina Earthquake",
+        "year": 1908,
+        "description": "An earthquake and tsunami killed over 80,000 people in Sicily and Calabria.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1909,
+    "title": "Abdulhamid II Deposed",
+    "candidates": [
+      {
+        "name": "young-turk-revolution",
+        "friendly_name": "Young Turk Revolution",
+        "year": 1908,
+        "description": "Military officers forced the Ottoman sultan to restore the constitution and parliament.",
+        "score": 2,
+        "shared": [
+          "parliament",
+          "sultan"
+        ]
+      },
+      {
+        "name": "mexican-revolution",
+        "friendly_name": "Mexican Revolution Begins",
+        "year": 1910,
+        "description": "A decade-long civil war overthrew the Porfirio Díaz dictatorship.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "naacp-founded",
+        "friendly_name": "NAACP Founded",
+        "year": 1909,
+        "description": "The civil rights organization was established to fight racial discrimination.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "corporate-tax",
+        "friendly_name": "Corporate Tax",
+        "year": 1909,
+        "description": "The United States enacted its first corporate income tax, establishing a 1% tax on net corporate income above $5,000.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "north-pole-reached",
+        "friendly_name": "North Pole Reached",
+        "year": 1909,
+        "description": "Robert Peary claimed to be the first person to reach the North Pole.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "haber-process",
+        "friendly_name": "Haber Process Invented",
+        "year": 1909,
+        "description": "Fritz Haber developed a process to synthesize ammonia from nitrogen, enabling mass production of fertilizer.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1914,
+    "title": "Ottomans Enter the Great War",
+    "candidates": [
+      {
+        "name": "wwi-start",
+        "friendly_name": "World War I Begins",
+        "year": 1914,
+        "description": "The assassination of Archduke Franz Ferdinand sparked the Great War.",
+        "score": 3,
+        "shared": [
+          "great",
+          "war",
+          "world"
+        ]
+      },
+      {
+        "name": "archduke-franz-ferdinand-assassinated",
+        "friendly_name": "Franz Ferdinand Assassinated",
+        "year": 1914,
+        "description": "Serbian nationalist Gavrilo Princip shot the Austro-Hungarian heir in Sarajevo, triggering the chain of events that started World War I.",
+        "score": 2,
+        "shared": [
+          "war",
+          "world"
+        ]
+      },
+      {
+        "name": "burberry-trench-coat",
+        "friendly_name": "The Trench Coat Designed",
+        "year": 1914,
+        "description": "Burberry refined a weatherproof gabardine coat for British officers in World War I, later a fashion staple.",
+        "score": 2,
+        "shared": [
+          "war",
+          "world"
+        ]
+      },
+      {
+        "name": "second-balkan-war",
+        "friendly_name": "Second Balkan War",
+        "year": 1913,
+        "description": "Former allies turned on Bulgaria over disputed Macedonian territory, resulting in Bulgaria's defeat and increased tensions leading to World War I.",
+        "score": 2,
+        "shared": [
+          "war",
+          "world"
+        ]
+      },
+      {
+        "name": "junkers-allmetal-aircraft",
+        "friendly_name": "First All-Metal Plane Flies",
+        "year": 1915,
+        "description": "The Junkers J1, nicknamed the Tin Donkey, made its debut flight in Germany as the world's first all-metal airplane.",
+        "score": 2,
+        "shared": [
+          "world",
+          "germany"
+        ]
+      },
+      {
+        "name": "ludlow-massacre",
+        "friendly_name": "Ludlow Massacre",
+        "year": 1914,
+        "description": "Nineteen strikers including women and children were killed during the Colorado Coalfield War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "second-battle-of-ypres-first-gas-attack",
+        "friendly_name": "Second Battle of Ypres",
+        "year": 1915,
+        "description": "Germany deployed chlorine gas against Allied troops in Belgium, the first large-scale use of chemical weapons in modern warfare.",
+        "score": 1,
+        "shared": [
+          "germany"
+        ]
+      },
+      {
+        "name": "olympic-rings-designed-1913",
+        "friendly_name": "Olympic Rings Symbol Created",
+        "year": 1913,
+        "description": "Pierre de Coubertin designed the five interlocking Olympic rings, symbolizing the union of the world's continents.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1918,
+    "title": "Armistice of Mudros",
+    "candidates": [
+      {
+        "name": "wwi-end",
+        "friendly_name": "World War I Ends",
+        "year": 1918,
+        "description": "The armistice was signed ending the Great War after four years of conflict.",
+        "score": 1,
+        "shared": [
+          "armistice"
+        ]
+      },
+      {
+        "name": "women-suffrage-uk",
+        "friendly_name": "Women Gain Vote in UK",
+        "year": 1918,
+        "description": "British women over 30 gained the right to vote for the first time.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "battle-passchendaele",
+        "friendly_name": "Battle of Passchendaele",
+        "year": 1917,
+        "description": "British troops fought through mud for months to gain five miles at Ypres.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "irish-independence",
+        "friendly_name": "Irish War of Independence Begins",
+        "year": 1919,
+        "description": "Irish republicans launched a guerrilla war against British rule.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "jallianwala-bagh-massacre",
+        "friendly_name": "Jallianwala Bagh Massacre",
+        "year": 1919,
+        "description": "British troops fired on unarmed Indians in Amritsar, galvanizing the independence movement.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "us-enters-world-war-i",
+        "friendly_name": "US Enters World War I",
+        "year": 1917,
+        "description": "The United States declared war on Germany after unrestricted submarine warfare and the Zimmermann Telegram, tipping the balance toward Allied victory.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "third-afghan-war",
+        "friendly_name": "Third Afghan War",
+        "year": 1919,
+        "description": "Afghanistan invaded British India, leading to a brief war that resulted in full Afghan independence from British influence.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "balfour-declaration",
+        "friendly_name": "Balfour Declaration",
+        "year": 1917,
+        "description": "British statement supporting a Jewish homeland in Palestine, shaping Middle East politics for generations.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "persian-famine",
+        "friendly_name": "Persian Famine",
+        "year": 1917,
+        "year_end": 1919,
+        "description": "World War I and occupation caused a famine killing two million Persians.",
+        "score": 1,
+        "shared": [
+          "occupation"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 1922,
+    "title": "Ottoman Sultanate Abolished",
+    "candidates": [
+      {
+        "name": "turkish-war-of-independence",
+        "friendly_name": "Turkish War of Independence",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+        "score": 1,
+        "shared": [
+          "turkish"
+        ]
+      },
+      {
+        "name": "gandhi-non-cooperation-movement",
+        "friendly_name": "Gandhi's Non-Cooperation Movement",
+        "year": 1920,
+        "year_end": 1922,
+        "description": "Mahatma Gandhi launched his first mass civil disobedience campaign against British rule in India.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "mussolini-power",
+        "friendly_name": "Mussolini Takes Power",
+        "year": 1922,
+        "description": "The March on Rome brought Benito Mussolini to power as Italy's fascist leader.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "russian-civil-war-ends",
+        "friendly_name": "Russian Civil War Ends",
+        "year": 1922,
+        "description": "The Bolsheviks defeated the White Army and various nationalist movements.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ulysses-published",
+        "friendly_name": "Ulysses Published",
+        "year": 1922,
+        "description": "James Joyces modernist masterpiece Ulysses was published, revolutionizing literature.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "irish-free-state",
+        "friendly_name": "Irish Free State Established",
+        "year": 1922,
+        "description": "Ireland gained independence from Britain as a dominion.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 1924,
+    "title": "Caliphate Abolished",
+    "candidates": [
+      {
+        "name": "islamic-caliphate-abolished",
+        "friendly_name": "Islamic Caliphate Abolished",
+        "year": 1924,
+        "description": "The 407-year-old Ottoman Caliphate was abolished as Turkey modernized under Kemal Ataturk.",
+        "score": 3,
+        "shared": [
+          "caliphate",
+          "abolished",
+          "ottoman"
+        ]
+      },
+      {
+        "name": "surrealist-manifesto",
+        "friendly_name": "Surrealist Manifesto Published",
+        "year": 1924,
+        "description": "André Breton published the founding document of the Surrealist movement.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-winter-olympics",
+        "friendly_name": "First Winter Olympics",
+        "year": 1924,
+        "description": "The first Winter Olympic Games opened in Chamonix in the French Alps.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rhapsody-in-blue-premiere",
+        "friendly_name": "Rhapsody in Blue Premiere",
+        "year": 1924,
+        "description": "George Gershwins Rhapsody in Blue premiered in New York City, blending jazz and classical music.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ibm-founded",
+        "friendly_name": "IBM Founded",
+        "year": 1924,
+        "description": "Computing-Tabulating-Recording Company changed its name to International Business Machines Corporation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-lenin",
+        "friendly_name": "Death of Lenin",
+        "year": 1924,
+        "description": "Vladimir Lenin died, setting off a power struggle that Stalin would ultimately win.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

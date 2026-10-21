@@ -1,0 +1,15 @@
+{
+  "battle-of-ankara-timur-bayezid": {"recognition": "low", "inferability": "high", "anchors": ["Ottomans", "Timur", "Sultan Bayezid", "young state"], "why": "Timur and the young Ottoman state place it in the late medieval era"},
+  "bayezid-welcomes-sephardic-jews": {"recognition": "medium", "inferability": "high", "anchors": ["Sultan", "expulsion from Spain", "Ottoman"], "why": "expulsion from Spain plus Ottoman sultan points to c.1492, late medieval/early modern"},
+  "selim-i-conquers-egypt-mamluks": {"recognition": "low", "inferability": "high", "anchors": ["Selim I", "Mamluks", "Ottoman rule"], "why": "Mamluks and Ottoman expansion into the Arab lands place it in the early modern era"},
+  "battle-of-mohacs-ottoman-hungary": {"recognition": "medium", "inferability": "high", "anchors": ["Suleiman", "Hungarian royal host", "King Louis II"], "why": "Suleiman anchors it to the 16th century"},
+  "treaty-of-karlowitz-ottoman": {"recognition": "low", "inferability": "medium", "anchors": ["Ottomans", "Habsburgs", "Holy League"], "why": "Ottomans, Habsburgs and Holy League narrow it to the early modern era, but the 'first major loss' wording leaves it wide"},
+  "ibrahim-muteferrika-first-printed-book": {"recognition": "low", "inferability": "medium", "anchors": ["Ottoman press", "first printing"], "why": "a first printing press in the Ottoman world suggests early modern, but not which century"},
+  "treaty-of-kucuk-kaynarca": {"recognition": "low", "inferability": "high", "anchors": ["Catherine the Great", "Ottomans", "Crimean Khanate"], "why": "Catherine the Great places it in the late 18th century"},
+  "janissaries-abolished-auspicious-incident": {"recognition": "medium", "inferability": "medium", "anchors": ["Mahmud II", "modern army", "Janissaries"], "why": "Janissaries and a drive to modernise the army suggest late Ottoman, with no firm date"},
+  "tanzimat-reforms-gulhane-edict": {"recognition": "low", "inferability": "medium", "anchors": ["Ottoman subjects", "modernising reform"], "why": "modernising reform in the Ottoman Empire points to the 19th century, but only loosely"},
+  "ottoman-constitution-midhat-pasha": {"recognition": "low", "inferability": "medium", "anchors": ["Ottoman", "constitution", "parliament"], "why": "a constitution and parliament in the Ottoman Empire suggest the 19th century"},
+  "ottomans-enter-first-world-war": {"recognition": "medium", "inferability": "high", "anchors": ["Great War", "Germany", "Russian Black Sea ports"], "why": "'Great War' alongside Germany and warships gives 1914 outright"},
+  "armistice-of-mudros": {"recognition": "low", "inferability": "high", "anchors": ["British warship", "Allied occupation", "Ottomans", "armistice"], "why": "an armistice, Allied occupation of Istanbul and a British warship place it at the end of WWI"},
+  "ottoman-sultanate-abolished": {"recognition": "low", "inferability": "high", "anchors": ["last sultan", "Mehmed VI", "nationalist assembly", "British warship"], "why": "last sultan, nationalist Turkey and a British warship place it in the post-WWI era"}
+}
