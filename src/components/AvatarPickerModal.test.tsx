@@ -41,6 +41,19 @@ describe('AvatarPickerModal earned portraits', () => {
     );
   });
 
+  it('groups every locked portrait after the unlocked ones', () => {
+    localStorage.setItem(
+      'when-achievements',
+      JSON.stringify({ unlocked: { 'meta-categories': '2026-10-02', '27': '2026-10-01' } })
+    );
+    render(<AvatarPickerModal open onDismiss={jest.fn()} />);
+    const labels = within(earnedGrid())
+      .getAllByRole('radio')
+      .map((tile) => tile.getAttribute('aria-label'));
+    expect(labels.slice(0, 3)).toEqual(['Unicorn', 'Kitsune', 'Hatchling, locked']);
+    expect(labels.slice(2).every((label) => label?.endsWith(', locked'))).toBe(true);
+  });
+
   it('saves an unlocked portrait like any other pick', async () => {
     render(<AvatarPickerModal open onDismiss={jest.fn()} />);
     await userEvent.click(within(earnedGrid()).getByRole('radio', { name: 'Chameleon' }));

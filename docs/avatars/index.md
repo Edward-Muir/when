@@ -159,7 +159,8 @@ earned pick travels with the score like any other and other players see it; the 
 format-only check needed no change. Achievements live on the device, so a pick can be forged;
 acceptable for a cosmetic.
 
-**Where it shows.** The picker lists them under "Earned" with a count. A locked one shows greyed
+**Where it shows.** The picker lists them under "Earned" with a count, the
+unlocked ones first and every locked one after them, each group in catalogue order. A locked one shows greyed
 behind a small lock, the tease the locked badges use, and tapping it previews it at the top
 with its unlock line without saving; any real pick or reopening clears the preview. The large
 achievement card (the unlock reveal and the detail popup) names the portrait a badge earns,

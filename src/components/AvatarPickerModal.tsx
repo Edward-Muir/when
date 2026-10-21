@@ -91,6 +91,14 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
     () => (open ? ownedEarnedPortraits(getAchievements().unlocked) : new Set<string>()),
     [open]
   );
+  // The ones the player can wear first, then everything still locked; catalogue order within each.
+  const earned = useMemo(
+    () => [
+      ...EARNED_PORTRAITS.filter((p) => owned.has(p.id)),
+      ...EARNED_PORTRAITS.filter((p) => !owned.has(p.id)),
+    ],
+    [owned]
+  );
   const peeked = EARNED_PORTRAITS.find((p) => p.id === peek);
   const peekCriteria = peeked ? CRITERIA_BY_ACHIEVEMENT.get(peeked.achievementId) : null;
 
@@ -213,7 +221,7 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
             </span>
           </h3>
           <div className={GRID} role="radiogroup" aria-label="Earned">
-            {EARNED_PORTRAITS.map((portrait) => {
+            {earned.map((portrait) => {
               const unlocked = owned.has(portrait.id);
               const selected = portrait.id === (peek ?? avatar);
               return (
