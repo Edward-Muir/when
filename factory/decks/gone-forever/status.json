@@ -3,7 +3,7 @@
   "name": "Gone Forever",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T19:22:38.599Z",
+  "updated_at": "2026-10-21T19:27:24.374Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-21T19:22:38.599Z"
     },
     "tasmanian-emu-extinct": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d0f2ff3c18977351109f330e1927147480cba08046ed3a63048aaf604b370759",
+      "updated_at": "2026-10-21T19:27:24.374Z"
     },
     "falkland-islands-wolf-extinct": {
       "state": "pending",
