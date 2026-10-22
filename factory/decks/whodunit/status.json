@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T06:16:08.456Z",
+  "updated_at": "2026-10-22T06:19:07.299Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-10-22T06:16:08.456Z"
     },
     "dexter-inspector-morse-debut": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "80167acb8d9abace146e5c3eb928a8a3957655121a5baa36a17383ae3bb29531",
+      "updated_at": "2026-10-22T06:19:07.299Z"
     },
     "eco-the-name-of-the-rose": {
       "state": "pending",
