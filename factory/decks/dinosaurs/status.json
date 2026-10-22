@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T16:54:40.699Z",
+  "updated_at": "2026-10-22T17:07:35.348Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,11 +37,11 @@
       "updated_at": "2026-10-22T15:13:58.706Z"
     },
     "cryolophosaurus-frozen-crest": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e94fcbff10756b952486bd942f76bac80206ce22b86b11352f643dc43c9ddfd0",
-      "updated_at": "2026-10-22T16:16:18.831Z"
+      "updated_at": "2026-10-22T17:07:35.037Z"
     },
     "dilophosaurus-twin-crest": {
       "state": "qc-pass",
@@ -72,67 +72,67 @@
       "updated_at": "2026-10-22T15:13:58.844Z"
     },
     "diplodocus-whip-tailed-giant": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "54b85558a74886c0d1dc1dd9df68cf7fcc0e4c3203279a5b5fe60fdf21ee4270",
-      "updated_at": "2026-10-22T16:20:38.424Z"
+      "updated_at": "2026-10-22T17:07:35.071Z"
     },
     "utahraptor-giant-raptor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "506a608ed6cb5c1a028146dee2a7f128d60e79b28c8710cb515601adaf212ff3",
-      "updated_at": "2026-10-22T16:23:32.522Z"
+      "updated_at": "2026-10-22T17:07:35.106Z"
     },
     "baryonyx-fish-eating-claw": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "03eb862ef09e65de4b2a864628fb6f5b10ed43d82e4450782efed61ac7460a23",
-      "updated_at": "2026-10-22T16:27:43.520Z"
+      "updated_at": "2026-10-22T17:07:35.141Z"
     },
     "iguanodon-thumb-spiked-grazer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "386afb6523b8fc1a04216b3cfedb3f6804443d3ff3515ab6e98f4fbdc749a605",
-      "updated_at": "2026-10-22T16:30:46.062Z"
+      "updated_at": "2026-10-22T17:07:35.174Z"
     },
     "sinosauropteryx-feathered-find": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b648e4b34b66c939050ea9ae5f25fb93d27f753aba734eb8797a4430535eb68c",
-      "updated_at": "2026-10-22T16:35:20.770Z"
+      "updated_at": "2026-10-22T17:07:35.208Z"
     },
     "microraptor-four-winged-glider": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1c4823ed56dde6815a286c7ded25e32dd426aa696cc08e9e0d6afdf6251312a1",
-      "updated_at": "2026-10-22T16:40:23.058Z"
+      "updated_at": "2026-10-22T17:07:35.241Z"
     },
     "deinonychus-terrible-claw": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7ff72b656f7cb4bcbcfa7325a1763b0340876d353afd4fc4940584cca9c0d337",
-      "updated_at": "2026-10-22T16:45:34.033Z"
+      "updated_at": "2026-10-22T17:07:35.277Z"
     },
     "spinosaurus-sailback-swimmer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c14e51745fcc9d16f0cdc69be20e99b83387175071ee6d82aa1cab04cc1491ab",
-      "updated_at": "2026-10-22T16:49:42.073Z"
+      "updated_at": "2026-10-22T17:07:35.313Z"
     },
     "giganotosaurus-giant-of-the-south": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b24393b26d1f6380a2d25a3e98fa87c0f1959093d129c4227bec808c24099665",
-      "updated_at": "2026-10-22T16:54:40.699Z"
+      "updated_at": "2026-10-22T17:07:35.348Z"
     },
     "argentinosaurus-colossal-titan": {
       "state": "pending",
