@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T04:18:15.900Z",
+  "updated_at": "2026-10-22T04:22:54.378Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-22T04:18:15.900Z"
     },
     "hammett-the-maltese-falcon": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "634bb8d6978d5e65f2b3ced602e6deee168c560bc50880aa5e0cc296556c7aec",
+      "updated_at": "2026-10-22T04:22:54.378Z"
     },
     "christie-murder-on-the-orient-express-novel": {
       "state": "pending",
