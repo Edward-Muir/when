@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T16:49:42.073Z",
+  "updated_at": "2026-10-22T16:54:40.699Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,10 +128,11 @@
       "updated_at": "2026-10-22T16:49:42.073Z"
     },
     "giganotosaurus-giant-of-the-south": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b24393b26d1f6380a2d25a3e98fa87c0f1959093d129c4227bec808c24099665",
+      "updated_at": "2026-10-22T16:54:40.699Z"
     },
     "argentinosaurus-colossal-titan": {
       "state": "pending",
