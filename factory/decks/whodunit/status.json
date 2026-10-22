@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:30:40.803Z",
+  "updated_at": "2026-10-22T08:35:10.285Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -212,10 +212,11 @@
       "updated_at": "2026-10-22T08:30:40.803Z"
     },
     "galbraith-cormoran-strike-debut": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6f0baa47169d279859eca0fd2eafc460eda672704f5526ad354a92a126d9ab1d",
+      "updated_at": "2026-10-22T08:35:10.285Z"
     },
     "osman-thursday-murder-club": {
       "state": "pending",
