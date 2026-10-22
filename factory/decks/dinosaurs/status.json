@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T17:07:35.348Z",
+  "updated_at": "2026-10-22T19:12:12.684Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-22T17:07:35.348Z"
     },
     "argentinosaurus-colossal-titan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cf8adc5f0e341b3fcdcf9c827da37e8761d6148868f6a5e1be41208363baff70",
+      "updated_at": "2026-10-22T19:12:12.684Z"
     },
     "hadrosaurus-duck-bill": {
       "state": "pending",
