@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:09:09.191Z",
+  "updated_at": "2026-10-22T08:13:22.339Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -177,10 +177,11 @@
       "updated_at": "2026-10-22T08:09:09.191Z"
     },
     "tartt-the-secret-history": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "37a925831c9f2fe587d3f0df6deac7aafbe54da6a801838d24895ebdd76c1936",
+      "updated_at": "2026-10-22T08:13:22.339Z"
     },
     "mccall-smith-no1-ladies-detective-agency": {
       "state": "pending",
