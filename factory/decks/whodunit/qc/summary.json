@@ -196,11 +196,11 @@
     "description": "A dim, upscale living room in oil-paint style. A glass coffee table is shattered with shards across a dark patterned rug, an ottoman is overturned, and a cream envelope with tiny illegible cursive lies on the rug. Tall windows show bare trees and water at dusk, with a modern kitchen behind. The painting fills the frame with no border and no blood."
   },
   "galbraith-cormoran-strike-debut": {
-    "state": "qc-fail",
-    "reason": "The police tape across the street carries legible lettering (POLICE, repeated), and there is a small plate on the left car. Repaint the tape plain, without words.",
+    "state": "qc-pass",
+    "reason": "",
     "by": "recheck",
-    "attempts": 1,
-    "description": "A snowy night street of grey terrace houses with wrought-iron balconies and a glowing street lamp. Parked cars and a police car with a blue light sit behind blue-and-white tape printed with the word POLICE. On the right, a red-brick building has a lit upper window full of books and a desk lamp, and a shop window below shows guitars. Snow falls. No people, no frame."
+    "attempts": 2,
+    "description": "A snowy night street lined with cream Georgian-style town houses, a glowing black lamppost, modern parked cars dusted with snow, and red-and-white cordon tape strung along black iron railings. A balcony high on the facade has a dark tangle of ironwork or foliage on it. No people, no frame, no legible text, nothing gory."
   },
   "osman-thursday-murder-club": {
     "state": "qc-pass",
