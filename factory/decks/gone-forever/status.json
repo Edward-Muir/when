@@ -1,9 +1,9 @@
 {
   "deck": "gone-forever",
   "name": "Gone Forever",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-21T04:19:36.677Z",
-  "updated_at": "2026-10-21T23:17:45.526Z",
+  "updated_at": "2026-10-22T00:06:49.105Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-21T12:11:41.789Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-22T00:06:49.105Z"
     }
   ],
   "slugs": {
@@ -163,25 +167,25 @@
       "updated_at": "2026-10-21T22:07:17.950Z"
     },
     "lonesome-george-dies": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "21f68c34cfa12df4d34b5544bd0c1806159a407cef5fa4fb702695969ea529ac",
-      "updated_at": "2026-10-21T23:10:30.086Z"
+      "updated_at": "2026-10-22T00:06:49.042Z"
     },
     "ivory-billed-woodpecker-proposed-extinct": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1b109f120f2aa1c01e9d4b715a34604a616206f535eeffffd85a45c8c38f2e9e",
-      "updated_at": "2026-10-21T23:14:20.387Z"
+      "updated_at": "2026-10-22T00:06:49.074Z"
     },
     "chinese-paddlefish-declared-extinct": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "035e10a04bce953cff537adb7c372fd63ebaa8ef677374a22b5021564c207f2f",
-      "updated_at": "2026-10-21T23:17:45.526Z"
+      "updated_at": "2026-10-22T00:06:49.105Z"
     }
   }
 }

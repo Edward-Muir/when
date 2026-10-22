@@ -1,0 +1,15 @@
+{
+  "slug": "ivory-billed-woodpecker-proposed-extinct",
+  "description": "A black-and-white woodpecker with a red crest and a long pale bill clings to a rough, peeling dead tree trunk. Behind it, a dark swamp with hanging moss, bare branches and still water. The style is a dim oil painting, with no visible text, frame or people.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
