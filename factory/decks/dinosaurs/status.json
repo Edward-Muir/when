@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T14:54:17.572Z",
+  "updated_at": "2026-10-22T15:13:58.844Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,25 +16,25 @@
   ],
   "slugs": {
     "eoraptor-dawn-dinosaur": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2c636659f034307189077c509c40d1d5a94b4022ba7fcf9a5197b2c1f7f76553",
-      "updated_at": "2026-10-22T14:10:27.652Z"
+      "updated_at": "2026-10-22T15:13:58.643Z"
     },
     "coelophysis-pack-hunter": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "30667f28f107b4d60a3929c5f591cb37d310018e3e81bdd56c24b127eb7b012f",
-      "updated_at": "2026-10-22T14:15:26.239Z"
+      "updated_at": "2026-10-22T15:13:58.675Z"
     },
     "massospondylus-southern-grazer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "76d11a104dc31c2a0b634b7308a0e01adde19b460a1e0e0aafe0ba4a66b4560a",
-      "updated_at": "2026-10-22T14:21:54.567Z"
+      "updated_at": "2026-10-22T15:13:58.706Z"
     },
     "cryolophosaurus-frozen-crest": {
       "state": "pending",
@@ -43,32 +43,32 @@
       "sha256": null
     },
     "dilophosaurus-twin-crest": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "44b658f01fb80bde82a2341a59e74eea9c56306e237b7d7c27b1906b5703a93c",
-      "updated_at": "2026-10-22T14:35:19.270Z"
+      "updated_at": "2026-10-22T15:13:58.745Z"
     },
     "megalosaurus-great-lizard": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ef14e31b046f6f8d0041ead6683d8dfc3b161538f01da14fcb7ffdfc2223058b",
-      "updated_at": "2026-10-22T14:40:47.953Z"
+      "updated_at": "2026-10-22T15:13:58.780Z"
     },
     "mamenchisaurus-long-necked-giant": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "12e9a0faa2ff90dd360c3cba35a0ca1a82fb4e33a8b54a4733f6ed5b86f1288c",
-      "updated_at": "2026-10-22T14:48:52.410Z"
+      "updated_at": "2026-10-22T15:13:58.811Z"
     },
     "brontosaurus-thunder-lizard": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d86828d89fa4944a492d45b1154c51ce44549301571e3e900d0f8ad4e730eb8e",
-      "updated_at": "2026-10-22T14:54:17.572Z"
+      "updated_at": "2026-10-22T15:13:58.844Z"
     },
     "diplodocus-whip-tailed-giant": {
       "state": "pending",
