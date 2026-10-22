@@ -1,0 +1,15 @@
+{
+  "slug": "doyle-hound-of-the-baskervilles",
+  "description": "A huge black shaggy hound with glowing orange eyes and open jaws bounds across a misty, rocky moor under a stormy sky. In the background stands a lit, gabled stone manor, and a small figure in a dark coat runs across the heath below it. The scene is a painted, dark, moody landscape with no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

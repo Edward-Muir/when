@@ -1,0 +1,15 @@
+{
+  "slug": "flynn-gone-girl",
+  "description": "A dim, upscale living room in oil-paint style. A glass coffee table is shattered with shards across a dark patterned rug, an ottoman is overturned, and a cream envelope with tiny illegible cursive lies on the rug. Tall windows show bare trees and water at dusk, with a modern kitchen behind. The painting fills the frame with no border and no blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

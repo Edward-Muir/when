@@ -1,0 +1,15 @@
+{
+  "slug": "cornwell-scarpetta-postmortem",
+  "description": "A dark, moody laboratory interior painted in oil-like brushwork. A compound microscope with two eyepieces sits on a long steel bench, lit by a thin rainbow-tinted light beam. A white lab coat hangs on a hook at left, and a window with a dim view is behind. Glass flasks, test tubes, specimen jars and a small instrument sit on the bench and on shelves to the right, with papers at the left edge. No people, no text or labels visible, and the painting fills the whole frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

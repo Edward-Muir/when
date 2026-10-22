@@ -1,0 +1,26 @@
+{
+  "id": "whodunit",
+  "name": "Whodunit",
+  "scope": "Yes if it is a detective or crime novel, or a famous sleuth's debut",
+  "boundary": "Whodunit: invented crimes and sleuths; real police and prisons go to Crime & Punishment, horror to Fright Night, spies to Spy Games.",
+  "neighbours": ["crime-and-punishment", "fright-night", "spy-games"],
+  "grid": {
+    "categories": ["writing", "media"],
+    "eras": ["industrial", "worldWars", "coldWar"],
+    "regions": ["Europe", "North America"]
+  },
+  "example_beats": [
+    "Poe's Murders in the Rue Morgue (1841)",
+    "The Moonstone (1868)",
+    "Sherlock Holmes debuts (1887)",
+    "Poirot debuts in The Mysterious Affair at Styles (1920)",
+    "The Maltese Falcon (1930)",
+    "Perry Mason debuts (1933)",
+    "Murder on the Orient Express (1934)",
+    "The Big Sleep introduces Philip Marlowe (1939)",
+    "Inspector Morse debuts (1975)",
+    "The Da Vinci Code (2003)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
