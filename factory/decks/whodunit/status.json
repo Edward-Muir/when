@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T04:08:30.351Z",
+  "updated_at": "2026-10-22T04:12:48.609Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-22T03:10:42.641Z"
     },
     "holmes-strand-scandal-in-bohemia": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7083a1a8d5a83d0dd614212388eacba29057617bba2394e7ff486ad921707e27",
+      "updated_at": "2026-10-22T04:12:48.609Z"
     },
     "doyle-hound-of-the-baskervilles": {
       "state": "qc-pass",
