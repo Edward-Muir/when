@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T03:10:42.763Z",
+  "updated_at": "2026-10-22T04:08:30.351Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-22T03:10:42.547Z"
     },
     "dickens-bleak-house-inspector-bucket": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8a76e4a35abf435d9a0d2ae9bfd03ea3df05d839e7276ffa07ea8f8aec323921",
+      "updated_at": "2026-10-22T04:08:30.351Z"
     },
     "collins-woman-in-white": {
       "state": "qc-pass",
