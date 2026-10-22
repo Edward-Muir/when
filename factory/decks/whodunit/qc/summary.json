@@ -54,5 +54,75 @@
     "by": "recheck",
     "attempts": 1,
     "description": "A mustached man in a dark three-piece suit with bow tie and watch chain bends over a bedside table in a four-poster bedroom, studying a teacup with a magnifying glass. A lit candle in a brass holder, a small medicine bottle, a book and small objects sit on the table, with a small dark red spill beside the saucer. Oil-painting style, edge to edge, no text, no border."
+  },
+  "dickens-bleak-house-inspector-bucket": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a long dark overcoat and bowler hat stands on a cobbled street beside an arched wooden door with a brass plate and knocker. He raises one index finger and looks toward the viewer. A lit lantern sits on the cobbles at his feet, and a gas lamp glows through fog on the right. The palette is warm brown and amber, in painterly oil style."
+  },
+  "holmes-strand-scandal-in-bohemia": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark oil-style painting of a gaunt man in a caped dark overcoat, in profile, holding a small framed photograph of a woman. Behind him a masked figure in a fur-collared coat stands by a high-backed armchair. The room is cluttered Victorian with shelves of bric-a-brac, framed pictures, patterned wallpaper, a fireplace with a fire, and drifting smoke. No visible text, and the painting fills the image edge to edge."
+  },
+  "sayers-lord-peter-wimsey-debut": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a black tailcoat, white waistcoat and black bow tie leans over a white clawfoot bathtub, looking down at a pair of pince-nez on the rim. He wears a monocle on a dark ribbon. Behind him are dark damask wallpaper, a grey subway-tile wall, brass pipes and a faucet, and a lit gas-style lamp on the right. The style is a dark, loose oil painting. The image fills the frame edge to edge, with no text except a tiny mark in the bottom-right corner."
+  },
+  "christie-murder-of-roger-ackroyd": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, richly furnished wood-panelled study. A high-backed leather wingback chair stands turned away from a mahogany desk, with its back to the viewer. A brass-fitted cylinder recording device sits on a small side table by a tall window with a heavy curtain. Papers lie on a patterned red rug, and a framed portrait hangs in the upper left. No people or text are visible."
+  },
+  "hammett-the-maltese-falcon": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A glossy black bird statuette stands on a desk beside a lit green-shaded banker's lamp. A man in a fedora and trench coat stands in the dim background, with cigarette smoke curling up and venetian-blind shadows across the wall. A black rotary telephone and an ashtray sit at right, and papers lie on the left. The scene is an oil-painting style, filling the frame edge to edge with no border."
+  },
+  "christie-murder-on-the-orient-express-novel": {
+    "state": "qc-fail",
+    "reason": "Painted lettering runs along the blue carriage side, looking like a company name with smaller marks beneath. Repaint the carriage with plain panels and no lettering or plaques.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A black steam locomotive pulling dark blue passenger carriages through deep snow at night in a mountain valley, smoke rising, one carriage window lit gold. Snowy pines, peaks and a starry cloudy sky; oil-paint style, edge to edge, no figures. Painted lettering in a band on the carriage side reads roughly like a railway company name, plus smaller marks below it."
+  },
+  "chandler-the-big-sleep-marlowe": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted glasshouse full of orchids and hanging baskets under a slanted glass roof, with mist drifting through. On the left an elderly man with white hair sits in a wheelchair wrapped in a plaid blanket. On the right a man in a dark fedora and long trench coat stands with his back partly turned, looking toward the old man. No visible text, border or frame; the painting fills the canvas edge to edge."
+  },
+  "spillane-mike-hammer-i-the-jury": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a tan trench coat and fedora stands in a dim interior, a revolver held loosely at his side, looking off with a hard expression. Behind him a window shows a night city of glowing lights, and a smoky hallway recedes to the right. Painterly, loose brushwork, no visible text or frame."
+  },
+  "macdonald-lew-archer-moving-target": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a fedora and dark trench coat stands on a dirt shoulder at a cliff edge, looking up. Beside him is a dark 1940s sedan on a winding coastal road with a guardrail. Above, a white Spanish-style mansion with a red tile roof sits on a hillside among palms, with the ocean and surf to the right. The painting is an oil-style scene with warm, hazy light and no visible text or frame."
+  },
+  "highsmith-talented-mr-ripley": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark-haired man in a rolled white shirt and dark trousers stands in a wooden rowboat with an outboard motor, gripping an oar in both hands on deep blue choppy water. Behind him a hillside of white Mediterranean houses climbs above an arched stone wall, with steep cliffs and a small tower on the shore. Painterly, loose brushwork. No visible text, border or frame."
   }
 }

@@ -1,0 +1,20 @@
+{
+  "slug": "hammett-the-maltese-falcon",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "634bb8d6978d5e65f2b3ced602e6deee168c560bc50880aa5e0cc296556c7aec",
+  "dhash": "4a4271e9cc919879",
+  "nearest": {
+    "deck": {
+      "slug": "poe-murders-rue-morgue",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "birth-thucydides",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

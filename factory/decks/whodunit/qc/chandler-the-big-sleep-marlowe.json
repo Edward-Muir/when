@@ -1,0 +1,15 @@
+{
+  "slug": "chandler-the-big-sleep-marlowe",
+  "description": "A painted glasshouse full of orchids and hanging baskets under a slanted glass roof, with mist drifting through. On the left an elderly man with white hair sits in a wheelchair wrapped in a plaid blanket. On the right a man in a dark fedora and long trench coat stands with his back partly turned, looking toward the old man. No visible text, border or frame; the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

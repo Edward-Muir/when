@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T04:43:02.970Z",
+  "updated_at": "2026-10-22T05:07:02.064Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,11 +23,11 @@
       "updated_at": "2026-10-22T03:10:42.547Z"
     },
     "dickens-bleak-house-inspector-bucket": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8a76e4a35abf435d9a0d2ae9bfd03ea3df05d839e7276ffa07ea8f8aec323921",
-      "updated_at": "2026-10-22T04:08:30.351Z"
+      "updated_at": "2026-10-22T05:07:01.797Z"
     },
     "collins-woman-in-white": {
       "state": "qc-pass",
@@ -51,11 +51,11 @@
       "updated_at": "2026-10-22T03:10:42.641Z"
     },
     "holmes-strand-scandal-in-bohemia": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7083a1a8d5a83d0dd614212388eacba29057617bba2394e7ff486ad921707e27",
-      "updated_at": "2026-10-22T04:12:48.609Z"
+      "updated_at": "2026-10-22T05:07:01.827Z"
     },
     "doyle-hound-of-the-baskervilles": {
       "state": "qc-pass",
@@ -86,60 +86,60 @@
       "updated_at": "2026-10-22T03:10:42.763Z"
     },
     "sayers-lord-peter-wimsey-debut": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cdbfc95d52fa06a59650b858531a10b1f3d275decb816a4848ccfb8f333a3613",
-      "updated_at": "2026-10-22T04:15:12.837Z"
+      "updated_at": "2026-10-22T05:07:01.857Z"
     },
     "christie-murder-of-roger-ackroyd": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "dd7edb578f4561dd1586ef905bb40167408f6d7af146678a40e6ca7bf8082536",
-      "updated_at": "2026-10-22T04:18:15.900Z"
+      "updated_at": "2026-10-22T05:07:01.887Z"
     },
     "hammett-the-maltese-falcon": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "634bb8d6978d5e65f2b3ced602e6deee168c560bc50880aa5e0cc296556c7aec",
-      "updated_at": "2026-10-22T04:22:54.378Z"
+      "updated_at": "2026-10-22T05:07:01.916Z"
     },
     "christie-murder-on-the-orient-express-novel": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Painted lettering runs along the blue carriage side, looking like a company name with smaller marks beneath. Repaint the carriage with plain panels and no lettering or plaques.",
       "sha256": "9c554735ee345eb7cbcb47c5c58a558fd7b83c273c15e3547885b6872223d50b",
-      "updated_at": "2026-10-22T04:26:15.363Z"
+      "updated_at": "2026-10-22T05:07:01.945Z"
     },
     "chandler-the-big-sleep-marlowe": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8301ceee70cd1f6e56b71ca98586b30831c48a60e28cf7eb33a09cbc1437bc09",
-      "updated_at": "2026-10-22T04:29:44.213Z"
+      "updated_at": "2026-10-22T05:07:01.975Z"
     },
     "spillane-mike-hammer-i-the-jury": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "49cd60bcbc02b1daf8fec071e7c1c54c62a86da28d25f48bc02ada6dfaf49d40",
-      "updated_at": "2026-10-22T04:32:11.603Z"
+      "updated_at": "2026-10-22T05:07:02.004Z"
     },
     "macdonald-lew-archer-moving-target": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "470ac2978a3544d85b8be3bfcdb3e3f81adfcbe7765304683bb153dc15f3e91a",
-      "updated_at": "2026-10-22T04:35:05.535Z"
+      "updated_at": "2026-10-22T05:07:02.034Z"
     },
     "highsmith-talented-mr-ripley": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "598685c00e0752c3d5ec9b353c9b52001b80295988d6cdfa5894e8efb8c70425",
-      "updated_at": "2026-10-22T04:43:02.970Z"
+      "updated_at": "2026-10-22T05:07:02.064Z"
     },
     "james-dalgliesh-cover-her-face": {
       "state": "pending",
