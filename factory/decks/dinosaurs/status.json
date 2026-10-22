@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T14:10:27.652Z",
+  "updated_at": "2026-10-22T14:15:26.239Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-22T14:10:27.652Z"
     },
     "coelophysis-pack-hunter": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "30667f28f107b4d60a3929c5f591cb37d310018e3e81bdd56c24b127eb7b012f",
+      "updated_at": "2026-10-22T14:15:26.239Z"
     },
     "massospondylus-southern-grazer": {
       "state": "pending",
