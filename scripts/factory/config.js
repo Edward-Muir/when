@@ -66,6 +66,11 @@ module.exports = {
   MAX_IN_FLIGHT: 2,
   /** `auto` skips a stage for this long after it ended blocked or failed. */
   BACKOFF_MS: 6 * 60 * 60 * 1000,
+  /**
+   * Stages that are simply tried again next run instead. Gemini recovers within the hour, and a
+   * stalled art batch is cheap to retry (Edward, 2026-10-21). Its daily quota still waits.
+   */
+  NO_BACKOFF: ['art-batch'],
   /** List health runs when its last run is older than this. */
   HEALTH_EVERY_MS: 7 * 24 * 60 * 60 * 1000,
 };

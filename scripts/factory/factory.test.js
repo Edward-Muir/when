@@ -661,19 +661,28 @@ describe('auto: one task, the state machine picks the stage', () => {
   });
 
   it('backs off a stage that ended blocked or failed, and art that hit the quota until tomorrow', () => {
-    const decks = [deck('a', 'authored', ['pending'])];
-    const blocked = { ...healthy, 'art-batch': ran('blocked', BACKOFF_MS - 60000) };
+    const shipping = [deck('s', 'ready-to-ship', ['qc-pass']), deck('a', 'authored', ['pending'])];
+    const blocked = { ...healthy, ship: ran('blocked', BACKOFF_MS - 60000) };
     assert.equal(
-      pickStage({ decks, next, now, runLog: blocked }).stage,
-      'author',
-      'art waits, the rest carry on'
+      pickStage({ decks: shipping, next, now, runLog: blocked }).stage,
+      'art-batch',
+      'ship waits, the rest carry on'
     );
-    const later = { ...healthy, 'art-batch': ran('failed', BACKOFF_MS + 60000) };
-    assert.equal(pickStage({ decks, next, now, runLog: later }).stage, 'art-batch');
+    const later = { ...healthy, ship: ran('failed', BACKOFF_MS + 60000) };
+    assert.equal(pickStage({ decks: shipping, next, now, runLog: later }).stage, 'ship');
+    const decks = [deck('a', 'authored', ['pending'])];
     const quota = { ...healthy, 'art-batch': ran('quota', 60000) };
     assert.equal(pickStage({ decks, next, now, runLog: quota }).stage, 'author');
     const yesterday = { ...healthy, 'art-batch': ran('quota', 26 * 3600000) };
     assert.equal(pickStage({ decks, next, now, runLog: yesterday }).stage, 'art-batch');
+  });
+
+  it('tries a blocked or failed art batch again on the very next run', () => {
+    const decks = [deck('a', 'art-in-progress', ['pending'])];
+    for (const outcome of ['blocked', 'failed']) {
+      const log = { ...healthy, 'art-batch': ran(outcome, 60000) };
+      assert.equal(pickStage({ decks, next, now, runLog: log }).stage, 'art-batch', outcome);
+    }
   });
 
   it('exits when nothing has work, naming what is waiting', () => {
