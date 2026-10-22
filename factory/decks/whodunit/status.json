@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T02:15:40.003Z",
+  "updated_at": "2026-10-22T02:31:03.657Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -29,10 +29,11 @@
       "sha256": null
     },
     "collins-woman-in-white": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7fcc8215b7b8f21ff4e1086932d19045c59aa656502cd93a7717f8cc04d97037",
+      "updated_at": "2026-10-22T02:31:03.657Z"
     },
     "collins-the-moonstone": {
       "state": "pending",
