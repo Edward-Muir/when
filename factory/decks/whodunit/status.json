@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T02:35:37.179Z",
+  "updated_at": "2026-10-22T02:39:11.931Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -43,10 +43,11 @@
       "updated_at": "2026-10-22T02:35:37.179Z"
     },
     "doyle-study-in-scarlet-holmes": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1b141adf5909d53a1db211dc7b14535880d2a9aa4e54504b00c85074ca05ad14",
+      "updated_at": "2026-10-22T02:39:11.931Z"
     },
     "holmes-strand-scandal-in-bohemia": {
       "state": "pending",
