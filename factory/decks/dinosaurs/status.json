@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T16:40:23.058Z",
+  "updated_at": "2026-10-22T16:45:34.033Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-22T16:40:23.058Z"
     },
     "deinonychus-terrible-claw": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7ff72b656f7cb4bcbcfa7325a1763b0340876d353afd4fc4940584cca9c0d337",
+      "updated_at": "2026-10-22T16:45:34.033Z"
     },
     "spinosaurus-sailback-swimmer": {
       "state": "pending",
