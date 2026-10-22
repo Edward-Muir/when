@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:35:10.285Z",
+  "updated_at": "2026-10-22T08:39:06.977Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -219,10 +219,11 @@
       "updated_at": "2026-10-22T08:35:10.285Z"
     },
     "osman-thursday-murder-club": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "30f86274b58401a718f582a8d668f1a32cc3aba93fabf1e1375e05675e493047",
+      "updated_at": "2026-10-22T08:39:06.977Z"
     }
   }
 }
