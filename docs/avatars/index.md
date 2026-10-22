@@ -229,9 +229,11 @@ empty field, a colour adjective or anything that would be lettered. Edit a perso
 and re-run; progress columns carry over by id.
 
 `--earned` builds the earned portraits' CSV the same way from `earned-personas.json`, with no
-skipped ids, a check that every `achievementId` is a real badge with one portrait, and a research
-line asking for "reference images" rather than photographs: a sirrush or a unicorn has none, so
-each research focus names fossil reconstructions or the classic depictions in art.
+skipped ids and a check that every `achievementId` is a real badge with one portrait. Those
+prompts are **image-only**: `research_prompt` is left empty (the five columns stay, so progress
+carries over by id), which means send the image prompt alone in a fresh chat. A portrait is a
+stylised bust rather than a historical scene, so the priming step the event cards depend on adds
+nothing; the base portraits were made with it, the earned ones without.
 
 ### It must work very small
 
