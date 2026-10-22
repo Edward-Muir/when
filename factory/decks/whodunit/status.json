@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:23:44.322Z",
+  "updated_at": "2026-10-22T08:26:55.444Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -198,10 +198,11 @@
       "updated_at": "2026-10-22T08:23:44.322Z"
     },
     "larsson-girl-with-the-dragon-tattoo": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "44349b368e263d6fcbd3d565ec70890ead0f8cb0a46a3aab674aeaf87beebc55",
+      "updated_at": "2026-10-22T08:26:55.444Z"
     },
     "flynn-gone-girl": {
       "state": "pending",
