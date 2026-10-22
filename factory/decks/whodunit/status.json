@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T06:25:59.403Z",
+  "updated_at": "2026-10-22T07:38:36.621Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,11 +107,11 @@
       "updated_at": "2026-10-22T05:07:01.916Z"
     },
     "christie-murder-on-the-orient-express-novel": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Painted lettering runs along the blue carriage side, looking like a company name with smaller marks beneath. Repaint the carriage with plain panels and no lettering or plaques.",
+      "reason": null,
       "sha256": "9817ec55f56233981ec23a872d6a99b8b872d14f7b21c62e27d3f3c6d1ee85e2",
-      "updated_at": "2026-10-22T06:11:33.028Z"
+      "updated_at": "2026-10-22T07:38:36.493Z"
     },
     "chandler-the-big-sleep-marlowe": {
       "state": "qc-pass",
@@ -142,32 +142,32 @@
       "updated_at": "2026-10-22T05:07:02.064Z"
     },
     "james-dalgliesh-cover-her-face": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7c6892c22285124fc538877c81ccb9417e9513706b1be959555701e28a07171b",
-      "updated_at": "2026-10-22T06:16:08.456Z"
+      "updated_at": "2026-10-22T07:38:36.525Z"
     },
     "dexter-inspector-morse-debut": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "80167acb8d9abace146e5c3eb928a8a3957655121a5baa36a17383ae3bb29531",
-      "updated_at": "2026-10-22T06:19:07.299Z"
+      "updated_at": "2026-10-22T07:38:36.555Z"
     },
     "eco-the-name-of-the-rose": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "12887653517c48d256490b1b6076eae9e1f64a3025dc91791511d435d430efe1",
-      "updated_at": "2026-10-22T06:22:40.424Z"
+      "updated_at": "2026-10-22T07:38:36.588Z"
     },
     "grafton-a-is-for-alibi": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bef92d6af2b4afdb91c49311267bb5f9f693bd70d19dde851e686a0910e5868b",
-      "updated_at": "2026-10-22T06:25:59.403Z"
+      "updated_at": "2026-10-22T07:38:36.621Z"
     },
     "cornwell-scarpetta-postmortem": {
       "state": "pending",

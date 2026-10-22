@@ -91,11 +91,11 @@
     "description": "A glossy black bird statuette stands on a desk beside a lit green-shaded banker's lamp. A man in a fedora and trench coat stands in the dim background, with cigarette smoke curling up and venetian-blind shadows across the wall. A black rotary telephone and an ashtray sit at right, and papers lie on the left. The scene is an oil-painting style, filling the frame edge to edge with no border."
   },
   "christie-murder-on-the-orient-express-novel": {
-    "state": "qc-fail",
-    "reason": "Painted lettering runs along the blue carriage side, looking like a company name with smaller marks beneath. Repaint the carriage with plain panels and no lettering or plaques.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A black steam locomotive pulling dark blue passenger carriages through deep snow at night in a mountain valley, smoke rising, one carriage window lit gold. Snowy pines, peaks and a starry cloudy sky; oil-paint style, edge to edge, no figures. Painted lettering in a band on the carriage side reads roughly like a railway company name, plus smaller marks below it."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A dark steam locomotive with a snow-covered dark blue carriage runs through a snowy mountain pass at night. Thick smoke rises from the funnel into a dark sky, and one carriage window glows warm amber. Pine forest and rocky peaks frame the scene, with deep snowdrifts in the foreground. The painting is loose, thick oil brushwork with no visible text, border or frame."
   },
   "chandler-the-big-sleep-marlowe": {
     "state": "qc-pass",
@@ -124,5 +124,33 @@
     "by": "review",
     "attempts": 1,
     "description": "A dark-haired man in a rolled white shirt and dark trousers stands in a wooden rowboat with an outboard motor, gripping an oar in both hands on deep blue choppy water. Behind him a hillside of white Mediterranean houses climbs above an arched stone wall, with steep cliffs and a small tower on the shore. Painterly, loose brushwork. No visible text, border or frame."
+  },
+  "james-dalgliesh-cover-her-face": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a long dark overcoat stands in an open doorway holding a grey felt hat, looking into a dim room. A bed with an iron frame sits at left, and a lamp with a steaming mug and a closed book sit on a wooden nightstand. The wallpaper is patterned and the lighting is warm and low."
+  },
+  "dexter-inspector-morse-debut": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A black vintage saloon car, with a chrome grille and bumper, sits on a wet cobbled street at dusk. Behind it are grey stone buildings with a gothic spire, a domed rotunda and lit lamp posts. On the right, a pub doorway glows warm, and a small hanging sign has no legible text. The scene is painted in a moody, textured oil style, and there are no people."
+  },
+  "eco-the-name-of-the-rose": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting of a hooded, bearded monk in a brown habit holding a lit lantern up in a vaulted stone library, with rows of old books chained to the shelves on both sides. Stone staircases climb through the arches behind him. A young boy in a dark hooded habit stands at his right shoulder, looking alarmed. No text or frame is visible."
+  },
+  "grafton-a-is-for-alibi": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painted night scene of a cluttered wooden desk in a dim room. An open metal index-card box sits on the left, a black manual typewriter with a sheet in it sits center, and a black rotary telephone is at right. A revolver, a coffee mug, loose papers and an ashtray lie on the desk. Through a window with venetian blinds, palm trees and street lamps line a dark beach road, with the sea beyond. No people are visible."
   }
 }
