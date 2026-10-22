@@ -3,7 +3,7 @@
   "name": "Dinosaurs",
   "stage": "art-in-progress",
   "created_at": "2026-10-22T13:19:56.694Z",
-  "updated_at": "2026-10-22T16:23:32.522Z",
+  "updated_at": "2026-10-22T16:27:43.520Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-22T16:23:32.522Z"
     },
     "baryonyx-fish-eating-claw": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "03eb862ef09e65de4b2a864628fb6f5b10ed43d82e4450782efed61ac7460a23",
+      "updated_at": "2026-10-22T16:27:43.520Z"
     },
     "iguanodon-thumb-spiked-grazer": {
       "state": "pending",
