@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T04:29:44.213Z",
+  "updated_at": "2026-10-22T04:32:11.603Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-22T04:29:44.213Z"
     },
     "spillane-mike-hammer-i-the-jury": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "49cd60bcbc02b1daf8fec071e7c1c54c62a86da28d25f48bc02ada6dfaf49d40",
+      "updated_at": "2026-10-22T04:32:11.603Z"
     },
     "macdonald-lew-archer-moving-target": {
       "state": "pending",
