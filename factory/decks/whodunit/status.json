@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T06:22:40.424Z",
+  "updated_at": "2026-10-22T06:25:59.403Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-22T06:22:40.424Z"
     },
     "grafton-a-is-for-alibi": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bef92d6af2b4afdb91c49311267bb5f9f693bd70d19dde851e686a0910e5868b",
+      "updated_at": "2026-10-22T06:25:59.403Z"
     },
     "cornwell-scarpetta-postmortem": {
       "state": "pending",
