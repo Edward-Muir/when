@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:13:22.339Z",
+  "updated_at": "2026-10-22T08:19:46.720Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-10-22T08:13:22.339Z"
     },
     "mccall-smith-no1-ladies-detective-agency": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3c67bacb6657c26c676124756fe8f88394be46884f6373788697f020cdbd75dc",
+      "updated_at": "2026-10-22T08:19:46.720Z"
     },
     "brown-the-da-vinci-code": {
       "state": "pending",
