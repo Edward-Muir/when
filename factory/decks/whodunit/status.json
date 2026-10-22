@@ -1,21 +1,26 @@
 {
   "deck": "whodunit",
   "name": "Whodunit",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-21T06:21:49.322Z",
+  "updated_at": "2026-10-22T02:15:40.003Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-21T06:21:49.322Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-22T02:15:40.003Z"
     }
   ],
   "slugs": {
     "poe-murders-rue-morgue": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9a343d6466c8d46875764039c8d3762874ce34cf329e2bbf3f137e771ecda8fd",
+      "updated_at": "2026-10-22T02:15:40.003Z"
     },
     "dickens-bleak-house-inspector-bucket": {
       "state": "pending",
