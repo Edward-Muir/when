@@ -1,0 +1,15 @@
+{
+  "slug": "last-wild-barbary-lion-shot",
+  "description": "A large lion with a dark, heavy mane stands on a snowy rocky outcrop under twisted cedar trees at dusk. Below on the left, a tiny dark silhouette of a figure with a rifle stands on a winding trail. The painting is a painterly oil style with a dim, cloudy sky, and it fills the whole frame with no visible border or text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
