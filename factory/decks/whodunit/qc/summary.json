@@ -152,5 +152,61 @@
     "by": "review",
     "attempts": 1,
     "description": "An oil-painted night scene of a cluttered wooden desk in a dim room. An open metal index-card box sits on the left, a black manual typewriter with a sheet in it sits center, and a black rotary telephone is at right. A revolver, a coffee mug, loose papers and an ashtray lie on the desk. Through a window with venetian blinds, palm trees and street lamps line a dark beach road, with the sea beyond. No people are visible."
+  },
+  "cornwell-scarpetta-postmortem": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, moody laboratory interior painted in oil-like brushwork. A compound microscope with two eyepieces sits on a long steel bench, lit by a thin rainbow-tinted light beam. A white lab coat hangs on a hook at left, and a window with a dim view is behind. Glass flasks, test tubes, specimen jars and a small instrument sit on the bench and on shelves to the right, with papers at the left edge. No people, no text or labels visible, and the painting fills the whole frame."
+  },
+  "tartt-the-secret-history": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Four men in dark wool overcoats and one in a brown coat with a scarf stand in a snowy birch wood, looking down into a ravine. One young man crouches at the edge reaching toward the snow. A dark hardbound book lies in the snow in the foreground. Overcast grey sky, painterly brushwork, no visible text."
+  },
+  "mccall-smith-no1-ladies-detective-agency": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A single-storey blue-washed building with a corrugated metal roof and a open veranda sits under a large bare acacia tree at dusk. A small white van is parked to the left under the branches, and a wooden table on the veranda holds a teapot and cups. Dry red earth in the foreground, with a rocky mountain behind. No people, no visible text."
+  },
+  "brown-the-da-vinci-code": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A glass pyramid with a lit interior rises in the middle of a stone courtyard at night, flanked by classical stone building wings with lit windows. The pavement is wet and reflects the lights, and the sky is dark and stormy. There are no people, no visible text, and no frame. The style is a painterly, dark-toned digital painting."
+  },
+  "larsson-girl-with-the-dragon-tattoo": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim wooden room at night. A glowing open laptop sits on a rough wooden desk beside stacks and scattered piles of black-and-white photographs, an ashtray with cigarette butts and a mug of coffee. Through a window, two motorcycles stand in snow under a pale moon, and a fireplace glows at the right edge. No people and no visible text."
+  },
+  "flynn-gone-girl": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dim, upscale living room in oil-paint style. A glass coffee table is shattered with shards across a dark patterned rug, an ottoman is overturned, and a cream envelope with tiny illegible cursive lies on the rug. Tall windows show bare trees and water at dusk, with a modern kitchen behind. The painting fills the frame with no border and no blood."
+  },
+  "galbraith-cormoran-strike-debut": {
+    "state": "qc-fail",
+    "reason": "The police tape across the street carries legible lettering (POLICE, repeated), and there is a small plate on the left car. Repaint the tape plain, without words.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A snowy night street of grey terrace houses with wrought-iron balconies and a glowing street lamp. Parked cars and a police car with a blue light sit behind blue-and-white tape printed with the word POLICE. On the right, a red-brick building has a lit upper window full of books and a desk lamp, and a shop window below shows guitars. Snow falls. No people, no frame."
+  },
+  "osman-thursday-murder-club": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, cozy sitting room with four wingback armchairs around a low square table. A rain-streaked window with a lit table lamp sits behind them. The table holds a teapot, cups, a half-finished jigsaw puzzle and a stack of envelopes. No people, no visible text, and no frame or wall edge."
   }
 }

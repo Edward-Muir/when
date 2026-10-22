@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:39:06.977Z",
+  "updated_at": "2026-10-22T09:07:29.337Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,60 +170,60 @@
       "updated_at": "2026-10-22T07:38:36.621Z"
     },
     "cornwell-scarpetta-postmortem": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a5048b7b1afaaeb2a88108734fa952fac0f1912a1f47dd20e49639631569a980",
-      "updated_at": "2026-10-22T08:09:09.191Z"
+      "updated_at": "2026-10-22T09:07:29.101Z"
     },
     "tartt-the-secret-history": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "37a925831c9f2fe587d3f0df6deac7aafbe54da6a801838d24895ebdd76c1936",
-      "updated_at": "2026-10-22T08:13:22.339Z"
+      "updated_at": "2026-10-22T09:07:29.135Z"
     },
     "mccall-smith-no1-ladies-detective-agency": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3c67bacb6657c26c676124756fe8f88394be46884f6373788697f020cdbd75dc",
-      "updated_at": "2026-10-22T08:19:46.720Z"
+      "updated_at": "2026-10-22T09:07:29.166Z"
     },
     "brown-the-da-vinci-code": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "044fbf6d8d45820563d4ee9fee425db81d5ef16636a84c1379c34d10e5701014",
-      "updated_at": "2026-10-22T08:23:44.322Z"
+      "updated_at": "2026-10-22T09:07:29.202Z"
     },
     "larsson-girl-with-the-dragon-tattoo": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "44349b368e263d6fcbd3d565ec70890ead0f8cb0a46a3aab674aeaf87beebc55",
-      "updated_at": "2026-10-22T08:26:55.444Z"
+      "updated_at": "2026-10-22T09:07:29.236Z"
     },
     "flynn-gone-girl": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "87c3c1c2bc5bbe7c7be90623d9c5387e1ee4d3437d92e03f747fe3fc8bc1721a",
-      "updated_at": "2026-10-22T08:30:40.803Z"
+      "updated_at": "2026-10-22T09:07:29.270Z"
     },
     "galbraith-cormoran-strike-debut": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The police tape across the street carries legible lettering (POLICE, repeated), and there is a small plate on the left car. Repaint the tape plain, without words.",
       "sha256": "6f0baa47169d279859eca0fd2eafc460eda672704f5526ad354a92a126d9ab1d",
-      "updated_at": "2026-10-22T08:35:10.285Z"
+      "updated_at": "2026-10-22T09:07:29.303Z"
     },
     "osman-thursday-murder-club": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "30f86274b58401a718f582a8d668f1a32cc3aba93fabf1e1375e05675e493047",
-      "updated_at": "2026-10-22T08:39:06.977Z"
+      "updated_at": "2026-10-22T09:07:29.337Z"
     }
   }
 }
