@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T08:19:46.720Z",
+  "updated_at": "2026-10-22T08:23:44.322Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-10-22T08:19:46.720Z"
     },
     "brown-the-da-vinci-code": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "044fbf6d8d45820563d4ee9fee425db81d5ef16636a84c1379c34d10e5701014",
+      "updated_at": "2026-10-22T08:23:44.322Z"
     },
     "larsson-girl-with-the-dragon-tattoo": {
       "state": "pending",
