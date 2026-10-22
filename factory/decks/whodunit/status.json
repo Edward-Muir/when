@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T04:35:05.535Z",
+  "updated_at": "2026-10-22T04:43:02.970Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-22T04:35:05.535Z"
     },
     "highsmith-talented-mr-ripley": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "598685c00e0752c3d5ec9b353c9b52001b80295988d6cdfa5894e8efb8c70425",
+      "updated_at": "2026-10-22T04:43:02.970Z"
     },
     "james-dalgliesh-cover-her-face": {
       "state": "pending",
