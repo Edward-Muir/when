@@ -29,9 +29,12 @@ never a skipped row.
 
 The pick-only creatures in avatars.json's `earned` list (one per achievement), from
 scripts/avatars/earned-personas.json, into docs/avatars/art/earned_prompts.csv. Same template,
-same rules, same contract. None is skipped, every `achievementId` must be a badge id in
-src/data/achievements.ts, and no badge may have two. Their research line asks for reference
-images rather than photographs, since a unicorn or a sirrush has none.
+same rules, same five-column contract. None is skipped, every `achievementId` must be a badge id in
+src/data/achievements.ts, and no badge may have two.
+
+They are image-only: `research_prompt` is left empty, which means send the image prompt alone,
+in a fresh chat. A portrait is a stylised bust, not a historical scene, so the priming step the
+event cards rely on adds nothing; earned personas have no `research_focus`.
 
 ## A dark painted backdrop, not a cut-out
 
@@ -78,12 +81,6 @@ RESEARCH = (
     "Search the web for reference photographs of the {animal}, and for Old Master and period "
     "portraits of {a_role}. Study the {research_focus}."
 )
-# Dinosaurs and creatures of legend have no photographs: fossil reconstructions and the classic
-# depictions in art stand in, and the research focus names which.
-RESEARCH_EARNED = (
-    "Search the web for reference images of the {animal}, and for Old Master and period "
-    "portraits of {a_role}. Study the {research_focus}."
-)
 
 # The card rules carry over: no colour adjectives (material nouns such as bronze are fine, and
 # colour is left to the research step), and nothing the renderer would letter.
@@ -110,7 +107,7 @@ def load_json(path):
         return json.load(f)
 
 
-def check(animals, personas, skipped):
+def check(animals, personas, skipped, fields):
     """Every animal but the skipped ones has exactly one complete, rule-abiding persona."""
     errors = []
     known = {a["id"] for a in animals}
@@ -127,7 +124,7 @@ def check(animals, personas, skipped):
         if persona is None:
             errors.append(f"{animal_id}: no persona")
             continue
-        for field in FIELDS:
+        for field in fields:
             value = persona.get(field, "")
             if not isinstance(value, str) or not value.strip():
                 errors.append(f"{animal_id}.{field}: empty")
@@ -141,7 +138,7 @@ def check(animals, personas, skipped):
             value = persona.get(field)
             if value is not None and (not isinstance(value, str) or BANNED.search(value)):
                 errors.append(f"{animal_id}.{field}: must be a plain string, got {value!r}")
-        extra = set(persona) - set(FIELDS) - set(OPTIONAL_FIELDS)
+        extra = set(persona) - set(fields) - set(OPTIONAL_FIELDS)
         if extra:
             errors.append(f"{animal_id}: unexpected fields {sorted(extra)}")
     return errors
@@ -183,13 +180,15 @@ def main():
     if args.earned:
         animals = load_json(AVATARS)["earned"]
         personas = load_json(EARNED_PERSONAS)
-        skipped, research, out = set(), RESEARCH_EARNED, args.out or EARNED_OUT
-        errors = check(animals, personas, skipped) + check_badges(animals)
+        # Image-only: no research step, so no research_focus and an empty research_prompt.
+        fields = [f for f in FIELDS if f != "research_focus"]
+        skipped, research, out = set(), None, args.out or EARNED_OUT
+        errors = check(animals, personas, skipped, fields) + check_badges(animals)
     else:
         animals = load_json(AVATARS)["animals"]
         personas = load_json(PERSONAS)
         skipped, research, out = SKIPPED, RESEARCH, args.out or DEFAULT_OUT
-        errors = check(animals, personas, skipped)
+        errors = check(animals, personas, skipped, FIELDS)
     if errors:
         print("\n".join(errors), file=sys.stderr)
         sys.exit(1)
@@ -206,8 +205,8 @@ def main():
         rows.append(
             {
                 "event_name": animal_id,
-                "research_prompt": research.format(
-                    animal=name, a_role=article(p["role"]), **p
+                "research_prompt": (
+                    research.format(animal=name, a_role=article(p["role"]), **p) if research else ""
                 ),
                 "image_prompt": SKELETON.format(animal=name, a_animal=article(name), **p),
                 "image_generated": done.get("image_generated", ""),
