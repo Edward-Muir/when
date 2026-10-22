@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T03:09:07.335Z",
+  "updated_at": "2026-10-22T03:10:42.763Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,11 +16,11 @@
   ],
   "slugs": {
     "poe-murders-rue-morgue": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9a343d6466c8d46875764039c8d3762874ce34cf329e2bbf3f137e771ecda8fd",
-      "updated_at": "2026-10-22T02:15:40.003Z"
+      "updated_at": "2026-10-22T03:10:42.547Z"
     },
     "dickens-bleak-house-inspector-bucket": {
       "state": "pending",
@@ -29,25 +29,25 @@
       "sha256": null
     },
     "collins-woman-in-white": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7fcc8215b7b8f21ff4e1086932d19045c59aa656502cd93a7717f8cc04d97037",
-      "updated_at": "2026-10-22T02:31:03.657Z"
+      "updated_at": "2026-10-22T03:10:42.578Z"
     },
     "collins-the-moonstone": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6ec3029f30e48fa60c640b098703a87c7d8ad67665f5423064649bae3b5bef73",
-      "updated_at": "2026-10-22T02:35:37.179Z"
+      "updated_at": "2026-10-22T03:10:42.609Z"
     },
     "doyle-study-in-scarlet-holmes": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1b141adf5909d53a1db211dc7b14535880d2a9aa4e54504b00c85074ca05ad14",
-      "updated_at": "2026-10-22T02:39:11.931Z"
+      "updated_at": "2026-10-22T03:10:42.641Z"
     },
     "holmes-strand-scandal-in-bohemia": {
       "state": "pending",
@@ -56,32 +56,32 @@
       "sha256": null
     },
     "doyle-hound-of-the-baskervilles": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fe1e77c2af0c0485a7289b6d06de9207671d9ab064b06928d663dee8d13c7b8f",
-      "updated_at": "2026-10-22T02:54:15.301Z"
+      "updated_at": "2026-10-22T03:10:42.670Z"
     },
     "leroux-mystery-of-the-yellow-room": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6acd22b810d6e0695bb95c94a6e4dbcc82100b7223f876bfa09094b667671d4b",
-      "updated_at": "2026-10-22T02:58:16.282Z"
+      "updated_at": "2026-10-22T03:10:42.700Z"
     },
     "chesterton-father-brown-debut": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0b9c41d765ad541a0192c3bccd2cd009ef76ad6461e39c4d5d50fdc657d28295",
-      "updated_at": "2026-10-22T03:02:47.309Z"
+      "updated_at": "2026-10-22T03:10:42.730Z"
     },
     "christie-poirot-debut-styles": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b6c145faf36efaefa77c89661999c0ca18034ac3a0f01b7e1ebe548ac0d48fb5",
-      "updated_at": "2026-10-22T03:09:07.335Z"
+      "updated_at": "2026-10-22T03:10:42.763Z"
     },
     "sayers-lord-peter-wimsey-debut": {
       "state": "pending",
