@@ -12517,7 +12517,8 @@
     "regions": [
       "Argentina"
     ],
-    "year_end": -228900000
+    "year_end": -228900000,
+    "has_detail": true
   },
   {
     "name": "coelophysis-pack-hunter",
@@ -12529,7 +12530,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -201400000
+    "year_end": -201400000,
+    "has_detail": true
   },
   {
     "name": "massospondylus-southern-grazer",
@@ -12542,7 +12544,8 @@
       "South Africa",
       "Zimbabwe"
     ],
-    "year_end": -184000000
+    "year_end": -184000000,
+    "has_detail": true
   },
   {
     "name": "cryolophosaurus-frozen-crest",
@@ -12555,7 +12558,8 @@
       "Antarctica",
       "United States"
     ],
-    "year_end": -182000000
+    "year_end": -182000000,
+    "has_detail": true
   },
   {
     "name": "dilophosaurus-twin-crest",
@@ -12567,7 +12571,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -183700000
+    "year_end": -183700000,
+    "has_detail": true
   },
   {
     "name": "megalosaurus-great-lizard",
@@ -12579,7 +12584,8 @@
     "regions": [
       "United Kingdom"
     ],
-    "year_end": -165000000
+    "year_end": -165000000,
+    "has_detail": true
   },
   {
     "name": "mamenchisaurus-long-necked-giant",
@@ -12591,7 +12597,8 @@
     "regions": [
       "China"
     ],
-    "year_end": -114400000
+    "year_end": -114400000,
+    "has_detail": true
   },
   {
     "name": "brontosaurus-thunder-lizard",
@@ -12603,7 +12610,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -146800000
+    "year_end": -146800000,
+    "has_detail": true
   },
   {
     "name": "diplodocus-whip-tailed-giant",
@@ -12615,7 +12623,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -149100000
+    "year_end": -149100000,
+    "has_detail": true
   },
   {
     "name": "utahraptor-giant-raptor",
@@ -12627,7 +12636,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -134600000
+    "year_end": -134600000,
+    "has_detail": true
   },
   {
     "name": "baryonyx-fish-eating-claw",
@@ -12639,7 +12649,8 @@
     "regions": [
       "United Kingdom"
     ],
-    "year_end": -125000000
+    "year_end": -125000000,
+    "has_detail": true
   },
   {
     "name": "iguanodon-thumb-spiked-grazer",
@@ -12652,7 +12663,8 @@
       "Belgium",
       "United Kingdom"
     ],
-    "year_end": -122000000
+    "year_end": -122000000,
+    "has_detail": true
   },
   {
     "name": "sinosauropteryx-feathered-find",
@@ -12664,7 +12676,8 @@
     "regions": [
       "China"
     ],
-    "year_end": -124120000
+    "year_end": -124120000,
+    "has_detail": true
   },
   {
     "name": "microraptor-four-winged-glider",
@@ -12675,7 +12688,8 @@
     "difficulty": "medium",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "deinonychus-terrible-claw",
@@ -12687,7 +12701,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -98000000
+    "year_end": -98000000,
+    "has_detail": true
   },
   {
     "name": "spinosaurus-sailback-swimmer",
@@ -12700,7 +12715,8 @@
       "Egypt",
       "Morocco"
     ],
-    "year_end": -94000000
+    "year_end": -94000000,
+    "has_detail": true
   },
   {
     "name": "giganotosaurus-giant-of-the-south",
@@ -12711,7 +12727,8 @@
     "difficulty": "hard",
     "regions": [
       "Argentina"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "argentinosaurus-colossal-titan",
@@ -12722,7 +12739,8 @@
     "difficulty": "hard",
     "regions": [
       "Argentina"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hadrosaurus-duck-bill",
@@ -12734,7 +12752,8 @@
     "regions": [
       "United States"
     ],
-    "year_end": -77900000
+    "year_end": -77900000,
+    "has_detail": true
   },
   {
     "name": "parasaurolophus-trumpet-crest",
@@ -12747,7 +12766,8 @@
       "Canada",
       "United States"
     ],
-    "year_end": -73000000
+    "year_end": -73000000,
+    "has_detail": true
   },
   {
     "name": "carnotaurus-flesh-eating-bull",
@@ -12759,7 +12779,8 @@
     "regions": [
       "Argentina"
     ],
-    "year_end": -66000000
+    "year_end": -66000000,
+    "has_detail": true
   },
   {
     "name": "therizinosaurus-scythe-lizard",
@@ -12771,6 +12792,7 @@
     "regions": [
       "Mongolia"
     ],
-    "year_end": -66000000
+    "year_end": -66000000,
+    "has_detail": true
   }
 ]
