@@ -3,7 +3,7 @@
   "name": "Whodunit",
   "stage": "art-in-progress",
   "created_at": "2026-10-21T06:21:49.322Z",
-  "updated_at": "2026-10-22T02:58:16.282Z",
+  "updated_at": "2026-10-22T03:02:47.309Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -70,10 +70,11 @@
       "updated_at": "2026-10-22T02:58:16.282Z"
     },
     "chesterton-father-brown-debut": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0b9c41d765ad541a0192c3bccd2cd009ef76ad6461e39c4d5d50fdc657d28295",
+      "updated_at": "2026-10-22T03:02:47.309Z"
     },
     "christie-poirot-debut-styles": {
       "state": "pending",
