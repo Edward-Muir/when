@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T12:16:18.721Z",
+  "updated_at": "2026-10-23T12:20:05.664Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-10-23T12:16:18.721Z"
     },
     "julian-apostate-sole-emperor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a1cfa4a5cd7a70b06d7b0c881d22c576f653a3a27bd2c7203dbb6418fa68bde3",
+      "updated_at": "2026-10-23T12:20:05.664Z"
     },
     "theodosius-i-becomes-emperor": {
       "state": "pending",
