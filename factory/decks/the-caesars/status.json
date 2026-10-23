@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T12:22:55.951Z",
+  "updated_at": "2026-10-23T12:25:48.450Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-23T12:22:55.951Z"
     },
     "romulus-augustulus-emperor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f4bb0949225661f45c1a9f06cb89c1f911f319fe54d47d6d087c3f93161701c0",
+      "updated_at": "2026-10-23T12:25:48.450Z"
     },
     "heraclius-becomes-emperor": {
       "state": "pending",
