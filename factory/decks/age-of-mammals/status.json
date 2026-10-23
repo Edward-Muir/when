@@ -1,21 +1,26 @@
 {
   "deck": "age-of-mammals",
   "name": "Age of Mammals",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T21:22:21.347Z",
+  "updated_at": "2026-10-23T22:09:02.515Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-23T21:22:21.347Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-23T22:09:02.515Z"
     }
   ],
   "slugs": {
     "purgatorius": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ddf7788ba9e3c72275df374939a6a1116f1276de9fc829dceed1d15bfa2af821",
+      "updated_at": "2026-10-23T22:09:02.515Z"
     },
     "plesiadapis": {
       "state": "pending",
