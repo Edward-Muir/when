@@ -12513,7 +12513,10 @@
     "year": -66000000,
     "category": "nature",
     "description": "A tiny, shrew-sized tree-climber with nimble ankles, a close kin of every later monkey and ape.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "plesiadapis",
@@ -12521,7 +12524,11 @@
     "year": -58000000,
     "category": "nature",
     "description": "A squirrel-sized, long-clawed climber lived in forests of two continents and is among the first primate-like mammals.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Europe",
+      "North America"
+    ]
   },
   {
     "name": "eohippus-dawn-horse",
@@ -12529,7 +12536,11 @@
     "year": -55000000,
     "category": "nature",
     "description": "A fox-sized, four-toed forest browser stands at the base of the horse family tree.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "icaronycteris-early-bat",
@@ -12537,7 +12548,10 @@
     "year": -52000000,
     "category": "nature",
     "description": "A fully winged, insect-hunting bat left skeletons in a Wyoming lake bed, already able to fly and echolocate.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "pakicetus",
@@ -12545,7 +12559,10 @@
     "year": -50000000,
     "category": "nature",
     "description": "A wolf-sized, hoofed hunter living beside rivers has ear bones that mark it as an early relative of whales.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Pakistan"
+    ]
   },
   {
     "name": "ambulocetus",
@@ -12553,7 +12570,10 @@
     "year": -49000000,
     "category": "nature",
     "description": "A crocodile-like, short-legged ambusher could both paddle and walk, caught midway between land and sea.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Pakistan"
+    ]
   },
   {
     "name": "andrewsarchus",
@@ -12561,7 +12581,10 @@
     "year": -45000000,
     "category": "nature",
     "description": "A massive skull from the Mongolian desert shows a wolf-like, hoofed meat eater once thought the largest of its kind.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Mongolia"
+    ]
   },
   {
     "name": "basilosaurus",
@@ -12569,7 +12592,11 @@
     "year": -41000000,
     "category": "nature",
     "description": "A fully ocean-going, snake-bodied whale grew to about 18 metres and still carried tiny hind legs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Egypt",
+      "United States"
+    ]
   },
   {
     "name": "moeritherium",
@@ -12577,7 +12604,10 @@
     "year": -37000000,
     "category": "nature",
     "description": "A swamp-dwelling, tapir-like animal with short tusks sits at the base of the elephant family.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "paraceratherium",
@@ -12585,7 +12615,13 @@
     "year": -34000000,
     "category": "nature",
     "description": "A hornless, long-necked rhino relative stood taller than a giraffe and weighed as much as several elephants.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "China",
+      "Kazakhstan",
+      "Mongolia",
+      "Pakistan"
+    ]
   },
   {
     "name": "aegyptopithecus",
@@ -12593,7 +12629,10 @@
     "year": -30000000,
     "category": "nature",
     "description": "A cat-sized, tree-living early ape relative left a skull in the Egyptian desert, near the root of apes and monkeys.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "desmostylus",
@@ -12601,7 +12640,11 @@
     "year": -28400000,
     "category": "nature",
     "description": "A hippo-like coastal mammal with bundled, column-shaped teeth grazed seaweed along North Pacific shores.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "proconsul",
@@ -12609,7 +12652,11 @@
     "year": -23500000,
     "category": "nature",
     "description": "A tailless, monkey-sized tree-dweller in East African forests is among the earliest known apes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Kenya",
+      "Uganda"
+    ]
   },
   {
     "name": "gomphotherium",
@@ -12617,7 +12664,13 @@
     "year": -19500000,
     "category": "nature",
     "description": "A four-tusked, elephant-like browser left Africa and spread across the northern continents.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Europe",
+      "Sub-Saharan Africa",
+      "East Asia",
+      "North America"
+    ]
   },
   {
     "name": "merychippus",
@@ -12625,7 +12678,10 @@
     "year": -16000000,
     "category": "nature",
     "description": "A pony-sized horse with tall, hard-wearing teeth began feeding on the grasses of spreading prairies.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "platybelodon",
@@ -12633,7 +12689,12 @@
     "year": -15000000,
     "category": "nature",
     "description": "An elephant relative with flattened lower tusks scooped up and stripped plants like a living shovel.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "China",
+      "Mongolia",
+      "Pakistan"
+    ]
   },
   {
     "name": "deinotherium",
@@ -12641,7 +12702,12 @@
     "year": -13000000,
     "category": "nature",
     "description": "A giant elephant relative had tusks curving downward from its lower jaw and stood about four metres tall.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Europe",
+      "Sub-Saharan Africa",
+      "South Asia"
+    ]
   },
   {
     "name": "livyatan",
@@ -12649,7 +12715,10 @@
     "year": -9900000,
     "category": "nature",
     "description": "A huge-toothed sperm whale hunted other whales in the sea off what is now Peru, its bite among the mightiest known.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "thylacosmilus",
@@ -12657,7 +12726,10 @@
     "year": -9000000,
     "category": "nature",
     "description": "A South American pouched predator grew sabre-like canines like a cat's, though it was no cat.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Argentina"
+    ]
   },
   {
     "name": "sivatherium",
@@ -12665,7 +12737,11 @@
     "year": -7000000,
     "category": "nature",
     "description": "A heavy, moose-like relative of giraffes carried two pairs of horns, one pair broad and branching.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "megatherium",
@@ -12673,7 +12749,10 @@
     "year": -5000000,
     "category": "nature",
     "description": "An elephant-sized, clawed leaf eater of South America reared up on its hind legs to reach branches.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "South America"
+    ]
   },
   {
     "name": "josephoartigasia",
@@ -12681,7 +12760,10 @@
     "year": -4000000,
     "category": "nature",
     "description": "A South American relative of the guinea pig grew to the size of a bull, the biggest rodent on record.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Uruguay"
+    ]
   },
   {
     "name": "smilodon-sabre-tooth",
@@ -12689,7 +12771,11 @@
     "year": -2500000,
     "category": "nature",
     "description": "A stocky, powerful big cat with knife-like upper canines ambushed large prey across the Americas.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "North America",
+      "South America"
+    ]
   },
   {
     "name": "glyptodon",
@@ -12697,7 +12783,10 @@
     "year": -2000000,
     "category": "nature",
     "description": "A car-sized relative of armadillos wore a solid domed shell of fused bony plates.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "South America"
+    ]
   },
   {
     "name": "arctodus",
@@ -12705,7 +12794,10 @@
     "year": -1800000,
     "category": "nature",
     "description": "A long-legged North American bear stood taller than a grizzly and may have been the largest meat-eating bear.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "North America"
+    ]
   },
   {
     "name": "diprotodon",
@@ -12713,7 +12805,10 @@
     "year": -1600000,
     "category": "nature",
     "description": "A rhino-sized pouched grazer, the largest marsupial ever, wandered Australia in herds.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "cave-lion-big-cat",
@@ -12721,7 +12816,12 @@
     "year": -700000,
     "category": "nature",
     "description": "A huge, pale cat larger than any living lion hunted across the cold steppes, and was painted by early artists.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Europe",
+      "North & Central Asia",
+      "North America"
+    ]
   },
   {
     "name": "woolly-mammoth-steppe",
@@ -12729,7 +12829,13 @@
     "year": -400000,
     "category": "nature",
     "description": "A shaggy, long-tusked elephant, adapted to freezing grassland, became the best-known beast of the cold steppe.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Europe",
+      "North & Central Asia",
+      "East Asia",
+      "North America"
+    ]
   },
   {
     "name": "cave-bear",
@@ -12737,7 +12843,10 @@
     "year": -300000,
     "category": "nature",
     "description": "A huge, plant-eating bear spent winters hibernating in caves across Europe, leaving bones in vast numbers.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "dire-wolf-predator",
@@ -12745,6 +12854,10 @@
     "year": -250000,
     "category": "nature",
     "description": "A heavy, big-headed wolf hunted horses and bison in the Americas alongside the sabre-tooth.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "North America",
+      "South America"
+    ]
   }
 ]
