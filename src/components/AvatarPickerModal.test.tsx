@@ -67,12 +67,12 @@ describe('AvatarPickerModal achievement portraits', () => {
 
   it('orders new, then the other unlocked, then every locked one', () => {
     unlock({ 'meta-categories': '2026-10-02', '27': '2026-10-01', '01': '2026-09-01' });
-    localStorage.setItem('when-portraits-seen', JSON.stringify(['hatchling']));
+    localStorage.setItem('when-portraits-seen', JSON.stringify(['scottish-fold']));
     render(<AvatarPickerModal open onDismiss={jest.fn()} />);
     expect(labels().slice(0, 4)).toEqual([
       'Unicorn, new',
       'Kitsune, new',
-      'Hatchling',
+      'Scottish Fold',
       'Capybara, locked',
     ]);
     expect(

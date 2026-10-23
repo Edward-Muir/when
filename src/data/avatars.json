@@ -292,11 +292,11 @@
   ],
   "earned": [
     {
-      "id": "hatchling",
-      "label": "Hatchling",
+      "id": "scottish-fold",
+      "label": "Scottish Fold",
       "achievementId": "01",
-      "emoji": "🐣",
-      "placeholder": true
+      "emoji": "🐱",
+      "preview": true
     },
     {
       "id": "capybara",
