@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T10:26:11.236Z",
+  "updated_at": "2026-10-23T10:34:08.144Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-23T10:26:11.236Z"
     },
     "caracalla-sole-emperor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bd693f5d5a96f7f4ed3afd7062c88517629e11bdf0afc856c5a0f814b8492245",
+      "updated_at": "2026-10-23T10:34:08.144Z"
     },
     "elagabalus-becomes-emperor": {
       "state": "pending",
