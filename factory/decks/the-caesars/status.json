@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T12:34:25.525Z",
+  "updated_at": "2026-10-23T12:41:14.610Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-23T12:34:25.525Z"
     },
     "basil-i-founds-macedonian-dynasty": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1f5ed5f4c13f8fa26b89e406943cb5c244596fc7a7170991244c65b5d6869fbc",
+      "updated_at": "2026-10-23T12:41:14.610Z"
     },
     "basil-ii-becomes-emperor": {
       "state": "pending",
