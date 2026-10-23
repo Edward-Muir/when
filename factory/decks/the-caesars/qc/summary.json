@@ -1,0 +1,72 @@
+{
+  "tiberius-succeeds-augustus": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painting style interior of a stone hall with arches and wall torches. In the foreground a stern, middle-aged man with short greying hair wears a golden-ochre toga with purple stripe over a white tunic, one hand resting on a stone balustrade. Behind him on the right is a white marble bust of a laurel-wreathed man in a toga. Behind the balustrade, rows of togate men in tiers raise their arms and seem to shout or cheer. No visible text, frame or border; the painting fills the image edge to edge."
+  },
+  "claudius-raised-by-praetorians": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A Roman soldier in a crested helmet and scale armour and red-trimmed cloak grips a heavy dark patterned curtain in a marble palace hall. Behind it, an older, thin, grey-haired man in a cream tunic cowers against a wall with a wide-eyed frightened look and one hand raised. A second helmeted soldier stands in the background shadows, and the floor is a patterned mosaic. The painting fills the frame edge to edge with no visible text."
+  },
+  "vespasian-proclaimed-emperor": {
+    "state": "qc-fail",
+    "reason": "A word (SIGNA) is painted on a plaque on the standard at right. Remove the lettering and leave the plaque blank or use a plain emblem. The rest of the scene matches the card.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A balding, stern general in Roman muscle armour and a red cloak stands on a large round shield held aloft by cheering legionaries, one hand raised and the other holding an eagle standard. Red banners, bronze standards, spears and tents fill a smoky dusk camp. A small plaque on the standard at right carries the word SIGNA. No frame or border; nothing graphic."
+  },
+  "titus-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man in a gold laurel wreath and gilded armour under a deep red cloak raises one hand toward a crowd in a city street. Behind him rises a large, partly scaffolded stone amphitheatre with arches, and scaffolding and a smoking brazier stand nearby. Soldiers in plumed helmets and togas-wearing onlookers fill the scene, under an overcast sky. No visible text, border or frame; the painting is edge to edge."
+  },
+  "commodus-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A young man with curly dark hair stands centre frame in a lion-skin cloak with the lion's head on his shoulder, holding a wooden club and raising one hand. Armoured soldiers with raised arms and helmets surround him, with a fire burning at lower left, torches and a banner at top right, and a dark forest behind. The painting fills the whole image edge to edge with no frame or text."
+  },
+  "septimius-severus-seizes-throne": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man with a laurel wreath and dark curls rides a black horse at the front of a column of armored soldiers in red capes and helmets. He wears a silver cuirass over a red tunic. Behind him is a stone archway and a city with classical temple buildings under smoky, orange-lit skies, with red standards and spears raised. The painting fills the frame edge to edge in a dramatic oil style. No visible text."
+  },
+  "caracalla-sole-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark-haired, bearded man with a stern scowl stands in a dim marble hall, wearing a red cloak over dark metal armour with a short dagger at his waist. Behind him to the right is a round gold-framed painted panel showing a bearded older man, a woman with pale hair, and a boy, with one figure's face scraped and splintered away. Ornate columns, arches, a carved stone pedestal and a candle sconce fill the background. No visible text."
+  },
+  "elagabalus-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A young man in ornate gold-and-crimson embroidered robes and a tall jeweled headdress raises one hand in front of a large black conical stone on a gold chariot pulled by black horses. Behind him, armoured Roman soldiers with spears and a crested helmet stand near burning torches, with eagle standards, smoke, fire and classical stone buildings in the background. No visible text, frame or border; the painting fills the image edge to edge."
+  },
+  "aurelian-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man with a laurel wreath and segmented metal armour and a red tunic stands on a wooden platform, pointing forward. Behind him, mounted soldiers in helmets and crested helmets stand among horses. In the background, a tall brick fortress wall with towers, scaffolding and cranes, with smoke drifting over it. No visible text, frame or border."
+  },
+  "diocletian-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man with grey hair, wearing a silver cuirass, a purple cloak and a sword, stands on a wooden platform with one arm raised. Around him, helmeted soldiers hold long spears and torches in front of dark military tents and red-and-black banners under a smoky, stormy sky. The painting fills the frame edge to edge, with no visible text."
+  }
+}

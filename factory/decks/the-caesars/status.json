@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T10:50:34.096Z",
+  "updated_at": "2026-10-23T11:07:44.105Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "tiberius-succeeds-augustus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2597d69a64780881155c818fe938e6a8556e45dd6fba29274d924b02556f2903",
-      "updated_at": "2026-10-23T10:09:00.003Z"
+      "updated_at": "2026-10-23T11:07:43.818Z"
     },
     "claudius-raised-by-praetorians": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4b0eadebdc775d6f0cc04e5c5219083878b1fcaf1598e1e47f0da122c52ac6fd",
-      "updated_at": "2026-10-23T10:11:38.442Z"
+      "updated_at": "2026-10-23T11:07:43.850Z"
     },
     "vespasian-proclaimed-emperor": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "A word (SIGNA) is painted on a plaque on the standard at right. Remove the lettering and leave the plaque blank or use a plain emblem. The rest of the scene matches the card.",
       "sha256": "0881b65000c0c780c7bc9436216486107ec5f680c1dc8f1dab4a05c36c521eb3",
-      "updated_at": "2026-10-23T10:15:03.110Z"
+      "updated_at": "2026-10-23T11:07:43.881Z"
     },
     "titus-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0497b3d2f2e2d6bdb017d892a188905d0d3f2b4a85c4e04391001f30370dc6a8",
-      "updated_at": "2026-10-23T10:17:53.986Z"
+      "updated_at": "2026-10-23T11:07:43.913Z"
     },
     "commodus-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "11215ee2bf71f1e67d67a29b586f9465fd92c7def43a015ff7fb62224c34c789",
-      "updated_at": "2026-10-23T10:21:07.993Z"
+      "updated_at": "2026-10-23T11:07:43.944Z"
     },
     "septimius-severus-seizes-throne": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1b615f9b14721744f6558f4ec5256d7833bac5ae43fee2849356ebf189e73fe1",
-      "updated_at": "2026-10-23T10:26:11.236Z"
+      "updated_at": "2026-10-23T11:07:43.975Z"
     },
     "caracalla-sole-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bd693f5d5a96f7f4ed3afd7062c88517629e11bdf0afc856c5a0f814b8492245",
-      "updated_at": "2026-10-23T10:34:08.144Z"
+      "updated_at": "2026-10-23T11:07:44.009Z"
     },
     "elagabalus-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "aaf28899ed7bc8b21963a5ae670b47e1ba93e7bf5be7a9c4cadfeae0ac1849d7",
-      "updated_at": "2026-10-23T10:39:36.538Z"
+      "updated_at": "2026-10-23T11:07:44.044Z"
     },
     "aurelian-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1b7f0b5bb239c806a2c0b8d1484e0508fa4bef3a1ab05b75d215981741d65393",
-      "updated_at": "2026-10-23T10:44:25.283Z"
+      "updated_at": "2026-10-23T11:07:44.074Z"
     },
     "diocletian-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "596d2d22bb334ae3b2b9744e230394be584e9606bad8e8e91cdb0eeb756b922e",
-      "updated_at": "2026-10-23T10:50:34.096Z"
+      "updated_at": "2026-10-23T11:07:44.105Z"
     },
     "constantine-hailed-emperor": {
       "state": "pending",
