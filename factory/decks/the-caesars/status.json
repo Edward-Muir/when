@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T11:07:44.105Z",
+  "updated_at": "2026-10-23T12:10:32.009Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-10-23T11:07:43.850Z"
     },
     "vespasian-proclaimed-emperor": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "A word (SIGNA) is painted on a plaque on the standard at right. Remove the lettering and leave the plaque blank or use a plain emblem. The rest of the scene matches the card.",
-      "sha256": "0881b65000c0c780c7bc9436216486107ec5f680c1dc8f1dab4a05c36c521eb3",
-      "updated_at": "2026-10-23T11:07:43.881Z"
+      "sha256": "42c31c446bc062a17ad4d9af464b58539091a5c25b17aa55f811e0e77dd5d3fe",
+      "updated_at": "2026-10-23T12:10:32.009Z"
     },
     "titus-becomes-emperor": {
       "state": "qc-pass",
