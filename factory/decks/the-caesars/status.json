@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T12:28:38.656Z",
+  "updated_at": "2026-10-23T12:31:30.709Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-23T12:28:38.656Z"
     },
     "leo-iii-becomes-emperor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8d84cc2a35cfb6a1e1a32d0e64face7243a4c026dcf536d30dec794191f333a9",
+      "updated_at": "2026-10-23T12:31:30.709Z"
     },
     "irene-sole-ruler-byzantium": {
       "state": "pending",
