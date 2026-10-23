@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T18:12:43.948Z",
+  "updated_at": "2026-10-23T18:18:21.325Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-10-23T18:12:43.948Z"
     },
     "alexios-komnenos-seizes-power": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2699f0bc53c2f7ca1d06793a8237672be3b700b5aaa8b47366f37aa80110dcc2",
+      "updated_at": "2026-10-23T18:18:21.325Z"
     },
     "michael-viii-palaiologos-crowned": {
       "state": "pending",
