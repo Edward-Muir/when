@@ -150,7 +150,7 @@ creatures do the same job with more range. The rule behind either: **never lock 
 would break a generated name ("Artistic Aardvark" with no aardvark), and the 62 must stay
 complete for the name generator and the bots. An earned portrait is pick-only:
 `avatarForName` and `generateRandomName` reach only the 62, and earned ids never clash with
-them (`mummy-cat`, not `cat`; `hatchling`, not `dragon`).
+them (`mummy-cat` and `scottish-fold`, not `cat`).
 
 **Ownership is never stored.** It is derived from `when-achievements`
 (`ownedEarnedPortraits`), so a player who already holds a badge already owns its portrait, and
