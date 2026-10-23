@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T18:18:21.325Z",
+  "updated_at": "2026-10-23T18:20:48.286Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-23T18:18:21.325Z"
     },
     "michael-viii-palaiologos-crowned": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "56f9a09ee78e33de4b62d5697eec58951e52a0308ca9f88f9ce4edf3848905ef",
+      "updated_at": "2026-10-23T18:20:48.286Z"
     },
     "constantine-xi-last-emperor": {
       "state": "pending",
