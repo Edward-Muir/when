@@ -1,9 +1,9 @@
 {
   "deck": "the-caesars",
   "name": "The Caesars",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T18:23:14.680Z",
+  "updated_at": "2026-10-23T19:08:14.300Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-23T10:09:00.003Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-23T19:08:14.300Z"
     }
   ],
   "slugs": {
@@ -114,11 +118,11 @@
       "updated_at": "2026-10-23T13:07:14.014Z"
     },
     "heraclius-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Letters (MP and ΘΥ style Greek abbreviations) are painted at the top of the icon at upper left. Repaint the icon without lettering or crop it out.",
+      "reason": null,
       "sha256": "5a57b6518121ea6f695af9bfed1bb9ed26117f5ac8eae87989388857cc9a03fd",
-      "updated_at": "2026-10-23T18:08:54.703Z"
+      "updated_at": "2026-10-23T19:08:14.178Z"
     },
     "leo-iii-becomes-emperor": {
       "state": "qc-pass",
@@ -142,32 +146,32 @@
       "updated_at": "2026-10-23T13:07:14.145Z"
     },
     "basil-ii-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8039fa1d0c11e222b1a29547b1a15099be96c9100ac4e53ee61228dbda5fa8a0",
-      "updated_at": "2026-10-23T18:12:43.948Z"
+      "updated_at": "2026-10-23T19:08:14.209Z"
     },
     "alexios-komnenos-seizes-power": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2699f0bc53c2f7ca1d06793a8237672be3b700b5aaa8b47366f37aa80110dcc2",
-      "updated_at": "2026-10-23T18:18:21.325Z"
+      "updated_at": "2026-10-23T19:08:14.240Z"
     },
     "michael-viii-palaiologos-crowned": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "56f9a09ee78e33de4b62d5697eec58951e52a0308ca9f88f9ce4edf3848905ef",
-      "updated_at": "2026-10-23T18:20:48.286Z"
+      "updated_at": "2026-10-23T19:08:14.270Z"
     },
     "constantine-xi-last-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b276384893316e7f6accf0e1ebfb183adab358890f66a16f2df8a65f3bd0252c",
-      "updated_at": "2026-10-23T18:23:14.680Z"
+      "updated_at": "2026-10-23T19:08:14.300Z"
     }
   }
 }

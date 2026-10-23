@@ -1,0 +1,15 @@
+{
+  "slug": "constantine-xi-last-emperor",
+  "description": "A bearded man in a jeweled crown, red and gold robe with double-headed eagles and a torn dark cloak holds a sword while standing on a ruined brick and stone battlement. Behind him is a dusky domed city with smoke rising and a dark army at the right edge. Oil-painting style, no text, no frame, no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

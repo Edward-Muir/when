@@ -98,11 +98,11 @@
     "description": "A young boy wearing a jeweled gold crown and a purple and gold embroidered robe sits on an ornate grey marble throne in a dim hall with candles and columns. A man in dark lamellar armour and a brown cloak stands behind the throne with his hand on its back. Several figures in shadow line the background. The painting fills the whole frame, with no visible border, text or signature."
   },
   "heraclius-becomes-emperor": {
-    "state": "qc-fail",
-    "reason": "Letters (MP and ΘΥ style Greek abbreviations) are painted at the top of the icon at upper left. Repaint the icon without lettering or crop it out.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A bearded man in gold-trimmed scale armour and a dark red cloak stands at the carved prow of a wooden galley, hand on a sword. At upper left is a gold-framed Madonna and child icon with Greek-style letters painted at its top corners. Behind him are helmeted men; on the right, sailing galleys cross dark water toward a walled domed city under a stormy sky. Oil painting, filling the image edge to edge."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A bearded man in scale armour and a red cloak stands at the prow of a dark wooden galley, holding a gold icon of a Madonna and child. Oarsmen and spearmen crowd the boat behind him, with lanterns glowing. Ahead, a fleet of sailing ships moves across rough grey water toward a walled fortress with tall towers, where fires burn on the battlements under a stormy sky. A small mark sits in the bottom-right corner."
   },
   "leo-iii-becomes-emperor": {
     "state": "qc-pass",
@@ -124,5 +124,33 @@
     "by": "review",
     "attempts": 1,
     "description": "A bearded, muscular man in a red and gold embroidered imperial robe stands in a dim church while a bearded cleric in black vestments with gold trim sets a jeweled crown on his head. Behind them are gold icons, lit candles, a column and incense smoke, with a light shaft from a high window. The painting fills the frame edge to edge, with no visible text."
+  },
+  "basil-ii-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A young man with a jeweled crown and dark hair stands in armour with a gold-trimmed purple cape and a sword at his hip, beside a gilded ornate throne. Behind him in a candlelit hall with arched stone walls, bearded clergy swing a smoking incense censer, and armoured guards with spears stand in the shadows. Gold mosaic and lit candles fill the background. No text, frame or border is visible."
+  },
+  "alexios-komnenos-seizes-power": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A mounted knight in a red cloak and chainmail raises a mace on a dark horse, in front of a stone fortification with its wooden gate doors thrown open. Smoke fills the dark sky with an orange glow on the left. Armoured soldiers with round shields, axes and spears crowd around him, and a helmeted man with an axe is in the lower right foreground. No visible text, border or frame; the painting runs edge to edge. No visible blood or gore."
+  },
+  "michael-viii-palaiologos-crowned": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man in a jewelled crown and red and gold robes sits on a large round silver shield, held up by armoured soldiers in mail and helmets, while a second man in a gold cloak stands behind him. A crowd of spearmen, torch-bearers and clergy in black and gold fills a stone courtyard under a dark sky, with a small boy in a purple gold-trimmed robe standing at right. The architecture shows domes and arched stone walls, and the whole scene is an oil-style painting edge to edge with no visible text or frame."
+  },
+  "constantine-xi-last-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A bearded man in a jeweled crown, red and gold robe with double-headed eagles and a torn dark cloak holds a sword while standing on a ruined brick and stone battlement. Behind him is a dusky domed city with smoke rising and a dark army at the right edge. Oil-painting style, no text, no frame, no gore."
   }
 }
