@@ -163,7 +163,9 @@ acceptable for a cosmetic.
 `AchievementPortraits`): new ones first, then the other unlocked ones, then every locked one,
 each group in catalogue order. A locked one shows greyed
 behind a small lock, the tease the locked badges use, and tapping it previews it at the top
-with its unlock line without saving; any real pick or reopening clears the preview. The large
+with its achievement and unlock line without saving; any real pick or reopening clears the
+preview. A worn achievement portrait names its achievement under the portrait's label in the
+preview ("First Steps · Play your 1st game"). The large
 achievement card (the unlock reveal and the detail popup) names the portrait a badge earns,
 greyed while locked. No metal frame on an earned portrait: gold, silver and bronze mean podium
 place on the board, and badges carry metal rings.

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Lock, X } from 'lucide-react';
+import { Award, Lock, X } from 'lucide-react';
 import Modal from './ui/Modal';
 import Portrait from './ui/Portrait';
 import AchievementPortraits from './AchievementPortraits';
 import { usePlayerProfile } from '../hooks/usePlayerProfile';
 import { saveDisplayName } from '../utils/playerStorage';
-import { ACHIEVEMENTS } from '../data/achievements';
+import { ACHIEVEMENTS, type AchievementDef } from '../data/achievements';
 import {
   AVATAR_ANIMALS,
   EARNED_PORTRAITS,
@@ -35,7 +35,30 @@ const GRID = 'grid grid-cols-4 min-[380px]:grid-cols-5 gap-2';
 // The locked tease, as on locked achievement badges: greyed art behind a lock.
 const LOCKED_ART = 'grayscale opacity-50';
 
-const CRITERIA_BY_ACHIEVEMENT = new Map(ACHIEVEMENTS.map((a) => [a.id, a.unlockCriteria]));
+const ACHIEVEMENT_BY_ID = new Map(ACHIEVEMENTS.map((a) => [a.id, a]));
+
+/** The achievement that earns a portrait, or undefined for one of the 62 animals. */
+function badgeFor(portraitId: string | null) {
+  const portrait = EARNED_PORTRAITS.find((p) => p.id === portraitId);
+  return portrait && ACHIEVEMENT_BY_ID.get(portrait.achievementId);
+}
+
+/** "First Steps · Play your 1st game", behind a lock while it is still to be earned. */
+const BadgeLine: React.FC<{ badge: AchievementDef; locked?: boolean; testId: string }> = ({
+  badge,
+  locked = false,
+  testId,
+}) => {
+  const Icon = locked ? Lock : Award;
+  return (
+    <div className="flex items-start gap-1 text-xs text-text-muted font-body" data-testid={testId}>
+      <Icon className="w-3 h-3 shrink-0 mt-0.5" aria-hidden />
+      <span>
+        <span className="font-semibold text-text">{badge.name}</span> · {badge.unlockCriteria}
+      </span>
+    </div>
+  );
+};
 // The cap follows the *visible* viewport: `--vh` is `1dvh` where supported (App.tsx). Plain
 // `vh` is the large viewport on iOS browsers, so with their toolbars showing a 90vh card ran
 // off both ends of the screen, header and Done button with it.
@@ -90,8 +113,8 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
       setVisit((v) => v + 1);
     }
   }
-  const peeked = EARNED_PORTRAITS.find((p) => p.id === peek);
-  const peekCriteria = peeked ? CRITERIA_BY_ACHIEVEMENT.get(peeked.achievementId) : null;
+  const peekedBadge = badgeFor(peek);
+  const wornBadge = badgeFor(avatar);
 
   const commitName = () => {
     const next = draft.trim();
@@ -140,15 +163,12 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
         <div className="flex items-center gap-3">
           <Portrait animal={peek ?? avatar} size={96} className={peek ? LOCKED_ART : ''} />
           <div className="min-w-0 flex-1">
-            {peekCriteria ? (
+            {peek && peekedBadge ? (
               <div data-testid="locked-preview">
                 <div className="font-display font-semibold text-lg text-text truncate">
-                  {peeked?.label}
+                  {getAnimal(peek)?.label}
                 </div>
-                <div className="flex items-center gap-1 text-xs text-text-muted font-body">
-                  <Lock className="w-3 h-3 shrink-0" aria-hidden />
-                  <span>{peekCriteria}</span>
-                </div>
+                <BadgeLine badge={peekedBadge} locked testId="locked-achievement" />
               </div>
             ) : editsName ? (
               // 16px text: iOS zooms the page into any smaller input on focus.
@@ -169,9 +189,10 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
             ) : (
               <div className="font-display font-semibold text-xl text-text truncate">{name}</div>
             )}
-            {!peekCriteria && (
-              <div className={`text-xs text-text-muted font-body ${editsName ? 'mt-1 px-1' : ''}`}>
-                {getAnimal(avatar)?.label}
+            {!peekedBadge && (
+              <div className={editsName ? 'mt-1 px-1 space-y-0.5' : 'space-y-0.5'}>
+                <div className="text-xs text-text-muted font-body">{getAnimal(avatar)?.label}</div>
+                {wornBadge && <BadgeLine badge={wornBadge} testId="portrait-achievement" />}
               </div>
             )}
           </div>
