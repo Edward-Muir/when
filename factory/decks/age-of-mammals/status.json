@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T22:34:51.319Z",
+  "updated_at": "2026-10-23T23:07:28.781Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "purgatorius": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ddf7788ba9e3c72275df374939a6a1116f1276de9fc829dceed1d15bfa2af821",
-      "updated_at": "2026-10-23T22:09:02.515Z"
+      "updated_at": "2026-10-23T23:07:28.499Z"
     },
     "plesiadapis": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a3c25b7b7a32f494834517d1cdaa84d3b6e0bcef1affa590d440b66e160a976e",
-      "updated_at": "2026-10-23T22:11:32.032Z"
+      "updated_at": "2026-10-23T23:07:28.531Z"
     },
     "eohippus-dawn-horse": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9240a2c9615fe993d8b23227ba103f9e2f1d043ef094e8494f523a107c392b18",
-      "updated_at": "2026-10-23T22:14:52.436Z"
+      "updated_at": "2026-10-23T23:07:28.563Z"
     },
     "icaronycteris-early-bat": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "08dccc521c8bb8dcce8927d72e487174a4442592abecdfa4f26b5acbf295e4a7",
-      "updated_at": "2026-10-23T22:17:30.257Z"
+      "updated_at": "2026-10-23T23:07:28.593Z"
     },
     "pakicetus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "35183ae744742674d8c4d5bda2b2286316b182103833ea5519f3fe8e98c04598",
-      "updated_at": "2026-10-23T22:20:09.278Z"
+      "updated_at": "2026-10-23T23:07:28.624Z"
     },
     "ambulocetus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f10437d2123097c266fe5041c854c017eb5daae35935ba4a8cad6bda135a6dee",
-      "updated_at": "2026-10-23T22:22:46.221Z"
+      "updated_at": "2026-10-23T23:07:28.655Z"
     },
     "andrewsarchus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "037a664043db71f336a37433cb82e150719687830b553d77f95b07cb8d5a855a",
-      "updated_at": "2026-10-23T22:25:26.653Z"
+      "updated_at": "2026-10-23T23:07:28.687Z"
     },
     "basilosaurus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b16d387f48e3de13605fcce0efb927de481e7c8578fad8fc09a6d2c18da54560",
-      "updated_at": "2026-10-23T22:28:24.061Z"
+      "updated_at": "2026-10-23T23:07:28.719Z"
     },
     "moeritherium": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "37bd23f2f0d11e06fd74ad861f8e624a64dd640714e66c419247c1e1fa640a12",
-      "updated_at": "2026-10-23T22:30:59.685Z"
+      "updated_at": "2026-10-23T23:07:28.751Z"
     },
     "paraceratherium": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3406840ef1b569043d02d38afad55f88493c3253534ddab6910ffed33b4024f4",
-      "updated_at": "2026-10-23T22:34:51.319Z"
+      "updated_at": "2026-10-23T23:07:28.781Z"
     },
     "aegyptopithecus": {
       "state": "pending",

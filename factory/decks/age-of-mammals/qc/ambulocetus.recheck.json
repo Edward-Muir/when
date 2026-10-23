@@ -1,0 +1,15 @@
+{
+  "slug": "ambulocetus",
+  "description": "A large crocodile-like animal with a long toothy snout, a small ear, a thick tail and clawed feet crouches at the edge of dark water in a mangrove swamp. Its back looks partly hairy or bristled. It is an oil painting that fills the frame, with no text, border or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
