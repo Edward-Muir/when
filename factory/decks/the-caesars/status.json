@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T10:39:36.538Z",
+  "updated_at": "2026-10-23T10:44:25.283Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-23T10:39:36.538Z"
     },
     "aurelian-becomes-emperor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1b7f0b5bb239c806a2c0b8d1484e0508fa4bef3a1ab05b75d215981741d65393",
+      "updated_at": "2026-10-23T10:44:25.283Z"
     },
     "diocletian-becomes-emperor": {
       "state": "pending",
