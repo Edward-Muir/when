@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T10:09:00.003Z",
+  "updated_at": "2026-10-23T10:11:38.442Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-23T10:09:00.003Z"
     },
     "claudius-raised-by-praetorians": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4b0eadebdc775d6f0cc04e5c5219083878b1fcaf1598e1e47f0da122c52ac6fd",
+      "updated_at": "2026-10-23T10:11:38.442Z"
     },
     "vespasian-proclaimed-emperor": {
       "state": "pending",
