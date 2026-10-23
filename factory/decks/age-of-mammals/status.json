@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T22:11:32.032Z",
+  "updated_at": "2026-10-23T22:14:52.436Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-23T22:11:32.032Z"
     },
     "eohippus-dawn-horse": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9240a2c9615fe993d8b23227ba103f9e2f1d043ef094e8494f523a107c392b18",
+      "updated_at": "2026-10-23T22:14:52.436Z"
     },
     "icaronycteris-early-bat": {
       "state": "pending",
