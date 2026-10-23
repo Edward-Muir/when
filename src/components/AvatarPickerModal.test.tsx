@@ -50,6 +50,19 @@ describe('AvatarPickerModal achievement portraits', () => {
     expect(localStorage.getItem('when-avatar')).toBe('chameleon');
   });
 
+  it('names the achievement beside a worn achievement portrait, and not beside an animal', async () => {
+    render(<AvatarPickerModal open onDismiss={jest.fn()} />);
+    expect(screen.queryByTestId('portrait-achievement')).toBeNull();
+
+    await userEvent.click(within(grid()).getByRole('radio', { name: /^Chameleon/ }));
+    expect(screen.getByTestId('portrait-achievement')).toHaveTextContent(
+      'Maestro · Place 20 Art events'
+    );
+
+    await userEvent.click(screen.getByRole('radio', { name: 'Koala' }));
+    expect(screen.queryByTestId('portrait-achievement')).toBeNull();
+  });
+
   it('previews a locked portrait with its unlock line, without saving it', async () => {
     render(<AvatarPickerModal open onDismiss={jest.fn()} />);
     await userEvent.click(within(grid()).getByRole('radio', { name: 'Unicorn, locked' }));
@@ -57,7 +70,7 @@ describe('AvatarPickerModal achievement portraits', () => {
     expect(localStorage.getItem('when-avatar')).toBeNull();
     const preview = screen.getByTestId('locked-preview');
     expect(preview).toHaveTextContent('Unicorn');
-    expect(preview).toHaveTextContent('Play 100 days in a row');
+    expect(preview).toHaveTextContent('Time Immemorial · Play 100 days in a row');
 
     // Any real pick clears the preview.
     await userEvent.click(screen.getByRole('radio', { name: 'Koala' }));
