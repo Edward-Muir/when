@@ -4,7 +4,7 @@
     "friendly_name": "Purgatorius, Early Primate Kin",
     "year": -66000000,
     "category": "nature",
-    "description": "A tiny, shrew-sized tree-climber appeared just after the asteroid, a close kin of every later monkey and ape.",
+    "description": "A tiny, shrew-sized tree-climber with nimble ankles, a close kin of every later monkey and ape.",
     "difficulty": "hard"
   },
   {
@@ -52,8 +52,8 @@
     "friendly_name": "Andrewsarchus, Giant Hoofed Hunter",
     "year": -45000000,
     "category": "nature",
-    "description": "A massive skull from the Mongolian desert shows a wolf-like, hoofed meat eater bigger than any bear.",
-    "difficulty": "medium"
+    "description": "A massive skull from the Mongolian desert shows a wolf-like, hoofed meat eater once thought the largest of its kind.",
+    "difficulty": "very-hard"
   },
   {
     "name": "basilosaurus",
@@ -77,7 +77,7 @@
     "year": -34000000,
     "category": "nature",
     "description": "A hornless, long-necked rhino relative stood taller than a giraffe and weighed as much as several elephants.",
-    "difficulty": "medium"
+    "difficulty": "very-hard"
   },
   {
     "name": "aegyptopithecus",
@@ -93,7 +93,7 @@
     "year": -28400000,
     "category": "nature",
     "description": "A hippo-like coastal mammal with bundled, column-shaped teeth grazed seaweed along North Pacific shores.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "proconsul",
@@ -101,7 +101,7 @@
     "year": -23500000,
     "category": "nature",
     "description": "A tailless, monkey-sized tree-dweller in East African forests is among the earliest known apes.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "gomphotherium",
@@ -109,12 +109,12 @@
     "year": -19500000,
     "category": "nature",
     "description": "A four-tusked, elephant-like browser left Africa and spread across the northern continents.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "merychippus",
     "friendly_name": "Merychippus, the Grazing Horse",
-    "year": -17000000,
+    "year": -16000000,
     "category": "nature",
     "description": "A pony-sized horse with tall, hard-wearing teeth began feeding on the grasses of spreading prairies.",
     "difficulty": "hard"
@@ -125,15 +125,15 @@
     "year": -15000000,
     "category": "nature",
     "description": "An elephant relative with flattened lower tusks scooped up and stripped plants like a living shovel.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "deinotherium",
     "friendly_name": "Deinotherium, Downturned Tusks",
-    "year": -10000000,
+    "year": -13000000,
     "category": "nature",
     "description": "A giant elephant relative had tusks curving downward from its lower jaw and stood about four metres tall.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "livyatan",
@@ -141,7 +141,7 @@
     "year": -9900000,
     "category": "nature",
     "description": "A huge-toothed sperm whale hunted other whales in the sea off what is now Peru, its bite among the mightiest known.",
-    "difficulty": "medium"
+    "difficulty": "very-hard"
   },
   {
     "name": "thylacosmilus",
@@ -149,7 +149,7 @@
     "year": -9000000,
     "category": "nature",
     "description": "A South American pouched predator grew sabre-like canines like a cat's, though it was no cat.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "sivatherium",
@@ -157,7 +157,7 @@
     "year": -7000000,
     "category": "nature",
     "description": "A heavy, moose-like relative of giraffes carried two pairs of horns, one pair broad and branching.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "megatherium",
@@ -173,7 +173,7 @@
     "year": -4000000,
     "category": "nature",
     "description": "A South American relative of the guinea pig grew to the size of a bull, the biggest rodent on record.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "smilodon-sabre-tooth",
@@ -197,7 +197,7 @@
     "year": -1800000,
     "category": "nature",
     "description": "A long-legged North American bear stood taller than a grizzly and may have been the largest meat-eating bear.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "diprotodon",
@@ -205,15 +205,15 @@
     "year": -1600000,
     "category": "nature",
     "description": "A rhino-sized pouched grazer, the largest marsupial ever, wandered Australia in herds.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "cave-lion-big-cat",
-    "friendly_name": "Cave Lion, the Ice Age Big Cat",
-    "year": -600000,
+    "friendly_name": "Cave Lion, the Steppe Big Cat",
+    "year": -700000,
     "category": "nature",
     "description": "A huge, pale cat larger than any living lion hunted across the cold steppes, and was painted by early artists.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "woolly-mammoth-steppe",
@@ -229,7 +229,7 @@
     "year": -300000,
     "category": "nature",
     "description": "A huge, plant-eating bear spent winters hibernating in caves across Europe, leaving bones in vast numbers.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "dire-wolf-predator",
