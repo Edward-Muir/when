@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T10:15:03.110Z",
+  "updated_at": "2026-10-23T10:17:53.986Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-23T10:15:03.110Z"
     },
     "titus-becomes-emperor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0497b3d2f2e2d6bdb017d892a188905d0d3f2b4a85c4e04391001f30370dc6a8",
+      "updated_at": "2026-10-23T10:17:53.986Z"
     },
     "commodus-becomes-emperor": {
       "state": "pending",
