@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T13:07:14.145Z",
+  "updated_at": "2026-10-23T18:08:54.703Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,11 +114,11 @@
       "updated_at": "2026-10-23T13:07:14.014Z"
     },
     "heraclius-becomes-emperor": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Letters (MP and ΘΥ style Greek abbreviations) are painted at the top of the icon at upper left. Repaint the icon without lettering or crop it out.",
-      "sha256": "f84bfbe5b2814b080467dca3cecfbd86e3a39351998f024c37207fe65926efbb",
-      "updated_at": "2026-10-23T13:07:14.047Z"
+      "sha256": "5a57b6518121ea6f695af9bfed1bb9ed26117f5ac8eae87989388857cc9a03fd",
+      "updated_at": "2026-10-23T18:08:54.703Z"
     },
     "leo-iii-becomes-emperor": {
       "state": "qc-pass",
