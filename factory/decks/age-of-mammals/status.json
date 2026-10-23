@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T22:25:26.653Z",
+  "updated_at": "2026-10-23T22:28:24.061Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-23T22:25:26.653Z"
     },
     "basilosaurus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b16d387f48e3de13605fcce0efb927de481e7c8578fad8fc09a6d2c18da54560",
+      "updated_at": "2026-10-23T22:28:24.061Z"
     },
     "moeritherium": {
       "state": "pending",
