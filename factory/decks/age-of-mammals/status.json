@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T22:14:52.436Z",
+  "updated_at": "2026-10-23T22:17:30.257Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-23T22:14:52.436Z"
     },
     "icaronycteris-early-bat": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "08dccc521c8bb8dcce8927d72e487174a4442592abecdfa4f26b5acbf295e4a7",
+      "updated_at": "2026-10-23T22:17:30.257Z"
     },
     "pakicetus": {
       "state": "pending",
