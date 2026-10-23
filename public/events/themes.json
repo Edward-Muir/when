@@ -12513,7 +12513,10 @@
     "year": 14,
     "category": "empires",
     "description": "The stepson and adopted heir of the first emperor took the throne, showing power could pass within one family.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "claudius-raised-by-praetorians",
@@ -12521,7 +12524,10 @@
     "year": 41,
     "category": "empires",
     "description": "Soldiers of the Praetorian Guard found the dead ruler's hiding uncle and proclaim him emperor, an unlikely scholar on the throne.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "vespasian-proclaimed-emperor",
@@ -12529,7 +12535,11 @@
     "year": 69,
     "category": "empires",
     "description": "A general commanding in the East won the civil war and the throne, founding the Flavian dynasty.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Italy"
+    ]
   },
   {
     "name": "titus-becomes-emperor",
@@ -12537,7 +12547,10 @@
     "year": 79,
     "category": "empires",
     "description": "The conqueror of Jerusalem succeeded his father Vespasian and ruled briefly, remembered as a gentle and popular emperor.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "commodus-becomes-emperor",
@@ -12545,7 +12558,10 @@
     "year": 180,
     "category": "empires",
     "description": "The philosopher-emperor's son inherited the throne, a ruler later portrayed as a gladiator-obsessed tyrant.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "septimius-severus-seizes-throne",
@@ -12553,7 +12569,11 @@
     "year": 193,
     "category": "empires",
     "description": "An African-born general marched on Rome and defeated rivals to win the throne, founding the Severan dynasty.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Austria",
+      "Italy"
+    ]
   },
   {
     "name": "caracalla-sole-emperor",
@@ -12561,7 +12581,10 @@
     "year": 211,
     "category": "empires",
     "description": "After his father's death and the murder of his brother, Caracalla took sole power over the empire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "elagabalus-becomes-emperor",
@@ -12569,7 +12592,11 @@
     "year": 218,
     "category": "empires",
     "description": "A teenage priest of a Syrian sun god was proclaimed emperor by the troops, soon scandalising Rome.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Syria"
+    ]
   },
   {
     "name": "aurelian-becomes-emperor",
@@ -12577,7 +12604,10 @@
     "year": 270,
     "category": "empires",
     "description": "A tough soldier-emperor took the throne amid crisis and went on to reunify the fractured empire.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "diocletian-becomes-emperor",
@@ -12585,7 +12615,11 @@
     "year": 284,
     "category": "empires",
     "description": "A soldier of humble origins was hailed emperor and later divided rule among four men to steady the realm.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "constantine-hailed-emperor",
@@ -12593,7 +12627,10 @@
     "year": 306,
     "category": "empires",
     "description": "Troops at York proclaimed Constantine emperor after his father died, the start of the first Christian emperor's rise.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "julian-apostate-sole-emperor",
@@ -12601,7 +12638,11 @@
     "year": 361,
     "category": "empires",
     "description": "Julian became sole emperor on his cousin's death and tried to turn the empire back to the old gods.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "theodosius-i-becomes-emperor",
@@ -12609,7 +12650,12 @@
     "year": 379,
     "category": "empires",
     "description": "A Spanish-born general was named emperor in the East after a disastrous defeat by the Goths.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Serbia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "romulus-augustulus-emperor",
@@ -12617,7 +12663,10 @@
     "year": 475,
     "category": "empires",
     "description": "A boy was set on the western throne by his general father, destined to be the last emperor of Rome in the West.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "heraclius-becomes-emperor",
@@ -12625,7 +12674,12 @@
     "year": 610,
     "category": "empires",
     "description": "The son of Africa's governor sailed from Carthage, overthrew a tyrant and took Constantinople's throne, then fought Persia and the Arabs.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Tunisia",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "leo-iii-becomes-emperor",
@@ -12633,7 +12687,11 @@
     "year": 717,
     "category": "empires",
     "description": "A soldier from Syria seized the Byzantine throne as Arab fleets approached, founding a new dynasty.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "irene-sole-ruler-byzantium",
@@ -12641,7 +12699,11 @@
     "year": 797,
     "category": "empires",
     "description": "After blinding her own son, Irene ruled the Byzantine Empire in her own name, a woman holding the imperial title.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "basil-i-founds-macedonian-dynasty",
@@ -12649,7 +12711,11 @@
     "year": 867,
     "category": "empires",
     "description": "A peasant-born courtier murdered his patron and took the Byzantine throne, founding a dynasty that led its golden age.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "basil-ii-becomes-emperor",
@@ -12657,7 +12723,11 @@
     "year": 976,
     "category": "empires",
     "description": "The future \"Bulgar-Slayer\" became senior emperor on the death of John Tzimiskes, soon to expand the empire to a medieval peak.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "alexios-komnenos-seizes-power",
@@ -12665,7 +12735,11 @@
     "year": 1081,
     "category": "empires",
     "description": "A veteran general took Constantinople by force, restoring a battered empire and later calling for Western help.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "michael-viii-palaiologos-crowned",
@@ -12673,7 +12747,11 @@
     "year": 1259,
     "category": "empires",
     "description": "A nobleman had himself crowned co-emperor of the Greek exiles in Anatolia, soon to retake Constantinople.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "constantine-xi-last-emperor",
@@ -12681,6 +12759,11 @@
     "year": 1449,
     "category": "empires",
     "description": "The final Byzantine emperor took the throne of a city-state ringed by Ottoman power.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Europe"
+    ]
   }
 ]
