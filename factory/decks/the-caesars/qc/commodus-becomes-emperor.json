@@ -1,0 +1,15 @@
+{
+  "slug": "commodus-becomes-emperor",
+  "description": "A young man with curly dark hair stands centre frame in a lion-skin cloak with the lion's head on his shoulder, holding a wooden club and raising one hand. Armoured soldiers with raised arms and helmets surround him, with a fire burning at lower left, torches and a banner at top right, and a dark forest behind. The painting fills the whole image edge to edge with no frame or text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

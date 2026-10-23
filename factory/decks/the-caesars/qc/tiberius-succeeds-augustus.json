@@ -1,0 +1,15 @@
+{
+  "slug": "tiberius-succeeds-augustus",
+  "description": "An oil-painting style interior of a stone hall with arches and wall torches. In the foreground a stern, middle-aged man with short greying hair wears a golden-ochre toga with purple stripe over a white tunic, one hand resting on a stone balustrade. Behind him on the right is a white marble bust of a laurel-wreathed man in a toga. Behind the balustrade, rows of togate men in tiers raise their arms and seem to shout or cheer. No visible text, frame or border; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

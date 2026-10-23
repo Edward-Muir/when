@@ -12506,5 +12506,352 @@
     "regions": [
       "United Kingdom"
     ]
+  },
+  {
+    "name": "tiberius-succeeds-augustus",
+    "friendly_name": "Tiberius Succeeds Augustus",
+    "year": 14,
+    "category": "empires",
+    "description": "The stepson and adopted heir of the first emperor took the throne, showing power could pass within one family.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiberius-succeeds-augustus_afn3o0?_a=BAMAMikS0",
+    "color": "#2d1c18",
+    "text_color": "light"
+  },
+  {
+    "name": "claudius-raised-by-praetorians",
+    "friendly_name": "Claudius Raised by the Guard",
+    "year": 41,
+    "category": "empires",
+    "description": "Soldiers of the Praetorian Guard found the murdered ruler's uncle hiding and proclaimed him emperor, an unlikely scholar on the throne.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/claudius-raised-by-praetorians_f47znx?_a=BAMAMikS0",
+    "color": "#271f1e",
+    "text_color": "light"
+  },
+  {
+    "name": "vespasian-proclaimed-emperor",
+    "friendly_name": "Vespasian Proclaimed Emperor",
+    "year": 69,
+    "category": "empires",
+    "description": "A general commanding in the East won the civil war and the throne, founding the Flavian dynasty.",
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vespasian-proclaimed-emperor_zkjd2e?_a=BAMAMikS0",
+    "color": "#402a21",
+    "text_color": "light"
+  },
+  {
+    "name": "titus-becomes-emperor",
+    "friendly_name": "Titus Becomes Emperor",
+    "year": 79,
+    "category": "empires",
+    "description": "The conqueror of Jerusalem succeeded his father Vespasian and ruled briefly, remembered as a gentle and popular emperor.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/titus-becomes-emperor_4opzod?_a=BAMAMikS0",
+    "color": "#2b1d19",
+    "text_color": "light"
+  },
+  {
+    "name": "commodus-becomes-emperor",
+    "friendly_name": "Commodus Becomes Emperor",
+    "year": 180,
+    "category": "empires",
+    "description": "The philosopher-emperor's son inherited the throne, a ruler later portrayed as a gladiator-obsessed tyrant.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/commodus-becomes-emperor_v92sgx?_a=BAMAMikS0",
+    "color": "#34241d",
+    "text_color": "light"
+  },
+  {
+    "name": "septimius-severus-seizes-throne",
+    "friendly_name": "Septimius Severus Seizes the Throne",
+    "year": 193,
+    "category": "empires",
+    "description": "An African-born general marched on Rome and defeated rivals to win the throne, founding the Severan dynasty.",
+    "difficulty": "easy",
+    "regions": [
+      "Austria",
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/septimius-severus-seizes-throne_iw17bd?_a=BAMAMikS0",
+    "color": "#291e1c",
+    "text_color": "light"
+  },
+  {
+    "name": "caracalla-sole-emperor",
+    "friendly_name": "Caracalla Becomes Sole Emperor",
+    "year": 211,
+    "category": "empires",
+    "description": "After his father's death and the murder of his brother, Caracalla took sole power over the empire.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/caracalla-sole-emperor_dk65ps?_a=BAMAMikS0",
+    "color": "#271f1e",
+    "text_color": "light"
+  },
+  {
+    "name": "elagabalus-becomes-emperor",
+    "friendly_name": "Elagabalus Becomes Emperor",
+    "year": 218,
+    "category": "empires",
+    "description": "A teenage priest of a Syrian sun god was proclaimed emperor by the troops, soon scandalising Rome.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Syria"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/elagabalus-becomes-emperor_dbyhel?_a=BAMAMikS0",
+    "color": "#3e2419",
+    "text_color": "light"
+  },
+  {
+    "name": "aurelian-becomes-emperor",
+    "friendly_name": "Aurelian Becomes Emperor",
+    "year": 270,
+    "category": "empires",
+    "description": "A tough soldier-emperor took the throne amid crisis and went on to reunify the fractured empire.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aurelian-becomes-emperor_za61gv?_a=BAMAMikS0",
+    "color": "#2b1d1a",
+    "text_color": "light"
+  },
+  {
+    "name": "diocletian-becomes-emperor",
+    "friendly_name": "Diocletian Becomes Emperor",
+    "year": 284,
+    "category": "empires",
+    "description": "A soldier of humble origins was hailed emperor and later divided rule among four men to steady the realm.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diocletian-becomes-emperor_zgfj8q?_a=BAMAMikS0",
+    "color": "#312422",
+    "text_color": "light"
+  },
+  {
+    "name": "constantine-hailed-emperor",
+    "friendly_name": "Constantine Hailed Emperor",
+    "year": 306,
+    "category": "empires",
+    "description": "Troops at York proclaimed Constantine emperor after his father died, the start of the first Christian emperor's rise.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/constantine-hailed-emperor_em84xb?_a=BAMAMikS0",
+    "color": "#261f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "julian-apostate-sole-emperor",
+    "friendly_name": "Julian the Apostate Takes Power",
+    "year": 361,
+    "category": "empires",
+    "description": "Julian became sole emperor on his cousin's death and tried to turn the empire back to the old gods.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/julian-apostate-sole-emperor_c8b6b7?_a=BAMAMikS0",
+    "color": "#26201d",
+    "text_color": "light"
+  },
+  {
+    "name": "theodosius-i-becomes-emperor",
+    "friendly_name": "Theodosius I Becomes Emperor",
+    "year": 379,
+    "category": "empires",
+    "description": "A Spanish-born general was named emperor in the East after a disastrous defeat by the Goths.",
+    "difficulty": "easy",
+    "regions": [
+      "Serbia",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/theodosius-i-becomes-emperor_j25t30?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "romulus-augustulus-emperor",
+    "friendly_name": "Romulus Augustulus Made Emperor",
+    "year": 475,
+    "category": "empires",
+    "description": "A boy was set on the western throne by his general father, destined to be the last emperor of Rome in the West.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/romulus-augustulus-emperor_gwmyrr?_a=BAMAMikS0",
+    "color": "#271f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "heraclius-becomes-emperor",
+    "friendly_name": "Heraclius Becomes Emperor",
+    "year": 610,
+    "category": "empires",
+    "description": "The son of Africa's governor sailed from Carthage, overthrew a tyrant and took Constantinople's throne, then fought Persia and the Arabs.",
+    "difficulty": "easy",
+    "regions": [
+      "Tunisia",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heraclius-becomes-emperor_caw44h?_a=BAMAMikS0",
+    "color": "#232021",
+    "text_color": "light"
+  },
+  {
+    "name": "leo-iii-becomes-emperor",
+    "friendly_name": "Leo III Becomes Emperor",
+    "year": 717,
+    "category": "empires",
+    "description": "A soldier from Syria seized the Byzantine throne as Arab fleets approached, founding a new dynasty.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leo-iii-becomes-emperor_iu27bg?_a=BAMAMikS0",
+    "color": "#271f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "irene-sole-ruler-byzantium",
+    "friendly_name": "Empress Irene Rules Alone",
+    "year": 797,
+    "category": "empires",
+    "description": "After blinding her own son, Irene ruled the Byzantine Empire in her own name, a woman holding the imperial title.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irene-sole-ruler-byzantium_km0vb9?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "basil-i-founds-macedonian-dynasty",
+    "friendly_name": "Basil I Founds a Dynasty",
+    "year": 867,
+    "category": "empires",
+    "description": "A peasant-born courtier murdered his patron and took the Byzantine throne, founding a dynasty that led its golden age.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/basil-i-founds-macedonian-dynasty_unkz9r?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "basil-ii-becomes-emperor",
+    "friendly_name": "Basil II Becomes Emperor",
+    "year": 976,
+    "category": "empires",
+    "description": "The future \"Bulgar-Slayer\" became senior emperor on the death of John Tzimiskes, soon to expand the empire to a medieval peak.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/basil-ii-becomes-emperor_lhyhjz?_a=BAMAMikS0",
+    "color": "#281f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "alexios-komnenos-seizes-power",
+    "friendly_name": "Alexios I Komnenos Seizes Power",
+    "year": 1081,
+    "category": "empires",
+    "description": "A veteran general took Constantinople by force, restoring a battered empire and later calling for Western help.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexios-komnenos-seizes-power_th2jtb?_a=BAMAMikS0",
+    "color": "#392b24",
+    "text_color": "light"
+  },
+  {
+    "name": "michael-viii-palaiologos-crowned",
+    "friendly_name": "Michael VIII Palaiologos Crowned",
+    "year": 1259,
+    "category": "empires",
+    "description": "A nobleman had himself crowned co-emperor of the Greek exiles in Anatolia, soon to retake Constantinople.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/michael-viii-palaiologos-crowned_eyjd3o?_a=BAMAMikS0",
+    "color": "#2b201c",
+    "text_color": "light"
+  },
+  {
+    "name": "constantine-xi-last-emperor",
+    "friendly_name": "Constantine XI, Last Emperor",
+    "year": 1449,
+    "category": "empires",
+    "description": "The final Byzantine emperor took the throne of a city-state ringed by Ottoman power.",
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/constantine-xi-last-emperor_5h25na?_a=BAMAMikS0",
+    "color": "#261f1e",
+    "text_color": "light"
   }
 ]
