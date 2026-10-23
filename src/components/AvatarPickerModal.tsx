@@ -160,9 +160,9 @@ const AvatarPickerModal: React.FC<AvatarPickerModalProps> = ({
       maxHeightClass={MAX_HEIGHT}
     >
       <div className="shrink-0 px-4 py-3 border-b border-border">
-        <div className="flex items-center gap-3">
+        <div className="flex items-start gap-3">
           <Portrait animal={peek ?? avatar} size={96} className={peek ? LOCKED_ART : ''} />
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 min-h-24">
             {peek && peekedBadge ? (
               <div data-testid="locked-preview">
                 <div className="font-display font-semibold text-lg text-text truncate">
