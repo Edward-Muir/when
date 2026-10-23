@@ -1,0 +1,1266 @@
+[
+  {
+    "beat": 0,
+    "year": -66000000,
+    "title": "Purgatorius, Early Primate Kin",
+    "candidates": [
+      {
+        "name": "dinosaur-extinction",
+        "friendly_name": "Dinosaur Extinction",
+        "year": -66000000,
+        "description": "An asteroid impact caused the mass extinction of the dinosaurs.",
+        "score": 1,
+        "shared": [
+          "asteroid"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "paleocene-epoch-begins",
+        "friendly_name": "Paleocene Epoch Begins",
+        "year": -66000000,
+        "description": "The Paleocene Epoch began as mammals rapidly diversified to fill niches left by the extinct dinosaurs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "triceratops",
+        "friendly_name": "Triceratops",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Triceratops, a large herbivore with three facial horns and a bony frill, lived in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tyrannosaurus-rex",
+        "friendly_name": "Tyrannosaurus rex",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Tyrannosaurus rex, one of the largest land predators ever, ruled North America in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -58000000,
+    "title": "Plesiadapis, Squirrel-Like Primate",
+    "candidates": [
+      {
+        "name": "first-primates",
+        "friendly_name": "First Primates Evolve",
+        "year": -65900000,
+        "year_end": -56000000,
+        "description": "Early tree-dwelling mammals with grasping hands appeared, ancestors of monkeys, apes, and humans.",
+        "score": 1,
+        "shared": [
+          "mammals"
+        ]
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -56000000,
+    "title": "Coryphodon, the Swamp Giant",
+    "candidates": [
+      {
+        "name": "first-primates",
+        "friendly_name": "First Primates Evolve",
+        "year": -65900000,
+        "year_end": -56000000,
+        "description": "Early tree-dwelling mammals with grasping hands appeared, ancestors of monkeys, apes, and humans.",
+        "score": 1,
+        "shared": [
+          "mammals"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "eocene-epoch-begins",
+        "friendly_name": "Eocene Epoch Begins",
+        "year": -56000000,
+        "description": "The Eocene Epoch began, marked by the emergence of many of the first modern mammal groups.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -55000000,
+    "title": "Eohippus, the Dawn Horse",
+    "candidates": [
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": -52000000,
+    "title": "Icaronycteris, an Early Bat",
+    "candidates": [
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": -50500000,
+    "title": "Uintatherium, the Horned Giant",
+    "candidates": [
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": -50000000,
+    "title": "Pakicetus, Walking Whale Ancestor",
+    "candidates": [
+      {
+        "name": "whales-return-to-sea",
+        "friendly_name": "Whales Return to the Sea",
+        "year": -50000000,
+        "year_end": -38000000,
+        "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
+        "score": 1,
+        "shared": [
+          "whales"
+        ]
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": -49000000,
+    "title": "Ambulocetus, the Walking Whale",
+    "candidates": [
+      {
+        "name": "whales-return-to-sea",
+        "friendly_name": "Whales Return to the Sea",
+        "year": -50000000,
+        "year_end": -38000000,
+        "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
+        "score": 2,
+        "shared": [
+          "land",
+          "sea"
+        ]
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": -45000000,
+    "title": "Andrewsarchus, Giant Hoofed Hunter",
+    "candidates": [
+      {
+        "name": "whales-return-to-sea",
+        "friendly_name": "Whales Return to the Sea",
+        "year": -50000000,
+        "year_end": -38000000,
+        "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": -41000000,
+    "title": "Basilosaurus, the Serpent Whale",
+    "candidates": [
+      {
+        "name": "whales-return-to-sea",
+        "friendly_name": "Whales Return to the Sea",
+        "year": -50000000,
+        "year_end": -38000000,
+        "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": -38000000,
+    "title": "Hyaenodon, Early Meat-Eater",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "whales-return-to-sea",
+        "friendly_name": "Whales Return to the Sea",
+        "year": -50000000,
+        "year_end": -38000000,
+        "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": -37000000,
+    "title": "Moeritherium, Early Elephant Kin",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": -36000000,
+    "title": "Arsinoitherium, Two-Horned Giant",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": -35700000,
+    "title": "Dinictis, the False Sabre-Tooth",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": -34000000,
+    "title": "Paraceratherium, Land Giant",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": -30000000,
+    "title": "Aegyptopithecus, Dawn Monkey",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": -28400000,
+    "title": "Desmostylus, the Odd Sea Grazer",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": -23500000,
+    "title": "Proconsul, Early Ape of Africa",
+    "candidates": [
+      {
+        "name": "first-apes",
+        "friendly_name": "First Apes Evolve",
+        "year": -25000000,
+        "year_end": -17000000,
+        "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
+        "score": 4,
+        "shared": [
+          "africa",
+          "tailless",
+          "known",
+          "apes"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": -23000000,
+    "title": "Daeodon, the Hell Pig",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "plains"
+        ]
+      },
+      {
+        "name": "first-apes",
+        "friendly_name": "First Apes Evolve",
+        "year": -25000000,
+        "year_end": -17000000,
+        "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": -20600000,
+    "title": "Amphicyon, the Bear Dog",
+    "candidates": [
+      {
+        "name": "first-apes",
+        "friendly_name": "First Apes Evolve",
+        "year": -25000000,
+        "year_end": -17000000,
+        "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": -19500000,
+    "title": "Gomphotherium, Four-Tusked Giant",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 2,
+        "shared": [
+          "spread",
+          "across"
+        ]
+      },
+      {
+        "name": "first-apes",
+        "friendly_name": "First Apes Evolve",
+        "year": -25000000,
+        "year_end": -17000000,
+        "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
+        "score": 1,
+        "shared": [
+          "africa"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": -17000000,
+    "title": "Merychippus, the Grazing Horse",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "grasses"
+        ]
+      },
+      {
+        "name": "first-apes",
+        "friendly_name": "First Apes Evolve",
+        "year": -25000000,
+        "year_end": -17000000,
+        "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": -16000000,
+    "title": "Chalicotherium, the Clawed Browser",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": -15000000,
+    "title": "Platybelodon, the Shovel-Tusker",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": -10000000,
+    "title": "Deinotherium, Downturned Tusks",
+    "candidates": [
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": -9900000,
+    "title": "Livyatan, the Giant Sperm Whale",
+    "candidates": [
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": -9000000,
+    "title": "Thylacosmilus, Pouched Sabre-Tooth",
+    "candidates": [
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": -7000000,
+    "title": "Sivatherium, the Giant Giraffe",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 1,
+        "shared": [
+          "two"
+        ]
+      },
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": -5000000,
+    "title": "Megatherium, the Giant Ground Sloth",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 1,
+        "shared": [
+          "legs"
+        ]
+      },
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": -4000000,
+    "title": "Josephoartigasia, the Giant Rodent",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": -2500000,
+    "title": "Smilodon, the Sabre-Tooth",
+    "candidates": [
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 4,
+        "shared": [
+          "powerful",
+          "large",
+          "across",
+          "americas"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": -2000000,
+    "title": "Glyptodon, the Armoured Giant",
+    "candidates": [
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 2,
+        "shared": [
+          "giant",
+          "sized"
+        ]
+      },
+      {
+        "name": "homo-erectus-emerges",
+        "friendly_name": "Homo Erectus Emerges",
+        "year": -2040000,
+        "year_end": -1770000,
+        "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": -1800000,
+    "title": "Arctodus, Giant Short-Faced Bear",
+    "candidates": [
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "giant"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "homo-erectus-emerges",
+        "friendly_name": "Homo Erectus Emerges",
+        "year": -2040000,
+        "year_end": -1770000,
+        "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": -1600000,
+    "title": "Diprotodon, the Giant Wombat",
+    "candidates": [
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 2,
+        "shared": [
+          "giant",
+          "sized"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fire-mastery",
+        "friendly_name": "Humans Master Fire",
+        "year": -1790000,
+        "year_end": -400000,
+        "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": -600000,
+    "title": "Cave Lion, the Ice Age Big Cat",
+    "candidates": [
+      {
+        "name": "woolly-mammoths-appear",
+        "friendly_name": "Woolly Mammoths Appear",
+        "year": -800000,
+        "year_end": -400000,
+        "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
+        "score": 5,
+        "shared": [
+          "ice",
+          "age",
+          "across",
+          "cold",
+          "steppes"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 3,
+        "shared": [
+          "ice",
+          "age",
+          "across"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 3,
+        "shared": [
+          "ice",
+          "age",
+          "across"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 2,
+        "shared": [
+          "across",
+          "early"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "fire-mastery",
+        "friendly_name": "Humans Master Fire",
+        "year": -1790000,
+        "year_end": -400000,
+        "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": -400000,
+    "title": "Woolly Mammoth",
+    "candidates": [
+      {
+        "name": "woolly-mammoths-appear",
+        "friendly_name": "Woolly Mammoths Appear",
+        "year": -800000,
+        "year_end": -400000,
+        "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
+        "score": 4,
+        "shared": [
+          "woolly",
+          "shaggy",
+          "adapted",
+          "cold"
+        ]
+      },
+      {
+        "name": "food-storage-marrow",
+        "friendly_name": "Food Storage (Marrow)",
+        "year": -420000,
+        "year_end": -200000,
+        "description": "Bone marrow stored inside bones for later consumption, representing the earliest known food preservation.",
+        "score": 1,
+        "shared": [
+          "known"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "elephant"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "hide-and-leather-clothing-shelter",
+        "friendly_name": "Hide and Leather Clothing/Shelter",
+        "year": -400000,
+        "year_end": -300000,
+        "description": "Animal hides were processed and used for protection from the elements as clothing and shelter.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pigments",
+        "friendly_name": "Pigments",
+        "year": -400000,
+        "year_end": -300000,
+        "description": "Natural minerals ground into colored pigments for body decoration and early artistic expression.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": -300000,
+    "title": "Cave Bear, the Cavern Dweller",
+    "candidates": [
+      {
+        "name": "neanderthals-appear",
+        "friendly_name": "Neanderthals Appear",
+        "year": -430000,
+        "year_end": -200000,
+        "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+        "score": 2,
+        "shared": [
+          "across",
+          "europe"
+        ]
+      },
+      {
+        "name": "food-storage-marrow",
+        "friendly_name": "Food Storage (Marrow)",
+        "year": -420000,
+        "year_end": -200000,
+        "description": "Bone marrow stored inside bones for later consumption, representing the earliest known food preservation.",
+        "score": 1,
+        "shared": [
+          "bones"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "bones"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": -250000,
+    "title": "Dire Wolf",
+    "candidates": [
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "americas"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "americas"
+        ]
+      },
+      {
+        "name": "first-humans",
+        "friendly_name": "First Homo Sapiens",
+        "year": -315000,
+        "year_end": -233000,
+        "description": "Modern humans emerged in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anatomically-modern-humans",
+        "friendly_name": "Anatomically Modern Humans Emerge",
+        "year": -315000,
+        "year_end": -160000,
+        "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "food-storage-marrow",
+        "friendly_name": "Food Storage (Marrow)",
+        "year": -420000,
+        "year_end": -200000,
+        "description": "Bone marrow stored inside bones for later consumption, representing the earliest known food preservation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "neanderthals-appear",
+        "friendly_name": "Neanderthals Appear",
+        "year": -430000,
+        "year_end": -200000,
+        "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]
