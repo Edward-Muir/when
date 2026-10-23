@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T22:17:30.257Z",
+  "updated_at": "2026-10-23T22:20:09.278Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-23T22:17:30.257Z"
     },
     "pakicetus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "35183ae744742674d8c4d5bda2b2286316b182103833ea5519f3fe8e98c04598",
+      "updated_at": "2026-10-23T22:20:09.278Z"
     },
     "ambulocetus": {
       "state": "pending",
