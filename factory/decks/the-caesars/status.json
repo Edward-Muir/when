@@ -3,7 +3,7 @@
   "name": "The Caesars",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T09:15:47.086Z",
-  "updated_at": "2026-10-23T12:41:14.610Z",
+  "updated_at": "2026-10-23T13:07:14.145Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-10-23T11:07:43.850Z"
     },
     "vespasian-proclaimed-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "A word (SIGNA) is painted on a plaque on the standard at right. Remove the lettering and leave the plaque blank or use a plain emblem. The rest of the scene matches the card.",
+      "reason": null,
       "sha256": "42c31c446bc062a17ad4d9af464b58539091a5c25b17aa55f811e0e77dd5d3fe",
-      "updated_at": "2026-10-23T12:10:32.009Z"
+      "updated_at": "2026-10-23T13:07:13.884Z"
     },
     "titus-becomes-emperor": {
       "state": "qc-pass",
@@ -86,60 +86,60 @@
       "updated_at": "2026-10-23T11:07:44.105Z"
     },
     "constantine-hailed-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c030011871e6cee9a3348de1583a48c5049e36951d8871fcfc94d5f91957b738",
-      "updated_at": "2026-10-23T12:16:18.721Z"
+      "updated_at": "2026-10-23T13:07:13.918Z"
     },
     "julian-apostate-sole-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a1cfa4a5cd7a70b06d7b0c881d22c576f653a3a27bd2c7203dbb6418fa68bde3",
-      "updated_at": "2026-10-23T12:20:05.664Z"
+      "updated_at": "2026-10-23T13:07:13.950Z"
     },
     "theodosius-i-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ed09d0851b0f24a74c513f520a4d2a286d4c7777567b233732bc2d1ee71151fc",
-      "updated_at": "2026-10-23T12:22:55.951Z"
+      "updated_at": "2026-10-23T13:07:13.981Z"
     },
     "romulus-augustulus-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f4bb0949225661f45c1a9f06cb89c1f911f319fe54d47d6d087c3f93161701c0",
-      "updated_at": "2026-10-23T12:25:48.450Z"
+      "updated_at": "2026-10-23T13:07:14.014Z"
     },
     "heraclius-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Letters (MP and ΘΥ style Greek abbreviations) are painted at the top of the icon at upper left. Repaint the icon without lettering or crop it out.",
       "sha256": "f84bfbe5b2814b080467dca3cecfbd86e3a39351998f024c37207fe65926efbb",
-      "updated_at": "2026-10-23T12:28:38.656Z"
+      "updated_at": "2026-10-23T13:07:14.047Z"
     },
     "leo-iii-becomes-emperor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8d84cc2a35cfb6a1e1a32d0e64face7243a4c026dcf536d30dec794191f333a9",
-      "updated_at": "2026-10-23T12:31:30.709Z"
+      "updated_at": "2026-10-23T13:07:14.080Z"
     },
     "irene-sole-ruler-byzantium": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c2c7f890918e02a160f71ec5b4d9f2323dfef28bb58f9ef034e2308cb686dd8b",
-      "updated_at": "2026-10-23T12:34:25.525Z"
+      "updated_at": "2026-10-23T13:07:14.113Z"
     },
     "basil-i-founds-macedonian-dynasty": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1f5ed5f4c13f8fa26b89e406943cb5c244596fc7a7170991244c65b5d6869fbc",
-      "updated_at": "2026-10-23T12:41:14.610Z"
+      "updated_at": "2026-10-23T13:07:14.145Z"
     },
     "basil-ii-becomes-emperor": {
       "state": "pending",

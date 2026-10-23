@@ -14,11 +14,11 @@
     "description": "A Roman soldier in a crested helmet and scale armour and red-trimmed cloak grips a heavy dark patterned curtain in a marble palace hall. Behind it, an older, thin, grey-haired man in a cream tunic cowers against a wall with a wide-eyed frightened look and one hand raised. A second helmeted soldier stands in the background shadows, and the floor is a patterned mosaic. The painting fills the frame edge to edge with no visible text."
   },
   "vespasian-proclaimed-emperor": {
-    "state": "qc-fail",
-    "reason": "A word (SIGNA) is painted on a plaque on the standard at right. Remove the lettering and leave the plaque blank or use a plain emblem. The rest of the scene matches the card.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A balding, stern general in Roman muscle armour and a red cloak stands on a large round shield held aloft by cheering legionaries, one hand raised and the other holding an eagle standard. Red banners, bronze standards, spears and tents fill a smoky dusk camp. A small plaque on the standard at right carries the word SIGNA. No frame or border; nothing graphic."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A laurel-crowned, heavy-set older man in red cloak and segmented armour stands barefoot-sandalled on a large bronze shield, held aloft by cheering helmeted legionaries. Behind them are tents, campfires, smoke-darkened sky, and tall gold eagle standards and a round-disc standard. The painted style is an oil-painting look; no text is visible, and the image fills its frame edge to edge."
   },
   "titus-becomes-emperor": {
     "state": "qc-pass",
@@ -68,5 +68,61 @@
     "by": "review",
     "attempts": 1,
     "description": "A bearded man with grey hair, wearing a silver cuirass, a purple cloak and a sword, stands on a wooden platform with one arm raised. Around him, helmeted soldiers hold long spears and torches in front of dark military tents and red-and-black banners under a smoky, stormy sky. The painting fills the frame edge to edge, with no visible text."
+  },
+  "constantine-hailed-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painted scene: a clean-shaven young man in a red cloak and metal chest armour is lifted high on the shoulders of soldiers, one arm raised. The soldiers wear mail and helmets and carry round shields with a painted bird-like emblem, and one holds a gold standard. Behind them are stone walls, towers, a wooden scaffold and rolling hills under a stormy sky. No visible text."
+  },
+  "julian-apostate-sole-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man with a gold laurel wreath and a dark cloak stands at a stone altar, sprinkling or offering something from his hands over a bowl. Smoke and flames rise from a brazier at the right. Behind him are large marble statues of a bearded god and a helmeted goddess holding a spear, and a torch burns on the left beside a relief-carved column. The scene is dim and lit by firelight, with no visible text, frame or border."
+  },
+  "theodosius-i-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A kneeling man in dark Roman-style armour and a black cloak, with a gold diadem on his head, while a crowned man in purple and gold robes lays a hand on his head. Armoured soldiers with helmets and spears stand behind them in a torch-lit stone hall with arches and columns. No visible text, frame or graphic content."
+  },
+  "romulus-augustulus-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A young boy wearing a jeweled gold crown and a purple and gold embroidered robe sits on an ornate grey marble throne in a dim hall with candles and columns. A man in dark lamellar armour and a brown cloak stands behind the throne with his hand on its back. Several figures in shadow line the background. The painting fills the whole frame, with no visible border, text or signature."
+  },
+  "heraclius-becomes-emperor": {
+    "state": "qc-fail",
+    "reason": "Letters (MP and ΘΥ style Greek abbreviations) are painted at the top of the icon at upper left. Repaint the icon without lettering or crop it out.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A bearded man in gold-trimmed scale armour and a dark red cloak stands at the carved prow of a wooden galley, hand on a sword. At upper left is a gold-framed Madonna and child icon with Greek-style letters painted at its top corners. Behind him are helmeted men; on the right, sailing galleys cross dark water toward a walled domed city under a stormy sky. Oil painting, filling the image edge to edge."
+  },
+  "leo-iii-becomes-emperor": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man in scale armour and a metal helmet with a purple cloak and red undertunic grips a sword hilt beside a stone wall. Behind him, soldiers with shields and spears stand near a siege engine. Beyond the wall, small sailing ships sit on a sea at sunset under dark clouds. No visible text, border or frame; painterly oil style."
+  },
+  "irene-sole-ruler-byzantium": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A woman in a jewelled crown with a cross and pearl veil sits alone on a gold-and-red jewelled throne, holding a sceptre in her right hand and a golden orb with a cross in her left. She wears an ornate embroidered gold and jewel-studded robe. Around her, men in dark robes kneel and bow with their heads down, and armoured guards with spears stand in the background. The setting is a dim vaulted hall with gilded mosaic arches, stone columns and lit torches. No text, numbers or frame are visible."
+  },
+  "basil-i-founds-macedonian-dynasty": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded, muscular man in a red and gold embroidered imperial robe stands in a dim church while a bearded cleric in black vestments with gold trim sets a jeweled crown on his head. Behind them are gold icons, lit candles, a column and incense smoke, with a light shaft from a high window. The painting fills the frame edge to edge, with no visible text."
   }
 }

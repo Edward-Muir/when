@@ -1,0 +1,15 @@
+{
+  "slug": "heraclius-becomes-emperor",
+  "description": "A bearded man in gold-trimmed scale armour and a dark red cloak stands at the carved prow of a wooden galley, hand on a sword. At upper left is a gold-framed Madonna and child icon with Greek-style letters painted at its top corners. Behind him are helmeted men; on the right, sailing galleys cross dark water toward a walled domed city under a stormy sky. Oil painting, filling the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Letters (MP and ΘΥ style Greek abbreviations) are painted at the top of the icon at upper left. Repaint the icon without lettering or crop it out."
+}
