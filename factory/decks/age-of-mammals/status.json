@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-23T22:09:02.515Z",
+  "updated_at": "2026-10-23T22:11:32.032Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-23T22:09:02.515Z"
     },
     "plesiadapis": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a3c25b7b7a32f494834517d1cdaa84d3b6e0bcef1affa590d440b66e160a976e",
+      "updated_at": "2026-10-23T22:11:32.032Z"
     },
     "eohippus-dawn-horse": {
       "state": "pending",
