@@ -12516,7 +12516,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "claudius-raised-by-praetorians",
@@ -12527,7 +12528,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "vespasian-proclaimed-emperor",
@@ -12539,7 +12541,8 @@
     "regions": [
       "Egypt",
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "titus-becomes-emperor",
@@ -12550,7 +12553,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "commodus-becomes-emperor",
@@ -12561,7 +12565,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "septimius-severus-seizes-throne",
@@ -12573,7 +12578,8 @@
     "regions": [
       "Austria",
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "caracalla-sole-emperor",
@@ -12584,7 +12590,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "elagabalus-becomes-emperor",
@@ -12596,7 +12603,8 @@
     "regions": [
       "Italy",
       "Syria"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "aurelian-becomes-emperor",
@@ -12607,7 +12615,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "diocletian-becomes-emperor",
@@ -12619,7 +12628,8 @@
     "regions": [
       "Turkey",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "constantine-hailed-emperor",
@@ -12630,7 +12640,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "julian-apostate-sole-emperor",
@@ -12642,7 +12653,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "theodosius-i-becomes-emperor",
@@ -12655,7 +12667,8 @@
       "Serbia",
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "romulus-augustulus-emperor",
@@ -12666,7 +12679,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "heraclius-becomes-emperor",
@@ -12679,7 +12693,8 @@
       "Tunisia",
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "leo-iii-becomes-emperor",
@@ -12691,7 +12706,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "irene-sole-ruler-byzantium",
@@ -12703,7 +12719,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "basil-i-founds-macedonian-dynasty",
@@ -12715,7 +12732,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "basil-ii-becomes-emperor",
@@ -12727,7 +12745,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "alexios-komnenos-seizes-power",
@@ -12739,7 +12758,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "michael-viii-palaiologos-crowned",
@@ -12751,7 +12771,8 @@
     "regions": [
       "Turkey",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "constantine-xi-last-emperor",
@@ -12764,6 +12785,7 @@
       "Greece",
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   }
 ]
