@@ -3,7 +3,7 @@
   "name": "Rise of Empires",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T07:15:06.136Z",
-  "updated_at": "2026-10-24T08:14:51.766Z",
+  "updated_at": "2026-10-24T08:18:24.033Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-24T08:14:51.766Z"
     },
     "alexander-invades-persia-granicus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8faa93f7b82790094147bbe18fa061c7043bcf171b8377d24c6b997861462895",
+      "updated_at": "2026-10-24T08:18:24.033Z"
     },
     "arsaces-founds-parthian-empire": {
       "state": "pending",
