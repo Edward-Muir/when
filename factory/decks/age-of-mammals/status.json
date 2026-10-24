@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T02:28:16.504Z",
+  "updated_at": "2026-10-24T02:31:15.484Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-24T02:28:16.504Z"
     },
     "smilodon-sabre-tooth": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "62eb52f69892ce1c442855a8793a5af95e934210fdc2e9ff053b3a0fc882d90c",
+      "updated_at": "2026-10-24T02:31:15.484Z"
     },
     "glyptodon": {
       "state": "pending",
