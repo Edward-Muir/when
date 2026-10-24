@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:14:20.808Z",
+  "updated_at": "2026-10-24T16:23:29.000Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-24T16:14:20.808Z"
     },
     "rachmaninoff-piano-concerto-2": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7c016c6d34ae25b7135ca01c3c6bf798b49d36c9e2a918d7067d9f5f9f981a56",
+      "updated_at": "2026-10-24T16:23:29.000Z"
     },
     "debussy-clair-de-lune": {
       "state": "pending",
