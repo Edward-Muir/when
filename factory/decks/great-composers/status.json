@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T13:07:20.395Z",
+  "updated_at": "2026-10-24T14:10:20.527Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-24T13:07:20.323Z"
     },
     "chopin-24-preludes-published": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b35fd7927c79298000c328140f746798a2fd8110ac2e444ddd8e66eafe2d9532",
+      "updated_at": "2026-10-24T14:10:20.527Z"
     },
     "mendelssohn-wedding-march": {
       "state": "qc-pass",
