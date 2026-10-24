@@ -12513,7 +12513,10 @@
     "year": -1792,
     "category": "empires",
     "description": "Hammurabi took the throne of a modest city on the Euphrates and began conquests that built a great Mesopotamian realm.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "nabopolassar-neo-babylonian-empire",
@@ -12521,7 +12524,10 @@
     "year": -626,
     "category": "empires",
     "description": "A Chaldean leader seized Babylon from Assyrian control and founded the dynasty that would rebuild the city in splendour.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "alexander-invades-persia-granicus",
@@ -12529,7 +12535,13 @@
     "year": -334,
     "category": "empires",
     "description": "A young Macedonian king crossed into Asia with his army and began the conquests that toppled the Persian Empire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Iran",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "arsaces-founds-parthian-empire",
@@ -12537,7 +12549,10 @@
     "year": -247,
     "category": "empires",
     "description": "A nomadic chieftain seized a province from the Seleucids and began the dynasty that later rivalled Rome in the East.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "modu-shanyu-xiongnu-empire",
@@ -12545,6 +12560,10 @@
     "year": -209,
     "category": "empires",
     "description": "A steppe prince killed his father to seize power and united the nomadic tribes into a confederation that menaced China.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China",
+      "Mongolia"
+    ]
   }
 ]
