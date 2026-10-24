@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:26:54.642Z",
+  "updated_at": "2026-10-24T16:31:00.133Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-24T16:26:54.642Z"
     },
     "ravel-bolero-premiere": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c2c32d19ced33f3e1dc455a2d30c3c79e70513aa34984fa3efd8fc6cd6d1bbb6",
+      "updated_at": "2026-10-24T16:31:00.133Z"
     },
     "prokofiev-peter-and-the-wolf": {
       "state": "pending",
