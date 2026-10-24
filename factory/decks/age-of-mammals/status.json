@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T00:12:40.410Z",
+  "updated_at": "2026-10-24T00:15:27.099Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-24T00:12:40.410Z"
     },
     "proconsul": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4553211e78efd042ce520910429c9c90f8ae9e87b6ea158ef580876065eac7a0",
+      "updated_at": "2026-10-24T00:15:27.099Z"
     },
     "gomphotherium": {
       "state": "pending",
