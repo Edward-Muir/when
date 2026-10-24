@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T04:11:04.066Z",
+  "updated_at": "2026-10-24T04:21:01.792Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-10-24T03:07:43.601Z"
     },
     "diprotodon": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d158e7fb23b1c258c5c04725984e851c1ded75ad04d8e633775bda448fa14747",
+      "updated_at": "2026-10-24T04:21:01.792Z"
     },
     "cave-lion-big-cat": {
       "state": "pending",
