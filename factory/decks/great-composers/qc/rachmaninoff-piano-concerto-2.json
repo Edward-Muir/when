@@ -1,0 +1,15 @@
+{
+  "slug": "rachmaninoff-piano-concerto-2",
+  "description": "A pianist in a dark suit, seen from behind, plays a black grand piano with its lid raised. Behind it an orchestra with violins and a conductor with one arm raised fills an ornate gilded concert hall. Balconies above hold a crowd, and a chandelier hangs from the vaulted ceiling. Warm, dim lamplight and painterly brushwork; no visible text, border or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

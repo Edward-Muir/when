@@ -1,0 +1,15 @@
+{
+  "slug": "glass-einstein-on-the-beach",
+  "description": "A dark, murky painting of a black steam locomotive standing in a dim shed, with a glowing white fluorescent tube overhead and wisps of steam. In the foreground a small wooden chair sits on a dark floor, lit from above, with a violin leaning against its back. No people are visible, and there is no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

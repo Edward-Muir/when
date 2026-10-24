@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:57:22.265Z",
+  "updated_at": "2026-10-24T17:07:59.125Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,11 +86,11 @@
       "updated_at": "2026-10-24T13:07:20.395Z"
     },
     "bizet-carmen-premiere": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4f5bbeb06695479be4f7b6b30ab0e1111f0e2d8362853a079688a9d543bbded7",
-      "updated_at": "2026-10-24T16:10:44.517Z"
+      "updated_at": "2026-10-24T17:07:58.801Z"
     },
     "wagner-ring-cycle-bayreuth": {
       "state": "qc-pass",
@@ -100,67 +100,67 @@
       "updated_at": "2026-10-24T15:07:09.614Z"
     },
     "puccini-la-boheme-premiere": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a2cb837d63062ea518e8805ac0d31b22dbad4d0dd110c58a20ae169a08607f98",
-      "updated_at": "2026-10-24T16:14:20.808Z"
+      "updated_at": "2026-10-24T17:07:58.840Z"
     },
     "rachmaninoff-piano-concerto-2": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7c016c6d34ae25b7135ca01c3c6bf798b49d36c9e2a918d7067d9f5f9f981a56",
-      "updated_at": "2026-10-24T16:23:29.000Z"
+      "updated_at": "2026-10-24T17:07:58.875Z"
     },
     "debussy-clair-de-lune": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "521c6aec3449f2f6ffb702c6547f784db7b7568d3ddd9c152c6c1b3ecc78a6a1",
-      "updated_at": "2026-10-24T16:26:54.642Z"
+      "updated_at": "2026-10-24T17:07:58.911Z"
     },
     "ravel-bolero-premiere": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c2c32d19ced33f3e1dc455a2d30c3c79e70513aa34984fa3efd8fc6cd6d1bbb6",
-      "updated_at": "2026-10-24T16:31:00.133Z"
+      "updated_at": "2026-10-24T17:07:58.946Z"
     },
     "prokofiev-peter-and-the-wolf": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b5ba72331f90284c90de137fde031cfa542525f76869d19ad1d7d8eb5a8f93dc",
-      "updated_at": "2026-10-24T16:35:28.939Z"
+      "updated_at": "2026-10-24T17:07:58.981Z"
     },
     "orff-carmina-burana-premiere": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7bb9eb19d674e71bc500b0cc2aa5ee3c00856d03261264125a9fc53cf927c8e2",
-      "updated_at": "2026-10-24T16:42:36.372Z"
+      "updated_at": "2026-10-24T17:07:59.016Z"
     },
     "britten-war-requiem-premiere": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "901e2d97932e528d70fbfe032ea2849afee93c3d05d14e141ae97e4c6f1957f9",
-      "updated_at": "2026-10-24T16:47:23.284Z"
+      "updated_at": "2026-10-24T17:07:59.050Z"
     },
     "glass-einstein-on-the-beach": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a5dc5fe121e773080059063dbdb6e6b852cf3243f3671943bf3b2419225f9aac",
-      "updated_at": "2026-10-24T16:52:09.018Z"
+      "updated_at": "2026-10-24T17:07:59.090Z"
     },
     "adams-nixon-in-china-premiere": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible lettering 'UNITED STATES OF AMERICA' is painted along the airliner's fuselage; repaint the plane without any writing.",
       "sha256": "6e61fd38fca8c9af8797a6e7c7afa8496a0aa7054d2f2bb6cf3d56f1c20465a5",
-      "updated_at": "2026-10-24T16:57:22.265Z"
+      "updated_at": "2026-10-24T17:07:59.125Z"
     }
   }
 }
