@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:35:28.939Z",
+  "updated_at": "2026-10-24T16:42:36.372Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-24T16:35:28.939Z"
     },
     "orff-carmina-burana-premiere": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7bb9eb19d674e71bc500b0cc2aa5ee3c00856d03261264125a9fc53cf927c8e2",
+      "updated_at": "2026-10-24T16:42:36.372Z"
     },
     "britten-war-requiem-premiere": {
       "state": "pending",
