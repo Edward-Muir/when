@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T14:10:20.527Z",
+  "updated_at": "2026-10-24T14:23:32.280Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -92,10 +92,11 @@
       "sha256": null
     },
     "wagner-ring-cycle-bayreuth": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f291c2ff3d15a994dd9c8f78e665667ad6c346c6515d4632fce546ea7534de0b",
+      "updated_at": "2026-10-24T14:23:32.280Z"
     },
     "puccini-la-boheme-premiere": {
       "state": "pending",
