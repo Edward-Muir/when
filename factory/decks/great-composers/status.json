@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:42:36.372Z",
+  "updated_at": "2026-10-24T16:47:23.284Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-10-24T16:42:36.372Z"
     },
     "britten-war-requiem-premiere": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "901e2d97932e528d70fbfe032ea2849afee93c3d05d14e141ae97e4c6f1957f9",
+      "updated_at": "2026-10-24T16:47:23.284Z"
     },
     "glass-einstein-on-the-beach": {
       "state": "pending",
