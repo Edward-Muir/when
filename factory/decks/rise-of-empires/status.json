@@ -3,7 +3,7 @@
   "name": "Rise of Empires",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T07:15:06.136Z",
-  "updated_at": "2026-10-24T08:22:29.228Z",
+  "updated_at": "2026-10-24T08:26:21.975Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-24T08:22:29.228Z"
     },
     "modu-shanyu-xiongnu-empire": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1a6baf6811066553459f2a29e9e40edf4f1bb06de3d2a3ba51632770379f7adb",
+      "updated_at": "2026-10-24T08:26:21.975Z"
     }
   }
 }
