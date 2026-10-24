@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T12:31:53.867Z",
+  "updated_at": "2026-10-24T12:38:16.398Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-24T12:31:53.867Z"
     },
     "berlioz-symphonie-fantastique": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0e2be5eb15c36f2ebf688df09bf9f89c8e59cf5e652019b137e68a54e7c8150b",
+      "updated_at": "2026-10-24T12:38:16.398Z"
     },
     "chopin-24-preludes-published": {
       "state": "pending",
