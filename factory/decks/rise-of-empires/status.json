@@ -3,7 +3,7 @@
   "name": "Rise of Empires",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T07:15:06.136Z",
-  "updated_at": "2026-10-24T08:11:17.768Z",
+  "updated_at": "2026-10-24T08:14:51.766Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-24T08:11:17.768Z"
     },
     "nabopolassar-neo-babylonian-empire": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9dfc5523480d2c65138df26eca3df2102f166482f41fe1788c887b1fccd2c789",
+      "updated_at": "2026-10-24T08:14:51.766Z"
     },
     "alexander-invades-persia-granicus": {
       "state": "pending",
