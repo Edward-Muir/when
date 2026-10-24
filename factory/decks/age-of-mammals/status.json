@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T02:31:15.484Z",
+  "updated_at": "2026-10-24T02:34:59.634Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -177,10 +177,11 @@
       "updated_at": "2026-10-24T02:31:15.484Z"
     },
     "glyptodon": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8b941d0f1ef4eccec38aa5ae5b67e0a183f68b2cf3e60ebd9fee8a3f1bf2f7ed",
+      "updated_at": "2026-10-24T02:34:59.634Z"
     },
     "arctodus": {
       "state": "pending",
