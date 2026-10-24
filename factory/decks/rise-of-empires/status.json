@@ -3,7 +3,7 @@
   "name": "Rise of Empires",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T07:15:06.136Z",
-  "updated_at": "2026-10-24T08:18:24.033Z",
+  "updated_at": "2026-10-24T08:22:29.228Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-24T08:18:24.033Z"
     },
     "arsaces-founds-parthian-empire": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ab1e79c70cd7c3043e47ac775cca18ba7e85ed3e68413ccd39e40988284e57f3",
+      "updated_at": "2026-10-24T08:22:29.228Z"
     },
     "modu-shanyu-xiongnu-empire": {
       "state": "pending",
