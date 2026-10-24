@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T02:24:02.007Z",
+  "updated_at": "2026-10-24T02:28:16.504Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-24T02:24:02.007Z"
     },
     "josephoartigasia": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "961f1348524d07306cba07467bff7fd2f618537a78dca4f80e56fc1af0fc7d4e",
+      "updated_at": "2026-10-24T02:28:16.504Z"
     },
     "smilodon-sabre-tooth": {
       "state": "pending",
