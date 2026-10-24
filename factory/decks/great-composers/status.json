@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T14:23:32.280Z",
+  "updated_at": "2026-10-24T15:07:09.614Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,11 +65,11 @@
       "updated_at": "2026-10-24T13:07:20.323Z"
     },
     "chopin-24-preludes-published": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b35fd7927c79298000c328140f746798a2fd8110ac2e444ddd8e66eafe2d9532",
-      "updated_at": "2026-10-24T14:10:20.527Z"
+      "updated_at": "2026-10-24T15:07:09.583Z"
     },
     "mendelssohn-wedding-march": {
       "state": "qc-pass",
@@ -92,11 +92,11 @@
       "sha256": null
     },
     "wagner-ring-cycle-bayreuth": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f291c2ff3d15a994dd9c8f78e665667ad6c346c6515d4632fce546ea7534de0b",
-      "updated_at": "2026-10-24T14:23:32.280Z"
+      "updated_at": "2026-10-24T15:07:09.614Z"
     },
     "puccini-la-boheme-premiere": {
       "state": "pending",
