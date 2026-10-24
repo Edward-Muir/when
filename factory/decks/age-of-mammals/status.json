@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T02:20:40.296Z",
+  "updated_at": "2026-10-24T02:24:02.007Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-24T02:20:40.296Z"
     },
     "megatherium": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b69347946fff23bb25829adb5b84e488e3f2bd09ee5694689769b2bbe28df863",
+      "updated_at": "2026-10-24T02:24:02.007Z"
     },
     "josephoartigasia": {
       "state": "pending",
