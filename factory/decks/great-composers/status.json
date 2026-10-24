@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:47:23.284Z",
+  "updated_at": "2026-10-24T16:52:09.018Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-10-24T16:47:23.284Z"
     },
     "glass-einstein-on-the-beach": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a5dc5fe121e773080059063dbdb6e6b852cf3243f3671943bf3b2419225f9aac",
+      "updated_at": "2026-10-24T16:52:09.018Z"
     },
     "adams-nixon-in-china-premiere": {
       "state": "pending",
