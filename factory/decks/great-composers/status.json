@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T12:11:34.986Z",
+  "updated_at": "2026-10-24T12:16:29.024Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-24T12:11:34.986Z"
     },
     "dufay-nuper-rosarum-flores": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "719de4f81fb4963986b3169127852a5000b646589381cdd44790808829162437",
+      "updated_at": "2026-10-24T12:16:29.024Z"
     },
     "palestrina-pope-marcellus-mass": {
       "state": "pending",
