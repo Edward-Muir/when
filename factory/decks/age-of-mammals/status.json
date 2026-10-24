@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T03:07:43.601Z",
+  "updated_at": "2026-10-24T04:11:04.066Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,11 +142,11 @@
       "updated_at": "2026-10-24T03:07:43.382Z"
     },
     "thylacosmilus": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Shows a generic sabre-toothed cat (Smilodon-like, with a cat's face and spotted coat), but the card is Thylacosmilus, a South American pouched marsupial that was not a cat. Redraw it as a low marsupial predator with bony chin flanges sheathing the sabre canines.",
-      "sha256": "00084079620e4ebf0e45a92543d8c5d20c1e351470c421f116881426db718e8e",
-      "updated_at": "2026-10-24T03:07:43.412Z"
+      "sha256": "3ca607d16b6c2c53ef5fb9a988042b08e78536054ad5a8e172333a3d8da831cb",
+      "updated_at": "2026-10-24T04:11:04.066Z"
     },
     "sivatherium": {
       "state": "qc-pass",
