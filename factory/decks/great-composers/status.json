@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:10:44.517Z",
+  "updated_at": "2026-10-24T16:14:20.808Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-24T15:07:09.614Z"
     },
     "puccini-la-boheme-premiere": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a2cb837d63062ea518e8805ac0d31b22dbad4d0dd110c58a20ae169a08607f98",
+      "updated_at": "2026-10-24T16:14:20.808Z"
     },
     "rachmaninoff-piano-concerto-2": {
       "state": "pending",
