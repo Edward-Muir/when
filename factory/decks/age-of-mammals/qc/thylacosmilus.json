@@ -1,0 +1,15 @@
+{
+  "slug": "thylacosmilus",
+  "description": "A tawny, dark-striped big cat with two long curved sabre canines, crouched and stalking forward through dry grass under a heavy grey sky. Dead branches and stubble fill the foreground. No text, no border or frame, and no visible wounds. The painted style and fur suggest a prehistoric predator.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The animal reads as a striped, placental sabre-tooth cat in the Smilodon mould, not clearly a pouched marsupial. The scene asks for a low, cat-like marsupial with bony chin flanges protecting the canines, and neither the flanges nor any marsupial feature is visible. The artist should check whether this could be mistaken for a different sabre-tooth, or redraw with a more marsupial, lower-slung build."
+}

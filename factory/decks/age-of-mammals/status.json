@@ -1,9 +1,9 @@
 {
   "deck": "age-of-mammals",
   "name": "Age of Mammals",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T04:35:41.650Z",
+  "updated_at": "2026-10-24T05:07:46.960Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-23T22:09:02.515Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-24T05:07:46.960Z"
     }
   ],
   "slugs": {
@@ -142,11 +146,11 @@
       "updated_at": "2026-10-24T03:07:43.382Z"
     },
     "thylacosmilus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Shows a generic sabre-toothed cat (Smilodon-like, with a cat's face and spotted coat), but the card is Thylacosmilus, a South American pouched marsupial that was not a cat. Redraw it as a low marsupial predator with bony chin flanges sheathing the sabre canines.",
+      "reason": null,
       "sha256": "3ca607d16b6c2c53ef5fb9a988042b08e78536054ad5a8e172333a3d8da831cb",
-      "updated_at": "2026-10-24T04:11:04.066Z"
+      "updated_at": "2026-10-24T05:07:46.787Z"
     },
     "sivatherium": {
       "state": "qc-pass",
@@ -191,39 +195,39 @@
       "updated_at": "2026-10-24T03:07:43.601Z"
     },
     "diprotodon": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d158e7fb23b1c258c5c04725984e851c1ded75ad04d8e633775bda448fa14747",
-      "updated_at": "2026-10-24T04:21:01.792Z"
+      "updated_at": "2026-10-24T05:07:46.823Z"
     },
     "cave-lion-big-cat": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3b5c0396e40f3fdb3e32518b4881abf898e0ccb0441fdcdb43f16d9b654ab40a",
-      "updated_at": "2026-10-24T04:24:27.006Z"
+      "updated_at": "2026-10-24T05:07:46.858Z"
     },
     "woolly-mammoth-steppe": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "63a95d60dc9fe86823a6a86bcddf7f1e356e4e8df2fda9c5b6185098b5fe579f",
-      "updated_at": "2026-10-24T04:28:58.746Z"
+      "updated_at": "2026-10-24T05:07:46.892Z"
     },
     "cave-bear": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a15481f733e44244c82f681ee58094ecc6f6a56e094e76f4d82e977180fa747c",
-      "updated_at": "2026-10-24T04:32:24.267Z"
+      "updated_at": "2026-10-24T05:07:46.925Z"
     },
     "dire-wolf-predator": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "29d485a7d855437b37a390e14104e0ebfb80ca9cec0e8a0cef9fc66091bf986a",
-      "updated_at": "2026-10-24T04:35:41.650Z"
+      "updated_at": "2026-10-24T05:07:46.960Z"
     }
   }
 }

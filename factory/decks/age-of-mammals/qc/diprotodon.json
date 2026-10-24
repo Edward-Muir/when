@@ -1,0 +1,15 @@
+{
+  "slug": "diprotodon",
+  "description": "A large, heavy, shaggy brown animal with a broad, blunt snout and small rounded ears walks toward the viewer through a dim, dead-tree woodland with shafts of light. Dark shapes that may be other animals sit in the background, and dry scrub covers the ground. The style is a dark oil-painting look with no visible text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
