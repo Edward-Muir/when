@@ -1,42 +1,42 @@
 [
- {
-  "name": "hammurabi-babylon-rise",
-  "friendly_name": "Hammurabi Begins Babylon's Rise",
-  "year": -1792,
-  "category": "empires",
-  "description": "Hammurabi took the throne of a modest city on the Euphrates and began conquests that built a great Mesopotamian realm.",
-  "difficulty": "hard"
- },
- {
-  "name": "nabopolassar-neo-babylonian-empire",
-  "friendly_name": "Nabopolassar Founds Neo-Babylonia",
-  "year": -626,
-  "category": "empires",
-  "description": "A Chaldean leader seized Babylon from Assyrian control and founded the dynasty that would rebuild the city in splendour.",
-  "difficulty": "hard"
- },
- {
-  "name": "alexander-invades-persia-granicus",
-  "friendly_name": "Alexander Invades Persia",
-  "year": -334,
-  "category": "empires",
-  "description": "A young Macedonian king crossed into Asia with his army and began the conquests that toppled the Persian Empire.",
-  "difficulty": "medium"
- },
- {
-  "name": "arsaces-founds-parthian-empire",
-  "friendly_name": "Arsaces Founds Parthian Empire",
-  "year": -247,
-  "category": "empires",
-  "description": "A nomadic chieftain seized a province from the Seleucids and began the dynasty that later rivalled Rome in the East.",
-  "difficulty": "medium"
- },
- {
-  "name": "modu-shanyu-xiongnu-empire",
-  "friendly_name": "Modu Builds the Xiongnu Empire",
-  "year": -209,
-  "category": "empires",
-  "description": "A steppe prince killed his father to seize power and united the nomadic tribes into a confederation that menaced China.",
-  "difficulty": "hard"
- }
+  {
+    "name": "hammurabi-babylon-rise",
+    "friendly_name": "Hammurabi Begins Babylon's Rise",
+    "year": -1792,
+    "category": "empires",
+    "description": "Hammurabi took the throne of a modest city on the Euphrates and began conquests that built a great Mesopotamian realm.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "nabopolassar-neo-babylonian-empire",
+    "friendly_name": "Nabopolassar Founds Neo-Babylonia",
+    "year": -626,
+    "category": "empires",
+    "description": "A Chaldean leader seized Babylon from Assyrian control and founded the dynasty that would rebuild the city in splendour.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "alexander-invades-persia-granicus",
+    "friendly_name": "Alexander Invades Persia",
+    "year": -334,
+    "category": "empires",
+    "description": "A young Macedonian king crossed into Asia with his army and began the conquests that toppled the Persian Empire.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "arsaces-founds-parthian-empire",
+    "friendly_name": "Arsaces Founds Parthian Empire",
+    "year": -247,
+    "category": "empires",
+    "description": "A nomadic chieftain seized a province from the Seleucids and began the dynasty that later rivalled Rome in the East.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "modu-shanyu-xiongnu-empire",
+    "friendly_name": "Modu Builds the Xiongnu Empire",
+    "year": -209,
+    "category": "empires",
+    "description": "A steppe prince killed his father to seize power and united the nomadic tribes into a confederation that menaced China.",
+    "difficulty": "medium"
+  }
 ]
