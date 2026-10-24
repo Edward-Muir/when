@@ -1,0 +1,15 @@
+{
+  "slug": "livyatan",
+  "description": "Underwater scene in murky teal-blue water with shafts of light from above. A large grey whale with a blunt, scarred head and wide-open jaws full of pointed teeth bites toward a smaller grey whale with a long pale flipper on its left side. Bubbles and small fish drift through the water, with debris along the bottom edge. No text, no frame, and no visible blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

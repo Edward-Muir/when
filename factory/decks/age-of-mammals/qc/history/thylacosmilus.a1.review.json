@@ -1,0 +1,15 @@
+{
+  "slug": "thylacosmilus",
+  "description": "A large sabre-toothed cat with a tawny, spotted coat creeps low through tall dry grass toward the viewer. Its long canines are bared under a dark, stormy sky. The lighting is warm and painterly, with no visible text, border, or frame, and nothing gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a sabre-toothed cat (a felid with a cat's rounded head, cat ears and tail), but the card is Thylacosmilus, a South American pouched marsupial that is not a cat. The scene asks for a low, cat-like marsupial with bony chin flanges protecting the canines, and none of those features is visible. The art should be redrawn as the marsupial, not a generic sabre-tooth cat."
+}

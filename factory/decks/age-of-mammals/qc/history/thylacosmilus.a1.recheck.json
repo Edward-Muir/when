@@ -1,0 +1,15 @@
+{
+  "slug": "thylacosmilus",
+  "description": "A large tawny, spotted sabre-toothed cat with a lion-like head, rounded ears and a long tail stalks low through tall dry grass toward the viewer under a stormy sky. Long canines are bared; no chin flanges are visible. Painterly style, no text, no frame, nothing gory.",
+  "checks": {
+    "subject": "fail",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shows a generic sabre-toothed cat (Smilodon-like, with a cat's face and spotted coat), but the card is Thylacosmilus, a South American pouched marsupial that was not a cat. Redraw it as a low marsupial predator with bony chin flanges sheathing the sabre canines."
+}

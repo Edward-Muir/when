@@ -103,5 +103,75 @@
     "by": "recheck",
     "attempts": 1,
     "description": "A brown, faintly striped horse-like animal with a mane grazes head-down in dry grass on an open plain. Three similar animals graze in the distance under a stormy sky, with flat-topped mesas and sagebrush around. It is an oil-style landscape, edge to edge, with no text, frame or border, and nothing graphic."
+  },
+  "platybelodon": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An elephant-like animal stands at a marsh edge under a stormy dusk sky, with a broad flat lower jaw holding a dripping clump of water plants, short tusks curving out, and a trunk curled up beside. Dead trees, reeds and shallow water surround it in an oil-painting style. No text, border or frame."
+  },
+  "deinotherium": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A grey, elephant-like animal with long, downward-curving tusks stands in a dense, dim forest, its trunk curled against a mossy tree trunk. Shafts of light fall through the canopy, with ferns and vines in the foreground. The painting is an oil-style image with no visible text, frame or border."
+  },
+  "livyatan": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Underwater scene in murky teal-blue water with shafts of light from above. A large grey whale with a blunt, scarred head and wide-open jaws full of pointed teeth bites toward a smaller grey whale with a long pale flipper on its left side. Bubbles and small fish drift through the water, with debris along the bottom edge. No text, no frame, and no visible blood."
+  },
+  "thylacosmilus": {
+    "state": "qc-fail",
+    "reason": "Shows a generic sabre-toothed cat (Smilodon-like, with a cat's face and spotted coat), but the card is Thylacosmilus, a South American pouched marsupial that was not a cat. Redraw it as a low marsupial predator with bony chin flanges sheathing the sabre canines.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A large tawny, spotted sabre-toothed cat with a lion-like head, rounded ears and a long tail stalks low through tall dry grass toward the viewer under a stormy sky. Long canines are bared; no chin flanges are visible. Painterly style, no text, no frame, nothing gory."
+  },
+  "sivatherium": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A heavy dark mammal with a mottled, giraffe-like coat and a short thick neck stands side-on in a dim forest, browsing leaves. It has a large branching, palmate-like pair of horns plus a smaller pair of short horns above the eyes. The painting fills the frame with no text, border or frame, and nothing graphic."
+  },
+  "megatherium": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted scene of a large, shaggy brown ground-sloth-like animal standing upright on its hind legs in a dark forest. It reaches into a tree with long curved claws and pulls at leaves. The lighting is dim and the style is a dark oil painting. No text, frame or blood is visible."
+  },
+  "josephoartigasia": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large, dark-furred rodent with prominent front teeth stands on muddy ground at the edge of a wide, dim water body at dusk. Palms and a moss-hung tree line the far shore under a heavy, stormy sky, with reeds in the foreground. No people, buildings, text or frame are visible."
+  },
+  "smilodon-sabre-tooth": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large, heavily built big cat with a tawny, spotted coat and long pale sabre-like fangs walks through tall dry grass and sagebrush at dusk, mouth open in a snarl. A shaggy bison grazes in the distance under a dark, cloudy sky. Painted in an oil-painting style. A small green mark sits in the bottom-right corner. No frame or visible border."
+  },
+  "glyptodon": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large armoured animal with a domed shell of hexagonal plates and a small head with a tail studded with bony rings walks across dim, dry grassland under a stormy, moonlit sky. Dark trees sit on the horizon, and the painting is loose oil-style brushwork. A tiny green square sits in the bottom-right corner, and there is no other text, border or frame."
+  },
+  "arctodus": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large dark brown bear stands upright on its hind legs in tall dry grass, forepaws raised with claws showing and mouth open. Behind it is a dusky plain with silhouetted trees, distant mountains and a stormy, orange-lit sky. The painting is oil-like and fills the whole frame, with no visible text, border or frame."
   }
 }

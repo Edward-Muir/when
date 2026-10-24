@@ -1,0 +1,15 @@
+{
+  "slug": "glyptodon",
+  "description": "A large armoured animal with a domed shell of hexagonal plates and a small head with a tail studded with bony rings walks across dim, dry grassland under a stormy, moonlit sky. Dark trees sit on the horizon, and the painting is loose oil-style brushwork. A tiny green square sits in the bottom-right corner, and there is no other text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

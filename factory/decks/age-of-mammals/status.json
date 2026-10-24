@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T02:37:58.204Z",
+  "updated_at": "2026-10-24T03:07:43.601Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,74 +121,74 @@
       "updated_at": "2026-10-24T01:07:32.396Z"
     },
     "platybelodon": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2101cfe4f5b7927507e67e0bf221a2eacc2aaef3e65ec43bb5535b5b28282ccc",
-      "updated_at": "2026-10-24T02:09:11.836Z"
+      "updated_at": "2026-10-24T03:07:43.313Z"
     },
     "deinotherium": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "acebcf957ff83847f5cf09e2854e3e2c8c2d0da594108ba0b5b22eb2a24de211",
-      "updated_at": "2026-10-24T02:12:13.116Z"
+      "updated_at": "2026-10-24T03:07:43.351Z"
     },
     "livyatan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1cf825277886125c7211a65a9e623b15003fc021e80e8d55649256adddce0441",
-      "updated_at": "2026-10-24T02:15:02.904Z"
+      "updated_at": "2026-10-24T03:07:43.382Z"
     },
     "thylacosmilus": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Shows a generic sabre-toothed cat (Smilodon-like, with a cat's face and spotted coat), but the card is Thylacosmilus, a South American pouched marsupial that was not a cat. Redraw it as a low marsupial predator with bony chin flanges sheathing the sabre canines.",
       "sha256": "00084079620e4ebf0e45a92543d8c5d20c1e351470c421f116881426db718e8e",
-      "updated_at": "2026-10-24T02:17:49.530Z"
+      "updated_at": "2026-10-24T03:07:43.412Z"
     },
     "sivatherium": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "02dfc63b7b48a4e733cb8e23fc2a14afdd73d8f7632097ea3a6c7968e4892204",
-      "updated_at": "2026-10-24T02:20:40.296Z"
+      "updated_at": "2026-10-24T03:07:43.444Z"
     },
     "megatherium": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b69347946fff23bb25829adb5b84e488e3f2bd09ee5694689769b2bbe28df863",
-      "updated_at": "2026-10-24T02:24:02.007Z"
+      "updated_at": "2026-10-24T03:07:43.475Z"
     },
     "josephoartigasia": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "961f1348524d07306cba07467bff7fd2f618537a78dca4f80e56fc1af0fc7d4e",
-      "updated_at": "2026-10-24T02:28:16.504Z"
+      "updated_at": "2026-10-24T03:07:43.508Z"
     },
     "smilodon-sabre-tooth": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "62eb52f69892ce1c442855a8793a5af95e934210fdc2e9ff053b3a0fc882d90c",
-      "updated_at": "2026-10-24T02:31:15.484Z"
+      "updated_at": "2026-10-24T03:07:43.538Z"
     },
     "glyptodon": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8b941d0f1ef4eccec38aa5ae5b67e0a183f68b2cf3e60ebd9fee8a3f1bf2f7ed",
-      "updated_at": "2026-10-24T02:34:59.634Z"
+      "updated_at": "2026-10-24T03:07:43.570Z"
     },
     "arctodus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "da27248c6cecfbb05de5fd5696718a43b39020995605724f4cbf023659d5c8c6",
-      "updated_at": "2026-10-24T02:37:58.204Z"
+      "updated_at": "2026-10-24T03:07:43.601Z"
     },
     "diprotodon": {
       "state": "pending",
