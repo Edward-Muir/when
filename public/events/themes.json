@@ -12513,7 +12513,10 @@
     "year": 1151,
     "category": "art",
     "description": "A German abbess composed a sung morality play, among the earliest surviving musical dramas, in which Virtues battle the Devil.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "machaut-messe-de-nostre-dame",
@@ -12521,7 +12524,10 @@
     "year": 1365,
     "category": "art",
     "description": "A French poet-composer completed the first known complete polyphonic Mass setting attributed to a single composer.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "dufay-nuper-rosarum-flores",
@@ -12529,7 +12535,10 @@
     "year": 1436,
     "category": "art",
     "description": "A Franco-Flemish composer wrote a grand motet for the consecration of Florence's cathedral, crowned by a new dome.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "palestrina-pope-marcellus-mass",
@@ -12537,7 +12546,10 @@
     "year": 1567,
     "category": "art",
     "description": "An Italian master of church polyphony wrote a Mass said to prove that rich choral music could keep its words clear.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "bach-brandenburg-concertos",
@@ -12545,7 +12557,10 @@
     "year": 1721,
     "category": "art",
     "description": "A German court musician sent six richly varied concertos to a Margrave in Berlin in hopes of winning a job.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "haydn-creation-oratorio",
@@ -12553,7 +12568,10 @@
     "year": 1798,
     "category": "art",
     "description": "An Austrian composer set the biblical story of the world's making for soloists, chorus and orchestra, opening with a famous depiction of chaos.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "berlioz-symphonie-fantastique",
@@ -12561,7 +12579,10 @@
     "year": 1830,
     "category": "art",
     "description": "A French composer premiered a symphony telling of an artist's opium dreams and obsessive love, pioneering the programmatic orchestral work.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "chopin-24-preludes-published",
@@ -12569,7 +12590,11 @@
     "year": 1839,
     "category": "art",
     "description": "A Polish-born pianist-composer published a set of short piano pieces that pass through every major and minor key.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France",
+      "Spain"
+    ]
   },
   {
     "name": "mendelssohn-wedding-march",
@@ -12577,7 +12602,10 @@
     "year": 1843,
     "category": "art",
     "description": "A German composer finished incidental music for a Shakespeare comedy, including the march that became a bridal staple.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "strauss-blue-danube-waltz",
@@ -12585,7 +12613,10 @@
     "year": 1867,
     "category": "art",
     "description": "A Viennese waltz king unveiled a choral waltz that became the unofficial anthem of his city's music.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "bizet-carmen-premiere",
@@ -12593,7 +12624,10 @@
     "year": 1875,
     "category": "art",
     "description": "A French composer's opera about a fiery cigarette-factory worker and a doomed soldier shocked Paris at its opening.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "wagner-ring-cycle-bayreuth",
@@ -12601,7 +12635,10 @@
     "year": 1876,
     "category": "art",
     "description": "A German composer presented all four parts of his epic Norse-myth opera in a theatre he had built for the purpose.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "puccini-la-boheme-premiere",
@@ -12609,7 +12646,10 @@
     "year": 1896,
     "category": "art",
     "description": "An Italian composer's opera of poor young artists in Paris, with a seamstress who dies of illness, opened in Turin.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "rachmaninoff-piano-concerto-2",
@@ -12617,7 +12657,11 @@
     "year": 1901,
     "category": "art",
     "description": "A Russian composer-pianist premiered a lush concerto that marked his recovery from a deep depression.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "debussy-clair-de-lune",
@@ -12625,7 +12669,10 @@
     "year": 1905,
     "category": "art",
     "description": "A French composer released a gentle piano piece named for moonlight, the best-loved movement of a suite.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "ravel-bolero-premiere",
@@ -12633,7 +12680,10 @@
     "year": 1928,
     "category": "art",
     "description": "A French composer wrote a single hypnotic melody repeated over a snare drum rhythm as a ballet for a dancer.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "prokofiev-peter-and-the-wolf",
@@ -12641,7 +12691,11 @@
     "year": 1936,
     "category": "art",
     "description": "A Russian composer wrote a children's tale in which each character is played by a different instrument.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "orff-carmina-burana-premiere",
@@ -12649,7 +12703,10 @@
     "year": 1937,
     "category": "art",
     "description": "A German composer set medieval students' bawdy poems for chorus and orchestra, opening with the thunderous O Fortuna.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "britten-war-requiem-premiere",
@@ -12657,7 +12714,10 @@
     "year": 1962,
     "category": "art",
     "description": "An English composer blended the Latin Mass for the dead with war poetry, for the consecration of a rebuilt cathedral.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "glass-einstein-on-the-beach",
@@ -12665,7 +12725,11 @@
     "year": 1976,
     "category": "art",
     "description": "An American minimalist composer staged a five-hour opera of repeating patterns, tied to the name of a famous physicist.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France",
+      "United States"
+    ]
   },
   {
     "name": "adams-nixon-in-china-premiere",
@@ -12673,6 +12737,9 @@
     "year": 1987,
     "category": "art",
     "description": "An American composer's opera dramatised a famous diplomatic visit to Beijing, with sung roles for the leaders and their wives.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
