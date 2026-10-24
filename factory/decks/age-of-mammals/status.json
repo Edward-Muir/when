@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T01:07:32.396Z",
+  "updated_at": "2026-10-24T02:09:11.836Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-24T01:07:32.396Z"
     },
     "platybelodon": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2101cfe4f5b7927507e67e0bf221a2eacc2aaef3e65ec43bb5535b5b28282ccc",
+      "updated_at": "2026-10-24T02:09:11.836Z"
     },
     "deinotherium": {
       "state": "pending",
