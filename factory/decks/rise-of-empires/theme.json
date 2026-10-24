@@ -1,0 +1,43 @@
+{
+  "id": "rise-of-empires",
+  "name": "Rise of Empires",
+  "scope": "Yes if it is the founding of a great empire",
+  "boundary": "Rise of Empires owns each empire's founding; its rulers and later story stay with its own theme, such as The Roman Story, Mandate of Heaven, Sublime Porte or Peacock Throne.",
+  "neighbours": [
+    "rome",
+    "chinese-dynasties",
+    "ottomans",
+    "mughals",
+    "caliphates"
+  ],
+  "grid": {
+    "categories": [
+      "empires"
+    ],
+    "eras": [
+      "ancient",
+      "medieval",
+      "earlyModern"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Sargon founds the Akkadian Empire (2334 BC)",
+    "Neo-Assyrian Empire rises (911 BC)",
+    "Cyrus founds the Persian Empire (550 BC)",
+    "Chandragupta founds the Maurya Empire (322 BC)",
+    "Qin unifies China (221 BC)",
+    "The Roman Empire begins (27 BC)",
+    "The Abbasid Caliphate (750)",
+    "Charlemagne crowned emperor (800)",
+    "Genghis Khan founds the Mongol Empire (1206)",
+    "Sundiata founds the Mali Empire (1235)",
+    "The Aztec Triple Alliance (1428)",
+    "Pachacuti builds the Inca Empire (1438)"
+  ],
+  "notes": "Date each empire to its founding or its founder's first conquest, one beat per empire, spread across every continent.",
+  "appeal": 3,
+  "status": "authoring"
+}
