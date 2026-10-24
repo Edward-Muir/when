@@ -1,0 +1,15 @@
+{
+  "slug": "mendelssohn-wedding-march",
+  "description": "A dim forest scene with tall trees and misty light. Winged fairies in pale gauzy dresses and flower crowns stand around a bride in a white veil and gown and a groom in a dark tailcoat. Below, in the foreground, a conductor with a baton faces a seated orchestra with violins, a tuba and candlelit music stands, and lanterns glow in the fog.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
