@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T02:15:02.904Z",
+  "updated_at": "2026-10-24T02:17:49.530Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-10-24T02:15:02.904Z"
     },
     "thylacosmilus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "00084079620e4ebf0e45a92543d8c5d20c1e351470c421f116881426db718e8e",
+      "updated_at": "2026-10-24T02:17:49.530Z"
     },
     "sivatherium": {
       "state": "pending",
