@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T16:23:29.000Z",
+  "updated_at": "2026-10-24T16:26:54.642Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-24T16:23:29.000Z"
     },
     "debussy-clair-de-lune": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "521c6aec3449f2f6ffb702c6547f784db7b7568d3ddd9c152c6c1b3ecc78a6a1",
+      "updated_at": "2026-10-24T16:26:54.642Z"
     },
     "ravel-bolero-premiere": {
       "state": "pending",
