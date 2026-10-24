@@ -3,7 +3,7 @@
   "name": "The Great Composers",
   "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T12:09:02.382Z",
+  "updated_at": "2026-10-24T12:11:34.986Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-24T12:09:02.382Z"
     },
     "machaut-messe-de-nostre-dame": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5cb0e6560fc7d9628962a39d291100e50158d0e007d9b5926b3ddd8343e3563a",
+      "updated_at": "2026-10-24T12:11:34.986Z"
     },
     "dufay-nuper-rosarum-flores": {
       "state": "pending",
