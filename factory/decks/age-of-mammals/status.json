@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T04:32:24.267Z",
+  "updated_at": "2026-10-24T04:35:41.650Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -219,10 +219,11 @@
       "updated_at": "2026-10-24T04:32:24.267Z"
     },
     "dire-wolf-predator": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "29d485a7d855437b37a390e14104e0ebfb80ca9cec0e8a0cef9fc66091bf986a",
+      "updated_at": "2026-10-24T04:35:41.650Z"
     }
   }
 }
