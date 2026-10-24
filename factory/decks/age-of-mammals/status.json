@@ -3,7 +3,7 @@
   "name": "Age of Mammals",
   "stage": "art-in-progress",
   "created_at": "2026-10-23T21:22:21.347Z",
-  "updated_at": "2026-10-24T04:21:01.792Z",
+  "updated_at": "2026-10-24T04:24:27.006Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -198,10 +198,11 @@
       "updated_at": "2026-10-24T04:21:01.792Z"
     },
     "cave-lion-big-cat": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3b5c0396e40f3fdb3e32518b4881abf898e0ccb0441fdcdb43f16d9b654ab40a",
+      "updated_at": "2026-10-24T04:24:27.006Z"
     },
     "woolly-mammoth-steppe": {
       "state": "pending",
