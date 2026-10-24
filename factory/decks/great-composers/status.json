@@ -1,21 +1,26 @@
 {
   "deck": "great-composers",
   "name": "The Great Composers",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-24T11:20:36.112Z",
-  "updated_at": "2026-10-24T11:20:36.112Z",
+  "updated_at": "2026-10-24T12:09:02.382Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-24T11:20:36.112Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-24T12:09:02.382Z"
     }
   ],
   "slugs": {
     "ordo-virtutum-hildegard": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "965fd032d5c6aa36b8b4bdc284bd86fd2c618d85276f4fb6616f3138d4748ab9",
+      "updated_at": "2026-10-24T12:09:02.382Z"
     },
     "machaut-messe-de-nostre-dame": {
       "state": "pending",
