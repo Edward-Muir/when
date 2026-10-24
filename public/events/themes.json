@@ -12516,7 +12516,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nabopolassar-neo-babylonian-empire",
@@ -12527,7 +12528,8 @@
     "difficulty": "medium",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "alexander-invades-persia-granicus",
@@ -12541,7 +12543,8 @@
       "Iran",
       "Turkey",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "arsaces-founds-parthian-empire",
@@ -12552,7 +12555,8 @@
     "difficulty": "easy",
     "regions": [
       "Iran"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "modu-shanyu-xiongnu-empire",
@@ -12564,6 +12568,7 @@
     "regions": [
       "China",
       "Mongolia"
-    ]
+    ],
+    "has_detail": true
   }
 ]
