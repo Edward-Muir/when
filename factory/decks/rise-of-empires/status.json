@@ -1,9 +1,9 @@
 {
   "deck": "rise-of-empires",
   "name": "Rise of Empires",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-24T07:15:06.136Z",
-  "updated_at": "2026-10-24T09:07:25.792Z",
+  "updated_at": "2026-10-24T10:06:42.767Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-24T09:07:25.792Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-24T10:06:42.767Z"
     }
   ],
   "slugs": {
