@@ -1,0 +1,15 @@
+{
+  "slug": "megatherium",
+  "description": "A painted scene of a large, shaggy brown ground-sloth-like animal standing upright on its hind legs in a dark forest. It reaches into a tree with long curved claws and pulls at leaves. The lighting is dim and the style is a dark oil painting. No text, frame or blood is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

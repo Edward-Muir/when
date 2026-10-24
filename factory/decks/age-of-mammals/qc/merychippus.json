@@ -1,0 +1,15 @@
+{
+  "slug": "merychippus",
+  "description": "A single horse-like animal with a brown, faintly striped coat and a long mane lowers its head to graze in tall dry grass on a open plain. Behind it, two or three more horses graze in the distance under a dark, stormy sky, with flat-topped mesas on the horizon and sagebrush at the edges. The painting is an oil-style landscape with no visible text, signature, frame or border, and it runs edge to edge.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The picture shows a horse grazing on a prairie, which fits the event, but the card asks for a pony-sized three-toed horse and the animal here looks like a full-size modern horse with what reads as single hooves. Its size and toe count do not clearly match Merychippus, so a reviewer cannot confirm the subject from the image alone."
+}

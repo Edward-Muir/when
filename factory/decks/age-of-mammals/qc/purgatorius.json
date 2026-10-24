@@ -1,0 +1,15 @@
+{
+  "slug": "purgatorius",
+  "description": "A small dark-furred mammal with a long bushy tail, pointed snout and round ear, climbing a mossy branch with splayed clawed feet. Behind it are dense green ferns and broad glossy leaves in a dim forest. It is painted in an oil-painting style, and the painting fills the whole square with no visible frame or text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
