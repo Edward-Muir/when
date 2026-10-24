@@ -1,0 +1,45 @@
+{
+  "deck": "rise-of-empires",
+  "name": "Rise of Empires",
+  "stage": "authored",
+  "created_at": "2026-10-24T07:15:06.136Z",
+  "updated_at": "2026-10-24T07:15:06.136Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-24T07:15:06.136Z"
+    }
+  ],
+  "slugs": {
+    "hammurabi-babylon-rise": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "nabopolassar-neo-babylonian-empire": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "alexander-invades-persia-granicus": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "arsaces-founds-parthian-empire": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "modu-shanyu-xiongnu-empire": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    }
+  }
+}
