@@ -1,0 +1,15 @@
+{
+  "slug": "desmostylus",
+  "description": "A heavy, dark, hippo-like mammal with a thick wet hide wades through churning surf on a stormy coast. Its head is lowered to a rocky outcrop, and it is tearing at a mass of brown kelp with large forward-pointing tusk-like teeth. Dark cliffs rise behind it under a grey sky, and the painting runs edge to edge in an oil-painting style with no visible border, text or figures.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
