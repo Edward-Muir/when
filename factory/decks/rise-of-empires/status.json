@@ -1,9 +1,9 @@
 {
   "deck": "rise-of-empires",
   "name": "Rise of Empires",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-24T07:15:06.136Z",
-  "updated_at": "2026-10-24T08:26:21.975Z",
+  "updated_at": "2026-10-24T09:07:25.792Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,43 +12,47 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-24T08:11:17.768Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-24T09:07:25.792Z"
     }
   ],
   "slugs": {
     "hammurabi-babylon-rise": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7cb28390810d7c8d9d54b3934b91a4a9072ba26c86b8c98843574c3679c89e1f",
-      "updated_at": "2026-10-24T08:11:17.768Z"
+      "updated_at": "2026-10-24T09:07:25.665Z"
     },
     "nabopolassar-neo-babylonian-empire": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9dfc5523480d2c65138df26eca3df2102f166482f41fe1788c887b1fccd2c789",
-      "updated_at": "2026-10-24T08:14:51.766Z"
+      "updated_at": "2026-10-24T09:07:25.699Z"
     },
     "alexander-invades-persia-granicus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8faa93f7b82790094147bbe18fa061c7043bcf171b8377d24c6b997861462895",
-      "updated_at": "2026-10-24T08:18:24.033Z"
+      "updated_at": "2026-10-24T09:07:25.730Z"
     },
     "arsaces-founds-parthian-empire": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ab1e79c70cd7c3043e47ac775cca18ba7e85ed3e68413ccd39e40988284e57f3",
-      "updated_at": "2026-10-24T08:22:29.228Z"
+      "updated_at": "2026-10-24T09:07:25.761Z"
     },
     "modu-shanyu-xiongnu-empire": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1a6baf6811066553459f2a29e9e40edf4f1bb06de3d2a3ba51632770379f7adb",
-      "updated_at": "2026-10-24T08:26:21.975Z"
+      "updated_at": "2026-10-24T09:07:25.792Z"
     }
   }
 }
