@@ -1,0 +1,185 @@
+{
+  "deck": "dinosaurs",
+  "name": "Dinosaurs",
+  "stage": "pr-open",
+  "created_at": "2026-10-22T13:19:56.694Z",
+  "updated_at": "2026-10-23T08:09:07.870Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-22T13:19:56.694Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-22T14:10:27.652Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-23T07:06:45.285Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-23T08:06:58.147Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-23T08:09:07.870Z"
+    }
+  ],
+  "slugs": {
+    "eoraptor-dawn-dinosaur": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2c636659f034307189077c509c40d1d5a94b4022ba7fcf9a5197b2c1f7f76553",
+      "updated_at": "2026-10-22T15:13:58.643Z"
+    },
+    "coelophysis-pack-hunter": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "30667f28f107b4d60a3929c5f591cb37d310018e3e81bdd56c24b127eb7b012f",
+      "updated_at": "2026-10-22T15:13:58.675Z"
+    },
+    "massospondylus-southern-grazer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "76d11a104dc31c2a0b634b7308a0e01adde19b460a1e0e0aafe0ba4a66b4560a",
+      "updated_at": "2026-10-22T15:13:58.706Z"
+    },
+    "cryolophosaurus-frozen-crest": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e94fcbff10756b952486bd942f76bac80206ce22b86b11352f643dc43c9ddfd0",
+      "updated_at": "2026-10-22T17:07:35.037Z"
+    },
+    "dilophosaurus-twin-crest": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "44b658f01fb80bde82a2341a59e74eea9c56306e237b7d7c27b1906b5703a93c",
+      "updated_at": "2026-10-22T15:13:58.745Z"
+    },
+    "megalosaurus-great-lizard": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ef14e31b046f6f8d0041ead6683d8dfc3b161538f01da14fcb7ffdfc2223058b",
+      "updated_at": "2026-10-22T15:13:58.780Z"
+    },
+    "mamenchisaurus-long-necked-giant": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "12e9a0faa2ff90dd360c3cba35a0ca1a82fb4e33a8b54a4733f6ed5b86f1288c",
+      "updated_at": "2026-10-22T15:13:58.811Z"
+    },
+    "brontosaurus-thunder-lizard": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d86828d89fa4944a492d45b1154c51ce44549301571e3e900d0f8ad4e730eb8e",
+      "updated_at": "2026-10-22T15:13:58.844Z"
+    },
+    "diplodocus-whip-tailed-giant": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "54b85558a74886c0d1dc1dd9df68cf7fcc0e4c3203279a5b5fe60fdf21ee4270",
+      "updated_at": "2026-10-22T17:07:35.071Z"
+    },
+    "utahraptor-giant-raptor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "506a608ed6cb5c1a028146dee2a7f128d60e79b28c8710cb515601adaf212ff3",
+      "updated_at": "2026-10-22T17:07:35.106Z"
+    },
+    "baryonyx-fish-eating-claw": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "03eb862ef09e65de4b2a864628fb6f5b10ed43d82e4450782efed61ac7460a23",
+      "updated_at": "2026-10-22T17:07:35.141Z"
+    },
+    "iguanodon-thumb-spiked-grazer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "386afb6523b8fc1a04216b3cfedb3f6804443d3ff3515ab6e98f4fbdc749a605",
+      "updated_at": "2026-10-22T17:07:35.174Z"
+    },
+    "sinosauropteryx-feathered-find": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b648e4b34b66c939050ea9ae5f25fb93d27f753aba734eb8797a4430535eb68c",
+      "updated_at": "2026-10-22T17:07:35.208Z"
+    },
+    "microraptor-four-winged-glider": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1c4823ed56dde6815a286c7ded25e32dd426aa696cc08e9e0d6afdf6251312a1",
+      "updated_at": "2026-10-22T17:07:35.241Z"
+    },
+    "deinonychus-terrible-claw": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7ff72b656f7cb4bcbcfa7325a1763b0340876d353afd4fc4940584cca9c0d337",
+      "updated_at": "2026-10-22T17:07:35.277Z"
+    },
+    "spinosaurus-sailback-swimmer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c14e51745fcc9d16f0cdc69be20e99b83387175071ee6d82aa1cab04cc1491ab",
+      "updated_at": "2026-10-22T17:07:35.313Z"
+    },
+    "giganotosaurus-giant-of-the-south": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b24393b26d1f6380a2d25a3e98fa87c0f1959093d129c4227bec808c24099665",
+      "updated_at": "2026-10-22T17:07:35.348Z"
+    },
+    "argentinosaurus-colossal-titan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cf8adc5f0e341b3fcdcf9c827da37e8761d6148868f6a5e1be41208363baff70",
+      "updated_at": "2026-10-22T20:06:48.849Z"
+    },
+    "hadrosaurus-duck-bill": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7a2bece66e63a17c125761de7d4c46d08b24831a9dcb0db40e4a711e6d41b6da",
+      "updated_at": "2026-10-23T07:06:45.219Z"
+    },
+    "parasaurolophus-trumpet-crest": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fd50e2c46c79629aa1e1b8b46c35d4903dd6e38f66d3a3f4f41fa4a54a379ce5",
+      "updated_at": "2026-10-22T20:06:48.885Z"
+    },
+    "carnotaurus-flesh-eating-bull": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7d5495795b984b1fb92a0bd05f2c4a5df2ef0bedeb0adc872b91d549cebe0259",
+      "updated_at": "2026-10-23T07:06:45.252Z"
+    },
+    "therizinosaurus-scythe-lizard": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "eb29a86fb75d5172dd25f5fe6baad68f88f4e06b19f4429f9e0323f4fb1636cd",
+      "updated_at": "2026-10-23T07:06:45.285Z"
+    }
+  }
+}
