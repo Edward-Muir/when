@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T17:54:26.756Z",
+  "updated_at": "2026-10-25T17:59:53.289Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -134,10 +134,11 @@
       "updated_at": "2026-10-25T17:54:26.756Z"
     },
     "last-homo-erectus-java": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "03415017369e8dbdeca2b53530110fb2a96d1237d2afc1dd83b4ba5c4a12b802",
+      "updated_at": "2026-10-25T17:59:53.289Z"
     },
     "homo-floresiensis-hobbit": {
       "state": "pending",
