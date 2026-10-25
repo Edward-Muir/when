@@ -1,0 +1,1988 @@
+[
+  {
+    "beat": 0,
+    "year": -7000000,
+    "title": "Sahelanthropus Walks the Earth",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 2,
+        "shared": [
+          "human",
+          "upright"
+        ]
+      },
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -6000000,
+    "title": "Orrorin Stands on Two Legs",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 5,
+        "shared": [
+          "two",
+          "legs",
+          "early",
+          "walking",
+          "upright"
+        ]
+      },
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -5800000,
+    "title": "Ardipithecus Kadabba Appears",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -4400000,
+    "title": "Ardipithecus Ramidus Appears",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 2,
+        "shared": [
+          "walking",
+          "upright"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": -4200000,
+    "title": "Australopithecus Anamensis Appears",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 2,
+        "shared": [
+          "upright",
+          "africa"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": -3660000,
+    "title": "Footprints in Volcanic Ash",
+    "candidates": [
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 4,
+        "shared": [
+          "two",
+          "upright",
+          "walkers",
+          "walking"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": -3500000,
+    "title": "Kenyanthropus Appears",
+    "candidates": []
+  },
+  {
+    "beat": 7,
+    "year": -3300000,
+    "title": "Toolmakers Strike Stone at Lomekwi",
+    "candidates": [
+      {
+        "name": "first-stone-tools",
+        "friendly_name": "First Stone Tools",
+        "year": -3300000,
+        "year_end": -2600000,
+        "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
+        "score": 3,
+        "shared": [
+          "stone",
+          "early",
+          "hominins"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": -3200000,
+    "title": "Lucy, Australopithecus Afarensis",
+    "candidates": [
+      {
+        "name": "lucy-australopithecus-lived",
+        "friendly_name": "Lucy Walks the Earth",
+        "year": -3200000,
+        "year_end": -3170000,
+        "description": "Lucy, a small upright Australopithecus, lived in Africa and became a famous human ancestor fossil.",
+        "score": 7,
+        "shared": [
+          "lucy",
+          "australopithecus",
+          "small",
+          "upright",
+          "famous",
+          "human",
+          "ancestor"
+        ]
+      },
+      {
+        "name": "first-stone-tools",
+        "friendly_name": "First Stone Tools",
+        "year": -3300000,
+        "year_end": -2600000,
+        "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": -3000000,
+    "title": "Australopithecus Africanus Lives",
+    "candidates": [
+      {
+        "name": "first-stone-tools",
+        "friendly_name": "First Stone Tools",
+        "year": -3300000,
+        "year_end": -2600000,
+        "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": -2700000,
+    "title": "Paranthropus Aethiopicus Appears",
+    "candidates": [
+      {
+        "name": "first-stone-tools",
+        "friendly_name": "First Stone Tools",
+        "year": -3300000,
+        "year_end": -2600000,
+        "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
+        "score": 2,
+        "shared": [
+          "hominins",
+          "africa"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": -2600000,
+    "title": "Oldowan Stone Tools Spread",
+    "candidates": [
+      {
+        "name": "first-stone-tools",
+        "friendly_name": "First Stone Tools",
+        "year": -3300000,
+        "year_end": -2600000,
+        "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
+        "score": 4,
+        "shared": [
+          "stone",
+          "tools",
+          "hominins",
+          "africa"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": -2400000,
+    "title": "Homo Habilis, the Handy Human",
+    "candidates": [
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 5,
+        "shared": [
+          "homo",
+          "habilis",
+          "handy",
+          "human",
+          "tools"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": -2300000,
+    "title": "Paranthropus Boisei Appears",
+    "candidates": [
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 2,
+        "shared": [
+          "nicknamed",
+          "man"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": -2000000,
+    "title": "Homo Erectus Stands Tall",
+    "candidates": [
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 3,
+        "shared": [
+          "homo",
+          "human",
+          "early"
+        ]
+      },
+      {
+        "name": "homo-erectus-emerges",
+        "friendly_name": "Homo Erectus Emerges",
+        "year": -2040000,
+        "year_end": -1770000,
+        "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
+        "score": 2,
+        "shared": [
+          "homo",
+          "erectus"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": -1980000,
+    "title": "Australopithecus Sediba Lives",
+    "candidates": [
+      {
+        "name": "homo-erectus-emerges",
+        "friendly_name": "Homo Erectus Emerges",
+        "year": -2040000,
+        "year_end": -1770000,
+        "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
+        "score": 2,
+        "shared": [
+          "species",
+          "homo"
+        ]
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 2,
+        "shared": [
+          "species",
+          "homo"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": -1900000,
+    "title": "Homo Ergaster Appears",
+    "candidates": [
+      {
+        "name": "homo-erectus-emerges",
+        "friendly_name": "Homo Erectus Emerges",
+        "year": -2040000,
+        "year_end": -1770000,
+        "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
+        "score": 2,
+        "shared": [
+          "homo",
+          "erectus"
+        ]
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 2,
+        "shared": [
+          "homo",
+          "early"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": -1800000,
+    "title": "Humans Leave Africa",
+    "candidates": [
+      {
+        "name": "homo-erectus-emerges",
+        "friendly_name": "Homo Erectus Emerges",
+        "year": -2040000,
+        "year_end": -1770000,
+        "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
+        "score": 2,
+        "shared": [
+          "africa",
+          "continent"
+        ]
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 2,
+        "shared": [
+          "early",
+          "known"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": -1760000,
+    "title": "The Acheulean Handaxe Appears",
+    "candidates": [
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 4,
+        "shared": [
+          "acheulean",
+          "early",
+          "stone",
+          "tool"
+        ]
+      },
+      {
+        "name": "fire-mastery",
+        "friendly_name": "Humans Master Fire",
+        "year": -1790000,
+        "year_end": -400000,
+        "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
+        "score": 2,
+        "shared": [
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "homo-habilis",
+        "friendly_name": "Homo habilis",
+        "year": -2400000,
+        "year_end": -1440000,
+        "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": -1200000,
+    "title": "Homo Antecessor Reaches Spain",
+    "candidates": [
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 2,
+        "shared": [
+          "early",
+          "bones"
+        ]
+      },
+      {
+        "name": "first-cooking-with-fire",
+        "friendly_name": "Early Humans Cook Food",
+        "year": -1500000,
+        "year_end": -780000,
+        "description": "Early hominins began cooking food over fire, making nutrients easier to digest and fueling brain growth.",
+        "score": 2,
+        "shared": [
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 2,
+        "shared": [
+          "early",
+          "stone"
+        ]
+      },
+      {
+        "name": "fire-mastery",
+        "friendly_name": "Humans Master Fire",
+        "year": -1790000,
+        "year_end": -400000,
+        "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
+        "score": 2,
+        "shared": [
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": -1000000,
+    "title": "Fire Burns in Wonderwerk Cave",
+    "candidates": [
+      {
+        "name": "first-cooking-with-fire",
+        "friendly_name": "Early Humans Cook Food",
+        "year": -1500000,
+        "year_end": -780000,
+        "description": "Early hominins began cooking food over fire, making nutrients easier to digest and fueling brain growth.",
+        "score": 3,
+        "shared": [
+          "fire",
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "fire-mastery",
+        "friendly_name": "Humans Master Fire",
+        "year": -1790000,
+        "year_end": -400000,
+        "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
+        "score": 3,
+        "shared": [
+          "fire",
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 2,
+        "shared": [
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 2,
+        "shared": [
+          "early",
+          "bone"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": -790000,
+    "title": "Fire at Gesher Benot Ya'aqov",
+    "candidates": [
+      {
+        "name": "fire-mastery",
+        "friendly_name": "Humans Master Fire",
+        "year": -1790000,
+        "year_end": -400000,
+        "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
+        "score": 4,
+        "shared": [
+          "fire",
+          "early",
+          "humans",
+          "use"
+        ]
+      },
+      {
+        "name": "first-cooking-with-fire",
+        "friendly_name": "Early Humans Cook Food",
+        "year": -1500000,
+        "year_end": -780000,
+        "description": "Early hominins began cooking food over fire, making nutrients easier to digest and fueling brain growth.",
+        "score": 3,
+        "shared": [
+          "fire",
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 2,
+        "shared": [
+          "early",
+          "humans"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "woolly-mammoths-appear",
+        "friendly_name": "Woolly Mammoths Appear",
+        "year": -800000,
+        "year_end": -400000,
+        "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": -700000,
+    "title": "Homo Heidelbergensis Appears",
+    "candidates": [
+      {
+        "name": "homo-heidelbergensis-emerges",
+        "friendly_name": "Homo Heidelbergensis Emerges",
+        "year": -700000,
+        "description": "A large brained hominin likely ancestral to both Neanderthals and modern humans appeared in Africa.",
+        "score": 6,
+        "shared": [
+          "homo",
+          "heidelbergensis",
+          "brained",
+          "africa",
+          "both",
+          "neanderthals"
+        ]
+      },
+      {
+        "name": "woolly-mammoths-appear",
+        "friendly_name": "Woolly Mammoths Appear",
+        "year": -800000,
+        "year_end": -400000,
+        "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
+        "score": 2,
+        "shared": [
+          "across",
+          "europe"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": -400000,
+    "title": "Neanderthals Appear",
+    "candidates": [
+      {
+        "name": "neanderthals-appear",
+        "friendly_name": "Neanderthals Appear",
+        "year": -430000,
+        "year_end": -200000,
+        "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+        "score": 6,
+        "shared": [
+          "neanderthals",
+          "appear",
+          "europe",
+          "western",
+          "asia",
+          "relatives"
+        ]
+      },
+      {
+        "name": "woolly-mammoths-appear",
+        "friendly_name": "Woolly Mammoths Appear",
+        "year": -800000,
+        "year_end": -400000,
+        "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
+        "score": 5,
+        "shared": [
+          "appear",
+          "cold",
+          "adapted",
+          "europe",
+          "asia"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      },
+      {
+        "name": "hide-and-leather-clothing-shelter",
+        "friendly_name": "Hide and Leather Clothing/Shelter",
+        "year": -400000,
+        "year_end": -300000,
+        "description": "Animal hides were processed and used for protection from the elements as clothing and shelter.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pigments",
+        "friendly_name": "Pigments",
+        "year": -400000,
+        "year_end": -300000,
+        "description": "Natural minerals ground into colored pigments for body decoration and early artistic expression.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "food-storage-marrow",
+        "friendly_name": "Food Storage (Marrow)",
+        "year": -420000,
+        "year_end": -200000,
+        "description": "Bone marrow stored inside bones for later consumption, representing the earliest known food preservation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": -335000,
+    "title": "Homo Naledi Appears",
+    "candidates": [
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 2,
+        "shared": [
+          "human",
+          "early"
+        ]
+      },
+      {
+        "name": "pigments",
+        "friendly_name": "Pigments",
+        "year": -400000,
+        "year_end": -300000,
+        "description": "Natural minerals ground into colored pigments for body decoration and early artistic expression.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "neanderthals-appear",
+        "friendly_name": "Neanderthals Appear",
+        "year": -430000,
+        "year_end": -200000,
+        "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+        "score": 1,
+        "shared": [
+          "modern"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "curved"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": -300000,
+    "title": "Homo Sapiens Appears",
+    "candidates": [
+      {
+        "name": "anatomically-modern-humans",
+        "friendly_name": "Anatomically Modern Humans Emerge",
+        "year": -315000,
+        "year_end": -160000,
+        "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
+        "score": 6,
+        "shared": [
+          "homo",
+          "sapiens",
+          "modern",
+          "humans",
+          "africa",
+          "species"
+        ]
+      },
+      {
+        "name": "first-humans",
+        "friendly_name": "First Homo Sapiens",
+        "year": -315000,
+        "year_end": -233000,
+        "description": "Modern humans emerged in Africa.",
+        "score": 5,
+        "shared": [
+          "homo",
+          "sapiens",
+          "modern",
+          "humans",
+          "africa"
+        ]
+      },
+      {
+        "name": "food-storage-marrow",
+        "friendly_name": "Food Storage (Marrow)",
+        "year": -420000,
+        "year_end": -200000,
+        "description": "Bone marrow stored inside bones for later consumption, representing the earliest known food preservation.",
+        "score": 2,
+        "shared": [
+          "earliest",
+          "known"
+        ]
+      },
+      {
+        "name": "neanderthals-appear",
+        "friendly_name": "Neanderthals Appear",
+        "year": -430000,
+        "year_end": -200000,
+        "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+        "score": 2,
+        "shared": [
+          "modern",
+          "humans"
+        ]
+      },
+      {
+        "name": "woodworking-construction",
+        "friendly_name": "Woodworking Construction",
+        "year": -500000,
+        "year_end": -300000,
+        "description": "Earliest evidence of wood being shaped for structural use, predating most other building materials.",
+        "score": 1,
+        "shared": [
+          "earliest"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": -210000,
+    "title": "Early Sapiens Reach Greece",
+    "candidates": [
+      {
+        "name": "anatomically-modern-humans",
+        "friendly_name": "Anatomically Modern Humans Emerge",
+        "year": -315000,
+        "year_end": -160000,
+        "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
+        "score": 3,
+        "shared": [
+          "sapiens",
+          "modern",
+          "human"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 2,
+        "shared": [
+          "modern",
+          "europe"
+        ]
+      },
+      {
+        "name": "neanderthals-appear",
+        "friendly_name": "Neanderthals Appear",
+        "year": -430000,
+        "year_end": -200000,
+        "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+        "score": 2,
+        "shared": [
+          "modern",
+          "europe"
+        ]
+      },
+      {
+        "name": "advanced-acheulean-stone-tools",
+        "friendly_name": "Advanced (Acheulean) Stone Tools",
+        "year": -1760000,
+        "year_end": -130000,
+        "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
+        "score": 2,
+        "shared": [
+          "early",
+          "human"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": -180000,
+    "title": "Sapiens Settle Misliya Cave",
+    "candidates": [
+      {
+        "name": "anatomically-modern-humans",
+        "friendly_name": "Anatomically Modern Humans Emerge",
+        "year": -315000,
+        "year_end": -160000,
+        "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
+        "score": 5,
+        "shared": [
+          "sapiens",
+          "modern",
+          "humans",
+          "africa",
+          "earlier"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 2,
+        "shared": [
+          "modern",
+          "humans"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "simple-glue-birch-tar",
+        "friendly_name": "Simple Glue (Birch Tar)",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Birch bark heated to produce a sticky adhesive used to bond stone tools to wooden handles.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beds",
+        "friendly_name": "Beds",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Grass and leaf bedding deliberately arranged for sleeping comfort in early human shelters.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": -160000,
+    "title": "The Denisovans Emerge",
+    "candidates": [
+      {
+        "name": "anatomically-modern-humans",
+        "friendly_name": "Anatomically Modern Humans Emerge",
+        "year": -315000,
+        "year_end": -160000,
+        "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
+        "score": 2,
+        "shared": [
+          "emerge",
+          "humans"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 2,
+        "shared": [
+          "humans",
+          "across"
+        ]
+      },
+      {
+        "name": "clothing",
+        "friendly_name": "Clothing",
+        "year": -170000,
+        "year_end": -83000,
+        "description": "Fitted garments sewn from animal hides using bone awls, enabling survival in colder climates.",
+        "score": 1,
+        "shared": [
+          "bone"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "bone"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": -117000,
+    "title": "The Last Homo Erectus",
+    "candidates": [
+      {
+        "name": "beds",
+        "friendly_name": "Beds",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Grass and leaf bedding deliberately arranged for sleeping comfort in early human shelters.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      },
+      {
+        "name": "funerals-burial",
+        "friendly_name": "Funerals/Burial",
+        "year": -120000,
+        "year_end": -90000,
+        "description": "Deliberate burial of the dead with ritual significance, reflecting early symbolic thought.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beads-string-thread",
+        "friendly_name": "Beads (String/Thread Implied)",
+        "year": -142000,
+        "year_end": -73000,
+        "description": "Shell beads strung together as personal ornaments, implying the concurrent invention of thread.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "heat-treating-stone-blades",
+        "friendly_name": "Heat Treating Stone Blades",
+        "year": -164000,
+        "year_end": -65000,
+        "description": "Heating stone before flaking improved its workability and produced sharper, more refined tool edges.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "clothing",
+        "friendly_name": "Clothing",
+        "year": -170000,
+        "year_end": -83000,
+        "description": "Fitted garments sewn from animal hides using bone awls, enabling survival in colder climates.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "simple-glue-birch-tar",
+        "friendly_name": "Simple Glue (Birch Tar)",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Birch bark heated to produce a sticky adhesive used to bond stone tools to wooden handles.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": -100000,
+    "title": "The Hobbit of Flores",
+    "candidates": [
+      {
+        "name": "simple-glue-birch-tar",
+        "friendly_name": "Simple Glue (Birch Tar)",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Birch bark heated to produce a sticky adhesive used to bond stone tools to wooden handles.",
+        "score": 2,
+        "shared": [
+          "stone",
+          "tools"
+        ]
+      },
+      {
+        "name": "heat-treating-stone-blades",
+        "friendly_name": "Heat Treating Stone Blades",
+        "year": -164000,
+        "year_end": -65000,
+        "description": "Heating stone before flaking improved its workability and produced sharper, more refined tool edges.",
+        "score": 1,
+        "shared": [
+          "stone"
+        ]
+      },
+      {
+        "name": "beds",
+        "friendly_name": "Beds",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Grass and leaf bedding deliberately arranged for sleeping comfort in early human shelters.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 1,
+        "shared": [
+          "tools"
+        ]
+      },
+      {
+        "name": "bone-tools",
+        "friendly_name": "Bone Tools",
+        "year": -1500000,
+        "year_end": -70000,
+        "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
+        "score": 1,
+        "shared": [
+          "tools"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": -67000,
+    "title": "Homo Luzonensis of the Philippines",
+    "candidates": [
+      {
+        "name": "first-symbolic-engravings",
+        "friendly_name": "First Symbolic Engravings",
+        "year": -73000,
+        "year_end": -60000,
+        "description": "Early humans scratched deliberate cross-hatched patterns onto ochre in South Africa's Blombos Cave.",
+        "score": 1,
+        "shared": [
+          "cave"
+        ]
+      },
+      {
+        "name": "compound-paints",
+        "friendly_name": "Compound Paints",
+        "year": -100000,
+        "year_end": -49000,
+        "description": "Multi-ingredient paints mixed from ochre, fat, and other materials for cave art and body decoration.",
+        "score": 1,
+        "shared": [
+          "cave"
+        ]
+      },
+      {
+        "name": "beds",
+        "friendly_name": "Beds",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Grass and leaf bedding deliberately arranged for sleeping comfort in early human shelters.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "curved"
+        ]
+      },
+      {
+        "name": "compound-adhesives",
+        "friendly_name": "Compound Adhesives",
+        "year": -70000,
+        "year_end": -61000,
+        "description": "Multi-ingredient glues combining plant gum, ochre, and fat for stronger tool assembly.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "out-of-africa-dispersal",
+        "friendly_name": "Out of Africa Dispersal",
+        "year": -70000,
+        "year_end": -50000,
+        "description": "Modern humans spread from Africa across Eurasia, the migration from which most non-Africans descend.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": -65000,
+    "title": "Humans Reach Australia",
+    "candidates": [
+      {
+        "name": "humans-reach-australia",
+        "friendly_name": "Humans Reach Australia",
+        "year": -65000,
+        "year_end": -45000,
+        "description": "Seafaring humans crossed open water to settle the continent of Sahul, founding Aboriginal Australia.",
+        "score": 5,
+        "shared": [
+          "humans",
+          "reach",
+          "australia",
+          "open",
+          "continent"
+        ]
+      },
+      {
+        "name": "first-symbolic-engravings",
+        "friendly_name": "First Symbolic Engravings",
+        "year": -73000,
+        "year_end": -60000,
+        "description": "Early humans scratched deliberate cross-hatched patterns onto ochre in South Africa's Blombos Cave.",
+        "score": 3,
+        "shared": [
+          "humans",
+          "early",
+          "cross"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 2,
+        "shared": [
+          "humans",
+          "early"
+        ]
+      },
+      {
+        "name": "aboriginal-australian",
+        "friendly_name": "Aboriginal Culture Established",
+        "year": -65000,
+        "year_end": -45000,
+        "description": "Aboriginal Australians developed one of the world's oldest continuous cultures across the continent.",
+        "score": 1,
+        "shared": [
+          "continent"
+        ]
+      },
+      {
+        "name": "out-of-africa-dispersal",
+        "friendly_name": "Out of Africa Dispersal",
+        "year": -70000,
+        "year_end": -50000,
+        "description": "Modern humans spread from Africa across Eurasia, the migration from which most non-Africans descend.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "beds",
+        "friendly_name": "Beds",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Grass and leaf bedding deliberately arranged for sleeping comfort in early human shelters.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": -50000,
+    "title": "Sapiens and Neanderthals Interbreed",
+    "candidates": [
+      {
+        "name": "out-of-africa-dispersal",
+        "friendly_name": "Out of Africa Dispersal",
+        "year": -70000,
+        "year_end": -50000,
+        "description": "Modern humans spread from Africa across Eurasia, the migration from which most non-Africans descend.",
+        "score": 3,
+        "shared": [
+          "modern",
+          "humans",
+          "most"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 3,
+        "shared": [
+          "neanderthals",
+          "modern",
+          "humans"
+        ]
+      },
+      {
+        "name": "cave-paintings",
+        "friendly_name": "First Cave Paintings",
+        "year": -51200,
+        "year_end": -40800,
+        "description": "Early humans painted animals, hands and symbols on the walls of caves.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "humans-reach-australia",
+        "friendly_name": "Humans Reach Australia",
+        "year": -65000,
+        "year_end": -45000,
+        "description": "Seafaring humans crossed open water to settle the continent of Sahul, founding Aboriginal Australia.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "boats",
+        "friendly_name": "Boats",
+        "year": -1040000,
+        "year_end": -50000,
+        "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "sewing-needle",
+        "friendly_name": "Sewing Needle",
+        "year": -61000,
+        "year_end": -50000,
+        "description": "Bone needles with carved eyes for threading sinew, enabling stitching of fitted hide garments.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": -45000,
+    "title": "Sapiens Settle Bacho Kiro Cave",
+    "candidates": [
+      {
+        "name": "humans-enter-europe",
+        "friendly_name": "Humans Enter Europe",
+        "year": -45000,
+        "year_end": -40000,
+        "description": "Modern humans spread into Europe alongside Neanderthals, founding the continent's earliest populations.",
+        "score": 4,
+        "shared": [
+          "modern",
+          "humans",
+          "earliest",
+          "europe"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 4,
+        "shared": [
+          "modern",
+          "humans",
+          "tools",
+          "europe"
+        ]
+      },
+      {
+        "name": "cave-paintings",
+        "friendly_name": "First Cave Paintings",
+        "year": -51200,
+        "year_end": -40800,
+        "description": "Early humans painted animals, hands and symbols on the walls of caves.",
+        "score": 2,
+        "shared": [
+          "cave",
+          "humans"
+        ]
+      },
+      {
+        "name": "humans-reach-australia",
+        "friendly_name": "Humans Reach Australia",
+        "year": -65000,
+        "year_end": -45000,
+        "description": "Seafaring humans crossed open water to settle the continent of Sahul, founding Aboriginal Australia.",
+        "score": 2,
+        "shared": [
+          "settle",
+          "humans"
+        ]
+      },
+      {
+        "name": "humans-reach-siberia",
+        "friendly_name": "Humans Reach Siberia",
+        "year": -45000,
+        "year_end": -32000,
+        "description": "Humans adapted to the frozen Arctic, settling Siberia and reaching the gateway to the Americas.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "ground-stone-tools",
+        "friendly_name": "Ground Stone Tools",
+        "year": -49000,
+        "year_end": -10000,
+        "description": "Stone tools shaped by grinding and polishing rather than chipping, producing smoother edges.",
+        "score": 1,
+        "shared": [
+          "tools"
+        ]
+      },
+      {
+        "name": "simple-glue-birch-tar",
+        "friendly_name": "Simple Glue (Birch Tar)",
+        "year": -200000,
+        "year_end": -40000,
+        "description": "Birch bark heated to produce a sticky adhesive used to bond stone tools to wooden handles.",
+        "score": 1,
+        "shared": [
+          "tools"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": -40000,
+    "title": "The Last Neanderthals",
+    "candidates": [
+      {
+        "name": "humans-enter-europe",
+        "friendly_name": "Humans Enter Europe",
+        "year": -45000,
+        "year_end": -40000,
+        "description": "Modern humans spread into Europe alongside Neanderthals, founding the continent's earliest populations.",
+        "score": 5,
+        "shared": [
+          "neanderthals",
+          "europe",
+          "continent",
+          "modern",
+          "humans"
+        ]
+      },
+      {
+        "name": "neanderthals-thrive-europe",
+        "friendly_name": "Neanderthals Thrive in Europe",
+        "year": -243000,
+        "year_end": -40000,
+        "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+        "score": 5,
+        "shared": [
+          "neanderthals",
+          "europe",
+          "modern",
+          "humans",
+          "years"
+        ]
+      },
+      {
+        "name": "neanderthal-extinction",
+        "friendly_name": "Neanderthal Extinction",
+        "year": -41000,
+        "year_end": -39000,
+        "description": "Neanderthals went extinct, possibly due to competition with modern humans or climate change.",
+        "score": 3,
+        "shared": [
+          "neanderthals",
+          "modern",
+          "humans"
+        ]
+      },
+      {
+        "name": "humans-settle-near-oceania",
+        "friendly_name": "Humans Settle Near Oceania",
+        "year": -42000,
+        "year_end": -20000,
+        "description": "Early voyagers reached New Guinea and the Bismarck Archipelago, the first peopling of the Pacific.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "humans-reach-siberia",
+        "friendly_name": "Humans Reach Siberia",
+        "year": -45000,
+        "year_end": -32000,
+        "description": "Humans adapted to the frozen Arctic, settling Siberia and reaching the gateway to the Americas.",
+        "score": 1,
+        "shared": [
+          "humans"
+        ]
+      },
+      {
+        "name": "shoes",
+        "friendly_name": "Shoes",
+        "year": -40000,
+        "year_end": -10000,
+        "description": "Foot coverings crafted from animal hide to protect feet from rough terrain and cold.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": -23000,
+    "title": "White Sands Footprints",
+    "candidates": [
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 3,
+        "shared": [
+          "ice",
+          "age",
+          "americas"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 3,
+        "shared": [
+          "ice",
+          "age",
+          "americas"
+        ]
+      },
+      {
+        "name": "humans-reach-the-americas",
+        "friendly_name": "Humans Reach the Americas",
+        "year": -23000,
+        "year_end": -15000,
+        "description": "The first people crossed into the Americas, settling continents previously without humans.",
+        "score": 2,
+        "shared": [
+          "people",
+          "americas"
+        ]
+      },
+      {
+        "name": "last-glacial-maximum",
+        "friendly_name": "Last Glacial Maximum",
+        "year": -26500,
+        "year_end": -19000,
+        "description": "The Last Glacial Maximum marked the peak of the most recent Ice Age, when ice sheets reached their largest extent.",
+        "score": 2,
+        "shared": [
+          "ice",
+          "age"
+        ]
+      },
+      {
+        "name": "venus-of-willendorf-attire",
+        "friendly_name": "Carved Figures Show Woven Caps",
+        "year": -29000,
+        "year_end": -23000,
+        "description": "Paleolithic Venus figurines depict woven caps and string skirts, hinting at early textile craft in ice age Europe.",
+        "score": 2,
+        "shared": [
+          "ice",
+          "age"
+        ]
+      },
+      {
+        "name": "dog-becomes-companion",
+        "friendly_name": "Dogs Become Human Companions",
+        "year": -30000,
+        "year_end": -14000,
+        "description": "Wolves drawn to human camps gradually became dogs, the first animals tamed by people.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      }
+    ]
+  }
+]
