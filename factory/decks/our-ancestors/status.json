@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T16:07:05.473Z",
+  "updated_at": "2026-10-25T17:12:12.520Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-25T16:07:05.442Z"
     },
     "homo-erectus-stands-tall": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "faa687f526e9cfe0444ba4c821876ed4e82bca7fec5bcc18241164b1735181cd",
+      "updated_at": "2026-10-25T17:12:12.520Z"
     },
     "dmanisi-humans-leave-africa": {
       "state": "qc-pass",
