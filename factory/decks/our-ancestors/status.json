@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T15:08:32.203Z",
+  "updated_at": "2026-10-25T15:11:10.496Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-25T15:08:32.203Z"
     },
     "orrorin-tugenensis": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "79d79fa9c719ee0455391e714fa7bc128bcab18a215c6d544c86920f934b8094",
+      "updated_at": "2026-10-25T15:11:10.496Z"
     },
     "ardipithecus-ramidus-appears": {
       "state": "pending",
