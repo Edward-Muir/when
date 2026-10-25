@@ -1,0 +1,15 @@
+{
+  "slug": "sinosauropteryx-feathered-find",
+  "description": "A small, fuzzy orange-brown feathered dinosaur with a long tail banded in white and orange leaps from the muddy edge of a dark, misty lake, its claws out and mouth open, with water splashing beneath its feet. A small lizard lies on the driftwood to the right. Behind are dark conifers, ferns and palms under a stormy grey sky. Painterly oil style, edge to edge, no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

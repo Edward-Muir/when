@@ -1,0 +1,15 @@
+{
+  "slug": "brontosaurus-thunder-lizard",
+  "description": "A large long-necked sauropod with a whip-like tail stands in a shallow muddy swamp under a dark, orange-lit storm sky. Conifers stand in the distance, with ferns and palm-like plants in the foreground and mid-ground. The painting fills the frame edge to edge, with no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
