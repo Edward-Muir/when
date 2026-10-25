@@ -29,50 +29,51 @@ Curated themes run on **Mondays and Fridays**. The live calendar is the source o
 table is the plan it is published from. Themes not in it (`assassinations`, `automata`,
 `ciphers`, `kings-of-england`) have already run.
 
-Two decks fail `theme-gap`'s same-year gate against the current catalogue, which the publish
-check does not test, and need a swap (re-publish one already in the calendar): `money`
-(`first-coins` and `punch-marked-coins-india`, both 600 BCE) and `walls`
-(`walls-of-benin-city-built` and `malbork-castle-built`, both 1280).
+`theme-gap`'s same-year gate, which the publish check does not test, caught one pair in
+`money` (`first-coins` and `punch-marked-coins-india`, both 600 BCE) and one in `walls`
+(`walls-of-benin-city-built` and `malbork-castle-built`, both 1280). Both were fixed on
+2026-10-25 by dropping the second card of the pair.
 
-| Date       | Day | Theme               | Bank |
-| ---------- | --- | ------------------- | ---- |
-| 2026-10-02 | Fri | `clockwork`         | 1    |
-| 2026-10-05 | Mon | `cosmic-ideas`      | 1    |
-| 2026-10-09 | Fri | `crossings`         | 1    |
-| 2026-10-12 | Mon | `eureka`            | 1    |
-| 2026-10-16 | Fri | `games`             | 1    |
-| 2026-10-19 | Mon | `light`             | 1    |
-| 2026-10-23 | Fri | `lost-and-found`    | 1    |
-| 2026-10-26 | Mon | `mapmakers`         | 1    |
-| 2026-10-30 | Fri | `money`             | 1    |
-| 2026-11-02 | Mon | `nations-of-europe` | 1    |
-| 2026-11-06 | Fri | `numbers`           | 1    |
-| 2026-11-09 | Mon | `plagues`           | 1    |
-| 2026-11-13 | Fri | `the-deep`          | 1    |
-| 2026-11-16 | Mon | `upheaval`          | 1    |
-| 2026-11-20 | Fri | `what-we-drink`     | 1    |
-| 2026-11-23 | Mon | `before-us`         | 2    |
-| 2026-11-27 | Fri | `founding-cities`   | 2    |
-| 2026-11-30 | Mon | `great-fires`       | 2    |
-| 2026-12-04 | Fri | `ends-of-the-earth` | 2    |
-| 2026-12-07 | Mon | `famine`            | 2    |
-| 2026-12-11 | Fri | `chinese-dynasties` | 2    |
-| 2026-12-14 | Mon | `on-stage`          | 2    |
-| 2026-12-18 | Fri | `peace`             | 2    |
-| 2026-12-21 | Mon | `pharaohs`          | 2    |
-| 2026-12-25 | Fri | `pirates`           | 2    |
-| 2026-12-28 | Mon | `schools`           | 2    |
-| 2027-01-01 | Fri | `ships`             | 2    |
-| 2027-01-04 | Mon | `heists`            | 2    |
-| 2027-01-08 | Fri | `flight`            | 2    |
-| 2027-01-11 | Mon | `skyline`           | 2    |
-| 2027-01-15 | Fri | `tamed`             | 2    |
-| 2027-01-18 | Mon | `first-women`       | 2    |
-| 2027-01-22 | Fri | `rome`              | 2    |
-| 2027-01-25 | Mon | `sieges`            | 2    |
-| 2027-01-29 | Fri | `under-the-knife`   | 2    |
-| 2027-02-01 | Mon | `walls`             | 2    |
-| 2027-02-05 | Fri | `waterworks`        | 2    |
+| Date       | Day | Theme               | Bank    |
+| ---------- | --- | ------------------- | ------- |
+| 2026-10-02 | Fri | `clockwork`         | 1       |
+| 2026-10-05 | Mon | `cosmic-ideas`      | 1       |
+| 2026-10-09 | Fri | `crossings`         | 1       |
+| 2026-10-12 | Mon | `eureka`            | 1       |
+| 2026-10-16 | Fri | `games`             | 1       |
+| 2026-10-19 | Mon | `light`             | 1       |
+| 2026-10-23 | Fri | `lost-and-found`    | 1       |
+| 2026-10-26 | Mon | `dinosaurs`         | factory |
+| 2026-10-30 | Fri | `mapmakers`         | 1       |
+| 2026-11-02 | Mon | `money`             | 1       |
+| 2026-11-06 | Fri | `nations-of-europe` | 1       |
+| 2026-11-09 | Mon | `numbers`           | 1       |
+| 2026-11-13 | Fri | `plagues`           | 1       |
+| 2026-11-16 | Mon | `the-deep`          | 1       |
+| 2026-11-20 | Fri | `upheaval`          | 1       |
+| 2026-11-23 | Mon | `what-we-drink`     | 1       |
+| 2026-11-27 | Fri | `before-us`         | 2       |
+| 2026-11-30 | Mon | `founding-cities`   | 2       |
+| 2026-12-04 | Fri | `great-fires`       | 2       |
+| 2026-12-07 | Mon | `ends-of-the-earth` | 2       |
+| 2026-12-11 | Fri | `famine`            | 2       |
+| 2026-12-14 | Mon | `chinese-dynasties` | 2       |
+| 2026-12-18 | Fri | `on-stage`          | 2       |
+| 2026-12-21 | Mon | `peace`             | 2       |
+| 2026-12-25 | Fri | `pharaohs`          | 2       |
+| 2026-12-28 | Mon | `pirates`           | 2       |
+| 2027-01-01 | Fri | `schools`           | 2       |
+| 2027-01-04 | Mon | `ships`             | 2       |
+| 2027-01-08 | Fri | `heists`            | 2       |
+| 2027-01-11 | Mon | `flight`            | 2       |
+| 2027-01-15 | Fri | `skyline`           | 2       |
+| 2027-01-18 | Mon | `tamed`             | 2       |
+| 2027-01-22 | Fri | `first-women`       | 2       |
+| 2027-01-25 | Mon | `rome`              | 2       |
+| 2027-01-29 | Fri | `sieges`            | 2       |
+| 2027-02-01 | Mon | `under-the-knife`   | 2       |
+| 2027-02-05 | Fri | `walls`             | 2       |
+| 2027-02-08 | Mon | `waterworks`        | 2       |
 
 ## The themes
 
@@ -659,7 +660,6 @@ check does not test, and need a swap (re-publish one already in the calendar): `
     "cowrie-shell-money-china",
     "first-coins",
     "athenian-owl-tetradrachm",
-    "punch-marked-coins-india",
     "alexander-coinage-empire",
     "qin-standardization",
     "roman-denarius-introduced",
@@ -1947,7 +1947,6 @@ Their dates are in the schedule at the top of this file.
     "tower-london",
     "krak-des-chevaliers-rebuilt",
     "great-zimbabwe-stone-construction",
-    "malbork-castle-built",
     "carcassonne-refortified",
     "walls-of-benin-city-built",
     "constantinople-fall",

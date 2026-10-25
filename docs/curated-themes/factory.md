@@ -544,11 +544,11 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 
 ## 7. Phase 0: groundwork, before the factory
 
-1. **Fix the calendar.**
-   - Fill the 2026-10-26 to 2026-11-20 gap.
-   - Move the eight stray Sunday themes onto Mon/Fri.
-   - Apply the same-year fixes for `money` and `walls`.
-   - Publish bank 2's 22 ready themes. That gives about 11 weeks of buffer while the factory is built.
+1. **Fix the calendar. Done 2026-10-25.**
+   - The 2026-10-26 gap went to Dinosaurs, the factory's first deck.
+   - The eight stray Sunday themes moved onto Mon/Fri, from 2026-10-30 to 2026-11-23.
+   - `money` and `walls` each dropped one card of their same-year pair.
+   - Bank 2's 22 themes are published, from 2026-11-27 to 2027-02-08. That gives about 15 weeks of buffer while the factory is built.
 2. **Add CI on pull requests. Done.** `.github/workflows/ci.yml` runs `npm ci`, lint, both typechecks, the tests, a `CI=true` build and `theme:verify` on every pull request. Before it, tests ran only after a merge had already deployed.
    - `theme:verify` gates only themes with a date still to come. A theme whose dates have all passed can't be rewritten (the date rule in [index.md](index.md)), so it is reported but never fails the run. English History (2026-08-20) lost `church-of-england` to a duplicate retirement, and would otherwise fail every PR.
 3. **Move the image scripts into the repo. Done.** `downsample.py`, `extract_colors.py` and `find_images_to_upload.js` are copied from `when-images/scripts/` to `scripts/images/`. They find the image folders through `WHEN_IMAGES_DIR`, and `downsample.py` and `extract_colors.py` take `--slugs`, so the ship stage can process one deck's art and nothing else. The images themselves stay outside git.
