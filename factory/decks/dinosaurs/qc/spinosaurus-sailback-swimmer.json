@@ -1,0 +1,15 @@
+{
+  "slug": "spinosaurus-sailback-swimmer",
+  "description": "A large theropod with a tall sail along its back wades through dark, rippling swamp water under a stormy sky, a fish clamped in its long snout. Dense dark trees and palms fill the background. The style is a painterly oil look, with no visible text, border or frame. The image fills its edges.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
