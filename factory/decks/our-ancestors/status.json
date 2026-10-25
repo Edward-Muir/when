@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T15:25:05.456Z",
+  "updated_at": "2026-10-25T15:28:16.392Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-25T15:25:05.456Z"
     },
     "paranthropus-boisei-appears": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a7edf97cfb034ab34259d9807d83db61ae3309893292b261b89e3b5d9330ed6d",
+      "updated_at": "2026-10-25T15:28:16.392Z"
     },
     "homo-erectus-stands-tall": {
       "state": "pending",
