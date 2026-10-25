@@ -1,0 +1,15 @@
+{
+  "slug": "carnotaurus-flesh-eating-bull",
+  "description": "A theropod dinosaur with a scaly, spiked body and two horns above its eyes runs across dry, dusty scrubland. Dirt kicks up from its clawed feet. Behind it are conifers, ferns and a dead bare tree under a dark, stormy sky. The painting fills the frame edge to edge, with no text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "hadrosaurus-duck-bill",
+  "description": "A large, bulky, scaly dinosaur with a broad beaked snout stands in a murky marsh at dusk, tilted forward and reaching up to nibble a branch of conifer. Its body is brown-gold with a row of small spines along the back and tail. Behind it are a grey, stormy sky, still water, a low hazy shoreline, ferns and conifers, and driftwood in the foreground. The image fills the edge to edge, with no frame, text or people.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
