@@ -1,21 +1,26 @@
 {
   "deck": "our-ancestors",
   "name": "Our Ancestors",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T13:19:18.879Z",
+  "updated_at": "2026-10-25T15:08:32.203Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-25T13:19:18.879Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-25T15:08:32.203Z"
     }
   ],
   "slugs": {
     "sahelanthropus-tchadensis": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fb3cadd729b12ca5be4957b93f2f75daaf10c55bd480a09914549959a45f0554",
+      "updated_at": "2026-10-25T15:08:32.203Z"
     },
     "orrorin-tugenensis": {
       "state": "pending",
