@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T17:32:38.626Z",
+  "updated_at": "2026-10-25T17:42:01.407Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -113,10 +113,11 @@
       "sha256": null
     },
     "jebel-irhoud-homo-sapiens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6999af8eb8a18e2e5faf28c0aa3f40b413255c39f8a7d506463a05be7de44284",
+      "updated_at": "2026-10-25T17:42:01.407Z"
     },
     "misliya-cave-sapiens": {
       "state": "pending",
