@@ -1,0 +1,15 @@
+{
+  "slug": "baryonyx-fish-eating-claw",
+  "description": "A large dark, scaly theropod with a long narrow snout and bared teeth stands in churning river water, gripping a silver fish in its forelimb with a hooked claw. Behind it is a dense, stormy-skied swamp forest with ferns, palms and fallen logs, all in a painterly, textured style. No text, frame or border is visible, and the painting fills the whole square.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
