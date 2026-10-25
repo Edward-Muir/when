@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T19:12:13.109Z",
+  "updated_at": "2026-10-25T19:17:01.839Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-25T18:12:56.566Z"
     },
     "homo-naledi-appears": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "672d6cd625f2bf26f9a77ed1dcf797c186b8ea13372d4b962358839e41fd019b",
+      "updated_at": "2026-10-25T19:17:01.839Z"
     },
     "jebel-irhoud-homo-sapiens": {
       "state": "qc-pass",
