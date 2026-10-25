@@ -1,0 +1,15 @@
+{
+  "slug": "cryolophosaurus-frozen-crest",
+  "description": "A dark, painterly scene of a large bipedal theropod with a fan-shaped red-tinted crest over its brow, walking through a dense forest of ferns and mossy fallen logs. Shafts of light and mist fill the background, with tall trunks and hanging vines. The image runs edge to edge with no visible text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
