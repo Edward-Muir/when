@@ -1,0 +1,248 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "first-dinosaurs-appear",
+      "why": "Same year as the first-dinosaurs card; the earliest-dinosaur claim."
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "eoraptor-dawn-dinosaur",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "coelophysis-pack-hunter",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 3,
+      "decision": "reuse",
+      "slug": "plateosaurus",
+      "why": "Same animal, same range start."
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1; thinnest Triassic beat, cut to fit 30."
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "massospondylus-southern-grazer",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "cryolophosaurus-frozen-crest",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "dilophosaurus-twin-crest",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 8,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1; cut to fit 30."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "megalosaurus-great-lizard",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "mamenchisaurus-long-necked-giant",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "brontosaurus-thunder-lizard",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 12,
+      "decision": "cut",
+      "slug": "",
+      "why": "Same year as reused Stegosaurus (-155M); one card per year, so cut."
+    },
+    {
+      "beat": 13,
+      "decision": "reuse",
+      "slug": "brachiosaurus",
+      "why": "Same animal, same range (-154M)."
+    },
+    {
+      "beat": 14,
+      "decision": "reuse",
+      "slug": "stegosaurus",
+      "why": "Same animal; spine's 153 was an offset inside the true 155-150 range."
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "diplodocus-whip-tailed-giant",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": "",
+      "why": "Cut from the dense Late Jurassic stretch."
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "first-birds-archaeopteryx",
+      "why": "Same animal and year."
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "utahraptor-giant-raptor",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "baryonyx-fish-eating-claw",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 20,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1; cut to fit 30."
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "iguanodon-thumb-spiked-grazer",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "sinosauropteryx-feathered-find",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "microraptor-four-winged-glider",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "deinonychus-terrible-claw",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1; cut to fit 30."
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "spinosaurus-sailback-swimmer",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "giganotosaurus-giant-of-the-south",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "argentinosaurus-colossal-titan",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "hadrosaurus-duck-bill",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 30,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1; cut to fit 30."
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "parasaurolophus-trumpet-crest",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 32,
+      "decision": "reuse",
+      "slug": "velociraptor",
+      "why": "Same animal, same range start."
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1; cut to fit 30."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "carnotaurus-flesh-eating-bull",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "therizinosaurus-scythe-lizard",
+      "why": "No catalogue card for this animal."
+    },
+    {
+      "beat": 36,
+      "decision": "reuse",
+      "slug": "tyrannosaurus-rex",
+      "why": "Same animal, same range start."
+    },
+    {
+      "beat": 37,
+      "decision": "cut",
+      "slug": "",
+      "why": "Triceratops' existing card shares the year with Tyrannosaurus rex; cut for uniqueness."
+    },
+    {
+      "beat": 38,
+      "decision": "reuse",
+      "slug": "dinosaur-extinction",
+      "why": "Same event: the asteroid ending the reign, same year."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 1/8               (advisory, 6+ is spread)\n  PASS  band 0 29              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 1 in -243000000--243000000 (want 3 or fewer in any 10 years)\n  PASS  shared 3 (before-us)   (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 49 earlier themes:\n        3  before-us              first-dinosaurs-appear, first-birds-archaeopteryx, dinosaur-extinction",
+  "footholds": [
+    "tyrannosaurus-rex",
+    "velociraptor",
+    "dinosaur-extinction",
+    "stegosaurus",
+    "brachiosaurus",
+    "brontosaurus-thunder-lizard"
+  ]
+}

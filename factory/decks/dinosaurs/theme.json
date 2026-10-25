@@ -1,0 +1,29 @@
+{
+  "id": "dinosaurs",
+  "name": "Dinosaurs",
+  "scope": "Yes if it is a dinosaur, dated to when it lived, or a turning point in the dinosaurs' own story",
+  "boundary": "Dinosaurs owns the animals themselves and the bookends of their reign; their discovery goes to Bone Hunters, and the life around them (mammals, pterosaurs, sea reptiles, flowering plants) stays in Before Us.",
+  "neighbours": ["before-us", "bone-hunters"],
+  "grid": {
+    "categories": ["nature"],
+    "eras": ["prehistory"],
+    "regions": ["Global"]
+  },
+  "example_beats": [
+    "Eoraptor, one of the first dinosaurs (231 million years ago)",
+    "Coelophysis hunts in packs (215 million years ago)",
+    "Plateosaurus, an early long-neck (214 million years ago)",
+    "Dilophosaurus (193 million years ago)",
+    "Allosaurus (155 million years ago)",
+    "Stegosaurus (155 million years ago)",
+    "Archaeopteryx, the first bird (150 million years ago)",
+    "Iguanodon (126 million years ago)",
+    "Spinosaurus (99 million years ago)",
+    "Velociraptor (75 million years ago)",
+    "Tyrannosaurus rex (68 million years ago)",
+    "The asteroid ends their reign (66 million years ago)"
+  ],
+  "notes": "One beat per dinosaur, dated to the start of its fossil range (the range in `note`), plus the first dinosaurs and the asteroid. Spread the beats across the Triassic, Jurassic and Cretaceous by their length. Never name a period or 'million years' on a card.",
+  "appeal": 3,
+  "status": "queued"
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "iguanodon-thumb-spiked-grazer",
+  "description": "A bulky, armoured grey-brown dinosaur with a deep snout stoops in a dark forest floor, browsing a sprig of green plant with its mouth while one forelimb reaches down with a pointed thumb spike visible among the fingers. Ferns and horsetail stalks surround it, with a dim canopy of trunks behind. The style is a dark oil painting with visible brushwork. No text, no frame, no people.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
