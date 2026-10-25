@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T15:28:16.392Z",
+  "updated_at": "2026-10-25T15:33:34.298Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -78,10 +78,11 @@
       "sha256": null
     },
     "dmanisi-humans-leave-africa": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1a233140b0014a3d4dd01a314c4fe63ef77a2630d9fa41e7ca419a993bafd86f",
+      "updated_at": "2026-10-25T15:33:34.298Z"
     },
     "homo-antecessor-atapuerca": {
       "state": "pending",
