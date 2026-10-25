@@ -12769,7 +12769,7 @@
   {
     "name": "giganotosaurus-giant-of-the-south",
     "friendly_name": "Giganotosaurus, Giant of the South",
-    "year": -98000000,
+    "year": -111400000,
     "category": "nature",
     "description": "One of the largest meat-eaters ever to walk on land hunted the huge plant-eaters of what is now Argentina.",
     "difficulty": "hard",
@@ -12779,12 +12779,13 @@
     "has_detail": true,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/giganotosaurus-giant-of-the-south_2cgzpl?_a=BAMAMikS0",
     "color": "#25201c",
-    "text_color": "light"
+    "text_color": "light",
+    "year_end": -106200000
   },
   {
     "name": "argentinosaurus-colossal-titan",
     "friendly_name": "Argentinosaurus, the Colossal Titan",
-    "year": -97000000,
+    "year": -106200000,
     "category": "nature",
     "description": "A sauropod of immense size, among the heaviest land animals known, lumbered across the plains of South America.",
     "difficulty": "hard",

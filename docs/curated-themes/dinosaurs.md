@@ -47,9 +47,9 @@ Two neighbours own the edges:
 | -125000000 | `sinosauropteryx-feathered-find`    | NEW            |
 | -120000000 | `microraptor-four-winged-glider`    | NEW            |
 | -115000000 | `deinonychus-terrible-claw`         | NEW            |
+| -111400000 | `giganotosaurus-giant-of-the-south` | NEW            |
+| -106200000 | `argentinosaurus-colossal-titan`    | NEW            |
 |  -99000000 | `spinosaurus-sailback-swimmer`      | NEW            |
-|  -98000000 | `giganotosaurus-giant-of-the-south` | NEW            |
-|  -97000000 | `argentinosaurus-colossal-titan`    | NEW            |
 |  -80000000 | `hadrosaurus-duck-bill`             | NEW            |
 |  -76000000 | `parasaurolophus-trumpet-crest`     | NEW            |
 |  -75000000 | `velociraptor`                      | foothold       |
@@ -74,8 +74,8 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
 
 - **One year per card.** A spine year that matched a reused card's year cost the beat. Allosaurus
   (-155M) lost to the existing `stegosaurus`, and Triceratops (-68M on its existing card) lost to
-  `tyrannosaurus-rex`. Diplodocus and Giganotosaurus sit 1 to 2 million years inside their true
-  ranges, so no two cards share a year.
+  `tyrannosaurus-rex`. Diplodocus sits 2 million years inside its true range, so no two cards share
+  a year.
 - **Cut for fame.** The spine's least-known beats were cut to reach 30: Liliensternus,
   Scelidosaurus, Amargasaurus, Carcharodontosaurus, Dreadnoughtus and Edmontosaurus.
   Compsognathus was cut to thin the crowded late-Jurassic stretch.
@@ -83,18 +83,20 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
   hard to place from their text alone. Nine of them name "dinosaur" in the description or
   title, and the placement-first grid caps such a card at medium.
 
+## Fact-check points settled at review
+
+- **Giganotosaurus and Argentinosaurus were re-dated.** Maniel and colleagues (2026, Gondwana
+  Research) moved the Candeleros and Huincul Formations from the Cenomanian to the Albian, and
+  Wikipedia follows them. Giganotosaurus is now -111.4M with a window to -106.2M, the Candeleros
+  Formation from its maximum depositional age to the Huincul tuff above it. Argentinosaurus is
+  -106.2M, a single radiometric date, so it has no window. Both now come after Deinonychus and
+  before Spinosaurus, where the spine had them after Spinosaurus.
+- **Mamenchisaurus**: the description's "nineteen vertebrae" held for one species only, so it
+  now says the neck was nearly half the body's length. Its window ends at -145M, the genus's
+  Late Jurassic range. The full -114.4M range rested on M. anyuensis, which Wikipedia calls
+  unlikely to belong to the genus, and made the card close enough from Brontosaurus to Iguanodon.
+
 ## Open fact-check points
 
-- **Giganotosaurus and Argentinosaurus have been re-dated.** Wikipedia now follows a 2026
-  restudy of the Candeleros and Huincul Formations that moves both from the Cenomanian to the
-  Albian: about 111-106 Ma for Giganotosaurus and about 106.2 Ma for Argentinosaurus. The cards
-  keep the older Cenomanian-based years (-98M and -97M), and both evidence windows were rejected
-  for that reason. Their order relative to each other holds. Under the new dating, both would
-  come before Spinosaurus (-99M) and after Deinonychus (-115M). Moving them is a `year` move,
-  which needs a decision.
-- **Mamenchisaurus**: the description's "nineteen vertebrae" was not confirmed, and the count
-  varies by species.
 - **Cryolophosaurus** is tagged Antarctica and United States. The validator needs an actor
   country beside Antarctica, so the tag names the country of the expedition that found it.
-- **Mamenchisaurus's window** runs from -160M to -114.4M, the genus's full range. Any placement
-  from Brontosaurus to Iguanodon counts as close enough.
