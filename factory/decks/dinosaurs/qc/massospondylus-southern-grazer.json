@@ -1,0 +1,15 @@
+{
+  "slug": "massospondylus-southern-grazer",
+  "description": "A long-necked, bipedal-looking dinosaur with a small head, scaly textured skin and sharp claws stands on its hind legs with its long neck arched down toward a nest of speckled round eggs on the ground. Ferns, cycads and dense forest surround it under a dark, stormy sky. Painted in an oil-painting style with warm brown and green tones. No visible text, border or frame; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

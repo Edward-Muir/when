@@ -1,0 +1,15 @@
+{
+  "slug": "megalosaurus-great-lizard",
+  "description": "A large, dark, scaly theropod with a long tail and a crest along its back stands on a muddy shore, mouth open to show serrated teeth. Behind it are araucaria-type conifers, ferns and driftwood, with choppy grey water to the right and a stormy sky. Two long-necked sauropods are faintly visible on the far shore. No text, signature or border is visible, and nothing is bloody.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
