@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T15:19:58.162Z",
+  "updated_at": "2026-10-25T15:22:31.505Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-25T15:19:58.162Z"
     },
     "australopithecus-africanus-appears": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "dc96fcf6e1424c3f3f76f27297580b44f8dede4b9a9e5476ab9ae04a8a33a419",
+      "updated_at": "2026-10-25T15:22:31.505Z"
     },
     "oldowan-stone-tools": {
       "state": "pending",
