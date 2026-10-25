@@ -12871,7 +12871,8 @@
     "difficulty": "medium",
     "regions": [
       "Chad"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "orrorin-tugenensis",
@@ -12882,7 +12883,8 @@
     "difficulty": "hard",
     "regions": [
       "Kenya"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ardipithecus-ramidus-appears",
@@ -12893,7 +12895,8 @@
     "difficulty": "medium",
     "regions": [
       "Ethiopia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "australopithecus-anamensis-appears",
@@ -12904,7 +12907,8 @@
     "difficulty": "easy",
     "regions": [
       "Kenya"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "laetoli-footprints",
@@ -12915,7 +12919,8 @@
     "difficulty": "medium",
     "regions": [
       "Tanzania"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "australopithecus-africanus-appears",
@@ -12926,7 +12931,8 @@
     "difficulty": "medium",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "oldowan-stone-tools",
@@ -12937,7 +12943,8 @@
     "difficulty": "easy",
     "regions": [
       "Sub-Saharan Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "paranthropus-boisei-appears",
@@ -12948,7 +12955,8 @@
     "difficulty": "medium",
     "regions": [
       "Sub-Saharan Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "homo-erectus-stands-tall",
@@ -12959,7 +12967,8 @@
     "difficulty": "easy",
     "regions": [
       "Kenya"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "dmanisi-humans-leave-africa",
@@ -12971,7 +12980,8 @@
     "regions": [
       "Georgia",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "homo-antecessor-atapuerca",
@@ -12982,7 +12992,8 @@
     "difficulty": "medium",
     "regions": [
       "Spain"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "wonderwerk-cave-fire",
@@ -12993,7 +13004,8 @@
     "difficulty": "easy",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "neanderthals-emerge-europe",
@@ -13005,7 +13017,8 @@
     "regions": [
       "Europe",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "homo-naledi-appears",
@@ -13016,7 +13029,8 @@
     "difficulty": "medium",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "jebel-irhoud-homo-sapiens",
@@ -13027,7 +13041,8 @@
     "difficulty": "easy",
     "regions": [
       "Morocco"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "misliya-cave-sapiens",
@@ -13038,7 +13053,8 @@
     "difficulty": "medium",
     "regions": [
       "Israel"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "denisovans-emerge",
@@ -13051,7 +13067,8 @@
       "China",
       "Russia",
       "North & Central Asia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "last-homo-erectus-java",
@@ -13062,7 +13079,8 @@
     "difficulty": "medium",
     "regions": [
       "Indonesia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "homo-floresiensis-hobbit",
@@ -13073,7 +13091,8 @@
     "difficulty": "medium",
     "regions": [
       "Indonesia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "homo-luzonensis-appears",
@@ -13084,7 +13103,8 @@
     "difficulty": "medium",
     "regions": [
       "Philippines"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "sapiens-neanderthal-interbreeding",
@@ -13097,7 +13117,8 @@
       "Europe",
       "Middle East & North Africa"
     ],
-    "year_end": -43500
+    "year_end": -43500,
+    "has_detail": true
   },
   {
     "name": "last-neanderthals-vanish",
@@ -13109,6 +13130,7 @@
     "regions": [
       "Portugal",
       "Spain"
-    ]
+    ],
+    "has_detail": true
   }
 ]
