@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T19:20:22.159Z",
+  "updated_at": "2026-10-25T19:24:14.961Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-25T19:20:22.159Z"
     },
     "sapiens-neanderthal-interbreeding": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "670e0fbe2080ffb0ce981feb067692fa224e3857fc56b9c5ccbb0397435743b7",
+      "updated_at": "2026-10-25T19:24:14.961Z"
     },
     "last-neanderthals-vanish": {
       "state": "pending",
