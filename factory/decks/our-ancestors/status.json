@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T18:12:56.719Z",
+  "updated_at": "2026-10-25T19:09:26.201Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,11 +72,11 @@
       "updated_at": "2026-10-25T16:07:05.442Z"
     },
     "homo-erectus-stands-tall": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The central figure is fully nude, the whole torso, hips and legs unclothed and in full view. Repaint with the figure wearing a hide wrap or posed/lit so the body is not exposed.",
-      "sha256": "faa687f526e9cfe0444ba4c821876ed4e82bca7fec5bcc18241164b1735181cd",
-      "updated_at": "2026-10-25T18:12:56.474Z"
+      "sha256": "bcb7e5c79d303c0b62cd34332efcfb96819925eccf662806c299f1e428c2a6c0",
+      "updated_at": "2026-10-25T19:09:26.201Z"
     },
     "dmanisi-humans-leave-africa": {
       "state": "qc-pass",
