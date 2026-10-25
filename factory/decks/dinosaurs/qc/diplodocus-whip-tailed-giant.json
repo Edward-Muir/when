@@ -1,0 +1,15 @@
+{
+  "slug": "diplodocus-whip-tailed-giant",
+  "description": "A large long-necked sauropod with a spiked ridge along its back and a very long tail curling up into a stormy dark sky, grazing low among ferns. A second sauropod stands in the background, with conifers and tree ferns in a misty green-brown landscape. Painted in an oil-painting style, no visible text, and the painting fills the whole image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

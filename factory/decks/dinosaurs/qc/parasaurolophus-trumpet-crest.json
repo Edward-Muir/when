@@ -1,0 +1,15 @@
+{
+  "slug": "parasaurolophus-trumpet-crest",
+  "description": "A bipedal, duck-billed dinosaur with a tall, curved, hollow crest rises on a long neck, its beak open in a call. It stands in a misty forest of ferns and conifers under a dramatic orange-and-grey sky. Far back, a small group of similar dinosaurs stands near water. The painting is a dark oil-style scene with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

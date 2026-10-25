@@ -1,0 +1,15 @@
+{
+  "slug": "deinonychus-terrible-claw",
+  "description": "Two feathered, small bipedal theropods with raised sickle claws and spread arms leap through a dim fern forest with tall conifer trunks. A larger grey, scaly dinosaur stands on the right, and a fallen log lies in the foreground. The lighting is soft and painterly, with no visible text or frame apart from a tiny mark in the bottom right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
