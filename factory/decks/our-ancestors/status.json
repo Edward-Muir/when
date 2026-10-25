@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T17:59:53.289Z",
+  "updated_at": "2026-10-25T18:10:07.834Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -141,10 +141,11 @@
       "updated_at": "2026-10-25T17:59:53.289Z"
     },
     "homo-floresiensis-hobbit": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c42c6c0f90425e6f6170d46f7ca8da34074469b11cbc37ee8eeeb16b3cef1467",
+      "updated_at": "2026-10-25T18:10:07.834Z"
     },
     "homo-luzonensis-appears": {
       "state": "pending",
