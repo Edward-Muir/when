@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T17:20:27.395Z",
+  "updated_at": "2026-10-25T17:32:38.626Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-25T17:20:27.395Z"
     },
     "neanderthals-emerge-europe": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "862d4b55f30a4deb66effc80a690b7fd873c44df424085537c62e638efb8087f",
+      "updated_at": "2026-10-25T17:32:38.626Z"
     },
     "homo-naledi-appears": {
       "state": "pending",
