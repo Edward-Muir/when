@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T19:09:26.201Z",
+  "updated_at": "2026-10-25T19:12:13.109Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -134,11 +134,11 @@
       "updated_at": "2026-10-25T18:12:56.657Z"
     },
     "last-homo-erectus-java": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The figure is fully nude, with bare buttocks and body clearly visible from behind. Repaint with a loincloth or hide wrap, or a more distant or shadowed figure so no bare body detail shows.",
-      "sha256": "03415017369e8dbdeca2b53530110fb2a96d1237d2afc1dd83b4ba5c4a12b802",
-      "updated_at": "2026-10-25T18:12:56.687Z"
+      "sha256": "65e6b301731bbf046e99f0046e86f0880964f5ef56ac1e670a1ca02d1c198cc5",
+      "updated_at": "2026-10-25T19:12:13.109Z"
     },
     "homo-floresiensis-hobbit": {
       "state": "qc-pass",
