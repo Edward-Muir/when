@@ -1,0 +1,1046 @@
+[
+  {
+    "beat": 0,
+    "year": -243000000,
+    "title": "Nyasasaurus, Maybe the First",
+    "candidates": [
+      {
+        "name": "first-dinosaurs-appear",
+        "friendly_name": "First Dinosaurs Appear",
+        "year": -243000000,
+        "year_end": -231400000,
+        "description": "Small, fast reptiles emerged that would diversify into the dinosaurs ruling Earth for ages.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -231000000,
+    "title": "Eoraptor, a Dawn Dinosaur",
+    "candidates": []
+  },
+  {
+    "beat": 2,
+    "year": -215000000,
+    "title": "Coelophysis, the Pack Hunter",
+    "candidates": [
+      {
+        "name": "first-mammals",
+        "friendly_name": "First Mammals",
+        "year": -225000000,
+        "year_end": -200000000,
+        "description": "The first small, shrew-like mammals appeared, living alongside the early dinosaurs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -214000000,
+    "title": "Plateosaurus, an Early Long-Neck",
+    "candidates": [
+      {
+        "name": "plateosaurus",
+        "friendly_name": "Plateosaurus",
+        "year": -214000000,
+        "year_end": -204000000,
+        "description": "Plateosaurus, one of the earliest large dinosaurs, roamed during the Late Triassic Period.",
+        "score": 2,
+        "shared": [
+          "plateosaurus",
+          "roamed"
+        ]
+      },
+      {
+        "name": "first-mammals",
+        "friendly_name": "First Mammals",
+        "year": -225000000,
+        "year_end": -200000000,
+        "description": "The first small, shrew-like mammals appeared, living alongside the early dinosaurs.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": -210000000,
+    "title": "Liliensternus, a Crested Hunter",
+    "candidates": [
+      {
+        "name": "plateosaurus",
+        "friendly_name": "Plateosaurus",
+        "year": -214000000,
+        "year_end": -204000000,
+        "description": "Plateosaurus, one of the earliest large dinosaurs, roamed during the Late Triassic Period.",
+        "score": 1,
+        "shared": [
+          "large"
+        ]
+      },
+      {
+        "name": "first-mammals",
+        "friendly_name": "First Mammals",
+        "year": -225000000,
+        "year_end": -200000000,
+        "description": "The first small, shrew-like mammals appeared, living alongside the early dinosaurs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": -200000000,
+    "title": "Massospondylus, the Southern Grazer",
+    "candidates": [
+      {
+        "name": "first-mammals",
+        "friendly_name": "First Mammals",
+        "year": -225000000,
+        "year_end": -200000000,
+        "description": "The first small, shrew-like mammals appeared, living alongside the early dinosaurs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": -195000000,
+    "title": "Cryolophosaurus, the Frozen Crest",
+    "candidates": []
+  },
+  {
+    "beat": 7,
+    "year": -193000000,
+    "title": "Dilophosaurus, the Twin Crest",
+    "candidates": []
+  },
+  {
+    "beat": 8,
+    "year": -191000000,
+    "title": "Scelidosaurus, the Armored Browser",
+    "candidates": []
+  },
+  {
+    "beat": 9,
+    "year": -168000000,
+    "title": "Megalosaurus, the Great Lizard",
+    "candidates": [
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": -160000000,
+    "title": "Mamenchisaurus, Long-Necked Giant",
+    "candidates": [
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": -156000000,
+    "title": "Brontosaurus, the Thunder Lizard",
+    "candidates": [
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": -155000000,
+    "title": "Allosaurus, the Top Predator",
+    "candidates": [
+      {
+        "name": "stegosaurus",
+        "friendly_name": "Stegosaurus",
+        "year": -155000000,
+        "year_end": -150000000,
+        "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": -154000000,
+    "title": "Brachiosaurus, the Tall Browser",
+    "candidates": [
+      {
+        "name": "brachiosaurus",
+        "friendly_name": "Brachiosaurus",
+        "year": -154000000,
+        "year_end": -150000000,
+        "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
+        "score": 2,
+        "shared": [
+          "brachiosaurus",
+          "giant"
+        ]
+      },
+      {
+        "name": "stegosaurus",
+        "friendly_name": "Stegosaurus",
+        "year": -155000000,
+        "year_end": -150000000,
+        "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+        "score": 2,
+        "shared": [
+          "back",
+          "plant"
+        ]
+      },
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": -153000000,
+    "title": "Stegosaurus, the Plated Lizard",
+    "candidates": [
+      {
+        "name": "stegosaurus",
+        "friendly_name": "Stegosaurus",
+        "year": -155000000,
+        "year_end": -150000000,
+        "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+        "score": 4,
+        "shared": [
+          "stegosaurus",
+          "plant",
+          "back",
+          "plates"
+        ]
+      },
+      {
+        "name": "brachiosaurus",
+        "friendly_name": "Brachiosaurus",
+        "year": -154000000,
+        "year_end": -150000000,
+        "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": -152000000,
+    "title": "Diplodocus, the Whip-Tailed Giant",
+    "candidates": [
+      {
+        "name": "brachiosaurus",
+        "friendly_name": "Brachiosaurus",
+        "year": -154000000,
+        "year_end": -150000000,
+        "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
+        "score": 4,
+        "shared": [
+          "giant",
+          "animals",
+          "land",
+          "long"
+        ]
+      },
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 1,
+        "shared": [
+          "land"
+        ]
+      },
+      {
+        "name": "stegosaurus",
+        "friendly_name": "Stegosaurus",
+        "year": -155000000,
+        "year_end": -150000000,
+        "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": -151000000,
+    "title": "Compsognathus, the Pretty Jaw",
+    "candidates": [
+      {
+        "name": "stegosaurus",
+        "friendly_name": "Stegosaurus",
+        "year": -155000000,
+        "year_end": -150000000,
+        "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+        "score": 1,
+        "shared": [
+          "lived"
+        ]
+      },
+      {
+        "name": "brachiosaurus",
+        "friendly_name": "Brachiosaurus",
+        "year": -154000000,
+        "year_end": -150000000,
+        "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": -150000000,
+    "title": "Archaeopteryx, the First Bird",
+    "candidates": [
+      {
+        "name": "first-birds-archaeopteryx",
+        "friendly_name": "First Birds (Archaeopteryx)",
+        "year": -150000000,
+        "year_end": -148500000,
+        "description": "Archaeopteryx, a feathered Jurassic dinosaur long regarded as the earliest bird, though newer finds blur that line.",
+        "score": 4,
+        "shared": [
+          "archaeopteryx",
+          "bird",
+          "feathered",
+          "birds"
+        ]
+      },
+      {
+        "name": "stegosaurus",
+        "friendly_name": "Stegosaurus",
+        "year": -155000000,
+        "year_end": -150000000,
+        "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+        "score": 1,
+        "shared": [
+          "bony"
+        ]
+      },
+      {
+        "name": "age-of-dinosaurs",
+        "friendly_name": "Dinosaurs Rule the Earth",
+        "year": -160000000,
+        "year_end": -145000000,
+        "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 1,
+        "shared": [
+          "today"
+        ]
+      },
+      {
+        "name": "brachiosaurus",
+        "friendly_name": "Brachiosaurus",
+        "year": -154000000,
+        "year_end": -150000000,
+        "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": -139000000,
+    "title": "Utahraptor, the Giant Raptor",
+    "candidates": [
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": -130000000,
+    "title": "Baryonyx, the Fish-Eating Claw",
+    "candidates": [
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": -129000000,
+    "title": "Amargasaurus, the Spined Sauropod",
+    "candidates": [
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": -126000000,
+    "title": "Iguanodon, the Thumb-Spiked Grazer",
+    "candidates": [
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": -125000000,
+    "title": "Sinosauropteryx, the Feathered Find",
+    "candidates": [
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": -120000000,
+    "title": "Microraptor, the Four-Winged Glider",
+    "candidates": [
+      {
+        "name": "first-bees",
+        "friendly_name": "First Bees Appear",
+        "year": -120000000,
+        "year_end": -100000000,
+        "description": "Bees evolved alongside flowers, forming a partnership that shaped plant life across the planet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": -115000000,
+    "title": "Deinonychus, the Terrible Claw",
+    "candidates": [
+      {
+        "name": "first-bees",
+        "friendly_name": "First Bees Appear",
+        "year": -120000000,
+        "year_end": -100000000,
+        "description": "Bees evolved alongside flowers, forming a partnership that shaped plant life across the planet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": -100000000,
+    "title": "Carcharodontosaurus, Shark-Tooth",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-bees",
+        "friendly_name": "First Bees Appear",
+        "year": -120000000,
+        "year_end": -100000000,
+        "description": "Bees evolved alongside flowers, forming a partnership that shaped plant life across the planet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": -99000000,
+    "title": "Spinosaurus, the Sailback Swimmer",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": -98000000,
+    "title": "Giganotosaurus, Giant of the South",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": -97000000,
+    "title": "Argentinosaurus, the Colossal Titan",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": -80000000,
+    "title": "Hadrosaurus, the Duck-Bill",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": -77000000,
+    "title": "Dreadnoughtus, Fear-Nothing Giant",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": -76000000,
+    "title": "Parasaurolophus, the Trumpet Crest",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": -75000000,
+    "title": "Velociraptor, the Swift Thief",
+    "candidates": [
+      {
+        "name": "velociraptor",
+        "friendly_name": "Velociraptor",
+        "year": -75000000,
+        "year_end": -71000000,
+        "description": "Velociraptor, a small feathered predatory dinosaur, hunted during the Late Cretaceous Period.",
+        "score": 2,
+        "shared": [
+          "velociraptor",
+          "feathered"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": -73000000,
+    "title": "Edmontosaurus, the Big Herd Grazer",
+    "candidates": [
+      {
+        "name": "velociraptor",
+        "friendly_name": "Velociraptor",
+        "year": -75000000,
+        "year_end": -71000000,
+        "description": "Velociraptor, a small feathered predatory dinosaur, hunted during the Late Cretaceous Period.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": -71000000,
+    "title": "Carnotaurus, the Flesh-Eating Bull",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "velociraptor",
+        "friendly_name": "Velociraptor",
+        "year": -75000000,
+        "year_end": -71000000,
+        "description": "Velociraptor, a small feathered predatory dinosaur, hunted during the Late Cretaceous Period.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": -70000000,
+    "title": "Therizinosaurus, the Scythe Lizard",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": -68000000,
+    "title": "Tyrannosaurus rex, the Tyrant King",
+    "candidates": [
+      {
+        "name": "tyrannosaurus-rex",
+        "friendly_name": "Tyrannosaurus rex",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Tyrannosaurus rex, one of the largest land predators ever, ruled North America in the Late Cretaceous.",
+        "score": 5,
+        "shared": [
+          "tyrannosaurus",
+          "rex",
+          "largest",
+          "north",
+          "america"
+        ]
+      },
+      {
+        "name": "triceratops",
+        "friendly_name": "Triceratops",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Triceratops, a large herbivore with three facial horns and a bony frill, lived in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": -67000000,
+    "title": "Triceratops, the Three-Horned Face",
+    "candidates": [
+      {
+        "name": "triceratops",
+        "friendly_name": "Triceratops",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Triceratops, a large herbivore with three facial horns and a bony frill, lived in the Late Cretaceous.",
+        "score": 5,
+        "shared": [
+          "triceratops",
+          "three",
+          "bony",
+          "frill",
+          "horns"
+        ]
+      },
+      {
+        "name": "tyrannosaurus-rex",
+        "friendly_name": "Tyrannosaurus rex",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Tyrannosaurus rex, one of the largest land predators ever, ruled North America in the Late Cretaceous.",
+        "score": 1,
+        "shared": [
+          "largest"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": -66000000,
+    "title": "The Asteroid Ends Their Reign",
+    "candidates": [
+      {
+        "name": "dinosaur-extinction",
+        "friendly_name": "Dinosaur Extinction",
+        "year": -66000000,
+        "description": "An asteroid impact caused the mass extinction of the dinosaurs.",
+        "score": 2,
+        "shared": [
+          "asteroid",
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "paleocene-epoch-begins",
+        "friendly_name": "Paleocene Epoch Begins",
+        "year": -66000000,
+        "description": "The Paleocene Epoch began as mammals rapidly diversified to fill niches left by the extinct dinosaurs.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "triceratops",
+        "friendly_name": "Triceratops",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Triceratops, a large herbivore with three facial horns and a bony frill, lived in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tyrannosaurus-rex",
+        "friendly_name": "Tyrannosaurus rex",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Tyrannosaurus rex, one of the largest land predators ever, ruled North America in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

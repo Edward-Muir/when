@@ -1,0 +1,15 @@
+{
+  "slug": "eoraptor-dawn-dinosaur",
+  "description": "A slender, long-tailed, two-legged dinosaur with a toothy open jaw and spiky crest-like scales runs at speed across a dry, rocky riverbank in a dim, painterly landscape of ferns, a cliff face and dead branches. A small lizard-like reptile scurries in the lower left, away from its path. Dust and pebbles fly from its feet. No text, frame or border is visible; the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
