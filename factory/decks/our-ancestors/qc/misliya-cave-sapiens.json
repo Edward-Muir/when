@@ -1,0 +1,15 @@
+{
+  "slug": "misliya-cave-sapiens",
+  "description": "A painted scene of a large rock overhang or cave mouth on a rocky hillside. Inside the shelter, four or five figures sit around a campfire, with smoke rising. Some of them seem to hold small pale objects in their hands. Beyond the rock edge, a grassy and scrubby coastal plain stretches to a sea under a dusk sky with a yellow glow on the horizon. There is no visible text, border or signature.",
+  "checks": {
+    "subject": "pass",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The figures seem to hold small pale rectangular objects that could read as phones at this resolution. Check at full size; if they are stone tools or nothing identifiable, this passes."
+}

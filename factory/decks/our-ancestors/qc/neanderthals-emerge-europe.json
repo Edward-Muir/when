@@ -1,0 +1,15 @@
+{
+  "slug": "neanderthals-emerge-europe",
+  "description": "A bearded, heavily built man with a brow ridge and shaggy dark hair stands on a snowy hillside, wrapped in a brown fur cloak over bare shoulders and chest, gripping a long wooden spear with a stone tip in one hand and a walking stick in the other. Behind him a winding river runs through a valley of conifers under a dark, stormy sky with distant hills. The scene is a painting with no visible frame, text, or border, and the image fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

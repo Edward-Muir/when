@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T18:10:07.834Z",
+  "updated_at": "2026-10-25T18:12:56.719Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,11 +72,11 @@
       "updated_at": "2026-10-25T16:07:05.442Z"
     },
     "homo-erectus-stands-tall": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The central figure is fully nude, the whole torso, hips and legs unclothed and in full view. Repaint with the figure wearing a hide wrap or posed/lit so the body is not exposed.",
       "sha256": "faa687f526e9cfe0444ba4c821876ed4e82bca7fec5bcc18241164b1735181cd",
-      "updated_at": "2026-10-25T17:12:12.520Z"
+      "updated_at": "2026-10-25T18:12:56.474Z"
     },
     "dmanisi-humans-leave-africa": {
       "state": "qc-pass",
@@ -86,25 +86,25 @@
       "updated_at": "2026-10-25T16:07:05.473Z"
     },
     "homo-antecessor-atapuerca": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "47b680c4fc613f30f53ce39858f2a43af4178c50b71463ea64d8fb25366bfad6",
-      "updated_at": "2026-10-25T17:15:41.776Z"
+      "updated_at": "2026-10-25T18:12:56.505Z"
     },
     "wonderwerk-cave-fire": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ee5be3f9d4f91e11575735a2e5e5aab6e9125bae10d0381652aa6993fc8588ad",
-      "updated_at": "2026-10-25T17:20:27.395Z"
+      "updated_at": "2026-10-25T18:12:56.536Z"
     },
     "neanderthals-emerge-europe": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "862d4b55f30a4deb66effc80a690b7fd873c44df424085537c62e638efb8087f",
-      "updated_at": "2026-10-25T17:32:38.626Z"
+      "updated_at": "2026-10-25T18:12:56.566Z"
     },
     "homo-naledi-appears": {
       "state": "pending",
@@ -113,39 +113,39 @@
       "sha256": null
     },
     "jebel-irhoud-homo-sapiens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6999af8eb8a18e2e5faf28c0aa3f40b413255c39f8a7d506463a05be7de44284",
-      "updated_at": "2026-10-25T17:42:01.407Z"
+      "updated_at": "2026-10-25T18:12:56.596Z"
     },
     "misliya-cave-sapiens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6332d04309c6993f104b4164ae36043bc1dcc4d1267378dea2f931f99f474b3c",
-      "updated_at": "2026-10-25T17:48:08.172Z"
+      "updated_at": "2026-10-25T18:12:56.626Z"
     },
     "denisovans-emerge": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "de660fdfce649d42ceaa388cd996a5cd568cf0cea2346b414de5f61a2b520364",
-      "updated_at": "2026-10-25T17:54:26.756Z"
+      "updated_at": "2026-10-25T18:12:56.657Z"
     },
     "last-homo-erectus-java": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The figure is fully nude, with bare buttocks and body clearly visible from behind. Repaint with a loincloth or hide wrap, or a more distant or shadowed figure so no bare body detail shows.",
       "sha256": "03415017369e8dbdeca2b53530110fb2a96d1237d2afc1dd83b4ba5c4a12b802",
-      "updated_at": "2026-10-25T17:59:53.289Z"
+      "updated_at": "2026-10-25T18:12:56.687Z"
     },
     "homo-floresiensis-hobbit": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c42c6c0f90425e6f6170d46f7ca8da34074469b11cbc37ee8eeeb16b3cef1467",
-      "updated_at": "2026-10-25T18:10:07.834Z"
+      "updated_at": "2026-10-25T18:12:56.719Z"
     },
     "homo-luzonensis-appears": {
       "state": "pending",

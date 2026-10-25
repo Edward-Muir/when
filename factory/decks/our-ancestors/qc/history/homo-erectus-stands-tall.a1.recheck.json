@@ -1,0 +1,15 @@
+{
+  "slug": "homo-erectus-stands-tall",
+  "description": "A muscular, fully nude dark-skinned man with a heavy brow strides across open savanna at sunset, holding a flaked stone handaxe. Acacia trees, dry grass and a brown-gold stormy sky fill the background in loose oil brushwork. No text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The central figure is fully nude, the whole torso, hips and legs unclothed and in full view. Repaint with the figure wearing a hide wrap or posed/lit so the body is not exposed."
+}

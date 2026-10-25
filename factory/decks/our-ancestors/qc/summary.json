@@ -61,5 +61,68 @@
     "by": "review",
     "attempts": 1,
     "description": "Four or five early hominins with heavy brows and robust, bare-skinned builds walk single file along a rocky ridge. One carries a stone and another a leafy bundle; a staff-like stick is visible behind. Below lies a forest and a winding pale river through a valley, with hazy mountains and a dramatic cloudy sky. Oil-painting style, filling the frame edge to edge. No visible text, border or frame."
+  },
+  "homo-erectus-stands-tall": {
+    "state": "qc-fail",
+    "reason": "The central figure is fully nude, the whole torso, hips and legs unclothed and in full view. Repaint with the figure wearing a hide wrap or posed/lit so the body is not exposed.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A muscular, fully nude dark-skinned man with a heavy brow strides across open savanna at sunset, holding a flaked stone handaxe. Acacia trees, dry grass and a brown-gold stormy sky fill the background in loose oil brushwork. No text, frame or border."
+  },
+  "homo-antecessor-atapuerca": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Two hunched, pale-brown hominins with heavy brows and dark hair sit at the mouth of a rocky cave under a grey sky. The nearer one holds a small stone flake, cutting into a dark animal carcass with visible raw red meat. Scattered bones, stone flakes and pebbles lie on the cave floor, and a wooded hillside with pine trees is visible outside. The style is a dark, painterly oil look with no visible text or frame."
+  },
+  "wonderwerk-cave-fire": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Four figures crouch around a small campfire deep in a dark cave, with bones and sticks on the ground. Smoke and sparks rise from the fire, and a bright opening sits in the far background of the cave. The figures are bare-skinned, with fur on one or two, and hold sticks or small tools. The painting is an oil style with warm browns and dark rock, and fills the frame with no visible border."
+  },
+  "neanderthals-emerge-europe": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded, heavily built man with a brow ridge and shaggy dark hair stands on a snowy hillside, wrapped in a brown fur cloak over bare shoulders and chest, gripping a long wooden spear with a stone tip in one hand and a walking stick in the other. Behind him a winding river runs through a valley of conifers under a dark, stormy sky with distant hills. The scene is a painting with no visible frame, text, or border, and the image fills the canvas edge to edge."
+  },
+  "jebel-irhoud-homo-sapiens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A group of people sits around a small fire at the mouth of a rock shelter at dusk. One man in the centre knaps a stone with a hammerstone, another kneels at right working a stone tool, and a woman sits behind them. Savanna with grazing antelope and acacia trees stretches out to the left, and a spear leans against the rock at right. Stone flakes lie on the ground and there are bones at the lower right."
+  },
+  "misliya-cave-sapiens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil-style painting of a rock overhang on a hillside above a coastline at dusk. Four hominin figures, mostly bare-chested with simple wraps, sit around a small fire, a couple holding small tools or stone flakes. Scrubby trees, sea and a stormy sky. No text, frame or gore."
+  },
+  "denisovans-emerge": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded, heavy-browed man with long dark hair, wearing a fur cloak and fur-wrapped sleeves, stands at the mouth of a rock cave holding a stone-headed tool. A small fire glows inside the cave. Behind him is a snowy valley with glacier-streaked mountains under a stormy grey sky. The painting fills the whole frame with no border or text."
+  },
+  "last-homo-erectus-java": {
+    "state": "qc-fail",
+    "reason": "The figure is fully nude, with bare buttocks and body clearly visible from behind. Repaint with a loincloth or hide wrap, or a more distant or shadowed figure so no bare body detail shows.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A heavy-browed, muscular early human seen from behind stands on a muddy riverbank at dusk, holding a long wooden spear and looking out over a wide brown river. Dark jungle trees and vines fill the right, with an orange sky breaking through cloud. The figure wears nothing, and the buttocks and bare body are clearly rendered. Dark oil-painting style, no frame, no text apart from a tiny corner mark."
+  },
+  "homo-floresiensis-hobbit": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A muscular, barefoot hominin with a heavy brow and short dark hair, wearing a small hide loincloth, creeps through dense tropical forest holding a dark stone tool. Behind it a small tusked elephant walks among ferns. Vines, big trees and filtered light fill a dark oil-painting scene. No text, border or frame; it runs edge to edge."
   }
 }

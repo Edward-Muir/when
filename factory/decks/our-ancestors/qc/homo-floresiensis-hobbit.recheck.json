@@ -1,0 +1,15 @@
+{
+  "slug": "homo-floresiensis-hobbit",
+  "description": "A muscular, barefoot hominin with a heavy brow and short dark hair, wearing a small hide loincloth, creeps through dense tropical forest holding a dark stone tool. Behind it a small tusked elephant walks among ferns. Vines, big trees and filtered light fill a dark oil-painting scene. No text, border or frame; it runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

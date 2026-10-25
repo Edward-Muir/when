@@ -1,0 +1,15 @@
+{
+  "slug": "denisovans-emerge",
+  "description": "A bearded, heavy-browed man with long dark hair, wearing a fur cloak and fur-wrapped sleeves, stands at the mouth of a rock cave holding a stone-headed tool. A small fire glows inside the cave. Behind him is a snowy valley with glacier-streaked mountains under a stormy grey sky. The painting fills the whole frame with no border or text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
