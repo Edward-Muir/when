@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T19:17:01.839Z",
+  "updated_at": "2026-10-25T19:20:22.159Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-10-25T18:12:56.719Z"
     },
     "homo-luzonensis-appears": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cd8d04841e7277ac634115db01911c6fb419952fec28cdf12884f08a044f118e",
+      "updated_at": "2026-10-25T19:20:22.159Z"
     },
     "sapiens-neanderthal-interbreeding": {
       "state": "pending",
