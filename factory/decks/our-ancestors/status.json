@@ -3,7 +3,7 @@
   "name": "Our Ancestors",
   "stage": "art-in-progress",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T15:22:31.505Z",
+  "updated_at": "2026-10-25T15:25:05.456Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-25T15:22:31.505Z"
     },
     "oldowan-stone-tools": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "472c1c77bd0cb67c8c7081c9d417522f9e8a1fee0529f8cd24c67a9bd2c6c54f",
+      "updated_at": "2026-10-25T15:25:05.456Z"
     },
     "paranthropus-boisei-appears": {
       "state": "pending",
