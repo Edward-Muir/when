@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T23:25:39.191Z",
+  "updated_at": "2026-10-26T23:29:15.040Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-10-26T23:25:39.191Z"
     },
     "carter-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f56894e63319e298285cf1ce5c0051dd84e7435e075d3f21662e1f773cbe2869",
+      "updated_at": "2026-10-26T23:29:15.040Z"
     },
     "reagan-first-inauguration": {
       "state": "pending",
