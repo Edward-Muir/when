@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T14:09:54.600Z",
+  "updated_at": "2026-10-26T15:06:55.606Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,11 +93,11 @@
       "updated_at": "2026-10-26T12:06:54.416Z"
     },
     "cleveland-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c993be7a48350aa0717500baaf6dcdff2f03afff4bdbe8ca575e1a83269fdcf4",
-      "updated_at": "2026-10-26T14:09:54.600Z"
+      "updated_at": "2026-10-26T15:06:55.606Z"
     },
     "mckinley-first-inauguration": {
       "state": "pending",
