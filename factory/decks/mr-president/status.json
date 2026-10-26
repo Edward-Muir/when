@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:10:14.561Z",
+  "updated_at": "2026-10-26T21:13:49.418Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-26T21:10:14.561Z"
     },
     "theodore-roosevelt-sworn-in": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c7037fb8584c56e645c30d25da6df796dd8e66948c5d8a04739db2c9d0fa66e6",
+      "updated_at": "2026-10-26T21:13:49.418Z"
     },
     "taft-inauguration": {
       "state": "pending",
