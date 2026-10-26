@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:45:21.102Z",
+  "updated_at": "2026-10-26T09:48:25.187Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-26T09:45:21.102Z"
     },
     "polk-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c7c7318c6202806678f371c75df9c2695ed39d275ec8183b668d18b509d54086",
+      "updated_at": "2026-10-26T09:48:25.187Z"
     },
     "lincoln-first-inauguration": {
       "state": "pending",
