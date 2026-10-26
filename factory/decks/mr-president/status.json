@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:37:44.906Z",
+  "updated_at": "2026-10-26T21:44:03.049Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-26T21:37:44.906Z"
     },
     "eisenhower-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b4ced384322ad4117005cbbc1963055a66d02e0362ff5c156bf12240b8d96ce8",
+      "updated_at": "2026-10-26T21:44:03.049Z"
     },
     "kennedy-inauguration": {
       "state": "pending",
