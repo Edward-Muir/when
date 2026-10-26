@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:26:30.661Z",
+  "updated_at": "2026-10-26T21:30:37.766Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-26T21:26:30.661Z"
     },
     "hoover-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d513a504ec1619e733d8d2c6d1ea0607bf9a5c544b87c2e2f39b7abb5fee184f",
+      "updated_at": "2026-10-26T21:30:37.766Z"
     },
     "fdr-first-inauguration": {
       "state": "pending",
