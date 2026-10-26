@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:12:59.674Z",
+  "updated_at": "2026-10-26T09:16:38.056Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-26T09:12:59.674Z"
     },
     "jefferson-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b671e64204deb41761f1a8d883240b9b0f636bc1972541c2d167079506da2721",
+      "updated_at": "2026-10-26T09:16:38.056Z"
     },
     "madison-first-inauguration": {
       "state": "pending",
