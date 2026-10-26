@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:16:38.056Z",
+  "updated_at": "2026-10-26T09:25:34.305Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-26T09:16:38.056Z"
     },
     "madison-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2dee4849f11030664c4eb57bad8e9b253c3e619c3708c8afea939f3a15fed45a",
+      "updated_at": "2026-10-26T09:25:34.305Z"
     },
     "monroe-first-inauguration": {
       "state": "pending",
