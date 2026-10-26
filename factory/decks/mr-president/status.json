@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:13:49.418Z",
+  "updated_at": "2026-10-26T21:16:46.090Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-26T21:13:49.418Z"
     },
     "taft-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "306194240a94fa5dc0383c60e402c1e5868b4bcbe4fcd45403a80faae8b399a0",
+      "updated_at": "2026-10-26T21:16:46.090Z"
     },
     "wilson-first-inauguration": {
       "state": "pending",
