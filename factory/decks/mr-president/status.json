@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T22:07:24.444Z",
+  "updated_at": "2026-10-26T23:21:58.102Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-26T22:07:24.444Z"
     },
     "lbj-sworn-in-air-force-one": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "40becaeb9595d9e95b793c96be8660d3176b696a2b111a09e8a3214c5c834c6a",
+      "updated_at": "2026-10-26T23:21:58.102Z"
     },
     "nixon-first-inauguration": {
       "state": "pending",
