@@ -1,9 +1,9 @@
 {
   "deck": "our-ancestors",
   "name": "Our Ancestors",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-25T13:19:18.879Z",
-  "updated_at": "2026-10-25T19:27:00.466Z",
+  "updated_at": "2026-10-26T06:58:27.393Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-25T15:08:32.203Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-26T06:58:27.393Z"
     }
   ],
   "slugs": {
@@ -72,11 +76,11 @@
       "updated_at": "2026-10-25T16:07:05.442Z"
     },
     "homo-erectus-stands-tall": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The central figure is fully nude, the whole torso, hips and legs unclothed and in full view. Repaint with the figure wearing a hide wrap or posed/lit so the body is not exposed.",
+      "reason": null,
       "sha256": "bcb7e5c79d303c0b62cd34332efcfb96819925eccf662806c299f1e428c2a6c0",
-      "updated_at": "2026-10-25T19:09:26.201Z"
+      "updated_at": "2026-10-26T06:58:27.232Z"
     },
     "dmanisi-humans-leave-africa": {
       "state": "qc-pass",
@@ -107,11 +111,11 @@
       "updated_at": "2026-10-25T18:12:56.566Z"
     },
     "homo-naledi-appears": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "672d6cd625f2bf26f9a77ed1dcf797c186b8ea13372d4b962358839e41fd019b",
-      "updated_at": "2026-10-25T19:17:01.839Z"
+      "updated_at": "2026-10-26T06:58:27.272Z"
     },
     "jebel-irhoud-homo-sapiens": {
       "state": "qc-pass",
@@ -135,11 +139,11 @@
       "updated_at": "2026-10-25T18:12:56.657Z"
     },
     "last-homo-erectus-java": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The figure is fully nude, with bare buttocks and body clearly visible from behind. Repaint with a loincloth or hide wrap, or a more distant or shadowed figure so no bare body detail shows.",
+      "reason": null,
       "sha256": "65e6b301731bbf046e99f0046e86f0880964f5ef56ac1e670a1ca02d1c198cc5",
-      "updated_at": "2026-10-25T19:12:13.109Z"
+      "updated_at": "2026-10-26T06:58:27.302Z"
     },
     "homo-floresiensis-hobbit": {
       "state": "qc-pass",
@@ -149,25 +153,25 @@
       "updated_at": "2026-10-25T18:12:56.719Z"
     },
     "homo-luzonensis-appears": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cd8d04841e7277ac634115db01911c6fb419952fec28cdf12884f08a044f118e",
-      "updated_at": "2026-10-25T19:20:22.159Z"
+      "updated_at": "2026-10-26T06:58:27.333Z"
     },
     "sapiens-neanderthal-interbreeding": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "670e0fbe2080ffb0ce981feb067692fa224e3857fc56b9c5ccbb0397435743b7",
-      "updated_at": "2026-10-25T19:24:14.961Z"
+      "updated_at": "2026-10-26T06:58:27.363Z"
     },
     "last-neanderthals-vanish": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3e76fbb60d8d834d7710957cb14637dd2074c750963dfaac79219cbd256c135c",
-      "updated_at": "2026-10-25T19:27:00.466Z"
+      "updated_at": "2026-10-26T06:58:27.393Z"
     }
   }
 }
