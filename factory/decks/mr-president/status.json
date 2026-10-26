@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:16:46.090Z",
+  "updated_at": "2026-10-26T21:19:42.320Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-26T21:16:46.090Z"
     },
     "wilson-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c47b7bbb8c51cb8cfa32fd5f01ec4a0591a9d4927903299b5d99fa0765162312",
+      "updated_at": "2026-10-26T21:19:42.320Z"
     },
     "harding-inauguration": {
       "state": "pending",
