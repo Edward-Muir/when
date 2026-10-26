@@ -1,0 +1,15 @@
+{
+  "slug": "jefferson-first-inauguration",
+  "description": "A tall man in a black tricorn hat and dark coat walks across a muddy, rubble-strewn clearing with tree stumps. Behind him, a half-built classical stone building with scaffolding and a timber frame rises on the right. Several men in period dress with tricorn hats follow in the background. The sky is heavy and overcast, and the painting fills the frame edge to edge with no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

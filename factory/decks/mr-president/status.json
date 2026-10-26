@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:53:16.991Z",
+  "updated_at": "2026-10-26T10:07:57.826Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "washington-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "50b938d5d2a06a6e0e8a1816a32875dc6a71da723bd8f2917d6209fc11e13771",
-      "updated_at": "2026-10-26T09:09:06.172Z"
+      "updated_at": "2026-10-26T10:07:57.516Z"
     },
     "john-adams-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "385cb0d095ba57c312ce70b0ce1fad00c5b6675fec429c5de5408a5f3a832ec3",
-      "updated_at": "2026-10-26T09:12:59.674Z"
+      "updated_at": "2026-10-26T10:07:57.547Z"
     },
     "jefferson-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b671e64204deb41761f1a8d883240b9b0f636bc1972541c2d167079506da2721",
-      "updated_at": "2026-10-26T09:16:38.056Z"
+      "updated_at": "2026-10-26T10:07:57.579Z"
     },
     "madison-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2dee4849f11030664c4eb57bad8e9b253c3e619c3708c8afea939f3a15fed45a",
-      "updated_at": "2026-10-26T09:25:34.305Z"
+      "updated_at": "2026-10-26T10:07:57.613Z"
     },
     "monroe-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6190bde8da31c66a26dab6ab9739ab7cc61677eefd1b4a92c20aa901c5698234",
-      "updated_at": "2026-10-26T09:28:30.688Z"
+      "updated_at": "2026-10-26T10:07:57.646Z"
     },
     "john-quincy-adams-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "23752abf09b0396df7634ebe70972beec21a9fd8160583f8b271e371f48fb6a5",
-      "updated_at": "2026-10-26T09:31:22.339Z"
+      "updated_at": "2026-10-26T10:07:57.681Z"
     },
     "jackson-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "efddd944865739bc86c0a65cf4ca06758042c4a202280f08d24dfc3a586c6fa5",
-      "updated_at": "2026-10-26T09:37:07.522Z"
+      "updated_at": "2026-10-26T10:07:57.719Z"
     },
     "william-henry-harrison-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "46e50af8ecae44b40f1a28952ca64e53438df522888e1a206adb69f171036e54",
-      "updated_at": "2026-10-26T09:45:21.102Z"
+      "updated_at": "2026-10-26T10:07:57.755Z"
     },
     "polk-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c7c7318c6202806678f371c75df9c2695ed39d275ec8183b668d18b509d54086",
-      "updated_at": "2026-10-26T09:48:25.187Z"
+      "updated_at": "2026-10-26T10:07:57.790Z"
     },
     "lincoln-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "780772cfd87a4a93b6328369e732587ad84a8d8a8c416a1bd5daf464dad2e09d",
-      "updated_at": "2026-10-26T09:53:16.991Z"
+      "updated_at": "2026-10-26T10:07:57.826Z"
     },
     "grant-first-inauguration": {
       "state": "pending",

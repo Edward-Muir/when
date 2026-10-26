@@ -1,0 +1,15 @@
+{
+  "slug": "polk-inauguration",
+  "description": "An oil-style painting of a rainy scene. In the foreground a dark wooden desk holds a quill and inkwell, handwritten papers, and a brass telegraph key beside a brass paper-tape machine whose tape spills off the desk. Through a rain-streaked window, a large crowd of people under dark umbrellas fills the middle ground, facing a neoclassical building with columns, a balcony and stairs, where a small group of figures stands. The sky is grey and overcast, with bare trees at left. No legible text is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
