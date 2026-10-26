@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:30:37.766Z",
+  "updated_at": "2026-10-26T21:34:44.582Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-10-26T21:30:37.766Z"
     },
     "fdr-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1e00a9af7203f574c34f4cf40776cd6911285b3aadce257aa58dcdb3d0c269c3",
+      "updated_at": "2026-10-26T21:34:44.582Z"
     },
     "truman-sworn-in": {
       "state": "pending",
