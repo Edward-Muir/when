@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T23:35:26.842Z",
+  "updated_at": "2026-10-26T23:40:10.204Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -205,10 +205,11 @@
       "updated_at": "2026-10-26T23:35:26.842Z"
     },
     "clinton-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1cc4a736a3375bda10283afc9fc0fec74e180a0d614520ea5b2050b4890610ae",
+      "updated_at": "2026-10-26T23:40:10.204Z"
     },
     "george-w-bush-first-inauguration": {
       "state": "pending",
