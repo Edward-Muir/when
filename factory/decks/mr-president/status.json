@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:37:07.522Z",
+  "updated_at": "2026-10-26T09:45:21.102Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-26T09:37:07.522Z"
     },
     "william-henry-harrison-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "46e50af8ecae44b40f1a28952ca64e53438df522888e1a206adb69f171036e54",
+      "updated_at": "2026-10-26T09:45:21.102Z"
     },
     "polk-inauguration": {
       "state": "pending",
