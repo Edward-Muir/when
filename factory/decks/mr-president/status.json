@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:31:22.339Z",
+  "updated_at": "2026-10-26T09:37:07.522Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-26T09:31:22.339Z"
     },
     "jackson-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "efddd944865739bc86c0a65cf4ca06758042c4a202280f08d24dfc3a586c6fa5",
+      "updated_at": "2026-10-26T09:37:07.522Z"
     },
     "william-henry-harrison-inauguration": {
       "state": "pending",
