@@ -1,0 +1,30 @@
+{
+  "id": "mr-president",
+  "name": "Mr President",
+  "scope": "Yes if it is a US president taking office",
+  "boundary": "Mr President owns US presidents' inaugurations; the elections themselves go to The Ballot Box.",
+  "neighbours": ["ballot-box"],
+  "grid": {
+    "categories": ["figures"],
+    "eras": ["industrial", "worldWars", "coldWar"],
+    "regions": ["North America"]
+  },
+  "example_beats": [
+    "Washington sworn in (1789)",
+    "Jefferson (1801)",
+    "Jackson (1829)",
+    "Lincoln (1861)",
+    "Grant (1869)",
+    "Theodore Roosevelt (1901)",
+    "Wilson (1913)",
+    "Franklin Roosevelt (1933)",
+    "Truman (1945)",
+    "Eisenhower (1953)",
+    "Kennedy (1961)",
+    "Nixon (1969)",
+    "Reagan (1981)"
+  ],
+  "notes": "One beat per president, dated to his first inauguration, from Washington to 2009. Later presidents are live politics, so leave them out.",
+  "appeal": 3,
+  "status": "queued"
+}
