@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T21:48:09.349Z",
+  "updated_at": "2026-10-26T22:07:24.444Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,74 +100,74 @@
       "updated_at": "2026-10-26T15:06:55.606Z"
     },
     "mckinley-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7d7d9d7c2240178eb0f1bec0bc56b54e30e59403fc398229f0639fe225a2dfdc",
-      "updated_at": "2026-10-26T21:10:14.561Z"
+      "updated_at": "2026-10-26T22:07:24.144Z"
     },
     "theodore-roosevelt-sworn-in": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c7037fb8584c56e645c30d25da6df796dd8e66948c5d8a04739db2c9d0fa66e6",
-      "updated_at": "2026-10-26T21:13:49.418Z"
+      "updated_at": "2026-10-26T22:07:24.175Z"
     },
     "taft-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "306194240a94fa5dc0383c60e402c1e5868b4bcbe4fcd45403a80faae8b399a0",
-      "updated_at": "2026-10-26T21:16:46.090Z"
+      "updated_at": "2026-10-26T22:07:24.207Z"
     },
     "wilson-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c47b7bbb8c51cb8cfa32fd5f01ec4a0591a9d4927903299b5d99fa0765162312",
-      "updated_at": "2026-10-26T21:19:42.320Z"
+      "updated_at": "2026-10-26T22:07:24.239Z"
     },
     "harding-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a635c3eb2df8acd95d63bbce05f994773cd5a4074119a599229b0b369047f5e5",
-      "updated_at": "2026-10-26T21:26:30.661Z"
+      "updated_at": "2026-10-26T22:07:24.270Z"
     },
     "hoover-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d513a504ec1619e733d8d2c6d1ea0607bf9a5c544b87c2e2f39b7abb5fee184f",
-      "updated_at": "2026-10-26T21:30:37.766Z"
+      "updated_at": "2026-10-26T22:07:24.304Z"
     },
     "fdr-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1e00a9af7203f574c34f4cf40776cd6911285b3aadce257aa58dcdb3d0c269c3",
-      "updated_at": "2026-10-26T21:34:44.582Z"
+      "updated_at": "2026-10-26T22:07:24.338Z"
     },
     "truman-sworn-in": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8d138594cd418b3e33f076bce95573c06d4926008889f269baa99e61bc205a81",
-      "updated_at": "2026-10-26T21:37:44.906Z"
+      "updated_at": "2026-10-26T22:07:24.376Z"
     },
     "eisenhower-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b4ced384322ad4117005cbbc1963055a66d02e0362ff5c156bf12240b8d96ce8",
-      "updated_at": "2026-10-26T21:44:03.049Z"
+      "updated_at": "2026-10-26T22:07:24.409Z"
     },
     "kennedy-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "33eceb7138bd29f31a9bcda9f17630875313dcfa8b51d4bf7b39fdd0ab5c018e",
-      "updated_at": "2026-10-26T21:48:09.349Z"
+      "updated_at": "2026-10-26T22:07:24.444Z"
     },
     "lbj-sworn-in-air-force-one": {
       "state": "pending",
