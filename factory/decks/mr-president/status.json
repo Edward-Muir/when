@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T09:25:34.305Z",
+  "updated_at": "2026-10-26T09:28:30.688Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-26T09:25:34.305Z"
     },
     "monroe-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6190bde8da31c66a26dab6ab9739ab7cc61677eefd1b4a92c20aa901c5698234",
+      "updated_at": "2026-10-26T09:28:30.688Z"
     },
     "john-quincy-adams-inauguration": {
       "state": "pending",
