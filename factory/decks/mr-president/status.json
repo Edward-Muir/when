@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T23:29:15.040Z",
+  "updated_at": "2026-10-26T23:31:50.575Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-10-26T23:29:15.040Z"
     },
     "reagan-first-inauguration": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0154ca4056628739c0907f049ae2b7a003d99d77ab1c2faf784537ba7a7ce558",
+      "updated_at": "2026-10-26T23:31:50.575Z"
     },
     "george-hw-bush-inauguration": {
       "state": "pending",
