@@ -7,12 +7,12 @@ rows, beside the name box when a daily score is submitted, and as the icon of th
 menu it is also where the leaderboard name is edited (see [Profile](#decisions)). There are no profile banners and no presence on the Stats
 tab: an earlier pass had both and read as far too prominent.
 
-All 62 portraits exist and are served from Cloudinary (see [Delivery](#delivery)).
+All 122 portraits (the 62 animals and the 60 earned ones) exist and are served from Cloudinary
+(see [Delivery](#delivery)).
 
 Beside the 62 animals sit **60 earned portraits**, one per achievement: dinosaurs, creatures of
 legend and horror, and real oddities, each in a costume tied to its badge (see
-[Earned portraits](#earned-portraits)). Their art is not made yet; until it is, each tile shows the
-creature's emoji or initial.
+[Earned portraits](#earned-portraits)).
 
 ## Where things live
 
@@ -267,29 +267,28 @@ add no eager path.
 The pipeline is the event cards' tooling in `../when-images`, run on its own folders:
 
 1. Put the 2048px originals in `when-images/avatars/generated/`, named by animal id.
-2. Run `scripts/downsample.py`'s code against that folder, writing `avatars/downsampled/`
-   (the script's directories are module constants; override `INPUT_DIR` / `OUTPUT_DIR`).
+2. Run `scripts/images/downsample.py` with `--input ../when-images/avatars/generated` and
+   `--output ../when-images/avatars/downsampled`. It skips ids already downsampled.
 3. `node ../when-images/scripts/upload_to_cloudinary.js --avatars` for a dry run, then with
    `--upload`. It matches stems against `avatars.json`, uploads to `avatars/<id>` and never
    overwrites, so replacing a portrait means deleting the old asset first.
 
 There is no URL-writing step. A new animal needs only its id in `avatars.json` and an upload.
-The uploader matches stems against the `animals` list, so the earned portraits need it to read
-`earned` too, or to be given their ids.
+The uploader matches stems against both the `animals` and the `earned` lists.
 
 The first 24 uploads (platypus to badger in list order) went up as 1024px JPEGs from an ad-hoc
 downsample, the rest as `downsample.py`'s 2048px quality-80 output. Delivery resizes both to the
-same 400px rung, so they look identical in the app.
+same 400px rung, so they look identical in the app. The earned portraits went up on 2026-10-26:
+54 as `downsample.py`'s 2048px output, and Scottish Fold, Kitsune, Ram, Tardigrade, Tyrannosaurus
+and Werewolf as their 400px branch-review previews, since no originals were kept. Those six match the
+delivered rung; replace them as above if 2048px originals turn up.
 
 ## Still to do
 
-1. **Paint the 60 earned portraits.** Run `docs/avatars/art/earned_prompts.csv` through the
-   browser task, check each one at 20px and 32px on a paper tile (Tardigrade, Bookworm and
-   Spider are the riskiest silhouettes; Kitsune's nine tails must read as one fan), upload them
-   as in [Delivery](#delivery), then drop each uploaded portrait's `placeholder` flag.
-2. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
-   one by one at 20px and 32px on a paper tile. Re-run any that do not read, then replace the
-   asset as described under [Delivery](#delivery).
+1. **Review the art at size.** Every portrait was checked as a contact sheet at 96px, not yet
+   one by one at 20px and 32px on a paper tile (among the earned ones, Tardigrade, Bookworm and
+   Spider are the riskiest silhouettes; Kitsune's nine tails must read as one fan). Re-run any
+   that do not read, then replace the asset as described under [Delivery](#delivery).
 
 ## Ideas for later
 
