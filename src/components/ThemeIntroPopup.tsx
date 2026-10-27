@@ -20,10 +20,8 @@ export function ThemeIntroPopup({ intro }: ThemeIntroPopupProps) {
   return (
     <Modal open={open} onDismiss={dismiss} size="standard" header={theme?.name}>
       <div className="px-4 py-4">
-        {/* The plaque line, in the display serif. Upright: italic Playfair read poorly on a phone. */}
-        <p className="font-display text-[1.125rem] leading-snug text-text">
-          {theme?.intro?.blurb ?? ''}
-        </p>
+        {/* The plaque line, in the body font: Playfair, italic or upright, read poorly on a phone. */}
+        <p className="font-body text-base leading-relaxed text-text">{theme?.intro?.blurb ?? ''}</p>
         {/* Sparkles, not the lightbulb: the lightbulb already means "hint" (HintStrip). */}
         <div className="mt-4 rounded-lg border-l-4 border-accent bg-fact px-3 py-3">
           <h3 className="mb-1 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-accent font-body">
