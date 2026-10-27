@@ -12868,7 +12868,10 @@
     "year": -3600000000,
     "category": "nature",
     "description": "Stable continental fragments grow, and microbial mats build the first layered stromatolite reefs in shallow seas.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "mesoarchean-era-begins",
@@ -12876,7 +12879,10 @@
     "year": -3200000000,
     "category": "nature",
     "description": "Photosynthesising microbes spread through the oceans while the first large, enduring landmasses take shape.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "rhyacian-period-begins",
@@ -12884,7 +12890,10 @@
     "year": -2300000000,
     "category": "nature",
     "description": "Oxygen is now in the air for good, and ice sheets reach the tropics in one of the planet's earliest great glaciations.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "mesoproterozoic-era-begins",
@@ -12892,7 +12901,10 @@
     "year": -1600000000,
     "category": "nature",
     "description": "A long, calm stretch of stable climate and ocean chemistry opens, with cells growing more complex beneath the waves.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "neoproterozoic-era-begins",
@@ -12900,7 +12912,10 @@
     "year": -1000000000,
     "category": "nature",
     "description": "The supercontinent Rodinia sits largely intact and begins to split apart, setting up the world's coldest spells.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "cambrian-period-opens",
@@ -12908,7 +12923,10 @@
     "year": -538800000,
     "category": "nature",
     "description": "Animals with shells, eyes and legs suddenly fill warm shallow seas in a burst of new body plans.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "late-devonian-epoch-begins",
@@ -12916,7 +12934,10 @@
     "year": -382300000,
     "category": "nature",
     "description": "Tree-sized forests spread across the continents while armoured fishes rule seas that are about to suffer repeated crises.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "pennsylvanian-epoch-begins",
@@ -12924,7 +12945,10 @@
     "year": -323400000,
     "category": "nature",
     "description": "Coal swamps blanket low-lying lands, and the first reptiles lay shelled eggs that can hatch away from water.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "late-triassic-epoch-begins",
@@ -12932,7 +12956,10 @@
     "year": -237000000,
     "category": "nature",
     "description": "Monsoon rains fall on the great supercontinent, and early dinosaurs share it with crocodile-like rivals.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "late-jurassic-epoch-begins",
@@ -12940,7 +12967,10 @@
     "year": -161500000,
     "category": "nature",
     "description": "The Atlantic widens, warm seas deepen, and plated and long-necked giants graze lush floodplains.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "late-cretaceous-epoch-begins",
@@ -12948,6 +12978,9 @@
     "year": -100500000,
     "category": "nature",
     "description": "Sea levels peak and the climate is a greenhouse, as the great horned and tyrant dinosaurs rise to rule.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ]
   }
 ]
