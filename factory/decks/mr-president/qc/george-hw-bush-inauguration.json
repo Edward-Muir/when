@@ -1,0 +1,15 @@
+{
+  "slug": "george-hw-bush-inauguration",
+  "description": "A painting of a wooden lectern in the foreground, with a dark book (apparently a Bible) resting on it. Behind it stretches a large crowd in dark winter coats and hats, facing a neoclassical domed building with American flags and red-white-blue bunting, and a tall obelisk on the right. The sky is heavy and stormy. There is no visible text, and the image runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

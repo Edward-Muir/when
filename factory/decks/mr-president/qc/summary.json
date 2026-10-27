@@ -182,11 +182,11 @@
     "description": "Dim interior of a room with dark curtains. On the left, an old wood-cabinet CRT television on a stand shows a jet airliner on a tarmac under a pale dawn sky. On the right, a tall multi-pane window looks out on a columned building with a crowd on its steps, a long green lawn running toward a tall obelisk (Washington Monument) under a grey sky. A bare tree in front of the window has yellow ribbons tied to its branches. No people are clearly identifiable."
   },
   "george-hw-bush-inauguration": {
-    "state": "qc-fail",
-    "reason": "The lectern seal has legible lettering around its rim (SEAL OF THE PRESIDENT OF THE UNITED STATES). Repaint the seal without readable words, or turn the lectern so the seal is not visible.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "Oil painting of an inauguration platform. In the foreground an open Bible rests on a dark carved wooden lectern with microphones, its front bearing a round presidential seal with readable lettering around the rim. Behind are seated men and women in dark formal wear under red, white and blue bunting and American flags, the domed Capitol behind them, and a huge crowd on the right under a grey sky. No border or frame."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painting of a wooden lectern in the foreground, with a dark book (apparently a Bible) resting on it. Behind it stretches a large crowd in dark winter coats and hats, facing a neoclassical domed building with American flags and red-white-blue bunting, and a tall obelisk on the right. The sky is heavy and stormy. There is no visible text, and the image runs edge to edge with no frame."
   },
   "clinton-first-inauguration": {
     "state": "qc-pass",
