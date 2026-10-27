@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T18:22:52.252Z",
+  "updated_at": "2026-10-27T18:25:36.695Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,10 +128,11 @@
       "updated_at": "2026-10-27T18:22:52.252Z"
     },
     "rawls-theory-of-justice": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "21245cd97a3bb3b111c5f4a792c8201440110c2da24dd75ab954ec028254e314",
+      "updated_at": "2026-10-27T18:25:36.695Z"
     }
   }
 }
