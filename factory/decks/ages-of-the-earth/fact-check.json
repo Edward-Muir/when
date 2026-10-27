@@ -1,0 +1,15 @@
+{
+  "checked": [
+    {"slug": "paleoarchean-era-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Paleoarchean starts 3600 Ma. Name and description fine, no dates.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "mesoarchean-era-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Mesoarchean starts 3200 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "rhyacian-period-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Rhyacian starts 2300 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "mesoproterozoic-era-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Mesoproterozoic starts 1600 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "neoproterozoic-era-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Neoproterozoic (Tonian) starts 1000 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "cambrian-period-opens", "verdict": "ok", "field": null, "found": "ICS 2024/12: Cambrian starts 538.8 +/-0.6 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "late-devonian-epoch-begins", "verdict": "fix", "field": "year", "found": "ICS 2024/12 puts the base of the Upper Devonian (Frasnian) at 382.31 +/-1.36 Ma, not 382.7 (an older value).", "suggestion": "-382300000", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "pennsylvanian-epoch-begins", "verdict": "fix", "field": "year", "found": "ICS 2024/12 puts the base of the Pennsylvanian (Bashkirian) at 323.4 +/-0.4 Ma, not 323.2.", "suggestion": "-323400000", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "late-triassic-epoch-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Upper Triassic (Carnian) base ~237 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "late-jurassic-epoch-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Upper Jurassic (Oxfordian) base 161.5 +/-1.0 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"},
+    {"slug": "late-cretaceous-epoch-begins", "verdict": "ok", "field": null, "found": "ICS 2024/12: Upper Cretaceous (Cenomanian) base 100.5 +/-0.1 Ma. Name and description fine.", "suggestion": "", "source": "https://stratigraphy.org/ICSchart/ChronostratChart2024-12.pdf"}
+  ]
+}
