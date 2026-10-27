@@ -1,0 +1,42 @@
+{
+  "id": "ages-of-the-earth",
+  "name": "Ages of the Earth",
+  "scope": "Yes if it is the start of an eon, era, period or epoch of Earth's history",
+  "boundary": "Ages of the Earth owns the geological time scale itself; the life and events within it stay in Before Us, Dinosaurs and Age of Mammals.",
+  "neighbours": [
+    "before-us",
+    "dinosaurs",
+    "age-of-mammals",
+    "reading-the-rocks"
+  ],
+  "grid": {
+    "categories": [
+      "nature",
+      "science"
+    ],
+    "eras": [
+      "prehistory"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "The Hadean begins (4.6 billion years ago)",
+    "The Archean (4 billion years ago)",
+    "The Proterozoic (2.5 billion years ago)",
+    "The Cryogenian, Snowball Earth (720 million years ago)",
+    "The Cambrian (539 million years ago)",
+    "The Devonian (419 million years ago)",
+    "The Carboniferous (359 million years ago)",
+    "The Triassic (252 million years ago)",
+    "The Jurassic (201 million years ago)",
+    "The Cretaceous (143 million years ago)",
+    "The Paleogene (66 million years ago)",
+    "The Pleistocene (2.6 million years ago)",
+    "The Holocene (11,700 years ago)"
+  ],
+  "notes": "One beat per unit, dated to its start on the official time scale, Hadean to Holocene. The card names the unit; its description shows the world then, never a number of years. Skip it if 30 can't be found.",
+  "appeal": 2,
+  "status": "authoring"
+}
