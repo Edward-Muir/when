@@ -1,4 +1,6 @@
 import {
+  MAX_THEME_BLURB_LENGTH,
+  MAX_THEME_FACT_LENGTH,
   MAX_THEME_NAME_LENGTH,
   MIN_THEME_EVENTS,
   hasDateOpened,
@@ -135,6 +137,83 @@ describe('the date-has-opened guard', () => {
       now: opensAtMs('2030-03-10') + 60_000,
       previousDates: new Set(['2030-03-10']),
     });
+    expect(errors).toEqual([]);
+  });
+});
+
+describe('the intro', () => {
+  const intro = { blurb: 'Maps that changed the world.', fact: 'One copy survives.' };
+
+  it('is optional', () => {
+    expect(errorsFor([theme()])).toEqual([]);
+  });
+
+  it('accepts a well-formed intro', () => {
+    expect(errorsFor([theme({ intro })])).toEqual([]);
+  });
+
+  it.each([
+    [{ ...intro, blurb: '' }, 'intro.blurb must be a non-empty string'],
+    [{ ...intro, fact: '   ' }, 'intro.fact must be a non-empty string'],
+    [{ ...intro, fact: ' One copy survives.' }, 'leading or trailing whitespace'],
+    [{ ...intro, blurb: 'x'.repeat(MAX_THEME_BLURB_LENGTH + 1) }, `max ${MAX_THEME_BLURB_LENGTH}`],
+    [{ ...intro, fact: 'x'.repeat(MAX_THEME_FACT_LENGTH + 1) }, `max ${MAX_THEME_FACT_LENGTH}`],
+  ])('rejects %j', (bad, message) => {
+    expect(errorsFor([theme({ intro: bad })])[0]).toContain(message);
+  });
+
+  it('rejects an intro that is not an object', () => {
+    const bad = 'Maps' as unknown as CuratedTheme['intro'];
+    expect(errorsFor([theme({ intro: bad })])[0]).toContain('intro must be');
+  });
+});
+
+describe('the opened-theme lock', () => {
+  const opened = '2030-03-10';
+  const after = opensAtMs(opened) + 60_000;
+  const stored = theme({ dates: [opened, '2030-06-01'] });
+  const lockOptions = {
+    now: after,
+    previousDates: new Set(stored.dates),
+    previousThemes: [stored],
+  };
+
+  it('lets an opened theme gain an intro', () => {
+    const edited = { ...stored, intro: { blurb: 'Crowns.', fact: 'Heavy.' } };
+    expect(errorsFor([edited], lockOptions)).toEqual([]);
+  });
+
+  it('lets an opened theme drop a date that has not opened', () => {
+    expect(errorsFor([{ ...stored, dates: [opened] }], lockOptions)).toEqual([]);
+  });
+
+  it('rejects changing the events of an opened theme', () => {
+    const swapped = [...stored.eventNames];
+    swapped[0] = 'event-new';
+    const errors = errorsFor([{ ...stored, eventNames: swapped }], lockOptions);
+    expect(errors).toHaveLength(1);
+    expect(errors[0]).toContain('eventNames changed');
+  });
+
+  it('rejects renaming an opened theme', () => {
+    expect(errorsFor([{ ...stored, name: 'Thrones' }], lockOptions)[0]).toContain('name changed');
+  });
+
+  it('rejects dropping an opened date', () => {
+    const errors = errorsFor([{ ...stored, dates: ['2030-06-01'] }], lockOptions);
+    expect(errors[0]).toContain(`${opened} dropped`);
+  });
+
+  it('leaves a theme that has not opened free to change', () => {
+    const errors = errorsFor([{ ...stored, eventNames: slugs(MIN_THEME_EVENTS + 2) }], {
+      ...lockOptions,
+      now: NOW,
+    });
+    expect(errors).toEqual([]);
+  });
+
+  it('force overrides it', () => {
+    const errors = errorsFor([{ ...stored, name: 'Thrones' }], { ...lockOptions, force: true });
     expect(errors).toEqual([]);
   });
 });

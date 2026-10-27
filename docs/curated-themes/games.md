@@ -169,3 +169,12 @@ weakest thing currently in the deck:
 - **Machines.** Shannon's _Programming a Computer for Playing Chess_ (1950), Watson at Jeopardy
   (2011) and Libratus at heads-up poker (2017). Libratus is one year from AlphaGo, so it can
   never join this deck; the other two can.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Games played on boards, at tables and with cards, and the machines built to beat people at them.
+- **Fact:** Monopoly grew out of The Landlord's Game, which Lizzie Magie designed to show how landlords grow rich as tenants lose out. She sold her patent for $500.
+
+Sources: [The Landlord's Game - Wikipedia](https://en.wikipedia.org/wiki/The_Landlord%27s_Game); [Big Think: Monopoly was invented to demonstrate the evils of capitalism](https://bigthink.com/the-present/monopoly-was-invented-to-demonstrate-the-evils-of-capitalism/).

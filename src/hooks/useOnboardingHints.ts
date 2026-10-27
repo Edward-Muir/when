@@ -80,6 +80,8 @@ export interface UseOnboardingHintsArgs {
   statsOpen: boolean;
   /** A card-description popup is open, so the tap-a-card hint has been answered. */
   cardOpen: boolean;
+  /** The curated theme's intro popup is up, so play has not really started. */
+  introOpen?: boolean;
 }
 
 export interface OnboardingHints {
@@ -240,7 +242,8 @@ function hintDurationMs(key: SettleHintKey): number {
  *    it every time an eligibility boolean flips — which happens on every drag frame and
  *    animation transition — never reaches its quiet gap, so the hint never fires in real
  *    play. There are two `setTimeout`s: the idle nudge's (its gate flips at most once per
- *    install) and the hide timer inside `show()`.
+ *    install, plus once per game when a theme intro closes) and the hide timer inside
+ *    `show()`.
  */
 export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHints {
   const {
@@ -255,6 +258,7 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     isMultiplayer,
     statsOpen,
     cardOpen,
+    introOpen = false,
   } = args;
   const playing = phase === 'playing';
 
@@ -305,16 +309,17 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     [clearHideTimer, markSeen]
   );
 
-  // 1. The idle drag nudge, `DRAG_NUDGE_MS` after play starts with no drag. Reads `seen.drag`
+  // 1. The idle drag nudge, `DRAG_NUDGE_MS` after play starts with no drag; a theme intro
+  //    popup holds it, so the clock starts when that is dismissed. Reads `seen.drag`
   //    (state, not ref) because it must re-run when drag is marked — the only reason `seen` is
   //    state at all. `active` churns more now that every placement shows something, but every
   //    placement needs a drag and the first drag marks `drag`, so this effect is already dead
   //    by the time any settle can restart its timer.
   useEffect(() => {
-    if (!playing || isMultiplayer || seen.drag || active !== null) return;
+    if (!playing || introOpen || isMultiplayer || seen.drag || active !== null) return;
     const timer = window.setTimeout(() => setActive('drag'), DRAG_NUDGE_MS);
     return () => window.clearTimeout(timer);
-  }, [playing, isMultiplayer, seen.drag, active]);
+  }, [playing, introOpen, isMultiplayer, seen.drag, active]);
 
   // 2. A drag clears whatever is showing and settles `drag` for good.
   useEffect(() => {

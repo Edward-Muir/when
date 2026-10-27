@@ -176,3 +176,12 @@ collides with a card already in the deck:
   earthquake (1303), the Shimabara-Amakusa sequence beyond Unzen, Krafla and Surtsey (1963,
   islands being born), Mount Katmai/Novarupta (1912), Santa María (1902, same year as Pelée),
   and the Chilean quake of 1730 as a Valparaíso card rather than a filler.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Eruptions, earthquakes and tsunamis: the ground itself giving way.
+- **Fact:** Krakatoa's largest blast was heard 4,800 km away on Rodrigues, where it was taken for distant gunfire.
+
+Sources: [1883 eruption of Krakatoa](https://en.wikipedia.org/wiki/1883_eruption_of_Krakatoa) (heard on Rodrigues, 4,800 km).

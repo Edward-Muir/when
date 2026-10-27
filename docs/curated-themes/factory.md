@@ -536,6 +536,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
      - The theme JSON, with its date, goes to `factory/dispatch/<id>.json`, plus a lasting copy in `../when-images/factory-reports/`.
   2. It runs `gh workflow run publish-theme.yml -f mode=validate -F theme=@…` and reads the run's report.
   3. The calendar is the record of the date; nothing is committed.
+  4. A deck's `intro` (the popup's blurb and fact, [index.md](index.md#theme-intros)) rides along: `next-slot.js` copies it from `deck.json` into the dispatch. The author stage does not write one yet, so for now it is added to `deck.json` by hand, with the fact checked like a card.
 - **For now D only validates and reports**, with the exact publish command for Edward. Publishing waits for his approval; the settings deny `mode=publish`. He switches it on once he trusts it.
 - `next-slot.js --report` gives the buffer, as days to the first open Monday or Friday. On 2026-10-18 that was 8 days, to 2026-10-26: the gap phase 0 names, plus the eight Sunday themes.
 - **No code needs changing to go beyond Mon/Fri:** curated themes can sit on any date, and no code knows about weekdays. Curated days are added as the buffer allows.
