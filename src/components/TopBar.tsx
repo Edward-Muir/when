@@ -8,12 +8,14 @@ import {
   SlidersHorizontal,
   Archive,
   Hourglass,
+  RotateCcw,
 } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
 import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
+import RestartConfirmModal from './RestartConfirmModal';
 
 /**
  * Every nav destination, in the order the home pager shows them. Also the home pager's tab
@@ -59,6 +61,13 @@ interface TopBarProps {
    * tab's path, which opens the home screen on that tab.
    */
   onNavClick?: (key: NavDest) => void;
+  /**
+   * In a practice game: show a Restart button beside Menu. It asks first, and calls this only
+   * once the player confirms.
+   */
+  onRestart?: () => void;
+  /** Restart is held while a placement animates, so it never lands mid-choreography. */
+  restartDisabled?: boolean;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -69,12 +78,15 @@ const TopBar: React.FC<TopBarProps> = ({
   showStatsAchievements = false,
   activeNav,
   onNavClick,
+  onRestart,
+  restartDisabled = false,
 }) => {
   const navigate = useNavigate();
   const { updateAvailable, newVersion, notes: updateNotes } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [updateDismissed, setUpdateDismissed] = useState(false);
+  const [isRestartConfirmOpen, setIsRestartConfirmOpen] = useState(false);
 
   // `relative` lets the "new" dot anchor to the top-right of nav buttons.
   const buttonClass = `
@@ -219,8 +231,11 @@ const TopBar: React.FC<TopBarProps> = ({
                     // 320px screen. It wraps to two lines rather than truncating, because a
                     // pairing's place comes last and is the part a single line cut off; two
                     // lines still fit the nav buttons' 38px row. The full name is on the
-                    // Daily hero card either way.
-                    className="mt-1 max-w-[9.5rem] line-clamp-2 px-2 py-0.5 text-xs leading-[1.2] font-body font-medium bg-accent text-white rounded-xl"
+                    // Daily hero card either way. `overflow-wrap:anywhere` is for a 320px
+                    // screen in a practice game, where Restart makes a third button: it lets
+                    // even a one-word name ("Everything") give way rather than push Menu off
+                    // the edge. Wider screens never reach it.
+                    className="mt-1 max-w-[9.5rem] line-clamp-2 [overflow-wrap:anywhere] px-2 py-0.5 text-xs leading-[1.2] font-body font-medium bg-accent text-white rounded-xl"
                     title={dailyTheme}
                   >
                     {dailyTheme}
@@ -299,6 +314,18 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
+            {/* Restart — practice games only (Game decides), behind a confirm */}
+            {onRestart && (
+              <button
+                onClick={() => setIsRestartConfirmOpen(true)}
+                disabled={restartDisabled}
+                className={`${buttonClass} disabled:opacity-50`}
+                aria-label="Restart game"
+              >
+                <RotateCcw className={iconClass} />
+              </button>
+            )}
+
             {/* Menu Button — never dotted: every "new" destination is a nav button now */}
             <button
               onClick={() => setIsMenuOpen(true)}
@@ -323,6 +350,15 @@ const TopBar: React.FC<TopBarProps> = ({
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
+      />
+
+      <RestartConfirmModal
+        open={isRestartConfirmOpen}
+        onClose={() => setIsRestartConfirmOpen(false)}
+        onConfirm={() => {
+          setIsRestartConfirmOpen(false);
+          onRestart?.();
+        }}
       />
 
       {/* Update Available Popup */}
