@@ -3,7 +3,7 @@
   "name": "Ages of the Earth",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T21:18:02.209Z",
-  "updated_at": "2026-10-27T22:19:58.109Z",
+  "updated_at": "2026-10-27T22:22:15.614Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-27T22:19:58.109Z"
     },
     "late-devonian-epoch-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bac68bff3e7c8ef7a0dc66de10b47b1f735632f724d2721a8340a520f9cac63d",
+      "updated_at": "2026-10-27T22:22:15.614Z"
     },
     "pennsylvanian-epoch-begins": {
       "state": "pending",
