@@ -169,3 +169,12 @@ Real gaps, not filler:
   Pretoria** — all eight are real, defensible capital-founding beats that simply lost out to
   crowding or the 36-card ceiling, not to the scope rule. Any of them is a reasonable future
   swap if a kept card is ever dropped.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The founding of cities that are national capitals today, by legend, conquest or deliberate design.
+- **Fact:** Australia's constitution required the capital to be in New South Wales but at least 100 miles from Sydney, a compromise between Sydney and Melbourne.
+
+Sources: [Section 125 of the Constitution of Australia (Wikipedia)](https://en.wikipedia.org/wiki/Section_125_of_the_Constitution_of_Australia); [Canberra (Wikipedia)](https://en.wikipedia.org/wiki/Canberra).

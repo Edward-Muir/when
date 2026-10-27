@@ -42,6 +42,17 @@ export const MIN_THEME_EVENTS = 16;
 export const MAX_THEME_NAME_LENGTH = 20;
 
 /**
+ * Longest intro blurb and fact.
+ *
+ * Both are read in the intro popup before the first card is dragged, so they are sized to sit
+ * in its 340px column on a 320px phone without scrolling: a one-sentence plaque line and a
+ * one- or two-sentence fact. The copy rules (no dates, no bookends) are the publish script's,
+ * since the date check is shared with the event catalogue's.
+ */
+export const MAX_THEME_BLURB_LENGTH = 120;
+export const MAX_THEME_FACT_LENGTH = 200;
+
+/**
  * Slug shape: lowercase ASCII, digits and dashes only.
  *
  * Flat rather than the tidier `[a-z0-9]+(-[a-z0-9]+)*` because that nests quantifiers and
@@ -58,11 +69,23 @@ const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
  */
 const RESERVED_THEME_IDS = new Set(['all']);
 
+/**
+ * The popup a curated game opens with. Display-only: nothing that composes or judges a deck
+ * reads it, so editing it after a date has opened re-deals nothing.
+ */
+export interface ThemeIntro {
+  /** One sentence stating the theme's scope. */
+  blurb: string;
+  /** One surprising, specific detail. */
+  fact: string;
+}
+
 export interface CuratedTheme {
   id: string;
   name: string;
   eventNames: string[];
   dates: string[];
+  intro?: ThemeIntro;
 }
 
 export interface ThemeCalendar {
@@ -146,10 +169,37 @@ function validateThemeDates(theme: CuratedTheme, where: string, errors: string[]
   }
 }
 
+function validateIntroPart(
+  value: unknown,
+  label: string,
+  max: number,
+  where: string,
+  errors: string[]
+): void {
+  if (typeof value !== 'string' || value.trim().length === 0) {
+    errors.push(`${where}: intro.${label} must be a non-empty string`);
+  } else if (value !== value.trim()) {
+    errors.push(`${where}: intro.${label} has leading or trailing whitespace`);
+  } else if (value.length > max) {
+    errors.push(`${where}: intro.${label} is ${value.length} chars, max ${max}`);
+  }
+}
+
+function validateThemeIntro(theme: CuratedTheme, where: string, errors: string[]): void {
+  if (theme.intro === undefined) return;
+  if (!theme.intro || typeof theme.intro !== 'object') {
+    errors.push(`${where}: intro must be { blurb, fact }`);
+    return;
+  }
+  validateIntroPart(theme.intro.blurb, 'blurb', MAX_THEME_BLURB_LENGTH, where, errors);
+  validateIntroPart(theme.intro.fact, 'fact', MAX_THEME_FACT_LENGTH, where, errors);
+}
+
 function validateTheme(theme: CuratedTheme, where: string, errors: string[]): void {
   validateThemeIdentity(theme, where, errors);
   validateThemeEvents(theme, where, errors);
   validateThemeDates(theme, where, errors);
+  validateThemeIntro(theme, where, errors);
 }
 
 export interface ValidateOptions {
@@ -158,6 +208,43 @@ export interface ValidateOptions {
   force?: boolean;
   /** Dates already live before this write; unchanged entries are not re-checked. */
   previousDates?: ReadonlySet<string>;
+  /** The stored themes before this write, for the opened-theme lock. */
+  previousThemes?: readonly CuratedTheme[];
+}
+
+function sameList(a: readonly string[] | undefined, b: readonly string[] | undefined): boolean {
+  if (!a || !b || a.length !== b.length) return false;
+  return a.every((value, i) => value === b.at(i));
+}
+
+/**
+ * A theme someone may already have played keeps its deck. Once any of a stored theme's dates
+ * has opened, a write that keeps its id may change its intro and add or drop unopened dates,
+ * but not its name, its events, or an opened date: changing those would split a day already
+ * being played, and `dailyRecency.ts` would replay decks nobody was dealt. Removing the theme
+ * outright is the publish workflow's separate `remove` input, and is not gated here.
+ */
+function validateOpenedThemeLock(
+  incoming: CuratedTheme,
+  stored: CuratedTheme | undefined,
+  now: number,
+  where: string,
+  errors: string[]
+): void {
+  const opened = (stored?.dates ?? []).filter((date) => hasDateOpened(date, now));
+  if (!stored || opened.length === 0) return;
+
+  const why = `once a date has opened only its intro and unopened dates may change`;
+  if (incoming.name !== stored.name) {
+    errors.push(`${where}: name changed from "${stored.name}", but ${why}`);
+  }
+  if (!sameList(incoming.eventNames, stored.eventNames)) {
+    errors.push(`${where}: eventNames changed, but ${why}`);
+  }
+  const dropped = opened.filter((date) => !(incoming.dates ?? []).includes(date));
+  if (dropped.length > 0) {
+    errors.push(`${where}: opened date(s) ${dropped.join(', ')} dropped, but ${why}`);
+  }
 }
 
 /**
@@ -177,10 +264,14 @@ export function validateCalendar(
   const ids = new Set<string>();
   const datesSeen = new Map<string, string>();
   const previous = options.previousDates ?? new Set<string>();
+  const storedById = new Map((options.previousThemes ?? []).map((t) => [t.id, t]));
 
   calendar.themes.forEach((theme, i) => {
     const where = `themes[${i}]${theme?.id ? ` (${theme.id})` : ''}`;
     validateTheme(theme, where, errors);
+    if (theme?.id && !options.force) {
+      validateOpenedThemeLock(theme, storedById.get(theme.id), options.now, where, errors);
+    }
 
     if (theme?.id) {
       if (ids.has(theme.id)) errors.push(`${where}: duplicate theme id "${theme.id}"`);

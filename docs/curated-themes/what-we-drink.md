@@ -159,3 +159,14 @@ collide with a card that is in it:
   brewing revival. The catalogue's newest drink card is 1988, so anything after that has to be
   written; New Coke (1985) is the deck's most recent card and there is room for two or three
   genuinely modern beats if this theme is ever widened past 36.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The drinks people make on purpose, and the rules written about them.
+- **Fact:** Pressed bricks of tea once served as money across Mongolia and Siberia, scored so pieces could be snapped off as change.
+
+Sources: [Compressed tea](https://en.wikipedia.org/wiki/Tuo_cha); [Bank of Canada Museum, tea brick currency](https://www.bankofcanadamuseum.ca/2018/12/unpacking-the-collection-9/).
+
+Two were dropped: the purity law's ingredient list restates `reinheitsgebot-beer-purity`, and Dom Pérignon trying to keep bubbles out contradicts `champagne-region-bubbly`.
