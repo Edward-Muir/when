@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T18:17:21.398Z",
+  "updated_at": "2026-10-27T18:22:52.252Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-27T18:17:21.398Z"
     },
     "beauvoir-second-sex": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6813c0bad6af6c376030e2a64b2c11a590f7fd7b1d3ed24bdf40ce270185cc4b",
+      "updated_at": "2026-10-27T18:22:52.252Z"
     },
     "rawls-theory-of-justice": {
       "state": "pending",
