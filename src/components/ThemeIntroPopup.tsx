@@ -1,3 +1,4 @@
+import { Sparkles } from 'lucide-react';
 import Modal from './ui/Modal';
 import type { ThemeIntroState } from '../hooks/useThemeIntro';
 
@@ -19,13 +20,18 @@ export function ThemeIntroPopup({ intro }: ThemeIntroPopupProps) {
   return (
     <Modal open={open} onDismiss={dismiss} size="standard" header={theme?.name}>
       <div className="px-4 py-4">
-        <p className="font-body text-text leading-relaxed">{theme?.intro?.blurb ?? ''}</p>
-        <h3 className="mt-4 mb-1 text-xs font-medium uppercase tracking-wide text-text-muted font-body">
-          Did you know?
-        </h3>
-        <p className="text-sm font-body text-text-muted leading-relaxed">
-          {theme?.intro?.fact ?? ''}
+        {/* The plaque line, set as an epigraph in the display serif. */}
+        <p className="font-display italic text-[1.125rem] leading-snug text-text">
+          {theme?.intro?.blurb ?? ''}
         </p>
+        {/* Sparkles, not the lightbulb: the lightbulb already means "hint" (HintStrip). */}
+        <div className="mt-4 rounded-lg border-l-4 border-accent bg-fact px-3 py-3">
+          <h3 className="mb-1 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-accent font-body">
+            <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
+            Did you know?
+          </h3>
+          <p className="text-sm font-body text-text leading-relaxed">{theme?.intro?.fact ?? ''}</p>
+        </div>
       </div>
 
       <div className="px-4 py-3 border-t border-border">
