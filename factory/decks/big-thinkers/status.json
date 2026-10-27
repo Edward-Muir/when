@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T05:14:10.478Z",
+  "updated_at": "2026-10-27T05:21:45.225Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-27T05:14:10.478Z"
     },
     "nagarjuna-middle-way-verses": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0d75b1fed910fa8e45da73ef3df51eb84551a413701b5f5b5e1c6061abe8f172",
+      "updated_at": "2026-10-27T05:21:45.225Z"
     },
     "augustine-confessions-written": {
       "state": "pending",
