@@ -4,6 +4,8 @@ import type { AchievementDef } from '../data/achievements';
 import type { HistoricalEvent } from '../types';
 import { TIER_STYLES, LOCKED_RING } from '../data/achievementTiers';
 import { getImageUrl } from '../utils/cloudinaryImage';
+import { earnedPortraitFor } from '../utils/avatar';
+import Portrait from './ui/Portrait';
 
 interface AchievementCardProps {
   achievement: AchievementDef;
@@ -119,6 +121,7 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
   // circular crop lands identically either way.
   const imageSrc = getImageUrl(event?.image_url, large ? 'detail' : 'thumbnail');
   const placeholderSrc = large ? getImageUrl(event?.image_url, 'thumbnail') : undefined;
+  const portrait = earnedPortraitFor(achievement.id);
 
   return (
     <div className="flex h-full flex-col items-center text-center rounded-2xl border border-border bg-surface/60 backdrop-blur-md shadow-sm px-3 pt-3 pb-4">
@@ -143,6 +146,22 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
       <p className={`mt-1 font-body ${large ? 'text-sm' : 'text-xs'} leading-snug text-text-muted`}>
         {achievement.unlockCriteria}
       </p>
+
+      {/* The portrait this badge earns: on the large card only (the unlock reveal and the
+          detail popup), greyed until it is unlocked. No frame: metals mean podium places. */}
+      {large && portrait && (
+        <div className="mt-3 flex items-center gap-2" data-testid="earned-portrait">
+          <Portrait
+            animal={portrait.id}
+            size={44}
+            className={unlocked ? '' : 'grayscale opacity-50'}
+          />
+          <span className="font-body text-sm text-text-muted">
+            {unlocked ? 'Portrait unlocked: ' : 'Unlocks the portrait: '}
+            <span className="font-semibold text-text">{portrait.label}</span>
+          </span>
+        </div>
+      )}
     </div>
   );
 };
