@@ -1,9 +1,14 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "Every achievement now unlocks a new avatar, ready to wear on the leaderboard from the Profile page."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.36.0",
+      "date": "2026-10-27",
+      "notes": [
+        "Every achievement now unlocks a new avatar, ready to wear on the leaderboard from the Profile page."
+      ]
+    },
     {
       "version": "1.35.0",
       "date": "2026-10-16",
