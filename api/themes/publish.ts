@@ -70,6 +70,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       now: Date.now(),
       force: body.force === true,
       previousDates: scheduledDates(stored),
+      previousThemes: stored.themes,
     });
     if (!ok) return res.status(400).json({ error: 'Validation failed', errors });
 

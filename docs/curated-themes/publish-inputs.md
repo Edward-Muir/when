@@ -20,6 +20,11 @@ catalogue-aware checks think. A theme carrying un-illustrated or retired events 
 unresolved slugs, because `loadAllEvents` hides any event without Cloudinary art and
 `deprecated.json` is not in the manifest.
 
+**Each upcoming theme carries an `intro`**, the popup it opens with. Bank 2's are still to
+be written, to the rules in [index.md](index.md#theme-intros). A theme already published
+without one gains it by re-dispatching the same block with the intro added: once a date has
+opened, only the intro (and unopened dates) may change.
+
 The workflow's other inputs: `force` publishes a date that has already opened (it splits the
 day for UTC+13/+14), and `remove` takes a theme id to delete instead of adding one.
 
@@ -646,7 +651,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "gps-full-coverage",
     "google-earth-launch"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Maps, charts and surveys that changed how people pictured the world.",
+    "fact": "The first map to print the name \"America\" ran to about a thousand copies. One survives, and the Library of Congress paid $10 million for it."
+  }
 }
 ```
 
@@ -693,7 +702,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "euro-introduced",
     "bitcoin-created"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Money itself, and the institutions that issue and govern it.",
+    "fact": "On Yap, a giant stone coin sank on its way to the island. It was agreed the stone still counted, and it kept changing hands from the seabed."
+  }
 }
 ```
 
@@ -740,7 +753,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "slovakia-becomes-independent",
     "montenegro-independence"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The moment each European country dates its own founding from.",
+    "fact": "Andorra has two heads of state, and neither lives there: the Bishop of Urgell and the President of France."
+  }
 }
 ```
 
@@ -788,7 +805,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "fermat-last-theorem-proved",
     "poincare-conjecture-proved"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The moments new mathematical ideas, and the proofs behind them, entered human thought.",
+    "fact": "\"Algebra\" and \"algorithm\" both trace to one Baghdad scholar: the first to his book's title, the second to his name, al-Khwarizmi."
+  }
 }
 ```
 
@@ -836,7 +857,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "ebola-outbreak",
     "covid-19-pandemic"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The great epidemics, and the discoveries that ended or blunted them.",
+    "fact": "A plague doctor's beaked mask was packed with herbs and spices, meant to filter the bad air physicians then blamed for disease."
+  }
 }
 ```
 
@@ -882,7 +907,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "cameron-challenger-deep",
     "titan-submersible-implosion"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "People going deliberately under water, and what they found there.",
+    "fact": "The wreck of the Titanic lies about 3.8 km down, deeper than four Burj Khalifas stacked end to end."
+  }
 }
 ```
 
@@ -930,7 +959,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "tohoku-earthquake",
     "turkey-syria-earthquake"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Eruptions, earthquakes and tsunamis: the ground itself giving way.",
+    "fact": "Krakatoa's largest blast was heard 4,800 km away on Rodrigues, where it was taken for distant gunfire."
+  }
 }
 ```
 
@@ -978,7 +1011,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "starbucks-coffee-chain",
     "new-coke-launched"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The drinks people make on purpose, and the rules written about them.",
+    "fact": "Pressed bricks of tea once served as money across Mongolia and Siberia, scored so pieces could be snapped off as change."
+  }
 }
 ```
 
