@@ -1,0 +1,81 @@
+{
+  "deck": "ages-of-the-earth",
+  "name": "Ages of the Earth",
+  "stage": "authored",
+  "created_at": "2026-10-27T21:18:02.209Z",
+  "updated_at": "2026-10-27T21:18:02.209Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-27T21:18:02.209Z"
+    }
+  ],
+  "slugs": {
+    "paleoarchean-era-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "mesoarchean-era-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "rhyacian-period-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "mesoproterozoic-era-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "neoproterozoic-era-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "cambrian-period-opens": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "late-devonian-epoch-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "pennsylvanian-epoch-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "late-triassic-epoch-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "late-jurassic-epoch-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    },
+    "late-cretaceous-epoch-begins": {
+      "state": "pending",
+      "attempts": 0,
+      "reason": null,
+      "sha256": null
+    }
+  }
+}
