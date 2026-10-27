@@ -117,3 +117,12 @@ the Banda massacre (1621), Raffles' British interregnum and the rediscovery of B
 Islam (1912), the Battle of Surabaya (1945), Konfrontasi (1963), the 1965 killings, and the
 Helsinki accord that ended the Aceh insurgency (2005). Most collide with a card already in the
 36, which is why they were not written.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Volcanoes, kingdoms, spice traders and a republic across the islands that are now Indonesia.
+- **Fact:** Java covers under a tenth of Indonesia's land yet holds more than half its people, making it the most populous island on Earth.
+
+Sources: [Antara News: Java's population share declining slowly (BPS)](https://en.antaranews.com/news/166448/javas-population-share-declining-slowly-bps); [Wikipedia: Indonesians](https://en.wikipedia.org/wiki/Indonesians); [Britannica: Java](https://www.britannica.com/place/Java-island-Indonesia/Introduction).

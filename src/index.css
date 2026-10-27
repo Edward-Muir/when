@@ -114,6 +114,14 @@ body {
   }
 }
 
+/* The "Did you know?" box in a curated theme's intro (`ThemeIntroPopup.tsx`). Same trap as
+   `.bg-player-row`, so the gold is mixed into the surface rather than written `bg-accent/10`. */
+@layer utilities {
+  .bg-fact {
+    background-color: color-mix(in srgb, var(--color-accent) 10%, var(--color-surface));
+  }
+}
+
 /* Stats page fills. Same trap as `.bg-player-row` above: `bg-accent/70` would compile to
    nothing, so the calendar and score bars mix the accent into the surface here. */
 @layer utilities {

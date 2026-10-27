@@ -200,3 +200,14 @@ the spine, have no event, and were not written because there is nowhere to put t
 - **The Plague of Cyprian's Persian sequel**, the **cocoliztli epidemics** of New Spain
   (1545, 1576), and the **Great Plague of Vienna** (1679) are all genuine named outbreaks
   with no catalogue entry; each collides with something already in the deck.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The great epidemics, and the discoveries that ended or blunted them.
+- **Fact:** A plague doctor's beaked mask was packed with herbs and spices, meant to filter the bad air physicians then blamed for disease.
+
+Sources: [National Geographic, plague doctors' beaked masks](https://www.nationalgeographic.com/history/article/plague-doctors-beaked-masks-coronavirus) (the mask is a later, 17th-century design, which is why the fact names no epidemic).
+
+The quarantine etymology (Venice's forty days, Ragusa's thirty) was dropped: `ragusa-quarantine` already says it.

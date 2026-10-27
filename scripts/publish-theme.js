@@ -6,7 +6,8 @@
  * Secrets. Everything is read from the environment rather than argv, because the workflow
  * passes the theme JSON through env to keep it out of the shell.
  *
- *   THEME_JSON        the theme: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"]}
+ *   THEME_JSON        the theme: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"],
+ *                     "intro":{"blurb","fact"}}, intro optional
  *   THEME_MODE        "validate" (default, writes nothing) or "publish"
  *   THEME_FORCE       "true" to publish a date that has already opened somewhere
  *   THEME_REMOVE      a theme id to delete instead of adding
@@ -27,6 +28,7 @@ const {
   loadEligibleEvents,
   spreadReport,
 } = require('./themes/catalogue');
+const { introProblems } = require('./themes/intro');
 
 /** Below this a theme is reported as clustered. Advisory: narrow-range themes are allowed. */
 const MIN_OCCUPIED_BINS = 6;
@@ -79,6 +81,8 @@ function inspectTheme(theme, events, index) {
   console.log(`  events     ${resolved.length} playable of ${(theme.eventNames ?? []).length}`);
   console.log(`  bands      easiest ${bandCounts.join(' / ')} hardest`);
   console.log(`  spread     ${spread.occupied}/${spread.total} bins  [${spread.bins.join(' ')}]`);
+  console.log(`  intro      ${theme.intro ? theme.intro.blurb : '(none)'}`);
+  problems.push(...introProblems(theme));
 
   if (resolved.length > 0) {
     const years = resolved.map((e) => e.year).sort((a, b) => a - b);
