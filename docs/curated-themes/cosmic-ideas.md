@@ -184,3 +184,12 @@ and the collision year is given where that is the reason:
 
 Lemaître and Rubin are the two that most deserve writing. Neither can join this deck without
 displacing a card, but both would strengthen a wider version of it.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Ideas about what the universe is, how big and old it is, and where Earth sits within it.
+- **Fact:** Edgar Allan Poe suggested the night sky is dark because light from the farthest stars has not yet had time to reach us, an idea close to the modern answer.
+
+Sources: [Olbers' paradox - Wikipedia](https://en.wikipedia.org/wiki/Olbers'_paradox); [Big Think: Poe's cosmology in Eureka](https://bigthink.com/hard-science/poe-cosmology-eureka/).

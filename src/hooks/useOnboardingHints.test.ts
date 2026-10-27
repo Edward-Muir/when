@@ -100,6 +100,19 @@ describe('the drag nudge', () => {
     expect(view.result.current.active).toBeNull();
   });
 
+  it('waits for a theme intro popup, then starts its clock when it closes', () => {
+    const view = setup({ introOpen: true });
+    act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS * 2));
+    expect(view.result.current.active).toBeNull();
+    expect(hasSeenHint('drag')).toBe(false);
+
+    view.rerender({ ...base, introOpen: false });
+    act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS - 1));
+    expect(view.result.current.active).toBeNull();
+    act(() => jest.advanceTimersByTime(1));
+    expect(view.result.current.active).toBe('drag');
+  });
+
   it('tapping the nudge marks it, so it does not come straight back', () => {
     const view = setup();
     act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS));

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.37.0](https://github.com/Edward-Muir/when/compare/v1.36.0...v1.37.0) (2026-10-27)
+
+
+### Features
+
+* **themes:** open curated themes with an intro popup ([#113](https://github.com/Edward-Muir/when/issues/113)) ([08f638e](https://github.com/Edward-Muir/when/commit/08f638ea056d4f53aca864df6547b40e4f670123))
+
 ## [1.36.0](https://github.com/Edward-Muir/when/compare/v1.35.0...v1.36.0) (2026-10-27)
 
 

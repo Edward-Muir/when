@@ -174,3 +174,12 @@ Real gaps, not filler, all of them blocked by the eight-year spacing rather than
 - Nothing at all between **1000 and 500 BCE**, which is where the brief's era range starts.
   Babylonian and Egyptian astronomy has realisations but the catalogue records them as
   programmes, and inventing a "moment" for them would be fiction.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The moments discoveries landed, when someone suddenly saw how a piece of the world worked.
+- **Fact:** Penzias and Wilson suspected nesting pigeons of causing their antenna's hiss, and cleaned out what Penzias called a white dielectric material. The hiss stayed.
+
+Sources: [NPR: Arno Penzias, co-discoverer of the Big Bang's afterglow, dies at age 90](https://www.vpm.org/npr-news/2024-01-24/arno-penzias-co-discoverer-of-the-big-bangs-afterglow-dies-at-age-90); [IOP Spark: White dielectric material from pigeons](https://spark.iop.org/white-dielectric-material-pigeons).

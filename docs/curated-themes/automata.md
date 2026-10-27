@@ -166,3 +166,12 @@ Real gaps, not filler, each left out for a stated reason:
   by neighbours already in the deck.
 - **Ingenuity's first Mars flight** (2021) — the first autonomous aircraft on another world,
   four years from AlphaGo and a year from Perseverance.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Machines built to move, steer, regulate or decide for themselves, with no hand at the controls.
+- **Fact:** The word robot comes from a Czech play, from robota, meaning forced labour. Its author, Karel Čapek, credited his brother Josef with the idea.
+
+Sources: [Wikipedia: R.U.R.](https://en.wikipedia.org/wiki/R.U.R.); [NPR transcript on the word robot](https://www.npr.org/transcripts/135634400); [Guinness World Records: First public reference to robots](https://www.guinnessworldrecords.com/world-records/first-public-reference-to-robots).
