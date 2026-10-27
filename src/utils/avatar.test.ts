@@ -1,17 +1,23 @@
 import { ANIMALS as BOT_ANIMALS } from '../../lib/leaderboard/botGeneration';
 import { MAX_DISPLAY_NAME_LENGTH } from '../../lib/leaderboard/nameFilter';
 import { sanitizeAvatar } from '../../lib/leaderboard/avatar';
+import { ACHIEVEMENTS } from '../data/achievements';
 import {
   AVATAR_ANIMALS,
+  EARNED_PORTRAITS,
   MAX_NAME_LENGTH,
   avatarForName,
+  earnedPortraitFor,
   generateRandomName,
+  newEarnedPortraits,
+  ownedEarnedPortraits,
   parseAvatar,
   portraitArtUrl,
   resolveAvatar,
 } from './avatar';
 
 const animalIds = AVATAR_ANIMALS.map((a) => a.id);
+const earnedIds = EARNED_PORTRAITS.map((p) => p.id);
 
 describe('the avatar list', () => {
   it('has 62 unique animals', () => {
@@ -60,7 +66,13 @@ describe('parseAvatar / resolveAvatar', () => {
     expect(parseAvatar('platypus')).toBe('platypus');
   });
 
-  it.each([undefined, null, 42, '', 'unicorn', 'Platypus', 'platypus.scholar'])(
+  // Earned portraits are pick-only, but others must see one on the board, so they parse.
+  it('accepts an earned portrait id', () => {
+    expect(parseAvatar('unicorn')).toBe('unicorn');
+    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'unicorn' })).toBe('unicorn');
+  });
+
+  it.each([undefined, null, 42, '', 'manticore', 'Platypus', 'platypus.scholar'])(
     'rejects %p',
     (value) => {
       expect(parseAvatar(value)).toBeNull();
@@ -69,7 +81,7 @@ describe('parseAvatar / resolveAvatar', () => {
 
   it('prefers a valid pick and falls back to the name otherwise', () => {
     expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'koala' })).toBe('koala');
-    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'unicorn' })).toBe('otter');
+    expect(resolveAvatar({ displayName: 'Brave Otter', avatar: 'manticore' })).toBe('otter');
     expect(resolveAvatar({ displayName: 'Brave Otter' })).toBe('otter');
   });
 });
@@ -109,6 +121,62 @@ describe('portraitArtUrl', () => {
   });
 
   it('returns null for an id that is not in the list', () => {
-    expect(portraitArtUrl('unicorn')).toBeNull();
+    expect(portraitArtUrl('manticore')).toBeNull();
+  });
+
+  // Until its art is uploaded, an earned portrait draws its emoji or initial instead.
+  // A preview is art under review, committed under public/ until it reaches Cloudinary.
+  it('returns null for a placeholder, the local file for a preview, else Cloudinary', () => {
+    for (const portrait of EARNED_PORTRAITS) {
+      expect(portraitArtUrl(portrait.id)).toBe(
+        portrait.placeholder
+          ? null
+          : portrait.preview
+            ? `/avatars/preview/${portrait.id}.jpg`
+            : `https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_400/avatars/${portrait.id}`
+      );
+    }
+  });
+});
+
+describe('earned portraits', () => {
+  it('gives every achievement exactly one portrait, in catalogue order', () => {
+    expect(EARNED_PORTRAITS.map((p) => p.achievementId)).toEqual(ACHIEVEMENTS.map((a) => a.id));
+  });
+
+  it('uses unique ids that never clash with the 62 and pass the server format check', () => {
+    expect(new Set(earnedIds).size).toBe(earnedIds.length);
+    for (const id of earnedIds) {
+      expect(animalIds).not.toContain(id);
+      expect(sanitizeAvatar(id)).toBe(id);
+    }
+  });
+
+  // A name never implies an earned portrait: the generator and the hash only reach the 62.
+  it('is never drawn by a name', () => {
+    for (const portrait of EARNED_PORTRAITS) {
+      expect(animalIds).toContain(avatarForName(`Brave ${portrait.label}`));
+    }
+    for (let i = 0; i < 2000; i++) {
+      expect(animalIds).toContain(avatarForName(`Player ${i}`));
+      expect(earnedIds).not.toContain(avatarForName(generateRandomName()));
+    }
+  });
+
+  it('is owned once its badge is unlocked', () => {
+    expect(earnedPortraitFor('cat-art')?.id).toBe('chameleon');
+    expect(earnedPortraitFor('nope')).toBeUndefined();
+    expect(ownedEarnedPortraits({})).toEqual(new Set());
+    expect(ownedEarnedPortraits({ 'cat-art': '2026-10-01', '27': '2026-10-02' })).toEqual(
+      new Set(['chameleon', 'unicorn'])
+    );
+  });
+
+  it('is new while owned but not yet shown', () => {
+    const unlocked = { 'cat-art': '2026-10-01', '27': '2026-10-02' };
+    expect(newEarnedPortraits(unlocked, new Set())).toEqual(new Set(['chameleon', 'unicorn']));
+    expect(newEarnedPortraits(unlocked, new Set(['unicorn', 'yeti']))).toEqual(
+      new Set(['chameleon'])
+    );
   });
 });
