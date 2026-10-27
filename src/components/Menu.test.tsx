@@ -88,6 +88,40 @@ describe('Menu', () => {
     expect(within(item).getByTestId('portrait').dataset.animal).toBe('koala');
   });
 
+  it('wears an earned portrait once its badge is unlocked', async () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    localStorage.setItem('when-achievements', JSON.stringify({ unlocked: { '27': '2026-10-01' } }));
+    renderMenu();
+    const item = screen.getByRole('button', { name: /profile/i });
+    await userEvent.click(item);
+
+    await userEvent.click(screen.getByRole('radio', { name: 'Unicorn, new' }));
+
+    expect(localStorage.getItem('when-avatar')).toBe('unicorn');
+    expect(within(item).getByTestId('portrait').dataset.animal).toBe('unicorn');
+  });
+
+  it('dots Profile while an achievement portrait is unseen, until the picker is opened', async () => {
+    localStorage.setItem('when-display-name', 'Linguistic Platypus');
+    localStorage.setItem('when-achievements', JSON.stringify({ unlocked: { '27': '2026-10-01' } }));
+    renderMenu();
+    const item = screen.getByRole('button', { name: /profile/i });
+    expect(within(item).getByRole('img', { name: 'New' })).toBeInTheDocument();
+
+    await userEvent.click(item);
+    await userEvent.click(screen.getByRole('button', { name: 'Done' }));
+
+    expect(within(item).queryByRole('img', { name: 'New' })).toBeNull();
+  });
+
+  it('shows no Profile dot when every owned portrait has been seen', () => {
+    localStorage.setItem('when-achievements', JSON.stringify({ unlocked: { '27': '2026-10-01' } }));
+    localStorage.setItem('when-portraits-seen', JSON.stringify(['unicorn']));
+    renderMenu();
+    const item = screen.getByRole('button', { name: /profile/i });
+    expect(within(item).queryByRole('img', { name: 'New' })).toBeNull();
+  });
+
   describe('renaming in Profile', () => {
     const openProfile = async () => {
       localStorage.setItem('when-display-name', 'Linguistic Platypus');
