@@ -12871,7 +12871,8 @@
     "difficulty": "easy",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "epicurus-founds-garden-school",
@@ -12882,7 +12883,8 @@
     "difficulty": "easy",
     "regions": [
       "Greece"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "laozi-tao-te-ching",
@@ -12893,7 +12895,8 @@
     "difficulty": "easy",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nagarjuna-middle-way-verses",
@@ -12904,7 +12907,8 @@
     "difficulty": "medium",
     "regions": [
       "India"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "augustine-confessions-written",
@@ -12915,7 +12919,8 @@
     "difficulty": "easy",
     "regions": [
       "Algeria"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "avicenna-book-of-healing",
@@ -12926,7 +12931,8 @@
     "difficulty": "easy",
     "regions": [
       "Iran"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "wang-yangming-great-awakening",
@@ -12937,7 +12943,8 @@
     "difficulty": "medium",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hume-treatise-human-nature",
@@ -12949,7 +12956,8 @@
     "regions": [
       "France",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "wollstonecraft-vindication-rights-woman",
@@ -12960,7 +12968,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hegel-phenomenology-of-spirit",
@@ -12971,7 +12980,8 @@
     "difficulty": "easy",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mill-on-liberty",
@@ -12982,7 +12992,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nietzsche-thus-spoke-zarathustra",
@@ -12994,7 +13005,8 @@
     "regions": [
       "Italy",
       "Switzerland"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "gandhi-hind-swaraj",
@@ -13006,7 +13018,8 @@
     "regions": [
       "South Africa",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "wittgenstein-tractatus",
@@ -13017,7 +13030,8 @@
     "difficulty": "medium",
     "regions": [
       "Austria"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "sartre-being-and-nothingness",
@@ -13028,7 +13042,8 @@
     "difficulty": "easy",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "beauvoir-second-sex",
@@ -13039,7 +13054,8 @@
     "difficulty": "easy",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rawls-theory-of-justice",
@@ -13050,6 +13066,7 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   }
 ]
