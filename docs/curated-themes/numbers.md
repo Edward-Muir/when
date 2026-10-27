@@ -187,3 +187,12 @@ authoring if this theme is ever widened or re-cut:
   the four colour theorem.
 - **Public-key cryptography / RSA** (1976-77) — same year as the four colour theorem, and
   arguably applied rather than an idea.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The moments new mathematical ideas, and the proofs behind them, entered human thought.
+- **Fact:** "Algebra" and "algorithm" both trace to one Baghdad scholar: the first to his book's title, the second to his name, al-Khwarizmi.
+
+Sources: [Britannica, al-Khwarizmi](https://www.britannica.com/biography/al-Khwarizmi).

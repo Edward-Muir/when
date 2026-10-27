@@ -182,3 +182,12 @@ hour, the Metonic cycle, the Julian and Gregorian and Hijri and Republican calen
 dating, Su Song's tower, the sandglass at sea, Salisbury, Prague, Henlein, Galileo's
 pendulum, Huygens' balance spring, the Longitude Act, railway time, Big Ben, daylight
 saving, the SI second, and both ends of the leap second's life.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The devices and conventions people have devised to measure time.
+- **Fact:** The Great Clock of Westminster is regulated with old pennies on its pendulum. Each one added or taken off changes its rate by 0.4 seconds a day.
+
+Sources: [UK Parliament: Great Clock adjustments](https://webtest.parliament.uk/business/news/news-by-year/2015/august/great-clock-adjustments); [Britannica: Big Ben](https://www.britannica.com/print/article/64921); [The Naked Scientists: Why put pennies on Big Ben's pendulum?](https://www.thenakedscientists.com/articles/questions/why-put-pennies-big-bens-pendulum).
