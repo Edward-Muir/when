@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T18:11:43.596Z",
+  "updated_at": "2026-10-27T18:14:30.097Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-27T18:11:43.596Z"
     },
     "wittgenstein-tractatus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d5f62fb20476ec7dd11b5df35453958253a504648d1aba91bb35dd6a6ffa72d8",
+      "updated_at": "2026-10-27T18:14:30.097Z"
     },
     "sartre-being-and-nothingness": {
       "state": "pending",
