@@ -182,3 +182,12 @@ the beat is already told by a card kept above:
   and likewise cut for thinness rather than collision.
 - **Necho II at Carchemish** — the more consequential of the two Necho II beats; cut for crowding
   against Josiah, see above. The best single card this theme does not have room for.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The rulers of Egypt on the Nile: their accessions, conquests, deaths and monuments.
+- **Fact:** The boy king Pepi II wrote begging an expedition leader to bring home a dancing dwarf unharmed. The official had the letter carved on his tomb.
+
+Sources: [Harkhuf (Wikipedia)](https://en.wikipedia.org/wiki/Harkhuf); [Dwarfism in Ancient Egypt (Egypt Museum)](https://egypt-museum.com/dwarfism/).

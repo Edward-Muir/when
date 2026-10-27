@@ -183,3 +183,12 @@ Venona (1943/1946), Room 40 and ADFGVX with Painvin's break (1918), the American
 founding (1952), Poe's _The Gold-Bug_ popularising cryptograms (1843), Bazeries finally reading
 the Great Cipher (1893), the Clipper chip and the crypto wars (1993), Shor's algorithm (1994),
 the Copiale cipher (2011) and the public exposure of Operation Rubicon (2020).
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Secret writing, and the people who made it and broke it.
+- **Fact:** The German military Enigma could never encipher a letter as itself, a flaw codebreakers used to test where a guessed phrase could sit in a message.
+
+Sources: [Wikipedia: Enigma machine](https://en.wikipedia.org/wiki/Enigma_machine); [PBS NOVA: Decoding Nazi Secrets](https://www.pbs.org/wgbh/nova/decoding/mind.html).

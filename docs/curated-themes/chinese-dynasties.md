@@ -151,3 +151,12 @@ Two pairs sit inside 8 years and both are kept:
   further apart would misrepresent how fast the Qing fell. This is the tighter of the two pairs,
   the theme's only sub-5-year gap, kept for the same reason `clockwork.md` keeps its
   1967/1972 pair: both ends of the same story are named beats, and one refers back to the other.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The dynasties that ruled China: how each one rose, what it achieved at its height, and how it fell.
+- **Fact:** Shang oracle bones were long sold as dragon bones and ground into medicine, before scholars noticed that the carvings on them were writing.
+
+Sources: [Oracle bone (Wikipedia)](https://en.wikipedia.org/wiki/Oracle_bone); [Oracle Bones (World History Encyclopedia)](https://www.worldhistory.org/Oracle_Bones/).

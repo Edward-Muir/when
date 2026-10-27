@@ -161,3 +161,12 @@ because they collide with a card already in the 36 or would push the deck past 3
 - **Second Siege of Acre** (1291, Mamluk conquest, ending the Crusader presence in the Holy
   Land) — arguably more famous than the 1189-1191 siege chosen here; kept in reserve as the
   swap-in if `third-crusade-siege-acre` is ever dropped from the deck.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Cities and fortresses surrounded, then starved or stormed into submission.
+- **Fact:** In besieged Leningrad, several scientists guarding a great seed bank starved to death among its rice, grain and potatoes rather than eat the collection.
+
+Sources: [The Tragedy of the World's First Seed Bank, Science History Institute Distillations](https://www.sciencehistory.org/distillations/the-tragedy-of-the-worlds-first-seed-bank); [The Scientists Who Starved to Death Surrounded By Food, Amusing Planet](https://www.amusingplanet.com/2018/08/the-scientists-who-starved-to-death.html).

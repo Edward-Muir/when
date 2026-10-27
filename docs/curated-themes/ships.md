@@ -146,3 +146,12 @@ the 35:
   `ns-lenin-enters-service` and making largely the same point (nuclear propulsion applied to a
   civilian hull) a second time in a five-year span that already holds `uss-nautilus-launched`,
   `hovercraft` and `ss-ideal-x-sails`.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** New kinds of hull, rig and engine, and the single vessels that changed seafaring.
+- **Fact:** Cutty Sark takes its name from the short nightdress worn by a witch in a Robert Burns poem. Her figurehead is that witch, clutching a horse's tail.
+
+Sources: [Cutty Sark's figurehead Nannie (Royal Museums Greenwich)](https://www.rmg.co.uk/cutty-sark/attractions/cutty-sarks-figurehead-nannie); [Cutty-sark (witch) (Wikipedia)](<https://en.wikipedia.org/wiki/Cutty-sark_(witch)>).

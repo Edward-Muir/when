@@ -188,3 +188,12 @@ Albania's declaration (1912), Estonia and Latvia (1918), Slovenia and the rest o
 cohort, Bosnia (1992), the Jelling stone (965), Æthelstan's kingdom of the English (927),
 Kenneth MacAlpin's Alba (843), Monaco (1297) and Vatican City (1929). Writing any of them is
 only worth doing alongside a decision about which existing card it displaces.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The moment each European country dates its own founding from.
+- **Fact:** Andorra has two heads of state, and neither lives there: the Bishop of Urgell and the President of France.
+
+Sources: [Co-princes of Andorra](https://en.wikipedia.org/wiki/Co-princes_of_Andorra).

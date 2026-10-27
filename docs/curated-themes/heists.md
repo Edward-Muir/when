@@ -174,3 +174,12 @@ Real gaps, not filler, left unwritten because they would only add to the existin
 pass "carried out for gain" without special pleading, and the cut also removes the deck's
 1994/1995 one-year pair with `theft-of-the-scream`. The deck is 33, not 34; the argument for it
 above is kept as the record of why it was considered.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Famous thefts, robberies, forgeries and swindles, all carried out for gain.
+- **Fact:** Thomas Blood was never punished for trying to steal the Crown Jewels. Charles II pardoned him and granted him Irish lands worth 500 pounds a year.
+
+Sources: [The Theft of the Crown Jewels (Historic UK)](https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Theft-of-the-Crown-Jewels/); [The Man Who Stole the Crown Jewels (History.com)](https://www.history.com/articles/the-man-who-stole-the-crown-jewels).

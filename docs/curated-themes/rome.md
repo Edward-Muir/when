@@ -161,3 +161,12 @@ Real gaps, not filler:
 - **`diocletian-tetrarchy`** is dated 286 in the catalogue against the spine's 284 (the
   historically usual date for Diocletian's accession/tetrarchy formation). Reused as-is per the
   brief's instruction to prefer an existing match over a duplicate.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The defining moments of the Roman state, in the west and in the east.
+- **Fact:** The people now called Byzantines thought of themselves simply as Romans. A German scholar is credited with first applying the label Byzantine to their empire, long after it was gone.
+
+Sources: [Hieronymus Wolf, Wikipedia](https://en.wikipedia.org/wiki/Hieronymus_Wolf); [Byzantine Empire, New World Encyclopedia](https://www.newworldencyclopedia.org/entry/Byzantine_empire); [Byzantine Empire, Wikipedia](https://en.wikipedia.org/wiki/Byzantine_Empire).

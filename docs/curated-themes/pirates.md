@@ -183,3 +183,12 @@ Real gaps that were not written because they would crowd a card already in the 3
 - **The end of the Barbary Wars proper** (1815, the Second Barbary War) — inside a year of
   `lafitte`'s cut date and four of `bombardment-algiers-slaves-freed`; the 1816 bombardment
   already carries the "Europe ends Barbary raiding" beat.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Pirates, corsairs and privateers, and the states and navies that hunted them down.
+- **Fact:** After his great raid, Henry Every became the target of what is often called the first worldwide manhunt. He was never caught, and his fate is unknown.
+
+Sources: [Henry Every (Wikipedia)](https://en.wikipedia.org/wiki/Henry_Every); [Enemy of All Mankind review (Publishers Weekly)](https://www.publishersweekly.com/9780735211605).
