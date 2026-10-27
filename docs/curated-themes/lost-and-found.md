@@ -174,3 +174,12 @@ already existed as **`terracotta-warriors-discovered`** (1974, illustrated) — 
 
 The deck points at the existing card. `sutton-hoo-excavated` was re-checked the same way
 and is genuinely new — the catalogue holds only `sutton-hoo-burial` (625).
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Things buried, sunk or forgotten and then found again, and dead scripts read once more.
+- **Fact:** Four of the Dead Sea Scrolls were offered for sale in a classified ad in the Wall Street Journal. Israel bought them through intermediaries for $250,000.
+
+Sources: [Jewish Virtual Library: The Dead Sea Scrolls, History and Overview](https://www.jewishvirtuallibrary.org/jsource/History/deadsea.html); [Biblical Archaeology Society: The Bible Scholar Who Became an Undercover Agent](https://library.biblicalarchaeology.org/article/the-bible-scholar-who-became-an-undercover-agent/).

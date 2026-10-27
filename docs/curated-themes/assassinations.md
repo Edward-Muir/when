@@ -164,3 +164,12 @@ Real gaps, not filler, all left unwritten because they collide with a card alrea
 
 If the deck is ever widened past 36 it cannot be — "Theme Cleared!" stops being reachable. The
 list above is therefore a swap menu, not a backlog.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Rulers, rebels and thinkers killed, or nearly killed, for political ends.
+- **Fact:** Edwin Booth, brother of Lincoln's assassin, once saved Lincoln's son Robert, pulling him by the collar from the gap beside a moving train.
+
+Sources: [HistoryNet: Edwin Booth](https://www.historynet.com/edwin-booth/); [Mental Floss: The Time John Wilkes Booth's Brother Saved Abe Lincoln's Son](https://www.mentalfloss.com/history/civil-war/time-john-wilkes-booths-brother-saved-abe-lincolns-son).

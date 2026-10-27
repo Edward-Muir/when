@@ -150,3 +150,12 @@ Real gaps, not filler:
 describes (the rope cut above a New York exhibition crowd) is usually dated 1853 or 1854. The
 beat is the same regardless of which year the demonstration is pinned to, so the existing card
 is reused rather than duplicated, per instructions not to edit existing events.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The race for the tallest structure on Earth, and the inventions that made building tall possible.
+- **Fact:** About a third of the way up, the Washington Monument changes colour. Work stalled for over two decades, and the rest was built of marble from another quarry.
+
+Sources: [Washington Monument FAQ (National Park Service)](https://home.nps.gov/wamo/faqs.htm); [Why is the Washington Monument two different colors? (Mall History)](https://mallhistory.org/explorations/show/washington-monument-colors).

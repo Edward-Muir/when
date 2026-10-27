@@ -207,3 +207,12 @@ worded to hedge accordingly ("reportedly").
 The new cards were written without a live search and checked afterwards. One date moved:
 `theatre-of-epidaurus-built` is 335 BCE, inside the 340-330 BCE construction window the sources
 give, not 350 BCE.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Live performance itself: the birth of acting, opera and ballet, and the premieres and playhouses that defined them.
+- **Fact:** The Globe burned down when a stage cannon set its thatched roof alight during a play. No one was hurt, though one man's breeches caught fire and were put out with ale.
+
+Sources: [Globe Theatre (Wikipedia)](https://en.wikipedia.org/wiki/Globe_Theatre); [Burning of the Globe Theatre (EBSCO Research Starters)](https://www.ebsco.com/research-starters/history/burning-globe-theatre/).
