@@ -1,0 +1,15 @@
+{
+  "slug": "pennsylvanian-epoch-begins",
+  "description": "A dim forest of tall scaly-barked tree trunks and ferns, with mist drifting through. A large dragonfly hovers near the top centre. A small lizard sits on a mossy fallen log in the lower middle, and a clutch of speckled eggs lies in moss at the lower left. The painting runs edge to edge with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

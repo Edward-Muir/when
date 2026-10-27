@@ -1,0 +1,15 @@
+{
+  "slug": "rhyacian-period-begins",
+  "description": "A painted landscape of a rocky coast. Snow and blue-white ice slopes down from the left toward the foreground. Tall cliffs of dark grey and rust-red horizontal bands rise in the centre and right under a dark stormy sky. Dark choppy sea with white foam fills the lower right. No people, animals, plants, buildings, or text are visible. The painting fills the whole square with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
