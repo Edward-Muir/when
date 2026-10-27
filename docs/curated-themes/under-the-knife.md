@@ -203,3 +203,12 @@ Code of Hammurabi's fee and penalty clauses for surgeons, a sibling of the exist
 (31,000 BCE) was tried first and is not a foothold: its `very-hard` label outweighs the sparse
 neighbourhood. Band 0 is back to exactly 5, the floor, so this is the first deck to recheck if
 the catalogue moves.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Surgery itself, and the discoveries that let patients survive the operating table.
+- **Fact:** Halsted first ordered rubber gloves for his scrub nurse, Caroline Hampton, whose hands were raw from antiseptics. The two later married.
+
+Sources: [We're Glovin' It: How Wearing Gloves Became Commonplace in Surgery, AORN](https://www.aorn.org/article/were-glovin-it--how-wearing-gloves-became-commonplace-in-surgery); [Caroline Hampton's Rubber Gloves, Amusing Planet](https://www.amusingplanet.com/2026/01/caroline-hamptons-rubber-gloves.html).

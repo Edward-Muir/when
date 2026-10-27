@@ -215,3 +215,12 @@ or "restoration" never reaches a slug named after the civil war, and the theme-g
 The deck now points at the existing card. Worth remembering when authoring: **a slug can be
 named after the cause while its title is named after the event**, so absence from a slug search
 is not evidence the card is missing. Check same-year titles before writing.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The kings and queens of England, later Britain, each at the moment that defined a reign.
+- **Fact:** The skeleton of Richard III was found under a car park in Leicester and confirmed by DNA from descendants of his sister.
+
+Sources: [Scientific American: Confirmed: Bones of King Richard III Found under Parking Lot](https://www.scientificamerican.com/article/confirmed-bones-of-king-richard/); [Live Science: It's Really Richard: DNA Confirms King's Remains](https://www.livescience.com/48963-king-richard-iii-dna-confirmed.html).
