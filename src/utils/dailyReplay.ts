@@ -156,3 +156,15 @@ export function asRecordedDaily(state: WhenGameState, playedDates: string[]): Wh
     lastConfig: { ...state.lastConfig, dailySeed: date },
   };
 }
+
+/**
+ * Whether a game may be restarted mid-run from the top bar: any practice game. Not today's
+ * daily, which is played once, and not a missed past day's first run, which `asRecordedDaily`
+ * records as that day's daily. Restarting either would reroll a scored result. Once a missed
+ * day has been finished it is in `playedDates`, and every later run of it is practice.
+ */
+export function canRestartMidGame(config: GameConfig | null, playedDates: string[]): boolean {
+  if (!config || config.mode === 'daily') return false;
+  const date = config.dailyReplayDate;
+  return !date || playedDates.includes(date);
+}
