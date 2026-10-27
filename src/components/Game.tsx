@@ -31,6 +31,8 @@ import TopBar from './TopBar';
 import HintStrip from './HintStrip';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
+import { useThemeIntro } from '../hooks/useThemeIntro';
+import ThemeIntroPopup from './ThemeIntroPopup';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 import AchievementUnlock from './AchievementUnlock';
@@ -259,6 +261,9 @@ const Game: React.FC<GameProps> = ({
     haptics,
   });
 
+  // The curated theme's intro, opened as play begins on the first game of a theme.
+  const themeIntro = useThemeIntro(state);
+
   // The one-shot hints: the idle drag nudge, then one strip per placement walking the ladder
   // wrong / correct -> tap a card -> the counter -> swap. All the conditions live in the
   // hook; this component only mounts the strip and passes the glow target its key.
@@ -274,6 +279,7 @@ const Game: React.FC<GameProps> = ({
     isMultiplayer: state.players.length > 1,
     statsOpen: showStatsPopup,
     cardOpen: isCardPopupOpen(pendingPopup),
+    introOpen: themeIntro.open,
   });
 
   useEffect(() => {
@@ -335,9 +341,7 @@ const Game: React.FC<GameProps> = ({
   }, [state.gameMode, state.isReview]);
 
   const handleActiveCardTap = () => {
-    if (activeCard) {
-      showDescriptionPopup(activeCard);
-    }
+    if (activeCard) showDescriptionPopup(activeCard);
   };
 
   const handleTimelineCardTap = (event: HistoricalEvent) => {
@@ -485,6 +489,8 @@ const Game: React.FC<GameProps> = ({
             dailyResult={dailyResult}
             leaderboard={leaderboard}
           />
+
+          <ThemeIntroPopup intro={themeIntro} />
 
           <StatsPopup
             isOpen={showStatsPopup}

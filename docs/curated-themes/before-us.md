@@ -176,3 +176,12 @@ Real gaps, not filler, that were not written because nothing in scope needed the
 ago. A 2025 amino-acid dating of the Schöningen deposit (Science Advances, May 2025) puts the
 spears at about 200,000 years, which is after _Homo sapiens_ appears and so outside the scope
 rule. The card stays in the catalogue at its corrected date; the deck is 32.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Earth's deep history of life, extinction and early human relatives, before Homo sapiens existed.
+- **Fact:** Lucy was named after the Beatles song playing in camp the night she was found. In Ethiopia she is called Dinkinesh, which means "you are marvellous".
+
+Sources: [Lucy (Australopithecus) - Wikipedia](<https://en.wikipedia.org/wiki/Lucy_(Australopithecus)>); [HISTORY: Lucy fossil discovered](https://www.history.com/this-day-in-history/november-24/lucy-fossil-discovered).
