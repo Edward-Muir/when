@@ -1,21 +1,26 @@
 {
   "deck": "big-thinkers",
   "name": "Big Thinkers",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T04:19:32.091Z",
+  "updated_at": "2026-10-27T05:08:54.249Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-27T04:19:32.091Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-27T05:08:54.249Z"
     }
   ],
   "slugs": {
     "confucius-analects-compiled": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d567efc948c90402f5ec3767e3a21bbd130b435086781de73fab88f5c7447130",
+      "updated_at": "2026-10-27T05:08:54.249Z"
     },
     "epicurus-founds-garden-school": {
       "state": "pending",
