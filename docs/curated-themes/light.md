@@ -169,3 +169,12 @@ Real gaps, not filler — each was left unwritten because it collides with a car
 - Older still: **Chinese wax and Roman beeswax candles**, the **Lanterna of Genoa** (1128), and
   **Diwali or Hanukkah lamps** — the last of which is the most promising future foothold,
   because it is globally recognised and lands in a sparse stretch.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Candles, lamps, lighthouses and bulbs: the ways people have made light where there was none.
+- **Fact:** A hand-blown carbon-filament bulb at a fire station in Livermore, California, has glowed almost without a break for more than 120 years.
+
+Sources: [Centennial Light - Wikipedia](https://en.wikipedia.org/wiki/Centennial_Light); [Anadolu Agency: Century-old California lightbulb continues to shine for 122 years](https://www.aa.com.tr/en/americas/century-old-california-lightbulb-continues-to-shine-for-122-years/2922465).

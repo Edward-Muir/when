@@ -224,7 +224,7 @@ export function markHintSeen(key: HintKey): void {
  */
 export function resetHintsSeen(): void {
   removeKeys(
-    [HINTS_SEEN_KEY, LEGACY_MODES_PLAYED_KEY, LEGACY_TIMELINE_INTRO_KEY],
+    [HINTS_SEEN_KEY, LEGACY_MODES_PLAYED_KEY, LEGACY_TIMELINE_INTRO_KEY, THEME_INTROS_SEEN_KEY],
     'hints seen state'
   );
   window.dispatchEvent(new Event(HINTS_RESET_EVENT));
@@ -335,6 +335,31 @@ export function markPortraitsSeen(ids: Iterable<string>): void {
   const before = seen.size;
   for (const id of ids) seen.add(id);
   if (seen.size !== before) writeJson(PORTRAITS_SEEN_KEY, [...seen], 'seen portraits');
+}
+
+// --- Curated theme intros already shown ---
+
+/**
+ * Curated theme ids whose intro popup this install has already seen. Once per theme rather
+ * than per game, so a Restart or an Archive replay of the same theme goes straight to play.
+ * Its own key, like `when-portraits-seen`, because it holds a growing set; `resetHintsSeen`
+ * clears it with the hints, so "Reset Hints" replays the intros too.
+ */
+const THEME_INTROS_SEEN_KEY = 'when-theme-intros-seen';
+
+export function getSeenThemeIntros(): Set<string> {
+  return readJson(
+    THEME_INTROS_SEEN_KEY,
+    new Set<string>(),
+    (raw) => new Set(Array.isArray(raw) ? raw.filter((id) => typeof id === 'string') : [])
+  );
+}
+
+export function markThemeIntroSeen(themeId: string): void {
+  const seen = getSeenThemeIntros();
+  if (seen.has(themeId)) return;
+  seen.add(themeId);
+  writeJson(THEME_INTROS_SEEN_KEY, [...seen], 'seen theme intros');
 }
 
 // --- Timeline High Score Storage ---

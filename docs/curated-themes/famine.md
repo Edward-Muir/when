@@ -202,3 +202,12 @@ Real gaps, not filler, left unwritten because they collide with a card already i
 - **The 2007-08 world food price crisis** is a real famine-adjacent shock but produced no single
   named famine or relief system distinct enough to write, and it would sit six years from
   `china-ends-collective-farming`'s neighbourhood and five from `horn-of-africa-famine`.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Named famines, and the crops, fertilizers and relief systems that pushed back against them.
+- **Fact:** During the Irish famine the Choctaw Nation, recently forced from its own lands, raised $170 for relief. A steel sculpture of eagle feathers in County Cork honours the gift.
+
+Sources: [Feather Sculpture Pays Tribute to Native American Generosity to Irish During the Great Famine (My Modern Met)](https://mymodernmet.com/kindred-spirits-sculpture); ['Kindred Spirits' Sculpture (Atlas Obscura)](https://www.atlasobscura.com/places/kindred-spirits-sculpture).

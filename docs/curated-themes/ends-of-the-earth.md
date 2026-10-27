@@ -131,3 +131,12 @@ Real gaps, not written because they would collide with a card already in the 36:
 - **The Kangchenjunga, Manaslu, Shishapangma and Puncak Jaya first ascents** — real, in-scope
   gaps, cut above for crowding rather than merit. Any future edit that opens room in the
   1950-1966 stretch should reach for these first.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The first people to reach the poles, the great summits, the deepest sea and the most remote shores.
+- **Fact:** Amundsen left a tent at the South Pole holding a letter for the King of Norway, asking Scott to deliver it if the Norwegians died. It was found with Scott's party.
+
+Sources: [Polheim (Wikipedia)](https://en.wikipedia.org/wiki/Polheim); [To the Pole: Who Won? (American Museum of Natural History)](https://www.amnh.org/explore/ology/earth/race-to-the-south-pole/to-the-pole-who-won).

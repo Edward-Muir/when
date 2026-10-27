@@ -100,3 +100,14 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
 
 - **Cryolophosaurus** is tagged Antarctica and United States. The validator needs an actor
   country beside Antarctica, so the tag names the country of the expedition that found it.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty dinosaurs, each dated to the start of its known fossil record.
+- **Fact:** Stegosaurus weighed over three tonnes, but its brain weighed only about 70 grams.
+
+Sources: [Guinness World Records, smallest-brained dinosaurs](https://www.guinnessworldrecords.com/world-records/70337-smallest-brained-dinosaurs) (about 70 g, 3.3 tonnes); [AMNH, Stegosaurus](https://www.amnh.org/explore/ology/ology-cards/017-stegosaurus-stenops).
+
+A Brontosaurus fact (sunk into Apatosaurus, restored in 2015) was dropped: its card already says "once thought a mistaken name".
