@@ -159,6 +159,9 @@ and the snapshot→record→detect flow.
 - **Art is real event art, not generated medals.** An `AchievementDef` carries an `eventName`,
   resolved to that event's `image_url` at runtime — `AchievementDef` deliberately has **no
   `imageUrl` field**, so there is one source of truth for every image.
+- **Every badge earns a portrait.** One pick-only creature per badge, derived from
+  `when-achievements` with nothing new stored; the large card names it. See
+  [avatars/](../avatars/index.md#earned-portraits).
 - Tiers are conveyed by a pure-CSS metallic `conic-gradient` ring (bronze → silver → gold →
   platinum → shimmering diamond, plus steel/copper/obsidian/verdigris), not by new art.
 - **Locked badges still show their criterion** and a greyscale, veiled glimpse of the art behind
