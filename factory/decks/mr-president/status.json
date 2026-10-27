@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-27T00:07:29.807Z",
+  "updated_at": "2026-10-27T01:14:42.864Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -198,11 +198,11 @@
       "updated_at": "2026-10-27T00:07:29.671Z"
     },
     "george-hw-bush-inauguration": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The lectern seal has legible lettering around its rim (SEAL OF THE PRESIDENT OF THE UNITED STATES). Repaint the seal without readable words, or turn the lectern so the seal is not visible.",
-      "sha256": "109aae09dff5fc0df153c21b9ab25b192907dfd4648f2f8f4ca6e21e1dc202b7",
-      "updated_at": "2026-10-27T00:07:29.701Z"
+      "sha256": "7bad19cf7428a5722571b2af9193c265b335ea18b662d8f0ff417b75f7ff4210",
+      "updated_at": "2026-10-27T01:14:42.864Z"
     },
     "clinton-first-inauguration": {
       "state": "qc-pass",
