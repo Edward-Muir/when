@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       theme:
-        description: 'Theme JSON: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"]}'
+        description: 'Theme JSON: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"],"intro":{"blurb","fact"}}'
         required: true
         type: string
       mode:

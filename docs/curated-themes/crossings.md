@@ -196,3 +196,12 @@ Real gaps, not filler. Most were not written because they collide with a card al
 - **700-1050 CE generally.** After `anji-bridge-china` the deck jumps 454 years. There is a
   real story there — Islamic and Song-era bridge and canal work — and no catalogue card for
   any of it.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Bridges, tunnels, aqueducts and canals: crossings built over water, through rock and across valleys.
+- **Fact:** P. T. Barnum marched 21 elephants across the Brooklyn Bridge, with Jumbo at the rear, a show that helped ease public doubts about whether it was sound.
+
+Sources: [Brooklyn Bridge - Wikipedia](https://en.wikipedia.org/wiki/Brooklyn_Bridge); [6sqft: 21 elephants walked across the newly opened Brooklyn Bridge](https://www.6sqft.com/in-1883-21-elephants-walked-across-the-newly-opened-brooklyn-bridge-to-prove-its-safety/).

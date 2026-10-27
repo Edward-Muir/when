@@ -199,6 +199,42 @@ the pattern `submit.ts` forbids — that is the API keeping its own copy of `ALL
 re-derive the theme, which drifts. Reading a count from the
 one authoritative record has nothing to drift against, and it fails open.
 
+## Theme intros
+
+A curated theme may carry an `intro: { blurb, fact }`. When the Daily, an Archive past day or a
+theme replay starts, and "Loading events from across time" has scrolled past, `useThemeIntro`
+opens `ThemeIntroPopup`: the theme's name, the blurb, then "Did you know?" and the fact. It
+shows once per theme per install, marked on dismissal; Reset Hints brings the intros back too.
+A resumed daily skips it, as it skips the loading scroll. The idle drag nudge waits until the
+popup is dismissed.
+
+**The copy lives on the published theme, in Redis**, set through the same workflow dispatch
+as the deck. It is display-only: nothing that deals or judges a deck reads it, so editing it
+on a theme that has already been played is safe. That is why publishing allows exactly that
+and nothing more: once any of a stored theme's dates has opened, a write may change its intro
+and add or drop unopened dates, but not its name, its events or an opened date
+(`validateOpenedThemeLock` in `lib/themes/schema.ts`; `force` overrides it). A factory deck
+carries its intro in `deck.json`, and `next-slot.js` copies it into the dispatch.
+
+**The copy rules.** The structure is checked by the API (both strings non-empty, blurb at most
+120 characters, fact at most 200), and dates by the publish script, which runs
+`scripts/events/date-clues.js` over both (`scripts/themes/intro.js`). The rest is the
+writer's:
+
+- **A museum plaque.** Match the card `description` voice: third person, declarative,
+  concrete. No "you", no exclamation marks, no jokes, no em dashes.
+- **The blurb is one sentence on the theme's scope.** The fact is one or two sentences with
+  one surprising, specific detail.
+- **No bookends.** No "from X to Y": the blurb names neither the deck's first card nor its
+  last, since the popup shows before anything is placed.
+- **No dates or centuries, and no ordering of two cards in the deck.** "T. rex lived closer
+  to us than to Stegosaurus" gives away a placement.
+- **Add what no card says.** A fact that restates a card's description is wasted, and worse
+  if it contradicts one. Dinosaurs dropped a Brontosaurus fact because its card already says
+  "once thought a mistaken name"; What We Drink dropped the purity law's ingredient list, and
+  Dom Pérignon fighting the bubbles, which contradicts `champagne-region-bubbly`.
+- **Research every fact, never recall it**, and record its sources in the theme's note.
+
 ## The cleared end state
 
 A daily (and an Archive replay, below) deals five cards and ends when the hand empties. The hand shrinks on a wrong placement,

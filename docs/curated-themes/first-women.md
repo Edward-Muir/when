@@ -138,3 +138,12 @@ Real gaps, not filler, that were not written because they collide with a card al
 - **Svetlana Savitskaya** (1984, first woman to spacewalk) and **Vigdis Finnbogadottir** (1980,
   first woman democratically elected head of state) are kept in reserve for a future edit if the
   deck is ever loosened past 36 or another theme wants a space/heads-of-state beat.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Women who were first: in office, in science, in the arts, in sport and in space.
+- **Fact:** Valentina Tereshkova is still the only woman to have flown in space alone. A textile mill worker, she was chosen partly for her experience as an amateur parachutist.
+
+Sources: [Valentina Tereshkova, Wikipedia](https://en.wikipedia.org/wiki/Valentina_Tereshkova); [Valentina Tereshkova, NASA StarChild](https://starchild.gsfc.nasa.gov/docs/StarChild/whos_who_level2/tereshkova.html).

@@ -178,3 +178,12 @@ Under Siege cards. In their place: `alexandria-library-caesar-fire` (shared with
 Learning), `great-boston-fire-1760`, and three new cards, `great-fire-of-copenhagen` (1728),
 `edinburgh-municipal-fire-brigade` (1824) and `great-fire-of-hamburg` (1842). Anything above
 that still discusses the five removed cards describes the pre-review deck; the table is current.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Cities consumed by fire, and the brigades, hydrants and codes built to stop the next one.
+- **Fact:** On the same day as the Great Chicago Fire, a forest fire around Peshtigo, Wisconsin killed at least 1,200 people, still the deadliest wildfire in US history.
+
+Sources: [Peshtigo fire (Wikipedia)](https://en.wikipedia.org/wiki/Peshtigo_fire); [Benchmarks: the deadliest wildfire in American history incinerates Peshtigo (EARTH Magazine)](https://www.earthmagazine.org/article/benchmarks-october-8-1871-deadliest-wildfire-american-history-incinerates-peshtigo-wisconsin/).
