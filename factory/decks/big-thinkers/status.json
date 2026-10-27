@@ -1,9 +1,9 @@
 {
   "deck": "big-thinkers",
   "name": "Big Thinkers",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T18:25:36.695Z",
+  "updated_at": "2026-10-27T19:08:13.197Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-27T05:08:54.249Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-27T19:08:13.197Z"
     }
   ],
   "slugs": {
@@ -93,46 +97,46 @@
       "updated_at": "2026-10-27T12:06:57.347Z"
     },
     "nietzsche-thus-spoke-zarathustra": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6c2fe1ff3ec891641408fcdfc122a478047094297f7a534d71558dc277a7b7d0",
-      "updated_at": "2026-10-27T18:08:55.475Z"
+      "updated_at": "2026-10-27T19:08:13.020Z"
     },
     "gandhi-hind-swaraj": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "34098814a70dea640fba67e26cc88dc0778fcb8f1d433dab7453379fcc97644e",
-      "updated_at": "2026-10-27T18:11:43.596Z"
+      "updated_at": "2026-10-27T19:08:13.058Z"
     },
     "wittgenstein-tractatus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d5f62fb20476ec7dd11b5df35453958253a504648d1aba91bb35dd6a6ffa72d8",
-      "updated_at": "2026-10-27T18:14:30.097Z"
+      "updated_at": "2026-10-27T19:08:13.093Z"
     },
     "sartre-being-and-nothingness": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "66300532773a40949b138e9ddaf8046c044153e089f6d2c56e78c877f5666bea",
-      "updated_at": "2026-10-27T18:17:21.398Z"
+      "updated_at": "2026-10-27T19:08:13.127Z"
     },
     "beauvoir-second-sex": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6813c0bad6af6c376030e2a64b2c11a590f7fd7b1d3ed24bdf40ce270185cc4b",
-      "updated_at": "2026-10-27T18:22:52.252Z"
+      "updated_at": "2026-10-27T19:08:13.161Z"
     },
     "rawls-theory-of-justice": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "21245cd97a3bb3b111c5f4a792c8201440110c2da24dd75ab954ec028254e314",
-      "updated_at": "2026-10-27T18:25:36.695Z"
+      "updated_at": "2026-10-27T19:08:13.197Z"
     }
   }
 }
