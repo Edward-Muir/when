@@ -143,3 +143,31 @@ describe('tab paths', () => {
     expect(navForPath('/nonsense')).toBeNull();
   });
 });
+
+describe('TopBar restart', () => {
+  it('shows Restart only when the game offers one', () => {
+    renderBar();
+    expect(screen.queryByLabelText('Restart game')).not.toBeInTheDocument();
+  });
+
+  it('asks first, and restarts only once confirmed', async () => {
+    const onRestart = jest.fn();
+    renderBar({ onRestart });
+    await userEvent.click(screen.getByLabelText('Restart game'));
+    expect(screen.getByRole('heading', { name: 'Restart game?' })).toBeInTheDocument();
+
+    await userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
+    expect(onRestart).not.toHaveBeenCalled();
+
+    await userEvent.click(screen.getByLabelText('Restart game'));
+    await userEvent.click(screen.getByRole('button', { name: 'Restart' }));
+    expect(onRestart).toHaveBeenCalledTimes(1);
+  });
+
+  it('ignores taps while a placement animates', async () => {
+    const onRestart = jest.fn();
+    renderBar({ onRestart, restartDisabled: true });
+    await userEvent.click(screen.getByLabelText('Restart game'));
+    expect(screen.queryByRole('heading', { name: 'Restart game?' })).not.toBeInTheDocument();
+  });
+});
