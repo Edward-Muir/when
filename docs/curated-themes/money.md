@@ -195,3 +195,12 @@ would push it past the clearable ceiling:
   stretch of catalogue.
 - **India's silver rupee closing to free coinage** (1893) and the **Bank of Japan** (1882), the
   non-Western half of the gold-standard story the German gold mark card only gestures at.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Money itself, and the institutions that issue and govern it.
+- **Fact:** On Yap, a giant stone coin sank on its way to the island. It was agreed the stone still counted, and it kept changing hands from the seabed.
+
+Sources: [Rai stones](https://en.wikipedia.org/wiki/Rai_stones); [NPR Planet Money](https://www.npr.org/sections/money/2011/02/15/131934618/).

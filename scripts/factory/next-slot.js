@@ -136,6 +136,8 @@ async function main() {
     const slot = slots([...themes, ...given]).find((s) => !s.holder);
     if (!slot) throw new Error(`no open Monday or Friday in the next ${LOOKAHEAD_DAYS} days`);
     const theme = { id: deck.id, name: deck.name, eventNames: deck.eventNames, dates: [slot.date] };
+    // The intro popup's copy rides along when the deck has one (docs/curated-themes/index.md).
+    if (deck.intro) theme.intro = deck.intro;
     const out = path.join(REPO_ROOT, 'factory', 'dispatch', `${deck.id}.json`);
     writeJson(out, theme);
     // The clone is cleaned at the start of every stage, so Edward's publish command points here.

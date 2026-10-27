@@ -172,3 +172,12 @@ the 36:
   rather than a waterworks beat.
 - **Gudea's canal restoration and the Zhengguo Canal** — see Deliberate omissions above;
   both are real, sourced beats with no room left once their redundant twin was kept.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Canals, dams, aqueducts, sewers and dykes built to move water or hold it back.
+- **Fact:** Joseph Bazalgette doubled the pipe sizes his London sewer calculations called for, reasoning that the job would only be done once. Much of his network is still in use.
+
+Sources: [London sewer system, Institution of Civil Engineers](https://www.ice.org.uk/what-is-civil-engineering/infrastructure-projects/london-sewer-system); [Joseph Bazalgette, Grace's Guide](https://www.gracesguide.co.uk/Joseph_Bazalgette).
