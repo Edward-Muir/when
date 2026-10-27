@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T12:06:57.347Z",
+  "updated_at": "2026-10-27T18:08:55.475Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-10-27T12:06:57.347Z"
     },
     "nietzsche-thus-spoke-zarathustra": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6c2fe1ff3ec891641408fcdfc122a478047094297f7a534d71558dc277a7b7d0",
+      "updated_at": "2026-10-27T18:08:55.475Z"
     },
     "gandhi-hind-swaraj": {
       "state": "pending",
