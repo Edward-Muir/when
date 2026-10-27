@@ -165,3 +165,12 @@ of Karlowitz, the Treaty of San Stefano, the Peace of Vereeniging, the Treaty of
 the Treaty of Lausanne, the Treaty of San Francisco, the 1988 Geneva Accords on Afghanistan,
 and the Sudan Comprehensive Peace Agreement — nine genuinely in-scope treaties that a future
 edit could add if this theme is ever widened past 35.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Treaties, armistices and peace settlements that brought named wars to an end.
+- **Fact:** The Egyptian-Hittite treaty survives in both sides' versions, carved on temple walls at Karnak and on clay tablets from Hattusa. A copy hangs at United Nations headquarters.
+
+Sources: [Egyptian-Hittite peace treaty (Wikipedia)](https://en.wikipedia.org/wiki/Egyptian%E2%80%93Hittite_peace_treaty); [This Is the Oldest Peace Treaty Ever Discovered (Nautilus)](https://nautil.us/this-is-the-oldest-peace-treaty-ever-discovered-1285725/).

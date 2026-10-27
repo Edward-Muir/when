@@ -164,3 +164,12 @@ Two pairs remain inside 8 years and both are kept:
 - **University of Naples** (1224) and **Jagiellonian University** (1364) — genuine founding
   beats, not written because the deck's medieval European run is already the theme's densest
   stretch and neither would have survived crowding once written.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The founding of schools, universities and great libraries, and the times one was destroyed.
+- **Fact:** Harvard is named for a minister who left it his library of about 400 books. By tradition, only one survived a later fire, because it was out on loan.
+
+Sources: [Tale of John Harvard's surviving book (Harvard Gazette)](https://news.harvard.edu/gazette/story/2007/11/tale-of-john-harvards-surviving-book/); [Saved from the Flames (Harvard Magazine)](https://harvardmagazine.com/2001/05/saved-from-the-flames.html).

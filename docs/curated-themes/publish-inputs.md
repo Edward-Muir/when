@@ -20,8 +20,8 @@ catalogue-aware checks think. A theme carrying un-illustrated or retired events 
 unresolved slugs, because `loadAllEvents` hides any event without Cloudinary art and
 `deprecated.json` is not in the manifest.
 
-**Each upcoming theme carries an `intro`**, the popup it opens with. Bank 2's are still to
-be written, to the rules in [index.md](index.md#theme-intros). A theme already published
+**Every theme carries an `intro`**, the popup it opens with, written to the rules in
+[index.md](index.md#theme-intros). A theme already published
 without one gains it by re-dispatching the same block with the intro added: once a date has
 opened, only the intro (and unopened dates) may change.
 
@@ -126,7 +126,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "bhutto-assassinated",
     "khashoggi-murder"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Rulers, rebels and thinkers killed, or nearly killed, for political ends.",
+    "fact": "Edwin Booth, brother of Lincoln's assassin, once saved Lincoln's son Robert, pulling him by the collar from the gap beside a moving train."
+  }
 }
 ```
 
@@ -173,7 +177,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "alphago-beats-lee-sedol",
     "chatgpt-released"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Machines built to move, steer, regulate or decide for themselves, with no hand at the controls.",
+    "fact": "The word robot comes from a Czech play, from robota, meaning forced labour. Its author, Karel Čapek, credited his brother Josef with the idea."
+  }
 }
 ```
 
@@ -221,7 +229,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "snowden-revelations",
     "zodiac-cipher-solved"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Secret writing, and the people who made it and broke it.",
+    "fact": "The German military Enigma could never encipher a letter as itself, a flaw codebreakers used to test where a guessed phrase could sit in a message."
+  }
 }
 ```
 
@@ -269,7 +281,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "y2k",
     "leap-second-retired"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The devices and conventions people have devised to measure time.",
+    "fact": "The Great Clock of Westminster is regulated with old pennies on its pendulum. Each one added or taken off changes its rate by 0.4 seconds a day."
+  }
 }
 ```
 
@@ -317,7 +333,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "dark-energy-discovered",
     "gravitational-waves"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Ideas about what the universe is, how big and old it is, and where Earth sits within it.",
+    "fact": "Edgar Allan Poe suggested the night sky is dark because light from the farthest stars has not yet had time to reach us, an idea close to the modern answer."
+  }
 }
 ```
 
@@ -365,7 +385,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "millau-viaduct",
     "gotthard-base-tunnel"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Bridges, tunnels, aqueducts and canals: crossings built over water, through rock and across valleys.",
+    "fact": "P. T. Barnum marched 21 elephants across the Brooklyn Bridge, with Jumbo at the rear, a show that helped ease public doubts about whether it was sound."
+  }
 }
 ```
 
@@ -413,7 +437,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "graphene-isolated",
     "gravitational-waves"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The moments discoveries landed, when someone suddenly saw how a piece of the world worked.",
+    "fact": "Penzias and Wilson suspected nesting pigeons of causing their antenna's hiss, and cleaned out what Penzias called a white dielectric material. The hiss stayed."
+  }
 }
 ```
 
@@ -461,7 +489,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "chinook-solves-checkers",
     "alphago-beats-lee-sedol"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Games played on boards, at tables and with cards, and the machines built to beat people at them.",
+    "fact": "Monopoly grew out of The Landlord's Game, which Lizzie Magie designed to show how landlords grow rich as tenants lose out. She sold her patent for $500."
+  }
 }
 ```
 
@@ -509,7 +541,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "elizabeth-ii-becomes-queen",
     "queen-elizabeth-ii-dies"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The kings and queens of England, later Britain, each at the moment that defined a reign.",
+    "fact": "The skeleton of Richard III was found under a car park in Leicester and confirmed by DNA from descendants of his sister."
+  }
 }
 ```
 
@@ -556,7 +592,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "blue-led",
     "incandescent-bulb-phase-out"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Candles, lamps, lighthouses and bulbs: the ways people have made light where there was none.",
+    "fact": "A hand-blown carbon-filament bulb at a fire station in Livermore, California, has glowed almost without a break for more than 120 years."
+  }
 }
 ```
 
@@ -603,7 +643,11 @@ table is the plan it is published from. Themes not in it (`assassinations`, `aut
     "thonis-heracleion-found",
     "richard-iii-grave-found"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Things buried, sunk or forgotten and then found again, and dead scripts read once more.",
+    "fact": "Four of the Dead Sea Scrolls were offered for sale in a classified ad in the Wall Street Journal. Israel bought them through intermediaries for $250,000."
+  }
 }
 ```
 
@@ -1064,7 +1108,11 @@ Their dates are in the schedule at the top of this file.
     "homo-heidelbergensis-emerges",
     "neanderthals-appear"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Earth's deep history of life, extinction and early human relatives, before Homo sapiens existed.",
+    "fact": "Lucy was named after the Beatles song playing in camp the night she was found. In Ethiopia she is called Dinkinesh, which means \"you are marvellous\"."
+  }
 }
 ```
 
@@ -1111,7 +1159,11 @@ Their dates are in the schedule at the top of this file.
     "brasilia-built",
     "abuja-becomes-nigeria-capital"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The founding of cities that are national capitals today, by legend, conquest or deliberate design.",
+    "fact": "Australia's constitution required the capital to be in New South Wales but at least 100 miles from Sydney, a compromise between Sydney and Melbourne."
+  }
 }
 ```
 
@@ -1158,7 +1210,11 @@ Their dates are in the schedule at the top of this file.
     "nazis-raze-warsaw",
     "tokyo-firebombing"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Cities consumed by fire, and the brigades, hydrants and codes built to stop the next one.",
+    "fact": "On the same day as the Great Chicago Fire, a forest fire around Peshtigo, Wisconsin killed at least 1,200 people, still the deadliest wildfire in US history."
+  }
 }
 ```
 
@@ -1206,7 +1262,11 @@ Their dates are in the schedule at the top of this file.
     "ousland-solo-crossing-antarctica",
     "cameron-challenger-deep"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The first people to reach the poles, the great summits, the deepest sea and the most remote shores.",
+    "fact": "Amundsen left a tent at the South Pole holding a letter for the King of Norway, asking Scott to deliver it if the Norwegians died. It was found with Scott's party."
+  }
 }
 ```
 
@@ -1254,7 +1314,11 @@ Their dates are in the schedule at the top of this file.
     "south-sudan-famine-declared",
     "yemen-famine-crisis"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Named famines, and the crops, fertilizers and relief systems that pushed back against them.",
+    "fact": "During the Irish famine the Choctaw Nation, recently forced from its own lands, raised $170 for relief. A steel sculpture of eagle feathers in County Cork honours the gift."
+  }
 }
 ```
 
@@ -1302,7 +1366,11 @@ Their dates are in the schedule at the top of this file.
     "chinese-revolution",
     "last-emperor-china-abdicates"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The dynasties that ruled China: how each one rose, what it achieved at its height, and how it fell.",
+    "fact": "Shang oracle bones were long sold as dragon bones and ground into medicine, before scholars noticed that the carvings on them were writing."
+  }
 }
 ```
 
@@ -1350,7 +1418,11 @@ Their dates are in the schedule at the top of this file.
     "wicked-premieres-broadway",
     "hamilton-opens-broadway"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Live performance itself: the birth of acting, opera and ballet, and the premieres and playhouses that defined them.",
+    "fact": "The Globe burned down when a stage cannon set its thatched roof alight during a play. No one was hurt, though one man's breeches caught fire and were put out with ale."
+  }
 }
 ```
 
@@ -1397,7 +1469,11 @@ Their dates are in the schedule at the top of this file.
     "egypt-israel-peace",
     "dayton-accords"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Treaties, armistices and peace settlements that brought named wars to an end.",
+    "fact": "The Egyptian-Hittite treaty survives in both sides' versions, carved on temple walls at Karnak and on clay tablets from Hattusa. A copy hangs at United Nations headquarters."
+  }
 }
 ```
 
@@ -1443,7 +1519,11 @@ Their dates are in the schedule at the top of this file.
     "battle-actium",
     "death-cleopatra"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The rulers of Egypt on the Nile: their accessions, conquests, deaths and monuments.",
+    "fact": "The boy king Pepi II wrote begging an expedition leader to bring home a dancing dwarf unharmed. The official had the letter carved on his tomb."
+  }
 }
 ```
 
@@ -1489,7 +1569,11 @@ Their dates are in the schedule at the top of this file.
     "maersk-alabama-hijacked",
     "somali-hijackings-fall-to-zero"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Pirates, corsairs and privateers, and the states and navies that hunted them down.",
+    "fact": "After his great raid, Henry Every became the target of what is often called the first worldwide manhunt. He was never caught, and his fate is unknown."
+  }
 }
 ```
 
@@ -1536,7 +1620,11 @@ Their dates are in the schedule at the top of this file.
     "sarajevo-library-destroyed",
     "mosul-libraries-destroyed"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The founding of schools, universities and great libraries, and the times one was destroyed.",
+    "fact": "Harvard is named for a minister who left it his library of about 400 books. By tradition, only one survived a later fire, because it was out on loan."
+  }
 }
 ```
 
@@ -1583,7 +1671,11 @@ Their dates are in the schedule at the top of this file.
     "caspian-sea-monster-flies",
     "yara-birkeland-launches"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "New kinds of hull, rig and engine, and the single vessels that changed seafaring.",
+    "fact": "Cutty Sark takes its name from the short nightdress worn by a witch in a Robert Burns poem. Her figurehead is that witch, clutching a horse's tail."
+  }
 }
 ```
 
@@ -1628,7 +1720,11 @@ Their dates are in the schedule at the top of this file.
     "dresden-green-vault-heist",
     "ftx-crypto-collapse"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Famous thefts, robberies, forgeries and swindles, all carried out for gain.",
+    "fact": "Thomas Blood was never punished for trying to steal the Crown Jewels. Charles II pardoned him and granted him Irish lands worth 500 pounds a year."
+  }
 }
 ```
 
@@ -1676,7 +1772,11 @@ Their dates are in the schedule at the top of this file.
     "piccard-balloon-circumnavigation",
     "solar-impulse-2-circles-globe"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "People leaving the ground in balloons, gliders, airships and aircraft, and the ideas that lifted them.",
+    "fact": "Sinking toward the Channel, Blanchard and Jeffries threw out their food, their oars for rowing the air, and finally almost all their clothes."
+  }
 }
 ```
 
@@ -1719,7 +1819,11 @@ Their dates are in the schedule at the top of this file.
     "taipei-101",
     "burj-khalifa"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The race for the tallest structure on Earth, and the inventions that made building tall possible.",
+    "fact": "About a third of the way up, the Washington Monument changes colour. Work stalled for over two decades, and the rest was built of marble from another quarry."
+  }
 }
 ```
 
@@ -1765,7 +1869,11 @@ Their dates are in the schedule at the top of this file.
     "przewalski-horses-rewilded",
     "dolly-sheep-cloned"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Animals brought into human service, as livestock, workers, companions and new breeds.",
+    "fact": "Dolly was the only one of 277 attempts to survive to adulthood. She was cloned from a mammary gland cell, so the team named her after the singer Dolly Parton."
+  }
 }
 ```
 
@@ -1813,7 +1921,11 @@ Their dates are in the schedule at the top of this file.
     "lagarde-leads-the-imf",
     "harris-becomes-vice-president"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Women who were first: in office, in science, in the arts, in sport and in space.",
+    "fact": "Valentina Tereshkova is still the only woman to have flown in space alone. A textile mill worker, she was chosen partly for her experience as an amateur parachutist."
+  }
 }
 ```
 
@@ -1861,7 +1973,11 @@ Their dates are in the schedule at the top of this file.
     "fourth-crusade-byzantine",
     "constantinople-fall"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "The defining moments of the Roman state, in the west and in the east.",
+    "fact": "The people now called Byzantines thought of themselves simply as Romans. A German scholar is credited with first applying the label Byzantine to their empire, long after it was gone."
+  }
 }
 ```
 
@@ -1909,7 +2025,11 @@ Their dates are in the schedule at the top of this file.
     "siege-of-sarajevo-begins",
     "battle-to-retake-mosul"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Cities and fortresses surrounded, then starved or stormed into submission.",
+    "fact": "In besieged Leningrad, several scientists guarding a great seed bank starved to death among its rice, grain and potatoes rather than eat the collection."
+  }
 }
 ```
 
@@ -1957,7 +2077,11 @@ Their dates are in the schedule at the top of this file.
     "first-face-transplant",
     "first-pig-heart-transplant"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Surgery itself, and the discoveries that let patients survive the operating table.",
+    "fact": "Halsted first ordered rubber gloves for his scrub nurse, Caroline Hampton, whose hands were raw from antiseptics. The two later married."
+  }
 }
 ```
 
@@ -2002,7 +2126,11 @@ Their dates are in the schedule at the top of this file.
     "israel-builds-west-bank-barrier",
     "us-secure-fence-act-signed"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Walls, castles, forts and defensive lines built to keep people out, and some that fell.",
+    "fact": "The Berlin Wall opened partly by mistake. A poorly briefed spokesman told reporters that new travel rules took effect immediately, and crowds went straight to the crossings."
+  }
 }
 ```
 
@@ -2050,6 +2178,18 @@ Their dates are in the schedule at the top of this file.
     "aswan-high-dam",
     "thames-barrier-completed"
   ],
-  "dates": ["2099-01-01"]
+  "dates": ["2099-01-01"],
+  "intro": {
+    "blurb": "Canals, dams, aqueducts, sewers and dykes built to move water or hold it back.",
+    "fact": "Joseph Bazalgette doubled the pipe sizes his London sewer calculations called for, reasoning that the job would only be done once. Much of his network is still in use."
+  }
 }
 ```
+
+## Live-only themes
+
+English History and Indonesia ran before this page held every theme, so they have no block
+above. Their intros, as published (the rest of each entry is the live calendar's):
+
+- **`english-history`**: The battles, crowns, charters and calamities that made England what it is. / Within ten weeks of Magna Carta, Pope Innocent III declared it null and void, calling it shameful, demeaning, illegal and unjust.
+- **`indonesia`**: Volcanoes, kingdoms, spice traders and a republic across the islands that are now Indonesia. / Java covers under a tenth of Indonesia's land yet holds more than half its people, making it the most populous island on Earth.
