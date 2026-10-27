@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T05:11:13.243Z",
+  "updated_at": "2026-10-27T05:14:10.478Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-27T05:11:13.243Z"
     },
     "laozi-tao-te-ching": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f1bbf9969306a78d48b2c7643c50dec2e36b1769b6e44215f636b52825d696ae",
+      "updated_at": "2026-10-27T05:14:10.478Z"
     },
     "nagarjuna-middle-way-verses": {
       "state": "pending",
