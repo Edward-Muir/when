@@ -33,7 +33,7 @@ export function ThemeIntroPopup({ intro }: ThemeIntroPopupProps) {
           onClick={dismiss}
           className="w-full min-h-[44px] px-4 py-2 rounded-lg bg-accent text-white font-medium hover:opacity-90 active:scale-95 transition-all"
         >
-          Let&apos;s go
+          Continue
         </button>
       </div>
     </Modal>

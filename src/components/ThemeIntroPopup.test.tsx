@@ -22,10 +22,10 @@ describe('ThemeIntroPopup', () => {
     expect(screen.getByText(theme.intro!.fact)).toBeInTheDocument();
   });
 
-  it("dismisses from the Let's go button", () => {
+  it('dismisses from the Continue button', () => {
     const dismiss = jest.fn();
     render(<ThemeIntroPopup intro={{ theme, open: true, dismiss }} />);
-    fireEvent.click(screen.getByRole('button', { name: "Let's go" }));
+    fireEvent.click(screen.getByRole('button', { name: 'Continue' }));
     expect(dismiss).toHaveBeenCalledTimes(1);
   });
 
