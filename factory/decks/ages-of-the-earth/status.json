@@ -3,7 +3,7 @@
   "name": "Ages of the Earth",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T21:18:02.209Z",
-  "updated_at": "2026-10-27T22:15:28.086Z",
+  "updated_at": "2026-10-27T22:17:41.875Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-27T22:15:28.086Z"
     },
     "neoproterozoic-era-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "979da5fa30305e89ea4e5ed222eb485781a4851ed7a35f7d8dcb0d4d27899a4b",
+      "updated_at": "2026-10-27T22:17:41.875Z"
     },
     "cambrian-period-opens": {
       "state": "pending",
