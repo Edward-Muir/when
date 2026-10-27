@@ -1,9 +1,9 @@
 {
   "deck": "big-thinkers",
   "name": "Big Thinkers",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T19:08:13.197Z",
+  "updated_at": "2026-10-27T20:06:50.393Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-27T19:08:13.197Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-27T20:06:50.393Z"
     }
   ],
   "slugs": {
