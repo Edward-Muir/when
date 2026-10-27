@@ -139,6 +139,7 @@ function App({
     cycleHand,
     resetGame,
     restartGame,
+    gameKey,
     enterReview,
     pendingPopup,
     showDescriptionPopup,
@@ -265,7 +266,9 @@ function App({
       )}
       {(state.phase === 'playing' || state.phase === 'gameOver') && (
         <Game
-          key="game"
+          // Keyed by deal: a mid-game restart goes playing -> playing, and the board's own
+          // state (hints, end-of-game sequence, placement feedback) must start over with it.
+          key={`game-${gameKey}`}
           state={state}
           onPlacement={placeCard}
           onCycleHand={cycleHand}
@@ -273,7 +276,8 @@ function App({
           showDescriptionPopup={showDescriptionPopup}
           showGameOverPopup={showGameOverPopup}
           dismissPopup={dismissPopup}
-          onRestart={restartGame}
+          onRestart={() => restartGame()}
+          onRestartMidGame={() => restartGame({ skipIntro: true })}
           onNewGame={handlePlayAgain}
           newlyUnlockedAchievements={newlyUnlockedAchievements}
           gameMilestones={gameMilestones}
