@@ -487,6 +487,50 @@ describe('useWhenGame - core rules', () => {
     });
   });
 
+  describe('Mid-game restart', () => {
+    it('re-deals straight into play, skipping the intro', async () => {
+      const result = await setupGame();
+      startSuddenDeathGame(result, { suddenDeathHandSize: 3 });
+      const firstHand = result.current.state.players[0].hand.map((e) => e.name);
+      const firstKey = result.current.gameKey;
+      placeCardAndWait(result, 0); // a miss: hand shrinks, a tombstone appears
+
+      act(() => {
+        result.current.restartGame({ skipIntro: true });
+      });
+
+      const { state } = result.current;
+      expect(state.phase).toBe('playing');
+      expect(state.placementHistory).toEqual([]);
+      expect(state.failedPlacements).toEqual([]);
+      expect(state.timeline).toHaveLength(1);
+      // A Custom game restarts on the same seed, so the same hand comes back.
+      expect(state.players[0].hand.map((e) => e.name)).toEqual(firstHand);
+      expect(result.current.gameKey).toBe(firstKey + 1);
+    });
+
+    it('drops the timers of a placement still animating when it restarts', async () => {
+      const result = await setupGame();
+      startSuddenDeathGame(result, { suddenDeathHandSize: 3 });
+
+      act(() => {
+        result.current.placeCard(0); // a miss, mid-flash
+      });
+      act(() => {
+        result.current.restartGame({ skipIntro: true });
+      });
+      act(() => {
+        jest.runAllTimers();
+      });
+
+      const { state } = result.current;
+      expect(state.phase).toBe('playing');
+      expect(state.failedPlacements).toEqual([]);
+      expect(state.players[0].hand).toHaveLength(3);
+      expect(state.timeline).toHaveLength(1);
+    });
+  });
+
   describe('Edge Cases', () => {
     it('multiple players survive with cards - game continues', async () => {
       const testEvents = [
