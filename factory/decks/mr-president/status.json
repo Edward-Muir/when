@@ -3,7 +3,7 @@
   "name": "Mr President",
   "stage": "art-in-progress",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-26T23:45:04.057Z",
+  "updated_at": "2026-10-27T00:07:29.807Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,53 +170,53 @@
       "updated_at": "2026-10-26T22:07:24.444Z"
     },
     "lbj-sworn-in-air-force-one": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "40becaeb9595d9e95b793c96be8660d3176b696a2b111a09e8a3214c5c834c6a",
-      "updated_at": "2026-10-26T23:21:58.102Z"
+      "updated_at": "2026-10-27T00:07:29.579Z"
     },
     "nixon-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d2b4b423fb3ac253827eb461c2f0dfbacc3c895f012817c490973ddbb8c03c41",
-      "updated_at": "2026-10-26T23:25:39.191Z"
+      "updated_at": "2026-10-27T00:07:29.611Z"
     },
     "carter-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f56894e63319e298285cf1ce5c0051dd84e7435e075d3f21662e1f773cbe2869",
-      "updated_at": "2026-10-26T23:29:15.040Z"
+      "updated_at": "2026-10-27T00:07:29.641Z"
     },
     "reagan-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0154ca4056628739c0907f049ae2b7a003d99d77ab1c2faf784537ba7a7ce558",
-      "updated_at": "2026-10-26T23:31:50.575Z"
+      "updated_at": "2026-10-27T00:07:29.671Z"
     },
     "george-hw-bush-inauguration": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The lectern seal has legible lettering around its rim (SEAL OF THE PRESIDENT OF THE UNITED STATES). Repaint the seal without readable words, or turn the lectern so the seal is not visible.",
       "sha256": "109aae09dff5fc0df153c21b9ab25b192907dfd4648f2f8f4ca6e21e1dc202b7",
-      "updated_at": "2026-10-26T23:35:26.842Z"
+      "updated_at": "2026-10-27T00:07:29.701Z"
     },
     "clinton-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1cc4a736a3375bda10283afc9fc0fec74e180a0d614520ea5b2050b4890610ae",
-      "updated_at": "2026-10-26T23:40:10.204Z"
+      "updated_at": "2026-10-27T00:07:29.752Z"
     },
     "george-w-bush-first-inauguration": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c3ede5b9ffb74433fe0256b9a225c5f191d8d6de56c70426578d4210977b9667",
-      "updated_at": "2026-10-26T23:45:04.057Z"
+      "updated_at": "2026-10-27T00:07:29.807Z"
     }
   }
 }

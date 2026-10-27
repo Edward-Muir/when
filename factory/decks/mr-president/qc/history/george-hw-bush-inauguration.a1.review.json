@@ -1,0 +1,15 @@
+{
+  "slug": "george-hw-bush-inauguration",
+  "description": "Oil-style painting of an inauguration. In the foreground an open Bible rests on a dark carved wooden lectern whose front bears a round seal with lettering around its rim. Behind it, seated dignitaries in dark suits sit under red, white and blue bunting and flags, with microphones at the lectern. A large white domed building, which looks like the US Capitol, stands in the background, and a large crowd fills the right side under an overcast grey sky.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The lectern seal has legible lettering painted around its rim (\"PRESIDENT OF THE UNITED STATES\" and \"SEAL\"), which breaks the no-text rule. Repaint the seal blank or cropped so no words are readable. The rest of the scene (Capitol, bunting, Bible on lectern, crowd, no identifiable person) matches the card."
+}

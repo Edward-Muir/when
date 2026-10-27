@@ -1,0 +1,15 @@
+{
+  "slug": "george-w-bush-first-inauguration",
+  "description": "A dark, painterly, rainy scene. In the background, a white domed Capitol-style building with American flags hanging on its front, with bunting and a crowd on a stage. In the foreground, a sea of black umbrellas fills the middle ground. A stack of papers with punch-hole style circles sits on a weathered wooden table, with a brass magnifying glass resting on top and paper scraps scattered around it. Storm clouds and falling rain cover the sky. The painting fills the frame edge to edge with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

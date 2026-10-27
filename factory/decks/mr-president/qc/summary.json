@@ -152,5 +152,54 @@
     "by": "review",
     "attempts": 1,
     "description": "A snowy plaza before a large domed white stone government building with a long colonnade. In the foreground, a tiered wooden stand draped in red, white and blue bunting faces rows of empty folding chairs, with a wooden podium and microphones. Snow banks pile around the stand under a pale blue winter sky. No people are visible. The image is a painting with no frame, text or border."
+  },
+  "lbj-sworn-in-air-force-one": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A four-engined jet airliner in white with a blue nose and blue cheatline sits on a flat, hazy airfield. Its rear door is open with a boarding staircase below it, and a crowd of men in dark suits and hats stands around three dark sedans at the foot of the stairs. A few figures are visible in the doorway. The lighting is warm and low, the style is painterly, and there is no visible text."
+  },
+  "nixon-first-inauguration": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A rain-slicked, grey city avenue lined with bare winter trees and lamp posts, with barricades along both sides. Cardboard placards bearing black peace symbols lean against a black lamp post in the foreground, with wooden sticks and scattered paper and debris on the wet asphalt. A black sedan with its lights on drives on the right, and a few more cars recede into the mist. No people are visible; the mood is bleak and overcast, in a loose painterly style."
+  },
+  "carter-inauguration": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A black Cadillac limousine with a small American flag and a presidential-style emblem on the front drives on a wet, grey avenue. A line of dark-coated figures stands along the far kerb, with bare winter trees and the White House visible in the background. In the foreground, empty dark stadium-style bleacher seats with black bunting sit beside a wicker basket of peanuts resting on one seat. The scene is a rainy, muted, painterly view with no visible text."
+  },
+  "reagan-first-inauguration": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Dim interior of a room with dark curtains. On the left, an old wood-cabinet CRT television on a stand shows a jet airliner on a tarmac under a pale dawn sky. On the right, a tall multi-pane window looks out on a columned building with a crowd on its steps, a long green lawn running toward a tall obelisk (Washington Monument) under a grey sky. A bare tree in front of the window has yellow ribbons tied to its branches. No people are clearly identifiable."
+  },
+  "george-hw-bush-inauguration": {
+    "state": "qc-fail",
+    "reason": "The lectern seal has legible lettering around its rim (SEAL OF THE PRESIDENT OF THE UNITED STATES). Repaint the seal without readable words, or turn the lectern so the seal is not visible.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "Oil painting of an inauguration platform. In the foreground an open Bible rests on a dark carved wooden lectern with microphones, its front bearing a round presidential seal with readable lettering around the rim. Behind are seated men and women in dark formal wear under red, white and blue bunting and American flags, the domed Capitol behind them, and a huge crowd on the right under a grey sky. No border or frame."
+  },
+  "clinton-first-inauguration": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted outdoor scene of a white stone balcony with a dark wooden podium bearing a round presidential-style seal, red, white and blue bunting on the railings, and a large crowd in winter coats stretching toward a distant white obelisk under a pale sky. In the foreground a gold tenor saxophone lies on a folding chair beside a second chair holding a stack of handwritten-looking pages. Bare trees line the Mall."
+  },
+  "george-w-bush-first-inauguration": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painterly, rainy scene. In the background, a white domed Capitol-style building with American flags hanging on its front, with bunting and a crowd on a stage. In the foreground, a sea of black umbrellas fills the middle ground. A stack of papers with punch-hole style circles sits on a weathered wooden table, with a brass magnifying glass resting on top and paper scraps scattered around it. Storm clouds and falling rain cover the sky. The painting fills the frame edge to edge with no border."
   }
 }
