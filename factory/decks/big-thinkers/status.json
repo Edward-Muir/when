@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T08:07:01.476Z",
+  "updated_at": "2026-10-27T09:11:21.240Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-27T06:06:57.098Z"
     },
     "augustine-confessions-written": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "df269c7141b0762bc423423c64b7bfa02e54594c8b96b2316a740f4315354df9",
+      "updated_at": "2026-10-27T09:11:21.240Z"
     },
     "avicenna-book-of-healing": {
       "state": "qc-pass",
