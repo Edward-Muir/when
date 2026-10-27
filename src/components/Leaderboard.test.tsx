@@ -94,7 +94,7 @@ describe('Leaderboard', () => {
       const entries: LeaderboardEntry[] = [
         { displayName: 'Brave Otter', correctCount: 9, rank: 1 },
         { displayName: 'Linguistic Platypus', correctCount: 8, rank: 2, avatar: 'koala' },
-        { displayName: 'Swift Hawk', correctCount: 7, rank: 3, avatar: 'unicorn' },
+        { displayName: 'Swift Hawk', correctCount: 7, rank: 3, avatar: 'manticore' },
       ];
       renderBoard({ entries });
 
