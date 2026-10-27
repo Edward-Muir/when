@@ -2189,7 +2189,11 @@ Their dates are in the schedule at the top of this file.
 ## Live-only themes
 
 English History and Indonesia ran before this page held every theme, so they have no block
-above. Their intros, as published (the rest of each entry is the live calendar's):
+above. Their intros follow (the rest of each entry is the live calendar's). English History's
+is written but **not published**: its stored deck still lists `church-of-england`, retired as a
+duplicate, so the publish script's playable-slug check refuses the theme, and a played date's
+events can't be changed. It ran on 2026-08-20, outside the Archive's 30 days, so no player
+can reach its intro anyway.
 
 - **`english-history`**: The battles, crowns, charters and calamities that made England what it is. / Within ten weeks of Magna Carta, Pope Innocent III declared it null and void, calling it shameful, demeaning, illegal and unjust.
 - **`indonesia`**: Volcanoes, kingdoms, spice traders and a republic across the islands that are now Indonesia. / Java covers under a tenth of Indonesia's land yet holds more than half its people, making it the most populous island on Earth.
