@@ -3,7 +3,7 @@
   "name": "Ages of the Earth",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T21:18:02.209Z",
-  "updated_at": "2026-10-27T22:13:10.897Z",
+  "updated_at": "2026-10-27T22:15:28.086Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-27T22:13:10.897Z"
     },
     "mesoproterozoic-era-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a5280b4bebedeeea5bf5b0b6c6012419b60b15f6e06feed833f3b103c93749f4",
+      "updated_at": "2026-10-27T22:15:28.086Z"
     },
     "neoproterozoic-era-begins": {
       "state": "pending",
