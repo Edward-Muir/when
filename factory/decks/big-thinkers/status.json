@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T06:06:57.098Z",
+  "updated_at": "2026-10-27T07:13:17.403Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -50,10 +50,11 @@
       "sha256": null
     },
     "avicenna-book-of-healing": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ed5018b544f77431f4804eeb76915930954d9e39330932f35775a836af3de1b7",
+      "updated_at": "2026-10-27T07:13:17.403Z"
     },
     "wang-yangming-great-awakening": {
       "state": "pending",
