@@ -1,0 +1,575 @@
+{
+  "scottish-fold": {
+    "role": "1969 astronaut",
+    "persona": "a brave little astronaut about to take its first steps on the Moon",
+    "feature": "round fluffy face with small ears folded flat forward against its head",
+    "expression": "a wide-eyed, wondering look and the tip of its tongue just showing",
+    "costume": "the padded collar ring of an Apollo spacesuit",
+    "prop": "its round space helmet tucked under one arm",
+    "light": "soft light",
+    "animal": "Scottish Fold kitten"
+  },
+  "capybara": {
+    "role": "Edo bathhouse regular",
+    "persona": "a contented regular of the public bathhouse",
+    "feature": "broad blunt muzzle and small rounded ears",
+    "expression": "a serene, half-lidded calm",
+    "costume": "a folded cotton bath towel balanced on top of its head",
+    "prop": "a small steaming teacup held up in both paws",
+    "light": "lantern light"
+  },
+  "yak": {
+    "role": "Himalayan monastery monk",
+    "persona": "a devoted Himalayan monk",
+    "feature": "shaggy fringed face and broad curved horns",
+    "expression": "a patient, devout gaze",
+    "costume": "a draped monastic robe over one shoulder",
+    "prop": "a long string of wooden prayer beads held up in one hoof",
+    "light": "butter-lamp glow"
+  },
+  "smilodon": {
+    "role": "Roman arena gladiator",
+    "persona": "a veteran champion of the arena",
+    "feature": "massive sabre fangs and heavy square jaw",
+    "expression": "a proud, battle-worn stare",
+    "costume": "a crested bronze gladiator's helmet with its visor raised",
+    "prop": "a victor's laurel wreath held up in one paw",
+    "light": "torchlight"
+  },
+  "wombat": {
+    "role": "Victorian bricklayer",
+    "persona": "a hardworking bricklayer",
+    "feature": "broad blunt nose and small round ears",
+    "expression": "a steady, workmanlike squint",
+    "costume": "a flat wool cap pulled low",
+    "prop": "a single cube-shaped mud brick held up in both paws",
+    "light": "late-afternoon sun"
+  },
+  "ankylosaurus": {
+    "role": "medieval cathedral stonemason",
+    "persona": "a master stonemason",
+    "feature": "broad armoured head studded with bony plates",
+    "expression": "a calm, focused frown",
+    "costume": "a heavy leather mason's apron",
+    "prop": "a wooden mallet held up beside its face",
+    "light": "dusty window light"
+  },
+  "stegosaurus": {
+    "role": "ancient Egyptian royal architect",
+    "persona": "the master builder of a step pyramid",
+    "feature": "small narrow head with a tall row of back plates rising behind it",
+    "expression": "a wise, measuring look",
+    "costume": "a broad pleated linen collar",
+    "prop": "a wooden set square held up beside its face",
+    "light": "desert sunlight"
+  },
+  "griffin": {
+    "role": "Italian Renaissance polymath",
+    "persona": "a restless Renaissance genius",
+    "feature": "hooked eagle beak and feathered crest",
+    "expression": "a curious, far-seeing gaze",
+    "costume": "a soft velvet beret",
+    "prop": "a small wooden model of a flapping-wing flying machine held up in one talon",
+    "light": "studio window light",
+    "animal": "griffin (eagle's head, lion's mane)"
+  },
+  "tyrannosaurus": {
+    "role": "Roman emperor",
+    "persona": "a Roman emperor",
+    "feature": "huge toothy jaws and heavy brow ridges",
+    "expression": "an imperious, commanding glare",
+    "costume": "a laurel wreath crown and a draped toga",
+    "prop": "an orb held up in one small clawed hand",
+    "light": "torchlight",
+    "animal": "tyrannosaurus rex"
+  },
+  "fire-salamander": {
+    "role": "French Revolution firebrand",
+    "persona": "a fiery street revolutionary",
+    "feature": "broad flat head and glossy spotted skin",
+    "expression": "a defiant, rallying shout",
+    "costume": "a soft Phrygian liberty cap with a cockade",
+    "prop": "a blazing torch held aloft beside its face",
+    "light": "torch flame",
+    "animal": "fire salamander"
+  },
+  "weaverbird": {
+    "role": "Mughal court architect",
+    "persona": "a Mughal master architect",
+    "feature": "stout conical beak and bright round eye",
+    "expression": "a precise, appraising look",
+    "costume": "a neatly wound turban with a jewelled pin",
+    "prop": "a pair of brass dividers held up beside its face",
+    "light": "marble-reflected light",
+    "animal": "weaver bird"
+  },
+  "vampire-bat": {
+    "role": "Romantic gothic poet",
+    "persona": "a brooding gothic poet",
+    "feature": "large pointed ears and snub leaf-shaped nose",
+    "expression": "a haunted, brooding stare",
+    "costume": "a loosely knotted Byronic cravat",
+    "prop": "a guttering candle in a brass candlestick held up beside its face",
+    "light": "candlelight",
+    "animal": "vampire bat"
+  },
+  "magpie": {
+    "role": "Victorian workshop inventor",
+    "persona": "an ingenious inventor",
+    "feature": "sleek head and long sharp beak",
+    "expression": "a bright, eager look",
+    "costume": "a scorched leather workshop apron",
+    "prop": "an early glass light bulb with a glowing filament held up in one claw",
+    "light": "the bulb's own glow"
+  },
+  "lyrebird": {
+    "role": "Elizabethan stage player",
+    "persona": "a celebrated Elizabethan player performing Hamlet",
+    "feature": "slender head with long lacy tail plumes arching up behind it",
+    "expression": "a melancholy, contemplative gaze",
+    "costume": "a starched lace ruff collar",
+    "prop": "a small skull held up in one claw",
+    "light": "stage light"
+  },
+  "axolotl": {
+    "role": "Hollywood celebrity",
+    "persona": "a glamorous trendsetter",
+    "feature": "wide smiling face and feathery frilled gills fanning from its head",
+    "expression": "a cheeky, camera-ready smile",
+    "costume": "oversized round sunglasses",
+    "prop": "a vintage box camera held up beside its face",
+    "light": "camera flash"
+  },
+  "pangolin": {
+    "role": "medieval master armourer",
+    "persona": "a master armourer",
+    "feature": "small tapered head and overlapping scales like plate armour",
+    "expression": "a proud, meticulous look",
+    "costume": "a scorched leather smith's apron",
+    "prop": "a chain-mail coif held up in one claw",
+    "light": "forge glow"
+  },
+  "ibex": {
+    "role": "eighteenth-century Swiss envoy",
+    "persona": "a calm Alpine diplomat",
+    "feature": "long backward-sweeping ridged horns and short beard",
+    "expression": "a composed, conciliatory smile",
+    "costume": "a tricorn hat",
+    "prop": "an olive branch held up beside its face",
+    "light": "clear mountain light",
+    "animal": "alpine ibex"
+  },
+  "tardigrade": {
+    "role": "shipwreck survivor",
+    "persona": "a survivor of a great ocean liner disaster",
+    "feature": "round puckered snout and plump segmented body",
+    "expression": "a stoic, unflappable calm",
+    "costume": "a bulky cork life jacket",
+    "prop": "a dented ship's lantern held up in one stubby claw",
+    "light": "lantern light",
+    "animal": "tardigrade (microscopic water bear)"
+  },
+  "money-toad": {
+    "role": "Gilded Age tycoon",
+    "persona": "a Gilded Age tycoon",
+    "feature": "wide warty face and bulging eyes",
+    "expression": "a smug, satisfied grin",
+    "costume": "a tall silk top hat and a monocle",
+    "prop": "one large round coin with a square hole held in its mouth",
+    "light": "lamplight",
+    "animal": "three-legged money toad of Chinese legend"
+  },
+  "ram": {
+    "role": "English high court judge",
+    "persona": "a stern high court judge",
+    "feature": "heavy curled horns and long woolly face",
+    "expression": "a grave, impartial stare",
+    "costume": "a full-bottomed judge's wig of tight curls",
+    "prop": "a wooden gavel held up beside its face",
+    "light": "courtroom window light"
+  },
+  "aurochs": {
+    "role": "Neolithic farmer",
+    "persona": "one of the first farmers",
+    "feature": "huge forward-curving horns and broad muzzle",
+    "expression": "a patient, earthy calm",
+    "costume": "a wide woven straw hat",
+    "prop": "a sheaf of ripe wheat held up beside its face",
+    "light": "harvest sunlight"
+  },
+  "minotaur": {
+    "role": "Bronze Age Mycenaean warlord",
+    "persona": "a fearsome Bronze Age warlord",
+    "feature": "massive bull head with long sharp horns and flaring nostrils",
+    "expression": "a furious, snorting glare",
+    "costume": "a boar's-tusk helmet fitted between its horns",
+    "prop": "a double-headed labrys axe held upright beside its face",
+    "light": "firelight",
+    "animal": "minotaur (bull-headed warrior)"
+  },
+  "lab-rat": {
+    "role": "nineteenth-century laboratory chemist",
+    "persona": "a lab rat turned laboratory scientist",
+    "feature": "long whiskered snout and large round ears",
+    "expression": "an intent, scrutinising squint",
+    "costume": "round protective laboratory goggles",
+    "prop": "a bubbling glass test tube held up in one paw",
+    "light": "gas-lamp light",
+    "animal": "rat"
+  },
+  "narwhal": {
+    "role": "Age of Sail sea captain",
+    "persona": "a seasoned sea captain",
+    "feature": "rounded head with a long spiral tusk",
+    "expression": "a weathered, far-sighted squint",
+    "costume": "a bicorne hat worn athwart",
+    "prop": "a brass sextant held up in one flipper",
+    "light": "sea light"
+  },
+  "arctic-tern": {
+    "role": "medieval pilgrim",
+    "persona": "a far-travelled pilgrim on the long road",
+    "feature": "sleek capped head and sharp pointed beak",
+    "expression": "a resolute, wind-swept look",
+    "costume": "a broad-brimmed pilgrim's hat pinned with a scallop shell",
+    "prop": "a tall wooden walking staff held upright beside it",
+    "light": "dawn light",
+    "animal": "arctic tern"
+  },
+  "chameleon": {
+    "role": "Post-Impressionist painter",
+    "persona": "an intense painter at the easel",
+    "feature": "curled crest, swivelling turret eyes and skin of many shifting hues",
+    "expression": "a rapt, inspired stare",
+    "costume": "a soft painter's beret",
+    "prop": "a wooden palette daubed with paint held up in one foot",
+    "light": "studio light"
+  },
+  "ibis": {
+    "role": "seventeenth-century plague doctor",
+    "persona": "a plague doctor making the night rounds",
+    "feature": "long down-curved beak like a plague doctor's mask",
+    "expression": "a solemn, caring gaze",
+    "costume": "a wide-brimmed leather hat",
+    "prop": "a small oil lamp held up beside its face",
+    "light": "lamplight",
+    "animal": "sacred ibis"
+  },
+  "dodo": {
+    "role": "Victorian field naturalist",
+    "persona": "a Victorian naturalist on expedition",
+    "feature": "large hooked beak and round plump head",
+    "expression": "a delighted, curious look",
+    "costume": "a cork pith helmet",
+    "prop": "a butterfly net held upright beside its face",
+    "light": "dappled jungle light"
+  },
+  "cheetah": {
+    "role": "1930s football champion",
+    "persona": "a champion footballer of the first World Cup",
+    "feature": "lean spotted face with tear-mark stripes",
+    "expression": "a confident, victorious grin",
+    "costume": "a collared lace-up football jersey of the 1930s",
+    "prop": "a laced leather football held up in one paw",
+    "light": "bright afternoon sun"
+  },
+  "mummy-cat": {
+    "role": "ancient Egyptian temple priest",
+    "persona": "a sacred temple cat risen from its tomb",
+    "feature": "tall pointed ears and gleaming eyes peering out from its wrappings",
+    "expression": "an eerie, ageless stare",
+    "costume": "loose linen burial wrappings trailing from its head and shoulders",
+    "prop": "an ankh held up in one wrapped paw",
+    "light": "tomb torchlight",
+    "animal": "mummified cat"
+  },
+  "qilin": {
+    "role": "Ming dynasty court scholar",
+    "persona": "a timeless scholar who has watched every age pass",
+    "feature": "dragon-like scaled face with soft antlers and a flowing mane",
+    "expression": "a serene, ancient wisdom",
+    "costume": "a winged Ming scholar-official's hat",
+    "prop": "an hourglass held up beside its face",
+    "light": "lantern light",
+    "animal": "qilin (scaled, antlered beast of Chinese legend)"
+  },
+  "yeti": {
+    "role": "1950s Himalayan mountaineer",
+    "persona": "a summit-conquering mountaineer",
+    "feature": "shaggy frost-tipped face and heavy brow",
+    "expression": "a triumphant, wind-burned grin",
+    "costume": "round snow goggles pushed up on its forehead",
+    "prop": "a wooden-shafted ice axe held up beside its face",
+    "light": "high-altitude sunlight"
+  },
+  "armadillo": {
+    "role": "1920s bowling champion",
+    "persona": "a champion bowler on a winning streak",
+    "feature": "armoured banded shell, long tubular snout and tall ears",
+    "expression": "a cocky, winking grin",
+    "costume": "a flat-brimmed 1920s sporting cap",
+    "prop": "a heavy bowling ball held up in both claws",
+    "light": "alley lamplight"
+  },
+  "bison": {
+    "role": "Mongol cavalry commander",
+    "persona": "a charging Mongol cavalry commander",
+    "feature": "massive shaggy head and short hooked horns",
+    "expression": "a fierce, driving glare",
+    "costume": "a fur-trimmed pointed Mongol helmet",
+    "prop": "a horsehair standard on a short spear held upright beside its face",
+    "light": "steppe sunset light"
+  },
+  "werewolf": {
+    "role": "Victorian gothic gentleman",
+    "persona": "a gentleman cursed to rampage under the full moon",
+    "feature": "bristling wolfish snout, bared fangs and wild mane",
+    "expression": "a savage, snarling howl",
+    "costume": "the torn collar of a gentleman's frock coat",
+    "prop": "a broken lantern held up in one clawed hand",
+    "light": "firelight"
+  },
+  "triceratops": {
+    "role": "Napoleonic emperor",
+    "persona": "an emperor at his own coronation",
+    "feature": "broad bony frill and three great horns",
+    "expression": "a haughty, unstoppable glare",
+    "costume": "a bicorne hat perched in front of its frill",
+    "prop": "a gilded eagle-topped sceptre held upright beside its face",
+    "light": "cathedral candlelight"
+  },
+  "spinosaurus": {
+    "role": "Carolingian emperor",
+    "persona": "a conquering Carolingian emperor",
+    "feature": "long crocodile-like snout and tall sail rising behind its head",
+    "expression": "a stern, relentless gaze",
+    "costume": "a jewelled iron crown",
+    "prop": "a long sword held upright like a sceptre",
+    "light": "cathedral light"
+  },
+  "hamster": {
+    "role": "Viennese coffee-house barista",
+    "persona": "a hardworking early riser at the daily grind",
+    "feature": "chubby stuffed cheeks and tiny round ears",
+    "expression": "a bleary but determined look",
+    "costume": "a buttoned waistcoat with rolled shirt sleeves",
+    "prop": "a small wooden hand-cranked coffee mill held in both paws",
+    "light": "dawn window light"
+  },
+  "rooster": {
+    "role": "Georgian town crier",
+    "persona": "a punctual town crier who calls every dawn",
+    "feature": "tall fleshy comb and wattles",
+    "expression": "a proud, wide-awake crow",
+    "costume": "a knitted nightcap with a tassel",
+    "prop": "a brass handbell raised beside its face",
+    "light": "first light of dawn"
+  },
+  "quetzalcoatl": {
+    "role": "Mesoamerican temple high priest",
+    "persona": "a revered temple deity",
+    "feature": "fanged serpent head framed by a ruff of long plumes",
+    "expression": "a calm, divine gaze",
+    "costume": "a broad carved jade collar",
+    "prop": "a smooth polished jade disc held before it in its coils",
+    "light": "temple brazier light",
+    "animal": "feathered serpent of Mesoamerican legend"
+  },
+  "unicorn": {
+    "role": "medieval monarch",
+    "persona": "the legendary emblem of a royal court",
+    "feature": "long spiralled horn and flowing mane",
+    "expression": "a gentle, timeless serenity",
+    "costume": "an ermine-trimmed mantle",
+    "prop": "a single lily held up beside its face",
+    "light": "soft cathedral light",
+    "animal": "noble unicorn"
+  },
+  "meerkat": {
+    "role": "garrison sentry",
+    "persona": "a punctual lookout who never misses the hour",
+    "feature": "small alert face with dark-ringed eyes",
+    "expression": "an alert, upright vigilance",
+    "costume": "a sentry's crossbelt sash",
+    "prop": "a small brass sundial held up in both paws",
+    "light": "rising sunlight"
+  },
+  "clockwork-mouse": {
+    "role": "Swiss automaton maker",
+    "persona": "a tireless wind-up toy",
+    "feature": "round riveted ears, pointed snout and a large wind-up key in its back",
+    "expression": "a jaunty, mechanical stare",
+    "costume": "a tiny tinker's waistcoat",
+    "prop": "a small wedge of cheese held up in both paws",
+    "light": "workshop lamplight",
+    "animal": "clockwork mouse automaton of riveted brass"
+  },
+  "sea-lion": {
+    "role": "steamship chief engineer",
+    "persona": "a ship's chief engineer",
+    "feature": "sleek round head and long whiskers",
+    "expression": "a cheerful, capable grin",
+    "costume": "a peaked engineer's cap",
+    "prop": "a long-spouted oil can held up in one flipper",
+    "light": "furnace glow",
+    "animal": "sea lion"
+  },
+  "cuckoo": {
+    "role": "Schwarzwald clockmaker",
+    "persona": "a master clockmaker of the Schwarzwald",
+    "feature": "sleek head and slightly curved beak",
+    "expression": "a meticulous, peering squint",
+    "costume": "a Tyrolean felt hat with a feather",
+    "prop": "a jeweller's loupe held up to one eye",
+    "light": "workbench lamplight",
+    "animal": "common cuckoo"
+  },
+  "sphinx": {
+    "role": "pharaoh",
+    "persona": "the riddling guardian of the ages",
+    "feature": "noble lion face and folded feathered wings",
+    "expression": "an inscrutable, all-knowing gaze",
+    "costume": "a striped nemes headdress",
+    "prop": "a glowing sun disc held up between its paws",
+    "light": "desert dusk light",
+    "animal": "winged sphinx with a lion's face"
+  },
+  "phantom-hound": {
+    "role": "Victorian churchyard watchman",
+    "persona": "a faithful ghost dog still keeping its watch",
+    "feature": "translucent glowing face with long drooping ears",
+    "expression": "a mournful, loyal gaze",
+    "costume": "a worn leather collar",
+    "prop": "a small lantern held by its handle in its mouth",
+    "light": "lantern light",
+    "animal": "spectral hound"
+  },
+  "red-panda": {
+    "role": "Alpine ski-lodge guest",
+    "persona": "a cosy guest warming up by the fire",
+    "feature": "round masked face and tall pointed ears",
+    "expression": "a snug, contented smile",
+    "costume": "a knitted bobble hat",
+    "prop": "a steaming mug of cocoa held in both paws",
+    "light": "fireside glow",
+    "animal": "lesser panda (Ailurus fulgens)"
+  },
+  "zebra": {
+    "role": "Edwardian racing jockey",
+    "persona": "a jockey in full gallop",
+    "feature": "bold striped face and upright bristly mane",
+    "expression": "a focused, determined look",
+    "costume": "a quartered silk jockey cap",
+    "prop": "a short riding crop held upright beside its face",
+    "light": "racecourse sunlight"
+  },
+  "woolly-mammoth": {
+    "role": "Carthaginian general",
+    "persona": "one of Hannibal's war beasts crossing the Alps",
+    "feature": "shaggy domed head and great curling tusks",
+    "expression": "a dogged, determined look",
+    "costume": "a snow-crusted leather war harness",
+    "prop": "a long spear held upright in its trunk",
+    "light": "alpine sunlight",
+    "animal": "woolly mammoth"
+  },
+  "bowerbird": {
+    "role": "Victorian museum curator",
+    "persona": "a fastidious museum curator",
+    "feature": "glossy rounded head and pale piercing eyes",
+    "expression": "a discerning, satisfied look",
+    "costume": "a fine buttoned waistcoat",
+    "prop": "a single prized spiral seashell held up in one claw",
+    "light": "gallery lamplight",
+    "animal": "satin bowerbird"
+  },
+  "bookworm": {
+    "role": "monastery archivist",
+    "persona": "a scholarly archivist",
+    "feature": "round segmented head and tiny stubby feet",
+    "expression": "a myopic, absorbed squint",
+    "costume": "small round spectacles perched on its face",
+    "prop": "a brass magnifying glass held up beside its face",
+    "light": "candlelight",
+    "animal": "plump caterpillar"
+  },
+  "gargoyle": {
+    "role": "Gothic cathedral guardian",
+    "persona": "a stone guardian keeping watch over a great collection",
+    "feature": "grotesque horned head with a wide grimacing mouth",
+    "expression": "a watchful, gruff scowl",
+    "costume": "a weathered stone mantle draped over its shoulders",
+    "prop": "a heavy ring of iron keys held up in one claw",
+    "light": "torchlight",
+    "animal": "stone gargoyle (winged grotesque beast)"
+  },
+  "great-elk": {
+    "role": "Stonehenge druid",
+    "persona": "an ancient druid keeper of the stones",
+    "feature": "enormous spreading palmate antlers",
+    "expression": "a solemn, ancient wisdom",
+    "costume": "a hooded wool druid's robe",
+    "prop": "a sprig of mistletoe held up beside its face",
+    "light": "midsummer dawn light",
+    "animal": "giant Irish elk"
+  },
+  "sirrush": {
+    "role": "Neo-Babylonian king",
+    "persona": "a guardian beast of the Ishtar Gate",
+    "feature": "slender scaled serpent head with a single straight horn and forked tongue",
+    "expression": "a regal, ancient stare",
+    "costume": "a beaded Babylonian collar",
+    "prop": "a small stone cylinder seal held up in one claw",
+    "light": "brazier light",
+    "animal": "sirrush (horned scaly dragon of Babylon)"
+  },
+  "pigeon": {
+    "role": "twenty-first-century city dweller",
+    "persona": "a thoroughly modern city dweller",
+    "feature": "small round head and iridescent neck feathers",
+    "expression": "a distracted, scrolling stare",
+    "costume": "a hooded sweatshirt with earbuds in",
+    "prop": "a smartphone with a dark blank screen held up in one wing",
+    "light": "screen glow"
+  },
+  "jackalope": {
+    "role": "Victorian time traveller",
+    "persona": "a time traveller hopping between the ages",
+    "feature": "long upright ears with small branching antlers between them",
+    "expression": "a startled, adventurous look",
+    "costume": "brass time-traveller's goggles pushed up on its brow",
+    "prop": "a corroded bronze geared mechanism held up in both paws",
+    "light": "electric glow",
+    "animal": "jackalope (hare with small antlers)"
+  },
+  "pegasus": {
+    "role": "Florentine Renaissance poet",
+    "persona": "the winged steed of the Muses",
+    "feature": "noble horse head with folded feathered wings rising behind it",
+    "expression": "an inspired, dreamy gaze",
+    "costume": "a soft Renaissance cap with a draped tail",
+    "prop": "a laurel sprig held in its mouth",
+    "light": "Tuscan light",
+    "animal": "pegasus (winged horse)"
+  },
+  "spider": {
+    "role": "seventeenth-century French cardinal",
+    "persona": "a scheming cardinal who pulls every string",
+    "feature": "large glossy front eyes and furry face",
+    "expression": "a calculating, knowing smile",
+    "costume": "a cardinal's skullcap and broad cape",
+    "prop": "a marionette control bar with dangling strings held in two legs",
+    "light": "candlelight",
+    "animal": "jumping spider"
+  },
+  "kitsune": {
+    "role": "Heian court noble",
+    "persona": "an ancient fox spirit who has gathered all wisdom",
+    "feature": "sharp knowing face with nine tails fanned in one great arc behind it",
+    "expression": "a sly, serene smile",
+    "costume": "a Shinto shrine rope collar hung with paper streamers",
+    "prop": "a glowing flame-tipped pearl held up in one paw",
+    "light": "spirit-fire glow",
+    "animal": "kitsune (nine-tailed fox spirit)"
+  }
+}

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.36.0](https://github.com/Edward-Muir/when/compare/v1.35.0...v1.36.0) (2026-10-27)
+
+
+### Features
+
+* **avatars:** earn a new avatar with every achievement ([#112](https://github.com/Edward-Muir/when/issues/112)) ([4cc91e4](https://github.com/Edward-Muir/when/commit/4cc91e4505dd47d4df573c1a1ca0a2d70f912b04))
+
 ## [1.35.0](https://github.com/Edward-Muir/when/compare/v1.34.0...v1.35.0) (2026-10-16)
 
 
