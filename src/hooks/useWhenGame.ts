@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import {
   HistoricalEvent,
   WhenGameState,
@@ -44,12 +44,14 @@ import {
 interface UseWhenGameReturn {
   state: WhenGameState;
   allEvents: HistoricalEvent[];
-  startGame: (config: GameConfig) => void;
+  startGame: (config: GameConfig, options?: StartOptions) => void;
   completeTransition: () => void;
   placeCard: (insertionIndex: number) => PlacementResult | null;
   cycleHand: () => void;
   resetGame: () => void;
-  restartGame: () => void;
+  restartGame: (options?: StartOptions) => void;
+  /** Bumped on every deal, so the board can remount on a restart that skips the intro. */
+  gameKey: number;
   /** Reopen a finished board for reading (`utils/dailyBoard.ts`), without replaying it. */
   enterReview: (restored: WhenGameState) => void;
   modalEvent: HistoricalEvent | null;
@@ -63,6 +65,14 @@ interface UseWhenGameReturn {
   newlyUnlockedAchievements: string[];
   /** Personal-best milestones set by the most recently recorded game (text-only end-of-game popups). */
   gameMilestones: GameMilestone[];
+}
+
+interface StartOptions {
+  /**
+   * Deal straight into `playing`, skipping the intro animation. The mid-game Restart uses it:
+   * a player drilling a deck wants the first card again, not three seconds of loading screen.
+   */
+  skipIntro?: boolean;
 }
 
 // Miss-reveal choreography timings live in the shared tuning module
@@ -196,6 +206,11 @@ export function useWhenGame(): UseWhenGameReturn {
     popup: null,
     pendingStateUpdate: null,
   });
+  const [gameKey, setGameKey] = useState(0);
+  // The deal a placement's timers belong to. A restart mid-placement re-deals while those
+  // timers are still pending; each one checks this and drops itself rather than resolving the
+  // old card against the new game.
+  const dealRef = useRef(0);
 
   // Load events and the theme calendar on mount, then go to the home screen. Both are needed
   // before any puzzle can be decided; loadCuratedThemes never rejects, so a calendar outage
@@ -213,7 +228,7 @@ export function useWhenGame(): UseWhenGameReturn {
   const { newlyUnlockedAchievements, gameMilestones } = useGameStatsRecorder(state, allEvents);
 
   const startGame = useCallback(
-    (config: GameConfig) => {
+    (config: GameConfig, options: StartOptions = {}) => {
       const {
         mode,
         dailySeed,
@@ -261,8 +276,11 @@ export function useWhenGame(): UseWhenGameReturn {
         deckForGame
       );
 
+      dealRef.current += 1;
+      setGameKey((k) => k + 1);
+      setPendingPopupState({ popup: null, pendingStateUpdate: null });
       setState({
-        phase: 'transitioning',
+        phase: options.skipIntro ? 'playing' : 'transitioning',
         gameMode: mode,
         timeline: timelineEvents,
         seedEventName: shuffled[0].name,
@@ -311,6 +329,7 @@ export function useWhenGame(): UseWhenGameReturn {
       if (!validation) return null;
 
       const { activeCard } = validation;
+      const deal = dealRef.current;
       const isSinglePlayer = state.players.length === 1;
 
       // 2. Calculate placement result
@@ -347,6 +366,7 @@ export function useWhenGame(): UseWhenGameReturn {
 
         // 5a. After flash animation, finalize correct placement
         setTimeout(() => {
+          if (dealRef.current !== deal) return;
           setState((prev) => {
             const update = processCorrectPlacement(prev, activeCard);
             return commitTurn(prev, update, {
@@ -372,6 +392,7 @@ export function useWhenGame(): UseWhenGameReturn {
         // 5b. After red flash, remove card from timeline; it reappears as a tombstone
         // at its true position (display only — placement rules ignore failedPlacements)
         setTimeout(() => {
+          if (dealRef.current !== deal) return;
           setState((prev) => ({
             ...prev,
             timeline: prev.timeline.filter((e) => e.name !== activeCard.name),
@@ -392,6 +413,7 @@ export function useWhenGame(): UseWhenGameReturn {
         // 6b. After animation, finalize incorrect placement
         setTimeout(
           () => {
+            if (dealRef.current !== deal) return;
             setState((prev) => {
               const update = processIncorrectPlacement(prev, activeCard);
               // Multiplayer defers the hand-off, and the game-over phase, to popup dismissal
@@ -445,10 +467,13 @@ export function useWhenGame(): UseWhenGameReturn {
 
   // A replay restarts with a new seed so Restart reshuffles like a fresh play; every other
   // config restarts as-is (a challenge game is *meant* to repeat its order).
-  const restartGame = useCallback(() => {
-    const config = state.lastConfig;
-    if (config) startGame(config.curatedThemeId ? withFreshReplaySeed(config) : config);
-  }, [state.lastConfig, startGame]);
+  const restartGame = useCallback(
+    (options?: StartOptions) => {
+      const config = state.lastConfig;
+      if (config) startGame(config.curatedThemeId ? withFreshReplaySeed(config) : config, options);
+    },
+    [state.lastConfig, startGame]
+  );
 
   /**
    * Show a finished board again without replaying it: `restoreDailyBoard` hands back a
@@ -509,6 +534,7 @@ export function useWhenGame(): UseWhenGameReturn {
     cycleHand,
     resetGame,
     restartGame,
+    gameKey,
     enterReview,
     modalEvent,
     openModal,
