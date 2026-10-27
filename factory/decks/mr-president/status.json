@@ -1,9 +1,9 @@
 {
   "deck": "mr-president",
   "name": "Mr President",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-26T08:22:24.851Z",
-  "updated_at": "2026-10-27T02:06:43.776Z",
+  "updated_at": "2026-10-27T03:07:08.189Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-27T02:06:43.776Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-27T03:07:08.189Z"
     }
   ],
   "slugs": {
