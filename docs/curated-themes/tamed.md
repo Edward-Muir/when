@@ -169,3 +169,12 @@ card already in the 34:
   Post" (1150) was cut early for low confidence and to avoid a second pigeon-messenger beat
   1,193 years after `mutina-pigeon-messengers`; it remains a real and uncrowded gap (nothing
   else sits near 1150) if the deck is ever expanded past 34.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Animals brought into human service, as livestock, workers, companions and new breeds.
+- **Fact:** Dolly was the only one of 277 attempts to survive to adulthood. She was cloned from a mammary gland cell, so the team named her after the singer Dolly Parton.
+
+Sources: [Dolly (sheep), Wikipedia](<https://en.wikipedia.org/wiki/Dolly_(sheep)>); [Cloning of Dolly the Sheep, University of Edinburgh Our History](https://ourhistory.is.ed.ac.uk/index.php/Cloning_of_Dolly_the_Sheep,_1996).

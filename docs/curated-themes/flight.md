@@ -164,3 +164,12 @@ every alternative in that stretch is at least as close to something else.
 What Gusmão showed the Lisbon court in 1709 was a small unmanned hot-air balloon; the Passarola
 was a separate bird-shaped airship design that never flew, so the old title named the wrong
 craft.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** People leaving the ground in balloons, gliders, airships and aircraft, and the ideas that lifted them.
+- **Fact:** Sinking toward the Channel, Blanchard and Jeffries threw out their food, their oars for rowing the air, and finally almost all their clothes.
+
+Sources: [Two men braved death flying across the English Channel in a balloon (Smithsonian)](https://www.smithsonianmag.com/smart-news/on-this-day-in-1785-two-men-braved-death-when-they-flew-across-the-english-channel-in-a-balloon-180985724/); [Dr. Jeffries balloons across the Channel (Harvard Magazine)](https://www.harvardmagazine.com/2021/04/treasure-clothes-overboard).

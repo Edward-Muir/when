@@ -182,3 +182,12 @@ would have pushed past the clearable ceiling:
 - The medieval stretch is genuinely empty in the catalogue and only two cards cover it here.
   Cola Pesce, the Hepu pearl beds, and Marco Polo on the Gulf of Mannar fishery are all
   candidates if this theme is ever widened.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** People going deliberately under water, and what they found there.
+- **Fact:** The wreck of the Titanic lies about 3.8 km down, deeper than four Burj Khalifas stacked end to end.
+
+Sources: [Wreck of the Titanic](https://en.wikipedia.org/wiki/Wreck_of_the_Titanic) (12,500 ft, 3,800 m); Burj Khalifa 828 m, so 4.6 towers.
