@@ -44,7 +44,8 @@ import { buildDailyResult } from '../utils/dailyResult';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { getVignetteColor } from '../utils/vignettePulse';
 import { ACHIEVEMENTS } from '../data/achievements';
-import { buildEventsByName, GameMilestone } from '../utils/statsStorage';
+import { buildEventsByName, GameMilestone, getDailyCadence } from '../utils/statsStorage';
+import { canRestartMidGame } from '../utils/dailyReplay';
 import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
@@ -87,6 +88,19 @@ const HomeConfirmModal: React.FC<{
     </div>
   </Modal>
 );
+
+/**
+ * The top bar's Restart, offered while a practice game is being played (`canRestartMidGame`).
+ * At game over the bottom bar has its own Restart, and a review is a finished board. Extracted
+ * because `Game` sits on ESLint's complexity ceiling of 15, like the helpers below.
+ */
+function midGameRestart(state: WhenGameState, restart: () => void): (() => void) | undefined {
+  const available =
+    state.phase === 'playing' &&
+    !state.isReview &&
+    canRestartMidGame(state.lastConfig, getDailyCadence().playedDates);
+  return available ? restart : undefined;
+}
 
 // Whether the popup should reveal the event's year: cards already on the timeline and
 // revealed tombstones do; a hand card being previewed doesn't (that's the puzzle).
@@ -142,6 +156,8 @@ interface GameProps {
   showGameOverPopup: () => void;
   dismissPopup: () => void;
   onRestart: () => void;
+  /** Restart from the top bar mid-game, once confirmed: same deal rules as `onRestart`, no intro. */
+  onRestartMidGame: () => void;
   onNewGame: () => void;
   newlyUnlockedAchievements: string[];
   gameMilestones: GameMilestone[];
@@ -157,6 +173,7 @@ const Game: React.FC<GameProps> = ({
   showGameOverPopup,
   dismissPopup,
   onRestart,
+  onRestartMidGame,
   onNewGame,
   newlyUnlockedAchievements,
   gameMilestones,
@@ -344,10 +361,6 @@ const Game: React.FC<GameProps> = ({
     if (activeCard) showDescriptionPopup(activeCard);
   };
 
-  const handleTimelineCardTap = (event: HistoricalEvent) => {
-    showDescriptionPopup(event);
-  };
-
   const showYearInPopup = shouldShowYearInPopup(pendingPopup, state);
   // Tombstoned (failed) events get the muted/greyscale popup treatment
   const isTombstonePopup =
@@ -379,6 +392,8 @@ const Game: React.FC<GameProps> = ({
             // being re-read, so a review leaves straight away.
             onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
             dailyTheme={dailyThemeDisplay}
+            onRestart={midGameRestart(state, onRestartMidGame)}
+            restartDisabled={state.isAnimating}
           />
 
           {showConfetti && (
@@ -396,7 +411,7 @@ const Game: React.FC<GameProps> = ({
           <div className="flex-1 overflow-hidden relative">
             <Timeline
               events={state.timeline}
-              onEventTap={handleTimelineCardTap}
+              onEventTap={showDescriptionPopup}
               failedPlacements={state.failedPlacements}
               newEventName={newEventName}
               isDragging={dragState.isDragging}

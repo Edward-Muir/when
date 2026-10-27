@@ -1,4 +1,4 @@
-import { HistoricalEvent, WhenGameState, ALL_CATEGORIES } from '../types';
+import { GameConfig, HistoricalEvent, WhenGameState, ALL_CATEGORIES } from '../types';
 import { CuratedTheme, __setCuratedThemesForTest } from './curatedThemes';
 import { clearDailyPoolCache } from './dailyPool';
 import { DAILY_HAND_SIZE } from './dailyConfig';
@@ -8,6 +8,7 @@ import {
   ARCHIVE_DAYS,
   asRecordedDaily,
   buildDayReplayConfig,
+  canRestartMidGame,
   dayBest,
   getArchiveDays,
   isReplayableDay,
@@ -179,5 +180,23 @@ describe('asRecordedDaily', () => {
     expect(asRecordedDaily(replay, ['2026-09-05'])).toBe(replay);
     const custom = finished({ mode: 'suddenDeath', challengeCode: 'a-b-c' });
     expect(asRecordedDaily(custom, [])).toBe(custom);
+  });
+});
+
+describe('canRestartMidGame', () => {
+  const config = (fields: Partial<GameConfig>) =>
+    ({ mode: 'suddenDeath', selectedCategories: [], ...fields }) as GameConfig;
+
+  it('allows any practice game', () => {
+    expect(canRestartMidGame(config({ challengeSeed: 'a-b-c' }), [])).toBe(true);
+    expect(canRestartMidGame(config({ dailyReplayDate: '2026-09-05' }), ['2026-09-05'])).toBe(true);
+  });
+
+  it("refuses today's daily and a missed day's first, recorded run", () => {
+    expect(canRestartMidGame(config({ mode: 'daily', dailySeed: '2026-09-06' }), [])).toBe(false);
+    expect(canRestartMidGame(config({ dailyReplayDate: '2026-09-05' }), ['2026-09-04'])).toBe(
+      false
+    );
+    expect(canRestartMidGame(null, [])).toBe(false);
   });
 });
