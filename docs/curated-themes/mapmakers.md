@@ -168,3 +168,12 @@ the International Map of the World proposal (1891); the Peters projection row (1
 radar sweep of the land surface (2000); and OpenStreetMap (2004). The last three are the
 biggest hole: the theme's modern tail is imagery and positioning, and it has nothing on the
 argument about _how_ a projection lies.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Maps, charts and surveys that changed how people pictured the world.
+- **Fact:** The first map to print the name "America" ran to about a thousand copies. One survives, and the Library of Congress paid $10 million for it.
+
+Sources: [Library of Congress, purchase completed](https://www.loc.gov/item/prn-03-110/) ($10 million, the only known copy of about 1,000 printed).

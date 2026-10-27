@@ -25,6 +25,7 @@ index.tsx                      # BrowserRouter + the routes below
 │       ├── HintStrip.tsx      # The one-line hint pill (also inline on each home tab)
 │       ├── Timeline/          # Timeline.tsx, TimelineEvent.tsx, TombstoneRow.tsx
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
+│       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
 │       │   ├── Menu.tsx                # Burger drawer: Dark Mode, Daily reminder (native), Share App,
@@ -56,7 +57,8 @@ milestones, achievements, then always the share; `useOnboardingHints` — the in
 hint machine, kept out of `Game.tsx` because Game sits on the ESLint complexity ceiling;
 settle-driven, one hint per placement, walking `wrong` -> `correct` -> `tapCard` -> `stats`
 -> `swap` with only the idle drag nudge on a timer;
-`useTabHint` — a home tab's first-visit strip, gated on `active`).
+`useTabHint` — a home tab's first-visit strip, gated on `active`; `useThemeIntro` — whether
+a game opens on its curated theme's intro popup, once per theme).
 
 ## Utils
 

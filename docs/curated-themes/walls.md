@@ -172,3 +172,12 @@ Real gaps, not filler:
 - **Vauban's Neuf-Brisach** and **Suomenlinna** — both genuine 18th-century star forts, cut
   as redundant with `fort-ticonderoga-built`. Either would extend the deck past 34 if a future
   edit wants a 35th or 36th card.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Walls, castles, forts and defensive lines built to keep people out, and some that fell.
+- **Fact:** The Berlin Wall opened partly by mistake. A poorly briefed spokesman told reporters that new travel rules took effect immediately, and crowds went straight to the crossings.
+
+Sources: [Gunter Schabowski, Wikipedia](https://en.wikipedia.org/wiki/G%C3%BCnter_Schabowski); [Press conference transcript, Wilson Center Digital Archive](https://digitalarchive.wilsoncenter.org/node/89307).
