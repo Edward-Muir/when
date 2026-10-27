@@ -3,7 +3,7 @@
   "name": "Big Thinkers",
   "stage": "art-in-progress",
   "created_at": "2026-10-27T04:19:32.091Z",
-  "updated_at": "2026-10-27T18:14:30.097Z",
+  "updated_at": "2026-10-27T18:17:21.398Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-27T18:14:30.097Z"
     },
     "sartre-being-and-nothingness": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "66300532773a40949b138e9ddaf8046c044153e089f6d2c56e78c877f5666bea",
+      "updated_at": "2026-10-27T18:17:21.398Z"
     },
     "beauvoir-second-sex": {
       "state": "pending",
