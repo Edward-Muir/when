@@ -5,6 +5,7 @@
  * - Nav "new" dots
  * - The pre-stats timeline high score (read once by the stats migration)
  * - Leaderboard display name, chosen avatar and today's submission
+ * - Which achievement portraits the player has been shown
  * - Daily reminder opt-out and reminder-priming dismissals
  * - Custom-game settings
  */
@@ -310,6 +311,30 @@ export function markNavSeen(key: NavKey): void {
 export function markNavUnseen(key: NavKey): void {
   const data = readJson<NavSeen>(NAV_SEEN_KEY, {});
   writeJson(NAV_SEEN_KEY, clearNavSeen(data, key), 'nav seen state');
+}
+
+// --- Achievement portraits already shown ---
+
+/**
+ * Achievement portrait ids the player has already been shown in the picker. A portrait is new
+ * while it is owned (derived from `when-achievements`) but not in here, so an unlock needs no
+ * re-arming. Its own key rather than a hint: it holds a growing set, not a boolean.
+ */
+const PORTRAITS_SEEN_KEY = 'when-portraits-seen';
+
+export function getSeenPortraits(): Set<string> {
+  return readJson(
+    PORTRAITS_SEEN_KEY,
+    new Set<string>(),
+    (raw) => new Set(Array.isArray(raw) ? raw.filter((id) => typeof id === 'string') : [])
+  );
+}
+
+export function markPortraitsSeen(ids: Iterable<string>): void {
+  const seen = getSeenPortraits();
+  const before = seen.size;
+  for (const id of ids) seen.add(id);
+  if (seen.size !== before) writeJson(PORTRAITS_SEEN_KEY, [...seen], 'seen portraits');
 }
 
 // --- Timeline High Score Storage ---
