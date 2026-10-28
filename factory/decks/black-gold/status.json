@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T14:25:17.265Z",
+  "updated_at": "2026-10-28T14:27:56.627Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-28T14:25:17.265Z"
     },
     "saudi-aramco-ipo": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a87e48d661f7d2f63fa0393730fdbdf48b8a7be1992a4191c24c7658efe7ff47",
+      "updated_at": "2026-10-28T14:27:56.627Z"
     },
     "oil-price-negative-wti": {
       "state": "pending",
