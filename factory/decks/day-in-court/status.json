@@ -1,21 +1,26 @@
 {
   "deck": "day-in-court",
   "name": "Day in Court",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T03:16:28.102Z",
+  "updated_at": "2026-10-28T04:09:06.085Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-28T03:16:28.102Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-28T04:09:06.085Z"
     }
   ],
   "slugs": {
     "trial-of-joan-of-arc-rouen": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "92e72f8b10eb01de81d024c4e01630a3aa367a7d65a5c042504f5897e5f0f429",
+      "updated_at": "2026-10-28T04:09:06.085Z"
     },
     "trial-of-sir-thomas-more": {
       "state": "pending",
