@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T14:14:18.477Z",
+  "updated_at": "2026-10-28T14:17:15.293Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-28T14:14:18.477Z"
     },
     "oil-price-collapse-glut": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ca62d3b6c797075af307ec410e76a158a99906e15dde41583c1c9e6398cbc11c",
+      "updated_at": "2026-10-28T14:17:15.293Z"
     },
     "kuwait-oil-fires": {
       "state": "pending",
