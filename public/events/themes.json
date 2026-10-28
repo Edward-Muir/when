@@ -12868,7 +12868,10 @@
     "year": -209,
     "category": "revolution",
     "description": "Conscripts delayed by floods and facing execution rose against China's harsh first imperial dynasty, sparking a mass revolt.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "boudica-revolt",
@@ -12876,7 +12879,11 @@
     "year": 60,
     "category": "revolution",
     "description": "A widowed Iceni queen rallied British tribes and burned Roman Colchester, London and St Albans before being crushed.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "zanj-rebellion-begins",
@@ -12884,7 +12891,10 @@
     "year": 869,
     "category": "revolution",
     "description": "Enslaved East Africans draining salt marshes in Iraq rose against the caliphate and held out for well over a decade.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "pilgrimage-of-grace-rising",
@@ -12892,7 +12902,10 @@
     "year": 1536,
     "category": "revolution",
     "description": "Tens of thousands in northern England rose to protest the closing of monasteries and the religious policies of Henry VIII.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "pueblo-revolt-spanish-expelled",
@@ -12900,7 +12913,11 @@
     "year": 1680,
     "category": "revolution",
     "description": "Pueblo peoples of the Southwest united to drive Spanish settlers and missionaries from their homeland for a dozen years.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Spain",
+      "United States"
+    ]
   },
   {
     "name": "pugachev-rebellion",
@@ -12908,7 +12925,11 @@
     "year": 1773,
     "category": "revolution",
     "description": "A Cossack claiming to be the murdered tsar raised serfs and Cossacks and threatened Catherine the Great's throne.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "tupac-amaru-ii-rebellion",
@@ -12916,7 +12937,11 @@
     "year": 1780,
     "category": "revolution",
     "description": "A descendant of Inca royalty led Andean Indigenous and mixed-race people against Spanish taxes and forced labour.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Peru",
+      "Spain"
+    ]
   },
   {
     "name": "zapatista-uprising-chiapas",
@@ -12924,6 +12949,9 @@
     "year": 1994,
     "category": "revolution",
     "description": "Masked Indigenous rebels seized towns in Chiapas on the day a major trade pact took effect, demanding land and rights.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ]
   }
 ]
