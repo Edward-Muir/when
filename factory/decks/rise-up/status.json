@@ -3,7 +3,7 @@
   "name": "Rise Up!",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T17:15:18.520Z",
-  "updated_at": "2026-10-28T18:21:22.793Z",
+  "updated_at": "2026-10-28T18:24:07.821Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-28T18:21:22.793Z"
     },
     "pugachev-rebellion": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a15eb3241c56ad2ed3d52272454b4bfc6a30beeedfa1e8c08f32211829bb0caf",
+      "updated_at": "2026-10-28T18:24:07.821Z"
     },
     "tupac-amaru-ii-rebellion": {
       "state": "pending",
