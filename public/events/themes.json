@@ -12868,7 +12868,10 @@
     "year": 1431,
     "category": "law",
     "description": "A church court at Rouen tried the French peasant girl who led armies, finding her guilty of heresy before she was burned.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "trial-of-sir-thomas-more",
@@ -12876,7 +12879,10 @@
     "year": 1535,
     "category": "law",
     "description": "The former Lord Chancellor was convicted for refusing to accept the king as head of the English church.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "charles-i-put-on-trial",
@@ -12884,7 +12890,10 @@
     "year": 1649,
     "category": "law",
     "description": "A special court of Parliament tried the reigning English king for treason against his own people and condemned him.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "zenger-libel-acquittal",
@@ -12892,7 +12901,10 @@
     "year": 1735,
     "category": "law",
     "description": "A New York printer won acquittal on a libel charge after his lawyer argued that truth was a defence, a landmark for press freedom.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "boston-massacre-soldiers-trial",
@@ -12900,7 +12912,10 @@
     "year": 1770,
     "category": "law",
     "description": "John Adams defended the redcoats who fired on a crowd, and a colonial jury acquitted most of them.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "amistad-supreme-court-ruling",
@@ -12908,7 +12923,10 @@
     "year": 1841,
     "category": "law",
     "description": "The US Supreme Court freed Africans who had seized a slave ship, with John Quincy Adams arguing their case.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "john-brown-trial-harpers-ferry",
@@ -12916,7 +12934,10 @@
     "year": 1859,
     "category": "law",
     "description": "The abolitionist was convicted of treason and murder after his raid on a federal arsenal, and hanged weeks later.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "oscar-wilde-trials",
@@ -12924,7 +12945,10 @@
     "year": 1895,
     "category": "law",
     "description": "The celebrated playwright sued for libel, then was prosecuted himself and sentenced to two years of hard labour.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "sacco-vanzetti-convicted",
@@ -12932,7 +12956,10 @@
     "year": 1921,
     "category": "law",
     "description": "Two Italian immigrant anarchists were found guilty of a Massachusetts payroll murder in a trial that sparked worldwide protest.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "al-capone-tax-evasion-conviction",
@@ -12940,7 +12967,10 @@
     "year": 1931,
     "category": "law",
     "description": "Chicago's most notorious gangster was jailed not for violence but for failing to pay income tax.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "us-v-nixon-supreme-court",
@@ -12948,7 +12978,10 @@
     "year": 1974,
     "category": "law",
     "description": "The Supreme Court unanimously ordered the president to hand over secret White House tapes, hastening his fall.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rodney-king-officers-acquitted",
@@ -12956,7 +12989,10 @@
     "year": 1992,
     "category": "law",
     "description": "A suburban jury cleared police officers filmed beating a Black motorist, setting off days of unrest in a major city.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "bush-v-gore-ruling",
@@ -12964,7 +13000,10 @@
     "year": 2000,
     "category": "law",
     "description": "The Supreme Court halted a Florida recount, effectively deciding a razor-thin presidential contest.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "depp-v-heard-verdict",
@@ -12972,6 +13011,9 @@
     "year": 2022,
     "category": "law",
     "description": "A Virginia jury ruled in a livestreamed defamation case between two Hollywood actors that gripped social media.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
