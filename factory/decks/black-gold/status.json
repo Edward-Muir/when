@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T11:07:47.880Z",
+  "updated_at": "2026-10-28T12:09:14.169Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-28T11:07:47.880Z"
     },
     "east-texas-oil-field-discovery": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e2ddf3346536a71558add79537c5a4e8fe243258f79a5a08338a1f78f1937933",
+      "updated_at": "2026-10-28T12:09:14.169Z"
     },
     "bahrain-first-gulf-oil-strike": {
       "state": "pending",
