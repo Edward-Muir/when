@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T04:25:02.861Z",
+  "updated_at": "2026-10-28T04:27:39.804Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-28T04:25:02.861Z"
     },
     "oscar-wilde-trials": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6dcbfa3a5a9919c4a8fedec658bf548ee227659620d991cc3f768ccc7bdd6c7e",
+      "updated_at": "2026-10-28T04:27:39.804Z"
     },
     "sacco-vanzetti-convicted": {
       "state": "pending",
