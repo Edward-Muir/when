@@ -3,7 +3,7 @@
   "name": "Rise Up!",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T17:15:18.520Z",
-  "updated_at": "2026-10-28T18:13:02.191Z",
+  "updated_at": "2026-10-28T18:15:50.097Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-28T18:13:02.191Z"
     },
     "zanj-rebellion-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "543412af72e1a3fa83074afd829806e880fde8fd3ff9bee82dc71108271e2ee3",
+      "updated_at": "2026-10-28T18:15:50.097Z"
     },
     "pilgrimage-of-grace-rising": {
       "state": "pending",
