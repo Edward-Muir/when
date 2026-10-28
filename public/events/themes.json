@@ -12868,7 +12868,10 @@
     "year": 1821,
     "category": "commerce",
     "description": "A gunsmith in a small New York town piped gas from a shallow well to nearby buildings, America's first commercial gas well.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "baku-first-mechanical-oil-well",
@@ -12876,7 +12879,11 @@
     "year": 1846,
     "category": "invention",
     "description": "On the Caspian shore, a Russian engineer drilled an oil well with a mechanical rig, years before the American boom.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Azerbaijan",
+      "Europe"
+    ]
   },
   {
     "name": "drake-well-titusville",
@@ -12884,7 +12891,10 @@
     "year": 1859,
     "category": "commerce",
     "description": "Edwin Drake drilled into the ground near Titusville and struck oil, launching the modern petroleum industry.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-oil-pipeline-pithole",
@@ -12892,7 +12902,10 @@
     "year": 1865,
     "category": "invention",
     "description": "A short iron pipeline carried crude from a boom town's wells to a railhead, ending reliance on teamsters and wagons.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gluckauf-first-modern-tanker",
@@ -12900,7 +12913,11 @@
     "year": 1886,
     "category": "invention",
     "description": "A steamship built with its hull as the cargo tank proved that oil could be shipped cheaply by sea in bulk.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "spindletop-gusher",
@@ -12908,7 +12925,10 @@
     "year": 1901,
     "category": "commerce",
     "description": "A Texas salt dome blew in a roaring column of oil, opening the era of Gulf Coast oil and Texas wealth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "persia-oil-discovery-masjed-soleiman",
@@ -12916,7 +12936,11 @@
     "year": 1908,
     "category": "commerce",
     "description": "After years of costly searching, a British-funded drill hit a major oil field in the Middle East.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iran",
+      "United Kingdom"
+    ]
   },
   {
     "name": "standard-oil-breakup",
@@ -12924,7 +12948,10 @@
     "year": 1911,
     "category": "law",
     "description": "The US Supreme Court ordered the giant oil trust split into dozens of separate companies.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "teapot-dome-oil-leases",
@@ -12932,7 +12959,10 @@
     "year": 1922,
     "category": "law",
     "description": "A secret deal leasing navy oil reserves to private oilmen exposed bribery at the top of the American government.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "baba-gurgur-gusher-iraq",
@@ -12940,7 +12970,10 @@
     "year": 1927,
     "category": "commerce",
     "description": "A well near Kirkuk blew in with a huge fountain of oil, revealing one of the largest fields in the Middle East.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "east-texas-oil-field-discovery",
@@ -12948,7 +12981,10 @@
     "year": 1930,
     "category": "commerce",
     "description": "A wildcatter's well struck a vast field that flooded the market and crashed prices during the Depression.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "bahrain-first-gulf-oil-strike",
@@ -12956,7 +12992,11 @@
     "year": 1932,
     "category": "commerce",
     "description": "An American-drilled well on a small Gulf island found oil, the first strike on the Arab side of the Gulf.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Bahrain",
+      "United States"
+    ]
   },
   {
     "name": "first-offshore-well-out-of-sight-of-land",
@@ -12964,7 +13004,10 @@
     "year": 1947,
     "category": "invention",
     "description": "An offshore well in the Gulf of Mexico was drilled where no shore could be seen, launching the offshore oil industry.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "iran-nationalizes-oil-industry",
@@ -12972,7 +13015,11 @@
     "year": 1951,
     "category": "empires",
     "description": "Parliament seized the British-run oil company's assets, setting off a major crisis over control of Middle East oil.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iran",
+      "United Kingdom"
+    ]
   },
   {
     "name": "groningen-gas-field-discovery",
@@ -12980,7 +13027,10 @@
     "year": 1959,
     "category": "science",
     "description": "A Dutch exploration well hit one of the largest natural gas fields in the world, reshaping Europe's energy supply.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "trans-alaska-pipeline-first-oil",
@@ -12988,7 +13038,10 @@
     "year": 1977,
     "category": "architecture",
     "description": "The first crude from the North Slope began its long journey south across Alaska to a port on the Pacific.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "iranian-revolution-oil-shock",
@@ -12996,7 +13049,10 @@
     "year": 1979,
     "category": "commerce",
     "description": "Turmoil in a major producer cut supplies, doubled prices and sent drivers back into long fuel queues.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iran"
+    ]
   },
   {
     "name": "oil-price-collapse-glut",
@@ -13004,7 +13060,11 @@
     "year": 1986,
     "category": "commerce",
     "description": "Producers flooded the market and crude lost more than half its value in months, ending years of high prices.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Saudi Arabia",
+      "Global"
+    ]
   },
   {
     "name": "kuwait-oil-fires",
@@ -13012,7 +13072,11 @@
     "year": 1991,
     "category": "disasters",
     "description": "Retreating troops set hundreds of wells alight, producing black smoke clouds over the desert for months.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq",
+      "Kuwait"
+    ]
   },
   {
     "name": "exxon-mobil-merger",
@@ -13020,7 +13084,10 @@
     "year": 1998,
     "category": "commerce",
     "description": "Two descendants of Standard Oil announced a union that would create the largest oil company in the world.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "record-crude-oil-price-peak",
@@ -13028,7 +13095,11 @@
     "year": 2008,
     "category": "commerce",
     "description": "Oil surged to nearly 150 dollars a barrel before collapsing as the financial crisis deepened.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "saudi-aramco-ipo",
@@ -13036,7 +13107,10 @@
     "year": 2019,
     "category": "commerce",
     "description": "The world's biggest oil producer sold shares on its home exchange in the largest stock offering ever.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "oil-price-negative-wti",
@@ -13044,6 +13118,9 @@
     "year": 2020,
     "category": "commerce",
     "description": "A collapse in demand during lockdowns pushed a benchmark futures contract to a negative price for the first time.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
