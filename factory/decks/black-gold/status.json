@@ -1,9 +1,9 @@
 {
   "deck": "black-gold",
   "name": "Black Gold",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T15:07:33.245Z",
+  "updated_at": "2026-10-28T16:07:01.027Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-28T15:07:33.245Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-28T16:07:01.027Z"
     }
   ],
   "slugs": {
