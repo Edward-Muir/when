@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T12:17:00.484Z",
+  "updated_at": "2026-10-28T13:07:44.325Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,32 +86,32 @@
       "updated_at": "2026-10-28T11:07:47.880Z"
     },
     "east-texas-oil-field-discovery": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e2ddf3346536a71558add79537c5a4e8fe243258f79a5a08338a1f78f1937933",
-      "updated_at": "2026-10-28T12:09:14.169Z"
+      "updated_at": "2026-10-28T13:07:44.230Z"
     },
     "bahrain-first-gulf-oil-strike": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b9792049aa1ecc92709e6e6b520fcf1f3a72cca9be614d17c50f9f20dc94b1eb",
-      "updated_at": "2026-10-28T12:11:53.564Z"
+      "updated_at": "2026-10-28T13:07:44.265Z"
     },
     "first-offshore-well-out-of-sight-of-land": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2c3013f9156e1c817f0dd6c261d63dab38656dfff5d19fda0ff24250a8e09460",
-      "updated_at": "2026-10-28T12:14:26.219Z"
+      "updated_at": "2026-10-28T13:07:44.295Z"
     },
     "iran-nationalizes-oil-industry": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5d054eadedbbd923de5865b217cf55ace9b76e878f2acbe4927a585532f7ccbd",
-      "updated_at": "2026-10-28T12:17:00.484Z"
+      "updated_at": "2026-10-28T13:07:44.325Z"
     },
     "groningen-gas-field-discovery": {
       "state": "pending",
