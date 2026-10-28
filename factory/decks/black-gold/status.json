@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T13:07:44.325Z",
+  "updated_at": "2026-10-28T14:09:05.765Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-28T13:07:44.325Z"
     },
     "groningen-gas-field-discovery": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "753f34ca7788389d3f6fcdd2ebc7f9d51a0fb13b363af7a859a0aada5bd01299",
+      "updated_at": "2026-10-28T14:09:05.765Z"
     },
     "trans-alaska-pipeline-first-oil": {
       "state": "pending",
