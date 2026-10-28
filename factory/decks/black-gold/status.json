@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T10:30:01.465Z",
+  "updated_at": "2026-10-28T11:07:47.880Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "fredonia-natural-gas-well": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9631e8d6f3c6685c5bf9f85dc8b2adaa91b7c93e2a977a2c2f541553f6bf5c04",
-      "updated_at": "2026-10-28T10:08:48.844Z"
+      "updated_at": "2026-10-28T11:07:47.578Z"
     },
     "baku-first-mechanical-oil-well": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f4576417d30c5881377b77ab465959964260db10372af1b8ae498f31239e8da8",
-      "updated_at": "2026-10-28T10:11:08.391Z"
+      "updated_at": "2026-10-28T11:07:47.612Z"
     },
     "drake-well-titusville": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3092d5aaa70d8e84ca7d5efdeaa8d9d9669c27fd4074fa7ae3db19a2d30ff47f",
-      "updated_at": "2026-10-28T10:13:28.456Z"
+      "updated_at": "2026-10-28T11:07:47.643Z"
     },
     "first-oil-pipeline-pithole": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5ec23cf02a8ca848d0257102f8a95c79962751882acbad394ddf0594b2d2e36c",
-      "updated_at": "2026-10-28T10:15:47.383Z"
+      "updated_at": "2026-10-28T11:07:47.674Z"
     },
     "gluckauf-first-modern-tanker": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a6aba640b56903ad535355ff31be0263c824514b3931e154aabfb0797c709792",
-      "updated_at": "2026-10-28T10:18:06.002Z"
+      "updated_at": "2026-10-28T11:07:47.705Z"
     },
     "spindletop-gusher": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "288229e5a74e530567e09475d1ce43c2bdd3385719bc06df7da4e70cd3a14d7c",
-      "updated_at": "2026-10-28T10:20:46.442Z"
+      "updated_at": "2026-10-28T11:07:47.736Z"
     },
     "persia-oil-discovery-masjed-soleiman": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8b86e2ccfe36c0de24dc5257e0c9f0dcaaef21a62f481380fad46192afff09b6",
-      "updated_at": "2026-10-28T10:23:05.371Z"
+      "updated_at": "2026-10-28T11:07:47.769Z"
     },
     "standard-oil-breakup": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0dcbf90165664d4e889c9972b076c181a846a56d60d1197af8f6b0be6ae45c8a",
-      "updated_at": "2026-10-28T10:25:21.177Z"
+      "updated_at": "2026-10-28T11:07:47.808Z"
     },
     "teapot-dome-oil-leases": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7d3c690c988c4aab4e5b7121ecd726f4af36d7f1180c755138bc281ca0f0279c",
-      "updated_at": "2026-10-28T10:27:39.598Z"
+      "updated_at": "2026-10-28T11:07:47.845Z"
     },
     "baba-gurgur-gusher-iraq": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "261691facec7973a20a98c547baaec6f0e2b0fca751429a69ce3734031bd5c94",
-      "updated_at": "2026-10-28T10:30:01.465Z"
+      "updated_at": "2026-10-28T11:07:47.880Z"
     },
     "east-texas-oil-field-discovery": {
       "state": "pending",

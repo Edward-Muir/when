@@ -1,0 +1,15 @@
+{
+  "slug": "baba-gurgur-gusher-iraq",
+  "description": "A tall black column of oil or gas shoots up from a wellhead at the top of the frame, with flames flickering at its base. A wooden derrick tower stands in the centre-left on a barren dirt plain. Several robed figures in white headdresses and dark robes walk or run toward the viewer in the lower left, and small ground fires burn among dark rocks. The sky is grey and smoky, and the whole thing is in a loose, thick-brushed oil-painting style with no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "standard-oil-breakup",
+  "description": "A dim, oil-painted courtroom with dark wood panelling, marble columns, and robed judges seated on a raised bench at the back. In the foreground, a long wooden table holds a detailed model of an oil field: wooden derricks, tanks, pipes, small factories and houses on a board, with a few loose pieces scattered at the front. A robed figure sits at the left edge in the foreground, with candles on stands and drapes on tall windows. No visible text, and the image fills the whole frame edge to edge. Era cues look early 20th century: suits, judicial robes, lamps and derricks of that style.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
