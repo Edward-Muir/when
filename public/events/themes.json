@@ -12868,7 +12868,11 @@
     "year": 1613,
     "category": "empires",
     "description": "An assembly of nobles, clergy and townsmen chose a teenage boy to end years of chaos and found a new ruling dynasty.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "peter-and-ivan-co-tsars",
@@ -12876,7 +12880,11 @@
     "year": 1682,
     "category": "empires",
     "description": "After a bloody revolt by the palace guards, a young boy and his half-brother were crowned together under their sister as regent.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "peter-great-embassy-europe",
@@ -12884,7 +12892,13 @@
     "year": 1697,
     "category": "figures",
     "description": "Russia's tsar travelled in disguise through Dutch and English shipyards and workshops, hoping to learn skills his country lacked.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Netherlands",
+      "Russia",
+      "United Kingdom",
+      "Europe"
+    ]
   },
   {
     "name": "founding-st-petersburg",
@@ -12892,7 +12906,11 @@
     "year": 1703,
     "category": "architecture",
     "description": "Peter began building a new city on marshy Baltic land as a showpiece port and Russia's window on the West.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "peter-proclaimed-emperor",
@@ -12900,7 +12918,11 @@
     "year": 1721,
     "category": "empires",
     "description": "With peace made with Sweden after a long war, the Senate gave Peter the title of Emperor of all Russia.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "elizabeth-seizes-russian-throne",
@@ -12908,7 +12930,11 @@
     "year": 1741,
     "category": "revolution",
     "description": "Peter's daughter led guards regiments in a bloodless coup against an infant ruler and his German-influenced regency.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "russia-annexes-crimea",
@@ -12916,7 +12942,12 @@
     "year": 1783,
     "category": "empires",
     "description": "The empress absorbed the Crimean Khanate, gaining warm-water Black Sea ports for her fleet.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ]
   },
   {
     "name": "paul-i-assassinated",
@@ -12924,7 +12955,11 @@
     "year": 1801,
     "category": "revolution",
     "description": "Conspirators killed the unpopular emperor in his palace bedroom, and his son Alexander took the throne.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "decembrist-revolt",
@@ -12932,7 +12967,11 @@
     "year": 1825,
     "category": "revolution",
     "description": "Liberal-minded army officers led troops onto a square in the capital to oppose a new tsar, and were crushed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "tsarskoye-selo-railway-opens",
@@ -12940,7 +12979,11 @@
     "year": 1837,
     "category": "invention",
     "description": "A short line carried passengers from the capital to the imperial residence, launching steam travel in the empire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "tolstoy-war-and-peace-completed",
@@ -12948,7 +12991,11 @@
     "year": 1869,
     "category": "writing",
     "description": "Tolstoy's vast novel of the struggle against Napoleon finished publication in book form, a landmark of world literature.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "faberge-first-imperial-egg",
@@ -12956,7 +13003,11 @@
     "year": 1885,
     "category": "craft",
     "description": "A jeweller made a jewelled Easter egg with a hidden golden hen for the tsar's wife, starting a famed annual tradition.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "trans-siberian-railway-begun",
@@ -12964,7 +13015,11 @@
     "year": 1891,
     "category": "architecture",
     "description": "Work started on a giant rail line to link Moscow with the Pacific, with the future tsar laying a ceremonial first stone.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "nicholas-ii-becomes-tsar",
@@ -12972,7 +13027,11 @@
     "year": 1894,
     "category": "figures",
     "description": "On his father's early death, a young and uncertain heir took the throne as the last of the Romanov line.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "bloody-sunday-st-petersburg",
@@ -12980,7 +13039,11 @@
     "year": 1905,
     "category": "revolution",
     "description": "Troops fired on a peaceful crowd of workers marching to petition the tsar, igniting a nationwide revolt.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "russia-enters-world-war-one",
@@ -12988,7 +13051,11 @@
     "year": 1914,
     "category": "warfare",
     "description": "Mobilising to defend Serbia, the empire went to war with Germany and Austria, beginning a disastrous conflict.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "rasputin-murdered",
@@ -12996,6 +13063,10 @@
     "year": 1916,
     "category": "figures",
     "description": "Nobles poisoned, shot and drowned the mystic who held sway over the imperial family and its court.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   }
 ]
