@@ -5,7 +5,7 @@
     "year": 1821,
     "category": "commerce",
     "description": "A gunsmith in a small New York town piped gas from a shallow well to nearby buildings, America's first commercial gas well.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "baku-first-mechanical-oil-well",
@@ -13,7 +13,7 @@
     "year": 1846,
     "category": "invention",
     "description": "On the Caspian shore, a Russian engineer drilled an oil well with a mechanical rig, years before the American boom.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "drake-well-titusville",
@@ -29,7 +29,7 @@
     "year": 1865,
     "category": "invention",
     "description": "A short iron pipeline carried crude from a boom town's wells to a railhead, ending reliance on teamsters and wagons.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "gluckauf-first-modern-tanker",
@@ -37,7 +37,7 @@
     "year": 1886,
     "category": "invention",
     "description": "A steamship built with its hull as the cargo tank proved that oil could be shipped cheaply by sea in bulk.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "spindletop-gusher",
@@ -53,7 +53,7 @@
     "year": 1908,
     "category": "commerce",
     "description": "After years of costly searching, a British-funded drill hit a major oil field in the Middle East.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "standard-oil-breakup",
@@ -61,7 +61,7 @@
     "year": 1911,
     "category": "law",
     "description": "The US Supreme Court ordered the giant oil trust split into dozens of separate companies.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "teapot-dome-oil-leases",
@@ -77,7 +77,7 @@
     "year": 1927,
     "category": "commerce",
     "description": "A well near Kirkuk blew in with a huge fountain of oil, revealing one of the largest fields in the Middle East.",
-    "difficulty": "very-hard"
+    "difficulty": "medium"
   },
   {
     "name": "east-texas-oil-field-discovery",
@@ -85,7 +85,7 @@
     "year": 1930,
     "category": "commerce",
     "description": "A wildcatter's well struck a vast field that flooded the market and crashed prices during the Depression.",
-    "difficulty": "hard"
+    "difficulty": "easy"
   },
   {
     "name": "bahrain-first-gulf-oil-strike",
@@ -93,7 +93,7 @@
     "year": 1932,
     "category": "commerce",
     "description": "An American-drilled well on a small Gulf island found oil, the first strike on the Arab side of the Gulf.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "first-offshore-well-out-of-sight-of-land",
@@ -101,7 +101,7 @@
     "year": 1947,
     "category": "invention",
     "description": "An offshore well in the Gulf of Mexico was drilled where no shore could be seen, launching the offshore oil industry.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "iran-nationalizes-oil-industry",
@@ -117,7 +117,7 @@
     "year": 1959,
     "category": "science",
     "description": "A Dutch exploration well hit one of the largest natural gas fields in the world, reshaping Europe's energy supply.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "trans-alaska-pipeline-first-oil",
@@ -140,7 +140,7 @@
     "friendly_name": "Oil Prices Collapse",
     "year": 1986,
     "category": "commerce",
-    "description": "Producers flooded the market and crude lost more than half its value in months, ending the boom of the previous decade.",
+    "description": "Producers flooded the market and crude lost more than half its value in months, ending years of high prices.",
     "difficulty": "hard"
   },
   {
@@ -149,15 +149,15 @@
     "year": 1991,
     "category": "disasters",
     "description": "Retreating troops set hundreds of wells alight, producing black smoke clouds over the desert for months.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "exxon-mobil-merger",
     "friendly_name": "Exxon and Mobil Agree to Merge",
     "year": 1998,
     "category": "commerce",
-    "description": "Two descendants of Standard Oil announced a union that would create the largest company in the world.",
-    "difficulty": "hard"
+    "description": "Two descendants of Standard Oil announced a union that would create the largest oil company in the world.",
+    "difficulty": "easy"
   },
   {
     "name": "record-crude-oil-price-peak",
@@ -165,7 +165,7 @@
     "year": 2008,
     "category": "commerce",
     "description": "Oil surged to nearly 150 dollars a barrel before collapsing as the financial crisis deepened.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "saudi-aramco-ipo",
@@ -173,7 +173,7 @@
     "year": 2019,
     "category": "commerce",
     "description": "The world's biggest oil producer sold shares on its home exchange in the largest stock offering ever.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "oil-price-negative-wti",
@@ -181,6 +181,6 @@
     "year": 2020,
     "category": "commerce",
     "description": "A collapse in demand during lockdowns pushed a benchmark futures contract to a negative price for the first time.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   }
 ]
