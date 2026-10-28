@@ -1,0 +1,15 @@
+{
+  "slug": "depp-v-heard-verdict",
+  "description": "Oil-style painting of a modern wood-panelled courtroom. A broadcast video camera on a tripod dominates the foreground; behind it a gallery of spectators holds up glowing phones. A wooden lectern with a microphone, a judge's bench and chair, a monitor and papers, and a round state seal on the back wall. No frame, border, signature, blood or nudity. The seal's rim has only tiny painterly marks, not readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

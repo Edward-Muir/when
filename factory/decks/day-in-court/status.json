@@ -1,9 +1,9 @@
 {
   "deck": "day-in-court",
   "name": "Day in Court",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T06:17:10.533Z",
+  "updated_at": "2026-10-28T07:07:40.340Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-28T04:09:06.085Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-28T07:07:40.340Z"
     }
   ],
   "slugs": {
@@ -86,32 +90,32 @@
       "updated_at": "2026-10-28T05:07:21.327Z"
     },
     "us-v-nixon-supreme-court": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6d7bc3f961732bc110cb56b31d3a7b825c86199933806050d808d62036a3b763",
-      "updated_at": "2026-10-28T06:09:29.399Z"
+      "updated_at": "2026-10-28T07:07:40.246Z"
     },
     "rodney-king-officers-acquitted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9907db768487e46d4ec069288b5d86c50dab3c6d78985625a25e3f78aca46910",
-      "updated_at": "2026-10-28T06:12:03.937Z"
+      "updated_at": "2026-10-28T07:07:40.278Z"
     },
     "bush-v-gore-ruling": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "282e0d4129f73bcacfc8c6c8e58e8d56f4533a9e9f935ff94cf4ff6b314a4ed7",
-      "updated_at": "2026-10-28T06:14:38.428Z"
+      "updated_at": "2026-10-28T07:07:40.308Z"
     },
     "depp-v-heard-verdict": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "783d6f1712dcaad5d9c982fdbc425774316e2d04ea2c68015c38868e76d3a08b",
-      "updated_at": "2026-10-28T06:17:10.533Z"
+      "updated_at": "2026-10-28T07:07:40.340Z"
     }
   }
 }
