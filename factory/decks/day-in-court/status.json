@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T06:09:29.399Z",
+  "updated_at": "2026-10-28T06:12:03.937Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-10-28T06:09:29.399Z"
     },
     "rodney-king-officers-acquitted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9907db768487e46d4ec069288b5d86c50dab3c6d78985625a25e3f78aca46910",
+      "updated_at": "2026-10-28T06:12:03.937Z"
     },
     "bush-v-gore-ruling": {
       "state": "pending",
