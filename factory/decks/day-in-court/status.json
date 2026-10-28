@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T04:22:22.835Z",
+  "updated_at": "2026-10-28T04:25:02.861Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-28T04:22:22.835Z"
     },
     "john-brown-trial-harpers-ferry": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5a656e053018a677e834d9cf5d560956dba479a962d9fffa74c7525944b45f95",
+      "updated_at": "2026-10-28T04:25:02.861Z"
     },
     "oscar-wilde-trials": {
       "state": "pending",
