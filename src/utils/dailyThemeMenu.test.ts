@@ -9,6 +9,7 @@ import {
   getThemedCategories,
   getThemedEras,
   menuEpochFor,
+  NO_REPEAT_FROM,
 } from './dailyTheme';
 import {
   FOOTHOLD_FLOOR,
@@ -200,11 +201,20 @@ describe('dates from the first menu epoch', () => {
     }
     const weights = MENU_EPOCHS[0].weights;
     const total = Object.values(weights).reduce((a, b) => a + b, 0);
+    // The no-repeat rule bars Everything after Everything, so its share settles at w / (1 + w)
+    // and the other kinds split what it gives up in proportion. Any other entry is one of
+    // dozens, so redrawing it barely moves its kind.
+    const everything = weights.all / total;
+    const settled = everything / (1 + everything);
     for (const kind of Object.keys(counts) as (keyof typeof counts)[]) {
       // eslint-disable-next-line security/detect-object-injection -- fixed keys
       const share = counts[kind] / YEAR.length;
-      // eslint-disable-next-line security/detect-object-injection -- fixed keys
-      expect(Math.abs(share - weights[kind] / total)).toBeLessThan(0.04);
+      const expected =
+        kind === 'all'
+          ? settled
+          : // eslint-disable-next-line security/detect-object-injection -- fixed keys
+            ((weights[kind] / total) * (1 - settled)) / (1 - everything);
+      expect(Math.abs(share - expected)).toBeLessThan(0.04);
     }
   });
 
@@ -289,5 +299,49 @@ describe('dates from the first menu epoch', () => {
     const next = new Date(Date.parse(date) + DAY_MS).toISOString().slice(0, 10);
     const recent = getRecentDailyCardNames(catalogue, next);
     for (const name of dealt) expect(recent.has(name)).toBe(true);
+  });
+});
+
+describe('the no-repeat rule', () => {
+  const name = (date: string) => getThemeDisplayName(getDailyTheme(date));
+  const dayBefore = (date: string) =>
+    new Date(Date.parse(date) - DAY_MS).toISOString().slice(0, 10);
+
+  it('starts inside a menu epoch', () => {
+    expect(menuEpochFor(NO_REPEAT_FROM)).toBeDefined();
+  });
+
+  it('keeps every menu day before it, date for date', () => {
+    // These days have been played, like the legacy ones above.
+    const before = (
+      'Turkey|Figures in Europe|Everything|Everything|France|Oceania|South Africa|Everything|' +
+      'Science|Everything|Everything|Empires in Turkey|Disasters|Turkey|Syria|Invention|Craft|' +
+      'Everything|Europe|Everything|Warfare|Everything|Everything|Everything|Disasters'
+    ).split('|');
+    const dates = days(FIRST_EPOCH, before.length);
+    expect(dates[dates.length - 1]).toBe(dayBefore(NO_REPEAT_FROM));
+    expect(dates.map(name)).toEqual(before);
+  });
+
+  it('never gives two days running the same seeded theme', () => {
+    const dates = days(dayBefore(NO_REPEAT_FROM), 5 * 365);
+    for (let i = 1; i < dates.length; i++) {
+      // eslint-disable-next-line security/detect-object-injection -- numeric index
+      expect(name(dates[i])).not.toBe(name(dates[i - 1]));
+    }
+  });
+
+  it('does not re-theme the day after a curated theme is scheduled', () => {
+    const dates = days(NO_REPEAT_FROM, 120);
+    const seeded = dates.map(name);
+    const curatedDates = dates.filter((_, i) => i % 3 === 0);
+    __setCuratedThemesForTest([
+      { id: 'no-repeat', name: 'No Repeat', eventNames: [], dates: curatedDates },
+    ]);
+    const after = dates.map((date, i) =>
+      // eslint-disable-next-line security/detect-object-injection -- numeric index
+      curatedDates.includes(date) ? seeded[i] : name(date)
+    );
+    expect(after).toEqual(seeded);
   });
 });

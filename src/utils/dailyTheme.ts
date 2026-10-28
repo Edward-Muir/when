@@ -55,7 +55,8 @@ export function menuEpochFor(seed: string): MenuEpoch | undefined {
  * - Before the first menu epoch, the original one: "Everything" ~50% of the time, the rest
  *   split evenly across the categories. It must never change, because past days are replayed
  *   by the recency chain and shown in stored results.
- * - From an epoch's `from` date, a draw from that epoch's frozen menu (see `menuTheme`).
+ * - From an epoch's `from` date, a draw from that epoch's frozen menu (see `menuTheme`),
+ *   redrawn from NO_REPEAT_FROM on whenever it repeats the day before's seeded theme.
  *
  * The curated lookup happens BEFORE the RNG is touched, and must stay there. Every future
  * day's theme is a function of how many random numbers have been drawn from the seed, so a
@@ -67,10 +68,57 @@ export function menuEpochFor(seed: string): MenuEpoch | undefined {
 export function getDailyTheme(seed: string): DailyTheme {
   const curated = getCuratedThemeForDate(seed);
   if (curated) return { type: 'curated', value: null, curated };
+  return seededTheme(seed);
+}
 
+/**
+ * From this date, a seeded day never repeats the day before's seeded theme: a draw that
+ * matches it is redrawn from the same RNG until it differs. Dated, like the menu, because it
+ * re-themes the days it covers, so it may only ever start on a date nobody has played.
+ *
+ * The comparison ignores the curated calendar: it is against the seeded theme the day before
+ * would have had, curated or not. That keeps every seeded theme a function of the date alone,
+ * so scheduling a curated theme cannot re-theme the day after it, and a Monday or Friday the
+ * factory left unclaimed still differs from its neighbours.
+ */
+export const NO_REPEAT_FROM = '2026-10-31';
+
+const seededThemeCache = new Map<string, DailyTheme>();
+
+function dayBefore(seed: string): string {
+  return new Date(Date.parse(seed) - 86400000).toISOString().slice(0, 10);
+}
+
+/** The day's theme ignoring the curated calendar: the original generator, or a menu draw. */
+function seededTheme(seed: string): DailyTheme {
+  const epoch = menuEpochFor(seed);
+  if (!epoch) return legacyTheme(seededRandom(stringToSeed(seed)));
+  if (seed < NO_REPEAT_FROM) return menuTheme(epoch, seededRandom(stringToSeed(seed)));
+
+  // Each day depends on the one before, back to NO_REPEAT_FROM, so walk back to the
+  // nearest known day and fill forward rather than recursing a year deep.
+  const pending: string[] = [];
+  let day = seed;
+  while (day >= NO_REPEAT_FROM && !seededThemeCache.has(day)) {
+    pending.push(day);
+    day = dayBefore(day);
+  }
+  let previous = seededThemeCache.get(day) ?? seededTheme(day);
+  for (const date of pending.reverse()) {
+    previous = noRepeatTheme(date, getThemeDisplayName(previous));
+    seededThemeCache.set(date, previous);
+  }
+  return previous;
+}
+
+function noRepeatTheme(seed: string, previousName: string): DailyTheme {
   const random = seededRandom(stringToSeed(seed));
   const epoch = menuEpochFor(seed);
-  return epoch ? menuTheme(epoch, random) : legacyTheme(random);
+  if (!epoch) return legacyTheme(random);
+  let theme = menuTheme(epoch, random);
+  // Terminates: every epoch holds all 21 categories, which dailyThemeMenu.test.ts enforces.
+  while (getThemeDisplayName(theme) === previousName) theme = menuTheme(epoch, random);
+  return theme;
 }
 
 /** The original generator, for every date before the first menu epoch. Frozen. */

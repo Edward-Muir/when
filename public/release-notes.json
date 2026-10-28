@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "The daily theme no longer repeats the previous day's theme from 31 October."
+  ],
   "releases": [
     {
       "version": "1.37.0",

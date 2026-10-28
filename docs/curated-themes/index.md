@@ -102,6 +102,17 @@ catalogue edit could add or drop a candidate and shift every later index. **Chan
 appending an epoch from a date that has not opened** (`npm run daily-menu -- --from YYYY-MM-DD`,
 which refuses an opened date), never by editing a live one.
 
+**No seeded day repeats the day before's seeded theme**, from `NO_REPEAT_FROM` (2026-10-31) in
+`dailyTheme.ts`: a draw that matches is redrawn from the same RNG. It is dated for the same
+reason as the menu, since it re-themes the days it covers. The comparison is against the seeded
+theme the previous day would have had, curated or not, so each seeded theme stays a function of
+the date alone: scheduling a curated theme never re-themes the day after it, and an unclaimed
+Monday or Friday still differs from its neighbours. Each day depends on the one before, back to
+the start date, so `seededTheme` walks back to the nearest cached day and fills forward. The
+rule costs Everything about a quarter of its days: it settles at w / (1 + w), about 23% of
+seeded days against a weight of 30%. It matches whole themes only, so Turkey can still follow
+Empires in Turkey.
+
 **Two gates, and the second is the one that matters.** An entry needs 30+ cards and **8+ in
 band 0**, both measured over the pool the daily would deal. Pool size says little about easy
 cards: South Korea has 56 cards and 1 in band 0, Sports in France 43 and 1, Greece 185 and 111.
