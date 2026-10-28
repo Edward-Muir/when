@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T06:12:03.937Z",
+  "updated_at": "2026-10-28T06:14:38.428Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-28T06:12:03.937Z"
     },
     "bush-v-gore-ruling": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "282e0d4129f73bcacfc8c6c8e58e8d56f4533a9e9f935ff94cf4ff6b314a4ed7",
+      "updated_at": "2026-10-28T06:14:38.428Z"
     },
     "depp-v-heard-verdict": {
       "state": "pending",
