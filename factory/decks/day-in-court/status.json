@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T05:07:21.327Z",
+  "updated_at": "2026-10-28T06:09:29.399Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-28T05:07:21.327Z"
     },
     "us-v-nixon-supreme-court": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6d7bc3f961732bc110cb56b31d3a7b825c86199933806050d808d62036a3b763",
+      "updated_at": "2026-10-28T06:09:29.399Z"
     },
     "rodney-king-officers-acquitted": {
       "state": "pending",
