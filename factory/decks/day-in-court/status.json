@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T04:27:39.804Z",
+  "updated_at": "2026-10-28T04:30:53.368Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-28T04:27:39.804Z"
     },
     "sacco-vanzetti-convicted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6243b9ad2aee16bae86b74c0d58d179a78d6651a0363c2a29d51b52a2616d263",
+      "updated_at": "2026-10-28T04:30:53.368Z"
     },
     "al-capone-tax-evasion-conviction": {
       "state": "pending",
