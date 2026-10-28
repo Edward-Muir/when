@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T04:11:45.327Z",
+  "updated_at": "2026-10-28T04:14:24.348Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-28T04:11:45.327Z"
     },
     "charles-i-put-on-trial": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "875f8048a9db3d57d0b461fc0e3a09767ced7522c7dd069c448a80598046de7d",
+      "updated_at": "2026-10-28T04:14:24.348Z"
     },
     "zenger-libel-acquittal": {
       "state": "pending",
