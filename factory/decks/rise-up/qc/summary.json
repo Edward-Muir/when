@@ -21,11 +21,11 @@
     "description": "A muscular barefoot man in a ragged loincloth raises a spear overhead in one hand and grips a long wooden-handled tool in the other, standing in muddy, salt-crusted ground. Several other men dig or hold spears in the midground, with thatched huts, palm trees, smoke and a distant fire behind them. The style is a dark, painterly oil look with no visible text, frame or border."
   },
   "pilgrimage-of-grace-rising": {
-    "state": "qc-fail",
-    "reason": "The banner has the letters IHC painted on it, which is text. Repaint the Five Wounds banner without lettering.",
+    "state": "qc-pass",
+    "reason": "",
     "by": "recheck",
-    "attempts": 1,
-    "description": "A large procession of peasants, women and clergy in worn Tudor-era clothing and hoods walks along a muddy path under a stormy sky. A man carries a maroon banner showing a gold chalice, a red heart, stylised pale hands and feet with small red marks, and the letters IHC. A Gothic church with a square tower stands on a hill behind, with bare trees. The painting fills the image with no frame."
+    "attempts": 2,
+    "description": "A painterly procession of peasants, women and a monk in a dark habit marches across a moorland under stormy skies, led by a man holding a large crimson banner showing hands, feet and a heart over a chalice, with small red drips on the hands and feet. A smoky abbey stands behind. Tudor-era dress. No text, no frame, no border."
   },
   "pueblo-revolt-spanish-expelled": {
     "state": "qc-pass",
