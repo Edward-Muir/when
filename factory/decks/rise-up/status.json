@@ -3,7 +3,7 @@
   "name": "Rise Up!",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T17:15:18.520Z",
-  "updated_at": "2026-10-28T18:10:02.351Z",
+  "updated_at": "2026-10-28T18:13:02.191Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-28T18:10:02.351Z"
     },
     "boudica-revolt": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4a90994dfea478245350cb2713ed9d0aa0b8e016c8485efca8fc881ca2469995",
+      "updated_at": "2026-10-28T18:13:02.191Z"
     },
     "zanj-rebellion-begins": {
       "state": "pending",
