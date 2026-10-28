@@ -12871,7 +12871,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "baku-first-mechanical-oil-well",
@@ -12883,7 +12884,8 @@
     "regions": [
       "Azerbaijan",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "drake-well-titusville",
@@ -12894,7 +12896,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-oil-pipeline-pithole",
@@ -12905,7 +12908,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "gluckauf-first-modern-tanker",
@@ -12917,7 +12921,8 @@
     "regions": [
       "Germany",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "spindletop-gusher",
@@ -12928,7 +12933,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "persia-oil-discovery-masjed-soleiman",
@@ -12940,7 +12946,8 @@
     "regions": [
       "Iran",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "standard-oil-breakup",
@@ -12951,7 +12958,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "teapot-dome-oil-leases",
@@ -12962,7 +12970,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "baba-gurgur-gusher-iraq",
@@ -12973,7 +12982,8 @@
     "difficulty": "medium",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "east-texas-oil-field-discovery",
@@ -12984,7 +12994,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bahrain-first-gulf-oil-strike",
@@ -12996,7 +13007,8 @@
     "regions": [
       "Bahrain",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-offshore-well-out-of-sight-of-land",
@@ -13007,7 +13019,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "iran-nationalizes-oil-industry",
@@ -13019,7 +13032,8 @@
     "regions": [
       "Iran",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "groningen-gas-field-discovery",
@@ -13030,7 +13044,8 @@
     "difficulty": "medium",
     "regions": [
       "Netherlands"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "trans-alaska-pipeline-first-oil",
@@ -13041,7 +13056,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "iranian-revolution-oil-shock",
@@ -13052,7 +13068,8 @@
     "difficulty": "easy",
     "regions": [
       "Iran"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "oil-price-collapse-glut",
@@ -13064,7 +13081,8 @@
     "regions": [
       "Saudi Arabia",
       "Global"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "kuwait-oil-fires",
@@ -13076,7 +13094,8 @@
     "regions": [
       "Iraq",
       "Kuwait"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "exxon-mobil-merger",
@@ -13087,7 +13106,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "record-crude-oil-price-peak",
@@ -13099,7 +13119,8 @@
     "regions": [
       "United States",
       "Global"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "saudi-aramco-ipo",
@@ -13110,7 +13131,8 @@
     "difficulty": "easy",
     "regions": [
       "Saudi Arabia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "oil-price-negative-wti",
@@ -13121,6 +13143,7 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   }
 ]
