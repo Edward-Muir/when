@@ -3,7 +3,7 @@
   "name": "Rise Up!",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T17:15:18.520Z",
-  "updated_at": "2026-10-28T18:29:39.875Z",
+  "updated_at": "2026-10-28T19:07:30.085Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,60 +16,60 @@
   ],
   "slugs": {
     "chen-sheng-wu-guang-revolt": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8162354a5b0f64eb494918eb7133348b566b982bb4c3892e8828f2fd80af6118",
-      "updated_at": "2026-10-28T18:10:02.351Z"
+      "updated_at": "2026-10-28T19:07:29.849Z"
     },
     "boudica-revolt": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4a90994dfea478245350cb2713ed9d0aa0b8e016c8485efca8fc881ca2469995",
-      "updated_at": "2026-10-28T18:13:02.191Z"
+      "updated_at": "2026-10-28T19:07:29.879Z"
     },
     "zanj-rebellion-begins": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "543412af72e1a3fa83074afd829806e880fde8fd3ff9bee82dc71108271e2ee3",
-      "updated_at": "2026-10-28T18:15:50.097Z"
+      "updated_at": "2026-10-28T19:07:29.910Z"
     },
     "pilgrimage-of-grace-rising": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The banner has the letters IHC painted on it, which is text. Repaint the Five Wounds banner without lettering.",
       "sha256": "59af9c0d14f8746bd7c190fa313216dd407b3333c5a4445c308206ee79030fb5",
-      "updated_at": "2026-10-28T18:18:36.817Z"
+      "updated_at": "2026-10-28T19:07:29.940Z"
     },
     "pueblo-revolt-spanish-expelled": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "24497df59ac549d8b02a130567f86fd1bf9f9fb308d0a253e544dbc2887f2887",
-      "updated_at": "2026-10-28T18:21:22.793Z"
+      "updated_at": "2026-10-28T19:07:29.972Z"
     },
     "pugachev-rebellion": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a15eb3241c56ad2ed3d52272454b4bfc6a30beeedfa1e8c08f32211829bb0caf",
-      "updated_at": "2026-10-28T18:24:07.821Z"
+      "updated_at": "2026-10-28T19:07:30.007Z"
     },
     "tupac-amaru-ii-rebellion": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "24c5d2915fd0648d65ec30072d4021ce3c559857abc89090cd5b7cfdeba44948",
-      "updated_at": "2026-10-28T18:26:53.488Z"
+      "updated_at": "2026-10-28T19:07:30.050Z"
     },
     "zapatista-uprising-chiapas": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "13fca4210c206edc95c902b655424bc3fc98b6c744a8c841cdd9b82293a0b8e7",
-      "updated_at": "2026-10-28T18:29:39.875Z"
+      "updated_at": "2026-10-28T19:07:30.085Z"
     }
   }
 }
