@@ -1,21 +1,26 @@
 {
   "deck": "black-gold",
   "name": "Black Gold",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T09:20:09.661Z",
+  "updated_at": "2026-10-28T10:08:48.844Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-28T09:20:09.661Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-28T10:08:48.844Z"
     }
   ],
   "slugs": {
     "fredonia-natural-gas-well": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9631e8d6f3c6685c5bf9f85dc8b2adaa91b7c93e2a977a2c2f541553f6bf5c04",
+      "updated_at": "2026-10-28T10:08:48.844Z"
     },
     "baku-first-mechanical-oil-well": {
       "state": "pending",
