@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T10:11:08.391Z",
+  "updated_at": "2026-10-28T10:13:28.456Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-28T10:11:08.391Z"
     },
     "drake-well-titusville": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3092d5aaa70d8e84ca7d5efdeaa8d9d9669c27fd4074fa7ae3db19a2d30ff47f",
+      "updated_at": "2026-10-28T10:13:28.456Z"
     },
     "first-oil-pipeline-pithole": {
       "state": "pending",
