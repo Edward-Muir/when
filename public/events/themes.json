@@ -12871,7 +12871,8 @@
     "difficulty": "easy",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "boudica-revolt",
@@ -12883,7 +12884,8 @@
     "regions": [
       "Italy",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "zanj-rebellion-begins",
@@ -12894,7 +12896,8 @@
     "difficulty": "medium",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pilgrimage-of-grace-rising",
@@ -12905,7 +12908,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pueblo-revolt-spanish-expelled",
@@ -12918,7 +12922,8 @@
       "Spain",
       "United States"
     ],
-    "year_end": 1692
+    "year_end": 1692,
+    "has_detail": true
   },
   {
     "name": "pugachev-rebellion",
@@ -12931,7 +12936,8 @@
       "Russia",
       "Europe"
     ],
-    "year_end": 1775
+    "year_end": 1775,
+    "has_detail": true
   },
   {
     "name": "tupac-amaru-ii-rebellion",
@@ -12944,7 +12950,8 @@
       "Peru",
       "Spain"
     ],
-    "year_end": 1783
+    "year_end": 1783,
+    "has_detail": true
   },
   {
     "name": "zapatista-uprising-chiapas",
@@ -12955,6 +12962,7 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   }
 ]
