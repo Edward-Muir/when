@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T04:30:53.368Z",
+  "updated_at": "2026-10-28T04:33:32.685Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-28T04:30:53.368Z"
     },
     "al-capone-tax-evasion-conviction": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "001a40cf262f95f2d562cea0fd7211a770321d106c69d32219ffb5265e5a1605",
+      "updated_at": "2026-10-28T04:33:32.685Z"
     },
     "us-v-nixon-supreme-court": {
       "state": "pending",
