@@ -1,9 +1,9 @@
 {
   "deck": "black-gold",
   "name": "Black Gold",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T14:30:35.025Z",
+  "updated_at": "2026-10-28T15:07:33.245Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-28T10:08:48.844Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-28T15:07:33.245Z"
     }
   ],
   "slugs": {
@@ -114,67 +118,67 @@
       "updated_at": "2026-10-28T13:07:44.325Z"
     },
     "groningen-gas-field-discovery": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "753f34ca7788389d3f6fcdd2ebc7f9d51a0fb13b363af7a859a0aada5bd01299",
-      "updated_at": "2026-10-28T14:09:05.765Z"
+      "updated_at": "2026-10-28T15:07:32.977Z"
     },
     "trans-alaska-pipeline-first-oil": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "feb502278f476829c85d78aaf3e6f72e874c85ab9fdffdc0f720a97af85670bc",
-      "updated_at": "2026-10-28T14:11:41.719Z"
+      "updated_at": "2026-10-28T15:07:33.010Z"
     },
     "iranian-revolution-oil-shock": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2dc16addc5657891aadd14cf96e5dd14ce422798c82bbecbb8eff70162c89750",
-      "updated_at": "2026-10-28T14:14:18.477Z"
+      "updated_at": "2026-10-28T15:07:33.041Z"
     },
     "oil-price-collapse-glut": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ca62d3b6c797075af307ec410e76a158a99906e15dde41583c1c9e6398cbc11c",
-      "updated_at": "2026-10-28T14:17:15.293Z"
+      "updated_at": "2026-10-28T15:07:33.071Z"
     },
     "kuwait-oil-fires": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b22b11b20c602166e6bafba71d5ff8657c780470062def41f347828fd61e4e36",
-      "updated_at": "2026-10-28T14:19:56.726Z"
+      "updated_at": "2026-10-28T15:07:33.101Z"
     },
     "exxon-mobil-merger": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3bd67d177311d76a978eaffa48bbed31892a3fc7c75a2cffeee5e8323d6d4617",
-      "updated_at": "2026-10-28T14:22:38.110Z"
+      "updated_at": "2026-10-28T15:07:33.135Z"
     },
     "record-crude-oil-price-peak": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4ccde37bac9854dab85afc322e80fac96e8851a098e9b3459b432acfb45f7360",
-      "updated_at": "2026-10-28T14:25:17.265Z"
+      "updated_at": "2026-10-28T15:07:33.174Z"
     },
     "saudi-aramco-ipo": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a87e48d661f7d2f63fa0393730fdbdf48b8a7be1992a4191c24c7658efe7ff47",
-      "updated_at": "2026-10-28T14:27:56.627Z"
+      "updated_at": "2026-10-28T15:07:33.210Z"
     },
     "oil-price-negative-wti": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ca6b9cbaa7b352cee509ec457513e412b0691b28acfabb7ee7f81f6ffcade69f",
-      "updated_at": "2026-10-28T14:30:35.025Z"
+      "updated_at": "2026-10-28T15:07:33.245Z"
     }
   }
 }
