@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T14:27:56.627Z",
+  "updated_at": "2026-10-28T14:30:35.025Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-28T14:27:56.627Z"
     },
     "oil-price-negative-wti": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ca6b9cbaa7b352cee509ec457513e412b0691b28acfabb7ee7f81f6ffcade69f",
+      "updated_at": "2026-10-28T14:30:35.025Z"
     }
   }
 }
