@@ -3,7 +3,7 @@
   "name": "Black Gold",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T09:20:09.661Z",
-  "updated_at": "2026-10-28T12:14:26.219Z",
+  "updated_at": "2026-10-28T12:17:00.484Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-28T12:14:26.219Z"
     },
     "iran-nationalizes-oil-industry": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5d054eadedbbd923de5865b217cf55ace9b76e878f2acbe4927a585532f7ccbd",
+      "updated_at": "2026-10-28T12:17:00.484Z"
     },
     "groningen-gas-field-discovery": {
       "state": "pending",
