@@ -1,21 +1,26 @@
 {
   "deck": "rise-up",
   "name": "Rise Up!",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-28T17:15:18.520Z",
-  "updated_at": "2026-10-28T17:15:18.520Z",
+  "updated_at": "2026-10-28T18:10:02.351Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-28T17:15:18.520Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-28T18:10:02.351Z"
     }
   ],
   "slugs": {
     "chen-sheng-wu-guang-revolt": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8162354a5b0f64eb494918eb7133348b566b982bb4c3892e8828f2fd80af6118",
+      "updated_at": "2026-10-28T18:10:02.351Z"
     },
     "boudica-revolt": {
       "state": "pending",
