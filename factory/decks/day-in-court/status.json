@@ -3,7 +3,7 @@
   "name": "Day in Court",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T03:16:28.102Z",
-  "updated_at": "2026-10-28T04:17:02.761Z",
+  "updated_at": "2026-10-28T04:19:44.542Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-28T04:17:02.761Z"
     },
     "boston-massacre-soldiers-trial": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "812e4a538685bacaca311e316ae355da923cf7b8d63b7b39360b721ac01e242a",
+      "updated_at": "2026-10-28T04:19:44.542Z"
     },
     "amistad-supreme-court-ruling": {
       "state": "pending",
