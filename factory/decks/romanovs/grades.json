@@ -1,0 +1,19 @@
+{
+  "michael-romanov-elected-tsar": {"recognition": "low", "inferability": "medium", "anchors": ["tsar", "new dynasty", "years of chaos"], "why": "tsar and new dynasty suggest early modern Russia, but no firm anchor"},
+  "peter-and-ivan-co-tsars": {"recognition": "low", "inferability": "medium", "anchors": ["tsars", "palace guards revolt", "regent"], "why": "Russian tsars with a regent sister point to early modern Russia"},
+  "peter-great-embassy-europe": {"recognition": "medium", "inferability": "high", "anchors": ["Peter the Great", "tsar", "shipyards"], "why": "Peter the Great is a famous figure anchoring the late 1600s"},
+  "founding-st-petersburg": {"recognition": "high", "inferability": "high", "anchors": ["Peter", "St Petersburg", "window on the West"], "why": "Peter's new Baltic city is well known and anchors the early 1700s"},
+  "peter-proclaimed-emperor": {"recognition": "medium", "inferability": "high", "anchors": ["Peter", "Emperor of all Russia", "war with Sweden"], "why": "Peter and the Swedish war anchor the early 1700s"},
+  "elizabeth-seizes-russian-throne": {"recognition": "low", "inferability": "high", "anchors": ["Peter's daughter", "guards coup"], "why": "Peter's daughter places it after Peter in the 18th century"},
+  "russia-annexes-crimea": {"recognition": "medium", "inferability": "medium", "anchors": ["empress", "Crimean Khanate", "fleet"], "why": "an empress and a khanate suggest the 18th century, though the 2014 annexation could mislead"},
+  "paul-i-assassinated": {"recognition": "low", "inferability": "high", "anchors": ["emperor Paul", "son Alexander"], "why": "Emperor and son Alexander point to the turn of the 19th century"},
+  "decembrist-revolt": {"recognition": "medium", "inferability": "medium", "anchors": ["army officers", "new tsar", "liberal"], "why": "tsarist Russia with liberal officers suggests the 19th century"},
+  "tsarskoye-selo-railway-opens": {"recognition": "low", "inferability": "high", "anchors": ["steam", "railway", "imperial residence"], "why": "steam railway with a tsar's empire places it in the early 19th century"},
+  "tolstoy-war-and-peace-completed": {"recognition": "high", "inferability": "high", "anchors": ["Tolstoy", "Napoleon", "War and Peace"], "why": "famous novel by Tolstoy, mid-19th century"},
+  "faberge-first-imperial-egg": {"recognition": "medium", "inferability": "high", "anchors": ["Faberge", "tsar", "Easter egg"], "why": "Faberge eggs are tied to the late imperial Russian era"},
+  "trans-siberian-railway-begun": {"recognition": "medium", "inferability": "high", "anchors": ["railway", "future tsar", "Moscow to Pacific"], "why": "a railway and a tsar anchor the late 19th century"},
+  "nicholas-ii-becomes-tsar": {"recognition": "medium", "inferability": "high", "anchors": ["last of the Romanov line", "Nicholas II"], "why": "the last Romanov places it in the late 19th century"},
+  "bloody-sunday-st-petersburg": {"recognition": "medium", "inferability": "high", "anchors": ["tsar", "workers", "revolt"], "why": "tsarist workers' petition suggests the early 20th century"},
+  "russia-enters-world-war-one": {"recognition": "high", "inferability": "high", "anchors": ["Great War", "Serbia", "Germany and Austria"], "why": "Great War mobilisation over Serbia is 1914"},
+  "rasputin-murdered": {"recognition": "high", "inferability": "high", "anchors": ["Rasputin", "imperial family"], "why": "Rasputin is famous and tied to the end of the empire"}
+}
