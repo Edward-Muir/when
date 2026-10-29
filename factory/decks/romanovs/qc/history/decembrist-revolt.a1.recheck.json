@@ -1,0 +1,15 @@
+{
+  "slug": "decembrist-revolt",
+  "description": "A snowy city square at dusk with falling snow and smoke. Soldiers in dark green coats and shakos with bayonets stand in ranks, officers in greatcoats and cocked hats in front, one on horseback with a lantern. A bronze rearing-horse statue stands on a huge snow-covered rock at upper left, with a light plaque on the rock carrying several lines of painted lettering. Cannons fire in the background among torches. No frame or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "A pale plaque on the statue's rock carries several lines of clearly painted letters. Repaint the rock as bare granite with no plaque or inscription."
+}
