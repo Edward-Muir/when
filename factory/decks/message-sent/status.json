@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T06:16:50.097Z",
+  "updated_at": "2026-10-29T06:19:21.266Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-29T06:16:50.097Z"
     },
     "royal-mail-opens-to-public": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3d1126e2ab36c0069300b4e3179c6957f9fac778262803ae62ffa40c14873a28",
+      "updated_at": "2026-10-29T06:19:21.266Z"
     },
     "first-mail-coach-bath-london": {
       "state": "pending",
