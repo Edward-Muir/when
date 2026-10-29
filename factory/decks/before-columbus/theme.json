@@ -1,0 +1,40 @@
+{
+  "id": "before-columbus",
+  "name": "Before Columbus",
+  "scope": "Yes if it is from the pre-Columbian Americas",
+  "boundary": "Before Columbus: Maya, Aztec, Inca and earlier worlds; the Spanish conquest goes to Conquistadors, peoples of the US and Canada to Native Nations, Tenochtitlan's founding to Capitals Founded.",
+  "neighbours": [
+    "conquistadors",
+    "native-nations",
+    "stone-age-firsts"
+  ],
+  "grid": {
+    "categories": [
+      "architecture",
+      "empires",
+      "agriculture"
+    ],
+    "eras": [
+      "ancient",
+      "medieval"
+    ],
+    "regions": [
+      "South America",
+      "North America"
+    ]
+  },
+  "example_beats": [
+    "Olmec rise at San Lorenzo (1200 BC)",
+    "Teotihuacan conquers Tikal (378)",
+    "Pakal takes the throne at Palenque (615)",
+    "Chichen Itza rises (987)",
+    "Aztec Triple Alliance formed (1428)",
+    "Pachacuti becomes Inca ruler (1438)",
+    "Machu Picchu built (1450)",
+    "Inca conquer the Chimu kingdom (1470)",
+    "Great Temple of Tenochtitlan dedicated (1487)",
+    "Moctezuma II crowned (1502)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
