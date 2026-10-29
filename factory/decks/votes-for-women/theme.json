@@ -1,0 +1,38 @@
+{
+  "id": "votes-for-women",
+  "name": "Votes for Women",
+  "scope": "Yes if it is women winning the vote, or the fight for it",
+  "boundary": "Votes for Women owns women's suffrage; other voting milestones go to The Ballot Box, other women's firsts to The First Woman.",
+  "neighbours": [
+    "ballot-box",
+    "first-women"
+  ],
+  "grid": {
+    "categories": [
+      "law",
+      "revolution"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars",
+      "coldWar"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Seneca Falls convention (1848)",
+    "Wyoming Territory women vote (1869)",
+    "New Zealand women vote (1893)",
+    "Finland first in Europe (1906)",
+    "Emily Davison at the Derby (1913)",
+    "Representation of the People Act (1918)",
+    "19th Amendment ratified (1920)",
+    "Turkey grants women the vote (1934)",
+    "France (1944)",
+    "Switzerland federal vote (1971)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
