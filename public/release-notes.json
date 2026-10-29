@@ -1,6 +1,6 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": ["Card dealing was tuned to keep games flowing after a slip."],
   "releases": [
     {
       "version": "1.37.0",

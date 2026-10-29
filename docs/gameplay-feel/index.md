@@ -198,6 +198,49 @@ A recurring question, already answered: **recency does not make games harder.** 
 in mean band index at any position is 0.025 on a 0–3 scale. The exclusion changes _which_ card
 is dealt, not which band.
 
+## Catch-up draws
+
+After a miss, the next replacement is the easiest card in a lookahead window instead of the top
+of the deck (`src/utils/catchUp.ts`, header comment for the mechanism). This is the Candy Crush
+idea: King tracks a skill profile per player and says easier content keeps players longer
+("retention always wins"). It runs in every mode, the Daily included, and **is silent by
+decision**: there is no UI cue, nothing on How to Play, and nothing in share text. Don't add one.
+
+- **Struggle** is 0-3, folded from the player's own `placementHistory`. A miss raises it, and
+  each hit draws at the current level and then lowers it by one. Lookahead is 1, 8, 16, 32.
+  At 0 the draw is exactly `deck[0]`, so a clean game deals exactly as before.
+- **Ease is measured on the player's board, not the label.** `boardRoom` is the distance, in
+  `u` space, from the card's window to the nearest bound that would make it a miss: the same
+  running bounds `isPlacementCorrect` judges with. The recognition label only scales it by up
+  to 25% to break near-ties. The catalogue-wide crowding term in `score` is deliberately
+  unused, because the real board replaces it.
+- **A miss still draws nothing.** The leaderboard's red-square cap and `themeOutcome.ts`
+  depend on that.
+- **The rest of the deck keeps its order.** A pick lifts one card out, so the remaining deck
+  is always the composed deck minus every card seen. Daily resume (`dailyProgress.ts`) rebuilds
+  it that way and checks that the opening deal is the deck's front and that every seen card is
+  within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
+  reason.
+- **Room is measured at draw time.** The card joins the back of the hand and is played a few
+  turns later on a fuller board, so draw-time room is an upper bound. Moving eased cards to the
+  front of the hand was measured and made no difference (below), so don't re-propose it.
+
+**Measured** on 60 dailies × 20 runs, with a simulated player who places the top card and hits
+with probability `1 / (1 + (r0 / room)^1.2)`:
+
+| player (`r0`)   | events placed, before → after | after a slower decay (one level per 2 hits) |
+| --------------- | ----------------------------- | ------------------------------------------- |
+| 0.002 (strong)  | 36.8 → 37.5                   | 38.9                                        |
+| 0.005           | 25.2 → 26.1                   | 27.3                                        |
+| 0.01            | 19.0 → 19.9                   | 20.7                                        |
+| 0.02 (beginner) | 13.9 → 14.4                   | 15.0                                        |
+
+The card drawn after a miss has about twice the median room (0.026 → 0.049 at `r0 = 0.01`).
+The effect on score is modest: about one event per game. That's intended: Daily scores bunch a
+little, not a lot. How long help lasts is the lever that matters. Drawing the eased card to the
+front of the hand changed scores by under 0.1. If more help is wanted, slow the decay in
+`struggleBefore` rather than widening the lookahead.
+
 ## Tombstones
 
 A single-player miss shows no popup. The failed card FLIP-morphs from the attempted slot to
