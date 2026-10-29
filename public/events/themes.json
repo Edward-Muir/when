@@ -12868,7 +12868,10 @@
     "year": -8000,
     "category": "agriculture",
     "description": "Foragers in a Mexican cave began growing squash, among the first domesticated crops of the Americas.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "cacao-use-santa-ana-la-florida",
@@ -12876,7 +12879,10 @@
     "year": -3300,
     "category": "agriculture",
     "description": "People of the upper Amazon were the first known users of cacao, the plant that gives us chocolate.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Ecuador"
+    ]
   },
   {
     "name": "zapotecs-found-monte-alban",
@@ -12884,7 +12890,10 @@
     "year": -500,
     "category": "architecture",
     "description": "Zapotec leaders levelled a mountaintop in Oaxaca and raised a hilltop capital of plazas, temples and tombs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "el-mirador-maya-city-rises",
@@ -12892,7 +12901,10 @@
     "year": -300,
     "category": "empires",
     "description": "In the jungles of Guatemala, a Maya city raised huge pyramids, among them La Danta, one of the largest ever built.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Guatemala"
+    ]
   },
   {
     "name": "teotihuacan-city-founded",
@@ -12900,7 +12912,10 @@
     "year": -100,
     "category": "migration",
     "description": "A planned city with broad avenues began to grow in the Valley of Mexico, later the largest in the Americas.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "chiapa-de-corzo-long-count-stela",
@@ -12908,7 +12923,10 @@
     "year": -36,
     "category": "writing",
     "description": "A carved stela in southern Mexico bore the oldest surviving date in the Maya calendar's Long Count system.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "lord-of-sipan-burial",
@@ -12916,7 +12934,10 @@
     "year": 250,
     "category": "figures",
     "description": "A Moche ruler was laid to rest in Peru with gold, turquoise and sacrificed attendants, a tomb found intact.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "teotihuacan-conquers-tikal",
@@ -12924,7 +12945,11 @@
     "year": 378,
     "category": "warfare",
     "description": "Warriors linked to a great Mexican city arrived at a Maya capital in Guatemala, and its king died the same day.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "copan-dynasty-founded",
@@ -12932,7 +12957,10 @@
     "year": 426,
     "category": "empires",
     "description": "K'inich Yax K'uk' Mo' founded the royal line of a Maya city in Honduras that ruled for four centuries.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Honduras"
+    ]
   },
   {
     "name": "teotihuacan-burned-collapse",
@@ -12940,7 +12968,10 @@
     "year": 550,
     "category": "disasters",
     "description": "Fire swept the ceremonial heart of the great Mexican city, whose population then dwindled away.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "calakmul-defeats-tikal",
@@ -12948,7 +12979,11 @@
     "year": 562,
     "category": "warfare",
     "description": "The Snake kingdom's alliance overthrew Tikal, the leading Maya city, and dominated the lowlands for generations.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Guatemala",
+      "Mexico"
+    ]
   },
   {
     "name": "pakal-tomb-sealed-palenque",
@@ -12956,7 +12991,10 @@
     "year": 683,
     "category": "figures",
     "description": "The great Maya ruler of Palenque was buried in a stone sarcophagus deep inside the Temple of the Inscriptions.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "tikal-temple-i-built",
@@ -12964,7 +13002,10 @@
     "year": 732,
     "category": "architecture",
     "description": "A steep funerary pyramid rose over the tomb of a Maya king in Guatemala, facing the city's Great Plaza.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Guatemala"
+    ]
   },
   {
     "name": "chan-chan-rises",
@@ -12972,7 +13013,10 @@
     "year": 850,
     "category": "architecture",
     "description": "The Chimu built a vast adobe capital on the Peruvian coast, with walled palaces and carved friezes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "chichen-itza-rises",
@@ -12980,7 +13024,10 @@
     "year": 987,
     "category": "empires",
     "description": "A Maya city in Yucatan grew into a major centre, later known for its stepped pyramid El Castillo.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "cusco-founded-legend",
@@ -12988,7 +13035,10 @@
     "year": 1200,
     "category": "migration",
     "description": "By tradition, Manco Capac led his people to the Andean valley where the Inca capital was raised.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "pachacuti-becomes-inca",
@@ -12996,7 +13046,10 @@
     "year": 1438,
     "category": "empires",
     "description": "After defeating invaders, a new Inca ruler began turning a highland kingdom into a vast empire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "inca-conquer-chimu",
@@ -13004,7 +13057,10 @@
     "year": 1470,
     "category": "warfare",
     "description": "Inca armies took the Chimu realm on the Peruvian coast, its richest rival and the builders of Chan Chan.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Peru"
+    ]
   },
   {
     "name": "tenochtitlan-conquers-tlatelolco",
@@ -13012,7 +13068,10 @@
     "year": 1473,
     "category": "warfare",
     "description": "The Aztec capital defeated its twin island city and took over its busy market and trade networks.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "templo-mayor-dedicated",
@@ -13020,7 +13079,10 @@
     "year": 1487,
     "category": "architecture",
     "description": "The Aztec twin-shrined temple pyramid was rededicated with ceremonies said to include thousands of sacrifices.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "moctezuma-ii-crowned",
@@ -13028,6 +13090,9 @@
     "year": 1502,
     "category": "empires",
     "description": "The ninth Aztec tlatoani took the throne of an empire at its height; the Spaniards later held him captive.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Mexico"
+    ]
   }
 ]
