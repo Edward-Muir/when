@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T18:19:47.636Z",
+  "updated_at": "2026-10-29T18:22:16.929Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-29T18:19:47.636Z"
     },
     "cusco-founded-legend": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b91f278131dfcc734222f08710ebb82f2dfabc0c8b7fecb696488dd9cb18d7ae",
+      "updated_at": "2026-10-29T18:22:16.929Z"
     },
     "pachacuti-becomes-inca": {
       "state": "pending",
