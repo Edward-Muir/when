@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T16:35:12.132Z",
+  "updated_at": "2026-10-29T16:37:55.240Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-29T16:35:12.132Z"
     },
     "teotihuacan-burned-collapse": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "56e397060fd95c849f0f2f37bff38b5bfc964fcbce2d8e9e8b5fca5f30a0e5a6",
+      "updated_at": "2026-10-29T16:37:55.240Z"
     },
     "calakmul-defeats-tikal": {
       "state": "pending",
