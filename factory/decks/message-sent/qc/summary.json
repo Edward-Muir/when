@@ -63,10 +63,73 @@
     "description": "A man in a dark wide-brimmed hat and dark work clothes leans from a dark bay horse with a white blaze, reaching across to a second bay horse with a saddle, while holding a leather saddle bag with pockets. A second man in a hat and waistcoat holds the second horse's bridle at the right. They stand in a dusty yard beside a dim log cabin with a glowing lantern on the wall, under a dark, dusky sky with flat plains on the left."
   },
   "rural-free-delivery-begins": {
-    "state": "qc-fail",
-    "reason": "The wagon side has painted letters reading 'U.S. MAIL' plus a faint extra word above it. Repaint the wagon side blank, with no lettering.",
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted scene: a man in a dark coat and hat leans out of the open back of a covered wooden wagon pulled by a brown horse, posting a white envelope into a weathered roadside mailbox on a wooden post. A muddy dirt track runs past dry grass, with a farmhouse, barn and bare trees on the horizon under a grey sky."
+  },
+  "marconi-transatlantic-radio-signal": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted oil scene in a dim, rough stone room. A man in a dark suit, seen from the side with his head bowed, holds a earpiece to one ear with his hand. On a wooden table sit brass-terminal wireless boxes, coils, a glass tube component and loose wires, lit by an oil lamp. Through a window, a stormy grey sky with a small kite-like shape over dark hills. No visible text, frame or border; the painting fills the image edge to edge."
+  },
+  "first-official-airmail-flight": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painterly, dark sepia scene of an early open-cockpit biplane with wood-and-fabric wings and exposed struts, lifting off low over a wide river. A pilot sits in the open seat with bundled sacks beside him. Below, a crowd stands along the bank in front of a field of canvas tents and small pennant flags. The sky is murky and the light is warm and glowing near the water."
+  },
+  "cher-ami-pigeon-message": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A grey pigeon with spread wings flies over a smoky, burning battlefield with dead tree stumps and shell craters. A small metal canister is tied to one of its legs, and streaks of fire or shells cross the dark sky. No text, frame or people are visible."
+  },
+  "transatlantic-radiotelephone-service": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a dark three-piece suit with slicked-back hair looks alarmed, eyes wide and mouth open. He holds a black candlestick-style telephone handset in one hand and presses a receiver to his ear with the other. He stands in a dark wooden booth with a glass-paned door. On the walls, framed seascapes show ocean liners with multiple funnels on rough grey-blue water. There is no legible text."
+  },
+  "china-clipper-pacific-airmail": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A grey four-engined flying boat with propellers spinning hovers over dark water beneath a stormy, golden-lit sky. A suspension bridge with two tall towers stretches across the background. In the foreground, men in work clothes load burlap sacks through the open hatch of a dark launch. Painterly, moody style with no visible text."
+  },
+  "tat-1-transatlantic-telephone-cable": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, stormy night at sea. A ship's stern edge is lit by warm lanterns, and a large grooved wheel or drum with a thick dark cable wound on it sits at the right. A heavy cable with a bulging cylindrical casing hangs off the side and runs down into churning, white-capped waves. Four or five crew in dark oilskins and sou'westers work the rails and handle long poles. A faint figure stands on an upper deck at the top right. No visible text, no frame."
+  },
+  "zip-codes-introduced": {
+    "state": "qc-pass",
+    "reason": "",
     "by": "recheck",
     "attempts": 1,
-    "description": "An oil painting of a rural mail carrier in a cap leaning from a horse-drawn wagon lettered 'U.S. MAIL' to put a letter in a roadside wooden mailbox with a red flag. A farmhouse and barn sit beside a dirt road under a moody sky. The scene fills the frame with no border. The only text is the lettering on the wagon, with a faint illegible mark above it."
+    "description": "A dark oil painting of a mid-century mail sorting hall. A man in a work shirt sits at a sorting console reading an envelope, with conveyor belts, pigeonhole shelves, mail sacks and a cart around him and other workers in the haze behind. Envelopes carry only faint illegible squiggles, with no readable words, numbers or logos. The painting fills the frame edge to edge with no border."
+  },
+  "dhl-express-courier-founded": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a dark suit and tie sits in an airplane cabin, looking out an oval window at a harbor with palm trees, a few ships and calm water under a warm, hazy sky. He rests his hands on a dark leather satchel, with papers tucked in its flap. The cabin has patterned seat fabric, overhead panels and a mid-century airliner look. No visible text, numbers or signature. The painting runs edge to edge with no frame or wall. Nothing violent or nude."
+  },
+  "fedex-first-deliveries": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A night airport apron under bright floodlights. A sleek, dark business jet stands with its rear cabin door open and steps down, with a figure on the stairs. Several workers in dark work clothes push carts stacked with cardboard boxes across the wet tarmac. Other small jets and ground vehicles sit in the background. No visible text, lettering, frame or border."
   }
 }
