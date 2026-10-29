@@ -13,7 +13,7 @@
     "year": -27,
     "category": "empires",
     "description": "Rome's first emperor set up an official system of riders, wagons and way stations to carry state messages.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "mongol-yam-relay-network",
@@ -21,7 +21,7 @@
     "year": 1229,
     "category": "empires",
     "description": "The Mongol Empire formalised a vast chain of horse stations letting riders carry orders across Asia at great speed.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "beacon-chain-armada-warning",
@@ -29,7 +29,7 @@
     "year": 1588,
     "category": "warfare",
     "description": "A chain of hilltop bonfires carried news of the approaching Spanish fleet across England within hours.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "royal-mail-opens-to-public",
@@ -45,7 +45,7 @@
     "year": 1784,
     "category": "invention",
     "description": "Fast, guarded coaches replaced slow post-boys on a trial route between two English cities, speeding letters.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "chappe-semaphore-line",
@@ -61,7 +61,7 @@
     "year": 1837,
     "category": "invention",
     "description": "Two Englishmen patented a needle telegraph that pointed to letters, soon strung alongside railway lines.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "pony-express-launches",
@@ -77,7 +77,7 @@
     "year": 1896,
     "category": "commerce",
     "description": "American farm families got mail delivered to their roadside boxes instead of travelling to town to collect it.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "marconi-transatlantic-radio-signal",
@@ -93,11 +93,11 @@
     "year": 1911,
     "category": "invention",
     "description": "A pilot carried sacks of letters by aeroplane at an Indian exhibition, the first officially sanctioned mail flight.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "cher-ami-pigeon-message",
-    "friendly_name": "Cher Ami Delivers Her Message",
+    "friendly_name": "Cher Ami Delivers the Message",
     "year": 1918,
     "category": "warfare",
     "description": "A wounded carrier pigeon flew through gunfire to save a trapped battalion and became a wartime hero.",
@@ -117,7 +117,7 @@
     "year": 1935,
     "category": "trade",
     "description": "A giant flying boat carried airmail from California to Asia, opening regular air service over the Pacific.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "tat-1-transatlantic-telephone-cable",
@@ -149,7 +149,7 @@
     "year": 1973,
     "category": "commerce",
     "description": "A new company flew its first overnight packages from Memphis to cities across the United States.",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "name": "western-union-ends-telegrams",
@@ -157,7 +157,7 @@
     "year": 2006,
     "category": "commerce",
     "description": "The company that once dominated the telegraph quietly stopped sending telegrams, ending a long era of wired messages.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "amazon-first-drone-delivery",
@@ -165,6 +165,6 @@
     "year": 2016,
     "category": "invention",
     "description": "An online retailer completed its first customer delivery by unmanned aircraft, carrying a parcel to a rural home.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   }
 ]

@@ -1,0 +1,23 @@
+{
+  "pheidippides-marathon-run": {"recognition": "high", "inferability": "high", "anchors": ["Greek", "Persians", "Athens"], "why": "famous marathon legend; Greeks vs invading Persians places it in antiquity"},
+  "cursus-publicus-founded": {"recognition": "low", "inferability": "high", "anchors": ["Rome", "first emperor"], "why": "Rome's first emperor places it at the start of the Empire"},
+  "mongol-yam-relay-network": {"recognition": "low", "inferability": "high", "anchors": ["Mongol Empire", "horse stations"], "why": "Mongol Empire plus horse riders places it in the medieval era"},
+  "beacon-chain-armada-warning": {"recognition": "medium", "inferability": "high", "anchors": ["Spanish fleet", "England", "bonfires"], "why": "Spanish Armada against England is a well-known Tudor-era anchor"},
+  "royal-mail-opens-to-public": {"recognition": "low", "inferability": "medium", "anchors": ["king", "royal postal service"], "why": "a king and letters point to early modern, but could be several centuries"},
+  "first-mail-coach-bath-london": {"recognition": "low", "inferability": "medium", "anchors": ["coaches", "post-boys", "English cities"], "why": "horse coaches and post-boys suggest pre-railway Georgian England"},
+  "chappe-semaphore-line": {"recognition": "medium", "inferability": "medium", "anchors": ["semaphore towers", "Chappe"], "why": "pre-electric signal towers suggest 18th-19th century; no explicit era"},
+  "cooke-wheatstone-telegraph": {"recognition": "medium", "inferability": "high", "anchors": ["telegraph", "railway lines", "patented"], "why": "telegraph along railways places it in the early Victorian era"},
+  "pony-express-launches": {"recognition": "high", "inferability": "high", "anchors": ["Pony Express", "American West", "Missouri to California"], "why": "famous Old West mail service, 19th century"},
+  "rural-free-delivery-begins": {"recognition": "low", "inferability": "medium", "anchors": ["American farm families", "roadside boxes"], "why": "mailboxes and farm families suggest late 19th or early 20th century"},
+  "marconi-transatlantic-radio-signal": {"recognition": "high", "inferability": "high", "anchors": ["Marconi", "wireless", "Morse"], "why": "Marconi and Morse wireless place it at the dawn of radio"},
+  "first-official-airmail-flight": {"recognition": "low", "inferability": "high", "anchors": ["aeroplane", "Indian exhibition"], "why": "early aeroplane mail points to the 1910s"},
+  "cher-ami-pigeon-message": {"recognition": "medium", "inferability": "medium", "anchors": ["carrier pigeon", "battalion", "gunfire"], "why": "wartime pigeon suggests a world war but does not say which"},
+  "transatlantic-radiotelephone-service": {"recognition": "low", "inferability": "medium", "anchors": ["radio telephone", "London and New York"], "why": "radio telephone suggests early-to-mid 20th century"},
+  "china-clipper-pacific-airmail": {"recognition": "medium", "inferability": "high", "anchors": ["flying boat", "airmail", "Pacific"], "why": "giant flying boat airmail places it in the 1930s aviation era"},
+  "tat-1-transatlantic-telephone-cable": {"recognition": "low", "inferability": "medium", "anchors": ["undersea cable", "replaced radio links", "voice circuits"], "why": "replacing radio links implies after radiotelephone, mid-20th century"},
+  "zip-codes-introduced": {"recognition": "medium", "inferability": "medium", "anchors": ["five-digit codes", "machine sorting", "US post office"], "why": "machine sorting implies mid-to-late 20th century"},
+  "dhl-express-courier-founded": {"recognition": "medium", "inferability": "medium", "anchors": ["flying documents", "Hawaii", "express network"], "why": "air courier suggests post-war 20th century, no firm date"},
+  "fedex-first-deliveries": {"recognition": "medium", "inferability": "medium", "anchors": ["overnight packages", "Memphis", "company"], "why": "air overnight package company suggests modern 20th century"},
+  "western-union-ends-telegrams": {"recognition": "medium", "inferability": "high", "anchors": ["telegraph", "end of an era"], "why": "ending telegrams implies the modern internet age, after a long telegraph era"},
+  "amazon-first-drone-delivery": {"recognition": "high", "inferability": "high", "anchors": ["Amazon", "drone", "online retailer"], "why": "Amazon and drones place it in the 2010s-20s"}
+}
