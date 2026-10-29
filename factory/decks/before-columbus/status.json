@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T16:37:55.240Z",
+  "updated_at": "2026-10-29T17:07:48.710Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "squash-domesticated-guila-naquitz": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2a681a3c63131ef4c175bce1542b0dd0a7de2e373313fbb0d1751ef7bd9be034",
-      "updated_at": "2026-10-29T16:09:17.664Z"
+      "updated_at": "2026-10-29T17:07:48.401Z"
     },
     "cacao-use-santa-ana-la-florida": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2d3ad4e0ee72536226a86f007f94be2e84882388523f1a3ad8759b67c0922420",
-      "updated_at": "2026-10-29T16:11:37.901Z"
+      "updated_at": "2026-10-29T17:07:48.433Z"
     },
     "zapotecs-found-monte-alban": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7fe387e72e34ed3b742a20ebc6fd46af9e9d457143b589787c26de182d1a183a",
-      "updated_at": "2026-10-29T16:14:51.147Z"
+      "updated_at": "2026-10-29T17:07:48.464Z"
     },
     "el-mirador-maya-city-rises": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c24c421088d2c6e9b6cd770c6b6d06fcaad8b197bf4fb24abd8aa745dba1cc7b",
-      "updated_at": "2026-10-29T16:17:24.365Z"
+      "updated_at": "2026-10-29T17:07:48.494Z"
     },
     "teotihuacan-city-founded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bbdaf1ad3f7f72f1a99a7dbe6ec92a62d92a9c00a8dda1d9ea9fc0cabab2dd17",
-      "updated_at": "2026-10-29T16:19:58.383Z"
+      "updated_at": "2026-10-29T17:07:48.526Z"
     },
     "chiapa-de-corzo-long-count-stela": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "feb697d024c45011336fdeeb33b672b1806488f6341cd7a9957b6de36e43e0ff",
-      "updated_at": "2026-10-29T16:22:33.124Z"
+      "updated_at": "2026-10-29T17:07:48.567Z"
     },
     "lord-of-sipan-burial": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c3d75000c53f9785f02d40005f97c178fe81af5eb8de8d5dbe65d3e3512755ad",
-      "updated_at": "2026-10-29T16:29:05.639Z"
+      "updated_at": "2026-10-29T17:07:48.606Z"
     },
     "teotihuacan-conquers-tikal": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "abf5a527da42eb83b74ff8c1700ec13af67d5fdb7c4035dde29e2b58a32a7a54",
-      "updated_at": "2026-10-29T16:32:23.559Z"
+      "updated_at": "2026-10-29T17:07:48.642Z"
     },
     "copan-dynasty-founded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "02be472f3265a50d311bd396bb4bdf43d10221701fbed4f68b89fb39d7628631",
-      "updated_at": "2026-10-29T16:35:12.132Z"
+      "updated_at": "2026-10-29T17:07:48.676Z"
     },
     "teotihuacan-burned-collapse": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "56e397060fd95c849f0f2f37bff38b5bfc964fcbce2d8e9e8b5fca5f30a0e5a6",
-      "updated_at": "2026-10-29T16:37:55.240Z"
+      "updated_at": "2026-10-29T17:07:48.710Z"
     },
     "calakmul-defeats-tikal": {
       "state": "pending",
