@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T06:24:21.546Z",
+  "updated_at": "2026-10-29T06:26:50.675Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-29T06:24:21.546Z"
     },
     "cooke-wheatstone-telegraph": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fe7b2e99a8d41ac66d0eeb7e691641e7601fb7d082839baf9fc709da18072bf5",
+      "updated_at": "2026-10-29T06:26:50.675Z"
     },
     "pony-express-launches": {
       "state": "pending",
