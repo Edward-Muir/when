@@ -1,0 +1,15 @@
+{
+  "slug": "western-union-ends-telegrams",
+  "description": "A dim, dusty interior seen in warm side light from a window. A black typewriter sits on a worn wooden desk, partly covered by a draped beige cloth. A curled strip of paper hangs off the desk edge, with an ink bottle, pencil and loose papers nearby. On the right, a wooden door has a hanging sign reading CLOSED. A bicycle and stacked cardboard boxes sit in the background.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The hanging sign on the door has legible painted lettering reading CLOSED, which breaks the no-text rule. The scene asked for the sign to carry no legible text. The painting also shows a typewriter rather than a silent teleprinter, a minor mismatch. Regenerate without a readable sign, or with the sign turned away from the viewer."
+}

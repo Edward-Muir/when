@@ -131,5 +131,19 @@
     "by": "review",
     "attempts": 1,
     "description": "A night airport apron under bright floodlights. A sleek, dark business jet stands with its rear cabin door open and steps down, with a figure on the stairs. Several workers in dark work clothes push carts stacked with cardboard boxes across the wet tarmac. Other small jets and ground vehicles sit in the background. No visible text, lettering, frame or border."
+  },
+  "western-union-ends-telegrams": {
+    "state": "qc-fail",
+    "reason": "The hanging sign on the door is clearly painted with the word CLOSED, which is legible text. Regenerate with a blank sign or one turned away from the viewer.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dim, painterly still life of an old black typewriter under a draped cloth on a worn wooden desk, with a curled paper strip hanging off the edge, an ink bottle, a pencil and loose papers. A bicycle and stacked boxes sit behind, light falls through a window, and a door on the right has a hanging sign clearly reading CLOSED. No frame, nothing graphic."
+  },
+  "amazon-first-drone-delivery": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A six-rotor black drone hovers under a dark, stormy sky with a shaft of light breaking through the clouds, carrying a plain cardboard box slung beneath it. Below is a thatched cottage with a brick chimney and ivy, set in a green field, with a flat board lying on the grass in the foreground. The painting is loose and textured, in oil style, and fills the whole image with no visible text."
   }
 }

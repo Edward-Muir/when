@@ -1,0 +1,15 @@
+{
+  "slug": "western-union-ends-telegrams",
+  "description": "A dim, painterly still life of an old black typewriter under a draped cloth on a worn wooden desk, with a curled paper strip hanging off the edge, an ink bottle, a pencil and loose papers. A bicycle and stacked boxes sit behind, light falls through a window, and a door on the right has a hanging sign clearly reading CLOSED. No frame, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The hanging sign on the door is clearly painted with the word CLOSED, which is legible text. Regenerate with a blank sign or one turned away from the viewer."
+}
