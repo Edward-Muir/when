@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T18:14:44.967Z",
+  "updated_at": "2026-10-29T18:17:17.990Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-29T18:14:44.967Z"
     },
     "chan-chan-rises": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a444dd2ff9668319591dbafb8d5e8cdb38d29aaf7ca46596e88b5380c053ba92",
+      "updated_at": "2026-10-29T18:17:17.990Z"
     },
     "chichen-itza-rises": {
       "state": "pending",
