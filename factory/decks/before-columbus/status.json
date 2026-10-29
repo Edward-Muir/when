@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T16:11:37.901Z",
+  "updated_at": "2026-10-29T16:14:51.147Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-29T16:11:37.901Z"
     },
     "zapotecs-found-monte-alban": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7fe387e72e34ed3b742a20ebc6fd46af9e9d457143b589787c26de182d1a183a",
+      "updated_at": "2026-10-29T16:14:51.147Z"
     },
     "el-mirador-maya-city-rises": {
       "state": "pending",
