@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T17:07:48.710Z",
+  "updated_at": "2026-10-29T18:09:27.274Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-29T17:07:48.710Z"
     },
     "calakmul-defeats-tikal": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e834b6ffafc72975b8a0ca5f6c9951974e2b7237045c856d2144ff153fefb359",
+      "updated_at": "2026-10-29T18:09:27.274Z"
     },
     "pakal-tomb-sealed-palenque": {
       "state": "pending",
