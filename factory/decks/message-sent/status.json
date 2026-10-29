@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T06:29:34.175Z",
+  "updated_at": "2026-10-29T06:32:05.269Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-29T06:29:34.175Z"
     },
     "rural-free-delivery-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e966335bd6c2340e182b64d35b25cc49050d65c0f4e2d2655fab38a3139efdbc",
+      "updated_at": "2026-10-29T06:32:05.269Z"
     },
     "marconi-transatlantic-radio-signal": {
       "state": "pending",
