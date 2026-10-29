@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T10:09:29.659Z",
+  "updated_at": "2026-10-29T10:11:58.550Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-29T10:09:29.659Z"
     },
     "amazon-first-drone-delivery": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "237a7306e7c84123aa31a4db72366e1b65f4967903a7ba88494f92b9fb896330",
+      "updated_at": "2026-10-29T10:11:58.550Z"
     }
   }
 }
