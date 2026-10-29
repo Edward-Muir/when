@@ -1,0 +1,72 @@
+{
+  "pheidippides-marathon-run": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a tattered, sleeveless off-white tunic runs barefoot down a dusty, rocky hillside path, one arm thrown up and a strained expression on his face, kicking up dust. Behind him on the left, a walled hilltop citadel with classical-looking buildings sits across a distant plain under a dark, stormy sky with a warm light break near the horizon. There is no visible text, border, or frame; the painting fills the whole image in a dark oil style."
+  },
+  "cursus-publicus-founded": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A tired-looking man in a short tunic, dark cloak and sandals, with a leather satchel across his chest, steps down from or beside a sweating dark horse on a cobbled yard at night. A second man on the right leads out a fresh horse by the reins. Stone arched doorways, timber-braced walls, a wall torch, a hanging lantern and a brazier fill the setting. Oil-painting style, no text, no frame, no gore."
+  },
+  "mongol-yam-relay-network": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a fur-trimmed hat and dark deel robe rides a galloping brown horse across open grassland under a stormy sky, leaning forward over the reins. A silver plaque hangs on his chest. In the background, felt yurts and several tethered horses stand near a few small figures, with a flag on a pole. No visible text. The painting runs edge to edge in an oil-painting style."
+  },
+  "beacon-chain-armada-warning": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a wide-brimmed hat and dark coat leans forward and thrusts a burning torch into an iron fire basket on a tall wooden post, at the edge of a cliff above a stormy grey sea. Sparks fly and smoke rises into a dark, cloudy sky. On a distant headland to the right, a second small fire burns with a thin plume of smoke. There are no visible letters, frames or borders, and the painting runs edge to edge."
+  },
+  "royal-mail-opens-to-public": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man with a white lace collar and dark doublet hands a wax-sealed letter across a wooden table to a woman in a black headscarf and dark dress. A leather satchel of letters sits on the table, with a quill, inkwell and scattered coins, and a lit candle stands between them. A brass post horn hangs from a timber beam in a dim, low-ceilinged wooden room, with shadowy figures in hats in the background. No visible text, frame or border."
+  },
+  "first-mail-coach-bath-london": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Painting of a red and black stagecoach pulled by two bay horses on a muddy road at dusk. A guard in a red coat and tricorn hat blows a long brass post horn from the rear, and a driver in a dark coat and hat holds the reins on the box. A trunk is strapped on the roof and lanterns are lit on the coach. The sky is stormy and dark with an orange sunset glow, and a crest is on the door. Oil-painting style, no visible text, no visible frame."
+  },
+  "chappe-semaphore-line": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A stone tower on a rocky ridge with a tall wooden mast topped by a crossbar and two angled hinged arms. A man in a tricorn hat and long coat stands on a wooden platform beside it, peering through a brass telescope. Behind him a valley opens under heavy grey clouds, and a second small tower with a cross-like arm sits on a far hill."
+  },
+  "cooke-wheatstone-telegraph": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark oil painting of a wooden cabinet with a diamond-shaped board carrying five pivoted needles over faint grid marks, with copper coils, brass terminals and cables at its base. Through a window at right a steam locomotive runs along a track beside telegraph poles. In the foreground are an ink bottle, a quill, a brass key and sheets of illegible handwriting. No border or frame; the painting fills the image."
+  },
+  "pony-express-launches": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a dark wide-brimmed hat and dark work clothes leans from a dark bay horse with a white blaze, reaching across to a second bay horse with a saddle, while holding a leather saddle bag with pockets. A second man in a hat and waistcoat holds the second horse's bridle at the right. They stand in a dusty yard beside a dim log cabin with a glowing lantern on the wall, under a dark, dusky sky with flat plains on the left."
+  },
+  "rural-free-delivery-begins": {
+    "state": "qc-fail",
+    "reason": "The wagon side has painted letters reading 'U.S. MAIL' plus a faint extra word above it. Repaint the wagon side blank, with no lettering.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil painting of a rural mail carrier in a cap leaning from a horse-drawn wagon lettered 'U.S. MAIL' to put a letter in a roadside wooden mailbox with a red flag. A farmhouse and barn sit beside a dirt road under a moody sky. The scene fills the frame with no border. The only text is the lettering on the wagon, with a faint illegible mark above it."
+  }
+}

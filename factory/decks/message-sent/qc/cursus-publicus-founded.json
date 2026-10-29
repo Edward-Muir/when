@@ -1,0 +1,15 @@
+{
+  "slug": "cursus-publicus-founded",
+  "description": "A bearded man in a short tunic and dark cloak, with a leather satchel slung across his chest, strides rapidly beside a dark bay horse on a cobbled street. A second man on the right holds another horse's reins. Torches burn on stone and timber buildings under a dusky sky, and the scene is painted in a warm, dark oil style. No visible text, border or frame; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The courier's tunic, cloak and sandals fit Rome, but the setting is a medieval or early-modern town: half-timbered buildings with a jettied upper storey, a stone arched doorway, and iron wall-bracket torches. The card is a Roman state relay in 27 BC, so the buildings need redrawing as a Roman way station with stone or brick architecture and no timber-frame or wall torches. The scene also shows the courier walking beside his horse rather than swinging down from a tired one at the station, so the action should be adjusted to match the card."
+}

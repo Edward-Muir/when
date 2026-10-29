@@ -1,0 +1,15 @@
+{
+  "slug": "rural-free-delivery-begins",
+  "description": "An oil painting of a rural mail carrier in a cap leaning from a horse-drawn wagon lettered 'U.S. MAIL' to put a letter in a roadside wooden mailbox with a red flag. A farmhouse and barn sit beside a dirt road under a moody sky. The scene fills the frame with no border. The only text is the lettering on the wagon, with a faint illegible mark above it.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The wagon side has painted letters reading 'U.S. MAIL' plus a faint extra word above it. Repaint the wagon side blank, with no lettering."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "rural-free-delivery-begins",
+  "description": "A painting of a man in a dark peaked cap and long coat leaning out of the side of a wooden horse-drawn wagon, reaching to put a letter into a wooden roadside mailbox with a red flag on a post. A brown horse in harness stands at the left. The wagon's side has painted letters reading 'U.S. MAIL'. Behind is a dirt lane curving past fields under a stormy sky, with a farmhouse and barn in the distance. Dim, warm oil-painting palette, edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The wagon's side has the painted lettering 'U.S. MAIL' (and a faint additional word above it). Remove or repaint the lettering so the wagon side is blank."
+}

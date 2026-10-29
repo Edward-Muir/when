@@ -1,0 +1,15 @@
+{
+  "slug": "cooke-wheatstone-telegraph",
+  "description": "A wooden cabinet with a brass-and-wood diamond-shaped dial board carrying three pointer needles, with copper coils and brass terminals at its base and a dangling cable. Through a window at right, a black steam locomotive with a tall stack runs along a track past telegraph poles. In the foreground are an ink bottle, a quill, a brass key and sheets of handwritten paper. The scene is a dim, warmly lit interior with no visible border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The sheets of paper in the foreground carry dense handwriting-like scribbles. They read as pseudo-script rather than legible words, but they could be taken as painted text, so the artist should replace or simplify them with blank or clearly abstract paper. The scene also asked for five needles, and the painting shows about three."
+}

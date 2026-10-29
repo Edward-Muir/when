@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T06:32:05.269Z",
+  "updated_at": "2026-10-29T07:08:33.852Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "pheidippides-marathon-run": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "81d2915443d834acc3cc8be3fef0e16c5e9160cbc3614f8e8a8e90e686a1975d",
-      "updated_at": "2026-10-29T06:09:13.590Z"
+      "updated_at": "2026-10-29T07:08:33.529Z"
     },
     "cursus-publicus-founded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "042e9b1e2f15e253b03f344ffc8507a53401e0cd34cfe6e3fe6294ad647ad264",
-      "updated_at": "2026-10-29T06:11:45.877Z"
+      "updated_at": "2026-10-29T07:08:33.562Z"
     },
     "mongol-yam-relay-network": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d27e76812a81f04b3436b9f6b690b882472144b0f09b9537888543787c65cafd",
-      "updated_at": "2026-10-29T06:14:17.886Z"
+      "updated_at": "2026-10-29T07:08:33.593Z"
     },
     "beacon-chain-armada-warning": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "58099a3983538aba71d965ee271ee93fd75e4a124825ae454c1a1e23b59e63f0",
-      "updated_at": "2026-10-29T06:16:50.097Z"
+      "updated_at": "2026-10-29T07:08:33.624Z"
     },
     "royal-mail-opens-to-public": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3d1126e2ab36c0069300b4e3179c6957f9fac778262803ae62ffa40c14873a28",
-      "updated_at": "2026-10-29T06:19:21.266Z"
+      "updated_at": "2026-10-29T07:08:33.657Z"
     },
     "first-mail-coach-bath-london": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "90f2505566b25d70fcb2ba44dd7a7f018056d6b5a31abf6c924f156d709fb642",
-      "updated_at": "2026-10-29T06:21:51.139Z"
+      "updated_at": "2026-10-29T07:08:33.688Z"
     },
     "chappe-semaphore-line": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "30c3377259bb2143aeaee02f113ee2578eab0de3e2579e1d8df4808fb34acbc9",
-      "updated_at": "2026-10-29T06:24:21.546Z"
+      "updated_at": "2026-10-29T07:08:33.731Z"
     },
     "cooke-wheatstone-telegraph": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fe7b2e99a8d41ac66d0eeb7e691641e7601fb7d082839baf9fc709da18072bf5",
-      "updated_at": "2026-10-29T06:26:50.675Z"
+      "updated_at": "2026-10-29T07:08:33.775Z"
     },
     "pony-express-launches": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4127740e77e45994b40dec6a555b6ca1d5d9ae0e87cf47886b45f72d12f5acb4",
-      "updated_at": "2026-10-29T06:29:34.175Z"
+      "updated_at": "2026-10-29T07:08:33.812Z"
     },
     "rural-free-delivery-begins": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The wagon side has painted letters reading 'U.S. MAIL' plus a faint extra word above it. Repaint the wagon side blank, with no lettering.",
       "sha256": "e966335bd6c2340e182b64d35b25cc49050d65c0f4e2d2655fab38a3139efdbc",
-      "updated_at": "2026-10-29T06:32:05.269Z"
+      "updated_at": "2026-10-29T07:08:33.852Z"
     },
     "marconi-transatlantic-radio-signal": {
       "state": "pending",
