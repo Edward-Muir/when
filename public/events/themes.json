@@ -12872,7 +12872,8 @@
     "regions": [
       "Greece",
       "Iran"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cursus-publicus-founded",
@@ -12884,7 +12885,8 @@
     "regions": [
       "Italy",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mongol-yam-relay-network",
@@ -12898,7 +12900,8 @@
       "Europe",
       "Middle East & North Africa",
       "North & Central Asia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "beacon-chain-armada-warning",
@@ -12910,7 +12913,8 @@
     "regions": [
       "Spain",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "royal-mail-opens-to-public",
@@ -12921,7 +12925,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-mail-coach-bath-london",
@@ -12932,7 +12937,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "chappe-semaphore-line",
@@ -12943,7 +12949,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cooke-wheatstone-telegraph",
@@ -12954,7 +12961,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pony-express-launches",
@@ -12965,7 +12973,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rural-free-delivery-begins",
@@ -12976,7 +12985,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "marconi-transatlantic-radio-signal",
@@ -12988,7 +12998,8 @@
     "regions": [
       "Canada",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-official-airmail-flight",
@@ -12999,7 +13010,8 @@
     "difficulty": "easy",
     "regions": [
       "India"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cher-ami-pigeon-message",
@@ -13011,7 +13023,8 @@
     "regions": [
       "France",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "transatlantic-radiotelephone-service",
@@ -13023,7 +13036,8 @@
     "regions": [
       "United Kingdom",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "china-clipper-pacific-airmail",
@@ -13035,7 +13049,8 @@
     "regions": [
       "Philippines",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tat-1-transatlantic-telephone-cable",
@@ -13048,7 +13063,8 @@
       "Canada",
       "United Kingdom",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "zip-codes-introduced",
@@ -13059,7 +13075,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "dhl-express-courier-founded",
@@ -13070,7 +13087,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "fedex-first-deliveries",
@@ -13081,7 +13099,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "western-union-ends-telegrams",
@@ -13092,7 +13111,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "amazon-first-drone-delivery",
@@ -13103,6 +13123,7 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   }
 ]
