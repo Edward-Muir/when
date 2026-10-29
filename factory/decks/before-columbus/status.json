@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T18:09:27.274Z",
+  "updated_at": "2026-10-29T18:12:11.809Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-10-29T18:09:27.274Z"
     },
     "pakal-tomb-sealed-palenque": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d40091ed2d58e4c58deacc751c762380d4306d8dbc412ef8a36dd7647af998bb",
+      "updated_at": "2026-10-29T18:12:11.809Z"
     },
     "tikal-temple-i-built": {
       "state": "pending",
