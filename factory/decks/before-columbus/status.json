@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T16:29:05.639Z",
+  "updated_at": "2026-10-29T16:32:23.559Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-29T16:29:05.639Z"
     },
     "teotihuacan-conquers-tikal": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "abf5a527da42eb83b74ff8c1700ec13af67d5fdb7c4035dde29e2b58a32a7a54",
+      "updated_at": "2026-10-29T16:32:23.559Z"
     },
     "copan-dynasty-founded": {
       "state": "pending",
