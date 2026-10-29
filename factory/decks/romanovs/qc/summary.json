@@ -56,11 +56,11 @@
     "description": "A dim palace corridor with a carved wooden door ajar. A man in a dark bicorne-style uniform with red facings and white breeches holds a candle aloft. Several officers in dark uniforms, bicorne hats with white plumes and epaulettes, with swords drawn, crowd toward the doorway. One officer in the foreground stands with his back turned. Gilt-edged paintings hang on the walls and a vaulted hall recedes into shadow. No visible text, frame or violence."
   },
   "decembrist-revolt": {
-    "state": "qc-fail",
-    "reason": "A pale plaque on the statue's rock carries several lines of clearly painted letters. Repaint the rock as bare granite with no plaque or inscription.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A snowy city square at dusk with falling snow and smoke. Soldiers in dark green coats and shakos with bayonets stand in ranks, officers in greatcoats and cocked hats in front, one on horseback with a lantern. A bronze rearing-horse statue stands on a huge snow-covered rock at upper left, with a light plaque on the rock carrying several lines of painted lettering. Cannons fire in the background among torches. No frame or gore."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A winter square at dusk or night. A bronze statue of a rearing horse and rider stands on a large granite boulder at right. Rows of soldiers in dark green coats and tall shako caps hold muskets, and some carry torches. An officer on a brown horse sits at the lower left. In the background are cannons with smoke, a domed cathedral with a gold dome, and a neoclassical building. There is no visible text, no frame, and no blood."
   },
   "tsarskoye-selo-railway-opens": {
     "state": "qc-pass",
@@ -68,5 +68,54 @@
     "by": "review",
     "attempts": 1,
     "description": "A early steam locomotive with a tall black chimney and a glowing headlamp runs along a track through a flat landscape of birch trees. Behind it, open carriages carry men in top hats and frock coats and a few women in bonnets, with a man in a cap at the controls. Thick smoke and sparks rise from the funnel. In the right background is a pale classical pavilion with lit arched windows, and a crowd stands near it under a dusk sky. No visible text, frame or border."
+  },
+  "tolstoy-war-and-peace-completed": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A tall stack of loose, deckled paper sheets sits on a dark wooden desk, with a quill pen resting across the top page, which has faint handwritten-looking lines. A lit candle in a brass holder and an open inkwell sit to the right, with pen nibs beside them. Through a window behind, a snowy village shows at night. The painting is dark, warm and painterly, with no visible frame or border."
+  },
+  "faberge-first-imperial-egg": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark-gloved hand lifts the top half of a white enamel egg with a gold rim, revealing a gold yolk-like cup with a small gold hen inside. The egg sits on a crimson velvet cushion on a wooden workbench, surrounded by pliers, picks, a small metal cup and a gold ring at the bottom edge. The background is dark and the style is painterly oil. No visible text."
+  },
+  "trans-siberian-railway-begun": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted forest scene with a railway track running straight into the distance between tall pines and birches. In the foreground, a man in a rough light tunic heaves a wooden sleeper, while several workers in flat caps and dark long coats swing hammers and spike tools at the rails. A figure in a peaked cap and dark coat stands behind them, gesturing. Logs and debris lie in the clearing, snow patches on the ground, and a steam locomotive with a plume of smoke is visible far down the line under an overcast sky. No text or frame is visible."
+  },
+  "nicholas-ii-becomes-tsar": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A jewelled imperial crown with a red stone sits on a black velvet cushion, lit by a tall candle at its right. Behind it a black cloth with embroidered eagle motifs drapes over a shape, and to the left and right dark-robed, veiled figures stand with bowed heads. The background is a gilded Orthodox iconostasis with painted icons and more candles, all in a dim, smoky interior. No text, border or frame is visible; the painting runs edge to edge."
+  },
+  "bloody-sunday-st-petersburg": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted scene of a large crowd of bearded men in dark coats and caps holding icons, crosses and religious banners in snow before a large pale green and white baroque palace. In the foreground a man in a black greatcoat raises his arm facing a line of soldiers in fur hats aiming rifles from the right. Winter, snow, overcast sky, bare trees. No visible text, no frame, no bodies."
+  },
+  "russia-enters-world-war-one": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A crowded railway station under an iron-and-glass arched roof. Soldiers in khaki field uniforms with rolled bedrolls and rifles climb onto a dark passenger train, with a steam locomotive and smoke at right. Women in shawls, a woman holding a baby, and a boy reach up toward the men on the platform, with bundles and lamps around them. No visible text, no frame, no blood."
+  },
+  "rasputin-murdered": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, night-time painting of a bridge with heavy iron trusses and ice-crusted piers over a frozen river. A black open patch of water sits in the ice, with broken ice slabs around it. In the foreground a single dark fur-trimmed boot lies on the snow. Distant lamps glow faintly on the far bank. No figures, no text, no frame."
   }
 }

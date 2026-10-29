@@ -1,0 +1,15 @@
+{
+  "slug": "trans-siberian-railway-begun",
+  "description": "A painted forest scene with a railway track running straight into the distance between tall pines and birches. In the foreground, a man in a rough light tunic heaves a wooden sleeper, while several workers in flat caps and dark long coats swing hammers and spike tools at the rails. A figure in a peaked cap and dark coat stands behind them, gesturing. Logs and debris lie in the clearing, snow patches on the ground, and a steam locomotive with a plume of smoke is visible far down the line under an overcast sky. No text or frame is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "rasputin-murdered",
+  "description": "A dark, night-time painting of a bridge with heavy iron trusses and ice-crusted piers over a frozen river. A black open patch of water sits in the ice, with broken ice slabs around it. In the foreground a single dark fur-trimmed boot lies on the snow. Distant lamps glow faintly on the far bank. No figures, no text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
