@@ -3,7 +3,7 @@
   "name": "The Romanovs",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T23:17:05.790Z",
-  "updated_at": "2026-10-29T00:26:06.513Z",
+  "updated_at": "2026-10-29T00:28:26.360Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-29T00:26:06.513Z"
     },
     "decembrist-revolt": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bb276b7bb54829d1fc17554609845cbcaa01f3176ff46d0faf9fabaeab091683",
+      "updated_at": "2026-10-29T00:28:26.360Z"
     },
     "tsarskoye-selo-railway-opens": {
       "state": "pending",
