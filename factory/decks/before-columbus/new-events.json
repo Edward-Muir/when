@@ -29,7 +29,7 @@
     "year": -300,
     "category": "empires",
     "description": "In the jungles of Guatemala, a Maya city raised huge pyramids, among them La Danta, one of the largest ever built.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "teotihuacan-city-founded",
@@ -45,7 +45,7 @@
     "year": -36,
     "category": "writing",
     "description": "A carved stela in southern Mexico bore the oldest surviving date in the Maya calendar's Long Count system.",
-    "difficulty": "very-hard"
+    "difficulty": "hard"
   },
   {
     "name": "lord-of-sipan-burial",
@@ -61,7 +61,7 @@
     "year": 378,
     "category": "warfare",
     "description": "Warriors linked to a great Mexican city arrived at a Maya capital in Guatemala, and its king died the same day.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "copan-dynasty-founded",
@@ -69,7 +69,7 @@
     "year": 426,
     "category": "empires",
     "description": "K'inich Yax K'uk' Mo' founded the royal line of a Maya city in Honduras that ruled for four centuries.",
-    "difficulty": "very-hard"
+    "difficulty": "hard"
   },
   {
     "name": "teotihuacan-burned-collapse",
@@ -77,7 +77,7 @@
     "year": 550,
     "category": "disasters",
     "description": "Fire swept the ceremonial heart of the great Mexican city, whose population then dwindled away.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "calakmul-defeats-tikal",
@@ -85,7 +85,7 @@
     "year": 562,
     "category": "warfare",
     "description": "The Snake kingdom's alliance overthrew Tikal, the leading Maya city, and dominated the lowlands for generations.",
-    "difficulty": "very-hard"
+    "difficulty": "hard"
   },
   {
     "name": "pakal-tomb-sealed-palenque",
@@ -101,7 +101,7 @@
     "year": 732,
     "category": "architecture",
     "description": "A steep funerary pyramid rose over the tomb of a Maya king in Guatemala, facing the city's Great Plaza.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "chan-chan-rises",
@@ -109,7 +109,7 @@
     "year": 850,
     "category": "architecture",
     "description": "The Chimu built a vast adobe capital on the Peruvian coast, with walled palaces and carved friezes.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "chichen-itza-rises",
@@ -117,7 +117,7 @@
     "year": 987,
     "category": "empires",
     "description": "A Maya city in Yucatan grew into a major centre, later known for its stepped pyramid El Castillo.",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "name": "cusco-founded-legend",
@@ -125,7 +125,7 @@
     "year": 1200,
     "category": "migration",
     "description": "By tradition, Manco Capac led his people to the Andean valley where the Inca capital was raised.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "pachacuti-becomes-inca",
@@ -133,7 +133,7 @@
     "year": 1438,
     "category": "empires",
     "description": "After defeating invaders, a new Inca ruler began turning a highland kingdom into a vast empire.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "inca-conquer-chimu",
@@ -141,7 +141,7 @@
     "year": 1470,
     "category": "warfare",
     "description": "Inca armies took the Chimu realm on the Peruvian coast, its richest rival and the builders of Chan Chan.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "tenochtitlan-conquers-tlatelolco",
@@ -149,7 +149,7 @@
     "year": 1473,
     "category": "warfare",
     "description": "The Aztec capital defeated its twin island city and took over its busy market and trade networks.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "templo-mayor-dedicated",
@@ -157,7 +157,7 @@
     "year": 1487,
     "category": "architecture",
     "description": "The Aztec twin-shrined temple pyramid was rededicated with ceremonies said to include thousands of sacrifices.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "moctezuma-ii-crowned",
@@ -165,6 +165,6 @@
     "year": 1502,
     "category": "empires",
     "description": "The ninth Aztec tlatoani took the throne of an empire at its height; the Spaniards later held him captive.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   }
 ]
