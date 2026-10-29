@@ -3,7 +3,7 @@
   "name": "The Romanovs",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T23:17:05.790Z",
-  "updated_at": "2026-10-29T02:16:09.553Z",
+  "updated_at": "2026-10-29T02:18:30.714Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-29T02:16:09.553Z"
     },
     "nicholas-ii-becomes-tsar": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "493dfc2e21a950055204efa2de3ee4b35e62c741d0ce63daeadac423a01f5d22",
+      "updated_at": "2026-10-29T02:18:30.714Z"
     },
     "bloody-sunday-st-petersburg": {
       "state": "pending",
