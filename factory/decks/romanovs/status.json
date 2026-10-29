@@ -3,7 +3,7 @@
   "name": "The Romanovs",
   "stage": "art-in-progress",
   "created_at": "2026-10-28T23:17:05.790Z",
-  "updated_at": "2026-10-29T00:23:47.845Z",
+  "updated_at": "2026-10-29T00:26:06.513Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-29T00:23:47.845Z"
     },
     "paul-i-assassinated": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9b0b41c71124e2dcee5a586607473b729ca15deaf92975925c60a8614384f8a8",
+      "updated_at": "2026-10-29T00:26:06.513Z"
     },
     "decembrist-revolt": {
       "state": "pending",
