@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T06:09:13.590Z",
+  "updated_at": "2026-10-29T06:11:45.877Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-29T06:09:13.590Z"
     },
     "cursus-publicus-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "042e9b1e2f15e253b03f344ffc8507a53401e0cd34cfe6e3fe6294ad647ad264",
+      "updated_at": "2026-10-29T06:11:45.877Z"
     },
     "mongol-yam-relay-network": {
       "state": "pending",
