@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T09:07:53.611Z",
+  "updated_at": "2026-10-29T10:09:29.659Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-10-29T09:07:53.611Z"
     },
     "western-union-ends-telegrams": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "be904b101ae823f350403eccc6a6ce6b2f9c5a92a093800262c316e5079ecff1",
+      "updated_at": "2026-10-29T10:09:29.659Z"
     },
     "amazon-first-drone-delivery": {
       "state": "pending",
