@@ -1,0 +1,241 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "squash-domesticated-guila-naquitz"
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "cacao-use-santa-ana-la-florida"
+    },
+    {
+      "beat": 2,
+      "decision": "cut",
+      "slug": "",
+      "why": "Existing caral-civilization is a different date (3000 BCE window); not the same year, would duplicate"
+    },
+    {
+      "beat": 3,
+      "decision": "reuse",
+      "slug": "paso-de-la-amada-ballcourt",
+      "why": "Same Paso de la Amada ballcourt; 1650 BCE vs 1600 BCE is the same approximate date"
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "san-lorenzo-olmec",
+      "why": "Same San Lorenzo Olmec rise, window starts at the same year"
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "chavin-culture",
+      "why": "Chavin temple centre and culture share the same start year"
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "zapotecs-found-monte-alban"
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "el-mirador-maya-city-rises"
+    },
+    {
+      "beat": 8,
+      "decision": "cut",
+      "slug": "",
+      "why": "Existing nazca-lines sits at 500 BCE, would duplicate; spine date unverified"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "teotihuacan-city-founded"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "chiapa-de-corzo-long-count-stela"
+    },
+    {
+      "beat": 11,
+      "decision": "reuse",
+      "slug": "teotihuacan-pyramid-founded",
+      "why": "Same Pyramid of the Sun construction"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "lord-of-sipan-burial"
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "teotihuacan-conquers-tikal"
+    },
+    {
+      "beat": 14,
+      "decision": "spare",
+      "slug": "copan-dynasty-founded",
+      "why": "Spine beat promoted from spare to replace cut beats 2 and 18/8"
+    },
+    {
+      "beat": 15,
+      "decision": "reuse",
+      "slug": "tiwanaku-monumental-center",
+      "why": "Same Tiwanaku monumental building"
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "teotihuacan-burned-collapse"
+    },
+    {
+      "beat": 17,
+      "decision": "spare",
+      "slug": "calakmul-defeats-tikal",
+      "why": "Spine beat promoted from spare to replace cut beats 2 and 18/8"
+    },
+    {
+      "beat": 18,
+      "decision": "cut",
+      "slug": "",
+      "why": "Existing wari-empire-expansion (700) is the same event at another year; fame 1"
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "palenque-pacal-accession",
+      "why": "Same accession of Pakal"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "pakal-tomb-sealed-palenque"
+    },
+    {
+      "beat": 21,
+      "decision": "reuse",
+      "slug": "tikal-calakmul-war",
+      "why": "Same Tikal victory over Calakmul"
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "tikal-temple-i-built"
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1, density"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "chan-chan-rises"
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1"
+    },
+    {
+      "beat": 26,
+      "decision": "cut",
+      "slug": "",
+      "why": "legendary date, fame 1"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "chichen-itza-rises"
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1, approximate"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "cusco-founded-legend"
+    },
+    {
+      "beat": 30,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1, date disputed"
+    },
+    {
+      "beat": 31,
+      "decision": "reuse",
+      "slug": "aztec-empire",
+      "why": "Same Triple Alliance"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "pachacuti-becomes-inca"
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1"
+    },
+    {
+      "beat": 34,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1"
+    },
+    {
+      "beat": 35,
+      "decision": "reuse",
+      "slug": "machu-picchu-construction",
+      "why": "Same Machu Picchu construction"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "inca-conquer-chimu"
+    },
+    {
+      "beat": 37,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1"
+    },
+    {
+      "beat": 38,
+      "decision": "new",
+      "slug": "tenochtitlan-conquers-tlatelolco"
+    },
+    {
+      "beat": 39,
+      "decision": "new",
+      "slug": "templo-mayor-dedicated"
+    },
+    {
+      "beat": 40,
+      "decision": "new",
+      "slug": "moctezuma-ii-crowned"
+    }
+  ],
+  "gates": "Gates:\nPASS  size 30                (want exactly 30)\n  INFO  bins 4/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in 1470-1473 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (rise-of-empires) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 63 earlier themes:\n        1  rise-of-empires        aztec-empire",
+  "footholds": [
+    "chichen-itza-rises",
+    "aztec-empire",
+    "machu-picchu-construction",
+    "pachacuti-becomes-inca",
+    "moctezuma-ii-crowned",
+    "templo-mayor-dedicated"
+  ]
+}
