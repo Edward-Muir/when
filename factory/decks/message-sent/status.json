@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T08:28:55.713Z",
+  "updated_at": "2026-10-29T08:31:33.848Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-29T08:28:55.713Z"
     },
     "dhl-express-courier-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0873717e7a643439e74f279ee9b16dc263570ab7658df47bd13c53db7bfb7069",
+      "updated_at": "2026-10-29T08:31:33.848Z"
     },
     "fedex-first-deliveries": {
       "state": "pending",
