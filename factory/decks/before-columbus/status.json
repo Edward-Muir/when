@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T16:14:51.147Z",
+  "updated_at": "2026-10-29T16:17:24.365Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-29T16:14:51.147Z"
     },
     "el-mirador-maya-city-rises": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c24c421088d2c6e9b6cd770c6b6d06fcaad8b197bf4fb24abd8aa745dba1cc7b",
+      "updated_at": "2026-10-29T16:17:24.365Z"
     },
     "teotihuacan-city-founded": {
       "state": "pending",
