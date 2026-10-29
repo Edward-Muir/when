@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T18:17:17.990Z",
+  "updated_at": "2026-10-29T18:19:47.636Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-29T18:17:17.990Z"
     },
     "chichen-itza-rises": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5fa8dc287ff48028c9c10241fb83eba8cb87f17b216183c7df029125c4c9d27d",
+      "updated_at": "2026-10-29T18:19:47.636Z"
     },
     "cusco-founded-legend": {
       "state": "pending",
