@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T18:24:46.403Z",
+  "updated_at": "2026-10-29T18:30:20.174Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-29T18:24:46.403Z"
     },
     "inca-conquer-chimu": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c387b07ca1c09704043e2c05eb202f8d0e874b9f1afab9958f8077d3ac68abb8",
+      "updated_at": "2026-10-29T18:30:20.174Z"
     },
     "tenochtitlan-conquers-tlatelolco": {
       "state": "pending",
