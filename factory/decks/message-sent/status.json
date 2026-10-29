@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T08:15:42.315Z",
+  "updated_at": "2026-10-29T08:18:19.833Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-29T08:15:42.315Z"
     },
     "cher-ami-pigeon-message": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bd3391f9095d148cb6c0691f480d3c7bc35935f8574475c993edca2a54b13b15",
+      "updated_at": "2026-10-29T08:18:19.833Z"
     },
     "transatlantic-radiotelephone-service": {
       "state": "pending",
