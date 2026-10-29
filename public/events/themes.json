@@ -12871,7 +12871,8 @@
     "difficulty": "hard",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cacao-use-santa-ana-la-florida",
@@ -12882,7 +12883,8 @@
     "difficulty": "hard",
     "regions": [
       "Ecuador"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "zapotecs-found-monte-alban",
@@ -12893,7 +12895,8 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "el-mirador-maya-city-rises",
@@ -12905,7 +12908,8 @@
     "regions": [
       "Guatemala"
     ],
-    "year_end": 150
+    "year_end": 150,
+    "has_detail": true
   },
   {
     "name": "teotihuacan-city-founded",
@@ -12916,7 +12920,8 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "chiapa-de-corzo-long-count-stela",
@@ -12927,7 +12932,8 @@
     "difficulty": "hard",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "lord-of-sipan-burial",
@@ -12938,7 +12944,8 @@
     "difficulty": "medium",
     "regions": [
       "Peru"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "teotihuacan-conquers-tikal",
@@ -12950,7 +12957,8 @@
     "regions": [
       "Guatemala",
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "copan-dynasty-founded",
@@ -12961,7 +12969,8 @@
     "difficulty": "hard",
     "regions": [
       "Honduras"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "teotihuacan-burned-collapse",
@@ -12972,7 +12981,8 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "calakmul-defeats-tikal",
@@ -12984,7 +12994,8 @@
     "regions": [
       "Guatemala",
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pakal-tomb-sealed-palenque",
@@ -12995,7 +13006,8 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tikal-temple-i-built",
@@ -13006,7 +13018,8 @@
     "difficulty": "medium",
     "regions": [
       "Guatemala"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "chan-chan-rises",
@@ -13017,7 +13030,8 @@
     "difficulty": "medium",
     "regions": [
       "Peru"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "chichen-itza-rises",
@@ -13028,7 +13042,8 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cusco-founded-legend",
@@ -13039,7 +13054,8 @@
     "difficulty": "easy",
     "regions": [
       "Peru"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pachacuti-becomes-inca",
@@ -13050,7 +13066,8 @@
     "difficulty": "easy",
     "regions": [
       "Peru"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "inca-conquer-chimu",
@@ -13061,7 +13078,8 @@
     "difficulty": "easy",
     "regions": [
       "Peru"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tenochtitlan-conquers-tlatelolco",
@@ -13072,7 +13090,8 @@
     "difficulty": "easy",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "templo-mayor-dedicated",
@@ -13083,7 +13102,8 @@
     "difficulty": "easy",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "moctezuma-ii-crowned",
@@ -13094,6 +13114,7 @@
     "difficulty": "easy",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   }
 ]
