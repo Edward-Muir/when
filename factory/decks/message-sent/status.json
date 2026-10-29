@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T07:08:33.852Z",
+  "updated_at": "2026-10-29T08:09:17.512Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,11 +79,11 @@
       "updated_at": "2026-10-29T07:08:33.812Z"
     },
     "rural-free-delivery-begins": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The wagon side has painted letters reading 'U.S. MAIL' plus a faint extra word above it. Repaint the wagon side blank, with no lettering.",
-      "sha256": "e966335bd6c2340e182b64d35b25cc49050d65c0f4e2d2655fab38a3139efdbc",
-      "updated_at": "2026-10-29T07:08:33.852Z"
+      "sha256": "797aa0bdfa4b6400875150c5e3349efff0ad131708ae8bcf958d1e13d8a3145c",
+      "updated_at": "2026-10-29T08:09:17.512Z"
     },
     "marconi-transatlantic-radio-signal": {
       "state": "pending",
