@@ -12868,7 +12868,11 @@
     "year": -490,
     "category": "warfare",
     "description": "Legend says a Greek runner raced to Athens with news of victory over the invading Persians, then collapsed.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Iran"
+    ]
   },
   {
     "name": "cursus-publicus-founded",
@@ -12876,7 +12880,11 @@
     "year": -27,
     "category": "empires",
     "description": "Rome's first emperor set up an official system of riders, wagons and way stations to carry state messages.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "mongol-yam-relay-network",
@@ -12884,7 +12892,13 @@
     "year": 1229,
     "category": "empires",
     "description": "The Mongol Empire formalised a vast chain of horse stations letting riders carry orders across Asia at great speed.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Mongolia",
+      "Europe",
+      "Middle East & North Africa",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "beacon-chain-armada-warning",
@@ -12892,7 +12906,11 @@
     "year": 1588,
     "category": "warfare",
     "description": "A chain of hilltop bonfires carried news of the approaching Spanish fleet across England within hours.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Spain",
+      "United Kingdom"
+    ]
   },
   {
     "name": "royal-mail-opens-to-public",
@@ -12900,7 +12918,10 @@
     "year": 1635,
     "category": "commerce",
     "description": "A king allowed ordinary people to send letters through the royal postal service, for a fee set by distance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-mail-coach-bath-london",
@@ -12908,7 +12929,10 @@
     "year": 1784,
     "category": "invention",
     "description": "Fast, guarded coaches replaced slow post-boys on a trial route between two English cities, speeding letters.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "chappe-semaphore-line",
@@ -12916,7 +12940,10 @@
     "year": 1794,
     "category": "invention",
     "description": "Towers with movable arms relayed coded signals from hilltop to hilltop, sending news across a country in minutes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "cooke-wheatstone-telegraph",
@@ -12924,7 +12951,10 @@
     "year": 1837,
     "category": "invention",
     "description": "Two Englishmen patented a needle telegraph that pointed to letters, soon strung alongside railway lines.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "pony-express-launches",
@@ -12932,7 +12962,10 @@
     "year": 1860,
     "category": "trade",
     "description": "Riders changing horses at relay stations raced mail across the American West between Missouri and California.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rural-free-delivery-begins",
@@ -12940,7 +12973,10 @@
     "year": 1896,
     "category": "commerce",
     "description": "American farm families got mail delivered to their roadside boxes instead of travelling to town to collect it.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "marconi-transatlantic-radio-signal",
@@ -12948,7 +12984,11 @@
     "year": 1901,
     "category": "invention",
     "description": "An Italian inventor received a faint Morse letter sent by wireless across the Atlantic Ocean.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Canada",
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-official-airmail-flight",
@@ -12956,7 +12996,10 @@
     "year": 1911,
     "category": "invention",
     "description": "A pilot carried sacks of letters by aeroplane at an Indian exhibition, the first officially sanctioned mail flight.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "cher-ami-pigeon-message",
@@ -12964,7 +13007,11 @@
     "year": 1918,
     "category": "warfare",
     "description": "A wounded carrier pigeon flew through gunfire to save a trapped battalion and became a wartime hero.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France",
+      "United States"
+    ]
   },
   {
     "name": "transatlantic-radiotelephone-service",
@@ -12972,7 +13019,11 @@
     "year": 1927,
     "category": "invention",
     "description": "Callers in London and New York could speak across the ocean by radio telephone, at a very high price.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "china-clipper-pacific-airmail",
@@ -12980,7 +13031,11 @@
     "year": 1935,
     "category": "trade",
     "description": "A giant flying boat carried airmail from California to Asia, opening regular air service over the Pacific.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Philippines",
+      "United States"
+    ]
   },
   {
     "name": "tat-1-transatlantic-telephone-cable",
@@ -12988,7 +13043,12 @@
     "year": 1956,
     "category": "invention",
     "description": "An undersea cable carrying dozens of voice circuits replaced radio links between Europe and North America.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada",
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "zip-codes-introduced",
@@ -12996,7 +13056,10 @@
     "year": 1963,
     "category": "invention",
     "description": "The US post office introduced five-digit codes to speed the sorting of letters by machine.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dhl-express-courier-founded",
@@ -13004,7 +13067,10 @@
     "year": 1969,
     "category": "commerce",
     "description": "A small San Francisco company began flying shipping documents to Hawaii, starting an international express network.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "fedex-first-deliveries",
@@ -13012,7 +13078,10 @@
     "year": 1973,
     "category": "commerce",
     "description": "A new company flew its first overnight packages from Memphis to cities across the United States.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "western-union-ends-telegrams",
@@ -13020,7 +13089,10 @@
     "year": 2006,
     "category": "commerce",
     "description": "The company that once dominated the telegraph quietly stopped sending telegrams, ending a long era of wired messages.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "amazon-first-drone-delivery",
@@ -13028,6 +13100,9 @@
     "year": 2016,
     "category": "invention",
     "description": "An online retailer completed its first customer delivery by unmanned aircraft, carrying a parcel to a rural home.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   }
 ]
