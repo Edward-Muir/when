@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T16:19:58.383Z",
+  "updated_at": "2026-10-29T16:22:33.124Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-29T16:19:58.383Z"
     },
     "chiapa-de-corzo-long-count-stela": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "feb697d024c45011336fdeeb33b672b1806488f6341cd7a9957b6de36e43e0ff",
+      "updated_at": "2026-10-29T16:22:33.124Z"
     },
     "lord-of-sipan-burial": {
       "state": "pending",
