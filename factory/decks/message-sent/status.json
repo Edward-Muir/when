@@ -3,7 +3,7 @@
   "name": "Message Sent",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T05:18:02.604Z",
-  "updated_at": "2026-10-29T06:14:17.886Z",
+  "updated_at": "2026-10-29T06:16:50.097Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-29T06:14:17.886Z"
     },
     "beacon-chain-armada-warning": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "58099a3983538aba71d965ee271ee93fd75e4a124825ae454c1a1e23b59e63f0",
+      "updated_at": "2026-10-29T06:16:50.097Z"
     },
     "royal-mail-opens-to-public": {
       "state": "pending",
