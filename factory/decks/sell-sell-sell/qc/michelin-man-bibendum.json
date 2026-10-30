@@ -1,0 +1,15 @@
+{
+  "slug": "michelin-man-bibendum",
+  "description": "A cream-coloured figure made of stacked rubber rings, with round spectacles and a lit cigar, raises a glass filled with nails and shards toward the viewer. Dark oil-painting background with candles, a glass decanter and shadowy figures; tyres and nails lie on the table in the foreground. No text or frame visible, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

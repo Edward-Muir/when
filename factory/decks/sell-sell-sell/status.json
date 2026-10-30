@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T11:31:58.019Z",
+  "updated_at": "2026-10-30T12:08:29.467Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "caxton-printed-handbill-ad": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The handbill shows painted lettering: a heading with distinct letter shapes above rows of blackletter lines. Repaint the sheet as blank or blurred paper, or turn it away from the viewer.",
       "sha256": "174242c1b92e3d285d9a9e5e206443fb1d4ac4157b52c783cdf23f6eac74142d",
-      "updated_at": "2026-10-30T11:09:30.582Z"
+      "updated_at": "2026-10-30T12:08:29.097Z"
     },
     "boston-news-letter-first-ad": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "062316ad89b68b5f7e76492baa1446668167e3c7ca9fb5c2ad1b946929a849f2",
-      "updated_at": "2026-10-30T11:12:10.038Z"
+      "updated_at": "2026-10-30T12:08:29.129Z"
     },
     "quaker-oats-man-trademark": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "78c8bce4d173116e9b9962c81910f1152898bb73c5e66841f7768be579ae1ff9",
-      "updated_at": "2026-10-30T11:14:39.660Z"
+      "updated_at": "2026-10-30T12:08:29.160Z"
     },
     "pears-soap-bubbles-ad": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6db35f9acebd9fff963622d6560f3325d9c0d2b40fdcf1bd869c8a2b88d6e52b",
-      "updated_at": "2026-10-30T11:17:04.149Z"
+      "updated_at": "2026-10-30T12:08:29.191Z"
     },
     "kodak-you-press-the-button": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "30dd9199d24e0b24581ed21c179432c782753127e15320b27147e21f509d389d",
-      "updated_at": "2026-10-30T11:19:35.224Z"
+      "updated_at": "2026-10-30T12:08:29.221Z"
     },
     "michelin-man-bibendum": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b68d5fa6d8aae9f7579ba2fc248751b749dddb410d72999fdcc1cd35b77d8f73",
-      "updated_at": "2026-10-30T11:22:04.024Z"
+      "updated_at": "2026-10-30T12:08:29.252Z"
     },
     "morton-salt-when-it-rains": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0c349e79a3df2a7ba48db19126e1eeb6aa86cab1cb6c631dc7e153742fdc998e",
-      "updated_at": "2026-10-30T11:24:33.103Z"
+      "updated_at": "2026-10-30T12:08:29.299Z"
     },
     "mr-peanut-created": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f06b7440e69b399a7a9d54b631636a3261d10ffdafeb91928974bd37ee347a00",
-      "updated_at": "2026-10-30T11:27:02.721Z"
+      "updated_at": "2026-10-30T12:08:29.391Z"
     },
     "betty-crocker-created": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "aab8fd5c8056972bfea5e06c303b6c7d20898b16e3a2cfb93cf58c2d93d1aeb7",
-      "updated_at": "2026-10-30T11:29:29.786Z"
+      "updated_at": "2026-10-30T12:08:29.429Z"
     },
     "burma-shave-roadside-signs": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ce2149e9dab02cea4e29a19e3b48c89fcdc5df296e8bb32389c55ab2d37f54b8",
-      "updated_at": "2026-10-30T11:31:58.019Z"
+      "updated_at": "2026-10-30T12:08:29.467Z"
     },
     "wheaties-first-singing-jingle": {
       "state": "pending",
