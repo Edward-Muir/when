@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T06:07:59.506Z",
+  "updated_at": "2026-10-30T07:09:26.464Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,11 +107,11 @@
       "updated_at": "2026-10-30T06:07:59.251Z"
     },
     "equal-franchise-act-uk": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The brick wall carries a large painted sign reading POLLING STATION, and a small hanging sign on the right also has lettering. Repaint without any words.",
-      "sha256": "6622e5e01aa4cdc1fcb04fb35a4f3e59f12d2c14b4233c53512e5d6da6772df1",
-      "updated_at": "2026-10-30T06:07:59.282Z"
+      "sha256": "9a8f4bb1085b31cefa69e6ed8dd2c6934241d9553c672e6f6b605cef273f81f5",
+      "updated_at": "2026-10-30T07:09:26.464Z"
     },
     "turkey-women-vote": {
       "state": "qc-pass",
