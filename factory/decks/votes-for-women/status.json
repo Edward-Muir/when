@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T05:30:53.543Z",
+  "updated_at": "2026-10-30T06:07:59.506Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,74 +86,74 @@
       "updated_at": "2026-10-30T04:08:03.141Z"
     },
     "pankhurst-founds-wspu": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "463c61128ca5c9084c341454d0c364dcc672ccf145ce1c93b04d26b972b37bfe",
-      "updated_at": "2026-10-30T05:09:35.645Z"
+      "updated_at": "2026-10-30T06:07:59.190Z"
     },
     "finland-women-vote-stand": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "59b00a57fb41dd0ee5b3269094e0e516b786639b802b04fab9e7b80ffb7cf482",
-      "updated_at": "2026-10-30T05:11:54.886Z"
+      "updated_at": "2026-10-30T06:07:59.220Z"
     },
     "emily-davison-derby": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "90efa6be995c421a5ca6a89067c28c96cb54bc21b74a452fba24c251764736ea",
-      "updated_at": "2026-10-30T05:14:17.326Z"
+      "updated_at": "2026-10-30T06:07:59.251Z"
     },
     "equal-franchise-act-uk": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The brick wall carries a large painted sign reading POLLING STATION, and a small hanging sign on the right also has lettering. Repaint without any words.",
       "sha256": "6622e5e01aa4cdc1fcb04fb35a4f3e59f12d2c14b4233c53512e5d6da6772df1",
-      "updated_at": "2026-10-30T05:16:40.454Z"
+      "updated_at": "2026-10-30T06:07:59.282Z"
     },
     "turkey-women-vote": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b3de183b62c213a140fae947d0e53786715db594657e8b7bbf027e8cddf2709d",
-      "updated_at": "2026-10-30T05:19:00.382Z"
+      "updated_at": "2026-10-30T06:07:59.314Z"
     },
     "france-women-vote-ordinance": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6e8321f39a1274aaa1d1d27acb6578befafb2699a30ec3eb73e2c15fc892f245",
-      "updated_at": "2026-10-30T05:21:23.149Z"
+      "updated_at": "2026-10-30T06:07:59.356Z"
     },
     "argentina-women-suffrage-law": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "231ded05b16cdbfe28a3d9277055260b06d2b8a3afe0aec029a1929abe97ed77",
-      "updated_at": "2026-10-30T05:23:44.726Z"
+      "updated_at": "2026-10-30T06:07:59.397Z"
     },
     "india-women-vote-constitution": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "42577041472d677e7e16a457cae7e070b00f8a98c0f9ab92db4b7e1507fde3dd",
-      "updated_at": "2026-10-30T05:26:07.239Z"
+      "updated_at": "2026-10-30T06:07:59.434Z"
     },
     "egypt-women-vote": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fb7fa697ecc34dd30f145a700881393b71b9c0c40a6942524a1605d60566c76f",
-      "updated_at": "2026-10-30T05:28:30.253Z"
+      "updated_at": "2026-10-30T06:07:59.469Z"
     },
     "iran-women-vote-referendum": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "17c4d581b1efbdaf36b4f9cff1ab713141a3a14d57acd83b9d3ba8485c8d3341",
-      "updated_at": "2026-10-30T05:30:53.543Z"
+      "updated_at": "2026-10-30T06:07:59.506Z"
     },
     "swiss-women-federal-vote": {
       "state": "pending",
