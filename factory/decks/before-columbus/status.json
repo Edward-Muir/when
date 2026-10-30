@@ -1,9 +1,9 @@
 {
   "deck": "before-columbus",
   "name": "Before Columbus",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-30T01:07:29.304Z",
+  "updated_at": "2026-10-30T02:07:25.692Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-30T01:07:29.304Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-30T02:07:25.692Z"
     }
   ],
   "slugs": {
