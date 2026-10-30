@@ -94,7 +94,7 @@ describe('settleDailyPlacement', () => {
     const after = play(dealt(), 0); // h1 (1200) before the seed (1500)
 
     expect(names(after.timeline)).toEqual(['h1', 'seed']);
-    expect(names(after.players[0].hand)).toEqual(['h2', 'h3', 'd1']);
+    expect(names(after.players[0].hand)).toEqual(['h2', 'd1', 'h3']); // drawn behind the active card
     expect(names(after.deck)).toEqual(['d2', 'd3']);
     expect(after.placementHistory).toEqual([true]);
     expect(after.currentStreak).toBe(1);

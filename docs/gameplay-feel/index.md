@@ -221,9 +221,10 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
   it that way and checks that the opening deal is the deck's front and that every seen card is
   within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
   reason.
-- **Room is measured at draw time.** The card joins the back of the hand and is played a few
-  turns later on a fuller board, so draw-time room is an upper bound. Moving eased cards to the
-  front of the hand was measured and made no difference (below), so don't re-propose it.
+- **Every drawn card goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`),
+  eased or not, so where a card lands never gives away that it was eased. It is played on the
+  next turn, close to the board it was picked for; room is measured at draw time, so it is an
+  upper bound.
 
 **Measured against a player model that never sees room.** 60 Dailies × 20 runs. The simulated
 player guesses each card's year with error proportional to its age (`age · e^(σz)`, σ scaled
@@ -249,14 +250,23 @@ at struggle > 0.
   era mix within a few points of ordinary draws (prehistory 4%). `u` is a rank coordinate, so
   it already compresses deep time harder than a log does: everything before −10,000 is 3% of
   `u`.
-- **The score effect is small, by design**: about half an event per game, because only the
-  draws right after a miss are eased and they wait at the back of the hand. Help that lasts
-  longer, with one level of decay per 2 hits, raised this to +0.6 to +1.8 events.
-- **Where the drawn card enters the hand barely matters, so don't re-propose slot 2.** Same
-  model and seeds. Putting only eased draws directly behind the active card changed scores by
-  under 0.05. Putting every draw there added about 0.3 events, but almost all of that came
-  without catch-up at all (16.20 → 16.48 at σ 0.15), and it helped strong players most (+0.33
-  at σ 0.08, +0.06 at σ 0.5). That is a blanket easing, not catch-up.
+- **The score effect is small, by design**: about half an event per game from catch-up alone,
+  because only the draws right after a miss are eased. Help that lasts longer, with one level
+  of decay per 2 hits, raised this to +0.6 to +1.8 events.
+- **Drawn cards go to slot 2, not the back and not slot 1.** Same model and seeds, every draw
+  placed at each slot, average player (σ 0.15):
+
+  | every draw goes to | no catch-up | with catch-up | catch-up's own lift | blanket easing |
+  | ------------------ | ----------- | ------------- | ------------------- | -------------- |
+  | back (before)      | 16.20       | 16.78         | +0.58               | 0              |
+  | **slot 2**         | 16.48       | **17.16**     | **+0.68**           | +0.27          |
+  | slot 1 (active)    | 16.60       | 17.20         | +0.59               | +0.40          |
+
+  Moving every draw, not only eased ones, is the point: eased-only would mark the eased cards,
+  and measured it changed scores by under 0.05 anyway. Slot 2 is a mild easing for everyone
+  as well, and helps strong players most (+0.33 at σ 0.08, +0.06 at σ 0.5); that was
+  accepted. Slot 1 was rejected: it adds more blanket easing but less catch-up (+0.34 against
+  +0.46 at σ 0.3), and it swaps the card the player is looking at.
 
 ## Tombstones
 
