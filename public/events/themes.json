@@ -12871,7 +12871,8 @@
     "difficulty": "easy",
     "regions": [
       "Greece"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "herophilus-pulse-timing",
@@ -12882,7 +12883,8 @@
     "difficulty": "easy",
     "regions": [
       "Egypt"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "wang-shuhe-pulse-classic",
@@ -12893,7 +12895,8 @@
     "difficulty": "hard",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "santorio-body-thermometer",
@@ -12904,7 +12907,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "leeuwenhoek-blood-cells",
@@ -12915,7 +12919,8 @@
     "difficulty": "easy",
     "regions": [
       "Netherlands"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "auenbrugger-chest-percussion",
@@ -12926,7 +12931,8 @@
     "difficulty": "medium",
     "regions": [
       "Austria"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bozzini-light-conductor",
@@ -12937,7 +12943,8 @@
     "difficulty": "easy",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "riva-rocci-blood-pressure-cuff",
@@ -12948,7 +12955,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "berger-eeg-recorded",
@@ -12959,7 +12967,8 @@
     "difficulty": "medium",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "papanicolaou-smear-test",
@@ -12970,7 +12979,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "forssmann-heart-catheter",
@@ -12981,7 +12991,8 @@
     "difficulty": "medium",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "apgar-score-newborns",
@@ -12992,7 +13003,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hirschowitz-fibre-optic-endoscope",
@@ -13003,7 +13015,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-ct-scan-patient",
@@ -13014,7 +13027,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "home-pregnancy-test-launched",
@@ -13025,7 +13039,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-mri-human-scan",
@@ -13036,7 +13051,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-hiv-blood-test",
@@ -13047,7 +13063,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "fmri-brain-imaging",
@@ -13058,7 +13075,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "capsule-endoscopy-camera-pill",
@@ -13070,7 +13088,8 @@
     "regions": [
       "Israel",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "smartwatch-ecg-approved",
@@ -13081,7 +13100,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mass-covid-testing",
@@ -13092,6 +13112,7 @@
     "difficulty": "easy",
     "regions": [
       "Global"
-    ]
+    ],
+    "has_detail": true
   }
 ]
