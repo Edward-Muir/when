@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T13:27:26.299Z",
+  "updated_at": "2026-10-30T13:30:03.782Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-30T13:27:26.299Z"
     },
     "vw-think-small-ad": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "72314ec1e871484c4cc3c6adc0cdd3fe3e59e6c66f8d3e1b48b89b629dbb56ba",
+      "updated_at": "2026-10-30T13:30:03.782Z"
     },
     "ronald-mcdonald-debuts": {
       "state": "pending",
