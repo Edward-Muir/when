@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T13:22:14.508Z",
+  "updated_at": "2026-10-30T13:24:40.511Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-30T13:22:14.508Z"
     },
     "tony-the-tiger-mascot": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "46e6d1e4814319c7a87922fb33eb4c7f6f4d0ac42d19adcf67824afbfca40ac2",
+      "updated_at": "2026-10-30T13:24:40.511Z"
     },
     "marlboro-man-campaign": {
       "state": "pending",
