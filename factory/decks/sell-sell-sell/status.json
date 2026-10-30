@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T11:24:33.103Z",
+  "updated_at": "2026-10-30T11:27:02.721Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-30T11:24:33.103Z"
     },
     "mr-peanut-created": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f06b7440e69b399a7a9d54b631636a3261d10ffdafeb91928974bd37ee347a00",
+      "updated_at": "2026-10-30T11:27:02.721Z"
     },
     "betty-crocker-created": {
       "state": "pending",
