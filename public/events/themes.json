@@ -12868,7 +12868,10 @@
     "year": -400,
     "category": "medicine",
     "description": "Greek physicians taught doctors to read a patient's skin, pulse and breathing to judge the course of an illness.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "herophilus-pulse-timing",
@@ -12876,7 +12879,10 @@
     "year": -280,
     "category": "medicine",
     "description": "An Alexandrian physician measured the pulse against a water clock and linked its rhythm to health and disease.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "wang-shuhe-pulse-classic",
@@ -12884,7 +12890,10 @@
     "year": 280,
     "category": "medicine",
     "description": "A Chinese physician compiled a classic text sorting the pulse into many types, each read as a sign of illness.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "santorio-body-thermometer",
@@ -12892,7 +12901,10 @@
     "year": 1612,
     "category": "invention",
     "description": "An Italian physician placed a thermoscope in a patient's mouth, an early attempt to put a number on body heat.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "leeuwenhoek-blood-cells",
@@ -12900,7 +12912,10 @@
     "year": 1674,
     "category": "science",
     "description": "A Dutch cloth merchant using homemade lenses was the first to describe red blood cells under a microscope.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "auenbrugger-chest-percussion",
@@ -12908,7 +12923,10 @@
     "year": 1761,
     "category": "medicine",
     "description": "A Viennese doctor published a method of tapping the chest and listening to the sound to detect fluid and disease.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "bozzini-light-conductor",
@@ -12916,7 +12934,10 @@
     "year": 1806,
     "category": "invention",
     "description": "A German physician reflected candlelight down a tube to peer into body cavities, the forerunner of the endoscope.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "riva-rocci-blood-pressure-cuff",
@@ -12924,7 +12945,10 @@
     "year": 1896,
     "category": "invention",
     "description": "An Italian doctor wrapped an inflatable cuff around the upper arm, giving a simple, reliable way to read blood pressure.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "berger-eeg-recorded",
@@ -12932,7 +12956,10 @@
     "year": 1924,
     "category": "science",
     "description": "A German psychiatrist attached electrodes to a human scalp and recorded the brain's electrical rhythms for the first time.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "papanicolaou-smear-test",
@@ -12940,7 +12967,10 @@
     "year": 1928,
     "category": "medicine",
     "description": "A Greek-American scientist showed that cells taken from the cervix could reveal cancer before symptoms appeared.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "forssmann-heart-catheter",
@@ -12948,7 +12978,10 @@
     "year": 1929,
     "category": "medicine",
     "description": "A young German doctor pushed a tube through a vein in his own arm into his heart, then walked to get an X-ray.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "apgar-score-newborns",
@@ -12956,7 +12989,10 @@
     "year": 1952,
     "category": "medicine",
     "description": "An American anaesthesiologist devised a quick five-point check of a baby's health in the first minutes after birth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hirschowitz-fibre-optic-endoscope",
@@ -12964,7 +13000,10 @@
     "year": 1957,
     "category": "invention",
     "description": "A flexible bundle of glass fibres carried light so doctors could view the inside of a living patient's stomach.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-ct-scan-patient",
@@ -12972,7 +13011,10 @@
     "year": 1971,
     "category": "medicine",
     "description": "A London hospital used a rotating X-ray machine and a computer to image a woman's brain slice by slice.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "home-pregnancy-test-launched",
@@ -12980,7 +13022,10 @@
     "year": 1976,
     "category": "invention",
     "description": "A boxed kit with a test tube and chemicals let women check for pregnancy in private rather than at a doctor's office.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-mri-human-scan",
@@ -12988,7 +13033,10 @@
     "year": 1977,
     "category": "medicine",
     "description": "A huge magnet and radio waves produced an image of a man's chest without any radiation.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-hiv-blood-test",
@@ -12996,7 +13044,10 @@
     "year": 1985,
     "category": "medicine",
     "description": "Blood banks began screening donations with an antibody test for the virus that causes AIDS.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "fmri-brain-imaging",
@@ -13004,7 +13055,10 @@
     "year": 1992,
     "category": "science",
     "description": "Researchers used magnetic scanning to show blood flow changes in a living human brain as it responded to tasks.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "capsule-endoscopy-camera-pill",
@@ -13012,7 +13066,11 @@
     "year": 2000,
     "category": "invention",
     "description": "A pill-sized camera that patients swallow was reported to film the whole digestive tract as it passed through.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Israel",
+      "United Kingdom"
+    ]
   },
   {
     "name": "smartwatch-ecg-approved",
@@ -13020,7 +13078,10 @@
     "year": 2018,
     "category": "invention",
     "description": "A wrist-worn consumer watch gained approval to record a heart tracing and flag an irregular rhythm.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mass-covid-testing",
@@ -13028,6 +13089,9 @@
     "year": 2020,
     "category": "medicine",
     "description": "Swab tests and rapid kits were used by millions to check for infection with a newly emerged virus.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ]
   }
 ]
