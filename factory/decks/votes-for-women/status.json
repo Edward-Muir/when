@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T07:23:23.043Z",
+  "updated_at": "2026-10-30T07:25:58.967Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-10-30T07:23:23.043Z"
     },
     "saudi-women-vote-and-run": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "094e68fdd72ed6d98586bf41c84de3d95708a43a65fa5c83b6ff2f3be9e84a39",
+      "updated_at": "2026-10-30T07:25:58.967Z"
     }
   }
 }
