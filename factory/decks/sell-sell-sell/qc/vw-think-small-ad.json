@@ -1,0 +1,15 @@
+{
+  "slug": "vw-think-small-ad",
+  "description": "Dark, murky oil painting in brown and black tones filling the whole image. A single small rounded car, resembling a vintage Beetle, sits lit by a spotlight in the lower left corner. The rest is a large expanse of empty, dim brushwork with no figures, text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

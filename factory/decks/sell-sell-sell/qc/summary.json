@@ -1,10 +1,10 @@
 {
   "caxton-printed-handbill-ad": {
-    "state": "qc-fail",
-    "reason": "The handbill shows painted lettering: a heading with distinct letter shapes above rows of blackletter lines. Repaint the sheet as blank or blurred paper, or turn it away from the viewer.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An elderly man in a long dark gown and black cap presses a small sheet of paper against a Gothic stone pillar. Behind him are a wooden screw press and a workbench in a dim workshop. The sheet carries rows of blackletter-like lines and a larger heading with letter-like shapes. It is a full-bleed oil painting with no frame or border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A man in a long dark robe, short dark hair, in profile, pins a blank white sheet of paper to a stone pillar in a vaulted stone arcade. Behind him at left is a wooden screw printing press. Through an arch, Gothic tracery windows and spires of a church are visible. Dark, painterly oil style, warm candlelit tones; the painting fills the frame edge to edge with no border. No legible text."
   },
   "boston-news-letter-first-ad": {
     "state": "qc-pass",
@@ -68,5 +68,68 @@
     "by": "review",
     "attempts": 1,
     "description": "A dark, painterly night-or-dusk scene of a black early-automobile sedan with lit headlamps driving toward the viewer on a muddy dirt road. On the right, a row of small rectangular blank white boards on wooden posts recedes along the verge, with dark trees and grass around them. There is no visible lettering on the boards."
+  },
+  "wheaties-first-singing-jingle": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Four men in dark suits and vests sing with open mouths at a single vintage microphone on a stand, under one hanging lamp against a dark curtained backdrop. A wooden cabinet on the right holds a bowl of cereal with a spoon and a white pitcher. The style is oil-painting, with 1920s to 1930s dress and no visible text or frame."
+  },
+  "coca-cola-santa-claus-ads": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A jolly, white-bearded man in a red suit with white fur trim tilts his head back to drink from a glass bottle by a brick fireplace. Stockings hang on the mantel, a holly garland is across the top, and a burlap sack of toys (a doll, a drum, wrapped gifts) sits at his feet. The style is a loose oil-painting look with dark edges and warm firelight, filling the whole square."
+  },
+  "elsie-the-cow-mascot": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painting style scene of a brown-and-white cow with a garland of yellow daisies around its neck, its head filling the centre-right. Behind it and to the left are glass milk bottles on a wooden counter, and at the bottom are more bottles, some filled with milk. The background shows a dusky fairground at night with striped tents, string lights, and silhouetted people in period-looking clothing. No visible text, frame or wounds."
+  },
+  "smokey-bear-debuts": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A brown bear in a gray wide-brimmed campaign hat and denim overalls leans over a campfire in a dark pine forest, pouring water from a metal bucket onto glowing embers while smoke rises. Painterly, oil-like style; no visible text or frame, and the painting fills the square image edge to edge."
+  },
+  "a-diamond-is-forever-slogan": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painterly still life. An open black velvet ring box sits on a dim surface, with a diamond solitaire ring standing upright in it. A burst of gold sparks radiates from the stone against a shadowed brown background. No people, no visible text, and the painting runs edge to edge."
+  },
+  "tony-the-tiger-mascot": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A cartoon tiger with a red neckerchief stands on two legs with one fist raised, grinning, beside a large bowl of golden flakes with a spoon in it. Dark brown painterly background, flakes and sparkles flying up, painted oil-style rendering filling the frame edge to edge with no visible text or frame."
+  },
+  "marlboro-man-campaign": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A weathered man in a dark wide-brimmed hat and worn brown jacket leans over, cupping his hands around a lit cigarette while a horse stands beside him. The background is a dim, open plain under a dusky cloudy sky with low hills, painted in a loose oil style. No visible text, frame or border; the painting runs edge to edge."
+  },
+  "vw-think-small-ad": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Dark, murky oil painting in brown and black tones filling the whole image. A single small rounded car, resembling a vintage Beetle, sits lit by a spotlight in the lower left corner. The rest is a large expanse of empty, dim brushwork with no figures, text or border."
+  },
+  "ronald-mcdonald-debuts": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark oil painting of a TV studio: two vintage boxy cameras on pedestals flank a wooden stool lit by a single spotlight. On the stool sit a cardboard box with arch-shaped handles, a crumpled paper cup with a small red mark, and a burger on a plate. Stage lights hang above and bleacher benches sit behind. No people, no frame, no readable text, nothing graphic."
   }
 }
