@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T13:09:20.851Z",
+  "updated_at": "2026-10-30T13:11:47.248Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-30T12:08:29.467Z"
     },
     "wheaties-first-singing-jingle": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "86df074d49d3aa3392586cd9e07d47160615f66fe4abb176c32e1daf71c419de",
+      "updated_at": "2026-10-30T13:11:47.248Z"
     },
     "coca-cola-santa-claus-ads": {
       "state": "pending",
