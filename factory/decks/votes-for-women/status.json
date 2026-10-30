@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T05:09:35.645Z",
+  "updated_at": "2026-10-30T05:11:54.886Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-10-30T05:09:35.645Z"
     },
     "finland-women-vote-stand": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "59b00a57fb41dd0ee5b3269094e0e516b786639b802b04fab9e7b80ffb7cf482",
+      "updated_at": "2026-10-30T05:11:54.886Z"
     },
     "emily-davison-derby": {
       "state": "pending",
