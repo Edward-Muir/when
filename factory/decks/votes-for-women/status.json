@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T05:19:00.382Z",
+  "updated_at": "2026-10-30T05:21:23.149Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-30T05:19:00.382Z"
     },
     "france-women-vote-ordinance": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6e8321f39a1274aaa1d1d27acb6578befafb2699a30ec3eb73e2c15fc892f245",
+      "updated_at": "2026-10-30T05:21:23.149Z"
     },
     "argentina-women-suffrage-law": {
       "state": "pending",
