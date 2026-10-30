@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T11:22:04.024Z",
+  "updated_at": "2026-10-30T11:24:33.103Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-30T11:22:04.024Z"
     },
     "morton-salt-when-it-rains": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0c349e79a3df2a7ba48db19126e1eeb6aa86cab1cb6c631dc7e153742fdc998e",
+      "updated_at": "2026-10-30T11:24:33.103Z"
     },
     "mr-peanut-created": {
       "state": "pending",
