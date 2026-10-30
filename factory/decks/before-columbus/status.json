@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-30T00:12:24.733Z",
+  "updated_at": "2026-10-30T00:15:07.977Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-30T00:12:24.733Z"
     },
     "moctezuma-ii-crowned": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "78d18a6830ed4d04453876cd88fdeec3b8af5a582a255d51d08ed93d4fbbf6ac",
+      "updated_at": "2026-10-30T00:15:07.977Z"
     }
   }
 }
