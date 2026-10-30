@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T15:11:53.568Z",
+  "updated_at": "2026-10-30T15:14:23.590Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-30T15:11:53.568Z"
     },
     "i-love-new-york-campaign": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c4ffe34adeebc3ca66c59baca76f1966b1430a234776e1656ede444754935e6a",
+      "updated_at": "2026-10-30T15:14:23.590Z"
     },
     "apple-1984-super-bowl-ad": {
       "state": "pending",
