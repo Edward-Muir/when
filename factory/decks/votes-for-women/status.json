@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T05:23:44.726Z",
+  "updated_at": "2026-10-30T05:26:07.239Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-30T05:23:44.726Z"
     },
     "india-women-vote-constitution": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "42577041472d677e7e16a457cae7e070b00f8a98c0f9ab92db4b7e1507fde3dd",
+      "updated_at": "2026-10-30T05:26:07.239Z"
     },
     "egypt-women-vote": {
       "state": "pending",
