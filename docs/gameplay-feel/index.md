@@ -251,8 +251,12 @@ at struggle > 0.
   `u`.
 - **The score effect is small, by design**: about half an event per game, because only the
   draws right after a miss are eased and they wait at the back of the hand. Help that lasts
-  longer, with one level of decay per 2 hits, raised this to +0.6 to +1.8 events. Moving the
-  eased card to the front of the hand made no difference.
+  longer, with one level of decay per 2 hits, raised this to +0.6 to +1.8 events.
+- **Where the drawn card enters the hand barely matters, so don't re-propose slot 2.** Same
+  model and seeds. Putting only eased draws directly behind the active card changed scores by
+  under 0.05. Putting every draw there added about 0.3 events, but almost all of that came
+  without catch-up at all (16.20 → 16.48 at σ 0.15), and it helped strong players most (+0.33
+  at σ 0.08, +0.06 at σ 0.5). That is a blanket easing, not catch-up.
 
 ## Tombstones
 
