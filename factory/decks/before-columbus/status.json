@@ -1,9 +1,9 @@
 {
   "deck": "before-columbus",
   "name": "Before Columbus",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-30T00:15:07.977Z",
+  "updated_at": "2026-10-30T01:07:29.304Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-29T16:09:17.664Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-30T01:07:29.304Z"
     }
   ],
   "slugs": {
@@ -142,25 +146,25 @@
       "updated_at": "2026-10-29T19:08:24.564Z"
     },
     "tenochtitlan-conquers-tlatelolco": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "976d7c7c92ba3942c882f68033e61a5f2e182503e8d80664eea3c1a9f9fe99fa",
-      "updated_at": "2026-10-30T00:09:36.180Z"
+      "updated_at": "2026-10-30T01:07:29.241Z"
     },
     "templo-mayor-dedicated": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7002978280ceeac9398eeff77d53bedae24a070254ff805139ee65f050f677ce",
-      "updated_at": "2026-10-30T00:12:24.733Z"
+      "updated_at": "2026-10-30T01:07:29.273Z"
     },
     "moctezuma-ii-crowned": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "78d18a6830ed4d04453876cd88fdeec3b8af5a582a255d51d08ed93d4fbbf6ac",
-      "updated_at": "2026-10-30T00:15:07.977Z"
+      "updated_at": "2026-10-30T01:07:29.304Z"
     }
   }
 }
