@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T03:14:30.962Z",
+  "updated_at": "2026-10-30T03:17:01.138Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-10-30T03:14:30.962Z"
     },
     "new-jersey-ends-women-voting": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "630537b1da0a7c01e10d41d22e1d4b64ef6470561d3461f070c7cb2b00f8e823",
+      "updated_at": "2026-10-30T03:17:01.138Z"
     },
     "world-anti-slavery-convention-women-barred": {
       "state": "pending",
