@@ -12861,5 +12861,173 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
     "text_color": "light"
+  },
+  {
+    "name": "hippocratic-bedside-diagnosis",
+    "friendly_name": "Hippocratic Bedside Diagnosis",
+    "year": -400,
+    "category": "medicine",
+    "description": "Greek physicians taught doctors to read a patient's skin, pulse and breathing to judge the course of an illness.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "herophilus-pulse-timing",
+    "friendly_name": "Herophilus Times the Pulse",
+    "year": -280,
+    "category": "medicine",
+    "description": "An Alexandrian physician measured the pulse against a water clock and linked its rhythm to health and disease.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "wang-shuhe-pulse-classic",
+    "friendly_name": "Wang Shuhe's Pulse Classic",
+    "year": 280,
+    "category": "medicine",
+    "description": "A Chinese physician compiled a classic text sorting the pulse into many types, each read as a sign of illness.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "santorio-body-thermometer",
+    "friendly_name": "Santorio Measures Fever",
+    "year": 1612,
+    "category": "invention",
+    "description": "An Italian physician placed a thermoscope in a patient's mouth, an early attempt to put a number on body heat.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "leeuwenhoek-blood-cells",
+    "friendly_name": "Leeuwenhoek Sees Blood Cells",
+    "year": 1674,
+    "category": "science",
+    "description": "A Dutch cloth merchant using homemade lenses was the first to describe red blood cells under a microscope.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "auenbrugger-chest-percussion",
+    "friendly_name": "Auenbrugger Taps the Chest",
+    "year": 1761,
+    "category": "medicine",
+    "description": "A Viennese doctor published a method of tapping the chest and listening to the sound to detect fluid and disease.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bozzini-light-conductor",
+    "friendly_name": "Bozzini's Light Conductor",
+    "year": 1806,
+    "category": "invention",
+    "description": "A German physician reflected candlelight down a tube to peer into body cavities, the forerunner of the endoscope.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "riva-rocci-blood-pressure-cuff",
+    "friendly_name": "Riva-Rocci's Blood Pressure Cuff",
+    "year": 1896,
+    "category": "invention",
+    "description": "An Italian doctor wrapped an inflatable cuff around the upper arm, giving a simple, reliable way to read blood pressure.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "berger-eeg-recorded",
+    "friendly_name": "Berger Records Brain Waves",
+    "year": 1924,
+    "category": "science",
+    "description": "A German psychiatrist attached electrodes to a human scalp and recorded the brain's electrical rhythms for the first time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "papanicolaou-smear-test",
+    "friendly_name": "Papanicolaou's Smear Test",
+    "year": 1928,
+    "category": "medicine",
+    "description": "A Greek-American scientist showed that cells taken from the cervix could reveal cancer before symptoms appeared.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "forssmann-heart-catheter",
+    "friendly_name": "Forssmann Catheterises His Heart",
+    "year": 1929,
+    "category": "medicine",
+    "description": "A young German doctor pushed a tube through a vein in his own arm into his heart, then walked to get an X-ray.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "apgar-score-newborns",
+    "friendly_name": "Apgar Scores Newborns",
+    "year": 1952,
+    "category": "medicine",
+    "description": "An American anaesthesiologist devised a quick five-point check of a baby's health in the first minutes after birth.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hirschowitz-fibre-optic-endoscope",
+    "friendly_name": "Fibre-Optic Endoscope Debuts",
+    "year": 1957,
+    "category": "invention",
+    "description": "A flexible bundle of glass fibres carried light so doctors could view the inside of a living patient's stomach.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-ct-scan-patient",
+    "friendly_name": "First CT Scan of a Patient",
+    "year": 1971,
+    "category": "medicine",
+    "description": "A London hospital used a rotating X-ray machine and a computer to image a woman's brain slice by slice.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "home-pregnancy-test-launched",
+    "friendly_name": "First Home Pregnancy Test",
+    "year": 1976,
+    "category": "invention",
+    "description": "A boxed kit with a test tube and chemicals let women check for pregnancy in private rather than at a doctor's office.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-mri-human-scan",
+    "friendly_name": "First MRI Scan of a Human",
+    "year": 1977,
+    "category": "medicine",
+    "description": "A huge magnet and radio waves produced an image of a man's chest without any radiation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-hiv-blood-test",
+    "friendly_name": "First HIV Blood Test",
+    "year": 1985,
+    "category": "medicine",
+    "description": "Blood banks began screening donations with an antibody test for the virus that causes AIDS.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "fmri-brain-imaging",
+    "friendly_name": "fMRI Watches the Working Brain",
+    "year": 1992,
+    "category": "science",
+    "description": "Researchers used magnetic scanning to show blood flow changes in a living human brain as it responded to tasks.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "capsule-endoscopy-camera-pill",
+    "friendly_name": "Swallowable Camera Pill Unveiled",
+    "year": 2000,
+    "category": "invention",
+    "description": "A pill-sized camera that patients swallow was reported to film the whole digestive tract as it passed through.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "smartwatch-ecg-approved",
+    "friendly_name": "Smartwatch Takes an ECG",
+    "year": 2018,
+    "category": "invention",
+    "description": "A wrist-worn consumer watch gained approval to record a heart tracing and flag an irregular rhythm.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "mass-covid-testing",
+    "friendly_name": "Mass Testing for a New Virus",
+    "year": 2020,
+    "category": "medicine",
+    "description": "Swab tests and rapid kits were used by millions to check for infection with a newly emerged virus.",
+    "difficulty": "easy"
   }
 ]
