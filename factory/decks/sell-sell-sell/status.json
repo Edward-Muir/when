@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T13:14:12.300Z",
+  "updated_at": "2026-10-30T13:17:18.674Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-30T13:14:12.300Z"
     },
     "elsie-the-cow-mascot": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9210b2e5f19346933d7cf009e60c2543aac6b29d97fc7f05565e749bb7b54c97",
+      "updated_at": "2026-10-30T13:17:18.674Z"
     },
     "smokey-bear-debuts": {
       "state": "pending",
