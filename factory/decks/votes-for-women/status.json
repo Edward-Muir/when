@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T07:15:33.467Z",
+  "updated_at": "2026-10-30T07:18:07.904Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-30T07:15:33.467Z"
     },
     "south-africa-women-vote-1994": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d7696319e94ee93407ed62474d5856f5799d90ec7776b84111db0901ddafdda7",
+      "updated_at": "2026-10-30T07:18:07.904Z"
     },
     "kuwait-women-political-rights": {
       "state": "pending",
