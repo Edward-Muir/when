@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T03:17:01.138Z",
+  "updated_at": "2026-10-30T03:19:33.446Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-30T03:17:01.138Z"
     },
     "world-anti-slavery-convention-women-barred": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "836bd942f2c8f5a8c93514cac5ac81ada254d8e78e6a9b3da2889de2b2300d8a",
+      "updated_at": "2026-10-30T03:19:33.446Z"
     },
     "ain-t-i-a-woman-speech": {
       "state": "pending",
