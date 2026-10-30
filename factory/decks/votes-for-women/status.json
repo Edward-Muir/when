@@ -1,9 +1,9 @@
 {
   "deck": "votes-for-women",
   "name": "Votes for Women",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T07:25:58.967Z",
+  "updated_at": "2026-10-30T08:08:17.299Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-30T03:09:23.659Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-30T08:08:17.299Z"
     }
   ],
   "slugs": {
@@ -107,11 +111,11 @@
       "updated_at": "2026-10-30T06:07:59.251Z"
     },
     "equal-franchise-act-uk": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The brick wall carries a large painted sign reading POLLING STATION, and a small hanging sign on the right also has lettering. Repaint without any words.",
+      "reason": null,
       "sha256": "9a8f4bb1085b31cefa69e6ed8dd2c6934241d9553c672e6f6b605cef273f81f5",
-      "updated_at": "2026-10-30T07:09:26.464Z"
+      "updated_at": "2026-10-30T08:08:17.110Z"
     },
     "turkey-women-vote": {
       "state": "qc-pass",
@@ -156,46 +160,46 @@
       "updated_at": "2026-10-30T06:07:59.506Z"
     },
     "swiss-women-federal-vote": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "05126426bd3e8db258783c5564e4d7f4902928529b2d72c1a4cb98e82dca8ded",
-      "updated_at": "2026-10-30T07:11:50.641Z"
+      "updated_at": "2026-10-30T08:08:17.141Z"
     },
     "liechtenstein-women-vote": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "20c97f358ba6ca6994a0a481630c7664c10a93596a73ea8b05aac0ca9d4b43f8",
-      "updated_at": "2026-10-30T07:15:33.467Z"
+      "updated_at": "2026-10-30T08:08:17.171Z"
     },
     "south-africa-women-vote-1994": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d7696319e94ee93407ed62474d5856f5799d90ec7776b84111db0901ddafdda7",
-      "updated_at": "2026-10-30T07:18:07.904Z"
+      "updated_at": "2026-10-30T08:08:17.202Z"
     },
     "kuwait-women-political-rights": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4a2cf09c094177cb8a533e3f6cac744aad424c938eaad0c02029f75b8c935c44",
-      "updated_at": "2026-10-30T07:20:43.976Z"
+      "updated_at": "2026-10-30T08:08:17.233Z"
     },
     "saudi-king-promises-women-vote": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e523e6f78e262234df0327fcbf9a94c80ab037bba85c491f2c279aa9878ccd49",
-      "updated_at": "2026-10-30T07:23:23.043Z"
+      "updated_at": "2026-10-30T08:08:17.264Z"
     },
     "saudi-women-vote-and-run": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "094e68fdd72ed6d98586bf41c84de3d95708a43a65fa5c83b6ff2f3be9e84a39",
-      "updated_at": "2026-10-30T07:25:58.967Z"
+      "updated_at": "2026-10-30T08:08:17.299Z"
     }
   }
 }

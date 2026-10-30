@@ -91,11 +91,11 @@
     "description": "An oil-painting style scene of a racecourse. Racehorses with jockeys in coloured silks gallop on the left across churned green turf, with a crowd of spectators in the stands behind them. On the right, a woman in a long black Edwardian dress and wide-brimmed hat leans over a white rail, facing the track, with stormy grey sky above. Top-hatted men stand at the right edge. No visible text, no frame."
   },
   "equal-franchise-act-uk": {
-    "state": "qc-fail",
-    "reason": "The brick wall carries a large painted sign reading POLLING STATION, and a small hanging sign on the right also has lettering. Repaint without any words.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "Young women in 1920s cloche hats and long coats chat on a wet cobbled street beside a brick building with a glowing open doorway. A large sign on the wall reads POLLING STATION, and a smaller hanging sign on the right has lettering. A queue of men in flat caps and a uniformed policeman stand behind them. Gas lamps and dark buildings fill the background; the painting fills the frame."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted street scene of a crowd on a dim brick-lined terrace. Women in cloche hats and long coats smile and hold small white slips of paper, while men in flat caps and overcoats stand around them. A doorway at upper left, black 1920s-style motorcars at right, and a hazy, overcast sky. The image fills the frame edge to edge with no visible text."
   },
   "turkey-women-vote": {
     "state": "qc-pass",
@@ -138,5 +138,47 @@
     "by": "review",
     "attempts": 1,
     "description": "A painted scene in dark, warm tones. In the foreground a woman with an updo and a grey trench coat drops a folded paper into a wooden ballot box. Behind her a line of women in headscarves and coats waits, and one woman in a full black chador with a face veil holds a paper. At a table on the right, officials with a ledger sit under a hanging lamp, and a man in a suit writes. No visible text, no frame, and the painting fills the canvas edge to edge."
+  },
+  "swiss-women-federal-vote": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting of a dark, muted village square with half-timbered and wooden chalet buildings. A man in a flat cap and long dark coat slips a folded paper into a wooden ballot box on a small table. Other men in hats and overcoats crowd around, and two older women in headscarves stand at the right edge, watching. No legible text, no frame visible; the painting runs edge to edge."
+  },
+  "liechtenstein-women-vote": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, wood-panelled room with a line of men in caps and work jackets gathered around a wooden ballot box, one man dropping a paper into the slot. Through a snowy window, a row of women in long coats and hats stands outside, with a hilltop castle behind them. No visible text, and the painting fills the frame edge to edge. The clothing looks mid-twentieth century."
+  },
+  "south-africa-women-vote-1994": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted scene of an older Black woman in a patterned headwrap and a heavy knitted wrap, holding folded papers against her chest. Behind her, a long queue of women in headscarves and coats stretches across open golden grassland toward a small single-storey building under a dramatic sky. Painterly style, no visible text, no frame."
+  },
+  "kuwait-women-political-rights": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Interior of a parliament chamber with a curved, tiered gallery. A row of women in black abayas and headscarves leans over a wooden balcony rail with glass panels, looking down at the floor. Below, men in white thobes and headdresses and in dark suits sit at desks, and several raise their arms or hands. Warm, painterly oil-style lighting; no visible text, signage or frame."
+  },
+  "saudi-king-promises-women-vote": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted interior: four women in black abayas and headscarves, one seated in front and three standing behind and beside her, with a young girl in black at the right. They face right toward a boxy CRT television on a dark wooden stand, whose screen shows a blurred group of figures in a formal hall. A dim lamp glows in the background, with patterned rugs on the floor. No visible text, frame or violence."
+  },
+  "saudi-women-vote-and-run": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A woman in a black abaya and face veil (niqab) and black head covering leans over a clear plastic box, feeding a white paper ballot into its slot. Behind her, a seated woman in black writes at a wooden desk, and several veiled women stand in a line at the right and back. The scene is dim and painterly, with dark brown and grey tones and warm light on the figures. No visible text, frame or border; the painting fills the canvas edge to edge."
   }
 }
