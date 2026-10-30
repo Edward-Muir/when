@@ -1,0 +1,26 @@
+{
+  "id": "seeing-inside",
+  "name": "Seeing Inside",
+  "scope": "Yes if it is a way of looking inside or testing the body",
+  "boundary": "Seeing Inside owns diagnosis and scanning; the discovery of X-rays goes to Eureka Moments, operations to Under the Knife, drugs to Wonder Drugs, genetics to Code of Life.",
+  "neighbours": ["under-the-knife", "wonder-drugs", "code-of-life"],
+  "grid": {
+    "categories": ["medicine", "invention"],
+    "eras": ["industrial", "coldWar"],
+    "regions": ["Global"]
+  },
+  "example_beats": [
+    "Auenbrugger's chest percussion (1761)",
+    "Laennec invents the stethoscope (1816)",
+    "Ophthalmoscope (1851)",
+    "Clinical thermometer (1867)",
+    "Bozzini's Lichtleiter, the first endoscope (1806)",
+    "Riva-Rocci's blood pressure cuff (1896)",
+    "ECG machine (1903)",
+    "Pregnancy ultrasound (1958)",
+    "First CT scan (1971)",
+    "First MRI scan of a human (1977)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
