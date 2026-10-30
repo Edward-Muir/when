@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T15:09:24.886Z",
+  "updated_at": "2026-10-30T15:11:53.568Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-30T15:09:24.886Z"
     },
     "coke-hilltop-teach-the-world": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9169d9a6ef161bab559c8e198616fb74aa1565c4fe1033a7ca1b90b824ec5814",
+      "updated_at": "2026-10-30T15:11:53.568Z"
     },
     "i-love-new-york-campaign": {
       "state": "pending",
