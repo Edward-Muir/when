@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T07:11:50.641Z",
+  "updated_at": "2026-10-30T07:15:33.467Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-10-30T07:11:50.641Z"
     },
     "liechtenstein-women-vote": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "20c97f358ba6ca6994a0a481630c7664c10a93596a73ea8b05aac0ca9d4b43f8",
+      "updated_at": "2026-10-30T07:15:33.467Z"
     },
     "south-africa-women-vote-1994": {
       "state": "pending",
