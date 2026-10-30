@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T05:16:40.454Z",
+  "updated_at": "2026-10-30T05:19:00.382Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-30T05:16:40.454Z"
     },
     "turkey-women-vote": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b3de183b62c213a140fae947d0e53786715db594657e8b7bbf027e8cddf2709d",
+      "updated_at": "2026-10-30T05:19:00.382Z"
     },
     "france-women-vote-ordinance": {
       "state": "pending",
