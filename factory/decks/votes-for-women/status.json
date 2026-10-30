@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T07:09:26.464Z",
+  "updated_at": "2026-10-30T07:11:50.641Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-30T06:07:59.506Z"
     },
     "swiss-women-federal-vote": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "05126426bd3e8db258783c5564e4d7f4902928529b2d72c1a4cb98e82dca8ded",
+      "updated_at": "2026-10-30T07:11:50.641Z"
     },
     "liechtenstein-women-vote": {
       "state": "pending",
