@@ -1,0 +1,347 @@
+{
+  "theme": "seeing-inside",
+  "beats": [
+    {
+      "year": -1600,
+      "title": "Edwin Smith Papyrus Describes Exams",
+      "description": "An Egyptian medical text sets out a step-by-step routine of looking at, feeling and judging injuries before treating them.",
+      "fame": 1,
+      "why_in": "earliest written body examination",
+      "source": "https://en.wikipedia.org/wiki/Edwin_Smith_Papyrus",
+      "note": "Dated to about 1600 BCE"
+    },
+    {
+      "year": -400,
+      "title": "Hippocratic Bedside Diagnosis",
+      "description": "Greek physicians of the Hippocratic school taught doctors to read a patient's body, pulse, skin and breathing to judge illness.",
+      "fame": 2,
+      "why_in": "clinical examination",
+      "source": "https://en.wikipedia.org/wiki/Hippocrates",
+      "note": "Approximate, about 400 BCE"
+    },
+    {
+      "year": -280,
+      "title": "Herophilus Studies the Pulse",
+      "description": "An Alexandrian physician timed the pulse against a water clock and linked its rhythm to health and disease.",
+      "fame": 1,
+      "why_in": "pulse measurement",
+      "source": "https://en.wikipedia.org/wiki/Herophilus",
+      "note": "Approximate, early 3rd century BCE"
+    },
+    {
+      "year": 280,
+      "title": "Wang Shuhe's Pulse Classic",
+      "description": "A Chinese physician compiled a classic text that sorted the pulse into many distinct types, each read as a sign of illness.",
+      "fame": 1,
+      "why_in": "pulse diagnosis",
+      "source": "https://en.wikipedia.org/wiki/Wang_Shuhe",
+      "note": "Approximate, third century CE"
+    },
+    {
+      "year": 1025,
+      "title": "Avicenna's Canon Codifies Diagnosis",
+      "description": "A Persian scholar's encyclopedia described pulse-taking, urine inspection and careful examination as the basis of diagnosis.",
+      "fame": 2,
+      "why_in": "diagnostic methods",
+      "source": "https://en.wikipedia.org/wiki/The_Canon_of_Medicine",
+      "note": "Completed about 1025"
+    },
+    {
+      "year": 1543,
+      "title": "Vesalius Publishes Human Anatomy",
+      "description": "A richly illustrated book, based on human dissection, corrected centuries of error about what lies inside the body.",
+      "fame": 2,
+      "why_in": "seeing inside by dissection",
+      "source": "https://en.wikipedia.org/wiki/De_humani_corporis_fabrica",
+      "note": null
+    },
+    {
+      "year": 1612,
+      "title": "Santorio Takes a Body Temperature",
+      "description": "An Italian physician put a thermoscope in a patient's mouth to measure fever, an early try at quantifying body heat.",
+      "fame": 1,
+      "why_in": "early thermometry",
+      "source": "https://en.wikipedia.org/wiki/Santorio_Santorio",
+      "note": "Circa 1612"
+    },
+    {
+      "year": 1674,
+      "title": "Leeuwenhoek Sees Blood Cells",
+      "description": "A Dutch cloth merchant with homemade lenses was the first to describe red blood cells under a microscope.",
+      "fame": 2,
+      "why_in": "microscopic look at blood",
+      "source": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek",
+      "note": "Red blood cells described 1674"
+    },
+    {
+      "year": 1707,
+      "title": "Floyer's Pulse-Watch",
+      "description": "An English physician had a watch made that ran for exactly one minute, so a doctor could count the pulse rate.",
+      "fame": 1,
+      "why_in": "timed pulse measurement",
+      "source": "https://en.wikipedia.org/wiki/John_Floyer",
+      "note": null
+    },
+    {
+      "year": 1761,
+      "title": "Auenbrugger Taps the Chest",
+      "description": "A Viennese doctor published a method of tapping the chest and listening to the sound to detect fluid and disease.",
+      "fame": 1,
+      "why_in": "percussion diagnosis",
+      "source": "https://en.wikipedia.org/wiki/Percussion_(medicine)",
+      "note": null
+    },
+    {
+      "year": 1806,
+      "title": "Bozzini's Light Conductor",
+      "description": "A German physician used candlelight reflected down a tube to peer into body cavities, the forerunner of the endoscope.",
+      "fame": 1,
+      "why_in": "first endoscope",
+      "source": "https://en.wikipedia.org/wiki/Philipp_Bozzini",
+      "note": null
+    },
+    {
+      "year": 1816,
+      "title": "Laennec Invents the Stethoscope",
+      "description": "A French doctor rolled up a sheet of paper to listen to a patient's heart and later made a wooden tube for the job.",
+      "fame": 3,
+      "why_in": "listening inside the body",
+      "source": "https://en.wikipedia.org/wiki/Stethoscope",
+      "note": null
+    },
+    {
+      "year": 1851,
+      "title": "Helmholtz's Ophthalmoscope",
+      "description": "A German scientist built a device that lets a doctor look through the pupil at the living back of the eye.",
+      "fame": 2,
+      "why_in": "looking inside the eye",
+      "source": "https://en.wikipedia.org/wiki/Ophthalmoscopy",
+      "note": null
+    },
+    {
+      "year": 1854,
+      "title": "Garcia Views His Own Larynx",
+      "description": "A singing teacher used mirrors and sunlight to watch his own vocal cords at work, founding the laryngoscope.",
+      "fame": 1,
+      "why_in": "looking into the throat",
+      "source": "https://en.wikipedia.org/wiki/Manuel_Garc%C3%ADa_(baritone)",
+      "note": null
+    },
+    {
+      "year": 1867,
+      "title": "Allbutt's Pocket Thermometer",
+      "description": "A British physician introduced a short thermometer that read a patient's temperature in minutes rather than a quarter hour.",
+      "fame": 2,
+      "why_in": "body temperature testing",
+      "source": "https://en.wikipedia.org/wiki/Thomas_Clifford_Allbutt",
+      "note": null
+    },
+    {
+      "year": 1877,
+      "title": "Nitze Builds the Cystoscope",
+      "description": "A German urologist showed a lit telescope-like tube that could be passed into the bladder to inspect it.",
+      "fame": 1,
+      "why_in": "endoscope",
+      "source": "https://en.wikipedia.org/wiki/Cystoscopy",
+      "note": null
+    },
+    {
+      "year": 1881,
+      "title": "Basch's Blood Pressure Meter",
+      "description": "An Austrian physician devised the first practical device to measure blood pressure without cutting into an artery.",
+      "fame": 1,
+      "why_in": "blood pressure measurement",
+      "source": "https://en.wikipedia.org/wiki/Sphygmomanometer",
+      "note": null
+    },
+    {
+      "year": 1882,
+      "title": "Koch Identifies the TB Germ",
+      "description": "A German physician stained and grew the bacterium behind tuberculosis, making lab diagnosis of the disease possible.",
+      "fame": 2,
+      "why_in": "lab test for infection",
+      "source": "https://en.wikipedia.org/wiki/Robert_Koch",
+      "note": null
+    },
+    {
+      "year": 1896,
+      "title": "Riva-Rocci's Blood Pressure Cuff",
+      "description": "An Italian doctor wrapped an inflatable cuff around the upper arm, giving a simple, reliable way to read blood pressure.",
+      "fame": 2,
+      "why_in": "blood pressure testing",
+      "source": "https://en.wikipedia.org/wiki/Scipione_Riva-Rocci",
+      "note": null
+    },
+    {
+      "year": 1901,
+      "title": "Landsteiner Discovers Blood Groups",
+      "description": "An Austrian scientist found that human blood falls into distinct types, which made testing and safe transfusion possible.",
+      "fame": 2,
+      "why_in": "blood typing test",
+      "source": "https://en.wikipedia.org/wiki/Karl_Landsteiner",
+      "note": null
+    },
+    {
+      "year": 1903,
+      "title": "Einthoven Builds the ECG Machine",
+      "description": "A Dutch physiologist used a sensitive string galvanometer to record the heart's electrical activity from the skin.",
+      "fame": 2,
+      "why_in": "heart scan",
+      "source": "https://en.wikipedia.org/wiki/Electrocardiography",
+      "note": null
+    },
+    {
+      "year": 1906,
+      "title": "Wassermann Test for Syphilis",
+      "description": "A German bacteriologist introduced a blood test that could detect syphilis infection before symptoms revealed it.",
+      "fame": 1,
+      "why_in": "blood diagnostic test",
+      "source": "https://en.wikipedia.org/wiki/Wassermann_test",
+      "note": null
+    },
+    {
+      "year": 1913,
+      "title": "Salomon Maps Tumours by Mammogram",
+      "description": "A German surgeon X-rayed removed breasts and showed how tumours looked, the start of breast imaging.",
+      "fame": 1,
+      "why_in": "breast imaging",
+      "source": "https://en.wikipedia.org/wiki/Mammography",
+      "note": null
+    },
+    {
+      "year": 1924,
+      "title": "Berger Records the Brain's Waves",
+      "description": "A German psychiatrist attached electrodes to a human scalp and recorded the brain's electrical rhythms for the first time.",
+      "fame": 2,
+      "why_in": "brain activity test",
+      "source": "https://en.wikipedia.org/wiki/Electroencephalography",
+      "note": "First human recording 1924, published 1929"
+    },
+    {
+      "year": 1928,
+      "title": "Papanicolaou's Smear Test",
+      "description": "A Greek-American scientist showed that cells taken from the cervix could reveal cancer before symptoms appeared.",
+      "fame": 2,
+      "why_in": "cancer screening test",
+      "source": "https://en.wikipedia.org/wiki/Pap_test",
+      "note": "Announced 1928"
+    },
+    {
+      "year": 1929,
+      "title": "Forssmann Catheterises His Heart",
+      "description": "A young German doctor pushed a tube through a vein in his own arm all the way into his heart, then walked to get an X-ray.",
+      "fame": 2,
+      "why_in": "cardiac catheterisation for diagnosis",
+      "source": "https://en.wikipedia.org/wiki/Werner_Forssmann",
+      "note": null
+    },
+    {
+      "year": 1942,
+      "title": "Dussik Scans the Brain with Sound",
+      "description": "An Austrian neurologist passed sound waves through a patient's head to try to picture the inside of the skull.",
+      "fame": 1,
+      "why_in": "first medical ultrasound",
+      "source": "https://en.wikipedia.org/wiki/Medical_ultrasound",
+      "note": null
+    },
+    {
+      "year": 1952,
+      "title": "Apgar Scores Newborns",
+      "description": "An American anaesthesiologist devised a quick five-point check of a baby's health in the first minutes after birth.",
+      "fame": 2,
+      "why_in": "newborn assessment test",
+      "source": "https://en.wikipedia.org/wiki/Apgar_score",
+      "note": null
+    },
+    {
+      "year": 1957,
+      "title": "Fibre-Optic Endoscope Debuts",
+      "description": "A flexible bundle of glass fibres carried light so doctors could view the inside of a living patient's stomach.",
+      "fame": 2,
+      "why_in": "flexible endoscope",
+      "source": "https://en.wikipedia.org/wiki/Basil_Hirschowitz",
+      "note": null
+    },
+    {
+      "year": 1958,
+      "title": "Ultrasound Scans a Pregnancy",
+      "description": "A Glasgow obstetrician published images made with sound waves of a growing baby in the womb.",
+      "fame": 3,
+      "why_in": "ultrasound imaging",
+      "source": "https://en.wikipedia.org/wiki/Ian_Donald",
+      "note": null
+    },
+    {
+      "year": 1971,
+      "title": "First CT Scan of a Patient",
+      "description": "A London hospital used a rotating X-ray machine and a computer to image a woman's brain slice by slice.",
+      "fame": 3,
+      "why_in": "CT scanning",
+      "source": "https://en.wikipedia.org/wiki/CT_scan",
+      "note": null
+    },
+    {
+      "year": 1976,
+      "title": "First Home Pregnancy Test",
+      "description": "A boxed kit with test tube and chemicals let women check for pregnancy in private rather than at a doctor's office.",
+      "fame": 3,
+      "why_in": "home diagnostic test",
+      "source": "https://en.wikipedia.org/wiki/Pregnancy_test",
+      "note": null
+    },
+    {
+      "year": 1977,
+      "title": "First MRI Scan of a Human",
+      "description": "A huge magnet and radio waves produced an image of a man's chest without any radiation.",
+      "fame": 3,
+      "why_in": "MRI scanning",
+      "source": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+      "note": null
+    },
+    {
+      "year": 1985,
+      "title": "First HIV Blood Test",
+      "description": "Blood banks began screening donations with an antibody test for the virus that causes AIDS.",
+      "fame": 2,
+      "why_in": "blood diagnostic test",
+      "source": "https://en.wikipedia.org/wiki/HIV_test",
+      "note": "Licensed March 1985"
+    },
+    {
+      "year": 1992,
+      "title": "fMRI Watches the Working Brain",
+      "description": "Researchers used magnetic scanning to show blood flow changes in a living human brain as it responded to tasks.",
+      "fame": 2,
+      "why_in": "functional brain imaging",
+      "source": "https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging",
+      "note": null
+    },
+    {
+      "year": 2000,
+      "title": "Swallowable Camera Pill Is Unveiled",
+      "description": "A pill-sized camera that patients swallow was reported to film the whole digestive tract as it passed through.",
+      "fame": 2,
+      "why_in": "capsule endoscopy",
+      "source": "https://en.wikipedia.org/wiki/Capsule_endoscopy",
+      "note": "Published in Nature 2000"
+    },
+    {
+      "year": 2018,
+      "title": "Smartwatch Takes an ECG",
+      "description": "A wrist-worn consumer watch gained approval to record a heart tracing and flag an irregular rhythm.",
+      "fame": 3,
+      "why_in": "wearable ECG",
+      "source": "https://en.wikipedia.org/wiki/Apple_Watch_Series_4",
+      "note": null
+    },
+    {
+      "year": 2020,
+      "title": "Mass Testing for a New Coronavirus",
+      "description": "Swab tests and rapid kits were used by millions to check for infection with a newly emerged virus.",
+      "fame": 3,
+      "why_in": "diagnostic testing",
+      "source": "https://en.wikipedia.org/wiki/COVID-19_testing",
+      "note": null
+    }
+  ]
+}
