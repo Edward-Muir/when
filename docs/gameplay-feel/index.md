@@ -225,21 +225,34 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
   turns later on a fuller board, so draw-time room is an upper bound. Moving eased cards to the
   front of the hand was measured and made no difference (below), so don't re-propose it.
 
-**Measured** on 60 dailies × 20 runs, with a simulated player who places the top card and hits
-with probability `1 / (1 + (r0 / room)^1.2)`:
+**Measured against a player model that never sees room.** 60 Dailies × 20 runs. The simulated
+player guesses each card's year with error proportional to its age (`age · e^(σz)`, σ scaled
+×1–2.5 from easy to very-hard), drops it where that guess falls, and is judged by
+`isPlacementCorrect`. The earlier room-driven model is not evidence (it was circular). The
+pick rules are compared on identical guesses; "eased hit" is the hit rate of the cards drawn
+at struggle > 0.
 
-| player (`r0`)   | events placed, before → after | after a slower decay (one level per 2 hits) |
-| --------------- | ----------------------------- | ------------------------------------------- |
-| 0.002 (strong)  | 36.8 → 37.5                   | 38.9                                        |
-| 0.005           | 25.2 → 26.1                   | 27.3                                        |
-| 0.01            | 19.0 → 19.9                   | 20.7                                        |
-| 0.02 (beginner) | 13.9 → 14.4                   | 15.0                                        |
+| σ (player)     | rule              | eased hit | events placed | eased picks at a board edge |
+| -------------- | ----------------- | --------- | ------------- | --------------------------- |
+| 0.15 (average) | top card (before) | 63%       | 16.5          |                             |
+|                | random in window  | 60%       | 16.3          | 8%                          |
+|                | **`u` room**      | **74%**   | **17.0**      | 14%                         |
+|                | log-age room      | 82%       | 17.5          | 23%                         |
+| 0.08 (strong)  | top → `u` room    | 69 → 83%  | 23.3 → 24.1   |                             |
+| 0.5 (beginner) | top → `u` room    | 48 → 59%  | 8.2 → 8.6     |                             |
 
-The card drawn after a miss has about twice the median room (0.026 → 0.049 at `r0 = 0.01`).
-The effect on score is modest: about one event per game. That's intended: Daily scores bunch a
-little, not a lot. How long help lasts is the lever that matters. Drawing the eased card to the
-front of the hand changed scores by under 0.1. If more help is wanted, slow the decay in
-`struggleBefore` rather than widening the lookahead.
+- **The metric is what helps.** A random card from the same window does no better than the
+  top card, so the gain comes from choosing by room, not from reshuffling.
+- **Don't switch to log-age.** It scores a little higher in this model, which itself measures
+  error in log-age and so flatters it. But it hoards the extremes: at σ 0.15 its eased picks
+  were 12% prehistory and 22% modern, against 2% and 6% for ordinary draws. `u` room keeps the
+  era mix within a few points of ordinary draws (prehistory 4%). `u` is a rank coordinate, so
+  it already compresses deep time harder than a log does: everything before −10,000 is 3% of
+  `u`.
+- **The score effect is small, by design**: about half an event per game, because only the
+  draws right after a miss are eased and they wait at the back of the hand. Help that lasts
+  longer, with one level of decay per 2 hits, raised this to +0.6 to +1.8 events. Moving the
+  eased card to the front of the hand made no difference.
 
 ## Tombstones
 
