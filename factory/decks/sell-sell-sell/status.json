@@ -1,21 +1,26 @@
 {
   "deck": "sell-sell-sell",
   "name": "Sell, Sell, Sell",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T10:21:17.876Z",
+  "updated_at": "2026-10-30T11:09:30.582Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-30T10:21:17.876Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-30T11:09:30.582Z"
     }
   ],
   "slugs": {
     "caxton-printed-handbill-ad": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "174242c1b92e3d285d9a9e5e206443fb1d4ac4157b52c783cdf23f6eac74142d",
+      "updated_at": "2026-10-30T11:09:30.582Z"
     },
     "boston-news-letter-first-ad": {
       "state": "pending",
