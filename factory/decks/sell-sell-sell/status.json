@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T13:17:18.674Z",
+  "updated_at": "2026-10-30T13:19:50.072Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-30T13:17:18.674Z"
     },
     "smokey-bear-debuts": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f415e32eae566dde1bc04e48fed084342ae3ead53d860bcd1d2e2e429855803c",
+      "updated_at": "2026-10-30T13:19:50.072Z"
     },
     "a-diamond-is-forever-slogan": {
       "state": "pending",
