@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-30T00:09:36.180Z",
+  "updated_at": "2026-10-30T00:12:24.733Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-10-30T00:09:36.180Z"
     },
     "templo-mayor-dedicated": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7002978280ceeac9398eeff77d53bedae24a070254ff805139ee65f050f677ce",
+      "updated_at": "2026-10-30T00:12:24.733Z"
     },
     "moctezuma-ii-crowned": {
       "state": "pending",
