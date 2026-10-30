@@ -3,7 +3,7 @@
   "name": "Before Columbus",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T15:20:18.761Z",
-  "updated_at": "2026-10-29T19:08:24.564Z",
+  "updated_at": "2026-10-30T00:09:36.180Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-10-29T19:08:24.564Z"
     },
     "tenochtitlan-conquers-tlatelolco": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "976d7c7c92ba3942c882f68033e61a5f2e182503e8d80664eea3c1a9f9fe99fa",
+      "updated_at": "2026-10-30T00:09:36.180Z"
     },
     "templo-mayor-dedicated": {
       "state": "pending",
