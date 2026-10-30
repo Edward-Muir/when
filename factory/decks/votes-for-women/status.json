@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T03:22:03.531Z",
+  "updated_at": "2026-10-30T03:24:35.166Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-30T03:22:03.531Z"
     },
     "wyoming-women-vote": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3103ce5ae5797a0760aa28fd5af2e90c5c7a8ad5e936acbeaf05eb17ce586659",
+      "updated_at": "2026-10-30T03:24:35.166Z"
     },
     "susan-anthony-arrested-voting": {
       "state": "pending",
