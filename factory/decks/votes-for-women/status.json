@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T03:24:35.166Z",
+  "updated_at": "2026-10-30T03:27:05.122Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-30T03:24:35.166Z"
     },
     "susan-anthony-arrested-voting": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c4872a4b6430ab8d9f5aea20ea2810e533faa56ae1fbf2c940ab868bf0712f13",
+      "updated_at": "2026-10-30T03:27:05.122Z"
     },
     "isle-of-man-women-vote": {
       "state": "pending",
