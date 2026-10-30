@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T11:27:02.721Z",
+  "updated_at": "2026-10-30T11:29:29.786Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-30T11:27:02.721Z"
     },
     "betty-crocker-created": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "aab8fd5c8056972bfea5e06c303b6c7d20898b16e3a2cfb93cf58c2d93d1aeb7",
+      "updated_at": "2026-10-30T11:29:29.786Z"
     },
     "burma-shave-roadside-signs": {
       "state": "pending",
