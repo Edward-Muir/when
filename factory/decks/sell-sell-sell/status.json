@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T15:14:23.590Z",
+  "updated_at": "2026-10-30T16:07:27.054Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,25 +149,25 @@
       "updated_at": "2026-10-30T14:08:12.940Z"
     },
     "pillsbury-doughboy-debuts": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d90140f3c339c0df6cc619e77fa672439b5d4b7c5866e5d84108c86bd7a4ecdd",
-      "updated_at": "2026-10-30T15:09:24.886Z"
+      "updated_at": "2026-10-30T16:07:26.987Z"
     },
     "coke-hilltop-teach-the-world": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9169d9a6ef161bab559c8e198616fb74aa1565c4fe1033a7ca1b90b824ec5814",
-      "updated_at": "2026-10-30T15:11:53.568Z"
+      "updated_at": "2026-10-30T16:07:27.020Z"
     },
     "i-love-new-york-campaign": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c4ffe34adeebc3ca66c59baca76f1966b1430a234776e1656ede444754935e6a",
-      "updated_at": "2026-10-30T15:14:23.590Z"
+      "updated_at": "2026-10-30T16:07:27.054Z"
     },
     "apple-1984-super-bowl-ad": {
       "state": "pending",
