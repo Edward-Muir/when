@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T05:11:54.886Z",
+  "updated_at": "2026-10-30T05:14:17.326Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-10-30T05:11:54.886Z"
     },
     "emily-davison-derby": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "90efa6be995c421a5ca6a89067c28c96cb54bc21b74a452fba24c251764736ea",
+      "updated_at": "2026-10-30T05:14:17.326Z"
     },
     "equal-franchise-act-uk": {
       "state": "pending",
