@@ -3,7 +3,7 @@
   "name": "Votes for Women",
   "stage": "art-in-progress",
   "created_at": "2026-10-29T20:21:53.790Z",
-  "updated_at": "2026-10-30T04:08:03.141Z",
+  "updated_at": "2026-10-30T05:09:35.645Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-30T04:08:03.141Z"
     },
     "pankhurst-founds-wspu": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "463c61128ca5c9084c341454d0c364dcc672ccf145ce1c93b04d26b972b37bfe",
+      "updated_at": "2026-10-30T05:09:35.645Z"
     },
     "finland-women-vote-stand": {
       "state": "pending",
