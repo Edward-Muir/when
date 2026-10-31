@@ -1,0 +1,15 @@
+{
+  "slug": "last-homo-erectus-java",
+  "description": "A heavy-browed early human stands on a muddy riverbank at dusk, holding a long wooden spear and looking out over a wide brown river. Dark trees and vines fill the background, with an orange sky breaking through the cloud. The figure is bare-skinned and the painting is in a dark, painterly oil style. A tiny mark sits in the bottom-right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The figure is fully nude, with genitals hidden only by the angle but buttocks and bare body clearly visible. The card is not a nudity-free image, so repaint with the figure clothed in a loincloth or hide-wrap, or shot from a distance where no bare body detail shows. The rest of the image matches the scene."
+}

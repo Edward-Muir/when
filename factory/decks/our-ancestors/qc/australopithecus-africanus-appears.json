@@ -1,0 +1,15 @@
+{
+  "slug": "australopithecus-africanus-appears",
+  "description": "An oil-style painting of an upright, ape-like hominin with a long torso and a brown, hairy body, walking across rocky ground with a small juvenile clinging to its side. A second dark, ape-like figure stands in the background behind it. The setting is dry scrub with thorny branches, dark broken rocks and dry grass under a dim, warm light. No text, border or frame is visible, and there are no tools or modern objects.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

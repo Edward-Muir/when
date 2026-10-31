@@ -1,0 +1,20 @@
+{
+  "slug": "misliya-cave-sapiens",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "6332d04309c6993f104b4164ae36043bc1dcc4d1267378dea2f931f99f474b3c",
+  "dhash": "f64f8f969e5ab08e",
+  "nearest": {
+    "deck": {
+      "slug": "homo-floresiensis-hobbit",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "saber-toothed-cats",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}
