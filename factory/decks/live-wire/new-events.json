@@ -5,7 +5,7 @@
     "year": 1832,
     "category": "invention",
     "description": "A French instrument maker spun a magnet past wire coils and added a commutator, building the first practical generator.",
-    "difficulty": "very-hard"
+    "difficulty": "medium"
   },
   {
     "name": "siemens-self-excited-dynamo",
@@ -13,7 +13,7 @@
     "year": 1866,
     "category": "invention",
     "description": "Werner Siemens showed a generator could feed its own magnets, making powerful electricity affordable at scale.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "godalming-public-electricity-supply",
@@ -37,7 +37,7 @@
     "year": 1893,
     "category": "invention",
     "description": "Westinghouse lit a vast Chicago exposition with alternating current, winning the argument in the War of the Currents.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "larderello-geothermal-plant",
@@ -69,7 +69,7 @@
     "year": 1960,
     "category": "invention",
     "description": "A Californian plant tapped underground steam to feed a utility's grid, starting large-scale geothermal power in America.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "northeast-blackout-1965",
@@ -85,7 +85,7 @@
     "year": 1966,
     "category": "architecture",
     "description": "A French estuary barrage began harnessing ocean tides to generate electricity, the first large tidal plant.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "pacific-dc-intertie-opens",
@@ -101,7 +101,7 @@
     "year": 1984,
     "category": "architecture",
     "description": "A Welsh power station hidden inside a mountain releases stored water in seconds to meet sudden surges in electricity demand.",
-    "difficulty": "hard"
+    "difficulty": "very-hard"
   },
   {
     "name": "quebec-geomagnetic-blackout",
@@ -125,7 +125,7 @@
     "year": 2003,
     "category": "disasters",
     "description": "A tree-touched power line in Ohio triggered a cascade that darkened cities from New York to Toronto.",
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "name": "tesla-roadster-deliveries",
@@ -148,16 +148,16 @@
     "friendly_name": "Hornsdale Power Reserve Switches On",
     "year": 2017,
     "category": "invention",
-    "description": "The world's biggest lithium-ion battery at the time began stabilising South Australia's grid, built in about 100 days.",
-    "difficulty": "hard"
+    "description": "The world's biggest lithium-ion battery at the time began stabilising South Australia's grid, built in under 100 days.",
+    "difficulty": "easy"
   },
   {
     "name": "hornsea-offshore-wind-farm",
     "friendly_name": "Hornsea Offshore Wind Farm Opens",
     "year": 2019,
     "category": "invention",
-    "description": "Hundreds of turbines off the Yorkshire coast began sending power ashore from the then-largest offshore wind farm.",
-    "difficulty": "hard"
+    "description": "More than 170 turbines off the Yorkshire coast began sending power ashore from the then-largest offshore wind farm.",
+    "difficulty": "easy"
   },
   {
     "name": "iberian-peninsula-blackout",
@@ -165,6 +165,6 @@
     "year": 2025,
     "category": "disasters",
     "description": "A sudden grid collapse left Spain and Portugal without electricity for hours, halting trains and shutting shops.",
-    "difficulty": "easy"
+    "difficulty": "hard"
   }
 ]
