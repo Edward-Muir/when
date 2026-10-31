@@ -1,0 +1,15 @@
+{
+  "slug": "fdr-first-inauguration",
+  "description": "An oil painting of a dim, worn interior: an arched-top wooden tabletop radio with a glowing amber dial sits on a rustic plank table beside a chipped enamel mug. Wooden spindle-back chairs surround the table. Through a tall multi-pane window, a grey street shows a doorway with shuttered windows and two old-fashioned cars. No people, no visible text, no frame; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

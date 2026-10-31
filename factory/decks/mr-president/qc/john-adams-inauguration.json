@@ -1,0 +1,15 @@
+{
+  "slug": "john-adams-inauguration",
+  "description": "A painted interior of a wood-panelled room with a brick wall and a pedimented doorway. A man in a dark 18th-century suit with a white jabot and powdered wig raises his right hand and touches a book held by a man in a black robe with white bands. Seated and standing men in powdered wigs and period coats fill the room, and a tall man in a dark coat stands at the right. A wooden desk and papers are in the middle distance, and the frame is edge to edge with no text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "john-adams-inauguration",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "385cb0d095ba57c312ce70b0ce1fad00c5b6675fec429c5de5408a5f3a832ec3",
+  "dhash": "f95bea3193d36670",
+  "nearest": {
+    "deck": {
+      "slug": "lincoln-first-inauguration",
+      "distance": 26
+    },
+    "catalogue": {
+      "slug": "september-massacres",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}
