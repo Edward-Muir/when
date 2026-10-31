@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T04:07:55.944Z",
+  "updated_at": "2026-10-31T05:09:00.503Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-10-31T04:07:55.681Z"
     },
     "wang-shuhe-pulse-classic": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The bamboo slips carry rows of distinct, character-like writing in the foreground, which counts as painted text. Repaint the slips as plain bamboo strips with no marks, or only faint unreadable texture.",
-      "sha256": "da7e38979112bf35d7c363a36b4912d441d9863cd388bb25fb360c3304aa0a87",
-      "updated_at": "2026-10-31T04:07:55.710Z"
+      "sha256": "cda4d91f85b3410f122a438a3b3d5a3ba1df4709f32e096a6bfabfcdad810273",
+      "updated_at": "2026-10-31T05:09:00.503Z"
     },
     "santorio-body-thermometer": {
       "state": "qc-pass",
