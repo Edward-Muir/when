@@ -1,0 +1,40 @@
+{
+  "id": "face-to-face",
+  "name": "Face to Face",
+  "scope": "Yes if it is a summit of rulers or an embassy to a foreign court",
+  "boundary": "Face to Face: meetings and missions; war-ending treaties, Tilsit included, go to Peace at Last, Cold War crises to Iron Curtain, merchants and pilgrims on the caravan roads to Silk Road.",
+  "neighbours": [
+    "peace",
+    "iron-curtain",
+    "silk-road"
+  ],
+  "grid": {
+    "categories": [
+      "diplomacy",
+      "figures"
+    ],
+    "eras": [
+      "earlyModern",
+      "industrial",
+      "coldWar"
+    ],
+    "regions": [
+      "Europe",
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Harun al-Rashid's elephant reaches Charlemagne (802)",
+    "Ibn Fadlan's embassy to the Volga (921)",
+    "Rabban Sauma reaches Europe (1287)",
+    "Field of the Cloth of Gold (1520)",
+    "Hasekura Tsunenaga visits Rome (1615)",
+    "Siamese embassy to Louis XIV (1686)",
+    "Macartney's embassy to the Qianlong Emperor (1793)",
+    "Congress of Berlin (1878)",
+    "Yalta (1945)",
+    "Nixon visits China (1972)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
