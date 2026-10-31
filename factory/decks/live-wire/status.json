@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:29:51.092Z",
+  "updated_at": "2026-10-31T17:32:54.750Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-31T17:29:51.092Z"
     },
     "northeast-blackout-1965": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "095fc29984f61d49848f9ffc839a9cdd25260e13a58e28719a7351fcc83c456b",
+      "updated_at": "2026-10-31T17:32:54.750Z"
     },
     "rance-tidal-power-station": {
       "state": "pending",
