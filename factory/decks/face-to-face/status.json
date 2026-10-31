@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T11:19:52.623Z",
+  "updated_at": "2026-10-31T11:22:29.055Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-31T11:19:52.623Z"
     },
     "carpini-mission-great-khan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "204efa87cd743addeb04606354c27939c7e49117f79fc485ac381762e8bc1773",
+      "updated_at": "2026-10-31T11:22:29.055Z"
     },
     "rabban-sauma-embassy-europe": {
       "state": "pending",
