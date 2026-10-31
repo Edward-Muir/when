@@ -1,0 +1,38 @@
+{
+  "id": "gone-forever",
+  "name": "Gone Forever",
+  "scope": "Yes if it is a species going extinct",
+  "boundary": "Gone Forever owns extinctions in the human era, last named survivors such as Martha included; mass extinctions and prehistoric species go to Before Us, rescue and protection to Back from the Brink.",
+  "neighbours": [
+    "back-from-the-brink",
+    "before-us",
+    "newfound-beasts"
+  ],
+  "grid": {
+    "categories": [
+      "nature"
+    ],
+    "eras": [
+      "earlyModern",
+      "industrial",
+      "worldWars"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Last aurochs dies (1627)",
+    "Dodo last seen (c. 1662)",
+    "Steller's sea cow gone (1768)",
+    "Great auk killed (1844)",
+    "Quagga dies in Amsterdam (1883)",
+    "Martha, last passenger pigeon, dies (1914)",
+    "Heath hen extinct (1932)",
+    "Benjamin, last thylacine, dies (1936)",
+    "Baiji declared functionally extinct (2006)",
+    "Lonesome George dies (2012)"
+  ],
+  "appeal": 3,
+  "status": "authoring"
+}
