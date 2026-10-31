@@ -1,0 +1,15 @@
+{
+  "slug": "teapot-dome-oil-leases",
+  "description": "A painted oil-style scene at dusk. Two men in dark overcoats and fedoras stand in sagebrush scrub, one handing a cloth money bag to the other. Behind them a huge teapot-shaped sandstone butte rises from a mesa, and to the right an oil derrick stands on the flat plain under a stormy blue-grey sky. No visible text, no frame, no blood or nudity.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

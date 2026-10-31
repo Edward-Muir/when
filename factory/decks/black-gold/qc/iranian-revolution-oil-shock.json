@@ -1,0 +1,15 @@
+{
+  "slug": "iranian-revolution-oil-shock",
+  "description": "A painted dusk street scene with a long queue of late-1970s or early-1980s American sedans stretching into the distance. A gas station with canopy and pumps sits at the right edge. Two men stand beside the cars, one leaning on an open driver's door in the foreground. The sky is overcast and the trees are bare. Nothing legible is visible, and the image fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

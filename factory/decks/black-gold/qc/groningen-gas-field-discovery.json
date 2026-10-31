@@ -1,0 +1,15 @@
+{
+  "slug": "groningen-gas-field-discovery",
+  "description": "A tall lattice drilling derrick stands on a flat, muddy field under a dark, stormy sky. A tall column of fire and black smoke rises from a pipe with a valve beside it. Parked trucks and small figures of workers are in the foreground, and a windmill and low farm buildings sit on the horizon beside a canal. The painting is in an oil-painting style, warm firelight against dark tones, with no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

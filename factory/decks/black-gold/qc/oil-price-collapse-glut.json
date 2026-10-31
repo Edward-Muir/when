@@ -1,0 +1,15 @@
+{
+  "slug": "oil-price-collapse-glut",
+  "description": "A painted oil scene: rusted lattice steel derricks and jumbled derrick sections piled in the foreground, with a dozen or more tankers anchored on a dark sea under a heavy, partly sunlit sky. A low shore on the right holds small structures and vehicles. No people, no legible text; a small multicoloured generator mark sits in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

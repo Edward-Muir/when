@@ -1,0 +1,15 @@
+{
+  "slug": "spindletop-gusher",
+  "description": "A painted scene of a tall wooden oil derrick, a lattice tower, with a thick black column of crude oil gushing skyward from its top and spattering down. Several men in period hats and jackets run and gesture around the base on muddy, oily ground under a grey overcast sky. The landscape is flat and open. No visible text, and the painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

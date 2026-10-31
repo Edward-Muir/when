@@ -1,0 +1,15 @@
+{
+  "slug": "kuwait-oil-fires",
+  "description": "A dark, smoky night scene in oil-painting style. A tall column of bright orange flame rises from a central wellhead with valves and pipes, under a heavy black smoke cloud. Several smaller flares burn along a flat desert horizon. In the foreground, a dark silhouetted fire truck stands beside two small figures. No visible text, frame or blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

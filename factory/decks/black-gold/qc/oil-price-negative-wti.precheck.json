@@ -1,0 +1,20 @@
+{
+  "slug": "oil-price-negative-wti",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "ca6b9cbaa7b352cee509ec457513e412b0691b28acfabb7ee7f81f6ffcade69f",
+  "dhash": "fffeb2526cb9ebd3",
+  "nearest": {
+    "deck": {
+      "slug": "first-oil-pipeline-pithole",
+      "distance": 26
+    },
+    "catalogue": {
+      "slug": "sickle-blade-improvements",
+      "distance": 18
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}
