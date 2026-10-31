@@ -12868,7 +12868,10 @@
     "year": 1832,
     "category": "invention",
     "description": "A French instrument maker spun a magnet past wire coils and added a commutator, building the first practical generator.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "siemens-self-excited-dynamo",
@@ -12876,7 +12879,10 @@
     "year": 1866,
     "category": "invention",
     "description": "Werner Siemens showed a generator could feed its own magnets, making powerful electricity affordable at scale.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "godalming-public-electricity-supply",
@@ -12884,7 +12890,10 @@
     "year": 1881,
     "category": "commerce",
     "description": "A small English town ran a waterwheel-driven generator to power its street lamps, the first public electricity supply.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "pearl-street-station-opens",
@@ -12892,7 +12901,10 @@
     "year": 1882,
     "category": "commerce",
     "description": "Edison's Manhattan power plant began sending electricity through underground wires to paying customers.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "chicago-worlds-fair-ac-power",
@@ -12900,7 +12912,10 @@
     "year": 1893,
     "category": "invention",
     "description": "Westinghouse lit a vast Chicago exposition with alternating current, winning the argument in the War of the Currents.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "larderello-geothermal-plant",
@@ -12908,7 +12923,10 @@
     "year": 1904,
     "category": "invention",
     "description": "At an Italian volcanic steam field, Prince Ginori Conti ran a small engine on natural steam to light a few bulbs.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "britain-national-grid-live",
@@ -12916,7 +12934,10 @@
     "year": 1935,
     "category": "commerce",
     "description": "Pylons carrying high-voltage lines linked power stations into the world's first integrated national electricity network.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "smith-putnam-wind-turbine",
@@ -12924,7 +12945,10 @@
     "year": 1941,
     "category": "invention",
     "description": "A giant two-bladed turbine on a Vermont hilltop became the first megawatt-scale wind machine to supply a power grid.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "the-geysers-geothermal-plant",
@@ -12932,7 +12956,10 @@
     "year": 1960,
     "category": "invention",
     "description": "A Californian plant tapped underground steam to feed a utility's grid, starting large-scale geothermal power in America.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "northeast-blackout-1965",
@@ -12940,7 +12967,11 @@
     "year": 1965,
     "category": "disasters",
     "description": "A faulty relay in Ontario cascaded into a failure that plunged millions across the northeastern US and Canada into darkness.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada",
+      "United States"
+    ]
   },
   {
     "name": "rance-tidal-power-station",
@@ -12948,7 +12979,10 @@
     "year": 1966,
     "category": "architecture",
     "description": "A French estuary barrage began harnessing ocean tides to generate electricity, the first large tidal plant.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "pacific-dc-intertie-opens",
@@ -12956,7 +12990,10 @@
     "year": 1970,
     "category": "architecture",
     "description": "A direct-current line carried hydropower from the Pacific Northwest to Los Angeles, a milestone in long-distance transmission.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dinorwig-pumped-storage-station",
@@ -12964,7 +13001,10 @@
     "year": 1984,
     "category": "architecture",
     "description": "A Welsh power station hidden inside a mountain releases stored water in seconds to meet sudden surges in electricity demand.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "quebec-geomagnetic-blackout",
@@ -12972,7 +13012,10 @@
     "year": 1989,
     "category": "disasters",
     "description": "A geomagnetic storm collapsed a Canadian provincial grid in seconds, leaving millions without electricity.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "toyota-prius-launched",
@@ -12980,7 +13023,10 @@
     "year": 1997,
     "category": "invention",
     "description": "The first mass-produced hybrid car paired a petrol engine with a battery and electric motor.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "northeast-blackout-2003",
@@ -12988,7 +13034,11 @@
     "year": 2003,
     "category": "disasters",
     "description": "A tree-touched power line in Ohio triggered a cascade that darkened cities from New York to Toronto.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada",
+      "United States"
+    ]
   },
   {
     "name": "tesla-roadster-deliveries",
@@ -12996,7 +13046,10 @@
     "year": 2008,
     "category": "invention",
     "description": "A sports car powered by thousands of laptop-style cells showed that electric vehicles could be fast and desirable.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "tesla-powerwall-unveiled",
@@ -13004,7 +13057,10 @@
     "year": 2015,
     "category": "invention",
     "description": "A wall-mounted home battery was launched to store rooftop solar power and back up households during outages.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hornsdale-power-reserve",
@@ -13012,7 +13068,10 @@
     "year": 2017,
     "category": "invention",
     "description": "The world's biggest lithium-ion battery at the time began stabilising South Australia's grid, built in under 100 days.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "hornsea-offshore-wind-farm",
@@ -13020,7 +13079,10 @@
     "year": 2019,
     "category": "invention",
     "description": "More than 170 turbines off the Yorkshire coast began sending power ashore from the then-largest offshore wind farm.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "iberian-peninsula-blackout",
@@ -13028,6 +13090,10 @@
     "year": 2025,
     "category": "disasters",
     "description": "A sudden grid collapse left Spain and Portugal without electricity for hours, halting trains and shutting shops.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Portugal",
+      "Spain"
+    ]
   }
 ]
