@@ -1,9 +1,9 @@
 {
   "deck": "seeing-inside",
   "name": "Seeing Inside",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T08:07:00.320Z",
+  "updated_at": "2026-10-31T09:06:50.458Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-10-31T08:07:00.320Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-31T09:06:50.458Z"
     }
   ],
   "slugs": {
