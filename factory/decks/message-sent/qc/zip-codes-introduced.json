@@ -1,0 +1,15 @@
+{
+  "slug": "zip-codes-introduced",
+  "description": "A man in a dark work shirt sits at a row of sorting pigeonholes in a large industrial mail hall, bent over an envelope he is reading. Behind him, a conveyor and machinery run along the shelves, with other workers at stations in the haze, and mail sacks and a wheeled cart on the floor. Hanging industrial lamps and mid-century clothing suggest the 1950s or 1960s. Envelopes on the shelves and the stack at lower left carry small dark marks that look like address lines, and the painting fills the canvas edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The envelopes on the shelves and in the stack at lower left carry dark marks that look like printed or handwritten address lines. They are too blurred to read, but the scene asked for envelopes with no legible writing, and a reviewer may take them as text. Repaint the envelopes as blank or with clearly abstract marks."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "message-sent",
+  "name": "Message Sent",
+  "scope": "Yes if it is a way of sending a message or parcel across distance",
+  "boundary": "Message Sent: carried or wired messages and mail; broadcasting goes to Tune In, the internet to Going Online, pocket gadgets to In Your Pocket.",
+  "neighbours": ["tune-in", "going-online", "in-your-pocket"],
+  "grid": {
+    "categories": ["invention", "media", "commerce"],
+    "eras": ["industrial", "worldWars", "coldWar"],
+    "regions": ["Global", "Europe", "North America"]
+  },
+  "example_beats": [
+    "Augustus creates the Cursus Publicus (27 BC)",
+    "Chappe's semaphore line (1794)",
+    "Penny Black stamp (1840)",
+    "Morse sends the first telegraph message (1844)",
+    "Pony Express launched (1860)",
+    "Bell patents the telephone (1876)",
+    "Marconi's transatlantic radio signal (1901)",
+    "First official airmail flight (1911)",
+    "Telstar relays live television (1962)",
+    "FedEx begins deliveries (1973)"
+  ],
+  "appeal": 2,
+  "status": "queued"
+}

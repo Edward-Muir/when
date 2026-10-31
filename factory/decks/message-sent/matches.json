@@ -1,0 +1,2946 @@
+[
+  {
+    "beat": 0,
+    "year": -500,
+    "title": "Persia Builds the Royal Road",
+    "candidates": [
+      {
+        "name": "postal-system-persia",
+        "friendly_name": "Persian Postal System",
+        "year": -500,
+        "description": "The Achaemenid Empire established the Angareion relay postal system under Darius I across the Royal Road.",
+        "score": 7,
+        "shared": [
+          "persia",
+          "royal",
+          "road",
+          "persian",
+          "relay",
+          "across",
+          "empire"
+        ]
+      },
+      {
+        "name": "aramaic-becomes-lingua-franca",
+        "friendly_name": "Aramaic Spreads Widely",
+        "year": -500,
+        "description": "Aramaic became the common written language of the Persian Empire, linking diverse peoples.",
+        "score": 2,
+        "shared": [
+          "persian",
+          "empire"
+        ]
+      },
+      {
+        "name": "histiaeus-tattooed-message",
+        "friendly_name": "Message Tattooed On A Scalp",
+        "year": -499,
+        "description": "Histiaeus tattooed a call to revolt on a slave's shaved head and let the hair regrow, hiding it from Persian eyes.",
+        "score": 2,
+        "shared": [
+          "persian",
+          "let"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "caravan-routes-central-asia",
+        "friendly_name": "Caravan Routes Connect Central Asia",
+        "year": -500,
+        "description": "Organized caravan routes linked Central Asian oases, forming the precursors to the Silk Road trade network.",
+        "score": 1,
+        "shared": [
+          "road"
+        ]
+      },
+      {
+        "name": "persian-wars-begin",
+        "friendly_name": "Persian Wars Begin",
+        "year": -499,
+        "description": "Greek city-states revolted against Persian rule, beginning decades of conflict.",
+        "score": 1,
+        "shared": [
+          "persian"
+        ]
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "lapita-pottery-trade",
+        "friendly_name": "Lapita Pottery Trade",
+        "year": -1000,
+        "year_end": -500,
+        "description": "Distinctive Lapita pottery spread across Melanesia and Polynesia, evidence of extensive maritime trade networks.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "lapita-culture",
+        "friendly_name": "Lapita Culture Pottery Network",
+        "year": -1500,
+        "year_end": -500,
+        "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "lapita-culture-expansion",
+        "friendly_name": "Lapita Culture Spreads",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -490,
+    "title": "Pheidippides Runs from Marathon",
+    "candidates": [
+      {
+        "name": "battle-marathon",
+        "friendly_name": "Battle of Marathon",
+        "year": -490,
+        "description": "Athenian forces defeated the Persian invasion, inspiring the marathon race legend.",
+        "score": 2,
+        "shared": [
+          "marathon",
+          "legend"
+        ]
+      },
+      {
+        "name": "greek-vase-painting-golden-age",
+        "friendly_name": "Greek Vase Painting Golden Age",
+        "year": -620,
+        "year_end": -400,
+        "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
+        "score": 2,
+        "shared": [
+          "greek",
+          "athens"
+        ]
+      },
+      {
+        "name": "nazca-lines",
+        "friendly_name": "Nazca Lines Construction Period",
+        "year": -500,
+        "year_end": 500,
+        "description": "The Nazca civilization in Peru created massive desert geoglyphs depicting animals and geometric shapes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ancestral-dorset",
+        "friendly_name": "Dorset Arctic Culture",
+        "year": -500,
+        "year_end": 1350,
+        "description": "The Dorset culture adapted to life in the Arctic with specialized hunting technology and ivory carvings.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "takshashila-university-scholars",
+        "friendly_name": "Takshashila University",
+        "year": -500,
+        "year_end": 470,
+        "description": "Takshashila (Taxila) in ancient India became a leading center of learning for Buddhist and Hindu scholars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "adena-culture",
+        "friendly_name": "Adena Culture Eastern North America",
+        "year": -500,
+        "year_end": 100,
+        "description": "The Adena culture emerged in the Ohio Valley, building earthen mounds and cultivating early crops.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -27,
+    "title": "Rome's Cursus Publicus Begins",
+    "candidates": [
+      {
+        "name": "livy-ab-urbe-condita",
+        "friendly_name": "Livy's Ab Urbe Condita Written",
+        "year": -27,
+        "description": "Roman historian Livy began his monumental 142-volume history of Rome from its founding.",
+        "score": 1,
+        "shared": [
+          "rome"
+        ]
+      },
+      {
+        "name": "augustan-age-begins",
+        "friendly_name": "Augustan Age Begins",
+        "year": -27,
+        "description": "Augustus's reign inaugurated a golden age of Latin literature with Virgil, Horace, and Ovid.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "roman-empire-founded",
+        "friendly_name": "Roman Empire Established",
+        "year": -27,
+        "description": "Augustus became the first Roman Emperor, ending the Republic.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "pax-romana",
+        "friendly_name": "Pax Romana Begins",
+        "year": -27,
+        "description": "Augustus established a 200-year period of relative peace across the Roman Empire.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 1,
+        "shared": [
+          "system"
+        ]
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1167,
+    "title": "Baghdad Starts Its Pigeon Post",
+    "candidates": [
+      {
+        "name": "hohokam-canal-network",
+        "friendly_name": "Hohokam Canals Spread",
+        "year": 700,
+        "year_end": 1450,
+        "description": "The Hohokam people expanded a major canal network off a desert river, irrigating land in the Sonoran Desert near modern Phoenix.",
+        "score": 1,
+        "shared": [
+          "network"
+        ]
+      },
+      {
+        "name": "oxford-founded",
+        "friendly_name": "Oxford University Founded",
+        "year": 1167,
+        "description": "The oldest English-speaking university began formal instruction.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "assize-of-clarendon",
+        "friendly_name": "Assize of Clarendon",
+        "year": 1166,
+        "description": "England's Henry II expanded royal courts and grand juries, advancing the English common law system.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "buttress-flying-buttress",
+        "friendly_name": "Flying Buttress Refinement",
+        "year": 1160,
+        "year_end": 1300,
+        "description": "Flying buttresses were refined in Gothic architecture, enabling thinner walls and larger stained glass windows.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "krak-des-chevaliers-rebuilt",
+        "friendly_name": "Krak des Chevaliers Rebuilt",
+        "year": 1142,
+        "year_end": 1170,
+        "description": "A crusading military order rebuilt this Syrian castle into one of the most formidable fortresses of its era.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cathars-heresy",
+        "friendly_name": "Cathar Heresy Languedoc",
+        "year": 1140,
+        "year_end": 1244,
+        "description": "The Cathar dualist movement gained followers in southern France, later provoking the Albigensian Crusade.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1229,
+    "title": "The Mongol Yam Relay Network",
+    "candidates": [
+      {
+        "name": "khorezm-state",
+        "friendly_name": "Khorezm Sultanate Flourishes",
+        "year": 1077,
+        "year_end": 1231,
+        "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
+        "score": 3,
+        "shared": [
+          "empire",
+          "across",
+          "asia"
+        ]
+      },
+      {
+        "name": "zimbabwe-trading-network",
+        "friendly_name": "Great Zimbabwe Trade",
+        "year": 1220,
+        "year_end": 1450,
+        "description": "Great Zimbabwe became a major trading center connecting interior African gold and ivory to Swahili coastal ports.",
+        "score": 2,
+        "shared": [
+          "network",
+          "great"
+        ]
+      },
+      {
+        "name": "tonga-empire",
+        "friendly_name": "Tongan Empire Peak",
+        "year": 1200,
+        "year_end": 1500,
+        "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
+        "score": 2,
+        "shared": [
+          "empire",
+          "across"
+        ]
+      },
+      {
+        "name": "tran-dynasty-rule",
+        "friendly_name": "Tran Dynasty Rules Vietnam",
+        "year": 1225,
+        "year_end": 1400,
+        "description": "The Tran dynasty took power in Vietnam, later repelling three Mongol invasions and strengthening Vietnamese identity.",
+        "score": 1,
+        "shared": [
+          "mongol"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "andean-llama-domestication",
+        "friendly_name": "Andean Llama Herding System Peak",
+        "year": 1200,
+        "year_end": 1532,
+        "description": "Andean civilizations perfected llama herding systems for transport, wool, and meat across highland trade networks.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "great-zimbabwe-stone-construction",
+        "friendly_name": "Great Zimbabwe Stone Architecture",
+        "year": 1200,
+        "year_end": 1450,
+        "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "magdeburg-rights-spread",
+        "friendly_name": "Magdeburg Rights Spread",
+        "year": 1200,
+        "year_end": 1400,
+        "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "thule-reach-greenland",
+        "friendly_name": "Thule People Reach Greenland",
+        "year": 1200,
+        "year_end": 1300,
+        "description": "Thule Inuit migrated east across Arctic Canada to Greenland, ancestors of today's Inuit.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "anasazi-cliff-dwellings",
+        "friendly_name": "Anasazi Cliff Dwelling Construction",
+        "year": 1190,
+        "year_end": 1300,
+        "description": "Ancestral Puebloans built elaborate cliff dwellings in canyon alcoves across the American Southwest.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "pagan-kingdom",
+        "friendly_name": "Pagan Kingdom Peak",
+        "year": 1113,
+        "year_end": 1287,
+        "description": "The Pagan Kingdom of Burma reached its zenith with massive temple construction across the Bagan plains.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "great-zimbabwe",
+        "friendly_name": "Great Zimbabwe Built",
+        "year": 1100,
+        "year_end": 1450,
+        "description": "The medieval African city's massive stone structures were constructed.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1490,
+    "title": "Taxis Family Opens a Post Route",
+    "candidates": [
+      {
+        "name": "postal-system-expansion",
+        "friendly_name": "European Postal System Development",
+        "year": 1490,
+        "description": "The Thurn und Taxis family established a postal network linking major European cities for the Holy Roman Emperor.",
+        "score": 5,
+        "shared": [
+          "taxis",
+          "family",
+          "cities",
+          "european",
+          "network"
+        ]
+      },
+      {
+        "name": "kongo-mani-congo-capital",
+        "friendly_name": "Mbanza Kongo Rises",
+        "year": 1490,
+        "description": "Mbanza Kongo served as the capital of the Kongo Kingdom with a population rivaling many contemporary European cities.",
+        "score": 2,
+        "shared": [
+          "cities",
+          "european"
+        ]
+      },
+      {
+        "name": "court-ballet-origins",
+        "friendly_name": "Court Ballet Origins",
+        "year": 1489,
+        "description": "Elaborate court spectacles in Italian Renaissance courts laid the foundations for ballet as a performing art.",
+        "score": 1,
+        "shared": [
+          "italian"
+        ]
+      },
+      {
+        "name": "incunabula-books",
+        "friendly_name": "Incunabula: Early Printed Books",
+        "year": 1455,
+        "year_end": 1500,
+        "description": "The first wave of European printed books emerged after Gutenberg's press, transforming knowledge distribution.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "gunpowder-military-adoption-europe",
+        "friendly_name": "Gunpowder Reshapes Europe",
+        "year": 1450,
+        "year_end": 1530,
+        "description": "Cannons and handguns reshaped European warfare, ending the dominance of castles and armored knights.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "printing-press-diffusion",
+        "friendly_name": "Printing Press Spreads",
+        "year": 1450,
+        "year_end": 1500,
+        "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
+        "score": 1,
+        "shared": [
+          "cities"
+        ]
+      },
+      {
+        "name": "qhapaq-nan-expansion",
+        "friendly_name": "Qhapaq Ñan Road Network Expanded",
+        "year": 1450,
+        "year_end": 1532,
+        "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
+        "score": 1,
+        "shared": [
+          "network"
+        ]
+      },
+      {
+        "name": "kerala-school-mathematics",
+        "friendly_name": "Kerala School Calculus",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "The Kerala school of mathematics in India developed infinite series expansions, anticipating European calculus by centuries.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "gunpowder-weapons-adoption",
+        "friendly_name": "Gunpowder Weapons Widely Adopted",
+        "year": 1380,
+        "year_end": 1494,
+        "description": "European armies began deploying cannons and early firearms, transforming siege and battlefield tactics.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "double-entry-bookkeeping",
+        "friendly_name": "Double-Entry Bookkeeping",
+        "year": 1300,
+        "year_end": 1494,
+        "description": "Accounting method recording every transaction as both a debit and credit, refined by medieval Italian merchants.",
+        "score": 1,
+        "shared": [
+          "italian"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1588,
+    "title": "Beacon Fires Warn of the Armada",
+    "candidates": [
+      {
+        "name": "spanish-armada",
+        "friendly_name": "Spanish Armada Defeated",
+        "year": 1588,
+        "description": "England repelled Spain's massive invasion fleet, securing Protestant rule.",
+        "score": 4,
+        "shared": [
+          "armada",
+          "spanish",
+          "fleet",
+          "england"
+        ]
+      },
+      {
+        "name": "spanish-price-revolution",
+        "friendly_name": "Spanish Price Revolution",
+        "year": 1550,
+        "year_end": 1650,
+        "description": "A flood of New World silver caused sustained inflation across Europe over the sixteenth century.",
+        "score": 2,
+        "shared": [
+          "spanish",
+          "across"
+        ]
+      },
+      {
+        "name": "chili-peppers-spread",
+        "friendly_name": "Chili Peppers Spread Worldwide",
+        "year": 1500,
+        "year_end": 1614,
+        "description": "Traders carried American chili peppers across Asia and Africa, transforming cuisines from India to Korea.",
+        "score": 2,
+        "shared": [
+          "carried",
+          "across"
+        ]
+      },
+      {
+        "name": "songhai-scholars",
+        "friendly_name": "Songhai Islamic Scholars",
+        "year": 1493,
+        "year_end": 1591,
+        "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
+        "score": 1,
+        "shared": [
+          "beacon"
+        ]
+      },
+      {
+        "name": "open-field-system-abandonment",
+        "friendly_name": "Open Field System Declines",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1635,
+    "title": "Royal Mail Opens to the Public",
+    "candidates": [
+      {
+        "name": "port-royal-convent",
+        "friendly_name": "Port-Royal Monastery Rises",
+        "year": 1636,
+        "description": "Port-Royal became a center of Jansenist theology and intellectual life, associated with Pascal and Arnauld.",
+        "score": 1,
+        "shared": [
+          "royal"
+        ]
+      },
+      {
+        "name": "court-of-star-chamber-peak",
+        "friendly_name": "Star Chamber at Its Height",
+        "year": 1629,
+        "year_end": 1640,
+        "description": "England's secretive Star Chamber court tried opponents without juries, becoming a symbol of royal abuse.",
+        "score": 1,
+        "shared": [
+          "royal"
+        ]
+      },
+      {
+        "name": "richelieu-centralization",
+        "friendly_name": "Richelieu Centralizes France",
+        "year": 1624,
+        "year_end": 1642,
+        "description": "Cardinal Richelieu became chief minister to Louis XIII, consolidating royal authority and weakening the French nobility and Huguenots.",
+        "score": 1,
+        "shared": [
+          "royal"
+        ]
+      },
+      {
+        "name": "lunda-empire-formation",
+        "friendly_name": "Lunda Empire Emerges",
+        "year": 1550,
+        "year_end": 1700,
+        "description": "The Lunda Empire emerged in the southern Congo basin, expanding through trade and political alliances.",
+        "score": 1,
+        "shared": [
+          "through"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "oromo-expansion",
+        "friendly_name": "Oromo Expansion in East Africa",
+        "year": 1522,
+        "year_end": 1700,
+        "description": "Oromo pastoralists migrated northward through the Ethiopian highlands, reshaping the region's demographics.",
+        "score": 1,
+        "shared": [
+          "through"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1680,
+    "title": "London Gets a Penny Post",
+    "candidates": [
+      {
+        "name": "joseon-yangban-examination",
+        "friendly_name": "Yangban Examination Reforms",
+        "year": 1680,
+        "description": "Joseon Korea's yangban elite dominated civil service examinations, reinforcing a hereditary scholar-official ruling class.",
+        "score": 1,
+        "shared": [
+          "service"
+        ]
+      },
+      {
+        "name": "aurangzeb-expansion-begin",
+        "friendly_name": "Aurangzeb's Deccan Campaign",
+        "year": 1681,
+        "description": "Mughal emperor Aurangzeb launched a prolonged campaign to conquer the Deccan sultanates and crush the Marathas.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "dodo-driven-extinct",
+        "friendly_name": "The Dodo Goes Extinct",
+        "year": 1681,
+        "description": "The flightless dodo of Mauritius vanished within decades of sailors reaching the island.",
+        "score": 1,
+        "shared": [
+          "within"
+        ]
+      },
+      {
+        "name": "wren-st-pauls-cathedral",
+        "friendly_name": "Wren Designs St Paul's Cathedral",
+        "year": 1675,
+        "year_end": 1710,
+        "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
+        "score": 1,
+        "shared": [
+          "london"
+        ]
+      },
+      {
+        "name": "koprululer-reforms",
+        "friendly_name": "Köprülü Ottoman Reforms",
+        "year": 1656,
+        "year_end": 1683,
+        "description": "Grand Vizier Köprülü Mehmed Pasha launched sweeping Ottoman reforms, restoring military discipline and administrative efficiency.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "baroque-music-development",
+        "friendly_name": "Baroque Music Flourishes",
+        "year": 1680,
+        "description": "Composers like Corelli and Purcell advanced Baroque music with concertos, sonatas, and operas across Europe.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1784,
+    "title": "The First Mail Coach Runs",
+    "candidates": [
+      {
+        "name": "laki-eruption",
+        "friendly_name": "Laki Volcanic Eruption",
+        "year": 1783,
+        "description": "An Icelandic eruption caused widespread famine and climate effects across Europe.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "coulomb-electrostatics",
+        "friendly_name": "Coulomb's Electrostatic Law",
+        "year": 1785,
+        "description": "Charles-Augustin de Coulomb published his law describing the force between electric charges using a torsion balance.",
+        "score": 1,
+        "shared": [
+          "between"
+        ]
+      },
+      {
+        "name": "blanchard-jeffries-channel-crossing",
+        "friendly_name": "Balloon Crosses the Channel",
+        "year": 1785,
+        "description": "Jean-Pierre Blanchard and John Jeffries crossed the English Channel by hydrogen balloon, the first aerial crossing.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 1,
+        "shared": [
+          "route"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1794,
+    "title": "Chappe's Semaphore Line Opens",
+    "candidates": [
+      {
+        "name": "louvre-opens",
+        "friendly_name": "Louvre Opens as Public Museum",
+        "year": 1793,
+        "description": "The former French royal palace opened as one of the world's first public museums.",
+        "score": 1,
+        "shared": [
+          "opens"
+        ]
+      },
+      {
+        "name": "jardin-des-plantes-zoo-opens",
+        "friendly_name": "Paris Opens a Public Zoo",
+        "year": 1793,
+        "description": "Revolutionary France turned former royal animal collections into the Jardin des Plantes, an early public zoo.",
+        "score": 1,
+        "shared": [
+          "opens"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "execution-of-robespierre",
+        "friendly_name": "Execution of Robespierre",
+        "year": 1794,
+        "description": "Maximilien Robespierre was guillotined during the Thermidorian Reaction, ending the Terror and the radical phase of the Revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1837,
+    "title": "Cooke and Wheatstone's Telegraph",
+    "candidates": [
+      {
+        "name": "stereoscope-invented",
+        "friendly_name": "Stereoscope Invented",
+        "year": 1838,
+        "description": "Charles Wheatstone demonstrated the stereoscope, creating the illusion of 3D depth from two flat images.",
+        "score": 2,
+        "shared": [
+          "wheatstone",
+          "two"
+        ]
+      },
+      {
+        "name": "telegraph",
+        "friendly_name": "Telegraph Invented",
+        "year": 1837,
+        "description": "Samuel Morse invented the electric telegraph.",
+        "score": 1,
+        "shared": [
+          "telegraph"
+        ]
+      },
+      {
+        "name": "revolver-invented",
+        "friendly_name": "Revolver Invented",
+        "year": 1836,
+        "description": "Samuel Colt patented the first practical revolving firearm, changing the nature of personal weapons.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "compound-air-compressor",
+        "friendly_name": "Compound Air Compressor",
+        "year": 1829,
+        "year_end": 1871,
+        "description": "Multi-stage compressor using sequential cylinders to generate higher air pressures efficiently.",
+        "score": 1,
+        "shared": [
+          "using"
+        ]
+      },
+      {
+        "name": "first-kindergarten",
+        "friendly_name": "First Kindergarten Opens",
+        "year": 1837,
+        "description": "Friedrich Froebel opened the first kindergarten in Germany.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "female-university",
+        "friendly_name": "Mount Holyoke College",
+        "year": 1837,
+        "description": "Mount Holyoke Seminary opened in Massachusetts as one of the first institutions of higher education for women in the United States.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1840,
+    "title": "The Penny Black Stamp Appears",
+    "candidates": [
+      {
+        "name": "postage-stamp",
+        "friendly_name": "First Postage Stamp Issued",
+        "year": 1840,
+        "description": "The Penny Black, the world's first adhesive postage stamp, was issued in Britain for prepaid mail delivery.",
+        "score": 8,
+        "shared": [
+          "penny",
+          "black",
+          "stamp",
+          "britain",
+          "issued",
+          "world",
+          "adhesive",
+          "postage"
+        ]
+      },
+      {
+        "name": "treaty-waitangi",
+        "friendly_name": "Treaty of Waitangi",
+        "year": 1840,
+        "description": "Britain and Māori chiefs signed the founding document of New Zealand.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "dental-school",
+        "friendly_name": "Baltimore Dental School",
+        "year": 1840,
+        "description": "The Baltimore College of Dental Surgery opened as the world's first dental school, professionalizing the field of dentistry.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "zanzibar-clove-cultivation",
+        "friendly_name": "Zanzibar Clove Plantations",
+        "year": 1840,
+        "description": "The Sultan of Zanzibar established clove plantations that made the island the world's leading spice exporter.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "railway-time-britain",
+        "friendly_name": "Railway Time Adopted",
+        "year": 1840,
+        "description": "The Great Western Railway set every station clock to London time, overriding the patchwork of local solar times.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "guano-boom-fertilizer-trade",
+        "friendly_name": "Guano Boom Begins",
+        "year": 1840,
+        "description": "Britain began importing nitrogen rich Peruvian guano by the shipload, launching an industrial fertilizer trade that lifted European yields.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "first-opium-war",
+        "friendly_name": "First Opium War Begins",
+        "year": 1839,
+        "description": "Britain went to war with China over trade restrictions on opium.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "birth-dvorak",
+        "friendly_name": "Birth of Antonin Dvorak",
+        "year": 1841,
+        "description": "The Czech composer of the New World Symphony who wove folk melody into the Romantic tradition.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "ukiyo-e-art-development",
+        "friendly_name": "Ukiyo-e Woodblock Art Development",
+        "year": 1670,
+        "year_end": 1868,
+        "description": "Japanese ukiyo-e woodblock printing flourished in Edo, depicting actors, beauties, and landscapes of the floating world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1844,
+    "title": "Morse's First Telegraph Message",
+    "candidates": [
+      {
+        "name": "first-telegraph-message",
+        "friendly_name": "First Telegraph Message",
+        "year": 1844,
+        "description": "Samuel Morse sent 'What hath God wrought' from Washington to Baltimore, demonstrating the electric telegraph.",
+        "score": 4,
+        "shared": [
+          "morse",
+          "telegraph",
+          "message",
+          "washington"
+        ]
+      },
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 1,
+        "shared": [
+          "famous"
+        ]
+      },
+      {
+        "name": "ymca-founded",
+        "friendly_name": "YMCA Founded",
+        "year": 1844,
+        "description": "The Young Men's Christian Association was founded in London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wood-pulp-papermaking",
+        "friendly_name": "Wood Pulp Papermaking",
+        "year": 1844,
+        "description": "Charles Fenerty made paper from wood pulp, replacing expensive cotton rags and lowering costs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hypodermic-needle",
+        "friendly_name": "Hypodermic Needle",
+        "year": 1844,
+        "description": "Francis Rynd invented the hollow needle for injecting medication beneath the skin.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-nietzsche",
+        "friendly_name": "Birth of Nietzsche",
+        "year": 1844,
+        "description": "The German philosopher who proclaimed the death of God and explored will, morality, and the overman.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1850,
+    "title": "Reuters Sends News by Pigeon",
+    "candidates": [
+      {
+        "name": "pinkerton-detective-agency",
+        "friendly_name": "Pinkerton Agency Founded",
+        "year": 1850,
+        "description": "Allan Pinkerton founded a private detective agency in Chicago that pursued criminals across the United States.",
+        "score": 1,
+        "shared": [
+          "agency"
+        ]
+      },
+      {
+        "name": "francis-turbine",
+        "friendly_name": "Francis Turbine",
+        "year": 1849,
+        "description": "James Francis's efficient mixed-flow water turbine, still widely used in hydroelectric dams.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "dover-calais-submarine-cable",
+        "friendly_name": "First Undersea Telegraph Cable",
+        "year": 1851,
+        "description": "An armoured cable laid across the Channel from Dover to Calais carried the first lasting telegraph traffic under the sea.",
+        "score": 1,
+        "shared": [
+          "telegraph"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "taiping-rebellion",
+        "friendly_name": "Taiping Rebellion Begins",
+        "year": 1850,
+        "description": "A Christian-inspired uprising killed 20-30 million people in China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "compromise-slavery",
+        "friendly_name": "Slavery Compromise",
+        "year": 1850,
+        "description": "Congress attempted to balance free and slave state interests as US territories expanded.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1852,
+    "title": "Wells Fargo Opens for Business",
+    "candidates": [
+      {
+        "name": "california-gold-rush",
+        "friendly_name": "California Gold Rush",
+        "year": 1848,
+        "year_end": 1855,
+        "description": "Discovery of gold at Sutter's Mill sparked a massive migration to California, transforming the American West.",
+        "score": 3,
+        "shared": [
+          "california",
+          "gold",
+          "american"
+        ]
+      },
+      {
+        "name": "great-exhibition-opens",
+        "friendly_name": "Great Exhibition Opens",
+        "year": 1851,
+        "description": "World's first international exhibition of manufactured products opened in London's Crystal Palace.",
+        "score": 1,
+        "shared": [
+          "opens"
+        ]
+      },
+      {
+        "name": "perry-expedition-japan",
+        "friendly_name": "Perry Expedition Opens Japan",
+        "year": 1853,
+        "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
+        "score": 1,
+        "shared": [
+          "opens"
+        ]
+      },
+      {
+        "name": "gold-rush-to-australia",
+        "friendly_name": "Australian Gold Rush Migration",
+        "year": 1851,
+        "year_end": 1869,
+        "description": "Gold discoveries drew a flood of migrants to Australia, tripling the colony's population in a decade.",
+        "score": 1,
+        "shared": [
+          "gold"
+        ]
+      },
+      {
+        "name": "dover-calais-submarine-cable",
+        "friendly_name": "First Undersea Telegraph Cable",
+        "year": 1851,
+        "description": "An armoured cable laid across the Channel from Dover to Calais carried the first lasting telegraph traffic under the sea.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "cayley-coachman-flight",
+        "friendly_name": "Cayley's Glider Carries a Man",
+        "year": 1853,
+        "description": "George Cayley's coachman was carried across a Yorkshire valley in Cayley's glider, the first adult flown in such a craft.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1858,
+    "title": "First Transatlantic Telegraph Cable",
+    "candidates": [
+      {
+        "name": "first-transatlantic-cable",
+        "friendly_name": "First Transatlantic Cable",
+        "year": 1858,
+        "description": "First telegraph cable across the Atlantic connected Europe and North America, though it failed after weeks.",
+        "score": 7,
+        "shared": [
+          "transatlantic",
+          "telegraph",
+          "cable",
+          "across",
+          "though",
+          "failed",
+          "weeks"
+        ]
+      },
+      {
+        "name": "birth-theodore-roosevelt",
+        "friendly_name": "Birth of Theodore Roosevelt",
+        "year": 1858,
+        "description": "The 26th US president, trust-busting reformer and conservationist who championed the Square Deal.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "john-browns-raid",
+        "friendly_name": "John Brown's Raid",
+        "year": 1859,
+        "description": "Abolitionist John Brown led a failed raid on Harpers Ferry armory, hoping to spark a slave rebellion.",
+        "score": 1,
+        "shared": [
+          "failed"
+        ]
+      },
+      {
+        "name": "carrington-event",
+        "friendly_name": "Carrington Event",
+        "year": 1859,
+        "description": "The most powerful solar storm on record caused worldwide telegraph failures.",
+        "score": 1,
+        "shared": [
+          "telegraph"
+        ]
+      },
+      {
+        "name": "british-raj-established",
+        "friendly_name": "British Raj Established",
+        "year": 1858,
+        "description": "The British Crown assumed direct control of India after the Sepoy Mutiny.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "miracles-at-lourdes",
+        "friendly_name": "Miracles at Lourdes",
+        "year": 1858,
+        "description": "Bernadette Soubirous reported visions of the Virgin Mary in Lourdes, France, creating a major pilgrimage site.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1860,
+    "title": "The Pony Express Launches",
+    "candidates": [
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 2,
+        "shared": [
+          "american",
+          "west"
+        ]
+      },
+      {
+        "name": "hms-warrior-launches",
+        "friendly_name": "HMS Warrior Launches",
+        "year": 1860,
+        "description": "Britain answered Gloire with Warrior, the first warship built entirely of iron rather than iron clad wood, starting a naval arms race.",
+        "score": 1,
+        "shared": [
+          "launches"
+        ]
+      },
+      {
+        "name": "american-civil-war",
+        "friendly_name": "American Civil War Begins",
+        "year": 1861,
+        "description": "Confederate forces fired on Fort Sumter, beginning a four-year war over slavery and national unity.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "south-carolina-secedes",
+        "friendly_name": "South Carolina Secedes",
+        "year": 1860,
+        "description": "South Carolina became the first state to secede from the Union following Lincoln's election.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nursing-school",
+        "friendly_name": "Nightingale Nursing School",
+        "year": 1860,
+        "description": "Florence Nightingale established the first professional nursing school at St Thomas' Hospital in London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "burke-wills-australia",
+        "friendly_name": "Burke and Wills Expedition",
+        "year": 1860,
+        "year_end": 1861,
+        "description": "The ill-fated expedition crossed Australia from south to north.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1866,
+    "title": "Atlantic Cable Finally Succeeds",
+    "candidates": [
+      {
+        "name": "transatlantic-cable-completed",
+        "friendly_name": "Transatlantic Cable Completed",
+        "year": 1866,
+        "description": "The first permanent transatlantic telegraph cable connected Europe and North America, enabling instant communication across the ocean.",
+        "score": 2,
+        "shared": [
+          "cable",
+          "telegraph"
+        ]
+      },
+      {
+        "name": "stock-ticker",
+        "friendly_name": "Stock Ticker Invented",
+        "year": 1867,
+        "description": "Edward Calahan invented the stock ticker, a telegraph machine printing stock prices on continuous paper tape.",
+        "score": 1,
+        "shared": [
+          "telegraph"
+        ]
+      },
+      {
+        "name": "austro-prussian-war",
+        "friendly_name": "Austro-Prussian War",
+        "year": 1866,
+        "description": "Prussia's rapid victory over Austria reshaped the balance of power in Europe.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indian-rebellion-famine",
+        "friendly_name": "Orissa Famine",
+        "year": 1866,
+        "year_end": 1868,
+        "description": "A severe famine in India killed over one million people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "finnish-famine",
+        "friendly_name": "Finnish Famine",
+        "year": 1866,
+        "year_end": 1868,
+        "description": "The last major famine in Europe killed 15% of Finland's population.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mendel-genetics",
+        "friendly_name": "Mendel Discovers Genetics",
+        "year": 1866,
+        "description": "Gregor Mendel published his laws of inheritance from pea plant experiments.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1869,
+    "title": "The Postcard Is Introduced",
+    "candidates": [
+      {
+        "name": "mendeleev-periodic-table",
+        "friendly_name": "Mendeleev's Periodic Table",
+        "year": 1869,
+        "description": "Dmitri Mendeleev arranged elements by atomic weight, predicting undiscovered elements and their properties.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "brooklyn-bridge-begins",
+        "friendly_name": "Brooklyn Bridge Construction Begins",
+        "year": 1869,
+        "description": "Work began on the first steel-wire suspension bridge.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "suez-canal",
+        "friendly_name": "Suez Canal Opens",
+        "year": 1869,
+        "description": "The canal connecting the Mediterranean and Red Seas opened to shipping.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "transcontinental-railroad",
+        "friendly_name": "Transcontinental Railroad Completed",
+        "year": 1869,
+        "description": "The first railroad spanning North America was completed at Promontory Summit.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-henri-matisse",
+        "friendly_name": "Birth of Henri Matisse",
+        "year": 1869,
+        "description": "The French artist who led the Fauvist movement and revolutionized color and form in modern art.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "margarine-invented",
+        "friendly_name": "Margarine Invented",
+        "year": 1869,
+        "description": "A French chemist created margarine as a cheap butter substitute, winning a prize set by Napoleon III.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1874,
+    "title": "Universal Postal Union Is Founded",
+    "candidates": [
+      {
+        "name": "birth-carl-jung",
+        "friendly_name": "Birth of Carl Jung",
+        "year": 1875,
+        "description": "The Swiss psychiatrist who founded analytical psychology and theorized the collective unconscious.",
+        "score": 1,
+        "shared": [
+          "founded"
+        ]
+      },
+      {
+        "name": "kennel-club-founded-britain",
+        "friendly_name": "The Kennel Club Is Founded",
+        "year": 1873,
+        "description": "Britain formed the world's first kennel club to standardize dog breeds and keep a breed registry.",
+        "score": 1,
+        "shared": [
+          "founded"
+        ]
+      },
+      {
+        "name": "first-impressionist-exhibition",
+        "friendly_name": "First Impressionist Exhibition",
+        "year": 1874,
+        "description": "Monet, Renoir, and others held their first independent art exhibition in Paris.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "barbed-wire-invented",
+        "friendly_name": "Barbed Wire Invented",
+        "year": 1874,
+        "description": "Joseph Glidden patented barbed wire, transforming land management and the American West.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "metal-detector",
+        "friendly_name": "Metal Detector",
+        "year": 1874,
+        "description": "Gustave Trouvé's electromagnetic device for locating metal objects hidden underground.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-harry-houdini",
+        "friendly_name": "Birth of Harry Houdini",
+        "year": 1874,
+        "description": "The American magician and escape artist whose daring stunts made him a legend of stage illusion.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1876,
+    "title": "Bell Patents the Telephone",
+    "candidates": [
+      {
+        "name": "bell-telephone",
+        "friendly_name": "Bell Invents Telephone",
+        "year": 1876,
+        "description": "Alexander Graham Bell patented the first practical telephone.",
+        "score": 2,
+        "shared": [
+          "bell",
+          "telephone"
+        ]
+      },
+      {
+        "name": "phonograph-invented",
+        "friendly_name": "Phonograph Invented",
+        "year": 1877,
+        "description": "Thomas Edison invented a device to record and play back sound.",
+        "score": 1,
+        "shared": [
+          "device"
+        ]
+      },
+      {
+        "name": "mechanical-refrigeration-meat",
+        "friendly_name": "Refrigerated Meat Shipping",
+        "year": 1877,
+        "description": "Refrigerated ships first carried frozen meat across oceans, transforming the global food trade.",
+        "score": 1,
+        "shared": [
+          "carried"
+        ]
+      },
+      {
+        "name": "battle-little-bighorn",
+        "friendly_name": "Battle of Little Bighorn",
+        "year": 1876,
+        "description": "Lakota and Cheyenne warriors annihilated Custer's cavalry at Last Stand Hill.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "centennial-exhibition",
+        "friendly_name": "Centennial Exhibition",
+        "year": 1876,
+        "description": "First official World's Fair in the US celebrated America's 100th anniversary in Philadelphia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "serbia-independence",
+        "friendly_name": "Serbia Independence",
+        "year": 1876,
+        "year_end": 1878,
+        "description": "Serbia declared independence from the Ottoman Empire, later recognized at the Congress of Berlin.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1896,
+    "title": "Free Rural Mail Delivery Begins",
+    "candidates": [
+      {
+        "name": "birth-f-scott-fitzgerald",
+        "friendly_name": "Birth of F Scott Fitzgerald",
+        "year": 1896,
+        "description": "The American author of The Great Gatsby who chronicled the glamour and excess of the Jazz Age.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "nfpa-founded",
+        "friendly_name": "NFPA Founded",
+        "year": 1896,
+        "description": "American insurers and engineers founded the National Fire Protection Association to standardize sprinklers and fire safety codes.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-amelia-earhart",
+        "friendly_name": "Birth of Amelia Earhart",
+        "year": 1897,
+        "description": "The American aviator and first woman to fly solo across the Atlantic, who vanished over the Pacific.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "comic-strip-debuts",
+        "friendly_name": "First Newspaper Comic Strip",
+        "year": 1895,
+        "description": "The Yellow Kid popularized the comic strip as a regular feature in American newspapers.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "panic-of-1893",
+        "friendly_name": "American Banking Panic",
+        "year": 1893,
+        "year_end": 1897,
+        "description": "Severe economic depression caused by railroad overbuilding and bank failures, lasting four years.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1901,
+    "title": "Marconi's Transatlantic Signal",
+    "candidates": [
+      {
+        "name": "birth-charles-lindbergh",
+        "friendly_name": "Birth of Charles Lindbergh",
+        "year": 1902,
+        "description": "The American aviator who made the first solo nonstop flight across the Atlantic.",
+        "score": 2,
+        "shared": [
+          "across",
+          "atlantic"
+        ]
+      },
+      {
+        "name": "birth-enrico-fermi",
+        "friendly_name": "Birth of Enrico Fermi",
+        "year": 1901,
+        "description": "The Italian physicist who built the first nuclear reactor and pioneered the atomic age.",
+        "score": 1,
+        "shared": [
+          "italian"
+        ]
+      },
+      {
+        "name": "assassination-of-mckinley",
+        "friendly_name": "Assassination of McKinley",
+        "year": 1901,
+        "description": "President William McKinley was shot by anarchist Leon Czolgosz at the Pan-American Exposition, making Theodore Roosevelt president.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "picasso-blue-period",
+        "friendly_name": "Picasso's Blue Period Begins",
+        "year": 1901,
+        "description": "Picasso began painting in shades of blue following a friend's suicide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nobel-prizes-first",
+        "friendly_name": "First Nobel Prizes Awarded",
+        "year": 1901,
+        "description": "The first Nobel Prizes were awarded in Stockholm and Oslo.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "queen-victoria-dies",
+        "friendly_name": "Queen Victoria Dies",
+        "year": 1901,
+        "description": "Queen Victoria died after 63 years on the throne, ending the Victorian era.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1907,
+    "title": "UPS Starts as a Messenger Service",
+    "candidates": [
+      {
+        "name": "first-woman-in-parliament",
+        "friendly_name": "First Woman Elected to Parliament",
+        "year": 1907,
+        "description": "Finland became the first country to elect women to national parliament, a global first.",
+        "score": 1,
+        "shared": [
+          "global"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "picasso-demoiselles",
+        "friendly_name": "Les Demoiselles d'Avignon Painted",
+        "year": 1907,
+        "description": "Picasso completed his revolutionary proto-Cubist painting.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "boy-scouts-founded",
+        "friendly_name": "Boy Scouts Founded",
+        "year": 1907,
+        "description": "Robert Baden-Powell founded the Boy Scouts in the United Kingdom.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "triple-entente",
+        "friendly_name": "Triple Entente",
+        "year": 1907,
+        "description": "Britain, France, and Russia aligned against the Triple Alliance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bakelite-plastic",
+        "friendly_name": "Bakelite Plastic Invented",
+        "year": 1907,
+        "description": "Leo Baekeland invented Bakelite, the first fully synthetic plastic that could be molded into any shape.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1911,
+    "title": "First Official Airmail Flight",
+    "candidates": [
+      {
+        "name": "quimby-channel-flight",
+        "friendly_name": "Quimby Flies the Channel Solo",
+        "year": 1912,
+        "description": "Harriet Quimby, the first American woman to hold a pilot's license, flew solo across the English Channel.",
+        "score": 2,
+        "shared": [
+          "flight",
+          "pilot"
+        ]
+      },
+      {
+        "name": "birth-mother-teresa",
+        "friendly_name": "Birth of Mother Teresa",
+        "year": 1910,
+        "description": "The Albanian-Indian nun who served Kolkata's poor and was later canonized as a Catholic saint.",
+        "score": 1,
+        "shared": [
+          "indian"
+        ]
+      },
+      {
+        "name": "indentured-labor-diaspora",
+        "friendly_name": "Indian Indentured Diaspora",
+        "year": 1834,
+        "year_end": 1917,
+        "description": "Indian indentured laborers were shipped to colonies worldwide, settling the Caribbean, Fiji, and beyond.",
+        "score": 1,
+        "shared": [
+          "indian"
+        ]
+      },
+      {
+        "name": "chinese-revolution",
+        "friendly_name": "Chinese Revolution",
+        "year": 1911,
+        "year_end": 1912,
+        "description": "Revolutionaries overthrew the Qing Dynasty, establishing the Republic of China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "unemployment-benefits",
+        "friendly_name": "Unemployment Insurance",
+        "year": 1911,
+        "description": "Britain's National Insurance Act created the first compulsory unemployment insurance system, covering certain industries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maternity-leave",
+        "friendly_name": "Maternity Benefit Act",
+        "year": 1911,
+        "description": "Britain's National Insurance Act included maternity benefits, providing one of the first state-funded supports for new mothers.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1917,
+    "title": "The Zimmermann Telegram",
+    "candidates": [
+      {
+        "name": "zimmermann-telegram",
+        "friendly_name": "Zimmermann Telegram",
+        "year": 1917,
+        "description": "German offer of alliance to Mexico against the US was intercepted, helping push America into World War I.",
+        "score": 8,
+        "shared": [
+          "zimmermann",
+          "telegram",
+          "german",
+          "alliance",
+          "mexico",
+          "intercepted",
+          "america",
+          "war"
+        ]
+      },
+      {
+        "name": "us-enters-world-war-i",
+        "friendly_name": "US Enters World War I",
+        "year": 1917,
+        "description": "The United States declared war on Germany after unrestricted submarine warfare and the Zimmermann Telegram, tipping the balance toward Allied victory.",
+        "score": 4,
+        "shared": [
+          "zimmermann",
+          "telegram",
+          "toward",
+          "war"
+        ]
+      },
+      {
+        "name": "persian-famine",
+        "friendly_name": "Persian Famine",
+        "year": 1917,
+        "year_end": 1919,
+        "description": "World War I and occupation caused a famine killing two million Persians.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "house-of-windsor-founded",
+        "friendly_name": "House of Windsor Founded",
+        "year": 1917,
+        "description": "George V renounced his family's German titles and renamed the royal house Windsor amid wartime anti-German feeling.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "wwi-end",
+        "friendly_name": "World War I Ends",
+        "year": 1918,
+        "description": "The armistice was signed ending the Great War after four years of conflict.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "finnish-civil-war-begins",
+        "friendly_name": "Finnish Civil War Begins",
+        "year": 1918,
+        "description": "The Finnish Civil War began between Red Guards and White Guards.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "dada-movement",
+        "friendly_name": "Dada Movement Begins",
+        "year": 1916,
+        "description": "Artists in Zurich launched an anti-art movement in response to World War I.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "german-revolution-1918",
+        "friendly_name": "German Revolution",
+        "year": 1918,
+        "description": "Revolution ended the German Empire and Kaiser Wilhelm II fled, establishing the Weimar Republic.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "tank-invented",
+        "friendly_name": "Tank Introduced in Battle",
+        "year": 1916,
+        "description": "The British Mark I tank was first used in battle during World War I at the Somme.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "first-pga-championship-1916",
+        "friendly_name": "First PGA Championship",
+        "year": 1916,
+        "description": "Jim Barnes won the first PGA Championship at Siwanoy Country Club the same year the PGA of America was founded.",
+        "score": 1,
+        "shared": [
+          "america"
+        ]
+      },
+      {
+        "name": "first-copa-america-1916",
+        "friendly_name": "First Copa América",
+        "year": 1916,
+        "description": "The South American Championship, later Copa América, was first held, becoming football's oldest continental tournament.",
+        "score": 1,
+        "shared": [
+          "america"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1918,
+    "title": "Cher Ami Delivers Her Message",
+    "candidates": [
+      {
+        "name": "battle-passchendaele",
+        "friendly_name": "Battle of Passchendaele",
+        "year": 1917,
+        "description": "British troops fought through mud for months to gain five miles at Ypres.",
+        "score": 1,
+        "shared": [
+          "through"
+        ]
+      },
+      {
+        "name": "boston-molasses-flood",
+        "friendly_name": "Boston Molasses Flood",
+        "year": 1919,
+        "description": "A molasses tank burst, sending a deadly wave through Boston streets.",
+        "score": 1,
+        "shared": [
+          "through"
+        ]
+      },
+      {
+        "name": "house-of-windsor-founded",
+        "friendly_name": "House of Windsor Founded",
+        "year": 1917,
+        "description": "George V renounced his family's German titles and renamed the royal house Windsor amid wartime anti-German feeling.",
+        "score": 1,
+        "shared": [
+          "wartime"
+        ]
+      },
+      {
+        "name": "astor-takes-commons-seat",
+        "friendly_name": "Astor Takes Her Commons Seat",
+        "year": 1919,
+        "description": "Nancy Astor was sworn in as a member of Parliament, becoming the first woman to sit in the House of Commons.",
+        "score": 1,
+        "shared": [
+          "her"
+        ]
+      },
+      {
+        "name": "wwi-end",
+        "friendly_name": "World War I Ends",
+        "year": 1918,
+        "description": "The armistice was signed ending the Great War after four years of conflict.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "red-army-formed",
+        "friendly_name": "Red Army Founded",
+        "year": 1918,
+        "description": "Trotsky organized the Workers' and Peasants' Red Army to defend the Revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1927,
+    "title": "Transatlantic Phone Service Opens",
+    "candidates": [
+      {
+        "name": "spirit-of-st-louis",
+        "friendly_name": "Lindbergh Crosses Atlantic",
+        "year": 1927,
+        "description": "Charles Lindbergh made the first solo nonstop transatlantic flight.",
+        "score": 1,
+        "shared": [
+          "transatlantic"
+        ]
+      },
+      {
+        "name": "nurburgring-opens-1927",
+        "friendly_name": "Nurburgring Opens",
+        "year": 1927,
+        "description": "The Nurburgring opened in Germany's Eifel mountains, its 22 km Nordschleife later nicknamed 'The Green Hell'.",
+        "score": 1,
+        "shared": [
+          "opens"
+        ]
+      },
+      {
+        "name": "show-boat-premieres",
+        "friendly_name": "Show Boat Opens on Broadway",
+        "year": 1927,
+        "description": "A Broadway show about performers on a Mississippi riverboat fused songs with a serious plot, reshaping the American stage musical.",
+        "score": 1,
+        "shared": [
+          "opens"
+        ]
+      },
+      {
+        "name": "first-world-table-tennis-champs-1926",
+        "friendly_name": "First World Table Tennis Champs",
+        "year": 1926,
+        "description": "London hosted the first World Table Tennis Championships as the International Table Tennis Federation was founded the same year.",
+        "score": 1,
+        "shared": [
+          "london"
+        ]
+      },
+      {
+        "name": "roaring-twenties-era",
+        "friendly_name": "Roaring Twenties Begin",
+        "year": 1920,
+        "year_end": 1929,
+        "description": "Post-WWI prosperity fueled jazz, flappers, and cultural liberation across America and Europe.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "first-talking-film",
+        "friendly_name": "First Talking Film Released",
+        "year": 1927,
+        "description": "The Jazz Singer became the first feature-length film with synchronized dialogue.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1935,
+    "title": "China Clipper's Pacific Airmail",
+    "candidates": [
+      {
+        "name": "first-television-broadcast",
+        "friendly_name": "First Public Television Broadcast",
+        "year": 1936,
+        "description": "The BBC began the world's first regular high-definition television service.",
+        "score": 2,
+        "shared": [
+          "regular",
+          "service"
+        ]
+      },
+      {
+        "name": "radar-developed",
+        "friendly_name": "Radar Developed",
+        "year": 1935,
+        "description": "Robert Watson-Watt demonstrated radar, which proved crucial for air defense in World War II.",
+        "score": 1,
+        "shared": [
+          "air"
+        ]
+      },
+      {
+        "name": "dust-bowl-migration",
+        "friendly_name": "Dust Bowl Migration",
+        "year": 1935,
+        "year_end": 1940,
+        "description": "Drought drove hundreds of thousands of farmers to flee the Great Plains for California.",
+        "score": 1,
+        "shared": [
+          "california"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "alcoholics-anonymous",
+        "friendly_name": "Alcoholics Anonymous Founded",
+        "year": 1935,
+        "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "social-security-act",
+        "friendly_name": "Social Security Act Signed",
+        "year": 1935,
+        "description": "The US established its social insurance program for the elderly.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1956,
+    "title": "First Transatlantic Telephone Cable",
+    "candidates": [
+      {
+        "name": "interstate-highway-begins",
+        "friendly_name": "Interstate Highway System Begins",
+        "year": 1956,
+        "description": "Construction began on America's national highway network.",
+        "score": 1,
+        "shared": [
+          "america"
+        ]
+      },
+      {
+        "name": "first-european-cup-1956",
+        "friendly_name": "First European Cup",
+        "year": 1956,
+        "description": "Real Madrid beat Stade de Reims 4-3 in Paris to win the first European Cup, Europe's premier club competition.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "ss-ideal-x-sails",
+        "friendly_name": "SS Ideal X Sails",
+        "year": 1956,
+        "description": "The converted tanker Ideal X carried dozens of truck trailers from Newark to Houston on the first commercial voyage of a container ship.",
+        "score": 1,
+        "shared": [
+          "dozens"
+        ]
+      },
+      {
+        "name": "suez-crisis",
+        "friendly_name": "Suez Crisis",
+        "year": 1956,
+        "year_end": 1957,
+        "description": "Britain and France failed to seize the Suez Canal, marking the end of European colonialism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hungarian-revolution",
+        "friendly_name": "Hungarian Revolution",
+        "year": 1956,
+        "description": "Soviet tanks crushed a popular uprising against communist rule in Hungary.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "elvis-ed-sullivan",
+        "friendly_name": "Elvis on Ed Sullivan",
+        "year": 1956,
+        "description": "Elvis Presley's television appearance launched rock and roll into the mainstream.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1962,
+    "title": "Telstar Relays Live Television",
+    "candidates": [
+      {
+        "name": "communications-satellite",
+        "friendly_name": "First Communications Satellite",
+        "year": 1962,
+        "description": "Telstar became the first active communications satellite, relaying live television across the Atlantic.",
+        "score": 5,
+        "shared": [
+          "telstar",
+          "live",
+          "television",
+          "communications",
+          "satellite"
+        ]
+      },
+      {
+        "name": "cuban-missile-crisis-1962",
+        "friendly_name": "Cuban Missile Crisis",
+        "year": 1962,
+        "description": "A 13-day nuclear standoff between the US and Soviet Union over missiles in Cuba brought the world to the brink of war.",
+        "score": 1,
+        "shared": [
+          "between"
+        ]
+      },
+      {
+        "name": "kvly-tv-mast-erected",
+        "friendly_name": "KVLY-TV Mast Erected",
+        "year": 1963,
+        "description": "A guyed television transmission mast rose in rural North Dakota, becoming the tallest human made structure anywhere on Earth.",
+        "score": 1,
+        "shared": [
+          "television"
+        ]
+      },
+      {
+        "name": "operation-chopper-vietnam",
+        "friendly_name": "Operation Chopper Vietnam",
+        "year": 1962,
+        "description": "Operation Chopper, the first American combat mission in the Vietnam War, takes place.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "warhol-soup-cans",
+        "friendly_name": "Warhol's Campbell's Soup Cans",
+        "year": 1962,
+        "description": "Andy Warhol exhibited his iconic pop art series.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "silent-spring-published",
+        "friendly_name": "Silent Spring Published",
+        "year": 1962,
+        "description": "Rachel Carson's book on pesticide dangers launched the modern environmental movement.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1963,
+    "title": "ZIP Codes Come to American Mail",
+    "candidates": [
+      {
+        "name": "compact-cassette",
+        "friendly_name": "Compact Cassette Invented",
+        "year": 1963,
+        "description": "Philips introduced the compact cassette tape, making portable music recording and playback widely accessible.",
+        "score": 1,
+        "shared": [
+          "introduced"
+        ]
+      },
+      {
+        "name": "ascii-character-standard",
+        "friendly_name": "ASCII Code Standardized",
+        "year": 1963,
+        "description": "ASCII set a standard numeric code for letters and symbols, letting computers share text.",
+        "score": 1,
+        "shared": [
+          "letters"
+        ]
+      },
+      {
+        "name": "great-train-robbery-buckinghamshire",
+        "friendly_name": "The Great Train Robbery",
+        "year": 1963,
+        "description": "A gang ambushed a Royal Mail train in Buckinghamshire and made off with more than two and a half million pounds in banknotes.",
+        "score": 1,
+        "shared": [
+          "mail"
+        ]
+      },
+      {
+        "name": "operation-chopper-vietnam",
+        "friendly_name": "Operation Chopper Vietnam",
+        "year": 1962,
+        "description": "Operation Chopper, the first American combat mission in the Vietnam War, takes place.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "beatles-ed-sullivan",
+        "friendly_name": "Beatles on Ed Sullivan",
+        "year": 1964,
+        "description": "The Beatles' American TV debut launched the British Invasion.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "alaska-earthquake",
+        "friendly_name": "Great Alaska Earthquake",
+        "year": 1964,
+        "description": "The most powerful earthquake in North American history struck Alaska.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "shinkansen-opens",
+        "friendly_name": "Shinkansen Opens",
+        "year": 1964,
+        "description": "Japan launched the world's first high-speed rail line, the Bullet Train.",
+        "score": 1,
+        "shared": [
+          "speed"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1969,
+    "title": "DHL Begins Express Courier Service",
+    "candidates": [
+      {
+        "name": "world-trade-center-begins",
+        "friendly_name": "World Trade Center Begun",
+        "year": 1968,
+        "description": "Work began on the Twin Towers in Lower Manhattan.",
+        "score": 2,
+        "shared": [
+          "begins",
+          "began"
+        ]
+      },
+      {
+        "name": "concorde-maiden-flight",
+        "friendly_name": "Concorde First Flight",
+        "year": 1969,
+        "description": "The Concorde supersonic airliner made its maiden flight, flying passengers at twice the speed of sound.",
+        "score": 1,
+        "shared": [
+          "flying"
+        ]
+      },
+      {
+        "name": "battle-khe-sanh-begins",
+        "friendly_name": "Battle of Khe Sanh Begins",
+        "year": 1968,
+        "description": "One of the most publicized and controversial battles of the Vietnam War begins.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "prague-spring-begins",
+        "friendly_name": "Prague Spring Begins",
+        "year": 1968,
+        "description": "Alexander Dubcek comes to power in Czechoslovakia, beginning the Prague Spring reforms.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "boeing-747-enters-service",
+        "friendly_name": "Boeing 747 Enters Service",
+        "year": 1970,
+        "description": "The worlds first jumbo jet enters commercial service for Pan Am from New York to London.",
+        "score": 1,
+        "shared": [
+          "service"
+        ]
+      },
+      {
+        "name": "tennis-open-era-begins-1968",
+        "friendly_name": "Tennis Open Era Begins",
+        "year": 1968,
+        "description": "Tennis entered the Open era, letting professionals and amateurs compete together at the Grand Slam tournaments.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "alekseyev-600kg-total-1970",
+        "friendly_name": "Alekseyev Tops 600 kg Total",
+        "year": 1970,
+        "description": "Soviet weightlifter Vasily Alekseyev became the first man to total 600 kg across the three lifts, starting a run of 80 world records.",
+        "score": 1,
+        "shared": [
+          "starting"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1973,
+    "title": "FedEx Begins Deliveries",
+    "candidates": [
+      {
+        "name": "super-tornado-outbreak",
+        "friendly_name": "Super Tornado Outbreak",
+        "year": 1974,
+        "description": "148 tornadoes tore across 13 US states in one of the most violent outbreaks ever recorded.",
+        "score": 2,
+        "shared": [
+          "across",
+          "states"
+        ]
+      },
+      {
+        "name": "uk-joins-eec",
+        "friendly_name": "UK Joins EEC",
+        "year": 1973,
+        "description": "United Kingdom joined the European Economic Community after two earlier applications were vetoed by France.",
+        "score": 1,
+        "shared": [
+          "united"
+        ]
+      },
+      {
+        "name": "disco-era-begins",
+        "friendly_name": "Disco Era Begins",
+        "year": 1974,
+        "description": "Disco music emerged from underground clubs to dominate popular culture.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "yom-kippur-war",
+        "friendly_name": "Yom Kippur War",
+        "year": 1973,
+        "description": "Egypt and Syria launched a surprise attack on Israel during the Jewish holiday.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chilean-coup",
+        "friendly_name": "Chilean Coup",
+        "year": 1973,
+        "description": "General Pinochet overthrew elected socialist President Salvador Allende with US support, beginning 17 years of military dictatorship.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "roe-v-wade",
+        "friendly_name": "Roe v. Wade Decision",
+        "year": 1973,
+        "description": "The Supreme Court legalized abortion nationwide in a landmark ruling.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1988,
+    "title": "First Fibre-Optic Atlantic Cable",
+    "candidates": [
+      {
+        "name": "sunshine-skyway-bridge",
+        "friendly_name": "Sunshine Skyway Bridge Opens",
+        "year": 1987,
+        "description": "The cable-stayed bridge replaced a structure hit by a ship in Tampa Bay.",
+        "score": 1,
+        "shared": [
+          "cable"
+        ]
+      },
+      {
+        "name": "vietnamese-boat-people",
+        "friendly_name": "Vietnamese Boat People",
+        "year": 1978,
+        "year_end": 1995,
+        "description": "Hundreds of thousands fled Vietnam by sea after the war, resettling across the world as refugees.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "iran-iraq-war-ends",
+        "friendly_name": "Iran-Iraq War Ends",
+        "year": 1988,
+        "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "seoul-olympics-1988",
+        "friendly_name": "Seoul Olympics",
+        "year": 1988,
+        "description": "South Korea hosted the Olympics, symbolizing its emergence as an economic power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "soviet-withdrawal-afghanistan",
+        "friendly_name": "Soviet Withdrawal from Afghanistan",
+        "year": 1988,
+        "year_end": 1989,
+        "description": "Soviet Union began withdrawing troops from Afghanistan after nine years of costly war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lockerbie-bombing",
+        "friendly_name": "Lockerbie Bombing",
+        "year": 1988,
+        "description": "A terrorist bomb destroyed Pan Am Flight 103 over Scotland, killing 270.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 2006,
+    "title": "Western Union Ends Telegram Service",
+    "candidates": [
+      {
+        "name": "netflix-streaming-launches",
+        "friendly_name": "Netflix Streaming Launches",
+        "year": 2007,
+        "description": "Netflix launched its streaming service, beginning the shift from physical media to digital.",
+        "score": 1,
+        "shared": [
+          "service"
+        ]
+      },
+      {
+        "name": "chinook-solves-checkers",
+        "friendly_name": "Checkers Solved by Chinook",
+        "year": 2007,
+        "description": "Researchers proved that perfect play at checkers ends in a draw, the largest game solved by computer to that point.",
+        "score": 1,
+        "shared": [
+          "ends"
+        ]
+      },
+      {
+        "name": "twitter-launched",
+        "friendly_name": "Twitter Launched",
+        "year": 2006,
+        "description": "The microblogging platform began with its 140-character posts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "montenegro-independence",
+        "friendly_name": "Montenegro Independence",
+        "year": 2006,
+        "description": "Montenegro voted for independence from Serbia, completing Yugoslavia's dissolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "north-korea-nuclear-test",
+        "friendly_name": "North Korea Nuclear Test",
+        "year": 2006,
+        "description": "North Korea conducted its first underground nuclear test, becoming the eighth country to detonate a nuclear device.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cloud-computing-amazon",
+        "friendly_name": "Cloud Computing (Amazon)",
+        "year": 2006,
+        "description": "Amazon Web Services launched, pioneering scalable on-demand cloud computing infrastructure.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 2013,
+    "title": "India Sends Its Last Telegram",
+    "candidates": [
+      {
+        "name": "black-lives-matter-founded",
+        "friendly_name": "Black Lives Matter Founded",
+        "year": 2013,
+        "description": "The movement began after Trayvon Martin's killer was acquitted.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "death-nelson-mandela",
+        "friendly_name": "Death of Nelson Mandela",
+        "year": 2013,
+        "description": "The anti-apartheid leader who, after 27 years in prison, became South Africa's first Black president.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "isis-caliphate",
+        "friendly_name": "ISIS Declares Caliphate",
+        "year": 2014,
+        "description": "The Islamic State declared a caliphate across parts of Iraq and Syria.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "tesla-model-s",
+        "friendly_name": "Tesla Model S Released",
+        "year": 2012,
+        "description": "Tesla released the Model S, the first mainstream luxury electric vehicle with long range.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "india-mars-mission",
+        "friendly_name": "India's Mars Orbiter Mission",
+        "year": 2014,
+        "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "armstrong-stripped-titles-2012",
+        "friendly_name": "Armstrong Stripped of Titles",
+        "year": 2012,
+        "description": "Lance Armstrong was stripped of his seven Tour de France titles and banned for life after a US doping investigation.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "first-college-football-playoff",
+        "friendly_name": "First College Football Playoff",
+        "year": 2014,
+        "description": "The four-team College Football Playoff debuted, replacing the BCS, with Ohio State winning the first title.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "richard-iii-grave-found",
+        "friendly_name": "Richard III Found Under Car Park",
+        "year": 2012,
+        "description": "Archaeologists dug up a council car park in Leicester and found the lost grave of the last Plantagenet king of England.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "solid-state-lidar",
+        "friendly_name": "Solid-State Lidar",
+        "year": 2010,
+        "year_end": 2019,
+        "description": "Compact laser-based sensors without moving parts, enabling autonomous vehicle navigation.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2016,
+    "title": "Amazon Delivers a Parcel by Drone",
+    "candidates": [
+      {
+        "name": "artificial-pancreas",
+        "friendly_name": "Artificial Pancreas",
+        "year": 2016,
+        "description": "First commercially available closed-loop system automating insulin delivery for diabetes patients.",
+        "score": 1,
+        "shared": [
+          "delivery"
+        ]
+      },
+      {
+        "name": "apple-park",
+        "friendly_name": "Apple Park Completed",
+        "year": 2017,
+        "description": "Apple's spaceship-shaped headquarters opened in Cupertino.",
+        "score": 1,
+        "shared": [
+          "completed"
+        ]
+      },
+      {
+        "name": "brexit-vote",
+        "friendly_name": "Brexit Referendum",
+        "year": 2016,
+        "description": "The United Kingdom voted to leave the European Union.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nice-truck-attack",
+        "friendly_name": "Nice Truck Attack",
+        "year": 2016,
+        "description": "A terrorist drove a truck through Bastille Day crowds on Nice's Promenade des Anglais, killing 86 people in an ISIS-claimed attack.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pulse-nightclub-shooting",
+        "friendly_name": "Pulse Nightclub Shooting",
+        "year": 2016,
+        "description": "Gunman killed 49 people at gay nightclub in Orlando in deadliest US attack since 9/11.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gotthard-base-tunnel",
+        "friendly_name": "Gotthard Base Tunnel Opens",
+        "year": 2016,
+        "description": "The world's longest railway tunnel opened through the Swiss Alps.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]
