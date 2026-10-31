@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T05:38:17.198Z",
+  "updated_at": "2026-10-31T06:07:36.145Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-10-31T04:07:55.681Z"
     },
     "wang-shuhe-pulse-classic": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The bamboo slips carry rows of distinct, character-like writing in the foreground, which counts as painted text. Repaint the slips as plain bamboo strips with no marks, or only faint unreadable texture.",
+      "reason": null,
       "sha256": "cda4d91f85b3410f122a438a3b3d5a3ba1df4709f32e096a6bfabfcdad810273",
-      "updated_at": "2026-10-31T05:09:00.503Z"
+      "updated_at": "2026-10-31T06:07:35.842Z"
     },
     "santorio-body-thermometer": {
       "state": "qc-pass",
@@ -86,67 +86,67 @@
       "updated_at": "2026-10-31T04:07:55.944Z"
     },
     "forssmann-heart-catheter": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "dd073e31ec04502456504accf4e97253db8d4042e3850a92dd5ec07b88f91bd2",
-      "updated_at": "2026-10-31T05:12:42.897Z"
+      "updated_at": "2026-10-31T06:07:35.874Z"
     },
     "apgar-score-newborns": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f7c5b7dc7702eb20984b1b8ff3188231748c9d7fa409286002ec941956673b89",
-      "updated_at": "2026-10-31T05:15:13.621Z"
+      "updated_at": "2026-10-31T06:07:35.904Z"
     },
     "hirschowitz-fibre-optic-endoscope": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9560bfd612b9437b06fd6001f3a3609b2620ba661d17b9943289374600ff6993",
-      "updated_at": "2026-10-31T05:17:45.507Z"
+      "updated_at": "2026-10-31T06:07:35.938Z"
     },
     "first-ct-scan-patient": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The scanner housing has a painted plate reading 'EMI'. Remove the lettering so the machine is unmarked.",
       "sha256": "f2cc314265db1b38a7cee66db4887596c75fbc5c65eeafe2081eedbd7f714d61",
-      "updated_at": "2026-10-31T05:20:16.599Z"
+      "updated_at": "2026-10-31T06:07:35.971Z"
     },
     "home-pregnancy-test-launched": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "efba98936c9b8673abfcf856e02d0d228f258f48f89fd0d2c841adea4345e8d6",
-      "updated_at": "2026-10-31T05:22:47.613Z"
+      "updated_at": "2026-10-31T06:07:36.002Z"
     },
     "first-mri-human-scan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0f2922fa284b2d1e1ae0dace3399b31eb746e25d4521aee65ee13a5f66cb71de",
-      "updated_at": "2026-10-31T05:29:28.465Z"
+      "updated_at": "2026-10-31T06:07:36.037Z"
     },
     "first-hiv-blood-test": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7abb3dad32a3a947760cccd45f6b998dd95fd859f4186245b50483b9d4983894",
-      "updated_at": "2026-10-31T05:33:09.190Z"
+      "updated_at": "2026-10-31T06:07:36.073Z"
     },
     "fmri-brain-imaging": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "14f874623ea13deac8e6915c2ef55140ae41eee85716a3dbe4eec8d7a89f593d",
-      "updated_at": "2026-10-31T05:35:41.605Z"
+      "updated_at": "2026-10-31T06:07:36.110Z"
     },
     "capsule-endoscopy-camera-pill": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b0ec1e0d41cadd9356fa2dace0bb325c9615f5c207c41055de4c84c17248661d",
-      "updated_at": "2026-10-31T05:38:17.198Z"
+      "updated_at": "2026-10-31T06:07:36.145Z"
     },
     "smartwatch-ecg-approved": {
       "state": "pending",

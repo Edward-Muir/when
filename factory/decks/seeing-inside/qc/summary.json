@@ -14,11 +14,11 @@
     "description": "Painted interior scene. A bearded man in a brown draped tunic sits on a low wooden stool, holding the wrist and open hand of a pale-robed woman who reclines or sits on the left, with her eyes half closed. Behind them is a dark stone wall with shelves holding rolled scrolls, bottles and a jug. On the right a lit candle stands beside a brass bowl on a small wooden table, and a larger brass vessel above drips water into it. The lighting is dim and warm, with no visible frame or text."
   },
   "wang-shuhe-pulse-classic": {
-    "state": "qc-fail",
-    "reason": "The bamboo slips carry rows of distinct, character-like writing in the foreground, which counts as painted text. Repaint the slips as plain bamboo strips with no marks, or only faint unreadable texture.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An East Asian man with a topknot, in grey layered robes, sits at a wooden table and presses fingers to the wrist of a pale arm reaching in from the left, which rests on a small cushion. A bamboo-slip scroll lies on the table at right, its slips covered in rows of clearly drawn Chinese-style characters. Dark room with carved wooden cabinet and chair. The painting fills the frame with no border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A bearded man with a topknot, in a grey robe, sits at a wooden table in a dark room, pressing two fingers onto a seated younger person's outstretched wrist. A candle flame glows at the left edge. A small cushion sits under the wrist, a brush and ink stone lie on the table, a bundle of bamboo slips is unrolled beside them, and a ceramic jar and bowl sit at the right. The painting is an oil-style scene with no visible text, no frame and no blood."
   },
   "santorio-body-thermometer": {
     "state": "qc-pass",
@@ -68,5 +68,68 @@
     "by": "review",
     "attempts": 1,
     "description": "A brass laboratory microscope with a dark body stands on a wooden desk in a dim room, lit by a lamp at upper left. Beside it are small wooden boxes, a dropper bottle, and glass slides laid in a row, plus a handwritten paper at lower left. A bright circular inset above shows a field of pink and blue stained cells, with one darker purple cluster of misshapen cells at its centre. The style is an oil painting, edge to edge, with no frame."
+  },
+  "forssmann-heart-catheter": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painting in dark, oil-like brushwork. Center-left, a backlit chest X-ray on a light box shows the ribcage, spine and a thin pale line curving down through the chest. Two dark silhouetted hands hold the edges of the film. In the foreground a stainless steel tray holds a coiled red-brown tube, with a syringe, small glass vials and forceps on the table beside it. Only the dim edge of the light box and the film's dark rim appear, with no text or signature visible."
+  },
+  "apgar-score-newborns": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A crying newborn lies on a metal tray under a dark, moody lamp. A gloved hand, cuff of a green-grey surgical gown, reaches in and holds the baby's tiny fist. A white cloth drapes the baby's hips. Behind are a small dial box, bottles and dim equipment in a dark room. The painting is an oil-style image that fills the frame edge to edge, with no visible text."
+  },
+  "hirschowitz-fibre-optic-endoscope": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted still life in warm, dark tones. A long, flexible tube coils in loops across a dark table, with a glowing orange tip at one end and a splayed bundle of glowing fibres at the other. Behind it sit a brass microscope, glassware and an open wooden case holding instruments. A metal optical eyepiece with knobs lies in the lower right. No visible text, frame or border; the painting fills the square."
+  },
+  "first-ct-scan-patient": {
+    "state": "qc-fail",
+    "reason": "The scanner housing has a painted plate reading 'EMI'. Remove the lettering so the machine is unmarked.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark oil painting of a technician seated at a CRT console showing a bright brain cross-section, while a patient lies on a table with their head inside a large boxy scanner with a glowing ring opening. Racks of dials and cables fill the room. A small plate on top of the scanner reads 'EMI'. No frame or border, nothing graphic."
+  },
+  "home-pregnancy-test-launched": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted still life of a bathroom shelf in warm, dim light. An open silver case with a round mirror and a small test tube in a stand sits at the centre, with a glass dropper lying across the shelf and a small glass vial at the left edge. Behind it an open cardboard box with cut compartments, a tiled wall and a patterned wallpaper panel, and a roll of tissue on the floor at the bottom. No people, no visible text, no frame; the painting fills the image edge to edge."
+  },
+  "first-mri-human-scan": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large ring-shaped metal magnet, wrapped in copper coils and bolted to a cylindrical tank on top, sits in a dim workshop-like room. A flat metal patient platform extends toward the open bore. Cables run across the frame and benches with tools line the background. No people, no visible text."
+  },
+  "first-hiv-blood-test": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painterly, dark-toned scene. A gloved hand holds a pipette above a clear plastic multi-well plate, with an amber liquid being dispensed into the wells. Behind it, several blood bags hang from a metal stand on the right, with dark red blood and tubing. A second gloved hand rests at the lower right on the bench. Beakers, test tubes in a rack and glassware sit in the shadowy background. No visible text, frame or border; the painting fills the image edge to edge."
+  },
+  "fmri-brain-imaging": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted, dark-toned brain shown in side profile sits in front of a circular machine bore with a glowing ring. Several spots on the cortex glow orange-red, as if active. Thin translucent horizontal rings wrap around the brain, and small panel markings appear on the scanner's side edges. The background is near-black with visible brushwork, and the image fills the frame edge to edge."
+  },
+  "capsule-endoscopy-camera-pill": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painting of a small transparent cylindrical capsule with a lens and ring of white LEDs at one end, resting on the tip of a human thumb. The capsule's internal components are visible through the clear shell. The background is a near-black dark brown, and the thumb and hand are lit warmly from the left. There is no visible text, frame or border, and the painting fills the image edge to edge."
   }
 }
