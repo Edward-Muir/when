@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T20:07:41.953Z",
+  "updated_at": "2026-10-31T21:09:13.262Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-31T20:07:41.953Z"
     },
     "iberian-peninsula-blackout": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d54da2e9fb2049304a77d343015897cbec82b796315f937d91c8c3ce21ea3e00",
+      "updated_at": "2026-10-31T21:09:13.262Z"
     }
   }
 }
