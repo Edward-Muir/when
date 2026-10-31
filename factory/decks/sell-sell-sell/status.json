@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-30T16:07:27.054Z",
+  "updated_at": "2026-10-31T00:09:44.346Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-10-30T16:07:27.054Z"
     },
     "apple-1984-super-bowl-ad": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "597043ff336afe4dc4d279b15b27917f3d1868fd62791380a9da3f9e84659c52",
+      "updated_at": "2026-10-31T00:09:44.346Z"
     },
     "nike-just-do-it-slogan": {
       "state": "pending",
