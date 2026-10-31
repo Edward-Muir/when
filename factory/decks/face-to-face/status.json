@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T11:30:23.624Z",
+  "updated_at": "2026-10-31T11:33:03.371Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-10-31T11:30:23.624Z"
     },
     "hasekura-embassy-rome": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7a1c22d19a425e8fb64018d10df765911d9efeffc0b5d329e95e973be6843350",
+      "updated_at": "2026-10-31T11:33:03.371Z"
     },
     "siamese-embassy-louis-xiv": {
       "state": "pending",
