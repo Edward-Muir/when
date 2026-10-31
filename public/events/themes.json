@@ -12868,7 +12868,11 @@
     "year": -138,
     "category": "diplomacy",
     "description": "A Han envoy set out across the steppe to seek allies against the nomads and was held captive for years.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "cleopatra-meets-antony-tarsus",
@@ -12876,7 +12880,13 @@
     "year": -41,
     "category": "diplomacy",
     "description": "The Egyptian queen sailed up the river in a gilded barge to meet the Roman general and win him as an ally.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Italy",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "roman-embassy-han-court",
@@ -12884,7 +12894,11 @@
     "year": 166,
     "category": "diplomacy",
     "description": "Travellers claiming to represent a Roman emperor reached the Chinese capital by sea and presented ivory and horn.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China",
+      "Italy"
+    ]
   },
   {
     "name": "abul-abbas-elephant-charlemagne",
@@ -12892,7 +12906,11 @@
     "year": 802,
     "category": "diplomacy",
     "description": "The caliph's gift of an elephant named Abul-Abbas arrived at the Frankish emperor's court after a long journey.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "Iraq"
+    ]
   },
   {
     "name": "ibn-fadlan-volga-embassy",
@@ -12900,7 +12918,12 @@
     "year": 921,
     "category": "diplomacy",
     "description": "A caliph's envoy travelled north to the king of the Volga Bulgars and left a vivid account of the Norse traders he met.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "carpini-mission-great-khan",
@@ -12908,7 +12931,11 @@
     "year": 1246,
     "category": "diplomacy",
     "description": "A Franciscan friar sent by the pope crossed Asia to attend a Mongol ruler's enthronement and deliver a letter.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Mongolia"
+    ]
   },
   {
     "name": "rabban-sauma-embassy-europe",
@@ -12916,7 +12943,12 @@
     "year": 1287,
     "category": "diplomacy",
     "description": "A Chinese-born Nestorian monk sent by the Mongol Il-Khan met kings and the pope seeking an alliance against Muslim rivals.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France",
+      "Iran",
+      "Italy"
+    ]
   },
   {
     "name": "clavijo-embassy-timur",
@@ -12924,7 +12956,11 @@
     "year": 1404,
     "category": "diplomacy",
     "description": "A Castilian envoy was received in a pavilion at Samarkand by the conqueror and wrote a famous account of the journey.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Spain",
+      "Uzbekistan"
+    ]
   },
   {
     "name": "matteo-ricci-enters-beijing",
@@ -12932,7 +12968,10 @@
     "year": 1601,
     "category": "diplomacy",
     "description": "A Jesuit scholar with clocks and maps gained entry to the Forbidden City and an audience at the Ming court.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "hasekura-embassy-rome",
@@ -12940,7 +12979,12 @@
     "year": 1615,
     "category": "diplomacy",
     "description": "A samurai sent by a Japanese lord crossed the Pacific and Atlantic to meet the pope and the king of Spain.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Japan",
+      "Spain"
+    ]
   },
   {
     "name": "siamese-embassy-louis-xiv",
@@ -12948,7 +12992,11 @@
     "year": 1686,
     "category": "diplomacy",
     "description": "Envoys of the king of Siam arrived at Versailles in splendid costume, dazzling the French court.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France",
+      "Thailand"
+    ]
   },
   {
     "name": "peter-great-grand-embassy",
@@ -12956,7 +13004,11 @@
     "year": 1697,
     "category": "diplomacy",
     "description": "The young Russian tsar toured Western Europe incognito, working in shipyards and meeting kings to modernise his country.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "iwakura-mission-west",
@@ -12964,7 +13016,12 @@
     "year": 1871,
     "category": "diplomacy",
     "description": "A large delegation of Japanese leaders visited America and Europe to study modern states and seek treaty revision.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Japan",
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "bjorko-meeting-kaiser-tsar",
@@ -12972,7 +13029,12 @@
     "year": 1905,
     "category": "diplomacy",
     "description": "Two emperors met on a yacht in the Baltic and secretly signed a defensive pact that their ministers soon rejected.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "vienna-summit-kennedy-khrushchev",
@@ -12980,7 +13042,13 @@
     "year": 1961,
     "category": "diplomacy",
     "description": "The young American president and the Soviet premier held a tense two-day summit that left Kennedy shaken.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Austria",
+      "Russia",
+      "United States",
+      "Europe"
+    ]
   },
   {
     "name": "sadat-visits-jerusalem",
@@ -12988,7 +13056,12 @@
     "year": 1977,
     "category": "diplomacy",
     "description": "The Egyptian president flew to Israel and addressed its parliament, the first Arab leader to make such a visit.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "reykjavik-summit-reagan-gorbachev",
@@ -12996,6 +13069,12 @@
     "year": 1986,
     "category": "diplomacy",
     "description": "The American and Soviet leaders met in an Icelandic house and nearly agreed to abolish all nuclear weapons.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iceland",
+      "Russia",
+      "United States",
+      "Europe"
+    ]
   }
 ]
