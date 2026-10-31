@@ -1,0 +1,15 @@
+{
+  "slug": "macdonald-lew-archer-moving-target",
+  "description": "A man in a fedora and dark trench coat stands on a dirt shoulder at a cliff edge, looking up. Beside him is a dark 1940s sedan on a winding coastal road with a guardrail. Above, a white Spanish-style mansion with a red tile roof sits on a hillside among palms, with the ocean and surf to the right. The painting is an oil-style scene with warm, hazy light and no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,241 @@
+{
+  "deck": "whodunit",
+  "name": "Whodunit",
+  "stage": "pr-open",
+  "created_at": "2026-10-21T06:21:49.322Z",
+  "updated_at": "2026-10-22T12:08:31.491Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-21T06:21:49.322Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-22T02:15:40.003Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-22T11:07:04.817Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-22T12:06:51.847Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-22T12:08:31.491Z"
+    }
+  ],
+  "slugs": {
+    "poe-murders-rue-morgue": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9a343d6466c8d46875764039c8d3762874ce34cf329e2bbf3f137e771ecda8fd",
+      "updated_at": "2026-10-22T03:10:42.547Z"
+    },
+    "dickens-bleak-house-inspector-bucket": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8a76e4a35abf435d9a0d2ae9bfd03ea3df05d839e7276ffa07ea8f8aec323921",
+      "updated_at": "2026-10-22T05:07:01.797Z"
+    },
+    "collins-woman-in-white": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7fcc8215b7b8f21ff4e1086932d19045c59aa656502cd93a7717f8cc04d97037",
+      "updated_at": "2026-10-22T03:10:42.578Z"
+    },
+    "collins-the-moonstone": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6ec3029f30e48fa60c640b098703a87c7d8ad67665f5423064649bae3b5bef73",
+      "updated_at": "2026-10-22T03:10:42.609Z"
+    },
+    "doyle-study-in-scarlet-holmes": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1b141adf5909d53a1db211dc7b14535880d2a9aa4e54504b00c85074ca05ad14",
+      "updated_at": "2026-10-22T03:10:42.641Z"
+    },
+    "holmes-strand-scandal-in-bohemia": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7083a1a8d5a83d0dd614212388eacba29057617bba2394e7ff486ad921707e27",
+      "updated_at": "2026-10-22T05:07:01.827Z"
+    },
+    "doyle-hound-of-the-baskervilles": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fe1e77c2af0c0485a7289b6d06de9207671d9ab064b06928d663dee8d13c7b8f",
+      "updated_at": "2026-10-22T03:10:42.670Z"
+    },
+    "leroux-mystery-of-the-yellow-room": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6acd22b810d6e0695bb95c94a6e4dbcc82100b7223f876bfa09094b667671d4b",
+      "updated_at": "2026-10-22T03:10:42.700Z"
+    },
+    "chesterton-father-brown-debut": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0b9c41d765ad541a0192c3bccd2cd009ef76ad6461e39c4d5d50fdc657d28295",
+      "updated_at": "2026-10-22T03:10:42.730Z"
+    },
+    "christie-poirot-debut-styles": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b6c145faf36efaefa77c89661999c0ca18034ac3a0f01b7e1ebe548ac0d48fb5",
+      "updated_at": "2026-10-22T03:10:42.763Z"
+    },
+    "sayers-lord-peter-wimsey-debut": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cdbfc95d52fa06a59650b858531a10b1f3d275decb816a4848ccfb8f333a3613",
+      "updated_at": "2026-10-22T05:07:01.857Z"
+    },
+    "christie-murder-of-roger-ackroyd": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dd7edb578f4561dd1586ef905bb40167408f6d7af146678a40e6ca7bf8082536",
+      "updated_at": "2026-10-22T05:07:01.887Z"
+    },
+    "hammett-the-maltese-falcon": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "634bb8d6978d5e65f2b3ced602e6deee168c560bc50880aa5e0cc296556c7aec",
+      "updated_at": "2026-10-22T05:07:01.916Z"
+    },
+    "christie-murder-on-the-orient-express-novel": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "9817ec55f56233981ec23a872d6a99b8b872d14f7b21c62e27d3f3c6d1ee85e2",
+      "updated_at": "2026-10-22T07:38:36.493Z"
+    },
+    "chandler-the-big-sleep-marlowe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8301ceee70cd1f6e56b71ca98586b30831c48a60e28cf7eb33a09cbc1437bc09",
+      "updated_at": "2026-10-22T05:07:01.975Z"
+    },
+    "spillane-mike-hammer-i-the-jury": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "49cd60bcbc02b1daf8fec071e7c1c54c62a86da28d25f48bc02ada6dfaf49d40",
+      "updated_at": "2026-10-22T05:07:02.004Z"
+    },
+    "macdonald-lew-archer-moving-target": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "470ac2978a3544d85b8be3bfcdb3e3f81adfcbe7765304683bb153dc15f3e91a",
+      "updated_at": "2026-10-22T05:07:02.034Z"
+    },
+    "highsmith-talented-mr-ripley": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "598685c00e0752c3d5ec9b353c9b52001b80295988d6cdfa5894e8efb8c70425",
+      "updated_at": "2026-10-22T05:07:02.064Z"
+    },
+    "james-dalgliesh-cover-her-face": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7c6892c22285124fc538877c81ccb9417e9513706b1be959555701e28a07171b",
+      "updated_at": "2026-10-22T07:38:36.525Z"
+    },
+    "dexter-inspector-morse-debut": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "80167acb8d9abace146e5c3eb928a8a3957655121a5baa36a17383ae3bb29531",
+      "updated_at": "2026-10-22T07:38:36.555Z"
+    },
+    "eco-the-name-of-the-rose": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "12887653517c48d256490b1b6076eae9e1f64a3025dc91791511d435d430efe1",
+      "updated_at": "2026-10-22T07:38:36.588Z"
+    },
+    "grafton-a-is-for-alibi": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bef92d6af2b4afdb91c49311267bb5f9f693bd70d19dde851e686a0910e5868b",
+      "updated_at": "2026-10-22T07:38:36.621Z"
+    },
+    "cornwell-scarpetta-postmortem": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a5048b7b1afaaeb2a88108734fa952fac0f1912a1f47dd20e49639631569a980",
+      "updated_at": "2026-10-22T09:07:29.101Z"
+    },
+    "tartt-the-secret-history": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "37a925831c9f2fe587d3f0df6deac7aafbe54da6a801838d24895ebdd76c1936",
+      "updated_at": "2026-10-22T09:07:29.135Z"
+    },
+    "mccall-smith-no1-ladies-detective-agency": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3c67bacb6657c26c676124756fe8f88394be46884f6373788697f020cdbd75dc",
+      "updated_at": "2026-10-22T09:07:29.166Z"
+    },
+    "brown-the-da-vinci-code": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "044fbf6d8d45820563d4ee9fee425db81d5ef16636a84c1379c34d10e5701014",
+      "updated_at": "2026-10-22T09:07:29.202Z"
+    },
+    "larsson-girl-with-the-dragon-tattoo": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "44349b368e263d6fcbd3d565ec70890ead0f8cb0a46a3aab674aeaf87beebc55",
+      "updated_at": "2026-10-22T09:07:29.236Z"
+    },
+    "flynn-gone-girl": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "87c3c1c2bc5bbe7c7be90623d9c5387e1ee4d3437d92e03f747fe3fc8bc1721a",
+      "updated_at": "2026-10-22T09:07:29.270Z"
+    },
+    "galbraith-cormoran-strike-debut": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "8f8db43a708d50a1147b1cf77a5893f59b1eba1a4aa0adf8a0375acaf6c123da",
+      "updated_at": "2026-10-22T11:07:04.817Z"
+    },
+    "osman-thursday-murder-club": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "30f86274b58401a718f582a8d668f1a32cc3aba93fabf1e1375e05675e493047",
+      "updated_at": "2026-10-22T09:07:29.337Z"
+    }
+  }
+}
