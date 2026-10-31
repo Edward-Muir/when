@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T11:22:29.055Z",
+  "updated_at": "2026-10-31T11:25:07.346Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-31T11:22:29.055Z"
     },
     "rabban-sauma-embassy-europe": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c5be9771b207ba2534874341ae3b718c36ffe96054e9dfb4427cb9f9ef90350e",
+      "updated_at": "2026-10-31T11:25:07.346Z"
     },
     "clavijo-embassy-timur": {
       "state": "pending",
