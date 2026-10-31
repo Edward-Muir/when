@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T05:22:47.613Z",
+  "updated_at": "2026-10-31T05:29:28.465Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-31T05:22:47.613Z"
     },
     "first-mri-human-scan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0f2922fa284b2d1e1ae0dace3399b31eb746e25d4521aee65ee13a5f66cb71de",
+      "updated_at": "2026-10-31T05:29:28.465Z"
     },
     "first-hiv-blood-test": {
       "state": "pending",
