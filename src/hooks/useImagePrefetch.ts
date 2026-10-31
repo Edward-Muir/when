@@ -2,6 +2,8 @@ import { useEffect, useMemo } from 'react';
 import { HistoricalEvent, WhenGameState } from '../types';
 import { ImageVariant } from '../utils/cloudinaryImage';
 import { preloadEventImages } from '../utils/preloadImage';
+import { catchUpDrawIndex, struggleBefore } from '../utils/catchUp';
+import { buildDifficultyIndex } from '../utils/difficultyScore';
 
 // Stable module-level constants so hook deps / array refs never churn.
 const EMPTY: HistoricalEvent[] = [];
@@ -44,8 +46,12 @@ function useWarm(events: HistoricalEvent[], enabled: boolean): void {
  *  - transitioning: the first game render's cards (seed timeline + dealt hands)
  *  - playing:       the next deck cards, before they're drawn into a hand
  */
-export function useImagePrefetch(state: WhenGameState, introEvents: HistoricalEvent[]): void {
-  const { phase, timeline, players, deck } = state;
+export function useImagePrefetch(
+  state: WhenGameState,
+  introEvents: HistoricalEvent[],
+  allEvents: HistoricalEvent[]
+): void {
+  const { phase, timeline, players, deck, currentPlayerIndex } = state;
 
   // Cards the first game render shows: the seed timeline plus every dealt hand.
   const startCards = useMemo(
@@ -53,11 +59,20 @@ export function useImagePrefetch(state: WhenGameState, introEvents: HistoricalEv
     [phase, timeline, players]
   );
 
-  // The next few cards waiting in the deck; re-warmed as the deck shrinks.
-  const upcoming = useMemo(
-    () => (phase === 'playing' ? deck.slice(0, NEXT_PREFETCH) : EMPTY),
-    [phase, deck]
-  );
+  // The next few cards waiting in the deck; re-warmed as the deck shrinks. After a miss the
+  // next draw may come from further down (utils/catchUp.ts), so the card it would take on
+  // today's board is warmed too. One extra thumbnail at most, and usually the right one: the
+  // board only gains the card about to be placed before the draw happens.
+  const upcoming = useMemo(() => {
+    if (phase !== 'playing') return EMPTY;
+    const next = deck.slice(0, NEXT_PREFETCH);
+    const struggle = struggleBefore(players.at(currentPlayerIndex)?.placementHistory ?? []);
+    if (struggle === 0) return next;
+    const pick = deck.at(
+      catchUpDrawIndex(deck, timeline, struggle, buildDifficultyIndex(allEvents))
+    );
+    return pick && !next.includes(pick) ? [...next, pick] : next;
+  }, [phase, deck, players, currentPlayerIndex, timeline, allEvents]);
 
   // gameOver as well as modeSelect: `restartGame` starts the next game straight from the
   // game-over screen without passing through modeSelect, and the intro set rotates between
