@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T05:17:45.507Z",
+  "updated_at": "2026-10-31T05:20:16.599Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-31T05:17:45.507Z"
     },
     "first-ct-scan-patient": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f2cc314265db1b38a7cee66db4887596c75fbc5c65eeafe2081eedbd7f714d61",
+      "updated_at": "2026-10-31T05:20:16.599Z"
     },
     "home-pregnancy-test-launched": {
       "state": "pending",
