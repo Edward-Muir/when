@@ -2,6 +2,8 @@ import { GameConfig, HistoricalEvent, PlacementResult, WhenGameState } from '../
 import { StoredFailure } from './dailyBoard';
 import { insertIntoTimeline, settledPosition } from './gameLogic';
 import { processCorrectPlacement, processIncorrectPlacement } from './placementLogic';
+import { CATCH_UP_REACH } from './catchUp';
+import { DifficultyIndex } from './difficultyScore';
 import { getLocalDateString } from './puzzleDate';
 
 /**
@@ -108,24 +110,43 @@ export function getTodayDailyProgress(
  * The cards the saved game has already dealt, keyed by slug, or null when `composedDeck` has
  * changed under them and the daily should be dealt fresh.
  *
- * Cards are only ever drawn off the front of the deck, so every card a player has seen (the
- * board, the hand and the misses) is exactly the first N of the composed deck. The check is
- * that those N match: a deploy that changed the catalogue, the difficulty index or today's
- * theme almost always reorders them and fails it. A change that only touches cards not yet
- * drawn passes, which is safe because nothing about those cards has been revealed. The rest of
- * the deck is then just the composed deck after N, so it never needs storing.
+ * Two things hold for any honest save. The opening deal comes straight off the front: the seed
+ * card and the first hand are the first 1 + H cards, where H, the hand size, is the hand plus the
+ * misses (a hit draws a replacement, a miss does not). And every later draw is either the top
+ * card or a catch-up draw (`catchUp.ts`) at most CATCH_UP_REACH cards further, which takes one
+ * card and leaves the rest in order. So every card a player has seen (the board, the hand and
+ * the misses) lies within the first N + CATCH_UP_REACH - 1 of the composed deck, and the rest
+ * of the deck is the composed deck minus those N in order, which is why it never needs storing.
+ *
+ * A deploy that changed the catalogue, the difficulty index or today's theme almost always
+ * reshuffles the opening or moves a seen card out of reach, and fails the check. A change that
+ * only touches cards not yet drawn passes, which is safe because nothing about those cards has
+ * been revealed; so does one that only swaps drawn cards within reach, which still resumes a
+ * board made of today's cards.
  */
 function matchDealtCards(
   snapshot: DailyProgressSnapshot,
   composedDeck: HistoricalEvent[]
 ): Map<string, HistoricalEvent> | null {
   const seen = [...snapshot.timeline, ...snapshot.hand, ...snapshot.failed.map((f) => f.name)];
-  const dealt = composedDeck.slice(0, seen.length);
-  if (dealt.length !== seen.length || dealt[0]?.name !== snapshot.seedEventName) return null;
+  if (composedDeck.length < seen.length || composedDeck[0]?.name !== snapshot.seedEventName) {
+    return null;
+  }
 
-  const byName = new Map(dealt.map((event) => [event.name, event]));
-  if (byName.size !== seen.length || !seen.every((name) => byName.has(name))) return null;
-  return byName;
+  const reachable = composedDeck.slice(0, seen.length + CATCH_UP_REACH - 1);
+  const byName = new Map(reachable.map((event) => [event.name, event]));
+  const dealt = new Map<string, HistoricalEvent>();
+  for (const name of seen) {
+    const event = byName.get(name);
+    if (!event || dealt.has(name)) return null;
+    dealt.set(name, event);
+  }
+
+  // Once the deck runs dry a hit stops replacing, so H here can undercount; a shorter opening
+  // is still a sound check.
+  const opening = composedDeck.slice(0, 1 + snapshot.hand.length + snapshot.failed.length);
+  if (!opening.every((event) => dealt.has(event.name))) return null;
+  return dealt;
 }
 
 /**
@@ -154,7 +175,6 @@ export function restoreDailyProgress(
   const byName = matchDealtCards(snapshot, composedDeck);
   if (!byName) return null;
   const resolve = (name: string) => byName.get(name) as HistoricalEvent;
-  const seen = byName.size;
 
   const isGameOver = snapshot.phase === 'gameOver';
   return {
@@ -162,7 +182,7 @@ export function restoreDailyProgress(
     gameMode: 'daily',
     timeline: snapshot.timeline.map(resolve),
     seedEventName: snapshot.seedEventName,
-    deck: composedDeck.slice(seen),
+    deck: composedDeck.filter((event) => !byName.has(event.name)),
     placementHistory: [...snapshot.placementHistory],
     failedPlacements: snapshot.failed.map((failure) => ({
       event: resolve(failure.name),
@@ -220,10 +240,11 @@ export function saveDailyPlacement(
   state: WhenGameState,
   activeCard: HistoricalEvent,
   insertionIndex: number,
-  result: PlacementResult
+  result: PlacementResult,
+  index: DifficultyIndex
 ): void {
   if (state.gameMode !== 'daily' || state.players.length !== 1) return;
-  const settled = settleDailyPlacement(state, activeCard, insertionIndex, result);
+  const settled = settleDailyPlacement(state, activeCard, insertionIndex, result, index);
   saveDailyProgress(buildDailyProgressSnapshot(settled));
 }
 
@@ -240,7 +261,8 @@ export function settleDailyPlacement(
   state: WhenGameState,
   activeCard: HistoricalEvent,
   insertionIndex: number,
-  result: PlacementResult
+  result: PlacementResult,
+  index: DifficultyIndex
 ): WhenGameState {
   const placed: WhenGameState = result.success
     ? {
@@ -271,7 +293,7 @@ export function settleDailyPlacement(
       };
 
   const update = result.success
-    ? processCorrectPlacement(placed, activeCard)
+    ? processCorrectPlacement(placed, activeCard, index)
     : processIncorrectPlacement(placed, activeCard);
 
   return {
