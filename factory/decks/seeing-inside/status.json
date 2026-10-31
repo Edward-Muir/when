@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T05:33:09.190Z",
+  "updated_at": "2026-10-31T05:35:41.605Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-31T05:33:09.190Z"
     },
     "fmri-brain-imaging": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "14f874623ea13deac8e6915c2ef55140ae41eee85716a3dbe4eec8d7a89f593d",
+      "updated_at": "2026-10-31T05:35:41.605Z"
     },
     "capsule-endoscopy-camera-pill": {
       "state": "pending",
