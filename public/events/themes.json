@@ -12871,7 +12871,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "siemens-self-excited-dynamo",
@@ -12882,7 +12883,8 @@
     "difficulty": "medium",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "godalming-public-electricity-supply",
@@ -12893,7 +12895,8 @@
     "difficulty": "hard",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pearl-street-station-opens",
@@ -12904,7 +12907,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "chicago-worlds-fair-ac-power",
@@ -12915,7 +12919,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "larderello-geothermal-plant",
@@ -12926,7 +12931,8 @@
     "difficulty": "hard",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "britain-national-grid-live",
@@ -12937,7 +12943,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "smith-putnam-wind-turbine",
@@ -12948,7 +12955,8 @@
     "difficulty": "hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "the-geysers-geothermal-plant",
@@ -12959,7 +12967,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "northeast-blackout-1965",
@@ -12971,7 +12980,8 @@
     "regions": [
       "Canada",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rance-tidal-power-station",
@@ -12982,7 +12992,8 @@
     "difficulty": "very-hard",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pacific-dc-intertie-opens",
@@ -12993,7 +13004,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "dinorwig-pumped-storage-station",
@@ -13004,7 +13016,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "quebec-geomagnetic-blackout",
@@ -13015,7 +13028,8 @@
     "difficulty": "medium",
     "regions": [
       "Canada"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "toyota-prius-launched",
@@ -13026,7 +13040,8 @@
     "difficulty": "easy",
     "regions": [
       "Japan"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "northeast-blackout-2003",
@@ -13038,7 +13053,8 @@
     "regions": [
       "Canada",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tesla-roadster-deliveries",
@@ -13049,7 +13065,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tesla-powerwall-unveiled",
@@ -13060,7 +13077,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hornsdale-power-reserve",
@@ -13071,7 +13089,8 @@
     "difficulty": "easy",
     "regions": [
       "Australia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hornsea-offshore-wind-farm",
@@ -13082,7 +13101,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "iberian-peninsula-blackout",
@@ -13094,6 +13114,7 @@
     "regions": [
       "Portugal",
       "Spain"
-    ]
+    ],
+    "has_detail": true
   }
 ]
