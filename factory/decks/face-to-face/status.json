@@ -1,9 +1,9 @@
 {
   "deck": "face-to-face",
   "name": "Face to Face",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T13:27:17.188Z",
+  "updated_at": "2026-10-31T14:07:14.970Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-31T11:08:52.150Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T14:07:14.970Z"
     }
   ],
   "slugs": {
@@ -86,53 +90,53 @@
       "updated_at": "2026-10-31T12:07:23.372Z"
     },
     "siamese-embassy-louis-xiv": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7f7440b1fbde459b57fe2212cb5d815438ad40f55d7d5caf1e9df37160aacd4d",
-      "updated_at": "2026-10-31T13:09:21.246Z"
+      "updated_at": "2026-10-31T14:07:14.777Z"
     },
     "peter-great-grand-embassy": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cd008ba98e6cc5538f094b042ace261bba4a7f110f134c35d6104634d0026ea8",
-      "updated_at": "2026-10-31T13:11:59.560Z"
+      "updated_at": "2026-10-31T14:07:14.808Z"
     },
     "iwakura-mission-west": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "45dd08ae961760c70f8af9e3bac437602162a394cc3b551a9a133163006a32fb",
-      "updated_at": "2026-10-31T13:14:45.440Z"
+      "updated_at": "2026-10-31T14:07:14.839Z"
     },
     "bjorko-meeting-kaiser-tsar": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "474e68d85d0a12d1dc5e3abebba8ce2762a4b42a18968c922c52f2e0be291d53",
-      "updated_at": "2026-10-31T13:17:21.082Z"
+      "updated_at": "2026-10-31T14:07:14.869Z"
     },
     "vienna-summit-kennedy-khrushchev": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3d3d0f3129954dcc2f05d05c953a0deef6ca75d15d7e14d1fc1231fce2021ca2",
-      "updated_at": "2026-10-31T13:21:02.583Z"
+      "updated_at": "2026-10-31T14:07:14.899Z"
     },
     "sadat-visits-jerusalem": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7420dd1a6d400fcb1939b4bc0f1fca88fc4561a69ea01531d7ce04edec3e67f9",
-      "updated_at": "2026-10-31T13:24:40.345Z"
+      "updated_at": "2026-10-31T14:07:14.934Z"
     },
     "reykjavik-summit-reagan-gorbachev": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0f9b2741449830c458c3dd662cb42787efdc8f1e25cc5c73d567bad5ba6be167",
-      "updated_at": "2026-10-31T13:27:17.188Z"
+      "updated_at": "2026-10-31T14:07:14.970Z"
     }
   }
 }
