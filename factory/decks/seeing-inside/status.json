@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T03:18:19.775Z",
+  "updated_at": "2026-10-31T03:20:39.701Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-31T03:18:19.775Z"
     },
     "auenbrugger-chest-percussion": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ba9606c5212eddab7661fde5634a6d5e108d5384793170a8a488a082c680d24b",
+      "updated_at": "2026-10-31T03:20:39.701Z"
     },
     "bozzini-light-conductor": {
       "state": "pending",
