@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T07:11:38.420Z",
+  "updated_at": "2026-10-31T07:14:21.033Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-10-31T07:11:38.420Z"
     },
     "mass-covid-testing": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c49b8bb85e6f10a8c0eaa77fa998fd5624a2d0aa729ae6afc4e01d741ef7606c",
+      "updated_at": "2026-10-31T07:14:21.033Z"
     }
   }
 }
