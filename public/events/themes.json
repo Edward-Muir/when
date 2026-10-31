@@ -12861,5 +12861,280 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
     "text_color": "light"
+  },
+  {
+    "name": "michael-romanov-elected-tsar",
+    "friendly_name": "Michael Romanov Elected Tsar",
+    "year": 1613,
+    "category": "empires",
+    "description": "An assembly of nobles, clergy and townsmen chose a teenage boy to end years of chaos and found a new ruling dynasty.",
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/michael-romanov-elected-tsar_u29nea?_a=BAMAMikS0",
+    "color": "#382922",
+    "text_color": "light"
+  },
+  {
+    "name": "peter-and-ivan-co-tsars",
+    "friendly_name": "Two Boy Tsars Share the Throne",
+    "year": 1682,
+    "category": "empires",
+    "description": "After a bloody revolt by the palace guards, a young boy and his half-brother were crowned together under their sister as regent.",
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peter-and-ivan-co-tsars_jcc07m?_a=BAMAMikS0",
+    "color": "#24201c",
+    "text_color": "light"
+  },
+  {
+    "name": "peter-great-embassy-europe",
+    "friendly_name": "Peter the Great Tours Europe",
+    "year": 1697,
+    "category": "figures",
+    "description": "Russia's tsar travelled in disguise through Dutch and English shipyards and workshops, hoping to learn skills his country lacked.",
+    "difficulty": "easy",
+    "regions": [
+      "Netherlands",
+      "Russia",
+      "United Kingdom",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peter-great-embassy-europe_6wei91?_a=BAMAMikS0",
+    "color": "#281f19",
+    "text_color": "light"
+  },
+  {
+    "name": "founding-st-petersburg",
+    "friendly_name": "St Petersburg Is Founded",
+    "year": 1703,
+    "category": "architecture",
+    "description": "Peter began building a new city on marshy Baltic land as a showpiece port and Russia's window on the West.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/founding-st-petersburg_ps3kqw?_a=BAMAMikS0",
+    "color": "#281f19",
+    "text_color": "light"
+  },
+  {
+    "name": "peter-proclaimed-emperor",
+    "friendly_name": "Peter Proclaimed Emperor",
+    "year": 1721,
+    "category": "empires",
+    "description": "With peace made with Sweden after a long war, the Senate gave Peter the title of Emperor of all Russia.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peter-proclaimed-emperor_xq6exu?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "elizabeth-seizes-russian-throne",
+    "friendly_name": "Elizabeth Seizes the Throne",
+    "year": 1741,
+    "category": "revolution",
+    "description": "Peter's daughter led guards regiments in a bloodless coup against an infant ruler and his German-influenced regency.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/elizabeth-seizes-russian-throne_z3kxfz?_a=BAMAMikS0",
+    "color": "#242328",
+    "text_color": "light"
+  },
+  {
+    "name": "russia-annexes-crimea",
+    "friendly_name": "Russia Annexes Crimea",
+    "year": 1783,
+    "category": "empires",
+    "description": "The empress absorbed the Crimean Khanate, gaining warm-water Black Sea ports for her fleet.",
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Ukraine",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russia-annexes-crimea_20mlm0?_a=BAMAMikS0",
+    "color": "#44362b",
+    "text_color": "light"
+  },
+  {
+    "name": "paul-i-assassinated",
+    "friendly_name": "Emperor Paul Is Murdered",
+    "year": 1801,
+    "category": "revolution",
+    "description": "Conspirators killed the unpopular emperor in his palace bedroom, and his son Alexander took the throne.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paul-i-assassinated_g55i0u?_a=BAMAMikS0",
+    "color": "#2a1e17",
+    "text_color": "light"
+  },
+  {
+    "name": "decembrist-revolt",
+    "friendly_name": "The Decembrist Revolt",
+    "year": 1825,
+    "category": "revolution",
+    "description": "Liberal-minded army officers led troops onto a square in the capital to oppose a new tsar, and were crushed.",
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/decembrist-revolt_tsf457?_a=BAMAMikS0",
+    "color": "#3b3836",
+    "text_color": "light"
+  },
+  {
+    "name": "tsarskoye-selo-railway-opens",
+    "friendly_name": "Russia's First Railway Opens",
+    "year": 1837,
+    "category": "invention",
+    "description": "A short line carried passengers from the capital to the imperial residence, launching steam travel in the empire.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tsarskoye-selo-railway-opens_ghueml?_a=BAMAMikS0",
+    "color": "#26201c",
+    "text_color": "light"
+  },
+  {
+    "name": "tolstoy-war-and-peace-completed",
+    "friendly_name": "War and Peace Is Completed",
+    "year": 1869,
+    "category": "writing",
+    "description": "Tolstoy's vast novel of the struggle against Napoleon finished publication in book form, a landmark of world literature.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tolstoy-war-and-peace-completed_7o8srh?_a=BAMAMikS0",
+    "color": "#291e1a",
+    "text_color": "light"
+  },
+  {
+    "name": "faberge-first-imperial-egg",
+    "friendly_name": "The First Faberge Imperial Egg",
+    "year": 1885,
+    "category": "craft",
+    "description": "A jeweller made a jewelled Easter egg with a hidden golden hen for the tsar's wife, starting a famed annual tradition.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/faberge-first-imperial-egg_vyr4wa?_a=BAMAMikS0",
+    "color": "#291e1d",
+    "text_color": "light"
+  },
+  {
+    "name": "trans-siberian-railway-begun",
+    "friendly_name": "Trans-Siberian Railway Begun",
+    "year": 1891,
+    "category": "architecture",
+    "description": "Work started on a giant rail line to link Moscow with the Pacific, with the future tsar laying a ceremonial first stone.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trans-siberian-railway-begun_an6qvz?_a=BAMAMikS0",
+    "color": "#271f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "nicholas-ii-becomes-tsar",
+    "friendly_name": "Nicholas II Becomes Tsar",
+    "year": 1894,
+    "category": "figures",
+    "description": "On his father's early death, a young and uncertain heir took the throne as the last of the Romanov line.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nicholas-ii-becomes-tsar_b3v70t?_a=BAMAMikS0",
+    "color": "#23211e",
+    "text_color": "light"
+  },
+  {
+    "name": "bloody-sunday-st-petersburg",
+    "friendly_name": "Bloody Sunday",
+    "year": 1905,
+    "category": "revolution",
+    "description": "Troops fired on a peaceful crowd of workers marching to petition the tsar, igniting a nationwide revolt.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bloody-sunday-st-petersburg_nu5478?_a=BAMAMikS0",
+    "color": "#8e8a82",
+    "text_color": "dark"
+  },
+  {
+    "name": "russia-enters-world-war-one",
+    "friendly_name": "Russia Enters the Great War",
+    "year": 1914,
+    "category": "warfare",
+    "description": "Mobilising to defend Serbia, the empire went to war with Germany and Austria, beginning a disastrous conflict.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russia-enters-world-war-one_i4ifvg?_a=BAMAMikS0",
+    "color": "#281f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "rasputin-murdered",
+    "friendly_name": "Rasputin Is Murdered",
+    "year": 1916,
+    "category": "figures",
+    "description": "Nobles poisoned, shot and drowned the mystic who held sway over the imperial family and its court.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rasputin-murdered_xnpqw7?_a=BAMAMikS0",
+    "color": "#1f2126",
+    "text_color": "light"
   }
 ]

@@ -1,0 +1,15 @@
+{
+  "slug": "michael-romanov-elected-tsar",
+  "description": "A painting of a night scene in snow at a stone monastery gate lit by torches. A slim youth in a dark tunic stands in an open doorway while a woman in a black veil sits behind him. Kneeling men in fur-trimmed brocade robes and fur hats face him, and a bearded cleric in gold vestments raises a gilded icon of the Virgin and Child. Black-robed clergy kneel with scrolls, and a crowd of townsfolk holds torches. Onion domes and a wooden gallery sit in the background.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
