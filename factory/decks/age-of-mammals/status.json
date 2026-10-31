@@ -1,0 +1,241 @@
+{
+  "deck": "age-of-mammals",
+  "name": "Age of Mammals",
+  "stage": "pr-open",
+  "created_at": "2026-10-23T21:22:21.347Z",
+  "updated_at": "2026-10-24T06:08:59.484Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-23T21:22:21.347Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-23T22:09:02.515Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-24T05:07:46.960Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-24T06:07:07.837Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-24T06:08:59.484Z"
+    }
+  ],
+  "slugs": {
+    "purgatorius": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ddf7788ba9e3c72275df374939a6a1116f1276de9fc829dceed1d15bfa2af821",
+      "updated_at": "2026-10-23T23:07:28.499Z"
+    },
+    "plesiadapis": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a3c25b7b7a32f494834517d1cdaa84d3b6e0bcef1affa590d440b66e160a976e",
+      "updated_at": "2026-10-23T23:07:28.531Z"
+    },
+    "eohippus-dawn-horse": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9240a2c9615fe993d8b23227ba103f9e2f1d043ef094e8494f523a107c392b18",
+      "updated_at": "2026-10-23T23:07:28.563Z"
+    },
+    "icaronycteris-early-bat": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "08dccc521c8bb8dcce8927d72e487174a4442592abecdfa4f26b5acbf295e4a7",
+      "updated_at": "2026-10-23T23:07:28.593Z"
+    },
+    "pakicetus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "35183ae744742674d8c4d5bda2b2286316b182103833ea5519f3fe8e98c04598",
+      "updated_at": "2026-10-23T23:07:28.624Z"
+    },
+    "ambulocetus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f10437d2123097c266fe5041c854c017eb5daae35935ba4a8cad6bda135a6dee",
+      "updated_at": "2026-10-23T23:07:28.655Z"
+    },
+    "andrewsarchus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "037a664043db71f336a37433cb82e150719687830b553d77f95b07cb8d5a855a",
+      "updated_at": "2026-10-23T23:07:28.687Z"
+    },
+    "basilosaurus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b16d387f48e3de13605fcce0efb927de481e7c8578fad8fc09a6d2c18da54560",
+      "updated_at": "2026-10-23T23:07:28.719Z"
+    },
+    "moeritherium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "37bd23f2f0d11e06fd74ad861f8e624a64dd640714e66c419247c1e1fa640a12",
+      "updated_at": "2026-10-23T23:07:28.751Z"
+    },
+    "paraceratherium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3406840ef1b569043d02d38afad55f88493c3253534ddab6910ffed33b4024f4",
+      "updated_at": "2026-10-23T23:07:28.781Z"
+    },
+    "aegyptopithecus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7330e8cb75ac753d588bccfbf1d3240abd975fecb7479f24498625b20e74c407",
+      "updated_at": "2026-10-24T01:07:32.273Z"
+    },
+    "desmostylus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "699226852d5781b64c249736470b479a5f20773d675c3fd77cecf23851c5b694",
+      "updated_at": "2026-10-24T01:07:32.305Z"
+    },
+    "proconsul": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4553211e78efd042ce520910429c9c90f8ae9e87b6ea158ef580876065eac7a0",
+      "updated_at": "2026-10-24T01:07:32.335Z"
+    },
+    "gomphotherium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5059b5697fee439d037c64118ca4811b18a405eb2edbff4bf3aedd074ad63224",
+      "updated_at": "2026-10-24T01:07:32.366Z"
+    },
+    "merychippus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c82ed81ddae6c2e9d8dbfb1ab18407dbc7f2f9507844c6609b139905a747b19e",
+      "updated_at": "2026-10-24T01:07:32.396Z"
+    },
+    "platybelodon": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2101cfe4f5b7927507e67e0bf221a2eacc2aaef3e65ec43bb5535b5b28282ccc",
+      "updated_at": "2026-10-24T03:07:43.313Z"
+    },
+    "deinotherium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "acebcf957ff83847f5cf09e2854e3e2c8c2d0da594108ba0b5b22eb2a24de211",
+      "updated_at": "2026-10-24T03:07:43.351Z"
+    },
+    "livyatan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8f46ba2d0c132b4339d662aa6e1b2b089929ae419ad7a5612d6a2748c5d94335",
+      "updated_at": "2026-10-26T20:13:52.466Z"
+    },
+    "thylacosmilus": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "3ca607d16b6c2c53ef5fb9a988042b08e78536054ad5a8e172333a3d8da831cb",
+      "updated_at": "2026-10-24T05:07:46.787Z"
+    },
+    "sivatherium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "02dfc63b7b48a4e733cb8e23fc2a14afdd73d8f7632097ea3a6c7968e4892204",
+      "updated_at": "2026-10-24T03:07:43.444Z"
+    },
+    "megatherium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b69347946fff23bb25829adb5b84e488e3f2bd09ee5694689769b2bbe28df863",
+      "updated_at": "2026-10-24T03:07:43.475Z"
+    },
+    "josephoartigasia": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "961f1348524d07306cba07467bff7fd2f618537a78dca4f80e56fc1af0fc7d4e",
+      "updated_at": "2026-10-24T03:07:43.508Z"
+    },
+    "smilodon-sabre-tooth": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "62eb52f69892ce1c442855a8793a5af95e934210fdc2e9ff053b3a0fc882d90c",
+      "updated_at": "2026-10-24T03:07:43.538Z"
+    },
+    "glyptodon": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8b941d0f1ef4eccec38aa5ae5b67e0a183f68b2cf3e60ebd9fee8a3f1bf2f7ed",
+      "updated_at": "2026-10-24T03:07:43.570Z"
+    },
+    "arctodus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "da27248c6cecfbb05de5fd5696718a43b39020995605724f4cbf023659d5c8c6",
+      "updated_at": "2026-10-24T03:07:43.601Z"
+    },
+    "diprotodon": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d158e7fb23b1c258c5c04725984e851c1ded75ad04d8e633775bda448fa14747",
+      "updated_at": "2026-10-24T05:07:46.823Z"
+    },
+    "cave-lion-big-cat": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3b5c0396e40f3fdb3e32518b4881abf898e0ccb0441fdcdb43f16d9b654ab40a",
+      "updated_at": "2026-10-24T05:07:46.858Z"
+    },
+    "woolly-mammoth-steppe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "63a95d60dc9fe86823a6a86bcddf7f1e356e4e8df2fda9c5b6185098b5fe579f",
+      "updated_at": "2026-10-24T05:07:46.892Z"
+    },
+    "cave-bear": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a15481f733e44244c82f681ee58094ecc6f6a56e094e76f4d82e977180fa747c",
+      "updated_at": "2026-10-24T05:07:46.925Z"
+    },
+    "dire-wolf-predator": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "29d485a7d855437b37a390e14104e0ebfb80ca9cec0e8a0cef9fc66091bf986a",
+      "updated_at": "2026-10-24T05:07:46.960Z"
+    }
+  }
+}

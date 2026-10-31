@@ -1,0 +1,15 @@
+{
+  "slug": "sivatherium",
+  "description": "A large, heavy, dark-brown mammal with a mottled coat stands side-on in a dense, dim forest, lit by golden light from above. It has a big branching pair of antlers on its head, with a smaller pointed horn pair above the eye, and it is browsing on leaves at its mouth. The painting fills the frame edge to edge with no visible text, signature, border or frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The animal reads as a moose or deer with large palmate-style antlers, not a short-necked giraffe relative with a broad branching pair and a smaller pair of ossicones. The woodland setting fits, but the artist should check the silhouette against the scene, which asks for a giraffid body and neck."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "paraceratherium",
+  "description": "A large grey-brown, hornless mammal with a very long neck stretches up into a tree to strip leaves from a branch. It stands in a dim, stormy forest with dark tree silhouettes behind it. Two small hoofed animals are at the lower left and lower right for scale. The style is a dark, painterly oil-like rendering, and the painting fills the whole square with no frame, border or lettering.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
