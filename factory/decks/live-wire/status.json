@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:27:08.944Z",
+  "updated_at": "2026-10-31T17:29:51.092Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-31T17:27:08.944Z"
     },
     "the-geysers-geothermal-plant": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "464d5db0f38940a028f40ff67bd0ad01a9f4f3b67892c331e7ba595c34c22e16",
+      "updated_at": "2026-10-31T17:29:51.092Z"
     },
     "northeast-blackout-1965": {
       "state": "pending",
