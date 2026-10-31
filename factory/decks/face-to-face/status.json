@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T13:14:45.440Z",
+  "updated_at": "2026-10-31T13:17:21.082Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-31T13:14:45.440Z"
     },
     "bjorko-meeting-kaiser-tsar": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "474e68d85d0a12d1dc5e3abebba8ce2762a4b42a18968c922c52f2e0be291d53",
+      "updated_at": "2026-10-31T13:17:21.082Z"
     },
     "vienna-summit-kennedy-khrushchev": {
       "state": "pending",
