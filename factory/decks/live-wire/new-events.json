@@ -1,0 +1,170 @@
+[
+  {
+    "name": "pixii-hand-cranked-dynamo",
+    "friendly_name": "Pixii's Hand-Cranked Dynamo",
+    "year": 1832,
+    "category": "invention",
+    "description": "A French instrument maker spun a magnet past wire coils and added a commutator, building the first practical generator.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "siemens-self-excited-dynamo",
+    "friendly_name": "Siemens' Self-Excited Dynamo",
+    "year": 1866,
+    "category": "invention",
+    "description": "Werner Siemens showed a generator could feed its own magnets, making powerful electricity affordable at scale.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "godalming-public-electricity-supply",
+    "friendly_name": "Godalming Public Electricity Supply",
+    "year": 1881,
+    "category": "commerce",
+    "description": "A small English town ran a waterwheel-driven generator to power its street lamps, the first public electricity supply.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pearl-street-station-opens",
+    "friendly_name": "Pearl Street Station Opens",
+    "year": 1882,
+    "category": "commerce",
+    "description": "Edison's Manhattan power plant began sending electricity through underground wires to paying customers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "chicago-worlds-fair-ac-power",
+    "friendly_name": "AC Lights the Chicago World's Fair",
+    "year": 1893,
+    "category": "invention",
+    "description": "Westinghouse lit a vast Chicago exposition with alternating current, winning the argument in the War of the Currents.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "larderello-geothermal-plant",
+    "friendly_name": "Larderello Geothermal Plant",
+    "year": 1904,
+    "category": "invention",
+    "description": "At an Italian volcanic steam field, Prince Ginori Conti ran a small engine on natural steam to light a few bulbs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "britain-national-grid-live",
+    "friendly_name": "Britain's National Grid Goes Live",
+    "year": 1935,
+    "category": "commerce",
+    "description": "Pylons carrying high-voltage lines linked power stations into the world's first integrated national electricity network.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "smith-putnam-wind-turbine",
+    "friendly_name": "Smith-Putnam Turbine Feeds Grid",
+    "year": 1941,
+    "category": "invention",
+    "description": "A giant two-bladed turbine on a Vermont hilltop became the first megawatt-scale wind machine to supply a power grid.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "the-geysers-geothermal-plant",
+    "friendly_name": "The Geysers Geothermal Plant Opens",
+    "year": 1960,
+    "category": "invention",
+    "description": "A Californian plant tapped underground steam to feed a utility's grid, starting large-scale geothermal power in America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "northeast-blackout-1965",
+    "friendly_name": "The Great Northeast Blackout",
+    "year": 1965,
+    "category": "disasters",
+    "description": "A faulty relay in Ontario cascaded into a failure that plunged millions across the northeastern US and Canada into darkness.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rance-tidal-power-station",
+    "friendly_name": "Rance Tidal Power Station Opens",
+    "year": 1966,
+    "category": "architecture",
+    "description": "A French estuary barrage began harnessing ocean tides to generate electricity, the first large tidal plant.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pacific-dc-intertie-opens",
+    "friendly_name": "Pacific DC Intertie Opens",
+    "year": 1970,
+    "category": "architecture",
+    "description": "A direct-current line carried hydropower from the Pacific Northwest to Los Angeles, a milestone in long-distance transmission.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "dinorwig-pumped-storage-station",
+    "friendly_name": "Dinorwig Pumped Storage Station",
+    "year": 1984,
+    "category": "architecture",
+    "description": "A Welsh power station hidden inside a mountain releases stored water in seconds to meet sudden surges in electricity demand.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "quebec-geomagnetic-blackout",
+    "friendly_name": "Solar Storm Blacks Out Quebec",
+    "year": 1989,
+    "category": "disasters",
+    "description": "A geomagnetic storm collapsed a Canadian provincial grid in seconds, leaving millions without electricity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "toyota-prius-launched",
+    "friendly_name": "Toyota Prius Goes on Sale",
+    "year": 1997,
+    "category": "invention",
+    "description": "The first mass-produced hybrid car paired a petrol engine with a battery and electric motor.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "northeast-blackout-2003",
+    "friendly_name": "Cascade Blackout Darkens New York",
+    "year": 2003,
+    "category": "disasters",
+    "description": "A tree-touched power line in Ohio triggered a cascade that darkened cities from New York to Toronto.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tesla-roadster-deliveries",
+    "friendly_name": "Tesla Roadster Reaches Customers",
+    "year": 2008,
+    "category": "invention",
+    "description": "A sports car powered by thousands of laptop-style cells showed that electric vehicles could be fast and desirable.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tesla-powerwall-unveiled",
+    "friendly_name": "Tesla Powerwall Unveiled",
+    "year": 2015,
+    "category": "invention",
+    "description": "A wall-mounted home battery was launched to store rooftop solar power and back up households during outages.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "hornsdale-power-reserve",
+    "friendly_name": "Hornsdale Power Reserve Switches On",
+    "year": 2017,
+    "category": "invention",
+    "description": "The world's biggest lithium-ion battery at the time began stabilising South Australia's grid, built in about 100 days.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hornsea-offshore-wind-farm",
+    "friendly_name": "Hornsea Offshore Wind Farm Opens",
+    "year": 2019,
+    "category": "invention",
+    "description": "Hundreds of turbines off the Yorkshire coast began sending power ashore from the then-largest offshore wind farm.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "iberian-peninsula-blackout",
+    "friendly_name": "Iberian Peninsula Blackout",
+    "year": 2025,
+    "category": "disasters",
+    "description": "A sudden grid collapse left Spain and Portugal without electricity for hours, halting trains and shutting shops.",
+    "difficulty": "easy"
+  }
+]

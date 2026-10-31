@@ -1,0 +1,236 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "leyden-jar-capacitor",
+      "why": "Same event in the same year (1745) as the existing card."
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "volta-battery",
+      "why": "Same event in the same year (1800) as the existing card."
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "pixii-hand-cranked-dynamo",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": "",
+      "why": "Daniell cell: fame 1, crowds the early battery stretch"
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fuel cell: existing fuel-cell card sits at 1842, not the same year; fame 1"
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "lead-acid-battery",
+      "why": "Same event in the same year (1859) as the existing card."
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "siemens-self-excited-dynamo",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "gramme-machine-generator",
+      "why": "Same event in the same year (1873) as the existing card."
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "godalming-public-electricity-supply",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "pearl-street-station-opens",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 10,
+      "decision": "reuse",
+      "slug": "wind-turbine-invented",
+      "why": "Same event in the same year (1888) as the existing card."
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "chicago-worlds-fair-ac-power",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "niagara-falls-power",
+      "why": "Same event in the same year (1895) as the existing card."
+    },
+    {
+      "beat": 13,
+      "decision": "reuse",
+      "slug": "nickel-cadmium-battery",
+      "why": "Same event in the same year (1899) as the existing card."
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "larderello-geothermal-plant",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": "",
+      "why": "Lauchhammer line: fame 1, obscure"
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": "",
+      "why": "Grid legislation: fame 1; the 1935 grid card covers the idea"
+    },
+    {
+      "beat": 17,
+      "decision": "new",
+      "slug": "britain-national-grid-live",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "smith-putnam-wind-turbine",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "first-solar-cell",
+      "why": "Same event in the same year (1954) as the existing card."
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "the-geysers-geothermal-plant",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "northeast-blackout-1965",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "rance-tidal-power-station",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "pacific-dc-intertie-opens",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": "",
+      "why": "Solar hot water, not electricity: fails the scope rule"
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": "",
+      "why": "Crotched Mountain wind farm: fame 1, crowds the 1980s"
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "dinorwig-pumped-storage-station",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "quebec-geomagnetic-blackout",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 28,
+      "decision": "reuse",
+      "slug": "lithium-ion-battery",
+      "why": "Same event in the same year (1991) as the existing card."
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "toyota-prius-launched",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 30,
+      "decision": "cut",
+      "slug": "",
+      "why": "LIMPET: fame 1, densest decade (2000s-2010s)"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "northeast-blackout-2003",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "tesla-roadster-deliveries",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "tesla-powerwall-unveiled",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "hornsdale-power-reserve",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "hornsea-offshore-wind-farm",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "iberian-peninsula-blackout",
+      "why": "No catalogue card for this event."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 4/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1873-1882 (want 3 or fewer in any 10 years)\n  PASS  shared 2 (light)       (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 68 earlier themes:\n        2  light                  volta-battery, niagara-falls-power",
+  "footholds": [
+    "tesla-roadster-deliveries",
+    "pearl-street-station-opens",
+    "toyota-prius-launched",
+    "northeast-blackout-2003",
+    "iberian-peninsula-blackout",
+    "tesla-powerwall-unveiled"
+  ]
+}
