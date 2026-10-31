@@ -1,0 +1,158 @@
+{
+  "cato-honey-cheesecake-recipe": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Roman statesman", "farming handbook"],
+    "why": "few know the recipe, but 'Roman statesman' places it firmly in antiquity"
+  },
+  "indian-sugar-crystallisation": {
+    "recognition": "low",
+    "inferability": "low",
+    "anchors": ["northern India", "cane juice"],
+    "why": "no era marker; boiling cane juice into crystals could be any century of antiquity or the medieval period"
+  },
+  "gingerbread-reaches-europe": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["Armenian monk", "French bakers"],
+    "why": "a monk teaching bakers suggests the medieval period, but nothing narrows it further"
+  },
+  "nuremberg-lebkuchen-recorded": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["Franconian trading city", "Christmas market"],
+    "why": "a guild-era trading city and bakers' records suggest medieval or early modern Germany"
+  },
+  "candy-cane-first-handed-out": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["choirmaster", "church", "German"],
+    "why": "church choirmaster and sugar sticks point to early modern Europe, though the tale is vague"
+  },
+  "cafe-procope-gelato": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["coffeehouse", "Paris", "Sicilian entrepreneur"],
+    "why": "a Paris coffeehouse implies the 17th or 18th century, a broad early modern window"
+  },
+  "bakers-chocolate-founded": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Irish immigrant", "Boston", "mill"],
+    "why": "immigrant plus a water-mill business in Boston suggests colonial or early republic America"
+  },
+  "turkish-delight-on-sale": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Istanbul", "starch-and-sugar", "Europe"],
+    "why": "Istanbul and starch-based sweets point to the Ottoman era and the 1800s, but not tightly"
+  },
+  "sachertorte-invented": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["prince's guests", "Vienna", "apprentice"],
+    "why": "a prince's court in Vienna suggests the Habsburg 19th century"
+  },
+  "cadbury-chocolate-box": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Cadbury", "bonbons", "gift for sweethearts"],
+    "why": "named firm and decorated boxes suggest the Victorian era, but nothing states it"
+  },
+  "fry-chocolate-easter-egg": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["English chocolate firm", "moulded chocolate"],
+    "why": "smooth moulded eating chocolate implies the industrial era, after chocolate bars appeared"
+  },
+  "cracker-jack-debuts": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Chicago", "world's fair", "popcorn vendor"],
+    "why": "a Chicago world's fair suggests the late 19th or early 20th century"
+  },
+  "jell-o-sold-as-dessert": {
+    "recognition": "high",
+    "inferability": "medium",
+    "anchors": ["cough-syrup maker", "gelatin powder", "home cooks"],
+    "why": "famous brand, and packaged powder marketed to home cooks implies the late 1800s or early 1900s"
+  },
+  "hersheys-milk-chocolate-bar": {
+    "recognition": "high",
+    "inferability": "medium",
+    "anchors": ["caramel maker", "American mass market"],
+    "why": "mass-market American candy implies the industrial era, with no firmer date"
+  },
+  "oreo-introduced": {
+    "recognition": "high",
+    "inferability": "medium",
+    "anchors": ["National Biscuit Company", "sandwich cookie"],
+    "why": "a corporate biscuit company implies the industrial age, early 20th century at the broadest"
+  },
+  "eskimo-pie-patented": {
+    "recognition": "medium",
+    "inferability": "low",
+    "anchors": ["Iowa shopkeeper", "ice cream bars"],
+    "why": "ice cream bars sold nationally imply refrigeration, but few clues beyond the modern era"
+  },
+  "haribo-gummy-bear": {
+    "recognition": "medium",
+    "inferability": "low",
+    "anchors": ["Bonn", "gelatin"],
+    "why": "no explicit era marker; Bonn and gelatin moulds could be any time from the 1800s to the late 1900s"
+  },
+  "pavlova-created": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Russian ballerina", "Australasia"],
+    "why": "a visiting Russian ballerina suggests the early 20th century touring era"
+  },
+  "mars-bar-launched": {
+    "recognition": "high",
+    "inferability": "low",
+    "anchors": ["British factory", "nougat and caramel"],
+    "why": "a British factory is only a weak industrial clue; could be anywhere in the 20th century"
+  },
+  "kit-kat-launched": {
+    "recognition": "high",
+    "inferability": "low",
+    "anchors": ["York chocolate maker", "wafer bar"],
+    "why": "no real era clue; a chocolate maker and wafer bar fit much of the 20th century"
+  },
+  "chupa-chups-lollipop": {
+    "recognition": "medium",
+    "inferability": "low",
+    "anchors": ["Spanish confectioner", "hard candy"],
+    "why": "hard candy on a stick gives no clear era; could be early to mid 20th century"
+  },
+  "nutella-launched": {
+    "recognition": "high",
+    "inferability": "medium",
+    "anchors": ["wartime stretching of scarce chocolate", "Italian firm"],
+    "why": "the wartime rationing background points to the mid 20th century"
+  },
+  "cadbury-creme-egg-named": {
+    "recognition": "medium",
+    "inferability": "low",
+    "anchors": ["Cadbury", "fondant-filled egg"],
+    "why": "a renaming of a known confection gives no era clue; 'hundreds of millions' only hints at modern mass production"
+  },
+  "kinder-surprise-launched": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["plastic toy", "Italian confectioner"],
+    "why": "a plastic toy in confectionery implies the post-war plastics era"
+  },
+  "ben-jerrys-scoop-shop": {
+    "recognition": "high",
+    "inferability": "medium",
+    "anchors": ["renovated petrol station", "famous brand"],
+    "why": "a petrol station implies the car age, and a 'famous brand' suggests recent decades"
+  },
+  "cronut-hits-new-york": {
+    "recognition": "medium",
+    "inferability": "low",
+    "anchors": ["SoHo", "queues around the block"],
+    "why": "a viral pastry has no explicit temporal marker; queues and a named chef do not date it"
+  }
+}
