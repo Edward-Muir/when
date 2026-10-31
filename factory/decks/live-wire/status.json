@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:24:26.720Z",
+  "updated_at": "2026-10-31T17:27:08.944Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-31T17:24:26.720Z"
     },
     "smith-putnam-wind-turbine": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "01fc023c35cb1ee2e5c9e97122268b02e96450f34ca574a22e6438c0f5a27251",
+      "updated_at": "2026-10-31T17:27:08.944Z"
     },
     "the-geysers-geothermal-plant": {
       "state": "pending",
