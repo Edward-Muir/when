@@ -1,0 +1,23 @@
+{
+  "hippocratic-bedside-diagnosis": {"recognition": "medium", "inferability": "high", "anchors": ["Greek physicians"], "why": "Hippocratic name and Greek physicians place it in antiquity"},
+  "herophilus-pulse-timing": {"recognition": "low", "inferability": "high", "anchors": ["Alexandrian", "water clock"], "why": "Alexandrian physician with a water clock points to the Hellenistic ancient world"},
+  "wang-shuhe-pulse-classic": {"recognition": "very-low", "inferability": "medium", "anchors": ["Chinese classic text"], "why": "Chinese classic text suggests pre-modern, but dynasty is unclear"},
+  "santorio-body-thermometer": {"recognition": "low", "inferability": "medium", "anchors": ["thermoscope", "early attempt"], "why": "thermoscope and Italian physician suggest the Renaissance or early modern period"},
+  "leeuwenhoek-blood-cells": {"recognition": "medium", "inferability": "high", "anchors": ["Leeuwenhoek", "microscope", "Dutch cloth merchant"], "why": "homemade lenses and a Dutch merchant point to the 17th century"},
+  "auenbrugger-chest-percussion": {"recognition": "low", "inferability": "medium", "anchors": ["Viennese doctor"], "why": "Viennese physician method suggests the 18th or 19th century but few hard anchors"},
+  "bozzini-light-conductor": {"recognition": "low", "inferability": "high", "anchors": ["candlelight", "forerunner of endoscope"], "why": "candlelight as the light source places it before electric light"},
+  "riva-rocci-blood-pressure-cuff": {"recognition": "low", "inferability": "medium", "anchors": ["inflatable cuff"], "why": "modern clinical device suggests the late 19th century but not firmly"},
+  "berger-eeg-recorded": {"recognition": "medium", "inferability": "medium", "anchors": ["electrodes", "psychiatrist"], "why": "electrodes and brain recording suggest the early 20th century"},
+  "papanicolaou-smear-test": {"recognition": "medium", "inferability": "medium", "anchors": ["cancer screening", "Greek-American"], "why": "cancer screening of cells suggests the 20th century"},
+  "forssmann-heart-catheter": {"recognition": "low", "inferability": "medium", "anchors": ["X-ray", "catheter"], "why": "X-ray implies the 20th century"},
+  "apgar-score-newborns": {"recognition": "medium", "inferability": "medium", "anchors": ["anaesthesiologist", "newborns"], "why": "modern medical scoring suggests the mid 20th century"},
+  "hirschowitz-fibre-optic-endoscope": {"recognition": "low", "inferability": "high", "anchors": ["fibre optic", "glass fibres"], "why": "fibre optics is a clear mid to late 20th century marker"},
+  "first-ct-scan-patient": {"recognition": "medium", "inferability": "high", "anchors": ["CT", "computer", "X-ray machine"], "why": "computer-based imaging places it in the late 20th century"},
+  "home-pregnancy-test-launched": {"recognition": "medium", "inferability": "medium", "anchors": ["boxed kit", "test tube"], "why": "consumer kit suggests the 20th century, likely the 1970s"},
+  "first-mri-human-scan": {"recognition": "medium", "inferability": "high", "anchors": ["MRI", "radio waves", "magnet"], "why": "MRI is a late 20th century technology"},
+  "first-hiv-blood-test": {"recognition": "medium", "inferability": "high", "anchors": ["HIV", "AIDS", "blood banks"], "why": "AIDS places it in the 1980s"},
+  "fmri-brain-imaging": {"recognition": "low", "inferability": "high", "anchors": ["fMRI", "magnetic scanning"], "why": "fMRI is a late 20th century technology"},
+  "capsule-endoscopy-camera-pill": {"recognition": "low", "inferability": "high", "anchors": ["camera pill"], "why": "a swallowable digital camera implies the late 20th or early 21st century"},
+  "smartwatch-ecg-approved": {"recognition": "medium", "inferability": "high", "anchors": ["smartwatch", "consumer watch"], "why": "smartwatch is a 2010s marker"},
+  "mass-covid-testing": {"recognition": "high", "inferability": "high", "anchors": ["newly emerged virus", "rapid kits", "swab"], "why": "mass rapid testing for a new virus reads as the 2020 pandemic"}
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "riva-rocci-blood-pressure-cuff",
+  "description": "An oil-style painting in a dark interior. An older man in a dark suit leans in from the left, both hands working a rubber bulb and a cloth cuff wrapped around the upper arm of a shirtless man seated at right. A tall glass-and-metal gauge with a graduated scale stands on a wooden table in the foreground, connected by rubber tubing. Behind them a lit candle and several brown glass bottles sit on a small table near a window.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The mercury gauge's scale has small numerals or tick marks on the glass column. They are too small to read, but they could be read as painted numbers, so the artist should check or simplify the scale."
+}
