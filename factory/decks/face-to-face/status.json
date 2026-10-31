@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T13:17:21.082Z",
+  "updated_at": "2026-10-31T13:21:02.583Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-10-31T13:17:21.082Z"
     },
     "vienna-summit-kennedy-khrushchev": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3d3d0f3129954dcc2f05d05c953a0deef6ca75d15d7e14d1fc1231fce2021ca2",
+      "updated_at": "2026-10-31T13:21:02.583Z"
     },
     "sadat-visits-jerusalem": {
       "state": "pending",
