@@ -13,6 +13,8 @@ import {
 import { calculatePlacementResult } from './placementLogic';
 import { buildDailyConfig } from './dailyConfig';
 import { getLocalDateString } from './puzzleDate';
+import { buildDifficultyIndex } from './difficultyScore';
+import { CATCH_UP_REACH } from './catchUp';
 
 const KEY = 'when-daily-progress';
 const TODAY = getLocalDateString();
@@ -31,6 +33,8 @@ const DECK = [
   event('d2', 1100),
   event('d3', 1400),
 ];
+
+const INDEX = buildDifficultyIndex(DECK);
 
 /** The state `startGame` deals from DECK. */
 function dealt(overrides: Partial<WhenGameState> = {}): WhenGameState {
@@ -74,7 +78,8 @@ function play(state: WhenGameState, index: number): WhenGameState {
     state,
     card,
     index,
-    calculatePlacementResult(state.timeline, card, index)
+    calculatePlacementResult(state.timeline, card, index),
+    INDEX
   );
 }
 
@@ -89,7 +94,7 @@ describe('settleDailyPlacement', () => {
     const after = play(dealt(), 0); // h1 (1200) before the seed (1500)
 
     expect(names(after.timeline)).toEqual(['h1', 'seed']);
-    expect(names(after.players[0].hand)).toEqual(['h2', 'h3', 'd1']);
+    expect(names(after.players[0].hand)).toEqual(['h2', 'd1', 'h3']); // drawn behind the active card
     expect(names(after.deck)).toEqual(['d2', 'd3']);
     expect(after.placementHistory).toEqual([true]);
     expect(after.currentStreak).toBe(1);
@@ -111,6 +116,16 @@ describe('settleDailyPlacement', () => {
     expect(after.placementHistory).toEqual([false]);
     expect(after.currentStreak).toBe(0);
     expect(after.bestStreak).toBe(2);
+  });
+
+  it('a correct placement after a miss draws the card with the most room on the board', () => {
+    let state = play(dealt(), 1); // h1 wrong
+    state = play(state, 1); // h2 (1800) after the seed: board 1500 | 1800
+
+    // d1 (1900) and d3 (1400) each sit one catalogue event from a neighbour; d2 (1100) has
+    // three events' clearance before the seed, so it is drawn ahead of the top card.
+    expect(names(state.players[0].hand)).toEqual(['h3', 'd2']);
+    expect(names(state.deck)).toEqual(['d1', 'd3']);
   });
 
   it('the miss that empties the hand ends the game', () => {
@@ -197,7 +212,8 @@ describe('restoreDailyProgress', () => {
 
   it('refuses when a card the player has seen moved in the rebuilt deck', () => {
     const snapshot = buildDailyProgressSnapshot(played);
-    const reordered = [DECK[0], DECK[1], DECK[2], DECK[5], DECK[4], DECK[3], DECK[6]];
+    // h3 was dealt in the opening hand; here d3 takes its place and h3 sinks to the bottom.
+    const reordered = [DECK[0], DECK[1], DECK[2], DECK[6], DECK[4], DECK[5], DECK[3]];
 
     expect(restoreDailyProgress(snapshot, reordered, CONFIG)).toBeNull();
   });
@@ -209,10 +225,12 @@ describe('restoreDailyProgress', () => {
 
   it('still resumes when only cards not yet drawn changed', () => {
     const snapshot = buildDailyProgressSnapshot(played);
-    const newTail = [...DECK.slice(0, 5), event('new-card', 1000)];
+    // The miss made h3's replacement a catch-up draw, which took d2 over d1.
+    expect(names(played.deck)).toEqual(['d1', 'd3']);
+    const newTail = [...DECK.slice(0, 6), event('new-card', 1000)];
 
     const restored = restoreDailyProgress(snapshot, newTail, CONFIG);
-    expect(names(restored!.deck)).toEqual(['new-card']);
+    expect(names(restored!.deck)).toEqual(['d1', 'new-card']);
   });
 
   it('refuses a save from another date', () => {
@@ -237,7 +255,7 @@ describe('the entry points', () => {
   it('saveDailyPlacement saves the settled move straight away', () => {
     const state = dealt();
     const card = state.players[0].hand[0];
-    saveDailyPlacement(state, card, 1, calculatePlacementResult(state.timeline, card, 1));
+    saveDailyPlacement(state, card, 1, calculatePlacementResult(state.timeline, card, 1), INDEX);
 
     const saved = getTodayDailyProgress(TODAY);
     expect(saved?.placementHistory).toEqual([false]);
@@ -247,9 +265,31 @@ describe('the entry points', () => {
   it('saveDailyPlacement ignores a custom game', () => {
     const state = dealt({ gameMode: 'suddenDeath' });
     const card = state.players[0].hand[0];
-    saveDailyPlacement(state, card, 0, calculatePlacementResult(state.timeline, card, 0));
+    saveDailyPlacement(state, card, 0, calculatePlacementResult(state.timeline, card, 0), INDEX);
 
     expect(localStorage.getItem(KEY)).toBeNull();
+  });
+
+  it('resumes a game a catch-up draw dealt out of order', () => {
+    let state = play(dealt(), 1); // h1 wrong
+    state = play(state, 1); // h2 right, catch-up draws d2 ahead of d1
+    saveDailyProgress(buildDailyProgressSnapshot(state));
+
+    const resumed = resumeDailyProgress(DECK, CONFIG);
+    expect(names(resumed!.players[0].hand)).toEqual(['h3', 'd2']);
+    expect(names(resumed!.deck)).toEqual(['d1', 'd3']);
+    expect(canResumeDailyProgress(getTodayDailyProgress(TODAY), DECK)).toBe(true);
+  });
+
+  it('drops a save holding a card further into the deck than any draw can reach', () => {
+    const filler = Array.from({ length: CATCH_UP_REACH + 5 }, (_, i) => event(`f${i}`, 2000 + i));
+    const long = [...DECK, ...filler];
+    const far = filler.at(-1)!;
+    const snapshot = buildDailyProgressSnapshot(
+      dealt({ players: [{ ...dealt().players[0], hand: [DECK[1], DECK[2], far] }] })
+    );
+
+    expect(restoreDailyProgress(snapshot, long, CONFIG)).toBeNull();
   });
 
   it('resumeDailyProgress drops a save the deck no longer matches', () => {
