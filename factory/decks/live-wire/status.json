@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:21:38.804Z",
+  "updated_at": "2026-10-31T17:24:26.720Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-10-31T17:21:38.804Z"
     },
     "britain-national-grid-live": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c364d1230ae28982a9eb15adada2071001c5e6a5f78d46252b83895fd6d5382d",
+      "updated_at": "2026-10-31T17:24:26.720Z"
     },
     "smith-putnam-wind-turbine": {
       "state": "pending",
