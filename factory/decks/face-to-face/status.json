@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T11:25:07.346Z",
+  "updated_at": "2026-10-31T11:27:44.738Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-10-31T11:25:07.346Z"
     },
     "clavijo-embassy-timur": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "28f192aa49c0802987fc399617c335f1a8f369eb1a77e991ba86eef031056e99",
+      "updated_at": "2026-10-31T11:27:44.738Z"
     },
     "matteo-ricci-enters-beijing": {
       "state": "pending",
