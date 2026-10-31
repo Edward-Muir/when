@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { isDailyReminderSupported, resyncDailyReminders } from './utils/dailyReminder';
 import { useWhenGame } from './hooks/useWhenGame';
 import { useImagePrefetch } from './hooks/useImagePrefetch';
+import { CATCH_UP_REACH } from './utils/catchUp';
 import { pickIntroEvents } from './utils/introEvents';
 import { GameConfig } from './types';
 import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
@@ -24,11 +25,12 @@ import GameStartTransition from './components/GameStartTransition';
 // the daily runs sudden-death mechanics, so a correct placement draws a replacement and
 // there is no turn cap — a strong run can consume far more than 15 cards. 15 covers the
 // opening (seed + 5-card hand) plus a typical run's early draws, which is the window where
-// a spoiler would actually be noticed.
+// a spoiler would actually be noticed. After a miss a catch-up draw can reach up to
+// CATCH_UP_REACH cards further (utils/catchUp.ts), so the guard covers that much more.
 //
 // Exported so src/utils/introSpoilerGuard.test.ts measures the real guard instead of a
 // hand-copied mirror of this number.
-export const DAILY_SPOILER_DEPTH = 15;
+export const DAILY_SPOILER_DEPTH = 15 + CATCH_UP_REACH;
 
 /** A daily deck this small is kept out of the intro in full, like a curated one. */
 export const THIN_DAILY_DECK = 60;
@@ -199,7 +201,7 @@ function App({
     if (state.phase === 'playing') setIntroRotation((r) => r + 1);
   }, [state.phase]);
 
-  useImagePrefetch(state, introEvents);
+  useImagePrefetch(state, introEvents, allEvents);
 
   // Drop today's pending 8am reminder once the daily is played (resync skips it).
   useEffect(() => {

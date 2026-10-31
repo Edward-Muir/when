@@ -378,6 +378,10 @@ Both formats share these rules:
   a recipient can play multiplayer if they have people around. No menu builds a code with
   `playerCount > 1`, but decoding one starts a multiplayer game (see CLAUDE.md).
 - **Restart re-rolls the seed** rather than replaying the identical game.
+- **Same deck, not the same draws.** A challenge replays the identical composed deck and
+  opening hand, but after a miss the next draw is a catch-up pick that depends on the
+  recipient's own board and misses ([gameplay-feel/](../gameplay-feel/index.md#catch-up-draws)).
+  Two players who place the same cards in the same order get the same game.
 - **BigInt via `BigInt()` calls, not `12n` literals.** The 72-bit value exceeds JS's 53-bit
   safe-integer range, but the TS target is below ES2020 so literals won't parse.
 - **Event-set drift is accepted.** Adding or removing events can make an old token produce a
