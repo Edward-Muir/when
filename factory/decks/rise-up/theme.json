@@ -1,0 +1,39 @@
+{
+  "id": "rise-up",
+  "name": "Rise Up!",
+  "scope": "Yes if it is an uprising of ordinary people against their rulers",
+  "boundary": "Rise Up!: popular uprisings, Pugachev and the Paris Commune included; plots and putsches go to Coup!, peaceful marches to Take to the Streets, wars of independence to The Liberators, the 1857 rebellion to The Raj.",
+  "neighbours": [
+    "coup",
+    "take-to-the-streets",
+    "chinese-dynasties"
+  ],
+  "grid": {
+    "categories": [
+      "revolution",
+      "warfare"
+    ],
+    "eras": [
+      "medieval",
+      "earlyModern",
+      "industrial"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Spartacus leads slave revolt (73 BC)",
+    "Zanj Rebellion (869)",
+    "Jacquerie (1358)",
+    "Wat Tyler's Peasants' Revolt (1381)",
+    "German Peasants' War (1525)",
+    "Pugachev's Rebellion (1773)",
+    "Nat Turner's Rebellion (1831)",
+    "Taiping Rebellion begins (1850)",
+    "Boxer Rebellion (1900)",
+    "Paris Commune (1871)"
+  ],
+  "appeal": 2,
+  "status": "queued"
+}

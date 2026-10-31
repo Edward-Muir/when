@@ -1,0 +1,50 @@
+{
+  "chen-sheng-wu-guang-revolt": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["China's first imperial dynasty", "conscripts"],
+    "why": "first imperial dynasty of China places it at 200s BC even if the revolt is unknown"
+  },
+  "boudica-revolt": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Iceni", "Roman Colchester", "London"],
+    "why": "Roman-occupied Britain places it in antiquity"
+  },
+  "zanj-rebellion-begins": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["caliphate", "Iraq", "enslaved East Africans"],
+    "why": "caliphate implies medieval Islamic era, though a broad span"
+  },
+  "pilgrimage-of-grace-rising": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Henry VIII", "closing of monasteries"],
+    "why": "Henry VIII and dissolution of monasteries pin it to the 1530s"
+  },
+  "pueblo-revolt-spanish-expelled": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Spanish settlers and missionaries", "Southwest"],
+    "why": "Spanish colonial presence suggests 1500s-1700s"
+  },
+  "pugachev-rebellion": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Catherine the Great", "tsar", "serfs"],
+    "why": "Catherine the Great places it in the late 1700s"
+  },
+  "tupac-amaru-ii-rebellion": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["Inca descendant", "Spanish taxes", "forced labour"],
+    "why": "Spanish colonial Andes implies roughly 1550-1820"
+  },
+  "zapatista-uprising-chiapas": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["major trade pact", "masked rebels"],
+    "why": "trade pact suggests late 20th century but is not named"
+  }
+}

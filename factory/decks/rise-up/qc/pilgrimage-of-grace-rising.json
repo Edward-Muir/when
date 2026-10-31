@@ -1,0 +1,15 @@
+{
+  "slug": "pilgrimage-of-grace-rising",
+  "description": "A large column of rough-dressed men and women marches across a muddy hillside under a stormy grey sky. A man in a dark hooded monk's habit walks at the centre, with a bearded man in a cap holding a tattered dark-red banner aloft. The banner shows a golden chalice, a red heart with a golden glow, and pale hands and feet with red blood drips at the edges. Behind them a stone abbey with a square tower sits on a hill, with smoke rising. Pikes, staves and a cross are visible in the crowd. No text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The Five Wounds banner shows pale hands and feet with red blood drips at their edges, which are visible wounds and blood. Repaint the banner without bleeding wounds, for example as a plain chalice and heart, or with the wounds unbloodied and small, and keep the rest of the scene, which fits the card."
+}

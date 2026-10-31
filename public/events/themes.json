@@ -12861,5 +12861,132 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
     "text_color": "light"
+  },
+  {
+    "name": "chen-sheng-wu-guang-revolt",
+    "friendly_name": "Chen Sheng and Wu Guang Revolt",
+    "year": -209,
+    "category": "revolution",
+    "description": "Conscripts delayed by floods and facing execution rose against China's harsh first imperial dynasty, sparking a mass revolt.",
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chen-sheng-wu-guang-revolt_atm3t1?_a=BAMAMikS0",
+    "color": "#2e2a26",
+    "text_color": "light"
+  },
+  {
+    "name": "boudica-revolt",
+    "friendly_name": "Boudica's Revolt",
+    "year": 60,
+    "category": "revolution",
+    "description": "A widowed Iceni queen rallied British tribes and burned Roman Colchester, London and St Albans before being crushed.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boudica-revolt_tqfoka?_a=BAMAMikS0",
+    "color": "#422c22",
+    "text_color": "light"
+  },
+  {
+    "name": "zanj-rebellion-begins",
+    "friendly_name": "Zanj Rebellion Begins",
+    "year": 869,
+    "category": "revolution",
+    "description": "Enslaved East Africans draining salt marshes in Iraq rose against the caliphate and held out for well over a decade.",
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zanj-rebellion-begins_qirz6x?_a=BAMAMikS0",
+    "color": "#554436",
+    "text_color": "light"
+  },
+  {
+    "name": "pilgrimage-of-grace-rising",
+    "friendly_name": "Pilgrimage of Grace",
+    "year": 1536,
+    "category": "revolution",
+    "description": "Tens of thousands in northern England rose to protest the closing of monasteries and the religious policies of Henry VIII.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pilgrimage-of-grace-rising_msh61v?_a=BAMAMikS0",
+    "color": "#372b23",
+    "text_color": "light"
+  },
+  {
+    "name": "pueblo-revolt-spanish-expelled",
+    "friendly_name": "Pueblo Revolt",
+    "year": 1680,
+    "category": "revolution",
+    "description": "Pueblo peoples of the Southwest united to drive Spanish settlers and missionaries from their homeland for a dozen years.",
+    "difficulty": "medium",
+    "regions": [
+      "Spain",
+      "United States"
+    ],
+    "year_end": 1692,
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pueblo-revolt-spanish-expelled_vhqa5k?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "pugachev-rebellion",
+    "friendly_name": "Pugachev's Rebellion",
+    "year": 1773,
+    "category": "revolution",
+    "description": "A Cossack claiming to be the murdered tsar raised serfs and Cossacks and threatened Catherine the Great's throne.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "year_end": 1775,
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pugachev-rebellion_xvbvf7?_a=BAMAMikS0",
+    "color": "#352a23",
+    "text_color": "light"
+  },
+  {
+    "name": "tupac-amaru-ii-rebellion",
+    "friendly_name": "Tupac Amaru II Rebellion",
+    "year": 1780,
+    "category": "revolution",
+    "description": "A descendant of Inca royalty led Andean Indigenous and mixed-race people against Spanish taxes and forced labour.",
+    "difficulty": "medium",
+    "regions": [
+      "Peru",
+      "Spain"
+    ],
+    "year_end": 1783,
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tupac-amaru-ii-rebellion_i9szvk?_a=BAMAMikS0",
+    "color": "#291e1e",
+    "text_color": "light"
+  },
+  {
+    "name": "zapatista-uprising-chiapas",
+    "friendly_name": "Zapatista Uprising",
+    "year": 1994,
+    "category": "revolution",
+    "description": "Masked Indigenous rebels seized towns in Chiapas on the day a major trade pact took effect, demanding land and rights.",
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zapatista-uprising-chiapas_vmmc3e?_a=BAMAMikS0",
+    "color": "#241f23",
+    "text_color": "light"
   }
 ]

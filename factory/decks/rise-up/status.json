@@ -1,0 +1,87 @@
+{
+  "deck": "rise-up",
+  "name": "Rise Up!",
+  "stage": "pr-open",
+  "created_at": "2026-10-28T17:15:18.520Z",
+  "updated_at": "2026-10-28T22:44:44.591Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-28T17:15:18.520Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-28T18:10:02.351Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-28T21:07:13.649Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-28T22:15:56.598Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-28T22:44:44.591Z"
+    }
+  ],
+  "slugs": {
+    "chen-sheng-wu-guang-revolt": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8162354a5b0f64eb494918eb7133348b566b982bb4c3892e8828f2fd80af6118",
+      "updated_at": "2026-10-28T19:07:29.849Z"
+    },
+    "boudica-revolt": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4a90994dfea478245350cb2713ed9d0aa0b8e016c8485efca8fc881ca2469995",
+      "updated_at": "2026-10-28T19:07:29.879Z"
+    },
+    "zanj-rebellion-begins": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "543412af72e1a3fa83074afd829806e880fde8fd3ff9bee82dc71108271e2ee3",
+      "updated_at": "2026-10-28T19:07:29.910Z"
+    },
+    "pilgrimage-of-grace-rising": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "351f9649a12a0ffa306a355990713b718f09edd4de5f512f042af8126dbbad2e",
+      "updated_at": "2026-10-28T21:07:13.649Z"
+    },
+    "pueblo-revolt-spanish-expelled": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "24497df59ac549d8b02a130567f86fd1bf9f9fb308d0a253e544dbc2887f2887",
+      "updated_at": "2026-10-28T19:07:29.972Z"
+    },
+    "pugachev-rebellion": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a15eb3241c56ad2ed3d52272454b4bfc6a30beeedfa1e8c08f32211829bb0caf",
+      "updated_at": "2026-10-28T19:07:30.007Z"
+    },
+    "tupac-amaru-ii-rebellion": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "24c5d2915fd0648d65ec30072d4021ce3c559857abc89090cd5b7cfdeba44948",
+      "updated_at": "2026-10-28T19:07:30.050Z"
+    },
+    "zapatista-uprising-chiapas": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "13fca4210c206edc95c902b655424bc3fc98b6c744a8c841cdd9b82293a0b8e7",
+      "updated_at": "2026-10-28T19:07:30.085Z"
+    }
+  }
+}
