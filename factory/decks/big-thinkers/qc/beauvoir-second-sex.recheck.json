@@ -1,0 +1,15 @@
+{
+  "slug": "beauvoir-second-sex",
+  "description": "A dark oil painting of a Parisian cafe table with a cane-back chair, a stack of handwritten pages with a pen, a coffee cup, a glass of red wine, an ashtray with a cigarette and a folded scarf. The scene is seen inside a tarnished gilt-framed mirror hung on a dark wainscoted wall that fills the rest of the image. No text, no people, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

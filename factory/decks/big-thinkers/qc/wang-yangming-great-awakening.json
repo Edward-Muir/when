@@ -1,0 +1,15 @@
+{
+  "slug": "wang-yangming-great-awakening",
+  "description": "A painted portrait of an older East Asian man with short dark hair and a thin goatee, in a loose brown-grey robe with a crossed collar, seated inside a rocky cave opening. Behind him is a dark blue-grey night sky with misty mountain silhouettes. Oil-painting style, dim lighting, one hand resting on his knee. No visible text apart from a tiny mark in the bottom-right corner. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
