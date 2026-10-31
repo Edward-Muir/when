@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T13:21:02.583Z",
+  "updated_at": "2026-10-31T13:24:40.345Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-31T13:21:02.583Z"
     },
     "sadat-visits-jerusalem": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7420dd1a6d400fcb1939b4bc0f1fca88fc4561a69ea01531d7ce04edec3e67f9",
+      "updated_at": "2026-10-31T13:24:40.345Z"
     },
     "reykjavik-summit-reagan-gorbachev": {
       "state": "pending",
