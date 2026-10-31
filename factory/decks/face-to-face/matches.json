@@ -1,0 +1,3096 @@
+[
+  {
+    "beat": 0,
+    "year": -138,
+    "title": "Zhang Qian Rides West for the Han",
+    "candidates": [
+      {
+        "name": "bantu-expansion-africa",
+        "friendly_name": "Bantu Migration Across Africa",
+        "year": -400,
+        "year_end": 500,
+        "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
+        "score": 2,
+        "shared": [
+          "west",
+          "across"
+        ]
+      },
+      {
+        "name": "han-expansion",
+        "friendly_name": "Han Dynasty Expansion",
+        "year": -141,
+        "year_end": -108,
+        "description": "Emperor Wu expanded Han territory into Central Asia, Korea, and Vietnam through aggressive military campaigns.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "adena-mound-burials",
+        "friendly_name": "Adena Mound Burial Complex Peak",
+        "year": -300,
+        "year_end": 100,
+        "description": "The Adena culture built conical burial mounds across the Ohio Valley for elite ceremonial interments.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "crucible-steel-wootz",
+        "friendly_name": "Crucible Steel (Wootz) Production",
+        "year": -300,
+        "year_end": 200,
+        "description": "Indian metalworkers developed wootz crucible steel, producing high-carbon steel prized across the ancient world.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -41,
+    "title": "Cleopatra Meets Antony at Tarsus",
+    "candidates": [
+      {
+        "name": "roman-aureus-gold-coin",
+        "friendly_name": "Roman Aureus Gold Coin",
+        "year": -40,
+        "description": "Rome's gold aureus circulated alongside the silver denarius, anchoring high-value transactions across the empire.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "second-triumvirate",
+        "friendly_name": "Second Triumvirate",
+        "year": -43,
+        "year_end": -30,
+        "description": "Octavian, Antony, and Lepidus formed a legal dictatorship to avenge Caesar's death.",
+        "score": 1,
+        "shared": [
+          "antony"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "trip-hammer",
+        "friendly_name": "Trip Hammer",
+        "year": -40,
+        "description": "Water-powered hammer using a cam to lift and drop a heavy weight for forging metal and processing grain.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 166,
+    "title": "Roman Envoys Reach the Han Court",
+    "candidates": [
+      {
+        "name": "antonine-plague",
+        "friendly_name": "Antonine Plague",
+        "year": 165,
+        "year_end": 180,
+        "description": "A pandemic killed millions across the Roman Empire over fifteen years.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "ancestral-dorset",
+        "friendly_name": "Dorset Arctic Culture",
+        "year": -500,
+        "year_end": 1350,
+        "description": "The Dorset culture adapted to life in the Arctic with specialized hunting technology and ivory carvings.",
+        "score": 1,
+        "shared": [
+          "ivory"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 452,
+    "title": "Pope Leo Meets Attila",
+    "candidates": [
+      {
+        "name": "pope-leo-meets-attila",
+        "friendly_name": "Pope Leo Meets Attila",
+        "year": 452,
+        "description": "Pope Leo I persuaded Attila the Hun to withdraw from Italy, enhancing papal prestige and authority.",
+        "score": 6,
+        "shared": [
+          "pope",
+          "leo",
+          "meets",
+          "attila",
+          "hun",
+          "persuaded"
+        ]
+      },
+      {
+        "name": "attila-hunnic-invasions",
+        "friendly_name": "Attila Invades Roman Empire",
+        "year": 451,
+        "year_end": 452,
+        "description": "Attila the Hun invaded Gaul with a massive army but was halted at the Battle of the Catalaunian Plains.",
+        "score": 3,
+        "shared": [
+          "attila",
+          "roman",
+          "hun"
+        ]
+      },
+      {
+        "name": "attila-invasion",
+        "friendly_name": "Attila Invades Western Europe",
+        "year": 451,
+        "description": "The Hunnic king ravaged Gaul before being defeated at the Battle of the Catalaunian Plains.",
+        "score": 2,
+        "shared": [
+          "attila",
+          "king"
+        ]
+      },
+      {
+        "name": "battle-of-catalaunian-plains",
+        "friendly_name": "Battle of Catalaunian Plains",
+        "year": 451,
+        "description": "A Roman-Visigothic coalition stopped Attila's invasion of Gaul in one of antiquity's largest battles.",
+        "score": 2,
+        "shared": [
+          "attila",
+          "roman"
+        ]
+      },
+      {
+        "name": "anglo-saxon-migration",
+        "friendly_name": "Anglo-Saxon Migration to Britain",
+        "year": 449,
+        "year_end": 600,
+        "description": "Germanic Angles, Saxons, and Jutes migrated to post-Roman Britain, gradually displacing the native Britons.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "tiwanaku-city",
+        "friendly_name": "Tiwanaku City Flourishes",
+        "year": 375,
+        "year_end": 1000,
+        "description": "The city of Tiwanaku near Lake Titicaca reached its peak with monumental stone architecture and wide trade networks.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "germanic-migration-period",
+        "friendly_name": "Germanic Migration Period",
+        "year": 375,
+        "year_end": 568,
+        "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "maya-classical-period",
+        "friendly_name": "Maya Classical Period Flourishes",
+        "year": 250,
+        "year_end": 900,
+        "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 754,
+    "title": "Pope Stephen Crosses to Pepin",
+    "candidates": [
+      {
+        "name": "dunhuang-mogao-caves",
+        "friendly_name": "Mogao Caves Expanded",
+        "year": 366,
+        "year_end": 1368,
+        "description": "Buddhist monks expanded the Mogao Caves at Dunhuang with hundreds of painted grottoes along the Silk Road.",
+        "score": 1,
+        "shared": [
+          "road"
+        ]
+      },
+      {
+        "name": "an-lushan-rebellion",
+        "friendly_name": "An Lushan Rebellion",
+        "year": 755,
+        "year_end": 763,
+        "description": "Devastating rebellion that killed millions and permanently weakened Tang Dynasty China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moldboard-plow-adoption",
+        "friendly_name": "Moldboard Plow Adopted",
+        "year": 750,
+        "year_end": 830,
+        "description": "A plow fitted with a moldboard flipped each furrow slice over instead of scratching the ground, opening wetter and heavier land.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "abbassid-science-translation",
+        "friendly_name": "Abbasid Translation Movement",
+        "year": 750,
+        "year_end": 950,
+        "description": "The Abbasid House of Wisdom in Baghdad translated Greek, Persian, and Indian scientific texts into Arabic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "byzantine-image-dispute",
+        "friendly_name": "Byzantine Iconoclasm Period",
+        "year": 726,
+        "year_end": 842,
+        "description": "Emperor Leo III banned religious icons, sparking a century-long crisis in the Byzantine Empire.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tang-poetry-golden-age",
+        "friendly_name": "Tang Dynasty Poetry Golden Age",
+        "year": 713,
+        "year_end": 765,
+        "description": "Tang China's golden age of poetry produced masters like Li Bai and Du Fu, still revered today.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 802,
+    "title": "Elephant Gift Reaches Charlemagne",
+    "candidates": [
+      {
+        "name": "byzantine-image-dispute",
+        "friendly_name": "Byzantine Iconoclasm Period",
+        "year": 726,
+        "year_end": 842,
+        "description": "Emperor Leo III banned religious icons, sparking a century-long crisis in the Byzantine Empire.",
+        "score": 2,
+        "shared": [
+          "emperor",
+          "long"
+        ]
+      },
+      {
+        "name": "charlemagne-saxon-wars",
+        "friendly_name": "Charlemagne Conquers Saxony",
+        "year": 772,
+        "year_end": 804,
+        "description": "Charlemagne waged a brutal 30-year campaign to conquer and Christianize the pagan Saxons.",
+        "score": 1,
+        "shared": [
+          "charlemagne"
+        ]
+      },
+      {
+        "name": "khmer-empire",
+        "friendly_name": "Khmer Empire Established",
+        "year": 802,
+        "description": "Jayavarman II declared Khmer independence and founded the empire that would later build Angkor Wat.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wari-empire",
+        "friendly_name": "Wari Empire Peak",
+        "year": 800,
+        "year_end": 900,
+        "description": "The Wari Empire reached its greatest extent, holding highland and coastal Peru from its capital near Ayacucho.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bukhara-trading-city",
+        "friendly_name": "Bukhara Trading Center",
+        "year": 800,
+        "year_end": 999,
+        "description": "Bukhara grew into a major Silk Road trading and scholarly center under the Samanid dynasty in Central Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ghana-gold-trade",
+        "friendly_name": "Ghana Empire Controls Gold Trade",
+        "year": 800,
+        "year_end": 1200,
+        "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 921,
+    "title": "Ibn Fadlan's Embassy to the Volga",
+    "candidates": [
+      {
+        "name": "bukhara-samanid-scholars",
+        "friendly_name": "Bukhara Scholarship Peak",
+        "year": 892,
+        "year_end": 999,
+        "description": "Under the Samanid dynasty, Bukhara became a leading center of Persian and Islamic scholarship, nurturing scholars like Ibn Sina.",
+        "score": 1,
+        "shared": [
+          "ibn"
+        ]
+      },
+      {
+        "name": "inuit-thule-culture",
+        "friendly_name": "Thule Culture Inuit Expansion",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "marquesas-settlement-east-polynesia",
+        "friendly_name": "Marquesas Islands Settled",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "water-power-industrial",
+        "friendly_name": "Water Power Drives Early Industries",
+        "year": 900,
+        "year_end": 1384,
+        "description": "Water power was adapted beyond grain milling to drive sawmills, fulling mills, and metalworking hammers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chaco-canyon-development",
+        "friendly_name": "Chaco Canyon Great Houses",
+        "year": 900,
+        "year_end": 1115,
+        "description": "Chaco Canyon great houses expanded with multi-story masonry buildings serving as ceremonial centers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "khmer-baray-hydraulics",
+        "friendly_name": "Khmer Baray Reservoirs",
+        "year": 900,
+        "year_end": 1066,
+        "description": "The Khmer Empire built massive barays (reservoirs) to manage water for agriculture around Angkor.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 957,
+    "title": "Olga of Kiev Visits Constantinople",
+    "candidates": [
+      {
+        "name": "constantine-vii-purple-porphyrogenitus",
+        "friendly_name": "Constantine VII Cultural Flowering",
+        "year": 945,
+        "year_end": 959,
+        "description": "Emperor Constantine VII Porphyrogennetos patronized encyclopedic compilations of Byzantine knowledge and court ceremony.",
+        "score": 3,
+        "shared": [
+          "ceremony",
+          "byzantine",
+          "emperor"
+        ]
+      },
+      {
+        "name": "chimor-chan-chan-city",
+        "friendly_name": "Chan Chan Capital City Flourishes",
+        "year": 900,
+        "year_end": 1470,
+        "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "macedonian-renaissance-byzant",
+        "friendly_name": "Macedonian Renaissance",
+        "year": 867,
+        "year_end": 1056,
+        "description": "The Macedonian dynasty oversaw a revival of classical learning and art in Constantinople spanning the 9th-11th centuries.",
+        "score": 1,
+        "shared": [
+          "constantinople"
+        ]
+      },
+      {
+        "name": "bukhara-trading-city",
+        "friendly_name": "Bukhara Trading Center",
+        "year": 800,
+        "year_end": 999,
+        "description": "Bukhara grew into a major Silk Road trading and scholarly center under the Samanid dynasty in Central Asia.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "tiwanaku-city",
+        "friendly_name": "Tiwanaku City Flourishes",
+        "year": 375,
+        "year_end": 1000,
+        "description": "The city of Tiwanaku near Lake Titicaca reached its peak with monumental stone architecture and wide trade networks.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "toltec-civilization",
+        "friendly_name": "Toltec Civilization Flourishes",
+        "year": 950,
+        "year_end": 1150,
+        "description": "The Toltec civilization dominated central Mexico from their capital Tula, later revered by the Aztecs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1077,
+    "title": "Henry IV Humbles Himself at Canossa",
+    "candidates": [
+      {
+        "name": "walk-to-canossa",
+        "friendly_name": "Walk to Canossa",
+        "year": 1077,
+        "description": "Emperor Henry IV stood barefoot in the snow for three days seeking Pope Gregory VII's forgiveness after excommunication.",
+        "score": 8,
+        "shared": [
+          "henry",
+          "canossa",
+          "stood",
+          "barefoot",
+          "snow",
+          "days",
+          "pope",
+          "excommunication"
+        ]
+      },
+      {
+        "name": "investiture-controversy-begins",
+        "friendly_name": "Investiture Controversy Begins",
+        "year": 1076,
+        "description": "Pope Gregory VII and Emperor Henry IV clashed over the right to appoint church officials, sparking a decades-long power struggle.",
+        "score": 2,
+        "shared": [
+          "henry",
+          "pope"
+        ]
+      },
+      {
+        "name": "goryeo-dynasty",
+        "friendly_name": "Goryeo Prosperity Under Munjong",
+        "year": 1046,
+        "year_end": 1083,
+        "description": "Under King Munjong, Korea's Goryeo kingdom enjoyed its most settled and prosperous years.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "pagan-kingdom-flourishes",
+        "friendly_name": "Pagan Kingdom Flourishes in Burma",
+        "year": 1044,
+        "year_end": 1077,
+        "description": "King Anawrahta unified Burma under the Pagan Kingdom, adopting Theravada Buddhism and building thousands of temples.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "khorezm-state",
+        "friendly_name": "Khorezm Sultanate Flourishes",
+        "year": 1077,
+        "year_end": 1231,
+        "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tower-london",
+        "friendly_name": "Tower of London Built",
+        "year": 1078,
+        "description": "William the Conqueror began construction of the iconic fortress.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1246,
+    "title": "Carpini Reaches the Great Khan",
+    "candidates": [
+      {
+        "name": "tran-dynasty-rule",
+        "friendly_name": "Tran Dynasty Rules Vietnam",
+        "year": 1225,
+        "year_end": 1400,
+        "description": "The Tran dynasty took power in Vietnam, later repelling three Mongol invasions and strengthening Vietnamese identity.",
+        "score": 1,
+        "shared": [
+          "mongol"
+        ]
+      },
+      {
+        "name": "zimbabwe-trading-network",
+        "friendly_name": "Great Zimbabwe Trade",
+        "year": 1220,
+        "year_end": 1450,
+        "description": "Great Zimbabwe became a major trading center connecting interior African gold and ivory to Swahili coastal ports.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "great-zimbabwe-stone-construction",
+        "friendly_name": "Great Zimbabwe Stone Architecture",
+        "year": 1200,
+        "year_end": 1450,
+        "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "great-zimbabwe",
+        "friendly_name": "Great Zimbabwe Built",
+        "year": 1100,
+        "year_end": 1450,
+        "description": "The medieval African city's massive stone structures were constructed.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "chagatai-trade-routes",
+        "friendly_name": "Chagatai Khanate Trade",
+        "year": 1245,
+        "description": "The Chagatai Khanate controlled key Silk Road segments, facilitating trade between China, Persia, and Europe.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1287,
+    "title": "Rabban Sauma Reaches Europe",
+    "candidates": [
+      {
+        "name": "tran-dynasty-rule",
+        "friendly_name": "Tran Dynasty Rules Vietnam",
+        "year": 1225,
+        "year_end": 1400,
+        "description": "The Tran dynasty took power in Vietnam, later repelling three Mongol invasions and strengthening Vietnamese identity.",
+        "score": 1,
+        "shared": [
+          "mongol"
+        ]
+      },
+      {
+        "name": "magdeburg-rights-spread",
+        "friendly_name": "Magdeburg Rights Spread",
+        "year": 1200,
+        "year_end": 1400,
+        "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "paper-technology-spreads",
+        "friendly_name": "Paper Technology Spreads to Europe",
+        "year": 1056,
+        "year_end": 1340,
+        "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "population-doubling-medieval",
+        "friendly_name": "Medieval Population Doubles",
+        "year": 1000,
+        "year_end": 1300,
+        "description": "Europe's population roughly doubled during the High Middle Ages due to agricultural improvements and warmer climate.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "heavy-plow-adoption",
+        "friendly_name": "Heavy Plow Adoption Europe",
+        "year": 1000,
+        "year_end": 1300,
+        "description": "The heavy plow became widespread across medieval Europe, enabling productive farming on previously uncultivated soils.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "eyeglasses-invented",
+        "friendly_name": "Eyeglasses Invented",
+        "year": 1286,
+        "description": "Reading glasses were invented in Italy, transforming scholarship.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1400,
+    "title": "Manuel II Visits London",
+    "candidates": [
+      {
+        "name": "oyo-empire-military-innovation",
+        "friendly_name": "Oyo Empire Builds Cavalry",
+        "year": 1400,
+        "description": "The Oyo Empire in West Africa built a powerful cavalry force that dominated the Yoruba region.",
+        "score": 1,
+        "shared": [
+          "west"
+        ]
+      },
+      {
+        "name": "wolof-teranga-culture",
+        "friendly_name": "Wolof Teranga Hospitality",
+        "year": 1400,
+        "description": "The Wolof people of the Jolof Empire developed teranga hospitality traditions and trade networks in West Africa.",
+        "score": 1,
+        "shared": [
+          "west"
+        ]
+      },
+      {
+        "name": "buganda-kabaka-system",
+        "friendly_name": "Buganda Kabaka System",
+        "year": 1400,
+        "description": "The Buganda kingdom developed its kabaka (king) system of centralized governance in the Great Lakes region.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "salt-gold-trade-caravan",
+        "friendly_name": "Salt-Gold Caravan Trade",
+        "year": 1400,
+        "description": "Trans-Saharan caravan routes thrived on exchanging Saharan salt for West African gold.",
+        "score": 1,
+        "shared": [
+          "west"
+        ]
+      },
+      {
+        "name": "slave-trade-ottomans",
+        "friendly_name": "Ottoman Slave Trade System Expands",
+        "year": 1400,
+        "description": "The Ottoman Empire expanded its slave trade networks across the Black Sea, Balkans, and eastern Mediterranean.",
+        "score": 1,
+        "shared": [
+          "ottomans"
+        ]
+      },
+      {
+        "name": "houppelande-court-gown",
+        "friendly_name": "The Houppelande Court Gown",
+        "year": 1400,
+        "description": "Late medieval European courts favored the houppelande, a voluminous flowing robe with deep trailing sleeves.",
+        "score": 1,
+        "shared": [
+          "courts"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1404,
+    "title": "Clavijo's Embassy Meets Timur",
+    "candidates": [
+      {
+        "name": "tuvalu-mausoleum-built",
+        "friendly_name": "Mausoleum of Tamerlane Built",
+        "year": 1404,
+        "description": "The Gur-e-Amir mausoleum in Samarkand was built as Timur's final resting place, featuring a fluted dome with blue tiles.",
+        "score": 2,
+        "shared": [
+          "timur",
+          "samarkand"
+        ]
+      },
+      {
+        "name": "timurid-dynasty",
+        "friendly_name": "Timurid Dynasty Power",
+        "year": 1405,
+        "year_end": 1507,
+        "description": "The Timurid dynasty ruled Central Asia after Timur's death, fostering a golden age of Persian art and science.",
+        "score": 1,
+        "shared": [
+          "timur"
+        ]
+      },
+      {
+        "name": "sulu-sultanate",
+        "friendly_name": "Sulu Sultanate Philippine Islands",
+        "year": 1405,
+        "year_end": 1457,
+        "description": "The Sulu Sultanate was established in the southern Philippines as a center of Islamic trade and governance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ming-treasure-fleets",
+        "friendly_name": "Zheng He's Treasure Fleets",
+        "year": 1405,
+        "description": "Admiral Zheng He launched the first of seven massive naval expeditions from China across the Indian Ocean.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chatham-islands-settlement",
+        "friendly_name": "Chatham Islands Settled",
+        "year": 1400,
+        "year_end": 1500,
+        "description": "Polynesian voyagers settled the remote Chatham Islands east of New Zealand, becoming the Moriori people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "open-field-system-abandonment",
+        "friendly_name": "Open Field System Declines",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1498,
+    "title": "Da Gama Is Received at Calicut",
+    "candidates": [
+      {
+        "name": "vasco-da-gama-india",
+        "friendly_name": "Vasco da Gama Reaches India",
+        "year": 1498,
+        "description": "The Portuguese explorer found a sea route from Europe to India.",
+        "score": 3,
+        "shared": [
+          "gama",
+          "portuguese",
+          "india"
+        ]
+      },
+      {
+        "name": "cabot-north-america",
+        "friendly_name": "Cabot Reaches North America",
+        "year": 1497,
+        "description": "John Cabot explored the coast of North America for England.",
+        "score": 1,
+        "shared": [
+          "coast"
+        ]
+      },
+      {
+        "name": "adil-shahi-dynasty",
+        "friendly_name": "Adil Shahi Dynasty Rules Bijapur",
+        "year": 1490,
+        "year_end": 1686,
+        "description": "Yusuf Adil Shah founded the Adil Shahi dynasty, ruling the Bijapur Sultanate in the Deccan region of India.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "kerala-school-mathematics",
+        "friendly_name": "Kerala School Calculus",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "The Kerala school of mathematics in India developed infinite series expansions, anticipating European calculus by centuries.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "leonardo-da-vinci-art",
+        "friendly_name": "Leonardo Paints Last Supper",
+        "year": 1498,
+        "description": "Leonardo painted The Last Supper in Milan, showcasing his mastery of perspective and human emotion.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1519,
+    "title": "Cortes Meets Moctezuma",
+    "candidates": [
+      {
+        "name": "cortes-meets-aztecs",
+        "friendly_name": "Cortés Meets Aztecs",
+        "year": 1519,
+        "description": "Hernán Cortés first encountered the Aztec Empire in Mexico.",
+        "score": 3,
+        "shared": [
+          "cortes",
+          "meets",
+          "aztec"
+        ]
+      },
+      {
+        "name": "aztec-peak",
+        "friendly_name": "Aztec Empire Peak",
+        "year": 1502,
+        "year_end": 1520,
+        "description": "The Aztec Empire reached peak power under Moctezuma II, ruling over 5 million people from Tenochtitlan.",
+        "score": 3,
+        "shared": [
+          "moctezuma",
+          "aztec",
+          "tenochtitlan"
+        ]
+      },
+      {
+        "name": "charles-v-holy-roman-emperor",
+        "friendly_name": "Charles V Crowned Emperor",
+        "year": 1519,
+        "description": "Charles V's election united Spain, the Netherlands, Austria, and the Holy Roman Empire under one ruler.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "field-of-cloth-of-gold",
+        "friendly_name": "Field of the Cloth of Gold",
+        "year": 1520,
+        "description": "Henry VIII and Francis I met in an extravagant diplomatic summit that failed to secure lasting alliance.",
+        "score": 1,
+        "shared": [
+          "met"
+        ]
+      },
+      {
+        "name": "turkey-reaches-europe",
+        "friendly_name": "Turkey Brought to Europe",
+        "year": 1520,
+        "description": "Spanish explorers brought the domesticated turkey from the Americas to Europe as a new food bird.",
+        "score": 1,
+        "shared": [
+          "spanish"
+        ]
+      },
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1520,
+    "title": "Field of the Cloth of Gold",
+    "candidates": [
+      {
+        "name": "field-of-cloth-of-gold",
+        "friendly_name": "Field of the Cloth of Gold",
+        "year": 1520,
+        "description": "Henry VIII and Francis I met in an extravagant diplomatic summit that failed to secure lasting alliance.",
+        "score": 4,
+        "shared": [
+          "field",
+          "cloth",
+          "gold",
+          "met"
+        ]
+      },
+      {
+        "name": "open-field-system-abandonment",
+        "friendly_name": "Open Field System Declines",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+        "score": 2,
+        "shared": [
+          "field",
+          "england"
+        ]
+      },
+      {
+        "name": "death-leonardo-da-vinci",
+        "friendly_name": "Death of Leonardo da Vinci",
+        "year": 1519,
+        "description": "The Renaissance polymath died in France, leaving behind masterpieces and notebooks of inventions.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "printing-reformation-pamphlets",
+        "friendly_name": "Reformation Pamphlets Spread",
+        "year": 1520,
+        "description": "The printing press allowed Luther's ideas to spread rapidly through pamphlets across German-speaking lands.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mannerism-art-style",
+        "friendly_name": "Mannerism Art Style Emerges",
+        "year": 1520,
+        "description": "Artists like Pontormo and Parmigianino developed Mannerism, featuring elongated forms and unusual compositions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "population-collapse-americas",
+        "friendly_name": "American Population Collapse",
+        "year": 1520,
+        "description": "Smallpox and other Old World diseases caused catastrophic population decline among Indigenous Americans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1553,
+    "title": "Chancellor Opens Trade with Muscovy",
+    "candidates": [
+      {
+        "name": "birth-walter-raleigh",
+        "friendly_name": "Birth of Walter Raleigh",
+        "year": 1552,
+        "description": "The English explorer, writer, and courtier who sponsored colonies in the New World under Elizabeth I.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "lunda-empire-formation",
+        "friendly_name": "Lunda Empire Emerges",
+        "year": 1550,
+        "year_end": 1700,
+        "description": "The Lunda Empire emerged in the southern Congo basin, expanding through trade and political alliances.",
+        "score": 1,
+        "shared": [
+          "trade"
+        ]
+      },
+      {
+        "name": "chili-peppers-spread",
+        "friendly_name": "Chili Peppers Spread Worldwide",
+        "year": 1500,
+        "year_end": 1614,
+        "description": "Traders carried American chili peppers across Asia and Africa, transforming cuisines from India to Korea.",
+        "score": 1,
+        "shared": [
+          "asia"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "northern"
+        ]
+      },
+      {
+        "name": "servetus-burned-at-stake",
+        "friendly_name": "Servetus Burned at Stake",
+        "year": 1553,
+        "description": "Michael Servetus was burned for heresy in Calvin's Geneva for denying the Trinity, showing Protestant intolerance of dissent.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mary-i-becomes-queen",
+        "friendly_name": "Mary I Becomes Queen",
+        "year": 1553,
+        "description": "Mary Tudor took the throne as England's first ruling queen and set about restoring the Catholic faith by force.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1585,
+    "title": "Japanese Boy Envoys Meet the Pope",
+    "candidates": [
+      {
+        "name": "toyotomi-hideyoshi-rule",
+        "friendly_name": "Toyotomi Hideyoshi's Rule",
+        "year": 1585,
+        "year_end": 1598,
+        "description": "Toyotomi Hideyoshi unified Japan after a century of civil war through military campaigns and diplomacy.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "golden-temple-amritsar",
+        "friendly_name": "Golden Temple Construction Begins",
+        "year": 1585,
+        "description": "Guru Arjan began building the holiest gurdwara in Sikhism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chocolate-trade-establishment",
+        "friendly_name": "Chocolate Trade with Europe",
+        "year": 1585,
+        "description": "Regular chocolate shipments from Veracruz to Seville established a permanent European chocolate trade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mataram-empire",
+        "friendly_name": "Mataram Sultanate Rise",
+        "year": 1586,
+        "year_end": 1601,
+        "description": "The Mataram Sultanate rose to dominate most of Java under Senopati's leadership.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "escorial-palace",
+        "friendly_name": "El Escorial Completed",
+        "year": 1584,
+        "description": "Philip II of Spain completed his massive royal palace and monastery.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1601,
+    "title": "Matteo Ricci Enters Beijing",
+    "candidates": [
+      {
+        "name": "ricci-chinese-world-map",
+        "friendly_name": "Ricci's Chinese World Map",
+        "year": 1602,
+        "description": "Matteo Ricci and Chinese scholars printed a world map showing the Americas, with China set near the centre of the sheet.",
+        "score": 2,
+        "shared": [
+          "matteo",
+          "ricci"
+        ]
+      },
+      {
+        "name": "yoruba-oyo-confederation",
+        "friendly_name": "Yoruba Oyo Confederation Formation",
+        "year": 1600,
+        "description": "The Oyo confederation united Yoruba city-states under an alaafin (king) with tributary relationships.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "galileo-pendulum-isochronism",
+        "friendly_name": "Galileo Times the Pendulum",
+        "year": 1602,
+        "description": "Galileo argued that a pendulum takes the same time to swing whatever the width of its arc, the principle behind exact clocks.",
+        "score": 1,
+        "shared": [
+          "clocks"
+        ]
+      },
+      {
+        "name": "isfahan-city-building",
+        "friendly_name": "Isfahan Built as Safavid Capital",
+        "year": 1598,
+        "year_end": 1629,
+        "description": "Shah Abbas I moved the Safavid capital to Isfahan and transformed it with grand mosques, bazaars, and bridges.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "shakespeare-hamlet-othello",
+        "friendly_name": "Shakespeares Great Tragedies",
+        "year": 1601,
+        "description": "Shakespeare wrote Hamlet, Othello, King Lear, and Macbeth during his greatest creative period.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1615,
+    "title": "Hasekura Tsunenaga Visits Rome",
+    "candidates": [
+      {
+        "name": "edo-castle-architecture",
+        "friendly_name": "Japanese Castle Boom",
+        "year": 1603,
+        "year_end": 1615,
+        "description": "Japanese daimyo built massive stone castles across Japan during the early Edo period's castle-building boom.",
+        "score": 1,
+        "shared": [
+          "japanese"
+        ]
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 1,
+        "shared": [
+          "spain"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "shogun-tokugawa-succession",
+        "friendly_name": "Tokugawa Succession Secured",
+        "year": 1615,
+        "description": "After the Siege of Osaka, Tokugawa Ieyasu eliminated rival claimants and secured hereditary shogunal succession for his dynasty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "buke-shohatto-code",
+        "friendly_name": "Buke Shohatto Code Issued",
+        "year": 1615,
+        "description": "The Tokugawa shogunate issued the Laws for Military Houses, regulating daimyo behavior and reinforcing centralized feudal control.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "coffee-introduction",
+        "friendly_name": "Coffee Reaching Europe",
+        "year": 1615,
+        "description": "Venetian merchants brought coffee to Europe from Ottoman markets, sparking the continent's coffeehouse culture.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1686,
+    "title": "Siamese Embassy to Louis XIV",
+    "candidates": [
+      {
+        "name": "versailles-construction",
+        "friendly_name": "Palace of Versailles Construction",
+        "year": 1661,
+        "year_end": 1715,
+        "description": "Louis XIV began transforming a hunting lodge into the Palace of Versailles, the grandest royal residence in Europe.",
+        "score": 3,
+        "shared": [
+          "louis",
+          "xiv",
+          "versailles"
+        ]
+      },
+      {
+        "name": "enlightenment-age-begins",
+        "friendly_name": "Age of Enlightenment Begins",
+        "year": 1687,
+        "description": "European thinkers championed reason, science, and individual rights, reshaping philosophy, politics, and society.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "newton-principia",
+        "friendly_name": "Newton Publishes Principia",
+        "year": 1687,
+        "description": "Newton published his laws of motion and universal gravitation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-handel",
+        "friendly_name": "Birth of Handel",
+        "year": 1685,
+        "description": "The German-British Baroque composer of Messiah and Water Music, a giant of choral and orchestral music.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "huguenot-diaspora",
+        "friendly_name": "Huguenot Diaspora",
+        "year": 1685,
+        "description": "France revoked Protestant freedoms, driving Huguenots to flee to England, the Dutch Republic, and beyond.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dampier-circumnavigation",
+        "friendly_name": "Dampier Circumnavigates",
+        "year": 1679,
+        "year_end": 1711,
+        "description": "William Dampier became the first person to circumnavigate the world three times.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1697,
+    "title": "Peter the Great's Grand Embassy",
+    "candidates": [
+      {
+        "name": "peter-great-reforms",
+        "friendly_name": "Peter the Great's Army Reforms",
+        "year": 1698,
+        "description": "Peter the Great rebuilt Russia's army along European lines after his Grand Embassy tour of the West.",
+        "score": 5,
+        "shared": [
+          "peter",
+          "great",
+          "grand",
+          "embassy",
+          "his"
+        ]
+      },
+      {
+        "name": "peter-great-modernizes",
+        "friendly_name": "Peter the Great Modernizes Russia",
+        "year": 1697,
+        "year_end": 1725,
+        "description": "Tsar Peter I westernized Russia and founded St. Petersburg as its new capital.",
+        "score": 3,
+        "shared": [
+          "peter",
+          "great",
+          "tsar"
+        ]
+      },
+      {
+        "name": "treaty-ryswick",
+        "friendly_name": "Treaty of Ryswick",
+        "year": 1697,
+        "description": "The treaty ended the Nine Years' War between France and the Grand Alliance.",
+        "score": 1,
+        "shared": [
+          "grand"
+        ]
+      },
+      {
+        "name": "great-baltic-famine",
+        "friendly_name": "Great Baltic Famine",
+        "year": 1695,
+        "year_end": 1697,
+        "description": "A run of cold, wet summers ruined grain harvests across Sweden, Finland and Estonia, killing a fifth of the region's people.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "wren-st-pauls-cathedral",
+        "friendly_name": "Wren Designs St Paul's Cathedral",
+        "year": 1675,
+        "year_end": 1710,
+        "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "versailles-construction",
+        "friendly_name": "Palace of Versailles Construction",
+        "year": 1661,
+        "year_end": 1715,
+        "description": "Louis XIV began transforming a hunting lodge into the Palace of Versailles, the grandest royal residence in Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1710,
+    "title": "Four Mohawk Kings Meet Queen Anne",
+    "candidates": [
+      {
+        "name": "ascot-racecourse-founded",
+        "friendly_name": "Royal Ascot Founded",
+        "year": 1711,
+        "description": "Queen Anne founded Ascot racecourse near Windsor, beginning one of horse racing's most prestigious meetings.",
+        "score": 2,
+        "shared": [
+          "queen",
+          "anne"
+        ]
+      },
+      {
+        "name": "statute-of-anne",
+        "friendly_name": "First Copyright Law",
+        "year": 1710,
+        "description": "The Statute of Anne, the first law regulating copyright, came into force in Great Britain.",
+        "score": 1,
+        "shared": [
+          "anne"
+        ]
+      },
+      {
+        "name": "wren-st-pauls-cathedral",
+        "friendly_name": "Wren Designs St Paul's Cathedral",
+        "year": 1675,
+        "year_end": 1710,
+        "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
+        "score": 1,
+        "shared": [
+          "london"
+        ]
+      },
+      {
+        "name": "panniers-wide-skirts",
+        "friendly_name": "Panniers Widen Court Skirts",
+        "year": 1710,
+        "year_end": 1780,
+        "description": "Hooped petticoats called panniers spread court skirts out wide, a fashion that ruled European courts for decades.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-poltava",
+        "friendly_name": "Battle of Poltava",
+        "year": 1709,
+        "description": "Peter the Great crushed Sweden, establishing Russia as a major European power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-david-hume",
+        "friendly_name": "Birth of David Hume",
+        "year": 1711,
+        "description": "The Scottish philosopher whose empiricism and skepticism deeply influenced Enlightenment thought.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1793,
+    "title": "Macartney's Mission to Qianlong",
+    "candidates": [
+      {
+        "name": "macartney-mission-rebuffed",
+        "friendly_name": "Macartney Mission Rebuffed",
+        "year": 1793,
+        "description": "A British envoy sought open trade with the Qing court but was turned away, an assertion of imperial self-sufficiency.",
+        "score": 5,
+        "shared": [
+          "macartney",
+          "mission",
+          "british",
+          "trade",
+          "sought"
+        ]
+      },
+      {
+        "name": "selective-breeding-animals",
+        "friendly_name": "Selective Breeding of Livestock",
+        "year": 1760,
+        "year_end": 1795,
+        "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "trade"
+        ]
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 1,
+        "shared": [
+          "trade"
+        ]
+      },
+      {
+        "name": "louis-xvi-execution",
+        "friendly_name": "King Louis XVI Executed",
+        "year": 1793,
+        "description": "The French king was guillotined during the Reign of Terror.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "reign-of-terror-begins",
+        "friendly_name": "Reign of Terror Begins",
+        "year": 1793,
+        "description": "The Revolutionary Tribunal began mass executions of perceived enemies of the Revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1814,
+    "title": "Congress of Vienna Opens",
+    "candidates": [
+      {
+        "name": "congress-vienna",
+        "friendly_name": "Congress of Vienna",
+        "year": 1815,
+        "description": "European powers redrew the map after Napoleon's defeat.",
+        "score": 4,
+        "shared": [
+          "congress",
+          "vienna",
+          "map",
+          "after"
+        ]
+      },
+      {
+        "name": "restoration-bourbon-monarchy",
+        "friendly_name": "Restoration of Bourbon Monarchy",
+        "year": 1814,
+        "description": "After Napoleon's abdication, the Bourbon dynasty was restored with Louis XVIII taking the French throne.",
+        "score": 2,
+        "shared": [
+          "after",
+          "french"
+        ]
+      },
+      {
+        "name": "concert-europe",
+        "friendly_name": "Concert of Europe Established",
+        "year": 1815,
+        "description": "Great powers agreed to maintain stability and suppress revolution.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "smith-geological-map",
+        "friendly_name": "First Geological Map",
+        "year": 1815,
+        "description": "William Smith mapped England's rock strata using fossils, founding modern geological mapping.",
+        "score": 1,
+        "shared": [
+          "map"
+        ]
+      },
+      {
+        "name": "rothschild-banking-empire",
+        "friendly_name": "Rothschild Banking Empire",
+        "year": 1815,
+        "description": "The Rothschild family financed governments across Europe, becoming the era's most powerful banking dynasty.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "famine-cycles-break",
+        "friendly_name": "Famine Cycles End in Europe",
+        "year": 1700,
+        "year_end": 1817,
+        "description": "Agricultural improvements and New World crops helped break the recurring cycle of devastating famines in Western Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1816,
+    "title": "Amherst's Embassy to Beijing",
+    "candidates": [
+      {
+        "name": "bombardment-algiers-slaves-freed",
+        "friendly_name": "Bombardment of Algiers",
+        "year": 1816,
+        "description": "A British and Dutch fleet bombarded Algiers to force the release of Christian slaves and end Barbary corsair attacks on European shipping.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "congress-vienna",
+        "friendly_name": "Congress of Vienna",
+        "year": 1815,
+        "description": "European powers redrew the map after Napoleon's defeat.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "second-treaty-of-paris",
+        "friendly_name": "Second Treaty of Paris",
+        "year": 1815,
+        "description": "Following the defeat at Waterloo, the allied powers imposed final peace terms on France, closing a long era of continental war.",
+        "score": 1,
+        "shared": [
+          "second"
+        ]
+      },
+      {
+        "name": "shaka-zulu-kingdom",
+        "friendly_name": "Shaka Zulu Founds Zulu Kingdom",
+        "year": 1816,
+        "description": "Shaka unified Zulu clans into a powerful African kingdom.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "year-without-summer",
+        "friendly_name": "Year Without a Summer",
+        "year": 1816,
+        "description": "Volcanic ash from Tambora caused crop failures and famine worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stethoscope-invented",
+        "friendly_name": "Stethoscope Invented",
+        "year": 1816,
+        "description": "French physician René Laënnec invented the stethoscope, revolutionizing the diagnosis of heart and lung conditions.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1871,
+    "title": "Iwakura Mission Tours the West",
+    "candidates": [
+      {
+        "name": "german-unification",
+        "friendly_name": "German Unification",
+        "year": 1871,
+        "description": "Prussia united German states into the German Empire after defeating France.",
+        "score": 1,
+        "shared": [
+          "states"
+        ]
+      },
+      {
+        "name": "treaty-of-frankfurt",
+        "friendly_name": "Treaty of Frankfurt",
+        "year": 1871,
+        "description": "Peace treaty ending the Franco-Prussian War, with France ceding Alsace-Lorraine to Germany.",
+        "score": 1,
+        "shared": [
+          "treaty"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "italian-unification",
+        "friendly_name": "Italian Unification Completed",
+        "year": 1871,
+        "description": "The Kingdom of Italy unified the Italian peninsula under one government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "paris-commune",
+        "friendly_name": "Paris Commune",
+        "year": 1871,
+        "description": "Radical socialists briefly governed Paris before being violently suppressed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "peshtigo-fire",
+        "friendly_name": "Peshtigo Fire",
+        "year": 1871,
+        "description": "The deadliest wildfire in American history killed over 1,500 people in Wisconsin.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1878,
+    "title": "Congress of Berlin",
+    "candidates": [
+      {
+        "name": "congress-of-berlin",
+        "friendly_name": "Congress of Berlin",
+        "year": 1878,
+        "description": "Major powers redrew Balkan boundaries after the Russo-Turkish War, creating new independent states.",
+        "score": 4,
+        "shared": [
+          "congress",
+          "berlin",
+          "powers",
+          "balkan"
+        ]
+      },
+      {
+        "name": "bulgaria-independence",
+        "friendly_name": "Bulgaria Independence",
+        "year": 1878,
+        "description": "Bulgaria gained autonomy from the Ottoman Empire following the Congress of Berlin.",
+        "score": 2,
+        "shared": [
+          "congress",
+          "berlin"
+        ]
+      },
+      {
+        "name": "romania-independence-recognized",
+        "friendly_name": "Romania Wins Independence",
+        "year": 1878,
+        "description": "The great powers recognised Romania as a sovereign state after it fought the Ottomans alongside Russia.",
+        "score": 2,
+        "shared": [
+          "powers",
+          "ottomans"
+        ]
+      },
+      {
+        "name": "serbia-independence",
+        "friendly_name": "Serbia Independence",
+        "year": 1876,
+        "year_end": 1878,
+        "description": "Serbia declared independence from the Ottoman Empire, later recognized at the Congress of Berlin.",
+        "score": 2,
+        "shared": [
+          "congress",
+          "berlin"
+        ]
+      },
+      {
+        "name": "first-test-cricket-match",
+        "friendly_name": "First Test Cricket Match",
+        "year": 1877,
+        "description": "Australia and England met in the first international Test cricket match, played over several days in Melbourne.",
+        "score": 1,
+        "shared": [
+          "met"
+        ]
+      },
+      {
+        "name": "princess-alice-disaster",
+        "friendly_name": "Princess Alice Disaster",
+        "year": 1878,
+        "description": "A pleasure steamer collision killed over 650 in the Thames River.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1903,
+    "title": "Edward VII Charms Paris",
+    "candidates": [
+      {
+        "name": "fifa-founded",
+        "friendly_name": "FIFA Founded",
+        "year": 1904,
+        "description": "Seven nations founded FIFA in Paris to govern international soccer and organize matches between countries.",
+        "score": 1,
+        "shared": [
+          "paris"
+        ]
+      },
+      {
+        "name": "kishinev-pogrom",
+        "friendly_name": "Kishinev Pogrom",
+        "year": 1903,
+        "description": "A violent anti-Jewish riot in Kishinev, Russia killed 49 Jews and destroyed hundreds of homes, sparking international outrage and increased Jewish emigration.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "panama-independence",
+        "friendly_name": "Panama Independence",
+        "year": 1903,
+        "description": "Panama declared independence from Colombia with US support, enabling construction of the Panama Canal.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "traffic-control",
+        "friendly_name": "Traffic Laws",
+        "year": 1903,
+        "description": "Early automobile traffic regulations were enacted in the United States as motor vehicles became increasingly common on roads.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electrocardiogram-invented",
+        "friendly_name": "Electrocardiogram Invented",
+        "year": 1903,
+        "description": "Willem Einthoven invented the electrocardiogram (ECG), enabling doctors to record the heart's electrical activity.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gas-turbine",
+        "friendly_name": "Gas Turbine",
+        "year": 1903,
+        "description": "Ægidius Elling built the first gas turbine to produce more power than it consumed.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1905,
+    "title": "Kaiser and Tsar Meet at Bjorko",
+    "candidates": [
+      {
+        "name": "first-russian-revolution",
+        "friendly_name": "First Russian Revolution",
+        "year": 1905,
+        "year_end": 1907,
+        "description": "Mass unrest forced Tsar Nicholas II to create a parliament and grant civil liberties.",
+        "score": 1,
+        "shared": [
+          "tsar"
+        ]
+      },
+      {
+        "name": "battle-tsushima",
+        "friendly_name": "Battle of Tsushima",
+        "year": 1905,
+        "description": "Japan destroyed the Russian Baltic Fleet, shocking the Western world.",
+        "score": 1,
+        "shared": [
+          "baltic"
+        ]
+      },
+      {
+        "name": "entente-cordiale",
+        "friendly_name": "Entente Cordiale",
+        "year": 1904,
+        "description": "Britain and France signed agreements ending centuries of rivalry.",
+        "score": 1,
+        "shared": [
+          "signed"
+        ]
+      },
+      {
+        "name": "potemkin-mutiny",
+        "friendly_name": "Potemkin Mutiny",
+        "year": 1905,
+        "description": "Sailors on the Russian battleship Potemkin mutinied during the Russian Revolution, later immortalized in Eisenstein's influential silent film.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "norway-independence-sweden",
+        "friendly_name": "Norway Independence from Sweden",
+        "year": 1905,
+        "description": "Norway peacefully dissolved its union with Sweden, becoming an independent constitutional monarchy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "special-relativity",
+        "friendly_name": "Special Relativity Published",
+        "year": 1905,
+        "description": "Albert Einstein published his theory of special relativity.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1938,
+    "title": "Chamberlain Meets Hitler at Munich",
+    "candidates": [
+      {
+        "name": "munich-agreement",
+        "friendly_name": "Munich Agreement",
+        "year": 1938,
+        "description": "European powers allowed Hitler to annex part of Czechoslovakia.",
+        "score": 3,
+        "shared": [
+          "hitler",
+          "munich",
+          "czechoslovakia"
+        ]
+      },
+      {
+        "name": "wwii-start",
+        "friendly_name": "World War II Begins",
+        "year": 1939,
+        "description": "Germany invaded Poland, triggering declarations of war from Britain and France.",
+        "score": 3,
+        "shared": [
+          "britain",
+          "france",
+          "germany"
+        ]
+      },
+      {
+        "name": "kristallnacht",
+        "friendly_name": "Kristallnacht",
+        "year": 1938,
+        "description": "Nazi mobs attacked Jewish businesses and synagogues across Germany.",
+        "score": 1,
+        "shared": [
+          "germany"
+        ]
+      },
+      {
+        "name": "germany-absorbs-austria",
+        "friendly_name": "Germany Absorbs Austria",
+        "year": 1938,
+        "description": "Germany annexed Austria in the Anschluss, uniting the two German-speaking nations under Nazi rule.",
+        "score": 1,
+        "shared": [
+          "germany"
+        ]
+      },
+      {
+        "name": "nazi-soviet-pact",
+        "friendly_name": "Nazi-Soviet Pact",
+        "year": 1939,
+        "description": "Germany and Soviet Union signed non-aggression pact with secret protocols dividing Eastern Europe.",
+        "score": 1,
+        "shared": [
+          "germany"
+        ]
+      },
+      {
+        "name": "fallingwater",
+        "friendly_name": "Fallingwater Completed",
+        "year": 1939,
+        "description": "Frank Lloyd Wright's house over a waterfall was finished in Pennsylvania.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1943,
+    "title": "Tehran Conference",
+    "candidates": [
+      {
+        "name": "tehran-conference",
+        "friendly_name": "Tehran Conference",
+        "year": 1943,
+        "description": "Roosevelt, Churchill, and Stalin met to coordinate Allied strategy against Nazi Germany.",
+        "score": 9,
+        "shared": [
+          "tehran",
+          "conference",
+          "roosevelt",
+          "churchill",
+          "stalin",
+          "met",
+          "coordinate",
+          "strategy",
+          "against"
+        ]
+      },
+      {
+        "name": "casablanca-conference",
+        "friendly_name": "Casablanca Conference",
+        "year": 1943,
+        "description": "Roosevelt and Churchill met in Morocco, demanding unconditional surrender from Axis powers.",
+        "score": 5,
+        "shared": [
+          "conference",
+          "roosevelt",
+          "churchill",
+          "met",
+          "axis"
+        ]
+      },
+      {
+        "name": "wannsee-conference",
+        "friendly_name": "Wannsee Conference",
+        "year": 1942,
+        "description": "Nazi officials met to coordinate the systematic genocide of European Jews.",
+        "score": 3,
+        "shared": [
+          "conference",
+          "met",
+          "coordinate"
+        ]
+      },
+      {
+        "name": "warsaw-ghetto-uprising",
+        "friendly_name": "Warsaw Ghetto Uprising",
+        "year": 1943,
+        "description": "Jewish resistance fighters staged a major armed revolt against Nazi deportations.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      },
+      {
+        "name": "italy-surrenders-ww2",
+        "friendly_name": "Italy Surrenders",
+        "year": 1943,
+        "description": "Italy signed an armistice with the Allies, exiting the Axis powers.",
+        "score": 1,
+        "shared": [
+          "axis"
+        ]
+      },
+      {
+        "name": "streptomycin-cures-tb",
+        "friendly_name": "Streptomycin Cures Tuberculosis",
+        "year": 1943,
+        "description": "Albert Schatz, in Selman Waksman's lab, isolated streptomycin, the first antibiotic effective against tuberculosis.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      },
+      {
+        "name": "bretton-woods-conference",
+        "friendly_name": "Bretton Woods Conference",
+        "year": 1944,
+        "description": "Allied nations established postwar monetary system with fixed exchange rates and the IMF and World Bank.",
+        "score": 1,
+        "shared": [
+          "conference"
+        ]
+      },
+      {
+        "name": "birth-muhammad-ali",
+        "friendly_name": "Birth of Muhammad Ali",
+        "year": 1942,
+        "description": "The American boxer and three-time heavyweight champion known for his activism and bravado.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "birth-stephen-hawking",
+        "friendly_name": "Birth of Stephen Hawking",
+        "year": 1942,
+        "description": "The English physicist who advanced black hole theory and wrote the bestseller A Brief History of Time.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "izbushensky-cavalry-charge",
+        "friendly_name": "Cavalry Charges at Izbushensky",
+        "year": 1942,
+        "description": "Italian cavalry made a mounted saber charge against Soviet lines, remembered as one of the last true cavalry charges.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1945,
+    "title": "Yalta Conference",
+    "candidates": [
+      {
+        "name": "yalta-conference",
+        "friendly_name": "Yalta Conference",
+        "year": 1945,
+        "description": "Allied leaders met to plan the postwar reorganization of Europe.",
+        "score": 6,
+        "shared": [
+          "yalta",
+          "conference",
+          "met",
+          "plan",
+          "postwar",
+          "europe"
+        ]
+      },
+      {
+        "name": "potsdam-conference",
+        "friendly_name": "Potsdam Conference",
+        "year": 1945,
+        "description": "Allied leaders finalized postwar arrangements for Germany and Europe.",
+        "score": 3,
+        "shared": [
+          "conference",
+          "postwar",
+          "europe"
+        ]
+      },
+      {
+        "name": "bretton-woods-conference",
+        "friendly_name": "Bretton Woods Conference",
+        "year": 1944,
+        "description": "Allied nations established postwar monetary system with fixed exchange rates and the IMF and World Bank.",
+        "score": 3,
+        "shared": [
+          "conference",
+          "postwar",
+          "nations"
+        ]
+      },
+      {
+        "name": "united-nations-founded",
+        "friendly_name": "United Nations Founded",
+        "year": 1945,
+        "description": "Fifty-one nations established the international organization for peace and cooperation.",
+        "score": 2,
+        "shared": [
+          "united",
+          "nations"
+        ]
+      },
+      {
+        "name": "first-un-general-assembly",
+        "friendly_name": "First UN General Assembly",
+        "year": 1946,
+        "description": "The first General Assembly of the United Nations assembles in London with 51 nations represented.",
+        "score": 2,
+        "shared": [
+          "united",
+          "nations"
+        ]
+      },
+      {
+        "name": "wwii-end-europe",
+        "friendly_name": "V-E Day",
+        "year": 1945,
+        "description": "Nazi Germany surrendered unconditionally, ending World War II in Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "atomic-bomb-nagasaki-ww2",
+        "friendly_name": "Atomic Bomb on Nagasaki",
+        "year": 1945,
+        "description": "The US dropped a plutonium bomb on Nagasaki three days after Hiroshima, hastening Japan's surrender.",
+        "score": 1,
+        "shared": [
+          "three"
+        ]
+      },
+      {
+        "name": "post-war-german-expulsions",
+        "friendly_name": "German Expulsions From the East",
+        "year": 1945,
+        "year_end": 1950,
+        "description": "Millions of ethnic Germans were expelled from Eastern Europe at the close of the Second World War.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "churchill-iron-curtain-speech",
+        "friendly_name": "Churchill's Iron Curtain Speech",
+        "year": 1946,
+        "description": "Winston Churchill declared that an 'iron curtain' had descended across Europe, defining Cold War divisions.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "gamow-hot-big-bang",
+        "friendly_name": "Gamow's Hot Early Universe",
+        "year": 1946,
+        "description": "Gamow argued the expanding universe began hot and dense enough to forge the lightest chemical elements.",
+        "score": 1,
+        "shared": [
+          "big"
+        ]
+      },
+      {
+        "name": "japanese-occupation-indies",
+        "friendly_name": "Japan Occupies the Indies",
+        "year": 1942,
+        "year_end": 1945,
+        "description": "Japanese forces seized the Dutch East Indies, ending three centuries of Dutch colonial rule.",
+        "score": 1,
+        "shared": [
+          "three"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1955,
+    "title": "Geneva Summit",
+    "candidates": [
+      {
+        "name": "geneva-summit-1955",
+        "friendly_name": "Geneva Summit",
+        "year": 1955,
+        "description": "Leaders of the US, USSR, UK, and France met in Geneva, the first superpower summit since Potsdam.",
+        "score": 5,
+        "shared": [
+          "geneva",
+          "summit",
+          "leaders",
+          "met",
+          "since"
+        ]
+      },
+      {
+        "name": "algerian-war-begins",
+        "friendly_name": "Algerian War Begins",
+        "year": 1954,
+        "description": "The FLN launched attacks against French rule in Algeria, beginning a brutal eight-year war that ended with Algerian independence.",
+        "score": 2,
+        "shared": [
+          "war",
+          "ended"
+        ]
+      },
+      {
+        "name": "geneva-accords-indochina",
+        "friendly_name": "Geneva Accords on Indochina",
+        "year": 1954,
+        "description": "France and the Viet Minh signed terms closing their colonial war, splitting Vietnam into a northern and southern zone.",
+        "score": 2,
+        "shared": [
+          "geneva",
+          "war"
+        ]
+      },
+      {
+        "name": "bandung-conference",
+        "friendly_name": "Bandung Conference",
+        "year": 1955,
+        "description": "African and Asian nations met to promote cooperation and oppose colonialism.",
+        "score": 1,
+        "shared": [
+          "met"
+        ]
+      },
+      {
+        "name": "austrian-state-treaty",
+        "friendly_name": "Austrian State Treaty",
+        "year": 1955,
+        "description": "Treaty ended Allied occupation and restored Austrian sovereignty as a permanently neutral state.",
+        "score": 1,
+        "shared": [
+          "ended"
+        ]
+      },
+      {
+        "name": "cia-coup-in-guatemala",
+        "friendly_name": "CIA Coup in Guatemala",
+        "year": 1954,
+        "description": "The CIA overthrew democratically elected President Arbenz to protect United Fruit Company interests, beginning decades of military rule and civil war.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "seato-formed",
+        "friendly_name": "SEATO Formed",
+        "year": 1954,
+        "description": "Southeast Asian nations formed a collective defense treaty with Western powers.",
+        "score": 1,
+        "shared": [
+          "powers"
+        ]
+      },
+      {
+        "name": "bannister-four-minute-mile",
+        "friendly_name": "Bannister's Four-Minute Mile",
+        "year": 1954,
+        "description": "Roger Bannister ran a mile in under four minutes in Oxford, breaking a barrier long thought impossible.",
+        "score": 1,
+        "shared": [
+          "four"
+        ]
+      },
+      {
+        "name": "first-ascent-k2",
+        "friendly_name": "First Ascent of K2",
+        "year": 1954,
+        "description": "Lino Lacedelli and Achille Compagnoni reached the summit of K2, the second highest and among the most dangerous peaks on Earth.",
+        "score": 1,
+        "shared": [
+          "summit"
+        ]
+      },
+      {
+        "name": "siege-of-dien-bien-phu",
+        "friendly_name": "Siege of Dien Bien Phu",
+        "year": 1954,
+        "description": "Viet Minh forces besieged a French fortress in the highlands for weeks, a defeat that ended French colonial rule in the region.",
+        "score": 1,
+        "shared": [
+          "ended"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1959,
+    "title": "Khrushchev Tours America",
+    "candidates": [
+      {
+        "name": "us-japan-mutual-security-treaty",
+        "friendly_name": "US-Japan Mutual Security Treaty",
+        "year": 1960,
+        "description": "Japan and the United States sign the Mutual Security Treaty.",
+        "score": 2,
+        "shared": [
+          "united",
+          "states"
+        ]
+      },
+      {
+        "name": "alaska-hawaii-statehood",
+        "friendly_name": "Alaska and Hawaii Statehood",
+        "year": 1959,
+        "description": "Alaska and Hawaii became the 49th and 50th US states, completing continental expansion.",
+        "score": 1,
+        "shared": [
+          "states"
+        ]
+      },
+      {
+        "name": "european-court-human-rights",
+        "friendly_name": "European Court of Human Rights",
+        "year": 1959,
+        "description": "Europe established a court in Strasbourg to hear cases of human rights violations against member states.",
+        "score": 1,
+        "shared": [
+          "states"
+        ]
+      },
+      {
+        "name": "ns-lenin-enters-service",
+        "friendly_name": "NS Lenin Enters Service",
+        "year": 1959,
+        "description": "The Soviet Union commissioned Lenin, the first nuclear powered surface ship, an icebreaker built to keep Arctic shipping lanes open year round.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "nasa-founded",
+        "friendly_name": "NASA Founded",
+        "year": 1958,
+        "description": "US created NASA to lead the space race against the Soviet Union after Sputnik's launch.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "u2-incident",
+        "friendly_name": "U-2 Incident",
+        "year": 1960,
+        "description": "Soviet Union shot down American U-2 spy plane, capturing pilot Gary Powers and escalating Cold War tensions.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "first-credit-card-bankamericard",
+        "friendly_name": "First Bank Credit Card",
+        "year": 1958,
+        "description": "Bank of America mailed the BankAmericard, the first widely used revolving bank credit card, later becoming Visa.",
+        "score": 1,
+        "shared": [
+          "america"
+        ]
+      },
+      {
+        "name": "aral-sea-drying",
+        "friendly_name": "Aral Sea Begins Drying",
+        "year": 1960,
+        "description": "Soviet irrigation projects began diverting rivers, eventually shrinking the Aral Sea to 10% of its size.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "munich-air-disaster-1958",
+        "friendly_name": "Munich Air Disaster",
+        "year": 1958,
+        "description": "A plane crash in Munich killed eight Manchester United players, devastating Matt Busby's celebrated young side.",
+        "score": 1,
+        "shared": [
+          "united"
+        ]
+      },
+      {
+        "name": "first-european-nations-cup-1960",
+        "friendly_name": "First European Nations' Cup",
+        "year": 1960,
+        "description": "The Soviet Union won the first European Nations' Cup, beating Yugoslavia 2-1 in the final in Paris.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1961,
+    "title": "Kennedy Meets Khrushchev in Vienna",
+    "candidates": [
+      {
+        "name": "peace-corps-founded",
+        "friendly_name": "Peace Corps Founded",
+        "year": 1961,
+        "description": "Kennedy established the Peace Corps to send American volunteers to developing countries.",
+        "score": 2,
+        "shared": [
+          "kennedy",
+          "american"
+        ]
+      },
+      {
+        "name": "u2-incident",
+        "friendly_name": "U-2 Incident",
+        "year": 1960,
+        "description": "Soviet Union shot down American U-2 spy plane, capturing pilot Gary Powers and escalating Cold War tensions.",
+        "score": 2,
+        "shared": [
+          "american",
+          "soviet"
+        ]
+      },
+      {
+        "name": "cuban-missile-crisis-1962",
+        "friendly_name": "Cuban Missile Crisis",
+        "year": 1962,
+        "description": "A 13-day nuclear standoff between the US and Soviet Union over missiles in Cuba brought the world to the brink of war.",
+        "score": 2,
+        "shared": [
+          "soviet",
+          "day"
+        ]
+      },
+      {
+        "name": "operation-chopper-vietnam",
+        "friendly_name": "Operation Chopper Vietnam",
+        "year": 1962,
+        "description": "Operation Chopper, the first American combat mission in the Vietnam War, takes place.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "first-summer-paralympics",
+        "friendly_name": "First Paralympic Games",
+        "year": 1960,
+        "description": "Rome hosted the first Paralympic Games for athletes with disabilities, held just after the Summer Olympics.",
+        "score": 1,
+        "shared": [
+          "held"
+        ]
+      },
+      {
+        "name": "aral-sea-drying",
+        "friendly_name": "Aral Sea Begins Drying",
+        "year": 1960,
+        "description": "Soviet irrigation projects began diverting rivers, eventually shrinking the Aral Sea to 10% of its size.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "first-european-nations-cup-1960",
+        "friendly_name": "First European Nations' Cup",
+        "year": 1960,
+        "description": "The Soviet Union won the first European Nations' Cup, beating Yugoslavia 2-1 in the final in Paris.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1972,
+    "title": "Nixon Visits China",
+    "candidates": [
+      {
+        "name": "nixon-china",
+        "friendly_name": "Nixon Visits China",
+        "year": 1972,
+        "description": "President Nixon's visit opened diplomatic relations between the US and China.",
+        "score": 4,
+        "shared": [
+          "nixon",
+          "visits",
+          "china",
+          "president"
+        ]
+      },
+      {
+        "name": "immaculate-reception",
+        "friendly_name": "The Immaculate Reception",
+        "year": 1972,
+        "description": "Franco Harris scooped a deflected pass off his shoetops to score a last-second playoff touchdown for the Pittsburgh Steelers.",
+        "score": 2,
+        "shared": [
+          "off",
+          "his"
+        ]
+      },
+      {
+        "name": "watergate-break-in",
+        "friendly_name": "Watergate Break-In",
+        "year": 1972,
+        "description": "Burglars connected to Nixon's reelection campaign broke into Democratic headquarters, starting the scandal.",
+        "score": 1,
+        "shared": [
+          "nixon"
+        ]
+      },
+      {
+        "name": "fischer-spassky-world-chess",
+        "friendly_name": "Fischer Beats Spassky",
+        "year": 1972,
+        "description": "American Bobby Fischer defeated Boris Spassky in Reykjavik to win the world chess title amid Cold War tension.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "chilean-coup",
+        "friendly_name": "Chilean Coup",
+        "year": 1973,
+        "description": "General Pinochet overthrew elected socialist President Salvador Allende with US support, beginning 17 years of military dictatorship.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "china-un-seat",
+        "friendly_name": "PRC Takes UN Seat",
+        "year": 1971,
+        "description": "The People's Republic of China replaced Taiwan as China's representative at the UN, taking the Security Council seat too.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "end-of-bretton-woods",
+        "friendly_name": "End of Bretton Woods",
+        "year": 1971,
+        "description": "Nixon ended dollar convertibility to gold, collapsing the fixed exchange rate system.",
+        "score": 1,
+        "shared": [
+          "nixon"
+        ]
+      },
+      {
+        "name": "uk-joins-eec",
+        "friendly_name": "UK Joins EEC",
+        "year": 1973,
+        "description": "United Kingdom joined the European Economic Community after two earlier applications were vetoed by France.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "sydney-opera-house-completed",
+        "friendly_name": "Sydney Opera House Completed",
+        "year": 1973,
+        "description": "The iconic performing arts venue opened after 14 years of construction.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "smithsonian-agreement",
+        "friendly_name": "Smithsonian Agreement",
+        "year": 1971,
+        "description": "Major nations realigned currencies after the US ended dollar-gold convertibility, ending fixed Bretton Woods rates.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "first-one-day-international-1971",
+        "friendly_name": "First One-Day International",
+        "year": 1971,
+        "description": "After a washed-out Test, Australia beat England at Melbourne in the first One Day International, watched by 46,000 fans.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "golf-played-on-the-moon-1971",
+        "friendly_name": "Golf Played on the Moon",
+        "year": 1971,
+        "description": "Apollo 14 astronaut Alan Shepard hit two golf balls on the lunar surface, the first time golf was played off Earth.",
+        "score": 1,
+        "shared": [
+          "off"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1977,
+    "title": "Sadat Visits Jerusalem",
+    "candidates": [
+      {
+        "name": "camp-david-accords",
+        "friendly_name": "Camp David Accords",
+        "year": 1978,
+        "description": "Egypt and Israel signed a peace agreement brokered by the US.",
+        "score": 1,
+        "shared": [
+          "israel"
+        ]
+      },
+      {
+        "name": "star-wars",
+        "friendly_name": "Star Wars Released",
+        "year": 1977,
+        "description": "George Lucas's space opera became a cultural phenomenon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "djibouti-independence",
+        "friendly_name": "Djibouti Independence",
+        "year": 1977,
+        "description": "Djibouti gained independence from France, becoming the last French colony in Africa to achieve sovereignty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tenerife-airport",
+        "friendly_name": "Tenerife Airport Disaster",
+        "year": 1977,
+        "description": "Two Boeing 747s collided, killing 583 in the deadliest aviation accident.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "voyager-1-launched",
+        "friendly_name": "Voyager 1 Launched",
+        "year": 1977,
+        "description": "NASA launched Voyager 1, now the farthest human-made object from Earth.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "atari-2600",
+        "friendly_name": "Atari 2600 Home Console Released",
+        "year": 1977,
+        "description": "Atari released the Video Computer System, popularizing home video gaming with interchangeable cartridges.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 1986,
+    "title": "Reagan and Gorbachev at Reykjavik",
+    "candidates": [
+      {
+        "name": "chernobyl-disaster",
+        "friendly_name": "Chernobyl Nuclear Disaster",
+        "year": 1986,
+        "description": "The world's worst nuclear accident occurred at a Soviet power plant in Ukraine.",
+        "score": 2,
+        "shared": [
+          "soviet",
+          "nuclear"
+        ]
+      },
+      {
+        "name": "gorbachev-becomes-leader",
+        "friendly_name": "Gorbachev Becomes Leader",
+        "year": 1985,
+        "description": "Mikhail Gorbachev became Soviet leader, initiating reforms that would ultimately end the Cold War.",
+        "score": 2,
+        "shared": [
+          "gorbachev",
+          "soviet"
+        ]
+      },
+      {
+        "name": "glasnost-perestroika",
+        "friendly_name": "Glasnost and Perestroika",
+        "year": 1985,
+        "description": "Gorbachev introduced policies of openness and restructuring to reform the Soviet system.",
+        "score": 2,
+        "shared": [
+          "gorbachev",
+          "soviet"
+        ]
+      },
+      {
+        "name": "inf-treaty",
+        "friendly_name": "INF Treaty",
+        "year": 1987,
+        "description": "US and USSR agreed to eliminate intermediate-range nuclear missiles, a major arms control achievement.",
+        "score": 2,
+        "shared": [
+          "agreed",
+          "nuclear"
+        ]
+      },
+      {
+        "name": "european-union-precursor",
+        "friendly_name": "Single European Act",
+        "year": 1986,
+        "description": "European nations agreed to create a single market.",
+        "score": 1,
+        "shared": [
+          "agreed"
+        ]
+      },
+      {
+        "name": "us-bombs-libya",
+        "friendly_name": "US Bombs Libya",
+        "year": 1986,
+        "description": "Reagan ordered airstrikes on Libya in retaliation for terrorism, targeting Gaddafi directly.",
+        "score": 1,
+        "shared": [
+          "reagan"
+        ]
+      },
+      {
+        "name": "mir-space-station",
+        "friendly_name": "Mir Space Station Launched",
+        "year": 1986,
+        "description": "The Soviet Union launched the first modular space station, which operated for 15 years.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "lemond-first-us-tour-win-1986",
+        "friendly_name": "LeMond First US Tour Winner",
+        "year": 1986,
+        "description": "Greg LeMond became the first American to win the Tour de France, beating teammate Bernard Hinault.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "phantom-of-opera-premieres",
+        "friendly_name": "Phantom of the Opera Opens",
+        "year": 1986,
+        "description": "A musical about a disfigured composer haunting a Paris opera house opened in London's West End and became a global stage phenomenon.",
+        "score": 1,
+        "shared": [
+          "house"
+        ]
+      },
+      {
+        "name": "montreal-protocol",
+        "friendly_name": "Montreal Protocol Signed",
+        "year": 1987,
+        "description": "Nations agreed to phase out ozone-depleting substances in the most successful environmental treaty.",
+        "score": 1,
+        "shared": [
+          "agreed"
+        ]
+      },
+      {
+        "name": "plaza-accord-signed",
+        "friendly_name": "Plaza Accord Signed",
+        "year": 1985,
+        "description": "Five major economies agreed to weaken the US dollar against the yen and mark to fix trade imbalances.",
+        "score": 1,
+        "shared": [
+          "agreed"
+        ]
+      },
+      {
+        "name": "first-rugby-world-cup-1987",
+        "friendly_name": "First Rugby World Cup",
+        "year": 1987,
+        "description": "New Zealand's All Blacks beat France in Auckland to win the first Rugby World Cup, co-hosted by New Zealand and Australia.",
+        "score": 1,
+        "shared": [
+          "all"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 1989,
+    "title": "Malta Summit",
+    "candidates": [
+      {
+        "name": "panama-invasion",
+        "friendly_name": "Panama Invasion",
+        "year": 1989,
+        "year_end": 1990,
+        "description": "US forces invaded Panama to depose dictator Manuel Noriega on drug trafficking charges, the largest American military operation since Vietnam.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "soviet-withdrawal-afghanistan",
+        "friendly_name": "Soviet Withdrawal from Afghanistan",
+        "year": 1988,
+        "year_end": 1989,
+        "description": "Soviet Union began withdrawing troops from Afghanistan after nine years of costly war.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "armenian-earthquake",
+        "friendly_name": "Armenian Earthquake",
+        "year": 1988,
+        "description": "A devastating earthquake killed over 25,000 people in Soviet Armenia.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "eurotunnel-boring",
+        "friendly_name": "Channel Tunnel Breakthrough",
+        "year": 1990,
+        "description": "British and French tunneling teams met under the English Channel.",
+        "score": 1,
+        "shared": [
+          "met"
+        ]
+      },
+      {
+        "name": "soviet-jewish-emigration",
+        "friendly_name": "Soviet Jewish Emigration",
+        "year": 1990,
+        "description": "As the USSR collapsed, hundreds of thousands of Soviet Jews emigrated to Israel and the United States.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  }
+]
