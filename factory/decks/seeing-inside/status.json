@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T05:09:00.503Z",
+  "updated_at": "2026-10-31T05:12:42.897Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-31T04:07:55.944Z"
     },
     "forssmann-heart-catheter": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "dd073e31ec04502456504accf4e97253db8d4042e3850a92dd5ec07b88f91bd2",
+      "updated_at": "2026-10-31T05:12:42.897Z"
     },
     "apgar-score-newborns": {
       "state": "pending",
