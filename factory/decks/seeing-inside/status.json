@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T03:08:57.043Z",
+  "updated_at": "2026-10-31T03:11:19.531Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-10-31T03:08:57.043Z"
     },
     "herophilus-pulse-timing": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "613932d944902a44df9ae9a25d3f079ba1a32f62436f7e340932452e16426afc",
+      "updated_at": "2026-10-31T03:11:19.531Z"
     },
     "wang-shuhe-pulse-classic": {
       "state": "pending",
