@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T03:15:57.154Z",
+  "updated_at": "2026-10-31T03:18:19.775Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-10-31T03:15:57.154Z"
     },
     "leeuwenhoek-blood-cells": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b97e3110e6040c11123c966ce7d15322740468e656985666956d2db5812aadcb",
+      "updated_at": "2026-10-31T03:18:19.775Z"
     },
     "auenbrugger-chest-percussion": {
       "state": "pending",
