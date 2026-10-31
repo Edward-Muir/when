@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T03:30:01.246Z",
+  "updated_at": "2026-10-31T04:07:55.944Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "hippocratic-bedside-diagnosis": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f8381e8e250618ecb00ae31c626f7417936682afd6f656ca28c8144a05d9c6be",
-      "updated_at": "2026-10-31T03:08:57.043Z"
+      "updated_at": "2026-10-31T04:07:55.648Z"
     },
     "herophilus-pulse-timing": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "613932d944902a44df9ae9a25d3f079ba1a32f62436f7e340932452e16426afc",
-      "updated_at": "2026-10-31T03:11:19.531Z"
+      "updated_at": "2026-10-31T04:07:55.681Z"
     },
     "wang-shuhe-pulse-classic": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The bamboo slips carry rows of distinct, character-like writing in the foreground, which counts as painted text. Repaint the slips as plain bamboo strips with no marks, or only faint unreadable texture.",
       "sha256": "da7e38979112bf35d7c363a36b4912d441d9863cd388bb25fb360c3304aa0a87",
-      "updated_at": "2026-10-31T03:13:38.633Z"
+      "updated_at": "2026-10-31T04:07:55.710Z"
     },
     "santorio-body-thermometer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0777df4a7856f92a3b4ec9d528d83854a10673f27d241e1cc5798105b046376a",
-      "updated_at": "2026-10-31T03:15:57.154Z"
+      "updated_at": "2026-10-31T04:07:55.741Z"
     },
     "leeuwenhoek-blood-cells": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b97e3110e6040c11123c966ce7d15322740468e656985666956d2db5812aadcb",
-      "updated_at": "2026-10-31T03:18:19.775Z"
+      "updated_at": "2026-10-31T04:07:55.772Z"
     },
     "auenbrugger-chest-percussion": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ba9606c5212eddab7661fde5634a6d5e108d5384793170a8a488a082c680d24b",
-      "updated_at": "2026-10-31T03:20:39.701Z"
+      "updated_at": "2026-10-31T04:07:55.805Z"
     },
     "bozzini-light-conductor": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "be44bbca6a85efd6b274895dec1766fdf97f2b8d0f170304b384686f4fc9413b",
-      "updated_at": "2026-10-31T03:23:00.216Z"
+      "updated_at": "2026-10-31T04:07:55.839Z"
     },
     "riva-rocci-blood-pressure-cuff": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f285d204f8fee265b294e08ef7152078c8dcfe6e2be306511f8eb846109a3edb",
-      "updated_at": "2026-10-31T03:25:21.106Z"
+      "updated_at": "2026-10-31T04:07:55.876Z"
     },
     "berger-eeg-recorded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "591345e868974ae7660f17663c087ce781da50914db204c7de653c1b686001d9",
-      "updated_at": "2026-10-31T03:27:41.026Z"
+      "updated_at": "2026-10-31T04:07:55.911Z"
     },
     "papanicolaou-smear-test": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "54c32dbac6aed3b625868472226bffed0aee8a1caa6756d7165c0917827f8f82",
-      "updated_at": "2026-10-31T03:30:01.246Z"
+      "updated_at": "2026-10-31T04:07:55.944Z"
     },
     "forssmann-heart-catheter": {
       "state": "pending",

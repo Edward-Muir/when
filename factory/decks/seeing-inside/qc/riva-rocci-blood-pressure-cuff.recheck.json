@@ -1,0 +1,15 @@
+{
+  "slug": "riva-rocci-blood-pressure-cuff",
+  "description": "A close-up oil painting of a man in a dark Victorian-style suit wrapping a cloth cuff around the bare upper arm of a shirtless man, squeezing a rubber bulb connected by tubing to a vertical mercury gauge on a small stand. A candle and bottles sit on a table in a dim room. The gauge has a faint scale with tiny tick numbers. Full bleed, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
