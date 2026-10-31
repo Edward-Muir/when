@@ -1,0 +1,15 @@
+{
+  "slug": "iberian-peninsula-blackout",
+  "description": "A modern high-speed electric train with its pantograph up runs along an elevated viaduct over a golden, dry plain. Overhead catenary wires and poles line the track. Below, at a city junction, traffic signals hang dark on poles and small dark figures stand near shuttered shop fronts. The scene is painterly, in warm late-afternoon light with heavy shadows. No visible text.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The card describes a stopped train with dead overhead wires during a grid collapse, but the painting shows a train apparently under way with its pantograph on the wire, and nothing in the picture signals a blackout. The dark signals and shuttered shops are only suggestive. The image could be read as any generic electric train, so the subject match is uncertain."
+}

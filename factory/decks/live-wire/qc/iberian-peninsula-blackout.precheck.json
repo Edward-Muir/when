@@ -1,0 +1,20 @@
+{
+  "slug": "iberian-peninsula-blackout",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "d54da2e9fb2049304a77d343015897cbec82b796315f937d91c8c3ce21ea3e00",
+  "dhash": "10a0879ed8c9d078",
+  "nearest": {
+    "deck": {
+      "slug": "britain-national-grid-live",
+      "distance": 21
+    },
+    "catalogue": {
+      "slug": "esperanto-created",
+      "distance": 17
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}
