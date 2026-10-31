@@ -1,0 +1,15 @@
+{
+  "slug": "grito-de-yara",
+  "description": "A bearded man in a white linen suit stands on a raised wooden platform under a large hanging bronze bell in a wooden frame, one hand on the bell rope and the other arm outstretched. Around him a crowd of dark-skinned men in worn work clothes raise machetes and hands toward him under a dark, smoky sky. Wooden plantation-style buildings line the background. No text, frame or border is visible, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

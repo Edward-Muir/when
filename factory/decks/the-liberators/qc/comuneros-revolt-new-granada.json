@@ -1,0 +1,15 @@
+{
+  "slug": "comuneros-revolt-new-granada",
+  "description": "A dramatic painted crowd of rural, mostly dark-skinned peasants marches up a stony mountain path under a stormy sky. A central man in a dark ragged poncho and wide-brimmed hat raises a long spear and holds a machete. Behind him, hundreds more carry pikes, machetes and a few muskets, with women in long skirts and straw hats. A colonial-style town with a church sits in the valley below. Era cues are pre-industrial: straw hats, ponchos, linen shirts, spears and muskets. No text, no frame, no blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

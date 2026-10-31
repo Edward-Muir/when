@@ -1,0 +1,213 @@
+{
+  "deck": "the-liberators",
+  "name": "The Liberators",
+  "stage": "pr-open",
+  "created_at": "2026-10-20T15:23:06.801Z",
+  "updated_at": "2026-10-21T03:08:24.170Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-20T15:23:06.801Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-20T19:08:47.002Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-21T02:06:33.918Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-21T03:06:43.816Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-21T03:08:24.170Z"
+    }
+  ],
+  "slugs": {
+    "comuneros-revolt-new-granada": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f49f79f40a357ef9015cc79cd25c4d51d7c74e497c2ac88f689058cf4700accd",
+      "updated_at": "2026-10-20T20:07:11.444Z"
+    },
+    "inconfidencia-mineira-plot": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e7e7d0c8040d544286ed0a034642aef7b835ba49b91188eb90086f65b032239e",
+      "updated_at": "2026-10-20T20:07:11.476Z"
+    },
+    "haitian-revolution-uprising-begins": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "02303cf00b535f5933f226dcf05b960fbd1028e4abc21f5c6cb613a9d9ce1050",
+      "updated_at": "2026-10-20T22:06:55.010Z"
+    },
+    "narino-prints-rights-of-man": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5ef73991eb173f9cdf8457ec5b0eb626cf257fc84fd3605149cd81265c0b526f",
+      "updated_at": "2026-10-20T20:07:11.510Z"
+    },
+    "gual-espana-conspiracy": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e17a7c63ee767a5edce260329b26a5212fb414bd9f1946d728a6c6740df1316a",
+      "updated_at": "2026-10-20T20:07:11.543Z"
+    },
+    "toussaint-louverture-captured": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "48ffbab2bc418756337495ac08479ecc21a416aa5fc2dbcf56393be1699b530b",
+      "updated_at": "2026-10-20T22:06:55.041Z"
+    },
+    "portuguese-court-reaches-brazil": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "522c338175419045b9d49665b745ebc8b8c03b4311b5b80e5313f69537fb44b9",
+      "updated_at": "2026-10-20T22:06:55.071Z"
+    },
+    "grito-de-dolores": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e000e967157559059a4ccbfd063d871064b02d57280ede2ce8bdd771f8c0f258",
+      "updated_at": "2026-10-20T22:06:55.101Z"
+    },
+    "bolivar-named-el-libertador": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b2d3d35ad1e1a21bb18fe8176868cca215dd391de637ed974edf1c804115caab",
+      "updated_at": "2026-10-20T22:06:55.132Z"
+    },
+    "san-martin-crosses-andes": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ce650ad0fb94d58d6801a6002b83ebc1b139604ee6bca3fce9336eb9c589f0ef",
+      "updated_at": "2026-10-20T22:06:55.163Z"
+    },
+    "battle-of-boyaca": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "808f14d0880a2e33e71f8230c0900e992cb461ab6175132aa5fc5839834d2581",
+      "updated_at": "2026-10-20T22:06:55.194Z"
+    },
+    "bolivar-dies-santa-marta": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a9c8e235fad30695388f31e5d5e98aa8d4a568dd6506e9612d4b2ff4c795e24a",
+      "updated_at": "2026-10-20T22:06:55.224Z"
+    },
+    "spain-recognizes-mexico": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e1cfeabf27aeabb1088445610ccfabacbc18d440e0542b8761285547e7dcfc7a",
+      "updated_at": "2026-10-20T22:06:55.255Z"
+    },
+    "duarte-founds-la-trinitaria": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5a632802ec6be5387c9590c022361905cf0861fd8041c93d584699ec04525873",
+      "updated_at": "2026-10-20T22:06:55.288Z"
+    },
+    "dominican-independence-declared": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "45857ee51f2e23ccebfea74d50eb2d0350a42def2230ec79d5a79eae26c45fcc",
+      "updated_at": "2026-10-21T00:07:09.539Z"
+    },
+    "narciso-lopez-invades-cuba": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "20f3b87fe0ad0b60ebd9a4b593b9d081ca868e80730df641f9147517dce96e56",
+      "updated_at": "2026-10-21T00:07:09.575Z"
+    },
+    "dominicans-rise-capotillo": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c79a33ce23033fb4ebe8c0fe372747bcf6ee64d1d72e5a128e409e915f03c838",
+      "updated_at": "2026-10-21T00:07:09.607Z"
+    },
+    "spain-leaves-santo-domingo": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8119da171bb0d6de97087a1fb378cb9469ea680e044f655c0160242c21c5d072",
+      "updated_at": "2026-10-21T00:07:09.637Z"
+    },
+    "grito-de-yara": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "78e6f2cfbc49463655de81f3003771a8b0ab263f40b16e45cf7a4529a9dbc639",
+      "updated_at": "2026-10-21T00:07:09.669Z"
+    },
+    "virginius-affair": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "afa4cdb9264f7f675c73ea68cac173843bc9c82ed536bc20ba7e8910df885c92",
+      "updated_at": "2026-10-21T00:07:09.702Z"
+    },
+    "protest-of-baragua": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d7f7c8b330239d4d0f5ebfd0cb347a80b4a306776c70ac9926fba81930dc1776",
+      "updated_at": "2026-10-21T00:07:09.734Z"
+    },
+    "marti-founds-cuban-revolutionary-party": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "aad98bf6f11456100484c621b77fc3ecbefea61e65d16d5f0d7c726f6b72577a",
+      "updated_at": "2026-10-21T00:07:09.765Z"
+    },
+    "grito-de-baire": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4524fdc940a4abb761a1371a6ef68d73f62b1bb7537eb615f8f9d033f64c4b6d",
+      "updated_at": "2026-10-21T00:07:09.796Z"
+    },
+    "antonio-maceo-killed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7a0cb37611da731f5390e62fe3bb7ac46ecb00110e43fd0eaf6d60242195a83d",
+      "updated_at": "2026-10-21T00:07:09.828Z"
+    },
+    "treaty-paris-spain-cedes-colonies": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f1fb9adf342ab1f41db860ba893fc4234f6c80ddc797437efc40022ffee2c69f",
+      "updated_at": "2026-10-21T02:06:33.887Z"
+    },
+    "cuba-becomes-republic": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a4c73aa5d8ac58b56d5cb6a0c2d2c73b1504e6f164ca6cc2ef2315ba1da56c57",
+      "updated_at": "2026-10-21T02:06:33.918Z"
+    }
+  }
+}

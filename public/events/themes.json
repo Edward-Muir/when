@@ -12508,6 +12508,412 @@
     ]
   },
   {
+    "name": "comuneros-revolt-new-granada",
+    "friendly_name": "Comuneros Revolt in New Granada",
+    "year": 1781,
+    "category": "revolution",
+    "description": "Thousands of townspeople marched on Bogota against crushing colonial taxes, forcing a short-lived settlement with Spanish officials.",
+    "difficulty": "medium",
+    "regions": [
+      "Colombia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/comuneros-revolt-new-granada_g2wxgs?_a=BAMAMikS0",
+    "color": "#281e21",
+    "text_color": "light"
+  },
+  {
+    "name": "inconfidencia-mineira-plot",
+    "friendly_name": "Inconfidencia Mineira Plot Exposed",
+    "year": 1789,
+    "category": "revolution",
+    "description": "Brazilian miners, poets and a dentist nicknamed Tiradentes plotted to overthrow Portuguese rule before they were betrayed.",
+    "difficulty": "medium",
+    "regions": [
+      "Brazil"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inconfidencia-mineira-plot_jeya1a?_a=BAMAMikS0",
+    "color": "#271f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "haitian-revolution-uprising-begins",
+    "friendly_name": "Haitian Revolution Begins",
+    "year": 1791,
+    "category": "revolution",
+    "description": "Enslaved people in the French colony of Saint-Domingue rose in a vast uprising that launched a long revolution.",
+    "difficulty": "easy",
+    "regions": [
+      "Haiti"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/haitian-revolution-uprising-begins_qk760v?_a=BAMAMikS0",
+    "color": "#242021",
+    "text_color": "light"
+  },
+  {
+    "name": "narino-prints-rights-of-man",
+    "friendly_name": "Narino Prints the Rights of Man",
+    "year": 1793,
+    "category": "writing",
+    "description": "Antonio Narino secretly printed a Spanish translation of the French declaration of rights in Bogota and was jailed for it.",
+    "difficulty": "easy",
+    "regions": [
+      "Colombia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/narino-prints-rights-of-man_5g3y81?_a=BAMAMikS0",
+    "color": "#271f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "gual-espana-conspiracy",
+    "friendly_name": "Gual and Espana Conspiracy",
+    "year": 1797,
+    "category": "revolution",
+    "description": "A plot centred on the port of La Guaira sought a republic with equality among races and was crushed by Spanish authorities.",
+    "difficulty": "hard",
+    "regions": [
+      "Venezuela"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gual-espana-conspiracy_30hdc4?_a=BAMAMikS0",
+    "color": "#291e1c",
+    "text_color": "light"
+  },
+  {
+    "name": "toussaint-louverture-captured",
+    "friendly_name": "Toussaint Louverture Is Captured",
+    "year": 1802,
+    "category": "figures",
+    "description": "French forces tricked and arrested the Haitian revolutionary leader and shipped him to a freezing fortress prison in France.",
+    "difficulty": "easy",
+    "regions": [
+      "France",
+      "Haiti"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toussaint-louverture-captured_wos9c5?_a=BAMAMikS0",
+    "color": "#2c2d2e",
+    "text_color": "light"
+  },
+  {
+    "name": "portuguese-court-reaches-brazil",
+    "friendly_name": "Portuguese Court Lands in Brazil",
+    "year": 1808,
+    "category": "empires",
+    "description": "Chased by Napoleon's army, the royal family reached Rio de Janeiro, turning a colony into the seat of an empire.",
+    "difficulty": "easy",
+    "regions": [
+      "Brazil",
+      "Portugal"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portuguese-court-reaches-brazil_yz04ip?_a=BAMAMikS0",
+    "color": "#25201c",
+    "text_color": "light"
+  },
+  {
+    "name": "grito-de-dolores",
+    "friendly_name": "Grito de Dolores",
+    "year": 1810,
+    "category": "revolution",
+    "description": "A village priest named Miguel Hidalgo rang his church bell and called his parishioners to rise against Spanish rule in Mexico.",
+    "difficulty": "medium",
+    "regions": [
+      "Mexico"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/grito-de-dolores_hl8air?_a=BAMAMikS0",
+    "color": "#261f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "bolivar-named-el-libertador",
+    "friendly_name": "Bolivar Named El Libertador",
+    "year": 1813,
+    "category": "figures",
+    "description": "After the Admirable Campaign retook Caracas, Simon Bolivar was hailed with the title that would define him.",
+    "difficulty": "easy",
+    "regions": [
+      "Venezuela"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bolivar-named-el-libertador_hmhry5?_a=BAMAMikS0",
+    "color": "#291e1b",
+    "text_color": "light"
+  },
+  {
+    "name": "san-martin-crosses-andes",
+    "friendly_name": "San Martin Crosses the Andes",
+    "year": 1817,
+    "category": "warfare",
+    "description": "An army of Argentines and Chileans hauled artillery over high mountain passes to surprise the Spanish in Chile.",
+    "difficulty": "easy",
+    "regions": [
+      "Argentina",
+      "Chile"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/san-martin-crosses-andes_6gjfc8?_a=BAMAMikS0",
+    "color": "#7f8790",
+    "text_color": "dark"
+  },
+  {
+    "name": "battle-of-boyaca",
+    "friendly_name": "Battle of Boyaca",
+    "year": 1819,
+    "category": "warfare",
+    "description": "Bolivar's army surprised and defeated Spanish royalists in the Colombian highlands, opening the road to Bogota.",
+    "difficulty": "easy",
+    "regions": [
+      "Colombia",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-boyaca_trbwso?_a=BAMAMikS0",
+    "color": "#453c32",
+    "text_color": "light"
+  },
+  {
+    "name": "bolivar-dies-santa-marta",
+    "friendly_name": "Bolivar Dies Near Santa Marta",
+    "year": 1830,
+    "category": "figures",
+    "description": "The Liberator died ill and embittered on the Colombian coast as his union of Venezuela, Colombia and Ecuador fell apart.",
+    "difficulty": "easy",
+    "regions": [
+      "Colombia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bolivar-dies-santa-marta_cmxk5a?_a=BAMAMikS0",
+    "color": "#291e18",
+    "text_color": "light"
+  },
+  {
+    "name": "spain-recognizes-mexico",
+    "friendly_name": "Spain Recognizes Mexico",
+    "year": 1836,
+    "category": "diplomacy",
+    "description": "Madrid finally signed a treaty accepting Mexican independence after years of refusing to acknowledge its loss.",
+    "difficulty": "medium",
+    "regions": [
+      "Mexico",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spain-recognizes-mexico_sqeoqh?_a=BAMAMikS0",
+    "color": "#261f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "duarte-founds-la-trinitaria",
+    "friendly_name": "Duarte Founds La Trinitaria",
+    "year": 1838,
+    "category": "revolution",
+    "description": "Juan Pablo Duarte formed a secret society in Santo Domingo to win independence from Haitian rule.",
+    "difficulty": "hard",
+    "regions": [
+      "Dominican Republic"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/duarte-founds-la-trinitaria_d0l2jo?_a=BAMAMikS0",
+    "color": "#251f21",
+    "text_color": "light"
+  },
+  {
+    "name": "dominican-independence-declared",
+    "friendly_name": "Dominicans Declare Independence",
+    "year": 1844,
+    "category": "revolution",
+    "description": "Rebels seized a city gate in Santo Domingo and proclaimed their separation from Haiti, founding a new republic.",
+    "difficulty": "medium",
+    "regions": [
+      "Dominican Republic"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dominican-independence-declared_tqz2c6?_a=BAMAMikS0",
+    "color": "#271e20",
+    "text_color": "light"
+  },
+  {
+    "name": "narciso-lopez-invades-cuba",
+    "friendly_name": "Narciso Lopez Invades Cuba",
+    "year": 1851,
+    "category": "warfare",
+    "description": "A Venezuelan-born general led American volunteers to free Cuba from Spain but was captured and executed in Havana.",
+    "difficulty": "hard",
+    "regions": [
+      "Cuba",
+      "Spain",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/narciso-lopez-invades-cuba_o8gvoi?_a=BAMAMikS0",
+    "color": "#23201e",
+    "text_color": "light"
+  },
+  {
+    "name": "dominicans-rise-capotillo",
+    "friendly_name": "Dominicans Rise at Capotillo",
+    "year": 1863,
+    "category": "revolution",
+    "description": "Patriots raised their flag on a hill by the Haitian border to drive out Spain, which had retaken the country.",
+    "difficulty": "hard",
+    "regions": [
+      "Dominican Republic"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dominicans-rise-capotillo_l5kh07?_a=BAMAMikS0",
+    "color": "#322d27",
+    "text_color": "light"
+  },
+  {
+    "name": "spain-leaves-santo-domingo",
+    "friendly_name": "Spain Leaves Santo Domingo",
+    "year": 1865,
+    "category": "empires",
+    "description": "Spanish troops evacuated the Dominican Republic after a costly guerrilla war, ending the re-annexation.",
+    "difficulty": "hard",
+    "regions": [
+      "Dominican Republic",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spain-leaves-santo-domingo_60rog8?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "grito-de-yara",
+    "friendly_name": "Grito de Yara",
+    "year": 1868,
+    "category": "revolution",
+    "description": "Carlos Manuel de Cespedes freed his slaves and declared war on Spain, opening Cuba's first long war for independence.",
+    "difficulty": "medium",
+    "regions": [
+      "Cuba"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/grito-de-yara_6v1m6y?_a=BAMAMikS0",
+    "color": "#242020",
+    "text_color": "light"
+  },
+  {
+    "name": "virginius-affair",
+    "friendly_name": "The Virginius Affair",
+    "year": 1873,
+    "category": "diplomacy",
+    "description": "Spain executed dozens aboard a ship carrying arms to Cuban rebels, nearly provoking war with the United States.",
+    "difficulty": "medium",
+    "regions": [
+      "Cuba",
+      "Spain",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/virginius-affair_hedntv?_a=BAMAMikS0",
+    "color": "#282826",
+    "text_color": "light"
+  },
+  {
+    "name": "protest-of-baragua",
+    "friendly_name": "Protest of Baragua",
+    "year": 1878,
+    "category": "revolution",
+    "description": "General Antonio Maceo refused to accept the peace that ended the Ten Years' War, vowing to keep fighting for Cuba.",
+    "difficulty": "easy",
+    "regions": [
+      "Cuba"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/protest-of-baragua_n9gok7?_a=BAMAMikS0",
+    "color": "#25201d",
+    "text_color": "light"
+  },
+  {
+    "name": "marti-founds-cuban-revolutionary-party",
+    "friendly_name": "Marti Founds Cuba's Rebel Party",
+    "year": 1892,
+    "category": "revolution",
+    "description": "Jose Marti united exiles in a party to organize a new war for Cuban and Puerto Rican independence.",
+    "difficulty": "easy",
+    "regions": [
+      "Cuba",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marti-founds-cuban-revolutionary-party_ugun9c?_a=BAMAMikS0",
+    "color": "#291e1c",
+    "text_color": "light"
+  },
+  {
+    "name": "grito-de-baire",
+    "friendly_name": "Grito de Baire",
+    "year": 1895,
+    "category": "revolution",
+    "description": "A fresh uprising began across eastern Cuba, and Jose Marti landed soon after, only to die in battle within weeks.",
+    "difficulty": "easy",
+    "regions": [
+      "Cuba"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/grito-de-baire_818dac?_a=BAMAMikS0",
+    "color": "#4a3829",
+    "text_color": "light"
+  },
+  {
+    "name": "antonio-maceo-killed",
+    "friendly_name": "Antonio Maceo Killed in Action",
+    "year": 1896,
+    "category": "figures",
+    "description": "The Bronze Titan, Cuba's most feared rebel general, was killed near Havana, a heavy blow to the independence army.",
+    "difficulty": "medium",
+    "regions": [
+      "Cuba"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antonio-maceo-killed_fols5d?_a=BAMAMikS0",
+    "color": "#261f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "treaty-paris-spain-cedes-colonies",
+    "friendly_name": "Spain Loses Cuba and Puerto Rico",
+    "year": 1898,
+    "category": "diplomacy",
+    "description": "After a brief war with the United States, Spain ceded its last major American colonies by treaty.",
+    "difficulty": "easy",
+    "regions": [
+      "Cuba",
+      "France",
+      "Puerto Rico",
+      "Spain",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-paris-spain-cedes-colonies_wn2uko?_a=BAMAMikS0",
+    "color": "#302116",
+    "text_color": "light"
+  },
+  {
+    "name": "cuba-becomes-republic",
+    "friendly_name": "Cuba Becomes a Republic",
+    "year": 1902,
+    "category": "revolution",
+    "description": "The American occupation ended and Tomas Estrada Palma took office as the first president of independent Cuba.",
+    "difficulty": "easy",
+    "regions": [
+      "Cuba",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuba-becomes-republic_ok0oxd?_a=BAMAMikS0",
+    "color": "#533521",
+    "text_color": "light"
+  },
+  {
     "name": "eoraptor-dawn-dinosaur",
     "friendly_name": "Eoraptor, a Dawn Dinosaur",
     "year": -231000000,
