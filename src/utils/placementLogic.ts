@@ -10,6 +10,8 @@ import {
   getNextActivePlayerIndex,
   processEndOfRound,
 } from './gameLogic';
+import { drawCatchUp } from './catchUp';
+import { DifficultyIndex } from './difficultyScore';
 
 /**
  * Validation result for a placement attempt
@@ -97,12 +99,20 @@ export interface PlacementStateUpdate {
 /**
  * Process a correct placement and return the state updates. The card leaves the hand and a
  * replacement is drawn, so the hand stays the same size until the deck runs out.
+ *
+ * With a difficulty index the replacement is a catch-up draw (`catchUp.ts`): after a miss it is
+ * the easiest of the next few cards on this board, otherwise still the top card. `state.timeline`
+ * must already hold the placed card. Without an index it is always the top card.
  */
 export function processCorrectPlacement(
   state: WhenGameState,
-  event: HistoricalEvent
+  event: HistoricalEvent,
+  index?: DifficultyIndex
 ): PlacementStateUpdate {
-  const { card, newDeck } = drawCard(state.deck);
+  const history = state.players.at(state.currentPlayerIndex)?.placementHistory ?? [];
+  const { card, newDeck } = index
+    ? drawCatchUp(state.deck, state.timeline, history, index)
+    : drawCard(state.deck);
   return resolveTurn(state, event, true, (hand) => (card ? addToHand(hand, card) : hand), newDeck);
 }
 
