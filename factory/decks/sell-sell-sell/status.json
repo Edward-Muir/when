@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-31T00:12:11.383Z",
+  "updated_at": "2026-10-31T00:14:37.630Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-10-31T00:12:11.383Z"
     },
     "got-milk-campaign": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a00e9a5b18a0bbde183b38d659ae9241d140775d78bed9d11b6d0a65039cc399",
+      "updated_at": "2026-10-31T00:14:37.630Z"
     },
     "apple-think-different-campaign": {
       "state": "pending",
