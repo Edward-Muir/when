@@ -69,6 +69,7 @@ comment worth reading before you change it:
 | ----------------- | ---------------------------------------------------------------------------- |
 | `deckBuilder`     | Decks are composed, not shuffled — opening ramp + spacing                    |
 | `difficultyScore` | Composite: recognition label blended with timeline crowding                  |
+| `catchUp`         | After a miss, draws the card with the most room on the board                 |
 | `dailyRecency`    | Seven-day no-repeat chain for the daily                                      |
 | `puzzleDate`      | **Local** calendar day, never `toISOString()` — see the header comment       |
 | `challengeCode`   | Positional bit-packed share links; bit 0 is reserved and ignored on read     |
