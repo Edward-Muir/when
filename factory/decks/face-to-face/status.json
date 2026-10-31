@@ -3,7 +3,7 @@
   "name": "Face to Face",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T10:16:48.007Z",
-  "updated_at": "2026-10-31T12:07:23.372Z",
+  "updated_at": "2026-10-31T13:09:21.246Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-10-31T12:07:23.372Z"
     },
     "siamese-embassy-louis-xiv": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7f7440b1fbde459b57fe2212cb5d815438ad40f55d7d5caf1e9df37160aacd4d",
+      "updated_at": "2026-10-31T13:09:21.246Z"
     },
     "peter-great-grand-embassy": {
       "state": "pending",
