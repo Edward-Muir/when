@@ -1,0 +1,250 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "cut",
+      "slug": "",
+      "why": "Year lies outside the game's -4.5 billion floor, so the card cannot resolve."
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "archean-eon-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "paleoarchean-era-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "mesoarchean-era-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "proterozoic-eon-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "rhyacian-period-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 7,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 8,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "mesoproterozoic-era-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 10,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 11,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "neoproterozoic-era-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 13,
+      "decision": "reuse",
+      "slug": "snowball-earth-cryogenian",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 14,
+      "decision": "reuse",
+      "slug": "ediacaran-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "cambrian-period-opens",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "ordovician-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 18,
+      "decision": "reuse",
+      "slug": "silurian-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "devonian-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "late-devonian-epoch-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 21,
+      "decision": "reuse",
+      "slug": "carboniferous-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "pennsylvanian-epoch-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 23,
+      "decision": "reuse",
+      "slug": "permian-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 25,
+      "decision": "reuse",
+      "slug": "triassic-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "late-triassic-epoch-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 27,
+      "decision": "reuse",
+      "slug": "jurassic-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest fame-1 sub-unit; cut to reach 30 and keep the stretch even."
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "late-jurassic-epoch-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 30,
+      "decision": "reuse",
+      "slug": "cretaceous-period-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "late-cretaceous-epoch-begins",
+      "why": "No catalogue card for this unit start."
+    },
+    {
+      "beat": 32,
+      "decision": "reuse",
+      "slug": "paleocene-epoch-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 33,
+      "decision": "reuse",
+      "slug": "eocene-epoch-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 34,
+      "decision": "reuse",
+      "slug": "oligocene-epoch-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 35,
+      "decision": "reuse",
+      "slug": "miocene-epoch-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 36,
+      "decision": "reuse",
+      "slug": "pliocene-epoch-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 37,
+      "decision": "reuse",
+      "slug": "pleistocene-epoch-ice-age-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    },
+    {
+      "beat": 38,
+      "decision": "reuse",
+      "slug": "holocene-epoch-begins",
+      "why": "Names the same unit start as the spine beat; the catalogue year differs only by rounding or time-scale edition, so the existing card and year stand."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 1/8               (advisory, 6+ is spread)\n  PASS  band 0 19              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 1 in -4031000000--4031000000 (want 3 or fewer in any 10 years)\n  PASS  shared 4 (before-us)   (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 57 earlier themes:\n        4  before-us              snowball-earth-cryogenian, jurassic-period-begins, eocene-epoch-begins, oligocene-epoch-begins",
+  "footholds": [
+    "cambrian-period-opens",
+    "jurassic-period-begins",
+    "cretaceous-period-begins",
+    "pleistocene-epoch-ice-age-begins",
+    "holocene-epoch-begins",
+    "carboniferous-period-begins",
+    "permian-period-begins",
+    "triassic-period-begins"
+  ]
+}

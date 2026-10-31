@@ -1,0 +1,15 @@
+{
+  "slug": "cambrian-period-opens",
+  "description": "An underwater scene in an oil-painting style, lit by sunbeams from the surface. A large, flat-finned creature with two grasping front appendages and a pair of stalked eyes hovers above a muddy seafloor. Around it, many small arthropods, including trilobites, crawl over the mud, and tube-shaped and branching sponge-like growths rise from the bottom. No text, frame or people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

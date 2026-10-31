@@ -12861,5 +12861,170 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
     "text_color": "light"
+  },
+  {
+    "name": "paleoarchean-era-begins",
+    "friendly_name": "The Paleoarchean Begins",
+    "year": -3600000000,
+    "category": "nature",
+    "description": "Stable continental fragments grow, and microbial mats build the first layered stromatolite reefs in shallow seas.",
+    "difficulty": "hard",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paleoarchean-era-begins_65x90y?_a=BAMAMikS0",
+    "color": "#271f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "mesoarchean-era-begins",
+    "friendly_name": "The Mesoarchean Begins",
+    "year": -3200000000,
+    "category": "nature",
+    "description": "Photosynthesising microbes spread through the oceans while the first large, enduring landmasses take shape.",
+    "difficulty": "hard",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mesoarchean-era-begins_nrqurk?_a=BAMAMikS0",
+    "color": "#272018",
+    "text_color": "light"
+  },
+  {
+    "name": "rhyacian-period-begins",
+    "friendly_name": "The Rhyacian Begins",
+    "year": -2300000000,
+    "category": "nature",
+    "description": "Oxygen is now in the air for good, and ice sheets reach the tropics in one of the planet's earliest great glaciations.",
+    "difficulty": "hard",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rhyacian-period-begins_1trfle?_a=BAMAMikS0",
+    "color": "#232020",
+    "text_color": "light"
+  },
+  {
+    "name": "mesoproterozoic-era-begins",
+    "friendly_name": "The Mesoproterozoic Begins",
+    "year": -1600000000,
+    "category": "nature",
+    "description": "A long, calm stretch of stable climate and ocean chemistry opens, with cells growing more complex beneath the waves.",
+    "difficulty": "very-hard",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mesoproterozoic-era-begins_5i9q7t?_a=BAMAMikS0",
+    "color": "#252019",
+    "text_color": "light"
+  },
+  {
+    "name": "neoproterozoic-era-begins",
+    "friendly_name": "The Neoproterozoic Begins",
+    "year": -1000000000,
+    "category": "nature",
+    "description": "The supercontinent Rodinia sits largely intact and begins to split apart, setting up the world's coldest spells.",
+    "difficulty": "medium",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neoproterozoic-era-begins_wat62l?_a=BAMAMikS0",
+    "color": "#232020",
+    "text_color": "light"
+  },
+  {
+    "name": "cambrian-period-opens",
+    "friendly_name": "The Cambrian Begins",
+    "year": -538800000,
+    "category": "nature",
+    "description": "Animals with shells, eyes and legs suddenly fill warm shallow seas in a burst of new body plans.",
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cambrian-period-opens_ibf42q?_a=BAMAMikS0",
+    "color": "#23211d",
+    "text_color": "light"
+  },
+  {
+    "name": "late-devonian-epoch-begins",
+    "friendly_name": "The Late Devonian Begins",
+    "year": -382300000,
+    "category": "nature",
+    "description": "Tree-sized forests spread across the continents while armoured fishes rule seas that are about to suffer repeated crises.",
+    "difficulty": "medium",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-devonian-epoch-begins_hchzx6?_a=BAMAMikS0",
+    "color": "#271f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "pennsylvanian-epoch-begins",
+    "friendly_name": "The Pennsylvanian Begins",
+    "year": -323400000,
+    "category": "nature",
+    "description": "Coal swamps blanket low-lying lands, and the first reptiles lay shelled eggs that can hatch away from water.",
+    "difficulty": "medium",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pennsylvanian-epoch-begins_334ucf?_a=BAMAMikS0",
+    "color": "#272017",
+    "text_color": "light"
+  },
+  {
+    "name": "late-triassic-epoch-begins",
+    "friendly_name": "The Late Triassic Begins",
+    "year": -237000000,
+    "category": "nature",
+    "description": "Monsoon rains fall on the great supercontinent, and early dinosaurs share it with crocodile-like rivals.",
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-triassic-epoch-begins_89wgdg?_a=BAMAMikS0",
+    "color": "#33332c",
+    "text_color": "light"
+  },
+  {
+    "name": "late-jurassic-epoch-begins",
+    "friendly_name": "The Late Jurassic Begins",
+    "year": -161500000,
+    "category": "nature",
+    "description": "The Atlantic widens, warm seas deepen, and plated and long-necked giants graze lush floodplains.",
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-jurassic-epoch-begins_lflkbu?_a=BAMAMikS0",
+    "color": "#262018",
+    "text_color": "light"
+  },
+  {
+    "name": "late-cretaceous-epoch-begins",
+    "friendly_name": "The Late Cretaceous Begins",
+    "year": -100500000,
+    "category": "nature",
+    "description": "Sea levels peak and the climate is a greenhouse, as the great horned and tyrant dinosaurs rise to rule.",
+    "difficulty": "easy",
+    "regions": [
+      "Global"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-cretaceous-epoch-begins_txh11w?_a=BAMAMikS0",
+    "color": "#272018",
+    "text_color": "light"
   }
 ]
