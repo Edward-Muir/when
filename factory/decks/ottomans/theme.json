@@ -1,0 +1,41 @@
+{
+  "id": "ottomans",
+  "name": "Sublime Porte",
+  "scope": "Yes if it is a defining moment of the Ottoman Empire",
+  "boundary": "Sublime Porte: the Ottoman story; the great sieges (Vienna, Malta) go to Under Siege, caliphs before 1517 to The Caliphs, Lepanto to Broadsides.",
+  "neighbours": [
+    "sieges",
+    "caliphates",
+    "broadsides"
+  ],
+  "grid": {
+    "categories": [
+      "empires",
+      "warfare",
+      "figures"
+    ],
+    "eras": [
+      "medieval",
+      "earlyModern",
+      "industrial"
+    ],
+    "regions": [
+      "Middle East & North Africa",
+      "Europe"
+    ]
+  },
+  "example_beats": [
+    "Osman founds the beylik (1299)",
+    "Battle of Kosovo (1389)",
+    "Mehmed II takes Constantinople (1453)",
+    "Selim I conquers Egypt (1517)",
+    "Suleiman crowned (1520)",
+    "Battle of Mohacs (1526)",
+    "Treaty of Karlowitz (1699)",
+    "Janissaries abolished (1826)",
+    "Tanzimat reforms (1839)",
+    "Sultanate abolished (1922)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

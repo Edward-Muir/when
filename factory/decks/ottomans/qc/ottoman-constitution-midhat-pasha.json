@@ -1,0 +1,15 @@
+{
+  "slug": "ottoman-constitution-midhat-pasha",
+  "description": "An oil-style painting of an elderly white-bearded man in a red fez and dark frock coat bending forward to hand a folded document to a bearded man seated in a gold-framed red velvet throne. The seated man wears a dark military-style uniform with gold epaulettes and a red fez. Behind them, a crowd of men in fezzes and dark suits stands in a candlelit hall with gilded columns, a crystal chandelier, heavy drapes and framed paintings. The image fills the full area edge to edge, with a small green mark in the bottom-right corner and no readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
