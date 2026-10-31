@@ -12861,5 +12861,457 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
     "text_color": "light"
+  },
+  {
+    "name": "caxton-printed-handbill-ad",
+    "friendly_name": "Caxton's Printed Handbill",
+    "year": 1477,
+    "category": "commerce",
+    "description": "An English printer posted a printed notice offering his prayer book for sale, among the earliest printed adverts in English.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/caxton-printed-handbill-ad_l8jekf?_a=BAMAMikS0",
+    "color": "#26201a",
+    "text_color": "light"
+  },
+  {
+    "name": "boston-news-letter-first-ad",
+    "friendly_name": "First Newspaper Ad in America",
+    "year": 1704,
+    "category": "media",
+    "description": "A Boston newspaper ran a paid notice offering an estate for sale, the first advertisement printed in the colonies.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boston-news-letter-first-ad_5j35s8?_a=BAMAMikS0",
+    "color": "#25201f",
+    "text_color": "light"
+  },
+  {
+    "name": "quaker-oats-man-trademark",
+    "friendly_name": "Quaker Oats Man Trademarked",
+    "year": 1877,
+    "category": "commerce",
+    "description": "A smiling man in a broad-brimmed hat became the registered face of an oatmeal brand, the first cereal trademark.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quaker-oats-man-trademark_o0rc6g?_a=BAMAMikS0",
+    "color": "#26201c",
+    "text_color": "light"
+  },
+  {
+    "name": "pears-soap-bubbles-ad",
+    "friendly_name": "Pears Soap Buys Bubbles",
+    "year": 1886,
+    "category": "art",
+    "description": "A soap maker bought a painting of a boy blowing soap bubbles and made it one of the most famous ad images of its age.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pears-soap-bubbles-ad_rkvpsg?_a=BAMAMikS0",
+    "color": "#23211d",
+    "text_color": "light"
+  },
+  {
+    "name": "kodak-you-press-the-button",
+    "friendly_name": "Kodak: You Press the Button",
+    "year": 1888,
+    "category": "commerce",
+    "description": "A camera maker promised that anyone could take pictures with a simple box, and the slogan made photography a mass hobby.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kodak-you-press-the-button_k04jtt?_a=BAMAMikS0",
+    "color": "#222120",
+    "text_color": "light"
+  },
+  {
+    "name": "michelin-man-bibendum",
+    "friendly_name": "The Michelin Man Debuts",
+    "year": 1898,
+    "category": "commerce",
+    "description": "A tyre company poster showed a mascot built from stacked tyres raising a glass of nails and glass, creating Bibendum.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/michelin-man-bibendum_rlay8h?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "morton-salt-when-it-rains",
+    "friendly_name": "When It Rains It Pours",
+    "year": 1914,
+    "category": "commerce",
+    "description": "A salt company's slogan about free-flowing grains in damp weather came with a girl under an umbrella on the blue box.",
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/morton-salt-when-it-rains_palbcu?_a=BAMAMikS0",
+    "color": "#1f2128",
+    "text_color": "light"
+  },
+  {
+    "name": "mr-peanut-created",
+    "friendly_name": "Mr. Peanut Is Born",
+    "year": 1916,
+    "category": "art",
+    "description": "A schoolboy's drawing won a contest, and a nut in a top hat, monocle and cane became the face of a snack brand.",
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mr-peanut-created_6gfq60?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "betty-crocker-created",
+    "friendly_name": "Betty Crocker Gets a Name",
+    "year": 1921,
+    "category": "commerce",
+    "description": "A flour company invented a friendly fictional woman to sign its replies to customers' baking questions.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/betty-crocker-created_ql5nug?_a=BAMAMikS0",
+    "color": "#2c1d18",
+    "text_color": "light"
+  },
+  {
+    "name": "burma-shave-roadside-signs",
+    "friendly_name": "Burma-Shave Roadside Signs",
+    "year": 1925,
+    "category": "commerce",
+    "description": "A shaving cream firm posted sets of small rhyming signs along rural highways, each line read in turn by passing drivers.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/burma-shave-roadside-signs_pq5au5?_a=BAMAMikS0",
+    "color": "#24211b",
+    "text_color": "light"
+  },
+  {
+    "name": "wheaties-first-singing-jingle",
+    "friendly_name": "Wheaties Singing Commercial",
+    "year": 1926,
+    "category": "media",
+    "description": "A vocal quartet sang a breakfast cereal's praises on the radio, widely credited as the first singing commercial.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wheaties-first-singing-jingle_8fq27s?_a=BAMAMikS0",
+    "color": "#261f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "coca-cola-santa-claus-ads",
+    "friendly_name": "Coca-Cola's Santa Claus",
+    "year": 1931,
+    "category": "art",
+    "description": "An artist painted a warm, jolly, red-suited Father Christmas for a soft drink company, shaping how he is pictured.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coca-cola-santa-claus-ads_fhtnle?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "elsie-the-cow-mascot",
+    "friendly_name": "Elsie the Cow Appears",
+    "year": 1936,
+    "category": "commerce",
+    "description": "A dairy company introduced a smiling cartoon cow as its spokes-character, who later became a living celebrity at fairs.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/elsie-the-cow-mascot_jhg3f1?_a=BAMAMikS0",
+    "color": "#281f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "smokey-bear-debuts",
+    "friendly_name": "Smokey Bear Debuts",
+    "year": 1944,
+    "category": "nature",
+    "description": "A poster of a bear in a ranger hat urged the public to prevent wildfires, launching a long-running public campaign.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smokey-bear-debuts_r6ryea?_a=BAMAMikS0",
+    "color": "#232120",
+    "text_color": "light"
+  },
+  {
+    "name": "a-diamond-is-forever-slogan",
+    "friendly_name": "A Diamond Is Forever",
+    "year": 1947,
+    "category": "commerce",
+    "description": "A copywriter's four-word line for a diamond cartel made engagement rings feel timeless and shaped wedding customs.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/a-diamond-is-forever-slogan_unwclf?_a=BAMAMikS0",
+    "color": "#24201e",
+    "text_color": "light"
+  },
+  {
+    "name": "tony-the-tiger-mascot",
+    "friendly_name": "Tony the Tiger Is Grrreat",
+    "year": 1952,
+    "category": "commerce",
+    "description": "A cartoon tiger appeared on boxes of sugar-coated flakes and became the best-known cereal mascot in America.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tony-the-tiger-mascot_dbhqdv?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "marlboro-man-campaign",
+    "friendly_name": "The Marlboro Man Rides In",
+    "year": 1954,
+    "category": "commerce",
+    "description": "A cigarette brand swapped its gentle image for rugged cowboys on horseback in one of the most successful rebrandings ever.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marlboro-man-campaign_no43af?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "vw-think-small-ad",
+    "friendly_name": "Volkswagen's Think Small",
+    "year": 1959,
+    "category": "art",
+    "description": "A witty, minimal print ad for a tiny German car broke the rules of big-car advertising and changed the industry.",
+    "difficulty": "medium",
+    "regions": [
+      "Germany",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vw-think-small-ad_f9akkr?_a=BAMAMikS0",
+    "color": "#26201a",
+    "text_color": "light"
+  },
+  {
+    "name": "ronald-mcdonald-debuts",
+    "friendly_name": "Ronald McDonald Takes the Stage",
+    "year": 1963,
+    "category": "commerce",
+    "description": "A clown in a red wig and yellow jumpsuit appeared on local television to sell hamburgers to children.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ronald-mcdonald-debuts_2ce7wc?_a=BAMAMikS0",
+    "color": "#281f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "pillsbury-doughboy-debuts",
+    "friendly_name": "The Pillsbury Doughboy Giggles",
+    "year": 1965,
+    "category": "commerce",
+    "description": "A little dough character popped out of a tube of rolls in a TV spot, and a poke in the belly earned a giggle.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pillsbury-doughboy-debuts_mfcvcx?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "coke-hilltop-teach-the-world",
+    "friendly_name": "Coke's Hilltop Ad",
+    "year": 1971,
+    "category": "media",
+    "description": "Young people from around the world sang on a hillside about buying the world a soft drink in a landmark TV commercial.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coke-hilltop-teach-the-world_f290o8?_a=BAMAMikS0",
+    "color": "#503423",
+    "text_color": "light"
+  },
+  {
+    "name": "i-love-new-york-campaign",
+    "friendly_name": "I Love New York Campaign",
+    "year": 1977,
+    "category": "commerce",
+    "description": "A heart-shaped logo and jingle promoted tourism to a struggling city and state, and the design spread everywhere.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/i-love-new-york-campaign_6gex89?_a=BAMAMikS0",
+    "color": "#232021",
+    "text_color": "light"
+  },
+  {
+    "name": "apple-1984-super-bowl-ad",
+    "friendly_name": "Apple's Big Brother Ad",
+    "year": 1984,
+    "category": "media",
+    "description": "A runner hurled a hammer at a giant screen in a dystopian spot by a famous film director launching a personal computer.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apple-1984-super-bowl-ad_mt8e8u?_a=BAMAMikS0",
+    "color": "#212120",
+    "text_color": "light"
+  },
+  {
+    "name": "nike-just-do-it-slogan",
+    "friendly_name": "Nike's Just Do It",
+    "year": 1988,
+    "category": "commerce",
+    "description": "A three-word slogan from a sportswear company became one of the most recognised taglines in advertising history.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nike-just-do-it-slogan_1vhdu4?_a=BAMAMikS0",
+    "color": "#202125",
+    "text_color": "light"
+  },
+  {
+    "name": "got-milk-campaign",
+    "friendly_name": "Got Milk? Campaign",
+    "year": 1993,
+    "category": "commerce",
+    "description": "A dairy campaign showed celebrities with milk moustaches and asked a simple question about the drink.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/got-milk-campaign_mu8sqf?_a=BAMAMikS0",
+    "color": "#26201e",
+    "text_color": "light"
+  },
+  {
+    "name": "apple-think-different-campaign",
+    "friendly_name": "Apple's Think Different",
+    "year": 1997,
+    "category": "commerce",
+    "description": "A tribute to rebels and visionaries, with black-and-white portraits, marked a computer maker's co-founder returning.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apple-think-different-campaign_0q2iku?_a=BAMAMikS0",
+    "color": "#212124",
+    "text_color": "light"
+  },
+  {
+    "name": "budweiser-whassup-ad",
+    "friendly_name": "Budweiser's Whassup?",
+    "year": 1999,
+    "category": "media",
+    "description": "Friends on the phone greeted each other with a drawn-out catchphrase in a beer ad that swept popular culture.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/budweiser-whassup-ad_34nhbn?_a=BAMAMikS0",
+    "color": "#232022",
+    "text_color": "light"
+  },
+  {
+    "name": "dove-evolution-film",
+    "friendly_name": "Dove's Evolution Film",
+    "year": 2006,
+    "category": "media",
+    "description": "A short film showed an ordinary woman turned by makeup and digital retouching into a billboard model, going viral online.",
+    "difficulty": "easy",
+    "regions": [
+      "Canada"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dove-evolution-film_7nb5wj?_a=BAMAMikS0",
+    "color": "#202125",
+    "text_color": "light"
+  },
+  {
+    "name": "old-spice-man-your-man-could-smell-like",
+    "friendly_name": "The Man Your Man Could Smell Like",
+    "year": 2010,
+    "category": "media",
+    "description": "A shirtless actor delivered a rapid, absurd pitch for body wash in a spot that became a viral hit.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/old-spice-man-your-man-could-smell-like_i7mcgu?_a=BAMAMikS0",
+    "color": "#25201e",
+    "text_color": "light"
+  },
+  {
+    "name": "coinbase-bouncing-qr-code-ad",
+    "friendly_name": "Coinbase's Bouncing QR Code Ad",
+    "year": 2022,
+    "category": "media",
+    "description": "A TV spot showed only a QR code drifting around the screen, and viewers scanned it so fast the website crashed.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coinbase-bouncing-qr-code-ad_n0s54i?_a=BAMAMikS0",
+    "color": "#222121",
+    "text_color": "light"
   }
 ]

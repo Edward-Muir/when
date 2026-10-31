@@ -1,0 +1,241 @@
+{
+  "deck": "sell-sell-sell",
+  "name": "Sell, Sell, Sell",
+  "stage": "pr-open",
+  "created_at": "2026-10-30T10:21:17.876Z",
+  "updated_at": "2026-10-31T02:08:57.600Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-30T10:21:17.876Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-30T11:09:30.582Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T01:07:25.026Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-31T02:07:06.822Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-31T02:08:57.600Z"
+    }
+  ],
+  "slugs": {
+    "caxton-printed-handbill-ad": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "82f51863dc31e9ae75b0657aee8b5dfcb1a0ad17504b9502f513a7806f1e0d40",
+      "updated_at": "2026-10-30T14:08:12.615Z"
+    },
+    "boston-news-letter-first-ad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "062316ad89b68b5f7e76492baa1446668167e3c7ca9fb5c2ad1b946929a849f2",
+      "updated_at": "2026-10-30T12:08:29.129Z"
+    },
+    "quaker-oats-man-trademark": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "78c8bce4d173116e9b9962c81910f1152898bb73c5e66841f7768be579ae1ff9",
+      "updated_at": "2026-10-30T12:08:29.160Z"
+    },
+    "pears-soap-bubbles-ad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6db35f9acebd9fff963622d6560f3325d9c0d2b40fdcf1bd869c8a2b88d6e52b",
+      "updated_at": "2026-10-30T12:08:29.191Z"
+    },
+    "kodak-you-press-the-button": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "30dd9199d24e0b24581ed21c179432c782753127e15320b27147e21f509d389d",
+      "updated_at": "2026-10-30T12:08:29.221Z"
+    },
+    "michelin-man-bibendum": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b68d5fa6d8aae9f7579ba2fc248751b749dddb410d72999fdcc1cd35b77d8f73",
+      "updated_at": "2026-10-30T12:08:29.252Z"
+    },
+    "morton-salt-when-it-rains": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0c349e79a3df2a7ba48db19126e1eeb6aa86cab1cb6c631dc7e153742fdc998e",
+      "updated_at": "2026-10-30T12:08:29.299Z"
+    },
+    "mr-peanut-created": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f06b7440e69b399a7a9d54b631636a3261d10ffdafeb91928974bd37ee347a00",
+      "updated_at": "2026-10-30T12:08:29.391Z"
+    },
+    "betty-crocker-created": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "aab8fd5c8056972bfea5e06c303b6c7d20898b16e3a2cfb93cf58c2d93d1aeb7",
+      "updated_at": "2026-10-30T12:08:29.429Z"
+    },
+    "burma-shave-roadside-signs": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ce2149e9dab02cea4e29a19e3b48c89fcdc5df296e8bb32389c55ab2d37f54b8",
+      "updated_at": "2026-10-30T12:08:29.467Z"
+    },
+    "wheaties-first-singing-jingle": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "86df074d49d3aa3392586cd9e07d47160615f66fe4abb176c32e1daf71c419de",
+      "updated_at": "2026-10-30T14:08:12.648Z"
+    },
+    "coca-cola-santa-claus-ads": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4fcd59b68af90416ed5b687e2781f9d26bfd09cb1426ba2b5fc878644512f398",
+      "updated_at": "2026-10-30T14:08:12.679Z"
+    },
+    "elsie-the-cow-mascot": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9210b2e5f19346933d7cf009e60c2543aac6b29d97fc7f05565e749bb7b54c97",
+      "updated_at": "2026-10-30T14:08:12.710Z"
+    },
+    "smokey-bear-debuts": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f415e32eae566dde1bc04e48fed084342ae3ead53d860bcd1d2e2e429855803c",
+      "updated_at": "2026-10-30T14:08:12.741Z"
+    },
+    "a-diamond-is-forever-slogan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "685f2f64c2b49b3eb1e54300d7c808030c2cf8a737ec82dbb0fb214f3af7a8ea",
+      "updated_at": "2026-10-30T14:08:12.781Z"
+    },
+    "tony-the-tiger-mascot": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "46e6d1e4814319c7a87922fb33eb4c7f6f4d0ac42d19adcf67824afbfca40ac2",
+      "updated_at": "2026-10-30T14:08:12.825Z"
+    },
+    "marlboro-man-campaign": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "eaf5a91c51aeae371f99e9823f4735e2add8d86d3079e8a0438b3c8cb8d9a194",
+      "updated_at": "2026-10-30T14:08:12.863Z"
+    },
+    "vw-think-small-ad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "72314ec1e871484c4cc3c6adc0cdd3fe3e59e6c66f8d3e1b48b89b629dbb56ba",
+      "updated_at": "2026-10-30T14:08:12.903Z"
+    },
+    "ronald-mcdonald-debuts": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "78f4cad721eaa8654ca88f4cd549fd92778348bce5b1eaa4f6ceffd2984d4338",
+      "updated_at": "2026-10-30T14:08:12.940Z"
+    },
+    "pillsbury-doughboy-debuts": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d90140f3c339c0df6cc619e77fa672439b5d4b7c5866e5d84108c86bd7a4ecdd",
+      "updated_at": "2026-10-30T16:07:26.987Z"
+    },
+    "coke-hilltop-teach-the-world": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9169d9a6ef161bab559c8e198616fb74aa1565c4fe1033a7ca1b90b824ec5814",
+      "updated_at": "2026-10-30T16:07:27.020Z"
+    },
+    "i-love-new-york-campaign": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c4ffe34adeebc3ca66c59baca76f1966b1430a234776e1656ede444754935e6a",
+      "updated_at": "2026-10-30T16:07:27.054Z"
+    },
+    "apple-1984-super-bowl-ad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "597043ff336afe4dc4d279b15b27917f3d1868fd62791380a9da3f9e84659c52",
+      "updated_at": "2026-10-31T01:07:24.803Z"
+    },
+    "nike-just-do-it-slogan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "63356c4cb4b46c87d42451a2b12b8f9c28e6b2df1d4691140e7e33569e94ea05",
+      "updated_at": "2026-10-31T01:07:24.833Z"
+    },
+    "got-milk-campaign": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a00e9a5b18a0bbde183b38d659ae9241d140775d78bed9d11b6d0a65039cc399",
+      "updated_at": "2026-10-31T01:07:24.864Z"
+    },
+    "apple-think-different-campaign": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7435f4d20e95cb89e5d9a293456eff7322bca4c797aeea1a64564c824049c828",
+      "updated_at": "2026-10-31T01:07:24.894Z"
+    },
+    "budweiser-whassup-ad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9877b96491ee58f0cd5e39fb579bf5abf4dd65cd72431b40dd7c13ca5ffe84f2",
+      "updated_at": "2026-10-31T01:07:24.923Z"
+    },
+    "dove-evolution-film": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "43588048c849fc53d7075dcc2a6e8585107fd750e2b1a839d0094812eeb9447c",
+      "updated_at": "2026-10-31T01:07:24.954Z"
+    },
+    "old-spice-man-your-man-could-smell-like": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "42a522543fb5f0904db7924f4f113253dd9fa97652f15e9b46e534cb42ba03e7",
+      "updated_at": "2026-10-31T01:07:24.984Z"
+    },
+    "coinbase-bouncing-qr-code-ad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "98a982ee6f3a4354948d396e0c19d01a5a989606d348d2407da3e8e1aeb13883",
+      "updated_at": "2026-10-31T01:07:25.026Z"
+    }
+  }
+}

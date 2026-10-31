@@ -1,0 +1,15 @@
+{
+  "slug": "a-diamond-is-forever-slogan",
+  "description": "A dark, painterly still life. An open black velvet ring box sits on a dim surface, with a diamond solitaire ring standing upright in it. A burst of gold sparks radiates from the stone against a shadowed brown background. No people, no visible text, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "marlboro-man-campaign",
+  "description": "A weathered man in a dark wide-brimmed hat and worn brown jacket leans over, cupping his hands around a lit cigarette while a horse stands beside him. The background is a dim, open plain under a dusky cloudy sky with low hills, painted in a loose oil style. No visible text, frame or border; the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "coinbase-bouncing-qr-code-ad",
+  "description": "A dim, dark room with a crowd of people in the foreground holding up smartphones, all pointed at a large flat-screen TV. The TV screen is black with a single glowing square of blocky black-and-white QR-style pixels, outlined in a soft blue and pink glow. The scene is painted in a dark, expressive oil style, with pictures hanging on the walls and a speaker and shelves at the sides. No readable letters or numbers are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

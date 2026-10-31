@@ -1,0 +1,15 @@
+{
+  "slug": "caxton-printed-handbill-ad",
+  "description": "An elderly man in a long dark gown and black cap presses a small sheet of paper against a Gothic stone pillar. Behind him are a wooden screw press and a workbench in a dim workshop. The sheet carries rows of blackletter-like lines and a larger heading with letter-like shapes. It is a full-bleed oil painting with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The handbill shows painted lettering: a heading with distinct letter shapes above rows of blackletter lines. Repaint the sheet as blank or blurred paper, or turn it away from the viewer."
+}

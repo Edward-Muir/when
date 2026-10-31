@@ -1,0 +1,15 @@
+{
+  "slug": "ronald-mcdonald-debuts",
+  "description": "A dim, warm-lit studio room with two vintage boxy film cameras on tripods facing a small wooden stool. On the stool sit a paper takeout bag with arch-shaped handles, a cheeseburger on a plate, and a crumpled paper cup with a small red mark. A single spotlight falls from above, with bleacher benches and hanging stage lights in the background. Oil-painting style, no people visible.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The card asks for a clown with a hamburger offered to children in a 1960s TV studio. The picture shows the studio, cameras and McDonald's-style food props, but no clown and no children, so it reads as a still life of the setting rather than the event. The paper cup and bag carry small arch and red marks that look like brand logos; they are not readable text, so no_text passes."
+}
