@@ -12861,5 +12861,215 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
     "text_color": "light"
+  },
+  {
+    "name": "trial-of-joan-of-arc-rouen",
+    "friendly_name": "Joan of Arc Is Put on Trial",
+    "year": 1431,
+    "category": "law",
+    "description": "A church court at Rouen tried the French peasant girl who led armies, finding her guilty of heresy before she was burned.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-of-joan-of-arc-rouen_cdc9a0?_a=BAMAMikS0",
+    "color": "#232022",
+    "text_color": "light"
+  },
+  {
+    "name": "trial-of-sir-thomas-more",
+    "friendly_name": "Sir Thomas More Tried for Treason",
+    "year": 1535,
+    "category": "law",
+    "description": "The former Lord Chancellor was convicted for refusing to accept the king as head of the English church.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-of-sir-thomas-more_sng5cu?_a=BAMAMikS0",
+    "color": "#2e221b",
+    "text_color": "light"
+  },
+  {
+    "name": "charles-i-put-on-trial",
+    "friendly_name": "King Charles I Is Put on Trial",
+    "year": 1649,
+    "category": "law",
+    "description": "A special court of Parliament tried the reigning English king for treason against his own people and condemned him.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charles-i-put-on-trial_ojyvbe?_a=BAMAMikS0",
+    "color": "#281f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "zenger-libel-acquittal",
+    "friendly_name": "John Peter Zenger Is Acquitted",
+    "year": 1735,
+    "category": "law",
+    "description": "A New York printer won acquittal on a libel charge after his lawyer argued that truth was a defence, a landmark for press freedom.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zenger-libel-acquittal_mrgniy?_a=BAMAMikS0",
+    "color": "#2a1e1a",
+    "text_color": "light"
+  },
+  {
+    "name": "boston-massacre-soldiers-trial",
+    "friendly_name": "British Soldiers Tried in Boston",
+    "year": 1770,
+    "category": "law",
+    "description": "John Adams defended the redcoats who fired on a crowd, and a colonial jury acquitted most of them.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boston-massacre-soldiers-trial_6nvvbh?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "amistad-supreme-court-ruling",
+    "friendly_name": "The Amistad Captives Win in Court",
+    "year": 1841,
+    "category": "law",
+    "description": "The US Supreme Court freed Africans who had seized a slave ship, with John Quincy Adams arguing their case.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amistad-supreme-court-ruling_raqd0z?_a=BAMAMikS0",
+    "color": "#3a2417",
+    "text_color": "light"
+  },
+  {
+    "name": "john-brown-trial-harpers-ferry",
+    "friendly_name": "John Brown Tried for Harpers Ferry",
+    "year": 1859,
+    "category": "law",
+    "description": "The abolitionist was convicted of treason and murder after his raid on a federal arsenal, and hanged weeks later.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/john-brown-trial-harpers-ferry_nr5as0?_a=BAMAMikS0",
+    "color": "#30241c",
+    "text_color": "light"
+  },
+  {
+    "name": "oscar-wilde-trials",
+    "friendly_name": "Oscar Wilde Goes on Trial",
+    "year": 1895,
+    "category": "law",
+    "description": "The celebrated playwright sued for libel, then was prosecuted himself and sentenced to two years of hard labour.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oscar-wilde-trials_a0ngck?_a=BAMAMikS0",
+    "color": "#2a1e17",
+    "text_color": "light"
+  },
+  {
+    "name": "sacco-vanzetti-convicted",
+    "friendly_name": "Sacco and Vanzetti Convicted",
+    "year": 1921,
+    "category": "law",
+    "description": "Two Italian immigrant anarchists were found guilty of a Massachusetts payroll murder in a trial that sparked worldwide protest.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sacco-vanzetti-convicted_7h6er4?_a=BAMAMikS0",
+    "color": "#271f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "al-capone-tax-evasion-conviction",
+    "friendly_name": "Al Capone Convicted of Tax Evasion",
+    "year": 1931,
+    "category": "law",
+    "description": "Chicago's most notorious gangster was jailed not for violence but for failing to pay income tax.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-capone-tax-evasion-conviction_rcd09s?_a=BAMAMikS0",
+    "color": "#222024",
+    "text_color": "light"
+  },
+  {
+    "name": "us-v-nixon-supreme-court",
+    "friendly_name": "United States v. Nixon",
+    "year": 1974,
+    "category": "law",
+    "description": "The Supreme Court unanimously ordered the president to hand over secret White House tapes, hastening his fall.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-v-nixon-supreme-court_d18u5u?_a=BAMAMikS0",
+    "color": "#24201d",
+    "text_color": "light"
+  },
+  {
+    "name": "rodney-king-officers-acquitted",
+    "friendly_name": "Rodney King Officers Acquitted",
+    "year": 1992,
+    "category": "law",
+    "description": "A suburban jury cleared police officers filmed beating a Black motorist, setting off days of unrest in a major city.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rodney-king-officers-acquitted_3abb2v?_a=BAMAMikS0",
+    "color": "#23201f",
+    "text_color": "light"
+  },
+  {
+    "name": "bush-v-gore-ruling",
+    "friendly_name": "Bush v. Gore Settles an Election",
+    "year": 2000,
+    "category": "law",
+    "description": "The Supreme Court halted a Florida recount, effectively deciding a razor-thin presidential contest.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bush-v-gore-ruling_edptl0?_a=BAMAMikS0",
+    "color": "#291e1a",
+    "text_color": "light"
+  },
+  {
+    "name": "depp-v-heard-verdict",
+    "friendly_name": "Depp v. Heard Verdict Delivered",
+    "year": 2022,
+    "category": "law",
+    "description": "A Virginia jury ruled in a livestreamed defamation case between two Hollywood actors that gripped social media.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/depp-v-heard-verdict_6hmygr?_a=BAMAMikS0",
+    "color": "#261f22",
+    "text_color": "light"
   }
 ]

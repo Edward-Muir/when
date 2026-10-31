@@ -1,0 +1,264 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "trial-of-socrates",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 1,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest spare; death-william-wallace is the execution, not the trial."
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "trial-of-joan-of-arc-rouen",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "trial-of-sir-thomas-more",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": "",
+      "why": "Thin evidence, low fame; cut for density in the medieval-early modern stretch."
+    },
+    {
+      "beat": 5,
+      "decision": "cut",
+      "slug": "",
+      "why": "Cut as a spare; witch trials already represented by Salem."
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "charles-i-put-on-trial",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "salem-witch-trials",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "zenger-libel-acquittal",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "boston-massacre-soldiers-trial",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 10,
+      "decision": "reuse",
+      "slug": "marbury-v-madison",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 11,
+      "decision": "cut",
+      "slug": "",
+      "why": "Low fame; cut to relieve 19th century."
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "amistad-supreme-court-ruling",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 13,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1, obscure."
+    },
+    {
+      "beat": 14,
+      "decision": "reuse",
+      "slug": "dred-scott-decision",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "john-brown-trial-harpers-ferry",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": "",
+      "why": "Close to Dred Scott and John Brown; kept the others."
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "dreyfus-affair",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "oscar-wilde-trials",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "plessy-v-ferguson",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 20,
+      "decision": "cut",
+      "slug": "",
+      "why": "Commerce more than courtroom; cut to relieve crowding."
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "sacco-vanzetti-convicted",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "scopes-trial",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "al-capone-tax-evasion-conviction",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 24,
+      "decision": "reuse",
+      "slug": "lindbergh-kidnapping-trial",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 25,
+      "decision": "reuse",
+      "slug": "nuremberg-trials",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 26,
+      "decision": "cut",
+      "slug": "",
+      "why": "Next to Nuremberg and one year apart; cut for crowding."
+    },
+    {
+      "beat": 27,
+      "decision": "reuse",
+      "slug": "brown-v-board",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 28,
+      "decision": "reuse",
+      "slug": "eichmann-trial",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 29,
+      "decision": "reuse",
+      "slug": "mandela-sentenced",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 30,
+      "decision": "reuse",
+      "slug": "miranda-v-arizona",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 31,
+      "decision": "reuse",
+      "slug": "roe-v-wade",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "us-v-nixon-supreme-court",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": "",
+      "why": "Cut for crowding in the 1970s-80s."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "rodney-king-officers-acquitted",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 35,
+      "decision": "reuse",
+      "slug": "oj-simpson-trial",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "bush-v-gore-ruling",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    },
+    {
+      "beat": 37,
+      "decision": "cut",
+      "slug": "",
+      "why": "Cut for crowding in recent decades."
+    },
+    {
+      "beat": 38,
+      "decision": "cut",
+      "slug": "",
+      "why": "Celebrity trial, weakest on scope."
+    },
+    {
+      "beat": 39,
+      "decision": "reuse",
+      "slug": "marriage-equality-us",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 40,
+      "decision": "new",
+      "slug": "depp-v-heard-verdict",
+      "why": "No catalogue card for this trial/ruling; the nearby card (if any) is a different event (execution, massacre, etc.)."
+    }
+  ],
+  "gates": "PASS  size 30                (want exactly 30)\n  INFO  bins 7/8               (advisory, 6+ is spread)\n  PASS  band 0 10              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1894-1896 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (big-thinkers) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against58 earlier themes:\n        1  big-thinkers           trial-of-socrates",
+  "footholds": [
+    "trial-of-socrates",
+    "trial-of-joan-of-arc-rouen",
+    "salem-witch-trials",
+    "al-capone-tax-evasion-conviction",
+    "brown-v-board",
+    "miranda-v-arizona",
+    "roe-v-wade",
+    "oj-simpson-trial",
+    "marriage-equality-us",
+    "depp-v-heard-verdict"
+  ]
+}

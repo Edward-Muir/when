@@ -1,0 +1,129 @@
+{
+  "deck": "day-in-court",
+  "name": "Day in Court",
+  "stage": "pr-open",
+  "created_at": "2026-10-28T03:16:28.102Z",
+  "updated_at": "2026-10-28T08:09:12.675Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-28T03:16:28.102Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-28T04:09:06.085Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-28T07:07:40.340Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-28T08:07:14.227Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-28T08:09:12.675Z"
+    }
+  ],
+  "slugs": {
+    "trial-of-joan-of-arc-rouen": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "92e72f8b10eb01de81d024c4e01630a3aa367a7d65a5c042504f5897e5f0f429",
+      "updated_at": "2026-10-28T05:07:21.030Z"
+    },
+    "trial-of-sir-thomas-more": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "08e7e6b8fd03c94d78baff506a9b306365f6f24771cf54c89030c937d651282f",
+      "updated_at": "2026-10-28T05:07:21.064Z"
+    },
+    "charles-i-put-on-trial": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "875f8048a9db3d57d0b461fc0e3a09767ced7522c7dd069c448a80598046de7d",
+      "updated_at": "2026-10-28T05:07:21.096Z"
+    },
+    "zenger-libel-acquittal": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bdae6e66cd14641233297c864de64ad345d24a51be91b40455297f04c9c5a744",
+      "updated_at": "2026-10-28T05:07:21.128Z"
+    },
+    "boston-massacre-soldiers-trial": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "812e4a538685bacaca311e316ae355da923cf7b8d63b7b39360b721ac01e242a",
+      "updated_at": "2026-10-28T05:07:21.159Z"
+    },
+    "amistad-supreme-court-ruling": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "66b28e541928731bd20cf38e324a83b62e4194eb29905df905999ae41da628e7",
+      "updated_at": "2026-10-28T05:07:21.190Z"
+    },
+    "john-brown-trial-harpers-ferry": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5a656e053018a677e834d9cf5d560956dba479a962d9fffa74c7525944b45f95",
+      "updated_at": "2026-10-28T05:07:21.226Z"
+    },
+    "oscar-wilde-trials": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6dcbfa3a5a9919c4a8fedec658bf548ee227659620d991cc3f768ccc7bdd6c7e",
+      "updated_at": "2026-10-28T05:07:21.260Z"
+    },
+    "sacco-vanzetti-convicted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6243b9ad2aee16bae86b74c0d58d179a78d6651a0363c2a29d51b52a2616d263",
+      "updated_at": "2026-10-28T05:07:21.294Z"
+    },
+    "al-capone-tax-evasion-conviction": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "001a40cf262f95f2d562cea0fd7211a770321d106c69d32219ffb5265e5a1605",
+      "updated_at": "2026-10-28T05:07:21.327Z"
+    },
+    "us-v-nixon-supreme-court": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6d7bc3f961732bc110cb56b31d3a7b825c86199933806050d808d62036a3b763",
+      "updated_at": "2026-10-28T07:07:40.246Z"
+    },
+    "rodney-king-officers-acquitted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9907db768487e46d4ec069288b5d86c50dab3c6d78985625a25e3f78aca46910",
+      "updated_at": "2026-10-28T07:07:40.278Z"
+    },
+    "bush-v-gore-ruling": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "282e0d4129f73bcacfc8c6c8e58e8d56f4533a9e9f935ff94cf4ff6b314a4ed7",
+      "updated_at": "2026-10-28T07:07:40.308Z"
+    },
+    "depp-v-heard-verdict": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "783d6f1712dcaad5d9c982fdbc425774316e2d04ea2c68015c38868e76d3a08b",
+      "updated_at": "2026-10-28T07:07:40.340Z"
+    }
+  }
+}
