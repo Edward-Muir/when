@@ -1,9 +1,9 @@
 {
   "deck": "sell-sell-sell",
   "name": "Sell, Sell, Sell",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-31T00:27:44.952Z",
+  "updated_at": "2026-10-31T01:07:25.026Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-30T11:09:30.582Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T01:07:25.026Z"
     }
   ],
   "slugs": {
@@ -170,60 +174,60 @@
       "updated_at": "2026-10-30T16:07:27.054Z"
     },
     "apple-1984-super-bowl-ad": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "597043ff336afe4dc4d279b15b27917f3d1868fd62791380a9da3f9e84659c52",
-      "updated_at": "2026-10-31T00:09:44.346Z"
+      "updated_at": "2026-10-31T01:07:24.803Z"
     },
     "nike-just-do-it-slogan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "63356c4cb4b46c87d42451a2b12b8f9c28e6b2df1d4691140e7e33569e94ea05",
-      "updated_at": "2026-10-31T00:12:11.383Z"
+      "updated_at": "2026-10-31T01:07:24.833Z"
     },
     "got-milk-campaign": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a00e9a5b18a0bbde183b38d659ae9241d140775d78bed9d11b6d0a65039cc399",
-      "updated_at": "2026-10-31T00:14:37.630Z"
+      "updated_at": "2026-10-31T01:07:24.864Z"
     },
     "apple-think-different-campaign": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7435f4d20e95cb89e5d9a293456eff7322bca4c797aeea1a64564c824049c828",
-      "updated_at": "2026-10-31T00:17:05.690Z"
+      "updated_at": "2026-10-31T01:07:24.894Z"
     },
     "budweiser-whassup-ad": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9877b96491ee58f0cd5e39fb579bf5abf4dd65cd72431b40dd7c13ca5ffe84f2",
-      "updated_at": "2026-10-31T00:19:40.401Z"
+      "updated_at": "2026-10-31T01:07:24.923Z"
     },
     "dove-evolution-film": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "43588048c849fc53d7075dcc2a6e8585107fd750e2b1a839d0094812eeb9447c",
-      "updated_at": "2026-10-31T00:22:28.434Z"
+      "updated_at": "2026-10-31T01:07:24.954Z"
     },
     "old-spice-man-your-man-could-smell-like": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "42a522543fb5f0904db7924f4f113253dd9fa97652f15e9b46e534cb42ba03e7",
-      "updated_at": "2026-10-31T00:25:04.979Z"
+      "updated_at": "2026-10-31T01:07:24.984Z"
     },
     "coinbase-bouncing-qr-code-ad": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "98a982ee6f3a4354948d396e0c19d01a5a989606d348d2407da3e8e1aeb13883",
-      "updated_at": "2026-10-31T00:27:44.952Z"
+      "updated_at": "2026-10-31T01:07:25.026Z"
     }
   }
 }

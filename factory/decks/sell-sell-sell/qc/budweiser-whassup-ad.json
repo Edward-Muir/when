@@ -1,0 +1,15 @@
+{
+  "slug": "budweiser-whassup-ad",
+  "description": "A painted living room scene with a worn plaid-cushioned couch, a brick-style mobile phone and a corded handset on the cushions, and a rumpled blanket. A CRT television on the right shows an American football game. A brown beer bottle, a glass and a bowl of snacks sit on a side table, with tangled cords on the floor. The style is dark oil-painting realism, with no people in view.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

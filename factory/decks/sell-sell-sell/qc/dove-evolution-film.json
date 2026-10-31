@@ -1,0 +1,15 @@
+{
+  "slug": "dove-evolution-film",
+  "description": "A dark, moody oil-style painting of a dressing table at night. A large billboard on a pole towers above it, showing a woman's face with dramatic eye makeup and glossy lips against a pale background. The table holds makeup brushes in a cup, aerosol cans, lipsticks, compacts and loose brushes, with a warm lamp glowing on the left. An open laptop on the right shows a photo-editing interface. Nothing is gory and no text is legible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
