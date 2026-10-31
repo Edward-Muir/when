@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T19:14:35.596Z",
+  "updated_at": "2026-10-31T19:17:21.568Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-10-31T19:14:35.596Z"
     },
     "quebec-geomagnetic-blackout": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "74591a8bc5054cf2211792d2ac1d8620fbe8fceea086a2b47d668618232e8cf8",
+      "updated_at": "2026-10-31T19:17:21.568Z"
     },
     "toyota-prius-launched": {
       "state": "pending",
