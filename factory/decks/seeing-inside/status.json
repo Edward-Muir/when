@@ -1,9 +1,9 @@
 {
   "deck": "seeing-inside",
   "name": "Seeing Inside",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T07:14:21.033Z",
+  "updated_at": "2026-10-31T08:07:00.320Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-10-31T03:08:57.043Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T08:07:00.320Z"
     }
   ],
   "slugs": {
@@ -107,11 +111,11 @@
       "updated_at": "2026-10-31T06:07:35.938Z"
     },
     "first-ct-scan-patient": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The scanner housing has a painted plate reading 'EMI'. Remove the lettering so the machine is unmarked.",
+      "reason": null,
       "sha256": "4a84b884b4357bc5bfdcdf49e40449deaab6a0b81b65319f8e11573e0bf8d97b",
-      "updated_at": "2026-10-31T07:09:05.843Z"
+      "updated_at": "2026-10-31T08:07:00.257Z"
     },
     "home-pregnancy-test-launched": {
       "state": "qc-pass",
@@ -149,18 +153,18 @@
       "updated_at": "2026-10-31T06:07:36.145Z"
     },
     "smartwatch-ecg-approved": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "02a601099bb565ed4f6ad8243be31ec46e41e6ee6d4a8470075a6106adf7acba",
-      "updated_at": "2026-10-31T07:11:38.420Z"
+      "updated_at": "2026-10-31T08:07:00.290Z"
     },
     "mass-covid-testing": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c49b8bb85e6f10a8c0eaa77fa998fd5624a2d0aa729ae6afc4e01d741ef7606c",
-      "updated_at": "2026-10-31T07:14:21.033Z"
+      "updated_at": "2026-10-31T08:07:00.320Z"
     }
   }
 }

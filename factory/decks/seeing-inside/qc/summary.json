@@ -91,11 +91,11 @@
     "description": "A painted still life in warm, dark tones. A long, flexible tube coils in loops across a dark table, with a glowing orange tip at one end and a splayed bundle of glowing fibres at the other. Behind it sit a brass microscope, glassware and an open wooden case holding instruments. A metal optical eyepiece with knobs lies in the lower right. No visible text, frame or border; the painting fills the square."
   },
   "first-ct-scan-patient": {
-    "state": "qc-fail",
-    "reason": "The scanner housing has a painted plate reading 'EMI'. Remove the lettering so the machine is unmarked.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark oil painting of a technician seated at a CRT console showing a bright brain cross-section, while a patient lies on a table with their head inside a large boxy scanner with a glowing ring opening. Racks of dials and cables fill the room. A small plate on top of the scanner reads 'EMI'. No frame or border, nothing graphic."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A dim, painterly interior with warm amber light and cluttered shelves of old electronics with dials, meters and tangled cables. A boxy grey machine with a circular opening stands on the left, and a person in dark clothing stands beside it. A patient lies on a padded table, draped in a pale sheet, head toward the opening. On the right, a boxy CRT monitor on a cart shows a grey cross-section of a brain. No visible text, frame or border; the painting fills the canvas edge to edge."
   },
   "home-pregnancy-test-launched": {
     "state": "qc-pass",
@@ -131,5 +131,19 @@
     "by": "review",
     "attempts": 1,
     "description": "A painting of a small transparent cylindrical capsule with a lens and ring of white LEDs at one end, resting on the tip of a human thumb. The capsule's internal components are visible through the clear shell. The background is a near-black dark brown, and the thumb and hand are lit warmly from the left. There is no visible text, frame or border, and the painting fills the image edge to edge."
+  },
+  "smartwatch-ecg-approved": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted close-up, in an oil-painting style, of an older person's hands. A rectangular silver-cased smartwatch sits on the left wrist, and its dark screen shows a glowing green-and-yellow heartbeat trace. A fingertip from the other hand rests near the watch's side button. The background is dark brown with loose brushwork, and a grey-brown sleeve sits at the lower left. I see no visible text, frame, blood or nudity."
+  },
+  "mass-covid-testing": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted night scene in heavy rain under sodium street lights. A health worker in a dark gown, face shield and mask leans toward a car window, holding a swab up toward a driver's face. A line of cars with headlights on stretches back past an olive-green canvas tent with a lit interior and orange traffic cones. Edge to edge painting, no visible text."
   }
 }
