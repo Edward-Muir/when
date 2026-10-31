@@ -198,6 +198,76 @@ A recurring question, already answered: **recency does not make games harder.** 
 in mean band index at any position is 0.025 on a 0–3 scale. The exclusion changes _which_ card
 is dealt, not which band.
 
+## Catch-up draws
+
+After a miss, the next replacement is the easiest card in a lookahead window instead of the top
+of the deck (`src/utils/catchUp.ts`, header comment for the mechanism). This is the Candy Crush
+idea: King tracks a skill profile per player and says easier content keeps players longer
+("retention always wins"). It runs in every mode, the Daily included, and **is silent by
+decision**: there is no UI cue, nothing on How to Play, and nothing in share text. Don't add one.
+
+- **Struggle** is 0-3, folded from the player's own `placementHistory`. A miss raises it, and
+  each hit draws at the current level and then lowers it by one. Lookahead is 1, 8, 16, 32.
+  At 0 the draw is exactly `deck[0]`, so a clean game deals exactly as before.
+- **Ease is measured on the player's board, not the label.** `boardRoom` is the distance, in
+  `u` space, from the card's window to the nearest bound that would make it a miss: the same
+  running bounds `isPlacementCorrect` judges with. The recognition label only scales it by up
+  to 25% to break near-ties. The catalogue-wide crowding term in `score` is deliberately
+  unused, because the real board replaces it.
+- **A miss still draws nothing.** The leaderboard's red-square cap and `themeOutcome.ts`
+  depend on that.
+- **The rest of the deck keeps its order.** A pick lifts one card out, so the remaining deck
+  is always the composed deck minus every card seen. Daily resume (`dailyProgress.ts`) rebuilds
+  it that way and checks that the opening deal is the deck's front and that every seen card is
+  within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
+  reason.
+- **Every drawn card goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`),
+  eased or not, so where a card lands never gives away that it was eased. It is played on the
+  next turn, close to the board it was picked for; room is measured at draw time, so it is an
+  upper bound.
+
+**Measured against a player model that never sees room.** 60 Dailies × 20 runs. The simulated
+player guesses each card's year with error proportional to its age (`age · e^(σz)`, σ scaled
+×1–2.5 from easy to very-hard), drops it where that guess falls, and is judged by
+`isPlacementCorrect`. The earlier room-driven model is not evidence (it was circular). The
+pick rules are compared on identical guesses; "eased hit" is the hit rate of the cards drawn
+at struggle > 0.
+
+| σ (player)     | rule              | eased hit | events placed | eased picks at a board edge |
+| -------------- | ----------------- | --------- | ------------- | --------------------------- |
+| 0.15 (average) | top card (before) | 63%       | 16.5          |                             |
+|                | random in window  | 60%       | 16.3          | 8%                          |
+|                | **`u` room**      | **74%**   | **17.0**      | 14%                         |
+|                | log-age room      | 82%       | 17.5          | 23%                         |
+| 0.08 (strong)  | top → `u` room    | 69 → 83%  | 23.3 → 24.1   |                             |
+| 0.5 (beginner) | top → `u` room    | 48 → 59%  | 8.2 → 8.6     |                             |
+
+- **The metric is what helps.** A random card from the same window does no better than the
+  top card, so the gain comes from choosing by room, not from reshuffling.
+- **Don't switch to log-age.** It scores a little higher in this model, which itself measures
+  error in log-age and so flatters it. But it hoards the extremes: at σ 0.15 its eased picks
+  were 12% prehistory and 22% modern, against 2% and 6% for ordinary draws. `u` room keeps the
+  era mix within a few points of ordinary draws (prehistory 4%). `u` is a rank coordinate, so
+  it already compresses deep time harder than a log does: everything before −10,000 is 3% of
+  `u`.
+- **The score effect is small, by design**: about half an event per game from catch-up alone,
+  because only the draws right after a miss are eased. Help that lasts longer, with one level
+  of decay per 2 hits, raised this to +0.6 to +1.8 events.
+- **Drawn cards go to slot 2, not the back and not slot 1.** Same model and seeds, every draw
+  placed at each slot, average player (σ 0.15):
+
+  | every draw goes to | no catch-up | with catch-up | catch-up's own lift | blanket easing |
+  | ------------------ | ----------- | ------------- | ------------------- | -------------- |
+  | back (before)      | 16.20       | 16.78         | +0.58               | 0              |
+  | **slot 2**         | 16.48       | **17.16**     | **+0.68**           | +0.27          |
+  | slot 1 (active)    | 16.60       | 17.20         | +0.59               | +0.40          |
+
+  Moving every draw, not only eased ones, is the point: eased-only would mark the eased cards,
+  and measured it changed scores by under 0.05 anyway. Slot 2 is a mild easing for everyone
+  as well, and helps strong players most (+0.33 at σ 0.08, +0.06 at σ 0.5); that was
+  accepted. Slot 1 was rejected: it adds more blanket easing but less catch-up (+0.34 against
+  +0.46 at σ 0.3), and it swaps the card the player is looking at.
+
 ## Tombstones
 
 A single-player miss shows no popup. The failed card FLIP-morphs from the attempted slot to
