@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-31T00:09:44.346Z",
+  "updated_at": "2026-10-31T00:12:11.383Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -177,10 +177,11 @@
       "updated_at": "2026-10-31T00:09:44.346Z"
     },
     "nike-just-do-it-slogan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "63356c4cb4b46c87d42451a2b12b8f9c28e6b2df1d4691140e7e33569e94ea05",
+      "updated_at": "2026-10-31T00:12:11.383Z"
     },
     "got-milk-campaign": {
       "state": "pending",
