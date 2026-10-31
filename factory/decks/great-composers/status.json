@@ -1,0 +1,178 @@
+{
+  "deck": "great-composers",
+  "name": "The Great Composers",
+  "stage": "pr-open",
+  "created_at": "2026-10-24T11:20:36.112Z",
+  "updated_at": "2026-10-25T12:33:10.383Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-24T11:20:36.112Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-24T12:09:02.382Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-24T21:06:42.191Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-25T12:30:38.054Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-25T12:33:10.383Z"
+    }
+  ],
+  "slugs": {
+    "ordo-virtutum-hildegard": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "965fd032d5c6aa36b8b4bdc284bd86fd2c618d85276f4fb6616f3138d4748ab9",
+      "updated_at": "2026-10-24T13:07:20.105Z"
+    },
+    "machaut-messe-de-nostre-dame": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5cb0e6560fc7d9628962a39d291100e50158d0e007d9b5926b3ddd8343e3563a",
+      "updated_at": "2026-10-24T13:07:20.142Z"
+    },
+    "dufay-nuper-rosarum-flores": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "719de4f81fb4963986b3169127852a5000b646589381cdd44790808829162437",
+      "updated_at": "2026-10-24T13:07:20.179Z"
+    },
+    "palestrina-pope-marcellus-mass": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7e2673527cc1d6ab5a7fb2ef8f659aba84b4fc66e99681af8c50acf84f707d43",
+      "updated_at": "2026-10-24T13:07:20.216Z"
+    },
+    "bach-brandenburg-concertos": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "74f8324e652656a01028c579061b31ee3fe9e4dc44ee7d74e9b732f4cbf371bf",
+      "updated_at": "2026-10-24T13:07:20.251Z"
+    },
+    "haydn-creation-oratorio": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "87b1b39df81883ad18ca0bebdf9c97abb41f4f922ea2bc9b7c47c5137e6baa97",
+      "updated_at": "2026-10-24T13:07:20.286Z"
+    },
+    "berlioz-symphonie-fantastique": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0e2be5eb15c36f2ebf688df09bf9f89c8e59cf5e652019b137e68a54e7c8150b",
+      "updated_at": "2026-10-24T13:07:20.323Z"
+    },
+    "chopin-24-preludes-published": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b35fd7927c79298000c328140f746798a2fd8110ac2e444ddd8e66eafe2d9532",
+      "updated_at": "2026-10-24T15:07:09.583Z"
+    },
+    "mendelssohn-wedding-march": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "440d2d263a75aa6367a8be973841f7e43d370643df3aa4062764775dd2019d2b",
+      "updated_at": "2026-10-24T13:07:20.358Z"
+    },
+    "strauss-blue-danube-waltz": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "596ad230de930f115b0e4debc7317b861dc7e5be3da18b3ba8e8040c77491072",
+      "updated_at": "2026-10-24T13:07:20.395Z"
+    },
+    "bizet-carmen-premiere": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4f5bbeb06695479be4f7b6b30ab0e1111f0e2d8362853a079688a9d543bbded7",
+      "updated_at": "2026-10-24T17:07:58.801Z"
+    },
+    "wagner-ring-cycle-bayreuth": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f291c2ff3d15a994dd9c8f78e665667ad6c346c6515d4632fce546ea7534de0b",
+      "updated_at": "2026-10-24T15:07:09.614Z"
+    },
+    "puccini-la-boheme-premiere": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a2cb837d63062ea518e8805ac0d31b22dbad4d0dd110c58a20ae169a08607f98",
+      "updated_at": "2026-10-24T17:07:58.840Z"
+    },
+    "rachmaninoff-piano-concerto-2": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7c016c6d34ae25b7135ca01c3c6bf798b49d36c9e2a918d7067d9f5f9f981a56",
+      "updated_at": "2026-10-24T17:07:58.875Z"
+    },
+    "debussy-clair-de-lune": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "521c6aec3449f2f6ffb702c6547f784db7b7568d3ddd9c152c6c1b3ecc78a6a1",
+      "updated_at": "2026-10-24T17:07:58.911Z"
+    },
+    "ravel-bolero-premiere": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c2c32d19ced33f3e1dc455a2d30c3c79e70513aa34984fa3efd8fc6cd6d1bbb6",
+      "updated_at": "2026-10-24T17:07:58.946Z"
+    },
+    "prokofiev-peter-and-the-wolf": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b5ba72331f90284c90de137fde031cfa542525f76869d19ad1d7d8eb5a8f93dc",
+      "updated_at": "2026-10-24T17:07:58.981Z"
+    },
+    "orff-carmina-burana-premiere": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7bb9eb19d674e71bc500b0cc2aa5ee3c00856d03261264125a9fc53cf927c8e2",
+      "updated_at": "2026-10-24T17:07:59.016Z"
+    },
+    "britten-war-requiem-premiere": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "901e2d97932e528d70fbfe032ea2849afee93c3d05d14e141ae97e4c6f1957f9",
+      "updated_at": "2026-10-24T17:07:59.050Z"
+    },
+    "glass-einstein-on-the-beach": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a5dc5fe121e773080059063dbdb6e6b852cf3243f3671943bf3b2419225f9aac",
+      "updated_at": "2026-10-24T17:07:59.090Z"
+    },
+    "adams-nixon-in-china-premiere": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "390caac3a901985f0fe21636e2457398c9f7293a3479ec4206bfd4535216f4b6",
+      "updated_at": "2026-10-24T21:06:42.191Z"
+    }
+  }
+}

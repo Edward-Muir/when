@@ -1,0 +1,23 @@
+{
+  "ordo-virtutum-hildegard": {"recognition": "low", "inferability": "high", "anchors": ["abbess", "morality play", "earliest musical dramas"], "why": "abbess and morality play with earliest-surviving framing point to the medieval era"},
+  "machaut-messe-de-nostre-dame": {"recognition": "low", "inferability": "high", "anchors": ["first polyphonic Mass", "poet-composer"], "why": "first complete polyphonic Mass places it in the late medieval era"},
+  "dufay-nuper-rosarum-flores": {"recognition": "very-low", "inferability": "high", "anchors": ["Florence cathedral dome", "Franco-Flemish"], "why": "Florence's cathedral crowned by a new dome points to the early Renaissance"},
+  "palestrina-pope-marcellus-mass": {"recognition": "low", "inferability": "medium", "anchors": ["Pope", "church polyphony"], "why": "church polyphony and a pope's Mass suggest Renaissance/Counter-Reformation, but it is a broad window"},
+  "bach-brandenburg-concertos": {"recognition": "medium", "inferability": "medium", "anchors": ["Margrave", "court musician", "concertos"], "why": "court musician and Margrave suggest the Baroque, though Bach is not named in text beyond the title"},
+  "haydn-creation-oratorio": {"recognition": "medium", "inferability": "medium", "anchors": ["Austrian composer", "oratorio", "orchestra"], "why": "oratorio with orchestra suggests the Classical era; Haydn's name in the title helps"},
+  "berlioz-symphonie-fantastique": {"recognition": "medium", "inferability": "medium", "anchors": ["symphony", "programmatic", "opium dreams"], "why": "programmatic symphony and opium dreams suggest Romantic era"},
+  "chopin-24-preludes-published": {"recognition": "medium", "inferability": "medium", "anchors": ["Chopin", "piano", "published"], "why": "Chopin and published piano set place it in the Romantic 19th century"},
+  "mendelssohn-wedding-march": {"recognition": "high", "inferability": "medium", "anchors": ["Mendelssohn", "Shakespeare comedy", "wedding march"], "why": "famous march; Mendelssohn suggests the 19th century"},
+  "strauss-blue-danube-waltz": {"recognition": "high", "inferability": "medium", "anchors": ["Viennese waltz", "Strauss"], "why": "Viennese waltz king points to the 19th century"},
+  "bizet-carmen-premiere": {"recognition": "high", "inferability": "medium", "anchors": ["opera", "Paris", "cigarette factory"], "why": "cigarette factory and Paris opera suggest the 19th century"},
+  "wagner-ring-cycle-bayreuth": {"recognition": "medium", "inferability": "medium", "anchors": ["Wagner", "Norse-myth opera", "purpose-built theatre"], "why": "Wagner points to the 19th-century Romantic era"},
+  "puccini-la-boheme-premiere": {"recognition": "medium", "inferability": "medium", "anchors": ["Puccini", "opera", "Paris artists"], "why": "late Romantic opera; Puccini and Bohemian Paris point to the late 19th century"},
+  "rachmaninoff-piano-concerto-2": {"recognition": "medium", "inferability": "medium", "anchors": ["Rachmaninoff", "Russian composer-pianist"], "why": "Russian Romantic composer narrows to late 19th or early 20th century"},
+  "debussy-clair-de-lune": {"recognition": "high", "inferability": "medium", "anchors": ["Debussy", "piano suite"], "why": "Debussy points to the Impressionist era around 1900"},
+  "ravel-bolero-premiere": {"recognition": "high", "inferability": "medium", "anchors": ["Ravel", "ballet", "snare drum"], "why": "Ravel points to the early 20th century"},
+  "prokofiev-peter-and-the-wolf": {"recognition": "high", "inferability": "medium", "anchors": ["Russian composer", "children's tale"], "why": "Prokofiev points to the 20th century"},
+  "orff-carmina-burana-premiere": {"recognition": "high", "inferability": "medium", "anchors": ["Orff", "O Fortuna", "medieval poems set"], "why": "Orff and orchestra place it in the 20th century; the medieval text could mislead a little"},
+  "britten-war-requiem-premiere": {"recognition": "medium", "inferability": "high", "anchors": ["war poetry", "rebuilt cathedral", "Requiem"], "why": "a rebuilt cathedral and war poetry point to the post-WWII era"},
+  "glass-einstein-on-the-beach": {"recognition": "medium", "inferability": "medium", "anchors": ["minimalist", "Einstein", "American composer"], "why": "minimalism points to the late 20th century"},
+  "adams-nixon-in-china-premiere": {"recognition": "medium", "inferability": "high", "anchors": ["Nixon", "Beijing visit", "opera"], "why": "Nixon's China visit anchors it to the 1970s-80s"}
+}

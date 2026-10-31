@@ -1,0 +1,15 @@
+{
+  "slug": "berlioz-symphonie-fantastique",
+  "description": "A dark-haired young man in a white shirt and dark waistcoat lies slumped and asleep in a red velvet armchair beside a table with a lit candle, a small bottle of red liquid and scattered papers. Above him a pale ghostly woman in a long white gown drifts through swirling smoke, and behind her dark horned and winged figures and dancing wraiths fill a shadowy, painterly background. Oil-painting style, edge to edge, no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

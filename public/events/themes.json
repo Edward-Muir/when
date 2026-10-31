@@ -12508,6 +12508,325 @@
     ]
   },
   {
+    "name": "ordo-virtutum-hildegard",
+    "friendly_name": "Hildegard's Ordo Virtutum",
+    "year": 1151,
+    "category": "art",
+    "description": "A German abbess composed a sung morality play, among the earliest surviving musical dramas, in which Virtues battle the Devil.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ordo-virtutum-hildegard_jcswcf?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "machaut-messe-de-nostre-dame",
+    "friendly_name": "Machaut's Messe de Nostre Dame",
+    "year": 1365,
+    "category": "art",
+    "description": "A French poet-composer completed the first known complete polyphonic Mass setting attributed to a single composer.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/machaut-messe-de-nostre-dame_hvlqsp?_a=BAMAMikS0",
+    "color": "#25201d",
+    "text_color": "light"
+  },
+  {
+    "name": "dufay-nuper-rosarum-flores",
+    "friendly_name": "Dufay's Nuper Rosarum Flores",
+    "year": 1436,
+    "category": "art",
+    "description": "A Franco-Flemish composer wrote a grand motet for the consecration of Florence's cathedral, crowned by a new dome.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dufay-nuper-rosarum-flores_ngzb2j?_a=BAMAMikS0",
+    "color": "#b4aca0",
+    "text_color": "dark"
+  },
+  {
+    "name": "palestrina-pope-marcellus-mass",
+    "friendly_name": "Palestrina's Pope Marcellus Mass",
+    "year": 1567,
+    "category": "art",
+    "description": "An Italian master of church polyphony wrote a Mass said to prove that rich choral music could keep its words clear.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/palestrina-pope-marcellus-mass_5pv7po?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "bach-brandenburg-concertos",
+    "friendly_name": "Bach's Brandenburg Concertos",
+    "year": 1721,
+    "category": "art",
+    "description": "A German court musician sent six richly varied concertos to a Margrave in Berlin in hopes of winning a job.",
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bach-brandenburg-concertos_rboh0s?_a=BAMAMikS0",
+    "color": "#261f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "haydn-creation-oratorio",
+    "friendly_name": "Haydn's The Creation Performed",
+    "year": 1798,
+    "category": "art",
+    "description": "An Austrian composer set the biblical story of the world's making for soloists, chorus and orchestra, opening with a famous depiction of chaos.",
+    "difficulty": "medium",
+    "regions": [
+      "Austria"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/haydn-creation-oratorio_08bh99?_a=BAMAMikS0",
+    "color": "#50311d",
+    "text_color": "light"
+  },
+  {
+    "name": "berlioz-symphonie-fantastique",
+    "friendly_name": "Berlioz's Symphonie Fantastique",
+    "year": 1830,
+    "category": "art",
+    "description": "A French composer premiered a symphony telling of an artist's opium dreams and obsessive love, pioneering the programmatic orchestral work.",
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/berlioz-symphonie-fantastique_0kdh6d?_a=BAMAMikS0",
+    "color": "#281e1c",
+    "text_color": "light"
+  },
+  {
+    "name": "chopin-24-preludes-published",
+    "friendly_name": "Chopin Publishes His 24 Preludes",
+    "year": 1839,
+    "category": "art",
+    "description": "A Polish-born pianist-composer published a set of short piano pieces that pass through every major and minor key.",
+    "difficulty": "medium",
+    "regions": [
+      "France",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chopin-24-preludes-published_tpdbrg?_a=BAMAMikS0",
+    "color": "#261f1e",
+    "text_color": "light"
+  },
+  {
+    "name": "mendelssohn-wedding-march",
+    "friendly_name": "Mendelssohn's Wedding March",
+    "year": 1843,
+    "category": "art",
+    "description": "A German composer finished incidental music for a Shakespeare comedy, including the march that became a bridal staple.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mendelssohn-wedding-march_jmp3wf?_a=BAMAMikS0",
+    "color": "#222121",
+    "text_color": "light"
+  },
+  {
+    "name": "strauss-blue-danube-waltz",
+    "friendly_name": "Strauss's Blue Danube Waltz",
+    "year": 1867,
+    "category": "art",
+    "description": "A Viennese waltz king unveiled a choral waltz that became the unofficial anthem of his city's music.",
+    "difficulty": "easy",
+    "regions": [
+      "Austria"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/strauss-blue-danube-waltz_97as0d?_a=BAMAMikS0",
+    "color": "#442c20",
+    "text_color": "light"
+  },
+  {
+    "name": "bizet-carmen-premiere",
+    "friendly_name": "Bizet's Carmen Premieres",
+    "year": 1875,
+    "category": "art",
+    "description": "A French composer's opera about a fiery cigarette-factory worker and a doomed soldier shocked Paris at its opening.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bizet-carmen-premiere_gjabgy?_a=BAMAMikS0",
+    "color": "#2a1d1b",
+    "text_color": "light"
+  },
+  {
+    "name": "wagner-ring-cycle-bayreuth",
+    "friendly_name": "Wagner's Ring Cycle Staged",
+    "year": 1876,
+    "category": "art",
+    "description": "A German composer presented all four parts of his epic Norse-myth opera in a theatre he had built for the purpose.",
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wagner-ring-cycle-bayreuth_1ak6lu?_a=BAMAMikS0",
+    "color": "#25201f",
+    "text_color": "light"
+  },
+  {
+    "name": "puccini-la-boheme-premiere",
+    "friendly_name": "Puccini's La Boheme Premieres",
+    "year": 1896,
+    "category": "art",
+    "description": "An Italian composer's opera of poor young artists in Paris, with a seamstress who dies of illness, opened in Turin.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/puccini-la-boheme-premiere_645ze7?_a=BAMAMikS0",
+    "color": "#232021",
+    "text_color": "light"
+  },
+  {
+    "name": "rachmaninoff-piano-concerto-2",
+    "friendly_name": "Rachmaninoff's Second Concerto",
+    "year": 1901,
+    "category": "art",
+    "description": "A Russian composer-pianist premiered a lush concerto that marked his recovery from a deep depression.",
+    "difficulty": "medium",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rachmaninoff-piano-concerto-2_y3bq1y?_a=BAMAMikS0",
+    "color": "#2d1d15",
+    "text_color": "light"
+  },
+  {
+    "name": "debussy-clair-de-lune",
+    "friendly_name": "Debussy's Clair de Lune Published",
+    "year": 1905,
+    "category": "art",
+    "description": "A French composer released a gentle piano piece named for moonlight, the best-loved movement of a suite.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/debussy-clair-de-lune_jsavaz?_a=BAMAMikS0",
+    "color": "#202126",
+    "text_color": "light"
+  },
+  {
+    "name": "ravel-bolero-premiere",
+    "friendly_name": "Ravel's Bolero Premieres",
+    "year": 1928,
+    "category": "art",
+    "description": "A French composer wrote a single hypnotic melody repeated over a snare drum rhythm as a ballet for a dancer.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ravel-bolero-premiere_pnrh5r?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "prokofiev-peter-and-the-wolf",
+    "friendly_name": "Prokofiev's Peter and the Wolf",
+    "year": 1936,
+    "category": "art",
+    "description": "A Russian composer wrote a children's tale in which each character is played by a different instrument.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/prokofiev-peter-and-the-wolf_6o1umu?_a=BAMAMikS0",
+    "color": "#1d2129",
+    "text_color": "light"
+  },
+  {
+    "name": "orff-carmina-burana-premiere",
+    "friendly_name": "Orff's Carmina Burana Premieres",
+    "year": 1937,
+    "category": "art",
+    "description": "A German composer set medieval students' bawdy poems for chorus and orchestra, opening with the thunderous O Fortuna.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/orff-carmina-burana-premiere_rhu220?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "britten-war-requiem-premiere",
+    "friendly_name": "Britten's War Requiem Premieres",
+    "year": 1962,
+    "category": "art",
+    "description": "An English composer blended the Latin Mass for the dead with war poetry, for the consecration of a rebuilt cathedral.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/britten-war-requiem-premiere_tsqacy?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "glass-einstein-on-the-beach",
+    "friendly_name": "Glass's Einstein on the Beach",
+    "year": 1976,
+    "category": "art",
+    "description": "An American minimalist composer staged a five-hour opera of repeating patterns, tied to the name of a famous physicist.",
+    "difficulty": "medium",
+    "regions": [
+      "France",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/glass-einstein-on-the-beach_mckj5u?_a=BAMAMikS0",
+    "color": "#202123",
+    "text_color": "light"
+  },
+  {
+    "name": "adams-nixon-in-china-premiere",
+    "friendly_name": "Adams's Nixon in China Premieres",
+    "year": 1987,
+    "category": "art",
+    "description": "An American composer's opera dramatised a famous diplomatic visit to Beijing, with sung roles for the leaders and their wives.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/adams-nixon-in-china-premiere_ppvmji?_a=BAMAMikS0",
+    "color": "#212123",
+    "text_color": "light"
+  },
+  {
     "name": "eoraptor-dawn-dinosaur",
     "friendly_name": "Eoraptor, a Dawn Dinosaur",
     "year": -231000000,

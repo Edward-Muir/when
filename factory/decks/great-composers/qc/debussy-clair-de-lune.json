@@ -1,0 +1,15 @@
+{
+  "slug": "debussy-clair-de-lune",
+  "description": "A dark, painterly parlour interior. A glossy black grand piano with its lid raised stands in the foreground, with an open music book on the stand and a small illegible gold-ish mark on the case near the keys. Beside it, tall French windows stand open onto a moonlit garden with a still pond reflecting a full moon. Damask wallpaper, a gilt mirror, drapes and a patterned rug complete the room. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A small mark on the piano case beside the keys looks like a maker's nameplate with letters. It is tiny and not legible, but it is still lettering, so a reviewer should confirm it is not text painted in. Otherwise the picture matches the scene: moonlit open windows, a grand piano, sheet music, no people, Belle Epoque era."
+}
