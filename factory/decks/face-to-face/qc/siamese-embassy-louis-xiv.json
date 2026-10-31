@@ -1,0 +1,15 @@
+{
+  "slug": "siamese-embassy-louis-xiv",
+  "description": "A painted palace hall with gilded arched windows, candelabras and a dark gilt canopy. Kneeling men in brocade robes and tall golden conical crowns hold a golden casket toward a seated, richly robed figure on a throne at the far right. Onlookers in periwigs and dark European dress stand around the room, and a red-robed figure kneels with hands pressed together at the lower right. The painting fills the frame edge to edge, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

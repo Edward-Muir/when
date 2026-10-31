@@ -1,0 +1,15 @@
+{
+  "slug": "hasekura-embassy-rome",
+  "description": "A painted interior of a grand Renaissance-style hall with marble columns, frescoed walls and arched windows. A Japanese man in a gold-patterned brocade robe and dark armoured sleeves bows low with a katana at his waist, facing a seated pope in red and white on a raised throne at right. Kneeling figures in dark habits and gold garments sit at left, with cardinals in red, a Swiss Guard in striped uniform and a halberd, and other onlookers standing behind. No text, no frame, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
