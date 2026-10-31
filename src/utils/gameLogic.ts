@@ -381,9 +381,21 @@ export function minDeckSize(playerCount: number, handSize: number): number {
   return playerCount * handSize + 1 + playerCount * 2;
 }
 
-// Add a card to a player's hand
+/**
+ * Where a drawn card enters the hand: directly behind the active card.
+ *
+ * Every draw lands here, so a catch-up draw (`catchUp.ts`) is indistinguishable from a normal
+ * one, and is played while the board still looks like the one it was picked for. Measured
+ * against the back of the hand, it adds a little to catch-up's own lift and a little blanket
+ * easing; the active slot was rejected because it added mostly the latter (see
+ * docs/gameplay-feel).
+ */
+export const DRAW_SLOT = 1;
+
+/** Add a drawn card to a hand at DRAW_SLOT, or at the end of a shorter hand. */
 export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): HistoricalEvent[] {
-  return [...hand, event];
+  const at = Math.min(DRAW_SLOT, hand.length);
+  return [...hand.slice(0, at), event, ...hand.slice(at)];
 }
 
 // Get next active (non-eliminated) player index
