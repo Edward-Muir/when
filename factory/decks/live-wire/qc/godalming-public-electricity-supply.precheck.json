@@ -1,0 +1,20 @@
+{
+  "slug": "godalming-public-electricity-supply",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "3171e11884f209d5f220d52e9a1ad4096f7682735038ed970da37516a3c6ed4d",
+  "dhash": "70d8d8def69ada86",
+  "nearest": {
+    "deck": {
+      "slug": "britain-national-grid-live",
+      "distance": 17
+    },
+    "catalogue": {
+      "slug": "lincoln-memorial",
+      "distance": 10
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

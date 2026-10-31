@@ -1,0 +1,15 @@
+{
+  "slug": "northeast-blackout-1965",
+  "description": "A painted night view over a river toward a dense Manhattan-like skyline of mostly dark towers under a bright full moon and clouds. A suspension bridge with a stream of car headlights runs diagonally through the foreground, with dark low buildings with a few lit windows at lower left. No text, frame or people; fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

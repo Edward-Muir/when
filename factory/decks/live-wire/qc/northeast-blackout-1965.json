@@ -1,0 +1,15 @@
+{
+  "slug": "northeast-blackout-1965",
+  "description": "A painted night view over a wide river toward a dense skyline of tall dark towers, with a full moon behind clouds. In the foreground a suspension bridge with strings of lights and a line of traffic runs diagonally across the frame, and low brownstone buildings with lit windows sit in the lower left. Many windows and streetlights are lit, and there are no people or text visible. The image fills the canvas edge to edge.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The scene asks for a dark Manhattan skyline lit only by car headlights and candles, but the picture shows many lit windows, streetlights and bridge lights, with nothing that signals a blackout. It could be read as any night skyline, so the subject match is uncertain."
+}

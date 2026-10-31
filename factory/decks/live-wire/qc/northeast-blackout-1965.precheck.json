@@ -1,0 +1,20 @@
+{
+  "slug": "northeast-blackout-1965",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "095fc29984f61d49848f9ffc839a9cdd25260e13a58e28719a7351fcc83c456b",
+  "dhash": "f8f8d4572bf9e2c6",
+  "nearest": {
+    "deck": {
+      "slug": "godalming-public-electricity-supply",
+      "distance": 22
+    },
+    "catalogue": {
+      "slug": "johnstown-flood",
+      "distance": 17
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:32:54.750Z",
+  "updated_at": "2026-10-31T18:07:38.777Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "pixii-hand-cranked-dynamo": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5b474d15762c0096ee6a233df294968087a4ccc543cc7f23d6694ba20cccbc44",
-      "updated_at": "2026-10-31T17:09:02.095Z"
+      "updated_at": "2026-10-31T18:07:38.479Z"
     },
     "siemens-self-excited-dynamo": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9b1c3b6422d39620bef6cbd3491a8e13b297b1e392de7385c67718583dbb01b3",
-      "updated_at": "2026-10-31T17:11:28.882Z"
+      "updated_at": "2026-10-31T18:07:38.510Z"
     },
     "godalming-public-electricity-supply": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3171e11884f209d5f220d52e9a1ad4096f7682735038ed970da37516a3c6ed4d",
-      "updated_at": "2026-10-31T17:14:01.709Z"
+      "updated_at": "2026-10-31T18:07:38.540Z"
     },
     "pearl-street-station-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "003976cad49761eba809657b7e893850c538c558c30b5f05ee25143a6c77cc70",
-      "updated_at": "2026-10-31T17:16:32.038Z"
+      "updated_at": "2026-10-31T18:07:38.570Z"
     },
     "chicago-worlds-fair-ac-power": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "edda59ca3e0cb2ec1ced094d8bf9aee5f43d78badf4f60e35f4b26c8760761d4",
-      "updated_at": "2026-10-31T17:19:02.074Z"
+      "updated_at": "2026-10-31T18:07:38.599Z"
     },
     "larderello-geothermal-plant": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c3f364fdc6865e0cdffa44bd0c56d49e6f01a46fda2ab43db6621b178bfec1d4",
-      "updated_at": "2026-10-31T17:21:38.804Z"
+      "updated_at": "2026-10-31T18:07:38.632Z"
     },
     "britain-national-grid-live": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c364d1230ae28982a9eb15adada2071001c5e6a5f78d46252b83895fd6d5382d",
-      "updated_at": "2026-10-31T17:24:26.720Z"
+      "updated_at": "2026-10-31T18:07:38.668Z"
     },
     "smith-putnam-wind-turbine": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "01fc023c35cb1ee2e5c9e97122268b02e96450f34ca574a22e6438c0f5a27251",
-      "updated_at": "2026-10-31T17:27:08.944Z"
+      "updated_at": "2026-10-31T18:07:38.708Z"
     },
     "the-geysers-geothermal-plant": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "464d5db0f38940a028f40ff67bd0ad01a9f4f3b67892c331e7ba595c34c22e16",
-      "updated_at": "2026-10-31T17:29:51.092Z"
+      "updated_at": "2026-10-31T18:07:38.743Z"
     },
     "northeast-blackout-1965": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "095fc29984f61d49848f9ffc839a9cdd25260e13a58e28719a7351fcc83c456b",
-      "updated_at": "2026-10-31T17:32:54.750Z"
+      "updated_at": "2026-10-31T18:07:38.777Z"
     },
     "rance-tidal-power-station": {
       "state": "pending",

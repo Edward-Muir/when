@@ -1,0 +1,15 @@
+{
+  "slug": "siemens-self-excited-dynamo",
+  "description": "An oil-style painting of a bearded man in a dark long coat, leaning over a workbench with both hands on an electric machine. The machine has a copper-wound drum, a visible spark at the contact point, and a belt-driven pulley. Behind him are coiled cables, a glowing lantern, gears and a window. The scene looks like a late-19th-century workshop. No text or signature is visible, and the painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

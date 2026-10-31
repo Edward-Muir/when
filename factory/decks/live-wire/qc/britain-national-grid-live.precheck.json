@@ -1,0 +1,20 @@
+{
+  "slug": "britain-national-grid-live",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "c364d1230ae28982a9eb15adada2071001c5e6a5f78d46252b83895fd6d5382d",
+  "dhash": "7158dcdcd8f8d2b8",
+  "nearest": {
+    "deck": {
+      "slug": "godalming-public-electricity-supply",
+      "distance": 17
+    },
+    "catalogue": {
+      "slug": "household-refrigerator-sold",
+      "distance": 9
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}
