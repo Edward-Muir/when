@@ -1,0 +1,15 @@
+{
+  "slug": "equal-franchise-act-uk",
+  "description": "Young women in 1920s cloche hats and long coats chat on a wet cobbled street beside a brick building with a glowing open doorway. A large sign on the wall reads POLLING STATION, and a smaller hanging sign on the right has lettering. A queue of men in flat caps and a uniformed policeman stand behind them. Gas lamps and dark buildings fill the background; the painting fills the frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The brick wall carries a large painted sign reading POLLING STATION, and a small hanging sign on the right also has lettering. Repaint without any words."
+}

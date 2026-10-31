@@ -1,0 +1,15 @@
+{
+  "slug": "wyoming-women-vote",
+  "description": "A woman in a dark high-collared dress and black bonnet drops a folded paper slip into a wooden ballot box on a barrel. Behind her, men in cowboy hats and work clothes stand in a line along a dusty frontier street of wooden false-front buildings. A partly cut-off painted sign sits at the top edge. The style is dark, painterly and warmly lit.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A painted shop sign at the top edge shows partial lettering (cut off, only fragments of letters visible). Either repaint the sign with no letters, or crop it out, then re-check no_text."
+}
