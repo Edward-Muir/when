@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-31T00:14:37.630Z",
+  "updated_at": "2026-10-31T00:17:05.690Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-10-31T00:14:37.630Z"
     },
     "apple-think-different-campaign": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7435f4d20e95cb89e5d9a293456eff7322bca4c797aeea1a64564c824049c828",
+      "updated_at": "2026-10-31T00:17:05.690Z"
     },
     "budweiser-whassup-ad": {
       "state": "pending",
