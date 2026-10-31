@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T19:25:31.777Z",
+  "updated_at": "2026-10-31T19:28:15.525Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-10-31T19:25:31.777Z"
     },
     "tesla-powerwall-unveiled": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1348c27bf2c01f349d94b3ac765513b38428288d81d698bad56342bfc4d924c9",
+      "updated_at": "2026-10-31T19:28:15.525Z"
     },
     "hornsdale-power-reserve": {
       "state": "pending",
