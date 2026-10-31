@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T03:11:19.531Z",
+  "updated_at": "2026-10-31T03:13:38.633Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-31T03:11:19.531Z"
     },
     "wang-shuhe-pulse-classic": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "da7e38979112bf35d7c363a36b4912d441d9863cd388bb25fb360c3304aa0a87",
+      "updated_at": "2026-10-31T03:13:38.633Z"
     },
     "santorio-body-thermometer": {
       "state": "pending",
