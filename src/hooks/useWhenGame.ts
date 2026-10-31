@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import {
   HistoricalEvent,
   WhenGameState,
@@ -19,6 +19,7 @@ import {
   minDeckSize,
 } from '../utils/gameLogic';
 import { buildRampedDeck } from '../utils/deckBuilder';
+import { buildDifficultyIndex } from '../utils/difficultyScore';
 import { buildDailyDeck } from '../utils/dailyConfig';
 import {
   areCuratedThemesLoaded,
@@ -201,6 +202,9 @@ export function useWhenGame(): UseWhenGameReturn {
       : initialState
   );
   const [allEvents, setAllEvents] = useState<HistoricalEvent[]>(() => getCachedEvents() ?? []);
+  // Catch-up draws measure how easy each upcoming card is on the board (utils/catchUp.ts).
+  // Memoised inside buildDifficultyIndex too; this just keeps the reference stable.
+  const difficultyIndex = useMemo(() => buildDifficultyIndex(allEvents), [allEvents]);
   const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
   const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
     popup: null,
@@ -334,7 +338,7 @@ export function useWhenGame(): UseWhenGameReturn {
 
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
-      saveDailyPlacement(state, activeCard, insertionIndex, result);
+      saveDailyPlacement(state, activeCard, insertionIndex, result, difficultyIndex);
 
       // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
       // the tombstone reveal + miss banner instead of a blocking popup.
@@ -368,7 +372,7 @@ export function useWhenGame(): UseWhenGameReturn {
         setTimeout(() => {
           if (dealRef.current !== deal) return;
           setState((prev) => {
-            const update = processCorrectPlacement(prev, activeCard);
+            const update = processCorrectPlacement(prev, activeCard, difficultyIndex);
             return commitTurn(prev, update, {
               deferTurn: !isSinglePlayer && !update.isGameOver,
               deferPhase: false,
@@ -433,7 +437,14 @@ export function useWhenGame(): UseWhenGameReturn {
       return result;
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps -- Intentionally omitting full state to prevent infinite re-renders; we access specific fields via closure
-    [state.phase, state.players, state.currentPlayerIndex, state.timeline, state.isAnimating]
+    [
+      state.phase,
+      state.players,
+      state.currentPlayerIndex,
+      state.timeline,
+      state.isAnimating,
+      difficultyIndex,
+    ]
   );
 
   const cycleHand = useCallback(() => {

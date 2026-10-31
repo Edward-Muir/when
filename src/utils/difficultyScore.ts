@@ -34,7 +34,7 @@ export type DifficultyBand = 0 | 1 | 2 | 3;
 export const ALL_BANDS: DifficultyBand[] = [0, 1, 2, 3];
 
 /** Recognition component, normalised to 0 (most familiar) .. 1 (least). */
-const RECOGNITION_RANK: Record<Difficulty, number> = {
+export const RECOGNITION_RANK: Record<Difficulty, number> = {
   easy: 0,
   medium: 1 / 3,
   hard: 2 / 3,
@@ -63,6 +63,12 @@ export interface DifficultyIndex {
   get(event: HistoricalEvent): EventMetrics;
   bandOf(event: HistoricalEvent): DifficultyBand;
   uOf(event: HistoricalEvent): number;
+  /**
+   * Where an arbitrary year sits in the same distribution: the share of catalogue events
+   * dated strictly before it. For measuring a window's far end (`year_end`), which is not an
+   * event of its own; agrees with `uOf` up to how same-year ties are ordered.
+   */
+  uOfYear(year: number): number;
 }
 
 /**
@@ -70,17 +76,22 @@ export interface DifficultyIndex {
  * itself. `sortedYears` must be ascending.
  */
 function countWithin(sortedYears: number[], year: number, window: number): number {
-  const lowerBound = (target: number): number => {
-    let lo = 0;
-    let hi = sortedYears.length;
-    while (lo < hi) {
-      const mid = (lo + hi) >>> 1;
-      if ((sortedYears.at(mid) ?? 0) < target) lo = mid + 1;
-      else hi = mid;
-    }
-    return lo;
-  };
-  return Math.max(0, lowerBound(year + window + 1) - lowerBound(year - window) - 1);
+  return Math.max(
+    0,
+    lowerBound(sortedYears, year + window + 1) - lowerBound(sortedYears, year - window) - 1
+  );
+}
+
+/** Index of the first entry of ascending `sortedYears` that is >= `target`. */
+function lowerBound(sortedYears: number[], target: number): number {
+  let lo = 0;
+  let hi = sortedYears.length;
+  while (lo < hi) {
+    const mid = (lo + hi) >>> 1;
+    if ((sortedYears.at(mid) ?? 0) < target) lo = mid + 1;
+    else hi = mid;
+  }
+  return lo;
 }
 
 // Building the index is O(n log n) over the whole catalogue, so memoise it against
@@ -142,6 +153,7 @@ export function buildDifficultyIndex(allEvents: HistoricalEvent[]): DifficultyIn
     get: (event) => metrics.get(event.name) ?? fallback,
     bandOf: (event) => (metrics.get(event.name) ?? fallback).band,
     uOf: (event) => (metrics.get(event.name) ?? fallback).u,
+    uOfYear: (year) => lowerBound(sortedYears, year) / denominator,
   };
 
   indexCache.set(allEvents, index);
