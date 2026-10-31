@@ -1,0 +1,15 @@
+{
+  "slug": "ibm-watson-jeopardy",
+  "description": "A dark, painterly TV studio stage with two silhouetted men in suits seen from behind at side podiums. Behind them is a large wall of glowing blue answer panels, and a crowd sits in the shadowed audience. In the centre a tall lit monitor on a pedestal shows a glowing swirl of orbital rings and a bright green-blue globe. Spotlights hang from a metal truss overhead. No legible text is visible, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

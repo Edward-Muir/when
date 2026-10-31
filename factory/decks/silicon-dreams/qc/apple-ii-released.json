@@ -1,0 +1,15 @@
+{
+  "slug": "apple-ii-released",
+  "description": "A young person with shaggy brown hair and a patterned shirt sits at a wooden desk typing on a beige plastic computer with a built-in keyboard. A small CRT monitor on top shows a simple green and pink blocky picture, and a cassette recorder sits beside the machine. The room behind is dark, with bookshelves and a framed picture in the top left corner. The style is a dark oil painting that fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

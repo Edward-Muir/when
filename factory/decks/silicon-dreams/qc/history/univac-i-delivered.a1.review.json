@@ -1,0 +1,15 @@
+{
+  "slug": "univac-i-delivered",
+  "description": "A painterly, dimly lit room of dark grey computer cabinets with small panels and vents. A man in a brown suit sits at a slanted control console with rows of knobs and switches, a typewriter-style printer in front of him, and he reaches to the panel. A row of reel-to-reel tape drives stands on the right under a hanging lamp. The console has the lettering 'UNIVAC I' on its top edge. The picture fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Text is painted into the image: the console carries the lettering 'UNIVAC I' across its top edge. Regenerate without the printed name, or crop it out, before use. The subject, era and framing otherwise match the card."
+}

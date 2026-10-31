@@ -179,6 +179,18 @@
       "The haul of diamonds, gold and cash was estimated at well over a hundred million dollars, one of the largest diamond thefts on record, from a vault its own security firm had called impregnable. Notarbartolo was caught after a discarded sandwich near the scene carried his DNA, though most of the stolen gems were never recovered."
     ]
   },
+  "apple-ii-released": {
+    "paragraphs": [
+      "The Apple II was shown at the first West Coast Computer Faire in San Francisco in April 1977 and began shipping on 5 June, according to Paul Kunkel's book Apple Design. The base model, with 4 KB of memory, cost $1,298; the 48 KB version cost $2,638.",
+      "It ran a 1 MHz MOS 6502 processor and held BASIC in permanent memory. Its real boom came later: VisiCalc, the spreadsheet, appeared on the Apple II in 1979, and the Computer History Museum credits it with helping make the machine a blockbuster."
+    ]
+  },
+  "apple-m1-chip": {
+    "paragraphs": [
+      "The M1 arrived in three machines at once. In a press release on 10 November 2020 Apple announced the MacBook Air, the 13-inch MacBook Pro and the Mac mini, all open for orders that day and shipping the following week. The Air started at about $1,000 and the Mac mini at about $700.",
+      "Apple called it the first in a family of chips designed specifically for the Mac. It had an eight-core CPU and a 16-core Neural Engine, and Apple claimed up to 3.5 times faster CPU performance and up to 6 times faster graphics than before."
+    ]
+  },
   "aqua-lung-invented": {
     "paragraphs": [
       "Jacques Cousteau, a French naval officer, brought his diving problems to the engineer Emile Gagnan in occupied France in 1943. Gagnan had already adapted a car regulator to feed cooking gas to engines during the fuel shortages of the war, and the two reworked it to deliver compressed air to a diver only when he inhaled.",
@@ -225,6 +237,12 @@
     "paragraphs": [
       "In his Problems, Aristotle describes divers being lowered underwater inside an upturned bronze cauldron, its open mouth downward, so trapped air let them breathe without a hose to the surface. It is the earliest surviving written account of what later engineers would build as the diving bell.",
       "Whether Aristotle was reporting an actual working device or a hypothetical he reasoned out from how air behaves is not settled, since no archaeological find of the period confirms one. The same principle reappears in Alexander the Great's own reported use of a glass or bronze vessel at the siege of Tyre a few decades later, and true diving bells are documented again only from the sixteenth century onward."
+    ]
+  },
+  "arm1-processor-first-runs": {
+    "paragraphs": [
+      "The first ARM1 chips came back from VLSI Technology at about 1pm on 26 April 1985. By 3pm, Steve Furber recalled, his team's development system was displaying the words Hello World, I am ARM. The chips worked first time, on the first attempt.",
+      "Sophie Wilson recalled that a test printing pi returned the right answer, after which the champagne came out. Furber defined the architecture and led the hardware design, while Wilson developed the instruction set and wrote a model of the chip in BBC BASIC, in 808 lines. The finished chip held about 24,800 transistors."
     ]
   },
   "ashurbanipal-library-founded": {
@@ -609,6 +627,12 @@
     "paragraphs": [
       "Ugarit was a wealthy trading port on the Syrian coast, its scribes fluent in several languages and its archives full of letters begging allies for grain and ships against an approaching enemy. Around 1177 BCE the city burned and was never resettled, leaving its clay tablets baked hard and legible in the ash rather than destroyed by it.",
       "One tablet, apparently written just before the end, describes enemy ships already at sea and the king's own fleet away fighting elsewhere. Ugarit's destruction is one data point in the wider collapse of eastern Mediterranean palace states around the same decades, a period still argued over by historians who blame drought, migration and systems failure in varying combinations."
+    ]
+  },
+  "bush-differential-analyzer": {
+    "paragraphs": [
+      "Bush's analyser did its arithmetic with rotation. Quantities were turns of a shaft, wheel-and-disc integrators did the calculus, and answers came out as shaft positions. It began solving problems in 1930, and Bush described it in the Journal of the Franklin Institute in 1931.",
+      "A torque amplifier solved the feedback problem. It built on an electric design that Henry Nieman of Bethlehem Steel invented in 1925, and Harold Hazen at MIT, inspired by a paper on torque amplifiers, contributed to the integrators and amplifiers."
     ]
   },
   "byrd-flies-over-south-pole": {
@@ -1001,6 +1025,12 @@
       "Britain adopted its own version, British Summer Time, weeks later, and other European belligerents followed within the year. The United States held off until 1918, and even then only under wartime pressure, before repealing the federal law almost immediately after the armistice and leaving the choice to states and cities for decades."
     ]
   },
+  "de-forest-triode-audion": {
+    "paragraphs": [
+      "De Forest never understood why his Audion worked. His patent stated that low-pressure gas inside the bulb was essential to its operation, and the name came from the idea of ionised gas. A high vacuum turned out to be the key, as Edwin Armstrong explained in 1914.",
+      "The Audion began as Fleming's two-element diode with a third element added: a zig-zag wire grid between the heated filament and the plate. A small voltage on the grid controlled a much larger flow of electrons, so a weak signal came out strong. The diode could only detect; the triode could amplify."
+    ]
+  },
   "deane-diving-helmet": {
     "paragraphs": [
       "Charles Deane patented his Smoke Helmet in 1823, a copper helmet with a flexible collar meant to let firemen breathe inside burning buildings, air pumped in through a hose by bellows. It sold poorly as firefighting gear, and Deane put the design aside for several years before returning to it with his brother John.",
@@ -1137,6 +1167,12 @@
     "paragraphs": [
       "Oscar Wilde's The Importance of Being Earnest opened at London's St James's Theatre on 14 February 1895, its plot of two men each inventing a fictitious alter ego named Ernest to escape social obligations earning laughter through precisely balanced, epigram-heavy dialogue.",
       "The premiere was a triumph, but within weeks Wilde's libel case against the Marquess of Queensberry collapsed and exposed evidence used to prosecute him for gross indecency. The play was pulled from the stage soon after his arrest, and Wilde's name was even removed from playbills while it briefly continued running."
+    ]
+  },
+  "eccles-jordan-flip-flop": {
+    "paragraphs": [
+      "William Eccles and F. W. Jordan filed their patent, titled Improvements in ionic relays, on 21 June 1918, and it was not published until 5 August 1920. A one-page paper in The Electrician on 19 September 1919 described a trigger relay using three-electrode vacuum tubes.",
+      "They saw it as a relay for telegraphy and telephony, and the name flip-flop came later. Two tubes, each able to cut the other off, held either state until a pulse flipped it. Colossus, the British codebreaking machine of 1943, used the design."
     ]
   },
   "edinburgh-municipal-fire-brigade": {
@@ -1487,6 +1523,12 @@
       "The decimal clock divided each day into ten hours of a hundred minutes, and it lasted barely two years before clockmakers and habit defeated it. The calendar itself survived until Napoleon abolished it at the end of 1805, restoring the Gregorian year from 1 January 1806, by which point most of France had already gone back to counting Sundays."
     ]
   },
+  "frontier-exascale-supercomputer": {
+    "paragraphs": [
+      "The number was 1.102 exaflops on the High-Performance Linpack benchmark, reported when the TOP500 list was published on 30 May 2022. Frontier took the top spot from Japan's Fugaku, and it was the only system on the list above one exaflop.",
+      "It had 9,408 nodes, each with one AMD EPYC processor and four Instinct MI250X GPUs, for 8,730,112 cores in all. The list put its efficiency at 52.23 gigaflops per watt, and its theoretical peak is quoted between 1.6 and 1.686 exaflops, depending on the source."
+    ]
+  },
   "galileo-pendulum-isochronism": {
     "paragraphs": [
       "Galileo is said to have first noticed a swinging lamp in Pisa cathedral and timed it against his own pulse, finding that it took the same time to complete a swing whether the arc was wide or narrow. Around 1602 he set out this principle of isochronism in a letter, describing pendulums of the same length as keeping the same beat regardless of how far they swung.",
@@ -1617,6 +1659,12 @@
     "paragraphs": [
       "Google Earth grew out of a program called EarthViewer 3D, built by a company called Keyhole that Google bought in 2004. The software stitched together satellite photographs and aerial imagery over a rotating three-dimensional globe, and Google released it free to the public in June 2005, letting anyone zoom from orbit down to street-level rooftops.",
       "The tool had been built for intelligence and defence work, and its name nodded to the Keyhole spy satellite program, but the free release opened the same imagery to journalists tracking troop movements, archaeologists spotting buried structures from above, and ordinary users looking up their own house for the first time from space."
+    ]
+  },
+  "google-willow-quantum-chip": {
+    "paragraphs": [
+      "Each time Google enlarged the grid of qubits encoding one logical qubit, from 3x3 to 5x5 to 7x7, the error rate halved. Larger quantum machines had usually meant more noise. The result appeared in Nature in December 2024, alongside the 105-qubit Willow.",
+      "Google also reported a random circuit sampling run finished in under five minutes that it estimated would take Frontier 10 septillion years. The task has no practical use, and classical methods may improve. Willow's qubits held an excitation for nearly 100 microseconds, five times longer than before."
     ]
   },
   "gorm-the-old-unites-denmark": {
@@ -2063,6 +2111,12 @@
       "Some canals ran more than twenty kilometres from their river intake, engineered with a gentle enough gradient to move water by gravity alone across flat, arid terrain. Phoenix's own canal system, dug centuries later by settlers, largely followed the routes the Hohokam had already proven worked."
     ]
   },
+  "hollerith-tabulator-census": {
+    "paragraphs": [
+      "Counting the 1880 census by hand took about eight years. Herman Hollerith's answer was a card punched with holes for each fact about a person; pins passed through the holes into cups of mercury, closing an electrical circuit. He tested the system in Baltimore in 1887 before winning the 1890 contract.",
+      "The Census Bureau announced a population of 62,622,250 on 16 August 1890, the first count made with the machine. One source puts total processing at about six years, against eight in 1880, and Hollerith's tabulating business was the ancestor of IBM."
+    ]
+  },
   "homo-heidelbergensis-emerges": {
     "paragraphs": [
       "A hominin with a notably larger brain than its predecessors appears in the African fossil record around this time, later spreading into Europe and parts of Asia. Genetic comparisons between Neanderthal and modern human DNA point to a shared ancestor in roughly this period, with the population that stayed in Africa eventually giving rise to Homo sapiens.",
@@ -2117,6 +2171,30 @@
       "She had taught mathematics and Neoplatonist philosophy in Alexandria for decades, drawing pupils regardless of their faith. Almost none of her own writing survives; what is known of her work comes mostly through letters from her student Synesius and later Christian and pagan historians, whose accounts of her death do not fully agree on the details."
     ]
   },
+  "ibm-pc-launched": {
+    "paragraphs": [
+      "The IBM PC was announced on 12 August 1981, at the Waldorf-Astoria in New York by one account. It used Intel's 8088 at 4.77 MHz, a chip that was 16-bit inside but had an 8-bit external bus. IBM picked it over the 8086 mainly for price and supply, since the narrower bus lowered costs.",
+      "A team directed by Don Estridge in Boca Raton, Florida, built the machine, and Microsoft supplied the operating system, sold by IBM as PC-DOS, and a BASIC. IBM appears to have chosen Microsoft in November 1980. The entry-level configuration, with a cassette player and a television, cost $1,565."
+    ]
+  },
+  "ibm-quantum-factors-15": {
+    "paragraphs": [
+      "There was no single machine to hold. The computer was a liquid sample of roughly a billion billion molecules, each with seven nuclear spins, five fluorine and two carbon, acting as qubits, and the answer was read from the ensemble by nuclear magnetic resonance.",
+      "A team at IBM's Almaden Research Center published the result in Nature in December 2001: 15 factored into 3 and 5. Lieven Vandersypen was first author and Isaac Chuang last. IBM's own retrospective calls it the first published experimental realisation of Shor's algorithm, but the paper itself did not claim that the method would scale to many qubits."
+    ]
+  },
+  "ibm-system-360-announced": {
+    "paragraphs": [
+      "By the time IBM announced System/360 on 7 April 1964 it had spent an estimated $5 billion on it, hired 60,000 people and opened five plants. Thomas Watson Jr. called it IBM's most important product announcement ever. More than 100,000 businessmen in 165 American cities attended announcement meetings.",
+      "Prices ran from $133,000 to $5.5 million, or from $2,700 to $115,000 a month to rent. By one account IBM received more than 1,000 orders in the month after the announcement and another 1,000 over the next four months, though another says spring turned into summer without many orders."
+    ]
+  },
+  "ibm-watson-jeopardy": {
+    "paragraphs": [
+      "Watson's best-known moment was a mistake. In the second game's Final Jeopardy, aired on 16 February 2011, the clue pointed to a US airport and the right response was Chicago. Watson answered Toronto, but wagered only $947.",
+      "Over the two games Watson finished with $77,147, Jennings with $24,000 and Rutter with $21,600. IBM said its $1 million prize would go to World Vision and World Community Grid; Jennings and Rutter received $300,000 and $200,000, half of each going to charity."
+    ]
+  },
   "ibn-al-haytham-doubts-ptolemy": {
     "paragraphs": [
       "Ibn al-Haytham's Doubts Concerning Ptolemy, written around 1028, did not offer a replacement cosmos. It laid out, point by point, where Ptolemy's own geometry contradicted itself: the equant point that let planets move at uneven speed around no physical centre, a device Ptolemy needed to match observation but could not explain mechanically.",
@@ -2145,6 +2223,12 @@
     "paragraphs": [
       "Gideon Mantell found teeth in a quarry at Cuckfield, Sussex, in 1822 and first took them for a large reptile's. He named Iguanodon in 1825 because they resembled an iguana's, only far larger. For decades the rest of the animal had to be guessed from fragments.",
       "Early reconstructions, including the Crystal Palace model, put the thumb spike on the nose like a rhinoceros horn. In 1878 coal miners at Bernissart in Belgium uncovered between thirty and about thirty-eight skeletons, and on them the spikes sat on the hands."
+    ]
+  },
+  "imac-launched": {
+    "paragraphs": [
+      "No third-party Mac peripheral supported USB when the iMac shipped on 15 August 1998, and the USB standard was not yet finalised. Apple removed the serial ports, Apple Desktop Bus and floppy drive anyway, leaving two USB ports; Jobs bet that USB would solve the accessory makers' problems.",
+      "Jony Ive led the design of the translucent case, and Jobs at first rejected the ovoid shape until Ive persuaded him. The colour came from a piece of greenish-blue beach glass. The machine sold 278,000 units in six weeks, and Apple's 1998 profit of $414 million followed a $878 million loss."
     ]
   },
   "incandescent-bulb-phase-out": {
@@ -2367,6 +2451,12 @@
     "paragraphs": [
       "Kikkuli identified himself as a master horse trainer from the land of Mitanni, and the cuneiform tablets he left behind, written in Hittite, set out a detailed conditioning schedule for chariot horses spanning months of graduated exercise, feeding and rest.",
       "The text is the oldest known training manual for any animal, and its level of technical detail, including specific distances and interval workouts, surprised modern scholars who assumed such rigour was a much later development. It reflects how valuable and strategically important trained chariot horses were to Bronze Age warfare."
+    ]
+  },
+  "kilby-first-integrated-circuit": {
+    "paragraphs": [
+      "Jack Kilby was not entitled to Texas Instruments' company-wide summer holiday in 1958, so he was almost alone in the lab, looking for an alternative to the transistor-module work he thought a dead end. His answer was to etch the transistor, capacitor and resistor elements from slices of germanium.",
+      "On 12 September 1958 he showed management a phase-shift oscillator on a germanium bar about 11 mm by 1.6 mm, its parts joined by fine gold wires. He filed the patent, titled Solid Circuit made of Germanium, on 6 February 1959. Robert Noyce at Fairchild developed a silicon version, and both men are credited."
     ]
   },
   "kingdom-of-bohemia-established": {
@@ -2759,6 +2849,12 @@
       "Because the boards are plain pits rather than inscribed objects, dating and attributing them is difficult, and claims for an older origin site are argued over. What is not disputed is the game's reach: variants under different names are still played from Senegal to Southeast Asia, among the most widely spread board games anywhere."
     ]
   },
+  "manchester-baby-runs-program": {
+    "paragraphs": [
+      "The Baby's first program searched for the highest proper factor of 262,144, which is 2 to the power 18, by trying every smaller integer in turn. Tom Kilburn wrote it, and on 21 June 1948 the machine took about 52 minutes to answer 131,072. The answer was obvious in advance; the point was that the machine got there.",
+      "The Baby was a test-bed, built to prove the practicality of the Williams tube, a cathode-ray tube used as memory. Frederic Williams and Tom Kilburn designed and built it at the University of Manchester, and the program was 17 instructions long."
+    ]
+  },
   "manchurian-plague": {
     "paragraphs": [
       "Pneumonic plague spread through Manchuria's rail towns over the winter of 1910 to 1911, killing roughly sixty thousand people before it was stopped. It spread through the air between people, unlike the flea-borne bubonic form, which made crowded railway carriages and marmot-fur traders' lodgings especially dangerous places to be.",
@@ -3093,6 +3189,12 @@
     "paragraphs": [
       "Keeping Arctic shipping lanes open through the Soviet Union's northern coast needed an icebreaker with far more endurance than any coal or diesel ship could carry, since refuelling stations along that route barely existed.",
       "Built at the Admiralty Shipyard and commissioned in December 1959, NS Lenin ran on a nuclear reactor that let her operate for long stretches without returning to port, becoming the world's first nuclear-powered surface vessel of any kind. She served the Northern Sea Route for three decades before her worn hull forced retirement in 1989, and survives today as a museum ship in Murmansk."
+    ]
+  },
+  "nvidia-geforce-256-gpu": {
+    "paragraphs": [
+      "GPU was a definition before it was a product. Nvidia described it as a single-chip processor with integrated transform, lighting, triangle setup and rendering engines, able to handle at least 10 million polygons per second, and the GeForce 256 happened to meet it. Historians note the label was partly marketing.",
+      "Announced on 31 August 1999, the chip, codenamed NV10, was made by TSMC on a 220 nm process. The first cards reached shops on 11 October, with a DDR version in December. Before it, transform and lighting had been left to the CPU."
     ]
   },
   "oconnor-joins-supreme-court": {
@@ -3593,6 +3695,12 @@
       "Rankin voted against United States entry into both world wars, the only member of Congress to vote against both, a stance that cost her re-election after the first vote and ended her second term after the vote in 1941. She never framed her pacifism as separate from her feminism, arguing throughout her career that women in office should change how power was used, not just who held it."
     ]
   },
+  "raspberry-pi-released": {
+    "paragraphs": [
+      "The Raspberry Pi launch crashed the sites selling it. Orders for the $35 Model B opened on 29 February 2012 through two distributors, Farnell and RS Components, and both websites went down under load. One report says the boards sold out in under two hours.",
+      "The board had a 700 MHz ARM11 processor and 256 MB of RAM, and was essentially bare. The Foundation kept its own site up by replacing its contents with a static page that said both retailers were under heavy load. A $25 Model A was announced for later."
+    ]
+  },
   "rattler-beats-alecto": {
     "paragraphs": [
       "On 3 April 1845 the Royal Navy lashed the propeller-driven HMS Rattler to the paddle steamer HMS Alecto stern to stern, both ships fitted with engines of similar power, and set them running against each other in a straight tug of war to settle which propulsion suited a warship better.",
@@ -3669,6 +3777,12 @@
     "paragraphs": [
       "The Venetian state rented a wing of the Palazzo Dandolo near San Moise in 1638 and turned it into a public gaming house, partly to draw players away from the unlicensed rooms already thriving across the city and partly to tax them properly. It ran chiefly during Carnival, when Venice already tolerated a level of disguise unthinkable the rest of the year.",
       "Patrons wore the bauta mask and tricorn hat required at the tables, which let nobles and commoners gamble side by side without anyone officially knowing who was losing what. Games included biribi and basetta, played for stakes high enough that the less wealthy were effectively priced out despite the open door. Mounting complaints about ruin and addiction led the Senate to close it in 1774."
+    ]
+  },
+  "roadrunner-petaflop-supercomputer": {
+    "paragraphs": [
+      "Roadrunner's Linpack run on 25 May 2008 sustained just over a petaflop, with reports giving 1.026 or 1.042. Linpack is the benchmark behind the TOP500 ranking. The machine paired 12,960 IBM PowerXCell 8i processors with 6,480 dual-core AMD Opterons, though some outlets report slightly different counts.",
+      "Built by IBM for Los Alamos National Laboratory, it was frugal for its time: 437 megaflops per watt put it third on the Green500 list in June 2008. Los Alamos decommissioned Roadrunner on 31 March 2013; its successor, Cielo, had been installed in 2010."
     ]
   },
   "roman-catacombs-rediscovered": {
@@ -4385,6 +4499,12 @@
       "Unimate followed a sequence recorded onto a magnetic drum rather than sensing its surroundings, and it could not adapt if a part shifted out of place. Even so, it proved an arm could work unsupervised on a factory line without breaking down, and Engelberger's company Unimation went on to sell the design across the American auto industry through the following decade."
     ]
   },
+  "univac-i-delivered": {
+    "paragraphs": [
+      "UNIVAC I's first customer was the Census Bureau, which accepted the machine on 31 March 1951; it was dedicated on 14 June. The order was for $350,270, and the machine arrived late and over budget. It used between 5,000 and 5,600 vacuum tubes, depending on the source.",
+      "On election night 1952 CBS used a UNIVAC to forecast the result. From 5.5 per cent of the vote it predicted 438 electoral votes for Eisenhower and 93 for Stevenson, at odds of 100 to 1. MIT Technology Review's account says the team, sure that was an error, reported odds of 8 to 7 instead."
+    ]
+  },
   "university-berlin-founded": {
     "paragraphs": [
       "Prussia had just lost territory and prestige to Napoleon when the scholar and statesman Wilhelm von Humboldt set up a new university in Berlin in 1810, arguing that a defeated state needed to rebuild through education rather than arms.",
@@ -4725,6 +4845,12 @@
     "paragraphs": [
       "The Zodiac Killer sent the FBI a 340 character cryptogram in 1969, made of odd symbols substituting for letters, and unlike his earlier 408 character cipher it resisted every codebreaker for more than fifty years, including the FBI's own cryptanalysis unit and the NSA.",
       "In December 2020, David Oranchak, a software developer, Sam Blake, an Australian mathematician, and Jarl Van Eycke, a Belgian programmer, cracked it using custom pattern-matching software the trio had built between them. The message contained no name and no confession, mostly a taunting claim about an afterlife, and the killer's identity remains unknown."
+    ]
+  },
+  "zuse-z3-computer": {
+    "paragraphs": [
+      "Konrad Zuse showed the Z3 to scientists from a German aviation research institute in Berlin on 12 May 1941. It used some 2,000 to 2,600 relays, depending on what is counted. The original was destroyed with its building on Methfesselstrasse in an Allied raid on 21 December 1943.",
+      "The Z3 had no conditional branch, so it could not choose its next step from a result. A 1998 analysis showed it was Turing-complete in principle all the same, but only by speculatively computing every possible outcome of a calculation."
     ]
   },
   "zwicky-dark-matter": {
