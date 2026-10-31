@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:19:02.074Z",
+  "updated_at": "2026-10-31T17:21:38.804Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-10-31T17:19:02.074Z"
     },
     "larderello-geothermal-plant": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c3f364fdc6865e0cdffa44bd0c56d49e6f01a46fda2ab43db6621b178bfec1d4",
+      "updated_at": "2026-10-31T17:21:38.804Z"
     },
     "britain-national-grid-live": {
       "state": "pending",
