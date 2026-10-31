@@ -3,7 +3,7 @@
   "name": "Seeing Inside",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-31T03:25:21.106Z",
+  "updated_at": "2026-10-31T03:27:41.026Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-10-31T03:25:21.106Z"
     },
     "berger-eeg-recorded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "591345e868974ae7660f17663c087ce781da50914db204c7de653c1b686001d9",
+      "updated_at": "2026-10-31T03:27:41.026Z"
     },
     "papanicolaou-smear-test": {
       "state": "pending",
