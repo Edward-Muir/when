@@ -4,6 +4,7 @@ import {
   processIncorrectPlacement,
 } from './placementLogic';
 import { HistoricalEvent, Player, WhenGameState } from '../types';
+import { buildDifficultyIndex } from './difficultyScore';
 
 function ev(name: string, year: number, yearEnd?: number): HistoricalEvent {
   return {
@@ -111,6 +112,23 @@ describe('processCorrectPlacement', () => {
       winners: [],
       isGameOver: false,
     });
+  });
+
+  it('after a miss, draws the card with the most room on the board, not the top card', () => {
+    // A board of 1200 | 1500 with the placed card on it already, as the hook passes it.
+    const catalogue = Array.from({ length: 101 }, (_, i) => ev(`cat${i}`, 1000 + i * 10));
+    const index = buildDifficultyIndex(catalogue);
+    const wedged = ev('wedged', 1495);
+    const open = ev('open', 1850);
+    const missed = { ...player(0, [h1, h2]), placementHistory: [false] };
+    const state = stateWith([missed], [wedged, open], {
+      timeline: [ev('seed', 1200), ev('placed', 1500)],
+    });
+
+    expect(names(processCorrectPlacement(state, h1).players[0].hand)).toEqual(['h2', 'wedged']);
+    const update = processCorrectPlacement(state, h1, index);
+    expect(names(update.players[0].hand)).toEqual(['h2', 'open']);
+    expect(names(update.deck)).toEqual(['wedged']);
   });
 
   it('single player: an empty deck shrinks the hand, and the last card ends the game', () => {
