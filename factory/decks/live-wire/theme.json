@@ -1,0 +1,42 @@
+{
+  "id": "live-wire",
+  "name": "Live Wire",
+  "scope": "Yes if it is a way of making, storing or moving electric power",
+  "boundary": "Live Wire: electric power and its grids, batteries included; lamps go to Let There Be Light, dams to Waterworks, nuclear stations to The Atomic Age, Faraday's induction to Eureka Moments.",
+  "neighbours": [
+    "light",
+    "waterworks",
+    "atomic-age"
+  ],
+  "grid": {
+    "categories": [
+      "science",
+      "invention",
+      "commerce"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars",
+      "coldWar"
+    ],
+    "regions": [
+      "Global",
+      "North America",
+      "Europe"
+    ]
+  },
+  "example_beats": [
+    "Volta's pile (1800)",
+    "Siemens' self-excited dynamo (1866)",
+    "Pearl Street Station opens (1882)",
+    "Brush's wind turbine (1888)",
+    "Niagara Falls AC power (1895)",
+    "Larderello geothermal plant (1904)",
+    "Britain's National Grid switched on (1933)",
+    "Bell Labs solar cell (1954)",
+    "Lithium-ion battery released (1991)",
+    "Hornsea offshore wind farm opens (2019)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
