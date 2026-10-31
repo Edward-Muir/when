@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T17:11:28.882Z",
+  "updated_at": "2026-10-31T17:14:01.709Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-10-31T17:11:28.882Z"
     },
     "godalming-public-electricity-supply": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3171e11884f209d5f220d52e9a1ad4096f7682735038ed970da37516a3c6ed4d",
+      "updated_at": "2026-10-31T17:14:01.709Z"
     },
     "pearl-street-station-opens": {
       "state": "pending",
