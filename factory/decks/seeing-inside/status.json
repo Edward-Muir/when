@@ -1,21 +1,26 @@
 {
   "deck": "seeing-inside",
   "name": "Seeing Inside",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-10-30T17:16:48.705Z",
-  "updated_at": "2026-10-30T17:16:48.705Z",
+  "updated_at": "2026-10-31T03:08:57.043Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-10-30T17:16:48.705Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-31T03:08:57.043Z"
     }
   ],
   "slugs": {
     "hippocratic-bedside-diagnosis": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f8381e8e250618ecb00ae31c626f7417936682afd6f656ca28c8144a05d9c6be",
+      "updated_at": "2026-10-31T03:08:57.043Z"
     },
     "herophilus-pulse-timing": {
       "state": "pending",
