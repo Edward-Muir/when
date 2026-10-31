@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T19:20:06.029Z",
+  "updated_at": "2026-10-31T19:22:49.187Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-10-31T19:20:06.029Z"
     },
     "northeast-blackout-2003": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "956f8267788eaaba0b41f08cce3ec79a187ce36aa9e0aafee822c0f2ad702a78",
+      "updated_at": "2026-10-31T19:22:49.187Z"
     },
     "tesla-roadster-deliveries": {
       "state": "pending",
