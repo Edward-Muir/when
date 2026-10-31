@@ -3,7 +3,7 @@
   "name": "Sell, Sell, Sell",
   "stage": "art-in-progress",
   "created_at": "2026-10-30T10:21:17.876Z",
-  "updated_at": "2026-10-31T00:19:40.401Z",
+  "updated_at": "2026-10-31T00:22:28.434Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -205,10 +205,11 @@
       "updated_at": "2026-10-31T00:19:40.401Z"
     },
     "dove-evolution-film": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "43588048c849fc53d7075dcc2a6e8585107fd750e2b1a839d0094812eeb9447c",
+      "updated_at": "2026-10-31T00:22:28.434Z"
     },
     "old-spice-man-your-man-could-smell-like": {
       "state": "pending",
