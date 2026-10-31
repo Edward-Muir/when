@@ -3,7 +3,7 @@
   "name": "Live Wire",
   "stage": "art-in-progress",
   "created_at": "2026-10-31T16:21:01.853Z",
-  "updated_at": "2026-10-31T19:33:58.065Z",
+  "updated_at": "2026-10-31T20:07:41.953Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,74 +86,74 @@
       "updated_at": "2026-10-31T18:07:38.777Z"
     },
     "rance-tidal-power-station": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "942454e9bdc0272d26eb7f20ebd1a328590e47573fe66e88d51650f705ba29d8",
-      "updated_at": "2026-10-31T19:09:08.682Z"
+      "updated_at": "2026-10-31T20:07:41.656Z"
     },
     "pacific-dc-intertie-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7ace65dbe6f18abc2ee4800220bb68b58037c83410e9f2d79587d1a6efd6fdc7",
-      "updated_at": "2026-10-31T19:11:54.391Z"
+      "updated_at": "2026-10-31T20:07:41.687Z"
     },
     "dinorwig-pumped-storage-station": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "79920657ddc4676df7d654efb0c1cc869ef6966c8a630672caec20102267154d",
-      "updated_at": "2026-10-31T19:14:35.596Z"
+      "updated_at": "2026-10-31T20:07:41.717Z"
     },
     "quebec-geomagnetic-blackout": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "74591a8bc5054cf2211792d2ac1d8620fbe8fceea086a2b47d668618232e8cf8",
-      "updated_at": "2026-10-31T19:17:21.568Z"
+      "updated_at": "2026-10-31T20:07:41.747Z"
     },
     "toyota-prius-launched": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5425926d333265147b341b50a6e8c152131b2493553dcbc0d1f8adbdc19ea366",
-      "updated_at": "2026-10-31T19:20:06.029Z"
+      "updated_at": "2026-10-31T20:07:41.777Z"
     },
     "northeast-blackout-2003": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "956f8267788eaaba0b41f08cce3ec79a187ce36aa9e0aafee822c0f2ad702a78",
-      "updated_at": "2026-10-31T19:22:49.187Z"
+      "updated_at": "2026-10-31T20:07:41.810Z"
     },
     "tesla-roadster-deliveries": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "eabba83a55767b502b9ef0ca8eb8adecd9c334c2a73c94dfd251e022aa409a25",
-      "updated_at": "2026-10-31T19:25:31.777Z"
+      "updated_at": "2026-10-31T20:07:41.849Z"
     },
     "tesla-powerwall-unveiled": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1348c27bf2c01f349d94b3ac765513b38428288d81d698bad56342bfc4d924c9",
-      "updated_at": "2026-10-31T19:28:15.525Z"
+      "updated_at": "2026-10-31T20:07:41.886Z"
     },
     "hornsdale-power-reserve": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "70a1183d61f7efcd84c0bb272468eb30819f803497748bf7f9188a8375c76cd4",
-      "updated_at": "2026-10-31T19:31:09.703Z"
+      "updated_at": "2026-10-31T20:07:41.919Z"
     },
     "hornsea-offshore-wind-farm": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1c4f6f6f3d966e2be7e9656ada144baaee45746d764cf573c39c41d1871c6a61",
-      "updated_at": "2026-10-31T19:33:58.065Z"
+      "updated_at": "2026-10-31T20:07:41.953Z"
     },
     "iberian-peninsula-blackout": {
       "state": "pending",

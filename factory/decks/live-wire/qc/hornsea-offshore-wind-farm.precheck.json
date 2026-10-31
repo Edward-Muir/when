@@ -1,0 +1,20 @@
+{
+  "slug": "hornsea-offshore-wind-farm",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "1c4f6f6f3d966e2be7e9656ada144baaee45746d764cf573c39c41d1871c6a61",
+  "dhash": "e1a2a030e1a8b4b6",
+  "nearest": {
+    "deck": {
+      "slug": "quebec-geomagnetic-blackout",
+      "distance": 23
+    },
+    "catalogue": {
+      "slug": "lake-nyos",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

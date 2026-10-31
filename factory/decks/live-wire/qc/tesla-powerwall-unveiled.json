@@ -1,0 +1,15 @@
+{
+  "slug": "tesla-powerwall-unveiled",
+  "description": "A dim oil-painting style garage interior. A glossy white wall-mounted battery unit with a dark edge hangs on the left wall, with conduit pipes running into it. Garden tools and a lawn mower sit in the foreground. Through the open garage door at sunset, a suburban house with a roof of solar panels is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
