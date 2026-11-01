@@ -12872,7 +12872,8 @@
     "regions": [
       "Israel",
       "Palestine"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mani-founds-manichaeism",
@@ -12883,7 +12884,8 @@
     "difficulty": "medium",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "anan-founds-karaite-judaism",
@@ -12894,7 +12896,8 @@
     "difficulty": "hard",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "druze-faith-emerges",
@@ -12905,7 +12908,8 @@
     "difficulty": "easy",
     "regions": [
       "Egypt"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bruno-founds-carthusians",
@@ -12916,7 +12920,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cistercians-founded-citeaux",
@@ -12927,7 +12932,8 @@
     "difficulty": "easy",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "knights-templar-founded",
@@ -12939,7 +12945,8 @@
     "regions": [
       "Israel",
       "Palestine"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "peter-waldo-waldensians",
@@ -12950,7 +12957,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "dominic-founds-dominicans",
@@ -12962,7 +12970,8 @@
     "regions": [
       "France",
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "smyth-founds-first-baptists",
@@ -12973,7 +12982,8 @@
     "difficulty": "medium",
     "regions": [
       "Netherlands"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ammann-founds-amish",
@@ -12984,7 +12994,8 @@
     "difficulty": "medium",
     "regions": [
       "Switzerland"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "wesley-heart-strangely-warmed",
@@ -12995,7 +13006,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ann-lee-shakers-america",
@@ -13007,7 +13019,8 @@
     "regions": [
       "United Kingdom",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "smith-founds-church-of-christ",
@@ -13018,7 +13031,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "eddy-charters-christian-science",
@@ -13029,7 +13043,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "azusa-street-revival",
@@ -13040,7 +13055,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rastafari-begins-coronation",
@@ -13052,7 +13068,8 @@
     "regions": [
       "Ethiopia",
       "Jamaica"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "missionaries-of-charity-founded",
@@ -13063,7 +13080,8 @@
     "difficulty": "easy",
     "regions": [
       "India"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "lavey-founds-church-of-satan",
@@ -13074,6 +13092,7 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   }
 ]
