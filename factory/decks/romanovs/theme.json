@@ -1,0 +1,38 @@
+{
+  "id": "romanovs",
+  "name": "The Romanovs",
+  "scope": "Yes if it is a defining moment of Romanov Russia",
+  "boundary": "The Romanovs: Russia from 1613 to 1917, Catherine the Great included; communism goes to Red Flags, Pugachev's revolt to Rise Up!.",
+  "neighbours": [
+    "red-flags"
+  ],
+  "grid": {
+    "categories": [
+      "empires",
+      "figures"
+    ],
+    "eras": [
+      "earlyModern",
+      "industrial",
+      "worldWars"
+    ],
+    "regions": [
+      "Europe",
+      "North & Central Asia"
+    ]
+  },
+  "example_beats": [
+    "Michael Romanov elected tsar (1613)",
+    "Peter becomes sole tsar (1696)",
+    "St Petersburg founded (1703)",
+    "Battle of Poltava (1709)",
+    "Catherine seizes the throne (1762)",
+    "Alexander II becomes tsar (1855)",
+    "Decembrist revolt (1825)",
+    "First Faberge imperial egg (1885)",
+    "Bloody Sunday (1905)",
+    "Nicholas II abdicates (1917)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

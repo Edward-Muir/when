@@ -1,0 +1,15 @@
+{
+  "slug": "decembrist-revolt",
+  "description": "A snowy city square with falling snow and grey smoke. In the foreground, rows of soldiers in dark green coats and tall shako hats hold rifles with bayonets in formation, facing officers in greatcoats and a mounted officer in a cocked hat. On the left, a bronze equestrian statue of a rearing horse and rider stands on a large snow-covered granite rock, and its plinth carries a small inscription. In the background, a line of cannons fires with torches burning, and a building sits at the upper left.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The plinth of the rearing equestrian statue carries a small block of lettering that looks like painted inscription. It is too small to read, so the no_text check cannot be cleared. Repaint the plinth without lettering, or confirm the marks are not legible text."
+}
