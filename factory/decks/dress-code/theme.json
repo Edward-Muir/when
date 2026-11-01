@@ -1,0 +1,26 @@
+{
+  "id": "dress-code",
+  "name": "Dress Code",
+  "scope": "Yes if it is a garment, fabric or fashion house",
+  "boundary": "Dress Code: clothes and the cloth they are cut from, spinning and weaving machines and new fibres included; engines and factory methods go to Made by Machine, the ads behind brands to Sell, Sell, Sell, other new materials to Material World.",
+  "neighbours": ["made-by-machine", "sell-sell-sell", "material-world"],
+  "grid": {
+    "categories": ["craft", "commerce", "art"],
+    "eras": ["industrial", "worldWars", "coldWar"],
+    "regions": ["Europe", "North America", "Global"]
+  },
+  "example_beats": [
+    "Kay's flying shuttle (1733)",
+    "Perkin's mauve dye (1856)",
+    "Charles Worth opens a Paris couture house (1858)",
+    "Levi's riveted jeans patent (1873)",
+    "Chanel's little black dress (1926)",
+    "Nylon (1935)",
+    "The bikini (1946)",
+    "Dior's New Look (1947)",
+    "Mary Quant's miniskirt (1964)",
+    "Air Jordan (1985)"
+  ],
+  "appeal": 3,
+  "status": "queued"
+}

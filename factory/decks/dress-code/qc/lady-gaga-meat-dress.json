@@ -1,0 +1,15 @@
+{
+  "slug": "lady-gaga-meat-dress",
+  "description": "A painterly, dark image of a headless dress mannequin wearing a gown and hat made of raw red meat cuts, with a pair of meat boots at its base. A stage spotlight sits at upper right, with truss and flight cases in a dim room. The painting fills the frame with no visible border, text or signature.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
