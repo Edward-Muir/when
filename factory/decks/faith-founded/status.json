@@ -1,9 +1,9 @@
 {
   "deck": "faith-founded",
   "name": "Faith Founded",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T17:33:51.928Z",
+  "updated_at": "2026-11-01T18:07:42.022Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-01T15:08:59.159Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-01T18:07:42.022Z"
     }
   ],
   "slugs": {
@@ -86,67 +90,67 @@
       "updated_at": "2026-11-01T16:07:36.443Z"
     },
     "ammann-founds-amish": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4e170765696eed9ed4a7edcf51fcb92bc9e01982f695998d33bd565019935e36",
-      "updated_at": "2026-11-01T17:09:19.126Z"
+      "updated_at": "2026-11-01T18:07:41.746Z"
     },
     "wesley-heart-strangely-warmed": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "91dc644a862216eafa082eef40f1c88737e831568b94932c091589687910fe74",
-      "updated_at": "2026-11-01T17:12:04.997Z"
+      "updated_at": "2026-11-01T18:07:41.780Z"
     },
     "ann-lee-shakers-america": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "030b04171a4491bd63f519ad038738b93451c4c30167e6751a30c4505fa901bb",
-      "updated_at": "2026-11-01T17:14:44.119Z"
+      "updated_at": "2026-11-01T18:07:41.811Z"
     },
     "smith-founds-church-of-christ": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c2410fdc027591d9ae72f20980bf03882f4cc7b7caa73917d9530282019e57b6",
-      "updated_at": "2026-11-01T17:17:18.984Z"
+      "updated_at": "2026-11-01T18:07:41.842Z"
     },
     "eddy-charters-christian-science": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c5f6bda005516fa7afbb5bc6bedb0d017e4439e4a5a08275a28cba166f9af0b8",
-      "updated_at": "2026-11-01T17:19:54.059Z"
+      "updated_at": "2026-11-01T18:07:41.874Z"
     },
     "azusa-street-revival": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "28599838011f48a9658f10a9c5bfcc6f015d8cebbb84e93c377441a3f7b5ceff",
-      "updated_at": "2026-11-01T17:22:32.309Z"
+      "updated_at": "2026-11-01T18:07:41.907Z"
     },
     "rastafari-begins-coronation": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "89e0e5610ce0e5822309f8e6e25a450b97d4092b8ac181ac693f8a172f035346",
-      "updated_at": "2026-11-01T17:27:25.483Z"
+      "updated_at": "2026-11-01T18:07:41.950Z"
     },
     "missionaries-of-charity-founded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "92bcbf9566014ad002f9a571266b8bd480987536af71c3cb6fce9596f206485b",
-      "updated_at": "2026-11-01T17:30:03.767Z"
+      "updated_at": "2026-11-01T18:07:41.987Z"
     },
     "lavey-founds-church-of-satan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e45ef9286bc72f8e90e8e7f2f461108481c7110a5c1227754d0ef6a7bbd2eabc",
-      "updated_at": "2026-11-01T17:33:51.928Z"
+      "updated_at": "2026-11-01T18:07:42.022Z"
     }
   }
 }
