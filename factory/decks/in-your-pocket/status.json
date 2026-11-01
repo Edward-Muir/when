@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:12:15.527Z",
+  "updated_at": "2026-11-01T21:14:52.565Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-01T21:12:15.527Z"
     },
     "electric-flashlight-ever-ready": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d255ae75636645c3c8229f39063868f17b5031acfcc23396ada29906ea794160",
+      "updated_at": "2026-11-01T21:14:52.565Z"
     },
     "kodak-brownie-camera": {
       "state": "pending",
