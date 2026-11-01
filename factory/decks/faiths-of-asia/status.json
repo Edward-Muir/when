@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:26:27.317Z",
+  "updated_at": "2026-11-01T01:28:58.706Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-01T01:26:27.317Z"
     },
     "guru-nanak-born": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ad5d6b8e94167ff0530721a8c2feb488d2bc6865b5f6cbda79d33a6768c4002d",
+      "updated_at": "2026-11-01T01:28:58.706Z"
     },
     "dalai-lama-title-created": {
       "state": "pending",
