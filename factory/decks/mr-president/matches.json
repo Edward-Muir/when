@@ -1,0 +1,2852 @@
+[
+  {
+    "beat": 0,
+    "year": 1789,
+    "title": "Washington Sworn In as President",
+    "candidates": [
+      {
+        "name": "tennis-court-oath",
+        "friendly_name": "Tennis Court Oath",
+        "year": 1789,
+        "description": "French National Assembly members swore not to disband until they had written a constitution, defying royal authority.",
+        "score": 2,
+        "shared": [
+          "oath",
+          "constitution"
+        ]
+      },
+      {
+        "name": "french-revolution-start",
+        "friendly_name": "French Revolution Begins",
+        "year": 1789,
+        "description": "The storming of the Bastille ignited revolutionary fervor across France.",
+        "score": 1,
+        "shared": [
+          "revolutionary"
+        ]
+      },
+      {
+        "name": "french-declaration-rights",
+        "friendly_name": "Declaration of the Rights of Man",
+        "year": 1789,
+        "description": "Revolutionary France proclaimed fundamental rights and freedoms.",
+        "score": 1,
+        "shared": [
+          "revolutionary"
+        ]
+      },
+      {
+        "name": "estates-general-convened",
+        "friendly_name": "Estates-General Convened",
+        "year": 1789,
+        "description": "Louis XVI convened the Estates-General at Versailles for the first time in well over a century, triggering the events of the French Revolution.",
+        "score": 1,
+        "shared": [
+          "general"
+        ]
+      },
+      {
+        "name": "civil-constitution-clergy",
+        "friendly_name": "Civil Constitution of the Clergy",
+        "year": 1790,
+        "description": "The French Revolution subordinated the Catholic Church to the state, requiring clergy to swear loyalty oaths.",
+        "score": 1,
+        "shared": [
+          "constitution"
+        ]
+      },
+      {
+        "name": "us-constitution",
+        "friendly_name": "US Constitution Ratified",
+        "year": 1788,
+        "description": "The United States adopted its constitution establishing the federal government.",
+        "score": 1,
+        "shared": [
+          "constitution"
+        ]
+      },
+      {
+        "name": "us-supreme-court-first-session",
+        "friendly_name": "US Supreme Court Convenes",
+        "year": 1790,
+        "description": "The newly created United States Supreme Court held its first session in New York City.",
+        "score": 1,
+        "shared": [
+          "york"
+        ]
+      },
+      {
+        "name": "tokugawa-edo-period-culture",
+        "friendly_name": "Edo Period Cultural Flourishing",
+        "year": 1603,
+        "year_end": 1868,
+        "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 1797,
+    "title": "John Adams Becomes President",
+    "candidates": [
+      {
+        "name": "birth-mary-shelley",
+        "friendly_name": "Birth of Mary Shelley",
+        "year": 1797,
+        "description": "The English novelist who created Frankenstein, pioneering the science fiction genre at age twenty.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "garnerin-parachute-descent",
+        "friendly_name": "First Parachute Descent",
+        "year": 1797,
+        "description": "Andre-Jacques Garnerin leaped from a hydrogen balloon over Paris and floated safely down under a silk parachute.",
+        "score": 1,
+        "shared": [
+          "down"
+        ]
+      },
+      {
+        "name": "napoleons-egyptian-campaign",
+        "friendly_name": "Napoleon's Egyptian Campaign",
+        "year": 1798,
+        "year_end": 1801,
+        "description": "Napoleon invaded Egypt to threaten British India, bringing scientists who discovered the Rosetta Stone during the expedition.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "death-catherine-the-great",
+        "friendly_name": "Death of Catherine the Great",
+        "year": 1796,
+        "description": "Empress of Russia who expanded the empire and championed the Enlightenment over a 34-year reign.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "birth-franz-schubert",
+        "friendly_name": "Birth of Franz Schubert",
+        "year": 1797,
+        "description": "The Austrian composer of over 600 songs along with symphonies and chamber works, master of the lied.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-sojourner-truth",
+        "friendly_name": "Birth of Sojourner Truth",
+        "year": 1797,
+        "description": "The American abolitionist and women's rights orator known for her Ain't I a Woman speech.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 1801,
+    "title": "Jefferson Takes the Oath",
+    "candidates": [
+      {
+        "name": "white-house-completed",
+        "friendly_name": "White House Completed",
+        "year": 1800,
+        "description": "The official residence of the US President was finished in Washington DC.",
+        "score": 3,
+        "shared": [
+          "president",
+          "washington",
+          "house"
+        ]
+      },
+      {
+        "name": "library-congress-established",
+        "friendly_name": "Library of Congress Established",
+        "year": 1800,
+        "description": "President John Adams signed legislation establishing the Library of Congress.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "barbary-wars",
+        "friendly_name": "Barbary Wars Begin",
+        "year": 1801,
+        "description": "The United States fought North African pirates to end tribute payments and protect American shipping.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "young-double-slit-experiment",
+        "friendly_name": "Young's Double-Slit Experiment",
+        "year": 1801,
+        "description": "Thomas Young's double-slit experiment demonstrated light interference, providing evidence for wave theory of light.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beethoven-moonlight-sonata",
+        "friendly_name": "Moonlight Sonata Composed",
+        "year": 1801,
+        "description": "Beethoven composed his Piano Sonata No. 14, nicknamed the 'Moonlight Sonata.'",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gauss-disquisitiones",
+        "friendly_name": "Gauss Publishes Disquisitiones",
+        "year": 1801,
+        "description": "Carl Friedrich Gauss systematised number theory, introducing modular arithmetic and congruences.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1809,
+    "title": "James Madison Takes Office",
+    "candidates": [
+      {
+        "name": "birth-edgar-allan-poe",
+        "friendly_name": "Birth of Edgar Allan Poe",
+        "year": 1809,
+        "description": "The American writer who pioneered the detective story and tales of mystery, horror, and the macabre.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "beethoven-fifth",
+        "friendly_name": "Beethoven's Fifth Symphony",
+        "year": 1808,
+        "description": "Beethoven premiered his famous symphony with its iconic four-note opening.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "wristwatch",
+        "friendly_name": "Wristwatch",
+        "year": 1810,
+        "description": "Abraham-Louis Breguet created the first known wristwatch, made for the Queen of Naples.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "birth-charles-darwin",
+        "friendly_name": "Birth of Charles Darwin",
+        "year": 1809,
+        "description": "The future naturalist who developed the theory of evolution was born in Shrewsbury, England.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arc-lamp",
+        "friendly_name": "Arc Lamp Demonstrated",
+        "year": 1809,
+        "description": "Humphry Davy demonstrated the carbon arc lamp, the first practical electric light.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mcdowell-first-ovariotomy",
+        "friendly_name": "McDowell Performs First Ovariotomy",
+        "year": 1809,
+        "description": "A Kentucky surgeon removed a massive ovarian tumor from a fully conscious patient on her own kitchen table, the first such operation to succeed.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1817,
+    "title": "James Monroe Inaugurated Outdoors",
+    "candidates": [
+      {
+        "name": "bicycle-invented",
+        "friendly_name": "Bicycle Invented",
+        "year": 1817,
+        "description": "Karl von Drais invented the draisine, the first two-wheeled human-powered vehicle and precursor to the bicycle.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-henry-david-thoreau",
+        "friendly_name": "Birth of Thoreau",
+        "year": 1817,
+        "description": "The American writer of Walden whose essay Civil Disobedience inspired generations of activists.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "baltimore-gas-streetlights",
+        "friendly_name": "Baltimore Lit By Gas Lamps",
+        "year": 1817,
+        "description": "Baltimore laid coal-gas mains and became the first American city to light its streets with gas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-cholera-pandemic",
+        "friendly_name": "First Cholera Pandemic",
+        "year": 1817,
+        "year_end": 1824,
+        "description": "Cholera spread out of the Ganges delta along trade and troop routes, beginning a century of global waves.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "shaka-zulu-kingdom",
+        "friendly_name": "Shaka Zulu Founds Zulu Kingdom",
+        "year": 1816,
+        "description": "Shaka unified Zulu clans into a powerful African kingdom.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "zulu-military-innovation",
+        "friendly_name": "Zulu Develop Assegai Spear Tactics",
+        "year": 1818,
+        "description": "Shaka Zulu revolutionized warfare with the short stabbing spear and disciplined regiment formations.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1825,
+    "title": "John Quincy Adams Takes Office",
+    "candidates": [
+      {
+        "name": "john-by-founds-bytown",
+        "friendly_name": "John By Founds Bytown",
+        "year": 1826,
+        "description": "Lieutenant Colonel John By founded a canal workers settlement called Bytown, which was later renamed Ottawa.",
+        "score": 2,
+        "shared": [
+          "john",
+          "which"
+        ]
+      },
+      {
+        "name": "java-war-diponegoro",
+        "friendly_name": "Java War Begins",
+        "year": 1825,
+        "description": "Prince Diponegoro led a five-year revolt against Dutch rule that killed some 200,000 Javanese.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bolivia-independence",
+        "friendly_name": "Bolivian Independence",
+        "year": 1825,
+        "description": "The Bolivian Declaration of Independence was proclaimed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electromagnet-invented",
+        "friendly_name": "Electromagnet Invented",
+        "year": 1825,
+        "description": "William Sturgeon invented the electromagnet by wrapping wire around an iron core, creating a switchable magnet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "erie-canal",
+        "friendly_name": "Erie Canal Completed",
+        "year": 1825,
+        "description": "The canal connecting the Great Lakes to the Atlantic Ocean opened.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-railway",
+        "friendly_name": "First Public Railway Opens",
+        "year": 1825,
+        "description": "The Stockton and Darlington Railway became the world's first public railway.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1829,
+    "title": "Andrew Jackson Inaugurated",
+    "candidates": [
+      {
+        "name": "indian-removal-act",
+        "friendly_name": "Indian Removal Act",
+        "year": 1830,
+        "description": "President Andrew Jackson signed the Indian Removal Act, forcibly relocating Native Americans.",
+        "score": 2,
+        "shared": [
+          "andrew",
+          "jackson"
+        ]
+      },
+      {
+        "name": "catholic-emancipation-act",
+        "friendly_name": "Catholic Emancipation Act",
+        "year": 1829,
+        "description": "British law that allowed Catholics to sit in Parliament and hold most public offices for the first time in two centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "typewriter-invented",
+        "friendly_name": "Typewriter Invented",
+        "year": 1829,
+        "description": "William Burt patented the first typewriter, which he called a 'typographer.'",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "compound-air-compressor",
+        "friendly_name": "Compound Air Compressor",
+        "year": 1829,
+        "year_end": 1871,
+        "description": "Multi-stage compressor using sequential cylinders to generate higher air pressures efficiently.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "corrugated-galvanised-iron",
+        "friendly_name": "Corrugated Galvanised Iron",
+        "year": 1829,
+        "description": "Ridged zinc-coated iron sheets providing lightweight, durable, and affordable roofing material.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "railway-locomotive-stephenson",
+        "friendly_name": "Stephenson's Locomotive Success",
+        "year": 1829,
+        "description": "George Stephenson's Rocket won the Rainhill Trials, proving steam locomotives viable for passenger railways.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1837,
+    "title": "Martin Van Buren Sworn In",
+    "candidates": [
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "first-kindergarten",
+        "friendly_name": "First Kindergarten Opens",
+        "year": 1837,
+        "description": "Friedrich Froebel opened the first kindergarten in Germany.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "female-university",
+        "friendly_name": "Mount Holyoke College",
+        "year": 1837,
+        "description": "Mount Holyoke Seminary opened in Massachusetts as one of the first institutions of higher education for women in the United States.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "telegraph",
+        "friendly_name": "Telegraph Invented",
+        "year": 1837,
+        "description": "Samuel Morse invented the electric telegraph.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ice-age-theory-proposed",
+        "friendly_name": "Ice Ages Are Discovered",
+        "year": 1837,
+        "description": "Louis Agassiz proposed that vast ice sheets once covered much of Europe and North America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "panic-of-1837",
+        "friendly_name": "Jacksonian-Era Bank Panic",
+        "year": 1837,
+        "description": "A US banking crisis triggered a deep depression, bank failures, and years of economic hardship.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1841,
+    "title": "William Henry Harrison Inaugurated",
+    "candidates": [
+      {
+        "name": "calotype-photography",
+        "friendly_name": "Calotype Photography Invented",
+        "year": 1841,
+        "description": "William Henry Fox Talbot introduced the calotype, the first photographic method producing negatives for multiple prints.",
+        "score": 2,
+        "shared": [
+          "william",
+          "henry"
+        ]
+      },
+      {
+        "name": "birth-renoir",
+        "friendly_name": "Birth of Renoir",
+        "year": 1841,
+        "description": "The French Impressionist painter celebrated for his luminous, joyful scenes of social life.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "first-anesthesia-surgery",
+        "friendly_name": "First Anesthesia Surgery",
+        "year": 1842,
+        "description": "Crawford Long performed the first surgery using ether anesthesia, though his work wasn't published until later.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "fuel-cell",
+        "friendly_name": "Fuel Cell",
+        "year": 1842,
+        "description": "William Grove generated electricity by combining hydrogen and oxygen in an electrochemical cell.",
+        "score": 1,
+        "shared": [
+          "william"
+        ]
+      },
+      {
+        "name": "birth-claude-monet",
+        "friendly_name": "Birth of Claude Monet",
+        "year": 1840,
+        "description": "The French painter whose Impression, Sunrise gave Impressionism its name through studies of light.",
+        "score": 1,
+        "shared": [
+          "gave"
+        ]
+      },
+      {
+        "name": "birth-dvorak",
+        "friendly_name": "Birth of Antonin Dvorak",
+        "year": 1841,
+        "description": "The Czech composer of the New World Symphony who wove folk melody into the Romantic tradition.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1845,
+    "title": "James K. Polk Takes Office",
+    "candidates": [
+      {
+        "name": "first-modern-rugby",
+        "friendly_name": "Rugby Football Takes Shape",
+        "year": 1845,
+        "description": "Pupils at Rugby School in England wrote down rules for their handling form of football, founding the sport.",
+        "score": 1,
+        "shared": [
+          "takes"
+        ]
+      },
+      {
+        "name": "first-telegraph-message",
+        "friendly_name": "First Telegraph Message",
+        "year": 1844,
+        "description": "Samuel Morse sent 'What hath God wrought' from Washington to Baltimore, demonstrating the electric telegraph.",
+        "score": 1,
+        "shared": [
+          "telegraph"
+        ]
+      },
+      {
+        "name": "texas-annexed",
+        "friendly_name": "Texas Annexed",
+        "year": 1845,
+        "description": "Texas joined the United States as the 28th state after nine years as an independent republic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "irish-potato-famine",
+        "friendly_name": "Irish Potato Famine Begins",
+        "year": 1845,
+        "description": "A potato blight caused mass starvation and emigration from Ireland.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rubber-band-patented",
+        "friendly_name": "Rubber Band Patented",
+        "year": 1845,
+        "description": "Stephen Perry patented the rubber band, a simple loop of vulcanized rubber for holding objects together.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "faraday-electromagnetic-field",
+        "friendly_name": "Faraday Develops Field Theory",
+        "year": 1845,
+        "description": "Faraday introduced the concept of electromagnetic fields and demonstrated the magneto-optical (Faraday) effect.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1849,
+    "title": "Zachary Taylor Becomes President",
+    "candidates": [
+      {
+        "name": "fugitive-slave-act",
+        "friendly_name": "Fugitive Slave Act",
+        "year": 1850,
+        "description": "A US law forced citizens to help capture escaped slaves, deepening sectional conflict before the Civil War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "treaty-of-guadalupe-hidalgo",
+        "friendly_name": "Treaty of Guadalupe Hidalgo",
+        "year": 1848,
+        "description": "Mexico ceded vast northern territories to the United States, closing a war fought over the disputed Texas border.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "safety-pin-invented",
+        "friendly_name": "Safety Pin Invented",
+        "year": 1849,
+        "description": "Walter Hunt invented the safety pin in New York, designing and patenting it in just three hours.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "repeating-rifle",
+        "friendly_name": "Repeating Rifle",
+        "year": 1849,
+        "description": "Rifles using metallic cartridges and internal magazines, allowing rapid sequential firing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "francis-turbine",
+        "friendly_name": "Francis Turbine",
+        "year": 1849,
+        "description": "James Francis's efficient mixed-flow water turbine, still widely used in hydroelectric dams.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bowler-hat-invented",
+        "friendly_name": "The Bowler Hat Invented",
+        "year": 1849,
+        "description": "London hatters Thomas and William Bowler designed a hard rounded hat for gamekeepers that became a city icon.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1853,
+    "title": "Franklin Pierce Takes the Oath",
+    "candidates": [
+      {
+        "name": "india-first-railway",
+        "friendly_name": "India's First Railway",
+        "year": 1853,
+        "description": "India's first passenger train ran between Mumbai and Thane.",
+        "score": 1,
+        "shared": [
+          "railway"
+        ]
+      },
+      {
+        "name": "dirigible-airship",
+        "friendly_name": "Dirigible / Airship",
+        "year": 1852,
+        "description": "Henri Giffard flew the first powered, steerable lighter-than-air craft using a steam engine.",
+        "score": 1,
+        "shared": [
+          "than"
+        ]
+      },
+      {
+        "name": "crimean-war",
+        "friendly_name": "Crimean War Begins",
+        "year": 1853,
+        "description": "Britain, France, and the Ottoman Empire fought against Russian expansion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "perry-expedition-japan",
+        "friendly_name": "Perry Expedition Opens Japan",
+        "year": 1853,
+        "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-vincent-van-gogh",
+        "friendly_name": "Birth of Van Gogh",
+        "year": 1853,
+        "description": "The Dutch Post-Impressionist painter of The Starry Night, whose bold color and emotion shaped modern art.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chloroform-eases-childbirth",
+        "friendly_name": "Chloroform Eases Childbirth",
+        "year": 1853,
+        "description": "James Simpson promoted chloroform anesthesia, and John Snow gave it to Queen Victoria for a royal birth.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1857,
+    "title": "James Buchanan Inaugurated",
+    "candidates": [
+      {
+        "name": "dred-scott-decision",
+        "friendly_name": "Dred Scott Decision",
+        "year": 1857,
+        "description": "Supreme Court ruled that African Americans could not be citizens and Congress couldn't ban slavery in territories.",
+        "score": 3,
+        "shared": [
+          "slavery",
+          "supreme",
+          "court"
+        ]
+      },
+      {
+        "name": "lincoln-douglas-debates",
+        "friendly_name": "Lincoln-Douglas Debates",
+        "year": 1858,
+        "description": "Series of seven debates between Abraham Lincoln and Stephen Douglas focused on slavery and popular sovereignty.",
+        "score": 1,
+        "shared": [
+          "slavery"
+        ]
+      },
+      {
+        "name": "ice-making-machine",
+        "friendly_name": "Ice Making Machine",
+        "year": 1856,
+        "description": "James Harrison's mechanical refrigeration system for commercial ice production in Australia.",
+        "score": 1,
+        "shared": [
+          "james"
+        ]
+      },
+      {
+        "name": "birth-booker-t-washington",
+        "friendly_name": "Birth of Booker T Washington",
+        "year": 1856,
+        "description": "The American educator born into slavery who founded Tuskegee Institute and led Black education and uplift.",
+        "score": 1,
+        "shared": [
+          "slavery"
+        ]
+      },
+      {
+        "name": "birth-theodore-roosevelt",
+        "friendly_name": "Birth of Theodore Roosevelt",
+        "year": 1858,
+        "description": "The 26th US president, trust-busting reformer and conservationist who championed the Square Deal.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "sepoy-mutiny",
+        "friendly_name": "Sepoy Mutiny",
+        "year": 1857,
+        "year_end": 1858,
+        "description": "Indian soldiers rebelled against the British East India Company, triggering a widespread uprising that led to direct British Crown rule over India.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1861,
+    "title": "Lincoln Sworn In as President",
+    "candidates": [
+      {
+        "name": "bismarck-becomes-minister-president",
+        "friendly_name": "Bismarck Becomes Minister-President",
+        "year": 1862,
+        "description": "Otto von Bismarck became Prussia's Minister-President, beginning his campaign to unify Germany through 'blood and iron.'",
+        "score": 2,
+        "shared": [
+          "president",
+          "his"
+        ]
+      },
+      {
+        "name": "american-civil-war",
+        "friendly_name": "American Civil War Begins",
+        "year": 1861,
+        "description": "Confederate forces fired on Fort Sumter, beginning a four-year war over slavery and national unity.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "birth-rabindranath-tagore",
+        "friendly_name": "Birth of Tagore",
+        "year": 1861,
+        "description": "The Indian poet and polymath, first non-European Nobel laureate in Literature for his work Gitanjali.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "first-melbourne-cup-1861",
+        "friendly_name": "First Melbourne Cup",
+        "year": 1861,
+        "description": "Archer won the inaugural Melbourne Cup at Flemington, launching Australia's race that stops a nation.",
+        "score": 1,
+        "shared": [
+          "nation"
+        ]
+      },
+      {
+        "name": "les-miserables",
+        "friendly_name": "Les Misérables Published",
+        "year": 1862,
+        "description": "Victor Hugo published his epic novel of justice and redemption in France.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "south-carolina-secedes",
+        "friendly_name": "South Carolina Secedes",
+        "year": 1860,
+        "description": "South Carolina became the first state to secede from the Union following Lincoln's election.",
+        "score": 1,
+        "shared": [
+          "lincoln"
+        ]
+      },
+      {
+        "name": "garibaldis-expedition",
+        "friendly_name": "Garibaldi's Expedition",
+        "year": 1860,
+        "description": "Giuseppe Garibaldi led his Thousand Red Shirts to conquer Sicily and Naples, advancing Italian unification.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "us-greenbacks-issued",
+        "friendly_name": "US Greenbacks Issued",
+        "year": 1862,
+        "description": "To fund the Civil War, Congress issued unbacked paper dollars nicknamed greenbacks and made them legal tender.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1865,
+    "title": "Andrew Johnson Takes Office",
+    "candidates": [
+      {
+        "name": "lincoln-assassination",
+        "friendly_name": "Abraham Lincoln Assassinated",
+        "year": 1865,
+        "description": "President Lincoln was shot by John Wilkes Booth at Ford's Theatre.",
+        "score": 2,
+        "shared": [
+          "president",
+          "assassination"
+        ]
+      },
+      {
+        "name": "cornell-university-founded",
+        "friendly_name": "Cornell University Founded",
+        "year": 1865,
+        "description": "Ezra Cornell and Andrew Dickson White founded a university in Ithaca open to any student regardless of background.",
+        "score": 1,
+        "shared": [
+          "andrew"
+        ]
+      },
+      {
+        "name": "mendel-genetics",
+        "friendly_name": "Mendel Discovers Genetics",
+        "year": 1866,
+        "description": "Gregor Mendel published his laws of inheritance from pea plant experiments.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "us-civil-war-end",
+        "friendly_name": "American Civil War Ends",
+        "year": 1865,
+        "description": "General Lee surrendered at Appomattox Courthouse, ending the Civil War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "slavery-abolished-us",
+        "friendly_name": "Slavery Abolished in United States",
+        "year": 1865,
+        "description": "The 13th Amendment ended slavery throughout the United States.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "salvation-army-founded",
+        "friendly_name": "Salvation Army Founded",
+        "year": 1865,
+        "description": "William Booth founded the Christian charitable organization in London.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1869,
+    "title": "Ulysses S. Grant Inaugurated",
+    "candidates": [
+      {
+        "name": "cincinnati-red-stockings-first-pro-team-1869",
+        "friendly_name": "First Pro Baseball Team",
+        "year": 1869,
+        "description": "Harry Wright's Cincinnati Red Stockings became baseball's first openly all-salaried team, touring the nation undefeated.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "impeachment-andrew-johnson",
+        "friendly_name": "Impeachment of Andrew Johnson",
+        "year": 1868,
+        "description": "President Andrew Johnson was impeached by the House but acquitted by the Senate by one vote.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "standard-oil-founded",
+        "friendly_name": "Standard Oil Founded",
+        "year": 1870,
+        "description": "John D. Rockefeller founded Standard Oil, which became the largest and most powerful oil monopoly.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "mendeleev-periodic-table",
+        "friendly_name": "Mendeleev's Periodic Table",
+        "year": 1869,
+        "description": "Dmitri Mendeleev arranged elements by atomic weight, predicting undiscovered elements and their properties.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "brooklyn-bridge-begins",
+        "friendly_name": "Brooklyn Bridge Construction Begins",
+        "year": 1869,
+        "description": "Work began on the first steel-wire suspension bridge.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "suez-canal",
+        "friendly_name": "Suez Canal Opens",
+        "year": 1869,
+        "description": "The canal connecting the Mediterranean and Red Seas opened to shipping.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1877,
+    "title": "Rutherford B. Hayes Takes Oath",
+    "candidates": [
+      {
+        "name": "congress-of-berlin",
+        "friendly_name": "Congress of Berlin",
+        "year": 1878,
+        "description": "Major powers redrew Balkan boundaries after the Russo-Turkish War, creating new independent states.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "romania-independence-recognized",
+        "friendly_name": "Romania Wins Independence",
+        "year": 1878,
+        "description": "The great powers recognised Romania as a sovereign state after it fought the Ottomans alongside Russia.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "nez-perce-war",
+        "friendly_name": "Nez Perce War",
+        "year": 1877,
+        "description": "Chief Joseph led the Nez Perce on a 1,170-mile fighting retreat toward Canada before surrendering with his famous speech 'I will fight no more forever.'",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "phonograph-invented",
+        "friendly_name": "Phonograph Invented",
+        "year": 1877,
+        "description": "Thomas Edison invented a device to record and play back sound.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tchaikovsky-swan-lake",
+        "friendly_name": "Swan Lake Premiered",
+        "year": 1877,
+        "description": "Tchaikovsky's ballet premiered in Moscow, though initially unsuccessful.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-railroad-strike-1877",
+        "friendly_name": "Great Railroad Strike",
+        "year": 1877,
+        "description": "The first major American railroad strike began in West Virginia and spread nationwide, marking a turning point in U.S. labor history.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1881,
+    "title": "James Garfield Inaugurated",
+    "candidates": [
+      {
+        "name": "assassination-of-garfield",
+        "friendly_name": "Assassination of Garfield",
+        "year": 1881,
+        "description": "President James Garfield was shot by a disappointed office-seeker, leading to civil service reform and the Pendleton Act.",
+        "score": 4,
+        "shared": [
+          "james",
+          "garfield",
+          "civil",
+          "shot"
+        ]
+      },
+      {
+        "name": "first-boer-war",
+        "friendly_name": "First Boer War",
+        "year": 1880,
+        "year_end": 1881,
+        "description": "Boer settlers defeated British forces in South Africa, winning independence for the Transvaal Republic after the Battle of Majuba Hill.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "birth-james-joyce",
+        "friendly_name": "Birth of James Joyce",
+        "year": 1882,
+        "description": "The Irish novelist of Ulysses and Dubliners, a towering figure of literary modernism.",
+        "score": 1,
+        "shared": [
+          "james"
+        ]
+      },
+      {
+        "name": "war-of-the-pacific",
+        "friendly_name": "War of the Pacific",
+        "year": 1879,
+        "year_end": 1884,
+        "description": "Chile fought Bolivia and Peru over nitrate-rich territories, winning coastal lands that left Bolivia landlocked to this day.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "assassination-of-alexander-ii",
+        "friendly_name": "Assassination of Alexander II",
+        "year": 1881,
+        "description": "Russian Tsar Alexander II, the 'Liberator' who freed the serfs, was killed by a bomb thrown by revolutionary terrorists in St. Petersburg.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tuskegee-institute-founded",
+        "friendly_name": "Tuskegee Institute Founded",
+        "year": 1881,
+        "description": "Booker T. Washington founded Tuskegee Institute in Alabama to provide vocational education for African Americans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1885,
+    "title": "Grover Cleveland Takes Office",
+    "candidates": [
+      {
+        "name": "birth-harry-truman",
+        "friendly_name": "Birth of Harry S Truman",
+        "year": 1884,
+        "description": "The 33rd US president who oversaw the end of World War II and authorized the atomic bombings of Japan.",
+        "score": 2,
+        "shared": [
+          "war",
+          "who"
+        ]
+      },
+      {
+        "name": "stanford-university-founded",
+        "friendly_name": "Stanford University Founded",
+        "year": 1885,
+        "description": "A railroad magnate and his wife founded a university in California in memory of their son, who died young.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "siege-of-khartoum",
+        "friendly_name": "Siege of Khartoum",
+        "year": 1885,
+        "description": "Mahdist forces besieged the Sudanese capital for months, storming its defenses and killing the British general just before help arrived.",
+        "score": 1,
+        "shared": [
+          "before"
+        ]
+      },
+      {
+        "name": "mount-tarawera-eruption",
+        "friendly_name": "Mount Tarawera Eruption",
+        "year": 1886,
+        "description": "New Zealand's deadliest volcanic eruption destroyed the famous Pink and White Terraces.",
+        "score": 1,
+        "shared": [
+          "white"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "before"
+        ]
+      },
+      {
+        "name": "steel-frame-skyscraper",
+        "friendly_name": "First Steel-Frame Skyscraper",
+        "year": 1885,
+        "description": "The Home Insurance Building in Chicago became the first steel-frame skyscraper, launching the age of tall buildings.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1889,
+    "title": "Benjamin Harrison Sworn In",
+    "candidates": [
+      {
+        "name": "oklahoma-land-rush",
+        "friendly_name": "Oklahoma Land Rush",
+        "year": 1889,
+        "description": "Thousands of settlers raced to claim land in the first Oklahoma Land Run, opening former Indian Territory.",
+        "score": 1,
+        "shared": [
+          "former"
+        ]
+      },
+      {
+        "name": "russian-flu",
+        "friendly_name": "Russian Flu Pandemic",
+        "year": 1889,
+        "year_end": 1890,
+        "description": "A global influenza pandemic killed over one million people.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "motion-picture-camera",
+        "friendly_name": "Motion Picture Camera Invented",
+        "year": 1890,
+        "description": "Thomas Edison and William Dickson unveiled the kinetograph, one of the world's first motion picture cameras.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "birth-charles-de-gaulle",
+        "friendly_name": "Birth of Charles de Gaulle",
+        "year": 1890,
+        "description": "The French general who led the Free French in WWII and founded the Fifth Republic as president.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "birth-dwight-eisenhower",
+        "friendly_name": "Birth of Eisenhower",
+        "year": 1890,
+        "description": "The Allied supreme commander on D-Day who later served as the 34th US president.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "first-touch-typing-method",
+        "friendly_name": "Touch Typing Method Taught",
+        "year": 1888,
+        "description": "Frank McGurrin won a contest using all ten fingers without looking, popularizing touch typing.",
+        "score": 1,
+        "shared": [
+          "won"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1897,
+    "title": "William McKinley Inaugurated",
+    "candidates": [
+      {
+        "name": "first-zionist-congress",
+        "friendly_name": "First Zionist Congress",
+        "year": 1897,
+        "description": "Theodor Herzl organized the movement for a Jewish homeland.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "queen-victorias-diamond-jubilee",
+        "friendly_name": "Queen Victoria's Diamond Jubilee",
+        "year": 1897,
+        "description": "Massive celebrations marked Queen Victoria's 60 years on the throne, showcasing British imperial power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electron-discovered",
+        "friendly_name": "Electron Discovered",
+        "year": 1897,
+        "description": "J.J. Thomson discovered the electron, the first subatomic particle.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "aspirin-invented",
+        "friendly_name": "Aspirin Developed",
+        "year": 1897,
+        "description": "Felix Hoffmann at Bayer synthesized aspirin, which became the world's most widely used medication.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "diesel-engine",
+        "friendly_name": "Diesel Engine Demonstrated",
+        "year": 1897,
+        "description": "Rudolf Diesel successfully demonstrated his compression-ignition engine, more efficient than steam and gasoline engines.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "surgical-masks",
+        "friendly_name": "Surgical Masks",
+        "year": 1897,
+        "description": "Cloth masks adopted in operating rooms to prevent bacterial contamination of surgical wounds.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1901,
+    "title": "Theodore Roosevelt Sworn In",
+    "candidates": [
+      {
+        "name": "assassination-of-mckinley",
+        "friendly_name": "Assassination of McKinley",
+        "year": 1901,
+        "description": "President William McKinley was shot by anarchist Leon Czolgosz at the Pan-American Exposition, making Theodore Roosevelt president.",
+        "score": 2,
+        "shared": [
+          "theodore",
+          "roosevelt"
+        ]
+      },
+      {
+        "name": "queen-victoria-dies",
+        "friendly_name": "Queen Victoria Dies",
+        "year": 1901,
+        "description": "Queen Victoria died after 63 years on the throne, ending the Victorian era.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "galveston-hurricane",
+        "friendly_name": "Galveston Hurricane",
+        "year": 1900,
+        "description": "The deadliest natural disaster in US history killed up to 12,000 people in Texas.",
+        "score": 1,
+        "shared": [
+          "killed"
+        ]
+      },
+      {
+        "name": "philippine-american-war",
+        "friendly_name": "Philippine-American War",
+        "year": 1899,
+        "year_end": 1902,
+        "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "picasso-blue-period",
+        "friendly_name": "Picasso's Blue Period Begins",
+        "year": 1901,
+        "description": "Picasso began painting in shades of blue following a friend's suicide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nobel-prizes-first",
+        "friendly_name": "First Nobel Prizes Awarded",
+        "year": 1901,
+        "description": "The first Nobel Prizes were awarded in Stockholm and Oslo.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1909,
+    "title": "William Howard Taft Takes Office",
+    "candidates": [
+      {
+        "name": "young-turk-revolution",
+        "friendly_name": "Young Turk Revolution",
+        "year": 1908,
+        "description": "Military officers forced the Ottoman sultan to restore the constitution and parliament.",
+        "score": 1,
+        "shared": [
+          "forced"
+        ]
+      },
+      {
+        "name": "naacp-founded",
+        "friendly_name": "NAACP Founded",
+        "year": 1909,
+        "description": "The civil rights organization was established to fight racial discrimination.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "corporate-tax",
+        "friendly_name": "Corporate Tax",
+        "year": 1909,
+        "description": "The United States enacted its first corporate income tax, establishing a 1% tax on net corporate income above $5,000.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "north-pole-reached",
+        "friendly_name": "North Pole Reached",
+        "year": 1909,
+        "description": "Robert Peary claimed to be the first person to reach the North Pole.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "haber-process",
+        "friendly_name": "Haber Process Invented",
+        "year": 1909,
+        "description": "Fritz Haber developed a process to synthesize ammonia from nitrogen, enabling mass production of fertilizer.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "instant-coffee-introduced",
+        "friendly_name": "Instant Coffee Introduced",
+        "year": 1909,
+        "description": "Soluble instant coffee reached the mass market, letting people brew a cup by adding hot water.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1913,
+    "title": "Woodrow Wilson Inaugurated",
+    "candidates": [
+      {
+        "name": "woolworth-building-opens",
+        "friendly_name": "Woolworth Building Opens",
+        "year": 1913,
+        "description": "Frank Woolworth's ornate Gothic tower opened in New York and became the tallest building on Earth, a title it held for the next seventeen years.",
+        "score": 2,
+        "shared": [
+          "became",
+          "years"
+        ]
+      },
+      {
+        "name": "second-balkan-war",
+        "friendly_name": "Second Balkan War",
+        "year": 1913,
+        "description": "Former allies turned on Bulgaria over disputed Macedonian territory, resulting in Bulgaria's defeat and increased tensions leading to World War I.",
+        "score": 1,
+        "shared": [
+          "former"
+        ]
+      },
+      {
+        "name": "birth-richard-nixon",
+        "friendly_name": "Birth of Richard Nixon",
+        "year": 1913,
+        "description": "The 37th US president who opened relations with China and resigned over the Watergate scandal.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "first-battle-of-the-marne",
+        "friendly_name": "First Battle of the Marne",
+        "year": 1914,
+        "description": "French and British forces halted the German advance on Paris, ending hopes for a quick victory and beginning four years of trench warfare.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "last-emperor-china-abdicates",
+        "friendly_name": "Last Emperor of China Abdicates",
+        "year": 1912,
+        "description": "The Xuantong Emperor abdicated, ending over 2,000 years of imperial rule in China.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "shackleton-endurance",
+        "friendly_name": "Shackleton's Endurance Expedition",
+        "year": 1914,
+        "year_end": 1917,
+        "description": "Ernest Shackleton's Antarctic expedition became a legendary survival story.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "first-scheduled-airline",
+        "friendly_name": "First Scheduled Airline",
+        "year": 1914,
+        "description": "The SPT Airboat Line became the worlds first scheduled airline using winged aircraft.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "first-olympic-decathlon-thorpe",
+        "friendly_name": "First Olympic Decathlon",
+        "year": 1912,
+        "description": "The ten-event decathlon debuted at the Stockholm Olympics, won by American Jim Thorpe with a score that stood for years.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1921,
+    "title": "Warren G. Harding Takes Office",
+    "candidates": [
+      {
+        "name": "mussolini-power",
+        "friendly_name": "Mussolini Takes Power",
+        "year": 1922,
+        "description": "The March on Rome brought Benito Mussolini to power as Italy's fascist leader.",
+        "score": 1,
+        "shared": [
+          "takes"
+        ]
+      },
+      {
+        "name": "first-commercial-radio-broadcast",
+        "friendly_name": "First Commercial Radio Broadcast",
+        "year": 1920,
+        "description": "KDKA in Pittsburgh broadcast the Harding-Cox presidential election results, marking the start of commercial radio broadcasting.",
+        "score": 1,
+        "shared": [
+          "harding"
+        ]
+      },
+      {
+        "name": "nfl-founded-canton-1920",
+        "friendly_name": "NFL Founded",
+        "year": 1920,
+        "description": "The American Professional Football Association, later renamed the NFL, formed in Ralph Hay's Canton, Ohio auto showroom.",
+        "score": 1,
+        "shared": [
+          "ohio"
+        ]
+      },
+      {
+        "name": "turkish-war-of-independence",
+        "friendly_name": "Turkish War of Independence",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-miss-america",
+        "friendly_name": "First Miss America Pageant",
+        "year": 1921,
+        "description": "The first Miss America pageant was held in Atlantic City.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "communist-party-china-founded",
+        "friendly_name": "Communist Party of China Founded",
+        "year": 1921,
+        "description": "The CPC was founded in Shanghai with Mao Zedong among its early members.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1923,
+    "title": "Coolidge Sworn In by Lamplight",
+    "candidates": [
+      {
+        "name": "munich-beer-hall-putsch",
+        "friendly_name": "Munich Beer Hall Putsch",
+        "year": 1923,
+        "description": "Hitler's failed coup attempt in Munich led to his imprisonment, where he wrote Mein Kampf.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "enigma-machine-sold",
+        "friendly_name": "Enigma Machine Goes On Sale",
+        "year": 1923,
+        "description": "Arthur Scherbius marketed his rotor cipher machine to banks and firms before the German military adopted it wholesale.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "pancho-villa-assassinated",
+        "friendly_name": "Pancho Villa Assassinated",
+        "year": 1923,
+        "description": "The retired Mexican revolutionary general was ambushed by gunmen at Parral, three years after laying down arms.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "death-lenin",
+        "friendly_name": "Death of Lenin",
+        "year": 1924,
+        "description": "Vladimir Lenin died, setting off a power struggle that Stalin would ultimately win.",
+        "score": 1,
+        "shared": [
+          "death"
+        ]
+      },
+      {
+        "name": "dawes-plan",
+        "friendly_name": "Dawes Plan",
+        "year": 1924,
+        "description": "The plan restructured German reparations payments after World War I.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "birth-george-hw-bush",
+        "friendly_name": "Birth of George H. W. Bush",
+        "year": 1924,
+        "description": "The 41st US president who oversaw the Cold War's end and led the Gulf War coalition.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1929,
+    "title": "Herbert Hoover Inaugurated",
+    "candidates": [
+      {
+        "name": "great-depression-economy",
+        "friendly_name": "Great Depression Begins",
+        "year": 1929,
+        "description": "The Wall Street stock market crash triggered the worst global economic depression of the modern era.",
+        "score": 2,
+        "shared": [
+          "stock",
+          "market"
+        ]
+      },
+      {
+        "name": "scotch-tape",
+        "friendly_name": "Scotch Tape Invented",
+        "year": 1930,
+        "description": "3M engineer Richard Drew developed the first transparent cellophane adhesive tape, marketed as Scotch Tape.",
+        "score": 1,
+        "shared": [
+          "engineer"
+        ]
+      },
+      {
+        "name": "roaring-twenties-era",
+        "friendly_name": "Roaring Twenties Begin",
+        "year": 1920,
+        "year_end": 1929,
+        "description": "Post-WWI prosperity fueled jazz, flappers, and cultural liberation across America and Europe.",
+        "score": 1,
+        "shared": [
+          "prosperity"
+        ]
+      },
+      {
+        "name": "vatican-city-created",
+        "friendly_name": "Vatican City Created",
+        "year": 1929,
+        "description": "Lateran Treaty established Vatican City as an independent state, ending the Roman Question.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "expanding-universe",
+        "friendly_name": "Expanding Universe Discovered",
+        "year": 1929,
+        "description": "Edwin Hubble discovered that the universe is expanding.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-anne-frank",
+        "friendly_name": "Birth of Anne Frank",
+        "year": 1929,
+        "description": "The German-Dutch diarist whose journal in hiding became the most-read account of the Holocaust.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1933,
+    "title": "Franklin Roosevelt Takes Office",
+    "candidates": [
+      {
+        "name": "us-leaves-gold-standard",
+        "friendly_name": "US Leaves Gold Standard",
+        "year": 1933,
+        "description": "Roosevelt took the US off the gold standard domestically to combat deflation during the Depression.",
+        "score": 2,
+        "shared": [
+          "roosevelt",
+          "depression"
+        ]
+      },
+      {
+        "name": "new-deal",
+        "friendly_name": "New Deal Begins",
+        "year": 1933,
+        "description": "FDR launched sweeping programs to combat the Great Depression.",
+        "score": 1,
+        "shared": [
+          "depression"
+        ]
+      },
+      {
+        "name": "fdr-gold-confiscation",
+        "friendly_name": "US Bans Private Gold",
+        "year": 1933,
+        "description": "Roosevelt ordered Americans to surrender most gold coins and bullion as the US left the gold standard at home.",
+        "score": 1,
+        "shared": [
+          "roosevelt"
+        ]
+      },
+      {
+        "name": "hitler-chancellor",
+        "friendly_name": "Hitler Becomes Chancellor",
+        "year": 1933,
+        "description": "Adolf Hitler was appointed Chancellor of Germany, beginning Nazi rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "reichstag-fire",
+        "friendly_name": "Reichstag Fire",
+        "year": 1933,
+        "description": "The German parliament building was set ablaze, allowing Hitler to consolidate power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-nazi-concentration-camps",
+        "friendly_name": "First Nazi Concentration Camps",
+        "year": 1933,
+        "description": "Dachau and other camps opened to imprison political opponents shortly after Hitler took power.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1945,
+    "title": "Truman Sworn In After Roosevelt",
+    "candidates": [
+      {
+        "name": "death-fdr",
+        "friendly_name": "Death of FDR",
+        "year": 1945,
+        "description": "President Franklin D. Roosevelt died in office, just weeks before Germany's surrender.",
+        "score": 3,
+        "shared": [
+          "roosevelt",
+          "president",
+          "death"
+        ]
+      },
+      {
+        "name": "death-hitler",
+        "friendly_name": "Death of Hitler",
+        "year": 1945,
+        "description": "Adolf Hitler died by suicide in his Berlin bunker as Allied forces closed in.",
+        "score": 2,
+        "shared": [
+          "his",
+          "death"
+        ]
+      },
+      {
+        "name": "wwii-end-europe",
+        "friendly_name": "V-E Day",
+        "year": 1945,
+        "description": "Nazi Germany surrendered unconditionally, ending World War II in Europe.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "nuremberg-trials",
+        "friendly_name": "Nuremberg Trials Begin",
+        "year": 1945,
+        "description": "Nazi war criminals were prosecuted for crimes against humanity.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "fall-of-berlin",
+        "friendly_name": "Fall of Berlin",
+        "year": 1945,
+        "description": "Soviet forces captured the Nazi capital after brutal street fighting.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "wwii-end",
+        "friendly_name": "World War II Ends",
+        "year": 1945,
+        "description": "Japan surrendered following the atomic bombings, ending WWII.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "atomic-bomb-nagasaki-ww2",
+        "friendly_name": "Atomic Bomb on Nagasaki",
+        "year": 1945,
+        "description": "The US dropped a plutonium bomb on Nagasaki three days after Hiroshima, hastening Japan's surrender.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "death-benito-mussolini",
+        "friendly_name": "Death of Mussolini",
+        "year": 1945,
+        "description": "The Italian Fascist dictator who founded the movement was captured and executed by partisans.",
+        "score": 1,
+        "shared": [
+          "death"
+        ]
+      },
+      {
+        "name": "post-war-german-expulsions",
+        "friendly_name": "German Expulsions From the East",
+        "year": 1945,
+        "year_end": 1950,
+        "description": "Millions of ethnic Germans were expelled from Eastern Europe at the close of the Second World War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "battle-of-the-philippine-sea",
+        "friendly_name": "Battle of the Philippine Sea",
+        "year": 1944,
+        "description": "US Navy destroyed Japanese naval aviation in the 'Great Marianas Turkey Shoot,' securing air superiority in the Pacific War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "french-indochina-war-begins",
+        "friendly_name": "French-Indochina War Begins",
+        "year": 1946,
+        "description": "Ho Chi Minh's Viet Minh began armed resistance against French colonial rule, starting an eight-year war that ended with French defeat at Dien Bien Phu.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "churchill-iron-curtain-speech",
+        "friendly_name": "Churchill's Iron Curtain Speech",
+        "year": 1946,
+        "description": "Winston Churchill declared that an 'iron curtain' had descended across Europe, defining Cold War divisions.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1953,
+    "title": "Eisenhower Takes Office",
+    "candidates": [
+      {
+        "name": "stalin-dies",
+        "friendly_name": "Stalin Dies",
+        "year": 1953,
+        "description": "Joseph Stalin died after ruling the Soviet Union for nearly three decades of terror and industrialization.",
+        "score": 1,
+        "shared": [
+          "decades"
+        ]
+      },
+      {
+        "name": "heart-lung-machine-first-use",
+        "friendly_name": "Heart-Lung Machine Debuts",
+        "year": 1953,
+        "description": "A surgeon used his own heart-lung machine to keep a patient alive while he repaired a hole in her heart, opening the era of open-heart surgery.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "cia-coup-in-guatemala",
+        "friendly_name": "CIA Coup in Guatemala",
+        "year": 1954,
+        "description": "The CIA overthrew democratically elected President Arbenz to protect United Fruit Company interests, beginning decades of military rule and civil war.",
+        "score": 1,
+        "shared": [
+          "decades"
+        ]
+      },
+      {
+        "name": "lord-of-rings",
+        "friendly_name": "Lord of the Rings Published",
+        "year": 1954,
+        "description": "J.R.R. Tolkien published his epic fantasy trilogy.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "mccarthy-hearings",
+        "friendly_name": "McCarthy Hearings",
+        "year": 1954,
+        "description": "The televised Army-McCarthy hearings exposed McCarthy's tactics, leading to his political downfall.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "brown-v-board",
+        "friendly_name": "Brown v. Board of Education",
+        "year": 1954,
+        "description": "The Supreme Court ruled school segregation unconstitutional.",
+        "score": 1,
+        "shared": [
+          "supreme"
+        ]
+      },
+      {
+        "name": "united-nations-hq",
+        "friendly_name": "UN Headquarters Completed",
+        "year": 1952,
+        "description": "The UN complex opened on the East River in New York City.",
+        "score": 1,
+        "shared": [
+          "opened"
+        ]
+      },
+      {
+        "name": "lever-house",
+        "friendly_name": "Lever House Completed",
+        "year": 1952,
+        "description": "The glass curtain wall skyscraper pioneered modern office design.",
+        "score": 1,
+        "shared": [
+          "office"
+        ]
+      },
+      {
+        "name": "linear-b-deciphered",
+        "friendly_name": "Linear B Deciphered",
+        "year": 1952,
+        "description": "Michael Ventris, an architect working in his spare time, showed that the Mycenaean tablet script recorded an early form of Greek.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1961,
+    "title": "Kennedy Inaugurated in the Snow",
+    "candidates": [
+      {
+        "name": "non-aligned-movement",
+        "friendly_name": "Non-Aligned Movement Founded",
+        "year": 1961,
+        "description": "Nations refused to align with either Cold War superpower bloc.",
+        "score": 1,
+        "shared": [
+          "cold"
+        ]
+      },
+      {
+        "name": "peace-corps-founded",
+        "friendly_name": "Peace Corps Founded",
+        "year": 1961,
+        "description": "Kennedy established the Peace Corps to send American volunteers to developing countries.",
+        "score": 1,
+        "shared": [
+          "kennedy"
+        ]
+      },
+      {
+        "name": "congo-crisis",
+        "friendly_name": "Congo Crisis",
+        "year": 1960,
+        "year_end": 1965,
+        "description": "The newly independent Congo descended into chaos and Cold War proxy conflict.",
+        "score": 1,
+        "shared": [
+          "cold"
+        ]
+      },
+      {
+        "name": "u2-incident",
+        "friendly_name": "U-2 Incident",
+        "year": 1960,
+        "description": "Soviet Union shot down American U-2 spy plane, capturing pilot Gary Powers and escalating Cold War tensions.",
+        "score": 1,
+        "shared": [
+          "cold"
+        ]
+      },
+      {
+        "name": "cuban-missile-crisis-1962",
+        "friendly_name": "Cuban Missile Crisis",
+        "year": 1962,
+        "description": "A 13-day nuclear standoff between the US and Soviet Union over missiles in Cuba brought the world to the brink of war.",
+        "score": 1,
+        "shared": [
+          "day"
+        ]
+      },
+      {
+        "name": "brasilia-built",
+        "friendly_name": "Brasília Inaugurated",
+        "year": 1960,
+        "description": "Brazil's modernist capital city was raised from open savanna in only a few years.",
+        "score": 1,
+        "shared": [
+          "inaugurated"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "americans"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1963,
+    "title": "LBJ Sworn In on Air Force One",
+    "candidates": [
+      {
+        "name": "jfk-assassination",
+        "friendly_name": "JFK Assassinated",
+        "year": 1963,
+        "description": "President John F. Kennedy was shot and killed in Dallas, Texas.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "south-vietnam-coup",
+        "friendly_name": "South Vietnam Coup",
+        "year": 1963,
+        "description": "South Vietnamese generals overthrew and assassinated President Ngo Dinh Diem with tacit US approval, destabilizing the country during the Vietnam War.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "electronic-cigarette",
+        "friendly_name": "Electronic Cigarette",
+        "year": 1963,
+        "description": "Herbert Gilbert patented a smokeless, non-tobacco electronic device that heated flavored air.",
+        "score": 1,
+        "shared": [
+          "air"
+        ]
+      },
+      {
+        "name": "warhol-soup-cans",
+        "friendly_name": "Warhol's Campbell's Soup Cans",
+        "year": 1962,
+        "description": "Andy Warhol exhibited his iconic pop art series.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "gulf-of-tonkin-resolution",
+        "friendly_name": "Gulf of Tonkin Resolution",
+        "year": 1964,
+        "description": "Congress authorized military force in Vietnam after reported attacks on US ships, escalating the war.",
+        "score": 1,
+        "shared": [
+          "force"
+        ]
+      },
+      {
+        "name": "fraser-sub-minute-1962",
+        "friendly_name": "Fraser First Woman Under a Minute",
+        "year": 1962,
+        "description": "Dawn Fraser became the first woman to break one minute for 100m freestyle, swimming 59.9 in Melbourne.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1969,
+    "title": "Richard Nixon Takes Office",
+    "candidates": [
+      {
+        "name": "nixon-doctrine",
+        "friendly_name": "Nixon Doctrine",
+        "year": 1969,
+        "description": "Nixon declared allies must take primary responsibility for their own defense while US provided support.",
+        "score": 1,
+        "shared": [
+          "nixon"
+        ]
+      },
+      {
+        "name": "british-troops-northern-ireland",
+        "friendly_name": "British Troops to Northern Ireland",
+        "year": 1969,
+        "description": "British Army deployed to Northern Ireland amid escalating sectarian violence beginning the Troubles.",
+        "score": 1,
+        "shared": [
+          "amid"
+        ]
+      },
+      {
+        "name": "lake-pontchartrain-causeway",
+        "friendly_name": "Lake Pontchartrain Causeway",
+        "year": 1969,
+        "description": "The world's longest bridge over water was doubled in Louisiana.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "meir-becomes-israels-pm",
+        "friendly_name": "Golda Meir Becomes Israel's PM",
+        "year": 1969,
+        "description": "Golda Meir was sworn in as Prime Minister of Israel, becoming the first woman to hold the post in the country.",
+        "score": 1,
+        "shared": [
+          "sworn"
+        ]
+      },
+      {
+        "name": "tet-offensive",
+        "friendly_name": "Tet Offensive",
+        "year": 1968,
+        "description": "North Vietnam's surprise attacks shocked Americans and turned public opinion against the war.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "battle-khe-sanh-begins",
+        "friendly_name": "Battle of Khe Sanh Begins",
+        "year": 1968,
+        "description": "One of the most publicized and controversial battles of the Vietnam War begins.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "biafra-capitulates",
+        "friendly_name": "Biafra Capitulates",
+        "year": 1970,
+        "description": "Biafra capitulates, ending the Nigerian Civil War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "rfk-assassination",
+        "friendly_name": "Robert Kennedy Assassinated",
+        "year": 1968,
+        "description": "Senator Robert F. Kennedy was shot after winning the California primary.",
+        "score": 1,
+        "shared": [
+          "california"
+        ]
+      },
+      {
+        "name": "kent-state-shootings",
+        "friendly_name": "Kent State Shootings",
+        "year": 1970,
+        "description": "Ohio National Guard killed four students during anti-Vietnam War protests at Kent State University.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "epa-created",
+        "friendly_name": "EPA Created",
+        "year": 1970,
+        "description": "Nixon established the Environmental Protection Agency to consolidate federal environmental regulation.",
+        "score": 1,
+        "shared": [
+          "nixon"
+        ]
+      },
+      {
+        "name": "black-september",
+        "friendly_name": "Black September",
+        "year": 1970,
+        "description": "Jordan expelled Palestinian militants after hijackings and civil war threatened the monarchy.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "hair-opens-broadway",
+        "friendly_name": "Hair Opens on Broadway",
+        "year": 1968,
+        "description": "A rock musical celebrating countercultural youth and protest against war transferred to Broadway, bringing rock music to the stage musical.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1974,
+    "title": "Gerald Ford Sworn In",
+    "candidates": [
+      {
+        "name": "watergate",
+        "friendly_name": "Nixon Resigns Over Watergate",
+        "year": 1974,
+        "description": "President Nixon resigned facing impeachment for the Watergate scandal.",
+        "score": 3,
+        "shared": [
+          "president",
+          "over",
+          "resigned"
+        ]
+      },
+      {
+        "name": "peron-becomes-worlds-first-president",
+        "friendly_name": "Peron Becomes a President",
+        "year": 1974,
+        "description": "Isabel Peron was sworn in as President of Argentina after her husband's death, the first woman to bear that title.",
+        "score": 3,
+        "shared": [
+          "sworn",
+          "president",
+          "after"
+        ]
+      },
+      {
+        "name": "chilean-coup",
+        "friendly_name": "Chilean Coup",
+        "year": 1973,
+        "description": "General Pinochet overthrew elected socialist President Salvador Allende with US support, beginning 17 years of military dictatorship.",
+        "score": 2,
+        "shared": [
+          "president",
+          "elected"
+        ]
+      },
+      {
+        "name": "indonesia-invades-east-timor",
+        "friendly_name": "Indonesia Invades East Timor",
+        "year": 1975,
+        "description": "Indonesian troops seized the former Portuguese colony days after it declared independence.",
+        "score": 2,
+        "shared": [
+          "declared",
+          "after"
+        ]
+      },
+      {
+        "name": "ethiopian-revolution",
+        "friendly_name": "Ethiopian Revolution",
+        "year": 1974,
+        "description": "A military junta overthrew Emperor Haile Selassie after 44 years of rule.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "hank-aaron-715th-home-run-1974",
+        "friendly_name": "Aaron Breaks Home Run Record",
+        "year": 1974,
+        "description": "Atlanta's Hank Aaron hit his 715th home run off Al Downing, surpassing Babe Ruth as baseball's career home run king.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "cambodian-genocide",
+        "friendly_name": "Khmer Rouge Genocide",
+        "year": 1975,
+        "year_end": 1979,
+        "description": "The Khmer Rouge regime killed well over a million Cambodians through execution, starvation and forced labour.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "uk-joins-eec",
+        "friendly_name": "UK Joins EEC",
+        "year": 1973,
+        "description": "United Kingdom joined the European Economic Community after two earlier applications were vetoed by France.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "home-automation",
+        "friendly_name": "Home Automation",
+        "year": 1975,
+        "description": "The X10 protocol enabled remote control of household devices over existing power lines.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "sydney-opera-house-completed",
+        "friendly_name": "Sydney Opera House Completed",
+        "year": 1973,
+        "description": "The iconic performing arts venue opened after 14 years of construction.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "bosphorus-bridge",
+        "friendly_name": "Bosphorus Bridge Opens",
+        "year": 1973,
+        "description": "Istanbul's first suspension bridge over the Bosphorus strait carried road traffic between Europe and Asia.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1977,
+    "title": "Jimmy Carter Inaugurated",
+    "candidates": [
+      {
+        "name": "hydrothermal-vents-discovered",
+        "friendly_name": "Hydrothermal Vents Discovered",
+        "year": 1977,
+        "description": "The submersible Alvin found hot vents on the Galapagos Rift crowded with life fed by chemistry rather than sunlight.",
+        "score": 2,
+        "shared": [
+          "rather",
+          "than"
+        ]
+      },
+      {
+        "name": "star-wars",
+        "friendly_name": "Star Wars Released",
+        "year": 1977,
+        "description": "George Lucas's space opera became a cultural phenomenon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "djibouti-independence",
+        "friendly_name": "Djibouti Independence",
+        "year": 1977,
+        "description": "Djibouti gained independence from France, becoming the last French colony in Africa to achieve sovereignty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tenerife-airport",
+        "friendly_name": "Tenerife Airport Disaster",
+        "year": 1977,
+        "description": "Two Boeing 747s collided, killing 583 in the deadliest aviation accident.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "voyager-1-launched",
+        "friendly_name": "Voyager 1 Launched",
+        "year": 1977,
+        "description": "NASA launched Voyager 1, now the farthest human-made object from Earth.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "atari-2600",
+        "friendly_name": "Atari 2600 Home Console Released",
+        "year": 1977,
+        "description": "Atari released the Video Computer System, popularizing home video gaming with interchangeable cartridges.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1981,
+    "title": "Reagan Takes the Oath",
+    "candidates": [
+      {
+        "name": "assassination-attempt-on-reagan",
+        "friendly_name": "Assassination Attempt on Reagan",
+        "year": 1981,
+        "description": "John Hinckley Jr. shot President Reagan outside a Washington hotel, seriously wounding him. Reagan recovered and served two full terms.",
+        "score": 1,
+        "shared": [
+          "reagan"
+        ]
+      },
+      {
+        "name": "trivial-pursuit-launched",
+        "friendly_name": "Trivial Pursuit Launched",
+        "year": 1981,
+        "description": "Two Canadians launched Trivial Pursuit, a board game of general-knowledge questions that became a sensation.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "oconnor-joins-supreme-court",
+        "friendly_name": "O'Connor Joins Supreme Court",
+        "year": 1981,
+        "description": "Sandra Day O'Connor was sworn in as a justice, becoming the first woman to serve on the United States Supreme Court.",
+        "score": 1,
+        "shared": [
+          "day"
+        ]
+      },
+      {
+        "name": "john-lennon-killed",
+        "friendly_name": "John Lennon Killed",
+        "year": 1980,
+        "description": "Former Beatle John Lennon was shot dead outside his New York apartment by Mark David Chapman, who remains imprisoned.",
+        "score": 1,
+        "shared": [
+          "former"
+        ]
+      },
+      {
+        "name": "zimbabwe-independence",
+        "friendly_name": "Zimbabwe Independence",
+        "year": 1980,
+        "description": "Rhodesia became independent Zimbabwe under Robert Mugabe, ending white minority rule.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "eric-heiden-five-golds-1980",
+        "friendly_name": "Eric Heiden's Five Golds",
+        "year": 1980,
+        "description": "American Eric Heiden won all five speed skating events at the Lake Placid Olympics, setting records in each.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "messner-solo-ascent-everest",
+        "friendly_name": "Messner's Solo Ascent of Everest",
+        "year": 1980,
+        "description": "Reinhold Messner became the first person to climb Everest completely alone and without supplemental oxygen.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "iran-hostage-crisis",
+        "friendly_name": "Iran Hostage Crisis",
+        "year": 1979,
+        "year_end": 1981,
+        "description": "Iranian revolutionaries seized the US Embassy in Tehran, holding 52 Americans hostage for 444 days and contributing to Carter's election defeat.",
+        "score": 1,
+        "shared": [
+          "tehran"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1989,
+    "title": "George H. W. Bush Inaugurated",
+    "candidates": [
+      {
+        "name": "german-reunification",
+        "friendly_name": "German Reunification",
+        "year": 1990,
+        "description": "East and West Germany united into a single nation after the fall of the Berlin Wall.",
+        "score": 1,
+        "shared": [
+          "nation"
+        ]
+      },
+      {
+        "name": "berlin-wall-fall",
+        "friendly_name": "Fall of the Berlin Wall",
+        "year": 1989,
+        "description": "East Germany opened its borders, symbolizing the end of the Cold War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tiananmen-square",
+        "friendly_name": "Tiananmen Square Massacre",
+        "year": 1989,
+        "description": "Chinese troops killed pro-democracy protesters in Beijing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "panama-invasion",
+        "friendly_name": "Panama Invasion",
+        "year": 1989,
+        "year_end": 1990,
+        "description": "US forces invaded Panama to depose dictator Manuel Noriega on drug trafficking charges, the largest American military operation since Vietnam.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ayatollah-khomeini-dies",
+        "friendly_name": "Ayatollah Khomeini Dies",
+        "year": 1989,
+        "description": "The leader of Iran's Islamic Revolution died, drawing millions of mourners to his funeral.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "velvet-revolution",
+        "friendly_name": "Velvet Revolution",
+        "year": 1989,
+        "description": "Peaceful protests ended communist rule in Czechoslovakia, bringing Vaclav Havel to power.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1993,
+    "title": "Bill Clinton Takes Office",
+    "candidates": [
+      {
+        "name": "genetically-modified-crop",
+        "friendly_name": "First GMO Crop Approved",
+        "year": 1994,
+        "description": "The Flavr Savr tomato became the first genetically modified food sold, opening debate over GM crops.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "oslo-accords",
+        "friendly_name": "Oslo Accords",
+        "year": 1993,
+        "description": "Israel and the PLO signed agreements toward Palestinian self-governance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "eritrea-independence",
+        "friendly_name": "Eritrea Independence",
+        "year": 1993,
+        "description": "Eritrea gained independence from Ethiopia after 30 years of armed struggle.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "waco-siege",
+        "friendly_name": "Waco Siege",
+        "year": 1993,
+        "description": "A federal siege of a religious compound ended in a fire killing 76 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mosaic-web-browser",
+        "friendly_name": "Mosaic Web Browser Released",
+        "year": 1993,
+        "description": "NCSA Mosaic launched as the first widely popular graphical web browser, making the Web accessible to ordinary users.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pdf-format-released",
+        "friendly_name": "PDF Format Released",
+        "year": 1993,
+        "description": "Adobe released the PDF, a portable format preserving documents identically across all devices.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2001,
+    "title": "George W. Bush Sworn In",
+    "candidates": [
+      {
+        "name": "putin-becomes-president",
+        "friendly_name": "Putin Becomes President",
+        "year": 2000,
+        "description": "Vladimir Putin was elected Russian President after serving as acting president, beginning his long rule.",
+        "score": 2,
+        "shared": [
+          "president",
+          "after"
+        ]
+      },
+      {
+        "name": "aes-encryption-standard",
+        "friendly_name": "AES Becomes The Standard",
+        "year": 2001,
+        "description": "Rijndael, a Belgian design, won an open international contest and became the cipher guarding government files and web traffic.",
+        "score": 1,
+        "shared": [
+          "contest"
+        ]
+      },
+      {
+        "name": "second-intifada",
+        "friendly_name": "Second Intifada Begins",
+        "year": 2000,
+        "description": "A more violent Palestinian uprising erupted after peace talks collapsed.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "concorde-crash",
+        "friendly_name": "Concorde Crash",
+        "year": 2000,
+        "description": "A supersonic airliner crashed after takeoff from Paris, killing 113 people.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "tate-modern",
+        "friendly_name": "Tate Modern Opens",
+        "year": 2000,
+        "description": "A former power station was converted into London's modern art museum.",
+        "score": 1,
+        "shared": [
+          "former"
+        ]
+      },
+      {
+        "name": "international-criminal-court-opens",
+        "friendly_name": "International Criminal Court Opens",
+        "year": 2002,
+        "description": "A permanent court opened in The Hague to prosecute genocide, war crimes, and crimes against humanity.",
+        "score": 1,
+        "shared": [
+          "court"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 2009,
+    "title": "Barack Obama Inaugurated",
+    "candidates": [
+      {
+        "name": "obama-inaugurated",
+        "friendly_name": "Obama Inaugurated",
+        "year": 2009,
+        "description": "Barack Obama became the first African American President of the United States.",
+        "score": 4,
+        "shared": [
+          "barack",
+          "obama",
+          "inaugurated",
+          "president"
+        ]
+      },
+      {
+        "name": "obama-elected",
+        "friendly_name": "Obama Elected President",
+        "year": 2008,
+        "description": "Barack Obama became the first Black president of the United States.",
+        "score": 4,
+        "shared": [
+          "barack",
+          "obama",
+          "black",
+          "president"
+        ]
+      },
+      {
+        "name": "global-financial-crisis",
+        "friendly_name": "Global Financial Crisis",
+        "year": 2008,
+        "description": "The collapse of Lehman Brothers triggered the worst financial crisis since the Great Depression.",
+        "score": 2,
+        "shared": [
+          "financial",
+          "crisis"
+        ]
+      },
+      {
+        "name": "beijing-national-stadium",
+        "friendly_name": "Bird's Nest Stadium Completed",
+        "year": 2008,
+        "description": "The iconic stadium was built for the Beijing Olympics.",
+        "score": 1,
+        "shared": [
+          "national"
+        ]
+      },
+      {
+        "name": "greek-debt-crisis",
+        "friendly_name": "Greek Debt Crisis",
+        "year": 2010,
+        "description": "Greece needed massive bailouts as its government debt threatened the stability of the entire eurozone.",
+        "score": 1,
+        "shared": [
+          "crisis"
+        ]
+      },
+      {
+        "name": "incandescent-bulb-phase-out",
+        "friendly_name": "Incandescent Bulbs Phased Out",
+        "year": 2007,
+        "year_end": 2014,
+        "description": "Australia announced a national ban on filament bulbs, and Europe and America soon legislated their own switch-off.",
+        "score": 1,
+        "shared": [
+          "national"
+        ]
+      }
+    ]
+  }
+]

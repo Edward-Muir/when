@@ -1,0 +1,15 @@
+{
+  "slug": "truman-sworn-in",
+  "description": "A dim, dark-wood panelled room with a long polished table holding a closed book, two inkwells with pens, and scattered papers. A mantel with a clock and small ornaments sits over an unlit fireplace, and a framed portrait of a man in a dark 18th-century-style coat hangs above it. Leather chairs are pushed back around the table. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

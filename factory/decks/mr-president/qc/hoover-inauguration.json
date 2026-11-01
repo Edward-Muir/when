@@ -1,0 +1,15 @@
+{
+  "slug": "hoover-inauguration",
+  "description": "A painting in dark, heavy oil style. In the foreground at right, a black vintage ticker or adding machine with a rounded top spills long white paper tape that curls and loops onto a wooden surface. Behind it, a crowd of people holding black umbrellas stands in heavy rain. On the left, a draped stand with red, white and blue bunting is empty. In the background a domed white capitol building with a columned facade sits under a stormy grey sky.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
