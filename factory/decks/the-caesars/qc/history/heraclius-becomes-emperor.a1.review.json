@@ -1,0 +1,15 @@
+{
+  "slug": "heraclius-becomes-emperor",
+  "description": "A bearded man with dark wavy hair, in scale armour with gold trim and a red cloak, stands at the carved wooden prow of a boat holding a sword. Behind him on the left is a gold-framed icon of a Madonna and child with Greek letters on it, and a crowd of helmeted men. On the right a fleet of sailing galleys moves over dark stormy water toward a walled city with domed towers under a grey sky. The style is oil painting.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Greek letters ('MP' and 'ΘΥ') are painted on the icon at the upper left. Repaint or crop the icon so no lettering is visible."
+}

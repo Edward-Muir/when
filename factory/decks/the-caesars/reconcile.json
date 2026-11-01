@@ -1,0 +1,264 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "roman-empire-founded",
+      "why": "Same accession event in the same year (-27)."
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "tiberius-succeeds-augustus",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 2,
+      "decision": "reuse",
+      "slug": "reign-of-caligula",
+      "why": "Same accession event in the same year (37)."
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "claudius-raised-by-praetorians",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "nero-becomes-emperor",
+      "why": "Same accession event in the same year (54)."
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "vespasian-proclaimed-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "titus-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 7,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Domitian."
+    },
+    {
+      "beat": 8,
+      "decision": "reuse",
+      "slug": "five-good-emperors-era-begins",
+      "why": "Same accession event in the same year (96)."
+    },
+    {
+      "beat": 9,
+      "decision": "reuse",
+      "slug": "trajan-becomes-emperor",
+      "why": "Same accession event in the same year (98)."
+    },
+    {
+      "beat": 10,
+      "decision": "reuse",
+      "slug": "hadrian-becomes-emperor",
+      "why": "Same accession event in the same year (117)."
+    },
+    {
+      "beat": 11,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Antoninus Pius."
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "marcus-aurelius-emperor",
+      "why": "Same accession event in the same year (161)."
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "commodus-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "septimius-severus-seizes-throne",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "caracalla-sole-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "elagabalus-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 17,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Maximinus Thrax."
+    },
+    {
+      "beat": 18,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Philip the Arab."
+    },
+    {
+      "beat": 19,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Decius."
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "aurelian-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "diocletian-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "constantine-hailed-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "julian-apostate-sole-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "theodosius-i-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Theodosius II."
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "romulus-augustulus-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 27,
+      "decision": "reuse",
+      "slug": "justinian-becomes-emperor",
+      "why": "Same accession event in the same year (527)."
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "heraclius-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "leo-iii-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "irene-sole-ruler-byzantium",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "basil-i-founds-macedonian-dynasty",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 32,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Constantine VII."
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Nikephoros II."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "basil-ii-becomes-emperor",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "alexios-komnenos-seizes-power",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 36,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: John II."
+    },
+    {
+      "beat": 37,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Manuel I (same year as the existing Portugal card)."
+    },
+    {
+      "beat": 38,
+      "decision": "new",
+      "slug": "michael-viii-palaiologos-crowned",
+      "why": "No catalogue card for this accession."
+    },
+    {
+      "beat": 39,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut for density and fame: Manuel II."
+    },
+    {
+      "beat": 40,
+      "decision": "new",
+      "slug": "constantine-xi-last-emperor",
+      "why": "No catalogue card for this accession."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 2/8               (advisory, 6+ is spread)\n  PASS  band 0 21              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in 37-41    (want 3 or fewer in any 10 years)\n  PASS  shared 2 (rome)        (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 50 earlier themes:\n        2  rome                   roman-empire-founded, justinian-becomes-emperor",
+  "footholds": [
+    "roman-empire-founded",
+    "reign-of-caligula",
+    "nero-becomes-emperor",
+    "five-good-emperors-era-begins",
+    "trajan-becomes-emperor",
+    "hadrian-becomes-emperor",
+    "marcus-aurelius-emperor",
+    "justinian-becomes-emperor",
+    "commodus-becomes-emperor",
+    "constantine-hailed-emperor"
+  ]
+}

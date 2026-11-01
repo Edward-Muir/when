@@ -1,0 +1,15 @@
+{
+  "slug": "constantine-xi-last-emperor",
+  "description": "A bearded man in a jeweled crown, a dark cloak over a red and gold robe with double-headed eagles, and a sword in his hand, stands on a crumbling brick wall. Behind him a dusky city of domes, towers and smoke spreads under a grey sky, with a large domed church and tall slender spires on the right. The painting fills the frame edge to edge, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The figure, red and gold double-eagle robes, crown and ruined land walls fit Constantine XI in 1449. The tall slender spires beside the domed church on the right could read as Ottoman minarets, which were not on the Hagia Sophia until after 1453, so the era fit is doubtful. Check whether those spires are minarets and, if so, repaint the skyline without them."
+}

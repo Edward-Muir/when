@@ -1,0 +1,40 @@
+{
+  "id": "the-caesars",
+  "name": "The Caesars",
+  "scope": "Yes if it is a Roman or Byzantine emperor coming to the throne",
+  "boundary": "The Caesars owns each emperor's accession; every other moment of the Roman state stays in The Roman Story.",
+  "neighbours": [
+    "rome"
+  ],
+  "grid": {
+    "categories": [
+      "empires",
+      "figures"
+    ],
+    "eras": [
+      "ancient",
+      "medieval"
+    ],
+    "regions": [
+      "Europe",
+      "Middle East & North Africa"
+    ]
+  },
+  "example_beats": [
+    "Augustus becomes emperor (27 BC)",
+    "Caligula (37)",
+    "Nero (54)",
+    "Vespasian ends the Year of Four Emperors (69)",
+    "Trajan (98)",
+    "Hadrian (117)",
+    "Marcus Aurelius (161)",
+    "Diocletian (284)",
+    "Constantine the Great (306)",
+    "Justinian (527)",
+    "Basil II (976)",
+    "Constantine XI, the last emperor (1449)"
+  ],
+  "notes": "One beat per emperor, dated to his accession, from Augustus to the fall of Constantinople. Prefer the famous, and give Byzantium its share.",
+  "appeal": 3,
+  "status": "authoring"
+}
