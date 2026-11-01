@@ -1,0 +1,192 @@
+{
+  "deck": "black-gold",
+  "name": "Black Gold",
+  "stage": "pr-open",
+  "created_at": "2026-10-28T09:20:09.661Z",
+  "updated_at": "2026-10-28T16:08:49.843Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-28T09:20:09.661Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-28T10:08:48.844Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-28T15:07:33.245Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-28T16:07:01.027Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-28T16:08:49.843Z"
+    }
+  ],
+  "slugs": {
+    "fredonia-natural-gas-well": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9631e8d6f3c6685c5bf9f85dc8b2adaa91b7c93e2a977a2c2f541553f6bf5c04",
+      "updated_at": "2026-10-28T11:07:47.578Z"
+    },
+    "baku-first-mechanical-oil-well": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f4576417d30c5881377b77ab465959964260db10372af1b8ae498f31239e8da8",
+      "updated_at": "2026-10-28T11:07:47.612Z"
+    },
+    "drake-well-titusville": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3092d5aaa70d8e84ca7d5efdeaa8d9d9669c27fd4074fa7ae3db19a2d30ff47f",
+      "updated_at": "2026-10-28T11:07:47.643Z"
+    },
+    "first-oil-pipeline-pithole": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5ec23cf02a8ca848d0257102f8a95c79962751882acbad394ddf0594b2d2e36c",
+      "updated_at": "2026-10-28T11:07:47.674Z"
+    },
+    "gluckauf-first-modern-tanker": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a6aba640b56903ad535355ff31be0263c824514b3931e154aabfb0797c709792",
+      "updated_at": "2026-10-28T11:07:47.705Z"
+    },
+    "spindletop-gusher": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "288229e5a74e530567e09475d1ce43c2bdd3385719bc06df7da4e70cd3a14d7c",
+      "updated_at": "2026-10-28T11:07:47.736Z"
+    },
+    "persia-oil-discovery-masjed-soleiman": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8b86e2ccfe36c0de24dc5257e0c9f0dcaaef21a62f481380fad46192afff09b6",
+      "updated_at": "2026-10-28T11:07:47.769Z"
+    },
+    "standard-oil-breakup": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0dcbf90165664d4e889c9972b076c181a846a56d60d1197af8f6b0be6ae45c8a",
+      "updated_at": "2026-10-28T11:07:47.808Z"
+    },
+    "teapot-dome-oil-leases": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7d3c690c988c4aab4e5b7121ecd726f4af36d7f1180c755138bc281ca0f0279c",
+      "updated_at": "2026-10-28T11:07:47.845Z"
+    },
+    "baba-gurgur-gusher-iraq": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "261691facec7973a20a98c547baaec6f0e2b0fca751429a69ce3734031bd5c94",
+      "updated_at": "2026-10-28T11:07:47.880Z"
+    },
+    "east-texas-oil-field-discovery": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e2ddf3346536a71558add79537c5a4e8fe243258f79a5a08338a1f78f1937933",
+      "updated_at": "2026-10-28T13:07:44.230Z"
+    },
+    "bahrain-first-gulf-oil-strike": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b9792049aa1ecc92709e6e6b520fcf1f3a72cca9be614d17c50f9f20dc94b1eb",
+      "updated_at": "2026-10-28T13:07:44.265Z"
+    },
+    "first-offshore-well-out-of-sight-of-land": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2c3013f9156e1c817f0dd6c261d63dab38656dfff5d19fda0ff24250a8e09460",
+      "updated_at": "2026-10-28T13:07:44.295Z"
+    },
+    "iran-nationalizes-oil-industry": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5d054eadedbbd923de5865b217cf55ace9b76e878f2acbe4927a585532f7ccbd",
+      "updated_at": "2026-10-28T13:07:44.325Z"
+    },
+    "groningen-gas-field-discovery": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "753f34ca7788389d3f6fcdd2ebc7f9d51a0fb13b363af7a859a0aada5bd01299",
+      "updated_at": "2026-10-28T15:07:32.977Z"
+    },
+    "trans-alaska-pipeline-first-oil": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "feb502278f476829c85d78aaf3e6f72e874c85ab9fdffdc0f720a97af85670bc",
+      "updated_at": "2026-10-28T15:07:33.010Z"
+    },
+    "iranian-revolution-oil-shock": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2dc16addc5657891aadd14cf96e5dd14ce422798c82bbecbb8eff70162c89750",
+      "updated_at": "2026-10-28T15:07:33.041Z"
+    },
+    "oil-price-collapse-glut": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ca62d3b6c797075af307ec410e76a158a99906e15dde41583c1c9e6398cbc11c",
+      "updated_at": "2026-10-28T15:07:33.071Z"
+    },
+    "kuwait-oil-fires": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b22b11b20c602166e6bafba71d5ff8657c780470062def41f347828fd61e4e36",
+      "updated_at": "2026-10-28T15:07:33.101Z"
+    },
+    "exxon-mobil-merger": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3bd67d177311d76a978eaffa48bbed31892a3fc7c75a2cffeee5e8323d6d4617",
+      "updated_at": "2026-10-28T15:07:33.135Z"
+    },
+    "record-crude-oil-price-peak": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4ccde37bac9854dab85afc322e80fac96e8851a098e9b3459b432acfb45f7360",
+      "updated_at": "2026-10-28T15:07:33.174Z"
+    },
+    "saudi-aramco-ipo": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a87e48d661f7d2f63fa0393730fdbdf48b8a7be1992a4191c24c7658efe7ff47",
+      "updated_at": "2026-10-28T15:07:33.210Z"
+    },
+    "oil-price-negative-wti": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ca6b9cbaa7b352cee509ec457513e412b0691b28acfabb7ee7f81f6ffcade69f",
+      "updated_at": "2026-10-28T15:07:33.245Z"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "oil-price-negative-wti",
+  "description": "A dark, moody oil-style painting of many identical cylindrical metal storage tanks with domed lids, arranged in rows across a flat plain. A two-lane road with dashed centre lines runs diagonally through the lower half, and a large tank sits in the bottom-right corner. The sky is heavy, dark clouds with a faint glow on the horizon. There is no visible text, frame or border, and nothing violent or nude. The era is industrial and roughly modern, with no clear dated cues.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "trans-alaska-pipeline-first-oil",
+  "description": "A large silver metal pipeline zigzags across a brown tundra on raised vertical supports, with snow-capped mountains behind it under a dark, cloudy sky. A herd of caribou walks beneath the pipe on the left, and patches of snow lie on the ground. The style is a thick, painterly oil look. No text, frame or people are visible, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
