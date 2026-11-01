@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:31:29.719Z",
+  "updated_at": "2026-11-01T02:07:32.184Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "mahavira-born-jain-teacher": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The ascetic is shown fully nude and frontal, with pubic hair and genitals visible at the centre of the frame. Repaint with the lower body covered or turned away, for example in a loincloth or seen from behind or the side, keeping the tree, the discarded robe and the adult standing pose.",
       "sha256": "142b574c5a366d0f0b062731aa4efb823189fe1785ee72da671787aee9c66ee8",
-      "updated_at": "2026-11-01T01:09:02.043Z"
+      "updated_at": "2026-11-01T02:07:31.887Z"
     },
     "tao-te-ching-written": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f4acf65d086fc3adcfe3e3857e9d7cbad7ee89dc1659c3cf9af5e7b88cc9e088",
-      "updated_at": "2026-11-01T01:11:31.904Z"
+      "updated_at": "2026-11-01T02:07:31.919Z"
     },
     "ashoka-converts-after-kalinga": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "75b408faeaec7a0f93fe43db9bc8c5fa9f20a33924f50e5d3150c30b6508e2bd",
-      "updated_at": "2026-11-01T01:14:00.802Z"
+      "updated_at": "2026-11-01T02:07:31.950Z"
     },
     "celestial-masters-founded": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3f3d44c059dd6e90456461dc9ccff4817f652bb29b74f997ad5e898d2ef5055a",
-      "updated_at": "2026-11-01T01:16:29.475Z"
+      "updated_at": "2026-11-01T02:07:31.980Z"
     },
     "kojiki-records-shinto-myths": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "11974b1ed5d513bacee4fa41a8e9b36b6c0666c5a8be240bdb7b5613162ff4e9",
-      "updated_at": "2026-11-01T01:18:58.164Z"
+      "updated_at": "2026-11-01T02:07:32.009Z"
     },
     "adi-shankara-born": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ce2d2c4013387398cc37c53c02585d06da2ca8e00bee581150cafa489ca4714c",
-      "updated_at": "2026-11-01T01:21:27.514Z"
+      "updated_at": "2026-11-01T02:07:32.040Z"
     },
     "nichiren-declares-teaching": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5c1d08d58bdcd099ac834d908a761f45eaf87bd0c8657fb7a4b11c20c92a2899",
-      "updated_at": "2026-11-01T01:23:57.168Z"
+      "updated_at": "2026-11-01T02:07:32.076Z"
     },
     "tsongkhapa-founds-ganden": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e883fdbf669bd54b5ab4465f4ef5e78d6dbcb3197f19e48153348b4c6741d278",
-      "updated_at": "2026-11-01T01:26:27.317Z"
+      "updated_at": "2026-11-01T02:07:32.113Z"
     },
     "guru-nanak-born": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ad5d6b8e94167ff0530721a8c2feb488d2bc6865b5f6cbda79d33a6768c4002d",
-      "updated_at": "2026-11-01T01:28:58.706Z"
+      "updated_at": "2026-11-01T02:07:32.150Z"
     },
     "dalai-lama-title-created": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e6ef02e2b9eeaef31c7e6d38fe7ef23a99eeac6758d57d59c3525c224f84f18f",
-      "updated_at": "2026-11-01T01:31:29.719Z"
+      "updated_at": "2026-11-01T02:07:32.184Z"
     },
     "guru-granth-sahib-compiled": {
       "state": "pending",
