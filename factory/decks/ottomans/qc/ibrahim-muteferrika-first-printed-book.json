@@ -1,0 +1,15 @@
+{
+  "slug": "ibrahim-muteferrika-first-printed-book",
+  "description": "A bearded man in a black robe and dark wrapped turban leans into a long wooden lever on a screw printing press in a dim workshop. A glowing oil lamp sits on the right, and ink pots and stacked paper lie on a table at left. Sheets of paper hang on cords across the top, covered in rows of small dark marks that look like script. The painting is a warm, dark oil style and fills the whole image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The hanging sheets are covered in dense rows of Arabic-like script. The scene asked for sheets with no legible script, and the script-like marks could read as painted-in text. Regenerate or paint the sheets blank or as abstract texture."
+}
