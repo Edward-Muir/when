@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:14:52.565Z",
+  "updated_at": "2026-11-01T21:17:31.259Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-01T21:14:52.565Z"
     },
     "kodak-brownie-camera": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7ecbca504079764e7efca7dca4c584adf655d7ce9d17422350af5b6ee4bfb674",
+      "updated_at": "2026-11-01T21:17:31.259Z"
     },
     "thermos-vacuum-flask": {
       "state": "pending",
