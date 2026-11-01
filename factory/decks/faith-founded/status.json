@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T15:08:59.159Z",
+  "updated_at": "2026-11-01T15:11:34.703Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-01T15:08:59.159Z"
     },
     "mani-founds-manichaeism": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2af83a225fb344928905327c98c2df0d222585315bc772b4880128efcb74f1ec",
+      "updated_at": "2026-11-01T15:11:34.703Z"
     },
     "anan-founds-karaite-judaism": {
       "state": "pending",
