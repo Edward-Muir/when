@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:23:57.168Z",
+  "updated_at": "2026-11-01T01:26:27.317Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-01T01:23:57.168Z"
     },
     "tsongkhapa-founds-ganden": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e883fdbf669bd54b5ab4465f4ef5e78d6dbcb3197f19e48153348b4c6741d278",
+      "updated_at": "2026-11-01T01:26:27.317Z"
     },
     "guru-nanak-born": {
       "state": "pending",
