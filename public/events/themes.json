@@ -12868,7 +12868,11 @@
     "year": 30,
     "category": "figures",
     "description": "Followers of a crucified Galilean teacher gathered in Jerusalem and began preaching his resurrection, starting a new movement.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "mani-founds-manichaeism",
@@ -12876,7 +12880,10 @@
     "year": 240,
     "category": "figures",
     "description": "A Persian prophet announced a revelation from a divine twin and founded a dualist faith that spread across Eurasia.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "anan-founds-karaite-judaism",
@@ -12884,7 +12891,10 @@
     "year": 767,
     "category": "figures",
     "description": "A Babylonian scholar rejected the oral law and urged Jews to base their faith on scripture alone.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "druze-faith-emerges",
@@ -12892,7 +12902,10 @@
     "year": 1017,
     "category": "figures",
     "description": "Preachers in Cairo proclaimed a new doctrine around the Fatimid ruler, founding a secretive faith still practised in the Levant.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "bruno-founds-carthusians",
@@ -12900,7 +12913,10 @@
     "year": 1084,
     "category": "figures",
     "description": "A German-born scholar and six companions built a hermitage in the Alps, starting an order of silent contemplatives.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "cistercians-founded-citeaux",
@@ -12908,7 +12924,10 @@
     "year": 1098,
     "category": "figures",
     "description": "Monks left a wealthy abbey to follow the Benedictine rule more strictly in a Burgundian marsh, founding a new order.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "knights-templar-founded",
@@ -12916,7 +12935,11 @@
     "year": 1119,
     "category": "warfare",
     "description": "A French knight and a few companions vowed to protect pilgrims in the Holy Land, forming a famed military order.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "peter-waldo-waldensians",
@@ -12924,7 +12947,10 @@
     "year": 1173,
     "category": "figures",
     "description": "A wealthy Lyon merchant gave up his goods to preach in poverty, inspiring a lay movement later condemned as heretical.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "dominic-founds-dominicans",
@@ -12932,7 +12958,11 @@
     "year": 1216,
     "category": "figures",
     "description": "A Castilian priest won approval for an order of preaching friars devoted to teaching and countering heresy.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France",
+      "Italy"
+    ]
   },
   {
     "name": "smyth-founds-first-baptists",
@@ -12940,7 +12970,10 @@
     "year": 1609,
     "category": "figures",
     "description": "English exiles in Amsterdam baptised themselves as believers, forming the first congregation of its kind.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Netherlands"
+    ]
   },
   {
     "name": "ammann-founds-amish",
@@ -12948,7 +12981,10 @@
     "year": 1693,
     "category": "figures",
     "description": "A Swiss Anabaptist elder broke from the Mennonites over strict shunning and plain living.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "wesley-heart-strangely-warmed",
@@ -12956,7 +12992,10 @@
     "year": 1738,
     "category": "figures",
     "description": "At a London meeting an Anglican priest felt assurance of salvation, igniting the Methodist movement.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "ann-lee-shakers-america",
@@ -12964,7 +13003,11 @@
     "year": 1774,
     "category": "migration",
     "description": "An English preacher led a small band across the Atlantic to found a celibate communal sect in New York.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "smith-founds-church-of-christ",
@@ -12972,7 +13015,10 @@
     "year": 1830,
     "category": "figures",
     "description": "A New York farmer who published a new scripture organised a church that became the Latter-day Saints.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "eddy-charters-christian-science",
@@ -12980,7 +13026,10 @@
     "year": 1879,
     "category": "figures",
     "description": "A New England author who taught that illness yields to prayer chartered her own church in Boston.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "azusa-street-revival",
@@ -12988,7 +13037,10 @@
     "year": 1906,
     "category": "revolution",
     "description": "Prayer meetings in a Los Angeles mission, marked by speaking in tongues, launched a global movement.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rastafari-begins-coronation",
@@ -12996,7 +13048,11 @@
     "year": 1930,
     "category": "figures",
     "description": "The crowning of an Ethiopian emperor was hailed by Jamaican preachers as the fulfilment of prophecy, launching a new faith.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Ethiopia",
+      "Jamaica"
+    ]
   },
   {
     "name": "missionaries-of-charity-founded",
@@ -13004,7 +13060,10 @@
     "year": 1950,
     "category": "figures",
     "description": "A nun in Calcutta won approval for a new congregation to serve the poorest of the poor.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "lavey-founds-church-of-satan",
@@ -13012,6 +13071,9 @@
     "year": 1966,
     "category": "figures",
     "description": "A San Francisco showman proclaimed a new year and an atheistic religion built on indulgence and individualism.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
