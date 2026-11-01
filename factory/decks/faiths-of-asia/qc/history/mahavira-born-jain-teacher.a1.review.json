@@ -1,0 +1,15 @@
+{
+  "slug": "mahavira-born-jain-teacher",
+  "description": "A standing, emaciated, fully nude man with long matted dreadlocks and closed eyes, barefoot in a dim forest before a large banyan-like tree with hanging aerial roots. A golden embroidered cloth lies folded on the ground at his feet. Dark muted oil-painting palette, no visible text, no frame; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The figure is fully nude with genitals visible in the centre of the frame, which breaks the no-nudity rule. The scene itself (a lean ascetic beneath a tree with a discarded robe) matches the card. The artist should repaint with the figure's lower body covered, for example by a loincloth or by moving the figure and cloth so that nudity is not shown, while keeping the tree, the discarded robe and the adult ascetic pose."
+}

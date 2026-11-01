@@ -1,0 +1,15 @@
+{
+  "slug": "dalai-lama-nobel-peace-prize",
+  "description": "A dark painted interior of a columned hall with hanging banners and a wooden table at the centre. A white fringed patterned scarf lies on the table with a gold medal showing a profile portrait and the legible word NOBEL around its rim. No people, no frame, nothing violent.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The gold medal has legible lettering reading NOBEL on its face. Repaint the medal with no inscription, or turned so no letters show."
+}

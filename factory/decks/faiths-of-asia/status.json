@@ -1,0 +1,157 @@
+{
+  "deck": "faiths-of-asia",
+  "name": "Faiths of Asia",
+  "stage": "pr-open",
+  "created_at": "2026-11-01T00:17:00.242Z",
+  "updated_at": "2026-11-01T07:08:41.030Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-01T00:17:00.242Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T01:09:02.043Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-01T06:06:48.573Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-01T07:06:47.627Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-01T07:08:41.030Z"
+    }
+  ],
+  "slugs": {
+    "mahavira-born-jain-teacher": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "bc6fe0355ee1af03649b025e25f6051951890721b5c960bd16c281da5d796fbb",
+      "updated_at": "2026-11-01T04:07:48.638Z"
+    },
+    "tao-te-ching-written": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f4acf65d086fc3adcfe3e3857e9d7cbad7ee89dc1659c3cf9af5e7b88cc9e088",
+      "updated_at": "2026-11-01T02:07:31.919Z"
+    },
+    "ashoka-converts-after-kalinga": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "75b408faeaec7a0f93fe43db9bc8c5fa9f20a33924f50e5d3150c30b6508e2bd",
+      "updated_at": "2026-11-01T02:07:31.950Z"
+    },
+    "celestial-masters-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3f3d44c059dd6e90456461dc9ccff4817f652bb29b74f997ad5e898d2ef5055a",
+      "updated_at": "2026-11-01T02:07:31.980Z"
+    },
+    "kojiki-records-shinto-myths": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "11974b1ed5d513bacee4fa41a8e9b36b6c0666c5a8be240bdb7b5613162ff4e9",
+      "updated_at": "2026-11-01T02:07:32.009Z"
+    },
+    "adi-shankara-born": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ce2d2c4013387398cc37c53c02585d06da2ca8e00bee581150cafa489ca4714c",
+      "updated_at": "2026-11-01T02:07:32.040Z"
+    },
+    "nichiren-declares-teaching": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5c1d08d58bdcd099ac834d908a761f45eaf87bd0c8657fb7a4b11c20c92a2899",
+      "updated_at": "2026-11-01T02:07:32.076Z"
+    },
+    "tsongkhapa-founds-ganden": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e883fdbf669bd54b5ab4465f4ef5e78d6dbcb3197f19e48153348b4c6741d278",
+      "updated_at": "2026-11-01T02:07:32.113Z"
+    },
+    "guru-nanak-born": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ad5d6b8e94167ff0530721a8c2feb488d2bc6865b5f6cbda79d33a6768c4002d",
+      "updated_at": "2026-11-01T02:07:32.150Z"
+    },
+    "dalai-lama-title-created": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e6ef02e2b9eeaef31c7e6d38fe7ef23a99eeac6758d57d59c3525c224f84f18f",
+      "updated_at": "2026-11-01T02:07:32.184Z"
+    },
+    "guru-granth-sahib-compiled": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5d1643647fafa403f0770d771dc6c17c4c3c91c373c15a9eb23e51267948bc77",
+      "updated_at": "2026-11-01T04:07:48.670Z"
+    },
+    "shinto-buddhism-separation-order": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "48dc1129a43fd8a2c05fdb1375fe4ca6dfda1666f28d966a4ca83bf610d8ad13",
+      "updated_at": "2026-11-01T04:07:48.701Z"
+    },
+    "vivekananda-chicago-address": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "49ac5530ec2e6e168bb46122e9912a02c95e8dee39ff03a7ac576f2de092c31e",
+      "updated_at": "2026-11-01T04:07:48.731Z"
+    },
+    "ambedkar-converts-to-buddhism": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8a208341eff577fc394c62ec184d3d31a17ad700a31309924728413bdb2e7bf0",
+      "updated_at": "2026-11-01T04:07:48.761Z"
+    },
+    "hare-krishna-movement-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fa71cad4cd5c5b587ed15e4de502455e54e9658e6382c42e8391b411aed45acc",
+      "updated_at": "2026-11-01T04:07:48.796Z"
+    },
+    "beatles-study-meditation-india": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "559e1edd7f259e695f59b67979429ef1adcbaf47c35b69f329f3b802d1b30eb6",
+      "updated_at": "2026-11-01T04:07:48.831Z"
+    },
+    "dalai-lama-nobel-peace-prize": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "4f9e2ad2b06fd6958fdf0e8f604d9c5ded7caa1430700df7a3aadf6ae20f597b",
+      "updated_at": "2026-11-01T06:06:48.573Z"
+    },
+    "bamiyan-buddhas-destroyed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d33b0186fbf342f0f0733a0665a2036834667bd9a7628c106ea3cec17dcdba57",
+      "updated_at": "2026-11-01T04:07:48.905Z"
+    }
+  }
+}
