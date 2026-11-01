@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:28:12.618Z",
+  "updated_at": "2026-11-01T21:30:49.067Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-01T21:28:12.618Z"
     },
     "kodak-instamatic-camera": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "190bc6e0ccca0acf495f84ecb5bd0dd4720b2ff7ad62acf059a5da44c010a7ad",
+      "updated_at": "2026-11-01T21:30:49.067Z"
     },
     "hp-35-pocket-calculator": {
       "state": "pending",
