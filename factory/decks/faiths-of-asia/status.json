@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:14:00.802Z",
+  "updated_at": "2026-11-01T01:16:29.475Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-01T01:14:00.802Z"
     },
     "celestial-masters-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3f3d44c059dd6e90456461dc9ccff4817f652bb29b74f997ad5e898d2ef5055a",
+      "updated_at": "2026-11-01T01:16:29.475Z"
     },
     "kojiki-records-shinto-myths": {
       "state": "pending",
