@@ -1,0 +1,15 @@
+{
+  "slug": "rastafari-begins-coronation",
+  "description": "A gold, jewelled crown with a cross on top and a silver orb-topped sceptre lie on a red and gold embroidered velvet cushion on a draped table. Behind them is a dim church interior with arches, icon panels, a lit candle and drifting smoke. No people are visible. The painting fills the frame edge to edge, with no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

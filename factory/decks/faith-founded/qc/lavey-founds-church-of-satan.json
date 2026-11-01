@@ -1,0 +1,15 @@
+{
+  "slug": "lavey-founds-church-of-satan",
+  "description": "A dark, moonlit painting of a tall Victorian wooden house with gabled roofs and ornate trim on a foggy street. A single upper bay window glows orange, and inside it a small horned face or mask sits between two candles. Utility poles and wires line the right side, and a dim street lamp glows in the distance. No people are visible, and the scene has no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
