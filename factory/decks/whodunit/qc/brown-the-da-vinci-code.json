@@ -1,0 +1,15 @@
+{
+  "slug": "brown-the-da-vinci-code",
+  "description": "A glass pyramid with a lit interior rises in the middle of a stone courtyard at night, flanked by classical stone building wings with lit windows. The pavement is wet and reflects the lights, and the sky is dark and stormy. There are no people, no visible text, and no frame. The style is a painterly, dark-toned digital painting.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

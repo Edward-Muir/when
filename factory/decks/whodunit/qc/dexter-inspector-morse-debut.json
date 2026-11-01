@@ -1,0 +1,15 @@
+{
+  "slug": "dexter-inspector-morse-debut",
+  "description": "A black vintage saloon car, with a chrome grille and bumper, sits on a wet cobbled street at dusk. Behind it are grey stone buildings with a gothic spire, a domed rotunda and lit lamp posts. On the right, a pub doorway glows warm, and a small hanging sign has no legible text. The scene is painted in a moody, textured oil style, and there are no people.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

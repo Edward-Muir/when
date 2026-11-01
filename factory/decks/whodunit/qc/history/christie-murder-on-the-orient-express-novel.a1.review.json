@@ -1,0 +1,15 @@
+{
+  "slug": "christie-murder-on-the-orient-express-novel",
+  "description": "A black steam locomotive with a dark blue passenger carriage stands in deep snow at night in a mountain valley. One carriage has a lit window, and smoke and steam rise from the engine. Pine trees are snow-covered, and the sky has stars and clouds. The painting is an oil-style image with no visible frame or figures. A faint mark on the carriage side may be lettering, but it is too small to read.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A small painted mark on the blue carriage side may be lettering. It is too small to read at this size. Check it at full resolution; if it is a legible name or sign, the card needs a repaint."
+}

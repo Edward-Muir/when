@@ -1,0 +1,15 @@
+{
+  "slug": "christie-poirot-debut-styles",
+  "description": "A man in a dark three-piece suit with a thin waxed moustache leans over a bedside table holding a lit brass candlestick, a small brown medicine bottle, a teacup on a saucer, and a book. He holds a magnifying glass over the cup. A bed with pillows and dark drapes fills the background. A dark reddish splash sits on the table beside the saucer.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "unsure",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The dark red splash on the table beside the saucer could read as blood, and it is not clearly spilled liquid. Repaint it as an obvious spill or remove it so it cannot be mistaken for a wound."
+}

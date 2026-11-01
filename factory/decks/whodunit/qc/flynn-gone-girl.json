@@ -1,0 +1,15 @@
+{
+  "slug": "flynn-gone-girl",
+  "description": "A dim, realistic oil-style painting of a large living room at dusk. A glass coffee table is shattered, with shards scattered across a patterned rug. A large dark suitcase or trunk lies on its side near the table, and a cream envelope with cursive handwriting sits on the rug in front of it. Dark leather sofas, bookshelves, a kitchen and tall windows showing bare trees fill the room. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The cream envelope on the rug has visible cursive handwriting, which is letters painted into the image. It is illegible, but it is still writing, so the no_text check needs a human call."
+}

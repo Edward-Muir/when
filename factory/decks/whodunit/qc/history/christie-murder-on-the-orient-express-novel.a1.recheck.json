@@ -1,0 +1,15 @@
+{
+  "slug": "christie-murder-on-the-orient-express-novel",
+  "description": "A black steam locomotive pulling dark blue passenger carriages through deep snow at night in a mountain valley, smoke rising, one carriage window lit gold. Snowy pines, peaks and a starry cloudy sky; oil-paint style, edge to edge, no figures. Painted lettering in a band on the carriage side reads roughly like a railway company name, plus smaller marks below it.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted lettering runs along the blue carriage side, looking like a company name with smaller marks beneath. Repaint the carriage with plain panels and no lettering or plaques."
+}

@@ -1,0 +1,246 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope: a philosophical tale, not a crime or detective novel"
+    },
+    {
+      "beat": 1,
+      "decision": "cut",
+      "slug": null,
+      "why": "early crime novel, obscure; trimmed for spacing"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "poe-murders-rue-morgue",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": null,
+      "why": "adjacent to Rue Morgue a year apart; same sleuth"
+    },
+    {
+      "beat": 4,
+      "decision": "new",
+      "slug": "dickens-bleak-house-inspector-bucket",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "collins-woman-in-white",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 6,
+      "decision": "cut",
+      "slug": null,
+      "why": "obscure; beside The Moonstone"
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "collins-the-moonstone",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 8,
+      "decision": "cut",
+      "slug": null,
+      "why": "obscure; crowded run of 1870s-80s"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "doyle-study-in-scarlet-holmes",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "holmes-strand-scandal-in-bohemia",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "doyle-hound-of-the-baskervilles",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "leroux-mystery-of-the-yellow-room",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "chesterton-father-brown-debut",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": null,
+      "why": "obscure, thins early-1900s"
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "christie-poirot-debut-styles",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "sayers-lord-peter-wimsey-debut",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 17,
+      "decision": "new",
+      "slug": "christie-murder-of-roger-ackroyd",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "hammett-the-maltese-falcon",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "christie-murder-on-the-orient-express-novel",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "chandler-the-big-sleep-marlowe",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "spillane-mike-hammer-i-the-jury",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "macdonald-lew-archer-moving-target",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "highsmith-talented-mr-ripley",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "james-dalgliesh-cover-her-face",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": null,
+      "why": "obscure, thins 1960s"
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "dexter-inspector-morse-debut",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "eco-the-name-of-the-rose",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "grafton-a-is-for-alibi",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 29,
+      "decision": "cut",
+      "slug": null,
+      "why": "obscure, thins 1980s"
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "cornwell-scarpetta-postmortem",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "tartt-the-secret-history",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "mccall-smith-no1-ladies-detective-agency",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "brown-the-da-vinci-code",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "larsson-girl-with-the-dragon-tattoo",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "flynn-gone-girl",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "galbraith-cormoran-strike-debut",
+      "why": "no catalogue card names this event"
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "osman-thursday-murder-club",
+      "why": "no catalogue card names this event"
+    }
+  ],
+  "gates": "PASS  size 30                (want exactly 30)\n  INFO  bins 4/8               (advisory, 6+ is spread)\n  PASS  band 0 10              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1902-1910 (want 3 or fewer in any 10 years)\n  PASS  shared 0               (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 48 earlier themes:\n  no card is shared with any earlier theme",
+  "footholds": [
+    "doyle-study-in-scarlet-holmes",
+    "doyle-hound-of-the-baskervilles",
+    "christie-poirot-debut-styles",
+    "hammett-the-maltese-falcon",
+    "christie-murder-on-the-orient-express-novel",
+    "chandler-the-big-sleep-marlowe",
+    "eco-the-name-of-the-rose",
+    "brown-the-da-vinci-code",
+    "larsson-girl-with-the-dragon-tattoo",
+    "flynn-gone-girl"
+  ]
+}
