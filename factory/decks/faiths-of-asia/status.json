@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:18:58.164Z",
+  "updated_at": "2026-11-01T01:21:27.514Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-01T01:18:58.164Z"
     },
     "adi-shankara-born": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ce2d2c4013387398cc37c53c02585d06da2ca8e00bee581150cafa489ca4714c",
+      "updated_at": "2026-11-01T01:21:27.514Z"
     },
     "nichiren-declares-teaching": {
       "state": "pending",
