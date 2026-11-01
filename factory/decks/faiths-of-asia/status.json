@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T03:28:05.455Z",
+  "updated_at": "2026-11-01T03:30:41.300Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-01T03:28:05.455Z"
     },
     "bamiyan-buddhas-destroyed": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d33b0186fbf342f0f0733a0665a2036834667bd9a7628c106ea3cec17dcdba57",
+      "updated_at": "2026-11-01T03:30:41.300Z"
     }
   }
 }
