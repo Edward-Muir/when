@@ -3,7 +3,7 @@
   "name": "Dress Code",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T08:17:09.512Z",
-  "updated_at": "2026-11-01T09:28:30.272Z",
+  "updated_at": "2026-11-01T09:30:59.150Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-01T09:28:30.272Z"
     },
     "von-furstenberg-wrap-dress": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4c4c8d7fd17d62de974d4ea68cfdad1807164c2ef760d8c761eb22b5ea185df9",
+      "updated_at": "2026-11-01T09:30:59.150Z"
     },
     "diana-revenge-dress": {
       "state": "pending",
