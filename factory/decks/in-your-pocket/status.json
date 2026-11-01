@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:33:49.902Z",
+  "updated_at": "2026-11-01T23:07:40.654Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "davy-safety-lamp": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d68ca8c15004c7f56d5818341e6037c61818e2194a9e0d558fd67366650e327b",
-      "updated_at": "2026-11-01T21:09:43.470Z"
+      "updated_at": "2026-11-01T23:07:40.364Z"
     },
     "swiss-army-knife-introduced": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c768e648825c556b79be4c7bf177a0ddc64ff8af06eeb7a15a4d4eec802bda3a",
-      "updated_at": "2026-11-01T21:12:15.527Z"
+      "updated_at": "2026-11-01T23:07:40.396Z"
     },
     "electric-flashlight-ever-ready": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d255ae75636645c3c8229f39063868f17b5031acfcc23396ada29906ea794160",
-      "updated_at": "2026-11-01T21:14:52.565Z"
+      "updated_at": "2026-11-01T23:07:40.426Z"
     },
     "kodak-brownie-camera": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7ecbca504079764e7efca7dca4c584adf655d7ce9d17422350af5b6ee4bfb674",
-      "updated_at": "2026-11-01T21:17:31.259Z"
+      "updated_at": "2026-11-01T23:07:40.456Z"
     },
     "thermos-vacuum-flask": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "87a5f985f89a0a01c376adea8b957c39d7bc1d3a96496cc3f05052ce45a35b17",
-      "updated_at": "2026-11-01T21:20:15.574Z"
+      "updated_at": "2026-11-01T23:07:40.489Z"
     },
     "leica-i-camera": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8de736774c77d6913654199ee952b95b5356cda1badf3373f24dbaa8c5504110",
-      "updated_at": "2026-11-01T21:22:53.966Z"
+      "updated_at": "2026-11-01T23:07:40.519Z"
     },
     "zippo-lighter-introduced": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f33d182420c1e0915317428ef98d91786ab7639f526176e508554036cc3367d3",
-      "updated_at": "2026-11-01T21:25:32.438Z"
+      "updated_at": "2026-11-01T23:07:40.549Z"
     },
     "handie-talkie-radio": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3faccd1f1184a8427e60e5ab6616e81eecc0dc8cb34867c0d4a45f66f13b4c61",
-      "updated_at": "2026-11-01T21:28:12.618Z"
+      "updated_at": "2026-11-01T23:07:40.586Z"
     },
     "kodak-instamatic-camera": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "190bc6e0ccca0acf495f84ecb5bd0dd4720b2ff7ad62acf059a5da44c010a7ad",
-      "updated_at": "2026-11-01T21:30:49.067Z"
+      "updated_at": "2026-11-01T23:07:40.621Z"
     },
     "hp-35-pocket-calculator": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "04366a70afa834a1b0ae479ab84c818bf2a3e971fd31b36da2a2c8bf3bc15242",
-      "updated_at": "2026-11-01T21:33:49.902Z"
+      "updated_at": "2026-11-01T23:07:40.654Z"
     },
     "motorola-dynatac-8000x": {
       "state": "pending",

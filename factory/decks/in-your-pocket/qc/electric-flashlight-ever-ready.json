@@ -1,0 +1,15 @@
+{
+  "slug": "electric-flashlight-ever-ready",
+  "description": "A gloved hand holds a dark metal tube with brass rings and a glowing lens, its beam cutting across a wet cobbled street. Gas-style street lamps line a row of old brick buildings in the background, and the scene is dim and night-time with an oil-painting look.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
