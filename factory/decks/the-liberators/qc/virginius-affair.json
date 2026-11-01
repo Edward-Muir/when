@@ -1,0 +1,15 @@
+{
+  "slug": "virginius-affair",
+  "description": "Two ships on a dark, stormy sea under a heavy sky. In the foreground, a paddle-wheel steamer with a tall smokestack and two masts, smoke and sparks pouring from the funnel, heads right with waves breaking around its hull. Behind it on the left, a larger three-masted ship with black sails and a dark hull, also trailing smoke. A distant coastline with hills sits at the right edge. Painterly oil style, no visible text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,2386 @@
+[
+  {
+    "beat": 0,
+    "year": 1781,
+    "title": "Comuneros Revolt in New Granada",
+    "candidates": [
+      {
+        "name": "metal-cylinder-rockets",
+        "friendly_name": "Metal-Cylinder Rockets",
+        "year": 1780,
+        "description": "Hyder Ali's iron-cased military rockets used against the British, precursors to modern rocketry.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      },
+      {
+        "name": "battle-yorktown",
+        "friendly_name": "Siege of Yorktown",
+        "year": 1781,
+        "description": "Washington's victory forced British surrender, effectively ending the Revolutionary War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kant-critique-pure-reason",
+        "friendly_name": "Kant Critique of Pure Reason",
+        "year": 1781,
+        "description": "Immanuel Kant published Critique of Pure Reason, revolutionizing epistemology and the foundations of modern philosophy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "schiller-major-plays",
+        "friendly_name": "Schiller Writes Major German Dramas",
+        "year": 1781,
+        "description": "Friedrich Schiller wrote The Robbers, launching Sturm und Drang drama and becoming Germany's great dramatist.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "articles-confederation",
+        "friendly_name": "Articles of Confederation",
+        "year": 1781,
+        "description": "The first constitution of the United States was ratified.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "herschel-discovers-uranus",
+        "friendly_name": "Herschel Discovers Uranus",
+        "year": 1781,
+        "description": "William Herschel discovered Uranus, the first planet found by telescope and the first since antiquity.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 1789,
+    "title": "Inconfidencia Mineira Plot Exposed",
+    "candidates": [
+      {
+        "name": "tennis-court-oath",
+        "friendly_name": "Tennis Court Oath",
+        "year": 1789,
+        "description": "French National Assembly members swore not to disband until they had written a constitution, defying royal authority.",
+        "score": 1,
+        "shared": [
+          "they"
+        ]
+      },
+      {
+        "name": "french-revolution-start",
+        "friendly_name": "French Revolution Begins",
+        "year": 1789,
+        "description": "The storming of the Bastille ignited revolutionary fervor across France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "french-declaration-rights",
+        "friendly_name": "Declaration of the Rights of Man",
+        "year": 1789,
+        "description": "Revolutionary France proclaimed fundamental rights and freedoms.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "estates-general-convened",
+        "friendly_name": "Estates-General Convened",
+        "year": 1789,
+        "description": "Louis XVI convened the Estates-General at Versailles for the first time in well over a century, triggering the events of the French Revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "womens-march-versailles",
+        "friendly_name": "Women's March on Versailles",
+        "year": 1789,
+        "description": "Thousands of Parisian women marched to Versailles over bread shortages, forcing the royal family to return to Paris.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "abolition-of-feudalism",
+        "friendly_name": "Abolition of Feudalism",
+        "year": 1789,
+        "description": "The National Assembly abolished feudal privileges on August 4, dismantling centuries of aristocratic rights in France.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 1791,
+    "title": "Haitian Revolution Begins",
+    "candidates": [
+      {
+        "name": "burke-reflections-published",
+        "friendly_name": "Burke's Reflections Published",
+        "year": 1790,
+        "description": "Edmund Burke published his critique of the French Revolution, founding modern conservatism.",
+        "score": 2,
+        "shared": [
+          "revolution",
+          "french"
+        ]
+      },
+      {
+        "name": "civil-constitution-clergy",
+        "friendly_name": "Civil Constitution of the Clergy",
+        "year": 1790,
+        "description": "The French Revolution subordinated the Catholic Church to the state, requiring clergy to swear loyalty oaths.",
+        "score": 2,
+        "shared": [
+          "revolution",
+          "french"
+        ]
+      },
+      {
+        "name": "storming-tuileries",
+        "friendly_name": "Storming of the Tuileries",
+        "year": 1792,
+        "description": "Revolutionary crowds stormed the royal palace, ending the French monarchy.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "september-massacres",
+        "friendly_name": "September Massacres",
+        "year": 1792,
+        "description": "Parisian mobs killed over a thousand prisoners in September, fearing a royalist counter-revolution as foreign armies advanced.",
+        "score": 1,
+        "shared": [
+          "revolution"
+        ]
+      },
+      {
+        "name": "abolition-of-monarchy",
+        "friendly_name": "Abolition of Monarchy",
+        "year": 1792,
+        "description": "The National Convention abolished the French monarchy and declared the First French Republic.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "french-crown-jewels-theft",
+        "friendly_name": "Theft of the French Crown Jewels",
+        "year": 1792,
+        "description": "Thieves looted the royal storehouse in Paris over several nights of revolutionary chaos, stealing thousands of gems.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1793,
+    "title": "Narino Prints the Rights of Man",
+    "candidates": [
+      {
+        "name": "louis-xvi-execution",
+        "friendly_name": "King Louis XVI Executed",
+        "year": 1793,
+        "description": "The French king was guillotined during the Reign of Terror.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "louvre-opens",
+        "friendly_name": "Louvre Opens as Public Museum",
+        "year": 1793,
+        "description": "The former French royal palace opened as one of the world's first public museums.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "french-republican-calendar",
+        "friendly_name": "French Republican Calendar",
+        "year": 1793,
+        "description": "Revolutionary France replaced the week with ten-day decades and briefly ran a decimal clock of ten hours to the day.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "storming-tuileries",
+        "friendly_name": "Storming of the Tuileries",
+        "year": 1792,
+        "description": "Revolutionary crowds stormed the royal palace, ending the French monarchy.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "abolition-of-monarchy",
+        "friendly_name": "Abolition of Monarchy",
+        "year": 1792,
+        "description": "The National Convention abolished the French monarchy and declared the First French Republic.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "death-antoine-lavoisier",
+        "friendly_name": "Death of Lavoisier",
+        "year": 1794,
+        "description": "The French chemist who named oxygen and founded modern chemistry, guillotined during the Reign of Terror.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "french-crown-jewels-theft",
+        "friendly_name": "Theft of the French Crown Jewels",
+        "year": 1792,
+        "description": "Thieves looted the royal storehouse in Paris over several nights of revolutionary chaos, stealing thousands of gems.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1797,
+    "title": "Gual and Espana Conspiracy",
+    "candidates": [
+      {
+        "name": "birth-franz-schubert",
+        "friendly_name": "Birth of Franz Schubert",
+        "year": 1797,
+        "description": "The Austrian composer of over 600 songs along with symphonies and chamber works, master of the lied.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-mary-shelley",
+        "friendly_name": "Birth of Mary Shelley",
+        "year": 1797,
+        "description": "The English novelist who created Frankenstein, pioneering the science fiction genre at age twenty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-sojourner-truth",
+        "friendly_name": "Birth of Sojourner Truth",
+        "year": 1797,
+        "description": "The American abolitionist and women's rights orator known for her Ain't I a Woman speech.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "top-hat-introduced",
+        "friendly_name": "The Top Hat Appears",
+        "year": 1797,
+        "description": "The tall silk top hat debuted in London, becoming the defining formal headwear for gentlemen.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "garnerin-parachute-descent",
+        "friendly_name": "First Parachute Descent",
+        "year": 1797,
+        "description": "Andre-Jacques Garnerin leaped from a hydrogen balloon over Paris and floated safely down under a silk parachute.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "irish-rebellion-of-1798",
+        "friendly_name": "United Irishmen Rebellion",
+        "year": 1798,
+        "description": "Irish republicans inspired by the French Revolution rose against British rule. The failed uprising led to the Act of Union with Britain.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1801,
+    "title": "Toussaint's Constitution for Haiti",
+    "candidates": [
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 1,
+        "shared": [
+          "paris"
+        ]
+      },
+      {
+        "name": "barbary-wars",
+        "friendly_name": "Barbary Wars Begin",
+        "year": 1801,
+        "description": "The United States fought North African pirates to end tribute payments and protect American shipping.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "young-double-slit-experiment",
+        "friendly_name": "Young's Double-Slit Experiment",
+        "year": 1801,
+        "description": "Thomas Young's double-slit experiment demonstrated light interference, providing evidence for wave theory of light.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beethoven-moonlight-sonata",
+        "friendly_name": "Moonlight Sonata Composed",
+        "year": 1801,
+        "description": "Beethoven composed his Piano Sonata No. 14, nicknamed the 'Moonlight Sonata.'",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gauss-disquisitiones",
+        "friendly_name": "Gauss Publishes Disquisitiones",
+        "year": 1801,
+        "description": "Carl Friedrich Gauss systematised number theory, introducing modular arithmetic and congruences.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "graff-post-fire-hydrant",
+        "friendly_name": "The Post Fire Hydrant",
+        "year": 1801,
+        "description": "Philadelphia engineer Frederick Graff devised the post type fire hydrant, letting brigades tap water mains directly from the street.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1802,
+    "title": "Toussaint Louverture Is Captured",
+    "candidates": [
+      {
+        "name": "peace-of-amiens",
+        "friendly_name": "Treaty of Amiens",
+        "year": 1802,
+        "description": "Brief peace treaty between Britain and France ending the French Revolutionary Wars temporarily before hostilities resumed.",
+        "score": 3,
+        "shared": [
+          "french",
+          "revolutionary",
+          "france"
+        ]
+      },
+      {
+        "name": "birth-victor-hugo",
+        "friendly_name": "Birth of Victor Hugo",
+        "year": 1802,
+        "description": "The French writer behind Les Miserables and The Hunchback of Notre-Dame, giant of Romantic literature.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "napoleonic-wars-begin",
+        "friendly_name": "Napoleonic Wars Begin",
+        "year": 1803,
+        "description": "Napoleon's France fought a series of coalition wars that reshaped the political map of Europe.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "louisiana-purchase",
+        "friendly_name": "Louisiana Purchase",
+        "year": 1803,
+        "description": "The United States bought vast territories from France, doubling its size.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "birth-ralph-waldo-emerson",
+        "friendly_name": "Birth of Emerson",
+        "year": 1803,
+        "description": "The American essayist and leader of Transcendentalism who championed self-reliance and nature.",
+        "score": 1,
+        "shared": [
+          "leader"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "captured"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1804,
+    "title": "Haiti Declares Independence",
+    "candidates": [
+      {
+        "name": "haitian-revolution",
+        "friendly_name": "Haitian Revolution Succeeds",
+        "year": 1804,
+        "description": "Haiti became the first nation founded by a successful slave revolt.",
+        "score": 2,
+        "shared": [
+          "haiti",
+          "nation"
+        ]
+      },
+      {
+        "name": "abolition-slavery-denmark",
+        "friendly_name": "Danish Slave Trade Abolition",
+        "year": 1803,
+        "description": "Denmark became the first European country to enforce a ban on the transatlantic slave trade, a decade after enacting it.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "humboldt-south-america",
+        "friendly_name": "Humboldt Explores South America",
+        "year": 1799,
+        "year_end": 1804,
+        "description": "Alexander von Humboldt began his scientific exploration of the Americas.",
+        "score": 1,
+        "shared": [
+          "america"
+        ]
+      },
+      {
+        "name": "famine-cycles-break",
+        "friendly_name": "Famine Cycles End in Europe",
+        "year": 1700,
+        "year_end": 1817,
+        "description": "Agricultural improvements and New World crops helped break the recurring cycle of devastating famines in Western Europe.",
+        "score": 1,
+        "shared": [
+          "break"
+        ]
+      },
+      {
+        "name": "code-napoleon",
+        "friendly_name": "Code Napoleon",
+        "year": 1804,
+        "description": "French civil code established by Napoleon that influenced legal systems worldwide and remains the basis of French law.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1808,
+    "title": "Portuguese Court Lands in Brazil",
+    "candidates": [
+      {
+        "name": "peninsular-war",
+        "friendly_name": "Peninsular War Begins",
+        "year": 1808,
+        "description": "Napoleon invaded Spain, provoking a brutal guerrilla war that drained French resources for six years.",
+        "score": 1,
+        "shared": [
+          "napoleon"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "beethoven-fifth",
+        "friendly_name": "Beethoven's Fifth Symphony",
+        "year": 1808,
+        "description": "Beethoven premiered his famous symphony with its iconic four-note opening.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "goethe-faust-publication",
+        "friendly_name": "Goethe Publishes Faust",
+        "year": 1808,
+        "description": "Johann Wolfgang von Goethe published Faust Part One, a masterwork of German literature exploring ambition and knowledge.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "british-slave-trade-abolished",
+        "friendly_name": "British Slave Trade Abolished",
+        "year": 1807,
+        "description": "Britain outlawed the transatlantic slave trade after decades of abolitionist campaigning.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-charles-darwin",
+        "friendly_name": "Birth of Charles Darwin",
+        "year": 1809,
+        "description": "The future naturalist who developed the theory of evolution was born in Shrewsbury, England.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1810,
+    "title": "Grito de Dolores",
+    "candidates": [
+      {
+        "name": "wristwatch",
+        "friendly_name": "Wristwatch",
+        "year": 1810,
+        "description": "Abraham-Louis Breguet created the first known wristwatch, made for the Queen of Naples.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-frederic-chopin",
+        "friendly_name": "Birth of Frederic Chopin",
+        "year": 1810,
+        "description": "The Polish composer and pianist whose poetic works defined the Romantic piano repertoire.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "canning-food-preservation",
+        "friendly_name": "Food Canning Invented",
+        "year": 1810,
+        "description": "Nicolas Appert developed sealing food in jars, and Britain patented the tin can to preserve food longer.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-savings-bank",
+        "friendly_name": "First Savings Bank Opens",
+        "year": 1810,
+        "description": "Scotland's Reverend Henry Duncan founded an early savings bank to help ordinary workers store money safely.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "zheng-yi-sao-fleet-surrenders",
+        "friendly_name": "Zheng Yi Sao's Fleet Surrenders",
+        "year": 1810,
+        "description": "Pirate queen Zheng Yi Sao negotiated a mass amnesty for her tens of thousands of followers, ending the largest pirate confederation in history.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "university-berlin-founded",
+        "friendly_name": "University of Berlin Founded",
+        "year": 1810,
+        "description": "Wilhelm von Humboldt founded a university in Berlin built around a new ideal linking scholarly research with teaching.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1811,
+    "title": "Venezuela Declares Independence",
+    "candidates": [
+      {
+        "name": "venezuela-declares-independence",
+        "friendly_name": "Venezuela Declares Independence",
+        "year": 1811,
+        "description": "Venezuela became the first South American nation to declare independence from Spain, beginning the continent's liberation.",
+        "score": 4,
+        "shared": [
+          "venezuela",
+          "declares",
+          "independence",
+          "spain"
+        ]
+      },
+      {
+        "name": "great-paris-cipher-broken",
+        "friendly_name": "The Great Paris Cipher Broken",
+        "year": 1812,
+        "description": "Wellington's officer George Scovell cracked the number cipher carrying Napoleon's orders across Spain, laying French plans bare.",
+        "score": 1,
+        "shared": [
+          "spain"
+        ]
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 1,
+        "shared": [
+          "spain"
+        ]
+      },
+      {
+        "name": "new-madrid-earthquakes",
+        "friendly_name": "New Madrid Earthquakes",
+        "year": 1811,
+        "description": "A series of massive earthquakes shook the central United States.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "powered-printing-press",
+        "friendly_name": "Powered Printing Press",
+        "year": 1811,
+        "description": "Friedrich Koenig's steam-powered press revolutionized newspaper production with faster output.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "avogadro-molecular-hypothesis",
+        "friendly_name": "Avogadro's Hypothesis",
+        "year": 1811,
+        "description": "Amedeo Avogadro proposed that equal volumes of gases at equal temperature and pressure contain equal numbers of molecules.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1813,
+    "title": "Bolivar Named El Libertador",
+    "candidates": [
+      {
+        "name": "napoleon-russia",
+        "friendly_name": "Napoleon Invades Russia",
+        "year": 1812,
+        "description": "Napoleon's Grande Armée invaded Russia in a disastrous campaign.",
+        "score": 1,
+        "shared": [
+          "campaign"
+        ]
+      },
+      {
+        "name": "restoration-bourbon-monarchy",
+        "friendly_name": "Restoration of Bourbon Monarchy",
+        "year": 1814,
+        "description": "After Napoleon's abdication, the Bourbon dynasty was restored with Louis XVIII taking the French throne.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "battle-leipzig",
+        "friendly_name": "Battle of Leipzig",
+        "year": 1813,
+        "description": "The largest battle before WWI saw Napoleon defeated by a coalition of European powers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pride-prejudice",
+        "friendly_name": "Pride and Prejudice Published",
+        "year": 1813,
+        "description": "Jane Austen published her beloved novel of manners and marriage.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-richard-wagner",
+        "friendly_name": "Birth of Richard Wagner",
+        "year": 1813,
+        "description": "The German composer of epic operas like the Ring cycle who transformed the art form with leitmotifs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "war-of-1812-begins",
+        "friendly_name": "Anglo-American War Begins",
+        "year": 1812,
+        "description": "The United States declared war on Britain over maritime disputes and expansionist aims, leading to the burning of Washington and the writing of the Star-Spangled Banner.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1817,
+    "title": "San Martin Crosses the Andes",
+    "candidates": [
+      {
+        "name": "chile-independence",
+        "friendly_name": "Chile Independence",
+        "year": 1818,
+        "description": "Chile formally declared independence from Spain after the Battle of Maipú secured liberation from colonial rule.",
+        "score": 1,
+        "shared": [
+          "chile"
+        ]
+      },
+      {
+        "name": "bicycle-invented",
+        "friendly_name": "Bicycle Invented",
+        "year": 1817,
+        "description": "Karl von Drais invented the draisine, the first two-wheeled human-powered vehicle and precursor to the bicycle.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-henry-david-thoreau",
+        "friendly_name": "Birth of Thoreau",
+        "year": 1817,
+        "description": "The American writer of Walden whose essay Civil Disobedience inspired generations of activists.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "baltimore-gas-streetlights",
+        "friendly_name": "Baltimore Lit By Gas Lamps",
+        "year": 1817,
+        "description": "Baltimore laid coal-gas mains and became the first American city to light its streets with gas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-cholera-pandemic",
+        "friendly_name": "First Cholera Pandemic",
+        "year": 1817,
+        "year_end": 1824,
+        "description": "Cholera spread out of the Ganges delta along trade and troop routes, beginning a century of global waves.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "shaka-zulu-kingdom",
+        "friendly_name": "Shaka Zulu Founds Zulu Kingdom",
+        "year": 1816,
+        "description": "Shaka unified Zulu clans into a powerful African kingdom.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1819,
+    "title": "Battle of Boyaca",
+    "candidates": [
+      {
+        "name": "museum-prado-opened",
+        "friendly_name": "Prado Museum",
+        "year": 1819,
+        "description": "The Prado Museum opened in Madrid, housing the Spanish royal art collection including masterworks by Velazquez and Goya.",
+        "score": 1,
+        "shared": [
+          "spanish"
+        ]
+      },
+      {
+        "name": "chile-independence",
+        "friendly_name": "Chile Independence",
+        "year": 1818,
+        "description": "Chile formally declared independence from Spain after the Battle of Maipú secured liberation from colonial rule.",
+        "score": 1,
+        "shared": [
+          "battle"
+        ]
+      },
+      {
+        "name": "peterloo-massacre",
+        "friendly_name": "Peterloo Massacre",
+        "year": 1819,
+        "description": "British cavalry charged a crowd of 60,000 peaceful reformers in Manchester demanding parliamentary representation, killing 15 and injuring hundreds.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-atlantic-steamship-crossing",
+        "friendly_name": "First Atlantic Steamship Crossing",
+        "year": 1819,
+        "description": "The SS Savannah became the first steamship to cross the Atlantic Ocean, though it used sails for most of the voyage.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "singapore-founded",
+        "friendly_name": "Singapore Founded as Trading Post",
+        "year": 1819,
+        "description": "Sir Stamford Raffles established Singapore as a British trading post.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-walt-whitman",
+        "friendly_name": "Birth of Walt Whitman",
+        "year": 1819,
+        "description": "The American poet whose Leaves of Grass revolutionized verse with its free-flowing celebration of democracy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1821,
+    "title": "Battle of Carabobo",
+    "candidates": [
+      {
+        "name": "greek-independence",
+        "friendly_name": "Greek War of Independence Begins",
+        "year": 1821,
+        "description": "Greeks revolted against Ottoman rule, seeking national independence.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "latin-american-independence",
+        "friendly_name": "Latin American Independence",
+        "year": 1821,
+        "description": "Mexico and other Spanish colonies gained independence in rapid succession.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "mexican-independence",
+        "friendly_name": "Mexican Independence",
+        "year": 1821,
+        "description": "Mexico gained independence from Spain after an eleven-year war, establishing the First Mexican Empire.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "brazil-independence",
+        "friendly_name": "Brazil Independence",
+        "year": 1822,
+        "description": "Prince Pedro declared Brazil's independence from Portugal, becoming Emperor Pedro I of the new Brazilian Empire.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "death-napoleon",
+        "friendly_name": "Death of Napoleon",
+        "year": 1821,
+        "description": "Napoleon Bonaparte died in exile on Saint Helena, ending an era of European upheaval.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electric-motor",
+        "friendly_name": "Electric Motor Invented",
+        "year": 1821,
+        "description": "Michael Faraday built the first device to produce continuous rotation from electrical energy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1822,
+    "title": "Cry of Ipiranga",
+    "candidates": [
+      {
+        "name": "brazil-independence",
+        "friendly_name": "Brazil Independence",
+        "year": 1822,
+        "description": "Prince Pedro declared Brazil's independence from Portugal, becoming Emperor Pedro I of the new Brazilian Empire.",
+        "score": 5,
+        "shared": [
+          "prince",
+          "pedro",
+          "declared",
+          "brazil",
+          "portugal"
+        ]
+      },
+      {
+        "name": "schubert-unfinished",
+        "friendly_name": "Schubert's Unfinished Symphony",
+        "year": 1822,
+        "description": "Schubert composed his mysterious two-movement symphony.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "monroe-doctrine",
+        "friendly_name": "Monroe Doctrine Declared",
+        "year": 1823,
+        "description": "The US opposed European colonization in the Americas.",
+        "score": 1,
+        "shared": [
+          "declared"
+        ]
+      },
+      {
+        "name": "birth-gustave-flaubert",
+        "friendly_name": "Birth of Gustave Flaubert",
+        "year": 1821,
+        "description": "The French novelist of Madame Bovary, celebrated for his pursuit of literary realism and precise prose.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "hieroglyphics-decoded",
+        "friendly_name": "Hieroglyphics Decoded",
+        "year": 1822,
+        "description": "Jean-François Champollion deciphered Egyptian hieroglyphics using the Rosetta Stone.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-gregor-mendel",
+        "friendly_name": "Birth of Gregor Mendel",
+        "year": 1822,
+        "description": "The Austrian friar whose pea-plant experiments revealed the laws of heredity, founding genetics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1824,
+    "title": "Battle of Ayacucho",
+    "candidates": [
+      {
+        "name": "battle-of-ayacucho",
+        "friendly_name": "Battle of Ayacucho",
+        "year": 1824,
+        "description": "South American independence forces decisively defeated Spanish royalists in Peru, effectively ending Spanish colonial rule on the continent.",
+        "score": 4,
+        "shared": [
+          "battle",
+          "ayacucho",
+          "spanish",
+          "south"
+        ]
+      },
+      {
+        "name": "sotho-moshoeshoe-reforms",
+        "friendly_name": "Moshoeshoe Reforms Sotho Army",
+        "year": 1824,
+        "description": "King Moshoeshoe I united the Sotho people at Thaba Bosiu, using diplomacy and defense to survive the Mfecane.",
+        "score": 1,
+        "shared": [
+          "army"
+        ]
+      },
+      {
+        "name": "kriegsspiel-prussian-army",
+        "friendly_name": "Prussia Adopts Kriegsspiel",
+        "year": 1824,
+        "description": "The Prussian army took up Kriegsspiel, a map-and-dice war game used to drill officers in tactical decisions.",
+        "score": 1,
+        "shared": [
+          "army"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "south"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "south"
+        ]
+      },
+      {
+        "name": "beethoven-ninth",
+        "friendly_name": "Beethoven's Ninth Premieres",
+        "year": 1824,
+        "description": "Beethoven premiered his final symphony, including the Ode to Joy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1828,
+    "title": "Uruguay Becomes Independent",
+    "candidates": [
+      {
+        "name": "uruguay-independence",
+        "friendly_name": "Uruguay Independence",
+        "year": 1828,
+        "description": "Uruguay gained independence as a buffer state between Argentina and Brazil following British-mediated negotiations.",
+        "score": 6,
+        "shared": [
+          "uruguay",
+          "buffer",
+          "state",
+          "between",
+          "argentina",
+          "brazil"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 2,
+        "shared": [
+          "independent",
+          "state"
+        ]
+      },
+      {
+        "name": "ohm-law",
+        "friendly_name": "Ohm's Law",
+        "year": 1827,
+        "description": "Georg Ohm discovered the relationship between voltage, current, and resistance.",
+        "score": 1,
+        "shared": [
+          "between"
+        ]
+      },
+      {
+        "name": "first-modern-penitentiary",
+        "friendly_name": "Eastern State Penitentiary",
+        "year": 1829,
+        "description": "Philadelphia opened a prison built around solitary confinement, pioneering a new model of incarceration.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 1,
+        "shared": [
+          "created"
+        ]
+      },
+      {
+        "name": "reaping-machine",
+        "friendly_name": "Reaping Machine",
+        "year": 1828,
+        "description": "Patrick Bell's mechanical device for cutting grain in the field, boosting agricultural productivity.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1830,
+    "title": "Bolivar Dies Near Santa Marta",
+    "candidates": [
+      {
+        "name": "haida-totem-poles",
+        "friendly_name": "Haida Totem Pole Carving Peak",
+        "year": 1830,
+        "year_end": 1880,
+        "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
+        "score": 1,
+        "shared": [
+          "coast"
+        ]
+      },
+      {
+        "name": "darwin-beagle",
+        "friendly_name": "Darwin Begins Beagle Voyage",
+        "year": 1831,
+        "description": "Darwin's voyage led to his theory of evolution.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "birth-maxwell",
+        "friendly_name": "Birth of J.C. Maxwell",
+        "year": 1831,
+        "description": "The Scottish physicist who unified electricity, magnetism, and light in his equations of electromagnetism.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "book-of-mormon-published",
+        "friendly_name": "Book of Mormon Published",
+        "year": 1830,
+        "description": "The Book of Mormon was published in Palmyra, New York.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bharatanatyam-tradition",
+        "friendly_name": "Bharatanatyam Codified",
+        "year": 1830,
+        "description": "The Tanjore Quartet codified Bharatanatyam repertoire, systematizing South India's ancient temple dance tradition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "belgian-independence",
+        "friendly_name": "Belgian Independence",
+        "year": 1830,
+        "year_end": 1839,
+        "description": "Belgium gained independence from the Netherlands after revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1836,
+    "title": "Spain Recognizes Mexico",
+    "candidates": [
+      {
+        "name": "texas-revolution",
+        "friendly_name": "Texas Revolution",
+        "year": 1835,
+        "year_end": 1836,
+        "description": "American settlers in Texas rebelled against Mexico, leading to the famous Battle of the Alamo and Texas independence.",
+        "score": 2,
+        "shared": [
+          "mexico",
+          "independence"
+        ]
+      },
+      {
+        "name": "belgian-independence",
+        "friendly_name": "Belgian Independence",
+        "year": 1830,
+        "year_end": 1839,
+        "description": "Belgium gained independence from the Netherlands after revolution.",
+        "score": 2,
+        "shared": [
+          "independence",
+          "after"
+        ]
+      },
+      {
+        "name": "texas-revolution-alamo",
+        "friendly_name": "Battle of the Alamo",
+        "year": 1836,
+        "description": "Texas defenders died at the Alamo, becoming martyrs for Texan independence.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "panic-of-1837",
+        "friendly_name": "Jacksonian-Era Bank Panic",
+        "year": 1837,
+        "description": "A US banking crisis triggered a deep depression, bank failures, and years of economic hardship.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "revolver-invented",
+        "friendly_name": "Revolver Invented",
+        "year": 1836,
+        "description": "Samuel Colt patented the first practical revolving firearm, changing the nature of personal weapons.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1838,
+    "title": "Duarte Founds La Trinitaria",
+    "candidates": [
+      {
+        "name": "luxembourg-independence-london",
+        "friendly_name": "Luxembourg Becomes Independent",
+        "year": 1839,
+        "description": "A treaty in London partitioned the grand duchy, leaving a smaller Luxembourg as a sovereign state.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "belgian-independence",
+        "friendly_name": "Belgian Independence",
+        "year": 1830,
+        "year_end": 1839,
+        "description": "Belgium gained independence from the Netherlands after revolution.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "trail-of-tears",
+        "friendly_name": "Trail of Tears",
+        "year": 1838,
+        "description": "Forced relocation of Native American nations resulted in thousands of deaths.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "morse-code-invented",
+        "friendly_name": "Morse Code Invented",
+        "year": 1838,
+        "description": "Samuel Morse developed the code that revolutionized long-distance communication.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stereoscope-invented",
+        "friendly_name": "Stereoscope Invented",
+        "year": 1838,
+        "description": "Charles Wheatstone demonstrated the stereoscope, creating the illusion of 3D depth from two flat images.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bessel-stellar-parallax",
+        "friendly_name": "First Stellar Parallax Measured",
+        "year": 1838,
+        "description": "Bessel caught the tiny yearly wobble of the star 61 Cygni, yielding the first true distance to a star.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1844,
+    "title": "Dominicans Declare Independence",
+    "candidates": [
+      {
+        "name": "birth-nietzsche",
+        "friendly_name": "Birth of Nietzsche",
+        "year": 1844,
+        "description": "The German philosopher who proclaimed the death of God and explored will, morality, and the overman.",
+        "score": 1,
+        "shared": [
+          "proclaimed"
+        ]
+      },
+      {
+        "name": "texas-annexed",
+        "friendly_name": "Texas Annexed",
+        "year": 1845,
+        "description": "Texas joined the United States as the 28th state after nine years as an independent republic.",
+        "score": 1,
+        "shared": [
+          "republic"
+        ]
+      },
+      {
+        "name": "first-modern-rugby",
+        "friendly_name": "Rugby Football Takes Shape",
+        "year": 1845,
+        "description": "Pupils at Rugby School in England wrote down rules for their handling form of football, founding the sport.",
+        "score": 1,
+        "shared": [
+          "founding"
+        ]
+      },
+      {
+        "name": "ymca-founded",
+        "friendly_name": "YMCA Founded",
+        "year": 1844,
+        "description": "The Young Men's Christian Association was founded in London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-telegraph-message",
+        "friendly_name": "First Telegraph Message",
+        "year": 1844,
+        "description": "Samuel Morse sent 'What hath God wrought' from Washington to Baltimore, demonstrating the electric telegraph.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wood-pulp-papermaking",
+        "friendly_name": "Wood Pulp Papermaking",
+        "year": 1844,
+        "description": "Charles Fenerty made paper from wood pulp, replacing expensive cotton rags and lowering costs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1851,
+    "title": "Narciso Lopez Invades Cuba",
+    "candidates": [
+      {
+        "name": "compromise-slavery",
+        "friendly_name": "Slavery Compromise",
+        "year": 1850,
+        "description": "Congress attempted to balance free and slave state interests as US territories expanded.",
+        "score": 1,
+        "shared": [
+          "free"
+        ]
+      },
+      {
+        "name": "california-gold-rush",
+        "friendly_name": "California Gold Rush",
+        "year": 1848,
+        "year_end": 1855,
+        "description": "Discovery of gold at Sutter's Mill sparked a massive migration to California, transforming the American West.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "great-exhibition-opens",
+        "friendly_name": "Great Exhibition Opens",
+        "year": 1851,
+        "description": "World's first international exhibition of manufactured products opened in London's Crystal Palace.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "foucault-pendulum",
+        "friendly_name": "Foucault Pendulum",
+        "year": 1851,
+        "description": "Léon Foucault demonstrated Earth's rotation with his famous pendulum.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "public-flush-toilets",
+        "friendly_name": "Public Flush Toilets",
+        "year": 1851,
+        "description": "George Jennings installed the first public flushing lavatories at London's Great Exhibition.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1862,
+    "title": "Battle of Puebla",
+    "candidates": [
+      {
+        "name": "battle-gettysburg",
+        "friendly_name": "Battle of Gettysburg",
+        "year": 1863,
+        "description": "The Union victory turned the tide of the Civil War after three days of fighting.",
+        "score": 2,
+        "shared": [
+          "battle",
+          "victory"
+        ]
+      },
+      {
+        "name": "battle-antietam",
+        "friendly_name": "Battle of Antietam",
+        "year": 1862,
+        "description": "The bloodiest single day in American history halted Lee's first invasion of the North.",
+        "score": 1,
+        "shared": [
+          "battle"
+        ]
+      },
+      {
+        "name": "battle-hampton-roads",
+        "friendly_name": "Battle of Hampton Roads",
+        "year": 1862,
+        "description": "First battle between ironclad warships Monitor and Virginia.",
+        "score": 1,
+        "shared": [
+          "battle"
+        ]
+      },
+      {
+        "name": "les-miserables",
+        "friendly_name": "Les Misérables Published",
+        "year": 1862,
+        "description": "Victor Hugo published his epic novel of justice and redemption in France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homestead-act",
+        "friendly_name": "Homestead Act",
+        "year": 1862,
+        "description": "US law gave settlers 160 acres of public land if they farmed it for five years, spurring western expansion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bismarck-becomes-minister-president",
+        "friendly_name": "Bismarck Becomes Minister-President",
+        "year": 1862,
+        "description": "Otto von Bismarck became Prussia's Minister-President, beginning his campaign to unify Germany through 'blood and iron.'",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1863,
+    "title": "Dominicans Rise at Capotillo",
+    "candidates": [
+      {
+        "name": "gettysburg",
+        "friendly_name": "Gettysburg Address",
+        "year": 1863,
+        "description": "Lincoln delivered his famous speech during the Civil War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-gettysburg",
+        "friendly_name": "Battle of Gettysburg",
+        "year": 1863,
+        "description": "The Union victory turned the tide of the Civil War after three days of fighting.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "red-cross-founded",
+        "friendly_name": "Red Cross Founded",
+        "year": 1863,
+        "description": "Henry Dunant established the humanitarian organization in Geneva.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "emancipation-proclamation",
+        "friendly_name": "Emancipation Proclamation",
+        "year": 1863,
+        "description": "Lincoln declared slaves in Confederate states to be free.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "london-underground",
+        "friendly_name": "London Underground Opens",
+        "year": 1863,
+        "description": "The world's first underground railway opened in London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-edvard-munch",
+        "friendly_name": "Birth of Edvard Munch",
+        "year": 1863,
+        "description": "The Norwegian painter of The Scream, a pioneer of Expressionism exploring anxiety and emotion.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1865,
+    "title": "Spain Leaves Santo Domingo",
+    "candidates": [
+      {
+        "name": "us-civil-war-end",
+        "friendly_name": "American Civil War Ends",
+        "year": 1865,
+        "description": "General Lee surrendered at Appomattox Courthouse, ending the Civil War.",
+        "score": 2,
+        "shared": [
+          "war",
+          "ending"
+        ]
+      },
+      {
+        "name": "london-main-drainage",
+        "friendly_name": "London's Main Drainage Opens",
+        "year": 1865,
+        "description": "Bazalgette's intercepting sewers carried waste below the tideway, ending London's great cholera outbreaks.",
+        "score": 1,
+        "shared": [
+          "ending"
+        ]
+      },
+      {
+        "name": "austro-prussian-war",
+        "friendly_name": "Austro-Prussian War",
+        "year": 1866,
+        "description": "Prussia's rapid victory over Austria reshaped the balance of power in Europe.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "geneva-convention-first",
+        "friendly_name": "First Geneva Convention",
+        "year": 1864,
+        "description": "Nations agreed to protect wounded soldiers and medical personnel in war.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "burning-of-atlanta",
+        "friendly_name": "Burning of Atlanta",
+        "year": 1864,
+        "description": "Retreating Confederate forces and then advancing Union troops set fires that destroyed much of Atlanta's rail yards and industry.",
+        "score": 1,
+        "shared": [
+          "troops"
+        ]
+      },
+      {
+        "name": "peace-of-prague",
+        "friendly_name": "Peace of Prague",
+        "year": 1866,
+        "description": "Austria and Prussia signed terms closing their brief war, with Prussia absorbing several German states into its orbit.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 1,
+        "shared": [
+          "ending"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1867,
+    "title": "Maximilian Executed in Mexico",
+    "candidates": [
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 2,
+        "shared": [
+          "emperor",
+          "ending"
+        ]
+      },
+      {
+        "name": "meiji-restoration",
+        "friendly_name": "Meiji Restoration",
+        "year": 1868,
+        "description": "Japan restored imperial rule and began rapid modernization.",
+        "score": 1,
+        "shared": [
+          "rule"
+        ]
+      },
+      {
+        "name": "das-kapital-published",
+        "friendly_name": "Das Kapital Published",
+        "year": 1867,
+        "description": "Karl Marx published his critique of capitalism, providing the theoretical foundation for socialism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dominion-canada",
+        "friendly_name": "Dominion of Canada Established",
+        "year": 1867,
+        "description": "Canadian provinces united to form a self-governing dominion within the British Empire.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "alaska-purchase",
+        "friendly_name": "Alaska Purchase",
+        "year": 1867,
+        "description": "United States purchased Alaska from Russia for $7.2 million, initially mocked as 'Seward's Folly.'",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dynamite-invented",
+        "friendly_name": "Dynamite Invented",
+        "year": 1867,
+        "description": "Alfred Nobel patented dynamite, a safer explosive using nitroglycerin absorbed in diatomaceous earth.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1868,
+    "title": "Grito de Yara",
+    "candidates": [
+      {
+        "name": "das-kapital-published",
+        "friendly_name": "Das Kapital Published",
+        "year": 1867,
+        "description": "Karl Marx published his critique of capitalism, providing the theoretical foundation for socialism.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "birth-wilbur-wright",
+        "friendly_name": "Birth of Wilbur Wright",
+        "year": 1867,
+        "description": "The American aviation pioneer who, with his brother Orville, invented and flew the first powered airplane.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "opening"
+        ]
+      },
+      {
+        "name": "meiji-restoration",
+        "friendly_name": "Meiji Restoration",
+        "year": 1868,
+        "description": "Japan restored imperial rule and began rapid modernization.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "impeachment-andrew-johnson",
+        "friendly_name": "Impeachment of Andrew Johnson",
+        "year": 1868,
+        "description": "President Andrew Johnson was impeached by the House but acquitted by the Senate by one vote.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-bicycle-race-saint-cloud-1868",
+        "friendly_name": "World's First Bicycle Race",
+        "year": 1868,
+        "description": "On 31 May, Englishman James Moore won the first documented bicycle race, a 1,200 m sprint in the Parc de Saint-Cloud, Paris.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1873,
+    "title": "The Virginius Affair",
+    "candidates": [
+      {
+        "name": "german-gold-mark-adopted",
+        "friendly_name": "Germany Adopts The Gold Mark",
+        "year": 1873,
+        "description": "Paid a French war indemnity in gold, the new German Empire dropped silver for a gold mark and pulled Europe onto the gold standard.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "birth-winston-churchill",
+        "friendly_name": "Birth of Winston Churchill",
+        "year": 1874,
+        "description": "The British prime minister who led the nation to victory in World War II with defiant wartime leadership.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "information-bureau",
+        "friendly_name": "Tourist Information Bureau",
+        "year": 1873,
+        "description": "Austria established an early tourist information bureau, helping organize the growing phenomenon of leisure travel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gramme-machine-generator",
+        "friendly_name": "Gramme Machine (Generator)",
+        "year": 1873,
+        "description": "Zénobe Gramme's dynamo was the first commercial electrical generator for industrial power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-sergei-rachmaninoff",
+        "friendly_name": "Birth of Rachmaninoff",
+        "year": 1873,
+        "description": "The Russian composer and virtuoso pianist of sweeping, late-Romantic concertos and preludes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "levis-blue-jeans-patent",
+        "friendly_name": "Levi's Riveted Blue Jeans",
+        "year": 1873,
+        "description": "Levi Strauss and Jacob Davis patented riveted denim work trousers, the origin of modern blue jeans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1878,
+    "title": "Protest of Baragua",
+    "candidates": [
+      {
+        "name": "nez-perce-war",
+        "friendly_name": "Nez Perce War",
+        "year": 1877,
+        "description": "Chief Joseph led the Nez Perce on a 1,170-mile fighting retreat toward Canada before surrendering with his famous speech 'I will fight no more forever.'",
+        "score": 2,
+        "shared": [
+          "war",
+          "fighting"
+        ]
+      },
+      {
+        "name": "congress-of-berlin",
+        "friendly_name": "Congress of Berlin",
+        "year": 1878,
+        "description": "Major powers redrew Balkan boundaries after the Russo-Turkish War, creating new independent states.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "zulu-war",
+        "friendly_name": "Anglo-Zulu War",
+        "year": 1879,
+        "description": "British forces fought the Zulu Kingdom in a short but brutal conflict.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "war-of-the-pacific",
+        "friendly_name": "War of the Pacific",
+        "year": 1879,
+        "year_end": 1884,
+        "description": "Chile fought Bolivia and Peru over nitrate-rich territories, winning coastal lands that left Bolivia landlocked to this day.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "bulgaria-independence",
+        "friendly_name": "Bulgaria Independence",
+        "year": 1878,
+        "description": "Bulgaria gained autonomy from the Ottoman Empire following the Congress of Berlin.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "princess-alice-disaster",
+        "friendly_name": "Princess Alice Disaster",
+        "year": 1878,
+        "description": "A pleasure steamer collision killed over 650 in the Thames River.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1892,
+    "title": "Marti Founds Cuba's Rebel Party",
+    "candidates": [
+      {
+        "name": "urban-planning",
+        "friendly_name": "City Planning",
+        "year": 1893,
+        "description": "The Chicago World's Fair inspired the City Beautiful movement, launching modern urban planning in the United States.",
+        "score": 1,
+        "shared": [
+          "united"
+        ]
+      },
+      {
+        "name": "ellis-island-opens",
+        "friendly_name": "Ellis Island Opens",
+        "year": 1892,
+        "description": "Ellis Island began processing immigrants, eventually welcoming over 12 million people to America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cinematograph",
+        "friendly_name": "Cinematograph",
+        "year": 1892,
+        "description": "Léon Bouly's combined camera and projector device for recording and displaying motion pictures.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electric-oven",
+        "friendly_name": "Electric Oven",
+        "year": 1892,
+        "description": "Thomas Ahearn demonstrated the first electric cooking oven at a hotel dinner in Ottawa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gas-powered-tractor",
+        "friendly_name": "Gas-Powered Tractor",
+        "year": 1892,
+        "description": "John Froelich built the first successful gasoline-powered tractor for agricultural use.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-jrr-tolkien",
+        "friendly_name": "Birth of J R R Tolkien",
+        "year": 1892,
+        "description": "The English author of The Hobbit and The Lord of the Rings, founder of modern high fantasy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1895,
+    "title": "Grito de Baire",
+    "candidates": [
+      {
+        "name": "earnest-premieres-london",
+        "friendly_name": "Earnest Premieres in London",
+        "year": 1895,
+        "description": "Oscar Wilde's comedy of mistaken identities and double lives opened in London to great acclaim just before his public disgrace began.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "school-lunch-program",
+        "friendly_name": "School Meal Program",
+        "year": 1894,
+        "description": "Sweden began giving meals to poor schoolchildren, an early effort that grew into a free lunch for every pupil.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "first-motion-picture",
+        "friendly_name": "First Motion Picture Screened",
+        "year": 1895,
+        "description": "The Lumière brothers held the first public film screening in Paris.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "treaty-of-shimonoseki",
+        "friendly_name": "Treaty of Shimonoseki",
+        "year": 1895,
+        "description": "Treaty ending the First Sino-Japanese War, with China ceding Taiwan and recognizing Korean independence.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "x-rays-discovered",
+        "friendly_name": "X-Rays Discovered",
+        "year": 1895,
+        "description": "Wilhelm Röntgen discovered X-rays, revolutionizing medical imaging.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1896,
+    "title": "Antonio Maceo Killed in Action",
+    "candidates": [
+      {
+        "name": "ethiopian-victory-adwa",
+        "friendly_name": "Ethiopian Victory at Adwa",
+        "year": 1896,
+        "description": "Ethiopia defeated Italian forces at Adwa, preserving independence and becoming a symbol of African resistance.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "treaty-of-shimonoseki",
+        "friendly_name": "Treaty of Shimonoseki",
+        "year": 1895,
+        "description": "Treaty ending the First Sino-Japanese War, with China ceding Taiwan and recognizing Korean independence.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "aspirin-invented",
+        "friendly_name": "Aspirin Developed",
+        "year": 1897,
+        "description": "Felix Hoffmann at Bayer synthesized aspirin, which became the world's most widely used medication.",
+        "score": 1,
+        "shared": [
+          "most"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "most"
+        ]
+      },
+      {
+        "name": "first-modern-olympics",
+        "friendly_name": "First Modern Olympic Games",
+        "year": 1896,
+        "description": "Athens hosted the revival of the ancient Olympic Games.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "klondike-gold-rush",
+        "friendly_name": "Klondike Gold Rush",
+        "year": 1896,
+        "year_end": 1898,
+        "description": "Discovery of gold in Canada's Yukon Territory sparked a massive migration of prospectors to the region.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1897,
+    "title": "Puerto Rico Granted Autonomy",
+    "candidates": [
+      {
+        "name": "spanish-american-war",
+        "friendly_name": "Spanish-American War",
+        "year": 1898,
+        "description": "The US defeated Spain, gaining control of Cuba, Puerto Rico, and the Philippines.",
+        "score": 4,
+        "shared": [
+          "puerto",
+          "rico",
+          "spain",
+          "american"
+        ]
+      },
+      {
+        "name": "birth-amelia-earhart",
+        "friendly_name": "Birth of Amelia Earhart",
+        "year": 1897,
+        "description": "The American aviator and first woman to fly solo across the Atlantic, who vanished over the Pacific.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-f-scott-fitzgerald",
+        "friendly_name": "Birth of F Scott Fitzgerald",
+        "year": 1896,
+        "description": "The American author of The Great Gatsby who chronicled the glamour and excess of the Jazz Age.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "nfpa-founded",
+        "friendly_name": "NFPA Founded",
+        "year": 1896,
+        "description": "American insurers and engineers founded the National Fire Protection Association to standardize sprinklers and fire safety codes.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "panic-of-1893",
+        "friendly_name": "American Banking Panic",
+        "year": 1893,
+        "year_end": 1897,
+        "description": "Severe economic depression caused by railroad overbuilding and bank failures, lasting four years.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1898,
+    "title": "Spain Loses Cuba and Puerto Rico",
+    "candidates": [
+      {
+        "name": "spanish-american-war",
+        "friendly_name": "Spanish-American War",
+        "year": 1898,
+        "description": "The US defeated Spain, gaining control of Cuba, Puerto Rico, and the Philippines.",
+        "score": 6,
+        "shared": [
+          "spain",
+          "cuba",
+          "puerto",
+          "rico",
+          "war",
+          "american"
+        ]
+      },
+      {
+        "name": "philippine-american-war",
+        "friendly_name": "Philippine-American War",
+        "year": 1899,
+        "year_end": 1902,
+        "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+        "score": 4,
+        "shared": [
+          "spain",
+          "after",
+          "war",
+          "american"
+        ]
+      },
+      {
+        "name": "us-annexes-hawaii",
+        "friendly_name": "US Annexes Hawaii",
+        "year": 1898,
+        "description": "United States annexed the Republic of Hawaii as a territory following the overthrow of the monarchy.",
+        "score": 2,
+        "shared": [
+          "united",
+          "states"
+        ]
+      },
+      {
+        "name": "fashoda-incident",
+        "friendly_name": "Fashoda Incident",
+        "year": 1898,
+        "description": "British and French forces confronted each other in Sudan, nearly causing war before France withdrew.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "boer-war",
+        "friendly_name": "Second Boer War Begins",
+        "year": 1899,
+        "description": "Britain fought Dutch settlers in South Africa in a brutal colonial conflict.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "birth-amelia-earhart",
+        "friendly_name": "Birth of Amelia Earhart",
+        "year": 1897,
+        "description": "The American aviator and first woman to fly solo across the Atlantic, who vanished over the Pacific.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-ernest-hemingway",
+        "friendly_name": "Birth of Ernest Hemingway",
+        "year": 1899,
+        "description": "The American author of The Old Man and the Sea, whose spare prose won him the Nobel Prize.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "dreyfus-retrial-pardon",
+        "friendly_name": "Dreyfus Pardoned",
+        "year": 1899,
+        "description": "France pardoned officer Alfred Dreyfus after a notorious wrongful conviction split the nation.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "indentured-labor-diaspora",
+        "friendly_name": "Indian Indentured Diaspora",
+        "year": 1834,
+        "year_end": 1917,
+        "description": "Indian indentured laborers were shipped to colonies worldwide, settling the Caribbean, Fiji, and beyond.",
+        "score": 1,
+        "shared": [
+          "colonies"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1902,
+    "title": "Cuba Becomes a Republic",
+    "candidates": [
+      {
+        "name": "assassination-of-mckinley",
+        "friendly_name": "Assassination of McKinley",
+        "year": 1901,
+        "description": "President William McKinley was shot by anarchist Leon Czolgosz at the Pan-American Exposition, making Theodore Roosevelt president.",
+        "score": 2,
+        "shared": [
+          "american",
+          "president"
+        ]
+      },
+      {
+        "name": "end-of-philippine-american-war",
+        "friendly_name": "End of Philippine-American War",
+        "year": 1902,
+        "description": "The US declared victory in the Philippine-American War, though guerrilla resistance continued for years in parts of the archipelago.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-charles-lindbergh",
+        "friendly_name": "Birth of Charles Lindbergh",
+        "year": 1902,
+        "description": "The American aviator who made the first solo nonstop flight across the Atlantic.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-john-steinbeck",
+        "friendly_name": "Birth of John Steinbeck",
+        "year": 1902,
+        "description": "The American author of The Grapes of Wrath, a Nobel laureate who portrayed Depression-era hardship.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-louis-armstrong",
+        "friendly_name": "Birth of Louis Armstrong",
+        "year": 1901,
+        "description": "The American trumpeter and singer whose virtuosity and charisma made him a defining voice of jazz.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-walt-disney",
+        "friendly_name": "Birth of Walt Disney",
+        "year": 1901,
+        "description": "The American animator who created Mickey Mouse and built an entertainment empire of films and theme parks.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "first-world-series",
+        "friendly_name": "First World Series Played",
+        "year": 1903,
+        "description": "Baseball's American and National Leagues met in the first World Series, won by the Boston Americans.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "american-league-founded-1901",
+        "friendly_name": "American League Founded",
+        "year": 1901,
+        "description": "The American League declared itself a major league, launching a rivalry that would create modern Major League Baseball.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "philippine-american-war",
+        "friendly_name": "Philippine-American War",
+        "year": 1899,
+        "year_end": 1902,
+        "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  }
+]
