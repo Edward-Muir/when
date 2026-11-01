@@ -1,9 +1,9 @@
 {
   "deck": "faith-founded",
   "name": "Faith Founded",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T18:07:42.022Z",
+  "updated_at": "2026-11-01T19:07:00.766Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-11-01T18:07:42.022Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-01T19:07:00.766Z"
     }
   ],
   "slugs": {
