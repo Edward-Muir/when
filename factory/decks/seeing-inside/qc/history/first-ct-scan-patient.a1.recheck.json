@@ -1,0 +1,15 @@
+{
+  "slug": "first-ct-scan-patient",
+  "description": "A dark oil painting of a technician seated at a CRT console showing a bright brain cross-section, while a patient lies on a table with their head inside a large boxy scanner with a glowing ring opening. Racks of dials and cables fill the room. A small plate on top of the scanner reads 'EMI'. No frame or border, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The scanner housing has a painted plate reading 'EMI'. Remove the lettering so the machine is unmarked."
+}

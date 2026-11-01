@@ -1,0 +1,20 @@
+{
+  "slug": "forssmann-heart-catheter",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "dd073e31ec04502456504accf4e97253db8d4042e3850a92dd5ec07b88f91bd2",
+  "dhash": "c9b08498b0b058c9",
+  "nearest": {
+    "deck": {
+      "slug": "apgar-score-newborns",
+      "distance": 19
+    },
+    "catalogue": {
+      "slug": "first-printed-newspaper-relation",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

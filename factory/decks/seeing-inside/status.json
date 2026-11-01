@@ -1,0 +1,178 @@
+{
+  "deck": "seeing-inside",
+  "name": "Seeing Inside",
+  "stage": "pr-open",
+  "created_at": "2026-10-30T17:16:48.705Z",
+  "updated_at": "2026-10-31T09:08:44.040Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-30T17:16:48.705Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-31T03:08:57.043Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T08:07:00.320Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-31T09:06:50.458Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-31T09:08:44.040Z"
+    }
+  ],
+  "slugs": {
+    "hippocratic-bedside-diagnosis": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f8381e8e250618ecb00ae31c626f7417936682afd6f656ca28c8144a05d9c6be",
+      "updated_at": "2026-10-31T04:07:55.648Z"
+    },
+    "herophilus-pulse-timing": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "613932d944902a44df9ae9a25d3f079ba1a32f62436f7e340932452e16426afc",
+      "updated_at": "2026-10-31T04:07:55.681Z"
+    },
+    "wang-shuhe-pulse-classic": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "cda4d91f85b3410f122a438a3b3d5a3ba1df4709f32e096a6bfabfcdad810273",
+      "updated_at": "2026-10-31T06:07:35.842Z"
+    },
+    "santorio-body-thermometer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0777df4a7856f92a3b4ec9d528d83854a10673f27d241e1cc5798105b046376a",
+      "updated_at": "2026-10-31T04:07:55.741Z"
+    },
+    "leeuwenhoek-blood-cells": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b97e3110e6040c11123c966ce7d15322740468e656985666956d2db5812aadcb",
+      "updated_at": "2026-10-31T04:07:55.772Z"
+    },
+    "auenbrugger-chest-percussion": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ba9606c5212eddab7661fde5634a6d5e108d5384793170a8a488a082c680d24b",
+      "updated_at": "2026-10-31T04:07:55.805Z"
+    },
+    "bozzini-light-conductor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "be44bbca6a85efd6b274895dec1766fdf97f2b8d0f170304b384686f4fc9413b",
+      "updated_at": "2026-10-31T04:07:55.839Z"
+    },
+    "riva-rocci-blood-pressure-cuff": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f285d204f8fee265b294e08ef7152078c8dcfe6e2be306511f8eb846109a3edb",
+      "updated_at": "2026-10-31T04:07:55.876Z"
+    },
+    "berger-eeg-recorded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "591345e868974ae7660f17663c087ce781da50914db204c7de653c1b686001d9",
+      "updated_at": "2026-10-31T04:07:55.911Z"
+    },
+    "papanicolaou-smear-test": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "54c32dbac6aed3b625868472226bffed0aee8a1caa6756d7165c0917827f8f82",
+      "updated_at": "2026-10-31T04:07:55.944Z"
+    },
+    "forssmann-heart-catheter": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dd073e31ec04502456504accf4e97253db8d4042e3850a92dd5ec07b88f91bd2",
+      "updated_at": "2026-10-31T06:07:35.874Z"
+    },
+    "apgar-score-newborns": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f7c5b7dc7702eb20984b1b8ff3188231748c9d7fa409286002ec941956673b89",
+      "updated_at": "2026-10-31T06:07:35.904Z"
+    },
+    "hirschowitz-fibre-optic-endoscope": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9560bfd612b9437b06fd6001f3a3609b2620ba661d17b9943289374600ff6993",
+      "updated_at": "2026-10-31T06:07:35.938Z"
+    },
+    "first-ct-scan-patient": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "4a84b884b4357bc5bfdcdf49e40449deaab6a0b81b65319f8e11573e0bf8d97b",
+      "updated_at": "2026-10-31T08:07:00.257Z"
+    },
+    "home-pregnancy-test-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "efba98936c9b8673abfcf856e02d0d228f258f48f89fd0d2c841adea4345e8d6",
+      "updated_at": "2026-10-31T06:07:36.002Z"
+    },
+    "first-mri-human-scan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0f2922fa284b2d1e1ae0dace3399b31eb746e25d4521aee65ee13a5f66cb71de",
+      "updated_at": "2026-10-31T06:07:36.037Z"
+    },
+    "first-hiv-blood-test": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7abb3dad32a3a947760cccd45f6b998dd95fd859f4186245b50483b9d4983894",
+      "updated_at": "2026-10-31T06:07:36.073Z"
+    },
+    "fmri-brain-imaging": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "14f874623ea13deac8e6915c2ef55140ae41eee85716a3dbe4eec8d7a89f593d",
+      "updated_at": "2026-10-31T06:07:36.110Z"
+    },
+    "capsule-endoscopy-camera-pill": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b0ec1e0d41cadd9356fa2dace0bb325c9615f5c207c41055de4c84c17248661d",
+      "updated_at": "2026-10-31T06:07:36.145Z"
+    },
+    "smartwatch-ecg-approved": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "02a601099bb565ed4f6ad8243be31ec46e41e6ee6d4a8470075a6106adf7acba",
+      "updated_at": "2026-10-31T08:07:00.290Z"
+    },
+    "mass-covid-testing": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c49b8bb85e6f10a8c0eaa77fa998fd5624a2d0aa729ae6afc4e01d741ef7606c",
+      "updated_at": "2026-10-31T08:07:00.320Z"
+    }
+  }
+}

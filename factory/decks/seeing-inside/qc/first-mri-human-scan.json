@@ -1,0 +1,15 @@
+{
+  "slug": "first-mri-human-scan",
+  "description": "A large ring-shaped metal magnet, wrapped in copper coils and bolted to a cylindrical tank on top, sits in a dim workshop-like room. A flat metal patient platform extends toward the open bore. Cables run across the frame and benches with tools line the background. No people, no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

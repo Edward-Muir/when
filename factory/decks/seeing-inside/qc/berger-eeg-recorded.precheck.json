@@ -1,0 +1,20 @@
+{
+  "slug": "berger-eeg-recorded",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "591345e868974ae7660f17663c087ce781da50914db204c7de653c1b686001d9",
+  "dhash": "6bc993925874f4cd",
+  "nearest": {
+    "deck": {
+      "slug": "hippocratic-bedside-diagnosis",
+      "distance": 27
+    },
+    "catalogue": {
+      "slug": "steam-hammer",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "berger-eeg-recorded",
+  "description": "A painted scene in dark, warm tones. A man in a waistcoat and rolled white sleeves leans in to fit small metal electrodes to the scalp of a young man seated in a wooden chair in a dim workshop. Trailing black wires run from the electrodes to a brass-and-black drum recording instrument on the right, which feeds out a long paper strip covered in wavy, handwriting-like marks. Glass jars sit on shelves behind. The painting fills the whole image edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

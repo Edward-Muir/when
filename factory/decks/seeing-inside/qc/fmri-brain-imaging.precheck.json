@@ -1,0 +1,20 @@
+{
+  "slug": "fmri-brain-imaging",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "14f874623ea13deac8e6915c2ef55140ae41eee85716a3dbe4eec8d7a89f593d",
+  "dhash": "ccce96f8d8d4844d",
+  "nearest": {
+    "deck": {
+      "slug": "berger-eeg-recorded",
+      "distance": 21
+    },
+    "catalogue": {
+      "slug": "diors-new-look",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

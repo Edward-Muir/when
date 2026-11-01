@@ -1,0 +1,15 @@
+{
+  "slug": "wang-shuhe-pulse-classic",
+  "description": "An East Asian man with a topknot, in grey layered robes, sits at a wooden table and presses fingers to the wrist of a pale arm reaching in from the left, which rests on a small cushion. A bamboo-slip scroll lies on the table at right, its slips covered in rows of clearly drawn Chinese-style characters. Dark room with carved wooden cabinet and chair. The painting fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The bamboo slips carry rows of distinct, character-like writing in the foreground, which counts as painted text. Repaint the slips as plain bamboo strips with no marks, or only faint unreadable texture."
+}

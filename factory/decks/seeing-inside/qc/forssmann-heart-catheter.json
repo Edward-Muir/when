@@ -1,0 +1,15 @@
+{
+  "slug": "forssmann-heart-catheter",
+  "description": "A painting in dark, oil-like brushwork. Center-left, a backlit chest X-ray on a light box shows the ribcage, spine and a thin pale line curving down through the chest. Two dark silhouetted hands hold the edges of the film. In the foreground a stainless steel tray holds a coiled red-brown tube, with a syringe, small glass vials and forceps on the table beside it. Only the dim edge of the light box and the film's dark rim appear, with no text or signature visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

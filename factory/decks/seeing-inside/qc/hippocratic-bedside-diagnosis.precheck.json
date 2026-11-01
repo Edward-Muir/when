@@ -1,0 +1,20 @@
+{
+  "slug": "hippocratic-bedside-diagnosis",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "f8381e8e250618ecb00ae31c626f7417936682afd6f656ca28c8144a05d9c6be",
+  "dhash": "6673e7aa7c773158",
+  "nearest": {
+    "deck": {
+      "slug": "auenbrugger-chest-percussion",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "anc-founded",
+      "distance": 18
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "apgar-score-newborns",
+  "description": "A crying newborn lies on a metal tray under a dark, moody lamp. A gloved hand, cuff of a green-grey surgical gown, reaches in and holds the baby's tiny fist. A white cloth drapes the baby's hips. Behind are a small dial box, bottles and dim equipment in a dark room. The painting is an oil-style image that fills the frame edge to edge, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

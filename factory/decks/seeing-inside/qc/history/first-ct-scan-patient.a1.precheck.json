@@ -1,0 +1,20 @@
+{
+  "slug": "first-ct-scan-patient",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "f2cc314265db1b38a7cee66db4887596c75fbc5c65eeafe2081eedbd7f714d61",
+  "dhash": "e0c09099d1da8a58",
+  "nearest": {
+    "deck": {
+      "slug": "fmri-brain-imaging",
+      "distance": 22
+    },
+    "catalogue": {
+      "slug": "psamtik-i-reunifies-egypt",
+      "distance": 14
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

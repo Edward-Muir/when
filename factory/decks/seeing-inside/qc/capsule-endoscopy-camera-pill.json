@@ -1,0 +1,15 @@
+{
+  "slug": "capsule-endoscopy-camera-pill",
+  "description": "A painting of a small transparent cylindrical capsule with a lens and ring of white LEDs at one end, resting on the tip of a human thumb. The capsule's internal components are visible through the clear shell. The background is a near-black dark brown, and the thumb and hand are lit warmly from the left. There is no visible text, frame or border, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
