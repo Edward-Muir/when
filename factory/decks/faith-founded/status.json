@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T17:19:54.059Z",
+  "updated_at": "2026-11-01T17:22:32.309Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-01T17:19:54.059Z"
     },
     "azusa-street-revival": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "28599838011f48a9658f10a9c5bfcc6f015d8cebbb84e93c377441a3f7b5ceff",
+      "updated_at": "2026-11-01T17:22:32.309Z"
     },
     "rastafari-begins-coronation": {
       "state": "pending",
