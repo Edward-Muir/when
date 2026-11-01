@@ -3,7 +3,7 @@
   "name": "Dress Code",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T08:17:09.512Z",
-  "updated_at": "2026-11-01T10:07:45.827Z",
+  "updated_at": "2026-11-01T11:10:20.544Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-01T10:07:45.827Z"
     },
     "diana-revenge-dress": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d4e092d2225c7cd9f15a3fafa57d83bd2109fb94f206864a1d6bf8f783b37810",
+      "updated_at": "2026-11-01T11:10:20.544Z"
     },
     "jlo-green-versace-dress": {
       "state": "pending",
