@@ -1,0 +1,19 @@
+{
+  "zhang-qian-western-mission": {"recognition":"medium","inferability":"high","anchors":["Han envoy","nomads"],"why":"Han dynasty places it in ancient China"},
+  "cleopatra-meets-antony-tarsus": {"recognition":"high","inferability":"high","anchors":["Cleopatra","Roman general","Antony"],"why":"Cleopatra and Antony place it in the late Roman Republic"},
+  "roman-embassy-han-court": {"recognition":"low","inferability":"high","anchors":["Roman emperor","Han"],"why":"Roman emperor and Han court mean antiquity"},
+  "abul-abbas-elephant-charlemagne": {"recognition":"medium","inferability":"high","anchors":["Charlemagne","caliph","Frankish"],"why":"Charlemagne anchors the early medieval era"},
+  "ibn-fadlan-volga-embassy": {"recognition":"low","inferability":"high","anchors":["caliph","Norse traders","Volga Bulgars"],"why":"caliph's envoy and Norse traders point to the Viking-age medieval era"},
+  "carpini-mission-great-khan": {"recognition":"low","inferability":"high","anchors":["Franciscan friar","pope","Mongol"],"why":"Mongol ruler plus pope and friar means 13th-century medieval"},
+  "rabban-sauma-embassy-europe": {"recognition":"low","inferability":"high","anchors":["Mongol Il-Khan","Nestorian monk","pope"],"why":"Mongol Il-Khan seeking alliance against Muslims implies the Crusader-era medieval period"},
+  "clavijo-embassy-timur": {"recognition":"low","inferability":"high","anchors":["Timur","Castilian","Samarkand"],"why":"Timur the conqueror places it in late medieval era"},
+  "matteo-ricci-enters-beijing": {"recognition":"medium","inferability":"high","anchors":["Jesuit","Ming court","Forbidden City"],"why":"Ming court and Jesuit imply the 16th-17th centuries"},
+  "hasekura-embassy-rome": {"recognition":"low","inferability":"high","anchors":["samurai","pope","king of Spain","Pacific and Atlantic"],"why":"samurai crossing oceans to a pope and Spanish king suggests early modern"},
+  "siamese-embassy-louis-xiv": {"recognition":"low","inferability":"high","anchors":["Louis XIV","Versailles"],"why":"Louis XIV and Versailles place it in the late 17th century"},
+  "peter-great-grand-embassy": {"recognition":"medium","inferability":"high","anchors":["Peter the Great","tsar"],"why":"Peter the Great anchors it around 1700"},
+  "iwakura-mission-west": {"recognition":"low","inferability":"medium","anchors":["Japanese leaders","treaty revision","modern states"],"why":"treaty revision and studying modern states suggest 19th-century Meiji era but no explicit marker"},
+  "bjorko-meeting-kaiser-tsar": {"recognition":"low","inferability":"high","anchors":["Kaiser","tsar","yacht","defensive pact"],"why":"Kaiser and tsar together point to the pre-WWI era"},
+  "vienna-summit-kennedy-khrushchev": {"recognition":"medium","inferability":"high","anchors":["Kennedy","Khrushchev","Soviet"],"why":"Kennedy and Khrushchev mean the early 1960s Cold War"},
+  "sadat-visits-jerusalem": {"recognition":"high","inferability":"high","anchors":["Sadat","Israel","Arab leader"],"why":"Sadat and Israel place it in the 1970s"},
+  "reykjavik-summit-reagan-gorbachev": {"recognition":"high","inferability":"high","anchors":["Reagan","Gorbachev","nuclear weapons"],"why":"Reagan and Gorbachev mean the 1980s"}
+}
