@@ -1,0 +1,21 @@
+{
+  "pentecost-church-begins": {"recognition": "high", "inferability": "high", "anchors": ["crucified Galilean teacher", "Jerusalem"], "why": "Jesus's followers place it in the first century"},
+  "mani-founds-manichaeism": {"recognition": "low", "inferability": "medium", "anchors": ["Persian prophet", "dualist faith"], "why": "Persian prophet suggests late antiquity but is vague"},
+  "anan-founds-karaite-judaism": {"recognition": "very-low", "inferability": "medium", "anchors": ["Babylonian scholar", "oral law"], "why": "oral law debate suggests early medieval, not clearly"},
+  "druze-faith-emerges": {"recognition": "medium", "inferability": "high", "anchors": ["Cairo", "Fatimid ruler"], "why": "Fatimid caliphate places it in the medieval era"},
+  "bruno-founds-carthusians": {"recognition": "low", "inferability": "medium", "anchors": ["hermitage", "order of contemplatives"], "why": "monastic order points to the medieval era"},
+  "cistercians-founded-citeaux": {"recognition": "low", "inferability": "high", "anchors": ["Benedictine rule", "abbey", "Burgundy"], "why": "Benedictine reform orders are clearly medieval"},
+  "knights-templar-founded": {"recognition": "high", "inferability": "high", "anchors": ["Holy Land", "military order", "pilgrims"], "why": "Crusader-era military order"},
+  "peter-waldo-waldensians": {"recognition": "low", "inferability": "medium", "anchors": ["Lyon merchant", "heretical lay movement"], "why": "heresy and merchant suggest medieval"},
+  "dominic-founds-dominicans": {"recognition": "medium", "inferability": "high", "anchors": ["friars", "heresy", "Castilian priest"], "why": "preaching friars against heresy is the high medieval era"},
+  "smyth-founds-first-baptists": {"recognition": "low", "inferability": "medium", "anchors": ["English exiles", "Amsterdam"], "why": "Baptist origins suggest early modern"},
+  "ammann-founds-amish": {"recognition": "medium", "inferability": "medium", "anchors": ["Anabaptist", "Mennonites"], "why": "Anabaptists point to the post-Reformation era"},
+  "wesley-heart-strangely-warmed": {"recognition": "medium", "inferability": "medium", "anchors": ["Anglican priest", "Methodist"], "why": "Methodism suggests 18th century but not firmly"},
+  "ann-lee-shakers-america": {"recognition": "medium", "inferability": "medium", "anchors": ["Atlantic crossing", "New York sect"], "why": "colonial-era migration to New York"},
+  "smith-founds-church-of-christ": {"recognition": "high", "inferability": "high", "anchors": ["Latter-day Saints", "New York farmer", "new scripture"], "why": "Mormon origins are well known, 19th century America"},
+  "eddy-charters-christian-science": {"recognition": "medium", "inferability": "medium", "anchors": ["New England author", "Boston"], "why": "Christian Science suggests 19th century"},
+  "azusa-street-revival": {"recognition": "medium", "inferability": "medium", "anchors": ["Los Angeles", "speaking in tongues"], "why": "Pentecostal revival suggests early 20th century"},
+  "rastafari-begins-coronation": {"recognition": "medium", "inferability": "medium", "anchors": ["Ethiopian emperor", "Jamaican"], "why": "Haile Selassie era, early 20th century"},
+  "missionaries-of-charity-founded": {"recognition": "high", "inferability": "high", "anchors": ["nun in Calcutta", "poorest of the poor"], "why": "Mother Teresa implied, 20th century"},
+  "lavey-founds-church-of-satan": {"recognition": "medium", "inferability": "high", "anchors": ["San Francisco showman", "atheistic religion", "new year"], "why": "modern counterculture era clues"}
+}
