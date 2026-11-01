@@ -1,0 +1,128 @@
+[
+  {
+    "name": "pheidippides-marathon-run",
+    "friendly_name": "Pheidippides Runs to Athens",
+    "description": "Legend says a Greek runner raced to Athens with news of victory over the invading Persians, then collapsed.",
+    "category": "warfare"
+  },
+  {
+    "name": "cursus-publicus-founded",
+    "friendly_name": "Rome's Imperial Courier Relay",
+    "description": "Rome's first emperor set up an official system of riders, wagons and way stations to carry state messages.",
+    "category": "empires"
+  },
+  {
+    "name": "mongol-yam-relay-network",
+    "friendly_name": "The Mongol Yam Relay",
+    "description": "The Mongol Empire formalised a vast chain of horse stations letting riders carry orders across Asia at great speed.",
+    "category": "empires"
+  },
+  {
+    "name": "beacon-chain-armada-warning",
+    "friendly_name": "Beacon Fires Warn of the Armada",
+    "description": "A chain of hilltop bonfires carried news of the approaching Spanish fleet across England within hours.",
+    "category": "warfare"
+  },
+  {
+    "name": "royal-mail-opens-to-public",
+    "friendly_name": "Royal Mail Opens to the Public",
+    "description": "A king allowed ordinary people to send letters through the royal postal service, for a fee set by distance.",
+    "category": "commerce"
+  },
+  {
+    "name": "first-mail-coach-bath-london",
+    "friendly_name": "First Mail Coach Runs",
+    "description": "Fast, guarded coaches replaced slow post-boys on a trial route between two English cities, speeding letters.",
+    "category": "invention"
+  },
+  {
+    "name": "chappe-semaphore-line",
+    "friendly_name": "Chappe's Semaphore Line Opens",
+    "description": "Towers with movable arms relayed coded signals from hilltop to hilltop, sending news across a country in minutes.",
+    "category": "invention"
+  },
+  {
+    "name": "cooke-wheatstone-telegraph",
+    "friendly_name": "Cooke and Wheatstone Telegraph",
+    "description": "Two Englishmen patented a needle telegraph that pointed to letters, soon strung alongside railway lines.",
+    "category": "invention"
+  },
+  {
+    "name": "pony-express-launches",
+    "friendly_name": "The Pony Express Launches",
+    "description": "Riders changing horses at relay stations raced mail across the American West between Missouri and California.",
+    "category": "trade"
+  },
+  {
+    "name": "rural-free-delivery-begins",
+    "friendly_name": "Free Rural Mail Delivery Begins",
+    "description": "American farm families got mail delivered to their roadside boxes instead of travelling to town to collect it.",
+    "category": "commerce"
+  },
+  {
+    "name": "marconi-transatlantic-radio-signal",
+    "friendly_name": "Marconi's Transatlantic Signal",
+    "description": "An Italian inventor received a faint Morse letter sent by wireless across the Atlantic Ocean.",
+    "category": "invention"
+  },
+  {
+    "name": "first-official-airmail-flight",
+    "friendly_name": "First Official Airmail Flight",
+    "description": "A pilot carried sacks of letters by aeroplane at an Indian exhibition, the first officially sanctioned mail flight.",
+    "category": "invention"
+  },
+  {
+    "name": "cher-ami-pigeon-message",
+    "friendly_name": "Cher Ami Delivers the Message",
+    "description": "A wounded carrier pigeon flew through gunfire to save a trapped battalion and became a wartime hero.",
+    "category": "warfare"
+  },
+  {
+    "name": "transatlantic-radiotelephone-service",
+    "friendly_name": "Transatlantic Phone Calls Begin",
+    "description": "Callers in London and New York could speak across the ocean by radio telephone, at a very high price.",
+    "category": "invention"
+  },
+  {
+    "name": "china-clipper-pacific-airmail",
+    "friendly_name": "China Clipper Flies Pacific Airmail",
+    "description": "A giant flying boat carried airmail from California to Asia, opening regular air service over the Pacific.",
+    "category": "trade"
+  },
+  {
+    "name": "tat-1-transatlantic-telephone-cable",
+    "friendly_name": "First Transatlantic Phone Cable",
+    "description": "An undersea cable carrying dozens of voice circuits replaced radio links between Europe and North America.",
+    "category": "invention"
+  },
+  {
+    "name": "zip-codes-introduced",
+    "friendly_name": "ZIP Codes Come to American Mail",
+    "description": "The US post office introduced five-digit codes to speed the sorting of letters by machine.",
+    "category": "invention"
+  },
+  {
+    "name": "dhl-express-courier-founded",
+    "friendly_name": "DHL Begins Express Courier Service",
+    "description": "A small San Francisco company began flying shipping documents to Hawaii, starting an international express network.",
+    "category": "commerce"
+  },
+  {
+    "name": "fedex-first-deliveries",
+    "friendly_name": "FedEx Begins Deliveries",
+    "description": "A new company flew its first overnight packages from Memphis to cities across the United States.",
+    "category": "commerce"
+  },
+  {
+    "name": "western-union-ends-telegrams",
+    "friendly_name": "Western Union Ends Telegrams",
+    "description": "The company that once dominated the telegraph quietly stopped sending telegrams, ending a long era of wired messages.",
+    "category": "commerce"
+  },
+  {
+    "name": "amazon-first-drone-delivery",
+    "friendly_name": "Amazon Delivers a Parcel by Drone",
+    "description": "An online retailer completed its first customer delivery by unmanned aircraft, carrying a parcel to a rural home.",
+    "category": "invention"
+  }
+]

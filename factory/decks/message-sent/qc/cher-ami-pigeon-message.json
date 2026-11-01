@@ -1,0 +1,15 @@
+{
+  "slug": "cher-ami-pigeon-message",
+  "description": "A grey pigeon with spread wings flies over a smoky, burning battlefield with dead tree stumps and shell craters. A small metal canister is tied to one of its legs, and streaks of fire or shells cross the dark sky. No text, frame or people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
