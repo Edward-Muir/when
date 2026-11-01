@@ -1,0 +1,16 @@
+{
+  "trial-of-joan-of-arc-rouen": {"recognition": "high", "inferability": "high", "anchors": ["Joan of Arc", "church court", "burned"], "why": "Joan of Arc is taught widely and places it in the medieval era"},
+  "trial-of-sir-thomas-more": {"recognition": "medium", "inferability": "high", "anchors": ["king as head of English church", "Lord Chancellor"], "why": "Refusing the king as church head points to Henry VIII and the Reformation"},
+  "charles-i-put-on-trial": {"recognition": "high", "inferability": "high", "anchors": ["Charles I", "Parliament", "English king"], "why": "Charles I's trial and execution is well known, and a king tried by Parliament is the 17th century"},
+  "zenger-libel-acquittal": {"recognition": "medium", "inferability": "medium", "anchors": ["New York", "colonial press freedom", "printer"], "why": "A printer and press freedom in New York suggest colonial America, but the decade is unclear"},
+  "boston-massacre-soldiers-trial": {"recognition": "medium", "inferability": "high", "anchors": ["John Adams", "redcoats", "colonial jury", "Boston"], "why": "Redcoats, a colonial jury and John Adams place it just before the American Revolution"},
+  "amistad-supreme-court-ruling": {"recognition": "medium", "inferability": "high", "anchors": ["John Quincy Adams", "slave ship", "US Supreme Court"], "why": "Slave ships and John Quincy Adams point to the early 19th-century US"},
+  "john-brown-trial-harpers-ferry": {"recognition": "medium", "inferability": "high", "anchors": ["abolitionist", "Harpers Ferry", "federal arsenal"], "why": "Abolitionist and arsenal raid place it just before the US Civil War"},
+  "oscar-wilde-trials": {"recognition": "high", "inferability": "high", "anchors": ["Oscar Wilde", "hard labour", "playwright"], "why": "Oscar Wilde and hard labour point to Victorian Britain"},
+  "sacco-vanzetti-convicted": {"recognition": "medium", "inferability": "medium", "anchors": ["Italian immigrant anarchists", "payroll murder", "worldwide protest"], "why": "Immigrant anarchists suggest early 20th century US, but few clues are firm"},
+  "al-capone-tax-evasion-conviction": {"recognition": "high", "inferability": "high", "anchors": ["Al Capone", "Chicago gangster"], "why": "Al Capone is a famous figure of the Prohibition era"},
+  "us-v-nixon-supreme-court": {"recognition": "high", "inferability": "high", "anchors": ["Nixon", "White House tapes", "president's fall"], "why": "Nixon and the tapes place it in the 1970s Watergate era"},
+  "rodney-king-officers-acquitted": {"recognition": "high", "inferability": "medium", "anchors": ["filmed beating", "unrest in a major city"], "why": "Well known, but the text only hints at the video era without naming the decade"},
+  "bush-v-gore-ruling": {"recognition": "high", "inferability": "high", "anchors": ["Bush v. Gore", "Florida recount"], "why": "The Florida recount case is a well-known event of the 2000 election"},
+  "depp-v-heard-verdict": {"recognition": "high", "inferability": "high", "anchors": ["livestreamed", "social media", "Hollywood actors"], "why": "A livestreamed trial that gripped social media is clearly recent"}
+}

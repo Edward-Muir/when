@@ -1,0 +1,39 @@
+{
+  "id": "day-in-court",
+  "name": "Day in Court",
+  "scope": "Yes if it is a famous trial or court ruling",
+  "boundary": "Day in Court: the courtroom; civil-rights rulings share with Civil Rights Road, trials of books, Galileo's included, go to Banned!, police and prisons to Crime & Punishment, written law to Law of the Land.",
+  "neighbours": [
+    "civil-rights",
+    "banned",
+    "crime-and-punishment"
+  ],
+  "grid": {
+    "categories": [
+      "law",
+      "figures"
+    ],
+    "eras": [
+      "earlyModern",
+      "industrial",
+      "worldWars"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Socrates tried in Athens (399 BC)",
+    "Joan of Arc tried (1431)",
+    "Sacco and Vanzetti convicted (1921)",
+    "Salem witch trials (1692)",
+    "Marbury v. Madison (1803)",
+    "Dreyfus Affair begins (1894)",
+    "Scopes Monkey Trial (1925)",
+    "Nuremberg trials open (1945)",
+    "Eichmann trial opens (1961)",
+    "O. J. Simpson verdict (1995)"
+  ],
+  "appeal": 3,
+  "status": "authoring"
+}

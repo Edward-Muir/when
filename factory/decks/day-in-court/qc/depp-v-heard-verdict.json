@@ -1,0 +1,15 @@
+{
+  "slug": "depp-v-heard-verdict",
+  "description": "A broadcast camera on a tripod in a wood-panelled courtroom, with a crowd of people holding up phones in the gallery on the left. A wooden lectern with a microphone stands in the centre, a desk with a monitor sits in the right foreground, and a round seal with lettering (apparently 'VIRGINIA') is on the back wall. Warm lamplight, painterly oil-style rendering.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The round seal on the back wall appears to carry lettering (apparently 'VIRGINIA'). It is small and hard to read at this size, so it may count as painted text. Check whether the lettering is legible; if it is, regenerate or crop the seal out. The scene itself (courtroom, livestream camera, phones in the gallery) fits the card."
+}
