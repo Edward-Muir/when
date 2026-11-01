@@ -1,0 +1,254 @@
+{
+ "beats": [
+  {
+   "beat": 0,
+   "decision": "reuse",
+   "slug": "sargon-akkad-empire",
+   "why": "Same event and same year as the existing card sargon-akkad-empire."
+  },
+  {
+   "beat": 1,
+   "decision": "new",
+   "slug": "hammurabi-babylon-rise"
+  },
+  {
+   "beat": 2,
+   "decision": "reuse",
+   "slug": "new-kingdom-egypt-begins",
+   "why": "Same event and same year as the existing card new-kingdom-egypt-begins."
+  },
+  {
+   "beat": 3,
+   "decision": "reuse",
+   "slug": "assyrian-empire-expansion",
+   "why": "Same event and same year as the existing card assyrian-empire-expansion."
+  },
+  {
+   "beat": 4,
+   "decision": "new",
+   "slug": "nabopolassar-neo-babylonian-empire"
+  },
+  {
+   "beat": 5,
+   "decision": "reuse",
+   "slug": "achaemenid-empire-persia",
+   "why": "Same event and same year as the existing card achaemenid-empire-persia."
+  },
+  {
+   "beat": 6,
+   "decision": "cut",
+   "why": "Delian League is an alliance, not an empire founding; weakest on scope"
+  },
+  {
+   "beat": 7,
+   "decision": "new",
+   "slug": "alexander-invades-persia-granicus"
+  },
+  {
+   "beat": 8,
+   "decision": "reuse",
+   "slug": "maurya-empire",
+   "why": "Same event and same year as the existing card maurya-empire."
+  },
+  {
+   "beat": 9,
+   "decision": "new",
+   "slug": "arsaces-founds-parthian-empire"
+  },
+  {
+   "beat": 10,
+   "decision": "reuse",
+   "slug": "qin-unification",
+   "why": "Same event and same year as the existing card qin-unification."
+  },
+  {
+   "beat": 11,
+   "decision": "new",
+   "slug": "modu-shanyu-xiongnu-empire"
+  },
+  {
+   "beat": 12,
+   "decision": "cut",
+   "why": "Han founding stays with Chinese Dynasties; crowds the Qin decade"
+  },
+  {
+   "beat": 13,
+   "decision": "reuse",
+   "slug": "roman-empire-founded",
+   "why": "Same event and same year as the existing card roman-empire-founded."
+  },
+  {
+   "beat": 14,
+   "decision": "reuse",
+   "slug": "sasanian-empire-persia",
+   "why": "Same event and same year as the existing card sasanian-empire-persia."
+  },
+  {
+   "beat": 15,
+   "decision": "reuse",
+   "slug": "gupta-empire",
+   "why": "Same event and same year as the existing card gupta-empire."
+  },
+  {
+   "beat": 16,
+   "decision": "reuse",
+   "slug": "umayyad-caliphate",
+   "why": "Same event and same year as the existing card umayyad-caliphate."
+  },
+  {
+   "beat": 17,
+   "decision": "cut",
+   "why": "Abbasid Caliphate belongs to Caliphates; Umayyads kept as the caliphal founding"
+  },
+  {
+   "beat": 18,
+   "decision": "reuse",
+   "slug": "charlemagne",
+   "why": "Same event and same year as the existing card charlemagne."
+  },
+  {
+   "beat": 19,
+   "decision": "reuse",
+   "slug": "khmer-empire",
+   "why": "Same event and same year as the existing card khmer-empire."
+  },
+  {
+   "beat": 20,
+   "decision": "reuse",
+   "slug": "holy-roman-empire",
+   "why": "Same event and same year as the existing card holy-roman-empire."
+  },
+  {
+   "beat": 21,
+   "decision": "reuse",
+   "slug": "seljuk-empire-founded",
+   "why": "Same event and same year as the existing card seljuk-empire-founded."
+  },
+  {
+   "beat": 22,
+   "decision": "reuse",
+   "slug": "genghis-khan",
+   "why": "Same event and same year as the existing card genghis-khan."
+  },
+  {
+   "beat": 23,
+   "decision": "reuse",
+   "slug": "mali-empire-establishment",
+   "why": "Same event and same year as the existing card mali-empire-establishment."
+  },
+  {
+   "beat": 24,
+   "decision": "cut",
+   "why": "Solomonic restoration is a dynasty change, least famous and weakest on scope"
+  },
+  {
+   "beat": 25,
+   "decision": "reuse",
+   "slug": "ottoman-empire-founded",
+   "why": "Same event and same year as the existing card ottoman-empire-founded."
+  },
+  {
+   "beat": 26,
+   "decision": "reuse",
+   "slug": "vijayanagara-empire",
+   "why": "Same event and same year as the existing card vijayanagara-empire."
+  },
+  {
+   "beat": 27,
+   "decision": "reuse",
+   "slug": "timur-tamerlane-conqueror",
+   "why": "Same event and same year as the existing card timur-tamerlane-conqueror."
+  },
+  {
+   "beat": 28,
+   "decision": "cut",
+   "why": "Ceuta is the start of overseas expansion, not an empire founding"
+  },
+  {
+   "beat": 29,
+   "decision": "reuse",
+   "slug": "aztec-empire",
+   "why": "Same event and same year as the existing card aztec-empire."
+  },
+  {
+   "beat": 30,
+   "decision": "reuse",
+   "slug": "inca-empire-expansion",
+   "why": "Same event and same year as the existing card inca-empire-expansion."
+  },
+  {
+   "beat": 31,
+   "decision": "cut",
+   "why": "Sunni Ali is the least famous; Songhai thin on the catalogue"
+  },
+  {
+   "beat": 32,
+   "decision": "reuse",
+   "slug": "safavid-dynasty-founded",
+   "why": "Same event and same year as the existing card safavid-dynasty-founded."
+  },
+  {
+   "beat": 33,
+   "decision": "cut",
+   "why": "Cortes is a conquest of an empire, not a founding"
+  },
+  {
+   "beat": 34,
+   "decision": "reuse",
+   "slug": "mughal-babur-founds",
+   "why": "Same event and same year as the existing card mughal-babur-founds."
+  },
+  {
+   "beat": 35,
+   "decision": "cut",
+   "why": "Jamestown is a colony, not an empire founding"
+  },
+  {
+   "beat": 36,
+   "decision": "cut",
+   "why": "Peter the Great is a ruler title, belongs to later story"
+  },
+  {
+   "beat": 37,
+   "decision": "cut",
+   "why": "Napoleon is a ruler coronation; later story"
+  },
+  {
+   "beat": 38,
+   "decision": "reuse",
+   "slug": "shaka-zulu-kingdom",
+   "why": "Same event and same year as the existing card shaka-zulu-kingdom."
+  },
+  {
+   "beat": 39,
+   "decision": "cut",
+   "why": "Meiji is a restoration, not an empire founding"
+  },
+  {
+   "beat": 40,
+   "decision": "reuse",
+   "slug": "german-unification",
+   "why": "Same event and same year as the existing card german-unification."
+  }
+ ],
+ "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 6/8               (advisory, 6+ is spread)\n  PASS  band 0 16              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in 800-802  (want 3 or fewer in any 10 years)\n  PASS  shared 1 (nations-of-europe) (want 4 or fewer with any one theme)",
+ "overlap": "Overlap against 52 earlier themes:\n        1  nations-of-europe      german-unification\n        1  chinese-dynasties      qin-unification\n        1  pharaohs               new-kingdom-egypt-begins\n        1  rome                   roman-empire-founded\n        1  ottomans               ottoman-empire-founded\n        1  the-caesars            roman-empire-founded",
+ "footholds": [
+  "b0",
+  "b0",
+  "b0",
+  "b0",
+  "b0",
+  "b0",
+  "b0",
+  "sasanian-empire-persia",
+  "umayyad-caliphate",
+  "charlemagne",
+  "holy-roman-empire",
+  "genghis-khan",
+  "ottoman-empire-founded",
+  "aztec-empire",
+  "inca-empire-expansion",
+  "mughal-babur-founds"
+ ]
+}

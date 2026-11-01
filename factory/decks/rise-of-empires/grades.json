@@ -1,0 +1,32 @@
+{
+  "hammurabi-babylon-rise": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Hammurabi", "Mesopotamian", "Euphrates"],
+    "why": "Hammurabi and Mesopotamia place it firmly in the Bronze Age"
+  },
+  "nabopolassar-neo-babylonian-empire": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["Chaldean", "Assyrian", "Babylon"],
+    "why": "Assyria and Babylon mean ancient Near East, but the Neo-Babylonian date is unclear"
+  },
+  "alexander-invades-persia-granicus": {
+    "recognition": "high",
+    "inferability": "high",
+    "anchors": ["Macedonian king", "Persian Empire", "conquests"],
+    "why": "Alexander's conquests of Persia are widely taught and clearly ancient"
+  },
+  "arsaces-founds-parthian-empire": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Seleucids", "rivalled Rome", "Parthian"],
+    "why": "Seleucids and rivalry with Rome point to the Hellenistic and Roman era"
+  },
+  "modu-shanyu-xiongnu-empire": {
+    "recognition": "low",
+    "inferability": "medium",
+    "anchors": ["steppe nomads", "menaced China"],
+    "why": "Steppe confederation against China suggests ancient or early imperial China, but could be later"
+  }
+}
