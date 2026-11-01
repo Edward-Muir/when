@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T15:11:34.703Z",
+  "updated_at": "2026-11-01T15:14:11.673Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-01T15:11:34.703Z"
     },
     "anan-founds-karaite-judaism": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e3832373c6469cfcd2343d3bd3bc8e8e816a7d184e6eb232b0c29b716bcaeb1f",
+      "updated_at": "2026-11-01T15:14:11.673Z"
     },
     "druze-faith-emerges": {
       "state": "pending",
