@@ -12868,7 +12868,10 @@
     "year": 1815,
     "category": "invention",
     "description": "A flame shielded by fine wire gauze let miners carry light underground without igniting explosive gas.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "swiss-army-knife-introduced",
@@ -12876,7 +12879,10 @@
     "year": 1891,
     "category": "invention",
     "description": "A Swiss cutler began supplying soldiers with a folding multi-tool knife, the archetypal pocket gadget.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "electric-flashlight-ever-ready",
@@ -12884,7 +12890,10 @@
     "year": 1899,
     "category": "invention",
     "description": "A battery and bulb in a tube gave people a portable light to carry in a coat or bag after dark.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "kodak-brownie-camera",
@@ -12892,7 +12901,10 @@
     "year": 1900,
     "category": "invention",
     "description": "A cheap cardboard box camera sold for a dollar and made photography a pastime for children and families.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "thermos-vacuum-flask",
@@ -12900,7 +12912,10 @@
     "year": 1904,
     "category": "invention",
     "description": "A German glassblower's double-walled vacuum bottle kept drinks hot or cold on journeys and picnics.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "leica-i-camera",
@@ -12908,7 +12923,10 @@
     "year": 1925,
     "category": "invention",
     "description": "A compact German camera using cine film showed that serious pictures could come from a device that fit in a coat.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "zippo-lighter-introduced",
@@ -12916,7 +12934,10 @@
     "year": 1933,
     "category": "invention",
     "description": "A Pennsylvania company launched a windproof metal lighter with a hinged lid that clicked open with a thumb.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "handie-talkie-radio",
@@ -12924,7 +12945,10 @@
     "year": 1940,
     "category": "warfare",
     "description": "A hand-held two-way radio let infantry talk to each other without wires, an early step toward carry-anywhere communication.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "kodak-instamatic-camera",
@@ -12932,7 +12956,10 @@
     "year": 1963,
     "category": "invention",
     "description": "A camera with a snap-in film cartridge needed no threading, putting easy photography in millions of pockets.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hp-35-pocket-calculator",
@@ -12940,7 +12967,10 @@
     "year": 1972,
     "category": "invention",
     "description": "A shirt-pocket calculator handled logs and trigonometry, making engineers' slide rules obsolete within a few years.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "motorola-dynatac-8000x",
@@ -12948,7 +12978,10 @@
     "year": 1983,
     "category": "invention",
     "description": "The first commercial hand-held mobile phone cost thousands of dollars, weighed about a kilo and took ten hours to charge.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "blackberry-email-device",
@@ -12956,7 +12989,10 @@
     "year": 1999,
     "category": "invention",
     "description": "A Canadian company's two-way device with a tiny keyboard let business people read and answer email on the move.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "apple-ipad-introduced",
@@ -12964,7 +13000,10 @@
     "year": 2010,
     "category": "invention",
     "description": "A slab-like touchscreen tablet bridged phone and laptop, becoming a default way to read, watch and play on the sofa.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "airpods-wireless-earbuds",
@@ -12972,7 +13011,10 @@
     "year": 2016,
     "category": "invention",
     "description": "Cordless earbuds that paired with a phone and lived in a small charging case spread rapidly on streets and trains.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "samsung-galaxy-fold",
@@ -12980,7 +13022,10 @@
     "year": 2019,
     "category": "invention",
     "description": "A phone with a bendable screen that opens into a small tablet finally went on sale after delays and early screen failures.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "South Korea"
+    ]
   },
   {
     "name": "apple-airtag-tracker",
@@ -12988,6 +13033,9 @@
     "year": 2021,
     "category": "invention",
     "description": "A coin-sized tag attached to keys or bags could be found on a map by nearby phones.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
