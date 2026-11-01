@@ -1,9 +1,9 @@
 {
   "deck": "dress-code",
   "name": "Dress Code",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-01T08:17:09.512Z",
-  "updated_at": "2026-11-01T11:16:36.273Z",
+  "updated_at": "2026-11-01T12:07:04.645Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-01T09:08:43.456Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-01T12:07:04.645Z"
     }
   ],
   "slugs": {
@@ -86,25 +90,25 @@
       "updated_at": "2026-11-01T10:07:45.827Z"
     },
     "diana-revenge-dress": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d4e092d2225c7cd9f15a3fafa57d83bd2109fb94f206864a1d6bf8f783b37810",
-      "updated_at": "2026-11-01T11:10:20.544Z"
+      "updated_at": "2026-11-01T12:07:04.583Z"
     },
     "jlo-green-versace-dress": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bd54eb5ecc623108c597766feb3ac1c0633702269e2172d6318e1b7525ba1e7b",
-      "updated_at": "2026-11-01T11:13:30.148Z"
+      "updated_at": "2026-11-01T12:07:04.614Z"
     },
     "lady-gaga-meat-dress": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0073a08325abab868c6de405270466586f93dc0f1c7396a2599609b24dd35574",
-      "updated_at": "2026-11-01T11:16:36.273Z"
+      "updated_at": "2026-11-01T12:07:04.645Z"
     }
   }
 }
