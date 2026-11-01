@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:22:53.966Z",
+  "updated_at": "2026-11-01T21:25:32.438Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-01T21:22:53.966Z"
     },
     "zippo-lighter-introduced": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f33d182420c1e0915317428ef98d91786ab7639f526176e508554036cc3367d3",
+      "updated_at": "2026-11-01T21:25:32.438Z"
     },
     "handie-talkie-radio": {
       "state": "pending",
