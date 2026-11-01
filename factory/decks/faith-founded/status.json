@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T16:07:36.443Z",
+  "updated_at": "2026-11-01T17:09:19.126Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-01T16:07:36.443Z"
     },
     "ammann-founds-amish": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4e170765696eed9ed4a7edcf51fcb92bc9e01982f695998d33bd565019935e36",
+      "updated_at": "2026-11-01T17:09:19.126Z"
     },
     "wesley-heart-strangely-warmed": {
       "state": "pending",
