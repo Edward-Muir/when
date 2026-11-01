@@ -112,11 +112,11 @@
     "description": "A painterly view of a wooden veranda with stone pillars, looking over a river valley with forested hills. Marigold garlands hang on the railing, an acoustic guitar leans against a pillar, and five floor cushions in red, blue, yellow and green sit on a stone floor with scattered petals, a brass pot and an incense holder. No people, no visible text, and no frame."
   },
   "dalai-lama-nobel-peace-prize": {
-    "state": "qc-fail",
-    "reason": "The gold medal has legible lettering reading NOBEL on its face. Repaint the medal with no inscription, or turned so no letters show.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark painted interior of a columned hall with hanging banners and a wooden table at the centre. A white fringed patterned scarf lies on the table with a gold medal showing a profile portrait and the legible word NOBEL around its rim. No people, no frame, nothing violent."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A large gold medal with a raised relief figure sits on a dark wooden lectern in a vaulted, Gothic-style hall with arched galleries and rows of empty seats. A white, patterned silk scarf drapes over the lectern beside it, with fringed ends hanging down the side. No people are visible. The lighting is warm and dim, in an oil-painting style."
   },
   "bamiyan-buddhas-destroyed": {
     "state": "qc-pass",
