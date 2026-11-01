@@ -1,0 +1,26 @@
+{
+  "id": "faith-founded",
+  "name": "Faith Founded",
+  "scope": "Yes if it is the founding of a religion, sect or religious order",
+  "boundary": "Faith Founded owns the beginnings of faiths, sects and orders; Asia's religions and Sikhism go to Faiths of Asia, the papacy to Habemus Papam, the caliphate to The Caliphs.",
+  "neighbours": ["habemus-papam", "faiths-of-asia", "caliphates"],
+  "grid": {
+    "categories": ["figures", "revolution"],
+    "eras": ["medieval", "earlyModern", "industrial"],
+    "regions": ["Global"]
+  },
+  "example_beats": [
+    "Benedict founds Monte Cassino (529)",
+    "The Hijra to Medina (622)",
+    "Cluny Abbey founded (910)",
+    "Francis founds the Franciscans (1209)",
+    "George Fox founds the Quakers (1652)",
+    "Luther's Ninety-five Theses (1517)",
+    "Ignatius founds the Jesuits (1540)",
+    "Wesley's heart 'strangely warmed', Methodism begins (1738)",
+    "Joseph Smith founds the Church of Christ (1830)",
+    "Salvation Army founded (1865)"
+  ],
+  "appeal": 2,
+  "status": "queued"
+}
