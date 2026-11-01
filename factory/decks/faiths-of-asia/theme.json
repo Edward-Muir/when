@@ -1,0 +1,40 @@
+{
+  "id": "faiths-of-asia",
+  "name": "Faiths of Asia",
+  "scope": "Yes if it is a milestone of Buddhism, Hinduism or another Asian faith",
+  "boundary": "Faiths of Asia: Asia's religions, their founding and Sikhism included; temples as buildings go to Houses of Worship, Islam to The Caliphs, the Diamond Sutra to Letters & Type.",
+  "neighbours": [
+    "faith-founded",
+    "houses-of-worship",
+    "temple-kingdoms"
+  ],
+  "grid": {
+    "categories": [
+      "figures",
+      "architecture"
+    ],
+    "eras": [
+      "ancient",
+      "medieval"
+    ],
+    "regions": [
+      "South Asia",
+      "East Asia",
+      "Southeast Asia"
+    ]
+  },
+  "example_beats": [
+    "Siddhartha attains enlightenment (c. 528 BC)",
+    "Ashoka converts after Kalinga (261 BC)",
+    "Buddhism enters China (67)",
+    "Zhang Daoling founds the Celestial Masters (142)",
+    "Buddhism reaches Japan (552)",
+    "Samye, Tibet's first monastery (779)",
+    "Dalai Lama title created (1578)",
+    "Eisai brings Zen to Japan (1191)",
+    "Guru Granth Sahib compiled (1604)",
+    "Bamiyan Buddhas destroyed (2001)"
+  ],
+  "appeal": 1,
+  "status": "authoring"
+}
