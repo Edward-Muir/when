@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:25:32.438Z",
+  "updated_at": "2026-11-01T21:28:12.618Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-01T21:25:32.438Z"
     },
     "handie-talkie-radio": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3faccd1f1184a8427e60e5ab6616e81eecc0dc8cb34867c0d4a45f66f13b4c61",
+      "updated_at": "2026-11-01T21:28:12.618Z"
     },
     "kodak-instamatic-camera": {
       "state": "pending",
