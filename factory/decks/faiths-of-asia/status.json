@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:11:31.904Z",
+  "updated_at": "2026-11-01T01:14:00.802Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-01T01:11:31.904Z"
     },
     "ashoka-converts-after-kalinga": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "75b408faeaec7a0f93fe43db9bc8c5fa9f20a33924f50e5d3150c30b6508e2bd",
+      "updated_at": "2026-11-01T01:14:00.802Z"
     },
     "celestial-masters-founded": {
       "state": "pending",
