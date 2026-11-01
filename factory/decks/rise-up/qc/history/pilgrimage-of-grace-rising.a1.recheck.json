@@ -1,0 +1,15 @@
+{
+  "slug": "pilgrimage-of-grace-rising",
+  "description": "A large procession of peasants, women and clergy in worn Tudor-era clothing and hoods walks along a muddy path under a stormy sky. A man carries a maroon banner showing a gold chalice, a red heart, stylised pale hands and feet with small red marks, and the letters IHC. A Gothic church with a square tower stands on a hill behind, with bare trees. The painting fills the image with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The banner has the letters IHC painted on it, which is text. Repaint the Five Wounds banner without lettering."
+}

@@ -1,0 +1,2797 @@
+[
+  {
+    "beat": 0,
+    "year": -209,
+    "title": "Chen Sheng and Wu Guang Revolt",
+    "candidates": [
+      {
+        "name": "death-qin-shi-huang",
+        "friendly_name": "Death of Qin Shi Huang",
+        "year": -210,
+        "description": "China's first emperor died while seeking immortality, leaving a vast terracotta army.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "terracotta-army",
+        "friendly_name": "Terracotta Army Created",
+        "year": -210,
+        "description": "Thousands of clay soldiers were buried with China's first emperor.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "alexander-coinage-empire",
+        "friendly_name": "Alexander's Imperial Coinage",
+        "year": -330,
+        "year_end": -125,
+        "description": "Alexander the Great's silver tetradrachms carried one coin standard from Greece to the Indus, outlasting him.",
+        "score": 1,
+        "shared": [
+          "imperial"
+        ]
+      },
+      {
+        "name": "huangdi-neijing-compiled",
+        "friendly_name": "Huangdi Neijing Compiled",
+        "year": -400,
+        "year_end": 260,
+        "description": "China's foundational medical text outlined theories of the body, disease, and treatment by needling.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "punic-wars-second",
+        "friendly_name": "Second Punic War",
+        "year": -218,
+        "year_end": -201,
+        "description": "Hannibal marched elephants over the Alps to invade Italy, threatening Rome's survival for over a decade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bactria-kingdom",
+        "friendly_name": "Bactrian Kingdom Flourishes",
+        "year": -230,
+        "year_end": -200,
+        "description": "The Greco-Bactrian Kingdom expanded under Euthydemus I, controlling parts of modern Afghanistan and Central Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -135,
+    "title": "Sicily's First Slave War Begins",
+    "candidates": [
+      {
+        "name": "han-expansion",
+        "friendly_name": "Han Dynasty Expansion",
+        "year": -141,
+        "year_end": -108,
+        "description": "Emperor Wu expanded Han territory into Central Asia, Korea, and Vietnam through aggressive military campaigns.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bactria-silk-road",
+        "friendly_name": "Bactria Kingdom Major Silk Road Hub",
+        "year": -250,
+        "year_end": -130,
+        "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -73,
+    "title": "Spartacus Leads the Slave Revolt",
+    "candidates": [
+      {
+        "name": "spartacus-revolt",
+        "friendly_name": "Spartacus Slave Revolt",
+        "year": -73,
+        "year_end": -71,
+        "description": "Gladiator Spartacus led the largest slave uprising in Roman history.",
+        "score": 4,
+        "shared": [
+          "spartacus",
+          "slave",
+          "revolt",
+          "roman"
+        ]
+      },
+      {
+        "name": "adena-mound-burials",
+        "friendly_name": "Adena Mound Burial Complex Peak",
+        "year": -300,
+        "year_end": 100,
+        "description": "The Adena culture built conical burial mounds across the Ohio Valley for elite ceremonial interments.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "nabataean-petra-city",
+        "friendly_name": "Petra Built as Nabataean Capital",
+        "year": -300,
+        "year_end": 106,
+        "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 60,
+    "title": "Boudica's Revolt",
+    "candidates": [
+      {
+        "name": "roman-conquest-of-britain",
+        "friendly_name": "Roman Conquest of Britain",
+        "year": 43,
+        "year_end": 84,
+        "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 66,
+    "title": "The Great Jewish Revolt",
+    "candidates": [
+      {
+        "name": "jewish-revolt-begins",
+        "friendly_name": "Jewish Revolt Against Rome",
+        "year": 66,
+        "year_end": 73,
+        "description": "Jews in Judea rose against Roman rule in a rebellion lasting seven years.",
+        "score": 4,
+        "shared": [
+          "jewish",
+          "revolt",
+          "roman",
+          "rebellion"
+        ]
+      },
+      {
+        "name": "lucan-pharsalia",
+        "friendly_name": "Lucan Writes Pharsalia",
+        "year": 65,
+        "description": "Roman poet Lucan composed his epic poem about the civil war between Caesar and Pompey.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "roman-conquest-of-britain",
+        "friendly_name": "Roman Conquest of Britain",
+        "year": 43,
+        "year_end": 84,
+        "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 184,
+    "title": "Yellow Turban Rebellion",
+    "candidates": [
+      {
+        "name": "yellow-turban-rebellion",
+        "friendly_name": "Yellow Turban Rebellion",
+        "year": 184,
+        "year_end": 205,
+        "description": "Peasant uprising in China marked the beginning of the Han Dynasty's collapse.",
+        "score": 4,
+        "shared": [
+          "yellow",
+          "turban",
+          "rebellion",
+          "han"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 532,
+    "title": "Nika Riots in Constantinople",
+    "candidates": [
+      {
+        "name": "nika-riots",
+        "friendly_name": "Nika Riots",
+        "year": 532,
+        "description": "Constantinople erupted in violence that nearly overthrew Emperor Justinian.",
+        "score": 4,
+        "shared": [
+          "nika",
+          "riots",
+          "constantinople",
+          "emperor"
+        ]
+      },
+      {
+        "name": "basilica-cistern-built",
+        "friendly_name": "Basilica Cistern Built",
+        "year": 532,
+        "description": "Byzantine builders raised a vast underground cistern in Constantinople to store aqueduct water for the imperial capital.",
+        "score": 2,
+        "shared": [
+          "constantinople",
+          "capital"
+        ]
+      },
+      {
+        "name": "lateen-sail-spreads",
+        "friendly_name": "Lateen Sail Spreads",
+        "year": 400,
+        "year_end": 900,
+        "description": "Mediterranean sailors adopted the triangular lateen sail, letting ships point much closer into the wind than a square rig ever could.",
+        "score": 1,
+        "shared": [
+          "much"
+        ]
+      },
+      {
+        "name": "chosroes-i-anushirvan",
+        "friendly_name": "Chosroes I Rules Sassanid Persia",
+        "year": 531,
+        "year_end": 579,
+        "description": "Khosrow I Anushirvan reformed Sassanid Persia's tax and military systems, rivaling Justinian's Byzantium.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "digest-of-justinian",
+        "friendly_name": "Digest of Justinian",
+        "year": 533,
+        "description": "Justinian's jurists distilled centuries of Roman legal writing into an authoritative reference work.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "horse-collar-technology",
+        "friendly_name": "Horse Collar",
+        "year": 477,
+        "year_end": 1200,
+        "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 869,
+    "title": "Zanj Rebellion Begins",
+    "candidates": [
+      {
+        "name": "playing-cards-tang-china",
+        "friendly_name": "Playing Cards in Tang China",
+        "year": 868,
+        "description": "China developed the earliest playing cards during the Tang dynasty, spreading the games westward over centuries.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "ghana-gold-trade",
+        "friendly_name": "Ghana Empire Controls Gold Trade",
+        "year": 800,
+        "year_end": 1200,
+        "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+        "score": 1,
+        "shared": [
+          "salt"
+        ]
+      },
+      {
+        "name": "ellora-caves",
+        "friendly_name": "Ellora Caves Construction",
+        "year": 650,
+        "year_end": 1000,
+        "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "diamond-sutra-printed",
+        "friendly_name": "Diamond Sutra Printed",
+        "year": 868,
+        "description": "A Chinese Buddhist scroll became the earliest dated printed book, made with carved woodblocks.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "macedonian-renaissance-byzant",
+        "friendly_name": "Macedonian Renaissance",
+        "year": 867,
+        "year_end": 1056,
+        "description": "The Macedonian dynasty oversaw a revival of classical learning and art in Constantinople spanning the 9th-11th centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-heathen-army",
+        "friendly_name": "Great Heathen Army Invades England",
+        "year": 865,
+        "year_end": 878,
+        "description": "A massive Viking force invaded England, conquering most Anglo-Saxon kingdoms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 874,
+    "title": "Huang Chao's Rebellion",
+    "candidates": [
+      {
+        "name": "wari-empire",
+        "friendly_name": "Wari Empire Peak",
+        "year": 800,
+        "year_end": 900,
+        "description": "The Wari Empire reached its greatest extent, holding highland and coastal Peru from its capital near Ayacucho.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "ghana-gold-trade",
+        "friendly_name": "Ghana Empire Controls Gold Trade",
+        "year": 800,
+        "year_end": 1200,
+        "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+        "score": 1,
+        "shared": [
+          "salt"
+        ]
+      },
+      {
+        "name": "dvaravati-period",
+        "friendly_name": "Dvaravati Period",
+        "year": 650,
+        "year_end": 1100,
+        "description": "The Mon Dvaravati kingdom flourished in central Thailand, spreading Theravada Buddhism across mainland Southeast Asia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "horse-collar-technology",
+        "friendly_name": "Horse Collar",
+        "year": 477,
+        "year_end": 1200,
+        "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "nalanda-university",
+        "friendly_name": "Nalanda University Flourishes",
+        "year": 427,
+        "year_end": 1200,
+        "description": "Nalanda in Bihar, India became one of the world's first residential universities, attracting scholars across Asia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "split-sunni-shia-islam",
+        "friendly_name": "Sunni-Shia Split Formalized",
+        "year": 874,
+        "description": "The occultation of the Twelfth Imam solidified the Sunni-Shia theological divide over succession from Prophet Muhammad.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1323,
+    "title": "Flemish Peasant Revolt",
+    "candidates": [
+      {
+        "name": "zimbabwe-trading-network",
+        "friendly_name": "Great Zimbabwe Trade",
+        "year": 1220,
+        "year_end": 1450,
+        "description": "Great Zimbabwe became a major trading center connecting interior African gold and ivory to Swahili coastal ports.",
+        "score": 1,
+        "shared": [
+          "coastal"
+        ]
+      },
+      {
+        "name": "mansa-musa-pilgrimage",
+        "friendly_name": "Mansa Musa's Pilgrimage",
+        "year": 1324,
+        "description": "The Malian emperor's hajj to Mecca displayed such wealth it caused inflation in Egypt.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "somali-adal-sultanate",
+        "friendly_name": "Adal Sultanate Emerges in Somalia",
+        "year": 1300,
+        "year_end": 1415,
+        "description": "The Adal Sultanate emerged in the Horn of Africa as an Islamic trading state rivaling Christian Ethiopia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "swahili-kilwa-sultanate",
+        "friendly_name": "Kilwa Sultanate Swahili Peak",
+        "year": 1300,
+        "year_end": 1450,
+        "description": "The Kilwa Sultanate reached its apex as a Swahili trading power on the East African coast.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "double-entry-bookkeeping",
+        "friendly_name": "Double-Entry Bookkeeping",
+        "year": 1300,
+        "year_end": 1494,
+        "description": "Accounting method recording every transaction as both a debit and credit, refined by medieval Italian merchants.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "republic-florence-banking",
+        "friendly_name": "Florentine Banking Rises",
+        "year": 1290,
+        "year_end": 1345,
+        "description": "Florentine banking families like the Bardi and Peruzzi pioneered international finance and papal banking.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1358,
+    "title": "The Jacquerie",
+    "candidates": [
+      {
+        "name": "jacquerie-peasant-revolt",
+        "friendly_name": "Jacquerie Peasant Revolt",
+        "year": 1358,
+        "description": "French peasants rose up against the nobility during the Hundred Years' War, attacking castles and manors before being brutally suppressed.",
+        "score": 7,
+        "shared": [
+          "jacquerie",
+          "french",
+          "peasants",
+          "castles",
+          "before",
+          "being",
+          "brutally"
+        ]
+      },
+      {
+        "name": "hanseatic-cog",
+        "friendly_name": "The Hanseatic Cog",
+        "year": 1200,
+        "year_end": 1400,
+        "description": "The flat bottomed, single masted cog, fitted with a stern rudder and high sides, became the workhorse cargo ship of North Sea trade.",
+        "score": 1,
+        "shared": [
+          "north"
+        ]
+      },
+      {
+        "name": "charles-bridge-prague",
+        "friendly_name": "Charles Bridge Begun",
+        "year": 1357,
+        "description": "Charles IV laid the first stone of a fortified bridge across the Vltava in Prague, replacing a flood-wrecked span.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "principality-of-moldavia-founded",
+        "friendly_name": "Principality of Moldavia Founded",
+        "year": 1359,
+        "description": "Bogdan I threw off Hungarian overlordship to found Moldavia, the state modern Moldova traces itself to.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gunpowder-europe",
+        "friendly_name": "Gunpowder Warfare in Europe",
+        "year": 1350,
+        "year_end": 1450,
+        "description": "The introduction of gunpowder weapons revolutionized European warfare.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chimú-chan-chan-peak",
+        "friendly_name": "Chan Chan Urban Development",
+        "year": 1350,
+        "year_end": 1470,
+        "description": "Chan Chan reached its urban peak as the Chimu Empire's capital, housing an estimated 30,000 people.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1381,
+    "title": "Wat Tyler's Peasants' Revolt",
+    "candidates": [
+      {
+        "name": "peasants-revolt-england",
+        "friendly_name": "Peasants' Revolt",
+        "year": 1381,
+        "description": "English peasants led by Wat Tyler marched on London, demanding an end to serfdom.",
+        "score": 6,
+        "shared": [
+          "wat",
+          "tyler",
+          "peasants",
+          "revolt",
+          "london",
+          "english"
+        ]
+      },
+      {
+        "name": "wat-tyler-killed",
+        "friendly_name": "Wat Tyler Killed at Smithfield",
+        "year": 1381,
+        "description": "The leader of the English peasants' rising was struck down at a parley with the king, breaking the revolt.",
+        "score": 6,
+        "shared": [
+          "wat",
+          "tyler",
+          "peasants",
+          "revolt",
+          "english",
+          "king"
+        ]
+      },
+      {
+        "name": "wycliffe-bible",
+        "friendly_name": "Wycliffe Translates Bible",
+        "year": 1382,
+        "description": "John Wycliffe produced the first complete English translation of the Bible.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "lollards-wycliffe",
+        "friendly_name": "Lollard Movement John Wycliffe",
+        "year": 1380,
+        "description": "English theologian John Wycliffe inspired the Lollard movement, advocating Bible translation and challenging papal authority.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "walls-of-benin-city-built",
+        "friendly_name": "Walls of Benin City Built",
+        "year": 1280,
+        "year_end": 1460,
+        "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "battle-kulikovo",
+        "friendly_name": "Battle of Kulikovo",
+        "year": 1380,
+        "description": "Dmitry Donskoy led Russian forces to victory, marking the decline of Mongol rule.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1450,
+    "title": "Jack Cade's Rebellion",
+    "candidates": [
+      {
+        "name": "machu-picchu-construction",
+        "friendly_name": "Machu Picchu Constructed",
+        "year": 1450,
+        "description": "The Inca citadel of Machu Picchu was built high in the Andes as a royal estate for Emperor Pachacuti.",
+        "score": 1,
+        "shared": [
+          "royal"
+        ]
+      },
+      {
+        "name": "walls-of-benin-city-built",
+        "friendly_name": "Walls of Benin City Built",
+        "year": 1280,
+        "year_end": 1460,
+        "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
+        "score": 1,
+        "shared": [
+          "around"
+        ]
+      },
+      {
+        "name": "gunpowder-military-adoption-europe",
+        "friendly_name": "Gunpowder Reshapes Europe",
+        "year": 1450,
+        "year_end": 1530,
+        "description": "Cannons and handguns reshaped European warfare, ending the dominance of castles and armored knights.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "benin-bronze-casting-peak",
+        "friendly_name": "Benin Bronze Casting Peaks",
+        "year": 1450,
+        "description": "Benin Kingdom guild casters produced masterful bronze heads and plaques under the patronage of powerful Obas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "timbuktu-university",
+        "friendly_name": "University of Timbuktu Flourishes",
+        "year": 1450,
+        "description": "Sankore and other madrasas in Timbuktu became major centers of Islamic scholarship in West Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mamluk-cairo-libraries",
+        "friendly_name": "Mamluk Libraries and Scholarship",
+        "year": 1450,
+        "description": "Mamluk-era Cairo supported vast libraries and scholarly institutions, preserving Islamic and classical learning.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1514,
+    "title": "Dozsa's Peasant Revolt",
+    "candidates": [
+      {
+        "name": "safavid-battled-ottomans",
+        "friendly_name": "Safavid-Ottoman Military Conflicts",
+        "year": 1514,
+        "description": "The Ottoman victory at Chaldiran established the border between Sunni Ottoman and Shia Safavid empires.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-of-flodden",
+        "friendly_name": "Battle of Flodden",
+        "year": 1513,
+        "description": "England defeated Scotland, killing King James IV and much of the Scottish nobility.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-of-marignano",
+        "friendly_name": "Battle of Marignano",
+        "year": 1515,
+        "description": "Francis I of France defeated the Swiss, conquering Milan and establishing French dominance in Italy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "machiavelli-prince",
+        "friendly_name": "The Prince Written",
+        "year": 1513,
+        "description": "Machiavelli wrote his influential treatise on political power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "balboa-pacific",
+        "friendly_name": "Balboa Sees the Pacific",
+        "year": 1513,
+        "description": "Vasco Núñez de Balboa became the first European to see the Pacific Ocean from the Americas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ponce-de-leon-florida",
+        "friendly_name": "Ponce de León Discovers Florida",
+        "year": 1513,
+        "description": "The Spanish explorer became the first European to reach Florida.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1525,
+    "title": "German Peasants' War",
+    "candidates": [
+      {
+        "name": "german-peasants-war-begins",
+        "friendly_name": "German Peasants' War Begins",
+        "year": 1524,
+        "description": "Peasants across German-speaking lands rose up demanding economic and religious reforms. The revolt was crushed with over 100,000 peasants killed.",
+        "score": 6,
+        "shared": [
+          "german",
+          "peasants",
+          "war",
+          "across",
+          "lands",
+          "rose"
+        ]
+      },
+      {
+        "name": "reformation-anabaptists",
+        "friendly_name": "Anabaptist Movement Founded",
+        "year": 1525,
+        "description": "Radical reformers in Zurich rejected infant baptism, founding the Anabaptist movement amid fierce persecution.",
+        "score": 1,
+        "shared": [
+          "reformation"
+        ]
+      },
+      {
+        "name": "banjarmasin-sultanate",
+        "friendly_name": "Banjarmasin Sultanate Rise",
+        "year": 1526,
+        "description": "The Banjar Sultanate rose to power in southeastern Borneo as an Islamic trading state.",
+        "score": 1,
+        "shared": [
+          "rose"
+        ]
+      },
+      {
+        "name": "chili-peppers-spread",
+        "friendly_name": "Chili Peppers Spread Worldwide",
+        "year": 1500,
+        "year_end": 1614,
+        "description": "Traders carried American chili peppers across Asia and Africa, transforming cuisines from India to Korea.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "songhai-expansion",
+        "friendly_name": "Songhai Expands Under Askia",
+        "year": 1493,
+        "year_end": 1528,
+        "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "qhapaq-nan-expansion",
+        "friendly_name": "Qhapaq Ñan Road Network Expanded",
+        "year": 1450,
+        "year_end": 1532,
+        "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "mali-decline",
+        "friendly_name": "Mali Empire Decline",
+        "year": 1360,
+        "year_end": 1599,
+        "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
+        "score": 1,
+        "shared": [
+          "rose"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "andean-llama-domestication",
+        "friendly_name": "Andean Llama Herding System Peak",
+        "year": 1200,
+        "year_end": 1532,
+        "description": "Andean civilizations perfected llama herding systems for transport, wool, and meat across highland trade networks.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1536,
+    "title": "Pilgrimage of Grace",
+    "candidates": [
+      {
+        "name": "dissolution-of-monasteries",
+        "friendly_name": "Dissolution of the Monasteries",
+        "year": 1536,
+        "year_end": 1541,
+        "description": "Henry VIII began dissolving English monasteries, seizing their wealth and redistributing lands to loyal supporters.",
+        "score": 3,
+        "shared": [
+          "monasteries",
+          "henry",
+          "viii"
+        ]
+      },
+      {
+        "name": "death-thomas-more",
+        "friendly_name": "Death of Thomas More",
+        "year": 1535,
+        "description": "The English statesman and author of Utopia was executed for refusing Henry VIII's break with Rome.",
+        "score": 2,
+        "shared": [
+          "henry",
+          "viii"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "northern"
+        ]
+      },
+      {
+        "name": "open-field-system-abandonment",
+        "friendly_name": "Open Field System Declines",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "mali-decline",
+        "friendly_name": "Mali Empire Decline",
+        "year": 1360,
+        "year_end": 1599,
+        "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
+        "score": 1,
+        "shared": [
+          "rose"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1637,
+    "title": "Shimabara Rebellion",
+    "candidates": [
+      {
+        "name": "shimabara-rebellion",
+        "friendly_name": "Shimabara Rebellion",
+        "year": 1637,
+        "description": "Japanese Christian peasants revolted against persecution; their defeat led to Japan's isolation policy.",
+        "score": 5,
+        "shared": [
+          "shimabara",
+          "rebellion",
+          "peasants",
+          "japan",
+          "against"
+        ]
+      },
+      {
+        "name": "edo-castle-completion",
+        "friendly_name": "Edo Castle Completed",
+        "year": 1638,
+        "description": "Edo Castle was completed as the seat of the Tokugawa shogunate, making Edo (Tokyo) Japan's political center.",
+        "score": 3,
+        "shared": [
+          "castle",
+          "japan",
+          "shogunate"
+        ]
+      },
+      {
+        "name": "tokugawa-edo-period-culture",
+        "friendly_name": "Edo Period Cultural Flourishing",
+        "year": 1603,
+        "year_end": 1868,
+        "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+        "score": 1,
+        "shared": [
+          "japan"
+        ]
+      },
+      {
+        "name": "descartes-discourse-method",
+        "friendly_name": "Descartes' Discourse on Method",
+        "year": 1637,
+        "description": "Descartes published his foundational philosophical work containing the famous 'I think, therefore I am.'",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "corneille-le-cid",
+        "friendly_name": "Corneille Writes Le Cid Drama",
+        "year": 1637,
+        "description": "Pierre Corneille's Le Cid became a landmark of French classical theater, sparking a famous literary quarrel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tulip-mania-crashes",
+        "friendly_name": "Tulip Mania Crashes",
+        "year": 1637,
+        "description": "The Dutch tulip market collapsed after speculation drove bulb prices to extraordinary highs, becoming history's first recorded economic bubble.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1647,
+    "title": "Masaniello's Revolt in Naples",
+    "candidates": [
+      {
+        "name": "fronde-rebellions",
+        "friendly_name": "Fronde Rebellions",
+        "year": 1648,
+        "year_end": 1653,
+        "description": "French nobles and parliamentarians revolted against royal authority during the young Louis XIV's minority.",
+        "score": 2,
+        "shared": [
+          "young",
+          "against"
+        ]
+      },
+      {
+        "name": "portuguese-restoration-war",
+        "friendly_name": "Portuguese Restoration War",
+        "year": 1640,
+        "year_end": 1668,
+        "description": "Portugal revolted against Spanish rule, beginning a 28-year war to restore independence.",
+        "score": 2,
+        "shared": [
+          "against",
+          "spanish"
+        ]
+      },
+      {
+        "name": "spanish-price-revolution",
+        "friendly_name": "Spanish Price Revolution",
+        "year": 1550,
+        "year_end": 1650,
+        "description": "A flood of New World silver caused sustained inflation across Europe over the sixteenth century.",
+        "score": 1,
+        "shared": [
+          "spanish"
+        ]
+      },
+      {
+        "name": "putney-debates",
+        "friendly_name": "Putney Debates",
+        "year": 1647,
+        "description": "New Model Army officers and soldiers debated England's future constitution, with radicals arguing for expanded voting rights.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "strasbourg-cathedral-tallest",
+        "friendly_name": "Strasbourg Becomes Tallest",
+        "year": 1647,
+        "description": "With St. Olaf's spire gone, Strasbourg Cathedral was recognized as the tallest structure on Earth, a title it kept for two centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "peace-westphalia",
+        "friendly_name": "Peace of Westphalia",
+        "year": 1648,
+        "description": "Treaties ending the Thirty Years' War established the modern state system.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1670,
+    "title": "Stenka Razin's Rebellion",
+    "candidates": [
+      {
+        "name": "ukiyo-e-art-development",
+        "friendly_name": "Ukiyo-e Woodblock Art Development",
+        "year": 1670,
+        "year_end": 1868,
+        "description": "Japanese ukiyo-e woodblock printing flourished in Edo, depicting actors, beauties, and landscapes of the floating world.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hudsons-bay-company-founded",
+        "friendly_name": "Hudson's Bay Company Founded",
+        "year": 1670,
+        "description": "Charles II granted a royal charter creating the Hudson's Bay Company, which would control much of North American fur trade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "joseon-silhak-agricultural",
+        "friendly_name": "Silhak Movement Agricultural Reform",
+        "year": 1670,
+        "description": "Korean Silhak scholars promoted practical learning and agricultural reform during the Joseon Dynasty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "steno-fossils-rock-layers",
+        "friendly_name": "Steno's Law of Rock Layers",
+        "year": 1669,
+        "description": "Nicolas Steno argued that rock layers form in order over time, founding the study of geology.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "etna-catania-eruption",
+        "friendly_name": "Etna's Lava Reaches Catania",
+        "year": 1669,
+        "description": "Mount Etna's largest recorded eruption pushed lava through the walls of Catania and on into the sea, reshaping Sicily's coast.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blood-crown-jewels-heist",
+        "friendly_name": "Blood's Crown Jewels Heist",
+        "year": 1671,
+        "description": "Colonel Thomas Blood disguised himself as a clergyman and nearly escaped the Tower of London with the Crown Jewels.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1680,
+    "title": "Pueblo Revolt",
+    "candidates": [
+      {
+        "name": "wren-st-pauls-cathedral",
+        "friendly_name": "Wren Designs St Paul's Cathedral",
+        "year": 1675,
+        "year_end": 1710,
+        "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "vietnamese-nam-vu",
+        "friendly_name": "Vietnamese March South",
+        "year": 1611,
+        "year_end": 1755,
+        "description": "Vietnamese settlers pushed steadily southward into Cham and Khmer territories, expanding the Nguyen lords' domain toward the Mekong Delta.",
+        "score": 1,
+        "shared": [
+          "settlers"
+        ]
+      },
+      {
+        "name": "galleon-trade-route",
+        "friendly_name": "Manila-Acapulco Galleon Trade",
+        "year": 1565,
+        "year_end": 1815,
+        "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "maori-land-use-customary",
+        "friendly_name": "Maori Customary Land Use Practices",
+        "year": 1250,
+        "year_end": 1700,
+        "description": "Maori settlers in New Zealand developed customary land use systems based on iwi tribal territories and resource rights.",
+        "score": 1,
+        "shared": [
+          "settlers"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "drive"
+        ]
+      },
+      {
+        "name": "baroque-music-development",
+        "friendly_name": "Baroque Music Flourishes",
+        "year": 1680,
+        "description": "Composers like Corelli and Purcell advanced Baroque music with concertos, sonatas, and operas across Europe.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1773,
+    "title": "Pugachev's Rebellion",
+    "candidates": [
+      {
+        "name": "tay-son-rebellion",
+        "friendly_name": "Tay Son Rebellion in Vietnam",
+        "year": 1771,
+        "year_end": 1789,
+        "description": "Three brothers led a peasant uprising that overthrew both the Nguyen and Trinh lords, briefly unifying Vietnam.",
+        "score": 1,
+        "shared": [
+          "rebellion"
+        ]
+      },
+      {
+        "name": "boston-tea-party",
+        "friendly_name": "Boston Tea Party",
+        "year": 1773,
+        "description": "Colonists dumped British tea into Boston Harbor to protest taxation without representation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "partition-poland",
+        "friendly_name": "First Partition of Poland",
+        "year": 1772,
+        "description": "Russia, Prussia, and Austria carved up Polish territory.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "intolerable-acts",
+        "friendly_name": "Intolerable Acts Passed",
+        "year": 1774,
+        "description": "Britain passed the Coercive Acts to punish Massachusetts after the Boston Tea Party, pushing American colonies toward revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-continental-congress",
+        "friendly_name": "First Continental Congress",
+        "year": 1774,
+        "description": "Delegates from twelve colonies met in Philadelphia to coordinate a response to British policies, establishing colonial unity.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nitrogen-discovered",
+        "friendly_name": "Nitrogen Discovered",
+        "year": 1772,
+        "description": "Scottish physician Daniel Rutherford identified nitrogen as a separate component of air, calling it 'noxious air.'",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1780,
+    "title": "Tupac Amaru II Rebellion",
+    "candidates": [
+      {
+        "name": "tay-son-rebellion",
+        "friendly_name": "Tay Son Rebellion in Vietnam",
+        "year": 1771,
+        "year_end": 1789,
+        "description": "Three brothers led a peasant uprising that overthrew both the Nguyen and Trinh lords, briefly unifying Vietnam.",
+        "score": 2,
+        "shared": [
+          "rebellion",
+          "led"
+        ]
+      },
+      {
+        "name": "metal-cylinder-rockets",
+        "friendly_name": "Metal-Cylinder Rockets",
+        "year": 1780,
+        "description": "Hyder Ali's iron-cased military rockets used against the British, precursors to modern rocketry.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      },
+      {
+        "name": "first-epsom-derby",
+        "friendly_name": "First Epsom Derby Run",
+        "year": 1780,
+        "description": "England ran the first Epsom Derby, a horse race for three-year-olds that became a model for derbies worldwide.",
+        "score": 1,
+        "shared": [
+          "race"
+        ]
+      },
+      {
+        "name": "battle-yorktown",
+        "friendly_name": "Siege of Yorktown",
+        "year": 1781,
+        "description": "Washington's victory forced British surrender, effectively ending the Revolutionary War.",
+        "score": 1,
+        "shared": [
+          "forced"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "led"
+        ]
+      },
+      {
+        "name": "manchester-cotton-boom",
+        "friendly_name": "Lancashire Cotton Mills Boom",
+        "year": 1780,
+        "description": "Lancashire's cotton mills expanded rapidly with mechanized spinning, making the region the center of the global textile industry.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1786,
+    "title": "Shays' Rebellion",
+    "candidates": [
+      {
+        "name": "shays-rebellion",
+        "friendly_name": "Shays' Rebellion",
+        "year": 1786,
+        "description": "Massachusetts farmers led by Daniel Shays rebelled against debt collection and taxation, highlighting weaknesses in the Articles of Confederation.",
+        "score": 4,
+        "shared": [
+          "shays",
+          "rebellion",
+          "massachusetts",
+          "farmers"
+        ]
+      },
+      {
+        "name": "tay-son-rebellion",
+        "friendly_name": "Tay Son Rebellion in Vietnam",
+        "year": 1771,
+        "year_end": 1789,
+        "description": "Three brothers led a peasant uprising that overthrew both the Nguyen and Trinh lords, briefly unifying Vietnam.",
+        "score": 1,
+        "shared": [
+          "rebellion"
+        ]
+      },
+      {
+        "name": "selective-breeding-animals",
+        "friendly_name": "Selective Breeding of Livestock",
+        "year": 1760,
+        "year_end": 1795,
+        "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
+        "score": 1,
+        "shared": [
+          "farmers"
+        ]
+      },
+      {
+        "name": "pre-revolution-debt-crisis",
+        "friendly_name": "French Debt Crisis",
+        "year": 1786,
+        "description": "France faced near-bankruptcy from war debts and lavish spending, forcing Louis XVI to convene the Assembly of Notables.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "threshing-machine",
+        "friendly_name": "Threshing Machine Invented",
+        "year": 1786,
+        "description": "Andrew Meikle invented the mechanical threshing machine, separating grain from stalks far faster than manual flails.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1789,
+    "title": "Storming of the Bastille",
+    "candidates": [
+      {
+        "name": "french-revolution-start",
+        "friendly_name": "French Revolution Begins",
+        "year": 1789,
+        "description": "The storming of the Bastille ignited revolutionary fervor across France.",
+        "score": 3,
+        "shared": [
+          "storming",
+          "bastille",
+          "revolution"
+        ]
+      },
+      {
+        "name": "womens-march-versailles",
+        "friendly_name": "Women's March on Versailles",
+        "year": 1789,
+        "description": "Thousands of Parisian women marched to Versailles over bread shortages, forcing the royal family to return to Paris.",
+        "score": 2,
+        "shared": [
+          "parisian",
+          "royal"
+        ]
+      },
+      {
+        "name": "tennis-court-oath",
+        "friendly_name": "Tennis Court Oath",
+        "year": 1789,
+        "description": "French National Assembly members swore not to disband until they had written a constitution, defying royal authority.",
+        "score": 1,
+        "shared": [
+          "royal"
+        ]
+      },
+      {
+        "name": "estates-general-convened",
+        "friendly_name": "Estates-General Convened",
+        "year": 1789,
+        "description": "Louis XVI convened the Estates-General at Versailles for the first time in well over a century, triggering the events of the French Revolution.",
+        "score": 1,
+        "shared": [
+          "revolution"
+        ]
+      },
+      {
+        "name": "burke-reflections-published",
+        "friendly_name": "Burke's Reflections Published",
+        "year": 1790,
+        "description": "Edmund Burke published his critique of the French Revolution, founding modern conservatism.",
+        "score": 1,
+        "shared": [
+          "revolution"
+        ]
+      },
+      {
+        "name": "civil-constitution-clergy",
+        "friendly_name": "Civil Constitution of the Clergy",
+        "year": 1790,
+        "description": "The French Revolution subordinated the Catholic Church to the state, requiring clergy to swear loyalty oaths.",
+        "score": 1,
+        "shared": [
+          "revolution"
+        ]
+      },
+      {
+        "name": "prison-reform",
+        "friendly_name": "Prison Penitentiary System",
+        "year": 1790,
+        "description": "Philadelphia's Walnut Street Jail pioneered the penitentiary model focused on solitary confinement and rehabilitation over punishment.",
+        "score": 1,
+        "shared": [
+          "prison"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1798,
+    "title": "Irish Rebellion",
+    "candidates": [
+      {
+        "name": "irish-rebellion-of-1798",
+        "friendly_name": "United Irishmen Rebellion",
+        "year": 1798,
+        "description": "Irish republicans inspired by the French Revolution rose against British rule. The failed uprising led to the Act of Union with Britain.",
+        "score": 8,
+        "shared": [
+          "irish",
+          "rebellion",
+          "united",
+          "irishmen",
+          "rose",
+          "against",
+          "british",
+          "rule"
+        ]
+      },
+      {
+        "name": "first-british-income-tax",
+        "friendly_name": "First Income Tax Levied",
+        "year": 1799,
+        "description": "Britain introduced the first income tax to fund the wars against Napoleonic France.",
+        "score": 2,
+        "shared": [
+          "against",
+          "british"
+        ]
+      },
+      {
+        "name": "napoleons-egyptian-campaign",
+        "friendly_name": "Napoleon's Egyptian Campaign",
+        "year": 1798,
+        "year_end": 1801,
+        "description": "Napoleon invaded Egypt to threaten British India, bringing scientists who discovered the Rosetta Stone during the expedition.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "rural"
+        ]
+      },
+      {
+        "name": "malthus-essay-population",
+        "friendly_name": "Malthus' Essay on Population",
+        "year": 1798,
+        "description": "Thomas Malthus argued that population growth would outpace food supply, influencing economics and Darwin's evolution theory.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1830,
+    "title": "Swing Riots",
+    "candidates": [
+      {
+        "name": "lyell-principles-geology",
+        "friendly_name": "Lyell's Principles of Geology",
+        "year": 1830,
+        "year_end": 1833,
+        "description": "Charles Lyell's book argued that gradual forces still at work had shaped Earth over ages.",
+        "score": 1,
+        "shared": [
+          "work"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "book-of-mormon-published",
+        "friendly_name": "Book of Mormon Published",
+        "year": 1830,
+        "description": "The Book of Mormon was published in Palmyra, New York.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "haida-totem-poles",
+        "friendly_name": "Haida Totem Pole Carving Peak",
+        "year": 1830,
+        "year_end": 1880,
+        "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bharatanatyam-tradition",
+        "friendly_name": "Bharatanatyam Codified",
+        "year": 1830,
+        "description": "The Tanjore Quartet codified Bharatanatyam repertoire, systematizing South India's ancient temple dance tradition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "belgian-independence",
+        "friendly_name": "Belgian Independence",
+        "year": 1830,
+        "year_end": 1839,
+        "description": "Belgium gained independence from the Netherlands after revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1831,
+    "title": "Nat Turner's Rebellion",
+    "candidates": [
+      {
+        "name": "nat-turners-rebellion",
+        "friendly_name": "Nat Turner's Rebellion",
+        "year": 1831,
+        "description": "Enslaved preacher Nat Turner led a violent uprising in Virginia, killing about 60 white people before being captured and executed.",
+        "score": 8,
+        "shared": [
+          "nat",
+          "turner",
+          "rebellion",
+          "enslaved",
+          "preacher",
+          "virginia",
+          "led",
+          "uprising"
+        ]
+      },
+      {
+        "name": "darwin-beagle",
+        "friendly_name": "Darwin Begins Beagle Voyage",
+        "year": 1831,
+        "description": "Darwin's voyage led to his theory of evolution.",
+        "score": 1,
+        "shared": [
+          "led"
+        ]
+      },
+      {
+        "name": "mechanical-reaper",
+        "friendly_name": "Mechanical Reaper Invented",
+        "year": 1831,
+        "description": "Cyrus McCormick invented the mechanical reaper, transforming grain harvesting and American agriculture.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "bharatanatyam-tradition",
+        "friendly_name": "Bharatanatyam Codified",
+        "year": 1830,
+        "description": "The Tanjore Quartet codified Bharatanatyam repertoire, systematizing South India's ancient temple dance tradition.",
+        "score": 1,
+        "shared": [
+          "south"
+        ]
+      },
+      {
+        "name": "birth-emily-dickinson",
+        "friendly_name": "Birth of Emily Dickinson",
+        "year": 1830,
+        "description": "The reclusive American poet whose terse, original verse became a cornerstone of American literature.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "south"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1844,
+    "title": "Silesian Weavers' Uprising",
+    "candidates": [
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "cloth"
+        ]
+      },
+      {
+        "name": "ymca-founded",
+        "friendly_name": "YMCA Founded",
+        "year": 1844,
+        "description": "The Young Men's Christian Association was founded in London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-telegraph-message",
+        "friendly_name": "First Telegraph Message",
+        "year": 1844,
+        "description": "Samuel Morse sent 'What hath God wrought' from Washington to Baltimore, demonstrating the electric telegraph.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wood-pulp-papermaking",
+        "friendly_name": "Wood Pulp Papermaking",
+        "year": 1844,
+        "description": "Charles Fenerty made paper from wood pulp, replacing expensive cotton rags and lowering costs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hypodermic-needle",
+        "friendly_name": "Hypodermic Needle",
+        "year": 1844,
+        "description": "Francis Rynd invented the hollow needle for injecting medication beneath the skin.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-nietzsche",
+        "friendly_name": "Birth of Nietzsche",
+        "year": 1844,
+        "description": "The German philosopher who proclaimed the death of God and explored will, morality, and the overman.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1848,
+    "title": "Barricades Topple a King in Paris",
+    "candidates": [
+      {
+        "name": "spring-of-nations",
+        "friendly_name": "Spring of Nations",
+        "year": 1848,
+        "year_end": 1849,
+        "description": "A wave of revolutionary uprisings swept across Europe demanding liberal reforms and national unity.",
+        "score": 4,
+        "shared": [
+          "wave",
+          "uprisings",
+          "across",
+          "europe"
+        ]
+      },
+      {
+        "name": "mormon-trek-to-utah",
+        "friendly_name": "Mormon Migration to Utah",
+        "year": 1847,
+        "description": "Persecuted Mormons trekked west across the plains to settle the Salt Lake Valley in Utah.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 1,
+        "shared": [
+          "paris"
+        ]
+      },
+      {
+        "name": "communist-manifesto",
+        "friendly_name": "Communist Manifesto Published",
+        "year": 1848,
+        "description": "Karl Marx and Friedrich Engels published their influential political pamphlet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "seneca-falls-convention",
+        "friendly_name": "Seneca Falls Convention",
+        "year": 1848,
+        "description": "The first women's rights convention in the US launched the suffrage movement.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "california-gold-rush",
+        "friendly_name": "California Gold Rush",
+        "year": 1848,
+        "year_end": 1855,
+        "description": "Discovery of gold at Sutter's Mill sparked a massive migration to California, transforming the American West.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1850,
+    "title": "Taiping Rebellion Begins",
+    "candidates": [
+      {
+        "name": "taiping-rebellion",
+        "friendly_name": "Taiping Rebellion Begins",
+        "year": 1850,
+        "description": "A Christian-inspired uprising killed 20-30 million people in China.",
+        "score": 4,
+        "shared": [
+          "taiping",
+          "rebellion",
+          "begins",
+          "china"
+        ]
+      },
+      {
+        "name": "compromise-slavery",
+        "friendly_name": "Slavery Compromise",
+        "year": 1850,
+        "description": "Congress attempted to balance free and slave state interests as US territories expanded.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fugitive-slave-act",
+        "friendly_name": "Fugitive Slave Act",
+        "year": 1850,
+        "description": "A US law forced citizens to help capture escaped slaves, deepening sectional conflict before the Civil War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pinkerton-detective-agency",
+        "friendly_name": "Pinkerton Agency Founded",
+        "year": 1850,
+        "description": "Allan Pinkerton founded a private detective agency in Chicago that pursued criminals across the United States.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chinese-emigration-gold-rush",
+        "friendly_name": "Chinese Emigration to America",
+        "year": 1850,
+        "description": "Chinese laborers emigrated to California during the gold rush, building Chinatowns across the West.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-exhibition-opens",
+        "friendly_name": "Great Exhibition Opens",
+        "year": 1851,
+        "description": "World's first international exhibition of manufactured products opened in London's Crystal Palace.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1865,
+    "title": "Morant Bay Rebellion",
+    "candidates": [
+      {
+        "name": "indian-rebellion-famine",
+        "friendly_name": "Orissa Famine",
+        "year": 1866,
+        "year_end": 1868,
+        "description": "A severe famine in India killed over one million people.",
+        "score": 2,
+        "shared": [
+          "rebellion",
+          "over"
+        ]
+      },
+      {
+        "name": "us-civil-war-end",
+        "friendly_name": "American Civil War Ends",
+        "year": 1865,
+        "description": "General Lee surrendered at Appomattox Courthouse, ending the Civil War.",
+        "score": 1,
+        "shared": [
+          "courthouse"
+        ]
+      },
+      {
+        "name": "austro-prussian-war",
+        "friendly_name": "Austro-Prussian War",
+        "year": 1866,
+        "description": "Prussia's rapid victory over Austria reshaped the balance of power in Europe.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "sand-creek-massacre",
+        "friendly_name": "Sand Creek Massacre",
+        "year": 1864,
+        "description": "Colorado militia attacked a peaceful Cheyenne and Arapaho encampment, killing over 150 Native Americans, mostly women, children, and elderly.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "lincoln-assassination",
+        "friendly_name": "Abraham Lincoln Assassinated",
+        "year": 1865,
+        "description": "President Lincoln was shot by John Wilkes Booth at Ford's Theatre.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "slavery-abolished-us",
+        "friendly_name": "Slavery Abolished in United States",
+        "year": 1865,
+        "description": "The 13th Amendment ended slavery throughout the United States.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1871,
+    "title": "The Paris Commune",
+    "candidates": [
+      {
+        "name": "paris-commune",
+        "friendly_name": "Paris Commune",
+        "year": 1871,
+        "description": "Radical socialists briefly governed Paris before being violently suppressed.",
+        "score": 3,
+        "shared": [
+          "paris",
+          "commune",
+          "radical"
+        ]
+      },
+      {
+        "name": "italian-unification",
+        "friendly_name": "Italian Unification Completed",
+        "year": 1871,
+        "description": "The Kingdom of Italy unified the Italian peninsula under one government.",
+        "score": 1,
+        "shared": [
+          "government"
+        ]
+      },
+      {
+        "name": "peshtigo-fire",
+        "friendly_name": "Peshtigo Fire",
+        "year": 1871,
+        "description": "The deadliest wildfire in American history killed over 1,500 people in Wisconsin.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "troy-discovered",
+        "friendly_name": "Troy Discovered",
+        "year": 1871,
+        "description": "Heinrich Schliemann excavated the legendary city of Troy in Turkey.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "prussian-siege-of-paris",
+        "friendly_name": "Prussian Siege of Paris",
+        "year": 1871,
+        "description": "Prussian forces encircled and bombarded the French capital for months, starving its residents into surrender during a war with Germany.",
+        "score": 1,
+        "shared": [
+          "paris"
+        ]
+      },
+      {
+        "name": "franco-prussian-war",
+        "friendly_name": "Franco-Prussian War Begins",
+        "year": 1870,
+        "description": "Prussia and German allies went to war with France over succession disputes.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1900,
+    "title": "Boxer Rebellion",
+    "candidates": [
+      {
+        "name": "boxer-rebellion",
+        "friendly_name": "Boxer Rebellion",
+        "year": 1900,
+        "description": "Chinese nationalists besieged foreign legations before an international force relieved them.",
+        "score": 3,
+        "shared": [
+          "boxer",
+          "rebellion",
+          "besieged"
+        ]
+      },
+      {
+        "name": "siege-of-mafeking",
+        "friendly_name": "Siege of Mafeking",
+        "year": 1900,
+        "description": "Boer forces besieged the small British garrison town for over two hundred days until a relief column finally broke through.",
+        "score": 1,
+        "shared": [
+          "besieged"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "galveston-hurricane",
+        "friendly_name": "Galveston Hurricane",
+        "year": 1900,
+        "description": "The deadliest natural disaster in US history killed up to 12,000 people in Texas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "max-plancks-quantum-theory",
+        "friendly_name": "Max Planck's Quantum Theory",
+        "year": 1900,
+        "description": "Max Planck proposed that energy is emitted in discrete quanta, launching the quantum physics revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "zeppelin-airship",
+        "friendly_name": "Zeppelin Airship Launched",
+        "year": 1900,
+        "description": "Ferdinand von Zeppelin launched the first rigid airship over Lake Constance in Germany, pioneering lighter-than-air travel.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1905,
+    "title": "Bloody Sunday Sparks Revolution",
+    "candidates": [
+      {
+        "name": "first-russian-revolution",
+        "friendly_name": "First Russian Revolution",
+        "year": 1905,
+        "year_end": 1907,
+        "description": "Mass unrest forced Tsar Nicholas II to create a parliament and grant civil liberties.",
+        "score": 3,
+        "shared": [
+          "revolution",
+          "tsar",
+          "russian"
+        ]
+      },
+      {
+        "name": "potemkin-mutiny",
+        "friendly_name": "Potemkin Mutiny",
+        "year": 1905,
+        "description": "Sailors on the Russian battleship Potemkin mutinied during the Russian Revolution, later immortalized in Eisenstein's influential silent film.",
+        "score": 2,
+        "shared": [
+          "revolution",
+          "russian"
+        ]
+      },
+      {
+        "name": "battle-tsushima",
+        "friendly_name": "Battle of Tsushima",
+        "year": 1905,
+        "description": "Japan destroyed the Russian Baltic Fleet, shocking the Western world.",
+        "score": 1,
+        "shared": [
+          "russian"
+        ]
+      },
+      {
+        "name": "birth-dmitri-shostakovich",
+        "friendly_name": "Birth of Shostakovich",
+        "year": 1906,
+        "description": "The Russian composer whose symphonies endured an uneasy relationship with the Soviet state.",
+        "score": 1,
+        "shared": [
+          "russian"
+        ]
+      },
+      {
+        "name": "norway-independence-sweden",
+        "friendly_name": "Norway Independence from Sweden",
+        "year": 1905,
+        "description": "Norway peacefully dissolved its union with Sweden, becoming an independent constitutional monarchy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "special-relativity",
+        "friendly_name": "Special Relativity Published",
+        "year": 1905,
+        "description": "Albert Einstein published his theory of special relativity.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1917,
+    "title": "Bread Riots Topple the Tsar",
+    "candidates": [
+      {
+        "name": "february-revolution-russia",
+        "friendly_name": "February Revolution (Russia)",
+        "year": 1917,
+        "description": "Popular uprising forced Tsar Nicholas II to abdicate, ending 300 years of Romanov rule in Russia.",
+        "score": 3,
+        "shared": [
+          "tsar",
+          "forced",
+          "russia"
+        ]
+      },
+      {
+        "name": "bolshevik-revolution",
+        "friendly_name": "Bolshevik Revolution",
+        "year": 1917,
+        "description": "Lenin's Bolsheviks seized power in the October Revolution, establishing the world's first communist state in Russia.",
+        "score": 1,
+        "shared": [
+          "russia"
+        ]
+      },
+      {
+        "name": "finland-declares-independence",
+        "friendly_name": "Finland Declares Independence",
+        "year": 1917,
+        "description": "The Finnish parliament declared the country independent of Russia as the Russian empire fell apart.",
+        "score": 1,
+        "shared": [
+          "russia"
+        ]
+      },
+      {
+        "name": "house-of-windsor-founded",
+        "friendly_name": "House of Windsor Founded",
+        "year": 1917,
+        "description": "George V renounced his family's German titles and renamed the royal house Windsor amid wartime anti-German feeling.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "battle-somme",
+        "friendly_name": "Battle of the Somme",
+        "year": 1916,
+        "description": "One of the bloodiest battles in history killed over one million soldiers.",
+        "score": 1,
+        "shared": [
+          "soldiers"
+        ]
+      },
+      {
+        "name": "battle-passchendaele",
+        "friendly_name": "Battle of Passchendaele",
+        "year": 1917,
+        "description": "British troops fought through mud for months to gain five miles at Ypres.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1921,
+    "title": "Kronstadt Rebellion",
+    "candidates": [
+      {
+        "name": "bcg-tuberculosis-vaccine",
+        "friendly_name": "BCG Tuberculosis Vaccine",
+        "year": 1921,
+        "description": "The BCG vaccine against tuberculosis was first given to a child, becoming one of the world's most used.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      },
+      {
+        "name": "gandhi-non-cooperation-movement",
+        "friendly_name": "Gandhi's Non-Cooperation Movement",
+        "year": 1920,
+        "year_end": 1922,
+        "description": "Mahatma Gandhi launched his first mass civil disobedience campaign against British rule in India.",
+        "score": 1,
+        "shared": [
+          "against"
+        ]
+      },
+      {
+        "name": "washington-naval-treaty",
+        "friendly_name": "Washington Naval Treaty",
+        "year": 1922,
+        "description": "Major powers agreed to limit their naval fleets to prevent an arms race.",
+        "score": 1,
+        "shared": [
+          "naval"
+        ]
+      },
+      {
+        "name": "turkish-war-of-independence",
+        "friendly_name": "Turkish War of Independence",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-miss-america",
+        "friendly_name": "First Miss America Pageant",
+        "year": 1921,
+        "description": "The first Miss America pageant was held in Atlantic City.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "communist-party-china-founded",
+        "friendly_name": "Communist Party of China Founded",
+        "year": 1921,
+        "description": "The CPC was founded in Shanghai with Mao Zedong among its early members.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1953,
+    "title": "East German Workers' Uprising",
+    "candidates": [
+      {
+        "name": "east-german-uprising",
+        "friendly_name": "East German Uprising",
+        "year": 1953,
+        "description": "Workers in East Berlin and across East Germany rose up against the communist government before Soviet tanks crushed the rebellion.",
+        "score": 7,
+        "shared": [
+          "east",
+          "german",
+          "workers",
+          "uprising",
+          "berlin",
+          "soviet",
+          "tanks"
+        ]
+      },
+      {
+        "name": "stalin-dies",
+        "friendly_name": "Stalin Dies",
+        "year": 1953,
+        "description": "Joseph Stalin died after ruling the Soviet Union for nearly three decades of terror and industrialization.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "miller-urey-experiment",
+        "friendly_name": "Miller-Urey Life Experiment",
+        "year": 1953,
+        "description": "Scientists sparked simple chemicals into amino acids, hinting how life's building blocks arose.",
+        "score": 1,
+        "shared": [
+          "building"
+        ]
+      },
+      {
+        "name": "united-nations-hq",
+        "friendly_name": "UN Headquarters Completed",
+        "year": 1952,
+        "description": "The UN complex opened on the East River in New York City.",
+        "score": 1,
+        "shared": [
+          "east"
+        ]
+      },
+      {
+        "name": "korean-war-armistice",
+        "friendly_name": "Korean War Armistice",
+        "year": 1953,
+        "description": "An armistice halted fighting on the Korean Peninsula, though no peace treaty was signed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cia-coup-in-iran",
+        "friendly_name": "CIA Coup in Iran",
+        "year": 1953,
+        "description": "The CIA and MI6 orchestrated a coup that overthrew democratically elected Prime Minister Mosaddegh, restoring Shah Pahlavi to power.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1956,
+    "title": "Hungarian Uprising",
+    "candidates": [
+      {
+        "name": "hungarian-revolution",
+        "friendly_name": "Hungarian Revolution",
+        "year": 1956,
+        "description": "Soviet tanks crushed a popular uprising against communist rule in Hungary.",
+        "score": 4,
+        "shared": [
+          "hungarian",
+          "uprising",
+          "soviet",
+          "crushed"
+        ]
+      },
+      {
+        "name": "blood-in-the-water-1956",
+        "friendly_name": "Blood in the Water Match",
+        "year": 1956,
+        "description": "Hungary beat the USSR 4-0 in a violent Olympic water polo semi-final weeks after the crushed Hungarian Revolution.",
+        "score": 2,
+        "shared": [
+          "hungarian",
+          "crushed"
+        ]
+      },
+      {
+        "name": "de-stalinization-speech",
+        "friendly_name": "De-Stalinization Speech",
+        "year": 1956,
+        "description": "Khrushchev denounced Stalin's cult of personality and crimes in a secret speech that shocked communists worldwide.",
+        "score": 1,
+        "shared": [
+          "stalin"
+        ]
+      },
+      {
+        "name": "warsaw-pact",
+        "friendly_name": "Warsaw Pact Founded",
+        "year": 1955,
+        "description": "The Soviet Union and Eastern Bloc formed a military alliance.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "little-rock-nine",
+        "friendly_name": "Little Rock Nine",
+        "year": 1957,
+        "description": "Nine Black students integrated Little Rock Central High School under federal troop protection.",
+        "score": 1,
+        "shared": [
+          "students"
+        ]
+      },
+      {
+        "name": "sputnik-launched",
+        "friendly_name": "Sputnik Launched",
+        "year": 1957,
+        "description": "The Soviet Union launched the first artificial satellite into orbit.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "laika-in-space",
+        "friendly_name": "Laika in Space",
+        "year": 1957,
+        "description": "Soviet dog Laika became the first animal to orbit Earth aboard Sputnik 2, proving life could survive in space.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 1976,
+    "title": "Soweto Uprising",
+    "candidates": [
+      {
+        "name": "soweto-uprising",
+        "friendly_name": "Soweto Uprising",
+        "year": 1976,
+        "description": "Black South African students protested mandatory Afrikaans instruction. Police killed hundreds, including 12-year-old Hector Pieterson.",
+        "score": 6,
+        "shared": [
+          "soweto",
+          "uprising",
+          "black",
+          "south",
+          "afrikaans",
+          "police"
+        ]
+      },
+      {
+        "name": "djibouti-independence",
+        "friendly_name": "Djibouti Independence",
+        "year": 1977,
+        "description": "Djibouti gained independence from France, becoming the last French colony in Africa to achieve sovereignty.",
+        "score": 1,
+        "shared": [
+          "africa"
+        ]
+      },
+      {
+        "name": "punk-rock-emerges",
+        "friendly_name": "Punk Rock Emerges",
+        "year": 1976,
+        "description": "The Ramones, Sex Pistols, and others launched the punk movement.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-mao-zedong",
+        "friendly_name": "Death of Mao Zedong",
+        "year": 1976,
+        "description": "Chairman Mao died, ending the Cultural Revolution and enabling China's economic reforms.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tangshan-earthquake",
+        "friendly_name": "Tangshan Earthquake",
+        "year": 1976,
+        "description": "A massive earthquake killed over 240,000 people in northeastern China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "guatemala-earthquake",
+        "friendly_name": "Guatemala Earthquake",
+        "year": 1976,
+        "description": "A devastating earthquake killed 23,000 in Central America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 1994,
+    "title": "Zapatista Uprising",
+    "candidates": [
+      {
+        "name": "theft-of-the-scream",
+        "friendly_name": "Theft of The Scream",
+        "year": 1994,
+        "description": "Burglars used a ladder to break into an Oslo gallery and steal Edvard Munch's painting on the opening day of the Winter Olympics.",
+        "score": 1,
+        "shared": [
+          "day"
+        ]
+      },
+      {
+        "name": "wto-founded",
+        "friendly_name": "World Trade Organization Founded",
+        "year": 1995,
+        "description": "The international organization for trade rules and negotiations was established.",
+        "score": 1,
+        "shared": [
+          "trade"
+        ]
+      },
+      {
+        "name": "first-ufc-event-1993",
+        "friendly_name": "First UFC Event Held",
+        "year": 1993,
+        "description": "UFC 1 took place in Denver, Colorado, where Brazilian Royce Gracie won the no-rules eight-man tournament.",
+        "score": 1,
+        "shared": [
+          "took"
+        ]
+      },
+      {
+        "name": "slovakia-becomes-independent",
+        "friendly_name": "Slovakia Becomes Independent",
+        "year": 1993,
+        "description": "Czechoslovakia split peacefully in the Velvet Divorce, and Slovakia took its place as a sovereign state.",
+        "score": 1,
+        "shared": [
+          "took"
+        ]
+      },
+      {
+        "name": "apartheid-ends",
+        "friendly_name": "Apartheid Ends in South Africa",
+        "year": 1994,
+        "description": "South Africa held its first democratic elections, ending racial segregation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rwandan-genocide",
+        "friendly_name": "Rwandan Genocide",
+        "year": 1994,
+        "description": "Hutu extremists killed approximately 800,000 Tutsis and moderate Hutus.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 40,
+    "year": 2011,
+    "title": "Egyptians Occupy Tahrir Square",
+    "candidates": [
+      {
+        "name": "egyptian-revolution-2011",
+        "friendly_name": "Tahrir Square Revolution",
+        "year": 2011,
+        "description": "Mass protests in Tahrir Square forced President Mubarak to resign after 30 years in power.",
+        "score": 5,
+        "shared": [
+          "tahrir",
+          "square",
+          "mass",
+          "forced",
+          "president"
+        ]
+      },
+      {
+        "name": "marina-bay-sands",
+        "friendly_name": "Marina Bay Sands Opens",
+        "year": 2010,
+        "description": "The iconic three-tower hotel with rooftop infinity pool opened in Singapore.",
+        "score": 1,
+        "shared": [
+          "three"
+        ]
+      },
+      {
+        "name": "incandescent-bulb-phase-out",
+        "friendly_name": "Incandescent Bulbs Phased Out",
+        "year": 2007,
+        "year_end": 2014,
+        "description": "Australia announced a national ban on filament bulbs, and Europe and America soon legislated their own switch-off.",
+        "score": 1,
+        "shared": [
+          "out"
+        ]
+      },
+      {
+        "name": "bin-laden-killed",
+        "friendly_name": "Osama bin Laden Killed",
+        "year": 2011,
+        "description": "US Navy SEALs killed the al-Qaeda leader in Pakistan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arab-spring",
+        "friendly_name": "Arab Spring Begins",
+        "year": 2011,
+        "description": "Pro-democracy protests swept across the Middle East and North Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "syrian-civil-war",
+        "friendly_name": "Syrian Civil War Begins",
+        "year": 2011,
+        "description": "Anti-government protests in Syria escalated into a devastating civil war.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

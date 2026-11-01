@@ -1,0 +1,15 @@
+{
+  "slug": "boudica-revolt",
+  "description": "A red-haired woman in a plaid cloak and bronze torc stands in a two-horse chariot with a long spear raised high. Warriors with blue face paint and round shields run alongside. Behind them, half-timbered houses with steep roofs are burning under a dark smoky sky with sparks flying. The image fills the frame edge to edge, with no text.",
+  "checks": {
+    "subject": "pass",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The subject matches: a tall queen in a chariot leads warriors past a burning town. The era is unclear. The burning buildings are half-timbered with steep roofs, which look medieval or Tudor rather than Roman Britain in 60 AD. The card scene asks for a Roman town of timber and tile, so an artist should check whether the buildings read as Roman."
+}
