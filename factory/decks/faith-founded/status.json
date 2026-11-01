@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T15:30:25.044Z",
+  "updated_at": "2026-11-01T15:33:09.875Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-01T15:30:25.044Z"
     },
     "smyth-founds-first-baptists": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b02856487f862de04e046329af10bdfb8037d046e3dcde465457f1cc56fdc567",
+      "updated_at": "2026-11-01T15:33:09.875Z"
     },
     "ammann-founds-amish": {
       "state": "pending",
