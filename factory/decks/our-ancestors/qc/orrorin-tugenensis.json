@@ -1,0 +1,15 @@
+{
+  "slug": "orrorin-tugenensis",
+  "description": "A dark-furred, ape-like primate with a bare face walks on two legs along a thick mossy branch in a dense, dim forest. One arm reaches up to grip a bough overhead, the other hangs at its side. Shafts of light and hanging vines fill the background. The painting is an oil-style texture with no visible text, frame or era-specific objects.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

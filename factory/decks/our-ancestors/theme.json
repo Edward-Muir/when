@@ -1,0 +1,39 @@
+{
+  "id": "our-ancestors",
+  "name": "Our Ancestors",
+  "scope": "Yes if it is a human species or ancestor, or a milestone of human evolution",
+  "boundary": "Our Ancestors owns hominins dated to when they lived; their fossil finds go to Bone Hunters, and what Homo sapiens made to Stone Age Firsts.",
+  "neighbours": [
+    "before-us",
+    "bone-hunters",
+    "stone-age-firsts"
+  ],
+  "grid": {
+    "categories": [
+      "nature",
+      "science"
+    ],
+    "eras": [
+      "prehistory"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Sahelanthropus (7 million years ago)",
+    "Ardipithecus (4.4 million years ago)",
+    "Laetoli footprints (3.66 million years ago)",
+    "Lucy, Australopithecus (3.2 million years ago)",
+    "Homo habilis (2.4 million years ago)",
+    "Homo erectus (2 million years ago)",
+    "Humans leave Africa (1.8 million years ago)",
+    "Neanderthals appear (400,000 years ago)",
+    "Homo sapiens (300,000 years ago)",
+    "The Hobbit of Flores (100,000 years ago)",
+    "The last Neanderthals (40,000 years ago)"
+  ],
+  "notes": "One beat per species, dated to the start of its fossil range, plus milestones such as walking upright, tools, fire and leaving Africa to reach 30. Never name an epoch or 'million years' on a card.",
+  "appeal": 3,
+  "status": "authoring"
+}

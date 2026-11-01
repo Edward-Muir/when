@@ -1,0 +1,15 @@
+{
+  "slug": "sahelanthropus-tchadensis",
+  "description": "A hairy, ape-like creature with a dark face and brown fur stands upright on muddy ground at the edge of a calm, reflective lake at dusk, with dark trees and reeds around it. The painting is loose, oil-like, and fills the whole frame. No text, buildings, or tools are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

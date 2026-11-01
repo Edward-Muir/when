@@ -1,0 +1,15 @@
+{
+  "slug": "last-homo-erectus-java",
+  "description": "A heavy-browed, muscular early human seen from behind stands on a muddy riverbank at dusk, holding a long wooden spear and looking out over a wide brown river. Dark jungle trees and vines fill the right, with an orange sky breaking through cloud. The figure wears nothing, and the buttocks and bare body are clearly rendered. Dark oil-painting style, no frame, no text apart from a tiny corner mark.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The figure is fully nude, with bare buttocks and body clearly visible from behind. Repaint with a loincloth or hide wrap, or a more distant or shadowed figure so no bare body detail shows."
+}

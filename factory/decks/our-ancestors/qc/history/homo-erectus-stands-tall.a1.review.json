@@ -1,0 +1,15 @@
+{
+  "slug": "homo-erectus-stands-tall",
+  "description": "A muscular, fully nude dark-skinned hominin with a heavy brow and short hair walks across an open savanna at dusk, holding a pale stone tool in one hand. Acacia trees and dry grass stretch to a hazy horizon under a brown-gold sky, in loose oil-paint brushwork. No text, frame or border is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The central figure is fully nude, with the body shown frontally and unclothed. The check forbids nudity, so the painting needs clothing or a pose or framing that hides the body. The subject, era, framing and absence of text are otherwise fine."
+}
