@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T15:27:42.718Z",
+  "updated_at": "2026-11-01T15:30:25.044Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-01T15:27:42.718Z"
     },
     "dominic-founds-dominicans": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cc86360ad65c68e662820db85df02329cd5e55b23869f383feb6e7503b7089ec",
+      "updated_at": "2026-11-01T15:30:25.044Z"
     },
     "smyth-founds-first-baptists": {
       "state": "pending",
