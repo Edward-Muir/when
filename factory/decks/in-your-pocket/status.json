@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:30:49.067Z",
+  "updated_at": "2026-11-01T21:33:49.902Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-01T21:30:49.067Z"
     },
     "hp-35-pocket-calculator": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "04366a70afa834a1b0ae479ab84c818bf2a3e971fd31b36da2a2c8bf3bc15242",
+      "updated_at": "2026-11-01T21:33:49.902Z"
     },
     "motorola-dynatac-8000x": {
       "state": "pending",
