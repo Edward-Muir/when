@@ -1,0 +1,15 @@
+{
+  "slug": "imac-launched",
+  "description": "An oil-painted, rounded all-in-one computer with a translucent teal-and-white shell and a blank CRT screen, showing its inner parts through the side. It sits on a wooden table in a dim room beside a round teal mouse with a cord, a mug and papers. No people, no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,25 @@
+{
+  "checked": [
+    {"slug":"hollerith-tabulator-census","verdict":"ok","field":null,"found":"Hollerith's punched-card tabulator was used for the 1890 US census.","suggestion":"","source":"https://en.wikipedia.org/wiki/Herman_Hollerith"},
+    {"slug":"de-forest-triode-audion","verdict":"ok","field":null,"found":"De Forest's Audion triode dates to 1906 (patent filed 1906, granted Feb 1908); the deck uses the invention/filing year.","suggestion":"","source":"https://ethw.org/De_Forest_Files_Audion_Patent"},
+    {"slug":"eccles-jordan-flip-flop","verdict":"ok","field":null,"found":"Patent GB 148582 filed 21 June 1918 (published 1920); papers in 1919. 1918 is the filing year as the deck notes ask.","suggestion":"","source":"https://www.historyofinformation.com/detail.php?id=3606"},
+    {"slug":"bush-differential-analyzer","verdict":"ok","field":null,"found":"Bush's MIT differential analyzer was completed in 1931.","suggestion":"","source":"https://history.aip.org/catalog/icos/1731.html"},
+    {"slug":"zuse-z3-computer","verdict":"ok","field":null,"found":"Z3 completed and demonstrated in 1941 in Berlin; relay-based.","suggestion":"","source":"https://en.wikipedia.org/wiki/Z3_(computer)"},
+    {"slug":"manchester-baby-runs-program","verdict":"ok","field":null,"found":"Ran its first program on 21 June 1948 at the University of Manchester.","suggestion":"","source":"https://en.wikipedia.org/wiki/Manchester_Baby"},
+    {"slug":"univac-i-delivered","verdict":"ok","field":null,"found":"Accepted by the Census Bureau 30-31 March 1951 (physically shipped later, but sources date delivery to 1951). Described as the first commercial computer produced in the US.","suggestion":"","source":"https://en.wikipedia.org/wiki/UNIVAC_I"},
+    {"slug":"kilby-first-integrated-circuit","verdict":"ok","field":null,"found":"Kilby demonstrated the first working IC at Texas Instruments in 1958.","suggestion":"","source":"https://en.wikipedia.org/wiki/Integrated_circuit"},
+    {"slug":"ibm-system-360-announced","verdict":"ok","field":null,"found":"Announced April 1964.","suggestion":"","source":"https://en.wikipedia.org/wiki/IBM_System/360"},
+    {"slug":"apple-ii-released","verdict":"ok","field":null,"found":"Went on sale June 1977.","suggestion":"","source":"https://en.wikipedia.org/wiki/Apple_II"},
+    {"slug":"ibm-pc-launched","verdict":"ok","field":null,"found":"IBM PC (5150) launched August 1981 with an Intel 8088.","suggestion":"","source":"https://en.wikipedia.org/wiki/IBM_Personal_Computer"},
+    {"slug":"arm1-processor-first-runs","verdict":"ok","field":null,"found":"First working ARM1 silicon, April 1985.","suggestion":"","source":"https://www.theregister.com/2020/04/27/arm_35_year_anniversary/"},
+    {"slug":"imac-launched","verdict":"ok","field":null,"found":"iMac G3 announced May 1998 and released August 1998 (not confirmed by my search results directly; consistent with the cited spine source).","suggestion":"","source":"https://en.wikipedia.org/wiki/IMac_G3"},
+    {"slug":"nvidia-geforce-256-gpu","verdict":"ok","field":null,"found":"GeForce 256 announced 31 Aug 1999, released 11 Oct 1999; Nvidia marketed it as the first GPU and it had hardware transform and lighting.","suggestion":"","source":"https://en.wikipedia.org/wiki/GeForce_256"},
+    {"slug":"ibm-quantum-factors-15","verdict":"ok","field":null,"found":"IBM Almaden experiment (Vandersypen, Chuang et al.), Nature Dec 2001; 7 spins (5 fluorine, 2 carbon) in one molecule via NMR, factored 15 with Shor's algorithm.","suggestion":"","source":"https://www.ibm.com/quantum/blog/factor-15-shors-algorithm"},
+    {"slug":"roadrunner-petaflop-supercomputer","verdict":"ok","field":null,"found":"Roadrunner passed 1 petaflop on Linpack in late May 2008; Top500 No. 1 June 2008. AMD Opteron plus IBM PowerXCell (Cell) design, Los Alamos.","suggestion":"","source":"https://en.wikipedia.org/wiki/Roadrunner_(supercomputer)"},
+    {"slug":"ibm-watson-jeopardy","verdict":"ok","field":null,"found":"Watson beat Ken Jennings and Brad Rutter on Jeopardy! in February 2011.","suggestion":"","source":"https://en.wikipedia.org/wiki/Watson_(computer)"},
+    {"slug":"raspberry-pi-released","verdict":"ok","field":null,"found":"Raspberry Pi Model B went on sale 29 February 2012.","suggestion":"","source":"https://en.wikipedia.org/wiki/Raspberry_Pi"},
+    {"slug":"apple-m1-chip","verdict":"ok","field":null,"found":"M1 unveiled 10 November 2020.","suggestion":"","source":"https://en.wikipedia.org/wiki/Apple_M1"},
+    {"slug":"frontier-exascale-supercomputer","verdict":"ok","field":null,"found":"Frontier topped the Top500 in May/June 2022 as the first exascale system.","suggestion":"","source":"https://www.datacenterfrontier.com/design/article/11427350/the-exascale-era-begins-as-frontier-breaks-supercomputing-barrier"},
+    {"slug":"google-willow-quantum-chip","verdict":"ok","field":null,"found":"Willow, 105 qubits, announced December 2024 with below-threshold error correction.","suggestion":"","source":"https://www.npr.org/2024/12/11/nx-s1-5223486/google-new-chip-quantum-computing"}
+  ]
+}

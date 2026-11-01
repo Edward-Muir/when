@@ -1,0 +1,15 @@
+{
+  "slug": "imac-launched",
+  "description": "An oil painting of a rounded, translucent teal-and-white all-in-one computer with a handle on top, its internals visible through the shell, on a wooden table beside a round clear mouse, in a dim kitchen with cabinets and clutter. The word 'iMac' is legibly painted on the bezel below the screen. No frame, no people, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The word 'iMac' is clearly legible on the bezel below the screen. Repaint the chin without any lettering."
+}

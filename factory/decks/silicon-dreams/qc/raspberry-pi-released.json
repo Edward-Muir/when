@@ -1,0 +1,15 @@
+{
+  "slug": "raspberry-pi-released",
+  "description": "A boy with short hair and a dark sweater leans over a wooden table in a dim room, pushing a black cable into a green circuit board with a silver-cased chip and small ports, a Raspberry Pi-style board. Beside it sit a beige keyboard, a bulky CRT monitor with a glowing screen, and a tangle of cables including a yellow RCA plug. A second child sits at a desk in the blurred background in front of a dark chalkboard. The style is an oil painting with visible brushwork, and the scene is edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "nvidia-geforce-256-gpu",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "9d259e9f430ba64144e98277c41ab3e2355fb64ce1f6df4b06c23d8ec81de7a3",
+  "dhash": "c8eccd19e9edd47a",
+  "nearest": {
+    "deck": {
+      "slug": "hollerith-tabulator-census",
+      "distance": 22
+    },
+    "catalogue": {
+      "slug": "iran-iraq-war",
+      "distance": 9
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

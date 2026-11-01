@@ -1,0 +1,178 @@
+{
+  "deck": "silicon-dreams",
+  "name": "Silicon Dreams",
+  "stage": "pr-open",
+  "created_at": "2026-10-20T11:20:08.519Z",
+  "updated_at": "2026-10-20T18:08:58.772Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-20T11:20:08.519Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-20T11:47:49.468Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-20T17:06:56.559Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-20T18:06:47.899Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-20T18:08:58.772Z"
+    }
+  ],
+  "slugs": {
+    "hollerith-tabulator-census": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ec86cd9a0d9504347fc4c96d054a6ec32850677f7b5b396c90f6ca2411114270",
+      "updated_at": "2026-10-20T12:14:57.855Z"
+    },
+    "de-forest-triode-audion": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2d759e7c28b877630a89ec3eda1aea9e2bc96da30a4f4a4a8fa77ef86118b721",
+      "updated_at": "2026-10-20T12:14:57.887Z"
+    },
+    "eccles-jordan-flip-flop": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "637363dea381a958e7ca047af4238229a401ee7ff7ad272223dc690b63ed6482",
+      "updated_at": "2026-10-20T12:14:57.917Z"
+    },
+    "bush-differential-analyzer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9ed7065ba9d214c09d38ff8140194e52bde551d2c263e652c04b07d7f67baf3d",
+      "updated_at": "2026-10-20T12:14:57.947Z"
+    },
+    "zuse-z3-computer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d448c0c9981a1019988cf97366a4b2d41284124f14939b73b5e59550c634e83d",
+      "updated_at": "2026-10-20T12:14:57.977Z"
+    },
+    "manchester-baby-runs-program": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3a9e1785d6cfd4c2b950de1d31385d9a4b5fa8a029b5b15d0eb4ad82da211701",
+      "updated_at": "2026-10-20T12:14:58.008Z"
+    },
+    "univac-i-delivered": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "bd1a4b5c36f2c0aa0f8a1b42ede40630c2422e0f2b94de740786657002cff5dc",
+      "updated_at": "2026-10-20T13:07:22.814Z"
+    },
+    "kilby-first-integrated-circuit": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a81d3e759a5c3b84849eb54e7730733c3cb668dfc752398351fece98178e9d8b",
+      "updated_at": "2026-10-20T12:14:58.069Z"
+    },
+    "ibm-system-360-announced": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "5add18dbd9e4cc1b213f48daa05185cf51e642924c7de028daba8e9e2842d940",
+      "updated_at": "2026-10-20T13:07:22.848Z"
+    },
+    "apple-ii-released": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7a4b16f70b03abfb37fc9c4ede2947a548a8aafc1e36e6ef658f6ad75b1dfda9",
+      "updated_at": "2026-10-20T12:14:58.133Z"
+    },
+    "ibm-pc-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d4ee4addac348ec3b388772e57bfeb5d83d8ddc03c83c3cfbeb09f4cd55d1e74",
+      "updated_at": "2026-10-20T13:07:22.880Z"
+    },
+    "arm1-processor-first-runs": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ffd3f641deb977b9996a6538545cfef20b30f7a2adad7cb44620e97a5aed77c8",
+      "updated_at": "2026-10-20T13:07:22.912Z"
+    },
+    "imac-launched": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "0fcc6985ea128f7f157e4612eb0f8faf68122613d005fb81d69d5c022f7648cf",
+      "updated_at": "2026-10-20T17:06:56.465Z"
+    },
+    "nvidia-geforce-256-gpu": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9d259e9f430ba64144e98277c41ab3e2355fb64ce1f6df4b06c23d8ec81de7a3",
+      "updated_at": "2026-10-20T13:07:22.977Z"
+    },
+    "ibm-quantum-factors-15": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "134d15e0abf00e05337661c4fa096a02910127779f6be4dba433f32f48a1d049",
+      "updated_at": "2026-10-20T13:07:23.011Z"
+    },
+    "roadrunner-petaflop-supercomputer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bdb5ccc0c1503f3753b3523442ea41d241142d512f46d28532063f7985cde050",
+      "updated_at": "2026-10-20T13:07:23.044Z"
+    },
+    "ibm-watson-jeopardy": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7d7de4aafa4d0282be49e8bf852ea0a628be09847bfcaae8011193cece5bfa0c",
+      "updated_at": "2026-10-20T13:07:23.078Z"
+    },
+    "raspberry-pi-released": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e58bb88b43bd8ab698a6490de1a66528f5def7ce755e0bdd6495b99f3284e07c",
+      "updated_at": "2026-10-20T13:07:23.109Z"
+    },
+    "apple-m1-chip": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "015d98a0e11bdbc47c18d5b1b03275b3c7926d3559554c2ccace61a68c4d282c",
+      "updated_at": "2026-10-20T17:06:56.498Z"
+    },
+    "frontier-exascale-supercomputer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "03786b98c11d02230837b86c561a0b3e67aad542e80e3089bbe7345ecb7e04d8",
+      "updated_at": "2026-10-20T17:06:56.529Z"
+    },
+    "google-willow-quantum-chip": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cab3c75e00c0a34b1a57b637ed7c3e66c8ca607d9ebb7320258220bb67a33904",
+      "updated_at": "2026-10-20T17:06:56.559Z"
+    }
+  }
+}
