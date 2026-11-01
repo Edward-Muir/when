@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:17:31.259Z",
+  "updated_at": "2026-11-01T21:20:15.574Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-01T21:17:31.259Z"
     },
     "thermos-vacuum-flask": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "87a5f985f89a0a01c376adea8b957c39d7bc1d3a96496cc3f05052ce45a35b17",
+      "updated_at": "2026-11-01T21:20:15.574Z"
     },
     "leica-i-camera": {
       "state": "pending",
