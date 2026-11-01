@@ -1,21 +1,26 @@
 {
   "deck": "in-your-pocket",
   "name": "In Your Pocket",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T20:17:56.571Z",
+  "updated_at": "2026-11-01T21:09:43.470Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-01T20:17:56.571Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T21:09:43.470Z"
     }
   ],
   "slugs": {
     "davy-safety-lamp": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d68ca8c15004c7f56d5818341e6037c61818e2194a9e0d558fd67366650e327b",
+      "updated_at": "2026-11-01T21:09:43.470Z"
     },
     "swiss-army-knife-introduced": {
       "state": "pending",
