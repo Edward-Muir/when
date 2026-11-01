@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T01:16:29.475Z",
+  "updated_at": "2026-11-01T01:18:58.164Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-01T01:16:29.475Z"
     },
     "kojiki-records-shinto-myths": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "11974b1ed5d513bacee4fa41a8e9b36b6c0666c5a8be240bdb7b5613162ff4e9",
+      "updated_at": "2026-11-01T01:18:58.164Z"
     },
     "adi-shankara-born": {
       "state": "pending",
