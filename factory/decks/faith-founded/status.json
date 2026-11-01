@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T17:12:04.997Z",
+  "updated_at": "2026-11-01T17:14:44.119Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-01T17:12:04.997Z"
     },
     "ann-lee-shakers-america": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "030b04171a4491bd63f519ad038738b93451c4c30167e6751a30c4505fa901bb",
+      "updated_at": "2026-11-01T17:14:44.119Z"
     },
     "smith-founds-church-of-christ": {
       "state": "pending",
