@@ -1,0 +1,178 @@
+{
+  "deck": "live-wire",
+  "name": "Live Wire",
+  "stage": "pr-open",
+  "created_at": "2026-10-31T16:21:01.853Z",
+  "updated_at": "2026-10-31T23:08:37.255Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-31T16:21:01.853Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-31T17:09:02.095Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T22:07:03.629Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-31T23:06:49.223Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-31T23:08:37.255Z"
+    }
+  ],
+  "slugs": {
+    "pixii-hand-cranked-dynamo": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5b474d15762c0096ee6a233df294968087a4ccc543cc7f23d6694ba20cccbc44",
+      "updated_at": "2026-10-31T18:07:38.479Z"
+    },
+    "siemens-self-excited-dynamo": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9b1c3b6422d39620bef6cbd3491a8e13b297b1e392de7385c67718583dbb01b3",
+      "updated_at": "2026-10-31T18:07:38.510Z"
+    },
+    "godalming-public-electricity-supply": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3171e11884f209d5f220d52e9a1ad4096f7682735038ed970da37516a3c6ed4d",
+      "updated_at": "2026-10-31T18:07:38.540Z"
+    },
+    "pearl-street-station-opens": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "003976cad49761eba809657b7e893850c538c558c30b5f05ee25143a6c77cc70",
+      "updated_at": "2026-10-31T18:07:38.570Z"
+    },
+    "chicago-worlds-fair-ac-power": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "edda59ca3e0cb2ec1ced094d8bf9aee5f43d78badf4f60e35f4b26c8760761d4",
+      "updated_at": "2026-10-31T18:07:38.599Z"
+    },
+    "larderello-geothermal-plant": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c3f364fdc6865e0cdffa44bd0c56d49e6f01a46fda2ab43db6621b178bfec1d4",
+      "updated_at": "2026-10-31T18:07:38.632Z"
+    },
+    "britain-national-grid-live": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c364d1230ae28982a9eb15adada2071001c5e6a5f78d46252b83895fd6d5382d",
+      "updated_at": "2026-10-31T18:07:38.668Z"
+    },
+    "smith-putnam-wind-turbine": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "01fc023c35cb1ee2e5c9e97122268b02e96450f34ca574a22e6438c0f5a27251",
+      "updated_at": "2026-10-31T18:07:38.708Z"
+    },
+    "the-geysers-geothermal-plant": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "464d5db0f38940a028f40ff67bd0ad01a9f4f3b67892c331e7ba595c34c22e16",
+      "updated_at": "2026-10-31T18:07:38.743Z"
+    },
+    "northeast-blackout-1965": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "095fc29984f61d49848f9ffc839a9cdd25260e13a58e28719a7351fcc83c456b",
+      "updated_at": "2026-10-31T18:07:38.777Z"
+    },
+    "rance-tidal-power-station": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "942454e9bdc0272d26eb7f20ebd1a328590e47573fe66e88d51650f705ba29d8",
+      "updated_at": "2026-10-31T20:07:41.656Z"
+    },
+    "pacific-dc-intertie-opens": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7ace65dbe6f18abc2ee4800220bb68b58037c83410e9f2d79587d1a6efd6fdc7",
+      "updated_at": "2026-10-31T20:07:41.687Z"
+    },
+    "dinorwig-pumped-storage-station": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "79920657ddc4676df7d654efb0c1cc869ef6966c8a630672caec20102267154d",
+      "updated_at": "2026-10-31T20:07:41.717Z"
+    },
+    "quebec-geomagnetic-blackout": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "74591a8bc5054cf2211792d2ac1d8620fbe8fceea086a2b47d668618232e8cf8",
+      "updated_at": "2026-10-31T20:07:41.747Z"
+    },
+    "toyota-prius-launched": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5425926d333265147b341b50a6e8c152131b2493553dcbc0d1f8adbdc19ea366",
+      "updated_at": "2026-10-31T20:07:41.777Z"
+    },
+    "northeast-blackout-2003": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "956f8267788eaaba0b41f08cce3ec79a187ce36aa9e0aafee822c0f2ad702a78",
+      "updated_at": "2026-10-31T20:07:41.810Z"
+    },
+    "tesla-roadster-deliveries": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "eabba83a55767b502b9ef0ca8eb8adecd9c334c2a73c94dfd251e022aa409a25",
+      "updated_at": "2026-10-31T20:07:41.849Z"
+    },
+    "tesla-powerwall-unveiled": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1348c27bf2c01f349d94b3ac765513b38428288d81d698bad56342bfc4d924c9",
+      "updated_at": "2026-10-31T20:07:41.886Z"
+    },
+    "hornsdale-power-reserve": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "70a1183d61f7efcd84c0bb272468eb30819f803497748bf7f9188a8375c76cd4",
+      "updated_at": "2026-10-31T20:07:41.919Z"
+    },
+    "hornsea-offshore-wind-farm": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1c4f6f6f3d966e2be7e9656ada144baaee45746d764cf573c39c41d1871c6a61",
+      "updated_at": "2026-10-31T20:07:41.953Z"
+    },
+    "iberian-peninsula-blackout": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d54da2e9fb2049304a77d343015897cbec82b796315f937d91c8c3ce21ea3e00",
+      "updated_at": "2026-10-31T22:07:03.629Z"
+    }
+  }
+}

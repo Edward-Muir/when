@@ -1,0 +1,20 @@
+{
+  "slug": "roadrunner-petaflop-supercomputer",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "bdb5ccc0c1503f3753b3523442ea41d241142d512f46d28532063f7985cde050",
+  "dhash": "e8e8e0f0dcf079d0",
+  "nearest": {
+    "deck": {
+      "slug": "ibm-quantum-factors-15",
+      "distance": 19
+    },
+    "catalogue": {
+      "slug": "korbut-flip-munich-1972",
+      "distance": 11
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "cuba-becomes-republic",
+  "description": "An oil-style painting of an ornate, pale stone colonial building with a tall bell tower on the left and a balcony crowded with men in suits. Two flags fly from the roof, a US flag on the left and a Cuban flag with a white star on the right, and figures wave from the rooftop. Below, a dense crowd of men in straw boater hats and dark suits raises their arms, with small Cuban flags among them. The dress and architecture suggest the early 1900s, and I see no visible text, frame, or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

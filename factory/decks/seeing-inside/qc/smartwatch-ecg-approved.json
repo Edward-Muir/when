@@ -1,0 +1,15 @@
+{
+  "slug": "smartwatch-ecg-approved",
+  "description": "A painted close-up, in an oil-painting style, of an older person's hands. A rectangular silver-cased smartwatch sits on the left wrist, and its dark screen shows a glowing green-and-yellow heartbeat trace. A fingertip from the other hand rests near the watch's side button. The background is dark brown with loose brushwork, and a grey-brown sleeve sits at the lower left. I see no visible text, frame, blood or nudity.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

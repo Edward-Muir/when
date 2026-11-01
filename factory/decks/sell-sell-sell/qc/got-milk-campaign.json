@@ -1,0 +1,15 @@
+{
+  "slug": "got-milk-campaign",
+  "description": "A dark, warmly lit oil-style still life of a kitchen counter. A tall beige gable-top milk carton stands upright in the centre-left. In the front left, a half-eaten peanut butter sandwich on white bread sits on the counter. On the right, an empty clear drinking glass stands on the counter. The background shows a stove with knobs, upper cabinets, a utensil jar and a small appliance in shadow. A faint, illegible scrawl, likely an artist's signature, sits in the bottom right corner. The painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A faint, illegible scrawl, likely an artist's signature, sits in the bottom-right corner of the painting. Crop or paint it out so no mark reads as text. The carton also stands upright and looks full, where the scene asked for an empty carton lying on the table; this is a minor mismatch, not a fail."
+}

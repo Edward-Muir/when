@@ -1,0 +1,15 @@
+{
+  "slug": "mani-founds-manichaeism",
+  "description": "A bearded man with long dark hair, in loose white robes, kneels on a patterned rug at night, palms raised in prayer toward a luminous, translucent kneeling figure made of light. The setting is a courtyard of arched brick and tiled Islamic-style architecture under a starry sky. Books, scrolls, a brass ewer and a brass lamp lie on the floor. I see no letters, numbers, frame or border, and nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "fail",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The era does not fit the year 240. The courtyard has pointed arches and glazed, carved tile panels that read as medieval Islamic Persian architecture, about a thousand years after the card's date, not a third-century Mesopotamian courtyard. The painting is also realistic oil rather than the flat Manichaean book-painting style the scene asked for. The subject itself matches: a robed prophet kneeling beside a luminous mirroring figure."
+}

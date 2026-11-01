@@ -1,0 +1,15 @@
+{
+  "slug": "mesoproterozoic-era-begins",
+  "description": "A low-tide mudflat or tidal plain, with shallow water channels winding between dark, ridged mud and rock. Olive-green microbial mats or algae cling to the ridges. A bright sun glare sits under a heavy grey sky near the horizon. There are no people, buildings, or machines, and no text, border, or frame is visible; the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

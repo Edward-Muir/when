@@ -1,0 +1,15 @@
+{
+  "slug": "vespasian-proclaimed-emperor",
+  "description": "A balding, stern general in Roman muscle armour and a red cloak stands on a large round shield held aloft by cheering legionaries, one hand raised and the other holding an eagle standard. Red banners, bronze standards, spears and tents fill a smoky dusk camp. A small plaque on the standard at right carries the word SIGNA. No frame or border; nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "A word (SIGNA) is painted on a plaque on the standard at right. Remove the lettering and leave the plaque blank or use a plain emblem. The rest of the scene matches the card."
+}

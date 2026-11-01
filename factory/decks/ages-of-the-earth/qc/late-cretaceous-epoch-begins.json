@@ -1,0 +1,15 @@
+{
+  "slug": "late-cretaceous-epoch-begins",
+  "description": "An oil-style painting of a horned dinosaur with a large bony frill and nose horns, facing a large tyrannosaur-like theropod with small arms, on a muddy forest floor among ferns and flowering shrubs. A wide, rippling lake or sea lies behind them under a dark stormy sky. Edge to edge, no frame. A faint light squiggle, possibly a painter's signature, sits in the bottom right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A faint squiggle in the bottom right corner may be a painter's signature. Check it at full size; if it is a signature or letters, regenerate or crop it out. The subject, era and framing otherwise match the card."
+}

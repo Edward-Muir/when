@@ -1,0 +1,15 @@
+{
+  "slug": "fmri-brain-imaging",
+  "description": "A painted, dark-toned brain shown in side profile sits in front of a circular machine bore with a glowing ring. Several spots on the cortex glow orange-red, as if active. Thin translucent horizontal rings wrap around the brain, and small panel markings appear on the scanner's side edges. The background is near-black with visible brushwork, and the image fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

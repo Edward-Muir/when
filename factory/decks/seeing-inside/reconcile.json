@@ -1,0 +1,242 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "edwin-smith-surgical-papyrus",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "hippocratic-bedside-diagnosis",
+      "why": "New card."
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "herophilus-pulse-timing",
+      "why": "New card."
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "wang-shuhe-pulse-classic",
+      "why": "New card."
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "avicenna-medical-education",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "vesalius-anatomy",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "santorio-body-thermometer",
+      "why": "New card."
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "leeuwenhoek-blood-cells",
+      "why": "New card."
+    },
+    {
+      "beat": 8,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "auenbrugger-chest-percussion",
+      "why": "New card."
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "bozzini-light-conductor",
+      "why": "New card."
+    },
+    {
+      "beat": 11,
+      "decision": "reuse",
+      "slug": "stethoscope-invented",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "ophthalmoscope-invented",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 13,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "koch-tuberculosis-bacterium",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "riva-rocci-blood-pressure-cuff",
+      "why": "New card."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "blood-types-discovered",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 20,
+      "decision": "reuse",
+      "slug": "electrocardiogram-invented",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 21,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 22,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "berger-eeg-recorded",
+      "why": "New card."
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "papanicolaou-smear-test",
+      "why": "New card."
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "forssmann-heart-catheter",
+      "why": "New card."
+    },
+    {
+      "beat": 26,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to avoid bunching and keep the weakest/least famous beats out (crowded decades 1877-1913, 1700s, 1940s)."
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "apgar-score-newborns",
+      "why": "New card."
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "hirschowitz-fibre-optic-endoscope",
+      "why": "New card."
+    },
+    {
+      "beat": 29,
+      "decision": "reuse",
+      "slug": "first-ultrasound-imaging",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "first-ct-scan-patient",
+      "why": "New card."
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "home-pregnancy-test-launched",
+      "why": "New card."
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "first-mri-human-scan",
+      "why": "New card."
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "first-hiv-blood-test",
+      "why": "New card."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "fmri-brain-imaging",
+      "why": "New card."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "capsule-endoscopy-camera-pill",
+      "why": "New card."
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "smartwatch-ecg-approved",
+      "why": "New card."
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "mass-covid-testing",
+      "why": "New card."
+    }
+  ],
+  "gates": "Gates:\nPASS  size 30                (want exactly 30)\n  INFO  bins 8/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1896-1903 (want 3 or fewer in any 10 years)\n  PASS  shared 2 (under-the-knife) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 66 earlier themes:\n        2  under-the-knife        edwin-smith-surgical-papyrus, blood-types-discovered\n        1  plagues                koch-tuberculosis-bacterium",
+  "footholds": [
+    "first-ct-scan-patient",
+    "home-pregnancy-test-launched",
+    "first-mri-human-scan",
+    "mass-covid-testing",
+    "stethoscope-invented",
+    "first-ultrasound-imaging"
+  ]
+}

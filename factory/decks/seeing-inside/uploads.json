@@ -1,0 +1,191 @@
+{
+  "hippocratic-bedside-diagnosis": {
+    "public_id": "hippocratic-bedside-diagnosis_2gx763",
+    "version": 1793437590,
+    "bytes": 558784,
+    "sha256": "1086f46ecb14390b8e734080fbe6f9788bc2e3462f155f57db81789386426131",
+    "source_sha256": "f8381e8e250618ecb00ae31c626f7417936682afd6f656ca28c8144a05d9c6be",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:32.041Z"
+  },
+  "herophilus-pulse-timing": {
+    "public_id": "herophilus-pulse-timing_dphfby",
+    "version": 1793437591,
+    "bytes": 577061,
+    "sha256": "c0f87728e0c45b8f93c7371ee12325b5b96200eee640e5ec43217fe042fd0a03",
+    "source_sha256": "613932d944902a44df9ae9a25d3f079ba1a32f62436f7e340932452e16426afc",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:32.908Z"
+  },
+  "wang-shuhe-pulse-classic": {
+    "public_id": "wang-shuhe-pulse-classic_5hm58d",
+    "version": 1793437592,
+    "bytes": 487221,
+    "sha256": "29cb19037355280619f842aaafbc8859a36ec596154c0b428fc540c9d379611a",
+    "source_sha256": "cda4d91f85b3410f122a438a3b3d5a3ba1df4709f32e096a6bfabfcdad810273",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:33.878Z"
+  },
+  "santorio-body-thermometer": {
+    "public_id": "santorio-body-thermometer_406lht",
+    "version": 1793437593,
+    "bytes": 488441,
+    "sha256": "9e1614469fd2a19b44d0652ee451b8692297eeae5104c576da8411a3cf72af10",
+    "source_sha256": "0777df4a7856f92a3b4ec9d528d83854a10673f27d241e1cc5798105b046376a",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:34.683Z"
+  },
+  "leeuwenhoek-blood-cells": {
+    "public_id": "leeuwenhoek-blood-cells_8cie7w",
+    "version": 1793437594,
+    "bytes": 628840,
+    "sha256": "379fdfd940beecd49df9f80bca3d540731e0b1c1cb982da3afd2c9bdbc20410a",
+    "source_sha256": "b97e3110e6040c11123c966ce7d15322740468e656985666956d2db5812aadcb",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:35.515Z"
+  },
+  "auenbrugger-chest-percussion": {
+    "public_id": "auenbrugger-chest-percussion_od1cqy",
+    "version": 1793437595,
+    "bytes": 481356,
+    "sha256": "c9b711e4fa6f95406ed78d2138a041a827303ae546386f91b5ff9059bf7a1298",
+    "source_sha256": "ba9606c5212eddab7661fde5634a6d5e108d5384793170a8a488a082c680d24b",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:36.537Z"
+  },
+  "bozzini-light-conductor": {
+    "public_id": "bozzini-light-conductor_3kqwo3",
+    "version": 1793437596,
+    "bytes": 507333,
+    "sha256": "3c4916681af96639e7ae641be3680a998d64098fe8792b21773b7d261810ec35",
+    "source_sha256": "be44bbca6a85efd6b274895dec1766fdf97f2b8d0f170304b384686f4fc9413b",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:37.573Z"
+  },
+  "riva-rocci-blood-pressure-cuff": {
+    "public_id": "riva-rocci-blood-pressure-cuff_062da0",
+    "version": 1793437597,
+    "bytes": 625030,
+    "sha256": "df3881d39a93f1cbc46637ad17568b81b119a53c989dce87d68c8feaab902ee4",
+    "source_sha256": "f285d204f8fee265b294e08ef7152078c8dcfe6e2be306511f8eb846109a3edb",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:38.468Z"
+  },
+  "berger-eeg-recorded": {
+    "public_id": "berger-eeg-recorded_7tkdf6",
+    "version": 1793437598,
+    "bytes": 531627,
+    "sha256": "02d873220cb509012ee6ddbb2720d07e7bd7cc1134c58862f05b40becd51c3f1",
+    "source_sha256": "591345e868974ae7660f17663c087ce781da50914db204c7de653c1b686001d9",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:39.270Z"
+  },
+  "papanicolaou-smear-test": {
+    "public_id": "papanicolaou-smear-test_uay75v",
+    "version": 1793437598,
+    "bytes": 710457,
+    "sha256": "828df9f2e019ec20f834dc8be2d9879adc5168dfaf81e89a1531f1231e2ec69d",
+    "source_sha256": "54c32dbac6aed3b625868472226bffed0aee8a1caa6756d7165c0917827f8f82",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:40.174Z"
+  },
+  "forssmann-heart-catheter": {
+    "public_id": "forssmann-heart-catheter_q94uvv",
+    "version": 1793437599,
+    "bytes": 555246,
+    "sha256": "e91d6ac3d3c7ef37e08890df113a7c103bb2dd7290578f8a36aa64ca52c7aca4",
+    "source_sha256": "dd073e31ec04502456504accf4e97253db8d4042e3850a92dd5ec07b88f91bd2",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:41.083Z"
+  },
+  "apgar-score-newborns": {
+    "public_id": "apgar-score-newborns_p62ecm",
+    "version": 1793437600,
+    "bytes": 439537,
+    "sha256": "479d373904f4e9a2820b1c7fbdf41e73ebdb8e305f5c65072e746936bc163b46",
+    "source_sha256": "f7c5b7dc7702eb20984b1b8ff3188231748c9d7fa409286002ec941956673b89",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:41.858Z"
+  },
+  "hirschowitz-fibre-optic-endoscope": {
+    "public_id": "hirschowitz-fibre-optic-endoscope_0dzr3a",
+    "version": 1793437601,
+    "bytes": 665666,
+    "sha256": "ef28047a4e1894c7df71764b74d44247d47a27c2fa29f76f1efa495207d95892",
+    "source_sha256": "9560bfd612b9437b06fd6001f3a3609b2620ba661d17b9943289374600ff6993",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:42.876Z"
+  },
+  "first-ct-scan-patient": {
+    "public_id": "first-ct-scan-patient_i7kbi9",
+    "version": 1793437602,
+    "bytes": 622546,
+    "sha256": "654d2167880bd41e4f7d99f7bc2b7705cde14fb54bb0b5a7b562efd766d52b02",
+    "source_sha256": "4a84b884b4357bc5bfdcdf49e40449deaab6a0b81b65319f8e11573e0bf8d97b",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:43.900Z"
+  },
+  "home-pregnancy-test-launched": {
+    "public_id": "home-pregnancy-test-launched_0rza64",
+    "version": 1793437603,
+    "bytes": 495173,
+    "sha256": "092252643afa68c996a5356650d97fdc4629717395b4f3455c5ae1d5ae7b699f",
+    "source_sha256": "efba98936c9b8673abfcf856e02d0d228f258f48f89fd0d2c841adea4345e8d6",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:44.989Z"
+  },
+  "first-mri-human-scan": {
+    "public_id": "first-mri-human-scan_navjk6",
+    "version": 1793437604,
+    "bytes": 748481,
+    "sha256": "ae766fd401606a0a2ab85ae5ecf857fb2db9b95a2a7b0b52893cfb78e43ca64a",
+    "source_sha256": "0f2922fa284b2d1e1ae0dace3399b31eb746e25d4521aee65ee13a5f66cb71de",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:46.008Z"
+  },
+  "first-hiv-blood-test": {
+    "public_id": "first-hiv-blood-test_5e191x",
+    "version": 1793437605,
+    "bytes": 674467,
+    "sha256": "004bb801d20da39e66bb45ccd436b9595474f3daf01118b19e95e102f3d26b0f",
+    "source_sha256": "7abb3dad32a3a947760cccd45f6b998dd95fd859f4186245b50483b9d4983894",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:46.897Z"
+  },
+  "fmri-brain-imaging": {
+    "public_id": "fmri-brain-imaging_t6kwza",
+    "version": 1793437606,
+    "bytes": 659469,
+    "sha256": "6b6134909d9b3afd57f659163ce8eb78dd06c1825bf6720a201e2cc92ac4d1ec",
+    "source_sha256": "14f874623ea13deac8e6915c2ef55140ae41eee85716a3dbe4eec8d7a89f593d",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:47.700Z"
+  },
+  "capsule-endoscopy-camera-pill": {
+    "public_id": "capsule-endoscopy-camera-pill_3a5hsd",
+    "version": 1793437607,
+    "bytes": 427320,
+    "sha256": "57be70ba97a9b33d99627e77f5b40610457da0fb45a69d7f95e341045a67c6ba",
+    "source_sha256": "b0ec1e0d41cadd9356fa2dace0bb325c9615f5c207c41055de4c84c17248661d",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:48.601Z"
+  },
+  "smartwatch-ecg-approved": {
+    "public_id": "smartwatch-ecg-approved_x8fqza",
+    "version": 1793437608,
+    "bytes": 513548,
+    "sha256": "c745807855a3ba75498a33596996f503db19e9140e3fe6a07d5cbf763226f99a",
+    "source_sha256": "02a601099bb565ed4f6ad8243be31ec46e41e6ee6d4a8470075a6106adf7acba",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:49.487Z"
+  },
+  "mass-covid-testing": {
+    "public_id": "mass-covid-testing_vccafu",
+    "version": 1793437609,
+    "bytes": 625354,
+    "sha256": "e0497173103e8b108724ed4732c7a47246e591dc339b12777786c673bc85fe48",
+    "source_sha256": "c49b8bb85e6f10a8c0eaa77fa998fd5624a2d0aa729ae6afc4e01d741ef7606c",
+    "verified": true,
+    "uploaded_at": "2026-10-31T09:06:50.403Z"
+  }
+}

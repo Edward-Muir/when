@@ -1,0 +1,20 @@
+{
+  "slug": "first-ct-scan-patient",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "4a84b884b4357bc5bfdcdf49e40449deaab6a0b81b65319f8e11573e0bf8d97b",
+  "dhash": "8c0c437272383c36",
+  "nearest": {
+    "deck": {
+      "slug": "first-hiv-blood-test",
+      "distance": 24
+    },
+    "catalogue": {
+      "slug": "lollards-wycliffe",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 2
+}

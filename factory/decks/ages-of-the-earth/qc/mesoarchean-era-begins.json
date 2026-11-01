@@ -1,0 +1,15 @@
+{
+  "slug": "mesoarchean-era-begins",
+  "description": "A painting of a flat-topped, layered rock cliff jutting into a calm dark sea under a hazy orange sky with a low sun glowing behind it. In the foreground, shallow green-brown water covers rounded, wrinkled mat-like formations on the rocks. A few small rocks sit in the water to the right. No people, animals, plants, buildings or machines are visible, and no text. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

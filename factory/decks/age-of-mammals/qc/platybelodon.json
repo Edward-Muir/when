@@ -1,0 +1,15 @@
+{
+  "slug": "platybelodon",
+  "description": "An elephant-like animal with long curved tusks stands in shallow muddy water at dusk under a stormy sky. Its trunk curls down and grips a clump of green marsh plants while water drips from its mouth. Bare dead trees, reeds and dark swampy ground frame it in an oil-painting style. No text, border or frame is visible.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The animal reads as a generic elephant gripping plants with its trunk; the flat, shovel-shaped lower jaw the card asks for is not clearly visible, so it could be taken for a modern elephant rather than Platybelodon."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "imac-launched",
+  "description": "A rounded, translucent teal-and-white all-in-one computer with a built-in grey screen and a carry handle on top, its insides faintly visible through the shell, sitting on a wooden table beside a round clear mouse. The background is a dark, cluttered room with cabinets, papers and kitchen items. There is a small 'iMac' word on the bezel below the screen. No people.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The 'iMac' wordmark is painted on the bezel below the screen. Repaint or crop it out so no lettering remains."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "iberian-peninsula-blackout",
+  "description": "An oil painting of a modern high-speed passenger train on an elevated viaduct with overhead catenary poles, over a dry golden plain in late light. Below is a street junction with dark traffic lights, shuttered shop fronts and small silhouetted people standing about. No text, no frame, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

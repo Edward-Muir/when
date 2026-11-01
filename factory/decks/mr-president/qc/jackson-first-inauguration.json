@@ -1,0 +1,15 @@
+{
+  "slug": "jackson-first-inauguration",
+  "description": "A crowded, chaotic interior: a man in a dark suit and waistcoat stands on a upholstered chair, raising a top hat with one arm. Around him a mob of rough-dressed men in brown coats and slouch hats presses in, some climbing toward tall open windows on the right. A punch bowl has tipped off a round table on the left, spilling liquid and shards of white china across the floor, with food scraps and dropped hats nearby. Gilt-framed portraits hang on the papered walls under a crystal chandelier. The painting fills the frame edge to edge with no text or signature visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

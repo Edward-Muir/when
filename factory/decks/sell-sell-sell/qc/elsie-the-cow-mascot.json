@@ -1,0 +1,15 @@
+{
+  "slug": "elsie-the-cow-mascot",
+  "description": "An oil-painting style scene of a brown-and-white cow with a garland of yellow daisies around its neck, its head filling the centre-right. Behind it and to the left are glass milk bottles on a wooden counter, and at the bottom are more bottles, some filled with milk. The background shows a dusky fairground at night with striped tents, string lights, and silhouetted people in period-looking clothing. No visible text, frame or wounds.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

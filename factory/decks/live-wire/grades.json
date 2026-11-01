@@ -1,0 +1,23 @@
+{
+  "pixii-hand-cranked-dynamo": {"recognition": "low", "inferability": "medium", "anchors": ["dynamo", "commutator", "instrument maker"], "why": "obscure, but magnets and coils with first generator suggest early 19th century electrical era"},
+  "siemens-self-excited-dynamo": {"recognition": "low", "inferability": "medium", "anchors": ["Werner Siemens", "generator"], "why": "Siemens and dynamo point to industrial 19th century, not a clear decade"},
+  "godalming-public-electricity-supply": {"recognition": "very-low", "inferability": "medium", "anchors": ["waterwheel", "street lamps", "first public electricity"], "why": "town unknown, but first public electricity and waterwheel imply late 19th century"},
+  "pearl-street-station-opens": {"recognition": "medium", "inferability": "high", "anchors": ["Edison", "underground wires", "Manhattan"], "why": "Edison anchors firmly to the late 19th century"},
+  "chicago-worlds-fair-ac-power": {"recognition": "medium", "inferability": "high", "anchors": ["Westinghouse", "War of the Currents", "World's Fair"], "why": "Westinghouse and War of the Currents place it in the 1890s era"},
+  "larderello-geothermal-plant": {"recognition": "very-low", "inferability": "medium", "anchors": ["Prince", "small engine", "few bulbs"], "why": "a prince, early bulbs and a small steam engine suggest early 20th century or late 19th"},
+  "britain-national-grid-live": {"recognition": "medium", "inferability": "medium", "anchors": ["pylons", "high-voltage", "national network"], "why": "pylons and a first national grid imply early-to-mid 20th century"},
+  "smith-putnam-wind-turbine": {"recognition": "very-low", "inferability": "medium", "anchors": ["megawatt", "grid", "first"], "why": "megawatt grid-scale first suggests 20th century, but could be later"},
+  "the-geysers-geothermal-plant": {"recognition": "low", "inferability": "low", "anchors": ["utility grid", "geothermal"], "why": "few clues; could be any decade of the 20th century"},
+  "northeast-blackout-1965": {"recognition": "medium", "inferability": "medium", "anchors": ["relay", "northeastern US and Canada", "blackout"], "why": "a grid-scale blackout implies mid-to-late 20th century"},
+  "rance-tidal-power-station": {"recognition": "low", "inferability": "low", "anchors": ["France", "tidal", "first large"], "why": "modern power plant but few clues to the decade"},
+  "pacific-dc-intertie-opens": {"recognition": "very-low", "inferability": "low", "anchors": ["direct-current", "hydropower", "Los Angeles"], "why": "no clear era beyond the 20th century"},
+  "dinorwig-pumped-storage-station": {"recognition": "very-low", "inferability": "low", "anchors": ["pumped storage", "Wales"], "why": "modern grid engineering with few era clues"},
+  "quebec-geomagnetic-blackout": {"recognition": "low", "inferability": "medium", "anchors": ["geomagnetic storm", "grid", "provincial"], "why": "a grid collapse implies the late 20th century"},
+  "toyota-prius-launched": {"recognition": "high", "inferability": "high", "anchors": ["Toyota", "hybrid car", "battery"], "why": "well-known and the hybrid car anchors to the late 20th century"},
+  "northeast-blackout-2003": {"recognition": "medium", "inferability": "medium", "anchors": ["cascade", "New York to Toronto"], "why": "modern cities and a grid cascade, but decade unclear"},
+  "tesla-roadster-deliveries": {"recognition": "medium", "inferability": "high", "anchors": ["laptop-style cells", "electric vehicles", "Tesla"], "why": "laptop-style cells place it in the 21st century"},
+  "tesla-powerwall-unveiled": {"recognition": "medium", "inferability": "high", "anchors": ["Tesla", "rooftop solar", "home battery"], "why": "Tesla and home solar batteries mean the 2010s"},
+  "hornsdale-power-reserve": {"recognition": "low", "inferability": "high", "anchors": ["lithium-ion", "world's biggest", "South Australia"], "why": "grid lithium-ion batteries point to the 2010s"},
+  "hornsea-offshore-wind-farm": {"recognition": "low", "inferability": "high", "anchors": ["170 turbines", "offshore wind farm", "largest"], "why": "giant offshore wind farm is distinctly 21st century"},
+  "iberian-peninsula-blackout": {"recognition": "medium", "inferability": "low", "anchors": ["Spain", "Portugal", "grid collapse"], "why": "no era markers; could read as any recent decade"}
+}

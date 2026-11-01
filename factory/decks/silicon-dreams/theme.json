@@ -1,0 +1,40 @@
+{
+  "id": "silicon-dreams",
+  "name": "Silicon Dreams",
+  "scope": "Yes if it is a computer, chip or other computing hardware",
+  "boundary": "Silicon Dreams: the machines; mechanical calculators go to Automata, wartime codebreaking machines to Codes & Ciphers, software to Hello, World, pocket devices to In Your Pocket.",
+  "neighbours": [
+    "ciphers",
+    "software-and-ai",
+    "in-your-pocket"
+  ],
+  "grid": {
+    "categories": [
+      "invention",
+      "science"
+    ],
+    "eras": [
+      "worldWars",
+      "coldWar",
+      "modern"
+    ],
+    "regions": [
+      "North America",
+      "Europe"
+    ]
+  },
+  "example_beats": [
+    "Zuse's Z3 (1941)",
+    "ENIAC unveiled (1946)",
+    "Transistor invented at Bell Labs (1947)",
+    "UNIVAC I delivered (1951)",
+    "Integrated circuit demonstrated (1958)",
+    "IBM System/360 (1964)",
+    "Intel 4004 microprocessor (1971)",
+    "Apple II goes on sale (1977)",
+    "IBM PC launched (1981)",
+    "Apple Macintosh (1984)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

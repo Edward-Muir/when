@@ -1,0 +1,42 @@
+{
+  "id": "black-gold",
+  "name": "Black Gold",
+  "scope": "Yes if it is a milestone in oil or gas",
+  "boundary": "Black Gold: oil and gas; gold and diamond rushes go to Strike It Rich, other industrial blasts to When It Went Wrong, lamp oil to Let There Be Light.",
+  "neighbours": [
+    "strike-it-rich",
+    "when-it-went-wrong",
+    "light"
+  ],
+  "grid": {
+    "categories": [
+      "commerce",
+      "science",
+      "disasters"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars",
+      "coldWar"
+    ],
+    "regions": [
+      "Middle East & North Africa",
+      "North America",
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Drake strikes oil in Pennsylvania (1859)",
+    "Standard Oil founded (1870)",
+    "Spindletop gusher (1901)",
+    "Oil found in Persia (1908)",
+    "Saudi oil discovered at Dammam (1938)",
+    "OPEC founded (1960)",
+    "Torrey Canyon spill (1967)",
+    "Arab oil embargo (1973)",
+    "Exxon Valdez spill (1989)",
+    "Deepwater Horizon spill (2010)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

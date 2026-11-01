@@ -1,0 +1,15 @@
+{
+  "slug": "gomphotherium",
+  "description": "An elephant-like animal with long, curved tusks stands in a dim, dense forest, reaching up with its trunk to pull leaves from a branch. Warm light falls through the trees onto its grey-brown hide, with ferns and fallen branches in the foreground. The painting is dark and painterly and fills the frame edge to edge. A tiny, faint mark sits in the bottom-right corner, not legible as text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

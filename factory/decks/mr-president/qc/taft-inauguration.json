@@ -1,0 +1,15 @@
+{
+  "slug": "taft-inauguration",
+  "description": "A snowy night scene in an oil-painting style. A domed white building with columns stands on the left under a dark sky, with snow falling. In the foreground, several dark-clothed workers shovel snow across a drifted plaza, and steps lead up toward a railing. On the right, a tall arched window glows with warm light, showing a crowded chamber of men in dark suits and robes; a large man in a dark coat raises his right hand near the window.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

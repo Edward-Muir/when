@@ -1,0 +1,15 @@
+{
+  "slug": "hollerith-tabulator-census",
+  "description": "A woman in a dark high-necked dress sits in profile at a wooden desk, feeding a punched card into a metal press. Behind her is a tall wooden cabinet with rows of round dials, some lit, and a candle burns at the top right. Stacks of paper cards sit on the desk and in drawers, and the scene is painted in dim, warm browns. The painting fills the frame edge to edge, with no visible letters or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

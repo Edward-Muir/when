@@ -1,0 +1,38 @@
+{
+  "id": "age-of-mammals",
+  "name": "Age of Mammals",
+  "scope": "Yes if it is a mammal of the last 66 million years, dated to when it lived",
+  "boundary": "Age of Mammals owns mammals from the asteroid to the end of the Ice Age; dinosaurs go to Dinosaurs, human species to Our Ancestors, extinctions in the human era to Gone Forever.",
+  "neighbours": [
+    "dinosaurs",
+    "our-ancestors",
+    "gone-forever",
+    "before-us"
+  ],
+  "grid": {
+    "categories": [
+      "nature"
+    ],
+    "eras": [
+      "prehistory"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Purgatorius, an early primate relative (66 million years ago)",
+    "Eohippus, the dawn horse (55 million years ago)",
+    "Ambulocetus, the walking whale (49 million years ago)",
+    "Basilosaurus (41 million years ago)",
+    "Paraceratherium, the largest land mammal (34 million years ago)",
+    "Deinotherium (10 million years ago)",
+    "Megatherium, the giant ground sloth (5 million years ago)",
+    "Smilodon, the sabre-tooth (2.5 million years ago)",
+    "Woolly mammoth (400,000 years ago)",
+    "Irish elk (400,000 years ago)"
+  ],
+  "notes": "One beat per animal, dated to the start of its fossil range, spread across all 66 million years by length, not crowded into the Ice Age. Never name an epoch or 'million years' on a card.",
+  "appeal": 3,
+  "status": "authoring"
+}

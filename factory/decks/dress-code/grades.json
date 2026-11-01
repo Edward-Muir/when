@@ -1,0 +1,15 @@
+{
+  "dyed-flax-fibres-georgia": {"recognition": "very-low", "inferability": "medium", "anchors": ["hunter-gatherers", "cave"], "why": "hunter-gatherers and a cave say prehistoric, though 'oldest known' gives little else"},
+  "silk-weaving-china-legend": {"recognition": "medium", "inferability": "medium", "anchors": ["legend", "empress", "China"], "why": "legendary empress in China points to ancient times, but not precisely"},
+  "victoria-white-wedding-gown": {"recognition": "medium", "inferability": "high", "anchors": ["Victoria", "British queen"], "why": "a young British queen is Victoria, so the 19th century"},
+  "worth-paris-couture-house": {"recognition": "low", "inferability": "medium", "anchors": ["tailor", "haute couture", "live models"], "why": "haute couture in Paris suggests 19th century, but fairly loose"},
+  "burberry-gabardine": {"recognition": "medium", "inferability": "medium", "anchors": ["draper", "trench coat"], "why": "draper and trench coat suggest late 19th or early 20th century"},
+  "viscose-rayon-patented": {"recognition": "low", "inferability": "medium", "anchors": ["patented", "artificial fabric", "chemists"], "why": "patented chemistry and first artificial fabric point to industrial era"},
+  "lacoste-polo-shirt": {"recognition": "medium", "inferability": "medium", "anchors": ["tennis star", "cotton piqué", "crocodile"], "why": "modern brand with a tennis star suggests early 20th century"},
+  "hepburn-givenchy-black-dress": {"recognition": "high", "inferability": "high", "anchors": ["Hepburn", "film about breakfast at a jeweller"], "why": "Breakfast at Tiffany's is an iconic film from the 1960s"},
+  "monroe-sheer-birthday-dress": {"recognition": "high", "inferability": "high", "anchors": ["Marilyn", "sing for a president", "sold for millions decades later"], "why": "Marilyn singing for a president places it mid-20th century"},
+  "von-furstenberg-wrap-dress": {"recognition": "medium", "inferability": "medium", "anchors": ["jersey dress", "women in workplace"], "why": "women's workplace independence suggests the late 20th century"},
+  "diana-revenge-dress": {"recognition": "high", "inferability": "high", "anchors": ["Princess Diana", "royal", "gala"], "why": "Diana places it in the late 20th century"},
+  "jlo-green-versace-dress": {"recognition": "medium", "inferability": "high", "anchors": ["J.Lo", "image search", "music awards"], "why": "inspired image search, so the internet era"},
+  "lady-gaga-meat-dress": {"recognition": "high", "inferability": "high", "anchors": ["Lady Gaga", "music awards", "global debate"], "why": "a modern pop star in the 2010s"}
+}

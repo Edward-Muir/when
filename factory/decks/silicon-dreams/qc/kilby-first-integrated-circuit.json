@@ -1,0 +1,15 @@
+{
+  "slug": "kilby-first-integrated-circuit",
+  "description": "An oil-style painting of a small dark circuit assembly on a clear glass plate, with fine gold wires joining metal pads, set on a dark wooden bench. A brass microscope and a glowing lamp sit above, with a soldering iron or probe on the right and an old knobbed instrument at top left. No legible text is visible, and the painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

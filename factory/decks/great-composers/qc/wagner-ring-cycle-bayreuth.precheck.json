@@ -1,0 +1,20 @@
+{
+  "slug": "wagner-ring-cycle-bayreuth",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "f291c2ff3d15a994dd9c8f78e665667ad6c346c6515d4632fce546ea7534de0b",
+  "dhash": "d4f8e89688e4f0e8",
+  "nearest": {
+    "deck": {
+      "slug": "mendelssohn-wedding-march",
+      "distance": 20
+    },
+    "catalogue": {
+      "slug": "kant-critique-pure-reason",
+      "distance": 13
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

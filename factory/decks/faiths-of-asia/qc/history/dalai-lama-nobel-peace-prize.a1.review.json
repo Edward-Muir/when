@@ -1,0 +1,15 @@
+{
+  "slug": "dalai-lama-nobel-peace-prize",
+  "description": "A dim, painterly interior of a large hall with stone columns and hanging banners. In the foreground a dark wooden lectern or table holds a gold medal resting on a white silk scarf with a woven pattern, its fringed ends hanging down. The medal has a profile portrait and small lettering that reads NOBEL. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The gold medal shows legible lettering reading NOBEL on its face. Repaint the medal with its inscription blurred or turned away so no letters appear."
+}

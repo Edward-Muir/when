@@ -1,0 +1,20 @@
+{
+  "slug": "first-mri-human-scan",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "0f2922fa284b2d1e1ae0dace3399b31eb746e25d4521aee65ee13a5f66cb71de",
+  "dhash": "f071e566e4f8ece6",
+  "nearest": {
+    "deck": {
+      "slug": "apgar-score-newborns",
+      "distance": 20
+    },
+    "catalogue": {
+      "slug": "jack-the-ripper-murders",
+      "distance": 13
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

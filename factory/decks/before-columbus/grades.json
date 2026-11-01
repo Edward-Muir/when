@@ -1,0 +1,23 @@
+{
+"squash-domesticated-guila-naquitz":{"recognition":"very-low","inferability":"medium","anchors":["foragers","first domesticated crops"],"why":"early domestication points to deep prehistory, but not how deep"},
+"cacao-use-santa-ana-la-florida":{"recognition":"very-low","inferability":"medium","anchors":["first known users","Amazon"],"why":"'first known' use implies prehistory"},
+"zapotecs-found-monte-alban":{"recognition":"low","inferability":"medium","anchors":["Zapotec","hilltop capital"],"why":"pre-Columbian Mesoamerica, ancient-ish, unclear when"},
+"el-mirador-maya-city-rises":{"recognition":"low","inferability":"medium","anchors":["Maya","pyramids"],"why":"Maya city, broad pre-Columbian era"},
+"teotihuacan-city-founded":{"recognition":"medium","inferability":"medium","anchors":["Valley of Mexico","planned city"],"why":"ancient Mesoamerica, founding era vague"},
+"chiapa-de-corzo-long-count-stela":{"recognition":"very-low","inferability":"medium","anchors":["Long Count","oldest surviving date"],"why":"early Maya calendar, ancient"},
+"lord-of-sipan-burial":{"recognition":"low","inferability":"medium","anchors":["Moche","gold tomb"],"why":"Moche is pre-Inca, ancient to early medieval"},
+"teotihuacan-conquers-tikal":{"recognition":"low","inferability":"medium","anchors":["Teotihuacan","Maya"],"why":"classic Maya period, fairly vague"},
+"copan-dynasty-founded":{"recognition":"very-low","inferability":"medium","anchors":["Maya","four centuries"],"why":"classic Maya era"},
+"teotihuacan-burned-collapse":{"recognition":"low","inferability":"medium","anchors":["Teotihuacan","collapse"],"why":"classic-era Mesoamerica"},
+"calakmul-defeats-tikal":{"recognition":"very-low","inferability":"medium","anchors":["Maya","Tikal"],"why":"classic Maya"},
+"pakal-tomb-sealed-palenque":{"recognition":"low","inferability":"medium","anchors":["Maya ruler","sarcophagus"],"why":"classic Maya era"},
+"tikal-temple-i-built":{"recognition":"low","inferability":"medium","anchors":["Maya","pyramid"],"why":"classic Maya era"},
+"chan-chan-rises":{"recognition":"low","inferability":"medium","anchors":["Chimu","adobe capital"],"why":"late pre-Inca Andes"},
+"chichen-itza-rises":{"recognition":"medium","inferability":"medium","anchors":["Maya","El Castillo"],"why":"Maya, pre-Columbian"},
+"cusco-founded-legend":{"recognition":"low","inferability":"high","anchors":["Inca","Manco Capac"],"why":"Inca capital places it late pre-Columbian"},
+"pachacuti-becomes-inca":{"recognition":"low","inferability":"high","anchors":["Inca empire"],"why":"Inca empire building, 15th century"},
+"inca-conquer-chimu":{"recognition":"low","inferability":"high","anchors":["Inca","Chimu"],"why":"Inca expansion, late pre-Columbian"},
+"tenochtitlan-conquers-tlatelolco":{"recognition":"low","inferability":"high","anchors":["Aztec","Tenochtitlan"],"why":"Aztec era, late pre-Columbian"},
+"templo-mayor-dedicated":{"recognition":"medium","inferability":"high","anchors":["Aztec","Great Temple"],"why":"Aztec peak, late pre-Columbian"},
+"moctezuma-ii-crowned":{"recognition":"medium","inferability":"high","anchors":["Moctezuma","Spaniards","Aztec"],"why":"just before Spanish arrival"}
+}

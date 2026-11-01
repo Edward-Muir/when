@@ -1,0 +1,15 @@
+{
+  "slug": "ardipithecus-ramidus-appears",
+  "description": "A hairy, dark-brown primate with a chimp-like face and long arms walks semi-upright through a dense forest. Buttress roots and vines surround it, with ferns and fallen leaves on the ground. The painting fills the frame edge to edge, with no text, border or signature visible.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The figure reads as a generic chimpanzee-like ape more than a distinct early hominin. It has a chimp face and fully dark fur, and the upright gait is only partly shown, so it could be taken for any ape. A reviewer should confirm it reads as Ardipithecus ramidus, a small upright-walking hominin in woodland."
+}

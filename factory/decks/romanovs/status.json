@@ -1,0 +1,150 @@
+{
+  "deck": "romanovs",
+  "name": "The Romanovs",
+  "stage": "pr-open",
+  "created_at": "2026-10-28T23:17:05.790Z",
+  "updated_at": "2026-10-29T04:08:49.828Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-28T23:17:05.790Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-29T00:09:23.757Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-29T03:07:25.627Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-29T04:07:05.284Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-29T04:08:49.828Z"
+    }
+  ],
+  "slugs": {
+    "michael-romanov-elected-tsar": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a1898a774d624d2faaec2bdbe79de390a7c47e099c6e3761d8e7fc5986c537ec",
+      "updated_at": "2026-10-29T01:08:00.293Z"
+    },
+    "peter-and-ivan-co-tsars": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "22da40a52f96f6913423142edd06754dcf69574255b9b58c1210d43dd993f186",
+      "updated_at": "2026-10-29T01:08:00.327Z"
+    },
+    "peter-great-embassy-europe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8088c327a92a83249a2b479d0221f56a93ed3e9f1de6d914cb01ae1d0eb03913",
+      "updated_at": "2026-10-29T01:08:00.360Z"
+    },
+    "founding-st-petersburg": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9dfd4e8e5b0faafc63a87ddb1c3e9c97668cc7b46332b2d3960f8787a240348d",
+      "updated_at": "2026-10-29T01:08:00.391Z"
+    },
+    "peter-proclaimed-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c76f5841e8e4acb3ad3761a3ad9669126b976aa37460fe750f574e5a0eb47c74",
+      "updated_at": "2026-10-29T01:08:00.421Z"
+    },
+    "elizabeth-seizes-russian-throne": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5884f8be5866ad4023ac89607c8130d795680b84a2dba3101f91428eef1ad538",
+      "updated_at": "2026-10-29T01:08:00.455Z"
+    },
+    "russia-annexes-crimea": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cff8b758913856710bee03e8678c04903021dfa71e7b3cfd3f928f7151115d93",
+      "updated_at": "2026-10-29T01:08:00.492Z"
+    },
+    "paul-i-assassinated": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9b0b41c71124e2dcee5a586607473b729ca15deaf92975925c60a8614384f8a8",
+      "updated_at": "2026-10-29T01:08:00.531Z"
+    },
+    "decembrist-revolt": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "a14060840e7dc34994b13fd95196209c052e6e98e225fc42123f1d5630747adc",
+      "updated_at": "2026-10-29T03:07:25.402Z"
+    },
+    "tsarskoye-selo-railway-opens": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1a8064dbd872f987879b4316728a762c5453b4c6bac58f88e685d6155ca8e054",
+      "updated_at": "2026-10-29T01:08:00.604Z"
+    },
+    "tolstoy-war-and-peace-completed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4c36189f7ee7b0b19a4eb4d2db12dea44223cb67daf5300b60414c4f264cfebc",
+      "updated_at": "2026-10-29T03:07:25.432Z"
+    },
+    "faberge-first-imperial-egg": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3a42b206fa9cde1303d00ded3d5a5da22e3b405b7226429d49180aad0c850db4",
+      "updated_at": "2026-10-29T03:07:25.463Z"
+    },
+    "trans-siberian-railway-begun": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3d34e4ad2e605475a7175f072533e3bf8d955b005c07e7a5e39325ba1ed1e8ee",
+      "updated_at": "2026-10-29T03:07:25.493Z"
+    },
+    "nicholas-ii-becomes-tsar": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "493dfc2e21a950055204efa2de3ee4b35e62c741d0ce63daeadac423a01f5d22",
+      "updated_at": "2026-10-29T03:07:25.523Z"
+    },
+    "bloody-sunday-st-petersburg": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3b772eb25f149e53d4fd46903d084f3f422a206cb629bbf2e720f5812fb45ac2",
+      "updated_at": "2026-10-29T03:07:25.555Z"
+    },
+    "russia-enters-world-war-one": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "585169897bd922e2d571edf806ebdb4575adfda6d461c7c85aea76b006b33bcf",
+      "updated_at": "2026-10-29T03:07:25.588Z"
+    },
+    "rasputin-murdered": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "17dbf0e06ec44b0449b3ec2003f9f59e636f6829fdd9190e45d709906f7cdfb3",
+      "updated_at": "2026-10-29T03:07:25.627Z"
+    }
+  }
+}

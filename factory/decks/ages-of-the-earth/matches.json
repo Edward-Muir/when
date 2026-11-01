@@ -1,0 +1,1148 @@
+[
+  {
+    "beat": 0,
+    "year": -4600000000,
+    "title": "The Hadean Begins",
+    "candidates": []
+  },
+  {
+    "beat": 1,
+    "year": -4030000000,
+    "title": "The Archean Begins",
+    "candidates": [
+      {
+        "name": "first-life",
+        "friendly_name": "First Life on Earth",
+        "year": -4100000000,
+        "year_end": -3480000000,
+        "description": "Single-celled organisms appeared in Earth's primordial oceans.",
+        "score": 4,
+        "shared": [
+          "oceans",
+          "single",
+          "celled",
+          "life"
+        ]
+      },
+      {
+        "name": "earth-oceans-form",
+        "friendly_name": "Earth's First Oceans Form",
+        "year": -4400000000,
+        "year_end": -3800000000,
+        "description": "As the molten surface cooled, water vapor condensed into rain and filled the planet's first oceans.",
+        "score": 2,
+        "shared": [
+          "oceans",
+          "planet"
+        ]
+      },
+      {
+        "name": "late-heavy-bombardment",
+        "friendly_name": "Late Heavy Bombardment",
+        "year": -4100000000,
+        "year_end": -3800000000,
+        "description": "A surge of asteroids and comets battered the inner planets, scarring the young Earth and Moon.",
+        "score": 1,
+        "shared": [
+          "young"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -3600000000,
+    "title": "The Paleoarchean Begins",
+    "candidates": [
+      {
+        "name": "oldest-stromatolites",
+        "friendly_name": "Stromatolites Form",
+        "year": -3700000000,
+        "year_end": -3430000000,
+        "description": "Layered mats built by microbial colonies created some of the oldest visible records of life on Earth.",
+        "score": 3,
+        "shared": [
+          "microbial",
+          "mats",
+          "layered"
+        ]
+      },
+      {
+        "name": "first-life",
+        "friendly_name": "First Life on Earth",
+        "year": -4100000000,
+        "year_end": -3480000000,
+        "description": "Single-celled organisms appeared in Earth's primordial oceans.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -3200000000,
+    "title": "The Mesoarchean Begins",
+    "candidates": [
+      {
+        "name": "first-cyanobacteria",
+        "friendly_name": "First Cyanobacteria Appear",
+        "year": -3500000000,
+        "year_end": -2150000000,
+        "description": "Microbes that release oxygen through photosynthesis emerged, slowly transforming the atmosphere.",
+        "score": 2,
+        "shared": [
+          "microbes",
+          "through"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": -2800000000,
+    "title": "The Neoarchean Begins",
+    "candidates": [
+      {
+        "name": "first-cyanobacteria",
+        "friendly_name": "First Cyanobacteria Appear",
+        "year": -3500000000,
+        "year_end": -2150000000,
+        "description": "Microbes that release oxygen through photosynthesis emerged, slowly transforming the atmosphere.",
+        "score": 2,
+        "shared": [
+          "oxygen",
+          "microbes"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": -2500000000,
+    "title": "The Proterozoic Begins",
+    "candidates": [
+      {
+        "name": "proterozoic-eon-begins",
+        "friendly_name": "Proterozoic Eon Begins",
+        "year": -2500000000,
+        "description": "The Proterozoic Eon began, an age dominated by early single-celled organisms and rising atmospheric oxygen.",
+        "score": 3,
+        "shared": [
+          "proterozoic",
+          "begins",
+          "oxygen"
+        ]
+      },
+      {
+        "name": "first-cyanobacteria",
+        "friendly_name": "First Cyanobacteria Appear",
+        "year": -3500000000,
+        "year_end": -2150000000,
+        "description": "Microbes that release oxygen through photosynthesis emerged, slowly transforming the atmosphere.",
+        "score": 2,
+        "shared": [
+          "oxygen",
+          "slowly"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": -2300000000,
+    "title": "The Rhyacian Begins",
+    "candidates": [
+      {
+        "name": "great-oxidation-event",
+        "friendly_name": "Great Oxidation Event",
+        "year": -2460000000,
+        "year_end": -2060000000,
+        "description": "Free oxygen from photosynthesis accumulated in the atmosphere, reshaping the planet's chemistry and biology.",
+        "score": 3,
+        "shared": [
+          "oxygen",
+          "planet",
+          "great"
+        ]
+      },
+      {
+        "name": "first-cyanobacteria",
+        "friendly_name": "First Cyanobacteria Appear",
+        "year": -3500000000,
+        "year_end": -2150000000,
+        "description": "Microbes that release oxygen through photosynthesis emerged, slowly transforming the atmosphere.",
+        "score": 1,
+        "shared": [
+          "oxygen"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": -2050000000,
+    "title": "The Orosirian Begins",
+    "candidates": [
+      {
+        "name": "first-multicellular-life",
+        "friendly_name": "First Multicellular Life",
+        "year": -2100000000,
+        "year_end": -1000000000,
+        "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": -1800000000,
+    "title": "The Statherian Begins",
+    "candidates": [
+      {
+        "name": "first-complex-cells",
+        "friendly_name": "First Complex Cells",
+        "year": -1870000000,
+        "year_end": -1600000000,
+        "description": "Eukaryotes, the first cells with a nucleus and internal structures, appeared as a major step in life's evolution.",
+        "score": 2,
+        "shared": [
+          "complex",
+          "cells"
+        ]
+      },
+      {
+        "name": "first-multicellular-life",
+        "friendly_name": "First Multicellular Life",
+        "year": -2100000000,
+        "year_end": -1000000000,
+        "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
+        "score": 2,
+        "shared": [
+          "complex",
+          "cells"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": -1600000000,
+    "title": "The Mesoproterozoic Begins",
+    "candidates": [
+      {
+        "name": "first-complex-cells",
+        "friendly_name": "First Complex Cells",
+        "year": -1870000000,
+        "year_end": -1600000000,
+        "description": "Eukaryotes, the first cells with a nucleus and internal structures, appeared as a major step in life's evolution.",
+        "score": 2,
+        "shared": [
+          "cells",
+          "complex"
+        ]
+      },
+      {
+        "name": "first-multicellular-life",
+        "friendly_name": "First Multicellular Life",
+        "year": -2100000000,
+        "year_end": -1000000000,
+        "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
+        "score": 2,
+        "shared": [
+          "cells",
+          "complex"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": -1400000000,
+    "title": "The Ectasian Begins",
+    "candidates": [
+      {
+        "name": "first-multicellular-life",
+        "friendly_name": "First Multicellular Life",
+        "year": -2100000000,
+        "year_end": -1000000000,
+        "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": -1200000000,
+    "title": "The Stenian Begins",
+    "candidates": [
+      {
+        "name": "first-multicellular-life",
+        "friendly_name": "First Multicellular Life",
+        "year": -2100000000,
+        "year_end": -1000000000,
+        "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": -1000000000,
+    "title": "The Neoproterozoic Begins",
+    "candidates": [
+      {
+        "name": "first-multicellular-life",
+        "friendly_name": "First Multicellular Life",
+        "year": -2100000000,
+        "year_end": -1000000000,
+        "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": -720000000,
+    "title": "The Cryogenian, Snowball Earth",
+    "candidates": [
+      {
+        "name": "snowball-earth-cryogenian",
+        "friendly_name": "Snowball Earth (Cryogenian)",
+        "year": -720000000,
+        "year_end": -635000000,
+        "description": "During the Cryogenian Period, global glaciation covered much of Earth's surface in ice in a deep freeze.",
+        "score": 5,
+        "shared": [
+          "cryogenian",
+          "snowball",
+          "earth",
+          "ice",
+          "freeze"
+        ]
+      },
+      {
+        "name": "first-animals-sponges",
+        "friendly_name": "First Animals (Sponges)",
+        "year": -890000000,
+        "year_end": -535000000,
+        "description": "The earliest animals, simple sponge-like organisms, emerged in the oceans as the first multicellular animal life.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": -635000000,
+    "title": "The Ediacaran Begins",
+    "candidates": [
+      {
+        "name": "ediacaran-period-begins",
+        "friendly_name": "Ediacaran Period Begins",
+        "year": -635000000,
+        "description": "The Ediacaran Period began, producing the first large, complex multicellular organisms in the fossil record.",
+        "score": 4,
+        "shared": [
+          "ediacaran",
+          "begins",
+          "large",
+          "complex"
+        ]
+      },
+      {
+        "name": "snowball-earth-cryogenian",
+        "friendly_name": "Snowball Earth (Cryogenian)",
+        "year": -720000000,
+        "year_end": -635000000,
+        "description": "During the Cryogenian Period, global glaciation covered much of Earth's surface in ice in a deep freeze.",
+        "score": 1,
+        "shared": [
+          "ice"
+        ]
+      },
+      {
+        "name": "first-animals-sponges",
+        "friendly_name": "First Animals (Sponges)",
+        "year": -890000000,
+        "year_end": -535000000,
+        "description": "The earliest animals, simple sponge-like organisms, emerged in the oceans as the first multicellular animal life.",
+        "score": 1,
+        "shared": [
+          "life"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": -538800000,
+    "title": "The Cambrian Begins",
+    "candidates": [
+      {
+        "name": "ediacaran-biota",
+        "friendly_name": "Ediacaran Animals Appear",
+        "year": -575000000,
+        "year_end": -538800000,
+        "description": "Soft-bodied creatures formed Earth's earliest complex animal communities on the ancient seafloor.",
+        "score": 1,
+        "shared": [
+          "animals"
+        ]
+      },
+      {
+        "name": "first-animals-sponges",
+        "friendly_name": "First Animals (Sponges)",
+        "year": -890000000,
+        "year_end": -535000000,
+        "description": "The earliest animals, simple sponge-like organisms, emerged in the oceans as the first multicellular animal life.",
+        "score": 1,
+        "shared": [
+          "animals"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": -497000000,
+    "title": "The Furongian Begins",
+    "candidates": [
+      {
+        "name": "first-vertebrates",
+        "friendly_name": "First Vertebrates Evolve",
+        "year": -518000000,
+        "year_end": -480000000,
+        "description": "The earliest animals with backbones appeared in the oceans, ancestors of all later vertebrate life.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": -486850000,
+    "title": "The Ordovician Begins",
+    "candidates": [
+      {
+        "name": "ordovician-period-begins",
+        "friendly_name": "Ordovician Period Begins",
+        "year": -486850000,
+        "description": "The Ordovician Period began, marked by the rapid diversification of marine vertebrates and invertebrates.",
+        "score": 2,
+        "shared": [
+          "ordovician",
+          "begins"
+        ]
+      },
+      {
+        "name": "first-vertebrates",
+        "friendly_name": "First Vertebrates Evolve",
+        "year": -518000000,
+        "year_end": -480000000,
+        "description": "The earliest animals with backbones appeared in the oceans, ancestors of all later vertebrate life.",
+        "score": 1,
+        "shared": [
+          "oceans"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": -443100000,
+    "title": "The Silurian Begins",
+    "candidates": [
+      {
+        "name": "plants-colonize-land",
+        "friendly_name": "Plants Colonize Land",
+        "year": -470000000,
+        "year_end": -425000000,
+        "description": "Simple plants spread from water onto the continents, greening the once-barren land surfaces.",
+        "score": 2,
+        "shared": [
+          "plants",
+          "onto"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": -419620000,
+    "title": "The Devonian Begins",
+    "candidates": [
+      {
+        "name": "arthropods-colonize-land",
+        "friendly_name": "First Land Animals",
+        "year": -425000000,
+        "year_end": -407000000,
+        "description": "Early arthropods such as millipedes crawled ashore, becoming the first animals to live on land.",
+        "score": 1,
+        "shared": [
+          "land"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": -382700000,
+    "title": "The Late Devonian Begins",
+    "candidates": [
+      {
+        "name": "age-of-fishes",
+        "friendly_name": "Age of Fishes",
+        "year": -419200000,
+        "year_end": -358900000,
+        "description": "Fish diversified across the world's seas, dominating the oceans during the Devonian Period.",
+        "score": 4,
+        "shared": [
+          "devonian",
+          "across",
+          "fishes",
+          "seas"
+        ]
+      },
+      {
+        "name": "fish-walk-onto-land",
+        "friendly_name": "Fish Crawl Onto Land",
+        "year": -395000000,
+        "year_end": -365000000,
+        "description": "Lobe-finned fish with limb-like fins began moving onto land, foreshadowing four-legged animals.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-insects",
+        "friendly_name": "First Insects",
+        "year": -407000000,
+        "year_end": -325000000,
+        "description": "The earliest insects appeared on land, becoming one of the most successful animal groups in history.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": -358860000,
+    "title": "The Carboniferous Begins",
+    "candidates": [
+      {
+        "name": "first-insects",
+        "friendly_name": "First Insects",
+        "year": -407000000,
+        "year_end": -325000000,
+        "description": "The earliest insects appeared on land, becoming one of the most successful animal groups in history.",
+        "score": 1,
+        "shared": [
+          "land"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": -323200000,
+    "title": "The Pennsylvanian Begins",
+    "candidates": [
+      {
+        "name": "first-amniote-egg",
+        "friendly_name": "First Egg-Laying Animals",
+        "year": -356000000,
+        "year_end": -318000000,
+        "description": "Animals evolved tough-shelled eggs, freeing them from water and letting them spread across dry land.",
+        "score": 3,
+        "shared": [
+          "shelled",
+          "eggs",
+          "water"
+        ]
+      },
+      {
+        "name": "first-reptiles",
+        "friendly_name": "First Reptiles",
+        "year": -340000000,
+        "year_end": -318000000,
+        "description": "The first reptiles emerged as the earliest vertebrates fully adapted to live on dry land.",
+        "score": 1,
+        "shared": [
+          "reptiles"
+        ]
+      },
+      {
+        "name": "pangaea-forms",
+        "friendly_name": "Supercontinent Pangaea Forms",
+        "year": -335000000,
+        "year_end": -300000000,
+        "description": "Drifting landmasses merged into one giant continent, Pangaea, surrounded by a single global ocean.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": -298900000,
+    "title": "The Permian Begins",
+    "candidates": [
+      {
+        "name": "permian-period-begins",
+        "friendly_name": "Permian Period Begins",
+        "year": -298900000,
+        "description": "The Permian Period began as Earth's landmasses joined together to form the supercontinent Pangaea.",
+        "score": 4,
+        "shared": [
+          "permian",
+          "begins",
+          "landmasses",
+          "supercontinent"
+        ]
+      },
+      {
+        "name": "giant-insects-of-carboniferous",
+        "friendly_name": "Giant Insects Roam Earth",
+        "year": -315000000,
+        "year_end": -272000000,
+        "description": "High oxygen levels let dragonflies grow to hawk-sized wingspans in vast Carboniferous swamps.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": -259500000,
+    "title": "The Lopingian Begins",
+    "candidates": []
+  },
+  {
+    "beat": 25,
+    "year": -251900000,
+    "title": "The Triassic Begins",
+    "candidates": [
+      {
+        "name": "end-permian-mass-extinction",
+        "friendly_name": "End-Permian Mass Extinction",
+        "year": -251941000,
+        "year_end": -251880000,
+        "description": "Known as the Great Dying, this was the most severe mass extinction, wiping out most marine and land species.",
+        "score": 1,
+        "shared": [
+          "extinction"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": -237000000,
+    "title": "The Late Triassic Begins",
+    "candidates": [
+      {
+        "name": "first-dinosaurs-appear",
+        "friendly_name": "First Dinosaurs Appear",
+        "year": -243000000,
+        "year_end": -231400000,
+        "description": "Small, fast reptiles emerged that would diversify into the dinosaurs ruling Earth for ages.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": -201400000,
+    "title": "The Jurassic Begins",
+    "candidates": [
+      {
+        "name": "jurassic-period-begins",
+        "friendly_name": "Jurassic Period Begins",
+        "year": -201400000,
+        "description": "The Jurassic Period began, an age dominated by enormous dinosaurs and lush vegetation.",
+        "score": 3,
+        "shared": [
+          "jurassic",
+          "begins",
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "first-mammals",
+        "friendly_name": "First Mammals",
+        "year": -225000000,
+        "year_end": -200000000,
+        "description": "The first small, shrew-like mammals appeared, living alongside the early dinosaurs.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "coelophysis-pack-hunter",
+        "friendly_name": "Coelophysis, the Pack Hunter",
+        "year": -215000000,
+        "year_end": -201400000,
+        "description": "A slender, hollow-boned predator ran in groups, and dozens of its skeletons were later found together in New Mexico.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": -174700000,
+    "title": "The Middle Jurassic Begins",
+    "candidates": [
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": -161500000,
+    "title": "The Late Jurassic Begins",
+    "candidates": [
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": -143100000,
+    "title": "The Cretaceous Begins",
+    "candidates": [
+      {
+        "name": "cretaceous-period-begins",
+        "friendly_name": "Cretaceous Period Begins",
+        "year": -143100000,
+        "description": "The Cretaceous Period began, notable for the appearance and spread of the first flowering plants.",
+        "score": 5,
+        "shared": [
+          "cretaceous",
+          "begins",
+          "flowering",
+          "plants",
+          "spread"
+        ]
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 1,
+        "shared": [
+          "continents"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": -100500000,
+    "title": "The Late Cretaceous Begins",
+    "candidates": [
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "deinonychus-terrible-claw",
+        "friendly_name": "Deinonychus, the Terrible Claw",
+        "year": -115000000,
+        "year_end": -98000000,
+        "description": "An agile, sickle-clawed hunter, thought to chase prey in packs, changed how scientists saw dinosaurs as warm-blooded and active.",
+        "score": 1,
+        "shared": [
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "first-bees",
+        "friendly_name": "First Bees Appear",
+        "year": -120000000,
+        "year_end": -100000000,
+        "description": "Bees evolved alongside flowers, forming a partnership that shaped plant life across the planet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-flowering-plants",
+        "friendly_name": "First Flowering Plants",
+        "year": -130000000,
+        "year_end": -100000000,
+        "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pangaea-breaks-apart",
+        "friendly_name": "Pangaea Breaks Apart",
+        "year": -175000000,
+        "year_end": -100000000,
+        "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": -66000000,
+    "title": "The Paleogene Begins",
+    "candidates": [
+      {
+        "name": "paleocene-epoch-begins",
+        "friendly_name": "Paleocene Epoch Begins",
+        "year": -66000000,
+        "description": "The Paleocene Epoch began as mammals rapidly diversified to fill niches left by the extinct dinosaurs.",
+        "score": 3,
+        "shared": [
+          "begins",
+          "dinosaurs",
+          "mammals"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 3,
+        "shared": [
+          "after",
+          "dinosaurs",
+          "world"
+        ]
+      },
+      {
+        "name": "dinosaur-extinction",
+        "friendly_name": "Dinosaur Extinction",
+        "year": -66000000,
+        "description": "An asteroid impact caused the mass extinction of the dinosaurs.",
+        "score": 2,
+        "shared": [
+          "impact",
+          "dinosaurs"
+        ]
+      },
+      {
+        "name": "triceratops",
+        "friendly_name": "Triceratops",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Triceratops, a large herbivore with three facial horns and a bony frill, lived in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tyrannosaurus-rex",
+        "friendly_name": "Tyrannosaurus rex",
+        "year": -68000000,
+        "year_end": -66000000,
+        "description": "Tyrannosaurus rex, one of the largest land predators ever, ruled North America in the Late Cretaceous.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "therizinosaurus-scythe-lizard",
+        "friendly_name": "Therizinosaurus, the Scythe Lizard",
+        "year": -70000000,
+        "year_end": -66000000,
+        "description": "A strange, long-necked plant-eater wielded the longest claws of any known animal, as long as a human arm.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": -56000000,
+    "title": "The Eocene Begins",
+    "candidates": [
+      {
+        "name": "eocene-epoch-begins",
+        "friendly_name": "Eocene Epoch Begins",
+        "year": -56000000,
+        "description": "The Eocene Epoch began, marked by the emergence of many of the first modern mammal groups.",
+        "score": 2,
+        "shared": [
+          "eocene",
+          "begins"
+        ]
+      },
+      {
+        "name": "first-primates",
+        "friendly_name": "First Primates Evolve",
+        "year": -65900000,
+        "year_end": -56000000,
+        "description": "Early tree-dwelling mammals with grasping hands appeared, ancestors of monkeys, apes, and humans.",
+        "score": 2,
+        "shared": [
+          "early",
+          "primates"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "spread"
+        ]
+      },
+      {
+        "name": "himalayas-rise",
+        "friendly_name": "The Himalayas Begin to Rise",
+        "year": -59000000,
+        "year_end": -40000000,
+        "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": -33900000,
+    "title": "The Oligocene Begins",
+    "candidates": [
+      {
+        "name": "oligocene-epoch-begins",
+        "friendly_name": "Oligocene Epoch Begins",
+        "year": -33900000,
+        "description": "The Oligocene Epoch began, a time when open grasslands spread widely across the continents.",
+        "score": 3,
+        "shared": [
+          "oligocene",
+          "begins",
+          "open"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": -23030000,
+    "title": "The Neogene Begins",
+    "candidates": [
+      {
+        "name": "miocene-epoch-begins",
+        "friendly_name": "Miocene Epoch Begins",
+        "year": -23030000,
+        "description": "The Miocene Epoch began, an interval during which apes diversified across Africa and Eurasia.",
+        "score": 3,
+        "shared": [
+          "begins",
+          "across",
+          "apes"
+        ]
+      },
+      {
+        "name": "first-apes",
+        "friendly_name": "First Apes Evolve",
+        "year": -25000000,
+        "year_end": -17000000,
+        "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
+        "score": 1,
+        "shared": [
+          "apes"
+        ]
+      },
+      {
+        "name": "first-grasses",
+        "friendly_name": "First Grasses Spread",
+        "year": -113000000,
+        "year_end": -8000000,
+        "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": -5333000,
+    "title": "The Pliocene Begins",
+    "candidates": [
+      {
+        "name": "pliocene-epoch-begins",
+        "friendly_name": "Pliocene Epoch Begins",
+        "year": -5333000,
+        "description": "The Pliocene Epoch began, a cooler age that saw upright-walking Australopithecus and the closing of the Panama land bridge.",
+        "score": 4,
+        "shared": [
+          "pliocene",
+          "begins",
+          "upright",
+          "walking"
+        ]
+      },
+      {
+        "name": "first-upright-walkers",
+        "friendly_name": "Early Humans Walk Upright",
+        "year": -7000000,
+        "year_end": -3660000,
+        "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
+        "score": 4,
+        "shared": [
+          "upright",
+          "walking",
+          "humans",
+          "africa"
+        ]
+      },
+      {
+        "name": "human-chimp-split",
+        "friendly_name": "Humans and Chimps Diverge",
+        "year": -13000000,
+        "year_end": -5000000,
+        "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
+        "score": 2,
+        "shared": [
+          "humans",
+          "africa"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": -2580000,
+    "title": "The Pleistocene, the Ice Age",
+    "candidates": [
+      {
+        "name": "pleistocene-epoch-ice-age-begins",
+        "friendly_name": "Pleistocene (Ice Age) Begins",
+        "year": -2580000,
+        "description": "The Pleistocene Epoch began, ushering in the Ice Age and the appearance of the genus Homo.",
+        "score": 4,
+        "shared": [
+          "pleistocene",
+          "ice",
+          "age",
+          "genus"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": -9700,
+    "title": "The Holocene Begins",
+    "candidates": [
+      {
+        "name": "agriculture-begins",
+        "friendly_name": "Agriculture Begins",
+        "year": -10000,
+        "year_end": -8000,
+        "description": "Humans began cultivating crops in the Fertile Crescent, starting the Neolithic Revolution.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "younger-dryas-climate-event",
+        "friendly_name": "Younger Dryas Climate Event",
+        "year": -10900,
+        "year_end": -9700,
+        "description": "A sudden return to glacial conditions lasting over 1,000 years disrupted early human societies and may have triggered agricultural development.",
+        "score": 1,
+        "shared": [
+          "climate"
+        ]
+      },
+      {
+        "name": "ice-age-megafauna-extinction",
+        "friendly_name": "Ice Age Megafauna Die Out",
+        "year": -11000,
+        "year_end": -2000,
+        "description": "Mammoths, giant sloths, and other huge mammals vanished as the last Ice Age ended worldwide.",
+        "score": 1,
+        "shared": [
+          "ice"
+        ]
+      },
+      {
+        "name": "wild-grain-harvesting",
+        "friendly_name": "Wild Grains First Harvested",
+        "year": -21000,
+        "year_end": -9700,
+        "description": "Hunter-gatherers in the Near East began gathering and grinding wild cereal grains long before farming.",
+        "score": 1,
+        "shared": [
+          "farming"
+        ]
+      },
+      {
+        "name": "giant-ground-sloths-roam",
+        "friendly_name": "Giant Ground Sloths Roam",
+        "year": -2000000,
+        "year_end": -9000,
+        "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
+        "score": 1,
+        "shared": [
+          "ice"
+        ]
+      },
+      {
+        "name": "saber-toothed-cats",
+        "friendly_name": "Saber-Toothed Cats Hunt",
+        "year": -2500000,
+        "year_end": -9000,
+        "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
+        "score": 1,
+        "shared": [
+          "ice"
+        ]
+      }
+    ]
+  }
+]

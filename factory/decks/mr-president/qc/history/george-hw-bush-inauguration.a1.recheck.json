@@ -1,0 +1,15 @@
+{
+  "slug": "george-hw-bush-inauguration",
+  "description": "Oil painting of an inauguration platform. In the foreground an open Bible rests on a dark carved wooden lectern with microphones, its front bearing a round presidential seal with readable lettering around the rim. Behind are seated men and women in dark formal wear under red, white and blue bunting and American flags, the domed Capitol behind them, and a huge crowd on the right under a grey sky. No border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The lectern seal has legible lettering around its rim (SEAL OF THE PRESIDENT OF THE UNITED STATES). Repaint the seal without readable words, or turn the lectern so the seal is not visible."
+}

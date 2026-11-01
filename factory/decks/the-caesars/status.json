@@ -1,0 +1,185 @@
+{
+  "deck": "the-caesars",
+  "name": "The Caesars",
+  "stage": "pr-open",
+  "created_at": "2026-10-23T09:15:47.086Z",
+  "updated_at": "2026-10-23T20:08:48.954Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-23T09:15:47.086Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-23T10:09:00.003Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-23T19:08:14.300Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-23T20:06:51.944Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-23T20:08:48.954Z"
+    }
+  ],
+  "slugs": {
+    "tiberius-succeeds-augustus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2597d69a64780881155c818fe938e6a8556e45dd6fba29274d924b02556f2903",
+      "updated_at": "2026-10-23T11:07:43.818Z"
+    },
+    "claudius-raised-by-praetorians": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4b0eadebdc775d6f0cc04e5c5219083878b1fcaf1598e1e47f0da122c52ac6fd",
+      "updated_at": "2026-10-23T11:07:43.850Z"
+    },
+    "vespasian-proclaimed-emperor": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "42c31c446bc062a17ad4d9af464b58539091a5c25b17aa55f811e0e77dd5d3fe",
+      "updated_at": "2026-10-23T13:07:13.884Z"
+    },
+    "titus-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0497b3d2f2e2d6bdb017d892a188905d0d3f2b4a85c4e04391001f30370dc6a8",
+      "updated_at": "2026-10-23T11:07:43.913Z"
+    },
+    "commodus-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "11215ee2bf71f1e67d67a29b586f9465fd92c7def43a015ff7fb62224c34c789",
+      "updated_at": "2026-10-23T11:07:43.944Z"
+    },
+    "septimius-severus-seizes-throne": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1b615f9b14721744f6558f4ec5256d7833bac5ae43fee2849356ebf189e73fe1",
+      "updated_at": "2026-10-23T11:07:43.975Z"
+    },
+    "caracalla-sole-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bd693f5d5a96f7f4ed3afd7062c88517629e11bdf0afc856c5a0f814b8492245",
+      "updated_at": "2026-10-23T11:07:44.009Z"
+    },
+    "elagabalus-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "aaf28899ed7bc8b21963a5ae670b47e1ba93e7bf5be7a9c4cadfeae0ac1849d7",
+      "updated_at": "2026-10-23T11:07:44.044Z"
+    },
+    "aurelian-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1b7f0b5bb239c806a2c0b8d1484e0508fa4bef3a1ab05b75d215981741d65393",
+      "updated_at": "2026-10-23T11:07:44.074Z"
+    },
+    "diocletian-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "596d2d22bb334ae3b2b9744e230394be584e9606bad8e8e91cdb0eeb756b922e",
+      "updated_at": "2026-10-23T11:07:44.105Z"
+    },
+    "constantine-hailed-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c030011871e6cee9a3348de1583a48c5049e36951d8871fcfc94d5f91957b738",
+      "updated_at": "2026-10-23T13:07:13.918Z"
+    },
+    "julian-apostate-sole-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a1cfa4a5cd7a70b06d7b0c881d22c576f653a3a27bd2c7203dbb6418fa68bde3",
+      "updated_at": "2026-10-23T13:07:13.950Z"
+    },
+    "theodosius-i-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ed09d0851b0f24a74c513f520a4d2a286d4c7777567b233732bc2d1ee71151fc",
+      "updated_at": "2026-10-23T13:07:13.981Z"
+    },
+    "romulus-augustulus-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f4bb0949225661f45c1a9f06cb89c1f911f319fe54d47d6d087c3f93161701c0",
+      "updated_at": "2026-10-23T13:07:14.014Z"
+    },
+    "heraclius-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "5a57b6518121ea6f695af9bfed1bb9ed26117f5ac8eae87989388857cc9a03fd",
+      "updated_at": "2026-10-23T19:08:14.178Z"
+    },
+    "leo-iii-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8d84cc2a35cfb6a1e1a32d0e64face7243a4c026dcf536d30dec794191f333a9",
+      "updated_at": "2026-10-23T13:07:14.080Z"
+    },
+    "irene-sole-ruler-byzantium": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c2c7f890918e02a160f71ec5b4d9f2323dfef28bb58f9ef034e2308cb686dd8b",
+      "updated_at": "2026-10-23T13:07:14.113Z"
+    },
+    "basil-i-founds-macedonian-dynasty": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1f5ed5f4c13f8fa26b89e406943cb5c244596fc7a7170991244c65b5d6869fbc",
+      "updated_at": "2026-10-23T13:07:14.145Z"
+    },
+    "basil-ii-becomes-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8039fa1d0c11e222b1a29547b1a15099be96c9100ac4e53ee61228dbda5fa8a0",
+      "updated_at": "2026-10-23T19:08:14.209Z"
+    },
+    "alexios-komnenos-seizes-power": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2699f0bc53c2f7ca1d06793a8237672be3b700b5aaa8b47366f37aa80110dcc2",
+      "updated_at": "2026-10-23T19:08:14.240Z"
+    },
+    "michael-viii-palaiologos-crowned": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "56f9a09ee78e33de4b62d5697eec58951e52a0308ca9f88f9ce4edf3848905ef",
+      "updated_at": "2026-10-23T19:08:14.270Z"
+    },
+    "constantine-xi-last-emperor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b276384893316e7f6accf0e1ebfb183adab358890f66a16f2df8a65f3bd0252c",
+      "updated_at": "2026-10-23T19:08:14.300Z"
+    }
+  }
+}

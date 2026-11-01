@@ -1,0 +1,15 @@
+{
+  "slug": "cave-bear",
+  "description": "A large dark-brown bear lies curled with its head lowered onto its forepaws inside a cave. Stalactite-like columns and dripping rock fill the upper right background. Bones are scattered across the cave floor in the foreground, including a ribcage at lower left and a skull at lower right. The painting is loose, dark and oil-like, filling the whole square.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

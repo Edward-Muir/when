@@ -1,0 +1,15 @@
+{
+  "slug": "first-ct-scan-patient",
+  "description": "A dim, painterly interior with warm amber light and cluttered shelves of old electronics with dials, meters and tangled cables. A boxy grey machine with a circular opening stands on the left, and a person in dark clothing stands beside it. A patient lies on a padded table, draped in a pale sheet, head toward the opening. On the right, a boxy CRT monitor on a cart shows a grey cross-section of a brain. No visible text, frame or border; the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

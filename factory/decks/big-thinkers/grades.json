@@ -1,0 +1,19 @@
+{
+  "confucius-analects-compiled": {"recognition": "high", "inferability": "high", "anchors": ["Chinese teacher", "classic"], "why": "Confucius is widely known and clearly ancient China"},
+  "epicurus-founds-garden-school": {"recognition": "medium", "inferability": "high", "anchors": ["Epicurus", "garden school"], "why": "Epicurus is known as an ancient Greek philosopher"},
+  "laozi-tao-te-ching": {"recognition": "high", "inferability": "high", "anchors": ["Laozi", "Taoist"], "why": "Laozi and Tao Te Ching signal ancient China"},
+  "nagarjuna-middle-way-verses": {"recognition": "low", "inferability": "medium", "anchors": ["Indian Buddhist", "verse"], "why": "obscure, but Buddhist philosopher suggests ancient or early-medieval India"},
+  "augustine-confessions-written": {"recognition": "medium", "inferability": "high", "anchors": ["Augustine", "North African bishop"], "why": "Augustine and bishop place it in late antiquity"},
+  "avicenna-book-of-healing": {"recognition": "medium", "inferability": "high", "anchors": ["Avicenna", "Persian polymath"], "why": "Avicenna places it in the medieval Islamic world"},
+  "wang-yangming-great-awakening": {"recognition": "low", "inferability": "medium", "anchors": ["Chinese official", "exile"], "why": "imperial China is clear, but the dynasty is not"},
+  "hume-treatise-human-nature": {"recognition": "medium", "inferability": "high", "anchors": ["Hume", "Scottish thinker"], "why": "Hume signals the Enlightenment"},
+  "wollstonecraft-vindication-rights-woman": {"recognition": "high", "inferability": "high", "anchors": ["Wollstonecraft", "Vindication"], "why": "famous text, Enlightenment-era London"},
+  "hegel-phenomenology-of-spirit": {"recognition": "medium", "inferability": "high", "anchors": ["Hegel", "German philosopher"], "why": "Hegel places it in early 19th century"},
+  "mill-on-liberty": {"recognition": "medium", "inferability": "high", "anchors": ["Mill", "English philosopher"], "why": "Mill signals Victorian era"},
+  "nietzsche-thus-spoke-zarathustra": {"recognition": "high", "inferability": "high", "anchors": ["Nietzsche", "God is dead"], "why": "Nietzsche signals late 19th century"},
+  "gandhi-hind-swaraj": {"recognition": "low", "inferability": "high", "anchors": ["Gandhi", "ship", "nonviolence"], "why": "Gandhi and self-rule imply the early 20th century colonial era"},
+  "wittgenstein-tractatus": {"recognition": "low", "inferability": "medium", "anchors": ["Wittgenstein", "language"], "why": "Wittgenstein suggests 20th century philosophy"},
+  "sartre-being-and-nothingness": {"recognition": "medium", "inferability": "high", "anchors": ["Sartre", "existence precedes essence"], "why": "existentialism implies mid-20th century France"},
+  "beauvoir-second-sex": {"recognition": "medium", "inferability": "high", "anchors": ["Beauvoir", "modern feminist theory"], "why": "French modern feminism implies mid-20th century"},
+  "rawls-theory-of-justice": {"recognition": "low", "inferability": "medium", "anchors": ["Harvard", "veil of ignorance"], "why": "modern Harvard philosopher implies the 20th century"}
+}

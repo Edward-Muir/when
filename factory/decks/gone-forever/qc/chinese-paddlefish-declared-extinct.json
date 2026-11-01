@@ -1,0 +1,15 @@
+{
+  "slug": "chinese-paddlefish-declared-extinct",
+  "description": "A large grey-silver fish with a long, flat, sword-like snout and a bony, shark-like tail swims diagonally through dark, murky green-grey water. Loose painterly brushstrokes and faint specks of light fill the background. The painting runs edge to edge with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

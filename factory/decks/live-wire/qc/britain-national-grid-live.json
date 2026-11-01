@@ -1,0 +1,15 @@
+{
+  "slug": "britain-national-grid-live",
+  "description": "Several tall dark steel lattice pylons stride across rolling green fields under a stormy sky, with high-voltage cables sweeping diagonally across the frame. In the distance on the right, a power station with two tall chimneys emits dark smoke and white steam. The style is an oil-painting, with loose brushwork and warm sunset light breaking through the clouds. No people, text, border or frame are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

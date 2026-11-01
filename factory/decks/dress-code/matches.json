@@ -1,0 +1,2783 @@
+[
+  {
+    "beat": 0,
+    "year": -34000,
+    "title": "Dyed Flax Fibres Are Spun",
+    "candidates": [
+      {
+        "name": "rope-and-cords",
+        "friendly_name": "Rope and Cords",
+        "year": -48000,
+        "year_end": -25000,
+        "description": "Twisted plant fibers creating strong cordage for binding, carrying, and building.",
+        "score": 1,
+        "shared": [
+          "twisted"
+        ]
+      },
+      {
+        "name": "humans-settle-japan",
+        "friendly_name": "Humans Settle Japan",
+        "year": -38000,
+        "year_end": -32000,
+        "description": "Early peoples crossed into the Japanese archipelago, beginning the long human presence in Japan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "shoes",
+        "friendly_name": "Shoes",
+        "year": -40000,
+        "year_end": -10000,
+        "description": "Foot coverings crafted from animal hide to protect feet from rough terrain and cold.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bone-eyed-needle",
+        "friendly_name": "Eyed Bone Needle",
+        "year": -40000,
+        "year_end": -26000,
+        "description": "Ice age hunters carved bone needles with eyes, allowing fitted, sewn clothing that aided survival in cold climates.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "spear-thrower-atlatl",
+        "friendly_name": "Spear-Thrower (Atlatl)",
+        "year": -42000,
+        "year_end": -15500,
+        "description": "A lever device that extended the arm's reach to throw spears with greater force and distance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "humans-settle-near-oceania",
+        "friendly_name": "Humans Settle Near Oceania",
+        "year": -42000,
+        "year_end": -20000,
+        "description": "Early voyagers reached New Guinea and the Bismarck Archipelago, the first peopling of the Pacific.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -2700,
+    "title": "Silk Weaving Begins in China",
+    "candidates": [
+      {
+        "name": "silkworm-domesticated",
+        "friendly_name": "Silkworms Domesticated in China",
+        "year": -3630,
+        "year_end": -2700,
+        "description": "Chinese farmers raised silkworms on mulberry leaves to harvest threads for weaving silk.",
+        "score": 4,
+        "shared": [
+          "silk",
+          "weaving",
+          "china",
+          "silkworm"
+        ]
+      },
+      {
+        "name": "tea-discovered-china",
+        "friendly_name": "Tea Drinking Begins in China",
+        "year": -2700,
+        "description": "Tradition holds that tea was first brewed in ancient China, becoming a defining drink of the region.",
+        "score": 2,
+        "shared": [
+          "begins",
+          "china"
+        ]
+      },
+      {
+        "name": "cotton-thread",
+        "friendly_name": "Cotton Thread",
+        "year": -6000,
+        "year_end": -2500,
+        "description": "Cotton fibers spun into thread for weaving fabric, first developed in South Asia.",
+        "score": 2,
+        "shared": [
+          "weaving",
+          "fabric"
+        ]
+      },
+      {
+        "name": "walls-of-uruk-raised",
+        "friendly_name": "Walls of Uruk Raised",
+        "year": -2700,
+        "description": "Sumerian Uruk was ringed with a great defensive wall, later credited in legend to King Gilgamesh.",
+        "score": 1,
+        "shared": [
+          "legend"
+        ]
+      },
+      {
+        "name": "rice-paddy-cultivation",
+        "friendly_name": "Wet Rice Paddies Developed",
+        "year": -5000,
+        "year_end": -2350,
+        "description": "Farmers in China developed flooded paddy fields for rice, boosting yields and supporting dense populations.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "domestication-maize-americas",
+        "friendly_name": "Maize Domestication in Mesoamerica",
+        "year": -7000,
+        "year_end": -2000,
+        "description": "Indigenous peoples in the Balsas River valley of Mexico domesticated teosinte into maize, the Americas' most important crop.",
+        "score": 1,
+        "shared": [
+          "most"
+        ]
+      },
+      {
+        "name": "jomon-maritime-culture",
+        "friendly_name": "Jomon Maritime Culture Adapts",
+        "year": -13000,
+        "year_end": -300,
+        "description": "Japan's Jomon people developed a sophisticated maritime culture with pottery, fishing, and some of the world's earliest ceramics.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -130,
+    "title": "The Silk Road Opens",
+    "candidates": [
+      {
+        "name": "silk-road-established",
+        "friendly_name": "Silk Road Trade Established",
+        "year": -130,
+        "description": "Following Zhang Qian's diplomatic missions, trade routes linking China to the Mediterranean became established.",
+        "score": 4,
+        "shared": [
+          "silk",
+          "road",
+          "trade",
+          "routes"
+        ]
+      },
+      {
+        "name": "bactria-silk-road",
+        "friendly_name": "Bactria Kingdom Major Silk Road Hub",
+        "year": -250,
+        "year_end": -130,
+        "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
+        "score": 4,
+        "shared": [
+          "silk",
+          "road",
+          "trade",
+          "asia"
+        ]
+      },
+      {
+        "name": "han-expansion",
+        "friendly_name": "Han Dynasty Expansion",
+        "year": -141,
+        "year_end": -108,
+        "description": "Emperor Wu expanded Han territory into Central Asia, Korea, and Vietnam through aggressive military campaigns.",
+        "score": 2,
+        "shared": [
+          "han",
+          "asia"
+        ]
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 2,
+        "shared": [
+          "trade",
+          "across"
+        ]
+      },
+      {
+        "name": "bantu-expansion-africa",
+        "friendly_name": "Bantu Migration Across Africa",
+        "year": -400,
+        "year_end": 500,
+        "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
+        "score": 2,
+        "shared": [
+          "west",
+          "across"
+        ]
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 1,
+        "shared": [
+          "han"
+        ]
+      },
+      {
+        "name": "adena-mound-burials",
+        "friendly_name": "Adena Mound Burial Complex Peak",
+        "year": -300,
+        "year_end": 100,
+        "description": "The Adena culture built conical burial mounds across the Ohio Valley for elite ceremonial interments.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "crucible-steel-wootz",
+        "friendly_name": "Crucible Steel (Wootz) Production",
+        "year": -300,
+        "year_end": 200,
+        "description": "Indian metalworkers developed wootz crucible steel, producing high-carbon steel prized across the ancient world.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "alexander-coinage-empire",
+        "friendly_name": "Alexander's Imperial Coinage",
+        "year": -330,
+        "year_end": -125,
+        "description": "Alexander the Great's silver tetradrachms carried one coin standard from Greece to the Indus, outlasting him.",
+        "score": 1,
+        "shared": [
+          "carried"
+        ]
+      },
+      {
+        "name": "blast-furnace-invented",
+        "friendly_name": "Blast Furnace Invented",
+        "year": -400,
+        "year_end": 100,
+        "description": "Chinese metalworkers developed the blast furnace, reaching temperatures high enough to produce cast iron on an industrial scale.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 552,
+    "title": "Silkworms Smuggled to Byzantium",
+    "candidates": [
+      {
+        "name": "byzantine-silk-monopoly",
+        "friendly_name": "Byzantines Steal Silk Secret",
+        "year": 552,
+        "description": "Monks smuggled silkworm eggs to Constantinople, breaking China's monopoly and founding Byzantine silk weaving.",
+        "score": 8,
+        "shared": [
+          "smuggled",
+          "monks",
+          "silkworm",
+          "eggs",
+          "constantinople",
+          "china",
+          "monopoly",
+          "silk"
+        ]
+      },
+      {
+        "name": "turfan-oasis-city",
+        "friendly_name": "Gaochang Kingdom at Turfan",
+        "year": 460,
+        "year_end": 640,
+        "description": "The Gaochang kingdom ruled the Turfan oasis, growing rich taxing Silk Road caravans between China and Sogdiana.",
+        "score": 2,
+        "shared": [
+          "china",
+          "silk"
+        ]
+      },
+      {
+        "name": "dunhuang-mogao-caves",
+        "friendly_name": "Mogao Caves Expanded",
+        "year": 366,
+        "year_end": 1368,
+        "description": "Buddhist monks expanded the Mogao Caves at Dunhuang with hundreds of painted grottoes along the Silk Road.",
+        "score": 2,
+        "shared": [
+          "monks",
+          "silk"
+        ]
+      },
+      {
+        "name": "chosroes-i-anushirvan",
+        "friendly_name": "Chosroes I Rules Sassanid Persia",
+        "year": 531,
+        "year_end": 579,
+        "description": "Khosrow I Anushirvan reformed Sassanid Persia's tax and military systems, rivaling Justinian's Byzantium.",
+        "score": 1,
+        "shared": [
+          "byzantium"
+        ]
+      },
+      {
+        "name": "horse-collar-technology",
+        "friendly_name": "Horse Collar",
+        "year": 477,
+        "year_end": 1200,
+        "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "northern-southern-dynasties",
+        "friendly_name": "Northern & Southern Dynasties",
+        "year": 420,
+        "year_end": 589,
+        "description": "China split into rival northern and southern courts, a period of political fragmentation and cultural exchange.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1561,
+    "title": "Elizabeth I Gets Silk Stockings",
+    "candidates": [
+      {
+        "name": "birth-francis-bacon",
+        "friendly_name": "Birth of Francis Bacon",
+        "year": 1561,
+        "description": "The English philosopher who championed the scientific method and empirical inquiry.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "elizabethan-ruff-collar",
+        "friendly_name": "The Elizabethan Ruff",
+        "year": 1560,
+        "description": "Starched pleated ruff collars framed the necks of Elizabethan nobility, growing ever larger as a sign of status.",
+        "score": 1,
+        "shared": [
+          "ever"
+        ]
+      },
+      {
+        "name": "wars-of-religion-france",
+        "friendly_name": "Wars of Religion in France",
+        "year": 1562,
+        "year_end": 1598,
+        "description": "Decades of civil war between French Catholics and Huguenots devastated France and killed millions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scots-reformation-movement",
+        "friendly_name": "Scottish Reformation Movement",
+        "year": 1560,
+        "description": "John Knox led Scotland's Protestant Reformation, establishing Presbyterianism as the national church.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "goa-inquisition",
+        "friendly_name": "Portuguese Inquisition in Goa",
+        "year": 1560,
+        "description": "Portugal established the Goa Inquisition in India, persecuting Hindus, Muslims, and crypto-Jews for over two centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "floating-dry-dock",
+        "friendly_name": "Floating Dry Dock",
+        "year": 1560,
+        "description": "Buoyant platform that submerges to receive ships, then rises to expose the hull for repair.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1589,
+    "title": "Lee Invents the Knitting Machine",
+    "candidates": [
+      {
+        "name": "knitting-machine",
+        "friendly_name": "Knitting Machine Invented",
+        "year": 1589,
+        "description": "William Lee invented the stocking frame, the first hand-operated knitting machine.",
+        "score": 5,
+        "shared": [
+          "lee",
+          "knitting",
+          "machine",
+          "stocking",
+          "frame"
+        ]
+      },
+      {
+        "name": "spenser-faerie-queene",
+        "friendly_name": "Spenser Writes The Faerie Queene",
+        "year": 1590,
+        "description": "Edmund Spenser published The Faerie Queene, an allegorical epic celebrating Queen Elizabeth and English virtues.",
+        "score": 2,
+        "shared": [
+          "english",
+          "queen"
+        ]
+      },
+      {
+        "name": "birth-thomas-hobbes",
+        "friendly_name": "Birth of Thomas Hobbes",
+        "year": 1588,
+        "description": "The English philosopher whose Leviathan founded modern political theory on the social contract.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "shorthand-system-published",
+        "friendly_name": "Shorthand System Published",
+        "year": 1588,
+        "description": "Timothy Bright published an English shorthand method for writing speech down at speed.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "christopher-marlowe",
+        "friendly_name": "Marlowe's Major Dramas",
+        "year": 1587,
+        "year_end": 1593,
+        "description": "Marlowe wrote Tamburlaine and Doctor Faustus, pioneering English blank verse tragedy before Shakespeare.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1666,
+    "title": "Charles II Introduces the Waistcoat",
+    "candidates": [
+      {
+        "name": "stiletto-three-piece-suit",
+        "friendly_name": "The Three-Piece Suit Debuts",
+        "year": 1666,
+        "description": "Charles II of England introduced the vest and coat ensemble, founding the lasting three-piece suit for men.",
+        "score": 6,
+        "shared": [
+          "charles",
+          "vest",
+          "coat",
+          "three",
+          "piece",
+          "suit"
+        ]
+      },
+      {
+        "name": "newmarket-town-plate-founded",
+        "friendly_name": "Newmarket Town Plate Founded",
+        "year": 1665,
+        "description": "King Charles II set out the rules for the Newmarket Town Plate, one of the first horse races run under a formal code.",
+        "score": 2,
+        "shared": [
+          "charles",
+          "king"
+        ]
+      },
+      {
+        "name": "powdered-wig-fashion",
+        "friendly_name": "Powdered Wigs Become Fashion",
+        "year": 1665,
+        "description": "Louis XIV popularized large powdered wigs, which became essential formal dress for European men of rank.",
+        "score": 1,
+        "shared": [
+          "dress"
+        ]
+      },
+      {
+        "name": "alaouite-dynasty-rise",
+        "friendly_name": "Alaouite Dynasty Rise in Morocco",
+        "year": 1666,
+        "description": "The Alaouite dynasty began its rise to power in Morocco, eventually establishing the ruling dynasty that continues to the present day.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-fire-london",
+        "friendly_name": "Great Fire of London",
+        "year": 1666,
+        "description": "A massive fire destroyed most of the medieval City of London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "newton-gravity",
+        "friendly_name": "Newton Discovers Gravity",
+        "year": 1666,
+        "description": "Isaac Newton developed his theory of universal gravitation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1733,
+    "title": "Kay's Flying Shuttle",
+    "candidates": [
+      {
+        "name": "flying-shuttle-refinement",
+        "friendly_name": "Flying Shuttle Improvements",
+        "year": 1733,
+        "description": "John Kay invented the flying shuttle, doubling weaving speed and enabling wider cloth production.",
+        "score": 3,
+        "shared": [
+          "kay",
+          "flying",
+          "shuttle"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "panniers-wide-skirts",
+        "friendly_name": "Panniers Widen Court Skirts",
+        "year": 1710,
+        "year_end": 1780,
+        "description": "Hooped petticoats called panniers spread court skirts out wide, a fashion that ruled European courts for decades.",
+        "score": 1,
+        "shared": [
+          "wide"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "achromatic-lens",
+        "friendly_name": "Achromatic Lens Correction",
+        "year": 1733,
+        "description": "Chester Moore Hall invented the achromatic lens, combining crown and flint glass to reduce chromatic aberration.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1764,
+    "title": "Hargreaves' Spinning Jenny",
+    "candidates": [
+      {
+        "name": "spinning-jenny-invented",
+        "friendly_name": "Spinning Jenny Invented",
+        "year": 1764,
+        "description": "James Hargreaves invented the spinning jenny, a multi-spindle machine that revolutionized textile production.",
+        "score": 5,
+        "shared": [
+          "hargreaves",
+          "spinning",
+          "jenny",
+          "multi",
+          "spindle"
+        ]
+      },
+      {
+        "name": "hermitage-museum",
+        "friendly_name": "Hermitage Museum",
+        "year": 1764,
+        "description": "Catherine the Great founded the Hermitage in St. Petersburg by acquiring a major art collection, now one of the world's largest museums.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "public-education-prussia",
+        "friendly_name": "Prussian Public Education",
+        "year": 1763,
+        "description": "Frederick the Great mandated compulsory primary education in Prussia, establishing one of the world's first state-run school systems.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "boosting"
+        ]
+      },
+      {
+        "name": "beccaria-on-crimes",
+        "friendly_name": "Beccaria's On Crimes",
+        "year": 1764,
+        "description": "Cesare Beccaria condemned torture and the death penalty, founding modern criminal justice reform.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "burmese-siamese-wars",
+        "friendly_name": "Burmese-Siamese Wars",
+        "year": 1765,
+        "year_end": 1767,
+        "description": "Burma and Siam fought devastating wars, culminating in the Burmese destruction of Ayutthaya.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1769,
+    "title": "Arkwright's Water Frame",
+    "candidates": [
+      {
+        "name": "arkwright-water-frame",
+        "friendly_name": "Arkwright Water Frame Invented",
+        "year": 1769,
+        "description": "Richard Arkwright patented the water frame, a water-powered spinning machine that industrialized cotton production.",
+        "score": 7,
+        "shared": [
+          "arkwright",
+          "water",
+          "frame",
+          "powered",
+          "spinning",
+          "machine",
+          "cotton"
+        ]
+      },
+      {
+        "name": "steam-powered-vehicle",
+        "friendly_name": "Steam-Powered Vehicle",
+        "year": 1769,
+        "description": "Nicolas-Joseph Cugnot built the first self-propelled steam vehicle, a heavy artillery tractor.",
+        "score": 1,
+        "shared": [
+          "powered"
+        ]
+      },
+      {
+        "name": "bougainville-circumnavigation",
+        "friendly_name": "Bougainville Circumnavigates",
+        "year": 1766,
+        "year_end": 1769,
+        "description": "Louis Antoine de Bougainville led the first French circumnavigation, exploring Tahiti and the Pacific Islands.",
+        "score": 1,
+        "shared": [
+          "led"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "led"
+        ]
+      },
+      {
+        "name": "tokugawa-edo-period-culture",
+        "friendly_name": "Edo Period Cultural Flourishing",
+        "year": 1603,
+        "year_end": 1868,
+        "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "birth-napoleon",
+        "friendly_name": "Birth of Napoleon",
+        "year": 1769,
+        "description": "Napoleon Bonaparte was born in Corsica, one year after France acquired the island from Genoa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1793,
+    "title": "Whitney Patents the Cotton Gin",
+    "candidates": [
+      {
+        "name": "cotton-gin",
+        "friendly_name": "Cotton Gin Invented",
+        "year": 1794,
+        "description": "Eli Whitney invented the cotton gin, which rapidly separated cotton fibers from seeds and transformed the cotton industry.",
+        "score": 4,
+        "shared": [
+          "whitney",
+          "cotton",
+          "gin",
+          "seeds"
+        ]
+      },
+      {
+        "name": "louis-xvi-execution",
+        "friendly_name": "King Louis XVI Executed",
+        "year": 1793,
+        "description": "The French king was guillotined during the Reign of Terror.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "reign-of-terror-begins",
+        "friendly_name": "Reign of Terror Begins",
+        "year": 1793,
+        "description": "The Revolutionary Tribunal began mass executions of perceived enemies of the Revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "louvre-opens",
+        "friendly_name": "Louvre Opens as Public Museum",
+        "year": 1793,
+        "description": "The former French royal palace opened as one of the world's first public museums.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "yellow-fever-philadelphia",
+        "friendly_name": "Philadelphia Yellow Fever Epidemic",
+        "year": 1793,
+        "description": "Yellow fever killed about 5,000 people in the American capital.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pinel-reforms-asylums",
+        "friendly_name": "Pinel Reforms Asylums",
+        "year": 1793,
+        "description": "Philippe Pinel and attendant Jean-Baptiste Pussin unchained Paris asylum patients, favoring humane treatment over confinement.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1804,
+    "title": "Jacquard's Programmable Loom",
+    "candidates": [
+      {
+        "name": "jacquard-loom",
+        "friendly_name": "Jacquard Loom Invented",
+        "year": 1804,
+        "description": "Joseph Marie Jacquard patented a loom using punched cards to weave complex patterns, a forerunner of computer programming.",
+        "score": 7,
+        "shared": [
+          "jacquard",
+          "loom",
+          "punched",
+          "cards",
+          "patterns",
+          "computer",
+          "programming"
+        ]
+      },
+      {
+        "name": "haitian-revolution",
+        "friendly_name": "Haitian Revolution Succeeds",
+        "year": 1804,
+        "description": "Haiti became the first nation founded by a successful slave revolt.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "code-napoleon",
+        "friendly_name": "Code Napoleon",
+        "year": 1804,
+        "description": "French civil code established by Napoleon that influenced legal systems worldwide and remains the basis of French law.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "napoleon-coronation",
+        "friendly_name": "Napoleon Crowned Emperor",
+        "year": 1804,
+        "description": "Napoleon Bonaparte crowned himself Emperor of the French at Notre-Dame Cathedral in the presence of Pope Pius VII.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lewis-clark-expedition",
+        "friendly_name": "Lewis and Clark Expedition",
+        "year": 1804,
+        "year_end": 1806,
+        "description": "The expedition explored the American West from the Mississippi to the Pacific.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "steam-locomotive",
+        "friendly_name": "Steam Locomotive Invented",
+        "year": 1804,
+        "description": "Richard Trevithick built the first steam locomotive to run on rails, carrying iron and passengers in Wales.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1837,
+    "title": "Hermes Opens as a Harness Workshop",
+    "candidates": [
+      {
+        "name": "first-kindergarten",
+        "friendly_name": "First Kindergarten Opens",
+        "year": 1837,
+        "description": "Friedrich Froebel opened the first kindergarten in Germany.",
+        "score": 2,
+        "shared": [
+          "opens",
+          "opened"
+        ]
+      },
+      {
+        "name": "female-university",
+        "friendly_name": "Mount Holyoke College",
+        "year": 1837,
+        "description": "Mount Holyoke Seminary opened in Massachusetts as one of the first institutions of higher education for women in the United States.",
+        "score": 2,
+        "shared": [
+          "opened",
+          "one"
+        ]
+      },
+      {
+        "name": "victoria-becomes-queen",
+        "friendly_name": "Victoria Becomes Queen",
+        "year": 1837,
+        "description": "A teenage princess succeeded her uncle William IV, beginning a reign that would give its name to an age.",
+        "score": 1,
+        "shared": [
+          "would"
+        ]
+      },
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 1,
+        "shared": [
+          "paris"
+        ]
+      },
+      {
+        "name": "telegraph",
+        "friendly_name": "Telegraph Invented",
+        "year": 1837,
+        "description": "Samuel Morse invented the electric telegraph.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ice-age-theory-proposed",
+        "friendly_name": "Ice Ages Are Discovered",
+        "year": 1837,
+        "description": "Louis Agassiz proposed that vast ice sheets once covered much of Europe and North America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1840,
+    "title": "Victoria's White Wedding Gown",
+    "candidates": [
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "treaty-waitangi",
+        "friendly_name": "Treaty of Waitangi",
+        "year": 1840,
+        "description": "Britain and Māori chiefs signed the founding document of New Zealand.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dental-school",
+        "friendly_name": "Baltimore Dental School",
+        "year": 1840,
+        "description": "The Baltimore College of Dental Surgery opened as the world's first dental school, professionalizing the field of dentistry.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "postage-stamp",
+        "friendly_name": "First Postage Stamp Issued",
+        "year": 1840,
+        "description": "The Penny Black, the world's first adhesive postage stamp, was issued in Britain for prepaid mail delivery.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "zanzibar-clove-cultivation",
+        "friendly_name": "Zanzibar Clove Plantations",
+        "year": 1840,
+        "description": "The Sultan of Zanzibar established clove plantations that made the island the world's leading spice exporter.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-auguste-rodin",
+        "friendly_name": "Birth of Auguste Rodin",
+        "year": 1840,
+        "description": "The French sculptor of The Thinker and The Kiss, regarded as the father of modern sculpture.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1846,
+    "title": "Howe Patents the Sewing Machine",
+    "candidates": [
+      {
+        "name": "sewing-machine",
+        "friendly_name": "Sewing Machine Patented",
+        "year": 1846,
+        "description": "Elias Howe patented the lockstitch sewing machine, revolutionizing garment manufacturing.",
+        "score": 4,
+        "shared": [
+          "howe",
+          "sewing",
+          "machine",
+          "lockstitch"
+        ]
+      },
+      {
+        "name": "birth-alexander-graham-bell",
+        "friendly_name": "Birth of A.G. Bell",
+        "year": 1847,
+        "description": "The Scottish-American inventor credited with patenting the first practical telephone.",
+        "score": 2,
+        "shared": [
+          "american",
+          "inventor"
+        ]
+      },
+      {
+        "name": "birth-thomas-edison",
+        "friendly_name": "Birth of Thomas Edison",
+        "year": 1847,
+        "description": "The prolific American inventor of the phonograph and practical electric light who founded modern R&D.",
+        "score": 2,
+        "shared": [
+          "american",
+          "inventor"
+        ]
+      },
+      {
+        "name": "mexican-american-war",
+        "friendly_name": "Mexican-American War Begins",
+        "year": 1846,
+        "description": "Conflict erupted between the US and Mexico over Texas annexation.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "tunnel-boring-machine",
+        "friendly_name": "Tunnel Boring Machine",
+        "year": 1846,
+        "description": "Mechanical drill designed for cutting tunnels through rock, greatly speeding underground construction.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      },
+      {
+        "name": "liberia-independence",
+        "friendly_name": "Liberia Independence",
+        "year": 1847,
+        "description": "Liberia declared independence, becoming Africa's first republic, founded by freed American slaves.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "cloth"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1851,
+    "title": "Bloomers Scandalise Fashion",
+    "candidates": [
+      {
+        "name": "dover-calais-submarine-cable",
+        "friendly_name": "First Undersea Telegraph Cable",
+        "year": 1851,
+        "description": "An armoured cable laid across the Channel from Dover to Calais carried the first lasting telegraph traffic under the sea.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "flying-cloud-record-run",
+        "friendly_name": "Flying Cloud's Record Run",
+        "year": 1851,
+        "description": "The clipper Flying Cloud sailed from New York to San Francisco around Cape Horn in under ninety days, a speed record that stood for a century.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "tokugawa-edo-period-culture",
+        "friendly_name": "Edo Period Cultural Flourishing",
+        "year": 1603,
+        "year_end": 1868,
+        "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "great-exhibition-opens",
+        "friendly_name": "Great Exhibition Opens",
+        "year": 1851,
+        "description": "World's first international exhibition of manufactured products opened in London's Crystal Palace.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "foucault-pendulum",
+        "friendly_name": "Foucault Pendulum",
+        "year": 1851,
+        "description": "Léon Foucault demonstrated Earth's rotation with his famous pendulum.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "public-flush-toilets",
+        "friendly_name": "Public Flush Toilets",
+        "year": 1851,
+        "description": "George Jennings installed the first public flushing lavatories at London's Great Exhibition.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1856,
+    "title": "Perkin Discovers Mauve Dye",
+    "candidates": [
+      {
+        "name": "synthetic-dye-mauveine",
+        "friendly_name": "Synthetic Dye (Mauveine)",
+        "year": 1856,
+        "description": "William Perkin accidentally created the first synthetic dye from coal tar, launching a new industry.",
+        "score": 3,
+        "shared": [
+          "perkin",
+          "dye",
+          "synthetic"
+        ]
+      },
+      {
+        "name": "opium-wars-second",
+        "friendly_name": "Second Opium War",
+        "year": 1856,
+        "year_end": 1860,
+        "description": "Britain and France forced China to open more ports and legalize the opium trade after military defeat.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bessemer-steel-process",
+        "friendly_name": "Bessemer Steel Process",
+        "year": 1856,
+        "description": "Henry Bessemer invented a process for mass-producing steel cheaply, enabling skyscrapers and railways.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "celluloid-first-plastic",
+        "friendly_name": "Celluloid (First Plastic)",
+        "year": 1856,
+        "description": "Alexander Parkes created parkesine, the first man-made plastic derived from cellulose.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ice-making-machine",
+        "friendly_name": "Ice Making Machine",
+        "year": 1856,
+        "description": "James Harrison's mechanical refrigeration system for commercial ice production in Australia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "telegraph-sounder-design",
+        "friendly_name": "Telegraph Sounder Design",
+        "year": 1856,
+        "description": "The telegraph sounder replaced visual registers, allowing operators to decode Morse code by ear.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1858,
+    "title": "Worth Opens a Paris Couture House",
+    "candidates": [
+      {
+        "name": "paris-catacombs-created",
+        "friendly_name": "Paris Catacombs Created",
+        "year": 1786,
+        "year_end": 1859,
+        "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+        "score": 2,
+        "shared": [
+          "paris",
+          "began"
+        ]
+      },
+      {
+        "name": "aussie-rules-first-laws-1859",
+        "friendly_name": "First Laws of Australian Football",
+        "year": 1859,
+        "description": "Tom Wills and colleagues drafted the ten original Rules of the Melbourne Football Club, founding Australian rules football.",
+        "score": 1,
+        "shared": [
+          "founding"
+        ]
+      },
+      {
+        "name": "great-clock-westminster",
+        "friendly_name": "Great Clock of Westminster",
+        "year": 1859,
+        "description": "The tower clock and its great bell, Big Ben, began keeping time above the Palace of Westminster in London.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "british-raj-established",
+        "friendly_name": "British Raj Established",
+        "year": 1858,
+        "description": "The British Crown assumed direct control of India after the Sepoy Mutiny.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "miracles-at-lourdes",
+        "friendly_name": "Miracles at Lourdes",
+        "year": 1858,
+        "description": "Bernadette Soubirous reported visions of the Virgin Mary in Lourdes, France, creating a major pilgrimage site.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1873,
+    "title": "Levi's Patent Riveted Jeans",
+    "candidates": [
+      {
+        "name": "levis-blue-jeans-patent",
+        "friendly_name": "Levi's Riveted Blue Jeans",
+        "year": 1873,
+        "description": "Levi Strauss and Jacob Davis patented riveted denim work trousers, the origin of modern blue jeans.",
+        "score": 8,
+        "shared": [
+          "levi",
+          "patent",
+          "riveted",
+          "jeans",
+          "patented",
+          "work",
+          "trousers",
+          "blue"
+        ]
+      },
+      {
+        "name": "monets-impression-sunrise",
+        "friendly_name": "Monet's Impression Sunrise",
+        "year": 1872,
+        "description": "Claude Monet painted this iconic work that gave the Impressionist movement its name.",
+        "score": 1,
+        "shared": [
+          "work"
+        ]
+      },
+      {
+        "name": "barbed-wire-invented",
+        "friendly_name": "Barbed Wire Invented",
+        "year": 1874,
+        "description": "Joseph Glidden patented barbed wire, transforming land management and the American West.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "wingfield-patents-lawn-tennis",
+        "friendly_name": "Wingfield Patents Lawn Tennis",
+        "year": 1874,
+        "description": "Major Walter Clopton Wingfield patented his portable court game 'Sphairistike' in England, launching lawn tennis.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "parmelee-automatic-sprinkler",
+        "friendly_name": "Automatic Fire Sprinkler",
+        "year": 1874,
+        "description": "Piano maker Henry Parmelee patented the first practical automatic sprinkler head, designed to protect his own factory.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "information-bureau",
+        "friendly_name": "Tourist Information Bureau",
+        "year": 1873,
+        "description": "Austria established an early tourist information bureau, helping organize the growing phenomenon of leisure travel.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1879,
+    "title": "Burberry Invents Gabardine",
+    "candidates": [
+      {
+        "name": "light-bulb",
+        "friendly_name": "Electric Light Bulb Invented",
+        "year": 1879,
+        "description": "Thomas Edison developed the practical incandescent light bulb.",
+        "score": 1,
+        "shared": [
+          "developed"
+        ]
+      },
+      {
+        "name": "microphone-technology",
+        "friendly_name": "Microphone Technology Development",
+        "year": 1878,
+        "description": "David Hughes developed the carbon microphone, enabling clearer voice transmission over telephone lines.",
+        "score": 1,
+        "shared": [
+          "developed"
+        ]
+      },
+      {
+        "name": "birth-helen-keller",
+        "friendly_name": "Birth of Helen Keller",
+        "year": 1880,
+        "description": "The deaf-blind American author and activist who became a global advocate for the disabled.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "cologne-cathedral-completed",
+        "friendly_name": "Cologne Cathedral Finished",
+        "year": 1880,
+        "description": "After more than six centuries of work, Cologne Cathedral was finished and became the tallest building on Earth, the last church to hold the title.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "woven"
+        ]
+      },
+      {
+        "name": "zulu-war",
+        "friendly_name": "Anglo-Zulu War",
+        "year": 1879,
+        "description": "British forces fought the Zulu Kingdom in a short but brutal conflict.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1892,
+    "title": "Viscose Rayon Is Patented",
+    "candidates": [
+      {
+        "name": "escalator-invented",
+        "friendly_name": "Escalator Invented",
+        "year": 1891,
+        "description": "Jesse Reno patented the first working escalator, which debuted as a novelty ride at Coney Island.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "zipper-invented",
+        "friendly_name": "Zipper Invented",
+        "year": 1893,
+        "description": "Whitcomb Judson patented the 'clasp-locker,' the precursor to the modern zipper.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "ellis-island-opens",
+        "friendly_name": "Ellis Island Opens",
+        "year": 1892,
+        "description": "Ellis Island began processing immigrants, eventually welcoming over 12 million people to America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cinematograph",
+        "friendly_name": "Cinematograph",
+        "year": 1892,
+        "description": "Léon Bouly's combined camera and projector device for recording and displaying motion pictures.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electric-oven",
+        "friendly_name": "Electric Oven",
+        "year": 1892,
+        "description": "Thomas Ahearn demonstrated the first electric cooking oven at a hotel dinner in Ottawa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gas-powered-tractor",
+        "friendly_name": "Gas-Powered Tractor",
+        "year": 1892,
+        "description": "John Froelich built the first successful gasoline-powered tractor for agricultural use.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1893,
+    "title": "Judson Patents the Zipper",
+    "candidates": [
+      {
+        "name": "zipper-invented",
+        "friendly_name": "Zipper Invented",
+        "year": 1893,
+        "description": "Whitcomb Judson patented the 'clasp-locker,' the precursor to the modern zipper.",
+        "score": 5,
+        "shared": [
+          "judson",
+          "zipper",
+          "patented",
+          "clasp",
+          "locker"
+        ]
+      },
+      {
+        "name": "dvorak-new-world",
+        "friendly_name": "New World Symphony Premiered",
+        "year": 1893,
+        "description": "Dvořák's symphony premiered in New York, inspired by American folk music.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "panic-of-1893",
+        "friendly_name": "American Banking Panic",
+        "year": 1893,
+        "year_end": 1897,
+        "description": "Severe economic depression caused by railroad overbuilding and bank failures, lasting four years.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "rubber-sole-sneakers",
+        "friendly_name": "First Rubber-Soled Sneakers",
+        "year": 1892,
+        "description": "Keds-style canvas shoes with rubber soles, dubbed sneakers for their quiet tread, brought comfort to footwear.",
+        "score": 1,
+        "shared": [
+          "shoes"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "womens-suffrage-nz",
+        "friendly_name": "Women's Suffrage in New Zealand",
+        "year": 1893,
+        "description": "New Zealand became the first country to grant women the right to vote.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1914,
+    "title": "The Modern Bra Is Patented",
+    "candidates": [
+      {
+        "name": "modern-bra-patented",
+        "friendly_name": "Modern Bra Patented",
+        "year": 1914,
+        "description": "Mary Phelps Jacob patented a lightweight backless brassiere, offering an alternative to the restrictive corset.",
+        "score": 4,
+        "shared": [
+          "modern",
+          "bra",
+          "patented",
+          "backless"
+        ]
+      },
+      {
+        "name": "second-battle-of-ypres-first-gas-attack",
+        "friendly_name": "Second Battle of Ypres",
+        "year": 1915,
+        "description": "Germany deployed chlorine gas against Allied troops in Belgium, the first large-scale use of chemical weapons in modern warfare.",
+        "score": 1,
+        "shared": [
+          "modern"
+        ]
+      },
+      {
+        "name": "crossword-puzzle-published",
+        "friendly_name": "First Crossword Puzzle",
+        "year": 1913,
+        "description": "A New York newspaper printed the first crossword puzzle, sparking a craze for the word-grid game.",
+        "score": 1,
+        "shared": [
+          "york"
+        ]
+      },
+      {
+        "name": "aerial-survey-photography",
+        "friendly_name": "Aerial Photos Map the Trenches",
+        "year": 1915,
+        "description": "Cameras flown over the Western Front let armies redraw trench maps within hours, founding modern photographic survey.",
+        "score": 1,
+        "shared": [
+          "modern"
+        ]
+      },
+      {
+        "name": "woolworth-building-opens",
+        "friendly_name": "Woolworth Building Opens",
+        "year": 1913,
+        "description": "Frank Woolworth's ornate Gothic tower opened in New York and became the tallest building on Earth, a title it held for the next seventeen years.",
+        "score": 1,
+        "shared": [
+          "york"
+        ]
+      },
+      {
+        "name": "wwi-start",
+        "friendly_name": "World War I Begins",
+        "year": 1914,
+        "description": "The assassination of Archduke Franz Ferdinand sparked the Great War.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1917,
+    "title": "Converse All Star Canvas Sneaker",
+    "candidates": [
+      {
+        "name": "battle-verdun",
+        "friendly_name": "Battle of Verdun",
+        "year": 1916,
+        "description": "Germany's attempt to bleed France white became a symbol of WWI's futility.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "dada-movement",
+        "friendly_name": "Dada Movement Begins",
+        "year": 1916,
+        "description": "Artists in Zurich launched an anti-art movement in response to World War I.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "shackleton-endurance",
+        "friendly_name": "Shackleton's Endurance Expedition",
+        "year": 1914,
+        "year_end": 1917,
+        "description": "Ernest Shackleton's Antarctic expedition became a legendary survival story.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "battle-passchendaele",
+        "friendly_name": "Battle of Passchendaele",
+        "year": 1917,
+        "description": "British troops fought through mud for months to gain five miles at Ypres.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "us-enters-world-war-i",
+        "friendly_name": "US Enters World War I",
+        "year": 1917,
+        "description": "The United States declared war on Germany after unrestricted submarine warfare and the Zimmermann Telegram, tipping the balance toward Allied victory.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "balfour-declaration",
+        "friendly_name": "Balfour Declaration",
+        "year": 1917,
+        "description": "British statement supporting a Jewish homeland in Palestine, shaping Middle East politics for generations.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1921,
+    "title": "Gucci Opens in Florence",
+    "candidates": [
+      {
+        "name": "lincoln-memorial",
+        "friendly_name": "Lincoln Memorial Completed",
+        "year": 1922,
+        "description": "The memorial honoring Abraham Lincoln opened in Washington DC.",
+        "score": 1,
+        "shared": [
+          "opened"
+        ]
+      },
+      {
+        "name": "turkish-war-of-independence",
+        "friendly_name": "Turkish War of Independence",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-miss-america",
+        "friendly_name": "First Miss America Pageant",
+        "year": 1921,
+        "description": "The first Miss America pageant was held in Atlantic City.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "communist-party-china-founded",
+        "friendly_name": "Communist Party of China Founded",
+        "year": 1921,
+        "description": "The CPC was founded in Shanghai with Mao Zedong among its early members.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "russian-famine-civil-war",
+        "friendly_name": "Soviet Russian Famine",
+        "year": 1921,
+        "year_end": 1922,
+        "description": "Civil war aftermath and drought killed five million in Soviet Russia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "insulin-discovered",
+        "friendly_name": "Insulin Discovered",
+        "year": 1921,
+        "description": "Frederick Banting and Charles Best discovered insulin, saving millions of diabetics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1926,
+    "title": "Chanel's Little Black Dress",
+    "candidates": [
+      {
+        "name": "chanel-little-black-dress",
+        "friendly_name": "Chanel's Little Black Dress",
+        "year": 1926,
+        "description": "Coco Chanel introduced a simple, elegant black dress that Vogue hailed as a timeless wardrobe essential.",
+        "score": 6,
+        "shared": [
+          "chanel",
+          "little",
+          "black",
+          "dress",
+          "simple",
+          "coco"
+        ]
+      },
+      {
+        "name": "harlem-globetrotters-founded",
+        "friendly_name": "Harlem Globetrotters Founded",
+        "year": 1926,
+        "description": "Abe Saperstein founded the Harlem Globetrotters, an all-Black touring exhibition team, in Chicago.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      },
+      {
+        "name": "great-gatsby",
+        "friendly_name": "Great Gatsby Published",
+        "year": 1925,
+        "description": "F. Scott Fitzgerald published his classic novel of the Jazz Age.",
+        "score": 1,
+        "shared": [
+          "classic"
+        ]
+      },
+      {
+        "name": "flapper-dress-1920s",
+        "friendly_name": "The Flapper Dress Era",
+        "year": 1925,
+        "year_end": 1929,
+        "description": "Jazz Age women embraced loose, knee-length flapper dresses that freed the body and broke with Victorian dress.",
+        "score": 1,
+        "shared": [
+          "dress"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      },
+      {
+        "name": "television-first-demonstration",
+        "friendly_name": "First Television Demonstration",
+        "year": 1926,
+        "description": "John Logie Baird gave the first public demonstration of television.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1933,
+    "title": "Lacoste Launches the Polo Shirt",
+    "candidates": [
+      {
+        "name": "long-march-begins",
+        "friendly_name": "Long March Begins",
+        "year": 1934,
+        "description": "Chinese Communists began their epic 6,000-mile retreat from Nationalist forces.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "birth-elizabeth-taylor",
+        "friendly_name": "Birth of Elizabeth Taylor",
+        "year": 1932,
+        "description": "The British-American actress and Cleopatra star, a screen legend and pioneering AIDS activist.",
+        "score": 1,
+        "shared": [
+          "star"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "hitler-chancellor",
+        "friendly_name": "Hitler Becomes Chancellor",
+        "year": 1933,
+        "description": "Adolf Hitler was appointed Chancellor of Germany, beginning Nazi rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "reichstag-fire",
+        "friendly_name": "Reichstag Fire",
+        "year": 1933,
+        "description": "The German parliament building was set ablaze, allowing Hitler to consolidate power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "new-deal",
+        "friendly_name": "New Deal Begins",
+        "year": 1933,
+        "description": "FDR launched sweeping programs to combat the Great Depression.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1935,
+    "title": "Carothers Creates Nylon",
+    "candidates": [
+      {
+        "name": "nylon-invented",
+        "friendly_name": "Nylon Invented",
+        "year": 1935,
+        "description": "Wallace Carothers at DuPont invented nylon, the first fully synthetic fiber.",
+        "score": 5,
+        "shared": [
+          "carothers",
+          "nylon",
+          "dupont",
+          "fully",
+          "synthetic"
+        ]
+      },
+      {
+        "name": "swiss-bank-secrecy-law",
+        "friendly_name": "Swiss Bank Secrecy Law",
+        "year": 1934,
+        "description": "Switzerland made it a crime to reveal bank client details, cementing its reputation for secret banking.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "alcoholics-anonymous",
+        "friendly_name": "Alcoholics Anonymous Founded",
+        "year": 1935,
+        "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "social-security-act",
+        "friendly_name": "Social Security Act Signed",
+        "year": 1935,
+        "description": "The US established its social insurance program for the elderly.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nuremberg-laws",
+        "friendly_name": "Nuremberg Laws",
+        "year": 1935,
+        "description": "Nazi racial laws stripped German Jews of citizenship and banned marriages between Jews and non-Jews.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "italy-invades-ethiopia",
+        "friendly_name": "Italy Invades Ethiopia",
+        "year": 1935,
+        "description": "Mussolini's forces invaded Ethiopia, using poison gas and exposing League of Nations weakness.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1946,
+    "title": "The Bikini Debuts",
+    "candidates": [
+      {
+        "name": "bikini-introduced",
+        "friendly_name": "The Bikini Unveiled",
+        "year": 1946,
+        "description": "Designer Louis Reard debuted the two-piece bikini in Paris, named after a nuclear test site for its impact.",
+        "score": 7,
+        "shared": [
+          "bikini",
+          "designer",
+          "unveiled",
+          "two",
+          "piece",
+          "named",
+          "after"
+        ]
+      },
+      {
+        "name": "french-indochina-war-begins",
+        "friendly_name": "French-Indochina War Begins",
+        "year": 1946,
+        "description": "Ho Chi Minh's Viet Minh began armed resistance against French colonial rule, starting an eight-year war that ended with French defeat at Dien Bien Phu.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "first-eniac-computer",
+        "friendly_name": "First ENIAC Computer",
+        "year": 1946,
+        "description": "ENIAC, the first general-purpose electronic computer, was unveiled at the University of Pennsylvania.",
+        "score": 1,
+        "shared": [
+          "unveiled"
+        ]
+      },
+      {
+        "name": "tokyo-war-crimes-trials",
+        "friendly_name": "Tokyo War Crimes Trials",
+        "year": 1946,
+        "year_end": 1948,
+        "description": "An Allied tribunal tried Japanese leaders for wartime atrocities, the Pacific counterpart to Nuremberg.",
+        "score": 1,
+        "shared": [
+          "pacific"
+        ]
+      },
+      {
+        "name": "fall-of-berlin",
+        "friendly_name": "Fall of Berlin",
+        "year": 1945,
+        "description": "Soviet forces captured the Nazi capital after brutal street fighting.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "atomic-bomb-nagasaki-ww2",
+        "friendly_name": "Atomic Bomb on Nagasaki",
+        "year": 1945,
+        "description": "The US dropped a plutonium bomb on Nagasaki three days after Hiroshima, hastening Japan's surrender.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "diors-new-look",
+        "friendly_name": "Dior's New Look Debuts",
+        "year": 1947,
+        "description": "Christian Dior's New Look brought back full skirts and nipped waists, redefining postwar women's fashion.",
+        "score": 1,
+        "shared": [
+          "debuts"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1947,
+    "title": "Dior's New Look",
+    "candidates": [
+      {
+        "name": "diors-new-look",
+        "friendly_name": "Dior's New Look Debuts",
+        "year": 1947,
+        "description": "Christian Dior's New Look brought back full skirts and nipped waists, redefining postwar women's fashion.",
+        "score": 7,
+        "shared": [
+          "dior",
+          "look",
+          "brought",
+          "waists",
+          "full",
+          "skirts",
+          "postwar"
+        ]
+      },
+      {
+        "name": "bikini-introduced",
+        "friendly_name": "The Bikini Unveiled",
+        "year": 1946,
+        "description": "Designer Louis Reard debuted the two-piece bikini in Paris, named after a nuclear test site for its impact.",
+        "score": 2,
+        "shared": [
+          "paris",
+          "designer"
+        ]
+      },
+      {
+        "name": "windrush-arrival",
+        "friendly_name": "Windrush Arrives in Britain",
+        "year": 1948,
+        "description": "The Empire Windrush brought Caribbean migrants to Britain, beginning postwar Commonwealth settlement.",
+        "score": 2,
+        "shared": [
+          "brought",
+          "postwar"
+        ]
+      },
+      {
+        "name": "un-partition-plan-palestine",
+        "friendly_name": "UN Partition Plan for Palestine",
+        "year": 1947,
+        "description": "The UN voted to partition Palestine into Jewish and Arab states, setting the stage for Israel's creation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indian-independence",
+        "friendly_name": "Indian Independence",
+        "year": 1947,
+        "description": "India gained independence from British rule and was partitioned with Pakistan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "marshall-plan",
+        "friendly_name": "Marshall Plan Announced",
+        "year": 1947,
+        "description": "The US announced massive economic aid to rebuild Western Europe.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1961,
+    "title": "Hepburn's Givenchy Black Dress",
+    "candidates": [
+      {
+        "name": "first-human-space",
+        "friendly_name": "First Human in Space",
+        "year": 1961,
+        "description": "Yuri Gagarin became the first human to travel to outer space.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "sharpeville-massacre",
+        "friendly_name": "Sharpeville Massacre",
+        "year": 1960,
+        "description": "South African police killed 69 Black protesters demonstrating against pass laws, galvanizing international opposition to apartheid.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      },
+      {
+        "name": "beatles-form",
+        "friendly_name": "Beatles Form",
+        "year": 1960,
+        "description": "John Lennon's band became the Beatles in Liverpool.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "communications-satellite",
+        "friendly_name": "First Communications Satellite",
+        "year": 1962,
+        "description": "Telstar became the first active communications satellite, relaying live television across the Atlantic.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "fraser-sub-minute-1962",
+        "friendly_name": "Fraser First Woman Under a Minute",
+        "year": 1962,
+        "description": "Dawn Fraser became the first woman to break one minute for 100m freestyle, swimming 59.9 in Melbourne.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1962,
+    "title": "Marilyn's Sheer Birthday Dress",
+    "candidates": [
+      {
+        "name": "jfk-assassination",
+        "friendly_name": "JFK Assassinated",
+        "year": 1963,
+        "description": "President John F. Kennedy was shot and killed in Dallas, Texas.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "south-vietnam-coup",
+        "friendly_name": "South Vietnam Coup",
+        "year": 1963,
+        "description": "South Vietnamese generals overthrew and assassinated President Ngo Dinh Diem with tacit US approval, destabilizing the country during the Vietnam War.",
+        "score": 1,
+        "shared": [
+          "president"
+        ]
+      },
+      {
+        "name": "eichmann-trial",
+        "friendly_name": "Eichmann Trial",
+        "year": 1961,
+        "description": "Israel tried Nazi organizer Adolf Eichmann in Jerusalem for his role in the Holocaust, then executed him.",
+        "score": 1,
+        "shared": [
+          "then"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "millions"
+        ]
+      },
+      {
+        "name": "operation-chopper-vietnam",
+        "friendly_name": "Operation Chopper Vietnam",
+        "year": 1962,
+        "description": "Operation Chopper, the first American combat mission in the Vietnam War, takes place.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "warhol-soup-cans",
+        "friendly_name": "Warhol's Campbell's Soup Cans",
+        "year": 1962,
+        "description": "Andy Warhol exhibited his iconic pop art series.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1964,
+    "title": "Mary Quant's Miniskirt",
+    "candidates": [
+      {
+        "name": "miniskirt-popularized",
+        "friendly_name": "The Miniskirt Takes Off",
+        "year": 1965,
+        "description": "Mary Quant popularized the miniskirt in swinging London, making the daring hemline a symbol of the era.",
+        "score": 4,
+        "shared": [
+          "mary",
+          "quant",
+          "miniskirt",
+          "london"
+        ]
+      },
+      {
+        "name": "shinkansen-opens",
+        "friendly_name": "Shinkansen Opens",
+        "year": 1964,
+        "description": "Japan launched the world's first high-speed rail line, the Bullet Train.",
+        "score": 1,
+        "shared": [
+          "high"
+        ]
+      },
+      {
+        "name": "green-revolution-begins",
+        "friendly_name": "Green Revolution Begins",
+        "year": 1965,
+        "description": "High-yield crop varieties and fertilizers vastly raised harvests, easing famine across the developing world.",
+        "score": 1,
+        "shared": [
+          "high"
+        ]
+      },
+      {
+        "name": "zanzibar-revolution",
+        "friendly_name": "Zanzibar Revolution",
+        "year": 1964,
+        "description": "Rebels in Zanzibar begin a revolt and proclaim a republic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beatles-ed-sullivan",
+        "friendly_name": "Beatles on Ed Sullivan",
+        "year": 1964,
+        "description": "The Beatles' American TV debut launched the British Invasion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tokyo-olympics-1964",
+        "friendly_name": "Tokyo Olympics",
+        "year": 1964,
+        "description": "Japan hosted the Olympics, showcasing its postwar recovery to the world.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1974,
+    "title": "Von Furstenberg's Wrap Dress",
+    "candidates": [
+      {
+        "name": "barcode-scanned",
+        "friendly_name": "First Barcode Scanned",
+        "year": 1974,
+        "description": "A pack of Wrigley's gum became the first product scanned with a UPC barcode at a supermarket in Troy, Ohio.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "rubiks-cube-invented",
+        "friendly_name": "Rubik's Cube Invented",
+        "year": 1974,
+        "description": "Hungarian Erno Rubik built a twisting cube of colored squares that became a hugely popular puzzle toy.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "russborough-house-art-heist",
+        "friendly_name": "Russborough House Art Heist",
+        "year": 1974,
+        "description": "An armed raid on an Irish country house saw the owners tied up while nineteen paintings, including a Vermeer, were cut from their frames.",
+        "score": 1,
+        "shared": [
+          "tied"
+        ]
+      },
+      {
+        "name": "angolan-civil-war",
+        "friendly_name": "Angolan Civil War Begins",
+        "year": 1975,
+        "description": "A Cold War proxy conflict erupted as Angola gained independence from Portugal.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "indonesia-invades-east-timor",
+        "friendly_name": "Indonesia Invades East Timor",
+        "year": 1975,
+        "description": "Indonesian troops seized the former Portuguese colony days after it declared independence.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "sears-tower",
+        "friendly_name": "Sears Tower Completed",
+        "year": 1973,
+        "description": "The Chicago skyscraper became the world's tallest building.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1985,
+    "title": "Air Jordan Sneakers Launch",
+    "candidates": [
+      {
+        "name": "air-jordan-sneakers",
+        "friendly_name": "Air Jordan Sneakers Launch",
+        "year": 1985,
+        "description": "Nike released the first Air Jordan basketball shoe, igniting the global sneaker culture and collector market.",
+        "score": 7,
+        "shared": [
+          "air",
+          "jordan",
+          "sneakers",
+          "launch",
+          "basketball",
+          "shoe",
+          "global"
+        ]
+      },
+      {
+        "name": "phantom-of-opera-premieres",
+        "friendly_name": "Phantom of the Opera Opens",
+        "year": 1986,
+        "description": "A musical about a disfigured composer haunting a Paris opera house opened in London's West End and became a global stage phenomenon.",
+        "score": 2,
+        "shared": [
+          "became",
+          "global"
+        ]
+      },
+      {
+        "name": "gorbachev-becomes-leader",
+        "friendly_name": "Gorbachev Becomes Leader",
+        "year": 1985,
+        "description": "Mikhail Gorbachev became Soviet leader, initiating reforms that would ultimately end the Cold War.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "first-ozone-hole-discovered",
+        "friendly_name": "First Hole in Ozone Layer",
+        "year": 1985,
+        "description": "Scientists discovered severe ozone depletion over Antarctica, leading to global action on CFCs.",
+        "score": 1,
+        "shared": [
+          "global"
+        ]
+      },
+      {
+        "name": "snooker-black-ball-final-1985",
+        "friendly_name": "Snooker's Black Ball Final",
+        "year": 1985,
+        "description": "Dennis Taylor beat Steve Davis on the final black to win the World Championship before 18.5 million late-night viewers.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      },
+      {
+        "name": "challenger-disaster",
+        "friendly_name": "Challenger Disaster",
+        "year": 1986,
+        "description": "The Space Shuttle Challenger exploded shortly after launch, killing seven astronauts.",
+        "score": 1,
+        "shared": [
+          "launch"
+        ]
+      },
+      {
+        "name": "kareem-scoring-record-1984",
+        "friendly_name": "Kareem Sets Scoring Record",
+        "year": 1984,
+        "description": "Kareem Abdul-Jabbar passed Wilt Chamberlain to become the NBA's all-time leading scorer with a signature skyhook.",
+        "score": 1,
+        "shared": [
+          "signature"
+        ]
+      },
+      {
+        "name": "lemond-first-us-tour-win-1986",
+        "friendly_name": "LeMond First US Tour Winner",
+        "year": 1986,
+        "description": "Greg LeMond became the first American to win the Tour de France, beating teammate Bernard Hinault.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1994,
+    "title": "Princess Diana's Revenge Dress",
+    "candidates": [
+      {
+        "name": "kerrigan-harding-attack-1994",
+        "friendly_name": "The Kerrigan Attack",
+        "year": 1994,
+        "description": "US skater Nancy Kerrigan was clubbed in a plot linked to rival Tonya Harding's camp weeks before the Olympics.",
+        "score": 1,
+        "shared": [
+          "rival"
+        ]
+      },
+      {
+        "name": "morrison-wins-nobel-prize",
+        "friendly_name": "Morrison Wins a Nobel Prize",
+        "year": 1993,
+        "description": "Novelist Toni Morrison won the Nobel Prize in Literature, becoming the first Black woman to receive that honor.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      },
+      {
+        "name": "apartheid-ends",
+        "friendly_name": "Apartheid Ends in South Africa",
+        "year": 1994,
+        "description": "South Africa held its first democratic elections, ending racial segregation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rwandan-genocide",
+        "friendly_name": "Rwandan Genocide",
+        "year": 1994,
+        "description": "Hutu extremists killed approximately 800,000 Tutsis and moderate Hutus.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pulp-fiction-released",
+        "friendly_name": "Pulp Fiction Released",
+        "year": 1994,
+        "description": "Tarantino's film revitalized independent cinema with its non-linear storytelling.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "amazon-founded",
+        "friendly_name": "Amazon Founded",
+        "year": 1994,
+        "description": "Jeff Bezos founded Amazon as an online bookstore that would become the world's largest retailer.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 2000,
+    "title": "J.Lo's Jungle Green Versace Dress",
+    "candidates": [
+      {
+        "name": "ipod-released",
+        "friendly_name": "iPod Released",
+        "year": 2001,
+        "description": "Apple launched the portable music player that transformed the music industry.",
+        "score": 1,
+        "shared": [
+          "music"
+        ]
+      },
+      {
+        "name": "napster-launched",
+        "friendly_name": "Napster Launched",
+        "year": 1999,
+        "description": "Shawn Fanning and Sean Parker launched Napster, the peer-to-peer file sharing service that upended the music industry.",
+        "score": 1,
+        "shared": [
+          "music"
+        ]
+      },
+      {
+        "name": "second-intifada",
+        "friendly_name": "Second Intifada Begins",
+        "year": 2000,
+        "description": "A more violent Palestinian uprising erupted after peace talks collapsed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "y2k",
+        "friendly_name": "Y2K Millennium Bug",
+        "year": 2000,
+        "description": "The world braced for computer failures as the calendar rolled to a new millennium.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "putin-becomes-president",
+        "friendly_name": "Putin Becomes President",
+        "year": 2000,
+        "description": "Vladimir Putin was elected Russian President after serving as acting president, beginning his long rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "concorde-crash",
+        "friendly_name": "Concorde Crash",
+        "year": 2000,
+        "description": "A supersonic airliner crashed after takeoff from Paris, killing 113 people.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 2002,
+    "title": "Crocs Clogs Debut",
+    "candidates": [
+      {
+        "name": "ipod-released",
+        "friendly_name": "iPod Released",
+        "year": 2001,
+        "description": "Apple launched the portable music player that transformed the music industry.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "wikipedia-launched",
+        "friendly_name": "Wikipedia Launched",
+        "year": 2001,
+        "description": "Jimmy Wales launched Wikipedia, the free encyclopedia that anyone can edit.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "first-3g-mobile-network",
+        "friendly_name": "First 3G Network Launched",
+        "year": 2001,
+        "description": "NTT DoCoMo launched the first 3G mobile network in Japan, enabling mobile internet.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "bali-bombings",
+        "friendly_name": "Bali Bombings",
+        "year": 2002,
+        "description": "Jemaah Islamiyah terrorists bombed nightclubs in Bali, killing 202 people, mostly Australian tourists, in Indonesia's deadliest terror attack.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moscow-theatre-hostage-crisis",
+        "friendly_name": "Moscow Theatre Hostage Crisis",
+        "year": 2002,
+        "description": "Chechen militants seized a Moscow theater with 850 hostages. Russian special forces used gas in the rescue, killing 130 hostages.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "world-cup-soccer-2002",
+        "friendly_name": "FIFA World Cup Korea/Japan",
+        "year": 2002,
+        "description": "The first World Cup hosted in Asia was co-hosted by South Korea and Japan.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2010,
+    "title": "Lady Gaga's Meat Dress",
+    "candidates": [
+      {
+        "name": "swine-flu-pandemic",
+        "friendly_name": "Swine Flu Pandemic",
+        "year": 2009,
+        "year_end": 2010,
+        "description": "A new influenza strain caused a global pandemic.",
+        "score": 1,
+        "shared": [
+          "global"
+        ]
+      },
+      {
+        "name": "copenhagen-climate-summit",
+        "friendly_name": "Copenhagen Climate Summit",
+        "year": 2009,
+        "description": "The UN climate conference ended without a binding agreement, widely seen as a diplomatic failure in addressing global warming.",
+        "score": 1,
+        "shared": [
+          "global"
+        ]
+      },
+      {
+        "name": "instagram-launched",
+        "friendly_name": "Instagram Launched",
+        "year": 2010,
+        "description": "The photo-sharing app that transformed social media was released.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wikileaks-cables",
+        "friendly_name": "WikiLeaks Cables",
+        "year": 2010,
+        "description": "WikiLeaks released thousands of classified US diplomatic cables, embarrassing governments worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chilean-mine-rescue",
+        "friendly_name": "Chilean Mine Rescue",
+        "year": 2010,
+        "description": "All 33 miners trapped underground for 69 days were rescued in a dramatic televised operation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "haiti-earthquake",
+        "friendly_name": "Haiti Earthquake",
+        "year": 2010,
+        "description": "A catastrophic earthquake killed over 200,000 people and devastated Port-au-Prince.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 2011,
+    "title": "Kate Middleton's Wedding Dress",
+    "candidates": [
+      {
+        "name": "bin-laden-killed",
+        "friendly_name": "Osama bin Laden Killed",
+        "year": 2011,
+        "description": "US Navy SEALs killed the al-Qaeda leader in Pakistan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arab-spring",
+        "friendly_name": "Arab Spring Begins",
+        "year": 2011,
+        "description": "Pro-democracy protests swept across the Middle East and North Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "syrian-civil-war",
+        "friendly_name": "Syrian Civil War Begins",
+        "year": 2011,
+        "description": "Anti-government protests in Syria escalated into a devastating civil war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "libyan-civil-war",
+        "friendly_name": "Libyan Civil War Begins",
+        "year": 2011,
+        "description": "An uprising against Gaddafi led to NATO intervention and regime change.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "norway-attacks",
+        "friendly_name": "Norway Attacks",
+        "year": 2011,
+        "description": "Far-right terrorist Anders Breivik bombed Oslo and massacred 69 people at a youth camp, Norway's deadliest peacetime attack.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-steve-jobs",
+        "friendly_name": "Death of Steve Jobs",
+        "year": 2011,
+        "description": "Apple co-founder Steve Jobs died of cancer, mourned worldwide for revolutionizing personal technology.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

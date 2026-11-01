@@ -1,0 +1,15 @@
+{
+  "slug": "proconsul",
+  "description": "A hairy, dark-furred primate with a pale face and small ears walks along a thick, moss-covered fallen branch in a dense green jungle. Shafts of yellow-green light fall through the canopy, and vines hang from the trees. The painting is an oil-style artwork that fills the whole image, with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

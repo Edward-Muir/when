@@ -1,0 +1,15 @@
+{
+  "slug": "first-ct-scan-patient",
+  "description": "A dim, oil-painted interior. A large grey machine with a glowing circular opening dominates the centre, with a patient lying on a table being fed toward it. A seated technician in dark clothes at left works at a monitor showing a bright ring-shaped cross-section. Racks of dials, panels and cables fill the walls, and the room is lit mostly by the machine's glow.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The scanner housing carries the painted lettering 'EMI' in its centre panel. Remove or repaint the label so the machine is unmarked."
+}

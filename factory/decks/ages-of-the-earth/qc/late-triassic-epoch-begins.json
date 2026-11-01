@@ -1,0 +1,15 @@
+{
+  "slug": "late-triassic-epoch-begins",
+  "description": "A large crocodile-like reptile with a spiked, scaly back lies at the edge of a dark, rain-streaked river. Behind it, a small two-legged dinosaur with a long tail stands among ferns and palms under a stormy grey sky. The painting fills the frame edge to edge, with no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

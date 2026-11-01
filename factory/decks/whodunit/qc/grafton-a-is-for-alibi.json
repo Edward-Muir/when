@@ -1,0 +1,15 @@
+{
+  "slug": "grafton-a-is-for-alibi",
+  "description": "An oil-painted night scene of a cluttered wooden desk in a dim room. An open metal index-card box sits on the left, a black manual typewriter with a sheet in it sits center, and a black rotary telephone is at right. A revolver, a coffee mug, loose papers and an ashtray lie on the desk. Through a window with venetian blinds, palm trees and street lamps line a dark beach road, with the sea beyond. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

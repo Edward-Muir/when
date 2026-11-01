@@ -1,0 +1,15 @@
+{
+  "slug": "galbraith-cormoran-strike-debut",
+  "description": "A snowy night street of grey terrace houses with wrought-iron balconies and a glowing street lamp. Parked cars and a police car with a blue light sit behind blue-and-white tape printed with the word POLICE. On the right, a red-brick building has a lit upper window full of books and a desk lamp, and a shop window below shows guitars. Snow falls. No people, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The police tape across the street carries legible lettering (POLICE, repeated), and there is a small plate on the left car. Repaint the tape plain, without words."
+}

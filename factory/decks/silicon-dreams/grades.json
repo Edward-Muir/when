@@ -1,0 +1,23 @@
+{
+  "hollerith-tabulator-census": {"recognition": "low", "inferability": "medium", "anchors": ["punched cards", "electric tabulating", "census"], "why": "punched cards and electric tabulation suggest late 19th/early 20th century, but it could be mistaken for mid-century"},
+  "de-forest-triode-audion": {"recognition": "low", "inferability": "high", "anchors": ["vacuum tube", "early electronic computers"], "why": "vacuum tube and early electronic computers place it in the early 20th century"},
+  "eccles-jordan-flip-flop": {"recognition": "very-low", "inferability": "medium", "anchors": ["vacuum tubes", "first memory cell"], "why": "vacuum tube electronics point to the early-to-mid 20th century"},
+  "bush-differential-analyzer": {"recognition": "low", "inferability": "medium", "anchors": ["analog machine", "MIT", "gears"], "why": "room-sized analog machine suggests pre-digital 20th century"},
+  "zuse-z3-computer": {"recognition": "medium", "inferability": "high", "anchors": ["first programmable digital computer", "telephone relays", "Berlin"], "why": "relay-based first computer in Berlin points to the WWII era"},
+  "manchester-baby-runs-program": {"recognition": "low", "inferability": "high", "anchors": ["first stored-program computer", "room-sized"], "why": "first electronic-memory computer is clearly the 1940s"},
+  "univac-i-delivered": {"recognition": "medium", "inferability": "high", "anchors": ["first commercial computer", "Census Bureau", "election prediction"], "why": "first commercial US computer places it in the early 1950s"},
+  "kilby-first-integrated-circuit": {"recognition": "medium", "inferability": "high", "anchors": ["integrated circuit", "semiconductor"], "why": "first integrated circuit points to the mid-20th century"},
+  "ibm-system-360-announced": {"recognition": "low", "inferability": "high", "anchors": ["IBM mainframes"], "why": "mainframe family marks the 1960s computing era"},
+  "apple-ii-released": {"recognition": "high", "inferability": "high", "anchors": ["Apple", "microcomputer", "home computing"], "why": "early home microcomputer places it in the late 1970s"},
+  "ibm-pc-launched": {"recognition": "high", "inferability": "high", "anchors": ["IBM", "Intel chip", "personal computers"], "why": "the birth of the PC standard places it in the early 1980s"},
+  "arm1-processor-first-runs": {"recognition": "low", "inferability": "medium", "anchors": ["RISC chip", "mobile devices"], "why": "RISC chip with later mobile use suggests 1980s, but could be placed later"},
+  "imac-launched": {"recognition": "high", "inferability": "high", "anchors": ["Apple", "no floppy drive", "translucent"], "why": "no floppy drive and Apple revival point to the late 1990s"},
+  "nvidia-geforce-256-gpu": {"recognition": "medium", "inferability": "high", "anchors": ["GPU", "Nvidia", "graphics chip"], "why": "first GPU branding marks the late 1990s"},
+  "ibm-quantum-factors-15": {"recognition": "low", "inferability": "medium", "anchors": ["qubit", "Shor's algorithm"], "why": "quantum hardware implies recent decades, though early 2000s versus 2020s is unclear"},
+  "roadrunner-petaflop-supercomputer": {"recognition": "low", "inferability": "medium", "anchors": ["petaflop", "supercomputer"], "why": "petaflop supercomputer implies the 2000s-2010s"},
+  "ibm-watson-jeopardy": {"recognition": "high", "inferability": "high", "anchors": ["IBM Watson", "Jeopardy", "supercomputer"], "why": "famous televised AI win places it around 2011"},
+  "raspberry-pi-released": {"recognition": "medium", "inferability": "medium", "anchors": ["single-board computer", "millions sold"], "why": "cheap credit-card computer suggests the 2010s"},
+  "apple-m1-chip": {"recognition": "medium", "inferability": "high", "anchors": ["Apple", "Arm-based", "replaced Intel in Macs"], "why": "Apple silicon replacing Intel is very recent"},
+  "frontier-exascale-supercomputer": {"recognition": "low", "inferability": "medium", "anchors": ["exascale", "supercomputer"], "why": "quintillion calculations per second implies the 2020s"},
+  "google-willow-quantum-chip": {"recognition": "low", "inferability": "medium", "anchors": ["Google", "105-qubit", "quantum error correction"], "why": "modern quantum chip points to the very recent era"}
+}

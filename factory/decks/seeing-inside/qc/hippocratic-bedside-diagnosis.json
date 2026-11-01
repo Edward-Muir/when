@@ -1,0 +1,15 @@
+{
+  "slug": "hippocratic-bedside-diagnosis",
+  "description": "An older bearded, balding man with bare shoulders and a dark grey draped cloth sits on the edge of a wooden bed. He grips a younger man's wrist with one hand while the other hand rests near the patient's chest. The young man lies on pale linen with eyes closed. A clay jug, a bowl and a lit oil lamp sit on a low wooden stool, in a dim stone room with a small wall niche. The painting is dark and oil-like, with no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

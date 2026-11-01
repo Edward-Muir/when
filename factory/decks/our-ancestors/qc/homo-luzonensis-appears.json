@@ -1,0 +1,15 @@
+{
+  "slug": "homo-luzonensis-appears",
+  "description": "A nude, dark-skinned, small-bodied hominin with long hair climbs a moss-covered tree trunk in a dense tropical forest. A large limestone cave opening with dripping vines sits to the left, with ferns in the foreground. Painterly, dramatic light from above. No text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The figure is fully nude, with bare chest, hips and legs shown in detail, which breaks the no-nudity rule. Repaint with the figure clothed, for example in a simple hide or cloth wrap, keeping the climbing pose, tree and cave."
+}

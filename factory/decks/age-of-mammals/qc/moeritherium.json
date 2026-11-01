@@ -1,0 +1,15 @@
+{
+  "slug": "moeritherium",
+  "description": "A stocky, grey-brown mammal with a short, trunk-like snout and two small tusks wades through dark, murky swamp water. Tall reeds, grass clumps and moss-draped trees with hanging strands frame it under misty, filtered light. The painting is oil-like and fills the whole square with no border, text or visible people.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

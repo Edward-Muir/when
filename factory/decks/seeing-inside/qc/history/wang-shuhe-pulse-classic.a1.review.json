@@ -1,0 +1,15 @@
+{
+  "slug": "wang-shuhe-pulse-classic",
+  "description": "A man with dark hair tied up, in a grey and charcoal layered robe, sits at a wooden table and presses two fingers onto the wrist of a pale arm reaching in from the left edge. A small cloth cushion sits under the wrist. To the right, a bundle of bamboo slips is unrolled and tied with cord, each slip covered in small brush marks that look like characters. The background is dark, with a carved wooden chair and cabinet. The painting fills the whole frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The bamboo slips on the table are covered in brush marks that look like Chinese characters. They are not legible, but they read as text-like writing, so the no_text check cannot be cleared with confidence. Consider repainting the slips as plain bamboo, or leaving them blank or out of focus. Otherwise the image matches the card: a physician taking a pulse with bamboo slips beside him, Jin-style robes, edge-to-edge painting with no frame."
+}

@@ -1,0 +1,199 @@
+{
+  "deck": "gone-forever",
+  "name": "Gone Forever",
+  "stage": "pr-open",
+  "created_at": "2026-10-21T04:19:36.677Z",
+  "updated_at": "2026-10-22T01:08:23.754Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-21T04:19:36.677Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-21T12:11:41.789Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-22T00:06:49.105Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-22T01:06:53.816Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-22T01:08:23.754Z"
+    }
+  ],
+  "slugs": {
+    "elephant-birds-vanish-madagascar": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7f3f0c002635e973048323727637c7a65331f1d43bc29705c4b08caf7e685b9f",
+      "updated_at": "2026-10-21T13:06:33.792Z"
+    },
+    "moa-extinct-new-zealand": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "44cf9ead49b91392d6167f78dc2e1a81457edaddef0675cdb8497ff7d4735313",
+      "updated_at": "2026-10-21T15:06:40.108Z"
+    },
+    "stellers-sea-cow-hunted-out": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b6da1ee3ae37dcf3e824c45601a901d47dd0793d64cd96d81e2d9c75e010be8a",
+      "updated_at": "2026-10-21T20:08:58.078Z"
+    },
+    "last-great-auks-killed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2f19ad7f4936897fb9633790f4deef97b6e4eced15d62d8bbd9570d1a9ab8ca1",
+      "updated_at": "2026-10-21T20:08:58.110Z"
+    },
+    "last-cape-lion-shot": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2963b1302161b9da3cd031e04c51524c086a828899e0bfdf7f9ad9bb3d035778",
+      "updated_at": "2026-10-21T20:08:58.141Z"
+    },
+    "tasmanian-emu-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d0f2ff3c18977351109f330e1927147480cba08046ed3a63048aaf604b370759",
+      "updated_at": "2026-10-21T20:08:58.171Z"
+    },
+    "falkland-islands-wolf-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7bd8ce742fc53c5ae6b471bf671de1721356ad233e6795255506462bd6a039d8",
+      "updated_at": "2026-10-21T22:07:17.678Z"
+    },
+    "stephens-island-wren-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "90edcbeaf3a3baa2b403b207dcebe6a862d1725844a4832a14967114caae1ec3",
+      "updated_at": "2026-10-21T20:08:58.201Z"
+    },
+    "rocky-mountain-locust-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1eb4febf05c072335a1cc18aa32624a8c465f371f18ce0742dc6d38991d898d5",
+      "updated_at": "2026-10-21T20:08:58.233Z"
+    },
+    "huia-last-seen": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4dc1bdba0429cb32c6a8b1b1083976c72f8cc5815ee355baf22e6a762ac696e6",
+      "updated_at": "2026-10-21T20:08:58.266Z"
+    },
+    "last-carolina-parakeet-dies": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7e78fa7b07989b3639e2faa65048471a9c11897aad402d2e8049f93c3ac55593",
+      "updated_at": "2026-10-21T20:08:58.297Z"
+    },
+    "last-wild-barbary-lion-shot": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "918d1d39d2daefce8ed3ca9b855ed97bfdb44b57db91089813022cf2cd0315c5",
+      "updated_at": "2026-10-21T20:08:58.329Z"
+    },
+    "last-heath-hen-booming-ben": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3126a550e83b49d5e599667243dd046338838ba76d80a98f1d9e9cce9ad94e69",
+      "updated_at": "2026-10-21T22:07:17.709Z"
+    },
+    "xerces-blue-butterfly-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2f02c39d2c1e8a8546c96f829d17f39f7fdcc99d9ac7fe469817f3d86f36c66f",
+      "updated_at": "2026-10-21T22:07:17.740Z"
+    },
+    "caribbean-monk-seal-last-sighted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a300666335067f2a5f24c4e06afb31dfccaef9c6097fd68f85fd71ffb0309d07",
+      "updated_at": "2026-10-21T22:07:17.770Z"
+    },
+    "caspian-tiger-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b5d9a636dcccca4822369dd2d283ffa624c1e274de472348fa8fc93f3e5146b1",
+      "updated_at": "2026-10-21T22:07:17.799Z"
+    },
+    "javan-tiger-last-recorded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "839cd376385f264c470c6709aabf4ced85f323fb37eb84ce7369382c288d694c",
+      "updated_at": "2026-10-21T22:07:17.829Z"
+    },
+    "dusky-seaside-sparrow-last-dies": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d2a9ce6b6432965f7d6e25f4ca4b8a4c105e527d60fa5a7d35a2f66200d0e13a",
+      "updated_at": "2026-10-21T22:07:17.859Z"
+    },
+    "golden-toad-last-seen": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "76d428c9b45736404633e8b960b58f45f7ba1597dbe4cc02fcd487d08ebf93d2",
+      "updated_at": "2026-10-21T22:07:17.889Z"
+    },
+    "celia-last-pyrenean-ibex-dies": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "491e084e783e7e99eeb465165c1a56b8940901cb4924384b3969c99b65bb4d86",
+      "updated_at": "2026-10-21T22:07:17.921Z"
+    },
+    "baiji-functionally-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d409b04c74fd0158b39982dfb7c1c77252bb5025d4356b65705fe364af593cde",
+      "updated_at": "2026-10-21T22:07:17.950Z"
+    },
+    "lonesome-george-dies": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "21f68c34cfa12df4d34b5544bd0c1806159a407cef5fa4fb702695969ea529ac",
+      "updated_at": "2026-10-22T00:06:49.042Z"
+    },
+    "ivory-billed-woodpecker-proposed-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1b109f120f2aa1c01e9d4b715a34604a616206f535eeffffd85a45c8c38f2e9e",
+      "updated_at": "2026-10-22T00:06:49.074Z"
+    },
+    "chinese-paddlefish-declared-extinct": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "035e10a04bce953cff537adb7c372fd63ebaa8ef677374a22b5021564c207f2f",
+      "updated_at": "2026-10-22T00:06:49.105Z"
+    }
+  }
+}

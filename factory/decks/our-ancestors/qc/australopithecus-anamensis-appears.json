@@ -1,0 +1,15 @@
+{
+  "slug": "australopithecus-anamensis-appears",
+  "description": "A dark-furred, upright-walking ape-like figure wades through shallow, rippling dark water at the edge of a dense, misty forest. Hanging vines and tangled trees fill the background, with a dim, overcast sky and a grey lake stretching to the left. The painting is edge to edge with no text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

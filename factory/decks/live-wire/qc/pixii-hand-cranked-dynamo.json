@@ -1,0 +1,15 @@
+{
+  "slug": "pixii-hand-cranked-dynamo",
+  "description": "A dark workshop scene. A wooden frame holds two copper-wire coil spools at the top and a large dark horseshoe magnet in the middle. A metal shaft with a crank handle runs down the centre, and a weathered hand grips the crank on the right. Copper wires hang from the coils. A small electric spark glows at a copper commutator at the base. Jars, tools and metal scraps are scattered in the shadowy background, and the painting fills the whole image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

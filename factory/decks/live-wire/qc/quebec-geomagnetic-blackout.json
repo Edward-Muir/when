@@ -1,0 +1,15 @@
+{
+  "slug": "quebec-geomagnetic-blackout",
+  "description": "A painted night scene. A large steel lattice transmission pylon, iced on its crossarms and insulators, stands in the left foreground with power lines running off it. Behind it a band of red and green aurora fills the sky. Below, a snowy conifer forest slopes down to a dark village of rooftops. No people, no visible text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

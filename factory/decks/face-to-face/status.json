@@ -1,0 +1,150 @@
+{
+  "deck": "face-to-face",
+  "name": "Face to Face",
+  "stage": "pr-open",
+  "created_at": "2026-10-31T10:16:48.007Z",
+  "updated_at": "2026-10-31T15:08:47.333Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-31T10:16:48.007Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-31T11:08:52.150Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-31T14:07:14.970Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-31T15:06:49.267Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-31T15:08:47.333Z"
+    }
+  ],
+  "slugs": {
+    "zhang-qian-western-mission": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4b612728d5ac1e850db426010c68bab02046ee879d2ce7f68ca0cf19524a7510",
+      "updated_at": "2026-10-31T12:07:23.064Z"
+    },
+    "cleopatra-meets-antony-tarsus": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f95b2aa943260a4f392784741583fd880d73f6ff6c17b8055065d1c103980756",
+      "updated_at": "2026-10-31T12:07:23.096Z"
+    },
+    "roman-embassy-han-court": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c1ce5064ef04111b870cdb7fff60317c87c7885ba800cad41db45f3283aa6f5e",
+      "updated_at": "2026-10-31T12:07:23.127Z"
+    },
+    "abul-abbas-elephant-charlemagne": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9e313075467ca202fb72729f5cb65986d7ce8b492314e3d7cabcb5d8f8edacf7",
+      "updated_at": "2026-10-31T12:07:23.158Z"
+    },
+    "ibn-fadlan-volga-embassy": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "454c8fffa303f59bb0d514ce983e8650632dc08146a537e61d6c8665a86e1679",
+      "updated_at": "2026-10-31T12:07:23.187Z"
+    },
+    "carpini-mission-great-khan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "204efa87cd743addeb04606354c27939c7e49117f79fc485ac381762e8bc1773",
+      "updated_at": "2026-10-31T12:07:23.221Z"
+    },
+    "rabban-sauma-embassy-europe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c5be9771b207ba2534874341ae3b718c36ffe96054e9dfb4427cb9f9ef90350e",
+      "updated_at": "2026-10-31T12:07:23.263Z"
+    },
+    "clavijo-embassy-timur": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "28f192aa49c0802987fc399617c335f1a8f369eb1a77e991ba86eef031056e99",
+      "updated_at": "2026-10-31T12:07:23.300Z"
+    },
+    "matteo-ricci-enters-beijing": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "02714283dee2d8d2c2daa188f82c83d66229f8c136fb656f2adfe6aec83e471d",
+      "updated_at": "2026-10-31T12:07:23.336Z"
+    },
+    "hasekura-embassy-rome": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7a1c22d19a425e8fb64018d10df765911d9efeffc0b5d329e95e973be6843350",
+      "updated_at": "2026-10-31T12:07:23.372Z"
+    },
+    "siamese-embassy-louis-xiv": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7f7440b1fbde459b57fe2212cb5d815438ad40f55d7d5caf1e9df37160aacd4d",
+      "updated_at": "2026-10-31T14:07:14.777Z"
+    },
+    "peter-great-grand-embassy": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cd008ba98e6cc5538f094b042ace261bba4a7f110f134c35d6104634d0026ea8",
+      "updated_at": "2026-10-31T14:07:14.808Z"
+    },
+    "iwakura-mission-west": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "45dd08ae961760c70f8af9e3bac437602162a394cc3b551a9a133163006a32fb",
+      "updated_at": "2026-10-31T14:07:14.839Z"
+    },
+    "bjorko-meeting-kaiser-tsar": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "474e68d85d0a12d1dc5e3abebba8ce2762a4b42a18968c922c52f2e0be291d53",
+      "updated_at": "2026-10-31T14:07:14.869Z"
+    },
+    "vienna-summit-kennedy-khrushchev": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3d3d0f3129954dcc2f05d05c953a0deef6ca75d15d7e14d1fc1231fce2021ca2",
+      "updated_at": "2026-10-31T14:07:14.899Z"
+    },
+    "sadat-visits-jerusalem": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7420dd1a6d400fcb1939b4bc0f1fca88fc4561a69ea01531d7ce04edec3e67f9",
+      "updated_at": "2026-10-31T14:07:14.934Z"
+    },
+    "reykjavik-summit-reagan-gorbachev": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0f9b2741449830c458c3dd662cb42787efdc8f1e25cc5c73d567bad5ba6be167",
+      "updated_at": "2026-10-31T14:07:14.970Z"
+    }
+  }
+}

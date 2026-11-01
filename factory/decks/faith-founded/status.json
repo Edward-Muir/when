@@ -1,0 +1,164 @@
+{
+  "deck": "faith-founded",
+  "name": "Faith Founded",
+  "stage": "pr-open",
+  "created_at": "2026-11-01T14:17:46.866Z",
+  "updated_at": "2026-11-01T19:08:55.005Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-01T14:17:46.866Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T15:08:59.159Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-01T18:07:42.022Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-01T19:07:00.766Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-01T19:08:55.005Z"
+    }
+  ],
+  "slugs": {
+    "pentecost-church-begins": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "335b8b2cf4293207b0059f95ab335cd115151c70ae74fa71b4c0510f286384f8",
+      "updated_at": "2026-11-01T16:07:36.131Z"
+    },
+    "mani-founds-manichaeism": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2af83a225fb344928905327c98c2df0d222585315bc772b4880128efcb74f1ec",
+      "updated_at": "2026-11-01T16:07:36.164Z"
+    },
+    "anan-founds-karaite-judaism": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e3832373c6469cfcd2343d3bd3bc8e8e816a7d184e6eb232b0c29b716bcaeb1f",
+      "updated_at": "2026-11-01T16:07:36.195Z"
+    },
+    "druze-faith-emerges": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e41abacff5a2c35f8fe6260ad52eb0c07d9e9b70ccef85e41335ea5e28510d99",
+      "updated_at": "2026-11-01T16:07:36.226Z"
+    },
+    "bruno-founds-carthusians": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b715e6d5b0ce2edda8e2fb85f28d399c926e32667f7f407c6acb78045a627240",
+      "updated_at": "2026-11-01T16:07:36.256Z"
+    },
+    "cistercians-founded-citeaux": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3f17a9cb6aecd30e61e872a817bb86b402e3ebffe1b4249d2997bc5a773ded9f",
+      "updated_at": "2026-11-01T16:07:36.298Z"
+    },
+    "knights-templar-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3d229ece5ef83760c04d1fea004d538dacd176cd3ed7e1f21b1ab94c6938326e",
+      "updated_at": "2026-11-01T16:07:36.338Z"
+    },
+    "peter-waldo-waldensians": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "46bd37a49c7b9cf9bed2fb623c78afb4dd1554b270db63683483d7ab13abef37",
+      "updated_at": "2026-11-01T16:07:36.373Z"
+    },
+    "dominic-founds-dominicans": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cc86360ad65c68e662820db85df02329cd5e55b23869f383feb6e7503b7089ec",
+      "updated_at": "2026-11-01T16:07:36.408Z"
+    },
+    "smyth-founds-first-baptists": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b02856487f862de04e046329af10bdfb8037d046e3dcde465457f1cc56fdc567",
+      "updated_at": "2026-11-01T16:07:36.443Z"
+    },
+    "ammann-founds-amish": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4e170765696eed9ed4a7edcf51fcb92bc9e01982f695998d33bd565019935e36",
+      "updated_at": "2026-11-01T18:07:41.746Z"
+    },
+    "wesley-heart-strangely-warmed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "91dc644a862216eafa082eef40f1c88737e831568b94932c091589687910fe74",
+      "updated_at": "2026-11-01T18:07:41.780Z"
+    },
+    "ann-lee-shakers-america": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "030b04171a4491bd63f519ad038738b93451c4c30167e6751a30c4505fa901bb",
+      "updated_at": "2026-11-01T18:07:41.811Z"
+    },
+    "smith-founds-church-of-christ": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c2410fdc027591d9ae72f20980bf03882f4cc7b7caa73917d9530282019e57b6",
+      "updated_at": "2026-11-01T18:07:41.842Z"
+    },
+    "eddy-charters-christian-science": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c5f6bda005516fa7afbb5bc6bedb0d017e4439e4a5a08275a28cba166f9af0b8",
+      "updated_at": "2026-11-01T18:07:41.874Z"
+    },
+    "azusa-street-revival": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "28599838011f48a9658f10a9c5bfcc6f015d8cebbb84e93c377441a3f7b5ceff",
+      "updated_at": "2026-11-01T18:07:41.907Z"
+    },
+    "rastafari-begins-coronation": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "89e0e5610ce0e5822309f8e6e25a450b97d4092b8ac181ac693f8a172f035346",
+      "updated_at": "2026-11-01T18:07:41.950Z"
+    },
+    "missionaries-of-charity-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "92bcbf9566014ad002f9a571266b8bd480987536af71c3cb6fce9596f206485b",
+      "updated_at": "2026-11-01T18:07:41.987Z"
+    },
+    "lavey-founds-church-of-satan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e45ef9286bc72f8e90e8e7f2f461108481c7110a5c1227754d0ef6a7bbd2eabc",
+      "updated_at": "2026-11-01T18:07:42.022Z"
+    }
+  }
+}

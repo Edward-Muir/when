@@ -1,0 +1,15 @@
+{
+  "slug": "rabban-sauma-embassy-europe",
+  "description": "An oil-style painting of a bearded man in a dark grey hooded robe with a leather belt and pouch, bowing forward and holding a folded document. He faces a seated figure in white and gold papal vestments wearing a jewelled tiara, with red-robed cardinals standing around in a stone arched hall, and a bearded man in a pale robe behind him. The scene is edge to edge with no visible text, border or signature. Nothing is gory or nude.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

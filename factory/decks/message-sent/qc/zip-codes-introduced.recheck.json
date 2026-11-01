@@ -1,0 +1,15 @@
+{
+  "slug": "zip-codes-introduced",
+  "description": "A dark oil painting of a mid-century mail sorting hall. A man in a work shirt sits at a sorting console reading an envelope, with conveyor belts, pigeonhole shelves, mail sacks and a cart around him and other workers in the haze behind. Envelopes carry only faint illegible squiggles, with no readable words, numbers or logos. The painting fills the frame edge to edge with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "pilgrimage-of-grace-rising",
+  "description": "A large procession of bearded men and women in dark, worn Tudor-style clothing and hoods marches along muddy ground under a stormy grey sky. At the front a man holds a dark red banner with a gold chalice, a red heart, four pale hands and the letters IHC painted on it. A man in a black hooded habit and a clergyman in black walk among them. Behind them on a rise stands a large Gothic stone abbey or church with a square tower, bare trees and hills. The painting fills the whole image edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The banner carries the painted letters IHC, which is text in the picture. Repaint the banner without lettering, or with the device as an abstract emblem only."
+}

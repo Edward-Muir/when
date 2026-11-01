@@ -1,0 +1,41 @@
+{
+  "id": "sell-sell-sell",
+  "name": "Sell, Sell, Sell",
+  "scope": "Yes if it is a famous advertisement, slogan or brand mascot",
+  "boundary": "Sell, Sell, Sell: the pitch itself; shops go to Retail Therapy, the founding of companies to Still Trading, broadcast milestones to Tune In.",
+  "neighbours": [
+    "retail-therapy",
+    "still-trading",
+    "tune-in"
+  ],
+  "grid": {
+    "categories": [
+      "commerce",
+      "media"
+    ],
+    "eras": [
+      "worldWars",
+      "coldWar",
+      "modern"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Caxton prints one of the first advertisements (1477)",
+    "Michelin Man debuts (1898)",
+    "Coca-Cola's Santa Claus (1931)",
+    "Bulova's first TV commercial (1941)",
+    "De Beers 'A Diamond Is Forever' (1947)",
+    "Volkswagen's 'Think Small' (1959)",
+    "Apple's '1984' Super Bowl ad (1984)",
+    "Nike 'Just Do It' (1988)",
+    "Got Milk? (1993)",
+    "Old Spice 'The Man Your Man Could Smell Like' (2010)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

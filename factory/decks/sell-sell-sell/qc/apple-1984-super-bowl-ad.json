@@ -1,0 +1,15 @@
+{
+  "slug": "apple-1984-super-bowl-ad",
+  "description": "A woman in a white tank top and red shorts swings a sledgehammer in a dim, smoky industrial hall. A large projected screen on the left shows a stern man's face. On the right, rows of shaven-headed people in grey uniforms sit facing the screen. The painting fills the frame edge to edge, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

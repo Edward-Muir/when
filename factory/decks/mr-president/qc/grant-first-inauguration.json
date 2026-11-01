@@ -1,0 +1,15 @@
+{
+  "slug": "grant-first-inauguration",
+  "description": "A painting of a bearded man in a dark suit with one hand raised on a raised platform before a columned classical building, with a crowd of dark-uniformed men holding rifles and flags in the foreground. Stormy grey sky at upper left, several American flags, and a second building on the left. Dark, muted oil-painting palette. No visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

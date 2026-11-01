@@ -1,0 +1,15 @@
+{
+  "slug": "bolivar-named-el-libertador",
+  "description": "A man in a black military coat with gold epaulettes and gold braid rides a white horse through a sunlit colonial street, raising one hand in greeting. Balconies overhead hold people throwing flowers, and a crowd below holds candles and flowers. A soldier in a bicorne hat sits on a horse behind him, and the painting runs edge to edge with no visible text, frame, or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

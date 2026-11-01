@@ -1,0 +1,2780 @@
+[
+  {
+    "beat": 0,
+    "year": -27,
+    "title": "Augustus Becomes First Emperor",
+    "candidates": [
+      {
+        "name": "roman-empire-founded",
+        "friendly_name": "Roman Empire Established",
+        "year": -27,
+        "description": "Augustus became the first Roman Emperor, ending the Republic.",
+        "score": 4,
+        "shared": [
+          "augustus",
+          "emperor",
+          "ending",
+          "republic"
+        ]
+      },
+      {
+        "name": "livy-ab-urbe-condita",
+        "friendly_name": "Livy's Ab Urbe Condita Written",
+        "year": -27,
+        "description": "Roman historian Livy began his monumental 142-volume history of Rome from its founding.",
+        "score": 1,
+        "shared": [
+          "founding"
+        ]
+      },
+      {
+        "name": "augustan-age-begins",
+        "friendly_name": "Augustan Age Begins",
+        "year": -27,
+        "description": "Augustus's reign inaugurated a golden age of Latin literature with Virgil, Horace, and Ovid.",
+        "score": 1,
+        "shared": [
+          "augustus"
+        ]
+      },
+      {
+        "name": "pax-romana",
+        "friendly_name": "Pax Romana Begins",
+        "year": -27,
+        "description": "Augustus established a 200-year period of relative peace across the Roman Empire.",
+        "score": 1,
+        "shared": [
+          "augustus"
+        ]
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 1,
+        "shared": [
+          "system"
+        ]
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 14,
+    "title": "Tiberius Succeeds Augustus",
+    "candidates": [
+      {
+        "name": "death-of-augustus",
+        "friendly_name": "Death of Augustus",
+        "year": 14,
+        "description": "Rome's first emperor died after 40 years of rule, establishing the model for succession.",
+        "score": 4,
+        "shared": [
+          "augustus",
+          "emperor",
+          "after",
+          "death"
+        ]
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 37,
+    "title": "Caligula Becomes Emperor",
+    "candidates": [
+      {
+        "name": "reign-of-caligula",
+        "friendly_name": "Reign of Caligula",
+        "year": 37,
+        "description": "Caligula became Rome's third emperor, later infamous for cruelty and erratic behavior.",
+        "score": 4,
+        "shared": [
+          "caligula",
+          "emperor",
+          "reign",
+          "cruelty"
+        ]
+      },
+      {
+        "name": "birth-nero",
+        "friendly_name": "Birth of Nero",
+        "year": 37,
+        "description": "The Roman emperor infamous for tyranny, the Great Fire of Rome, and persecuting Christians.",
+        "score": 2,
+        "shared": [
+          "emperor",
+          "great"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 41,
+    "title": "Claudius Is Raised by the Guard",
+    "candidates": [
+      {
+        "name": "caligula-assassinated",
+        "friendly_name": "Caligula Assassinated",
+        "year": 41,
+        "description": "Officers of the Praetorian Guard killed the Roman emperor in his palace and raised Claudius in his place.",
+        "score": 5,
+        "shared": [
+          "claudius",
+          "raised",
+          "guard",
+          "praetorian",
+          "emperor"
+        ]
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 54,
+    "title": "Nero Becomes Emperor",
+    "candidates": [
+      {
+        "name": "nero-becomes-emperor",
+        "friendly_name": "Nero Becomes Emperor",
+        "year": 54,
+        "description": "The young Nero became emperor, beginning a reign that would end in tyranny and suicide.",
+        "score": 3,
+        "shared": [
+          "nero",
+          "becomes",
+          "emperor"
+        ]
+      },
+      {
+        "name": "birth-trajan",
+        "friendly_name": "Birth of Trajan",
+        "year": 53,
+        "description": "The Roman emperor under whom the empire reached its greatest extent, celebrated for public works and conquests.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "roman-conquest-of-britain",
+        "friendly_name": "Roman Conquest of Britain",
+        "year": 43,
+        "year_end": 84,
+        "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "nabataean-petra-city",
+        "friendly_name": "Petra Built as Nabataean Capital",
+        "year": -300,
+        "year_end": 106,
+        "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 69,
+    "title": "Vespasian Ends the Four Emperors",
+    "candidates": [
+      {
+        "name": "year-four-emperors",
+        "friendly_name": "Year of the Four Emperors",
+        "year": 69,
+        "description": "Civil war tore Rome apart as four men claimed the throne after Nero's death.",
+        "score": 7,
+        "shared": [
+          "four",
+          "emperors",
+          "after",
+          "year",
+          "civil",
+          "war",
+          "throne"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 1,
+        "shared": [
+          "emperors"
+        ]
+      },
+      {
+        "name": "roman-conquest-of-britain",
+        "friendly_name": "Roman Conquest of Britain",
+        "year": 43,
+        "year_end": 84,
+        "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+        "score": 1,
+        "shared": [
+          "four"
+        ]
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "siege-of-jerusalem-70ce",
+        "friendly_name": "Siege of Jerusalem by Titus",
+        "year": 70,
+        "description": "Roman forces under Titus destroyed the Second Temple, ending the Great Jewish Revolt.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 79,
+    "title": "Titus Becomes Emperor",
+    "candidates": [
+      {
+        "name": "colosseum-rome",
+        "friendly_name": "Roman Colosseum",
+        "year": 80,
+        "description": "The Colosseum was completed under Emperor Titus, holding an estimated 50,000 spectators.",
+        "score": 2,
+        "shared": [
+          "titus",
+          "emperor"
+        ]
+      },
+      {
+        "name": "colosseum-inaugural-games-80-ce",
+        "friendly_name": "Colosseum's Inaugural Games",
+        "year": 80,
+        "description": "Emperor Titus opened the Colosseum with 100 days of gladiatorial fights, wild-beast hunts, and staged spectacles in Rome.",
+        "score": 2,
+        "shared": [
+          "titus",
+          "emperor"
+        ]
+      },
+      {
+        "name": "vesuvius-eruption",
+        "friendly_name": "Mount Vesuvius Erupts",
+        "year": 79,
+        "description": "The volcano buried the Roman cities of Pompeii and Herculaneum in ash.",
+        "score": 1,
+        "shared": [
+          "eruption"
+        ]
+      },
+      {
+        "name": "roman-conquest-of-britain",
+        "friendly_name": "Roman Conquest of Britain",
+        "year": 43,
+        "year_end": 84,
+        "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "nabataean-petra-city",
+        "friendly_name": "Petra Built as Nabataean Capital",
+        "year": -300,
+        "year_end": 106,
+        "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 81,
+    "title": "Domitian Becomes Emperor",
+    "candidates": [
+      {
+        "name": "roman-conquest-of-britain",
+        "friendly_name": "Roman Conquest of Britain",
+        "year": 43,
+        "year_end": 84,
+        "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+        "score": 2,
+        "shared": [
+          "emperor",
+          "last"
+        ]
+      },
+      {
+        "name": "colosseum-rome",
+        "friendly_name": "Roman Colosseum",
+        "year": 80,
+        "description": "The Colosseum was completed under Emperor Titus, holding an estimated 50,000 spectators.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "colosseum-inaugural-games-80-ce",
+        "friendly_name": "Colosseum's Inaugural Games",
+        "year": 80,
+        "description": "Emperor Titus opened the Colosseum with 100 days of gladiatorial fights, wild-beast hunts, and staged spectacles in Rome.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 96,
+    "title": "Nerva Starts the Adoptive Emperors",
+    "candidates": [
+      {
+        "name": "five-good-emperors-era-begins",
+        "friendly_name": "Five Good Emperors Era Begins",
+        "year": 96,
+        "description": "Nerva's accession began Rome's most stable period, with emperors chosen by merit rather than heredity for nearly a century.",
+        "score": 3,
+        "shared": [
+          "nerva",
+          "emperors",
+          "chosen"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 1,
+        "shared": [
+          "emperors"
+        ]
+      },
+      {
+        "name": "book-of-revelation",
+        "friendly_name": "Book of Revelation Written",
+        "year": 95,
+        "description": "John of Patmos wrote the apocalyptic text that became Christianity's final biblical book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 98,
+    "title": "Trajan Becomes Emperor",
+    "candidates": [
+      {
+        "name": "trajan-becomes-emperor",
+        "friendly_name": "Trajan Becomes Emperor",
+        "year": 98,
+        "description": "Trajan became emperor, expanding Rome to its greatest territorial extent.",
+        "score": 5,
+        "shared": [
+          "trajan",
+          "becomes",
+          "emperor",
+          "greatest",
+          "extent"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "concept-of-zero",
+        "friendly_name": "Concept of Zero",
+        "year": -500,
+        "year_end": 628,
+        "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 117,
+    "title": "Hadrian Becomes Emperor",
+    "candidates": [
+      {
+        "name": "hadrian-becomes-emperor",
+        "friendly_name": "Hadrian Becomes Emperor",
+        "year": 117,
+        "description": "Hadrian succeeded Trajan, consolidating the empire and building his famous wall in Britain.",
+        "score": 4,
+        "shared": [
+          "hadrian",
+          "becomes",
+          "emperor",
+          "consolidating"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 138,
+    "title": "Antoninus Pius Becomes Emperor",
+    "candidates": [
+      {
+        "name": "kushana-buddhism",
+        "friendly_name": "Kushan Empire Spreads Buddhism",
+        "year": 127,
+        "year_end": 150,
+        "description": "Under Kanishka, the Kushan Empire promoted Buddhism and facilitated its spread along the Silk Road.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 161,
+    "title": "Marcus Aurelius Becomes Emperor",
+    "candidates": [
+      {
+        "name": "marcus-aurelius-emperor",
+        "friendly_name": "Marcus Aurelius Becomes Emperor",
+        "year": 161,
+        "description": "The philosopher-emperor Marcus Aurelius began his reign, the last of the Five Good Emperors.",
+        "score": 5,
+        "shared": [
+          "marcus",
+          "aurelius",
+          "becomes",
+          "emperor",
+          "philosopher"
+        ]
+      },
+      {
+        "name": "gaius-institutes-written",
+        "friendly_name": "Gaius Writes the Institutes",
+        "year": 161,
+        "description": "The jurist Gaius produced an influential Roman legal textbook used to train students for centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 180,
+    "title": "Commodus Becomes Emperor",
+    "candidates": [
+      {
+        "name": "end-of-pax-romana",
+        "friendly_name": "End of Pax Romana",
+        "year": 180,
+        "description": "The death of Marcus Aurelius ended two centuries of relative peace and prosperity, beginning Rome's slow decline.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hatepe-eruption",
+        "friendly_name": "Hatepe Eruption",
+        "year": 180,
+        "description": "The largest volcanic eruption in 5,000 years occurred in New Zealand.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "antonine-plague",
+        "friendly_name": "Antonine Plague",
+        "year": 165,
+        "year_end": 180,
+        "description": "A pandemic killed millions across the Roman Empire over fifteen years.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 193,
+    "title": "Septimius Severus Seizes the Throne",
+    "candidates": [
+      {
+        "name": "year-five-emperors",
+        "friendly_name": "Year of the Five Emperors",
+        "year": 193,
+        "description": "Five claimants fought for the Roman throne after Commodus was assassinated.",
+        "score": 2,
+        "shared": [
+          "throne",
+          "year"
+        ]
+      },
+      {
+        "name": "yellow-turban-rebellion",
+        "friendly_name": "Yellow Turban Rebellion",
+        "year": 184,
+        "year_end": 205,
+        "description": "Peasant uprising in China marked the beginning of the Han Dynasty's collapse.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "commodus-assassinated",
+        "friendly_name": "Commodus Assassinated",
+        "year": 192,
+        "description": "Members of his own household killed the Roman emperor, ending the Antonine line and opening a scramble for power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 211,
+    "title": "Caracalla Rules Alone",
+    "candidates": [
+      {
+        "name": "edict-caracalla",
+        "friendly_name": "Edict of Caracalla",
+        "year": 212,
+        "description": "Roman citizenship was extended to all free inhabitants of the empire.",
+        "score": 1,
+        "shared": [
+          "caracalla"
+        ]
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 1,
+        "shared": [
+          "rules"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 218,
+    "title": "Elagabalus Becomes Emperor",
+    "candidates": [
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 1,
+        "shared": [
+          "eastern"
+        ]
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 235,
+    "title": "Maximinus Thrax Begins the Crisis",
+    "candidates": [
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 1,
+        "shared": [
+          "emperors"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 244,
+    "title": "Philip the Arab Becomes Emperor",
+    "candidates": [
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 2,
+        "shared": [
+          "arab",
+          "later"
+        ]
+      },
+      {
+        "name": "concept-of-zero",
+        "friendly_name": "Concept of Zero",
+        "year": -500,
+        "year_end": 628,
+        "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 249,
+    "title": "Decius Becomes Emperor",
+    "candidates": [
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "concept-of-zero",
+        "friendly_name": "Concept of Zero",
+        "year": -500,
+        "year_end": 628,
+        "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "cyprian-bishop-carthage",
+        "friendly_name": "Cyprian, Bishop of Carthage",
+        "year": 249,
+        "description": "Cyprian became Bishop of Carthage, shaping early Christian theology on church unity and rebaptism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "plague-of-cyprian",
+        "friendly_name": "Plague of Cyprian",
+        "year": 249,
+        "year_end": 262,
+        "description": "A deadly pandemic swept through the Roman Empire for nearly twenty years.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maya-classical-period",
+        "friendly_name": "Maya Classical Period Flourishes",
+        "year": 250,
+        "year_end": 900,
+        "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 270,
+    "title": "Aurelian Becomes Emperor",
+    "candidates": [
+      {
+        "name": "aksumite-coinage",
+        "friendly_name": "Aksumite Empire Issues Own Coinage",
+        "year": 270,
+        "description": "King Endubis of Aksum issued the first known African coinage, minted in gold, silver, and bronze.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "maya-classical-period",
+        "friendly_name": "Maya Classical Period Flourishes",
+        "year": 250,
+        "year_end": 900,
+        "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 284,
+    "title": "Diocletian Becomes Emperor",
+    "candidates": [
+      {
+        "name": "maya-classical-period",
+        "friendly_name": "Maya Classical Period Flourishes",
+        "year": 250,
+        "year_end": 900,
+        "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "codex-replaces-scroll",
+        "friendly_name": "Codex Replaces the Scroll",
+        "year": 100,
+        "year_end": 600,
+        "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 306,
+    "title": "Constantine Is Hailed Emperor",
+    "candidates": [
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "stirrup-invented",
+        "friendly_name": "Stirrup Invented",
+        "year": 302,
+        "year_end": 415,
+        "description": "Riders in East Asia developed the stirrup, giving mounted warriors a stable platform that transformed cavalry warfare.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "camel-adoption-sahara",
+        "friendly_name": "Camel Adoption Across Sahara",
+        "year": 300,
+        "year_end": 800,
+        "description": "Widespread camel adoption transformed Saharan trade, enabling trans-desert commerce in gold, salt, and slaves.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lakhmid-kingdom",
+        "friendly_name": "Lakhmid Kingdom",
+        "year": 293,
+        "year_end": 602,
+        "description": "The Lakhmid Kingdom served as a Sassanid client state in southern Iraq, buffering Persia from Arabian tribes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maya-classical-period",
+        "friendly_name": "Maya Classical Period Flourishes",
+        "year": 250,
+        "year_end": 900,
+        "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 361,
+    "title": "Julian the Apostate Takes Power",
+    "candidates": [
+      {
+        "name": "julian-pagan-revival",
+        "friendly_name": "Julian Attempts Pagan Revival",
+        "year": 360,
+        "description": "Emperor Julian the Apostate tried to restore traditional Roman religion and reverse Christianity's rise.",
+        "score": 6,
+        "shared": [
+          "julian",
+          "apostate",
+          "emperor",
+          "restore",
+          "pagan",
+          "christianity"
+        ]
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 1,
+        "shared": [
+          "place"
+        ]
+      },
+      {
+        "name": "goguryeo-murals-tombs",
+        "friendly_name": "Goguryeo Tomb Murals",
+        "year": 357,
+        "year_end": 668,
+        "description": "The Korean Goguryeo kingdom produced elaborate painted tomb murals depicting daily life and mythology.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gupta-mathematics",
+        "friendly_name": "Gupta Mathematics Flourishes",
+        "year": 335,
+        "year_end": 455,
+        "description": "The Gupta Empire's golden age produced advances in mathematics including the decimal system and early trigonometry.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stirrup-invented",
+        "friendly_name": "Stirrup Invented",
+        "year": 302,
+        "year_end": 415,
+        "description": "Riders in East Asia developed the stirrup, giving mounted warriors a stable platform that transformed cavalry warfare.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "camel-adoption-sahara",
+        "friendly_name": "Camel Adoption Across Sahara",
+        "year": 300,
+        "year_end": 800,
+        "description": "Widespread camel adoption transformed Saharan trade, enabling trans-desert commerce in gold, salt, and slaves.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 379,
+    "title": "Theodosius I Becomes Emperor",
+    "candidates": [
+      {
+        "name": "theodosius-christianity-official",
+        "friendly_name": "Christianity Made Official",
+        "year": 380,
+        "description": "Emperor Theodosius declared Nicene Christianity the official religion of the Roman Empire.",
+        "score": 3,
+        "shared": [
+          "theodosius",
+          "emperor",
+          "empire"
+        ]
+      },
+      {
+        "name": "battle-adrianople",
+        "friendly_name": "Battle of Adrianople",
+        "year": 378,
+        "description": "Visigoths defeated Rome and killed Emperor Valens, signaling Rome's decline.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "chandragupta-ii-vikramaditya",
+        "friendly_name": "Chandragupta II Vikramaditya",
+        "year": 380,
+        "year_end": 415,
+        "description": "Chandragupta II expanded the Gupta Empire to its greatest extent, presiding over India's classical golden age.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "germanic-migration-period",
+        "friendly_name": "Germanic Migration Period",
+        "year": 375,
+        "year_end": 568,
+        "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "gupta-mathematics",
+        "friendly_name": "Gupta Mathematics Flourishes",
+        "year": 335,
+        "year_end": 455,
+        "description": "The Gupta Empire's golden age produced advances in mathematics including the decimal system and early trigonometry.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "stirrup-invented",
+        "friendly_name": "Stirrup Invented",
+        "year": 302,
+        "year_end": 415,
+        "description": "Riders in East Asia developed the stirrup, giving mounted warriors a stable platform that transformed cavalry warfare.",
+        "score": 1,
+        "shared": [
+          "east"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 408,
+    "title": "Theodosius II Becomes Emperor",
+    "candidates": [
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 1,
+        "shared": [
+          "eastern"
+        ]
+      },
+      {
+        "name": "concept-of-zero",
+        "friendly_name": "Concept of Zero",
+        "year": -500,
+        "year_end": 628,
+        "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "zoroastrian-avesta",
+        "friendly_name": "Zoroastrian Avesta Codified",
+        "year": 400,
+        "year_end": 600,
+        "description": "The Sassanid Empire compiled Zoroastrian sacred texts into the written Avesta canon.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 475,
+    "title": "Romulus Augustulus Becomes Emperor",
+    "candidates": [
+      {
+        "name": "rome-falls",
+        "friendly_name": "Fall of Western Roman Empire",
+        "year": 476,
+        "description": "The last Roman emperor was deposed, ending ancient Rome.",
+        "score": 3,
+        "shared": [
+          "emperor",
+          "western",
+          "last"
+        ]
+      },
+      {
+        "name": "turfan-oasis-city",
+        "friendly_name": "Gaochang Kingdom at Turfan",
+        "year": 460,
+        "year_end": 640,
+        "description": "The Gaochang kingdom ruled the Turfan oasis, growing rich taxing Silk Road caravans between China and Sogdiana.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anglo-saxons-settle-britain",
+        "friendly_name": "Anglo-Saxons Settle Britain",
+        "year": 450,
+        "year_end": 600,
+        "description": "Germanic Angles, Saxons, and Jutes migrated to Britain, founding the kingdoms of early England.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anglo-saxon-migration",
+        "friendly_name": "Anglo-Saxon Migration to Britain",
+        "year": 449,
+        "year_end": 600,
+        "description": "Germanic Angles, Saxons, and Jutes migrated to post-Roman Britain, gradually displacing the native Britons.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nalanda-university",
+        "friendly_name": "Nalanda University Flourishes",
+        "year": 427,
+        "year_end": 1200,
+        "description": "Nalanda in Bihar, India became one of the world's first residential universities, attracting scholars across Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "northern-southern-dynasties",
+        "friendly_name": "Northern & Southern Dynasties",
+        "year": 420,
+        "year_end": 589,
+        "description": "China split into rival northern and southern courts, a period of political fragmentation and cultural exchange.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 527,
+    "title": "Justinian Becomes Emperor",
+    "candidates": [
+      {
+        "name": "justinian-becomes-emperor",
+        "friendly_name": "Justinian Becomes Emperor",
+        "year": 527,
+        "description": "Justinian I ascended the Byzantine throne and launched sweeping legal reform alongside campaigns to reclaim lost Roman territory.",
+        "score": 6,
+        "shared": [
+          "justinian",
+          "becomes",
+          "emperor",
+          "roman",
+          "throne",
+          "alongside"
+        ]
+      },
+      {
+        "name": "anglo-saxon-migration",
+        "friendly_name": "Anglo-Saxon Migration to Britain",
+        "year": 449,
+        "year_end": 600,
+        "description": "Germanic Angles, Saxons, and Jutes migrated to post-Roman Britain, gradually displacing the native Britons.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "germanic-migration-period",
+        "friendly_name": "Germanic Migration Period",
+        "year": 375,
+        "year_end": 568,
+        "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "antioch-earthquake-526",
+        "friendly_name": "Antioch Earthquake",
+        "year": 526,
+        "description": "A massive earthquake killed 250,000 in the Byzantine city of Antioch.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "horse-collar-technology",
+        "friendly_name": "Horse Collar",
+        "year": 477,
+        "year_end": 1200,
+        "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "turfan-oasis-city",
+        "friendly_name": "Gaochang Kingdom at Turfan",
+        "year": 460,
+        "year_end": 640,
+        "description": "The Gaochang kingdom ruled the Turfan oasis, growing rich taxing Silk Road caravans between China and Sogdiana.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 610,
+    "title": "Heraclius Becomes Emperor",
+    "candidates": [
+      {
+        "name": "chosroes-ii-persia",
+        "friendly_name": "Chosroes II Reigns Over Persia",
+        "year": 590,
+        "year_end": 628,
+        "description": "Khosrow II expanded the Sassanid Empire to its greatest extent before devastating wars with Byzantium.",
+        "score": 2,
+        "shared": [
+          "empire",
+          "persia"
+        ]
+      },
+      {
+        "name": "lantern-festival-sui",
+        "friendly_name": "Lantern Festival Lights Luoyang",
+        "year": 610,
+        "description": "Emperor Yang staged vast lantern displays in the Sui capital, fixing the festival of lights in Chinese custom.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "harsha-empire",
+        "friendly_name": "Harsha's Empire in North India",
+        "year": 606,
+        "year_end": 647,
+        "description": "King Harsha united much of northern India, ruling from Kannauj and hosting the Chinese pilgrim Xuanzang.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "muhammad-revelation",
+        "friendly_name": "Muhammad Receives First Revelation",
+        "year": 610,
+        "description": "The Prophet Muhammad received the first verses of the Quran, founding Islam.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "grand-canal-china",
+        "friendly_name": "Grand Canal of China Extended",
+        "year": 609,
+        "description": "The Sui Dynasty completed major extensions to the world's longest canal.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 717,
+    "title": "Leo III Becomes Emperor",
+    "candidates": [
+      {
+        "name": "siege-of-constantinople-717",
+        "friendly_name": "Siege of Constantinople",
+        "year": 717,
+        "description": "Arab forces failed to capture the Byzantine capital after a year-long siege.",
+        "score": 2,
+        "shared": [
+          "arab",
+          "capital"
+        ]
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 2,
+        "shared": [
+          "arab",
+          "later"
+        ]
+      },
+      {
+        "name": "mon-kingdom",
+        "friendly_name": "Mon Kingdom in Burma",
+        "year": 700,
+        "year_end": 1057,
+        "description": "Mon kingdoms in lower Burma established Theravada Buddhist culture that later influenced Burmese civilization.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "ellora-caves",
+        "friendly_name": "Ellora Caves Construction",
+        "year": 650,
+        "year_end": 1000,
+        "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "tang-poetry-golden-age",
+        "friendly_name": "Tang Dynasty Poetry Golden Age",
+        "year": 713,
+        "year_end": 765,
+        "description": "Tang China's golden age of poetry produced masters like Li Bai and Du Fu, still revered today.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 797,
+    "title": "Irene Rules Alone as Emperor",
+    "candidates": [
+      {
+        "name": "byzantine-image-dispute",
+        "friendly_name": "Byzantine Iconoclasm Period",
+        "year": 726,
+        "year_end": 842,
+        "description": "Emperor Leo III banned religious icons, sparking a century-long crisis in the Byzantine Empire.",
+        "score": 2,
+        "shared": [
+          "emperor",
+          "byzantine"
+        ]
+      },
+      {
+        "name": "first-embassy",
+        "friendly_name": "Charlemagne Embassy",
+        "year": 797,
+        "description": "Charlemagne sent an embassy to Abbasid caliph Harun al-Rashid, establishing diplomatic ties between Europe and Baghdad.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "japanese-kimono-emerges",
+        "friendly_name": "The Kimono Emerges in Japan",
+        "year": 794,
+        "year_end": 1185,
+        "description": "During the Heian period the straight-cut kimono took shape, becoming Japan's enduring traditional garment.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "java-temple-sculpture",
+        "friendly_name": "Javanese Temple Sculpture",
+        "year": 780,
+        "year_end": 930,
+        "description": "Javanese artisans carved elaborate reliefs at Borobudur and Prambanan, blending Hindu and Buddhist art.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "charlemagne-saxon-wars",
+        "friendly_name": "Charlemagne Conquers Saxony",
+        "year": 772,
+        "year_end": 804,
+        "description": "Charlemagne waged a brutal 30-year campaign to conquer and Christianize the pagan Saxons.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moldboard-plow-adoption",
+        "friendly_name": "Moldboard Plow Adopted",
+        "year": 750,
+        "year_end": 830,
+        "description": "A plow fitted with a moldboard flipped each furrow slice over instead of scratching the ground, opening wetter and heavier land.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 867,
+    "title": "Basil I Founds a Dynasty",
+    "candidates": [
+      {
+        "name": "macedonian-renaissance-byzant",
+        "friendly_name": "Macedonian Renaissance",
+        "year": 867,
+        "year_end": 1056,
+        "description": "The Macedonian dynasty oversaw a revival of classical learning and art in Constantinople spanning the 9th-11th centuries.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "playing-cards-tang-china",
+        "friendly_name": "Playing Cards in Tang China",
+        "year": 868,
+        "description": "China developed the earliest playing cards during the Tang dynasty, spreading the games westward over centuries.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "karakhanid-dynasty",
+        "friendly_name": "Karakhanid Dynasty Rules",
+        "year": 840,
+        "year_end": 1212,
+        "description": "The Karakhanid Khanate, the first Turkic dynasty to convert to Islam, controlled Transoxiana and the Tarim Basin.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "bukhara-trading-city",
+        "friendly_name": "Bukhara Trading Center",
+        "year": 800,
+        "year_end": 999,
+        "description": "Bukhara grew into a major Silk Road trading and scholarly center under the Samanid dynasty in Central Asia.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "diamond-sutra-printed",
+        "friendly_name": "Diamond Sutra Printed",
+        "year": 868,
+        "description": "A Chinese Buddhist scroll became the earliest dated printed book, made with carved woodblocks.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-heathen-army",
+        "friendly_name": "Great Heathen Army Invades England",
+        "year": 865,
+        "year_end": 878,
+        "description": "A massive Viking force invaded England, conquering most Anglo-Saxon kingdoms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 913,
+    "title": "Constantine VII Becomes Emperor",
+    "candidates": [
+      {
+        "name": "bukhara-trading-city",
+        "friendly_name": "Bukhara Trading Center",
+        "year": 800,
+        "year_end": 999,
+        "description": "Bukhara grew into a major Silk Road trading and scholarly center under the Samanid dynasty in Central Asia.",
+        "score": 2,
+        "shared": [
+          "scholarly",
+          "under"
+        ]
+      },
+      {
+        "name": "bukhara-samanid-scholars",
+        "friendly_name": "Bukhara Scholarship Peak",
+        "year": 892,
+        "year_end": 999,
+        "description": "Under the Samanid dynasty, Bukhara became a leading center of Persian and Islamic scholarship, nurturing scholars like Ibn Sina.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "mon-kingdom",
+        "friendly_name": "Mon Kingdom in Burma",
+        "year": 700,
+        "year_end": 1057,
+        "description": "Mon kingdoms in lower Burma established Theravada Buddhist culture that later influenced Burmese civilization.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "inuit-thule-culture",
+        "friendly_name": "Thule Culture Inuit Expansion",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "marquesas-settlement-east-polynesia",
+        "friendly_name": "Marquesas Islands Settled",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 963,
+    "title": "Nikephoros II Takes the Throne",
+    "candidates": [
+      {
+        "name": "holy-roman-empire",
+        "friendly_name": "Holy Roman Empire Founded",
+        "year": 962,
+        "description": "Otto I was crowned, establishing the Holy Roman Empire in central Europe.",
+        "score": 2,
+        "shared": [
+          "crowned",
+          "empire"
+        ]
+      },
+      {
+        "name": "marquesas-settlement-east-polynesia",
+        "friendly_name": "Marquesas Islands Settled",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
+        "score": 1,
+        "shared": [
+          "east"
+        ]
+      },
+      {
+        "name": "khmer-baray-hydraulics",
+        "friendly_name": "Khmer Baray Reservoirs",
+        "year": 900,
+        "year_end": 1066,
+        "description": "The Khmer Empire built massive barays (reservoirs) to manage water for agriculture around Angkor.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "ghana-gold-trade",
+        "friendly_name": "Ghana Empire Controls Gold Trade",
+        "year": 800,
+        "year_end": 1200,
+        "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "srivijaya-empire",
+        "friendly_name": "Srivijaya Maritime Empire",
+        "year": 683,
+        "year_end": 1025,
+        "description": "The Srivijaya thalassocracy controlled the Strait of Malacca, dominating Southeast Asian maritime trade.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "toltec-civilization",
+        "friendly_name": "Toltec Civilization Flourishes",
+        "year": 950,
+        "year_end": 1150,
+        "description": "The Toltec civilization dominated central Mexico from their capital Tula, later revered by the Aztecs.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 976,
+    "title": "Basil II Becomes Emperor",
+    "candidates": [
+      {
+        "name": "kaifeng-night-markets",
+        "friendly_name": "Kaifeng's Night Markets Glow",
+        "year": 965,
+        "year_end": 1127,
+        "description": "Lamp-lit stalls kept the Song capital trading long past dusk, breaking the curfew that had closed Chinese cities at dark.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "khmer-baray-hydraulics",
+        "friendly_name": "Khmer Baray Reservoirs",
+        "year": 900,
+        "year_end": 1066,
+        "description": "The Khmer Empire built massive barays (reservoirs) to manage water for agriculture around Angkor.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "bukhara-samanid-scholars",
+        "friendly_name": "Bukhara Scholarship Peak",
+        "year": 892,
+        "year_end": 999,
+        "description": "Under the Samanid dynasty, Bukhara became a leading center of Persian and Islamic scholarship, nurturing scholars like Ibn Sina.",
+        "score": 1,
+        "shared": [
+          "peak"
+        ]
+      },
+      {
+        "name": "champa-hindu-culture",
+        "friendly_name": "Champa Hindu Kingdom Culture Peak",
+        "year": 875,
+        "year_end": 982,
+        "description": "The Champa kingdom in present-day Vietnam flourished with Hindu temple towers and Sanskrit-influenced art and religion.",
+        "score": 1,
+        "shared": [
+          "peak"
+        ]
+      },
+      {
+        "name": "ghana-gold-trade",
+        "friendly_name": "Ghana Empire Controls Gold Trade",
+        "year": 800,
+        "year_end": 1200,
+        "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "trial-by-ordeal-spreads",
+        "friendly_name": "Trial by Ordeal Spreads",
+        "year": 800,
+        "year_end": 1219,
+        "description": "Medieval Europe judged guilt by ordeals of fire or water, trusting divine intervention to reveal the truth.",
+        "score": 1,
+        "shared": [
+          "medieval"
+        ]
+      },
+      {
+        "name": "srivijaya-empire",
+        "friendly_name": "Srivijaya Maritime Empire",
+        "year": 683,
+        "year_end": 1025,
+        "description": "The Srivijaya thalassocracy controlled the Strait of Malacca, dominating Southeast Asian maritime trade.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "tiwanaku-city",
+        "friendly_name": "Tiwanaku City Flourishes",
+        "year": 375,
+        "year_end": 1000,
+        "description": "The city of Tiwanaku near Lake Titicaca reached its peak with monumental stone architecture and wide trade networks.",
+        "score": 1,
+        "shared": [
+          "peak"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1081,
+    "title": "Alexios I Komnenos Seizes Power",
+    "candidates": [
+      {
+        "name": "water-power-industrial",
+        "friendly_name": "Water Power Drives Early Industries",
+        "year": 900,
+        "year_end": 1384,
+        "description": "Water power was adapted beyond grain milling to drive sawmills, fulling mills, and metalworking hammers.",
+        "score": 1,
+        "shared": [
+          "power"
+        ]
+      },
+      {
+        "name": "ghana-gold-trade",
+        "friendly_name": "Ghana Empire Controls Gold Trade",
+        "year": 800,
+        "year_end": 1200,
+        "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+        "score": 1,
+        "shared": [
+          "west"
+        ]
+      },
+      {
+        "name": "su-shi-literati-painting",
+        "friendly_name": "Su Shi's Literati Painting",
+        "year": 1080,
+        "description": "Song dynasty polymath Su Shi championed painting as personal expression for scholar-officials rather than mere craft.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "constantine-african-translations",
+        "friendly_name": "Arabic Medicine Reaches Europe",
+        "year": 1080,
+        "description": "Constantine the African translated Arabic medical works into Latin, reviving European medical learning.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "khorezm-state",
+        "friendly_name": "Khorezm Sultanate Flourishes",
+        "year": 1077,
+        "year_end": 1231,
+        "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "paper-technology-spreads",
+        "friendly_name": "Paper Technology Spreads to Europe",
+        "year": 1056,
+        "year_end": 1340,
+        "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1118,
+    "title": "John II Komnenos Becomes Emperor",
+    "candidates": [
+      {
+        "name": "water-power-industrial",
+        "friendly_name": "Water Power Drives Early Industries",
+        "year": 900,
+        "year_end": 1384,
+        "description": "Water power was adapted beyond grain milling to drive sawmills, fulling mills, and metalworking hammers.",
+        "score": 1,
+        "shared": [
+          "power"
+        ]
+      },
+      {
+        "name": "cistercian-order",
+        "friendly_name": "Cistercian Order Expansion",
+        "year": 1115,
+        "year_end": 1153,
+        "description": "Under Bernard of Clairvaux, the Cistercian monastic order expanded rapidly across Europe emphasizing manual labor and simplicity.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "jurchens-jin-dynasty",
+        "friendly_name": "Jurchen Jin Dynasty",
+        "year": 1115,
+        "year_end": 1234,
+        "description": "The Jurchen people established the Jin dynasty, conquering the Liao and northern Song to rule northern China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hoysala-dynasty",
+        "friendly_name": "Hoysala Temple Architecture",
+        "year": 1113,
+        "year_end": 1268,
+        "description": "The Hoysala dynasty in southern India produced intricately carved temples at Belur and Halebidu in Karnataka.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pagan-kingdom",
+        "friendly_name": "Pagan Kingdom Peak",
+        "year": 1113,
+        "year_end": 1287,
+        "description": "The Pagan Kingdom of Burma reached its zenith with massive temple construction across the Bagan plains.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "angkor-wat-temple",
+        "friendly_name": "Angkor Wat Construction",
+        "year": 1113,
+        "year_end": 1150,
+        "description": "King Suryavarman II built Angkor Wat, the world's largest religious monument, dedicated to Vishnu.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1143,
+    "title": "Manuel I Komnenos Becomes Emperor",
+    "candidates": [
+      {
+        "name": "portugal-becomes-a-kingdom",
+        "friendly_name": "Portugal Becomes a Kingdom",
+        "year": 1143,
+        "description": "Afonso Henriques won recognition from Leon as king, setting Portugal apart as a kingdom of its own.",
+        "score": 1,
+        "shared": [
+          "becomes"
+        ]
+      },
+      {
+        "name": "paper-technology-spreads",
+        "friendly_name": "Paper Technology Spreads to Europe",
+        "year": 1056,
+        "year_end": 1340,
+        "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
+        "score": 1,
+        "shared": [
+          "italy"
+        ]
+      },
+      {
+        "name": "fall-of-edessa",
+        "friendly_name": "Fall of Edessa",
+        "year": 1144,
+        "description": "Zengi captured the Crusader County of Edessa, the first Crusader state to fall, triggering the Second Crusade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "krak-des-chevaliers-rebuilt",
+        "friendly_name": "Krak des Chevaliers Rebuilt",
+        "year": 1142,
+        "year_end": 1170,
+        "description": "A crusading military order rebuilt this Syrian castle into one of the most formidable fortresses of its era.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cathars-heresy",
+        "friendly_name": "Cathar Heresy Languedoc",
+        "year": 1140,
+        "year_end": 1244,
+        "description": "The Cathar dualist movement gained followers in southern France, later provoking the Albigensian Crusade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "zagwe-dynasty-ethiopian-rule",
+        "friendly_name": "Zagwe Dynasty Rules Ethiopia",
+        "year": 1137,
+        "year_end": 1270,
+        "description": "The Zagwe dynasty seized power in Ethiopia, later famous for the rock-hewn churches of Lalibela.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 1259,
+    "title": "Michael VIII Palaiologos Is Crowned",
+    "candidates": [
+      {
+        "name": "mongol-baghdad",
+        "friendly_name": "Mongols Sack Baghdad",
+        "year": 1258,
+        "description": "The Mongols destroyed the Abbasid Caliphate and killed hundreds of thousands.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-of-ain-jalut",
+        "friendly_name": "Battle of Ain Jalut",
+        "year": 1260,
+        "description": "Mamluks defeated the Mongols, halting their advance into the Middle East and Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mongol-postal-system",
+        "friendly_name": "Mongol Yam Postal System",
+        "year": 1260,
+        "description": "The Mongol yam relay system enabled rapid communication across the empire using horse-mounted couriers and stations.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kublai-khan-paper-currency",
+        "friendly_name": "Kublai Khan's Paper Money",
+        "year": 1260,
+        "description": "Kublai Khan enforced paper currency across China, amazing Marco Polo with money made from mulberry bark.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "house-of-wisdom-destroyed",
+        "friendly_name": "House of Wisdom Destroyed",
+        "year": 1258,
+        "description": "Mongol forces sacked Baghdad and destroyed its great library, throwing so many books into the river that witnesses said the water turned black.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maori-land-use-customary",
+        "friendly_name": "Maori Customary Land Use Practices",
+        "year": 1250,
+        "year_end": 1700,
+        "description": "Maori settlers in New Zealand developed customary land use systems based on iwi tribal territories and resource rights.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 1391,
+    "title": "Manuel II Becomes Emperor",
+    "candidates": [
+      {
+        "name": "tonga-empire",
+        "friendly_name": "Tongan Empire Peak",
+        "year": 1200,
+        "year_end": 1500,
+        "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
+        "score": 2,
+        "shared": [
+          "empire",
+          "western"
+        ]
+      },
+      {
+        "name": "grain-trade-monopoly",
+        "friendly_name": "Grain Trade Monopoly in Baltic",
+        "year": 1390,
+        "description": "Hanseatic League merchants dominated Baltic grain trade, controlling shipments from Prussia to western Europe.",
+        "score": 1,
+        "shared": [
+          "western"
+        ]
+      },
+      {
+        "name": "mali-decline",
+        "friendly_name": "Mali Empire Decline",
+        "year": 1360,
+        "year_end": 1599,
+        "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "chimú-chan-chan-peak",
+        "friendly_name": "Chan Chan Urban Development",
+        "year": 1350,
+        "year_end": 1470,
+        "description": "Chan Chan reached its urban peak as the Chimu Empire's capital, housing an estimated 30,000 people.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "mayapan-league-cities",
+        "friendly_name": "Mayapan League of Cities Formed",
+        "year": 1220,
+        "year_end": 1441,
+        "description": "The League of Mayapan united major Yucatan Maya cities under a confederacy dominated by the Cocom dynasty.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 40,
+    "year": 1449,
+    "title": "Constantine XI Becomes Last Emperor",
+    "candidates": [
+      {
+        "name": "ming-emperor-captured-tumu",
+        "friendly_name": "Ming Emperor Captured at Tumu",
+        "year": 1449,
+        "description": "Mongol forces routed a Ming army and seized the reigning emperor at a frontier fortress, a rare blow to imperial prestige.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "machu-picchu-construction",
+        "friendly_name": "Machu Picchu Constructed",
+        "year": 1450,
+        "description": "The Inca citadel of Machu Picchu was built high in the Andes as a royal estate for Emperor Pachacuti.",
+        "score": 1,
+        "shared": [
+          "emperor"
+        ]
+      },
+      {
+        "name": "gunpowder-weapons-adoption",
+        "friendly_name": "Gunpowder Weapons Widely Adopted",
+        "year": 1380,
+        "year_end": 1494,
+        "description": "European armies began deploying cannons and early firearms, transforming siege and battlefield tactics.",
+        "score": 1,
+        "shared": [
+          "siege"
+        ]
+      },
+      {
+        "name": "birth-lorenzo-medici",
+        "friendly_name": "Birth of Lorenzo de Medici",
+        "year": 1449,
+        "description": "The Florentine statesman called the Magnificent, a leading patron of the Italian Renaissance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gunpowder-military-adoption-europe",
+        "friendly_name": "Gunpowder Reshapes Europe",
+        "year": 1450,
+        "year_end": 1530,
+        "description": "Cannons and handguns reshaped European warfare, ending the dominance of castles and armored knights.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "benin-bronze-casting-peak",
+        "friendly_name": "Benin Bronze Casting Peaks",
+        "year": 1450,
+        "description": "Benin Kingdom guild casters produced masterful bronze heads and plaques under the patronage of powerful Obas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

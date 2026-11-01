@@ -1,0 +1,15 @@
+{
+  "slug": "ibm-system-360-announced",
+  "description": "A man in glasses and a white shirt with rolled sleeves works the switches and indicator lights of a console in the foreground. Behind him a man in a dark suit leans against a tall blue cabinet, with reel-to-reel tape drives along the back wall and two people in white coats at left. The room is dark with overhead lamps. Two blue cabinets carry clearly legible 'IBM' lettering. No frame or border, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible 'IBM' lettering is painted on the blue cabinets (centre and left background). Repaint the cabinets plain, without the logo."
+}

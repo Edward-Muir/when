@@ -1,0 +1,271 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "confucius-analects-compiled",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "trial-of-socrates",
+      "why": "Same event and same year (-399) as the existing card."
+    },
+    {
+      "beat": 2,
+      "decision": "reuse",
+      "slug": "plato-writes-republic",
+      "why": "Same event as the catalogue card, dated by a different convention: catalogue year -380 versus the spine year; the deck takes the catalogue slug and year."
+    },
+    {
+      "beat": 3,
+      "decision": "reuse",
+      "slug": "aristotle-peripatetic-school",
+      "why": "Same event and same year (-335) as the existing card."
+    },
+    {
+      "beat": 4,
+      "decision": "new",
+      "slug": "epicurus-founds-garden-school",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 5,
+      "decision": "cut",
+      "slug": null,
+      "why": "Zeno: three beats within six years; kept Epicurus and Laozi"
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "laozi-tao-te-ching",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 7,
+      "decision": "cut",
+      "slug": null,
+      "why": "Lucretius: lowest fame, thin on scope"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "nagarjuna-middle-way-verses",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 9,
+      "decision": "reuse",
+      "slug": "marcus-aurelius-meditations",
+      "why": "Same event as the catalogue card, dated by a different convention: catalogue year 170 versus the spine year; the deck takes the catalogue slug and year."
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "augustine-confessions-written",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 11,
+      "decision": "cut",
+      "slug": null,
+      "why": "Boethius: crowded the early medieval stretch for a less famous thinker"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "avicenna-book-of-healing",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 13,
+      "decision": "reuse",
+      "slug": "al-ghazali-philosophy",
+      "why": "Same event and same year (1095) as the existing card."
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": null,
+      "why": "Maimonides: cut for balance, fame 2 with Avicenna and Ghazali already covering the medieval Middle East"
+    },
+    {
+      "beat": 15,
+      "decision": "reuse",
+      "slug": "aquinas-summa",
+      "why": "Same event and same year (1265) as the existing card."
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": null,
+      "why": "Ibn Khaldun: lowest fame"
+    },
+    {
+      "beat": 17,
+      "decision": "new",
+      "slug": "wang-yangming-great-awakening",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 18,
+      "decision": "reuse",
+      "slug": "machiavelli-prince",
+      "why": "Same event as the catalogue card, dated by a different convention: catalogue year 1513 versus the spine year; the deck takes the catalogue slug and year."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "montaigne-essays",
+      "why": "Same event and same year (1580) as the existing card."
+    },
+    {
+      "beat": 20,
+      "decision": "cut",
+      "slug": null,
+      "why": "Bacon: densest decade of early modern thinkers"
+    },
+    {
+      "beat": 21,
+      "decision": "reuse",
+      "slug": "descartes-discourse-method",
+      "why": "Same event and same year (1637) as the existing card."
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "hobbes-leviathan",
+      "why": "Same event and same year (1651) as the existing card."
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spinoza: densest stretch (Descartes, Hobbes, Locke)"
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": null,
+      "why": "Locke: densest stretch of early modern thinkers"
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "hume-treatise-human-nature",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 26,
+      "decision": "reuse",
+      "slug": "rousseaus-social-contract",
+      "why": "Same event and same year (1762) as the existing card."
+    },
+    {
+      "beat": 27,
+      "decision": "reuse",
+      "slug": "kant-critique-pure-reason",
+      "why": "Same event and same year (1781) as the existing card."
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": null,
+      "why": "Bentham: lowest fame"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "wollstonecraft-vindication-rights-woman",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "hegel-phenomenology-of-spirit",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 31,
+      "decision": "cut",
+      "slug": null,
+      "why": "Schopenhauer: lowest fame"
+    },
+    {
+      "beat": 32,
+      "decision": "cut",
+      "slug": null,
+      "why": "Kierkegaard: lowest fame"
+    },
+    {
+      "beat": 33,
+      "decision": "reuse",
+      "slug": "communist-manifesto",
+      "why": "Same event and same year (1848) as the existing card."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "mill-on-liberty",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "nietzsche-thus-spoke-zarathustra",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "gandhi-hind-swaraj",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "wittgenstein-tractatus",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 38,
+      "decision": "cut",
+      "slug": null,
+      "why": "Heidegger: lowest fame, nineteenth/twentieth crowding"
+    },
+    {
+      "beat": 39,
+      "decision": "new",
+      "slug": "sartre-being-and-nothingness",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 40,
+      "decision": "new",
+      "slug": "beauvoir-second-sex",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    },
+    {
+      "beat": 41,
+      "decision": "new",
+      "slug": "rawls-theory-of-justice",
+      "why": "No catalogue card for this work in this year (nearby cards are different dates or events)."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 7/8               (advisory, 6+ is spread)\n  PASS  band 0 11              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in -306--300 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (schools)     (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 56 earlier themes:\n        1  schools                aristotle-peripatetic-school\n\nWithin 8 years — placement is mostly luck, consider dropping one:\n   6y  306 BCE epicurus-founds-garden-school  ->  300 BCE laozi-tao-te-ching\n   5y  1508 wang-yangming-great-awakening  ->  1513 machiavelli-prince\n   6y  1943 sartre-being-and-nothingness  ->  1949 beauvoir-second-sex",
+  "footholds": [
+    "confucius-analects-compiled",
+    "trial-of-socrates",
+    "plato-republic-dialogue",
+    "aristotle-peripatetic-school",
+    "laozi-tao-te-ching",
+    "marcus-aurelius-meditations-written",
+    "machiavelli-prince-published",
+    "descartes-discourse-method",
+    "kant-critique-pure-reason",
+    "communist-manifesto",
+    "nietzsche-thus-spoke-zarathustra"
+  ]
+}

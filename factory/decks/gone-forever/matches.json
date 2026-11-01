@@ -1,0 +1,2446 @@
+[
+  {
+    "beat": 0,
+    "year": 1000,
+    "title": "Madagascar's Elephant Birds Vanish",
+    "candidates": [
+      {
+        "name": "polynesian-settlement",
+        "friendly_name": "Pacific Islands Settled",
+        "year": 1000,
+        "year_end": 1300,
+        "description": "Polynesian navigators completed settlement of the Pacific triangle spanning Hawaii, Easter Island, and New Zealand.",
+        "score": 2,
+        "shared": [
+          "island",
+          "settled"
+        ]
+      },
+      {
+        "name": "chola-naval-supremacy",
+        "friendly_name": "Chola Naval Supremacy",
+        "year": 985,
+        "year_end": 1014,
+        "description": "Under Rajaraja I, the Chola navy dominated the Indian Ocean, conquering Sri Lanka and the Maldives.",
+        "score": 2,
+        "shared": [
+          "indian",
+          "ocean"
+        ]
+      },
+      {
+        "name": "calico",
+        "friendly_name": "Calico",
+        "year": 1000,
+        "description": "Plain-woven cotton fabric named after Calicut, India, valued for its printability and affordability.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "micronesian-navigation",
+        "friendly_name": "Micronesian Navigation Star Paths",
+        "year": 1000,
+        "description": "Micronesian navigators developed star path systems and wave piloting for precise inter-island navigation.",
+        "score": 1,
+        "shared": [
+          "island"
+        ]
+      },
+      {
+        "name": "settlement-of-polynesia-east",
+        "friendly_name": "Eastern Polynesia Settled",
+        "year": 1000,
+        "description": "Voyagers reached the far islands of eastern Polynesia, including the Society and Cook Islands.",
+        "score": 1,
+        "shared": [
+          "settled"
+        ]
+      },
+      {
+        "name": "settlement-of-hawaii",
+        "friendly_name": "Polynesians Reach Hawaii",
+        "year": 1000,
+        "description": "Polynesian voyagers navigated thousands of miles of open ocean to settle the Hawaiian Islands.",
+        "score": 1,
+        "shared": [
+          "ocean"
+        ]
+      },
+      {
+        "name": "chola-dynasty-expansion",
+        "friendly_name": "Chola Dynasty Naval Expansion",
+        "year": 985,
+        "year_end": 1070,
+        "description": "The Indian Chola Empire built a powerful navy and dominated Southeast Asian trade.",
+        "score": 1,
+        "shared": [
+          "indian"
+        ]
+      },
+      {
+        "name": "inuit-thule-culture",
+        "friendly_name": "Thule Culture Inuit Expansion",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "marquesas-settlement-east-polynesia",
+        "friendly_name": "Marquesas Islands Settled",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
+        "score": 1,
+        "shared": [
+          "settled"
+        ]
+      },
+      {
+        "name": "chimor-chan-chan-city",
+        "friendly_name": "Chan Chan Capital City Flourishes",
+        "year": 900,
+        "year_end": 1470,
+        "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
+        "score": 1,
+        "shared": [
+          "largest"
+        ]
+      },
+      {
+        "name": "lucayan-archipelago",
+        "friendly_name": "Lucayan Settlement of Bahamas",
+        "year": 700,
+        "year_end": 1100,
+        "description": "Taino-related Lucayan people migrated from Hispaniola to settle the Bahamas archipelago by canoe.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "hohokam-canal-network",
+        "friendly_name": "Hohokam Canals Spread",
+        "year": 700,
+        "year_end": 1450,
+        "description": "The Hohokam people expanded a major canal network off a desert river, irrigating land in the Sonoran Desert near modern Phoenix.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 1445,
+    "title": "New Zealand's Last Moa Disappear",
+    "candidates": [
+      {
+        "name": "chatham-islands-settlement",
+        "friendly_name": "Chatham Islands Settled",
+        "year": 1400,
+        "year_end": 1500,
+        "description": "Polynesian voyagers settled the remote Chatham Islands east of New Zealand, becoming the Moriori people.",
+        "score": 2,
+        "shared": [
+          "zealand",
+          "polynesian"
+        ]
+      },
+      {
+        "name": "maori-land-use-customary",
+        "friendly_name": "Maori Customary Land Use Practices",
+        "year": 1250,
+        "year_end": 1700,
+        "description": "Maori settlers in New Zealand developed customary land use systems based on iwi tribal territories and resource rights.",
+        "score": 2,
+        "shared": [
+          "zealand",
+          "settlers"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "hunting"
+        ]
+      },
+      {
+        "name": "battle-of-varna",
+        "friendly_name": "Battle of Varna",
+        "year": 1444,
+        "description": "Ottoman forces defeated a crusading army led by King Władysław III of Poland, who was killed in battle, ending the Crusade of Varna.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "aztec-expansion-conquests",
+        "friendly_name": "Aztec Expansion Military Campaigns",
+        "year": 1440,
+        "year_end": 1469,
+        "description": "Under Montezuma I, the Aztec Triple Alliance expanded aggressively through central Mexico.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "benin-edo-palace-system",
+        "friendly_name": "Benin Palace Government",
+        "year": 1440,
+        "year_end": 1473,
+        "description": "The Benin Kingdom developed a sophisticated palace-based government under Oba Ewuare the Great.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 1627,
+    "title": "The Last Aurochs Dies",
+    "candidates": [
+      {
+        "name": "last-aurochs-dies",
+        "friendly_name": "Last Wild Aurochs Dies",
+        "year": 1627,
+        "description": "The last aurochs, the wild ancestor of cattle, died in Poland, marking the species' extinction.",
+        "score": 7,
+        "shared": [
+          "last",
+          "aurochs",
+          "dies",
+          "wild",
+          "ancestor",
+          "cattle",
+          "died"
+        ]
+      },
+      {
+        "name": "st-peters-basilica-completion",
+        "friendly_name": "St. Peter's Basilica Completed",
+        "year": 1626,
+        "description": "St. Peter's Basilica was consecrated after 120 years of construction, becoming the world's largest church.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "polish-lithuanian-golden-age",
+        "friendly_name": "Polish-Lithuanian Golden Age",
+        "year": 1573,
+        "year_end": 1648,
+        "description": "The Polish-Lithuanian Commonwealth entered its golden age as Europe's largest and most tolerant state.",
+        "score": 1,
+        "shared": [
+          "polish"
+        ]
+      },
+      {
+        "name": "maori-land-use-customary",
+        "friendly_name": "Maori Customary Land Use Practices",
+        "year": 1250,
+        "year_end": 1700,
+        "description": "Maori settlers in New Zealand developed customary land use systems based on iwi tribal territories and resource rights.",
+        "score": 1,
+        "shared": [
+          "land"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "hunting"
+        ]
+      },
+      {
+        "name": "trinh-nguyen-civil-war",
+        "friendly_name": "Trinh-Nguyen Civil War in Vietnam",
+        "year": 1627,
+        "year_end": 1672,
+        "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1662,
+    "title": "The Dodo Is Last Seen",
+    "candidates": [
+      {
+        "name": "trinh-nguyen-civil-war",
+        "friendly_name": "Trinh-Nguyen Civil War in Vietnam",
+        "year": 1627,
+        "year_end": 1672,
+        "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
+        "score": 1,
+        "shared": [
+          "century"
+        ]
+      },
+      {
+        "name": "palmares-republic-zumbi",
+        "friendly_name": "Palmares Quilombo Resists",
+        "year": 1605,
+        "year_end": 1694,
+        "description": "Escaped enslaved Africans established Palmares, the largest quilombo in Brazil, resisting Portuguese colonial rule for nearly a century.",
+        "score": 1,
+        "shared": [
+          "century"
+        ]
+      },
+      {
+        "name": "boyle-law",
+        "friendly_name": "Boyle's Law",
+        "year": 1662,
+        "description": "Robert Boyle discovered the relationship between gas pressure and volume.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bus-service",
+        "friendly_name": "Public Bus Service",
+        "year": 1662,
+        "description": "Blaise Pascal helped launch the first public transit system in Paris with horse-drawn carriages on fixed routes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-recorded-vital-statistics",
+        "friendly_name": "First Disease Statistics",
+        "year": 1662,
+        "description": "John Graunt analyzed London's death records, founding epidemiology and the study of public health data.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blaeu-atlas-maior",
+        "friendly_name": "Blaeu's Atlas Maior",
+        "year": 1662,
+        "description": "Joan Blaeu published a multi-volume Amsterdam atlas of hundreds of hand-coloured maps, the costliest book of its age.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1768,
+    "title": "Steller's Sea Cow Is Hunted Out",
+    "candidates": [
+      {
+        "name": "panniers-wide-skirts",
+        "friendly_name": "Panniers Widen Court Skirts",
+        "year": 1710,
+        "year_end": 1780,
+        "description": "Hooped petticoats called panniers spread court skirts out wide, a fashion that ruled European courts for decades.",
+        "score": 2,
+        "shared": [
+          "out",
+          "decades"
+        ]
+      },
+      {
+        "name": "britannica-first",
+        "friendly_name": "First Encyclopedia Britannica",
+        "year": 1768,
+        "description": "The first edition of the English-language encyclopedia was published in Scotland.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-voyage-of-james-cook",
+        "friendly_name": "First Voyage of James Cook",
+        "year": 1768,
+        "year_end": 1771,
+        "description": "Captain James Cook departed England on HMS Endeavour to observe the Transit of Venus and explore the Pacific.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ayutthaya-fall",
+        "friendly_name": "Fall of Ayutthaya",
+        "year": 1767,
+        "description": "Burmese forces sacked Ayutthaya, destroying the 400-year-old Siamese capital and its cultural treasures.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-napoleon",
+        "friendly_name": "Birth of Napoleon",
+        "year": 1769,
+        "description": "Napoleon Bonaparte was born in Corsica, one year after France acquired the island from Genoa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maori-european-encounters",
+        "friendly_name": "Maori-European Contact and Trade",
+        "year": 1769,
+        "description": "Captain Cook's arrival in New Zealand began sustained Maori-European contact, transforming trade and culture.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1800,
+    "title": "The Bluebuck Disappears",
+    "candidates": [
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 2,
+        "shared": [
+          "south",
+          "africa"
+        ]
+      },
+      {
+        "name": "barbary-wars",
+        "friendly_name": "Barbary Wars Begin",
+        "year": 1801,
+        "description": "The United States fought North African pirates to end tribute payments and protect American shipping.",
+        "score": 1,
+        "shared": [
+          "african"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "south"
+        ]
+      },
+      {
+        "name": "humboldt-south-america",
+        "friendly_name": "Humboldt Explores South America",
+        "year": 1799,
+        "year_end": 1804,
+        "description": "Alexander von Humboldt began his scientific exploration of the Americas.",
+        "score": 1,
+        "shared": [
+          "south"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "times"
+        ]
+      },
+      {
+        "name": "battle-marengo",
+        "friendly_name": "Battle of Marengo",
+        "year": 1800,
+        "description": "Napoleons army defeated the Austrians at Marengo and re-conquered northern Italy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1844,
+    "title": "The Last Great Auks Are Killed",
+    "candidates": [
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "ymca-founded",
+        "friendly_name": "YMCA Founded",
+        "year": 1844,
+        "description": "The Young Men's Christian Association was founded in London.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-telegraph-message",
+        "friendly_name": "First Telegraph Message",
+        "year": 1844,
+        "description": "Samuel Morse sent 'What hath God wrought' from Washington to Baltimore, demonstrating the electric telegraph.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wood-pulp-papermaking",
+        "friendly_name": "Wood Pulp Papermaking",
+        "year": 1844,
+        "description": "Charles Fenerty made paper from wood pulp, replacing expensive cotton rags and lowering costs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hypodermic-needle",
+        "friendly_name": "Hypodermic Needle",
+        "year": 1844,
+        "description": "Francis Rynd invented the hollow needle for injecting medication beneath the skin.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-nietzsche",
+        "friendly_name": "Birth of Nietzsche",
+        "year": 1844,
+        "description": "The German philosopher who proclaimed the death of God and explored will, morality, and the overman.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1858,
+    "title": "Last Cape Lion Shot",
+    "candidates": [
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 1,
+        "shared": [
+          "ending"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "settlers"
+        ]
+      },
+      {
+        "name": "british-raj-established",
+        "friendly_name": "British Raj Established",
+        "year": 1858,
+        "description": "The British Crown assumed direct control of India after the Sepoy Mutiny.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "miracles-at-lourdes",
+        "friendly_name": "Miracles at Lourdes",
+        "year": 1858,
+        "description": "Bernadette Soubirous reported visions of the Virgin Mary in Lourdes, France, creating a major pilgrimage site.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-transatlantic-cable",
+        "friendly_name": "First Transatlantic Cable",
+        "year": 1858,
+        "description": "First telegraph cable across the Atlantic connected Europe and North America, though it failed after weeks.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lincoln-douglas-debates",
+        "friendly_name": "Lincoln-Douglas Debates",
+        "year": 1858,
+        "description": "Series of seven debates between Abraham Lincoln and Stephen Douglas focused on slavery and popular sovereignty.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1865,
+    "title": "Tasmanian Emu Hunted to Extinction",
+    "candidates": [
+      {
+        "name": "lincoln-assassination",
+        "friendly_name": "Abraham Lincoln Assassinated",
+        "year": 1865,
+        "description": "President Lincoln was shot by John Wilkes Booth at Ford's Theatre.",
+        "score": 1,
+        "shared": [
+          "shot"
+        ]
+      },
+      {
+        "name": "first-ascent-matterhorn",
+        "friendly_name": "First Ascent of the Matterhorn",
+        "year": 1865,
+        "description": "Edward Whymper led the first successful climb of the Matterhorn, one of the last great Alpine peaks to fall.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "finnish-famine",
+        "friendly_name": "Finnish Famine",
+        "year": 1866,
+        "year_end": 1868,
+        "description": "The last major famine in Europe killed 15% of Finland's population.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "hunley-sinks-housatonic",
+        "friendly_name": "Hunley Sinks the Housatonic",
+        "year": 1864,
+        "description": "A hand-cranked Confederate submarine drove a spar torpedo into a Union sloop, then vanished with all hands aboard.",
+        "score": 1,
+        "shared": [
+          "vanished"
+        ]
+      },
+      {
+        "name": "gold-rush-to-australia",
+        "friendly_name": "Australian Gold Rush Migration",
+        "year": 1851,
+        "year_end": 1869,
+        "description": "Gold discoveries drew a flood of migrants to Australia, tripling the colony's population in a decade.",
+        "score": 1,
+        "shared": [
+          "australia"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "settlers"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1876,
+    "title": "The Falkland Islands Wolf Is Killed",
+    "candidates": [
+      {
+        "name": "challenger-expedition",
+        "friendly_name": "HMS Challenger Expedition",
+        "year": 1872,
+        "year_end": 1876,
+        "description": "A converted Royal Navy corvette set out to sound and dredge the world's oceans, founding the science of oceanography.",
+        "score": 1,
+        "shared": [
+          "out"
+        ]
+      },
+      {
+        "name": "battle-little-bighorn",
+        "friendly_name": "Battle of Little Bighorn",
+        "year": 1876,
+        "description": "Lakota and Cheyenne warriors annihilated Custer's cavalry at Last Stand Hill.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "centennial-exhibition",
+        "friendly_name": "Centennial Exhibition",
+        "year": 1876,
+        "description": "First official World's Fair in the US celebrated America's 100th anniversary in Philadelphia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "serbia-independence",
+        "friendly_name": "Serbia Independence",
+        "year": 1876,
+        "year_end": 1878,
+        "description": "Serbia declared independence from the Ottoman Empire, later recognized at the Congress of Berlin.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bell-telephone",
+        "friendly_name": "Bell Invents Telephone",
+        "year": 1876,
+        "description": "Alexander Graham Bell patented the first practical telephone.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "four-stroke-engine",
+        "friendly_name": "Four-Stroke Engine",
+        "year": 1876,
+        "description": "Nikolaus Otto built the first practical four-stroke internal combustion engine.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1878,
+    "title": "Last Labrador Duck Shot",
+    "candidates": [
+      {
+        "name": "phonograph-invented",
+        "friendly_name": "Phonograph Invented",
+        "year": 1877,
+        "description": "Thomas Edison invented a device to record and play back sound.",
+        "score": 1,
+        "shared": [
+          "record"
+        ]
+      },
+      {
+        "name": "great-railroad-strike-1877",
+        "friendly_name": "Great Railroad Strike",
+        "year": 1877,
+        "description": "The first major American railroad strike began in West Virginia and spread nationwide, marking a turning point in U.S. labor history.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-albert-einstein",
+        "friendly_name": "Birth of Albert Einstein",
+        "year": 1879,
+        "description": "The German-American physicist whose theory of relativity reshaped our understanding of space and time.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "kincsem-undefeated-54-races",
+        "friendly_name": "Kincsem Retires Undefeated",
+        "year": 1879,
+        "description": "Hungarian mare Kincsem retired having won all 54 of her races, the longest unbeaten record in the sport.",
+        "score": 1,
+        "shared": [
+          "record"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "haida-totem-poles",
+        "friendly_name": "Haida Totem Pole Carving Peak",
+        "year": 1830,
+        "year_end": 1880,
+        "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
+        "score": 1,
+        "shared": [
+          "coast"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1883,
+    "title": "The Last Quagga Dies in Amsterdam",
+    "candidates": [
+      {
+        "name": "last-quagga-dies",
+        "friendly_name": "The Last Quagga Dies",
+        "year": 1883,
+        "description": "The quagga, a half-striped relative of the zebra, became extinct in an Amsterdam zoo.",
+        "score": 8,
+        "shared": [
+          "last",
+          "quagga",
+          "dies",
+          "amsterdam",
+          "zebra",
+          "relative",
+          "half",
+          "zoo"
+        ]
+      },
+      {
+        "name": "orient-express-first-run",
+        "friendly_name": "Orient Express First Run",
+        "year": 1883,
+        "description": "The famous luxury train made its first journey out of Paris, and its route to Constantinople came later.",
+        "score": 1,
+        "shared": [
+          "out"
+        ]
+      },
+      {
+        "name": "kerckhoffs-principle",
+        "friendly_name": "Kerckhoffs's Principle",
+        "year": 1883,
+        "description": "Auguste Kerckhoffs argued a military cipher must stay safe even when the enemy knows the system, so only the key is secret.",
+        "score": 1,
+        "shared": [
+          "only"
+        ]
+      },
+      {
+        "name": "berlin-conference",
+        "friendly_name": "Berlin Conference",
+        "year": 1884,
+        "description": "European powers divided Africa among themselves without African participation.",
+        "score": 1,
+        "shared": [
+          "european"
+        ]
+      },
+      {
+        "name": "chinese-exclusion-act",
+        "friendly_name": "Chinese Exclusion Act",
+        "year": 1882,
+        "description": "First US law to ban immigration based on nationality, prohibiting Chinese laborers for ten years.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "public-healthcare-system",
+        "friendly_name": "Healthcare System",
+        "year": 1883,
+        "description": "Bismarck's Health Insurance Act created the world's first national healthcare system, mandating employer-funded worker health insurance.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1894,
+    "title": "The Sea Mink Is Gone",
+    "candidates": [
+      {
+        "name": "nansen-arctic",
+        "friendly_name": "Nansen's Fram Expedition",
+        "year": 1893,
+        "year_end": 1896,
+        "description": "Fridtjof Nansen attempted to reach the North Pole by drifting with ice.",
+        "score": 1,
+        "shared": [
+          "north"
+        ]
+      },
+      {
+        "name": "earnest-premieres-london",
+        "friendly_name": "Earnest Premieres in London",
+        "year": 1895,
+        "description": "Oscar Wilde's comedy of mistaken identities and double lives opened in London to great acclaim just before his public disgrace began.",
+        "score": 1,
+        "shared": [
+          "before"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "before"
+        ]
+      },
+      {
+        "name": "first-sino-japanese-war",
+        "friendly_name": "First Sino-Japanese War",
+        "year": 1894,
+        "year_end": 1895,
+        "description": "Japan defeated Qing China over influence in Korea, gaining Taiwan and establishing itself as a major East Asian power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dreyfus-affair",
+        "friendly_name": "Dreyfus Affair",
+        "year": 1894,
+        "description": "French Jewish officer Alfred Dreyfus was falsely convicted of treason, exposing deep antisemitism in France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "school-lunch-program",
+        "friendly_name": "School Meal Program",
+        "year": 1894,
+        "description": "Sweden began giving meals to poor schoolchildren, an early effort that grew into a free lunch for every pupil.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1895,
+    "title": "Stephens Island Wren Wiped Out",
+    "candidates": [
+      {
+        "name": "first-us-open-golf-1895",
+        "friendly_name": "First U.S. Open Golf",
+        "year": 1895,
+        "description": "Englishman Horace Rawlins won the inaugural U.S. Open at Newport Golf Club in Rhode Island, staged by the USGA.",
+        "score": 1,
+        "shared": [
+          "island"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "destroyed"
+        ]
+      },
+      {
+        "name": "first-motion-picture",
+        "friendly_name": "First Motion Picture Screened",
+        "year": 1895,
+        "description": "The Lumière brothers held the first public film screening in Paris.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "treaty-of-shimonoseki",
+        "friendly_name": "Treaty of Shimonoseki",
+        "year": 1895,
+        "description": "Treaty ending the First Sino-Japanese War, with China ceding Taiwan and recognizing Korean independence.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "x-rays-discovered",
+        "friendly_name": "X-Rays Discovered",
+        "year": 1895,
+        "description": "Wilhelm Röntgen discovered X-rays, revolutionizing medical imaging.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "player-piano",
+        "friendly_name": "Player Piano Invented",
+        "year": 1895,
+        "description": "Edwin Scott Votey built the first practical player piano, automatically playing music from perforated paper rolls.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1902,
+    "title": "The Rocky Mountain Locust Vanishes",
+    "candidates": [
+      {
+        "name": "philippine-american-war",
+        "friendly_name": "Philippine-American War",
+        "year": 1899,
+        "year_end": 1902,
+        "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+        "score": 2,
+        "shared": [
+          "american",
+          "after"
+        ]
+      },
+      {
+        "name": "end-of-philippine-american-war",
+        "friendly_name": "End of Philippine-American War",
+        "year": 1902,
+        "description": "The US declared victory in the Philippine-American War, though guerrilla resistance continued for years in parts of the archipelago.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "air-conditioner-invented",
+        "friendly_name": "Air Conditioning Invented",
+        "year": 1902,
+        "description": "Willis Carrier invented modern air conditioning, transforming how people live and work in hot climates.",
+        "score": 1,
+        "shared": [
+          "live"
+        ]
+      },
+      {
+        "name": "birth-charles-lindbergh",
+        "friendly_name": "Birth of Charles Lindbergh",
+        "year": 1902,
+        "description": "The American aviator who made the first solo nonstop flight across the Atlantic.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-john-steinbeck",
+        "friendly_name": "Birth of John Steinbeck",
+        "year": 1902,
+        "description": "The American author of The Grapes of Wrath, a Nobel laureate who portrayed Depression-era hardship.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "assassination-of-mckinley",
+        "friendly_name": "Assassination of McKinley",
+        "year": 1901,
+        "description": "President William McKinley was shot by anarchist Leon Czolgosz at the Pan-American Exposition, making Theodore Roosevelt president.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "queen-victoria-dies",
+        "friendly_name": "Queen Victoria Dies",
+        "year": 1901,
+        "description": "Queen Victoria died after 63 years on the throne, ending the Victorian era.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "birth-louis-armstrong",
+        "friendly_name": "Birth of Louis Armstrong",
+        "year": 1901,
+        "description": "The American trumpeter and singer whose virtuosity and charisma made him a defining voice of jazz.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-walt-disney",
+        "friendly_name": "Birth of Walt Disney",
+        "year": 1901,
+        "description": "The American animator who created Mickey Mouse and built an entertainment empire of films and theme parks.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "first-world-series",
+        "friendly_name": "First World Series Played",
+        "year": 1903,
+        "description": "Baseball's American and National Leagues met in the first World Series, won by the Boston Americans.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "american-league-founded-1901",
+        "friendly_name": "American League Founded",
+        "year": 1901,
+        "description": "The American League declared itself a major league, launching a rivalry that would create modern Major League Baseball.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1905,
+    "title": "The Japanese Wolf's Last Specimen",
+    "candidates": [
+      {
+        "name": "russo-japanese-war",
+        "friendly_name": "Russo-Japanese War",
+        "year": 1904,
+        "year_end": 1905,
+        "description": "Japan defeated Russia, becoming the first Asian power to beat a European nation.",
+        "score": 2,
+        "shared": [
+          "japanese",
+          "japan"
+        ]
+      },
+      {
+        "name": "battle-tsushima",
+        "friendly_name": "Battle of Tsushima",
+        "year": 1905,
+        "description": "Japan destroyed the Russian Baltic Fleet, shocking the Western world.",
+        "score": 1,
+        "shared": [
+          "japan"
+        ]
+      },
+      {
+        "name": "first-australasian-championships-1905",
+        "friendly_name": "First Australasian Championships",
+        "year": 1905,
+        "description": "The first Australasian Championships were played in Melbourne, the tournament that later became the Australian Open.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "herero-genocide",
+        "friendly_name": "Herero Genocide",
+        "year": 1904,
+        "year_end": 1908,
+        "description": "German colonial forces systematically killed tens of thousands of Herero and Nama people in German South-West Africa, considered the first genocide of the modern era.",
+        "score": 1,
+        "shared": [
+          "killed"
+        ]
+      },
+      {
+        "name": "general-slocum",
+        "friendly_name": "General Slocum Disaster",
+        "year": 1904,
+        "description": "A steamship fire killed over 1,000 in New York's East River.",
+        "score": 1,
+        "shared": [
+          "killed"
+        ]
+      },
+      {
+        "name": "valparaiso-earthquake",
+        "friendly_name": "Valparaiso Earthquake",
+        "year": 1906,
+        "description": "A devastating earthquake killed 3,000 and destroyed much of the Chilean city.",
+        "score": 1,
+        "shared": [
+          "killed"
+        ]
+      },
+      {
+        "name": "courrieres-mine",
+        "friendly_name": "Courrières Mine Disaster",
+        "year": 1906,
+        "description": "Europe's worst mining disaster killed 1,099 in France.",
+        "score": 1,
+        "shared": [
+          "killed"
+        ]
+      },
+      {
+        "name": "first-french-grand-prix-1906",
+        "friendly_name": "First French Grand Prix",
+        "year": 1906,
+        "description": "The Automobile Club de France ran the first race titled Grand Prix on closed roads near Le Mans, won by Ferenc Szisz.",
+        "score": 1,
+        "shared": [
+          "near"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1907,
+    "title": "The Huia Is Last Seen",
+    "candidates": [
+      {
+        "name": "birth-frida-kahlo",
+        "friendly_name": "Birth of Frida Kahlo",
+        "year": 1907,
+        "description": "The Mexican painter whose vivid self-portraits explored identity, pain, and her own body.",
+        "score": 1,
+        "shared": [
+          "whose"
+        ]
+      },
+      {
+        "name": "tunguska-event",
+        "friendly_name": "Tunguska Event",
+        "year": 1908,
+        "description": "Massive explosion over Siberia flattened 2,000 square kilometers of forest, likely caused by a meteor.",
+        "score": 1,
+        "shared": [
+          "forest"
+        ]
+      },
+      {
+        "name": "birth-kurt-godel",
+        "friendly_name": "Birth of Kurt Godel",
+        "year": 1906,
+        "description": "The Austrian logician whose incompleteness theorems transformed mathematics and logic.",
+        "score": 1,
+        "shared": [
+          "whose"
+        ]
+      },
+      {
+        "name": "birth-dmitri-shostakovich",
+        "friendly_name": "Birth of Shostakovich",
+        "year": 1906,
+        "description": "The Russian composer whose symphonies endured an uneasy relationship with the Soviet state.",
+        "score": 1,
+        "shared": [
+          "whose"
+        ]
+      },
+      {
+        "name": "birth-simone-de-beauvoir",
+        "friendly_name": "Birth of Simone de Beauvoir",
+        "year": 1908,
+        "description": "The French philosopher whose book The Second Sex became a foundational text of feminism.",
+        "score": 1,
+        "shared": [
+          "whose"
+        ]
+      },
+      {
+        "name": "picasso-demoiselles",
+        "friendly_name": "Les Demoiselles d'Avignon Painted",
+        "year": 1907,
+        "description": "Picasso completed his revolutionary proto-Cubist painting.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1914,
+    "title": "Martha, Last Passenger Pigeon, Dies",
+    "candidates": [
+      {
+        "name": "passenger-pigeon-extinct",
+        "friendly_name": "Last Passenger Pigeon Dies",
+        "year": 1914,
+        "description": "Once numbering billions, the passenger pigeon went extinct when the last bird died in a zoo.",
+        "score": 8,
+        "shared": [
+          "last",
+          "passenger",
+          "pigeon",
+          "dies",
+          "once",
+          "billions",
+          "died",
+          "zoo"
+        ]
+      },
+      {
+        "name": "eastland-disaster",
+        "friendly_name": "Eastland Disaster",
+        "year": 1915,
+        "description": "A passenger ship capsized in the Chicago River, killing 844.",
+        "score": 1,
+        "shared": [
+          "passenger"
+        ]
+      },
+      {
+        "name": "birth-rosa-parks",
+        "friendly_name": "Birth of Rosa Parks",
+        "year": 1913,
+        "description": "The American activist whose refusal to give up her bus seat sparked the Montgomery boycott.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-frank-sinatra",
+        "friendly_name": "Birth of Frank Sinatra",
+        "year": 1915,
+        "description": "The American singer and actor whose smooth voice made him one of the most popular entertainers ever.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-orson-welles",
+        "friendly_name": "Birth of Orson Welles",
+        "year": 1915,
+        "description": "The American filmmaker behind Citizen Kane, widely regarded as one of cinema's greatest works.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "wwi-start",
+        "friendly_name": "World War I Begins",
+        "year": 1914,
+        "description": "The assassination of Archduke Franz Ferdinand sparked the Great War.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1918,
+    "title": "Last Carolina Parakeet Dies",
+    "candidates": [
+      {
+        "name": "us-enters-world-war-i",
+        "friendly_name": "US Enters World War I",
+        "year": 1917,
+        "description": "The United States declared war on Germany after unrestricted submarine warfare and the Zimmermann Telegram, tipping the balance toward Allied victory.",
+        "score": 2,
+        "shared": [
+          "united",
+          "states"
+        ]
+      },
+      {
+        "name": "german-revolution-1918",
+        "friendly_name": "German Revolution",
+        "year": 1918,
+        "description": "Revolution ended the German Empire and Kaiser Wilhelm II fled, establishing the Weimar Republic.",
+        "score": 1,
+        "shared": [
+          "ended"
+        ]
+      },
+      {
+        "name": "treaty-versailles",
+        "friendly_name": "Treaty of Versailles Signed",
+        "year": 1919,
+        "description": "The peace treaty officially ended World War I and imposed harsh terms on Germany.",
+        "score": 1,
+        "shared": [
+          "ended"
+        ]
+      },
+      {
+        "name": "wwi-end",
+        "friendly_name": "World War I Ends",
+        "year": 1918,
+        "description": "The armistice was signed ending the Great War after four years of conflict.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "red-army-formed",
+        "friendly_name": "Red Army Founded",
+        "year": 1918,
+        "description": "Trotsky organized the Workers' and Peasants' Red Army to defend the Revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "finnish-civil-war-begins",
+        "friendly_name": "Finnish Civil War Begins",
+        "year": 1918,
+        "description": "The Finnish Civil War began between Red Guards and White Guards.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1922,
+    "title": "Last Wild Barbary Lion Shot",
+    "candidates": [
+      {
+        "name": "first-comrades-marathon-1921",
+        "friendly_name": "First Comrades Marathon",
+        "year": 1921,
+        "description": "Bill Rowan won the first Comrades Marathon in South Africa, now the world's oldest and largest ultramarathon.",
+        "score": 1,
+        "shared": [
+          "africa"
+        ]
+      },
+      {
+        "name": "mussolini-power",
+        "friendly_name": "Mussolini Takes Power",
+        "year": 1922,
+        "description": "The March on Rome brought Benito Mussolini to power as Italy's fascist leader.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "russian-civil-war-ends",
+        "friendly_name": "Russian Civil War Ends",
+        "year": 1922,
+        "description": "The Bolsheviks defeated the White Army and various nationalist movements.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ulysses-published",
+        "friendly_name": "Ulysses Published",
+        "year": 1922,
+        "description": "James Joyces modernist masterpiece Ulysses was published, revolutionizing literature.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "irish-free-state",
+        "friendly_name": "Irish Free State Established",
+        "year": 1922,
+        "description": "Ireland gained independence from Britain as a dominion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ussr-formed",
+        "friendly_name": "Soviet Union Formed",
+        "year": 1922,
+        "description": "The Union of Soviet Socialist Republics was officially established.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1932,
+    "title": "Booming Ben, the Last Heath Hen",
+    "candidates": [
+      {
+        "name": "kreuger-empire-collapse",
+        "friendly_name": "Ivar Kreuger's Empire Collapses",
+        "year": 1932,
+        "description": "Swedish financier Ivar Kreuger, known as the Match King, died as investigators found his global empire built on forged bonds.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "afsluitdijk-completed",
+        "friendly_name": "Afsluitdijk Seals the Zuiderzee",
+        "year": 1932,
+        "description": "The Netherlands completed a long dyke closing off a shallow sea inlet, turning it into a large freshwater lake.",
+        "score": 1,
+        "shared": [
+          "off"
+        ]
+      },
+      {
+        "name": "us-leaves-gold-standard",
+        "friendly_name": "US Leaves Gold Standard",
+        "year": 1933,
+        "description": "Roosevelt took the US off the gold standard domestically to combat deflation during the Depression.",
+        "score": 1,
+        "shared": [
+          "off"
+        ]
+      },
+      {
+        "name": "birth-mikhail-gorbachev",
+        "friendly_name": "Birth of Mikhail Gorbachev",
+        "year": 1931,
+        "description": "The last Soviet leader whose glasnost and perestroika reforms helped bring the Cold War to an end.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "wiley-post-solo-world-flight",
+        "friendly_name": "Post Flies Solo Around the World",
+        "year": 1933,
+        "description": "Wiley Post became the first pilot to fly solo around the world, circling the globe in his Lockheed Vega Winnie Mae.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "lindbergh-baby-kidnapping",
+        "friendly_name": "Lindbergh Baby Kidnapping",
+        "year": 1932,
+        "description": "Charles Lindberghs 20-month-old son was kidnapped and later found dead in a case that gripped America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1936,
+    "title": "Benjamin, the Last Thylacine, Dies",
+    "candidates": [
+      {
+        "name": "last-thylacine-dies",
+        "friendly_name": "Last Tasmanian Tiger Dies",
+        "year": 1936,
+        "description": "The thylacine, a striped marsupial predator, went extinct when the last one died in a zoo.",
+        "score": 8,
+        "shared": [
+          "last",
+          "thylacine",
+          "dies",
+          "striped",
+          "tasmanian",
+          "marsupial",
+          "died",
+          "zoo"
+        ]
+      },
+      {
+        "name": "rape-nanking",
+        "friendly_name": "Nanjing Massacre",
+        "year": 1937,
+        "description": "Japanese troops committed mass atrocities after capturing the Chinese capital.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "spanish-civil-war",
+        "friendly_name": "Spanish Civil War Begins",
+        "year": 1936,
+        "description": "Nationalist forces led by Franco rebelled against Spain's Republican government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-television-broadcast",
+        "friendly_name": "First Public Television Broadcast",
+        "year": 1936,
+        "description": "The BBC began the world's first regular high-definition television service.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anti-comintern-pact",
+        "friendly_name": "Anti-Comintern Pact",
+        "year": 1936,
+        "description": "Germany and Japan agreed to oppose international communism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rhineland-remilitarization",
+        "friendly_name": "Germany Reoccupies Rhineland",
+        "year": 1936,
+        "description": "In violation of Versailles and Locarno treaties, Germany remilitarized the Rhineland.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1941,
+    "title": "The Xerces Blue Butterfly Is Lost",
+    "candidates": [
+      {
+        "name": "birth-muhammad-ali",
+        "friendly_name": "Birth of Muhammad Ali",
+        "year": 1942,
+        "description": "The American boxer and three-time heavyweight champion known for his activism and bravado.",
+        "score": 2,
+        "shared": [
+          "american",
+          "known"
+        ]
+      },
+      {
+        "name": "final-solution-begins",
+        "friendly_name": "Final Solution Begins",
+        "year": 1941,
+        "description": "Nazi Germany began systematic genocide of European Jews through death camps and mass shootings.",
+        "score": 1,
+        "shared": [
+          "through"
+        ]
+      },
+      {
+        "name": "casablanca-released",
+        "friendly_name": "Casablanca Released",
+        "year": 1942,
+        "description": "The romantic war film starring Humphrey Bogart became a classic.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "birth-jimi-hendrix",
+        "friendly_name": "Birth of Jimi Hendrix",
+        "year": 1942,
+        "description": "The American guitarist who redefined rock with virtuosic, electrifying playing.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "nylon-stockings-debut",
+        "friendly_name": "Nylon Stockings Go on Sale",
+        "year": 1940,
+        "description": "DuPont's nylon stockings hit American stores and sold millions of pairs, revolutionizing women's hosiery.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "pearl-harbor",
+        "friendly_name": "Attack on Pearl Harbor",
+        "year": 1941,
+        "description": "Japan's surprise attack brought the United States into World War II.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1952,
+    "title": "Caribbean Monk Seal Last Sighted",
+    "candidates": [
+      {
+        "name": "stalin-dies",
+        "friendly_name": "Stalin Dies",
+        "year": 1953,
+        "description": "Joseph Stalin died after ruling the Soviet Union for nearly three decades of terror and industrialization.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "korean-dmz-fortified",
+        "friendly_name": "Korean DMZ Fortified",
+        "year": 1953,
+        "description": "After an armistice, both Koreas fortified the buffer zone between them with fences, walls and guard posts.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "batista-cuba-coup",
+        "friendly_name": "Batista Cuba Coup",
+        "year": 1952,
+        "description": "Fulgencio Batista leads a successful coup in Cuba, seizing power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nbc-today-debuts",
+        "friendly_name": "NBC Today Debuts",
+        "year": 1952,
+        "description": "NBCs long-running morning news program Today debuts with host Dave Garroway.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "elizabeth-ii-becomes-queen",
+        "friendly_name": "Elizabeth II Becomes Queen",
+        "year": 1952,
+        "description": "Elizabeth II becomes Queen of the United Kingdom upon the death of her father, George VI.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "egyptian-revolution-1952",
+        "friendly_name": "Free Officers' Revolution",
+        "year": 1952,
+        "description": "Military coup led by Nasser overthrew King Farouk, ending British influence in Egypt.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1970,
+    "title": "The Caspian Tiger Fades Away",
+    "candidates": [
+      {
+        "name": "aswan-high-dam",
+        "friendly_name": "Aswan High Dam Completed",
+        "year": 1970,
+        "description": "Egypt completed the massive dam across the Nile River.",
+        "score": 1,
+        "shared": [
+          "river"
+        ]
+      },
+      {
+        "name": "low-loss-optical-fibre",
+        "friendly_name": "Low-Loss Optical Fibre",
+        "year": 1970,
+        "description": "Corning drew glass fibre pure enough to carry light for kilometres, turning optical communication into engineering.",
+        "score": 1,
+        "shared": [
+          "loss"
+        ]
+      },
+      {
+        "name": "bangladesh-liberation-war",
+        "friendly_name": "Bangladesh Liberation War",
+        "year": 1971,
+        "description": "East Pakistan broke away with Indian help to become Bangladesh.",
+        "score": 1,
+        "shared": [
+          "away"
+        ]
+      },
+      {
+        "name": "cuyahoga-river-fire",
+        "friendly_name": "Cuyahoga River Catches Fire",
+        "year": 1969,
+        "description": "Ohio's Cuyahoga River caught fire from pollution, galvanizing the modern environmental movement.",
+        "score": 1,
+        "shared": [
+          "river"
+        ]
+      },
+      {
+        "name": "biafra-capitulates",
+        "friendly_name": "Biafra Capitulates",
+        "year": 1970,
+        "description": "Biafra capitulates, ending the Nigerian Civil War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-earth-day",
+        "friendly_name": "First Earth Day",
+        "year": 1970,
+        "description": "Twenty million Americans participated in the first Earth Day.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1976,
+    "title": "The Javan Tiger Is Last Recorded",
+    "candidates": [
+      {
+        "name": "indonesia-invades-east-timor",
+        "friendly_name": "Indonesia Invades East Timor",
+        "year": 1975,
+        "description": "Indonesian troops seized the former Portuguese colony days after it declared independence.",
+        "score": 1,
+        "shared": [
+          "indonesian"
+        ]
+      },
+      {
+        "name": "djibouti-independence",
+        "friendly_name": "Djibouti Independence",
+        "year": 1977,
+        "description": "Djibouti gained independence from France, becoming the last French colony in Africa to achieve sovereignty.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "last-natural-smallpox-case",
+        "friendly_name": "Last Natural Smallpox Case",
+        "year": 1977,
+        "description": "A hospital cook in Somalia became the last person to catch smallpox naturally, ending its spread.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "hydrothermal-vents-discovered",
+        "friendly_name": "Hydrothermal Vents Discovered",
+        "year": 1977,
+        "description": "The submersible Alvin found hot vents on the Galapagos Rift crowded with life fed by chemistry rather than sunlight.",
+        "score": 1,
+        "shared": [
+          "found"
+        ]
+      },
+      {
+        "name": "soweto-uprising",
+        "friendly_name": "Soweto Uprising",
+        "year": 1976,
+        "description": "Black South African students protested mandatory Afrikaans instruction. Police killed hundreds, including 12-year-old Hector Pieterson.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punk-rock-emerges",
+        "friendly_name": "Punk Rock Emerges",
+        "year": 1976,
+        "description": "The Ramones, Sex Pistols, and others launched the punk movement.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1987,
+    "title": "Last Dusky Seaside Sparrow Dies",
+    "candidates": [
+      {
+        "name": "graf-golden-slam-1988",
+        "friendly_name": "Graf's Golden Slam",
+        "year": 1988,
+        "description": "Steffi Graf won all four majors and Olympic gold in one year, the only Golden Slam in tennis history.",
+        "score": 2,
+        "shared": [
+          "only",
+          "one"
+        ]
+      },
+      {
+        "name": "iran-iraq-war-ends",
+        "friendly_name": "Iran-Iraq War Ends",
+        "year": 1988,
+        "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "first-intifada",
+        "friendly_name": "First Intifada",
+        "year": 1987,
+        "year_end": 1993,
+        "description": "Palestinians began a sustained uprising against Israeli occupation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "aids-quilt",
+        "friendly_name": "AIDS Quilt Displayed",
+        "year": 1987,
+        "description": "The NAMES Project AIDS Memorial Quilt was first displayed in Washington.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "montreal-protocol",
+        "friendly_name": "Montreal Protocol Signed",
+        "year": 1987,
+        "description": "Nations agreed to phase out ozone-depleting substances in the most successful environmental treaty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "black-monday-1987",
+        "friendly_name": "Black Monday",
+        "year": 1987,
+        "description": "Stock markets crashed worldwide on October 19, with the Dow falling 22% in a single day.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1989,
+    "title": "The Golden Toad Is Last Seen",
+    "candidates": [
+      {
+        "name": "graf-golden-slam-1988",
+        "friendly_name": "Graf's Golden Slam",
+        "year": 1988,
+        "description": "Steffi Graf won all four majors and Olympic gold in one year, the only Golden Slam in tennis history.",
+        "score": 2,
+        "shared": [
+          "golden",
+          "one"
+        ]
+      },
+      {
+        "name": "iran-iraq-war-ends",
+        "friendly_name": "Iran-Iraq War Ends",
+        "year": 1988,
+        "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "berlin-wall-fall",
+        "friendly_name": "Fall of the Berlin Wall",
+        "year": 1989,
+        "description": "East Germany opened its borders, symbolizing the end of the Cold War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tiananmen-square",
+        "friendly_name": "Tiananmen Square Massacre",
+        "year": 1989,
+        "description": "Chinese troops killed pro-democracy protesters in Beijing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "panama-invasion",
+        "friendly_name": "Panama Invasion",
+        "year": 1989,
+        "year_end": 1990,
+        "description": "US forces invaded Panama to depose dictator Manuel Noriega on drug trafficking charges, the largest American military operation since Vietnam.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ayatollah-khomeini-dies",
+        "friendly_name": "Ayatollah Khomeini Dies",
+        "year": 1989,
+        "description": "The leader of Iran's Islamic Revolution died, drawing millions of mourners to his funeral.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 2000,
+    "title": "Celia, Last Pyrenean Ibex, Dies",
+    "candidates": [
+      {
+        "name": "thonis-heracleion-found",
+        "friendly_name": "Sunken City of Thonis Found",
+        "year": 2000,
+        "description": "Divers mapped the drowned Egyptian port of Thonis-Heracleion, its temples, statues and cargo ships lying under Abu Qir Bay.",
+        "score": 1,
+        "shared": [
+          "found"
+        ]
+      },
+      {
+        "name": "second-intifada",
+        "friendly_name": "Second Intifada Begins",
+        "year": 2000,
+        "description": "A more violent Palestinian uprising erupted after peace talks collapsed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "y2k",
+        "friendly_name": "Y2K Millennium Bug",
+        "year": 2000,
+        "description": "The world braced for computer failures as the calendar rolled to a new millennium.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "putin-becomes-president",
+        "friendly_name": "Putin Becomes President",
+        "year": 2000,
+        "description": "Vladimir Putin was elected Russian President after serving as acting president, beginning his long rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "concorde-crash",
+        "friendly_name": "Concorde Crash",
+        "year": 2000,
+        "description": "A supersonic airliner crashed after takeoff from Paris, killing 113 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tate-modern",
+        "friendly_name": "Tate Modern Opens",
+        "year": 2000,
+        "description": "A former power station was converted into London's modern art museum.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 2004,
+    "title": "The Po'ouli Is Last Seen",
+    "candidates": [
+      {
+        "name": "eris-discovery",
+        "friendly_name": "Dwarf Planet Eris Discovered",
+        "year": 2005,
+        "description": "Discovery of Eris led the IAU to define planet for the first time, demoting Pluto.",
+        "score": 1,
+        "shared": [
+          "discovered"
+        ]
+      },
+      {
+        "name": "madrid-bombings",
+        "friendly_name": "Madrid Train Bombings",
+        "year": 2004,
+        "description": "Terrorist attacks on commuter trains killed 193 people in Spain.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beslan-school-siege",
+        "friendly_name": "Beslan School Siege",
+        "year": 2004,
+        "description": "Chechen terrorists took over a school in Russia, resulting in over 330 deaths.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "facebook-launched",
+        "friendly_name": "Facebook Launched",
+        "year": 2004,
+        "description": "Mark Zuckerberg launched the social network from his Harvard dorm room.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "eu-eastern-expansion",
+        "friendly_name": "EU Eastern Expansion",
+        "year": 2004,
+        "description": "Ten countries joined the European Union in its largest single expansion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "orange-revolution",
+        "friendly_name": "Orange Revolution",
+        "year": 2004,
+        "year_end": 2005,
+        "description": "Mass protests in Ukraine overturned fraudulent election and brought pro-Western government to power.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 2006,
+    "title": "Baiji Declared Functionally Extinct",
+    "candidates": [
+      {
+        "name": "three-gorges-dam",
+        "friendly_name": "Three Gorges Dam Completed",
+        "year": 2006,
+        "description": "The world's largest hydroelectric dam was finished on China's Yangtze River.",
+        "score": 1,
+        "shared": [
+          "yangtze"
+        ]
+      },
+      {
+        "name": "hpv-vaccine-approved",
+        "friendly_name": "HPV Vaccine Approved",
+        "year": 2006,
+        "description": "The first vaccine against human papillomavirus was approved, aiming to prevent cervical cancer.",
+        "score": 1,
+        "shared": [
+          "human"
+        ]
+      },
+      {
+        "name": "kobe-81-point-game-2006",
+        "friendly_name": "Kobe Bryant 81-Point Game",
+        "year": 2006,
+        "description": "Kobe Bryant scored 81 points against the Toronto Raptors, the second-highest single-game total in NBA history.",
+        "score": 1,
+        "shared": [
+          "single"
+        ]
+      },
+      {
+        "name": "google-earth-launch",
+        "friendly_name": "Google Earth Launches",
+        "year": 2005,
+        "description": "A free virtual globe stitched satellite imagery into a zoomable model of the planet, putting survey data on home computers.",
+        "score": 1,
+        "shared": [
+          "survey"
+        ]
+      },
+      {
+        "name": "twitter-launched",
+        "friendly_name": "Twitter Launched",
+        "year": 2006,
+        "description": "The microblogging platform began with its 140-character posts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "montenegro-independence",
+        "friendly_name": "Montenegro Independence",
+        "year": 2006,
+        "description": "Montenegro voted for independence from Serbia, completing Yugoslavia's dissolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 2012,
+    "title": "Lonesome George Dies",
+    "candidates": [
+      {
+        "name": "tesla-model-s",
+        "friendly_name": "Tesla Model S Released",
+        "year": 2012,
+        "description": "Tesla released the Model S, the first mainstream luxury electric vehicle with long range.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "armstrong-stripped-titles-2012",
+        "friendly_name": "Armstrong Stripped of Titles",
+        "year": 2012,
+        "description": "Lance Armstrong was stripped of his seven Tour de France titles and banned for life after a US doping investigation.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "frankel-retires-unbeaten-2012",
+        "friendly_name": "Frankel Retires Unbeaten",
+        "year": 2012,
+        "description": "Unbeaten in all 14 starts, the British colt Frankel retired as the highest-rated racehorse in the world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "richard-iii-grave-found",
+        "friendly_name": "Richard III Found Under Car Park",
+        "year": 2012,
+        "description": "Archaeologists dug up a council car park in Leicester and found the lost grave of the last Plantagenet king of England.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "black-lives-matter-founded",
+        "friendly_name": "Black Lives Matter Founded",
+        "year": 2013,
+        "description": "The movement began after Trayvon Martin's killer was acquitted.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "death-steve-jobs",
+        "friendly_name": "Death of Steve Jobs",
+        "year": 2011,
+        "description": "Apple co-founder Steve Jobs died of cancer, mourned worldwide for revolutionizing personal technology.",
+        "score": 1,
+        "shared": [
+          "died"
+        ]
+      },
+      {
+        "name": "egyptian-revolution-2011",
+        "friendly_name": "Tahrir Square Revolution",
+        "year": 2011,
+        "description": "Mass protests in Tahrir Square forced President Mubarak to resign after 30 years in power.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "jeddah-tower-begins",
+        "friendly_name": "Jeddah Tower Construction Begins",
+        "year": 2013,
+        "description": "Work began on what will be the world's first kilometer-tall building.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "death-nelson-mandela",
+        "friendly_name": "Death of Nelson Mandela",
+        "year": 2013,
+        "description": "The anti-apartheid leader who, after 27 years in prison, became South Africa's first Black president.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "rinderpest-eradicated",
+        "friendly_name": "Rinderpest Eradicated",
+        "year": 2011,
+        "description": "Rinderpest became the second disease (after smallpox) to be eradicated through vaccination.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "nyad-cuba-florida-2013",
+        "friendly_name": "Nyad Swims Cuba to Florida",
+        "year": 2013,
+        "description": "At 64, Diana Nyad became the first to swim from Cuba to Florida without a shark cage, a 53-hour crossing.",
+        "score": 1,
+        "shared": [
+          "without"
+        ]
+      },
+      {
+        "name": "solid-state-lidar",
+        "friendly_name": "Solid-State Lidar",
+        "year": 2010,
+        "year_end": 2019,
+        "description": "Compact laser-based sensors without moving parts, enabling autonomous vehicle navigation.",
+        "score": 1,
+        "shared": [
+          "without"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 2018,
+    "title": "Sudan, Last Male White Rhino, Dies",
+    "candidates": [
+      {
+        "name": "northern-white-rhino-decline",
+        "friendly_name": "Last Male White Rhino Dies",
+        "year": 2018,
+        "description": "Sudan, the last male northern white rhino, died, leaving the subspecies functionally extinct.",
+        "score": 9,
+        "shared": [
+          "sudan",
+          "last",
+          "male",
+          "white",
+          "rhino",
+          "dies",
+          "northern",
+          "subspecies",
+          "leaving"
+        ]
+      },
+      {
+        "name": "charlottesville-rally",
+        "friendly_name": "Charlottesville Rally",
+        "year": 2017,
+        "description": "White supremacist rally in Virginia turned deadly when a car plowed into counter-protesters.",
+        "score": 1,
+        "shared": [
+          "white"
+        ]
+      },
+      {
+        "name": "world-cup-super-over-final-2019",
+        "friendly_name": "World Cup Super Over Final",
+        "year": 2019,
+        "description": "England won the World Cup final over New Zealand on boundary count after the match and super over finished level.",
+        "score": 1,
+        "shared": [
+          "final"
+        ]
+      },
+      {
+        "name": "kipchoge-sub-two-hour-marathon-2019",
+        "friendly_name": "Kipchoge Breaks Two Hours",
+        "year": 2019,
+        "description": "Eliud Kipchoge ran 1:59:40 in Vienna, the first sub-two-hour marathon, though not an official world record.",
+        "score": 1,
+        "shared": [
+          "two"
+        ]
+      },
+      {
+        "name": "south-sudan-famine-declared",
+        "friendly_name": "Famine Declared in South Sudan",
+        "year": 2017,
+        "description": "The United Nations declared its first famine in six years amid civil war, striking parts of Unity state in South Sudan.",
+        "score": 1,
+        "shared": [
+          "sudan"
+        ]
+      },
+      {
+        "name": "khashoggi-murder",
+        "friendly_name": "Khashoggi Murder",
+        "year": 2018,
+        "description": "Saudi journalist Jamal Khashoggi was murdered and dismembered inside the Saudi consulate in Istanbul by a team linked to Crown Prince MBS.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 2021,
+    "title": "Ivory-Billed Woodpecker Delisted",
+    "candidates": [
+      {
+        "name": "capitol-riot-2021",
+        "friendly_name": "Capitol Riot",
+        "year": 2021,
+        "description": "A mob stormed the U.S. Capitol in an attempt to overturn the presidential election results.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "myanmar-coup-2021",
+        "friendly_name": "Myanmar Military Coup",
+        "year": 2021,
+        "description": "Military removes Aung San Suu Kyi and restores military rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "us-withdrawal-afghanistan",
+        "friendly_name": "US Withdrawal from Afghanistan",
+        "year": 2021,
+        "description": "US completed chaotic withdrawal from Afghanistan after 20 years of war, with Taliban rapidly taking control.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "texas-winter-storm",
+        "friendly_name": "Texas Winter Storm",
+        "year": 2021,
+        "description": "A severe winter storm caused power grid failures and over 200 deaths in Texas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "james-webb-launched",
+        "friendly_name": "James Webb Telescope Launched",
+        "year": 2021,
+        "description": "NASA launched the most powerful space telescope ever built.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "perseverance-mars-landing",
+        "friendly_name": "Perseverance Lands on Mars",
+        "year": 2021,
+        "description": "NASA's Perseverance rover landed on Mars with the Ingenuity helicopter.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 2022,
+    "title": "Chinese Paddlefish Declared Extinct",
+    "candidates": [
+      {
+        "name": "svb-collapse",
+        "friendly_name": "SVB Collapse",
+        "year": 2023,
+        "description": "Silicon Valley Bank failed in the second-largest bank collapse in U.S. history, triggering fears of a broader banking crisis.",
+        "score": 1,
+        "shared": [
+          "largest"
+        ]
+      },
+      {
+        "name": "russia-ukraine-invasion",
+        "friendly_name": "Russia Invades Ukraine",
+        "year": 2022,
+        "description": "Russia launched a full-scale invasion of Ukraine, starting a major European war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chatgpt-released",
+        "friendly_name": "ChatGPT Released",
+        "year": 2022,
+        "description": "OpenAI launched the AI chatbot that sparked a technological revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "queen-elizabeth-ii-dies",
+        "friendly_name": "Queen Elizabeth II Dies",
+        "year": 2022,
+        "description": "Queen Elizabeth II died after 70 years on the throne, the longest reign in British history.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dart-asteroid-impact",
+        "friendly_name": "DART Asteroid Impact",
+        "year": 2022,
+        "description": "NASA successfully deflected an asteroid for the first time in history.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nuclear-fusion-ignition",
+        "friendly_name": "Nuclear Fusion Ignition Achieved",
+        "year": 2022,
+        "description": "Scientists achieved fusion ignition, producing more energy than was input.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "id": "big-thinkers",
+  "name": "Big Thinkers",
+  "scope": "Yes if it is a defining work or teaching of a great philosopher",
+  "boundary": "Big Thinkers owns philosophy; scientific discoveries go to Eureka Moments, and the founding of religions to Faith Founded.",
+  "neighbours": ["eureka", "faith-founded"],
+  "grid": {
+    "categories": ["writing", "figures"],
+    "eras": ["ancient", "earlyModern", "industrial"],
+    "regions": ["Global"]
+  },
+  "example_beats": [
+    "Confucius's Analects (479 BC)",
+    "Socrates on trial (399 BC)",
+    "Plato's Republic (375 BC)",
+    "Aristotle opens the Lyceum (335 BC)",
+    "Marcus Aurelius's Meditations (180)",
+    "Avicenna's Book of Healing (1027)",
+    "Machiavelli's The Prince (1532)",
+    "Descartes: I think, therefore I am (1637)",
+    "Kant's Critique of Pure Reason (1781)",
+    "Wollstonecraft's Vindication (1792)",
+    "The Communist Manifesto (1848)",
+    "Beauvoir's The Second Sex (1949)"
+  ],
+  "notes": "One beat per thinker, dated to their defining work or teaching, spread across East and West and from the ancients to the present.",
+  "appeal": 3,
+  "status": "queued"
+}

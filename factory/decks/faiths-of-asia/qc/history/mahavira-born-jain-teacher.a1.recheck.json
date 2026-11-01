@@ -1,0 +1,15 @@
+{
+  "slug": "mahavira-born-jain-teacher",
+  "description": "An oil painting of a thin adult man with long hair, eyes closed, standing barefoot and fully nude, facing the viewer, in a dark forest before a large banyan-like tree. A gold-embroidered red cloth lies on the ground at his feet. No text, no frame; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The ascetic is shown fully nude and frontal, with pubic hair and genitals visible at the centre of the frame. Repaint with the lower body covered or turned away, for example in a loincloth or seen from behind or the side, keeping the tree, the discarded robe and the adult standing pose."
+}

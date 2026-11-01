@@ -1,0 +1,20 @@
+{
+  "mahavira-born-jain-teacher": {"recognition": "low", "inferability": "low", "anchors": ["Jainism", "prince"], "why": "Jainism and renouncing wealth suggest ancient India, but no firm era"},
+  "tao-te-ching-written": {"recognition": "medium", "inferability": "medium", "anchors": ["Laozi", "Taoism"], "why": "Laozi and a foundation text point to ancient China"},
+  "ashoka-converts-after-kalinga": {"recognition": "medium", "inferability": "high", "anchors": ["Ashoka", "emperor", "Buddhism"], "why": "Indian emperor turning Buddhist places it in antiquity"},
+  "celestial-masters-founded": {"recognition": "low", "inferability": "medium", "anchors": ["deified Laozi", "Taoist"], "why": "deified Laozi implies a time after Laozi, in early imperial China"},
+  "kojiki-records-shinto-myths": {"recognition": "low", "inferability": "medium", "anchors": ["oldest surviving book", "imperial line"], "why": "Japan's oldest book implies early historical Japan"},
+  "adi-shankara-born": {"recognition": "low", "inferability": "low", "anchors": ["Vedanta", "Kerala"], "why": "Vedanta revival does not fix a century"},
+  "nichiren-declares-teaching": {"recognition": "low", "inferability": "medium", "anchors": ["Japanese monk", "Lotus Sutra"], "why": "Buddhist monk in Japan suggests medieval era"},
+  "tsongkhapa-founds-ganden": {"recognition": "low", "inferability": "medium", "anchors": ["Gelug", "Dalai Lamas", "monastery"], "why": "precedes Dalai Lamas so late medieval; monastery narrows era"},
+  "guru-nanak-born": {"recognition": "medium", "inferability": "medium", "anchors": ["Sikhism", "ten gurus"], "why": "Sikhism is a later religion, roughly medieval/early modern"},
+  "dalai-lama-title-created": {"recognition": "medium", "inferability": "medium", "anchors": ["Mongol ruler", "abbot"], "why": "Mongol ruler giving title suggests medieval or early modern"},
+  "guru-granth-sahib-compiled": {"recognition": "low", "inferability": "medium", "anchors": ["fifth Sikh guru", "Amritsar"], "why": "fifth of ten gurus suggests early modern"},
+  "shinto-buddhism-separation-order": {"recognition": "low", "inferability": "medium", "anchors": ["new government", "Shinto"], "why": "new government and state Shinto hint at modern Japan but vague"},
+  "vivekananda-chicago-address": {"recognition": "medium", "inferability": "medium", "anchors": ["Chicago", "Hindu monk", "the West"], "why": "Chicago and Western audience imply the modern era"},
+  "ambedkar-converts-to-buddhism": {"recognition": "medium", "inferability": "high", "anchors": ["India's constitution", "mass conversion"], "why": "architect of India's constitution means after 1947"},
+  "hare-krishna-movement-founded": {"recognition": "medium", "inferability": "high", "anchors": ["New York storefront", "Western streets"], "why": "modern New York and swami point to the 20th century"},
+  "beatles-study-meditation-india": {"recognition": "high", "inferability": "high", "anchors": ["Beatles", "Transcendental Meditation"], "why": "Beatles anchor the 1960s"},
+  "dalai-lama-nobel-peace-prize": {"recognition": "high", "inferability": "high", "anchors": ["Nobel Peace Prize", "exiled Tibetan leader"], "why": "Nobel and exile place it in the late 20th century"},
+  "bamiyan-buddhas-destroyed": {"recognition": "high", "inferability": "high", "anchors": ["Taliban", "Afghanistan"], "why": "Taliban rule anchors it to the late 1990s or 2001"}
+}

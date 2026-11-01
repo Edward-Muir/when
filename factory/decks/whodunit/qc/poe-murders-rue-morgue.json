@@ -1,0 +1,15 @@
+{
+  "slug": "poe-murders-rue-morgue",
+  "description": "A man in a dark frock coat, hair swept back, leans over a window sill in a dim, shabby room, holding a candle in a brass holder while his other hand works at the window latch. On the floor are an overturned wooden chair, scattered silver coins and torn paper scraps. Tall panelled doors and heavy curtains frame the room, and the painting fills the whole image edge to edge, with no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "larderello-geothermal-plant",
+  "description": "An oil-style night scene of a vintage steam-era machine on a wooden platform, with a tall pipe rising from a pump or engine with a flywheel, a valve on a side pipe, and white steam billowing around it. Four or five men in dark suits and fedora or bowler hats stand around, under a string of glowing incandescent bulbs, with torches at the edges and steam plumes rising from a dark hillside behind. There is no visible text, signature, frame or border, and the painting fills the image edge to edge. Nothing is gory or nude.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

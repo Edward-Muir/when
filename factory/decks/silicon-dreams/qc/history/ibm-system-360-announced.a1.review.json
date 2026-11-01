@@ -1,0 +1,15 @@
+{
+  "slug": "ibm-system-360-announced",
+  "description": "A man in a white shirt and glasses leans over a control console covered in coloured indicator lights and switches, in the foreground. Behind him a man in a dark suit stands beside a tall blue cabinet. Further back, a row of tape drives with large reels, and two people in white lab coats. The room is dark with overhead lamps. Blue cabinets carry small white lettering that reads as 'IBM'.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Small 'IBM' lettering is painted on the blue cabinets (left and centre background), which breaks the no-text rule. Repaint the cabinets without the logo, or remove it."
+}

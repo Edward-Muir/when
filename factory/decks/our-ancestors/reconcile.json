@@ -1,0 +1,238 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "sahelanthropus-tchadensis"
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "orrorin-tugenensis"
+    },
+    {
+      "beat": 2,
+      "decision": "cut",
+      "slug": null,
+      "why": "Kadabba: weakest fame, crowded early stretch"
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "ardipithecus-ramidus-appears"
+    },
+    {
+      "beat": 4,
+      "decision": "new",
+      "slug": "australopithecus-anamensis-appears"
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "laetoli-footprints"
+    },
+    {
+      "beat": 6,
+      "decision": "cut",
+      "slug": null,
+      "why": "Kenyanthropus: weak fame, crowded stretch"
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "first-stone-tools",
+      "why": "Same event, same year: first stone tools c. 3.3 Mya."
+    },
+    {
+      "beat": 8,
+      "decision": "reuse",
+      "slug": "lucy-australopithecus-lived",
+      "why": "Lucy lived in the same year, same subject."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "australopithecus-africanus-appears"
+    },
+    {
+      "beat": 10,
+      "decision": "cut",
+      "slug": null,
+      "why": "Aethiopicus: weak fame, crowded stretch"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "oldowan-stone-tools"
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "homo-habilis",
+      "why": "Same species beat, same start year."
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "paranthropus-boisei-appears"
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "homo-erectus-stands-tall"
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": null,
+      "why": "Sediba: weak fame, crowded stretch"
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": null,
+      "why": "Ergaster: duplicates Homo erectus"
+    },
+    {
+      "beat": 17,
+      "decision": "new",
+      "slug": "dmanisi-humans-leave-africa"
+    },
+    {
+      "beat": 18,
+      "decision": "reuse",
+      "slug": "advanced-acheulean-stone-tools",
+      "why": "Acheulean tools, same start year."
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "homo-antecessor-atapuerca"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "wonderwerk-cave-fire"
+    },
+    {
+      "beat": 21,
+      "decision": "cut",
+      "slug": null,
+      "why": "Second fire beat: kept Wonderwerk only"
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "homo-heidelbergensis-emerges",
+      "why": "Same species, same year."
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "neanderthals-emerge-europe"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "homo-naledi-appears"
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "jebel-irhoud-homo-sapiens"
+    },
+    {
+      "beat": 26,
+      "decision": "cut",
+      "slug": null,
+      "why": "Apidima: debated, weak fame; Misliya kept"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "misliya-cave-sapiens"
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "denisovans-emerge"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "last-homo-erectus-java"
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "homo-floresiensis-hobbit"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "homo-luzonensis-appears"
+    },
+    {
+      "beat": 32,
+      "decision": "reuse",
+      "slug": "humans-reach-australia",
+      "why": "Same migration, same year."
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "sapiens-neanderthal-interbreeding"
+    },
+    {
+      "beat": 34,
+      "decision": "reuse",
+      "slug": "humans-enter-europe",
+      "why": "Earliest sapiens in Europe, same year as Humans Enter Europe."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "last-neanderthals-vanish"
+    },
+    {
+      "beat": 36,
+      "decision": "reuse",
+      "slug": "humans-reach-the-americas",
+      "why": "First Americans (White Sands), same year."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 1/8               (advisory, 6+ is spread)\n  PASS  band 0 29              (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 1 in -7000000--7000000 (want 3 or fewer in any 10 years)\n  PASS  shared 3 (before-us)   (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 54 earlier themes:\n        3  before-us              lucy-australopithecus-lived, homo-habilis, homo-heidelbergensis-emerges\n        2  ends-of-the-earth      humans-reach-australia, humans-reach-the-americas",
+  "footholds": [
+    "sahelanthropus-tchadensis",
+    "orrorin-tugenensis",
+    "ardipithecus-ramidus-appears",
+    "australopithecus-anamensis-appears",
+    "laetoli-footprints",
+    "first-stone-tools",
+    "lucy-australopithecus-lived",
+    "australopithecus-africanus-appears",
+    "oldowan-stone-tools",
+    "homo-habilis",
+    "paranthropus-boisei-appears",
+    "homo-erectus-stands-tall",
+    "dmanisi-humans-leave-africa",
+    "advanced-acheulean-stone-tools",
+    "homo-antecessor-atapuerca",
+    "wonderwerk-cave-fire",
+    "homo-heidelbergensis-emerges",
+    "neanderthals-emerge-europe",
+    "homo-naledi-appears",
+    "jebel-irhoud-homo-sapiens",
+    "misliya-cave-sapiens",
+    "denisovans-emerge",
+    "last-homo-erectus-java",
+    "homo-floresiensis-hobbit",
+    "homo-luzonensis-appears",
+    "humans-reach-australia",
+    "sapiens-neanderthal-interbreeding",
+    "humans-enter-europe",
+    "last-neanderthals-vanish",
+    "humans-reach-the-americas"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "late-jurassic-epoch-begins",
+  "description": "A painted scene of long-necked sauropods, several of them, grazing beside a winding river under a stormy, sunlit sky. A plated stegosaur stands in the foreground among ferns. Tall conifers (monkey-puzzle-like) and cycads fill the midground and edges. Dark, moody oil-painting style, no visible text, no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "homo-floresiensis-hobbit",
+  "description": "A tall, muscular, nearly naked hominin with a brown skin and a dark, heavy brow and short hair stands in dense tropical jungle, holding a dark stone tool in one hand. Beside it, a small tusked elephant-like animal with curled trunk walks through ferns. Tall trees, hanging vines and bright light filtering through the canopy fill the background. No text, frame or border is visible; the painting runs edge to edge in a dark, realistic oil style.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The scene asks for a metre-tall human with a small head stalking a dwarf elephant, but the figure reads as a full human-scale hominin, roughly as tall as the elephant's head and shoulders, with a large-featured face. Nothing in the image separates it from a generic early human (for example Homo erectus), so the artist should make the figure visibly small in stature, with a smaller head, so it reads as Homo floresiensis."
+}

@@ -1,0 +1,2511 @@
+[
+  {
+    "beat": 0,
+    "year": 1890,
+    "title": "Hollerith Tabulator Tallies Census",
+    "candidates": [
+      {
+        "name": "jukebox-invented",
+        "friendly_name": "Jukebox Invented",
+        "year": 1889,
+        "description": "The world's first coin-operated music machine debuted at a San Francisco saloon, playing recordings through listening tubes.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      },
+      {
+        "name": "wounded-knee-massacre",
+        "friendly_name": "Wounded Knee Massacre",
+        "year": 1890,
+        "description": "US Army troops killed approximately 300 Lakota Sioux at Wounded Knee, South Dakota, marking the end of the American Indian Wars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "sherman-antitrust-act",
+        "friendly_name": "Sherman Antitrust Act",
+        "year": 1890,
+        "description": "First US federal law prohibiting monopolistic business practices and promoting fair competition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bismarck-dismissed",
+        "friendly_name": "Bismarck Dismissed",
+        "year": 1890,
+        "description": "Kaiser Wilhelm II dismissed Chancellor Bismarck, ending the Iron Chancellor's 28-year dominance of German politics.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "motion-picture-camera",
+        "friendly_name": "Motion Picture Camera Invented",
+        "year": 1890,
+        "description": "Thomas Edison and William Dickson unveiled the kinetograph, one of the world's first motion picture cameras.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-agatha-christie",
+        "friendly_name": "Birth of Agatha Christie",
+        "year": 1890,
+        "description": "The English novelist and best-selling mystery writer who created Hercule Poirot and Miss Marple.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 1906,
+    "title": "De Forest Invents the Triode Tube",
+    "candidates": [
+      {
+        "name": "norway-independence-sweden",
+        "friendly_name": "Norway Independence from Sweden",
+        "year": 1905,
+        "description": "Norway peacefully dissolved its union with Sweden, becoming an independent constitutional monarchy.",
+        "score": 1,
+        "shared": [
+          "becoming"
+        ]
+      },
+      {
+        "name": "bakelite-plastic",
+        "friendly_name": "Bakelite Plastic Invented",
+        "year": 1907,
+        "description": "Leo Baekeland invented Bakelite, the first fully synthetic plastic that could be molded into any shape.",
+        "score": 1,
+        "shared": [
+          "could"
+        ]
+      },
+      {
+        "name": "algeciras-conference",
+        "friendly_name": "Algeciras Conference",
+        "year": 1906,
+        "description": "International conference resolved the First Moroccan Crisis, affirming French influence in Morocco.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "san-francisco-earthquake",
+        "friendly_name": "San Francisco Earthquake",
+        "year": 1906,
+        "description": "A massive earthquake and subsequent fires devastated the California city.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "valparaiso-earthquake",
+        "friendly_name": "Valparaiso Earthquake",
+        "year": 1906,
+        "description": "A devastating earthquake killed 3,000 and destroyed much of the Chilean city.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "courrieres-mine",
+        "friendly_name": "Courrières Mine Disaster",
+        "year": 1906,
+        "description": "Europe's worst mining disaster killed 1,099 in France.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 1918,
+    "title": "Eccles-Jordan Flip-Flop Circuit",
+    "candidates": [
+      {
+        "name": "march-first-movement",
+        "friendly_name": "March 1st Movement",
+        "year": 1919,
+        "description": "Koreans protested Japanese colonial rule in one of the earliest mass independence movements.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "us-enters-world-war-i",
+        "friendly_name": "US Enters World War I",
+        "year": 1917,
+        "description": "The United States declared war on Germany after unrestricted submarine warfare and the Zimmermann Telegram, tipping the balance toward Allied victory.",
+        "score": 1,
+        "shared": [
+          "states"
+        ]
+      },
+      {
+        "name": "persian-famine",
+        "friendly_name": "Persian Famine",
+        "year": 1917,
+        "year_end": 1919,
+        "description": "World War I and occupation caused a famine killing two million Persians.",
+        "score": 1,
+        "shared": [
+          "two"
+        ]
+      },
+      {
+        "name": "vernam-one-time-pad",
+        "friendly_name": "The One-Time Pad Patented",
+        "year": 1919,
+        "description": "Gilbert Vernam combined each teleprinter character with a key tape; with a random key used once, the result is unbreakable.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "wwi-end",
+        "friendly_name": "World War I Ends",
+        "year": 1918,
+        "description": "The armistice was signed ending the Great War after four years of conflict.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "red-army-formed",
+        "friendly_name": "Red Army Founded",
+        "year": 1918,
+        "description": "Trotsky organized the Workers' and Peasants' Red Army to defend the Revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1931,
+    "title": "Bush's Differential Analyzer Runs",
+    "candidates": [
+      {
+        "name": "electron-microscope",
+        "friendly_name": "Electron Microscope",
+        "year": 1931,
+        "description": "Ernst Ruska's microscope using electron beams for magnification beyond optical limits.",
+        "score": 1,
+        "shared": [
+          "using"
+        ]
+      },
+      {
+        "name": "statute-westminster",
+        "friendly_name": "Statute of Westminster",
+        "year": 1931,
+        "description": "British dominions gained legislative independence from the UK Parliament.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "japan-invades-manchuria",
+        "friendly_name": "Japan Invades Manchuria",
+        "year": 1931,
+        "description": "Japan seized Manchuria from China, creating puppet state Manchukuo and defying the League of Nations.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "china-great-floods",
+        "friendly_name": "Great China Floods",
+        "year": 1931,
+        "description": "Massive flooding killed up to four million people in central China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "empire-state-building",
+        "friendly_name": "Empire State Building Completed",
+        "year": 1931,
+        "description": "The iconic skyscraper became the world's tallest building for 40 years.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-mikhail-gorbachev",
+        "friendly_name": "Birth of Mikhail Gorbachev",
+        "year": 1931,
+        "description": "The last Soviet leader whose glasnost and perestroika reforms helped bring the Cold War to an end.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1938,
+    "title": "Zuse Completes the Z1",
+    "candidates": [
+      {
+        "name": "programmable-computer-z1",
+        "friendly_name": "Programmable Computer Z1",
+        "year": 1938,
+        "description": "Konrad Zuse built the first freely programmable mechanical computer in his parents' living room.",
+        "score": 8,
+        "shared": [
+          "zuse",
+          "built",
+          "programmable",
+          "his",
+          "parents",
+          "living",
+          "room",
+          "mechanical"
+        ]
+      },
+      {
+        "name": "germany-absorbs-austria",
+        "friendly_name": "Germany Absorbs Austria",
+        "year": 1938,
+        "description": "Germany annexed Austria in the Anschluss, uniting the two German-speaking nations under Nazi rule.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "tutankhamun-fossil-coelacanth",
+        "friendly_name": "Living Fossil Fish Found",
+        "year": 1938,
+        "description": "A coelacanth, a fish thought extinct for millions of years, was caught off South Africa.",
+        "score": 1,
+        "shared": [
+          "living"
+        ]
+      },
+      {
+        "name": "guernica-painted",
+        "friendly_name": "Guernica Painted",
+        "year": 1937,
+        "description": "Picasso painted his powerful anti-war response to the bombing of a Spanish town.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "hindenburg-disaster",
+        "friendly_name": "Hindenburg Disaster",
+        "year": 1937,
+        "description": "The German airship exploded while landing in New Jersey, ending the airship era.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "electronic-digital-computer",
+        "friendly_name": "Electronic Digital Computer",
+        "year": 1939,
+        "description": "John Atanasoff built the first electronic digital computing device at Iowa State College.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1941,
+    "title": "Zuse's Z3 Computes",
+    "candidates": [
+      {
+        "name": "pearl-harbor",
+        "friendly_name": "Attack on Pearl Harbor",
+        "year": 1941,
+        "description": "Japan's surprise attack brought the United States into World War II.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "siege-leningrad",
+        "friendly_name": "Siege of Leningrad Begins",
+        "year": 1941,
+        "description": "Nazi Germany began the deadliest siege in history, lasting 872 days.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "operation-barbarossa",
+        "friendly_name": "Operation Barbarossa",
+        "year": 1941,
+        "description": "Nazi Germany launched the largest military invasion in history against the Soviet Union.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "citizen-kane",
+        "friendly_name": "Citizen Kane Released",
+        "year": 1941,
+        "description": "Orson Welles directed what many consider the greatest film ever made.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "atlantic-charter",
+        "friendly_name": "Atlantic Charter",
+        "year": 1941,
+        "description": "Churchill and Roosevelt outlined Allied war aims and postwar goals.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lend-lease-act",
+        "friendly_name": "Lend-Lease Act",
+        "year": 1941,
+        "description": "The US began supplying Allied nations with military aid before entering World War II.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1946,
+    "title": "ENIAC Is Unveiled",
+    "candidates": [
+      {
+        "name": "first-eniac-computer",
+        "friendly_name": "First ENIAC Computer",
+        "year": 1946,
+        "description": "ENIAC, the first general-purpose electronic computer, was unveiled at the University of Pennsylvania.",
+        "score": 5,
+        "shared": [
+          "eniac",
+          "unveiled",
+          "pennsylvania",
+          "electronic",
+          "computer"
+        ]
+      },
+      {
+        "name": "bikini-introduced",
+        "friendly_name": "The Bikini Unveiled",
+        "year": 1946,
+        "description": "Designer Louis Reard debuted the two-piece bikini in Paris, named after a nuclear test site for its impact.",
+        "score": 1,
+        "shared": [
+          "unveiled"
+        ]
+      },
+      {
+        "name": "french-indochina-war-begins",
+        "friendly_name": "French-Indochina War Begins",
+        "year": 1946,
+        "description": "Ho Chi Minh's Viet Minh began armed resistance against French colonial rule, starting an eight-year war that ended with French defeat at Dien Bien Phu.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "churchill-iron-curtain-speech",
+        "friendly_name": "Churchill's Iron Curtain Speech",
+        "year": 1946,
+        "description": "Winston Churchill declared that an 'iron curtain' had descended across Europe, defining Cold War divisions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-un-general-assembly",
+        "friendly_name": "First UN General Assembly",
+        "year": 1946,
+        "description": "The first General Assembly of the United Nations assembles in London with 51 nations represented.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nuremberg-verdicts",
+        "friendly_name": "Nuremberg Verdicts",
+        "year": 1946,
+        "description": "International tribunal convicted Nazi leaders of war crimes, establishing precedent for international law.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1947,
+    "title": "Transistor Invented at Bell Labs",
+    "candidates": [
+      {
+        "name": "transistor-invented",
+        "friendly_name": "Transistor Invented",
+        "year": 1947,
+        "description": "Bell Labs scientists Bardeen, Brattain, and Shockley invented the transistor, enabling modern electronics.",
+        "score": 5,
+        "shared": [
+          "transistor",
+          "invented",
+          "bell",
+          "labs",
+          "electronics"
+        ]
+      },
+      {
+        "name": "holography",
+        "friendly_name": "Holography",
+        "year": 1947,
+        "description": "Dennis Gabor invented a technique for creating three-dimensional images using light waves.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "yeager-sound-barrier",
+        "friendly_name": "Yeager Breaks the Sound Barrier",
+        "year": 1947,
+        "description": "Chuck Yeager piloted the Bell X-1 past the speed of sound over the Mojave Desert, the first confirmed supersonic flight.",
+        "score": 1,
+        "shared": [
+          "bell"
+        ]
+      },
+      {
+        "name": "first-arab-israeli-war",
+        "friendly_name": "First Arab-Israeli War",
+        "year": 1948,
+        "year_end": 1949,
+        "description": "Arab states invaded the newly declared State of Israel, which successfully defended itself and expanded its territory beyond the UN partition plan.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "israel-founded",
+        "friendly_name": "State of Israel Founded",
+        "year": 1948,
+        "description": "Israel declared independence as a Jewish homeland.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "ashgabat-earthquake",
+        "friendly_name": "Ashgabat Earthquake",
+        "year": 1948,
+        "description": "A massive earthquake destroyed most of Ashgabat in Soviet Turkmenistan, and the state hid the true toll for decades.",
+        "score": 1,
+        "shared": [
+          "state"
+        ]
+      },
+      {
+        "name": "velcro-invented",
+        "friendly_name": "Velcro Invented",
+        "year": 1948,
+        "description": "Swiss engineer George de Mestral invented Velcro after noticing burrs stuck to his dog's fur.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "universal-declaration-human-rights",
+        "friendly_name": "Universal Human Rights Declared",
+        "year": 1948,
+        "description": "The United Nations adopted a declaration setting out fundamental human rights for all people everywhere.",
+        "score": 1,
+        "shared": [
+          "all"
+        ]
+      },
+      {
+        "name": "genocide-convention-adopted",
+        "friendly_name": "Genocide Convention Adopted",
+        "year": 1948,
+        "description": "The United Nations made genocide an international crime, pledging to prevent and punish it worldwide.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1948,
+    "title": "Manchester Baby Runs a Program",
+    "candidates": [
+      {
+        "name": "espresso-machine-crema",
+        "friendly_name": "Espresso Machine Makes Crema",
+        "year": 1948,
+        "description": "Achille Gaggia's lever machine forced hot water through ground coffee under pressure, giving espresso its crema.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      },
+      {
+        "name": "coppi-giro-tour-double-1949",
+        "friendly_name": "Coppi's Giro-Tour Double",
+        "year": 1949,
+        "description": "Fausto Coppi became the first rider to win the Giro d'Italia and the Tour de France in the same year.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "gandhi-assassination",
+        "friendly_name": "Gandhi Assassinated",
+        "year": 1948,
+        "description": "Mahatma Gandhi was shot by a Hindu nationalist in New Delhi.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-arab-israeli-war",
+        "friendly_name": "First Arab-Israeli War",
+        "year": 1948,
+        "year_end": 1949,
+        "description": "Arab states invaded the newly declared State of Israel, which successfully defended itself and expanded its territory beyond the UN partition plan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nascar-incorporated",
+        "friendly_name": "NASCAR Incorporated",
+        "year": 1948,
+        "description": "The National Association for Stock Car Auto Racing is incorporated.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "apartheid-begins",
+        "friendly_name": "Apartheid Begins",
+        "year": 1948,
+        "description": "South Africa's National Party began implementing apartheid, a system of institutionalized racial segregation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1951,
+    "title": "UNIVAC I Delivered",
+    "candidates": [
+      {
+        "name": "hopper-builds-first-compiler",
+        "friendly_name": "Hopper Builds First Compiler",
+        "year": 1952,
+        "description": "Computer scientist Grace Hopper completed the A-0 System, a program that translated symbolic code, the first working compiler.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "european-coal-steel",
+        "friendly_name": "European Coal and Steel Community",
+        "year": 1951,
+        "description": "Six nations created the first European supranational organization.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anzus-treaty",
+        "friendly_name": "ANZUS Treaty",
+        "year": 1951,
+        "description": "Security alliance between Australia, New Zealand, and the United States for Pacific defense.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "farnsworth-house",
+        "friendly_name": "Farnsworth House Completed",
+        "year": 1951,
+        "description": "Mies van der Rohe's glass pavilion was completed in Illinois.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-asian-games-1951",
+        "friendly_name": "First Asian Games",
+        "year": 1951,
+        "description": "New Delhi hosted the inaugural Asian Games, with 489 athletes from 11 nations competing across eight sports.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-pan-american-games-1951",
+        "friendly_name": "First Pan-American Games",
+        "year": 1951,
+        "description": "Buenos Aires staged the first Pan American Games, gathering over 2,500 athletes from 21 nations of the Americas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1954,
+    "title": "TRADIC Transistor Computer Built",
+    "candidates": [
+      {
+        "name": "first-solar-cell",
+        "friendly_name": "Silicon Solar Cell Invented",
+        "year": 1954,
+        "description": "Bell Labs created the first practical silicon solar cell, converting sunlight into electricity.",
+        "score": 2,
+        "shared": [
+          "bell",
+          "labs"
+        ]
+      },
+      {
+        "name": "cia-coup-in-guatemala",
+        "friendly_name": "CIA Coup in Guatemala",
+        "year": 1954,
+        "description": "The CIA overthrew democratically elected President Arbenz to protect United Fruit Company interests, beginning decades of military rule and civil war.",
+        "score": 1,
+        "shared": [
+          "military"
+        ]
+      },
+      {
+        "name": "georgetown-ibm-machine-translation",
+        "friendly_name": "Georgetown-IBM Machine Translation",
+        "year": 1954,
+        "description": "The first public demonstration of machine translation is held in New York at IBM headquarters.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      },
+      {
+        "name": "transistor-radio",
+        "friendly_name": "First Transistor Radio Released",
+        "year": 1954,
+        "description": "The Regency TR-1 became the first commercially sold transistor radio, making portable music a reality.",
+        "score": 1,
+        "shared": [
+          "transistor"
+        ]
+      },
+      {
+        "name": "warsaw-pact",
+        "friendly_name": "Warsaw Pact Founded",
+        "year": 1955,
+        "description": "The Soviet Union and Eastern Bloc formed a military alliance.",
+        "score": 1,
+        "shared": [
+          "military"
+        ]
+      },
+      {
+        "name": "heart-lung-machine-first-use",
+        "friendly_name": "Heart-Lung Machine Debuts",
+        "year": 1953,
+        "description": "A surgeon used his own heart-lung machine to keep a patient alive while he repaired a hole in her heart, opening the era of open-heart surgery.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1956,
+    "title": "IBM Unveils the Hard Disk Drive",
+    "candidates": [
+      {
+        "name": "hard-disk-drive",
+        "friendly_name": "Hard Disk Drive",
+        "year": 1956,
+        "description": "IBM introduced the first magnetic disk storage system for computers, weighing over a ton.",
+        "score": 4,
+        "shared": [
+          "ibm",
+          "hard",
+          "disk",
+          "drive"
+        ]
+      },
+      {
+        "name": "tharp-ocean-floor-map",
+        "friendly_name": "Tharp Maps the Ocean Floor",
+        "year": 1957,
+        "description": "Marie Tharp and Bruce Heezen turned sounding data into a picture of the Atlantic seabed, revealing a rift along its ridge.",
+        "score": 1,
+        "shared": [
+          "data"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "millions"
+        ]
+      },
+      {
+        "name": "suez-crisis",
+        "friendly_name": "Suez Crisis",
+        "year": 1956,
+        "year_end": 1957,
+        "description": "Britain and France failed to seize the Suez Canal, marking the end of European colonialism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hungarian-revolution",
+        "friendly_name": "Hungarian Revolution",
+        "year": 1956,
+        "description": "Soviet tanks crushed a popular uprising against communist rule in Hungary.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "elvis-ed-sullivan",
+        "friendly_name": "Elvis on Ed Sullivan",
+        "year": 1956,
+        "description": "Elvis Presley's television appearance launched rock and roll into the mainstream.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1958,
+    "title": "First Integrated Circuit Built",
+    "candidates": [
+      {
+        "name": "pele-first-world-cup-win",
+        "friendly_name": "Pele Wins First World Cup",
+        "year": 1958,
+        "description": "A teenage Pele starred as Brazil won the World Cup in Sweden, announcing one of soccer's greatest players.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "little-rock-nine",
+        "friendly_name": "Little Rock Nine",
+        "year": 1957,
+        "description": "Nine Black students integrated Little Rock Central High School under federal troop protection.",
+        "score": 1,
+        "shared": [
+          "integrated"
+        ]
+      },
+      {
+        "name": "mosfet-transistor",
+        "friendly_name": "MOSFET Transistor",
+        "year": 1959,
+        "description": "Atalla and Kahng invented the metal-oxide-semiconductor transistor powering modern electronics.",
+        "score": 1,
+        "shared": [
+          "semiconductor"
+        ]
+      },
+      {
+        "name": "fangio-fifth-f1-title-1957",
+        "friendly_name": "Fangio's Fifth F1 Title",
+        "year": 1957,
+        "description": "Juan Manuel Fangio clinched his fifth Formula One title, a record that stood for 46 years until Michael Schumacher.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "ns-lenin-enters-service",
+        "friendly_name": "NS Lenin Enters Service",
+        "year": 1959,
+        "description": "The Soviet Union commissioned Lenin, the first nuclear powered surface ship, an icebreaker built to keep Arctic shipping lanes open year round.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "great-leap-forward",
+        "friendly_name": "Great Leap Forward",
+        "year": 1958,
+        "year_end": 1962,
+        "description": "Mao launched a radical campaign to rapidly industrialize China, resulting in history's deadliest famine with an estimated 30-45 million deaths.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1960,
+    "title": "DEC Delivers the PDP-1",
+    "candidates": [
+      {
+        "name": "first-summer-paralympics",
+        "friendly_name": "First Paralympic Games",
+        "year": 1960,
+        "description": "Rome hosted the first Paralympic Games for athletes with disabilities, held just after the Summer Olympics.",
+        "score": 1,
+        "shared": [
+          "games"
+        ]
+      },
+      {
+        "name": "satellite-navigation-transit",
+        "friendly_name": "First Satellite Navigation System",
+        "year": 1960,
+        "description": "The U.S. Navy launched Transit, the first satellite navigation system, a precursor to GPS.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "olduvai-tools-found",
+        "friendly_name": "Oldest Stone Tools Found",
+        "year": 1959,
+        "description": "The Leakeys uncovered early human fossils and stone tools at Olduvai Gorge in Tanzania.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "amnesty-international-founded",
+        "friendly_name": "Amnesty International Founded",
+        "year": 1961,
+        "description": "A London lawyer launched a global movement to free prisoners of conscience and defend human rights.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "samuel-checkers-program",
+        "friendly_name": "Checkers Program Teaches Itself",
+        "year": 1959,
+        "description": "Arthur Samuel's checkers program improved by playing against itself, an early demonstration of machine learning.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "great-leap-forward",
+        "friendly_name": "Great Leap Forward",
+        "year": 1958,
+        "year_end": 1962,
+        "description": "Mao launched a radical campaign to rapidly industrialize China, resulting in history's deadliest famine with an estimated 30-45 million deaths.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1964,
+    "title": "IBM Announces System/360",
+    "candidates": [
+      {
+        "name": "cosmic-microwave-background",
+        "friendly_name": "Cosmic Background Radiation Found",
+        "year": 1965,
+        "description": "Penzias and Wilson accidentally discovered cosmic background radiation, confirming the Big Bang theory.",
+        "score": 1,
+        "shared": [
+          "big"
+        ]
+      },
+      {
+        "name": "zanzibar-revolution",
+        "friendly_name": "Zanzibar Revolution",
+        "year": 1964,
+        "description": "Rebels in Zanzibar begin a revolt and proclaim a republic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beatles-ed-sullivan",
+        "friendly_name": "Beatles on Ed Sullivan",
+        "year": 1964,
+        "description": "The Beatles' American TV debut launched the British Invasion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tokyo-olympics-1964",
+        "friendly_name": "Tokyo Olympics",
+        "year": 1964,
+        "description": "Japan hosted the Olympics, showcasing its postwar recovery to the world.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blue-ribbon-sports-founded",
+        "friendly_name": "Blue Ribbon Sports Founded",
+        "year": 1964,
+        "description": "Blue Ribbon Sports, which would later become Nike, is founded by University of Oregon athletes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "civil-rights-act",
+        "friendly_name": "Civil Rights Act",
+        "year": 1964,
+        "description": "The US outlawed discrimination based on race, color, religion, sex, or national origin.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1965,
+    "title": "DEC Launches the PDP-8",
+    "candidates": [
+      {
+        "name": "khrushchev-ousted",
+        "friendly_name": "Khrushchev Ousted",
+        "year": 1964,
+        "description": "Soviet leadership removed Khrushchev from power, replacing him with Brezhnev.",
+        "score": 1,
+        "shared": [
+          "power"
+        ]
+      },
+      {
+        "name": "luna-9-launched",
+        "friendly_name": "Luna 9 Launched",
+        "year": 1966,
+        "description": "The Soviet Union launches the unmanned Luna 9 spacecraft to achieve first soft landing on the Moon.",
+        "score": 1,
+        "shared": [
+          "launches"
+        ]
+      },
+      {
+        "name": "vietnam-war-start",
+        "friendly_name": "Vietnam War Escalates",
+        "year": 1965,
+        "description": "The United States deployed ground troops to South Vietnam.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "malcolm-x-assassinated",
+        "friendly_name": "Malcolm X Assassinated",
+        "year": 1965,
+        "description": "Black nationalist leader Malcolm X was shot dead in New York by members of the Nation of Islam, from which he had recently split.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dylan-goes-electric",
+        "friendly_name": "Bob Dylan Goes Electric",
+        "year": 1965,
+        "description": "Dylan caused controversy by playing electric guitar at Newport Folk Festival.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "voting-rights-act",
+        "friendly_name": "Voting Rights Act",
+        "year": 1965,
+        "description": "The US prohibited racial discrimination in voting.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1971,
+    "title": "Intel's 4004 Microprocessor Debuts",
+    "candidates": [
+      {
+        "name": "microprocessor-invented",
+        "friendly_name": "Microprocessor Invented",
+        "year": 1971,
+        "description": "Intel released the 4004, the first single-chip microprocessor, paving the way for personal computers.",
+        "score": 5,
+        "shared": [
+          "intel",
+          "4004",
+          "microprocessor",
+          "single",
+          "chip"
+        ]
+      },
+      {
+        "name": "nasdaq-launches",
+        "friendly_name": "NASDAQ Stock Market Opens",
+        "year": 1971,
+        "description": "NASDAQ began as the world's first electronic stock market, trading shares through computers instead of a floor.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "monday-night-football-debut",
+        "friendly_name": "Monday Night Football Debuts",
+        "year": 1970,
+        "description": "ABC aired the first Monday Night Football broadcast, with the Cleveland Browns hosting the New York Jets in prime time.",
+        "score": 1,
+        "shared": [
+          "debuts"
+        ]
+      },
+      {
+        "name": "landsat-earth-imaging",
+        "friendly_name": "First Landsat Satellite",
+        "year": 1972,
+        "description": "A NASA satellite began imaging the land surface in repeating swaths, giving mapmakers a continuous view from orbit.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "utc-leap-second",
+        "friendly_name": "First Leap Second Added",
+        "year": 1972,
+        "description": "Coordinated Universal Time began inserting a spare second whenever atomic clocks ran ahead of the slowing Earth.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "bangladesh-liberation-war",
+        "friendly_name": "Bangladesh Liberation War",
+        "year": 1971,
+        "description": "East Pakistan broke away with Indian help to become Bangladesh.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1973,
+    "title": "Xerox Alto Computer Built",
+    "candidates": [
+      {
+        "name": "xerox-alto-gui",
+        "friendly_name": "Xerox Alto Computer",
+        "year": 1973,
+        "description": "Xerox PARC developed the Alto, the first computer with a graphical user interface and mouse.",
+        "score": 4,
+        "shared": [
+          "xerox",
+          "alto",
+          "computer",
+          "mouse"
+        ]
+      },
+      {
+        "name": "ethernet-invented",
+        "friendly_name": "Ethernet Invented",
+        "year": 1973,
+        "description": "Bob Metcalfe invented Ethernet at Xerox PARC, enabling high-speed local area networking.",
+        "score": 1,
+        "shared": [
+          "xerox"
+        ]
+      },
+      {
+        "name": "rubiks-cube-invented",
+        "friendly_name": "Rubik's Cube Invented",
+        "year": 1974,
+        "description": "Hungarian Erno Rubik built a twisting cube of colored squares that became a hugely popular puzzle toy.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "warsaw-radio-mast-erected",
+        "friendly_name": "Warsaw Radio Mast Erected",
+        "year": 1974,
+        "description": "A guyed radio mast near Konstantynow in Poland was completed, becoming the tallest human made structure ever built.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "yom-kippur-war",
+        "friendly_name": "Yom Kippur War",
+        "year": 1973,
+        "description": "Egypt and Syria launched a surprise attack on Israel during the Jewish holiday.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chilean-coup",
+        "friendly_name": "Chilean Coup",
+        "year": 1973,
+        "description": "General Pinochet overthrew elected socialist President Salvador Allende with US support, beginning 17 years of military dictatorship.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1975,
+    "title": "Altair 8800 Kit Computer Appears",
+    "candidates": [
+      {
+        "name": "personal-computer",
+        "friendly_name": "Personal Computer Introduced",
+        "year": 1975,
+        "description": "The Altair 8800 launched the personal computer revolution, followed shortly by the Apple I.",
+        "score": 3,
+        "shared": [
+          "altair",
+          "8800",
+          "computer"
+        ]
+      },
+      {
+        "name": "apple-founded",
+        "friendly_name": "Apple Computer Founded",
+        "year": 1976,
+        "description": "Steve Jobs and Steve Wozniak founded Apple in a garage.",
+        "score": 2,
+        "shared": [
+          "computer",
+          "garage"
+        ]
+      },
+      {
+        "name": "microsoft-founded",
+        "friendly_name": "Microsoft Founded",
+        "year": 1975,
+        "description": "Bill Gates and Paul Allen founded Microsoft to develop software for personal computers.",
+        "score": 1,
+        "shared": [
+          "software"
+        ]
+      },
+      {
+        "name": "four-colour-theorem-proved",
+        "friendly_name": "Four Colour Theorem Proved",
+        "year": 1976,
+        "description": "Appel and Haken showed four colours suffice for any map, the first major proof to lean on a computer.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "vietnam-war-end",
+        "friendly_name": "Fall of Saigon",
+        "year": 1975,
+        "description": "North Vietnamese forces captured Saigon, ending the Vietnam War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cambodian-genocide",
+        "friendly_name": "Khmer Rouge Genocide",
+        "year": 1975,
+        "year_end": 1979,
+        "description": "The Khmer Rouge regime killed well over a million Cambodians through execution, starvation and forced labour.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1976,
+    "title": "Cray-1 Supercomputer Installed",
+    "candidates": [
+      {
+        "name": "viking-lands-on-mars",
+        "friendly_name": "Viking Lands on Mars",
+        "year": 1976,
+        "description": "NASA's Viking 1 became the first spacecraft to successfully land on Mars and transmit surface images.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "cn-tower",
+        "friendly_name": "CN Tower Completed",
+        "year": 1976,
+        "description": "The communications tower became Toronto's most recognizable landmark.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "first-squash-world-open-1976",
+        "friendly_name": "First Squash World Open",
+        "year": 1976,
+        "description": "Geoff Hunt won the first men's World Open in London, the tournament that became squash's world individual championship.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "star-wars",
+        "friendly_name": "Star Wars Released",
+        "year": 1977,
+        "description": "George Lucas's space opera became a cultural phenomenon.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "self-driving-car-prototype",
+        "friendly_name": "Self-Driving Car Prototype",
+        "year": 1977,
+        "description": "Tsukuba Mechanical Engineering Lab demonstrated the first autonomous vehicle using camera navigation.",
+        "score": 1,
+        "shared": [
+          "lab"
+        ]
+      },
+      {
+        "name": "monoclonal-antibodies-created",
+        "friendly_name": "Monoclonal Antibodies Created",
+        "year": 1975,
+        "description": "Kohler and Milstein produced identical antibodies in the lab, enabling new diagnostics and drugs.",
+        "score": 1,
+        "shared": [
+          "lab"
+        ]
+      },
+      {
+        "name": "last-natural-smallpox-case",
+        "friendly_name": "Last Natural Smallpox Case",
+        "year": 1977,
+        "description": "A hospital cook in Somalia became the last person to catch smallpox naturally, ending its spread.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1977,
+    "title": "Apple II Goes on Sale",
+    "candidates": [
+      {
+        "name": "atari-2600",
+        "friendly_name": "Atari 2600 Home Console Released",
+        "year": 1977,
+        "description": "Atari released the Video Computer System, popularizing home video gaming with interchangeable cartridges.",
+        "score": 2,
+        "shared": [
+          "home",
+          "computer"
+        ]
+      },
+      {
+        "name": "apple-founded",
+        "friendly_name": "Apple Computer Founded",
+        "year": 1976,
+        "description": "Steve Jobs and Steve Wozniak founded Apple in a garage.",
+        "score": 2,
+        "shared": [
+          "apple",
+          "computer"
+        ]
+      },
+      {
+        "name": "four-colour-theorem-proved",
+        "friendly_name": "Four Colour Theorem Proved",
+        "year": 1976,
+        "description": "Appel and Haken showed four colours suffice for any map, the first major proof to lean on a computer.",
+        "score": 2,
+        "shared": [
+          "computer",
+          "colour"
+        ]
+      },
+      {
+        "name": "sadaharu-oh-756th-home-run-1977",
+        "friendly_name": "Sadaharu Oh's 756th Home Run",
+        "year": 1977,
+        "description": "Japan's Sadaharu Oh hit his 756th career home run, passing Hank Aaron to become the world's all-time home run king.",
+        "score": 1,
+        "shared": [
+          "home"
+        ]
+      },
+      {
+        "name": "vhs-videotape",
+        "friendly_name": "VHS Videotape Released",
+        "year": 1976,
+        "description": "JVC launched VHS in Japan, igniting the format war with Betamax and the home video revolution.",
+        "score": 1,
+        "shared": [
+          "home"
+        ]
+      },
+      {
+        "name": "microwave-meals-spread",
+        "friendly_name": "Microwave Cooking Spreads",
+        "year": 1967,
+        "year_end": 1985,
+        "description": "Affordable countertop microwave ovens reached homes, changing how families reheated and cooked food.",
+        "score": 1,
+        "shared": [
+          "homes"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1981,
+    "title": "IBM PC Launched",
+    "candidates": [
+      {
+        "name": "first-space-shuttle-launch",
+        "friendly_name": "First Space Shuttle Launch",
+        "year": 1981,
+        "description": "Space Shuttle Columbia launched on STS-1, beginning NASA's reusable spacecraft program that flew for three decades.",
+        "score": 2,
+        "shared": [
+          "launched",
+          "decades"
+        ]
+      },
+      {
+        "name": "trivial-pursuit-launched",
+        "friendly_name": "Trivial Pursuit Launched",
+        "year": 1981,
+        "description": "Two Canadians launched Trivial Pursuit, a board game of general-knowledge questions that became a sensation.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "post-it-notes",
+        "friendly_name": "Post-it Notes Launched",
+        "year": 1980,
+        "description": "3M launched Post-it Notes after Spencer Silver's adhesive and Art Fry's bookmark idea came together.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "compact-disc-invented",
+        "friendly_name": "Compact Disc Invented",
+        "year": 1982,
+        "description": "Philips and Sony launched the compact disc, ushering in the digital audio revolution.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "fax-machine-widespread",
+        "friendly_name": "Fax Machine Standardized",
+        "year": 1980,
+        "description": "A global standard for fax machines let offices transmit document images over phone lines worldwide.",
+        "score": 1,
+        "shared": [
+          "standard"
+        ]
+      },
+      {
+        "name": "gretzky-92-goal-season-1982",
+        "friendly_name": "Gretzky's 92-Goal Season",
+        "year": 1982,
+        "description": "Wayne Gretzky set the NHL single-season record with 92 goals for the Edmonton Oilers.",
+        "score": 1,
+        "shared": [
+          "set"
+        ]
+      },
+      {
+        "name": "kbo-league-founded-korea-1982",
+        "friendly_name": "KBO League Founded in Korea",
+        "year": 1982,
+        "description": "South Korea's professional KBO League launched with six franchises, opening its inaugural season in Seoul.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1984,
+    "title": "Apple Macintosh Debuts",
+    "candidates": [
+      {
+        "name": "apple-macintosh-1984",
+        "friendly_name": "Apple Macintosh Released",
+        "year": 1984,
+        "description": "Apple released the Macintosh, popularizing the graphical user interface for personal computers.",
+        "score": 4,
+        "shared": [
+          "apple",
+          "macintosh",
+          "graphical",
+          "interface"
+        ]
+      },
+      {
+        "name": "sync-swim-olympic-1984",
+        "friendly_name": "Synchro Swimming Joins Olympics",
+        "year": 1984,
+        "description": "Synchronized swimming made its Olympic debut at the Los Angeles Games with solo and duet events for women.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "assassination-of-indira-gandhi",
+        "friendly_name": "Assassination of Indira Gandhi",
+        "year": 1984,
+        "description": "Indian Prime Minister Indira Gandhi was shot by her Sikh bodyguards in retaliation for ordering the assault on the Golden Temple.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bhopal-gas-disaster",
+        "friendly_name": "Bhopal Gas Disaster",
+        "year": 1984,
+        "description": "A gas leak at a pesticide plant in India killed thousands in the world's worst industrial disaster.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dna-fingerprinting",
+        "friendly_name": "DNA Fingerprinting Invented",
+        "year": 1984,
+        "description": "Alec Jeffreys developed DNA fingerprinting, revolutionizing forensic science and paternity testing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "itaipu-dam",
+        "friendly_name": "Itaipu Dam Completed",
+        "year": 1984,
+        "description": "The massive hydroelectric dam on the Brazil-Paraguay border was finished.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1985,
+    "title": "ARM1 Processor First Runs",
+    "candidates": [
+      {
+        "name": "titanic-wreck-found",
+        "friendly_name": "Titanic Wreck Discovered",
+        "year": 1985,
+        "description": "Robert Ballard discovered the wreck of the Titanic on the ocean floor.",
+        "score": 1,
+        "shared": [
+          "found"
+        ]
+      },
+      {
+        "name": "people-power-revolution",
+        "friendly_name": "People Power Revolution",
+        "year": 1986,
+        "description": "Peaceful mass protests overthrew dictator Ferdinand Marcos, restoring democracy in the Philippines.",
+        "score": 1,
+        "shared": [
+          "power"
+        ]
+      },
+      {
+        "name": "chernobyl-disaster",
+        "friendly_name": "Chernobyl Nuclear Disaster",
+        "year": 1986,
+        "description": "The world's worst nuclear accident occurred at a Soviet power plant in Ukraine.",
+        "score": 1,
+        "shared": [
+          "power"
+        ]
+      },
+      {
+        "name": "kareem-scoring-record-1984",
+        "friendly_name": "Kareem Sets Scoring Record",
+        "year": 1984,
+        "description": "Kareem Abdul-Jabbar passed Wilt Chamberlain to become the NBA's all-time leading scorer with a signature skyhook.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "live-aid",
+        "friendly_name": "Live Aid Concert",
+        "year": 1985,
+        "description": "A dual-venue rock concert raised millions for Ethiopian famine relief.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gorbachev-becomes-leader",
+        "friendly_name": "Gorbachev Becomes Leader",
+        "year": 1985,
+        "description": "Mikhail Gorbachev became Soviet leader, initiating reforms that would ultimately end the Cold War.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1989,
+    "title": "Intel 486 Chip Debuts",
+    "candidates": [
+      {
+        "name": "iran-iraq-war-ends",
+        "friendly_name": "Iran-Iraq War Ends",
+        "year": 1988,
+        "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+        "score": 2,
+        "shared": [
+          "over",
+          "million"
+        ]
+      },
+      {
+        "name": "game-boy-released",
+        "friendly_name": "Nintendo Game Boy Released",
+        "year": 1989,
+        "description": "Nintendo released the Game Boy, the handheld console that dominated portable gaming for over a decade.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "lockerbie-bombing",
+        "friendly_name": "Lockerbie Bombing",
+        "year": 1988,
+        "description": "A terrorist bomb destroyed Pan Am Flight 103 over Scotland, killing 270.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "armenian-earthquake",
+        "friendly_name": "Armenian Earthquake",
+        "year": 1988,
+        "description": "A devastating earthquake killed over 25,000 people in Soviet Armenia.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "suleymanoglu-seoul-triple-1988",
+        "friendly_name": "Suleymanoglu's Seoul Triple",
+        "year": 1988,
+        "description": "Turkey's Naim Suleymanoglu set three world records at Seoul, clean and jerking 190 kg at over three times his body weight.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "berlin-wall-fall",
+        "friendly_name": "Fall of the Berlin Wall",
+        "year": 1989,
+        "description": "East Germany opened its borders, symbolizing the end of the Cold War.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1993,
+    "title": "Intel Ships the Pentium",
+    "candidates": [
+      {
+        "name": "short-track-olympic-debut-1992",
+        "friendly_name": "Short Track's Olympic Debut",
+        "year": 1992,
+        "description": "Short track speed skating made its official Olympic debut at the Albertville Winter Games with four medal events.",
+        "score": 1,
+        "shared": [
+          "speed"
+        ]
+      },
+      {
+        "name": "oslo-accords",
+        "friendly_name": "Oslo Accords",
+        "year": 1993,
+        "description": "Israel and the PLO signed agreements toward Palestinian self-governance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "eritrea-independence",
+        "friendly_name": "Eritrea Independence",
+        "year": 1993,
+        "description": "Eritrea gained independence from Ethiopia after 30 years of armed struggle.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "waco-siege",
+        "friendly_name": "Waco Siege",
+        "year": 1993,
+        "description": "A federal siege of a religious compound ended in a fire killing 76 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mosaic-web-browser",
+        "friendly_name": "Mosaic Web Browser Released",
+        "year": 1993,
+        "description": "NCSA Mosaic launched as the first widely popular graphical web browser, making the Web accessible to ordinary users.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pdf-format-released",
+        "friendly_name": "PDF Format Released",
+        "year": 1993,
+        "description": "Adobe released the PDF, a portable format preserving documents identically across all devices.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1997,
+    "title": "Deep Blue Beats Kasparov",
+    "candidates": [
+      {
+        "name": "deep-blue-beats-kasparov",
+        "friendly_name": "Deep Blue Beats Kasparov",
+        "year": 1997,
+        "description": "IBM's Deep Blue defeated world champion Garry Kasparov, the first computer to beat a top human at chess.",
+        "score": 8,
+        "shared": [
+          "deep",
+          "blue",
+          "beats",
+          "kasparov",
+          "ibm",
+          "world",
+          "chess",
+          "champion"
+        ]
+      },
+      {
+        "name": "blair-becomes-pm",
+        "friendly_name": "Blair Becomes PM",
+        "year": 1997,
+        "description": "Tony Blair's Labour Party won a landslide victory, ending 18 years of Conservative government in Britain.",
+        "score": 1,
+        "shared": [
+          "won"
+        ]
+      },
+      {
+        "name": "princess-diana-death",
+        "friendly_name": "Princess Diana Dies",
+        "year": 1997,
+        "description": "Princess Diana was killed in a car crash in Paris, shocking the world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "tiger-woods-first-masters",
+        "friendly_name": "Tiger Woods Wins First Masters",
+        "year": 1997,
+        "description": "Tiger Woods won the Masters golf tournament by a record margin, the first Black golfer to take the title.",
+        "score": 1,
+        "shared": [
+          "won"
+        ]
+      },
+      {
+        "name": "petronas-towers",
+        "friendly_name": "Petronas Towers Completed",
+        "year": 1998,
+        "description": "The twin skyscrapers became the world's tallest buildings in Kuala Lumpur.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "hong-kong-airport",
+        "friendly_name": "Hong Kong Airport Opens",
+        "year": 1998,
+        "description": "One of the world's largest and busiest airports opened on Lantau Island.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "akashi-kaikyo-bridge",
+        "friendly_name": "Akashi Kaikyo Bridge Completed",
+        "year": 1998,
+        "description": "The world's longest suspension bridge opened in Japan.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1998,
+    "title": "Apple Launches the Original iMac",
+    "candidates": [
+      {
+        "name": "hong-kong-airport",
+        "friendly_name": "Hong Kong Airport Opens",
+        "year": 1998,
+        "description": "One of the world's largest and busiest airports opened on Lantau Island.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "snowboarding-olympic-debut-1998",
+        "friendly_name": "Snowboarding Joins Olympics",
+        "year": 1998,
+        "description": "Snowboarding made its Olympic debut at the Nagano Winter Games with halfpipe and giant slalom events.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "el-nino-super",
+        "friendly_name": "Super El Niño",
+        "year": 1997,
+        "year_end": 1998,
+        "description": "One of the strongest El Niño events caused $35 billion in damage worldwide.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "deep-blue-beats-kasparov",
+        "friendly_name": "Deep Blue Beats Kasparov",
+        "year": 1997,
+        "description": "IBM's Deep Blue defeated world champion Garry Kasparov, the first computer to beat a top human at chess.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "tyson-bites-holyfields-ear",
+        "friendly_name": "Tyson Bites Holyfield's Ear",
+        "year": 1997,
+        "description": "Mike Tyson was disqualified for biting Evander Holyfield's ear in one of boxing's most infamous heavyweight bouts.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "us-embassy-bombings",
+        "friendly_name": "US Embassy Bombings",
+        "year": 1998,
+        "description": "Al-Qaeda bombed US embassies in Kenya and Tanzania, killing 224 people and marking a major escalation in jihadist attacks on America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1999,
+    "title": "Nvidia Brands the First GPU",
+    "candidates": [
+      {
+        "name": "first-hand-transplant",
+        "friendly_name": "First Hand Transplant",
+        "year": 1998,
+        "description": "Surgeons in Lyon grafted a donor hand onto a recipient's arm, the first hand transplant, though it was later removed at the patient's own request.",
+        "score": 2,
+        "shared": [
+          "onto",
+          "later"
+        ]
+      },
+      {
+        "name": "kosovo-war",
+        "friendly_name": "Kosovo War Ends",
+        "year": 1999,
+        "description": "NATO bombing forced Serbian withdrawal from Kosovo.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "euro-introduced",
+        "friendly_name": "Euro Currency Introduced",
+        "year": 1999,
+        "description": "Eleven European nations adopted a common currency.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "macau-handover",
+        "friendly_name": "Macau Handover",
+        "year": 1999,
+        "description": "Portugal returned Macau to China after over 400 years of colonial rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "east-timor-independence-vote",
+        "friendly_name": "East Timor Independence Vote",
+        "year": 1999,
+        "description": "East Timor voted for independence from Indonesia, leading to violence and UN intervention.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "columbine-shooting",
+        "friendly_name": "Columbine School Shooting",
+        "year": 1999,
+        "description": "Two students killed 13 people at a Colorado high school in a mass shooting.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 2001,
+    "title": "IBM Quantum Computer Factors 15",
+    "candidates": [
+      {
+        "name": "y2k",
+        "friendly_name": "Y2K Millennium Bug",
+        "year": 2000,
+        "description": "The world braced for computer failures as the calendar rolled to a new millennium.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "september-11",
+        "friendly_name": "September 11 Attacks",
+        "year": 2001,
+        "description": "Terrorists hijacked planes and attacked the World Trade Center and Pentagon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "afghanistan-war-start",
+        "friendly_name": "War in Afghanistan Begins",
+        "year": 2001,
+        "description": "The US invaded Afghanistan following the September 11 attacks to pursue al-Qaeda.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ipod-released",
+        "friendly_name": "iPod Released",
+        "year": 2001,
+        "description": "Apple launched the portable music player that transformed the music industry.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "china-wto-entry",
+        "friendly_name": "China Joins WTO",
+        "year": 2001,
+        "description": "China joined the World Trade Organization, accelerating its global economic integration.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wikipedia-launched",
+        "friendly_name": "Wikipedia Launched",
+        "year": 2001,
+        "description": "Jimmy Wales launched Wikipedia, the free encyclopedia that anyone can edit.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 2003,
+    "title": "AMD Opteron Brings 64-Bit to x86",
+    "candidates": [
+      {
+        "name": "saddam-hussein-captured",
+        "friendly_name": "Saddam Hussein Captured",
+        "year": 2003,
+        "description": "US forces captured the Iraqi dictator hiding in a spider hole.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "iraq-war-start",
+        "friendly_name": "Iraq War Begins",
+        "year": 2003,
+        "description": "US-led coalition invaded Iraq to remove Saddam Hussein from power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "darfur-genocide-begins",
+        "friendly_name": "Darfur Genocide Begins",
+        "year": 2003,
+        "description": "Sudanese government forces and Janjaweed militias began systematic attacks on non-Arab populations in Darfur, killing an estimated 300,000 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "sars-outbreak",
+        "friendly_name": "SARS Outbreak",
+        "year": 2003,
+        "year_end": 2004,
+        "description": "A deadly respiratory disease spread from China to countries worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "european-heat-wave",
+        "friendly_name": "European Heat Wave",
+        "year": 2003,
+        "description": "A prolonged heat wave killed over 70,000 people across Europe.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "space-shuttle-columbia-disaster",
+        "friendly_name": "Space Shuttle Columbia Disaster",
+        "year": 2003,
+        "description": "Space Shuttle Columbia disintegrated during re-entry over Texas, killing all seven crew members due to heat shield damage from launch debris.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 2008,
+    "title": "Roadrunner Hits a Petaflop",
+    "candidates": [
+      {
+        "name": "obama-elected",
+        "friendly_name": "Obama Elected President",
+        "year": 2008,
+        "description": "Barack Obama became the first Black president of the United States.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "obama-inaugurated",
+        "friendly_name": "Obama Inaugurated",
+        "year": 2009,
+        "description": "Barack Obama became the first African American President of the United States.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "georgia-russia-war",
+        "friendly_name": "Russo-Georgian War",
+        "year": 2008,
+        "description": "Russia invaded Georgia over the breakaway regions of South Ossetia and Abkhazia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beijing-olympics-2008",
+        "friendly_name": "Beijing Olympics",
+        "year": 2008,
+        "description": "China hosted the Olympics, showcasing its rise as a global superpower.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kosovo-independence",
+        "friendly_name": "Kosovo Independence",
+        "year": 2008,
+        "description": "Kosovo declared independence from Serbia, recognized by many Western nations but disputed by Russia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cyclone-nargis",
+        "friendly_name": "Cyclone Nargis",
+        "year": 2008,
+        "description": "A devastating cyclone killed over 138,000 people in Myanmar.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 2011,
+    "title": "IBM Watson Wins at Jeopardy",
+    "candidates": [
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "machines"
+        ]
+      },
+      {
+        "name": "bin-laden-killed",
+        "friendly_name": "Osama bin Laden Killed",
+        "year": 2011,
+        "description": "US Navy SEALs killed the al-Qaeda leader in Pakistan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "arab-spring",
+        "friendly_name": "Arab Spring Begins",
+        "year": 2011,
+        "description": "Pro-democracy protests swept across the Middle East and North Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "syrian-civil-war",
+        "friendly_name": "Syrian Civil War Begins",
+        "year": 2011,
+        "description": "Anti-government protests in Syria escalated into a devastating civil war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "libyan-civil-war",
+        "friendly_name": "Libyan Civil War Begins",
+        "year": 2011,
+        "description": "An uprising against Gaddafi led to NATO intervention and regime change.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "norway-attacks",
+        "friendly_name": "Norway Attacks",
+        "year": 2011,
+        "description": "Far-right terrorist Anders Breivik bombed Oslo and massacred 69 people at a youth camp, Norway's deadliest peacetime attack.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 2012,
+    "title": "Raspberry Pi Goes on Sale",
+    "candidates": [
+      {
+        "name": "sandy-hook-shooting",
+        "friendly_name": "Sandy Hook Shooting",
+        "year": 2012,
+        "description": "Gunman killed 26 people, including 20 children, at Sandy Hook Elementary School in Connecticut.",
+        "score": 1,
+        "shared": [
+          "children"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "sold"
+        ]
+      },
+      {
+        "name": "costa-concordia",
+        "friendly_name": "Costa Concordia Disaster",
+        "year": 2012,
+        "description": "A cruise ship capsized off the Italian coast, killing 32 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mers-outbreak",
+        "friendly_name": "MERS Outbreak",
+        "year": 2012,
+        "description": "A deadly coronavirus emerged in the Middle East.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hurricane-sandy",
+        "friendly_name": "Hurricane Sandy",
+        "year": 2012,
+        "description": "Hurricane Sandy devastated the northeastern U.S. coast, causing over $70 billion in damage and killing more than 230 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "higgs-boson",
+        "friendly_name": "Higgs Boson Discovered",
+        "year": 2012,
+        "description": "Scientists at CERN confirmed the existence of the Higgs boson particle.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 2016,
+    "title": "Google Unveils the TPU Chip",
+    "candidates": [
+      {
+        "name": "spacex-reusable-rocket",
+        "friendly_name": "SpaceX Lands Reusable Rocket",
+        "year": 2015,
+        "description": "SpaceX successfully landed a rocket booster for reuse for the first time.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "somali-hijackings-fall-to-zero",
+        "friendly_name": "Somali Hijackings Fall to Zero",
+        "year": 2017,
+        "description": "For the first time since the surge began, a full year passed with no successful pirate hijacking of a large merchant vessel off the Somali coast.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "brexit-vote",
+        "friendly_name": "Brexit Referendum",
+        "year": 2016,
+        "description": "The United Kingdom voted to leave the European Union.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nice-truck-attack",
+        "friendly_name": "Nice Truck Attack",
+        "year": 2016,
+        "description": "A terrorist drove a truck through Bastille Day crowds on Nice's Promenade des Anglais, killing 86 people in an ISIS-claimed attack.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pulse-nightclub-shooting",
+        "friendly_name": "Pulse Nightclub Shooting",
+        "year": 2016,
+        "description": "Gunman killed 49 people at gay nightclub in Orlando in deadliest US attack since 9/11.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "artificial-pancreas",
+        "friendly_name": "Artificial Pancreas",
+        "year": 2016,
+        "description": "First commercially available closed-loop system automating insulin delivery for diabetes patients.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 2019,
+    "title": "Google Claims Quantum Supremacy",
+    "candidates": [
+      {
+        "name": "quantum-computing-supremacy",
+        "friendly_name": "Quantum Supremacy Claimed",
+        "year": 2019,
+        "description": "Google claimed quantum supremacy with its Sycamore processor.",
+        "score": 4,
+        "shared": [
+          "google",
+          "quantum",
+          "supremacy",
+          "sycamore"
+        ]
+      },
+      {
+        "name": "ibm-quantum-computer",
+        "friendly_name": "IBM Quantum Computer",
+        "year": 2019,
+        "description": "IBM Q System One was the first integrated commercial quantum computing system.",
+        "score": 1,
+        "shared": [
+          "quantum"
+        ]
+      },
+      {
+        "name": "alphafold-protein",
+        "friendly_name": "AlphaFold Solves Protein Folding",
+        "year": 2020,
+        "description": "AI solved the 50-year-old problem of predicting protein structures.",
+        "score": 1,
+        "shared": [
+          "solved"
+        ]
+      },
+      {
+        "name": "zodiac-cipher-solved",
+        "friendly_name": "Zodiac Killer's Cipher Solved",
+        "year": 2020,
+        "description": "Three amateurs running custom software cracked the Zodiac Killer's longest cryptogram after half a century of failed attempts.",
+        "score": 1,
+        "shared": [
+          "solved"
+        ]
+      },
+      {
+        "name": "yemen-famine-crisis",
+        "friendly_name": "Yemen's Famine Crisis",
+        "year": 2018,
+        "description": "Blockade and civil war pushed parts of Yemen toward famine, in what the United Nations called the worst humanitarian crisis.",
+        "score": 1,
+        "shared": [
+          "called"
+        ]
+      },
+      {
+        "name": "boris-johnson-becomes-pm",
+        "friendly_name": "Boris Johnson Becomes PM",
+        "year": 2019,
+        "description": "Boris Johnson became Prime Minister pledging to deliver Brexit after Theresa May's resignation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 2020,
+    "title": "Apple Unveils the M1 Chip",
+    "candidates": [
+      {
+        "name": "nagorno-karabakh-war-2020",
+        "friendly_name": "Nagorno-Karabakh War",
+        "year": 2020,
+        "description": "Azerbaijan recaptured most of Nagorno-Karabakh from Armenian forces in a 44-day war featuring extensive drone warfare.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "brexit",
+        "friendly_name": "Brexit Completed",
+        "year": 2020,
+        "description": "The United Kingdom officially left the European Union.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "abraham-accords",
+        "friendly_name": "Abraham Accords",
+        "year": 2020,
+        "description": "UAE and Bahrain normalized relations with Israel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "george-floyd-protests",
+        "friendly_name": "George Floyd Protests",
+        "year": 2020,
+        "year_end": 2021,
+        "description": "Floyd's death sparked worldwide protests against police brutality and racial injustice.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "biden-elected",
+        "friendly_name": "Biden Elected",
+        "year": 2020,
+        "description": "Joe Biden defeated Donald Trump to become the 46th President of the United States.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "covid-19-pandemic",
+        "friendly_name": "COVID-19 Pandemic Begins",
+        "year": 2020,
+        "description": "A novel coronavirus spread globally, causing millions of deaths worldwide.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 2022,
+    "title": "Frontier Reaches Exascale",
+    "candidates": [
+      {
+        "name": "leap-second-retired",
+        "friendly_name": "Leap Second Voted Out",
+        "year": 2022,
+        "description": "The General Conference on Weights and Measures agreed to stop adding leap seconds to civil time worldwide.",
+        "score": 1,
+        "shared": [
+          "second"
+        ]
+      },
+      {
+        "name": "svb-collapse",
+        "friendly_name": "SVB Collapse",
+        "year": 2023,
+        "description": "Silicon Valley Bank failed in the second-largest bank collapse in U.S. history, triggering fears of a broader banking crisis.",
+        "score": 1,
+        "shared": [
+          "second"
+        ]
+      },
+      {
+        "name": "ingenuity-mars-flight",
+        "friendly_name": "First Mars Helicopter Flight",
+        "year": 2021,
+        "description": "Ingenuity became the first aircraft to fly on another planet.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "parker-solar-probe",
+        "friendly_name": "Parker Solar Probe Touches Sun",
+        "year": 2021,
+        "description": "The probe became the first spacecraft to fly through the Sun's corona.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "merdeka-118",
+        "friendly_name": "Merdeka 118 Completed",
+        "year": 2023,
+        "description": "The second-tallest building in the world was completed in Kuala Lumpur.",
+        "score": 1,
+        "shared": [
+          "second"
+        ]
+      },
+      {
+        "name": "russia-ukraine-invasion",
+        "friendly_name": "Russia Invades Ukraine",
+        "year": 2022,
+        "description": "Russia launched a full-scale invasion of Ukraine, starting a major European war.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2024,
+    "title": "Google Unveils Willow Quantum Chip",
+    "candidates": [
+      {
+        "name": "sudan-civil-war-2023",
+        "friendly_name": "Sudan Civil War",
+        "year": 2023,
+        "description": "Fighting erupted between Sudan's army and the Rapid Support Forces paramilitary, causing massive displacement and humanitarian crisis.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ai-rapid-advancement-gpt4",
+        "friendly_name": "AI Rapid Advancement (GPT-4)",
+        "year": 2023,
+        "description": "OpenAI released GPT-4, sparking global debate about AI capabilities, safety, and regulation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "turkey-syria-earthquake",
+        "friendly_name": "Turkey-Syria Earthquake",
+        "year": 2023,
+        "description": "A devastating earthquake killed over 50,000 people in Turkey and Syria.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lahaina-fire",
+        "friendly_name": "Lahaina Wildfire",
+        "year": 2023,
+        "description": "A devastating wildfire destroyed the historic Hawaiian town and killed 102 people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "svb-collapse",
+        "friendly_name": "SVB Collapse",
+        "year": 2023,
+        "description": "Silicon Valley Bank failed in the second-largest bank collapse in U.S. history, triggering fears of a broader banking crisis.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "superconductor-claims",
+        "friendly_name": "Room-Temp Superconductor Claim",
+        "year": 2023,
+        "description": "Claims of a room-temperature superconductor sparked global scientific interest.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

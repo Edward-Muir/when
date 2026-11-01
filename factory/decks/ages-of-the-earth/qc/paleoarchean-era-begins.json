@@ -1,0 +1,15 @@
+{
+  "slug": "paleoarchean-era-begins",
+  "description": "A dark, moody painting of a shoreline with rounded, mossy, bulbous rock mounds rising from shallow still water. Behind them are dark volcanic peaks under an orange-brown sky with smoke plumes on the right. No people, animals, text or frame are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

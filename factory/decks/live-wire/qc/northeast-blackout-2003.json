@@ -1,0 +1,15 @@
+{
+  "slug": "northeast-blackout-2003",
+  "description": "A dense crowd of people walks across a gothic stone-towered bridge at dusk, several holding small lights. Buses and cars with headlights run along the roadway on both sides. Behind them is a city skyline of high-rises with many lit windows, and a tall slender tower stands in the centre. The sky is orange-brown. The painting fills the whole frame with no border, and there is no readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The crowd on the bridge toward the skyline fits the scene, but the tall central tower resembles One World Trade Center, which did not exist in 2003, so the skyline may be anachronistic. The skyline also shows many lit windows, while the scene asks for a darkened New York at dusk. Check the skyline against the 2003 view, or regenerate with the city dark and the tower absent."
+}

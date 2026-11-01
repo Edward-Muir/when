@@ -1,0 +1,20 @@
+{
+  "slug": "papanicolaou-smear-test",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "54c32dbac6aed3b625868472226bffed0aee8a1caa6756d7165c0917827f8f82",
+  "dhash": "4c7a58dc51929c9c",
+  "nearest": {
+    "deck": {
+      "slug": "auenbrugger-chest-percussion",
+      "distance": 23
+    },
+    "catalogue": {
+      "slug": "great-dam-of-marib",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

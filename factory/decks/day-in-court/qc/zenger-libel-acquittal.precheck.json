@@ -1,0 +1,20 @@
+{
+  "slug": "zenger-libel-acquittal",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "bdae6e66cd14641233297c864de64ad345d24a51be91b40455297f04c9c5a744",
+  "dhash": "594b4d8de3e9cd99",
+  "nearest": {
+    "deck": {
+      "slug": "john-brown-trial-harpers-ferry",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "death-of-augustus",
+      "distance": 14
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "last-homo-erectus-java",
+  "description": "A heavy-browed, dark-skinned early human stands barefoot on a muddy riverbank in a jungle at dusk, wearing a leather wrap at the waist and gazing out over a wide brown river. Palms and tangled vines frame the scene under an orange and grey sky. The painting is an oil-style image that runs edge to edge, with only a tiny mark in the bottom-right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

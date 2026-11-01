@@ -1,0 +1,15 @@
+{
+  "slug": "holmes-strand-scandal-in-bohemia",
+  "description": "A dark oil-style painting of a gaunt man in a caped dark overcoat, in profile, holding a small framed photograph of a woman. Behind him a masked figure in a fur-collared coat stands by a high-backed armchair. The room is cluttered Victorian with shelves of bric-a-brac, framed pictures, patterned wallpaper, a fireplace with a fire, and drifting smoke. No visible text, and the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

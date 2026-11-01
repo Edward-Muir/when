@@ -1,0 +1,15 @@
+{
+  "slug": "mckinley-first-inauguration",
+  "description": "An oil-painting style scene. In the foreground a man in a flat cap and dark coat cranks or operates a large dark wooden box camera on a wooden tripod, looking to the side. Behind him a crowd of men in top hats and dark overcoats stands before a large white neoclassical building with tall columns. On the steps, a single man in a dark suit raises one arm while a row of people stands on the balcony. Dress and architecture look late 19th or early 20th century. No visible text, frame or border; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

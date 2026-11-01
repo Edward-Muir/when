@@ -1,0 +1,15 @@
+{
+  "slug": "misliya-cave-sapiens",
+  "description": "An oil-style painting of a rock overhang on a hillside above a coastline at dusk. Four hominin figures, mostly bare-chested with simple wraps, sit around a small fire, a couple holding small tools or stone flakes. Scrubby trees, sea and a stormy sky. No text, frame or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

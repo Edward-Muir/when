@@ -1,0 +1,15 @@
+{
+  "slug": "lincoln-first-inauguration",
+  "description": "A tall, bearded man in a dark frock coat stands on a wooden platform, one arm raised, reading from pages on a lectern. Behind him a large domed white building with an unfinished, scaffolded dome and a construction crane. A dense crowd of men in top hats and dark coats fills the foreground, with soldiers in dark kepis holding rifles on the platform and a few armed figures on a balcony at right. The sky is heavy and overcast, and no text is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

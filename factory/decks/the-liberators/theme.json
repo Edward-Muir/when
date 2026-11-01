@@ -1,0 +1,39 @@
+{
+  "id": "the-liberators",
+  "name": "The Liberators",
+  "scope": "Yes if it is part of Latin America's struggle for independence",
+  "boundary": "The Liberators: Latin American independence wars; the Spanish conquest goes to Conquistadors, the end of slavery to Chains Broken, Tupac Amaru's rising to Rise Up!",
+  "neighbours": [
+    "conquistadors",
+    "chains-broken",
+    "rise-up"
+  ],
+  "grid": {
+    "categories": [
+      "revolution",
+      "warfare",
+      "figures"
+    ],
+    "eras": [
+      "industrial"
+    ],
+    "regions": [
+      "South America",
+      "North America"
+    ]
+  },
+  "example_beats": [
+    "Haitian Revolution begins (1791)",
+    "Haiti declares independence (1804)",
+    "Grito de Dolores in Mexico (1810)",
+    "Bolivar's Jamaica Letter (1815)",
+    "San Martin crosses the Andes (1817)",
+    "Battle of Boyaca (1819)",
+    "Battle of Carabobo (1821)",
+    "Brazil's Cry of Ipiranga (1822)",
+    "Battle of Ayacucho (1824)",
+    "Spain loses Cuba and Puerto Rico (1898)"
+  ],
+  "appeal": 1,
+  "status": "authoring"
+}

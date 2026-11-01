@@ -1,0 +1,178 @@
+{
+  "deck": "before-columbus",
+  "name": "Before Columbus",
+  "stage": "pr-open",
+  "created_at": "2026-10-29T15:20:18.761Z",
+  "updated_at": "2026-10-30T02:09:29.945Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-10-29T15:20:18.761Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-10-29T16:09:17.664Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-10-30T01:07:29.304Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-10-30T02:07:25.692Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-10-30T02:09:29.945Z"
+    }
+  ],
+  "slugs": {
+    "squash-domesticated-guila-naquitz": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2a681a3c63131ef4c175bce1542b0dd0a7de2e373313fbb0d1751ef7bd9be034",
+      "updated_at": "2026-10-29T17:07:48.401Z"
+    },
+    "cacao-use-santa-ana-la-florida": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2d3ad4e0ee72536226a86f007f94be2e84882388523f1a3ad8759b67c0922420",
+      "updated_at": "2026-10-29T17:07:48.433Z"
+    },
+    "zapotecs-found-monte-alban": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7fe387e72e34ed3b742a20ebc6fd46af9e9d457143b589787c26de182d1a183a",
+      "updated_at": "2026-10-29T17:07:48.464Z"
+    },
+    "el-mirador-maya-city-rises": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c24c421088d2c6e9b6cd770c6b6d06fcaad8b197bf4fb24abd8aa745dba1cc7b",
+      "updated_at": "2026-10-29T17:07:48.494Z"
+    },
+    "teotihuacan-city-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bbdaf1ad3f7f72f1a99a7dbe6ec92a62d92a9c00a8dda1d9ea9fc0cabab2dd17",
+      "updated_at": "2026-10-29T17:07:48.526Z"
+    },
+    "chiapa-de-corzo-long-count-stela": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "feb697d024c45011336fdeeb33b672b1806488f6341cd7a9957b6de36e43e0ff",
+      "updated_at": "2026-10-29T17:07:48.567Z"
+    },
+    "lord-of-sipan-burial": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c3d75000c53f9785f02d40005f97c178fe81af5eb8de8d5dbe65d3e3512755ad",
+      "updated_at": "2026-10-29T17:07:48.606Z"
+    },
+    "teotihuacan-conquers-tikal": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "abf5a527da42eb83b74ff8c1700ec13af67d5fdb7c4035dde29e2b58a32a7a54",
+      "updated_at": "2026-10-29T17:07:48.642Z"
+    },
+    "copan-dynasty-founded": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "02be472f3265a50d311bd396bb4bdf43d10221701fbed4f68b89fb39d7628631",
+      "updated_at": "2026-10-29T17:07:48.676Z"
+    },
+    "teotihuacan-burned-collapse": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "56e397060fd95c849f0f2f37bff38b5bfc964fcbce2d8e9e8b5fca5f30a0e5a6",
+      "updated_at": "2026-10-29T17:07:48.710Z"
+    },
+    "calakmul-defeats-tikal": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e834b6ffafc72975b8a0ca5f6c9951974e2b7237045c856d2144ff153fefb359",
+      "updated_at": "2026-10-29T19:08:24.251Z"
+    },
+    "pakal-tomb-sealed-palenque": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d40091ed2d58e4c58deacc751c762380d4306d8dbc412ef8a36dd7647af998bb",
+      "updated_at": "2026-10-29T19:08:24.286Z"
+    },
+    "tikal-temple-i-built": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e0933f082d7d1ce71c970cd1a121782b0ae85b7ac134abd69fd72140320842be",
+      "updated_at": "2026-10-29T19:08:24.317Z"
+    },
+    "chan-chan-rises": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a444dd2ff9668319591dbafb8d5e8cdb38d29aaf7ca46596e88b5380c053ba92",
+      "updated_at": "2026-10-29T19:08:24.348Z"
+    },
+    "chichen-itza-rises": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5fa8dc287ff48028c9c10241fb83eba8cb87f17b216183c7df029125c4c9d27d",
+      "updated_at": "2026-10-29T19:08:24.379Z"
+    },
+    "cusco-founded-legend": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b91f278131dfcc734222f08710ebb82f2dfabc0c8b7fecb696488dd9cb18d7ae",
+      "updated_at": "2026-10-29T19:08:24.414Z"
+    },
+    "pachacuti-becomes-inca": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d8cd7cc735ee90379ce950ac81c7a43598e38dcc8185e9d7347e1116496d9a13",
+      "updated_at": "2026-10-29T19:08:24.485Z"
+    },
+    "inca-conquer-chimu": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c387b07ca1c09704043e2c05eb202f8d0e874b9f1afab9958f8077d3ac68abb8",
+      "updated_at": "2026-10-29T19:08:24.564Z"
+    },
+    "tenochtitlan-conquers-tlatelolco": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "976d7c7c92ba3942c882f68033e61a5f2e182503e8d80664eea3c1a9f9fe99fa",
+      "updated_at": "2026-10-30T01:07:29.241Z"
+    },
+    "templo-mayor-dedicated": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7002978280ceeac9398eeff77d53bedae24a070254ff805139ee65f050f677ce",
+      "updated_at": "2026-10-30T01:07:29.273Z"
+    },
+    "moctezuma-ii-crowned": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "78d18a6830ed4d04453876cd88fdeec3b8af5a582a255d51d08ed93d4fbbf6ac",
+      "updated_at": "2026-10-30T01:07:29.304Z"
+    }
+  }
+}

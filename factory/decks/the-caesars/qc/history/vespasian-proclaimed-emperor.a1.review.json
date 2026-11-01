@@ -1,0 +1,15 @@
+{
+  "slug": "vespasian-proclaimed-emperor",
+  "description": "A bald, stern man in red-and-bronze armour with a red cloak stands raised on a large round shield held up by helmeted soldiers in a crowd. He holds a gold eagle standard in one hand and raises the other arm. Behind them are red banners, bronze standards with discs, spears and tents under a dark smoky sky, with a warm light on the horizon. The scene is a Roman military setting, with an engraved word on a standard plaque at right and a shield with a gold pattern in the lower right corner. Edge to edge painting, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Lettering is painted in: the standard at right carries an engraved word on a gold plaque (it reads like SIGNVM), which breaks the no-text rule. The rest of the scene matches: a general lifted on a shield by legionaries under eagle standards, with Roman armour and tents."
+}

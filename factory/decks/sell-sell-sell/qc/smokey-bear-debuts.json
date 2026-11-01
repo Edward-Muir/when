@@ -1,0 +1,15 @@
+{
+  "slug": "smokey-bear-debuts",
+  "description": "A brown bear in a gray wide-brimmed campaign hat and denim overalls leans over a campfire in a dark pine forest, pouring water from a metal bucket onto glowing embers while smoke rises. Painterly, oil-like style; no visible text or frame, and the painting fills the square image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

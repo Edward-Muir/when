@@ -1,0 +1,15 @@
+{
+  "slug": "dire-wolf-predator",
+  "description": "Two grey-brown wolves in the foreground, one snarling with teeth bared, a third wolf on the right and a fourth in the background at left, all on tall dry grass. A bison charges through dust at upper right under a dark stormy sky with a sunset glow on the horizon. No text, no visible border, no blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
