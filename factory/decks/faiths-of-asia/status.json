@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T03:11:33.907Z",
+  "updated_at": "2026-11-01T03:14:08.839Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-11-01T03:11:33.907Z"
     },
     "shinto-buddhism-separation-order": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "48dc1129a43fd8a2c05fdb1375fe4ca6dfda1666f28d966a4ca83bf610d8ad13",
+      "updated_at": "2026-11-01T03:14:08.839Z"
     },
     "vivekananda-chicago-address": {
       "state": "pending",
