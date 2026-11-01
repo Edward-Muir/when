@@ -3,7 +3,7 @@
   "name": "Dress Code",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T08:17:09.512Z",
-  "updated_at": "2026-11-01T09:23:30.573Z",
+  "updated_at": "2026-11-01T09:25:58.465Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-01T09:23:30.573Z"
     },
     "hepburn-givenchy-black-dress": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "847652dbfec73c99e53cbf321ae5fcd42216d9566f63d93361f08d70a0c2ba8b",
+      "updated_at": "2026-11-01T09:25:58.465Z"
     },
     "monroe-sheer-birthday-dress": {
       "state": "pending",
