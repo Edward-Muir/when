@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:09:43.470Z",
+  "updated_at": "2026-11-01T21:12:15.527Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-01T21:09:43.470Z"
     },
     "swiss-army-knife-introduced": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c768e648825c556b79be4c7bf177a0ddc64ff8af06eeb7a15a4d4eec802bda3a",
+      "updated_at": "2026-11-01T21:12:15.527Z"
     },
     "electric-flashlight-ever-ready": {
       "state": "pending",
