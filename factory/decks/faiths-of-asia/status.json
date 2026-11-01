@@ -1,21 +1,26 @@
 {
   "deck": "faiths-of-asia",
   "name": "Faiths of Asia",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T00:17:00.242Z",
+  "updated_at": "2026-11-01T01:09:02.043Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-01T00:17:00.242Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T01:09:02.043Z"
     }
   ],
   "slugs": {
     "mahavira-born-jain-teacher": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "142b574c5a366d0f0b062731aa4efb823189fe1785ee72da671787aee9c66ee8",
+      "updated_at": "2026-11-01T01:09:02.043Z"
     },
     "tao-te-ching-written": {
       "state": "pending",
