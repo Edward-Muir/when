@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T03:20:20.425Z",
+  "updated_at": "2026-11-01T03:22:55.575Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-01T03:20:20.425Z"
     },
     "hare-krishna-movement-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fa71cad4cd5c5b587ed15e4de502455e54e9658e6382c42e8391b411aed45acc",
+      "updated_at": "2026-11-01T03:22:55.575Z"
     },
     "beatles-study-meditation-india": {
       "state": "pending",
