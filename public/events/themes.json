@@ -12868,7 +12868,10 @@
     "year": -599,
     "category": "figures",
     "description": "A prince of eastern India was born who would renounce wealth and become the last great teacher of Jainism.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "tao-te-ching-written",
@@ -12876,7 +12879,10 @@
     "year": -400,
     "category": "writing",
     "description": "A short book of eighty-one verses attributed to Laozi set out the Way, the foundation text of Taoism.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "ashoka-converts-after-kalinga",
@@ -12884,7 +12890,10 @@
     "year": -261,
     "category": "figures",
     "description": "Horrified by the carnage of conquering Kalinga, an Indian emperor turned to Buddhism and non-violence.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "celestial-masters-founded",
@@ -12892,7 +12901,10 @@
     "year": 142,
     "category": "figures",
     "description": "After a vision of the deified Laozi, a Sichuan healer founded the first organised Taoist religious movement.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "kojiki-records-shinto-myths",
@@ -12900,7 +12912,10 @@
     "year": 712,
     "category": "writing",
     "description": "Japan's oldest surviving book set down the creation myths and divine ancestry of the imperial line.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "adi-shankara-born",
@@ -12908,7 +12923,10 @@
     "year": 788,
     "category": "figures",
     "description": "The philosopher who would revive Hindu thought through non-dual Vedanta was born in Kerala.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "nichiren-declares-teaching",
@@ -12916,7 +12934,10 @@
     "year": 1253,
     "category": "figures",
     "description": "A Japanese monk chanted devotion to the Lotus Sutra publicly for the first time, beginning a new Buddhist movement.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "tsongkhapa-founds-ganden",
@@ -12924,7 +12945,10 @@
     "year": 1409,
     "category": "architecture",
     "description": "A reforming scholar established the Tibetan monastery that anchored the Gelug school later led by the Dalai Lamas.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "guru-nanak-born",
@@ -12932,7 +12956,11 @@
     "year": 1469,
     "category": "figures",
     "description": "The founder of Sikhism was born in the Punjab, the first of ten gurus and a teacher of one God.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "India",
+      "Pakistan"
+    ]
   },
   {
     "name": "dalai-lama-title-created",
@@ -12940,7 +12968,10 @@
     "year": 1578,
     "category": "figures",
     "description": "A Mongol ruler gave a Tibetan abbot the title Dalai, meaning ocean, founding a famous line of leaders.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "guru-granth-sahib-compiled",
@@ -12948,7 +12979,10 @@
     "year": 1604,
     "category": "writing",
     "description": "The fifth Sikh guru gathered hymns of the gurus and other saints into the scripture installed at Amritsar.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "shinto-buddhism-separation-order",
@@ -12956,7 +12990,10 @@
     "year": 1868,
     "category": "law",
     "description": "A new government ordered gods and Buddhas separated in shrines, elevating Shinto and sparking attacks on temples.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "vivekananda-chicago-address",
@@ -12964,7 +13001,10 @@
     "year": 1893,
     "category": "figures",
     "description": "A young Hindu monk opened with the words Sisters and Brothers of America and introduced Hindu thought to the West.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "ambedkar-converts-to-buddhism",
@@ -12972,7 +13012,10 @@
     "year": 1956,
     "category": "figures",
     "description": "The architect of India's constitution led hundreds of thousands of followers from Hinduism to Buddhism at Nagpur.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "hare-krishna-movement-founded",
@@ -12980,7 +13023,10 @@
     "year": 1966,
     "category": "figures",
     "description": "An Indian swami opened a small New York storefront and founded the society that brought Krishna chanting to Western streets.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "beatles-study-meditation-india",
@@ -12988,7 +13034,10 @@
     "year": 1968,
     "category": "art",
     "description": "The world's biggest band travelled to an ashram at Rishikesh to learn Transcendental Meditation from a guru.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ]
   },
   {
     "name": "dalai-lama-nobel-peace-prize",
@@ -12996,7 +13045,10 @@
     "year": 1989,
     "category": "diplomacy",
     "description": "The exiled Tibetan Buddhist leader was honoured for his nonviolent approach to his people's struggle.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Norway"
+    ]
   },
   {
     "name": "bamiyan-buddhas-destroyed",
@@ -13004,6 +13056,9 @@
     "year": 2001,
     "category": "architecture",
     "description": "Two giant cliff-carved Buddha statues in Afghanistan were blown up by the ruling Taliban despite worldwide protest.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Afghanistan"
+    ]
   }
 ]
