@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T17:14:44.119Z",
+  "updated_at": "2026-11-01T17:17:18.984Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-01T17:14:44.119Z"
     },
     "smith-founds-church-of-christ": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c2410fdc027591d9ae72f20980bf03882f4cc7b7caa73917d9530282019e57b6",
+      "updated_at": "2026-11-01T17:17:18.984Z"
     },
     "eddy-charters-christian-science": {
       "state": "pending",
