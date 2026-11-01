@@ -1,0 +1,279 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "cut",
+      "slug": null,
+      "why": "Existing Akhenaten card is a different year (-1353) and window; cut for density and scope strength."
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "pentecost-church-begins",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "mani-founds-manichaeism",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare; early monasticism cut for density."
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare; early monasticism cut for density."
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "monte-cassino-founded",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 6,
+      "decision": "reuse",
+      "slug": "muhammad-revelation",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "hejira-prophet-muhammad",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "anan-founds-karaite-judaism",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 9,
+      "decision": "reuse",
+      "slug": "cluny-abbey-founded",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "druze-faith-emerges",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "bruno-founds-carthusians",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "cistercians-founded-citeaux",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "knights-templar-founded",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "peter-waldo-waldensians",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare; crusader orders dense around Templars."
+    },
+    {
+      "beat": 16,
+      "decision": "reuse",
+      "slug": "franciscan-order",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 17,
+      "decision": "new",
+      "slug": "dominic-founds-dominicans",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 18,
+      "decision": "reuse",
+      "slug": "protestant-reformation",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "reformation-anabaptists",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 20,
+      "decision": "reuse",
+      "slug": "english-reformation-henry",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 21,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare; Reformation stretch already dense."
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "jesuits-founded",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": null,
+      "why": "Scottish Reformation is Church of Scotland founding; cut as a spare to keep the Reformation stretch uncrowded."
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare; Reformation stretch already dense."
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "smyth-founds-first-baptists",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 26,
+      "decision": "reuse",
+      "slug": "quaker-founding",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "ammann-founds-amish",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare, Moravian refounding is weaker on scope."
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "wesley-heart-strangely-warmed",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "ann-lee-shakers-america",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 31,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare."
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "smith-founds-church-of-christ",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare, near other denominational cards."
+    },
+    {
+      "beat": 34,
+      "decision": "reuse",
+      "slug": "salvation-army-founded",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "eddy-charters-christian-science",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 36,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare."
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "azusa-street-revival",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 38,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare."
+    },
+    {
+      "beat": 39,
+      "decision": "new",
+      "slug": "rastafari-begins-coronation",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 40,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare."
+    },
+    {
+      "beat": 41,
+      "decision": "new",
+      "slug": "missionaries-of-charity-founded",
+      "why": "No catalogue card for this event."
+    },
+    {
+      "beat": 42,
+      "decision": "cut",
+      "slug": null,
+      "why": "Spare."
+    },
+    {
+      "beat": 43,
+      "decision": "new",
+      "slug": "lavey-founds-church-of-satan",
+      "why": "No catalogue card for this event."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 6/8               (advisory, 6+ is spread)\n  PASS  band 0 7               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in 1209-1216 (want 3 or fewer in any 10 years)\n  PASS  shared 0               (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 71 earlier themes:\n  no card is shared with any earlier theme",
+  "footholds": [
+    "pentecost-church-begins",
+    "muhammad-revelation",
+    "hejira-prophet-muhammad",
+    "knights-templar-founded",
+    "protestant-reformation",
+    "english-reformation-henry",
+    "jesuits-founded"
+  ]
+}
