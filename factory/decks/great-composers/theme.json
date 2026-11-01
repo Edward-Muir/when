@@ -1,0 +1,38 @@
+{
+  "id": "great-composers",
+  "name": "The Great Composers",
+  "scope": "Yes if it is a famous work by a great composer of classical music",
+  "boundary": "The Great Composers owns classical composers' signature works; instruments go to Strike a Chord, anthems and songs for a cause to Sing Out!",
+  "neighbours": [
+    "strike-a-chord",
+    "sing-out"
+  ],
+  "grid": {
+    "categories": [
+      "art"
+    ],
+    "eras": [
+      "earlyModern",
+      "industrial",
+      "worldWars"
+    ],
+    "regions": [
+      "Europe"
+    ]
+  },
+  "example_beats": [
+    "Monteverdi's L'Orfeo (1607)",
+    "Bach's Brandenburg Concertos (1721)",
+    "Vivaldi's Four Seasons (1725)",
+    "Handel's Messiah (1742)",
+    "Mozart's The Magic Flute (1791)",
+    "Beethoven's Ninth Symphony (1824)",
+    "Wagner's Ring cycle (1876)",
+    "Tchaikovsky's Swan Lake (1877)",
+    "Stravinsky's The Rite of Spring (1913)",
+    "Gershwin's Rhapsody in Blue (1924)"
+  ],
+  "notes": "One beat per composer, dated to the premiere or publication of their best-known work, spread from medieval chant to the present.",
+  "appeal": 3,
+  "status": "authoring"
+}

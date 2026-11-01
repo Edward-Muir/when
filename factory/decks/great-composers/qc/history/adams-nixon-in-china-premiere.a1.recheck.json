@@ -1,0 +1,15 @@
+{
+  "slug": "adams-nixon-in-china-premiere",
+  "description": "A large white and blue jumbo jet with a presidential seal sits on a dark theatre stage under spotlights. Lettering on the fuselage reads UNITED STATES OF AMERICA. A rack of dark uniform jackets stands at left, small flags and paper scraps lie on the wooden stage floor, and empty audience seats show at the bottom edge. Loose oil-paint style, filling the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible lettering 'UNITED STATES OF AMERICA' is painted along the airliner's fuselage; repaint the plane without any writing."
+}

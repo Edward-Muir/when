@@ -1,0 +1,15 @@
+{
+  "slug": "bizet-carmen-premiere",
+  "description": "A man in a dark blue military-style uniform with red epaulettes and red trouser stripe holds a cap and faces a woman with long dark hair, a red flower in it, in a black bodice and layered red-and-black ruffled skirt, hands on hips. They stand in a sunlit plaza with colonnaded pale buildings, with a uniformed figure at the right edge and onlookers in the background. The painting is loose oil-style brushwork, filling the whole frame, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

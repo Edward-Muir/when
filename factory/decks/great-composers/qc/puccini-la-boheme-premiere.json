@@ -1,0 +1,15 @@
+{
+  "slug": "puccini-la-boheme-premiere",
+  "description": "A dim, cluttered attic with a kneeling man in a brown overcoat holding the hand of a woman in a dark dress seated in an upholstered armchair. A lit iron stove glows at right, and a moonlit skylight with flecks of falling white lets light down through the dark. Stage flats and a backdrop are visible at left, with a top hat on the wall, scattered papers on the floor, and framed canvases leaning against the wall. No visible text. The painting fills the frame edge to edge. Era reads as late 19th century.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
