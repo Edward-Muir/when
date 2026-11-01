@@ -1,10 +1,10 @@
 {
   "mahavira-born-jain-teacher": {
-    "state": "qc-fail",
-    "reason": "The ascetic is shown fully nude and frontal, with pubic hair and genitals visible at the centre of the frame. Repaint with the lower body covered or turned away, for example in a loincloth or seen from behind or the side, keeping the tree, the discarded robe and the adult standing pose.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An oil painting of a thin adult man with long hair, eyes closed, standing barefoot and fully nude, facing the viewer, in a dark forest before a large banyan-like tree. A gold-embroidered red cloth lies on the ground at his feet. No text, no frame; the painting fills the image edge to edge."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A lean, shirtless man with a cloth wrapped at his waist stands barefoot in a dark forest beside a large gnarled tree, looking off to the side. At his feet lies a heap of crimson velvet with gold trim and jewelry. The setting is a dim, overgrown wood with hanging vines. The style is a dark oil painting with no visible text, frame, or border, and the era is not clearly identifiable."
   },
   "tao-te-ching-written": {
     "state": "qc-pass",
@@ -68,5 +68,61 @@
     "by": "review",
     "attempts": 1,
     "description": "A man in an ornate fur-trimmed brown and gold robe and fur hat leans forward with an open hand toward a seated monk in a yellow hat and red robe. The monk raises one hand and sits on a carved wooden throne. The setting is a round felt tent with lattice walls, a lit candle, and a brazier fire in the foreground. A doorway opens onto a moonlit lake, and two attendants stand in shadow at left."
+  },
+  "guru-granth-sahib-compiled": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An elderly bearded man in a turban and brown robe holds a white yak-hair whisk over a large open book resting on a pile of red and gold cushions. A gold canopy hangs above in an ornate arched hall lit by lamps. A praying man in a turban sits at lower right, and through an arch a night pool with lit lamps is visible. The book pages carry dense script-like marks."
+  },
+  "shinto-buddhism-separation-order": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A gold seated Buddha statue is carried on a wooden palanquin by three men in blue and grey work clothes with white headbands. Behind them a torii gate stands in a wooded compound beside a tiled-roof wooden temple building. Smoke rises and a crowd of men with sticks and tools is visible in the background. In the lower right, a weathered stone Buddha statue lies on its side in the grass."
+  },
+  "vivekananda-chicago-address": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A turbaned man in a rust-orange robe stands at a wooden lectern seen from behind and to the side, arms spread wide. He faces a large ornate hall with a tiered gallery and arched windows. The packed audience in dark late-19th-century suits, hats and long dresses is applauding. The palette is warm browns and golds in an oil-painting style. No text, frame or border is visible."
+  },
+  "ambedkar-converts-to-buddhism": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A garlanded seated Buddha statue on a rough wooden table in a dark open field at dusk, with a lantern, two microphones and cables, white cloths, papers, and scattered marigold petals and garlands. Smoke rises on the horizon and tents stand at the right. No people, no text, no frame, nothing graphic."
+  },
+  "hare-krishna-movement-founded": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim brick street at night with a shopfront whose display window holds a framed painting of a blue-skinned figure playing a flute, with a peacock-feather crown and garland. Brass cymbals and a barrel-shaped drum sit on the pavement below the window. A dark doorway and a shuttered shop stand to the left. No people, no visible text."
+  },
+  "beatles-study-meditation-india": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painterly view of a wooden veranda with stone pillars, looking over a river valley with forested hills. Marigold garlands hang on the railing, an acoustic guitar leans against a pillar, and five floor cushions in red, blue, yellow and green sit on a stone floor with scattered petals, a brass pot and an incense holder. No people, no visible text, and no frame."
+  },
+  "dalai-lama-nobel-peace-prize": {
+    "state": "qc-fail",
+    "reason": "The gold medal has legible lettering reading NOBEL on its face. Repaint the medal with no inscription, or turned so no letters show.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark painted interior of a columned hall with hanging banners and a wooden table at the centre. A white fringed patterned scarf lies on the table with a gold medal showing a profile portrait and the legible word NOBEL around its rim. No people, no frame, nothing violent."
+  },
+  "bamiyan-buddhas-destroyed": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A tall sandstone cliff with a large arched niche at its centre, dark and empty inside. Rubble lies in a heap at the base of the niche, with dust and smoke drifting from it. Small dark silhouettes of people and several vehicles stand in the foreground at the bottom edge, in a dim, brown-toned painterly scene. There is no visible text, frame or border."
   }
 }
