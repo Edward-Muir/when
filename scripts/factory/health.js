@@ -149,8 +149,16 @@ async function main() {
         : ['- none open'])
     );
   }
+  // A deck squashed onto main by hand closes its PR unmerged (2026-11-01, 28 decks in one push),
+  // and its art is live: a deck.json on main means the deck landed, whatever GitHub says.
   const unmerged = (closed || []).filter(
-    (p) => p.headRefName.startsWith('claude/deck-') && !p.mergedAt
+    (p) =>
+      p.headRefName.startsWith('claude/deck-') &&
+      !p.mergedAt &&
+      !showJson(
+        'origin/main',
+        `factory/decks/${p.headRefName.slice('claude/deck-'.length)}/deck.json`
+      )
   );
   for (const p of unmerged) {
     const id = p.headRefName.slice('claude/deck-'.length);
