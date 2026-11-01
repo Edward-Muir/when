@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T03:16:44.820Z",
+  "updated_at": "2026-11-01T03:20:20.425Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-01T03:16:44.820Z"
     },
     "ambedkar-converts-to-buddhism": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8a208341eff577fc394c62ec184d3d31a17ad700a31309924728413bdb2e7bf0",
+      "updated_at": "2026-11-01T03:20:20.425Z"
     },
     "hare-krishna-movement-founded": {
       "state": "pending",
