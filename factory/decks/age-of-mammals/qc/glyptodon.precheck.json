@@ -1,0 +1,20 @@
+{
+  "slug": "glyptodon",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "8b941d0f1ef4eccec38aa5ae5b67e0a183f68b2cf3e60ebd9fee8a3f1bf2f7ed",
+  "dhash": "f6fc9c9e3b2edef0",
+  "nearest": {
+    "deck": {
+      "slug": "platybelodon",
+      "distance": 23
+    },
+    "catalogue": {
+      "slug": "demak-sultanate-founded",
+      "distance": 12
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

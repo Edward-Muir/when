@@ -1,0 +1,15 @@
+{
+  "slug": "platybelodon",
+  "description": "An elephant-like animal stands at a marsh edge under a stormy dusk sky, with a broad flat lower jaw holding a dripping clump of water plants, short tusks curving out, and a trunk curled up beside. Dead trees, reeds and shallow water surround it in an oil-painting style. No text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

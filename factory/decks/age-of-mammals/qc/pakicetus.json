@@ -1,0 +1,15 @@
+{
+  "slug": "pakicetus",
+  "description": "A dark-furred, wolf-sized mammal with a long snout, small rounded ears and a thin tail walks through shallow water at the edge of a dense, dim forest of ferns and hanging vines. Its toes are splayed on the muddy bank and the water ripples around its foot. The lighting is low and warm, with a pale glow through the trees. No text, frame or border is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

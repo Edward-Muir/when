@@ -1,0 +1,15 @@
+{
+  "slug": "ambulocetus",
+  "description": "A large crocodile-like reptile with scaly grey-brown skin and clawed feet lies at the edge of dark, murky water among tangled mangrove roots, jaws open to show teeth. The setting is a dim swamp with fallen leaves and leafy branches overhead. The painting fills the frame edge to edge with no text, border or signature visible.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The card asks for a crocodile-shaped mammal with big webbed feet and a long snout. The painting shows a scaly, clawed, crocodile-like reptile in a mangrove swamp, with no visible webbed feet or mammalian traits. It could be read as a generic crocodile rather than Ambulocetus, so a reviewer should confirm it matches the intended animal."
+}

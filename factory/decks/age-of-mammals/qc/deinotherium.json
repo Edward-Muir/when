@@ -1,0 +1,15 @@
+{
+  "slug": "deinotherium",
+  "description": "A grey, elephant-like animal with long, downward-curving tusks stands in a dense, dim forest, its trunk curled against a mossy tree trunk. Shafts of light fall through the canopy, with ferns and vines in the foreground. The painting is an oil-style image with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "sivatherium",
+  "description": "A heavy dark mammal with a mottled, giraffe-like coat and a short thick neck stands side-on in a dim forest, browsing leaves. It has a large branching, palmate-like pair of horns plus a smaller pair of short horns above the eyes. The painting fills the frame with no text, border or frame, and nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
