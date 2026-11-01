@@ -3,7 +3,7 @@
   "name": "Faiths of Asia",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T00:17:00.242Z",
-  "updated_at": "2026-11-01T02:07:32.184Z",
+  "updated_at": "2026-11-01T03:09:01.756Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,11 +16,11 @@
   ],
   "slugs": {
     "mahavira-born-jain-teacher": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The ascetic is shown fully nude and frontal, with pubic hair and genitals visible at the centre of the frame. Repaint with the lower body covered or turned away, for example in a loincloth or seen from behind or the side, keeping the tree, the discarded robe and the adult standing pose.",
-      "sha256": "142b574c5a366d0f0b062731aa4efb823189fe1785ee72da671787aee9c66ee8",
-      "updated_at": "2026-11-01T02:07:31.887Z"
+      "sha256": "bc6fe0355ee1af03649b025e25f6051951890721b5c960bd16c281da5d796fbb",
+      "updated_at": "2026-11-01T03:09:01.756Z"
     },
     "tao-te-ching-written": {
       "state": "qc-pass",
