@@ -1,0 +1,15 @@
+{
+  "slug": "beauvoir-second-sex",
+  "description": "A painting of an ornate, worn gilt-framed mirror hung on a dark wall. The mirror reflects a dim cafe interior with a cane-backed chair and a marble-topped table holding a stack of handwritten manuscript pages, a pen, a coffee cup, a red wine glass, a folded brown cloth, and an ashtray with a smoking cigarette. There is no readable text, and the scene is quiet and not graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "fail",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The painting sits in a thick gilt frame on a wall: the frame and the dark wall around it are visible, so the image is not edge to edge. The scene asked for a mirror on a cafe wall, but the frame and surrounding wall are a mat-like border the image must not show. Repaint with the mirror and cafe reflection filling the whole square, with no frame or wall."
+}
