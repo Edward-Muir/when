@@ -1,0 +1,15 @@
+{
+  "slug": "rocky-mountain-locust-extinct",
+  "description": "A large brown-gold locust sits on a wheat stalk in the foreground. Behind it, a flat dark prairie stretches under a stormy, cloud-filled sky, with a small weathered wooden cabin on the horizon. The style is an oil painting with warm, muted tones and no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
