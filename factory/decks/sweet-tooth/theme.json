@@ -1,0 +1,40 @@
+{
+  "id": "sweet-tooth",
+  "name": "Sweet Tooth",
+  "scope": "Yes if it is a sweet treat",
+  "boundary": "Sweet Tooth: candy, chocolate, biscuits and desserts; savoury dishes go to Born in a Kitchen, canning and freezing to Food Tech, cocoa and other drinks to What We Drink.",
+  "neighbours": [
+    "born-in-a-kitchen",
+    "what-we-drink",
+    "food-tech"
+  ],
+  "grid": {
+    "categories": [
+      "commerce",
+      "invention",
+      "craft"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars"
+    ],
+    "regions": [
+      "Europe",
+      "North America"
+    ]
+  },
+  "example_beats": [
+    "Fry's makes the first chocolate bar (1847)",
+    "Daniel Peter makes milk chocolate (1875)",
+    "Hershey's bar launched (1900)",
+    "Ice cream cone at the St Louis fair (1904)",
+    "Oreo introduced (1912)",
+    "Pavlova created (1926)",
+    "Mars bar launched (1932)",
+    "Kit Kat launched (1935)",
+    "Toll House chocolate chip cookie (1938)",
+    "Nutella launched (1964)"
+  ],
+  "appeal": 3,
+  "status": "authoring"
+}

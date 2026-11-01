@@ -1,0 +1,15 @@
+{
+  "slug": "hersheys-milk-chocolate-bar",
+  "description": "A moustached man in a dark three-piece suit and tie holds up a flat foil-wrapped chocolate bar, close to the viewer. Behind him, women in white caps and aprons work at long wooden tables stacking and packing brown chocolate bars on trays. The room has tall windows, hanging lamps and old machinery, and the light is warm and dim. The painting looks like an oil portrait with a visible brush texture and no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

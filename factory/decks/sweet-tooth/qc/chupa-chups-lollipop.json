@@ -1,0 +1,15 @@
+{
+  "slug": "chupa-chups-lollipop",
+  "description": "A painting of a smiling boy with dark tousled hair and a knitted patterned cardigan, licking a red translucent lollipop held in his right hand. Behind him in a dim doorway, a man in a vest and apron smiles and holds the door frame. A small wooden stool in the middle ground holds a glass jar of red lollipops. The street and building walls are worn stone, lit warmly from the side in an oil-painting style.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

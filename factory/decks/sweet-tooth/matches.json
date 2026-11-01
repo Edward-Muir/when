@@ -1,0 +1,2231 @@
+[
+  {
+    "beat": 0,
+    "year": -160,
+    "title": "Cato Records a Honey Cheesecake",
+    "candidates": [
+      {
+        "name": "bantu-expansion-africa",
+        "friendly_name": "Bantu Migration Across Africa",
+        "year": -400,
+        "year_end": 500,
+        "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
+        "score": 1,
+        "shared": [
+          "farming"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "farming"
+        ]
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 350,
+    "title": "Indians Crystallise Sugar",
+    "candidates": [
+      {
+        "name": "samudragupta-deccan-campaigns",
+        "friendly_name": "Samudragupta Conquers Deccan",
+        "year": 350,
+        "description": "Gupta emperor Samudragupta campaigned across southern India, defeating numerous kings and expanding his empire.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 1,
+        "shared": [
+          "northern"
+        ]
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "takshashila-university-scholars",
+        "friendly_name": "Takshashila University",
+        "year": -500,
+        "year_end": 470,
+        "description": "Takshashila (Taxila) in ancient India became a leading center of learning for Buddhist and Hindu scholars.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "concept-of-zero",
+        "friendly_name": "Concept of Zero",
+        "year": -500,
+        "year_end": 628,
+        "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 992,
+    "title": "Gingerbread Reaches Europe",
+    "candidates": [
+      {
+        "name": "trial-by-ordeal-spreads",
+        "friendly_name": "Trial by Ordeal Spreads",
+        "year": 800,
+        "year_end": 1219,
+        "description": "Medieval Europe judged guilt by ordeals of fire or water, trusting divine intervention to reveal the truth.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "dvaravati-period",
+        "friendly_name": "Dvaravati Period",
+        "year": 650,
+        "year_end": 1100,
+        "description": "The Mon Dvaravati kingdom flourished in central Thailand, spreading Theravada Buddhism across mainland Southeast Asia.",
+        "score": 1,
+        "shared": [
+          "spreading"
+        ]
+      },
+      {
+        "name": "horse-collar-technology",
+        "friendly_name": "Horse Collar",
+        "year": 477,
+        "year_end": 1200,
+        "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "chola-naval-supremacy",
+        "friendly_name": "Chola Naval Supremacy",
+        "year": 985,
+        "year_end": 1014,
+        "description": "Under Rajaraja I, the Chola navy dominated the Indian Ocean, conquering Sri Lanka and the Maldives.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chola-dynasty-expansion",
+        "friendly_name": "Chola Dynasty Naval Expansion",
+        "year": 985,
+        "year_end": 1070,
+        "description": "The Indian Chola Empire built a powerful navy and dominated Southeast Asian trade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "khwarezm-al-biruni",
+        "friendly_name": "Al-Biruni Studies in Khwarezm",
+        "year": 973,
+        "year_end": 998,
+        "description": "Polymath al-Biruni studied astronomy, mathematics, and geography in Khwarezm before traveling to India.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1296,
+    "title": "Nuremberg Lebkuchen Recorded",
+    "candidates": [
+      {
+        "name": "colf-loenen-match-1297",
+        "friendly_name": "First Recorded Colf Match",
+        "year": 1297,
+        "description": "A colf match was reportedly played at Loenen aan de Vecht, an early ancestor of golf and the modern Dutch kolf.",
+        "score": 1,
+        "shared": [
+          "recorded"
+        ]
+      },
+      {
+        "name": "walls-of-benin-city-built",
+        "friendly_name": "Walls of Benin City Built",
+        "year": 1280,
+        "year_end": 1460,
+        "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "maya-postclassic-conflicts",
+        "friendly_name": "Maya Postclassic Period Conflicts",
+        "year": 1200,
+        "year_end": 1441,
+        "description": "Postclassic Maya city-states like Mayapan waged wars for dominance after the Classic period collapse.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "magdeburg-rights-spread",
+        "friendly_name": "Magdeburg Rights Spread",
+        "year": 1200,
+        "year_end": 1400,
+        "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "great-zimbabwe",
+        "friendly_name": "Great Zimbabwe Built",
+        "year": 1100,
+        "year_end": 1450,
+        "description": "The medieval African city's massive stone structures were constructed.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "chimor-chan-chan-city",
+        "friendly_name": "Chan Chan Capital City Flourishes",
+        "year": 900,
+        "year_end": 1470,
+        "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1670,
+    "title": "The Candy Cane Is Handed Out",
+    "candidates": [
+      {
+        "name": "joseon-silhak-agricultural",
+        "friendly_name": "Silhak Movement Agricultural Reform",
+        "year": 1670,
+        "description": "Korean Silhak scholars promoted practical learning and agricultural reform during the Joseon Dynasty.",
+        "score": 1,
+        "shared": [
+          "during"
+        ]
+      },
+      {
+        "name": "ukiyo-e-art-development",
+        "friendly_name": "Ukiyo-e Woodblock Art Development",
+        "year": 1670,
+        "year_end": 1868,
+        "description": "Japanese ukiyo-e woodblock printing flourished in Edo, depicting actors, beauties, and landscapes of the floating world.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hudsons-bay-company-founded",
+        "friendly_name": "Hudson's Bay Company Founded",
+        "year": 1670,
+        "description": "Charles II granted a royal charter creating the Hudson's Bay Company, which would control much of North American fur trade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "steno-fossils-rock-layers",
+        "friendly_name": "Steno's Law of Rock Layers",
+        "year": 1669,
+        "description": "Nicolas Steno argued that rock layers form in order over time, founding the study of geology.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "etna-catania-eruption",
+        "friendly_name": "Etna's Lava Reaches Catania",
+        "year": 1669,
+        "description": "Mount Etna's largest recorded eruption pushed lava through the walls of Catania and on into the sea, reshaping Sicily's coast.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blood-crown-jewels-heist",
+        "friendly_name": "Blood's Crown Jewels Heist",
+        "year": 1671,
+        "description": "Colonel Thomas Blood disguised himself as a clergyman and nearly escaped the Tower of London with the Crown Jewels.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1686,
+    "title": "A Paris Cafe Serves Gelato",
+    "candidates": [
+      {
+        "name": "enlightenment-age-begins",
+        "friendly_name": "Age of Enlightenment Begins",
+        "year": 1687,
+        "description": "European thinkers championed reason, science, and individual rights, reshaping philosophy, politics, and society.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "newton-principia",
+        "friendly_name": "Newton Publishes Principia",
+        "year": 1687,
+        "description": "Newton published his laws of motion and universal gravitation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-handel",
+        "friendly_name": "Birth of Handel",
+        "year": 1685,
+        "description": "The German-British Baroque composer of Messiah and Water Music, a giant of choral and orchestral music.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "huguenot-diaspora",
+        "friendly_name": "Huguenot Diaspora",
+        "year": 1685,
+        "description": "France revoked Protestant freedoms, driving Huguenots to flee to England, the Dutch Republic, and beyond.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dampier-circumnavigation",
+        "friendly_name": "Dampier Circumnavigates",
+        "year": 1679,
+        "year_end": 1711,
+        "description": "William Dampier became the first person to circumnavigate the world three times.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wren-st-pauls-cathedral",
+        "friendly_name": "Wren Designs St Paul's Cathedral",
+        "year": 1675,
+        "year_end": 1710,
+        "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1764,
+    "title": "Baker's Chocolate Is Founded",
+    "candidates": [
+      {
+        "name": "hermitage-museum",
+        "friendly_name": "Hermitage Museum",
+        "year": 1764,
+        "description": "Catherine the Great founded the Hermitage in St. Petersburg by acquiring a major art collection, now one of the world's largest museums.",
+        "score": 1,
+        "shared": [
+          "founded"
+        ]
+      },
+      {
+        "name": "selective-breeding-animals",
+        "friendly_name": "Selective Breeding of Livestock",
+        "year": 1760,
+        "year_end": 1795,
+        "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "spinning-jenny-invented",
+        "friendly_name": "Spinning Jenny Invented",
+        "year": 1764,
+        "description": "James Hargreaves invented the spinning jenny, a multi-spindle machine that revolutionized textile production.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "beccaria-on-crimes",
+        "friendly_name": "Beccaria's On Crimes",
+        "year": 1764,
+        "description": "Cesare Beccaria condemned torture and the death penalty, founding modern criminal justice reform.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "burmese-siamese-wars",
+        "friendly_name": "Burmese-Siamese Wars",
+        "year": 1765,
+        "year_end": 1767,
+        "description": "Burma and Siam fought devastating wars, culminating in the Burmese destruction of Ayutthaya.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ukiyo-woodblock-prints",
+        "friendly_name": "Ukiyo-e Color Prints Peak",
+        "year": 1765,
+        "description": "Suzuki Harunobu pioneered full-color nishiki-e woodblock prints, elevating ukiyo-e to its artistic peak.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1777,
+    "title": "Turkish Delight Goes on Sale",
+    "candidates": [
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 2,
+        "shared": [
+          "across",
+          "europe"
+        ]
+      },
+      {
+        "name": "la-scala-opens",
+        "friendly_name": "La Scala Opens in Milan",
+        "year": 1778,
+        "description": "Teatro alla Scala opened in Milan and grew into one of the world's most influential opera houses.",
+        "score": 1,
+        "shared": [
+          "opened"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "famine-cycles-break",
+        "friendly_name": "Famine Cycles End in Europe",
+        "year": 1700,
+        "year_end": 1817,
+        "description": "Agricultural improvements and New World crops helped break the recurring cycle of devastating famines in Western Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1832,
+    "title": "The Sachertorte Is Invented",
+    "candidates": [
+      {
+        "name": "mechanical-reaper",
+        "friendly_name": "Mechanical Reaper Invented",
+        "year": 1831,
+        "description": "Cyrus McCormick invented the mechanical reaper, transforming grain harvesting and American agriculture.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "electric-generator",
+        "friendly_name": "Electric Generator Invented",
+        "year": 1831,
+        "description": "Michael Faraday invented the first electromagnetic generator, demonstrating that mechanical motion could produce electricity.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "reform-act-1832",
+        "friendly_name": "British Electoral Reform Act",
+        "year": 1832,
+        "description": "British electoral reform that expanded voting rights to middle-class men and eliminated rotten boroughs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anatomy-act-passed",
+        "friendly_name": "Anatomy Act Regulates Dissection",
+        "year": 1832,
+        "description": "Britain's Anatomy Act gave schools legal access to corpses, ending the trade in stolen bodies.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "la-sylphide-premieres",
+        "friendly_name": "La Sylphide Premieres",
+        "year": 1832,
+        "description": "A ballet about a doomed love between a man and an ethereal spirit opened in Paris, popularizing dancing en pointe and launching Romantic ballet.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nat-turners-rebellion",
+        "friendly_name": "Nat Turner's Rebellion",
+        "year": 1831,
+        "description": "Enslaved preacher Nat Turner led a violent uprising in Virginia, killing about 60 white people before being captured and executed.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1847,
+    "title": "Fry's Makes the First Chocolate Bar",
+    "candidates": [
+      {
+        "name": "first-chocolate-bar",
+        "friendly_name": "First Solid Chocolate Bar",
+        "year": 1847,
+        "description": "British firm J.S. Fry produced the first molded eating chocolate bar, turning the drink into a candy.",
+        "score": 6,
+        "shared": [
+          "fry",
+          "chocolate",
+          "bar",
+          "firm",
+          "solid",
+          "eating"
+        ]
+      },
+      {
+        "name": "liberia-independence",
+        "friendly_name": "Liberia Independence",
+        "year": 1847,
+        "description": "Liberia declared independence, becoming Africa's first republic, founded by freed American slaves.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gorillas-discovered",
+        "friendly_name": "Gorillas Discovered by Science",
+        "year": 1847,
+        "description": "Western scientists first described gorillas from specimens found in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nitroglycerin",
+        "friendly_name": "Nitroglycerin",
+        "year": 1847,
+        "description": "Ascanio Sobrero synthesized this powerful but dangerously unstable liquid explosive.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "semmelweis-childbed-fever",
+        "friendly_name": "Semmelweis' Handwashing",
+        "year": 1847,
+        "description": "Ignaz Semmelweis showed that handwashing with chlorinated lime drastically reduced maternal mortality in hospitals.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hooker-plant-distribution",
+        "friendly_name": "Hooker's Plant Biogeography",
+        "year": 1847,
+        "description": "Joseph Dalton Hooker studied Antarctic and global flora, pioneering the field of plant biogeography.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1868,
+    "title": "Cadbury Sells the Chocolate Box",
+    "candidates": [
+      {
+        "name": "dominion-canada",
+        "friendly_name": "Dominion of Canada Established",
+        "year": 1867,
+        "description": "Canadian provinces united to form a self-governing dominion within the British Empire.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "meiji-restoration",
+        "friendly_name": "Meiji Restoration",
+        "year": 1868,
+        "description": "Japan restored imperial rule and began rapid modernization.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "impeachment-andrew-johnson",
+        "friendly_name": "Impeachment of Andrew Johnson",
+        "year": 1868,
+        "description": "President Andrew Johnson was impeached by the House but acquitted by the Senate by one vote.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-bicycle-race-saint-cloud-1868",
+        "friendly_name": "World's First Bicycle Race",
+        "year": 1868,
+        "description": "On 31 May, Englishman James Moore won the first documented bicycle race, a 1,200 m sprint in the Parc de Saint-Cloud, Paris.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "das-kapital-published",
+        "friendly_name": "Das Kapital Published",
+        "year": 1867,
+        "description": "Karl Marx published his critique of capitalism, providing the theoretical foundation for socialism.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "alaska-purchase",
+        "friendly_name": "Alaska Purchase",
+        "year": 1867,
+        "description": "United States purchased Alaska from Russia for $7.2 million, initially mocked as 'Seward's Folly.'",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1873,
+    "title": "The Chocolate Easter Egg Appears",
+    "candidates": [
+      {
+        "name": "birth-harry-houdini",
+        "friendly_name": "Birth of Harry Houdini",
+        "year": 1874,
+        "description": "The American magician and escape artist whose daring stunts made him a legend of stage illusion.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "parmelee-automatic-sprinkler",
+        "friendly_name": "Automatic Fire Sprinkler",
+        "year": 1874,
+        "description": "Piano maker Henry Parmelee patented the first practical automatic sprinkler head, designed to protect his own factory.",
+        "score": 1,
+        "shared": [
+          "maker"
+        ]
+      },
+      {
+        "name": "st-nicholas-church-hamburg",
+        "friendly_name": "St. Nicholas Church, Hamburg",
+        "year": 1874,
+        "description": "A soaring new spire completed on St. Nicholas Church in Hamburg made it the tallest building anywhere in the world.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "information-bureau",
+        "friendly_name": "Tourist Information Bureau",
+        "year": 1873,
+        "description": "Austria established an early tourist information bureau, helping organize the growing phenomenon of leisure travel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gramme-machine-generator",
+        "friendly_name": "Gramme Machine (Generator)",
+        "year": 1873,
+        "description": "Zénobe Gramme's dynamo was the first commercial electrical generator for industrial power.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1875,
+    "title": "Daniel Peter Makes Milk Chocolate",
+    "candidates": [
+      {
+        "name": "milk-chocolate-invented",
+        "friendly_name": "Milk Chocolate Invented",
+        "year": 1875,
+        "description": "Swiss makers combined chocolate with condensed milk, creating the creamy milk chocolate eaten today.",
+        "score": 4,
+        "shared": [
+          "milk",
+          "chocolate",
+          "swiss",
+          "condensed"
+        ]
+      },
+      {
+        "name": "birth-carl-jung",
+        "friendly_name": "Birth of Carl Jung",
+        "year": 1875,
+        "description": "The Swiss psychiatrist who founded analytical psychology and theorized the collective unconscious.",
+        "score": 1,
+        "shared": [
+          "swiss"
+        ]
+      },
+      {
+        "name": "centennial-exhibition",
+        "friendly_name": "Centennial Exhibition",
+        "year": 1876,
+        "description": "First official World's Fair in the US celebrated America's 100th anniversary in Philadelphia.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "birth-winston-churchill",
+        "friendly_name": "Birth of Winston Churchill",
+        "year": 1874,
+        "description": "The British prime minister who led the nation to victory in World War II with defiant wartime leadership.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "st-nicholas-church-hamburg",
+        "friendly_name": "St. Nicholas Church, Hamburg",
+        "year": 1874,
+        "description": "A soaring new spire completed on St. Nicholas Church in Hamburg made it the tallest building anywhere in the world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "rouen-cathedral-iron-spire",
+        "friendly_name": "Rouen Cathedral's Iron Spire",
+        "year": 1876,
+        "description": "A new cast iron spire completed atop Rouen Cathedral in France briefly made it the tallest building in the world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "challenger-expedition",
+        "friendly_name": "HMS Challenger Expedition",
+        "year": 1872,
+        "year_end": 1876,
+        "description": "A converted Royal Navy corvette set out to sound and dredge the world's oceans, founding the science of oceanography.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "haida-totem-poles",
+        "friendly_name": "Haida Totem Pole Carving Peak",
+        "year": 1830,
+        "year_end": 1880,
+        "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
+        "score": 1,
+        "shared": [
+          "created"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1879,
+    "title": "Lindt Invents the Conche",
+    "candidates": [
+      {
+        "name": "zulu-war",
+        "friendly_name": "Anglo-Zulu War",
+        "year": 1879,
+        "description": "British forces fought the Zulu Kingdom in a short but brutal conflict.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "war-of-the-pacific",
+        "friendly_name": "War of the Pacific",
+        "year": 1879,
+        "year_end": 1884,
+        "description": "Chile fought Bolivia and Peru over nitrate-rich territories, winning coastal lands that left Bolivia landlocked to this day.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dual-alliance",
+        "friendly_name": "Dual Alliance",
+        "year": 1879,
+        "description": "Germany and Austria-Hungary formed a defensive alliance that would later expand into the Triple Alliance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stapler-invented",
+        "friendly_name": "Stapler Patented",
+        "year": 1879,
+        "description": "George McGill patented the first commercially successful stapler for fastening papers with wire staples.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cash-register",
+        "friendly_name": "Cash Register Patented",
+        "year": 1879,
+        "description": "James Ritty patented the mechanical cash register, nicknamed the 'Incorruptible Cashier,' to prevent employee theft.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "surgery-antiseptic-system",
+        "friendly_name": "Listerine Antiseptic",
+        "year": 1879,
+        "description": "Listerine was formulated as a surgical antiseptic inspired by Joseph Lister's carbolic acid methods.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1893,
+    "title": "Cracker Jack Debuts at the Fair",
+    "candidates": [
+      {
+        "name": "worlds-columbian-exposition",
+        "friendly_name": "World's Columbian Exposition",
+        "year": 1893,
+        "description": "Chicago hosted a world's fair celebrating Columbus, featuring the first Ferris wheel and White City.",
+        "score": 3,
+        "shared": [
+          "fair",
+          "chicago",
+          "world"
+        ]
+      },
+      {
+        "name": "urban-planning",
+        "friendly_name": "City Planning",
+        "year": 1893,
+        "description": "The Chicago World's Fair inspired the City Beautiful movement, launching modern urban planning in the United States.",
+        "score": 3,
+        "shared": [
+          "fair",
+          "chicago",
+          "world"
+        ]
+      },
+      {
+        "name": "ferris-wheel-invented",
+        "friendly_name": "First Ferris Wheel Built",
+        "year": 1893,
+        "description": "George Ferris built his wheel for the Chicago World's Fair.",
+        "score": 3,
+        "shared": [
+          "fair",
+          "chicago",
+          "world"
+        ]
+      },
+      {
+        "name": "dvorak-new-world",
+        "friendly_name": "New World Symphony Premiered",
+        "year": 1893,
+        "description": "Dvořák's symphony premiered in New York, inspired by American folk music.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "birth-aldous-huxley",
+        "friendly_name": "Birth of Aldous Huxley",
+        "year": 1894,
+        "description": "The English writer of Brave New World, a dystopian vision of a controlled future society.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "first-gloved-heavyweight-title-1892",
+        "friendly_name": "First Gloved Heavyweight Title",
+        "year": 1892,
+        "description": "James J. Corbett knocked out John L. Sullivan in New Orleans to win boxing's first gloved world heavyweight title.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "first-motor-race-paris-rouen-1894",
+        "friendly_name": "First Motor Race, Paris-Rouen",
+        "year": 1894,
+        "description": "Le Petit Journal's Paris-to-Rouen contest in France is widely regarded as the world's first competitive motor race.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1897,
+    "title": "Jell-O Is Sold as a Dessert",
+    "candidates": [
+      {
+        "name": "first-zionist-congress",
+        "friendly_name": "First Zionist Congress",
+        "year": 1897,
+        "description": "Theodor Herzl organized the movement for a Jewish homeland.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "queen-victorias-diamond-jubilee",
+        "friendly_name": "Queen Victoria's Diamond Jubilee",
+        "year": 1897,
+        "description": "Massive celebrations marked Queen Victoria's 60 years on the throne, showcasing British imperial power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electron-discovered",
+        "friendly_name": "Electron Discovered",
+        "year": 1897,
+        "description": "J.J. Thomson discovered the electron, the first subatomic particle.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "aspirin-invented",
+        "friendly_name": "Aspirin Developed",
+        "year": 1897,
+        "description": "Felix Hoffmann at Bayer synthesized aspirin, which became the world's most widely used medication.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "diesel-engine",
+        "friendly_name": "Diesel Engine Demonstrated",
+        "year": 1897,
+        "description": "Rudolf Diesel successfully demonstrated his compression-ignition engine, more efficient than steam and gasoline engines.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "surgical-masks",
+        "friendly_name": "Surgical Masks",
+        "year": 1897,
+        "description": "Cloth masks adopted in operating rooms to prevent bacterial contamination of surgical wounds.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1900,
+    "title": "Hershey's Milk Chocolate Bar",
+    "candidates": [
+      {
+        "name": "picasso-blue-period",
+        "friendly_name": "Picasso's Blue Period Begins",
+        "year": 1901,
+        "description": "Picasso began painting in shades of blue following a friend's suicide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "safety-razor",
+        "friendly_name": "Gillette Safety Razor",
+        "year": 1901,
+        "description": "King Camp Gillette began selling the safety razor with disposable double-edged blades, transforming personal grooming.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "boxer-rebellion",
+        "friendly_name": "Boxer Rebellion",
+        "year": 1900,
+        "description": "Chinese nationalists besieged foreign legations before an international force relieved them.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "galveston-hurricane",
+        "friendly_name": "Galveston Hurricane",
+        "year": 1900,
+        "description": "The deadliest natural disaster in US history killed up to 12,000 people in Texas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "max-plancks-quantum-theory",
+        "friendly_name": "Max Planck's Quantum Theory",
+        "year": 1900,
+        "description": "Max Planck proposed that energy is emitted in discrete quanta, launching the quantum physics revolution.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1904,
+    "title": "Ice Cream Cone at the St Louis Fair",
+    "candidates": [
+      {
+        "name": "ice-cream-cone-debut",
+        "friendly_name": "Ice Cream Cone Popularized",
+        "year": 1904,
+        "description": "The St. Louis World's Fair helped popularize the edible ice cream cone to a mass American audience.",
+        "score": 6,
+        "shared": [
+          "ice",
+          "cream",
+          "cone",
+          "louis",
+          "fair",
+          "world"
+        ]
+      },
+      {
+        "name": "trans-siberian-railway",
+        "friendly_name": "Trans-Siberian Railway Completed",
+        "year": 1904,
+        "description": "The world's longest railway connecting Moscow to Vladivostok was finished.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "battle-tsushima",
+        "friendly_name": "Battle of Tsushima",
+        "year": 1905,
+        "description": "Japan destroyed the Russian Baltic Fleet, shocking the Western world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "traffic-control",
+        "friendly_name": "Traffic Laws",
+        "year": 1903,
+        "description": "Early automobile traffic regulations were enacted in the United States as motor vehicles became increasingly common on roads.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "first-tour-de-france",
+        "friendly_name": "First Tour de France",
+        "year": 1903,
+        "description": "Cyclists rode the first Tour de France, a grueling multi-stage race around the country to sell newspapers.",
+        "score": 1,
+        "shared": [
+          "country"
+        ]
+      },
+      {
+        "name": "first-world-series",
+        "friendly_name": "First World Series Played",
+        "year": 1903,
+        "description": "Baseball's American and National Leagues met in the first World Series, won by the Boston Americans.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "first-artistic-gymnastics-worlds-1903",
+        "friendly_name": "First Gymnastics World Champs",
+        "year": 1903,
+        "description": "The first Artistic Gymnastics World Championships were held in Antwerp, contested as a men's team event by four European nations.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "first-australasian-championships-1905",
+        "friendly_name": "First Australasian Championships",
+        "year": 1905,
+        "description": "The first Australasian Championships were played in Melbourne, the tournament that later became the Australian Open.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1912,
+    "title": "Oreo Is Introduced",
+    "candidates": [
+      {
+        "name": "woolworth-building-opens",
+        "friendly_name": "Woolworth Building Opens",
+        "year": 1913,
+        "description": "Frank Woolworth's ornate Gothic tower opened in New York and became the tallest building on Earth, a title it held for the next seventeen years.",
+        "score": 2,
+        "shared": [
+          "york",
+          "became"
+        ]
+      },
+      {
+        "name": "iaaf-founded-stockholm-1912",
+        "friendly_name": "IAAF Founded in Stockholm",
+        "year": 1912,
+        "description": "Delegates from 17 national federations met after the Stockholm Olympics to found the IAAF, athletics' world governing body.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "second-balkan-war",
+        "friendly_name": "Second Balkan War",
+        "year": 1913,
+        "description": "Former allies turned on Bulgaria over disputed Macedonian territory, resulting in Bulgaria's defeat and increased tensions leading to World War I.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "triangle-shirtwaist-fire",
+        "friendly_name": "Triangle Shirtwaist Factory Fire",
+        "year": 1911,
+        "description": "A factory fire killed 146 garment workers in New York City.",
+        "score": 1,
+        "shared": [
+          "york"
+        ]
+      },
+      {
+        "name": "south-pole-reached",
+        "friendly_name": "South Pole Reached",
+        "year": 1911,
+        "description": "Roald Amundsen's expedition became the first to reach the South Pole.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "ford-assembly-line",
+        "friendly_name": "Ford Assembly Line",
+        "year": 1913,
+        "description": "Henry Ford introduced the moving assembly line, slashing Model T production time and revolutionizing manufacturing.",
+        "score": 1,
+        "shared": [
+          "introduced"
+        ]
+      },
+      {
+        "name": "crossword-puzzle-published",
+        "friendly_name": "First Crossword Puzzle",
+        "year": 1913,
+        "description": "A New York newspaper printed the first crossword puzzle, sparking a craze for the word-grid game.",
+        "score": 1,
+        "shared": [
+          "york"
+        ]
+      },
+      {
+        "name": "olympic-rings-designed-1913",
+        "friendly_name": "Olympic Rings Symbol Created",
+        "year": 1913,
+        "description": "Pierre de Coubertin designed the five interlocking Olympic rings, symbolizing the union of the world's continents.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1921,
+    "title": "Eskimo Pie Is Patented",
+    "candidates": [
+      {
+        "name": "pop-up-toaster",
+        "friendly_name": "Pop-Up Toaster Patented",
+        "year": 1921,
+        "description": "Charles Strite patented the automatic pop-up toaster, freeing breakfast-makers from watching their bread.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "turkish-war-of-independence",
+        "friendly_name": "Turkish War of Independence",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-miss-america",
+        "friendly_name": "First Miss America Pageant",
+        "year": 1921,
+        "description": "The first Miss America pageant was held in Atlantic City.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "communist-party-china-founded",
+        "friendly_name": "Communist Party of China Founded",
+        "year": 1921,
+        "description": "The CPC was founded in Shanghai with Mao Zedong among its early members.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "russian-famine-civil-war",
+        "friendly_name": "Soviet Russian Famine",
+        "year": 1921,
+        "year_end": 1922,
+        "description": "Civil war aftermath and drought killed five million in Soviet Russia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "insulin-discovered",
+        "friendly_name": "Insulin Discovered",
+        "year": 1921,
+        "description": "Frederick Banting and Charles Best discovered insulin, saving millions of diabetics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1922,
+    "title": "Haribo Makes the Gummy Bear",
+    "candidates": [
+      {
+        "name": "weimar-hyperinflation",
+        "friendly_name": "Weimar Hyperinflation",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "German prices spiraled so fast that banknotes became nearly worthless and people burned cash for heat.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "enigma-machine-sold",
+        "friendly_name": "Enigma Machine Goes On Sale",
+        "year": 1923,
+        "description": "Arthur Scherbius marketed his rotor cipher machine to banks and firms before the German military adopted it wholesale.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "mussolini-power",
+        "friendly_name": "Mussolini Takes Power",
+        "year": 1922,
+        "description": "The March on Rome brought Benito Mussolini to power as Italy's fascist leader.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "russian-civil-war-ends",
+        "friendly_name": "Russian Civil War Ends",
+        "year": 1922,
+        "description": "The Bolsheviks defeated the White Army and various nationalist movements.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ulysses-published",
+        "friendly_name": "Ulysses Published",
+        "year": 1922,
+        "description": "James Joyces modernist masterpiece Ulysses was published, revolutionizing literature.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "irish-free-state",
+        "friendly_name": "Irish Free State Established",
+        "year": 1922,
+        "description": "Ireland gained independence from Britain as a dominion.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1926,
+    "title": "Pavlova Is Created",
+    "candidates": [
+      {
+        "name": "television-first-demonstration",
+        "friendly_name": "First Television Demonstration",
+        "year": 1926,
+        "description": "John Logie Baird gave the first public demonstration of television.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "goddard-liquid-rocket",
+        "friendly_name": "First Liquid-Fueled Rocket",
+        "year": 1926,
+        "description": "Robert Goddard launched the first liquid-fueled rocket in Auburn, Massachusetts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "general-strike-in-britain",
+        "friendly_name": "General Strike in Britain",
+        "year": 1926,
+        "description": "British workers staged a nine-day general strike in support of coal miners facing wage cuts and longer hours.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-fidel-castro",
+        "friendly_name": "Birth of Fidel Castro",
+        "year": 1926,
+        "description": "The revolutionary who led Cuba's revolution and ruled the communist island for decades.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-marilyn-monroe",
+        "friendly_name": "Birth of Marilyn Monroe",
+        "year": 1926,
+        "description": "The American actress and Hollywood icon famed for Some Like It Hot and her enduring star allure.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chanel-little-black-dress",
+        "friendly_name": "Chanel's Little Black Dress",
+        "year": 1926,
+        "description": "Coco Chanel introduced a simple, elegant black dress that Vogue hailed as a timeless wardrobe essential.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1932,
+    "title": "The Mars Bar Is Launched",
+    "candidates": [
+      {
+        "name": "birth-elizabeth-taylor",
+        "friendly_name": "Birth of Elizabeth Taylor",
+        "year": 1932,
+        "description": "The British-American actress and Cleopatra star, a screen legend and pioneering AIDS activist.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "statute-westminster",
+        "friendly_name": "Statute of Westminster",
+        "year": 1931,
+        "description": "British dominions gained legislative independence from the UK Parliament.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "new-deal",
+        "friendly_name": "New Deal Begins",
+        "year": 1933,
+        "description": "FDR launched sweeping programs to combat the Great Depression.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "lindbergh-baby-kidnapping",
+        "friendly_name": "Lindbergh Baby Kidnapping",
+        "year": 1932,
+        "description": "Charles Lindberghs 20-month-old son was kidnapped and later found dead in a case that gripped America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kingdom-saudi-arabia-founded",
+        "friendly_name": "Kingdom of Saudi Arabia Founded",
+        "year": 1932,
+        "description": "Ibn Saud unified the Arabian Peninsula into a single kingdom.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1935,
+    "title": "Kit Kat Is Launched",
+    "candidates": [
+      {
+        "name": "monopoly-board-game",
+        "friendly_name": "Monopoly Goes on Sale",
+        "year": 1935,
+        "description": "Parker Brothers launched Monopoly, the property-trading board game that became one of the best-selling ever.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "jesse-owens-four-golds",
+        "friendly_name": "Owens Wins Four Olympic Golds",
+        "year": 1936,
+        "description": "American sprinter Jesse Owens won four gold medals at the Berlin Olympics, defying Nazi racial propaganda.",
+        "score": 1,
+        "shared": [
+          "four"
+        ]
+      },
+      {
+        "name": "first-olympic-torch-relay-1936",
+        "friendly_name": "First Olympic Torch Relay",
+        "year": 1936,
+        "description": "The Berlin Games introduced the Olympic torch relay, carrying a flame lit in Olympia, Greece, to the host stadium.",
+        "score": 1,
+        "shared": [
+          "introduced"
+        ]
+      },
+      {
+        "name": "japanese-pro-baseball-league-1936",
+        "friendly_name": "Japanese Pro Baseball Founded",
+        "year": 1936,
+        "description": "The Japanese Baseball League launched with seven teams, establishing professional baseball in Japan for the first time.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "alcoholics-anonymous",
+        "friendly_name": "Alcoholics Anonymous Founded",
+        "year": 1935,
+        "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "social-security-act",
+        "friendly_name": "Social Security Act Signed",
+        "year": 1935,
+        "description": "The US established its social insurance program for the elderly.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1938,
+    "title": "The Chocolate Chip Cookie Is Baked",
+    "candidates": [
+      {
+        "name": "chocolate-chip-cookie",
+        "friendly_name": "Chocolate Chip Cookie Created",
+        "year": 1938,
+        "description": "Ruth Wakefield invented the chocolate chip cookie at her Toll House inn in Massachusetts.",
+        "score": 6,
+        "shared": [
+          "chocolate",
+          "chip",
+          "cookie",
+          "massachusetts",
+          "her",
+          "invented"
+        ]
+      },
+      {
+        "name": "scrabble-invented",
+        "friendly_name": "Scrabble Invented",
+        "year": 1938,
+        "description": "Alfred Butts designed the tile-based word game later sold as Scrabble, scoring points for words on a grid.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "wizard-of-oz",
+        "friendly_name": "Wizard of Oz Released",
+        "year": 1939,
+        "description": "The classic Technicolor musical fantasy opened in American cinemas after a small-town test screening.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "helicopter-modern",
+        "friendly_name": "Modern Helicopter Invented",
+        "year": 1939,
+        "description": "Igor Sikorsky flew the VS-300, the first practical single-rotor helicopter.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "kristallnacht",
+        "friendly_name": "Kristallnacht",
+        "year": 1938,
+        "description": "Nazi mobs attacked Jewish businesses and synagogues across Germany.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "munich-agreement",
+        "friendly_name": "Munich Agreement",
+        "year": 1938,
+        "description": "European powers allowed Hitler to annex part of Czechoslovakia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1953,
+    "title": "Marshmallow Peeps Are Mass-Produced",
+    "candidates": [
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "millions"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "korean-war-armistice",
+        "friendly_name": "Korean War Armistice",
+        "year": 1953,
+        "description": "An armistice halted fighting on the Korean Peninsula, though no peace treaty was signed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cia-coup-in-iran",
+        "friendly_name": "CIA Coup in Iran",
+        "year": 1953,
+        "description": "The CIA and MI6 orchestrated a coup that overthrew democratically elected Prime Minister Mosaddegh, restoring Shah Pahlavi to power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "east-german-uprising",
+        "friendly_name": "East German Uprising",
+        "year": 1953,
+        "description": "Workers in East Berlin and across East Germany rose up against the communist government before Soviet tanks crushed the rebellion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stalin-dies",
+        "friendly_name": "Stalin Dies",
+        "year": 1953,
+        "description": "Joseph Stalin died after ruling the Soviet Union for nearly three decades of terror and industrialization.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1958,
+    "title": "Chupa Chups Lollipops Appear",
+    "candidates": [
+      {
+        "name": "laika-in-space",
+        "friendly_name": "Laika in Space",
+        "year": 1957,
+        "description": "Soviet dog Laika became the first animal to orbit Earth aboard Sputnik 2, proving life could survive in space.",
+        "score": 1,
+        "shared": [
+          "could"
+        ]
+      },
+      {
+        "name": "great-leap-forward",
+        "friendly_name": "Great Leap Forward",
+        "year": 1958,
+        "year_end": 1962,
+        "description": "Mao launched a radical campaign to rapidly industrialize China, resulting in history's deadliest famine with an estimated 30-45 million deaths.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fifth-french-republic",
+        "friendly_name": "Fifth French Republic",
+        "year": 1958,
+        "description": "New constitution gave de Gaulle strong presidential powers, establishing France's current government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nasa-founded",
+        "friendly_name": "NASA Founded",
+        "year": 1958,
+        "description": "US created NASA to lead the space race against the Soviet Union after Sputnik's launch.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "van-allen-belt-detected",
+        "friendly_name": "Van Allen Radiation Belt Detected",
+        "year": 1958,
+        "description": "The first successful American satellite detects the Van Allen radiation belt.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pacemaker-implanted",
+        "friendly_name": "First Implantable Pacemaker",
+        "year": 1958,
+        "description": "Arne Larsson received the first implantable pacemaker, pioneering electronic cardiac treatment.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1964,
+    "title": "Nutella Is Launched",
+    "candidates": [
+      {
+        "name": "beatles-ed-sullivan",
+        "friendly_name": "Beatles on Ed Sullivan",
+        "year": 1964,
+        "description": "The Beatles' American TV debut launched the British Invasion.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "blue-ribbon-sports-founded",
+        "friendly_name": "Blue Ribbon Sports Founded",
+        "year": 1964,
+        "description": "Blue Ribbon Sports, which would later become Nike, is founded by University of Oregon athletes.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "shinkansen-opens",
+        "friendly_name": "Shinkansen Opens",
+        "year": 1964,
+        "description": "Japan launched the world's first high-speed rail line, the Bullet Train.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "zanzibar-revolution",
+        "friendly_name": "Zanzibar Revolution",
+        "year": 1964,
+        "description": "Rebels in Zanzibar begin a revolt and proclaim a republic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tokyo-olympics-1964",
+        "friendly_name": "Tokyo Olympics",
+        "year": 1964,
+        "description": "Japan hosted the Olympics, showcasing its postwar recovery to the world.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "civil-rights-act",
+        "friendly_name": "Civil Rights Act",
+        "year": 1964,
+        "description": "The US outlawed discrimination based on race, color, religion, sex, or national origin.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1967,
+    "title": "Twix Arrives in the Shops",
+    "candidates": [
+      {
+        "name": "monterey-pop",
+        "friendly_name": "Monterey Pop Festival",
+        "year": 1967,
+        "description": "The first major rock festival launched the Summer of Love.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "tom-simpson-ventoux-death-1967",
+        "friendly_name": "Tom Simpson Dies on Ventoux",
+        "year": 1967,
+        "description": "British champion Tom Simpson collapsed and died climbing Mont Ventoux during the Tour de France, amphetamines in his system.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "luna-9-launched",
+        "friendly_name": "Luna 9 Launched",
+        "year": 1966,
+        "description": "The Soviet Union launches the unmanned Luna 9 spacecraft to achieve first soft landing on the Moon.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "world-trade-center-begins",
+        "friendly_name": "World Trade Center Begun",
+        "year": 1968,
+        "description": "Work began on the Twin Towers in Lower Manhattan.",
+        "score": 1,
+        "shared": [
+          "twin"
+        ]
+      },
+      {
+        "name": "six-day-war",
+        "friendly_name": "Six-Day War",
+        "year": 1967,
+        "description": "Israel defeated Arab nations and captured the Sinai, Gaza, West Bank, and Golan Heights.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "che-guevara-killed",
+        "friendly_name": "Che Guevara Killed",
+        "year": 1967,
+        "description": "Revolutionary Che Guevara was captured and executed by Bolivian forces with CIA assistance while trying to foment revolution in South America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1971,
+    "title": "Cadbury Creme Egg Is Named",
+    "candidates": [
+      {
+        "name": "first-arcade-video-game",
+        "friendly_name": "First Arcade Video Game",
+        "year": 1971,
+        "description": "Computer Space, created by Nolan Bushnell, became the first commercially sold arcade video game.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "alekseyev-600kg-total-1970",
+        "friendly_name": "Alekseyev Tops 600 kg Total",
+        "year": 1970,
+        "description": "Soviet weightlifter Vasily Alekseyev became the first man to total 600 kg across the three lifts, starting a run of 80 world records.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "korbut-flip-munich-1972",
+        "friendly_name": "Olga Korbut's Backflip",
+        "year": 1972,
+        "description": "Olga Korbut performed the first backward release move on the uneven bars at the Munich Olympics, later named the Korbut Flip.",
+        "score": 1,
+        "shared": [
+          "named"
+        ]
+      },
+      {
+        "name": "bangladesh-liberation-war",
+        "friendly_name": "Bangladesh Liberation War",
+        "year": 1971,
+        "description": "East Pakistan broke away with Indian help to become Bangladesh.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-email",
+        "friendly_name": "First Email Sent",
+        "year": 1971,
+        "description": "Ray Tomlinson sent the first network email using the @ symbol.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "china-un-seat",
+        "friendly_name": "PRC Takes UN Seat",
+        "year": 1971,
+        "description": "The People's Republic of China replaced Taiwan as China's representative at the UN, taking the Security Council seat too.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1974,
+    "title": "Kinder Surprise Hits the Shelves",
+    "candidates": [
+      {
+        "name": "rubiks-cube-invented",
+        "friendly_name": "Rubik's Cube Invented",
+        "year": 1974,
+        "description": "Hungarian Erno Rubik built a twisting cube of colored squares that became a hugely popular puzzle toy.",
+        "score": 1,
+        "shared": [
+          "toy"
+        ]
+      },
+      {
+        "name": "yom-kippur-war",
+        "friendly_name": "Yom Kippur War",
+        "year": 1973,
+        "description": "Egypt and Syria launched a surprise attack on Israel during the Jewish holiday.",
+        "score": 1,
+        "shared": [
+          "surprise"
+        ]
+      },
+      {
+        "name": "watergate",
+        "friendly_name": "Nixon Resigns Over Watergate",
+        "year": 1974,
+        "description": "President Nixon resigned facing impeachment for the Watergate scandal.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ethiopian-revolution",
+        "friendly_name": "Ethiopian Revolution",
+        "year": 1974,
+        "description": "A military junta overthrew Emperor Haile Selassie after 44 years of rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "patty-hearst-kidnapped",
+        "friendly_name": "Patty Hearst Kidnapped",
+        "year": 1974,
+        "description": "The Symbionese Liberation Army kidnaps newspaper heiress Patty Hearst in Berkeley, California.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "disco-era-begins",
+        "friendly_name": "Disco Era Begins",
+        "year": 1974,
+        "description": "Disco music emerged from underground clubs to dominate popular culture.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1978,
+    "title": "Ben and Jerry Open Their Scoop Shop",
+    "candidates": [
+      {
+        "name": "tenerife-airport",
+        "friendly_name": "Tenerife Airport Disaster",
+        "year": 1977,
+        "description": "Two Boeing 747s collided, killing 583 in the deadliest aviation accident.",
+        "score": 1,
+        "shared": [
+          "two"
+        ]
+      },
+      {
+        "name": "pompidou-center",
+        "friendly_name": "Centre Pompidou Opens",
+        "year": 1977,
+        "description": "The inside-out building with exposed pipes opened in Paris.",
+        "score": 1,
+        "shared": [
+          "opened"
+        ]
+      },
+      {
+        "name": "iranian-revolution",
+        "friendly_name": "Iranian Revolution",
+        "year": 1978,
+        "year_end": 1979,
+        "description": "Islamic revolutionaries overthrew the Shah and established a theocratic republic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "year-three-popes",
+        "friendly_name": "Papal Year of Three Popes",
+        "year": 1978,
+        "description": "Pope Paul VI and John Paul I both died, and John Paul II was elected, all within one year.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "camp-david-accords",
+        "friendly_name": "Camp David Accords",
+        "year": 1978,
+        "description": "Egypt and Israel signed a peace agreement brokered by the US.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "reform-opening-china",
+        "friendly_name": "China's Reform and Opening",
+        "year": 1978,
+        "description": "Deng Xiaoping launched economic reforms that transformed China into a market economy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1988,
+    "title": "Dippin' Dots Beads of Ice Cream",
+    "candidates": [
+      {
+        "name": "keyhole-laparoscopic-surgery",
+        "friendly_name": "First Keyhole Surgery",
+        "year": 1987,
+        "description": "A French surgeon removed a gallbladder through tiny incisions, launching minimally invasive surgery.",
+        "score": 1,
+        "shared": [
+          "tiny"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "sold"
+        ]
+      },
+      {
+        "name": "iran-iraq-war-ends",
+        "friendly_name": "Iran-Iraq War Ends",
+        "year": 1988,
+        "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "seoul-olympics-1988",
+        "friendly_name": "Seoul Olympics",
+        "year": 1988,
+        "description": "South Korea hosted the Olympics, symbolizing its emergence as an economic power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "soviet-withdrawal-afghanistan",
+        "friendly_name": "Soviet Withdrawal from Afghanistan",
+        "year": 1988,
+        "year_end": 1989,
+        "description": "Soviet Union began withdrawing troops from Afghanistan after nine years of costly war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lockerbie-bombing",
+        "friendly_name": "Lockerbie Bombing",
+        "year": 1988,
+        "description": "A terrorist bomb destroyed Pan Am Flight 103 over Scotland, killing 270.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 2013,
+    "title": "The Cronut Hits New York",
+    "candidates": [
+      {
+        "name": "belt-road-initiative",
+        "friendly_name": "Belt and Road Initiative Launched",
+        "year": 2013,
+        "description": "China announced a massive global infrastructure investment strategy.",
+        "score": 1,
+        "shared": [
+          "global"
+        ]
+      },
+      {
+        "name": "boston-marathon-bombing",
+        "friendly_name": "Boston Marathon Bombing",
+        "year": 2013,
+        "description": "Brothers Tamerlan and Dzhokhar Tsarnaev detonated bombs near the Boston Marathon finish line, killing 3 and injuring over 260.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "black-lives-matter-founded",
+        "friendly_name": "Black Lives Matter Founded",
+        "year": 2013,
+        "description": "The movement began after Trayvon Martin's killer was acquitted.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pope-benedict-resigns",
+        "friendly_name": "Pope Benedict Resigns",
+        "year": 2013,
+        "description": "Pope Benedict XVI became the first pope to resign in centuries, citing advanced age.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "snowden-revelations",
+        "friendly_name": "Snowden Revelations",
+        "year": 2013,
+        "description": "NSA contractor Edward Snowden leaked classified documents revealing massive government surveillance programs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "typhoon-haiyan",
+        "friendly_name": "Typhoon Haiyan",
+        "year": 2013,
+        "description": "One of the strongest tropical cyclones ever recorded killed over 6,000 in the Philippines.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

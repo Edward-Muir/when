@@ -1,0 +1,15 @@
+{
+  "slug": "mars-bar-launched",
+  "description": "An oil-style painting of a factory interior. A large steel machine pours glossy brown mixture in thick ribbons onto a metal conveyor of rectangular bars. Women in white caps and aprons stand at the left and centre, and men in flat caps watch from the right. Copper pipes, steam and a vat fill the background. No visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
