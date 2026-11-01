@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T17:27:25.483Z",
+  "updated_at": "2026-11-01T17:30:03.767Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-01T17:27:25.483Z"
     },
     "missionaries-of-charity-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "92bcbf9566014ad002f9a571266b8bd480987536af71c3cb6fce9596f206485b",
+      "updated_at": "2026-11-01T17:30:03.767Z"
     },
     "lavey-founds-church-of-satan": {
       "state": "pending",
