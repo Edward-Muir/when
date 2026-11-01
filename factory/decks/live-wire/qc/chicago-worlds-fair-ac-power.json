@@ -1,0 +1,15 @@
+{
+  "slug": "chicago-worlds-fair-ac-power",
+  "description": "A night scene of a grand neoclassical building with several domes, outlined in warm glowing lights and lit by searchlight beams against a black sky. A dark water channel in the foreground holds small boats and a gondola, with golden reflections on the water. At the lower left and right, people in 19th-century dress (top hats, long gowns, parasols) stand on a quay. The painting fills the frame edge to edge, with no visible text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

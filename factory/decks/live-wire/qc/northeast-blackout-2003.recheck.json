@@ -1,0 +1,15 @@
+{
+  "slug": "northeast-blackout-2003",
+  "description": "A huge crowd of people walks along a stone-towered suspension bridge (Brooklyn Bridge style) at dusk, a few carrying small candle-like lights. Buses and cars with headlights are on the roadways at both sides. A skyline of high-rises with a tall slender spired tower stands against an orange-brown sky. The painting fills the frame edge to edge, with no border and no readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

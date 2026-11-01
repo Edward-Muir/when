@@ -1,0 +1,15 @@
+{
+  "slug": "tesla-roadster-deliveries",
+  "description": "A dark red open-top two-seat sports car seen from behind and above, its rear deck open to reveal rows of cylindrical battery cells in a grid. A second car with a grey interior sits further back in a dim garage. A charging cable hangs from a wall unit on the right. Dim, moody lighting, no visible text, and the painting fills the whole frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

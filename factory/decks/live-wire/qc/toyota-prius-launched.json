@@ -1,0 +1,15 @@
+{
+  "slug": "toyota-prius-launched",
+  "description": "A silver sedan sits on a circular pale platform in a dimly lit industrial hall, lit by two overhead spotlights with light beams. The car has glowing orange outline cutaways over its front engine bay and a rear door area showing a grey battery pack. The background is dark windows, steel beams and a balcony rail. The painting is in a loose oil-paint style and fills the frame edge to edge. A small emblem sits on the nose. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

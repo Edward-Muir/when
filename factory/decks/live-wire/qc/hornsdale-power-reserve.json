@@ -1,0 +1,15 @@
+{
+  "slug": "hornsdale-power-reserve",
+  "description": "A painterly dusk scene. Long rows of white metal cabinets, like shipping containers, sit on dark, dry ground in the foreground, with a dirt track running between them. Behind them, several wind turbines stand on a low ridge under a dramatic, stormy sky with orange light near the horizon. Small sparks or glints appear on a few cabinets. No people, no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
