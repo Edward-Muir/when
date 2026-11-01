@@ -1,21 +1,26 @@
 {
   "deck": "faith-founded",
   "name": "Faith Founded",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T14:17:46.866Z",
+  "updated_at": "2026-11-01T15:08:59.159Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-01T14:17:46.866Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T15:08:59.159Z"
     }
   ],
   "slugs": {
     "pentecost-church-begins": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "335b8b2cf4293207b0059f95ab335cd115151c70ae74fa71b4c0510f286384f8",
+      "updated_at": "2026-11-01T15:08:59.159Z"
     },
     "mani-founds-manichaeism": {
       "state": "pending",
