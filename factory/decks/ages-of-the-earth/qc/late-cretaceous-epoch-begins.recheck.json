@@ -1,0 +1,15 @@
+{
+  "slug": "late-cretaceous-epoch-begins",
+  "description": "A dark oil-style painting of a horned, frilled ceratopsian facing a large tyrannosaur-like theropod on a muddy shore among ferns and flowering shrubs, with a wide rippling lake under a stormy sky. It fills the image edge to edge with no frame. The only mark is a tiny green patch in the bottom right corner, which looks like the cropped sparkle logo.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

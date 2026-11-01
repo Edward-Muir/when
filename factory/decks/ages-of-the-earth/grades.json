@@ -1,0 +1,13 @@
+{
+  "paleoarchean-era-begins": {"recognition": "very-low", "inferability": "medium", "anchors": ["microbial mats", "stromatolite", "first"], "why": "obscure eon name, but stromatolites and microbes place it very early in Earth history"},
+  "mesoarchean-era-begins": {"recognition": "very-low", "inferability": "medium", "anchors": ["photosynthesising microbes", "first large landmasses"], "why": "microbes only, so very early, though easily confused with neighbouring eras"},
+  "rhyacian-period-begins": {"recognition": "very-low", "inferability": "medium", "anchors": ["oxygen in the air", "tropical ice sheets"], "why": "oxygen and early glaciation suggest the early-middle deep past, but no precise era"},
+  "mesoproterozoic-era-begins": {"recognition": "very-low", "inferability": "low", "anchors": ["cells growing more complex"], "why": "calm climate and complex cells could fit a wide span of the Precambrian"},
+  "neoproterozoic-era-begins": {"recognition": "low", "inferability": "medium", "anchors": ["Rodinia", "coldest spells"], "why": "Rodinia and snowball-type cold put it late Precambrian, before animals"},
+  "cambrian-period-opens": {"recognition": "high", "inferability": "high", "anchors": ["Cambrian", "shells and eyes", "burst of body plans"], "why": "the Cambrian explosion is taught widely and the text says it outright"},
+  "late-devonian-epoch-begins": {"recognition": "medium", "inferability": "medium", "anchors": ["tree-sized forests", "armoured fishes"], "why": "first forests and armoured fish place it mid-Palaeozoic, after Cambrian, before dinosaurs"},
+  "pennsylvanian-epoch-begins": {"recognition": "low", "inferability": "medium", "anchors": ["coal swamps", "first reptiles"], "why": "coal swamps and first reptiles point to the late Palaeozoic"},
+  "late-triassic-epoch-begins": {"recognition": "medium", "inferability": "high", "anchors": ["early dinosaurs", "supercontinent"], "why": "early dinosaurs on a supercontinent place it at the dawn of the Mesozoic"},
+  "late-jurassic-epoch-begins": {"recognition": "high", "inferability": "high", "anchors": ["Jurassic", "long-necked giants", "plated dinosaurs"], "why": "Jurassic plus Stegosaurus and sauropod cues are well known"},
+  "late-cretaceous-epoch-begins": {"recognition": "high", "inferability": "high", "anchors": ["Cretaceous", "tyrant dinosaurs", "horned dinosaurs"], "why": "T. rex and Triceratops cues put it at the end of the dinosaur age"}
+}

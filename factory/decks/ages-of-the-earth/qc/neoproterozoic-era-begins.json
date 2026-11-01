@@ -1,0 +1,15 @@
+{
+  "slug": "neoproterozoic-era-begins",
+  "description": "A dark, stormy volcanic landscape. Lava glows orange in deep cracks cutting through black basalt cliffs, with smoke rising from vents. The canyon opens onto a choppy dark sea where lava flows meet the water. The sky is heavy with grey cloud and a faint break of light. No people, plants, animals, buildings or text are visible. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
