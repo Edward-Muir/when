@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T15:14:11.673Z",
+  "updated_at": "2026-11-01T15:16:44.796Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-01T15:14:11.673Z"
     },
     "druze-faith-emerges": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e41abacff5a2c35f8fe6260ad52eb0c07d9e9b70ccef85e41335ea5e28510d99",
+      "updated_at": "2026-11-01T15:16:44.796Z"
     },
     "bruno-founds-carthusians": {
       "state": "pending",
