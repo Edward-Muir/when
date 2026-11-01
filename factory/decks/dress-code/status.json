@@ -1,21 +1,26 @@
 {
   "deck": "dress-code",
   "name": "Dress Code",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-01T08:17:09.512Z",
-  "updated_at": "2026-11-01T08:17:09.512Z",
+  "updated_at": "2026-11-01T09:08:43.456Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-01T08:17:09.512Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T09:08:43.456Z"
     }
   ],
   "slugs": {
     "dyed-flax-fibres-georgia": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "de7a334aed03099119f5f414af06b880f8dd88114f88a3741866c6f5295d31c3",
+      "updated_at": "2026-11-01T09:08:43.456Z"
     },
     "silk-weaving-china-legend": {
       "state": "pending",
