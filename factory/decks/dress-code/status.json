@@ -3,7 +3,7 @@
   "name": "Dress Code",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T08:17:09.512Z",
-  "updated_at": "2026-11-01T09:30:59.150Z",
+  "updated_at": "2026-11-01T10:07:45.827Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "dyed-flax-fibres-georgia": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "de7a334aed03099119f5f414af06b880f8dd88114f88a3741866c6f5295d31c3",
-      "updated_at": "2026-11-01T09:08:43.456Z"
+      "updated_at": "2026-11-01T10:07:45.524Z"
     },
     "silk-weaving-china-legend": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "360bffa5a11eef2eea3fe27a0c43fd2b253422ddc03ea212551dc56355395f89",
-      "updated_at": "2026-11-01T09:11:09.898Z"
+      "updated_at": "2026-11-01T10:07:45.556Z"
     },
     "victoria-white-wedding-gown": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4d23208a8cc2c78a9e6100a9a7d06d2b4ee4a9d45cd7126910e3dbf83b095539",
-      "updated_at": "2026-11-01T09:13:34.248Z"
+      "updated_at": "2026-11-01T10:07:45.586Z"
     },
     "worth-paris-couture-house": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5fd588526b3adcea62c7014c3aadb595a3a38ddb280ca15f48d8beb326bf843e",
-      "updated_at": "2026-11-01T09:15:58.955Z"
+      "updated_at": "2026-11-01T10:07:45.615Z"
     },
     "burberry-gabardine": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c107c7da82b2b1f257efe41747b41e10564772cbf7cf4ff78dd868696c4dd244",
-      "updated_at": "2026-11-01T09:18:30.068Z"
+      "updated_at": "2026-11-01T10:07:45.648Z"
     },
     "viscose-rayon-patented": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1a9d9b8139cbc4dc1972052ab46c1b568407de994fd25011770b55a3bc490ff0",
-      "updated_at": "2026-11-01T09:20:57.851Z"
+      "updated_at": "2026-11-01T10:07:45.683Z"
     },
     "lacoste-polo-shirt": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "223e950ffcf998a202eed144701b5d29f1dfe176c99d904fa6193c54f5338c80",
-      "updated_at": "2026-11-01T09:23:30.573Z"
+      "updated_at": "2026-11-01T10:07:45.721Z"
     },
     "hepburn-givenchy-black-dress": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "847652dbfec73c99e53cbf321ae5fcd42216d9566f63d93361f08d70a0c2ba8b",
-      "updated_at": "2026-11-01T09:25:58.465Z"
+      "updated_at": "2026-11-01T10:07:45.760Z"
     },
     "monroe-sheer-birthday-dress": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "daab4bb4f1d85bf588790af71fd3e663d6fdd17001cc5309b05bc940360ad366",
-      "updated_at": "2026-11-01T09:28:30.272Z"
+      "updated_at": "2026-11-01T10:07:45.793Z"
     },
     "von-furstenberg-wrap-dress": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4c4c8d7fd17d62de974d4ea68cfdad1807164c2ef760d8c761eb22b5ea185df9",
-      "updated_at": "2026-11-01T09:30:59.150Z"
+      "updated_at": "2026-11-01T10:07:45.827Z"
     },
     "diana-revenge-dress": {
       "state": "pending",
