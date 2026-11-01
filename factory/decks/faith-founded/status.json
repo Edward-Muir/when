@@ -3,7 +3,7 @@
   "name": "Faith Founded",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T14:17:46.866Z",
-  "updated_at": "2026-11-01T17:17:18.984Z",
+  "updated_at": "2026-11-01T17:19:54.059Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-01T17:17:18.984Z"
     },
     "eddy-charters-christian-science": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c5f6bda005516fa7afbb5bc6bedb0d017e4439e4a5a08275a28cba166f9af0b8",
+      "updated_at": "2026-11-01T17:19:54.059Z"
     },
     "azusa-street-revival": {
       "state": "pending",
