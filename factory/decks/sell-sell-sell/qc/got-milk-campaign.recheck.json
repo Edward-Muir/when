@@ -1,0 +1,15 @@
+{
+  "slug": "got-milk-campaign",
+  "description": "A dark, warmly lit oil-style still life on a kitchen counter: an upright crumpled paper milk carton, a half-eaten peanut butter sandwich in front, and an empty glass on the right. A stove, cabinets and utensil jar sit in shadow behind. No letters, numbers, signature, border or frame are visible; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "apple-think-different-campaign",
+  "description": "A dim, oil-painted room with a figure in dark silhouette seated at a desk, facing a glowing beige CRT computer monitor and a beige desktop tower. Behind them, a wall of gilt-framed portrait paintings of men and a few women in dark suits, their faces mostly lost in shadow. Papers and a pen cup sit on the desk, and the lighting is low, with the monitor the brightest element.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

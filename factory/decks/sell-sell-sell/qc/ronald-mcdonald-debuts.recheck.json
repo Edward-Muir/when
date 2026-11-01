@@ -1,0 +1,15 @@
+{
+  "slug": "ronald-mcdonald-debuts",
+  "description": "A dark oil painting of a TV studio: two vintage boxy cameras on pedestals flank a wooden stool lit by a single spotlight. On the stool sit a cardboard box with arch-shaped handles, a crumpled paper cup with a small red mark, and a burger on a plate. Stage lights hang above and bleacher benches sit behind. No people, no frame, no readable text, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

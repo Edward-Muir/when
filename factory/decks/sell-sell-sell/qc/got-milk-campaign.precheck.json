@@ -1,0 +1,20 @@
+{
+  "slug": "got-milk-campaign",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "a00e9a5b18a0bbde183b38d659ae9241d140775d78bed9d11b6d0a65039cc399",
+  "dhash": "1767777434e4c476",
+  "nearest": {
+    "deck": {
+      "slug": "betty-crocker-created",
+      "distance": 19
+    },
+    "catalogue": {
+      "slug": "vending-machine",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

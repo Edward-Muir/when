@@ -1,0 +1,15 @@
+{
+  "slug": "caxton-printed-handbill-ad",
+  "description": "An elderly man in a dark robe and black cap presses a sheet of printed paper onto a stone pillar. Behind him is a wooden screw printing press, a workbench with tools, and a gothic arch in a dim workshop. The paper has small blackletter-like lines of text and a larger heading-like mark at the top. The image is a full-bleed oil-style painting with no visible frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The printed sheet on the pillar carries visible lines of blackletter-style text and a larger heading-like mark, which is lettering painted into the image. The card should show the press and printer without legible or pseudo-legible text on the handbill; a plain or blank-looking sheet, or one turned away from the viewer, would fix it."
+}
