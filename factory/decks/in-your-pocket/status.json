@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-01T21:20:15.574Z",
+  "updated_at": "2026-11-01T21:22:53.966Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-01T21:20:15.574Z"
     },
     "leica-i-camera": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8de736774c77d6913654199ee952b95b5356cda1badf3373f24dbaa8c5504110",
+      "updated_at": "2026-11-01T21:22:53.966Z"
     },
     "zippo-lighter-introduced": {
       "state": "pending",
