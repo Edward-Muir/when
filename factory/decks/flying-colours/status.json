@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T05:22:05.821Z",
+  "updated_at": "2026-11-02T05:24:42.871Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-02T05:22:05.821Z"
     },
     "flag-union-flag-st-patrick": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "aae50f393d7b0d5458822a42960496dd846fc23ae72a7c91c5a37f38c489533e",
+      "updated_at": "2026-11-02T05:24:42.871Z"
     },
     "flag-argentina-belgrano": {
       "state": "pending",
