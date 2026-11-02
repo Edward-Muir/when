@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T19:30:53.505Z",
+  "updated_at": "2026-11-02T20:24:14.628Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-02T19:30:53.505Z"
     },
     "flag-germany-black-red-gold": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ed39304c95cd8f9fc733ac7adbf426858c3627da44e7c33736fcf8322490538b",
+      "updated_at": "2026-11-02T20:24:14.628Z"
     },
     "flag-soviet-hammer-sickle": {
       "state": "pending",
