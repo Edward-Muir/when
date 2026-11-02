@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-02T01:14:09.264Z",
+  "updated_at": "2026-11-02T01:16:38.174Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-02T01:14:09.264Z"
     },
     "airpods-wireless-earbuds": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a194b867254a015c58ae7895d22452a84b4cc3cb061cf2a5f94656aa39fb928c",
+      "updated_at": "2026-11-02T01:16:38.174Z"
     },
     "samsung-galaxy-fold": {
       "state": "pending",
