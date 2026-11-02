@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-02T01:16:38.174Z",
+  "updated_at": "2026-11-02T01:19:13.275Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-02T01:16:38.174Z"
     },
     "samsung-galaxy-fold": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5606ce37248127dfa8b5bc8132bb3f95031face61ea6699f8122b474151082a1",
+      "updated_at": "2026-11-02T01:19:13.275Z"
     },
     "apple-airtag-tracker": {
       "state": "pending",
