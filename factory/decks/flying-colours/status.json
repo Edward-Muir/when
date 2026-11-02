@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T15:13:37.964Z",
+  "updated_at": "2026-11-02T15:27:41.080Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-11-02T15:13:37.964Z"
     },
     "flag-brazil-green-gold": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7ddca54fe5178185802249ee95df09bd4c905fdb3be376e12b3c7ad2a3203d9d",
+      "updated_at": "2026-11-02T15:27:41.080Z"
     },
     "flag-philippines-unfurled": {
       "state": "pending",
