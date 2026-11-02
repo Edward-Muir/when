@@ -3,7 +3,7 @@
   "name": "In Your Pocket",
   "stage": "art-in-progress",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-02T01:19:13.275Z",
+  "updated_at": "2026-11-02T01:21:46.725Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-02T01:19:13.275Z"
     },
     "apple-airtag-tracker": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5f3cb21ba262b77bc01d487509920a547cc955a1e22f538e67d24ae1142e84bd",
+      "updated_at": "2026-11-02T01:21:46.725Z"
     }
   }
 }
