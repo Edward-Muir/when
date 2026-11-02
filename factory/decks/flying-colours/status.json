@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T05:19:31.651Z",
+  "updated_at": "2026-11-02T05:22:05.821Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-02T05:19:31.651Z"
     },
     "flag-italian-tricolore-first": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7b7d618518a4efe906ce74369db1c893dcb36975641e419fa9ff26298bdddb20",
+      "updated_at": "2026-11-02T05:22:05.821Z"
     },
     "flag-union-flag-st-patrick": {
       "state": "pending",
