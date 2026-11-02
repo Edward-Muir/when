@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T18:50:46.608Z",
+  "updated_at": "2026-11-02T19:30:53.505Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-02T18:50:46.608Z"
     },
     "flag-thailand-tricolour-adopted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "26b80fa58a19f0ea20012e38601883915ef79b235c458d552e58a60d352e655c",
+      "updated_at": "2026-11-02T19:30:53.505Z"
     },
     "flag-germany-black-red-gold": {
       "state": "pending",
