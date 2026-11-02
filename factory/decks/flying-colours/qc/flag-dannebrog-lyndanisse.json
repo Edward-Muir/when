@@ -1,0 +1,15 @@
+{
+  "slug": "flag-dannebrog-lyndanisse",
+  "description": "A painted battle scene: a central mail-clad knight in a helmet stretches both arms up toward a red banner with a white cross, which flies high against a dark, stormy sky with light breaking through. Other armoured men with shields and swords surround him on a hillside, and a shield with a white cross on red sits in the lower right. No visible text, frame or border; the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

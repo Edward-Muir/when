@@ -1,0 +1,15 @@
+{
+  "slug": "flag-argentina-belgrano",
+  "description": "An oil-style painting of a man in a navy military coat with gold epaulettes, a black bicorn hat and white breeches, raising a light blue and white striped flag on a tall pole beside a wide river, with a second man in brown clothing helping at the pole. On the left, soldiers in blue and white uniforms stand in a line with muskets, a mounted officer sits on a brown horse, and a black cannon sits in the foreground under a dramatic stormy sky. No visible text, no frame, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

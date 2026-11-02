@@ -1,0 +1,15 @@
+{
+  "slug": "flag-grand-union-raised",
+  "description": "A man in a black tricorn hat and dark coat with brass buttons stands on the snowy deck of a wooden sailing ship, gripping a dark, tattered cloth on a rope. Above him a striped red-and-white flag with a Union Jack in the upper corner flies from the mast. Behind are a stormy grey sky, masts and rigging, a second ship and a snowy harbour town. The scene is 18th-century maritime, with no visible text, border or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

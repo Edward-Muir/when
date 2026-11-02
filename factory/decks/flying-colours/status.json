@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T05:32:16.549Z",
+  "updated_at": "2026-11-02T06:07:40.519Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "flag-dannebrog-lyndanisse": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "588cd11218648005807139aeee87c2f30c3e648d3582e6b05d6cc310c0265469",
-      "updated_at": "2026-11-02T05:09:06.392Z"
+      "updated_at": "2026-11-02T06:07:40.230Z"
     },
     "flag-first-union-flag": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bf199c7c3a64a4b3d4c4d32c3fbce44f63027a253bc77053e1739a39764c388d",
-      "updated_at": "2026-11-02T05:11:41.707Z"
+      "updated_at": "2026-11-02T06:07:40.261Z"
     },
     "flag-grand-union-raised": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "641f49e6a75d1ff6ffc30a6953a7b2fd199bf44a92e7fc6222a0a1859f22fd3a",
-      "updated_at": "2026-11-02T05:14:17.651Z"
+      "updated_at": "2026-11-02T06:07:40.292Z"
     },
     "flag-stars-stripes-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d61979903ac4aa700f2761f22d13545c713e397d3a920e564aeaf768f85784e2",
-      "updated_at": "2026-11-02T05:16:50.404Z"
+      "updated_at": "2026-11-02T06:07:40.322Z"
     },
     "flag-french-tricolour-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "28eac0f80af1905bc3d38272a05a546f30671544d6f673af3a9f11f85dde2cd2",
-      "updated_at": "2026-11-02T05:19:31.651Z"
+      "updated_at": "2026-11-02T06:07:40.352Z"
     },
     "flag-italian-tricolore-first": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7b7d618518a4efe906ce74369db1c893dcb36975641e419fa9ff26298bdddb20",
-      "updated_at": "2026-11-02T05:22:05.821Z"
+      "updated_at": "2026-11-02T06:07:40.382Z"
     },
     "flag-union-flag-st-patrick": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "aae50f393d7b0d5458822a42960496dd846fc23ae72a7c91c5a37f38c489533e",
-      "updated_at": "2026-11-02T05:24:42.871Z"
+      "updated_at": "2026-11-02T06:07:40.415Z"
     },
     "flag-argentina-belgrano": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8109f1d106b37c4999c573601bc2730eeae03d4985189d0ba500c64d6dffce68",
-      "updated_at": "2026-11-02T05:27:14.781Z"
+      "updated_at": "2026-11-02T06:07:40.449Z"
     },
     "flag-greece-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ff7a11a228b5a3c89c8be6e19d0602a6f7b687494eea5e81309acfac50b9a23d",
-      "updated_at": "2026-11-02T05:29:44.457Z"
+      "updated_at": "2026-11-02T06:07:40.485Z"
     },
     "flag-irish-tricolour-presented": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "403681f78bf19008717a5c3a9b3337ce5708b332601854a483b099ed0985b030",
-      "updated_at": "2026-11-02T05:32:16.549Z"
+      "updated_at": "2026-11-02T06:07:40.519Z"
     },
     "flag-japan-hinomaru-decreed": {
       "state": "pending",
