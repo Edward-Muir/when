@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T20:32:39.844Z",
+  "updated_at": "2026-11-02T20:35:39.179Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-02T20:32:39.844Z"
     },
     "flag-israel-adopted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "007a3cffec4bdfa90f848f00490bb3419a09df620acc30fc75201d1145daf3bd",
+      "updated_at": "2026-11-02T20:35:39.179Z"
     },
     "flag-china-five-star-raised": {
       "state": "pending",
