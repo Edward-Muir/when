@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T05:29:44.457Z",
+  "updated_at": "2026-11-02T05:32:16.549Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-02T05:29:44.457Z"
     },
     "flag-irish-tricolour-presented": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "403681f78bf19008717a5c3a9b3337ce5708b332601854a483b099ed0985b030",
+      "updated_at": "2026-11-02T05:32:16.549Z"
     },
     "flag-japan-hinomaru-decreed": {
       "state": "pending",
