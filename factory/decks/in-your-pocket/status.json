@@ -1,9 +1,9 @@
 {
   "deck": "in-your-pocket",
   "name": "In Your Pocket",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-02T01:21:46.725Z",
+  "updated_at": "2026-11-02T02:07:09.786Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-01T21:09:43.470Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-02T02:07:09.786Z"
     }
   ],
   "slugs": {
@@ -86,46 +90,46 @@
       "updated_at": "2026-11-01T23:07:40.654Z"
     },
     "motorola-dynatac-8000x": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "192ca6fa01153be61ac0caf3c65326e580ab35e60dae8bc0999edc4ab82cae94",
-      "updated_at": "2026-11-02T01:09:05.094Z"
+      "updated_at": "2026-11-02T02:07:09.630Z"
     },
     "blackberry-email-device": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2f305ddbe5f85d20a29a8685e0a3d9011bd14924c9e984758096544ded7ce11b",
-      "updated_at": "2026-11-02T01:11:38.774Z"
+      "updated_at": "2026-11-02T02:07:09.661Z"
     },
     "apple-ipad-introduced": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5589b3e5b6f8aef375505589a317c8f6a98b8cd9dcfe082c8b48d0beb8507c8a",
-      "updated_at": "2026-11-02T01:14:09.264Z"
+      "updated_at": "2026-11-02T02:07:09.691Z"
     },
     "airpods-wireless-earbuds": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a194b867254a015c58ae7895d22452a84b4cc3cb061cf2a5f94656aa39fb928c",
-      "updated_at": "2026-11-02T01:16:38.174Z"
+      "updated_at": "2026-11-02T02:07:09.721Z"
     },
     "samsung-galaxy-fold": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5606ce37248127dfa8b5bc8132bb3f95031face61ea6699f8122b474151082a1",
-      "updated_at": "2026-11-02T01:19:13.275Z"
+      "updated_at": "2026-11-02T02:07:09.754Z"
     },
     "apple-airtag-tracker": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5f3cb21ba262b77bc01d487509920a547cc955a1e22f538e67d24ae1142e84bd",
-      "updated_at": "2026-11-02T01:21:46.725Z"
+      "updated_at": "2026-11-02T02:07:09.786Z"
     }
   }
 }

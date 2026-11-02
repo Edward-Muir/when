@@ -1,0 +1,15 @@
+{
+  "slug": "apple-airtag-tracker",
+  "description": "A dark, oil-painting style still life. Dark brown-black cushions or upholstery fill the frame in deep shadow. In the lower left, a bunch of brass house keys on a split ring has a round silver-and-white tag with an Apple logo attached. To the right, a smartphone with a dark case lies across the fabric, its screen showing a map with a small location pin. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
