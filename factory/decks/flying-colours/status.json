@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T05:27:14.781Z",
+  "updated_at": "2026-11-02T05:29:44.457Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-02T05:27:14.781Z"
     },
     "flag-greece-adopted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ff7a11a228b5a3c89c8be6e19d0602a6f7b687494eea5e81309acfac50b9a23d",
+      "updated_at": "2026-11-02T05:29:44.457Z"
     },
     "flag-irish-tricolour-presented": {
       "state": "pending",
