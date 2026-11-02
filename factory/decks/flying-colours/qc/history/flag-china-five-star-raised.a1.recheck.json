@@ -1,0 +1,15 @@
+{
+  "slug": "flag-china-five-star-raised",
+  "description": "An oil painting of a red flag with one large and four small gold stars flying from a tall pole over a dense crowd seen from behind, in dark mid-century clothes and hats. Beyond them is a Tiananmen-style gate tower with lanterns, a portrait, and two banners with painted Chinese characters, under a stormy sky. It fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted Chinese characters are clearly visible on the two white banners on the gate wall, either side of the portrait. Repaint without legible characters or signage, and ideally without the portrait."
+}

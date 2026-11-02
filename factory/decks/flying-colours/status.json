@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T20:48:40.449Z",
+  "updated_at": "2026-11-02T23:07:41.356Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,74 +107,74 @@
       "updated_at": "2026-11-02T16:04:19.472Z"
     },
     "flag-australia-first-flown": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5a3fa2ac7a28075ec5342bfeb9e64e91dd97bdd2376eb830152a9157560da159",
-      "updated_at": "2026-11-02T18:50:46.608Z"
+      "updated_at": "2026-11-02T23:07:41.054Z"
     },
     "flag-thailand-tricolour-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "26b80fa58a19f0ea20012e38601883915ef79b235c458d552e58a60d352e655c",
-      "updated_at": "2026-11-02T19:30:53.505Z"
+      "updated_at": "2026-11-02T23:07:41.086Z"
     },
     "flag-germany-black-red-gold": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ed39304c95cd8f9fc733ac7adbf426858c3627da44e7c33736fcf8322490538b",
-      "updated_at": "2026-11-02T20:24:14.628Z"
+      "updated_at": "2026-11-02T23:07:41.118Z"
     },
     "flag-soviet-hammer-sickle": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ad26787dbc6ccd1241bd28f179b9dc7216b77e2ec7c8c72188b6044fbab8a9fc",
-      "updated_at": "2026-11-02T20:27:13.240Z"
+      "updated_at": "2026-11-02T23:07:41.149Z"
     },
     "flag-india-tricolour-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d33acb57fda4765e4535e3c963f66d2dde0ea1a30cd0c64dcaf7220191d2f071",
-      "updated_at": "2026-11-02T20:32:39.844Z"
+      "updated_at": "2026-11-02T23:07:41.181Z"
     },
     "flag-israel-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "007a3cffec4bdfa90f848f00490bb3419a09df620acc30fc75201d1145daf3bd",
-      "updated_at": "2026-11-02T20:35:39.179Z"
+      "updated_at": "2026-11-02T23:07:41.215Z"
     },
     "flag-china-five-star-raised": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Painted Chinese characters are clearly visible on the two white banners on the gate wall, either side of the portrait. Repaint without legible characters or signage, and ideally without the portrait.",
       "sha256": "e0bb994a69575a75278405c2ac9798be6b2f64a7aa0329810e7a83009e357e5f",
-      "updated_at": "2026-11-02T20:39:48.345Z"
+      "updated_at": "2026-11-02T23:07:41.253Z"
     },
     "flag-ghana-raised": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e5712a50fed58f77c79233b604983c3fdc0749e6bab1ff6f6592534c7e1fa8c4",
-      "updated_at": "2026-11-02T20:42:45.661Z"
+      "updated_at": "2026-11-02T23:07:41.289Z"
     },
     "flag-nepal-double-pennant": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c6824c2d81cda8e64528a64d3d81082f962202590305aa2c5c2487d27049130f",
-      "updated_at": "2026-11-02T20:45:42.823Z"
+      "updated_at": "2026-11-02T23:07:41.324Z"
     },
     "flag-canada-maple-leaf": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4a885fe8be5c27ff4a3c4b16d3be2f679b64ceab77fba19f45f56158d0ffc00b",
-      "updated_at": "2026-11-02T20:48:40.449Z"
+      "updated_at": "2026-11-02T23:07:41.356Z"
     },
     "flag-uae-raised": {
       "state": "pending",
