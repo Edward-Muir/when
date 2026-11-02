@@ -1,21 +1,26 @@
 {
   "deck": "flying-colours",
   "name": "Flying Colours",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T04:21:23.007Z",
+  "updated_at": "2026-11-02T05:09:06.392Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-02T04:21:23.007Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-02T05:09:06.392Z"
     }
   ],
   "slugs": {
     "flag-dannebrog-lyndanisse": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "588cd11218648005807139aeee87c2f30c3e648d3582e6b05d6cc310c0265469",
+      "updated_at": "2026-11-02T05:09:06.392Z"
     },
     "flag-first-union-flag": {
       "state": "pending",
