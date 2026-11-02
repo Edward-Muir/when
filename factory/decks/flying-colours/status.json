@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T20:27:13.240Z",
+  "updated_at": "2026-11-02T20:32:39.844Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-02T20:27:13.240Z"
     },
     "flag-india-tricolour-adopted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d33acb57fda4765e4535e3c963f66d2dde0ea1a30cd0c64dcaf7220191d2f071",
+      "updated_at": "2026-11-02T20:32:39.844Z"
     },
     "flag-israel-adopted": {
       "state": "pending",
