@@ -1,9 +1,9 @@
 {
   "deck": "in-your-pocket",
   "name": "In Your Pocket",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-11-01T20:17:56.571Z",
-  "updated_at": "2026-11-02T02:07:09.786Z",
+  "updated_at": "2026-11-02T03:06:57.281Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-11-02T02:07:09.786Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-02T03:06:57.281Z"
     }
   ],
   "slugs": {
