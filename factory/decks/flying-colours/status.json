@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T20:45:42.823Z",
+  "updated_at": "2026-11-02T20:48:40.449Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-11-02T20:45:42.823Z"
     },
     "flag-canada-maple-leaf": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4a885fe8be5c27ff4a3c4b16d3be2f679b64ceab77fba19f45f56158d0ffc00b",
+      "updated_at": "2026-11-02T20:48:40.449Z"
     },
     "flag-uae-raised": {
       "state": "pending",
