@@ -1,0 +1,15 @@
+{
+  "slug": "flag-brazil-green-gold",
+  "description": "A green-and-yellow flag with a blue globe and white band waves above a crowd in a dusky town square. A man in a dark military-style uniform and cap grips the pole while men in hats and shirtsleeves raise fists and hats around him. Rifles, torches, tiled roofs and a mountain sit under a stormy sky. No text or frame is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
