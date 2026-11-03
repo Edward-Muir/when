@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-02T23:07:41.356Z",
+  "updated_at": "2026-11-03T01:08:34.708Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,11 +149,11 @@
       "updated_at": "2026-11-02T23:07:41.215Z"
     },
     "flag-china-five-star-raised": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Painted Chinese characters are clearly visible on the two white banners on the gate wall, either side of the portrait. Repaint without legible characters or signage, and ideally without the portrait.",
-      "sha256": "e0bb994a69575a75278405c2ac9798be6b2f64a7aa0329810e7a83009e357e5f",
-      "updated_at": "2026-11-02T23:07:41.253Z"
+      "sha256": "133e33625c774afbe23fed0114e0a895ddc4b978a72d80c7c062285218298840",
+      "updated_at": "2026-11-03T01:08:34.708Z"
     },
     "flag-ghana-raised": {
       "state": "qc-pass",
