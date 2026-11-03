@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-03T01:13:55.455Z",
+  "updated_at": "2026-11-03T01:16:08.033Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-11-03T01:13:55.455Z"
     },
     "flag-zimbabwe-raised": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "70a9427c4152e13c944238542a6e75a7d2190974b231d22fd1c1f1e3a0c46c1c",
+      "updated_at": "2026-11-03T01:16:08.033Z"
     },
     "flag-russia-tricolour-returns": {
       "state": "pending",
