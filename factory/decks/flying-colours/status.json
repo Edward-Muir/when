@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-03T01:16:08.033Z",
+  "updated_at": "2026-11-03T01:18:26.206Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -198,10 +198,11 @@
       "updated_at": "2026-11-03T01:16:08.033Z"
     },
     "flag-russia-tricolour-returns": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b15b545bd3b8aabd58add9278899928a62915dd3ab2781a3a8136b628fdf7698",
+      "updated_at": "2026-11-03T01:18:26.206Z"
     },
     "flag-south-africa-new": {
       "state": "pending",
