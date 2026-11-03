@@ -1,9 +1,9 @@
 {
   "deck": "flying-colours",
   "name": "Flying Colours",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-03T01:25:07.960Z",
+  "updated_at": "2026-11-03T02:07:11.175Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-02T05:09:06.392Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-03T02:07:11.175Z"
     }
   ],
   "slugs": {
@@ -149,11 +153,11 @@
       "updated_at": "2026-11-02T23:07:41.215Z"
     },
     "flag-china-five-star-raised": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Painted Chinese characters are clearly visible on the two white banners on the gate wall, either side of the portrait. Repaint without legible characters or signage, and ideally without the portrait.",
+      "reason": null,
       "sha256": "133e33625c774afbe23fed0114e0a895ddc4b978a72d80c7c062285218298840",
-      "updated_at": "2026-11-03T01:08:34.708Z"
+      "updated_at": "2026-11-03T02:07:10.952Z"
     },
     "flag-ghana-raised": {
       "state": "qc-pass",
@@ -177,53 +181,53 @@
       "updated_at": "2026-11-02T23:07:41.356Z"
     },
     "flag-uae-raised": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "987ceee879cc2e896a48c8512312310f95c51126284ed046164a60da370aeec3",
-      "updated_at": "2026-11-03T01:11:41.496Z"
+      "updated_at": "2026-11-03T02:07:10.983Z"
     },
     "flag-bangladesh-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "edd43e3f5d6aabd98654345f08de6ce7ef5d3fa4fb1687e162c0c3f7ce59e603",
-      "updated_at": "2026-11-03T01:13:55.455Z"
+      "updated_at": "2026-11-03T02:07:11.013Z"
     },
     "flag-zimbabwe-raised": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "70a9427c4152e13c944238542a6e75a7d2190974b231d22fd1c1f1e3a0c46c1c",
-      "updated_at": "2026-11-03T01:16:08.033Z"
+      "updated_at": "2026-11-03T02:07:11.044Z"
     },
     "flag-russia-tricolour-returns": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b15b545bd3b8aabd58add9278899928a62915dd3ab2781a3a8136b628fdf7698",
-      "updated_at": "2026-11-03T01:18:26.206Z"
+      "updated_at": "2026-11-03T02:07:11.074Z"
     },
     "flag-south-africa-new": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "98cf2ba97ade4c1372a2df2c3a3e2c222e271d07ba217125cab2a4266bbed04a",
-      "updated_at": "2026-11-03T01:20:42.724Z"
+      "updated_at": "2026-11-03T02:07:11.104Z"
     },
     "flag-kosovo-unveiled": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b03f2b95e2d1681cdfb5578217a7f248fada4e88a0cb11af170aa2b4fcd8f15d",
-      "updated_at": "2026-11-03T01:22:54.796Z"
+      "updated_at": "2026-11-03T02:07:11.138Z"
     },
     "flag-south-sudan-raised": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5bb27e5b5eefd1ffebbf203a3ae94299f61fd80ea4847c6ac3bcf154b7c33e12",
-      "updated_at": "2026-11-03T01:25:07.960Z"
+      "updated_at": "2026-11-03T02:07:11.175Z"
     }
   }
 }

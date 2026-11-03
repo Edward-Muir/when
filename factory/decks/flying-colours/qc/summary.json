@@ -133,11 +133,11 @@
     "description": "An oil painting of a still life in a dark room: a wooden table with a window open at the back, a blue-and-white flag with a blue six-pointed star draped across it, a striped shawl hanging at the left edge, ink pots, and papers with faint scribbled lines."
   },
   "flag-china-five-star-raised": {
-    "state": "qc-fail",
-    "reason": "Painted Chinese characters are clearly visible on the two white banners on the gate wall, either side of the portrait. Repaint without legible characters or signage, and ideally without the portrait.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An oil painting of a red flag with one large and four small gold stars flying from a tall pole over a dense crowd seen from behind, in dark mid-century clothes and hats. Beyond them is a Tiananmen-style gate tower with lanterns, a portrait, and two banners with painted Chinese characters, under a stormy sky. It fills the frame with no border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted scene of a large red-and-gold flag with yellow stars flying from a tall pole in front of a red walled gate with a tiled, ornate roof. A dense crowd of dark-clothed people stands in the foreground under a moody, cloudy dusk sky. There are street lamps at the left and no visible text, letters, frame or border."
   },
   "flag-ghana-raised": {
     "state": "qc-pass",
@@ -159,5 +159,54 @@
     "by": "review",
     "attempts": 1,
     "description": "A snowy scene in a painterly style. A red, white and red flag with a red maple leaf flies on a tall pole at upper right, blowing against a grey sky. On the left stands a large Gothic stone building with a tall clock tower and a green spire, dusted with snow. In the foreground, a crowd of people in dark winter coats and hats is seen from behind, with uniformed guards in dark coats standing at the pole. Snow falls throughout. No visible text or frame."
+  },
+  "flag-uae-raised": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting at dusk. A flag with a red hoist block and green, white and black horizontal bands flies from a tall white pole on the right, against an orange and dark blue sky. On the left stand a low white modern villa with columns and palm trees, and beyond it a calm sea with a sunset glow."
+  },
+  "flag-bangladesh-adopted": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A green flag with an off-centre red disc flies from a tall bamboo pole on a stormy, grey-skied riverbank. A crowd of villagers in saris, lungis and loose shirts look up at it, and a river beyond them is packed with wooden boats with sails and passengers. Brick and tin-roofed houses and a thin smoke plume sit on the far bank, with palm and tree silhouettes in the haze. Oil-painting texture, no visible text or frame."
+  },
+  "flag-zimbabwe-raised": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A silhouetted figure climbs a flagpole at night, topped by a white-triangled flag with a red star and a gold bird, in green, yellow, red and black stripes. Below, a dense crowd of dark silhouettes raises fists and arms under stadium floodlights, with smoke or haze drifting and a small flag visible far to the right. The style is a painterly night scene with no visible text."
+  },
+  "flag-russia-tricolour-returns": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Night scene in an oil-paint style. A young man in a dark jacket stands on a heavy olive-green tank holding a large white, blue and red horizontal-striped flag aloft. Several other young people crowd the turret and hull, some raising fists. Behind them is a tall pale modernist government-style building with lit windows, with searchlight beams, smoke and a small fire in the background, and a crowd below. Dress is late-Soviet-era jeans, leather jackets and work jackets. No visible text, no frame, no gore."
+  },
+  "flag-south-africa-new": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A flag with a green, black and yellow Y-shaped hoist and red, white and blue arms flies from a tall pole against a dusk sky. Below, a long queue of dark-clothed people, several of them children, stands on dusty ground in front of tin-roofed shacks, with power lines and a setting sun behind them. The painting is edge to edge with no frame or text."
+  },
+  "flag-kosovo-unveiled": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Snowy dusk in a city street. A crowd seen from behind in dark winter coats and hats raises a large dark blue flag with six white stars and a gold map shape in the centre. Apartment blocks, street lamps and bare trees surround them, and a few people hold up phones with bright flashes."
+  },
+  "flag-south-sudan-raised": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "The main subject is a tall grey flagpole with a black, red, green and white flag with a blue triangle and yellow star flying from its top. Below, a dense crowd of dark silhouetted people raises their arms, with small flags among them. The setting is a hazy golden sky with light rays, in an oil-painting style. There is no visible text, frame or border, and nothing graphic."
   }
 }
