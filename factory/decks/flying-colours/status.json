@@ -3,7 +3,7 @@
   "name": "Flying Colours",
   "stage": "art-in-progress",
   "created_at": "2026-11-02T04:21:23.007Z",
-  "updated_at": "2026-11-03T01:11:41.496Z",
+  "updated_at": "2026-11-03T01:13:55.455Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-11-03T01:11:41.496Z"
     },
     "flag-bangladesh-adopted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "edd43e3f5d6aabd98654345f08de6ce7ef5d3fa4fb1687e162c0c3f7ce59e603",
+      "updated_at": "2026-11-03T01:13:55.455Z"
     },
     "flag-zimbabwe-raised": {
       "state": "pending",
