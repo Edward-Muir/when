@@ -204,6 +204,13 @@ else targetY = (pos[k - 1] + pos[k]) / 2; // between k-1 and k
 const targetX = 402 / 2;
 ```
 
+**One row may be tall.** The latest correct placement stands 184px high (`[data-reveal-row]`)
+until the next drop, so the ±34 above assumes an 88px row and can land inside a tall first or
+last row. Its middle is still the boundary, so aim off the row's own box at the ends:
+`rows[0].top - 24` and `rows.at(-1).bottom + 24`, with `rows` read from `[data-timeline-index]`.
+The between-neighbours midpoint needs no change. A placed card's `innerText` then also holds
+its year, on a line above the title; its accessible name is still the title alone.
+
 Keep `targetY` **above the hand bar** (`handTop`), or the drop lands in
 `bottom-bar-zone` and the card just returns to hand.
 

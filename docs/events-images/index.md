@@ -156,6 +156,9 @@ mask (`.card-art-fade`) with their own text block.
 - **A card never changes its face with the interaction.** Titles are always present. Hiding the
   fanned titles was tried and left the next card blank whenever the top card was lifted.
 
+- **One row can be tall.** The latest correct placement is drawn by `RevealFace` at 240x176:
+  see [../gameplay-feel/index.md](../gameplay-feel/index.md#the-tall-reveal-row).
+
 ### The hand card is a square
 
 The hand is the one place the whole painting is shown: `Card`'s `square` size (168px), title on
