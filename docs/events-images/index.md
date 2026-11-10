@@ -154,7 +154,11 @@ mask (`.card-art-fade`) with their own text block.
 - **The Archive art is narrower (58%) and its text left-aligned**, because dark text on the
   surface has no card colour behind it.
 - **The swap button sits on the hand card's top-left corner**, over the art. On the right it
-  covers the title. The fanned cards behind hide their titles for the same reason.
+  covers the title.
+- **A card never changes its face with the interaction.** The title is inset 16px from the right
+  edge because the hand fans its back cards up to 16px right: any less and the last letters poke
+  out beside the top card. Hiding the fanned titles instead was tried and left the next card
+  blank whenever the top card was lifted or mid-placement.
 
 ## `friendly_name` is capped at 35 characters
 

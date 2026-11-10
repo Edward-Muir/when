@@ -1,5 +1,4 @@
 import { RefreshCw } from 'lucide-react';
-import { useDndContext } from '@dnd-kit/core';
 import { HistoricalEvent, Player } from '../types';
 import { GameHintKey } from '../utils/playerStorage';
 import DraggableCard from './DraggableCard';
@@ -43,11 +42,6 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
     ? 'animate-hint-glow bg-accent border-accent hover:bg-accent'
     : 'bg-surface border-border hover:bg-border';
   const cardNudgeClass = topCardNudgeClass(nudge);
-  // Fanned cards hide their titles at rest: right-aligned, the last letters would peek out
-  // beside the top card. While the top card is being dragged the next card is in full view,
-  // so its title comes back.
-  const { active } = useDndContext();
-  const fannedTitleClass = active ? '' : '[&_span]:invisible';
 
   return (
     <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">
@@ -72,7 +66,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           {/* 3rd card (fanned to right) */}
           {currentPlayer.hand[2] && (
             <div
-              className={`absolute z-0 pointer-events-none opacity-50 ${fannedTitleClass}`}
+              className="absolute z-0 pointer-events-none opacity-50"
               style={{ transform: 'translateX(16px) rotate(4deg)' }}
             >
               <Card event={currentPlayer.hand[2]} size="landscape" />
@@ -82,7 +76,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           {/* 2nd card (fanned to right) */}
           {currentPlayer.hand[1] && (
             <div
-              className={`absolute z-[1] pointer-events-none opacity-70 ${fannedTitleClass}`}
+              className="absolute z-[1] pointer-events-none opacity-70"
               style={{ transform: 'translateX(8px) rotate(2deg)' }}
             >
               <Card event={currentPlayer.hand[1]} size="landscape" />
