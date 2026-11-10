@@ -140,6 +140,21 @@ body {
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 24px);
     mask-image: linear-gradient(90deg, transparent, #000 24px);
   }
+  /* Card art on a landscape card (CardFace, ArchiveDeckRow): solid over its left half, then
+     dissolving into whatever the card is filled with, so there is no seam beside the title.
+     The crop sits above centre because the art is square and the slot is wide. */
+  .card-art-fade {
+    object-position: 50% 35%;
+    -webkit-mask-image: linear-gradient(90deg, #000 50%, transparent);
+    mask-image: linear-gradient(90deg, #000 50%, transparent);
+  }
+  /* The title overlaps the last, faintest part of that fade. */
+  .card-title-halo-dark {
+    text-shadow: 0 1px 3px rgb(0 0 0 / 0.7);
+  }
+  .card-title-halo-light {
+    text-shadow: 0 0 3px rgb(255 255 255 / 0.4);
+  }
 }
 
 /* ===========================================================================

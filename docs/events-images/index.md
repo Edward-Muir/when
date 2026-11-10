@@ -138,6 +138,24 @@ in `deprecated.json`, which is absent from `manifest.json` and therefore never i
 is what makes an unfiltered extraction run safe: everything the manifest reaches already has a
 colour and dimensions, so only genuinely new events are processed.
 
+## The card face: art bleeds into the colour
+
+Every landscape card (hand, drag overlay, placed row, tombstone) draws its inside with one
+component, `CardFace.tsx`: the art covers the left 70% and a mask fades it into the card's
+`color`, with the title right-aligned on the right half. The Archive's day rows use the same
+mask (`.card-art-fade`) with their own text block.
+
+- **Card and row sizes are untouched**, so nothing in the drag maths or tombstone footprint moved.
+- **The crop is anchored at `50% 35%`.** The art is the square `thumbnail` rung in a 2:1 slot;
+  faces and skylines sit above centre. No new rung was added, and none should be.
+- **The title half must stay readable.** The title overlaps only the faintest part of the fade
+  and carries a halo matched to `text_color`. Widening the art or moving the fade later eats
+  into long names ("Karakhanid Khanate Administration" is the test case).
+- **The Archive art is narrower (58%) and its text left-aligned**, because dark text on the
+  surface has no card colour behind it.
+- **The swap button sits on the hand card's top-left corner**, over the art. On the right it
+  covers the title. The fanned cards behind hide their titles for the same reason.
+
 ## `friendly_name` is capped at 35 characters
 
 `MAX_FRIENDLY_NAME_LENGTH`, enforced by `src/utils/eventNameLength.test.ts`, so a verbose title

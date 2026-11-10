@@ -47,11 +47,12 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
     <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">
       {/* Card stack container with cycle button */}
       <div className="relative">
-        {/* Cycle button - top right corner */}
+        {/* Cycle button - top left corner, over the art: the title is right-aligned, so the
+            right corner would cover it */}
         <button
           onClick={() => canCycle && onCycleHand()}
           disabled={!canCycle}
-          className={`absolute -top-2 -right-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
+          className={`absolute -top-2 -left-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
             border shadow-sm flex items-center justify-center
             disabled:opacity-40 disabled:cursor-not-allowed
             active:scale-95 transition-all ${cycleNudgeClass}`}
@@ -62,10 +63,12 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
 
         {/* Horizontal card stack */}
         <div className="relative flex items-center">
+          {/* Fanned cards hide their titles: right-aligned, the last letters would peek out
+              beside the top card */}
           {/* 3rd card (fanned to right) */}
           {currentPlayer.hand[2] && (
             <div
-              className="absolute z-0 pointer-events-none opacity-50"
+              className="absolute z-0 pointer-events-none opacity-50 [&_span]:invisible"
               style={{ transform: 'translateX(16px) rotate(4deg)' }}
             >
               <Card event={currentPlayer.hand[2]} size="landscape" />
@@ -75,7 +78,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           {/* 2nd card (fanned to right) */}
           {currentPlayer.hand[1] && (
             <div
-              className="absolute z-[1] pointer-events-none opacity-70"
+              className="absolute z-[1] pointer-events-none opacity-70 [&_span]:invisible"
               style={{ transform: 'translateX(8px) rotate(2deg)' }}
             >
               <Card event={currentPlayer.hand[1]} size="landscape" />

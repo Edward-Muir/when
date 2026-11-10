@@ -85,8 +85,10 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
             curated ? 'border-2 border-accent' : 'border border-border'
           } ${locked ? 'opacity-70' : 'active:scale-95'} ${shaking ? 'animate-shake-medium' : ''}`}
         >
-          {/* Image section (40% width) */}
-          <div className="w-[40%] h-full relative overflow-hidden">
+          {/* Same face as a game card (see CardFace): art fading into the surface. The art is
+              narrower here and the text stays left-aligned: dark text on a light surface has
+              no halo to lean on, so it must clear the fade. The lock sits over the solid part. */}
+          <div className="relative w-full h-full">
             {hasImage ? (
               <img
                 src={getImageUrl(seedEvent.image_url, 'thumbnail')}
@@ -94,28 +96,28 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
                 loading="lazy"
                 decoding="async"
                 onError={() => setImageError(true)}
-                className={`w-full h-full object-cover ${locked || missed ? 'grayscale' : ''}`}
+                className={`card-art-fade absolute inset-y-0 left-0 w-[58%] h-full object-cover ${
+                  locked || missed ? 'grayscale' : ''
+                }`}
               />
             ) : (
-              <div className="w-full h-full flex items-center justify-center bg-border">
+              <div className="absolute inset-y-0 left-0 w-[40%] flex items-center justify-center bg-border">
                 {seedEvent && (
                   <CategoryIcon category={seedEvent.category} className="text-text-muted w-8 h-8" />
                 )}
               </div>
             )}
             {locked && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+              <div className="absolute inset-y-0 left-0 w-[40%] flex items-center justify-center">
                 <Lock className="w-6 h-6 text-white drop-shadow-md" />
               </div>
             )}
-          </div>
-
-          {/* Title section (60% width) */}
-          <div className="w-[60%] h-full flex flex-col justify-center px-2 py-1 gap-0.5">
-            <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
-              {name}
-            </span>
-            <DayLine day={day} themeBest={themeBest} best={best} />
+            <div className="absolute inset-y-0 right-0 w-[48%] flex flex-col justify-center pl-2 pr-2 py-1 gap-0.5">
+              <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
+                {name}
+              </span>
+              <DayLine day={day} themeBest={themeBest} best={best} />
+            </div>
           </div>
         </button>
       </div>
