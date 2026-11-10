@@ -86,7 +86,9 @@ await page.waitForTimeout(2500);
 The app has almost **no `data-testid`s**, so rely on these stable handles:
 
 - **Active card (the drag handle):** `div.cursor-grab` (first match). Its
-  `innerText` (first line) is the event's `friendly_name`.
+  `innerText` (first line) is the event's `friendly_name`. It is a 168px square; once lifted
+  it is `invisible` in the hand and the drag overlay is the landscape card, centred on the
+  pointer.
 - **Placed timeline markers:** `[data-timeline-year]`. The attribute value is
   the event's `year` (negative = BCE). It is on every timeline card, including
   the pre-placed seed, and **tombstones (wrong placements) are excluded**, so
@@ -190,7 +192,7 @@ const pos = await page.$$eval('[data-timeline-year]', (els) =>
     return r.top + r.height / 2;
   })
 );
-const handTop = cardBox.y; // the hand bar starts at the active card
+const handTop = cardBox.y - 8; // the hand bar starts 8px above the square hand card
 let targetY;
 if (pos.length === 0)
   targetY = (140 + handTop - 30) / 2; // empty timeline

@@ -53,8 +53,7 @@ const CardFace: React.FC<CardFaceProps> = ({ event, priority = false, tombstone 
           <CategoryIcon category={event.category} className="text-text-muted w-8 h-8" />
         </div>
       )}
-      {/* 16px of right inset, never less: the hand fans its back cards up to 16px to the right
-          (ActiveCardDisplay), and a title inset by less would poke out beside the top card. */}
+      {/* 16px of right inset, kept from when the hand fanned landscape cards 16px apart. */}
       <div className="absolute inset-y-0 right-0 w-[52%] flex items-center justify-end pl-1 pr-4 py-1">
         <span
           className={`${titleClass} ${titleShadowClass(event, tombstone)} text-sm leading-tight line-clamp-3 font-body text-right`}

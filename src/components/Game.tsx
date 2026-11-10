@@ -12,7 +12,13 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
+import {
+  WhenGameState,
+  PlacementResult,
+  HistoricalEvent,
+  GamePopupData,
+  GamePhase,
+} from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
@@ -24,7 +30,7 @@ import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import StatsPopup from './StatsPopup';
 import Modal from './ui/Modal';
-import Card from './Card';
+import HandDragOverlay from './HandDragOverlay';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
 import TopBar from './TopBar';
@@ -164,6 +170,14 @@ interface GameProps {
   allEvents: HistoricalEvent[];
 }
 
+/**
+ * The bar is tall only while it holds the square hand card. Game over swaps in a row of
+ * buttons, and the board gets the space back.
+ */
+function bottomBarHeightClass(phase: GamePhase): string {
+  return phase === 'gameOver' ? 'h-[120px] sm:h-[140px]' : 'hand-bar';
+}
+
 const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
@@ -271,6 +285,7 @@ const Game: React.FC<GameProps> = ({
     handlers: dragHandlers,
     droppedOnTimelineRef,
     draggedCardRef,
+    grabRef,
   } = useDragAndDrop({
     activeCard,
     onPlacement,
@@ -430,10 +445,11 @@ const Game: React.FC<GameProps> = ({
             />
           </div>
 
-          {/* Bottom Bar - Fixed height with game info + active card aligned with timeline */}
+          {/* Bottom Bar - Fixed height with game info + active card aligned with timeline.
+              `hand-bar` (index.css) is the square hand card plus the safe-area inset. */}
           <div
             ref={setBottomBarRef}
-            className={`h-[120px] sm:h-[140px] flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
+            className={`${bottomBarHeightClass(state.phase)} flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
               dragState.isOverHand ? 'bg-accent/10' : ''
             }`}
           >
@@ -471,7 +487,6 @@ const Game: React.FC<GameProps> = ({
                     activeCard={activeCard}
                     currentPlayer={currentPlayer}
                     isAnimating={state.isAnimating}
-                    isOverTimeline={dragState.isOverTimeline}
                     onCycleHand={onCycleHand}
                     onCardTap={handleActiveCardTap}
                     nudge={hints.active}
@@ -484,9 +499,7 @@ const Game: React.FC<GameProps> = ({
           {createPortal(
             <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
               {draggedCardRef.current ? (
-                <div className="dragging-card" style={{ transform: 'scale(1.05)' }}>
-                  <Card event={draggedCardRef.current} size="landscape" />
-                </div>
+                <HandDragOverlay event={draggedCardRef.current} grab={grabRef.current} />
               ) : null}
             </DragOverlay>,
             document.body

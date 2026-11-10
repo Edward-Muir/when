@@ -15,7 +15,6 @@ interface ActiveCardDisplayProps {
   activeCard: HistoricalEvent;
   currentPlayer: Player;
   isAnimating: boolean;
-  isOverTimeline: boolean;
   onCycleHand: () => void;
   onCardTap: () => void;
   /**
@@ -29,7 +28,6 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   activeCard,
   currentPlayer,
   isAnimating,
-  isOverTimeline,
   onCycleHand,
   onCardTap,
   nudge = null,
@@ -45,41 +43,29 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
 
   return (
     <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">
-      {/* Card stack container with cycle button */}
-      <div className="relative">
-        {/* Cycle button - top left corner, over the art: the title is right-aligned, so the
-            right corner would cover it */}
-        <button
-          onClick={() => canCycle && onCycleHand()}
-          disabled={!canCycle}
-          className={`absolute -top-2 -left-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
-            border shadow-sm flex items-center justify-center
-            disabled:opacity-40 disabled:cursor-not-allowed
-            active:scale-95 transition-all ${cycleNudgeClass}`}
-          aria-label="Cycle to next card"
-        >
-          <RefreshCw className={`w-4 h-4 ${cycleNudge ? 'text-white' : 'text-text'}`} />
-        </button>
-
-        {/* Horizontal card stack */}
+      {/* The square stack, then the swap button beside it. The gap clears the fan: the back
+          card reaches 16px right and its rotated corner a few more. */}
+      <div className="flex items-center gap-7">
         <div className="relative flex items-center">
+          {/* The fanned cards are dimmed, not translucent: a see-through square shows the
+              title of the card under it through its own. */}
           {/* 3rd card (fanned to right) */}
           {currentPlayer.hand[2] && (
             <div
-              className="absolute z-0 pointer-events-none opacity-50"
+              className="absolute z-0 pointer-events-none brightness-75"
               style={{ transform: 'translateX(16px) rotate(4deg)' }}
             >
-              <Card event={currentPlayer.hand[2]} size="landscape" />
+              <Card event={currentPlayer.hand[2]} size="square" />
             </div>
           )}
 
           {/* 2nd card (fanned to right) */}
           {currentPlayer.hand[1] && (
             <div
-              className="absolute z-[1] pointer-events-none opacity-70"
+              className="absolute z-[1] pointer-events-none brightness-90"
               style={{ transform: 'translateX(8px) rotate(2deg)' }}
             >
-              <Card event={currentPlayer.hand[1]} size="landscape" />
+              <Card event={currentPlayer.hand[1]} size="square" />
             </div>
           )}
 
@@ -90,13 +76,26 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
               event={activeCard}
               onTap={onCardTap}
               disabled={isAnimating}
-              isOverTimeline={isOverTimeline}
               isHidden={isAnimating}
-              size="landscape"
+              size="square"
               priority
             />
           </div>
         </div>
+
+        {/* Swap button: beside the card, never on it, so it covers neither art nor title.
+            44px, the minimum touch target. */}
+        <button
+          onClick={() => canCycle && onCycleHand()}
+          disabled={!canCycle}
+          className={`w-11 h-11 min-w-11 min-h-11 shrink-0 rounded-full
+            border shadow-sm flex items-center justify-center
+            disabled:opacity-40 disabled:cursor-not-allowed
+            active:scale-95 transition-all ${cycleNudgeClass}`}
+          aria-label="Cycle to next card"
+        >
+          <RefreshCw className={`w-5 h-5 ${cycleNudge ? 'text-white' : 'text-text'}`} />
+        </button>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import CategoryIcon from './CategoryIcon';
 import CardFace from './CardFace';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
-export type CardSize = 'normal' | 'large' | 'landscape';
+export type CardSize = 'normal' | 'large' | 'landscape' | 'square';
 
 interface CardProps {
   event: HistoricalEvent;
@@ -45,6 +45,9 @@ const Card: React.FC<CardProps> = ({
         return 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]';
       case 'landscape':
         return 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]';
+      // The hand card: the art is square, so this is the one size that shows all of it.
+      case 'square':
+        return 'w-[168px] h-[168px]';
     }
   };
 
@@ -73,7 +76,7 @@ const Card: React.FC<CardProps> = ({
     );
   }
 
-  // Portrait layout (normal/large): image with title overlay
+  // Portrait and square layouts (normal/large/square): image with title overlay
   return (
     <div
       className={`

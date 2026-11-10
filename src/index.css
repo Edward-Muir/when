@@ -86,6 +86,12 @@ body {
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
   }
+  /* The hand bar while a game is in play: the 168px square hand card with 8px above and
+     below. The inset is added, not absorbed, because `pb-safe` pads inside this height and a
+     home-indicator inset would otherwise squeeze the card out of the bar. */
+  .hand-bar {
+    height: calc(184px + env(safe-area-inset-bottom));
+  }
 }
 
 /* Player-row highlight.

@@ -32,6 +32,42 @@ interface UseDragAndDropReturn {
   handlers: DragHandlers;
   droppedOnTimelineRef: React.MutableRefObject<boolean>;
   draggedCardRef: React.MutableRefObject<HistoricalEvent | null>;
+  /** Where the hand card was grabbed and how big it was. Read by the drag overlay's morph. */
+  grabRef: React.MutableRefObject<DragGrab | null>;
+}
+
+/** The pickup, in the hand card's own box: the overlay grows its landscape card from here. */
+export interface DragGrab {
+  /** Pointer position inside the hand card. */
+  x: number;
+  y: number;
+  /** The hand card's box in the viewport at pickup. */
+  left: number;
+  width: number;
+  height: number;
+}
+
+function pointerOf(e: Event | null): { x: number; y: number } | null {
+  if (!e) return null;
+  if (typeof TouchEvent !== 'undefined' && e instanceof TouchEvent) {
+    const t = e.touches[0];
+    return t ? { x: t.clientX, y: t.clientY } : null;
+  }
+  if (e instanceof MouseEvent) return { x: e.clientX, y: e.clientY };
+  return null;
+}
+
+function readGrab(event: DragStartEvent): DragGrab | null {
+  const rect = event.active.rect.current.initial;
+  if (!rect) return null;
+  const p = pointerOf(event.activatorEvent);
+  return {
+    x: p ? p.x - rect.left : rect.width / 2,
+    y: p ? p.y - rect.top : rect.height / 2,
+    left: rect.left,
+    width: rect.width,
+    height: rect.height,
+  };
 }
 
 export function useDragAndDrop({
@@ -49,6 +85,7 @@ export function useDragAndDrop({
   const droppedOnTimelineRef = useRef(false);
   const draggedCardRef = useRef<HistoricalEvent | null>(null);
   const prevInsertionIndexRef = useRef<number | null>(null);
+  const grabRef = useRef<DragGrab | null>(null);
 
   const calculateInsertionFromPositions = useCallback(
     (pointerY: number, positions: number[]): number => {
@@ -61,7 +98,8 @@ export function useDragAndDrop({
   );
 
   const handleDragStart = useCallback(
-    (_event: DragStartEvent) => {
+    (event: DragStartEvent) => {
+      grabRef.current = readGrab(event);
       setIsDragging(true);
       setInsertionIndex(null);
       prevInsertionIndexRef.current = null;
@@ -179,5 +217,6 @@ export function useDragAndDrop({
     },
     droppedOnTimelineRef,
     draggedCardRef,
+    grabRef,
   };
 }

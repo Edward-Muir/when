@@ -153,12 +153,35 @@ mask (`.card-art-fade`) with their own text block.
   into long names ("Karakhanid Khanate Administration" is the test case).
 - **The Archive art is narrower (58%) and its text left-aligned**, because dark text on the
   surface has no card colour behind it.
-- **The swap button sits on the hand card's top-left corner**, over the art. On the right it
-  covers the title.
-- **A card never changes its face with the interaction.** The title is inset 16px from the right
-  edge because the hand fans its back cards up to 16px right: any less and the last letters poke
-  out beside the top card. Hiding the fanned titles instead was tried and left the next card
-  blank whenever the top card was lifted or mid-placement.
+- **A card never changes its face with the interaction.** Titles are always present. Hiding the
+  fanned titles was tried and left the next card blank whenever the top card was lifted.
+
+### The hand card is a square
+
+The hand is the one place the whole painting is shown: `Card`'s `square` size (168px), title on
+a dark scrim along the bottom, the next two cards fanned behind it as squares. The board is
+unchanged, so the hand and the board show the same card in two shapes.
+
+- **The square becomes the landscape card on pickup** (`HandDragOverlay.tsx`). dnd-kit sizes its
+  overlay from the hand card's box, so a landscape card dropped in there hangs off the square's
+  corner. Instead the overlay starts as the square and closes around the finger into the
+  landscape card on a short spring, cross-fading the two faces at their true sizes. The player
+  carries the row that will land, and the drop ghost is that same card. Reduced motion gets the
+  landscape card from the first frame.
+- **The landscape card is centred on the finger**, because the gap is judged on the pointer's Y
+  (`useDragAndDrop`). `grabRef` records where in the square the pickup happened.
+- **The lifted card leaves the hand at once** (`invisible`, not a half-opacity ghost): the
+  overlay is that card, and a ghost left behind shows the next card's title through it.
+- **The fanned cards are dimmed with `brightness-*`, never opacity.** Translucent squares show
+  the title underneath through their own.
+- **The swap button sits beside the stack, 44px**, clear of the fan. On the card it covered art
+  or title, whichever corner it took.
+- **The hand bar is `.hand-bar`: 184px plus the bottom safe-area inset**, up from 120px, and only
+  while a hand is showing; game over goes back to 120px. That costs the board 64px, about three
+  quarters of a row: a 375x667 phone shows 4.85 rows where it showed 5.58. The inset is added
+  rather than absorbed, or a home-indicator phone would squeeze the card out of the bar.
+- **`CardFace`'s 16px title inset is a leftover** from when the hand fanned landscape cards. It
+  still reads well; it is no longer load-bearing.
 
 ## `friendly_name` is capped at 35 characters
 
