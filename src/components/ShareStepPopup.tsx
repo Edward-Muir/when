@@ -1,78 +1,90 @@
 import React, { useState } from 'react';
-import { Check, Share2 } from 'lucide-react';
+import { Check, Home, RotateCcw, Rows3, Share2 } from 'lucide-react';
 import { WhenGameState } from '../types';
 import { shareResults } from '../utils/share';
+import { getGameOverEyebrow } from '../utils/gameOverCopy';
+import { playerPlaceLine } from '../utils/leaderboardUtils';
+import type { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import Modal from './ui/Modal';
 import DailyReminderPrompt from './DailyReminderPrompt';
 import NextDailyCountdown from './NextDailyCountdown';
 
+/** What the closing card reads from the board: the same instance `Game` hands the popup. */
+type ClosingBoard = Pick<DailyLeaderboard, 'entries' | 'rank' | 'totalPlayers' | 'playerEntry'>;
+
 /**
- * The last screen of the end-of-game sequence: gameOver → milestones → achievements → here.
+ * The closing card: the last screen of the end-of-game sequence (gameOver → milestones →
+ * achievements → here), and the one that holds the exits.
  *
- * The share is the finale rather than part of the game-over popup (the *first* screen), so
- * it goes out after the player knows what they have unlocked. It always renders — see
- * `useEndOfGameSequence`.
+ * It says which game this was, the score in the gallery's own words ("14 events placed",
+ * `correctCount`, no starting card), and the place as the player's row numbers it ("3rd of 16
+ * today", tie-aware); then Share, then the way out. Restart and Home sit here because this is
+ * the last step: anywhere earlier they would let a player leave before the badges and the share.
+ * A Daily offers View timeline (close, leaving the finished board) and Home; a Custom or Archive
+ * game Restart and Home.
  *
- * The daily's return hooks (reminder opt-in, next-daily countdown) sit here too. They are the
- * "come back tomorrow" beat, so they belong on the last screen rather than three screens
- * earlier.
+ * **The share is not this card.** `shareResults` is called exactly as before, so the shared text
+ * and image keep the timeline length (`correctCount + 1` on a Daily) and the server's rank. See
+ * docs/sharing-challenges.
  *
- * No preview of the story card: rendering it would mean a `renderShareCard` canvas pass on
- * every single game over rather than only when someone actually taps Share, and this surface
- * has real Cloudinary cost discipline behind it (docs/cloudinary-cost-controls.md).
- *
- * Shell is `ui/Modal` on the `reveal` layer, the same as `MilestonePopup` / `AchievementUnlock`,
- * so it sits above the game-over popup's `modal` layer — and like them it advances on a tap
- * anywhere. The Share button and the reminder prompt stop their own clicks so that using them
- * does not also dismiss the popup.
+ * Shell is `ui/Modal` on the `reveal` layer, above the game-over popup's `modal` layer. It holds
+ * buttons, so it is not tap-anywhere: the backdrop, ESC and Back close it, as View timeline does.
+ * No preview of the story card: that is a canvas pass on every game over rather than on a tap.
  */
 const ShareStepPopup: React.FC<{
   open: boolean;
   gameState: WhenGameState;
-  /** Null until the board resolves a placing, which for a custom game is never. */
-  leaderboardRank?: number | null;
+  /** The daily board. Absent or empty on a game without one, which hides the place line. */
+  leaderboard?: ClosingBoard;
   onDismiss: () => void;
-}> = ({ open, gameState, leaderboardRank, onDismiss }) => {
+  onRestart: () => void;
+  /** Home, the one way back: `App`'s `handlePlayAgain`. */
+  onHome: () => void;
+}> = ({ open, gameState, leaderboard, onDismiss, onRestart, onHome }) => {
   const [showToast, setShowToast] = useState(false);
 
   const isDaily = gameState.gameMode === 'daily';
   const isChallenge = !!gameState.lastConfig?.challengeCode;
   const correctCount = gameState.placementHistory.filter(Boolean).length;
-  // The daily counts the pre-placed seed card, matching the share text and the story card.
-  const timelineLength = isDaily ? correctCount + 1 : correctCount;
+  const rank = leaderboard?.rank ?? null;
+  const place = leaderboard
+    ? playerPlaceLine(leaderboard.entries, rank, leaderboard.playerEntry, leaderboard.totalPlayers)
+    : null;
 
-  // In tap-advance the card no longer swallows clicks, so anything interactive has to stop its
-  // own — otherwise sharing or answering the reminder would also close the popup.
-  const keepOpen = (e: React.MouseEvent) => e.stopPropagation();
-
-  const handleShare = async (e: React.MouseEvent) => {
-    e.stopPropagation();
-    const copied = await shareResults(gameState, { leaderboardRank: leaderboardRank ?? undefined });
+  const handleShare = async () => {
+    const copied = await shareResults(gameState, { leaderboardRank: rank ?? undefined });
     if (copied) {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 2000);
     }
   };
 
+  const secondary =
+    'flex-1 h-12 flex items-center justify-center gap-2 rounded-xl border border-border bg-bg text-text font-body font-medium text-sm transition-transform active:scale-[0.97]';
+
   return (
     <Modal
       open={open}
       onDismiss={onDismiss}
-      // Tap anywhere to finish, like the milestone and achievement steps before it. The share
-      // is an offer, not a required step, so it must not be the only way off this screen.
-      dismiss="tap-advance"
+      dismiss="backdrop"
       backdrop="celebration"
       layer="reveal"
+      scroll="card"
       // `relative` anchors the "Copied to clipboard!" toast below — Modal's card is static.
       cardClassName="relative px-5 py-6 flex flex-col items-center text-center"
     >
-      <p className="font-body text-text">
-        <span className="font-mono text-3xl font-bold">{timelineLength}</span>
-        <span className="text-text-muted"> {timelineLength === 1 ? 'event' : 'events'}</span>
+      <p className="font-mono text-[11px] leading-snug tracking-[0.17em] uppercase text-accent">
+        {getGameOverEyebrow(gameState)}
       </p>
-      {leaderboardRank && (
-        <p className="mt-1 font-body text-sm text-accent">#{leaderboardRank} globally</p>
-      )}
+      <p className="mt-2 flex items-baseline gap-2 font-body" data-testid="closing-score">
+        <span className="font-display font-bold text-[40px] leading-none text-text lining-nums">
+          {correctCount}
+        </span>{' '}
+        <span className="text-[17px] text-text-muted">
+          {correctCount === 1 ? 'event' : 'events'} placed
+        </span>
+      </p>
+      {place && <p className="mt-1.5 font-body text-sm font-medium text-accent">{place}</p>}
 
       {isChallenge && (
         <p className="mt-4 text-xs text-text-muted font-body">
@@ -82,7 +94,7 @@ const ShareStepPopup: React.FC<{
 
       <button
         onClick={handleShare}
-        className={`w-full py-2.5 px-4 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white ${
+        className={`w-full h-[52px] px-4 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary text-white ${
           isChallenge ? 'mt-3' : 'mt-5'
         }`}
       >
@@ -90,15 +102,28 @@ const ShareStepPopup: React.FC<{
         Share
       </button>
 
+      <div className="mt-2 flex w-full gap-2">
+        {isDaily ? (
+          <button onClick={onDismiss} className={secondary}>
+            <Rows3 className="w-4 h-4" />
+            View timeline
+          </button>
+        ) : (
+          <button onClick={onRestart} className={secondary}>
+            <RotateCcw className="w-4 h-4" />
+            Restart
+          </button>
+        )}
+        <button onClick={onHome} className={secondary}>
+          <Home className="w-4 h-4" />
+          Home
+        </button>
+      </div>
+
       {isDaily && (
         <div className="w-full">
-          {/* Has its own Remind me / Not now buttons, so it opts out of tap-to-continue. */}
-          <div onClick={keepOpen}>
-            <DailyReminderPrompt />
-          </div>
-          <p className="text-center text-text-muted text-sm mt-4 font-body">
-            Come back tomorrow · <NextDailyCountdown />
-          </p>
+          <NextDailyCountdown className="mt-4 block whitespace-nowrap text-center" />
+          <DailyReminderPrompt />
         </div>
       )}
 

@@ -2,8 +2,10 @@
 
 **Status:** a review of everything outside the drag-and-place loop, made by driving the real
 app at v1.39.0. Six pieces of work were chosen from it. Items 1 to 3 are built and live in
-[ui-redesign](../ui-redesign/index.md#leaving-a-game); the country-search fix in item 6 was
-dropped. This file holds
+[ui-redesign](../ui-redesign/index.md#leaving-a-game); item 4, the end of a game, is built and
+lives in [sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence)
+and [stats-achievements](../stats-achievements/index.md), less the two parts listed under
+"Raised, not chosen"; the country-search fix in item 6 was dropped. This file holds
 what was seen, what was chosen, the spec for each piece, and the findings that were raised but
 not chosen. Written so a fresh session can pick any item up cold.
 
@@ -29,50 +31,6 @@ session can read it with the Artifact tool. Sketch numbers below are the ones on
   layout all hold up.
 
 ## The chosen work
-
-### 4. The end of a game in four taps (sketch 1)
-
-**Seen.** A first Daily that unlocked five badges took nine taps from the last card to Home:
-Submit, Tap to continue, five badge screens, the share card, Home. Also:
-
-- The share card says "15 events" where the card before it says "14 events placed", and
-  "#4 globally" where the player's row shows place 3 on a tie.
-- The bottom bar's Home shows through the locked game-over popup and does nothing.
-- On 375x667 the game-over card grows after Submit and clips "Tap to continue".
-- When the share card closes the player is left on the board to find Home.
-- A new portrait is reached by Menu, Profile, then a scroll past 62 animals.
-- Opening the portrait picker from the submit form marks the game's new portraits as seen
-  before the reveal has shown them, so the Profile dot and the "New" tags never appear.
-
-**Build.**
-
-- **One achievements screen when a game unlocks two or more.** Heading "N achievements
-  unlocked". The rarest badge leads at about 132px with its name and criterion; the rest sit in
-  a row of 60px rings with names, wrapping after four. Tapping any badge opens the existing
-  `AchievementDetailPopup`. Under them, "N new portraits · tap one to wear it": 48px tiles, the
-  chosen one ringed, with the line "Wearing X from tomorrow's leaderboard". Then a 52px
-  Continue button. A single unlock keeps today's reveal.
-- **The share step becomes the closing card.** Eyebrow (mode and theme), the score, the place
-  ("3rd of 16 today", numbered by `podiumPlaces` like the row), Share, then two buttons: View
-  timeline and Home on a Daily, Restart and Home on a Custom or Archive game. The countdown
-  sits on one line.
-- **"Tap to continue" becomes a Continue button**, and the bottom bar's buttons hide while a
-  popup is up.
-- **Fix the clipped card** on 375x667 after Submit, and the picker-marks-seen bug above.
-
-**Constraints already decided, do not undo.** The order stays game over, milestones,
-achievements, share, and the share step stays unconditional and last
-([sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence)).
-`GamePopup` stays out of the queue. Restart and Home may not appear before the badge and share
-steps; the closing card is the last step, which is why they can sit on it. Never call
-`onDismiss` from inside a `setIndex` updater. Never animate opacity on the `Modal` card. Every
-overlay goes through `Modal.tsx`. Badge art and portraits use the thumbnail size that is
-already fetched; no new Cloudinary size.
-
-**Open, confirm before building.** The share number is the timeline length on purpose
-(`correctCount + 1`). The recommendation is to show events placed and the tie-aware place on
-the closing card and leave the shared text and image alone. The new argument since that
-decision: the gallery now prints the placed count in 48px type two screens earlier.
 
 ### 5. Labelled tabs within reach (sketch 3)
 
@@ -141,8 +99,16 @@ Bugs:
   for one game, and Custom says "6423 events" where Stats says "6,426".
 - The art for "Four Colour Theorem Proved" has a white mat baked into the image.
 - A reload during a Custom game loses it, for the same reason Back does.
+- Opening the portrait picker from the game-over submit form marks the game's new portraits as
+  seen before the achievements step has shown them, so the Profile dot and the "New" tags never
+  appear. Left out of item 4 when the rest of it was built.
 
 Proposals:
+
+- **Wear a new portrait from the achievements screen** (left out of item 4): under the badges,
+  "N new portraits · tap one to wear it", 48px tiles, the chosen one ringed, with the line
+  "Wearing X from tomorrow's leaderboard". Today a new portrait is reached by Menu, Profile,
+  then a scroll past 62 animals.
 
 - **Home after the Daily is played (sketch 2):** the card states score, place and the current
   daily run, and a Keep playing list offers the most recent missed day and the last deck. The
@@ -179,6 +145,5 @@ What this review added to it:
 - **A multiplayer code.** `tsx` can import `src/utils/challengeCode.ts`: decode a code from
   the Custom tab, set `playerCount`, encode it again.
 - **Traps.** A hint strip takes the leaderboard teaser's slot on the Daily tab, so a selector
-  for the teaser times out while one is up. On 375x667 Submit to Leaderboard sits exactly
-  where the hidden bottom-bar Home is. Once My Timeline's filter popup has mounted, two
+  for the teaser times out while one is up. Once My Timeline's filter popup has mounted, two
   "Clear Categories" buttons exist.

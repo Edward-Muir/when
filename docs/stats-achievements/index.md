@@ -132,8 +132,8 @@ Decisions, so they are not re-litigated:
 
 ## Milestones ("Personal Best" popups)
 
-Text-and-icon popups shown after the game-over popup and **before** the achievement-unlock
-modal, revealed one at a time. Both are steps in the end-of-game sequence, which always ends
+Text-and-icon popups shown after the game-over popup and **before** the achievements step,
+revealed one at a time, each with a Continue button. Both are steps in the end-of-game sequence, which always ends
 on a share step — see `src/hooks/useEndOfGameSequence.ts` and
 [sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence).
 
@@ -166,15 +166,28 @@ and the snapshot→record→detect flow.
   platinum → shimmering diamond, plus steel/copper/obsidian/verdigris), not by new art.
 - **Locked badges still show their criterion** and a greyscale, veiled glimpse of the art behind
   a frosted lock chip — the tease is deliberate.
-- Unlock reveal uses the "Staggered Shine" animation, chosen from four candidates compared in a
-  dev-only jig (`/anim-jig`). Badge art is prefetched at game over, the moment unlocks are known,
-  so the modal shows art instantly.
+- **One unlock gets a reveal; two or more get one screen.** The single reveal uses the
+  "Staggered Shine" animation, chosen from four candidates compared in a dev-only jig
+  (`/anim-jig`). A reveal per badge made a first Daily (five badges) five taps long, so two or
+  more share `AchievementsSummary`: "N achievements unlocked", the lead badge at 132px with its
+  name and criterion, the rest as 60px rings with names, four to a row. Every badge opens
+  `AchievementDetailPopup` (on the `reveal` layer there, after the screen in the DOM, so it sits
+  on top). The rings use the `thumbnail` rung, never `detail`.
+- **The lead is the highest tier by an explicit ranking**, `TIER_RANK` in
+  `achievementTiers.ts`: none, bronze, verdigris, copper, silver, steel, gold, platinum, diamond,
+  obsidian. A tie goes to the badge later in `ACHIEVEMENTS` (`leadAchievement`). Not the order
+  `TIER_STYLES` lists them in, which put steel above gold.
+- Badge art is prefetched at game over, the moment unlocks are known (`useUnlockedBadges`), in
+  the size the step will show: `detail` for one reveal, `thumbnail` for the screen.
 - Unlock sequencing is driven by **popup-dismissal transitions, not timers**. The queue lives in
   `useEndOfGameSequence`, which starts when `pendingPopup?.type` goes from `'gameOver'` to
   undefined and advances as each step dismisses.
-- **Do not call `onDismiss` from inside a `setIndex` updater** in either reveal modal. Updaters
-  must be pure and StrictMode double-invokes them, so the dismissal fires twice and silently
-  skips the next step of the sequence.
+- **Do not call `onDismiss` from inside a `setIndex` updater** in `MilestonePopup`, or in any
+  step that walks a list. Updaters must be pure and StrictMode double-invokes them, so the
+  dismissal fires twice and silently skips the next step of the sequence.
+- **ESC reaches every open `Modal`.** With the detail popup open over the achievements screen,
+  one key press would close both and skip the step, so the screen ignores its own dismissal
+  while a badge is open. Back is already one at a time (the back stack).
 
 ## Known issue: the difficulty badge family has an inverted gradient
 

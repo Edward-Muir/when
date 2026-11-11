@@ -164,9 +164,24 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   from the board for about 1.4 s, in `[data-testid="gallery-flight"]` on `body`; the score and
   everything under it appear only after they land, so **wait about 2 s before reading or
   screenshotting it**. `reducedMotion: 'reduce'` skips the flight. The board behind is hidden
-  (`.board-away`) until the popup closes. A Custom game shows **Restart** and **Home** in the
-  bottom bar. The daily shows Today's Leaderboard and a name input pre-filled with a random
-  name, with **Submit to Leaderboard**, then a share step.
+  (`.board-away`) until the popup closes. The daily shows Today's Leaderboard and a name input
+  pre-filled with a random name, with **Submit to Leaderboard**; after it (or at once on a game
+  with no board) the popup shows a **Continue** button.
+- **The end-of-game steps:** every one leaves by `getByRole('button', { name: 'Continue' })`
+  (game over, each milestone, the achievements step). One badge is the single reveal
+  ("Achievement Unlocked!"); two or more are one screen, `[data-testid="achievements-summary"]`,
+  whose badges are buttons (the lead's `aria-label` is "Name: criterion", the rest just the
+  name) opening the detail popup as a second `[data-testid="modal-card"]` over it. The last step
+  is the closing card: `[data-testid="closing-score"]` ("14 events placed"), a place line
+  ("3rd of 16 today", Daily only), **Share**, then **View timeline** and **Home** on a Daily or
+  **Restart** and **Home** otherwise. Scope those to the card
+  (`getByTestId('modal-card').last().getByRole('button', { name: 'Home' })`): once it closes the
+  bottom bar's **Share**, **Restart** and **Home** come back, and the bar is **empty** while any
+  popup or step is up. A first Daily is Submit, Continue, Continue, Home: four taps.
+- **A placed row on a locally answered submit.** The production board GET does not know a
+  locally answered POST, so the player has no row and the closing card no place line. Patch the
+  GET in the route (insert the submitted name and score, re-rank, set `playerRank`,
+  `playerEntry`, `totalPlayers`) to see both.
 - **Leaderboard submit (at game over):** `input[placeholder*="name" i]` (maxlength
   20, pre-filled with a random name — clear it first), then the button matching
   `/submit to leaderboard/i`.

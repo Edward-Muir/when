@@ -158,7 +158,7 @@ entirely**. Measured `getComputedStyle` before/after hover:
 
 The TopBar is the only thing on the site that responds to a mouse.
 
-The 23 player-facing offenders (there are 6 more in unlinked maintainer pages). Line numbers
+The 22 player-facing offenders (there are 6 more in unlinked maintainer pages). Line numbers
 drift; regenerate with
 `grep -rEn "hover:(bg|border|text)-(bg|surface|text|text-muted|border|accent|accent-secondary|success|error)/[0-9]+" src --include=*.tsx`.
 
@@ -174,7 +174,6 @@ src/components/LeaderboardSubmit.tsx    hover:bg-accent/90
 src/components/Menu.tsx                 hover:bg-border/50 (x2)
 src/components/PlayerInfo.tsx           hover:bg-border/50
 src/components/ReportIssueButton.tsx    hover:bg-surface/40
-src/components/ShareStepPopup.tsx       hover:bg-accent-secondary/90
 src/components/TodaysLongest.tsx        hover:bg-surface/60
 src/components/UpdatePopup.tsx          hover:bg-border/50, hover:bg-accent/90
 src/pages/Support.tsx                   hover:bg-accent/90

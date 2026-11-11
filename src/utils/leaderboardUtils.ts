@@ -23,7 +23,9 @@ export function getMedalColor(place: number): string | null {
  * 3, 3, 3 and are framed gold, silver, bronze, bronze, bronze. A row whose score is not in
  * `entries` (the player below a capped slice) keeps its own rank.
  */
-export function podiumPlaces(entries: LeaderboardEntry[]): (entry: LeaderboardEntry) => number {
+export function podiumPlaces(
+  entries: readonly LeaderboardEntry[]
+): (entry: LeaderboardEntry) => number {
   const firstRank = new Map<number, number>();
   for (const { correctCount, rank } of entries) {
     const seen = firstRank.get(correctCount);
@@ -62,4 +64,44 @@ export function resolvePlayerRow(
   const inList = rank !== null && entries.some((entry) => entry.rank === rank);
 
   return { row: playerEntry, inList };
+}
+
+/** "1st", "2nd", "3rd", "4th", "11th", "22nd". */
+export function ordinal(n: number): string {
+  const tens = n % 100;
+  if (tens >= 11 && tens <= 13) return `${n}th`;
+  switch (n % 10) {
+    case 1:
+      return `${n}st`;
+    case 2:
+      return `${n}nd`;
+    case 3:
+      return `${n}rd`;
+    default:
+      return `${n}th`;
+  }
+}
+
+/**
+ * The player's place on today's board as the closing card says it: "3rd of 16 today".
+ *
+ * Numbered exactly as the player's own row is (`LeaderboardSubmit`): the server's row for the
+ * caller via `resolvePlayerRow`, placed by `podiumPlaces`, so a tie reads the shared place the
+ * row shows rather than the server's sequential rank. Null when the player has no place, which
+ * is every game without a board (Custom, the Archive) and a Daily not yet submitted.
+ *
+ * The share keeps the server's rank (`shareResults`); this line is for the player, beside the
+ * row they have just seen.
+ */
+export function playerPlaceLine(
+  entries: readonly LeaderboardEntry[],
+  playerRank: number | null,
+  playerEntry: LeaderboardEntry | null,
+  totalPlayers: number | null
+): string | null {
+  const { row } = resolvePlayerRow(entries, playerRank, playerEntry);
+  const own = row ?? entries.find((entry) => entry.rank === playerRank) ?? null;
+  const place = own ? podiumPlaces(entries)(own) : playerRank;
+  if (place === null) return null;
+  return totalPlayers ? `${ordinal(place)} of ${totalPlayers} today` : `${ordinal(place)} today`;
 }

@@ -364,6 +364,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
             dailyResult={dailyResult}
             leaderboard={leaderboard}
             dismiss={dismiss}
+            onDismiss={onDismiss}
             onSurfaceChange={setGallerySurface}
           />
         )}

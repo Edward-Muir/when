@@ -3,7 +3,12 @@
   "unreleased": [
     "Leaving a Daily in progress no longer asks first, and the home screen confirms it is saved.",
     "The Back button during a game now goes home, closing any open popup or the menu first.",
-    "Changing tab and toggling a filter chip now give a light tap of haptic feedback."
+    "Changing tab and toggling a filter chip now give a light tap of haptic feedback.",
+    "A game that unlocks several achievements now shows them together on one screen.",
+    "The last screen of a game now shows events placed, the day's place, and the way home.",
+    "Each end-of-game screen now moves on with a Continue button.",
+    "The bottom bar's buttons no longer show through the end-of-game screens.",
+    "The game-over card keeps Continue on screen after submitting on a small phone."
   ],
   "releases": [
     {

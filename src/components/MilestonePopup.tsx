@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Ruler, Zap, Flame, Archive } from 'lucide-react';
 import type { GameMilestone, MilestoneKind } from '../utils/statsStorage';
 import Modal from './ui/Modal';
+import ContinueButton from './ui/ContinueButton';
 
 interface MilestonePopupProps {
   /** Whether the modal is visible. Self-gates so the caller adds no render branch. */
@@ -29,8 +30,8 @@ const MILESTONE_META: Record<
 /**
  * Lightweight celebratory modal shown after the game-over popup when the player set one or more
  * personal bests. Text + icon only (no badge art, no confetti) — a quieter sibling of
- * AchievementUnlock. Reveals one milestone at a time; tap anywhere (or ESC) advances, and advancing
- * past the last one dismisses. Sits on the `reveal` layer, above the game-over GamePopup.
+ * AchievementUnlock. Reveals one milestone at a time; Continue advances (so does a tap anywhere, ESC
+ * or Back), and advancing past the last one dismisses. Sits on the `reveal` layer, above the game-over GamePopup.
  */
 const MilestonePopup: React.FC<MilestonePopupProps> = ({ open, milestones, onDismiss }) => {
   const [index, setIndex] = useState(0);
@@ -51,7 +52,6 @@ const MilestonePopup: React.FC<MilestonePopupProps> = ({ open, milestones, onDis
 
   // eslint-disable-next-line security/detect-object-injection -- numeric index into own array
   const current = milestones[index];
-  const isLast = index >= milestones.length - 1;
   const meta = current ? MILESTONE_META[current.kind] : null;
 
   return (
@@ -88,14 +88,12 @@ const MilestonePopup: React.FC<MilestonePopupProps> = ({ open, milestones, onDis
             </motion.div>
           </AnimatePresence>
 
-          <p className="mt-4 font-body text-sm text-text-muted">
-            {milestones.length > 1 && (
-              <span className="mr-2 font-mono text-xs">
-                {index + 1} / {milestones.length}
-              </span>
-            )}
-            {isLast ? 'Tap to close' : 'Tap to continue'}
-          </p>
+          {milestones.length > 1 && (
+            <p className="mt-4 font-mono text-xs text-text-muted">
+              {index + 1} / {milestones.length}
+            </p>
+          )}
+          <ContinueButton onClick={advance} className="mt-5" />
         </>
       )}
     </Modal>

@@ -112,7 +112,7 @@ schedule is computed on-device. No APNs keys, entitlements, subscription store o
   theme is worth less than being free to schedule one for tomorrow.
 - **iOS shows the permission dialog exactly once, ever, and a denial is permanent**
   (Settings-app only). Hence: never prompted at launch — resync only schedules if already
-  granted; a priming card (`DailyReminderPrompt`, in the daily's share step,
+  granted; a priming card (`DailyReminderPrompt`, on the daily's closing card,
   `ShareStepPopup.tsx`) fires the real dialog, with "Not now"
   costing nothing and re-offering after 7 days, max 3 times; intent defaults to **on**
   (`when-daily-reminder` != `'0'`), and the burger-menu row is both the opt-out and the

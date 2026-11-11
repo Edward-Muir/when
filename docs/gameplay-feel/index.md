@@ -319,13 +319,27 @@ Decisions:
   grid is never taller than wide. The one exception is the Daily on a short phone: the square
   grid pushed Submit to Leaderboard below the fold of a popup that is locked until it is
   pressed, so there the grid widens to more, smaller tiles until it fits (`dailyFit`).
+- **The Daily's fit is re-measured after the cards land.** It was read once at open, from a
+  fixed estimate of the caption with the submit form (`DAILY_BODY_PX`, 384). After Submit the
+  form becomes the player's row, the percentile and the player count, and Continue appears,
+  about 70px more; on 375x667 with 11 to 15 tiles the card hit its 90% cap and the last line
+  scrolled out of sight. A `ResizeObserver` on the caption now feeds the real height in once
+  the flight has landed (`useDailyBodyHeight`), never below the estimate. Not during the
+  flight: a grid that changed shape under the clones would land them wrong. So the grid can
+  narrow by a column after Submit; that is the price of Continue staying on screen.
 - **The plain "Game Over" heading is not shown**, only announced (it names the dialog). A
   cleared deck and a multiplayer win keep a visible heading. The tier word ("Legendary!") is
   gone; it topped out at 12, so 14 and a flawless 29 read the same. The line under the score
   is the span of the timeline instead ("120 million years in one timeline", `timelineSpan.ts`).
 - **A Perfect Clear has a gold frame**, the Archive's mark for a curated day.
-- **Restart and Home stay in the bottom bar.** In the popup they would let a player leave
-  before the badge and share steps, which is a change to the end-of-game sequence.
+- **Restart and Home are on the closing card, the last step**, not in this popup: here they
+  would let a player leave before the badge and share steps
+  ([../sharing-challenges/](../sharing-challenges/index.md#the-closing-card-says-events-placed-and-the-place-the-share-does-not-change)).
+  The bottom bar keeps them as the fallback once every step has closed, and is **empty while
+  any popup or step is up**: through the scrim its buttons showed and did nothing.
+- **Continue is a button**, 52px, shown whenever the popup is not locked. It replaced "Tap to
+  continue" and "Tap outside to continue"; with the board unreachable (`backdrop`) it is the
+  way past the form.
 - **The share image is the same paintings, shuffled, without the missed cards.** This grid is
   in date order, which on a shared image would be the day's answer
   ([../sharing-challenges/](../sharing-challenges/index.md#the-paintings-never-their-order)).

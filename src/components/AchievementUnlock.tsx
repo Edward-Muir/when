@@ -2,7 +2,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 import type { AchievementDef } from '../data/achievements';
 import type { HistoricalEvent } from '../types';
 import AchievementReveal from './AchievementReveal';
+import AchievementsSummary from './AchievementsSummary';
+import AchievementDetailPopup from './AchievementDetailPopup';
 import Modal from './ui/Modal';
+import ContinueButton from './ui/ContinueButton';
 
 interface AchievementUnlockProps {
   /** Whether the modal is visible. Self-gates so the caller adds no render branch. */
@@ -11,15 +14,19 @@ interface AchievementUnlockProps {
   achievements: AchievementDef[];
   /** Event catalogue keyed by `name`, so each card can resolve its art. */
   eventsByName: Map<string, HistoricalEvent>;
-  /** Called once the player advances past the last badge. */
+  /** Called once the player continues past the badges. */
   onDismiss: () => void;
 }
 
 /**
- * Celebratory modal shown after the game-over popup is dismissed when the player
- * crossed one or more achievement thresholds. Reveals one badge at a time; tapping
- * anywhere (or ESC) advances, and advancing past the last one dismisses. Confetti
- * fires on each reveal. Sits on the `reveal` layer, above the game-over GamePopup.
+ * The achievements step of the end-of-game sequence, on the `reveal` layer above the game-over
+ * popup.
+ *
+ * **One badge** gets the full reveal: the large card, confetti, and Continue (a tap anywhere,
+ * ESC or Back also continues). **Two or more** share one screen, `AchievementsSummary`, rather
+ * than a reveal each; a first Daily unlocks five. That screen holds buttons, so it is not
+ * tap-anywhere: Continue, the backdrop, ESC and Back leave it, and a tapped badge opens
+ * `AchievementDetailPopup` over it.
  */
 const AchievementUnlock: React.FC<AchievementUnlockProps> = ({
   open,
@@ -27,64 +34,72 @@ const AchievementUnlock: React.FC<AchievementUnlockProps> = ({
   eventsByName,
   onDismiss,
 }) => {
-  const [index, setIndex] = useState(0);
+  const [selected, setSelected] = useState<AchievementDef | null>(null);
   const isVisible = open && achievements.length > 0;
+  const many = achievements.length > 1;
 
-  // Restart the reveal from the first badge each time the modal opens.
+  // A fresh screen each time the step opens.
   useEffect(() => {
-    if (open) setIndex(0);
+    if (open) setSelected(null);
   }, [open]);
 
-  // `onDismiss` is called here rather than inside a `setIndex` updater. Updaters must be
-  // pure: StrictMode invokes them twice to surface exactly this, so a side effect in there
-  // fires twice. That was invisible while dismissing was idempotent, and became a real bug
-  // the moment `onDismiss` advanced a queue — the end-of-game sequence skipped a step.
-  const advance = useCallback(() => {
-    if (index >= achievements.length - 1) onDismiss();
-    else setIndex((i) => i + 1);
-  }, [index, achievements.length, onDismiss]);
+  // ESC reaches every open Modal's listener at once, so with the detail popup up the same key
+  // would also leave this screen. Only the top one acts. (Back already goes to the top one only.)
+  const leave = useCallback(() => {
+    if (!selected) onDismiss();
+  }, [selected, onDismiss]);
 
-  // eslint-disable-next-line security/detect-object-injection -- numeric index into own array
-  const current = achievements[index];
-  const isLast = index >= achievements.length - 1;
+  const single = achievements[0];
 
   return (
-    <Modal
-      open={isVisible && !!current}
-      onDismiss={advance}
-      dismiss="tap-advance"
-      backdrop="celebration"
-      layer="reveal"
-      scroll="card"
-      cardClassName="px-5 py-8 flex flex-col items-center text-center"
-    >
-      {current && (
-        <>
-          <p className="font-display font-bold text-lg text-accent mb-1">Achievement Unlocked!</p>
+    <>
+      <Modal
+        open={isVisible}
+        onDismiss={leave}
+        dismiss={many ? 'backdrop' : 'tap-advance'}
+        backdrop="celebration"
+        layer="reveal"
+        scroll="card"
+        cardClassName={`px-5 flex flex-col items-center text-center ${many ? 'py-6' : 'py-8'}`}
+      >
+        {many ? (
+          <AchievementsSummary
+            achievements={achievements}
+            eventsByName={eventsByName}
+            onSelect={setSelected}
+            onContinue={onDismiss}
+          />
+        ) : (
+          single && (
+            <>
+              <p className="font-display font-bold text-lg text-accent mb-1">
+                Achievement Unlocked!
+              </p>
+              {/* Badge reveal — handles its own confetti + entrance animation. */}
+              <div className="relative w-full flex justify-center">
+                <AchievementReveal
+                  variant="stagger"
+                  achievement={single}
+                  eventsByName={eventsByName}
+                  size="lg"
+                />
+              </div>
+              <ContinueButton onClick={onDismiss} className="mt-5" />
+            </>
+          )
+        )}
+      </Modal>
 
-          {/* Badge reveal — handles its own confetti + entrance animation. replayKey={index}
-              re-triggers it as the player advances through multiple unlocks. */}
-          <div className="relative w-full flex justify-center">
-            <AchievementReveal
-              variant="stagger"
-              achievement={current}
-              eventsByName={eventsByName}
-              replayKey={index}
-              size="lg"
-            />
-          </div>
-
-          <p className="mt-4 font-body text-sm text-text-muted">
-            {achievements.length > 1 && (
-              <span className="mr-2 font-mono text-xs">
-                {index + 1} / {achievements.length}
-              </span>
-            )}
-            {isLast ? 'Tap to close' : 'Tap to continue'}
-          </p>
-        </>
-      )}
-    </Modal>
+      {/* A sibling, not a child: inside the card it would be clipped by it and its clicks would
+          reach this screen. Same `reveal` layer, later in the DOM, so it sits on top. */}
+      <AchievementDetailPopup
+        achievement={selected}
+        unlocked
+        eventsByName={eventsByName}
+        onDismiss={() => setSelected(null)}
+        layer="reveal"
+      />
+    </>
   );
 };
 
