@@ -5,7 +5,12 @@ import { loadAllEvents } from '../utils/eventLoader';
 import { getDailyPreviewEvent } from '../utils/dailyConfig';
 import { getDailyTheme, getThemeDisplayName } from './../utils/dailyTheme';
 import { getDailyPuzzleNumber, getLocalDateString } from '../utils/puzzleDate';
-import { generateDailyShareText, generateShareText, shareContent } from '../utils/share';
+import {
+  generateDailyShareText,
+  generateShareText,
+  shareContent,
+  shareTiles,
+} from '../utils/share';
 import { renderShareCard, renderShareFile, ShareCardSpec } from '../utils/shareImage';
 import { WhenGameState } from '../types';
 
@@ -35,9 +40,24 @@ const PRESETS: { id: Preset; label: string }[] = [
  */
 const BUBBLE_WIDTH = 400;
 
+/**
+ * How many cards the collage is drawn with. 1 is a game with nothing placed, which falls back
+ * to the starting card alone; the rest are the sizes the layout has to hold up at.
+ */
+const TILE_COUNTS = [1, 2, 4, 9, 15, 20, 36];
+
+/** `?preset=custom&tiles=36` opens on that card, so a script can screenshot each one. */
+function initialFromQuery(): { preset: Preset; tiles: number } {
+  const query = new URLSearchParams(window.location.search);
+  const preset = PRESETS.find((entry) => entry.id === query.get('preset'))?.id ?? 'daily';
+  const tiles = Number(query.get('tiles'));
+  return { preset, tiles: TILE_COUNTS.includes(tiles) ? tiles : 15 };
+}
+
 const SharePreview: React.FC = () => {
   const [events, setEvents] = useState<HistoricalEvent[]>([]);
-  const [preset, setPreset] = useState<Preset>('daily');
+  const [preset, setPreset] = useState<Preset>(() => initialFromQuery().preset);
+  const [tileCount, setTileCount] = useState(() => initialFromQuery().tiles);
   const [seedIndex, setSeedIndex] = useState(0);
   const [imageUrl, setImageUrl] = useState<string>();
   const [status, setStatus] = useState('');
@@ -55,12 +75,19 @@ const SharePreview: React.FC = () => {
   const dailySeed = getDailyPreviewEvent(events, today);
   const seedEvent = seedIndex === 0 ? dailySeed : (withArt[seedIndex % withArt.length] ?? null);
 
+  // A stand-in timeline: the seed card and the cards after it, shuffled the way a real share
+  // shuffles them (`shareTiles`).
+  const start = seedIndex % Math.max(1, withArt.length);
+  const others = withArt.slice(start + 1, start + tileCount);
+  const tiles = seedEvent ? shareTiles([seedEvent, ...others], `preview:${seedIndex}`) : [];
+
   const puzzleNumber = getDailyPuzzleNumber(today);
 
   const spec: ShareCardSpec =
     preset === 'daily'
       ? {
           event: seedEvent,
+          tiles,
           eyebrow: puzzleNumber ? `Daily #${puzzleNumber} · ${theme}` : `Daily · ${theme}`,
           score: '11',
           scoreLabel: 'events',
@@ -70,12 +97,14 @@ const SharePreview: React.FC = () => {
       : preset === 'custom'
         ? {
             event: seedEvent,
+            tiles,
             score: '23',
             scoreLabel: 'events',
             url: 'play-when.com',
           }
         : {
             event: seedEvent,
+            tiles,
             score: '12',
             scoreLabel: 'events',
             url: 'play-when.com/challenge/able-baker-cane',
@@ -114,7 +143,7 @@ const SharePreview: React.FC = () => {
     });
     setStatus(`${Math.round(blob.size / 1024)} KB`);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [JSON.stringify({ ...spec, event: spec.event?.name })]);
+  }, [JSON.stringify({ ...spec, event: spec.event?.name, tiles: tiles.map((t) => t.name) })]);
 
   useEffect(() => {
     if (events.length) render();
@@ -147,6 +176,13 @@ const SharePreview: React.FC = () => {
       <div className="flex flex-wrap gap-2">
         {PRESETS.map((entry) =>
           button(entry.label, preset === entry.id, () => setPreset(entry.id))
+        )}
+      </div>
+
+      <div className="flex flex-wrap gap-2 items-center">
+        <span className="font-body text-xs text-text-muted">Cards on the timeline</span>
+        {TILE_COUNTS.map((count) =>
+          button(String(count), tileCount === count, () => setTileCount(count))
         )}
       </div>
 
@@ -214,8 +250,8 @@ const SharePreview: React.FC = () => {
       </div>
 
       <p className="font-body text-xs text-text-muted max-w-md">
-        Hero art is always the pre-placed seed card, never a card the player placed — see the header
-        comment in <code>shareImage.ts</code>.
+        The collage is the timeline shuffled, never in date order, and with one card it is the
+        pre-placed seed card alone. See the header comment in <code>shareImage.ts</code>.
       </p>
     </div>
   );

@@ -34,12 +34,10 @@ oversized in a full-resolution render. This surface cannot be reviewed at its na
 resolution: `/share-preview` shows the card at 400px for exactly this reason — judge it
 there.
 
-The same arithmetic governs the art: its apparent size is purely `CARD_SIZE / WIDTH`
-times the bubble width, so shortening the canvas does nothing for it. The only lever is
-making the card wider relative to 1080, and the vertical budget caps that (`CARD_SIZE` is
-680). Two remaining levers if it ever needs to be bigger: crop the art to a landscape rounded
-rect (~83% of width, but discards ~30% of each square source), or move to a full-bleed
-poster layout with the text over a scrim (~2.7x larger art).
+The same arithmetic governs the art: its apparent size is purely its width as a fraction of
+1080, so shortening the canvas does nothing for it. The collage's box is 1000px wide, 93% of
+the card, against 63% for the single painting it replaced. The vertical budget is what caps
+the box, and it got its height from the line that named the single card.
 
 ### Why there is an image at all
 
@@ -59,32 +57,55 @@ next payload, or cancelling once re-opens the sheet.
 Because tier 2 can drop the text entirely, **the URL is burned into the image**. It is not
 decoration; it is the only thing telling a viewer where to play.
 
-### Only the seed card may be shown
+### The paintings, never their order
 
-The hero art is the pre-placed seed event — the card already on the timeline at kickoff,
-and the same one the home screen shows as the daily preview. It gives nothing away.
-**Do not extend this to placed cards**: rendering what a player actually placed leaks the
-composition of that day's puzzle to everyone who sees the post.
+The art is the player's timeline as a collage: every card they placed, plus the starting
+card. It is the same set of paintings as the game-over gallery
+([../gameplay-feel/](../gameplay-feel/index.md#the-game-over-gallery)), and deliberately not
+the same picture.
+
+This used to be the starting card alone, on the rule that a share must never show placed
+cards. The rule that matters is narrower: **a share must never show the order.** The Daily
+deals everyone the same cards, and so does a challenge link, so the gallery's date-ordered
+grid would hand the day's answer to a friend who has not played yet. Hence:
+
+- **The tiles are shuffled** (`shareTiles` in `share.ts`), with a seed that has nothing to do
+  with the dates: the puzzle date on the Daily, the starting card and timeline length
+  otherwise. The same game always shuffles the same way, so the share step, the bottom bar and
+  the home screen all send one image.
+- **Missed cards are left out.** A grey tile in its true place is a date.
+- **No names and no years on the tiles.**
+
+What a viewer does learn is which paintings are in the deck, which the first cards of their
+own game will show them anyway. Do not "restore" the timeline order, and do not grey the
+misses in place: either one is the answer.
+
+With fewer than two tiles (nothing placed) there is no collage to make, and the card shows
+the starting card alone with its name, as before. That card is on the board before the first
+move and gives nothing away.
+
+**Tiles are not always square.** Square tiles left the box half empty (fifteen are a strip
+across the middle), so a tile takes its cell's shape up to 4:3 either way, and the layout
+picks the column count that covers the most of the box, marked down for a stray tile on the
+last row (`shareGridLayout` in `shareImage.ts`). A short last row is centred.
 
 ### Cost
 
-Art is fetched through the existing **`detail`** rung (`getImageUrl(url, 'detail')`), not a
-new transform string. `detail` rather than `thumbnail` because the hero is drawn at 680px on
-a 1080px canvas: the 400px thumbnail gets upscaled and looks visibly soft, while 768
-downscales cleanly. 768 is also the ceiling on `CARD_SIZE` — past it the art upscales and
-the temptation to mint a bespoke rung returns.
+Collage tiles are fetched through the existing **`thumbnail`** rung
+(`getImageUrl(url, 'thumbnail')`), the size the board already loaded, not a new transform
+string. With two to four tiles one is drawn up to about 660px tall from a 400px source, a
+soft upscale accepted for games that short; from five tiles up they are drawn at or below
+source size. The single-card fallback uses **`detail`**, because it is drawn at 680px.
 
-Reusing an existing rung is the load-bearing part. A bespoke size for this surface would
-mint a third rung — roughly 13,000 transformations across the catalogue, about half a
-month's free-plan allowance — see
-[cloudinary-cost-controls.md](../cloudinary-cost-controls.md). As it stands the marginal
-cost is at worst one derived asset per day, since the daily seed card is the same for
-every player and is often already minted from someone tapping it in-game.
+Reusing existing rungs is the load-bearing part. A bespoke size for this surface would mint
+a third rung, roughly 13,000 transformations across the catalogue, about half a month's
+free-plan allowance; see [cloudinary-cost-controls.md](../cloudinary-cost-controls.md).
 
 The one deviation is `crossOrigin = 'anonymous'`, which is mandatory (an untagged image
 taints the canvas and `toBlob()` throws) and is a different HTTP cache key from the game's
-plain `<img>` tags, so it costs at most one extra fetch of an already-derived asset —
-bandwidth, never a transformation.
+plain `<img>` tags. The service worker's image cache stores CORS copies of the board's
+thumbnails, so a collage is normally drawn from cache. Without it the worst case is one
+re-fetch per tile of an already-derived asset: bandwidth, never a transformation.
 
 ### The image is the receipt; the caption is not a second copy of it
 
@@ -151,7 +172,8 @@ different things.
   than printing `#NaN`. DST cases in its tests must sit after the epoch (the spring-forward
   case is the 2027 transition), or `getDailyPuzzleNumber` correctly returns `null` and the
   test fails on its own bug.
-- **The shared card omits the seed card's year.** With it the whole share is legible —
+- **The shared card omits the seed card's year** (the single-card layout; the collage carries
+  no names or years at all). With it the whole share is legible —
   score, rank, event, year, link — so a recipient can read it all and has no reason to ask
   about any of it. Withholding one fact is the only lever this card has on Wordle's actual
   mechanism. **The in-game seed card still shows its year**; only this render omits it. A

@@ -2,7 +2,8 @@ import { HistoricalEvent } from '../types';
 import { getImageUrl } from './cloudinaryImage';
 
 /**
- * Renders the 4:5 card that gets attached to a share.
+ * Renders the 4:5 card that gets attached to a share: the player's timeline as a collage of
+ * its paintings, with the score under it.
  *
  * Why an image at all: Instagram does not accept text or URL payloads from a share
  * sheet, so a text-only `navigator.share()` never lists it as a target. Attaching a
@@ -29,33 +30,42 @@ import { getImageUrl } from './cloudinaryImage';
  * For the same reason the art's apparent size depends only on `CARD_SIZE / WIDTH`; making
  * the canvas shorter does nothing for it.
  *
- * ## The one card we are allowed to show
+ * ## The paintings, never their order
  *
- * The hero art is the **seed card** — the event already sitting on the timeline when
- * the game starts, and the same card the home screen shows as the daily preview. It is
- * therefore not a spoiler: it gives away nothing a recipient would not see on their own
- * first screen. Do NOT extend this to placed cards. Rendering the events a player
- * actually placed would leak the composition of that day's puzzle to everyone who sees
- * the story.
+ * The art is the player's timeline as a collage: every card they placed, plus the starting
+ * card. This used to be the starting card alone, on the rule that a share must not show
+ * placed cards. The rule that matters is narrower: a share must not show the **order**.
+ * The Daily deals everyone the same cards, and so does a challenge link, so a grid in date
+ * order would hand the answer to a friend who has not played yet.
+ *
+ * So the tiles arrive here already shuffled (`shareTiles` in `share.ts`), with a seed that
+ * has nothing to do with the dates, and the missed cards are left out. What a viewer learns
+ * is which paintings are in the deck, which is also what the first few cards of their own
+ * game will show them. Do NOT draw the tiles in timeline order, add years or names to them,
+ * or grey the missed ones in place: each of those is the answer.
+ *
+ * With fewer than two tiles there is no collage to make, and the card falls back to the
+ * starting card alone, face up, as before. It is on the board before the first move.
  *
  * ## Cloudinary cost
  *
- * The art is fetched through `getImageUrl(url, 'detail')` — the existing 768x768 rung,
- * **not** a new transform string. `detail` rather than `thumbnail` because the hero is
- * drawn at 680px on a 1080px canvas: the 400px thumbnail would be upscaled and visibly
- * soft, while 768 downscales cleanly.
+ * Collage tiles are fetched through `getImageUrl(url, 'thumbnail')`, the 400x400 rung the
+ * board has already loaded. With two to four tiles one is drawn up to about 660px tall, a
+ * soft upscale accepted for games that short; from five tiles up it is drawn at or below
+ * its source size. The
+ * single-card fallback uses `detail` (768x768), because it is drawn at 680px.
  *
  * Do not introduce a bespoke size for this surface. Cost scales as
  * `images touched x rungs x formats`, so a third rung is roughly 13,000 transformations
- * across the catalogue — about half a month's free-plan allowance. Reusing an existing
- * rung keeps the marginal cost at, worst case, one derived asset per day (the daily seed
- * card is the same for every player, and is often already minted from someone tapping
- * it in-game). See docs/cloudinary-cost-controls.md.
+ * across the catalogue, about half a month's free-plan allowance. See
+ * docs/cloudinary-cost-controls.md.
  *
  * One wrinkle: `crossOrigin = 'anonymous'` is required here (an untagged image taints
  * the canvas and `toBlob()` throws), and that is a different HTTP cache key from the
- * plain `<img>` tags the game uses. Worst case that is one extra fetch of an
- * already-derived asset — bandwidth, never a transformation.
+ * plain `<img>` tags the game uses. The service worker's image cache stores CORS copies of
+ * the board's thumbnails, so a collage is normally drawn from cache. Without it, the worst
+ * case is one re-fetch per tile of an already-derived asset: bandwidth, never a
+ * transformation.
  */
 
 /**
@@ -75,6 +85,19 @@ export const HEIGHT = 1350;
  */
 const CARD_SIZE = 680;
 
+/**
+ * Where the collage sits: 93% of the card's width, against the single card's 63%. That
+ * fraction is the only thing that governs how big the art looks in a chat bubble.
+ *
+ * The box ends where the starting card's name used to be drawn. A collage has no one card
+ * to name, and that line's height is what the art gained.
+ */
+const COLLAGE_BOX: ShareBox = { x: 40, y: 198, width: 1000, height: 788 };
+const COLLAGE_GAP = 8;
+const COLLAGE_RADIUS = 18;
+/** Below this there is nothing to arrange, and the card shows the starting card alone. */
+const MIN_COLLAGE_TILES = 2;
+
 /** Palette lifted from `src/index.css` (.dark) — the card is always dark. */
 const INK = '#f4f1ec';
 /** 0.78, not the 0.62 this started at: at ~16px on screen the dimmer value vanished. */
@@ -85,8 +108,16 @@ const DISPLAY_FONT = '"Playfair Display", Georgia, serif';
 const BODY_FONT = 'Inter, system-ui, sans-serif';
 
 export interface ShareCardSpec {
-  /** The pre-placed seed card, used as hero art. Omit to render a typographic card. */
+  /**
+   * The pre-placed seed card. It colours the backdrop, and is the hero art when there is no
+   * collage. Omit to render a typographic card.
+   */
   event?: HistoricalEvent | null;
+  /**
+   * The timeline's cards for the collage, **already shuffled** (see the header: never in
+   * date order). Fewer than two, or none, and the card shows `event` alone.
+   */
+  tiles?: HistoricalEvent[];
   /** Small line under the wordmark, e.g. "Daily #49 · Everything". Omitted for a
    *  non-daily game, which has no mode to name. */
   eyebrow?: string;
@@ -99,6 +130,82 @@ export interface ShareCardSpec {
   /** Shown at the foot of the card. The file may travel without any text, so this is
    *  the only thing telling a viewer where to play — it is not optional in practice. */
   url: string;
+}
+
+export interface ShareBox {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+export interface ShareGrid {
+  columns: number;
+  rows: number;
+  /** One tile's size. Not always square: see `shareGridLayout`. */
+  tileWidth: number;
+  tileHeight: number;
+  /** Top-left corner of each tile, in the order the tiles were given. */
+  cells: Array<{ x: number; y: number }>;
+}
+
+/**
+ * The most a tile may depart from square, either way. The paintings are square, so a tile
+ * this shape crops a quarter of one off; past it the crop starts losing the subject.
+ */
+const MAX_TILE_ASPECT = 4 / 3;
+
+/**
+ * Arrange `count` tiles in a box so the art covers as much of it as it can.
+ *
+ * Square tiles left the box half empty: fifteen of them are a 5 by 3 strip with a band of
+ * nothing above and below, and how much of the card is art is the whole point of this
+ * layout. So a tile takes its cell's shape, up to `MAX_TILE_ASPECT`, and fifteen become
+ * five columns of portrait tiles that fill the box.
+ *
+ * Every column count is tried. The score is the tile's area, marked down for empty cells so
+ * a full grid beats a slightly larger one with a stray tile on its last row (three tiles are
+ * a row of three, not two over one). The grid is centred in the box, and a short last row is
+ * centred under the others, which reads as intended where a left-aligned one reads as
+ * unfinished.
+ *
+ * Pure, and exported, because the renderer itself cannot run under jsdom.
+ */
+export function shareGridLayout(
+  count: number,
+  box: ShareBox = COLLAGE_BOX,
+  gap: number = COLLAGE_GAP
+): ShareGrid {
+  if (count <= 0) return { columns: 0, rows: 0, tileWidth: 0, tileHeight: 0, cells: [] };
+
+  let best = { columns: 1, rows: count, tileWidth: 0, tileHeight: 0, score: -1 };
+  for (let columns = 1; columns <= count; columns++) {
+    const rows = Math.ceil(count / columns);
+    const cellWidth = (box.width - gap * (columns - 1)) / columns;
+    const cellHeight = (box.height - gap * (rows - 1)) / rows;
+    const tileWidth = Math.min(cellWidth, cellHeight * MAX_TILE_ASPECT);
+    const tileHeight = Math.min(cellHeight, cellWidth * MAX_TILE_ASPECT);
+    const filled = count / (columns * rows);
+    const score = tileWidth * tileHeight * filled * filled;
+    if (score > best.score) best = { columns, rows, tileWidth, tileHeight, score };
+  }
+
+  const { columns, rows, tileWidth, tileHeight } = best;
+  const stepX = tileWidth + gap;
+  const stepY = tileHeight + gap;
+  const left = box.x + (box.width - (columns * stepX - gap)) / 2;
+  const top = box.y + (box.height - (rows * stepY - gap)) / 2;
+  const inLastRow = count - columns * (rows - 1);
+  const lastRowInset = ((columns - inLastRow) * stepX) / 2;
+
+  const cells = Array.from({ length: count }, (_, i) => {
+    const row = Math.floor(i / columns);
+    return {
+      x: left + (i % columns) * stepX + (row === rows - 1 ? lastRowInset : 0),
+      y: top + row * stepY,
+    };
+  });
+  return { columns, rows, tileWidth, tileHeight, cells };
 }
 
 /** Load an image without letting a slow or dead CDN block the share. */
@@ -170,7 +277,10 @@ function drawCover(
   const scale = Math.max(w / img.width, h / img.height);
   const dw = img.width * scale;
   const dh = img.height * scale;
-  ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
+  // A wide slot keeps the upper part of the painting, as the board's cards do
+  // (`.card-art-fade`, 35%): faces and skylines sit above centre. A tall one is centred.
+  const anchorY = w > h ? 0.35 : 0.5;
+  ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) * anchorY, dw, dh);
 }
 
 /**
@@ -259,6 +369,133 @@ function drawScoreWithUnit(
   ctx.textAlign = 'center';
 }
 
+/** Backdrop: the blurred art over the card's own dominant colour, darkened for the type. */
+function drawBackdrop(
+  ctx: CanvasRenderingContext2D,
+  art: HTMLImageElement | null,
+  color: string | undefined
+): void {
+  ctx.fillStyle = color || FALLBACK_BASE;
+  ctx.fillRect(0, 0, WIDTH, HEIGHT);
+  if (art) {
+    ctx.globalAlpha = 0.85;
+    drawBlurredBackdrop(ctx, art);
+    ctx.globalAlpha = 1;
+  }
+  // Darken enough that the type is legible over any image, but not so much that the
+  // backdrop stops reading as the card's own art — that colour wash is the whole draw.
+  ctx.fillStyle = 'rgba(6, 14, 22, 0.5)';
+  ctx.fillRect(0, 0, WIDTH, HEIGHT);
+  const vignette = ctx.createLinearGradient(0, 0, 0, HEIGHT);
+  vignette.addColorStop(0, 'rgba(6, 14, 22, 0.62)');
+  vignette.addColorStop(0.45, 'rgba(6, 14, 22, 0.12)');
+  vignette.addColorStop(1, 'rgba(6, 14, 22, 0.8)');
+  ctx.fillStyle = vignette;
+  ctx.fillRect(0, 0, WIDTH, HEIGHT);
+}
+
+/**
+ * The wordmark and the line under it. The game is "When?" everywhere else; the mark keeps
+ * its question mark. The collage card sets both smaller and higher, to give the art the
+ * room.
+ */
+function drawHeader(ctx: CanvasRenderingContext2D, eyebrow: string | undefined, collage: boolean) {
+  const mark = collage ? { y: 118, size: 104 } : { y: 150, size: 134 };
+  const line = collage ? { y: 170, size: 38 } : { y: 204, size: 40 };
+  fittedCenteredText(ctx, 'When?', mark.y, 900, '600', mark.size, DISPLAY_FONT, INK);
+  if (eyebrow) {
+    fittedCenteredText(
+      ctx,
+      eyebrow.toUpperCase(),
+      line.y,
+      940,
+      '500',
+      line.size,
+      BODY_FONT,
+      INK_MUTED
+    );
+  }
+}
+
+/** One painting in a rounded frame with a soft shadow: a collage tile, or the hero. */
+function drawFramedArt(
+  ctx: CanvasRenderingContext2D,
+  art: HTMLImageElement | null,
+  color: string | undefined,
+  box: ShareBox,
+  radius: number,
+  shadow: { blur: number; offsetY: number }
+): void {
+  const { x, y, width, height } = box;
+  ctx.save();
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.55)';
+  ctx.shadowBlur = shadow.blur;
+  ctx.shadowOffsetY = shadow.offsetY;
+  roundedRect(ctx, x, y, width, height, radius);
+  // What shows if the art never arrives: the card's own colour, not a hole.
+  ctx.fillStyle = color || '#1b2838';
+  ctx.fill();
+  ctx.restore();
+
+  if (art) {
+    ctx.save();
+    roundedRect(ctx, x, y, width, height, radius);
+    ctx.clip();
+    drawCover(ctx, art, x, y, width, height);
+    ctx.restore();
+  }
+  ctx.save();
+  roundedRect(ctx, x, y, width, height, radius);
+  ctx.strokeStyle = 'rgba(244, 241, 236, 0.22)';
+  ctx.lineWidth = Math.max(1.5, Math.min(3, width / 120));
+  ctx.stroke();
+  ctx.restore();
+}
+
+/** The single-card layout: the seed event, face up, with its name under it. */
+function drawHero(
+  ctx: CanvasRenderingContext2D,
+  event: HistoricalEvent | null | undefined,
+  art: HTMLImageElement | null
+): void {
+  const box = { x: (WIDTH - CARD_SIZE) / 2, y: 238, width: CARD_SIZE, height: CARD_SIZE };
+  drawFramedArt(ctx, art, event?.color, box, 48, { blur: 60, offsetY: 24 });
+
+  // Seed card caption — safe to name, it is on the board before the first move.
+  // 42px floor: the longest names in the catalogue (35 chars) settle around 46px, so
+  // the floor is headroom rather than something reached in practice.
+  //
+  // The year is deliberately absent. Printing it would make the share completely
+  // legible: score, rank, event, year, link — a recipient could read the whole thing and
+  // would have no reason to ask about any of it.
+  // Withholding it is the one lever this card has on Wordle's actual mechanism, where a
+  // grid you cannot decode is what makes someone ask what the game is. The in-game seed
+  // card still shows its year; only this render omits it.
+  if (event) {
+    fittedCenteredText(ctx, event.friendly_name, 986, 900, '600', 58, DISPLAY_FONT, INK, 42);
+  }
+}
+
+/** The collage layout: every tile a framed painting, in the order given. No names, no years. */
+function drawCollage(
+  ctx: CanvasRenderingContext2D,
+  tiles: HistoricalEvent[],
+  art: Array<HTMLImageElement | null>
+): void {
+  const { tileWidth, tileHeight, cells } = shareGridLayout(tiles.length);
+  const radius = Math.min(COLLAGE_RADIUS, Math.min(tileWidth, tileHeight) / 8);
+  cells.forEach((cell, i) => {
+    drawFramedArt(
+      ctx,
+      art.at(i) ?? null,
+      tiles.at(i)?.color,
+      { x: cell.x, y: cell.y, width: tileWidth, height: tileHeight },
+      radius,
+      { blur: 26, offsetY: 10 }
+    );
+  });
+}
+
 /**
  * Render the share card. Returns null if anything goes wrong — every caller must be able
  * to fall back to a plain text share rather than leaving the player with a dead button.
@@ -271,87 +508,26 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     const ctx = canvas.getContext('2d');
     if (!ctx) return null;
 
-    const artUrl = getImageUrl(spec.event?.image_url, 'detail');
-    const art = artUrl ? await loadImage(artUrl) : null;
-    await ensureFonts();
+    const tiles = spec.tiles ?? [];
+    const collage = tiles.length >= MIN_COLLAGE_TILES;
+    // Either the collage's thumbnails or the hero's one `detail` image, never both.
+    const load = (event: HistoricalEvent | null | undefined, variant: 'thumbnail' | 'detail') => {
+      const url = getImageUrl(event?.image_url, variant);
+      return url ? loadImage(url) : Promise.resolve(null);
+    };
+    const [tileArt, backdropArt] = await Promise.all([
+      Promise.all(collage ? tiles.map((tile) => load(tile, 'thumbnail')) : []),
+      load(spec.event ?? tiles.at(0), collage ? 'thumbnail' : 'detail'),
+      ensureFonts(),
+    ]);
 
-    // --- Backdrop: blurred hero art over the card's own dominant colour ---
-    ctx.fillStyle = spec.event?.color || FALLBACK_BASE;
-    ctx.fillRect(0, 0, WIDTH, HEIGHT);
-    if (art) {
-      ctx.globalAlpha = 0.85;
-      drawBlurredBackdrop(ctx, art);
-      ctx.globalAlpha = 1;
-    }
-    // Darken enough that the type is legible over any image, but not so much that the
-    // backdrop stops reading as the card's own art — that colour wash is the whole draw.
-    ctx.fillStyle = 'rgba(6, 14, 22, 0.5)';
-    ctx.fillRect(0, 0, WIDTH, HEIGHT);
-    const vignette = ctx.createLinearGradient(0, 0, 0, HEIGHT);
-    vignette.addColorStop(0, 'rgba(6, 14, 22, 0.62)');
-    vignette.addColorStop(0.45, 'rgba(6, 14, 22, 0.12)');
-    vignette.addColorStop(1, 'rgba(6, 14, 22, 0.8)');
-    ctx.fillStyle = vignette;
-    ctx.fillRect(0, 0, WIDTH, HEIGHT);
+    drawBackdrop(ctx, backdropArt, (spec.event ?? tiles.at(0))?.color);
 
     ctx.textAlign = 'center';
     ctx.textBaseline = 'alphabetic';
-
-    // --- Header. The game is "When?" everywhere else; the mark keeps its question mark. ---
-    fittedCenteredText(ctx, 'When?', 150, 900, '600', 134, DISPLAY_FONT, INK);
-    if (spec.eyebrow) {
-      fittedCenteredText(
-        ctx,
-        spec.eyebrow.toUpperCase(),
-        204,
-        940,
-        '500',
-        40,
-        BODY_FONT,
-        INK_MUTED
-      );
-    }
-
-    // --- Hero card: the seed event, face up ---
-    const cardSize = CARD_SIZE;
-    const cardX = (WIDTH - cardSize) / 2;
-    const cardY = 238;
-    ctx.save();
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.55)';
-    ctx.shadowBlur = 60;
-    ctx.shadowOffsetY = 24;
-    roundedRect(ctx, cardX, cardY, cardSize, cardSize, 48);
-    ctx.fillStyle = spec.event?.color || '#1b2838';
-    ctx.fill();
-    ctx.restore();
-
-    if (art) {
-      ctx.save();
-      roundedRect(ctx, cardX, cardY, cardSize, cardSize, 48);
-      ctx.clip();
-      drawCover(ctx, art, cardX, cardY, cardSize, cardSize);
-      ctx.restore();
-    }
-    ctx.save();
-    roundedRect(ctx, cardX, cardY, cardSize, cardSize, 48);
-    ctx.strokeStyle = 'rgba(244, 241, 236, 0.22)';
-    ctx.lineWidth = 3;
-    ctx.stroke();
-    ctx.restore();
-
-    // Seed card caption — safe to name, it is on the board before the first move.
-    // 42px floor: the longest names in the catalogue (35 chars) settle around 46px, so
-    // the floor is headroom rather than something reached in practice.
-    //
-    // The year is deliberately absent. Printing it would make the share completely
-    // legible: score, rank, event, year, link — a recipient could read the whole thing and
-    // would have no reason to ask about any of it.
-    // Withholding it is the one lever this card has on Wordle's actual mechanism, where a
-    // grid you cannot decode is what makes someone ask what the game is. The in-game seed
-    // card still shows its year; only this render omits it.
-    if (spec.event) {
-      fittedCenteredText(ctx, spec.event.friendly_name, 986, 900, '600', 58, DISPLAY_FONT, INK, 42);
-    }
+    drawHeader(ctx, spec.eyebrow, collage);
+    if (collage) drawCollage(ctx, tiles, tileArt);
+    else drawHero(ctx, spec.event, backdropArt);
 
     // --- Score: numeral and unit as one group, rank on its own line beneath ---
     // Playfair Display sets old-style figures: 3, 4, 5, 7 and 9 drop well below the

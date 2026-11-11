@@ -326,8 +326,9 @@ Decisions:
 - **A Perfect Clear has a gold frame**, the Archive's mark for a curated day.
 - **Restart and Home stay in the bottom bar.** In the popup they would let a player leave
   before the badge and share steps, which is a change to the end-of-game sequence.
-- **Not the share image.** The share may only show the starting card, since placed cards give
-  away the day's deck ([../sharing-challenges/](../sharing-challenges/index.md)).
+- **The share image is the same paintings, shuffled, without the missed cards.** This grid is
+  in date order, which on a shared image would be the day's answer
+  ([../sharing-challenges/](../sharing-challenges/index.md#the-paintings-never-their-order)).
 
 The travel (`hooks/useGalleryTravel.ts`, `GalleryFlight.tsx`) is an entrance and nothing else.
 Reduced motion, the tests, and a page with no board all get the finished grid at once.
