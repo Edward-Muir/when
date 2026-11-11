@@ -159,9 +159,14 @@ mask (`.card-art-fade`) with their own text block.
 ### The hand card is a square
 
 The hand is the one place the whole painting is shown: `Card`'s `square` size (168px), title on
-a dark scrim along the bottom, the next two cards fanned behind it as squares. The board is
+a dark scrim along the bottom, the rest of the hand fanned behind it as squares. The board is
 unchanged, so the hand and the board show the same card in two shapes.
 
+- **The fan shows the hand, five cards at most** (`MAX_FAN_CARDS`, `ActiveCardDisplay.tsx`): the
+  top card and up to four behind it, each 6px further right and 1.25 degrees more turned. A
+  standard hand is five, so the stack is the hand and thins by one with every miss, and a swap
+  sends the top card to the back. A larger hand still shows five; the cap is deliberate, since
+  more edges than that is clutter and the fan would run into the swap button.
 - **The square becomes the landscape card on pickup** (`HandDragOverlay.tsx`). dnd-kit sizes its
   overlay from the hand card's box, so a landscape card dropped in there hangs off the square's
   corner. Instead the overlay starts as the square and closes around the finger into the
@@ -172,9 +177,9 @@ unchanged, so the hand and the board show the same card in two shapes.
   (`useDragAndDrop`). `grabRef` records where in the square the pickup happened.
 - **The lifted card leaves the hand at once** (`invisible`, not a half-opacity ghost): the
   overlay is that card, and a ghost left behind shows the next card's title through it.
-- **The fanned cards are dimmed with `brightness-*`, never opacity.** Translucent squares show
+- **The fanned cards are dimmed with `brightness`, never opacity.** Translucent squares show
   the title underneath through their own.
-- **The swap button sits beside the stack, 44px**, clear of the fan. On the card it covered art
+- **The swap button sits beside the stack, 44px**, 40px from the top card so it clears the fan. On the card it covered art
   or title, whichever corner it took.
 - **The hand bar is `.hand-bar`: 184px plus the bottom safe-area inset**, up from 120px, and only
   while a hand is showing; game over goes back to 120px. That costs the board 64px, about three
