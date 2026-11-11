@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FailedPlacement, HistoricalEvent } from '../../types';
 import { YearLabel, yearSizeClass } from './YearLabel';
-import { getImageUrl } from '../../utils/cloudinaryImage';
-import CategoryIcon from '../CategoryIcon';
+import CardFace from '../CardFace';
 import Card from '../Card';
 import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
@@ -78,9 +77,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
 }) => {
   const shouldReduceMotion = useReducedMotion();
   const tuning = useAnimationTuning();
-  const [imageError, setImageError] = useState(false);
   const { event } = failed;
-  const hasImage = event.image_url && !imageError;
   const hasLayoutShift = layoutShiftDelay !== null && !shouldReduceMotion;
   const transition = cardTransition(shouldReduceMotion, revealing, travelMs, tuning.miss);
 
@@ -145,29 +142,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
               displaced ? 'pointer-events-none' : ''
             } ${revealing ? 'z-20 shadow-lg bg-surface' : 'bg-transparent'}`}
           >
-            {/* Image section (40% width), greyscaled */}
-            <div className="w-[40%] h-full relative overflow-hidden">
-              {hasImage ? (
-                <img
-                  src={getImageUrl(event.image_url, 'thumbnail')}
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                  onError={() => setImageError(true)}
-                  className="w-full h-full object-cover grayscale opacity-70"
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center bg-border/30">
-                  <CategoryIcon category={event.category} className="text-text-muted w-8 h-8" />
-                </div>
-              )}
-            </div>
-            {/* Title section (60% width): muted text, transparent background */}
-            <div className="w-[60%] h-full flex items-center px-2 py-1">
-              <span className="text-text-muted text-sm leading-tight line-clamp-3 font-body text-left">
-                {event.friendly_name}
-              </span>
-            </div>
+            <CardFace event={event} tombstone />
           </motion.button>
         </div>
       </div>

@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Card art now spreads across each card and fades into its colour.",
+    "The card in hand is now a square showing its whole painting."
+  ],
   "releases": [
     {
       "version": "1.37.0",

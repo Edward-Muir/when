@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
-import { HistoricalEvent, AnimationPhase, Category } from '../../types';
+import { HistoricalEvent, AnimationPhase } from '../../types';
 import { YearLabel, yearSizeClass } from './YearLabel';
-import CategoryIcon from '../CategoryIcon';
+import CardFace from '../CardFace';
 import { type GlowIntensity } from '../../utils/streakFeedback';
-import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
-import { getImageUrl } from '../../utils/cloudinaryImage';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
@@ -49,36 +47,6 @@ interface TimelineEventProps {
   // marker is snuffing two pixels to the right and is standing in for it.
   hideTick?: boolean;
 }
-
-// Extracted image section to reduce component complexity
-const EventImage: React.FC<{
-  imageUrl?: string;
-  category: Category;
-  priority?: boolean;
-}> = ({ imageUrl, category, priority = false }) => {
-  const [imageError, setImageError] = useState(false);
-  const hasImage = imageUrl && !imageError;
-
-  if (hasImage) {
-    return (
-      <img
-        src={getImageUrl(imageUrl, 'thumbnail')}
-        alt=""
-        loading={priority ? 'eager' : 'lazy'}
-        fetchPriority={priority ? 'high' : 'auto'}
-        decoding="async"
-        onError={() => setImageError(true)}
-        className="w-full h-full object-cover"
-      />
-    );
-  }
-
-  return (
-    <div className="w-full h-full flex items-center justify-center bg-border/30">
-      <CategoryIcon category={category} className="text-text-muted w-8 h-8" />
-    </div>
-  );
-};
 
 // Spring animation for newly placed cards
 const makeSpringBounce = (t: AnimationTuning) => ({
@@ -311,25 +279,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             exit={isErrorAnimation ? rejectionExit.exit : undefined}
             className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
           >
-            {/* Image section (40% width) */}
-            <div className="w-[40%] h-full relative overflow-hidden">
-              <EventImage
-                imageUrl={event.image_url}
-                category={event.category}
-                priority={priority}
-              />
-            </div>
-            {/* Title section (60% width) */}
-            <div
-              className="w-[60%] h-full flex items-center px-2 py-1"
-              style={getEventColorStyle(event)}
-            >
-              <span
-                className={`${getEventTextClass(event)} text-sm leading-tight line-clamp-3 font-body`}
-              >
-                {event.friendly_name}
-              </span>
-            </div>
+            <CardFace event={event} priority={priority} />
           </motion.button>
         </div>
       </motion.div>

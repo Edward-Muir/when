@@ -2,12 +2,12 @@ import React from 'react';
 import { useDraggable } from '@dnd-kit/core';
 import { HistoricalEvent } from '../types';
 import Card, { CardSize } from './Card';
+import { HAND_CARD_ATTR } from '../hooks/useDragAndDrop';
 
 interface DraggableCardProps {
   event: HistoricalEvent;
   onTap: () => void;
   disabled?: boolean;
-  isOverTimeline?: boolean;
   isHidden?: boolean;
   size?: CardSize;
   priority?: boolean;
@@ -17,7 +17,6 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   event,
   onTap,
   disabled = false,
-  isOverTimeline = false,
   isHidden = false,
   size = 'normal',
   priority = false,
@@ -29,17 +28,20 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   });
 
   return (
+    // Gone from the hand the moment it is lifted: the drag overlay starts as this exact square
+    // and closes into the landscape card (HandDragOverlay), so a ghost left behind would be a
+    // second copy of the card, with the next card's title showing through it.
     <div
       ref={setNodeRef}
       className={`
         pointer-events-none
-        ${isHidden ? 'invisible' : ''}
-        ${!isHidden && isDragging ? (isOverTimeline ? 'invisible' : 'opacity-ghost') : ''}
+        ${isHidden || isDragging ? 'invisible' : ''}
       `}
     >
       {/* Card is the drag handle - only this area triggers drag initiation */}
       <div
         ref={setActivatorNodeRef}
+        {...{ [HAND_CARD_ATTR]: '' }}
         {...listeners}
         {...attributes}
         className={`

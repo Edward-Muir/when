@@ -1,7 +1,8 @@
 import { useEffect, useMemo } from 'react';
 import { HistoricalEvent, WhenGameState } from '../types';
 import { ImageVariant } from '../utils/cloudinaryImage';
-import { preloadEventImages } from '../utils/preloadImage';
+import { holdDecoded, preloadEventImages } from '../utils/preloadImage';
+import { getImageUrl } from '../utils/cloudinaryImage';
 import { catchUpDrawIndex, struggleBefore } from '../utils/catchUp';
 import { buildDifficultyIndex } from '../utils/difficultyScore';
 
@@ -12,6 +13,14 @@ const THUMB: ImageVariant[] = ['thumbnail'];
 // How many upcoming deck cards to keep warm during play. Small + re-warmed per
 // draw so it never floods the wire or competes with the active card.
 const NEXT_PREFETCH = 5;
+
+/** Thumbnail URLs of every dealt hand card, the same URLs the hand's `<img>`s will ask for. */
+function handUrls(players: WhenGameState['players']): string[] {
+  return players
+    .flatMap((p) => p.hand)
+    .map((e) => getImageUrl(e.image_url, 'thumbnail'))
+    .filter((url): url is string => !!url);
+}
 
 /**
  * Idle-schedule a low-priority batch warm of the given events' thumbnails.
@@ -81,5 +90,13 @@ export function useImagePrefetch(
   // set, so after a player's first game or two these are cache hits.
   useWarm(introEvents, phase === 'modeSelect' || phase === 'gameOver');
   useWarm(startCards, phase === 'transitioning');
+
+  // The hand mounts all at once when play starts, up to five paintings on their first frame.
+  // Downloaded is not enough for that: each would still decode after the hand is on screen. The
+  // board's seed card needs no such help, being a single small slice.
+  const handKey = phase === 'transitioning' ? handUrls(players).join('|') : '';
+  useEffect(() => {
+    if (handKey) holdDecoded(handKey.split('|'));
+  }, [handKey]);
   useWarm(upcoming, phase === 'playing');
 }
