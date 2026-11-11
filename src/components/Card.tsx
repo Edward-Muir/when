@@ -101,7 +101,9 @@ const Card: React.FC<CardProps> = ({
             alt=""
             loading={priority ? 'eager' : 'lazy'}
             fetchPriority={priority ? 'high' : 'auto'}
-            decoding="async"
+            // The hand's squares decode with their first paint: the art is already in the
+            // cache (useImagePrefetch), and an async decode shows an empty card first.
+            decoding={size === 'square' ? 'sync' : 'async'}
             onError={() => setImageError(true)}
             className="w-full h-full object-cover"
           />

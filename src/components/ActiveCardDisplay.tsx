@@ -83,7 +83,8 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
                 className="absolute pointer-events-none"
                 style={fanStyle(depth)}
               >
-                <Card event={event} size="square" />
+                {/* Always on screen, so nothing for lazy loading to defer */}
+                <Card event={event} size="square" priority />
               </div>
             ))}
 

@@ -355,6 +355,14 @@ Three layers, in order of increasing scope:
 | `transitioning`           | seed timeline + dealt hands only      | no pop-in entering play — deliberately not the whole deck, which won't finish in 3s |
 | `playing`                 | next 5 deck cards, re-warmed per draw | drawn cards appear instantly                                                        |
 
+**The hand is decoded, not just downloaded** (`holdDecoded`). The hand mounts all at once when
+play starts, up to five square paintings on their first frame. Measured in Chromium at 1.5 Mbps
+the five thumbnails finish about 2.5 seconds before the hand appears, so the network was never
+the problem; a view that mounts with several cached images still has to decode each one. During
+`transitioning` the orchestrator holds a decoded `Image` per hand card, the hand's `<img>`s use
+`decoding="sync"`, and the fanned cards are `priority` (eager) since they are always on screen.
+Same `thumbnail` URLs throughout: no new rung and no extra requests.
+
 **The orchestrator owns look-ahead warming only.** Never warm the `detail` rung per render in
 `Card.tsx` / `TimelineEvent.tsx`: that fetches a full-size popup image for every card on screen
 whether or not the popup is opened. `GamePopup` paints the already-cached thumbnail as a
