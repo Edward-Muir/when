@@ -460,8 +460,10 @@ Both formats share these rules:
 
 ### The Custom tab's code field
 
-The share code on the Custom tab (`CustomGameSettings.tsx`) is a two-way field: it shows the
-code for the current filters, and a pasted code decodes back into the controls.
+The share code on the Custom tab (`CustomGameSettings.tsx`, shown in `CustomSharePopup` from
+the Share button beside Play) is a two-way field: it shows the code for the current filters,
+and a pasted code decodes back into the controls. A Quick deck tile is a settings object, so a
+game started from one carries an ordinary code; the encoding has no notion of presets.
 
 - **A `useRef` flag guards the two-way sync.** Applying a decoded code updates the settings,
   which recomputes the code via `useMemo`, which would sync back and overwrite what the user

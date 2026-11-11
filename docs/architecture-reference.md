@@ -15,7 +15,8 @@ index.tsx                      # BrowserRouter + the routes below
 │   │   ├── TopBar.tsx              # Menu only on Home (also mounted by Game)
 │   │   ├── HomeTabBar.tsx          # The five labelled tabs under the pager (TABS: homeTabs.ts)
 │   │   ├── DailyCta.tsx            # Daily hero's Play / Share / Submit button
-│   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: filters + Play
+│   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: QuickDecks.tsx,
+│   │   │                           # folded FilterControls rows, Play + Share (CustomSharePopup)
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
 │   │   ├── panels/                 # Daily, Archive, Custom, Stats, Timeline panels — one per tab
 │   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel

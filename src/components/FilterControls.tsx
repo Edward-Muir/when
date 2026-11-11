@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useId, useRef, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
 import { ALL_REGIONS, REGION_DISPLAY_ORDER } from '../utils/regions';
@@ -7,13 +8,14 @@ import { RegionSelection, regionStatus, toggleRegion } from '../utils/countrySel
 import FilterPill from './FilterPill';
 import FilterGroupHeader, { FilterGroupActions, listGroupActions } from './FilterGroupHeader';
 import { usePillTap } from '../hooks/usePillTap';
-
-const DIFFICULTY_LABELS = new Map<Difficulty, string>([
-  ['easy', 'Easy'],
-  ['medium', 'Medium'],
-  ['hard', 'Hard'],
-  ['very-hard', 'Expert'],
-]);
+import {
+  DIFFICULTY_NAMES,
+  GroupSummary,
+  categorySummary,
+  difficultySummary,
+  eraSummary,
+  regionSummary,
+} from '../utils/filterSummary';
 
 const ERA_IDS = ERA_DEFINITIONS.map((e) => e.id);
 
@@ -35,7 +37,78 @@ export interface FilterControlsProps {
   matchCount?: number;
   // When true, show an `n/N` (or `All`) selected-count next to each group header.
   showCounts?: boolean;
+  /**
+   * Fold each group to one 44px row stating its setting (the Custom tab). A tap opens the group
+   * in place, one at a time. Off by default: My Timeline's filter popup shows every group open.
+   */
+  collapsible?: boolean;
 }
+
+type GroupKey = 'difficulty' | 'categories' | 'eras' | 'regions';
+
+/** A folded group's row: its title, its summary, and whether it is the one open. */
+interface Fold {
+  title: string;
+  summary: GroupSummary;
+  open: boolean;
+  onToggle: () => void;
+}
+
+/** One group open at a time; tapping the open one folds it. `undefined` when not folding. */
+function useFolds(collapsible: boolean) {
+  const [openGroup, setOpenGroup] = useState<GroupKey | null>(null);
+  return (key: GroupKey, title: string, summary: GroupSummary): Fold | undefined =>
+    collapsible
+      ? {
+          title,
+          summary,
+          open: openGroup === key,
+          onToggle: () => setOpenGroup((current) => (current === key ? null : key)),
+        }
+      : undefined;
+}
+
+/**
+ * Scroll the nearest vertical scroller just enough to show a group that has opened below its
+ * fold, but never past the group's own row. Done on the scroller rather than with
+ * `scrollIntoView`, which would also nudge the horizontal pager the panel sits in.
+ */
+function revealOpenedGroup(group: HTMLElement) {
+  const scroller = group.parentElement?.closest<HTMLElement>('.overflow-y-auto');
+  if (!scroller) return;
+  const box = scroller.getBoundingClientRect();
+  const rect = group.getBoundingClientRect();
+  const overflow = rect.bottom - box.bottom;
+  if (overflow <= 0) return;
+  const toRowTop = rect.top - box.top;
+  scroller.scrollBy({ top: Math.min(overflow + 8, toRowTop), behavior: 'smooth' });
+}
+
+/** The 44px row a folded group shows: "Categories ... Science  v", teal when not the default. */
+const FoldRow: React.FC<{ fold: Fold; controls: string }> = ({ fold, controls }) => (
+  <button
+    type="button"
+    onClick={fold.onToggle}
+    aria-expanded={fold.open}
+    aria-controls={controls}
+    className="flex min-h-[44px] w-full items-center gap-2 px-3 text-left text-sm font-body"
+  >
+    <span className="flex-shrink-0 font-medium text-text">{fold.title}</span>
+    <span
+      className={`min-w-0 flex-1 truncate text-right ${
+        fold.summary.changed ? 'font-semibold text-accent-secondary' : 'text-text-muted'
+      }`}
+    >
+      {fold.summary.text}
+    </span>
+    <ChevronDown
+      className={`h-4 w-4 flex-shrink-0 text-text-muted transition-transform ${
+        fold.open ? 'rotate-180' : ''
+      }`}
+      aria-hidden
+    />
+  </button>
+);
 
 /**
  * One filter group: its header (label, count, Select all / Clear), its chips, and a quiet
@@ -52,20 +125,43 @@ const FilterGroup: React.FC<{
   total: number;
   showCount: boolean;
   actions: FilterGroupActions;
+  /** Folded into a row (Custom). The open group shows the same header, chips and prompt. */
+  fold?: Fold;
   children: React.ReactNode;
-}> = ({ label, noun, selectedCount, total, showCount, actions, children }) => (
-  <div>
-    <FilterGroupHeader
-      label={label}
-      count={showCount ? { selected: selectedCount, total } : undefined}
-      {...actions}
-    />
-    <div className="flex flex-wrap gap-2">{children}</div>
-    <p className="mt-1 h-4 text-xs leading-4 text-text-muted font-body" aria-live="polite">
-      {actions.noneOn ? `Pick at least one ${noun}` : ''}
-    </p>
-  </div>
-);
+}> = ({ label, noun, selectedCount, total, showCount, actions, fold, children }) => {
+  const bodyId = useId();
+  const groupRef = useRef<HTMLDivElement>(null);
+  const opened = fold?.open ?? false;
+  useEffect(() => {
+    if (opened && groupRef.current) revealOpenedGroup(groupRef.current);
+  }, [opened]);
+
+  const body = (
+    <>
+      <FilterGroupHeader
+        label={label}
+        count={showCount && !fold ? { selected: selectedCount, total } : undefined}
+        labelHidden={!!fold}
+        {...actions}
+      />
+      <div className="flex flex-wrap gap-2">{children}</div>
+      <p className="mt-1 h-4 text-xs leading-4 text-text-muted font-body" aria-live="polite">
+        {actions.noneOn ? `Pick at least one ${noun}` : ''}
+      </p>
+    </>
+  );
+  if (!fold) return <div>{body}</div>;
+  return (
+    <div ref={groupRef}>
+      <FoldRow fold={fold} controls={bodyId} />
+      {fold.open && (
+        <div id={bodyId} className="px-3 pb-2 pt-1">
+          {body}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const FilterControls: React.FC<FilterControlsProps> = ({
   selectedDifficulties,
@@ -81,6 +177,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   countryOptions,
   matchCount,
   showCounts = false,
+  collapsible = false,
 }) => {
   const toggleDifficulty = (difficulty: Difficulty) => {
     onDifficultiesChange(
@@ -136,9 +233,22 @@ const FilterControls: React.FC<FilterControlsProps> = ({
 
   // Shared with the country picker, so every filter pill taps and double-taps alike.
   const handlePillTap = usePillTap();
+  const fold = useFolds(collapsible);
+
+  const countries = excludedCountries && onExcludedChange && countryOptions && (
+    <CountryRefine
+      selectedRegions={selectedRegions}
+      onRegionsChange={onRegionsChange}
+      excludedCountries={excludedCountries}
+      onExcludedChange={onExcludedChange}
+      countryOptions={countryOptions}
+      matchCount={matchCount}
+      asRow={collapsible}
+    />
+  );
 
   return (
-    <div className="space-y-1">
+    <div className={collapsible ? 'fold-list overflow-hidden rounded-2xl bg-surface' : 'space-y-1'}>
       <FilterGroup
         label="Card Difficulty"
         noun="difficulty"
@@ -146,6 +256,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         total={ALL_DIFFICULTIES.length}
         showCount={showCounts}
         actions={listGroupActions(selectedDifficulties, ALL_DIFFICULTIES, onDifficultiesChange)}
+        fold={fold('difficulty', 'Difficulty', difficultySummary(selectedDifficulties))}
       >
         {ALL_DIFFICULTIES.map((difficulty) => (
           <FilterPill
@@ -162,7 +273,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
               )
             }
           >
-            {DIFFICULTY_LABELS.get(difficulty)}
+            {DIFFICULTY_NAMES.get(difficulty)}
           </FilterPill>
         ))}
       </FilterGroup>
@@ -174,6 +285,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         total={ALL_CATEGORIES.length}
         showCount={showCounts}
         actions={listGroupActions(selectedCategories, ALL_CATEGORIES, onCategoriesChange)}
+        fold={fold('categories', 'Categories', categorySummary(selectedCategories))}
       >
         {ALL_CATEGORIES.map((category) => (
           <FilterPill
@@ -202,6 +314,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         total={ERA_IDS.length}
         showCount={showCounts}
         actions={listGroupActions(selectedEras, ERA_IDS, onErasChange)}
+        fold={fold('eras', 'Eras', eraSummary(selectedEras))}
       >
         {ERA_DEFINITIONS.map((era) => (
           <FilterPill
@@ -216,7 +329,8 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         ))}
       </FilterGroup>
 
-      {/* Region selection. Keys are prefixed: the double-tap ref is shared by every group. */}
+      {/* Region selection. Keys are prefixed: the double-tap ref is shared by every group.
+          Folded, the Countries row is a row of its own; open, it sits under the region chips. */}
       <div>
         <FilterGroup
           label="Regions"
@@ -225,6 +339,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           total={ALL_REGIONS.length}
           showCount={showCounts}
           actions={regionActions}
+          fold={fold('regions', 'Regions', regionSummary(selectedRegions))}
         >
           {regionStatuses.map(({ region, status }) => (
             <FilterPill
@@ -245,17 +360,9 @@ const FilterControls: React.FC<FilterControlsProps> = ({
             </FilterPill>
           ))}
         </FilterGroup>
-        {excludedCountries && onExcludedChange && countryOptions && (
-          <CountryRefine
-            selectedRegions={selectedRegions}
-            onRegionsChange={onRegionsChange}
-            excludedCountries={excludedCountries}
-            onExcludedChange={onExcludedChange}
-            countryOptions={countryOptions}
-            matchCount={matchCount}
-          />
-        )}
+        {!collapsible && countries}
       </div>
+      {collapsible && <div>{countries}</div>}
     </div>
   );
 };

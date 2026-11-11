@@ -563,6 +563,63 @@ and do not improve performance, while hints of this shape do.
 
 ## Custom settings screen
 
+**One screen: Quick decks, folded rows, Play and Share.** On a 375x667 phone the tab shows up to
+four deck tiles and five folded filter rows with nothing to scroll, Play and Share at the foot. The
+form it replaced was 1,342px of chips in a 366px window, and greeted a returning player with
+that form every time.
+
+- **Layout (`panels/CustomPanel.tsx` → `CustomGameSettings.tsx`).** The heading, then one
+  scroll region holding the Quick decks and the rows, then a footer with Play and the Share
+  button that never scrolls. The fit is exact: measured folded at 375x667, the region is 384px
+  of content in 384px. Every spacing on that path is spent (heading `mb-2`, subtitle `mt-0.5`,
+  the 1.5 gaps around the tiles, footer `py-1.5`), and the rows' frame and dividers are
+  box-shadows (`.fold-list` in `index.css`) because four 1px borders and a 2px frame are the
+  overflow. Adding anything above the footer makes the folded tab scroll. With the first-visit
+  hint up it scrolls by about 100px, which is accepted. In the apps the top inset adds to the
+  80px top padding every tab has, so a phone with a status-bar inset scrolls by that much.
+- **Quick decks (`QuickDecks.tsx`, presets in `src/data/customPresets.ts`).** A 2-column grid
+  of 64px tiles: Last deck (hidden until one exists), Everything, Ancient world, World Wars.
+  A tile is one painting, a name and the live count (`deckPool` over the catalogue, so a preset
+  never goes stale; "6,423 events", and "Science · 237" for the last deck). **A tap starts the
+  game at once** through the same `buildCustomGameConfig` (`utils/customDeck.ts`) Play uses:
+  fresh seed, `suddenDeath`, a share code. A preset is a settings object (`DeckSettings`), so
+  the challenge-code encoding knows nothing about presets, and a preset game's link is an
+  ordinary Custom link. **A tile never writes `when-custom-settings`**: the player's edited
+  settings survive a preset game untouched.
+- **The Last deck has its own key, `when-last-custom-deck`**, because `when-custom-settings`
+  holds the last settings _edited_, which may never have been played. It is written by the Play
+  button only (`useCustomGameSettings.startFromPlay`), never by a tile, an Archive day or a
+  challenge link, and holds the settings plus the game's starting card. That card is found by
+  building the same ramped deck the game deals (`startingEventName`, window only, since the
+  deck is deterministic for its seed) and is the tile's painting. Its label is what differs
+  from the default (`deckLabel` in `utils/filterSummary.ts`: what, when, how hard, where, so
+  "Science", "Ancient · Easy"), falling back to "Custom" when only countries differ. Read once
+  when Home mounts, which is after every game. A record whose deck the catalogue can no longer
+  deal shows the tile disabled.
+- **Each filter group folds to one 44px row** stating its setting, with a chevron
+  (`FilterControls` with `collapsible`): "All 4" / "All 21" / "All 8" / "All 11", a single name
+  ("Science", "Expert", "Renaissance"), "3 of 21", or "None". **Teal (`text-accent-secondary`)
+  when it differs from the default**, which is every option on. A tap opens the group in
+  place with the same chips, Select all and Clear; one group open at a time; tapping the open
+  row folds it. Opening scrolls the region just enough to show the group, never past its row,
+  and does so on the scroller rather than with `scrollIntoView`, which would also nudge the
+  horizontal pager. The Countries row keeps `countrySummary`'s wording and opens the country
+  picker as before; only its summary turns teal while a country is off. **Folding is a prop
+  only Custom sets**: My Timeline's `FilterPopup` renders every group open with its header,
+  exactly as before. Folded, the group's own header label is screen-reader only, so the
+  buttons keep their `Select all Categories` / `Clear Categories` names.
+- **An empty group still reads as one when folded**: the row says "None" in teal, Play and
+  Share are disabled, and the "Pick at least one …" prompt is there once it is opened. An empty
+  group can only come from Clear inside an open group, so the prompt is on screen when it
+  happens.
+- **Share is one square outline button beside Play** (`aria-label="Share settings"`, disabled
+  while a group is empty), opening `CustomSharePopup` on `ui/Modal`: the explanatory line, the
+  two-way link field (paste a link to load its settings), Shuffle and **Share link**. The popup
+  closes as it shares, so the "Copied to clipboard!" toast lands above the tab bar. The toast is
+  `pointer-events-none`: it sits over the Play button for its two seconds.
+- **Changing two groups costs one more tap each** than the open form did. Accepted for the
+  one-screen view; the double-tap isolate is unchanged inside an open group.
+
 **Select all and Clear on every filter group.** A new player cannot pick a single category
 without them: the double-tap below is undiscoverable, and a bare `All` / `n/N` header looks like
 a control but is a label. Following the usual multi-select patterns (Material filter chips, NN/g
@@ -613,11 +670,11 @@ pill restores all. Without it, isolating one of 21 categories means tapping off 
 **Settings persist across refresh** as a JSON object under `when-custom-settings`, written on
 every change (not only on Play) so tweaks the player never played are still remembered. **The
 seed is deliberately not persisted** — a refresh restores your filters but still deals a
-different deck.
+different deck. The deck last _played_ is the separate `when-last-custom-deck` (above).
 
 **The `n/N` / `All` counts are gated behind a `showCounts` prop** because `FilterControls` has
 a second consumer (the Timeline tab's `FilterPopup`), which has its own footer count; Select all
-and Clear show in both.
+and Clear show in both. A folded row's summary replaces the count, so `collapsible` ignores it.
 
 ## Dev-loop trap: the service worker on localhost
 

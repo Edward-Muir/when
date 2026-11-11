@@ -1,15 +1,16 @@
 # Navigation and feel review: findings and the chosen work
 
 **Status:** a review of everything outside the drag-and-place loop, made by driving the real
-app at v1.39.0. Six pieces of work were chosen from it. Items 1 to 3 are built and live in
-[ui-redesign](../ui-redesign/index.md#leaving-a-game); item 4, the end of a game, is built and
-lives in [sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence)
+app at v1.39.0. Six pieces of work were chosen from it, and all six are built. Items 1 to 3 live
+in [ui-redesign](../ui-redesign/index.md#leaving-a-game); item 4, the end of a game, lives in
+[sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence)
 and [stats-achievements](../stats-achievements/index.md), less the two parts listed under
-"Raised, not chosen"; item 5, the labelled tab bar, is built and lives in
-[ui-redesign](../ui-redesign/index.md#home-is-a-five-tab-pager); the country-search fix in
-item 6 was dropped. Item 6 is the one left to build. This file holds
-what was seen, what was chosen, the spec for each piece, and the findings that were raised but
-not chosen. Written so a fresh session can pick any item up cold.
+"Raised, not chosen"; item 5, the labelled tab bar, lives in
+[ui-redesign](../ui-redesign/index.md#home-is-a-five-tab-pager); item 6, Custom on one screen
+(Quick decks, folded filter rows, Share beside Play), lives in
+[ui-redesign](../ui-redesign/index.md#custom-settings-screen), less the country-search fix,
+which was dropped. This file now holds how the review was run and the findings that were raised
+but not chosen, written so a fresh session can pick any of them up cold.
 
 The sketches (phone frames, today beside the proposal) are published at
 <https://claude.ai/artifact/A3L9L8v4h2oEvwkVAimJpT>. The page is private to its owner; a
@@ -31,34 +32,6 @@ session can read it with the Artifact tool. Sketch numbers below are the ones on
 - A half-played Daily reopens in under a second with no start transition.
 - The game-over gallery flight, the one-hint-per-placement ladder, dark mode and the 375x667
   layout all hold up.
-
-## The chosen work
-
-### 6. Custom on one screen (sketch 4)
-
-**Seen.** On 375x667 the filter list is 1,342px tall inside a 366px window, or 242px while the
-first-visit hint is up. Custom greets a returning player with a form every time.
-
-**Build.**
-
-- **Quick decks above the filters**, a 2x2 grid of 64px tiles: the last deck played (hidden
-  until there is one), Everything, and two presets. A tile shows one painting, a name and the
-  live count, and a tap starts the game. At review time: Everything 6,423, Ancient 920,
-  World Wars 478, Easy only 1,244.
-- **Each filter group folds to one 44px row** stating its setting: "All 4", a single name,
-  "3 of 21", "All but Italy". A setting that differs from the default is teal. A tap opens the
-  group in place with the same chips, Select all and Clear as now.
-- **Share** becomes one button beside Play that opens the link field.
-
-**Constraints.** `FilterControls` is shared with My Timeline's filter popup, so folding is a
-prop only Custom turns on. Chips must not change width, the double-tap isolate stays, and an
-empty group stays a normal step (Play disabled, not saved, not shareable). A preset is a
-settings object, so the challenge-code encoding is untouched. Each preset's painting is one
-fixed event at the thumbnail size, never a random draw from the catalogue
-([cloudinary-cost-controls.md](../cloudinary-cost-controls.md)). `when-custom-settings` holds
-the last settings edited, not the last played, so "last deck" needs its own key.
-
-**Cost to know about.** Changing two groups takes one more tap each than today.
 
 ## Raised, not chosen
 

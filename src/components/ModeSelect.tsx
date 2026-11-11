@@ -20,6 +20,7 @@ import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
 import { canResumeDailyProgress, getTodayDailyProgress } from '../utils/dailyProgress';
 import { getTodayResult, DailyResult } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
+import { DeckSettings, buildCustomGameConfig } from '../utils/customDeck';
 
 import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { useToday } from '../hooks/useToday';
@@ -239,7 +240,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     }
   };
 
-  const handlePlayStart = () => onStart(customSettings.buildGameConfig());
+  // Play records the Last deck tile; a Quick deck tile starts its own settings and leaves both
+  // that record and the player's edited settings alone.
+  const handlePlayStart = () => onStart(customSettings.startFromPlay());
+  const handleQuickDeck = (settings: DeckSettings) => onStart(buildCustomGameConfig(settings));
 
   if (isLoading) {
     return <LoadingState />;
@@ -308,6 +312,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             active={activePage === indexForTabKey('custom')}
             {...customSettings.panelProps}
             onPlay={handlePlayStart}
+            allEvents={allEvents}
+            onQuickDeck={handleQuickDeck}
           />
 
           {/* Stats page (lazy: mounted once first visited) */}

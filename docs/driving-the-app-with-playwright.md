@@ -156,18 +156,37 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   ~1 s before reading either. A "new" dot is `[role="img"][aria-label="New"]` inside a tab;
   a fresh profile has none, and a dot clears 400 ms after the pager rests on its tab.
 - **All five Home panels are in the DOM at once**, so an unscoped `/Share/` button query can
-  match Custom's "Share settings" while the Daily is showing, and the click scrolls the pager
+  match Custom's "Share settings" (and an unscoped `/Play/` a Quick deck tile) while the Daily
+  is showing, and the click scrolls the pager
   over to it. Name the control exactly ("Challenge a Friend") or check `aria-current` after.
 - **A real swipe** needs a context with `hasTouch: true` and CDP
   `Input.dispatchTouchEvent`: a `touchStart`, a dozen `touchMove`s across most of the width,
   a `touchEnd`, then ~1 s for the snap. Mouse drags do not scroll the pager.
 - **Home → Custom tab → start a game:** tab `[aria-label="Custom game"]`, then
   the button matching `/Play\s+·/` ("Play · N events").
+- **Quick decks** on the Custom tab are `[data-testid="quick-deck-<id>"]` (`last`,
+  `everything`, `ancient`, `world-wars`), each a button labelled "Play Everything, 6,423
+  events" (the last deck: "Play Last deck, Science · 237"). A tap starts the game at once.
+  `quick-deck-last` is absent on a fresh profile and appears only after a game started from
+  Play; the record is `when-last-custom-deck`. Their `<img>`s are not rendered until the tab
+  has been on screen for 350 ms.
+- **Custom filter chips sit behind a row tap.** Each group is a folded row, a
+  `button[aria-expanded]` whose text starts with its title (`Difficulty`, `Categories`, `Eras`,
+  `Regions`) and ends with its summary ("All 21", "Science", "3 of 21", "None"); open it first
+  (`panel.locator('button[aria-expanded]', { hasText: /^Categories/ })`), and only one is open
+  at a time. Inside, Select all and Clear keep their names (`Clear Categories`,
+  `Select all Card Difficulty`). The Countries row is `button[aria-haspopup="dialog"]` with
+  "Countries" and opens the picker as before. Scope all of these to the Custom panel
+  (`div.mx-auto` that has the `Custom` h1): My Timeline's filter popup uses the same chips.
 - **Custom filter chips** are `button[aria-pressed]`. A category chip's DOM text is the
   lowercase category id (`sports`), capitalised only by CSS, so match case-insensitively
   (`getByRole('button', { name: /^sports$/i })`); `:text-is("Sports")` never matches. Don't
   guard a chip click with `if (await chip.count())`: a filter click that silently no-ops
   looks exactly like a clean pass against an unfiltered deck.
+- **Custom's share link** is in a popup: `Share settings` (the square button beside Play)
+  opens it, the field is `getByRole('textbox', { name: 'Share link' })`, then `Shuffle seed`
+  and `Share link`. Filling the field with a link applies its settings. Sharing closes the popup
+  and shows "Copied to clipboard!" for 2 s over the Play button (it does not take clicks).
 - **Archive tab**: one row per day for the last 30 days, then tomorrow's daily locked,
   each `[data-testid="archive-day-YYYY-MM-DD"]` holding one button ("Play Clockwork, Fri 2
   Oct"; today's is "Play <theme>, today"). The line reads "Missed", "High score: N" (or

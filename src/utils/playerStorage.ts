@@ -7,10 +7,13 @@
  * - Leaderboard display name, chosen avatar and today's submission
  * - Which achievement portraits the player has been shown
  * - Daily reminder opt-out and reminder-priming dismissals
- * - Custom-game settings
+ * - Custom-game settings, and the last Custom deck played
  */
 
-import { Difficulty, Category, Era } from '../types';
+import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
+import type { DeckSettings } from './customDeck';
+import { ALL_ERAS } from './eras';
+import { ALL_REGIONS } from './regions';
 import { getLocalDateString } from './puzzleDate';
 import { generateRandomName, parseAvatar } from './avatar';
 import { readJson, readString, removeKeys, writeJson, writeString } from './storage';
@@ -612,4 +615,61 @@ function normalizeCustomSettings(raw: unknown): CustomSettings | null {
   }
 
   return parsed as CustomSettings;
+}
+
+// --- Last Custom deck played ---
+
+/**
+ * The deck the player last started from the Custom tab's Play button, shown as the first Quick
+ * deck tile. Its own key because `when-custom-settings` holds the last settings *edited*, which
+ * may never have been played. Written by Play only: a Quick deck tile, an Archive day and a
+ * challenge link leave it alone. `eventName` is that game's starting card, the tile's fixed
+ * painting.
+ */
+export interface LastCustomDeck {
+  settings: DeckSettings;
+  eventName: string | null;
+}
+
+const LAST_CUSTOM_DECK_KEY = 'when-last-custom-deck';
+
+export function saveLastCustomDeck(deck: LastCustomDeck): void {
+  writeJson(LAST_CUSTOM_DECK_KEY, deck, 'last custom deck');
+}
+
+/** The last deck played from Custom, or null if none, or if it no longer names a whole deck. */
+export function getLastCustomDeck(): LastCustomDeck | null {
+  return readJson(LAST_CUSTOM_DECK_KEY, null, normalizeLastCustomDeck);
+}
+
+/** The saved values still known to `all`, or null when none survive (a group can't be empty). */
+function knownValues<T>(saved: unknown, all: readonly T[]): T[] | null {
+  if (!Array.isArray(saved)) return null;
+  const kept = all.filter((value) => saved.includes(value));
+  return kept.length > 0 ? kept : null;
+}
+
+function normalizeLastCustomDeck(raw: unknown): LastCustomDeck | null {
+  const parsed = raw as Partial<LastCustomDeck> | null;
+  const s = (parsed?.settings ?? {}) as Partial<DeckSettings>;
+  const difficulties = knownValues(s.selectedDifficulties, ALL_DIFFICULTIES);
+  const categories = knownValues(s.selectedCategories, ALL_CATEGORIES);
+  const eras = knownValues(s.selectedEras, ALL_ERAS);
+  const regions = knownValues(s.selectedRegions, ALL_REGIONS);
+  if (!difficulties || !categories || !eras || !regions) return null;
+  if (!Number.isFinite(s.playerCount) || !Number.isFinite(s.suddenDeathHandSize)) return null;
+  return {
+    settings: {
+      selectedDifficulties: difficulties,
+      selectedCategories: categories,
+      selectedEras: eras,
+      selectedRegions: regions,
+      excludedCountries: Array.isArray(s.excludedCountries)
+        ? s.excludedCountries.filter((pair) => typeof pair === 'string')
+        : [],
+      playerCount: s.playerCount as number,
+      suddenDeathHandSize: s.suddenDeathHandSize as number,
+    },
+    eventName: typeof parsed?.eventName === 'string' ? parsed.eventName : null,
+  };
 }

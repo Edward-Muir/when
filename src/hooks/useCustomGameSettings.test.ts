@@ -1,7 +1,7 @@
 import { act, renderHook } from '@testing-library/react';
 import { useCustomGameSettings } from './useCustomGameSettings';
 import { legacyPicksToExclusions } from '../utils/countrySelection';
-import { getCustomSettings } from '../utils/playerStorage';
+import { getCustomSettings, getLastCustomDeck } from '../utils/playerStorage';
 import { ALL_ERAS } from '../utils/eras';
 import { HistoricalEvent } from '../types';
 
@@ -78,5 +78,27 @@ describe('useCustomGameSettings', () => {
     act(() => result.current.panelProps.setSelectedCategories(['art']));
     expect(getCustomSettings()?.selectedCategories).toEqual(['art']);
     expect(getCustomSettings()?.selectedEras).toEqual(['ancient']);
+  });
+
+  /**
+   * Play records the deck for the Last deck tile (`when-last-custom-deck`), with the starting
+   * card the game is about to deal; nothing else does.
+   */
+  it('records the last deck, with its starting card, when Play builds the game', () => {
+    const { result } = renderHook(() => useCustomGameSettings(events));
+    expect(getLastCustomDeck()).toBeNull();
+    act(() => result.current.panelProps.setSelectedDifficulties(['medium']));
+
+    const config = result.current.startFromPlay();
+    expect(config.mode).toBe('suddenDeath');
+    expect(config.selectedDifficulties).toEqual(['medium']);
+
+    const last = getLastCustomDeck();
+    expect(last?.settings.selectedDifficulties).toEqual(['medium']);
+    expect(last?.settings.suddenDeathHandSize).toBe(5);
+    expect(events.map((e) => e.name)).toContain(last?.eventName);
+
+    // A fresh seed every time, like any new game.
+    expect(result.current.startFromPlay().challengeCode).not.toBe(config.challengeCode);
   });
 });

@@ -62,12 +62,12 @@ says: for "how does X work", read the source.
   centred from 1024px, and the open items (no breakpoint above `sm:` elsewhere player-facing),
   with measured symptoms and a sequenced fix list
 - [navigation-review/](navigation-review/index.md) — a review of everything outside the
-  drag-and-place loop: the six pieces of work chosen from it (leaving a Daily, system Back,
-  haptics, the end-of-game sequence, a labelled tab bar, Custom on one screen), each with its
-  spec and the decisions it must not undo, plus the findings raised and not chosen
+  drag-and-place loop: where the six pieces of work chosen from it now live (leaving a Daily,
+  system Back, haptics, the end-of-game sequence, a labelled tab bar, Custom on one screen,
+  all built), how it was run, and the findings raised and not chosen
 - [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, the
-  one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), Custom settings, and
-  the service-worker dev-loop trap
+  one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), the Custom tab (Quick
+  decks, folded filter rows, the share popup), and the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
   ship instantly), safe-area utilities, daily reminders, and how the icon, splash and App Store
   screenshots are generated

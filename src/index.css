@@ -124,6 +124,19 @@ body {
   }
 }
 
+/* The Custom tab's folded filter rows (`FilterControls` with `collapsible`). The frame and the
+   hairlines between rows are box-shadows, not borders, because they take no layout: four 1px
+   dividers and a 2px frame are the margin by which the folded tab fits a 375x667 phone without
+   scrolling. Each row's own 44px tap target is untouched. */
+@layer utilities {
+  .fold-list {
+    box-shadow: inset 0 0 0 1px var(--color-border);
+  }
+  .fold-list > * + * {
+    box-shadow: inset 0 1px 0 var(--color-border);
+  }
+}
+
 /* The "Did you know?" box in a curated theme's intro (`ThemeIntroPopup.tsx`). Same trap as
    `.bg-player-row`, so the gold is mixed into the surface rather than written `bg-accent/10`. */
 @layer utilities {

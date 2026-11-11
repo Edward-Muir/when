@@ -18,7 +18,10 @@ import {
   markNavSeen,
   markNavUnseen,
   armNavOnce,
+  getLastCustomDeck,
+  saveLastCustomDeck,
 } from './playerStorage';
+import { DEFAULT_DECK_SETTINGS } from './customDeck';
 
 const ALL_KEYS: HintKey[] = [
   'drag',
@@ -117,6 +120,41 @@ describe('custom settings storage', () => {
     expect(getCustomSettings()?.excludedCountries).toBeUndefined();
     saveCustomSettings({ ...saved, excludedCountries: ['Europe|Germany'] });
     expect(getCustomSettings()?.excludedCountries).toEqual(['Europe|Germany']);
+  });
+});
+
+describe('last custom deck storage', () => {
+  const science = { ...DEFAULT_DECK_SETTINGS, selectedCategories: ['science' as const] };
+
+  it('is empty on a fresh install', () => {
+    expect(getLastCustomDeck()).toBeNull();
+  });
+
+  it('round-trips the settings and the starting card, under its own key', () => {
+    saveLastCustomDeck({ settings: science, eventName: 'x-rays-discovered' });
+    expect(getLastCustomDeck()).toEqual({ settings: science, eventName: 'x-rays-discovered' });
+    expect(localStorage.getItem('when-last-custom-deck')).not.toBeNull();
+    expect(getCustomSettings()).toBeNull();
+  });
+
+  it('drops values no longer offered, and the record once a group would be empty', () => {
+    const stale = { ...science, selectedCategories: ['science', 'alchemy'] };
+    localStorage.setItem(
+      'when-last-custom-deck',
+      JSON.stringify({ settings: stale, eventName: 'x-rays-discovered' })
+    );
+    expect(getLastCustomDeck()?.settings.selectedCategories).toEqual(['science']);
+
+    const gone = { ...science, selectedCategories: ['alchemy'] };
+    localStorage.setItem('when-last-custom-deck', JSON.stringify({ settings: gone }));
+    expect(getLastCustomDeck()).toBeNull();
+  });
+
+  it('reads junk as no last deck', () => {
+    localStorage.setItem('when-last-custom-deck', '"oops"');
+    expect(getLastCustomDeck()).toBeNull();
+    localStorage.setItem('when-last-custom-deck', '{not json');
+    expect(getLastCustomDeck()).toBeNull();
   });
 });
 
