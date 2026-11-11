@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import { RefreshCw } from 'lucide-react';
 import { HistoricalEvent, Player } from '../types';
 import { GameHintKey } from '../utils/playerStorage';
@@ -26,13 +28,18 @@ const FAN_STEP_DEG = 1.25;
  * Where a card `depth` places behind the top card sits. Deeper cards are dimmer, never more
  * transparent: a see-through square shows the title of the card under it through its own.
  */
-function fanStyle(depth: number): React.CSSProperties {
+function fanPose(depth: number) {
   return {
-    transform: `translateX(${depth * FAN_STEP_PX}px) rotate(${depth * FAN_STEP_DEG}deg)`,
+    x: depth * FAN_STEP_PX,
+    rotate: depth * FAN_STEP_DEG,
     filter: `brightness(${1 - depth * 0.1})`,
-    zIndex: MAX_FAN_CARDS - 1 - depth,
+    opacity: 1,
   };
 }
+
+/** A swap, as the cards show it: each steps forward a place, in about this long. */
+const SHUFFLE = { duration: 0.18, ease: [0.2, 0.8, 0.2, 1] as [number, number, number, number] };
+const STILL = { duration: 0 };
 
 interface ActiveCardDisplayProps {
   activeCard: HistoricalEvent;
@@ -59,9 +66,26 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   // Filled gold and glowing with the same animation as the Daily Play button (swell +
   // brightness, never opacity), so the strip's "swap" has something to point at.
   const cycleNudge = nudge === 'swap';
+  // The darker fill is for a press, and for a pointer that can hover. A bare `hover:` sticks
+  // on a touch screen: the tap leaves `:hover` set until something else is touched, and the
+  // button looks held down for good.
   const cycleNudgeClass = cycleNudge
-    ? 'animate-hint-glow bg-accent border-accent hover:bg-accent'
-    : 'bg-surface border-border hover:bg-border';
+    ? 'animate-hint-glow bg-accent border-accent'
+    : 'bg-surface border-border active:bg-border [@media(hover:hover)]:hover:bg-border';
+  const reduceMotion = useReducedMotion();
+  const shuffle = reduceMotion ? STILL : SHUFFLE;
+  // Half a turn of the arrows per swap, always the same way round.
+  const [turns, setTurns] = useState(0);
+  // Nothing animates in on the first paint of a hand: the cards are simply there.
+  const settled = useRef(false);
+  useEffect(() => {
+    settled.current = true;
+  }, []);
+  const cycle = () => {
+    if (!canCycle) return;
+    if (!reduceMotion) setTurns((t) => t + 1);
+    onCycleHand();
+  };
   const cardNudgeClass = topCardNudgeClass(nudge);
   const fanned = currentPlayer.hand.slice(1, MAX_FAN_CARDS);
 
@@ -71,49 +95,64 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           deepest card reaches 24px right and its rotated corner a few more. */}
       <div className="flex items-center gap-10">
         <div className="relative flex items-center">
-          {/* The rest of the hand, peeking out behind the top card: deepest first, so each
-              card paints over the one behind it. */}
-          {fanned
-            .map((event, i) => ({ event, depth: i + 1 }))
-            .reverse()
-            .map(({ event, depth }) => (
-              <div
-                key={event.name}
-                data-hand-fan={depth}
-                className="absolute pointer-events-none"
-                style={fanStyle(depth)}
-              >
-                {/* Always on screen, so nothing for lazy loading to defer */}
-                <Card event={event} size="square" priority />
-              </div>
-            ))}
+          {/* The rest of the hand, peeking out behind the top card. Keyed by card, so on a swap
+              each one glides forward a place; the card that was on top fades in at the back. */}
+          {fanned.map((event, i) => (
+            <motion.div
+              key={event.name}
+              data-hand-fan={i + 1}
+              className="absolute pointer-events-none"
+              style={{ zIndex: MAX_FAN_CARDS - 2 - i }}
+              initial={settled.current ? { ...fanPose(i + 1), opacity: 0 } : false}
+              animate={fanPose(i + 1)}
+              transition={shuffle}
+            >
+              {/* Always on screen, so nothing for lazy loading to defer */}
+              <Card event={event} size="square" priority />
+            </motion.div>
+          ))}
 
-          {/* Top card (active, draggable). The bob goes on this wrapper, not the drag
-              handle: dnd-kit measures the activator node. */}
+          {/* Top card (active, draggable). The hint's bob goes on this wrapper, not the drag
+              handle: dnd-kit measures the activator node. The shuffle goes on a wrapper of its
+              own inside it, because the hint animates this one's transform in CSS. */}
           <div className={`relative z-[5] ${cardNudgeClass}`}>
-            <DraggableCard
-              event={activeCard}
-              onTap={onCardTap}
-              disabled={isAnimating}
-              isHidden={isAnimating}
-              size="square"
-              priority
-            />
+            <motion.div
+              key={activeCard.name}
+              initial={settled.current ? { x: FAN_STEP_PX, rotate: FAN_STEP_DEG } : false}
+              animate={{ x: 0, rotate: 0 }}
+              transition={shuffle}
+            >
+              <DraggableCard
+                event={activeCard}
+                onTap={onCardTap}
+                disabled={isAnimating}
+                isHidden={isAnimating}
+                size="square"
+                priority
+              />
+            </motion.div>
           </div>
         </div>
 
         {/* Swap button: beside the card, never on it, so it covers neither art nor title.
             44px, the minimum touch target. */}
         <button
-          onClick={() => canCycle && onCycleHand()}
+          onClick={cycle}
           disabled={!canCycle}
           className={`w-11 h-11 min-w-11 min-h-11 shrink-0 rounded-full
             border shadow-sm flex items-center justify-center
             disabled:opacity-40 disabled:cursor-not-allowed
-            active:scale-95 transition-all ${cycleNudgeClass}`}
+            active:scale-[0.92] active:shadow-none
+            transition-[transform,background-color,box-shadow] duration-100 ${cycleNudgeClass}`}
           aria-label="Cycle to next card"
         >
-          <RefreshCw className={`w-5 h-5 ${cycleNudge ? 'text-white' : 'text-text'}`} />
+          <motion.span
+            className="flex"
+            animate={{ rotate: turns * 180 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+          >
+            <RefreshCw className={`w-5 h-5 ${cycleNudge ? 'text-white' : 'text-text'}`} />
+          </motion.span>
         </button>
       </div>
     </div>

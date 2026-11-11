@@ -189,6 +189,15 @@ unchanged, so the hand and the board show the same card in two shapes.
   overlay is that card, and a ghost left behind shows the next card's title through it.
 - **The fanned cards are dimmed with `brightness`, never opacity.** Translucent squares show
   the title underneath through their own.
+- **The swap button's darker fill is `active:` plus a hover guarded by `@media (hover: hover)`.**
+  A bare `hover:bg-border` sticks on a touch screen: the tap leaves `:hover` set until something
+  else is touched, and a button tapped repeatedly looks held down for good. About 50 other
+  buttons still carry the bare form; Tailwind's `hoverOnlyWhenSupported` would fix them all.
+- **A swap is shown in the cards and on the button.** The fanned cards are keyed by card and
+  animate to their pose, so each steps forward a place; the new top card eases in from the
+  first fan position and the old one fades in at the back; the button's arrows turn half a
+  circle. The top card's shuffle wrapper sits inside the hint wrapper, whose transform the
+  onboarding hints animate in CSS. Reduced motion gets none of it.
 - **The swap button sits beside the stack, 44px**, 40px from the top card so it clears the fan. On the card it covered art
   or title, whichever corner it took.
 - **The hand bar is `.hand-bar`: 184px plus the bottom safe-area inset**, up from 120px, and only
