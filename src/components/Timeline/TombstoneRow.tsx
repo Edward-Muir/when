@@ -133,6 +133,9 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
               projection transform that would block the slide-right animation */}
           <motion.button
             key={revealing ? 'reveal' : 'rest'}
+            // Read by the game-over gallery only (`useGalleryTravel`). Not one of the
+            // `data-timeline-*` attributes, so placement and drag maths still cannot see it.
+            data-board-card={event.name}
             onClick={onTap}
             layoutId={revealing && !shouldReduceMotion ? `placed-${event.name}` : undefined}
             initial={false}

@@ -128,6 +128,56 @@ body {
   }
 }
 
+/* The game-over gallery (`components/gameOver/`).
+   - `.board-away` / `.board-back`: the board steps back while the game-over popup is up, since
+     its cards have travelled into the popup. Set by `boardAreaClass` in Game.tsx.
+   - `.gallery-gilt`: the gold frame of a Perfect Clear. An inset shadow on the grid's 3px mat,
+     so it needs no colour with an alpha channel.
+   - `.gallery-pip`: marks the starting card, which is on the timeline but not in the score.
+   - `.gallery-caption`: the score and everything under it, held back until the grid has formed.
+     A CSS transition on purpose: framer-motion would run this opacity on the browser's
+     animation engine, which is the Android WebView flicker in docs/mobile-ios/index.md. */
+@layer utilities {
+  .board-away {
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+  }
+  .board-back {
+    transition: opacity 250ms ease-out;
+  }
+  .gallery-gilt {
+    box-shadow: inset 0 0 0 3px var(--color-accent);
+  }
+  .gallery-pip {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 9999px;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 0 1.5px rgb(255 255 255 / 0.85);
+  }
+  .gallery-caption {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  .gallery-caption.is-in {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 300ms ease-out,
+      transform 300ms ease-out;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .board-away,
+    .board-back,
+    .gallery-caption.is-in {
+      transition: none;
+    }
+  }
+}
+
 /* Stats page fills. Same trap as `.bg-player-row` above: `bg-accent/70` would compile to
    nothing, so the calendar and score bars mix the accent into the surface here. */
 @layer utilities {

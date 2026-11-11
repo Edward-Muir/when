@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "The end of a game now gathers the timeline into a gallery of its paintings.",
+    "A shared result now shows every painting on the timeline as a collage."
+  ],
   "releases": [
     {
       "version": "1.38.0",

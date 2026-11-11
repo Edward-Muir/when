@@ -150,9 +150,14 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   Oct"; today's is "Play <theme>, today"). The line reads "Missed", "High score: N" (or
   "N/M" on a curated day), "Played", "Today's challenge" or "Replay tomorrow". A row's art
   fills in one day per task after the tab opens, so wait before screenshotting it.
-- **Game over:** a Custom game shows **Restart** and **Home**. The daily shows Today's
-  Leaderboard and a name input pre-filled with a random name, with **Submit to
-  Leaderboard**, then a share step.
+- **Game over:** the popup is a gallery, `[data-testid="gallery-grid"]`, one
+  `[data-gallery-tile]` per card in date order (`placed`, `seed` or `missed`). The cards fly in
+  from the board for about 1.4 s, in `[data-testid="gallery-flight"]` on `body`; the score and
+  everything under it appear only after they land, so **wait about 2 s before reading or
+  screenshotting it**. `reducedMotion: 'reduce'` skips the flight. The board behind is hidden
+  (`.board-away`) until the popup closes. A Custom game shows **Restart** and **Home** in the
+  bottom bar. The daily shows Today's Leaderboard and a name input pre-filled with a random
+  name, with **Submit to Leaderboard**, then a share step.
 - **Leaderboard submit (at game over):** `input[placeholder*="name" i]` (maxlength
   20, pre-filled with a random name — clear it first), then the button matching
   `/submit to leaderboard/i`.

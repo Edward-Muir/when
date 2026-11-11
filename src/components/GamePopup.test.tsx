@@ -164,15 +164,33 @@ describe('dismissal', () => {
 
 /**
  * A curated theme is small enough to finish: the deck runs dry, the hand empties without five
- * misses, and that ending is a win. A single player never has a `winner`, so the title and the
- * trophy both come from `getThemeOutcome`.
+ * misses, and that ending is a win. A single player never has a `winner`, so the heading comes
+ * from `getThemeOutcome`. The screen itself is `GameOverGallery`, which has its own suite; this
+ * one pins what `GamePopup` decides: which ending it is, and how the popup may be left.
  */
 describe('game over', () => {
+  const at = (year: number): HistoricalEvent => ({
+    ...event,
+    name: `event-${year}`,
+    friendly_name: `Event ${year}`,
+    year,
+  });
+
   const finished = (correct: number, misses: number, curatedThemeId?: string): WhenGameState => {
     const placementHistory = [...Array(correct).fill(true), ...Array(misses).fill(false)];
+    // The starting card, then one card per correct placement.
+    const timeline = Array.from({ length: correct + 1 }, (_, i) => at(1000 + i * 10));
     return {
       gameMode: 'suddenDeath',
       lastConfig: { mode: 'suddenDeath', suddenDeathHandSize: 5, curatedThemeId },
+      timeline,
+      seedEventName: timeline[0].name,
+      deck: [],
+      failedPlacements: Array.from({ length: misses }, (_, i) => ({
+        event: at(1005 + i * 10),
+        attemptedPosition: 0,
+        seq: i,
+      })),
       players: [
         {
           id: 0,
@@ -189,32 +207,55 @@ describe('game over', () => {
     } as unknown as WhenGameState;
   };
 
-  const renderGameOver = (gameState: WhenGameState) =>
-    render(<GamePopup type="gameOver" event={null} gameState={gameState} onDismiss={jest.fn()} />);
-  const trophy = () => screen.getByTestId('game-over-trophy');
+  const renderGameOver = (
+    gameState: WhenGameState,
+    props: Partial<React.ComponentProps<typeof GamePopup>> = {}
+  ) => {
+    const onDismiss = jest.fn();
+    render(
+      <GamePopup
+        type="gameOver"
+        event={null}
+        gameState={gameState}
+        onDismiss={onDismiss}
+        {...props}
+      />
+    );
+    return { onDismiss };
+  };
+  const grid = () => screen.getByTestId('gallery-grid');
 
-  it('reads Theme Cleared! with a gold trophy when a curated deck runs dry', () => {
+  it('reads Theme Cleared! when a curated deck runs dry', () => {
     renderGameOver(finished(28, 2, 'test-theme'));
-    expect(screen.getByText('Theme Cleared!')).toBeInTheDocument();
-    expect(trophy()).toHaveClass('text-accent');
+    expect(screen.getByRole('heading', { name: 'Theme Cleared!' })).not.toHaveClass('sr-only');
+    expect(grid()).not.toHaveAttribute('data-gilt');
   });
 
-  it('reads Perfect Clear! when the deck ran dry without a miss', () => {
+  it('reads Perfect Clear! in a gold frame when the deck ran dry without a miss', () => {
     renderGameOver(finished(30, 0, 'test-theme'));
-    expect(screen.getByText('Perfect Clear!')).toBeInTheDocument();
-    expect(trophy()).toHaveClass('text-accent');
+    expect(screen.getByRole('heading', { name: 'Perfect Clear!' })).not.toHaveClass('sr-only');
+    expect(grid()).toHaveAttribute('data-gilt');
   });
 
-  it('reads Game Over with a muted trophy when misses emptied the hand', () => {
+  it('names the dialog Game Over, without showing the words, when misses emptied the hand', () => {
     renderGameOver(finished(20, 5, 'test-theme'));
-    expect(screen.getByText('Game Over')).toBeInTheDocument();
-    expect(trophy()).toHaveClass('text-text-muted');
+    expect(screen.getByRole('dialog', { name: 'Game Over' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Game Over' })).toHaveClass('sr-only');
+    expect(grid()).not.toHaveAttribute('data-gilt');
   });
 
   it('never calls a Custom game a win, even one that ran dry', () => {
     renderGameOver(finished(12, 2));
-    expect(screen.getByText('Game Over')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Game Over' })).toHaveClass('sr-only');
     expect(screen.queryByText(/won|cleared/i)).toBeNull();
-    expect(trophy()).toHaveClass('text-text-muted');
+    expect(grid()).not.toHaveAttribute('data-gilt');
+  });
+
+  it('advances on a tap anywhere when there is nothing to submit', () => {
+    const { onDismiss } = renderGameOver(finished(3, 5));
+    expect(screen.getByText('Tap to continue')).toBeInTheDocument();
+
+    userEvent.click(card());
+    expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 });

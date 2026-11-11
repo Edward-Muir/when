@@ -242,8 +242,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       todayResult.correctCount,
       {
         leaderboardRank: todayResult.leaderboardRank,
-        // Today's seed card — already face-up on this screen, so no spoiler.
+        // Today's seed card, already face-up on this screen, and the board the game ended
+        // on, which the share draws as a shuffled collage (see `shareTiles`).
         seedEvent: previewEvent,
+        timeline: reviewBoard?.timeline,
       }
     );
     if (showToast) {
