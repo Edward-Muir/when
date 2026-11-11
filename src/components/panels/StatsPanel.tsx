@@ -6,8 +6,8 @@ import {
   Layers,
   Library,
   Medal,
-  Ruler,
   TrendingUp,
+  Trophy,
   Zap,
 } from 'lucide-react';
 import { loadAllEvents, getCachedEvents } from '../../utils/eventLoader';
@@ -109,9 +109,9 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
         <StatCard>
           <div className="grid grid-cols-2 gap-x-3 gap-y-4">
             <StatRow
-              icon={<Ruler className={iconClass} />}
-              value={records.longestTimeline}
-              label="Longest timeline"
+              icon={<Trophy className={iconClass} />}
+              value={records.bestScore}
+              label="Best score"
             />
             <StatRow
               icon={<Zap className={iconClass} />}
@@ -165,8 +165,8 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
             />
             <StatRow
               icon={<TrendingUp className={iconClass} />}
-              value={totals.averageTimeline ?? '—'}
-              label="Average timeline"
+              value={totals.averageScore ?? '—'}
+              label="Average score"
             />
           </div>
           {lifetime.firstPlayedDate && (
@@ -189,7 +189,11 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
                   / {totalEvents ? totalEvents.toLocaleString() : '…'}
                 </span>
               </div>
-              <div className="font-body text-sm text-text-muted">Events collected</div>
+              {/* The whole catalogue, so it can exceed what any Custom deck deals: see the
+                  stats-achievements digest on counts. */}
+              <div className="font-body text-sm text-text-muted">
+                Events collected, of every card
+              </div>
             </div>
           </div>
           <div className="h-2 w-full overflow-hidden rounded-full bg-bg">

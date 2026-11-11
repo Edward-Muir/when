@@ -9,8 +9,13 @@ and [stats-achievements](../stats-achievements/index.md), less the two parts lis
 [ui-redesign](../ui-redesign/index.md#home-is-a-five-tab-pager); item 6, Custom on one screen
 (Quick decks, folded filter rows, Share beside Play), lives in
 [ui-redesign](../ui-redesign/index.md#custom-settings-screen), less the country-search fix,
-which was dropped. This file now holds how the review was run and the findings that were raised
-but not chosen, written so a fresh session can pick any of them up cold.
+which was dropped. Three of the bugs it raised were fixed afterwards: the Stats calendar that
+blocked the pager swipe and the counts that disagreed (both in
+[stats-achievements](../stats-achievements/index.md#stats-page)), and a reload during a Custom
+game losing it, which now resumes it
+([ui-redesign](../ui-redesign/index.md#leaving-a-game)). This file now holds how the review was
+run and the findings that were raised but not chosen, written so a fresh session can pick any of
+them up cold.
 
 The sketches (phone frames, today beside the proposal) are published at
 <https://claude.ai/artifact/A3L9L8v4h2oEvwkVAimJpT>. The page is private to its owner; a
@@ -43,13 +48,7 @@ item 6 and turned down. The single tap stays a toggle.
 
 Bugs:
 
-- The Stats calendar blocks the pager swipe even when it has nothing to scroll (measured at
-  308px of content in 308px). It carries `overflow-x: auto` and `overscroll-x-contain`
-  unconditionally.
-- Counts disagree in small ways: Stats shows "Longest timeline 15" beside "Best daily score 14"
-  for one game, and Custom says "6423 events" where Stats says "6,426".
 - The art for "Four Colour Theorem Proved" has a white mat baked into the image.
-- A reload during a Custom game loses it, for the same reason Back does.
 - Opening the portrait picker from the game-over submit form marks the game's new portraits as
   seen before the achievements step has shown them, so the Profile dot and the "New" tags never
   appear. Left out of item 4 when the rest of it was built.

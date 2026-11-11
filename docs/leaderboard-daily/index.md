@@ -76,7 +76,8 @@ second submission.
 
 `src/utils/dailyProgress.ts` keeps the game in `when-daily-progress` (one date-stamped slot,
 slugs only, the `dailyBoard.ts` shape), and the Daily card's button reads "Resume Daily
-Challenge" while it exists. Three decisions:
+Challenge" while it exists. Its board half, `BoardProgress`, is shared with the practice game's
+slot ([ui-redesign](../ui-redesign/index.md#leaving-a-game)). Three decisions:
 
 - **A move is saved when the card is dropped, not when its animation settles.** A miss shows
   the card's true slot about a second before the state settles, so saving on settle would let a

@@ -28,6 +28,8 @@ import {
 } from '../utils/curatedThemes';
 import { buildThemeReplayDeck, withFreshReplaySeed } from '../utils/themeReplay';
 import { resumeDailyProgress, saveDailyPlacement } from '../utils/dailyProgress';
+import { resumePracticeProgress, savePracticePlacement } from '../utils/practiceProgress';
+import { usePracticeProgress } from './usePracticeProgress';
 import {
   validatePlacement,
   calculatePlacementResult,
@@ -51,6 +53,12 @@ interface UseWhenGameReturn {
   cycleHand: () => void;
   resetGame: () => void;
   restartGame: (options?: StartOptions) => void;
+  /**
+   * Land straight back in the saved practice game, if there is one that still deals
+   * (`utils/practiceProgress.ts`); only a save of `challengeCode` when one is given. False to
+   * carry on as if there were none.
+   */
+  resumePracticeGame: (challengeCode?: string) => boolean;
   /** Bumped on every deal, so the board can remount on a restart that skips the intro. */
   gameKey: number;
   /** Reopen a finished board for reading (`utils/dailyBoard.ts`), without replaying it. */
@@ -227,6 +235,7 @@ export function useWhenGame(): UseWhenGameReturn {
   }, []);
 
   useSaveDailyResult(state);
+  usePracticeProgress(state);
 
   // Record every finished game into stats, unlocking achievements and detecting personal bests.
   const { newlyUnlockedAchievements, gameMilestones } = useGameStatsRecorder(state, allEvents);
@@ -339,6 +348,7 @@ export function useWhenGame(): UseWhenGameReturn {
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
       saveDailyPlacement(state, activeCard, insertionIndex, result, difficultyIndex);
+      savePracticePlacement(state, activeCard, insertionIndex, result, difficultyIndex);
 
       // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
       // the tombstone reveal + miss banner instead of a blocking popup.
@@ -465,6 +475,20 @@ export function useWhenGame(): UseWhenGameReturn {
     });
   }, [state.isAnimating, state.phase]);
 
+  // No intro and no new deal: the board comes back as it was left, straight into play.
+  const resumePracticeGame = useCallback(
+    (challengeCode?: string) => {
+      const resumed = resumePracticeProgress((c) => composeDeck(c, allEvents), challengeCode);
+      if (!resumed) return false;
+      dealRef.current += 1;
+      setGameKey((k) => k + 1);
+      setPendingPopupState({ popup: null, pendingStateUpdate: null });
+      setState(resumed);
+      return true;
+    },
+    [allEvents]
+  );
+
   const completeTransition = useCallback(() => {
     setState((prev) => {
       if (prev.phase !== 'transitioning') return prev;
@@ -545,6 +569,7 @@ export function useWhenGame(): UseWhenGameReturn {
     cycleHand,
     resetGame,
     restartGame,
+    resumePracticeGame,
     gameKey,
     enterReview,
     modalEvent,

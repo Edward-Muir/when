@@ -80,7 +80,7 @@ const FilterPopup: React.FC<FilterPopupProps> = ({
         <div className="flex justify-between text-sm text-text-muted font-body">
           <span>Showing:</span>
           <span className={filteredCount === 0 ? 'text-error font-medium' : ''}>
-            {filteredCount} of {totalCount} events
+            {filteredCount.toLocaleString()} of {totalCount.toLocaleString()} events
           </span>
         </div>
         {filteredCount === 0 && (

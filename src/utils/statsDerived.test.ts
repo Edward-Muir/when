@@ -157,7 +157,7 @@ describe('records and lifetime', () => {
     const lifetime = getLifetimeStats();
     const cadence = getDailyCadence();
     expect(recordsFrom(lifetime, cadence)).toEqual({
-      longestTimeline: 0,
+      bestScore: 0,
       bestStreak: 0,
       longestDailyRun: 0,
       bestDailyScore: 0,
@@ -166,7 +166,7 @@ describe('records and lifetime', () => {
       gamesPlayed: 0,
       dailyGames: 0,
       eventsPlaced: 0,
-      averageTimeline: null,
+      averageScore: null,
     });
     expect(dailyAverage(cadence)).toBeNull();
   });
@@ -189,7 +189,7 @@ describe('records and lifetime', () => {
       dailyCorrectSum: 27,
     };
     expect(recordsFrom(lifetime, cadence)).toEqual({
-      longestTimeline: 19,
+      bestScore: 18,
       bestStreak: 11,
       longestDailyRun: 23,
       bestDailyScore: 14,
@@ -198,8 +198,33 @@ describe('records and lifetime', () => {
       gamesPlayed: 4,
       dailyGames: 3,
       eventsPlaced: 31,
-      averageTimeline: 8.8,
+      averageScore: 7.8,
     });
     expect(dailyAverage(cadence)).toBe(9);
+  });
+
+  it('read the best score in events placed, one below the longest timeline', () => {
+    // One daily of 14 placed: a timeline of 15 cards. Both records read 14.
+    const lifetime = {
+      ...getLifetimeStats(),
+      gamesPlayed: { daily: 1, suddenDeath: 0 },
+      timelineLengthSum: { daily: 15, suddenDeath: 0 },
+      longestTimeline: { daily: 15, suddenDeath: 0 },
+      bestGameCorrectEver: 14,
+    };
+    const cadence = { ...getDailyCadence(), playedDates: ['2026-08-01'], bestDailyCorrect: 14 };
+    const records = recordsFrom(lifetime, cadence);
+    expect(records.bestScore).toBe(14);
+    expect(records.bestScore).toBe(records.bestDailyScore);
+    expect(lifetimeFrom(lifetime, cadence).averageScore).toBe(14);
+  });
+
+  it('keep a record only the count holds, or only the timeline holds', () => {
+    const base = getLifetimeStats();
+    const cadence = getDailyCadence();
+    expect(recordsFrom({ ...base, bestGameCorrectEver: 9 }, cadence).bestScore).toBe(9);
+    expect(
+      recordsFrom({ ...base, longestTimeline: { daily: 0, suddenDeath: 13 } }, cadence).bestScore
+    ).toBe(12);
   });
 });

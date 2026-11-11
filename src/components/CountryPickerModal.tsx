@@ -212,7 +212,7 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
           onClick={close}
           className="min-h-[44px] flex-1 rounded-xl bg-accent-secondary px-4 text-sm font-semibold text-white font-body active:scale-95"
         >
-          Done{matchCount !== undefined && ` · ${matchCount} events`}
+          Done{matchCount !== undefined && ` · ${matchCount.toLocaleString()} events`}
         </button>
       </div>
     </Modal>

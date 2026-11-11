@@ -75,7 +75,7 @@ describe('StatsPanel', () => {
     renderPanel();
     expect(screen.getByRole('heading', { level: 1, name: 'Stats' })).toBeInTheDocument();
     expect(screen.getByText("How you've played, day by day")).toBeInTheDocument();
-    expect(screen.getByText('Longest timeline')).toBeInTheDocument();
+    expect(screen.getByText('Best score')).toBeInTheDocument();
     expect(screen.getByText('Games played')).toBeInTheDocument();
     expect(screen.getByText(/of.*unlocked/)).toHaveTextContent(
       `0 of ${ACHIEVEMENTS.length} unlocked`
@@ -87,7 +87,7 @@ describe('StatsPanel', () => {
     ).toBeInTheDocument();
     // Achievements are the last card on the page, after the collection meter.
     const heading = screen.getByRole('heading', { name: 'Achievements' });
-    const meter = screen.getByText('Events collected');
+    const meter = screen.getByText(/^Events collected/);
     expect(meter.compareDocumentPosition(heading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(screen.queryByText(/Playing since/)).toBeNull();
     // No day is lit, and no cell is drawn for the future.

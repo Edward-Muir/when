@@ -224,7 +224,7 @@ const Score: React.FC<{ gameState: WhenGameState; countUp: boolean }> = ({
         {shown}
       </span>
       <span className="text-[17px] text-text-muted">
-        {deckSize > 0 ? `of ${deckSize} ${unit}` : unit}
+        {deckSize > 0 ? `of ${deckSize.toLocaleString()} ${unit}` : unit}
       </span>
     </p>
   );

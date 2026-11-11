@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
@@ -14,6 +14,7 @@ import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
 import { getDailyTheme } from './utils/dailyTheme';
 import { getLocalDateString } from './utils/puzzleDate';
 import { hasPlayedToday } from './utils/playerStorage';
+import { clearPracticeProgress } from './utils/practiceProgress';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
 import { NavDest } from './components/TopBar';
@@ -148,6 +149,7 @@ function App({
     cycleHand,
     resetGame,
     restartGame,
+    resumePracticeGame,
     gameKey,
     enterReview,
     pendingPopup,
@@ -222,6 +224,8 @@ function App({
     if (state.phase !== 'modeSelect') return; // Wait for events to load
 
     hasAutoStarted.current = true;
+    // `/daily` asks for the Daily, so a practice game saved by a reload gives way to it.
+    clearPracticeProgress();
 
     if (hasPlayedToday()) {
       onNavigateHome?.();
@@ -238,11 +242,24 @@ function App({
     if (state.phase !== 'modeSelect') return; // Wait for events to load
 
     hasAutoStartedChallenge.current = true;
+    // A reload of the link being played lands back in it; any other link starts afresh.
+    if (resumePracticeGame(challengeCode)) return;
     const gameConfig = challengeConfigToGameConfig(autoStartChallenge);
     gameConfig.challengeCode = challengeCode;
     gameConfig.challengeSeed = challengeCode;
     startGame(gameConfig);
-  }, [autoStartChallenge, challengeCode, state.phase, startGame]);
+  }, [autoStartChallenge, challengeCode, state.phase, startGame, resumePracticeGame]);
+
+  // A home path (`/`, `/custom`, `/archive` ...) lands back in a practice game a reload or an
+  // evicted app left behind (utils/practiceProgress.ts), on whatever tab the URL names. A layout
+  // effect, so Home is never painted between the loading screen and the board.
+  const hasTriedResume = useRef(false);
+  useLayoutEffect(() => {
+    if (autoStartDaily || autoStartChallenge || hasTriedResume.current) return;
+    if (state.phase !== 'modeSelect') return;
+    hasTriedResume.current = true;
+    resumePracticeGame();
+  }, [autoStartDaily, autoStartChallenge, state.phase, resumePracticeGame]);
 
   const handleStart = (config: GameConfig) => {
     startGame(config);
@@ -250,9 +267,13 @@ function App({
 
   // Every way home from a game comes through here, so this is where the game's history entry
   // is consumed. It waits for the pop before navigating: see `leaveGameEntry`.
+  // Leaving drops the practice game's save, as "Leave game?" warns; cleared again once home in
+  // case a placement settled and re-saved while the history entry popped.
   const handlePlayAgain = () => {
+    clearPracticeProgress();
     leaveGameEntry(() => {
       resetGame();
+      clearPracticeProgress();
       onNavigateHome?.();
     });
   };

@@ -159,8 +159,10 @@ both go through it.
 - **A Daily in progress leaves at once**, and Home opens with a "Saved" toast. The Daily is
   saved as it is played and resumes from the Daily card in under a second, so the prompt
   guarded nothing. Same reasoning as Reset Hints: no confirm where nothing is lost.
-- **A Custom or Archive game keeps the confirm.** There the progress really is lost. An
-  Archive day runs as `suddenDeath`, so `gameMode === 'daily'` means today's Daily only.
+- **A Custom or Archive game keeps the confirm.** There the progress really is lost: Leave
+  drops the practice save below. An Archive day runs as `suddenDeath`, so
+  `gameMode === 'daily'` means today's Daily only. Turning practice games into the Daily's
+  "Saved" behaviour would be a product change, not a follow-on of the save.
 - **A finished game and a review board just leave.**
 - **The toast crosses a remount.** Leaving on `/daily` or `/challenge/:code` navigates to `/`,
   which mounts a different `App`, so the notice is module state (`utils/homeNotice.ts`) that
@@ -184,8 +186,36 @@ otherwise leave the app with the game. On Back:
   entry; stepping forward again after the leave lands on a stale `/daily`.
 - Back on the home screen is left to the browser. No native code: the Android WebView's
   default back goes back in history, and old app binaries run this JS.
-- Not handled: a reload during a Custom game still loses it, and the 3 s start transition
-  absorbs Back without acting.
+- Not handled: the 3 s start transition absorbs Back without acting.
+
+**A reload keeps a practice game.** Closing the tab, reloading, or iOS evicting the WebView is
+the one way out of a Custom, Quick deck, Archive, theme-replay or challenge-link game that keeps
+it (`utils/practiceProgress.ts`, `hooks/usePracticeProgress.ts`). It is the Daily's resume with
+the date stamp swapped for the whole config:
+
+- **One slot, `when-practice-progress`, the Daily's board shape** (`BoardProgress` in
+  `dailyProgress.ts`) plus `lastConfig`. Every practice deck is seeded (a Custom game's code, a
+  replay's fresh seed, an Archive day's date), so the config re-composes the deck and only the
+  seen cards are stored. The same seen-cards check drops a save an update has broken, and Home
+  shows as if there were none. Saved at the drop (`savePracticePlacement`) and on every settled
+  `playing` state; single player only.
+- **Cleared** at game over, by `App.handlePlayAgain` (every way home: Leave, the closing card's
+  Home), while any deal's intro plays (so a reload just after Restart cannot bring back the game
+  restarted), and by any game that is not a practice game dealing (a Daily, a multiplayer
+  challenge). A review board touches nothing. A multiplayer game is never saved.
+- **Resume is not a start.** `resumePracticeGame` sets the restored state directly: no intro, no
+  `when-last-custom-deck` write, `lastConfig` intact so Restart, the theme pill, the share and
+  an Archive day's "counts as that day" recording all behave as they would have. Stats see one
+  game, since the recorder only runs on the one `playing` → `gameOver`. A save taken after the
+  final drop resumes as `gameOver` and records then, as the Daily's does.
+- **The URL decides on load.** A home path (`/`, `/custom`, `/archive`, `/stats`, `/timeline`)
+  resumes the save on that tab's route, in a layout effect so Home never paints first.
+  `/challenge/:code` resumes only a save of that same code, and otherwise deals the link, which
+  replaces the save. `/daily` drops the save and starts the Daily, since the URL asked for it.
+  A Daily in progress and a practice save can both exist: the reload resumes the practice game,
+  and the Daily still resumes from its card afterwards.
+- **Back after a resume** needs a tap first, as on `/daily`: no tap has happened since the
+  load, so `useGameBackButton` pushes the game's entry on the first `pointerdown`.
 
 ## Timeline progression: the rail
 

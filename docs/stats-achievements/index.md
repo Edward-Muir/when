@@ -96,7 +96,7 @@ era and difficulty views are derived against the catalogue at read time, never s
 
 `StatsPanel.tsx` + `src/components/stats/`, derivations in `statsDerived.ts`. Mounted only by
 the home pager's Stats tab, which `/stats` opens directly; the pager page owns the scroll
-container, the panel never does. Layout, top to bottom: records card (longest timeline, best
+container, the panel never does. Layout, top to bottom: records card (best score, best
 streak, longest daily run, best daily score), "Your year" calendar, "Daily scores" bars,
 lifetime totals, the collection meter, and last the **Achievements** section.
 
@@ -104,10 +104,28 @@ Decisions, so they are not re-litigated:
 
 - **The calendar is weeks-as-columns with horizontal scroll** (the GitHub look), opened on
   the latest weeks. `overscroll-x-contain` keeps the swipe from chaining into the pager's
-  own horizontal track. It shows played / skipped only, with a star on badge-unlock days and
+  own horizontal track. **Both apply only while the weeks are wider than the box**, measured
+  with a `ResizeObserver` (`useOverflowsX` in `CalendarHeatmap.tsx`): a contained scroller
+  swallows a horizontal swipe even with nothing to scroll, so a calendar that fits was a dead
+  patch the pager could not be swiped from. At 375px the 20-week minimum overflows its 291px
+  box by 8px, so a new player's calendar there still scrolls and still holds the swipe. It shows played / skipped only, with a star on badge-unlock days and
   today outlined; it does not shade by score. **No summary text under
   the grid** — the legend is the only copy.
-- **Score bars use the game-over tiers** (0–2 · 3–4 · 5–7 · 8–11 · 12+, from `GamePopup`)
+- **Every number on the page is in events placed, the score.** "Best score" and "Average
+  score" are derived at read time from the stored timeline lengths (one lower per game, the
+  starting card) and `bestGameCorrectEver`, so they read 14 beside "Best daily score 14" for one
+  game. The page used to show "Longest timeline 15" there. Nothing stored changed, and neither
+  did a milestone or achievement threshold: the "Longest daily timeline · N cards" milestone
+  still counts cards on the timeline, which its unit says.
+- **"Events collected, of every card" is out of the whole playable catalogue**, so it can
+  exceed any Custom deck: an Everything deck deals 3 fewer (6,423 of 6,426 at the time of
+  writing). Those are the events dated outside the era table (`ERA_DEFINITIONS` runs from
+  4,500,000,000 BCE to 2100): Formation of Earth, the Moon-Forming Impact and the God Emperor's
+  Golden Throne (year 30000). No era selects them, so they reach a game only through a curated
+  theme that names them. Widening the era table would close the gap but moves every seeded
+  daily's pool, which `dailyPool.ts` says must never move. Counts of cards are printed with
+  `toLocaleString()` everywhere (Play, the quick decks, the country picker, the gallery's "of
+  N", My Timeline's filter). (0–2 · 3–4 · 5–7 · 8–11 · 12+, from `GamePopup`)
   so the page speaks the game's language; today's tier is the full accent.
 - **No "placement accuracy"**: a daily's mistakes are almost always the hand size (the exception
   is a cleared curated theme), so accuracy is the score restated. **No era coverage strip, no

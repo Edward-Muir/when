@@ -143,6 +143,13 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   icon. Use `.last()` for the icon. Home from a Daily in progress leaves at once and Home shows
   a "Saved" toast for 2 s; from a Custom or Archive game it opens "Leave game?" with **Cancel**
   and **Leave**.
+- **A practice game left mid-way comes back on load.** A Custom, Quick deck, Archive or
+  challenge-link game is saved as it is played (`when-practice-progress`), and any home path
+  (`/`, `/custom`, `/archive` ...) reloads straight into it with no start transition, so a script
+  that `goto`s a tab after a half-played game lands in the game, not on the tab. Leave it
+  through Home then **Leave**, finish it, or
+  `localStorage.removeItem('when-practice-progress')` before the reload. `page.reload()` keeps
+  `localStorage`, which is how a resume is tested. `/daily` drops the save.
 - **`page.goBack()` during a game** closes the top popup or the menu, and otherwise does what
   Home does. Wait ~700 ms after it: the game steps back onto its history entry with
   `history.forward()`, so a second `goBack()` fired at once can leave the app. `/daily` adds

@@ -183,7 +183,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           }`}
         >
           <Play className="w-4 h-4" />
-          Play · {deckCount} events
+          Play · {deckCount.toLocaleString()} events
         </button>
         <button
           onClick={() => setShareOpen(true)}

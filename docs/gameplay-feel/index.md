@@ -217,9 +217,9 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
 - **A miss still draws nothing.** The leaderboard's red-square cap and `themeOutcome.ts`
   depend on that.
 - **The rest of the deck keeps its order.** A pick lifts one card out, so the remaining deck
-  is always the composed deck minus every card seen. Daily resume (`dailyProgress.ts`) rebuilds
-  it that way and checks that the opening deal is the deck's front and that every seen card is
-  within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
+  is always the composed deck minus every card seen. Daily and practice resume
+  (`dailyProgress.ts`, `practiceProgress.ts`) rebuild it that way and check that the opening
+  deal is the deck's front and that every seen card is within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
   reason.
 - **Every drawn card goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`),
   eased or not, so where a card lands never gives away that it was eased. It is played on the
