@@ -23,8 +23,7 @@ import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
 import { warmLeaderboard } from '../hooks/useLeaderboard';
-import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
-import { getCuratedThemeById } from '../utils/curatedThemes';
+import { getThemeNameForConfig } from '../utils/themeReplay';
 import { getLocalDateString } from '../utils/puzzleDate';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
@@ -178,6 +177,18 @@ function bottomBarHeightClass(phase: GamePhase): string {
   return phase === 'gameOver' ? 'h-[120px] sm:h-[140px]' : 'hand-bar';
 }
 
+/**
+ * The board steps back while the game-over popup is up: its cards have travelled into the
+ * popup's gallery, so the rows behind the scrim would show every card twice. It returns when
+ * the popup closes. The classes are in index.css; `GameOverGallery` owns the travel.
+ *
+ * A function for the same reason as the helpers above: `Game` sits on the complexity ceiling.
+ */
+function boardAreaClass(pendingPopup: GamePopupData | null): string {
+  const away = pendingPopup?.type === 'gameOver';
+  return `flex-1 overflow-hidden relative ${away ? 'board-away' : 'board-back'}`;
+}
+
 const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
@@ -261,12 +272,10 @@ const Game: React.FC<GameProps> = ({
 
   // Theme name for the TopBar pill: the deck an Archive replay is of, or the theme of the day
   // being played (today's daily, or a past day from the Archive calendar).
-  const dailyThemeDisplay = useMemo(() => {
-    const replayId = state.lastConfig?.curatedThemeId;
-    if (replayId) return getCuratedThemeById(replayId)?.name;
-    const date = state.lastConfig?.dailySeed ?? state.lastConfig?.dailyReplayDate;
-    return date ? getThemeDisplayName(getDailyTheme(date)) : undefined;
-  }, [state.lastConfig]);
+  const dailyThemeDisplay = useMemo(
+    () => getThemeNameForConfig(state.lastConfig),
+    [state.lastConfig]
+  );
 
   const { setNodeRef: setBottomBarRef } = useDroppable({ id: 'bottom-bar-zone' });
 
@@ -423,7 +432,7 @@ const Game: React.FC<GameProps> = ({
           )}
 
           {/* Main Timeline Area - takes remaining space */}
-          <div className="flex-1 overflow-hidden relative">
+          <div className={boardAreaClass(pendingPopup)}>
             <Timeline
               events={state.timeline}
               onEventTap={showDescriptionPopup}

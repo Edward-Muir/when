@@ -272,6 +272,9 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             the tick grows out of the marker. */}
         <div className={`flex-1 pl-3 ${isNew ? 'animate-entrance' : ''}`}>
           <motion.button
+            // What the game-over gallery measures to fly this card's art from. See
+            // `useGalleryTravel`.
+            data-board-card={event.name}
             onClick={onTap}
             layoutId={layoutId}
             initial={isSuccessAnimation ? springBounce.initial : false}
