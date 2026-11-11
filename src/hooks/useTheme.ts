@@ -14,7 +14,8 @@ export function useTheme() {
         return stored;
       }
       // Fall back to system preference
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      // Guarded: this now runs on every screen (`UpdateNotice`), including under jsdom.
+      if (window.matchMedia?.('(prefers-color-scheme: dark)').matches) {
         return 'dark';
       }
     }

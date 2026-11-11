@@ -1,5 +1,5 @@
 import React from 'react';
-import { act, render, screen, waitFor } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import StatsPanel from './StatsPanel';
@@ -16,9 +16,6 @@ import { addDays, formatWeekdayDate } from '../../utils/statsDerived';
 import { ACHIEVEMENTS } from '../../data/achievements';
 import { loadAllEvents, getCachedEvents } from '../../utils/eventLoader';
 import { preloadEventImages } from '../../utils/preloadImage';
-import { hasSeenHint } from '../../utils/playerStorage';
-import { TAB_HINT_TEXT } from '../../utils/hintCopy';
-import { TAB_HINT_MOUNT_DELAY_MS } from '../../hooks/useTabHint';
 
 jest.mock('../../utils/eventLoader', () => ({
   loadAllEvents: jest.fn(),
@@ -71,10 +68,10 @@ const badgeButton = (id: string) => {
 const today = getLocalDateString();
 
 describe('StatsPanel', () => {
-  it('renders the page header in the shared recipe and zeros for a fresh player', () => {
+  it('renders zeros for a fresh player, and no page heading of its own', () => {
     renderPanel();
-    expect(screen.getByRole('heading', { level: 1, name: 'Stats' })).toBeInTheDocument();
-    expect(screen.getByText("How you've played, day by day")).toBeInTheDocument();
+    // The Settings tab owns the heading and the first-visit hint (SettingsPanel.test.tsx).
+    expect(screen.queryByRole('heading', { level: 1 })).toBeNull();
     expect(screen.getByText('Best score')).toBeInTheDocument();
     expect(screen.getByText('Games played')).toBeInTheDocument();
     expect(screen.getByText(/of.*unlocked/)).toHaveTextContent(
@@ -118,7 +115,7 @@ describe('StatsPanel', () => {
     await userEvent.click(
       screen.getByLabelText(`${formatWeekdayDate(yesterday)}, skipped, badge earned`)
     );
-    // Two live regions on the page: the (empty) first-visit hint and the heatmap readout.
+    // The heatmap readout is the page's live region.
     const readout = screen.getAllByRole('status').find((el) => el.textContent);
     expect(readout).toHaveTextContent(`${formatWeekdayDate(yesterday)} · Skipped · ★ First Steps`);
   });
@@ -197,25 +194,6 @@ describe('StatsPanel', () => {
     await waitFor(() => expect(loadAllEvents).toHaveBeenCalled());
     await new Promise((r) => setTimeout(r, 0));
     expect(preloadEventImages).not.toHaveBeenCalled();
-  });
-
-  it('shows its first-visit hint once on screen, never while pre-mounted', () => {
-    jest.useFakeTimers();
-    try {
-      const { unmount } = renderPanel({ active: false });
-      act(() => jest.advanceTimersByTime(TAB_HINT_MOUNT_DELAY_MS));
-      // The heatmap readout is also a status region; the hint is the empty one.
-      expect(screen.queryByText(TAB_HINT_TEXT.statsTab)).toBeNull();
-      expect(hasSeenHint('statsTab')).toBe(false);
-      unmount();
-
-      renderPanel();
-      act(() => jest.advanceTimersByTime(TAB_HINT_MOUNT_DELAY_MS));
-      expect(screen.getByText(TAB_HINT_TEXT.statsTab)).toBeInTheDocument();
-      expect(hasSeenHint('statsTab')).toBe(true);
-    } finally {
-      jest.useRealTimers();
-    }
   });
 
   it('opens the detail popup for a tapped badge', async () => {

@@ -99,7 +99,7 @@ function buildCardClasses(args: {
 
 /**
  * The one popup shell: backdrop, centered card, enter/exit animation, ESC, and
- * dismissal semantics. Every fullscreen overlay except the Menu drawer renders
+ * dismissal semantics. Every fullscreen overlay renders
  * its content inside this; don't hand-roll another backdrop.
  *
  * Contract: callers keep the component ALWAYS MOUNTED and drive `open` —

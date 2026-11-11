@@ -94,9 +94,10 @@ era and difficulty views are derived against the catalogue at read time, never s
 
 ## Stats page
 
-`StatsPanel.tsx` + `src/components/stats/`, derivations in `statsDerived.ts`. Mounted only by
-the home pager's Stats tab, which `/stats` opens directly; the pager page owns the scroll
-container, the panel never does. Layout, top to bottom: records card (best score, best
+`StatsPanel.tsx` + `src/components/stats/`, derivations in `statsDerived.ts`. It is the stats
+section of the Settings tab (`SettingsPanel.tsx`, which owns the heading and the tab's hint),
+opened by `/settings` or the older `/stats`; the pager page owns the scroll container, the
+panel never does. Layout, top to bottom: records card (best score, best
 streak, longest daily run, best daily score), "Your year" calendar, "Daily scores" bars,
 lifetime totals, the collection meter, and last the **Achievements** section.
 
@@ -142,10 +143,10 @@ Decisions, so they are not re-litigated:
   locked ones. Last on the page so the expanded 60-card grid pushes nothing else down. Two
   rules: **the locked grid is mounted only while expanded** (60 cards of real art mounted
   mid-swipe stall the iOS gesture), and **art is prefetched only for the unlocked badges, and
-  only once the Stats tab is on screen** (`StatsPanel`'s `active` prop; the pager pre-mounts it
+  only once the Settings tab is on screen** (`StatsPanel`'s `active` prop; the pager pre-mounts it
   at idle for every home-screen visitor). Expanding warms the rest. Tapping a badge opens
-  `AchievementDetailPopup`. `/achievements` redirects to `/stats` from `pages/Home.tsx`.
-- The Stats tab's "new" dot is re-armed by `useGameStatsRecorder` on every unlock, so
+  `AchievementDetailPopup`. `/achievements` redirects to `/settings` from `pages/Home.tsx`.
+- The Settings tab's "new" dot (nav key `stats`) is re-armed by `useGameStatsRecorder` on every unlock, so
   the badge you just earned is one tap away.
 
 ## Milestones ("Personal Best" popups)

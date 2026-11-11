@@ -90,7 +90,7 @@ interface HowToPlayModalProps {
  * The rules in text, opened from the menu only. It is never shown unasked: an auto-opened
  * version on the first game was an essay nobody read, and the in-game hint strips
  * (`useOnboardingHints`) teach the same loop at the moment each part matters. On
- * `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu drawer.
+ * `ui/Modal`: keep it mounted and drive `open`.
  */
 const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
   return (

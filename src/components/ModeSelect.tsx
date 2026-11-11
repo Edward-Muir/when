@@ -4,12 +4,19 @@ import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
 import { GameConfig, HistoricalEvent, WhenGameState } from '../types';
 import CustomPanel from './panels/CustomPanel';
-import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import HomeTabBar from './HomeTabBar';
-import { TABS, TabKey, indexForTabKey, tabKeyForIndex } from './homeTabs';
+import {
+  NavDest,
+  TABS,
+  TabKey,
+  indexForTabKey,
+  navForPath,
+  pathForNav,
+  tabKeyForIndex,
+} from './homeTabs';
 import ArchivePanel from './panels/ArchivePanel';
-import StatsPanel from './panels/StatsPanel';
+import SettingsPanel from './panels/SettingsPanel';
 import TimelinePanel from './panels/TimelinePanel';
 import DailyPanel from './panels/DailyPanel';
 import GamePopup from './GamePopup';
@@ -119,7 +126,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const pagerRef = useRef<ModePagerHandle>(null);
   const [activePage, setActivePage] = useState(() => indexForTabKey(initialTab));
   // Daily, Archive and Custom mount immediately, plus whichever tab the page opened on;
-  // Stats and Timeline otherwise wait for a visit or idle.
+  // Timeline and Settings otherwise wait for a visit or idle.
   const [visited, setVisited] = useState<Set<number>>(
     () => new Set((['home', 'archive', 'custom', initialTab] as TabKey[]).map(indexForTabKey))
   );
@@ -270,11 +277,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide overflow-hidden transition-colors"
+      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-home-top overflow-hidden transition-colors"
     >
-      {/* Top bar: Menu only. The five places are the tab bar at the foot. */}
-      <TopBar showTitle={false} toastAboveTabBar />
-
       {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
           Archive, Stats and Timeline panels use their own widths. The children are in `TABS`
           order (`homeTabs.ts`). */}
@@ -316,19 +320,19 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             onQuickDeck={handleQuickDeck}
           />
 
-          {/* Stats page (lazy: mounted once first visited) */}
-          {visited.has(indexForTabKey('stats')) ? (
-            <StatsPanel active={activePage === indexForTabKey('stats')} />
-          ) : (
-            <div />
-          )}
-
           {/* My Timeline page (lazy): the collection, laid out on the game's own timeline */}
           {visited.has(indexForTabKey('timeline')) ? (
             <TimelinePanel
               allEvents={allEvents}
               active={activePage === indexForTabKey('timeline')}
             />
+          ) : (
+            <div />
+          )}
+
+          {/* Settings page (lazy): profile, settings, stats and badges, and the info links */}
+          {visited.has(indexForTabKey('stats')) ? (
+            <SettingsPanel active={activePage === indexForTabKey('stats')} />
           ) : (
             <div />
           )}

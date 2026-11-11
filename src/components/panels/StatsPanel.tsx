@@ -34,9 +34,6 @@ import CalendarHeatmap from '../stats/CalendarHeatmap';
 import ScoreDistribution from '../stats/ScoreDistribution';
 import AchievementsSection from '../stats/AchievementsSection';
 import type { HistoricalEvent } from '../../types';
-import HintStrip from '../HintStrip';
-import { tabHintText } from '../../utils/hintCopy';
-import { useTabHint } from '../../hooks/useTabHint';
 
 const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
 
@@ -49,11 +46,11 @@ interface StatsPanelProps {
 }
 
 /**
- * Stats content panel: records, the year calendar, daily score bars, lifetime totals, the
+ * The stats cards: records, the year calendar, daily score bars, lifetime totals, the
  * collection meter and, last, the achievements — all derived from the localStorage primitives.
- * Mounted by the home-screen pager's Stats tab (which `/stats` opens directly); the pager
- * page owns the scroll container. Everything reads zero-defaults on empty storage, so a
- * fresh player sees clean zeros with no crash.
+ * A section of the Settings tab (`SettingsPanel`), which owns the heading, the tab's hint and
+ * the column. Everything reads zero-defaults on empty storage, so a fresh player sees clean
+ * zeros with no crash.
  *
  * Storage is re-read every render, like the Archive tab: a game just finished writes here
  * and the pager re-renders on return without any of this panel's deps changing. The
@@ -61,7 +58,6 @@ interface StatsPanelProps {
  */
 const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
   const today = useToday();
-  const hint = useTabHint('statsTab', active);
   // The catalogue, for the collection total and the badges' art. Seeded synchronously from
   // the module-level cache (populated during the app's loading phase) so remounts render
   // badge art immediately instead of flashing art-less cards.
@@ -97,120 +93,109 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
   const collectionPct = totalEvents > 0 ? Math.round((collected / totalEvents) * 100) : 0;
 
   return (
-    <div className="mx-auto w-full max-w-sm px-3">
-      {/* Header — the Daily, Custom and Archive pages' heading, so the tabs read alike */}
-      <div className="text-left mb-3">
-        <h1 className="text-5xl font-bold text-text font-display leading-none">Stats</h1>
-        <p className="text-text-muted text-sm mt-1 font-body">How you've played, day by day</p>
-        <HintStrip text={hint.show ? tabHintText('statsTab') : null} onDismiss={hint.dismiss} />
-      </div>
-
-      <div className="flex flex-col gap-3 pb-4">
-        <StatCard>
-          <div className="grid grid-cols-2 gap-x-3 gap-y-4">
-            <StatRow
-              icon={<Trophy className={iconClass} />}
-              value={records.bestScore}
-              label="Best score"
-            />
-            <StatRow
-              icon={<Zap className={iconClass} />}
-              value={records.bestStreak}
-              label="Best streak"
-            />
-            <StatRow
-              icon={<Flame className={iconClass} />}
-              value={records.longestDailyRun}
-              label="Longest daily run"
-            />
-            <StatRow
-              icon={<Medal className={iconClass} />}
-              value={records.bestDailyScore}
-              label="Best daily score"
-            />
-          </div>
-        </StatCard>
-
-        <StatCard>
-          <SectionHeading>Your year</SectionHeading>
-          <CalendarHeatmap model={heatmap} badgeName={badgeName} />
-        </StatCard>
-
-        <StatCard>
-          <SectionHeading>Daily scores</SectionHeading>
-          <ScoreDistribution
-            buckets={buckets}
-            todayCorrect={todayResult?.correctCount}
-            average={dailyAverage(cadence)}
+    <div className="flex flex-col gap-3">
+      <StatCard>
+        <div className="grid grid-cols-2 gap-x-3 gap-y-4">
+          <StatRow
+            icon={<Trophy className={iconClass} />}
+            value={records.bestScore}
+            label="Best score"
           />
-        </StatCard>
+          <StatRow
+            icon={<Zap className={iconClass} />}
+            value={records.bestStreak}
+            label="Best streak"
+          />
+          <StatRow
+            icon={<Flame className={iconClass} />}
+            value={records.longestDailyRun}
+            label="Longest daily run"
+          />
+          <StatRow
+            icon={<Medal className={iconClass} />}
+            value={records.bestDailyScore}
+            label="Best daily score"
+          />
+        </div>
+      </StatCard>
 
-        <StatCard>
-          <SectionHeading>Lifetime</SectionHeading>
-          <div className="grid grid-cols-2 gap-x-3 gap-y-4">
-            <StatRow
-              icon={<Gamepad2 className={iconClass} />}
-              value={totals.gamesPlayed}
-              label="Games played"
-            />
-            <StatRow
-              icon={<CalendarDays className={iconClass} />}
-              value={totals.dailyGames}
-              label="Daily games"
-            />
-            <StatRow
-              icon={<Layers className={iconClass} />}
-              value={totals.eventsPlaced.toLocaleString()}
-              label="Events placed"
-            />
-            <StatRow
-              icon={<TrendingUp className={iconClass} />}
-              value={totals.averageScore ?? '—'}
-              label="Average score"
-            />
-          </div>
-          {lifetime.firstPlayedDate && (
-            <p className="mt-3 font-body text-xs text-text-muted">
-              Playing since {formatShortDate(lifetime.firstPlayedDate)}
-            </p>
-          )}
-        </StatCard>
+      <StatCard>
+        <SectionHeading>Your year</SectionHeading>
+        <CalendarHeatmap model={heatmap} badgeName={badgeName} />
+      </StatCard>
 
-        <StatCard>
-          <div className="mb-2 flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-bg">
-              <Library className={iconClass} />
-            </div>
-            <div className="flex-1">
-              <div className="font-mono text-2xl font-bold text-text">
-                {collected.toLocaleString()}
-                <span className="text-base text-text-muted">
-                  {' '}
-                  / {totalEvents ? totalEvents.toLocaleString() : '…'}
-                </span>
-              </div>
-              {/* The whole catalogue, so it can exceed what any Custom deck deals: see the
-                  stats-achievements digest on counts. */}
-              <div className="font-body text-sm text-text-muted">
-                Events collected, of every card
-              </div>
-            </div>
-          </div>
-          <div className="h-2 w-full overflow-hidden rounded-full bg-bg">
-            <div
-              className="h-full rounded-full bg-accent transition-all"
-              style={{ width: `${collectionPct}%` }}
-            />
-          </div>
-        </StatCard>
-
-        {/* Achievements — last on the page, the expander's card grid below everything else */}
-        <AchievementsSection
-          unlockedMap={achievements.unlocked}
-          eventsByName={eventsByName}
-          active={active}
+      <StatCard>
+        <SectionHeading>Daily scores</SectionHeading>
+        <ScoreDistribution
+          buckets={buckets}
+          todayCorrect={todayResult?.correctCount}
+          average={dailyAverage(cadence)}
         />
-      </div>
+      </StatCard>
+
+      <StatCard>
+        <SectionHeading>Lifetime</SectionHeading>
+        <div className="grid grid-cols-2 gap-x-3 gap-y-4">
+          <StatRow
+            icon={<Gamepad2 className={iconClass} />}
+            value={totals.gamesPlayed}
+            label="Games played"
+          />
+          <StatRow
+            icon={<CalendarDays className={iconClass} />}
+            value={totals.dailyGames}
+            label="Daily games"
+          />
+          <StatRow
+            icon={<Layers className={iconClass} />}
+            value={totals.eventsPlaced.toLocaleString()}
+            label="Events placed"
+          />
+          <StatRow
+            icon={<TrendingUp className={iconClass} />}
+            value={totals.averageScore ?? '—'}
+            label="Average score"
+          />
+        </div>
+        {lifetime.firstPlayedDate && (
+          <p className="mt-3 font-body text-xs text-text-muted">
+            Playing since {formatShortDate(lifetime.firstPlayedDate)}
+          </p>
+        )}
+      </StatCard>
+
+      <StatCard>
+        <div className="mb-2 flex items-center gap-3">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-bg">
+            <Library className={iconClass} />
+          </div>
+          <div className="flex-1">
+            <div className="font-mono text-2xl font-bold text-text">
+              {collected.toLocaleString()}
+              <span className="text-base text-text-muted">
+                {' '}
+                / {totalEvents ? totalEvents.toLocaleString() : '…'}
+              </span>
+            </div>
+            {/* The whole catalogue, so it can exceed what any Custom deck deals: see the
+                  stats-achievements digest on counts. */}
+            <div className="font-body text-sm text-text-muted">Events collected, of every card</div>
+          </div>
+        </div>
+        <div className="h-2 w-full overflow-hidden rounded-full bg-bg">
+          <div
+            className="h-full rounded-full bg-accent transition-all"
+            style={{ width: `${collectionPct}%` }}
+          />
+        </div>
+      </StatCard>
+
+      {/* Achievements — last on the page, the expander's card grid below everything else */}
+      <AchievementsSection
+        unlockedMap={achievements.unlocked}
+        eventsByName={eventsByName}
+        active={active}
+      />
     </div>
   );
 };

@@ -134,8 +134,8 @@ export function restoreDailyBoard(
   });
 
   // `lastConfig` carries the daily seed and the single seated player, which is what lets the
-  // bottom bar's Share reproduce the message the game ended on (`generateShareText`) and the
-  // TopBar name the day's theme. The snapshot only reads back on its own date, so today's
+  // bottom bar's Share reproduce the message the game ended on (`generateShareText`). The
+  // snapshot only reads back on its own date, so today's
   // config is the config this board was played under.
   const lastConfig = buildDailyConfig();
 

@@ -158,7 +158,7 @@ export function asRecordedDaily(state: WhenGameState, playedDates: string[]): Wh
 }
 
 /**
- * Whether a game may be restarted mid-run from the top bar: any practice game. Not today's
+ * Whether a game may be restarted mid-run from the leave prompt: any practice game. Not today's
  * daily, which is played once, and not a missed past day's first run, which `asRecordedDaily`
  * records as that day's daily. Restarting either would reroll a scored result. Once a missed
  * day has been finished it is in `playedDates`, and every later run of it is practice.

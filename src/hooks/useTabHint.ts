@@ -16,7 +16,7 @@ export const TAB_HINT_MOUNT_DELAY_MS = 350;
  * idle-length delay so its nudge, like the in-game drag hint, appears only to a player who
  * has sat there without acting.
  *
- * The menu's "Reset Hints" re-arms it in place, without a reload.
+ * The Settings tab's "Reset Hints" re-arms it in place, without a reload.
  */
 export function useTabHint(
   key: TabHintKey,
@@ -24,7 +24,7 @@ export function useTabHint(
   delayMs: number = TAB_HINT_MOUNT_DELAY_MS
 ): { show: boolean; dismiss: () => void } {
   const [show, setShow] = useState(false);
-  // The menu's "Reset Hints" is reachable from the home screen itself, and the effect below
+  // "Reset Hints" is reachable from the home screen itself, and the effect below
   // reads storage only when its deps change — so without this the reset cleared the keys and
   // nothing re-read them, and the strips stayed away until a reload. Bumping a nonce re-runs
   // the effect, which is the same job `useOnboardingHints` does for the in-game ladder.

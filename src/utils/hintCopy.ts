@@ -30,7 +30,7 @@ export const TAB_HINT_TEXT: Record<TabHintKey, string> = {
   archiveTab: 'Play a day you missed to keep your streak. Gold marks a curated deck.',
   customTab:
     'Build a deck from any eras, regions, categories and difficulty. Wrong placements cost a card; the game ends when your hand is empty.',
-  statsTab: 'Your records, daily scores and badges. Every finished game counts here.',
+  statsTab: 'Your profile, settings, records and badges all live on this tab.',
   timelineTab: 'Every event you place correctly is collected here. Tap the sliders to filter it.',
   reviewEye: 'Tap to view your completed timeline.',
 };

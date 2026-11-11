@@ -31,7 +31,7 @@ function useShownOnce(active: boolean): boolean {
 }
 
 /**
- * Custom tab: the page heading (in the same recipe as the Daily, Archive and Stats tabs),
+ * Custom tab: the page heading (in the same recipe as the Daily, Archive and Settings tabs),
  * the first-visit strip, the Quick decks and the filter rows. The settings state stays in
  * `ModeSelect`, which also builds the game from it; this panel is layout.
  */

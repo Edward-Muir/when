@@ -9,7 +9,7 @@
 export const Z_LAYERS = {
   /** Modals opened from the page. */
   modal: 'z-50',
-  /** Menu.tsx drawer (documented here, not consumed by Modal). */
+  /** Was the menu drawer's layer; the drawer is gone and nothing uses it. */
   menuBackdrop: 'z-[55]',
   menuDrawer: 'z-[56]',
   /**
@@ -17,6 +17,6 @@ export const Z_LAYERS = {
    * above the modal it flies into; below `reveal`, which only opens after that modal closes.
    */
   flight: 'z-[57]',
-  /** Modals that must sit above another modal or the menu drawer. */
+  /** Modals that must sit above another modal. */
   reveal: 'z-[60]',
 } as const;

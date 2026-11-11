@@ -92,7 +92,7 @@ export function useGameStatsRecorder(
     // The per-game history behind the stats page's calendar and, later, its trend views.
     const record = buildGameRecord(game, { themeId, cleared: survived, perfect });
     if (record) appendGameRecord(record);
-    // Re-arm the Stats tab's dot (the badges live on that tab) so the player is nudged to go
+    // Re-arm the Settings tab's dot (the badges live on that tab) so the player is nudged to go
     // see what they earned.
     if (unlocked.length > 0) markNavUnseen('stats');
     setNewlyUnlockedAchievements(unlocked);

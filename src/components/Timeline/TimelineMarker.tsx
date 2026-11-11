@@ -36,7 +36,7 @@ import type { Rect } from './useInsertionMarker';
  *
  * ## Why it is also clipped
  *
- * It has to be above the drag overlay but never over the hand bar or the top bar, and z-index
+ * It has to be above the drag overlay but never over the hand bar or outside the board, and z-index
  * alone cannot say that: `#root` is its own stacking context at `z-index: 1`, so the overlay on
  * `body` is above every piece of app chrome, and anything that clears the overlay clears the
  * chrome too. So the marker lives inside a fixed clip box the size of the board. Within it the

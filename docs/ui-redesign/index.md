@@ -7,8 +7,8 @@ Home-screen pager, gameplay layout, and the Custom settings screen.
 Full-width vertical stack:
 
 ```
-TopBar  (fixed, safe-area aware — see ../mobile-ios/index.md for pt-topbar*)
-Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
+Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it;
+                    one Home button floats over its top-right corner (GameHomeButton)
 Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card stack
 ```
 
@@ -47,11 +47,27 @@ the same pager the swipe does, rather than `navigate()`ing to separate full-page
 - **The highlight follows the scroll, never the tap.** `activePage` is written only by the
   pager's `onIndexChange`; a tap calls `scrollToPage` and the marker walks with the scroll.
   `useTabChangeHaptic` reads the same `activePage`, so taps and swipes tick alike.
-- **The `aria-label`s predate the bar and are kept** ("Go home", "Past decks", "Custom
-  game", "View stats", "View my timeline"): scripts and the Playwright runbook select by them.
-- **The top bar on Home shows Menu only.** The five buttons it used to carry moved to the
-  bar, and nothing else rendered them, so `TopBar` no longer has a nav cluster: it is the
-  title, the theme pill, Home, Restart and Menu, each shown where its caller asks.
+- **The `aria-label`s predate the bar** ("Go home", "Past decks", "Custom game", "View my
+  timeline"): scripts and the Playwright runbook select by them. The fifth is "Settings",
+  renamed from "View stats" when the Stats tab became the Settings tab.
+- **Home has no top bar and no menu.** The bar held one button, the burger, and cost 80px of
+  every tab; removing it gave the Daily hero 68px at 402x874 and 375x667. Everything the
+  drawer held moved to the Settings tab (below). The review that led here, with the options
+  that were turned down, is [../top-bar-removal-review/](../top-bar-removal-review/index.md).
+- **Settings is the last tab** (`panels/SettingsPanel.tsx`, built from `components/settings/`):
+  the profile card (portrait, name, the picker, and the gold "new" dot that used to be hidden
+  inside the drawer), then dark mode, the daily reminder (apps only) and How to Play, then the
+  stats cards and badges (`StatsPanel.tsx`, which is now only those cards), then a "More" card
+  with Share App, the install rows, Reset Hints, the info pages and the version. The order is
+  by how often each is wanted. **Its key is still `stats`**, so the stored nav dot, the
+  `statsTab` hint and `NavDest` are untouched; its path is `/settings`, and `/stats` still
+  opens it. An info page opened from here returns here: the links pass `state.from` and
+  `InfoPageLayout` navigates to it.
+- **Two things the menu did invisibly now live in `UpdateNotice.tsx`**, mounted once by `App`:
+  the version check with its popup (nothing else calls `useVersionCheck`), and `useTheme`,
+  whose mount is what applies the saved dark theme. The Settings tab mounts lazily and not at
+  all in a game, so neither can live there. For the same reason `usePWAInstall` catches
+  `beforeinstallprompt` at module load: the event fires once, early, before the tab mounts.
 - **Archive** (`panels/ArchivePanel.tsx`) is every daily from the last 30 days, laid out on
   the game's own timeline by date, curated ones in a gold border — see
   [../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-tab).
@@ -62,15 +78,15 @@ the same pager the swipe does, rather than `navigate()`ing to separate full-page
   The pill floats rather than sitting under the heading because the list opens scrolled to
   the bottom, where both locked rows are; a heading pill would shrink the scroll area and push
   the tapped row off screen. A silent `disabled` row read as broken.
-- **Achievements are a section of the Stats tab, not a page or a menu link** — nothing in the
-  burger menu gets found. They sit at the very bottom of Stats (`stats/AchievementsSection.tsx`,
+- **Achievements are a section of the Settings tab's stats, not a page of their own.** They
+  sit at the bottom of the stats cards (`stats/AchievementsSection.tsx`,
   after the collection meter): an "Achievements" header with the live count, the unlocked badges
   newest first, and a "Show all 60" expander for the locked ones. **The locked grid mounts only
   while expanded, and badge art is prefetched only for the unlocked badges until then** — an
   always-mounted 60-card grid stalls the swipe on iOS (below). `/achievements` redirects to
-  `/stats` (`pages/Home.tsx`) and keeps its `vercel.json` rewrite so old links land.
-- **My Timeline is the fifth tab**, with its own path (`/timeline`) and tab (Hourglass,
-  "View my timeline"), not a menu link, for the same reason.
+  `/settings` (`pages/Home.tsx`) and keeps its `vercel.json` rewrite so old links land.
+- **My Timeline is a tab**, with its own path (`/timeline`) and tab (Hourglass, "View my
+  timeline"), because a link in a menu was not found.
 - **"New" dots are armed by events, never by an install**, so a fresh install shows none. A
   missing entry in `when-nav-seen` reads as seen; only `markNavUnseen` writes the `false`
   that lights one. Three dots, each on its own tab and cleared by visiting it
@@ -88,20 +104,24 @@ the same pager the swipe does, rather than `navigate()`ing to separate full-page
   and Home mounts afresh when a game ends, so a dot appears the moment the player is back.
 - **Home's toasts sit 16px above the bar** with `.bottom-above-tabbar` (`index.css`:
   `5rem + env(safe-area-inset-bottom)`): the "Saved" notice, the Daily share, Custom's
-  share link and the menu's "Copied" (`TopBar toastAboveTabBar`). On the web that is the same
+  share link and the Settings tab's notices ("Copied", "Hints will show again"). On the web that is the same
   80px as before; in the apps the inset lifts them with the bar. The in-game `Toast` keeps
   its plain `bottom-20`.
 
 - **Every tab has a path, and the path opens the home screen on that tab**:
-  `/`, `/archive`, `/custom`, `/stats`, `/timeline` are one route (`/:tab?` → `pages/Home.tsx` →
+  `/`, `/archive`, `/custom`, `/timeline`, `/settings` are one route (`/:tab?` → `pages/Home.tsx` →
   `App initialTab` → `ModeSelect` → `ModePager initialIndex`), and `ModeSelect` replaces the
   path as the player swipes so a refresh or a shared link comes back to the same tab. The
-  tab↔path map is `pathForNav` / `navForPath` in `TopBar.tsx`. There are no standalone tab
+  tab↔path map is `pathForNav` / `navForPath` in `homeTabs.ts`. There are no standalone tab
   pages; the panel components in `src/components/panels/` are mounted by the pager.
-- **The in-game bar (`Game.tsx`) has no tabs**: the "When?" title, the Daily's theme pill,
-  Home, Restart in a practice game, and Menu.
-- **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Stats and
-  Timeline. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalls the
+- **A game has no bar, only a Home button** (`GameHomeButton.tsx`): a 44px round icon over
+  the board's top-right corner, `aria-label="Go home"`. The bar cost the board 56px for a
+  title, a theme pill and three rarely-used buttons. The button sits where a card can be
+  dropped (at 375 it overlaps the top card's corner), so it fades out and stops taking taps
+  while `dragState.isDragging`. The theme is named on the intro popup and the Daily card, not
+  on the playing screen. How to Play, dark mode and Reset Hints are not reachable mid-game.
+- **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Timeline and
+  Settings. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalls the
   iOS scroll-snap gesture. `TimelinePanel` additionally holds its (unvirtualised) timeline back
   until the tab has been shown once, and `StatsPanel`'s badge art waits for `active` too.
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict**.
@@ -132,7 +152,7 @@ makes this worth having: without it, a finished board is a score.
   count the game a second time — lifetime stats, the cadence streak, the collection, a duplicate
   `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
   and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
-  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
+  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and
   Home skips the "progress will be lost" confirm (see [Leaving a game](#leaving-a-game)).
 - **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
   events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
@@ -153,8 +173,11 @@ makes this worth having: without it, a finished board is a score.
 ## Leaving a game
 
 Home from a game asks "Leave game?" only when progress would be lost. `leaveAction` in
-`hooks/useLeaveGame.ts` is the whole rule, and the top bar's Home and the system Back gesture
-both go through it.
+`hooks/useLeaveGame.ts` is the whole rule, and the Home button and the system Back gesture
+both go through it. **The prompt also offers "Restart instead"** (`LeaveConfirmModal.tsx`)
+when `midGameRestart` allows one: the games that ask before leaving are the ones that can
+restart, so the board needs no Restart button. It restarts with no second confirm, and is
+disabled while a placement animates.
 
 - **A Daily in progress leaves at once**, and Home opens with a "Saved" toast. The Daily is
   saved as it is played and resumes from the Daily card in under a second, so the prompt
@@ -464,18 +487,15 @@ and do not improve performance, while hints of this shape do.
   `NavKey`'s `stats` (the nav dot) are three different things that share a word; don't
   de-duplicate them. **`timelineTab` also counts as seen when `when-timeline-intro-seen` is
   `'1'`**, so an upgrade does not re-show it; that key is read-only and the fallback is tested.
-- **"Reset Hints" in the burger menu** calls `resetHintsSeen()`, for QA and for a player who
-  wants the explanations back. A plain row like every other action: it closes the drawer and
-  says nothing else — no confirm and no confirmation text, because nothing is lost.
-  `resetHintsSeen` also **dispatches
-  a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
-  `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
-  reset during a game would silently do nothing until the next one.
+- **"Reset Hints" on the Settings tab** calls `resetHintsSeen()`, for QA and for a player who
+  wants the explanations back. No confirm, because nothing is lost; a toast says "Hints will
+  show again". `resetHintsSeen` also **dispatches a `when-hints-reset` event**
+  (`subscribeHintsReset`), because the hooks read storage once per mount.
   **`useTabHint` has to listen to that broadcast too.** Its effect reads storage only when its
   deps change. `active` is one of those deps, so the strips on tabs you are not standing on
   re-arm by themselves the moment you navigate to them, and **the only strip that would stay
-  away is the one on the tab the player is already on when they open the menu** — in practice
-  the Daily tab and its eye hint. It bumps a nonce in the dep list and re-arms in place.
+  away is the one on the tab the player is already on when they reset** — the Settings tab's
+  own strip. It bumps a nonce in the dep list and re-arms in place.
   `useTabHint.test.ts` pins it.
 - **An explicit reset waives the Daily nudge's lifetime gate.** `wantsFirstDailyNudge`
   gates on `gamesPlayed.daily === 0` so an upgrade never tells a regular "your first" — but a
@@ -484,13 +504,12 @@ and do not improve performance, while hints of this shape do.
   session and waives the counter. `todayResult` still gates it either way: with today's game
   done the hero card carries Share and the eye, so the strip would point at a Play button that
   is not there.
-- **How to Play is menu-only and never shown unasked.** It is `HowToPlayModal` on `ui/Modal`
-  (`reveal` layer so it clears the menu drawer), opened from the menu's always-present "How to
-  Play" and from nowhere else. Auto-opened rules aren't read; the hint strips teach the loop at
+- **How to Play is on the Settings tab only and never shown unasked.** It is `HowToPlayModal`
+  on `ui/Modal`, opened from the tab's "How to Play" row and from nowhere else. Auto-opened rules aren't read; the hint strips teach the loop at
   the moment each part matters. Don't add a permanent "How to play" link under the Daily Play
   button (it costs the hero image 48px for every player) or a "The tabs" section inside the
   modal (not how to play, and said elsewhere). It is the rules only, and `GameRules` lives
-  there, not in `Menu.tsx`.
+  there.
 - **Copy lives in one const map** (`utils/hintCopy.ts`), consumed by the strips. One line
   each, no em dashes.
 - **In-game hints are a state machine in `useOnboardingHints`**, not in `Game.tsx`, which sits

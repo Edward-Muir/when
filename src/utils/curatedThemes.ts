@@ -7,7 +7,7 @@ export type { CuratedTheme };
  *
  * Fetched once at boot and held in a module-level cache, because `getDailyTheme` has to stay
  * SYNCHRONOUS. It is called from the recency chain (which replays 28 days of decks), the
- * reminder scheduler, the share text, the saved daily result and the in-game TopBar — none
+ * reminder scheduler, the share text, and the saved daily result — none
  * of which can await, and several of which have no way to reach an async boundary at all.
  *
  * There is deliberately no bundled fallback copy. The calendar has exactly one home, so a

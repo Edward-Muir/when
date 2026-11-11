@@ -11,7 +11,7 @@ interface Props {
   unlockedMap: Record<string, string>;
   /** Event catalogue keyed by `name`; undefined until loaded → cards render without art. */
   eventsByName?: Map<string, HistoricalEvent>;
-  /** Whether the Stats tab is the one on screen. Gates the badge-art warm only. */
+  /** Whether the Settings tab is the one on screen. Gates the badge-art warm only. */
   active: boolean;
 }
 

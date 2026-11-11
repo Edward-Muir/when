@@ -57,8 +57,26 @@ function getInstallScenario(): InstallScenario {
   return 'desktop-other';
 }
 
+/**
+ * The browser fires `beforeinstallprompt` once, early in the page's life, and the only
+ * component that uses this hook is on the Settings tab, which mounts lazily. So the event is
+ * caught here at module load and handed to the hook whenever it mounts.
+ */
+let earlyPrompt: BeforeInstallPromptEvent | null = null;
+if (typeof window !== 'undefined') {
+  window.addEventListener('beforeinstallprompt', (e: Event) => {
+    e.preventDefault();
+    earlyPrompt = e as BeforeInstallPromptEvent;
+  });
+  window.addEventListener('appinstalled', () => {
+    earlyPrompt = null;
+  });
+}
+
 export function usePWAInstall() {
-  const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(null);
+  const [installPrompt, setInstallPrompt] = useState<BeforeInstallPromptEvent | null>(
+    () => earlyPrompt
+  );
   const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() => {

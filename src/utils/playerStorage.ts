@@ -217,11 +217,11 @@ export function markHintSeen(key: HintKey): void {
 
 /**
  * Forget every hint, legacy keys included, so the first-run experience can be replayed. The
- * menu's "Reset Hints" row calls this; so do QA and the Playwright walkthrough.
+ * Settings tab's "Reset Hints" row calls this; so do QA and the Playwright walkthrough.
  *
- * The event is the point: the burger menu is reachable mid-game (`TopBar` renders on the game
- * screen too), but `useOnboardingHints` reads storage once per mount, so without a broadcast a
- * reset during a game would silently do nothing until the next one. Fired even when the
+ * The event is the point: the hint hooks read storage once per mount, and the Settings tab's
+ * own strip is on screen when the row is tapped, so without a broadcast a reset would
+ * silently do nothing until the next mount. Fired even when the
  * removals threw — in private mode there was nothing stored to forget, and the listeners
  * re-reading an empty store is exactly the right outcome.
  */

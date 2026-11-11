@@ -49,7 +49,7 @@ describe('validateCalendar', () => {
     expect(errors[0]).toContain(`minimum ${MIN_THEME_EVENTS}`);
   });
 
-  it('rejects a name that would overflow the TopBar pill', () => {
+  it('rejects a name that is too long for the Daily card band', () => {
     const errors = errorsFor([theme({ name: 'x'.repeat(MAX_THEME_NAME_LENGTH + 1) })]);
     expect(errors[0]).toContain(`max ${MAX_THEME_NAME_LENGTH}`);
   });

@@ -37,7 +37,7 @@ export interface InsertionMarker {
   y: number;
   /**
    * The board's own bounds. The marker is drawn inside a clip box of exactly this size so it
-   * can sit above the drag overlay without ever reaching the hand bar or the top bar — see
+   * can sit above the drag overlay without ever reaching the hand bar or leaving the board — see
    * TimelineMarker for why z-index alone cannot express that.
    */
   clip: Rect;

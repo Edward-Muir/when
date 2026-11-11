@@ -15,7 +15,7 @@ function hasBeenTapped(): boolean {
  *
  * While `inGame`, one history entry is held (utils/gameBackEntry.ts). Back pops it; this runs
  * the top of the back stack and, if the game is still on, steps back onto the entry: an open popup or the menu closes, and otherwise
- * the game's own handler does what the top bar's Home does (hooks/useLeaveGame.ts). During the
+ * the game's own handler does what the Home button does (hooks/useLeaveGame.ts). During the
  * start transition nothing is registered, so Back is simply absorbed.
  *
  * The entry is added on a tap where there has not been one yet. `/daily` and

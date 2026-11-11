@@ -390,7 +390,7 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     if (active === 'swap' && activeCardName !== swapCardRef.current) hide();
   }, [active, activeCardName, hide]);
 
-  // 7. An explicit reset (the menu's "Reset Hints") re-arms the ladder without a remount.
+  // 7. An explicit reset (the Settings tab's "Reset Hints") re-arms the ladder without a remount.
   useEffect(
     () =>
       subscribeHintsReset(() => {

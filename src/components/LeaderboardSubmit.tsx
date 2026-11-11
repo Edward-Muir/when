@@ -124,7 +124,7 @@ export const LeaderboardSubmitForm: React.FC<{ leaderboard: DailyLeaderboard }> 
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
-        {/* The same picker as the menu's: a first-time player is here before they have ever
+        {/* The same picker as the Settings tab's: a first-time player is here before they have ever
             opened the menu. The pencil says the portrait can be tapped. */}
         <button
           type="button"

@@ -23,16 +23,15 @@ import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
 import { warmLeaderboard } from '../hooks/useLeaderboard';
-import { getThemeNameForConfig } from '../utils/themeReplay';
 import { getLocalDateString } from '../utils/puzzleDate';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import StatsPopup from './StatsPopup';
-import Modal from './ui/Modal';
 import HandDragOverlay, { dropAnimationFor } from './HandDragOverlay';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
-import TopBar from './TopBar';
+import GameHomeButton from './GameHomeButton';
+import LeaveConfirmModal from './LeaveConfirmModal';
 import HintStrip from './HintStrip';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
@@ -53,47 +52,10 @@ import { getVignetteColor } from '../utils/vignettePulse';
 import { GameMilestone, getDailyCadence } from '../utils/statsStorage';
 import { canRestartMidGame } from '../utils/dailyReplay';
 
-// Extracted modal components to reduce main function line count
-const HomeConfirmModal: React.FC<{
-  open: boolean;
-  onClose: () => void;
-  onConfirm: () => void;
-}> = ({ open, onClose, onConfirm }) => (
-  <Modal
-    open={open}
-    onDismiss={onClose}
-    backdrop="scrim"
-    widthClass="w-full max-w-sm"
-    rounded="2xl"
-    shadow="xl"
-    bordered={false}
-    cardClassName="p-6"
-  >
-    <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
-    <p className="text-text-muted text-sm mb-6 font-body">
-      {/* Only asked where it is true: see `leaveAction` in hooks/useLeaveGame.ts. */}
-      Your current progress will be lost.
-    </p>
-    <div className="flex gap-3">
-      <button
-        onClick={onClose}
-        className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
-      >
-        Cancel
-      </button>
-      <button
-        onClick={onConfirm}
-        className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
-      >
-        Leave
-      </button>
-    </div>
-  </Modal>
-);
-
 /**
- * The top bar's Restart, offered while a practice game is being played (`canRestartMidGame`).
- * At game over the bottom bar has its own Restart, and a review is a finished board. Extracted
+ * The leave prompt's Restart, offered while a practice game is being played
+ * (`canRestartMidGame`). At game over the bottom bar has its own Restart, and a review is a
+ * finished board. Extracted
  * because `Game` sits on ESLint's complexity ceiling of 15, like the helpers below.
  */
 function midGameRestart(state: WhenGameState, restart: () => void): (() => void) | undefined {
@@ -159,7 +121,7 @@ interface GameProps {
   showGameOverPopup: () => void;
   dismissPopup: () => void;
   onRestart: () => void;
-  /** Restart from the top bar mid-game, once confirmed: same deal rules as `onRestart`, no intro. */
+  /** Restart from the leave prompt mid-game: same deal rules as `onRestart`, no intro. */
   onRestartMidGame: () => void;
   onNewGame: () => void;
   newlyUnlockedAchievements: string[];
@@ -233,7 +195,7 @@ const Game: React.FC<GameProps> = ({
     hasAchievements: unlockedDefs.length > 0,
   });
 
-  // Home, from the top bar or the system Back gesture: asks only when progress would be lost.
+  // Home, from the Home button or the system Back gesture: asks only when progress would be lost.
   const leave = useLeaveGame(state, onNewGame);
 
   // Game feel hooks
@@ -250,13 +212,6 @@ const Game: React.FC<GameProps> = ({
 
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
-
-  // Theme name for the TopBar pill: the deck an Archive replay is of, or the theme of the day
-  // being played (today's daily, or a past day from the Archive calendar).
-  const dailyThemeDisplay = useMemo(
-    () => getThemeNameForConfig(state.lastConfig),
-    [state.lastConfig]
-  );
 
   const { setNodeRef: setBottomBarRef } = useDroppable({ id: 'bottom-bar-zone' });
 
@@ -389,16 +344,8 @@ const Game: React.FC<GameProps> = ({
         measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
       >
         <div
-          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-topbar transition-colors ${shakeClassName}`}
+          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-safe transition-colors ${shakeClassName}`}
         >
-          <TopBar
-            showHome={true}
-            onHomeClick={leave.requestHome}
-            dailyTheme={dailyThemeDisplay}
-            onRestart={midGameRestart(state, onRestartMidGame)}
-            restartDisabled={state.isAnimating}
-          />
-
           {showConfetti && (
             <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
               <ConfettiExplosion
@@ -431,6 +378,7 @@ const Game: React.FC<GameProps> = ({
               text={hintText(hints.active)}
               onDismiss={hints.dismiss}
             />
+            <GameHomeButton onClick={leave.requestHome} hidden={dragState.isDragging} />
           </div>
 
           {/* Bottom Bar - Fixed height with game info + active card aligned with timeline.
@@ -518,10 +466,12 @@ const Game: React.FC<GameProps> = ({
             onClose={() => setShowToast(false)}
           />
 
-          <HomeConfirmModal
+          <LeaveConfirmModal
             open={leave.confirmOpen}
             onClose={leave.closeConfirm}
             onConfirm={onNewGame}
+            onRestart={midGameRestart(state, onRestartMidGame)}
+            restartDisabled={state.isAnimating}
           />
 
           {/* The end-of-game sequence. Each step dismisses to the next; the closing card always

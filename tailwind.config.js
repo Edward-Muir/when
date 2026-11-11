@@ -1,72 +1,70 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   darkMode: 'class',
   theme: {
     extend: {
       height: {
-        'dvh': '100dvh',
+        dvh: '100dvh',
         'screen-safe': 'calc(var(--vh, 1vh) * 100)',
       },
       minHeight: {
-        'dvh': '100dvh',
+        dvh: '100dvh',
         'screen-safe': 'calc(var(--vh, 1vh) * 100)',
       },
       padding: {
         'safe-top': 'env(safe-area-inset-top)',
         'safe-bottom': 'env(safe-area-inset-bottom)',
-        // Offsets that clear the fixed TopBar (bar height + status-bar inset).
-        // On web env() = 0, so these are the bar height alone.
-        'topbar': 'calc(env(safe-area-inset-top) + 3.5rem)', // Game
-        'topbar-wide': 'calc(env(safe-area-inset-top) + 5rem)', // home screen (ModeSelect)
-        'topbar-fixed': 'calc(env(safe-area-inset-top) + 60px)', // ViewTimeline, InfoPageLayout
+        // Home's top padding: the status-bar inset plus a little air. Home and the game have no
+        // top bar; the game pads by the inset alone (`pt-safe`).
+        'home-top': 'calc(env(safe-area-inset-top) + 0.75rem)',
+        // Clears the info pages' own fixed bar (bar height + status-bar inset).
+        'topbar-fixed': 'calc(env(safe-area-inset-top) + 60px)', // InfoPageLayout
       },
       transitionDuration: {
-        'DEFAULT': '150ms',
-        'fast': '150ms',
+        DEFAULT: '150ms',
+        fast: '150ms',
       },
       opacity: {
-        'ghost': '0.5',  // Ghost card opacity - used in Timeline and DraggableCard
+        ghost: '0.5', // Ghost card opacity - used in Timeline and DraggableCard
       },
       colors: {
         // Semantic tokens - reference CSS variables from index.css
         // To change colors, edit :root and .dark in src/index.css
-        'bg': 'var(--color-bg)',
-        'surface': 'var(--color-surface)',
-        'text': 'var(--color-text)',
+        bg: 'var(--color-bg)',
+        surface: 'var(--color-surface)',
+        text: 'var(--color-text)',
         'text-muted': 'var(--color-text-muted)',
-        'border': 'var(--color-border)',
-        'accent': 'var(--color-accent)',
+        border: 'var(--color-border)',
+        accent: 'var(--color-accent)',
         'accent-secondary': 'var(--color-accent-secondary)',
-        'success': 'var(--color-success)',
-        'error': 'var(--color-error)',
-        'paper': 'var(--color-paper)',
-        'ink': 'var(--color-ink)',
+        success: 'var(--color-success)',
+        error: 'var(--color-error)',
+        paper: 'var(--color-paper)',
+        ink: 'var(--color-ink)',
         // Keep for overlays and utilities
-        'transparent': 'transparent',
-        'white': '#FFFFFF',
-        'black': '#000000',
+        transparent: 'transparent',
+        white: '#FFFFFF',
+        black: '#000000',
       },
       fontFamily: {
-        'display': ['Playfair Display', 'Georgia', 'serif'],
-        'body': ['Inter', 'system-ui', 'sans-serif'],
-        'mono': ['DM Mono', 'Courier New', 'monospace'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+        body: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['DM Mono', 'Courier New', 'monospace'],
       },
       fontSize: {
         // Centralized UI text sizes - edit here to update all UI text
         // Minimum 14px (0.875rem) for readability per mobile design guidelines
-        'ui-title': ['2.9rem', { lineHeight: '1.2', fontWeight: '700' }],     // "When?" title
-        'ui-body': ['1.2rem', { lineHeight: '2.0' }],                         // Turn/Score
-        'ui-label': ['0.875rem', { lineHeight: '1.2' }],                      // Labels (14px)
-        'ui-caption': ['0.875rem', { lineHeight: '1.2' }],                    // Captions (14px)
+        'ui-title': ['2.9rem', { lineHeight: '1.2', fontWeight: '700' }], // "When?" title
+        'ui-body': ['1.2rem', { lineHeight: '2.0' }], // Turn/Score
+        'ui-label': ['0.875rem', { lineHeight: '1.2' }], // Labels (14px)
+        'ui-caption': ['0.875rem', { lineHeight: '1.2' }], // Captions (14px)
         'ui-card-title': ['0.875rem', { lineHeight: '1.2', fontWeight: '600' }], // Card titles (14px)
       },
       animation: {
-        'shake': 'shake 0.5s ease-in-out',
+        shake: 'shake 0.5s ease-in-out',
         'screen-shake': 'screenShake 0.4s ease-in-out',
-        'entrance': 'entrance 0.25s ease-out forwards',
+        entrance: 'entrance 0.25s ease-out forwards',
       },
       keyframes: {
         shake: {
@@ -91,4 +89,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

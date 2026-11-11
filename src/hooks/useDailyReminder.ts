@@ -11,7 +11,7 @@ import { isDailyReminderEnabled, setDailyReminderEnabled } from '../utils/player
 
 /**
  * Shared state for the two daily-reminder surfaces (priming card in the daily
- * game-over popup, management row in the burger menu). Mirrors useHaptics'
+ * game-over popup, management row on the Settings tab). Mirrors useHaptics'
  * shape: callers check isSupported and render nothing on web/old app shells.
  */
 export function useDailyReminder() {

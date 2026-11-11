@@ -43,7 +43,7 @@ export const REPLAY_MIN_POOL = minDeckSize(1, REPLAY_HAND_SIZE);
  * it on the config, a daily on a curated day resolves it from the date, and so does a past
  * day played from the Archive (`dailyReplayDate`). Undefined for an ordinary day or a Custom
  * game. The one place the "is this game a curated theme" question
- * is answered, for the cleared end state, the theme best and the TopBar pill alike.
+ * is answered, for the cleared end state, and the theme best alike.
  */
 export function getCuratedThemeIdForConfig(config: GameConfig | null): string | undefined {
   if (!config) return undefined;

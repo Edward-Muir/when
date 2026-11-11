@@ -70,25 +70,23 @@ hand-correct both to match Capacitor's template whenever it runs.
 
 ## Safe-area offsets — use the utilities, not pixels
 
-`TopBar` grows with the device inset via `pt-safe`, so its real height is
-`env(safe-area-inset-top) + ~56px`. A hardcoded pixel offset works in mobile Safari and clips
-badly in the native app:
+Home and the game have no top bar, so each pads its own root by the status-bar inset: the
+game with `pt-safe`, Home with **`pt-home-top`** (the inset plus 12px of air). The info pages
+keep a fixed bar of their own and clear it with **`pt-topbar-fixed`** (the inset plus 60px).
+A hardcoded pixel offset works in mobile Safari and clips badly in the native app:
 
 - **Safari:** its own URL bar occupies the notch area, so inside the viewport
-  `env(safe-area-inset-top) ≈ 0`. A hardcoded 56px clears the bar.
+  `env(safe-area-inset-top) ≈ 0`.
 - **Native:** `StatusBar.overlaysWebView: true` extends the webview under the Dynamic
-  Island, so the inset is ≈59px and the bar becomes ~115px tall. Content at 56–80px sits
-  underneath the opaque `z-50` TopBar, invisible.
+  Island, so the inset is ≈59px. Content placed without it sits under the clock.
 
-So full-screen containers use three Tailwind utilities computed as
-`calc(env(safe-area-inset-top) + <base>)`: **`pt-topbar`** (3.5rem), **`pt-topbar-wide`**
-(5rem), **`pt-topbar-fixed`** (60px). On web `env()` is 0, so the layout is pixel-identical to a
-plain offset; the three base values are deliberately distinct rather than normalized, to keep
-it so.
+On web `env()` is 0, so the layout is pixel-identical to a plain offset.
 
-**Any new full-screen container below the fixed TopBar should use one of these, never a
-hardcoded `pt-*`.** Edge-to-edge is deliberate over the simpler `overlaysWebView: false` — the
-choice is cosmetic (immersive vs. a solid top band).
+**Any new full-screen container should pad by the inset with one of these, never a hardcoded
+`pt-*`.** Nothing opaque covers the status bar any more, so the padded strip shows the root's
+own `bg-bg`. Edge-to-edge is deliberate over the simpler `overlaysWebView: false` — the
+choice is cosmetic (immersive vs. a solid top band). Not checked on a device since the top
+bar was removed.
 
 The bottom works the same way. **Home's tab bar (`HomeTabBar.tsx`) carries `pb-safe` itself**,
 so in the apps it is 64px plus the home-indicator inset (about 34px on a Face ID iPhone) and
@@ -123,8 +121,8 @@ schedule is computed on-device. No APNs keys, entitlements, subscription store o
   granted; a priming card (`DailyReminderPrompt`, on the daily's closing card,
   `ShareStepPopup.tsx`) fires the real dialog, with "Not now"
   costing nothing and re-offering after 7 days, max 3 times; intent defaults to **on**
-  (`when-daily-reminder` != `'0'`), and the burger-menu row is both the opt-out and the
-  recovery path after a denial.
+  (`when-daily-reminder` != `'0'`), and the Settings tab's Daily reminder switch is both the opt-out
+  and the recovery path after a denial.
 - **Tap deep-links to `/daily`**, which auto-starts and bounces home if already played.
   Cold-start taps are retained by the plugin and delivered once the listener registers.
 - Dates are local: `getLocalDateString`, never `toISOString()` — `puzzleDate.ts` explains at
@@ -170,8 +168,8 @@ The prompts, tuned so one object reads at 60 px, are in
 ## The Android back button
 
 No native handling, on purpose. The WebView's default back goes back in history, and the web
-app holds one history entry per game, so Back closes an open popup or the menu and then acts as
-the top bar's Home. The whole mechanism is JS, so installed binaries pick it up with the site.
+app holds one history entry per game, so Back closes an open popup and then acts as
+the game's Home button. The whole mechanism is JS, so installed binaries pick it up with the site.
 See [Leaving a game](../ui-redesign/index.md#leaving-a-game). Not tested on a device.
 
 ## Things that work unmodified in the WebView

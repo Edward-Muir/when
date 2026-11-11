@@ -107,12 +107,11 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
 - **Bottom-left counters:** big number = cards left; 📏 = timeline length, including the
   starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
   the "Timeline Stats" popup.
-- **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
-  pill beside the logo in game.
-- **No modal blocks the first drag.** How to Play opens from the menu only. To replay a
-  fresh install's hints,
-  `localStorage.removeItem('when-hints-seen')` — or click **Reset Hints** in the burger
-  menu, which also works mid-game (it broadcasts, so the hook re-reads on the spot).
+- **Theme name:** the Daily card's band on Home shows the day's theme, and the intro popup
+  names a curated one. Nothing on the playing screen does.
+- **No modal blocks the first drag.** How to Play opens from the Settings tab only. To replay
+  a fresh install's hints, `localStorage.removeItem('when-hints-seen')` — or click **Reset
+  Hints** at the foot of the Settings tab (Home only; it shows "Hints will show again").
 - **Onboarding hint strips:** one-line pills in `[role="status"]` (the in-game one sits
   just above the hand; each home tab has one under its heading). They appear once per
   install, never block a drag (the in-game ones are dismissed by a drag start), and
@@ -135,14 +134,17 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   pills race each other, which is where bugs hide. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
   the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the
   bottom-left counter button for `stats`, the cycle button for `swap`.
-- **The menu drawer:** opened by `[aria-label="Open menu"]`. It does **not** close on
-  Escape, and while open it swallows later clicks, so close it with
-  `[aria-label="Close menu"]` (or reload) before driving anything else. During a game
-  `page.goBack()` closes it too.
-- **`[aria-label="Go home"]` matches two buttons in a game:** the "When?" title and the Home
-  icon. Use `.last()` for the icon. Home from a Daily in progress leaves at once and Home shows
-  a "Saved" toast for 2 s; from a Custom or Archive game it opens "Leave game?" with **Cancel**
-  and **Leave**.
+- **There is no top bar and no menu drawer.** What the menu held is on the Settings tab
+  (`nav[aria-label="Home tabs"] [aria-label="Settings"]`, path `/settings`; `/stats` opens it
+  too): `getByRole('button', { name: 'Profile' })`, `getByRole('switch', { name: /dark mode/i })`,
+  **How to Play**, then the stats cards, then Share App, Reset Hints and the info-page links at
+  the foot. The tab's pager page scrolls, not the window. An info page's
+  `[aria-label="Back to app"]` returns to the Settings tab when it was opened from there.
+- **`[aria-label="Go home"]` in a game is one button**, a round icon over the board's top
+  right. It fades out and takes no clicks while a card is being dragged. Home from a Daily in
+  progress leaves at once and Home shows a "Saved" toast for 2 s; from a Custom or Archive game
+  it opens "Leave game?" with **Cancel**, **Leave** and **Restart instead** (which restarts at
+  once, no second prompt).
 - **A practice game left mid-way comes back on load.** A Custom, Quick deck, Archive or
   challenge-link game is saved as it is played (`when-practice-progress`), and any home path
   (`/`, `/custom`, `/archive` ...) reloads straight into it with no start transition, so a script
@@ -150,15 +152,15 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   through Home then **Leave**, finish it, or
   `localStorage.removeItem('when-practice-progress')` before the reload. `page.reload()` keeps
   `localStorage`, which is how a resume is tested. `/daily` drops the save.
-- **`page.goBack()` during a game** closes the top popup or the menu, and otherwise does what
+- **`page.goBack()` during a game** closes the top popup, and otherwise does what
   Home does. Wait ~700 ms after it: the game steps back onto its history entry with
   `history.forward()`, so a second `goBack()` fired at once can leave the app. `/daily` adds
   its entry on the first pointer event, so drag or click before testing Back there.
-- **Home's tabs are the bar at the foot**, `nav[aria-label="Home tabs"]`, selected by the
-  same `aria-label`s the old top-bar buttons had: `Go home`, `Past decks`, `Custom game`,
-  `View stats`, `View my timeline`. The active one has `aria-current="page"`. The old
+- **Home's tabs are the bar at the foot**, `nav[aria-label="Home tabs"]`, selected by
+  `aria-label`: `Go home`, `Past decks`, `Custom game`, `View my timeline`, `Settings`, in
+  that order. The active one has `aria-current="page"`. The old
   `Go to <Tab> page` dot buttons are gone. **`[aria-label="Go home"]` on Home is the Daily
-  tab**; in a game it is the title and the Home icon (below), so scope it to the nav on Home.
+  tab**; in a game it is the Home button (above), so scope it to the nav on Home.
   A tap scrolls the pager smoothly and `aria-current` and the path follow the scroll, so wait
   ~1 s before reading either. A "new" dot is `[role="img"][aria-label="New"]` inside a tab;
   a fresh profile has none, and a dot clears 400 ms after the pager rests on its tab.
@@ -264,9 +266,9 @@ const pos = await page.$$eval('[data-timeline-year]', (els) =>
 const handTop = cardBox.y - 8; // the hand bar starts 8px above the square hand card
 let targetY;
 if (pos.length === 0)
-  targetY = (140 + handTop - 30) / 2; // empty timeline
+  targetY = (84 + handTop - 30) / 2; // empty timeline
 else if (k <= 0)
-  targetY = Math.max(148, pos[0] - 34); // before earliest
+  targetY = Math.max(92, pos[0] - 34); // before earliest
 else if (k >= pos.length)
   targetY = Math.min(handTop - 30, pos.at(-1) + 34); // after latest
 else targetY = (pos[k - 1] + pos[k]) / 2; // between k-1 and k

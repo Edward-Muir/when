@@ -17,8 +17,9 @@ import { hasPlayedToday } from './utils/playerStorage';
 import { clearPracticeProgress } from './utils/practiceProgress';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
-import { NavDest } from './components/TopBar';
+import { NavDest } from './components/homeTabs';
 import Game from './components/Game';
+import UpdateNotice from './components/UpdateNotice';
 import { useGameBackButton } from './hooks/useGameBackButton';
 import { leaveGameEntry } from './utils/gameBackEntry';
 import GameStartTransition from './components/GameStartTransition';
@@ -282,45 +283,50 @@ function App({
 
   // All phases wrapped in AnimatePresence for smooth transitions
   return (
-    <AnimatePresence mode="wait">
-      {(state.phase === 'loading' || state.phase === 'modeSelect') && (
-        <ModeSelect
-          key="modeSelect"
-          onStart={handleStart}
-          onReviewDaily={enterReview}
-          isLoading={state.phase === 'loading'}
-          allEvents={allEvents}
-          initialTab={initialTab}
-        />
-      )}
-      {state.phase === 'transitioning' && (
-        <GameStartTransition
-          key="transition"
-          onComplete={completeTransition}
-          events={introEvents}
-        />
-      )}
-      {(state.phase === 'playing' || state.phase === 'gameOver') && (
-        <Game
-          // Keyed by deal: a mid-game restart goes playing -> playing, and the board's own
-          // state (hints, end-of-game sequence, placement feedback) must start over with it.
-          key={`game-${gameKey}`}
-          state={state}
-          onPlacement={placeCard}
-          onCycleHand={cycleHand}
-          pendingPopup={pendingPopup}
-          showDescriptionPopup={showDescriptionPopup}
-          showGameOverPopup={showGameOverPopup}
-          dismissPopup={dismissPopup}
-          onRestart={() => restartGame()}
-          onRestartMidGame={() => restartGame({ skipIntro: true })}
-          onNewGame={handlePlayAgain}
-          newlyUnlockedAchievements={newlyUnlockedAchievements}
-          gameMilestones={gameMilestones}
-          allEvents={allEvents}
-        />
-      )}
-    </AnimatePresence>
+    <>
+      <AnimatePresence mode="wait">
+        {(state.phase === 'loading' || state.phase === 'modeSelect') && (
+          <ModeSelect
+            key="modeSelect"
+            onStart={handleStart}
+            onReviewDaily={enterReview}
+            isLoading={state.phase === 'loading'}
+            allEvents={allEvents}
+            initialTab={initialTab}
+          />
+        )}
+        {state.phase === 'transitioning' && (
+          <GameStartTransition
+            key="transition"
+            onComplete={completeTransition}
+            events={introEvents}
+          />
+        )}
+        {(state.phase === 'playing' || state.phase === 'gameOver') && (
+          <Game
+            // Keyed by deal: a mid-game restart goes playing -> playing, and the board's own
+            // state (hints, end-of-game sequence, placement feedback) must start over with it.
+            key={`game-${gameKey}`}
+            state={state}
+            onPlacement={placeCard}
+            onCycleHand={cycleHand}
+            pendingPopup={pendingPopup}
+            showDescriptionPopup={showDescriptionPopup}
+            showGameOverPopup={showGameOverPopup}
+            dismissPopup={dismissPopup}
+            onRestart={() => restartGame()}
+            onRestartMidGame={() => restartGame({ skipIntro: true })}
+            onNewGame={handlePlayAgain}
+            newlyUnlockedAchievements={newlyUnlockedAchievements}
+            gameMilestones={gameMilestones}
+            allEvents={allEvents}
+          />
+        )}
+      </AnimatePresence>
+      {/* The version check and the saved theme: once, on every screen. Held back during the
+          intro so the popup never lands over it. */}
+      <UpdateNotice paused={state.phase === 'transitioning'} />
+    </>
   );
 }
 

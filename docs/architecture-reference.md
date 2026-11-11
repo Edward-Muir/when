@@ -11,14 +11,19 @@ guess wrong.
 ```
 index.tsx                      # BrowserRouter + the routes below
 ├── App.tsx                    # Phase router, viewport height fix
+│   ├── UpdateNotice.tsx       # Version check + UpdatePopup, and applies the saved theme
 │   ├── ModeSelect.tsx         # The home screen: five-tab pager via ModePager.tsx
-│   │   ├── TopBar.tsx              # Menu only on Home (also mounted by Game)
 │   │   ├── HomeTabBar.tsx          # The five labelled tabs under the pager (TABS: homeTabs.ts)
 │   │   ├── DailyCta.tsx            # Daily hero's Play / Share / Submit button
 │   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: QuickDecks.tsx,
 │   │   │                           # folded FilterControls rows, Play + Share (CustomSharePopup)
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
-│   │   ├── panels/                 # Daily, Archive, Custom, Stats, Timeline panels — one per tab
+│   │   ├── panels/                 # Daily, Archive, Custom, Timeline, Settings panels — one per tab
+│   │   │   ├── SettingsPanel.tsx   # Profile, settings, StatsPanel's cards, the More card
+│   │   │   │   ├── settings/       # ProfileCard, PreferencesCard (dark mode, reminder,
+│   │   │   │   │                   # How to Play → HowToPlayModal), MoreCard (Share App, install,
+│   │   │   │   │                   # Reset Hints, info pages, version), rows.tsx
+│   │   │   │   └── StatsPanel.tsx  # The stats cards only
 │   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel
 │   │   └── ArchiveDeckRow.tsx      # One day on the Archive timeline (not an event Card)
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
@@ -32,13 +37,8 @@ index.tsx                      # BrowserRouter + the routes below
 │       │       └── GalleryFlight.tsx # The cards in flight from the board (body portal)
 │       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── TopBar.tsx         # Title, theme pill, Home, Restart (practice), Menu
-│       │   ├── Menu.tsx                # Burger drawer: Dark Mode, Daily reminder (native), Share App,
-│       │   │   │                       # Download the App (iOS web) / Add to Home Screen, How to Play,
-│       │   │   │                       # Reset Hints, What's New, Help & FAQ, Send Feedback,
-│       │   │   │                       # Privacy Policy, Terms of Service
-│       │   │   └── HowToPlayModal.tsx  # The rules in text; opens from the menu only
-│       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game) — lists the new version's notes
+│       ├── GameHomeButton.tsx # The game's only chrome: Home, over the board's top right
+│       ├── LeaveConfirmModal.tsx # "Leave game?", with Restart for a practice game
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
 ├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig
@@ -93,10 +93,10 @@ does what its name says.
 
 ## Routes (`src/index.tsx`)
 
-Player-facing: `/:tab?` is the home pager (`/`, `/archive`, `/custom`, `/stats`, `/timeline`
+Player-facing: `/:tab?` is the home pager (`/`, `/archive`, `/custom`, `/timeline`, `/settings`
 open it on that tab and the URL follows the swipe; see `src/pages/Home.tsx`), `/daily`,
 `/challenge/:code`, `/privacy`, `/terms`, `/support`, `/changelog`. `/achievements` redirects
-to `/stats`, where the badges live. Anything else redirects to `/`.
+to `/settings`, where the badges live, and `/stats` opens the same tab. Anything else redirects to `/`.
 
 Unlinked maintainer tools: `/image-qc`, `/card-reports`, `/cards-preview`, `/unlock-preview`,
 `/anim-jig`, `/reminder-preview`, `/share-preview`, `/timeline-lab`, `/admin/dedup` (the

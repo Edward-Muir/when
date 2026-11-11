@@ -173,10 +173,10 @@ place on the board, and badges carry metal rings.
 **New ones are flagged once.** A portrait is new while it is owned but not yet in
 `when-portraits-seen` (the ids the picker has shown; its own key in `playerStorage.ts`, since it
 is a growing set rather than a hint's boolean). New ones get a small gold "New" tag and lead the
-section, and the menu's Profile row carries the top bar's gold "new" dot while any exist.
+section, and the Settings tab's profile card carries a gold "new" dot while any exist.
 Opening the picker marks everything owned as seen, so the tags last that visit and the dot
 clears when it closes. Because "new" is owned minus seen, an unlock needs no re-arming (unlike
-the Stats tab's dot), and a player who already held badges when this shipped sees those
+the Settings tab's nav dot), and a player who already held badges when this shipped sees those
 portraits as new once. The picker remounts the section on every opening (`visit`), because the
 modal freezes its content while animating out and a reopen could otherwise reuse a stale read.
 

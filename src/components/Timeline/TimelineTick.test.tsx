@@ -1,6 +1,6 @@
 /* The dash is `aria-hidden` and carries no role, label or text — by design, it is decoration —
    so there is nothing for a Testing Library query to reach it by, and these assertions read the
-   DOM directly. Same escape as TopBar.test.tsx's svg lookup. */
+   DOM directly. Same escape as HomeTabBar.test.tsx's svg lookup. */
 /* eslint-disable testing-library/no-container, testing-library/no-node-access */
 import React from 'react';
 import { render } from '@testing-library/react';

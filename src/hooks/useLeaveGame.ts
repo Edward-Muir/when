@@ -19,7 +19,7 @@ export function leaveAction(state: LeaveState): 'confirm' | 'saved' | 'leave' {
 }
 
 /**
- * Going home from a game, for the top bar's Home and the system Back gesture alike. Lives in a
+ * Going home from a game, for the Home button and the system Back gesture alike. Lives in a
  * hook because `Game` sits on ESLint's complexity ceiling.
  */
 export function useLeaveGame(state: LeaveState, onLeave: () => void) {

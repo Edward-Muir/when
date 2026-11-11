@@ -71,7 +71,7 @@ export function ownedEarnedPortraits(unlocked: Readonly<Record<string, string>>)
   return new Set(EARNED_PORTRAITS.filter((p) => unlocked[p.achievementId]).map((p) => p.id));
 }
 
-/** Owned portraits the player has not been shown yet: the picker's "New" tags, the menu's dot. */
+/** Owned portraits the player has not been shown yet: the picker's "New" tags, the profile card's dot. */
 export function newEarnedPortraits(
   unlocked: Readonly<Record<string, string>>,
   seen: ReadonlySet<string>

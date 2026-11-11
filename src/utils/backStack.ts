@@ -1,9 +1,9 @@
 /**
  * What the system Back gesture should close, most recent last.
  *
- * Every open `Modal` and the Menu drawer register here, and a game registers its own "go
+ * Every open `Modal` registers here, and a game registers its own "go
  * home" at the bottom. `useGameBackButton` runs the top entry when Back is pressed during a
- * game, so Back closes whatever is on top first and only then acts as the top bar's Home.
+ * game, so Back closes whatever is on top first and only then acts as the Home button.
  *
  * A stack rather than a single slot because popups nest: the avatar picker opens over the
  * game-over popup, a confirm over the board. Nothing reads this outside a game, where Back is

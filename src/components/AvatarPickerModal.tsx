@@ -19,7 +19,7 @@ interface AvatarPickerModalProps {
   onDismiss: () => void;
   /** The name to preview, when it is not the saved one: the submit form passes the name as typed,
    *  so until a first pick the preview and the checked tile follow what the form shows. Without
-   *  it the modal is the menu's Profile, where the name itself is edited. */
+   *  it the modal is the Settings tab's Profile, where the name itself is edited. */
   name?: string;
   /** The line above Done. */
   note?: string;
@@ -68,12 +68,12 @@ const MAX_HEIGHT = 'max-h-[calc(var(--vh,1vh)*80)]';
  * Choose your portrait, and from the menu your leaderboard name. Each tap saves at once and the
  * tile at the top previews it. Until a first pick, the avatar follows the name.
  *
- * Opened from the menu's "Profile" row and from the portrait beside the leaderboard name box,
+ * Opened from the Settings tab's profile card and from the portrait beside the leaderboard name box,
  * where a first-time player claims their first score before ever opening the menu. From there
  * it is portraits only: the form's own input is the name box, and two inputs for one name would
  * fight. The Profile name commits on blur, Enter, Done or dismiss rather than per keystroke, so
  * half-typed names are never broadcast. On `ui/Modal`: keep it mounted and drive `open`.
- * `reveal` layer so it clears the menu drawer or popup it opens from. The preview and the footer
+ * `reveal` layer so it clears the popup it opens from. The preview and the footer
  * are pinned and only the grid scrolls, so the way out is always on screen.
  *
  * Below the animals, the achievement portraits (`AchievementPortraits`). A locked one can be

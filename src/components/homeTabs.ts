@@ -1,7 +1,39 @@
-import { Archive, BarChart3, Home, Hourglass, LucideIcon, SlidersHorizontal } from 'lucide-react';
-import type { NavDest } from './TopBar';
+import { Archive, Home, Hourglass, LucideIcon, Settings, SlidersHorizontal } from 'lucide-react';
+
+/**
+ * Every Home tab, by key. The `stats` key is the Settings tab: the page holds the player's
+ * profile, the settings and the stats, and it keeps the key it had as the Stats tab so the
+ * stored nav dot (`when-nav-seen`) and the `statsTab` hint carry over. Achievements is not a
+ * tab: the badges live on that page (`stats/AchievementsSection.tsx`).
+ */
+export type NavDest = 'home' | 'archive' | 'custom' | 'stats' | 'timeline';
 
 export type TabKey = NavDest;
+
+/**
+ * The path that opens the home screen on each tab (`src/pages/Home.tsx`), so a refresh or a
+ * shared link comes back to the tab it was on.
+ */
+const NAV_PATHS: Record<NavDest, string> = {
+  home: '/',
+  archive: '/archive',
+  custom: '/custom',
+  stats: '/settings',
+  timeline: '/timeline',
+};
+
+/** The Settings tab's path from when it was the Stats tab; old links and bookmarks use it. */
+const LEGACY_STATS_PATH = '/stats';
+
+// eslint-disable-next-line security/detect-object-injection -- key is the NavDest union
+export const pathForNav = (key: NavDest): string => NAV_PATHS[key];
+
+/** The tab a path names, or null for any other path. */
+export function navForPath(pathname: string): NavDest | null {
+  if (pathname === LEGACY_STATS_PATH) return 'stats';
+  const entry = Object.entries(NAV_PATHS).find(([, path]) => path === pathname);
+  return entry ? (entry[0] as NavDest) : null;
+}
 
 export interface HomeTab {
   key: TabKey;
@@ -29,7 +61,7 @@ export const TABS: readonly HomeTab[] = [
     icon: Archive,
     activeText: 'text-accent',
   },
-  // Sliders: "build your own", not a settings cog.
+  // Sliders: "build your own". The cog is the Settings tab's.
   {
     key: 'custom',
     label: 'Custom',
@@ -38,17 +70,18 @@ export const TABS: readonly HomeTab[] = [
     activeText: 'text-accent-secondary',
   },
   {
-    key: 'stats',
-    label: 'Stats',
-    ariaLabel: 'View stats',
-    icon: BarChart3,
-    activeText: 'text-accent',
-  },
-  {
     key: 'timeline',
     label: 'Timeline',
     ariaLabel: 'View my timeline',
     icon: Hourglass,
+    activeText: 'text-accent',
+  },
+  // Last, where settings are looked for.
+  {
+    key: 'stats',
+    label: 'Settings',
+    ariaLabel: 'Settings',
+    icon: Settings,
     activeText: 'text-accent',
   },
 ];

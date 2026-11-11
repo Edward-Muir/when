@@ -1,11 +1,16 @@
 # Top bar removal: findings, options and a recommendation
 
-**Status:** a review, nothing built. It was made on the labelled-tab-bar branch (PR #135) by
-reading the source and driving the real app at v1.39.0. Round one's three options (a portrait
-button in each heading, settings folded into Stats, a sixth "More" tab) were rejected as moving
-chrome around; they are summarised at the end. Round two is three concepts built on the game's
-own objects, and it waits on the choices listed under
-[Decisions that are yours](#decisions-that-are-yours).
+**Status:** resolved and built. Neither round's proposals were taken. The owner chose a
+simpler route: the top bar and the burger menu are gone; a game has one Home button over the
+board's top right, with Restart in the leave prompt; and the Stats tab became a Settings tab
+holding the profile, the settings, the stats and every menu row. How it is built is recorded
+in [ui-redesign](../ui-redesign/index.md#home-is-a-five-tab-pager). This file is kept for the
+inventory, the measurements, and the options that were turned down and why.
+
+It was made on the labelled-tab-bar branch (PR #135) by reading the source and driving the
+real app at v1.39.0. Round one's three options (a portrait button in each heading, settings
+folded into Stats, a sixth "More" tab) and round two's three concepts (put your cards down,
+one bar, your seat at the table) are both below.
 
 The prototypes are published at <https://claude.ai/artifact/JXzsqwCtNXm9tcZSCs74Qe>: a working
 phone frame per concept at 402x874 and 375x667, light and dark, that responds to tap and swipe.

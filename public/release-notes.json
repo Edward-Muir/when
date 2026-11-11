@@ -17,7 +17,10 @@
     "The Stats calendar no longer stops a swipe to the next tab when it has nothing to scroll.",
     "Stats now counts the best and average game in events placed, matching the daily score.",
     "Deck sizes on Custom now print with thousands separators, as Stats already did.",
-    "A reload or a closed app no longer loses a Custom, Archive or challenge game in progress."
+    "A reload or a closed app no longer loses a Custom, Archive or challenge game in progress.",
+    "The top bar is gone, so the board and the Daily card both have more room.",
+    "Stats, the profile and every menu item now live together on a new Settings tab.",
+    "A game has a single Home button, and the leave prompt can restart a practice game."
   ],
   "releases": [
     {

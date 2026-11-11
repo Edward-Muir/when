@@ -1,7 +1,7 @@
 import React from 'react';
 import { InstallScenario } from '../hooks/usePWAInstall';
 
-// Per-platform "Add to Home Screen" steps, shown in the Menu's install modal.
+// Per-platform "Add to Home Screen" steps, shown in the Settings tab's install modal.
 const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario }) => {
   const baseClass = 'space-y-3 text-sm text-text-muted font-body';
   const noteClass = 'text-sm mt-4 text-text-muted/70';

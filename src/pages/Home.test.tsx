@@ -34,7 +34,17 @@ describe('HomeRoute', () => {
     expect(screen.getByText('App on home')).toBeInTheDocument();
   });
 
-  it('sends the /achievements path to the Stats tab', () => {
+  it('opens the Settings tab at /settings', () => {
+    renderAt('/settings');
+    expect(screen.getByText('App on stats')).toBeInTheDocument();
+  });
+
+  it('still opens the Settings tab at /stats', () => {
+    renderAt('/stats');
+    expect(screen.getByText('App on stats')).toBeInTheDocument();
+  });
+
+  it('sends the /achievements path to the Settings tab', () => {
     renderAt('/achievements');
     expect(screen.getByText('App on stats')).toBeInTheDocument();
   });

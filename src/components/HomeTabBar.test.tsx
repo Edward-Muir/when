@@ -26,16 +26,16 @@ describe('HomeTabBar', () => {
       'Go home',
       'Past decks',
       'Custom game',
-      'View stats',
       'View my timeline',
+      'Settings',
     ]);
     expect(tabs.map((t) => t.textContent)).toEqual(TABS.map((tab) => tab.label));
   });
 
   it('marks only the active tab as the current page, teal on Custom and gold elsewhere', () => {
     const { rerenderOn } = renderBar('stats');
-    expect(screen.getByLabelText('View stats')).toHaveAttribute('aria-current', 'page');
-    expect(screen.getByLabelText('View stats')).toHaveClass('text-accent');
+    expect(screen.getByLabelText('Settings')).toHaveAttribute('aria-current', 'page');
+    expect(screen.getByLabelText('Settings')).toHaveClass('text-accent');
     expect(screen.getByLabelText('Go home')).not.toHaveAttribute('aria-current');
     expect(screen.getByLabelText('Go home')).toHaveClass('text-text-muted');
 
@@ -58,6 +58,8 @@ describe('HomeTabBar', () => {
     // eslint-disable-next-line testing-library/no-node-access
     const icon = screen.getByLabelText('Custom game').querySelector('svg');
     expect(icon).toHaveClass('lucide-sliders-horizontal');
+    // eslint-disable-next-line testing-library/no-node-access
+    expect(screen.getByLabelText('Settings').querySelector('svg')).toHaveClass('lucide-settings');
   });
 });
 
@@ -75,8 +77,8 @@ describe('HomeTabBar "new" dots', () => {
     armNavOnce('timeline');
     renderBar();
     expect(dots()).toHaveLength(2);
-    expect(screen.getByLabelText('View stats')).toContainElement(dots()[0]);
-    expect(screen.getByLabelText('View my timeline')).toContainElement(dots()[1]);
+    expect(screen.getByLabelText('View my timeline')).toContainElement(dots()[0]);
+    expect(screen.getByLabelText('Settings')).toContainElement(dots()[1]);
   });
 
   it('clears a dot once the pager settles on its tab, and remembers it', () => {
@@ -100,7 +102,7 @@ describe('HomeTabBar "new" dots', () => {
     act(() => jest.advanceTimersByTime(NAV_DOT_SETTLE_MS / 4));
     rerenderOn('timeline');
     act(() => jest.advanceTimersByTime(NAV_DOT_SETTLE_MS));
-    expect(screen.getByLabelText('View stats')).toContainElement(dots()[0]);
+    expect(screen.getByLabelText('Settings')).toContainElement(dots()[0]);
     expect(hasSeenNav('stats')).toBe(false);
   });
 
