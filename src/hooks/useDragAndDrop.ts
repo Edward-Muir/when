@@ -47,19 +47,6 @@ export interface DragGrab {
   height: number;
 }
 
-/**
- * The gap a pointer at `pointerY` is over: the number of rows whose year label is centred above
- * it. `positions` are those centres, top to bottom, measured once at pickup.
- *
- * Nothing here knows a row's height, which is what lets one row stand tall (the reveal): its
- * label is centred in it like any other, so its own middle is the line between "before it" and
- * "after it", and every other boundary is where it always was.
- */
-export function insertionIndexFor(pointerY: number, positions: number[]): number {
-  const insertionPoint = positions.findIndex((pos) => pointerY < pos);
-  return insertionPoint === -1 ? positions.length : insertionPoint;
-}
-
 function pointerOf(e: Event | null): { x: number; y: number } | null {
   if (!e) return null;
   if (typeof TouchEvent !== 'undefined' && e instanceof TouchEvent) {
@@ -100,6 +87,16 @@ export function useDragAndDrop({
   const prevInsertionIndexRef = useRef<number | null>(null);
   const grabRef = useRef<DragGrab | null>(null);
 
+  const calculateInsertionFromPositions = useCallback(
+    (pointerY: number, positions: number[]): number => {
+      if (positions.length === 0) return 0;
+
+      const insertionPoint = positions.findIndex((pos) => pointerY < pos);
+      return insertionPoint === -1 ? positions.length : insertionPoint;
+    },
+    []
+  );
+
   const handleDragStart = useCallback(
     (event: DragStartEvent) => {
       grabRef.current = readGrab(event);
@@ -135,7 +132,7 @@ export function useDragAndDrop({
       }
 
       const pointerY = initialY + event.delta.y;
-      const newIndex = insertionIndexFor(pointerY, yearPositions);
+      const newIndex = calculateInsertionFromPositions(pointerY, yearPositions);
 
       // Haptic feedback: subtle pulse when crossing insertion boundaries
       if (newIndex !== prevInsertionIndexRef.current && prevInsertionIndexRef.current !== null) {
@@ -145,7 +142,7 @@ export function useDragAndDrop({
 
       setInsertionIndex(newIndex);
     },
-    [yearPositions, haptics]
+    [yearPositions, calculateInsertionFromPositions, haptics]
   );
 
   const handleDragOver = useCallback((event: DragOverEvent) => {

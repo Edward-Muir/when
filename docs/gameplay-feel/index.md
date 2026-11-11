@@ -300,47 +300,6 @@ No automated check covers the tombstone drag invariants; before touching `Tombst
 write a Playwright check (see [../driving-the-app-with-playwright.md](../driving-the-app-with-playwright.md)).
 Measure the tombstone **button**, not the row — transforms live there.
 
-## The tall reveal row
-
-A correct placement opens its row tall: the card goes from 80px to 176px
-(`REVEAL_CARD_HEIGHT`, `TimelineEvent.tsx`), the art runs edge to edge, the year is stamped on it
-in the mono font and the title sits along the bottom in the display font (`RevealFace` in
-`CardFace.tsx`). It stays open until the next card is dropped, then folds back. A miss never
-opens one, and tombstones are untouched.
-
-- **One row at most, by construction.** `getRevealName` (`useRevealRow.ts`) is just "the last
-  placement, if it was correct". Any drop on the board overwrites `lastPlacementResult`, so a
-  correct one moves the reveal and a miss ends it. A card returned to the hand leaves it open.
-  A fresh deal and a restored daily start with none.
-- **The drag maths does not know a row's height, and must stay that way.** The gap is the number
-  of year labels centred above the pointer (`insertionIndexFor`, unit-tested with a tall row).
-  The label stays centred in the tall row, so that row's own middle is the line between "before
-  it" and "after it" and no other boundary moves. `data-timeline-index` and
-  `data-timeline-year` are where they always were.
-- **The row never changes height during a drag.** It folds on the drop, not on pickup. The
-  midpoints are measured once at pickup; a row resizing mid-drag would put every boundary
-  below it in the wrong place.
-- **The fold is a CSS height transition, 220ms (`REVEAL_FOLD_MS`), not a framer `layout`
-  animation.** A miss folds the tall row at the drop, and the tombstone FLIP, the camera follow
-  and the wake all measure the board when the 400ms flash ends, so the fold has to be over by
-  then and must not re-render anything. Lengthening it past the flash breaks the miss reveal.
-- **The ring is a box-shadow**, so it adds nothing to the row's box.
-- **The tall row is scrolled wholly into view, by the least amount, after the fold settles**
-  (`revealScrollTarget`). It never recentres. The scroll is finished inside the 600ms success
-  flash, when no drag can start, and a drag stops it regardless.
-- **Exactly one face is exposed to assistive tech**, and the stamped year is `aria-hidden`, so a
-  placed card's accessible name is its `friendly_name` whether tall or not.
-- **Reduced motion** gets the tall card with no height or fade transition (`.reveal-card` in
-  `index.css`).
-- **What it costs:** 96px while it is open, a little over one row. On a 375x667 phone, with the
-  square hand, the board shows the tall row and about 2.8 others.
-
-Checked by driving real games at 402x874 and 375x667 with a ghost-gap assertion on every drop,
-including drops aimed just inside the tall row's top and bottom edges and misses made while a
-row was tall: every drop landed in the gap it was aimed at, and the rows were seamless
-afterwards. The single-frame row jumps seen during a miss (up to about 180px) are the same with
-and without a tall row; they are the existing snap of rows outside the wake.
-
 ## Streak feedback
 
 `streakFeedback.ts` is the single source of tier config; `getStreakFeedback(streak)` returns

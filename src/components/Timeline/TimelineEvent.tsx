@@ -1,8 +1,8 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase } from '../../types';
 import { YearLabel, yearSizeClass } from './YearLabel';
-import CardFace, { RevealFace } from '../CardFace';
+import CardFace from '../CardFace';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
@@ -46,79 +46,6 @@ interface TimelineEventProps {
   // Draw no tick at all. Set on the attempted slot while a wrong drop flashes there — the
   // marker is snuffing two pixels to the right and is standing in for it.
   hideTick?: boolean;
-  /**
-   * The full reveal: this is the card the player has just placed correctly, and nothing has
-   * been dropped since. The card stands tall (REVEAL_CARD_HEIGHT) with the whole-width art,
-   * the year stamped on it and the title in the display font, then folds back to a normal
-   * row on the next drop. Timeline sets it on one row at most.
-   */
-  reveal?: boolean;
-}
-
-/** Height of the card in the tall reveal row, px. A normal card is 80 (96 from `sm`). */
-export const REVEAL_CARD_HEIGHT = 176;
-/**
- * How long the card takes to open and to fold, ms. Must stay well under the miss flash
- * (`tuning.miss.flashMs`, 400): a miss folds the tall row at the drop, and the tombstone's
- * FLIP, the camera follow and the wake all measure the board when the flash ends.
- */
-export const REVEAL_FOLD_MS = 220;
-
-/**
- * Drives the tall row. `tall` sets the height; `faceMounted` keeps the reveal face in the DOM
- * through the fold so it can fade out. A freshly placed row mounts short and goes tall on the
- * next frame, which is what makes the CSS height transition run as an opening.
- */
-interface RevealFold {
-  tall: boolean;
-  faceMounted: boolean;
-  ringClass: string;
-}
-
-const TALL_STYLE = { height: REVEAL_CARD_HEIGHT };
-
-/** The card's two faces. Exactly one is exposed at a time, so the accessible name is the title once. */
-const RowFaces: React.FC<{ event: HistoricalEvent; priority: boolean; fold: RevealFold }> = ({
-  event,
-  priority,
-  fold,
-}) => (
-  <>
-    <div aria-hidden={fold.tall || undefined} className="w-full h-full">
-      <CardFace event={event} priority={priority} />
-    </div>
-    {fold.faceMounted && (
-      <div
-        aria-hidden={!fold.tall || undefined}
-        className={`reveal-face absolute inset-0 ${fold.tall ? 'opacity-100' : 'opacity-0'}`}
-      >
-        <RevealFace event={event} />
-      </div>
-    )}
-  </>
-);
-
-function useRevealFold(reveal: boolean): RevealFold {
-  const [tall, setTall] = useState(false);
-  const [faceMounted, setFaceMounted] = useState(reveal);
-
-  useEffect(() => {
-    if (reveal) {
-      setFaceMounted(true);
-      const frame = requestAnimationFrame(() => setTall(true));
-      return () => cancelAnimationFrame(frame);
-    }
-    setTall(false);
-    const timer = setTimeout(() => setFaceMounted(false), REVEAL_FOLD_MS + 40);
-    return () => clearTimeout(timer);
-  }, [reveal]);
-
-  const isTall = reveal && tall;
-  return {
-    tall: isTall,
-    faceMounted: reveal || faceMounted,
-    ringClass: isTall ? 'reveal-card-open border-success' : 'border-border',
-  };
 }
 
 // Spring animation for newly placed cards
@@ -282,9 +209,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   originRef,
   landing = false,
   hideTick = false,
-  reveal = false,
 }) => {
-  const fold = useRevealFold(reveal);
   const shouldReduceMotion = useReducedMotion();
   const tuning = useAnimationTuning();
   const hasLayoutShift = layoutShiftDelay !== null && !shouldReduceMotion;
@@ -310,7 +235,6 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   return (
     <motion.div
       data-timeline-index={index}
-      data-reveal-row={reveal || undefined}
       layout={hasLayoutShift ? 'position' : undefined}
       transition={
         hasLayoutShift
@@ -353,12 +277,9 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             initial={isSuccessAnimation ? springBounce.initial : false}
             animate={isSuccessAnimation ? springBounce.animate : undefined}
             exit={isErrorAnimation ? rejectionExit.exit : undefined}
-            // The tall height is inline so it wins over the size classes; `reveal-card` (index.css)
-            // transitions between the two and is switched off under reduced motion.
-            style={fold.tall ? TALL_STYLE : undefined}
-            className={`reveal-card relative w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 ${fold.ringClass} ${cardAnimationClass}`}
+            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
           >
-            <RowFaces event={event} priority={priority} fold={fold} />
+            <CardFace event={event} priority={priority} />
           </motion.button>
         </div>
       </motion.div>

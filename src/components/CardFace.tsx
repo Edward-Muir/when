@@ -3,7 +3,6 @@ import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
-import { YearLabel } from './Timeline/YearLabel';
 
 interface CardFaceProps {
   event: HistoricalEvent;
@@ -59,50 +58,6 @@ const CardFace: React.FC<CardFaceProps> = ({ event, priority = false, tombstone 
         <span
           className={`${titleClass} ${titleShadowClass(event, tombstone)} text-sm leading-tight line-clamp-3 font-body text-right`}
         >
-          {event.friendly_name}
-        </span>
-      </div>
-    </div>
-  );
-};
-
-/**
- * The face of the one tall row: the card the player has just placed correctly, opened up.
- * The art runs edge to edge (the same `thumbnail` rung, cropped above centre like CardFace),
- * the year is stamped on it in the mono font, and the title sits along the bottom in the
- * display font on a dark scrim.
- *
- * The year here is decoration, so it is `aria-hidden`: the row's real year is the gutter label,
- * which also carries `data-timeline-year`. The card's accessible name stays its title alone.
- */
-export const RevealFace: React.FC<{ event: HistoricalEvent }> = ({ event }) => {
-  const [imageError, setImageError] = useState(false);
-  const hasImage = event.image_url && !imageError;
-
-  return (
-    <div className="absolute inset-0 text-left" style={getEventColorStyle(event)}>
-      {hasImage ? (
-        <img
-          src={getImageUrl(event.image_url, 'thumbnail')}
-          alt=""
-          decoding="async"
-          onError={() => setImageError(true)}
-          className="absolute inset-0 w-full h-full object-cover object-[50%_35%]"
-        />
-      ) : (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <CategoryIcon category={event.category} className="text-text-muted w-12 h-12" />
-        </div>
-      )}
-      <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/60 to-transparent" />
-      <span
-        aria-hidden
-        className="absolute top-2 left-3 text-white font-mono font-medium text-xl leading-tight card-title-halo-dark"
-      >
-        <YearLabel event={event} />
-      </span>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/60 to-transparent px-3 pt-10 pb-2">
-        <span className="block text-white font-display text-lg leading-tight line-clamp-2 card-title-halo-dark">
           {event.friendly_name}
         </span>
       </div>

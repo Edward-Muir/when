@@ -536,31 +536,6 @@ input,
   cursor: grabbing !important;
 }
 
-/* The tall reveal row (TimelineEvent). The card's height is set inline when it opens; this is
-   the fold in both directions. 220ms is REVEAL_FOLD_MS: it has to finish inside the 400ms miss
-   flash, because the miss reveal measures the board when that ends. */
-.reveal-card {
-  transition:
-    height 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    border-color 200ms,
-    box-shadow 220ms;
-}
-.reveal-face {
-  transition: opacity 180ms ease-out;
-}
-/* The spotlight: a ring in the success colour. A shadow, so it adds nothing to the row's box. */
-.reveal-card-open {
-  box-shadow:
-    0 0 0 2px var(--color-success),
-    0 8px 20px rgb(0 0 0 / 0.25);
-}
-@media (prefers-reduced-motion: reduce) {
-  .reveal-card,
-  .reveal-face {
-    transition: none;
-  }
-}
-
 /* Prevent text selection during drag */
 [data-dragging='true'] {
   user-select: none;

@@ -3,7 +3,6 @@ import { animate, LayoutGroup, useReducedMotion, type MotionValue } from 'framer
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } from '../../types';
 import TimelineEvent from './TimelineEvent';
-import { useRevealRow } from './useRevealRow';
 import TombstoneRow from './TombstoneRow';
 import TimelineRail, { RailExtension, RailRetractRow } from './TimelineRail';
 import TimelineMarker, { MarkerPhase } from './TimelineMarker';
@@ -226,7 +225,6 @@ const Timeline: React.FC<TimelineProps> = ({
   });
 
   const missReveal = getMissReveal(lastPlacementResult, animationPhase);
-  const revealName = useRevealRow(scrollRef, lastPlacementResult, isDragging);
 
   // Streak-aware glow for the card being placed.
   const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
@@ -274,9 +272,8 @@ const Timeline: React.FC<TimelineProps> = ({
   }, [events.length, enableCentering]);
 
   // View mode: open scrolled to the middle (median) event instead of the empty top spacer.
-  // Card heights do not depend on their images, so scrollHeight is stable as art lazy-loads and
-  // the median card stays put. (The one tall reveal row only exists mid-game, never here.)
-  // Guarded to run once per load.
+  // Cards are fixed-height, so scrollHeight is stable as images lazy-load — the median card
+  // stays put. Guarded to run once per load.
   useLayoutEffect(() => {
     const container = scrollRef.current;
     if (!container || !startAtMiddle) return;
@@ -445,7 +442,6 @@ const Timeline: React.FC<TimelineProps> = ({
             ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
             glowIntensity={anim.isAnimating ? streakConfig.glowIntensity : undefined}
             layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
-            reveal={event.name === revealName}
             // Eagerly load the first couple of cards — they're the LCP element.
             priority={idx < 2}
           />
