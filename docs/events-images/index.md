@@ -167,14 +167,24 @@ unchanged, so the hand and the board show the same card in two shapes.
   standard hand is five, so the stack is the hand and thins by one with every miss, and a swap
   sends the top card to the back. A larger hand still shows five; the cap is deliberate, since
   more edges than that is clutter and the fan would run into the swap button.
-- **The square becomes the landscape card on pickup** (`HandDragOverlay.tsx`). dnd-kit sizes its
-  overlay from the hand card's box, so a landscape card dropped in there hangs off the square's
-  corner. Instead the overlay starts as the square and closes around the finger into the
-  landscape card on a short spring, cross-fading the two faces at their true sizes. The player
-  carries the row that will land, and the drop ghost is that same card. Reduced motion gets the
-  landscape card from the first frame.
-- **The landscape card is centred on the finger**, because the gap is judged on the pointer's Y
-  (`useDragAndDrop`). `grabRef` records where in the square the pickup happened.
+- **The square becomes the landscape card on pickup, as one card changing shape**
+  (`HandDragOverlay.tsx`), not two cards cross-fading. The landscape card's art is 70% of its
+  width, which at phone size is the square's own 168px, so the painting never resizes: its frame
+  closes to the row's height around the board's focal line, the card's colour slides out to the
+  right, and the title crosses from the bottom of the art to the colour. At the end it is pixel
+  for pixel the landscape `Card`, which is also the drop ghost.
+- **One number drives it**: `morph` (0 = square, 1 = landscape), a motion value owned by
+  `useDragAndDrop` and sprung to 1 on pickup. Every part of the overlay is a `useTransform` of
+  it. It has to be a motion value: dnd-kit freezes the overlay's props during a drop animation,
+  and the way home plays the morph in reverse.
+- **Both put-downs are our own drop animations** (`dropAnimationFor`). Back to the hand: the
+  overlay box flies home while `morph` runs back to 0. dnd-kit's default cannot be used: it aims
+  the overlay's first child at the hand card, the first child is the morphing card, and the two
+  corrections stack into an overshoot. Onto the board: the card settles into its row's slot and
+  comes down from its 5% lift, then fades as the row takes over.
+- **The pickup is measured off the card under the pointer** (`readGrab`), not dnd-kit's
+  `active.rect`, which is empty on the first drag and stale on later ones.
+- **Reduced motion** gets the landscape card from the first frame and no drop animation.
 - **The lifted card leaves the hand at once** (`invisible`, not a half-opacity ghost): the
   overlay is that card, and a ghost left behind shows the next card's title through it.
 - **The fanned cards are dimmed with `brightness`, never opacity.** Translucent squares show

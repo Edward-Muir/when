@@ -2,6 +2,7 @@ import React from 'react';
 import { useDraggable } from '@dnd-kit/core';
 import { HistoricalEvent } from '../types';
 import Card, { CardSize } from './Card';
+import { HAND_CARD_ATTR } from '../hooks/useDragAndDrop';
 
 interface DraggableCardProps {
   event: HistoricalEvent;
@@ -40,6 +41,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
       {/* Card is the drag handle - only this area triggers drag initiation */}
       <div
         ref={setActivatorNodeRef}
+        {...{ [HAND_CARD_ATTR]: '' }}
         {...listeners}
         {...attributes}
         className={`

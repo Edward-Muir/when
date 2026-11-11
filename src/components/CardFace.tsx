@@ -13,7 +13,7 @@ interface CardFaceProps {
 }
 
 /** Soft halo behind the title where it overlaps the faded edge of the art. */
-function titleShadowClass(event: HistoricalEvent, tombstone: boolean): string {
+export function titleShadowClass(event: HistoricalEvent, tombstone: boolean): string {
   if (tombstone || !event.color) return '';
   return event.text_color === 'dark' ? 'card-title-halo-light' : 'card-title-halo-dark';
 }

@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
+import { animate, useMotionValue, useReducedMotion, type MotionValue } from 'framer-motion';
 import { DragStartEvent, DragEndEvent, DragOverEvent, DragMoveEvent } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult } from '../types';
 import { useHaptics } from './useHaptics';
@@ -32,8 +33,26 @@ interface UseDragAndDropReturn {
   handlers: DragHandlers;
   droppedOnTimelineRef: React.MutableRefObject<boolean>;
   draggedCardRef: React.MutableRefObject<HistoricalEvent | null>;
-  /** Where the hand card was grabbed and how big it was. Read by the drag overlay's morph. */
+  /** The carried card: where it was picked up, and its shape. Read by HandDragOverlay. */
+  carry: DragCarry;
+}
+
+/** Pickup: a soft, critically damped spring, about 300ms and no overshoot. */
+const PICKUP_SPRING = { type: 'spring' as const, stiffness: 260, damping: 32, mass: 1 };
+/** The way home runs on dnd-kit's return flight; keep in step with HandDragOverlay's RETURN_*. */
+const RETURN_TWEEN = {
+  duration: 0.24,
+  ease: [0.2, 0.8, 0.2, 1] as [number, number, number, number],
+};
+
+export interface DragCarry {
+  /** Where the hand card was grabbed and how big it was. */
   grabRef: React.MutableRefObject<DragGrab | null>;
+  /**
+   * The carried card's shape: 0 is the square in the hand, 1 the landscape row. Animated by
+   * the hook, on pickup and on a return to the hand.
+   */
+  morph: MotionValue<number>;
 }
 
 /** The pickup, in the hand card's own box: the overlay grows its landscape card from here. */
@@ -57,8 +76,17 @@ function pointerOf(e: Event | null): { x: number; y: number } | null {
   return null;
 }
 
+/** Marks the hand card's drag handle, so the pickup can measure the card it was made on. */
+export const HAND_CARD_ATTR = 'data-hand-card';
+
+/**
+ * Measured off the card under the pointer, not dnd-kit's `active.rect`: that is filled in by an
+ * effect, so on a pickup it is either empty (the first drag) or left over from the last one.
+ */
 function readGrab(event: DragStartEvent): DragGrab | null {
-  const rect = event.active.rect.current.initial;
+  const target = event.activatorEvent?.target;
+  const card = target instanceof Element ? target.closest(`[${HAND_CARD_ATTR}]`) : null;
+  const rect = card?.getBoundingClientRect() ?? event.active.rect.current.initial;
   if (!rect) return null;
   const p = pointerOf(event.activatorEvent);
   return {
@@ -86,6 +114,12 @@ export function useDragAndDrop({
   const draggedCardRef = useRef<HistoricalEvent | null>(null);
   const prevInsertionIndexRef = useRef<number | null>(null);
   const grabRef = useRef<DragGrab | null>(null);
+  const morph = useMotionValue(0);
+  const reduceMotion = useReducedMotion();
+  /** Send the carried card back to its square, unless motion is reduced (it never left 1). */
+  const morphHome = useCallback(() => {
+    if (!reduceMotion) animate(morph, 0, RETURN_TWEEN);
+  }, [morph, reduceMotion]);
 
   const calculateInsertionFromPositions = useCallback(
     (pointerY: number, positions: number[]): number => {
@@ -100,6 +134,9 @@ export function useDragAndDrop({
   const handleDragStart = useCallback(
     (event: DragStartEvent) => {
       grabRef.current = readGrab(event);
+      morph.stop();
+      morph.set(reduceMotion ? 1 : 0);
+      if (!reduceMotion) animate(morph, 1, PICKUP_SPRING);
       setIsDragging(true);
       setInsertionIndex(null);
       prevInsertionIndexRef.current = null;
@@ -115,7 +152,7 @@ export function useDragAndDrop({
       });
       setYearPositions(positions);
     },
-    [activeCard, haptics]
+    [activeCard, haptics, morph, reduceMotion]
   );
 
   const handleDragMove = useCallback(
@@ -183,9 +220,10 @@ export function useDragAndDrop({
       setInsertionIndex(null);
       if (!droppedOnTimelineRef.current) {
         draggedCardRef.current = null;
+        morphHome();
       }
     },
-    [insertionIndex, onPlacement, isAnimating, haptics]
+    [insertionIndex, onPlacement, isAnimating, haptics, morphHome]
   );
 
   const handleDragCancel = useCallback(() => {
@@ -199,7 +237,8 @@ export function useDragAndDrop({
     setInsertionIndex(null);
     draggedCardRef.current = null;
     prevInsertionIndexRef.current = null;
-  }, []);
+    morphHome();
+  }, [morphHome]);
 
   return {
     state: {
@@ -217,6 +256,6 @@ export function useDragAndDrop({
     },
     droppedOnTimelineRef,
     draggedCardRef,
-    grabRef,
+    carry: { grabRef, morph },
   };
 }

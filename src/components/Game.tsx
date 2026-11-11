@@ -30,7 +30,7 @@ import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import StatsPopup from './StatsPopup';
 import Modal from './ui/Modal';
-import HandDragOverlay from './HandDragOverlay';
+import HandDragOverlay, { dropAnimationFor } from './HandDragOverlay';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
 import TopBar from './TopBar';
@@ -285,7 +285,7 @@ const Game: React.FC<GameProps> = ({
     handlers: dragHandlers,
     droppedOnTimelineRef,
     draggedCardRef,
-    grabRef,
+    carry,
   } = useDragAndDrop({
     activeCard,
     onPlacement,
@@ -497,9 +497,9 @@ const Game: React.FC<GameProps> = ({
           </div>
 
           {createPortal(
-            <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
+            <DragOverlay dropAnimation={dropAnimationFor(droppedOnTimelineRef.current)}>
               {draggedCardRef.current ? (
-                <HandDragOverlay event={draggedCardRef.current} grab={grabRef.current} />
+                <HandDragOverlay event={draggedCardRef.current} carry={carry} />
               ) : null}
             </DragOverlay>,
             document.body
