@@ -1,10 +1,15 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "Card art now spreads across each card and fades into its colour.",
-    "The card in hand is now a square showing its whole painting."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.38.0",
+      "date": "2026-11-11",
+      "notes": [
+        "Card art now spreads across each card and fades into its colour.",
+        "The card in hand is now a square showing its whole painting."
+      ]
+    },
     {
       "version": "1.37.0",
       "date": "2026-10-27",

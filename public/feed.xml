@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2026 12:17:48 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 11:44:58 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.38.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.38.0</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>**cards:** square hand card and art that bleeds across each card (<a href="https://github.com/Edward-Muir/when/issues/133">#133</a>) (<a href="https://github.com/Edward-Muir/when/commit/a46cddc8caec415375a3463aac4e197211eadfcc">a46cddc</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.37.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.32.0</guid>
       <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>filter Select all / Clear, ticked chips, and a closer card close button (<a href="https://github.com/Edward-Muir/when/issues/73">#73</a>) (<a href="https://github.com/Edward-Muir/when/commit/59ca5fcab688f4b152ab8de44b7cfa72c59e7724">59ca5fc</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.31.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.31.0</guid>
-      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>country picker and region-based daily themes (<a href="https://github.com/Edward-Muir/when/issues/71">#71</a>) (<a href="https://github.com/Edward-Muir/when/commit/2d5d6982166991153adf4cfb980ac9308f21b088">2d5d698</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
