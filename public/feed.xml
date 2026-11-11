@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 11:44:58 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 15:12:41 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.39.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.39.0</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>**game-over:** end on a gallery of the timeline and share it as a collage (<a href="https://github.com/Edward-Muir/when/issues/134">#134</a>) (<a href="https://github.com/Edward-Muir/when/commit/36b91b962a8799e264b265fbdf522075038cbcdc">36b91b9</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.38.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.32.1</guid>
       <pubDate>Mon, 05 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>current-game wording everywhere, curated theme name on the Daily card, gold trophy on a clear (<a href="https://github.com/Edward-Muir/when/issues/76">#76</a>) (<a href="https://github.com/Edward-Muir/when/commit/5f639421f0c42ffe5f202a473df174b3df8699ee">5f63942</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.32.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.32.0</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>filter Select all / Clear, ticked chips, and a closer card close button (<a href="https://github.com/Edward-Muir/when/issues/73">#73</a>) (<a href="https://github.com/Edward-Muir/when/commit/59ca5fcab688f4b152ab8de44b7cfa72c59e7724">59ca5fc</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

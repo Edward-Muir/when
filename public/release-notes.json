@@ -1,10 +1,15 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "The end of a game now gathers the timeline into a gallery of its paintings.",
-    "A shared result now shows every painting on the timeline as a collage."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.39.0",
+      "date": "2026-11-11",
+      "notes": [
+        "The end of a game now gathers the timeline into a gallery of its paintings.",
+        "A shared result now shows every painting on the timeline as a collage."
+      ]
+    },
     {
       "version": "1.38.0",
       "date": "2026-11-11",
