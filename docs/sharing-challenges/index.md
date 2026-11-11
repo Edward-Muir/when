@@ -35,9 +35,25 @@ resolution: `/share-preview` shows the card at 400px for exactly this reason —
 there.
 
 The same arithmetic governs the art: its apparent size is purely its width as a fraction of
-1080, so shortening the canvas does nothing for it. The collage's box is 1000px wide, 93% of
-the card, against 63% for the single painting it replaced. The vertical budget is what caps
-the box, and it got its height from the line that named the single card.
+1080, so shortening the canvas does nothing for it. The collage is 928px wide, 86% of the
+card, against 63% for the single painting it replaced.
+
+### Margins are sized for the bubble too
+
+The first collage card had the art at 93% of the width, 40px from each side, with the
+wordmark and the URL about as close to the top and bottom. At 0.37x that is 15px of margin and
+3px between paintings, and in a real WhatsApp bubble it read as cramped. The card now keeps
+72px clear at the top and bottom and 76px at the sides (about 27px on screen), and 14px
+between paintings. The 7% of width that cost is the right trade: the art is still far larger
+than the single painting was.
+
+The other half of the fix is **where the spare height goes**. A collage's height depends on
+the number of cards (fifteen fill their box, seventeen do not), and on fixed baselines the
+difference pooled as two empty bands right beside the paintings while the edges stayed tight.
+The collage card is therefore laid out as a flow (`shareCardLayout` in `shareImage.ts`):
+header, collage, result, URL, with fixed outer margins and **three equal gaps** that take up
+whatever the collage does not use. The rank sits tight under the score so the two read as one
+result, and the URL stands apart from them. Keep the gaps equal when retuning; a test pins it.
 
 ### Why there is an image at all
 
@@ -93,7 +109,7 @@ last row (`shareGridLayout` in `shareImage.ts`). A short last row is centred.
 
 Collage tiles are fetched through the existing **`thumbnail`** rung
 (`getImageUrl(url, 'thumbnail')`), the size the board already loaded, not a new transform
-string. With two to four tiles one is drawn up to about 660px tall from a 400px source, a
+string. With two to four tiles one is drawn up to about 610px tall from a 400px source, a
 soft upscale accepted for games that short; from five tiles up they are drawn at or below
 source size. The single-card fallback uses **`detail`**, because it is drawn at 680px.
 
@@ -198,11 +214,12 @@ different things.
   game-over share agrees with the popup's "#22 globally" and with the home screen's share:
   the popup passes the rank up from `LeaderboardSubmit` via `onRankResolved`, and the bottom
   bar reads it from the stored daily result.
-- **The card is single-line everywhere.** Layout is fixed baselines, so a second line
-  anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
-  instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe (the
-  longest real names settle at ~50px against a 42px floor). Do not introduce wrapping
-  without moving to a flow layout.
+- **The card is single-line everywhere.** The collage card is a flow of blocks and the
+  single-card layout is fixed baselines, and in both every element is one line, so a second
+  line anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
+  instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe for the
+  single card's name (the longest real names settle at ~50px against a 42px floor). Do not
+  introduce wrapping without giving the wrapped block a measured height in the flow.
 - **The unit sits beside the number, not under it.** `drawScoreWithUnit` measures the
   numeral and the word, sums them and centres the pair — centring the numeral alone and
   hanging the label off it puts the group visibly off-centre. They share a baseline, so

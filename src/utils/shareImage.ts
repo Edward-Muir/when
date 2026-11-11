@@ -50,7 +50,7 @@ import { getImageUrl } from './cloudinaryImage';
  * ## Cloudinary cost
  *
  * Collage tiles are fetched through `getImageUrl(url, 'thumbnail')`, the 400x400 rung the
- * board has already loaded. With two to four tiles one is drawn up to about 660px tall, a
+ * board has already loaded. With two to four tiles one is drawn up to about 610px tall, a
  * soft upscale accepted for games that short; from five tiles up it is drawn at or below
  * its source size. The
  * single-card fallback uses `detail` (768x768), because it is drawn at 680px.
@@ -86,15 +86,38 @@ export const HEIGHT = 1350;
 const CARD_SIZE = 680;
 
 /**
- * Where the collage sits: 93% of the card's width, against the single card's 63%. That
- * fraction is the only thing that governs how big the art looks in a chat bubble.
+ * The collage card's measurements. Everything on it is placed by `shareCardLayout` from
+ * these, top to bottom, with the spare height shared between the blocks.
  *
- * The box ends where the starting card's name used to be drawn. A collage has no one card
- * to name, and that line's height is what the art gained.
+ * The first collage card had the art at 93% of the width, 40px from each side, with the
+ * wordmark and the URL about as close to the top and bottom. In a chat bubble that is 15px
+ * of margin, and it read as cramped. These give every edge about 27px on screen and the
+ * paintings 5px between them, and the art still has 86% of the width against the single
+ * painting's 63%.
+ *
+ * `ascent` and `descent` are how far a line's ink reaches above and below its baseline, so
+ * the gaps are measured between what is seen, not between baselines. Playfair's old-style
+ * figures drop 3, 4, 5, 7 and 9 well below the baseline, which is the score's `descent`:
+ * "11" looks fine at a tight gap and "23" collides. Do not trim it when retuning.
  */
-const COLLAGE_BOX: ShareBox = { x: 40, y: 198, width: 1000, height: 788 };
-const COLLAGE_GAP = 8;
-const COLLAGE_RADIUS = 18;
+const FLOW = {
+  /** Clear space above the wordmark and below the URL. */
+  margin: 72,
+  /** Clear space left and right of the collage. */
+  side: 76,
+  /** The least space between two blocks; a short collage makes all three larger. */
+  minGap: 56,
+  /** Between two paintings. */
+  tileGap: 14,
+  wordmark: { size: 96, ascent: 72 },
+  /** `drop` is from the wordmark's baseline to this line's. */
+  eyebrow: { size: 36, drop: 52 },
+  score: { size: 160, unit: 44, ascent: 116, descent: 34 },
+  /** `drop` is from the score's baseline: close, so the two read as one result. */
+  rank: { size: 42, drop: 80, descent: 10 },
+  url: { size: 46, ascent: 34, descent: 10 },
+} as const;
+const COLLAGE_RADIUS = 20;
 /** Below this there is nothing to arrange, and the card shows the starting card alone. */
 const MIN_COLLAGE_TILES = 2;
 
@@ -171,11 +194,7 @@ const MAX_TILE_ASPECT = 4 / 3;
  *
  * Pure, and exported, because the renderer itself cannot run under jsdom.
  */
-export function shareGridLayout(
-  count: number,
-  box: ShareBox = COLLAGE_BOX,
-  gap: number = COLLAGE_GAP
-): ShareGrid {
+export function shareGridLayout(count: number, box: ShareBox, gap: number): ShareGrid {
   if (count <= 0) return { columns: 0, rows: 0, tileWidth: 0, tileHeight: 0, cells: [] };
 
   let best = { columns: 1, rows: count, tileWidth: 0, tileHeight: 0, score: -1 };
@@ -206,6 +225,80 @@ export function shareGridLayout(
     };
   });
   return { columns, rows, tileWidth, tileHeight, cells };
+}
+
+export interface ShareCardLayout {
+  /** Baselines, top to bottom. `eyebrowY` and `rankY` are null when the card has none. */
+  wordmarkY: number;
+  eyebrowY: number | null;
+  scoreY: number;
+  rankY: number | null;
+  urlY: number;
+  /** The collage, with its cells where they are drawn. */
+  grid: ShareGrid;
+  /** Where the collage starts and ends. */
+  collageTop: number;
+  collageBottom: number;
+  /** The space between each pair of blocks. One number: the three are always equal. */
+  gap: number;
+}
+
+/**
+ * Where everything on the collage card goes.
+ *
+ * Four blocks stacked: the header (wordmark and puzzle line), the collage, the result (score
+ * with the rank tucked under it) and the URL. The outer margins are fixed and the three gaps
+ * between blocks are **equal**, taking up whatever height the collage does not use.
+ *
+ * That last part is the point. The collage's height depends on the number of cards: fifteen
+ * fill their box and seventeen do not. With fixed baselines the difference pooled as two
+ * empty bands right beside the paintings while the wordmark and the URL sat hard against the
+ * edges, and the card looked cramped and gappy at once. Here a short collage loosens the
+ * whole card evenly.
+ *
+ * Each block is still one line per element, so nothing can wrap into the block below. Pure,
+ * and exported, because the renderer itself cannot run under jsdom.
+ */
+export function shareCardLayout(input: {
+  tileCount: number;
+  hasEyebrow: boolean;
+  hasRank: boolean;
+}): ShareCardLayout {
+  const { margin, side, minGap, tileGap, wordmark, eyebrow, score, rank, url } = FLOW;
+
+  const headerHeight = wordmark.ascent + (input.hasEyebrow ? eyebrow.drop : 0);
+  const resultHeight = score.ascent + (input.hasRank ? rank.drop + rank.descent : score.descent);
+  const urlHeight = url.ascent + url.descent;
+  const room = HEIGHT - 2 * margin - headerHeight - resultHeight - urlHeight;
+
+  // Lay the tiles out in the tallest box the minimum gaps allow, then see how much of it
+  // they used.
+  const tallest = { x: side, y: 0, width: WIDTH - 2 * side, height: room - 3 * minGap };
+  const loose = shareGridLayout(input.tileCount, tallest, tileGap);
+  const collageHeight = loose.rows * loose.tileHeight + tileGap * Math.max(0, loose.rows - 1);
+  const gap = (room - collageHeight) / 3;
+
+  const wordmarkY = margin + wordmark.ascent;
+  const collageTop = margin + headerHeight + gap;
+  const collageBottom = collageTop + collageHeight;
+  const scoreY = collageBottom + gap + score.ascent;
+  const urlY = HEIGHT - margin - url.descent;
+
+  // `loose` centred its cells in the tall box; move them up to where the collage starts.
+  const slack = (tallest.height - collageHeight) / 2;
+  const cells = loose.cells.map((cell) => ({ x: cell.x, y: cell.y - slack + collageTop }));
+
+  return {
+    wordmarkY,
+    eyebrowY: input.hasEyebrow ? wordmarkY + eyebrow.drop : null,
+    scoreY,
+    rankY: input.hasRank ? scoreY + rank.drop : null,
+    urlY,
+    grid: { ...loose, cells },
+    collageTop,
+    collageBottom,
+    gap,
+  };
 }
 
 /** Load an image without letting a slow or dead CDN block the share. */
@@ -344,11 +437,12 @@ function drawScoreWithUnit(
   ctx: CanvasRenderingContext2D,
   score: string,
   unit: string,
-  y: number
+  y: number,
+  size: { score: number; unit: number } = { score: 175, unit: 46 }
 ): void {
   const GAP = 18;
-  const scoreFont = `600 175px ${DISPLAY_FONT}`;
-  const unitFont = `500 46px ${BODY_FONT}`;
+  const scoreFont = `600 ${size.score}px ${DISPLAY_FONT}`;
+  const unitFont = `500 ${size.unit}px ${BODY_FONT}`;
 
   ctx.font = scoreFont;
   const scoreWidth = ctx.measureText(score).width;
@@ -395,25 +489,13 @@ function drawBackdrop(
 }
 
 /**
- * The wordmark and the line under it. The game is "When?" everywhere else; the mark keeps
- * its question mark. The collage card sets both smaller and higher, to give the art the
- * room.
+ * The single-card layout's header. The game is "When?" everywhere else; the mark keeps its
+ * question mark.
  */
-function drawHeader(ctx: CanvasRenderingContext2D, eyebrow: string | undefined, collage: boolean) {
-  const mark = collage ? { y: 118, size: 104 } : { y: 150, size: 134 };
-  const line = collage ? { y: 170, size: 38 } : { y: 204, size: 40 };
-  fittedCenteredText(ctx, 'When?', mark.y, 900, '600', mark.size, DISPLAY_FONT, INK);
+function drawHeroHeader(ctx: CanvasRenderingContext2D, eyebrow: string | undefined): void {
+  fittedCenteredText(ctx, 'When?', 150, 900, '600', 134, DISPLAY_FONT, INK);
   if (eyebrow) {
-    fittedCenteredText(
-      ctx,
-      eyebrow.toUpperCase(),
-      line.y,
-      940,
-      '500',
-      line.size,
-      BODY_FONT,
-      INK_MUTED
-    );
+    fittedCenteredText(ctx, eyebrow.toUpperCase(), 204, 940, '500', 40, BODY_FONT, INK_MUTED);
   }
 }
 
@@ -476,13 +558,71 @@ function drawHero(
   }
 }
 
-/** The collage layout: every tile a framed painting, in the order given. No names, no years. */
-function drawCollage(
+/**
+ * The single-card layout, whole: header, the seed card, score, rank and URL on the fixed
+ * baselines it has always had. Used when there is nothing to make a collage of.
+ */
+function drawHeroCard(
   ctx: CanvasRenderingContext2D,
+  spec: ShareCardSpec,
+  art: HTMLImageElement | null
+): void {
+  drawHeroHeader(ctx, spec.eyebrow);
+  drawHero(ctx, spec.event, art);
+  drawScoreWithUnit(ctx, spec.score, spec.scoreLabel, 1158);
+  if (spec.detail) {
+    fittedCenteredText(ctx, spec.detail, 1246, 940, '500', 44, BODY_FONT, INK_MUTED);
+  }
+  // No divider rule above the URL: decorative, and it cost 40px of a tight budget.
+  fittedCenteredText(ctx, spec.url, 1310, 900, '500', 48, BODY_FONT, INK);
+}
+
+/**
+ * The collage card, whole. Every position comes from `shareCardLayout`. The tiles are
+ * framed paintings in the order given: no names, no years.
+ *
+ * The URL is full-strength ink against a muted rank line, and stands apart from the result
+ * above it: it is the line that has to survive being read off a phone screen, and the
+ * files-only share tier sends this image with no text at all.
+ */
+function drawCollageCard(
+  ctx: CanvasRenderingContext2D,
+  spec: ShareCardSpec,
   tiles: HistoricalEvent[],
   art: Array<HTMLImageElement | null>
 ): void {
-  const { tileWidth, tileHeight, cells } = shareGridLayout(tiles.length);
+  const layout = shareCardLayout({
+    tileCount: tiles.length,
+    hasEyebrow: !!spec.eyebrow,
+    hasRank: !!spec.detail,
+  });
+  const { wordmark, eyebrow, score, rank, url } = FLOW;
+  const textWidth = WIDTH - 2 * FLOW.side;
+
+  fittedCenteredText(
+    ctx,
+    'When?',
+    layout.wordmarkY,
+    textWidth,
+    '600',
+    wordmark.size,
+    DISPLAY_FONT,
+    INK
+  );
+  if (spec.eyebrow && layout.eyebrowY !== null) {
+    fittedCenteredText(
+      ctx,
+      spec.eyebrow.toUpperCase(),
+      layout.eyebrowY,
+      textWidth,
+      '500',
+      eyebrow.size,
+      BODY_FONT,
+      INK_MUTED
+    );
+  }
+
+  const { tileWidth, tileHeight, cells } = layout.grid;
   const radius = Math.min(COLLAGE_RADIUS, Math.min(tileWidth, tileHeight) / 8);
   cells.forEach((cell, i) => {
     drawFramedArt(
@@ -494,6 +634,24 @@ function drawCollage(
       { blur: 26, offsetY: 10 }
     );
   });
+
+  drawScoreWithUnit(ctx, spec.score, spec.scoreLabel, layout.scoreY, {
+    score: score.size,
+    unit: score.unit,
+  });
+  if (spec.detail && layout.rankY !== null) {
+    fittedCenteredText(
+      ctx,
+      spec.detail,
+      layout.rankY,
+      textWidth,
+      '500',
+      rank.size,
+      BODY_FONT,
+      INK_MUTED
+    );
+  }
+  fittedCenteredText(ctx, spec.url, layout.urlY, textWidth, '500', url.size, BODY_FONT, INK);
 }
 
 /**
@@ -525,25 +683,8 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
 
     ctx.textAlign = 'center';
     ctx.textBaseline = 'alphabetic';
-    drawHeader(ctx, spec.eyebrow, collage);
-    if (collage) drawCollage(ctx, tiles, tileArt);
-    else drawHero(ctx, spec.event, backdropArt);
-
-    // --- Score: numeral and unit as one group, rank on its own line beneath ---
-    // Playfair Display sets old-style figures: 3, 4, 5, 7 and 9 drop well below the
-    // baseline. At 175px that overshoot is ~37px, so anything sitting *under* the numeral
-    // needs far more clearance than the cap height suggests — "11" looked fine at a tight
-    // gap and "23" collided. Do not close this gap up when retuning.
-    drawScoreWithUnit(ctx, spec.score, spec.scoreLabel, 1158);
-    if (spec.detail) {
-      fittedCenteredText(ctx, spec.detail, 1246, 940, '500', 44, BODY_FONT, INK_MUTED);
-    }
-
-    // --- Footer. No divider rule above it: decorative, and it cost 40px of a tight budget.
-    // Full-strength ink and a clear gap above, against a muted stat line: at equal weight
-    // the two ran together as one block, and this is the line that has to survive being
-    // read off a phone screen.
-    fittedCenteredText(ctx, spec.url, 1310, 900, '500', 48, BODY_FONT, INK);
+    if (collage) drawCollageCard(ctx, spec, tiles, tileArt);
+    else drawHeroCard(ctx, spec, backdropArt);
 
     // JPEG, not PNG: the backdrop is photographic, so PNG runs to several MB and some
     // share targets choke on large payloads.

@@ -44,7 +44,7 @@ const BUBBLE_WIDTH = 400;
  * How many cards the collage is drawn with. 1 is a game with nothing placed, which falls back
  * to the starting card alone; the rest are the sizes the layout has to hold up at.
  */
-const TILE_COUNTS = [1, 2, 4, 9, 15, 20, 36];
+const TILE_COUNTS = [1, 2, 4, 9, 15, 17, 20, 36];
 
 /** `?preset=custom&tiles=36` opens on that card, so a script can screenshot each one. */
 function initialFromQuery(): { preset: Preset; tiles: number } {
