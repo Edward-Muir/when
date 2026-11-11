@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
-import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
+import CardFace from './CardFace';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
-export type CardSize = 'normal' | 'large' | 'landscape';
+export type CardSize = 'normal' | 'large' | 'landscape' | 'square';
 
 interface CardProps {
   event: HistoricalEvent;
@@ -45,12 +45,15 @@ const Card: React.FC<CardProps> = ({
         return 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]';
       case 'landscape':
         return 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]';
+      // The hand card: the art is square, so this is the one size that shows all of it.
+      case 'square':
+        return 'w-[168px] h-[168px]';
     }
   };
 
   const isLandscape = size === 'landscape';
 
-  // Landscape layout: image left (40%), title right (60%)
+  // Landscape layout: art bleeding into the card's colour, title on the right (CardFace)
   if (isLandscape) {
     return (
       <div
@@ -68,40 +71,12 @@ const Card: React.FC<CardProps> = ({
         style={rotationStyle}
         onClick={onClick}
       >
-        {/* Image section (40% width) */}
-        <div className="w-[40%] h-full relative overflow-hidden">
-          {hasImage ? (
-            <img
-              src={getImageUrl(event.image_url, 'thumbnail')}
-              alt=""
-              loading={priority ? 'eager' : 'lazy'}
-              fetchPriority={priority ? 'high' : 'auto'}
-              decoding="async"
-              onError={() => setImageError(true)}
-              className="w-full h-full object-cover"
-            />
-          ) : (
-            <div className="w-full h-full flex items-center justify-center bg-border/30">
-              <CategoryIcon category={event.category} className="text-text-muted w-8 h-8" />
-            </div>
-          )}
-        </div>
-        {/* Title section (60% width) */}
-        <div
-          className="w-[60%] h-full flex items-center px-2 py-1"
-          style={getEventColorStyle(event)}
-        >
-          <span
-            className={`${getEventTextClass(event)} text-sm leading-tight line-clamp-3 font-body`}
-          >
-            {event.friendly_name}
-          </span>
-        </div>
+        <CardFace event={event} priority={priority} />
       </div>
     );
   }
 
-  // Portrait layout (normal/large): image with title overlay
+  // Portrait and square layouts (normal/large/square): image with title overlay
   return (
     <div
       className={`
@@ -126,7 +101,9 @@ const Card: React.FC<CardProps> = ({
             alt=""
             loading={priority ? 'eager' : 'lazy'}
             fetchPriority={priority ? 'high' : 'auto'}
-            decoding="async"
+            // The hand's squares decode with their first paint: the art is already in the
+            // cache (useImagePrefetch), and an async decode shows an empty card first.
+            decoding={size === 'square' ? 'sync' : 'async'}
             onError={() => setImageError(true)}
             className="w-full h-full object-cover"
           />

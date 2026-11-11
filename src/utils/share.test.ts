@@ -3,8 +3,12 @@ import {
   generateChallengeInviteText,
   generateDailyShareText,
   generateShareText,
+  shareDailyResult,
+  shareResults,
+  shareTiles,
 } from './share';
-import { WhenGameState } from '../types';
+import { renderShareFile, ShareCardSpec } from './shareImage';
+import { FailedPlacement, HistoricalEvent, WhenGameState } from '../types';
 
 // The canvas renderer is irrelevant to the text format and unavailable under jsdom.
 jest.mock('./shareImage', () => ({
@@ -323,5 +327,106 @@ describe('the line every share carries', () => {
     for (const text of strings) {
       expect(text).not.toContain('—');
     }
+  });
+});
+
+/**
+ * The card's art is the timeline as a collage. What has to hold is what the collage must
+ * never do: show the cards in date order. The Daily deals everyone the same deck, so a grid in
+ * timeline order is the day's answer, posted to friends who have not played. See the header of
+ * `shareImage.ts`.
+ */
+describe('the collage a share shows', () => {
+  const mockedRender = renderShareFile as jest.MockedFunction<typeof renderShareFile>;
+  const card = (year: number): HistoricalEvent =>
+    ({ name: `event-${year}`, friendly_name: `Event ${year}`, year }) as HistoricalEvent;
+
+  // Fifteen cards in date order, as `timeline` is always kept.
+  const timeline = Array.from({ length: 15 }, (_, i) => card(1000 + i * 50));
+  const missed: FailedPlacement[] = [{ event: card(1025), attemptedPosition: 0, seq: 3 }];
+  const names = (events: HistoricalEvent[] = []) => events.map((event) => event.name);
+  const sorted = (events: HistoricalEvent[] = []) => [...names(events)].sort();
+  const lastSpec = (): ShareCardSpec =>
+    mockedRender.mock.calls[mockedRender.mock.calls.length - 1][0];
+
+  beforeEach(() => {
+    mockedRender.mockClear();
+    // Take the share sheet's place, so nothing falls through to the clipboard.
+    Object.assign(navigator, { share: jest.fn().mockResolvedValue(undefined) });
+  });
+
+  describe('shareTiles', () => {
+    it('keeps every card and loses the order', () => {
+      const tiles = shareTiles(timeline, '2026-11-11');
+      expect(sorted(tiles)).toEqual(sorted(timeline));
+      expect(names(tiles)).not.toEqual(names(timeline));
+      // Not merely reversed either.
+      expect(names(tiles)).not.toEqual(names(timeline).reverse());
+    });
+
+    it('is the same every time for one game, so every share route draws one image', () => {
+      expect(names(shareTiles(timeline, '2026-11-11'))).toEqual(
+        names(shareTiles(timeline, '2026-11-11'))
+      );
+    });
+
+    it('changes with the game', () => {
+      expect(names(shareTiles(timeline, '2026-11-11'))).not.toEqual(
+        names(shareTiles(timeline, '2026-11-12'))
+      );
+    });
+
+    it('does not reorder the timeline it was given', () => {
+      const before = names(timeline);
+      shareTiles(timeline, '2026-11-11');
+      expect(names(timeline)).toEqual(before);
+    });
+  });
+
+  it('gives the daily card the timeline, shuffled, without the missed cards', async () => {
+    await shareResults(
+      makeState({
+        gameMode: 'daily',
+        timeline,
+        seedEventName: timeline[4].name,
+        failedPlacements: missed,
+        placementHistory: [...Array(14).fill(true), false],
+        lastConfig: { mode: 'daily', dailySeed: '2026-11-11' } as WhenGameState['lastConfig'],
+      })
+    );
+
+    const spec = lastSpec();
+    expect(sorted(spec.tiles)).toEqual(sorted(timeline));
+    expect(names(spec.tiles)).not.toEqual(names(timeline));
+    expect(names(spec.tiles)).not.toContain(missed[0].event.name);
+    // One painting per event counted: the daily's number includes the starting card.
+    expect(spec.tiles).toHaveLength(Number(spec.score));
+    expect(spec.event?.name).toBe(timeline[4].name);
+  });
+
+  it('gives a custom card the same treatment', async () => {
+    await shareResults(
+      makeState({
+        timeline,
+        seedEventName: timeline[0].name,
+        failedPlacements: missed,
+        placementHistory: Array(14).fill(true),
+      })
+    );
+
+    const spec = lastSpec();
+    expect(sorted(spec.tiles)).toEqual(sorted(timeline));
+    expect(names(spec.tiles)).not.toEqual(names(timeline));
+  });
+
+  it("draws the home screen's share of the day from the same shuffle as game over", async () => {
+    await shareDailyResult('2026-11-11', 'China', 14, { seedEvent: timeline[4], timeline });
+    expect(names(lastSpec().tiles)).toEqual(names(shareTiles(timeline, '2026-11-11')));
+  });
+
+  it('falls back to the starting card alone when there is no stored board', async () => {
+    await shareDailyResult('2026-11-11', 'China', 14, { seedEvent: timeline[4] });
+    expect(lastSpec().tiles).toBeUndefined();
+    expect(lastSpec().event?.name).toBe(timeline[4].name);
   });
 });

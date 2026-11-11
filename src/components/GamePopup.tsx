@@ -1,18 +1,17 @@
-import React from 'react';
-import { Check, Trophy, X } from 'lucide-react';
+import React, { useState } from 'react';
+import { Check, X } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatEventYear } from '../utils/gameLogic';
 import { DailyResult } from '../utils/playerStorage';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import CategoryIcon from './CategoryIcon';
-import LeaderboardSubmit from './LeaderboardSubmit';
-import Modal, { ModalDismissMode } from './ui/Modal';
+import Modal, { ModalDismissMode, ModalProps } from './ui/Modal';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
-import { getThemeOutcome } from '../utils/themeOutcome';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
 import { useEventDetail } from '../hooks/useEventDetail';
 import EventDetailText from './EventDetailText';
+import GameOverGallery, { GAME_OVER_TITLE_ID } from './gameOver/GameOverGallery';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -156,139 +155,6 @@ function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: 
   );
 }
 
-// Sub-component for game over header
-function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
-  const { winners, players } = gameState;
-  const hasWinner = winners.length > 0;
-  const isSinglePlayer = players.length === 1;
-  const { survived, perfect } = getThemeOutcome(gameState);
-
-  const getWinnerText = () => {
-    if (isSinglePlayer) {
-      // Reaching the end of the deck is its own outcome, and on a curated theme it is the
-      // good one — "Game Over" reads as failure for a player who just got through the lot.
-      if (perfect) return 'Perfect Clear!';
-      if (survived) return 'Theme Cleared!';
-      return 'Game Over';
-    }
-    if (!hasWinner) {
-      return 'Game Over';
-    }
-    if (winners.length === 1) {
-      return `${winners[0].name} Wins!`;
-    }
-    const names = winners.map((w) => w.name);
-    const lastWinner = names.pop();
-    return `${names.join(', ')} & ${lastWinner} Win!`;
-  };
-
-  return (
-    <div className="px-4 py-3 border-b border-border">
-      <h2 className="text-lg font-display font-semibold text-text">{getWinnerText()}</h2>
-    </div>
-  );
-}
-
-// Sub-component for game over content (stats only, header moved out)
-function GameOverContent({
-  gameState,
-  dailyResult,
-  leaderboard,
-}: {
-  gameState: WhenGameState;
-  dailyResult?: DailyResult | null;
-  leaderboard?: DailyLeaderboard;
-}) {
-  const { winners, players, bestStreak } = gameState;
-  const hasWinner = winners.length > 0;
-  const isSinglePlayer = players.length === 1;
-  // Gold for a win: a multiplayer winner, or a single player who got through a curated theme.
-  const { survived } = getThemeOutcome(gameState);
-  const trophyWon = hasWinner || survived;
-
-  const getPlayerStats = (player: Player) => {
-    const correct = player.placementHistory.filter((p) => p).length;
-    const total = player.placementHistory.length;
-    return { correct, total };
-  };
-
-  const getEncouragingMessage = (eventsPlaced: number): string | null => {
-    if (eventsPlaced >= 12) return 'Legendary!';
-    if (eventsPlaced >= 8) return 'History buff!';
-    if (eventsPlaced >= 5) return 'Impressive!';
-    if (eventsPlaced >= 3) return 'Good start!';
-    return null;
-  };
-
-  return (
-    <div className="px-4 py-4">
-      {/* Trophy icon */}
-      <div className="flex justify-center mb-4">
-        <Trophy
-          data-testid="game-over-trophy"
-          className={`w-10 h-10 ${trophyWon ? 'text-accent' : 'text-text-muted'}`}
-        />
-      </div>
-
-      {/* Stats section */}
-      <div className="space-y-3">
-        {isSinglePlayer ? (
-          <div className="text-center">
-            <p className="text-text font-body">
-              <span className="text-2xl font-bold font-mono">
-                {getPlayerStats(players[0]).correct}
-              </span>
-              <span className="text-text-muted">
-                {' '}
-                {getPlayerStats(players[0]).correct === 1 ? 'event' : 'events'} placed
-              </span>
-            </p>
-            {bestStreak >= 2 && (
-              <p className="text-text-muted text-sm mt-1 font-body">Best streak: {bestStreak}x</p>
-            )}
-            {getEncouragingMessage(getPlayerStats(players[0]).correct) && (
-              <p className="text-accent font-medium mt-2">
-                {getEncouragingMessage(getPlayerStats(players[0]).correct)}
-              </p>
-            )}
-          </div>
-        ) : (
-          <div className="space-y-2">
-            {players.map((player) => {
-              const stats = getPlayerStats(player);
-              const isWinner = winners.some((w) => w.id === player.id);
-              return (
-                <div
-                  key={player.id}
-                  className={`flex items-center justify-between px-3 py-2 rounded-lg ${
-                    isWinner ? 'bg-accent/20' : 'bg-bg'
-                  }`}
-                >
-                  <span className="font-body text-text">
-                    {player.name}
-                    {isWinner && <Trophy className="inline-block w-4 h-4 ml-1 text-accent" />}
-                  </span>
-                  <span className="font-mono text-text">
-                    {stats.correct}/{stats.total}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
-
-      {/* Leaderboard submit section for daily mode */}
-      {dailyResult && leaderboard && <LeaderboardSubmit leaderboard={leaderboard} />}
-
-      {/* No share here, and no "come back tomorrow" either. This popup is the *first* screen
-          of the end-of-game sequence (see `useEndOfGameSequence`); both belong on the last
-          one, `ShareStepPopup`, which is where the player has seen their milestones and
-          badges and is actually finished. */}
-    </div>
-  );
-}
-
 /**
  * How the game-over popup may be left. Derived, never tracked — the flag this replaces was kept
  * in sync by a callback, and when it disagreed with the leaderboard the popup became impossible
@@ -304,6 +170,34 @@ function gameOverDismiss(showsSubmitForm: boolean, canSubmit: boolean): ModalDis
   if (showsSubmitForm) return 'backdrop';
   // Nothing to submit, so tap anywhere — like the reveal popups that follow.
   return 'tap-advance';
+}
+
+/**
+ * The Modal shell of the game-over popup: wide, so the gallery's paintings are as large as the
+ * screen allows, and scrollable, because a Daily card with the leaderboard block is taller than
+ * a short phone.
+ *
+ * While the gallery's tiles are still flying in, the card's own surface is held back so they
+ * land on the scrim and the popup forms under them. Colours only: the card's opacity is never
+ * touched (docs/mobile-ios/index.md), and its `transition-colors` eases the surface in.
+ *
+ * A function, not inline props, because `GamePopup` sits on the complexity ceiling.
+ */
+const BARE_CARD: React.CSSProperties = {
+  backgroundColor: 'transparent',
+  borderColor: 'transparent',
+  boxShadow: 'none',
+};
+
+function gameOverShell(
+  surface: boolean
+): Pick<ModalProps, 'size' | 'scroll' | 'labelledBy' | 'cardStyle'> {
+  return {
+    size: 'wide',
+    scroll: 'card',
+    labelledBy: GAME_OVER_TITLE_ID,
+    cardStyle: surface ? undefined : BARE_CARD,
+  };
 }
 
 // Sub-component for event popup content (description, correct, incorrect)
@@ -415,6 +309,10 @@ const GamePopup: React.FC<GamePopupProps> = ({
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
 
+  // Whether the game-over card shows its surface yet. False until the gallery says so, which
+  // is at once when nothing travels. See `gameOverShell`.
+  const [gallerySurface, setGallerySurface] = useState(false);
+
   const showsProse = showsProseFor(type, showYear, event);
   // The shard is fetched only where the prose is going to be rendered — never for a card in hand.
   const detail = useEventDetail(event?.name ?? null, showsProse);
@@ -429,29 +327,18 @@ const GamePopup: React.FC<GamePopupProps> = ({
     ? 'backdrop'
     : gameOverDismiss(showsSubmitForm, leaderboard?.unavailable === false);
 
+  // Two modals, both always mounted, each driven by its own `open`. Sharing one would hand the
+  // game-over card whatever the last card popup left on it: in multiplayer the final "Wrong!"
+  // popup is still closing in that card's colour when the game-over popup opens.
   return (
-    <Modal
-      open={isVisible}
-      onDismiss={onDismiss}
-      dismiss={dismiss}
-      cardStyle={!isGameOver && event && !tombstone ? getEventColorStyle(event) : undefined}
-    >
-      {isGameOver && gameState ? (
-        <>
-          <GameOverHeader gameState={gameState} />
-          <GameOverContent
-            gameState={gameState}
-            dailyResult={dailyResult}
-            leaderboard={leaderboard}
-          />
-          {dismiss !== 'locked' && (
-            <p className="px-4 pb-4 text-center font-body text-sm text-text-muted">
-              {dismiss === 'backdrop' ? 'Tap outside to continue' : 'Tap to continue'}
-            </p>
-          )}
-        </>
-      ) : (
-        event && (
+    <>
+      <Modal
+        open={!isGameOver && isVisible}
+        onDismiss={onDismiss}
+        dismiss={dismiss}
+        cardStyle={event && !tombstone ? getEventColorStyle(event) : undefined}
+      >
+        {event && (
           <EventPopupContent
             type={type}
             event={event}
@@ -463,9 +350,25 @@ const GamePopup: React.FC<GamePopupProps> = ({
             onDismiss={onDismiss}
             closeEnough={closeEnough}
           />
-        )
-      )}
-    </Modal>
+        )}
+      </Modal>
+      <Modal
+        open={isGameOver && isVisible}
+        onDismiss={onDismiss}
+        dismiss={dismiss}
+        {...gameOverShell(gallerySurface)}
+      >
+        {gameState && (
+          <GameOverGallery
+            gameState={gameState}
+            dailyResult={dailyResult}
+            leaderboard={leaderboard}
+            dismiss={dismiss}
+            onSurfaceChange={setGallerySurface}
+          />
+        )}
+      </Modal>
+    </>
   );
 };
 

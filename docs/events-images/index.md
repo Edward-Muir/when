@@ -138,6 +138,75 @@ in `deprecated.json`, which is absent from `manifest.json` and therefore never i
 is what makes an unfiltered extraction run safe: everything the manifest reaches already has a
 colour and dimensions, so only genuinely new events are processed.
 
+## The card face: art bleeds into the colour
+
+Every landscape card (hand, drag overlay, placed row, tombstone) draws its inside with one
+component, `CardFace.tsx`: the art covers the left 70% and a mask fades it into the card's
+`color`, with the title right-aligned on the right half. The Archive's day rows use the same
+mask (`.card-art-fade`) with their own text block.
+
+- **Card and row sizes are untouched**, so nothing in the drag maths or tombstone footprint moved.
+- **The crop is anchored at `50% 35%`.** The art is the square `thumbnail` rung in a 2:1 slot;
+  faces and skylines sit above centre. No new rung was added, and none should be.
+- **The title half must stay readable.** The title overlaps only the faintest part of the fade
+  and carries a halo matched to `text_color`. Widening the art or moving the fade later eats
+  into long names ("Karakhanid Khanate Administration" is the test case).
+- **The Archive art is narrower (58%) and its text left-aligned**, because dark text on the
+  surface has no card colour behind it.
+- **A card never changes its face with the interaction.** Titles are always present. Hiding the
+  fanned titles was tried and left the next card blank whenever the top card was lifted.
+
+### The hand card is a square
+
+The hand is the one place the whole painting is shown: `Card`'s `square` size (168px), title on
+a dark scrim along the bottom, the rest of the hand fanned behind it as squares. The board is
+unchanged, so the hand and the board show the same card in two shapes.
+
+- **The fan shows the hand, five cards at most** (`MAX_FAN_CARDS`, `ActiveCardDisplay.tsx`): the
+  top card and up to four behind it, each 6px further right and 1.25 degrees more turned. A
+  standard hand is five, so the stack is the hand and thins by one with every miss, and a swap
+  sends the top card to the back. A larger hand still shows five; the cap is deliberate, since
+  more edges than that is clutter and the fan would run into the swap button.
+- **The square becomes the landscape card on pickup, as one card changing shape**
+  (`HandDragOverlay.tsx`), not two cards cross-fading. The landscape card's art is 70% of its
+  width, which at phone size is the square's own 168px, so the painting never resizes: its frame
+  closes to the row's height around the board's focal line, the card's colour slides out to the
+  right, and the title crosses from the bottom of the art to the colour. At the end it is pixel
+  for pixel the landscape `Card`, which is also the drop ghost.
+- **One number drives it**: `morph` (0 = square, 1 = landscape), a motion value owned by
+  `useDragAndDrop` and sprung to 1 on pickup. Every part of the overlay is a `useTransform` of
+  it. It has to be a motion value: dnd-kit freezes the overlay's props during a drop animation,
+  and the way home plays the morph in reverse.
+- **Both put-downs are our own drop animations** (`dropAnimationFor`). Back to the hand: the
+  overlay box flies home while `morph` runs back to 0. dnd-kit's default cannot be used: it aims
+  the overlay's first child at the hand card, the first child is the morphing card, and the two
+  corrections stack into an overshoot. Onto the board: the card settles into its row's slot and
+  comes down from its 5% lift, then fades as the row takes over.
+- **The pickup is measured off the card under the pointer** (`readGrab`), not dnd-kit's
+  `active.rect`, which is empty on the first drag and stale on later ones.
+- **Reduced motion** gets the landscape card from the first frame and no drop animation.
+- **The lifted card leaves the hand at once** (`invisible`, not a half-opacity ghost): the
+  overlay is that card, and a ghost left behind shows the next card's title through it.
+- **The fanned cards are dimmed with `brightness`, never opacity.** Translucent squares show
+  the title underneath through their own.
+- **The swap button's darker fill is `active:` plus a hover guarded by `@media (hover: hover)`.**
+  A bare `hover:bg-border` sticks on a touch screen: the tap leaves `:hover` set until something
+  else is touched, and a button tapped repeatedly looks held down for good. About 50 other
+  buttons still carry the bare form; Tailwind's `hoverOnlyWhenSupported` would fix them all.
+- **A swap is shown in the cards and on the button.** The fanned cards are keyed by card and
+  animate to their pose, so each steps forward a place; the new top card eases in from the
+  first fan position and the old one fades in at the back; the button's arrows turn half a
+  circle. The top card's shuffle wrapper sits inside the hint wrapper, whose transform the
+  onboarding hints animate in CSS. Reduced motion gets none of it.
+- **The swap button sits beside the stack, 44px**, 40px from the top card so it clears the fan. On the card it covered art
+  or title, whichever corner it took.
+- **The hand bar is `.hand-bar`: 184px plus the bottom safe-area inset**, up from 120px, and only
+  while a hand is showing; game over goes back to 120px. That costs the board 64px, about three
+  quarters of a row: a 375x667 phone shows 4.85 rows where it showed 5.58. The inset is added
+  rather than absorbed, or a home-indicator phone would squeeze the card out of the bar.
+- **`CardFace`'s 16px title inset is a leftover** from when the hand fanned landscape cards. It
+  still reads well; it is no longer load-bearing.
+
 ## `friendly_name` is capped at 35 characters
 
 `MAX_FRIENDLY_NAME_LENGTH`, enforced by `src/utils/eventNameLength.test.ts`, so a verbose title
@@ -304,6 +373,14 @@ Three layers, in order of increasing scope:
 | `modeSelect` / `gameOver` | the intro-animation cards             | home dwell warms the next intro                                                     |
 | `transitioning`           | seed timeline + dealt hands only      | no pop-in entering play — deliberately not the whole deck, which won't finish in 3s |
 | `playing`                 | next 5 deck cards, re-warmed per draw | drawn cards appear instantly                                                        |
+
+**The hand is decoded, not just downloaded** (`holdDecoded`). The hand mounts all at once when
+play starts, up to five square paintings on their first frame. Measured in Chromium at 1.5 Mbps
+the five thumbnails finish about 2.5 seconds before the hand appears, so the network was never
+the problem; a view that mounts with several cached images still has to decode each one. During
+`transitioning` the orchestrator holds a decoded `Image` per hand card, the hand's `<img>`s use
+`decoding="sync"`, and the fanned cards are `priority` (eager) since they are always on screen.
+Same `thumbnail` URLs throughout: no new rung and no extra requests.
 
 **The orchestrator owns look-ahead warming only.** Never warm the `detail` rung per render in
 `Card.tsx` / `TimelineEvent.tsx`: that fetches a full-size popup image for every card on screen

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.39.0](https://github.com/Edward-Muir/when/compare/v1.38.0...v1.39.0) (2026-11-11)
+
+
+### Features
+
+* **game-over:** end on a gallery of the timeline and share it as a collage ([#134](https://github.com/Edward-Muir/when/issues/134)) ([36b91b9](https://github.com/Edward-Muir/when/commit/36b91b962a8799e264b265fbdf522075038cbcdc))
+
+## [1.38.0](https://github.com/Edward-Muir/when/compare/v1.37.0...v1.38.0) (2026-11-11)
+
+
+### Features
+
+* **cards:** square hand card and art that bleeds across each card ([#133](https://github.com/Edward-Muir/when/issues/133)) ([a46cddc](https://github.com/Edward-Muir/when/commit/a46cddc8caec415375a3463aac4e197211eadfcc))
+
 ## [1.37.0](https://github.com/Edward-Muir/when/compare/v1.36.0...v1.37.0) (2026-10-27)
 
 
