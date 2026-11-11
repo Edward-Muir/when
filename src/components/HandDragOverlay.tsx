@@ -145,10 +145,10 @@ const HandDragOverlay: React.FC<HandDragOverlayProps> = ({ event, carry }) => {
 };
 
 /** How long the card takes to go home to the hand, ms. The reverse morph runs on the same clock. */
-export const RETURN_TO_HAND_MS = 240;
+export const RETURN_TO_HAND_MS = 180;
 export const RETURN_EASING = [0.2, 0.8, 0.2, 1] as const;
 /** How long the card takes to seat itself in its row after a drop on the board, ms. */
-const SETTLE_MS = 170;
+const SETTLE_MS = 130;
 
 const DROP_EASING = `cubic-bezier(${RETURN_EASING.join(',')})`;
 

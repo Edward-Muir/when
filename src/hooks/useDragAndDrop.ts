@@ -37,11 +37,11 @@ interface UseDragAndDropReturn {
   carry: DragCarry;
 }
 
-/** Pickup: a soft, critically damped spring, about 300ms and no overshoot. */
-const PICKUP_SPRING = { type: 'spring' as const, stiffness: 260, damping: 32, mass: 1 };
+/** Pickup: a critically damped spring, mostly done in 165ms, settled by about 375ms, no overshoot. */
+const PICKUP_SPRING = { type: 'spring' as const, stiffness: 520, damping: 45, mass: 1 };
 /** The way home runs on dnd-kit's return flight; keep in step with HandDragOverlay's RETURN_*. */
 const RETURN_TWEEN = {
-  duration: 0.24,
+  duration: 0.18,
   ease: [0.2, 0.8, 0.2, 1] as [number, number, number, number],
 };
 
