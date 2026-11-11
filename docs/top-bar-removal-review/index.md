@@ -1,19 +1,22 @@
 # Top bar removal: findings, options and a recommendation
 
 **Status:** a review, nothing built. It was made on the labelled-tab-bar branch (PR #135) by
-reading the source and driving the real app at v1.39.0. It waits on the choices listed under
+reading the source and driving the real app at v1.39.0. Round one's three options (a portrait
+button in each heading, settings folded into Stats, a sixth "More" tab) were rejected as moving
+chrome around; they are summarised at the end. Round two is three concepts built on the game's
+own objects, and it waits on the choices listed under
 [Decisions that are yours](#decisions-that-are-yours).
 
-The sketches (phone frames at 402x874 and 375x667, light and dark, today beside each proposal)
-are published at <https://claude.ai/artifact/JXzsqwCtNXm9tcZSCs74Qe>. The page is private to its owner; a session can read it with
-the Artifact tool. The proposals on it are the running app restyled in the browser, so the
-sizes are real; no app code was changed to make them.
+The prototypes are published at <https://claude.ai/artifact/JXzsqwCtNXm9tcZSCs74Qe>: a working
+phone frame per concept at 402x874 and 375x667, light and dark, that responds to tap and swipe.
+The page is private to its owner; a session can read it with the Artifact tool. The frames are
+the running app's own screens with mock controls laid over them, so the sizes are real; no app
+code was changed to make them.
 
 ## The finding in one paragraph
 
-Removing the top bar gives back **56px of board** and **68px of Daily hero** at both sizes, and
-every option gives back the same amount: the options differ only in where the bar's contents
-go. Nothing in the bar is used often enough to earn a permanent row. The menu's rows are
+Removing the top bar gives back **56px of board** and **68px of Daily hero** at both sizes,
+whatever replaces it; a full-bleed Daily cover raises the hero's gain to 165px. Nothing in the bar is used often enough to earn a permanent row. The menu's rows are
 set-once or rare, Home is used at most once a game and the end-of-game card already holds it,
 and Restart is rarer still. The work is mostly in what `TopBar` owns besides the bar.
 
@@ -73,69 +76,98 @@ item works; no analytics were read.
 | Leave confirm                                            | Game                          | `useLeaveGame`, rendered by `Game`                        | Unaffected: it never lived in the bar        |
 | Tab path helpers (`pathForNav`, `navForPath`, `NavDest`) | Exported from `TopBar.tsx`    | Imported by `App`, `homeTabs`, `pages/Home`, `ModeSelect` | Must move before the file goes               |
 
-## The options
+## Where the ideas come from
 
-Each covers Home and the game. All three hide the bar on both screens and give the pixels in
-the table above.
+- **A thing in progress is set down, not quit.** Music and podcast apps shrink what is playing
+  into a bar above the tabs, and iOS 26 builds that into the tab bar as a
+  [bottom accessory](https://developer.apple.com/design/human-interface-guidelines/tab-bars).
+- **The avatar is the menu.** [Google Play](https://androidcentral.com/new-google-play-store-ui-removes-hamburger-menu)
+  and [Google Messages](https://sammobile.com/news/google-messages-app-gets-rid-of-android-hamburger-menu)
+  dropped the drawer for the profile picture. [Discord's You bar](https://discord.com/blog/you-bar),
+  [WhatsApp's profile tab](https://wabetainfo.com/whatsapp-is-widely-rolling-out-a-new-profile-tab-on-ios/)
+  and the [NYT Games Me tab](https://thenewyorktimeshelpcenter.helpjuice.com/360052273251-The-New-York-Times-Games-app)
+  put settings behind identity.
+- **Pause belongs inside the fiction.** Writing on
+  [diegetic pause menus](https://www.wayline.io/blog/designing-immersive-pause-menus) argues for
+  folding pause into the game's own world, and notes a pause screen can be rich because nobody
+  is playing while it is up.
+- **Every gesture needs a visible twin.** Pull-down and edge swipes collide with system
+  gestures on both platforms
+  ([Android](https://medium.com/androiddevelopers/gesture-navigation-immersive-modes-43f2d37a925d),
+  [iOS](https://itch.io/t/3016335/how-to-deal-with-ios-gestures-for-browser-games)), so each
+  gesture below also has a handle to tap.
 
-### A. Portrait on Home, one menu button in the hand bar (recommended)
+## The concepts
 
-- **Home.** One 44px button showing the player's own portrait, pinned top right over the pager
-  beside each tab's heading. It opens the drawer as it is today. The portrait carries the
-  Profile "new" dot, which is invisible today until the menu is open.
-- **Game.** One 44px menu button in the hand bar's top-right corner, 18px above Swap. It opens a
-  game menu on `ui/Modal`: the theme name, Home, Restart in a Custom or Archive game, How to
-  Play, and Settings (the drawer). Home goes through `leave.requestHome` as now.
-- **Theme name.** Off the playing screen; it heads the game menu and stays on the intro popup
-  and the Daily card.
-- **Pager, tab bar, paths.** Untouched. Five tabs, 64px at 320.
-- **Drag.** The hand bar is `bottom-bar-zone`, where a drop returns the card to the hand, so the
-  button is not on a placement target.
-- **Costs.** Home becomes two taps mid-game (system Back is still one). On the Timeline tab the
-  heading wraps to two lines at 375 with Filter and the portrait beside it, which costs that tab
-  48px unless the heading becomes "Timeline". Settings are not reachable from the game-over
-  board without going Home.
-- **Build.** Small to medium. A game-menu modal and a hook for its state (`Game.tsx` is on the
-  complexity ceiling), the Home button, and the common work below.
-- **Decisions touched.** None undone. "The menu button carries no dot" changes, because the
-  button is now the portrait.
+All three hide the bar on both screens and give the board its 56px.
 
-### B. Settings fold into Stats, the counter opens the game menu
+### 1. Put your cards down (recommended)
 
-- **Home.** No drawer. The Stats tab gains the portrait beside its heading (one tap to the
-  picker) and a "Settings and help" section at its foot holding the other ten rows and the
-  version.
-- **Game.** Nothing new on screen. The counter's existing popup grows into the game menu: the
-  three stats, then Home, Restart and How to Play.
-- **Pager, tab bar, paths.** Untouched, though Stats gets longer and may want the label "You".
-- **Costs.** Mid-game the only visible way out is an unlabelled counter, and iOS has no system
-  Back; the `stats` hint shows once. Settings sit under the year grid, the scores and the badges,
-  so How to Play is a long scroll for a new player. Dark mode and Reset Hints are unreachable
-  mid-game.
-- **Build.** Medium to large. `Menu.tsx` is dissolved into a section, `StatsPanel` and
-  `StatsPopup` are reworked, and the Share App toast needs a new owner.
-- **Decisions touched.** It removes the drawer, so "the Menu drawer registers with the back
-  stack" has nothing left to register. It moves How to Play off the screen where "a new player
-  looks for the rules". It best honours "nothing in the burger menu gets found" for Profile and
-  worst for everything else.
+You never quit a game; you put your hand down and it waits until you pick it up.
 
-### C. "More" on the tab bar, a floating button on the board
+- **Game.** No bar and no buttons, only a handle on the hand bar. Swipe the hand down, or tap
+  the handle, and the game drops away to Home. System Back does the same.
+- **Home.** A game in progress is a small hand docked above the tab bar on every tab: the top
+  card's art, the theme name, "3 placed, 4 cards left", and Pick up. Restart sits on it for
+  Custom and Archive games.
+- **The Daily tab becomes a cover.** Art to the top edge, with the wordmark and the player's
+  portrait over it. Measured: the hero grows from 398 to 563 at 402x874 and from 191 to 356 at
+  375x667, **+165px** at both.
+- **Settings.** Behind the portrait, as a sheet. The portrait carries the "new" dot. How to
+  Play is there, one set-down away mid-game.
+- **Theme name.** On the small hand and the intro popup; off the playing screen.
+- **Drag.** The handle is on the hand bar, which is `bottom-bar-zone`: a card dropped there
+  already returns to the hand. A swipe on the card itself starts a dnd-kit drag (8px
+  activation), so the swipe belongs to the bar around the card and to the handle. Open
+  question: a card dragged down off the bottom could also mean "put down".
+- **Decisions it changes.** "Custom and Archive games ask before leaving" stops being needed
+  for leaving, because nothing is lost: a Daily saves and resumes, and a practice game now
+  survives a reload (`when-practice-progress`). The ask moves to starting a second game over
+  one in progress. `leaveAction` stays the one rule; its answers change.
+- **Build.** Large. The docked hand on Home, the cover, the settings sheet, and Home and the
+  game sliding over each other rather than swapping by phase.
+- **Variant.** The handle at the top of the game, as an iOS-style sheet grabber carrying the
+  theme name. Familiar, but out of thumb reach, and its strip costs 28px of the 56.
 
-- **Home.** A sixth entry, "More", at the end of the tab bar. It is not a page; it opens the
-  drawer.
-- **Game.** A 44px floating button in the board's top-left corner, opening the same game menu
-  as A.
-- **Pager, tab bar, paths.** The pager and paths are untouched, but the bar's entries drop to
-  67px at 402, 62px at 375 and 53px at 320, against the recorded 64px at 320 ("Timeline" is
-  45px of label). "More" cannot go in `TABS` without breaking its index maps, so it is a
-  hand-added sixth button, and the one entry on the bar that is not a place.
-- **Drag.** The button sits inside the drop zone and over the year labels (x 8 to 84): scrolled
-  to the top it covers the earliest year. It would have to hide during a drag. The right gutter
-  is too narrow for it at 375 (28px).
-- **Build.** Small on Home, medium in the game (z-order against the "Earlier" fade, the hint
-  strip and the marker's clip box).
-- **Decisions touched.** It breaks "nothing may sit where a card is dropped" unless hidden while
-  dragging, the 64px tab at 320, and the idea that every tab is a place the highlight follows.
+### 2. One bar
+
+The bottom bar is the app's only chrome, with two states and one gesture.
+
+- **Game.** Lowering the hand pauses in place. Under it: the theme name, How to Play, Restart,
+  "Pick up your cards", and the five tabs themselves, so a player leaves straight to any tab.
+- **Home.** The tab bar has the same handle. Raising it grows the bar into a sheet with the
+  profile and settings.
+- **Pixels.** Board +56, Daily hero +68. Nothing new on either screen but a handle.
+- **Risk.** Settings on Home are behind an unlabelled handle. It needs a one-time hint, and it
+  runs against "nothing in the burger menu gets found" for a new player looking for the rules.
+- **Decisions it changes.** None. Leaving follows today's rule. The menu drawer goes, so its
+  back-stack registration moves to the two sheets (on `ui/Modal` or registered the same way).
+- **Build.** Medium.
+
+### 3. Your seat at the table
+
+The player's portrait is the one hub everywhere.
+
+- **Game.** The card counter becomes a seat: the portrait with the cards left on it. Tapping it
+  opens a pause card with the theme, the game so far, Keep playing, Home, Restart and How to
+  Play. It replaces `StatsPopup`.
+- **Home.** The Stats tab becomes **You**: portrait and name, records and badges, and a gear
+  that opens a settings page. No drawer.
+- **Pixels.** Board +56, Daily hero +68.
+- **Risk.** The way out of a game is behind the player's own face, which reads as "me" rather
+  than "leave", and iOS has no system Back to fall back on.
+- **Decisions it changes.** The tab's label and path move from Stats to You (`/stats` would
+  need a redirect and a `vercel.json` rewrite for the new path). The `stats` hint is reworded.
+  The seat matches the multiplayer the engine already has.
+- **Build.** Medium to large.
+
+### Works with any of them
+
+- **The cover Home** takes the hero gain to 165px whichever concept is chosen.
+- **An edge-swipe Back for the iOS app.** In Safari the edge swipe is already history-back,
+  which the back stack turns into Home. The app shell does not enable it
+  (`allowsBackForwardNavigationGestures` is unset), so the iOS app has no system Back. Turning
+  it on is one setting, but it needs an app release and old binaries will not have it.
 
 ## What breaks, whichever option
 
@@ -169,34 +201,42 @@ the table above.
 
 ## Recommendation
 
-**A.** The pixels are the same in all three, so the choice is risk and cost. A is the only one
-that undoes no recorded decision: the tab bar stays at five, nothing sits on the board, and the
-drawer and its back-stack registration are untouched. It keeps a visible way out of a game on
-iOS, where there is no system Back. It also makes Profile easier to find than it is today,
-which is the one menu item worth finding.
+**Concept 1, put your cards down.** It is the only one that changes what leaving means, and the
+storage already supports it. The gesture is in the thumb zone, on the object the player is
+already holding. It gives Home the most. It is also the biggest build; if that matters,
+concept 2 gets the same board for much less, at the cost of settings that are harder to find.
 
 ## Decisions that are yours
 
-1. Which option: A, B or C.
-2. In a game, is Home one tap (its own button beside the menu button) or two (inside the game
-   menu)? Two buttons side by side need 96px: they fit at 402 (126px) but at 375 the strip is
-   99px and the fanned hand reaches into it.
-3. Does the theme name need to stay on the playing screen, for example as a caption beside
-   "Earlier", or is the game menu, the intro popup and the Daily card enough?
-4. The Timeline tab's heading at 375: rename it "Timeline", let it wrap, or shrink it.
-5. On Home, the portrait or a plain menu icon as the button.
-6. In the apps, a solid `bg-bg` strip behind the status bar (recommended) or content running
-   under it.
+1. Which concept, or which mix. The cover Home and the portrait as the menu fit any of them.
+2. In concept 1, does a set-down game ask before a second game starts over it, or can two wait
+   at once?
+3. Whether dragging a card down off the bottom of the screen should also put the hand down.
+4. Whether the theme name must stay on the playing screen. None of the three keeps it there.
+5. Whether the iOS app gets an edge-swipe Back, which needs an app release.
+6. In the apps, a solid `bg-bg` strip behind the status bar or content running under it. The
+   cover wants art under it.
 7. Whether desktop (1024px and up) keeps a top bar. The desktop digest asks for changes to be
    gated behind `lg:`.
 8. Whether `TimelineLab` follows the game, and whether the static pages keep their own bar
    (recommended: yes to both).
-9. Whether settings should be reachable from the game-over board, or Home first is fine.
+
+## Round one, rejected
+
+Three ways to relocate the bar's buttons, all giving the same 56px and 68px:
+
+- **A.** A portrait button beside each tab's heading opening the drawer; a menu button in the
+  hand bar's corner above Swap. At 375 the "My Timeline" heading wraps beside two buttons.
+- **B.** The drawer's rows as a section at the foot of Stats; the counter's popup as the game
+  menu. No visible way out of a game.
+- **C.** A sixth "More" entry on the tab bar (53px a tab at 320, against the recorded 64); a
+  floating button on the board, which sits in the drop zone and over the year labels.
 
 ## How it was tested
 
 - `BROWSER=none npm start`, driven with Playwright at 402x874 and 375x667 in light and dark,
   with one frame at 320x568 for the six-entry tab bar. Card art was loading.
+- The round-two prototypes were driven by tap and swipe at phone width before publishing.
 - The leaderboard and theme calendar were read from production. Every POST was answered
   locally; nothing was written to production.
 - Not checked: the hand bar at 320px, a real device's inset, and 1280x800.

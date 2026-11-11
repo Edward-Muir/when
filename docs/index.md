@@ -67,7 +67,8 @@ says: for "how does X work", read the source.
   all built), how it was run, and the findings raised and not chosen
 - [top-bar-removal-review/](top-bar-removal-review/index.md) — a review, nothing built: what
   the top bar and the menu hold, the pixels its removal gives back (56 of board, 68 of Daily
-  hero), three options for rehoming its contents, and the choices it waits on
+  hero), three concepts for what replaces it (put your cards down, one bar, your seat), and the choices
+  it waits on
 - [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, the
   one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), the Custom tab (Quick
   decks, folded filter rows, the share popup), and the service-worker dev-loop trap
