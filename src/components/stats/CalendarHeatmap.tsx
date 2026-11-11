@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { HeatCell, HeatmapModel, formatWeekdayDate } from '../../utils/statsDerived';
 
 /** Cell size and gap, shared by the grid, the month-label offsets and the weekday column. */
@@ -19,17 +19,43 @@ interface Props {
  * on the most recent weeks; older history is a swipe away. `overscroll-x-contain` keeps that
  * swipe from chaining into the home pager, whose track is also a horizontal scroller.
  *
+ * Both are applied only while the weeks are wider than the box (`useOverflowsX`). A contained
+ * scroller swallows a horizontal swipe even with nothing to scroll, so a new player's calendar,
+ * which fits, would otherwise be a dead patch the pager cannot be swiped from.
+ *
  * Tapping a day reads it out in a row beneath the grid rather than a tooltip, so the value
  * is reachable without hover and by keyboard (every cell is a button). Each button's hit
  * area extends exactly half the gap, no further: a bigger halo overlaps the next cell and
  * steals its taps, since later siblings paint on top. `min-h-0` opts the cells out of the
  * global 44px button minimum, which would otherwise stack the rows on top of each other.
  */
+/**
+ * Whether the element's content is wider than its box, re-measured whenever either resizes.
+ * Starts true so the first paint keeps today's scroll-to-the-latest-weeks behaviour; the
+ * measurement settles it before the player can touch it.
+ */
+function useOverflowsX(ref: React.RefObject<HTMLDivElement | null>): boolean {
+  const [overflows, setOverflows] = useState(true);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const measure = () => setOverflows(el.scrollWidth > el.clientWidth + 1);
+    measure();
+    if (typeof ResizeObserver === 'undefined') return;
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    if (el.firstElementChild) observer.observe(el.firstElementChild);
+    return () => observer.disconnect();
+  }, [ref]);
+  return overflows;
+}
+
 const CalendarHeatmap: React.FC<Props> = ({ model, badgeName }) => {
   const { weeks, monthLabels } = model;
   const scroller = useRef<HTMLDivElement>(null);
   const [selected, setSelected] = useState<HeatCell | null>(null);
   const [scrolled, setScrolled] = useState(false);
+  const overflows = useOverflowsX(scroller);
 
   useLayoutEffect(() => {
     const el = scroller.current;
@@ -62,9 +88,9 @@ const CalendarHeatmap: React.FC<Props> = ({ model, badgeName }) => {
         <div
           ref={scroller}
           onScroll={(e) => setScrolled(e.currentTarget.scrollLeft > 0)}
-          className={`hide-scrollbar min-w-0 flex-1 overflow-x-auto overscroll-x-contain pb-1 ${
-            scrolled ? 'fade-left' : ''
-          }`}
+          className={`hide-scrollbar min-w-0 flex-1 pb-1 ${
+            overflows ? 'overflow-x-auto overscroll-x-contain' : 'overflow-x-hidden'
+          } ${scrolled ? 'fade-left' : ''}`}
         >
           <div style={{ width: weeks.length * COL - GAP }}>
             <div className="relative h-4 font-body text-[10px] leading-none text-text-muted">

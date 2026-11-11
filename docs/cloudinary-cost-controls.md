@@ -42,6 +42,15 @@ string shown in the console's transformation list is exactly the string to allow
   `INTRO_POOL_SIZE = 60` per week that's ~783 transformations/month against a 25,000/month
   allowance; unbounded, the same screen projects to ~35,000/month. See
   `src/utils/introEvents.ts`, guarded by `src/utils/introEvents.test.ts`.
+- **The Custom tab's Quick deck paintings are fixed events, at `thumbnail`.** Each preset in
+  `src/data/customPresets.ts` names one event (`antikythera-mechanism`, `pyramids`, `d-day`),
+  so the presets touch three images in all, whatever the traffic; `customPresets.test.ts`
+  checks each exists with art. The Last deck tile shows that player's own last starting card,
+  an image their game already loaded. Never fill a tile from a random draw: a new preset gets
+  a new fixed event. **The tiles render no `<img>` until the Custom tab has rested on screen**
+  (`useShownOnce` in `panels/CustomPanel.tsx`, the tab-hint settle delay), and then
+  `loading="lazy"`: the pager pre-mounts Custom for every visitor (§2.3). Measured on a fresh
+  load of `/`: no preset image requested before the tab is opened, three after.
 
 ### The service-worker image cache
 
@@ -80,7 +89,8 @@ images to ~10 MB and drive bandwidth and transformations up at once:
    drives the transformation count.
 3. **Warming art on a pre-mounted panel.** The pager pre-mounts every panel at idle, so warming
    all 60 badge thumbnails there charges every home-screen visitor ~4.4 MB for a tab most never
-   open. Badge art is warmed only for unlocked badges, once the Stats tab is on screen.
+   open. Badge art is warmed only for unlocked badges, once the Stats tab is on screen, and the
+   Custom tab's Quick deck paintings render only once that tab has been shown.
 4. **Eagerly warming every rendered card's `detail` image**, opened or not. `Card.tsx` doesn't.
 5. **Uniform random sampling for a decorative screen.** The game-start intro shows 20 events on
    every entry to `modeSelect` — once per game, and again on every Restart. Drawn from the

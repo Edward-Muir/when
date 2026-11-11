@@ -211,9 +211,10 @@ different things.
   link, and it rides on both message forms. It is `generateChallengeInviteText` in
   `share.ts`, not an inline literal.
 - **A game-over share carries the rank.** `shareResults` takes it as an option, so the
-  game-over share agrees with the popup's "#22 globally" and with the home screen's share:
-  the popup passes the rank up from `LeaderboardSubmit` via `onRankResolved`, and the bottom
-  bar reads it from the stored daily result.
+  closing card's share agrees with the home screen's: the closing card reads the server's
+  `rank` from `Game`'s one `useDailyLeaderboard` instance, and the bottom bar reads it from
+  the stored daily result. The closing card _prints_ a different number, the tie-aware place;
+  see [the closing card](#the-closing-card-says-events-placed-and-the-place-the-share-does-not-change).
 - **The card is single-line everywhere.** The collage card is a flow of blocks and the
   single-card layout is fixed baselines, and in both every element is one line, so a second
   line anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
@@ -252,14 +253,14 @@ gameOver      score · submit · rank        (GamePopup — not in the queue, se
    ↓
 milestones    if any
    ↓
-achievements  if any
+achievements  if any: one reveal, or one screen for two or more
    ↓
-share         ShareStepPopup — result, Share, reminder + next-daily countdown
+share         ShareStepPopup, the closing card: score, place, Share, the exits, countdown
 ```
 
 **The share step is unconditional**, which is the point: milestones and achievements only
 appear when there are any, so an "append to the last screen" scheme would make the finale
-different game to game. It ends the run every time.
+different game to game. It ends the run every time, which is also why the exits live on it.
 
 Two placements that don't work:
 
@@ -275,19 +276,50 @@ Constraints holding the current shape together:
   pending and possible (`gameOverDismiss`), so the daily cannot pass it without submitting;
   folding it in would mean re-implementing that gate. The flow is unified from that popup
   _onward_.
-- **The rank is lifted to `Game`.** `LeaderboardSubmit` → `onRankResolved` → `GamePopup` →
-  `Game` → `ShareStepPopup`, because the share step is not a sibling of the leaderboard.
-- **The bottom-bar Share hides for the whole sequence**, not just while the popup is open —
-  `isBottomBarShareVisible(pendingPopup, endStep)`. It is the post-sequence fallback only;
-  showing both puts two identical Share buttons on screen at once.
+- **The board is owned by `Game`.** One `useDailyLeaderboard` instance feeds the game-over
+  popup (board, form, dismiss gate) and the closing card (rank, place), because the closing
+  card is not a sibling of the leaderboard. There is no callback carrying the rank upward any
+  more; one existed (`onRankResolved`) and could fall out of step with the board.
+- **Every step leaves by a Continue button** (`ui/ContinueButton.tsx`, 52px), where there was a
+  muted "Tap to continue" line. The milestone and single-badge screens still
+  advance on a tap anywhere; the button stops its own click so that tap does not advance twice.
+- **The bottom bar is empty while any popup or step is up** (`isBottomBarVisible` in
+  `Game.tsx`). Its Share, Restart and Home showed through the scrim and did nothing, and its
+  Share beside the closing card's was a second identical button. They return when the sequence
+  ends, as the fallback for a player who closed the closing card.
 - **No story-card preview on the share step.** It would mean a `renderShareCard` canvas pass
   on every game over instead of only when someone taps Share.
 
-**Trap, and the reason the sequence exists rather than more hand-wiring:** `MilestonePopup` and
-`AchievementUnlock` must not call `onDismiss()` from inside a `setIndex` updater. Updaters must
-be pure — StrictMode double-invokes them — so `onDismiss` fires twice, and with dismissal
-advancing a queue the next step (the share step) is popped without ever rendering. Any future
-step must keep side effects out of updaters.
+**Trap, and the reason the sequence exists rather than more hand-wiring:** a step must not call
+`onDismiss()` from inside a state updater. Updaters must be pure — StrictMode double-invokes
+them — so `onDismiss` fires twice, and with dismissal advancing a queue the next step (the share
+step) is popped without ever rendering. `MilestonePopup` advances outside its `setIndex`; any
+future step must keep side effects out of updaters the same way.
+
+### The closing card says events placed and the place; the share does not change
+
+The closing card is the share step grown into the end of the game: the eyebrow
+(`getGameOverEyebrow`, "Daily · China"), the score, the place, Share, then two 48px buttons,
+**View timeline and Home** on a Daily or **Restart and Home** on a Custom or Archive game, and
+on a Daily the countdown on one line and the reminder prompt.
+
+- **It prints `correctCount`, "14 events placed"**, the gallery's own number two screens
+  earlier. It used to print the share's number, the timeline length, so the two screens read
+  14 and 15 for one game.
+- **The place is the row's place, "3rd of 16 today".** `playerPlaceLine` in
+  `leaderboardUtils.ts` numbers it as the player's row does: the server's row for the caller
+  (`resolvePlayerRow`) placed by `podiumPlaces`, so a tie reads the shared place. The server's
+  rank is sequential and said "#4 globally" beside a row that showed 3. No line without a place:
+  Custom, the Archive, and a Daily not submitted.
+- **The share is untouched.** `shareResults(gameState, { leaderboardRank })` gets the server
+  rank as before, and the text and image keep the timeline length. The card on screen and the
+  card in the chat are different surfaces with different jobs; changing the share is its own
+  decision, not a side effect of this one.
+- **Restart and Home sit here because this is the last step.** Anywhere earlier they would let
+  a player leave before the badges and the share. Home is `App`'s `handlePlayAgain`, the one way
+  home. View timeline closes the card and leaves the finished board, with the bar's buttons back.
+- **It holds buttons, so it is not tap-anywhere.** Backdrop, ESC and Back close it, as View
+  timeline does.
 
 ### Reviewing the card
 
@@ -428,8 +460,10 @@ Both formats share these rules:
 
 ### The Custom tab's code field
 
-The share code on the Custom tab (`CustomGameSettings.tsx`) is a two-way field: it shows the
-code for the current filters, and a pasted code decodes back into the controls.
+The share code on the Custom tab (`CustomGameSettings.tsx`, shown in `CustomSharePopup` from
+the Share button beside Play) is a two-way field: it shows the code for the current filters,
+and a pasted code decodes back into the controls. A Quick deck tile is a settings object, so a
+game started from one carries an ordinary code; the encoding has no notion of presets.
 
 - **A `useRef` flag guards the two-way sync.** Applying a decoded code updates the settings,
   which recomputes the code via `useMemo`, which would sync back and overwrite what the user

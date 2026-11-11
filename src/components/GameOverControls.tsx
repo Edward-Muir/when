@@ -9,11 +9,12 @@ interface GameOverControlsProps {
   onNewGame: () => void;
   onShowToast: () => void;
   /**
-   * False while the game-over popup is open — it carries its own, better-sequenced share, and
-   * two identical Share buttons on screen at once would be confusing. This one is the
-   * fallback for after the popup is dismissed.
+   * False while the game-over popup or any end-of-game step is up. Those screens own the share
+   * and, on the last one, Restart and Home; the bar's buttons are the fallback for once they are
+   * gone. Shown through the scrim they did nothing, and a second Share beside the popup's was
+   * one too many.
    */
-  showShare?: boolean;
+  visible?: boolean;
 }
 
 const GameOverControls: React.FC<GameOverControlsProps> = ({
@@ -21,7 +22,7 @@ const GameOverControls: React.FC<GameOverControlsProps> = ({
   onRestart,
   onNewGame,
   onShowToast,
-  showShare = true,
+  visible = true,
 }) => {
   const handleShare = async () => {
     // The rank, if the player has already submitted. This bar is the fallback route once the
@@ -36,21 +37,21 @@ const GameOverControls: React.FC<GameOverControlsProps> = ({
     }
   };
 
+  // The bar keeps its height, so the board does not move when the buttons come back.
+  if (!visible) return <div className="flex-1" />;
+
   return (
     <div className="flex-1 flex items-center justify-center gap-4 px-4 pointer-events-auto">
-      {/* Share button */}
-      {showShare && (
-        <button
-          onClick={handleShare}
-          className="flex flex-col items-center justify-center gap-1 w-20 h-20 bg-accent-secondary hover:bg-accent-secondary/90 text-white rounded-2xl shadow-sm transition-all duration-200 active:scale-95"
-        >
-          <Share2 className="w-6 h-6" />
-          {/* Always "Share". It said "Challenge" for daily and challenge-code games, which is
-              a different verb from every other share surface and implies a challenge-code
-              game that the daily is not. */}
-          <span className="text-sm font-medium font-body">Share</span>
-        </button>
-      )}
+      <button
+        onClick={handleShare}
+        className="flex flex-col items-center justify-center gap-1 w-20 h-20 bg-accent-secondary hover:bg-accent-secondary/90 text-white rounded-2xl shadow-sm transition-all duration-200 active:scale-95"
+      >
+        <Share2 className="w-6 h-6" />
+        {/* Always "Share". It said "Challenge" for daily and challenge-code games, which is
+            a different verb from every other share surface and implies a challenge-code
+            game that the daily is not. */}
+        <span className="text-sm font-medium font-body">Share</span>
+      </button>
 
       {/* Restart button (not shown for daily mode) */}
       {state.gameMode !== 'daily' && (

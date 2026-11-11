@@ -6,9 +6,10 @@ import {
   detectMilestones,
   getLifetimeStats,
   getDailyCadence,
+  getCollectionState,
   GameMilestone,
 } from '../utils/statsStorage';
-import { markNavUnseen } from '../utils/playerStorage';
+import { armNavOnce, markNavUnseen } from '../utils/playerStorage';
 import { getCuratedThemeIdForConfig } from '../utils/themeReplay';
 import { getThemeBest, recordThemeResult } from '../utils/themeBests';
 import { getThemeOutcome } from '../utils/themeOutcome';
@@ -20,6 +21,22 @@ interface GameStatsRecording {
   newlyUnlockedAchievements: string[];
   /** Personal-best milestones set by the most recently recorded game. */
   gameMilestones: GameMilestone[];
+}
+
+/**
+ * Light the two once-per-install "new" dots on Home's tabs, from the stores as they stood
+ * before this game was recorded: Archive after the first Daily ever finished, Timeline after
+ * the first game that put anything in the collection. "Ever" rather than "next", so an install
+ * that predates the dots is never told about tabs it has been using.
+ */
+function armFirstGameDots(
+  game: WhenGameState,
+  before: { dailiesPlayed: number; collected: number }
+): void {
+  if (game.lastConfig?.dailySeed && before.dailiesPlayed === 0) armNavOnce('archive');
+  if (before.collected === 0 && getCollectionState().placedEventIds.length > 0) {
+    armNavOnce('timeline');
+  }
 }
 
 /**
@@ -57,7 +74,12 @@ export function useGameStatsRecorder(
       cadence,
       themeBest: themeId ? (getThemeBest(themeId)?.correctCount ?? 0) : undefined,
     };
+    const collectedBefore = getCollectionState().placedEventIds.length;
     const unlocked = recordGameResult(game, eventsByName);
+    armFirstGameDots(game, {
+      dailiesPlayed: cadence.playedDates.length,
+      collected: collectedBefore,
+    });
     const { survived, perfect } = getThemeOutcome(game);
     // A curated theme's record — the daily on its day and every Archive replay alike.
     if (themeId) {
@@ -70,7 +92,7 @@ export function useGameStatsRecorder(
     // The per-game history behind the stats page's calendar and, later, its trend views.
     const record = buildGameRecord(game, { themeId, cleared: survived, perfect });
     if (record) appendGameRecord(record);
-    // Re-arm the Stats nav dot — the badges live on that tab — so the player is nudged to go
+    // Re-arm the Stats tab's dot (the badges live on that tab) so the player is nudged to go
     // see what they earned.
     if (unlocked.length > 0) markNavUnseen('stats');
     setNewlyUnlockedAchievements(unlocked);

@@ -16,6 +16,7 @@ import { formatEventYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
 import LeaderboardSubmit from '../LeaderboardSubmit';
 import { ModalDismissMode } from '../ui/Modal';
+import ContinueButton from '../ui/ContinueButton';
 import GalleryFlight, { GalleryTile } from './GalleryFlight';
 
 /** The id `GamePopup` hands to `Modal` as `labelledBy`, so the dialog is named by its title. */
@@ -26,8 +27,10 @@ interface GameOverGalleryProps {
   /** The completed daily, or null when this game has no leaderboard. */
   dailyResult?: DailyResult | null;
   leaderboard?: DailyLeaderboard;
-  /** How the popup may be left, decided by `GamePopup`. Only read to word the last line. */
+  /** How the popup may be left, decided by `GamePopup`. Continue shows unless it is locked. */
   dismiss: ModalDismissMode;
+  /** Continue: leave the popup, as a tap on it (or beside it) does. */
+  onDismiss?: () => void;
   /**
    * Told true once the popup's own surface should show: partway through the flight, or at
    * once when there is none. Until then `GamePopup` keeps the card bare, so the paintings
@@ -87,20 +90,66 @@ function tileLabel(tile: GalleryTile): string {
 /**
  * How tall the Daily's popup is under the grid, with the leaderboard preview and the submit
  * form: the caption, three rows, the portrait and name, the button. Measured at 375 and 402
- * wide; it does not change with the width.
+ * wide; it does not change with the width. It is the estimate the grid is laid out from while
+ * the cards are in flight, since a grid that changed shape under them would land them wrong.
  */
 const DAILY_BODY_PX = 384;
 
+/** The card's border and the grid's padding, outside the caption but inside the 90% cap. */
+const DAILY_FRAME_PX = 8;
+
 /**
- * The room the grid has on the Daily, where Submit to Leaderboard has to stay on screen. Read
- * once when the popup opens; the popup is `Modal`'s `wide` size, capped at 90% of the height.
+ * The room the grid has on the Daily, where the way on has to stay on screen: Submit to
+ * Leaderboard first, then Continue. The popup is `Modal`'s `wide` size, capped at 90% of the
+ * height. `bodyPx` is what sits under the grid.
  */
-function dailyFit(): GalleryFit | undefined {
+function dailyFit(bodyPx: number): GalleryFit | undefined {
   if (typeof window === 'undefined') return undefined;
   return {
     cardWidth: Math.min(400, window.innerWidth * 0.9),
-    maxGridHeight: window.innerHeight * 0.9 - DAILY_BODY_PX,
+    maxGridHeight: window.innerHeight * 0.9 - bodyPx,
   };
+}
+
+/**
+ * How tall the caption under the grid really is, once the cards have landed; `DAILY_BODY_PX`
+ * until then. After Submit the form becomes the player's row, the percentile and the player
+ * count, and Continue appears: about 70px more. Read once at open, the grid kept its size, the
+ * card hit its 90% cap and Continue scrolled out of sight on a 375x667 phone. Never smaller than
+ * the estimate, so the grid does not grow back and forth while the board loads.
+ */
+function useDailyBodyHeight(
+  captionRef: React.RefObject<HTMLDivElement | null>,
+  active: boolean
+): number {
+  const [measured, setMeasured] = useState(0);
+  useLayoutEffect(() => {
+    const node = captionRef.current;
+    if (!active || !node || typeof ResizeObserver === 'undefined') return;
+    const read = () => setMeasured(node.offsetHeight);
+    read();
+    const observer = new ResizeObserver(read);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [captionRef, active]);
+  return Math.max(DAILY_BODY_PX, measured + DAILY_FRAME_PX);
+}
+
+/**
+ * The grid's column count: square, or on the Daily as square as fits above the caption. A hook
+ * of its own because the gallery sits on ESLint's complexity ceiling.
+ */
+function useGalleryColumns(
+  count: number,
+  hasBoard: boolean,
+  captionRef: React.RefObject<HTMLDivElement | null>,
+  landed: boolean
+): number {
+  const bodyPx = useDailyBodyHeight(captionRef, hasBoard && landed);
+  return useMemo(
+    () => galleryColumns(count, hasBoard ? dailyFit(bodyPx) : undefined),
+    [count, hasBoard, bodyPx]
+  );
 }
 
 /** Counts up to `target` once `run` turns true; shows `target` until then. */
@@ -175,7 +224,7 @@ const Score: React.FC<{ gameState: WhenGameState; countUp: boolean }> = ({
         {shown}
       </span>
       <span className="text-[17px] text-text-muted">
-        {deckSize > 0 ? `of ${deckSize} ${unit}` : unit}
+        {deckSize > 0 ? `of ${deckSize.toLocaleString()} ${unit}` : unit}
       </span>
     </p>
   );
@@ -196,17 +245,16 @@ const GameOverGallery: React.FC<GameOverGalleryProps> = ({
   dailyResult,
   leaderboard,
   dismiss,
+  onDismiss,
   onSurfaceChange,
 }) => {
   const gridRef = useRef<HTMLUListElement>(null);
+  const captionRef = useRef<HTMLDivElement>(null);
   const tiles = useMemo(() => buildTiles(gameState), [gameState]);
   const names = useMemo(() => tiles.map((tile) => tile.event.name), [tiles]);
   const hasBoard = !!dailyResult && !!leaderboard;
-  const columns = useMemo(
-    () => galleryColumns(tiles.length, hasBoard ? dailyFit() : undefined),
-    [tiles.length, hasBoard]
-  );
   const travel = useGalleryTravel(gridRef, names);
+  const columns = useGalleryColumns(tiles.length, hasBoard, captionRef, travel.phase === 'landed');
   // False once the popup has begun to close: the clones are outside it and would outlive it.
   const isPresent = useIsPresent();
 
@@ -257,7 +305,7 @@ const GameOverGallery: React.FC<GameOverGalleryProps> = ({
         />
       )}
 
-      <div className={`gallery-caption px-4 pt-3 pb-4 ${landed ? 'is-in' : ''}`}>
+      <div ref={captionRef} className={`gallery-caption px-4 pt-3 pb-4 ${landed ? 'is-in' : ''}`}>
         <p className="font-mono text-[11px] leading-snug tracking-[0.17em] uppercase text-accent">
           {getGameOverEyebrow(gameState)}
         </p>
@@ -286,10 +334,10 @@ const GameOverGallery: React.FC<GameOverGalleryProps> = ({
 
         {/* No share here: this is the first screen of the end-of-game sequence, and the share
             is its last (`useEndOfGameSequence`, `ShareStepPopup`). */}
-        {dismiss !== 'locked' && (
-          <p className="mt-4 text-center text-sm text-text-muted">
-            {dismiss === 'backdrop' ? 'Tap outside to continue' : 'Tap to continue'}
-          </p>
+        {/* Hidden while Submit is pending: that is the way on. With the board unreachable
+            (`backdrop`) it is the way past the form, which still takes a retry. */}
+        {dismiss !== 'locked' && onDismiss && (
+          <ContinueButton onClick={onDismiss} className="mt-4" />
         )}
       </div>
     </div>

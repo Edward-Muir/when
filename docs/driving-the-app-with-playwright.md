@@ -137,14 +137,63 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   bottom-left counter button for `stats`, the cycle button for `swap`.
 - **The menu drawer:** opened by `[aria-label="Open menu"]`. It does **not** close on
   Escape, and while open it swallows later clicks, so close it with
-  `[aria-label="Close menu"]` (or reload) before driving anything else.
-- **Home → Custom tab → start a game:** nav button `[aria-label="Custom game"]`, then
+  `[aria-label="Close menu"]` (or reload) before driving anything else. During a game
+  `page.goBack()` closes it too.
+- **`[aria-label="Go home"]` matches two buttons in a game:** the "When?" title and the Home
+  icon. Use `.last()` for the icon. Home from a Daily in progress leaves at once and Home shows
+  a "Saved" toast for 2 s; from a Custom or Archive game it opens "Leave game?" with **Cancel**
+  and **Leave**.
+- **A practice game left mid-way comes back on load.** A Custom, Quick deck, Archive or
+  challenge-link game is saved as it is played (`when-practice-progress`), and any home path
+  (`/`, `/custom`, `/archive` ...) reloads straight into it with no start transition, so a script
+  that `goto`s a tab after a half-played game lands in the game, not on the tab. Leave it
+  through Home then **Leave**, finish it, or
+  `localStorage.removeItem('when-practice-progress')` before the reload. `page.reload()` keeps
+  `localStorage`, which is how a resume is tested. `/daily` drops the save.
+- **`page.goBack()` during a game** closes the top popup or the menu, and otherwise does what
+  Home does. Wait ~700 ms after it: the game steps back onto its history entry with
+  `history.forward()`, so a second `goBack()` fired at once can leave the app. `/daily` adds
+  its entry on the first pointer event, so drag or click before testing Back there.
+- **Home's tabs are the bar at the foot**, `nav[aria-label="Home tabs"]`, selected by the
+  same `aria-label`s the old top-bar buttons had: `Go home`, `Past decks`, `Custom game`,
+  `View stats`, `View my timeline`. The active one has `aria-current="page"`. The old
+  `Go to <Tab> page` dot buttons are gone. **`[aria-label="Go home"]` on Home is the Daily
+  tab**; in a game it is the title and the Home icon (below), so scope it to the nav on Home.
+  A tap scrolls the pager smoothly and `aria-current` and the path follow the scroll, so wait
+  ~1 s before reading either. A "new" dot is `[role="img"][aria-label="New"]` inside a tab;
+  a fresh profile has none, and a dot clears 400 ms after the pager rests on its tab.
+- **All five Home panels are in the DOM at once**, so an unscoped `/Share/` button query can
+  match Custom's "Share settings" (and an unscoped `/Play/` a Quick deck tile) while the Daily
+  is showing, and the click scrolls the pager
+  over to it. Name the control exactly ("Challenge a Friend") or check `aria-current` after.
+- **A real swipe** needs a context with `hasTouch: true` and CDP
+  `Input.dispatchTouchEvent`: a `touchStart`, a dozen `touchMove`s across most of the width,
+  a `touchEnd`, then ~1 s for the snap. Mouse drags do not scroll the pager.
+- **Home → Custom tab → start a game:** tab `[aria-label="Custom game"]`, then
   the button matching `/Play\s+·/` ("Play · N events").
+- **Quick decks** on the Custom tab are `[data-testid="quick-deck-<id>"]` (`last`,
+  `everything`, `ancient`, `world-wars`), each a button labelled "Play Everything, 6,423
+  events" (the last deck: "Play Last deck, Science · 237"). A tap starts the game at once.
+  `quick-deck-last` is absent on a fresh profile and appears only after a game started from
+  Play; the record is `when-last-custom-deck`. Their `<img>`s are not rendered until the tab
+  has been on screen for 350 ms.
+- **Custom filter chips sit behind a row tap.** Each group is a folded row, a
+  `button[aria-expanded]` whose text starts with its title (`Difficulty`, `Categories`, `Eras`,
+  `Regions`) and ends with its summary ("All 21", "Science", "3 of 21", "None"); open it first
+  (`panel.locator('button[aria-expanded]', { hasText: /^Categories/ })`), and only one is open
+  at a time. Inside, Select all and Clear keep their names (`Clear Categories`,
+  `Select all Card Difficulty`). The Countries row is `button[aria-haspopup="dialog"]` with
+  "Countries" and opens the picker as before. Scope all of these to the Custom panel
+  (`div.mx-auto` that has the `Custom` h1): My Timeline's filter popup uses the same chips.
 - **Custom filter chips** are `button[aria-pressed]`. A category chip's DOM text is the
   lowercase category id (`sports`), capitalised only by CSS, so match case-insensitively
   (`getByRole('button', { name: /^sports$/i })`); `:text-is("Sports")` never matches. Don't
   guard a chip click with `if (await chip.count())`: a filter click that silently no-ops
   looks exactly like a clean pass against an unfiltered deck.
+- **Custom's share link** is in a popup: `Share settings` (the square button beside Play)
+  opens it, the field is `getByRole('textbox', { name: 'Share link' })`, then `Shuffle seed`
+  and `Share link`. Filling the field with a link applies its settings. Sharing closes the popup
+  and shows "Copied to clipboard!" for 2 s over the Play button (it does not take clicks).
 - **Archive tab**: one row per day for the last 30 days, then tomorrow's daily locked,
   each `[data-testid="archive-day-YYYY-MM-DD"]` holding one button ("Play Clockwork, Fri 2
   Oct"; today's is "Play <theme>, today"). The line reads "Missed", "High score: N" (or
@@ -155,9 +204,24 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   from the board for about 1.4 s, in `[data-testid="gallery-flight"]` on `body`; the score and
   everything under it appear only after they land, so **wait about 2 s before reading or
   screenshotting it**. `reducedMotion: 'reduce'` skips the flight. The board behind is hidden
-  (`.board-away`) until the popup closes. A Custom game shows **Restart** and **Home** in the
-  bottom bar. The daily shows Today's Leaderboard and a name input pre-filled with a random
-  name, with **Submit to Leaderboard**, then a share step.
+  (`.board-away`) until the popup closes. The daily shows Today's Leaderboard and a name input
+  pre-filled with a random name, with **Submit to Leaderboard**; after it (or at once on a game
+  with no board) the popup shows a **Continue** button.
+- **The end-of-game steps:** every one leaves by `getByRole('button', { name: 'Continue' })`
+  (game over, each milestone, the achievements step). One badge is the single reveal
+  ("Achievement Unlocked!"); two or more are one screen, `[data-testid="achievements-summary"]`,
+  whose badges are buttons (the lead's `aria-label` is "Name: criterion", the rest just the
+  name) opening the detail popup as a second `[data-testid="modal-card"]` over it. The last step
+  is the closing card: `[data-testid="closing-score"]` ("14 events placed"), a place line
+  ("3rd of 16 today", Daily only), **Share**, then **View timeline** and **Home** on a Daily or
+  **Restart** and **Home** otherwise. Scope those to the card
+  (`getByTestId('modal-card').last().getByRole('button', { name: 'Home' })`): once it closes the
+  bottom bar's **Share**, **Restart** and **Home** come back, and the bar is **empty** while any
+  popup or step is up. A first Daily is Submit, Continue, Continue, Home: four taps.
+- **A placed row on a locally answered submit.** The production board GET does not know a
+  locally answered POST, so the player has no row and the closing card no place line. Patch the
+  GET in the route (insert the submitted name and score, re-rank, set `playerRank`,
+  `playerEntry`, `totalPlayers`) to see both.
 - **Leaderboard submit (at game over):** `input[placeholder*="name" i]` (maxlength
   20, pre-filled with a random name — clear it first), then the button matching
   `/submit to leaderboard/i`.

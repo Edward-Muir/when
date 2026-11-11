@@ -2,6 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Modal from './Modal';
+import { runTopBackHandler } from '../../utils/backStack';
 
 /**
  * The dismissal matrix is the part of `Modal` worth pinning: every popup picks one of these
@@ -153,5 +154,33 @@ describe('Modal shell composition', () => {
     renderModal({ labelledBy: 'title-id' });
     expect(screen.getByRole('dialog')).toHaveAttribute('aria-modal', 'true');
     expect(screen.getByRole('dialog')).toHaveAttribute('aria-labelledby', 'title-id');
+  });
+});
+
+describe('Modal and the system Back gesture', () => {
+  it('is what Back closes while open, and nothing once closed', () => {
+    const onDismiss = jest.fn();
+    const { rerender } = render(
+      <Modal open onDismiss={onDismiss}>
+        <p>body</p>
+      </Modal>
+    );
+
+    expect(runTopBackHandler()).toBe(true);
+    expect(onDismiss).toHaveBeenCalledTimes(1);
+
+    rerender(
+      <Modal open={false} onDismiss={onDismiss}>
+        <p>body</p>
+      </Modal>
+    );
+    expect(runTopBackHandler()).toBe(false);
+  });
+
+  it("absorbs Back while 'locked', so it cannot reach the game behind", () => {
+    const { onDismiss } = renderModal({ dismiss: 'locked' });
+
+    expect(runTopBackHandler()).toBe(true);
+    expect(onDismiss).not.toHaveBeenCalled();
   });
 });

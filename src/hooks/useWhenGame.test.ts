@@ -42,6 +42,7 @@ jest.mock('../utils/playerStorage', () => ({
   hasSeenHint: jest.fn().mockReturnValue(true),
   markHintSeen: jest.fn(),
   markNavUnseen: jest.fn(), // Re-armed by the stats recorder when achievements unlock
+  armNavOnce: jest.fn(), // The recorder's once-per-install Archive and Timeline dots
 }));
 
 const mockedLoadAllEvents = loadAllEvents as jest.MockedFunction<typeof loadAllEvents>;

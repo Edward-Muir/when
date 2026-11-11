@@ -202,17 +202,21 @@ describe('the daily', () => {
     renderGallery(game({ gameMode: 'daily' }), { dailyResult, leaderboard, dismiss: 'locked' });
     expect(screen.getByRole('button', { name: 'Submit to Leaderboard' })).toBeInTheDocument();
     expect(screen.getByLabelText('Your name')).toHaveValue('Jittery Raven');
-    expect(screen.queryByText(/to continue/)).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Continue' })).not.toBeInTheDocument();
   });
 
-  it('has no leaderboard block on a game without one', () => {
-    renderGallery(game());
+  it('has no leaderboard block on a game without one, and a Continue button', () => {
+    const onDismiss = jest.fn();
+    renderGallery(game(), { onDismiss });
     expect(screen.queryByText(/leaderboard/i)).not.toBeInTheDocument();
-    expect(screen.getByText('Tap to continue')).toBeInTheDocument();
+    screen.getByRole('button', { name: 'Continue' }).click();
+    expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 
-  it('points outside when the board is unreachable', () => {
-    renderGallery(game(), { dismiss: 'backdrop' });
-    expect(screen.getByText('Tap outside to continue')).toBeInTheDocument();
+  it('still offers Continue when the board is unreachable', () => {
+    const onDismiss = jest.fn();
+    renderGallery(game(), { dismiss: 'backdrop', onDismiss });
+    screen.getByRole('button', { name: 'Continue' }).click();
+    expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 });

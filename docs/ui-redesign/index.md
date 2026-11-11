@@ -28,14 +28,30 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
 
 ## Home is a five-tab pager
 
-`Daily · Archive · Custom · Stats · My Timeline`, driven by **both** swipe and the TopBar
-buttons. One navigation model: the buttons scroll the same pager the swipe does, rather than
-`navigate()`ing to separate full-page routes.
+`Daily · Archive · Custom · Stats · My Timeline`, driven by **both** swipe and a labelled tab
+bar along the foot of the screen (`HomeTabBar.tsx`). One navigation model: a tab tap scrolls
+the same pager the swipe does, rather than `navigate()`ing to separate full-page routes.
 
-- **The order lives in one place**: the `TABS` array in `ModeSelect.tsx`. Labels, indicator
-  colours, the index↔key maps and the idle pre-mount set are all derived from it, and the
-  `ModePager` children must be rendered in that order. Don't add a hand-maintained mirror of
-  the list.
+- **The order lives in one place**: the `TABS` array in `homeTabs.ts`, which holds each tab's
+  key, word, icon, `aria-label` and active colour. The index↔key maps and the idle pre-mount
+  set are derived from it, and the `ModePager` children in `ModeSelect.tsx` must be rendered
+  in that order. It is its own module because `ModeSelect` and `HomeTabBar` both read it and
+  neither may import the other. Don't add a hand-maintained mirror of the list.
+- **The tab bar sits under the pager, outside it**, so nothing mounts during a swipe. Each
+  tab is a 22px icon over its word, a fifth of the width: 80px at 402, 64px at 320, where
+  "Timeline" (45px at 11px) is the widest word and still clears. The bar is 64px tall plus
+  the home-indicator inset (`pb-safe` on the bar; the Home container no longer pads the
+  bottom itself). The active tab takes its colour and a 3px marker on its top edge, drawn
+  with `bg-current` so it follows the colour; the others are `text-text-muted`. The active
+  tab carries `aria-current="page"`.
+- **The highlight follows the scroll, never the tap.** `activePage` is written only by the
+  pager's `onIndexChange`; a tap calls `scrollToPage` and the marker walks with the scroll.
+  `useTabChangeHaptic` reads the same `activePage`, so taps and swipes tick alike.
+- **The `aria-label`s predate the bar and are kept** ("Go home", "Past decks", "Custom
+  game", "View stats", "View my timeline"): scripts and the Playwright runbook select by them.
+- **The top bar on Home shows Menu only.** The five buttons it used to carry moved to the
+  bar, and nothing else rendered them, so `TopBar` no longer has a nav cluster: it is the
+  title, the theme pill, Home, Restart and Menu, each shown where its caller asks.
 - **Archive** (`panels/ArchivePanel.tsx`) is every daily from the last 30 days, laid out on
   the game's own timeline by date, curated ones in a gold border — see
   [../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-tab).
@@ -53,36 +69,45 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   while expanded, and badge art is prefetched only for the unlocked badges until then** — an
   always-mounted 60-card grid stalls the swipe on iOS (below). `/achievements` redirects to
   `/stats` (`pages/Home.tsx`) and keeps its `vercel.json` rewrite so old links land.
-- **My Timeline is the fifth tab**, with its own path (`/timeline`) and top-bar button
-  (Hourglass, "View my timeline"), not a menu link, for the same reason.
-- **The one-time "new" dots sit on the buttons they belong to**: Stats (re-armed on every
-  badge unlock by `useGameStatsRecorder`, cleared on visiting the tab) and Timeline. The menu
-  button carries none. The state is `hasSeenNav` / `markNavSeen` / `markNavUnseen` in
-  `playerStorage.ts`.
-- **Six buttons fit a 320px phone at `gap-2` / `p-2`**: 6 × 38px (20px icon + 16px padding +
-  2px border) + 5 × 8px gaps + 16px container padding = 284px. Seven need 6px gaps, so don't
-  add a seventh without re-measuring.
+- **My Timeline is the fifth tab**, with its own path (`/timeline`) and tab (Hourglass,
+  "View my timeline"), not a menu link, for the same reason.
+- **"New" dots are armed by events, never by an install**, so a fresh install shows none. A
+  missing entry in `when-nav-seen` reads as seen; only `markNavUnseen` writes the `false`
+  that lights one. Three dots, each on its own tab and cleared by visiting it
+  (`useNavDots`): **Stats** on every badge unlock (recurring); **Archive** after the first
+  Daily ever finished; **Timeline** after the first game that put anything in the
+  collection. The last two are once per install: `armNavOnce` records them in
+  `when-nav-armed`, so neither a visit nor a stats wipe re-lights them, and they key off the
+  stores being empty before the game rather than "the next game", so an install that
+  predates the dots is not told about tabs it already uses. All three are armed in
+  `useGameStatsRecorder`. The menu button carries none.
+- **A tab counts as visited only once the pager rests on it** (`NAV_DOT_SETTLE_MS`, 400ms).
+  A tap from Daily to Timeline scrolls across Archive and Stats, and `activePage` passes
+  through both; clearing on every change would wipe dots on tabs the player never saw.
+- **The dots are read once, when Home mounts.** Everything that arms one happens in a game,
+  and Home mounts afresh when a game ends, so a dot appears the moment the player is back.
+- **Home's toasts sit 16px above the bar** with `.bottom-above-tabbar` (`index.css`:
+  `5rem + env(safe-area-inset-bottom)`): the "Saved" notice, the Daily share, Custom's
+  share link and the menu's "Copied" (`TopBar toastAboveTabBar`). On the web that is the same
+  80px as before; in the apps the inset lifts them with the bar. The in-game `Toast` keeps
+  its plain `bottom-20`.
 
 - **Every tab has a path, and the path opens the home screen on that tab**:
   `/`, `/archive`, `/custom`, `/stats`, `/timeline` are one route (`/:tab?` → `pages/Home.tsx` →
   `App initialTab` → `ModeSelect` → `ModePager initialIndex`), and `ModeSelect` replaces the
   path as the player swipes so a refresh or a shared link comes back to the same tab. The
   tab↔path map is `pathForNav` / `navForPath` in `TopBar.tsx`. There are no standalone tab
-  pages; the panel components in `src/components/panels/` are mounted by the pager. **The top
-  bar shows the same five nav buttons on every non-game page.**
-- **`TopBar` takes an optional `onNavClick`**: when provided the buttons scroll the pager,
-  when absent they navigate to the tab's path. The in-game bar
-  (`Game.tsx`) deliberately shows Home and Menu only.
+  pages; the panel components in `src/components/panels/` are mounted by the pager.
+- **The in-game bar (`Game.tsx`) has no tabs**: the "When?" title, the Daily's theme pill,
+  Home, Restart in a practice game, and Menu.
 - **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Stats and
   Timeline. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalls the
   iOS scroll-snap gesture. `TimelinePanel` additionally holds its (unvirtualised) timeline back
   until the tab has been shown once, and `StatsPanel`'s badge art waits for `active` too.
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict**.
   Don't re-litigate it.
-- Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
+- Custom's active tab colour is `accent-secondary` (teal) to match that screen; every other
   tab, Archive included, is `accent` (gold).
-- The indicator shows only the active tab's label, with all labels stacked in one grid cell
-  (inactive ones `invisible`) so its width never shifts as you navigate.
 
 ## The Daily's eye: reopening today's finished board
 
@@ -108,7 +133,7 @@ makes this worth having: without it, a finished board is a score.
   `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
   and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
   cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
-  Home skips the "progress will be lost" confirm.
+  Home skips the "progress will be lost" confirm (see [Leaving a game](#leaving-a-game)).
 - **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
   events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
   overwrites it and no history accumulates — the self-invalidating shape `when-daily-result`
@@ -124,6 +149,73 @@ makes this worth having: without it, a finished board is a score.
   Daily strip's slot.
 - `useSaveDailyResult` is its own hook file because `useWhenGame.ts` is on the `max-lines`
   ceiling, the same squeeze `Game.tsx` is under for `complexity`.
+
+## Leaving a game
+
+Home from a game asks "Leave game?" only when progress would be lost. `leaveAction` in
+`hooks/useLeaveGame.ts` is the whole rule, and the top bar's Home and the system Back gesture
+both go through it.
+
+- **A Daily in progress leaves at once**, and Home opens with a "Saved" toast. The Daily is
+  saved as it is played and resumes from the Daily card in under a second, so the prompt
+  guarded nothing. Same reasoning as Reset Hints: no confirm where nothing is lost.
+- **A Custom or Archive game keeps the confirm.** There the progress really is lost: Leave
+  drops the practice save below. An Archive day runs as `suddenDeath`, so
+  `gameMode === 'daily'` means today's Daily only. Turning practice games into the Daily's
+  "Saved" behaviour would be a product change, not a follow-on of the save.
+- **A finished game and a review board just leave.**
+- **The toast crosses a remount.** Leaving on `/daily` or `/challenge/:code` navigates to `/`,
+  which mounts a different `App`, so the notice is module state (`utils/homeNotice.ts`) that
+  expires after 2.5 s. It is not cleared by its reader: StrictMode mounts the home screen twice.
+
+**System Back behaves as Home.** A game holds one history entry (`utils/gameBackEntry.ts`,
+`hooks/useGameBackButton.ts` in `App`), because starting a game never navigates and Back would
+otherwise leave the app with the game. On Back:
+
+- **The top of the back stack runs** (`utils/backStack.ts`). Every open `Modal` and the Menu
+  drawer register there, so Back closes a popup or the menu first. The game's own handler sits
+  at the bottom and is `requestHome`. A `locked` popup registers a handler that does nothing,
+  so Back cannot reach the game behind an unsubmitted score.
+- **The entry is restored with `history.forward()`, never a second `pushState`.** Chrome skips
+  entries a page pushes without a tap the next time Back is pressed. For the same reason the
+  first push waits for a tap on `/daily` and `/challenge/:code`, which start with none.
+- **Leaving by a button consumes the entry first** (`leaveGameEntry`), and waits for that
+  `popstate` before navigating. Navigating first replaces the wrong entry: on `/daily` the pop
+  then lands back on `/daily`, which auto-starts the game the player just left.
+- **When the Back press itself leaves, nothing is restored.** The press already popped the
+  entry; stepping forward again after the leave lands on a stale `/daily`.
+- Back on the home screen is left to the browser. No native code: the Android WebView's
+  default back goes back in history, and old app binaries run this JS.
+- Not handled: the 3 s start transition absorbs Back without acting.
+
+**A reload keeps a practice game.** Closing the tab, reloading, or iOS evicting the WebView is
+the one way out of a Custom, Quick deck, Archive, theme-replay or challenge-link game that keeps
+it (`utils/practiceProgress.ts`, `hooks/usePracticeProgress.ts`). It is the Daily's resume with
+the date stamp swapped for the whole config:
+
+- **One slot, `when-practice-progress`, the Daily's board shape** (`BoardProgress` in
+  `dailyProgress.ts`) plus `lastConfig`. Every practice deck is seeded (a Custom game's code, a
+  replay's fresh seed, an Archive day's date), so the config re-composes the deck and only the
+  seen cards are stored. The same seen-cards check drops a save an update has broken, and Home
+  shows as if there were none. Saved at the drop (`savePracticePlacement`) and on every settled
+  `playing` state; single player only.
+- **Cleared** at game over, by `App.handlePlayAgain` (every way home: Leave, the closing card's
+  Home), while any deal's intro plays (so a reload just after Restart cannot bring back the game
+  restarted), and by any game that is not a practice game dealing (a Daily, a multiplayer
+  challenge). A review board touches nothing. A multiplayer game is never saved.
+- **Resume is not a start.** `resumePracticeGame` sets the restored state directly: no intro, no
+  `when-last-custom-deck` write, `lastConfig` intact so Restart, the theme pill, the share and
+  an Archive day's "counts as that day" recording all behave as they would have. Stats see one
+  game, since the recorder only runs on the one `playing` → `gameOver`. A save taken after the
+  final drop resumes as `gameOver` and records then, as the Daily's does.
+- **The URL decides on load.** A home path (`/`, `/custom`, `/archive`, `/stats`, `/timeline`)
+  resumes the save on that tab's route, in a layout effect so Home never paints first.
+  `/challenge/:code` resumes only a save of that same code, and otherwise deals the link, which
+  replaces the save. `/daily` drops the save and starts the Daily, since the URL asked for it.
+  A Daily in progress and a practice save can both exist: the reload resumes the practice game,
+  and the Daily still resumes from its card afterwards.
+- **Back after a resume** needs a tap first, as on `/daily`: no tap has happened since the
+  load, so `useGameBackButton` pushes the game's entry on the first `pointerdown`.
 
 ## Timeline progression: the rail
 
@@ -487,7 +579,76 @@ and do not improve performance, while hints of this shape do.
 - **The Custom nav icon is sliders, not a cog.** A cog reads as app Settings. It matches
   the My Timeline filter button's icon; the aria-labels differ.
 
+## Haptics on Home
+
+`haptics.select()` ticks once when the pager settles on a different tab
+(`hooks/useTabChangeHaptic.ts`) and once per filter chip action (`hooks/usePillTap.ts`).
+
+- The tab tick compares against the last page seen, starting from the page the screen opened
+  on, because the pager reports its index on every scroll event including the one that puts it
+  on its first page. A jump across two tabs ticks twice, once per tab crossed.
+- A double-tap isolate is one action: the first tap ticks, the second is silent.
+- The web fallback is `navigator.vibrate`, which iOS Safari lacks, so this is felt in the apps
+  and on Android Chrome.
+
 ## Custom settings screen
+
+**One screen: Quick decks, folded rows, Play and Share.** On a 375x667 phone the tab shows up to
+four deck tiles and five folded filter rows with nothing to scroll, Play and Share at the foot. The
+form it replaced was 1,342px of chips in a 366px window, and greeted a returning player with
+that form every time.
+
+- **Layout (`panels/CustomPanel.tsx` → `CustomGameSettings.tsx`).** The heading, then one
+  scroll region holding the Quick decks and the rows, then a footer with Play and the Share
+  button that never scrolls. The fit is exact: measured folded at 375x667, the region is 384px
+  of content in 384px. Every spacing on that path is spent (heading `mb-2`, subtitle `mt-0.5`,
+  the 1.5 gaps around the tiles, footer `py-1.5`), and the rows' frame and dividers are
+  box-shadows (`.fold-list` in `index.css`) because four 1px borders and a 2px frame are the
+  overflow. Adding anything above the footer makes the folded tab scroll. With the first-visit
+  hint up it scrolls by about 100px, which is accepted. In the apps the top inset adds to the
+  80px top padding every tab has, so a phone with a status-bar inset scrolls by that much.
+- **Quick decks (`QuickDecks.tsx`, presets in `src/data/customPresets.ts`).** A 2-column grid
+  of 64px tiles: Last deck (hidden until one exists), Everything, Ancient world, World Wars.
+  A tile is one painting, a name and the live count (`deckPool` over the catalogue, so a preset
+  never goes stale; "6,423 events", and "Science · 237" for the last deck). **A tap starts the
+  game at once** through the same `buildCustomGameConfig` (`utils/customDeck.ts`) Play uses:
+  fresh seed, `suddenDeath`, a share code. A preset is a settings object (`DeckSettings`), so
+  the challenge-code encoding knows nothing about presets, and a preset game's link is an
+  ordinary Custom link. **A tile never writes `when-custom-settings`**: the player's edited
+  settings survive a preset game untouched.
+- **The Last deck has its own key, `when-last-custom-deck`**, because `when-custom-settings`
+  holds the last settings _edited_, which may never have been played. It is written by the Play
+  button only (`useCustomGameSettings.startFromPlay`), never by a tile, an Archive day or a
+  challenge link, and holds the settings plus the game's starting card. That card is found by
+  building the same ramped deck the game deals (`startingEventName`, window only, since the
+  deck is deterministic for its seed) and is the tile's painting. Its label is what differs
+  from the default (`deckLabel` in `utils/filterSummary.ts`: what, when, how hard, where, so
+  "Science", "Ancient · Easy"), falling back to "Custom" when only countries differ. Read once
+  when Home mounts, which is after every game. A record whose deck the catalogue can no longer
+  deal shows the tile disabled.
+- **Each filter group folds to one 44px row** stating its setting, with a chevron
+  (`FilterControls` with `collapsible`): "All 4" / "All 21" / "All 8" / "All 11", a single name
+  ("Science", "Expert", "Renaissance"), "3 of 21", or "None". **Teal (`text-accent-secondary`)
+  when it differs from the default**, which is every option on. A tap opens the group in
+  place with the same chips, Select all and Clear; one group open at a time; tapping the open
+  row folds it. Opening scrolls the region just enough to show the group, never past its row,
+  and does so on the scroller rather than with `scrollIntoView`, which would also nudge the
+  horizontal pager. The Countries row keeps `countrySummary`'s wording and opens the country
+  picker as before; only its summary turns teal while a country is off. **Folding is a prop
+  only Custom sets**: My Timeline's `FilterPopup` renders every group open with its header,
+  exactly as before. Folded, the group's own header label is screen-reader only, so the
+  buttons keep their `Select all Categories` / `Clear Categories` names.
+- **An empty group still reads as one when folded**: the row says "None" in teal, Play and
+  Share are disabled, and the "Pick at least one …" prompt is there once it is opened. An empty
+  group can only come from Clear inside an open group, so the prompt is on screen when it
+  happens.
+- **Share is one square outline button beside Play** (`aria-label="Share settings"`, disabled
+  while a group is empty), opening `CustomSharePopup` on `ui/Modal`: the explanatory line, the
+  two-way link field (paste a link to load its settings), Shuffle and **Share link**. The popup
+  closes as it shares, so the "Copied to clipboard!" toast lands above the tab bar. The toast is
+  `pointer-events-none`: it sits over the Play button for its two seconds.
+- **Changing two groups costs one more tap each** than the open form did. Accepted for the
+  one-screen view; the double-tap isolate is unchanged inside an open group.
 
 **Select all and Clear on every filter group.** A new player cannot pick a single category
 without them: the double-tap below is undiscoverable, and a bare `All` / `n/N` header looks like
@@ -539,11 +700,11 @@ pill restores all. Without it, isolating one of 21 categories means tapping off 
 **Settings persist across refresh** as a JSON object under `when-custom-settings`, written on
 every change (not only on Play) so tweaks the player never played are still remembered. **The
 seed is deliberately not persisted** — a refresh restores your filters but still deals a
-different deck.
+different deck. The deck last _played_ is the separate `when-last-custom-deck` (above).
 
 **The `n/N` / `All` counts are gated behind a `showCounts` prop** because `FilterControls` has
 a second consumer (the Timeline tab's `FilterPopup`), which has its own footer count; Select all
-and Clear show in both.
+and Clear show in both. A folded row's summary replaces the count, so `collapsible` ignores it.
 
 ## Dev-loop trap: the service worker on localhost
 

@@ -253,9 +253,16 @@ describe('game over', () => {
 
   it('advances on a tap anywhere when there is nothing to submit', () => {
     const { onDismiss } = renderGameOver(finished(3, 5));
-    expect(screen.getByText('Tap to continue')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Continue' })).toBeInTheDocument();
 
     userEvent.click(card());
+    expect(onDismiss).toHaveBeenCalledTimes(1);
+  });
+
+  it('advances once, not twice, from the Continue button', () => {
+    // The card is tap-advance, so the click would also reach the backdrop if it bubbled.
+    const { onDismiss } = renderGameOver(finished(3, 5));
+    userEvent.click(screen.getByRole('button', { name: 'Continue' }));
     expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 });

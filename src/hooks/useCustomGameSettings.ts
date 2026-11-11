@@ -11,8 +11,8 @@ import {
 import { ALL_ERAS } from '../utils/eras';
 import { ALL_REGIONS, countryOptionsByRegion } from '../utils/regions';
 import { filterPool } from '../utils/eventLoader';
-import { getCustomSettings, saveCustomSettings } from '../utils/playerStorage';
-import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
+import { getCustomSettings, saveCustomSettings, saveLastCustomDeck } from '../utils/playerStorage';
+import { DeckSettings, buildCustomGameConfig, startingEventName } from '../utils/customDeck';
 import { minDeckSize } from '../utils/gameLogic';
 import { useRegionSelection } from './useRegionSelection';
 import { legacyPicksToExclusions } from '../utils/countrySelection';
@@ -139,37 +139,28 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
 
   const isPlayValid = !groupEmpty && deckCount >= minDeckSize(playerCount, suddenDeathHandSize);
 
-  /** A fresh game from the current settings, with a new seed packed into its share code. */
-  const buildGameConfig = (): GameConfig => {
-    const names = playerNames
-      .slice(0, playerCount)
-      .map((name, i) => name.trim() || `Player ${i + 1}`);
+  const deckSettings: DeckSettings = {
+    selectedDifficulties,
+    selectedCategories,
+    selectedEras,
+    selectedRegions,
+    excludedCountries,
+    playerCount,
+    suddenDeathHandSize,
+  };
 
-    const challengeCode = encodeChallengeCode({
-      handSize: suddenDeathHandSize,
-      playerCount,
-      difficulties: selectedDifficulties,
-      categories: selectedCategories,
-      eras: selectedEras,
-      regions: selectedRegions,
-      excludedCountries,
-      seed: generateChallengeSeed(),
+  /**
+   * The Play button's game: a fresh config from the current settings (a new seed packed into
+   * its share code, as a Quick deck tile gets), recorded as the Last deck tile with its
+   * starting card for the tile's painting. Only Play records it, never a Quick deck tile.
+   */
+  const startFromPlay = (): GameConfig => {
+    const config = buildCustomGameConfig(deckSettings, { cardsPerHand, playerNames });
+    saveLastCustomDeck({
+      settings: deckSettings,
+      eventName: startingEventName(config, allEvents),
     });
-
-    return {
-      mode: 'suddenDeath',
-      selectedDifficulties,
-      selectedCategories,
-      selectedEras,
-      selectedRegions,
-      excludedCountries,
-      challengeSeed: challengeCode,
-      challengeCode,
-      playerCount,
-      playerNames: names,
-      cardsPerHand,
-      suddenDeathHandSize,
-    };
+    return config;
   };
 
   return {
@@ -193,6 +184,6 @@ export function useCustomGameSettings(allEvents: HistoricalEvent[]) {
       deckCount,
       isPlayValid,
     },
-    buildGameConfig,
+    startFromPlay,
   };
 }

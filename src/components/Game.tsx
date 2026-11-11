@@ -37,6 +37,7 @@ import HintStrip from './HintStrip';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import { useThemeIntro } from '../hooks/useThemeIntro';
+import { useLeaveGame } from '../hooks/useLeaveGame';
 import ThemeIntroPopup from './ThemeIntroPopup';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
@@ -45,21 +46,19 @@ import ShareStepPopup from './ShareStepPopup';
 import MilestonePopup from './MilestonePopup';
 import { useEndOfGameSequence, EndOfGameStep } from '../hooks/useEndOfGameSequence';
 import { useDailyLeaderboard } from '../hooks/useDailyLeaderboard';
+import { useUnlockedBadges } from '../hooks/useUnlockedBadges';
 import { buildDailyResult } from '../utils/dailyResult';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { getVignetteColor } from '../utils/vignettePulse';
-import { ACHIEVEMENTS } from '../data/achievements';
-import { buildEventsByName, GameMilestone, getDailyCadence } from '../utils/statsStorage';
+import { GameMilestone, getDailyCadence } from '../utils/statsStorage';
 import { canRestartMidGame } from '../utils/dailyReplay';
-import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
   open: boolean;
   onClose: () => void;
   onConfirm: () => void;
-  state: Pick<WhenGameState, 'gameMode'>;
-}> = ({ open, onClose, onConfirm, state }) => (
+}> = ({ open, onClose, onConfirm }) => (
   <Modal
     open={open}
     onDismiss={onClose}
@@ -72,10 +71,8 @@ const HomeConfirmModal: React.FC<{
   >
     <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
     <p className="text-text-muted text-sm mb-6 font-body">
-      {/* A daily is saved as it is played (utils/dailyProgress.ts), so leaving loses nothing. */}
-      {state.gameMode === 'daily'
-        ? 'Your progress is saved. Pick up where you left off from the Daily card.'
-        : 'Your current progress will be lost.'}
+      {/* Only asked where it is true: see `leaveAction` in hooks/useLeaveGame.ts. */}
+      Your current progress will be lost.
     </p>
     <div className="flex gap-3">
       <button
@@ -127,14 +124,15 @@ function shouldShowYearInPopup(pendingPopup: GamePopupData | null, state: WhenGa
 }
 
 /**
- * The bottom bar's Share button is the fallback route, for once every end-of-game screen is
- * gone. While the game-over popup or any sequence step is up, one of those owns the share and
- * showing this too would be a second, redundant button.
+ * The bottom bar's buttons are the fallback route, for once every end-of-game screen is gone.
+ * While the game-over popup or any sequence step is up, one of those owns the share (and, on
+ * the closing card, Restart and Home); the bar's buttons would show through the scrim and do
+ * nothing, and Share would be on screen twice.
  *
  * Extracted rather than inlined because `Game` sits on ESLint's complexity ceiling of 15 —
  * same reason `shouldShowYearInPopup` above is a function.
  */
-function isBottomBarShareVisible(
+function isBottomBarVisible(
   pendingPopup: GamePopupData | null,
   endStep: EndOfGameStep | null
 ): boolean {
@@ -207,34 +205,14 @@ const Game: React.FC<GameProps> = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
   const [showToast, setShowToast] = useState(false);
-  const [showHomeConfirm, setShowHomeConfirm] = useState(false);
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
   const [showStatsPopup, setShowStatsPopup] = useState(false);
   // Full-screen edge-in colour pulse shown on each placement. `key` remounts
   // the overlay so the animation retriggers on rapid back-to-back placements.
   const [vignette, setVignette] = useState<{ color: string; key: number } | null>(null);
 
-  // Catalogue keyed by name so unlocked badges can resolve their art (reuses loaded events).
-  const eventsByName = useMemo(() => buildEventsByName(allEvents), [allEvents]);
-
-  // Resolve the unlocked ids to badge defs (skip any id without a card).
-  const unlockedDefs = useMemo(
-    () =>
-      newlyUnlockedAchievements
-        .map((id) => ACHIEVEMENTS.find((a) => a.id === id))
-        .filter((def): def is (typeof ACHIEVEMENTS)[number] => def !== undefined),
-    [newlyUnlockedAchievements]
-  );
-
-  // Warm the badge-art cache at game over (when unlockedDefs lands), so by the time the
-  // unlock modal opens — after the game-over popup is dismissed — the images are ready.
-  // Detail variant matches what AchievementCard renders, so the URL is a cache hit.
-  useEffect(() => {
-    preloadEventImages(
-      unlockedDefs.map((def) => eventsByName.get(def.eventName)),
-      ['detail']
-    );
-  }, [unlockedDefs, eventsByName]);
+  // This game's badges and the catalogue that gives them their art, which is warmed here.
+  const { unlockedDefs, eventsByName } = useUnlockedBadges(newlyUnlockedAchievements, allEvents);
 
   // The daily leaderboard, owned here because three screens want it: the game-over popup shows
   // the board and the submit form, the popup's dismiss gate depends on whether the score is on
@@ -254,6 +232,9 @@ const Game: React.FC<GameProps> = ({
     hasMilestones: gameMilestones.length > 0,
     hasAchievements: unlockedDefs.length > 0,
   });
+
+  // Home, from the top bar or the system Back gesture: asks only when progress would be lost.
+  const leave = useLeaveGame(state, onNewGame);
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -412,9 +393,7 @@ const Game: React.FC<GameProps> = ({
         >
           <TopBar
             showHome={true}
-            // "Leave game?" is the wrong question for a finished board
-            // being re-read, so a review leaves straight away.
-            onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
+            onHomeClick={leave.requestHome}
             dailyTheme={dailyThemeDisplay}
             onRestart={midGameRestart(state, onRestartMidGame)}
             restartDisabled={state.isAnimating}
@@ -469,11 +448,7 @@ const Game: React.FC<GameProps> = ({
                 onRestart={onRestart}
                 onNewGame={onNewGame}
                 onShowToast={() => setShowToast(true)}
-                // While the game-over popup is up it owns the share, positioned after the
-                // leaderboard so the sequence reads score -> submit -> rank -> share. Showing
-                // this one too puts two identical Share buttons on screen at once. It returns
-                // when the popup is dismissed, which is the case it exists for.
-                showShare={isBottomBarShareVisible(pendingPopup, endStep)}
+                visible={isBottomBarVisible(pendingPopup, endStep)}
               />
             ) : (
               <>
@@ -544,15 +519,15 @@ const Game: React.FC<GameProps> = ({
           />
 
           <HomeConfirmModal
-            open={showHomeConfirm}
-            onClose={() => setShowHomeConfirm(false)}
+            open={leave.confirmOpen}
+            onClose={leave.closeConfirm}
             onConfirm={onNewGame}
-            state={state}
           />
 
-          {/* The end-of-game sequence. Each step dismisses to the next; the share always
+          {/* The end-of-game sequence. Each step dismisses to the next; the closing card always
               ends it, so the finale is the same screen whether or not this game unlocked
-              anything. No step chains into another by hand — the queue owns the order. */}
+              anything, and it is the one that offers Restart and Home. No step chains into
+              another by hand — the queue owns the order. */}
           <MilestonePopup
             open={endStep === 'milestones'}
             milestones={gameMilestones}
@@ -569,8 +544,10 @@ const Game: React.FC<GameProps> = ({
           <ShareStepPopup
             open={endStep === 'share'}
             gameState={state}
-            leaderboardRank={leaderboard.rank}
+            leaderboard={leaderboard}
             onDismiss={advanceEndStep}
+            onRestart={onRestart}
+            onHome={onNewGame}
           />
         </div>
       </DndContext>

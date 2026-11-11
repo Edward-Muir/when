@@ -1,6 +1,24 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Leaving a Daily in progress no longer asks first, and the home screen confirms it is saved.",
+    "The Back button during a game now goes home, closing any open popup or the menu first.",
+    "Changing tab and toggling a filter chip now give a light tap of haptic feedback.",
+    "A game that unlocks several achievements now shows them together on one screen.",
+    "The last screen of a game now shows events placed, the day's place, and the way home.",
+    "Each end-of-game screen now moves on with a Continue button.",
+    "The bottom bar's buttons no longer show through the end-of-game screens.",
+    "The game-over card keeps Continue on screen after submitting on a small phone.",
+    "The home screen has a labelled tab bar at the bottom, within reach of a thumb.",
+    "New-item dots on the home tabs now appear only once there is something new to see.",
+    "Custom now offers quick decks that start a game in one tap, including the last deck played.",
+    "Custom's filters fold to one row each, so the whole tab fits a small phone without scrolling.",
+    "Custom's share link now opens from a Share button beside Play.",
+    "The Stats calendar no longer stops a swipe to the next tab when it has nothing to scroll.",
+    "Stats now counts the best and average game in events placed, matching the daily score.",
+    "Deck sizes on Custom now print with thousands separators, as Stats already did.",
+    "A reload or a closed app no longer loses a Custom, Archive or challenge game in progress."
+  ],
   "releases": [
     {
       "version": "1.39.0",

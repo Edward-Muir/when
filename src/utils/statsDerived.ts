@@ -186,16 +186,25 @@ export function dailyAverage(cadence: DailyCadence): number | null {
 }
 
 export interface Records {
-  longestTimeline: number;
+  /** The most events placed in any one game: the score, not counting the starting card. */
+  bestScore: number;
   bestStreak: number;
   longestDailyRun: number;
   bestDailyScore: number;
 }
 
-/** The four personal bests, each the max across daily and custom play where both exist. */
+/**
+ * The four personal bests, each the max across daily and custom play where both exist.
+ *
+ * Every number here is in events placed, the score, so "Best score" and "Best daily score" read
+ * the same for one game. The stored `longestTimeline` is a timeline length, seed card included,
+ * so it is read one lower; `bestGameCorrectEver` is the same record kept as a count, and the
+ * larger of the two covers a record that only one of them holds (a pre-stats high score).
+ */
 export function recordsFrom(lifetime: LifetimeStats, cadence: DailyCadence): Records {
+  const longest = Math.max(lifetime.longestTimeline.daily, lifetime.longestTimeline.suddenDeath);
   return {
-    longestTimeline: Math.max(lifetime.longestTimeline.daily, lifetime.longestTimeline.suddenDeath),
+    bestScore: Math.max(lifetime.bestGameCorrectEver, longest - 1, 0),
     bestStreak: Math.max(lifetime.bestInGameStreakEver, lifetime.bestCustomStreakEver),
     longestDailyRun: cadence.maxDailyStreak,
     bestDailyScore: cadence.bestDailyCorrect,
@@ -206,8 +215,8 @@ export interface Lifetime {
   gamesPlayed: number;
   dailyGames: number;
   eventsPlaced: number;
-  /** One decimal place; null before the first game. */
-  averageTimeline: number | null;
+  /** Mean events placed per game, one decimal place; null before the first game. */
+  averageScore: number | null;
 }
 
 /** The volume numbers: totals over every game ever recorded. */
@@ -218,6 +227,8 @@ export function lifetimeFrom(lifetime: LifetimeStats, cadence: DailyCadence): Li
     gamesPlayed,
     dailyGames: cadence.playedDates.length,
     eventsPlaced: lifetime.eventsPlacedCorrect,
-    averageTimeline: gamesPlayed > 0 ? Math.round((timelineSum / gamesPlayed) * 10) / 10 : null,
+    // Each game's timeline is its events placed plus the one starting card.
+    averageScore:
+      gamesPlayed > 0 ? Math.round(((timelineSum - gamesPlayed) / gamesPlayed) * 10) / 10 : null,
   };
 }

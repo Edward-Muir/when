@@ -92,6 +92,10 @@ body {
   .hand-bar {
     height: calc(184px + env(safe-area-inset-bottom));
   }
+  /* A toast on Home: 16px above the 64px tab bar, which grows by the inset (`HomeTabBar`). */
+  .bottom-above-tabbar {
+    bottom: calc(5rem + env(safe-area-inset-bottom));
+  }
 }
 
 /* Player-row highlight.
@@ -117,6 +121,19 @@ body {
   }
   .bg-pill-partial {
     background-color: color-mix(in srgb, var(--color-accent-secondary) 8%, var(--color-surface));
+  }
+}
+
+/* The Custom tab's folded filter rows (`FilterControls` with `collapsible`). The frame and the
+   hairlines between rows are box-shadows, not borders, because they take no layout: four 1px
+   dividers and a 2px frame are the margin by which the folded tab fits a 375x667 phone without
+   scrolling. Each row's own 44px tap target is untouched. */
+@layer utilities {
+  .fold-list {
+    box-shadow: inset 0 0 0 1px var(--color-border);
+  }
+  .fold-list > * + * {
+    box-shadow: inset 0 1px 0 var(--color-border);
   }
 }
 

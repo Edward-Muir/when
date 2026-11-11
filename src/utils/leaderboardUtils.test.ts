@@ -1,5 +1,11 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalColor, podiumPlaces, resolvePlayerRow } from './leaderboardUtils';
+import {
+  getMedalColor,
+  ordinal,
+  playerPlaceLine,
+  podiumPlaces,
+  resolvePlayerRow,
+} from './leaderboardUtils';
 
 const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): LeaderboardEntry => ({
   displayName: `Player ${rank}`,
@@ -72,5 +78,66 @@ describe('resolvePlayerRow', () => {
     // The board polls every 15s; `rank` and `playerEntry` can briefly disagree mid-refresh.
     const playerEntry = entry(3);
     expect(resolvePlayerRow(entries, 99, playerEntry).inList).toBe(true);
+  });
+});
+
+describe('ordinal', () => {
+  it('suffixes like English does, teens included', () => {
+    expect([1, 2, 3, 4, 11, 12, 13, 21, 22, 23, 101, 111, 112].map(ordinal)).toEqual([
+      '1st',
+      '2nd',
+      '3rd',
+      '4th',
+      '11th',
+      '12th',
+      '13th',
+      '21st',
+      '22nd',
+      '23rd',
+      '101st',
+      '111th',
+      '112th',
+    ]);
+  });
+});
+
+describe('playerPlaceLine', () => {
+  it('reads the place and the size of the board', () => {
+    const entries = [entry(1), entry(2), entry(3), entry(4)];
+    expect(playerPlaceLine(entries, 3, entries[2], 16)).toBe('3rd of 16 today');
+  });
+
+  it('gives a tie the shared place the row shows, not the server rank', () => {
+    // 11, 9, 7, 7: the server ranks the player 4th, the row numbers them 3rd.
+    const entries = [
+      entry(1, { correctCount: 11 }),
+      entry(2, { correctCount: 9 }),
+      entry(3, { correctCount: 7 }),
+      entry(4, { correctCount: 7 }),
+    ];
+    expect(playerPlaceLine(entries, 4, entries[3], 16)).toBe('3rd of 16 today');
+  });
+
+  it('places a player below the capped slice from the server row', () => {
+    const entries = [entry(1), entry(2), entry(3)];
+    expect(playerPlaceLine(entries, 40, entry(40), 120)).toBe('40th of 120 today');
+  });
+
+  it('finds the row in the list when the server sent no player entry', () => {
+    const entries = [
+      entry(1, { correctCount: 11 }),
+      entry(2, { correctCount: 9 }),
+      entry(3, { correctCount: 9 }),
+    ];
+    expect(playerPlaceLine(entries, 3, null, 3)).toBe('2nd of 3 today');
+  });
+
+  it('drops the count when the board size is unknown', () => {
+    expect(playerPlaceLine([entry(1)], 1, entry(1), null)).toBe('1st today');
+  });
+
+  it('is null without a place: no board, or not submitted', () => {
+    expect(playerPlaceLine([], null, null, null)).toBeNull();
+    expect(playerPlaceLine([entry(1), entry(2)], null, null, 2)).toBeNull();
   });
 });

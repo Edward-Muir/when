@@ -7,7 +7,8 @@ import { DifficultyIndex } from './difficultyScore';
 import { getLocalDateString } from './puzzleDate';
 
 /**
- * Today's unfinished daily, saved after every move so closing the app cannot re-deal it.
+ * Today's unfinished daily, saved after every move so closing the app cannot re-deal it. The
+ * board half of the snapshot (`BoardProgress`) is shared with the practice game's slot.
  *
  * Without this the daily lived only in React memory and was marked played only at game over.
  * The deck is seeded from the date, so quitting part-way and pressing Play again dealt the
@@ -20,9 +21,12 @@ import { getLocalDateString } from './puzzleDate';
  */
 const DAILY_PROGRESS_KEY = 'when-daily-progress';
 
-export interface DailyProgressSnapshot {
-  /** Puzzle date (`lastConfig.dailySeed`), YYYY-MM-DD in the player's local calendar. */
-  date: string;
+/**
+ * A single-player board in play, by slug: everything a resume needs beyond the deck, which is
+ * re-composed from the game's config. Shared with the practice slot (`practiceProgress.ts`),
+ * which stamps it with the whole config where the daily stamps the date.
+ */
+export interface BoardProgress {
   /**
    * `gameOver` when the final card was played but the app closed before its animation ended.
    * Resuming then lands on the finished game, and the normal game-over writes run.
@@ -41,15 +45,18 @@ export interface DailyProgressSnapshot {
   roundNumber: number;
 }
 
-/** The snapshot for a single-player daily in play, or null for anything else. */
-export function buildDailyProgressSnapshot(state: WhenGameState): DailyProgressSnapshot | null {
-  const { gameMode, lastConfig, phase, seedEventName, players } = state;
-  if (gameMode !== 'daily' || !lastConfig?.dailySeed || state.isReview) return null;
-  if (phase !== 'playing' && phase !== 'gameOver') return null;
+export interface DailyProgressSnapshot extends BoardProgress {
+  /** Puzzle date (`lastConfig.dailySeed`), YYYY-MM-DD in the player's local calendar. */
+  date: string;
+}
+
+/** The board of a single-player game in play (or just finished), or null for anything else. */
+export function buildBoardProgress(state: WhenGameState): BoardProgress | null {
+  const { phase, seedEventName, players } = state;
+  if (state.isReview || (phase !== 'playing' && phase !== 'gameOver')) return null;
   if (!seedEventName || players.length !== 1) return null;
 
   return {
-    date: lastConfig.dailySeed,
     phase,
     seedEventName,
     timeline: state.timeline.map((event) => event.name),
@@ -67,6 +74,21 @@ export function buildDailyProgressSnapshot(state: WhenGameState): DailyProgressS
     turnNumber: state.turnNumber,
     roundNumber: state.roundNumber,
   };
+}
+
+/** Whether a stored value has the board's arrays and seed, so it is safe to rebuild from. */
+export function isBoardProgress(value: unknown): value is BoardProgress {
+  const board = value as BoardProgress | null;
+  if (!board || typeof board.seedEventName !== 'string') return false;
+  return [board.timeline, board.hand, board.failed, board.placementHistory].every(Array.isArray);
+}
+
+/** The snapshot for a single-player daily in play, or null for anything else. */
+export function buildDailyProgressSnapshot(state: WhenGameState): DailyProgressSnapshot | null {
+  const { gameMode, lastConfig } = state;
+  if (gameMode !== 'daily' || !lastConfig?.dailySeed) return null;
+  const board = buildBoardProgress(state);
+  return board && { date: lastConfig.dailySeed, ...board };
 }
 
 export function saveDailyProgress(snapshot: DailyProgressSnapshot | null): void {
@@ -96,9 +118,7 @@ export function getTodayDailyProgress(
     if (!stored) return null;
 
     const snapshot: DailyProgressSnapshot = JSON.parse(stored);
-    if (snapshot?.date !== dateString) return null;
-    const arrays = [snapshot.timeline, snapshot.hand, snapshot.failed, snapshot.placementHistory];
-    if (!arrays.every(Array.isArray) || typeof snapshot.seedEventName !== 'string') return null;
+    if (snapshot?.date !== dateString || !isBoardProgress(snapshot)) return null;
     return snapshot;
   } catch {
     // localStorage may be disabled or data corrupted - fail silently
@@ -125,7 +145,7 @@ export function getTodayDailyProgress(
  * board made of today's cards.
  */
 function matchDealtCards(
-  snapshot: DailyProgressSnapshot,
+  snapshot: BoardProgress,
   composedDeck: HistoricalEvent[]
 ): Map<string, HistoricalEvent> | null {
   const seen = [...snapshot.timeline, ...snapshot.hand, ...snapshot.failed.map((f) => f.name)];
@@ -155,7 +175,7 @@ function matchDealtCards(
  * invalidated still exists until `startGame` drops it, and would otherwise label a fresh deal.
  */
 export function canResumeDailyProgress(
-  snapshot: DailyProgressSnapshot | null,
+  snapshot: BoardProgress | null,
   dailyDeck: HistoricalEvent[]
 ): boolean {
   return snapshot !== null && matchDealtCards(snapshot, dailyDeck) !== null;
@@ -171,7 +191,19 @@ export function restoreDailyProgress(
   config: GameConfig
 ): WhenGameState | null {
   if (!snapshot || snapshot.date !== config.dailySeed) return null;
+  return restoreBoardProgress(snapshot, composedDeck, config);
+}
 
+/**
+ * Rebuild a saved single-player board on top of `composedDeck`, the deck `config` deals, or
+ * return null when the deck has changed under it (see `matchDealtCards`). The game's mode is
+ * the config's own, so the daily and a practice game rebuild alike.
+ */
+export function restoreBoardProgress(
+  snapshot: BoardProgress,
+  composedDeck: HistoricalEvent[],
+  config: GameConfig
+): WhenGameState | null {
   const byName = matchDealtCards(snapshot, composedDeck);
   if (!byName) return null;
   const resolve = (name: string) => byName.get(name) as HistoricalEvent;
@@ -179,7 +211,7 @@ export function restoreDailyProgress(
   const isGameOver = snapshot.phase === 'gameOver';
   return {
     phase: snapshot.phase,
-    gameMode: 'daily',
+    gameMode: config.mode,
     timeline: snapshot.timeline.map(resolve),
     seedEventName: snapshot.seedEventName,
     deck: composedDeck.filter((event) => !byName.has(event.name)),
@@ -249,7 +281,8 @@ export function saveDailyPlacement(
 }
 
 /**
- * The state a single-player placement's animation will settle into, worked out up front.
+ * The state a single-player placement's animation will settle into, worked out up front. The
+ * practice slot saves through it too (`savePracticePlacement`).
  *
  * `placeCard` reaches the same state through timers, but a miss shows the card's true position
  * about a second before it settles. Saving only the settled state would let a player who sees

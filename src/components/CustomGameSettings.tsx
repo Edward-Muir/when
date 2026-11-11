@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
-import { Play, RefreshCw, Share2, Check } from 'lucide-react';
+import { Play, Share2, Check } from 'lucide-react';
 import { Difficulty, Category, Era } from '../types';
 import {
   encodeChallengeCode,
@@ -8,6 +8,7 @@ import {
 } from '../utils/challengeCode';
 import { generateChallengeInviteText, shareContent, CHALLENGE_URL } from '../utils/share';
 import FilterControls from './FilterControls';
+import CustomSharePopup from './CustomSharePopup';
 
 interface CustomGameSettingsProps {
   // Filter state
@@ -32,15 +33,18 @@ interface CustomGameSettingsProps {
   isPlayValid: boolean;
   // Total cards matching the current difficulty/category/era/region selection
   deckCount: number;
+  /** Shown above the filter rows, in the same scroll region (the Quick decks). */
+  top?: React.ReactNode;
 }
 
 /**
  * Inline custom-game configuration for the Custom tab of the home screen pager.
- * The card is a bounded flex column: the options (Difficulty / Categories / Eras / Regions
- * pill filters + the editable share link) scroll, while the Play button stays pinned in a
- * fixed footer so it is always visible and clickable. The hand-size, players
- * and player-name controls are hidden and kept as commented-out dead code at the
- * bottom of this file for easy reinstatement.
+ * A bounded flex column: whatever `top` holds (the Quick decks) and the folded filter rows
+ * (Difficulty / Categories / Eras / Regions / Countries) scroll together, while Play and the
+ * Share button beside it stay pinned in a footer, so both are always visible. Share opens the
+ * link field in a popup (`CustomSharePopup`). The hand-size, players and player-name controls
+ * are hidden and kept as commented-out dead code at the bottom of this file for easy
+ * reinstatement.
  */
 const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   selectedDifficulties,
@@ -61,9 +65,11 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   onPlay,
   isPlayValid,
   deckCount,
+  top,
 }) => {
   const [challengeSeed, setChallengeSeed] = useState(() => generateChallengeSeed());
   const [showShareToast, setShowShareToast] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
   const [codeInput, setCodeInput] = useState('');
   const [isCodeValid, setIsCodeValid] = useState(true);
   const applyingCodeRef = useRef(false);
@@ -131,7 +137,9 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
     setChallengeSeed(d.seed);
   };
 
+  // The popup closes first, so the toast lands on the tab, above the tab bar.
   const handleShareChallenge = async () => {
+    setShareOpen(false);
     const copied = await shareContent(
       generateChallengeInviteText(shareUrl),
       'When? - The Timeline Game'
@@ -141,12 +149,13 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   };
 
   return (
-    <div className="flex flex-col flex-1 min-h-0 bg-surface rounded-2xl border border-border overflow-hidden">
-      {/* Scrollable options */}
-      <div className="flex-1 min-h-0 overflow-y-auto p-4 space-y-4">
-        {/* Filters (Difficulty, Categories, Eras, Regions) */}
+    <div className="flex flex-col flex-1 min-h-0">
+      {/* One scroll region for the quick decks and the folded rows; Play and Share stay put.
+          Folded, it all fits a 375x667 phone without scrolling. */}
+      <div className="flex-1 min-h-0 overflow-y-auto overscroll-y-contain">
+        {top}
         <FilterControls
-          showCounts
+          collapsible
           selectedDifficulties={selectedDifficulties}
           onDifficultiesChange={setSelectedDifficulties}
           selectedCategories={selectedCategories}
@@ -160,64 +169,46 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           countryOptions={countryOptions}
           matchCount={deckCount}
         />
-
-        {/* Share this game — full game-state URL + shuffle + share */}
-        <div>
-          <h3 className="text-xs font-medium uppercase tracking-wide text-text-muted font-body mb-1.5">
-            Share this game
-          </h3>
-          <p className="text-xs text-text-muted font-body mb-2">
-            Shuffle for a fresh deck, then share this link so others play the exact same game. Paste
-            a link here to load it.
-          </p>
-          <div className="flex items-center gap-2">
-            <input
-              type="text"
-              value={codeInput}
-              onChange={(e) => handleCodeInput(e.target.value)}
-              className={`flex-1 text-sm font-mono text-accent bg-bg rounded-lg px-3 py-2 border transition-colors focus:outline-none font-body ${
-                isCodeValid ? 'border-border focus:border-accent' : 'border-error'
-              }`}
-              placeholder="paste a share link"
-            />
-            <button
-              onClick={() => setChallengeSeed(generateChallengeSeed())}
-              className="p-2 rounded-lg bg-border hover:bg-border/70 transition-colors flex-shrink-0"
-              title="Shuffle seed"
-            >
-              <RefreshCw className="w-4 h-4 text-text-muted" />
-            </button>
-            <button
-              onClick={handleShareChallenge}
-              disabled={!groupsComplete}
-              className="p-2 rounded-lg bg-border hover:bg-border/70 transition-colors flex-shrink-0 disabled:opacity-40"
-              title="Share settings"
-              aria-label="Share settings"
-            >
-              <Share2 className="w-4 h-4 text-text-muted" />
-            </button>
-          </div>
-        </div>
       </div>
 
-      {/* Fixed footer — Play button always visible. Greys out when the deck is invalid. */}
-      <div className="p-4 border-t border-border">
+      {/* Footer: Play, and Share beside it. Both grey out while a group is empty. */}
+      <div className="flex gap-2 py-1.5">
         <button
           onClick={onPlay}
           disabled={!isPlayValid}
-          className={`w-full py-3.5 px-6 text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
+          className={`flex h-12 min-w-0 flex-1 items-center justify-center gap-2 rounded-xl px-4 text-base font-semibold transition-all active:scale-95 font-body ${
             isPlayValid
-              ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
+              ? 'bg-accent-secondary text-white'
               : 'bg-border text-text-muted cursor-not-allowed'
           }`}
         >
           <Play className="w-4 h-4" />
-          Play · {deckCount} events
+          Play · {deckCount.toLocaleString()} events
+        </button>
+        <button
+          onClick={() => setShareOpen(true)}
+          disabled={!groupsComplete}
+          aria-haspopup="dialog"
+          aria-label="Share settings"
+          title="Share settings"
+          className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl border-2 border-accent-secondary bg-surface text-accent-secondary transition-all active:scale-95 disabled:opacity-40"
+        >
+          <Share2 className="h-5 w-5" />
         </button>
       </div>
 
+      <CustomSharePopup
+        open={shareOpen}
+        onClose={() => setShareOpen(false)}
+        codeInput={codeInput}
+        isCodeValid={isCodeValid}
+        onCodeInput={handleCodeInput}
+        onShuffle={() => setChallengeSeed(generateChallengeSeed())}
+        onShare={handleShareChallenge}
+      />
+
       {showShareToast && (
-        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
+        <div className="pointer-events-none fixed bottom-above-tabbar left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap shadow-sm flex items-center gap-2 z-50 font-body">
           <Check className="w-4 h-4" />
           Copied to clipboard!
         </div>

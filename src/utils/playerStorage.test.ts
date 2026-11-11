@@ -14,7 +14,14 @@ import {
   subscribeToProfile,
   getSeenPortraits,
   markPortraitsSeen,
+  hasSeenNav,
+  markNavSeen,
+  markNavUnseen,
+  armNavOnce,
+  getLastCustomDeck,
+  saveLastCustomDeck,
 } from './playerStorage';
+import { DEFAULT_DECK_SETTINGS } from './customDeck';
 
 const ALL_KEYS: HintKey[] = [
   'drag',
@@ -116,6 +123,41 @@ describe('custom settings storage', () => {
   });
 });
 
+describe('last custom deck storage', () => {
+  const science = { ...DEFAULT_DECK_SETTINGS, selectedCategories: ['science' as const] };
+
+  it('is empty on a fresh install', () => {
+    expect(getLastCustomDeck()).toBeNull();
+  });
+
+  it('round-trips the settings and the starting card, under its own key', () => {
+    saveLastCustomDeck({ settings: science, eventName: 'x-rays-discovered' });
+    expect(getLastCustomDeck()).toEqual({ settings: science, eventName: 'x-rays-discovered' });
+    expect(localStorage.getItem('when-last-custom-deck')).not.toBeNull();
+    expect(getCustomSettings()).toBeNull();
+  });
+
+  it('drops values no longer offered, and the record once a group would be empty', () => {
+    const stale = { ...science, selectedCategories: ['science', 'alchemy'] };
+    localStorage.setItem(
+      'when-last-custom-deck',
+      JSON.stringify({ settings: stale, eventName: 'x-rays-discovered' })
+    );
+    expect(getLastCustomDeck()?.settings.selectedCategories).toEqual(['science']);
+
+    const gone = { ...science, selectedCategories: ['alchemy'] };
+    localStorage.setItem('when-last-custom-deck', JSON.stringify({ settings: gone }));
+    expect(getLastCustomDeck()).toBeNull();
+  });
+
+  it('reads junk as no last deck', () => {
+    localStorage.setItem('when-last-custom-deck', '"oops"');
+    expect(getLastCustomDeck()).toBeNull();
+    localStorage.setItem('when-last-custom-deck', '{not json');
+    expect(getLastCustomDeck()).toBeNull();
+  });
+});
+
 describe('display name and avatar storage', () => {
   it('generates a display name once and keeps it', () => {
     const first = getOrCreateDisplayName();
@@ -176,5 +218,40 @@ describe('seen achievement portraits storage', () => {
     expect(getSeenPortraits()).toEqual(new Set());
     localStorage.setItem('when-portraits-seen', 'not json');
     expect(getSeenPortraits()).toEqual(new Set());
+  });
+});
+
+describe('nav "new" dot storage', () => {
+  const NAV = ['archive', 'stats', 'timeline'] as const;
+
+  it('reads every tab as seen on a fresh install', () => {
+    NAV.forEach((key) => expect(hasSeenNav(key)).toBe(true));
+  });
+
+  it('reads an install that predates the armed-only dots as seen', () => {
+    // Older builds wrote `true` on a visit and nothing otherwise.
+    localStorage.setItem('when-nav-seen', JSON.stringify({ stats: true }));
+    NAV.forEach((key) => expect(hasSeenNav(key)).toBe(true));
+  });
+
+  it('arms and clears the recurring Stats dot as often as asked', () => {
+    markNavUnseen('stats');
+    expect(hasSeenNav('stats')).toBe(false);
+    markNavSeen('stats');
+    expect(hasSeenNav('stats')).toBe(true);
+    markNavUnseen('stats');
+    expect(hasSeenNav('stats')).toBe(false);
+    expect(hasSeenNav('archive')).toBe(true);
+  });
+
+  it('arms a one-shot dot once per install, never again after a visit', () => {
+    armNavOnce('archive');
+    expect(hasSeenNav('archive')).toBe(false);
+    markNavSeen('archive');
+    armNavOnce('archive');
+    expect(hasSeenNav('archive')).toBe(true);
+    // The other one-shot keeps its own flag.
+    armNavOnce('timeline');
+    expect(hasSeenNav('timeline')).toBe(false);
   });
 });

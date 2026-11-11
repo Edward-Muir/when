@@ -1,4 +1,4 @@
-import type { AchievementTier } from './achievements';
+import { ACHIEVEMENTS, type AchievementDef, type AchievementTier } from './achievements';
 
 /**
  * Per-tier visual treatment for the achievement badge ring.
@@ -84,3 +84,38 @@ export const TIER_STYLES: Record<AchievementTier, TierStyle> = {
 /** Muted, tier-agnostic ring used for locked badges. */
 export const LOCKED_RING =
   'conic-gradient(from 135deg, #5b5b5b, #7d7d7d, #909090, #6a6a6a, #5b5b5b, #7d7d7d, #5b5b5b)';
+
+/**
+ * How rare each tier reads, lowest first. The order a player would rank the metals, which is not
+ * the order `TIER_STYLES` happens to list them in: verdigris sits between bronze and copper, steel
+ * between silver and gold. Used to pick the badge that leads the end-of-game achievements screen.
+ */
+export const TIER_RANK: Record<AchievementTier, number> = {
+  none: 0,
+  bronze: 1,
+  verdigris: 2,
+  copper: 3,
+  silver: 4,
+  steel: 5,
+  gold: 6,
+  platinum: 7,
+  diamond: 8,
+  obsidian: 9,
+};
+
+/**
+ * The badge that leads when a game unlocks several: the highest tier, and on a tie the one that
+ * comes later in `ACHIEVEMENTS`. Undefined for an empty list.
+ */
+export function leadAchievement(defs: readonly AchievementDef[]): AchievementDef | undefined {
+  // eslint-disable-next-line security/detect-object-injection -- union-typed key into const map
+  const rank = (def: AchievementDef) => TIER_RANK[def.tier];
+  const order = (def: AchievementDef) => ACHIEVEMENTS.findIndex((a) => a.id === def.id);
+  let lead: AchievementDef | undefined;
+  for (const def of defs) {
+    const outranks =
+      !lead || rank(def) > rank(lead) || (rank(def) === rank(lead) && order(def) > order(lead));
+    if (outranks) lead = def;
+  }
+  return lead;
+}

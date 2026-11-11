@@ -27,6 +27,11 @@ interface FilterGroupHeaderProps extends FilterGroupActions {
   label: string;
   /** Shown beside the label as `All` or `n/N`. */
   count?: { selected: number; total: number };
+  /**
+   * Keep the label for screen readers only: a folded Custom row already names the group
+   * above it. The buttons keep their `Select all {label}` / `Clear {label}` names.
+   */
+  labelHidden?: boolean;
 }
 
 const ACTION_CLASS =
@@ -48,9 +53,16 @@ const FilterGroupHeader: React.FC<FilterGroupHeaderProps> = ({
   noneOn,
   onSelectAll,
   onClear,
+  labelHidden = false,
 }) => (
   <div className="mb-2 flex items-center justify-between gap-2">
-    <span className="min-w-0 text-xs font-medium uppercase tracking-wide text-text-muted font-body">
+    <span
+      className={
+        labelHidden
+          ? 'sr-only'
+          : 'min-w-0 text-xs font-medium uppercase tracking-wide text-text-muted font-body'
+      }
+    >
       {label}
       {count && (
         <>
@@ -61,7 +73,7 @@ const FilterGroupHeader: React.FC<FilterGroupHeaderProps> = ({
         </>
       )}
     </span>
-    <div className="-my-2 flex shrink-0 items-center gap-2">
+    <div className="-my-2 ml-auto flex shrink-0 items-center gap-2">
       <button
         type="button"
         onClick={onSelectAll}

@@ -96,7 +96,7 @@ era and difficulty views are derived against the catalogue at read time, never s
 
 `StatsPanel.tsx` + `src/components/stats/`, derivations in `statsDerived.ts`. Mounted only by
 the home pager's Stats tab, which `/stats` opens directly; the pager page owns the scroll
-container, the panel never does. Layout, top to bottom: records card (longest timeline, best
+container, the panel never does. Layout, top to bottom: records card (best score, best
 streak, longest daily run, best daily score), "Your year" calendar, "Daily scores" bars,
 lifetime totals, the collection meter, and last the **Achievements** section.
 
@@ -104,10 +104,28 @@ Decisions, so they are not re-litigated:
 
 - **The calendar is weeks-as-columns with horizontal scroll** (the GitHub look), opened on
   the latest weeks. `overscroll-x-contain` keeps the swipe from chaining into the pager's
-  own horizontal track. It shows played / skipped only, with a star on badge-unlock days and
+  own horizontal track. **Both apply only while the weeks are wider than the box**, measured
+  with a `ResizeObserver` (`useOverflowsX` in `CalendarHeatmap.tsx`): a contained scroller
+  swallows a horizontal swipe even with nothing to scroll, so a calendar that fits was a dead
+  patch the pager could not be swiped from. At 375px the 20-week minimum overflows its 291px
+  box by 8px, so a new player's calendar there still scrolls and still holds the swipe. It shows played / skipped only, with a star on badge-unlock days and
   today outlined; it does not shade by score. **No summary text under
   the grid** — the legend is the only copy.
-- **Score bars use the game-over tiers** (0–2 · 3–4 · 5–7 · 8–11 · 12+, from `GamePopup`)
+- **Every number on the page is in events placed, the score.** "Best score" and "Average
+  score" are derived at read time from the stored timeline lengths (one lower per game, the
+  starting card) and `bestGameCorrectEver`, so they read 14 beside "Best daily score 14" for one
+  game. The page used to show "Longest timeline 15" there. Nothing stored changed, and neither
+  did a milestone or achievement threshold: the "Longest daily timeline · N cards" milestone
+  still counts cards on the timeline, which its unit says.
+- **"Events collected, of every card" is out of the whole playable catalogue**, so it can
+  exceed any Custom deck: an Everything deck deals 3 fewer (6,423 of 6,426 at the time of
+  writing). Those are the events dated outside the era table (`ERA_DEFINITIONS` runs from
+  4,500,000,000 BCE to 2100): Formation of Earth, the Moon-Forming Impact and the God Emperor's
+  Golden Throne (year 30000). No era selects them, so they reach a game only through a curated
+  theme that names them. Widening the era table would close the gap but moves every seeded
+  daily's pool, which `dailyPool.ts` says must never move. Counts of cards are printed with
+  `toLocaleString()` everywhere (Play, the quick decks, the country picker, the gallery's "of
+  N", My Timeline's filter). (0–2 · 3–4 · 5–7 · 8–11 · 12+, from `GamePopup`)
   so the page speaks the game's language; today's tier is the full accent.
 - **No "placement accuracy"**: a daily's mistakes are almost always the hand size (the exception
   is a cleared curated theme), so accuracy is the score restated. **No era coverage strip, no
@@ -127,13 +145,13 @@ Decisions, so they are not re-litigated:
   only once the Stats tab is on screen** (`StatsPanel`'s `active` prop; the pager pre-mounts it
   at idle for every home-screen visitor). Expanding warms the rest. Tapping a badge opens
   `AchievementDetailPopup`. `/achievements` redirects to `/stats` from `pages/Home.tsx`.
-- The Stats nav button's "new" dot is re-armed by `useGameStatsRecorder` on every unlock, so
+- The Stats tab's "new" dot is re-armed by `useGameStatsRecorder` on every unlock, so
   the badge you just earned is one tap away.
 
 ## Milestones ("Personal Best" popups)
 
-Text-and-icon popups shown after the game-over popup and **before** the achievement-unlock
-modal, revealed one at a time. Both are steps in the end-of-game sequence, which always ends
+Text-and-icon popups shown after the game-over popup and **before** the achievements step,
+revealed one at a time, each with a Continue button. Both are steps in the end-of-game sequence, which always ends
 on a share step — see `src/hooks/useEndOfGameSequence.ts` and
 [sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence).
 
@@ -166,15 +184,28 @@ and the snapshot→record→detect flow.
   platinum → shimmering diamond, plus steel/copper/obsidian/verdigris), not by new art.
 - **Locked badges still show their criterion** and a greyscale, veiled glimpse of the art behind
   a frosted lock chip — the tease is deliberate.
-- Unlock reveal uses the "Staggered Shine" animation, chosen from four candidates compared in a
-  dev-only jig (`/anim-jig`). Badge art is prefetched at game over, the moment unlocks are known,
-  so the modal shows art instantly.
+- **One unlock gets a reveal; two or more get one screen.** The single reveal uses the
+  "Staggered Shine" animation, chosen from four candidates compared in a dev-only jig
+  (`/anim-jig`). A reveal per badge made a first Daily (five badges) five taps long, so two or
+  more share `AchievementsSummary`: "N achievements unlocked", the lead badge at 132px with its
+  name and criterion, the rest as 60px rings with names, four to a row. Every badge opens
+  `AchievementDetailPopup` (on the `reveal` layer there, after the screen in the DOM, so it sits
+  on top). The rings use the `thumbnail` rung, never `detail`.
+- **The lead is the highest tier by an explicit ranking**, `TIER_RANK` in
+  `achievementTiers.ts`: none, bronze, verdigris, copper, silver, steel, gold, platinum, diamond,
+  obsidian. A tie goes to the badge later in `ACHIEVEMENTS` (`leadAchievement`). Not the order
+  `TIER_STYLES` lists them in, which put steel above gold.
+- Badge art is prefetched at game over, the moment unlocks are known (`useUnlockedBadges`), in
+  the size the step will show: `detail` for one reveal, `thumbnail` for the screen.
 - Unlock sequencing is driven by **popup-dismissal transitions, not timers**. The queue lives in
   `useEndOfGameSequence`, which starts when `pendingPopup?.type` goes from `'gameOver'` to
   undefined and advances as each step dismisses.
-- **Do not call `onDismiss` from inside a `setIndex` updater** in either reveal modal. Updaters
-  must be pure and StrictMode double-invokes them, so the dismissal fires twice and silently
-  skips the next step of the sequence.
+- **Do not call `onDismiss` from inside a `setIndex` updater** in `MilestonePopup`, or in any
+  step that walks a list. Updaters must be pure and StrictMode double-invokes them, so the
+  dismissal fires twice and silently skips the next step of the sequence.
+- **ESC reaches every open `Modal`.** With the detail popup open over the achievements screen,
+  one key press would close both and skip the step, so the screen ignores its own dismissal
+  while a badge is open. Back is already one at a time (the back stack).
 
 ## Known issue: the difficulty badge family has an inverted gradient
 

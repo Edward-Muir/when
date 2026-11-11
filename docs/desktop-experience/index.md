@@ -158,7 +158,7 @@ entirely**. Measured `getComputedStyle` before/after hover:
 
 The TopBar is the only thing on the site that responds to a mouse.
 
-The 23 player-facing offenders (there are 6 more in unlinked maintainer pages). Line numbers
+The 22 player-facing offenders (there are 6 more in unlinked maintainer pages). Line numbers
 drift; regenerate with
 `grep -rEn "hover:(bg|border|text)-(bg|surface|text|text-muted|border|accent|accent-secondary|success|error)/[0-9]+" src --include=*.tsx`.
 
@@ -174,7 +174,6 @@ src/components/LeaderboardSubmit.tsx    hover:bg-accent/90
 src/components/Menu.tsx                 hover:bg-border/50 (x2)
 src/components/PlayerInfo.tsx           hover:bg-border/50
 src/components/ReportIssueButton.tsx    hover:bg-surface/40
-src/components/ShareStepPopup.tsx       hover:bg-accent-secondary/90
 src/components/TodaysLongest.tsx        hover:bg-surface/60
 src/components/UpdatePopup.tsx          hover:bg-border/50, hover:bg-accent/90
 src/pages/Support.tsx                   hover:bg-accent/90
@@ -228,11 +227,13 @@ so the app changes tabs while you're reading. Fix: at `lg:`, either lock the tra
 
 ### C3. The swipe metaphor has no desktop affordance
 
-Panels are `w-full`, so the "sliver of the neighbour peeks" affordance the component's own
-doc-comment describes never happens above phone widths — there's nothing to indicate the pages
-are side by side. The in-page control is the dot row, which is a phone idiom and (per B1) has no
-hover. The TopBar tabs do work and are the real desktop navigation, so the dots are largely
-redundant there. Fix: at `lg:`, hide the dots or render the five tabs as a labelled tab bar.
+Panels are `w-full`, so nothing indicates the pages sit side by side. **Half done:** the dot
+row and the top-bar tab buttons are gone, replaced at every width by one labelled tab bar at
+the foot of Home (`HomeTabBar.tsx`, see [ui-redesign](../ui-redesign/index.md#home-is-a-five-tab-pager)),
+which needs no swipe to discover. It was built for phones and has no `lg:` step: at 1280x800
+the five tabs are 256px each across the whole window, under a 384px column, and like the
+other controls (B1) they have no hover state. Still open: at `lg:`, cap the bar's width to
+the content or move the tabs into a top or side rail, and give them a hover.
 
 ### C4. Every panel's content is a 384px column in a 1440px window
 

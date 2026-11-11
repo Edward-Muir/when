@@ -90,6 +90,14 @@ it so.
 hardcoded `pt-*`.** Edge-to-edge is deliberate over the simpler `overlaysWebView: false` — the
 choice is cosmetic (immersive vs. a solid top band).
 
+The bottom works the same way. **Home's tab bar (`HomeTabBar.tsx`) carries `pb-safe` itself**,
+so in the apps it is 64px plus the home-indicator inset (about 34px on a Face ID iPhone) and
+its surface runs to the bottom edge; the Home container no longer pads its own bottom, or the
+inset would count twice. Anything fixed above the bar has to add the inset too:
+`.bottom-above-tabbar` in `index.css` is `5rem + env(safe-area-inset-bottom)`, used by every
+Home toast. A plain `bottom-20` clears the bar on the web and sits under it in the app. The
+in-game equivalent is `.hand-bar`.
+
 Zoom is locked **native-only** (`maximum-scale=1.0, user-scalable=no`, applied from
 `App.tsx` behind `isNativePlatform()`). WKWebView honours pinch-zoom but offers no chrome to
 reset it, so users get stuck zoomed in. Web keeps pinch-zoom for accessibility — and Safari
@@ -112,7 +120,7 @@ schedule is computed on-device. No APNs keys, entitlements, subscription store o
   theme is worth less than being free to schedule one for tomorrow.
 - **iOS shows the permission dialog exactly once, ever, and a denial is permanent**
   (Settings-app only). Hence: never prompted at launch — resync only schedules if already
-  granted; a priming card (`DailyReminderPrompt`, in the daily's share step,
+  granted; a priming card (`DailyReminderPrompt`, on the daily's closing card,
   `ShareStepPopup.tsx`) fires the real dialog, with "Not now"
   costing nothing and re-offering after 7 days, max 3 times; intent defaults to **on**
   (`when-daily-reminder` != `'0'`), and the burger-menu row is both the opt-out and the
@@ -158,6 +166,13 @@ The prompts, tuned so one object reads at 60 px, are in
   before capture: a public listing must not show real players' names. Output:
   `assets/app-store/screenshots/`; `--compose` re-frames the saved raw captures without
   touching the site.
+
+## The Android back button
+
+No native handling, on purpose. The WebView's default back goes back in history, and the web
+app holds one history entry per game, so Back closes an open popup or the menu and then acts as
+the top bar's Home. The whole mechanism is JS, so installed binaries pick it up with the site.
+See [Leaving a game](../ui-redesign/index.md#leaving-a-game). Not tested on a device.
 
 ## Things that work unmodified in the WebView
 
