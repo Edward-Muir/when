@@ -28,6 +28,7 @@ import { getSeenPortraits, resetHintsSeen } from '../utils/playerStorage';
 import { getAchievements } from '../utils/statsStorage';
 import { newEarnedPortraits } from '../utils/avatar';
 import { APP_VERSION } from '../version';
+import { useBackHandler } from '../hooks/useBackHandler';
 import HowToPlayModal from './HowToPlayModal';
 import AvatarPickerModal from './AvatarPickerModal';
 import Modal from './ui/Modal';
@@ -86,6 +87,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
   const [showProfile, setShowProfile] = React.useState(false);
+  // The drawer is not a Modal, so it registers for the system Back gesture itself.
+  useBackHandler(isOpen, onClose);
   // Read on render: the menu re-renders when the picker closes, which is what clears it.
   const hasNewPortraits =
     newEarnedPortraits(getAchievements().unlocked, getSeenPortraits()).size > 0;

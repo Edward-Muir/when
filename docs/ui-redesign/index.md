@@ -108,7 +108,7 @@ makes this worth having: without it, a finished board is a score.
   `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
   and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
   cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
-  Home skips the "progress will be lost" confirm.
+  Home skips the "progress will be lost" confirm (see [Leaving a game](#leaving-a-game)).
 - **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
   events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
   overwrites it and no history accumulates — the self-invalidating shape `when-daily-result`
@@ -124,6 +124,43 @@ makes this worth having: without it, a finished board is a score.
   Daily strip's slot.
 - `useSaveDailyResult` is its own hook file because `useWhenGame.ts` is on the `max-lines`
   ceiling, the same squeeze `Game.tsx` is under for `complexity`.
+
+## Leaving a game
+
+Home from a game asks "Leave game?" only when progress would be lost. `leaveAction` in
+`hooks/useLeaveGame.ts` is the whole rule, and the top bar's Home and the system Back gesture
+both go through it.
+
+- **A Daily in progress leaves at once**, and Home opens with a "Saved" toast. The Daily is
+  saved as it is played and resumes from the Daily card in under a second, so the prompt
+  guarded nothing. Same reasoning as Reset Hints: no confirm where nothing is lost.
+- **A Custom or Archive game keeps the confirm.** There the progress really is lost. An
+  Archive day runs as `suddenDeath`, so `gameMode === 'daily'` means today's Daily only.
+- **A finished game and a review board just leave.**
+- **The toast crosses a remount.** Leaving on `/daily` or `/challenge/:code` navigates to `/`,
+  which mounts a different `App`, so the notice is module state (`utils/homeNotice.ts`) that
+  expires after 2.5 s. It is not cleared by its reader: StrictMode mounts the home screen twice.
+
+**System Back behaves as Home.** A game holds one history entry (`utils/gameBackEntry.ts`,
+`hooks/useGameBackButton.ts` in `App`), because starting a game never navigates and Back would
+otherwise leave the app with the game. On Back:
+
+- **The top of the back stack runs** (`utils/backStack.ts`). Every open `Modal` and the Menu
+  drawer register there, so Back closes a popup or the menu first. The game's own handler sits
+  at the bottom and is `requestHome`. A `locked` popup registers a handler that does nothing,
+  so Back cannot reach the game behind an unsubmitted score.
+- **The entry is restored with `history.forward()`, never a second `pushState`.** Chrome skips
+  entries a page pushes without a tap the next time Back is pressed. For the same reason the
+  first push waits for a tap on `/daily` and `/challenge/:code`, which start with none.
+- **Leaving by a button consumes the entry first** (`leaveGameEntry`), and waits for that
+  `popstate` before navigating. Navigating first replaces the wrong entry: on `/daily` the pop
+  then lands back on `/daily`, which auto-starts the game the player just left.
+- **When the Back press itself leaves, nothing is restored.** The press already popped the
+  entry; stepping forward again after the leave lands on a stale `/daily`.
+- Back on the home screen is left to the browser. No native code: the Android WebView's
+  default back goes back in history, and old app binaries run this JS.
+- Not handled: a reload during a Custom game still loses it, and the 3 s start transition
+  absorbs Back without acting.
 
 ## Timeline progression: the rail
 
@@ -486,6 +523,18 @@ and do not improve performance, while hints of this shape do.
   carries a `key`, and the panel looks the copy up from it instead of hardcoding `dailyTab`.
 - **The Custom nav icon is sliders, not a cog.** A cog reads as app Settings. It matches
   the My Timeline filter button's icon; the aria-labels differ.
+
+## Haptics on Home
+
+`haptics.select()` ticks once when the pager settles on a different tab
+(`hooks/useTabChangeHaptic.ts`) and once per filter chip action (`hooks/usePillTap.ts`).
+
+- The tab tick compares against the last page seen, starting from the page the screen opened
+  on, because the pager reports its index on every scroll event including the one that puts it
+  on its first page. A jump across two tabs ticks twice, once per tab crossed.
+- A double-tap isolate is one action: the first tap ticks, the second is silent.
+- The web fallback is `navigator.vibrate`, which iOS Safari lacks, so this is felt in the apps
+  and on Android Chrome.
 
 ## Custom settings screen
 

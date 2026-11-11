@@ -159,6 +159,13 @@ The prompts, tuned so one object reads at 60 px, are in
   `assets/app-store/screenshots/`; `--compose` re-frames the saved raw captures without
   touching the site.
 
+## The Android back button
+
+No native handling, on purpose. The WebView's default back goes back in history, and the web
+app holds one history entry per game, so Back closes an open popup or the menu and then acts as
+the top bar's Home. The whole mechanism is JS, so installed binaries pick it up with the site.
+See [Leaving a game](../ui-redesign/index.md#leaving-a-game). Not tested on a device.
+
 ## Things that work unmodified in the WebView
 
 Routing, dark mode, `navigator.share`, safe-area env vars, the service worker, localStorage,

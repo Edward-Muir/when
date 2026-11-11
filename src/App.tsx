@@ -9,7 +9,7 @@ import { useWhenGame } from './hooks/useWhenGame';
 import { useImagePrefetch } from './hooks/useImagePrefetch';
 import { CATCH_UP_REACH } from './utils/catchUp';
 import { pickIntroEvents } from './utils/introEvents';
-import { GameConfig } from './types';
+import { GameConfig, GamePhase } from './types';
 import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
 import { getDailyTheme } from './utils/dailyTheme';
 import { getLocalDateString } from './utils/puzzleDate';
@@ -18,6 +18,8 @@ import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeC
 import ModeSelect from './components/ModeSelect';
 import { NavDest } from './components/TopBar';
 import Game from './components/Game';
+import { useGameBackButton } from './hooks/useGameBackButton';
+import { leaveGameEntry } from './utils/gameBackEntry';
 import GameStartTransition from './components/GameStartTransition';
 
 // How deep into today's daily deck the intro animation may sample without spoiling cards
@@ -34,6 +36,11 @@ export const DAILY_SPOILER_DEPTH = 15 + CATCH_UP_REACH;
 
 /** A daily deck this small is kept out of the intro in full, like a curated one. */
 export const THIN_DAILY_DECK = 60;
+
+/** A game is on screen, or dealing: the phases the system Back gesture is held for. */
+function isInGame(phase: GamePhase): boolean {
+  return phase === 'transitioning' || phase === 'playing' || phase === 'gameOver';
+}
 
 interface AppProps {
   /** Home-pager tab to open on; the URL names it (`src/pages/Home.tsx`). */
@@ -241,10 +248,16 @@ function App({
     startGame(config);
   };
 
+  // Every way home from a game comes through here, so this is where the game's history entry
+  // is consumed. It waits for the pop before navigating: see `leaveGameEntry`.
   const handlePlayAgain = () => {
-    resetGame();
-    onNavigateHome?.();
+    leaveGameEntry(() => {
+      resetGame();
+      onNavigateHome?.();
+    });
   };
+
+  useGameBackButton(isInGame(state.phase));
 
   // All phases wrapped in AnimatePresence for smooth transitions
   return (

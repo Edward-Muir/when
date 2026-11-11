@@ -26,6 +26,9 @@ import { useDailyPreview } from '../hooks/useDailyPreview';
 
 import Leaderboard from './Leaderboard';
 import { useDailyTabHints } from '../hooks/useDailyTabHints';
+import { useHomeNotice } from '../hooks/useHomeNotice';
+import { useTabChangeHaptic } from '../hooks/useTabChangeHaptic';
+import { Toast } from './Toast';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -128,6 +131,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
+  // "Saved", when the player has just left a Daily in progress.
+  const homeNotice = useHomeNotice();
 
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
@@ -142,6 +147,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
+  useTabChangeHaptic(activePage);
   // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
   // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
   // the daily and challenge routes also mount this screen while they load, and must keep
@@ -352,6 +358,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           )}
         </ModePager>
       </div>
+
+      <Toast
+        message={homeNotice.message}
+        isVisible={homeNotice.visible}
+        onClose={homeNotice.close}
+      />
 
       {/* Share toast */}
       {showShareToast && (

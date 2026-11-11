@@ -1,7 +1,9 @@
 # Navigation and feel review: findings and the chosen work
 
 **Status:** a review of everything outside the drag-and-place loop, made by driving the real
-app at v1.39.0. Six pieces of work were chosen from it and none is built yet. This file holds
+app at v1.39.0. Six pieces of work were chosen from it. Items 1 to 3 are built and live in
+[ui-redesign](../ui-redesign/index.md#leaving-a-game); the country-search fix in item 6 was
+dropped. This file holds
 what was seen, what was chosen, the spec for each piece, and the findings that were raised but
 not chosen. Written so a fresh session can pick any item up cold.
 
@@ -27,52 +29,6 @@ session can read it with the Artifact tool. Sketch numbers below are the ones on
   layout all hold up.
 
 ## The chosen work
-
-### 1. Leave a Daily without a prompt
-
-**Seen.** Home during a Daily opens "Leave game? Your progress is saved. Pick up where you left
-off from the Daily card." with Cancel and Leave. The prompt guards nothing: leaving took about
-150 ms and Resume about 850 ms, with the board intact.
-
-**Build.** On a Daily in progress, Home leaves at once and the home screen shows a short
-"Saved" toast. A Custom or Archive game keeps the confirm, because there the progress really is
-lost. A review board (`isReview`) already skips the confirm.
-
-**Where.** The confirm is the small modal at the top of `Game.tsx`; `Toast.tsx` exists.
-`Game.tsx` is on the ESLint `complexity` ceiling, so new branching belongs in a hook.
-
-### 2. System Back behaves as Home
-
-**Seen.** Starting a game does not add a history entry (a Custom game stays on `/custom`), and
-tab changes replace the path. So the browser or Android Back gesture during a Custom or Archive
-game leaves the app with no prompt and the game is gone. Nothing in `src` listens for
-`popstate`, `beforeunload` or the Capacitor back button.
-
-**Build.** Push one history entry when a game starts. On `popstate` during a game, run exactly
-what the top-bar Home runs: a Daily leaves and shows "Saved" (item 1), a Custom or Archive game
-gets the confirm, and Cancel puts the entry back. Leaving by the Home button must consume the
-pushed entry, or the next Back needs two presses.
-
-**Check.** `/daily` and `/challenge/:code` start a game from their own route: Back from those
-must land on Home, not outside the app. `@capacitor/app` is already a dependency, but the
-default WebView back (go back in history) should make the pushed entry enough; prefer that over
-new native code, since old app binaries run this JS. No new route, so no `vercel.json` change.
-
-**Open.** Whether Back closes an open popup or the menu drawer first. Recommended: yes, then it
-acts as Home.
-
-### 3. A light haptic on tab change and chip toggle
-
-**Seen in code.** `useHaptics` is used by the game, the drag, a locked Archive row, the badge
-reveal and the reminder hook. The home pager and the filter chips are silent.
-
-**Build.** `haptics.select()` once per change of the pager's active tab, by swipe or by tap,
-and never on the initial mount or the idle pre-mount. The same on a filter chip toggle; a
-double-tap isolate is one action and fires once.
-
-**Where.** `ModePager.tsx` (`onIndexChange`) or `ModeSelect.tsx`; `usePillTap.ts` /
-`FilterPill.tsx`. The web fallback is `navigator.vibrate`, which iOS Safari lacks, so this is
-felt in the apps and on Android Chrome.
 
 ### 4. The end of a game in four taps (sketch 1)
 
@@ -145,8 +101,7 @@ bar 64). In the iOS app the home-indicator inset is added under the bar.
 ### 6. Custom on one screen (sketch 4)
 
 **Seen.** On 375x667 the filter list is 1,342px tall inside a 366px window, or 242px while the
-first-visit hint is up. Custom greets a returning player with a form every time. In the country
-picker, searching for Italy and tapping it removes Italy, because everything starts selected.
+first-visit hint is up. Custom greets a returning player with a form every time.
 
 **Build.**
 
@@ -157,8 +112,6 @@ picker, searching for Italy and tapping it removes Italy, because everything sta
 - **Each filter group folds to one 44px row** stating its setting: "All 4", a single name,
   "3 of 21", "All but Italy". A setting that differs from the default is teal. A tap opens the
   group in place with the same chips, Select all and Clear as now.
-- **Country search:** a single tap on a search result, while its region is fully selected,
-  picks that country alone.
 - **Share** becomes one button beside Play that opens the link field.
 
 **Constraints.** `FilterControls` is shared with My Timeline's filter popup, so folding is a
@@ -173,7 +126,11 @@ the last settings edited, not the last played, so "last deck" needs its own key.
 
 ## Raised, not chosen
 
-No decision was made against these; they were simply not picked.
+No decision was made against these; they were simply not picked, with one exception.
+
+Decided against: in the country picker, searching for Italy and tapping it removes Italy,
+because everything starts selected. Making that tap pick the country alone was proposed with
+item 6 and turned down. The single tap stays a toggle.
 
 Bugs:
 

@@ -137,7 +137,16 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   bottom-left counter button for `stats`, the cycle button for `swap`.
 - **The menu drawer:** opened by `[aria-label="Open menu"]`. It does **not** close on
   Escape, and while open it swallows later clicks, so close it with
-  `[aria-label="Close menu"]` (or reload) before driving anything else.
+  `[aria-label="Close menu"]` (or reload) before driving anything else. During a game
+  `page.goBack()` closes it too.
+- **`[aria-label="Go home"]` matches two buttons in a game:** the "When?" title and the Home
+  icon. Use `.last()` for the icon. Home from a Daily in progress leaves at once and Home shows
+  a "Saved" toast for 2 s; from a Custom or Archive game it opens "Leave game?" with **Cancel**
+  and **Leave**.
+- **`page.goBack()` during a game** closes the top popup or the menu, and otherwise does what
+  Home does. Wait ~700 ms after it: the game steps back onto its history entry with
+  `history.forward()`, so a second `goBack()` fired at once can leave the app. `/daily` adds
+  its entry on the first pointer event, so drag or click before testing Back there.
 - **Home → Custom tab → start a game:** nav button `[aria-label="Custom game"]`, then
   the button matching `/Play\s+·/` ("Play · N events").
 - **Custom filter chips** are `button[aria-pressed]`. A category chip's DOM text is the

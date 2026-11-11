@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Z_LAYERS } from './zLayers';
+import { useBackHandler } from '../../hooks/useBackHandler';
 
 export type ModalSize = 'compact' | 'standard' | 'wide';
 export type ModalDismissMode = 'backdrop' | 'tap-advance' | 'locked';
@@ -136,6 +137,12 @@ const Modal: React.FC<ModalProps> = ({
     document.addEventListener('keydown', handleEscape);
     return () => document.removeEventListener('keydown', handleEscape);
   }, [open, dismissible, onDismiss]);
+
+  // The system Back gesture during a game closes the top popup first. A locked popup still
+  // registers, with nothing to do: Back must not reach the game behind it and leave.
+  useBackHandler(open, () => {
+    if (dismissible) onDismiss?.();
+  });
 
   const cardClasses = buildCardClasses({
     size,

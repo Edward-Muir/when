@@ -1,6 +1,10 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Leaving a Daily in progress no longer asks first, and the home screen confirms it is saved.",
+    "The Back button during a game now goes home, closing any open popup or the menu first.",
+    "Changing tab and toggling a filter chip now give a light tap of haptic feedback."
+  ],
   "releases": [
     {
       "version": "1.39.0",

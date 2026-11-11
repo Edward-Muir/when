@@ -37,6 +37,7 @@ import HintStrip from './HintStrip';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import { useThemeIntro } from '../hooks/useThemeIntro';
+import { useLeaveGame } from '../hooks/useLeaveGame';
 import ThemeIntroPopup from './ThemeIntroPopup';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
@@ -58,8 +59,7 @@ const HomeConfirmModal: React.FC<{
   open: boolean;
   onClose: () => void;
   onConfirm: () => void;
-  state: Pick<WhenGameState, 'gameMode'>;
-}> = ({ open, onClose, onConfirm, state }) => (
+}> = ({ open, onClose, onConfirm }) => (
   <Modal
     open={open}
     onDismiss={onClose}
@@ -72,10 +72,8 @@ const HomeConfirmModal: React.FC<{
   >
     <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
     <p className="text-text-muted text-sm mb-6 font-body">
-      {/* A daily is saved as it is played (utils/dailyProgress.ts), so leaving loses nothing. */}
-      {state.gameMode === 'daily'
-        ? 'Your progress is saved. Pick up where you left off from the Daily card.'
-        : 'Your current progress will be lost.'}
+      {/* Only asked where it is true: see `leaveAction` in hooks/useLeaveGame.ts. */}
+      Your current progress will be lost.
     </p>
     <div className="flex gap-3">
       <button
@@ -207,7 +205,6 @@ const Game: React.FC<GameProps> = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
   const [showToast, setShowToast] = useState(false);
-  const [showHomeConfirm, setShowHomeConfirm] = useState(false);
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
   const [showStatsPopup, setShowStatsPopup] = useState(false);
   // Full-screen edge-in colour pulse shown on each placement. `key` remounts
@@ -254,6 +251,9 @@ const Game: React.FC<GameProps> = ({
     hasMilestones: gameMilestones.length > 0,
     hasAchievements: unlockedDefs.length > 0,
   });
+
+  // Home, from the top bar or the system Back gesture: asks only when progress would be lost.
+  const leave = useLeaveGame(state, onNewGame);
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -412,9 +412,7 @@ const Game: React.FC<GameProps> = ({
         >
           <TopBar
             showHome={true}
-            // "Leave game?" is the wrong question for a finished board
-            // being re-read, so a review leaves straight away.
-            onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
+            onHomeClick={leave.requestHome}
             dailyTheme={dailyThemeDisplay}
             onRestart={midGameRestart(state, onRestartMidGame)}
             restartDisabled={state.isAnimating}
@@ -544,10 +542,9 @@ const Game: React.FC<GameProps> = ({
           />
 
           <HomeConfirmModal
-            open={showHomeConfirm}
-            onClose={() => setShowHomeConfirm(false)}
+            open={leave.confirmOpen}
+            onClose={leave.closeConfirm}
             onConfirm={onNewGame}
-            state={state}
           />
 
           {/* The end-of-game sequence. Each step dismisses to the next; the share always

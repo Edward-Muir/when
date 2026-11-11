@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useHaptics } from './useHaptics';
 
 // Max gap (ms) between two taps on the same pill to count as a double-tap.
 // 400ms matches macOS/Windows double-click defaults and sits just above
@@ -17,9 +18,12 @@ const DOUBLE_TAP_MS = 400;
  * the result is correct regardless of re-render timing. Works on touch too.
  *
  * One ref per hook instance, so keys must be unique across every group that shares it.
+ *
+ * The first tap ticks. A double-tap is one action, so its second tap is silent.
  */
 export function usePillTap() {
   const lastTap = useRef<{ key: string; time: number; before: unknown[] } | null>(null);
+  const { haptics } = useHaptics();
 
   return function handlePillTap<T>(
     item: T,
@@ -41,6 +45,7 @@ export function usePillTap() {
       // First tap: toggle immediately and remember the state for a possible double.
       lastTap.current = { key, time: now, before: selected };
       toggle(item);
+      haptics.select();
     }
   };
 }
