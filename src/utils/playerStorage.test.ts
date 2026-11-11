@@ -14,6 +14,10 @@ import {
   subscribeToProfile,
   getSeenPortraits,
   markPortraitsSeen,
+  hasSeenNav,
+  markNavSeen,
+  markNavUnseen,
+  armNavOnce,
 } from './playerStorage';
 
 const ALL_KEYS: HintKey[] = [
@@ -176,5 +180,40 @@ describe('seen achievement portraits storage', () => {
     expect(getSeenPortraits()).toEqual(new Set());
     localStorage.setItem('when-portraits-seen', 'not json');
     expect(getSeenPortraits()).toEqual(new Set());
+  });
+});
+
+describe('nav "new" dot storage', () => {
+  const NAV = ['archive', 'stats', 'timeline'] as const;
+
+  it('reads every tab as seen on a fresh install', () => {
+    NAV.forEach((key) => expect(hasSeenNav(key)).toBe(true));
+  });
+
+  it('reads an install that predates the armed-only dots as seen', () => {
+    // Older builds wrote `true` on a visit and nothing otherwise.
+    localStorage.setItem('when-nav-seen', JSON.stringify({ stats: true }));
+    NAV.forEach((key) => expect(hasSeenNav(key)).toBe(true));
+  });
+
+  it('arms and clears the recurring Stats dot as often as asked', () => {
+    markNavUnseen('stats');
+    expect(hasSeenNav('stats')).toBe(false);
+    markNavSeen('stats');
+    expect(hasSeenNav('stats')).toBe(true);
+    markNavUnseen('stats');
+    expect(hasSeenNav('stats')).toBe(false);
+    expect(hasSeenNav('archive')).toBe(true);
+  });
+
+  it('arms a one-shot dot once per install, never again after a visit', () => {
+    armNavOnce('archive');
+    expect(hasSeenNav('archive')).toBe(false);
+    markNavSeen('archive');
+    armNavOnce('archive');
+    expect(hasSeenNav('archive')).toBe(true);
+    // The other one-shot keeps its own flag.
+    armNavOnce('timeline');
+    expect(hasSeenNav('timeline')).toBe(false);
   });
 });

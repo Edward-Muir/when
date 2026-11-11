@@ -242,10 +242,14 @@ export function subscribeHintsReset(handler: () => void): () => void {
 // --- Nav "new" Dot Storage ---
 
 /**
- * Top-bar nav destinations that get a one-time "new" dot until first clicked. (Stored JSON
- * may also hold an `achievements` key; it is never read.)
+ * Home tabs that can carry a "new" dot. A dot is armed only by something happening (a badge
+ * unlock, a first Daily, a first collected event), never by a fresh install, so a missing
+ * entry reads as seen. (Stored JSON may also hold an `achievements` key; it is never read.)
  */
 export type NavKey = 'archive' | 'stats' | 'timeline';
+
+/** The two dots that light once per install, ever. */
+export type OneShotNavKey = 'archive' | 'timeline';
 
 interface NavSeen {
   archive?: boolean;
@@ -254,63 +258,71 @@ interface NavSeen {
 }
 
 const NAV_SEEN_KEY = 'when-nav-seen';
+/** Which one-shot dots have been lit already, so they never light again. */
+const NAV_ARMED_KEY = 'when-nav-armed';
 
 // Switch-based access (mirrors getHintSeen/setHintSeen) to avoid dynamic key indexing.
+// Only an explicit `false` is unseen: that is what `markNavUnseen` writes.
 function getNavSeen(data: NavSeen, key: NavKey): boolean {
   switch (key) {
     case 'archive':
-      return data.archive === true;
+      return data.archive !== false;
     case 'stats':
-      return data.stats === true;
+      return data.stats !== false;
     case 'timeline':
-      return data.timeline === true;
+      return data.timeline !== false;
   }
 }
 
-function setNavSeen(data: NavSeen, key: NavKey): NavSeen {
+function setNavSeen(data: NavSeen, key: NavKey, seen: boolean): NavSeen {
   switch (key) {
     case 'archive':
-      return { ...data, archive: true };
+      return { ...data, archive: seen };
     case 'stats':
-      return { ...data, stats: true };
+      return { ...data, stats: seen };
     case 'timeline':
-      return { ...data, timeline: true };
-  }
-}
-
-function clearNavSeen(data: NavSeen, key: NavKey): NavSeen {
-  switch (key) {
-    case 'archive':
-      return { ...data, archive: false };
-    case 'stats':
-      return { ...data, stats: false };
-    case 'timeline':
-      return { ...data, timeline: false };
+      return { ...data, timeline: seen };
   }
 }
 
 /**
- * Check whether a nav destination's "new" dot has already been dismissed
- * (i.e. the user has clicked/visited it before).
+ * Whether a tab's "new" dot is off. True unless something armed it and the tab has not been
+ * visited since, so a fresh install shows no dots.
  */
 export function hasSeenNav(key: NavKey): boolean {
-  return readJson(NAV_SEEN_KEY, false, (data) => getNavSeen(data as NavSeen, key));
+  return readJson(NAV_SEEN_KEY, true, (data) => getNavSeen((data ?? {}) as NavSeen, key));
 }
 
-/**
- * Mark a nav destination as seen so its "new" dot no longer shows.
- */
+/** Clear a tab's "new" dot: the player is on that tab. */
 export function markNavSeen(key: NavKey): void {
-  writeJson(NAV_SEEN_KEY, setNavSeen(readJson<NavSeen>(NAV_SEEN_KEY, {}), key), 'nav seen state');
+  const data = readJson<NavSeen>(NAV_SEEN_KEY, {});
+  writeJson(NAV_SEEN_KEY, setNavSeen(data, key, true), 'nav seen state');
 }
 
 /**
- * Re-arm a nav destination's "new" dot (e.g. after a new achievement unlocks),
- * so it shows again until the user next visits that page.
+ * Arm a tab's "new" dot (e.g. after a badge unlocks), so it shows until the player next
+ * visits that tab. Recurring: every call re-arms it.
  */
 export function markNavUnseen(key: NavKey): void {
   const data = readJson<NavSeen>(NAV_SEEN_KEY, {});
-  writeJson(NAV_SEEN_KEY, clearNavSeen(data, key), 'nav seen state');
+  writeJson(NAV_SEEN_KEY, setNavSeen(data, key, false), 'nav seen state');
+}
+
+/**
+ * Arm a one-shot dot (Archive after the first Daily, Timeline after the first collected
+ * event), unless it has been armed before on this install. Its own key, so neither a visit
+ * nor a stats reset can make it light a second time.
+ */
+export function armNavOnce(key: OneShotNavKey): void {
+  const armed = readJson<{ archive?: boolean; timeline?: boolean }>(NAV_ARMED_KEY, {});
+  const already = key === 'archive' ? armed.archive === true : armed.timeline === true;
+  if (already) return;
+  writeJson(
+    NAV_ARMED_KEY,
+    key === 'archive' ? { ...armed, archive: true } : { ...armed, timeline: true },
+    'nav armed state'
+  );
+  markNavUnseen(key);
 }
 
 // --- Achievement portraits already shown ---

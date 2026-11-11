@@ -28,14 +28,30 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
 
 ## Home is a five-tab pager
 
-`Daily · Archive · Custom · Stats · My Timeline`, driven by **both** swipe and the TopBar
-buttons. One navigation model: the buttons scroll the same pager the swipe does, rather than
-`navigate()`ing to separate full-page routes.
+`Daily · Archive · Custom · Stats · My Timeline`, driven by **both** swipe and a labelled tab
+bar along the foot of the screen (`HomeTabBar.tsx`). One navigation model: a tab tap scrolls
+the same pager the swipe does, rather than `navigate()`ing to separate full-page routes.
 
-- **The order lives in one place**: the `TABS` array in `ModeSelect.tsx`. Labels, indicator
-  colours, the index↔key maps and the idle pre-mount set are all derived from it, and the
-  `ModePager` children must be rendered in that order. Don't add a hand-maintained mirror of
-  the list.
+- **The order lives in one place**: the `TABS` array in `homeTabs.ts`, which holds each tab's
+  key, word, icon, `aria-label` and active colour. The index↔key maps and the idle pre-mount
+  set are derived from it, and the `ModePager` children in `ModeSelect.tsx` must be rendered
+  in that order. It is its own module because `ModeSelect` and `HomeTabBar` both read it and
+  neither may import the other. Don't add a hand-maintained mirror of the list.
+- **The tab bar sits under the pager, outside it**, so nothing mounts during a swipe. Each
+  tab is a 22px icon over its word, a fifth of the width: 80px at 402, 64px at 320, where
+  "Timeline" (45px at 11px) is the widest word and still clears. The bar is 64px tall plus
+  the home-indicator inset (`pb-safe` on the bar; the Home container no longer pads the
+  bottom itself). The active tab takes its colour and a 3px marker on its top edge, drawn
+  with `bg-current` so it follows the colour; the others are `text-text-muted`. The active
+  tab carries `aria-current="page"`.
+- **The highlight follows the scroll, never the tap.** `activePage` is written only by the
+  pager's `onIndexChange`; a tap calls `scrollToPage` and the marker walks with the scroll.
+  `useTabChangeHaptic` reads the same `activePage`, so taps and swipes tick alike.
+- **The `aria-label`s predate the bar and are kept** ("Go home", "Past decks", "Custom
+  game", "View stats", "View my timeline"): scripts and the Playwright runbook select by them.
+- **The top bar on Home shows Menu only.** The five buttons it used to carry moved to the
+  bar, and nothing else rendered them, so `TopBar` no longer has a nav cluster: it is the
+  title, the theme pill, Home, Restart and Menu, each shown where its caller asks.
 - **Archive** (`panels/ArchivePanel.tsx`) is every daily from the last 30 days, laid out on
   the game's own timeline by date, curated ones in a gold border — see
   [../curated-themes/](../curated-themes/index.md#replaying-past-days-the-archive-tab).
@@ -53,36 +69,45 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   while expanded, and badge art is prefetched only for the unlocked badges until then** — an
   always-mounted 60-card grid stalls the swipe on iOS (below). `/achievements` redirects to
   `/stats` (`pages/Home.tsx`) and keeps its `vercel.json` rewrite so old links land.
-- **My Timeline is the fifth tab**, with its own path (`/timeline`) and top-bar button
-  (Hourglass, "View my timeline"), not a menu link, for the same reason.
-- **The one-time "new" dots sit on the buttons they belong to**: Stats (re-armed on every
-  badge unlock by `useGameStatsRecorder`, cleared on visiting the tab) and Timeline. The menu
-  button carries none. The state is `hasSeenNav` / `markNavSeen` / `markNavUnseen` in
-  `playerStorage.ts`.
-- **Six buttons fit a 320px phone at `gap-2` / `p-2`**: 6 × 38px (20px icon + 16px padding +
-  2px border) + 5 × 8px gaps + 16px container padding = 284px. Seven need 6px gaps, so don't
-  add a seventh without re-measuring.
+- **My Timeline is the fifth tab**, with its own path (`/timeline`) and tab (Hourglass,
+  "View my timeline"), not a menu link, for the same reason.
+- **"New" dots are armed by events, never by an install**, so a fresh install shows none. A
+  missing entry in `when-nav-seen` reads as seen; only `markNavUnseen` writes the `false`
+  that lights one. Three dots, each on its own tab and cleared by visiting it
+  (`useNavDots`): **Stats** on every badge unlock (recurring); **Archive** after the first
+  Daily ever finished; **Timeline** after the first game that put anything in the
+  collection. The last two are once per install: `armNavOnce` records them in
+  `when-nav-armed`, so neither a visit nor a stats wipe re-lights them, and they key off the
+  stores being empty before the game rather than "the next game", so an install that
+  predates the dots is not told about tabs it already uses. All three are armed in
+  `useGameStatsRecorder`. The menu button carries none.
+- **A tab counts as visited only once the pager rests on it** (`NAV_DOT_SETTLE_MS`, 400ms).
+  A tap from Daily to Timeline scrolls across Archive and Stats, and `activePage` passes
+  through both; clearing on every change would wipe dots on tabs the player never saw.
+- **The dots are read once, when Home mounts.** Everything that arms one happens in a game,
+  and Home mounts afresh when a game ends, so a dot appears the moment the player is back.
+- **Home's toasts sit 16px above the bar** with `.bottom-above-tabbar` (`index.css`:
+  `5rem + env(safe-area-inset-bottom)`): the "Saved" notice, the Daily share, Custom's
+  share link and the menu's "Copied" (`TopBar toastAboveTabBar`). On the web that is the same
+  80px as before; in the apps the inset lifts them with the bar. The in-game `Toast` keeps
+  its plain `bottom-20`.
 
 - **Every tab has a path, and the path opens the home screen on that tab**:
   `/`, `/archive`, `/custom`, `/stats`, `/timeline` are one route (`/:tab?` → `pages/Home.tsx` →
   `App initialTab` → `ModeSelect` → `ModePager initialIndex`), and `ModeSelect` replaces the
   path as the player swipes so a refresh or a shared link comes back to the same tab. The
   tab↔path map is `pathForNav` / `navForPath` in `TopBar.tsx`. There are no standalone tab
-  pages; the panel components in `src/components/panels/` are mounted by the pager. **The top
-  bar shows the same five nav buttons on every non-game page.**
-- **`TopBar` takes an optional `onNavClick`**: when provided the buttons scroll the pager,
-  when absent they navigate to the tab's path. The in-game bar
-  (`Game.tsx`) deliberately shows Home and Menu only.
+  pages; the panel components in `src/components/panels/` are mounted by the pager.
+- **The in-game bar (`Game.tsx`) has no tabs**: the "When?" title, the Daily's theme pill,
+  Home, Restart in a practice game, and Menu.
 - **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Stats and
   Timeline. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalls the
   iOS scroll-snap gesture. `TimelinePanel` additionally holds its (unvirtualised) timeline back
   until the tab has been shown once, and `StatsPanel`'s badge art waits for `active` too.
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict**.
   Don't re-litigate it.
-- Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
+- Custom's active tab colour is `accent-secondary` (teal) to match that screen; every other
   tab, Archive included, is `accent` (gold).
-- The indicator shows only the active tab's label, with all labels stacked in one grid cell
-  (inactive ones `invisible`) so its width never shifts as you navigate.
 
 ## The Daily's eye: reopening today's finished board
 

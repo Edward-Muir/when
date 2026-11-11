@@ -12,7 +12,8 @@ guess wrong.
 index.tsx                      # BrowserRouter + the routes below
 ├── App.tsx                    # Phase router, viewport height fix
 │   ├── ModeSelect.tsx         # The home screen: five-tab pager via ModePager.tsx
-│   │   ├── TopBar.tsx              # Home + nav (also mounted by Game)
+│   │   ├── TopBar.tsx              # Menu only on Home (also mounted by Game)
+│   │   ├── HomeTabBar.tsx          # The five labelled tabs under the pager (TABS: homeTabs.ts)
 │   │   ├── DailyCta.tsx            # Daily hero's Play / Share / Submit button
 │   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: filters + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
@@ -30,7 +31,7 @@ index.tsx                      # BrowserRouter + the routes below
 │       │       └── GalleryFlight.tsx # The cards in flight from the board (body portal)
 │       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
+│       ├── TopBar.tsx         # Title, theme pill, Home, Restart (practice), Menu
 │       │   ├── Menu.tsx                # Burger drawer: Dark Mode, Daily reminder (native), Share App,
 │       │   │   │                       # Download the App (iOS web) / Add to Home Screen, How to Play,
 │       │   │   │                       # Reset Hints, What's New, Help & FAQ, Send Feedback,

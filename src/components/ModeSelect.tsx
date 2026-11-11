@@ -6,6 +6,8 @@ import { GameConfig, HistoricalEvent, WhenGameState } from '../types';
 import CustomPanel from './panels/CustomPanel';
 import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
+import HomeTabBar from './HomeTabBar';
+import { TABS, TabKey, indexForTabKey, tabKeyForIndex } from './homeTabs';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
 import TimelinePanel from './panels/TimelinePanel';
@@ -61,29 +63,6 @@ const LoadingState: React.FC = () => (
   </motion.div>
 );
 
-// Unified pager tabs, in render order — the single source of the page order. The TopBar nav
-// buttons and the swipe pager both address pages by key; the ModePager children below must
-// be rendered in this same order. Indicator accent per tab: Custom is blue
-// (accent-secondary), the rest gold.
-type TabKey = NavDest;
-const GOLD = { dot: 'bg-accent', text: 'text-accent' };
-const TABS: { key: TabKey; label: string; color: { dot: string; text: string } }[] = [
-  { key: 'home', label: 'Daily', color: GOLD },
-  { key: 'archive', label: 'Archive', color: GOLD },
-  {
-    key: 'custom',
-    label: 'Custom',
-    color: { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
-  },
-  { key: 'stats', label: 'Stats', color: GOLD },
-  { key: 'timeline', label: 'Timeline', color: GOLD },
-];
-const tabKeyForIndex = (i: number): TabKey => TABS.at(i)?.key ?? 'home';
-const indexForTabKey = (key: TabKey): number =>
-  Math.max(
-    0,
-    TABS.findIndex((tab) => tab.key === key)
-  );
 const ALL_TAB_INDICES = TABS.map((_, i) => i);
 
 // Pre-mount the remaining pager panels (Stats and Timeline) at idle rather than on first
@@ -287,28 +266,19 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide pb-safe overflow-hidden transition-colors"
+      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide overflow-hidden transition-colors"
     >
-      {/* Top Bar — nav buttons drive the same pager as swipe (onNavClick), keeping the
-          two navigation methods unified. */}
-      <TopBar
-        showHome
-        showTitle={false}
-        showStatsAchievements
-        activeNav={tabKeyForIndex(activePage)}
-        onHomeClick={() => navigate('/')}
-        onNavClick={(key) => pagerRef.current?.scrollToPage(indexForTabKey(key))}
-      />
+      {/* Top bar: Menu only. The five places are the tab bar at the foot. */}
+      <TopBar showTitle={false} toastAboveTabBar />
 
       {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
-          Archive, Stats and Timeline panels use their own widths. */}
+          Archive, Stats and Timeline panels use their own widths. The children are in `TABS`
+          order (`homeTabs.ts`). */}
       <div className="flex flex-col flex-1 min-h-0">
         <ModePager
           ref={pagerRef}
-          labels={TABS.map((tab) => tab.label)}
           onIndexChange={setActivePage}
           initialIndex={indexForTabKey(initialTab)}
-          activeColors={TABS.map((tab) => tab.color)}
         >
           {/* Daily page */}
           <DailyPanel
@@ -359,15 +329,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         </ModePager>
       </div>
 
+      {/* The tabs scroll the same pager the swipe does; the highlight follows the scroll. */}
+      <HomeTabBar
+        activeKey={tabKeyForIndex(activePage)}
+        onSelect={(key) => pagerRef.current?.scrollToPage(indexForTabKey(key))}
+      />
+
       <Toast
         message={homeNotice.message}
         isVisible={homeNotice.visible}
         onClose={homeNotice.close}
+        aboveTabBar
       />
 
       {/* Share toast */}
       {showShareToast && (
-        <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
+        <div className="fixed bottom-above-tabbar left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap shadow-sm flex items-center gap-2 z-50 font-body">
           <Check className="w-4 h-4" />
           Copied to clipboard!
         </div>

@@ -147,7 +147,21 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   Home does. Wait ~700 ms after it: the game steps back onto its history entry with
   `history.forward()`, so a second `goBack()` fired at once can leave the app. `/daily` adds
   its entry on the first pointer event, so drag or click before testing Back there.
-- **Home → Custom tab → start a game:** nav button `[aria-label="Custom game"]`, then
+- **Home's tabs are the bar at the foot**, `nav[aria-label="Home tabs"]`, selected by the
+  same `aria-label`s the old top-bar buttons had: `Go home`, `Past decks`, `Custom game`,
+  `View stats`, `View my timeline`. The active one has `aria-current="page"`. The old
+  `Go to <Tab> page` dot buttons are gone. **`[aria-label="Go home"]` on Home is the Daily
+  tab**; in a game it is the title and the Home icon (below), so scope it to the nav on Home.
+  A tap scrolls the pager smoothly and `aria-current` and the path follow the scroll, so wait
+  ~1 s before reading either. A "new" dot is `[role="img"][aria-label="New"]` inside a tab;
+  a fresh profile has none, and a dot clears 400 ms after the pager rests on its tab.
+- **All five Home panels are in the DOM at once**, so an unscoped `/Share/` button query can
+  match Custom's "Share settings" while the Daily is showing, and the click scrolls the pager
+  over to it. Name the control exactly ("Challenge a Friend") or check `aria-current` after.
+- **A real swipe** needs a context with `hasTouch: true` and CDP
+  `Input.dispatchTouchEvent`: a `touchStart`, a dozen `touchMove`s across most of the width,
+  a `touchEnd`, then ~1 s for the snap. Mouse drags do not scroll the pager.
+- **Home → Custom tab → start a game:** tab `[aria-label="Custom game"]`, then
   the button matching `/Play\s+·/` ("Play · N events").
 - **Custom filter chips** are `button[aria-pressed]`. A category chip's DOM text is the
   lowercase category id (`sports`), capitalised only by CSS, so match case-insensitively

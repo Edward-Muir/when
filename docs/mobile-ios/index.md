@@ -90,6 +90,14 @@ it so.
 hardcoded `pt-*`.** Edge-to-edge is deliberate over the simpler `overlaysWebView: false` — the
 choice is cosmetic (immersive vs. a solid top band).
 
+The bottom works the same way. **Home's tab bar (`HomeTabBar.tsx`) carries `pb-safe` itself**,
+so in the apps it is 64px plus the home-indicator inset (about 34px on a Face ID iPhone) and
+its surface runs to the bottom edge; the Home container no longer pads its own bottom, or the
+inset would count twice. Anything fixed above the bar has to add the inset too:
+`.bottom-above-tabbar` in `index.css` is `5rem + env(safe-area-inset-bottom)`, used by every
+Home toast. A plain `bottom-20` clears the bar on the web and sits under it in the app. The
+in-game equivalent is `.hand-bar`.
+
 Zoom is locked **native-only** (`maximum-scale=1.0, user-scalable=no`, applied from
 `App.tsx` behind `isNativePlatform()`). WKWebView honours pinch-zoom but offers no chrome to
 reset it, so users get stuck zoomed in. Web keeps pinch-zoom for accessibility — and Safari

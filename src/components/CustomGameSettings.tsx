@@ -217,7 +217,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
       </div>
 
       {showShareToast && (
-        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
+        <div className="fixed bottom-above-tabbar left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap shadow-sm flex items-center gap-2 z-50 font-body">
           <Check className="w-4 h-4" />
           Copied to clipboard!
         </div>

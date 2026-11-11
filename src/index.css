@@ -92,6 +92,10 @@ body {
   .hand-bar {
     height: calc(184px + env(safe-area-inset-bottom));
   }
+  /* A toast on Home: 16px above the 64px tab bar, which grows by the inset (`HomeTabBar`). */
+  .bottom-above-tabbar {
+    bottom: calc(5rem + env(safe-area-inset-bottom));
+  }
 }
 
 /* Player-row highlight.

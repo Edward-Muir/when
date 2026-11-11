@@ -127,7 +127,7 @@ Decisions, so they are not re-litigated:
   only once the Stats tab is on screen** (`StatsPanel`'s `active` prop; the pager pre-mounts it
   at idle for every home-screen visitor). Expanding warms the rest. Tapping a badge opens
   `AchievementDetailPopup`. `/achievements` redirects to `/stats` from `pages/Home.tsx`.
-- The Stats nav button's "new" dot is re-armed by `useGameStatsRecorder` on every unlock, so
+- The Stats tab's "new" dot is re-armed by `useGameStatsRecorder` on every unlock, so
   the badge you just earned is one tap away.
 
 ## Milestones ("Personal Best" popups)

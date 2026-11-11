@@ -5,7 +5,9 @@ app at v1.39.0. Six pieces of work were chosen from it. Items 1 to 3 are built a
 [ui-redesign](../ui-redesign/index.md#leaving-a-game); item 4, the end of a game, is built and
 lives in [sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence)
 and [stats-achievements](../stats-achievements/index.md), less the two parts listed under
-"Raised, not chosen"; the country-search fix in item 6 was dropped. This file holds
+"Raised, not chosen"; item 5, the labelled tab bar, is built and lives in
+[ui-redesign](../ui-redesign/index.md#home-is-a-five-tab-pager); the country-search fix in
+item 6 was dropped. Item 6 is the one left to build. This file holds
 what was seen, what was chosen, the spec for each piece, and the findings that were raised but
 not chosen. Written so a fresh session can pick any item up cold.
 
@@ -31,30 +33,6 @@ session can read it with the Artifact tool. Sketch numbers below are the ones on
   layout all hold up.
 
 ## The chosen work
-
-### 5. Labelled tabs within reach (sketch 3)
-
-**Seen.** Home's five places are six unlabelled icons, 38x44 each, in the top corner. The only
-label is at the bottom, beside dots 10px wide. A fresh install shows a "new" dot on Archive,
-Stats and Timeline before anything has happened. On My Timeline two identical sliders icons
-sit 50px apart, the Custom tab and the filter, under a hint that says "tap the sliders".
-
-**Build.** A tab bar where the dots row is: five tabs from the `TABS` array, each an icon and
-a word, 64px tall plus the bottom safe-area inset. A tab is 80px wide at 402 and 64px at 320.
-The active tab takes the accent (teal for Custom, as now) and a 3px marker. It is the same
-pager: the tabs scroll it, the swipe still works, every path stays. The top bar on Home keeps
-Menu only. "New" dots ride on the tabs and are armed by events, so a fresh install shows none.
-The in-game bar does not change.
-
-**Constraints.** `TABS` stays the single source of order and labels. The bar sits outside the
-pager so nothing mounts during a swipe. Keep the existing `aria-label`s on the tabs, because
-the Playwright runbook selects by them. Use the safe-area utilities, never a pixel offset.
-When built, update the "Six buttons fit a 320px phone" passage in
-[ui-redesign](../ui-redesign/index.md) and the selectors in
-[driving-the-app-with-playwright.md](../driving-the-app-with-playwright.md).
-
-**Cost to know about.** On the web the height is a wash (the dots row takes about 74px, the
-bar 64). In the iOS app the home-indicator inset is added under the bar.
 
 ### 6. Custom on one screen (sketch 4)
 
