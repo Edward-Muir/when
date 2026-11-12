@@ -1,0 +1,20 @@
+{
+  "checked": [
+    {"slug": "davy-safety-lamp", "verdict": "ok", "field": null, "found": "Davy lamp, 1815; wire gauze shields flame", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Davy_lamp"},
+    {"slug": "swiss-army-knife-introduced", "verdict": "ok", "field": null, "found": "Elsener's Soldier's Knife first delivered to the Swiss Army in 1891", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Swiss_Army_knife"},
+    {"slug": "electric-flashlight-ever-ready", "verdict": "ok", "field": null, "found": "Misell patent granted Jan 1899, sold by Hubert as Ever Ready in 1899", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Eveready_Battery_Company"},
+    {"slug": "kodak-brownie-camera", "verdict": "ok", "field": null, "found": "Brownie released February 1900 at one dollar", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Brownie_(camera)"},
+    {"slug": "thermos-vacuum-flask", "verdict": "unsupported", "field": "year", "found": "Burger's German patent (DRP 170057) is dated 1 October 1903; British and French filings and the Thermos company/trade name date from 1904. Sources split between 1903 and 1904, and the name says 'Patented'.", "suggestion": "Either keep 1904 and rename to 'Thermos Flask Launched', or use 1903 for the German patent", "source": "https://brandenburg.museum-digital.de/pdf/object/11345.pdf?lang=en"},
+    {"slug": "leica-i-camera", "verdict": "ok", "field": null, "found": "Leica I went on sale in 1925 (35mm cine film)", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Leica_Camera"},
+    {"slug": "zippo-lighter-introduced", "verdict": "ok", "field": null, "found": "Zippo founded 1932 in Bradford, Pennsylvania; first lighter 1933", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Zippo"},
+    {"slug": "handie-talkie-radio", "verdict": "ok", "field": null, "found": "Galvin engineers developed the SCR-536 Handie-Talkie in 1940", "suggestion": null, "source": "https://www.motorolasolutions.com/en_xa/about/history/timeline.html"},
+    {"slug": "kodak-instamatic-camera", "verdict": "ok", "field": null, "found": "Instamatic 126 cartridge camera introduced 1963", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Instamatic"},
+    {"slug": "hp-35-pocket-calculator", "verdict": "ok", "field": null, "found": "HP-35 released 1972, replaced slide rules", "suggestion": null, "source": "https://en.wikipedia.org/wiki/HP-35"},
+    {"slug": "motorola-dynatac-8000x", "verdict": "ok", "field": null, "found": "DynaTAC 8000X approved 1983; about 1 kg, 10 hour charge, about $3,995", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Motorola_DynaTAC"},
+    {"slug": "blackberry-email-device", "verdict": "ok", "field": null, "found": "RIM's BlackBerry 850 two-way email pager, 1999", "suggestion": null, "source": "https://en.wikipedia.org/wiki/BlackBerry"},
+    {"slug": "apple-ipad-introduced", "verdict": "ok", "field": null, "found": "iPad announced January 2010", "suggestion": null, "source": "https://en.wikipedia.org/wiki/IPad"},
+    {"slug": "airpods-wireless-earbuds", "verdict": "ok", "field": null, "found": "Announced September 2016, shipped December 2016", "suggestion": null, "source": "https://en.wikipedia.org/wiki/AirPods"},
+    {"slug": "samsung-galaxy-fold", "verdict": "ok", "field": null, "found": "Galaxy Fold retail release September 2019 after delays and screen failures", "suggestion": null, "source": "https://en.wikipedia.org/wiki/Samsung_Galaxy_Fold"},
+    {"slug": "apple-airtag-tracker", "verdict": "ok", "field": null, "found": "AirTag released April 2021", "suggestion": null, "source": "https://en.wikipedia.org/wiki/AirTag"}
+  ]
+}

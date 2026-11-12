@@ -1,0 +1,143 @@
+{
+  "deck": "in-your-pocket",
+  "name": "In Your Pocket",
+  "stage": "pr-open",
+  "created_at": "2026-11-01T20:17:56.571Z",
+  "updated_at": "2026-11-12T18:47:40.122Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-01T20:17:56.571Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-01T21:09:43.470Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-02T02:07:09.786Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-02T03:06:57.281Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-12T18:47:40.122Z"
+    }
+  ],
+  "slugs": {
+    "davy-safety-lamp": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d68ca8c15004c7f56d5818341e6037c61818e2194a9e0d558fd67366650e327b",
+      "updated_at": "2026-11-01T23:07:40.364Z"
+    },
+    "swiss-army-knife-introduced": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c768e648825c556b79be4c7bf177a0ddc64ff8af06eeb7a15a4d4eec802bda3a",
+      "updated_at": "2026-11-01T23:07:40.396Z"
+    },
+    "electric-flashlight-ever-ready": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d255ae75636645c3c8229f39063868f17b5031acfcc23396ada29906ea794160",
+      "updated_at": "2026-11-01T23:07:40.426Z"
+    },
+    "kodak-brownie-camera": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7ecbca504079764e7efca7dca4c584adf655d7ce9d17422350af5b6ee4bfb674",
+      "updated_at": "2026-11-01T23:07:40.456Z"
+    },
+    "thermos-vacuum-flask": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "87a5f985f89a0a01c376adea8b957c39d7bc1d3a96496cc3f05052ce45a35b17",
+      "updated_at": "2026-11-01T23:07:40.489Z"
+    },
+    "leica-i-camera": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8de736774c77d6913654199ee952b95b5356cda1badf3373f24dbaa8c5504110",
+      "updated_at": "2026-11-01T23:07:40.519Z"
+    },
+    "zippo-lighter-introduced": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f33d182420c1e0915317428ef98d91786ab7639f526176e508554036cc3367d3",
+      "updated_at": "2026-11-01T23:07:40.549Z"
+    },
+    "handie-talkie-radio": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3faccd1f1184a8427e60e5ab6616e81eecc0dc8cb34867c0d4a45f66f13b4c61",
+      "updated_at": "2026-11-01T23:07:40.586Z"
+    },
+    "kodak-instamatic-camera": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "190bc6e0ccca0acf495f84ecb5bd0dd4720b2ff7ad62acf059a5da44c010a7ad",
+      "updated_at": "2026-11-01T23:07:40.621Z"
+    },
+    "hp-35-pocket-calculator": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "04366a70afa834a1b0ae479ab84c818bf2a3e971fd31b36da2a2c8bf3bc15242",
+      "updated_at": "2026-11-01T23:07:40.654Z"
+    },
+    "motorola-dynatac-8000x": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "192ca6fa01153be61ac0caf3c65326e580ab35e60dae8bc0999edc4ab82cae94",
+      "updated_at": "2026-11-02T02:07:09.630Z"
+    },
+    "blackberry-email-device": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2f305ddbe5f85d20a29a8685e0a3d9011bd14924c9e984758096544ded7ce11b",
+      "updated_at": "2026-11-02T02:07:09.661Z"
+    },
+    "apple-ipad-introduced": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5589b3e5b6f8aef375505589a317c8f6a98b8cd9dcfe082c8b48d0beb8507c8a",
+      "updated_at": "2026-11-02T02:07:09.691Z"
+    },
+    "airpods-wireless-earbuds": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a194b867254a015c58ae7895d22452a84b4cc3cb061cf2a5f94656aa39fb928c",
+      "updated_at": "2026-11-02T02:07:09.721Z"
+    },
+    "samsung-galaxy-fold": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5606ce37248127dfa8b5bc8132bb3f95031face61ea6699f8122b474151082a1",
+      "updated_at": "2026-11-02T02:07:09.754Z"
+    },
+    "apple-airtag-tracker": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5f3cb21ba262b77bc01d487509920a547cc955a1e22f538e67d24ae1142e84bd",
+      "updated_at": "2026-11-02T02:07:09.786Z"
+    }
+  }
+}

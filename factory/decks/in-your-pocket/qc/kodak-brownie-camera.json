@@ -1,0 +1,15 @@
+{
+  "slug": "kodak-brownie-camera",
+  "description": "A boy with short brown hair in a dark sailor-collared top and shorts stands in dense green foliage, holding a black box camera with a top viewfinder hood up to his face and looking down into it. A shaggy, dark-and-tan terrier-type dog sits at the lower right, looking up at him. Painterly, dark oil-style brushwork; the painting fills the frame edge to edge. A tiny faint mark sits in the bottom right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

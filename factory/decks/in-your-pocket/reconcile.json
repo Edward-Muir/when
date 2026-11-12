@@ -1,0 +1,221 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "compass-navigation",
+      "why": "Same event and year as existing card Chinese Magnetic Compass"
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "eyeglasses-invented",
+      "why": "Same event and year as existing card Eyeglasses Invented"
+    },
+    {
+      "beat": 2,
+      "decision": "reuse",
+      "slug": "telescope-invention",
+      "why": "Same event and year as existing card Telescope Invented"
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": null,
+      "why": "Slide rule: fame 1, cut to ease crowding"
+    },
+    {
+      "beat": 4,
+      "decision": "new",
+      "slug": "davy-safety-lamp"
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "stethoscope-invented",
+      "why": "Same event and year as existing card Stethoscope Invented"
+    },
+    {
+      "beat": 6,
+      "decision": "reuse",
+      "slug": "friction-match",
+      "why": "Same event and year as existing card Friction Match Invented"
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "fountain-pen",
+      "why": "Same event and year as existing card Fountain Pen Patented"
+    },
+    {
+      "beat": 8,
+      "decision": "reuse",
+      "slug": "kodak-roll-film-camera",
+      "why": "Same event and year as existing card Kodak Roll Film Camera"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "swiss-army-knife-introduced"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "electric-flashlight-ever-ready"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "kodak-brownie-camera"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "thermos-vacuum-flask"
+    },
+    {
+      "beat": 13,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, cut for density"
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "leica-i-camera"
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, cut for density"
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "zippo-lighter-introduced"
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "ballpoint-pen",
+      "why": "Same event and year as existing card Ballpoint Pen Patented"
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "handie-talkie-radio"
+    },
+    {
+      "beat": 19,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, cut for density"
+    },
+    {
+      "beat": 20,
+      "decision": "reuse",
+      "slug": "transistor-radio",
+      "why": "Same event and year as existing card First Transistor Radio Released"
+    },
+    {
+      "beat": 21,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, sits beside the 1954 radio"
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "kodak-instamatic-camera"
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, cut for density"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "hp-35-pocket-calculator"
+    },
+    {
+      "beat": 25,
+      "decision": "reuse",
+      "slug": "first-mobile-phone-call",
+      "why": "Same event and year as existing card First Mobile Phone Call"
+    },
+    {
+      "beat": 26,
+      "decision": "reuse",
+      "slug": "walkman-released",
+      "why": "Same event and year as existing card Sony Walkman Released"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "motorola-dynatac-8000x"
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, cut for density"
+    },
+    {
+      "beat": 29,
+      "decision": "reuse",
+      "slug": "first-sms-text-message",
+      "why": "Same event and year as existing card First Text Message Sent"
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "blackberry-email-device"
+    },
+    {
+      "beat": 31,
+      "decision": "reuse",
+      "slug": "ipod-released",
+      "why": "Same event and year as existing card iPod Released"
+    },
+    {
+      "beat": 32,
+      "decision": "reuse",
+      "slug": "iphone-released",
+      "why": "Same event and year as existing card iPhone Released"
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "apple-ipad-introduced"
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "airpods-wireless-earbuds"
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "samsung-galaxy-fold"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "apple-airtag-tracker"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30\n  PASS  band 0 7\n  PASS  same-year pairs 0\n  PASS  bunching 3 in 1884-1891 (want 3 or fewer)\n  PASS  shared 1 (seeing-inside)",
+  "overlap": "1 seeing-inside stethoscope-invented",
+  "footholds": [
+    "telescope-invention",
+    "swiss-army-knife-introduced",
+    "first-mobile-phone-call",
+    "ipod-released",
+    "iphone-released",
+    "apple-ipad-introduced",
+    "airpods-wireless-earbuds"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "motorola-dynatac-8000x",
+  "description": "A dark, oil-painted still life. In the foreground, a large beige-and-black brick-style mobile handset stands upright on a wooden table, with a long antenna rising from its top, a numeric keypad, and a small speaker grille. Behind it lies a brown leather suitcase with brass latches, and behind that a boxy CRT computer monitor and stacks of papers. The setting is an office or study, with no people visible. There are no letters or numbers legible on the image, and no visible frame or border around the painting.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
