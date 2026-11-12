@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T20:16:34.305Z",
+  "updated_at": "2026-11-12T20:19:55.728Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-12T20:16:34.305Z"
     },
     "alauddin-khalji-takes-chittor": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9017aa10361e38457e5389b0d68cbc8653b723878de4b116c15c76983643086b",
+      "updated_at": "2026-11-12T20:19:55.728Z"
     },
     "firoz-shah-founds-firozabad": {
       "state": "pending",
