@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T22:23:33.892Z",
+  "updated_at": "2026-11-12T22:26:40.297Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-12T22:23:33.892Z"
     },
     "shah-jahan-begins-jama-masjid-delhi": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "80e083f792d3ba4fb070e0bef7fd4919b106d39548cc32877d2daa3c40e49882",
+      "updated_at": "2026-11-12T22:26:40.297Z"
     },
     "aurangzeb-seizes-throne-agra": {
       "state": "pending",
