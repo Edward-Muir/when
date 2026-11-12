@@ -15,17 +15,29 @@ describe('DEFAULT_TUNING', () => {
   it('matches the shipped animation values', () => {
     const shipped: AnimationTuning = {
       success: {
-        rippleStaggerS: 0.2,
-        rippleBaseYOffsetPx: 6,
-        rippleHalfLifeCards: 1.0,
         ripplePushDurationS: 0.15,
         rippleReturnSpring: { stiffness: 150, damping: 4, mass: 1 },
         rippleCleanupMs: 2000,
-        bounceSpring: { stiffness: 400, damping: 25 },
         yearPopDurationS: 0.4,
         yearPopPeakScale: 1.3,
         flashMs: 600,
         glowDurS: 0.6,
+      },
+      shock: {
+        frontMsPerRow: 65,
+        frontSlowMsPerRow2: 8,
+        kickPx: 7,
+        halfLifeRows: 2.2,
+        reboundHz: 3,
+        settle: 9,
+        lightBrightness: 1,
+        streakGain: 0.55,
+        kickBase: 0.86,
+        kickBuild: 2.28,
+        dipPx: 2,
+        dipBuildPx: 8,
+        glowBuild: 0.9,
+        lightBuild: 0.7,
       },
       miss: {
         flashMs: 400,
@@ -88,16 +100,18 @@ describe('TRAVEL_EASE / invTravelEase sync', () => {
 describe('time scaling', () => {
   it('is the identity at speed 1', () => {
     expect(scaleTuning(DEFAULT_TUNING, 1)).toBe(DEFAULT_TUNING);
-    expect(scaleSpring(DEFAULT_TUNING.success.bounceSpring, 1)).toBe(
-      DEFAULT_TUNING.success.bounceSpring
-    );
+    expect(scaleSpring(DEFAULT_TUNING.miss.restSpring, 1)).toBe(DEFAULT_TUNING.miss.restSpring);
   });
 
   it('stretches durations and preserves spring damping ratio at half speed', () => {
     const half = scaleTuning(DEFAULT_TUNING, 0.5);
     expect(half.miss.flashMs).toBe(800);
     expect(half.miss.travelBaseMs).toBe(1100);
-    expect(half.success.rippleStaggerS).toBeCloseTo(0.4);
+    // The shockwave: the front takes twice as long, the pulse runs at half the rate
+    expect(half.shock.frontMsPerRow).toBe(130);
+    expect(half.shock.reboundHz).toBeCloseTo(1.5);
+    expect(half.shock.settle).toBeCloseTo(4.5);
+    expect(half.shock.kickPx).toBe(7);
     expect(half.success.glowDurS).toBeCloseTo(1.2);
     // Amplitudes / counts / decay untouched
     expect(half.wake.amplitudePx).toBe(5);

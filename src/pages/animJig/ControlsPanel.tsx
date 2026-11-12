@@ -233,7 +233,7 @@ const ControlsPanel: React.FC<ControlsPanelProps> = (props) => {
       {/* Play controls */}
       <section className="flex flex-col gap-3 rounded-xl border border-border bg-surface/50 p-3">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-sm font-bold text-text font-display">Correct</span>
+          <span className="text-sm font-bold text-text font-display">Correct, streak</span>
           {TIER_LABELS.map((label, tier) => (
             <button key={label} onClick={() => onPlayCorrect(tier)} className={buttonClass()}>
               {label}

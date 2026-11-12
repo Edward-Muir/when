@@ -16,20 +16,12 @@ export interface SpringParams {
 
 export interface AnimationTuning {
   success: {
-    /** Ripple wave stagger per card of distance (s). */
-    rippleStaggerS: number;
-    /** Ripple push-down amplitude at distance 1 (px). */
-    rippleBaseYOffsetPx: number;
-    /** Ripple amplitude halves every this many cards of distance. */
-    rippleHalfLifeCards: number;
-    /** Ripple push-down phase duration (s). */
+    /** Miss-wake bump: push-down phase duration (s). The success wave is `shock`, below. */
     ripplePushDurationS: number;
-    /** Ripple spring-back (low damping = visible oscillation). */
+    /** Miss-wake bump: spring-back (low damping = visible oscillation). */
     rippleReturnSpring: SpringParams;
-    /** How long ripple state is kept before cleanup (ms). */
+    /** How long wave state is kept before cleanup (ms). */
     rippleCleanupMs: number;
-    /** Placed-card landing bounce. */
-    bounceSpring: SpringParams;
     /** Year label pop duration (s) and peak scale. */
     yearPopDurationS: number;
     yearPopPeakScale: number;
@@ -37,6 +29,36 @@ export interface AnimationTuning {
     flashMs: number;
     /** Success glow CSS animation duration (s) — via --anim-glow-dur. */
     glowDurS: number;
+  };
+  /**
+   * The correct-placement shockwave: rows kicked away from the placed card in one damped pulse,
+   * with a light running along the rail in step. The maths is in `shockwave.ts`.
+   */
+  shock: {
+    /** The front reaches the nearest row after this long, and each row after (ms). */
+    frontMsPerRow: number;
+    /** ...plus this much more per row squared, so the front slows as it travels (ms). */
+    frontSlowMsPerRow2: number;
+    /** Peak displacement of the nearest row at a streak of 1, before `kickBase` (px). */
+    kickPx: number;
+    /** The kick halves every this many rows out. */
+    halfLifeRows: number;
+    /** Rate of the pulse's rebound (Hz) and how fast it dies away (1/s). */
+    reboundHz: number;
+    settle: number;
+    /** Opacity of the light on the rail at its brightest, 0..1. */
+    lightBrightness: number;
+    /** How steeply everything below builds with the streak. 0 = every card lands the same. */
+    streakGain: number;
+    /** Kick multiplier = kickBase + kickBuild x build, where build runs 0..streakGain. */
+    kickBase: number;
+    kickBuild: number;
+    /** Placed card's dip into the rail = dipPx + dipBuildPx x build (px). */
+    dipPx: number;
+    dipBuildPx: number;
+    /** Card glow and rail light sizes = 1 + (their build) x build. */
+    glowBuild: number;
+    lightBuild: number;
   };
   miss: {
     /** Red flash at the attempted slot before the card travels (ms). */
@@ -90,17 +112,30 @@ export interface AnimationTuning {
 
 export const DEFAULT_TUNING: AnimationTuning = {
   success: {
-    rippleStaggerS: 0.2,
-    rippleBaseYOffsetPx: 6,
-    rippleHalfLifeCards: 1.0,
     ripplePushDurationS: 0.15,
     rippleReturnSpring: { stiffness: 150, damping: 4, mass: 1 },
     rippleCleanupMs: 2000,
-    bounceSpring: { stiffness: 400, damping: 25 },
     yearPopDurationS: 0.4,
     yearPopPeakScale: 1.3,
     flashMs: 600,
     glowDurS: 0.6,
+  },
+  shock: {
+    frontMsPerRow: 65,
+    frontSlowMsPerRow2: 8,
+    kickPx: 7,
+    halfLifeRows: 2.2,
+    reboundHz: 3,
+    settle: 9,
+    lightBrightness: 1,
+    // 0.55 of what the rig first showed: about 6px at a streak of 1 building to about 15px at 8.
+    streakGain: 0.55,
+    kickBase: 0.86,
+    kickBuild: 2.28,
+    dipPx: 2,
+    dipBuildPx: 8,
+    glowBuild: 0.9,
+    lightBuild: 0.7,
   },
   miss: {
     flashMs: 400,
@@ -181,14 +216,20 @@ export function scaleTuning(t: AnimationTuning, speed: number): AnimationTuning 
   return {
     success: {
       ...t.success,
-      rippleStaggerS: t.success.rippleStaggerS / speed,
       ripplePushDurationS: t.success.ripplePushDurationS / speed,
       rippleReturnSpring: scaleSpring(t.success.rippleReturnSpring, speed),
       rippleCleanupMs: t.success.rippleCleanupMs / speed,
-      bounceSpring: scaleSpring(t.success.bounceSpring, speed),
       yearPopDurationS: t.success.yearPopDurationS / speed,
       flashMs: t.success.flashMs / speed,
       glowDurS: t.success.glowDurS / speed,
+    },
+    shock: {
+      ...t.shock,
+      frontMsPerRow: t.shock.frontMsPerRow / speed,
+      frontSlowMsPerRow2: t.shock.frontSlowMsPerRow2 / speed,
+      // Rates, not durations: a slower clock means fewer cycles a second.
+      reboundHz: t.shock.reboundHz * speed,
+      settle: t.shock.settle * speed,
     },
     miss: {
       ...t.miss,

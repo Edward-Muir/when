@@ -15,8 +15,6 @@ export interface StreakFeedbackConfig {
   hapticPattern: number[];
   // Timeline card glow
   glowIntensity: GlowIntensity;
-  // Ripple wave amplitude multiplier
-  rippleMultiplier: number;
   // Bolt icon CSS class (empty string = no animation)
   boltAnimationClass: string;
   // Bolt color class
@@ -40,7 +38,6 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
       confettiWidth: 500,
       hapticPattern: [60, 20, 60, 20, 60, 20, 60, 20, 100],
       glowIntensity: 'golden',
-      rippleMultiplier: 1.6,
       boltAnimationClass: 'animate-streak-glow',
       boltColorClass: 'text-accent',
       boltFilled: true,
@@ -57,7 +54,6 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
       confettiWidth: 400,
       hapticPattern: [40, 30, 40, 30, 40, 30, 60],
       glowIntensity: 'golden',
-      rippleMultiplier: 1.4,
       boltAnimationClass: 'animate-streak-pulse',
       boltColorClass: 'text-accent',
       boltFilled: true,
@@ -74,7 +70,6 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
       confettiWidth: 300,
       hapticPattern: [30, 40, 30, 40, 30],
       glowIntensity: 'bright',
-      rippleMultiplier: 1.2,
       boltAnimationClass: '',
       boltColorClass: 'text-text-muted',
       boltFilled: true,
@@ -90,7 +85,6 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
     confettiWidth: 300,
     hapticPattern: [30, 50, 30],
     glowIntensity: 'normal',
-    rippleMultiplier: 1.0,
     boltAnimationClass: '',
     boltColorClass: 'text-text-muted',
     boltFilled: false,

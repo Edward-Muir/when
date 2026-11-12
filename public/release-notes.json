@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "A correct card now sends a wave along the timeline that builds with the streak."
+  ],
   "releases": [
     {
       "version": "1.39.0",
