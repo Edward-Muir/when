@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T20:19:55.728Z",
+  "updated_at": "2026-11-12T20:23:15.950Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-12T20:19:55.728Z"
     },
     "firoz-shah-founds-firozabad": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2edb4a799a842050d76027d3359a2c01b3dd9d93e4f14ed08240ab15495bab0d",
+      "updated_at": "2026-11-12T20:23:15.950Z"
     },
     "timur-sacks-delhi-1398": {
       "state": "pending",
