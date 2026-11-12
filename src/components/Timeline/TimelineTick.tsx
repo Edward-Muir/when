@@ -1,4 +1,4 @@
-import React, { RefObject, useLayoutEffect, useRef, useState } from 'react';
+import React, { CSSProperties, RefObject, useLayoutEffect, useRef, useState } from 'react';
 import { useAnimate, useReducedMotion } from 'framer-motion';
 import { useAnimationTuning } from './animationTuning';
 import { dotStart, landingKeyframes, landingTransition, Point } from './tickLanding';
@@ -64,6 +64,12 @@ interface TimelineTickProps {
   glow?: boolean;
   /** Ride the miss reveal's travel tween before growing. Omit for a correct placement. */
   travelMs?: number;
+  /**
+   * The success shockwave is passing this row: stretch toward the gutter as the rail light
+   * arrives. Carries the `--shock-*` custom properties; see `.shock-flash-tick` in index.css.
+   * On the wrapper, never the body, whose transform belongs to the landing morph.
+   */
+  flash?: CSSProperties;
 }
 
 /** Tombstones draw a fainter dash. NOT `bg-accent/40` — see index.css. */
@@ -77,6 +83,7 @@ const TimelineTick: React.FC<TimelineTickProps> = ({
   landing = false,
   glow = false,
   travelMs,
+  flash,
 }) => {
   const [scope, animate] = useAnimate();
   const box = useRef<HTMLDivElement>(null);
@@ -114,7 +121,8 @@ const TimelineTick: React.FC<TimelineTickProps> = ({
       ref={box}
       aria-hidden
       data-tick={variant}
-      className={`relative w-3 h-1 shrink-0 ${variantClass(variant)}`}
+      style={flash}
+      className={`relative w-3 h-1 shrink-0 ${variantClass(variant)} ${flash ? 'shock-flash-tick' : ''}`}
     >
       {!blank && (
         <div

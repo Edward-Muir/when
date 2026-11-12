@@ -22,7 +22,7 @@ The reference files below are general guidance. What already exists here:
   `tailwind.config.js` are unused.
 - **Placement drag is `@dnd-kit`, not Framer Motion drag:** `src/hooks/useDragAndDrop.ts` and the
   sensors in `src/utils/dndSensors.ts`. Framer Motion drives the animations, not the drag.
-- **Placement animation tuning** (success ripple, miss flash/travel/wake) lives in
+- **Placement animation tuning** (success shockwave, miss flash/travel/wake) lives in
   `src/components/Timeline/animationTuning.ts`; the `/anim-jig` dev page tweaks it live.
 - **Confetti** is `react-confetti-explosion`.
 

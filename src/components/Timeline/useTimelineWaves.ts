@@ -3,21 +3,45 @@ import { AnimationPhase, HistoricalEvent, PlacementResult } from '../../types';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import type { RippleSpec } from './TimelineEvent';
 import { AnimationTuning, getMissTravelMs, invTravelEase } from './animationTuning';
+import {
+  MIN_KICK_PX,
+  shockDelayS,
+  shockDipPx,
+  shockGlowScale,
+  shockKickPx,
+  shockLightScale,
+  shockPeakS,
+  shockReach,
+} from './shockwave';
 
 /**
  * The two ripple waves that run across the board, lifted out of Timeline so its component body
  * stays under `max-lines-per-function`. Pure bookkeeping — no behaviour change from when this
  * lived inline.
  *
- * - **Success wave:** bumps radiate outward from the card just placed, decaying with distance.
+ * - **Success wave:** the shockwave. Rows are kicked away from the card just placed (above
+ *   lift, below sink), the placed card dips, and `successPulse` tells the rail light when to
+ *   run. The maths is in `shockwave.ts`.
  * - **Miss wake:** each row the rejected card passes bumps just behind it (passage times come
  *   from inverting the travel ease), then the wave runs out past the landing gap and decays.
  */
 export interface TimelineWaves {
-  /** By display index — the success wave. */
+  /** By display index — the success wave, including the placed card's own dip. */
   successWave: Map<number, RippleSpec>;
+  /** The light that runs along the rail with the success wave, or null when none is running. */
+  successPulse: ShockPulse | null;
   /** By event name — the miss wake. Names because indices differ across the two renders. */
   missWaveBumps: Map<string, RippleSpec>;
+}
+
+export interface ShockPulse {
+  placedIndex: number;
+  /** Identifies the wave instance: changes once per correct placement. */
+  trigger: number;
+  /** Size multiplier for the light, built by the streak. */
+  scale: number;
+  /** CSS colour: success green, or the accent once the streak has gone golden. */
+  color: string;
 }
 
 export function useTimelineWaves(
@@ -54,26 +78,63 @@ export function useTimelineWaves(
 
   const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
 
+  const shockColor =
+    streakConfig.glowIntensity === 'golden' ? 'var(--color-accent)' : 'var(--color-success)';
+
+  const placedIndex = rippleData
+    ? events.findIndex((e) => e.name === rippleData.placedEventName)
+    : -1;
+  const trigger = rippleData?.timestamp ?? 0;
+
   const successWave = useMemo(() => {
     const bumps = new Map<number, RippleSpec>();
-    if (!rippleData) return bumps;
-    const placedIndex = events.findIndex((e) => e.name === rippleData.placedEventName);
     if (placedIndex === -1) return bumps;
-    const { rippleStaggerS, rippleBaseYOffsetPx, rippleHalfLifeCards } = tuning.success;
+    const shock = tuning.shock;
+    const peakS = shockPeakS(shock);
     events.forEach((_, idx) => {
-      if (idx === placedIndex) return; // Skip the placed card itself
+      if (idx === placedIndex) {
+        // The placed card is what hits: it dips into the rail and glows.
+        bumps.set(idx, {
+          kind: 'impact',
+          delay: 0,
+          amplitudePx: shockDipPx(currentStreak, shock),
+          glowScale: shockGlowScale(currentStreak, shock),
+          color: shockColor,
+          trigger,
+        });
+        return;
+      }
       const d = Math.abs(idx - placedIndex);
+      const kick = shockKickPx(d, currentStreak, shock);
+      if (kick < MIN_KICK_PX) return;
+      const delay = shockDelayS(d, shock);
       bumps.set(idx, {
-        delay: d * rippleStaggerS,
-        amplitudePx:
-          rippleBaseYOffsetPx *
-          Math.pow(0.5, (d - 1) / rippleHalfLifeCards) *
-          streakConfig.rippleMultiplier,
-        trigger: rippleData.timestamp,
+        kind: 'shock',
+        delay,
+        // Away from the impact: rows above lift, rows below sink.
+        amplitudePx: idx < placedIndex ? -kick : kick,
+        // The light is on this row at its peak, and its year and tick flash with it.
+        flashDelay: delay + peakS,
+        strength: shockReach(d, shock) * Math.min(1, shock.lightBrightness),
+        color: shockColor,
+        trigger,
       });
     });
     return bumps;
-  }, [rippleData, events, streakConfig, tuning]);
+  }, [placedIndex, trigger, events, currentStreak, shockColor, tuning]);
+
+  const successPulse = useMemo<ShockPulse | null>(
+    () =>
+      placedIndex === -1
+        ? null
+        : {
+            placedIndex,
+            trigger,
+            scale: shockLightScale(currentStreak, tuning.shock),
+            color: shockColor,
+          },
+    [placedIndex, trigger, currentStreak, shockColor, tuning]
+  );
 
   // The failed card whose reveal is currently running (flash or moving phase).
   const missReveal =
@@ -125,5 +186,5 @@ export function useTimelineWaves(
     return bumps;
   }, [missReveal, wakeTrigger, events, tuning]);
 
-  return { successWave, missWaveBumps };
+  return { successWave, successPulse, missWaveBumps };
 }

@@ -17,7 +17,8 @@
     "The Stats calendar no longer stops a swipe to the next tab when it has nothing to scroll.",
     "Stats now counts the best and average game in events placed, matching the daily score.",
     "Deck sizes on Custom now print with thousands separators, as Stats already did.",
-    "A reload or a closed app no longer loses a Custom, Archive or challenge game in progress."
+    "A reload or a closed app no longer loses a Custom, Archive or challenge game in progress.",
+    "A correct card now sends a wave along the timeline that builds with the streak."
   ],
   "releases": [
     {

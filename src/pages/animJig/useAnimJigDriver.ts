@@ -15,10 +15,12 @@ export type JigAction =
   | { kind: 'correct'; tier: number }
   | { kind: 'miss'; distance: number; direction: 'early' | 'late' };
 
-// streakFeedback tiers: 0-1 → tier 0, 2-3 → tier 1, 4-5 → tier 2, 6+ → tier 3.
-// The game increments the streak before the flash, so tier N plays at these values.
-export const TIER_STREAKS = [1, 2, 4, 6];
-export const TIER_LABELS = ['normal', 'bright ×2', 'golden ×4', 'max ×6'];
+// The shockwave builds with every correct card up to a streak of 8 (see shockwave.ts), so the
+// jig offers each streak rather than the four streakFeedback tiers. The game increments the
+// streak before the flash, so button N plays at these values. Confetti, haptics and the glow
+// colour still step at 2, 4 and 6.
+export const TIER_STREAKS = [1, 2, 3, 4, 5, 6, 7, 8];
+export const TIER_LABELS = ['1', '2', '3', '4', '5', '6', '7', '8'];
 
 interface JigTimelineState {
   timeline: HistoricalEvent[];

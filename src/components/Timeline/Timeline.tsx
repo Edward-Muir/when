@@ -14,6 +14,7 @@ import { buildTimelineRows } from '../../utils/timelineRows';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
 import { useTimelineWaves } from './useTimelineWaves';
+import ShockwaveLight from './ShockwaveLight';
 import { useWakeDelays } from './useWakeDelays';
 import {
   AnimationTuning,
@@ -229,7 +230,7 @@ const Timeline: React.FC<TimelineProps> = ({
   // Streak-aware glow for the card being placed.
   const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
 
-  const { successWave, missWaveBumps } = useTimelineWaves(
+  const { successWave, successPulse, missWaveBumps } = useTimelineWaves(
     events,
     lastPlacementResult,
     animationPhase,
@@ -479,6 +480,7 @@ const Timeline: React.FC<TimelineProps> = ({
         }`}
       >
         <div ref={contentRef} className="relative flex flex-col items-start w-full">
+          <ShockwaveLight contentRef={contentRef} pulse={successPulse} />
           {/* Top spacer: room to drop "earlier" and center the first card; bounce runway */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
 

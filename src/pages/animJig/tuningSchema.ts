@@ -32,32 +32,74 @@ const spring = (base: string, label: string, withMass = false): TuningField[] =>
 
 export const TUNING_SCHEMA: TuningGroup[] = [
   {
-    title: 'Success — ripple wave',
+    title: 'Success — shockwave',
     fields: [
       {
-        path: 'success.rippleStaggerS',
-        label: 'Stagger per card',
-        min: 0,
-        max: 0.5,
-        step: 0.01,
-        unit: 's',
+        path: 'shock.frontMsPerRow',
+        label: 'Wave front',
+        min: 20,
+        max: 200,
+        step: 5,
+        unit: 'ms/row',
       },
       {
-        path: 'success.rippleBaseYOffsetPx',
-        label: 'Base amplitude',
+        path: 'shock.frontSlowMsPerRow2',
+        label: 'Front slows by',
         min: 0,
         max: 30,
         step: 1,
+        unit: 'ms/row²',
+      },
+      {
+        path: 'shock.kickPx',
+        label: 'Kick at the nearest row',
+        min: 0,
+        max: 20,
+        step: 0.5,
         unit: 'px',
       },
       {
-        path: 'success.rippleHalfLifeCards',
-        label: 'Half-life',
-        min: 0.25,
-        max: 4,
-        step: 0.25,
-        unit: 'cards',
+        path: 'shock.halfLifeRows',
+        label: 'Reach (halves every)',
+        min: 0.5,
+        max: 5,
+        step: 0.1,
+        unit: 'rows',
       },
+      { path: 'shock.reboundHz', label: 'Rebound rate', min: 1, max: 6, step: 0.1, unit: 'Hz' },
+      { path: 'shock.settle', label: 'Settling', min: 2, max: 16, step: 0.5 },
+      { path: 'shock.lightBrightness', label: 'Rail light brightness', min: 0, max: 1, step: 0.05 },
+    ],
+  },
+  {
+    title: 'Success — streak build',
+    fields: [
+      { path: 'shock.streakGain', label: 'Streak gain', min: 0, max: 2, step: 0.05, unit: '×' },
+      {
+        path: 'shock.kickBase',
+        label: 'Kick multiplier at streak 1',
+        min: 0.2,
+        max: 2,
+        step: 0.02,
+        unit: '×',
+      },
+      { path: 'shock.kickBuild', label: 'Kick build', min: 0, max: 5, step: 0.02 },
+      {
+        path: 'shock.dipPx',
+        label: 'Card dip at streak 1',
+        min: 0,
+        max: 10,
+        step: 0.5,
+        unit: 'px',
+      },
+      { path: 'shock.dipBuildPx', label: 'Card dip build', min: 0, max: 20, step: 0.5, unit: 'px' },
+      { path: 'shock.glowBuild', label: 'Glow build', min: 0, max: 3, step: 0.05 },
+      { path: 'shock.lightBuild', label: 'Rail light build', min: 0, max: 3, step: 0.05 },
+    ],
+  },
+  {
+    title: 'Miss — wake bump',
+    fields: [
       {
         path: 'success.ripplePushDurationS',
         label: 'Push-down duration',
@@ -80,7 +122,6 @@ export const TUNING_SCHEMA: TuningGroup[] = [
   {
     title: 'Success — placed card',
     fields: [
-      ...spring('success.bounceSpring', 'Bounce spring'),
       {
         path: 'success.yearPopDurationS',
         label: 'Year pop duration',

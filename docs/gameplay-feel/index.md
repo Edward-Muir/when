@@ -375,21 +375,74 @@ Reduced motion, the tests, and a page with no board all get the finished grid at
 Checked in Chromium only, at 402x874 and 375x667. Not checked on a phone or in the Android
 app, where 35 images moving at once is the thing to look at.
 
+## The correct-placement shockwave
+
+A correct card kicks the rows around it **away** from itself (rows above lift, rows below
+sink) in one damped pulse: out, a single rebound, still. A light runs each way along the rail
+with the front, the placed card dips into the rail and glows, and each row's year and tick
+flash as the light reaches it. The maths is pure and lives in `Timeline/shockwave.ts`; the
+numbers are `DEFAULT_TUNING.shock`.
+
+**Why the old ripple was replaced, not retuned.** It had been retuned several times and never
+read as a splash, because the fault was its shape, which no slider reached:
+
+- It crawled: one row every 200ms, so the third row out moved 600ms after the card landed.
+  The front is now 65ms a row, slowing slightly as it travels.
+- Every row was pushed down, including the rows above the card. Rows now move away from the
+  impact.
+- Nothing hit: the placed card slid up into place. It now dips, and a correct landing skips
+  `animate-entrance`.
+- Each row rang on its own soft spring for about 1.7s. The pulse is now still by about 0.6s.
+
+**Decided with the user, in this order** (`docs/gameplay-feel/splash-rig.html` is the rig they
+were chosen in; open it in a browser to compare or retune):
+
+- The rail light must be **in step with the rows**: it sits on a row at the moment that row is
+  at full kick (`shockPeakS` after the row starts moving), not when the row starts. A light
+  that passes before the card moves reads as two unrelated effects.
+- **One light each way, at every streak.** A streak never adds a second pulse, and there is no
+  ring expanding around the placed card. Both were tried and rejected.
+- **The streak builds per correct card, not per tier**, up to a streak of 8: a harder kick, a
+  deeper dip, a bigger glow and light. Four tiers meant most correct cards looked exactly like
+  the one before, and 7px to 11px was too small to notice. "Further reach" and a "charged
+  rail" (a tail and a rail that stays lit) were shown as alternatives and not chosen.
+- The build is deliberately gentle: `streakGain` 0.55, about 6px at a streak of 1 to about 15px
+  at 8. The first version (gain 1, up to 22px) was judged too much.
+
+Traps:
+
+- `ShockwaveLight` measures the event rows on each pulse and tweens through those points. Do
+  not move it into `TimelineRail`: rows are not all the same height (a tombstone can sit
+  between two events), and the rail's contract is that it draws nothing on itself.
+- Tombstones stay out of the wave, as they stay out of everything. At a streak of 8 the
+  nearest row moves about 15px against an 8px gap, so it briefly overlaps a neighbour that has
+  not started moving yet. That is the "harder hit" and was accepted in the rig.
+- The miss wake still uses the old push-then-spring bump (`ripplePushDurationS`,
+  `rippleReturnSpring`); a `RippleSpec` with no `kind` is a wake bump.
+- The year flash restarts by re-keying the year span and the tick per wave. They are siblings,
+  so the two keys must differ.
+
+Checked in Chromium only, in `/anim-jig` and by real drags at 402x874 and 375x667. Not checked
+on a phone.
+
 ## Streak feedback
 
 `streakFeedback.ts` is the single source of tier config; `getStreakFeedback(streak)` returns
-every tier-dependent value at once (confetti count, haptics, glow class, ripple multiplier,
-bolt classes). Add new streak-driven effects there, not inline.
+every tier-dependent value at once (confetti count, haptics, glow colour, bolt classes). Add
+new tier-driven effects there, not inline. The shockwave above is the exception: it builds
+with the streak count itself, through `streakBuild` in `shockwave.ts`.
 
-| Tier | Streak | Bolt                 | Card glow      | Confetti |
-| ---- | ------ | -------------------- | -------------- | -------- |
-| 0    | 0–1    | outline grey + count | normal green   | 50       |
-| 1    | 2–3    | filled grey + count  | brighter green | 70       |
-| 2    | 4–5    | filled gold + pulse  | golden         | 90       |
-| 3    | 6+     | filled gold + glow   | golden intense | 120      |
+| Tier | Streak | Bolt                 | Card glow | Confetti |
+| ---- | ------ | -------------------- | --------- | -------- |
+| 0    | 0–1    | outline grey + count | green     | 50       |
+| 1    | 2–3    | filled grey + count  | green     | 70       |
+| 2    | 4–5    | filled gold + pulse  | golden    | 90       |
+| 3    | 6+     | filled gold + glow   | golden    | 120      |
 
-Glow keyframes use `color-mix()` against the CSS custom properties so they adapt to dark mode
-automatically, and all are inside the `prefers-reduced-motion` block.
+The glow is one keyframe, `shockGlow`, coloured by `--shock-color` and sized by `--shock-glow`.
+It uses `color-mix()` against the CSS custom properties so it adapts to dark mode. Under
+reduced motion the glow stays (it does not move), and the kick, the rail light and the year
+flash do not play.
 
 ## Colour system
 
