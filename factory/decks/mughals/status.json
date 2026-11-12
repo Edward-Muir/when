@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T22:15:59.085Z",
+  "updated_at": "2026-11-12T22:19:04.524Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-12T22:15:59.085Z"
     },
     "peacock-throne-unveiled-shah-jahan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6a225079cbb0d22a1a14dd836d360421ce51794cba4bcdc770c9ba4c6da6e3d9",
+      "updated_at": "2026-11-12T22:19:04.524Z"
     },
     "shah-jahan-begins-red-fort": {
       "state": "pending",
