@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T22:12:49.489Z",
+  "updated_at": "2026-11-12T22:15:59.085Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-12T22:12:49.489Z"
     },
     "jahangir-marries-nur-jahan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a1986b9b0b978dce3bea71628ad945efac5bbafe73fc78bf1b90f1d6a97fcb9b",
+      "updated_at": "2026-11-12T22:15:59.085Z"
     },
     "peacock-throne-unveiled-shah-jahan": {
       "state": "pending",
