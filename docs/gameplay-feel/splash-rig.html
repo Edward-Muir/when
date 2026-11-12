@@ -271,7 +271,8 @@
     opacity: 0;
   }
   .glow {
-    box-shadow: 0 0 22px 10px color-mix(in srgb, var(--fx) 55%, transparent);
+    box-shadow: 0 0 calc(22px * var(--g, 1)) calc(10px * var(--g, 1))
+      color-mix(in srgb, var(--fx) 55%, transparent);
   }
   .lift {
     box-shadow: 0 14px 26px rgb(0 0 0 / 0.32);
@@ -432,8 +433,8 @@
   <header>
     <h1>Splash Rig</h1>
     <p class="lede">
-      A correct placement, played four ways on a mock of the board: today's ripple and three
-      replacements. Slow it down, raise the streak, drag the sliders, then pick one.
+      The shockwave on a mock of the board, and three ways for a streak to build it. Play a run
+      of six to feel each one grow, or set the streak and slow it down.
     </p>
   </header>
 
@@ -442,13 +443,14 @@
 
     <div class="panel">
       <div class="group">
-        <h2>Animation</h2>
+        <h2>How the streak builds</h2>
         <div class="opts" id="opts"></div>
       </div>
 
       <div class="group">
         <div class="seg">
-          <button class="btn primary" id="play" type="button">Place card</button>
+          <button class="btn primary" id="run" type="button">Play a run of 6</button>
+          <button class="btn" id="play" type="button">Place card</button>
           <button class="btn" id="compare" type="button" aria-pressed="false">Compare all four</button>
         </div>
       </div>
@@ -485,26 +487,24 @@
   </div>
 
   <div class="why">
-    <h2>Why today's ripple does not read as a splash</h2>
+    <h2>Why the streak felt flat</h2>
     <ul>
       <li>
-        The wave moves one row every 200 ms, so the third row out starts moving 600 ms after the
-        card lands. A splash front is several times faster.
+        The streak only raised the kick from 7 px to 11 px, too small a change to notice between
+        two placements several seconds apart.
       </li>
       <li>
-        Every row is pushed down, including the rows above the card. Water moves away from the
-        impact: rows above should lift and rows below should sink.
+        It changed in four steps, at streaks 1, 2, 4 and 6, so most correct cards looked exactly
+        like the one before. B1, B2 and B3 grow with every card.
       </li>
       <li>
-        The card itself slides up into place and never dips, so nothing appears to cause the wave.
-      </li>
-      <li>
-        Each row then rings on its own soft spring for about two seconds, which reads as jelly.
+        The three variations are separate dials, so they can be blended: B1's hit with B3's tail,
+        for example.
       </li>
     </ul>
     <p class="note">
-      The rig shows the board motion only. Confetti, the screen-edge pulse and haptics are
-      unchanged and are left out here so the wave is easy to judge.
+      The colour turns gold at a streak of 4, as in the game. Confetti, the screen-edge pulse and
+      haptics are left out so the wave is easy to judge.
     </p>
   </div>
 </div>
@@ -533,7 +533,6 @@
     var T_START = -0.45;
     var T_END = 2.6;
     var TIER_MULT = [1, 1.2, 1.4, 1.6];
-    var TIER_LABEL = ['1', '×2', '×4', '×6'];
 
     /* ---------- Maths shared by every option ---------- */
     function clamp01(x) {
@@ -574,82 +573,47 @@
       var f = 1 - (t - rise) / fade;
       return f > 0 ? f * f : 0;
     }
-    function reach(P, tier) {
-      return P.half * (1 + 0.2 * tier);
+    /* ---------- The options: one shockwave, and three ways for a streak to build it ----------
+       Every option shares the same wave. `shape(n, P)` says what streak n changes. */
+    function tierOf(n) {
+      return n >= 6 ? 3 : n >= 4 ? 2 : n >= 2 ? 1 : 0;
     }
+    function build(n, P) {
+      return (P.gain === undefined ? 1 : P.gain) * ((n - 1) / 7);
+    }
+    var BASE_SCHEMA = [
+      ['front', 'Wave front', 20, 200, 5, ' ms/row', 65],
+      ['slow', 'Front slows by', 0, 30, 1, ' ms/row²', 8],
+      ['amp', 'Kick at the nearest row', 0, 20, 0.5, ' px', 7],
+      ['half', 'Reach (halves every)', 0.5, 5, 0.1, ' rows', 2.2],
+      ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 3],
+      ['decay', 'Settling', 2, 16, 0.5, '', 9],
+      ['ring', 'Pulse brightness', 0, 1.5, 0.05, '', 1],
+    ];
+    var GAIN = ['gain', 'Streak gain', 0, 2, 0.05, '×', 1];
 
-    /* ---------- The options. Each is pure: (time, params, tier) -> offsets ---------- */
-    var OPTIONS = {
-      current: {
-        name: 'Current',
-        blurb: 'What ships today, for reference.',
-        lead: 0,
-        schema: [],
-        card: function (t) {
-          if (t < 0) return fall(t, 0);
-          var p = clamp01(t / 0.25);
-          return {
-            y: 20 * (1 - easeOut(p)),
-            s: 1 - 0.05 * springDown(t, 400, 25, 1),
-            o: p,
-            glow: t < 0.6 ? Math.sin((Math.PI * t) / 0.6) : 0,
-          };
-        },
-        row: function (d, side, t, P, tier) {
-          var tau = t - d * 0.2;
-          if (tau <= 0) return { y: 0 };
-          var a = 6 * Math.pow(0.5, d - 1) * TIER_MULT[tier];
-          if (tau < 0.15) return { y: a * easeOut(tau / 0.15) };
-          return { y: a * springDown(tau - 0.15, 150, 4, 1) };
-        },
-        year: function (t) {
-          return { s: 1 + 0.3 * Math.sin(Math.PI * clamp01(t / 0.4)) };
-        },
-      },
-
-      plunge: {
-        name: 'A. Plunge',
-        blurb: 'The card sinks into the rail and shoves its neighbours apart. One crest, then still.',
-        lead: 0.11,
-        schema: [
-          ['front', 'Wave front', 20, 200, 5, ' ms/row', 55],
-          ['amp', 'Push at the nearest row', 0, 20, 0.5, ' px', 9],
-          ['half', 'Reach (halves every)', 0.5, 4, 0.1, ' rows', 1.3],
-          ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 2.6],
-          ['decay', 'Settling', 2, 16, 0.5, '', 7],
-          ['plunge', 'Card sink depth', 0, 14, 0.5, ' px', 6],
-          ['squash', 'Card squash', 0, 12, 0.5, ' %', 5],
-        ],
-        card: function (t, P, tier) {
-          if (t < 0) return fall(t, this.lead);
-          var m = TIER_MULT[tier];
-          var pc = pulse(t, P.freq * 0.85, P.decay * 1.1);
-          var q = (P.squash / 100) * pc * m;
-          return { y: P.plunge * m * pc, sx: 1 + q * 0.5, sy: 1 - q, glow: glowEnv(t, 0.07, 0.5) };
-        },
-        row: function (d, side, t, P, tier) {
-          var tau = t - ((d - 1) * P.front) / 1000;
-          var a = P.amp * TIER_MULT[tier] * Math.pow(0.5, (d - 1) / reach(P, tier));
-          return { y: side * a * pulse(tau, P.freq, P.decay) };
-        },
-        year: function (t) {
-          return { s: 1 + 0.35 * (1 - easeOut(clamp01(t / 0.28))) };
-        },
-      },
-
-      shock: {
-        name: 'B. Shockwave',
-        blurb: 'A pulse of light runs up and down the rail, and each row kicks as the light reaches it.',
+    function makeShock(def) {
+      return {
+        name: def.name,
+        blurb: def.blurb,
         lead: 0.09,
-        schema: [
-          ['front', 'Wave front', 20, 200, 5, ' ms/row', 65],
-          ['slow', 'Front slows by', 0, 30, 1, ' ms/row²', 8],
-          ['amp', 'Kick at the nearest row', 0, 20, 0.5, ' px', 7],
-          ['half', 'Reach (halves every)', 0.5, 5, 0.1, ' rows', 2.2],
-          ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 3],
-          ['decay', 'Settling', 2, 16, 0.5, '', 9],
-          ['ring', 'Pulse brightness', 0, 1.5, 0.05, '', 1],
-        ],
+        schema: def.gain ? BASE_SCHEMA.concat([GAIN]) : BASE_SCHEMA,
+        shape: function (n, P) {
+          var s = {
+            amp: 1, // kick multiplier
+            half: P.half, // reach, in rows
+            sink: 2, // how far the placed card dips, px
+            glow: 1, // card glow size
+            glowFade: 0.5, // card glow fade, s
+            bead: 1, // size of the light on the rail
+            tail: 0, // comet tail behind the light, rows
+            linger: 0, // how long the rail stays lit behind it, s
+            hold: 0.06, // how long a year keeps its flash, s
+            core: 0.8, // white-hot core, 0..1
+          };
+          def.shape(s, n, P);
+          return s;
+        },
         /* When row d starts to move. */
         delay: function (d, P) {
           return (d * P.front + d * d * P.slow) / 1000;
@@ -667,140 +631,135 @@
           if (P.slow < 0.01) return ms / P.front;
           return (-P.front + Math.sqrt(P.front * P.front + 4 * P.slow * ms)) / (2 * P.slow);
         },
-        card: function (t, P) {
+        card: function (t, P, n) {
           if (t < 0) return fall(t, this.lead);
+          var s = this.shape(n, P);
           var pc = pulse(t, 3.2, 11);
-          return { y: 2 * pc, s: 1 + 0.03 * pc, glow: glowEnv(t, 0.07, 0.5) };
-        },
-        row: function (d, side, t, P, tier) {
-          var tau = t - this.delay(d, P);
-          var fade = Math.pow(0.5, (d - 1) / P.half);
-          var x = (tau - this.peak(P)) / 0.06;
+          var q = 0.012 * s.sink * pc;
           return {
-            y: side * P.amp * TIER_MULT[tier] * fade * pulse(tau, P.freq, P.decay),
+            y: s.sink * pc,
+            sx: 1 + q * 0.5,
+            sy: 1 - q,
+            glow: glowEnv(t, 0.07, s.glowFade),
+            glowSize: s.glow,
+          };
+        },
+        row: function (d, side, t, P, n) {
+          var s = this.shape(n, P);
+          var tau = t - this.delay(d, P);
+          var pk = this.peak(P);
+          var fade = Math.pow(0.5, (d - 1) / s.half);
+          var x = (tau - pk) / (tau > pk ? s.hold : 0.06);
+          return {
+            y: side * P.amp * s.amp * fade * pulse(tau, P.freq, P.decay),
             flash: Math.exp(-x * x) * fade * Math.min(1, P.ring),
           };
         },
         year: function (t) {
           return { s: 1 + 0.35 * (1 - easeOut(clamp01(t / 0.28))) };
         },
-        fx: function (ctx, t, P, tier, color) {
+        fx: function (ctx, t, P, n, color) {
           if (t <= 0) return;
+          var self = this;
+          var s = this.shape(n, P);
+          var pk = this.peak(P);
           var D = this.frontAt(t, P);
-          /* Grows out of the tick while the nearest rows wind up, then fades with distance. */
-          var a = P.ring * clamp01(t / this.peak(P)) * Math.pow(0.5, Math.max(0, D - 1) / (P.half * 1.6));
-          if (a < 0.02) return;
+          function fadeAt(r) {
+            return Math.pow(0.5, Math.max(0, r - 1) / (s.half * 1.6));
+          }
+          /* The rail behind the light: a comet tail, and a glow that cools where it has been. */
+          if (s.tail > 0 || s.linger > 0) {
+            ctx.fillStyle = color;
+            for (var r = 0.5; r < Math.min(D, 4.2); r += 0.05) {
+              var tailA = s.tail > 0 ? clamp01(1 - (D - r) / s.tail) : 0;
+              var since = t - pk - self.delay(r, P);
+              var lingerA = s.linger > 0 ? 0.6 * Math.exp(-since / s.linger) : 0;
+              var a = Math.max(tailA, lingerA) * fadeAt(r) * Math.min(1, P.ring);
+              if (a < 0.02) continue;
+              for (var side = -1; side <= 1; side += 2) {
+                var y = CY + side * r * ROW_H;
+                ctx.fillStyle = color;
+                ctx.globalAlpha = a * 0.4;
+                ctx.fillRect(RAIL_X - 9, y - 2.3, 18, 4.6);
+                ctx.globalAlpha = a;
+                ctx.fillRect(RAIL_X - 3, y - 2.3, 6, 4.6);
+                ctx.fillStyle = '#ffffff';
+                ctx.globalAlpha = a * s.core * 0.9;
+                ctx.fillRect(RAIL_X - 1, y - 2.3, 2, 4.6);
+              }
+            }
+          }
+          var alpha = P.ring * clamp01(t / pk) * fadeAt(D);
+          if (alpha < 0.02) return;
           [-1, 1].forEach(function (side) {
             var y = CY + side * D * ROW_H;
-            if (y < -30 || y > H + 30) return;
-            ctx.globalAlpha = Math.min(1, a);
+            if (y < -40 || y > H + 40) return;
+            ctx.globalAlpha = Math.min(1, alpha);
             ctx.shadowColor = color;
-            ctx.shadowBlur = 16;
+            ctx.shadowBlur = 16 * s.bead;
             ctx.fillStyle = color;
             ctx.beginPath();
-            ctx.ellipse(RAIL_X, y, 5, 17, 0, 0, Math.PI * 2);
+            ctx.ellipse(RAIL_X, y, 5 * s.bead, 17 * s.bead, 0, 0, Math.PI * 2);
             ctx.fill();
             ctx.shadowBlur = 0;
             ctx.fillStyle = '#ffffff';
-            ctx.globalAlpha = Math.min(1, a) * 0.8;
+            ctx.globalAlpha = Math.min(1, alpha) * s.core;
             ctx.beginPath();
-            ctx.ellipse(RAIL_X, y, 2, 10, 0, 0, Math.PI * 2);
+            ctx.ellipse(RAIL_X, y, 2 * s.bead, 10 * s.bead, 0, 0, Math.PI * 2);
             ctx.fill();
           });
         },
-      },
+      };
+    }
 
-      droplets: {
-        name: 'C. Splash and droplets',
-        blurb: "A's plunge, plus beads thrown off the rail that arc out and fall back.",
-        lead: 0.11,
-        schema: [
-          ['front', 'Wave front', 20, 200, 5, ' ms/row', 55],
-          ['amp', 'Push at the nearest row', 0, 20, 0.5, ' px', 10],
-          ['half', 'Reach (halves every)', 0.5, 4, 0.1, ' rows', 1.3],
-          ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 2.6],
-          ['decay', 'Settling', 2, 16, 0.5, '', 7],
-          ['plunge', 'Card sink depth', 0, 14, 0.5, ' px', 7],
-          ['squash', 'Card squash', 0, 12, 0.5, ' %', 6],
-          ['drops', 'Droplets', 0, 40, 1, '', 10],
-          ['speed', 'Droplet speed', 100, 600, 10, ' px/s', 300],
-          ['gravity', 'Droplet gravity', 0, 2000, 50, ' px/s²', 900],
-        ],
-        card: function (t, P, tier) {
-          var c = OPTIONS.plunge.card.call(this, t, P, tier);
-          if (t >= 0) {
-            var r = clamp01(t / 0.3);
-            c.ring = { s: 1 + 0.1 * easeOut(r), o: 1 - r };
-          }
-          return c;
+    var OPTIONS = {
+      base: makeShock({
+        name: 'B. Shockwave',
+        blurb: 'As it stands: the streak nudges the kick up at 2, 4 and 6.',
+        shape: function (s, n) {
+          s.amp = TIER_MULT[tierOf(n)];
         },
-        row: function (d, side, t, P, tier) {
-          return OPTIONS.plunge.row(d, side, t, P, tier);
+      }),
+      hit: makeShock({
+        name: 'B1. Harder hit',
+        blurb: 'Every correct card lands harder than the last: bigger kick, deeper dip, bigger glow.',
+        gain: true,
+        shape: function (s, n, P) {
+          var g = build(n, P);
+          s.amp = 0.86 + 2.28 * g;
+          s.sink = 2 + 8 * g;
+          s.glow = 1 + 0.9 * g;
+          s.bead = 1 + 0.7 * g;
         },
-        year: function (t) {
-          return OPTIONS.plunge.year(t);
+      }),
+      reach: makeShock({
+        name: 'B2. Further reach',
+        blurb: 'The kick stays modest. What grows is how far the wave runs along the timeline.',
+        gain: true,
+        shape: function (s, n, P) {
+          var g = build(n, P);
+          s.amp = 0.9;
+          s.half = 0.5 + 4.5 * g;
+          s.bead = 1 + 0.2 * g;
         },
-        makeDrops: function (P, tier) {
-          var n = Math.round(P.drops * [1, 1.4, 2, 2.8][tier]);
-          var seed = 0x9e3779b9;
-          function rnd() {
-            seed |= 0;
-            seed = (seed + 0x6d2b79f5) | 0;
-            var x = Math.imul(seed ^ (seed >>> 15), 1 | seed);
-            x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x;
-            return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
-          }
-          var out = [];
-          for (var i = 0; i < n; i++) {
-            /* Two fans, one off each edge of the card, thrown away from the impact. */
-            var up = i % 3 !== 2;
-            var ang = (up ? -1 : 1) * (0.25 + rnd() * 2.64);
-            var sp = P.speed * (0.45 + rnd() * 0.75) * (up ? 1 : 0.6) * (1 + 0.12 * tier);
-            out.push({
-              x0: RAIL_X + (rnd() - 0.3) * 30,
-              y0: CY + (up ? -34 : 34),
-              vx: Math.cos(ang) * sp,
-              vy: Math.sin(ang) * sp,
-              r: 1.8 + rnd() * 2.6,
-              life: 0.42 + rnd() * 0.36,
-              t0: rnd() * 0.04,
-            });
-          }
-          return out;
+      }),
+      charge: makeShock({
+        name: 'B3. Charged rail',
+        blurb: 'The light carries the streak: a longer tail, a rail that stays lit, a hotter core.',
+        gain: true,
+        shape: function (s, n, P) {
+          var g = build(n, P);
+          s.amp = TIER_MULT[tierOf(n)];
+          s.tail = 0.2 + 2.3 * g;
+          s.linger = 0.1 + 0.55 * g;
+          s.hold = 0.06 + 0.3 * g;
+          s.glowFade = 0.5 + 0.4 * g;
+          s.bead = 1 + 0.25 * g;
+          s.core = 0.5 + 0.5 * g;
         },
-        fx: function (ctx, t, P, tier, color, drops) {
-          if (t <= 0) return;
-          /* Rail flare at the point of impact. */
-          var f = 1 - clamp01(t / 0.32);
-          if (f > 0) {
-            ctx.globalAlpha = f;
-            ctx.shadowColor = color;
-            ctx.shadowBlur = 14;
-            ctx.fillStyle = color;
-            ctx.fillRect(RAIL_X - 2 - 2 * f, CY - 46, 4 + 4 * f, 92);
-            ctx.shadowBlur = 0;
-          }
-          ctx.fillStyle = color;
-          for (var i = 0; i < drops.length; i++) {
-            var d = drops[i];
-            var age = t - d.t0;
-            if (age <= 0 || age >= d.life) continue;
-            var k = age / d.life;
-            ctx.globalAlpha = 1 - k * k;
-            ctx.beginPath();
-            ctx.arc(
-              d.x0 + d.vx * age,
-              d.y0 + d.vy * age + 0.5 * P.gravity * age * age,
-              d.r * (1 - 0.55 * k),
-              0,
-              Math.PI * 2
-            );
-            ctx.fill();
-          }
-        },
-      },
+      }),
     };
-    var ORDER = ['current', 'plunge', 'shock', 'droplets'];
+    var ORDER = ['base', 'hit', 'reach', 'charge'];
 
     function defaults(id) {
       var P = {};
@@ -837,7 +796,8 @@
     }
 
     /* ---------- State ---------- */
-    var state = { opt: 'plunge', tier: 0, speed: 1, reduced: false, compare: false };
+    var state = { opt: 'hit', streak: 1, speed: 1, reduced: false, compare: false };
+    var run = null;
     var boards = [];
     var stage = document.getElementById('stage');
 
@@ -918,8 +878,8 @@
       this.refresh();
     };
     Board.prototype.refresh = function () {
-      this.metricEl.textContent = metrics(this.id, state.tier);
-      this.board.classList.toggle('gold', state.tier >= 2);
+      this.metricEl.textContent = metrics(this.id, state.streak);
+      this.board.classList.toggle('gold', state.streak >= 4);
       this.color = getComputedStyle(this.board).getPropertyValue('--fx').trim() || '#6aaa64';
       if (!this.playing) this.render();
     };
@@ -931,18 +891,16 @@
       this.scaler.style.width = W * s + 'px';
       this.scaler.style.height = H * s + 'px';
     };
-    Board.prototype.play = function () {
-      var opt = OPTIONS[this.id];
-      this.t = T_START;
+    Board.prototype.play = function (start) {
+      this.t = start === undefined ? T_START : start;
       this.playing = true;
       this.color = getComputedStyle(this.board).getPropertyValue('--fx').trim() || '#6aaa64';
-      this.drops = opt.makeDrops ? opt.makeDrops(PARAMS[this.id], state.tier) : [];
     };
     Board.prototype.render = function () {
       var opt = OPTIONS[this.id];
       var P = PARAMS[this.id];
       var t = this.t;
-      var tier = state.tier;
+      var tier = state.streak;
       var still = state.reduced;
       for (var i = 0; i < this.rows.length; i++) {
         var r = this.rows[i];
@@ -978,6 +936,7 @@
       pr.card.style.opacity = o;
       pr.lift.style.opacity = t < 0 ? c.lift || 0 : 0;
       pr.glow.style.opacity = c.glow || 0;
+      pr.glow.style.setProperty('--g', c.glowSize || 1);
       [
         [pr.ring, c.ring],
         [pr.ring2, c.ring2],
@@ -1002,6 +961,7 @@
 
     /* ---------- Loop ---------- */
     var raf = null;
+    var RUN_LENGTH = 6;
     var prev = 0;
     function tick(now) {
       var dt = Math.min(0.05, (now - prev) / 1000) * state.speed;
@@ -1018,11 +978,23 @@
         }
         b.render();
       });
+      /* A run: the next card is placed once the last one has had a second on the board. */
+      if (run && boards[0].t >= 1) {
+        if (state.streak >= RUN_LENGTH) {
+          run = null;
+        } else {
+          setStreak(state.streak + 1);
+          boards.forEach(function (b) {
+            b.play(-0.3);
+          });
+          any = true;
+        }
+      }
       raf = any ? requestAnimationFrame(tick) : null;
     }
-    function playAll() {
+    function playAll(start) {
       boards.forEach(function (b) {
-        b.play();
+        b.play(typeof start === 'number' ? start : undefined);
         b.render();
       });
       if (raf === null) {
@@ -1083,6 +1055,7 @@
         b.type = 'button';
         b.dataset.v = v;
         b.addEventListener('click', function () {
+          run = null;
           state[key] = v;
           pressed(host, v);
           boards.forEach(function (bd) {
@@ -1094,10 +1067,25 @@
       });
       pressed(host, state[key]);
     }
-    segment('tiers', [0, 1, 2, 3], TIER_LABEL, 'tier');
+    segment('tiers', [1, 2, 3, 4, 5, 6, 7, 8], ['1', '2', '3', '4', '5', '6', '7', '8'], 'streak');
+    function setStreak(n) {
+      state.streak = n;
+      pressed(document.getElementById('tiers'), n);
+      boards.forEach(function (b) {
+        b.refresh();
+      });
+    }
+    document.getElementById('run').addEventListener('click', function () {
+      run = true;
+      setStreak(1);
+      playAll(-0.3);
+    });
     segment('speeds', [1, 0.5, 0.25, 0.1], ['1×', '0.5×', '0.25×', '0.1×'], 'speed');
 
-    document.getElementById('play').addEventListener('click', playAll);
+    document.getElementById('play').addEventListener('click', function () {
+      run = null;
+      playAll();
+    });
     var compareBtn = document.getElementById('compare');
     compareBtn.addEventListener('click', function () {
       state.compare = !state.compare;
@@ -1141,7 +1129,7 @@
       slidersEl.textContent = '';
       var empty = schema.length === 0;
       tuneNote.textContent = empty
-        ? 'Current plays the shipped values, so there is nothing to tune here. Pick A, B or C.'
+        ? ''
         : 'Changes replay when the slider is released.';
       valuesEl.hidden = empty;
       document.getElementById('copy').hidden = empty;
