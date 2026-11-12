@@ -112,6 +112,20 @@ verdicts rest on the model's knowledge and uncited Wikipedia page names. The dat
 contested (Qutb Minar 1199, Humayun's Tomb 1565, the Peacock Throne 1635, the Red Fort 1638) were
 among those checked.
 
+Three more weak spots came out of the detail research:
+
+- **`peacock-throne-unveiled-shah-jahan`**: the description says the throne is "said to have
+  cost twice as much as the Taj Mahal". The detail writer found no authoritative source for the
+  claim and left it out of the prose. A rewording through `date-clues-apply.js` would settle it.
+- **`firoz-shah-founds-firozabad`**: the description puts the pillar "on its roof". Accounts
+  differ on whether it stood atop the building or beside the mosque, and it was raised in 1356,
+  two years after the founding.
+- **The prose hedges heavily** ("one account says", "sources split") and two entries close on a
+  grim attributed detail: the unburied dead in `timur-sacks-delhi-1398`, and the casket in
+  `shah-alam-ii-returns-delhi`. All 22 pass `detail-spec.js`, but they deserve a cold read against
+  the plaque voice and the atrocity carve-out. One date was corrected by hand before applying:
+  the Aurangzeb entry had Shah Jahan falling ill in July 1658, after the battle it explains.
+
 ## Known crowding kept on purpose
 
 Nine pairs sit inside theme-gap's 8-year advisory window. Two clusters are deliberate:
