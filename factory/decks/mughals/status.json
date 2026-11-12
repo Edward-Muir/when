@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T22:26:40.297Z",
+  "updated_at": "2026-11-12T23:07:22.945Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,46 +86,46 @@
       "updated_at": "2026-11-12T21:07:39.253Z"
     },
     "battle-haldighati-mughals-mewar": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8f2b99b33baee1d35a8162dafe33417a983853d23f6885b22d73b7f6d9bbd515",
-      "updated_at": "2026-11-12T22:09:35.861Z"
+      "updated_at": "2026-11-12T23:07:22.785Z"
     },
     "jahangir-accession-agra": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7c7e8c00318609aead086ea23b7587ae33cabceb884dedb686d83f80f0377018",
-      "updated_at": "2026-11-12T22:12:49.489Z"
+      "updated_at": "2026-11-12T23:07:22.817Z"
     },
     "jahangir-marries-nur-jahan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a1986b9b0b978dce3bea71628ad945efac5bbafe73fc78bf1b90f1d6a97fcb9b",
-      "updated_at": "2026-11-12T22:15:59.085Z"
+      "updated_at": "2026-11-12T23:07:22.848Z"
     },
     "peacock-throne-unveiled-shah-jahan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6a225079cbb0d22a1a14dd836d360421ce51794cba4bcdc770c9ba4c6da6e3d9",
-      "updated_at": "2026-11-12T22:19:04.524Z"
+      "updated_at": "2026-11-12T23:07:22.879Z"
     },
     "shah-jahan-begins-red-fort": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "32543c1781b0c77a08212b3ed5fc8f6892e9766d0af8d095a519f697191e5a27",
-      "updated_at": "2026-11-12T22:23:33.892Z"
+      "updated_at": "2026-11-12T23:07:22.913Z"
     },
     "shah-jahan-begins-jama-masjid-delhi": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "80e083f792d3ba4fb070e0bef7fd4919b106d39548cc32877d2daa3c40e49882",
-      "updated_at": "2026-11-12T22:26:40.297Z"
+      "updated_at": "2026-11-12T23:07:22.945Z"
     },
     "aurangzeb-seizes-throne-agra": {
       "state": "pending",
