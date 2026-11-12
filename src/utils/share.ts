@@ -1,6 +1,7 @@
 import { HistoricalEvent, WhenGameState } from '../types';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { getDailyPuzzleNumber, getLocalDateString } from './puzzleDate';
+import { shuffleArraySeeded } from './gameLogic';
 import { renderShareFile, ShareCardSpec } from './shareImage';
 
 /**
@@ -301,6 +302,22 @@ function scoreUnit(count: number): string {
   return count === 1 ? 'event' : 'events';
 }
 
+/**
+ * The cards a share's collage shows: the timeline, **shuffled**.
+ *
+ * The timeline is kept in date order, and the Daily deals everyone the same cards (so does a
+ * challenge link), so drawing it as it stands would hand the day's answer to anyone who sees
+ * the share before playing. The shuffle's seed is `seedKey` and nothing else, so the order
+ * carries no trace of the dates, and it is the same every time: the game-over share, the
+ * bottom bar's and the home screen's all draw one image. Missed cards are not on the
+ * timeline, so they are not here either.
+ *
+ * See the header of `shareImage.ts` and docs/sharing-challenges/index.md.
+ */
+export function shareTiles(timeline: HistoricalEvent[], seedKey: string): HistoricalEvent[] {
+  return shuffleArraySeeded(timeline, `share:${seedKey}`);
+}
+
 /** Build the story card, or null if the browser cannot produce one. */
 async function buildShareFile(spec: ShareCardSpec, slug: string): Promise<File | null> {
   return renderShareFile(spec, `when-${slug}.jpg`);
@@ -318,9 +335,8 @@ export async function shareResults(
   const { gameMode, placementHistory, lastConfig, timeline, seedEventName } = state;
   const correctCount = placementHistory.filter((p) => p).length;
 
-  // The seed card is the one event safe to show: it is on the board before the first
-  // move, so it reveals nothing about the puzzle. `timeline` is kept in year order, so
-  // the seed is not necessarily its first entry.
+  // The seed card colours the card, and is its art when nothing was placed. `timeline` is
+  // kept in year order, so the seed is not necessarily its first entry.
   const seedEvent = timeline.find((event) => event.name === seedEventName) ?? null;
 
   const isDaily = gameMode === 'daily';
@@ -337,6 +353,7 @@ export async function shareResults(
   const spec: ShareCardSpec = isDaily
     ? {
         event: seedEvent,
+        tiles: shareTiles(timeline, date),
         eyebrow: dailyEyebrow(date, getThemeDisplayName(getDailyTheme(date))),
         score: String(correctCount + 1),
         scoreLabel: scoreUnit(correctCount + 1),
@@ -346,6 +363,7 @@ export async function shareResults(
     : {
         // No eyebrow: a non-daily game has no mode to name (see `generateShareText`).
         event: seedEvent,
+        tiles: shareTiles(timeline, `${seedEventName ?? ''}:${timeline.length}`),
         score: String(correctCount),
         scoreLabel: scoreUnit(correctCount),
         url: lastConfig?.challengeCode
@@ -379,8 +397,10 @@ export async function shareApp(): Promise<boolean> {
 /**
  * Share daily result from stored data (for a completed daily on the home screen).
  *
- * `seedEvent` is today's pre-placed card — the same one the home screen previews — and is
- * used as the story-card art. Returns true if copied to clipboard (toast should be shown).
+ * `timeline` is the day's finished timeline, from the stored board, and becomes the same
+ * collage the game-over share drew. `seedEvent` is today's pre-placed card — the same one the
+ * home screen previews — and is the art when there is no stored board to draw from. Returns
+ * true if copied to clipboard (toast should be shown).
  */
 export async function shareDailyResult(
   date: string,
@@ -389,14 +409,16 @@ export async function shareDailyResult(
   options: {
     leaderboardRank?: number;
     seedEvent?: HistoricalEvent | null;
+    timeline?: HistoricalEvent[];
   } = {}
 ): Promise<boolean> {
-  const { leaderboardRank, seedEvent } = options;
+  const { leaderboardRank, seedEvent, timeline } = options;
   const text = generateDailyShareText({ date, correctCount, leaderboardRank });
 
   const file = await buildShareFile(
     {
       event: seedEvent,
+      tiles: timeline ? shareTiles(timeline, date) : undefined,
       eyebrow: dailyEyebrow(date, theme),
       score: String(correctCount + 1),
       scoreLabel: scoreUnit(correctCount + 1),

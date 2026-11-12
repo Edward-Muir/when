@@ -12,6 +12,11 @@ export const Z_LAYERS = {
   /** Menu.tsx drawer (documented here, not consumed by Modal). */
   menuBackdrop: 'z-[55]',
   menuDrawer: 'z-[56]',
+  /**
+   * The game-over gallery's cards in flight (`GalleryFlight`). A body portal, so it has to be
+   * above the modal it flies into; below `reveal`, which only opens after that modal closes.
+   */
+  flight: 'z-[57]',
   /** Modals that must sit above another modal or the menu drawer. */
   reveal: 'z-[60]',
 } as const;

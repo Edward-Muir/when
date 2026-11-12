@@ -1,10 +1,10 @@
 import { GameConfig, HistoricalEvent, ALL_CATEGORIES, DEFAULT_DIFFICULTIES } from '../types';
 import { ALL_ERAS } from './eras';
-import { CuratedTheme } from './curatedThemes';
+import { CuratedTheme, getCuratedThemeById } from './curatedThemes';
 import { buildCuratedPool } from './dailyPool';
 import { buildRampedDeck } from './deckBuilder';
 import { DAILY_HAND_SIZE } from './dailyConfig';
-import { getDailyTheme } from './dailyTheme';
+import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { generateChallengeSeed } from './challengeCode';
 import { minDeckSize } from './gameLogic';
 
@@ -52,6 +52,18 @@ export function getCuratedThemeIdForConfig(config: GameConfig | null): string | 
   if (!date) return undefined;
   const theme = getDailyTheme(date);
   return theme.type === 'curated' ? theme.curated.id : undefined;
+}
+
+/**
+ * The name of the theme a game's deck was drawn from, as the pill beside the logo says it: the
+ * deck an Archive replay is of, or the theme of the day being played (today's daily, or a past
+ * day from the Archive). Undefined for a Custom game, which has no theme.
+ */
+export function getThemeNameForConfig(config: GameConfig | null): string | undefined {
+  if (!config) return undefined;
+  if (config.curatedThemeId) return getCuratedThemeById(config.curatedThemeId)?.name;
+  const date = config.dailySeed ?? config.dailyReplayDate;
+  return date ? getThemeDisplayName(getDailyTheme(date)) : undefined;
 }
 
 /**

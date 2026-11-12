@@ -1,7 +1,7 @@
 # Gameplay & Feel
 
-Deck composition, fuzzy placement, tombstones, streak feedback, transitions, and the colour
-system.
+Deck composition, fuzzy placement, tombstones, the game-over gallery, streak feedback,
+transitions, and the colour system.
 
 ## Repo-wide trap: Tailwind opacity modifiers on our colour tokens compile to nothing
 
@@ -299,6 +299,67 @@ layout shift animates before relying on it. Two framer-motion rules:
 No automated check covers the tombstone drag invariants; before touching `TombstoneRow.tsx`,
 write a Playwright check (see [../driving-the-app-with-playwright.md](../driving-the-app-with-playwright.md)).
 Measure the tombstone **button**, not the row — transforms live there.
+
+## The game-over gallery
+
+The game-over popup is the timeline itself: every card on the board as a square painting, in
+date order, missed cards grey in their true places, with the score under it
+(`components/gameOver/GameOverGallery.tsx`). It replaced a trophy icon and a number. The cards
+travel there from the board when the popup opens.
+
+Decisions:
+
+- **The grid is the board.** Tiles come from `buildTimelineRows`, the same function the board
+  renders from, so a tombstone is in the same place in both. Tombstones are never counted; the
+  score is `placementHistory`. The starting card carries a gold pip, because it is on the
+  timeline and not in the score.
+- **The `thumbnail` rung only.** It is already cached from the board. No new size, never
+  `detail` ([../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)).
+- **Columns are the square root of the tile count, rounded up** (`galleryLayout.ts`), so the
+  grid is never taller than wide. The one exception is the Daily on a short phone: the square
+  grid pushed Submit to Leaderboard below the fold of a popup that is locked until it is
+  pressed, so there the grid widens to more, smaller tiles until it fits (`dailyFit`).
+- **The plain "Game Over" heading is not shown**, only announced (it names the dialog). A
+  cleared deck and a multiplayer win keep a visible heading. The tier word ("Legendary!") is
+  gone; it topped out at 12, so 14 and a flawless 29 read the same. The line under the score
+  is the span of the timeline instead ("120 million years in one timeline", `timelineSpan.ts`).
+- **A Perfect Clear has a gold frame**, the Archive's mark for a curated day.
+- **Restart and Home stay in the bottom bar.** In the popup they would let a player leave
+  before the badge and share steps, which is a change to the end-of-game sequence.
+- **The share image is the same paintings, shuffled, without the missed cards.** This grid is
+  in date order, which on a shared image would be the day's answer
+  ([../sharing-challenges/](../sharing-challenges/index.md#the-paintings-never-their-order)).
+
+The travel (`hooks/useGalleryTravel.ts`, `GalleryFlight.tsx`) is an entrance and nothing else.
+Reduced motion, the tests, and a page with no board all get the finished grid at once.
+
+- **Measured, not `layoutId`.** It reads where each card's art sits (`data-board-card` on the
+  card button in `TimelineEvent` and `TombstoneRow`) and where its tile sits, and moves a
+  clone between them. A shared `layoutId` would tie the board's rows to a popup that mounts and
+  unmounts; see the two traps under [Tombstones](#tombstones).
+- **The clones fly in a body portal**, outside the popup, because the Modal card clips its
+  content. The real tiles are hidden until they land and swap in on the same frame.
+- **Only the rows on screen travel from their rows**, about eight. The rest fade in from the
+  nearest edge of the board. A long game cannot do better: its other cards are not on screen.
+- **The Modal card is mid scale-in when the tiles are measured**, so their rects are un-scaled
+  about the card's centre.
+- **The card moves during the flight on the Daily**: the leaderboard block swaps its skeleton
+  for the form, the card grows and re-centres. A `ResizeObserver` feeds the shift into every
+  clone's target. Without it they land a few pixels off and jump.
+- **The popup opens without its surface** and is given it partway through the flight
+  (`gameOverShell` in `GamePopup.tsx`, colours only). Starting with the surface and removing
+  it left a ghost of the card under the first frames.
+- **Game over has its own `Modal`**, always mounted beside the card popup's. Sharing one handed
+  the game-over card the last card popup's colour: in multiplayer the final "Wrong!" popup is
+  still closing when game over opens.
+- **The board steps back** (`.board-away`, from `boardAreaClass` in `Game.tsx`) while the popup
+  is up, or every card would show twice, and returns when it closes.
+- **No opacity is animated by framer-motion's `animate` here.** Clone styles are `useTransform`s
+  of one progress value, written per frame, and the caption is a CSS transition. See the
+  Android WebView note in [../mobile-ios/index.md](../mobile-ios/index.md).
+
+Checked in Chromium only, at 402x874 and 375x667. Not checked on a phone or in the Android
+app, where 35 images moving at once is the thing to look at.
 
 ## Streak feedback
 

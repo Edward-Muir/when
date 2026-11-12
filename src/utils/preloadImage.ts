@@ -36,3 +36,31 @@ export function preloadEventImages(
     }
   }
 }
+
+/** The images `holdDecoded` is keeping alive. Replaced wholesale on each call, so it stays small. */
+const held: HTMLImageElement[] = [];
+
+/**
+ * Fetch, decode and keep hold of a small set of images that are about to be painted together
+ * the moment a view mounts: the hand at the start of a game.
+ *
+ * `preloadImage` only fills the HTTP cache and drops its `Image`. That is enough for a card
+ * the player waits on, but a view that mounts with several cached images still has to decode
+ * each one, and paints empty frames while it does. Holding a decoded `Image` per URL keeps the
+ * decoded picture in the browser's memory cache, so the real `<img>` paints with the card.
+ * Each call replaces the previous set, so at most one view's worth is ever held.
+ */
+export function holdDecoded(urls: Array<string | undefined>): void {
+  if (typeof window === 'undefined') return;
+  const next = urls
+    .filter((url): url is string => !!url)
+    .map((url) => {
+      requested.add(url);
+      const img = new Image();
+      img.src = url;
+      // decode() rejects when the image fails to load; the card shows its fallback then.
+      img.decode?.().catch(() => undefined);
+      return img;
+    });
+  held.splice(0, held.length, ...next);
+}

@@ -143,7 +143,7 @@ const TimelineLab: React.FC = () => {
             railTimeScale={timeScale}
           />
         </div>
-        <div className="z-40 flex h-[120px] shrink-0 items-center border-t border-border bg-bg sm:h-[140px]">
+        <div className="hand-bar z-40 flex shrink-0 items-center border-t border-border bg-bg">
           <div className="board-center-item flex w-24 shrink-0 items-center justify-center">
             <GameInfoCompact
               currentPlayer={player}
@@ -157,7 +157,6 @@ const TimelineLab: React.FC = () => {
               activeCard={hand[0]}
               currentPlayer={player}
               isAnimating={false}
-              isOverTimeline={dragging && overBoard}
               onCycleHand={noop}
               onCardTap={noop}
             />

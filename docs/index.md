@@ -22,7 +22,7 @@ says: for "how does X work", read the source.
 - [gameplay-feel/](gameplay-feel/index.md) — **read before retuning deck composition, or
   before touching how a placement is judged.** The neighbour-comparison rule for date ranges
   is unsound and the counterexample is written down, along with the property test that is the
-  only thing catching it. Also covers tombstones, streak feedback, and the repo-wide Tailwind
+  only thing catching it. Also covers tombstones, the game-over gallery, streak feedback, and the repo-wide Tailwind
   opacity-modifier trap.
 - [events-images/difficulty-grading-rubric.md](events-images/difficulty-grading-rubric.md) —
   the grading criteria. Grade recognition and inferability; never grade crowding.

@@ -25,6 +25,9 @@ index.tsx                      # BrowserRouter + the routes below
 │       ├── HintStrip.tsx      # The one-line hint pill (also inline on each home tab)
 │       ├── Timeline/          # Timeline.tsx, TimelineEvent.tsx, TombstoneRow.tsx
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
+│       │   └── gameOver/GameOverGallery.tsx # The game-over screen: the timeline as a grid of
+│       │       │                    # paintings, score and leaderboard block under it
+│       │       └── GalleryFlight.tsx # The cards in flight from the board (body portal)
 │       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
@@ -53,7 +56,9 @@ read first; `useGameStatsRecorder` is where a finished game reaches `statsStorag
 rest are single-purpose and named for what they do (`useDragAndDrop`, `useLeaderboard`,
 `useHaptics`, `useTheme`, `useScreenShake`, `useVersionCheck`, `usePWAInstall`, `useToday`,
 `useImagePrefetch`, `useDailyReminder`, `useEndOfGameSequence` — the post-game screen queue:
-milestones, achievements, then always the share; `useOnboardingHints` — the in-game one-shot
+milestones, achievements, then always the share; `useGalleryTravel` — measures the board and
+flies its cards into the game-over gallery, see
+[gameplay-feel](gameplay-feel/index.md#the-game-over-gallery); `useOnboardingHints` — the in-game one-shot
 hint machine, kept out of `Game.tsx` because Game sits on the ESLint complexity ceiling;
 settle-driven, one hint per placement, walking `wrong` -> `correct` -> `tapCard` -> `stats`
 -> `swap` with only the idle drag nudge on a timer;
@@ -151,6 +156,7 @@ Low to high. Verify against source before relying on it — grep `z-` in the thr
 | Cycle button                | z-50    | ActiveCardDisplay:33                           |
 | Leave-game confirm modal    | z-50    | Game.tsx (`HomeConfirmModal`)                  |
 | Confetti burst              | z-50    | Game.tsx                                       |
+| Game-over cards in flight   | z-[57]  | GalleryFlight.tsx (body portal, `flight`)      |
 | How-to-play modal           | z-[60]  | HowToPlayModal.tsx (`ui/Modal` `reveal` layer) |
 
 ## Drag and Drop

@@ -18,7 +18,8 @@
  * When every qc-pass slug is uploaded and verified, the deck moves to `uploaded` (via status.js).
  *
  * --verify-urls replaces the two checks factory.md used to do by eye, and exits 1 on failure:
- *   - no existing `image_url` line was removed, and exactly one was added per uploaded slug;
+ *   - no event lost or changed the `image_url` it had on main, and the only events that gained
+ *     one are the uploaded slugs (compared event by event, so a moved block of events is fine);
  *   - every uploaded slug's URL names its own public_id, whose stem is the slug.
  *
  * Credentials come from .env (CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, CLOUDINARY_CLOUD_NAME).
@@ -214,33 +215,35 @@ async function upload(deck) {
   }
 }
 
-function verifyUrls(deck) {
-  const dir = path.join(DECKS_DIR, deck);
-  const uploads = fs.existsSync(path.join(dir, 'uploads.json'))
-    ? readJson(path.join(dir, 'uploads.json'))
-    : {};
+/** `{name: image_url}` for every event in a set of parsed event files; artless events are left out. */
+function imageUrls(files) {
+  const urls = new Map();
+  for (const events of files) {
+    if (!Array.isArray(events)) continue;
+    for (const e of events) if (e && e.name && e.image_url) urls.set(e.name, e.image_url);
+  }
+  return urls;
+}
+
+/**
+ * What is wrong with a deck branch's URLs. `before` and `after` are imageUrls() maps: the
+ * catalogue where the branch left main, and as it stands now. They are compared event by event,
+ * never line by line: merging main into the branch can move a block of events within a file,
+ * and a line diff reads every moved `image_url` as one removed and one added.
+ */
+function urlProblems(before, after, uploads) {
   const problems = [];
-
-  // Everything this deck branch changed in the catalogue, committed or not, measured from where
-  // it left main. A resumed ship has already committed its URLs, so the working-tree diff alone
-  // would count none of them.
-  const git = (args) =>
-    execFileSync('git', args, { cwd: REPO_ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
-  const base = git(['merge-base', 'HEAD', process.env.FACTORY_BASE_REF || 'origin/main']).trim();
-  const diff = git(['diff', '--unified=0', base, '--', 'public/events/']);
-  const removed = diff.split('\n').filter((l) => /^-\s*"image_url"/.test(l)).length;
-  const added = diff.split('\n').filter((l) => /^\+\s*"image_url"/.test(l)).length;
-  const expected = Object.keys(uploads).length;
-  if (removed) problems.push(`${removed} existing image_url line(s) removed or rewritten; want 0`);
-  if (added !== expected)
-    problems.push(`${added} image_url line(s) added; want ${expected}, one per uploaded slug`);
-
-  const events = new Map();
-  for (const file of readJson(path.join(REPO_ROOT, 'public', 'events', 'manifest.json')).files) {
-    for (const e of readJson(path.join(REPO_ROOT, 'public', 'events', file))) events.set(e.name, e);
+  for (const [name, url] of before) {
+    if (!after.has(name)) problems.push(`${name}: its existing image_url was removed`);
+    else if (after.get(name) !== url)
+      problems.push(`${name}: its existing image_url was rewritten to ${after.get(name)}`);
+  }
+  for (const name of after.keys()) {
+    if (!before.has(name) && !uploads[name])
+      problems.push(`${name}: gained an image_url, but is not one of this deck's uploads`);
   }
   for (const [slug, u] of Object.entries(uploads)) {
-    const url = (events.get(slug) || {}).image_url || '';
+    const url = after.get(slug) || '';
     const publicId = url.split('/').pop().split('?')[0];
     if (!url) problems.push(`${slug}: no image_url`);
     else if (publicId !== u.public_id)
@@ -248,9 +251,41 @@ function verifyUrls(deck) {
     else if (stemOf(publicId) !== slug)
       problems.push(`${slug}: public_id stem is ${stemOf(publicId)}`);
   }
+  return problems;
+}
+
+function verifyUrls(deck) {
+  const dir = path.join(DECKS_DIR, deck);
+  const uploads = fs.existsSync(path.join(dir, 'uploads.json'))
+    ? readJson(path.join(dir, 'uploads.json'))
+    : {};
+
+  // Everything this deck branch changed in the catalogue, committed or not, measured from where
+  // it left main. A resumed ship has already committed its URLs, so the working-tree diff alone
+  // would count none of them.
+  const git = (args) =>
+    execFileSync('git', args, { cwd: REPO_ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  const base = git(['merge-base', 'HEAD', process.env.FACTORY_BASE_REF || 'origin/main']).trim();
+  // Every event file, deprecated.json included, so a retired card's URL is not read as removed.
+  const isEventFile = (f) => f.endsWith('.json') && f !== 'manifest.json';
+  const before = imageUrls(
+    git(['ls-tree', '--name-only', `${base}:public/events`])
+      .split('\n')
+      .filter(isEventFile)
+      .map((f) => JSON.parse(git(['show', `${base}:public/events/${f}`])))
+  );
+  const eventsDir = path.join(REPO_ROOT, 'public', 'events');
+  const after = imageUrls(
+    fs
+      .readdirSync(eventsDir)
+      .filter(isEventFile)
+      .map((f) => readJson(path.join(eventsDir, f)))
+  );
+
+  const problems = urlProblems(before, after, uploads);
   if (problems.length) throw new Error(`URL check failed:\n  ${problems.join('\n  ')}`);
   console.log(
-    `URL check passed: ${expected} new image_url line(s), none removed, every stem its slug`
+    `URL check passed: ${Object.keys(uploads).length} new image_url(s), none removed or rewritten, every stem its slug`
   );
 }
 
@@ -263,4 +298,4 @@ async function main() {
 
 if (require.main === module) run(main);
 
-module.exports = { planUploads, stemOf };
+module.exports = { imageUrls, planUploads, stemOf, urlProblems };
