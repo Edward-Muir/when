@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T20:13:07.395Z",
+  "updated_at": "2026-11-12T20:16:34.305Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-12T20:13:07.395Z"
     },
     "alauddin-khalji-seizes-delhi": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a77d8335797cdc75d675bcbe8288d050d2f4a83de90b12a144bdeed1a81dc4fb",
+      "updated_at": "2026-11-12T20:16:34.305Z"
     },
     "alauddin-khalji-takes-chittor": {
       "state": "pending",
