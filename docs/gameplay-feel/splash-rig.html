@@ -1,0 +1,1215 @@
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Splash Rig</title>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+>
+<style>
+  /* Layout: the board on the left at phone scale, a quiet control column on the right.
+     Palette and type are the game's own (src/index.css), so the mock reads as the real board. */
+  :root {
+    --bg: #f0f0f0;
+    --surface: #f5f5f5;
+    --panel: #e7e7e5;
+    --text: #001524;
+    --muted: #4a5568;
+    --border: #c8c8c8;
+    --accent: #b8860b;
+    --success: #6aaa64;
+    --on-accent: #ffffff;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: Inter, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'DM Mono', ui-monospace, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+      --bg: #0d1b2a;
+      --surface: #1b2838;
+      --panel: #142233;
+      --text: #e4e4e4;
+      --muted: #94a3b8;
+      --border: #2d3f50;
+      --accent: #d4a84b;
+      --success: #7abf70;
+      --on-accent: #0d1b2a;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme='dark'] {
+    --bg: #0d1b2a;
+    --surface: #1b2838;
+    --panel: #142233;
+    --text: #e4e4e4;
+    --muted: #94a3b8;
+    --border: #2d3f50;
+    --accent: #d4a84b;
+    --success: #7abf70;
+    --on-accent: #0d1b2a;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-block: 28px 56px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-size: 30px;
+    line-height: 1.15;
+    margin: 0;
+    text-wrap: balance;
+  }
+  h2 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    max-width: 65ch;
+  }
+  .lede {
+    color: var(--muted);
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+    gap: 28px;
+    align-items: start;
+  }
+  @media (max-width: 820px) {
+    .work {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  /* ---------- Stage ---------- */
+  .stage {
+    min-width: 0;
+    display: grid;
+    gap: 16px;
+    justify-content: center;
+    grid-template-columns: minmax(0, 360px);
+  }
+  .stage.compare {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-content: stretch;
+  }
+  @media (max-width: 1000px) {
+    .stage.compare {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 820px) {
+    .stage:not(.compare) {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 5;
+      background: var(--bg);
+      padding-block: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .stage:not(.compare) .cell {
+      align-items: center;
+    }
+  }
+  .cell {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .cell-name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .cell-metric {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .scaler {
+    position: relative;
+  }
+
+  /* ---------- Board mock: the real row anatomy, in unscaled px ---------- */
+  .board {
+    --fx: var(--success);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 360px;
+    height: 640px;
+    transform-origin: 0 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .board.gold {
+    --fx: var(--accent);
+  }
+  .rail {
+    position: absolute;
+    left: 96px;
+    top: 12px;
+    width: 4px;
+    height: 616px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+  .rows {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12px;
+  }
+  .row {
+    height: 88px;
+    display: flex;
+    align-items: center;
+  }
+  .row-in {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    will-change: transform;
+  }
+  .gutter {
+    width: 96px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .year {
+    font: 700 14px/1.2 var(--font-mono);
+    padding-right: 8px;
+    color: var(--text);
+    transform-origin: 100% 50%;
+  }
+  .tick {
+    width: 12px;
+    height: 4px;
+    background: var(--accent);
+    flex: none;
+    transform-origin: 100% 50%;
+  }
+  .slot {
+    padding-left: 12px;
+  }
+  .card {
+    position: relative;
+    width: 240px;
+    height: 80px;
+    will-change: transform;
+  }
+  .face {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+  }
+  .art {
+    position: absolute;
+    inset: 0 30% 0 0;
+    background:
+      radial-gradient(circle at 30% 40%, rgb(255 255 255 / 0.34), transparent 46%),
+      radial-gradient(circle at 62% 78%, rgb(0 0 0 / 0.3), transparent 52%),
+      radial-gradient(circle at 12% 88%, rgb(255 255 255 / 0.16), transparent 40%);
+    -webkit-mask-image: linear-gradient(90deg, #000 50%, transparent);
+    mask-image: linear-gradient(90deg, #000 50%, transparent);
+  }
+  .title {
+    position: absolute;
+    inset: 0 0 0 48%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4px 16px 4px 4px;
+    font: 400 14px/1.25 var(--font-body);
+    text-align: right;
+    color: rgb(255 255 255 / 0.92);
+    text-shadow: 0 1px 3px rgb(0 0 0 / 0.7);
+  }
+  .glow,
+  .lift,
+  .ring {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .glow {
+    box-shadow: 0 0 22px 10px color-mix(in srgb, var(--fx) 55%, transparent);
+  }
+  .lift {
+    box-shadow: 0 14px 26px rgb(0 0 0 / 0.32);
+  }
+  .ring {
+    border: 2px solid var(--fx);
+    box-sizing: border-box;
+  }
+  .fx {
+    position: absolute;
+    inset: 0;
+    width: 360px;
+    height: 640px;
+    pointer-events: none;
+  }
+  .clock {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    font: 500 11px var(--font-mono);
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    background: var(--bg);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+  /* ---------- Controls ---------- */
+  .panel {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .opts {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .opt {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    min-height: 44px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+  }
+  .opt b {
+    font-weight: 600;
+  }
+  .opt span {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .opt[aria-pressed='true'] {
+    border-color: var(--accent);
+    box-shadow: inset 0 0 0 1px var(--accent);
+  }
+  .seg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .seg button,
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0 14px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font: 500 14px var(--font-body);
+    cursor: pointer;
+  }
+  .seg button[aria-pressed='true'] {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+  }
+  .btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--on-accent);
+    font-weight: 600;
+  }
+  button:focus-visible,
+  input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .slider {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 2px 10px;
+    align-items: center;
+    font-size: 13px;
+  }
+  .slider output {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+  }
+  .slider input {
+    grid-column: 1 / -1;
+    width: 100%;
+    accent-color: var(--accent);
+    min-height: 28px;
+  }
+  .note {
+    font-size: 13px;
+    color: var(--muted);
+  }
+  pre {
+    margin: 0;
+    padding: 10px 12px;
+    background: var(--panel);
+    border-radius: 8px;
+    font: 12px/1.5 var(--font-mono);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  .why {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  .why ul {
+    margin: 0;
+    padding-left: 20px;
+    max-width: 70ch;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+</style>
+
+<div class="page">
+  <header>
+    <h1>Splash Rig</h1>
+    <p class="lede">
+      A correct placement, played four ways on a mock of the board: today's ripple and three
+      replacements. Slow it down, raise the streak, drag the sliders, then pick one.
+    </p>
+  </header>
+
+  <div class="work">
+    <div class="stage" id="stage"></div>
+
+    <div class="panel">
+      <div class="group">
+        <h2>Animation</h2>
+        <div class="opts" id="opts"></div>
+      </div>
+
+      <div class="group">
+        <div class="seg">
+          <button class="btn primary" id="play" type="button">Place card</button>
+          <button class="btn" id="compare" type="button" aria-pressed="false">Compare all four</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h2>Streak</h2>
+        <div class="seg" id="tiers"></div>
+      </div>
+
+      <div class="group">
+        <h2>Speed</h2>
+        <div class="seg" id="speeds"></div>
+      </div>
+
+      <div class="group">
+        <h2>View</h2>
+        <div class="seg">
+          <button id="reduced" type="button" aria-pressed="false">Reduced motion</button>
+          <button id="theme" type="button">Switch theme</button>
+        </div>
+      </div>
+
+      <div class="group" id="tuneGroup">
+        <h2>Fine-tune <span id="tuneName"></span></h2>
+        <div class="sliders" id="sliders"></div>
+        <p class="note" id="tuneNote"></p>
+        <pre id="values"></pre>
+        <div class="seg">
+          <button class="btn" id="copy" type="button">Copy values</button>
+          <button class="btn" id="reset" type="button">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="why">
+    <h2>Why today's ripple does not read as a splash</h2>
+    <ul>
+      <li>
+        The wave moves one row every 200 ms, so the third row out starts moving 600 ms after the
+        card lands. A splash front is several times faster.
+      </li>
+      <li>
+        Every row is pushed down, including the rows above the card. Water moves away from the
+        impact: rows above should lift and rows below should sink.
+      </li>
+      <li>
+        The card itself slides up into place and never dips, so nothing appears to cause the wave.
+      </li>
+      <li>
+        Each row then rings on its own soft spring for about two seconds, which reads as jelly.
+      </li>
+    </ul>
+    <p class="note">
+      The rig shows the board motion only. Confetti, the screen-edge pulse and haptics are
+      unchanged and are left out here so the wave is easy to judge.
+    </p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    'use strict';
+
+    /* ---------- Board data (a correct placement of the 4th card) ---------- */
+    var EVENTS = [
+      { year: '1215', title: 'Magna Carta is sealed', color: '#7a5c3a' },
+      { year: '1492', title: 'Columbus reaches the Bahamas', color: '#1f5f7a' },
+      { year: '1687', title: 'Newton publishes the Principia', color: '#3d4a6b' },
+      { year: '1789', title: 'Storming of the Bastille', color: '#8a2f2f' },
+      { year: '1869', title: 'First US transcontinental railroad', color: '#55683a' },
+      { year: '1929', title: 'Wall Street Crash', color: '#4a4a4f' },
+      { year: '1969', title: 'Apollo 11 lands on the Moon', color: '#1b2a4a' },
+    ];
+    var PLACED = 3;
+    var ROW_H = 88;
+    var PAD = 12;
+    var W = 360;
+    var H = 640;
+    var CY = PAD + PLACED * ROW_H + ROW_H / 2;
+    var RAIL_X = 98;
+    var T_START = -0.45;
+    var T_END = 2.6;
+    var TIER_MULT = [1, 1.2, 1.4, 1.6];
+    var TIER_LABEL = ['1', '×2', '×4', '×6'];
+
+    /* ---------- Maths shared by every option ---------- */
+    function clamp01(x) {
+      return x < 0 ? 0 : x > 1 ? 1 : x;
+    }
+    function easeOut(x) {
+      return 1 - (1 - x) * (1 - x);
+    }
+    function easeIn(x) {
+      return x * x;
+    }
+    /* One damped pulse: out, a single rebound crest, still. Peak normalised to 1. */
+    function pulse(tau, freq, decay) {
+      if (tau <= 0) return 0;
+      var w = 2 * Math.PI * freq;
+      var tp = Math.atan2(w, decay) / w;
+      var peak = Math.exp(-decay * tp) * Math.sin(w * tp);
+      return (Math.exp(-decay * tau) * Math.sin(w * tau)) / peak;
+    }
+    /* A spring released from 1 towards 0, as framer-motion would play it. */
+    function springDown(tau, k, c, m) {
+      if (tau <= 0) return 1;
+      var w0 = Math.sqrt(k / m);
+      var z = c / (2 * Math.sqrt(k * m));
+      if (z >= 1) return Math.exp(-w0 * tau) * (1 + w0 * tau);
+      var wd = w0 * Math.sqrt(1 - z * z);
+      return Math.exp(-z * w0 * tau) * (Math.cos(wd * tau) + ((z * w0) / wd) * Math.sin(wd * tau));
+    }
+    /* The held card before release, then its fall onto the rail over `lead` seconds. */
+    function fall(t, lead) {
+      if (t < -lead || lead === 0) return { x: 8, y: -10, s: 1.06, lift: 1 };
+      var p = easeIn((t + lead) / lead);
+      return { x: 8 * (1 - p), y: -10 * (1 - p), s: 1.06 - 0.06 * p, lift: 1 - p };
+    }
+    function glowEnv(t, rise, fade) {
+      if (t <= 0) return 0;
+      if (t < rise) return t / rise;
+      var f = 1 - (t - rise) / fade;
+      return f > 0 ? f * f : 0;
+    }
+    function reach(P, tier) {
+      return P.half * (1 + 0.2 * tier);
+    }
+
+    /* ---------- The options. Each is pure: (time, params, tier) -> offsets ---------- */
+    var OPTIONS = {
+      current: {
+        name: 'Current',
+        blurb: 'What ships today, for reference.',
+        lead: 0,
+        schema: [],
+        card: function (t) {
+          if (t < 0) return fall(t, 0);
+          var p = clamp01(t / 0.25);
+          return {
+            y: 20 * (1 - easeOut(p)),
+            s: 1 - 0.05 * springDown(t, 400, 25, 1),
+            o: p,
+            glow: t < 0.6 ? Math.sin((Math.PI * t) / 0.6) : 0,
+          };
+        },
+        row: function (d, side, t, P, tier) {
+          var tau = t - d * 0.2;
+          if (tau <= 0) return { y: 0 };
+          var a = 6 * Math.pow(0.5, d - 1) * TIER_MULT[tier];
+          if (tau < 0.15) return { y: a * easeOut(tau / 0.15) };
+          return { y: a * springDown(tau - 0.15, 150, 4, 1) };
+        },
+        year: function (t) {
+          return { s: 1 + 0.3 * Math.sin(Math.PI * clamp01(t / 0.4)) };
+        },
+      },
+
+      plunge: {
+        name: 'A. Plunge',
+        blurb: 'The card sinks into the rail and shoves its neighbours apart. One crest, then still.',
+        lead: 0.11,
+        schema: [
+          ['front', 'Wave front', 20, 200, 5, ' ms/row', 55],
+          ['amp', 'Push at the nearest row', 0, 20, 0.5, ' px', 9],
+          ['half', 'Reach (halves every)', 0.5, 4, 0.1, ' rows', 1.3],
+          ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 2.6],
+          ['decay', 'Settling', 2, 16, 0.5, '', 7],
+          ['plunge', 'Card sink depth', 0, 14, 0.5, ' px', 6],
+          ['squash', 'Card squash', 0, 12, 0.5, ' %', 5],
+        ],
+        card: function (t, P, tier) {
+          if (t < 0) return fall(t, this.lead);
+          var m = TIER_MULT[tier];
+          var pc = pulse(t, P.freq * 0.85, P.decay * 1.1);
+          var q = (P.squash / 100) * pc * m;
+          return { y: P.plunge * m * pc, sx: 1 + q * 0.5, sy: 1 - q, glow: glowEnv(t, 0.07, 0.5) };
+        },
+        row: function (d, side, t, P, tier) {
+          var tau = t - ((d - 1) * P.front) / 1000;
+          var a = P.amp * TIER_MULT[tier] * Math.pow(0.5, (d - 1) / reach(P, tier));
+          return { y: side * a * pulse(tau, P.freq, P.decay) };
+        },
+        year: function (t) {
+          return { s: 1 + 0.35 * (1 - easeOut(clamp01(t / 0.28))) };
+        },
+      },
+
+      shock: {
+        name: 'B. Shockwave',
+        blurb: 'A bright pulse runs up and down the rail; each row kicks and its year lights as it passes.',
+        lead: 0.09,
+        schema: [
+          ['front', 'Wave front', 20, 200, 5, ' ms/row', 45],
+          ['slow', 'Front slows by', 0, 30, 1, ' ms/row²', 8],
+          ['amp', 'Kick at the nearest row', 0, 20, 0.5, ' px', 7],
+          ['half', 'Reach (halves every)', 0.5, 5, 0.1, ' rows', 2.2],
+          ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 3],
+          ['decay', 'Settling', 2, 16, 0.5, '', 9],
+          ['ring', 'Pulse brightness', 0, 1.5, 0.05, '', 1],
+        ],
+        delay: function (d, P) {
+          return (d * P.front + d * d * P.slow) / 1000;
+        },
+        /* Rows travelled by the front at time t: the inverse of delay(). */
+        frontAt: function (t, P) {
+          var ms = t * 1000;
+          if (ms <= 0) return 0;
+          if (P.slow < 0.01) return ms / P.front;
+          return (-P.front + Math.sqrt(P.front * P.front + 4 * P.slow * ms)) / (2 * P.slow);
+        },
+        card: function (t, P, tier) {
+          if (t < 0) return fall(t, this.lead);
+          var pc = pulse(t, 3.2, 11);
+          var r = clamp01(t / 0.45);
+          var r2 = tier >= 2 ? clamp01((t - 0.12) / 0.45) : 0;
+          return {
+            y: 2 * pc,
+            s: 1 + 0.03 * pc,
+            glow: glowEnv(t, 0.05, 0.4),
+            ring: { s: 1 + 0.2 * easeOut(r), o: (1 - r) * Math.min(1, P.ring) },
+            ring2: r2 > 0 ? { s: 1 + 0.3 * easeOut(r2), o: (1 - r2) * 0.6 * Math.min(1, P.ring) } : null,
+          };
+        },
+        row: function (d, side, t, P, tier) {
+          var tau = t - this.delay(d, P);
+          var fade = Math.pow(0.5, (d - 1) / reach(P, tier));
+          var x = tau / 0.09;
+          return {
+            y: side * P.amp * TIER_MULT[tier] * fade * pulse(tau, P.freq, P.decay),
+            flash: Math.exp(-x * x) * fade * Math.min(1, P.ring),
+          };
+        },
+        year: function (t) {
+          return { s: 1 + 0.35 * (1 - easeOut(clamp01(t / 0.28))) };
+        },
+        fx: function (ctx, t, P, tier, color) {
+          var self = this;
+          function bead(tt, strength) {
+            if (tt <= 0) return;
+            var D = self.frontAt(tt, P);
+            var a = strength * P.ring * Math.pow(0.5, D / (reach(P, tier) * 1.6));
+            if (a < 0.02) return;
+            [-1, 1].forEach(function (side) {
+              var y = CY + side * D * ROW_H;
+              if (y < -30 || y > H + 30) return;
+              ctx.globalAlpha = Math.min(1, a);
+              ctx.shadowColor = color;
+              ctx.shadowBlur = 16;
+              ctx.fillStyle = color;
+              ctx.beginPath();
+              ctx.ellipse(RAIL_X, y, 5, 17, 0, 0, Math.PI * 2);
+              ctx.fill();
+              ctx.shadowBlur = 0;
+              ctx.fillStyle = '#ffffff';
+              ctx.globalAlpha = Math.min(1, a) * 0.8;
+              ctx.beginPath();
+              ctx.ellipse(RAIL_X, y, 2, 10, 0, 0, Math.PI * 2);
+              ctx.fill();
+            });
+          }
+          bead(t, 1);
+          if (tier >= 2) bead(t - 0.12, 0.65);
+        },
+      },
+
+      droplets: {
+        name: 'C. Splash and droplets',
+        blurb: "A's plunge, plus beads thrown off the rail that arc out and fall back.",
+        lead: 0.11,
+        schema: [
+          ['front', 'Wave front', 20, 200, 5, ' ms/row', 55],
+          ['amp', 'Push at the nearest row', 0, 20, 0.5, ' px', 10],
+          ['half', 'Reach (halves every)', 0.5, 4, 0.1, ' rows', 1.3],
+          ['freq', 'Rebound rate', 1, 6, 0.1, ' Hz', 2.6],
+          ['decay', 'Settling', 2, 16, 0.5, '', 7],
+          ['plunge', 'Card sink depth', 0, 14, 0.5, ' px', 7],
+          ['squash', 'Card squash', 0, 12, 0.5, ' %', 6],
+          ['drops', 'Droplets', 0, 40, 1, '', 10],
+          ['speed', 'Droplet speed', 100, 600, 10, ' px/s', 300],
+          ['gravity', 'Droplet gravity', 0, 2000, 50, ' px/s²', 900],
+        ],
+        card: function (t, P, tier) {
+          var c = OPTIONS.plunge.card.call(this, t, P, tier);
+          if (t >= 0) {
+            var r = clamp01(t / 0.3);
+            c.ring = { s: 1 + 0.1 * easeOut(r), o: 1 - r };
+          }
+          return c;
+        },
+        row: function (d, side, t, P, tier) {
+          return OPTIONS.plunge.row(d, side, t, P, tier);
+        },
+        year: function (t) {
+          return OPTIONS.plunge.year(t);
+        },
+        makeDrops: function (P, tier) {
+          var n = Math.round(P.drops * [1, 1.4, 2, 2.8][tier]);
+          var seed = 0x9e3779b9;
+          function rnd() {
+            seed |= 0;
+            seed = (seed + 0x6d2b79f5) | 0;
+            var x = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+            x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x;
+            return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
+          }
+          var out = [];
+          for (var i = 0; i < n; i++) {
+            /* Two fans, one off each edge of the card, thrown away from the impact. */
+            var up = i % 3 !== 2;
+            var ang = (up ? -1 : 1) * (0.25 + rnd() * 2.64);
+            var sp = P.speed * (0.45 + rnd() * 0.75) * (up ? 1 : 0.6) * (1 + 0.12 * tier);
+            out.push({
+              x0: RAIL_X + (rnd() - 0.3) * 30,
+              y0: CY + (up ? -34 : 34),
+              vx: Math.cos(ang) * sp,
+              vy: Math.sin(ang) * sp,
+              r: 1.8 + rnd() * 2.6,
+              life: 0.42 + rnd() * 0.36,
+              t0: rnd() * 0.04,
+            });
+          }
+          return out;
+        },
+        fx: function (ctx, t, P, tier, color, drops) {
+          if (t <= 0) return;
+          /* Rail flare at the point of impact. */
+          var f = 1 - clamp01(t / 0.32);
+          if (f > 0) {
+            ctx.globalAlpha = f;
+            ctx.shadowColor = color;
+            ctx.shadowBlur = 14;
+            ctx.fillStyle = color;
+            ctx.fillRect(RAIL_X - 2 - 2 * f, CY - 46, 4 + 4 * f, 92);
+            ctx.shadowBlur = 0;
+          }
+          ctx.fillStyle = color;
+          for (var i = 0; i < drops.length; i++) {
+            var d = drops[i];
+            var age = t - d.t0;
+            if (age <= 0 || age >= d.life) continue;
+            var k = age / d.life;
+            ctx.globalAlpha = 1 - k * k;
+            ctx.beginPath();
+            ctx.arc(
+              d.x0 + d.vx * age,
+              d.y0 + d.vy * age + 0.5 * P.gravity * age * age,
+              d.r * (1 - 0.55 * k),
+              0,
+              Math.PI * 2
+            );
+            ctx.fill();
+          }
+        },
+      },
+    };
+    var ORDER = ['current', 'plunge', 'shock', 'droplets'];
+
+    function defaults(id) {
+      var P = {};
+      OPTIONS[id].schema.forEach(function (f) {
+        P[f[0]] = f[6];
+      });
+      return P;
+    }
+    var PARAMS = {};
+    ORDER.forEach(function (id) {
+      PARAMS[id] = defaults(id);
+    });
+
+    /* When the third row out starts to move, and when the whole board is still again. */
+    function metrics(id, tier) {
+      var opt = OPTIONS[id];
+      var P = PARAMS[id];
+      var first = null;
+      var last = 0;
+      for (var t = 0; t <= 3; t += 0.005) {
+        var y3 = Math.abs(opt.row(3, 1, t, P, tier).y);
+        if (first === null && y3 > 0.25) first = t;
+        var m = Math.abs(opt.card(t, P, tier).y || 0);
+        for (var d = 1; d <= 3; d++) m = Math.max(m, Math.abs(opt.row(d, 1, t, P, tier).y));
+        if (m > 0.3) last = t;
+      }
+      return (
+        'row 3 moves at ' +
+        (first === null ? '–' : Math.round(first * 1000) + ' ms') +
+        ' · still by ' +
+        Math.round(last * 100) * 10 +
+        ' ms'
+      );
+    }
+
+    /* ---------- State ---------- */
+    var state = { opt: 'plunge', tier: 0, speed: 1, reduced: false, compare: false };
+    var boards = [];
+    var stage = document.getElementById('stage');
+
+    function el(tag, cls, text) {
+      var n = document.createElement(tag);
+      if (cls) n.className = cls;
+      if (text !== undefined) n.textContent = text;
+      return n;
+    }
+
+    function Board(id) {
+      this.id = id;
+      this.t = T_END;
+      this.playing = false;
+      this.drops = [];
+      this.cell = el('div', 'cell');
+      this.nameEl = el('div', 'cell-name', OPTIONS[id].name);
+      this.metricEl = el('div', 'cell-metric');
+      this.scaler = el('div', 'scaler');
+      this.board = el('div', 'board');
+      this.board.appendChild(el('div', 'rail'));
+      var rows = el('div', 'rows');
+      this.rows = [];
+      for (var i = 0; i < EVENTS.length; i++) {
+        var e = EVENTS[i];
+        var row = el('div', 'row');
+        var inner = el('div', 'row-in');
+        var gutter = el('div', 'gutter');
+        var year = el('span', 'year', e.year);
+        var tick = el('span', 'tick');
+        gutter.appendChild(year);
+        gutter.appendChild(tick);
+        var slot = el('div', 'slot');
+        var card = el('div', 'card');
+        var face = el('div', 'face');
+        face.style.backgroundColor = e.color;
+        face.appendChild(el('div', 'art'));
+        face.appendChild(el('div', 'title', e.title));
+        var r = { inner: inner, year: year, tick: tick, card: card };
+        if (i === PLACED) {
+          r.lift = el('div', 'lift');
+          r.glow = el('div', 'glow');
+          r.ring = el('div', 'ring');
+          r.ring2 = el('div', 'ring');
+          card.appendChild(r.lift);
+          card.appendChild(r.glow);
+          card.appendChild(face);
+          card.appendChild(r.ring);
+          card.appendChild(r.ring2);
+        } else {
+          card.appendChild(face);
+        }
+        slot.appendChild(card);
+        inner.appendChild(gutter);
+        inner.appendChild(slot);
+        row.appendChild(inner);
+        rows.appendChild(row);
+        this.rows.push(r);
+      }
+      this.board.appendChild(rows);
+      this.canvas = el('canvas', 'fx');
+      var dpr = Math.min(2, window.devicePixelRatio || 1);
+      this.canvas.width = W * dpr;
+      this.canvas.height = H * dpr;
+      this.ctx = this.canvas.getContext('2d');
+      this.ctx.scale(dpr, dpr);
+      this.board.appendChild(this.canvas);
+      this.clock = el('div', 'clock');
+      this.board.appendChild(this.clock);
+      this.scaler.appendChild(this.board);
+      this.cell.appendChild(this.nameEl);
+      this.cell.appendChild(this.scaler);
+      this.cell.appendChild(this.metricEl);
+    }
+    Board.prototype.setOption = function (id) {
+      this.id = id;
+      this.nameEl.textContent = OPTIONS[id].name;
+      this.refresh();
+    };
+    Board.prototype.refresh = function () {
+      this.metricEl.textContent = metrics(this.id, state.tier);
+      this.board.classList.toggle('gold', state.tier >= 2);
+      this.color = getComputedStyle(this.board).getPropertyValue('--fx').trim() || '#6aaa64';
+      if (!this.playing) this.render();
+    };
+    Board.prototype.fit = function () {
+      var s = Math.min(1, this.cell.clientWidth / W);
+      /* On a phone the single board is pinned above the controls, so keep it to half the screen. */
+      if (!state.compare && window.innerWidth <= 820) s = Math.min(s, (window.innerHeight * 0.5) / H);
+      this.board.style.transform = 'scale(' + s + ')';
+      this.scaler.style.width = W * s + 'px';
+      this.scaler.style.height = H * s + 'px';
+    };
+    Board.prototype.play = function () {
+      var opt = OPTIONS[this.id];
+      this.t = T_START;
+      this.playing = true;
+      this.color = getComputedStyle(this.board).getPropertyValue('--fx').trim() || '#6aaa64';
+      this.drops = opt.makeDrops ? opt.makeDrops(PARAMS[this.id], state.tier) : [];
+    };
+    Board.prototype.render = function () {
+      var opt = OPTIONS[this.id];
+      var P = PARAMS[this.id];
+      var t = this.t;
+      var tier = state.tier;
+      var still = state.reduced;
+      for (var i = 0; i < this.rows.length; i++) {
+        var r = this.rows[i];
+        if (i === PLACED) continue;
+        var d = Math.abs(i - PLACED);
+        var st = t > 0 && !still ? opt.row(d, i < PLACED ? -1 : 1, t, P, tier) : { y: 0 };
+        r.inner.style.transform = 'translateY(' + st.y.toFixed(2) + 'px)';
+        var fl = st.flash || 0;
+        r.tick.style.transform = fl > 0.01 ? 'scaleX(' + (1 + 0.9 * fl).toFixed(3) + ')' : '';
+        r.year.style.color =
+          fl > 0.01
+            ? 'color-mix(in srgb, var(--fx) ' + Math.round(fl * 100) + '%, var(--text))'
+            : '';
+      }
+      var pr = this.rows[PLACED];
+      var c = opt.card(t, P, tier);
+      var sx = c.sx || c.s || 1;
+      var sy = c.sy || c.s || 1;
+      var x = c.x || 0;
+      var y = c.y || 0;
+      var o = c.o === undefined ? 1 : c.o;
+      if (still) {
+        if (t >= 0) {
+          x = 0;
+          y = 0;
+          sx = 1;
+          sy = 1;
+          o = 1;
+        }
+      }
+      pr.card.style.transform =
+        'translate(' + x.toFixed(2) + 'px,' + y.toFixed(2) + 'px) scale(' + sx.toFixed(4) + ',' + sy.toFixed(4) + ')';
+      pr.card.style.opacity = o;
+      pr.lift.style.opacity = t < 0 ? c.lift || 0 : 0;
+      pr.glow.style.opacity = c.glow || 0;
+      [
+        [pr.ring, c.ring],
+        [pr.ring2, c.ring2],
+      ].forEach(function (pair) {
+        var ring = still ? null : pair[1];
+        pair[0].style.opacity = ring ? ring.o : 0;
+        pair[0].style.transform = ring ? 'scale(' + ring.s.toFixed(3) + ',' + (1 + (ring.s - 1) * 3).toFixed(3) + ')' : '';
+      });
+      var yr = t >= 0 ? opt.year(t) : null;
+      pr.year.style.opacity = yr ? 1 : 0;
+      pr.year.style.transform = yr && !still ? 'scale(' + yr.s.toFixed(3) + ')' : '';
+      pr.tick.style.opacity = t >= 0 ? 1 : 0.35;
+
+      this.ctx.clearRect(0, 0, W, H);
+      if (opt.fx && !still && t > 0) {
+        this.ctx.save();
+        opt.fx(this.ctx, t, P, tier, this.color, this.drops);
+        this.ctx.restore();
+      }
+      this.clock.textContent = t < 0 ? 'holding' : 't = ' + Math.round(Math.min(t, T_END) * 1000) + ' ms';
+    };
+
+    /* ---------- Loop ---------- */
+    var raf = null;
+    var prev = 0;
+    function tick(now) {
+      var dt = Math.min(0.05, (now - prev) / 1000) * state.speed;
+      prev = now;
+      var any = false;
+      boards.forEach(function (b) {
+        if (!b.playing) return;
+        b.t += dt;
+        if (b.t >= T_END) {
+          b.t = T_END;
+          b.playing = false;
+        } else {
+          any = true;
+        }
+        b.render();
+      });
+      raf = any ? requestAnimationFrame(tick) : null;
+    }
+    function playAll() {
+      boards.forEach(function (b) {
+        b.play();
+        b.render();
+      });
+      if (raf === null) {
+        prev = performance.now();
+        raf = requestAnimationFrame(tick);
+      }
+    }
+
+    /* ---------- Stage ---------- */
+    function buildStage() {
+      stage.textContent = '';
+      stage.classList.toggle('compare', state.compare);
+      boards = (state.compare ? ORDER : [state.opt]).map(function (id) {
+        var b = new Board(id);
+        stage.appendChild(b.cell);
+        return b;
+      });
+      fitAll();
+      boards.forEach(function (b) {
+        b.refresh();
+      });
+    }
+    function fitAll() {
+      boards.forEach(function (b) {
+        b.fit();
+      });
+    }
+    if (window.ResizeObserver) new ResizeObserver(fitAll).observe(stage);
+    window.addEventListener('resize', fitAll);
+
+    /* ---------- Controls ---------- */
+    function pressed(container, value) {
+      Array.prototype.forEach.call(container.children, function (b) {
+        b.setAttribute('aria-pressed', String(b.dataset.v === String(value)));
+      });
+    }
+    var optsEl = document.getElementById('opts');
+    ORDER.forEach(function (id) {
+      var b = el('button', 'opt');
+      b.type = 'button';
+      b.dataset.v = id;
+      b.appendChild(el('b', '', OPTIONS[id].name));
+      b.appendChild(el('span', '', OPTIONS[id].blurb));
+      b.addEventListener('click', function () {
+        state.opt = id;
+        pressed(optsEl, id);
+        if (!state.compare) boards[0].setOption(id);
+        buildSliders();
+        playAll();
+      });
+      optsEl.appendChild(b);
+    });
+
+    function segment(hostId, values, labels, key) {
+      var host = document.getElementById(hostId);
+      values.forEach(function (v, i) {
+        var b = el('button', '', labels[i]);
+        b.type = 'button';
+        b.dataset.v = v;
+        b.addEventListener('click', function () {
+          state[key] = v;
+          pressed(host, v);
+          boards.forEach(function (bd) {
+            bd.refresh();
+          });
+          playAll();
+        });
+        host.appendChild(b);
+      });
+      pressed(host, state[key]);
+    }
+    segment('tiers', [0, 1, 2, 3], TIER_LABEL, 'tier');
+    segment('speeds', [1, 0.5, 0.25, 0.1], ['1×', '0.5×', '0.25×', '0.1×'], 'speed');
+
+    document.getElementById('play').addEventListener('click', playAll);
+    var compareBtn = document.getElementById('compare');
+    compareBtn.addEventListener('click', function () {
+      state.compare = !state.compare;
+      compareBtn.setAttribute('aria-pressed', String(state.compare));
+      buildStage();
+      playAll();
+    });
+    var reducedBtn = document.getElementById('reduced');
+    reducedBtn.addEventListener('click', function () {
+      state.reduced = !state.reduced;
+      reducedBtn.setAttribute('aria-pressed', String(state.reduced));
+      playAll();
+    });
+    document.getElementById('theme').addEventListener('click', function () {
+      var root = document.documentElement;
+      var dark = root.dataset.theme
+        ? root.dataset.theme === 'dark'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      root.dataset.theme = dark ? 'light' : 'dark';
+      boards.forEach(function (b) {
+        b.refresh();
+      });
+    });
+
+    /* ---------- Sliders ---------- */
+    var slidersEl = document.getElementById('sliders');
+    var valuesEl = document.getElementById('values');
+    var tuneNote = document.getElementById('tuneNote');
+    function showValues() {
+      valuesEl.textContent = JSON.stringify({ option: OPTIONS[state.opt].name, values: PARAMS[state.opt] });
+    }
+    function refreshOption(id) {
+      boards.forEach(function (b) {
+        if (b.id === id) b.refresh();
+      });
+    }
+    function buildSliders() {
+      var id = state.opt;
+      var schema = OPTIONS[id].schema;
+      document.getElementById('tuneName').textContent = OPTIONS[id].name;
+      slidersEl.textContent = '';
+      var empty = schema.length === 0;
+      tuneNote.textContent = empty
+        ? 'Current plays the shipped values, so there is nothing to tune here. Pick A, B or C.'
+        : 'Changes replay when the slider is released.';
+      valuesEl.hidden = empty;
+      document.getElementById('copy').hidden = empty;
+      document.getElementById('reset').hidden = empty;
+      schema.forEach(function (f) {
+        var wrap = el('label', 'slider');
+        var out = el('output', '', PARAMS[id][f[0]] + f[5]);
+        var input = el('input');
+        input.type = 'range';
+        input.id = 'p-' + id + '-' + f[0];
+        input.min = f[2];
+        input.max = f[3];
+        input.step = f[4];
+        input.value = PARAMS[id][f[0]];
+        input.addEventListener('input', function () {
+          PARAMS[id][f[0]] = Number(input.value);
+          out.textContent = input.value + f[5];
+          showValues();
+          refreshOption(id);
+        });
+        input.addEventListener('change', playAll);
+        wrap.appendChild(el('span', '', f[1]));
+        wrap.appendChild(out);
+        wrap.appendChild(input);
+        slidersEl.appendChild(wrap);
+      });
+      showValues();
+    }
+    document.getElementById('reset').addEventListener('click', function () {
+      PARAMS[state.opt] = defaults(state.opt);
+      buildSliders();
+      refreshOption(state.opt);
+      playAll();
+    });
+    var copyBtn = document.getElementById('copy');
+    copyBtn.addEventListener('click', function () {
+      function done(ok) {
+        copyBtn.textContent = ok ? 'Copied' : 'Select and copy above';
+        setTimeout(function () {
+          copyBtn.textContent = 'Copy values';
+        }, 1600);
+      }
+      function fallback() {
+        var range = document.createRange();
+        range.selectNodeContents(valuesEl);
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        done(false);
+      }
+      try {
+        navigator.clipboard.writeText(valuesEl.textContent).then(function () {
+          done(true);
+        }, fallback);
+      } catch (e) {
+        fallback();
+      }
+    });
+
+    /* ---------- Boot ---------- */
+    pressed(optsEl, state.opt);
+    buildStage();
+    buildSliders();
+    setTimeout(playAll, 500);
+  })();
+</script>
