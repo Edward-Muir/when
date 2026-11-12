@@ -488,6 +488,11 @@ Picks up every slug in `downloaded`, whichever art batch produced it. Each slug 
   - The 10 duplicates were left unused on Cloudinary, for Edward to delete.
 - **`--verify-urls` counted only uncommitted changes,** so on a resumed ship it saw none. It now diffs the deck branch from where it left main.
 
+**Two fixes from In Your Pocket, 2026-11-12.** Its ship failed the URL check on every retry for a day, which held Flying Colours behind it and authoring at its cap:
+
+- **`--verify-urls` counted lines, and a merge moves lines.** Merging main into the deck branch moved the 13 Ottoman cards within `themes.json`, so their unchanged `image_url` lines read as 13 removed and 13 added. It now compares the catalogue event by event, against where the branch left main, and names each card at fault.
+- **A replaced asset won its slug back.** Livyatan's art was replaced by hand (`livyatan_bso5rc`), with the old asset queued in `cloudinary_delete_list.json` but still on Cloudinary, and `update-cloudinary-urls.js` wired the old one in again. It now skips every asset on the delete list.
+
 **A deck ships complete, or not at all.** Sweet Tooth's ship got as far as `uploaded` with Ben & Jerry's still `needs-human`: Gemini had refused its scene, "two bearded young men in aprons scooping". No test could have stopped it, because every new card starts without art and the catalogue allows artless cards on purpose (the game hides them). Only publishing would have refused the theme, after Edward had reviewed and merged it. So now:
 
 - **The gate:** `scripts/factory/check-playable.js --deck <id>` fails unless every `deck.json` card is playable (has its Cloudinary art) and no card is `needs-human`. Ship runs it first in its verify step, before the PR.
@@ -507,7 +512,7 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
    - checks the returned etag (an MD5 of the bytes received), then fetches the original back from the CDN, with no transformation, and compares its sha256;
    - records each in `factory/decks/<id>/uploads.json`, so a re-run skips what is done, and moves the deck to `uploaded`.
 2. **Write URLs:** `node scripts/update-cloudinary-urls.js`. Then `cloudinary-upload.js --verify-urls`, which exits non-zero on failure and replaces the two checks done by eye:
-   - no existing `image_url` line removed, and exactly one added per uploaded slug;
+   - no event lost or changed the `image_url` it had on main, and only the uploaded slugs gained one;
    - every URL names its own uploaded public_id, whose stem is the slug.
 3. **Colours:** `python3 scripts/images/extract_colors.py --force --slugs <new slugs>`. This is the local version of `extract_event_colors.py`: it reads the downsampled JPEG on disk, so it needs no download and mints no thumbnail asset ahead of the game.
 4. **Verify:** `CI=true npm test -- --watchAll=false`, `npm run lint`, `npm run typecheck`, `CI=true npm run build`. A failure stops here, with the deck left at `uploaded`.

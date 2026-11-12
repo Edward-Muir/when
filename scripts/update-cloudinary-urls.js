@@ -30,6 +30,8 @@ try {
   process.exit(1);
 }
 
+const { DELETE_LIST } = require('./factory/config');
+
 const EVENTS_DIR = path.join(__dirname, '../public/events');
 const CLOUDINARY_FOLDER = '';
 
@@ -128,6 +130,18 @@ function loadEventFiles() {
 }
 
 /**
+ * The public_ids in cloudinary_delete_list.json, or none when the images folder isn't there
+ */
+function loadDeleteList() {
+  try {
+    return new Set(JSON.parse(fs.readFileSync(DELETE_LIST, 'utf8')).map(entry => entry.public_id));
+  } catch (e) {
+    if (e.code === 'ENOENT') return new Set();
+    throw e;
+  }
+}
+
+/**
  * Main function
  */
 async function main() {
@@ -150,9 +164,18 @@ async function main() {
   // Fetch images from Cloudinary
   const cloudinaryImages = await fetchCloudinaryImages();
 
+  // An asset queued for deletion has been replaced, and stays on Cloudinary until the delete is
+  // approved. It must not win its slug back from the asset that replaced it.
+  const queuedForDeletion = loadDeleteList();
+  let skipped = 0;
+
   // Create a map of event name -> Cloudinary image info
   const imageMap = new Map();
   for (const img of cloudinaryImages) {
+    if (queuedForDeletion.has(img.public_id)) {
+      skipped++;
+      continue;
+    }
     const eventName = extractEventName(img.public_id);
     imageMap.set(eventName, {
       publicId: img.public_id,
@@ -161,6 +184,7 @@ async function main() {
     });
   }
 
+  console.log(`Skipped ${skipped} image(s) queued for deletion\n`);
   console.log('Cloudinary images found:');
   for (const [name, info] of imageMap) {
     console.log(`  ${name} -> ${info.publicId}`);
