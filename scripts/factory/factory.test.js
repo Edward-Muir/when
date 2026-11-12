@@ -993,3 +993,49 @@ describe('cloudinary-upload: never uploads a card twice', () => {
     assert.deepEqual(planUploads(all, uploads), { todo: [], done: ['done'], conflicts: [] });
   });
 });
+
+describe('cloudinary-upload: the URL check compares events, not lines', () => {
+  const { imageUrls, urlProblems } = require('./cloudinary-upload');
+  const url = (id) => `https://res.cloudinary.com/x/image/upload/c_fill/${id}?_a=B`;
+  const old = [
+    { name: 'ankara', image_url: url('ankara_it5oj1') },
+    { name: 'mohacs', image_url: url('mohacs_juku2b') },
+    { name: 'artless' },
+  ];
+  const uploads = { lamp: { public_id: 'lamp_npt7bt' } };
+  const lamp = { name: 'lamp', image_url: url('lamp_npt7bt') };
+
+  it('passes when a merge moved existing events around the new card', () => {
+    const before = imageUrls([old]);
+    const after = imageUrls([[old[2], lamp, old[1]], [old[0]]]);
+    assert.deepEqual(urlProblems(before, after, uploads), []);
+  });
+
+  it('names an existing card whose URL was rewritten or removed', () => {
+    const before = imageUrls([old]);
+    const after = imageUrls([[{ name: 'ankara', image_url: url('ankara_rm7mwi') }, lamp]]);
+    const problems = urlProblems(before, after, uploads);
+    assert.equal(problems.length, 2);
+    assert.match(problems[0], /^ankara: its existing image_url was rewritten/);
+    assert.match(problems[1], /^mohacs: its existing image_url was removed/);
+  });
+
+  it("names a card that gained a URL without being one of the deck's uploads", () => {
+    const after = imageUrls([
+      [...old, lamp, { name: 'artless', image_url: url('artless_abc123') }],
+    ]);
+    assert.match(urlProblems(imageUrls([old]), after, uploads)[0], /^artless: gained an image_url/);
+  });
+
+  it('fails an upload with no URL, or one naming another asset', () => {
+    assert.match(
+      urlProblems(imageUrls([old]), imageUrls([old]), uploads)[0],
+      /^lamp: no image_url/
+    );
+    const other = imageUrls([[...old, { name: 'lamp', image_url: url('lamp_zzzzzz') }]]);
+    assert.match(
+      urlProblems(imageUrls([old]), other, uploads)[0],
+      /names lamp_zzzzzz, not lamp_npt7bt/
+    );
+  });
+});
