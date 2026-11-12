@@ -639,10 +639,10 @@
 
       shock: {
         name: 'B. Shockwave',
-        blurb: 'A bright pulse runs up and down the rail; each row kicks and its year lights as it passes.',
+        blurb: 'A pulse of light runs up and down the rail, and each row kicks as the light reaches it.',
         lead: 0.09,
         schema: [
-          ['front', 'Wave front', 20, 200, 5, ' ms/row', 45],
+          ['front', 'Wave front', 20, 200, 5, ' ms/row', 65],
           ['slow', 'Front slows by', 0, 30, 1, ' ms/row²', 8],
           ['amp', 'Kick at the nearest row', 0, 20, 0.5, ' px', 7],
           ['half', 'Reach (halves every)', 0.5, 5, 0.1, ' rows', 2.2],
@@ -650,33 +650,32 @@
           ['decay', 'Settling', 2, 16, 0.5, '', 9],
           ['ring', 'Pulse brightness', 0, 1.5, 0.05, '', 1],
         ],
+        /* When row d starts to move. */
         delay: function (d, P) {
           return (d * P.front + d * d * P.slow) / 1000;
         },
-        /* Rows travelled by the front at time t: the inverse of delay(). */
+        /* How long after it starts a row is at full kick. The light is timed to this. */
+        peak: function (P) {
+          var w = 2 * Math.PI * P.freq;
+          return Math.atan2(w, P.decay) / w;
+        },
+        /* Rows the light has travelled at time t: the inverse of delay(), shifted by peak(),
+           so the light sits on a row at the moment that row is furthest from rest. */
         frontAt: function (t, P) {
-          var ms = t * 1000;
+          var ms = (t - this.peak(P)) * 1000;
           if (ms <= 0) return 0;
           if (P.slow < 0.01) return ms / P.front;
           return (-P.front + Math.sqrt(P.front * P.front + 4 * P.slow * ms)) / (2 * P.slow);
         },
-        card: function (t, P, tier) {
+        card: function (t, P) {
           if (t < 0) return fall(t, this.lead);
           var pc = pulse(t, 3.2, 11);
-          var r = clamp01(t / 0.45);
-          var r2 = tier >= 2 ? clamp01((t - 0.12) / 0.45) : 0;
-          return {
-            y: 2 * pc,
-            s: 1 + 0.03 * pc,
-            glow: glowEnv(t, 0.05, 0.4),
-            ring: { s: 1 + 0.2 * easeOut(r), o: (1 - r) * Math.min(1, P.ring) },
-            ring2: r2 > 0 ? { s: 1 + 0.3 * easeOut(r2), o: (1 - r2) * 0.6 * Math.min(1, P.ring) } : null,
-          };
+          return { y: 2 * pc, s: 1 + 0.03 * pc, glow: glowEnv(t, 0.07, 0.5) };
         },
         row: function (d, side, t, P, tier) {
           var tau = t - this.delay(d, P);
-          var fade = Math.pow(0.5, (d - 1) / reach(P, tier));
-          var x = tau / 0.09;
+          var fade = Math.pow(0.5, (d - 1) / P.half);
+          var x = (tau - this.peak(P)) / 0.06;
           return {
             y: side * P.amp * TIER_MULT[tier] * fade * pulse(tau, P.freq, P.decay),
             flash: Math.exp(-x * x) * fade * Math.min(1, P.ring),
@@ -686,32 +685,28 @@
           return { s: 1 + 0.35 * (1 - easeOut(clamp01(t / 0.28))) };
         },
         fx: function (ctx, t, P, tier, color) {
-          var self = this;
-          function bead(tt, strength) {
-            if (tt <= 0) return;
-            var D = self.frontAt(tt, P);
-            var a = strength * P.ring * Math.pow(0.5, D / (reach(P, tier) * 1.6));
-            if (a < 0.02) return;
-            [-1, 1].forEach(function (side) {
-              var y = CY + side * D * ROW_H;
-              if (y < -30 || y > H + 30) return;
-              ctx.globalAlpha = Math.min(1, a);
-              ctx.shadowColor = color;
-              ctx.shadowBlur = 16;
-              ctx.fillStyle = color;
-              ctx.beginPath();
-              ctx.ellipse(RAIL_X, y, 5, 17, 0, 0, Math.PI * 2);
-              ctx.fill();
-              ctx.shadowBlur = 0;
-              ctx.fillStyle = '#ffffff';
-              ctx.globalAlpha = Math.min(1, a) * 0.8;
-              ctx.beginPath();
-              ctx.ellipse(RAIL_X, y, 2, 10, 0, 0, Math.PI * 2);
-              ctx.fill();
-            });
-          }
-          bead(t, 1);
-          if (tier >= 2) bead(t - 0.12, 0.65);
+          if (t <= 0) return;
+          var D = this.frontAt(t, P);
+          /* Grows out of the tick while the nearest rows wind up, then fades with distance. */
+          var a = P.ring * clamp01(t / this.peak(P)) * Math.pow(0.5, Math.max(0, D - 1) / (P.half * 1.6));
+          if (a < 0.02) return;
+          [-1, 1].forEach(function (side) {
+            var y = CY + side * D * ROW_H;
+            if (y < -30 || y > H + 30) return;
+            ctx.globalAlpha = Math.min(1, a);
+            ctx.shadowColor = color;
+            ctx.shadowBlur = 16;
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(RAIL_X, y, 5, 17, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            ctx.fillStyle = '#ffffff';
+            ctx.globalAlpha = Math.min(1, a) * 0.8;
+            ctx.beginPath();
+            ctx.ellipse(RAIL_X, y, 2, 10, 0, 0, Math.PI * 2);
+            ctx.fill();
+          });
         },
       },
 
