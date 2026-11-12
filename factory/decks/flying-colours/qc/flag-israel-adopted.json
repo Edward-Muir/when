@@ -1,0 +1,15 @@
+{
+  "slug": "flag-israel-adopted",
+  "description": "An oil painting of a still life in a dark room: a wooden table with a window open at the back, a blue-and-white flag with a blue six-pointed star draped across it, a striped shawl hanging at the left edge, ink pots, and papers with faint scribbled lines.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

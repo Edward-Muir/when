@@ -1,0 +1,15 @@
+{
+  "slug": "flag-philippines-unfurled",
+  "description": "A painted scene of a large wooden building with a carved balcony and lattice windows. A white-blue-red banner with a golden sun and three stars is unfurled from the balcony, with men in white shirts cheering from the windows. Below, a crowd of men in straw hats and white shirts raise their fists, and uniformed men with rifles stand at the front. There is no visible text, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

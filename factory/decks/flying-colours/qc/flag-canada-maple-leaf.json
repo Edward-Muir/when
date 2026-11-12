@@ -1,0 +1,15 @@
+{
+  "slug": "flag-canada-maple-leaf",
+  "description": "A snowy scene in a painterly style. A red, white and red flag with a red maple leaf flies on a tall pole at upper right, blowing against a grey sky. On the left stands a large Gothic stone building with a tall clock tower and a green spire, dusted with snow. In the foreground, a crowd of people in dark winter coats and hats is seen from behind, with uniformed guards in dark coats standing at the pole. Snow falls throughout. No visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

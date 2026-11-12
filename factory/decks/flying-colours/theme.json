@@ -1,0 +1,27 @@
+{
+  "id": "flying-colours",
+  "name": "Flying Colours",
+  "scope": "Yes if it is a country's flag first being raised",
+  "boundary": "Flying Colours: a national flag first raised or adopted; independence itself goes to Flags Come Down, countries' founding moments to Nations of Europe, colonial footholds to Flag Planted.",
+  "neighbours": ["flags-come-down", "nations-of-europe", "colonies-founded"],
+  "grid": {
+    "categories": ["diplomacy", "art"],
+    "eras": ["earlyModern", "industrial", "coldWar"],
+    "regions": ["Global", "Europe"]
+  },
+  "example_beats": [
+    "The Dannebrog falls from the sky at Lyndanisse (1219)",
+    "The first Union Flag (1606)",
+    "The Flag Act adopts the Stars and Stripes (1777)",
+    "France adopts the tricolour (1794)",
+    "Italy's tricolore first flown at Reggio Emilia (1797)",
+    "The Union Flag gains the cross of St Patrick (1801)",
+    "Brazil raises its green and gold flag (1889)",
+    "The Australian flag is first flown (1901)",
+    "Canada raises the Maple Leaf (1965)",
+    "South Africa's new flag (1994)"
+  ],
+  "appeal": 2,
+  "notes": "Famous flags only, dated to when each was first hoisted or officially adopted.",
+  "status": "queued"
+}

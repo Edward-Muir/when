@@ -1,0 +1,15 @@
+{
+  "slug": "flag-south-sudan-raised",
+  "description": "The main subject is a tall grey flagpole with a black, red, green and white flag with a blue triangle and yellow star flying from its top. Below, a dense crowd of dark silhouetted people raises their arms, with small flags among them. The setting is a hazy golden sky with light rays, in an oil-painting style. There is no visible text, frame or border, and nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

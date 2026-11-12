@@ -1,0 +1,15 @@
+{
+  "slug": "flag-nepal-double-pennant",
+  "description": "Main subject is a red flag with a blue border, a white crescent moon on the upper pennant and a white eight-pointed sun on the lower, flying from the peaked roof of a dark wooden pagoda-style temple. Behind it are snow-capped mountains under a stormy grey sky. Painterly oil style, with the scene filling the whole canvas edge to edge. No visible text, letters or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

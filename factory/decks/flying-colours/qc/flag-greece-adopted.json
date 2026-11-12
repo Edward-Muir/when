@@ -1,0 +1,15 @@
+{
+  "slug": "flag-greece-adopted",
+  "description": "A painting of a group of men in white fustanella kilts and embroidered jackets on a rocky shore. The man on the left raises a blue-and-white striped flag with a white cross, and the others around him carry long muskets. Stormy sky, sea at left, no visible text or frame; it fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
