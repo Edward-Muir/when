@@ -7,6 +7,7 @@ import { AnimationTuning, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
 import { sampleShock, shockDurationS } from './shockwave';
+import { useImpact } from './useImpact';
 
 // One scheduled wave bump for this row: Timeline computes when (delay) and how hard
 // (amplitudePx); trigger is a timestamp identifying the wave instance.
@@ -90,16 +91,6 @@ const makeYearPopVariants = (t: AnimationTuning) => ({
 // CSS custom properties, which React's CSSProperties does not know about.
 type CssVars = CSSProperties & Record<`--${string}`, string | number>;
 
-// The placed card's glow: one keyframe, coloured by the streak tier, sized by the streak, and
-// held back until the carried card is seated (`delay`), like the rest of the wave.
-function glowStyle(impact: RippleSpec): CssVars {
-  return {
-    '--shock-color': impact.color ?? 'var(--color-success)',
-    '--shock-glow': impact.glowScale ?? 1,
-    '--shock-land': `${impact.delay}s`,
-  };
-}
-
 // A row the shockwave passes: its year and tick flash as the rail light reaches it.
 function flashStyle(shock: RippleSpec | null): CssVars | undefined {
   if (!shock) return undefined;
@@ -142,24 +133,6 @@ function useEventAnimations(
   };
 }
 
-// The success shockwave: one damped pulse, played as a single linear tween through its samples.
-// A passing row is kicked along `y`; the placed card dips and squashes into the rail.
-function shockKeyframes(
-  kind: 'shock' | 'impact',
-  amplitudePx: number,
-  shock: AnimationTuning['shock']
-) {
-  const pulse = sampleShock(1, shock);
-  const y = pulse.map((p) => p * amplitudePx);
-  if (kind === 'shock') return { y };
-  const squash = 0.012 * amplitudePx;
-  return {
-    y,
-    scaleX: pulse.map((p) => 1 + 0.5 * squash * p),
-    scaleY: pulse.map((p) => 1 - squash * p),
-  };
-}
-
 // Hook for one-shot ripple animation using useAnimate
 function useRippleAnimation(
   ripple: RippleSpec | null,
@@ -185,11 +158,17 @@ function useRippleAnimation(
       return;
     }
     if (kind) {
-      animate(scope.current, shockKeyframes(kind, amplitudePx, shock), {
-        duration: shockDurationS(shock),
-        ease: 'linear',
-        delay,
-      });
+      // The success shockwave: one damped pulse, played as a single linear tween through its
+      // samples. (The placed card's own landing is `useImpact`, not this.)
+      animate(
+        scope.current,
+        { y: sampleShock(amplitudePx, shock) },
+        {
+          duration: shockDurationS(shock),
+          ease: 'linear',
+          delay,
+        }
+      );
       return;
     }
     // The miss wake. Two-phase animation: quick push down, then spring back with oscillations
@@ -230,11 +209,6 @@ function useRippleAnimation(
   return scope;
 }
 
-const NO_GLOW: { className: string; style: CssVars | undefined } = {
-  className: '',
-  style: undefined,
-};
-
 // True from the first render `value` is true, forever. For "this row is the one that just
 // landed", which the game stops saying after the flash phase while other flags (`isNew`) are
 // still set.
@@ -254,13 +228,11 @@ function useRowWaves(
   const impact = ripple?.kind === 'impact' ? ripple : null;
   const shock = ripple?.kind === 'shock' && !shouldReduceMotion ? ripple : null;
   const rippleScope = useRippleAnimation(impact ? null : ripple, shouldReduceMotion, tuning);
-  const impactScope = useRippleAnimation(impact, shouldReduceMotion, tuning);
+  const { wrapperRef, glowRef } = useImpact(impact, shouldReduceMotion, tuning);
   return {
     rippleScope,
-    impactScope,
-    // The glow lasts as long as the impact does, not as long as the flash phase: tied to the
-    // phase it was cut off whenever it outlasted `success.flashMs`.
-    glow: impact ? { className: 'animate-shock-glow', style: glowStyle(impact) } : NO_GLOW,
+    wrapperRef,
+    glowRef,
     shock,
     flash: flashStyle(shock),
     // Re-keyed per wave so the CSS flash restarts on every placement.
@@ -300,7 +272,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
     shouldReduceMotion
   );
 
-  const { rippleScope, impactScope, glow, shock, flash, flashKey } = useRowWaves(
+  const { rippleScope, wrapperRef, glowRef, shock, flash, flashKey } = useRowWaves(
     ripple,
     shouldReduceMotion,
     tuning
@@ -360,19 +332,24 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             lasts a second, so testing `landing` played the entrance late and the card that
             had just landed faded out and slid up again. */}
         <div className={`flex-1 pl-3 ${isNew && !landed ? 'animate-entrance' : ''}`}>
-          <motion.button
-            // What the game-over gallery measures to fly this card's art from. See
-            // `useGalleryTravel`.
-            data-board-card={event.name}
-            onClick={onTap}
-            layoutId={layoutId}
-            ref={impactScope}
-            style={glow.style}
-            exit={isErrorAnimation ? rejectionExit.exit : undefined}
-            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass} ${glow.className}`}
-          >
-            <CardFace event={event} priority={priority} />
-          </motion.button>
+          {/* The landing (`useImpact`) animates this wrapper and the glow behind the card, never
+              the button: nothing React does to the button can then interrupt it. A card that
+              has landed keeps its own layer (`shock-impact`) so the layer is not torn down
+              and repainted when the dip ends, which is where an iPhone blinked the card. */}
+          <div ref={wrapperRef} className={`relative w-fit ${landed ? 'shock-impact' : ''}`}>
+            <div ref={glowRef} aria-hidden className="shock-glow" />
+            <motion.button
+              // What the game-over gallery measures to fly this card's art from. See
+              // `useGalleryTravel`.
+              data-board-card={event.name}
+              onClick={onTap}
+              layoutId={layoutId}
+              exit={isErrorAnimation ? rejectionExit.exit : undefined}
+              className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
+            >
+              <CardFace event={event} priority={priority} />
+            </motion.button>
+          </div>
         </div>
       </motion.div>
     </motion.div>

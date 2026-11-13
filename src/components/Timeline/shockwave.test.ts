@@ -1,5 +1,6 @@
 import { SETTLE_SEATED_MS } from '../HandDragOverlay';
 import { DEFAULT_TUNING, scaleTuning } from './animationTuning';
+import { GLOW_KEYFRAMES, impactKeyframes } from './useImpact';
 import {
   MAX_BUILD_STREAK,
   sampleShock,
@@ -108,5 +109,24 @@ describe('sampleShock', () => {
     expect(shockDurationS(slow)).toBeCloseTo(shockDurationS(shock) * 4);
     const normal = sampleShock(1, shock);
     sampleShock(1, slow).forEach((v, i) => expect(v).toBeCloseTo(normal.at(i) ?? NaN));
+  });
+});
+
+describe("the placed card's landing", () => {
+  // One gesture: it must start and end exactly at rest, or the card jumps at either seam.
+  it('starts and ends at rest', () => {
+    const frames = impactKeyframes(6, shock);
+    const rest = 'translateY(0.00px) scale(1.0000, 1.0000)';
+    expect(frames.at(0)?.transform).toBe(rest);
+    expect(frames.at(-1)?.transform).toBe(rest);
+  });
+
+  it('dips down and squashes, never up first', () => {
+    expect(impactKeyframes(6, shock).at(3)?.transform).toMatch(/^translateY\(\d/);
+  });
+
+  it('glows from nothing back to nothing', () => {
+    expect(GLOW_KEYFRAMES.at(0)?.opacity).toBe(0);
+    expect(GLOW_KEYFRAMES.at(-1)?.opacity).toBe(0);
   });
 });

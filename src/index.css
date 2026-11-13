@@ -477,27 +477,24 @@ input,
    --shock-color (success, or the accent once the streak is golden).
    =========================================== */
 
-/* The placed card: a fast flare that fades over half a second. --shock-glow sizes it and
-   grows with the streak. */
-@keyframes shockGlow {
-  0% {
-    box-shadow: 0 0 0 0 color-mix(in srgb, var(--shock-color) 70%, transparent);
-  }
-  12% {
-    box-shadow: 0 0 calc(22px * var(--shock-glow, 1)) calc(10px * var(--shock-glow, 1))
-      color-mix(in srgb, var(--shock-color) 55%, transparent);
-  }
-  100% {
-    box-shadow: 0 0 calc(26px * var(--shock-glow, 1)) calc(12px * var(--shock-glow, 1))
-      color-mix(in srgb, var(--shock-color) 0%, transparent);
-  }
+/* The placed card's glow: a static shadow on an element behind the card, whose OPACITY
+   useImpact animates. Fading a fixed shadow is compositor work; animating box-shadow itself
+   repaints every frame. --shock-glow sizes it and grows with the streak. */
+.shock-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 0 calc(24px * var(--shock-glow, 1)) calc(11px * var(--shock-glow, 1))
+    color-mix(in srgb, var(--shock-color, var(--color-success)) 55%, transparent);
 }
 
-.animate-shock-glow {
-  --shock-color: var(--color-success);
-  /* --shock-land holds it back until the carried card is seated; the first keyframe is a
-     zero-size shadow, so `backwards` shows nothing early. */
-  animation: shockGlow var(--anim-glow-dur, 0.6s) ease-out var(--shock-land, 0s) backwards;
+/* A card that has landed keeps its own layer for as long as it is on the board. Releasing it
+   when the dip ends is a layer teardown and a repaint, and on iOS that showed as the card
+   blinking after the wave. One small layer per card placed in the current game. */
+.shock-impact {
+  will-change: transform;
 }
 
 /* A row the wave passes: its year takes the wave's colour and its tick reaches toward the

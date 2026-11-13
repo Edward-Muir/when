@@ -414,7 +414,22 @@ Traps:
   ends with the flash phase (600ms) while `isNew` lasts a second, so testing `landing` played
   the entrance late: the card that had just landed faded to nothing and slid up again. Use
   `landed` (`useLatch`).
-- The glow belongs to the `impact` spec, not the flash phase, so it runs to its own end.
+- **The placed card's landing is one gesture that React cannot touch** (`useImpact.ts`). The
+  dip is a `transform` track on a plain wrapper `div` around the card and the glow is an
+  `opacity` track on an element behind it, both Web Animations started in the same tick. The
+  card button itself has no animation, glow class or changing style. It was once four things
+  on the button (the carried card fading out over it, a framer transform animation, a CSS
+  box-shadow animation, and class and style changes from the re-renders at 600ms, 1s and
+  cleanup), each ending at a different moment, and on an iPhone the whole card blinked after
+  the wave. Do not put any of it back on the button.
+- **A landed card keeps its layer** (`.shock-impact`, `will-change: transform`) for as long as
+  it is mounted. Letting the layer go when the dip ends is a teardown and a repaint, the
+  leading suspect for that blink. It costs one small layer per card placed in the current
+  game; revisit only if memory on old phones becomes a problem.
+- **The iPhone blink was never reproduced here.** Only Chromium is installed, and it shows no
+  blink before or after, with touch input and card art present, measured on pixels. The fix
+  was made by removing every seam and then checked on the device. If it returns, isolate it
+  on a phone; do not trust a clean Chromium probe.
 - The year flash restarts by re-keying the year span and the tick per wave. They are siblings,
   so the two keys must differ.
 
@@ -435,8 +450,9 @@ with the streak count itself, through `streakBuild` in `shockwave.ts`.
 | 2    | 4–5    | filled gold + pulse  | golden    | 90       |
 | 3    | 6+     | filled gold + glow   | golden    | 120      |
 
-The glow is one keyframe, `shockGlow`, coloured by `--shock-color` and sized by `--shock-glow`.
-It uses `color-mix()` against the CSS custom properties so it adapts to dark mode. Under
+The glow is a static shadow on `.shock-glow`, an element behind the card, coloured by
+`--shock-color` and sized by `--shock-glow`; `useImpact` fades its opacity in and out. It uses
+`color-mix()` against the CSS custom properties so it adapts to dark mode. Under
 reduced motion the glow stays (it does not move), and the kick, the rail light and the year
 flash do not play.
 
