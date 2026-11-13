@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T07:28:48.322Z",
+  "updated_at": "2026-11-13T07:32:28.227Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-13T07:28:48.322Z"
     },
     "mir-siberian-diamond-pipe": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a54da1b10ffcacce3853a459860ad2fc7bec255db30309839be01b8ccc45eb7f",
+      "updated_at": "2026-11-13T07:32:28.227Z"
     },
     "carlin-trend-gold-discovery": {
       "state": "pending",
