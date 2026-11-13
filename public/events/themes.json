@@ -21561,7 +21561,8 @@
     "regions": [
       "Italy",
       "Spain"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "kutna-hora-silver-strike",
@@ -21572,7 +21573,8 @@
     "difficulty": "hard",
     "regions": [
       "Czechia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "joachimsthal-silver-rush",
@@ -21583,7 +21585,8 @@
     "difficulty": "medium",
     "regions": [
       "Czechia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "zacatecas-silver-strike",
@@ -21595,7 +21598,8 @@
     "regions": [
       "Mexico",
       "Spain"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "minas-gerais-gold-rush",
@@ -21606,7 +21610,8 @@
     "difficulty": "medium",
     "regions": [
       "Brazil"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "brazil-diamonds-discovered",
@@ -21617,7 +21622,8 @@
     "difficulty": "medium",
     "regions": [
       "Brazil"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "berezovsk-first-russian-gold",
@@ -21629,7 +21635,8 @@
     "regions": [
       "Russia",
       "North & Central Asia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "reed-gold-nugget-north-carolina",
@@ -21640,7 +21647,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "georgia-gold-rush",
@@ -21651,7 +21659,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "eureka-diamond-found",
@@ -21662,7 +21671,8 @@
     "difficulty": "medium",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "kimberley-diamond-rush",
@@ -21673,7 +21683,8 @@
     "difficulty": "medium",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tombstone-silver-strike",
@@ -21684,7 +21695,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "witwatersrand-gold-discovery",
@@ -21695,7 +21707,8 @@
     "difficulty": "medium",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "coolgardie-gold-rush",
@@ -21706,7 +21719,8 @@
     "difficulty": "medium",
     "regions": [
       "Australia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nome-beach-gold-rush",
@@ -21717,7 +21731,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "cullinan-diamond-found",
@@ -21728,7 +21743,8 @@
     "difficulty": "hard",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "namib-diamond-rush",
@@ -21739,7 +21755,8 @@
     "difficulty": "medium",
     "regions": [
       "Namibia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mir-siberian-diamond-pipe",
@@ -21751,7 +21768,8 @@
     "regions": [
       "Russia",
       "North & Central Asia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "carlin-trend-gold-discovery",
@@ -21762,7 +21780,8 @@
     "difficulty": "hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "orapa-diamond-pipe-found",
@@ -21773,7 +21792,8 @@
     "difficulty": "medium",
     "regions": [
       "Botswana"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "serra-pelada-gold-rush",
@@ -21784,7 +21804,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Brazil"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "argyle-diamond-mine-opens",
@@ -21795,7 +21816,8 @@
     "difficulty": "medium",
     "regions": [
       "Australia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "lac-de-gras-diamonds-found",
@@ -21806,7 +21828,8 @@
     "difficulty": "medium",
     "regions": [
       "Canada"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "lesedi-la-rona-diamond-found",
@@ -21817,6 +21840,7 @@
     "difficulty": "easy",
     "regions": [
       "Botswana"
-    ]
+    ],
+    "has_detail": true
   }
 ]
