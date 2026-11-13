@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:33:06.108Z",
+  "updated_at": "2026-11-13T05:36:11.356Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-13T05:33:06.108Z"
     },
     "eureka-diamond-found": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4bef0c5fb598c523de8e9d0d79b9a83037604640468ea3e6fd0b19ac9b1e56af",
+      "updated_at": "2026-11-13T05:36:11.356Z"
     },
     "kimberley-diamond-rush": {
       "state": "pending",
