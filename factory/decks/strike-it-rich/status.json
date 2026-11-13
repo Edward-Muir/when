@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T07:16:02.821Z",
+  "updated_at": "2026-11-13T07:19:12.482Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-13T07:16:02.821Z"
     },
     "coolgardie-gold-rush": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "238b87dd2e698d2dbd300bd22fb4fc92a525816f67517be450335c565f45778e",
+      "updated_at": "2026-11-13T07:19:12.482Z"
     },
     "nome-beach-gold-rush": {
       "state": "pending",
