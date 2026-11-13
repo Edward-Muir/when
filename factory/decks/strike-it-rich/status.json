@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T06:07:10.886Z",
+  "updated_at": "2026-11-13T07:09:37.608Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-13T06:07:10.886Z"
     },
     "kimberley-diamond-rush": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8245628f751549d5bdb966311fc34d4bd066a4a85514fefe7cb2cd1c374c4f4f",
+      "updated_at": "2026-11-13T07:09:37.608Z"
     },
     "tombstone-silver-strike": {
       "state": "pending",
