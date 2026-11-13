@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-12T23:07:22.945Z",
+  "updated_at": "2026-11-13T01:09:08.504Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,10 +128,11 @@
       "updated_at": "2026-11-12T23:07:22.945Z"
     },
     "aurangzeb-seizes-throne-agra": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d79a332c553f12d983fb7256ec09f07e9fbda1ea5a4ba925bc751a3a905928d9",
+      "updated_at": "2026-11-13T01:09:08.504Z"
     },
     "badshahi-mosque-lahore-completed": {
       "state": "pending",
