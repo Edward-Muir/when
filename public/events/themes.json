@@ -21550,5 +21550,337 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "qutb-minar-begun-aibak",
+    "friendly_name": "Qutb Minar Begun",
+    "year": 1199,
+    "category": "architecture",
+    "description": "A Delhi commander started a towering red sandstone minaret beside a new mosque to proclaim the arrival of Muslim rule.",
+    "difficulty": "medium",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qutb-minar-begun-aibak_47sinf?_a=BAMAMikS0",
+    "color": "#35251e",
+    "text_color": "light"
+  },
+  {
+    "name": "iltutmish-caliphal-investiture",
+    "friendly_name": "Caliph Recognises Iltutmish",
+    "year": 1229,
+    "category": "diplomacy",
+    "description": "A robe of honour and a formal letter from Baghdad confirmed a Delhi sultan as a legitimate Muslim ruler of Hindustan.",
+    "difficulty": "hard",
+    "regions": [
+      "India",
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iltutmish-caliphal-investiture_4v462d?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "alauddin-khalji-seizes-delhi",
+    "friendly_name": "Alauddin Khalji Seizes the Crown",
+    "year": 1296,
+    "category": "empires",
+    "description": "After a raid on a Deccan kingdom, an ambitious governor killed the sultan who trusted him and took Delhi's crown.",
+    "difficulty": "medium",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alauddin-khalji-seizes-delhi_v2mof5?_a=BAMAMikS0",
+    "color": "#25201e",
+    "text_color": "light"
+  },
+  {
+    "name": "alauddin-khalji-takes-chittor",
+    "friendly_name": "Alauddin Captures Chittor",
+    "year": 1303,
+    "category": "warfare",
+    "description": "A Delhi sultan besieged and took the great Rajput hill fortress, an event later wrapped in legend and epic poetry.",
+    "difficulty": "medium",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alauddin-khalji-takes-chittor_shrfki?_a=BAMAMikS0",
+    "color": "#35211b",
+    "text_color": "light"
+  },
+  {
+    "name": "firoz-shah-founds-firozabad",
+    "friendly_name": "Firoz Shah Founds Firozabad",
+    "year": 1354,
+    "category": "architecture",
+    "description": "A sultan built a new walled city on the Yamuna beside Delhi, crowned by a palace with a carved stone pillar on its roof.",
+    "difficulty": "hard",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/firoz-shah-founds-firozabad_ue73vg?_a=BAMAMikS0",
+    "color": "#523928",
+    "text_color": "light"
+  },
+  {
+    "name": "timur-sacks-delhi-1398",
+    "friendly_name": "Timur Sacks Delhi",
+    "year": 1398,
+    "category": "warfare",
+    "description": "A Central Asian conqueror routed the sultan's army and plundered the capital, leaving the sultanate shattered for decades.",
+    "difficulty": "easy",
+    "regions": [
+      "India",
+      "Uzbekistan"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/timur-sacks-delhi-1398_m0cjtg?_a=BAMAMikS0",
+    "color": "#443025",
+    "text_color": "light"
+  },
+  {
+    "name": "bahlul-lodi-founds-lodi-dynasty",
+    "friendly_name": "Bahlul Lodi Takes Delhi's Throne",
+    "year": 1451,
+    "category": "empires",
+    "description": "An Afghan chieftain took the throne at Delhi, beginning the last ruling line of the old sultanate.",
+    "difficulty": "medium",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bahlul-lodi-founds-lodi-dynasty_8ve3u8?_a=BAMAMikS0",
+    "color": "#2f1f17",
+    "text_color": "light"
+  },
+  {
+    "name": "sikandar-lodi-founds-agra",
+    "friendly_name": "Sikandar Lodi Founds Agra",
+    "year": 1504,
+    "category": "architecture",
+    "description": "A Delhi sultan moved his base to a riverside site on the Yamuna and laid out the city that later became a Mughal capital.",
+    "difficulty": "medium",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sikandar-lodi-founds-agra_dmcxqu?_a=BAMAMikS0",
+    "color": "#6e6355",
+    "text_color": "light"
+  },
+  {
+    "name": "sher-shah-defeats-humayun-kannauj",
+    "friendly_name": "Sher Shah Routs Humayun",
+    "year": 1540,
+    "category": "warfare",
+    "description": "An Afghan commander beat the Mughal emperor on the Ganges and drove him into exile, taking the Delhi throne himself.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sher-shah-defeats-humayun-kannauj_bde21m?_a=BAMAMikS0",
+    "color": "#403126",
+    "text_color": "light"
+  },
+  {
+    "name": "humayuns-tomb-begun",
+    "friendly_name": "Humayun's Tomb Begun",
+    "year": 1565,
+    "category": "architecture",
+    "description": "A widow of the second Mughal emperor oversaw a garden tomb in red sandstone and marble, a forerunner of the Taj Mahal.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humayuns-tomb-begun_lf28e8?_a=BAMAMikS0",
+    "color": "#2a1e1b",
+    "text_color": "light"
+  },
+  {
+    "name": "battle-haldighati-mughals-mewar",
+    "friendly_name": "Battle of Haldighati",
+    "year": 1576,
+    "category": "warfare",
+    "description": "Akbar's army, led by a Rajput general, met the Mewar ruler Maharana Pratap in a narrow mountain pass in Rajasthan.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-haldighati-mughals-mewar_xi147a?_a=BAMAMikS0",
+    "color": "#4c382c",
+    "text_color": "light"
+  },
+  {
+    "name": "jahangir-accession-agra",
+    "friendly_name": "Jahangir Takes the Throne",
+    "year": 1605,
+    "category": "empires",
+    "description": "Akbar's son succeeded him at Agra and soon hung a chain of justice outside his palace for any subject to ring.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jahangir-accession-agra_vtn7tb?_a=BAMAMikS0",
+    "color": "#2b1d1d",
+    "text_color": "light"
+  },
+  {
+    "name": "jahangir-marries-nur-jahan",
+    "friendly_name": "Jahangir Marries Nur Jahan",
+    "year": 1611,
+    "category": "figures",
+    "description": "The emperor wed a widowed Persian noblewoman who would become the most powerful woman at the Mughal court.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jahangir-marries-nur-jahan_tgkxj5?_a=BAMAMikS0",
+    "color": "#2f1b15",
+    "text_color": "light"
+  },
+  {
+    "name": "peacock-throne-unveiled-shah-jahan",
+    "friendly_name": "The Peacock Throne Unveiled",
+    "year": 1635,
+    "category": "craft",
+    "description": "A jewelled gold throne, said to have cost twice as much as the Taj Mahal, was first used by Shah Jahan at court.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peacock-throne-unveiled-shah-jahan_x4s42w?_a=BAMAMikS0",
+    "color": "#25201e",
+    "text_color": "light"
+  },
+  {
+    "name": "shah-jahan-begins-red-fort",
+    "friendly_name": "Red Fort Begun at Shahjahanabad",
+    "year": 1638,
+    "category": "architecture",
+    "description": "The emperor laid the foundations of a vast red sandstone palace-fortress in a new walled capital on the Yamuna.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shah-jahan-begins-red-fort_s0ndsw?_a=BAMAMikS0",
+    "color": "#895d41",
+    "text_color": "light"
+  },
+  {
+    "name": "shah-jahan-begins-jama-masjid-delhi",
+    "friendly_name": "Jama Masjid of Delhi Begun",
+    "year": 1650,
+    "category": "architecture",
+    "description": "Thousands of workers began India's largest mosque opposite the new palace, finished in about six years.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shah-jahan-begins-jama-masjid-delhi_1846u9?_a=BAMAMikS0",
+    "color": "#8f6a4f",
+    "text_color": "light"
+  },
+  {
+    "name": "aurangzeb-seizes-throne-agra",
+    "friendly_name": "Aurangzeb Seizes the Throne",
+    "year": 1658,
+    "category": "empires",
+    "description": "A prince defeated his brothers and imprisoned his ailing father in the fort at Agra, then had himself crowned emperor.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aurangzeb-seizes-throne-agra_8ixvft?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "badshahi-mosque-lahore-completed",
+    "friendly_name": "Badshahi Mosque Completed",
+    "year": 1673,
+    "category": "architecture",
+    "description": "A giant red sandstone mosque with marble domes opened at Lahore, among the largest in the world for centuries.",
+    "difficulty": "medium",
+    "regions": [
+      "Pakistan"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/badshahi-mosque-lahore-completed_3pie6a?_a=BAMAMikS0",
+    "color": "#232024",
+    "text_color": "light"
+  },
+  {
+    "name": "aurangzeb-dies-deccan",
+    "friendly_name": "Aurangzeb Dies in the Deccan",
+    "year": 1707,
+    "category": "figures",
+    "description": "After decades of war in southern India the aging emperor died, and his sons fought over an empire starting to fray.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aurangzeb-dies-deccan_faf738?_a=BAMAMikS0",
+    "color": "#372217",
+    "text_color": "light"
+  },
+  {
+    "name": "shah-alam-ii-returns-delhi",
+    "friendly_name": "Shah Alam II Returns to Delhi",
+    "year": 1771,
+    "category": "empires",
+    "description": "Escorted by Maratha troops, a Mughal emperor long in exile re-entered his old capital as a figurehead.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shah-alam-ii-returns-delhi_efux76?_a=BAMAMikS0",
+    "color": "#362721",
+    "text_color": "light"
+  },
+  {
+    "name": "bahadur-shah-zafar-accession",
+    "friendly_name": "Bahadur Shah Zafar Crowned",
+    "year": 1837,
+    "category": "empires",
+    "description": "A poet-king inherited the Mughal title, with real power limited to the walls of his palace in Delhi.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bahadur-shah-zafar-accession_u40mbs?_a=BAMAMikS0",
+    "color": "#251f20",
+    "text_color": "light"
+  },
+  {
+    "name": "last-mughal-emperor-deposed",
+    "friendly_name": "Last Mughal Emperor Deposed",
+    "year": 1857,
+    "category": "empires",
+    "description": "After joining a great uprising, the elderly emperor was captured, tried and sent into exile, ending the dynasty.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-mughal-emperor-deposed_985638?_a=BAMAMikS0",
+    "color": "#2b1d1b",
+    "text_color": "light"
   }
 ]

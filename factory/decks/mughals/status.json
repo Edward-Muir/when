@@ -1,0 +1,185 @@
+{
+  "deck": "mughals",
+  "name": "Peacock Throne",
+  "stage": "pr-open",
+  "created_at": "2026-11-12T19:20:15.070Z",
+  "updated_at": "2026-11-13T03:08:55.903Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-12T19:20:15.070Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-12T20:09:47.692Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-13T02:06:50.068Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-13T03:06:50.066Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-13T03:08:55.903Z"
+    }
+  ],
+  "slugs": {
+    "qutb-minar-begun-aibak": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2e485ea956f9791eab95714c8ab5527b305d80973a36fe4cbc09809446412b40",
+      "updated_at": "2026-11-12T21:07:38.894Z"
+    },
+    "iltutmish-caliphal-investiture": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2f72f1d836dc707bce8f425804fb635e7a69ba99cf15d4daa909fd08a882eeba",
+      "updated_at": "2026-11-12T21:07:38.932Z"
+    },
+    "alauddin-khalji-seizes-delhi": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a77d8335797cdc75d675bcbe8288d050d2f4a83de90b12a144bdeed1a81dc4fb",
+      "updated_at": "2026-11-12T21:07:38.969Z"
+    },
+    "alauddin-khalji-takes-chittor": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9017aa10361e38457e5389b0d68cbc8653b723878de4b116c15c76983643086b",
+      "updated_at": "2026-11-12T21:07:39.007Z"
+    },
+    "firoz-shah-founds-firozabad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2edb4a799a842050d76027d3359a2c01b3dd9d93e4f14ed08240ab15495bab0d",
+      "updated_at": "2026-11-12T21:07:39.045Z"
+    },
+    "timur-sacks-delhi-1398": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d8865c2cbc4e9bfd76a8ff3cd05a35baf384ffe6354b36ff9768b3c23ad5a23f",
+      "updated_at": "2026-11-12T21:07:39.085Z"
+    },
+    "bahlul-lodi-founds-lodi-dynasty": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c4084e2a047dac40fbb3e52a9da6798fad956e2a4cf63e84b8ce0024684eb5c8",
+      "updated_at": "2026-11-12T21:07:39.133Z"
+    },
+    "sikandar-lodi-founds-agra": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ad43cbc8447da5e1203988c260ca690ba0e535b60e239b80e5572d39e5bf8e2d",
+      "updated_at": "2026-11-12T21:07:39.175Z"
+    },
+    "sher-shah-defeats-humayun-kannauj": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4e4098a7855f49ff431428712da4b6aaf01ae133a4c8617b504179317c660705",
+      "updated_at": "2026-11-12T21:07:39.213Z"
+    },
+    "humayuns-tomb-begun": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cc64335fc65821e91bba4ec9fc0750cf7342fbeaa6431605c6de3220a389d98d",
+      "updated_at": "2026-11-12T21:07:39.253Z"
+    },
+    "battle-haldighati-mughals-mewar": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8f2b99b33baee1d35a8162dafe33417a983853d23f6885b22d73b7f6d9bbd515",
+      "updated_at": "2026-11-12T23:07:22.785Z"
+    },
+    "jahangir-accession-agra": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7c7e8c00318609aead086ea23b7587ae33cabceb884dedb686d83f80f0377018",
+      "updated_at": "2026-11-12T23:07:22.817Z"
+    },
+    "jahangir-marries-nur-jahan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a1986b9b0b978dce3bea71628ad945efac5bbafe73fc78bf1b90f1d6a97fcb9b",
+      "updated_at": "2026-11-12T23:07:22.848Z"
+    },
+    "peacock-throne-unveiled-shah-jahan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6a225079cbb0d22a1a14dd836d360421ce51794cba4bcdc770c9ba4c6da6e3d9",
+      "updated_at": "2026-11-12T23:07:22.879Z"
+    },
+    "shah-jahan-begins-red-fort": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "32543c1781b0c77a08212b3ed5fc8f6892e9766d0af8d095a519f697191e5a27",
+      "updated_at": "2026-11-12T23:07:22.913Z"
+    },
+    "shah-jahan-begins-jama-masjid-delhi": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "80e083f792d3ba4fb070e0bef7fd4919b106d39548cc32877d2daa3c40e49882",
+      "updated_at": "2026-11-12T23:07:22.945Z"
+    },
+    "aurangzeb-seizes-throne-agra": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d79a332c553f12d983fb7256ec09f07e9fbda1ea5a4ba925bc751a3a905928d9",
+      "updated_at": "2026-11-13T02:06:49.895Z"
+    },
+    "badshahi-mosque-lahore-completed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "aec03e8839cc18001b38678a2130017d634ca4cb3c098a37ab5679ab543e2985",
+      "updated_at": "2026-11-13T02:06:49.933Z"
+    },
+    "aurangzeb-dies-deccan": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dec7a6711650acd75f3a7f4086424bf6d5cb8de7c3975177ceb02adf8c39a6c4",
+      "updated_at": "2026-11-13T02:06:49.965Z"
+    },
+    "shah-alam-ii-returns-delhi": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3f4ac22db1d136c3968a5efa496a96a2ff89d0a696273c3712463579fffa9b93",
+      "updated_at": "2026-11-13T02:06:49.998Z"
+    },
+    "bahadur-shah-zafar-accession": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3731b0925b23eb3a13b3582fad047ab8f178eac22209c0f2456742ae8c53bdbd",
+      "updated_at": "2026-11-13T02:06:50.032Z"
+    },
+    "last-mughal-emperor-deposed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "88b889eb13c06fbdce3874780bc5f132b8ab143c46b2fa8dd1ef38a2ea01439c",
+      "updated_at": "2026-11-13T02:06:50.068Z"
+    }
+  }
+}
