@@ -1,9 +1,9 @@
 {
   "deck": "mughals",
   "name": "Peacock Throne",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-13T02:06:50.068Z",
+  "updated_at": "2026-11-13T03:06:50.066Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-11-13T02:06:50.068Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-13T03:06:50.066Z"
     }
   ],
   "slugs": {
