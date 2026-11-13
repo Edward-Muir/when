@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T07:22:24.884Z",
+  "updated_at": "2026-11-13T07:25:38.749Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-13T07:22:24.884Z"
     },
     "cullinan-diamond-found": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d71c8f2932b42673c45dcf7b34b3652de37bceb10f676ed663b67095c4ff5c04",
+      "updated_at": "2026-11-13T07:25:38.749Z"
     },
     "namib-diamond-rush": {
       "state": "pending",
