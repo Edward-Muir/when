@@ -106,7 +106,12 @@ const ShockwaveLight: React.FC<{
       return animate(
         el,
         { y: path.y, opacity: path.opacity },
-        { duration, times: path.times.map((t) => t / duration), ease: 'linear' }
+        {
+          duration,
+          times: path.times.map((t) => t / duration),
+          ease: 'linear',
+          delay: shock.landDelayS,
+        }
       );
     });
     return () => playing.forEach((p) => p?.stop());

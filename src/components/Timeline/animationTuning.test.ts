@@ -24,6 +24,7 @@ describe('DEFAULT_TUNING', () => {
         glowDurS: 0.6,
       },
       shock: {
+        landDelayS: 0.09,
         frontMsPerRow: 65,
         frontSlowMsPerRow2: 8,
         kickPx: 7,

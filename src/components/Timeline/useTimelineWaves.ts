@@ -91,12 +91,14 @@ export function useTimelineWaves(
     if (placedIndex === -1) return bumps;
     const shock = tuning.shock;
     const peakS = shockPeakS(shock);
+    // Everything waits for the carried card to be seated: the impact is when it lands.
+    const landS = shock.landDelayS;
     events.forEach((_, idx) => {
       if (idx === placedIndex) {
         // The placed card is what hits: it dips into the rail and glows.
         bumps.set(idx, {
           kind: 'impact',
-          delay: 0,
+          delay: landS,
           amplitudePx: shockDipPx(currentStreak, shock),
           glowScale: shockGlowScale(currentStreak, shock),
           color: shockColor,
@@ -107,7 +109,7 @@ export function useTimelineWaves(
       const d = Math.abs(idx - placedIndex);
       const kick = shockKickPx(d, currentStreak, shock);
       if (kick < MIN_KICK_PX) return;
-      const delay = shockDelayS(d, shock);
+      const delay = landS + shockDelayS(d, shock);
       bumps.set(idx, {
         kind: 'shock',
         delay,

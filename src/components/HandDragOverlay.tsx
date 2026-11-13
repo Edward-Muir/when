@@ -149,6 +149,14 @@ export const RETURN_TO_HAND_MS = 180;
 export const RETURN_EASING = [0.2, 0.8, 0.2, 1] as const;
 /** How long the card takes to seat itself in its row after a drop on the board, ms. */
 const SETTLE_MS = 130;
+/** The fraction of that spent travelling; the rest is the carried card fading over the row. */
+const SEATED_AT = 0.7;
+/**
+ * When the carried card has arrived on its row, ms after the drop. The correct-placement
+ * shockwave waits for this (`shock.landDelayS`), so the card lands and THEN hits; a test in
+ * shockwave.test.ts keeps the two in step.
+ */
+export const SETTLE_SEATED_MS = SETTLE_MS * SEATED_AT;
 
 const DROP_EASING = `cubic-bezier(${RETURN_EASING.join(',')})`;
 
@@ -220,7 +228,7 @@ export const settleOnBoard: DropAnimationFunction = ({ active, dragOverlay }) =>
     .animate(
       [
         { transform: now.toString(), opacity: 1 },
-        { transform: seated, opacity: 1, offset: 0.7 },
+        { transform: seated, opacity: 1, offset: SEATED_AT },
         { transform: seated, opacity: 0 },
       ],
       { duration: SETTLE_MS, easing: DROP_EASING, fill: 'forwards' }

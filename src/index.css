@@ -495,7 +495,9 @@ input,
 
 .animate-shock-glow {
   --shock-color: var(--color-success);
-  animation: shockGlow var(--anim-glow-dur, 0.6s) ease-out;
+  /* --shock-land holds it back until the carried card is seated; the first keyframe is a
+     zero-size shadow, so `backwards` shows nothing early. */
+  animation: shockGlow var(--anim-glow-dur, 0.6s) ease-out var(--shock-land, 0s) backwards;
 }
 
 /* A row the wave passes: its year takes the wave's colour and its tick reaches toward the

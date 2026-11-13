@@ -35,6 +35,12 @@ export interface AnimationTuning {
    * with a light running along the rail in step. The maths is in `shockwave.ts`.
    */
   shock: {
+    /**
+     * Nothing starts until the carried card is seated in its row (s). The drop glides the card
+     * in over `SETTLE_SEATED_MS` (HandDragOverlay); a wave that started at the drop would play
+     * its first frames underneath that card. A test pins the two together.
+     */
+    landDelayS: number;
     /** The front reaches the nearest row after this long, and each row after (ms). */
     frontMsPerRow: number;
     /** ...plus this much more per row squared, so the front slows as it travels (ms). */
@@ -121,6 +127,7 @@ export const DEFAULT_TUNING: AnimationTuning = {
     glowDurS: 0.6,
   },
   shock: {
+    landDelayS: 0.09,
     frontMsPerRow: 65,
     frontSlowMsPerRow2: 8,
     kickPx: 7,
@@ -225,6 +232,7 @@ export function scaleTuning(t: AnimationTuning, speed: number): AnimationTuning 
     },
     shock: {
       ...t.shock,
+      landDelayS: t.shock.landDelayS / speed,
       frontMsPerRow: t.shock.frontMsPerRow / speed,
       frontSlowMsPerRow2: t.shock.frontSlowMsPerRow2 / speed,
       // Rates, not durations: a slower clock means fewer cycles a second.

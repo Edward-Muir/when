@@ -1,3 +1,4 @@
+import { SETTLE_SEATED_MS } from '../HandDragOverlay';
 import { DEFAULT_TUNING, scaleTuning } from './animationTuning';
 import {
   MAX_BUILD_STREAK,
@@ -41,6 +42,14 @@ describe('shockPulse', () => {
     for (let t = 0.7; t < 2; t += 0.01) {
       expect(Math.abs(hardest * shockPulse(t, shock))).toBeLessThan(0.3);
     }
+  });
+});
+
+describe('the landing', () => {
+  // The wave must not start under the card the player is still putting down. If the drop is
+  // retimed in HandDragOverlay, retime `landDelayS` with it.
+  it('waits for the carried card to be seated', () => {
+    expect(Math.abs(shock.landDelayS * 1000 - SETTLE_SEATED_MS)).toBeLessThanOrEqual(5);
   });
 });
 

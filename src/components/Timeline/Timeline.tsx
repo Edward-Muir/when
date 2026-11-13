@@ -9,7 +9,6 @@ import TimelineMarker, { MarkerPhase } from './TimelineMarker';
 import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
 import { useRailExtension } from './useRailExtension';
 import Card from '../Card';
-import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
@@ -227,9 +226,6 @@ const Timeline: React.FC<TimelineProps> = ({
 
   const missReveal = getMissReveal(lastPlacementResult, animationPhase);
 
-  // Streak-aware glow for the card being placed.
-  const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
-
   const { successWave, successPulse, missWaveBumps } = useTimelineWaves(
     events,
     lastPlacementResult,
@@ -441,7 +437,6 @@ const Timeline: React.FC<TimelineProps> = ({
             landing={anim.isAnimating && anim.success === true}
             hideTick={anim.failedReveal}
             ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
-            glowIntensity={anim.isAnimating ? streakConfig.glowIntensity : undefined}
             layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
             // Eagerly load the first couple of cards — they're the LCP element.
             priority={idx < 2}

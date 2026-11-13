@@ -35,6 +35,14 @@ export const TUNING_SCHEMA: TuningGroup[] = [
     title: 'Success — shockwave',
     fields: [
       {
+        path: 'shock.landDelayS',
+        label: 'Wait for the card to seat',
+        min: 0,
+        max: 0.4,
+        step: 0.01,
+        unit: 's',
+      },
+      {
         path: 'shock.frontMsPerRow',
         label: 'Wave front',
         min: 20,

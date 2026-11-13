@@ -1,9 +1,8 @@
-import React, { CSSProperties, useEffect, useMemo } from 'react';
+import React, { CSSProperties, useEffect, useMemo, useState } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase } from '../../types';
 import { YearLabel, yearSizeClass } from './YearLabel';
 import CardFace from '../CardFace';
-import { type GlowIntensity } from '../../utils/streakFeedback';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
@@ -41,8 +40,6 @@ interface TimelineEventProps {
   animationPhase?: AnimationPhase;
   // Wave ripple bump scheduled by Timeline (success wave or miss wake)
   ripple?: RippleSpec | null;
-  // Streak-aware glow intensity
-  glowIntensity?: GlowIntensity;
   // Above-the-fold cards: load eagerly + high priority so they don't drag LCP down.
   // Defaults to lazy so off-screen events keep deferring their image download.
   priority?: boolean;
@@ -93,11 +90,13 @@ const makeYearPopVariants = (t: AnimationTuning) => ({
 // CSS custom properties, which React's CSSProperties does not know about.
 type CssVars = CSSProperties & Record<`--${string}`, string | number>;
 
-// The placed card's glow: one keyframe, coloured by the streak tier and sized by the streak.
-function glowStyle(intensity: GlowIntensity | undefined, impact: RippleSpec | null): CssVars {
+// The placed card's glow: one keyframe, coloured by the streak tier, sized by the streak, and
+// held back until the carried card is seated (`delay`), like the rest of the wave.
+function glowStyle(impact: RippleSpec): CssVars {
   return {
-    '--shock-color': intensity === 'golden' ? 'var(--color-accent)' : 'var(--color-success)',
-    '--shock-glow': impact?.glowScale ?? 1,
+    '--shock-color': impact.color ?? 'var(--color-success)',
+    '--shock-glow': impact.glowScale ?? 1,
+    '--shock-land': `${impact.delay}s`,
   };
 }
 
@@ -123,13 +122,10 @@ function useEventAnimations(
   const isFlashPhase = animationPhase === 'flash';
   const isMovingPhase = animationPhase === 'moving';
 
-  // Card glow class. The success glow takes its colour and size from `glowStyle`.
+  // The red pulse on a wrong drop. The success glow is not phase-driven: it belongs to the
+  // shockwave's `impact` and runs to its own end (see `useRowWaves`).
   const cardAnimationClass =
-    isAnimating && isFlashPhase
-      ? animationSuccess
-        ? 'animate-shock-glow'
-        : 'animate-error-pulse'
-      : '';
+    isAnimating && isFlashPhase && !animationSuccess ? 'animate-error-pulse' : '';
 
   // Exit animation (requires motion enabled)
   const canAnimate = isAnimating && !shouldReduceMotion;
@@ -234,6 +230,20 @@ function useRippleAnimation(
   return scope;
 }
 
+const NO_GLOW: { className: string; style: CssVars | undefined } = {
+  className: '',
+  style: undefined,
+};
+
+// True from the first render `value` is true, forever. For "this row is the one that just
+// landed", which the game stops saying after the flash phase while other flags (`isNew`) are
+// still set.
+function useLatch(value: boolean): boolean {
+  const [latched, setLatched] = useState(value);
+  if (value && !latched) setLatched(true);
+  return latched || value;
+}
+
 // Everything a wave does to this row. The placed card's own dip is an `impact` and moves only
 // the card; anything else moves the whole row. Each animation triggers once and self-completes.
 function useRowWaves(
@@ -248,7 +258,9 @@ function useRowWaves(
   return {
     rippleScope,
     impactScope,
-    impact,
+    // The glow lasts as long as the impact does, not as long as the flash phase: tied to the
+    // phase it was cut off whenever it outlasted `success.flashMs`.
+    glow: impact ? { className: 'animate-shock-glow', style: glowStyle(impact) } : NO_GLOW,
     shock,
     flash: flashStyle(shock),
     // Re-keyed per wave so the CSS flash restarts on every placement.
@@ -265,7 +277,6 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   animationSuccess,
   animationPhase,
   ripple = null,
-  glowIntensity,
   priority = false,
   layoutId,
   layoutShiftDelay = null,
@@ -289,11 +300,12 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
     shouldReduceMotion
   );
 
-  const { rippleScope, impactScope, impact, shock, flash, flashKey } = useRowWaves(
+  const { rippleScope, impactScope, glow, shock, flash, flashKey } = useRowWaves(
     ripple,
     shouldReduceMotion,
     tuning
   );
+  const landed = useLatch(landing);
 
   return (
     <motion.div
@@ -343,8 +355,11 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             strength from its first frame to take the drag marker's place (see TimelineTick).
             Each part of the row now arrives in its own way — the card slides up, the year pops,
             the tick grows out of the marker. A correct landing skips the slide: that card drops
-            INTO the rail (the `impact` dip), and rising up from below would contradict it. */}
-        <div className={`flex-1 pl-3 ${isNew && !landing ? 'animate-entrance' : ''}`}>
+            INTO the rail (the `impact` dip), and rising up from below would contradict it.
+            `landed`, not `landing`: `landing` ends with the flash phase (600ms) while `isNew`
+            lasts a second, so testing `landing` played the entrance late and the card that
+            had just landed faded out and slid up again. */}
+        <div className={`flex-1 pl-3 ${isNew && !landed ? 'animate-entrance' : ''}`}>
           <motion.button
             // What the game-over gallery measures to fly this card's art from. See
             // `useGalleryTravel`.
@@ -352,13 +367,9 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             onClick={onTap}
             layoutId={layoutId}
             ref={impactScope}
-            style={
-              cardAnimationClass === 'animate-shock-glow'
-                ? glowStyle(glowIntensity, impact)
-                : undefined
-            }
+            style={glow.style}
             exit={isErrorAnimation ? rejectionExit.exit : undefined}
-            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
+            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass} ${glow.className}`}
           >
             <CardFace event={event} priority={priority} />
           </motion.button>

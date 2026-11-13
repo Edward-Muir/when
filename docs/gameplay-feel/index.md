@@ -405,6 +405,16 @@ Traps:
   not started moving yet. That is the "harder hit" and was accepted in the rig.
 - The miss wake still uses the old push-then-spring bump (`ripplePushDurationS`,
   `rippleReturnSpring`); a `RippleSpec` with no `kind` is a wake bump.
+- **Nothing starts until the carried card is seated.** The drop glides the card into its row
+  (`settleOnBoard`, seated at `SETTLE_SEATED_MS`), and the dip, glow, kicks and light all wait
+  `shock.landDelayS` for it. Started at the drop, the first frames of the impact played
+  underneath the carried card and the row card was uncovered mid-rebound. A test pins the two
+  timings together.
+- **A correct landing must never play `animate-entrance`, and that needs a latch.** `landing`
+  ends with the flash phase (600ms) while `isNew` lasts a second, so testing `landing` played
+  the entrance late: the card that had just landed faded to nothing and slid up again. Use
+  `landed` (`useLatch`).
+- The glow belongs to the `impact` spec, not the flash phase, so it runs to its own end.
 - The year flash restarts by re-keying the year span and the tick per wave. They are siblings,
   so the two keys must differ.
 
