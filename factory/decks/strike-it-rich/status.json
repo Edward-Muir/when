@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:23:56.074Z",
+  "updated_at": "2026-11-13T05:26:49.630Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-13T05:23:56.074Z"
     },
     "berezovsk-first-russian-gold": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fd33a31eb3539e0a5951aadd15990861ecd45d479fd1e0a8898a3204c531c428",
+      "updated_at": "2026-11-13T05:26:49.630Z"
     },
     "reed-gold-nugget-north-carolina": {
       "state": "pending",
