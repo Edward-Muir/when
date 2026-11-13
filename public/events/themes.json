@@ -21562,7 +21562,8 @@
       "Syria",
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "great-bombard-constantinople",
@@ -21574,7 +21575,8 @@
     "regions": [
       "Turkey",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "leonardo-armoured-car",
@@ -21585,7 +21587,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nagashino-matchlock-volleys",
@@ -21596,7 +21599,8 @@
     "difficulty": "easy",
     "regions": [
       "Japan"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "puckle-gun-patented",
@@ -21607,7 +21611,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-aerial-bombing-libya",
@@ -21619,7 +21624,8 @@
     "regions": [
       "Italy",
       "Libya"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "thompson-submachine-gun",
@@ -21630,7 +21636,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "spitfire-first-flight",
@@ -21641,7 +21648,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "dambusters-bouncing-bombs",
@@ -21653,7 +21661,8 @@
     "regions": [
       "Germany",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "me-262-jet-fighter-combat",
@@ -21664,7 +21673,8 @@
     "difficulty": "easy",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ak-47-designed",
@@ -21676,7 +21686,8 @@
     "regions": [
       "Russia",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "b-52-enters-service",
@@ -21687,7 +21698,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "m16-rifle-adopted",
@@ -21698,7 +21710,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "f-117-stealth-fighter-service",
@@ -21709,7 +21722,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "b-2-stealth-bomber-first-flight",
@@ -21720,7 +21734,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "patriot-missiles-scuds",
@@ -21734,7 +21749,8 @@
       "Israel",
       "Saudi Arabia",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "predator-drone-first-hellfire",
@@ -21745,7 +21761,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mother-of-all-bombs-combat",
@@ -21757,6 +21774,7 @@
     "regions": [
       "Afghanistan",
       "United States"
-    ]
+    ],
+    "has_detail": true
   }
 ]
