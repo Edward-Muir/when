@@ -21557,7 +21557,12 @@
     "year": 674,
     "category": "warfare",
     "description": "Byzantine ships sprayed a secret burning liquid that clung to water and set enemy fleets ablaze.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Syria",
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "great-bombard-constantinople",
@@ -21565,7 +21570,11 @@
     "year": 1453,
     "category": "warfare",
     "description": "A monstrous Ottoman cannon pounded the ancient defences of a great Christian capital until they fell.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "leonardo-armoured-car",
@@ -21573,7 +21582,10 @@
     "year": 1487,
     "category": "invention",
     "description": "An Italian polymath drew a domed, cannon-bristling car driven by cranks, a forerunner of the tank.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "nagashino-matchlock-volleys",
@@ -21581,7 +21593,10 @@
     "year": 1575,
     "category": "warfare",
     "description": "Massed Japanese gunners fired in rotation from behind fences and shattered a famed samurai cavalry.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "puckle-gun-patented",
@@ -21589,7 +21604,10 @@
     "year": 1718,
     "category": "invention",
     "description": "A London lawyer patented a tripod-mounted revolving flintlock, with round bullets for Christians and square for Turks.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-aerial-bombing-libya",
@@ -21597,7 +21615,11 @@
     "year": 1911,
     "category": "warfare",
     "description": "An Italian pilot tossed small grenades by hand onto enemy troops in North Africa, opening aerial bombardment.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Libya"
+    ]
   },
   {
     "name": "thompson-submachine-gun",
@@ -21605,7 +21627,10 @@
     "year": 1921,
     "category": "invention",
     "description": "The 'Tommy gun' with its drum magazine arrived, later famed in the hands of gangsters and soldiers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "spitfire-first-flight",
@@ -21613,7 +21638,10 @@
     "year": 1936,
     "category": "invention",
     "description": "A graceful elliptical-winged British fighter made its maiden flight and became a symbol of resistance.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "dambusters-bouncing-bombs",
@@ -21621,7 +21649,11 @@
     "year": 1943,
     "category": "warfare",
     "description": "Bombers skimmed low over reservoirs and released spinning bombs that skipped across water to burst German dams.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "United Kingdom"
+    ]
   },
   {
     "name": "me-262-jet-fighter-combat",
@@ -21629,7 +21661,10 @@
     "year": 1944,
     "category": "warfare",
     "description": "A swept-wing German aircraft with no propeller outpaced every Allied fighter in the sky.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "ak-47-designed",
@@ -21637,7 +21672,11 @@
     "year": 1947,
     "category": "invention",
     "description": "A Soviet tank sergeant's simple, rugged assault rifle was finished and went on to become the most produced firearm.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "b-52-enters-service",
@@ -21645,7 +21684,10 @@
     "year": 1955,
     "category": "warfare",
     "description": "An eight-engined American bomber began a career that has outlasted nearly every other aircraft of its age.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "m16-rifle-adopted",
@@ -21653,7 +21695,10 @@
     "year": 1964,
     "category": "warfare",
     "description": "A light, black plastic-stocked American rifle replaced wooden-stocked designs and went to jungle war.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "f-117-stealth-fighter-service",
@@ -21661,7 +21706,10 @@
     "year": 1983,
     "category": "warfare",
     "description": "A faceted black American jet designed to be nearly invisible to radar became operational in secret.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "b-2-stealth-bomber-first-flight",
@@ -21669,7 +21717,10 @@
     "year": 1989,
     "category": "invention",
     "description": "A huge flying-wing bomber, built to slip past air defences unseen, took to the air for the first time.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "patriot-missiles-scuds",
@@ -21677,7 +21728,13 @@
     "year": 1991,
     "category": "warfare",
     "description": "Television audiences watched anti-missile interceptors rise to meet incoming ballistic missiles over the Gulf.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq",
+      "Israel",
+      "Saudi Arabia",
+      "United States"
+    ]
   },
   {
     "name": "predator-drone-first-hellfire",
@@ -21685,7 +21742,10 @@
     "year": 2001,
     "category": "warfare",
     "description": "An unmanned American aircraft fired a Hellfire missile for the first time, turning a spy drone into a hunter-killer.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mother-of-all-bombs-combat",
@@ -21693,6 +21753,10 @@
     "year": 2017,
     "category": "warfare",
     "description": "The largest non-nuclear bomb in the American arsenal was dropped in anger for the first time.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Afghanistan",
+      "United States"
+    ]
   }
 ]
