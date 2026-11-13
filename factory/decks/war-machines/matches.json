@@ -1,0 +1,2816 @@
+[
+  {
+    "beat": 0,
+    "year": -1274,
+    "title": "Chariots Clash at Kadesh",
+    "candidates": [
+      {
+        "name": "battle-kadesh",
+        "friendly_name": "Battle of Kadesh",
+        "year": -1274,
+        "description": "Egypt and the Hittite Empire clashed in one of the largest chariot battles in history.",
+        "score": 5,
+        "shared": [
+          "kadesh",
+          "largest",
+          "chariot",
+          "battle",
+          "egypt"
+        ]
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 2,
+        "shared": [
+          "recorded",
+          "egypt"
+        ]
+      },
+      {
+        "name": "proto-alphabet",
+        "friendly_name": "Proto-Alphabet",
+        "year": -1850,
+        "year_end": -1200,
+        "description": "A simplified writing system developed in Egypt that evolved into the first true alphabets.",
+        "score": 1,
+        "shared": [
+          "egypt"
+        ]
+      },
+      {
+        "name": "mycenaean-citadels",
+        "friendly_name": "Mycenaean Citadels Built",
+        "year": -1400,
+        "year_end": -1200,
+        "description": "The Greeks built fortified palace complexes including Mycenae and Tiryns.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mycenaean-warrior-art",
+        "friendly_name": "Mycenaean Warrior Art and Pottery",
+        "year": -1500,
+        "year_end": -1200,
+        "description": "Mycenaean Greeks produced warrior-themed pottery and gold funerary masks, including the famous Mask of Agamemnon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -399,
+    "title": "Syracuse Builds the First Catapults",
+    "candidates": [
+      {
+        "name": "catapult-invented",
+        "friendly_name": "Catapult Invented",
+        "year": -399,
+        "description": "Greek engineers invented the torsion catapult for siege warfare, first used against Motya in Sicily.",
+        "score": 1,
+        "shared": [
+          "engineers"
+        ]
+      },
+      {
+        "name": "crossbow-tension-mechanism",
+        "friendly_name": "Crossbow Tension Mechanism",
+        "year": -475,
+        "year_end": -221,
+        "description": "Chinese engineers developed bronze crossbow trigger mechanisms during the Warring States period for military use.",
+        "score": 1,
+        "shared": [
+          "engineers"
+        ]
+      },
+      {
+        "name": "socrates-execution",
+        "friendly_name": "Execution of Socrates",
+        "year": -399,
+        "description": "Athens condemned philosopher Socrates to death by hemlock for impiety and corrupting the youth.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "trial-of-socrates",
+        "friendly_name": "Trial of Socrates",
+        "year": -399,
+        "description": "An Athenian jury condemned the philosopher Socrates for impiety, sentencing him to drink hemlock.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scythian-mound-burials",
+        "friendly_name": "Scythian Royal Mound Burials Peak",
+        "year": -400,
+        "description": "Scythian nomads buried rulers in elaborate kurgans across the Eurasian steppe with gold artifacts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bantu-expansion-africa",
+        "friendly_name": "Bantu Migration Across Africa",
+        "year": -400,
+        "year_end": 500,
+        "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -338,
+    "title": "Sarissa Phalanx Wins at Chaeronea",
+    "candidates": [
+      {
+        "name": "league-corinth",
+        "friendly_name": "League of Corinth Formed",
+        "year": -337,
+        "description": "Philip II united Greek city-states in an alliance against Persia.",
+        "score": 4,
+        "shared": [
+          "united",
+          "greek",
+          "city",
+          "states"
+        ]
+      },
+      {
+        "name": "battle-chaeronea",
+        "friendly_name": "Battle of Chaeronea",
+        "year": -338,
+        "description": "Philip II of Macedon defeated Athens and Thebes, gaining control over Greece.",
+        "score": 1,
+        "shared": [
+          "chaeronea"
+        ]
+      },
+      {
+        "name": "warring-states-innovations",
+        "friendly_name": "Warring States Innovations",
+        "year": -475,
+        "year_end": -221,
+        "description": "China's Warring States period drove innovations in iron casting, crossbows, and large-scale irrigation.",
+        "score": 1,
+        "shared": [
+          "states"
+        ]
+      },
+      {
+        "name": "crossbow-tension-mechanism",
+        "friendly_name": "Crossbow Tension Mechanism",
+        "year": -475,
+        "year_end": -221,
+        "description": "Chinese engineers developed bronze crossbow trigger mechanisms during the Warring States period for military use.",
+        "score": 1,
+        "shared": [
+          "states"
+        ]
+      },
+      {
+        "name": "bantu-expansion-africa",
+        "friendly_name": "Bantu Migration Across Africa",
+        "year": -400,
+        "year_end": 500,
+        "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blast-furnace-invented",
+        "friendly_name": "Blast Furnace Invented",
+        "year": -400,
+        "year_end": 100,
+        "description": "Chinese metalworkers developed the blast furnace, reaching temperatures high enough to produce cast iron on an industrial scale.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -218,
+    "title": "Hannibal's Elephants Cross the Alps",
+    "candidates": [
+      {
+        "name": "hannibal-crosses-alps",
+        "friendly_name": "Hannibal Crosses the Alps",
+        "year": -218,
+        "description": "Hannibal led his army and war elephants over the Alps to invade Italy.",
+        "score": 6,
+        "shared": [
+          "hannibal",
+          "elephants",
+          "alps",
+          "led",
+          "war",
+          "over"
+        ]
+      },
+      {
+        "name": "punic-wars-second",
+        "friendly_name": "Second Punic War",
+        "year": -218,
+        "year_end": -201,
+        "description": "Hannibal marched elephants over the Alps to invade Italy, threatening Rome's survival for over a decade.",
+        "score": 6,
+        "shared": [
+          "hannibal",
+          "elephants",
+          "alps",
+          "war",
+          "over",
+          "rome"
+        ]
+      },
+      {
+        "name": "adena-culture",
+        "friendly_name": "Adena Culture Eastern North America",
+        "year": -500,
+        "year_end": 100,
+        "description": "The Adena culture emerged in the Ohio Valley, building earthen mounds and cultivating early crops.",
+        "score": 1,
+        "shared": [
+          "north"
+        ]
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 1,
+        "shared": [
+          "cross"
+        ]
+      },
+      {
+        "name": "bactria-kingdom",
+        "friendly_name": "Bactrian Kingdom Flourishes",
+        "year": -230,
+        "year_end": -200,
+        "description": "The Greco-Bactrian Kingdom expanded under Euthydemus I, controlling parts of modern Afghanistan and Central Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bactria-silk-road",
+        "friendly_name": "Bactria Kingdom Major Silk Road Hub",
+        "year": -250,
+        "year_end": -130,
+        "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": -213,
+    "title": "Archimedes Defends Syracuse",
+    "candidates": [
+      {
+        "name": "siege-syracuse",
+        "friendly_name": "Siege of Syracuse",
+        "year": -213,
+        "year_end": -212,
+        "description": "Rome besieged Syracuse where Archimedes' war machines defended the city.",
+        "score": 2,
+        "shared": [
+          "archimedes",
+          "syracuse"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 2,
+        "shared": [
+          "used",
+          "burning"
+        ]
+      },
+      {
+        "name": "qin-book-burning",
+        "friendly_name": "Burning of Books and Scholars",
+        "year": -213,
+        "description": "Qin Shi Huang ordered the burning of books and execution of scholars to control thought.",
+        "score": 1,
+        "shared": [
+          "burning"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "punic-wars-second",
+        "friendly_name": "Second Punic War",
+        "year": -218,
+        "year_end": -201,
+        "description": "Hannibal marched elephants over the Alps to invade Italy, threatening Rome's survival for over a decade.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 674,
+    "title": "Greek Fire Used at Constantinople",
+    "candidates": [
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 2,
+        "shared": [
+          "used",
+          "burning"
+        ]
+      },
+      {
+        "name": "lateen-sail-spreads",
+        "friendly_name": "Lateen Sail Spreads",
+        "year": 400,
+        "year_end": 900,
+        "description": "Mediterranean sailors adopted the triangular lateen sail, letting ships point much closer into the wind than a square rig ever could.",
+        "score": 1,
+        "shared": [
+          "ships"
+        ]
+      },
+      {
+        "name": "anglo-saxon-stone-churches",
+        "friendly_name": "Anglo-Saxon Stone Churches Built",
+        "year": 670,
+        "year_end": 682,
+        "description": "Early Anglo-Saxon stone churches like those at Monkwearmouth and Jarrow were built in northern England.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dvaravati-period",
+        "friendly_name": "Dvaravati Period",
+        "year": 650,
+        "year_end": 1100,
+        "description": "The Mon Dvaravati kingdom flourished in central Thailand, spreading Theravada Buddhism across mainland Southeast Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ellora-caves",
+        "friendly_name": "Ellora Caves Construction",
+        "year": 650,
+        "year_end": 1000,
+        "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "irish-monastery-art",
+        "friendly_name": "Irish Monastery Art Tradition",
+        "year": 600,
+        "year_end": 900,
+        "description": "Irish monks developed distinctive interlace and illumination styles in manuscript art.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1044,
+    "title": "Gunpowder Recipe Written Down",
+    "candidates": [
+      {
+        "name": "gunpowder-formula-first-recorded",
+        "friendly_name": "Gunpowder Formula First Recorded",
+        "year": 1044,
+        "description": "The first written gunpowder formula appeared in the Chinese Wujing Zongyao military compendium during the Song Dynasty.",
+        "score": 4,
+        "shared": [
+          "gunpowder",
+          "written",
+          "chinese",
+          "military"
+        ]
+      },
+      {
+        "name": "gunpowder-china-adoption",
+        "friendly_name": "Gunpowder Warfare in China",
+        "year": 1000,
+        "year_end": 1250,
+        "description": "Chinese armies deployed fire arrows, bombs, and early rockets, pioneering gunpowder warfare.",
+        "score": 2,
+        "shared": [
+          "gunpowder",
+          "chinese"
+        ]
+      },
+      {
+        "name": "compass-invention-china",
+        "friendly_name": "Magnetic Compass Invented in China",
+        "year": 1040,
+        "year_end": 1117,
+        "description": "Chinese inventors developed the magnetic compass for navigation during the Song Dynasty, later spreading worldwide.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "junk-watertight-bulkheads",
+        "friendly_name": "Junk Watertight Bulkheads",
+        "year": 1000,
+        "year_end": 1279,
+        "description": "Chinese junk builders divided their hulls into sealed compartments with internal bulkheads, so a single breach no longer sank the ship.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "kaifeng-night-markets",
+        "friendly_name": "Kaifeng's Night Markets Glow",
+        "year": 965,
+        "year_end": 1127,
+        "description": "Lamp-lit stalls kept the Song capital trading long past dusk, breaking the curfew that had closed Chinese cities at dark.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "pagan-kingdom-flourishes",
+        "friendly_name": "Pagan Kingdom Flourishes in Burma",
+        "year": 1044,
+        "year_end": 1077,
+        "description": "King Anawrahta unified Burma under the Pagan Kingdom, adopting Theravada Buddhism and building thousands of temples.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1274,
+    "title": "Exploding Bombs Meet the Samurai",
+    "candidates": [
+      {
+        "name": "mongol-naval-expeditions",
+        "friendly_name": "First Mongol Invasion of Japan",
+        "year": 1274,
+        "description": "Kublai Khan launched the first Mongol naval invasion of Japan, which was repelled by storms and resistance.",
+        "score": 1,
+        "shared": [
+          "mongol"
+        ]
+      },
+      {
+        "name": "tran-dynasty-rule",
+        "friendly_name": "Tran Dynasty Rules Vietnam",
+        "year": 1225,
+        "year_end": 1400,
+        "description": "The Tran dynasty took power in Vietnam, later repelling three Mongol invasions and strengthening Vietnamese identity.",
+        "score": 1,
+        "shared": [
+          "mongol"
+        ]
+      },
+      {
+        "name": "thomas-aquinas-synthesis",
+        "friendly_name": "Aquinas Completes Summa",
+        "year": 1274,
+        "description": "Thomas Aquinas completed his Summa Theologica, harmonizing Aristotelian philosophy with Christian theology.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-robert-bruce",
+        "friendly_name": "Birth of Robert the Bruce",
+        "year": 1274,
+        "description": "The king who secured Scottish independence with his victory at Bannockburn.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "marco-polo-china",
+        "friendly_name": "Marco Polo Reaches China",
+        "year": 1275,
+        "description": "The Venetian explorer arrived at the court of Kublai Khan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "portolan-chart-development",
+        "friendly_name": "Portolan Chart Development",
+        "year": 1275,
+        "description": "Mediterranean sailors developed portolan charts with compass lines and accurate coastlines, advancing navigation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1346,
+    "title": "Longbows and Cannon Win at Crecy",
+    "candidates": [
+      {
+        "name": "battle-crecy",
+        "friendly_name": "Battle of Crécy",
+        "year": 1346,
+        "description": "English longbowmen devastated French knights in a pivotal Hundred Years' War battle.",
+        "score": 4,
+        "shared": [
+          "crecy",
+          "english",
+          "french",
+          "knights"
+        ]
+      },
+      {
+        "name": "first-marine-insurance-policy",
+        "friendly_name": "First Marine Insurance Policy",
+        "year": 1347,
+        "description": "Genoese merchants signed early marine insurance contracts to protect cargo against losses at sea.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "water-power-industrial",
+        "friendly_name": "Water Power Drives Early Industries",
+        "year": 900,
+        "year_end": 1384,
+        "description": "Water power was adapted beyond grain milling to drive sawmills, fulling mills, and metalworking hammers.",
+        "score": 1,
+        "shared": [
+          "early"
+        ]
+      },
+      {
+        "name": "mongol-black-death-spread",
+        "friendly_name": "Siege of Caffa",
+        "year": 1346,
+        "description": "One later account says Mongol besiegers hurled plague victims into a Genoese port town as the Black Death neared Europe.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kirkpinar-oil-wrestling-founded",
+        "friendly_name": "Kırkpınar Oil Wrestling Begins",
+        "year": 1346,
+        "description": "The Ottoman Kırkpınar tournament in Edirne began, becoming the world's oldest continuous sanctioned sport.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "black-death-arrives",
+        "friendly_name": "Black Death Reaches Europe",
+        "year": 1347,
+        "description": "The bubonic plague arrived in Europe, eventually killing one-third of the population.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1420,
+    "title": "Hussite War Wagons Hold the Line",
+    "candidates": [
+      {
+        "name": "hussite-movement",
+        "friendly_name": "Hussite Movement Jan Hus",
+        "year": 1415,
+        "year_end": 1436,
+        "description": "Followers of Jan Hus in Bohemia demanded church reform, vernacular liturgy, and communion in both kinds.",
+        "score": 2,
+        "shared": [
+          "hussite",
+          "bohemia"
+        ]
+      },
+      {
+        "name": "hussite-wars",
+        "friendly_name": "Hussite Wars",
+        "year": 1419,
+        "year_end": 1434,
+        "description": "Czech followers of Jan Hus fought Catholic crusaders using innovative wagon-fort tactics.",
+        "score": 1,
+        "shared": [
+          "hussite"
+        ]
+      },
+      {
+        "name": "muromachi-zen-ink-painting",
+        "friendly_name": "Zen Ink Painting Golden Age",
+        "year": 1420,
+        "description": "Japanese monk-painters like Josetsu and Shubun brought Zen ink wash painting to its peak during the Muromachi period.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "venetian-republic",
+        "friendly_name": "Venetian Republic Peak Power",
+        "year": 1420,
+        "description": "The Venetian Republic reached its zenith as a maritime trading empire controlling eastern Mediterranean commerce.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "brace-drill",
+        "friendly_name": "Brace (drill)",
+        "year": 1420,
+        "description": "U-shaped hand tool for drilling holes, the first practical rotary drill used widely in woodworking.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ming-forbidden-city",
+        "friendly_name": "Forbidden City Completed",
+        "year": 1420,
+        "description": "The Forbidden City in Beijing was completed under the Yongle Emperor with 980 buildings across 178 acres.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1453,
+    "title": "The Great Bombard Breaks the Walls",
+    "candidates": [
+      {
+        "name": "constantinople-fall",
+        "friendly_name": "Fall of Constantinople",
+        "year": 1453,
+        "description": "Ottoman forces conquered the Byzantine capital, ending the Eastern Roman Empire.",
+        "score": 2,
+        "shared": [
+          "ottoman",
+          "capital"
+        ]
+      },
+      {
+        "name": "silk-road-decline",
+        "friendly_name": "Silk Road Trade Decline Begins",
+        "year": 1453,
+        "description": "Ottoman conquest of Constantinople disrupted overland Silk Road trade, spurring European maritime exploration.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "ottoman"
+        ]
+      },
+      {
+        "name": "benin-edo-palace-system",
+        "friendly_name": "Benin Palace Government",
+        "year": 1440,
+        "year_end": 1473,
+        "description": "The Benin Kingdom developed a sophisticated palace-based government under Oba Ewuare the Great.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "chimú-chan-chan-peak",
+        "friendly_name": "Chan Chan Urban Development",
+        "year": 1350,
+        "year_end": 1470,
+        "description": "Chan Chan reached its urban peak as the Chimu Empire's capital, housing an estimated 30,000 people.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      },
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "walls-of-benin-city-built",
+        "friendly_name": "Walls of Benin City Built",
+        "year": 1280,
+        "year_end": 1460,
+        "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
+        "score": 1,
+        "shared": [
+          "walls"
+        ]
+      },
+      {
+        "name": "chimor-chan-chan-city",
+        "friendly_name": "Chan Chan Capital City Flourishes",
+        "year": 900,
+        "year_end": 1470,
+        "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
+        "score": 1,
+        "shared": [
+          "capital"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1487,
+    "title": "Leonardo Sketches an Armoured Car",
+    "candidates": [
+      {
+        "name": "double-entry-bookkeeping",
+        "friendly_name": "Double-Entry Bookkeeping",
+        "year": 1300,
+        "year_end": 1494,
+        "description": "Accounting method recording every transaction as both a debit and credit, refined by medieval Italian merchants.",
+        "score": 1,
+        "shared": [
+          "italian"
+        ]
+      },
+      {
+        "name": "barid-shahi-dynasty",
+        "friendly_name": "Barid Shahi Dynasty of Bidar",
+        "year": 1487,
+        "year_end": 1542,
+        "description": "The Barid Shahi dynasty established the Bidar Sultanate as one of the five Deccan successor states.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "templo-mayor-dedicated",
+        "friendly_name": "Great Temple of Tenochtitlan Opens",
+        "year": 1487,
+        "description": "The Aztec twin-shrined temple pyramid was rededicated with ceremonies said to include thousands of sacrifices.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dias-cape-good-hope",
+        "friendly_name": "Dias Rounds Cape of Good Hope",
+        "year": 1488,
+        "description": "Bartolomeu Dias became the first European to sail around Africa's southern tip.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-titian",
+        "friendly_name": "Birth of Titian",
+        "year": 1488,
+        "description": "The Venetian master painter whose rich color and technique made him the dominant artist of his age.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1575,
+    "title": "Matchlock Volleys at Nagashino",
+    "candidates": [
+      {
+        "name": "leiden-university-founded",
+        "friendly_name": "Leiden University Founded",
+        "year": 1575,
+        "description": "William of Orange founded a university at Leiden as a reward for the city's endurance through a long Spanish siege.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "akbar-administrative-reforms",
+        "friendly_name": "Akbar's Revenue Reforms",
+        "year": 1574,
+        "year_end": 1580,
+        "description": "Mughal Emperor Akbar implemented the mansabdari system and Todar Mal's land revenue reforms across India.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tycho-brahe-astronomical-observations",
+        "friendly_name": "Tycho Brahe's Observations",
+        "year": 1576,
+        "description": "Danish astronomer Tycho Brahe built Uraniborg observatory and made the most precise pre-telescope star measurements.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "polish-lithuanian-golden-age",
+        "friendly_name": "Polish-Lithuanian Golden Age",
+        "year": 1573,
+        "year_end": 1648,
+        "description": "The Polish-Lithuanian Commonwealth entered its golden age as Europe's largest and most tolerant state.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mughal-architecture-akbar",
+        "friendly_name": "Akbar Builds Fatehpur Sikri",
+        "year": 1569,
+        "year_end": 1585,
+        "description": "Emperor Akbar built the planned city of Fatehpur Sikri, blending Hindu and Islamic architectural styles.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "oda-nobunaga-unification",
+        "friendly_name": "Oda Nobunaga's Campaigns",
+        "year": 1568,
+        "year_end": 1582,
+        "description": "Warlord Oda Nobunaga began unifying Japan through military innovation, including mass use of firearms.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1631,
+    "title": "Light Field Guns Win at Breitenfeld",
+    "candidates": [
+      {
+        "name": "battle-breitenfeld",
+        "friendly_name": "Battle of Breitenfeld",
+        "year": 1631,
+        "description": "Gustavus Adolphus revolutionized warfare with combined arms tactics against the Empire.",
+        "score": 1,
+        "shared": [
+          "breitenfeld"
+        ]
+      },
+      {
+        "name": "swedish-empire-peak",
+        "friendly_name": "Swedish Empire Military Peak",
+        "year": 1632,
+        "description": "Sweden under Gustavus Adolphus dominated Northern Europe through innovative tactics in the Thirty Years' War.",
+        "score": 1,
+        "shared": [
+          "swedish"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "sack-of-magdeburg",
+        "friendly_name": "Sack and Burning of Magdeburg",
+        "year": 1631,
+        "description": "Catholic League troops stormed the German city of Magdeburg and burned it to the ground, killing most of its people.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "corsairs-sack-baltimore-ireland",
+        "friendly_name": "Corsairs Sack Baltimore Ireland",
+        "year": 1631,
+        "description": "Barbary corsairs raided the Irish village of Baltimore, capturing most of its inhabitants to sell into slavery in North Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "slide-rule",
+        "friendly_name": "Slide Rule",
+        "year": 1630,
+        "description": "Logarithmic calculating device used by engineers and scientists for over three centuries.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1718,
+    "title": "Puckle Gun Patented",
+    "candidates": [
+      {
+        "name": "first-freemason-grand-lodge",
+        "friendly_name": "First Freemason Grand Lodge",
+        "year": 1717,
+        "description": "Four London lodges formed the first Grand Lodge of Freemasonry, beginning the organization's formal institutional structure.",
+        "score": 1,
+        "shared": [
+          "london"
+        ]
+      },
+      {
+        "name": "james-figg-first-boxing-champion",
+        "friendly_name": "James Figg, First Boxing Champion",
+        "year": 1719,
+        "description": "James Figg opened his London amphitheatre and became recognised as England's first bare-knuckle boxing champion.",
+        "score": 1,
+        "shared": [
+          "london"
+        ]
+      },
+      {
+        "name": "tulip-era-ottoman",
+        "friendly_name": "Ottoman Tulip Era",
+        "year": 1718,
+        "year_end": 1730,
+        "description": "The Ottoman Tulip Era brought European-influenced art, gardens, and cultural openness under Sultan Ahmed III.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dahomey-rise-power",
+        "friendly_name": "Rise of Dahomey",
+        "year": 1718,
+        "description": "Under King Agaja, Dahomey built a centralized state around a powerful army and began conquering its coastal neighbours.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scotch-irish-migration",
+        "friendly_name": "Scots-Irish Emigration",
+        "year": 1718,
+        "description": "Ulster Scots emigrated to the American colonies, settling the Appalachian backcountry frontier.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blackbeard-killed-ocracoke",
+        "friendly_name": "Blackbeard Killed at Ocracoke",
+        "year": 1718,
+        "description": "Royal Navy lieutenant Robert Maynard cornered and killed the pirate Blackbeard off the Carolina coast after a fierce shipboard fight.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1784,
+    "title": "Shrapnel Shell Invented",
+    "candidates": [
+      {
+        "name": "bifocal-glasses-franklin",
+        "friendly_name": "Bifocal Glasses Invented",
+        "year": 1784,
+        "description": "Benjamin Franklin invented bifocal eyeglasses, combining distance and reading lenses.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "parachute-invented",
+        "friendly_name": "Parachute Invented",
+        "year": 1783,
+        "description": "Louis-Sébastien Lenormand made the first recorded parachute jump from a tower in Montpellier, France.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "power-loom-invented",
+        "friendly_name": "Power Loom Invented",
+        "year": 1785,
+        "description": "Edmund Cartwright patented the power loom, mechanizing weaving and transforming the textile industry.",
+        "score": 1,
+        "shared": [
+          "invented"
+        ]
+      },
+      {
+        "name": "selective-breeding-animals",
+        "friendly_name": "Selective Breeding of Livestock",
+        "year": 1760,
+        "year_end": 1795,
+        "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "wrought-iron-puddling",
+        "friendly_name": "Wrought Iron Puddling Process",
+        "year": 1784,
+        "description": "Henry Cort patented the puddling process to produce wrought iron using coal, replacing charcoal-based methods.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-mail-coach-bath-london",
+        "friendly_name": "First Mail Coach Runs",
+        "year": 1784,
+        "description": "Fast, guarded coaches replaced slow post-boys on a trial route between two English cities, speeding letters.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1836,
+    "title": "Colt Patents the Revolver",
+    "candidates": [
+      {
+        "name": "revolver-invented",
+        "friendly_name": "Revolver Invented",
+        "year": 1836,
+        "description": "Samuel Colt patented the first practical revolving firearm, changing the nature of personal weapons.",
+        "score": 2,
+        "shared": [
+          "colt",
+          "revolver"
+        ]
+      },
+      {
+        "name": "texas-revolution",
+        "friendly_name": "Texas Revolution",
+        "year": 1835,
+        "year_end": 1836,
+        "description": "American settlers in Texas rebelled against Mexico, leading to the famous Battle of the Alamo and Texas independence.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-andrew-carnegie",
+        "friendly_name": "Birth of Andrew Carnegie",
+        "year": 1835,
+        "description": "The Scottish-American steel magnate and philanthropist who funded thousands of public libraries.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "birth-mark-twain",
+        "friendly_name": "Birth of Mark Twain",
+        "year": 1835,
+        "description": "The American author of Tom Sawyer and Huckleberry Finn, celebrated humorist and social critic.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "texas-revolution-alamo",
+        "friendly_name": "Battle of the Alamo",
+        "year": 1836,
+        "description": "Texas defenders died at the Alamo, becoming martyrs for Texan independence.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1849,
+    "title": "Minie Ball Rifle Bullet Designed",
+    "candidates": [
+      {
+        "name": "repeating-rifle",
+        "friendly_name": "Repeating Rifle",
+        "year": 1849,
+        "description": "Rifles using metallic cartridges and internal magazines, allowing rapid sequential firing.",
+        "score": 2,
+        "shared": [
+          "rifle",
+          "rifles"
+        ]
+      },
+      {
+        "name": "bowler-hat-invented",
+        "friendly_name": "The Bowler Hat Invented",
+        "year": 1849,
+        "description": "London hatters Thomas and William Bowler designed a hard rounded hat for gamekeepers that became a city icon.",
+        "score": 1,
+        "shared": [
+          "designed"
+        ]
+      },
+      {
+        "name": "safety-pin-invented",
+        "friendly_name": "Safety Pin Invented",
+        "year": 1849,
+        "description": "Walter Hunt invented the safety pin in New York, designing and patenting it in just three hours.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "francis-turbine",
+        "friendly_name": "Francis Turbine",
+        "year": 1849,
+        "description": "James Francis's efficient mixed-flow water turbine, still widely used in hydroelectric dams.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blackwell-earns-medical-degree",
+        "friendly_name": "Blackwell Earns a Medical Degree",
+        "year": 1849,
+        "description": "Elizabeth Blackwell graduated from Geneva Medical College, becoming the first woman to earn a medical degree in the country.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "spring-of-nations",
+        "friendly_name": "Spring of Nations",
+        "year": 1848,
+        "year_end": 1849,
+        "description": "A wave of revolutionary uprisings swept across Europe demanding liberal reforms and national unity.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1855,
+    "title": "Armstrong Breech-Loading Gun",
+    "candidates": [
+      {
+        "name": "opium-wars-second",
+        "friendly_name": "Second Opium War",
+        "year": 1856,
+        "year_end": 1860,
+        "description": "Britain and France forced China to open more ports and legalize the opium trade after military defeat.",
+        "score": 1,
+        "shared": [
+          "more"
+        ]
+      },
+      {
+        "name": "tokugawa-edo-period-culture",
+        "friendly_name": "Edo Period Cultural Flourishing",
+        "year": 1603,
+        "year_end": 1868,
+        "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "florence-nightingale-crimea",
+        "friendly_name": "Florence Nightingale in Crimea",
+        "year": 1855,
+        "year_end": 1856,
+        "description": "Nightingale revolutionized military nursing during the Crimean War, dramatically reducing death rates.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ansei-earthquake",
+        "friendly_name": "Ansei Great Earthquakes",
+        "year": 1855,
+        "description": "A series of earthquakes struck Japan, killing over 10,000 in Edo (Tokyo).",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1862,
+    "title": "Gatling Gun Patented",
+    "candidates": [
+      {
+        "name": "gatling-gun",
+        "friendly_name": "Gatling Gun Invented",
+        "year": 1861,
+        "description": "Richard Jordan Gatling invented a hand-cranked multi-barrel machine gun capable of firing hundreds of rounds per minute.",
+        "score": 5,
+        "shared": [
+          "gatling",
+          "gun",
+          "hand",
+          "cranked",
+          "machine"
+        ]
+      },
+      {
+        "name": "dominicans-rise-capotillo",
+        "friendly_name": "Dominicans Rise at Capotillo",
+        "year": 1863,
+        "description": "Patriots raised their flag on a hill by the Haitian border to drive out Spain, which had retaken the country.",
+        "score": 1,
+        "shared": [
+          "out"
+        ]
+      },
+      {
+        "name": "battle-antietam",
+        "friendly_name": "Battle of Antietam",
+        "year": 1862,
+        "description": "The bloodiest single day in American history halted Lee's first invasion of the North.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-hampton-roads",
+        "friendly_name": "Battle of Hampton Roads",
+        "year": 1862,
+        "description": "First battle between ironclad warships Monitor and Virginia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "les-miserables",
+        "friendly_name": "Les Misérables Published",
+        "year": 1862,
+        "description": "Victor Hugo published his epic novel of justice and redemption in France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homestead-act",
+        "friendly_name": "Homestead Act",
+        "year": 1862,
+        "description": "US law gave settlers 160 acres of public land if they farmed it for five years, spurring western expansion.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1884,
+    "title": "Maxim Machine Gun Unveiled",
+    "candidates": [
+      {
+        "name": "maxim-gun-invented",
+        "friendly_name": "Maxim Gun Invented",
+        "year": 1884,
+        "description": "Hiram Maxim invented the first fully automatic machine gun, using recoil energy to fire continuously.",
+        "score": 6,
+        "shared": [
+          "maxim",
+          "machine",
+          "gun",
+          "recoil",
+          "fire",
+          "continuously"
+        ]
+      },
+      {
+        "name": "linotype-machine",
+        "friendly_name": "Linotype Machine Invented",
+        "year": 1884,
+        "description": "Ottmar Mergenthaler's Linotype cast whole lines of type, speeding newspaper printing dramatically.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      },
+      {
+        "name": "orient-express-first-run",
+        "friendly_name": "Orient Express First Run",
+        "year": 1883,
+        "description": "The famous luxury train made its first journey out of Paris, and its route to Constantinople came later.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "faberge-first-imperial-egg",
+        "friendly_name": "The First Faberge Imperial Egg",
+        "year": 1885,
+        "description": "A jeweller made a jewelled Easter egg with a hidden golden hen for the tsar's wife, starting a famed annual tradition.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1911,
+    "title": "First Bomb Dropped from a Plane",
+    "candidates": [
+      {
+        "name": "first-official-airmail-flight",
+        "friendly_name": "First Official Airmail Flight",
+        "year": 1911,
+        "description": "A pilot carried sacks of letters by aeroplane at an Indian exhibition, the first officially sanctioned mail flight.",
+        "score": 1,
+        "shared": [
+          "pilot"
+        ]
+      },
+      {
+        "name": "mexican-revolution",
+        "friendly_name": "Mexican Revolution Begins",
+        "year": 1910,
+        "description": "A decade-long civil war overthrew the Porfirio Díaz dictatorship.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "first-balkan-war",
+        "friendly_name": "First Balkan War",
+        "year": 1912,
+        "year_end": 1913,
+        "description": "The Balkan League of Serbia, Greece, Bulgaria, and Montenegro attacked the Ottoman Empire, driving it out of most of its European territories.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "union-of-south-africa",
+        "friendly_name": "Union of South Africa",
+        "year": 1910,
+        "description": "Four British colonies merged to form the Union of South Africa as a self-governing dominion.",
+        "score": 1,
+        "shared": [
+          "africa"
+        ]
+      },
+      {
+        "name": "sperry-gyroscopic-autopilot",
+        "friendly_name": "Gyroscopic Autopilot",
+        "year": 1912,
+        "description": "Lawrence Sperry linked gyroscopes to an aircraft's controls so the plane could hold its course unattended.",
+        "score": 1,
+        "shared": [
+          "plane"
+        ]
+      },
+      {
+        "name": "quimby-channel-flight",
+        "friendly_name": "Quimby Flies the Channel Solo",
+        "year": 1912,
+        "description": "Harriet Quimby, the first American woman to hold a pilot's license, flew solo across the English Channel.",
+        "score": 1,
+        "shared": [
+          "pilot"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1915,
+    "title": "Poison Gas Rolls Over Ypres",
+    "candidates": [
+      {
+        "name": "second-battle-of-ypres-first-gas-attack",
+        "friendly_name": "Second Battle of Ypres",
+        "year": 1915,
+        "description": "Germany deployed chlorine gas against Allied troops in Belgium, the first large-scale use of chemical weapons in modern warfare.",
+        "score": 6,
+        "shared": [
+          "gas",
+          "ypres",
+          "chlorine",
+          "allied",
+          "chemical",
+          "weapons"
+        ]
+      },
+      {
+        "name": "aerial-survey-photography",
+        "friendly_name": "Aerial Photos Map the Trenches",
+        "year": 1915,
+        "description": "Cameras flown over the Western Front let armies redraw trench maps within hours, founding modern photographic survey.",
+        "score": 2,
+        "shared": [
+          "over",
+          "trenches"
+        ]
+      },
+      {
+        "name": "battle-somme",
+        "friendly_name": "Battle of the Somme",
+        "year": 1916,
+        "description": "One of the bloodiest battles in history killed over one million soldiers.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "gallipoli-ends",
+        "friendly_name": "Battle of Gallipoli Ends",
+        "year": 1916,
+        "description": "The Battle of Gallipoli concluded with Ottoman victory as Allied forces evacuated.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "color-film-technicolor",
+        "friendly_name": "Technicolor Film Invented",
+        "year": 1916,
+        "description": "Herbert Kalmus co-founded Technicolor, introducing color motion picture processes to cinema.",
+        "score": 1,
+        "shared": [
+          "introducing"
+        ]
+      },
+      {
+        "name": "rasputin-murdered",
+        "friendly_name": "Rasputin Is Murdered",
+        "year": 1916,
+        "description": "Nobles poisoned, shot and drowned the mystic who held sway over the imperial family and its court.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1916,
+    "title": "Tanks Debut at the Somme",
+    "candidates": [
+      {
+        "name": "battle-somme",
+        "friendly_name": "Battle of the Somme",
+        "year": 1916,
+        "description": "One of the bloodiest battles in history killed over one million soldiers.",
+        "score": 1,
+        "shared": [
+          "somme"
+        ]
+      },
+      {
+        "name": "tank-invented",
+        "friendly_name": "Tank Introduced in Battle",
+        "year": 1916,
+        "description": "The British Mark I tank was first used in battle during World War I at the Somme.",
+        "score": 1,
+        "shared": [
+          "somme"
+        ]
+      },
+      {
+        "name": "daylight-saving-time",
+        "friendly_name": "Daylight Saving Time Adopted",
+        "year": 1916,
+        "description": "Germany pushed its clocks forward an hour to save coal, and rival and neutral nations copied the measure within weeks.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "junkers-allmetal-aircraft",
+        "friendly_name": "First All-Metal Plane Flies",
+        "year": 1915,
+        "description": "The Junkers J1, nicknamed the Tin Donkey, made its debut flight in Germany as the world's first all-metal airplane.",
+        "score": 1,
+        "shared": [
+          "debut"
+        ]
+      },
+      {
+        "name": "battle-verdun",
+        "friendly_name": "Battle of Verdun",
+        "year": 1916,
+        "description": "Germany's attempt to bleed France white became a symbol of WWI's futility.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-jutland",
+        "friendly_name": "Battle of Jutland",
+        "year": 1916,
+        "description": "The largest naval battle of WWI saw Britain maintain control of the seas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1921,
+    "title": "Thompson Submachine Gun Introduced",
+    "candidates": [
+      {
+        "name": "first-insulin-injection",
+        "friendly_name": "First Insulin Injection",
+        "year": 1922,
+        "description": "Leonard Thompson became the first person injected with insulin, transforming diabetes treatment.",
+        "score": 1,
+        "shared": [
+          "thompson"
+        ]
+      },
+      {
+        "name": "nfl-founded-canton-1920",
+        "friendly_name": "NFL Founded",
+        "year": 1920,
+        "description": "The American Professional Football Association, later renamed the NFL, formed in Ralph Hay's Canton, Ohio auto showroom.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "turkish-war-of-independence",
+        "friendly_name": "Turkish War of Independence",
+        "year": 1921,
+        "year_end": 1923,
+        "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-miss-america",
+        "friendly_name": "First Miss America Pageant",
+        "year": 1921,
+        "description": "The first Miss America pageant was held in Atlantic City.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "communist-party-china-founded",
+        "friendly_name": "Communist Party of China Founded",
+        "year": 1921,
+        "description": "The CPC was founded in Shanghai with Mao Zedong among its early members.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "russian-famine-civil-war",
+        "friendly_name": "Soviet Russian Famine",
+        "year": 1921,
+        "year_end": 1922,
+        "description": "Civil war aftermath and drought killed five million in Soviet Russia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1936,
+    "title": "Spitfire Takes Its First Flight",
+    "candidates": [
+      {
+        "name": "edward-viii-abdicates",
+        "friendly_name": "Edward VIII Abdicates",
+        "year": 1936,
+        "description": "Edward VIII gave up the throne to marry the divorcee Wallis Simpson, and his shy younger brother became George VI.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "elsie-the-cow-mascot",
+        "friendly_name": "Elsie the Cow Appears",
+        "year": 1936,
+        "description": "A dairy company introduced a smiling cartoon cow as its spokes-character, who later became a living celebrity at fairs.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "quetta-earthquake",
+        "friendly_name": "Quetta Earthquake",
+        "year": 1935,
+        "description": "An earthquake killed 30,000-60,000 in British India.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "monopoly-board-game",
+        "friendly_name": "Monopoly Goes on Sale",
+        "year": 1935,
+        "description": "Parker Brothers launched Monopoly, the property-trading board game that became one of the best-selling ever.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "spanish-civil-war",
+        "friendly_name": "Spanish Civil War Begins",
+        "year": 1936,
+        "description": "Nationalist forces led by Franco rebelled against Spain's Republican government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-television-broadcast",
+        "friendly_name": "First Public Television Broadcast",
+        "year": 1936,
+        "description": "The BBC began the world's first regular high-definition television service.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1943,
+    "title": "Bouncing Bombs Breach the Dams",
+    "candidates": [
+      {
+        "name": "autobahn-expanded",
+        "friendly_name": "German Autobahn Network Expanded",
+        "year": 1942,
+        "description": "Germany's high-speed highway network reached over 2,000 miles.",
+        "score": 2,
+        "shared": [
+          "over",
+          "german"
+        ]
+      },
+      {
+        "name": "battle-kursk",
+        "friendly_name": "Battle of Kursk",
+        "year": 1943,
+        "description": "The largest tank battle in history ended German offensive capability in the East.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "battle-el-alamein",
+        "friendly_name": "Battle of El Alamein",
+        "year": 1942,
+        "description": "Montgomery's victory over Rommel turned the tide in North Africa.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "siege-leningrad-lifted",
+        "friendly_name": "Siege of Leningrad Lifted",
+        "year": 1944,
+        "description": "The 900-day Siege of Leningrad by German forces ends.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "liberation-paris",
+        "friendly_name": "Liberation of Paris",
+        "year": 1944,
+        "description": "Allied and French Resistance forces freed Paris from German occupation.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "casablanca-released",
+        "friendly_name": "Casablanca Released",
+        "year": 1942,
+        "description": "The romantic war film starring Humphrey Bogart became a classic.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "nazis-raze-warsaw",
+        "friendly_name": "Nazis Raze Warsaw",
+        "year": 1944,
+        "year_end": 1945,
+        "description": "After crushing an uprising, German demolition squads systematically burned Warsaw street by street, destroying most of its buildings.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "siege-of-bastogne",
+        "friendly_name": "Siege of Bastogne",
+        "year": 1944,
+        "description": "German forces surrounded American paratroopers holding a snowbound Belgian town, who famously refused a demand to surrender.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1944,
+    "title": "Me 262 Jet Fighter Enters Combat",
+    "candidates": [
+      {
+        "name": "liberation-paris",
+        "friendly_name": "Liberation of Paris",
+        "year": 1944,
+        "description": "Allied and French Resistance forces freed Paris from German occupation.",
+        "score": 2,
+        "shared": [
+          "german",
+          "allied"
+        ]
+      },
+      {
+        "name": "d-day",
+        "friendly_name": "D-Day Invasion",
+        "year": 1944,
+        "description": "Allied forces landed on Normandy beaches in the largest amphibious invasion in history.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "siege-leningrad-lifted",
+        "friendly_name": "Siege of Leningrad Lifted",
+        "year": 1944,
+        "description": "The 900-day Siege of Leningrad by German forces ends.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "battle-monte-cassino-begins",
+        "friendly_name": "Battle of Monte Cassino Begins",
+        "year": 1944,
+        "description": "Allied forces launch the first assault on Monte Cassino, a four-month battle costing 105,000 casualties.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "bretton-woods-conference",
+        "friendly_name": "Bretton Woods Conference",
+        "year": 1944,
+        "description": "Allied nations established postwar monetary system with fixed exchange rates and the IMF and World Bank.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "nazis-raze-warsaw",
+        "friendly_name": "Nazis Raze Warsaw",
+        "year": 1944,
+        "year_end": 1945,
+        "description": "After crushing an uprising, German demolition squads systematically burned Warsaw street by street, destroying most of its buildings.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "siege-of-bastogne",
+        "friendly_name": "Siege of Bastogne",
+        "year": 1944,
+        "description": "German forces surrounded American paratroopers holding a snowbound Belgian town, who famously refused a demand to surrender.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "battle-kursk",
+        "friendly_name": "Battle of Kursk",
+        "year": 1943,
+        "description": "The largest tank battle in history ended German offensive capability in the East.",
+        "score": 1,
+        "shared": [
+          "german"
+        ]
+      },
+      {
+        "name": "tehran-conference",
+        "friendly_name": "Tehran Conference",
+        "year": 1943,
+        "description": "Roosevelt, Churchill, and Stalin met to coordinate Allied strategy against Nazi Germany.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "death-hitler",
+        "friendly_name": "Death of Hitler",
+        "year": 1945,
+        "description": "Adolf Hitler died by suicide in his Berlin bunker as Allied forces closed in.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "dresden-bombing",
+        "friendly_name": "Dresden Bombing",
+        "year": 1945,
+        "description": "Allied firebombing of Dresden killed approximately 25,000 people and destroyed the historic city center, becoming one of WWII's most controversial attacks.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      },
+      {
+        "name": "yalta-conference",
+        "friendly_name": "Yalta Conference",
+        "year": 1945,
+        "description": "Allied leaders met to plan the postwar reorganization of Europe.",
+        "score": 1,
+        "shared": [
+          "allied"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1947,
+    "title": "AK-47 Designed",
+    "candidates": [
+      {
+        "name": "ashgabat-earthquake",
+        "friendly_name": "Ashgabat Earthquake",
+        "year": 1948,
+        "description": "A massive earthquake destroyed most of Ashgabat in Soviet Turkmenistan, and the state hid the true toll for decades.",
+        "score": 2,
+        "shared": [
+          "soviet",
+          "most"
+        ]
+      },
+      {
+        "name": "polaroid-camera",
+        "friendly_name": "Polaroid Instant Camera Released",
+        "year": 1948,
+        "description": "Edwin Land's Polaroid Model 95 went on sale, producing finished photographs in about 60 seconds.",
+        "score": 2,
+        "shared": [
+          "finished",
+          "went"
+        ]
+      },
+      {
+        "name": "truman-doctrine",
+        "friendly_name": "Truman Doctrine",
+        "year": 1947,
+        "description": "US policy to contain communism by supporting nations resisting Soviet pressure, starting with Greece and Turkey.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "berlin-airlift",
+        "friendly_name": "Berlin Airlift Begins",
+        "year": 1948,
+        "description": "Western powers supplied West Berlin by air during the Soviet blockade.",
+        "score": 1,
+        "shared": [
+          "soviet"
+        ]
+      },
+      {
+        "name": "un-partition-plan-palestine",
+        "friendly_name": "UN Partition Plan for Palestine",
+        "year": 1947,
+        "description": "The UN voted to partition Palestine into Jewish and Arab states, setting the stage for Israel's creation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indian-independence",
+        "friendly_name": "Indian Independence",
+        "year": 1947,
+        "description": "India gained independence from British rule and was partitioned with Pakistan.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1955,
+    "title": "B-52 Stratofortress Enters Service",
+    "candidates": [
+      {
+        "name": "montgomery-bus-boycott",
+        "friendly_name": "Montgomery Bus Boycott",
+        "year": 1955,
+        "description": "Rosa Parks' arrest sparked a year-long boycott that desegregated Montgomery buses and launched MLK's career.",
+        "score": 1,
+        "shared": [
+          "career"
+        ]
+      },
+      {
+        "name": "algerian-war-begins",
+        "friendly_name": "Algerian War Begins",
+        "year": 1954,
+        "description": "The FLN launched attacks against French rule in Algeria, beginning a brutal eight-year war that ended with Algerian independence.",
+        "score": 1,
+        "shared": [
+          "eight"
+        ]
+      },
+      {
+        "name": "interstate-highway-begins",
+        "friendly_name": "Interstate Highway System Begins",
+        "year": 1956,
+        "description": "Construction began on America's national highway network.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "disneyland-opens",
+        "friendly_name": "Disneyland Opens",
+        "year": 1955,
+        "description": "Walt Disney opened his first theme park in Anaheim, California.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "warsaw-pact",
+        "friendly_name": "Warsaw Pact Founded",
+        "year": 1955,
+        "description": "The Soviet Union and Eastern Bloc formed a military alliance.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1964,
+    "title": "M16 Rifle Adopted",
+    "candidates": [
+      {
+        "name": "beatles-ed-sullivan",
+        "friendly_name": "Beatles on Ed Sullivan",
+        "year": 1964,
+        "description": "The Beatles' American TV debut launched the British Invasion.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "gulf-of-tonkin-resolution",
+        "friendly_name": "Gulf of Tonkin Resolution",
+        "year": 1964,
+        "description": "Congress authorized military force in Vietnam after reported attacks on US ships, escalating the war.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "alaska-earthquake",
+        "friendly_name": "Great Alaska Earthquake",
+        "year": 1964,
+        "description": "The most powerful earthquake in North American history struck Alaska.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "computer-mouse",
+        "friendly_name": "Computer Mouse Invented",
+        "year": 1964,
+        "description": "Douglas Engelbart invented the first computer mouse, a wooden shell with two wheels, at Stanford Research Institute.",
+        "score": 1,
+        "shared": [
+          "wooden"
+        ]
+      },
+      {
+        "name": "vietnam-war-start",
+        "friendly_name": "Vietnam War Escalates",
+        "year": 1965,
+        "description": "The United States deployed ground troops to South Vietnam.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "south-vietnam-coup",
+        "friendly_name": "South Vietnam Coup",
+        "year": 1963,
+        "description": "South Vietnamese generals overthrew and assassinated President Ngo Dinh Diem with tacit US approval, destabilizing the country during the Vietnam War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "malcolm-x-assassinated",
+        "friendly_name": "Malcolm X Assassinated",
+        "year": 1965,
+        "description": "Black nationalist leader Malcolm X was shot dead in New York by members of the Nation of Islam, from which he had recently split.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      },
+      {
+        "name": "immigration-act-1965",
+        "friendly_name": "Hart-Celler Immigration Act",
+        "year": 1965,
+        "description": "US law abolished national origin quotas, transforming American immigration toward Asia and Latin America.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "zip-codes-introduced",
+        "friendly_name": "ZIP Codes Come to American Mail",
+        "year": 1963,
+        "description": "The US post office introduced five-digit codes to speed the sorting of letters by machine.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "congo-crisis",
+        "friendly_name": "Congo Crisis",
+        "year": 1960,
+        "year_end": 1965,
+        "description": "The newly independent Congo descended into chaos and Cold War proxy conflict.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "black"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1980,
+    "title": "M1 Abrams Tank Enters Service",
+    "candidates": [
+      {
+        "name": "eric-heiden-five-golds-1980",
+        "friendly_name": "Eric Heiden's Five Golds",
+        "year": 1980,
+        "description": "American Eric Heiden won all five speed skating events at the Lake Placid Olympics, setting records in each.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "nba-three-point-line-adopted",
+        "friendly_name": "NBA Adopts Three-Point Line",
+        "year": 1979,
+        "description": "The NBA introduced the three-point line, with Chris Ford making the league's first three-pointer.",
+        "score": 1,
+        "shared": [
+          "line"
+        ]
+      },
+      {
+        "name": "reagan-first-inauguration",
+        "friendly_name": "Reagan Takes the Oath",
+        "year": 1981,
+        "description": "A former actor and governor became the oldest man yet elected, and the American hostages in Tehran were freed that same day.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "iran-iraq-war",
+        "friendly_name": "Iran-Iraq War Begins",
+        "year": 1980,
+        "description": "Saddam Hussein invaded Iran, beginning an eight-year war killing over a million.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gwangju-uprising",
+        "friendly_name": "Gwangju Uprising",
+        "year": 1980,
+        "description": "South Korean citizens rose up against the military dictatorship, sparking democratization.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1983,
+    "title": "F-117 Stealth Fighter in Service",
+    "candidates": [
+      {
+        "name": "grenada-invasion",
+        "friendly_name": "US Invasion of Grenada",
+        "year": 1983,
+        "description": "American forces invaded the Caribbean island after a Marxist coup.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "korean-air-lines-007-shot-down",
+        "friendly_name": "Korean Air Lines 007 Shot Down",
+        "year": 1983,
+        "description": "Soviet fighters shot down a Korean passenger jet that strayed into Soviet airspace, killing all 269 aboard and escalating Cold War tensions.",
+        "score": 1,
+        "shared": [
+          "jet"
+        ]
+      },
+      {
+        "name": "tcp-ip-adopted",
+        "friendly_name": "TCP/IP Protocol Adopted",
+        "year": 1983,
+        "description": "ARPANET adopted TCP/IP, the protocol that became the foundation of the modern internet.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "beirut-barracks-bombing",
+        "friendly_name": "Beirut Barracks Bombing",
+        "year": 1983,
+        "description": "Truck bombs killed 241 US Marines and 58 French paratroopers in Beirut, the deadliest single attack on US Marines since Iwo Jima.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "thriller-video",
+        "friendly_name": "Thriller Video Released",
+        "year": 1983,
+        "description": "Michael Jackson's 14-minute music video redefined the medium.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1989,
+    "title": "B-2 Stealth Bomber Flies",
+    "candidates": [
+      {
+        "name": "lemond-eight-second-win-1989",
+        "friendly_name": "LeMond's 8-Second Tour Win",
+        "year": 1989,
+        "description": "Greg LeMond overturned a 50-second deficit on the final time trial to beat Laurent Fignon by eight seconds in the Tour.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "george-hw-bush-inauguration",
+        "friendly_name": "George H. W. Bush Inaugurated",
+        "year": 1989,
+        "description": "The sitting vice president and former CIA director took office, promising a kinder, gentler nation.",
+        "score": 1,
+        "shared": [
+          "took"
+        ]
+      },
+      {
+        "name": "berlin-wall-fall",
+        "friendly_name": "Fall of the Berlin Wall",
+        "year": 1989,
+        "description": "East Germany opened its borders, symbolizing the end of the Cold War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "tiananmen-square",
+        "friendly_name": "Tiananmen Square Massacre",
+        "year": 1989,
+        "description": "Chinese troops killed pro-democracy protesters in Beijing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "panama-invasion",
+        "friendly_name": "Panama Invasion",
+        "year": 1989,
+        "year_end": 1990,
+        "description": "US forces invaded Panama to depose dictator Manuel Noriega on drug trafficking charges, the largest American military operation since Vietnam.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ayatollah-khomeini-dies",
+        "friendly_name": "Ayatollah Khomeini Dies",
+        "year": 1989,
+        "description": "The leader of Iran's Islamic Revolution died, drawing millions of mourners to his funeral.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1991,
+    "title": "Patriot Missiles Face Scuds",
+    "candidates": [
+      {
+        "name": "gulf-war",
+        "friendly_name": "Gulf War Begins",
+        "year": 1991,
+        "description": "A US-led coalition launched Operation Desert Storm to liberate Kuwait.",
+        "score": 1,
+        "shared": [
+          "gulf"
+        ]
+      },
+      {
+        "name": "somali-famine",
+        "friendly_name": "Somali Famine",
+        "year": 1991,
+        "year_end": 1993,
+        "description": "Civil war and drought caused a famine killing over 200,000 in Somalia.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "kuwait-oil-fires",
+        "friendly_name": "Kuwait's Oil Wells Set Ablaze",
+        "year": 1991,
+        "description": "Retreating troops set hundreds of wells alight, producing black smoke clouds over the desert for months.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "siege-of-sarajevo-begins",
+        "friendly_name": "Siege of Sarajevo Begins",
+        "year": 1992,
+        "description": "Bosnian Serb forces began the longest siege in modern warfare history, lasting nearly four years and killing over 11,000 Sarajevo residents.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "la-riots",
+        "friendly_name": "LA Riots",
+        "year": 1992,
+        "description": "Los Angeles erupted in deadly riots after police officers were acquitted of beating Rodney King, causing over $1 billion in damage.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "nelson-mandela-freed",
+        "friendly_name": "Nelson Mandela Released",
+        "year": 1990,
+        "description": "The anti-apartheid leader was freed after 27 years in prison.",
+        "score": 1,
+        "shared": [
+          "anti"
+        ]
+      },
+      {
+        "name": "iraq-invades-kuwait",
+        "friendly_name": "Iraq Invades Kuwait",
+        "year": 1990,
+        "description": "Saddam Hussein's forces invaded Kuwait, leading to international coalition and the Gulf War.",
+        "score": 1,
+        "shared": [
+          "gulf"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 2001,
+    "title": "Predator Fires Its First Hellfire",
+    "candidates": [
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 2,
+        "shared": [
+          "american",
+          "spy"
+        ]
+      },
+      {
+        "name": "us-china-spy-plane-incident",
+        "friendly_name": "US-China Spy Plane Incident",
+        "year": 2001,
+        "description": "US spy plane collided with Chinese fighter jet and made emergency landing, creating diplomatic crisis.",
+        "score": 1,
+        "shared": [
+          "spy"
+        ]
+      },
+      {
+        "name": "september-11",
+        "friendly_name": "September 11 Attacks",
+        "year": 2001,
+        "description": "Terrorists hijacked planes and attacked the World Trade Center and Pentagon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "afghanistan-war-start",
+        "friendly_name": "War in Afghanistan Begins",
+        "year": 2001,
+        "description": "The US invaded Afghanistan following the September 11 attacks to pursue al-Qaeda.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ipod-released",
+        "friendly_name": "iPod Released",
+        "year": 2001,
+        "description": "Apple launched the portable music player that transformed the music industry.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "china-wto-entry",
+        "friendly_name": "China Joins WTO",
+        "year": 2001,
+        "description": "China joined the World Trade Organization, accelerating its global economic integration.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 2010,
+    "title": "Stuxnet Cyberweapon Discovered",
+    "candidates": [
+      {
+        "name": "denisovans-identified",
+        "friendly_name": "Denisovans Discovered by DNA",
+        "year": 2010,
+        "description": "DNA from a finger bone in Siberia revealed Denisovans, a previously unknown human cousin.",
+        "score": 1,
+        "shared": [
+          "discovered"
+        ]
+      },
+      {
+        "name": "old-spice-man-your-man-could-smell-like",
+        "friendly_name": "The Man Your Man Could Smell Like",
+        "year": 2010,
+        "description": "A shirtless actor delivered a rapid, absurd pitch for body wash in a spot that became a viral hit.",
+        "score": 1,
+        "shared": [
+          "could"
+        ]
+      },
+      {
+        "name": "instagram-launched",
+        "friendly_name": "Instagram Launched",
+        "year": 2010,
+        "description": "The photo-sharing app that transformed social media was released.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "wikileaks-cables",
+        "friendly_name": "WikiLeaks Cables",
+        "year": 2010,
+        "description": "WikiLeaks released thousands of classified US diplomatic cables, embarrassing governments worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chilean-mine-rescue",
+        "friendly_name": "Chilean Mine Rescue",
+        "year": 2010,
+        "description": "All 33 miners trapped underground for 69 days were rescued in a dramatic televised operation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "haiti-earthquake",
+        "friendly_name": "Haiti Earthquake",
+        "year": 2010,
+        "description": "A catastrophic earthquake killed over 200,000 people and devastated Port-au-Prince.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 2011,
+    "title": "Iron Dome Stops Its First Rocket",
+    "candidates": [
+      {
+        "name": "tohoku-earthquake",
+        "friendly_name": "Tōhoku Earthquake and Tsunami",
+        "year": 2011,
+        "description": "A massive earthquake and tsunami killed over 18,000 people in Japan.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "lagarde-leads-the-imf",
+        "friendly_name": "Lagarde Takes Over the IMF",
+        "year": 2011,
+        "description": "Christine Lagarde became Managing Director of the International Monetary Fund, the first woman chosen to lead the institution.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "haiti-earthquake",
+        "friendly_name": "Haiti Earthquake",
+        "year": 2010,
+        "description": "A catastrophic earthquake killed over 200,000 people and devastated Port-au-Prince.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "iceland-eyjafjallajokull-eruption",
+        "friendly_name": "Iceland Volcano Eruption",
+        "year": 2010,
+        "description": "The eruption of Eyjafjallajokull created an ash cloud that halted European air travel for weeks, stranding millions of passengers.",
+        "score": 1,
+        "shared": [
+          "air"
+        ]
+      },
+      {
+        "name": "hurricane-sandy",
+        "friendly_name": "Hurricane Sandy",
+        "year": 2012,
+        "description": "Hurricane Sandy devastated the northeastern U.S. coast, causing over $70 billion in damage and killing more than 230 people.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "voyager-leaves-solar-system",
+        "friendly_name": "Voyager 1 Leaves Solar System",
+        "year": 2012,
+        "description": "Voyager 1 became the first spacecraft to enter interstellar space.",
+        "score": 1,
+        "shared": [
+          "system"
+        ]
+      },
+      {
+        "name": "tesla-model-s",
+        "friendly_name": "Tesla Model S Released",
+        "year": 2012,
+        "description": "Tesla released the Model S, the first mainstream luxury electric vehicle with long range.",
+        "score": 1,
+        "shared": [
+          "range"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2017,
+    "title": "Mother of All Bombs Used in Combat",
+    "candidates": [
+      {
+        "name": "var-world-cup-2018",
+        "friendly_name": "VAR at the World Cup",
+        "year": 2018,
+        "description": "Video Assistant Referee technology was used for the first time at a FIFA World Cup, held in Russia.",
+        "score": 2,
+        "shared": [
+          "used",
+          "time"
+        ]
+      },
+      {
+        "name": "somali-hijackings-fall-to-zero",
+        "friendly_name": "Somali Hijackings Fall to Zero",
+        "year": 2017,
+        "description": "For the first time since the surge began, a full year passed with no successful pirate hijacking of a large merchant vessel off the Somali coast.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "hornsdale-power-reserve",
+        "friendly_name": "Hornsdale Power Reserve Switches On",
+        "year": 2017,
+        "description": "The world's biggest lithium-ion battery at the time began stabilising South Australia's grid, built in under 100 days.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "inter-korean-summit-2018",
+        "friendly_name": "Inter-Korean Summit",
+        "year": 2018,
+        "description": "Leaders of North and South Korea met for the first time in over a decade.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "panama-papers-leak",
+        "friendly_name": "Panama Papers Leaked",
+        "year": 2016,
+        "description": "A massive leak of financial documents exposed offshore tax havens used by world leaders and celebrities.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "biles-four-rio-golds-2016",
+        "friendly_name": "Biles Wins Four Rio Golds",
+        "year": 2016,
+        "description": "Simone Biles won four gymnastics gold medals at the Rio Olympics, taking the team, all-around, vault and floor titles.",
+        "score": 1,
+        "shared": [
+          "all"
+        ]
+      },
+      {
+        "name": "bangladesh-bank-cyber-heist",
+        "friendly_name": "Bangladesh Bank Cyber Heist",
+        "year": 2016,
+        "description": "Hackers used fraudulent messages on a global banking network to try to steal nearly a billion dollars from a central bank's reserves.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 2020,
+    "title": "Drones Decide Nagorno-Karabakh",
+    "candidates": [
+      {
+        "name": "nagorno-karabakh-war-2020",
+        "friendly_name": "Nagorno-Karabakh War",
+        "year": 2020,
+        "description": "Azerbaijan recaptured most of Nagorno-Karabakh from Armenian forces in a 44-day war featuring extensive drone warfare.",
+        "score": 3,
+        "shared": [
+          "nagorno",
+          "karabakh",
+          "war"
+        ]
+      },
+      {
+        "name": "us-withdrawal-afghanistan",
+        "friendly_name": "US Withdrawal from Afghanistan",
+        "year": 2021,
+        "description": "US completed chaotic withdrawal from Afghanistan after 20 years of war, with Taliban rapidly taking control.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "brexit",
+        "friendly_name": "Brexit Completed",
+        "year": 2020,
+        "description": "The United Kingdom officially left the European Union.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "abraham-accords",
+        "friendly_name": "Abraham Accords",
+        "year": 2020,
+        "description": "UAE and Bahrain normalized relations with Israel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "george-floyd-protests",
+        "friendly_name": "George Floyd Protests",
+        "year": 2020,
+        "year_end": 2021,
+        "description": "Floyd's death sparked worldwide protests against police brutality and racial injustice.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "biden-elected",
+        "friendly_name": "Biden Elected",
+        "year": 2020,
+        "description": "Joe Biden defeated Donald Trump to become the 46th President of the United States.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]
