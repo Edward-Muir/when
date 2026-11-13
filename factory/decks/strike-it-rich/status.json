@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T07:39:21.228Z",
+  "updated_at": "2026-11-13T08:07:34.232Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,74 +86,74 @@
       "updated_at": "2026-11-13T06:07:10.886Z"
     },
     "kimberley-diamond-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8245628f751549d5bdb966311fc34d4bd066a4a85514fefe7cb2cd1c374c4f4f",
-      "updated_at": "2026-11-13T07:09:37.608Z"
+      "updated_at": "2026-11-13T08:07:33.921Z"
     },
     "tombstone-silver-strike": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fca0e00ab4426ed02f06b018941e4585606d405dd221880e10bb9845e5697d5c",
-      "updated_at": "2026-11-13T07:12:51.349Z"
+      "updated_at": "2026-11-13T08:07:33.955Z"
     },
     "witwatersrand-gold-discovery": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3370489bf6846e90664c119cb4c101b5b237d5cb1d44e7700128ca075c8c9875",
-      "updated_at": "2026-11-13T07:16:02.821Z"
+      "updated_at": "2026-11-13T08:07:33.988Z"
     },
     "coolgardie-gold-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "238b87dd2e698d2dbd300bd22fb4fc92a525816f67517be450335c565f45778e",
-      "updated_at": "2026-11-13T07:19:12.482Z"
+      "updated_at": "2026-11-13T08:07:34.019Z"
     },
     "nome-beach-gold-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "82aaccdab13cc92102cfad6944b513c994c966f6f0335502de8e85b04ac7c48f",
-      "updated_at": "2026-11-13T07:22:24.884Z"
+      "updated_at": "2026-11-13T08:07:34.053Z"
     },
     "cullinan-diamond-found": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d71c8f2932b42673c45dcf7b34b3652de37bceb10f676ed663b67095c4ff5c04",
-      "updated_at": "2026-11-13T07:25:38.749Z"
+      "updated_at": "2026-11-13T08:07:34.088Z"
     },
     "namib-diamond-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b5ab31257a4506feae42df19e70b7236eb211d00f5b5a281ac6b7af0f283af53",
-      "updated_at": "2026-11-13T07:28:48.322Z"
+      "updated_at": "2026-11-13T08:07:34.123Z"
     },
     "mir-siberian-diamond-pipe": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a54da1b10ffcacce3853a459860ad2fc7bec255db30309839be01b8ccc45eb7f",
-      "updated_at": "2026-11-13T07:32:28.227Z"
+      "updated_at": "2026-11-13T08:07:34.159Z"
     },
     "carlin-trend-gold-discovery": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d9e978e5636ed9eab64a56a106eb54d39a05e12025a81b14b30453da7cd7dc16",
-      "updated_at": "2026-11-13T07:35:54.028Z"
+      "updated_at": "2026-11-13T08:07:34.196Z"
     },
     "orapa-diamond-pipe-found": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "24210a51fe219ee847b022c68f6912f8221c7cc624c69fffbb656013fafe2ecb",
-      "updated_at": "2026-11-13T07:39:21.228Z"
+      "updated_at": "2026-11-13T08:07:34.232Z"
     },
     "serra-pelada-gold-rush": {
       "state": "pending",
