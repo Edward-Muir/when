@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:36:11.356Z",
+  "updated_at": "2026-11-13T06:07:10.886Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "las-medulas-roman-gold-mine": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cbcac9ac2c6208ef60eb0c00bcd5aa7a45eb08384ea3e39fb97b01db50be98c0",
-      "updated_at": "2026-11-13T05:09:07.652Z"
+      "updated_at": "2026-11-13T06:07:10.558Z"
     },
     "kutna-hora-silver-strike": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "42e95a7ff8850c149cd02c5ee7e35e322fbc1b6ea0669dc5995f8e2a80384b10",
-      "updated_at": "2026-11-13T05:12:04.628Z"
+      "updated_at": "2026-11-13T06:07:10.592Z"
     },
     "joachimsthal-silver-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "28e3f4eb61abd2c2ec6f8183a8149eaebbe086bf77232c5d940e93d08a28f1a0",
-      "updated_at": "2026-11-13T05:15:04.427Z"
+      "updated_at": "2026-11-13T06:07:10.626Z"
     },
     "zacatecas-silver-strike": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "655495ce6e44efd600295f2bf5474fd3991b8f628095207394cbc269fb2a1113",
-      "updated_at": "2026-11-13T05:18:00.694Z"
+      "updated_at": "2026-11-13T06:07:10.658Z"
     },
     "minas-gerais-gold-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d3fbb06570af2d4b279166c0ec1b3830781051335074e559ed0d4087443f9cdc",
-      "updated_at": "2026-11-13T05:20:55.921Z"
+      "updated_at": "2026-11-13T06:07:10.693Z"
     },
     "brazil-diamonds-discovered": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "dbf3bfc9f02446ee08b08a39637c5dae4d21238385898ac7901594d9a2af93cb",
-      "updated_at": "2026-11-13T05:23:56.074Z"
+      "updated_at": "2026-11-13T06:07:10.729Z"
     },
     "berezovsk-first-russian-gold": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fd33a31eb3539e0a5951aadd15990861ecd45d479fd1e0a8898a3204c531c428",
-      "updated_at": "2026-11-13T05:26:49.630Z"
+      "updated_at": "2026-11-13T06:07:10.777Z"
     },
     "reed-gold-nugget-north-carolina": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8bb174fcc600fedb1ce7b33e5f93f03b1a103e391a454a7579e0ed43ba677ad9",
-      "updated_at": "2026-11-13T05:29:45.780Z"
+      "updated_at": "2026-11-13T06:07:10.813Z"
     },
     "georgia-gold-rush": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e81b35c1d9d772702560672d3b5875a22179aa0f7e770c838ca3bbf2f33a4aa7",
-      "updated_at": "2026-11-13T05:33:06.108Z"
+      "updated_at": "2026-11-13T06:07:10.849Z"
     },
     "eureka-diamond-found": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4bef0c5fb598c523de8e9d0d79b9a83037604640468ea3e6fd0b19ac9b1e56af",
-      "updated_at": "2026-11-13T05:36:11.356Z"
+      "updated_at": "2026-11-13T06:07:10.886Z"
     },
     "kimberley-diamond-rush": {
       "state": "pending",
