@@ -1,21 +1,26 @@
 {
   "deck": "strike-it-rich",
   "name": "Strike It Rich",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T04:17:49.575Z",
+  "updated_at": "2026-11-13T05:09:07.652Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-13T04:17:49.575Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-13T05:09:07.652Z"
     }
   ],
   "slugs": {
     "las-medulas-roman-gold-mine": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cbcac9ac2c6208ef60eb0c00bcd5aa7a45eb08384ea3e39fb97b01db50be98c0",
+      "updated_at": "2026-11-13T05:09:07.652Z"
     },
     "kutna-hora-silver-strike": {
       "state": "pending",
