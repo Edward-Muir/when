@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T07:32:28.227Z",
+  "updated_at": "2026-11-13T07:35:54.028Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-13T07:32:28.227Z"
     },
     "carlin-trend-gold-discovery": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d9e978e5636ed9eab64a56a106eb54d39a05e12025a81b14b30453da7cd7dc16",
+      "updated_at": "2026-11-13T07:35:54.028Z"
     },
     "orapa-diamond-pipe-found": {
       "state": "pending",
