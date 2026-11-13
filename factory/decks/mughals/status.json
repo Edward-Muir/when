@@ -1,9 +1,9 @@
 {
   "deck": "mughals",
   "name": "Peacock Throne",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-13T01:23:28.819Z",
+  "updated_at": "2026-11-13T02:06:50.068Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-12T20:09:47.692Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-13T02:06:50.068Z"
     }
   ],
   "slugs": {
@@ -128,46 +132,46 @@
       "updated_at": "2026-11-12T23:07:22.945Z"
     },
     "aurangzeb-seizes-throne-agra": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d79a332c553f12d983fb7256ec09f07e9fbda1ea5a4ba925bc751a3a905928d9",
-      "updated_at": "2026-11-13T01:09:08.504Z"
+      "updated_at": "2026-11-13T02:06:49.895Z"
     },
     "badshahi-mosque-lahore-completed": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "aec03e8839cc18001b38678a2130017d634ca4cb3c098a37ab5679ab543e2985",
-      "updated_at": "2026-11-13T01:12:04.469Z"
+      "updated_at": "2026-11-13T02:06:49.933Z"
     },
     "aurangzeb-dies-deccan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "dec7a6711650acd75f3a7f4086424bf6d5cb8de7c3975177ceb02adf8c39a6c4",
-      "updated_at": "2026-11-13T01:14:56.882Z"
+      "updated_at": "2026-11-13T02:06:49.965Z"
     },
     "shah-alam-ii-returns-delhi": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3f4ac22db1d136c3968a5efa496a96a2ff89d0a696273c3712463579fffa9b93",
-      "updated_at": "2026-11-13T01:17:46.072Z"
+      "updated_at": "2026-11-13T02:06:49.998Z"
     },
     "bahadur-shah-zafar-accession": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3731b0925b23eb3a13b3582fad047ab8f178eac22209c0f2456742ae8c53bdbd",
-      "updated_at": "2026-11-13T01:20:39.099Z"
+      "updated_at": "2026-11-13T02:06:50.032Z"
     },
     "last-mughal-emperor-deposed": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "88b889eb13c06fbdce3874780bc5f132b8ab143c46b2fa8dd1ef38a2ea01439c",
-      "updated_at": "2026-11-13T01:23:28.819Z"
+      "updated_at": "2026-11-13T02:06:50.068Z"
     }
   }
 }
