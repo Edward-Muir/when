@@ -134,7 +134,9 @@ export const DEFAULT_TUNING: AnimationTuning = {
     halfLifeRows: 2.2,
     reboundHz: 3,
     settle: 9,
-    lightBrightness: 1,
+    // Halved from the rig's 1, with its growth, after it read as too much on a phone. This also
+    // halves the year and tick flash, which take their strength from it.
+    lightBrightness: 0.5,
     // 0.55 of what the rig first showed: about 6px at a streak of 1 building to about 15px at 8.
     streakGain: 0.55,
     kickBase: 0.86,
@@ -142,7 +144,7 @@ export const DEFAULT_TUNING: AnimationTuning = {
     dipPx: 2,
     dipBuildPx: 8,
     glowBuild: 0.9,
-    lightBuild: 0.7,
+    lightBuild: 0.35,
   },
   miss: {
     flashMs: 400,

@@ -392,6 +392,9 @@ were chosen in; open it in a browser to compare or retune):
   deeper dip, a bigger glow and light. Four tiers meant most correct cards looked exactly like
   the one before, and 7px to 11px was too small to notice. "Further reach" and a "charged
   rail" (a tail and a rail that stays lit) were shown as alternatives and not chosen.
+- **The rail light is at half strength** (`lightBrightness` 0.5, `lightBuild` 0.35). At full
+  strength it was judged too much on a phone; the cards' movement and the glow were left as
+  they are. The year and tick flash take their strength from the same value.
 - The build is deliberately gentle: `streakGain` 0.55, about 6px at a streak of 1 to about 15px
   at 8. The first version (gain 1, up to 22px) was judged too much.
 
