@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:26:49.630Z",
+  "updated_at": "2026-11-13T05:29:45.780Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-13T05:26:49.630Z"
     },
     "reed-gold-nugget-north-carolina": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8bb174fcc600fedb1ce7b33e5f93f03b1a103e391a454a7579e0ed43ba677ad9",
+      "updated_at": "2026-11-13T05:29:45.780Z"
     },
     "georgia-gold-rush": {
       "state": "pending",
