@@ -3,7 +3,7 @@
   "name": "Peacock Throne",
   "stage": "art-in-progress",
   "created_at": "2026-11-12T19:20:15.070Z",
-  "updated_at": "2026-11-13T01:09:08.504Z",
+  "updated_at": "2026-11-13T01:12:04.469Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-13T01:09:08.504Z"
     },
     "badshahi-mosque-lahore-completed": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "aec03e8839cc18001b38678a2130017d634ca4cb3c098a37ab5679ab543e2985",
+      "updated_at": "2026-11-13T01:12:04.469Z"
     },
     "aurangzeb-dies-deccan": {
       "state": "pending",
