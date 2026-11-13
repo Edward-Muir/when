@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:29:45.780Z",
+  "updated_at": "2026-11-13T05:33:06.108Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-13T05:29:45.780Z"
     },
     "georgia-gold-rush": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e81b35c1d9d772702560672d3b5875a22179aa0f7e770c838ca3bbf2f33a4aa7",
+      "updated_at": "2026-11-13T05:33:06.108Z"
     },
     "eureka-diamond-found": {
       "state": "pending",
