@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:20:55.921Z",
+  "updated_at": "2026-11-13T05:23:56.074Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-13T05:20:55.921Z"
     },
     "brazil-diamonds-discovered": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "dbf3bfc9f02446ee08b08a39637c5dae4d21238385898ac7901594d9a2af93cb",
+      "updated_at": "2026-11-13T05:23:56.074Z"
     },
     "berezovsk-first-russian-gold": {
       "state": "pending",
