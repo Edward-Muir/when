@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:18:00.694Z",
+  "updated_at": "2026-11-13T05:20:55.921Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-13T05:18:00.694Z"
     },
     "minas-gerais-gold-rush": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d3fbb06570af2d4b279166c0ec1b3830781051335074e559ed0d4087443f9cdc",
+      "updated_at": "2026-11-13T05:20:55.921Z"
     },
     "brazil-diamonds-discovered": {
       "state": "pending",
