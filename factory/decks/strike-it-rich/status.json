@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-13T05:15:04.427Z",
+  "updated_at": "2026-11-13T05:18:00.694Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-13T05:15:04.427Z"
     },
     "zacatecas-silver-strike": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "655495ce6e44efd600295f2bf5474fd3991b8f628095207394cbc269fb2a1113",
+      "updated_at": "2026-11-13T05:18:00.694Z"
     },
     "minas-gerais-gold-rush": {
       "state": "pending",
