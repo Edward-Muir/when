@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T06:31:33.639Z",
+  "updated_at": "2026-11-14T06:34:43.394Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-14T06:31:33.639Z"
     },
     "mother-of-all-bombs-combat": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7fba1e2581995b7602820a2f77d32d7ac577614b11cdbcc66b67dde38d6f1a14",
+      "updated_at": "2026-11-14T06:34:43.394Z"
     }
   }
 }
