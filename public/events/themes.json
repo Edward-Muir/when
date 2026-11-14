@@ -21560,7 +21560,8 @@
     "difficulty": "easy",
     "regions": [
       "Egypt"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "han-dynasty-census",
@@ -21571,7 +21572,8 @@
     "difficulty": "easy",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "quirinius-census-judea",
@@ -21584,7 +21586,8 @@
       "Israel",
       "Italy",
       "Palestine"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "danegeld-first-paid",
@@ -21595,7 +21598,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "saladin-tithe-levied",
@@ -21607,7 +21611,8 @@
     "regions": [
       "France",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ship-money-levied",
@@ -21618,7 +21623,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "window-tax-england",
@@ -21629,7 +21635,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "peter-great-beard-tax",
@@ -21641,7 +21648,8 @@
     "regions": [
       "Russia",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "corn-laws-enacted",
@@ -21652,7 +21660,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "peel-revives-income-tax",
@@ -21663,7 +21672,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "us-first-federal-income-tax",
@@ -21674,7 +21684,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "peoples-budget-lloyd-george",
@@ -21685,7 +21696,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pay-as-you-go-withholding",
@@ -21696,7 +21708,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "france-introduces-vat",
@@ -21707,7 +21720,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "california-proposition-13",
@@ -21718,7 +21732,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "scotland-poll-tax",
@@ -21729,7 +21744,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nafta-takes-effect",
@@ -21742,7 +21758,8 @@
       "Canada",
       "Mexico",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "china-abolishes-agricultural-tax",
@@ -21753,7 +21770,8 @@
     "difficulty": "very-hard",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "global-minimum-corporate-tax-deal",
@@ -21765,6 +21783,7 @@
     "regions": [
       "France",
       "Global"
-    ]
+    ],
+    "has_detail": true
   }
 ]
