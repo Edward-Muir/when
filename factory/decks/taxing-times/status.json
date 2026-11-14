@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T20:15:28.492Z",
+  "updated_at": "2026-11-14T21:00:19.667Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-14T20:15:28.492Z"
     },
     "corn-laws-enacted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fb2a1255fdc470b8bc72b860d11b47b684e0298fb3fbfef28ab5e65d8f331ec5",
+      "updated_at": "2026-11-14T21:00:19.667Z"
     },
     "peel-revives-income-tax": {
       "state": "pending",
