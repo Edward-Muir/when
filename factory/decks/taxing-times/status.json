@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T21:39:06.621Z",
+  "updated_at": "2026-11-14T22:10:49.137Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-14T21:39:06.621Z"
     },
     "us-first-federal-income-tax": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "453e4383b544ee6cc0b4171019cc5a24bb41a6c01689c26f9a445d64d70367eb",
+      "updated_at": "2026-11-14T22:10:49.137Z"
     },
     "peoples-budget-lloyd-george": {
       "state": "pending",
