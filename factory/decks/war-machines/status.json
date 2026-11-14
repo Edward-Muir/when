@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T04:24:04.239Z",
+  "updated_at": "2026-11-14T04:27:37.849Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-14T04:24:04.239Z"
     },
     "first-aerial-bombing-libya": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c30d206f4bef8178339e0e270f8714f84540f78f9b5d5aa3705bf76a740029a9",
+      "updated_at": "2026-11-14T04:27:37.849Z"
     },
     "thompson-submachine-gun": {
       "state": "pending",
