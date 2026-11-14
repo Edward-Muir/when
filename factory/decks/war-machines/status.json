@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T04:09:50.198Z",
+  "updated_at": "2026-11-14T04:13:16.294Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-14T04:09:50.198Z"
     },
     "great-bombard-constantinople": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ee8cf12fd3407335f4238b268f86e9a861765e027cdaaf512903cfb3e9132aa8",
+      "updated_at": "2026-11-14T04:13:16.294Z"
     },
     "leonardo-armoured-car": {
       "state": "pending",
