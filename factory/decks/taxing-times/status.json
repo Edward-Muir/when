@@ -1,13 +1,17 @@
 {
   "deck": "taxing-times",
   "name": "Taxing Times",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T11:07:38.494Z",
+  "updated_at": "2026-11-14T13:08:21.879Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-14T11:07:38.494Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-14T13:08:21.879Z"
     }
   ],
   "slugs": {
@@ -18,10 +22,11 @@
       "sha256": null
     },
     "han-dynasty-census": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d575bd8aada06c593b6e905126e372d110eff41d6fd4cb7355026adbf3eae19d",
+      "updated_at": "2026-11-14T13:08:21.879Z"
     },
     "quirinius-census-judea": {
       "state": "pending",
