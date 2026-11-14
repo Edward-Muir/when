@@ -21550,5 +21550,157 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "rosetta-stone-tax-decree",
+    "friendly_name": "Rosetta Stone Decree Remits Taxes",
+    "year": -196,
+    "category": "law",
+    "description": "A priestly decree carved in three scripts praised a young Egyptian king for cutting temple taxes and pardoning debts.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "han-dynasty-census",
+    "friendly_name": "Han Dynasty Counts Its People",
+    "year": 2,
+    "category": "empires",
+    "description": "Imperial officials recorded households and individuals across China, the earliest census whose figures survive.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "quirinius-census-judea",
+    "friendly_name": "Quirinius Census of Judea",
+    "year": 6,
+    "category": "empires",
+    "description": "A Roman governor counted the people and property of a newly annexed province for taxation, as the Gospel story recalls.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "danegeld-first-paid",
+    "friendly_name": "England Pays the First Danegeld",
+    "year": 991,
+    "category": "diplomacy",
+    "description": "After a defeat by Viking raiders, an English king handed over silver to buy peace, then taxed his people to raise it.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "saladin-tithe-levied",
+    "friendly_name": "Saladin Tithe Raised",
+    "year": 1188,
+    "category": "law",
+    "description": "A levy of a tenth of income and movable goods was ordered across Western Europe to fund a crusade to retake Jerusalem.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ship-money-levied",
+    "friendly_name": "Charles I Levies Ship Money",
+    "year": 1634,
+    "category": "law",
+    "description": "A king ruling without Parliament revived a coastal naval levy and extended it inland, stoking fierce resentment.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "window-tax-england",
+    "friendly_name": "Window Tax Introduced in England",
+    "year": 1696,
+    "category": "law",
+    "description": "Householders were taxed by the number of windows in their homes, and many bricked them up to avoid paying.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "peter-great-beard-tax",
+    "friendly_name": "Peter the Great Taxes Beards",
+    "year": 1698,
+    "category": "law",
+    "description": "A Russian tsar set out to Westernise his nobles by charging them a fee to keep their traditional facial hair.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "corn-laws-enacted",
+    "friendly_name": "Corn Laws Enacted",
+    "year": 1815,
+    "category": "law",
+    "description": "Britain barred cheap imported grain until home prices rose, protecting landowners while keeping bread dear for the poor.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "peel-revives-income-tax",
+    "friendly_name": "Peel Revives Income Tax",
+    "year": 1842,
+    "category": "law",
+    "description": "A Conservative prime minister brought back a tax on incomes in peacetime to offset cuts to tariffs, and it never left.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "us-first-federal-income-tax",
+    "friendly_name": "US Levies First Federal Income Tax",
+    "year": 1861,
+    "category": "law",
+    "description": "To fund a civil war, Congress taxed incomes for the first time, later letting the measure lapse.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "peoples-budget-lloyd-george",
+    "friendly_name": "Lloyd George's People's Budget",
+    "year": 1909,
+    "category": "law",
+    "description": "A British chancellor proposed taxing land and high incomes to pay for pensions and warships, provoking a clash with the Lords.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "pay-as-you-go-withholding",
+    "friendly_name": "Pay-As-You-Go Withholding Begins",
+    "year": 1943,
+    "category": "law",
+    "description": "American employers started deducting income tax straight from wages, so that millions of workers paid as they earned.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "france-introduces-vat",
+    "friendly_name": "France Introduces VAT",
+    "year": 1954,
+    "category": "law",
+    "description": "A tax collected at each stage of production, charged only on the value added, was pioneered and later spread worldwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "california-proposition-13",
+    "friendly_name": "California Passes Proposition 13",
+    "year": 1978,
+    "category": "law",
+    "description": "Voters capped property tax rates and required a supermajority to raise taxes, sparking a nationwide tax revolt.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "scotland-poll-tax",
+    "friendly_name": "Poll Tax Starts in Scotland",
+    "year": 1989,
+    "category": "law",
+    "description": "A flat per-person local levy replaced property rates a year before England, provoking mass non-payment and later riots.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nafta-takes-effect",
+    "friendly_name": "NAFTA Takes Effect",
+    "year": 1994,
+    "category": "trade",
+    "description": "The US, Canada and Mexico began phasing out tariffs on most goods traded between them, creating a vast free trade zone.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "china-abolishes-agricultural-tax",
+    "friendly_name": "China Abolishes Farm Tax",
+    "year": 2006,
+    "category": "law",
+    "description": "After many centuries, farmers in the world's most populous country stopped paying a tax on their harvests.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "global-minimum-corporate-tax-deal",
+    "friendly_name": "Global Minimum Tax Deal Agreed",
+    "year": 2021,
+    "category": "diplomacy",
+    "description": "More than 130 countries backed a deal setting a floor on corporate tax rates to curb profit shifting to havens.",
+    "difficulty": "easy"
   }
 ]
