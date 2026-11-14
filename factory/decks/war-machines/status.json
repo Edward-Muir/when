@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T06:15:51.864Z",
+  "updated_at": "2026-11-14T06:18:59.387Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-14T06:15:51.864Z"
     },
     "m16-rifle-adopted": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "043e314f94fcac5b6af11bad999de644af12518140c245441c03d1203be16112",
+      "updated_at": "2026-11-14T06:18:59.387Z"
     },
     "f-117-stealth-fighter-service": {
       "state": "pending",
