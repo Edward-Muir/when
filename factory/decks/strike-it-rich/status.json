@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-14T01:12:55.935Z",
+  "updated_at": "2026-11-14T01:18:09.705Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-11-14T01:12:55.935Z"
     },
     "lac-de-gras-diamonds-found": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a7d1729e8c5ce9cdd5f48ce3026ae392c21c6e743aad3a81cc558e2df6b83eba",
+      "updated_at": "2026-11-14T01:18:09.705Z"
     },
     "lesedi-la-rona-diamond-found": {
       "state": "pending",
