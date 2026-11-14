@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T23:02:27.328Z",
+  "updated_at": "2026-11-14T23:23:04.206Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-14T23:02:27.328Z"
     },
     "france-introduces-vat": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a0e53394efd335e9b10b974a0e52352fac18a18f707de44607deeb4b1896352a",
+      "updated_at": "2026-11-14T23:23:04.206Z"
     },
     "california-proposition-13": {
       "state": "pending",
