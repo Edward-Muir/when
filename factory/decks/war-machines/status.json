@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T04:34:47.779Z",
+  "updated_at": "2026-11-14T04:38:23.485Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-14T04:34:47.779Z"
     },
     "dambusters-bouncing-bombs": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fccbe203e5c5d887ce46543a186e207e57bae8f815cad27181515223de784f60",
+      "updated_at": "2026-11-14T04:38:23.485Z"
     },
     "me-262-jet-fighter-combat": {
       "state": "pending",
