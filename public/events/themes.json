@@ -21557,7 +21557,10 @@
     "year": -196,
     "category": "law",
     "description": "A priestly decree carved in three scripts praised a young Egyptian king for cutting temple taxes and pardoning debts.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "han-dynasty-census",
@@ -21565,7 +21568,10 @@
     "year": 2,
     "category": "empires",
     "description": "Imperial officials recorded households and individuals across China, the earliest census whose figures survive.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "quirinius-census-judea",
@@ -21573,7 +21579,12 @@
     "year": 6,
     "category": "empires",
     "description": "A Roman governor counted the people and property of a newly annexed province for taxation, as the Gospel story recalls.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Israel",
+      "Italy",
+      "Palestine"
+    ]
   },
   {
     "name": "danegeld-first-paid",
@@ -21581,7 +21592,10 @@
     "year": 991,
     "category": "diplomacy",
     "description": "After a defeat by Viking raiders, an English king handed over silver to buy peace, then taxed his people to raise it.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "saladin-tithe-levied",
@@ -21589,7 +21603,11 @@
     "year": 1188,
     "category": "law",
     "description": "A levy of a tenth of income and movable goods was ordered across Western Europe to fund a crusade to retake Jerusalem.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France",
+      "United Kingdom"
+    ]
   },
   {
     "name": "ship-money-levied",
@@ -21597,7 +21615,10 @@
     "year": 1634,
     "category": "law",
     "description": "A king ruling without Parliament revived a coastal naval levy and extended it inland, stoking fierce resentment.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "window-tax-england",
@@ -21605,7 +21626,10 @@
     "year": 1696,
     "category": "law",
     "description": "Householders were taxed by the number of windows in their homes, and many bricked them up to avoid paying.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "peter-great-beard-tax",
@@ -21613,7 +21637,11 @@
     "year": 1698,
     "category": "law",
     "description": "A Russian tsar set out to Westernise his nobles by charging them a fee to keep their traditional facial hair.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "corn-laws-enacted",
@@ -21621,7 +21649,10 @@
     "year": 1815,
     "category": "law",
     "description": "Britain barred cheap imported grain until home prices rose, protecting landowners while keeping bread dear for the poor.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "peel-revives-income-tax",
@@ -21629,7 +21660,10 @@
     "year": 1842,
     "category": "law",
     "description": "A Conservative prime minister brought back a tax on incomes in peacetime to offset cuts to tariffs, and it never left.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "us-first-federal-income-tax",
@@ -21637,7 +21671,10 @@
     "year": 1861,
     "category": "law",
     "description": "To fund a civil war, Congress taxed incomes for the first time, later letting the measure lapse.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "peoples-budget-lloyd-george",
@@ -21645,7 +21682,10 @@
     "year": 1909,
     "category": "law",
     "description": "A British chancellor proposed taxing land and high incomes to pay for pensions and warships, provoking a clash with the Lords.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "pay-as-you-go-withholding",
@@ -21653,7 +21693,10 @@
     "year": 1943,
     "category": "law",
     "description": "American employers started deducting income tax straight from wages, so that millions of workers paid as they earned.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "france-introduces-vat",
@@ -21661,7 +21704,10 @@
     "year": 1954,
     "category": "law",
     "description": "A tax collected at each stage of production, charged only on the value added, was pioneered and later spread worldwide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "california-proposition-13",
@@ -21669,7 +21715,10 @@
     "year": 1978,
     "category": "law",
     "description": "Voters capped property tax rates and required a supermajority to raise taxes, sparking a nationwide tax revolt.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "scotland-poll-tax",
@@ -21677,7 +21726,10 @@
     "year": 1989,
     "category": "law",
     "description": "A flat per-person local levy replaced property rates a year before England, provoking mass non-payment and later riots.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "nafta-takes-effect",
@@ -21685,7 +21737,12 @@
     "year": 1994,
     "category": "trade",
     "description": "The US, Canada and Mexico began phasing out tariffs on most goods traded between them, creating a vast free trade zone.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Canada",
+      "Mexico",
+      "United States"
+    ]
   },
   {
     "name": "china-abolishes-agricultural-tax",
@@ -21693,7 +21750,10 @@
     "year": 2006,
     "category": "law",
     "description": "After many centuries, farmers in the world's most populous country stopped paying a tax on their harvests.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "global-minimum-corporate-tax-deal",
@@ -21701,6 +21761,10 @@
     "year": 2021,
     "category": "diplomacy",
     "description": "More than 130 countries backed a deal setting a floor on corporate tax rates to curb profit shifting to havens.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France",
+      "Global"
+    ]
   }
 ]
