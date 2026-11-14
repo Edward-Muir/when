@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T04:31:12.325Z",
+  "updated_at": "2026-11-14T04:34:47.779Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-14T04:31:12.325Z"
     },
     "spitfire-first-flight": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b39306b6f746753aaf94124e56d26c29d004bd8b7a96352822de9506e141366f",
+      "updated_at": "2026-11-14T04:34:47.779Z"
     },
     "dambusters-bouncing-bombs": {
       "state": "pending",
