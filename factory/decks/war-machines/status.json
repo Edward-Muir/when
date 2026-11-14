@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T04:41:58.223Z",
+  "updated_at": "2026-11-14T05:07:49.712Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "greek-fire-constantinople": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "59cc0c1a4bbf1aeff6b312555b7159cf49d53fbeaed7851fbf80f4c64a0d815c",
-      "updated_at": "2026-11-14T04:09:50.198Z"
+      "updated_at": "2026-11-14T05:07:49.394Z"
     },
     "great-bombard-constantinople": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ee8cf12fd3407335f4238b268f86e9a861765e027cdaaf512903cfb3e9132aa8",
-      "updated_at": "2026-11-14T04:13:16.294Z"
+      "updated_at": "2026-11-14T05:07:49.428Z"
     },
     "leonardo-armoured-car": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a995a4554201f5eb5f3a9bc71fa963772c6faf0d9aaecdcc01be16ce8276fabd",
-      "updated_at": "2026-11-14T04:16:45.906Z"
+      "updated_at": "2026-11-14T05:07:49.463Z"
     },
     "nagashino-matchlock-volleys": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ace7407e091676a0c58f32f174cfde5b8e08c5d2e051f175126d3658e62b450a",
-      "updated_at": "2026-11-14T04:20:26.298Z"
+      "updated_at": "2026-11-14T05:07:49.494Z"
     },
     "puckle-gun-patented": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3ad9a27f9aae3d15eba4d6156f0db3f07fbb0691b8b030871776c671380bb135",
-      "updated_at": "2026-11-14T04:24:04.239Z"
+      "updated_at": "2026-11-14T05:07:49.528Z"
     },
     "first-aerial-bombing-libya": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c30d206f4bef8178339e0e270f8714f84540f78f9b5d5aa3705bf76a740029a9",
-      "updated_at": "2026-11-14T04:27:37.849Z"
+      "updated_at": "2026-11-14T05:07:49.564Z"
     },
     "thompson-submachine-gun": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "bbee5b7b55ee2eb31c57dc283d10996fbf962cf7bcb3b41e7b4f59d0fe47df8b",
-      "updated_at": "2026-11-14T04:31:12.325Z"
+      "updated_at": "2026-11-14T05:07:49.602Z"
     },
     "spitfire-first-flight": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The rear fuselage has the painted serial 'K5054', which is text in the picture. Regenerate with no lettering or serial numbers on the aircraft.",
       "sha256": "b39306b6f746753aaf94124e56d26c29d004bd8b7a96352822de9506e141366f",
-      "updated_at": "2026-11-14T04:34:47.779Z"
+      "updated_at": "2026-11-14T05:07:49.640Z"
     },
     "dambusters-bouncing-bombs": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fccbe203e5c5d887ce46543a186e207e57bae8f815cad27181515223de784f60",
-      "updated_at": "2026-11-14T04:38:23.485Z"
+      "updated_at": "2026-11-14T05:07:49.677Z"
     },
     "me-262-jet-fighter-combat": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d5439008886e0b1ce118494a964d24987af15a82fce28a694e9435896e44f382",
-      "updated_at": "2026-11-14T04:41:58.223Z"
+      "updated_at": "2026-11-14T05:07:49.712Z"
     },
     "ak-47-designed": {
       "state": "pending",
