@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T17:12:16.137Z",
+  "updated_at": "2026-11-14T17:19:04.936Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-14T17:12:16.137Z"
     },
     "saladin-tithe-levied": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "22fe88abf7c0280cbf784a8be60a961f919fa7ec0cf6dda207dcc4239ca15499",
+      "updated_at": "2026-11-14T17:19:04.936Z"
     },
     "ship-money-levied": {
       "state": "pending",
