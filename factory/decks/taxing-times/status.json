@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T13:35:59.184Z",
+  "updated_at": "2026-11-14T14:23:09.481Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,10 +16,11 @@
   ],
   "slugs": {
     "rosetta-stone-tax-decree": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6e91ebbd6a2d53a16bc904be46f8736ac5096fe58494fcc3aa8f8581d72cbe48",
+      "updated_at": "2026-11-14T14:23:09.481Z"
     },
     "han-dynasty-census": {
       "state": "qc-pass",
