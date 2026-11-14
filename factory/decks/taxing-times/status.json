@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T17:19:04.936Z",
+  "updated_at": "2026-11-14T17:39:21.772Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-14T17:19:04.936Z"
     },
     "ship-money-levied": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "53f4b58d1449c9f71a142e90a5417b5ab0fade6a643344fa1437d48ac2ec37ad",
+      "updated_at": "2026-11-14T17:39:21.772Z"
     },
     "window-tax-england": {
       "state": "pending",
