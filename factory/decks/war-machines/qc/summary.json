@@ -49,11 +49,11 @@
     "description": "A dark, painterly still life. An open black hard case sits on a worn wooden counter, lined with black fabric and divided into compartments. In it lies a submachine gun with a long barrel, a round drum magazine under the receiver, and wooden grips and stock. A second round drum sits in a compartment to the left. Behind is a dim room with wooden cabinets and glass display cases. No people, no visible text, no frame."
   },
   "spitfire-first-flight": {
-    "state": "qc-fail",
-    "reason": "The rear fuselage has the painted serial 'K5054', which is text in the picture. Regenerate with no lettering or serial numbers on the aircraft.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A silver single-engine propeller monoplane with elliptical wings and a bubble canopy flies low over a muddy grass airfield under storm clouds, with 'K5054' painted on its rear fuselage. A dark wooden hangar with small figures stands behind. In the foreground, two men in dark blue uniforms and three in brown flight overalls watch it. The painting fills the canvas with no frame or border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A grey-green single-engine monoplane fighter with a propeller spinning, lifting off or flying low over a grass field under a dark, stormy sky. A hangar stands at the right edge, and a group of uniformed men in overalls watch from the lower right. No visible text, frame or border."
   },
   "dambusters-bouncing-bombs": {
     "state": "qc-pass",
@@ -68,5 +68,61 @@
     "by": "review",
     "attempts": 1,
     "description": "A swept-wing jet fighter in purple and grey-green camouflage with two engine pods streaks diagonally through dark clouds, a thin smoke trail rising behind it. Small bombers with multiple engines fly in a formation at the lower left. Painted in an oil-painting style, filling the frame edge to edge, with no visible text."
+  },
+  "ak-47-designed": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painting style still life of a dark workshop bench. Two rifles with wooden stocks and handguards and long curved magazines lie side by side among scattered screws, wrenches, calipers, a hammer and a bench vise. Cloth rags sit at the lower left, and the background is dark with hanging tools. No people. The painting fills the frame edge to edge."
+  },
+  "b-52-enters-service": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large silver swept-wing bomber with a tall vertical tail and paired engine pods under its wings sits on a wet, reflective tarmac under a dark stormy sky. Three or four people in uniform or overalls stand and kneel beside a small cart-like machine near the front wheels. A round star-and-bar roundel is on the fuselage. Distant aircraft and vehicles are faint in the background. The image is a painterly oil style, with no visible letters or numbers."
+  },
+  "m16-rifle-adopted": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted soldier in a camouflage-covered steel helmet and olive fatigues with a harness wades through dense jungle undergrowth, holding a black rifle with a carry handle across his chest. A second soldier behind him, partly in shadow, carries a longer rifle with a wooden stock. Lush green foliage and hanging vines fill the frame. No visible text, frame or border."
+  },
+  "f-117-stealth-fighter-service": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, faceted, angular jet with flat panels and a pointed nose sits on a concrete apron at night in front of an open hangar with warm lights, with desert hills and a dark sky behind. Some small marks are on the fuselage, and no people are visible. The painting fills the frame edge to edge."
+  },
+  "b-2-stealth-bomber-first-flight": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large dark flying-wing aircraft with no tail and a smooth blended body, gear down, hangs against a stormy cloud sky over a dry desert with a dirt track and distant mountains. No people, no text, no frame; the painting fills the square edge to edge."
+  },
+  "patriot-missiles-scuds": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark night desert scene. A boxy, angled multi-canister missile launcher sits on a military truck, firing a bright fiery missile whose trail arcs up across a black sky. A second streak falls from the upper right, and a faint city skyline glows low on the horizon. Ground is rubble-strewn sand with a small box unit nearby. No people, no visible text beyond a faint painter's mark in the lower right corner."
+  },
+  "predator-drone-first-hellfire": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A high-winged, long-winged unmanned aircraft with a bulbous nose sensor and a propeller at the rear flies over a dark desert at dusk, firing a missile from under its wing that leaves a bright orange exhaust flame. Dark stormy sky above, rugged brown mountains below. No visible text, frame or people."
+  },
+  "mother-of-all-bombs-combat": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large olive-green cylindrical bomb with a pointed nose and grid fins slides down a cradle out of the open rear ramp of a dark grey four-engined propeller cargo aircraft, with a small parachute deployed behind it. Warm light glows inside the fuselage. Below are dark, stormy clouds and bare mountain ridges. Painterly oil style, edge to edge, no visible text."
   }
 }

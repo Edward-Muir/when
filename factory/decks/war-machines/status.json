@@ -1,9 +1,9 @@
 {
   "deck": "war-machines",
   "name": "War Machines",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T06:34:43.394Z",
+  "updated_at": "2026-11-14T07:07:38.912Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-14T04:09:50.198Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-14T07:07:38.912Z"
     }
   ],
   "slugs": {
@@ -65,11 +69,11 @@
       "updated_at": "2026-11-14T05:07:49.602Z"
     },
     "spitfire-first-flight": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The rear fuselage has the painted serial 'K5054', which is text in the picture. Regenerate with no lettering or serial numbers on the aircraft.",
+      "reason": null,
       "sha256": "ef47d7e8e31d48a68721adbebd95e06cb2e0ab9dfe2744ea0f21e50aa264ece1",
-      "updated_at": "2026-11-14T06:09:35.497Z"
+      "updated_at": "2026-11-14T07:07:38.637Z"
     },
     "dambusters-bouncing-bombs": {
       "state": "qc-pass",
@@ -86,60 +90,60 @@
       "updated_at": "2026-11-14T05:07:49.712Z"
     },
     "ak-47-designed": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9daee7ee6357439561d9328eca5bc8b4fd0037af197433147820527174aaef4a",
-      "updated_at": "2026-11-14T06:12:43.997Z"
+      "updated_at": "2026-11-14T07:07:38.670Z"
     },
     "b-52-enters-service": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "056b9b75a3d87bd47382a06537aa6f2c61d117c68ee9da35868300f48b2f6be0",
-      "updated_at": "2026-11-14T06:15:51.864Z"
+      "updated_at": "2026-11-14T07:07:38.702Z"
     },
     "m16-rifle-adopted": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "043e314f94fcac5b6af11bad999de644af12518140c245441c03d1203be16112",
-      "updated_at": "2026-11-14T06:18:59.387Z"
+      "updated_at": "2026-11-14T07:07:38.735Z"
     },
     "f-117-stealth-fighter-service": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9c14fe2ff3c25d6f38565c0110982e1417b843cdb749a50ddef4b82e7ec68e8a",
-      "updated_at": "2026-11-14T06:22:07.778Z"
+      "updated_at": "2026-11-14T07:07:38.770Z"
     },
     "b-2-stealth-bomber-first-flight": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1abe3b961ba80cfb82f6f4f2c455f53c41eef83e0fb34d207b7d07564d97bd85",
-      "updated_at": "2026-11-14T06:25:14.909Z"
+      "updated_at": "2026-11-14T07:07:38.803Z"
     },
     "patriot-missiles-scuds": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "aa4fa3c2b237d60457f77eb89609fcf6a4cc0e01b97f9dafb694988dd07922b4",
-      "updated_at": "2026-11-14T06:28:23.426Z"
+      "updated_at": "2026-11-14T07:07:38.837Z"
     },
     "predator-drone-first-hellfire": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "03f7549a41acdd5c50371623161c5cc9e69809eaccc834e5cbf6a5e62eb659b1",
-      "updated_at": "2026-11-14T06:31:33.639Z"
+      "updated_at": "2026-11-14T07:07:38.874Z"
     },
     "mother-of-all-bombs-combat": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7fba1e2581995b7602820a2f77d32d7ac577614b11cdbcc66b67dde38d6f1a14",
-      "updated_at": "2026-11-14T06:34:43.394Z"
+      "updated_at": "2026-11-14T07:07:38.912Z"
     }
   }
 }
