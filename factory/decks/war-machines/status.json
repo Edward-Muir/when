@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T05:07:49.712Z",
+  "updated_at": "2026-11-14T06:09:35.497Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,11 +65,11 @@
       "updated_at": "2026-11-14T05:07:49.602Z"
     },
     "spitfire-first-flight": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The rear fuselage has the painted serial 'K5054', which is text in the picture. Regenerate with no lettering or serial numbers on the aircraft.",
-      "sha256": "b39306b6f746753aaf94124e56d26c29d004bd8b7a96352822de9506e141366f",
-      "updated_at": "2026-11-14T05:07:49.640Z"
+      "sha256": "ef47d7e8e31d48a68721adbebd95e06cb2e0ab9dfe2744ea0f21e50aa264ece1",
+      "updated_at": "2026-11-14T06:09:35.497Z"
     },
     "dambusters-bouncing-bombs": {
       "state": "qc-pass",
