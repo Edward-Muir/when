@@ -3,7 +3,7 @@
   "name": "Strike It Rich",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T04:17:49.575Z",
-  "updated_at": "2026-11-14T01:09:45.655Z",
+  "updated_at": "2026-11-14T01:12:55.935Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-11-14T01:09:45.655Z"
     },
     "argyle-diamond-mine-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e7e791d28b36ef98b1686a4037d90397db3e0e59c16312d6e0c3628d1761cda3",
+      "updated_at": "2026-11-14T01:12:55.935Z"
     },
     "lac-de-gras-diamonds-found": {
       "state": "pending",
