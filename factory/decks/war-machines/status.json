@@ -1,21 +1,26 @@
 {
   "deck": "war-machines",
   "name": "War Machines",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-13T11:15:21.674Z",
+  "updated_at": "2026-11-14T04:09:50.198Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-13T11:15:21.674Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-14T04:09:50.198Z"
     }
   ],
   "slugs": {
     "greek-fire-constantinople": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "59cc0c1a4bbf1aeff6b312555b7159cf49d53fbeaed7851fbf80f4c64a0d815c",
+      "updated_at": "2026-11-14T04:09:50.198Z"
     },
     "great-bombard-constantinople": {
       "state": "pending",
