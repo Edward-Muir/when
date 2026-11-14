@@ -1,0 +1,15 @@
+{
+  "slug": "ak-47-designed",
+  "description": "An oil-painting style still life of a dark workshop bench. Two rifles with wooden stocks and handguards and long curved magazines lie side by side among scattered screws, wrenches, calipers, a hammer and a bench vise. Cloth rags sit at the lower left, and the background is dark with hanging tools. No people. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

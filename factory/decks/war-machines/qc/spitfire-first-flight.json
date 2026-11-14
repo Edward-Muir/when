@@ -1,0 +1,15 @@
+{
+  "slug": "spitfire-first-flight",
+  "description": "A grey-green single-engine monoplane fighter with a propeller spinning, lifting off or flying low over a grass field under a dark, stormy sky. A hangar stands at the right edge, and a group of uniformed men in overalls watch from the lower right. No visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

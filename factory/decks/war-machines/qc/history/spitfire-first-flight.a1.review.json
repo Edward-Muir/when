@@ -1,0 +1,15 @@
+{
+  "slug": "spitfire-first-flight",
+  "description": "A silver single-engine propeller monoplane with a bubble canopy and a serial-style marking reading K5054 on its tail hovers or lifts off above a flat grass field. Dark storm clouds with shafts of light fill the sky. A dark wooden hangar sits in the middle distance with small figures near it. In the foreground, two men in dark blue service uniforms with peaked caps stand at left, and three men in brown flight overalls stand at right, all watching the aircraft. The image fills the canvas edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The tail carries a painted serial-style marking reading K5054, which is text in the picture. Regenerate without any lettering or serial on the aircraft. The aircraft is shown well above the ground rather than just leaving the runway, which the scene asked for, but that is not a failing check."
+}
