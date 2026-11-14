@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T04:16:45.906Z",
+  "updated_at": "2026-11-14T04:20:26.298Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-14T04:16:45.906Z"
     },
     "nagashino-matchlock-volleys": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ace7407e091676a0c58f32f174cfde5b8e08c5d2e051f175126d3658e62b450a",
+      "updated_at": "2026-11-14T04:20:26.298Z"
     },
     "puckle-gun-patented": {
       "state": "pending",
