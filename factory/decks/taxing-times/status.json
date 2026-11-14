@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T18:32:36.608Z",
+  "updated_at": "2026-11-14T20:15:28.492Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-14T18:32:36.608Z"
     },
     "peter-great-beard-tax": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "35899e9d41609b67d30ea3ffd25d0eb3bb18611c61c10eeefd023f6f55a983ae",
+      "updated_at": "2026-11-14T20:15:28.492Z"
     },
     "corn-laws-enacted": {
       "state": "pending",
