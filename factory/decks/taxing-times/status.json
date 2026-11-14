@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-14T17:06:05.441Z",
+  "updated_at": "2026-11-14T17:12:16.137Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-14T17:06:05.441Z"
     },
     "danegeld-first-paid": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "92d54ed93fcffda5b2e62e77e24bf7076c0f6978e093a2f83f0623eb0cd5fbb0",
+      "updated_at": "2026-11-14T17:12:16.137Z"
     },
     "saladin-tithe-levied": {
       "state": "pending",
