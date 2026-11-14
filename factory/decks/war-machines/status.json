@@ -3,7 +3,7 @@
   "name": "War Machines",
   "stage": "art-in-progress",
   "created_at": "2026-11-13T11:15:21.674Z",
-  "updated_at": "2026-11-14T06:18:59.387Z",
+  "updated_at": "2026-11-14T06:22:07.778Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-14T06:18:59.387Z"
     },
     "f-117-stealth-fighter-service": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9c14fe2ff3c25d6f38565c0110982e1417b843cdb749a50ddef4b82e7ec68e8a",
+      "updated_at": "2026-11-14T06:22:07.778Z"
     },
     "b-2-stealth-bomber-first-flight": {
       "state": "pending",
