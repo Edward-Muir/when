@@ -1,0 +1,41 @@
+{
+  "id": "strike-it-rich",
+  "name": "Strike It Rich",
+  "scope": "Yes if it is a gold, silver or diamond strike or rush",
+  "boundary": "Strike It Rich: rushes and finds of precious metals and gems; oil goes to Black Gold, the conquest that found Potosi to Conquistadors.",
+  "neighbours": [
+    "black-gold",
+    "conquistadors",
+    "colonies-founded"
+  ],
+  "grid": {
+    "categories": [
+      "commerce",
+      "migration",
+      "trade"
+    ],
+    "eras": [
+      "earlyModern",
+      "industrial"
+    ],
+    "regions": [
+      "North America",
+      "Oceania",
+      "Sub-Saharan Africa"
+    ]
+  },
+  "example_beats": [
+    "Silver found at Potosi (1545)",
+    "Gold at Sutter's Mill (1848)",
+    "Ballarat gold rush (1851)",
+    "Comstock Lode (1859)",
+    "Diamonds found at Kimberley (1871)",
+    "Gold on the Witwatersrand (1886)",
+    "Coolgardie gold rush (1892)",
+    "Klondike gold rush (1896)",
+    "Cullinan diamond found (1905)",
+    "Argyle diamond mine opens (1983)"
+  ],
+  "appeal": 3,
+  "status": "authoring"
+}

@@ -1,0 +1,194 @@
+[
+  {
+    "name": "las-medulas-roman-gold-mine",
+    "friendly_name": "Roman Gold Mine at Las Medulas",
+    "year": -25,
+    "category": "craft",
+    "description": "After conquering the northwest of Iberia, Roman engineers used aqueducts to wash whole mountains away for their gold.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kutna-hora-silver-strike",
+    "friendly_name": "Silver Found at Kutná Hora",
+    "year": 1298,
+    "category": "trade",
+    "description": "A rich silver seam in Bohemia set off a boom that built a wealthy mining town and supplied the groschen coin to Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "joachimsthal-silver-rush",
+    "friendly_name": "Silver Rush at Joachimsthal",
+    "year": 1516,
+    "category": "trade",
+    "description": "A silver strike in the Bohemian mountains led to the coins whose name gave the world the word dollar.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zacatecas-silver-strike",
+    "friendly_name": "Silver Strike at Zacatecas",
+    "year": 1546,
+    "category": "trade",
+    "description": "Prospectors in the Mexican highlands struck rich veins that launched a huge silver mining centre of the Spanish empire.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "minas-gerais-gold-rush",
+    "friendly_name": "Gold Found in Minas Gerais",
+    "year": 1693,
+    "category": "migration",
+    "description": "Prospectors in the Brazilian interior found gold in river gravels, starting the first great gold rush of the Americas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "brazil-diamonds-discovered",
+    "friendly_name": "Diamonds Found in Brazil",
+    "year": 1725,
+    "category": "trade",
+    "description": "Miners panning for gold in the Brazilian highlands noticed sparkling stones, ending India's long monopoly on diamonds.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "berezovsk-first-russian-gold",
+    "friendly_name": "Russia's First Gold at Berezovsk",
+    "year": 1745,
+    "category": "craft",
+    "description": "A peasant found gold-bearing quartz in the Ural Mountains, opening the first gold mines of the Russian empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "reed-gold-nugget-north-carolina",
+    "friendly_name": "North Carolina's 17-Pound Nugget",
+    "year": 1799,
+    "category": "nature",
+    "description": "A boy fishing in a creek found a gold rock so heavy his family used it as a doorstop until a jeweller named its worth.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "georgia-gold-rush",
+    "friendly_name": "Georgia Gold Rush Begins",
+    "year": 1829,
+    "category": "migration",
+    "description": "Gold found in the Appalachian foothills drew thousands of prospectors and the country's first big rush, before California.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "eureka-diamond-found",
+    "friendly_name": "The Eureka Diamond",
+    "year": 1867,
+    "category": "nature",
+    "description": "Children found a sparkling pebble by a South African riverbank, the first diamond found there and a spark for later rushes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kimberley-diamond-rush",
+    "friendly_name": "Diamonds Found at Kimberley",
+    "year": 1871,
+    "category": "nature",
+    "description": "A hill on a South African farm yielded so many diamonds that it became a vast hole dug mostly by hand.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tombstone-silver-strike",
+    "friendly_name": "Silver Strike at Tombstone",
+    "year": 1877,
+    "category": "trade",
+    "description": "A prospector ignored warnings that he would find only his own grave and struck silver in the Arizona desert.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "witwatersrand-gold-discovery",
+    "friendly_name": "Gold on the Witwatersrand",
+    "year": 1886,
+    "category": "nature",
+    "description": "A reef of gold-bearing conglomerate was found on the South African highveld, and Johannesburg soon sprang up around it.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coolgardie-gold-rush",
+    "friendly_name": "Coolgardie Gold Rush",
+    "year": 1892,
+    "category": "migration",
+    "description": "Nuggets picked up from the dry Western Australian scrub drew prospectors across the desert to a new boom town.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nome-beach-gold-rush",
+    "friendly_name": "Gold on the Beach at Nome",
+    "year": 1899,
+    "category": "migration",
+    "description": "Gold found in the sands of Alaska's Bering Sea coast drew thousands of hopefuls to dig on the shoreline itself.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cullinan-diamond-found",
+    "friendly_name": "The Cullinan Diamond Found",
+    "year": 1905,
+    "category": "nature",
+    "description": "A mine manager spotted a gleam in a pit wall and pulled out the largest gem diamond ever discovered.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "namib-diamond-rush",
+    "friendly_name": "Diamonds Found in the Namib Desert",
+    "year": 1908,
+    "category": "migration",
+    "description": "A railway worker shovelling sand in the Namibian desert picked up a diamond, starting a rush to a barren coast.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mir-siberian-diamond-pipe",
+    "friendly_name": "Diamonds Found in Siberia",
+    "year": 1955,
+    "category": "nature",
+    "description": "A Soviet prospecting team found the first major diamond-bearing kimberlite pipe, opening a huge mine in frozen ground.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "carlin-trend-gold-discovery",
+    "friendly_name": "Carlin Gold Trend Discovered",
+    "year": 1961,
+    "category": "science",
+    "description": "Geologists found microscopic gold invisible to the eye in Nevada rocks, unlocking one of the richest gold regions around.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "orapa-diamond-pipe-found",
+    "friendly_name": "Diamonds Found at Orapa",
+    "year": 1967,
+    "category": "nature",
+    "description": "Geologists tracing mineral grains across the Kalahari found a huge diamond pipe that would transform a poor nation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "serra-pelada-gold-rush",
+    "friendly_name": "Serra Pelada Gold Rush",
+    "year": 1980,
+    "category": "migration",
+    "description": "Tens of thousands of men swarmed a Brazilian hillside, hauling sacks of mud up ladders by hand in a giant open pit.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "argyle-diamond-mine-opens",
+    "friendly_name": "Argyle Diamond Mine Opens",
+    "year": 1983,
+    "category": "craft",
+    "description": "A remote mine in the Australian outback began production and became the main source of rare pink diamonds.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lac-de-gras-diamonds-found",
+    "friendly_name": "Diamonds Found in Canada's Arctic",
+    "year": 1991,
+    "category": "nature",
+    "description": "After years searching the tundra, a geologist found diamond-bearing rock at Lac de Gras, launching a northern mining boom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lesedi-la-rona-diamond-found",
+    "friendly_name": "Lesedi La Rona Diamond Found",
+    "year": 2015,
+    "category": "nature",
+    "description": "A Botswana mine's scanners picked out a stone the size of a tennis ball, the largest gem-quality rough diamond in a century.",
+    "difficulty": "easy"
+  }
+]
