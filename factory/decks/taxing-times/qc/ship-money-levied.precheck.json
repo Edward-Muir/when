@@ -1,0 +1,20 @@
+{
+  "slug": "ship-money-levied",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "53f4b58d1449c9f71a142e90a5417b5ab0fade6a643344fa1437d48ac2ec37ad",
+  "dhash": "f3e0694d25b59131",
+  "nearest": {
+    "deck": {
+      "slug": "danegeld-first-paid",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "nicholas-ii-becomes-tsar",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

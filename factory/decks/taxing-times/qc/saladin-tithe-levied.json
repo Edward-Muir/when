@@ -1,0 +1,15 @@
+{
+  "slug": "saladin-tithe-levied",
+  "description": "A stone church interior with rounded arches and pillars, lit by candles. A bald priest in a cream cloak and dark robe stands at a wooden iron-bound chest. A bearded knight in chain mail with a cross on his surcoat and another mailed man stand nearby. Townsfolk in medieval peasant dress crowd around, and several are dropping coins into the chest.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
