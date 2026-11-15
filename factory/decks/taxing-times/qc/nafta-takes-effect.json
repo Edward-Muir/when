@@ -1,0 +1,15 @@
+{
+  "slug": "nafta-takes-effect",
+  "description": "An oil-painted scene at dusk: a large dark semi truck with a boxy trailer sits in the foreground on a dirt road, headlights on, with a line of similar trucks receding into dusty haze on the left. On the right a raised striped barrier arm angles up beside a small wooden guard booth with dark windows. The sky glows orange behind distant mountains with a low sun, and a radio antenna stands at the far right. No visible text, border or frame; the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
