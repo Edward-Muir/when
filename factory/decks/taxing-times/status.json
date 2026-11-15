@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-15T15:23:12.340Z",
+  "updated_at": "2026-11-15T17:29:31.358Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,11 +114,11 @@
       "updated_at": "2026-11-15T08:25:21.186Z"
     },
     "california-proposition-13": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3e36c3fe2a6ee7a038e30b8ffe81ead9009e34249ecf78737710e817354aabf0",
-      "updated_at": "2026-11-15T15:23:12.340Z"
+      "updated_at": "2026-11-15T17:29:31.358Z"
     },
     "scotland-poll-tax": {
       "state": "pending",
