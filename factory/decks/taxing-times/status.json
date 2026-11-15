@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-15T19:24:29.638Z",
+  "updated_at": "2026-11-15T19:44:01.933Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-15T19:24:29.638Z"
     },
     "global-minimum-corporate-tax-deal": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9605df59e6d4ebc171424896f0dc2aa919062783276a3cd943c21483855beacc",
+      "updated_at": "2026-11-15T19:44:01.933Z"
     }
   }
 }
