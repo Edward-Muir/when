@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-15T19:16:05.774Z",
+  "updated_at": "2026-11-15T19:24:29.638Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-15T19:16:05.774Z"
     },
     "china-abolishes-agricultural-tax": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "44718f3a427e022536a30b914d2cbf00fb75cedb2234f47810e3bbf276638d6b",
+      "updated_at": "2026-11-15T19:24:29.638Z"
     },
     "global-minimum-corporate-tax-deal": {
       "state": "pending",
