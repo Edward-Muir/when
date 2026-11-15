@@ -1,0 +1,15 @@
+{
+  "slug": "france-introduces-vat",
+  "description": "A painting of several hands passing a round crusty loaf of bread along a chain. A rough hand on the left holds a bundle of wheat stalks and reaches toward the loaf, while a floury hand in a white apron holds the loaf. A hand at the lower left drops a coin toward a dented tin can on a wooden table, next to a burlap sack of flour. A gloved hand at the lower right holds a coin over a wicker basket. The dark background shows a shop interior with a few blurred figures. The painting fills the frame edge to edge, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
