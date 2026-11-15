@@ -3,7 +3,7 @@
   "name": "Taxing Times",
   "stage": "art-in-progress",
   "created_at": "2026-11-14T11:07:38.494Z",
-  "updated_at": "2026-11-15T17:29:31.358Z",
+  "updated_at": "2026-11-15T18:25:43.475Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-15T17:29:31.358Z"
     },
     "scotland-poll-tax": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0108e038d11e986d1736e45e53d20765d4652d31657eb47e6b582eb5224fcf8f",
+      "updated_at": "2026-11-15T18:25:43.475Z"
     },
     "nafta-takes-effect": {
       "state": "pending",
