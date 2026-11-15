@@ -77,11 +77,11 @@
     "description": "A painted interior of a wooden office with a seated older man in a dark suit and bow tie at a desk, sorting coins beside an open ledger and inkwell. A bearded man in a dark coat and black hat leans over the desk placing coins, and a line of men in hats and coats waits at the left edge. Through a multi-pane window behind them, tents and blue-uniformed soldiers are visible on a camp ground. The clothing and setting suggest the 1860s. No readable text or frame is visible."
   },
   "peoples-budget-lloyd-george": {
-    "state": "qc-fail",
-    "reason": "The ledger at the lower right has painted lettering reading 'PARLIAMENTARY LEDGER', and the papers carry printed lines. Repaint the ledger and papers blank, with no letters.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark oil painting of an elderly man in a flat cap and an elderly woman in a shawl, in worn clothes, holding out coins over an open red chest full of coins on a wooden table. Papers, ink pots and a ledger lie on the table, and the ledger's cover has clearly legible lettering reading 'PARLIAMENTARY LEDGER'. Through a window at the right a dreadnought-style battleship sits on stormy water, and an orange glow of fire shows at the left edge. The painting fills the frame with no border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "An open red leather case on a table, filled with gold and silver coins, with a few spilling out. Behind it, an old woman in a ragged dark shawl and an old man in a flat cap lean in, one reaching toward the coins. Blank papers and a closed leather ledger lie on the table. Through a window at right, a grey dreadnought-style battleship with several gun turrets and tall masts sails on rough sea under smoky sky. Dark, painterly oil style, no visible text."
   },
   "pay-as-you-go-withholding": {
     "state": "qc-pass",
