@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T21:47:55.367Z",
+  "updated_at": "2026-11-16T21:51:11.923Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-16T21:47:55.367Z"
     },
     "british-storm-magdala": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2a600e1da6d3ab8af0394b9a2767617c2ee00afbd9454486cabc59bfca008a14",
+      "updated_at": "2026-11-16T21:51:11.923Z"
     },
     "italy-invades-libya": {
       "state": "pending",
