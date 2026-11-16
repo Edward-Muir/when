@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T22:00:44.290Z",
+  "updated_at": "2026-11-16T22:03:22.314Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,67 +37,67 @@
       "updated_at": "2026-11-16T20:33:01.965Z"
     },
     "da-gama-sails-round-africa": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9b90cb6636c6f7542e482d8cfd92a673a1ee792d84f1cfc3b088951fec39f240",
-      "updated_at": "2026-11-16T21:30:42.964Z"
+      "updated_at": "2026-11-16T22:03:22.027Z"
     },
     "alcacer-quibir-sebastian-dies": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "729d050c57166de3151b0900aba654e288d0bb4e1324449a77d85f80122062de",
-      "updated_at": "2026-11-16T21:34:59.763Z"
+      "updated_at": "2026-11-16T22:03:22.063Z"
     },
     "mungo-park-reaches-niger": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4e117daf42b40d09ce788742f2b29267e2494f388526f0b83bb26a33fc9420d4",
-      "updated_at": "2026-11-16T21:38:08.635Z"
+      "updated_at": "2026-11-16T22:03:22.095Z"
     },
     "boers-win-blood-river": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3edacabb2a6ad7b269719ef41d61bf939b5e72aa601d40d6916c975d1f9cdf8f",
-      "updated_at": "2026-11-16T21:41:48.437Z"
+      "updated_at": "2026-11-16T22:03:22.128Z"
     },
     "livingstone-sees-victoria-falls": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9a6ad910ddf12efe68d84024160e8d39d46a1f6181a89715801f230251e41f0e",
-      "updated_at": "2026-11-16T21:47:55.367Z"
+      "updated_at": "2026-11-16T22:03:22.161Z"
     },
     "british-storm-magdala": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2a600e1da6d3ab8af0394b9a2767617c2ee00afbd9454486cabc59bfca008a14",
-      "updated_at": "2026-11-16T21:51:11.923Z"
+      "updated_at": "2026-11-16T22:03:22.200Z"
     },
     "italy-invades-libya": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The central sailor's cap band has painted lettering (a word like 'TORPEDO'). Repaint the cap with a plain, blank band.",
       "sha256": "8d33d633eb5556712d445667e26ab4d7ec0d7d343d158aedd68ff4cb17c1ccd1",
-      "updated_at": "2026-11-16T21:54:26.969Z"
+      "updated_at": "2026-11-16T22:03:22.240Z"
     },
     "treaty-of-fez-morocco": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "05e40b733ed180b4b2f87bb843b104e8e967199ae0a1681657bc60e1e57502bd",
-      "updated_at": "2026-11-16T21:57:34.361Z"
+      "updated_at": "2026-11-16T22:03:22.278Z"
     },
     "rif-rout-spain-annual": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fbd0b4036d9ef2c6839610080212e4b550f5f96862f2d9d0387f702fd0893578",
-      "updated_at": "2026-11-16T22:00:44.290Z"
+      "updated_at": "2026-11-16T22:03:22.314Z"
     }
   }
 }
