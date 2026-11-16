@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T19:41:50.115Z",
+  "updated_at": "2026-11-16T20:08:54.806Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-16T19:41:50.115Z"
     },
     "portugal-captures-ceuta": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9a4259a1f7256c39a3033f5479d401a93b81bcd8edbbeb5126d8ee228dd4a42d",
+      "updated_at": "2026-11-16T20:08:54.806Z"
     },
     "da-gama-sails-round-africa": {
       "state": "pending",
