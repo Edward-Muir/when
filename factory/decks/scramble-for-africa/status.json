@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T21:51:11.923Z",
+  "updated_at": "2026-11-16T21:54:26.969Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-16T21:51:11.923Z"
     },
     "italy-invades-libya": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8d33d633eb5556712d445667e26ab4d7ec0d7d343d158aedd68ff4cb17c1ccd1",
+      "updated_at": "2026-11-16T21:54:26.969Z"
     },
     "treaty-of-fez-morocco": {
       "state": "pending",
