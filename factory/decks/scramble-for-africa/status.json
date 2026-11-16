@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T21:34:59.763Z",
+  "updated_at": "2026-11-16T21:38:08.635Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-16T21:34:59.763Z"
     },
     "mungo-park-reaches-niger": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4e117daf42b40d09ce788742f2b29267e2494f388526f0b83bb26a33fc9420d4",
+      "updated_at": "2026-11-16T21:38:08.635Z"
     },
     "boers-win-blood-river": {
       "state": "pending",
