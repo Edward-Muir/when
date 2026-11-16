@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T20:08:54.806Z",
+  "updated_at": "2026-11-16T20:33:01.965Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,25 +16,25 @@
   ],
   "slugs": {
     "caesar-besieged-alexandria": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1d242bd59807f9747a45bf374d12c95f15b4de241ea10177833eca96fb37ab24",
-      "updated_at": "2026-11-16T19:26:25.154Z"
+      "updated_at": "2026-11-16T20:33:01.897Z"
     },
     "rome-annexes-egypt": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "666226d1fee2fba8d56f6899eb9176f38f0d95b56ae67ebcc30db4324ddf6119",
-      "updated_at": "2026-11-16T19:41:50.115Z"
+      "updated_at": "2026-11-16T20:33:01.933Z"
     },
     "portugal-captures-ceuta": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9a4259a1f7256c39a3033f5479d401a93b81bcd8edbbeb5126d8ee228dd4a42d",
-      "updated_at": "2026-11-16T20:08:54.806Z"
+      "updated_at": "2026-11-16T20:33:01.965Z"
     },
     "da-gama-sails-round-africa": {
       "state": "pending",
