@@ -3,7 +3,7 @@
   "name": "Scramble for Africa",
   "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T21:30:42.964Z",
+  "updated_at": "2026-11-16T21:34:59.763Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-16T21:30:42.964Z"
     },
     "alcacer-quibir-sebastian-dies": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "729d050c57166de3151b0900aba654e288d0bb4e1324449a77d85f80122062de",
+      "updated_at": "2026-11-16T21:34:59.763Z"
     },
     "mungo-park-reaches-niger": {
       "state": "pending",
