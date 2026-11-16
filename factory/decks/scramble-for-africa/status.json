@@ -1,21 +1,26 @@
 {
   "deck": "scramble-for-africa",
   "name": "Scramble for Africa",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-16T18:44:47.550Z",
-  "updated_at": "2026-11-16T18:44:47.550Z",
+  "updated_at": "2026-11-16T19:26:25.154Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-16T18:44:47.550Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-16T19:26:25.154Z"
     }
   ],
   "slugs": {
     "caesar-besieged-alexandria": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1d242bd59807f9747a45bf374d12c95f15b4de241ea10177833eca96fb37ab24",
+      "updated_at": "2026-11-16T19:26:25.154Z"
     },
     "rome-annexes-egypt": {
       "state": "pending",
