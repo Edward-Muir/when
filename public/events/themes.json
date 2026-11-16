@@ -21561,7 +21561,8 @@
     "regions": [
       "Egypt",
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rome-annexes-egypt",
@@ -21573,7 +21574,8 @@
     "regions": [
       "Egypt",
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "portugal-captures-ceuta",
@@ -21586,7 +21588,8 @@
       "Morocco",
       "Portugal",
       "Spain"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "da-gama-sails-round-africa",
@@ -21600,7 +21603,8 @@
       "Mozambique",
       "Portugal",
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "alcacer-quibir-sebastian-dies",
@@ -21612,7 +21616,8 @@
     "regions": [
       "Morocco",
       "Portugal"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mungo-park-reaches-niger",
@@ -21624,7 +21629,8 @@
     "regions": [
       "Mali",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "boers-win-blood-river",
@@ -21635,7 +21641,8 @@
     "difficulty": "easy",
     "regions": [
       "South Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "livingstone-sees-victoria-falls",
@@ -21648,7 +21655,8 @@
       "United Kingdom",
       "Zambia",
       "Zimbabwe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "british-storm-magdala",
@@ -21660,7 +21668,8 @@
     "regions": [
       "Ethiopia",
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "italy-invades-libya",
@@ -21672,7 +21681,8 @@
     "regions": [
       "Italy",
       "Libya"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "treaty-of-fez-morocco",
@@ -21684,7 +21694,8 @@
     "regions": [
       "France",
       "Morocco"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rif-rout-spain-annual",
@@ -21696,6 +21707,7 @@
     "regions": [
       "Morocco",
       "Spain"
-    ]
+    ],
+    "has_detail": true
   }
 ]
