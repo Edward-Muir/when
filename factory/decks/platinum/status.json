@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T09:16:41.890Z",
+  "updated_at": "2026-11-17T09:19:02.855Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -162,10 +162,11 @@
       "updated_at": "2026-11-17T09:16:41.890Z"
     },
     "amy-winehouse-back-to-black-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3687a81f3596ab4c6898ce6585003255f45224cc015379f9920d29cb24165664",
+      "updated_at": "2026-11-17T09:19:02.855Z"
     },
     "adele-21-album": {
       "state": "pending",
