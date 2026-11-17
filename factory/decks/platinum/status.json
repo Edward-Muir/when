@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T07:10:06.493Z",
+  "updated_at": "2026-11-17T07:12:17.254Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,11 +44,11 @@
       "updated_at": "2026-11-17T06:08:36.301Z"
     },
     "beatles-sgt-pepper": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Flowers in the foreground are arranged into large letters spelling a word (BEAT...), which is painted-in text. Redraw the flowerbed as a guitar shape or plain flowers with no lettering.",
-      "sha256": "cecdd7822f290224c887164c083d3a993f3a3c562deb93be0058997c00bd13c3",
-      "updated_at": "2026-11-17T06:08:36.332Z"
+      "sha256": "e4d359e6aa20a5fef6d1b256589fa0fba579bbbf38adb3c6096e049423173a24",
+      "updated_at": "2026-11-17T07:12:17.254Z"
     },
     "beatles-abbey-road": {
       "state": "qc-pass",
