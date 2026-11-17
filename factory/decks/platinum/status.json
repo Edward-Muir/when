@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T11:13:03.077Z",
+  "updated_at": "2026-11-17T11:16:56.935Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-11-17T10:07:48.606Z"
     },
     "beyonce-lemonade-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0b4ccdfda80733b4c6454449eb799bd4c5b6e049ce0a754a5f0e1527912a9d53",
+      "updated_at": "2026-11-17T11:16:56.935Z"
     },
     "billie-eilish-debut-album": {
       "state": "pending",
