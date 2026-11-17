@@ -1,21 +1,26 @@
 {
   "deck": "mind-the-gap",
   "name": "Mind the Gap",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T16:21:06.927Z",
+  "updated_at": "2026-11-17T17:09:46.994Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-17T16:21:06.927Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-17T17:09:46.994Z"
     }
   ],
   "slugs": {
     "shillibeer-london-omnibus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4ad950760d4dd51bd879c4c4d216ac0fb5aa8392d9b880c91eabfe4ed30dc29d",
+      "updated_at": "2026-11-17T17:09:46.994Z"
     },
     "new-york-harlem-horsecar": {
       "state": "pending",
