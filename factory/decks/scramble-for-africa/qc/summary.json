@@ -63,11 +63,11 @@
     "description": "A painted battle scene on a steep rocky mountain path. British-style soldiers in white pith helmets and red tunics fire rifles and climb toward a stone fortification with a large wooden gate. Several war elephants are present: one hauls a mounted artillery piece, and others carry riders. Smoke drifts across the slope under a stormy sky. The painting fills the frame edge to edge, with no visible border, text, or signature, and there is no gore."
   },
   "italy-invades-libya": {
-    "state": "qc-fail",
-    "reason": "The central sailor's cap band has painted lettering (a word like 'TORPEDO'). Repaint the cap with a plain, blank band.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "Oil painting of sailors in dark caps and soldiers in pith helmets crowding rowing boats and leaping onto a stone quay beneath a massive old fortress. Steel warships with smoking funnels lie offshore, and a domed mosque with a minaret stands behind smoke and a fire on the skyline. The sea is choppy under a stormy sky. The central sailor's cap band carries painted lettering. Fills the image edge to edge, with no frame and no gore."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "Oil-painting style scene. Sailors in white and navy uniforms row wooden boats and leap onto a stone quay, several holding bolt-action rifles. Behind them a steam warship with black smoke from its funnels and a small flag on the mast sits offshore, with other grey ships further off. On the right a massive stone fortress tower rises, and a city with domes and minarets sits on the skyline. Smoke and spray hang in the air. No readable text, and the painting runs edge to edge."
   },
   "treaty-of-fez-morocco": {
     "state": "qc-pass",
