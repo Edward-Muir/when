@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T19:35:46.975Z",
+  "updated_at": "2026-11-17T19:38:49.456Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-17T19:35:46.975Z"
     },
     "hong-kong-mtr-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "299f29921cdd1f03ea8c397718bd241aac29134b526023a56eebdd297303a9a4",
+      "updated_at": "2026-11-17T19:38:49.456Z"
     },
     "vancouver-skytrain-opens": {
       "state": "pending",
