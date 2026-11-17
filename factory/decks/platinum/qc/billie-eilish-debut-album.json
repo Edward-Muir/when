@@ -1,0 +1,15 @@
+{
+  "slug": "billie-eilish-debut-album",
+  "description": "A dim, painterly bedroom interior with rumpled bedding on a bed, an open laptop glowing on the covers, and a small condenser microphone on a pop filter. A desk lamp with headphones hangs beside it, and a figure in a dark hooded top sits on the floor on the right with the face hidden in shadow. Acoustic foam panels cover the upper wall, and framed paintings hang on the left. No visible text, border or frame; the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

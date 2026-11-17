@@ -1,0 +1,15 @@
+{
+  "slug": "lauryn-hill-miseducation-album",
+  "description": "A painted scene of an old wooden school desk with a worn, carved top, in front of a dark chalkboard. A black vinyl record and a few loose handwritten pages sit on the desk. The chalkboard is covered in chalk scribbles that look like handwriting or lyrics. The image is dark and painterly with no visible frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Chalk handwriting covers the chalkboard and the desk carvings show letters (names and words), so the picture has painted-in text. The card asked for scribbles with no readable words, but the letter-like marks still count as text. Repaint the chalkboard and desk without letterforms, or with only abstract marks."
+}

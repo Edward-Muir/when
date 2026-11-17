@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T11:23:11.290Z",
+  "updated_at": "2026-11-17T12:07:48.494Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,11 +149,11 @@
       "updated_at": "2026-11-17T10:07:48.477Z"
     },
     "lauryn-hill-miseducation-album": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The chalkboard is covered in chalk lettering with word-like strings (e.g. 'walk', 'Playlight', 'Kainbook'), and the desk carvings show letters including 'SCHOOL' and name-like marks. Repaint the board and desk with abstract scribbles or plain wood, with no letterforms.",
       "sha256": "d18c8d1a4273a5f1989de6873583805f06b8bdec10cd9b4f3aa3aa866efb9a0c",
-      "updated_at": "2026-11-17T11:09:51.087Z"
+      "updated_at": "2026-11-17T12:07:48.352Z"
     },
     "norah-jones-come-away-with-me-album": {
       "state": "qc-pass",
@@ -170,11 +170,11 @@
       "updated_at": "2026-11-17T10:07:48.544Z"
     },
     "adele-21-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c17d0887b478d39e926154eb8cdece6c139abb72eceb663b2b36c44a25f6aca2",
-      "updated_at": "2026-11-17T11:13:03.077Z"
+      "updated_at": "2026-11-17T12:07:48.386Z"
     },
     "beyonce-surprise-album": {
       "state": "qc-pass",
@@ -191,25 +191,25 @@
       "updated_at": "2026-11-17T10:07:48.606Z"
     },
     "beyonce-lemonade-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0b4ccdfda80733b4c6454449eb799bd4c5b6e049ce0a754a5f0e1527912a9d53",
-      "updated_at": "2026-11-17T11:16:56.935Z"
+      "updated_at": "2026-11-17T12:07:48.418Z"
     },
     "billie-eilish-debut-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e2c06997eb3c38a3edb535516a4d4036b3ae51645d8f7749562c5016c6c1b8bd",
-      "updated_at": "2026-11-17T11:20:37.004Z"
+      "updated_at": "2026-11-17T12:07:48.449Z"
     },
     "taylor-swift-folklore-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8dab759afc911c3960def10d20cfd7d697534811b3010443c193d94aea91fc48",
-      "updated_at": "2026-11-17T11:23:11.290Z"
+      "updated_at": "2026-11-17T12:07:48.494Z"
     }
   }
 }

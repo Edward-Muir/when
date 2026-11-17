@@ -159,5 +159,40 @@
     "by": "review",
     "attempts": 1,
     "description": "A dark, glossy 1960s sedan with chrome trim, possibly a Chevrolet Impala, is parked low on a sunny residential street lined with palm trees and single-storey stucco houses. A monarch butterfly rests on the roof, and an open black case holding a saxophone lies on the pavement in front of the car. The style is painterly, like an oil painting, with no frame or border visible. Only the car's rear badge has small lettering, which is part of the car."
+  },
+  "lauryn-hill-miseducation-album": {
+    "state": "qc-fail",
+    "reason": "The chalkboard is covered in chalk lettering with word-like strings (e.g. 'walk', 'Playlight', 'Kainbook'), and the desk carvings show letters including 'SCHOOL' and name-like marks. Repaint the board and desk with abstract scribbles or plain wood, with no letterforms.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark oil painting of an old wooden school desk with carved-up front and top, a stack of handwritten pages and a black vinyl record on it, with a chair beside it. Behind is a large blackboard covered in chalk lettering. Carved marks on the desk read like names and words, including SCHOOL. No frame or border, nothing violent."
+  },
+  "adele-21-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil-painted dim, rainy interior: a black grand piano with open lid by a tall rain-streaked window showing brick London-style rooftops. Crumpled tissues sit on the piano, sheet music and books on the floor. At left a modern turntable with a vinyl record on a wooden cabinet, plus a gold gramophone trophy and horn. A wingback chair and steaming mug by the window. No people, no frame, no legible text."
+  },
+  "beyonce-lemonade-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A two-storey white-columned plantation house with a pitched pediment stands on a misty lawn under dark trees hung with Spanish moss, at dusk or night. In the foreground, on a weathered wooden deck, a wooden bowl of lemons sits beside a cut lemon half, and a baseball bat leans against the steps. A flooded, reflective road curves away to the right. No visible text, border or frame."
+  },
+  "billie-eilish-debut-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, painterly bedroom interior with rumpled bedding on a bed, an open laptop glowing on the covers, and a small condenser microphone on a pop filter. A desk lamp with headphones hangs beside it, and a figure in a dark hooded top sits on the floor on the right with the face hidden in shadow. Acoustic foam panels cover the upper wall, and framed paintings hang on the left. No visible text, border or frame; the painting runs edge to edge."
+  },
+  "taylor-swift-folklore-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, mossy wooden cabin in a misty forest of tall conifers. A knitted cardigan hangs on a porch post beside a wooden acoustic guitar leaning on the wall. The cabin door is open with warm lamplight glowing inside, and the moss-covered roof and dense ferns frame the scene. The painting is an oil-style landscape with no people visible."
   }
 }
