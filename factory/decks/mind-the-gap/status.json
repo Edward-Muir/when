@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T17:27:32.965Z",
+  "updated_at": "2026-11-17T17:29:45.583Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-17T17:27:32.965Z"
     },
     "madrid-metro-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "97dce6eff0bd3186c4395fcc8a0bc45df054ff895c718038b5ef645d04feca0a",
+      "updated_at": "2026-11-17T17:29:45.583Z"
     },
     "tokyo-ginza-line-opens": {
       "state": "pending",
