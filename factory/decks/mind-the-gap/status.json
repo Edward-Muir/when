@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T19:18:28.642Z",
+  "updated_at": "2026-11-17T19:21:18.229Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-17T19:18:28.642Z"
     },
     "rome-metro-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c3a47a26f4f26197cbb7da9241b82f820174b7bdde04b90848d3108528b32fa6",
+      "updated_at": "2026-11-17T19:21:18.229Z"
     },
     "montreal-metro-opens": {
       "state": "pending",
