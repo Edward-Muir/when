@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T06:08:36.511Z",
+  "updated_at": "2026-11-17T07:10:06.493Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-11-17T06:08:36.237Z"
     },
     "dylan-freewheelin-album": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The coffeehouse window has the words FOLK CITY painted on it. Repaint the window with no lettering.",
-      "sha256": "3b61386913fc309123c2695d815d6fe502293c74a7f113110d2273b18ccee18b",
-      "updated_at": "2026-11-17T06:08:36.269Z"
+      "sha256": "19179beaf9caa8614b30ab0e8750290dac038c37709c067851a19017608a595f",
+      "updated_at": "2026-11-17T07:10:06.493Z"
     },
     "beach-boys-pet-sounds": {
       "state": "qc-pass",
