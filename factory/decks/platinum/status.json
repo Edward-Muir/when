@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T07:18:58.557Z",
+  "updated_at": "2026-11-17T07:21:56.911Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-17T07:18:58.557Z"
     },
     "acdc-back-in-black-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3102494d0c8164c4c9b5a3d1243964810239a62d8965908b3e0a92070819a788",
+      "updated_at": "2026-11-17T07:21:56.911Z"
     },
     "prince-purple-rain-album": {
       "state": "pending",
