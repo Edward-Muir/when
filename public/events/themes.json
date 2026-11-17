@@ -21560,7 +21560,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "new-york-harlem-horsecar",
@@ -21571,7 +21572,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "san-francisco-clay-street-cable-car",
@@ -21582,7 +21584,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "richmond-electric-streetcar-network",
@@ -21593,7 +21596,8 @@
     "difficulty": "medium",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "city-south-london-deep-tube",
@@ -21604,7 +21608,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "budapest-metro-opens",
@@ -21615,7 +21620,8 @@
     "difficulty": "medium",
     "regions": [
       "Hungary"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "paris-metro-opens",
@@ -21626,7 +21632,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "new-york-subway-opens",
@@ -21637,7 +21644,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "buenos-aires-subte-opens",
@@ -21648,7 +21656,8 @@
     "difficulty": "medium",
     "regions": [
       "Argentina"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "madrid-metro-opens",
@@ -21659,7 +21668,8 @@
     "difficulty": "medium",
     "regions": [
       "Spain"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tokyo-ginza-line-opens",
@@ -21670,7 +21680,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Japan"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "moscow-metro-opens",
@@ -21682,7 +21693,8 @@
     "regions": [
       "Russia",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "toronto-yonge-subway-opens",
@@ -21693,7 +21705,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Canada"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "rome-metro-opens",
@@ -21704,7 +21717,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "montreal-metro-opens",
@@ -21715,7 +21729,8 @@
     "difficulty": "medium",
     "regions": [
       "Canada"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mexico-city-metro-opens",
@@ -21726,7 +21741,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "curitiba-bus-rapid-transit",
@@ -21737,7 +21753,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Brazil"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "washington-metro-opens",
@@ -21748,7 +21765,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hong-kong-mtr-opens",
@@ -21759,7 +21777,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Hong Kong"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "vancouver-skytrain-opens",
@@ -21770,7 +21789,8 @@
     "difficulty": "medium",
     "regions": [
       "Canada"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "singapore-mrt-opens",
@@ -21781,7 +21801,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Singapore"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "shanghai-metro-opens",
@@ -21792,7 +21813,8 @@
     "difficulty": "medium",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bogota-transmilenio-opens",
@@ -21803,7 +21825,8 @@
     "difficulty": "medium",
     "regions": [
       "Colombia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "dubai-metro-opens",
@@ -21814,7 +21837,8 @@
     "difficulty": "easy",
     "regions": [
       "United Arab Emirates"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "sydney-metro-opens",
@@ -21825,6 +21849,7 @@
     "difficulty": "easy",
     "regions": [
       "Australia"
-    ]
+    ],
+    "has_detail": true
   }
 ]
