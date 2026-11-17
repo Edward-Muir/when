@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T19:32:45.846Z",
+  "updated_at": "2026-11-17T19:35:46.975Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-17T19:32:45.846Z"
     },
     "washington-metro-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0e7a580e4911c1093b4c71b86bcc2d7c7592ed0e4d2aa66a0a2188d03165c3f6",
+      "updated_at": "2026-11-17T19:35:46.975Z"
     },
     "hong-kong-mtr-opens": {
       "state": "pending",
