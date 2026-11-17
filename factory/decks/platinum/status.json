@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T11:16:56.935Z",
+  "updated_at": "2026-11-17T11:20:37.004Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -198,10 +198,11 @@
       "updated_at": "2026-11-17T11:16:56.935Z"
     },
     "billie-eilish-debut-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e2c06997eb3c38a3edb535516a4d4036b3ae51645d8f7749562c5016c6c1b8bd",
+      "updated_at": "2026-11-17T11:20:37.004Z"
     },
     "taylor-swift-folklore-album": {
       "state": "pending",
