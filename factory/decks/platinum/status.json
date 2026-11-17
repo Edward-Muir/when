@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T09:23:48.252Z",
+  "updated_at": "2026-11-17T09:26:18.082Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -182,10 +182,11 @@
       "updated_at": "2026-11-17T09:23:48.252Z"
     },
     "kendrick-to-pimp-a-butterfly-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8bba051a9223c98bccb46b7920eac0387b5314190fe763f11e34c074abfbc0c0",
+      "updated_at": "2026-11-17T09:26:18.082Z"
     },
     "beyonce-lemonade-album": {
       "state": "pending",
