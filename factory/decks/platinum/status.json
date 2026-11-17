@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T07:30:17.005Z",
+  "updated_at": "2026-11-17T07:32:42.408Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-17T07:30:17.005Z"
     },
     "nas-illmatic-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e86149a4420db6596321637b4b46944a239401bcd5cf5fa5882a8f98f9f64015",
+      "updated_at": "2026-11-17T07:32:42.408Z"
     },
     "radiohead-ok-computer-album": {
       "state": "pending",
