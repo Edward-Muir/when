@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:30:56.711Z",
+  "updated_at": "2026-11-17T04:33:37.918Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-17T04:30:56.711Z"
     },
     "pink-floyd-dark-side-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d947b36e04f7283520bea27234254e0cfeff810c24b549df474a1a3aa86519e2",
+      "updated_at": "2026-11-17T04:33:37.918Z"
     },
     "springsteen-born-to-run-album": {
       "state": "pending",
