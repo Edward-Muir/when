@@ -1,0 +1,39 @@
+{
+  "id": "mind-the-gap",
+  "name": "Mind the Gap",
+  "scope": "Yes if it is the opening of a city metro, tram or bus system",
+  "boundary": "Mind the Gap owns urban transit; intercity railways go to All Aboard!, tunnels as engineering feats to Bridges & Tunnels.",
+  "neighbours": [
+    "all-aboard",
+    "crossings",
+    "pedal-and-petrol"
+  ],
+  "grid": {
+    "categories": [
+      "invention",
+      "architecture"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars",
+      "coldWar"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Pascal's five-sol coaches in Paris (1662)",
+    "Shillibeer's London omnibus (1829)",
+    "San Francisco cable car (1873)",
+    "Lichterfelde electric tram (1881)",
+    "Budapest metro (1896)",
+    "Paris Metro (1900)",
+    "New York subway (1904)",
+    "Tokyo Ginza Line (1927)",
+    "Moscow Metro (1935)",
+    "Mexico City Metro (1969)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
