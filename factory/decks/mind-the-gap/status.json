@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T17:18:38.568Z",
+  "updated_at": "2026-11-17T17:20:58.210Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-17T17:18:38.568Z"
     },
     "budapest-metro-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "739106c8f12ef30081d6f06fbc56b98589bfb3c6346b5e5f0273e899c2da6f9c",
+      "updated_at": "2026-11-17T17:20:58.210Z"
     },
     "paris-metro-opens": {
       "state": "pending",
