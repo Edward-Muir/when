@@ -98,11 +98,11 @@
     "description": "A dim wooden room with a tall stack of black guitar amplifier heads with gold control panels over speaker cabinets, coiled cables on the floor and road cases at the right. A brass bell hangs on a rope in front of an open louvered window showing stormy sea and palm trees. No people, no visible text."
   },
   "prince-purple-rain-album": {
-    "state": "qc-fail",
-    "reason": "The brand name 'Marshall' is legibly painted on the amplifier at the left edge. Repaint the amps without lettering. The rest matches the card.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark purple oil-style painting of a stage in thick purple haze. A purple motorcycle sits left of an upright piano, with a ruffled sequined purple jacket draped over the stool. A rain-streaked window with blurred city lights is behind. Mic stands, cables and amplifiers fill the edges; the word 'Marshall' is legibly painted on the left amp. Fills the image edge to edge, no frame, nothing graphic."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A dim, purple-lit room with a glossy purple touring motorcycle parked in front of an upright piano, a ruffled purple garment draped over the piano, and a stool in the foreground. Behind them a large window shows rain streaks and blurred city lights, and amplifiers and mic stands sit at left under stage lights with purple haze filling the air. A tiny mark sits in the bottom-right corner, and the painting fills the whole frame with no border."
   },
   "u2-joshua-tree-album": {
     "state": "qc-pass",
@@ -124,5 +124,40 @@
     "by": "review",
     "attempts": 1,
     "description": "A man in a brown leather jacket sits on brownstone steps at dusk, writing in a small notebook. Beside him are a boombox, a black milk crate of vinyl records, and a folding table holding two turntables and a mixer, with cables trailing off the edge. Behind are brick apartment blocks with fire escapes and lit windows, and a few figures in a courtyard. The painting is warm and painterly, with no visible text, frame or border."
+  },
+  "radiohead-ok-computer-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An empty airport departure lounge at night seen through large glass windows. Rows of grey seats line the left and right, and a counter holds four glowing teal CRT-style monitors. Through the glass, a dark jet sits on the lit tarmac under floodlights. The painting is loose and painterly with a reflective floor, no people in focus, and no visible text or frame."
+  },
+  "norah-jones-come-away-with-me-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An upright piano in a dark room, lit by a green-shaded banker's lamp on its lid. Six brass gramophone horns sit in a row on top of the piano. A steaming cup of coffee on a saucer rests on the keys. Behind the piano are heavy dark curtains, a wooden chair and a dim stage area. The painting is an oil-style image with no visible text and no frame."
+  },
+  "amy-winehouse-back-to-black-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painting style scene of a dim stage lit from above. A dark-haired head or bun rests against the back of a wooden bar stool, with a black leather jacket draped over the stool. A vintage chrome microphone stands on a stand in front of it, and gold trumpets lean against a dark floor speaker cabinet at right. Cables run across a worn wooden floor. A gilded picture frame is visible at the top left, inside the room. No visible text."
+  },
+  "beyonce-surprise-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, empty warehouse-like room with a wooden floor. Stacked old boxy CRT televisions, several showing static or glowing screens, sit on flight cases and cardboard boxes against a back wall. A smartphone rests on top of a box, and a pair of black high heels sits on the floor in front of the stack. Overhead, steel roof trusses are visible, and a reflective surface runs along the left side."
+  },
+  "kendrick-to-pimp-a-butterfly-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, glossy 1960s sedan with chrome trim, possibly a Chevrolet Impala, is parked low on a sunny residential street lined with palm trees and single-storey stucco houses. A monarch butterfly rests on the roof, and an open black case holding a saxophone lies on the pavement in front of the car. The style is painterly, like an oil painting, with no frame or border visible. Only the car's rear badge has small lettering, which is part of the car."
   }
 }
