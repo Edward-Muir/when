@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T17:11:58.104Z",
+  "updated_at": "2026-11-17T17:14:13.644Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-17T17:11:58.104Z"
     },
     "san-francisco-clay-street-cable-car": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4212dc6b066b14e66a9429e61d34dc19e80093f90a61a9e3aa2d1ac6fd5ddaf1",
+      "updated_at": "2026-11-17T17:14:13.644Z"
     },
     "richmond-electric-streetcar-network": {
       "state": "pending",
