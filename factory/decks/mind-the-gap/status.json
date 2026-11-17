@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T19:24:10.537Z",
+  "updated_at": "2026-11-17T19:29:44.428Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-17T19:24:10.537Z"
     },
     "mexico-city-metro-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "aa30cd52fff76bf0c0fcda50649180d74a0673a862800a6ac63b6221eaadd380",
+      "updated_at": "2026-11-17T19:29:44.428Z"
     },
     "curitiba-bus-rapid-transit": {
       "state": "pending",
