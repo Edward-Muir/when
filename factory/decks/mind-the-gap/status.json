@@ -1,9 +1,9 @@
 {
   "deck": "mind-the-gap",
   "name": "Mind the Gap",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T22:07:34.379Z",
+  "updated_at": "2026-11-17T23:07:43.426Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-11-17T22:07:34.379Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-17T23:07:43.426Z"
     }
   ],
   "slugs": {
