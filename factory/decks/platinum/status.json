@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T09:19:02.855Z",
+  "updated_at": "2026-11-17T09:23:48.252Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -175,10 +175,11 @@
       "sha256": null
     },
     "beyonce-surprise-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0465ac2e0df69c728ad5c7a9dc3982ae76613aabb6fdd566a2601854cda23b4a",
+      "updated_at": "2026-11-17T09:23:48.252Z"
     },
     "kendrick-to-pimp-a-butterfly-album": {
       "state": "pending",
