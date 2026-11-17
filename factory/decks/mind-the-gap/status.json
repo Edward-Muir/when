@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T17:16:27.585Z",
+  "updated_at": "2026-11-17T17:18:38.568Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-17T17:16:27.585Z"
     },
     "city-south-london-deep-tube": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d508aa52655035562628a7006ba1d10b6360a392e5351608d362d3a7354511d8",
+      "updated_at": "2026-11-17T17:18:38.568Z"
     },
     "budapest-metro-opens": {
       "state": "pending",
