@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:22:12.660Z",
+  "updated_at": "2026-11-17T04:24:47.316Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-17T04:22:12.660Z"
     },
     "beatles-abbey-road": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a95589dad3250392280dc1c741f19e18f90954dc5518e0010b463871a6a2e371",
+      "updated_at": "2026-11-17T04:24:47.316Z"
     },
     "led-zeppelin-iv-album": {
       "state": "pending",
