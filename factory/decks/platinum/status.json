@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:33:37.918Z",
+  "updated_at": "2026-11-17T04:36:21.697Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-17T04:33:37.918Z"
     },
     "springsteen-born-to-run-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c9e1e52e71b07d93a69984fb9f57e4faaa6461770067c47028dfb49e55a7f2f8",
+      "updated_at": "2026-11-17T04:36:21.697Z"
     },
     "eagles-hotel-california-album": {
       "state": "pending",
