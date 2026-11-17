@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T21:11:39.756Z",
+  "updated_at": "2026-11-17T21:13:45.470Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-11-17T21:11:39.756Z"
     },
     "shanghai-metro-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "83410cfaf27fa2c9c88eb195b4f6ac9a3df348e6a36b32dfc2e2575bdc005247",
+      "updated_at": "2026-11-17T21:13:45.470Z"
     },
     "bogota-transmilenio-opens": {
       "state": "pending",
