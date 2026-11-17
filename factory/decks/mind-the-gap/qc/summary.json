@@ -63,10 +63,73 @@
     "description": "A dim underground station with a glossy wooden tram-like electric carriage at the platform edge, its windows glowing with lamps. Men in bowler hats and dark overcoats and a woman in a wide hat and long coat stand on the platform, a man steps toward the open door. Ornate tiled walls, iron railings, pendant lamps and columns line the tunnel. No visible text, frame or border."
   },
   "madrid-metro-opens": {
-    "state": "qc-fail",
-    "reason": "The posters on the station walls have legible painted lettering (e.g. 'Brea Erdinario', 'Rhoprigno', partial words on the left). Repaint the posters blank or as plain abstract shapes with no letters.",
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted underground station with white glazed tile arches and a dark wooden-bodied electric train with lit windows entering from the left. A crowd on the platform in top hats, bowler hats and flat caps, with a woman in a black lace mantilla in the foreground. Framed-looking posters hang on the tiled walls, with no legible text. The painting fills the image edge to edge."
+  },
+  "tokyo-ginza-line-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painting of an underground station platform with tiled walls and steel girders. A short yellow electric car with lit windows stands at the platform, with a uniformed conductor in a peaked cap holding a lantern beside its doors. A crowd of people waits and boards: men in fedoras and overcoats and women in kimono, some carrying bags and an umbrella. The lighting is warm and smoky, and there is no visible text or frame; the painting runs edge to edge."
+  },
+  "moscow-metro-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Interior of an ornate vaulted underground station with marble columns and crystal chandeliers. A crowd of people in overcoats and caps looks upward toward a dark streamlined electric train with lit windows arriving from the right. A woman in a headscarf stands in the foreground. No visible text or frame; the painting fills the image edge to edge. Nothing graphic."
+  },
+  "toronto-yonge-subway-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A glossy red subway train with a rounded front stands at a tiled platform in a dim, warmly lit station. Commuters in fedoras, long overcoats, hats and gloves crowd the platform, and one man in a dark coat gestures toward a woman boarding. The style is an oil painting with visible brushwork, with tiled pillars and a low ceiling. No visible text, frame or border; the painting runs edge to edge."
+  },
+  "rome-metro-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting of an underground platform with a streamlined grey train at left, doors open, and a man in a light suit and fedora stepping aboard. A crowd in mid-century dress (fedoras, suits, 1950s dresses, white gloves) stands on the platform, with stairs and commuters in the background under an arched tunnel ceiling. No legible text is visible, and the painting runs edge to edge."
+  },
+  "montreal-metro-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bright blue rubber-tyred train with dual wheel bogies stands at a platform in a vaulted concrete station with arches. Commuters in 1950s-60s overcoats and fedora-style hats crowd the platform and board the doors. Colourful abstract mosaic murals decorate the walls, and steel rails run in the foreground. No visible text, signature or frame; the painting fills the image edge to edge."
+  },
+  "mexico-city-metro-opens": {
+    "state": "qc-pass",
+    "reason": "",
     "by": "recheck",
     "attempts": 1,
-    "description": "An oil painting of a tiled, vaulted underground station with hanging bulbs. A man in a dark coat gestures toward a green-and-wood electric carriage with uniformed staff, while a crowd in flat caps, bowlers and black mantillas watches. Large advertising posters on the curved walls show painted words and a bottle. The image runs edge to edge."
+    "description": "An oil painting of an orange metro train at an underground platform. A woman in a patterned 1960s dress, a man in a suit and a small boy stand at a wall. The man points at a large dark painted glyph on the wall, which looks like a stylised mark or insect-like pictogram. The setting is a tunnel with ceiling lights and a crowd boarding. There is no frame."
+  },
+  "curitiba-bus-rapid-transit": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A long red articulated bus runs in a central lane at dusk on a wet city avenue, with a crowd waiting under a roofed shelter on the right. Traffic of old boxy cars fills the side lanes on the left, and tall apartment blocks with lit windows stand under a dark stormy sky. There is no readable text, and the painting fills the frame edge to edge."
+  },
+  "washington-metro-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted subway platform with a coffered, vaulted concrete ceiling. A silver metro train with lit interior windows pulls in on the left, and a crowd of people in 1970s-style clothing (flared trousers, patterned shirts, brown suits, a trench coat) waits along a brick-floored platform. No visible text, signage, frame or border. Nothing graphic."
+  },
+  "hong-kong-mtr-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Interior of a subway station platform in a painted, oil-style scene. A silver commuter train with a red front panel pulls into the platform, and a crowd of people in 1970s-style shirts, flared trousers and a knee-length skirt waits and boards. A red brick or tiled wall runs down the left, with high-rise residential towers visible through the station opening and a yellow safety line along the platform edge. No legible text or signage is visible, and the painting fills the frame edge to edge."
   }
 }

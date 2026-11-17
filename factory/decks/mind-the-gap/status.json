@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T19:38:49.456Z",
+  "updated_at": "2026-11-17T20:07:55.682Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,74 +79,74 @@
       "updated_at": "2026-11-17T18:08:52.278Z"
     },
     "madrid-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The posters on the station walls have legible painted lettering (e.g. 'Brea Erdinario', 'Rhoprigno', partial words on the left). Repaint the posters blank or as plain abstract shapes with no letters.",
+      "reason": null,
       "sha256": "f742475a6dc49efc1fc8a7c1c680ca1e72ed09de1f3302485708690a74950b1a",
-      "updated_at": "2026-11-17T19:10:00.453Z"
+      "updated_at": "2026-11-17T20:07:55.350Z"
     },
     "tokyo-ginza-line-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3f3b51114d6bcf820026a8153e99aa3a51f6902ad167d45c9f64d8e0747a9340",
-      "updated_at": "2026-11-17T19:12:53.019Z"
+      "updated_at": "2026-11-17T20:07:55.391Z"
     },
     "moscow-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "da5ca47bdc3c9a06d5ce299e604e44c60d520879b994e8e506138b791de520c1",
-      "updated_at": "2026-11-17T19:15:41.930Z"
+      "updated_at": "2026-11-17T20:07:55.426Z"
     },
     "toronto-yonge-subway-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3c76b22f0a68be4a79de2402abf3f2f5599058e6bdf6e32046c8c10f896901d3",
-      "updated_at": "2026-11-17T19:18:28.642Z"
+      "updated_at": "2026-11-17T20:07:55.459Z"
     },
     "rome-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c3a47a26f4f26197cbb7da9241b82f820174b7bdde04b90848d3108528b32fa6",
-      "updated_at": "2026-11-17T19:21:18.229Z"
+      "updated_at": "2026-11-17T20:07:55.493Z"
     },
     "montreal-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6b6e713cc43f6fc8fc183af00f8f3b8aa5a8cb5155b989086bd75e16fdab3ff0",
-      "updated_at": "2026-11-17T19:24:10.537Z"
+      "updated_at": "2026-11-17T20:07:55.532Z"
     },
     "mexico-city-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "aa30cd52fff76bf0c0fcda50649180d74a0673a862800a6ac63b6221eaadd380",
-      "updated_at": "2026-11-17T19:29:44.428Z"
+      "updated_at": "2026-11-17T20:07:55.573Z"
     },
     "curitiba-bus-rapid-transit": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "63b4d61c9de4dabfa3c6a8aa6e47a362073b6847ae00481e3a611cce8e3a4607",
-      "updated_at": "2026-11-17T19:32:45.846Z"
+      "updated_at": "2026-11-17T20:07:55.609Z"
     },
     "washington-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0e7a580e4911c1093b4c71b86bcc2d7c7592ed0e4d2aa66a0a2188d03165c3f6",
-      "updated_at": "2026-11-17T19:35:46.975Z"
+      "updated_at": "2026-11-17T20:07:55.644Z"
     },
     "hong-kong-mtr-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "299f29921cdd1f03ea8c397718bd241aac29134b526023a56eebdd297303a9a4",
-      "updated_at": "2026-11-17T19:38:49.456Z"
+      "updated_at": "2026-11-17T20:07:55.682Z"
     },
     "vancouver-skytrain-opens": {
       "state": "pending",
