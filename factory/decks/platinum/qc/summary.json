@@ -1,0 +1,72 @@
+{
+  "elvis-presley-debut-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted bedroom interior. An open, worn suitcase-style portable record player in the centre plays a black vinyl record. A stack of record sleeves lies on the floor at right; the top sleeve has a pink and green portrait of a dark-haired man. At left, a pair of legs in a green skirt, white socks and white-and-brown saddle shoes stand near a bed with rumpled sheets. A brown loafer is in the lower right foreground, a lamp sits at top right, and a poster hangs on the wall at top left. No legible text is visible."
+  },
+  "miles-davis-kind-of-blue": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, vaulted stone room resembling a converted church, painted in oil. On the left stands an upright piano and beside it an upright double bass. In the centre, a brass trumpet with a small cup-shaped mute rests on a folding wooden chair, and a vintage microphone hangs on a boom stand overhead. Music stands and cables fill the shadowy background, lit by one hanging lamp. No text, frame or people are visible."
+  },
+  "dylan-freewheelin-album": {
+    "state": "qc-fail",
+    "reason": "The coffeehouse window has the words FOLK CITY painted on it. Repaint the window with no lettering.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A snowy city side street at dusk, painted in oils. A lit storefront window on the left has the letters FOLK CITY and candles. Brick tenements with fire escapes line the right, with a VW van and 1950s-60s cars parked. A worn guitar case leans against a black lamppost in the foreground, with footprints in the snow. No people, no frame."
+  },
+  "beach-boys-pet-sounds": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted, dimly lit interior of a recording room with sunlight slanting through tall windows. A grand piano dominates the centre, with a cello and a double bass, a brass player and a trumpet on a stool in the background. A reel-to-reel tape machine and mixing console sit at right, and two small dogs sit on the floor by the piano. No readable text, no frame."
+  },
+  "beatles-sgt-pepper": {
+    "state": "qc-fail",
+    "reason": "Flowers in the foreground are arranged into large letters spelling a word (BEAT...), which is painted-in text. Redraw the flowerbed as a guitar shape or plain flowers with no lettering.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark, oil-painted crowd of cut-out style figures in mixed dress stands behind four figures in bright military band uniforms with blank faces. A large bass drum sits mid-frame and a smiling clown-faced drum lies lower right. Red flowers in the foreground form large letters reading roughly BEAT. There are palms, a doll and small statues. The painting fills the image edge to edge, with no frame."
+  },
+  "beatles-abbey-road": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted, dimly lit tree-lined street seen from the middle of the road. A white Volkswagen Beetle is parked on the left and dark vintage cars sit further down. On the right is a row of white stucco townhouses behind a low brick wall. In the foreground a zebra crossing runs across the frame, with dark footprint-like shadows on the white stripes. No people, no visible text, and the painting fills the whole image edge to edge."
+  },
+  "led-zeppelin-iv-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted interior of a dark wood-panelled staircase with a carved banister, a drum kit set up on a wooden landing with cymbals and a snare, and microphones hanging on cables from the upper gallery. A seated, shadowy figure sits beside the drums. Through an open door at the back, a vintage dark van is parked on gravel under trees. No visible text, frame or border; the painting fills the image edge to edge."
+  },
+  "bowie-ziggy-stardust-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A headless mannequin in a harlequin-patterned jumpsuit and red platform boots stands in a spotlight on a worn wooden stage in an old theatre. A lightning bolt is painted on an ornate gilt standing mirror to the right, and an electric guitar leans against a speaker cabinet on the left, with cables on the floor. Dark red curtains and balcony railings frame the background."
+  },
+  "pink-floyd-dark-side-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A glass prism stands on a dark, scuffed surface. A bright white beam enters from the upper left and leaves the prism as a rainbow spectrum that spreads across the lower right. Behind it sit several antique clocks with Roman-numeral dials, and a tape reel sits on the right. Cables trail across the dark, painterly oil-style scene. The painting fills the frame edge to edge."
+  },
+  "springsteen-born-to-run-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, weathered vintage car with its driver's door open, parked at dusk. On the cracked black leather back seat lie a gold tenor saxophone and a worn sunburst electric guitar, with a crumpled cloth beside them. Behind the car is an ocean with choppy waves, and a pier with a lit Ferris wheel, neon signs and a lone figure walking on the boardwalk. The painting is oil-style and fills the frame edge to edge."
+  }
+}

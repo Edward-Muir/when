@@ -1,0 +1,15 @@
+{
+  "slug": "beatles-abbey-road",
+  "description": "A painted, dimly lit tree-lined street seen from the middle of the road. A white Volkswagen Beetle is parked on the left and dark vintage cars sit further down. On the right is a row of white stucco townhouses behind a low brick wall. In the foreground a zebra crossing runs across the frame, with dark footprint-like shadows on the white stripes. No people, no visible text, and the painting fills the whole image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

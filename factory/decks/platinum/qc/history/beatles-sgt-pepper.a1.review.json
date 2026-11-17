@@ -1,0 +1,15 @@
+{
+  "slug": "beatles-sgt-pepper",
+  "description": "A crowded, dark, oil-painted scene of many people in mixed period dress, standing behind four figures in bright military-style uniforms with blank faces. A large bass drum sits in front, and a clown-faced drum is in the lower right. Flowers in the foreground form the word \"BEATLES\" in letters, and there are statues, a doll, and palm fronds. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The word \"BEATLES\" is painted in letters made of flowers across the foreground, which is visible text. The card's scene asks for a flowerbed shaped like a guitar, and the image has no guitar shape. The rest of the image matches the Sgt. Pepper cover collage and fits 1967."
+}

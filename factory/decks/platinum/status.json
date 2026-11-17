@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:36:21.697Z",
+  "updated_at": "2026-11-17T06:08:36.511Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "elvis-presley-debut-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1ec5e26e8564d57549b8364911c408735e5165df9c84655a58d527e19a8dd814",
-      "updated_at": "2026-11-17T04:10:00.617Z"
+      "updated_at": "2026-11-17T06:08:36.204Z"
     },
     "miles-davis-kind-of-blue": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9a251d7bc9511cc20f4ebad2a41d487e17030436eb21411979de5207a2bcd956",
-      "updated_at": "2026-11-17T04:12:47.610Z"
+      "updated_at": "2026-11-17T06:08:36.237Z"
     },
     "dylan-freewheelin-album": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The coffeehouse window has the words FOLK CITY painted on it. Repaint the window with no lettering.",
       "sha256": "3b61386913fc309123c2695d815d6fe502293c74a7f113110d2273b18ccee18b",
-      "updated_at": "2026-11-17T04:16:55.456Z"
+      "updated_at": "2026-11-17T06:08:36.269Z"
     },
     "beach-boys-pet-sounds": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a9ebdaaf3c5cb72f850ed32aa14e760e3923279d85b30bc22070558b5aaa7e9c",
-      "updated_at": "2026-11-17T04:19:36.573Z"
+      "updated_at": "2026-11-17T06:08:36.301Z"
     },
     "beatles-sgt-pepper": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Flowers in the foreground are arranged into large letters spelling a word (BEAT...), which is painted-in text. Redraw the flowerbed as a guitar shape or plain flowers with no lettering.",
       "sha256": "cecdd7822f290224c887164c083d3a993f3a3c562deb93be0058997c00bd13c3",
-      "updated_at": "2026-11-17T04:22:12.660Z"
+      "updated_at": "2026-11-17T06:08:36.332Z"
     },
     "beatles-abbey-road": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a95589dad3250392280dc1c741f19e18f90954dc5518e0010b463871a6a2e371",
-      "updated_at": "2026-11-17T04:24:47.316Z"
+      "updated_at": "2026-11-17T06:08:36.368Z"
     },
     "led-zeppelin-iv-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3b46790b7ced4310dddaea5db077cf5ab28f46e07d125edf66eb8db24bfb7d9c",
-      "updated_at": "2026-11-17T04:27:23.319Z"
+      "updated_at": "2026-11-17T06:08:36.405Z"
     },
     "bowie-ziggy-stardust-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d9d3a68ebfd26022ef7e210f7bc28beac25a2f98cfb75c201a3423425899c123",
-      "updated_at": "2026-11-17T04:30:56.711Z"
+      "updated_at": "2026-11-17T06:08:36.442Z"
     },
     "pink-floyd-dark-side-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d947b36e04f7283520bea27234254e0cfeff810c24b549df474a1a3aa86519e2",
-      "updated_at": "2026-11-17T04:33:37.918Z"
+      "updated_at": "2026-11-17T06:08:36.477Z"
     },
     "springsteen-born-to-run-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c9e1e52e71b07d93a69984fb9f57e4faaa6461770067c47028dfb49e55a7f2f8",
-      "updated_at": "2026-11-17T04:36:21.697Z"
+      "updated_at": "2026-11-17T06:08:36.511Z"
     },
     "eagles-hotel-california-album": {
       "state": "pending",
