@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T21:09:29.434Z",
+  "updated_at": "2026-11-17T21:11:39.756Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-11-17T21:09:29.434Z"
     },
     "singapore-mrt-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e5a6468798d563f0e8eae6705395040710e36ff471839c9615da8cde3e5b7fa3",
+      "updated_at": "2026-11-17T21:11:39.756Z"
     },
     "shanghai-metro-opens": {
       "state": "pending",
