@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T07:32:42.408Z",
+  "updated_at": "2026-11-17T08:07:57.324Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,11 +30,11 @@
       "updated_at": "2026-11-17T06:08:36.237Z"
     },
     "dylan-freewheelin-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The coffeehouse window has the words FOLK CITY painted on it. Repaint the window with no lettering.",
+      "reason": null,
       "sha256": "19179beaf9caa8614b30ab0e8750290dac038c37709c067851a19017608a595f",
-      "updated_at": "2026-11-17T07:10:06.493Z"
+      "updated_at": "2026-11-17T08:07:57.015Z"
     },
     "beach-boys-pet-sounds": {
       "state": "qc-pass",
@@ -44,11 +44,11 @@
       "updated_at": "2026-11-17T06:08:36.301Z"
     },
     "beatles-sgt-pepper": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Flowers in the foreground are arranged into large letters spelling a word (BEAT...), which is painted-in text. Redraw the flowerbed as a guitar shape or plain flowers with no lettering.",
+      "reason": null,
       "sha256": "e4d359e6aa20a5fef6d1b256589fa0fba579bbbf38adb3c6096e049423173a24",
-      "updated_at": "2026-11-17T07:12:17.254Z"
+      "updated_at": "2026-11-17T08:07:57.047Z"
     },
     "beatles-abbey-road": {
       "state": "qc-pass",
@@ -86,60 +86,60 @@
       "updated_at": "2026-11-17T06:08:36.511Z"
     },
     "eagles-hotel-california-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e2cb44b4597c4b84839f4e4d45c39a268283a02f2da2de376edcb0cb4c3a846b",
-      "updated_at": "2026-11-17T07:14:29.938Z"
+      "updated_at": "2026-11-17T08:07:57.080Z"
     },
     "fleetwood-mac-rumours-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9bbdfcb9baa54879285342e7bc8122ed2c4e341f036d50fb89fd9d216900300d",
-      "updated_at": "2026-11-17T07:16:40.173Z"
+      "updated_at": "2026-11-17T08:07:57.114Z"
     },
     "pink-floyd-the-wall-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3935fc1bfbce96227ee933c014a9106ebc38c00ba5cadbd2925346ee1d392da8",
-      "updated_at": "2026-11-17T07:18:58.557Z"
+      "updated_at": "2026-11-17T08:07:57.146Z"
     },
     "acdc-back-in-black-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3102494d0c8164c4c9b5a3d1243964810239a62d8965908b3e0a92070819a788",
-      "updated_at": "2026-11-17T07:21:56.911Z"
+      "updated_at": "2026-11-17T08:07:57.179Z"
     },
     "prince-purple-rain-album": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The brand name 'Marshall' is legibly painted on the amplifier at the left edge. Repaint the amps without lettering. The rest matches the card.",
       "sha256": "5e406a3ad808ff70ebfd5a9a79d5b07ff1760c92c145610175ace18770e91aca",
-      "updated_at": "2026-11-17T07:24:55.727Z"
+      "updated_at": "2026-11-17T08:07:57.216Z"
     },
     "u2-joshua-tree-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f7f626224d35f50628b4bf8b58d0b5cf518b7b3757efedfc8a07bd394c54ac45",
-      "updated_at": "2026-11-17T07:27:12.473Z"
+      "updated_at": "2026-11-17T08:07:57.256Z"
     },
     "madonna-like-a-prayer-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "39223a392dfde961dab710551edea930ffcdf65f982dbb1bf22a243229d013d6",
-      "updated_at": "2026-11-17T07:30:17.005Z"
+      "updated_at": "2026-11-17T08:07:57.289Z"
     },
     "nas-illmatic-album": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e86149a4420db6596321637b4b46944a239401bcd5cf5fa5882a8f98f9f64015",
-      "updated_at": "2026-11-17T07:32:42.408Z"
+      "updated_at": "2026-11-17T08:07:57.324Z"
     },
     "radiohead-ok-computer-album": {
       "state": "pending",

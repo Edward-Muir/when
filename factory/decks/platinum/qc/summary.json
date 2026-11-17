@@ -14,11 +14,11 @@
     "description": "A dim, vaulted stone room resembling a converted church, painted in oil. On the left stands an upright piano and beside it an upright double bass. In the centre, a brass trumpet with a small cup-shaped mute rests on a folding wooden chair, and a vintage microphone hangs on a boom stand overhead. Music stands and cables fill the shadowy background, lit by one hanging lamp. No text, frame or people are visible."
   },
   "dylan-freewheelin-album": {
-    "state": "qc-fail",
-    "reason": "The coffeehouse window has the words FOLK CITY painted on it. Repaint the window with no lettering.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A snowy city side street at dusk, painted in oils. A lit storefront window on the left has the letters FOLK CITY and candles. Brick tenements with fire escapes line the right, with a VW van and 1950s-60s cars parked. A worn guitar case leans against a black lamppost in the foreground, with footprints in the snow. No people, no frame."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A snowy city street at night beside a brick townhouse with iron railings and fire escapes. A warm lit window shows a dark silhouette of a person playing an instrument, with another figure beside them. In the foreground an old battered guitar case leans against the steps beside a folded metal music stand. Painterly style, falling snow, a single street lamp at the far right."
   },
   "beach-boys-pet-sounds": {
     "state": "qc-pass",
@@ -28,11 +28,11 @@
     "description": "A painted, dimly lit interior of a recording room with sunlight slanting through tall windows. A grand piano dominates the centre, with a cello and a double bass, a brass player and a trumpet on a stool in the background. A reel-to-reel tape machine and mixing console sit at right, and two small dogs sit on the floor by the piano. No readable text, no frame."
   },
   "beatles-sgt-pepper": {
-    "state": "qc-fail",
-    "reason": "Flowers in the foreground are arranged into large letters spelling a word (BEAT...), which is painted-in text. Redraw the flowerbed as a guitar shape or plain flowers with no lettering.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark, oil-painted crowd of cut-out style figures in mixed dress stands behind four figures in bright military band uniforms with blank faces. A large bass drum sits mid-frame and a smiling clown-faced drum lies lower right. Red flowers in the foreground form large letters reading roughly BEAT. There are palms, a doll and small statues. The painting fills the image edge to edge, with no frame."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted crowd scene: four figures in bright military-style jackets stand before a large dark bass drum, with a crowd of faces behind them. In front, a guitar shape is built from flowers, a painted drum sits at the lower right, and a bust rises from the grass. No text or frame is visible."
   },
   "beatles-abbey-road": {
     "state": "qc-pass",
@@ -68,5 +68,61 @@
     "by": "review",
     "attempts": 1,
     "description": "A dark, weathered vintage car with its driver's door open, parked at dusk. On the cracked black leather back seat lie a gold tenor saxophone and a worn sunburst electric guitar, with a crumpled cloth beside them. Behind the car is an ocean with choppy waves, and a pier with a lit Ferris wheel, neon signs and a lone figure walking on the boardwalk. The painting is oil-style and fills the frame edge to edge."
+  },
+  "eagles-hotel-california-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted nocturne of a Spanish Colonial Revival building with a bell tower and a warmly lit arched entrance, two electric guitars leaning in the doorway. Tall palm trees line a long empty road under a stormy sky with a moon, and a single car's headlights glow in the distance. No visible text, frame or people."
+  },
+  "fleetwood-mac-rumours-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, warmly lit recording studio. A large mixing console with rows of faders and knobs fills the centre, with a reel-to-reel tape machine behind it and studio monitors at the top left. In the foreground a low table holds a half-full wine bottle, a glass of red wine, ashtrays with cigarettes, and handwritten lyric sheets. Crumpled paper lies on the floor, and a worn leather chair sits at the right beside tangled cables. The scene is an oil-painting style with no people."
+  },
+  "pink-floyd-the-wall-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large wall of tan and brown stacked bricks fills the centre of a dark, smoky stage, with hanging speakers and stage lights overhead. A small figure sits in an armchair beside a lit floor lamp in a gap in the wall. In the foreground, a row of empty school desks and chairs faces the wall. No visible text, no frame, and the painting fills the image edge to edge."
+  },
+  "acdc-back-in-black-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim wooden room with a tall stack of black guitar amplifier heads with gold control panels over speaker cabinets, coiled cables on the floor and road cases at the right. A brass bell hangs on a rope in front of an open louvered window showing stormy sea and palm trees. No people, no visible text."
+  },
+  "prince-purple-rain-album": {
+    "state": "qc-fail",
+    "reason": "The brand name 'Marshall' is legibly painted on the amplifier at the left edge. Repaint the amps without lettering. The rest matches the card.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark purple oil-style painting of a stage in thick purple haze. A purple motorcycle sits left of an upright piano, with a ruffled sequined purple jacket draped over the stool. A rain-streaked window with blurred city lights is behind. Mic stands, cables and amplifiers fill the edges; the word 'Marshall' is legibly painted on the left amp. Fills the image edge to edge, no frame, nothing graphic."
+  },
+  "u2-joshua-tree-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting of a large Joshua tree at golden sunset in a flat desert. An acoustic guitar leans against the trunk at its base. A pale dirt road runs from the foreground to the horizon on the right, with low brown scrub and distant purple mountains. No people, no text, no frame."
+  },
+  "madonna-like-a-prayer-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dim, candle-lit church interior painted in oil. In the foreground a dark wooden pew holds a pair of black lace gloves and a rosary with a crucifix. Rows of candles burn on an altar under a stained-glass window, and black choir robes hang on a rail along the left wall. No people, text, frame or graphic content."
+  },
+  "nas-illmatic-album": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a brown leather jacket sits on brownstone steps at dusk, writing in a small notebook. Beside him are a boombox, a black milk crate of vinyl records, and a folding table holding two turntables and a mixer, with cables trailing off the edge. Behind are brick apartment blocks with fire escapes and lit windows, and a few figures in a courtyard. The painting is warm and painterly, with no visible text, frame or border."
   }
 }

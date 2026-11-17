@@ -1,0 +1,15 @@
+{
+  "slug": "prince-purple-rain-album",
+  "description": "A dark, purple-toned oil-style painting edge to edge. A purple custom motorcycle with chrome pipes sits on the left in thick purple haze. On the right an upright piano has a ruffled purple outfit draped over a bench. Rain streaks down a large window behind, with blurred city lights beyond. Microphone stands and cables sit on a wooden stage floor, and Marshall amplifier stacks stand at the edges, with the brand name legible on one.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The word 'Marshall' is painted legibly on the amplifier stacks at the left and right edges. Repaint or crop those amps so no brand lettering shows. The rest of the scene (purple motorcycle, piano, draped ruffled jacket, rain-streaked window, stage haze) matches the card."
+}

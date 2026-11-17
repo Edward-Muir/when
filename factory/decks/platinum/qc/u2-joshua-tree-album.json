@@ -1,0 +1,15 @@
+{
+  "slug": "u2-joshua-tree-album",
+  "description": "An oil-style painting of a large Joshua tree at golden sunset in a flat desert. An acoustic guitar leans against the trunk at its base. A pale dirt road runs from the foreground to the horizon on the right, with low brown scrub and distant purple mountains. No people, no text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

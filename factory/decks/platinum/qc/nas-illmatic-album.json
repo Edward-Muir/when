@@ -1,0 +1,15 @@
+{
+  "slug": "nas-illmatic-album",
+  "description": "A man in a brown leather jacket sits on brownstone steps at dusk, writing in a small notebook. Beside him are a boombox, a black milk crate of vinyl records, and a folding table holding two turntables and a mixer, with cables trailing off the edge. Behind are brick apartment blocks with fire escapes and lit windows, and a few figures in a courtyard. The painting is warm and painterly, with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

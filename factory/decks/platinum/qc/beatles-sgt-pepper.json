@@ -1,0 +1,15 @@
+{
+  "slug": "beatles-sgt-pepper",
+  "description": "A painted crowd scene: four figures in bright military-style jackets stand before a large dark bass drum, with a crowd of faces behind them. In front, a guitar shape is built from flowers, a painted drum sits at the lower right, and a bust rises from the grass. No text or frame is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
