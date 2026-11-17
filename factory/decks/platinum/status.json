@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T10:07:48.606Z",
+  "updated_at": "2026-11-17T11:09:51.087Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-11-17T10:07:48.477Z"
     },
     "lauryn-hill-miseducation-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d18c8d1a4273a5f1989de6873583805f06b8bdec10cd9b4f3aa3aa866efb9a0c",
+      "updated_at": "2026-11-17T11:09:51.087Z"
     },
     "norah-jones-come-away-with-me-album": {
       "state": "qc-pass",
