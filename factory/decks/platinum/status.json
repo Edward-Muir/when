@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T07:16:40.173Z",
+  "updated_at": "2026-11-17T07:18:58.557Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-17T07:16:40.173Z"
     },
     "pink-floyd-the-wall-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3935fc1bfbce96227ee933c014a9106ebc38c00ba5cadbd2925346ee1d392da8",
+      "updated_at": "2026-11-17T07:18:58.557Z"
     },
     "acdc-back-in-black-album": {
       "state": "pending",
