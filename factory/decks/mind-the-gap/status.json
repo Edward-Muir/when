@@ -3,7 +3,7 @@
   "name": "Mind the Gap",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T16:21:06.927Z",
-  "updated_at": "2026-11-17T17:29:45.583Z",
+  "updated_at": "2026-11-17T18:08:52.315Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "shillibeer-london-omnibus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4ad950760d4dd51bd879c4c4d216ac0fb5aa8392d9b880c91eabfe4ed30dc29d",
-      "updated_at": "2026-11-17T17:09:46.994Z"
+      "updated_at": "2026-11-17T18:08:51.989Z"
     },
     "new-york-harlem-horsecar": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "65a55c510fffc33b062c58672d949a17f300112c513da7885594e3d17e74d5f9",
-      "updated_at": "2026-11-17T17:11:58.104Z"
+      "updated_at": "2026-11-17T18:08:52.024Z"
     },
     "san-francisco-clay-street-cable-car": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4212dc6b066b14e66a9429e61d34dc19e80093f90a61a9e3aa2d1ac6fd5ddaf1",
-      "updated_at": "2026-11-17T17:14:13.644Z"
+      "updated_at": "2026-11-17T18:08:52.058Z"
     },
     "richmond-electric-streetcar-network": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "90d908e8d7b1956168723cd104413c525a62531aa02e5ad41a2661eaddb716da",
-      "updated_at": "2026-11-17T17:16:27.585Z"
+      "updated_at": "2026-11-17T18:08:52.091Z"
     },
     "city-south-london-deep-tube": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d508aa52655035562628a7006ba1d10b6360a392e5351608d362d3a7354511d8",
-      "updated_at": "2026-11-17T17:18:38.568Z"
+      "updated_at": "2026-11-17T18:08:52.125Z"
     },
     "budapest-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "739106c8f12ef30081d6f06fbc56b98589bfb3c6346b5e5f0273e899c2da6f9c",
-      "updated_at": "2026-11-17T17:20:58.210Z"
+      "updated_at": "2026-11-17T18:08:52.164Z"
     },
     "paris-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e7a2d6bb7efed0a6e7294575d9d77dd65059738dec3cd048c92959d6750dbc92",
-      "updated_at": "2026-11-17T17:23:14.100Z"
+      "updated_at": "2026-11-17T18:08:52.203Z"
     },
     "new-york-subway-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f9c2b35a2898ae43f917bf837725d01404a57e082768d5c901150ece58d2f1ba",
-      "updated_at": "2026-11-17T17:25:24.297Z"
+      "updated_at": "2026-11-17T18:08:52.240Z"
     },
     "buenos-aires-subte-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1f5f26e6fc770f043a70acf7a27d6d8ab17624be4c87c8535d72d6d90c714f87",
-      "updated_at": "2026-11-17T17:27:32.965Z"
+      "updated_at": "2026-11-17T18:08:52.278Z"
     },
     "madrid-metro-opens": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The posters on the station walls have legible painted lettering (e.g. 'Brea Erdinario', 'Rhoprigno', partial words on the left). Repaint the posters blank or as plain abstract shapes with no letters.",
       "sha256": "97dce6eff0bd3186c4395fcc8a0bc45df054ff895c718038b5ef645d04feca0a",
-      "updated_at": "2026-11-17T17:29:45.583Z"
+      "updated_at": "2026-11-17T18:08:52.315Z"
     },
     "tokyo-ginza-line-opens": {
       "state": "pending",

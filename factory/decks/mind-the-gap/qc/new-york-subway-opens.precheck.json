@@ -1,0 +1,20 @@
+{
+  "slug": "new-york-subway-opens",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "f9c2b35a2898ae43f917bf837725d01404a57e082768d5c901150ece58d2f1ba",
+  "dhash": "b0d25068e1694c76",
+  "nearest": {
+    "deck": {
+      "slug": "paris-metro-opens",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "mayan-hiatus",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "city-south-london-deep-tube",
+  "description": "An oil painting of a dark circular iron-ringed tunnel. A small boxy riveted black locomotive with a cab and a driver in a cap pulls a brown carriage with passengers in bowler hats and shawls. Lanterns hang on the walls, and there are sparks and faint haze at the front. No text, frame or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
