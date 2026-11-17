@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T09:13:02.284Z",
+  "updated_at": "2026-11-17T09:16:41.890Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -155,10 +155,11 @@
       "sha256": null
     },
     "norah-jones-come-away-with-me-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "71b457fc1083218877dca19687fcfba9617fa0d915a50ca8b2424ee1d34f48d8",
+      "updated_at": "2026-11-17T09:16:41.890Z"
     },
     "amy-winehouse-back-to-black-album": {
       "state": "pending",
