@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:10:00.617Z",
+  "updated_at": "2026-11-17T04:12:47.610Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-17T04:10:00.617Z"
     },
     "miles-davis-kind-of-blue": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9a251d7bc9511cc20f4ebad2a41d487e17030436eb21411979de5207a2bcd956",
+      "updated_at": "2026-11-17T04:12:47.610Z"
     },
     "dylan-freewheelin-album": {
       "state": "pending",
