@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:27:23.319Z",
+  "updated_at": "2026-11-17T04:30:56.711Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-17T04:27:23.319Z"
     },
     "bowie-ziggy-stardust-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d9d3a68ebfd26022ef7e210f7bc28beac25a2f98cfb75c201a3423425899c123",
+      "updated_at": "2026-11-17T04:30:56.711Z"
     },
     "pink-floyd-dark-side-album": {
       "state": "pending",
