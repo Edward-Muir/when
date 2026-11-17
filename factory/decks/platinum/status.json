@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T04:12:47.610Z",
+  "updated_at": "2026-11-17T04:16:55.456Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-17T04:12:47.610Z"
     },
     "dylan-freewheelin-album": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3b61386913fc309123c2695d815d6fe502293c74a7f113110d2273b18ccee18b",
+      "updated_at": "2026-11-17T04:16:55.456Z"
     },
     "beach-boys-pet-sounds": {
       "state": "pending",
