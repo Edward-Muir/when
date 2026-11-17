@@ -3,7 +3,7 @@
   "name": "Platinum",
   "stage": "art-in-progress",
   "created_at": "2026-11-17T03:20:19.399Z",
-  "updated_at": "2026-11-17T12:07:48.494Z",
+  "updated_at": "2026-11-17T13:10:37.814Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,11 +149,11 @@
       "updated_at": "2026-11-17T10:07:48.477Z"
     },
     "lauryn-hill-miseducation-album": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The chalkboard is covered in chalk lettering with word-like strings (e.g. 'walk', 'Playlight', 'Kainbook'), and the desk carvings show letters including 'SCHOOL' and name-like marks. Repaint the board and desk with abstract scribbles or plain wood, with no letterforms.",
-      "sha256": "d18c8d1a4273a5f1989de6873583805f06b8bdec10cd9b4f3aa3aa866efb9a0c",
-      "updated_at": "2026-11-17T12:07:48.352Z"
+      "sha256": "de35db82858de2d2f3a0f4933d32dc15437d7bfcd7bb3779d1c1e584d47fbcdc",
+      "updated_at": "2026-11-17T13:10:37.814Z"
     },
     "norah-jones-come-away-with-me-album": {
       "state": "qc-pass",
