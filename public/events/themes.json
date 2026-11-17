@@ -21557,7 +21557,10 @@
     "year": 1829,
     "category": "invention",
     "description": "A coachbuilder ran a horse-drawn omnibus carrying many passengers between Paddington and the Bank in London.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "new-york-harlem-horsecar",
@@ -21565,7 +21568,10 @@
     "year": 1832,
     "category": "invention",
     "description": "Horse-drawn cars on iron rails carried New Yorkers along the Bowery, the world's first street railway.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "san-francisco-clay-street-cable-car",
@@ -21573,7 +21579,10 @@
     "year": 1873,
     "category": "invention",
     "description": "A cable-hauled car made its first run down a steep hill, launching the city's famous cable car system.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "richmond-electric-streetcar-network",
@@ -21581,7 +21590,10 @@
     "year": 1888,
     "category": "invention",
     "description": "A Virginia city opened the first large-scale electric streetcar network, proving trolleys could climb hills and carry crowds.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "city-south-london-deep-tube",
@@ -21589,7 +21601,10 @@
     "year": 1890,
     "category": "architecture",
     "description": "Electric locomotives hauled passengers through deep, circular tunnels beneath London, ending smoky underground travel.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "budapest-metro-opens",
@@ -21597,7 +21612,10 @@
     "year": 1896,
     "category": "architecture",
     "description": "The first underground railway on the European mainland opened under a grand avenue as part of a national celebration.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Hungary"
+    ]
   },
   {
     "name": "paris-metro-opens",
@@ -21605,7 +21623,10 @@
     "year": 1900,
     "category": "architecture",
     "description": "The first line of the Paris Metro began carrying passengers beneath the capital as visitors flocked to a world fair.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "new-york-subway-opens",
@@ -21613,7 +21634,10 @@
     "year": 1904,
     "category": "architecture",
     "description": "Crowds rode the city's first underground line from City Hall to Harlem on a gala evening, launching the subway.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "buenos-aires-subte-opens",
@@ -21621,7 +21645,10 @@
     "year": 1913,
     "category": "architecture",
     "description": "The first underground line in Latin America and the Southern Hemisphere began running beneath the Argentine capital.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Argentina"
+    ]
   },
   {
     "name": "madrid-metro-opens",
@@ -21629,7 +21656,10 @@
     "year": 1919,
     "category": "architecture",
     "description": "The king inaugurated a short underground line in Madrid, the start of one of Europe's largest metro networks.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "tokyo-ginza-line-opens",
@@ -21637,7 +21667,10 @@
     "year": 1927,
     "category": "architecture",
     "description": "Asia's first subway opened in Tokyo with a short stretch of track between Ueno and Asakusa.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "moscow-metro-opens",
@@ -21645,7 +21678,11 @@
     "year": 1935,
     "category": "architecture",
     "description": "The Soviet capital opened its first underground line, with marble halls and chandeliers intended as palaces for the people.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "toronto-yonge-subway-opens",
@@ -21653,7 +21690,10 @@
     "year": 1954,
     "category": "architecture",
     "description": "Canada's first subway line opened beneath Yonge Street, carrying commuters through downtown Toronto.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "rome-metro-opens",
@@ -21661,7 +21701,10 @@
     "year": 1955,
     "category": "architecture",
     "description": "Rome opened its first metro line, linking the central station with a planned district south of the city.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "montreal-metro-opens",
@@ -21669,7 +21712,10 @@
     "year": 1966,
     "category": "architecture",
     "description": "Montreal opened a rubber-tyred metro with art-filled stations, ahead of a world exposition.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "mexico-city-metro-opens",
@@ -21677,7 +21723,10 @@
     "year": 1969,
     "category": "architecture",
     "description": "Mexico City began running trains on its first line, with pictogram station icons so riders who could not read could navigate.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Mexico"
+    ]
   },
   {
     "name": "curitiba-bus-rapid-transit",
@@ -21685,7 +21734,10 @@
     "year": 1974,
     "category": "invention",
     "description": "A Brazilian city launched dedicated bus lanes with raised tube stations, a model copied by cities worldwide.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Brazil"
+    ]
   },
   {
     "name": "washington-metro-opens",
@@ -21693,7 +21745,10 @@
     "year": 1976,
     "category": "architecture",
     "description": "The American capital opened the first stretch of its vaulted-ceiling metro system.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hong-kong-mtr-opens",
@@ -21701,7 +21756,10 @@
     "year": 1979,
     "category": "architecture",
     "description": "Hong Kong began running trains on its first Mass Transit Railway line beneath Kowloon.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Hong Kong"
+    ]
   },
   {
     "name": "vancouver-skytrain-opens",
@@ -21709,7 +21767,10 @@
     "year": 1985,
     "category": "invention",
     "description": "A driverless, automated light metro began running through Vancouver, opened in time for a world fair.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Canada"
+    ]
   },
   {
     "name": "singapore-mrt-opens",
@@ -21717,7 +21778,10 @@
     "year": 1987,
     "category": "architecture",
     "description": "Singapore's first Mass Rapid Transit trains carried passengers on a short stretch of a new island-wide network.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Singapore"
+    ]
   },
   {
     "name": "shanghai-metro-opens",
@@ -21725,7 +21789,10 @@
     "year": 1993,
     "category": "architecture",
     "description": "Shanghai opened its first subway line, the start of what became the longest metro network in the world.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "bogota-transmilenio-opens",
@@ -21733,7 +21800,10 @@
     "year": 2000,
     "category": "invention",
     "description": "Bogota launched a high-capacity bus rapid transit system with express lanes, inspired by the Curitiba model.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Colombia"
+    ]
   },
   {
     "name": "dubai-metro-opens",
@@ -21741,7 +21811,10 @@
     "year": 2009,
     "category": "architecture",
     "description": "Dubai opened a driverless metro, then the longest automated rail network in the world, running through the desert city.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Arab Emirates"
+    ]
   },
   {
     "name": "sydney-metro-opens",
@@ -21749,6 +21822,9 @@
     "year": 2019,
     "category": "architecture",
     "description": "Sydney began operating its first fully automated, driverless metro line in the north-west of the city.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Australia"
+    ]
   }
 ]
