@@ -1,0 +1,15 @@
+{
+  "slug": "futura-typeface-released",
+  "description": "A painted interior of a dim room with a slanted drafting table in the foreground. On the pale paper sheet are a drawn circle with overlapping ellipse loops, straight construction lines forming a triangle and cross axes, a metal compass, a metal set square and a wooden ruler. A window with small panes is at the upper left, and a tubular-frame chair sits in the dark background. No people, no visible letters or text, and no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

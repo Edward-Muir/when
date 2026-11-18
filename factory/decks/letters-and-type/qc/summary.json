@@ -42,11 +42,11 @@
     "description": "An elderly man with grey hair in a wig and a dark buttoned coat leans over an open book on a wooden table. Behind him is a wooden screw printing press, with stacks of paper on a bench and a window light in the dim workshop. Small printed lines are visible on the open page, and there are black ink balls on the table."
   },
   "first-sans-serif-typeface": {
-    "state": "qc-fail",
-    "reason": "Painted text is visible: the board at lower left reads HAND PRESSED with smaller lines beneath, and a sign at upper right has partial lettering. Remove all signs and lettering from the background.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An oil painting of a weathered man in a vest and rolled sleeves holding a metal letter A type block in a dim print shop. Trays of ornate decorative type sit in the foreground, with shelves and a brick wall behind. A sign at lower left reads HAND PRESSED with smaller lettering, and a sign at upper right shows partial lettering. The painting fills the frame with no border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A man with dark, tousled hair and a grey waistcoat over a rolled-sleeve white shirt holds up a metal block with raised, mirrored letters, looking startled. Behind him is a workshop with a brick fireplace glowing with fire, and a bench with a tray of metal type, ladles, crumpled paper and tools. The painting is a dark oil style and runs edge to edge with no frame visible."
   },
   "sholes-typewriter-patent": {
     "state": "qc-pass",
@@ -63,10 +63,66 @@
     "description": "A painted interior in an oil-painting style. A man in a dark frock coat and bow tie leans over a black ornate typewriter with floral gold decoration, set on a wooden table with a cast-iron treadle-style base. A younger man in a waistcoat and rolled sleeves watches closely beside him. Behind them are a lit oil lamp, shelves of tools, rifles mounted on a wall, a window, and a horse-drawn carriage visible outside. No visible text, no frame; the painting fills the image edge to edge."
   },
   "johnston-london-typeface": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A man in a dark waistcoat and white shirt sits on a wooden chair at a slanted drafting desk in a dim room, drawing angular black letters with a pen on a large sheet of paper. Ink pots and a pen sit on the desk ledge, and books and rolled papers are on shelves behind him. On the right, a white board with a red ring and dark horizontal bar, like a transport roundel, leans against the wall beside posters of more lettering. Window light comes from the left, and the scene is painted in a dark oil style."
+  },
+  "futura-typeface-released": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted interior of a dim room with a slanted drafting table in the foreground. On the pale paper sheet are a drawn circle with overlapping ellipse loops, straight construction lines forming a triangle and cross axes, a metal compass, a metal set square and a wooden ruler. A window with small panes is at the upper left, and a tubular-frame chair sits in the dark background. No people, no visible letters or text, and no frame."
+  },
+  "times-new-roman-debut": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a dark workshop, in a rolled-sleeve shirt and leather apron, leans over a metal tray holding a printing forme of tiny dense text blocks. Behind him is a large old cast-iron printing press with a crank wheel, lit by a hanging lamp. A cart of stacked printed sheets sits to the right. The style is an oil painting with warm, low light."
+  },
+  "helvetica-released": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting of a man in a white shirt and dark tie bent over a table, arranging large dark cut-out letters on a white sheet under a hanging lamp. Posters with letter grids hang on the dark wall, with scissors, a ruler and paper scraps on the table. The painting runs edge to edge with no visible frame. The shirt, tie and hairstyle suggest mid-20th century."
+  },
+  "ibm-selectric-typewriter": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted, dimly lit study. Two adult hands, in a patterned dark sleeve, hold small silver spherical objects covered in tiny raised dots, one lifted above a grey metal typewriter with a round black knob on its front. Papers sit in a wooden tray to the right, a desk lamp and stacked folders are behind, and a window with curtains is at the upper right. No visible text, frame or wall edge; the painting runs to all four edges."
+  },
+  "project-gutenberg-begins": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painterly interior lit by a single desk lamp. In the center is a beige office machine, a keyboard-and-carriage unit with a long strip of perforated paper that spills onto the floor in folds. Behind it are a reel-to-reel tape recorder and a stack of reels, and at left are shelves of small cards or folders. The image fills the frame edge to edge, with no visible border."
+  },
+  "desktop-publishing-arrives": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painting style scene of a cluttered desk in a dim room under a lamp. A beige all-in-one computer with a small screen shows a page layout with text columns and image boxes. Beside it, a beige laser-style printer is feeding out a newspaper-style page with photos. Floppy disks, a coffee mug, a keyboard, a mouse and a ruler sit on the wood desk. Grey cubicle partitions fill the background, and a sheet of paper on the left wall has illegible marks."
+  },
+  "comic-sans-created": {
     "state": "qc-fail",
-    "reason": "Legible lettering is painted in: the sign reads UNDERGROUND and a misspelled UNDERGROUN, and the sheets show ABCDEF GHIJK KL. Regenerate with no readable letters on the sign or paper.",
+    "reason": "Letters are painted in: the screen shows large words (\"Cgnlilifi rn'bliwred\") plus menu labels, and the desk papers and book show alphabet lettering (ABCDEF, QRSTUVWXYZ). Redraw the screen and sheets with no readable letters, using abstract squiggles or comic panels only.",
     "by": "recheck",
     "attempts": 1,
-    "description": "An oil painting of a bespectacled man in waistcoat and rolled sleeves writing capital letters on paper at a wooden desk in a dim studio. Beside him is a sign-board with a red roundel and a band reading UNDERGROUND, with a second line reading UNDERGROUN. Ink pots, brushes, rolled papers and books surround him. No frame or border; the painting fills the image."
+    "description": "A dim, warmly lit desk with a beige CRT computer whose screen shows a window with a cartoon dog, a speech balloon and large words in a rounded font. Around it are open comic pages, sheets with alphabet lettering (ABCDEF, QRSTUVWXYZ), an ink bottle and a dip pen. The painting fills the frame with no border; no people, nothing graphic. 1990s computer and comics fit the era."
+  },
+  "emoji-added-to-unicode": {
+    "state": "qc-fail",
+    "reason": "Legible lettering is painted in: the JR sign reads 東京駅 / 'Tokyo Station' and the storefront reads 'FamilyMart'. Repaint the street with blurred, unreadable signs and no words.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A hand holds an early iPhone-style phone showing a grid of emoji (smileys, hearts, sun, cat faces, cherry blossom) in a dark Tokyo alley at night. Paper lanterns hang on the left; a JR sign reading 東京駅 and 'Tokyo Station' is behind, and a FamilyMart storefront sign is on the right. Oil-paint style, edge to edge, no frame, nothing violent."
   }
 }

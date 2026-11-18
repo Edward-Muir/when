@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T16:31:32.899Z",
+  "updated_at": "2026-11-18T17:08:07.304Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,11 +58,11 @@
       "updated_at": "2026-11-18T15:08:38.659Z"
     },
     "first-sans-serif-typeface": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Painted text is visible: the board at lower left reads HAND PRESSED with smaller lines beneath, and a sign at upper right has partial lettering. Remove all signs and lettering from the background.",
+      "reason": null,
       "sha256": "0800bf12cff828b90ec016047e83809572949c2e02249f6bd7a3953ad4bf5177",
-      "updated_at": "2026-11-18T16:09:56.599Z"
+      "updated_at": "2026-11-18T17:08:06.974Z"
     },
     "sholes-typewriter-patent": {
       "state": "qc-pass",
@@ -79,67 +79,67 @@
       "updated_at": "2026-11-18T15:08:38.775Z"
     },
     "johnston-london-typeface": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Legible lettering is painted in: the sign reads UNDERGROUND and a misspelled UNDERGROUN, and the sheets show ABCDEF GHIJK KL. Regenerate with no readable letters on the sign or paper.",
+      "reason": null,
       "sha256": "ad5fe577020a9771c9687c8b3c98aa582d2db6521da80f61fca563c7653029c5",
-      "updated_at": "2026-11-18T16:12:22.175Z"
+      "updated_at": "2026-11-18T17:08:07.008Z"
     },
     "futura-typeface-released": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e792b969dbde2d20b0dca4be29f5d5bc7f41763bdca9b99f0c08787818474e10",
-      "updated_at": "2026-11-18T16:14:45.271Z"
+      "updated_at": "2026-11-18T17:08:07.042Z"
     },
     "times-new-roman-debut": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1b6192e2e62ba4e2be437019d54a6740ad250849f6f65ed072c77b60726e2437",
-      "updated_at": "2026-11-18T16:17:07.731Z"
+      "updated_at": "2026-11-18T17:08:07.076Z"
     },
     "helvetica-released": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4ecc24ff2cbb30172dfd80efe688694b7ca3591034bce9a317dea80915b3c7f6",
-      "updated_at": "2026-11-18T16:19:32.388Z"
+      "updated_at": "2026-11-18T17:08:07.110Z"
     },
     "ibm-selectric-typewriter": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "53a818609dfa2298d95e3bdb2b0f0c1caf9015aaba25fc35738d0a49ee6ef0cb",
-      "updated_at": "2026-11-18T16:21:58.188Z"
+      "updated_at": "2026-11-18T17:08:07.148Z"
     },
     "project-gutenberg-begins": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "76f9e832759e4aacdf9ded225aa579fcc5c9f734624dab4a9017b95c2c8a5b9c",
-      "updated_at": "2026-11-18T16:24:24.515Z"
+      "updated_at": "2026-11-18T17:08:07.184Z"
     },
     "desktop-publishing-arrives": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "dce6f437e2fe67177df245d41014923f0c5811d7ab0026a0d65c9d2cf1de431a",
-      "updated_at": "2026-11-18T16:26:46.689Z"
+      "updated_at": "2026-11-18T17:08:07.225Z"
     },
     "comic-sans-created": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Letters are painted in: the screen shows large words (\"Cgnlilifi rn'bliwred\") plus menu labels, and the desk papers and book show alphabet lettering (ABCDEF, QRSTUVWXYZ). Redraw the screen and sheets with no readable letters, using abstract squiggles or comic panels only.",
       "sha256": "03ce8b9116447c964a81e740d12922a412abdbea70eb8cd0deb38f67c37162dd",
-      "updated_at": "2026-11-18T16:29:08.644Z"
+      "updated_at": "2026-11-18T17:08:07.265Z"
     },
     "emoji-added-to-unicode": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible lettering is painted in: the JR sign reads 東京駅 / 'Tokyo Station' and the storefront reads 'FamilyMart'. Repaint the street with blurred, unreadable signs and no words.",
       "sha256": "e95db8a9e139cbb810efaf251db2fb98071288121c83983b0b41edaeb4866f13",
-      "updated_at": "2026-11-18T16:31:32.899Z"
+      "updated_at": "2026-11-18T17:08:07.304Z"
     }
   }
 }

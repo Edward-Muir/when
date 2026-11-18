@@ -1,0 +1,15 @@
+{
+  "slug": "first-sans-serif-typeface",
+  "description": "A man with dark, tousled hair and a grey waistcoat over a rolled-sleeve white shirt holds up a metal block with raised, mirrored letters, looking startled. Behind him is a workshop with a brick fireplace glowing with fire, and a bench with a tray of metal type, ladles, crumpled paper and tools. The painting is a dark oil style and runs edge to edge with no frame visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
