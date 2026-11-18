@@ -1,0 +1,23 @@
+{
+"miescher-isolates-nuclein":{"recognition":"low","inferability":"medium","anchors":["chemist","DNA","white blood cells"],"why":"obscure, but isolating DNA by a chemist implies 19th-century biochemistry"},
+"flemming-chromosomes-mitosis":{"recognition":"low","inferability":"low","anchors":["German biologist","cell division"],"why":"microscopy-era biology, could be 1850s-1910s with few clues"},
+"mendel-work-rediscovered":{"recognition":"medium","inferability":"medium","anchors":["Mendel","pea experiments"],"why":"Mendel is famous, but rediscovery implies decades later, around 1900"},
+"chromosome-theory-inheritance":{"recognition":"low","inferability":"medium","anchors":["Mendel","chromosomes"],"why":"follows Mendel, so early 20th century"},
+"johannsen-coins-gene":{"recognition":"low","inferability":"medium","anchors":["gene","heredity","new science"],"why":"genetics as a new science points to early 1900s"},
+"morgan-fruit-fly-linkage":{"recognition":"medium","inferability":"medium","anchors":["New York lab","fruit fly","gene mapping"],"why":"classical genetics, early 20th century"},
+"sturtevant-first-genetic-map":{"recognition":"low","inferability":"medium","anchors":["Morgan","fruit fly","chromosome"],"why":"follows Morgan's fly work, early 20th century"},
+"muller-xray-mutations":{"recognition":"low","inferability":"medium","anchors":["X-rays","radiation","fruit flies"],"why":"X-ray and fruit-fly genetics suggest the early-to-mid 20th century"},
+"griffith-transforming-principle":{"recognition":"low","inferability":"medium","anchors":["bacteria","heritable substance"],"why":"pre-DNA-identification microbiology, early 20th century"},
+"mcclintock-crossing-over":{"recognition":"low","inferability":"medium","anchors":["McClintock","chromosomes"],"why":"classical cytogenetics era, early 20th century"},
+"one-gene-one-enzyme":{"recognition":"medium","inferability":"medium","anchors":["bread mould","enzyme","gene"],"why":"mid-20th-century molecular genetics"},
+"avery-dna-heredity":{"recognition":"medium","inferability":"medium","anchors":["Rockefeller Institute","DNA","protein"],"why":"DNA as heredity, mid-20th century before the double helix"},
+"hershey-chase-experiment":{"recognition":"medium","inferability":"medium","anchors":["radioactive tags","viruses","DNA"],"why":"radioactive labelling implies mid-20th century"},
+"human-46-chromosomes":{"recognition":"low","inferability":"medium","anchors":["lab methods","chromosomes"],"why":"modern cytogenetics, mid-20th century"},
+"genetic-code-cracked":{"recognition":"medium","inferability":"medium","anchors":["RNA codon","amino acid"],"why":"molecular biology, 1960s"},
+"first-restriction-enzyme":{"recognition":"low","inferability":"medium","anchors":["Johns Hopkins","enzyme","DNA"],"why":"molecular biology tools, later 20th century"},
+"cohen-boyer-recombinant-dna":{"recognition":"medium","inferability":"high","anchors":["genetic engineering","recombinant DNA"],"why":"genetic engineering launching points to the 1970s"},
+"mullis-invents-pcr":{"recognition":"medium","inferability":"medium","anchors":["Kary Mullis","DNA copies"],"why":"modern DNA technology, late 20th century"},
+"he-jiankui-gene-edited-babies":{"recognition":"medium","inferability":"high","anchors":["edited embryo DNA","Chinese scientist","twin girls"],"why":"gene editing of embryos is clearly very recent"},
+"first-crispr-therapy-approved":{"recognition":"medium","inferability":"high","anchors":["CRISPR","regulators","sickle cell"],"why":"CRISPR therapy approval is clearly 2020s"},
+"custom-base-editing-infant":{"recognition":"low","inferability":"high","anchors":["base editing","bespoke gene-editing"],"why":"bespoke gene editing is clearly the 2020s"}
+}
