@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T14:34:14.841Z",
+  "updated_at": "2026-11-18T15:08:38.810Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "jenson-roman-typeface": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "079318a171467cab06ceaf23ac8e44fa4a156a10934c1bbbbfcf2d6e41ca94ab",
-      "updated_at": "2026-11-18T14:11:42.720Z"
+      "updated_at": "2026-11-18T15:08:38.473Z"
     },
     "caxton-westminster-press": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f01a53e3ff6b7692befd146d933155482d6cbb14be57bdbf1f273131798dbe64",
-      "updated_at": "2026-11-18T14:14:00.865Z"
+      "updated_at": "2026-11-18T15:08:38.513Z"
     },
     "garamond-roman-type": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "456060a22fdae7b4f826a2c9240ac0cd0d59d35e24fbebb5195201ad6245a955",
-      "updated_at": "2026-11-18T14:16:23.195Z"
+      "updated_at": "2026-11-18T15:08:38.551Z"
     },
     "bay-psalm-book": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c9ecea05bba43c7b5f9efcbf0f7ae4b0a433fb211f8ebb342385321301573cd7",
-      "updated_at": "2026-11-18T14:19:16.283Z"
+      "updated_at": "2026-11-18T15:08:38.587Z"
     },
     "caslon-type-specimen": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5161efb2f767f2632ea52a88f81000dc4f185f74eb3c919ff48d342f03b101f8",
-      "updated_at": "2026-11-18T14:21:47.603Z"
+      "updated_at": "2026-11-18T15:08:38.620Z"
     },
     "baskerville-virgil": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cda73fda65739013525e6314b55919c12c74f153bd655ef38af49fe2847d9369",
-      "updated_at": "2026-11-18T14:24:16.034Z"
+      "updated_at": "2026-11-18T15:08:38.659Z"
     },
     "first-sans-serif-typeface": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Painted text is visible: the board at lower left reads HAND PRESSED with smaller lines beneath, and a sign at upper right has partial lettering. Remove all signs and lettering from the background.",
       "sha256": "b0b0929e80cb32ac5e4aa1bf30424307bfb4f8439ba5a911c2c08b0a3940cfb6",
-      "updated_at": "2026-11-18T14:26:45.534Z"
+      "updated_at": "2026-11-18T15:08:38.697Z"
     },
     "sholes-typewriter-patent": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "662af2448ce0d02336e1d4950bfc19c2c9a51c6a09be0dbaa2d2548d1062262b",
-      "updated_at": "2026-11-18T14:29:13.593Z"
+      "updated_at": "2026-11-18T15:08:38.738Z"
     },
     "remington-typewriter-sales": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6829309eef4e27bbb9a3129f73b25bb00f9489d8c5f7105e967e565a8958fa54",
-      "updated_at": "2026-11-18T14:31:43.220Z"
+      "updated_at": "2026-11-18T15:08:38.775Z"
     },
     "johnston-london-typeface": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible lettering is painted in: the sign reads UNDERGROUND and a misspelled UNDERGROUN, and the sheets show ABCDEF GHIJK KL. Regenerate with no readable letters on the sign or paper.",
       "sha256": "4385719f65d69e93ee1c434613938371b77c59a43fe79de54c1984bc0e074861",
-      "updated_at": "2026-11-18T14:34:14.841Z"
+      "updated_at": "2026-11-18T15:08:38.810Z"
     },
     "futura-typeface-released": {
       "state": "pending",

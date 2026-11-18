@@ -1,0 +1,72 @@
+{
+  "jenson-roman-typeface": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, painterly interior with a man in a dark gown and close cap standing at a wooden printing press, lifting a pale printed sheet with one hand. In the foreground a wooden tray of metal type sits on a workbench beside a steel tool and dark ink balls, with a lit candle at the left edge. Heavy beams overhead and stacked paper on a side table complete the room. The image fills the frame edge to edge, with no visible border."
+  },
+  "caxton-westminster-press": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painted interior of a timber-and-stone workshop. A man in a dark fur-trimmed coat and black beret holds a printed sheet by a leaded window. Beside a large wooden screw press, a young worker in an apron inks type with two leather balls. Another man works at the far right, and printed sheets hang on cords from the rafters. Type cases and stacked paper sit on shelves. The look is late medieval or early modern."
+  },
+  "garamond-roman-type": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An elderly man with grey hair and a leather apron leans over a wooden workbench, holding a brass-rimmed magnifying glass to his eye while he works on a small steel piece in a vise. Rows of small steel punches stand in wooden racks, with small copper blocks, a hammer and files on the bench. A forge pot with glowing coals, a lit candle and stacked old books sit in a dim, warm workshop. The painting fills the frame edge to edge, with no text or border."
+  },
+  "bay-psalm-book": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in dark 17th-century style clothing and a white collar leans into the wooden bar of a large timber screw printing press in a dim, beamed workshop. Printed sheets hang on a line overhead, and ink balls and loose pages sit on a bench in the foreground. A snowy half-timbered street shows through a leaded window on the right."
+  },
+  "caslon-type-specimen": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a powdered wig, dark waistcoat and rolled white shirt stands in a dim workshop, holding up a long sheet of paper printed with rows of alphabet samples in graduated sizes. A workbench in front holds a wooden type tray filled with metal letters, a hand mould, and small tools, and a fireplace glows at right. The scene is oil-painting style with warm, dark tones and no border."
+  },
+  "baskerville-virgil": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An elderly man with grey hair in a wig and a dark buttoned coat leans over an open book on a wooden table. Behind him is a wooden screw printing press, with stacks of paper on a bench and a window light in the dim workshop. Small printed lines are visible on the open page, and there are black ink balls on the table."
+  },
+  "first-sans-serif-typeface": {
+    "state": "qc-fail",
+    "reason": "Painted text is visible: the board at lower left reads HAND PRESSED with smaller lines beneath, and a sign at upper right has partial lettering. Remove all signs and lettering from the background.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil painting of a weathered man in a vest and rolled sleeves holding a metal letter A type block in a dim print shop. Trays of ornate decorative type sit in the foreground, with shelves and a brick wall behind. A sign at lower left reads HAND PRESSED with smaller lettering, and a sign at upper right shows partial lettering. The painting fills the frame with no border."
+  },
+  "sholes-typewriter-patent": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A bearded man in a grey waistcoat and rolled sleeves leans over a dark wooden machine with a circular ring of metal typebars and a row of pale keys at its front. A sheet of paper sits in a carriage at the top left. Behind him is a cluttered workshop with a vise, hand tools on the walls and bench, a cloth, and a dim window."
+  },
+  "remington-typewriter-sales": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted interior in an oil-painting style. A man in a dark frock coat and bow tie leans over a black ornate typewriter with floral gold decoration, set on a wooden table with a cast-iron treadle-style base. A younger man in a waistcoat and rolled sleeves watches closely beside him. Behind them are a lit oil lamp, shelves of tools, rifles mounted on a wall, a window, and a horse-drawn carriage visible outside. No visible text, no frame; the painting fills the image edge to edge."
+  },
+  "johnston-london-typeface": {
+    "state": "qc-fail",
+    "reason": "Legible lettering is painted in: the sign reads UNDERGROUND and a misspelled UNDERGROUN, and the sheets show ABCDEF GHIJK KL. Regenerate with no readable letters on the sign or paper.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil painting of a bespectacled man in waistcoat and rolled sleeves writing capital letters on paper at a wooden desk in a dim studio. Beside him is a sign-board with a red roundel and a band reading UNDERGROUND, with a second line reading UNDERGROUN. Ink pots, brushes, rolled papers and books surround him. No frame or border; the painting fills the image."
+  }
+}
