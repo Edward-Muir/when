@@ -21560,7 +21560,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "caxton-westminster-press",
@@ -21571,7 +21572,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "garamond-roman-type",
@@ -21582,7 +21584,8 @@
     "difficulty": "medium",
     "regions": [
       "France"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bay-psalm-book",
@@ -21593,7 +21596,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "caslon-type-specimen",
@@ -21604,7 +21608,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "baskerville-virgil",
@@ -21615,7 +21620,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-sans-serif-typeface",
@@ -21626,7 +21632,8 @@
     "difficulty": "very-hard",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "sholes-typewriter-patent",
@@ -21637,7 +21644,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "remington-typewriter-sales",
@@ -21648,7 +21656,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "johnston-london-typeface",
@@ -21659,7 +21668,8 @@
     "difficulty": "medium",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "futura-typeface-released",
@@ -21670,7 +21680,8 @@
     "difficulty": "medium",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "times-new-roman-debut",
@@ -21681,7 +21692,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "helvetica-released",
@@ -21692,7 +21704,8 @@
     "difficulty": "easy",
     "regions": [
       "Switzerland"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ibm-selectric-typewriter",
@@ -21703,7 +21716,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "project-gutenberg-begins",
@@ -21714,7 +21728,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "desktop-publishing-arrives",
@@ -21725,7 +21740,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "comic-sans-created",
@@ -21736,7 +21752,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "emoji-added-to-unicode",
@@ -21748,6 +21765,7 @@
     "regions": [
       "Japan",
       "United States"
-    ]
+    ],
+    "has_detail": true
   }
 ]
