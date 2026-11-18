@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T09:08:44.511Z",
+  "updated_at": "2026-11-18T10:10:47.393Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -149,10 +149,11 @@
       "updated_at": "2026-11-18T09:08:44.511Z"
     },
     "patient-hm-memory-loss": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3afa587522e97642b4516323e73a74fd35fa60c15023c4ac6fc66d778ef3d4cf",
+      "updated_at": "2026-11-18T10:10:47.393Z"
     },
     "milgram-obedience-experiment": {
       "state": "pending",
