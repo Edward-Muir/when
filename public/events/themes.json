@@ -21557,7 +21557,10 @@
     "year": 1869,
     "category": "science",
     "description": "A Swiss chemist extracted a phosphorus-rich substance from white blood cell nuclei, the first isolation of DNA.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "flemming-chromosomes-mitosis",
@@ -21565,7 +21568,10 @@
     "year": 1882,
     "category": "science",
     "description": "A German biologist described in detail how threadlike bodies in the nucleus split during cell division.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "mendel-work-rediscovered",
@@ -21573,7 +21579,12 @@
     "year": 1900,
     "category": "science",
     "description": "Botanists independently unearthed the forgotten pea experiments and confirmed the rules of inheritance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Austria",
+      "Germany",
+      "Netherlands"
+    ]
   },
   {
     "name": "chromosome-theory-inheritance",
@@ -21581,7 +21592,11 @@
     "year": 1902,
     "category": "science",
     "description": "Two biologists separately proposed that Mendel's factors ride on chromosomes, which pair up and separate.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany",
+      "United States"
+    ]
   },
   {
     "name": "johannsen-coins-gene",
@@ -21589,7 +21604,10 @@
     "year": 1909,
     "category": "science",
     "description": "A Danish botanist introduced a short name for the units of heredity, giving a new science its central term.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Denmark"
+    ]
   },
   {
     "name": "morgan-fruit-fly-linkage",
@@ -21597,7 +21615,10 @@
     "year": 1910,
     "category": "science",
     "description": "A white-eyed mutant fly in a New York lab showed a trait is tied to a specific chromosome, starting gene mapping.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "sturtevant-first-genetic-map",
@@ -21605,7 +21626,10 @@
     "year": 1913,
     "category": "science",
     "description": "A student of Morgan's arranged genes in a line along a fruit fly chromosome by how often they were inherited together.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "muller-xray-mutations",
@@ -21613,7 +21637,10 @@
     "year": 1927,
     "category": "science",
     "description": "Hermann Muller bombarded fruit flies with radiation and proved it sharply increased heritable genetic changes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "griffith-transforming-principle",
@@ -21621,7 +21648,10 @@
     "year": 1928,
     "category": "science",
     "description": "Harmless bacteria turned deadly after mixing with dead virulent ones, hinting at a heritable substance passing between cells.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "mcclintock-crossing-over",
@@ -21629,7 +21659,10 @@
     "year": 1931,
     "category": "science",
     "description": "Barbara McClintock and a student showed that chromosomes physically swap segments, explaining how traits get shuffled.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "one-gene-one-enzyme",
@@ -21637,7 +21670,10 @@
     "year": 1941,
     "category": "science",
     "description": "Experiments on bread mould showed that each gene directs the making of one specific protein enzyme.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "avery-dna-heredity",
@@ -21645,7 +21681,10 @@
     "year": 1944,
     "category": "science",
     "description": "Rockefeller Institute researchers identified DNA, not protein, as the substance that transforms bacteria.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hershey-chase-experiment",
@@ -21653,7 +21692,10 @@
     "year": 1952,
     "category": "science",
     "description": "Viruses labelled with radioactive tags proved that DNA, not protein, enters a bacterium to direct new viruses.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "human-46-chromosomes",
@@ -21661,7 +21703,10 @@
     "year": 1956,
     "category": "science",
     "description": "Better lab methods finally showed that human cells hold 46 chromosomes, not the 48 long assumed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Sweden"
+    ]
   },
   {
     "name": "genetic-code-cracked",
@@ -21669,7 +21714,10 @@
     "year": 1966,
     "category": "science",
     "description": "Researchers completed the dictionary linking each three-letter RNA codon to the amino acid it specifies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-restriction-enzyme",
@@ -21677,7 +21725,10 @@
     "year": 1970,
     "category": "science",
     "description": "Scientists at Johns Hopkins found an enzyme that cuts DNA at a specific sequence, a molecular pair of scissors.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "cohen-boyer-recombinant-dna",
@@ -21685,7 +21736,10 @@
     "year": 1973,
     "category": "science",
     "description": "Cohen and Boyer spliced a gene from one organism into a bacterium, launching genetic engineering.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "mullis-invents-pcr",
@@ -21693,7 +21747,10 @@
     "year": 1983,
     "category": "invention",
     "description": "Kary Mullis conceived a way to copy a tiny DNA fragment into billions of copies in a test tube.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "he-jiankui-gene-edited-babies",
@@ -21701,7 +21758,10 @@
     "year": 2018,
     "category": "science",
     "description": "A Chinese scientist claimed to have created twin girls with edited embryo DNA, prompting worldwide condemnation.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ]
   },
   {
     "name": "first-crispr-therapy-approved",
@@ -21709,7 +21769,11 @@
     "year": 2023,
     "category": "medicine",
     "description": "Regulators cleared a sickle cell treatment that edits patients' own cells, the first licensed use of CRISPR.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ]
   },
   {
     "name": "custom-base-editing-infant",
@@ -21717,6 +21781,9 @@
     "year": 2025,
     "category": "medicine",
     "description": "Doctors designed a bespoke gene-editing therapy within months to treat an infant with a rare metabolic disorder.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
