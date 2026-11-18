@@ -398,25 +398,33 @@ and the row renderers are split out.
 ## The wheel: the board as a drum
 
 The board, My Timeline and the Archive are painted as a wheel turning into the page. The card at
-the centre of the viewport is magnified, painting, title and border together, and its year grows
-in the display face; the rows above and below are part-magnified and lean back a few degrees on a
-very large cylinder. Scrolling spins it, with a light
+the centre of the viewport grows in two slight ways at once: its frame opens a little taller, so
+more of its painting shows, and the whole card (painting, title and border) is scaled up. Its
+year grows in the display face; the rows above and below are part-grown and lean back a few
+degrees on a very large cylinder. Scrolling spins it, with a light
 haptic tick (`haptics.select`) as each event passes the centre. The maths is
 `src/utils/wheelMath.ts`, the driver is `src/hooks/useTimelineWheel.ts`, and the paint is the
 `.wheel-*` rules in `index.css`.
 
 The look was chosen from interactive mock-ups (cylinder, lens, dates-only, dial, parallax). The
-tuning is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's edge) and a
-centre card scaled by 1.075, spread over 1.6 row pitches. Those two numbers are study G
-("Combined") of the Timeline Wheel Studies mock-ups at its default Magnify of 30, which is the
-look the owner asked to see again; 1.25 was built first from a description alone and was far
-stronger than the study.
+tuning is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's edge), a
+reveal of 10% of the way to the whole square painting, and a scale of 1.05 on the opened card,
+spread over 1.6 row pitches. On a phone that is a 70px card drawn 83px tall at the centre.
 
-**The magnifier is on trial (2026-11-18), at the owner's request.** The look that shipped first
-opened the centre card instead: its frame grew taller (70px to 97px) and showed 30% more of the
-way to the whole square painting, and nothing was scaled. A magnifier had been tried then and
-rejected, because it enlarges the painting without showing more of it. It is back as its own
-commit so that one revert restores the opening; if it is reverted, record here why it lost twice.
+**How the centre card got here (2026-11-18), all at the owner's direction:**
+
+- The first wheel **opened** the card only (reveal 30%, nothing scaled; 70px to 97px).
+- A **magnifier** only was tried next, first at 1.25, then at 1.075 to match study G of the
+  Timeline Wheel Studies mock-ups. It had been rejected once before for enlarging the painting
+  without showing more of it.
+- The owner preferred **both together, kept subtle**, which is what ships. The numbers were
+  picked as a starting point and are meant to be tuned on the Wheel Magnifier Rig, a slider
+  page with this maths; a change of tuning is `WHEEL_TUNING` plus `--wheel-pitch`.
+- Published research on fisheye and focus+context views gives no optimum, but it does say the
+  costs rise with magnification and that the in-between zone is little used, so mild and
+  narrow is the safe side. Growth also costs timeline: this tuning hides about 38px of it on a
+  phone, against 15px for the 1.075 magnifier alone. Reveal is the expensive half, since all
+  of it is height.
 
 Decisions, and the traps behind them:
 
@@ -435,23 +443,28 @@ Decisions, and the traps behind them:
 - **One perspective for the whole board,** set on the content element (the rows' direct parent)
   with its origin following the viewport's centre. A perspective per card gives every card its
   own vanishing point.
-- **The magnification is a bell, not a step.** The neighbours are part-magnified, so a card
-  grows along its whole approach. Growing only the centre card happens in a burst and feels
-  detached from where the card is.
+- **The growth is a bell, not a step.** The neighbours are part-grown, so a card grows along
+  its whole approach. Growing only the centre card happens in a burst and feels detached from
+  where the card is.
+- **One `grow`, split two ways.** The strip makes each row exactly `grow` px of extra room.
+  `wheelCardShape` gives a row the same share of the opening and of the scale as it has of
+  the centre's growth, so `(slot + open) * scale = slot + grow` on every row and the two rise
+  together. The opening goes on the face (`--wheel-grow`), the scale on the slot
+  (`--wheel-scale`).
+- **The painting is pinned to the card's centre line** (`--wheel-art-pin`), so it does not slide
+  inside the frame as the frame opens. At rest it is the same crop as `.card-art-fade`'s 35%.
 - **The scale is on the slot (`.wheel-card`), from its left edge.** The slot is a plain div
   whose transform nothing else owns; framer owns the card's own, one level in. The card grows
-  away from the rail, so it stays butted to the gap beside the spine. The height the scale
-  adds is exactly the `grow` the strip already made room for (`wheelCardScale`), so the
-  geometry that stopped rows overlapping is untouched.
+  away from the rail, so it stays butted to the gap beside the spine.
 - **A card stops growing at the screen's edge.** There is 108px of gutter to the left of a
   228px card, so a 402px phone has room for 1.26 and a 360px one for 1.08. The hook measures
-  that room (`fit`) and caps the scale. At 1.075 the cap only bites below 360px; it is what
-  limits any stronger setting, and a capped card sits in more room than it fills, because
+  that room (`fit`) and caps the scale. At 1.05 the cap only bites below about 355px; it is
+  what limits any stronger setting, and a capped card sits in more room than it fills, because
   `--wheel-pitch` is CSS and must equal `wheelRowHeight()` at every width.
-- **Two differences from study G, both too small to see at 1.075.** The study scaled the whole
-  row about the rail; here only the card scales, from its own left edge, so the year, tick and
-  the 12px gap keep their size. And the study narrowed the resting card so the magnified one
-  filled the width; the card here keeps its tuned 228px.
+- **Only the card scales, from its own left edge.** Study G scaled the whole row about the
+  rail, so the year and tick grew too, and narrowed the resting card so the magnified one
+  filled the width. Neither is done here: the difference cannot be seen at this strength, and
+  the card keeps its tuned 228px.
 - **The slot is a stacking context now**, so a card's own z-index stops at its slot as well as
   at its row. The landing, the miss reveal and the tombstone slide were checked frame by frame
   with the scale on and draw as before.

@@ -258,9 +258,10 @@ body {
     background-color: var(--color-accent);
   }
   /* THE WHEEL. The board is painted as a wheel turning into the page: the card at the centre of
-     the viewport is magnified, painting, title and border together, and the rows above and
-     below lean back a few degrees on a very large cylinder. `useTimelineWheel` writes each
-     row's pose; the maths, and why the rows are laid out tall, is in `wheelMath.ts`.
+     the viewport opens a little taller, so slightly more of its painting shows, and is
+     slightly magnified, painting, title and border together; the rows above and below lean
+     back a few degrees on a very large cylinder. `useTimelineWheel` writes each row's pose;
+     the maths, and why the rows are laid out tall, is in `wheelMath.ts`.
 
      `.wheel-on` goes on the element whose direct children are the rows, and only when the
      wheel is running (never under reduced motion). Without it every rule below is the flat
@@ -270,7 +271,7 @@ body {
        .wheel-row        a row. Its transform is written by the hook and by nothing else.
        .wheel-card       the card's fixed layout slot. Scaled and dimmed; nothing else owns
                          its transform (framer owns the card's own, one level in).
-       .wheel-card-face  the card itself, filling the slot.
+       .wheel-card-face  the card itself, filling the slot and opening past it.
        .wheel-rail       the rail segment, scaled to the height its row takes up.
        .wheel-year       the year, which swells on the same curve the card grows on.
 
@@ -278,20 +279,37 @@ body {
      its own row has to be lifted by raising the row (`raised` on BoardRow), not by its own
      z-index. */
   .wheel-on {
-    /* The height a row is laid out at: the centred card's magnified height, so that card
-       moves exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card
-       size; wheelMath.test.ts pins both numbers. */
-    --wheel-pitch: 83px;
+    /* The height a row is laid out at: the centred card's grown height, so that card moves
+       exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card size;
+       wheelMath.test.ts pins both numbers. */
+    --wheel-pitch: 90px;
+    /* Pins the painting to the card's centre line so it does not slide inside the frame as
+       the frame opens: 15% of (painting height - card height), which is the same crop at rest
+       as `.card-art-fade`'s 35%. */
+    --wheel-art-pin: 13.4px;
   }
   @media (min-width: 640px) {
     .wheel-on {
-      --wheel-pitch: 111px;
+      --wheel-pitch: 118px;
+      --wheel-art-pin: 15px;
     }
   }
   .wheel-on .wheel-row {
     display: flex;
     align-items: center;
     min-height: var(--wheel-pitch);
+  }
+  /* The Archive's painting is narrower (58% of the card), so its pin is smaller. */
+  .wheel-on .wheel-row-archive {
+    --wheel-art-pin: 9.3px;
+  }
+  @media (min-width: 640px) {
+    .wheel-on .wheel-row-archive {
+      --wheel-art-pin: 9.9px;
+    }
+  }
+  .wheel-on .card-art-fade {
+    object-position: 50% calc(50% + var(--wheel-art-pin));
   }
   .wheel-rail {
     transform: scaleY(var(--wheel-rail-scale, 1));
@@ -310,12 +328,14 @@ body {
     transform-origin: 0 50%;
     transform: scale(var(--wheel-scale, 1));
   }
-  /* Two classes, so this beats the size utilities on a card dropped in as the face. */
+  /* Two classes, so this beats the size utilities on a card dropped in as the face. The face
+     opens past the slot by --wheel-grow, half above and half below, before the slot scales. */
   .wheel-card > .wheel-card-face {
     position: absolute;
-    inset: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
+    top: calc(var(--wheel-grow, 0px) / -2);
+    height: calc(100% + var(--wheel-grow, 0px));
   }
   .wheel-year {
     display: inline-block;

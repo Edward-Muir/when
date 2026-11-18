@@ -4,11 +4,12 @@
  *
  * Two things happen to a row as it nears the centre, and both come from one curve:
  *
- * - **It magnifies.** The whole card (painting, title and border) is scaled up, as under a
- *   magnifying glass. No more of the painting shows; what shows is bigger. The magnification
- *   is a bell across the wheel, not a step at the centre: the neighbours are part-magnified
- *   too, so a card grows gradually along its whole approach. Below, "opened" means a row at
- *   whatever height its magnified card needs.
+ * - **It grows, two ways at once.** The card's frame opens above and below, so a little more
+ *   of the same painting shows (`reveal`), and the whole card (painting, title and border) is
+ *   scaled up, as under a magnifying glass (`magnify`). Both are slight, and both follow the
+ *   same bell across the wheel, not a step at the centre: the neighbours are part-grown too,
+ *   so a card grows gradually along its whole approach. Below, "opened" means a row at
+ *   whatever height its card needs once it has opened and been scaled.
  * - **It turns to face the player.** The strip the rows sit on is wrapped round a very large
  *   cylinder and seen under one shared perspective, so rows further out lean back a few degrees
  *   and sit slightly closer together.
@@ -38,10 +39,14 @@ export interface WheelTuning {
   edgeAngle: number;
   /** The shared perspective distance, px. */
   perspective: number;
-  /** The centred card's scale. Its height grows by this, and the strip makes that room. */
+  /** How far the centred card's frame opens: 0 is the resting crop, 1 the whole square painting. */
+  reveal: number;
+  /** The centred card's scale, applied to the opened card. */
   magnify: number;
-  /** How far from the centre the magnification reaches, in row pitches (the bell's width). */
+  /** How far from the centre the growth reaches, in row pitches (the bell's width). */
   spread: number;
+  /** The painting's width as a fraction of the card's (`w-[70%]` in CardFace). */
+  artRatio: number;
   /** The gap between two cards at rest, px (`py-1` on each row). */
   gap: number;
   /** How much a card at the viewport's edge is dimmed. */
@@ -53,8 +58,10 @@ export interface WheelTuning {
 export const WHEEL_TUNING: WheelTuning = {
   edgeAngle: 11.4,
   perspective: 970,
-  magnify: 1.075,
+  reveal: 0.1,
+  magnify: 1.05,
   spread: 1.6,
+  artRatio: 0.7,
   gap: 8,
   dim: 0.12,
   yearFloor: 0.6,
@@ -66,7 +73,9 @@ export interface WheelFrame {
   half: number;
   /** The card slot's height at rest, px (70, or 96 from the `sm` breakpoint). */
   slot: number;
-  /** The height rows are laid out at, px. Should be `wheelRowHeight(slot)`. */
+  /** The card's width, px (228 or 280). */
+  cardWidth: number;
+  /** The height rows are laid out at, px. Should be `wheelRowHeight(slot, cardWidth)`. */
   rowHeight: number;
 }
 
@@ -75,8 +84,10 @@ export interface WheelGeometry {
   tuning: WheelTuning;
   /** A row's height at rest, in strip px. */
   pitch: number;
-  /** The extra height of the centred card, px. */
+  /** The extra height of the centred card as painted, px: opened, then scaled. */
   grow: number;
+  /** How far the centred card's frame opens, px, before it is scaled. */
+  open: number;
   /** The bell's width, strip px. */
   sigma: number;
   /** The bell's amplitude: `stripPosition(d) = d + amp * erf(d / sigma)`. */
@@ -94,7 +105,7 @@ export interface WheelPose {
   z: number;
   /** rotateX for the row, radians. Positive leans the top edge away (rows above centre). */
   tilt: number;
-  /** Extra height for the card over its resting slot, px: what its magnification adds. */
+  /** Extra height for the card over its resting slot, px, as painted: opened, then scaled. */
   grow: number;
   /** The rail segment's vertical scale: the row's opened height over its laid-out height. */
   railScale: number;
@@ -132,15 +143,16 @@ export function erf(x: number): number {
 }
 
 /** The opening's fixed numbers for a card size: independent of the viewport. */
-function opening(slot: number, tuning: WheelTuning) {
+function opening(slot: number, cardWidth: number, tuning: WheelTuning) {
   const pitch = slot + tuning.gap;
-  const grow = Math.max(0, slot * (tuning.magnify - 1));
+  const open = Math.max(0, tuning.reveal * (tuning.artRatio * cardWidth - slot));
+  const grow = Math.max(0, (slot + open) * tuning.magnify - slot);
   const sigma = tuning.spread * pitch;
   const amp = grow / (2 * erf(pitch / (2 * sigma)));
   // The centred row's midpoint is the mean of its two edges, so it moves at the mean of their
   // speeds: the curve's slope half a pitch out.
   const centreSlope = 1 + (amp / (SQRT_PI_2 * sigma)) * Math.exp(-((pitch / (2 * sigma)) ** 2));
-  return { pitch, grow, sigma, amp, centreSlope };
+  return { pitch, grow, open, sigma, amp, centreSlope };
 }
 
 /**
@@ -148,22 +160,39 @@ function opening(slot: number, tuning: WheelTuning) {
  * `--wheel-pitch` in index.css is this number for each card size; `wheelMath.test.ts` holds
  * the two together.
  */
-export function wheelRowHeight(slot: number, tuning: WheelTuning = WHEEL_TUNING): number {
-  const { pitch, centreSlope } = opening(slot, tuning);
+export function wheelRowHeight(
+  slot: number,
+  cardWidth: number,
+  tuning: WheelTuning = WHEEL_TUNING
+): number {
+  const { pitch, centreSlope } = opening(slot, cardWidth, tuning);
   return Math.round(pitch * centreSlope);
 }
 
+/** How a card is drawn: how far its frame opens, px, and the scale applied to the opened card. */
+export interface WheelCardShape {
+  open: number;
+  scale: number;
+}
+
 /**
- * The scale a card is painted at, from the extra height its pose gives it. `fit` is how far
- * the card can scale before its right edge reaches the edge of the screen: a card grows away
- * from the rail, and on a narrow phone there is less room beside it than the wheel would use.
- * A capped card is smaller than the room its row made, which only shows as a little more
- * space round the centred card. Never below 1: a card too wide for the screen already is not
- * shrunk by the wheel.
+ * Splits the extra height a row's pose gives its card (`grow`) into the two things that make
+ * it up: the frame opening and the card scaling. A row gets the same share of each as it has of
+ * the centre's growth, so the two rise together and a card's painted height is exactly its
+ * `grow`: `(slot + open) * scale = slot + grow`.
+ *
+ * `fit` is how far the card can scale before its right edge reaches the edge of the screen: a
+ * card grows away from the rail, and on a narrow phone there is less room beside it than the
+ * wheel would use. A capped card is smaller than the room its row made, which only shows as a
+ * little more space round the centred card. The scale is never below 1: a card too wide for
+ * the screen already is not shrunk by the wheel.
  */
-export function wheelCardScale(grow: number, slot: number, fit: number): number {
-  if (slot <= 0) return 1;
-  return Math.max(1, Math.min(1 + grow / slot, fit));
+export function wheelCardShape(grow: number, geo: WheelGeometry, fit: number): WheelCardShape {
+  const slot = geo.frame.slot;
+  if (slot <= 0 || geo.grow <= 0) return { open: 0, scale: 1 };
+  const share = Math.max(0, Math.min(1, grow / geo.grow));
+  const open = geo.open * share;
+  return { open, scale: Math.max(1, Math.min((slot + grow) / (slot + open), fit)) };
 }
 
 export function wheelGeometry(
@@ -171,7 +200,7 @@ export function wheelGeometry(
   tuning: WheelTuning = WHEEL_TUNING
 ): WheelGeometry {
   const radius = frame.half / ((tuning.edgeAngle * Math.PI) / 180);
-  return { frame, tuning, radius, ...opening(frame.slot, tuning) };
+  return { frame, tuning, radius, ...opening(frame.slot, frame.cardWidth, tuning) };
 }
 
 /** Where a point `d` along the unopened strip sits on the opened one. Strictly increasing. */

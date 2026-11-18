@@ -73,7 +73,7 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
 
   return (
     <div
-      className="wheel-row relative flex items-center w-full py-1"
+      className="wheel-row wheel-row-archive relative flex items-center w-full py-1"
       data-testid={`archive-day-${date}`}
       data-archive-status={status}
       {...{ [WHEEL_ROW_ATTR]: '' }}

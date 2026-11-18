@@ -273,8 +273,8 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             the tick grows out of the marker. */}
         <div className={`flex-1 pl-3 ${isNew ? 'animate-entrance' : ''}`}>
           {/* The wheel's scale lives on this wrapper, never on the button: framer owns the
-              button's transform. The wrapper is the card's fixed layout slot, and it is the
-              whole slot that is magnified when the row is centred (see .wheel-card). */}
+              button's transform. The wrapper is the card's fixed layout slot: the button opens
+              past it and the whole slot is magnified when the row is centred (see .wheel-card). */}
           <div className={`wheel-card ${LANDSCAPE_CARD_CLASS}`}>
             <motion.button
               // What the game-over gallery measures to fly this card's art from. See
