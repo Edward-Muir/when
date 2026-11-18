@@ -260,7 +260,8 @@ constrain to the same column.
 ## D. Smaller things
 
 - **D1. Two "Go home" buttons in game, same `aria-label`.** Resolved: the in-game top bar and
-  its wordmark button are gone, and `GameHud.tsx` has the one "Go home".
+  its wordmark button are gone; `GameHud.tsx` has a wordmark that is not a button and the one
+  "Go home".
 - **D2. Touch-only copy.** The game-over popup says "**Tap** to continue"; the Timeline tab hint
   says "**Tap** the sliders to filter it"; `HowToPlayModal` and `hintCopy.ts` are written for
   fingers throughout. Neutral wording ("Continue", "Use the sliders…") covers both.

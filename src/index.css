@@ -407,6 +407,22 @@ body {
   }
 }
 
+/* The wash under a game's floating chrome (`GameHud`): the wordmark, the theme label and the
+   Home icon are bare, with no box behind them, so a card scrolling up under them would
+   otherwise show through the text. Solid page colour for the height of the wordmark and
+   label, which the element takes from an invisible copy of them, then 28px of fade (the
+   padding), so cards still slide away rather than hit an edge. The 48px floor is the Home
+   button. The board's own fade (Timeline.tsx) sits above this one and is too faint by the
+   label's height to do the job. */
+@layer utilities {
+  .hud-scrim {
+    box-sizing: content-box;
+    min-height: 48px;
+    padding-bottom: 28px;
+    background: linear-gradient(to bottom, var(--color-bg) calc(100% - 28px), transparent);
+  }
+}
+
 /* ===========================================================================
    BOARD COLUMN — the alignment invariant
    ===========================================================================

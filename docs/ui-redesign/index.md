@@ -9,18 +9,27 @@ Full-width vertical stack:
 ```
 (no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
-  └ GameHud (floating, z-[34]): Home top-left, the theme pill top-right
+  └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right
 Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
-  went; what is left is `GameHud.tsx`, which floats Home and the theme pill inside the 48px
-  fade band that already holds "↑ Earlier", where they cost no height. The strip ignores the
-  pointer between its two controls. How to Play, Reset Hints, dark mode, Profile and the update
-  popup are on Home only, since they lived in the bar's Menu. **Mid-game Restart went with the
-  bar** and was not rehomed: Restart is offered at game over, in the bottom bar. The pill's
-  width is `min(9.5rem, 50% - 3rem)` so a long pairing name stays clear of the centred label
-  on a 320px screen, where it runs to three lines.
+  went; what is left is `GameHud.tsx`, which floats over the top of the board beside
+  "↑ Earlier" and costs no height: a small "When?" wordmark top-left with the theme under it
+  as a grey capitals label beside a gold square, and a bare Home icon top-right. The strip
+  ignores the pointer everywhere but Home. How to Play, Reset Hints, dark mode, Profile and
+  the update popup are on Home only, since they lived in the bar's Menu. **Mid-game Restart
+  went with the bar** and was not rehomed: Restart is offered at game over, in the bottom bar.
+- **Nothing in the HUD has a box behind it**, chosen over a gold pill and bordered buttons
+  (which were built first and read as heavy), and over a boxed lockup. Bare text over a
+  scrolling board needs a wash under it, which is `hud-scrim` (`index.css`): solid page
+  colour for the height of the wordmark and label, then 28px of fade. **It takes that height
+  from an invisible copy of them**, because a pairing's name runs to three lines and a wash
+  sized for one line leaves the rest sitting on card art. It is at z-20, under the board's
+  own "↑ Earlier" (z-30), which a wash at the controls' z-[34] would paint over. The block's
+  width is `min(9.5rem, 50% - 2.5rem)`, which stays clear of the centred label on a 320px
+  screen and is the narrowest that holds "ARCHITECTURE" on one line there. The wordmark is
+  not a button, so there is one "Go home".
 - **The hand bar rises from below the screen once the board has faded in** (`.hand-rise` in
   `index.css`): 300ms of delay for Game's root fade, which starts as the intro screen leaves,
   then 450ms of travel. It is a transform on a bar that keeps its place in the layout, never

@@ -108,8 +108,9 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
   the "Timeline Stats" popup.
 - **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
-  pill floating at the top right of the board in game (`span[title]` inside the game). A
-  game has no top bar: the only chrome is that pill and `[aria-label="Go home"]` top left.
+  label under the "When?" wordmark at the top left of the board in game (`div[title]`; the
+  wordmark and label are in the DOM twice, one copy invisible, so filter on visibility). A
+  game has no top bar: the only control is `[aria-label="Go home"]`, top right.
 - **No modal blocks the first drag.** How to Play opens from the menu only. To replay a
   fresh install's hints,
   `localStorage.removeItem('when-hints-seen')` — or click **Reset Hints** in the burger

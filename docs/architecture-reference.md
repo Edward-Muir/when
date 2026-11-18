@@ -36,7 +36,7 @@ index.tsx                      # BrowserRouter + the routes below
 │       │       └── GalleryFlight.tsx # The cards in flight from the board (body portal)
 │       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── GameHud.tsx        # All of a game's chrome: floating Home and the theme pill. A game
+│       ├── GameHud.tsx        # All of a game's chrome: the wordmark, the theme label, Home. A game
 │       │                      # mounts no TopBar, so no Menu and no UpdatePopup either
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
@@ -151,7 +151,8 @@ Low to high. Verify against source before relying on it — grep `z-` in the thr
 | Card stack (back/mid/front) | z-0/1/2 | ActiveCardDisplay.tsx                          |
 | Timeline scroll content     | z-10    | Timeline.tsx:409                               |
 | Timeline fade overlays      | z-30    | Timeline.tsx:392, 471                          |
-| Floating Home + theme pill  | z-[34]  | GameHud.tsx (in Game's timeline area)          |
+| Wash under the game's HUD   | z-20    | GameHud.tsx (`hud-scrim`, under "↑ Earlier")   |
+| Wordmark, theme label, Home | z-[34]  | GameHud.tsx (in Game's timeline area)          |
 | Onboarding hint strip       | z-[35]  | HintStrip.tsx (in Game's timeline area)        |
 | Bottom bar (hand zone)      | z-40    | Game.tsx                                       |
 | Placement vignette          | z-[45]  | Game.tsx                                       |

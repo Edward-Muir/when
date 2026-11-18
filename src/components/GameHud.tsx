@@ -1,55 +1,81 @@
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Home } from 'lucide-react';
 
 interface GameHudProps {
   onHome: () => void;
-  /** The deck's theme, when it has one. A Custom game has none and shows Home alone. */
+  /** The deck's theme, when it has one. A Custom game has none and shows the wordmark alone. */
   theme?: string;
 }
 
+// The floating strip's box, shared by the controls and by the wash that is sized from a copy
+// of them, so the two cannot drift apart.
+const STRIP = 'absolute top-0 inset-x-0 pointer-events-none pl-3 pr-2 pt-1';
+
 /**
- * All the chrome a game has: Home on the left, the theme pill on the right. Both float over
- * the board inside the 48px fade band that holds "↑ Earlier", so neither costs the timeline
- * any height. There is no top bar and no menu in a game; those are on Home.
+ * The wordmark with the theme named under it. Not a button: a second control labelled "Go
+ * home" beside the Home icon was desktop issue D1.
  *
- * It sits at z-[34]: above the board's scrims (z-30), below the hint strip (z-[35]) and the
- * hand bar (z-40). The strip itself ignores the pointer, so a drag or a scroll that starts
- * between the two controls still reaches the board.
+ * The `min()` keeps the block clear of the board's centred "↑ Earlier" label down to a 320px
+ * screen, where 9.5rem would run under it.
+ */
+const HudMark: React.FC<{ theme?: string }> = ({ theme }) => (
+  <div className="mt-0.5 flex max-w-[min(9.5rem,calc(50%-2.5rem))] flex-col items-start gap-[5px]">
+    <h1 className="font-display text-xl font-semibold leading-none text-text">
+      When<span className="text-accent">?</span>
+    </h1>
+    {theme && (
+      <div className="flex items-start gap-1.5" title={theme}>
+        <span aria-hidden className="mt-1 h-1.5 w-1.5 shrink-0 bg-accent" />
+        {/* Curated names run to 20 characters ("Crowns & Coronations") and daily pairings to
+            46 ("Architecture in the Middle East & North Africa"). It wraps rather than
+            truncating, because a pairing's place comes last and is the part a single line cut
+            off; three lines hold the longest at 402px. The full name is on the Daily hero card
+            either way. Weight 400 because that is the only DM Mono the app loads. */}
+        <span className="line-clamp-3 font-mono text-[11px] uppercase leading-[14px] tracking-[0.12em] text-text-muted [overflow-wrap:anywhere]">
+          {theme}
+        </span>
+      </div>
+    )}
+  </div>
+);
+
+/**
+ * All the chrome a game has: the wordmark with the theme named under it on the left, Home on
+ * the right. Both float over the top of the board, so neither costs the timeline any height.
+ * There is no top bar and no menu in a game; those are on Home.
  *
- * A component of its own because `Game` sits on ESLint's complexity ceiling: the `theme &&`
- * below would be one branch too many there.
+ * Nothing here has a box behind it: the wordmark and the label are bare text and Home is a
+ * bare icon. That is only legible because of `hud-scrim` (index.css), a wash of the page
+ * colour under them. The wash holds an invisible copy of the wordmark and label, which is
+ * what makes it exactly as tall as they are: a pairing's name runs to three lines, and a
+ * wash sized for one would leave the other two sitting on card art. It is at z-20, above the
+ * scrolling cards (z-10) and below the board's own "↑ Earlier" label (z-30), which it would
+ * otherwise paint over.
+ *
+ * The controls are at z-[34]: above the board's scrims, below the hint strip (z-[35]) and the
+ * hand bar (z-40). The strip ignores the pointer everywhere but the Home button, so a drag or
+ * a scroll that starts on the wordmark still reaches the board.
+ *
+ * A component of its own because `Game` sits on ESLint's complexity ceiling.
  */
 const GameHud: React.FC<GameHudProps> = ({ onHome, theme }) => (
-  <div className="absolute top-0 inset-x-0 z-[34] pointer-events-none flex items-start justify-between gap-2 px-2 pt-1">
-    <button
-      onClick={onHome}
-      aria-label="Go home"
-      className="pointer-events-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-surface border border-border shadow-sm hover:bg-border transition-colors active:scale-95"
-    >
-      <Home className="w-5 h-5 text-text" />
-    </button>
-    <AnimatePresence>
-      {theme && (
-        <motion.span
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.9 }}
-          transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-          // max-w because curated theme names run to 20 characters ("Crowns & Coronations")
-          // and daily pairings to 46 ("Architecture in the Middle East & North Africa"). It
-          // wraps to two lines rather than truncating, because a pairing's place comes last and
-          // is the part a single line cut off. The `min()` keeps it clear of the centred
-          // "↑ Earlier" label down to a 320px screen, where 9.5rem would run under it; the
-          // third line is for that narrower pill. The full name is on the Daily hero card.
-          className="mt-1.5 max-w-[min(9.5rem,calc(50%-3rem))] line-clamp-3 [overflow-wrap:anywhere] px-2 py-0.5 text-xs leading-[1.2] font-body font-medium bg-accent text-white rounded-xl shadow-sm"
-          title={theme}
-        >
-          {theme}
-        </motion.span>
-      )}
-    </AnimatePresence>
-  </div>
+  <>
+    <div aria-hidden className={`${STRIP} hud-scrim z-20`}>
+      <div className="invisible">
+        <HudMark theme={theme} />
+      </div>
+    </div>
+    <div className={`${STRIP} z-[34] flex items-start justify-between gap-2`}>
+      <HudMark theme={theme} />
+      <button
+        onClick={onHome}
+        aria-label="Go home"
+        className="pointer-events-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-xl text-text transition-transform active:scale-90"
+      >
+        <Home className="h-6 w-6" />
+      </button>
+    </div>
+  </>
 );
 
 export default GameHud;
