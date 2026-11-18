@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T16:29:08.644Z",
+  "updated_at": "2026-11-18T16:31:32.899Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-18T16:29:08.644Z"
     },
     "emoji-added-to-unicode": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e95db8a9e139cbb810efaf251db2fb98071288121c83983b0b41edaeb4866f13",
+      "updated_at": "2026-11-18T16:31:32.899Z"
     }
   }
 }
