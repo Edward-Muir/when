@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T14:16:23.195Z",
+  "updated_at": "2026-11-18T14:19:16.283Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-18T14:16:23.195Z"
     },
     "bay-psalm-book": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c9ecea05bba43c7b5f9efcbf0f7ae4b0a433fb211f8ebb342385321301573cd7",
+      "updated_at": "2026-11-18T14:19:16.283Z"
     },
     "caslon-type-specimen": {
       "state": "pending",
