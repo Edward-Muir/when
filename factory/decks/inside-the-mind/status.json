@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T06:14:52.659Z",
+  "updated_at": "2026-11-18T06:17:33.007Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-18T06:14:52.659Z"
     },
     "mesmer-animal-magnetism": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "863ffa41994220af933310fae88894b4606df3314e65d2fbe8a44ee76b3220b1",
+      "updated_at": "2026-11-18T06:17:33.007Z"
     },
     "gall-founds-phrenology": {
       "state": "pending",
