@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:26:53.045Z",
+  "updated_at": "2026-11-18T10:29:45.120Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -198,10 +198,11 @@
       "updated_at": "2026-11-18T10:26:53.045Z"
     },
     "optogenetics-switches-neurons": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "18d984c9ca8808db27b8ca22eb889889084c4eecfe71b19784f7906b15d33056",
+      "updated_at": "2026-11-18T10:29:45.120Z"
     }
   }
 }
