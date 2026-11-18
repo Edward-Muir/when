@@ -1,0 +1,20 @@
+{
+  "jenson-roman-typeface": {"recognition": "low", "inferability": "medium", "anchors": ["Venetian printer", "roman letter"], "why": "Venetian printing implies the early print era, though the century is unclear"},
+  "caxton-westminster-press": {"recognition": "medium", "inferability": "high", "anchors": ["England's first press", "books in English", "merchant"], "why": "first English press places it in late medieval printing's early days"},
+  "garamond-roman-type": {"recognition": "low", "inferability": "medium", "anchors": ["Parisian punchcutter", "roman letters"], "why": "punchcutting points to the early print era, probably Renaissance"},
+  "bay-psalm-book": {"recognition": "medium", "inferability": "high", "anchors": ["New England colony", "first book printed in North America"], "why": "colonial New England places it in the 17th century"},
+  "caslon-type-specimen": {"recognition": "low", "inferability": "medium", "anchors": ["Britain and its colonies", "oldstyle"], "why": "colonial Britain suggests the 18th century"},
+  "baskerville-virgil": {"recognition": "low", "inferability": "medium", "anchors": ["Birmingham printer", "Virgil"], "why": "Birmingham printing of a classic suggests the Enlightenment era, not precise"},
+  "first-sans-serif-typeface": {"recognition": "low", "inferability": "low", "anchors": ["London type foundry"], "why": "few clues; could be several centuries, though foundry suggests pre-modern"},
+  "sholes-typewriter-patent": {"recognition": "medium", "inferability": "high", "anchors": ["typewriter", "patent", "Milwaukee newspaperman"], "why": "typewriter patent strongly signals the 19th century"},
+  "remington-typewriter-sales": {"recognition": "medium", "inferability": "high", "anchors": ["first commercial typewriter", "firearms maker"], "why": "first commercial typewriter points to the 1870s industrial era"},
+  "johnston-london-typeface": {"recognition": "low", "inferability": "medium", "anchors": ["railway signs and posters", "calligrapher"], "why": "railway posters suggest the late Victorian to early 20th century"},
+  "futura-typeface-released": {"recognition": "medium", "inferability": "medium", "anchors": ["modernist", "German designer", "geometric"], "why": "modernist geometric design points to the early 20th century"},
+  "times-new-roman-debut": {"recognition": "high", "inferability": "medium", "anchors": ["London newspaper", "word-processing default"], "why": "known font, but word processing is later than debut; 20th century"},
+  "helvetica-released": {"recognition": "high", "inferability": "medium", "anchors": ["Swiss foundry", "corporate logos"], "why": "corporate logos and neutral modernism suggest mid-20th century"},
+  "ibm-selectric-typewriter": {"recognition": "medium", "inferability": "high", "anchors": ["IBM", "electric typewriter"], "why": "IBM electric typewriter places it in the mid-20th century"},
+  "project-gutenberg-begins": {"recognition": "medium", "inferability": "high", "anchors": ["university computer", "electronic book"], "why": "mainframe-era electronic library places it in the late 20th century"},
+  "desktop-publishing-arrives": {"recognition": "medium", "inferability": "high", "anchors": ["laser printer", "PostScript", "software"], "why": "laser printers and PostScript mark the 1980s"},
+  "comic-sans-created": {"recognition": "high", "inferability": "high", "anchors": ["software designer", "typeface", "mocked"], "why": "software-designed font implies the digital 1990s"},
+  "emoji-added-to-unicode": {"recognition": "high", "inferability": "high", "anchors": ["Unicode", "emoji"], "why": "Unicode and emoji point to the 21st-century digital era"}
+}
