@@ -1,21 +1,26 @@
 {
   "deck": "inside-the-mind",
   "name": "Inside the Mind",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T05:17:11.866Z",
+  "updated_at": "2026-11-18T06:09:37.628Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-18T05:17:11.866Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-18T06:09:37.628Z"
     }
   ],
   "slugs": {
     "hippocratics-brain-seat-of-mind": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9d91b3ad09d017e6825189e8b2fd77965003014428f0901e783a084614310bd6",
+      "updated_at": "2026-11-18T06:09:37.628Z"
     },
     "bethlem-hospital-first-patients": {
       "state": "pending",
