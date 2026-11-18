@@ -1,0 +1,15 @@
+{
+  "slug": "first-electroconvulsive-therapy",
+  "description": "A dimly lit oil-style painting of a 1930s-looking room. A man in a white coat leans over a black metal box with a dial and cables on a side table. A second man in a white coat stands at the head of a cot, placing a headband or electrode on a reclining patient's head. A woman in a dark dress stands at the right edge. The patient is calm and nothing is bloody. There is no visible text, no frame, and the painting fills the canvas.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

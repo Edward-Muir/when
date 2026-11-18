@@ -1,0 +1,15 @@
+{
+  "slug": "little-albert-experiment",
+  "description": "A dim, cluttered laboratory with a candle, shelves of glassware and scientific apparatus. A man in a waistcoat and shirtsleeves swings a hammer at a steel bar hanging from the ceiling, while a second man stands in shadow behind him. In the foreground a crying, light-haired toddler in a white romper stands on a mattress with arms outstretched, and a small white rat sits on the mattress at lower left. Oil-painting style, filling the frame edge to edge with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

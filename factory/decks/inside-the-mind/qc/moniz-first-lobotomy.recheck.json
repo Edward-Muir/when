@@ -1,0 +1,15 @@
+{
+  "slug": "moniz-first-lobotomy",
+  "description": "A dim, brownish oil painting of an old operating room. A sheet-draped table sits under a round surgical lamp, with a tray of instruments and a syringe in the foreground. Tiled walls, gowns and a cap hang on hooks. No people, no text, no frame, no blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
