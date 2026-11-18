@@ -3,7 +3,7 @@
   "name": "The Caliphs",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T02:22:30.807Z",
+  "updated_at": "2026-11-18T02:25:04.699Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-18T02:22:30.807Z"
     },
     "madinat-al-zahra-begun": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5243d2033ddd03033d00a5ad44f08cd0315fd6be98b6b1fc36a80a5573002197",
+      "updated_at": "2026-11-18T02:25:04.699Z"
     },
     "buyids-seize-baghdad": {
       "state": "pending",
