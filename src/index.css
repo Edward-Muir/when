@@ -326,6 +326,19 @@ body {
   }
 }
 
+/* The patch under a game's wordmark and theme label (`GameHud`). They are bare text over a
+   scrolling board, and a year sliding up the gutter would otherwise run through them. Page
+   colour, exactly the size of the text block, with a soft edge so the year fades out rather
+   than hitting a box. Deliberately not a band across the board: that hid the top of the
+   timeline, which is the height the top bar's removal was for. */
+@layer utilities {
+  .hud-mark {
+    background-color: var(--color-bg);
+    border-bottom-right-radius: 12px;
+    box-shadow: 2px 2px 6px 2px var(--color-bg);
+  }
+}
+
 /* ===========================================================================
    BOARD COLUMN — the alignment invariant
    ===========================================================================
@@ -840,8 +853,27 @@ input,
   }
 }
 
+/* The hand bar's entrance: it rises from below the screen once the board has faded in, which
+   is the 300ms delay (Game's root fade, starting as the intro screen leaves). A transform on a
+   bar that keeps its place in the layout, not a height or a late mount: the board must be its
+   final height from the first frame, because the timeline centres its opening card once.
+   `backwards` holds the bar off screen through the delay and leaves no transform behind. */
+@keyframes handRise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.hand-rise {
+  animation: handRise 450ms cubic-bezier(0.2, 0.8, 0.2, 1) 300ms backwards;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+  .hand-rise,
   .animate-shake-light,
   .animate-shake-medium,
   .animate-shake-heavy,

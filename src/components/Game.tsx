@@ -32,7 +32,7 @@ import Modal from './ui/Modal';
 import HandDragOverlay, { dropAnimationFor } from './HandDragOverlay';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
-import TopBar from './TopBar';
+import GameHud from './GameHud';
 import HintStrip from './HintStrip';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
@@ -49,8 +49,7 @@ import { buildDailyResult } from '../utils/dailyResult';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { getVignetteColor } from '../utils/vignettePulse';
 import { ACHIEVEMENTS } from '../data/achievements';
-import { buildEventsByName, GameMilestone, getDailyCadence } from '../utils/statsStorage';
-import { canRestartMidGame } from '../utils/dailyReplay';
+import { buildEventsByName, GameMilestone } from '../utils/statsStorage';
 import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
@@ -93,19 +92,6 @@ const HomeConfirmModal: React.FC<{
     </div>
   </Modal>
 );
-
-/**
- * The top bar's Restart, offered while a practice game is being played (`canRestartMidGame`).
- * At game over the bottom bar has its own Restart, and a review is a finished board. Extracted
- * because `Game` sits on ESLint's complexity ceiling of 15, like the helpers below.
- */
-function midGameRestart(state: WhenGameState, restart: () => void): (() => void) | undefined {
-  const available =
-    state.phase === 'playing' &&
-    !state.isReview &&
-    canRestartMidGame(state.lastConfig, getDailyCadence().playedDates);
-  return available ? restart : undefined;
-}
 
 // Whether the popup should reveal the event's year: cards already on the timeline and
 // revealed tombstones do; a hand card being previewed doesn't (that's the puzzle).
@@ -161,8 +147,6 @@ interface GameProps {
   showGameOverPopup: () => void;
   dismissPopup: () => void;
   onRestart: () => void;
-  /** Restart from the top bar mid-game, once confirmed: same deal rules as `onRestart`, no intro. */
-  onRestartMidGame: () => void;
   onNewGame: () => void;
   newlyUnlockedAchievements: string[];
   gameMilestones: GameMilestone[];
@@ -198,7 +182,6 @@ const Game: React.FC<GameProps> = ({
   showGameOverPopup,
   dismissPopup,
   onRestart,
-  onRestartMidGame,
   onNewGame,
   newlyUnlockedAchievements,
   gameMilestones,
@@ -270,7 +253,7 @@ const Game: React.FC<GameProps> = ({
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
-  // Theme name for the TopBar pill: the deck an Archive replay is of, or the theme of the day
+  // Theme name for the pill in `GameHud`: the deck an Archive replay is of, or the theme of the day
   // being played (today's daily, or a past day from the Archive calendar).
   const dailyThemeDisplay = useMemo(
     () => getThemeNameForConfig(state.lastConfig),
@@ -408,18 +391,8 @@ const Game: React.FC<GameProps> = ({
         measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
       >
         <div
-          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-topbar transition-colors ${shakeClassName}`}
+          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-safe transition-colors ${shakeClassName}`}
         >
-          <TopBar
-            showHome={true}
-            // "Leave game?" is the wrong question for a finished board
-            // being re-read, so a review leaves straight away.
-            onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
-            dailyTheme={dailyThemeDisplay}
-            onRestart={midGameRestart(state, onRestartMidGame)}
-            restartDisabled={state.isAnimating}
-          />
-
           {showConfetti && (
             <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
               <ConfettiExplosion
@@ -433,6 +406,12 @@ const Game: React.FC<GameProps> = ({
 
           {/* Main Timeline Area - takes remaining space */}
           <div className={boardAreaClass(pendingPopup)}>
+            <GameHud
+              // "Leave game?" is the wrong question for a finished board
+              // being re-read, so a review leaves straight away.
+              onHome={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
+              theme={dailyThemeDisplay}
+            />
             <Timeline
               events={state.timeline}
               onEventTap={showDescriptionPopup}
@@ -455,10 +434,11 @@ const Game: React.FC<GameProps> = ({
           </div>
 
           {/* Bottom Bar - Fixed height with game info + active card aligned with timeline.
-              `hand-bar` (index.css) is the square hand card plus the safe-area inset. */}
+              `hand-bar` (index.css) is the square hand card plus the safe-area inset, and
+              `hand-rise` slides the bar up from below the screen once the board has faded in. */}
           <div
             ref={setBottomBarRef}
-            className={`${bottomBarHeightClass(state.phase)} flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
+            className={`${bottomBarHeightClass(state.phase)} hand-rise flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
               dragState.isOverHand ? 'bg-accent/10' : ''
             }`}
           >
