@@ -1,0 +1,254 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "paper-invented",
+      "why": "Cai Lun and paper, same year"
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "trajan-column",
+      "why": "same monument, same year"
+    },
+    {
+      "beat": 2,
+      "decision": "reuse",
+      "slug": "diamond-sutra-printed",
+      "why": "same book, same year"
+    },
+    {
+      "beat": 3,
+      "decision": "reuse",
+      "slug": "movable-type-china",
+      "why": "Bi Sheng movable type; spine year 1041 is one convention of the 1040s"
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "jikji-korea-printing",
+      "why": "same book, same year"
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "gutenberg-bible",
+      "why": "same event"
+    },
+    {
+      "beat": 6,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1, dense 1450s-70s"
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "jenson-roman-typeface",
+      "why": "written new"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "caxton-westminster-press",
+      "why": "written new"
+    },
+    {
+      "beat": 9,
+      "decision": "reuse",
+      "slug": "aldine-italic-type",
+      "why": "same event"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "garamond-roman-type",
+      "why": "written new"
+    },
+    {
+      "beat": 11,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope, trimmed"
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "first-printed-newspaper-relation",
+      "why": "same event"
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "bay-psalm-book",
+      "why": "written new"
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1"
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "caslon-type-specimen",
+      "why": "written new"
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "baskerville-virgil",
+      "why": "written new"
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "lithography-invented",
+      "why": "same event"
+    },
+    {
+      "beat": 18,
+      "decision": "cut",
+      "slug": null,
+      "why": "near-duplicate of existing powered-printing-press (1811)"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "first-sans-serif-typeface",
+      "why": "written new"
+    },
+    {
+      "beat": 20,
+      "decision": "reuse",
+      "slug": "braille-invented",
+      "why": "same event"
+    },
+    {
+      "beat": 21,
+      "decision": "reuse",
+      "slug": "rotary-printing-press-hoe",
+      "why": "same event"
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "sholes-typewriter-patent",
+      "why": "written new"
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "remington-typewriter-sales",
+      "why": "written new"
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": null,
+      "why": "near-duplicate of existing linotype-machine (1884), different year"
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": null,
+      "why": "fame 1"
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "johnston-london-typeface",
+      "why": "written new"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "futura-typeface-released",
+      "why": "written new"
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": null,
+      "why": "Gill Sans: trimmed for crowding"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "times-new-roman-debut",
+      "why": "written new"
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "helvetica-released",
+      "why": "written new"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "ibm-selectric-typewriter",
+      "why": "written new"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "project-gutenberg-begins",
+      "why": "written new"
+    },
+    {
+      "beat": 33,
+      "decision": "cut",
+      "slug": null,
+      "why": "trimmed for crowding"
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "desktop-publishing-arrives",
+      "why": "written new"
+    },
+    {
+      "beat": 35,
+      "decision": "reuse",
+      "slug": "unicode-standard-released",
+      "why": "same event"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "comic-sans-created",
+      "why": "written new"
+    },
+    {
+      "beat": 37,
+      "decision": "cut",
+      "slug": null,
+      "why": "trimmed for crowding"
+    },
+    {
+      "beat": 38,
+      "decision": "cut",
+      "slug": null,
+      "why": "trimmed for crowding"
+    },
+    {
+      "beat": 39,
+      "decision": "new",
+      "slug": "emoji-added-to-unicode",
+      "why": "written new"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 7/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1985-1994 (want 3 or fewer in any 10 years)\n  PASS  shared 0               (want 4 or fewer with any one theme)\n\n",
+  "overlap": "Overlap against 83 earlier themes:\n  no card is shared with any earlier theme",
+  "footholds": [
+    "times-new-roman-debut",
+    "helvetica-released",
+    "comic-sans-created",
+    "diamond-sutra-printed",
+    "gutenberg-bible",
+    "braille-invented"
+  ]
+}
