@@ -8,8 +8,8 @@ import {
 } from './wheelMath';
 
 // The two card sizes the board has, with the `--wheel-pitch` index.css gives each.
-const PHONE = { slot: 80, cardWidth: 240, rowHeight: 121 };
-const WIDE = { slot: 96, cardWidth: 280, rowHeight: 141 };
+const PHONE = { slot: 80, cardWidth: 240, rowHeight: 112 };
+const WIDE = { slot: 96, cardWidth: 280, rowHeight: 132 };
 const HALF = 290;
 const geo = wheelGeometry({ half: HALF, ...PHONE });
 
@@ -29,7 +29,7 @@ describe('wheelPose', () => {
     expect(pose.focus).toBe(1);
     expect(pose.yearDim).toBe(1);
     expect(pose.dim).toBe(1);
-    // 40% of the way from the resting crop to the whole square painting.
+    // 30% of the way from the resting crop to the whole square painting.
     expect(pose.grow).toBeCloseTo(WHEEL_TUNING.reveal * (0.7 * PHONE.cardWidth - PHONE.slot));
   });
 
@@ -47,7 +47,7 @@ describe('wheelPose', () => {
   });
 
   it('is symmetric about the centre, with the tilt mirrored', () => {
-    for (const x of [10, 60, 121, 242, 400, 900]) {
+    for (const x of [10, 60, 112, 224, 400, 900]) {
       const below = wheelPose(x, geo);
       const above = wheelPose(-x, geo);
       expect(above.y).toBeCloseTo(-below.y);

@@ -257,7 +257,7 @@ body {
     /* The height a row is laid out at: the centred card's opened height, so that card moves
        exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card size;
        wheelMath.test.ts pins both numbers. */
-    --wheel-pitch: 121px;
+    --wheel-pitch: 112px;
     /* Pins the painting to the card's centre line so it does not slide inside the frame as
        the frame opens: 15% of (painting height - card height), which is the same crop at rest
        as `.card-art-fade`'s 35%. */
@@ -265,7 +265,7 @@ body {
   }
   @media (min-width: 640px) {
     .wheel-on {
-      --wheel-pitch: 141px;
+      --wheel-pitch: 132px;
       --wheel-art-pin: 15px;
     }
   }

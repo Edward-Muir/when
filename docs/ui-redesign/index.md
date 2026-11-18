@@ -368,7 +368,7 @@ haptic tick (`haptics.select`) as each event passes the centre. The maths is
 
 The look was chosen from interactive mock-ups (cylinder, lens, dates-only, dial, parallax). The
 tuning that won is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's
-edge), a reveal of 40% of the way to the whole square painting, spread over 1.6 row pitches.
+edge), a reveal of 30% of the way to the whole square painting, spread over 1.4 row pitches.
 Nothing is ever scaled: a magnifier was tried and rejected because it enlarges the painting
 without showing more of it.
 
@@ -378,7 +378,7 @@ Decisions, and the traps behind them:
   height is exactly the room its neighbours make. The first build used unrelated curves for
   position, size and tilt, and it read as janky: cards sped up and slowed down near the centre.
 - **Rows are laid out tall (`--wheel-pitch`), and the pose only corrects them.** A taller centre
-  card stretches the strip there, so with ordinary 88px rows the centred card moved about 1.4
+  card stretches the strip there, so with ordinary 88px rows the centred card moved about 1.3
   times as far as the finger. Laying rows out at the centre's opened height makes the correction
   zero at the centre: native scrolling moves the centred card and JavaScript adds nothing there,
   which also hides the one-frame lag between a compositor scroll and a main-thread transform.

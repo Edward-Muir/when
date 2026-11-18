@@ -53,8 +53,8 @@ export interface WheelTuning {
 export const WHEEL_TUNING: WheelTuning = {
   edgeAngle: 11.4,
   perspective: 970,
-  reveal: 0.4,
-  spread: 1.6,
+  reveal: 0.3,
+  spread: 1.4,
   artRatio: 0.7,
   gap: 8,
   dim: 0.12,
