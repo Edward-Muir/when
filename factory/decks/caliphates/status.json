@@ -3,7 +3,7 @@
   "name": "The Caliphs",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T02:19:50.033Z",
+  "updated_at": "2026-11-18T02:22:30.807Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-18T02:19:50.033Z"
     },
     "cordoba-caliphate-proclaimed": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5137fb634429355b741080093b542d8423450f5816d4fdd1c3efb504df73f7a7",
+      "updated_at": "2026-11-18T02:22:30.807Z"
     },
     "madinat-al-zahra-begun": {
       "state": "pending",
