@@ -15,21 +15,23 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
   went; what is left is `GameHud.tsx`, which floats over the top of the board beside
-  "↑ Earlier" and costs no height: a small "When?" wordmark top-left with the theme under it
-  as a grey capitals label beside a gold square, and a bare Home icon top-right. The strip
+  "↑ Earlier" and costs no height: a small "When?" wordmark in the top-left corner with the
+  theme under it as a grey capitals label beside a gold square, and Home top-right. The strip
   ignores the pointer everywhere but Home. How to Play, Reset Hints, dark mode, Profile and
   the update popup are on Home only, since they lived in the bar's Menu. **Mid-game Restart
   went with the bar** and was not rehomed: Restart is offered at game over, in the bottom bar.
-- **Nothing in the HUD has a box behind it**, chosen over a gold pill and bordered buttons
-  (which were built first and read as heavy), and over a boxed lockup. Bare text over a
-  scrolling board needs a wash under it, which is `hud-scrim` (`index.css`): solid page
-  colour for the height of the wordmark and label, then 28px of fade. **It takes that height
-  from an invisible copy of them**, because a pairing's name runs to three lines and a wash
-  sized for one line leaves the rest sitting on card art. It is at z-20, under the board's
-  own "↑ Earlier" (z-30), which a wash at the controls' z-[34] would paint over. The block's
-  width is `min(9.5rem, 50% - 2.5rem)`, which stays clear of the centred label on a 320px
-  screen and is the narrowest that holds "ARCHITECTURE" on one line there. The wordmark is
-  not a button, so there is one "Go home".
+- **The board shows through right up to the top; nothing bands it.** The wordmark and label
+  are bare text, so they sit on `hud-mark` (`index.css`): a patch of page colour with a soft
+  edge, only as big as the text. It lies over the year gutter, so what it hides is a year
+  passing under the wordmark, never a card (the longest pairing names reach about 50px onto
+  the cards' left edge). **A wash across the whole width was built first and reverted**: it
+  was solid for 50px and gave back the height the bar's removal had won. A gold pill and a
+  boxed lockup were also tried and read as heavy.
+- **Home is a boxed button**, the same as the top bar's on the Home screen. A bare icon was
+  tried and did not read as something to press. The wordmark is not a button, so there is
+  one "Go home". The patch's width is `min(10.5rem, 50% - 34px)`, which stays clear of the
+  centred "↑ Earlier" on a 320px screen and is the narrowest that holds "ARCHITECTURE" on one
+  line there.
 - **The hand bar rises from below the screen once the board has faded in** (`.hand-rise` in
   `index.css`): 300ms of delay for Game's root fade, which starts as the intro screen leaves,
   then 450ms of travel. It is a transform on a bar that keeps its place in the layout, never

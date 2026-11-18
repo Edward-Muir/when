@@ -151,7 +151,6 @@ Low to high. Verify against source before relying on it — grep `z-` in the thr
 | Card stack (back/mid/front) | z-0/1/2 | ActiveCardDisplay.tsx                          |
 | Timeline scroll content     | z-10    | Timeline.tsx:409                               |
 | Timeline fade overlays      | z-30    | Timeline.tsx:392, 471                          |
-| Wash under the game's HUD   | z-20    | GameHud.tsx (`hud-scrim`, under "↑ Earlier")   |
 | Wordmark, theme label, Home | z-[34]  | GameHud.tsx (in Game's timeline area)          |
 | Onboarding hint strip       | z-[35]  | HintStrip.tsx (in Game's timeline area)        |
 | Bottom bar (hand zone)      | z-40    | Game.tsx                                       |
