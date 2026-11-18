@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T08:33:01.660Z",
+  "updated_at": "2026-11-18T08:35:27.254Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-18T08:33:01.660Z"
     },
     "chlorpromazine-first-antipsychotic": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3a34a8910ddce1854376e6d6a50bf16198b046971c449e9f7186c93fe6b564d0",
+      "updated_at": "2026-11-18T08:35:27.254Z"
     },
     "patient-hm-memory-loss": {
       "state": "pending",
