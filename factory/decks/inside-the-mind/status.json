@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T08:15:38.577Z",
+  "updated_at": "2026-11-18T08:18:05.582Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-18T08:15:38.577Z"
     },
     "little-albert-experiment": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a73d90677d2f4987813387fd24fe68e5255786d70fdea1a73e5284bce4c64fbf",
+      "updated_at": "2026-11-18T08:18:05.582Z"
     },
     "rorschach-inkblot-test": {
       "state": "pending",
