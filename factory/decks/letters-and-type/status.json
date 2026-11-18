@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T14:21:47.603Z",
+  "updated_at": "2026-11-18T14:24:16.034Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-18T14:21:47.603Z"
     },
     "baskerville-virgil": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cda73fda65739013525e6314b55919c12c74f153bd655ef38af49fe2847d9369",
+      "updated_at": "2026-11-18T14:24:16.034Z"
     },
     "first-sans-serif-typeface": {
       "state": "pending",
