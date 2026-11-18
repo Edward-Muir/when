@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T18:12:14.626Z",
+  "updated_at": "2026-11-18T19:07:48.042Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,18 +128,18 @@
       "updated_at": "2026-11-18T17:08:07.225Z"
     },
     "comic-sans-created": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 2,
-      "reason": "Letters are painted in: the screen shows large words (\"Cgnlilifi rn'bliwred\") plus menu labels, and the desk papers and book show alphabet lettering (ABCDEF, QRSTUVWXYZ). Redraw the screen and sheets with no readable letters, using abstract squiggles or comic panels only.",
+      "reason": "Legible text is painted on the screen: the menu bar (File Edit View Format Help), OK and Cancel buttons, a Start button and an 8:35 AM clock, plus lettering in the balloons and comic panels. Repaint the screen with blank interface shapes and no writing.",
       "sha256": "39d16220085fc1c642626697fa6d36ca597f7545e3b0ceb6b36bddaf5f744a97",
-      "updated_at": "2026-11-18T18:09:42.345Z"
+      "updated_at": "2026-11-18T19:07:48.007Z"
     },
     "emoji-added-to-unicode": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Legible lettering is painted in: the JR sign reads 東京駅 / 'Tokyo Station' and the storefront reads 'FamilyMart'. Repaint the street with blurred, unreadable signs and no words.",
+      "reason": null,
       "sha256": "00e0caa28af0168f3ecb22616c7179cae0052fe4b16d532f3c94e571eb93ced6",
-      "updated_at": "2026-11-18T18:12:14.626Z"
+      "updated_at": "2026-11-18T19:07:48.042Z"
     }
   }
 }

@@ -113,16 +113,16 @@
   },
   "comic-sans-created": {
     "state": "qc-fail",
-    "reason": "Letters are painted in: the screen shows large words (\"Cgnlilifi rn'bliwred\") plus menu labels, and the desk papers and book show alphabet lettering (ABCDEF, QRSTUVWXYZ). Redraw the screen and sheets with no readable letters, using abstract squiggles or comic panels only.",
+    "reason": "Legible text is painted on the screen: the menu bar (File Edit View Format Help), OK and Cancel buttons, a Start button and an 8:35 AM clock, plus lettering in the balloons and comic panels. Repaint the screen with blank interface shapes and no writing.",
     "by": "recheck",
-    "attempts": 1,
-    "description": "A dim, warmly lit desk with a beige CRT computer whose screen shows a window with a cartoon dog, a speech balloon and large words in a rounded font. Around it are open comic pages, sheets with alphabet lettering (ABCDEF, QRSTUVWXYZ), an ink bottle and a dip pen. The painting fills the frame with no border; no people, nothing graphic. 1990s computer and comics fit the era."
+    "attempts": 2,
+    "description": "A painted beige CRT computer on a dark desk. The screen shows a software window with a cartoon dog and a speech balloon, a thumbnail strip, and a small warning dialog. Around it lie pen-inked comic pages, an ink bottle, a dip pen and brushes. The painting fills the frame, with no people or border. The screen has a menu bar reading File Edit View Format Help, OK and Cancel buttons, a Start button and an 8:35 AM clock, and the comic panels have lettering."
   },
   "emoji-added-to-unicode": {
-    "state": "qc-fail",
-    "reason": "Legible lettering is painted in: the JR sign reads 東京駅 / 'Tokyo Station' and the storefront reads 'FamilyMart'. Repaint the street with blurred, unreadable signs and no words.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A hand holds an early iPhone-style phone showing a grid of emoji (smileys, hearts, sun, cat faces, cherry blossom) in a dark Tokyo alley at night. Paper lanterns hang on the left; a JR sign reading 東京駅 and 'Tokyo Station' is behind, and a FamilyMart storefront sign is on the right. Oil-paint style, edge to edge, no frame, nothing violent."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painterly night street scene in a busy city, with neon signs and red lanterns in the background and blurred pedestrians in dark clothing. In the foreground, a hand holds a black smartphone whose screen shows a grid of cartoon icons: smiley faces, hearts, a sun, a cat, and a flower. The image fills the frame edge to edge, with no visible frame or border."
   }
 }
