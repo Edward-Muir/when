@@ -1,21 +1,26 @@
 {
   "deck": "letters-and-type",
   "name": "Letters & Type",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T13:18:46.443Z",
+  "updated_at": "2026-11-18T14:11:42.720Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-18T13:18:46.443Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-18T14:11:42.720Z"
     }
   ],
   "slugs": {
     "jenson-roman-typeface": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "079318a171467cab06ceaf23ac8e44fa4a156a10934c1bbbbfcf2d6e41ca94ab",
+      "updated_at": "2026-11-18T14:11:42.720Z"
     },
     "caxton-westminster-press": {
       "state": "pending",
