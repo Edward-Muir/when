@@ -3,7 +3,7 @@
   "name": "The Caliphs",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T02:17:19.013Z",
+  "updated_at": "2026-11-18T02:19:50.033Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-18T02:17:19.013Z"
     },
     "samarra-founded-by-mutasim": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7bb71e119bc7975b3f2b475db71d7c55c3458e024a7d5918002cc521603c25b3",
+      "updated_at": "2026-11-18T02:19:50.033Z"
     },
     "cordoba-caliphate-proclaimed": {
       "state": "pending",
