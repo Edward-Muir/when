@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:21:51.215Z",
+  "updated_at": "2026-11-18T10:24:21.361Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -184,10 +184,11 @@
       "updated_at": "2026-11-18T10:21:51.215Z"
     },
     "gardner-multiple-intelligences": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3db243b98644815d91803ae32f4ea083e55d5c16fb23c49e1fd835e3443dd14d",
+      "updated_at": "2026-11-18T10:24:21.361Z"
     },
     "prozac-reaches-market": {
       "state": "pending",
