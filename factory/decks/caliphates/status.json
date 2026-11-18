@@ -3,7 +3,7 @@
   "name": "The Caliphs",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T02:12:15.913Z",
+  "updated_at": "2026-11-18T02:14:47.590Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-18T02:12:15.913Z"
     },
     "battle-of-the-camel-caliph-ali": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d751a1487ec5483780e6edf80f839fb62023d54e78aa24b4d4bd6242d8439cac",
+      "updated_at": "2026-11-18T02:14:47.590Z"
     },
     "great-mosque-damascus-begun": {
       "state": "pending",
