@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T15:08:38.810Z",
+  "updated_at": "2026-11-18T16:09:56.599Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,11 +58,11 @@
       "updated_at": "2026-11-18T15:08:38.659Z"
     },
     "first-sans-serif-typeface": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Painted text is visible: the board at lower left reads HAND PRESSED with smaller lines beneath, and a sign at upper right has partial lettering. Remove all signs and lettering from the background.",
-      "sha256": "b0b0929e80cb32ac5e4aa1bf30424307bfb4f8439ba5a911c2c08b0a3940cfb6",
-      "updated_at": "2026-11-18T15:08:38.697Z"
+      "sha256": "0800bf12cff828b90ec016047e83809572949c2e02249f6bd7a3953ad4bf5177",
+      "updated_at": "2026-11-18T16:09:56.599Z"
     },
     "sholes-typewriter-patent": {
       "state": "qc-pass",
