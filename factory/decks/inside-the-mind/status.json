@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:13:18.774Z",
+  "updated_at": "2026-11-18T10:16:47.253Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -163,10 +163,11 @@
       "updated_at": "2026-11-18T10:13:18.774Z"
     },
     "kubler-ross-five-stages-grief": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a0d7daff8797efb34594ee2bd8f81490a12ba4b32352bb50b3cca1363047cf2a",
+      "updated_at": "2026-11-18T10:16:47.253Z"
     },
     "stanford-prison-experiment": {
       "state": "pending",
