@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T06:20:06.673Z",
+  "updated_at": "2026-11-18T06:22:43.933Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-18T06:20:06.673Z"
     },
     "phineas-gage-accident": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5b79718ff8cb33e384b58fe822cc4462546918c4ecc545f599ecf95f10c1bce6",
+      "updated_at": "2026-11-18T06:22:43.933Z"
     },
     "broca-speech-area": {
       "state": "pending",
