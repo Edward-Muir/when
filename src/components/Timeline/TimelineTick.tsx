@@ -1,6 +1,7 @@
 import React, { RefObject, useLayoutEffect, useRef, useState } from 'react';
 import { useAnimate, useReducedMotion } from 'framer-motion';
 import { useAnimationTuning } from './animationTuning';
+import { flushWheels } from '../../hooks/useTimelineWheel';
 import { dotStart, landingKeyframes, landingTransition, Point } from './tickLanding';
 
 /**
@@ -101,6 +102,9 @@ const TimelineTick: React.FC<TimelineTickProps> = ({
     // twice.
     if (played.current) return;
     played.current = true;
+    // This row mounted in this commit, so the wheel has not posed it yet; measure it where it
+    // is about to be painted, not where layout alone puts it.
+    flushWheels();
     const rest = box.current.getBoundingClientRect();
     animate(el, landingKeyframes(dotStart(origin, rest)), landingTransition(tuning.tick, arriving));
     // Mount only, by design — see the snapshot note above.

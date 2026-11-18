@@ -1,4 +1,5 @@
 import { RefObject, useLayoutEffect, useState } from 'react';
+import { flushWheels } from '../../hooks/useTimelineWheel';
 
 /**
  * Where the drag's insertion marker should sit: the centre of the row the ghost card currently
@@ -72,6 +73,8 @@ export function useInsertionMarker(
     const measure = () => {
       const row = contentRef.current?.querySelector<HTMLElement>(`[${GHOST_ROW_ATTR}]`);
       if (!row) return;
+      // The ghost row may have mounted in this very commit, before the wheel has posed it.
+      flushWheels();
       const rowRect = row.getBoundingClientRect();
       // Take x off the rail itself rather than re-deriving the 96px board gutter here, so this
       // stays correct on its own if the board column invariant ever moves (see index.css).

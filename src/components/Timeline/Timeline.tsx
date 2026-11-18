@@ -15,6 +15,7 @@ import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
 import { useTimelineWaves } from './useTimelineWaves';
 import { useWakeDelays } from './useWakeDelays';
+import { centredScrollTop, useTimelineWheel, WHEEL_ROW_ATTR } from '../../hooks/useTimelineWheel';
 import {
   AnimationTuning,
   getMissTravelMs,
@@ -64,9 +65,19 @@ const BoardRow: React.FC<{
   scale?: MotionValue<number>;
   /** This row is where the ghost card currently sits — the insertion marker homes in on it. */
   ghost?: boolean;
+  /**
+   * Lift this row above its neighbours. The wheel makes every row a stacking context, so a
+   * card that leaves its own row (the miss reveal's flight, a placement's glow) has to be
+   * raised by the row; its own z-index no longer reaches past it.
+   */
+  raised?: boolean;
   children: React.ReactNode;
-}> = ({ first, last, extending = null, scale, ghost = false, children }) => (
-  <div {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})} className="relative w-full">
+}> = ({ first, last, extending = null, scale, ghost = false, raised = false, children }) => (
+  <div
+    {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})}
+    {...{ [WHEEL_ROW_ATTR]: '' }}
+    className={`wheel-row relative w-full ${raised ? 'z-20' : ''}`}
+  >
     <TimelineRail first={first} last={last} extending={extending} scale={scale} />
     {children}
   </div>
@@ -85,7 +96,9 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
     </div>
     {/* Card area */}
     <div className="flex-1 pl-3">
-      <Card event={event} size="landscape" />
+      <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+        <Card event={event} size="landscape" />
+      </div>
     </div>
   </div>
 );
@@ -107,11 +120,9 @@ function followRevealScroll(
   ) as HTMLElement | null;
   if (!el) return null;
 
-  const cRect = container.getBoundingClientRect();
-  const eRect = el.getBoundingClientRect();
-  const cardCenter = eRect.top - cRect.top + container.scrollTop + eRect.height / 2;
+  // From layout, not from rects: the wheel has the row painted somewhere else.
   const maxScroll = Math.max(0, container.scrollHeight - container.clientHeight);
-  const target = Math.min(Math.max(cardCenter - container.clientHeight / 2, 0), maxScroll);
+  const target = Math.min(Math.max(centredScrollTop(container, el), 0), maxScroll);
 
   if (reduceMotion) {
     container.scrollTop = target;
@@ -256,11 +267,8 @@ const Timeline: React.FC<TimelineProps> = ({
       if (hasCenteredRef.current || events.length === 0) return;
       const first = container.querySelector('[data-timeline-index="0"]') as HTMLElement | null;
       if (!first) return;
-      // offsetParent-agnostic: position the first card's center at the viewport's center.
-      const cRect = container.getBoundingClientRect();
-      const fRect = first.getBoundingClientRect();
-      const cardCenter = fRect.top - cRect.top + container.scrollTop + fRect.height / 2;
-      container.scrollTop = cardCenter - container.clientHeight / 2;
+      // Position the first card's center at the viewport's center.
+      container.scrollTop = centredScrollTop(container, first);
       hasCenteredRef.current = true;
     };
 
@@ -285,10 +293,7 @@ const Timeline: React.FC<TimelineProps> = ({
         `[data-timeline-index="${midIdx}"]`
       ) as HTMLElement | null;
       if (!mid) return;
-      const cRect = container.getBoundingClientRect();
-      const mRect = mid.getBoundingClientRect();
-      const cardCenter = mRect.top - cRect.top + container.scrollTop + mRect.height / 2;
-      container.scrollTop = cardCenter - container.clientHeight / 2;
+      container.scrollTop = centredScrollTop(container, mid);
       hasScrolledMiddleRef.current = true;
     };
 
@@ -332,6 +337,8 @@ const Timeline: React.FC<TimelineProps> = ({
   const ghostHostRowIndex =
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
   const railExtension = getRailExtension(ghostGap, ghostHostRowIndex, events.length);
+  // Before the marker: its layout effect measures rows the wheel must already have posed.
+  useTimelineWheel(scrollRef, contentRef, !shouldReduceMotion);
   const marker = useInsertionMarker(scrollRef, contentRef, ghostGap);
   // Keyed to being over the BOARD, not to the drag: taking the card off the board retracts the
   // extension and re-arms it, so coming back reaches out again.
@@ -377,6 +384,7 @@ const Timeline: React.FC<TimelineProps> = ({
         first={railFirst(rowIndex)}
         last={railLast(rowIndex)}
         ghost={rowIndex === ghostHostRowIndex}
+        raised={isRevealTarget}
       >
         <TombstoneRow
           failed={failed}
@@ -423,7 +431,7 @@ const Timeline: React.FC<TimelineProps> = ({
             <GhostCard event={ghost} />
           </BoardRow>
         )}
-        <BoardRow first={railFirst(rowIndex)} last={railLast(rowIndex)}>
+        <BoardRow first={railFirst(rowIndex)} last={railLast(rowIndex)} raised={anim.isAnimating}>
           <TimelineEvent
             event={event}
             onTap={() => onEventTap(event)}

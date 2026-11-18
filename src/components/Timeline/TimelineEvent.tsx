@@ -271,19 +271,24 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             Each part of the row now arrives in its own way — the card slides up, the year pops,
             the tick grows out of the marker. */}
         <div className={`flex-1 pl-3 ${isNew ? 'animate-entrance' : ''}`}>
-          <motion.button
-            // What the game-over gallery measures to fly this card's art from. See
-            // `useGalleryTravel`.
-            data-board-card={event.name}
-            onClick={onTap}
-            layoutId={layoutId}
-            initial={isSuccessAnimation ? springBounce.initial : false}
-            animate={isSuccessAnimation ? springBounce.animate : undefined}
-            exit={isErrorAnimation ? rejectionExit.exit : undefined}
-            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
-          >
-            <CardFace event={event} priority={priority} />
-          </motion.button>
+          {/* The wheel's tilt and scale live on this wrapper, never on the button: framer owns
+              the button's transform. The wrapper is the card's fixed layout slot; the button
+              inside it grows past the slot when the row is centred (see .wheel-card). */}
+          <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+            <motion.button
+              // What the game-over gallery measures to fly this card's art from. See
+              // `useGalleryTravel`.
+              data-board-card={event.name}
+              onClick={onTap}
+              layoutId={layoutId}
+              initial={isSuccessAnimation ? springBounce.initial : false}
+              animate={isSuccessAnimation ? springBounce.animate : undefined}
+              exit={isErrorAnimation ? rejectionExit.exit : undefined}
+              className={`wheel-card-face rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
+            >
+              <CardFace event={event} priority={priority} />
+            </motion.button>
+          </div>
         </div>
       </motion.div>
     </motion.div>

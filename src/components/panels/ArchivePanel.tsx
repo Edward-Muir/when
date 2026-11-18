@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Lock } from 'lucide-react';
+import { useReducedMotion } from 'framer-motion';
 import { GameConfig, HistoricalEvent } from '../../types';
 import { getThemeSeedEvent } from '../../utils/themeReplay';
 import {
@@ -18,6 +19,7 @@ import HintStrip from '../HintStrip';
 import { tabHintText } from '../../utils/hintCopy';
 import { useTabHint } from '../../hooks/useTabHint';
 import { useHaptics } from '../../hooks/useHaptics';
+import { centredScrollTop, useTimelineWheel } from '../../hooks/useTimelineWheel';
 
 /** How long a locked row's reason stays up before it fades by itself. */
 export const LOCK_NOTE_MS = 3000;
@@ -201,17 +203,36 @@ const ArchiveTimeline: React.FC<{
   children: React.ReactNode;
 }> = ({ days, allEventsReady, overlay, children }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   const hasScrolledToEndRef = useRef(false);
+  const shouldReduceMotion = useReducedMotion();
+  useTimelineWheel(scrollRef, contentRef, !shouldReduceMotion);
 
-  // Open at today, once per mount. Rows are fixed-height, so scrollHeight is
-  // stable as images lazy-load and the position holds.
+  // Open with today's row at the centre of the wheel, where a card faces the player;
+  // tomorrow's teaser is the one row below it. The scroller is still settling when this first
+  // runs (the hint strip above it mounts late and takes height), so it re-centres on every
+  // resize until the player touches the list.
   useLayoutEffect(() => {
     const container = scrollRef.current;
-    if (!container || hasScrolledToEndRef.current || days.length === 0 || !allEventsReady) {
-      return;
-    }
-    container.scrollTop = container.scrollHeight;
-    hasScrolledToEndRef.current = true;
+    if (!container || days.length === 0 || !allEventsReady) return;
+    const centre = () => {
+      if (hasScrolledToEndRef.current) return;
+      const today = container.querySelector<HTMLElement>('[data-archive-status="today"]');
+      container.scrollTop = today ? centredScrollTop(container, today) : container.scrollHeight;
+    };
+    const release = () => {
+      hasScrolledToEndRef.current = true;
+    };
+    centre();
+    const ro = typeof ResizeObserver === 'undefined' ? null : new ResizeObserver(centre);
+    ro?.observe(container);
+    container.addEventListener('pointerdown', release, { passive: true });
+    container.addEventListener('wheel', release, { passive: true });
+    return () => {
+      ro?.disconnect();
+      container.removeEventListener('pointerdown', release);
+      container.removeEventListener('wheel', release);
+    };
   }, [days.length, allEventsReady]);
 
   return (
@@ -231,7 +252,15 @@ const ArchiveTimeline: React.FC<{
         ref={scrollRef}
         className="board-center h-full relative z-10 overflow-y-auto timeline-scroll-vertical"
       >
-        <div className="relative flex flex-col items-start w-full pt-12 pb-16">{children}</div>
+        {/* Half a viewport of runway at each end, as on the board, so the first and the last
+            day can both be turned to the centre of the wheel. */}
+        <div
+          ref={contentRef}
+          className="relative flex flex-col items-start w-full"
+          style={{ paddingTop: '50vh', paddingBottom: '50vh' }}
+        >
+          {children}
+        </div>
       </div>
 
       {/* Fixed "Later" indicator at bottom with fade */}

@@ -8,6 +8,7 @@ import { formatShareDate } from '../utils/share';
 import { formatWeekday, formatWeekdayDate } from '../utils/statsDerived';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
+import { WHEEL_ROW_ATTR } from '../hooks/useTimelineWheel';
 
 interface ArchiveDeckRowProps {
   day: ArchiveDay;
@@ -64,7 +65,12 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
   };
 
   return (
-    <div className="flex items-center w-full py-1" data-testid={`archive-day-${date}`}>
+    <div
+      className="wheel-row flex items-center w-full py-1"
+      data-testid={`archive-day-${date}`}
+      data-archive-status={status}
+      {...{ [WHEEL_ROW_ATTR]: '' }}
+    >
       {/* Date column (fixed 96px width) with tick */}
       <div className="w-24 pl-2 flex items-center justify-end shrink-0">
         <span className="pr-2 text-right leading-tight font-mono">
@@ -76,50 +82,57 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
 
       {/* Card area - landscape card */}
       <div className="flex-1 pl-3">
-        <button
-          onClick={handleClick}
-          onAnimationEnd={() => setShaking(false)}
-          aria-disabled={locked}
-          aria-label={rowLabel(day, name, locked)}
-          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
-            curated ? 'border-2 border-accent' : 'border border-border'
-          } ${locked ? 'opacity-70' : 'active:scale-95'} ${shaking ? 'animate-shake-medium' : ''}`}
-        >
-          {/* Same face as a game card (see CardFace): art fading into the surface. The art is
+        {/* The wheel's slot, as in TimelineEvent: the pose is on the wrapper, the shake on the
+            button. */}
+        <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+          <button
+            onClick={handleClick}
+            onAnimationEnd={() => setShaking(false)}
+            aria-disabled={locked}
+            aria-label={rowLabel(day, name, locked)}
+            className={`wheel-card-face rounded-lg overflow-hidden bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
+              curated ? 'border-2 border-accent' : 'border border-border'
+            } ${locked ? 'opacity-70' : 'active:scale-95'} ${shaking ? 'animate-shake-medium' : ''}`}
+          >
+            {/* Same face as a game card (see CardFace): art fading into the surface. The art is
               narrower here and the text stays left-aligned: dark text on a light surface has
               no halo to lean on, so it must clear the fade. The lock sits over the solid part. */}
-          <div className="relative w-full h-full">
-            {hasImage ? (
-              <img
-                src={getImageUrl(seedEvent.image_url, 'thumbnail')}
-                alt=""
-                loading="lazy"
-                decoding="async"
-                onError={() => setImageError(true)}
-                className={`card-art-fade absolute inset-y-0 left-0 w-[58%] h-full object-cover ${
-                  locked || missed ? 'grayscale' : ''
-                }`}
-              />
-            ) : (
-              <div className="absolute inset-y-0 left-0 w-[40%] flex items-center justify-center bg-border">
-                {seedEvent && (
-                  <CategoryIcon category={seedEvent.category} className="text-text-muted w-8 h-8" />
-                )}
+            <div className="relative w-full h-full">
+              {hasImage ? (
+                <img
+                  src={getImageUrl(seedEvent.image_url, 'thumbnail')}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                  onError={() => setImageError(true)}
+                  className={`card-art-fade absolute inset-y-0 left-0 w-[58%] h-full object-cover ${
+                    locked || missed ? 'grayscale' : ''
+                  }`}
+                />
+              ) : (
+                <div className="absolute inset-y-0 left-0 w-[40%] flex items-center justify-center bg-border">
+                  {seedEvent && (
+                    <CategoryIcon
+                      category={seedEvent.category}
+                      className="text-text-muted w-8 h-8"
+                    />
+                  )}
+                </div>
+              )}
+              {locked && (
+                <div className="absolute inset-y-0 left-0 w-[40%] flex items-center justify-center">
+                  <Lock className="w-6 h-6 text-white drop-shadow-md" />
+                </div>
+              )}
+              <div className="absolute inset-y-0 right-0 w-[48%] flex flex-col justify-center pl-2 pr-2 py-1 gap-0.5">
+                <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
+                  {name}
+                </span>
+                <DayLine day={day} themeBest={themeBest} best={best} />
               </div>
-            )}
-            {locked && (
-              <div className="absolute inset-y-0 left-0 w-[40%] flex items-center justify-center">
-                <Lock className="w-6 h-6 text-white drop-shadow-md" />
-              </div>
-            )}
-            <div className="absolute inset-y-0 right-0 w-[48%] flex flex-col justify-center pl-2 pr-2 py-1 gap-0.5">
-              <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
-                {name}
-              </span>
-              <DayLine day={day} themeBest={themeBest} best={best} />
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
   );

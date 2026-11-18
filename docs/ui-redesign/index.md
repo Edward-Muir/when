@@ -356,6 +356,43 @@ Traps that cost time:
 and the wake-delay memo live in `Timeline/useTimelineWaves.ts` and `Timeline/useWakeDelays.ts`,
 and the row renderers are split out.
 
+## The wheel: the board as a drum
+
+The board, My Timeline and the Archive are painted as a wheel turning into the page: the row at
+the centre of the viewport faces the player, its card 36px taller than its slot so more art
+shows, and the rows above and below tilt back (to 40 degrees), shrink (to 0.8), dim and bunch
+together. Scrolling spins it. The maths is `src/utils/wheelMath.ts`, the driver is
+`src/hooks/useTimelineWheel.ts`, and the paint is `.wheel-row`, `.wheel-card`,
+`.wheel-card-face` and `.wheel-rail` in `index.css`.
+
+Decisions, and the traps behind them:
+
+- **Layout is never touched.** The pose is transforms only, plus the centred card's height
+  inside a fixed slot. Scroll height, the 50vh runways and `offsetTop` are unchanged, so a
+  scroll drives the pose without the pose feeding back into the scroll.
+- **Read positions with `offsetTop`, never `getBoundingClientRect`,** when the answer must not
+  include the wheel: centring a row uses `centredScrollTop`. Rects are right only where the
+  painted position is what is wanted (the drop-slot midpoints, the drag marker, the gallery
+  flight).
+- **The wheel has elements of its own.** Every other node in a row already has a transform
+  framer-motion owns. The row wrapper is translated; a wrapper around the card is tilted and
+  scaled; the gutter is never scaled, so `tick.right === rail.left` still holds on every row.
+- **Every row is a stacking context.** A card that leaves its row (the miss reveal, a placement
+  glow) is lifted by `raised` on `BoardRow`; its own z-index no longer reaches past the row.
+- **The pose is applied synchronously** in scroll, resize and mutation callbacks, which all run
+  before paint. Code that measures rows in a layout effect runs earlier still, so it calls
+  `flushWheels()` first (`useInsertionMarker`, `TimelineTick`).
+- **A drag holds the wheel's shape** with no special case: the board freezes scrolling for the
+  length of a drag, so the pose only changes when the ghost row changes the layout.
+- **Reduced motion is the flat board.** With no `--wheel-*` properties set, every rule is the
+  identity.
+- **The Archive has runways too** (50vh of padding at each end) and opens with today's row at
+  the centre, re-centring on resize until the player touches the list, because the hint strip
+  above it mounts late.
+- `wheelMath.test.ts` pins that rows never cross, rail segments still butt together, cards stay
+  clear of each other mid-turn, and no card paints shorter than a 44px touch target.
+- `GameStartTransition` is not a scroller and stays flat.
+
 ## Onboarding hints
 
 The app teaches itself through single-line contextual hints tied to the moment of need,

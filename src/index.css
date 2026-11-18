@@ -235,6 +235,51 @@ body {
   .tl-rail {
     background-color: var(--color-accent);
   }
+  /* THE WHEEL. The board is laid out flat and painted as a drum turning into the page: the
+     centred card faces the player, taller than its slot so more of its art shows, and the rows
+     above and below tilt back, shrink and bunch together. `useTimelineWheel` writes the
+     `--wheel-*` properties on each row from its distance to the viewport's centre; with none
+     set (reduced motion, or a surface that is not a wheel) every rule here is the identity.
+
+     Three elements, because every other node in a row already has a transform that
+     framer-motion owns:
+       .wheel-row        the row: translated only, so the year, the tick and the card move as
+                         one and the tick stays butted against the rail.
+       .wheel-card       a wrapper holding the card's fixed layout slot: tilt, scale, dim.
+       .wheel-card-face  the card itself, absolutely filling the slot and growing past it.
+     Every row is therefore a stacking context. A card that travels out of its own row has to
+     be lifted by raising the row (`raised` on BoardRow), not by its own z-index. */
+  .wheel-row {
+    transform: translateY(var(--wheel-y, 0px));
+  }
+  /* The rail segment is painted from where the row's top edge lands to where its bottom edge
+     lands, so adjacent segments still meet while the rows between them bunch. */
+  .wheel-rail {
+    transform: translateY(var(--wheel-rail-y, 0px)) scaleY(var(--wheel-rail-scale, 1));
+  }
+  .wheel-card {
+    --wheel-w: 240px;
+    /* Extra height on the centred card. Must match `grow` in wheelMath.ts. */
+    --wheel-grow: 36px;
+    position: relative;
+    /* Tilted about its own centre so the far edge narrows evenly, then slid left by half of
+       what the scale took off, which keeps the card's near edge on the board column. */
+    transform: translateX(calc(var(--wheel-w) * (var(--wheel-scale, 1) - 1) / 2)) perspective(700px)
+      rotateX(var(--wheel-tilt, 0deg)) scale(var(--wheel-scale, 1));
+    opacity: var(--wheel-dim, 1);
+  }
+  @media (min-width: 640px) {
+    .wheel-card {
+      --wheel-w: 280px;
+    }
+  }
+  .wheel-card-face {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: calc(var(--wheel-grow) * var(--wheel-focus, 0) / -2);
+    height: calc(100% + var(--wheel-grow) * var(--wheel-focus, 0));
+  }
   /* The growing tip: the leading end of a rail extension while a drag previews it, and the
      travelling marker that becomes a tick when the card lands (TimelineMarker.tsx). */
   .tl-rail-tip {

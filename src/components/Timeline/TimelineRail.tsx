@@ -64,7 +64,10 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
 
   if (!extending) {
     return (
-      <div aria-hidden className="pointer-events-none absolute inset-y-0 left-24 z-0 w-1">
+      <div
+        aria-hidden
+        className="wheel-rail pointer-events-none absolute inset-y-0 left-24 z-0 w-1"
+      >
         <div className={`tl-rail h-full w-full ${ends}`} />
       </div>
     );
@@ -76,7 +79,7 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
   const origin = earlier ? 'bottom' : 'top';
 
   return (
-    <div aria-hidden className="pointer-events-none absolute inset-y-0 left-24 z-0 w-1">
+    <div aria-hidden className="wheel-rail pointer-events-none absolute inset-y-0 left-24 z-0 w-1">
       <motion.div
         // Marks the one segment that is animating, so the screenshot rig can read its scale
         // rather than guessing which `.tl-rail` in the DOM is the growing one.

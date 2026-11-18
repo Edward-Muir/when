@@ -123,7 +123,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
       {/* Card slot with a real card's footprint; the tombstone card slides right over it
           while the ghost drops in */}
       <div className="flex-1 pl-3">
-        <div className="relative w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+        <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
           {ghostEvent && (
             <div className="absolute inset-0 opacity-ghost">
               <Card event={ghostEvent} size="landscape" />
@@ -141,7 +141,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
             initial={false}
             animate={{ x: displaced ? '105%' : 0, opacity: displaced ? 0.35 : 1 }}
             transition={transition}
-            className={`absolute inset-0 rounded-lg overflow-hidden border border-border flex flex-row touch-manipulation ${
+            className={`wheel-card-face rounded-lg overflow-hidden border border-border flex flex-row touch-manipulation ${
               displaced ? 'pointer-events-none' : ''
             } ${revealing ? 'z-20 shadow-lg bg-surface' : 'bg-transparent'}`}
           >
