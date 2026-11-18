@@ -9,11 +9,21 @@ Full-width vertical stack:
 ```
 TopBar  (fixed, safe-area aware — see ../mobile-ios/index.md for pt-topbar*)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
-Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card stack
+Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
 
-- **Cards have two shapes.** Landscape on the timeline (240×80 mobile, 280×96 desktop, image
-  left 40% / title right 60%); portrait in the hand (144×176 / 160×192).
+- **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
+  written. Landscape on the timeline (240×80 on a phone, 280×96 from `sm`; art across the left
+  70%, title on the right); a 168px square in the hand. A smaller 228×70 timeline card and a
+  140px hand card were both tried and reverted.
+- **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
+  `index.css`): the hand card is centred on the screen, the counter is centred in the space on
+  its left and the swap button sits in the space on its right, at every width. The counter used
+  to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
+  edge and the swap button 40px beside it. The middle column is the card's width whether or not
+  there is a card, so the counter does not move between turns. The swap button is centred in
+  what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
+  the column it sat on the fanned cards at 360px wide.
 - The bottom bar's drop zone id is **`bottom-bar-zone`** — the Playwright selectors depend
   on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
@@ -22,9 +32,8 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
   reason it is done with percentage padding rather than `max-width`/`mx-auto` all live in one
   place: the `BOARD COLUMN` comment in `src/index.css`. Read it before changing the gutter, the
   gap or the card width — all three feed the same `--board-*` vars, and getting it wrong
-  detaches the accent rail from every row's tick. The same three classes (`board-center`,
-  `board-center-item`, `board-rail`) do the job in `Timeline`, `Game`'s bottom bar,
-  `GameStartTransition` and `ArchivePanel`.
+  detaches the accent rail from every row's tick. The same two classes (`board-center`,
+  `board-rail`) do the job in `Timeline`, `GameStartTransition` and `ArchivePanel`.
 
 ## Home is a five-tab pager
 
@@ -153,7 +162,7 @@ designed, and the clean board still looks better. **Do not build it.** What rema
   untinted: a tint would force a mask over the board's own content plus a `text-shadow` halo on
   the labels.
 - The scroller carries `data-board-scroller` as `scripts/tick-landing-probe.js`'s handle on the
-  scrolling element, since `board-center` is also on the hand bar and on ArchivePanel.
+  scrolling element, since `board-center` is also on `GameStartTransition` and ArchivePanel.
 
 The board has the rail, and the two lit things that ride it:
 
