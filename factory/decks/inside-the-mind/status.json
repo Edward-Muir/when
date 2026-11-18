@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:24:21.361Z",
+  "updated_at": "2026-11-18T10:26:53.045Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -191,10 +191,11 @@
       "updated_at": "2026-11-18T10:24:21.361Z"
     },
     "prozac-reaches-market": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b2c61f022a1daa194495a48e69a9bafac4892b4112861043392004ca5a7e02d9",
+      "updated_at": "2026-11-18T10:26:53.045Z"
     },
     "optogenetics-switches-neurons": {
       "state": "pending",
