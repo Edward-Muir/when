@@ -2,9 +2,9 @@
  * The two card sizes the game draws, in one place.
  *
  * The landscape card is a timeline row's card (and the drop ghost, the Archive's day card and
- * what a dragged card becomes). The square is the card in hand. They were tuned together on a
- * phone, with the wheel running: 228 x 70 on the timeline, opening to 97 at the centre, and a
- * 140px square in hand.
+ * what a dragged card becomes). The square is the card in hand. The landscape size was tuned on a
+ * phone with the wheel running: 228 x 70, opening to 97 at the centre. The hand card is a 168px
+ * square; 140 was tried alongside the smaller timeline card and reverted.
  *
  * Changing either one is not just these strings:
  *
@@ -16,7 +16,7 @@
  * The class strings are whole literals so Tailwind can see them.
  */
 export const LANDSCAPE_CARD_CLASS = 'w-[228px] h-[70px] sm:w-[280px] sm:h-[96px]';
-export const SQUARE_CARD_CLASS = 'w-[140px] h-[140px]';
+export const SQUARE_CARD_CLASS = 'w-[168px] h-[168px]';
 
 /** The landscape card's size in px, below and from Tailwind's `sm` breakpoint (640px). */
 export const LANDSCAPE_CARD = {

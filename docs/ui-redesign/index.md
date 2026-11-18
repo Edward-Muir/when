@@ -9,21 +9,23 @@ Full-width vertical stack:
 ```
 TopBar  (fixed, safe-area aware — see ../mobile-ios/index.md for pt-topbar*)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
-Bottom bar (`hand-bar`: the 140px hand card + 16px, pb-safe) — counter, hand card, swap button
+Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
 
 - **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
   written. Landscape on the timeline (228×70 on a phone, 280×96 from `sm`; art across the left
-  70%, title on the right); a 140px square in the hand. Both phone sizes were tuned by eye on a
-  slider page with the wheel running: at 240×80 and 168 the paintings read as too big. The
-  `sm` size was not part of that and is unchanged.
+  70%, title on the right); a 168px square in the hand. The phone landscape size was tuned by
+  eye on a slider page with the wheel running: at 240×80 the paintings read as too big. A 140px
+  hand card was tried with it and reverted to 168. The `sm` size was not part of that and is
+  unchanged.
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
-  its left and the swap button mirrors it on the right, at every width. The counter used to sit
-  in a 96px box matching the year gutter, with the hand card on the timeline cards' left edge
-  and the swap button 40px beside it; with a 140px card that left the bar lopsided. The middle
-  column is the card's width whether or not there is a card, so the counter does not move
-  between turns. Below about 350px wide the swap button's edge meets the deepest fanned card.
+  its left and the swap button sits in the space on its right, at every width. The counter used
+  to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
+  edge and the swap button 40px beside it. The middle column is the card's width whether or not
+  there is a card, so the counter does not move between turns. The swap button is centred in
+  what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
+  the column it sat on the fanned cards at 360px wide.
 - The bottom bar's drop zone id is **`bottom-bar-zone`** — the Playwright selectors depend
   on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
@@ -370,7 +372,7 @@ and the row renderers are split out.
 The board, My Timeline and the Archive are painted as a wheel turning into the page. The card at
 the centre of the viewport opens taller, so more of its painting shows, and its year grows in the
 display face; the rows above and below are part-open, lean back a few degrees on a very large
-cylinder, and carry a ruler of minor ticks beside the rail. Scrolling spins it, with a light
+cylinder. Scrolling spins it, with a light
 haptic tick (`haptics.select`) as each event passes the centre. The maths is
 `src/utils/wheelMath.ts`, the driver is `src/hooks/useTimelineWheel.ts`, and the paint is the
 `.wheel-*` rules in `index.css`.
@@ -430,8 +432,8 @@ Decisions, and the traps behind them:
 - **The rail is still one segment per row,** tilted with its row, so it bows with the cylinder
   as a polyline. Segments overlap by a pixel and a half to hide the hairline between two tilted
   layers. The Archive's single full-height rail was replaced by the same per-row segments.
-- **The ruler's minor ticks are an exception to "nothing is drawn on the rail".** They exist only
-  on the wheel, where their spreading is what shows a row opening.
+- **No ruler.** Four minor ticks per row beside the rail were built with the wheel and removed:
+  "nothing is drawn on the rail" holds with no exception.
 - **The Archive has runways too** (50vh of padding at each end) and opens with today's row at
   the centre, re-centring on resize until the player touches the list, because the hint strip
   above it mounts late.

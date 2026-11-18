@@ -158,7 +158,7 @@ mask (`.card-art-fade`) with their own text block.
 
 ### The hand card is a square
 
-The hand is the one place the whole painting is shown: `Card`'s `square` size (140px), title on
+The hand is the one place the whole painting is shown: `Card`'s `square` size (168px), title on
 a dark scrim along the bottom, the rest of the hand fanned behind it as squares. The board is
 unchanged, so the hand and the board show the same card in two shapes.
 
@@ -169,8 +169,8 @@ unchanged, so the hand and the board show the same card in two shapes.
   more edges than that is clutter and the fan would run into the swap button.
 - **The square becomes the landscape card on pickup, as one card changing shape**
   (`HandDragOverlay.tsx`), not two cards cross-fading. The landscape card's art is 70% of its
-  width, a little wider than the square in hand (about 160px against 140 on a phone), so the
-  painting grows slightly as its frame
+  width, a little narrower than the square in hand (about 160px against 168 on a phone), so the
+  painting shrinks slightly as its frame
   closes to the row's height around the board's focal line, the card's colour slides out to the
   right, and the title crosses from the bottom of the art to the colour. At the end it is pixel
   for pixel the landscape `Card`, which is also the drop ghost.

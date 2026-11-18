@@ -91,8 +91,9 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
 
   return (
     // Two cells of the bar's `hand-grid` (index.css): the square stack in the middle of the
-    // screen, and the swap button centred in the space to its right, mirroring the counter on
-    // the left. The fan spills out of the middle cell: its deepest card reaches 24px right.
+    // screen, and the swap button in the space to its right, opposite the counter. The fan
+    // spills out of the middle cell: its deepest card reaches 24px right, which `.hand-swap`
+    // keeps the button clear of.
     <>
       <div className="relative flex items-center pointer-events-auto">
         {/* The rest of the hand, peeking out behind the top card. Keyed by card, so on a swap
@@ -136,7 +137,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
 
       {/* Swap button: beside the card, never on it, so it covers neither art nor title.
           44px, the minimum touch target. */}
-      <div className="flex items-center justify-center pointer-events-auto">
+      <div className="hand-swap flex items-center justify-center pointer-events-auto">
         <button
           onClick={cycle}
           disabled={!canCycle}
