@@ -281,11 +281,11 @@ body {
     /* The height a row is laid out at: the centred card's magnified height, so that card
        moves exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card
        size; wheelMath.test.ts pins both numbers. */
-    --wheel-pitch: 94px;
+    --wheel-pitch: 83px;
   }
   @media (min-width: 640px) {
     .wheel-on {
-      --wheel-pitch: 126px;
+      --wheel-pitch: 111px;
     }
   }
   .wheel-on .wheel-row {

@@ -407,7 +407,10 @@ haptic tick (`haptics.select`) as each event passes the centre. The maths is
 
 The look was chosen from interactive mock-ups (cylinder, lens, dates-only, dial, parallax). The
 tuning is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's edge) and a
-centre card scaled by 1.25, spread over 1.4 row pitches.
+centre card scaled by 1.075, spread over 1.6 row pitches. Those two numbers are study G
+("Combined") of the Timeline Wheel Studies mock-ups at its default Magnify of 30, which is the
+look the owner asked to see again; 1.25 was built first from a description alone and was far
+stronger than the study.
 
 **The magnifier is on trial (2026-11-18), at the owner's request.** The look that shipped first
 opened the centre card instead: its frame grew taller (70px to 97px) and showed 30% more of the
@@ -441,11 +444,14 @@ Decisions, and the traps behind them:
   adds is exactly the `grow` the strip already made room for (`wheelCardScale`), so the
   geometry that stopped rows overlapping is untouched.
 - **A card stops growing at the screen's edge.** There is 108px of gutter to the left of a
-  228px card, so a 402px phone has room for 1.26, a 390px one for 1.21 and a 360px one for
-  1.08. The hook measures that room (`fit`) and caps the scale. Rows are still laid out for
-  1.25, so on a narrow phone the centred card has about 16px round it where the others have 8.
-  Laying rows out per width was not done: `--wheel-pitch` is CSS and must equal
-  `wheelRowHeight()`.
+  228px card, so a 402px phone has room for 1.26 and a 360px one for 1.08. The hook measures
+  that room (`fit`) and caps the scale. At 1.075 the cap only bites below 360px; it is what
+  limits any stronger setting, and a capped card sits in more room than it fills, because
+  `--wheel-pitch` is CSS and must equal `wheelRowHeight()` at every width.
+- **Two differences from study G, both too small to see at 1.075.** The study scaled the whole
+  row about the rail; here only the card scales, from its own left edge, so the year, tick and
+  the 12px gap keep their size. And the study narrowed the resting card so the magnified one
+  filled the width; the card here keeps its tuned 228px.
 - **The slot is a stacking context now**, so a card's own z-index stops at its slot as well as
   at its row. The landing, the miss reveal and the tombstone slide were checked frame by frame
   with the scale on and draw as before.

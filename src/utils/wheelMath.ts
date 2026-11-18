@@ -53,8 +53,8 @@ export interface WheelTuning {
 export const WHEEL_TUNING: WheelTuning = {
   edgeAngle: 11.4,
   perspective: 970,
-  magnify: 1.25,
-  spread: 1.4,
+  magnify: 1.075,
+  spread: 1.6,
   gap: 8,
   dim: 0.12,
   yearFloor: 0.6,

@@ -3,7 +3,7 @@
  *
  * The landscape card is a timeline row's card (and the drop ghost, the Archive's day card and
  * what a dragged card becomes). The square is the card in hand. The landscape size was tuned on a
- * phone with the wheel running: 228 x 70, magnified by a quarter at the centre. The hand card is a 168px
+ * phone with the wheel running: 228 x 70, magnified by 7.5% at the centre. The hand card is a 168px
  * square; 140 was tried alongside the smaller timeline card and reverted.
  *
  * Changing either one is not just these strings:
