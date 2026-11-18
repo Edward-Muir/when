@@ -5,7 +5,7 @@
     "year": -400,
     "category": "science",
     "description": "Greek physicians of the Hippocratic school declared the brain, not the heart, the seat of thought, joy and madness.",
-    "difficulty": "hard"
+    "difficulty": "easy"
   },
   {
     "name": "bethlem-hospital-first-patients",
@@ -21,7 +21,7 @@
     "year": 1563,
     "category": "medicine",
     "description": "A Dutch physician argued in print that many accused witches were mentally ill and needed medicine, not punishment.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "mesmer-animal-magnetism",
@@ -69,7 +69,7 @@
     "year": 1888,
     "category": "science",
     "description": "A Spanish anatomist drew nerve cells as individual units rather than a continuous web, founding the neuron doctrine.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "james-principles-of-psychology",
@@ -113,7 +113,7 @@
   },
   {
     "name": "moniz-first-lobotomy",
-    "friendly_name": "Moniz Performs the First Lobotomy",
+    "friendly_name": "Moniz Orders the First Lobotomy",
     "year": 1935,
     "category": "medicine",
     "description": "A Portuguese neurologist had surgeons cut into a patient's frontal lobes to treat mental illness, a method later condemned.",
@@ -141,7 +141,7 @@
     "year": 1949,
     "category": "medicine",
     "description": "An Australian psychiatrist found that a simple salt calms manic patients, beginning modern mood-stabiliser therapy.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "chlorpromazine-first-antipsychotic",
@@ -189,7 +189,7 @@
     "year": 1973,
     "category": "science",
     "description": "Healthy volunteers feigned hearing voices to enter psychiatric hospitals, then acted normally yet stayed for weeks.",
-    "difficulty": "hard"
+    "difficulty": "medium"
   },
   {
     "name": "gardner-multiple-intelligences",
@@ -205,7 +205,7 @@
     "year": 1987,
     "category": "medicine",
     "description": "An American drug company launched an antidepressant that became one of the most prescribed and discussed medicines ever.",
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "name": "optogenetics-switches-neurons",
@@ -213,6 +213,6 @@
     "year": 2005,
     "category": "science",
     "description": "Researchers showed that light-sensitive proteins let them switch chosen brain cells on and off with flashes of light.",
-    "difficulty": "very-hard"
+    "difficulty": "medium"
   }
 ]
