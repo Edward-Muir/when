@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T08:29:41.998Z",
+  "updated_at": "2026-11-18T08:33:01.660Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-18T08:29:41.998Z"
     },
     "cade-lithium-for-mania": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "bfba838988787b66bb448755847add4b5d35e16dab8c7c823ef27e2de5c5cdb1",
+      "updated_at": "2026-11-18T08:33:01.660Z"
     },
     "chlorpromazine-first-antipsychotic": {
       "state": "pending",
