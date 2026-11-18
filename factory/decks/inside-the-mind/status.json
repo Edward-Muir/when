@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:19:17.917Z",
+  "updated_at": "2026-11-18T10:21:51.215Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -177,10 +177,11 @@
       "updated_at": "2026-11-18T10:19:17.917Z"
     },
     "rosenhan-pseudopatients": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "09da14b8e6e35a994118c42a0cf20f575266997da63aab6f8b9bb4fa5d448575",
+      "updated_at": "2026-11-18T10:21:51.215Z"
     },
     "gardner-multiple-intelligences": {
       "state": "pending",
