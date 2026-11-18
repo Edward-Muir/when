@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T06:12:13.322Z",
+  "updated_at": "2026-11-18T06:14:52.659Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-18T06:12:13.322Z"
     },
     "weyer-witches-mentally-ill": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a5ad45a2dc7ed62aa3e5315953bab3baffe98ef21a3e01c3936001b144ab8682",
+      "updated_at": "2026-11-18T06:14:52.659Z"
     },
     "mesmer-animal-magnetism": {
       "state": "pending",
