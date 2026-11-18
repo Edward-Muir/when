@@ -2,6 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase } from '../../types';
 import { WheelYear, yearSizeClass } from './YearLabel';
+import { LANDSCAPE_CARD_CLASS } from '../../utils/cardSize';
 import CardFace from '../CardFace';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
@@ -274,7 +275,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
           {/* The wheel's tilt and scale live on this wrapper, never on the button: framer owns
               the button's transform. The wrapper is the card's fixed layout slot; the button
               inside it grows past the slot when the row is centred (see .wheel-card). */}
-          <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+          <div className={`wheel-card ${LANDSCAPE_CARD_CLASS}`}>
             <motion.button
               // What the game-over gallery measures to fly this card's art from. See
               // `useGalleryTravel`.

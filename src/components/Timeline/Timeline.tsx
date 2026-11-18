@@ -9,6 +9,7 @@ import TimelineMarker, { MarkerPhase } from './TimelineMarker';
 import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
 import { useRailExtension } from './useRailExtension';
 import Card from '../Card';
+import { LANDSCAPE_CARD_CLASS } from '../../utils/cardSize';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
 import TimelineTick from './TimelineTick';
@@ -96,7 +97,7 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
     </div>
     {/* Card area */}
     <div className="flex-1 pl-3">
-      <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+      <div className={`wheel-card ${LANDSCAPE_CARD_CLASS}`}>
         <Card event={event} size="landscape" className="wheel-card-face" />
       </div>
     </div>

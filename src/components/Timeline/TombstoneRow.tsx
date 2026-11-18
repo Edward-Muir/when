@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FailedPlacement, HistoricalEvent } from '../../types';
 import { WheelYear, yearSizeClass } from './YearLabel';
+import { LANDSCAPE_CARD_CLASS } from '../../utils/cardSize';
 import CardFace from '../CardFace';
 import Card from '../Card';
 import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
@@ -123,7 +124,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
       {/* Card slot with a real card's footprint; the tombstone card slides right over it
           while the ghost drops in */}
       <div className="flex-1 pl-3">
-        <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+        <div className={`wheel-card ${LANDSCAPE_CARD_CLASS}`}>
           {ghostEvent && (
             <div className="absolute inset-0 opacity-ghost">
               <Card event={ghostEvent} size="landscape" />

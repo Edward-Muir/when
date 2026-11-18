@@ -10,6 +10,7 @@ import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
 import { WHEEL_ROW_ATTR } from '../hooks/useTimelineWheel';
 import TimelineRail from './Timeline/TimelineRail';
+import { LANDSCAPE_CARD_CLASS } from '../utils/cardSize';
 
 interface ArchiveDeckRowProps {
   day: ArchiveDay;
@@ -94,7 +95,7 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
       <div className="flex-1 pl-3">
         {/* The wheel's slot, as in TimelineEvent: the pose is on the wrapper, the shake on the
             button. */}
-        <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+        <div className={`wheel-card ${LANDSCAPE_CARD_CLASS}`}>
           <button
             onClick={handleClick}
             onAnimationEnd={() => setShaking(false)}

@@ -476,9 +476,9 @@ const Game: React.FC<GameProps> = ({
                 showShare={isBottomBarShareVisible(pendingPopup, endStep)}
               />
             ) : (
-              <>
-                {/* Left: Game Info - matches year column width (96px); board-center-item offsets the bar */}
-                <div className="board-center-item w-24 shrink-0 flex items-center justify-center">
+              <div className="hand-grid">
+                {/* Left: game info, centred in the space beside the hand card (see .hand-grid) */}
+                <div className="flex items-center justify-center">
                   <GameInfoCompact
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
@@ -490,7 +490,7 @@ const Game: React.FC<GameProps> = ({
                   />
                 </div>
 
-                {/* Right: Active Card Area - aligned with timeline cards */}
+                {/* The hand card in the middle of the screen, and the swap button on its right */}
                 {activeCard && (
                   <ActiveCardDisplay
                     activeCard={activeCard}
@@ -501,7 +501,7 @@ const Game: React.FC<GameProps> = ({
                     nudge={hints.active}
                   />
                 )}
-              </>
+              </div>
             )}
           </div>
 

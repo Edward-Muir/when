@@ -7,15 +7,16 @@ import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
 import { titleShadowClass } from './CardFace';
+import { LANDSCAPE_CARD } from '../utils/cardSize';
 
-/** Tailwind's `sm` breakpoint, where the landscape card grows from 240x80 to 280x96. */
+/** Tailwind's `sm` breakpoint, where the landscape card grows (see cardSize.ts). */
 const SM_QUERY = '(min-width: 640px)';
 /** Keep the landscape card this far inside the viewport's sides when it opens. */
 const EDGE_MARGIN = 8;
 
 function landscapeSize(): { w: number; h: number } {
   const sm = typeof window !== 'undefined' && window.matchMedia?.(SM_QUERY).matches;
-  return sm ? { w: 280, h: 96 } : { w: 240, h: 80 };
+  return sm ? LANDSCAPE_CARD.sm : LANDSCAPE_CARD.base;
 }
 
 /**
@@ -52,12 +53,13 @@ interface HandDragOverlayProps {
  * What the player carries: one card that changes shape, never two cards swapping.
  *
  * The hand shows a square painting; the board takes landscape rows. The landscape card's art is
- * 70% of its width, which at phone size is the square's own 168px, so the painting never has to
- * resize. Everything here is a function of one number, `morph`:
+ * 70% of its width, a little wider than the square in hand (about 160px against 140 on a phone),
+ * so the painting grows slightly as the card opens. Everything here is a function of one
+ * number, `morph`:
  *
  *  - the frame closes from the square to the landscape box, centred on the finger;
- *  - the painting stays the same width and is cropped by the frame around the board's focal
- *    line (`50% 35%`), exactly as a placed row crops it;
+ *  - the painting widens from the square's width to the row's and is cropped by the frame
+ *    around the board's focal line (`50% 35%`), exactly as a placed row crops it;
  *  - the card's colour slides out to the right, the art's edge fades into it, and the title
  *    crosses from the bottom of the art to the colour;
  *  - the card lifts by 5%.

@@ -90,52 +90,53 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   const fanned = currentPlayer.hand.slice(1, MAX_FAN_CARDS);
 
   return (
-    <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">
-      {/* The square stack, then the swap button beside it. The gap clears the fan: the
-          deepest card reaches 24px right and its rotated corner a few more. */}
-      <div className="flex items-center gap-10">
-        <div className="relative flex items-center">
-          {/* The rest of the hand, peeking out behind the top card. Keyed by card, so on a swap
+    // Two cells of the bar's `hand-grid` (index.css): the square stack in the middle of the
+    // screen, and the swap button centred in the space to its right, mirroring the counter on
+    // the left. The fan spills out of the middle cell: its deepest card reaches 24px right.
+    <>
+      <div className="relative flex items-center pointer-events-auto">
+        {/* The rest of the hand, peeking out behind the top card. Keyed by card, so on a swap
               each one glides forward a place; the card that was on top fades in at the back. */}
-          {fanned.map((event, i) => (
-            <motion.div
-              key={event.name}
-              data-hand-fan={i + 1}
-              className="absolute pointer-events-none"
-              style={{ zIndex: MAX_FAN_CARDS - 2 - i }}
-              initial={settled.current ? { ...fanPose(i + 1), opacity: 0 } : false}
-              animate={fanPose(i + 1)}
-              transition={shuffle}
-            >
-              {/* Always on screen, so nothing for lazy loading to defer */}
-              <Card event={event} size="square" priority />
-            </motion.div>
-          ))}
+        {fanned.map((event, i) => (
+          <motion.div
+            key={event.name}
+            data-hand-fan={i + 1}
+            className="absolute pointer-events-none"
+            style={{ zIndex: MAX_FAN_CARDS - 2 - i }}
+            initial={settled.current ? { ...fanPose(i + 1), opacity: 0 } : false}
+            animate={fanPose(i + 1)}
+            transition={shuffle}
+          >
+            {/* Always on screen, so nothing for lazy loading to defer */}
+            <Card event={event} size="square" priority />
+          </motion.div>
+        ))}
 
-          {/* Top card (active, draggable). The hint's bob goes on this wrapper, not the drag
+        {/* Top card (active, draggable). The hint's bob goes on this wrapper, not the drag
               handle: dnd-kit measures the activator node. The shuffle goes on a wrapper of its
               own inside it, because the hint animates this one's transform in CSS. */}
-          <div className={`relative z-[5] ${cardNudgeClass}`}>
-            <motion.div
-              key={activeCard.name}
-              initial={settled.current ? { x: FAN_STEP_PX, rotate: FAN_STEP_DEG } : false}
-              animate={{ x: 0, rotate: 0 }}
-              transition={shuffle}
-            >
-              <DraggableCard
-                event={activeCard}
-                onTap={onCardTap}
-                disabled={isAnimating}
-                isHidden={isAnimating}
-                size="square"
-                priority
-              />
-            </motion.div>
-          </div>
+        <div className={`relative z-[5] ${cardNudgeClass}`}>
+          <motion.div
+            key={activeCard.name}
+            initial={settled.current ? { x: FAN_STEP_PX, rotate: FAN_STEP_DEG } : false}
+            animate={{ x: 0, rotate: 0 }}
+            transition={shuffle}
+          >
+            <DraggableCard
+              event={activeCard}
+              onTap={onCardTap}
+              disabled={isAnimating}
+              isHidden={isAnimating}
+              size="square"
+              priority
+            />
+          </motion.div>
         </div>
+      </div>
 
-        {/* Swap button: beside the card, never on it, so it covers neither art nor title.
-            44px, the minimum touch target. */}
+      {/* Swap button: beside the card, never on it, so it covers neither art nor title.
+          44px, the minimum touch target. */}
+      <div className="flex items-center justify-center pointer-events-auto">
         <button
           onClick={cycle}
           disabled={!canCycle}
@@ -155,7 +156,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           </motion.span>
         </button>
       </div>
-    </div>
+    </>
   );
 };
 

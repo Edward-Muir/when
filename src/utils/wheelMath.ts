@@ -65,9 +65,9 @@ export const WHEEL_TUNING: WheelTuning = {
 export interface WheelFrame {
   /** Half the viewport's height, px. */
   half: number;
-  /** The card slot's height at rest, px (80, or 96 from the `sm` breakpoint). */
+  /** The card slot's height at rest, px (70, or 96 from the `sm` breakpoint). */
   slot: number;
-  /** The card's width, px (240 or 280). */
+  /** The card's width, px (228 or 280). */
   cardWidth: number;
   /** The height rows are laid out at, px. Should be `wheelRowHeight(slot, cardWidth)`. */
   rowHeight: number;

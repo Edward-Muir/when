@@ -8,7 +8,7 @@ import {
 } from './wheelMath';
 
 // The two card sizes the board has, with the `--wheel-pitch` index.css gives each.
-const PHONE = { slot: 80, cardWidth: 240, rowHeight: 112 };
+const PHONE = { slot: 70, cardWidth: 228, rowHeight: 103 };
 const WIDE = { slot: 96, cardWidth: 280, rowHeight: 132 };
 const HALF = 290;
 const geo = wheelGeometry({ half: HALF, ...PHONE });
@@ -47,7 +47,7 @@ describe('wheelPose', () => {
   });
 
   it('is symmetric about the centre, with the tilt mirrored', () => {
-    for (const x of [10, 60, 112, 224, 400, 900]) {
+    for (const x of [10, 60, 103, 206, 400, 900]) {
       const below = wheelPose(x, geo);
       const above = wheelPose(-x, geo);
       expect(above.y).toBeCloseTo(-below.y);

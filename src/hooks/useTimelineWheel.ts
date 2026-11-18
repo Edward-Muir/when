@@ -1,5 +1,6 @@
 import { RefObject, useLayoutEffect, useRef } from 'react';
 import { WHEEL_TUNING, WheelGeometry, wheelGeometry, wheelPose } from '../utils/wheelMath';
+import { LANDSCAPE_CARD } from '../utils/cardSize';
 import { useHaptics } from './useHaptics';
 
 /**
@@ -83,8 +84,8 @@ class Wheel {
   private posed = new Set<HTMLElement>();
   private contentTop = 0;
   private rowHeight = 0;
-  private slot = 80;
-  private cardWidth = 240;
+  private slot: number = LANDSCAPE_CARD.base.h;
+  private cardWidth: number = LANDSCAPE_CARD.base.w;
   private geo: WheelGeometry | null = null;
   /** The row nearest the centre, for the tick. */
   private nearest: HTMLElement | null = null;

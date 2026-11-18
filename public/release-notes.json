@@ -2,7 +2,8 @@
   "documentedFrom": "1.24.0",
   "unreleased": [
     "The timeline now turns like a wheel, with the centre card opening to show more of its painting.",
-    "Scrolling the timeline now gives a light tap as each event passes the centre."
+    "Scrolling the timeline now gives a light tap as each event passes the centre.",
+    "The card in hand is now centred, and cards are a little smaller to give the timeline more room."
   ],
   "releases": [
     {

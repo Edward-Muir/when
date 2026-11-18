@@ -144,23 +144,25 @@ const TimelineLab: React.FC = () => {
           />
         </div>
         <div className="hand-bar z-40 flex shrink-0 items-center border-t border-border bg-bg">
-          <div className="board-center-item flex w-24 shrink-0 items-center justify-center">
-            <GameInfoCompact
-              currentPlayer={player}
-              isMultiplayer={false}
-              timelineLength={board.events.length}
-              currentStreak={3}
-            />
+          <div className="hand-grid">
+            <div className="flex items-center justify-center">
+              <GameInfoCompact
+                currentPlayer={player}
+                isMultiplayer={false}
+                timelineLength={board.events.length}
+                currentStreak={3}
+              />
+            </div>
+            {hand[0] && (
+              <ActiveCardDisplay
+                activeCard={hand[0]}
+                currentPlayer={player}
+                isAnimating={false}
+                onCycleHand={noop}
+                onCardTap={noop}
+              />
+            )}
           </div>
-          {hand[0] && (
-            <ActiveCardDisplay
-              activeCard={hand[0]}
-              currentPlayer={player}
-              isAnimating={false}
-              onCycleHand={noop}
-              onCardTap={noop}
-            />
-          )}
         </div>
       </div>
     );
