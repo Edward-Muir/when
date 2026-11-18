@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T19:07:48.042Z",
+  "updated_at": "2026-11-18T20:09:43.192Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,11 +128,11 @@
       "updated_at": "2026-11-18T17:08:07.225Z"
     },
     "comic-sans-created": {
-      "state": "qc-fail",
-      "attempts": 2,
+      "state": "downloaded",
+      "attempts": 3,
       "reason": "Legible text is painted on the screen: the menu bar (File Edit View Format Help), OK and Cancel buttons, a Start button and an 8:35 AM clock, plus lettering in the balloons and comic panels. Repaint the screen with blank interface shapes and no writing.",
-      "sha256": "39d16220085fc1c642626697fa6d36ca597f7545e3b0ceb6b36bddaf5f744a97",
-      "updated_at": "2026-11-18T19:07:48.007Z"
+      "sha256": "aa1639800ff8a5d52ed368666af2bf3a2f7590a61a3f81a9c400fa2375986b33",
+      "updated_at": "2026-11-18T20:09:43.192Z"
     },
     "emoji-added-to-unicode": {
       "state": "qc-pass",
