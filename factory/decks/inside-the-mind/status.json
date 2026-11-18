@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T08:18:05.582Z",
+  "updated_at": "2026-11-18T08:20:35.534Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-18T08:18:05.582Z"
     },
     "rorschach-inkblot-test": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "13ae95ce3bc95979f1bba52a070a30d18d2f7eb0fbc00d7b2a10cdb65c44833f",
+      "updated_at": "2026-11-18T08:20:35.534Z"
     },
     "moniz-first-lobotomy": {
       "state": "pending",
