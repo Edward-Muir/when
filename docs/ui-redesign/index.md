@@ -398,18 +398,22 @@ and the row renderers are split out.
 ## The wheel: the board as a drum
 
 The board, My Timeline and the Archive are painted as a wheel turning into the page. The card at
-the centre of the viewport opens taller, so more of its painting shows, and its year grows in the
-display face; the rows above and below are part-open, lean back a few degrees on a very large
-cylinder. Scrolling spins it, with a light
+the centre of the viewport is magnified, painting, title and border together, and its year grows
+in the display face; the rows above and below are part-magnified and lean back a few degrees on a
+very large cylinder. Scrolling spins it, with a light
 haptic tick (`haptics.select`) as each event passes the centre. The maths is
 `src/utils/wheelMath.ts`, the driver is `src/hooks/useTimelineWheel.ts`, and the paint is the
 `.wheel-*` rules in `index.css`.
 
 The look was chosen from interactive mock-ups (cylinder, lens, dates-only, dial, parallax). The
-tuning that won is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's
-edge), a reveal of 30% of the way to the whole square painting, spread over 1.4 row pitches.
-Nothing is ever scaled: a magnifier was tried and rejected because it enlarges the painting
-without showing more of it.
+tuning is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's edge) and a
+centre card scaled by 1.25, spread over 1.4 row pitches.
+
+**The magnifier is on trial (2026-11-18), at the owner's request.** The look that shipped first
+opened the centre card instead: its frame grew taller (70px to 97px) and showed 30% more of the
+way to the whole square painting, and nothing was scaled. A magnifier had been tried then and
+rejected, because it enlarges the painting without showing more of it. It is back as its own
+commit so that one revert restores the opening; if it is reverted, record here why it lost twice.
 
 Decisions, and the traps behind them:
 
@@ -428,11 +432,23 @@ Decisions, and the traps behind them:
 - **One perspective for the whole board,** set on the content element (the rows' direct parent)
   with its origin following the viewport's centre. A perspective per card gives every card its
   own vanishing point.
-- **The opening is a bell, not a step.** The neighbours are part-open, so a card opens along its
-  whole approach. Opening only the centre card happens in a burst and feels detached from where
-  the card is.
-- **The painting is pinned to the card's centre line** (`--wheel-art-pin`), so it does not slide
-  inside the frame as the frame opens. At rest it is the same crop as `.card-art-fade`'s 35%.
+- **The magnification is a bell, not a step.** The neighbours are part-magnified, so a card
+  grows along its whole approach. Growing only the centre card happens in a burst and feels
+  detached from where the card is.
+- **The scale is on the slot (`.wheel-card`), from its left edge.** The slot is a plain div
+  whose transform nothing else owns; framer owns the card's own, one level in. The card grows
+  away from the rail, so it stays butted to the gap beside the spine. The height the scale
+  adds is exactly the `grow` the strip already made room for (`wheelCardScale`), so the
+  geometry that stopped rows overlapping is untouched.
+- **A card stops growing at the screen's edge.** There is 108px of gutter to the left of a
+  228px card, so a 402px phone has room for 1.26, a 390px one for 1.21 and a 360px one for
+  1.08. The hook measures that room (`fit`) and caps the scale. Rows are still laid out for
+  1.25, so on a narrow phone the centred card has about 16px round it where the others have 8.
+  Laying rows out per width was not done: `--wheel-pitch` is CSS and must equal
+  `wheelRowHeight()`.
+- **The slot is a stacking context now**, so a card's own z-index stops at its slot as well as
+  at its row. The landing, the miss reveal and the tombstone slide were checked frame by frame
+  with the scale on and draw as before.
 - **Read positions with `offsetTop`, never `getBoundingClientRect`,** when the answer must not
   include the wheel: centring a row uses `centredScrollTop`. Rects are right only where the
   painted position is what is wanted (the drop-slot midpoints, the drag marker, the gallery

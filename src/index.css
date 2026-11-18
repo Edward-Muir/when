@@ -258,9 +258,9 @@ body {
     background-color: var(--color-accent);
   }
   /* THE WHEEL. The board is painted as a wheel turning into the page: the card at the centre of
-     the viewport opens taller, so more of its painting shows, and the rows above and below
-     lean back a few degrees on a very large cylinder. `useTimelineWheel` writes each row's
-     pose; the maths, and why the rows are laid out tall, is in `wheelMath.ts`.
+     the viewport is magnified, painting, title and border together, and the rows above and
+     below lean back a few degrees on a very large cylinder. `useTimelineWheel` writes each
+     row's pose; the maths, and why the rows are laid out tall, is in `wheelMath.ts`.
 
      `.wheel-on` goes on the element whose direct children are the rows, and only when the
      wheel is running (never under reduced motion). Without it every rule below is the flat
@@ -268,45 +268,30 @@ body {
 
        .wheel-on         lays the rows out at --wheel-pitch and carries the shared perspective.
        .wheel-row        a row. Its transform is written by the hook and by nothing else.
-       .wheel-card       the card's fixed layout slot. Only dimmed.
-       .wheel-card-face  the card itself, filling the slot and opening past it.
-       .wheel-rail       the rail segment, scaled to the row's opened height.
-       .wheel-year       the year, which swells on the same curve the card opens on.
+       .wheel-card       the card's fixed layout slot. Scaled and dimmed; nothing else owns
+                         its transform (framer owns the card's own, one level in).
+       .wheel-card-face  the card itself, filling the slot.
+       .wheel-rail       the rail segment, scaled to the height its row takes up.
+       .wheel-year       the year, which swells on the same curve the card grows on.
 
-     Every posed row is a stacking context. A card that travels out of its own row has to be
-     lifted by raising the row (`raised` on BoardRow), not by its own z-index. */
+     Every posed row is a stacking context, and so is every slot. A card that travels out of
+     its own row has to be lifted by raising the row (`raised` on BoardRow), not by its own
+     z-index. */
   .wheel-on {
-    /* The height a row is laid out at: the centred card's opened height, so that card moves
-       exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card size;
-       wheelMath.test.ts pins both numbers. */
-    --wheel-pitch: 103px;
-    /* Pins the painting to the card's centre line so it does not slide inside the frame as
-       the frame opens: 15% of (painting height - card height), which is the same crop at rest
-       as `.card-art-fade`'s 35%. */
-    --wheel-art-pin: 13.4px;
+    /* The height a row is laid out at: the centred card's magnified height, so that card
+       moves exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card
+       size; wheelMath.test.ts pins both numbers. */
+    --wheel-pitch: 94px;
   }
   @media (min-width: 640px) {
     .wheel-on {
-      --wheel-pitch: 132px;
-      --wheel-art-pin: 15px;
+      --wheel-pitch: 126px;
     }
   }
   .wheel-on .wheel-row {
     display: flex;
     align-items: center;
     min-height: var(--wheel-pitch);
-  }
-  /* The Archive's painting is narrower (58% of the card), so its pin is smaller. */
-  .wheel-on .wheel-row-archive {
-    --wheel-art-pin: 9.3px;
-  }
-  @media (min-width: 640px) {
-    .wheel-on .wheel-row-archive {
-      --wheel-art-pin: 9.9px;
-    }
-  }
-  .wheel-on .card-art-fade {
-    object-position: 50% calc(50% + var(--wheel-art-pin));
   }
   .wheel-rail {
     transform: scaleY(var(--wheel-rail-scale, 1));
@@ -317,17 +302,20 @@ body {
   .wheel-on .wheel-rail {
     transform: scaleY(calc(var(--wheel-rail-scale, 1) + 0.012));
   }
+  /* The origin is the card's left edge, so it grows away from the rail and stays butted to
+     the gap beside it; the hook caps the scale where the right edge would leave the screen. */
   .wheel-card {
     position: relative;
     opacity: var(--wheel-dim, 1);
+    transform-origin: 0 50%;
+    transform: scale(var(--wheel-scale, 1));
   }
   /* Two classes, so this beats the size utilities on a card dropped in as the face. */
   .wheel-card > .wheel-card-face {
     position: absolute;
-    left: 0;
+    inset: 0;
     width: 100%;
-    top: calc(var(--wheel-grow, 0px) / -2);
-    height: calc(100% + var(--wheel-grow, 0px));
+    height: 100%;
   }
   .wheel-year {
     display: inline-block;

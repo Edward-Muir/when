@@ -1,12 +1,17 @@
 import { RefObject, useLayoutEffect, useRef } from 'react';
-import { WHEEL_TUNING, WheelGeometry, wheelGeometry, wheelPose } from '../utils/wheelMath';
+import {
+  WHEEL_TUNING,
+  WheelGeometry,
+  wheelCardScale,
+  wheelGeometry,
+  wheelPose,
+} from '../utils/wheelMath';
 import { LANDSCAPE_CARD } from '../utils/cardSize';
 import { useHaptics } from './useHaptics';
 
 /**
- * Drives the timeline wheel: the card at the centre of the viewport opens to show more of its
- * painting and faces the player, and the rows above and below lean back a few degrees on a very
- * large cylinder. Scrolling spins it, with a light haptic tick as each event passes the centre.
+ * Drives the timeline wheel: the card at the centre of the viewport is magnified and faces the
+ * player, and the rows above and below lean back a few degrees on a very large cylinder. Scrolling spins it, with a light haptic tick as each event passes the centre.
  *
  * The maths is `wheelMath.ts` and the paint is the `.wheel-*` rules in index.css. This hook
  * writes each row's pose whenever the board scrolls or its rows change.
@@ -14,7 +19,7 @@ import { useHaptics } from './useHaptics';
  * ## Rules this depends on
  *
  * - **The board is laid out tall and the pose only corrects it.** Rows are laid out at
- *   `--wheel-pitch`, the centred card's opened height, so the correction is zero at the centre:
+ *   `--wheel-pitch`, the centred card's magnified height, so the correction is zero at the centre:
  *   native scrolling moves the centred card and this hook has nothing to add there. That is
  *   what keeps the wheel smooth although the pose arrives a frame after the scroll.
  * - **One perspective for the whole board.** `perspective` is set on the content element, whose
@@ -41,7 +46,7 @@ import { useHaptics } from './useHaptics';
 export const WHEEL_ROW_ATTR = 'data-wheel-row';
 
 const VARS = [
-  '--wheel-grow',
+  '--wheel-scale',
   '--wheel-dim',
   '--wheel-rail-scale',
   '--wheel-focus',
@@ -52,6 +57,8 @@ const VARS = [
 const GESTURE_MS = 400;
 /** The least time between two ticks, so a fling is a purr rather than a buzz. */
 const TICK_GAP_MS = 45;
+/** The least gap a magnified card keeps from the scroller's right edge, px. */
+const EDGE_MARGIN = 6;
 
 const round = (n: number) => Math.round(n * 1000) / 1000;
 
@@ -64,6 +71,17 @@ export function layoutTop(el: HTMLElement, ancestor: HTMLElement): number {
     node = node.offsetParent as HTMLElement | null;
   }
   return top;
+}
+
+/** `el`'s left edge in `ancestor`, from layout alone (no transforms). */
+function layoutLeft(el: HTMLElement, ancestor: HTMLElement): number {
+  let left = 0;
+  let node: HTMLElement | null = el;
+  while (node && node !== ancestor) {
+    left += node.offsetLeft;
+    node = node.offsetParent as HTMLElement | null;
+  }
+  return left;
 }
 
 /**
@@ -85,7 +103,8 @@ class Wheel {
   private contentTop = 0;
   private rowHeight = 0;
   private slot: number = LANDSCAPE_CARD.base.h;
-  private cardWidth: number = LANDSCAPE_CARD.base.w;
+  /** How far a card can scale before it reaches the scroller's right edge. */
+  private fit = 1;
   private geo: WheelGeometry | null = null;
   /** The row nearest the centre, for the tick. */
   private nearest: HTMLElement | null = null;
@@ -113,9 +132,11 @@ class Wheel {
     this.rowHeight = rowHeight;
     this.contentTop = layoutTop(this.content, this.scroller);
     const slot = this.content.querySelector<HTMLElement>('.wheel-card');
-    if (slot && slot.offsetHeight > 0) {
+    if (slot && slot.offsetHeight > 0 && slot.offsetWidth > 0) {
       this.slot = slot.offsetHeight;
-      this.cardWidth = slot.offsetWidth;
+      // A card grows away from the rail, so the room it has is what lies to its right.
+      const room = this.scroller.clientWidth - layoutLeft(slot, this.scroller) - EDGE_MARGIN;
+      this.fit = room / slot.offsetWidth;
     }
     this.geo = null;
     // A layout change moves rows under a still viewport; that is not the wheel being spun.
@@ -127,12 +148,7 @@ class Wheel {
     const half = this.scroller.clientHeight / 2;
     const centre = this.scroller.scrollTop + half;
     if (!this.geo || this.geo.frame.half !== half) {
-      this.geo = wheelGeometry({
-        half,
-        slot: this.slot,
-        cardWidth: this.cardWidth,
-        rowHeight: this.rowHeight,
-      });
+      this.geo = wheelGeometry({ half, slot: this.slot, rowHeight: this.rowHeight });
     }
     this.content.style.perspectiveOrigin = `50% ${round(centre - this.contentTop)}px`;
     // Rows bunch towards the edge, so more than one viewport of layout is on screen.
@@ -151,7 +167,7 @@ class Wheel {
       const pose = wheelPose(x, this.geo, height);
       const s = el.style;
       s.transform = `translate3d(0,${round(pose.y)}px,${round(pose.z)}px) rotateX(${round(pose.tilt)}rad)`;
-      s.setProperty('--wheel-grow', `${round(pose.grow)}px`);
+      s.setProperty('--wheel-scale', `${round(wheelCardScale(pose.grow, this.slot, this.fit))}`);
       s.setProperty('--wheel-dim', `${round(pose.dim)}`);
       s.setProperty('--wheel-rail-scale', `${round(pose.railScale)}`);
       s.setProperty('--wheel-focus', `${round(pose.focus)}`);

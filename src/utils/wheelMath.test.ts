@@ -1,6 +1,7 @@
 import {
   WHEEL_TUNING,
   stripPosition,
+  wheelCardScale,
   wheelGeometry,
   wheelPose,
   wheelRowHeight,
@@ -8,20 +9,37 @@ import {
 } from './wheelMath';
 
 // The two card sizes the board has, with the `--wheel-pitch` index.css gives each.
-const PHONE = { slot: 70, cardWidth: 228, rowHeight: 103 };
-const WIDE = { slot: 96, cardWidth: 280, rowHeight: 132 };
+const PHONE = { slot: 70, rowHeight: 94 };
+const WIDE = { slot: 96, rowHeight: 126 };
 const HALF = 290;
 const geo = wheelGeometry({ half: HALF, ...PHONE });
 
 describe('wheelRowHeight', () => {
   it('matches --wheel-pitch in index.css for both card sizes', () => {
-    expect(wheelRowHeight(PHONE.slot, PHONE.cardWidth)).toBe(PHONE.rowHeight);
-    expect(wheelRowHeight(WIDE.slot, WIDE.cardWidth)).toBe(WIDE.rowHeight);
+    expect(wheelRowHeight(PHONE.slot)).toBe(PHONE.rowHeight);
+    expect(wheelRowHeight(WIDE.slot)).toBe(WIDE.rowHeight);
+  });
+});
+
+describe('wheelCardScale', () => {
+  it('is the height the pose gives the card over its resting height', () => {
+    expect(wheelCardScale(17.5, 70, Infinity)).toBeCloseTo(1.25);
+    expect(wheelCardScale(0, 70, Infinity)).toBe(1);
+  });
+
+  it('stops where the card would reach the edge of the screen', () => {
+    // A 360px phone has room for about 8% beside a 228px card.
+    expect(wheelCardScale(17.5, 70, 1.08)).toBeCloseTo(1.08);
+  });
+
+  it('never shrinks a card, even one already too wide for the screen', () => {
+    expect(wheelCardScale(17.5, 70, 0.9)).toBe(1);
+    expect(wheelCardScale(17.5, 0, 2)).toBe(1);
   });
 });
 
 describe('wheelPose', () => {
-  it('leaves the centred row where layout put it, upright and fully open', () => {
+  it('leaves the centred row where layout put it, upright and fully magnified', () => {
     const pose = wheelPose(0, geo);
     expect(pose.y).toBeCloseTo(0);
     expect(pose.z).toBeCloseTo(0);
@@ -29,8 +47,9 @@ describe('wheelPose', () => {
     expect(pose.focus).toBe(1);
     expect(pose.yearDim).toBe(1);
     expect(pose.dim).toBe(1);
-    // 30% of the way from the resting crop to the whole square painting.
-    expect(pose.grow).toBeCloseTo(WHEEL_TUNING.reveal * (0.7 * PHONE.cardWidth - PHONE.slot));
+    // The room a card scaled by `magnify` needs over its resting slot.
+    expect(pose.grow).toBeCloseTo(PHONE.slot * (WHEEL_TUNING.magnify - 1));
+    expect(wheelCardScale(pose.grow, PHONE.slot, Infinity)).toBeCloseTo(WHEEL_TUNING.magnify);
   });
 
   it('moves the centred card exactly with the scroll', () => {
@@ -47,7 +66,7 @@ describe('wheelPose', () => {
   });
 
   it('is symmetric about the centre, with the tilt mirrored', () => {
-    for (const x of [10, 60, 103, 206, 400, 900]) {
+    for (const x of [10, 60, 94, 188, 400, 900]) {
       const below = wheelPose(x, geo);
       const above = wheelPose(-x, geo);
       expect(above.y).toBeCloseTo(-below.y);
@@ -59,14 +78,14 @@ describe('wheelPose', () => {
     }
   });
 
-  it('opens as a bell: each row out is less open than the last, and never closed past rest', () => {
+  it('magnifies as a bell: each row out is smaller than the last, and never under rest', () => {
     const grows = [0, 1, 2, 3, 4, 5].map((i) => wheelPose(i * PHONE.rowHeight, geo).grow);
     grows.reduce((previous, grow) => {
       expect(grow).toBeLessThan(previous);
       expect(grow).toBeGreaterThanOrEqual(-0.001);
       return grow;
     }, Infinity);
-    // The neighbours are part-open, which is what makes the opening gradual.
+    // The neighbours are part-magnified, which is what makes the growth gradual.
     expect(grows[1] / grows[0]).toBeGreaterThan(0.4);
     expect(grows[5]).toBeLessThan(0.5);
   });
