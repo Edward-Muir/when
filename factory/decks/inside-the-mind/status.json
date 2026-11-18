@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T06:17:33.007Z",
+  "updated_at": "2026-11-18T06:20:06.673Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-18T06:17:33.007Z"
     },
     "gall-founds-phrenology": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7462084ba0bc3138fe781cfc294f0d490b2ffcd2b17608831aab24bc5a3405d7",
+      "updated_at": "2026-11-18T06:20:06.673Z"
     },
     "phineas-gage-accident": {
       "state": "pending",
