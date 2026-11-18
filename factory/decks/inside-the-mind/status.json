@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:16:47.253Z",
+  "updated_at": "2026-11-18T10:19:17.917Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -170,10 +170,11 @@
       "updated_at": "2026-11-18T10:16:47.253Z"
     },
     "stanford-prison-experiment": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0cf9a462c40cda9bcdee2512304cecb48a9aaa82124cbc17d7c28ff62db7a74b",
+      "updated_at": "2026-11-18T10:19:17.917Z"
     },
     "rosenhan-pseudopatients": {
       "state": "pending",
