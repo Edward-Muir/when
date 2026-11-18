@@ -97,7 +97,7 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
     {/* Card area */}
     <div className="flex-1 pl-3">
       <div className="wheel-card w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
-        <Card event={event} size="landscape" />
+        <Card event={event} size="landscape" className="wheel-card-face" />
       </div>
     </div>
   </div>
@@ -486,7 +486,11 @@ const Timeline: React.FC<TimelineProps> = ({
           isDragging ? 'overflow-hidden' : 'overflow-y-auto timeline-scroll-vertical'
         }`}
       >
-        <div ref={contentRef} className="relative flex flex-col items-start w-full">
+        {/* `wheel-on` lays the rows out tall for the wheel; it must match the hook's `enabled`. */}
+        <div
+          ref={contentRef}
+          className={`relative flex flex-col items-start w-full ${shouldReduceMotion ? '' : 'wheel-on'}`}
+        >
           {/* Top spacer: room to drop "earlier" and center the first card; bounce runway */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
 

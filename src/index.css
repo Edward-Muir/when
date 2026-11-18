@@ -235,50 +235,112 @@ body {
   .tl-rail {
     background-color: var(--color-accent);
   }
-  /* THE WHEEL. The board is laid out flat and painted as a drum turning into the page: the
-     centred card faces the player, taller than its slot so more of its art shows, and the rows
-     above and below tilt back, shrink and bunch together. `useTimelineWheel` writes the
-     `--wheel-*` properties on each row from its distance to the viewport's centre; with none
-     set (reduced motion, or a surface that is not a wheel) every rule here is the identity.
+  /* THE WHEEL. The board is painted as a wheel turning into the page: the card at the centre of
+     the viewport opens taller, so more of its painting shows, and the rows above and below
+     lean back a few degrees on a very large cylinder. `useTimelineWheel` writes each row's
+     pose; the maths, and why the rows are laid out tall, is in `wheelMath.ts`.
 
-     Three elements, because every other node in a row already has a transform that
-     framer-motion owns:
-       .wheel-row        the row: translated only, so the year, the tick and the card move as
-                         one and the tick stays butted against the rail.
-       .wheel-card       a wrapper holding the card's fixed layout slot: tilt, scale, dim.
-       .wheel-card-face  the card itself, absolutely filling the slot and growing past it.
-     Every row is therefore a stacking context. A card that travels out of its own row has to
-     be lifted by raising the row (`raised` on BoardRow), not by its own z-index. */
-  .wheel-row {
-    transform: translateY(var(--wheel-y, 0px));
-  }
-  /* The rail segment is painted from where the row's top edge lands to where its bottom edge
-     lands, so adjacent segments still meet while the rows between them bunch. */
-  .wheel-rail {
-    transform: translateY(var(--wheel-rail-y, 0px)) scaleY(var(--wheel-rail-scale, 1));
-  }
-  .wheel-card {
-    --wheel-w: 240px;
-    /* Extra height on the centred card. Must match `grow` in wheelMath.ts. */
-    --wheel-grow: 36px;
-    position: relative;
-    /* Tilted about its own centre so the far edge narrows evenly, then slid left by half of
-       what the scale took off, which keeps the card's near edge on the board column. */
-    transform: translateX(calc(var(--wheel-w) * (var(--wheel-scale, 1) - 1) / 2)) perspective(700px)
-      rotateX(var(--wheel-tilt, 0deg)) scale(var(--wheel-scale, 1));
-    opacity: var(--wheel-dim, 1);
+     `.wheel-on` goes on the element whose direct children are the rows, and only when the
+     wheel is running (never under reduced motion). Without it every rule below is the flat
+     board, exactly as it was.
+
+       .wheel-on         lays the rows out at --wheel-pitch and carries the shared perspective.
+       .wheel-row        a row. Its transform is written by the hook and by nothing else.
+       .wheel-card       the card's fixed layout slot. Only dimmed.
+       .wheel-card-face  the card itself, filling the slot and opening past it.
+       .wheel-rail       the rail segment, scaled to the row's opened height.
+       .wheel-year       the year, which swells on the same curve the card opens on.
+
+     Every posed row is a stacking context. A card that travels out of its own row has to be
+     lifted by raising the row (`raised` on BoardRow), not by its own z-index. */
+  .wheel-on {
+    /* The height a row is laid out at: the centred card's opened height, so that card moves
+       exactly with the scroll. MUST equal wheelRowHeight() in wheelMath.ts for the card size;
+       wheelMath.test.ts pins both numbers. */
+    --wheel-pitch: 121px;
+    /* Pins the painting to the card's centre line so it does not slide inside the frame as
+       the frame opens: 15% of (painting height - card height), which is the same crop at rest
+       as `.card-art-fade`'s 35%. */
+    --wheel-art-pin: 13.2px;
   }
   @media (min-width: 640px) {
-    .wheel-card {
-      --wheel-w: 280px;
+    .wheel-on {
+      --wheel-pitch: 141px;
+      --wheel-art-pin: 15px;
     }
   }
-  .wheel-card-face {
+  .wheel-on .wheel-row {
+    display: flex;
+    align-items: center;
+    min-height: var(--wheel-pitch);
+  }
+  /* The Archive's painting is narrower (58% of the card), so its pin is smaller. */
+  .wheel-on .wheel-row-archive {
+    --wheel-art-pin: 8.9px;
+  }
+  @media (min-width: 640px) {
+    .wheel-on .wheel-row-archive {
+      --wheel-art-pin: 9.9px;
+    }
+  }
+  .wheel-on .card-art-fade {
+    object-position: 50% calc(50% + var(--wheel-art-pin));
+  }
+  .wheel-rail {
+    transform: scaleY(var(--wheel-rail-scale, 1));
+  }
+  /* Each posed row is its own tilted layer, so two segments that meet exactly still show a
+     hairline where their antialiased ends touch. A pixel and a half of overlap hides it; the
+     segments are one opaque colour, so the overlap itself cannot be seen. */
+  .wheel-on .wheel-rail {
+    transform: scaleY(calc(var(--wheel-rail-scale, 1) + 0.012));
+  }
+  .wheel-card {
+    position: relative;
+    opacity: var(--wheel-dim, 1);
+  }
+  /* Two classes, so this beats the size utilities on a card dropped in as the face. */
+  .wheel-card > .wheel-card-face {
     position: absolute;
     left: 0;
     width: 100%;
-    top: calc(var(--wheel-grow) * var(--wheel-focus, 0) / -2);
-    height: calc(100% + var(--wheel-grow) * var(--wheel-focus, 0));
+    top: calc(var(--wheel-grow, 0px) / -2);
+    height: calc(100% + var(--wheel-grow, 0px));
+  }
+  .wheel-year {
+    display: inline-block;
+    transform-origin: 100% 50%;
+    transform: scale(calc(1 + var(--wheel-year-max, 0.42) * var(--wheel-focus, 0)));
+    opacity: var(--wheel-year-dim, 1);
+  }
+  .wheel-on .wheel-year-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  /* The ruler: four minor ticks per row beside the rail, which spread as the row opens. Drawn
+     as one element's background so a row costs one node, and only on the wheel. */
+  .wheel-minor {
+    display: none;
+  }
+  .wheel-on .wheel-minor {
+    display: block;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    width: 7px;
+    opacity: 0.55;
+    background-image:
+      linear-gradient(var(--color-accent), var(--color-accent)),
+      linear-gradient(var(--color-accent), var(--color-accent)),
+      linear-gradient(var(--color-accent), var(--color-accent)),
+      linear-gradient(var(--color-accent), var(--color-accent));
+    background-repeat: no-repeat;
+    background-size: 100% 1.5px;
+    background-position:
+      0 20%,
+      0 40%,
+      0 60%,
+      0 80%;
   }
   /* The growing tip: the leading end of a rail extension while a drag previews it, and the
      travelling marker that becomes a tick when the card lands (TimelineMarker.tsx). */

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { CSSProperties, useState } from 'react';
 import { Lock, Check, Trophy } from 'lucide-react';
 import { HistoricalEvent } from '../types';
 import { ArchiveDay } from '../utils/dailyReplay';
@@ -9,6 +9,7 @@ import { formatWeekday, formatWeekdayDate } from '../utils/statsDerived';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
 import { WHEEL_ROW_ATTR } from '../hooks/useTimelineWheel';
+import TimelineRail from './Timeline/TimelineRail';
 
 interface ArchiveDeckRowProps {
   day: ArchiveDay;
@@ -22,6 +23,9 @@ interface ArchiveDeckRowProps {
   onPlay?: () => void;
   /** A locked row's tap: the panel says why it is locked. */
   onLockedTap?: () => void;
+  /** The first and last rows round off the open ends of the rail. */
+  first?: boolean;
+  last?: boolean;
 }
 
 /**
@@ -44,6 +48,8 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
   best,
   onPlay,
   onLockedTap,
+  first = false,
+  last = false,
 }) => {
   const [imageError, setImageError] = useState(false);
   const [shaking, setShaking] = useState(false);
@@ -66,14 +72,18 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
 
   return (
     <div
-      className="wheel-row flex items-center w-full py-1"
+      className="wheel-row wheel-row-archive relative flex items-center w-full py-1"
       data-testid={`archive-day-${date}`}
       data-archive-status={status}
       {...{ [WHEEL_ROW_ATTR]: '' }}
     >
+      <TimelineRail first={first} last={last} />
       {/* Date column (fixed 96px width) with tick */}
       <div className="w-24 pl-2 flex items-center justify-end shrink-0">
-        <span className="pr-2 text-right leading-tight font-mono">
+        <span
+          className="wheel-year pr-2 text-right leading-tight font-mono"
+          style={{ '--wheel-year-max': 0.12 } as CSSProperties}
+        >
           <span className="block text-text font-bold text-sm">{formatShareDate(date)}</span>
           <span className="block text-text-muted text-xs">{formatWeekday(date)}</span>
         </span>

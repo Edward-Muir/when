@@ -124,7 +124,7 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
               />
             }
           >
-            {days.map((day) => (
+            {days.map((day, i) => (
               <ArchiveDeckRow
                 key={day.date}
                 day={day}
@@ -138,6 +138,8 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
                 best={day.curated ? undefined : dayBest(history, day.date)}
                 onPlay={playFor(day)}
                 onLockedTap={() => explainLock(day)}
+                first={i === 0}
+                last={i === days.length - 1}
               />
             ))}
           </ArchiveTimeline>
@@ -191,7 +193,7 @@ function useDaySeedEvents(
 }
 
 /**
- * The timeline shell: spine, "Earlier"/"Later" fades and a native scroll container, as in
+ * The timeline shell: "Earlier"/"Later" fades and a native scroll container, as in
  * `Timeline/Timeline.tsx` but with no drop zone, ghost or tombstones — the rows here are
  * days, not events, which is why `Timeline` itself is not reused. `overlay` is pinned over
  * the shell rather than scrolled with the rows.
@@ -245,9 +247,6 @@ const ArchiveTimeline: React.FC<{
         </div>
       </div>
 
-      {/* Vertical timeline line — `board-rail`, exactly as in Timeline.tsx */}
-      <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
-
       <div
         ref={scrollRef}
         className="board-center h-full relative z-10 overflow-y-auto timeline-scroll-vertical"
@@ -256,7 +255,7 @@ const ArchiveTimeline: React.FC<{
             day can both be turned to the centre of the wheel. */}
         <div
           ref={contentRef}
-          className="relative flex flex-col items-start w-full"
+          className={`relative flex flex-col items-start w-full ${shouldReduceMotion ? '' : 'wheel-on'}`}
           style={{ paddingTop: '50vh', paddingBottom: '50vh' }}
         >
           {children}

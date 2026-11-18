@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FailedPlacement, HistoricalEvent } from '../../types';
-import { YearLabel, yearSizeClass } from './YearLabel';
+import { WheelYear, yearSizeClass } from './YearLabel';
 import CardFace from '../CardFace';
 import Card from '../Card';
 import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
@@ -108,7 +108,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
             <span
               className={`text-text-muted opacity-70 font-bold font-mono pr-2 text-right leading-tight ${yearSizeClass(event)}`}
             >
-              <YearLabel event={event} />
+              <WheelYear event={event} />
             </span>
             <TimelineTick
               variant="muted"

@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import { HistoricalEvent } from '../../types';
 import { formatEventYearParts } from '../../utils/gameLogic';
 
@@ -23,6 +24,41 @@ export function YearLabel({ event }: { event: YearLike }) {
       <span className="block">{start}</span>
       <span className="block">{end}</span>
     </>
+  );
+}
+
+/** The width the year cell has for its text, px: the 96px gutter less its padding and tick. */
+const YEAR_ROOM = 68;
+/** How much the centred year grows on the wheel. Must match `--wheel-year-max` in index.css. */
+const YEAR_SWELL = 0.42;
+
+/**
+ * How far this label can grow before it leaves the gutter: a short year takes the full swell,
+ * "2000 BCE" almost none. Estimated from the character count (about 0.6em each), because the
+ * label must not be measured: it is scaled by a transform, and it sits in a row the wheel poses.
+ */
+export function yearSwell(event: YearLike): number {
+  const { start, end } = formatEventYearParts(event);
+  const size = end === null ? 14 : 11;
+  const width = Math.max(start.length, end?.length ?? 0) * size * 0.6;
+  return Math.max(0, Math.min(YEAR_SWELL, YEAR_ROOM / width - 1));
+}
+
+/**
+ * A row's year as the wheel shows it: the same label, in the display face, growing and
+ * brightening as its row nears the centre. Off the wheel it is the plain label.
+ *
+ * A wrapper of its own because the element carrying `data-timeline-year` already has a
+ * transform that framer-motion owns (the pop on a correct placement).
+ */
+export function WheelYear({ event }: { event: YearLike }) {
+  return (
+    <span
+      className="wheel-year wheel-year-display"
+      style={{ '--wheel-year-max': yearSwell(event) } as CSSProperties}
+    >
+      <YearLabel event={event} />
+    </span>
   );
 }
 

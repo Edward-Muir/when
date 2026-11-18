@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase } from '../../types';
-import { YearLabel, yearSizeClass } from './YearLabel';
+import { WheelYear, yearSizeClass } from './YearLabel';
 import CardFace from '../CardFace';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
@@ -260,7 +260,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             animate={shouldPopYear ? 'pop' : 'idle'}
             className={`text-text font-bold font-mono pr-2 text-right leading-tight ${yearSizeClass(event)}`}
           >
-            <YearLabel event={event} />
+            <WheelYear event={event} />
           </motion.span>
           {!hideTick && <TimelineTick originRef={originRef} landing={landing} glow={landing} />}
         </div>

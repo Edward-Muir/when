@@ -358,39 +358,74 @@ and the row renderers are split out.
 
 ## The wheel: the board as a drum
 
-The board, My Timeline and the Archive are painted as a wheel turning into the page: the row at
-the centre of the viewport faces the player, its card 36px taller than its slot so more art
-shows, and the rows above and below tilt back (to 40 degrees), shrink (to 0.8), dim and bunch
-together. Scrolling spins it. The maths is `src/utils/wheelMath.ts`, the driver is
-`src/hooks/useTimelineWheel.ts`, and the paint is `.wheel-row`, `.wheel-card`,
-`.wheel-card-face` and `.wheel-rail` in `index.css`.
+The board, My Timeline and the Archive are painted as a wheel turning into the page. The card at
+the centre of the viewport opens taller, so more of its painting shows, and its year grows in the
+display face; the rows above and below are part-open, lean back a few degrees on a very large
+cylinder, and carry a ruler of minor ticks beside the rail. Scrolling spins it, with a light
+haptic tick (`haptics.select`) as each event passes the centre. The maths is
+`src/utils/wheelMath.ts`, the driver is `src/hooks/useTimelineWheel.ts`, and the paint is the
+`.wheel-*` rules in `index.css`.
+
+The look was chosen from interactive mock-ups (cylinder, lens, dates-only, dial, parallax). The
+tuning that won is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's
+edge), a reveal of 40% of the way to the whole square painting, spread over 1.6 row pitches.
+Nothing is ever scaled: a magnifier was tried and rejected because it enlarges the painting
+without showing more of it.
 
 Decisions, and the traps behind them:
 
-- **Layout is never touched.** The pose is transforms only, plus the centred card's height
-  inside a fixed slot. Scroll height, the 50vh runways and `offsetTop` are unchanged, so a
-  scroll drives the pose without the pose feeding back into the scroll.
+- **One curve drives everything.** A row's two edges go through `stripPosition`, so its opened
+  height is exactly the room its neighbours make. The first build used unrelated curves for
+  position, size and tilt, and it read as janky: cards sped up and slowed down near the centre.
+- **Rows are laid out tall (`--wheel-pitch`), and the pose only corrects them.** A taller centre
+  card stretches the strip there, so with ordinary 88px rows the centred card moved about 1.4
+  times as far as the finger. Laying rows out at the centre's opened height makes the correction
+  zero at the centre: native scrolling moves the centred card and JavaScript adds nothing there,
+  which also hides the one-frame lag between a compositor scroll and a main-thread transform.
+  `--wheel-pitch` must equal `wheelRowHeight()`; `wheelMath.test.ts` pins both card sizes.
+- **`wheel-on` and the hook's `enabled` go together.** The class lays the rows out tall and the
+  hook poses them. Under reduced motion neither is on, and the board is the flat one it always
+  was, at its old row height.
+- **One perspective for the whole board,** set on the content element (the rows' direct parent)
+  with its origin following the viewport's centre. A perspective per card gives every card its
+  own vanishing point.
+- **The opening is a bell, not a step.** The neighbours are part-open, so a card opens along its
+  whole approach. Opening only the centre card happens in a burst and feels detached from where
+  the card is.
+- **The painting is pinned to the card's centre line** (`--wheel-art-pin`), so it does not slide
+  inside the frame as the frame opens. At rest it is the same crop as `.card-art-fade`'s 35%.
 - **Read positions with `offsetTop`, never `getBoundingClientRect`,** when the answer must not
   include the wheel: centring a row uses `centredScrollTop`. Rects are right only where the
   painted position is what is wanted (the drop-slot midpoints, the drag marker, the gallery
   flight).
-- **The wheel has elements of its own.** Every other node in a row already has a transform
-  framer-motion owns. The row wrapper is translated; a wrapper around the card is tilted and
-  scaled; the gutter is never scaled, so `tick.right === rail.left` still holds on every row.
-- **Every row is a stacking context.** A card that leaves its row (the miss reveal, a placement
-  glow) is lifted by `raised` on `BoardRow`; its own z-index no longer reaches past the row.
+- **The row's transform is the wheel's alone,** written straight to the row wrapper. Everything
+  inside a row already has a transform framer-motion owns, so the year's swell has a wrapper of
+  its own (`WheelYear`). Rows out of reach are left untransformed: My Timeline is not
+  virtualised, and a transform on every row would be thousands of compositor layers.
+- **Every posed row is a stacking context.** A card that leaves its row (the miss reveal, a
+  placement glow) is lifted by `raised` on `BoardRow`; its own z-index no longer reaches past
+  the row.
 - **The pose is applied synchronously** in scroll, resize and mutation callbacks, which all run
   before paint. Code that measures rows in a layout effect runs earlier still, so it calls
   `flushWheels()` first (`useInsertionMarker`, `TimelineTick`).
 - **A drag holds the wheel's shape** with no special case: the board freezes scrolling for the
   length of a drag, so the pose only changes when the ghost row changes the layout.
-- **Reduced motion is the flat board.** With no `--wheel-*` properties set, every rule is the
-  identity.
+- **The tick is the player's own scrolling only.** A scroll counts for 400ms after a touch or
+  wheel event, and each scroll inside that window extends it, which carries a fling. The first
+  centring, the miss reveal's camera follow and a layout change never tick. Ticks are at least
+  45ms apart.
+- **Years fade to 0.6, not lower.** The mock-up went to 0.45, which is under 3:1 contrast for
+  text the player has to read to place a card.
+- **A long year barely swells.** `yearSwell` caps the centred year's growth by its length so
+  "2000 BCE" stays inside the 96px gutter.
+- **The rail is still one segment per row,** tilted with its row, so it bows with the cylinder
+  as a polyline. Segments overlap by a pixel and a half to hide the hairline between two tilted
+  layers. The Archive's single full-height rail was replaced by the same per-row segments.
+- **The ruler's minor ticks are an exception to "nothing is drawn on the rail".** They exist only
+  on the wheel, where their spreading is what shows a row opening.
 - **The Archive has runways too** (50vh of padding at each end) and opens with today's row at
   the centre, re-centring on resize until the player touches the list, because the hint strip
   above it mounts late.
-- `wheelMath.test.ts` pins that rows never cross, rail segments still butt together, cards stay
-  clear of each other mid-turn, and no card paints shorter than a 44px touch target.
 - `GameStartTransition` is not a scroller and stays flat.
 
 ## Onboarding hints

@@ -69,6 +69,8 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
         className="wheel-rail pointer-events-none absolute inset-y-0 left-24 z-0 w-1"
       >
         <div className={`tl-rail h-full w-full ${ends}`} />
+        {/* The ruler's minor ticks; drawn on the wheel only. See .wheel-minor. */}
+        <div className="wheel-minor" />
       </div>
     );
   }
