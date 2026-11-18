@@ -112,11 +112,11 @@
     "description": "An oil-painting style scene of a cluttered desk in a dim room under a lamp. A beige all-in-one computer with a small screen shows a page layout with text columns and image boxes. Beside it, a beige laser-style printer is feeding out a newspaper-style page with photos. Floppy disks, a coffee mug, a keyboard, a mouse and a ruler sit on the wood desk. Grey cubicle partitions fill the background, and a sheet of paper on the left wall has illegible marks."
   },
   "comic-sans-created": {
-    "state": "qc-fail",
-    "reason": "Legible text is painted on the screen: the menu bar (File Edit View Format Help), OK and Cancel buttons, a Start button and an 8:35 AM clock, plus lettering in the balloons and comic panels. Repaint the screen with blank interface shapes and no writing.",
-    "by": "recheck",
-    "attempts": 2,
-    "description": "A painted beige CRT computer on a dark desk. The screen shows a software window with a cartoon dog and a speech balloon, a thumbnail strip, and a small warning dialog. Around it lie pen-inked comic pages, an ink bottle, a dip pen and brushes. The painting fills the frame, with no people or border. The screen has a menu bar reading File Edit View Format Help, OK and Cancel buttons, a Start button and an 8:35 AM clock, and the comic panels have lettering."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 3,
+    "description": "An old beige CRT monitor sits on a desk, its screen showing a pixel-art paint program with a small pixel dog and a speech balloon. Around it lie comic-book pages with panels and speech balloons, an ink bottle, a dip pen and a computer mouse, in a dark oil-painting style. No people are visible. The comic panels carry only illegible scribbles, with no readable letters."
   },
   "emoji-added-to-unicode": {
     "state": "qc-pass",

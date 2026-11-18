@@ -1,0 +1,15 @@
+{
+  "slug": "comic-sans-created",
+  "description": "An old beige CRT monitor sits on a desk, its screen showing a pixel-art paint program with a small pixel dog and a speech balloon. Around it lie comic-book pages with panels and speech balloons, an ink bottle, a dip pen and a computer mouse, in a dark oil-painting style. No people are visible. The comic panels carry only illegible scribbles, with no readable letters.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
