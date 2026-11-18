@@ -35,6 +35,15 @@ import { useHaptics } from './useHaptics';
  *   not virtualised) does not become thousands of compositor layers.
  * - **It is synchronous.** Scroll, resize and mutation callbacks all run before paint, so the
  *   pose is applied in them directly.
+ * - **Each value is written to the one element that uses it, as a real property.** The card's
+ *   slot gets its scale and opacity, the card its opening, the rail and the year their own
+ *   transforms. The first build put them on the row as CSS custom properties and let the
+ *   children read them with `var()`. Custom properties inherit, so every scroll frame
+ *   restyled every element of every posed row: measured, style recalculation was the largest
+ *   single cost of a scroll, several times the layout and the script together.
+ * - **Values are quantised and only written when they change.** A row far from the centre has
+ *   nothing left to change but its position, so it costs one transform a frame. The steps are
+ *   under a tenth of a device pixel on screen.
  * - **Code that measures the board right after a commit calls `flushWheels()` first.** A layout
  *   effect runs before the mutation observer does, so a row that has just mounted has no pose
  *   yet; the drag marker and the landing tick would measure it where it is not going to be.
@@ -46,14 +55,58 @@ import { useHaptics } from './useHaptics';
 /** Marks one row of a wheel. On the element that is a direct, in-flow child of the content. */
 export const WHEEL_ROW_ATTR = 'data-wheel-row';
 
-const VARS = [
-  '--wheel-grow',
-  '--wheel-scale',
-  '--wheel-dim',
-  '--wheel-rail-scale',
-  '--wheel-focus',
-  '--wheel-year-dim',
-] as const;
+/** One row of the wheel: where layout puts it, and the elements the wheel writes to. */
+interface RowParts {
+  el: HTMLElement;
+  centre: number;
+  height: number;
+  /**
+   * The elements below are looked up the first time the row is posed after a measure, not for
+   * every row at every measure: My Timeline is not virtualised, and only the rows near the
+   * viewport are ever posed. Any may be missing: the Archive has no display year, and a row
+   * mid-swap may briefly have no card.
+   */
+  found: boolean;
+  /** `.wheel-card`: scaled and dimmed. */
+  slot: HTMLElement | null;
+  /** `.wheel-card-face`, the slot's direct children: opened past the slot. */
+  faces: HTMLElement[];
+  rail: HTMLElement | null;
+  year: HTMLElement | null;
+  /** How much this row's year may grow: `--wheel-year-max`, set per label by YearLabel. */
+  yearMax: number;
+  /** The last values written, so an unchanged one is not written again. */
+  last: {
+    transform: string;
+    scale: number;
+    dim: number;
+    open: number;
+    rail: number;
+    year: number;
+    yearDim: number;
+  };
+}
+
+/** The default for `--wheel-year-max` where a label does not set one. */
+const YEAR_SWELL = 0.42;
+/**
+ * Each posed row is its own tilted layer, so two rail segments that meet exactly still show a
+ * hairline where their antialiased ends touch. A pixel and a half of overlap hides it; the
+ * segments are one opaque colour, so the overlap itself cannot be seen.
+ */
+const RAIL_OVERLAP = 0.012;
+const NEVER = {
+  transform: '',
+  scale: NaN,
+  dim: NaN,
+  open: NaN,
+  rail: NaN,
+  year: NaN,
+  yearDim: NaN,
+};
+
+/** Rounds to a step: coarse enough that most rows repeat their last value, too fine to see. */
+const quantise = (n: number, step: number) => Math.round(n / step) * step;
 
 /** How long after a touch or wheel event a scroll still counts as the player's own. */
 const GESTURE_MS = 400;
@@ -94,14 +147,56 @@ export function centredScrollTop(scroller: HTMLElement, el: HTMLElement): number
   return layoutTop(el, scroller) + el.offsetHeight / 2 - scroller.clientHeight / 2;
 }
 
-function clear(row: HTMLElement) {
-  row.style.removeProperty('transform');
-  for (const name of VARS) row.style.removeProperty(name);
+function clear(row: RowParts) {
+  row.el.style.removeProperty('transform');
+  row.slot?.style.removeProperty('transform');
+  row.slot?.style.removeProperty('opacity');
+  for (const face of row.faces) {
+    face.style.removeProperty('top');
+    face.style.removeProperty('height');
+  }
+  row.rail?.style.removeProperty('transform');
+  row.year?.style.removeProperty('transform');
+  row.year?.style.removeProperty('opacity');
+  row.last = { ...NEVER };
+}
+
+function readRow(el: HTMLElement, scroller: HTMLElement): RowParts {
+  const height = el.offsetHeight;
+  return {
+    el,
+    centre: layoutTop(el, scroller) + height / 2,
+    height,
+    found: false,
+    slot: null,
+    faces: [],
+    rail: null,
+    year: null,
+    yearMax: YEAR_SWELL,
+    last: { ...NEVER },
+  };
+}
+
+function findParts(row: RowParts) {
+  const slot = row.el.querySelector<HTMLElement>('.wheel-card');
+  const year = row.el.querySelector<HTMLElement>('.wheel-year');
+  const yearMax = Number.parseFloat(year?.style.getPropertyValue('--wheel-year-max') ?? '');
+  row.slot = slot;
+  row.faces = slot
+    ? Array.from(slot.children).filter(
+        (child): child is HTMLElement =>
+          child instanceof HTMLElement && child.classList.contains('wheel-card-face')
+      )
+    : [];
+  row.rail = row.el.querySelector<HTMLElement>('.wheel-rail');
+  row.year = year;
+  row.yearMax = Number.isFinite(yearMax) ? yearMax : YEAR_SWELL;
+  row.found = true;
 }
 
 class Wheel {
-  private rows: { el: HTMLElement; centre: number; height: number }[] = [];
-  private posed = new Set<HTMLElement>();
+  private rows: RowParts[] = [];
+  private posed = new Set<RowParts>();
   private contentTop = 0;
   private rowHeight = 0;
   private slot: number = LANDSCAPE_CARD.base.h;
@@ -125,13 +220,21 @@ class Wheel {
   /** Re-read the rows and where layout puts them, then pose. */
   measure = () => {
     const els = Array.from(this.content.querySelectorAll<HTMLElement>(`[${WHEEL_ROW_ATTR}]`));
+    // The parts of a row are re-read each time: a card can be swapped for a new element with
+    // its row left in place. A row that has left the board takes its styles with it.
+    const before = this.posed;
     let rowHeight = 0;
     this.rows = els.map((el) => {
-      const height = el.offsetHeight;
+      const row = readRow(el, this.scroller);
       // Rows are uniform, so the smallest one is the ordinary row.
-      if (height > 0 && (rowHeight === 0 || height < rowHeight)) rowHeight = height;
-      return { el, centre: layoutTop(el, this.scroller) + height / 2, height };
+      if (row.height > 0 && (rowHeight === 0 || row.height < rowHeight)) rowHeight = row.height;
+      return row;
     });
+    // Every value is written afresh after a measure, to the elements that are there now.
+    before.forEach((row) => {
+      if (row.el.isConnected) clear(row);
+    });
+    this.posed = new Set();
     this.rowHeight = rowHeight;
     this.contentTop = layoutTop(this.content, this.scroller);
     const slot = this.content.querySelector<HTMLElement>('.wheel-card');
@@ -162,28 +265,19 @@ class Wheel {
     this.content.style.perspectiveOrigin = `50% ${round(centre - this.contentTop)}px`;
     // Rows bunch towards the edge, so more than one viewport of layout is on screen.
     const reach = half * 2.4 + this.rowHeight;
-    const next = new Set<HTMLElement>();
+    const next = new Set<RowParts>();
     let nearest: HTMLElement | null = null;
     let nearestBy = Infinity;
-    for (const { el, centre: rowCentre, height } of this.rows) {
-      const x = rowCentre - centre;
+    for (const row of this.rows) {
+      const x = row.centre - centre;
       const by = Math.abs(x);
       if (by < nearestBy) {
         nearestBy = by;
-        nearest = el;
+        nearest = row.el;
       }
       if (by > reach) continue;
-      const pose = wheelPose(x, this.geo, height);
-      const s = el.style;
-      s.transform = `translate3d(0,${round(pose.y)}px,${round(pose.z)}px) rotateX(${round(pose.tilt)}rad)`;
-      const shape = wheelCardShape(pose.grow, this.geo, this.fit);
-      s.setProperty('--wheel-grow', `${round(shape.open)}px`);
-      s.setProperty('--wheel-scale', `${round(shape.scale)}`);
-      s.setProperty('--wheel-dim', `${round(pose.dim)}`);
-      s.setProperty('--wheel-rail-scale', `${round(pose.railScale)}`);
-      s.setProperty('--wheel-focus', `${round(pose.focus)}`);
-      s.setProperty('--wheel-year-dim', `${round(pose.yearDim)}`);
-      next.add(el);
+      this.write(row, wheelPose(x, this.geo, row.height));
+      next.add(row);
     }
     this.posed.forEach((row) => {
       if (!next.has(row)) clear(row);
@@ -191,6 +285,59 @@ class Wheel {
     this.posed = next;
     this.tick(nearest, spun);
   };
+
+  /** Write one row's pose, each value to the element that uses it and only if it has changed. */
+  private write(row: RowParts, pose: ReturnType<typeof wheelPose>) {
+    if (!this.geo) return;
+    if (!row.found) findParts(row);
+    const { last } = row;
+    const transform = `translate3d(0,${round(pose.y)}px,${round(pose.z)}px) rotateX(${round(pose.tilt)}rad)`;
+    if (transform !== last.transform) {
+      row.el.style.transform = transform;
+      last.transform = transform;
+    }
+    const shape = wheelCardShape(pose.grow, this.geo, this.fit);
+    if (row.slot) {
+      const scale = quantise(shape.scale, 0.0005);
+      if (scale !== last.scale) {
+        row.slot.style.transform = `scale(${round(scale)})`;
+        last.scale = scale;
+      }
+      const dim = quantise(pose.dim, 0.005);
+      if (dim !== last.dim) {
+        row.slot.style.opacity = `${round(dim)}`;
+        last.dim = dim;
+      }
+    }
+    // The card opens past its slot, half above and half below, before the slot scales it.
+    const open = quantise(shape.open, 0.25);
+    if (open !== last.open) {
+      for (const face of row.faces) {
+        face.style.top = `${-open / 2}px`;
+        face.style.height = `calc(100% + ${open}px)`;
+      }
+      last.open = open;
+    }
+    if (row.rail) {
+      const rail = quantise(pose.railScale + RAIL_OVERLAP, 0.001);
+      if (rail !== last.rail) {
+        row.rail.style.transform = `scaleY(${round(rail)})`;
+        last.rail = rail;
+      }
+    }
+    if (row.year) {
+      const year = quantise(1 + row.yearMax * pose.focus, 0.002);
+      if (year !== last.year) {
+        row.year.style.transform = `scale(${round(year)})`;
+        last.year = year;
+      }
+      const yearDim = quantise(pose.yearDim, 0.01);
+      if (yearDim !== last.yearDim) {
+        row.year.style.opacity = `${round(yearDim)}`;
+        last.yearDim = yearDim;
+      }
+    }
+  }
 
   /** A tick when a different event takes the centre, but only while the player is spinning. */
   private tick(nearest: HTMLElement | null, spun: boolean) {

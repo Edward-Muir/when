@@ -29,7 +29,10 @@ export function YearLabel({ event }: { event: YearLike }) {
 
 /** The width the year cell has for its text, px: the 96px gutter less its padding and tick. */
 const YEAR_ROOM = 68;
-/** How much the centred year grows on the wheel. Must match `--wheel-year-max` in index.css. */
+/**
+ * How much the centred year grows on the wheel. Must match `YEAR_SWELL` in useTimelineWheel.ts,
+ * which reads each label's `--wheel-year-max` and falls back to this.
+ */
 const YEAR_SWELL = 0.42;
 
 /**

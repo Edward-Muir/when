@@ -408,8 +408,9 @@ haptic tick (`haptics.select`) as each event passes the centre. The maths is
 
 The look was chosen from interactive mock-ups (cylinder, lens, dates-only, dial, parallax). The
 tuning is in `WHEEL_TUNING`: a barely-there cylinder (11.4 degrees at the viewport's edge), a
-reveal of 10% of the way to the whole square painting, and a scale of 1.05 on the opened card,
-spread over 1.6 row pitches. On a phone that is a 70px card drawn 83px tall at the centre.
+reveal of 5% of the way to the whole square painting, and a scale of 1.05 on the opened card,
+spread over 2.4 row pitches. On a phone that is a 70px card drawn 78px tall at the centre, with
+the growth shared across about three rows either side.
 
 **How the centre card got here (2026-11-18), all at the owner's direction:**
 
@@ -417,14 +418,14 @@ spread over 1.6 row pitches. On a phone that is a 70px card drawn 83px tall at t
 - A **magnifier** only was tried next, first at 1.25, then at 1.075 to match study G of the
   Timeline Wheel Studies mock-ups. It had been rejected once before for enlarging the painting
   without showing more of it.
-- The owner preferred **both together, kept subtle**, which is what ships. The numbers were
-  picked as a starting point and are meant to be tuned on the Wheel Magnifier Rig, a slider
-  page with this maths; a change of tuning is `WHEEL_TUNING` plus `--wheel-pitch`.
+- The owner preferred **both together, kept subtle**, which is what ships. The numbers are the
+  owner's, picked on the Wheel Magnifier Rig, a slider page with this maths; a change of
+  tuning is `WHEEL_TUNING` plus `--wheel-pitch`.
 - Published research on fisheye and focus+context views gives no optimum, but it does say the
   costs rise with magnification and that the in-between zone is little used, so mild and
-  narrow is the safe side. Growth also costs timeline: this tuning hides about 38px of it on a
+  narrow is the safe side. Growth also costs timeline: this tuning hides about 35px of it on a
   phone, against 15px for the 1.075 magnifier alone. Reveal is the expensive half, since all
-  of it is height.
+  of it is height, and so is a wide spread.
 
 Decisions, and the traps behind them:
 
@@ -449,8 +450,16 @@ Decisions, and the traps behind them:
 - **One `grow`, split two ways.** The strip makes each row exactly `grow` px of extra room.
   `wheelCardShape` gives a row the same share of the opening and of the scale as it has of
   the centre's growth, so `(slot + open) * scale = slot + grow` on every row and the two rise
-  together. The opening goes on the face (`--wheel-grow`), the scale on the slot
-  (`--wheel-scale`).
+  together. The opening goes on the face (its `top` and `height`), the scale on the slot.
+- **The pose is written as real properties, each on the one element that uses it, and only
+  when it changes.** The first builds set five custom properties on the row and let the slot,
+  face, rail and year read them with `var()`. Custom properties inherit, so every scroll frame
+  restyled every element of every posed row, and style recalculation was the largest cost of
+  a scroll. Measured on the lab board (30 cards, 360 scripted frames, Chromium at a 4x CPU
+  slowdown): style time fell from 2.7s to 0.9s and frames over 20ms from 65 to 5; the opening
+  card before any of this was 2.3s and 45. Values are quantised (a quarter pixel of opening,
+  0.0005 of scale) so a row away from the centre repeats its last value and costs one
+  transform. Do not move these back onto the row as variables. Not measured on iOS Safari.
 - **The painting is pinned to the card's centre line** (`--wheel-art-pin`), so it does not slide
   inside the frame as the frame opens. At rest it is the same crop as `.card-art-fade`'s 35%.
 - **The scale is on the slot (`.wheel-card`), from its left edge.** The slot is a plain div

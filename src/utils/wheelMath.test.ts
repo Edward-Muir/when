@@ -9,8 +9,8 @@ import {
 } from './wheelMath';
 
 // The two card sizes the board has, with the `--wheel-pitch` index.css gives each.
-const PHONE = { slot: 70, cardWidth: 228, rowHeight: 90 };
-const WIDE = { slot: 96, cardWidth: 280, rowHeight: 118 };
+const PHONE = { slot: 70, cardWidth: 228, rowHeight: 86 };
+const WIDE = { slot: 96, cardWidth: 280, rowHeight: 114 };
 const HALF = 290;
 const geo = wheelGeometry({ half: HALF, ...PHONE });
 
@@ -77,14 +77,14 @@ describe('wheelPose', () => {
   it('moves the rows further out more slowly than the scroll', () => {
     const x = 2.5 * PHONE.rowHeight;
     const speed = (wheelPose(x + 1, geo).y + 1 - (wheelPose(x - 1, geo).y - 1)) / 2;
-    // By about the ratio of a resting row to a laid-out one (78 / 90): the less the centre
+    // By about the ratio of a resting row to a laid-out one (78 / 86): the less the centre
     // grows, the nearer the outer rows come to the scroll's own speed.
     expect(speed).toBeLessThan(0.97);
     expect(speed).toBeGreaterThan(0.5);
   });
 
   it('is symmetric about the centre, with the tilt mirrored', () => {
-    for (const x of [10, 60, 90, 180, 400, 900]) {
+    for (const x of [10, 60, 86, 172, 400, 900]) {
       const below = wheelPose(x, geo);
       const above = wheelPose(-x, geo);
       expect(above.y).toBeCloseTo(-below.y);
