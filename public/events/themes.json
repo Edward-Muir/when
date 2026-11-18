@@ -21557,7 +21557,10 @@
     "year": 1470,
     "category": "writing",
     "description": "A Venetian printer cut an elegant roman letter whose proportions inspired revivals for centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "caxton-westminster-press",
@@ -21565,7 +21568,10 @@
     "year": 1476,
     "category": "media",
     "description": "A merchant who had learned printing abroad set up a press at Westminster and began issuing books in English.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "garamond-roman-type",
@@ -21573,7 +21579,10 @@
     "year": 1530,
     "category": "writing",
     "description": "A Parisian punchcutter's refined roman letters were used in a scholarly edition and became a model for generations.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "bay-psalm-book",
@@ -21581,7 +21590,10 @@
     "year": 1640,
     "category": "writing",
     "description": "A press in a New England colony produced a hymn book, the first book printed in English-speaking North America.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "caslon-type-specimen",
@@ -21589,7 +21601,10 @@
     "year": 1734,
     "category": "writing",
     "description": "An English engraver displayed his oldstyle typefaces, which came to dominate printing across Britain and its colonies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "baskerville-virgil",
@@ -21597,7 +21612,10 @@
     "year": 1757,
     "category": "writing",
     "description": "A Birmingham printer published a book showing off his sharp, high-contrast typeface and glossy paper.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "first-sans-serif-typeface",
@@ -21605,7 +21623,10 @@
     "year": 1816,
     "category": "writing",
     "description": "A London type foundry issued a bold, plain capital letter with no serifs, which startled contemporaries.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "sholes-typewriter-patent",
@@ -21613,7 +21634,10 @@
     "year": 1868,
     "category": "invention",
     "description": "A Milwaukee newspaperman won a patent for a practical keyboard writing machine that became the model for later typewriters.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "remington-typewriter-sales",
@@ -21621,7 +21645,10 @@
     "year": 1874,
     "category": "invention",
     "description": "A firearms maker put the first commercial typewriter on sale, with the keyboard layout still used today.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "johnston-london-typeface",
@@ -21629,7 +21656,10 @@
     "year": 1916,
     "category": "writing",
     "description": "A calligrapher drew a clear, humanist sans-serif alphabet for a city's railway signs and posters.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "futura-typeface-released",
@@ -21637,7 +21667,10 @@
     "year": 1927,
     "category": "writing",
     "description": "A German designer issued a geometric typeface built from circles, triangles and squares, a modernist favourite.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "times-new-roman-debut",
@@ -21645,7 +21678,10 @@
     "year": 1932,
     "category": "writing",
     "description": "A London newspaper commissioned a tightly spaced new typeface that later became a word-processing default.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "helvetica-released",
@@ -21653,7 +21689,10 @@
     "year": 1957,
     "category": "writing",
     "description": "A Swiss foundry issued a neutral sans-serif typeface that spread across corporate logos and street signs worldwide.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "ibm-selectric-typewriter",
@@ -21661,7 +21700,10 @@
     "year": 1961,
     "category": "invention",
     "description": "An electric typewriter swapped moving typebars for a spinning ball, letting users change fonts in seconds.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "project-gutenberg-begins",
@@ -21669,7 +21711,10 @@
     "year": 1971,
     "category": "media",
     "description": "A student typed out a famous declaration onto a university computer, starting the free electronic book library.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "desktop-publishing-arrives",
@@ -21677,7 +21722,10 @@
     "year": 1985,
     "category": "invention",
     "description": "A laser printer, PostScript and page layout software let ordinary offices produce typeset-quality pages from a desk.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "comic-sans-created",
@@ -21685,7 +21733,10 @@
     "year": 1994,
     "category": "writing",
     "description": "A software designer drew a casual, comic-book style typeface that became both popular and widely mocked.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "emoji-added-to-unicode",
@@ -21693,6 +21744,10 @@
     "year": 2010,
     "category": "writing",
     "description": "The universal text standard adopted hundreds of Japanese-origin pictograms, making them part of everyday writing worldwide.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   }
 ]
