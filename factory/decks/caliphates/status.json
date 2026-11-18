@@ -3,7 +3,7 @@
   "name": "The Caliphs",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T02:30:09.213Z",
+  "updated_at": "2026-11-18T02:32:23.047Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-18T02:30:09.213Z"
     },
     "khilafat-movement-india": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2c3de84dac7866f8b643968dfba7b812900da6b794bd9ab13f7e7bc00b8d8770",
+      "updated_at": "2026-11-18T02:32:23.047Z"
     }
   }
 }
