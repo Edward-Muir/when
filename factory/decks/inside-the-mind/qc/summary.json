@@ -131,5 +131,61 @@
     "by": "review",
     "attempts": 1,
     "description": "An older man with swept-back grey hair and a white lab coat stands in the foreground holding a glass syringe up to the light and looking down at it. Behind him, a nurse in a dark dress and white cap stands by iron-frame hospital beds, and a seated patient in a plain gown sits on one bed. The room has tall arched windows, dark plaster walls and a wooden floor, and the whole scene is a dim, painterly oil style. I see no text, no frame, and nothing graphic."
+  },
+  "patient-hm-memory-loss": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, warmly lit laboratory or study painted in oil style. In the foreground a wooden desk holds a dark wooden box with a tilted mirror, and a sheet of paper with a drawn star outline and a pencil sits in front of it. A black articulated desk lamp is at left, with glass flasks and bottles on shelves behind. At right, a white lab coat hangs over the back of a wooden chair, with a blank clipboard on its seat. Background cabinets and electrical equipment fill the dark corners. No people, no visible text, and the painting fills the frame edge to edge."
+  },
+  "milgram-obedience-experiment": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a white shirt and dark tie sits at a grey metal control panel with rows of switches, levers and dials, one hand reaching toward the switches and his face strained. A man in a grey lab coat stands behind him with a hand on his shoulder. The room is dark and plain, with a closed door, a single overhead light, and a tiled wall. The mood is tense and sombre, and the clothing and equipment look mid-twentieth century. No text, numbers or frame are visible, and the painting runs edge to edge."
+  },
+  "kubler-ross-five-stages-grief": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dim oil painting of an empty hospital bed with rumpled sheets, a metal bedframe, an IV stand and bag, a drawn curtain, and a bedside cabinet with an articulated desk lamp. A chair in the foreground holds an open notebook and pen. Mid-20th-century hospital cues. No letters, frame, or gore; the painting fills the edge."
+  },
+  "stanford-prison-experiment": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painting of a dim concrete corridor with a pipe along the ceiling and barred cell doors. Three prisoners in loose light smocks and knit caps stand facing the wall, with chains on their ankles and wrists. On the right, a man in khaki uniform and aviator sunglasses, with a whistle on his chest, holds a wooden baton and looks toward the prisoners. The lighting is low and warm-grey, in a painterly style. There is no visible text, frame or border."
+  },
+  "rosenhan-pseudopatients": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A man in a worn grey-beige shirt and trousers sits on a wooden bench, bent over a small notebook and writing with a pen. Behind him a doctor in a white coat and a nurse in a white uniform and cap move through a dim room with tall windows, and two shadowed figures sit at the left edge. Oil-painting style, no visible text, fills the frame edge to edge; the setting and dress suggest a mid-20th-century institution."
+  },
+  "gardner-multiple-intelligences": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An indoor classroom in oil-paint style, with sunlight through tall windows. A woman with glasses sits in the middle with her hand to her chin, watching. A blond boy plays a violin at left, a boy in a dark shirt and a boy in a patterned shirt work on a tall tower of wooden blocks, a boy in a green shirt reads an open picture book, and a girl in a skirt dances with her arms raised at right. Posters, bookshelves and children's drawings line the walls. No legible text, no frame."
+  },
+  "prozac-reaches-market": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An older man with grey hair in a white lab coat stands behind a dark wooden counter, holding a white pill bottle. A small green-and-white capsule lies on the counter. A dark-sleeved arm reaches in from the left toward the bottle. The background has shelves of amber bottles, a beige CRT monitor with a keyboard, and stacked papers. It is an oil-painting style, cropped edge to edge, with no visible text."
+  },
+  "optogenetics-switches-neurons": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A glowing blue branching neuron with dendrites spreading across a dark painted ground, with a bright light beam coming down from a thin fibre-optic tip above it. Behind it at upper left is a metal microscope, and at right a lab bench with a petri dish, a glass flask, and a panel of dials with wires attached. Dark oil-paint style, no visible text, no frame."
   }
 }

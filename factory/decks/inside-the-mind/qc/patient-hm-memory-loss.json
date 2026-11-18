@@ -1,0 +1,15 @@
+{
+  "slug": "patient-hm-memory-loss",
+  "description": "A dim, warmly lit laboratory or study painted in oil style. In the foreground a wooden desk holds a dark wooden box with a tilted mirror, and a sheet of paper with a drawn star outline and a pencil sits in front of it. A black articulated desk lamp is at left, with glass flasks and bottles on shelves behind. At right, a white lab coat hangs over the back of a wooden chair, with a blank clipboard on its seat. Background cabinets and electrical equipment fill the dark corners. No people, no visible text, and the painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

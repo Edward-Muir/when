@@ -1,9 +1,9 @@
 {
   "deck": "inside-the-mind",
   "name": "Inside the Mind",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T10:29:45.120Z",
+  "updated_at": "2026-11-18T11:07:53.271Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-18T06:09:37.628Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-18T11:07:53.271Z"
     }
   ],
   "slugs": {
@@ -149,60 +153,60 @@
       "updated_at": "2026-11-18T09:08:44.511Z"
     },
     "patient-hm-memory-loss": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3afa587522e97642b4516323e73a74fd35fa60c15023c4ac6fc66d778ef3d4cf",
-      "updated_at": "2026-11-18T10:10:47.393Z"
+      "updated_at": "2026-11-18T11:07:53.007Z"
     },
     "milgram-obedience-experiment": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "159e96e9910bb30e5e4520da7da32aa6244f91c22437f7c058bf7807f079b665",
-      "updated_at": "2026-11-18T10:13:18.774Z"
+      "updated_at": "2026-11-18T11:07:53.040Z"
     },
     "kubler-ross-five-stages-grief": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a0d7daff8797efb34594ee2bd8f81490a12ba4b32352bb50b3cca1363047cf2a",
-      "updated_at": "2026-11-18T10:16:47.253Z"
+      "updated_at": "2026-11-18T11:07:53.073Z"
     },
     "stanford-prison-experiment": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0cf9a462c40cda9bcdee2512304cecb48a9aaa82124cbc17d7c28ff62db7a74b",
-      "updated_at": "2026-11-18T10:19:17.917Z"
+      "updated_at": "2026-11-18T11:07:53.118Z"
     },
     "rosenhan-pseudopatients": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "09da14b8e6e35a994118c42a0cf20f575266997da63aab6f8b9bb4fa5d448575",
-      "updated_at": "2026-11-18T10:21:51.215Z"
+      "updated_at": "2026-11-18T11:07:53.156Z"
     },
     "gardner-multiple-intelligences": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3db243b98644815d91803ae32f4ea083e55d5c16fb23c49e1fd835e3443dd14d",
-      "updated_at": "2026-11-18T10:24:21.361Z"
+      "updated_at": "2026-11-18T11:07:53.195Z"
     },
     "prozac-reaches-market": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b2c61f022a1daa194495a48e69a9bafac4892b4112861043392004ca5a7e02d9",
-      "updated_at": "2026-11-18T10:26:53.045Z"
+      "updated_at": "2026-11-18T11:07:53.234Z"
     },
     "optogenetics-switches-neurons": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "18d984c9ca8808db27b8ca22eb889889084c4eecfe71b19784f7906b15d33056",
-      "updated_at": "2026-11-18T10:29:45.120Z"
+      "updated_at": "2026-11-18T11:07:53.271Z"
     }
   }
 }

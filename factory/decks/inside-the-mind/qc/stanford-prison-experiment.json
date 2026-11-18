@@ -1,0 +1,15 @@
+{
+  "slug": "stanford-prison-experiment",
+  "description": "A painting of a dim concrete corridor with a pipe along the ceiling and barred cell doors. Three prisoners in loose light smocks and knit caps stand facing the wall, with chains on their ankles and wrists. On the right, a man in khaki uniform and aviator sunglasses, with a whistle on his chest, holds a wooden baton and looks toward the prisoners. The lighting is low and warm-grey, in a painterly style. There is no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

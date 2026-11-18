@@ -1,0 +1,15 @@
+{
+  "slug": "kubler-ross-five-stages-grief",
+  "description": "A dimly lit hospital room with a metal-frame bed holding a rumpled white sheet and pillow, and an IV stand with a hanging bag in the background. A lit adjustable desk lamp sits on a metal cabinet, and a notebook with a pen rests on a chair seat in the foreground. No people are visible. Painted in an oil style, edge to edge, with no text or frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The card asks for a woman in a white coat holding an elderly patient's hand beside a hospital bed, with a notebook on her knee. The image shows an empty hospital room with a notebook on a chair and no people, so it does not show the requested scene. It is generic enough to fit a hospital story, but nothing in it points to Kubler-Ross or her five stages of grief, so the subject match is unsure."
+}
