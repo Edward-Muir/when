@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T14:29:13.593Z",
+  "updated_at": "2026-11-18T14:31:43.220Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-18T14:29:13.593Z"
     },
     "remington-typewriter-sales": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6829309eef4e27bbb9a3129f73b25bb00f9489d8c5f7105e967e565a8958fa54",
+      "updated_at": "2026-11-18T14:31:43.220Z"
     },
     "johnston-london-typeface": {
       "state": "pending",
