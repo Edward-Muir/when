@@ -7,10 +7,27 @@ Home-screen pager, gameplay layout, and the Custom settings screen.
 Full-width vertical stack:
 
 ```
-TopBar  (fixed, safe-area aware — see ../mobile-ios/index.md for pt-topbar*)
+(no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
+  └ GameHud (floating, z-[34]): Home top-left, the theme pill top-right
 Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
+
+- **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
+  went; what is left is `GameHud.tsx`, which floats Home and the theme pill inside the 48px
+  fade band that already holds "↑ Earlier", where they cost no height. The strip ignores the
+  pointer between its two controls. How to Play, Reset Hints, dark mode, Profile and the update
+  popup are on Home only, since they lived in the bar's Menu. **Mid-game Restart went with the
+  bar** and was not rehomed: Restart is offered at game over, in the bottom bar. The pill's
+  width is `min(9.5rem, 50% - 3rem)` so a long pairing name stays clear of the centred label
+  on a 320px screen, where it runs to three lines.
+- **The hand bar rises from below the screen once the board has faded in** (`.hand-rise` in
+  `index.css`): 300ms of delay for Game's root fade, which starts as the intro screen leaves,
+  then 450ms of travel. It is a transform on a bar that keeps its place in the layout, never
+  a height change or a late mount, because the timeline centres its opening card once and
+  the board must be its final height on the first frame. It plays once per `Game` mount, so
+  also on a resumed daily and a review; it does not replay at a multiplayer hand-off or when
+  the bar turns into the game-over buttons. Reduced motion gets no animation.
 
 - **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
   written. Landscape on the timeline (228×70 on a phone, 280×96 from `sm`; art across the left
@@ -82,8 +99,8 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   pages; the panel components in `src/components/panels/` are mounted by the pager. **The top
   bar shows the same five nav buttons on every non-game page.**
 - **`TopBar` takes an optional `onNavClick`**: when provided the buttons scroll the pager,
-  when absent they navigate to the tab's path. The in-game bar
-  (`Game.tsx`) deliberately shows Home and Menu only.
+  when absent they navigate to the tab's path. A game mounts no `TopBar` at all (see
+  Gameplay layout).
 - **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Stats and
   Timeline. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalls the
   iOS scroll-snap gesture. `TimelinePanel` additionally holds its (unvirtualised) timeline back
@@ -118,7 +135,7 @@ makes this worth having: without it, a finished board is a score.
   count the game a second time — lifetime stats, the cadence streak, the collection, a duplicate
   `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
   and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
-  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
+  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the floating
   Home skips the "progress will be lost" confirm.
 - **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
   events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
@@ -194,7 +211,7 @@ the pointer sits on the insertion boundary, which is where the marker is — so 
 near the board's top and bottom as well. It would read only at the _ends_, where the rail's
 growth extends a whole row beyond the card. Rendering it to `body` at `z-index: 1001` in viewport
 coordinates fixes both without changing how it looks — **inside a fixed clip box the size of the
-board**, because it must clear the overlay without ever reaching the hand bar or the top bar, and
+board**, because it must clear the overlay without ever reaching the hand bar or the status bar, and
 z-index alone cannot express that: `#root` is its own stacking context at `z-index: 1`, so the
 overlay on `body` is above every piece of app chrome and anything clearing the overlay clears the
 chrome too. At the board's edges the marker and its glow are simply cut off, which against the
@@ -459,9 +476,9 @@ and do not improve performance, while hints of this shape do.
   wants the explanations back. A plain row like every other action: it closes the drawer and
   says nothing else — no confirm and no confirmation text, because nothing is lost.
   `resetHintsSeen` also **dispatches
-  a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
-  `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
-  reset during a game would silently do nothing until the next one.
+  a `when-hints-reset` event** (`subscribeHintsReset`), which dates from when the menu was
+  reachable mid-game: `useOnboardingHints` reads storage once per mount, so a reset during a
+  game needed the broadcast. A game has no menu now, so that listener is idle in practice.
   **`useTabHint` has to listen to that broadcast too.** Its effect reads storage only when its
   deps change. `active` is one of those deps, so the strips on tabs you are not standing on
   re-arm by themselves the moment you navigate to them, and **the only strip that would stay

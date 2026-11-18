@@ -108,11 +108,12 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
   the "Timeline Stats" popup.
 - **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
-  pill beside the logo in game.
+  pill floating at the top right of the board in game (`span[title]` inside the game). A
+  game has no top bar: the only chrome is that pill and `[aria-label="Go home"]` top left.
 - **No modal blocks the first drag.** How to Play opens from the menu only. To replay a
   fresh install's hints,
   `localStorage.removeItem('when-hints-seen')` — or click **Reset Hints** in the burger
-  menu, which also works mid-game (it broadcasts, so the hook re-reads on the spot).
+  menu on Home (a game has no menu).
 - **Onboarding hint strips:** one-line pills in `[role="status"]` (the in-game one sits
   just above the hand; each home tab has one under its heading). They appear once per
   install, never block a drag (the in-game ones are dismissed by a drag start), and
@@ -135,7 +136,11 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   pills race each other, which is where bugs hide. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
   the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the
   bottom-left counter button for `stats`, the cycle button for `swap`.
-- **The menu drawer:** opened by `[aria-label="Open menu"]`. It does **not** close on
+- **The hand bar slides in.** It rises from below the screen over about 750 ms after the
+  board mounts (`.hand-rise`), so read `div.cursor-grab`'s box only after that, or the drag
+  starts from a position the card has already left.
+- **The menu drawer** (Home and the info pages only, never in a game): opened by
+  `[aria-label="Open menu"]`. It does **not** close on
   Escape, and while open it swallows later clicks, so close it with
   `[aria-label="Close menu"]` (or reload) before driving anything else.
 - **Home → Custom tab → start a game:** nav button `[aria-label="Custom game"]`, then

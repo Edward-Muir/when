@@ -127,8 +127,8 @@ ship.
 
 ### A6. The hand card is the _last_ tab stop, behind every placed card
 
-Tab order in game: wordmark "Go home" → nav "Go home" → "Open menu" → every timeline card in
-order → … → hand card. At a 27-card timeline that is 30 tab presses to reach the only control
+Tab order in game: the floating "Go home" → every timeline card in
+order → … → hand card. At a 27-card timeline that is 28 tab presses to reach the only control
 that does anything. Fix: give the hand card a low positive tab position in the DOM order or move
 the bottom bar ahead of the scroll region, once A5 makes it worth reaching.
 
@@ -259,10 +259,8 @@ constrain to the same column.
 
 ## D. Smaller things
 
-- **D1. Two "Go home" buttons in game, same `aria-label`.** In `TopBar.tsx`, the "When?"
-  wordmark and the nav icon both announce as "Go home", and
-  they do different things: the wordmark calls `onHomeClick` directly, the icon goes through
-  `handleNav`. Give the wordmark `aria-label="When? — back to home"` or drop its button role.
+- **D1. Two "Go home" buttons in game, same `aria-label`.** Resolved: the in-game top bar and
+  its wordmark button are gone, and `GameHud.tsx` has the one "Go home".
 - **D2. Touch-only copy.** The game-over popup says "**Tap** to continue"; the Timeline tab hint
   says "**Tap** the sliders to filter it"; `HowToPlayModal` and `hintCopy.ts` are written for
   fingers throughout. Neutral wording ("Continue", "Use the sliders…") covers both.

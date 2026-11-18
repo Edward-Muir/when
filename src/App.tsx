@@ -268,7 +268,7 @@ function App({
       )}
       {(state.phase === 'playing' || state.phase === 'gameOver') && (
         <Game
-          // Keyed by deal: a mid-game restart goes playing -> playing, and the board's own
+          // Keyed by deal: a re-deal straight into play goes playing -> playing, and the board's own
           // state (hints, end-of-game sequence, placement feedback) must start over with it.
           key={`game-${gameKey}`}
           state={state}
@@ -279,7 +279,6 @@ function App({
           showGameOverPopup={showGameOverPopup}
           dismissPopup={dismissPopup}
           onRestart={() => restartGame()}
-          onRestartMidGame={() => restartGame({ skipIntro: true })}
           onNewGame={handlePlayAgain}
           newlyUnlockedAchievements={newlyUnlockedAchievements}
           gameMilestones={gameMilestones}

@@ -921,8 +921,27 @@ input,
   }
 }
 
+/* The hand bar's entrance: it rises from below the screen once the board has faded in, which
+   is the 300ms delay (Game's root fade, starting as the intro screen leaves). A transform on a
+   bar that keeps its place in the layout, not a height or a late mount: the board must be its
+   final height from the first frame, because the timeline centres its opening card once.
+   `backwards` holds the bar off screen through the delay and leaves no transform behind. */
+@keyframes handRise {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.hand-rise {
+  animation: handRise 450ms cubic-bezier(0.2, 0.8, 0.2, 1) 300ms backwards;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
+  .hand-rise,
   .animate-shake-light,
   .animate-shake-medium,
   .animate-shake-heavy,
