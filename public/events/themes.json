@@ -21557,7 +21557,10 @@
     "year": -400,
     "category": "science",
     "description": "Greek physicians of the Hippocratic school declared the brain, not the heart, the seat of thought, joy and madness.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "bethlem-hospital-first-patients",
@@ -21565,7 +21568,10 @@
     "year": 1247,
     "category": "medicine",
     "description": "A London priory began housing the mentally ill and became the infamous asylum that gave English the word bedlam.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "weyer-witches-mentally-ill",
@@ -21573,7 +21579,10 @@
     "year": 1563,
     "category": "medicine",
     "description": "A Dutch physician argued in print that many accused witches were mentally ill and needed medicine, not punishment.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "mesmer-animal-magnetism",
@@ -21581,7 +21590,10 @@
     "year": 1774,
     "category": "medicine",
     "description": "A Viennese doctor treated patients with supposed magnetic fluids, launching the craze that later led to hypnosis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Austria"
+    ]
   },
   {
     "name": "gall-founds-phrenology",
@@ -21589,7 +21601,10 @@
     "year": 1810,
     "category": "science",
     "description": "A German physician claimed mental faculties live in distinct brain regions and can be read from bumps on the skull.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "phineas-gage-accident",
@@ -21597,7 +21612,10 @@
     "year": 1848,
     "category": "medicine",
     "description": "An iron rod blasted through a railway foreman's skull and he survived, though his personality was said to change.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "broca-speech-area",
@@ -21605,7 +21623,10 @@
     "year": 1861,
     "category": "science",
     "description": "A French surgeon linked damage in one region of a patient's left frontal brain to the loss of speech.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "wundt-leipzig-psychology-lab",
@@ -21613,7 +21634,10 @@
     "year": 1879,
     "category": "science",
     "description": "A German professor founded a Leipzig laboratory devoted to measuring the mind, making psychology an experimental science.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "cajal-neuron-doctrine",
@@ -21621,7 +21645,10 @@
     "year": 1888,
     "category": "science",
     "description": "A Spanish anatomist drew nerve cells as individual units rather than a continuous web, founding the neuron doctrine.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "james-principles-of-psychology",
@@ -21629,7 +21656,10 @@
     "year": 1890,
     "category": "science",
     "description": "A Harvard thinker's two-volume work introduced the stream of consciousness and shaped the new science of mind.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "binet-simon-intelligence-test",
@@ -21637,7 +21667,10 @@
     "year": 1905,
     "category": "science",
     "description": "A French psychologist and his colleague built the first practical test to identify schoolchildren needing extra help.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "watson-behaviorist-manifesto",
@@ -21645,7 +21678,10 @@
     "year": 1913,
     "category": "science",
     "description": "An American psychologist declared that psychology should study only observable behaviour, not introspection.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "little-albert-experiment",
@@ -21653,7 +21689,10 @@
     "year": 1920,
     "category": "science",
     "description": "Researchers taught a baby to fear a white rat by pairing it with a loud noise, a notorious study of learned emotion.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rorschach-inkblot-test",
@@ -21661,7 +21700,10 @@
     "year": 1921,
     "category": "science",
     "description": "A Swiss psychiatrist published ten symmetrical inkblots that people interpret, meant to reveal hidden personality traits.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "moniz-first-lobotomy",
@@ -21669,7 +21711,10 @@
     "year": 1935,
     "category": "medicine",
     "description": "A Portuguese neurologist had surgeons cut into a patient's frontal lobes to treat mental illness, a method later condemned.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Portugal"
+    ]
   },
   {
     "name": "first-electroconvulsive-therapy",
@@ -21677,7 +21722,10 @@
     "year": 1938,
     "category": "medicine",
     "description": "Italian doctors gave a patient with schizophrenia a brief electric shock to the head to induce a therapeutic seizure.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "maslow-hierarchy-of-needs",
@@ -21685,7 +21733,10 @@
     "year": 1943,
     "category": "science",
     "description": "An American psychologist arranged human motivations in a pyramid, from food and safety up to self-fulfilment.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "cade-lithium-for-mania",
@@ -21693,7 +21744,10 @@
     "year": 1949,
     "category": "medicine",
     "description": "An Australian psychiatrist found that a simple salt calms manic patients, beginning modern mood-stabiliser therapy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Australia"
+    ]
   },
   {
     "name": "chlorpromazine-first-antipsychotic",
@@ -21701,7 +21755,10 @@
     "year": 1952,
     "category": "medicine",
     "description": "French doctors found a drug that calmed psychosis, emptying wards of restraints and opening the age of psychiatric medicine.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "patient-hm-memory-loss",
@@ -21709,7 +21766,10 @@
     "year": 1953,
     "category": "medicine",
     "description": "Surgery to cure a man's epilepsy removed parts of both temporal lobes and left him unable to form new memories.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "milgram-obedience-experiment",
@@ -21717,7 +21777,10 @@
     "year": 1961,
     "category": "science",
     "description": "Volunteers told to give what seemed painful shocks to a stranger mostly kept obeying the experimenter.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "kubler-ross-five-stages-grief",
@@ -21725,7 +21788,10 @@
     "year": 1969,
     "category": "medicine",
     "description": "A Swiss-American psychiatrist published a bestseller describing five stages people pass through when facing death.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "stanford-prison-experiment",
@@ -21733,7 +21799,10 @@
     "year": 1971,
     "category": "science",
     "description": "Students playing guards and prisoners in a basement mock jail turned cruel so fast that the study was stopped early.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "rosenhan-pseudopatients",
@@ -21741,7 +21810,10 @@
     "year": 1973,
     "category": "science",
     "description": "Healthy volunteers feigned hearing voices to enter psychiatric hospitals, then acted normally yet stayed for weeks.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "gardner-multiple-intelligences",
@@ -21749,7 +21821,10 @@
     "year": 1983,
     "category": "science",
     "description": "A Harvard psychologist argued that intelligence has several independent forms, such as musical, spatial and interpersonal.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "prozac-reaches-market",
@@ -21757,7 +21832,10 @@
     "year": 1987,
     "category": "medicine",
     "description": "An American drug company launched an antidepressant that became one of the most prescribed and discussed medicines ever.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "optogenetics-switches-neurons",
@@ -21765,6 +21843,9 @@
     "year": 2005,
     "category": "science",
     "description": "Researchers showed that light-sensitive proteins let them switch chosen brain cells on and off with flashes of light.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   }
 ]
