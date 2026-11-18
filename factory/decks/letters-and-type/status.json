@@ -3,7 +3,7 @@
   "name": "Letters & Type",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T13:18:46.443Z",
-  "updated_at": "2026-11-18T16:09:56.599Z",
+  "updated_at": "2026-11-18T16:12:22.175Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,11 +79,11 @@
       "updated_at": "2026-11-18T15:08:38.775Z"
     },
     "johnston-london-typeface": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Legible lettering is painted in: the sign reads UNDERGROUND and a misspelled UNDERGROUN, and the sheets show ABCDEF GHIJK KL. Regenerate with no readable letters on the sign or paper.",
-      "sha256": "4385719f65d69e93ee1c434613938371b77c59a43fe79de54c1984bc0e074861",
-      "updated_at": "2026-11-18T15:08:38.810Z"
+      "sha256": "ad5fe577020a9771c9687c8b3c98aa582d2db6521da80f61fca563c7653029c5",
+      "updated_at": "2026-11-18T16:12:22.175Z"
     },
     "futura-typeface-released": {
       "state": "pending",
