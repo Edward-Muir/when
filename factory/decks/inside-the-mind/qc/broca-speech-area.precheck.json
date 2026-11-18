@@ -1,0 +1,20 @@
+{
+  "slug": "broca-speech-area",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "04b654b1e41bd2d79893a2d83e7c8911a728e11839ee935b05c78aeb6cc4f44f",
+  "dhash": "16161212431342c1",
+  "nearest": {
+    "deck": {
+      "slug": "bethlem-hospital-first-patients",
+      "distance": 23
+    },
+    "catalogue": {
+      "slug": "euripides-medea",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

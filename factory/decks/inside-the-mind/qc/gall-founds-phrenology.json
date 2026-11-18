@@ -1,0 +1,15 @@
+{
+  "slug": "gall-founds-phrenology",
+  "description": "A painting of a dim 19th-century room. A man in a dark frock coat and white cravat stands behind a seated, balding older man and presses both hands on his head. Plaster busts with painted grid lines sit on shelves on the left, one skull-like, lit by candles. Spectators in period dress sit in the background beneath anatomical prints. No legible text, no frame, no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

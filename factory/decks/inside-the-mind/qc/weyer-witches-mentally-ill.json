@@ -1,0 +1,15 @@
+{
+  "slug": "weyer-witches-mentally-ill",
+  "description": "An oil-style painting of a bearded older man in a dark fur-collared robe writing with a quill in a large open book by candlelight. Through a leaded window behind him, a crowd gathers in a town square around a pyre or stake. The desk also holds an inkwell, dividers and a magnifier, and the pages show only illegible scribbles. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

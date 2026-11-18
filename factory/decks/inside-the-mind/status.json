@@ -3,7 +3,7 @@
   "name": "Inside the Mind",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T05:17:11.866Z",
-  "updated_at": "2026-11-18T06:33:17.965Z",
+  "updated_at": "2026-11-18T07:08:15.121Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "hippocratics-brain-seat-of-mind": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9d91b3ad09d017e6825189e8b2fd77965003014428f0901e783a084614310bd6",
-      "updated_at": "2026-11-18T06:09:37.628Z"
+      "updated_at": "2026-11-18T07:08:14.801Z"
     },
     "bethlem-hospital-first-patients": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "12d028ba5e277cf326ee74b498ec973754c62371fda32571f7cd1ede93c37542",
-      "updated_at": "2026-11-18T06:12:13.322Z"
+      "updated_at": "2026-11-18T07:08:14.835Z"
     },
     "weyer-witches-mentally-ill": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a5ad45a2dc7ed62aa3e5315953bab3baffe98ef21a3e01c3936001b144ab8682",
-      "updated_at": "2026-11-18T06:14:52.659Z"
+      "updated_at": "2026-11-18T07:08:14.868Z"
     },
     "mesmer-animal-magnetism": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "863ffa41994220af933310fae88894b4606df3314e65d2fbe8a44ee76b3220b1",
-      "updated_at": "2026-11-18T06:17:33.007Z"
+      "updated_at": "2026-11-18T07:08:14.901Z"
     },
     "gall-founds-phrenology": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7462084ba0bc3138fe781cfc294f0d490b2ffcd2b17608831aab24bc5a3405d7",
-      "updated_at": "2026-11-18T06:20:06.673Z"
+      "updated_at": "2026-11-18T07:08:14.935Z"
     },
     "phineas-gage-accident": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Visible blood and wounds on the forehead, shirt, hand, knee and the rod. Repaint without blood or a visible head wound.",
       "sha256": "5b79718ff8cb33e384b58fe822cc4462546918c4ecc545f599ecf95f10c1bce6",
-      "updated_at": "2026-11-18T06:22:43.933Z"
+      "updated_at": "2026-11-18T07:08:14.970Z"
     },
     "broca-speech-area": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "04b654b1e41bd2d79893a2d83e7c8911a728e11839ee935b05c78aeb6cc4f44f",
-      "updated_at": "2026-11-18T06:25:22.456Z"
+      "updated_at": "2026-11-18T07:08:15.006Z"
     },
     "wundt-leipzig-psychology-lab": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d592968fea952ba2942f0c1f5837fee80b2f58e7d6873428ff095ea6b12842be",
-      "updated_at": "2026-11-18T06:28:07.565Z"
+      "updated_at": "2026-11-18T07:08:15.046Z"
     },
     "cajal-neuron-doctrine": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "eaad36a6cd4e243b4037632106d4d2e11b917b3d35813bbc0bbec9c84ec18d02",
-      "updated_at": "2026-11-18T06:30:41.768Z"
+      "updated_at": "2026-11-18T07:08:15.084Z"
     },
     "james-principles-of-psychology": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6d0d66baa00d0b4e1c4c323324c222a91e94eb482494f63cd927869dc7eac9bf",
-      "updated_at": "2026-11-18T06:33:17.965Z"
+      "updated_at": "2026-11-18T07:08:15.121Z"
     },
     "binet-simon-intelligence-test": {
       "state": "pending",
