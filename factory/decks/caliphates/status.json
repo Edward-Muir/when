@@ -3,7 +3,7 @@
   "name": "The Caliphs",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T02:09:44.613Z",
+  "updated_at": "2026-11-18T02:12:15.913Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-18T02:09:44.613Z"
     },
     "rashidun-victory-nahavand": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9513395ac0d6d334f6381f5f844b9b0474b11d09b2be5eda335371ade0d3062b",
+      "updated_at": "2026-11-18T02:12:15.913Z"
     },
     "battle-of-the-camel-caliph-ali": {
       "state": "pending",
