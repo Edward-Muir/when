@@ -1,21 +1,26 @@
 {
   "deck": "caliphates",
   "name": "The Caliphs",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-18T01:15:34.481Z",
-  "updated_at": "2026-11-18T01:15:34.481Z",
+  "updated_at": "2026-11-18T02:09:44.613Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-18T01:15:34.481Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-18T02:09:44.613Z"
     }
   ],
   "slugs": {
     "abu-bakr-first-caliph": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "414cf9f140b2c355269f848663efa3859b1bb76df7521cc58b8c0078761c4c48",
+      "updated_at": "2026-11-18T02:09:44.613Z"
     },
     "rashidun-victory-nahavand": {
       "state": "pending",
