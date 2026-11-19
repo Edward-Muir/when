@@ -1,0 +1,15 @@
+{
+  "slug": "milgram-obedience-experiment",
+  "description": "A man in a white shirt and dark tie sits at a grey metal control panel with rows of switches, levers and dials, one hand reaching toward the switches and his face strained. A man in a grey lab coat stands behind him with a hand on his shoulder. The room is dark and plain, with a closed door, a single overhead light, and a tiled wall. The mood is tense and sombre, and the clothing and equipment look mid-twentieth century. No text, numbers or frame are visible, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

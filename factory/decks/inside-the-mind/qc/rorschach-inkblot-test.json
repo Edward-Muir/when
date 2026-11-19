@@ -1,0 +1,15 @@
+{
+  "slug": "rorschach-inkblot-test",
+  "description": "An older man in glasses and a dark wool suit holds up a white card with a symmetrical black inkblot, while a younger man in profile, chin resting on his hand, looks at it. They sit in a dim study with bookshelves and stacked papers on a desk, in an oil-painting style.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

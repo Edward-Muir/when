@@ -1,0 +1,39 @@
+{
+  "id": "inside-the-mind",
+  "name": "Inside the Mind",
+  "scope": "Yes if it is a landmark of psychology, psychiatry or brain science",
+  "boundary": "Inside the Mind owns the mind and brain, psychiatric drugs included; other medicines go to Wonder Drugs, scanners to Seeing Inside.",
+  "neighbours": [
+    "wonder-drugs",
+    "seeing-inside",
+    "under-the-knife"
+  ],
+  "grid": {
+    "categories": [
+      "science",
+      "medicine"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars",
+      "coldWar"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Bethlem takes its first patients (1247)",
+    "Pinel unchains the insane (1793)",
+    "Phineas Gage's accident (1848)",
+    "Broca finds the speech area (1861)",
+    "Wundt opens first psychology lab (1879)",
+    "Freud's Interpretation of Dreams (1899)",
+    "Binet's intelligence test (1905)",
+    "Rorschach's inkblot test (1921)",
+    "Chlorpromazine, the first antipsychotic (1952)",
+    "Milgram's obedience experiment (1961)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

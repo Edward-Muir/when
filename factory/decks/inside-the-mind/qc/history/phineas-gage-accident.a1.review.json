@@ -1,0 +1,15 @@
+{
+  "slug": "phineas-gage-accident",
+  "description": "A seated man in a waistcoat and light shirt, in a dark rocky tunnel, holds his bloodied head with one hand while the other rests on the rock. An iron tamping rod with a bloody tip lies on the stone beside him. Three men in hats stand behind, one with his hands over his mouth, and one reaches out in alarm. Shovels lean at the edges, and a shaft of light falls from above.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Visible blood and wounds: the man's forehead and scalp are bloodied, and blood shows on his shirt, hand and trousers, and the rod's tip is bloodied. The card's scene asks for a standing worker on a rocky cutting, but the picture shows him seated in a tunnel. Remove the blood and wounds, or keep the wound off-camera and show the aftermath at a distance."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "broca-speech-area",
+  "description": "An elderly man with grey hair and side whiskers, in a dark coat and bow tie, holds a pinkish human brain in both hands and points one finger at its surface beside a bright window. A younger man in round spectacles and a dark suit stands behind him, holding a notepad and quill. On a wooden table at the lower left are a glass jar, a folded cloth, forceps and scissors. The style is a dark, painterly oil look with 19th-century dress and furnishings. There is no visible text, frame or border, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

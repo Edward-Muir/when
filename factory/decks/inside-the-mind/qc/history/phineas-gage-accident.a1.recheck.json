@@ -1,0 +1,15 @@
+{
+  "slug": "phineas-gage-accident",
+  "description": "A seated man in a vest and torn shirt in a dark rocky cutting clutches his head, with a bloody gash on his forehead and blood on his shirt, hand and trousers. A long iron rod with a bloodied tip lies beside him. Three hatted workmen stare in alarm behind him, and shovels lean at the edges. No text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "fail",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Visible blood and wounds on the forehead, shirt, hand, knee and the rod. Repaint without blood or a visible head wound."
+}
