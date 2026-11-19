@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T05:23:50.960Z",
+  "updated_at": "2026-11-19T05:28:47.323Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,10 +128,11 @@
       "updated_at": "2026-11-19T05:23:50.960Z"
     },
     "cohen-boyer-recombinant-dna": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7a1563e7b4e6480b4ebfaf73ca789237fffcffab743aed3c768e2472e9e8d5d0",
+      "updated_at": "2026-11-19T05:28:47.323Z"
     },
     "mullis-invents-pcr": {
       "state": "pending",
