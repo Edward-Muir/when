@@ -12,7 +12,13 @@ guess wrong.
 index.tsx                      # BrowserRouter + the routes below
 ├── App.tsx                    # Phase router, viewport height fix
 │   ├── ModeSelect.tsx         # The home screen: five-tab pager via ModePager.tsx
-│   │   ├── TopBar.tsx              # Home + nav (also mounted by Game)
+│   │   ├── TopBar.tsx              # Home + nav; scrolls the pager or routes to a tab's path
+│   │   │   ├── Menu.tsx                # Burger drawer: Dark Mode, Daily reminder (native), Share App,
+│   │   │   │   │                       # Download the App (iOS web) / Add to Home Screen, How to Play,
+│   │   │   │   │                       # Reset Hints, What's New, Help & FAQ, Send Feedback,
+│   │   │   │   │                       # Privacy Policy, Terms of Service
+│   │   │   │   └── HowToPlayModal.tsx  # The rules in text; opens from the menu only
+│   │   │   └── UpdatePopup.tsx         # (child of TopBar) — lists the new version's notes
 │   │   ├── DailyCta.tsx            # Daily hero's Play / Share / Submit button
 │   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: filters + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
@@ -30,13 +36,9 @@ index.tsx                      # BrowserRouter + the routes below
 │       │       └── GalleryFlight.tsx # The cards in flight from the board (body portal)
 │       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
-│       │   ├── Menu.tsx                # Burger drawer: Dark Mode, Daily reminder (native), Share App,
-│       │   │   │                       # Download the App (iOS web) / Add to Home Screen, How to Play,
-│       │   │   │                       # Reset Hints, What's New, Help & FAQ, Send Feedback,
-│       │   │   │                       # Privacy Policy, Terms of Service
-│       │   │   └── HowToPlayModal.tsx  # The rules in text; opens from the menu only
-│       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game) — lists the new version's notes
+│       ├── GameHud.tsx        # All of a game's chrome: the wordmark, the theme label, Home, light/dark. A game
+│       │                      # mounts no TopBar, so no Menu and no UpdatePopup either
+│       ├── HandBar.tsx        # The bottom bar's shell, with the tab that tucks the hand away
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
 ├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig
@@ -150,6 +152,7 @@ Low to high. Verify against source before relying on it — grep `z-` in the thr
 | Card stack (back/mid/front) | z-0/1/2 | ActiveCardDisplay.tsx                          |
 | Timeline scroll content     | z-10    | Timeline.tsx:409                               |
 | Timeline fade overlays      | z-30    | Timeline.tsx:392, 471                          |
+| Wordmark, theme label, Home | z-[34]  | GameHud.tsx (in Game's timeline area)          |
 | Onboarding hint strip       | z-[35]  | HintStrip.tsx (in Game's timeline area)        |
 | Bottom bar (hand zone)      | z-40    | Game.tsx                                       |
 | Placement vignette          | z-[45]  | Game.tsx                                       |

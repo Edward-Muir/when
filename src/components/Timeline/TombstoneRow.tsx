@@ -7,6 +7,7 @@ import Card from '../Card';
 import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
+import { LANDSCAPE_CARD_CLASS } from '../../utils/cardSize';
 
 export { TRAVEL_EASE };
 
@@ -123,7 +124,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
       {/* Card slot with a real card's footprint; the tombstone card slides right over it
           while the ghost drops in */}
       <div className="flex-1 pl-3">
-        <div className="relative w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]">
+        <div className={`relative ${LANDSCAPE_CARD_CLASS}`}>
           {ghostEvent && (
             <div className="absolute inset-0 opacity-ghost">
               <Card event={ghostEvent} size="landscape" />
