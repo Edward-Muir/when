@@ -1,0 +1,15 @@
+{
+  "slug": "first-restriction-enzyme",
+  "description": "A pair of large metal scissors with ornate, knotted, curled handles cuts through a glowing double helix of DNA. The strand runs diagonally across a dark, painted laboratory with glassware, a test tube rack, an amber flask and a beaker on a wooden bench. Oil-painting style, warm light on the strand, dark brown background.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

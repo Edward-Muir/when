@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T05:37:31.517Z",
+  "updated_at": "2026-11-19T06:08:44.003Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,53 +86,53 @@
       "updated_at": "2026-11-19T03:08:17.708Z"
     },
     "one-gene-one-enzyme": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "99ab7f80120e42591ffa691cf400ca3f10a9ce420df322dbef0f7f463a37d7f3",
-      "updated_at": "2026-11-19T05:10:06.756Z"
+      "updated_at": "2026-11-19T06:08:43.719Z"
     },
     "avery-dna-heredity": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ed87ae0213c1929a46a6a96726bb9d50812ee3a8b85f228f23c03c32d9a1fc91",
-      "updated_at": "2026-11-19T05:12:44.896Z"
+      "updated_at": "2026-11-19T06:08:43.753Z"
     },
     "hershey-chase-experiment": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ac80d7b196da266596b78568403534be925c8cae043728c8a515a40d25c42b6a",
-      "updated_at": "2026-11-19T05:16:17.576Z"
+      "updated_at": "2026-11-19T06:08:43.788Z"
     },
     "human-46-chromosomes": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "f77320a2c03bc00b57dede78380653c25b4b85f4482c116f5b67a5f5d27266cb",
-      "updated_at": "2026-11-19T05:18:50.223Z"
+      "updated_at": "2026-11-19T06:08:43.819Z"
     },
     "genetic-code-cracked": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The chalkboard grid includes readable letters and numbers (e.g. 'U33', 'AIC', 'H33', '333', 'CnC'). Repaint the grid with purely abstract, non-letter, non-numeral marks.",
       "sha256": "eec8a76d0f3bb83215ebbad0c059850bcde15724b5ccae2e1087ad9a107577f4",
-      "updated_at": "2026-11-19T05:21:21.583Z"
+      "updated_at": "2026-11-19T06:08:43.850Z"
     },
     "first-restriction-enzyme": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b901cd983a06c652e43f46a74078152afb411f78c18d5f66873058b4b1218dc5",
-      "updated_at": "2026-11-19T05:23:50.960Z"
+      "updated_at": "2026-11-19T06:08:43.886Z"
     },
     "cohen-boyer-recombinant-dna": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7a1563e7b4e6480b4ebfaf73ca789237fffcffab743aed3c768e2472e9e8d5d0",
-      "updated_at": "2026-11-19T05:28:47.323Z"
+      "updated_at": "2026-11-19T06:08:43.925Z"
     },
     "mullis-invents-pcr": {
       "state": "pending",
@@ -141,18 +141,18 @@
       "sha256": null
     },
     "he-jiankui-gene-edited-babies": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2fb24a92ef186014630d0ac61a407b04db85dcc4017621bdaec6f05b4d0b2fc0",
-      "updated_at": "2026-11-19T05:34:51.046Z"
+      "updated_at": "2026-11-19T06:08:43.965Z"
     },
     "first-crispr-therapy-approved": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2692f5beaab20087632053b305534e8f0c808112a0aff015cc4debcfef75aa70",
-      "updated_at": "2026-11-19T05:37:31.517Z"
+      "updated_at": "2026-11-19T06:08:44.003Z"
     },
     "custom-base-editing-infant": {
       "state": "pending",

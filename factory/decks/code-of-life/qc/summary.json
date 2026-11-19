@@ -68,5 +68,68 @@
     "by": "review",
     "attempts": 1,
     "description": "A dark, oil-painted still life. An old brass and black microscope stands on a wooden table, with dried ears of multicolored maize (red, yellow, purple kernels) and dry husks beside it. In the foreground an open book with pale pages shows two pencil or ink drawings of rod-shaped chromosome-like forms, one with a knob and a crossing point where they seem to exchange segments. Background has old leather books, glass bottles and a pressed-plant specimen box. No frame or border is visible, and there is no legible text."
+  },
+  "one-gene-one-enzyme": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-style painting on a dark background. A wooden rack holds a row of six glass test tubes, each plugged with fluffy white cotton, and several tubes contain pinkish-orange and grey fuzzy growths over a pale medium. In front stand amber glass bottles with blank paper labels, a clear glass bottle, a glass beaker, a porcelain dish, a flask of yellow liquid, and dried leaves and a glass tube on a worn wooden bench. No legible text, no frame visible, and the painting runs edge to edge."
+  },
+  "avery-dna-heredity": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, warm oil-style still life of a laboratory bench. A glass Erlenmeyer flask of clear liquid holds faint white stringy threads. At upper right a hand holds a glass rod wound with white fibrous strands, lifting them above a small glass beaker. Another hand rests at the lower right. Behind are an old metal apparatus, amber glass bottles with worn labels, a lit candle, a rack of test tubes and petri dishes in the lower left. The painting runs edge to edge with no frame."
+  },
+  "hershey-chase-experiment": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A glass kitchen-style blender with a cloudy amber liquid sits on a dark laboratory bench. Beside it are a test tube rack holding a tube with a pale sediment, and a glass pipette. On the left, an open spiral notebook has small pencil sketches of angular, legged shapes that look like bacteriophages. A glass flask and a stand with tubing sit in the dim background. The painting is oil-like and fills the whole square, with no frame or visible text."
+  },
+  "human-46-chromosomes": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil-painted laboratory scene in warm brown tones. A weathered, older hand holds a pale sheet with rows of dark, short rod-like marks, which look like chromosomes. Behind it stand a brass-and-black compound microscope and, on the wooden bench, a glass petri dish with cultured material, a small amber dropper bottle, and a clear glass jar. A corner shows forceps on a cloth. The painting fills the frame edge to edge, with no visible text or border."
+  },
+  "genetic-code-cracked": {
+    "state": "qc-fail",
+    "reason": "The chalkboard grid includes readable letters and numbers (e.g. 'U33', 'AIC', 'H33', '333', 'CnC'). Repaint the grid with purely abstract, non-letter, non-numeral marks.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A man in a pale lab coat, seen from behind in profile, writes with chalk on a large dark chalkboard in a dim laboratory. The board holds a grid of chalk marks, mostly rune-like glyphs, but the top rows plainly read as characters such as U33, AIC, H33, CnC, L33 and 333. A string of beads of varied shapes hangs at the right edge of the board. Shelves of books and glassware sit in the shadows. The painting runs edge to edge; only the board's own wooden frame is part of the scene."
+  },
+  "first-restriction-enzyme": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A pair of large metal scissors with ornate, knotted, curled handles cuts through a glowing double helix of DNA. The strand runs diagonally across a dark, painted laboratory with glassware, a test tube rack, an amber flask and a beaker on a wooden bench. Oil-painting style, warm light on the strand, dark brown background."
+  },
+  "cohen-boyer-recombinant-dna": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An oil painting in dark, warm tones. A large DNA double helix forms a ring across the middle, with one section splayed open at its ends and a thin, different-coloured strand threaded into the gap. Behind it are shelves of glass bottles and flasks, and in the foreground a petri dish of speckled colonies sits on a bench beside tweezers, a flask and an open notebook. No people are visible. The painting runs edge to edge with no frame or border."
+  },
+  "he-jiankui-gene-edited-babies": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, painterly clinical room. A glass micropipette descends from the top into a petri dish holding a small, pale, curled human embryo or early fetus. Two empty stainless-steel bassinets with folded towels sit in the foreground. Wall monitors and an IV-style pole appear at the edges. No visible text, frame or border."
+  },
+  "first-crispr-therapy-approved": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "An IV bag on a metal stand hangs over an empty reclining hospital chair in a dim room, its line running down toward the seat. On the right, against a dark red background, a crescent-shaped red blood cell sits beside a round, plump red cell. The painting is oil-like and fills the frame edge to edge. No people, no visible text."
   }
 }
