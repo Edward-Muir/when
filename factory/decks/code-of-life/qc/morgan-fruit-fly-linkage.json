@@ -1,0 +1,15 @@
+{
+  "slug": "morgan-fruit-fly-linkage",
+  "description": "A painterly, dark-toned laboratory scene. A large glass bottle in the centre is crowded with small fruit flies and has a yellow-brown food mass at its base. A hand holds a brass magnifying glass over the bottle, and the lens shows a fly with two others nearby. Behind it are wooden shelves of smaller bottles with cotton plugs, retort stands and glassware in warm lamplight. A notebook with scribbled pages and a screwdriver lie on the bench at the bottom. No legible text, no frame; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

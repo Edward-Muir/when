@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:33:15.026Z",
+  "updated_at": "2026-11-19T03:08:17.708Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "miescher-isolates-nuclein": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "2e37249e701a8efcb668b5e10535a293a8fc123df99caff6b8ec33f9cf29463b",
-      "updated_at": "2026-11-19T02:10:31.141Z"
+      "updated_at": "2026-11-19T03:08:17.393Z"
     },
     "flemming-chromosomes-mitosis": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "b8178d0d55b74b4556a61940389bcc956e8ed7a3a0375d1e3a6aa22307980423",
-      "updated_at": "2026-11-19T02:12:46.811Z"
+      "updated_at": "2026-11-19T03:08:17.427Z"
     },
     "mendel-work-rediscovered": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8de0fb3d951ccf4028a410a236fdee0c494070dad1caea1af94996f1472a00e4",
-      "updated_at": "2026-11-19T02:15:46.368Z"
+      "updated_at": "2026-11-19T03:08:17.459Z"
     },
     "chromosome-theory-inheritance": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1ae2f0e56ab8686b92e2c98392b83360dc60f549d5b7bee4bb0c7591382699f3",
-      "updated_at": "2026-11-19T02:17:59.627Z"
+      "updated_at": "2026-11-19T03:08:17.491Z"
     },
     "johannsen-coins-gene": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5ffa3426229560c23132a61197f1fb58f0eb3c4da4fc87440e0b56d16c69410f",
-      "updated_at": "2026-11-19T02:20:12.623Z"
+      "updated_at": "2026-11-19T03:08:17.523Z"
     },
     "morgan-fruit-fly-linkage": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6050dd3d246905a1f0d0e0db0af76e0d25dc38d811d02a8e74a29b79f1888a22",
-      "updated_at": "2026-11-19T02:22:25.423Z"
+      "updated_at": "2026-11-19T03:08:17.557Z"
     },
     "sturtevant-first-genetic-map": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "14f96fb0f658728a505e66808df592ed38c3f94db8f69726c7279193f0bc1d92",
-      "updated_at": "2026-11-19T02:25:05.840Z"
+      "updated_at": "2026-11-19T03:08:17.598Z"
     },
     "muller-xray-mutations": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3694b7551967d597b98004743ef9f48081d7108b0394d85bd23f0b87945fe249",
-      "updated_at": "2026-11-19T02:28:16.947Z"
+      "updated_at": "2026-11-19T03:08:17.637Z"
     },
     "griffith-transforming-principle": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8e95f791c4426fb922e7a7a01bb23445918646f96a360d9e490ca05df4634e8a",
-      "updated_at": "2026-11-19T02:30:48.527Z"
+      "updated_at": "2026-11-19T03:08:17.673Z"
     },
     "mcclintock-crossing-over": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fd4bc7213e01879752cb7b8791984c9556b68fa75d1fb16646eae1c5ad82e335",
-      "updated_at": "2026-11-19T02:33:15.026Z"
+      "updated_at": "2026-11-19T03:08:17.708Z"
     },
     "one-gene-one-enzyme": {
       "state": "pending",
