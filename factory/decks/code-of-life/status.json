@@ -1,9 +1,9 @@
 {
   "deck": "code-of-life",
   "name": "Code of Life",
-  "stage": "ready-to-ship",
+  "stage": "uploaded",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T21:06:51.024Z",
+  "updated_at": "2026-11-19T22:07:05.060Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,6 +16,10 @@
     {
       "stage": "ready-to-ship",
       "at": "2026-11-19T21:06:51.024Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-19T22:07:05.060Z"
     }
   ],
   "slugs": {
