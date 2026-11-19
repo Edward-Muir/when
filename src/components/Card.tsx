@@ -3,6 +3,7 @@ import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
 import CardFace from './CardFace';
 import { getImageUrl } from '../utils/cloudinaryImage';
+import { LANDSCAPE_CARD_CLASS, SQUARE_CARD_CLASS } from '../utils/cardSize';
 
 export type CardSize = 'normal' | 'large' | 'landscape' | 'square';
 
@@ -44,10 +45,10 @@ const Card: React.FC<CardProps> = ({
       case 'large':
         return 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]';
       case 'landscape':
-        return 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]';
+        return LANDSCAPE_CARD_CLASS;
       // The hand card: the art is square, so this is the one size that shows all of it.
       case 'square':
-        return 'w-[168px] h-[168px]';
+        return SQUARE_CARD_CLASS;
     }
   };
 

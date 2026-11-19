@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.40.0](https://github.com/Edward-Muir/when/compare/v1.39.0...v1.40.0) (2026-11-19)
+
+
+### Features
+
+* **game:** hide the hand, switch theme in a game, and drop the top bar ([#149](https://github.com/Edward-Muir/when/issues/149)) ([a389a25](https://github.com/Edward-Muir/when/commit/a389a25e9471fb08e715cb6edb99dbf813803187))
+
 ## [1.39.0](https://github.com/Edward-Muir/when/compare/v1.38.0...v1.39.0) (2026-11-11)
 
 
