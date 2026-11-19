@@ -12508,229 +12508,6 @@
     ]
   },
   {
-    "name": "battle-of-ankara-timur-bayezid",
-    "friendly_name": "Timur Defeats Bayezid at Ankara",
-    "year": 1402,
-    "category": "empires",
-    "description": "Timur's army crushed the Ottomans and captured Sultan Bayezid, plunging the young state into a decade of civil war.",
-    "difficulty": "easy",
-    "regions": [
-      "Turkey",
-      "Uzbekistan",
-      "Middle East & North Africa"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-ankara-timur-bayezid_it5oj1?_a=BAMAMikS0",
-    "color": "#452e25",
-    "text_color": "light"
-  },
-  {
-    "name": "bayezid-welcomes-sephardic-jews",
-    "friendly_name": "Sultan Welcomes Sephardic Jews",
-    "year": 1492,
-    "category": "migration",
-    "description": "Fleeing expulsion from Spain, Jewish refugees were invited into Ottoman lands, settling in Salonica and Istanbul.",
-    "difficulty": "easy",
-    "regions": [
-      "Greece",
-      "Spain",
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bayezid-welcomes-sephardic-jews_vxpat6?_a=BAMAMikS0",
-    "color": "#261f1f",
-    "text_color": "light"
-  },
-  {
-    "name": "selim-i-conquers-egypt-mamluks",
-    "friendly_name": "Selim I Conquers Mamluk Egypt",
-    "year": 1517,
-    "category": "empires",
-    "description": "Sultan Selim defeated the Mamluks and took Cairo, bringing the Arab heartlands and the holy cities under Ottoman rule.",
-    "difficulty": "easy",
-    "regions": [
-      "Egypt",
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/selim-i-conquers-egypt-mamluks_itn2mc?_a=BAMAMikS0",
-    "color": "#2a1e1a",
-    "text_color": "light"
-  },
-  {
-    "name": "battle-of-mohacs-ottoman-hungary",
-    "friendly_name": "Battle of Mohacs",
-    "year": 1526,
-    "category": "warfare",
-    "description": "Suleiman's army destroyed the Hungarian royal host in under two hours, killing King Louis II and opening central Europe.",
-    "difficulty": "easy",
-    "regions": [
-      "Hungary",
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-mohacs-ottoman-hungary_juku2b?_a=BAMAMikS0",
-    "color": "#3d3126",
-    "text_color": "light"
-  },
-  {
-    "name": "treaty-of-karlowitz-ottoman",
-    "friendly_name": "Treaty of Karlowitz",
-    "year": 1699,
-    "category": "diplomacy",
-    "description": "Defeated by the Holy League, the Ottomans ceded Hungary and Transylvania to the Habsburgs in their first major territorial loss.",
-    "difficulty": "medium",
-    "regions": [
-      "Austria",
-      "Hungary",
-      "Serbia",
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-karlowitz-ottoman_r3aj4m?_a=BAMAMikS0",
-    "color": "#281f1b",
-    "text_color": "light"
-  },
-  {
-    "name": "ibrahim-muteferrika-first-printed-book",
-    "friendly_name": "First Muslim-Printed Ottoman Book",
-    "year": 1729,
-    "category": "writing",
-    "description": "Ibrahim Muteferrika, a Hungarian-born convert, ran the first Muslim-run Ottoman press and issued a dictionary in Turkish.",
-    "difficulty": "medium",
-    "regions": [
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ibrahim-muteferrika-first-printed-book_u4xcxy?_a=BAMAMikS0",
-    "color": "#281f1b",
-    "text_color": "light"
-  },
-  {
-    "name": "treaty-of-kucuk-kaynarca",
-    "friendly_name": "Treaty of Kucuk Kaynarca",
-    "year": 1774,
-    "category": "diplomacy",
-    "description": "A crushing defeat by Catherine the Great's Russia forced the Ottomans to cede Black Sea ports and free the Crimean Khanate.",
-    "difficulty": "easy",
-    "regions": [
-      "Bulgaria",
-      "Russia",
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-kucuk-kaynarca_4yqz3m?_a=BAMAMikS0",
-    "color": "#242022",
-    "text_color": "light"
-  },
-  {
-    "name": "janissaries-abolished-auspicious-incident",
-    "friendly_name": "Janissaries Abolished",
-    "year": 1826,
-    "category": "warfare",
-    "description": "Sultan Mahmud II destroyed the rebellious elite infantry corps in an Istanbul massacre, clearing the way for a modern army.",
-    "difficulty": "medium",
-    "regions": [
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/janissaries-abolished-auspicious-incident_u9v40n?_a=BAMAMikS0",
-    "color": "#3c281b",
-    "text_color": "light"
-  },
-  {
-    "name": "tanzimat-reforms-gulhane-edict",
-    "friendly_name": "Tanzimat Reforms Proclaimed",
-    "year": 1839,
-    "category": "law",
-    "description": "The Gulhane decree promised all Ottoman subjects security of life and property, launching decades of modernising reform.",
-    "difficulty": "medium",
-    "regions": [
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tanzimat-reforms-gulhane-edict_7uopx0?_a=BAMAMikS0",
-    "color": "#242020",
-    "text_color": "light"
-  },
-  {
-    "name": "ottoman-constitution-midhat-pasha",
-    "friendly_name": "First Ottoman Constitution",
-    "year": 1876,
-    "category": "law",
-    "description": "Drafted by Midhat Pasha, a constitution created a parliament for the empire, but the sultan suspended it within two years.",
-    "difficulty": "medium",
-    "regions": [
-      "Turkey",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-constitution-midhat-pasha_z42d6c?_a=BAMAMikS0",
-    "color": "#321a0e",
-    "text_color": "light"
-  },
-  {
-    "name": "ottomans-enter-first-world-war",
-    "friendly_name": "Ottomans Enter the Great War",
-    "year": 1914,
-    "category": "warfare",
-    "description": "Ottoman warships shelled Russian Black Sea ports, bringing the empire into the conflict alongside Germany.",
-    "difficulty": "easy",
-    "regions": [
-      "Russia",
-      "Turkey",
-      "Ukraine",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottomans-enter-first-world-war_029gej?_a=BAMAMikS0",
-    "color": "#1f2126",
-    "text_color": "light"
-  },
-  {
-    "name": "armistice-of-mudros",
-    "friendly_name": "Armistice of Mudros",
-    "year": 1918,
-    "category": "diplomacy",
-    "description": "Aboard a British warship, the Ottomans signed an armistice ending their fighting and opening Istanbul to Allied occupation.",
-    "difficulty": "easy",
-    "regions": [
-      "Greece",
-      "Turkey",
-      "United Kingdom",
-      "Europe"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/armistice-of-mudros_lh7s85?_a=BAMAMikS0",
-    "color": "#251f22",
-    "text_color": "light"
-  },
-  {
-    "name": "ottoman-sultanate-abolished",
-    "friendly_name": "Ottoman Sultanate Abolished",
-    "year": 1922,
-    "category": "empires",
-    "description": "Turkey's nationalist assembly ended the sultanate, and the last sultan, Mehmed VI, left Istanbul aboard a British warship.",
-    "difficulty": "easy",
-    "regions": [
-      "Turkey",
-      "Europe",
-      "Middle East & North Africa"
-    ],
-    "has_detail": true,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-sultanate-abolished_g6jxf3?_a=BAMAMikS0",
-    "color": "#1f2127",
-    "text_color": "light"
-  },
-  {
     "name": "eoraptor-dawn-dinosaur",
     "friendly_name": "Eoraptor, a Dawn Dinosaur",
     "year": -231000000,
@@ -13083,6 +12860,469 @@
     "has_detail": true,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/therizinosaurus-scythe-lizard_ivanlk?_a=BAMAMikS0",
     "color": "#23211e",
+    "text_color": "light"
+  },
+  {
+    "name": "davy-safety-lamp",
+    "friendly_name": "Davy Safety Lamp",
+    "year": 1815,
+    "category": "invention",
+    "description": "A flame shielded by fine wire gauze let miners carry light underground without igniting explosive gas.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/davy-safety-lamp_npt7bt?_a=BAMAMikS0",
+    "color": "#212120",
+    "text_color": "light"
+  },
+  {
+    "name": "swiss-army-knife-introduced",
+    "friendly_name": "The Swiss Army Knife",
+    "year": 1891,
+    "category": "invention",
+    "description": "A Swiss cutler began supplying soldiers with a folding multi-tool knife, the archetypal pocket gadget.",
+    "difficulty": "easy",
+    "regions": [
+      "Switzerland"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swiss-army-knife-introduced_1tuan2?_a=BAMAMikS0",
+    "color": "#23211e",
+    "text_color": "light"
+  },
+  {
+    "name": "electric-flashlight-ever-ready",
+    "friendly_name": "The Electric Flashlight",
+    "year": 1899,
+    "category": "invention",
+    "description": "A battery and bulb in a tube gave people a portable light to carry in a coat or bag after dark.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electric-flashlight-ever-ready_3kjgld?_a=BAMAMikS0",
+    "color": "#2a2520",
+    "text_color": "light"
+  },
+  {
+    "name": "kodak-brownie-camera",
+    "friendly_name": "Kodak Brownie Camera",
+    "year": 1900,
+    "category": "invention",
+    "description": "A cheap cardboard box camera sold for a dollar and made photography a pastime for children and families.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kodak-brownie-camera_ezx9tb?_a=BAMAMikS0",
+    "color": "#262018",
+    "text_color": "light"
+  },
+  {
+    "name": "thermos-vacuum-flask",
+    "friendly_name": "Thermos Flask Patented",
+    "year": 1904,
+    "category": "invention",
+    "description": "A German glassblower's double-walled vacuum bottle kept drinks hot or cold on journeys and picnics.",
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thermos-vacuum-flask_1zq3al?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "leica-i-camera",
+    "friendly_name": "Leica I Camera",
+    "year": 1925,
+    "category": "invention",
+    "description": "A compact German camera using cine film showed that serious pictures could come from a device that fit in a coat.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leica-i-camera_fv90hf?_a=BAMAMikS0",
+    "color": "#222024",
+    "text_color": "light"
+  },
+  {
+    "name": "zippo-lighter-introduced",
+    "friendly_name": "Zippo Lighter Introduced",
+    "year": 1933,
+    "category": "invention",
+    "description": "A Pennsylvania company launched a windproof metal lighter with a hinged lid that clicked open with a thumb.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zippo-lighter-introduced_o9ndoa?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "handie-talkie-radio",
+    "friendly_name": "Handie-Talkie Radio",
+    "year": 1940,
+    "category": "warfare",
+    "description": "A hand-held two-way radio let infantry talk to each other without wires, an early step toward carry-anywhere communication.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/handie-talkie-radio_rzzmgg?_a=BAMAMikS0",
+    "color": "#262117",
+    "text_color": "light"
+  },
+  {
+    "name": "kodak-instamatic-camera",
+    "friendly_name": "Kodak Instamatic Camera",
+    "year": 1963,
+    "category": "invention",
+    "description": "A camera with a snap-in film cartridge needed no threading, putting easy photography in millions of pockets.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kodak-instamatic-camera_bkrtw7?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
+  },
+  {
+    "name": "hp-35-pocket-calculator",
+    "friendly_name": "HP-35 Pocket Calculator",
+    "year": 1972,
+    "category": "invention",
+    "description": "A shirt-pocket calculator handled logs and trigonometry, making engineers' slide rules obsolete within a few years.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hp-35-pocket-calculator_kj1pwq?_a=BAMAMikS0",
+    "color": "#26201e",
+    "text_color": "light"
+  },
+  {
+    "name": "motorola-dynatac-8000x",
+    "friendly_name": "Motorola DynaTAC Phone",
+    "year": 1983,
+    "category": "invention",
+    "description": "The first commercial hand-held mobile phone cost thousands of dollars, weighed about a kilo and took ten hours to charge.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/motorola-dynatac-8000x_et3ul5?_a=BAMAMikS0",
+    "color": "#26201d",
+    "text_color": "light"
+  },
+  {
+    "name": "blackberry-email-device",
+    "friendly_name": "BlackBerry Email Device",
+    "year": 1999,
+    "category": "invention",
+    "description": "A Canadian company's two-way device with a tiny keyboard let business people read and answer email on the move.",
+    "difficulty": "easy",
+    "regions": [
+      "Canada"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blackberry-email-device_azq8qn?_a=BAMAMikS0",
+    "color": "#212028",
+    "text_color": "light"
+  },
+  {
+    "name": "apple-ipad-introduced",
+    "friendly_name": "Apple iPad Introduced",
+    "year": 2010,
+    "category": "invention",
+    "description": "A slab-like touchscreen tablet bridged phone and laptop, becoming a default way to read, watch and play on the sofa.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apple-ipad-introduced_az5hv7?_a=BAMAMikS0",
+    "color": "#242020",
+    "text_color": "light"
+  },
+  {
+    "name": "airpods-wireless-earbuds",
+    "friendly_name": "AirPods Wireless Earbuds",
+    "year": 2016,
+    "category": "invention",
+    "description": "Cordless earbuds that paired with a phone and lived in a small charging case spread rapidly on streets and trains.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/airpods-wireless-earbuds_kg3yrb?_a=BAMAMikS0",
+    "color": "#2a2829",
+    "text_color": "light"
+  },
+  {
+    "name": "samsung-galaxy-fold",
+    "friendly_name": "Foldable Smartphones",
+    "year": 2019,
+    "category": "invention",
+    "description": "A phone with a bendable screen that opens into a small tablet finally went on sale after delays and early screen failures.",
+    "difficulty": "easy",
+    "regions": [
+      "South Korea"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samsung-galaxy-fold_m4hdeb?_a=BAMAMikS0",
+    "color": "#24201e",
+    "text_color": "light"
+  },
+  {
+    "name": "apple-airtag-tracker",
+    "friendly_name": "Apple AirTag Tracker",
+    "year": 2021,
+    "category": "invention",
+    "description": "A coin-sized tag attached to keys or bags could be found on a map by nearby phones.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apple-airtag-tracker_k89kyx?_a=BAMAMikS0",
+    "color": "#22211e",
+    "text_color": "light"
+  },
+  {
+    "name": "battle-of-ankara-timur-bayezid",
+    "friendly_name": "Timur Defeats Bayezid at Ankara",
+    "year": 1402,
+    "category": "empires",
+    "description": "Timur's army crushed the Ottomans and captured Sultan Bayezid, plunging the young state into a decade of civil war.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Uzbekistan",
+      "Middle East & North Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-ankara-timur-bayezid_it5oj1?_a=BAMAMikS0",
+    "color": "#452e25",
+    "text_color": "light"
+  },
+  {
+    "name": "bayezid-welcomes-sephardic-jews",
+    "friendly_name": "Sultan Welcomes Sephardic Jews",
+    "year": 1492,
+    "category": "migration",
+    "description": "Fleeing expulsion from Spain, Jewish refugees were invited into Ottoman lands, settling in Salonica and Istanbul.",
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Spain",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bayezid-welcomes-sephardic-jews_vxpat6?_a=BAMAMikS0",
+    "color": "#261f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "selim-i-conquers-egypt-mamluks",
+    "friendly_name": "Selim I Conquers Mamluk Egypt",
+    "year": 1517,
+    "category": "empires",
+    "description": "Sultan Selim defeated the Mamluks and took Cairo, bringing the Arab heartlands and the holy cities under Ottoman rule.",
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/selim-i-conquers-egypt-mamluks_itn2mc?_a=BAMAMikS0",
+    "color": "#2a1e1a",
+    "text_color": "light"
+  },
+  {
+    "name": "battle-of-mohacs-ottoman-hungary",
+    "friendly_name": "Battle of Mohacs",
+    "year": 1526,
+    "category": "warfare",
+    "description": "Suleiman's army destroyed the Hungarian royal host in under two hours, killing King Louis II and opening central Europe.",
+    "difficulty": "easy",
+    "regions": [
+      "Hungary",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-mohacs-ottoman-hungary_juku2b?_a=BAMAMikS0",
+    "color": "#3d3126",
+    "text_color": "light"
+  },
+  {
+    "name": "treaty-of-karlowitz-ottoman",
+    "friendly_name": "Treaty of Karlowitz",
+    "year": 1699,
+    "category": "diplomacy",
+    "description": "Defeated by the Holy League, the Ottomans ceded Hungary and Transylvania to the Habsburgs in their first major territorial loss.",
+    "difficulty": "medium",
+    "regions": [
+      "Austria",
+      "Hungary",
+      "Serbia",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-karlowitz-ottoman_r3aj4m?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "ibrahim-muteferrika-first-printed-book",
+    "friendly_name": "First Muslim-Printed Ottoman Book",
+    "year": 1729,
+    "category": "writing",
+    "description": "Ibrahim Muteferrika, a Hungarian-born convert, ran the first Muslim-run Ottoman press and issued a dictionary in Turkish.",
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ibrahim-muteferrika-first-printed-book_u4xcxy?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "treaty-of-kucuk-kaynarca",
+    "friendly_name": "Treaty of Kucuk Kaynarca",
+    "year": 1774,
+    "category": "diplomacy",
+    "description": "A crushing defeat by Catherine the Great's Russia forced the Ottomans to cede Black Sea ports and free the Crimean Khanate.",
+    "difficulty": "easy",
+    "regions": [
+      "Bulgaria",
+      "Russia",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-kucuk-kaynarca_4yqz3m?_a=BAMAMikS0",
+    "color": "#242022",
+    "text_color": "light"
+  },
+  {
+    "name": "janissaries-abolished-auspicious-incident",
+    "friendly_name": "Janissaries Abolished",
+    "year": 1826,
+    "category": "warfare",
+    "description": "Sultan Mahmud II destroyed the rebellious elite infantry corps in an Istanbul massacre, clearing the way for a modern army.",
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/janissaries-abolished-auspicious-incident_u9v40n?_a=BAMAMikS0",
+    "color": "#3c281b",
+    "text_color": "light"
+  },
+  {
+    "name": "tanzimat-reforms-gulhane-edict",
+    "friendly_name": "Tanzimat Reforms Proclaimed",
+    "year": 1839,
+    "category": "law",
+    "description": "The Gulhane decree promised all Ottoman subjects security of life and property, launching decades of modernising reform.",
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tanzimat-reforms-gulhane-edict_7uopx0?_a=BAMAMikS0",
+    "color": "#242020",
+    "text_color": "light"
+  },
+  {
+    "name": "ottoman-constitution-midhat-pasha",
+    "friendly_name": "First Ottoman Constitution",
+    "year": 1876,
+    "category": "law",
+    "description": "Drafted by Midhat Pasha, a constitution created a parliament for the empire, but the sultan suspended it within two years.",
+    "difficulty": "medium",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-constitution-midhat-pasha_z42d6c?_a=BAMAMikS0",
+    "color": "#321a0e",
+    "text_color": "light"
+  },
+  {
+    "name": "ottomans-enter-first-world-war",
+    "friendly_name": "Ottomans Enter the Great War",
+    "year": 1914,
+    "category": "warfare",
+    "description": "Ottoman warships shelled Russian Black Sea ports, bringing the empire into the conflict alongside Germany.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Turkey",
+      "Ukraine",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottomans-enter-first-world-war_029gej?_a=BAMAMikS0",
+    "color": "#1f2126",
+    "text_color": "light"
+  },
+  {
+    "name": "armistice-of-mudros",
+    "friendly_name": "Armistice of Mudros",
+    "year": 1918,
+    "category": "diplomacy",
+    "description": "Aboard a British warship, the Ottomans signed an armistice ending their fighting and opening Istanbul to Allied occupation.",
+    "difficulty": "easy",
+    "regions": [
+      "Greece",
+      "Turkey",
+      "United Kingdom",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/armistice-of-mudros_lh7s85?_a=BAMAMikS0",
+    "color": "#251f22",
+    "text_color": "light"
+  },
+  {
+    "name": "ottoman-sultanate-abolished",
+    "friendly_name": "Ottoman Sultanate Abolished",
+    "year": 1922,
+    "category": "empires",
+    "description": "Turkey's nationalist assembly ended the sultanate, and the last sultan, Mehmed VI, left Istanbul aboard a British warship.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe",
+      "Middle East & North Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-sultanate-abolished_g6jxf3?_a=BAMAMikS0",
+    "color": "#1f2127",
     "text_color": "light"
   },
   {

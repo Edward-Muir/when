@@ -1,0 +1,15 @@
+{
+  "slug": "leica-i-camera",
+  "description": "A man in a flat cap and dark overcoat raises a small black rangefinder camera with a chrome lens to his eye, in a dim, lamp-lit city street. Behind him are a vintage car with its headlamp on, pedestrians in hats and long coats, and shopfronts with glowing windows. The painting is an oil-style night scene that fills the frame edge to edge, with blurred shop signs that show no readable letters.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
