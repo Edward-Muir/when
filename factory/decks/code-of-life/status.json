@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T03:08:17.708Z",
+  "updated_at": "2026-11-19T05:10:06.756Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-19T03:08:17.708Z"
     },
     "one-gene-one-enzyme": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "99ab7f80120e42591ffa691cf400ca3f10a9ce420df322dbef0f7f463a37d7f3",
+      "updated_at": "2026-11-19T05:10:06.756Z"
     },
     "avery-dna-heredity": {
       "state": "pending",
