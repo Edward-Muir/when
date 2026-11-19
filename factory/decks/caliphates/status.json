@@ -1,0 +1,101 @@
+{
+  "deck": "caliphates",
+  "name": "The Caliphs",
+  "stage": "pr-open",
+  "created_at": "2026-11-18T01:15:34.481Z",
+  "updated_at": "2026-11-18T04:09:04.499Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-18T01:15:34.481Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-18T02:09:44.613Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-18T03:08:00.916Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-18T04:07:21.602Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-18T04:09:04.499Z"
+    }
+  ],
+  "slugs": {
+    "abu-bakr-first-caliph": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "414cf9f140b2c355269f848663efa3859b1bb76df7521cc58b8c0078761c4c48",
+      "updated_at": "2026-11-18T03:08:00.592Z"
+    },
+    "rashidun-victory-nahavand": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9513395ac0d6d334f6381f5f844b9b0474b11d09b2be5eda335371ade0d3062b",
+      "updated_at": "2026-11-18T03:08:00.626Z"
+    },
+    "battle-of-the-camel-caliph-ali": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d751a1487ec5483780e6edf80f839fb62023d54e78aa24b4d4bd6242d8439cac",
+      "updated_at": "2026-11-18T03:08:00.659Z"
+    },
+    "great-mosque-damascus-begun": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "355c1ed63119074f288ac2704303ea917822a00eb07ed3f01063416b0e0abc15",
+      "updated_at": "2026-11-18T03:08:00.692Z"
+    },
+    "samarra-founded-by-mutasim": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7bb71e119bc7975b3f2b475db71d7c55c3458e024a7d5918002cc521603c25b3",
+      "updated_at": "2026-11-18T03:08:00.723Z"
+    },
+    "cordoba-caliphate-proclaimed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5137fb634429355b741080093b542d8423450f5816d4fdd1c3efb504df73f7a7",
+      "updated_at": "2026-11-18T03:08:00.761Z"
+    },
+    "madinat-al-zahra-begun": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5243d2033ddd03033d00a5ad44f08cd0315fd6be98b6b1fc36a80a5573002197",
+      "updated_at": "2026-11-18T03:08:00.803Z"
+    },
+    "buyids-seize-baghdad": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "733583a59a4209c748fbfe31f77624b8727d27309bbd65b6df0095ffe0488027",
+      "updated_at": "2026-11-18T03:08:00.842Z"
+    },
+    "saladin-ends-fatimid-caliphate": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0ebf573cb34fe36a4be3cf4e2ea24c95d09b20d7327011dcc6b4e4c3469062cc",
+      "updated_at": "2026-11-18T03:08:00.878Z"
+    },
+    "khilafat-movement-india": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2c3de84dac7866f8b643968dfba7b812900da6b794bd9ab13f7e7bc00b8d8770",
+      "updated_at": "2026-11-18T03:08:00.916Z"
+    }
+  }
+}
