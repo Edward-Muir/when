@@ -1,0 +1,40 @@
+{
+  "id": "mughals",
+  "name": "Peacock Throne",
+  "scope": "Yes if it is an act of a Delhi sultan or Mughal emperor",
+  "boundary": "Peacock Throne: Muslim rulers of Delhi and the Mughal court, the Taj Mahal and Timur's sack of Delhi included; the Company's rise goes to The Raj, Persian shahs to Kings of Kings, Ottoman sultans to Sublime Porte, Razia Sultana to Crowned Queens.",
+  "neighbours": [
+    "the-raj",
+    "ottomans",
+    "kings-of-kings"
+  ],
+  "grid": {
+    "categories": [
+      "empires",
+      "architecture",
+      "warfare"
+    ],
+    "eras": [
+      "medieval",
+      "earlyModern",
+      "industrial"
+    ],
+    "regions": [
+      "South Asia"
+    ]
+  },
+  "example_beats": [
+    "Qutb ud-Din Aibak founds the Delhi Sultanate (1206)",
+    "Tughluq moves the capital to Daulatabad (1327)",
+    "Timur sacks Delhi (1398)",
+    "Babur wins at Panipat (1526)",
+    "Akbar is crowned (1556)",
+    "Fatehpur Sikri founded (1571)",
+    "Shah Jahan begins the Taj Mahal (1632)",
+    "Aurangzeb seizes the throne (1658)",
+    "Nadir Shah sacks Delhi (1739)",
+    "Last Mughal emperor deposed (1857)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
