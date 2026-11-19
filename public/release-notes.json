@@ -1,7 +1,14 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": ["The game screen gives the timeline more room."],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.40.0",
+      "date": "2026-11-19",
+      "notes": [
+        "The game screen gives the timeline more room."
+      ]
+    },
     {
       "version": "1.39.0",
       "date": "2026-11-11",
