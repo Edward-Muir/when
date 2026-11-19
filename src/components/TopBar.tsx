@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
   Home,
@@ -8,14 +7,12 @@ import {
   SlidersHorizontal,
   Archive,
   Hourglass,
-  RotateCcw,
 } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
 import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
-import RestartConfirmModal from './RestartConfirmModal';
 
 /**
  * Every nav destination, in the order the home pager shows them. Also the home pager's tab
@@ -48,9 +45,7 @@ export function navForPath(pathname: string): NavDest | null {
 
 interface TopBarProps {
   showHome?: boolean;
-  showTitle?: boolean;
   onHomeClick?: () => void;
-  dailyTheme?: string;
   /** Show the Archive, Custom, Stats and Timeline buttons. */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
@@ -61,32 +56,20 @@ interface TopBarProps {
    * tab's path, which opens the home screen on that tab.
    */
   onNavClick?: (key: NavDest) => void;
-  /**
-   * In a practice game: show a Restart button beside Menu. It asks first, and calls this only
-   * once the player confirms.
-   */
-  onRestart?: () => void;
-  /** Restart is held while a placement animates, so it never lands mid-choreography. */
-  restartDisabled?: boolean;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
   showHome = false,
-  showTitle = true,
   onHomeClick,
-  dailyTheme,
   showStatsAchievements = false,
   activeNav,
   onNavClick,
-  onRestart,
-  restartDisabled = false,
 }) => {
   const navigate = useNavigate();
   const { updateAvailable, newVersion, notes: updateNotes } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [updateDismissed, setUpdateDismissed] = useState(false);
-  const [isRestartConfirmOpen, setIsRestartConfirmOpen] = useState(false);
 
   // `relative` lets the "new" dot anchor to the top-right of nav buttons.
   const buttonClass = `
@@ -200,52 +183,9 @@ const TopBar: React.FC<TopBarProps> = ({
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
         <div className="flex items-center justify-between gap-2 p-2">
-          {/* Game Title */}
-          {showTitle ? (
-            <div className="flex items-start gap-2 pl-2">
-              {onHomeClick ? (
-                <button
-                  onClick={onHomeClick}
-                  aria-label="Go home"
-                  className="appearance-none bg-transparent p-0 cursor-pointer active:scale-95 transition-transform"
-                >
-                  <h1 className="text-3xl font-display font-semibold text-text">
-                    When<span className="text-accent">?</span>
-                  </h1>
-                </button>
-              ) : (
-                <h1 className="text-3xl font-display font-semibold text-text">
-                  When<span className="text-accent">?</span>
-                </h1>
-              )}
-              <AnimatePresence>
-                {dailyTheme && (
-                  <motion.span
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-                    // max-w because curated theme names run to 20 characters ("Crowns &
-                    // Coronations") and daily pairings to 46 ("Architecture in the Middle East
-                    // & North Africa"). Unconstrained, the pill pushes into the nav row on a
-                    // 320px screen. It wraps to two lines rather than truncating, because a
-                    // pairing's place comes last and is the part a single line cut off; two
-                    // lines still fit the nav buttons' 38px row. The full name is on the
-                    // Daily hero card either way. `overflow-wrap:anywhere` is for a 320px
-                    // screen in a practice game, where Restart makes a third button: it lets
-                    // even a one-word name ("Everything") give way rather than push Menu off
-                    // the edge. Wider screens never reach it.
-                    className="mt-1 max-w-[9.5rem] line-clamp-2 [overflow-wrap:anywhere] px-2 py-0.5 text-xs leading-[1.2] font-body font-medium bg-accent text-white rounded-xl"
-                    title={dailyTheme}
-                  >
-                    {dailyTheme}
-                  </motion.span>
-                )}
-              </AnimatePresence>
-            </div>
-          ) : (
-            <div />
-          )}
+          {/* Empty on purpose: the row is `justify-between`, and this keeps the buttons on the
+              right. The wordmark and the theme pill left with the in-game bar (`GameHud`). */}
+          <div />
 
           {/* Navigation only: Home · Archive · Custom · Stats · Timeline · Menu. The current
               destination is rendered in the active (accent-filled) style. Six buttons fit a
@@ -314,18 +254,6 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Restart — practice games only (Game decides), behind a confirm */}
-            {onRestart && (
-              <button
-                onClick={() => setIsRestartConfirmOpen(true)}
-                disabled={restartDisabled}
-                className={`${buttonClass} disabled:opacity-50`}
-                aria-label="Restart game"
-              >
-                <RotateCcw className={iconClass} />
-              </button>
-            )}
-
             {/* Menu Button — never dotted: every "new" destination is a nav button now */}
             <button
               onClick={() => setIsMenuOpen(true)}
@@ -350,15 +278,6 @@ const TopBar: React.FC<TopBarProps> = ({
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
-      />
-
-      <RestartConfirmModal
-        open={isRestartConfirmOpen}
-        onClose={() => setIsRestartConfirmOpen(false)}
-        onConfirm={() => {
-          setIsRestartConfirmOpen(false);
-          onRestart?.();
-        }}
       />
 
       {/* Update Available Popup */}
