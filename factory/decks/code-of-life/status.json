@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T05:34:51.046Z",
+  "updated_at": "2026-11-19T05:37:31.517Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -148,10 +148,11 @@
       "updated_at": "2026-11-19T05:34:51.046Z"
     },
     "first-crispr-therapy-approved": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2692f5beaab20087632053b305534e8f0c808112a0aff015cc4debcfef75aa70",
+      "updated_at": "2026-11-19T05:37:31.517Z"
     },
     "custom-base-editing-infant": {
       "state": "pending",
