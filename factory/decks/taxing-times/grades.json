@@ -1,0 +1,21 @@
+{
+  "rosetta-stone-tax-decree": {"recognition": "medium", "inferability": "high", "anchors": ["Rosetta Stone", "Egyptian king", "three scripts"], "why": "Rosetta Stone and a young Egyptian king place it in ancient Egypt"},
+  "han-dynasty-census": {"recognition": "medium", "inferability": "high", "anchors": ["Han Dynasty", "earliest census"], "why": "Han Dynasty anchors to ancient China"},
+  "quirinius-census-judea": {"recognition": "medium", "inferability": "high", "anchors": ["Roman governor", "Gospel", "Judea"], "why": "Roman governor and Gospel story place it in the early Roman Empire"},
+  "danegeld-first-paid": {"recognition": "medium", "inferability": "high", "anchors": ["Viking raiders", "English king", "silver"], "why": "Viking raiders and an English king point to the early medieval period"},
+  "saladin-tithe-levied": {"recognition": "low", "inferability": "high", "anchors": ["Saladin", "crusade", "Jerusalem"], "why": "Saladin and a crusade to retake Jerusalem anchor to the 12th century"},
+  "ship-money-levied": {"recognition": "medium", "inferability": "high", "anchors": ["Charles I", "Parliament", "naval levy"], "why": "Charles I ruling without Parliament places it in 17th-century England"},
+  "window-tax-england": {"recognition": "medium", "inferability": "medium", "anchors": ["England", "bricked-up windows", "householders"], "why": "Clearly early modern to Victorian England, but few firm clues"},
+  "peter-great-beard-tax": {"recognition": "medium", "inferability": "high", "anchors": ["Peter the Great", "tsar", "Westernise"], "why": "Peter the Great or a tsar Westernising places it around 1700"},
+  "corn-laws-enacted": {"recognition": "medium", "inferability": "medium", "anchors": ["Britain", "imported grain", "landowners"], "why": "Britain with landowners and grain tariffs suggests the early 19th century, though loosely"},
+  "peel-revives-income-tax": {"recognition": "medium", "inferability": "medium", "anchors": ["Conservative prime minister", "tariffs", "Peel"], "why": "Peel and tariff cuts suggest 19th-century Britain"},
+  "us-first-federal-income-tax": {"recognition": "medium", "inferability": "high", "anchors": ["civil war", "Congress"], "why": "Funding a civil war with Congress points to the American Civil War"},
+  "peoples-budget-lloyd-george": {"recognition": "medium", "inferability": "high", "anchors": ["Lloyd George", "Lords", "warships", "pensions"], "why": "Lloyd George, pensions and warships place it in Edwardian Britain"},
+  "pay-as-you-go-withholding": {"recognition": "low", "inferability": "medium", "anchors": ["American employers", "income tax", "wages"], "why": "Modern American payroll system, 20th century, with few sharper clues"},
+  "france-introduces-vat": {"recognition": "medium", "inferability": "medium", "anchors": ["VAT", "spread worldwide"], "why": "A modern tax that spread worldwide suggests the mid-20th century"},
+  "california-proposition-13": {"recognition": "medium", "inferability": "medium", "anchors": ["California", "voters", "tax revolt"], "why": "Ballot proposition and tax revolt suggest the late 20th century"},
+  "scotland-poll-tax": {"recognition": "medium", "inferability": "medium", "anchors": ["Scotland", "poll tax", "riots", "rates"], "why": "Modern local rates and riots suggest the late 20th century, though no firm anchor"},
+  "nafta-takes-effect": {"recognition": "high", "inferability": "high", "anchors": ["NAFTA", "US, Canada and Mexico", "free trade zone"], "why": "NAFTA is widely known as a 1990s agreement"},
+  "china-abolishes-agricultural-tax": {"recognition": "low", "inferability": "low", "anchors": ["China", "most populous country"], "why": "Few clues beyond a modern, populous China; could be several decades"},
+  "global-minimum-corporate-tax-deal": {"recognition": "medium", "inferability": "high", "anchors": ["130 countries", "profit shifting", "corporate tax havens"], "why": "A global multi-country deal against profit shifting is clearly very recent"}
+}

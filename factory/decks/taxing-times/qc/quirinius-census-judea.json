@@ -1,0 +1,15 @@
+{
+  "slug": "quirinius-census-judea",
+  "description": "Painted scene in a stone-arched street. A bearded man in a striped-hem wrap gestures with open palms at a folding table, where a seated man in a dark tunic and red cloak writes on a wax tablet. A helmeted soldier with a spear stands behind the table, and a queue of townspeople with bundles waits on the left. No visible text and no frame; the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

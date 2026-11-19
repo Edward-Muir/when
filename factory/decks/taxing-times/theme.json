@@ -1,0 +1,26 @@
+{
+  "id": "taxing-times",
+  "name": "Taxing Times",
+  "scope": "Yes if it is a tax, tariff or census",
+  "boundary": "Taxing Times: what states took and counted; the revolts taxes sparked go to Rise Up!, the Boston Tea Party to What We Drink, money itself to Hard Currency.",
+  "neighbours": ["money", "what-we-drink", "english-history"],
+  "grid": {
+    "categories": ["law", "commerce", "revolution"],
+    "eras": ["medieval", "earlyModern", "industrial"],
+    "regions": ["Europe", "North America", "Global"]
+  },
+  "example_beats": [
+    "Domesday Book (1086)",
+    "Window tax introduced in England (1696)",
+    "Stamp Act (1765)",
+    "First US census (1790)",
+    "Pitt introduces income tax (1799)",
+    "Corn Laws repealed (1846)",
+    "Sixteenth Amendment allows income tax (1913)",
+    "Smoot-Hawley Tariff (1930)",
+    "France introduces VAT (1954)",
+    "Poll tax riots (1990)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

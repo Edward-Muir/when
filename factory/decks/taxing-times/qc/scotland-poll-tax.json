@@ -1,0 +1,15 @@
+{
+  "slug": "scotland-poll-tax",
+  "description": "An oil painting of a dim, peeling-plaster tenement stairwell with an iron banister. Around nine people, mostly older and working-class adults in dark coats and jackets, stand on the stone stairs with arms folded and stern faces, a headscarved older woman on the left and a young man in the centre. At the bottom right, a man seen from behind in a dark overcoat and glasses holds a clipboard with a document, facing them. No visible text or frame; the painting fills the canvas edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
