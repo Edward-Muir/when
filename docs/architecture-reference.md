@@ -36,7 +36,7 @@ index.tsx                      # BrowserRouter + the routes below
 │       │       └── GalleryFlight.tsx # The cards in flight from the board (body portal)
 │       ├── ThemeIntroPopup.tsx # A curated theme's blurb and fact as play begins (useThemeIntro)
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── GameHud.tsx        # All of a game's chrome: the wordmark, the theme label, Home. A game
+│       ├── GameHud.tsx        # All of a game's chrome: the wordmark, the theme label, Home, light/dark. A game
 │       │                      # mounts no TopBar, so no Menu and no UpdatePopup either
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily

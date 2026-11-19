@@ -9,14 +9,15 @@ Full-width vertical stack:
 ```
 (no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
-  └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right
+  └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right, light/dark under Home
 Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
   went; what is left is `GameHud.tsx`, which floats over the top of the board beside
   "↑ Earlier" and costs no height: a small "When?" wordmark in the top-left corner with the
-  theme under it as a grey capitals label beside a gold square, and Home top-right. The strip
+  theme under it as a grey capitals label beside a gold square, and Home top-right with the
+  light/dark switch under it (the one Menu setting wanted mid-game). The strip
   ignores the pointer everywhere but Home. How to Play, Reset Hints, dark mode, Profile and
   the update popup are on Home only, since they lived in the bar's Menu. **Mid-game Restart
   went with the bar** and was not rehomed: Restart is offered at game over, in the bottom bar.
