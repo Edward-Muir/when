@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Moon, Sun } from 'lucide-react';
-import TopBar from '../components/TopBar';
+import GameHud from '../components/GameHud';
 import ActiveCardDisplay from '../components/ActiveCardDisplay';
 import { GameInfoCompact } from '../components/PlayerInfo';
 import Timeline from '../components/Timeline/Timeline';
@@ -126,9 +126,9 @@ const TimelineLab: React.FC = () => {
         Loading events…
       </div>
     ) : (
-      <div className="pt-topbar flex h-full w-full flex-col overflow-hidden bg-bg">
-        <TopBar showHome showTitle onHomeClick={noop} />
+      <div className="pt-safe flex h-full w-full flex-col overflow-hidden bg-bg">
         <div className="relative min-h-0 flex-1">
+          <GameHud onHome={noop} />
           <Timeline
             events={board.events}
             onEventTap={noop}
@@ -144,23 +144,25 @@ const TimelineLab: React.FC = () => {
           />
         </div>
         <div className="hand-bar z-40 flex shrink-0 items-center border-t border-border bg-bg">
-          <div className="board-center-item flex w-24 shrink-0 items-center justify-center">
-            <GameInfoCompact
-              currentPlayer={player}
-              isMultiplayer={false}
-              timelineLength={board.events.length}
-              currentStreak={3}
-            />
+          <div className="hand-grid">
+            <div className="flex items-center justify-center">
+              <GameInfoCompact
+                currentPlayer={player}
+                isMultiplayer={false}
+                timelineLength={board.events.length}
+                currentStreak={3}
+              />
+            </div>
+            {hand[0] && (
+              <ActiveCardDisplay
+                activeCard={hand[0]}
+                currentPlayer={player}
+                isAnimating={false}
+                onCycleHand={noop}
+                onCardTap={noop}
+              />
+            )}
           </div>
-          {hand[0] && (
-            <ActiveCardDisplay
-              activeCard={hand[0]}
-              currentPlayer={player}
-              isAnimating={false}
-              onCycleHand={noop}
-              onCardTap={noop}
-            />
-          )}
         </div>
       </div>
     );
