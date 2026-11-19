@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T05:18:50.223Z",
+  "updated_at": "2026-11-19T05:21:21.583Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-19T05:18:50.223Z"
     },
     "genetic-code-cracked": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "eec8a76d0f3bb83215ebbad0c059850bcde15724b5ccae2e1087ad9a107577f4",
+      "updated_at": "2026-11-19T05:21:21.583Z"
     },
     "first-restriction-enzyme": {
       "state": "pending",
