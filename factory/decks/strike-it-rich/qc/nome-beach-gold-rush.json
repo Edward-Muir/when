@@ -1,0 +1,15 @@
+{
+  "slug": "nome-beach-gold-rush",
+  "description": "A crowd of men in wide-brimmed hats and dark oilskin coats works along a stormy, surf-lashed shoreline. Several shovel sand into wooden wheelbarrow-style sluice boxes, and one pours water from a bucket through the box. Behind them a row of canvas tents glows with lamps and smoke rises from stovepipes under a heavy, dark sky. The image is an oil painting filling the frame edge to edge, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

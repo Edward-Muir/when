@@ -21550,5 +21550,369 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "las-medulas-roman-gold-mine",
+    "friendly_name": "Roman Gold Mine at Las Medulas",
+    "year": -25,
+    "category": "craft",
+    "description": "After conquering the northwest of Iberia, Roman engineers used aqueducts to wash whole mountains away for their gold.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/las-medulas-roman-gold-mine_hhq2uc?_a=BAMAMikS0",
+    "color": "#543a2b",
+    "text_color": "light"
+  },
+  {
+    "name": "kutna-hora-silver-strike",
+    "friendly_name": "Silver Found at Kutná Hora",
+    "year": 1298,
+    "category": "trade",
+    "description": "A rich silver seam in Bohemia set off a boom that built a wealthy mining town and supplied the groschen coin to Europe.",
+    "difficulty": "hard",
+    "regions": [
+      "Czechia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kutna-hora-silver-strike_0f7z79?_a=BAMAMikS0",
+    "color": "#242020",
+    "text_color": "light"
+  },
+  {
+    "name": "joachimsthal-silver-rush",
+    "friendly_name": "Silver Rush at Joachimsthal",
+    "year": 1516,
+    "category": "trade",
+    "description": "A silver strike in the Bohemian mountains led to the coins whose name gave the world the word dollar.",
+    "difficulty": "medium",
+    "regions": [
+      "Czechia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joachimsthal-silver-rush_u3fpvi?_a=BAMAMikS0",
+    "color": "#25201e",
+    "text_color": "light"
+  },
+  {
+    "name": "zacatecas-silver-strike",
+    "friendly_name": "Silver Strike at Zacatecas",
+    "year": 1546,
+    "category": "trade",
+    "description": "Prospectors in the Mexican highlands struck rich veins that launched a huge silver mining centre of the Spanish empire.",
+    "difficulty": "easy",
+    "regions": [
+      "Mexico",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zacatecas-silver-strike_lqrcbe?_a=BAMAMikS0",
+    "color": "#291e19",
+    "text_color": "light"
+  },
+  {
+    "name": "minas-gerais-gold-rush",
+    "friendly_name": "Gold Found in Minas Gerais",
+    "year": 1693,
+    "category": "migration",
+    "description": "Prospectors in the Brazilian interior found gold in river gravels, starting the first great gold rush of the Americas.",
+    "difficulty": "medium",
+    "regions": [
+      "Brazil"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/minas-gerais-gold-rush_vnaocv?_a=BAMAMikS0",
+    "color": "#25201c",
+    "text_color": "light"
+  },
+  {
+    "name": "brazil-diamonds-discovered",
+    "friendly_name": "Diamonds Found in Brazil",
+    "year": 1725,
+    "category": "trade",
+    "description": "Miners panning for gold in the Brazilian highlands noticed sparkling stones, ending India's long monopoly on diamonds.",
+    "difficulty": "medium",
+    "regions": [
+      "Brazil"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brazil-diamonds-discovered_v1ets4?_a=BAMAMikS0",
+    "color": "#23211e",
+    "text_color": "light"
+  },
+  {
+    "name": "berezovsk-first-russian-gold",
+    "friendly_name": "Russia's First Gold at Berezovsk",
+    "year": 1745,
+    "category": "craft",
+    "description": "A peasant found gold-bearing quartz in the Ural Mountains, opening the first gold mines of the Russian empire.",
+    "difficulty": "hard",
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/berezovsk-first-russian-gold_tytx4j?_a=BAMAMikS0",
+    "color": "#26201b",
+    "text_color": "light"
+  },
+  {
+    "name": "reed-gold-nugget-north-carolina",
+    "friendly_name": "North Carolina's 17-Pound Nugget",
+    "year": 1799,
+    "category": "nature",
+    "description": "A boy fishing in a creek found a gold rock so heavy his family used it as a doorstop until a jeweller named its worth.",
+    "difficulty": "very-hard",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reed-gold-nugget-north-carolina_n52zfb?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "georgia-gold-rush",
+    "friendly_name": "Georgia Gold Rush Begins",
+    "year": 1829,
+    "category": "migration",
+    "description": "Gold found in the Appalachian foothills drew thousands of prospectors and the country's first big rush, before California.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/georgia-gold-rush_wgkmtx?_a=BAMAMikS0",
+    "color": "#26201b",
+    "text_color": "light"
+  },
+  {
+    "name": "eureka-diamond-found",
+    "friendly_name": "The Eureka Diamond",
+    "year": 1867,
+    "category": "nature",
+    "description": "Children found a sparkling pebble by a South African riverbank, the first diamond found there and a spark for later rushes.",
+    "difficulty": "medium",
+    "regions": [
+      "South Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eureka-diamond-found_7k2ars?_a=BAMAMikS0",
+    "color": "#362013",
+    "text_color": "light"
+  },
+  {
+    "name": "kimberley-diamond-rush",
+    "friendly_name": "Diamonds Found at Kimberley",
+    "year": 1871,
+    "category": "nature",
+    "description": "A hill on a South African farm yielded so many diamonds that it became a vast hole dug mostly by hand.",
+    "difficulty": "medium",
+    "regions": [
+      "South Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kimberley-diamond-rush_cqwsnn?_a=BAMAMikS0",
+    "color": "#4c3422",
+    "text_color": "light"
+  },
+  {
+    "name": "tombstone-silver-strike",
+    "friendly_name": "Silver Strike at Tombstone",
+    "year": 1877,
+    "category": "trade",
+    "description": "A prospector ignored warnings that he would find only his own grave and struck silver in the Arizona desert.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tombstone-silver-strike_asfyjr?_a=BAMAMikS0",
+    "color": "#443326",
+    "text_color": "light"
+  },
+  {
+    "name": "witwatersrand-gold-discovery",
+    "friendly_name": "Gold on the Witwatersrand",
+    "year": 1886,
+    "category": "nature",
+    "description": "A reef of gold-bearing conglomerate was found on the South African highveld, and Johannesburg soon sprang up around it.",
+    "difficulty": "medium",
+    "regions": [
+      "South Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/witwatersrand-gold-discovery_e8in0o?_a=BAMAMikS0",
+    "color": "#2a1e16",
+    "text_color": "light"
+  },
+  {
+    "name": "coolgardie-gold-rush",
+    "friendly_name": "Coolgardie Gold Rush",
+    "year": 1892,
+    "category": "migration",
+    "description": "Nuggets picked up from the dry Western Australian scrub drew prospectors across the desert to a new boom town.",
+    "difficulty": "medium",
+    "regions": [
+      "Australia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coolgardie-gold-rush_jx5zar?_a=BAMAMikS0",
+    "color": "#2c1d16",
+    "text_color": "light"
+  },
+  {
+    "name": "nome-beach-gold-rush",
+    "friendly_name": "Gold on the Beach at Nome",
+    "year": 1899,
+    "category": "migration",
+    "description": "Gold found in the sands of Alaska's Bering Sea coast drew thousands of hopefuls to dig on the shoreline itself.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nome-beach-gold-rush_x6jjk9?_a=BAMAMikS0",
+    "color": "#392e24",
+    "text_color": "light"
+  },
+  {
+    "name": "cullinan-diamond-found",
+    "friendly_name": "The Cullinan Diamond Found",
+    "year": 1905,
+    "category": "nature",
+    "description": "A mine manager spotted a gleam in a pit wall and pulled out the largest gem diamond ever discovered.",
+    "difficulty": "hard",
+    "regions": [
+      "South Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cullinan-diamond-found_hccfc0?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "namib-diamond-rush",
+    "friendly_name": "Diamonds Found in the Namib Desert",
+    "year": 1908,
+    "category": "migration",
+    "description": "A railway worker shovelling sand in the Namibian desert picked up a diamond, starting a rush to a barren coast.",
+    "difficulty": "medium",
+    "regions": [
+      "Namibia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/namib-diamond-rush_w818xe?_a=BAMAMikS0",
+    "color": "#422f25",
+    "text_color": "light"
+  },
+  {
+    "name": "mir-siberian-diamond-pipe",
+    "friendly_name": "Diamonds Found in Siberia",
+    "year": 1955,
+    "category": "nature",
+    "description": "A Soviet prospecting team found the first major diamond-bearing kimberlite pipe, opening a huge mine in frozen ground.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mir-siberian-diamond-pipe_w56v0v?_a=BAMAMikS0",
+    "color": "#2e2d2e",
+    "text_color": "light"
+  },
+  {
+    "name": "carlin-trend-gold-discovery",
+    "friendly_name": "Carlin Gold Trend Discovered",
+    "year": 1961,
+    "category": "science",
+    "description": "Geologists found microscopic gold invisible to the eye in Nevada rocks, unlocking one of the richest gold regions around.",
+    "difficulty": "hard",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carlin-trend-gold-discovery_c8mmts?_a=BAMAMikS0",
+    "color": "#453122",
+    "text_color": "light"
+  },
+  {
+    "name": "orapa-diamond-pipe-found",
+    "friendly_name": "Diamonds Found at Orapa",
+    "year": 1967,
+    "category": "nature",
+    "description": "Geologists tracing mineral grains across the Kalahari found a huge diamond pipe that would transform a poor nation.",
+    "difficulty": "medium",
+    "regions": [
+      "Botswana"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/orapa-diamond-pipe-found_ualqmv?_a=BAMAMikS0",
+    "color": "#2f1c11",
+    "text_color": "light"
+  },
+  {
+    "name": "serra-pelada-gold-rush",
+    "friendly_name": "Serra Pelada Gold Rush",
+    "year": 1980,
+    "category": "migration",
+    "description": "Tens of thousands of men swarmed a Brazilian hillside, hauling sacks of mud up ladders by hand in a giant open pit.",
+    "difficulty": "very-hard",
+    "regions": [
+      "Brazil"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/serra-pelada-gold-rush_zbnjyo?_a=BAMAMikS0",
+    "color": "#4c3c2f",
+    "text_color": "light"
+  },
+  {
+    "name": "argyle-diamond-mine-opens",
+    "friendly_name": "Argyle Diamond Mine Opens",
+    "year": 1983,
+    "category": "craft",
+    "description": "A remote mine in the Australian outback began production and became the main source of rare pink diamonds.",
+    "difficulty": "medium",
+    "regions": [
+      "Australia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/argyle-diamond-mine-opens_nvapgo?_a=BAMAMikS0",
+    "color": "#54382d",
+    "text_color": "light"
+  },
+  {
+    "name": "lac-de-gras-diamonds-found",
+    "friendly_name": "Diamonds Found in Canada's Arctic",
+    "year": 1991,
+    "category": "nature",
+    "description": "After years searching the tundra, a geologist found diamond-bearing rock at Lac de Gras, launching a northern mining boom.",
+    "difficulty": "medium",
+    "regions": [
+      "Canada"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lac-de-gras-diamonds-found_8xz9gq?_a=BAMAMikS0",
+    "color": "#37312c",
+    "text_color": "light"
+  },
+  {
+    "name": "lesedi-la-rona-diamond-found",
+    "friendly_name": "Lesedi La Rona Diamond Found",
+    "year": 2015,
+    "category": "nature",
+    "description": "A Botswana mine's scanners picked out a stone the size of a tennis ball, the largest gem-quality rough diamond in a century.",
+    "difficulty": "easy",
+    "regions": [
+      "Botswana"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lesedi-la-rona-diamond-found_438o2i?_a=BAMAMikS0",
+    "color": "#222120",
+    "text_color": "light"
   }
 ]
