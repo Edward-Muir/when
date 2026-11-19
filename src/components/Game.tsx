@@ -12,13 +12,7 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import {
-  WhenGameState,
-  PlacementResult,
-  HistoricalEvent,
-  GamePopupData,
-  GamePhase,
-} from '../types';
+import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
@@ -32,8 +26,9 @@ import Modal from './ui/Modal';
 import HandDragOverlay, { dropAnimationFor } from './HandDragOverlay';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
-import TopBar from './TopBar';
+import GameHud from './GameHud';
 import HintStrip from './HintStrip';
+import HandBar from './HandBar';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import { useThemeIntro } from '../hooks/useThemeIntro';
@@ -49,8 +44,7 @@ import { buildDailyResult } from '../utils/dailyResult';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { getVignetteColor } from '../utils/vignettePulse';
 import { ACHIEVEMENTS } from '../data/achievements';
-import { buildEventsByName, GameMilestone, getDailyCadence } from '../utils/statsStorage';
-import { canRestartMidGame } from '../utils/dailyReplay';
+import { buildEventsByName, GameMilestone } from '../utils/statsStorage';
 import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
@@ -93,19 +87,6 @@ const HomeConfirmModal: React.FC<{
     </div>
   </Modal>
 );
-
-/**
- * The top bar's Restart, offered while a practice game is being played (`canRestartMidGame`).
- * At game over the bottom bar has its own Restart, and a review is a finished board. Extracted
- * because `Game` sits on ESLint's complexity ceiling of 15, like the helpers below.
- */
-function midGameRestart(state: WhenGameState, restart: () => void): (() => void) | undefined {
-  const available =
-    state.phase === 'playing' &&
-    !state.isReview &&
-    canRestartMidGame(state.lastConfig, getDailyCadence().playedDates);
-  return available ? restart : undefined;
-}
 
 // Whether the popup should reveal the event's year: cards already on the timeline and
 // revealed tombstones do; a hand card being previewed doesn't (that's the puzzle).
@@ -161,20 +142,10 @@ interface GameProps {
   showGameOverPopup: () => void;
   dismissPopup: () => void;
   onRestart: () => void;
-  /** Restart from the top bar mid-game, once confirmed: same deal rules as `onRestart`, no intro. */
-  onRestartMidGame: () => void;
   onNewGame: () => void;
   newlyUnlockedAchievements: string[];
   gameMilestones: GameMilestone[];
   allEvents: HistoricalEvent[];
-}
-
-/**
- * The bar is tall only while it holds the square hand card. Game over swaps in a row of
- * buttons, and the board gets the space back.
- */
-function bottomBarHeightClass(phase: GamePhase): string {
-  return phase === 'gameOver' ? 'h-[120px] sm:h-[140px]' : 'hand-bar';
 }
 
 /**
@@ -198,7 +169,6 @@ const Game: React.FC<GameProps> = ({
   showGameOverPopup,
   dismissPopup,
   onRestart,
-  onRestartMidGame,
   onNewGame,
   newlyUnlockedAchievements,
   gameMilestones,
@@ -270,7 +240,7 @@ const Game: React.FC<GameProps> = ({
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
-  // Theme name for the TopBar pill: the deck an Archive replay is of, or the theme of the day
+  // Theme name for the pill in `GameHud`: the deck an Archive replay is of, or the theme of the day
   // being played (today's daily, or a past day from the Archive calendar).
   const dailyThemeDisplay = useMemo(
     () => getThemeNameForConfig(state.lastConfig),
@@ -408,18 +378,8 @@ const Game: React.FC<GameProps> = ({
         measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
       >
         <div
-          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-topbar transition-colors ${shakeClassName}`}
+          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-safe transition-colors ${shakeClassName}`}
         >
-          <TopBar
-            showHome={true}
-            // "Leave game?" is the wrong question for a finished board
-            // being re-read, so a review leaves straight away.
-            onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
-            dailyTheme={dailyThemeDisplay}
-            onRestart={midGameRestart(state, onRestartMidGame)}
-            restartDisabled={state.isAnimating}
-          />
-
           {showConfetti && (
             <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
               <ConfettiExplosion
@@ -433,6 +393,12 @@ const Game: React.FC<GameProps> = ({
 
           {/* Main Timeline Area - takes remaining space */}
           <div className={boardAreaClass(pendingPopup)}>
+            <GameHud
+              // "Leave game?" is the wrong question for a finished board
+              // being re-read, so a review leaves straight away.
+              onHome={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
+              theme={dailyThemeDisplay}
+            />
             <Timeline
               events={state.timeline}
               onEventTap={showDescriptionPopup}
@@ -454,14 +420,8 @@ const Game: React.FC<GameProps> = ({
             />
           </div>
 
-          {/* Bottom Bar - Fixed height with game info + active card aligned with timeline.
-              `hand-bar` (index.css) is the square hand card plus the safe-area inset. */}
-          <div
-            ref={setBottomBarRef}
-            className={`${bottomBarHeightClass(state.phase)} flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
-              dragState.isOverHand ? 'bg-accent/10' : ''
-            }`}
-          >
+          {/* Bottom bar: the hand while playing, the result buttons at game over. */}
+          <HandBar phase={state.phase} isOverHand={dragState.isOverHand} barRef={setBottomBarRef}>
             {state.phase === 'gameOver' ? (
               /* Game Over: Full-width horizontal buttons */
               <GameOverControls
@@ -476,9 +436,9 @@ const Game: React.FC<GameProps> = ({
                 showShare={isBottomBarShareVisible(pendingPopup, endStep)}
               />
             ) : (
-              <>
-                {/* Left: Game Info - matches year column width (96px); board-center-item offsets the bar */}
-                <div className="board-center-item w-24 shrink-0 flex items-center justify-center">
+              <div className="hand-grid">
+                {/* Left: game info, centred in the space beside the hand card (see .hand-grid) */}
+                <div className="flex items-center justify-center">
                   <GameInfoCompact
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
@@ -490,7 +450,7 @@ const Game: React.FC<GameProps> = ({
                   />
                 </div>
 
-                {/* Right: Active Card Area - aligned with timeline cards */}
+                {/* The hand card in the middle of the screen, and the swap button on its right */}
                 {activeCard && (
                   <ActiveCardDisplay
                     activeCard={activeCard}
@@ -501,9 +461,9 @@ const Game: React.FC<GameProps> = ({
                     nudge={hints.active}
                   />
                 )}
-              </>
+              </div>
             )}
-          </div>
+          </HandBar>
 
           {createPortal(
             <DragOverlay dropAnimation={dropAnimationFor(droppedOnTimelineRef.current)}>
