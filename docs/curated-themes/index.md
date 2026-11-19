@@ -123,10 +123,10 @@ days do not get it: their past decks sit in the recency chain, and changing thei
 re-deal them.
 
 **Smaller things.** Names reach 46 characters ("Architecture in the Middle East & North
-Africa"). The home card wraps them, and the in-game `TopBar` pill wraps to two lines rather than
+Africa"). The home card wraps them, and the in-game label (`GameHud.tsx`) wraps to three lines rather than
 truncating, since a pairing's place comes last and is the part one line would cut off. The
-Middle East & North Africa pairings still clip on a 320px phone ("Architecture in / the
-Middle…"); the home card and the share text carry the full name. A daily deck of 60 cards or
+Middle East & North Africa pairings still clip on a 320px phone, where the label is narrower
+("Architecture / in the / Middle East…"); the home card and the share text carry the full name. A daily deck of 60 cards or
 fewer is kept out of the intro in full, like a curated one (`THIN_DAILY_DECK` in `App.tsx`).
 Nothing server-side depends on the menu: the bot ceiling of 20 is below any 30-card pool, and
 the API never derives a theme. "Theme Cleared!" stays curated-only, although a 30-card pairing

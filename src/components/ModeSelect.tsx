@@ -287,7 +287,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           two navigation methods unified. */}
       <TopBar
         showHome
-        showTitle={false}
         showStatsAchievements
         activeNav={tabKeyForIndex(activePage)}
         onHomeClick={() => navigate('/')}
