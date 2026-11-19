@@ -21557,7 +21557,10 @@
     "year": -5400,
     "category": "migration",
     "description": "Farmers settled the marshy southern plain at Eridu, which Sumerians later remembered as the oldest city of their land.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "uruk-first-city-walled",
@@ -21565,7 +21568,10 @@
     "year": -3500,
     "category": "empires",
     "description": "Uruk grew into a walled urban centre with great temples and thousands of residents, the largest settlement of its day.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "cuneiform-writing-emerges",
@@ -21573,7 +21579,10 @@
     "year": -3200,
     "category": "writing",
     "description": "Scribes pressed wedge-shaped marks into wet clay tablets to record grain, beer and temple goods, the first writing.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "royal-tombs-of-ur",
@@ -21581,7 +21590,10 @@
     "year": -2600,
     "category": "architecture",
     "description": "Rulers of a Sumerian city were buried with lyres, gold headdresses and attendants in richly furnished underground tombs.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "urukagina-reforms-lagash",
@@ -21589,7 +21601,10 @@
     "year": -2350,
     "category": "law",
     "description": "A Sumerian king curbed corrupt officials and protected widows and the poor in what is often called the first recorded reform.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "enheduanna-hymns-inanna",
@@ -21597,7 +21612,10 @@
     "year": -2300,
     "category": "writing",
     "description": "A priestess and daughter of a king composed hymns to the goddess Inanna, becoming the first author known by name.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "naram-sin-victory-stele",
@@ -21605,7 +21623,10 @@
     "year": -2254,
     "category": "art",
     "description": "A king showed himself climbing a mountain over fallen enemies and took the title King of the Four Quarters.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "elamites-sack-ur",
@@ -21613,7 +21634,11 @@
     "year": -2004,
     "category": "empires",
     "description": "Raiders from the east captured the city and carried off its king, ending the last great Sumerian dynasty.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "amorite-dynasty-babylon",
@@ -21621,7 +21646,10 @@
     "year": -1894,
     "category": "empires",
     "description": "A chieftain founded a ruling house in a small river town that would grow into the most famous city of Mesopotamia.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "plimpton-322-tablet",
@@ -21629,7 +21657,10 @@
     "year": -1800,
     "category": "science",
     "description": "A clay tablet lists number sets that match right triangles, showing advanced mathematics long before the Greeks.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "code-of-hammurabi-carved",
@@ -21637,7 +21668,10 @@
     "year": -1754,
     "category": "law",
     "description": "Nearly three hundred laws, including an eye for an eye, were inscribed on a black stone pillar for all to read.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "hittites-sack-babylon",
@@ -21645,7 +21679,12 @@
     "year": -1595,
     "category": "warfare",
     "description": "A raiding army from Anatolia plundered the capital and carried off the statue of its chief god, ending its famous dynasty.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "ashur-uballit-frees-assyria",
@@ -21653,7 +21692,10 @@
     "year": -1365,
     "category": "empires",
     "description": "An Assyrian king wrote to the pharaoh as an equal and freed his city from Mitanni overlordship, starting an empire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "gilgamesh-epic-standard-version",
@@ -21661,7 +21703,10 @@
     "year": -1100,
     "category": "writing",
     "description": "A scribe gathered older Sumerian tales of a king seeking immortality into the long poem that includes a great flood.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "ashurnasirpal-builds-nimrud",
@@ -21669,7 +21714,10 @@
     "year": -879,
     "category": "architecture",
     "description": "An Assyrian king moved his capital to Kalhu and celebrated with a feast for some seventy thousand guests.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "babylonian-astronomical-diaries",
@@ -21677,7 +21725,10 @@
     "year": -747,
     "category": "science",
     "description": "Priests of Babylon began systematic records of the heavens that were kept for centuries and used by later scholars.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "tiglath-pileser-iii-reforms",
@@ -21685,7 +21736,10 @@
     "year": -745,
     "category": "empires",
     "description": "A usurper seized the throne, reformed the army and provinces and launched a new age of Assyrian conquest.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "sennacherib-palace-nineveh",
@@ -21693,7 +21747,10 @@
     "year": -691,
     "category": "architecture",
     "description": "An Assyrian king boasted that his Palace Without Rival was complete, with an aqueduct and gardens.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "ashurbanipal-takes-throne",
@@ -21701,7 +21758,10 @@
     "year": -669,
     "category": "empires",
     "description": "The last great Assyrian king succeeded his father, trained as a scribe as well as a warrior, as the empire reached its widest extent.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "nebuchadnezzar-wins-carchemish",
@@ -21709,6 +21769,12 @@
     "year": -605,
     "category": "warfare",
     "description": "A Babylonian prince crushed the Egyptian and Assyrian remnant on the Euphrates, giving Babylon mastery of the Near East.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Iraq",
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   }
 ]
