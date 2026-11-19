@@ -1,0 +1,20 @@
+{
+  "slug": "cohen-boyer-recombinant-dna",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "7a1563e7b4e6480b4ebfaf73ca789237fffcffab743aed3c768e2472e9e8d5d0",
+  "dhash": "b379cc94cc69f8fc",
+  "nearest": {
+    "deck": {
+      "slug": "muller-xray-mutations",
+      "distance": 22
+    },
+    "catalogue": {
+      "slug": "bosman-ruling-1995",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

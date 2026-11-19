@@ -1,0 +1,178 @@
+{
+  "deck": "code-of-life",
+  "name": "Code of Life",
+  "stage": "pr-open",
+  "created_at": "2026-11-18T23:17:55.331Z",
+  "updated_at": "2026-11-19T22:09:01.263Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-18T23:17:55.331Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-19T02:10:31.141Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-19T21:06:51.024Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-19T22:07:05.060Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-19T22:09:01.263Z"
+    }
+  ],
+  "slugs": {
+    "miescher-isolates-nuclein": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2e37249e701a8efcb668b5e10535a293a8fc123df99caff6b8ec33f9cf29463b",
+      "updated_at": "2026-11-19T03:08:17.393Z"
+    },
+    "flemming-chromosomes-mitosis": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b8178d0d55b74b4556a61940389bcc956e8ed7a3a0375d1e3a6aa22307980423",
+      "updated_at": "2026-11-19T03:08:17.427Z"
+    },
+    "mendel-work-rediscovered": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8de0fb3d951ccf4028a410a236fdee0c494070dad1caea1af94996f1472a00e4",
+      "updated_at": "2026-11-19T03:08:17.459Z"
+    },
+    "chromosome-theory-inheritance": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1ae2f0e56ab8686b92e2c98392b83360dc60f549d5b7bee4bb0c7591382699f3",
+      "updated_at": "2026-11-19T03:08:17.491Z"
+    },
+    "johannsen-coins-gene": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5ffa3426229560c23132a61197f1fb58f0eb3c4da4fc87440e0b56d16c69410f",
+      "updated_at": "2026-11-19T03:08:17.523Z"
+    },
+    "morgan-fruit-fly-linkage": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6050dd3d246905a1f0d0e0db0af76e0d25dc38d811d02a8e74a29b79f1888a22",
+      "updated_at": "2026-11-19T03:08:17.557Z"
+    },
+    "sturtevant-first-genetic-map": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "14f96fb0f658728a505e66808df592ed38c3f94db8f69726c7279193f0bc1d92",
+      "updated_at": "2026-11-19T03:08:17.598Z"
+    },
+    "muller-xray-mutations": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3694b7551967d597b98004743ef9f48081d7108b0394d85bd23f0b87945fe249",
+      "updated_at": "2026-11-19T03:08:17.637Z"
+    },
+    "griffith-transforming-principle": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8e95f791c4426fb922e7a7a01bb23445918646f96a360d9e490ca05df4634e8a",
+      "updated_at": "2026-11-19T03:08:17.673Z"
+    },
+    "mcclintock-crossing-over": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fd4bc7213e01879752cb7b8791984c9556b68fa75d1fb16646eae1c5ad82e335",
+      "updated_at": "2026-11-19T03:08:17.708Z"
+    },
+    "one-gene-one-enzyme": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "99ab7f80120e42591ffa691cf400ca3f10a9ce420df322dbef0f7f463a37d7f3",
+      "updated_at": "2026-11-19T06:08:43.719Z"
+    },
+    "avery-dna-heredity": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ed87ae0213c1929a46a6a96726bb9d50812ee3a8b85f228f23c03c32d9a1fc91",
+      "updated_at": "2026-11-19T06:08:43.753Z"
+    },
+    "hershey-chase-experiment": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ac80d7b196da266596b78568403534be925c8cae043728c8a515a40d25c42b6a",
+      "updated_at": "2026-11-19T06:08:43.788Z"
+    },
+    "human-46-chromosomes": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f77320a2c03bc00b57dede78380653c25b4b85f4482c116f5b67a5f5d27266cb",
+      "updated_at": "2026-11-19T06:08:43.819Z"
+    },
+    "genetic-code-cracked": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "c52ef41559b43f0b76b669604901744361c1028de02e77515958c707db6c881f",
+      "updated_at": "2026-11-19T08:22:29.057Z"
+    },
+    "first-restriction-enzyme": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b901cd983a06c652e43f46a74078152afb411f78c18d5f66873058b4b1218dc5",
+      "updated_at": "2026-11-19T06:08:43.886Z"
+    },
+    "cohen-boyer-recombinant-dna": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7a1563e7b4e6480b4ebfaf73ca789237fffcffab743aed3c768e2472e9e8d5d0",
+      "updated_at": "2026-11-19T06:08:43.925Z"
+    },
+    "mullis-invents-pcr": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fa36f99db7ddc6bc6ef0196bd7ceb9563368c81dce49f1f3154a6b06918a9ad2",
+      "updated_at": "2026-11-19T19:07:08.220Z"
+    },
+    "he-jiankui-gene-edited-babies": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2fb24a92ef186014630d0ac61a407b04db85dcc4017621bdaec6f05b4d0b2fc0",
+      "updated_at": "2026-11-19T06:08:43.965Z"
+    },
+    "first-crispr-therapy-approved": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2692f5beaab20087632053b305534e8f0c808112a0aff015cc4debcfef75aa70",
+      "updated_at": "2026-11-19T06:08:44.003Z"
+    },
+    "custom-base-editing-infant": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "3c0574498d5b198f0d9aa0c219ae2a8fbe6d43fdc32c25a04b6948a77ffb7200",
+      "updated_at": "2026-11-19T21:06:51.024Z"
+    }
+  }
+}

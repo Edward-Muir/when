@@ -1,0 +1,15 @@
+{
+  "slug": "genetic-code-cracked",
+  "description": "A painted scene of a dim laboratory. A hand in a grey sleeve holds chalk at a large wooden-framed chalkboard covered in a grid of hand-drawn marks: dashes, dots, tally-like strokes and squiggles, with no legible letters. Strings of wooden and glass beads hang on the right edge. Glass flasks, tubing and stacked papers sit at the bottom. A single lamp lights the scene from above, in a dark, warm oil-painting style. The painting runs edge to edge with no visible frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

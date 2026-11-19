@@ -1,0 +1,15 @@
+{
+  "slug": "chromosome-theory-inheritance",
+  "description": "A dark, painterly still life on a wooden desk. Two brass microscopes stand side by side, one on each side of the frame, each with a slide holding a small specimen: the left slide has an insect-like form, the right has a few small round objects. A glowing oil lamp sits in the centre. In the foreground a cream sheet of paper carries pen sketches of X-shaped paired rods with arrows between them. Glass specimen jars and old books sit in the background. There are no people. A faint scribbled mark is visible near the bottom right corner, possibly a painter's signature.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "A faint scribbled mark in the bottom right corner looks like a painter's signature. It is not legible, but it is a signature-like mark, which the no_text rule excludes. Remove it or crop it out. The rest of the scene matches: two microscopes, specimens, a chromosome sketch with arrows, and period-appropriate brass and lamp fittings."
+}

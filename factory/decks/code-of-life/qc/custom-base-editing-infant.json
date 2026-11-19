@@ -1,0 +1,15 @@
+{
+  "slug": "custom-base-editing-infant",
+  "description": "A dim hospital room in warm amber light. A small clear-sided crib holds a teddy bear on a rumpled blanket, with a thin IV drip line hanging beside it. Behind it are monitors and infusion pumps on poles. In the foreground a table holds a small glass vial and a sheet of paper with a double-helix DNA drawing. The painting fills the frame edge to edge, and there are no people or readable text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "cohen-boyer-recombinant-dna",
+  "description": "An oil painting in dark, warm tones. A large DNA double helix forms a ring across the middle, with one section splayed open at its ends and a thin, different-coloured strand threaded into the gap. Behind it are shelves of glass bottles and flasks, and in the foreground a petri dish of speckled colonies sits on a bench beside tweezers, a flask and an open notebook. No people are visible. The painting runs edge to edge with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

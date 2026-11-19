@@ -1,0 +1,15 @@
+{
+  "slug": "hershey-chase-experiment",
+  "description": "A glass kitchen-style blender with a cloudy amber liquid sits on a dark laboratory bench. Beside it are a test tube rack holding a tube with a pale sediment, and a glass pipette. On the left, an open spiral notebook has small pencil sketches of angular, legged shapes that look like bacteriophages. A glass flask and a stand with tubing sit in the dim background. The painting is oil-like and fills the whole square, with no frame or visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

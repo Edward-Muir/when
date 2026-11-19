@@ -1,0 +1,39 @@
+{
+  "id": "code-of-life",
+  "name": "Code of Life",
+  "scope": "Yes if it is a step in discovering or editing DNA and genes",
+  "boundary": "Code of Life owns genetics; evolution and natural history go to Field Notes, scanning to Seeing Inside, domesticated animals to Tamed.",
+  "neighbours": [
+    "field-notes",
+    "seeing-inside",
+    "tamed"
+  ],
+  "grid": {
+    "categories": [
+      "science",
+      "medicine"
+    ],
+    "eras": [
+      "industrial",
+      "coldWar",
+      "modern"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Mendel's pea experiments published (1866)",
+    "Morgan's fruit flies map genes (1910)",
+    "Griffith's transforming principle (1928)",
+    "Avery shows DNA carries heredity (1944)",
+    "Watson and Crick's double helix (1953)",
+    "Genetic code cracked (1966)",
+    "Recombinant DNA (1973)",
+    "PCR invented (1983)",
+    "Human Genome Project completed (2003)",
+    "CRISPR gene editing demonstrated (2012)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
