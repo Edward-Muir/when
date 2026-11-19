@@ -33,13 +33,9 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
   one "Go home". The patch's width is `min(10.5rem, 50% - 34px)`, which stays clear of the
   centred "↑ Earlier" on a 320px screen and is the narrowest that holds "ARCHITECTURE" on one
   line there.
-- **The hand bar rises from below the screen once the board has faded in** (`.hand-rise` in
-  `index.css`): 300ms of delay for Game's root fade, which starts as the intro screen leaves,
-  then 450ms of travel. It is a transform on a bar that keeps its place in the layout, never
-  a height change or a late mount, because the timeline centres its opening card once and
-  the board must be its final height on the first frame. It plays once per `Game` mount, so
-  also on a resumed daily and a review; it does not replay at a multiplayer hand-off or when
-  the bar turns into the game-over buttons. Reduced motion gets no animation.
+- **The hand bar is in place from the first frame.** Sliding it up from below the screen
+  once the board had faded in (`.hand-rise`) was tried and removed: it read as a pop-in at
+  the start of every game.
 - **The hand can be tucked away** with the chevron tab on the bar's top edge (`HandBar.tsx`),
   so the timeline can be read at the full height of the screen. The tab is a child of the bar
   and rides down with it: one control, in one place, for both directions. It is at the right

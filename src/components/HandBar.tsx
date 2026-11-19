@@ -21,8 +21,9 @@ function bottomBarHeightClass(phase: GamePhase): string {
 
 /**
  * The bar at the bottom of a game: the hand while playing, the result buttons at game over.
- * `hand-bar` (index.css) is the square hand card plus the safe-area inset, and `hand-rise`
- * slides the bar up from below the screen once the board has faded in.
+ * `hand-bar` (index.css) is the square hand card plus the safe-area inset. The bar is in
+ * place from the first frame: sliding it up at the start of a game was tried and read as a
+ * pop-in.
  *
  * The tab on its top edge tucks the hand away so the timeline can be read at the full height
  * of the screen, and brings it back. It is a child of the bar, so it rides down with it and
@@ -47,7 +48,7 @@ const HandBar: React.FC<HandBarProps> = ({ phase, isOverHand, barRef, children }
     <div
       ref={barRef}
       data-testid="hand-bar"
-      className={`${bottomBarHeightClass(phase)} hand-rise hand-bar-slide relative flex items-center border-t border-border bg-bg z-40 pb-safe ${
+      className={`${bottomBarHeightClass(phase)} hand-bar-slide relative flex items-center border-t border-border bg-bg z-40 pb-safe ${
         hidden ? 'hand-bar-hidden' : ''
       } ${isOverHand ? 'bg-accent/10' : ''}`}
     >
@@ -58,10 +59,11 @@ const HandBar: React.FC<HandBarProps> = ({ phase, isOverHand, barRef, children }
           aria-label={hidden ? 'Show hand' : 'Hide hand'}
           aria-expanded={!hidden}
           // The visible tab is 28px tall; the button reaches 16px further up so the target
-          // is 44px, and the tab's own bottom edge covers the bar's border under it.
+          // is 44px, and the tab's own bottom edge covers the bar's border under it. No shadow: one
+          // spilled onto the bar below the tab.
           className="group absolute bottom-full right-2 flex h-11 w-11 items-end justify-center"
         >
-          <span className="-mb-px flex h-7 w-11 items-center justify-center rounded-t-xl border border-b-0 border-border bg-bg text-text-muted shadow-sm transition-colors group-hover:text-text group-active:bg-surface">
+          <span className="flex h-7 w-11 items-center justify-center rounded-t-xl border border-b-0 border-border bg-bg text-text-muted transition-colors group-hover:text-text group-active:bg-surface">
             <Chevron className="h-5 w-5" aria-hidden="true" />
           </span>
         </button>

@@ -136,9 +136,6 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   pills race each other, which is where bugs hide. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
   the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the
   bottom-left counter button for `stats`, the cycle button for `swap`.
-- **The hand bar slides in.** It rises from below the screen over about 750 ms after the
-  board mounts (`.hand-rise`), so read `div.cursor-grab`'s box only after that, or the drag
-  starts from a position the card has already left.
 - **The menu drawer** (Home and the info pages only, never in a game): opened by
   `[aria-label="Open menu"]`. It does **not** close on
   Escape, and while open it swallows later clicks, so close it with
