@@ -1,0 +1,15 @@
+{
+  "slug": "pink-floyd-dark-side-album",
+  "description": "A glass prism stands on a dark, scuffed surface. A bright white beam enters from the upper left and leaves the prism as a rainbow spectrum that spreads across the lower right. Behind it sit several antique clocks with Roman-numeral dials, and a tape reel sits on the right. Cables trail across the dark, painterly oil-style scene. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "radiohead-ok-computer-album",
+  "description": "An empty airport departure lounge at night seen through large glass windows. Rows of grey seats line the left and right, and a counter holds four glowing teal CRT-style monitors. Through the glass, a dark jet sits on the lit tarmac under floodlights. The painting is loose and painterly with a reflective floor, no people in focus, and no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

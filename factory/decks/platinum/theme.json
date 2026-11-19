@@ -1,0 +1,42 @@
+{
+  "id": "platinum",
+  "name": "Platinum",
+  "scope": "Yes if it is a famous album",
+  "boundary": "Platinum: the albums themselves; single anthems, protest songs and charity singles go to Sing Out!, the birth of styles to Born to Groove, concerts to Crowd Roars, formats such as the LP to Press Play.",
+  "neighbours": [
+    "sing-out",
+    "born-to-groove",
+    "press-play"
+  ],
+  "grid": {
+    "categories": [
+      "media",
+      "art",
+      "commerce"
+    ],
+    "eras": [
+      "worldWars",
+      "coldWar",
+      "modern"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Kind of Blue (1959)",
+    "Pet Sounds (1966)",
+    "Sgt. Pepper's Lonely Hearts Club Band (1967)",
+    "The Dark Side of the Moon (1973)",
+    "Rumours (1977)",
+    "Thriller (1982)",
+    "The Joshua Tree (1987)",
+    "Nevermind (1991)",
+    "Back to Black (2006)",
+    "Adele's 21 (2011)"
+  ],
+  "appeal": 3,
+  "status": "authoring"
+}

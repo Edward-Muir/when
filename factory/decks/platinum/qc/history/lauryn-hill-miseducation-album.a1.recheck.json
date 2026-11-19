@@ -1,0 +1,15 @@
+{
+  "slug": "lauryn-hill-miseducation-album",
+  "description": "A dark oil painting of an old wooden school desk with carved-up front and top, a stack of handwritten pages and a black vinyl record on it, with a chair beside it. Behind is a large blackboard covered in chalk lettering. Carved marks on the desk read like names and words, including SCHOOL. No frame or border, nothing violent.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The chalkboard is covered in chalk lettering with word-like strings (e.g. 'walk', 'Playlight', 'Kainbook'), and the desk carvings show letters including 'SCHOOL' and name-like marks. Repaint the board and desk with abstract scribbles or plain wood, with no letterforms."
+}

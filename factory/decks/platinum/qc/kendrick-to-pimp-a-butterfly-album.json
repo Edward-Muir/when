@@ -1,0 +1,15 @@
+{
+  "slug": "kendrick-to-pimp-a-butterfly-album",
+  "description": "A dark, glossy 1960s sedan with chrome trim, possibly a Chevrolet Impala, is parked low on a sunny residential street lined with palm trees and single-storey stucco houses. A monarch butterfly rests on the roof, and an open black case holding a saxophone lies on the pavement in front of the car. The style is painterly, like an oil painting, with no frame or border visible. Only the car's rear badge has small lettering, which is part of the car.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

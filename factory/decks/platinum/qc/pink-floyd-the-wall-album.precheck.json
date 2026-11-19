@@ -1,0 +1,20 @@
+{
+  "slug": "pink-floyd-the-wall-album",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "3935fc1bfbce96227ee933c014a9106ebc38c00ba5cadbd2925346ee1d392da8",
+  "dhash": "595cd031f8f8f8aa",
+  "nearest": {
+    "deck": {
+      "slug": "pink-floyd-dark-side-album",
+      "distance": 20
+    },
+    "catalogue": {
+      "slug": "maroon-wars-jamaica",
+      "distance": 14
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

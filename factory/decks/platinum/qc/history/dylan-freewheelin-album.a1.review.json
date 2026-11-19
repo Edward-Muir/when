@@ -1,0 +1,15 @@
+{
+  "slug": "dylan-freewheelin-album",
+  "description": "A snowy city side street at dusk. A brick apartment block with fire escapes runs along the right, and a dark storefront on the left has a lit window with painted letters reading FOLK CITY and two candles. A teal and cream VW camper van and older sedans are parked along the street. In the foreground, a worn guitar case is leaning against a black lamppost in the snow, with footprints leading toward it. No people are visible.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted text 'FOLK CITY' is visible in the storefront window. Remove or repaint that sign so no lettering appears. Also, the scene asked for a couple walking arm in arm with a guitar case slung over one shoulder; the picture has no people, and the guitar case is leaning on a lamppost instead, so the subject match is loose."
+}

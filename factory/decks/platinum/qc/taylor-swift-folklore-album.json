@@ -1,0 +1,15 @@
+{
+  "slug": "taylor-swift-folklore-album",
+  "description": "A dark, mossy wooden cabin in a misty forest of tall conifers. A knitted cardigan hangs on a porch post beside a wooden acoustic guitar leaning on the wall. The cabin door is open with warm lamplight glowing inside, and the moss-covered roof and dense ferns frame the scene. The painting is an oil-style landscape with no people visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
