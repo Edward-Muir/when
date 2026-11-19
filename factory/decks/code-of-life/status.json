@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:17:59.627Z",
+  "updated_at": "2026-11-19T02:20:12.623Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-19T02:17:59.627Z"
     },
     "johannsen-coins-gene": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5ffa3426229560c23132a61197f1fb58f0eb3c4da4fc87440e0b56d16c69410f",
+      "updated_at": "2026-11-19T02:20:12.623Z"
     },
     "morgan-fruit-fly-linkage": {
       "state": "pending",
