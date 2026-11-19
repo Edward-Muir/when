@@ -7,13 +7,58 @@ Home-screen pager, gameplay layout, and the Custom settings screen.
 Full-width vertical stack:
 
 ```
-TopBar  (fixed, safe-area aware — see ../mobile-ios/index.md for pt-topbar*)
+(no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
-Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card stack
+  └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right, light/dark under Home
+Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
 
-- **Cards have two shapes.** Landscape on the timeline (240×80 mobile, 280×96 desktop, image
-  left 40% / title right 60%); portrait in the hand (144×176 / 160×192).
+- **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
+  went; what is left is `GameHud.tsx`, which floats over the top of the board beside
+  "↑ Earlier" and costs no height: a small "When?" wordmark in the top-left corner with the
+  theme under it as a grey capitals label beside a gold square, and Home top-right with the
+  light/dark switch under it (the one Menu setting wanted mid-game). The strip
+  ignores the pointer everywhere but Home. How to Play, Reset Hints, dark mode, Profile and
+  the update popup are on Home only, since they lived in the bar's Menu. **Mid-game Restart
+  went with the bar** and was not rehomed: Restart is offered at game over, in the bottom bar.
+- **The board shows through right up to the top; nothing bands it.** The wordmark and label
+  are bare text, so they sit on `hud-mark` (`index.css`): a patch of page colour with a soft
+  edge, only as big as the text. It lies over the year gutter, so what it hides is a year
+  passing under the wordmark, never a card (the longest pairing names reach about 50px onto
+  the cards' left edge). **A wash across the whole width was built first and reverted**: it
+  was solid for 50px and gave back the height the bar's removal had won. A gold pill and a
+  boxed lockup were also tried and read as heavy.
+- **Home is a boxed button**, the same as the top bar's on the Home screen. A bare icon was
+  tried and did not read as something to press. The wordmark is not a button, so there is
+  one "Go home". The patch's width is `min(10.5rem, 50% - 34px)`, which stays clear of the
+  centred "↑ Earlier" on a 320px screen and is the narrowest that holds "ARCHITECTURE" on one
+  line there.
+- **The hand bar is in place from the first frame.** Sliding it up from below the screen
+  once the board had faded in (`.hand-rise`) was tried and removed: it read as a pop-in at
+  the start of every game.
+- **The hand can be tucked away** with the chevron tab on the bar's top edge (`HandBar.tsx`),
+  so the timeline can be read at the full height of the screen. The tab is a child of the bar
+  and rides down with it: one control, in one place, for both directions. It is at the left
+  end: the centre of that edge holds "Later ↓" and the hint pill, and the right end, tried
+  first, sits under a right thumb and was pressed by accident. Hiding is a negative
+  bottom margin (`.hand-bar-hidden`), so the flex-1 board grows as the bar leaves; that is
+  safe after the opening because the timeline centres its first card only once. The
+  safe-area strip stays, keeping "Later ↓" off the home indicator. The hand is `inert` while
+  hidden, nothing is stored (every game starts with the hand showing), and game over has no
+  tab.
+
+- **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
+  written. Landscape on the timeline (240×80 on a phone, 280×96 from `sm`; art across the left
+  70%, title on the right); a 168px square in the hand. A smaller 228×70 timeline card and a
+  140px hand card were both tried and reverted.
+- **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
+  `index.css`): the hand card is centred on the screen, the counter is centred in the space on
+  its left and the swap button sits in the space on its right, at every width. The counter used
+  to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
+  edge and the swap button 40px beside it. The middle column is the card's width whether or not
+  there is a card, so the counter does not move between turns. The swap button is centred in
+  what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
+  the column it sat on the fanned cards at 360px wide.
 - The bottom bar's drop zone id is **`bottom-bar-zone`** — the Playwright selectors depend
   on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
@@ -22,9 +67,8 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
   reason it is done with percentage padding rather than `max-width`/`mx-auto` all live in one
   place: the `BOARD COLUMN` comment in `src/index.css`. Read it before changing the gutter, the
   gap or the card width — all three feed the same `--board-*` vars, and getting it wrong
-  detaches the accent rail from every row's tick. The same three classes (`board-center`,
-  `board-center-item`, `board-rail`) do the job in `Timeline`, `Game`'s bottom bar,
-  `GameStartTransition` and `ArchivePanel`.
+  detaches the accent rail from every row's tick. The same two classes (`board-center`,
+  `board-rail`) do the job in `Timeline`, `GameStartTransition` and `ArchivePanel`.
 
 ## Home is a five-tab pager
 
@@ -71,8 +115,8 @@ buttons. One navigation model: the buttons scroll the same pager the swipe does,
   pages; the panel components in `src/components/panels/` are mounted by the pager. **The top
   bar shows the same five nav buttons on every non-game page.**
 - **`TopBar` takes an optional `onNavClick`**: when provided the buttons scroll the pager,
-  when absent they navigate to the tab's path. The in-game bar
-  (`Game.tsx`) deliberately shows Home and Menu only.
+  when absent they navigate to the tab's path. A game mounts no `TopBar` at all (see
+  Gameplay layout).
 - **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Stats and
   Timeline. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalls the
   iOS scroll-snap gesture. `TimelinePanel` additionally holds its (unvirtualised) timeline back
@@ -107,7 +151,7 @@ makes this worth having: without it, a finished board is a score.
   count the game a second time — lifetime stats, the cadence streak, the collection, a duplicate
   `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
   and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
-  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
+  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the floating
   Home skips the "progress will be lost" confirm.
 - **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
   events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
@@ -153,7 +197,7 @@ designed, and the clean board still looks better. **Do not build it.** What rema
   untinted: a tint would force a mask over the board's own content plus a `text-shadow` halo on
   the labels.
 - The scroller carries `data-board-scroller` as `scripts/tick-landing-probe.js`'s handle on the
-  scrolling element, since `board-center` is also on the hand bar and on ArchivePanel.
+  scrolling element, since `board-center` is also on `GameStartTransition` and ArchivePanel.
 
 The board has the rail, and the two lit things that ride it:
 
@@ -183,7 +227,7 @@ the pointer sits on the insertion boundary, which is where the marker is — so 
 near the board's top and bottom as well. It would read only at the _ends_, where the rail's
 growth extends a whole row beyond the card. Rendering it to `body` at `z-index: 1001` in viewport
 coordinates fixes both without changing how it looks — **inside a fixed clip box the size of the
-board**, because it must clear the overlay without ever reaching the hand bar or the top bar, and
+board**, because it must clear the overlay without ever reaching the hand bar or the status bar, and
 z-index alone cannot express that: `#root` is its own stacking context at `z-index: 1`, so the
 overlay on `body` is above every piece of app chrome and anything clearing the overlay clears the
 chrome too. At the board's edges the marker and its glow are simply cut off, which against the
@@ -356,6 +400,36 @@ Traps that cost time:
 and the wake-delay memo live in `Timeline/useTimelineWaves.ts` and `Timeline/useWakeDelays.ts`,
 and the row renderers are split out.
 
+## Tried and not shipped: the timeline wheel
+
+The board, My Timeline and the Archive were once painted as a wheel turning into the page: the
+card at the centre of the viewport grew (its frame opened to show more painting, or the whole
+card was magnified, or both), its year swelled, the rows above and below leaned back on a large
+cylinder, and scrolling gave a haptic tick as each event passed the centre. It was built over
+two sessions and tuned for a day on a phone, with slider pages for the numbers. **It was never
+merged.** The timeline is the flat list, and it scrolls exactly with the finger.
+
+- **Why it was dropped (2026-11-18).** It made the owner feel slightly motion sick, in every
+  tuning, down to a centre card only 8px taller than its neighbours. The likely causes are the
+  ones such an effect cannot lose: to make room for the larger card the rows away from the
+  centre move at a different speed from the finger, and things change size continuously while
+  the eye is tracking them.
+- **The published research points the same way.** Studies of fisheye and focus+context views
+  find no optimum for this kind of effect, costs that rise with its strength, and benefits
+  that are cosmetic (Hornbæk and Hertzum 2007; Cockburn, Karlson and Bederson 2009).
+- **The smaller timeline card went with it.** 228×70 was tuned while the wheel was enlarging
+  the centre card; without the wheel the card is the 240×80 it was.
+- **The code is kept on two unmerged branches**, `claude/lucid-fermat-yk6p5z` (the wheel as
+  first built) and `claude/charming-mayer-095s9t` (the same plus the magnifier, the combined
+  tuning and a faster scroll driver). Nothing from it is on this one.
+- **If it is ever revisited:** flatten it while the board is moving and grow the centre card
+  only once the scroll settles; keep every row moving one-for-one with the finger; and try it
+  for a few minutes of real play on a phone before tuning anything. One lesson is general: the
+  first driver set its values as CSS custom properties on each row and let the children read
+  them with `var()`. Custom properties inherit, so every scroll frame restyled every element
+  of every row, and that was the largest cost of a scroll. Write a value to the one element
+  that uses it.
+
 ## Onboarding hints
 
 The app teaches itself through single-line contextual hints tied to the moment of need,
@@ -376,9 +450,9 @@ and do not improve performance, while hints of this shape do.
   wants the explanations back. A plain row like every other action: it closes the drawer and
   says nothing else — no confirm and no confirmation text, because nothing is lost.
   `resetHintsSeen` also **dispatches
-  a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
-  `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
-  reset during a game would silently do nothing until the next one.
+  a `when-hints-reset` event** (`subscribeHintsReset`), which dates from when the menu was
+  reachable mid-game: `useOnboardingHints` reads storage once per mount, so a reset during a
+  game needed the broadcast. A game has no menu now, so that listener is idle in practice.
   **`useTabHint` has to listen to that broadcast too.** Its effect reads storage only when its
   deps change. `active` is one of those deps, so the strips on tabs you are not standing on
   re-arm by themselves the moment you navigate to them, and **the only strip that would stay
