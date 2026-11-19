@@ -21550,5 +21550,285 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "greek-fire-constantinople",
+    "friendly_name": "Greek Fire at Constantinople",
+    "year": 674,
+    "category": "warfare",
+    "description": "Byzantine ships sprayed a secret burning liquid that clung to water and set enemy fleets ablaze.",
+    "difficulty": "easy",
+    "regions": [
+      "Syria",
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-fire-constantinople_e1nl48?_a=BAMAMikS0",
+    "color": "#261f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "great-bombard-constantinople",
+    "friendly_name": "The Great Bombard Fires",
+    "year": 1453,
+    "category": "warfare",
+    "description": "A monstrous Ottoman cannon pounded the ancient defences of a great Christian capital until they fell.",
+    "difficulty": "easy",
+    "regions": [
+      "Turkey",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-bombard-constantinople_jnic8n?_a=BAMAMikS0",
+    "color": "#3e2e22",
+    "text_color": "light"
+  },
+  {
+    "name": "leonardo-armoured-car",
+    "friendly_name": "Leonardo's Armoured Car Design",
+    "year": 1487,
+    "category": "invention",
+    "description": "An Italian polymath drew a domed, cannon-bristling car driven by cranks, a forerunner of the tank.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leonardo-armoured-car_751di0?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "nagashino-matchlock-volleys",
+    "friendly_name": "Matchlock Volleys at Nagashino",
+    "year": 1575,
+    "category": "warfare",
+    "description": "Massed Japanese gunners fired in rotation from behind fences and shattered a famed samurai cavalry.",
+    "difficulty": "easy",
+    "regions": [
+      "Japan"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nagashino-matchlock-volleys_z4iwaa?_a=BAMAMikS0",
+    "color": "#25201e",
+    "text_color": "light"
+  },
+  {
+    "name": "puckle-gun-patented",
+    "friendly_name": "Puckle Gun Patented",
+    "year": 1718,
+    "category": "invention",
+    "description": "A London lawyer patented a tripod-mounted revolving flintlock, with round bullets for Christians and square for Turks.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/puckle-gun-patented_kijtz1?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "first-aerial-bombing-libya",
+    "friendly_name": "First Bomb Dropped from a Plane",
+    "year": 1911,
+    "category": "warfare",
+    "description": "An Italian pilot tossed small grenades by hand onto enemy troops in North Africa, opening aerial bombardment.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Libya"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-aerial-bombing-libya_25z5qs?_a=BAMAMikS0",
+    "color": "#c0aa8c",
+    "text_color": "dark"
+  },
+  {
+    "name": "thompson-submachine-gun",
+    "friendly_name": "Thompson Submachine Gun Introduced",
+    "year": 1921,
+    "category": "invention",
+    "description": "The 'Tommy gun' with its drum magazine arrived, later famed in the hands of gangsters and soldiers.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thompson-submachine-gun_psqj5j?_a=BAMAMikS0",
+    "color": "#222121",
+    "text_color": "light"
+  },
+  {
+    "name": "spitfire-first-flight",
+    "friendly_name": "Spitfire Takes Its First Flight",
+    "year": 1936,
+    "category": "invention",
+    "description": "A graceful elliptical-winged British fighter made its maiden flight and became a symbol of resistance.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spitfire-first-flight_0aarw3?_a=BAMAMikS0",
+    "color": "#676a68",
+    "text_color": "light"
+  },
+  {
+    "name": "dambusters-bouncing-bombs",
+    "friendly_name": "Bouncing Bombs Breach the Dams",
+    "year": 1943,
+    "category": "warfare",
+    "description": "Bombers skimmed low over reservoirs and released spinning bombs that skipped across water to burst German dams.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dambusters-bouncing-bombs_8d83qy?_a=BAMAMikS0",
+    "color": "#1d2128",
+    "text_color": "light"
+  },
+  {
+    "name": "me-262-jet-fighter-combat",
+    "friendly_name": "Me 262 Jet Fighter Enters Combat",
+    "year": 1944,
+    "category": "warfare",
+    "description": "A swept-wing German aircraft with no propeller outpaced every Allied fighter in the sky.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/me-262-jet-fighter-combat_go3qfi?_a=BAMAMikS0",
+    "color": "#757980",
+    "text_color": "light"
+  },
+  {
+    "name": "ak-47-designed",
+    "friendly_name": "AK-47 Designed",
+    "year": 1947,
+    "category": "invention",
+    "description": "A Soviet tank sergeant's simple, rugged assault rifle was finished and went on to become the most produced firearm.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ak-47-designed_mfjzgm?_a=BAMAMikS0",
+    "color": "#24201d",
+    "text_color": "light"
+  },
+  {
+    "name": "b-52-enters-service",
+    "friendly_name": "B-52 Stratofortress Enters Service",
+    "year": 1955,
+    "category": "warfare",
+    "description": "An eight-engined American bomber began a career that has outlasted nearly every other aircraft of its age.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/b-52-enters-service_q9puy5?_a=BAMAMikS0",
+    "color": "#1e2126",
+    "text_color": "light"
+  },
+  {
+    "name": "m16-rifle-adopted",
+    "friendly_name": "M16 Rifle Adopted",
+    "year": 1964,
+    "category": "warfare",
+    "description": "A light, black plastic-stocked American rifle replaced wooden-stocked designs and went to jungle war.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/m16-rifle-adopted_y1fu4p?_a=BAMAMikS0",
+    "color": "#22211b",
+    "text_color": "light"
+  },
+  {
+    "name": "f-117-stealth-fighter-service",
+    "friendly_name": "F-117 Stealth Fighter in Service",
+    "year": 1983,
+    "category": "warfare",
+    "description": "A faceted black American jet designed to be nearly invisible to radar became operational in secret.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/f-117-stealth-fighter-service_sh7fsb?_a=BAMAMikS0",
+    "color": "#212123",
+    "text_color": "light"
+  },
+  {
+    "name": "b-2-stealth-bomber-first-flight",
+    "friendly_name": "B-2 Stealth Bomber Flies",
+    "year": 1989,
+    "category": "invention",
+    "description": "A huge flying-wing bomber, built to slip past air defences unseen, took to the air for the first time.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/b-2-stealth-bomber-first-flight_6tkg0y?_a=BAMAMikS0",
+    "color": "#493e36",
+    "text_color": "light"
+  },
+  {
+    "name": "patriot-missiles-scuds",
+    "friendly_name": "Patriot Missiles Face Scuds",
+    "year": 1991,
+    "category": "warfare",
+    "description": "Television audiences watched anti-missile interceptors rise to meet incoming ballistic missiles over the Gulf.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq",
+      "Israel",
+      "Saudi Arabia",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/patriot-missiles-scuds_yo0utk?_a=BAMAMikS0",
+    "color": "#232022",
+    "text_color": "light"
+  },
+  {
+    "name": "predator-drone-first-hellfire",
+    "friendly_name": "Predator Fires Its First Hellfire",
+    "year": 2001,
+    "category": "warfare",
+    "description": "An unmanned American aircraft fired a Hellfire missile for the first time, turning a spy drone into a hunter-killer.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/predator-drone-first-hellfire_7ecugd?_a=BAMAMikS0",
+    "color": "#323236",
+    "text_color": "light"
+  },
+  {
+    "name": "mother-of-all-bombs-combat",
+    "friendly_name": "Mother of All Bombs Used in Combat",
+    "year": 2017,
+    "category": "warfare",
+    "description": "The largest non-nuclear bomb in the American arsenal was dropped in anger for the first time.",
+    "difficulty": "easy",
+    "regions": [
+      "Afghanistan",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mother-of-all-bombs-combat_5cqs1h?_a=BAMAMikS0",
+    "color": "#24201f",
+    "text_color": "light"
   }
 ]

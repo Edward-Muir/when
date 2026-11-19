@@ -1,0 +1,26 @@
+{
+  "id": "war-machines",
+  "name": "War Machines",
+  "scope": "Yes if it is a famous weapon or fighting machine",
+  "boundary": "War Machines: weapons from Greek fire to drones; nuclear bombs go to The Atomic Age, rockets as launchers to Lift-Off!, warship designs to Sail & Steam.",
+  "neighbours": ["atomic-age", "lift-off", "ships"],
+  "grid": {
+    "categories": ["warfare", "invention"],
+    "eras": ["industrial", "worldWars", "coldWar"],
+    "regions": ["Global", "Europe", "North America"]
+  },
+  "example_beats": [
+    "Greek fire used at Constantinople (674)",
+    "Gatling gun patented (1861)",
+    "Maxim machine gun (1884)",
+    "Poison gas at Ypres (1915)",
+    "Tanks debut at the Somme (1916)",
+    "Radar network built in Britain (1935)",
+    "Me 262 jet fighter enters combat (1944)",
+    "AK-47 adopted (1947)",
+    "F-117 stealth fighter enters service (1983)",
+    "Predator drone's first missile strike (2001)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

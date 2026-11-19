@@ -1,0 +1,15 @@
+{
+  "slug": "spitfire-first-flight",
+  "description": "A silver single-engine propeller monoplane with elliptical wings and a bubble canopy flies low over a muddy grass airfield under storm clouds, with 'K5054' painted on its rear fuselage. A dark wooden hangar with small figures stands behind. In the foreground, two men in dark blue uniforms and three in brown flight overalls watch it. The painting fills the canvas with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The rear fuselage has the painted serial 'K5054', which is text in the picture. Regenerate with no lettering or serial numbers on the aircraft."
+}

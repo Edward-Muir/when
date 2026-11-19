@@ -1,0 +1,20 @@
+{
+"greek-fire-constantinople":{"recognition":"medium","inferability":"high","anchors":["Byzantine","Greek fire"],"why":"Byzantine ships place it in the early medieval era"},
+"great-bombard-constantinople":{"recognition":"medium","inferability":"high","anchors":["Ottoman","Constantinople","cannon"],"why":"Ottoman cannon against a Christian capital points to 1453"},
+"leonardo-armoured-car":{"recognition":"medium","inferability":"high","anchors":["Leonardo","Italian polymath","cannon"],"why":"Leonardo-style polymath with cannons means Renaissance"},
+"nagashino-matchlock-volleys":{"recognition":"low","inferability":"high","anchors":["matchlock","samurai"],"why":"matchlocks against samurai cavalry means 16th century Japan"},
+"puckle-gun-patented":{"recognition":"low","inferability":"medium","anchors":["flintlock","Turks","patent"],"why":"flintlock and Christians versus Turks suggest 17th-18th century"},
+"first-aerial-bombing-libya":{"recognition":"medium","inferability":"high","anchors":["plane","grenades","Italian pilot","North Africa"],"why":"first plane bombing by hand grenades points to the early 1910s"},
+"thompson-submachine-gun":{"recognition":"medium","inferability":"medium","anchors":["gangsters","Tommy gun"],"why":"gangsters and soldiers suggest early 20th century, between the wars"},
+"spitfire-first-flight":{"recognition":"high","inferability":"high","anchors":["British fighter","resistance"],"why":"Spitfire and fighter symbolising resistance means 1930s WWII era"},
+"dambusters-bouncing-bombs":{"recognition":"high","inferability":"high","anchors":["bombers","German dams","WWII"],"why":"bombers against German dams is WWII"},
+"me-262-jet-fighter-combat":{"recognition":"medium","inferability":"high","anchors":["German","Allied fighter","jet"],"why":"German jet versus Allied fighters is WWII"},
+"ak-47-designed":{"recognition":"high","inferability":"high","anchors":["Soviet","assault rifle"],"why":"Soviet assault rifle places it in the 1940s"},
+"b-52-enters-service":{"recognition":"medium","inferability":"medium","anchors":["American bomber","eight-engined"],"why":"jet-age American bomber suggests Cold War, outlasting its peers"},
+"m16-rifle-adopted":{"recognition":"medium","inferability":"high","anchors":["jungle war","American rifle","plastic stock"],"why":"jungle war implies Vietnam era"},
+"f-117-stealth-fighter-service":{"recognition":"medium","inferability":"high","anchors":["stealth","radar","American jet"],"why":"stealth jet implies late Cold War"},
+"b-2-stealth-bomber-first-flight":{"recognition":"medium","inferability":"high","anchors":["stealth","flying-wing","bomber"],"why":"stealth bomber implies late 20th century"},
+"patriot-missiles-scuds":{"recognition":"medium","inferability":"high","anchors":["television","ballistic missiles","Gulf"],"why":"televised Gulf missile war means 1991"},
+"predator-drone-first-hellfire":{"recognition":"medium","inferability":"high","anchors":["unmanned drone","Hellfire"],"why":"armed drones imply around 2001"},
+"mother-of-all-bombs-combat":{"recognition":"medium","inferability":"high","anchors":["largest non-nuclear bomb","American arsenal"],"why":"modern nuclear-age weapon used in anger, recent era"}
+}
