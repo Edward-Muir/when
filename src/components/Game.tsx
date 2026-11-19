@@ -12,13 +12,7 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import {
-  WhenGameState,
-  PlacementResult,
-  HistoricalEvent,
-  GamePopupData,
-  GamePhase,
-} from '../types';
+import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
@@ -34,6 +28,7 @@ import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
 import GameHud from './GameHud';
 import HintStrip from './HintStrip';
+import HandBar from './HandBar';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import { useThemeIntro } from '../hooks/useThemeIntro';
@@ -151,14 +146,6 @@ interface GameProps {
   newlyUnlockedAchievements: string[];
   gameMilestones: GameMilestone[];
   allEvents: HistoricalEvent[];
-}
-
-/**
- * The bar is tall only while it holds the square hand card. Game over swaps in a row of
- * buttons, and the board gets the space back.
- */
-function bottomBarHeightClass(phase: GamePhase): string {
-  return phase === 'gameOver' ? 'h-[120px] sm:h-[140px]' : 'hand-bar';
 }
 
 /**
@@ -433,15 +420,8 @@ const Game: React.FC<GameProps> = ({
             />
           </div>
 
-          {/* Bottom Bar - Fixed height with game info + active card aligned with timeline.
-              `hand-bar` (index.css) is the square hand card plus the safe-area inset, and
-              `hand-rise` slides the bar up from below the screen once the board has faded in. */}
-          <div
-            ref={setBottomBarRef}
-            className={`${bottomBarHeightClass(state.phase)} hand-rise flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
-              dragState.isOverHand ? 'bg-accent/10' : ''
-            }`}
-          >
+          {/* Bottom bar: the hand while playing, the result buttons at game over. */}
+          <HandBar phase={state.phase} isOverHand={dragState.isOverHand} barRef={setBottomBarRef}>
             {state.phase === 'gameOver' ? (
               /* Game Over: Full-width horizontal buttons */
               <GameOverControls
@@ -483,7 +463,7 @@ const Game: React.FC<GameProps> = ({
                 )}
               </div>
             )}
-          </div>
+          </HandBar>
 
           {createPortal(
             <DragOverlay dropAnimation={dropAnimationFor(droppedOnTimelineRef.current)}>

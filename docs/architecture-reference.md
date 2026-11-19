@@ -38,6 +38,7 @@ index.tsx                      # BrowserRouter + the routes below
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── GameHud.tsx        # All of a game's chrome: the wordmark, the theme label, Home, light/dark. A game
 │       │                      # mounts no TopBar, so no Menu and no UpdatePopup either
+│       ├── HandBar.tsx        # The bottom bar's shell, with the tab that tucks the hand away
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
 ├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig

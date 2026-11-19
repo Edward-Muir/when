@@ -871,6 +871,18 @@ input,
   animation: handRise 450ms cubic-bezier(0.2, 0.8, 0.2, 1) 300ms backwards;
 }
 
+/* Tucking the hand away (HandBar.tsx). A margin, not a transform, so the board above takes
+   the height as the bar leaves; the safe-area strip is not part of it and stays on screen. */
+.hand-bar-slide {
+  transition:
+    margin-bottom 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 200ms;
+}
+
+.hand-bar-hidden {
+  margin-bottom: calc(-1 * (var(--hand-card) + 16px));
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .hand-rise,
@@ -887,6 +899,10 @@ input,
   .animate-vignette,
   .tl-tick-glow {
     animation: none;
+  }
+
+  .hand-bar-slide {
+    transition: none;
   }
 
   /* The hint glow keeps a motion-free brightness blink so the strip still points at

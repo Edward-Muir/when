@@ -40,6 +40,15 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
   the board must be its final height on the first frame. It plays once per `Game` mount, so
   also on a resumed daily and a review; it does not replay at a multiplayer hand-off or when
   the bar turns into the game-over buttons. Reduced motion gets no animation.
+- **The hand can be tucked away** with the chevron tab on the bar's top edge (`HandBar.tsx`),
+  so the timeline can be read at the full height of the screen. The tab is a child of the bar
+  and rides down with it: one control, in one place, for both directions. It is at the right
+  end because the centre of that edge holds "Later ↓" and the hint pill. Hiding is a negative
+  bottom margin (`.hand-bar-hidden`), so the flex-1 board grows as the bar leaves; that is
+  safe after the opening because the timeline centres its first card only once. The
+  safe-area strip stays, keeping "Later ↓" off the home indicator. The hand is `inert` while
+  hidden, nothing is stored (every game starts with the hand showing), and game over has no
+  tab.
 
 - **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
   written. Landscape on the timeline (240×80 on a phone, 280×96 from `sm`; art across the left
