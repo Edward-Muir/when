@@ -1,0 +1,15 @@
+{
+  "slug": "flag-soviet-hammer-sickle",
+  "description": "A painterly, oil-style scene of a large red banner with a gold hammer and sickle and a red star, waving above a column of men in dark greatcoats and caps marching through falling snow. Behind them are red brick towers with white crenellations and spires, a striped onion dome at the far left, and a grey, stormy sky. No visible text, border or frame, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

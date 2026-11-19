@@ -1,0 +1,15 @@
+{
+  "slug": "flag-south-africa-new",
+  "description": "A flag with a green, black and yellow Y-shaped hoist and red, white and blue arms flies from a tall pole against a dusk sky. Below, a long queue of dark-clothed people, several of them children, stands on dusty ground in front of tin-roofed shacks, with power lines and a setting sun behind them. The painting is edge to edge with no frame or text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "flag-china-five-star-raised",
+  "description": "A tall silver flagpole in the centre flies a red flag with yellow stars under a dark stormy sky. Below, a dense crowd of people in dark, drab 1940s-50s style clothing, many in fedora hats, faces away from the viewer in the foreground. Behind them is a traditional Chinese gate-tower with red lanterns and a portrait, and red banners with characters on the wall. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted Chinese characters are visible on the banners of the gate-tower wall (both sides of the portrait). The card must have no painted text; repaint without any legible characters or signage."
+}

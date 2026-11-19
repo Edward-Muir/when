@@ -1,0 +1,15 @@
+{
+  "slug": "flag-russia-tricolour-returns",
+  "description": "Night scene in an oil-paint style. A young man in a dark jacket stands on a heavy olive-green tank holding a large white, blue and red horizontal-striped flag aloft. Several other young people crowd the turret and hull, some raising fists. Behind them is a tall pale modernist government-style building with lit windows, with searchlight beams, smoke and a small fire in the background, and a crowd below. Dress is late-Soviet-era jeans, leather jackets and work jackets. No visible text, no frame, no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
