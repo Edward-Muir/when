@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:12:46.811Z",
+  "updated_at": "2026-11-19T02:15:46.368Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-19T02:12:46.811Z"
     },
     "mendel-work-rediscovered": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8de0fb3d951ccf4028a410a236fdee0c494070dad1caea1af94996f1472a00e4",
+      "updated_at": "2026-11-19T02:15:46.368Z"
     },
     "chromosome-theory-inheritance": {
       "state": "pending",
