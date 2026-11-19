@@ -131,5 +131,19 @@
     "by": "review",
     "attempts": 1,
     "description": "An IV bag on a metal stand hangs over an empty reclining hospital chair in a dim room, its line running down toward the seat. On the right, against a dark red background, a crescent-shaped red blood cell sits beside a round, plump red cell. The painting is oil-like and fills the frame edge to edge. No people, no visible text."
+  },
+  "mullis-invents-pcr": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Dark interior view from inside an older car, with a three-spoke steering wheel bearing a star emblem, a lit dashboard with round gauges and a radio, looking out a windscreen at a winding forest road at night. Glowing double-helix DNA strands branch and multiply across the windscreen and the night scene above the road. No legible text."
+  },
+  "custom-base-editing-infant": {
+    "state": "qc-fail",
+    "reason": "Legible text is painted in: the vial reads 'Custom Base Editing' and the paper on the cart has the same heading. Paint the vial and papers without lettering.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dim painterly hospital room: a glass-sided crib under a warm lamp holding a teddy bear under blankets, an IV drip line beside it, monitors on the wall. On a cart at right is a small glowing vial labelled with words and papers showing a DNA helix and handwritten lettering. Fills the frame edge to edge."
   }
 }

@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T18:11:39.429Z",
+  "updated_at": "2026-11-19T19:07:08.259Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,11 +135,11 @@
       "updated_at": "2026-11-19T06:08:43.925Z"
     },
     "mullis-invents-pcr": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "fa36f99db7ddc6bc6ef0196bd7ceb9563368c81dce49f1f3154a6b06918a9ad2",
-      "updated_at": "2026-11-19T18:09:07.569Z"
+      "updated_at": "2026-11-19T19:07:08.220Z"
     },
     "he-jiankui-gene-edited-babies": {
       "state": "qc-pass",
@@ -156,11 +156,11 @@
       "updated_at": "2026-11-19T06:08:44.003Z"
     },
     "custom-base-editing-infant": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible text is painted in: the vial reads 'Custom Base Editing' and the paper on the cart has the same heading. Paint the vial and papers without lettering.",
       "sha256": "762b5208cbe834462096e6dbb0bf83c345e3922c34211afdc7546d251dfa5a9b",
-      "updated_at": "2026-11-19T18:11:39.429Z"
+      "updated_at": "2026-11-19T19:07:08.259Z"
     }
   }
 }

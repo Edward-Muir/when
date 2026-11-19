@@ -1,0 +1,15 @@
+{
+  "slug": "custom-base-editing-infant",
+  "description": "A dim, painterly hospital room. A swaddled infant with a teddy bear lies in a glass-sided crib under a warm lamp, with an IV drip line hanging beside it. On a cart at right sits a small glowing vial and papers with a DNA double helix diagram and handwritten notes. Monitors and cables are on the wall. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible text is painted in: the vial reads 'Custom Base Editing' and the papers on the cart carry the same handwritten words. Repaint the vial and papers without any lettering, or regenerate the image."
+}
