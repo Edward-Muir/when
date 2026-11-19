@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:15:46.368Z",
+  "updated_at": "2026-11-19T02:17:59.627Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-19T02:15:46.368Z"
     },
     "chromosome-theory-inheritance": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1ae2f0e56ab8686b92e2c98392b83360dc60f549d5b7bee4bb0c7591382699f3",
+      "updated_at": "2026-11-19T02:17:59.627Z"
     },
     "johannsen-coins-gene": {
       "state": "pending",
