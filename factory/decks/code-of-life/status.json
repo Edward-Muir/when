@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:25:05.840Z",
+  "updated_at": "2026-11-19T02:28:16.947Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-19T02:25:05.840Z"
     },
     "muller-xray-mutations": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3694b7551967d597b98004743ef9f48081d7108b0394d85bd23f0b87945fe249",
+      "updated_at": "2026-11-19T02:28:16.947Z"
     },
     "griffith-transforming-principle": {
       "state": "pending",
