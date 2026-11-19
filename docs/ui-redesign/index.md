@@ -38,8 +38,9 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
   the start of every game.
 - **The hand can be tucked away** with the chevron tab on the bar's top edge (`HandBar.tsx`),
   so the timeline can be read at the full height of the screen. The tab is a child of the bar
-  and rides down with it: one control, in one place, for both directions. It is at the right
-  end because the centre of that edge holds "Later ↓" and the hint pill. Hiding is a negative
+  and rides down with it: one control, in one place, for both directions. It is at the left
+  end: the centre of that edge holds "Later ↓" and the hint pill, and the right end, tried
+  first, sits under a right thumb and was pressed by accident. Hiding is a negative
   bottom margin (`.hand-bar-hidden`), so the flex-1 board grows as the bar leaves; that is
   safe after the opening because the timeline centres its first card only once. The
   safe-area strip stays, keeping "Later ↓" off the home indicator. The hand is `inert` while

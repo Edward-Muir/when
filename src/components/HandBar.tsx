@@ -27,9 +27,9 @@ function bottomBarHeightClass(phase: GamePhase): string {
  *
  * The tab on its top edge tucks the hand away so the timeline can be read at the full height
  * of the screen, and brings it back. It is a child of the bar, so it rides down with it and
- * is one control in one place for both directions. It sits at the right end because the
- * centre of that edge belongs to the board's "Later" label and the hint pill, and it lines
- * up under the HUD's two buttons.
+ * is one control in one place for both directions. It sits at the left end: the centre of
+ * that edge belongs to the board's "Later" label and the hint pill, and the right end, tried
+ * first, is where a right thumb rests and was pressed by accident.
  *
  * Hiding is a negative bottom margin (`hand-bar-hidden`), not a transform: the board is the
  * flex-1 sibling, so it grows as the bar leaves. The safe-area strip stays on screen, which
@@ -61,7 +61,7 @@ const HandBar: React.FC<HandBarProps> = ({ phase, isOverHand, barRef, children }
           // The visible tab is 28px tall; the button reaches 16px further up so the target
           // is 44px, and the tab's own bottom edge covers the bar's border under it. No shadow: one
           // spilled onto the bar below the tab.
-          className="group absolute bottom-full right-2 flex h-11 w-11 items-end justify-center"
+          className="group absolute bottom-full left-2 flex h-11 w-11 items-end justify-center"
         >
           <span className="flex h-7 w-11 items-center justify-center rounded-t-xl border border-b-0 border-border bg-bg text-text-muted transition-colors group-hover:text-text group-active:bg-surface">
             <Chevron className="h-5 w-5" aria-hidden="true" />
