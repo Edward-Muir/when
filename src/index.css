@@ -86,11 +86,33 @@ body {
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
   }
-  /* The hand bar while a game is in play: the 168px square hand card with 8px above and
-     below. The inset is added, not absorbed, because `pb-safe` pads inside this height and a
-     home-indicator inset would otherwise squeeze the card out of the bar. */
+  /* The hand bar while a game is in play: the square hand card (`--hand-card`) with 8px above
+     and below. The inset is added, not absorbed, because `pb-safe` pads inside this height and
+     a home-indicator inset would otherwise squeeze the card out of the bar. */
   .hand-bar {
-    height: calc(184px + env(safe-area-inset-bottom));
+    height: calc(var(--hand-card) + 16px + env(safe-area-inset-bottom));
+  }
+  /* What sits in the hand bar: the hand card in the middle of the screen, the counter centred
+     in the space on its left and the swap button in the space on its right. The middle column
+     is the card's width whether or not there is a card, so the counter never moves. Capped at
+     a phone's width so that on a wide screen the three stay a group; the bar around it stays
+     full width because the bar is the `bottom-bar-zone` drop target. */
+  .hand-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--hand-card) minmax(0, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    max-width: 402px;
+    margin-inline: auto;
+  }
+  /* The swap button is centred in what the fan leaves of the right column, not in the whole
+     column: the cards fanned behind the hand card reach 24px to its right (and their turned
+     corners a few more), and with a 168px card a button centred in the column sits on them
+     at 360px wide. */
+  .hand-grid .hand-swap {
+    justify-self: stretch;
+    padding-left: 30px;
   }
 }
 
@@ -304,6 +326,19 @@ body {
   }
 }
 
+/* The patch under a game's wordmark and theme label (`GameHud`). They are bare text over a
+   scrolling board, and a year sliding up the gutter would otherwise run through them. Page
+   colour, exactly the size of the text block, with a soft edge so the year fades out rather
+   than hitting a box. Deliberately not a band across the board: that hid the top of the
+   timeline, which is the height the top bar's removal was for. */
+@layer utilities {
+  .hud-mark {
+    background-color: var(--color-bg);
+    border-bottom-right-radius: 12px;
+    box-shadow: 2px 2px 6px 2px var(--color-bg);
+  }
+}
+
 /* ===========================================================================
    BOARD COLUMN — the alignment invariant
    ===========================================================================
@@ -312,15 +347,16 @@ body {
        [ 96px year gutter ][ 12px gap ][ 280px landscape card ]  =  388px
 
    96px   `w-24` on the gutter — TimelineEvent.tsx, TombstoneRow.tsx,
-          Timeline.tsx (GhostCard), ArchiveDeckRow.tsx, and the counters box
-          in Game.tsx. (GhostCard omits the others' `pl-2`; that is a no-op —
+          Timeline.tsx (GhostCard) and ArchiveDeckRow.tsx. (GhostCard omits the others' `pl-2`; that is a no-op —
           `w-24` + border-box + `justify-end` flush content to the same 96px
           right edge, and the gutter content never reaches 88px.)
-   12px   `pl-3` on the card slot — the same four files, plus
-          ActiveCardDisplay.tsx.
-   280px  the `landscape` size in Card.tsx (the `sm:` value; below 640px the
+   12px   `pl-3` on the card slot — the same four files.
+   280px  the landscape card's `sm:` width (cardSize.ts); below 640px the
           card is 240px and the column 348px, which is fine because nothing
-          is centred below 1024px).
+          is centred below 1024px.
+
+   The hand bar is NOT part of this column: the card in hand is centred on
+   the screen (`.hand-grid`), at every width.
 
    The accent rail sits at board-left + 96px so it butts exactly against the
    tick that terminates every gutter. CHANGE THE GUTTER, THE GAP OR THE CARD
@@ -368,6 +404,8 @@ body {
 :root {
   --board-gutter: 6rem; /* w-24 */
   --board-gap: 0.75rem; /* pl-3 */
+  /* The card in hand, a square. Must match SQUARE_CARD_CLASS in cardSize.ts. */
+  --hand-card: 168px;
   --board-card: 280px; /* Card.tsx, size="landscape", sm: */
   --board-col: calc(var(--board-gutter) + var(--board-gap) + var(--board-card)); /* 388px */
   --board-inset: calc(50% - var(--board-col) / 2);
@@ -382,11 +420,6 @@ body {
     /* Centres the board inside a full-width parent without narrowing it. */
     .board-center {
       padding-left: var(--board-inset);
-    }
-    /* The same offset as a flex-item margin, for the one parent that also
-       hosts a viewport-centred sibling (Game.tsx's bottom bar). */
-    .board-center-item {
-      margin-left: var(--board-inset);
     }
     .board-rail {
       left: calc(var(--board-inset) + var(--board-gutter));
@@ -820,6 +853,18 @@ input,
   }
 }
 
+/* Tucking the hand away (HandBar.tsx). A margin, not a transform, so the board above takes
+   the height as the bar leaves; the safe-area strip is not part of it and stays on screen. */
+.hand-bar-slide {
+  transition:
+    margin-bottom 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background-color 200ms;
+}
+
+.hand-bar-hidden {
+  margin-bottom: calc(-1 * (var(--hand-card) + 16px));
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .animate-shake-light,
@@ -835,6 +880,10 @@ input,
   .animate-vignette,
   .tl-tick-glow {
     animation: none;
+  }
+
+  .hand-bar-slide {
+    transition: none;
   }
 
   /* The hint glow keeps a motion-free brightness blink so the strip still points at

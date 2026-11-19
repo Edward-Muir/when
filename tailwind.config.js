@@ -19,7 +19,6 @@ module.exports = {
         'safe-bottom': 'env(safe-area-inset-bottom)',
         // Offsets that clear the fixed TopBar (bar height + status-bar inset).
         // On web env() = 0, so these are the bar height alone.
-        'topbar': 'calc(env(safe-area-inset-top) + 3.5rem)', // Game
         'topbar-wide': 'calc(env(safe-area-inset-top) + 5rem)', // home screen (ModeSelect)
         'topbar-fixed': 'calc(env(safe-area-inset-top) + 60px)', // ViewTimeline, InfoPageLayout
       },

@@ -80,11 +80,12 @@ badly in the native app:
   Island, so the inset is ≈59px and the bar becomes ~115px tall. Content at 56–80px sits
   underneath the opaque `z-50` TopBar, invisible.
 
-So full-screen containers use three Tailwind utilities computed as
-`calc(env(safe-area-inset-top) + <base>)`: **`pt-topbar`** (3.5rem), **`pt-topbar-wide`**
-(5rem), **`pt-topbar-fixed`** (60px). On web `env()` is 0, so the layout is pixel-identical to a
-plain offset; the three base values are deliberately distinct rather than normalized, to keep
-it so.
+So full-screen containers use two Tailwind utilities computed as
+`calc(env(safe-area-inset-top) + <base>)`: **`pt-topbar-wide`** (5rem) and
+**`pt-topbar-fixed`** (60px). On web `env()` is 0, so the layout is pixel-identical to a
+plain offset; the base values are deliberately distinct rather than normalized, to keep
+it so. A game has no top bar, so `Game` uses plain `pt-safe`; its `pt-topbar` (3.5rem) went
+with the bar.
 
 **Any new full-screen container below the fixed TopBar should use one of these, never a
 hardcoded `pt-*`.** Edge-to-edge is deliberate over the simpler `overlaysWebView: false` — the

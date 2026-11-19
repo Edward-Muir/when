@@ -70,8 +70,9 @@ interface UseWhenGameReturn {
 
 interface StartOptions {
   /**
-   * Deal straight into `playing`, skipping the intro animation. The mid-game Restart uses it:
-   * a player drilling a deck wants the first card again, not three seconds of loading screen.
+   * Deal straight into `playing`, skipping the intro animation, for a restart from the middle
+   * of a run. No screen offers one since the in-game top bar and its Restart button went; the
+   * option stays because it is the tested path for dealing over a placement still animating.
    */
   skipIntro?: boolean;
 }
