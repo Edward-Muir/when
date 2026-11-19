@@ -1,0 +1,15 @@
+{
+  "slug": "new-york-harlem-horsecar",
+  "description": "A single dark horse pulls a wooden streetcar with arched windows along cobbled tram rails, with a driver on the front bench and well-dressed passengers in top hats and bonnets inside. Brick buildings with awnings and warm gas-style lanterns line the street, and people in long coats and dresses stand on the pavement. No visible text, frame or border; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
