@@ -1,0 +1,2693 @@
+[
+  {
+    "beat": 0,
+    "year": -5400,
+    "title": "Eridu Is Settled",
+    "candidates": [
+      {
+        "name": "cheese",
+        "friendly_name": "Cheese",
+        "year": -5500,
+        "year_end": -5200,
+        "description": "Milk curdled and aged to create one of the oldest processed foods, preserved in pottery residues.",
+        "score": 1,
+        "shared": [
+          "oldest"
+        ]
+      },
+      {
+        "name": "neolithic-farmers-europe",
+        "friendly_name": "Farmers Migrate Into Europe",
+        "year": -6500,
+        "year_end": -4000,
+        "description": "Anatolian farmers spread agriculture across Europe, replacing many hunter-gatherer populations.",
+        "score": 1,
+        "shared": [
+          "farmers"
+        ]
+      },
+      {
+        "name": "seawall",
+        "friendly_name": "Seawall",
+        "year": -5500,
+        "year_end": -5000,
+        "description": "Coastal barriers built to protect settlements from flooding and rising sea levels.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "copper-smelting-developed",
+        "friendly_name": "Copper Smelting Process Developed",
+        "year": -5500,
+        "year_end": -4500,
+        "description": "Mesopotamian metalworkers learned to smelt copper ore at high temperatures, advancing beyond native copper working.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-irrigation-systems",
+        "friendly_name": "First Irrigation Systems",
+        "year": -6000,
+        "year_end": -3000,
+        "description": "Ancient Mesopotamians developed canal systems to control water flow, enabling large-scale agriculture and the rise of civilization.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "proto-writing",
+        "friendly_name": "Proto-Writing",
+        "year": -6000,
+        "year_end": -3100,
+        "description": "Symbolic marks on clay tokens recording trade and ownership, precursors to full writing systems.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -3500,
+    "title": "Uruk Becomes the First City",
+    "candidates": [
+      {
+        "name": "city-of-uruk",
+        "friendly_name": "City of Uruk",
+        "year": -4000,
+        "year_end": -2900,
+        "description": "The world's first true city emerged in Mesopotamia with up to 80,000 residents at its peak.",
+        "score": 4,
+        "shared": [
+          "uruk",
+          "city",
+          "residents",
+          "world"
+        ]
+      },
+      {
+        "name": "plumbing-clay-pipes",
+        "friendly_name": "Plumbing (Clay Pipes)",
+        "year": -4000,
+        "year_end": -2500,
+        "description": "Clay pipes channeled fresh water into buildings and waste water out, enabling urban sanitation.",
+        "score": 1,
+        "shared": [
+          "urban"
+        ]
+      },
+      {
+        "name": "settlement-caribbean-islands",
+        "friendly_name": "Caribbean Islands Settled",
+        "year": -5000,
+        "year_end": -500,
+        "description": "Migrants from the mainland began settling the Caribbean islands by sea over many centuries.",
+        "score": 1,
+        "shared": [
+          "settlement"
+        ]
+      },
+      {
+        "name": "jomon-maritime-culture",
+        "friendly_name": "Jomon Maritime Culture Adapts",
+        "year": -13000,
+        "year_end": -300,
+        "description": "Japan's Jomon people developed a sophisticated maritime culture with pottery, fishing, and some of the world's earliest ceramics.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "domestication-horses",
+        "friendly_name": "Domestication of Horses",
+        "year": -3500,
+        "year_end": -2000,
+        "description": "Horses were domesticated on the Eurasian steppes, revolutionizing transport and warfare.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "invention-glass",
+        "friendly_name": "Invention of Glass",
+        "year": -3500,
+        "year_end": -1600,
+        "description": "Ancient Mesopotamians discovered how to make glass from sand.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -3200,
+    "title": "Cuneiform Writing Emerges",
+    "candidates": [
+      {
+        "name": "proto-writing",
+        "friendly_name": "Proto-Writing",
+        "year": -6000,
+        "year_end": -3100,
+        "description": "Symbolic marks on clay tokens recording trade and ownership, precursors to full writing systems.",
+        "score": 3,
+        "shared": [
+          "writing",
+          "marks",
+          "clay"
+        ]
+      },
+      {
+        "name": "egyptian-hieroglyphs-emerge",
+        "friendly_name": "Egyptian Hieroglyphs Emerge",
+        "year": -3200,
+        "year_end": -2700,
+        "description": "Egypt developed hieroglyphic writing, combining pictures and sounds to record religion and kingship.",
+        "score": 2,
+        "shared": [
+          "writing",
+          "record"
+        ]
+      },
+      {
+        "name": "first-writing",
+        "friendly_name": "Writing Invented in Mesopotamia",
+        "year": -3400,
+        "year_end": -2600,
+        "description": "Sumerians developed cuneiform, one of the earliest known writing systems.",
+        "score": 2,
+        "shared": [
+          "cuneiform",
+          "writing"
+        ]
+      },
+      {
+        "name": "cuneiform-cylinder-seals",
+        "friendly_name": "Cylinder Seals Used",
+        "year": -3400,
+        "year_end": -2900,
+        "description": "Mesopotamians rolled engraved stone cylinders over clay to sign documents and mark ownership.",
+        "score": 2,
+        "shared": [
+          "cuneiform",
+          "clay"
+        ]
+      },
+      {
+        "name": "seal-emblem",
+        "friendly_name": "Seal (Emblem)",
+        "year": -3500,
+        "year_end": -3100,
+        "description": "Carved stamps pressed into clay to authenticate documents and mark ownership of goods.",
+        "score": 2,
+        "shared": [
+          "clay",
+          "goods"
+        ]
+      },
+      {
+        "name": "paved-roads",
+        "friendly_name": "Paved Roads",
+        "year": -4000,
+        "year_end": -2200,
+        "description": "Stone-surfaced roads built for easier transport of goods and people between settlements.",
+        "score": 1,
+        "shared": [
+          "goods"
+        ]
+      },
+      {
+        "name": "plumbing-clay-pipes",
+        "friendly_name": "Plumbing (Clay Pipes)",
+        "year": -4000,
+        "year_end": -2500,
+        "description": "Clay pipes channeled fresh water into buildings and waste water out, enabling urban sanitation.",
+        "score": 1,
+        "shared": [
+          "clay"
+        ]
+      },
+      {
+        "name": "rice-paddy-cultivation",
+        "friendly_name": "Wet Rice Paddies Developed",
+        "year": -5000,
+        "year_end": -2350,
+        "description": "Farmers in China developed flooded paddy fields for rice, boosting yields and supporting dense populations.",
+        "score": 1,
+        "shared": [
+          "wet"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -2600,
+    "title": "The Royal Tombs of Ur Are Filled",
+    "candidates": [
+      {
+        "name": "royal-game-of-ur",
+        "friendly_name": "Royal Game of Ur",
+        "year": -2600,
+        "description": "A two-player race game played in Mesopotamia, its inlaid boards were unearthed in the royal tombs of Ur.",
+        "score": 2,
+        "shared": [
+          "royal",
+          "tombs"
+        ]
+      },
+      {
+        "name": "planned-city",
+        "friendly_name": "Planned City",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Indus Valley cities like Mohenjo-daro were built on deliberate grid layouts with zoned areas.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "sumerian-belt-wrestlers-khafajah",
+        "friendly_name": "Sumerian Belt-Wrestling Bronze",
+        "year": -2600,
+        "description": "A cast copper figurine from the Nintu temple at Khafajah depicts two belt-wrestlers, among the oldest sculptural images of sport.",
+        "score": 1,
+        "shared": [
+          "sumerian"
+        ]
+      },
+      {
+        "name": "indus-valley-civilization",
+        "friendly_name": "Indus Valley Civilization Peak",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "public-sewage-sanitation",
+        "friendly_name": "Public Sewage/Sanitation",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Covered drains and sewage systems in Indus Valley cities, remarkably advanced for the era.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "public-bath",
+        "friendly_name": "Public Bath",
+        "year": -2600,
+        "description": "The Great Bath of Mohenjo-daro, a large communal bathing facility with waterproofed walls.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": -2350,
+    "title": "Urukagina Issues Reforms at Lagash",
+    "candidates": [
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 1,
+        "shared": [
+          "recorded"
+        ]
+      },
+      {
+        "name": "mohenjo-daro-covered-drains",
+        "friendly_name": "Mohenjo-daro's Covered Drains",
+        "year": -2450,
+        "year_end": -1900,
+        "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "african-agricultural-innovation-millet",
+        "friendly_name": "Millet and Sorghum Farming",
+        "year": -2500,
+        "year_end": -2000,
+        "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indus-valley-civilization",
+        "friendly_name": "Indus Valley Civilization Peak",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "planned-city",
+        "friendly_name": "Planned City",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Indus Valley cities like Mohenjo-daro were built on deliberate grid layouts with zoned areas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "public-sewage-sanitation",
+        "friendly_name": "Public Sewage/Sanitation",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Covered drains and sewage systems in Indus Valley cities, remarkably advanced for the era.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": -2334,
+    "title": "Sargon of Akkad Founds His Empire",
+    "candidates": [
+      {
+        "name": "sargon-akkad-empire",
+        "friendly_name": "Sargon of Akkad Founds First Empire",
+        "year": -2334,
+        "description": "Sargon the Great created the world's first known empire in Mesopotamia.",
+        "score": 4,
+        "shared": [
+          "sargon",
+          "akkad",
+          "founds",
+          "empire"
+        ]
+      },
+      {
+        "name": "mohenjo-daro-covered-drains",
+        "friendly_name": "Mohenjo-daro's Covered Drains",
+        "year": -2450,
+        "year_end": -1900,
+        "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "planned-city",
+        "friendly_name": "Planned City",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Indus Valley cities like Mohenjo-daro were built on deliberate grid layouts with zoned areas.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "african-agricultural-innovation-millet",
+        "friendly_name": "Millet and Sorghum Farming",
+        "year": -2500,
+        "year_end": -2000,
+        "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indus-valley-civilization",
+        "friendly_name": "Indus Valley Civilization Peak",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": -2300,
+    "title": "Enheduanna Writes Her Hymns",
+    "candidates": [
+      {
+        "name": "docks",
+        "friendly_name": "Docks",
+        "year": -2300,
+        "description": "The tidal dock at Lothal in India, claimed as one of the earliest known maritime docking structures.",
+        "score": 1,
+        "shared": [
+          "known"
+        ]
+      },
+      {
+        "name": "dictionary",
+        "friendly_name": "Dictionary",
+        "year": -2300,
+        "description": "Bilingual Sumerian and Eblaite word lists inscribed on clay tablets, the oldest known dictionaries.",
+        "score": 1,
+        "shared": [
+          "known"
+        ]
+      },
+      {
+        "name": "mohenjo-daro-covered-drains",
+        "friendly_name": "Mohenjo-daro's Covered Drains",
+        "year": -2450,
+        "year_end": -1900,
+        "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "african-agricultural-innovation-millet",
+        "friendly_name": "Millet and Sorghum Farming",
+        "year": -2500,
+        "year_end": -2000,
+        "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indus-valley-civilization",
+        "friendly_name": "Indus Valley Civilization Peak",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": -2254,
+    "title": "Naram-Sin Raises His Victory Stele",
+    "candidates": [
+      {
+        "name": "settlement-caribbean-islands",
+        "friendly_name": "Caribbean Islands Settled",
+        "year": -5000,
+        "year_end": -500,
+        "description": "Migrants from the mainland began settling the Caribbean islands by sea over many centuries.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "mohenjo-daro-covered-drains",
+        "friendly_name": "Mohenjo-daro's Covered Drains",
+        "year": -2450,
+        "year_end": -1900,
+        "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "african-agricultural-innovation-millet",
+        "friendly_name": "Millet and Sorghum Farming",
+        "year": -2500,
+        "year_end": -2000,
+        "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "indus-valley-civilization",
+        "friendly_name": "Indus Valley Civilization Peak",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "planned-city",
+        "friendly_name": "Planned City",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Indus Valley cities like Mohenjo-daro were built on deliberate grid layouts with zoned areas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": -2100,
+    "title": "The Code of Ur-Nammu",
+    "candidates": [
+      {
+        "name": "code-ur-nammu",
+        "friendly_name": "Code of Ur-Nammu",
+        "year": -2100,
+        "description": "The oldest surviving legal code was written in ancient Sumer, predating Hammurabi.",
+        "score": 4,
+        "shared": [
+          "code",
+          "nammu",
+          "oldest",
+          "surviving"
+        ]
+      },
+      {
+        "name": "epic-gilgamesh",
+        "friendly_name": "Epic of Gilgamesh Composed",
+        "year": -2100,
+        "description": "The oldest surviving great work of literature was written in Mesopotamia.",
+        "score": 2,
+        "shared": [
+          "oldest",
+          "surviving"
+        ]
+      },
+      {
+        "name": "caral-civilization",
+        "friendly_name": "Caral Civilization in Peru Valleys",
+        "year": -3000,
+        "year_end": -1800,
+        "description": "One of the oldest urban centers in the Americas, Caral thrived in Peru's Supe Valley with monumental architecture.",
+        "score": 1,
+        "shared": [
+          "oldest"
+        ]
+      },
+      {
+        "name": "woolly-mammoth-extinction",
+        "friendly_name": "Woolly Mammoth Extinction",
+        "year": -3700,
+        "year_end": -1950,
+        "description": "The last woolly mammoths, surviving on isolated islands, finally died out, ending the species.",
+        "score": 1,
+        "shared": [
+          "surviving"
+        ]
+      },
+      {
+        "name": "ice-age-megafauna-extinction",
+        "friendly_name": "Ice Age Megafauna Die Out",
+        "year": -11000,
+        "year_end": -2000,
+        "description": "Mammoths, giant sloths, and other huge mammals vanished as the last Ice Age ended worldwide.",
+        "score": 1,
+        "shared": [
+          "other"
+        ]
+      },
+      {
+        "name": "ziggurat-ur",
+        "friendly_name": "Ziggurat of Ur Built",
+        "year": -2100,
+        "description": "The Sumerians constructed a massive stepped temple in ancient Mesopotamia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": -2004,
+    "title": "Elamites Sack the City of Ur",
+    "candidates": [
+      {
+        "name": "xia-dynasty",
+        "friendly_name": "Xia Dynasty",
+        "year": -2070,
+        "year_end": -1600,
+        "description": "The Xia Dynasty is traditionally considered China's first dynasty, establishing hereditary rule under Yu the Great.",
+        "score": 2,
+        "shared": [
+          "great",
+          "dynasty"
+        ]
+      },
+      {
+        "name": "woolly-mammoth-extinction",
+        "friendly_name": "Woolly Mammoth Extinction",
+        "year": -3700,
+        "year_end": -1950,
+        "description": "The last woolly mammoths, surviving on isolated islands, finally died out, ending the species.",
+        "score": 2,
+        "shared": [
+          "ending",
+          "last"
+        ]
+      },
+      {
+        "name": "mohenjo-daro-covered-drains",
+        "friendly_name": "Mohenjo-daro's Covered Drains",
+        "year": -2450,
+        "year_end": -1900,
+        "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "planned-city",
+        "friendly_name": "Planned City",
+        "year": -2600,
+        "year_end": -1900,
+        "description": "Indus Valley cities like Mohenjo-daro were built on deliberate grid layouts with zoned areas.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "ice-age-megafauna-extinction",
+        "friendly_name": "Ice Age Megafauna Die Out",
+        "year": -11000,
+        "year_end": -2000,
+        "description": "Mammoths, giant sloths, and other huge mammals vanished as the last Ice Age ended worldwide.",
+        "score": 1,
+        "shared": [
+          "last"
+        ]
+      },
+      {
+        "name": "african-agricultural-innovation-millet",
+        "friendly_name": "Millet and Sorghum Farming",
+        "year": -2500,
+        "year_end": -2000,
+        "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": -1894,
+    "title": "An Amorite Dynasty Takes Babylon",
+    "candidates": [
+      {
+        "name": "xia-dynasty",
+        "friendly_name": "Xia Dynasty",
+        "year": -2070,
+        "year_end": -1600,
+        "description": "The Xia Dynasty is traditionally considered China's first dynasty, establishing hereditary rule under Yu the Great.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "winnowing-tray-fan",
+        "friendly_name": "Winnowing Tray and Fan Development",
+        "year": -2000,
+        "year_end": 9,
+        "description": "Asian farmers developed winnowing trays and fans to separate grain from chaff using wind.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "caral-civilization",
+        "friendly_name": "Caral Civilization in Peru Valleys",
+        "year": -3000,
+        "year_end": -1800,
+        "description": "One of the oldest urban centers in the Americas, Caral thrived in Peru's Supe Valley with monumental architecture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "invention-glass",
+        "friendly_name": "Invention of Glass",
+        "year": -3500,
+        "year_end": -1600,
+        "description": "Ancient Mesopotamians discovered how to make glass from sand.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "settlement-caribbean-islands",
+        "friendly_name": "Caribbean Islands Settled",
+        "year": -5000,
+        "year_end": -500,
+        "description": "Migrants from the mainland began settling the Caribbean islands by sea over many centuries.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": -1800,
+    "title": "Plimpton 322 Is Inscribed",
+    "candidates": [
+      {
+        "name": "abrahams-journey-traditional",
+        "friendly_name": "Abraham's Journey",
+        "year": -1800,
+        "description": "According to tradition, Abraham migrated from Ur to Canaan, establishing the covenant that founded the Abrahamic faiths.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "poverty-point-earthworks",
+        "friendly_name": "Poverty Point Earthworks",
+        "year": -1800,
+        "year_end": -1200,
+        "description": "Ancient peoples in Louisiana built massive concentric earthwork ridges and mounds at Poverty Point.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "proto-sinaitic-alphabet",
+        "friendly_name": "First Alphabet Invented",
+        "year": -1800,
+        "description": "Semitic workers in Egypt adapted hieroglyphs into the first alphabet, ancestor of most modern scripts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "proto-alphabet",
+        "friendly_name": "Proto-Alphabet",
+        "year": -1850,
+        "year_end": -1200,
+        "description": "A simplified writing system developed in Egypt that evolved into the first true alphabets.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "winnowing-tray-fan",
+        "friendly_name": "Winnowing Tray and Fan Development",
+        "year": -2000,
+        "year_end": 9,
+        "description": "Asian farmers developed winnowing trays and fans to separate grain from chaff using wind.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xia-dynasty",
+        "friendly_name": "Xia Dynasty",
+        "year": -2070,
+        "year_end": -1600,
+        "description": "The Xia Dynasty is traditionally considered China's first dynasty, establishing hereditary rule under Yu the Great.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": -1792,
+    "title": "Hammurabi Takes the Throne",
+    "candidates": [
+      {
+        "name": "hammurabi-babylon-rise",
+        "friendly_name": "Hammurabi Begins Babylon's Rise",
+        "year": -1792,
+        "description": "Hammurabi took the throne of a modest city on the Euphrates and began conquests that built a great Mesopotamian realm.",
+        "score": 5,
+        "shared": [
+          "hammurabi",
+          "throne",
+          "babylon",
+          "begins",
+          "conquests"
+        ]
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "poverty-point-earthworks",
+        "friendly_name": "Poverty Point Earthworks",
+        "year": -1800,
+        "year_end": -1200,
+        "description": "Ancient peoples in Louisiana built massive concentric earthwork ridges and mounds at Poverty Point.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "proto-alphabet",
+        "friendly_name": "Proto-Alphabet",
+        "year": -1850,
+        "year_end": -1200,
+        "description": "A simplified writing system developed in Egypt that evolved into the first true alphabets.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "winnowing-tray-fan",
+        "friendly_name": "Winnowing Tray and Fan Development",
+        "year": -2000,
+        "year_end": 9,
+        "description": "Asian farmers developed winnowing trays and fans to separate grain from chaff using wind.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xia-dynasty",
+        "friendly_name": "Xia Dynasty",
+        "year": -2070,
+        "year_end": -1600,
+        "description": "The Xia Dynasty is traditionally considered China's first dynasty, establishing hereditary rule under Yu the Great.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": -1761,
+    "title": "Hammurabi Destroys Mari",
+    "candidates": [
+      {
+        "name": "poverty-point-earthworks",
+        "friendly_name": "Poverty Point Earthworks",
+        "year": -1800,
+        "year_end": -1200,
+        "description": "Ancient peoples in Louisiana built massive concentric earthwork ridges and mounds at Poverty Point.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "proto-alphabet",
+        "friendly_name": "Proto-Alphabet",
+        "year": -1850,
+        "year_end": -1200,
+        "description": "A simplified writing system developed in Egypt that evolved into the first true alphabets.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "winnowing-tray-fan",
+        "friendly_name": "Winnowing Tray and Fan Development",
+        "year": -2000,
+        "year_end": 9,
+        "description": "Asian farmers developed winnowing trays and fans to separate grain from chaff using wind.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xia-dynasty",
+        "friendly_name": "Xia Dynasty",
+        "year": -2070,
+        "year_end": -1600,
+        "description": "The Xia Dynasty is traditionally considered China's first dynasty, establishing hereditary rule under Yu the Great.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punt-trade-egypt",
+        "friendly_name": "Punt Trades with Egypt",
+        "year": -2500,
+        "year_end": -1155,
+        "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "invention-glass",
+        "friendly_name": "Invention of Glass",
+        "year": -3500,
+        "year_end": -1600,
+        "description": "Ancient Mesopotamians discovered how to make glass from sand.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": -1754,
+    "title": "The Code of Hammurabi Is Carved",
+    "candidates": [
+      {
+        "name": "code-hammurabi-interest-rules",
+        "friendly_name": "Hammurabi's Interest Laws",
+        "year": -1754,
+        "description": "Babylon's code set legal limits on loan interest rates and rules for debt, an early financial regulation.",
+        "score": 3,
+        "shared": [
+          "code",
+          "hammurabi",
+          "laws"
+        ]
+      },
+      {
+        "name": "hammurabi-surgeon-laws",
+        "friendly_name": "Hammurabi's Laws on Surgeons",
+        "year": -1754,
+        "description": "Babylon's law code set a surgeon's fee for a successful operation and ordered his hand cut off if a noble patient died under the bronze lancet.",
+        "score": 3,
+        "shared": [
+          "code",
+          "hammurabi",
+          "laws"
+        ]
+      },
+      {
+        "name": "poverty-point-earthworks",
+        "friendly_name": "Poverty Point Earthworks",
+        "year": -1800,
+        "year_end": -1200,
+        "description": "Ancient peoples in Louisiana built massive concentric earthwork ridges and mounds at Poverty Point.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "proto-alphabet",
+        "friendly_name": "Proto-Alphabet",
+        "year": -1850,
+        "year_end": -1200,
+        "description": "A simplified writing system developed in Egypt that evolved into the first true alphabets.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "winnowing-tray-fan",
+        "friendly_name": "Winnowing Tray and Fan Development",
+        "year": -2000,
+        "year_end": 9,
+        "description": "Asian farmers developed winnowing trays and fans to separate grain from chaff using wind.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xia-dynasty",
+        "friendly_name": "Xia Dynasty",
+        "year": -2070,
+        "year_end": -1600,
+        "description": "The Xia Dynasty is traditionally considered China's first dynasty, establishing hereditary rule under Yu the Great.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": -1595,
+    "title": "Hittites Sack Babylon",
+    "candidates": [
+      {
+        "name": "lapita-culture-expansion",
+        "friendly_name": "Lapita Culture Spreads",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "amber-trade-routes",
+        "friendly_name": "Amber Trade Routes from Baltic",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Baltic amber was traded along routes stretching to the Mediterranean during the Bronze Age.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "minoan-bull-leaping",
+        "friendly_name": "Minoan Bull-Leaping",
+        "year": -1600,
+        "year_end": -1400,
+        "description": "Athletes on Bronze Age Crete vaulted over charging bulls, a ritual sport depicted in Minoan palace frescoes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "minoan-frescoes",
+        "friendly_name": "Minoan Frescoes and Palace Art",
+        "year": -1700,
+        "year_end": -1450,
+        "description": "Minoan artists on Crete created vibrant palace frescoes depicting dolphins, bull-leaping, and court life at Knossos.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "minoan-civilization-peak",
+        "friendly_name": "Minoan Civilization Peak",
+        "year": -1700,
+        "year_end": -1450,
+        "description": "The Minoan civilization on Crete reached its height, building elaborate palaces like Knossos and dominating Aegean trade.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mycenaean-civilization",
+        "friendly_name": "Mycenaean Civilization Emerges",
+        "year": -1750,
+        "year_end": -1200,
+        "description": "Mycenaean civilization emerged in mainland Greece with fortified palaces and Linear B script.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": -1365,
+    "title": "Ashur-uballit I Frees Assyria",
+    "candidates": [
+      {
+        "name": "mycenaean-citadels",
+        "friendly_name": "Mycenaean Citadels Built",
+        "year": -1400,
+        "year_end": -1200,
+        "description": "The Greeks built fortified palace complexes including Mycenae and Tiryns.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mycenaean-warrior-art",
+        "friendly_name": "Mycenaean Warrior Art and Pottery",
+        "year": -1500,
+        "year_end": -1200,
+        "description": "Mycenaean Greeks produced warrior-themed pottery and gold funerary masks, including the famous Mask of Agamemnon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-culture",
+        "friendly_name": "Lapita Culture Pottery Network",
+        "year": -1500,
+        "year_end": -500,
+        "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-culture-expansion",
+        "friendly_name": "Lapita Culture Spreads",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "amber-trade-routes",
+        "friendly_name": "Amber Trade Routes from Baltic",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Baltic amber was traded along routes stretching to the Mediterranean during the Bronze Age.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": -1225,
+    "title": "Tukulti-Ninurta I Conquers Babylon",
+    "candidates": [
+      {
+        "name": "oracle-bones-shang",
+        "friendly_name": "Oracle Bones of Shang Dynasty",
+        "year": -1250,
+        "year_end": -1050,
+        "description": "Shang Dynasty diviners inscribed questions on turtle shells and ox bones, creating the earliest Chinese writing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mycenaean-citadels",
+        "friendly_name": "Mycenaean Citadels Built",
+        "year": -1400,
+        "year_end": -1200,
+        "description": "The Greeks built fortified palace complexes including Mycenae and Tiryns.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mycenaean-warrior-art",
+        "friendly_name": "Mycenaean Warrior Art and Pottery",
+        "year": -1500,
+        "year_end": -1200,
+        "description": "Mycenaean Greeks produced warrior-themed pottery and gold funerary masks, including the famous Mask of Agamemnon.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-culture",
+        "friendly_name": "Lapita Culture Pottery Network",
+        "year": -1500,
+        "year_end": -500,
+        "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-culture-expansion",
+        "friendly_name": "Lapita Culture Spreads",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": -1158,
+    "title": "Elam Carries Off Hammurabi's Stele",
+    "candidates": [
+      {
+        "name": "oracle-bones-shang",
+        "friendly_name": "Oracle Bones of Shang Dynasty",
+        "year": -1250,
+        "year_end": -1050,
+        "description": "Shang Dynasty diviners inscribed questions on turtle shells and ox bones, creating the earliest Chinese writing.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "olmec-stone-heads",
+        "friendly_name": "Olmec Colossal Stone Heads",
+        "year": -1200,
+        "year_end": -400,
+        "description": "The Olmec carved massive basalt portrait heads weighing up to 50 tons along Mexico's Gulf Coast.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "san-lorenzo-olmec",
+        "friendly_name": "San Lorenzo Olmec Center Peak",
+        "year": -1200,
+        "year_end": -900,
+        "description": "San Lorenzo became Mesoamerica's first major ceremonial center, featuring colossal stone heads and elaborate drainage systems.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bronze-age-collapse",
+        "friendly_name": "Bronze Age Collapse",
+        "year": -1200,
+        "year_end": -1150,
+        "description": "Multiple civilizations in the Mediterranean suddenly collapsed within decades.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "late-bronze-age-drought",
+        "friendly_name": "Late Bronze Age Drought",
+        "year": -1200,
+        "year_end": -900,
+        "description": "A severe megadrought contributed to the Bronze Age Collapse.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": -1120,
+    "title": "Nebuchadnezzar I Recovers Marduk",
+    "candidates": [
+      {
+        "name": "olmec-stone-heads",
+        "friendly_name": "Olmec Colossal Stone Heads",
+        "year": -1200,
+        "year_end": -400,
+        "description": "The Olmec carved massive basalt portrait heads weighing up to 50 tons along Mexico's Gulf Coast.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "san-lorenzo-olmec",
+        "friendly_name": "San Lorenzo Olmec Center Peak",
+        "year": -1200,
+        "year_end": -900,
+        "description": "San Lorenzo became Mesoamerica's first major ceremonial center, featuring colossal stone heads and elaborate drainage systems.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "late-bronze-age-drought",
+        "friendly_name": "Late Bronze Age Drought",
+        "year": -1200,
+        "year_end": -900,
+        "description": "A severe megadrought contributed to the Bronze Age Collapse.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "oracle-bones-shang",
+        "friendly_name": "Oracle Bones of Shang Dynasty",
+        "year": -1250,
+        "year_end": -1050,
+        "description": "Shang Dynasty diviners inscribed questions on turtle shells and ox bones, creating the earliest Chinese writing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": -1114,
+    "title": "Tiglath-Pileser I Expands Assyria",
+    "candidates": [
+      {
+        "name": "olmec-stone-heads",
+        "friendly_name": "Olmec Colossal Stone Heads",
+        "year": -1200,
+        "year_end": -400,
+        "description": "The Olmec carved massive basalt portrait heads weighing up to 50 tons along Mexico's Gulf Coast.",
+        "score": 1,
+        "shared": [
+          "coast"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "mediterranean"
+        ]
+      },
+      {
+        "name": "amber-trade-routes",
+        "friendly_name": "Amber Trade Routes from Baltic",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Baltic amber was traded along routes stretching to the Mediterranean during the Bronze Age.",
+        "score": 1,
+        "shared": [
+          "mediterranean"
+        ]
+      },
+      {
+        "name": "san-lorenzo-olmec",
+        "friendly_name": "San Lorenzo Olmec Center Peak",
+        "year": -1200,
+        "year_end": -900,
+        "description": "San Lorenzo became Mesoamerica's first major ceremonial center, featuring colossal stone heads and elaborate drainage systems.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "late-bronze-age-drought",
+        "friendly_name": "Late Bronze Age Drought",
+        "year": -1200,
+        "year_end": -900,
+        "description": "A severe megadrought contributed to the Bronze Age Collapse.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "oracle-bones-shang",
+        "friendly_name": "Oracle Bones of Shang Dynasty",
+        "year": -1250,
+        "year_end": -1050,
+        "description": "Shang Dynasty diviners inscribed questions on turtle shells and ox bones, creating the earliest Chinese writing.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": -1100,
+    "title": "Gilgamesh Epic Takes Final Form",
+    "candidates": [
+      {
+        "name": "dorian-invasion",
+        "friendly_name": "Dorian Invasion of Greece",
+        "year": -1100,
+        "description": "Dorian Greeks migrated into the Peloponnese during the Bronze Age collapse, reshaping Greek civilization.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "star-catalogue",
+        "friendly_name": "Star Catalogue",
+        "year": -1100,
+        "description": "Babylonian records systematically cataloguing the positions of hundreds of visible stars.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "iron-adoption-greece",
+        "friendly_name": "Iron Working Adoption in Greece",
+        "year": -1100,
+        "description": "Greek civilization adopted iron smelting after the Bronze Age collapse, beginning the Greek Iron Age.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chinese-bronze-inscriptions",
+        "friendly_name": "Chinese Bronze Inscriptions",
+        "year": -1100,
+        "description": "Zhou-era China cast inscriptions into ritual bronze vessels, preserving early Chinese writing.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "soybean-domesticated",
+        "friendly_name": "Soybeans Domesticated",
+        "year": -1100,
+        "description": "Farmers in ancient China domesticated the soybean, a protein-rich crop central to East Asian cuisine.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "phoenician-colonization",
+        "friendly_name": "Phoenicians Settle the Sea",
+        "year": -1100,
+        "year_end": -750,
+        "description": "Phoenician traders founded colonies across the Mediterranean, including Carthage in North Africa.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": -879,
+    "title": "Ashurnasirpal II Builds Nimrud",
+    "candidates": [
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 1,
+        "shared": [
+          "assyrian"
+        ]
+      },
+      {
+        "name": "jomon-maritime-culture",
+        "friendly_name": "Jomon Maritime Culture Adapts",
+        "year": -13000,
+        "year_end": -300,
+        "description": "Japan's Jomon people developed a sophisticated maritime culture with pottery, fishing, and some of the world's earliest ceramics.",
+        "score": 1,
+        "shared": [
+          "some"
+        ]
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-pottery-trade",
+        "friendly_name": "Lapita Pottery Trade",
+        "year": -1000,
+        "year_end": -500,
+        "description": "Distinctive Lapita pottery spread across Melanesia and Polynesia, evidence of extensive maritime trade networks.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "diamond-mines",
+        "friendly_name": "Diamond Mines",
+        "year": -1000,
+        "year_end": -300,
+        "description": "Diamonds first mined in India for use as cutting tools and gemstones.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "kingdom-kush-flourishes",
+        "friendly_name": "Kingdom of Kush Flourishes",
+        "year": -1070,
+        "year_end": 350,
+        "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": -853,
+    "title": "Battle of Qarqar",
+    "candidates": [
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 1,
+        "shared": [
+          "assyrian"
+        ]
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 1,
+        "shared": [
+          "earliest"
+        ]
+      },
+      {
+        "name": "lapita-culture",
+        "friendly_name": "Lapita Culture Pottery Network",
+        "year": -1500,
+        "year_end": -500,
+        "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "western"
+        ]
+      },
+      {
+        "name": "jomon-maritime-culture",
+        "friendly_name": "Jomon Maritime Culture Adapts",
+        "year": -13000,
+        "year_end": -300,
+        "description": "Japan's Jomon people developed a sophisticated maritime culture with pottery, fishing, and some of the world's earliest ceramics.",
+        "score": 1,
+        "shared": [
+          "earliest"
+        ]
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-pottery-trade",
+        "friendly_name": "Lapita Pottery Trade",
+        "year": -1000,
+        "year_end": -500,
+        "description": "Distinctive Lapita pottery spread across Melanesia and Polynesia, evidence of extensive maritime trade networks.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": -747,
+    "title": "Babylon Starts Its Sky Diaries",
+    "candidates": [
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "centuries"
+        ]
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "settlement-caribbean-islands",
+        "friendly_name": "Caribbean Islands Settled",
+        "year": -5000,
+        "year_end": -500,
+        "description": "Migrants from the mainland began settling the Caribbean islands by sea over many centuries.",
+        "score": 1,
+        "shared": [
+          "centuries"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nubian-kush-kingdoms",
+        "friendly_name": "Nubian Kingdom of Kush",
+        "year": -800,
+        "year_end": -656,
+        "description": "The Kingdom of Kush in Nubia rivaled Egypt, eventually conquering it and ruling as the 25th Dynasty.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": -745,
+    "title": "Tiglath-Pileser III Revives Assyria",
+    "candidates": [
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 1,
+        "shared": [
+          "assyrian"
+        ]
+      },
+      {
+        "name": "amber-trade-routes",
+        "friendly_name": "Amber Trade Routes from Baltic",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Baltic amber was traded along routes stretching to the Mediterranean during the Bronze Age.",
+        "score": 1,
+        "shared": [
+          "age"
+        ]
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nubian-kush-kingdoms",
+        "friendly_name": "Nubian Kingdom of Kush",
+        "year": -800,
+        "year_end": -656,
+        "description": "The Kingdom of Kush in Nubia rivaled Egypt, eventually conquering it and ruling as the 25th Dynasty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": -722,
+    "title": "Assyria Conquers Israel",
+    "candidates": [
+      {
+        "name": "fall-of-israel-northern-kingdom",
+        "friendly_name": "Fall of Israel (Northern Kingdom)",
+        "year": -722,
+        "description": "Assyria conquered the northern Kingdom of Israel, deporting its population and ending the Ten Tribes as a distinct entity.",
+        "score": 4,
+        "shared": [
+          "assyria",
+          "israel",
+          "northern",
+          "tribes"
+        ]
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "many"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 1,
+        "shared": [
+          "assyrian"
+        ]
+      },
+      {
+        "name": "lapita-culture",
+        "friendly_name": "Lapita Culture Pottery Network",
+        "year": -1500,
+        "year_end": -500,
+        "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "settlement-caribbean-islands",
+        "friendly_name": "Caribbean Islands Settled",
+        "year": -5000,
+        "year_end": -500,
+        "description": "Migrants from the mainland began settling the Caribbean islands by sea over many centuries.",
+        "score": 1,
+        "shared": [
+          "many"
+        ]
+      },
+      {
+        "name": "jomon-maritime-culture",
+        "friendly_name": "Jomon Maritime Culture Adapts",
+        "year": -13000,
+        "year_end": -300,
+        "description": "Japan's Jomon people developed a sophisticated maritime culture with pottery, fishing, and some of the world's earliest ceramics.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": -717,
+    "title": "Sargon II Founds Dur-Sharrukin",
+    "candidates": [
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "vast"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 1,
+        "shared": [
+          "assyrian"
+        ]
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nubian-kush-kingdoms",
+        "friendly_name": "Nubian Kingdom of Kush",
+        "year": -800,
+        "year_end": -656,
+        "description": "The Kingdom of Kush in Nubia rivaled Egypt, eventually conquering it and ruling as the 25th Dynasty.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-pottery-trade",
+        "friendly_name": "Lapita Pottery Trade",
+        "year": -1000,
+        "year_end": -500,
+        "description": "Distinctive Lapita pottery spread across Melanesia and Polynesia, evidence of extensive maritime trade networks.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": -691,
+    "title": "Sennacherib Finishes Nineveh Palace",
+    "candidates": [
+      {
+        "name": "sennacherib-jerwan-aqueduct",
+        "friendly_name": "Sennacherib's Jerwan Aqueduct",
+        "year": -690,
+        "description": "Assyrian king Sennacherib finished a stone aqueduct at Jerwan, among the oldest aqueducts known, to water Nineveh's gardens.",
+        "score": 6,
+        "shared": [
+          "sennacherib",
+          "nineveh",
+          "assyrian",
+          "king",
+          "aqueduct",
+          "gardens"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 1,
+        "shared": [
+          "assyrian"
+        ]
+      },
+      {
+        "name": "taharqa-crowned-pharaoh",
+        "friendly_name": "Taharqa Crowned Pharaoh",
+        "year": -690,
+        "description": "Taharqa became pharaoh of the Nubian dynasty ruling Egypt, presiding over an empire stretching into the Levant.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nubian-kush-kingdoms",
+        "friendly_name": "Nubian Kingdom of Kush",
+        "year": -800,
+        "year_end": -656,
+        "description": "The Kingdom of Kush in Nubia rivaled Egypt, eventually conquering it and ruling as the 25th Dynasty.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": -671,
+    "title": "Esarhaddon Conquers Egypt",
+    "candidates": [
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 3,
+        "shared": [
+          "across",
+          "desert",
+          "valley"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 2,
+        "shared": [
+          "assyrian",
+          "empire"
+        ]
+      },
+      {
+        "name": "kingdom-kush-flourishes",
+        "friendly_name": "Kingdom of Kush Flourishes",
+        "year": -1070,
+        "year_end": 350,
+        "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
+        "score": 2,
+        "shared": [
+          "egypt",
+          "nile"
+        ]
+      },
+      {
+        "name": "nubian-kush-kingdoms",
+        "friendly_name": "Nubian Kingdom of Kush",
+        "year": -800,
+        "year_end": -656,
+        "description": "The Kingdom of Kush in Nubia rivaled Egypt, eventually conquering it and ruling as the 25th Dynasty.",
+        "score": 1,
+        "shared": [
+          "egypt"
+        ]
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "lapita-pottery-trade",
+        "friendly_name": "Lapita Pottery Trade",
+        "year": -1000,
+        "year_end": -500,
+        "description": "Distinctive Lapita pottery spread across Melanesia and Polynesia, evidence of extensive maritime trade networks.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "lapita-culture",
+        "friendly_name": "Lapita Culture Pottery Network",
+        "year": -1500,
+        "year_end": -500,
+        "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "lapita-culture-expansion",
+        "friendly_name": "Lapita Culture Spreads",
+        "year": -1600,
+        "year_end": -500,
+        "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": -669,
+    "title": "Ashurbanipal Takes the Throne",
+    "candidates": [
+      {
+        "name": "ashurbanipal-library-founded",
+        "friendly_name": "Library of Ashurbanipal Founded",
+        "year": -668,
+        "description": "Assyrian king Ashurbanipal assembled a vast collection of cuneiform tablets at Nineveh, the earliest known systematically organized library.",
+        "score": 3,
+        "shared": [
+          "ashurbanipal",
+          "assyrian",
+          "king"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 2,
+        "shared": [
+          "assyrian",
+          "empire"
+        ]
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nubian-kush-kingdoms",
+        "friendly_name": "Nubian Kingdom of Kush",
+        "year": -800,
+        "year_end": -656,
+        "description": "The Kingdom of Kush in Nubia rivaled Egypt, eventually conquering it and ruling as the 25th Dynasty.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": -626,
+    "title": "Nabopolassar Founds New Babylonia",
+    "candidates": [
+      {
+        "name": "nabopolassar-neo-babylonian-empire",
+        "friendly_name": "Nabopolassar Founds Neo-Babylonia",
+        "year": -626,
+        "description": "A Chaldean leader seized Babylon from Assyrian control and founded the dynasty that would rebuild the city in splendour.",
+        "score": 8,
+        "shared": [
+          "nabopolassar",
+          "founds",
+          "babylonia",
+          "chaldean",
+          "babylon",
+          "assyrian",
+          "babylonian",
+          "empire"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 3,
+        "shared": [
+          "assyrian",
+          "rule",
+          "empire"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": -612,
+    "title": "The Fall of Nineveh",
+    "candidates": [
+      {
+        "name": "fall-of-nineveh",
+        "friendly_name": "Fall of Nineveh",
+        "year": -612,
+        "description": "A coalition of Babylonians and Medes destroyed Nineveh, ending the Assyrian Empire after centuries of dominance.",
+        "score": 7,
+        "shared": [
+          "fall",
+          "nineveh",
+          "babylonians",
+          "medes",
+          "assyrian",
+          "ending",
+          "empire"
+        ]
+      },
+      {
+        "name": "assyrian-empire-expansion",
+        "friendly_name": "Assyrian Empire Expansion",
+        "year": -911,
+        "year_end": -609,
+        "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+        "score": 2,
+        "shared": [
+          "assyrian",
+          "empire"
+        ]
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "greek-vase-painting-golden-age",
+        "friendly_name": "Greek Vase Painting Golden Age",
+        "year": -620,
+        "year_end": -400,
+        "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": -605,
+    "title": "Nebuchadnezzar Wins at Carchemish",
+    "candidates": [
+      {
+        "name": "greek-vase-painting-golden-age",
+        "friendly_name": "Greek Vase Painting Golden Age",
+        "year": -620,
+        "year_end": -400,
+        "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chavin-culture",
+        "friendly_name": "Chavin Culture in the Andes",
+        "year": -900,
+        "year_end": -250,
+        "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lapita-pottery-trade",
+        "friendly_name": "Lapita Pottery Trade",
+        "year": -1000,
+        "year_end": -500,
+        "description": "Distinctive Lapita pottery spread across Melanesia and Polynesia, evidence of extensive maritime trade networks.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "diamond-mines",
+        "friendly_name": "Diamond Mines",
+        "year": -1000,
+        "year_end": -300,
+        "description": "Diamonds first mined in India for use as cutting tools and gemstones.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": -600,
+    "title": "The Hanging Gardens of Babylon",
+    "candidates": [
+      {
+        "name": "hanging-gardens-babylon",
+        "friendly_name": "Hanging Gardens of Babylon Built",
+        "year": -600,
+        "description": "The legendary Hanging Gardens, one of the Seven Wonders, were traditionally attributed to Nebuchadnezzar II.",
+        "score": 7,
+        "shared": [
+          "hanging",
+          "gardens",
+          "babylon",
+          "nebuchadnezzar",
+          "built",
+          "seven",
+          "wonders"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "first-sewer-system",
+        "friendly_name": "Cloaca Maxima",
+        "year": -600,
+        "description": "Rome's Cloaca Maxima sewer was built during the Roman Kingdom to drain marshes in the Forum valley.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "birth-cyrus-the-great",
+        "friendly_name": "Birth of Cyrus the Great",
+        "year": -600,
+        "description": "The Persian king who founded the Achaemenid Empire and was noted for his tolerant rule.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "atbash-cipher-scribes",
+        "friendly_name": "Atbash Cipher Hides Names",
+        "year": -600,
+        "description": "Hebrew scribes swapped each letter for its opposite in the alphabet, veiling Babylon's name inside prophecy.",
+        "score": 1,
+        "shared": [
+          "babylon"
+        ]
+      },
+      {
+        "name": "babylonian-world-map",
+        "friendly_name": "Babylonian Map of the World",
+        "year": -600,
+        "description": "A clay tablet showed Babylon at the centre of a disc-shaped earth ringed by a bitter river and distant islands.",
+        "score": 1,
+        "shared": [
+          "babylon"
+        ]
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": -597,
+    "title": "Nebuchadnezzar Takes Jerusalem",
+    "candidates": [
+      {
+        "name": "greek-colonization-mediterranean",
+        "friendly_name": "Greek Colonization Spreads",
+        "year": -750,
+        "year_end": -550,
+        "description": "Greek city-states founded colonies around the Mediterranean and Black Sea, spreading their culture.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "phoenician-circumnavigation",
+        "friendly_name": "Phoenicians Circumnavigate Africa",
+        "year": -600,
+        "year_end": -597,
+        "description": "Phoenician sailors reportedly sailed around the entire African continent.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punch-marked-coins-india",
+        "friendly_name": "India's Punch-Marked Coins",
+        "year": -600,
+        "year_end": 1,
+        "description": "Mahajanapada kingdoms of northern India struck silver punch-marked coins, the subcontinent's first currency.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "greek-vase-painting-golden-age",
+        "friendly_name": "Greek Vase Painting Golden Age",
+        "year": -620,
+        "year_end": -400,
+        "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": -586,
+    "title": "The Babylonian Exile Begins",
+    "candidates": [
+      {
+        "name": "babylonian-captivity",
+        "friendly_name": "Babylonian Captivity Begins",
+        "year": -586,
+        "description": "Nebuchadnezzar II destroyed Jerusalem's Temple and exiled the Jews to Babylon.",
+        "score": 7,
+        "shared": [
+          "babylonian",
+          "begins",
+          "jerusalem",
+          "temple",
+          "destroyed",
+          "babylon",
+          "captivity"
+        ]
+      },
+      {
+        "name": "babylonian-destruction-jerusalem",
+        "friendly_name": "Babylonian Destruction of Jerusalem",
+        "year": -586,
+        "description": "Nebuchadnezzar II destroyed Solomon's Temple and Jerusalem, ending the Kingdom of Judah.",
+        "score": 4,
+        "shared": [
+          "babylonian",
+          "jerusalem",
+          "temple",
+          "destroyed"
+        ]
+      },
+      {
+        "name": "thales-eclipse",
+        "friendly_name": "Thales Predicts Eclipse",
+        "year": -585,
+        "description": "Thales of Miletus predicted a solar eclipse, marking a triumph of early science.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "thales-measurement-pyramid",
+        "friendly_name": "Thales Measures the Pyramid Height",
+        "year": -585,
+        "description": "Thales of Miletus reportedly measured the Great Pyramid's height using shadow ratios, pioneering deductive geometry.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "punch-marked-coins-india",
+        "friendly_name": "India's Punch-Marked Coins",
+        "year": -600,
+        "year_end": 1,
+        "description": "Mahajanapada kingdoms of northern India struck silver punch-marked coins, the subcontinent's first currency.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": -575,
+    "title": "The Ishtar Gate Is Built",
+    "candidates": [
+      {
+        "name": "ishtar-gate",
+        "friendly_name": "Ishtar Gate of Babylon Built",
+        "year": -575,
+        "description": "King Nebuchadnezzar II built the magnificent blue-tiled gate in Babylon.",
+        "score": 5,
+        "shared": [
+          "ishtar",
+          "gate",
+          "built",
+          "babylon",
+          "blue"
+        ]
+      },
+      {
+        "name": "walls-of-babylon-rebuilt",
+        "friendly_name": "Walls of Babylon Rebuilt",
+        "year": -575,
+        "description": "A Babylonian king rebuilt and strengthened the city's massive double walls, later ranked among the ancient wonders.",
+        "score": 1,
+        "shared": [
+          "babylon"
+        ]
+      },
+      {
+        "name": "punch-marked-coins-india",
+        "friendly_name": "India's Punch-Marked Coins",
+        "year": -600,
+        "year_end": 1,
+        "description": "Mahajanapada kingdoms of northern India struck silver punch-marked coins, the subcontinent's first currency.",
+        "score": 1,
+        "shared": [
+          "northern"
+        ]
+      },
+      {
+        "name": "great-dam-of-marib",
+        "friendly_name": "Great Dam of Marib Built",
+        "year": -750,
+        "year_end": -500,
+        "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": -539,
+    "title": "Babylon Falls to Cyrus",
+    "candidates": [
+      {
+        "name": "fall-of-babylon-cyrus",
+        "friendly_name": "Fall of Babylon to Cyrus",
+        "year": -539,
+        "description": "Persian forces under Cyrus the Great took the heavily fortified capital, reportedly diverting a river to slip beneath its walls.",
+        "score": 3,
+        "shared": [
+          "babylon",
+          "cyrus",
+          "persian"
+        ]
+      },
+      {
+        "name": "cyrus-cylinder",
+        "friendly_name": "Cyrus Cylinder",
+        "year": -539,
+        "description": "Cyrus the Great issued an early declaration of human rights after conquering Babylon.",
+        "score": 2,
+        "shared": [
+          "babylon",
+          "cyrus"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "temple-apollo-corinth",
+        "friendly_name": "Temple of Apollo at Corinth",
+        "year": -540,
+        "description": "One of the earliest Doric stone temples was built at Corinth, with seven columns still standing today.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "peisistratos-tyrant",
+        "friendly_name": "Peisistratos Rules Athens",
+        "year": -546,
+        "year_end": -527,
+        "description": "Peisistratos seized power in Athens through force, ruling as a popular tyrant.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]
