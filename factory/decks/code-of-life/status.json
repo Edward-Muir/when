@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:28:16.947Z",
+  "updated_at": "2026-11-19T02:30:48.527Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-19T02:28:16.947Z"
     },
     "griffith-transforming-principle": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "8e95f791c4426fb922e7a7a01bb23445918646f96a360d9e490ca05df4634e8a",
+      "updated_at": "2026-11-19T02:30:48.527Z"
     },
     "mcclintock-crossing-over": {
       "state": "pending",
