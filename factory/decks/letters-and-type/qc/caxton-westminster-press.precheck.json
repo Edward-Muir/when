@@ -1,0 +1,20 @@
+{
+  "slug": "caxton-westminster-press",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "f01a53e3ff6b7692befd146d933155482d6cbb14be57bdbf1f273131798dbe64",
+  "dhash": "2722182436b031a0",
+  "nearest": {
+    "deck": {
+      "slug": "baskerville-virgil",
+      "distance": 24
+    },
+    "catalogue": {
+      "slug": "michelson-morley-experiment",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

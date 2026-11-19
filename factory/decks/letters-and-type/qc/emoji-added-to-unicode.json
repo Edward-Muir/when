@@ -1,0 +1,15 @@
+{
+  "slug": "emoji-added-to-unicode",
+  "description": "A painterly night street scene in a busy city, with neon signs and red lanterns in the background and blurred pedestrians in dark clothing. In the foreground, a hand holds a black smartphone whose screen shows a grid of cartoon icons: smiley faces, hearts, a sun, a cat, and a flower. The image fills the frame edge to edge, with no visible frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

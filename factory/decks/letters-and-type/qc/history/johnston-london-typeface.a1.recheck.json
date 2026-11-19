@@ -1,0 +1,15 @@
+{
+  "slug": "johnston-london-typeface",
+  "description": "An oil painting of a bespectacled man in waistcoat and rolled sleeves writing capital letters on paper at a wooden desk in a dim studio. Beside him is a sign-board with a red roundel and a band reading UNDERGROUND, with a second line reading UNDERGROUN. Ink pots, brushes, rolled papers and books surround him. No frame or border; the painting fills the image.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible lettering is painted in: the sign reads UNDERGROUND and a misspelled UNDERGROUN, and the sheets show ABCDEF GHIJK KL. Regenerate with no readable letters on the sign or paper."
+}

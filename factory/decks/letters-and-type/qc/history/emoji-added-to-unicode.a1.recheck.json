@@ -1,0 +1,15 @@
+{
+  "slug": "emoji-added-to-unicode",
+  "description": "A hand holds an early iPhone-style phone showing a grid of emoji (smileys, hearts, sun, cat faces, cherry blossom) in a dark Tokyo alley at night. Paper lanterns hang on the left; a JR sign reading 東京駅 and 'Tokyo Station' is behind, and a FamilyMart storefront sign is on the right. Oil-paint style, edge to edge, no frame, nothing violent.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible lettering is painted in: the JR sign reads 東京駅 / 'Tokyo Station' and the storefront reads 'FamilyMart'. Repaint the street with blurred, unreadable signs and no words."
+}

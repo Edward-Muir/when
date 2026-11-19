@@ -1,0 +1,15 @@
+{
+  "slug": "comic-sans-created",
+  "description": "A dim, warmly lit desk with a beige CRT computer whose screen shows a window with a cartoon dog, a speech balloon and large words in a rounded font. Around it are open comic pages, sheets with alphabet lettering (ABCDEF, QRSTUVWXYZ), an ink bottle and a dip pen. The painting fills the frame with no border; no people, nothing graphic. 1990s computer and comics fit the era.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Letters are painted in: the screen shows large words (\"Cgnlilifi rn'bliwred\") plus menu labels, and the desk papers and book show alphabet lettering (ABCDEF, QRSTUVWXYZ). Redraw the screen and sheets with no readable letters, using abstract squiggles or comic panels only."
+}

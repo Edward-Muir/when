@@ -1,0 +1,15 @@
+{
+  "slug": "first-sans-serif-typeface",
+  "description": "An oil painting of a weathered man in a vest and rolled sleeves holding a metal letter A type block in a dim print shop. Trays of ornate decorative type sit in the foreground, with shelves and a brick wall behind. A sign at lower left reads HAND PRESSED with smaller lettering, and a sign at upper right shows partial lettering. The painting fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted text is visible: the board at lower left reads HAND PRESSED with smaller lines beneath, and a sign at upper right has partial lettering. Remove all signs and lettering from the background."
+}
