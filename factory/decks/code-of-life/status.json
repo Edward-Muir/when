@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:10:31.141Z",
+  "updated_at": "2026-11-19T02:12:46.811Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-19T02:10:31.141Z"
     },
     "flemming-chromosomes-mitosis": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b8178d0d55b74b4556a61940389bcc956e8ed7a3a0375d1e3a6aa22307980423",
+      "updated_at": "2026-11-19T02:12:46.811Z"
     },
     "mendel-work-rediscovered": {
       "state": "pending",
