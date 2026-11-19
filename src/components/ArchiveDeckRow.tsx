@@ -8,6 +8,7 @@ import { formatShareDate } from '../utils/share';
 import { formatWeekday, formatWeekdayDate } from '../utils/statsDerived';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
+import { LANDSCAPE_CARD_CLASS } from '../utils/cardSize';
 
 interface ArchiveDeckRowProps {
   day: ArchiveDay;
@@ -81,7 +82,7 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
           onAnimationEnd={() => setShaking(false)}
           aria-disabled={locked}
           aria-label={rowLabel(day, name, locked)}
-          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
+          className={`${LANDSCAPE_CARD_CLASS} rounded-lg overflow-hidden bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
             curated ? 'border-2 border-accent' : 'border border-border'
           } ${locked ? 'opacity-70' : 'active:scale-95'} ${shaking ? 'animate-shake-medium' : ''}`}
         >
