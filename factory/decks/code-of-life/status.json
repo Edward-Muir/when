@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T08:22:29.057Z",
+  "updated_at": "2026-11-19T18:09:07.569Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-19T06:08:43.925Z"
     },
     "mullis-invents-pcr": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fa36f99db7ddc6bc6ef0196bd7ceb9563368c81dce49f1f3154a6b06918a9ad2",
+      "updated_at": "2026-11-19T18:09:07.569Z"
     },
     "he-jiankui-gene-edited-babies": {
       "state": "qc-pass",
