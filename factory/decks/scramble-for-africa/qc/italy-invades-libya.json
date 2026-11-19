@@ -1,0 +1,15 @@
+{
+  "slug": "italy-invades-libya",
+  "description": "Oil-painting style scene. Sailors in white and navy uniforms row wooden boats and leap onto a stone quay, several holding bolt-action rifles. Behind them a steam warship with black smoke from its funnels and a small flag on the mast sits offshore, with other grey ships further off. On the right a massive stone fortress tower rises, and a city with domes and minarets sits on the skyline. Smoke and spray hang in the air. No readable text, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

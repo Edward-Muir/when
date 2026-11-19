@@ -1,0 +1,14 @@
+{
+  "caesar-besieged-alexandria": {"recognition": "medium", "inferability": "high", "anchors": ["Roman general", "Egypt's capital", "royal feud"], "why": "Roman general chasing a rival in Egypt places it in the late Roman Republic"},
+  "rome-annexes-egypt": {"recognition": "medium", "inferability": "high", "anchors": ["Antony and Cleopatra", "Octavian", "Rome"], "why": "Antony, Cleopatra and Octavian anchor it firmly to antiquity"},
+  "portugal-captures-ceuta": {"recognition": "low", "inferability": "medium", "anchors": ["Portuguese fleet", "African coast push"], "why": "Age of Discovery Portugal suggests the 15th century, but a fleet storming a port is loose"},
+  "da-gama-sails-round-africa": {"recognition": "high", "inferability": "high", "anchors": ["Da Gama", "Portuguese fleet", "India"], "why": "Da Gama is a famous name tied to the 1490s"},
+  "alcacer-quibir-sebastian-dies": {"recognition": "low", "inferability": "medium", "anchors": ["Portuguese king", "crusading army", "Morocco"], "why": "A crusading Portuguese king suggests the early modern period, but not clearly"},
+  "mungo-park-reaches-niger": {"recognition": "medium", "inferability": "medium", "anchors": ["Scottish surgeon", "European exploration"], "why": "European exploration of Africa implies the 18th-19th century"},
+  "boers-win-blood-river": {"recognition": "medium", "inferability": "high", "anchors": ["Boers", "Trekking", "Zulu", "guns"], "why": "Trekking Afrikaners with wagons and guns point to 19th-century South Africa"},
+  "livingstone-sees-victoria-falls": {"recognition": "high", "inferability": "high", "anchors": ["Livingstone", "named for his queen"], "why": "Livingstone and Victoria point to the Victorian era"},
+  "british-storm-magdala": {"recognition": "low", "inferability": "high", "anchors": ["British-Indian army", "Ethiopian emperor"], "why": "A British-Indian army implies the Raj, so the 19th century"},
+  "italy-invades-libya": {"recognition": "medium", "inferability": "high", "anchors": ["Italy", "Ottoman Empire", "Tripoli"], "why": "Italy taking provinces from the Ottoman Empire points to the late Ottoman era"},
+  "treaty-of-fez-morocco": {"recognition": "low", "inferability": "medium", "anchors": ["France", "Spain", "sultan", "protectorate"], "why": "A colonial protectorate treaty with a sultan implies the colonial era"},
+  "rif-rout-spain-annual": {"recognition": "low", "inferability": "medium", "anchors": ["colonial Europe", "Spanish army", "Morocco"], "why": "Colonial Europe suggests the early 20th century, but the text is not firm"}
+}

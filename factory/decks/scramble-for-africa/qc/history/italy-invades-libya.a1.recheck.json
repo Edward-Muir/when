@@ -1,0 +1,15 @@
+{
+  "slug": "italy-invades-libya",
+  "description": "Oil painting of sailors in dark caps and soldiers in pith helmets crowding rowing boats and leaping onto a stone quay beneath a massive old fortress. Steel warships with smoking funnels lie offshore, and a domed mosque with a minaret stands behind smoke and a fire on the skyline. The sea is choppy under a stormy sky. The central sailor's cap band carries painted lettering. Fills the image edge to edge, with no frame and no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The central sailor's cap band has painted lettering (a word like 'TORPEDO'). Repaint the cap with a plain, blank band."
+}

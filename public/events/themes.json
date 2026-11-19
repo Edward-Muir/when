@@ -21550,5 +21550,200 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "caesar-besieged-alexandria",
+    "friendly_name": "Caesar Besieged in Alexandria",
+    "year": -48,
+    "category": "warfare",
+    "description": "A Roman general chasing his rival took sides in a royal feud and was trapped in the palace quarter of Egypt's capital.",
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/caesar-besieged-alexandria_5d5wsk?_a=BAMAMikS0",
+    "color": "#2a1e1d",
+    "text_color": "light"
+  },
+  {
+    "name": "rome-annexes-egypt",
+    "friendly_name": "Rome Annexes Egypt",
+    "year": -30,
+    "category": "empires",
+    "description": "After Antony and Cleopatra fell, Octavian took the richest kingdom of the Mediterranean as his personal possession.",
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rome-annexes-egypt_gyf5mh?_a=BAMAMikS0",
+    "color": "#362a23",
+    "text_color": "light"
+  },
+  {
+    "name": "portugal-captures-ceuta",
+    "friendly_name": "Portugal Captures Ceuta",
+    "year": 1415,
+    "category": "warfare",
+    "description": "A Portuguese fleet stormed a Moroccan trading port across the strait, opening Europe's long push down the African coast.",
+    "difficulty": "medium",
+    "regions": [
+      "Morocco",
+      "Portugal",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portugal-captures-ceuta_hwxwdt?_a=BAMAMikS0",
+    "color": "#3d342e",
+    "text_color": "light"
+  },
+  {
+    "name": "da-gama-sails-round-africa",
+    "friendly_name": "Da Gama Sails Round Africa",
+    "year": 1497,
+    "category": "trade",
+    "description": "A Portuguese fleet rounded the southern cape and pushed up the east coast toward India, calling at Mozambique and Mombasa.",
+    "difficulty": "easy",
+    "regions": [
+      "Kenya",
+      "Mozambique",
+      "Portugal",
+      "South Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/da-gama-sails-round-africa_2m03hv?_a=BAMAMikS0",
+    "color": "#484541",
+    "text_color": "light"
+  },
+  {
+    "name": "alcacer-quibir-sebastian-dies",
+    "friendly_name": "Sebastian Dies at Alcacer Quibir",
+    "year": 1578,
+    "category": "warfare",
+    "description": "A young Portuguese king led a crusading army into Morocco and was killed as it was wiped out, ending his dynasty.",
+    "difficulty": "medium",
+    "regions": [
+      "Morocco",
+      "Portugal"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alcacer-quibir-sebastian-dies_lpfudi?_a=BAMAMikS0",
+    "color": "#4e3929",
+    "text_color": "light"
+  },
+  {
+    "name": "mungo-park-reaches-niger",
+    "friendly_name": "Mungo Park Reaches the Niger",
+    "year": 1796,
+    "category": "migration",
+    "description": "A young Scottish surgeon saw the great river flowing eastward, settling a long European debate about its direction.",
+    "difficulty": "medium",
+    "regions": [
+      "Mali",
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mungo-park-reaches-niger_83du3e?_a=BAMAMikS0",
+    "color": "#271f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "boers-win-blood-river",
+    "friendly_name": "Boers Win at Blood River",
+    "year": 1838,
+    "category": "warfare",
+    "description": "Trekking Afrikaner farmers with wagons and guns defeated a vast Zulu army beside a river in Natal.",
+    "difficulty": "easy",
+    "regions": [
+      "South Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boers-win-blood-river_gmzgwu?_a=BAMAMikS0",
+    "color": "#2a1e18",
+    "text_color": "light"
+  },
+  {
+    "name": "livingstone-sees-victoria-falls",
+    "friendly_name": "Livingstone Sees Victoria Falls",
+    "year": 1855,
+    "category": "migration",
+    "description": "A Scottish explorer paddling down the Zambezi reached the thundering curtain of water and named it for his queen.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom",
+      "Zambia",
+      "Zimbabwe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/livingstone-sees-victoria-falls_1r8xh8?_a=BAMAMikS0",
+    "color": "#25201c",
+    "text_color": "light"
+  },
+  {
+    "name": "british-storm-magdala",
+    "friendly_name": "British Storm Magdala",
+    "year": 1868,
+    "category": "warfare",
+    "description": "A British-Indian army marched across the Ethiopian highlands to free captives held by the emperor, who took his own life.",
+    "difficulty": "easy",
+    "regions": [
+      "Ethiopia",
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/british-storm-magdala_3bke4q?_a=BAMAMikS0",
+    "color": "#3f3630",
+    "text_color": "light"
+  },
+  {
+    "name": "italy-invades-libya",
+    "friendly_name": "Italy Invades Libya",
+    "year": 1911,
+    "category": "warfare",
+    "description": "Italian troops landed at Tripoli and other ports, seizing North African provinces from the Ottoman Empire.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Libya"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/italy-invades-libya_mj6tdc?_a=BAMAMikS0",
+    "color": "#7a6b59",
+    "text_color": "light"
+  },
+  {
+    "name": "treaty-of-fez-morocco",
+    "friendly_name": "Treaty of Fez Makes Morocco French",
+    "year": 1912,
+    "category": "diplomacy",
+    "description": "A treaty signed with the sultan handed Morocco's foreign affairs to France, with a northern zone left to Spain.",
+    "difficulty": "medium",
+    "regions": [
+      "France",
+      "Morocco"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-fez-morocco_x8wt4j?_a=BAMAMikS0",
+    "color": "#281f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "rif-rout-spain-annual",
+    "friendly_name": "Rif Fighters Rout Spain at Annual",
+    "year": 1921,
+    "category": "warfare",
+    "description": "Berber tribesmen under a local leader overran a Spanish army in northern Morocco in one of colonial Europe's worst defeats.",
+    "difficulty": "medium",
+    "regions": [
+      "Morocco",
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rif-rout-spain-annual_s7buof?_a=BAMAMikS0",
+    "color": "#473b30",
+    "text_color": "light"
   }
 ]

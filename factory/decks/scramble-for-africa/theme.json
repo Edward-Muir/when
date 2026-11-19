@@ -1,0 +1,26 @@
+{
+  "id": "scramble-for-africa",
+  "name": "Scramble for Africa",
+  "scope": "Yes if it is a foreign expedition, claim or conquest in Africa",
+  "boundary": "Scramble for Africa: outsiders' expeditions and claims in Africa and the resistance to them; forts and colonies such as Elmina and Cape Town go to Flag Planted, African states' own story to African Kingdoms, independence to Flags Come Down.",
+  "neighbours": ["african-kingdoms", "colonies-founded", "flags-come-down"],
+  "grid": {
+    "categories": ["empires", "warfare", "diplomacy"],
+    "eras": ["industrial", "worldWars"],
+    "regions": ["Sub-Saharan Africa", "Middle East & North Africa"]
+  },
+  "example_beats": [
+    "Mungo Park reaches the Niger (1796)",
+    "Italy invades Ethiopia (1935)",
+    "France invades Algiers (1830)",
+    "Livingstone sees Victoria Falls (1855)",
+    "Speke finds the Nile's source (1858)",
+    "Stanley finds Livingstone (1871)",
+    "Zulu War (1879)",
+    "Berlin Conference (1885)",
+    "Fashoda crisis (1898)",
+    "Boer War begins (1899)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
