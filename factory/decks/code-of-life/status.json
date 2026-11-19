@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T05:21:21.583Z",
+  "updated_at": "2026-11-19T05:23:50.960Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-19T05:21:21.583Z"
     },
     "first-restriction-enzyme": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b901cd983a06c652e43f46a74078152afb411f78c18d5f66873058b4b1218dc5",
+      "updated_at": "2026-11-19T05:23:50.960Z"
     },
     "cohen-boyer-recombinant-dna": {
       "state": "pending",
