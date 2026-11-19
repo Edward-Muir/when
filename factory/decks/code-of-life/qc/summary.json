@@ -140,10 +140,10 @@
     "description": "Dark interior view from inside an older car, with a three-spoke steering wheel bearing a star emblem, a lit dashboard with round gauges and a radio, looking out a windscreen at a winding forest road at night. Glowing double-helix DNA strands branch and multiply across the windscreen and the night scene above the road. No legible text."
   },
   "custom-base-editing-infant": {
-    "state": "qc-fail",
-    "reason": "Legible text is painted in: the vial reads 'Custom Base Editing' and the paper on the cart has the same heading. Paint the vial and papers without lettering.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dim painterly hospital room: a glass-sided crib under a warm lamp holding a teddy bear under blankets, an IV drip line beside it, monitors on the wall. On a cart at right is a small glowing vial labelled with words and papers showing a DNA helix and handwritten lettering. Fills the frame edge to edge."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A dim hospital room in warm amber light. A small clear-sided crib holds a teddy bear on a rumpled blanket, with a thin IV drip line hanging beside it. Behind it are monitors and infusion pumps on poles. In the foreground a table holds a small glass vial and a sheet of paper with a double-helix DNA drawing. The painting fills the frame edge to edge, and there are no people or readable text."
   }
 }
