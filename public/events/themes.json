@@ -21560,7 +21560,8 @@
     "difficulty": "hard",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "uruk-first-city-walled",
@@ -21572,7 +21573,8 @@
     "regions": [
       "Iraq"
     ],
-    "year_end": -3100
+    "year_end": -3100,
+    "has_detail": true
   },
   {
     "name": "cuneiform-writing-emerges",
@@ -21583,7 +21585,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "royal-tombs-of-ur",
@@ -21595,7 +21598,8 @@
     "regions": [
       "Iraq"
     ],
-    "year_end": -2450
+    "year_end": -2450,
+    "has_detail": true
   },
   {
     "name": "urukagina-reforms-lagash",
@@ -21606,7 +21610,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "enheduanna-hymns-inanna",
@@ -21617,7 +21622,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "naram-sin-victory-stele",
@@ -21628,7 +21634,8 @@
     "difficulty": "medium",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "elamites-sack-ur",
@@ -21640,7 +21647,8 @@
     "regions": [
       "Iran",
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "amorite-dynasty-babylon",
@@ -21651,7 +21659,8 @@
     "difficulty": "medium",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "plimpton-322-tablet",
@@ -21662,7 +21671,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "code-of-hammurabi-carved",
@@ -21673,7 +21683,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hittites-sack-babylon",
@@ -21686,7 +21697,8 @@
       "Iraq",
       "Turkey",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ashur-uballit-frees-assyria",
@@ -21697,7 +21709,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "gilgamesh-epic-standard-version",
@@ -21708,7 +21721,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ashurnasirpal-builds-nimrud",
@@ -21719,7 +21733,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "babylonian-astronomical-diaries",
@@ -21730,7 +21745,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tiglath-pileser-iii-reforms",
@@ -21741,7 +21757,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "sennacherib-palace-nineveh",
@@ -21752,7 +21769,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ashurbanipal-takes-throne",
@@ -21763,7 +21781,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "nebuchadnezzar-wins-carchemish",
@@ -21777,6 +21796,7 @@
       "Iraq",
       "Turkey",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   }
 ]
