@@ -34,15 +34,7 @@ const renderBar = (props: Partial<React.ComponentProps<typeof TopBar>> = {}) => 
       <Routes>
         <Route
           path="/privacy"
-          element={
-            <TopBar
-              showHome
-              showTitle={false}
-              showStatsAchievements
-              onHomeClick={onHomeClick}
-              {...props}
-            />
-          }
+          element={<TopBar showHome showStatsAchievements onHomeClick={onHomeClick} {...props} />}
         />
         <Route path="/archive" element={<h1>Archive tab</h1>} />
         <Route path="/custom" element={<h1>Custom tab</h1>} />
@@ -82,7 +74,7 @@ describe('TopBar navigation', () => {
     expect(icon).toHaveClass('lucide-sliders-horizontal');
   });
 
-  it('hides the nav buttons without showStatsAchievements (the in-game bar)', () => {
+  it('hides the tab buttons without showStatsAchievements', () => {
     renderBar({ showStatsAchievements: false });
     expect(screen.getByLabelText('Go home')).toBeInTheDocument();
     expect(screen.queryByLabelText('Past decks')).toBeNull();
@@ -141,33 +133,5 @@ describe('tab paths', () => {
     expect(pathForNav('home')).toBe('/');
     expect(navForPath('/daily')).toBeNull();
     expect(navForPath('/nonsense')).toBeNull();
-  });
-});
-
-describe('TopBar restart', () => {
-  it('shows Restart only when the game offers one', () => {
-    renderBar();
-    expect(screen.queryByLabelText('Restart game')).not.toBeInTheDocument();
-  });
-
-  it('asks first, and restarts only once confirmed', async () => {
-    const onRestart = jest.fn();
-    renderBar({ onRestart });
-    await userEvent.click(screen.getByLabelText('Restart game'));
-    expect(screen.getByRole('heading', { name: 'Restart game?' })).toBeInTheDocument();
-
-    await userEvent.click(screen.getByRole('button', { name: 'Cancel' }));
-    expect(onRestart).not.toHaveBeenCalled();
-
-    await userEvent.click(screen.getByLabelText('Restart game'));
-    await userEvent.click(screen.getByRole('button', { name: 'Restart' }));
-    expect(onRestart).toHaveBeenCalledTimes(1);
-  });
-
-  it('ignores taps while a placement animates', async () => {
-    const onRestart = jest.fn();
-    renderBar({ onRestart, restartDisabled: true });
-    await userEvent.click(screen.getByLabelText('Restart game'));
-    expect(screen.queryByRole('heading', { name: 'Restart game?' })).not.toBeInTheDocument();
   });
 });

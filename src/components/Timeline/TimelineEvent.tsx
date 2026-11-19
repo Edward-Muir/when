@@ -7,6 +7,7 @@ import { type GlowIntensity } from '../../utils/streakFeedback';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
 import TimelineTick from './TimelineTick';
 import type { Point } from './tickLanding';
+import { LANDSCAPE_CARD_CLASS } from '../../utils/cardSize';
 
 // One scheduled wave bump for this row: Timeline computes when (delay) and how hard
 // (amplitudePx); trigger is a timestamp identifying the wave instance.
@@ -280,7 +281,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             initial={isSuccessAnimation ? springBounce.initial : false}
             animate={isSuccessAnimation ? springBounce.animate : undefined}
             exit={isErrorAnimation ? rejectionExit.exit : undefined}
-            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
+            className={`${LANDSCAPE_CARD_CLASS} rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
           >
             <CardFace event={event} priority={priority} />
           </motion.button>

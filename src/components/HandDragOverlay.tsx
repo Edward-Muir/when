@@ -7,15 +7,16 @@ import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import CategoryIcon from './CategoryIcon';
 import { titleShadowClass } from './CardFace';
+import { LANDSCAPE_CARD } from '../utils/cardSize';
 
-/** Tailwind's `sm` breakpoint, where the landscape card grows from 240x80 to 280x96. */
+/** Tailwind's `sm` breakpoint, where the landscape card grows (see cardSize.ts). */
 const SM_QUERY = '(min-width: 640px)';
 /** Keep the landscape card this far inside the viewport's sides when it opens. */
 const EDGE_MARGIN = 8;
 
 function landscapeSize(): { w: number; h: number } {
   const sm = typeof window !== 'undefined' && window.matchMedia?.(SM_QUERY).matches;
-  return sm ? { w: 280, h: 96 } : { w: 240, h: 80 };
+  return sm ? LANDSCAPE_CARD.sm : LANDSCAPE_CARD.base;
 }
 
 /**
