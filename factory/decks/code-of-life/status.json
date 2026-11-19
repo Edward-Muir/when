@@ -3,7 +3,7 @@
   "name": "Code of Life",
   "stage": "art-in-progress",
   "created_at": "2026-11-18T23:17:55.331Z",
-  "updated_at": "2026-11-19T02:30:48.527Z",
+  "updated_at": "2026-11-19T02:33:15.026Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-19T02:30:48.527Z"
     },
     "mcclintock-crossing-over": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "fd4bc7213e01879752cb7b8791984c9556b68fa75d1fb16646eae1c5ad82e335",
+      "updated_at": "2026-11-19T02:33:15.026Z"
     },
     "one-gene-one-enzyme": {
       "state": "pending",
