@@ -12,6 +12,8 @@ preloading.
   for a new finding rather than a commit message.
 - **Delivering images:** [../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)
   owns the rung ladder, its hard rules, and the service-worker cache.
+- **Reviewing art:** [review-board.md](review-board.md) is the local board for marking card
+  images to regenerate, and the format of the redo list it writes for the regeneration step.
 
 ## Every live event has art, because an event without it cannot be dealt
 

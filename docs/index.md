@@ -42,7 +42,8 @@ says: for "how does X work", read the source.
   rule, storage keys, milestones, badge design
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
-  push to full image coverage. Its
+  push to full image coverage. [review-board.md](events-images/review-board.md) is the local
+  board for marking card art to regenerate, and the redo-list format. Its
   [catalogue-error-backlog.md](events-images/catalogue-error-backlog.md) records every event
   found not to match its sources (wrong years, wrong names, duplicate cards) and how each was
   resolved: all of it fixed, retired, dismissed or closed as won't-fix by 2026-10-01

@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Image Review Board</title>
+    <style>
+      :root {
+        --bg: #16171a;
+        --panel: #202227;
+        --line: #33363d;
+        --text: #e8e6e1;
+        --muted: #9a9ca3;
+        --accent: #d4a24c;
+        --redo: #e5484d;
+        --ok: #3fa66b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          14px/1.4 -apple-system,
+          BlinkMacSystemFont,
+          'Inter',
+          sans-serif;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 16px;
+        background: var(--panel);
+        border-bottom: 1px solid var(--line);
+      }
+      h1 {
+        margin: 0 8px 0 0;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      select,
+      input[type='search'],
+      button,
+      textarea,
+      input.note {
+        font: inherit;
+        color: var(--text);
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 6px 8px;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:hover {
+        border-color: var(--muted);
+      }
+      label.check {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        cursor: pointer;
+      }
+      .spacer {
+        flex: 1;
+      }
+      .count {
+        color: var(--muted);
+      }
+      .count strong {
+        color: var(--redo);
+      }
+      #warnings {
+        padding: 8px 16px;
+        background: #3a2e14;
+        color: #f0d9a8;
+        display: none;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        gap: 14px;
+        padding: 16px;
+      }
+      .card {
+        border-radius: 8px;
+        background: var(--panel);
+        padding: 6px;
+        outline: 3px solid transparent;
+        outline-offset: -3px;
+      }
+      .card.marked {
+        outline-color: var(--redo);
+      }
+      .thumb {
+        position: relative;
+        aspect-ratio: 1;
+        border-radius: 5px;
+        overflow: hidden;
+        background: #0e0f11;
+        cursor: pointer;
+      }
+      .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .badge {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        padding: 2px 7px;
+        border-radius: 4px;
+        background: var(--redo);
+        color: #fff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        display: none;
+      }
+      .card.marked .badge {
+        display: block;
+      }
+      .tag {
+        position: absolute;
+        bottom: 6px;
+        left: 6px;
+        padding: 1px 6px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #ddd;
+        font-size: 11px;
+      }
+      .expand {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border: 0;
+        border-radius: 6px;
+        background: rgba(0, 0, 0, 0.55);
+        color: #fff;
+        font-size: 16px;
+        opacity: 0;
+      }
+      .thumb:hover .expand,
+      .expand:focus {
+        opacity: 1;
+      }
+      .name {
+        margin-top: 6px;
+        font-weight: 600;
+        font-size: 13px;
+      }
+      .year {
+        color: var(--muted);
+        font-size: 12px;
+      }
+      input.note {
+        display: none;
+        width: 100%;
+        margin-top: 6px;
+        padding: 4px 6px;
+        font-size: 12px;
+      }
+      .card.marked input.note {
+        display: block;
+      }
+      #sentinel {
+        height: 40px;
+      }
+      #empty {
+        padding: 40px;
+        text-align: center;
+        color: var(--muted);
+        display: none;
+      }
+      dialog {
+        width: min(1300px, 96vw);
+        max-height: 94vh;
+        padding: 0;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--panel);
+        color: var(--text);
+      }
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.75);
+      }
+      .lb {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 380px;
+        max-height: 94vh;
+      }
+      .lb-img {
+        background: #0e0f11;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid transparent;
+      }
+      .lb-img.marked {
+        border-color: var(--redo);
+      }
+      .lb-img img {
+        max-width: 100%;
+        max-height: calc(94vh - 6px);
+        object-fit: contain;
+        display: block;
+      }
+      .lb-info {
+        padding: 16px;
+        overflow-y: auto;
+        max-height: 94vh;
+      }
+      .lb-info h2 {
+        margin: 0 0 2px;
+        font-size: 18px;
+      }
+      .lb-info .sub {
+        color: var(--muted);
+        margin-bottom: 12px;
+      }
+      .lb-info h3 {
+        margin: 14px 0 4px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+      .lb-info p {
+        margin: 0;
+        white-space: pre-wrap;
+      }
+      .lb-info .small {
+        font-size: 12px;
+        color: var(--muted);
+        word-break: break-all;
+      }
+      .lb-actions {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin: 12px 0;
+      }
+      .lb-actions .mark-btn.on {
+        background: var(--redo);
+        border-color: var(--redo);
+        color: #fff;
+      }
+      textarea {
+        width: 100%;
+        min-height: 60px;
+        resize: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Image review</h1>
+      <select id="source" title="Source">
+        <option value="all">All sources</option>
+        <option value="factory">Factory decks</option>
+        <option value="catalogue">Older catalogue art</option>
+      </select>
+      <select id="group" title="Deck or category"></select>
+      <label class="check"><input type="checkbox" id="markedOnly" /> Marked only</label>
+      <input type="search" id="search" placeholder="Search names" />
+      <span class="spacer"></span>
+      <span class="count" id="count"></span>
+      <button id="refresh">Refresh</button>
+    </header>
+    <div id="warnings"></div>
+    <main>
+      <div id="grid"></div>
+      <div id="empty">No cards match.</div>
+      <div id="sentinel"></div>
+    </main>
+
+    <dialog id="lightbox">
+      <div class="lb">
+        <div class="lb-img" id="lbImgWrap"><img id="lbImg" alt="" /></div>
+        <div class="lb-info">
+          <h2 id="lbName"></h2>
+          <div class="sub" id="lbSub"></div>
+          <div class="lb-actions">
+            <button class="mark-btn" id="lbMark">Mark for redo (M)</button>
+            <button id="lbPrev">← Prev</button>
+            <button id="lbNext">Next →</button>
+            <button id="lbClose">Close (Esc)</button>
+          </div>
+          <div id="lbNoteWrap" style="display: none">
+            <h3>What's wrong</h3>
+            <textarea
+              id="lbNote"
+              maxlength="300"
+              placeholder="Becomes the reason added to the image prompt"
+            ></textarea>
+          </div>
+          <h3>Description</h3>
+          <p id="lbDesc"></p>
+          <h3>Image prompt</h3>
+          <p id="lbPrompt"></p>
+          <p class="small" id="lbPromptSrc"></p>
+          <h3>Image</h3>
+          <p class="small" id="lbImage"></p>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      const PAGE = 300;
+      const $ = (id) => document.getElementById(id);
+      const state = {
+        cards: [],
+        marks: {},
+        closed: {},
+        decks: [],
+        categories: [],
+        filtered: [],
+        shown: 0,
+        current: -1,
+      };
+
+      const titleCase = (s) => s.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+      const yearText = (y) => (y < 0 ? `${-y} BCE` : String(y));
+      const years = (c) =>
+        c.year_end != null && c.year_end !== c.year
+          ? `${yearText(c.year)}–${yearText(c.year_end)}`
+          : yearText(c.year);
+      const enc = encodeURIComponent;
+      const thumbSrc = (c) =>
+        c.image.kind === 'cloudinary'
+          ? c.image.thumb_url
+          : `/thumb/${enc(c.slug)}?v=${c.image.sha256.slice(0, 12)}`;
+      const fullSrc = (c) =>
+        c.image.kind === 'cloudinary' ? c.image.detail_url : `/full/${enc(c.slug)}`;
+
+      async function api(path, body) {
+        const res = await fetch(
+          path,
+          body === undefined
+            ? {}
+            : {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(body),
+              }
+        );
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || res.statusText);
+        return data;
+      }
+
+      function load(data) {
+        Object.assign(state, {
+          cards: data.cards,
+          marks: data.marks,
+          closed: data.closed,
+          decks: data.decks,
+          categories: data.categories,
+        });
+        const w = $('warnings');
+        w.style.display = data.warnings.length ? 'block' : 'none';
+        w.textContent = data.warnings.join(' ');
+        buildGroupSelect();
+        applyFilters();
+      }
+
+      function buildGroupSelect() {
+        const source = $('source').value;
+        const prev = $('group').value;
+        const opts = ['<option value="">All decks and categories</option>'];
+        if (source !== 'catalogue' && state.decks.length) {
+          opts.push('<optgroup label="Decks">');
+          for (const d of state.decks)
+            opts.push(`<option value="deck:${d.id}">${d.name} (${d.count})</option>`);
+          opts.push('</optgroup>');
+        }
+        opts.push('<optgroup label="Categories">');
+        for (const c of state.categories)
+          opts.push(`<option value="cat:${c}">${titleCase(c)}</option>`);
+        opts.push('</optgroup>');
+        $('group').innerHTML = opts.join('');
+        $('group').value = [...$('group').options].some((o) => o.value === prev) ? prev : '';
+      }
+
+      function applyFilters() {
+        const source = $('source').value;
+        const group = $('group').value;
+        const markedOnly = $('markedOnly').checked;
+        const q = $('search').value.trim().toLowerCase();
+        state.filtered = state.cards.filter((c) => {
+          if (source !== 'all' && c.source !== source) return false;
+          if (group.startsWith('deck:') && (!c.deck || c.deck.id !== group.slice(5))) return false;
+          if (group.startsWith('cat:') && c.category !== group.slice(4)) return false;
+          if (markedOnly && !state.marks[c.slug]) return false;
+          if (q && !c.friendly_name.toLowerCase().includes(q) && !c.slug.includes(q)) return false;
+          return true;
+        });
+        $('grid').innerHTML = '';
+        state.shown = 0;
+        renderMore();
+        $('empty').style.display = state.filtered.length ? 'none' : 'block';
+        updateCount();
+      }
+
+      function updateCount() {
+        const marked = Object.keys(state.marks).length;
+        $('count').innerHTML =
+          `<strong>${marked} marked</strong> · ${state.filtered.length} of ${state.cards.length} cards`;
+      }
+
+      function cardEl(c, i) {
+        const el = document.createElement('div');
+        el.className = 'card';
+        el.dataset.slug = c.slug;
+        el.dataset.index = i;
+        el.innerHTML = `
+          <div class="thumb">
+            <img loading="lazy" decoding="async" alt="">
+            <span class="badge">REDO</span>
+            <button class="expand" title="View full size">⤢</button>
+          </div>
+          <div class="name"></div>
+          <div class="year"></div>
+          <input class="note" maxlength="300" placeholder="What's wrong? (optional)">`;
+        el.querySelector('img').src = thumbSrc(c);
+        el.querySelector('.name').textContent = c.friendly_name;
+        el.querySelector('.year').textContent = years(c) + (c.deck ? ` · ${c.deck.name}` : '');
+        const closed = state.closed[c.slug];
+        if (closed && !state.marks[c.slug]) {
+          const tag = document.createElement('span');
+          tag.className = 'tag';
+          tag.textContent = closed === 'applied' ? 'redone' : 'skipped';
+          el.querySelector('.thumb').appendChild(tag);
+        }
+        paintCard(el, c);
+        return el;
+      }
+
+      function paintCard(el, c) {
+        const entry = state.marks[c.slug];
+        el.classList.toggle('marked', Boolean(entry));
+        const note = el.querySelector('input.note');
+        if (document.activeElement !== note) note.value = entry ? entry.note : '';
+      }
+
+      function renderMore() {
+        const frag = document.createDocumentFragment();
+        const end = Math.min(state.shown + PAGE, state.filtered.length);
+        for (let i = state.shown; i < end; i++) frag.appendChild(cardEl(state.filtered[i], i));
+        $('grid').appendChild(frag);
+        state.shown = end;
+      }
+
+      new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting && state.shown < state.filtered.length) renderMore();
+        },
+        { rootMargin: '1200px' }
+      ).observe($('sentinel'));
+
+      function repaint(slug) {
+        const el = document.querySelector(`.card[data-slug="${CSS.escape(slug)}"]`);
+        const c = state.cards.find((x) => x.slug === slug);
+        if (el && c) paintCard(el, c);
+        updateCount();
+        if (state.current >= 0 && state.filtered[state.current].slug === slug) paintLightbox();
+      }
+
+      async function toggleMark(c) {
+        try {
+          if (state.marks[c.slug]) {
+            await api('/api/unmark', { slug: c.slug });
+            delete state.marks[c.slug];
+          } else {
+            const { entry } = await api('/api/mark', {
+              slug: c.slug,
+              sha256: c.image.sha256,
+              cloudinary_version: c.cloudinary_version,
+              note: '',
+            });
+            state.marks[c.slug] = entry;
+          }
+        } catch (error) {
+          alert(error.message);
+        }
+        repaint(c.slug);
+      }
+
+      async function saveNote(c, note) {
+        if (!state.marks[c.slug] || state.marks[c.slug].note === note.trim()) return;
+        try {
+          const { entry } = await api('/api/note', { slug: c.slug, note });
+          state.marks[c.slug] = entry;
+        } catch (error) {
+          alert(error.message);
+        }
+        repaint(c.slug);
+      }
+
+      $('grid').addEventListener('click', (e) => {
+        const el = e.target.closest('.card');
+        if (!el) return;
+        const c = state.filtered[Number(el.dataset.index)];
+        if (e.target.closest('.expand')) return openLightbox(Number(el.dataset.index));
+        if (e.target.closest('.thumb')) toggleMark(c);
+      });
+      $('grid').addEventListener('change', (e) => {
+        if (!e.target.matches('input.note')) return;
+        const el = e.target.closest('.card');
+        saveNote(state.filtered[Number(el.dataset.index)], e.target.value);
+      });
+      $('grid').addEventListener('keydown', (e) => {
+        if (e.target.matches('input.note') && e.key === 'Enter') e.target.blur();
+      });
+
+      // --- Lightbox ---
+
+      async function openLightbox(i) {
+        state.current = i;
+        const c = state.filtered[i];
+        $('lbImg').src = fullSrc(c);
+        $('lbName').textContent = c.friendly_name;
+        const bits = [years(c), c.category && titleCase(c.category)];
+        if (c.deck) bits.push(`${c.deck.name} deck (${c.factory_state})`);
+        else bits.push('catalogue');
+        $('lbSub').textContent = bits.filter(Boolean).join(' · ');
+        $('lbDesc').textContent = c.description || '—';
+        $('lbPrompt').textContent = '…';
+        $('lbPromptSrc').textContent = '';
+        const updated = c.updated_at ? new Date(c.updated_at).toLocaleString() : 'unknown';
+        $('lbImage').textContent =
+          `${c.slug} · ${c.image.kind}${c.image.file ? ` · ${c.image.file}` : ''}` +
+          `${c.public_id ? ` · ${c.public_id}` : ''} · updated ${updated} (${c.updated_from})`;
+        paintLightbox();
+        if (!$('lightbox').open) $('lightbox').showModal();
+        try {
+          const detail = await api(`/api/card/${enc(c.slug)}`);
+          if (state.current !== i) return;
+          $('lbPrompt').textContent = detail.prompt
+            ? detail.prompt.image_prompt
+            : 'No prompt on file.';
+          $('lbPromptSrc').textContent = detail.prompt ? detail.prompt.source : '';
+        } catch (error) {
+          $('lbPrompt').textContent = error.message;
+        }
+      }
+
+      function paintLightbox() {
+        const c = state.filtered[state.current];
+        const entry = state.marks[c.slug];
+        $('lbImgWrap').classList.toggle('marked', Boolean(entry));
+        $('lbMark').classList.toggle('on', Boolean(entry));
+        $('lbMark').textContent = entry ? 'Marked for redo (M to clear)' : 'Mark for redo (M)';
+        $('lbNoteWrap').style.display = entry ? 'block' : 'none';
+        if (document.activeElement !== $('lbNote')) $('lbNote').value = entry ? entry.note : '';
+      }
+
+      const step = (d) => {
+        const next = state.current + d;
+        if (next >= 0 && next < state.filtered.length) openLightbox(next);
+      };
+      $('lbMark').onclick = () => toggleMark(state.filtered[state.current]);
+      $('lbPrev').onclick = () => step(-1);
+      $('lbNext').onclick = () => step(1);
+      $('lbClose').onclick = () => $('lightbox').close();
+      $('lbNote').addEventListener('change', (e) =>
+        saveNote(state.filtered[state.current], e.target.value)
+      );
+      $('lightbox').addEventListener('close', () => {
+        state.current = -1;
+        $('lbImg').removeAttribute('src');
+      });
+      $('lightbox').addEventListener('click', (e) => {
+        if (e.target === $('lightbox')) $('lightbox').close();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (!$('lightbox').open || e.target.matches('textarea, input')) return;
+        if (e.key === 'ArrowLeft') step(-1);
+        else if (e.key === 'ArrowRight') step(1);
+        else if (e.key === 'm' || e.key === 'M') toggleMark(state.filtered[state.current]);
+      });
+
+      // --- Filters and refresh ---
+
+      $('source').onchange = () => {
+        buildGroupSelect();
+        applyFilters();
+      };
+      $('group').onchange = applyFilters;
+      $('markedOnly').onchange = applyFilters;
+      let searchTimer;
+      $('search').oninput = () => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(applyFilters, 150);
+      };
+      $('refresh').onclick = async () => {
+        $('refresh').disabled = true;
+        $('refresh').textContent = 'Refreshing…';
+        try {
+          load(await api('/api/refresh', {}));
+        } catch (error) {
+          alert(error.message);
+        }
+        $('refresh').disabled = false;
+        $('refresh').textContent = 'Refresh';
+      };
+
+      api('/api/cards').then(load, (error) => {
+        $('empty').style.display = 'block';
+        $('empty').textContent = `Could not load cards: ${error.message}`;
+      });
+    </script>
+  </body>
+</html>
