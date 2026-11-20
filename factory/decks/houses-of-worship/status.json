@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T14:34:30.422Z",
+  "updated_at": "2026-11-20T14:37:38.355Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-20T14:34:30.422Z"
     },
     "sagrada-familia-begun": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4ed33a54f2ad7bcf05264c917a3c8c4ef576c7be364be19984740dae23bec4ea",
+      "updated_at": "2026-11-20T14:37:38.355Z"
     },
     "salt-lake-temple-dedicated": {
       "state": "pending",
