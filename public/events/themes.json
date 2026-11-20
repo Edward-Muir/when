@@ -21550,5 +21550,313 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "eridu-settled-sumer",
+    "friendly_name": "Eridu Is Settled",
+    "year": -5400,
+    "category": "migration",
+    "description": "Farmers settled the marshy southern plain at Eridu, which Sumerians later remembered as the oldest city of their land.",
+    "difficulty": "hard",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eridu-settled-sumer_iz3rr3?_a=BAMAMikS0",
+    "color": "#453222",
+    "text_color": "light"
+  },
+  {
+    "name": "uruk-first-city-walled",
+    "friendly_name": "Uruk, the First City",
+    "year": -3500,
+    "category": "empires",
+    "description": "Uruk grew into a walled urban centre with great temples and thousands of residents, the largest settlement of its day.",
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ],
+    "year_end": -3100,
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/uruk-first-city-walled_w2h7jn?_a=BAMAMikS0",
+    "color": "#7f634c",
+    "text_color": "light"
+  },
+  {
+    "name": "cuneiform-writing-emerges",
+    "friendly_name": "Cuneiform Writing Emerges",
+    "year": -3200,
+    "category": "writing",
+    "description": "Scribes pressed wedge-shaped marks into wet clay tablets to record grain, beer and temple goods, the first writing.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuneiform-writing-emerges_5vkyl9?_a=BAMAMikS0",
+    "color": "#261f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "royal-tombs-of-ur",
+    "friendly_name": "The Royal Tombs of Ur",
+    "year": -2600,
+    "category": "architecture",
+    "description": "Rulers of a Sumerian city were buried with lyres, gold headdresses and attendants in richly furnished underground tombs.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "year_end": -2450,
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/royal-tombs-of-ur_th476a?_a=BAMAMikS0",
+    "color": "#2b1d17",
+    "text_color": "light"
+  },
+  {
+    "name": "urukagina-reforms-lagash",
+    "friendly_name": "Urukagina's Reforms at Lagash",
+    "year": -2350,
+    "category": "law",
+    "description": "A Sumerian king curbed corrupt officials and protected widows and the poor in what is often called the first recorded reform.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/urukagina-reforms-lagash_1jduai?_a=BAMAMikS0",
+    "color": "#2c1d18",
+    "text_color": "light"
+  },
+  {
+    "name": "enheduanna-hymns-inanna",
+    "friendly_name": "Enheduanna Writes Her Hymns",
+    "year": -2300,
+    "category": "writing",
+    "description": "A priestess and daughter of a king composed hymns to the goddess Inanna, becoming the first author known by name.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/enheduanna-hymns-inanna_nk7tam?_a=BAMAMikS0",
+    "color": "#2c2425",
+    "text_color": "light"
+  },
+  {
+    "name": "naram-sin-victory-stele",
+    "friendly_name": "Naram-Sin's Victory Stele",
+    "year": -2254,
+    "category": "art",
+    "description": "A king showed himself climbing a mountain over fallen enemies and took the title King of the Four Quarters.",
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/naram-sin-victory-stele_1cgrif?_a=BAMAMikS0",
+    "color": "#2a1e1b",
+    "text_color": "light"
+  },
+  {
+    "name": "elamites-sack-ur",
+    "friendly_name": "Elamites Sack Ur",
+    "year": -2004,
+    "category": "empires",
+    "description": "Raiders from the east captured the city and carried off its king, ending the last great Sumerian dynasty.",
+    "difficulty": "hard",
+    "regions": [
+      "Iran",
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/elamites-sack-ur_l1b6rh?_a=BAMAMikS0",
+    "color": "#36261c",
+    "text_color": "light"
+  },
+  {
+    "name": "amorite-dynasty-babylon",
+    "friendly_name": "An Amorite Dynasty Takes Babylon",
+    "year": -1894,
+    "category": "empires",
+    "description": "A chieftain founded a ruling house in a small river town that would grow into the most famous city of Mesopotamia.",
+    "difficulty": "medium",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amorite-dynasty-babylon_017w5i?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "plimpton-322-tablet",
+    "friendly_name": "Plimpton 322 Is Inscribed",
+    "year": -1800,
+    "category": "science",
+    "description": "A clay tablet lists number sets that match right triangles, showing advanced mathematics long before the Greeks.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plimpton-322-tablet_deqemp?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "code-of-hammurabi-carved",
+    "friendly_name": "The Code of Hammurabi Is Carved",
+    "year": -1754,
+    "category": "law",
+    "description": "Nearly three hundred laws, including an eye for an eye, were inscribed on a black stone pillar for all to read.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/code-of-hammurabi-carved_dj2032?_a=BAMAMikS0",
+    "color": "#26201d",
+    "text_color": "light"
+  },
+  {
+    "name": "hittites-sack-babylon",
+    "friendly_name": "Hittites Sack Babylon",
+    "year": -1595,
+    "category": "warfare",
+    "description": "A raiding army from Anatolia plundered the capital and carried off the statue of its chief god, ending its famous dynasty.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq",
+      "Turkey",
+      "Middle East & North Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hittites-sack-babylon_w3lx86?_a=BAMAMikS0",
+    "color": "#2e1f15",
+    "text_color": "light"
+  },
+  {
+    "name": "ashur-uballit-frees-assyria",
+    "friendly_name": "Ashur-uballit I Frees Assyria",
+    "year": -1365,
+    "category": "empires",
+    "description": "An Assyrian king wrote to the pharaoh as an equal and freed his city from Mitanni overlordship, starting an empire.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashur-uballit-frees-assyria_9ievvb?_a=BAMAMikS0",
+    "color": "#2a1e18",
+    "text_color": "light"
+  },
+  {
+    "name": "gilgamesh-epic-standard-version",
+    "friendly_name": "Gilgamesh Epic Takes Final Form",
+    "year": -1100,
+    "category": "writing",
+    "description": "A scribe gathered older Sumerian tales of a king seeking immortality into the long poem that includes a great flood.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gilgamesh-epic-standard-version_sv8emv?_a=BAMAMikS0",
+    "color": "#361e11",
+    "text_color": "light"
+  },
+  {
+    "name": "ashurnasirpal-builds-nimrud",
+    "friendly_name": "Ashurnasirpal II Builds Nimrud",
+    "year": -879,
+    "category": "architecture",
+    "description": "An Assyrian king moved his capital to Kalhu and celebrated with a feast for some seventy thousand guests.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashurnasirpal-builds-nimrud_v7l85r?_a=BAMAMikS0",
+    "color": "#3d281f",
+    "text_color": "light"
+  },
+  {
+    "name": "babylonian-astronomical-diaries",
+    "friendly_name": "Babylon Starts Its Sky Diaries",
+    "year": -747,
+    "category": "science",
+    "description": "Priests of Babylon began systematic records of the heavens that were kept for centuries and used by later scholars.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/babylonian-astronomical-diaries_7i8cwg?_a=BAMAMikS0",
+    "color": "#261f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "tiglath-pileser-iii-reforms",
+    "friendly_name": "Tiglath-Pileser III Revives Assyria",
+    "year": -745,
+    "category": "empires",
+    "description": "A usurper seized the throne, reformed the army and provinces and launched a new age of Assyrian conquest.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiglath-pileser-iii-reforms_dwg8cg?_a=BAMAMikS0",
+    "color": "#2d1c1a",
+    "text_color": "light"
+  },
+  {
+    "name": "sennacherib-palace-nineveh",
+    "friendly_name": "Sennacherib's Palace at Nineveh",
+    "year": -691,
+    "category": "architecture",
+    "description": "An Assyrian king boasted that his Palace Without Rival was complete, with an aqueduct and gardens.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sennacherib-palace-nineveh_ofne8e?_a=BAMAMikS0",
+    "color": "#483421",
+    "text_color": "light"
+  },
+  {
+    "name": "ashurbanipal-takes-throne",
+    "friendly_name": "Ashurbanipal Takes the Throne",
+    "year": -669,
+    "category": "empires",
+    "description": "The last great Assyrian king succeeded his father, trained as a scribe as well as a warrior, as the empire reached its widest extent.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashurbanipal-takes-throne_k0s0c5?_a=BAMAMikS0",
+    "color": "#271f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "nebuchadnezzar-wins-carchemish",
+    "friendly_name": "Nebuchadnezzar Wins at Carchemish",
+    "year": -605,
+    "category": "warfare",
+    "description": "A Babylonian prince crushed the Egyptian and Assyrian remnant on the Euphrates, giving Babylon mastery of the Near East.",
+    "difficulty": "easy",
+    "regions": [
+      "Egypt",
+      "Iraq",
+      "Turkey",
+      "Middle East & North Africa"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nebuchadnezzar-wins-carchemish_cdzpgk?_a=BAMAMikS0",
+    "color": "#483123",
+    "text_color": "light"
   }
 ]
