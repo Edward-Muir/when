@@ -3,7 +3,7 @@
   "name": "Iron Curtain",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T06:12:55.047Z",
-  "updated_at": "2026-11-20T07:14:47.019Z",
+  "updated_at": "2026-11-20T07:17:12.018Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-20T07:14:47.019Z"
     },
     "ogaden-war-somalia-ethiopia": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "408c1f7944a98001ceeb568ff327a9df856cb87b27e14b58a195fbad12d62a08",
+      "updated_at": "2026-11-20T07:17:12.018Z"
     },
     "poland-martial-law-declared": {
       "state": "pending",
