@@ -1,0 +1,256 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "karnak-temple-complex-begun",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "abu-simbel-temples-carved",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 2,
+      "decision": "reuse",
+      "slug": "solomons-temple",
+      "why": "Same building and same event as the existing card (existing year -957 stands)."
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "parthenon-dedicated-athena",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 6,
+      "decision": "reuse",
+      "slug": "pantheon-rome-built",
+      "why": "Same building and same event as the existing card (existing year 126 stands)."
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "prophets-mosque-medina-built",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 8,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 9,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 10,
+      "decision": "reuse",
+      "slug": "nara-todaiji",
+      "why": "Same building and same event as the existing card (existing year 752 stands)."
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "great-mosque-cordoba-begun",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "borobudur-construction",
+      "why": "Same building and same event as the existing card (existing year 800 stands)."
+    },
+    {
+      "beat": 13,
+      "decision": "reuse",
+      "slug": "fatimid-al-azhar-mosque",
+      "why": "Same building and same event as the existing card (existing year 970 stands)."
+    },
+    {
+      "beat": 14,
+      "decision": "reuse",
+      "slug": "tanjore-temple",
+      "why": "Same building and same event as the existing card (existing year 1010 stands)."
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "westminster-abbey-consecrated",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "notre-dame-construction",
+      "why": "Same building and same event as the existing card (existing year 1163 stands)."
+    },
+    {
+      "beat": 18,
+      "decision": "reuse",
+      "slug": "gothic-cathedral-construction",
+      "why": "Same building and same event as the existing card (existing year 1194 stands)."
+    },
+    {
+      "beat": 19,
+      "decision": "reuse",
+      "slug": "ethiopian-lalibela-churches",
+      "why": "Same building and same event as the existing card (existing year 1200 stands)."
+    },
+    {
+      "beat": 20,
+      "decision": "reuse",
+      "slug": "cologne-cathedral-begun",
+      "why": "Same building and same event as the existing card (existing year 1248 stands)."
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "florence-cathedral-begun",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 22,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 24,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 25,
+      "decision": "reuse",
+      "slug": "brunelleschi-dome",
+      "why": "Same building and same event as the existing card (existing year 1436 stands)."
+    },
+    {
+      "beat": 26,
+      "decision": "reuse",
+      "slug": "st-peters-basilica-begins",
+      "why": "Same building and same event as the existing card (existing year 1506 stands)."
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "st-basils-cathedral-completed",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 28,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 29,
+      "decision": "reuse",
+      "slug": "istanbul-blue-mosque",
+      "why": "Same building and same event as the existing card (existing year 1616 stands)."
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "st-pauls-cathedral-completed",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "sagrada-familia-begun",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "salt-lake-temple-dedicated",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "great-mosque-djenne-rebuilt",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 34,
+      "decision": "reuse",
+      "slug": "notre-dame-du-haut",
+      "why": "Same building and same event as the existing card (existing year 1955 stands)."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "coventry-cathedral-consecrated",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 36,
+      "decision": "cut",
+      "slug": null,
+      "why": "Cut to reach 30: weaker or crowding the timeline."
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "hassan-ii-mosque-inaugurated",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 38,
+      "decision": "new",
+      "slug": "sheikh-zayed-grand-mosque-opens",
+      "why": "No existing card for this event in this year."
+    },
+    {
+      "beat": 39,
+      "decision": "new",
+      "slug": "notre-dame-paris-reopens",
+      "why": "No existing card for this event in this year."
+    }
+  ],
+  "gates": "PASS  size 30                (want exactly 30)\n  INFO  bins 7/8               (advisory, 6+ is spread)\n  PASS  band 0 9               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in 1194-1200 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (schools)     (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against87 earlier themes:\n        1  schools                fatimid-al-azhar-mosque\n        1  faiths-of-asia         nara-todaiji\n        1  ottomans               istanbul-blue-mosque\n        1  indonesia              borobudur-construction",
+  "footholds": [
+    "abu-simbel-temples-carved",
+    "solomons-temple",
+    "parthenon-dedicated-athena",
+    "pantheon-rome-built",
+    "notre-dame-construction",
+    "st-basils-cathedral-completed",
+    "sagrada-familia-begun",
+    "notre-dame-paris-reopens"
+  ]
+}
