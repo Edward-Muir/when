@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T02:07:20.289Z",
+  "updated_at": "2026-11-20T03:09:07.483Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-20T02:07:20.289Z"
     },
     "code-of-hammurabi-carved": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4ab4ff7b49f19d2fcb6dda94060de3b6e80d142ba64450c76dd01d097ac1106b",
+      "updated_at": "2026-11-20T03:09:07.483Z"
     },
     "hittites-sack-babylon": {
       "state": "pending",
