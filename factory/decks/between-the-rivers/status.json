@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:14:50.658Z",
+  "updated_at": "2026-11-20T01:17:27.153Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-20T01:14:50.658Z"
     },
     "royal-tombs-of-ur": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "656706c9a8e2b7fdc4ca80466d940b6d60f780fd256cf34653642207cfed0ba0",
+      "updated_at": "2026-11-20T01:17:27.153Z"
     },
     "urukagina-reforms-lagash": {
       "state": "pending",
