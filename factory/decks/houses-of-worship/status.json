@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T18:07:41.445Z",
+  "updated_at": "2026-11-20T19:09:35.722Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,11 +100,11 @@
       "updated_at": "2026-11-20T18:07:41.290Z"
     },
     "coventry-cathedral-consecrated": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Legible painted lettering (FATHER FORGIVE) on the low wall at lower left of the ruins. Repaint that wall without any text.",
-      "sha256": "20c966ed843bd63ca759dfa3619bb45b61ac187055ad34d244f376b7b80feed9",
-      "updated_at": "2026-11-20T18:07:41.328Z"
+      "sha256": "10dc5bace67fa8559f14c0be927b6e883d27ac3ed088d5ed88f7fe23d2e1d9a6",
+      "updated_at": "2026-11-20T19:09:35.722Z"
     },
     "hassan-ii-mosque-inaugurated": {
       "state": "qc-pass",
