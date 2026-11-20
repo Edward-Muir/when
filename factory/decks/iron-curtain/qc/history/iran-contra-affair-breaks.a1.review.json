@@ -1,0 +1,15 @@
+{
+  "slug": "iran-contra-affair-breaks",
+  "description": "A painterly night scene. A large four-engine cargo aircraft sits on a wet tarmac under floodlights, with a few figures and a forklift nearby. In the foreground an open wooden crate, stencilled with military-style markings, holds a bomb-like cylindrical munition in straw. On the left, a desk with a lamp, a candle and stacks of papers and ledgers feeds two shredders that spill paper strips into a bin.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The wooden crate in the foreground has stencilled military-style lettering painted into its side and lid. The art should carry no painted text, so the crate markings need to be removed or redrawn without lettering."
+}

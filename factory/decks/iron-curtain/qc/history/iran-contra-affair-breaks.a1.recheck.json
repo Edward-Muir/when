@@ -1,0 +1,15 @@
+{
+  "slug": "iran-contra-affair-breaks",
+  "description": "A dark painterly office at night with a desk, lamp, candle, ledgers and papers feeding two paper shredders that spill strips. Through a large window is a wet airfield with a four-engine cargo plane, a forklift, a few figures, and an open wooden crate holding a missile in straw. The crate side carries stencilled lettering reading roughly MILITARY MILITARY and a code like SGN-71.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The crate has legible stencilled lettering (MILITARY MILITARY and a code of letters and numbers). Redraw the crate with no markings."
+}

@@ -3,7 +3,7 @@
   "name": "Iron Curtain",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T06:12:55.047Z",
-  "updated_at": "2026-11-20T07:24:34.229Z",
+  "updated_at": "2026-11-20T08:07:17.192Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,53 +16,53 @@
   ],
   "slugs": {
     "kitchen-debate-nixon-khrushchev": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e8c8a9abfa920fe1495d9a30e6df6ee5d3ac3d6fa4d92f957f8b318c8316b2f5",
-      "updated_at": "2026-11-20T07:09:53.547Z"
+      "updated_at": "2026-11-20T08:07:16.978Z"
     },
     "kennedy-ich-bin-ein-berliner": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6cffb04a820e386bc3300d42749b9e437979d6a8d3749dbb36425452633bfe58",
-      "updated_at": "2026-11-20T07:12:10.475Z"
+      "updated_at": "2026-11-20T08:07:17.017Z"
     },
     "us-cambodia-incursion": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The right-hand soldier's chest tape shows legible painted letters (ARVN). Regenerate with blank or unreadable uniform tapes and patches.",
       "sha256": "3a2a6b39fe7c3daeea543e18709025ccd1ea85298ff116f588395b37603d9b36",
-      "updated_at": "2026-11-20T07:14:47.019Z"
+      "updated_at": "2026-11-20T08:07:17.049Z"
     },
     "ogaden-war-somalia-ethiopia": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "408c1f7944a98001ceeb568ff327a9df856cb87b27e14b58a195fbad12d62a08",
-      "updated_at": "2026-11-20T07:17:12.018Z"
+      "updated_at": "2026-11-20T08:07:17.082Z"
     },
     "poland-martial-law-declared": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Two shop signs above the shuttered storefront have painted letters (upper sign reads roughly 'PU RO...', lower sign an 'M'). Repaint the signs blank, or leave them out of the scene, so no lettering shows.",
       "sha256": "9704b1d1a8c491dfe4496e4c57e84c7b3b772a05f5f228aca4d68934b64e742d",
-      "updated_at": "2026-11-20T07:19:40.102Z"
+      "updated_at": "2026-11-20T08:07:17.117Z"
     },
     "iran-contra-affair-breaks": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The crate has legible stencilled lettering (MILITARY MILITARY and a code of letters and numbers). Redraw the crate with no markings.",
       "sha256": "5ae041c6ba1570f07f805a00648baaec711e0305fb138a95a04b2b7d0c61b54f",
-      "updated_at": "2026-11-20T07:22:07.796Z"
+      "updated_at": "2026-11-20T08:07:17.154Z"
     },
     "reagan-tear-down-this-wall": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "318194a69d3486106083b53772e7c2a9981147ca5c2f11bfc089c46212d5931a",
-      "updated_at": "2026-11-20T07:24:34.229Z"
+      "updated_at": "2026-11-20T08:07:17.192Z"
     }
   }
 }

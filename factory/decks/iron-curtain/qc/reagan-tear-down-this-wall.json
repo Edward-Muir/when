@@ -1,0 +1,15 @@
+{
+  "slug": "reagan-tear-down-this-wall",
+  "description": "A painted scene of a large neoclassical gate with a horse-drawn chariot statue on top, set under heavy grey clouds. In the foreground, a long concrete wall with graffiti runs across the image, with a raised wooden podium behind it, draped with flags and fitted with microphones. A dense crowd of people stands on the left, with German and American flags visible. The painting fills the full square with no frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
