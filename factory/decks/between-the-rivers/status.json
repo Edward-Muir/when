@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:17:27.153Z",
+  "updated_at": "2026-11-20T01:20:36.516Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-20T01:17:27.153Z"
     },
     "urukagina-reforms-lagash": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5883e2f93757938dcfb0de8e808beab030687c1b4fa1f929d8d762079d8d269e",
+      "updated_at": "2026-11-20T01:20:36.516Z"
     },
     "enheduanna-hymns-inanna": {
       "state": "pending",
