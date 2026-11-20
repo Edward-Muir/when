@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T03:09:07.483Z",
+  "updated_at": "2026-11-20T03:11:32.405Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -93,10 +93,11 @@
       "updated_at": "2026-11-20T03:09:07.483Z"
     },
     "hittites-sack-babylon": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c55a958c57009e1cc1fb722ce8c0032c8dc4f43ed1180e67ce7f89fcd370fa99",
+      "updated_at": "2026-11-20T03:11:32.405Z"
     },
     "ashur-uballit-frees-assyria": {
       "state": "pending",
