@@ -3,7 +3,7 @@
   "name": "Iron Curtain",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T06:12:55.047Z",
-  "updated_at": "2026-11-20T07:12:10.475Z",
+  "updated_at": "2026-11-20T07:14:47.019Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-20T07:12:10.475Z"
     },
     "us-cambodia-incursion": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3a2a6b39fe7c3daeea543e18709025ccd1ea85298ff116f588395b37603d9b36",
+      "updated_at": "2026-11-20T07:14:47.019Z"
     },
     "ogaden-war-somalia-ethiopia": {
       "state": "pending",
