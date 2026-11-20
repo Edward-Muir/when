@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T15:07:06.752Z",
+  "updated_at": "2026-11-20T17:09:34.672Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-20T15:07:06.752Z"
     },
     "salt-lake-temple-dedicated": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "39c222b96e7c6886e58e31cf82e16d29ea564558c9f04f699db7be587eb31cea",
+      "updated_at": "2026-11-20T17:09:34.672Z"
     },
     "great-mosque-djenne-rebuilt": {
       "state": "pending",
