@@ -1,9 +1,9 @@
 {
   "deck": "between-the-rivers",
   "name": "Between the Rivers",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T03:30:38.502Z",
+  "updated_at": "2026-11-20T04:07:03.326Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-20T01:09:30.879Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-20T04:07:03.326Z"
     }
   ],
   "slugs": {
@@ -86,74 +90,74 @@
       "updated_at": "2026-11-20T02:07:20.289Z"
     },
     "code-of-hammurabi-carved": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4ab4ff7b49f19d2fcb6dda94060de3b6e80d142ba64450c76dd01d097ac1106b",
-      "updated_at": "2026-11-20T03:09:07.483Z"
+      "updated_at": "2026-11-20T04:07:03.010Z"
     },
     "hittites-sack-babylon": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c55a958c57009e1cc1fb722ce8c0032c8dc4f43ed1180e67ce7f89fcd370fa99",
-      "updated_at": "2026-11-20T03:11:32.405Z"
+      "updated_at": "2026-11-20T04:07:03.042Z"
     },
     "ashur-uballit-frees-assyria": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4fe6e3a48f27b0a9213238eb50c6a3c4a1c559a6a63b0fcc9ff2bf0cef3ac6ba",
-      "updated_at": "2026-11-20T03:13:56.825Z"
+      "updated_at": "2026-11-20T04:07:03.078Z"
     },
     "gilgamesh-epic-standard-version": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4c07160d9b11afc3e5397e2086ed98819f1402dcdf8b629c69a14373ebf13696",
-      "updated_at": "2026-11-20T03:16:18.888Z"
+      "updated_at": "2026-11-20T04:07:03.113Z"
     },
     "ashurnasirpal-builds-nimrud": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5ebf8affaa3568f9fbc1cd170a5cdff731423756cd16d48eb93702de442a50c0",
-      "updated_at": "2026-11-20T03:18:42.086Z"
+      "updated_at": "2026-11-20T04:07:03.145Z"
     },
     "babylonian-astronomical-diaries": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3c73679aaec990c0a0361aceefcc89aaadf0778fd950ce3f6c2fe4981d2fd806",
-      "updated_at": "2026-11-20T03:21:05.438Z"
+      "updated_at": "2026-11-20T04:07:03.179Z"
     },
     "tiglath-pileser-iii-reforms": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d5c66fe8a1550a018d90606a4535dc192c247827c5947838f1abbeef8be7d281",
-      "updated_at": "2026-11-20T03:23:28.046Z"
+      "updated_at": "2026-11-20T04:07:03.219Z"
     },
     "sennacherib-palace-nineveh": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0ae4eb5bae7986ed9f83e12882cbe2552afcea07561550f95d53d816d4336022",
-      "updated_at": "2026-11-20T03:25:51.206Z"
+      "updated_at": "2026-11-20T04:07:03.255Z"
     },
     "ashurbanipal-takes-throne": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3efb446d34f88f17c2700af329bfb0e83d0e162f1b03547101ea846c9c417ba1",
-      "updated_at": "2026-11-20T03:28:14.272Z"
+      "updated_at": "2026-11-20T04:07:03.291Z"
     },
     "nebuchadnezzar-wins-carchemish": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ace66e757787f39c880f6e37b4b44ee23eb150955ec8adebeb2f21563789e854",
-      "updated_at": "2026-11-20T03:30:38.502Z"
+      "updated_at": "2026-11-20T04:07:03.326Z"
     }
   }
 }
