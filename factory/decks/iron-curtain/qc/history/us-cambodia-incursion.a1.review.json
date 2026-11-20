@@ -1,0 +1,15 @@
+{
+  "slug": "us-cambodia-incursion",
+  "description": "Dense jungle with bamboo and tall trees. A column of boxy tracked armoured personnel carriers with a machine gun mount, and helmeted soldiers in camouflage walking along a reddish dirt track. In the foreground two soldiers in camouflage helmets and fatigues bend over a folded paper map spread on the hood of a dark vehicle. One soldier's sleeve shows a patch with the letters ARVN. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "A visible 'ARVN' lettered patch sits on the right soldier's uniform sleeve, which is painted text. The art needs regenerating without legible lettering on uniforms or patches."
+}

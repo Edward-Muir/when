@@ -1,0 +1,232 @@
+{
+ "beats": [
+  {
+   "beat": 0,
+   "decision": "reuse",
+   "slug": "churchill-iron-curtain-speech",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 1,
+   "decision": "reuse",
+   "slug": "truman-doctrine",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 2,
+   "decision": "reuse",
+   "slug": "berlin-airlift",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 3,
+   "decision": "reuse",
+   "slug": "germany-divided",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 4,
+   "decision": "reuse",
+   "slug": "korean-war-start",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 5,
+   "decision": "cut",
+   "slug": null,
+   "why": "MacArthur firing: crowded 1950s, weaker than the war itself"
+  },
+  {
+   "beat": 6,
+   "decision": "reuse",
+   "slug": "east-german-uprising",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 7,
+   "decision": "reuse",
+   "slug": "siege-of-dien-bien-phu",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 8,
+   "decision": "cut",
+   "slug": null,
+   "why": "Austria treaty: neutrality deal, weakest on scope and low fame"
+  },
+  {
+   "beat": 9,
+   "decision": "reuse",
+   "slug": "hungarian-revolution",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 10,
+   "decision": "cut",
+   "slug": null,
+   "why": "Eisenhower Doctrine: Middle East policy, low fame, not a crisis"
+  },
+  {
+   "beat": 11,
+   "decision": "cut",
+   "slug": null,
+   "why": "Berlin ultimatum: low fame, Berlin already covered by airlift and Wall"
+  },
+  {
+   "beat": 12,
+   "decision": "new",
+   "slug": "kitchen-debate-nixon-khrushchev",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 13,
+   "decision": "reuse",
+   "slug": "congo-crisis",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 14,
+   "decision": "reuse",
+   "slug": "berlin-wall-built",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 15,
+   "decision": "reuse",
+   "slug": "cuban-missile-crisis-1962",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 16,
+   "decision": "new",
+   "slug": "kennedy-ich-bin-ein-berliner",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 17,
+   "decision": "reuse",
+   "slug": "gulf-of-tonkin-resolution",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 18,
+   "decision": "reuse",
+   "slug": "vietnam-war-start",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 19,
+   "decision": "cut",
+   "slug": null,
+   "why": "Six-Day War: regional war, only loosely a proxy conflict"
+  },
+  {
+   "beat": 20,
+   "decision": "reuse",
+   "slug": "prague-spring",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 21,
+   "decision": "cut",
+   "slug": null,
+   "why": "Sino-Soviet clash: communist rivalry, belongs to Red Flags, low fame"
+  },
+  {
+   "beat": 22,
+   "decision": "new",
+   "slug": "us-cambodia-incursion",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 23,
+   "decision": "reuse",
+   "slug": "yom-kippur-war",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 24,
+   "decision": "reuse",
+   "slug": "vietnam-war-end",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 25,
+   "decision": "new",
+   "slug": "ogaden-war-somalia-ethiopia",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 26,
+   "decision": "reuse",
+   "slug": "soviet-afghanistan",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 27,
+   "decision": "reuse",
+   "slug": "solidarity-poland",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 28,
+   "decision": "new",
+   "slug": "poland-martial-law-declared",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 29,
+   "decision": "reuse",
+   "slug": "korean-air-lines-007-shot-down",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 30,
+   "decision": "new",
+   "slug": "iran-contra-affair-breaks",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 31,
+   "decision": "new",
+   "slug": "reagan-tear-down-this-wall",
+   "why": "no catalogue card for this event"
+  },
+  {
+   "beat": 32,
+   "decision": "reuse",
+   "slug": "soviet-withdrawal-afghanistan",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 33,
+   "decision": "reuse",
+   "slug": "berlin-wall-fall",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 34,
+   "decision": "reuse",
+   "slug": "german-reunification",
+   "why": "same event, same year (window start for windowed cards)"
+  },
+  {
+   "beat": 35,
+   "decision": "reuse",
+   "slug": "soviet-union-collapse",
+   "why": "same event, same year (window start for windowed cards)"
+  }
+ ],
+ "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 2/8               (advisory, 6+ is spread)\n  PASS  band 0 8               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 8 in 1956-1965 (want 10 or fewer in any 10 years)\n  PASS  shared 2 (walls)       (want 4 or fewer with any one theme)",
+ "overlap": "Overlap against 86 earlier themes:\n        2  walls                  berlin-wall-built, berlin-wall-fall\n        2  rise-up                east-german-uprising, hungarian-revolution\n        1  sieges                 siege-of-dien-bien-phu",
+ "footholds": [
+  "germany-divided",
+  "berlin-wall-built",
+  "cuban-missile-crisis-1962",
+  "vietnam-war-start",
+  "vietnam-war-end",
+  "berlin-wall-fall",
+  "german-reunification",
+  "soviet-union-collapse"
+ ]
+}
