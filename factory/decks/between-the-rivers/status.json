@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T03:16:18.888Z",
+  "updated_at": "2026-11-20T03:18:42.086Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-20T03:16:18.888Z"
     },
     "ashurnasirpal-builds-nimrud": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5ebf8affaa3568f9fbc1cd170a5cdff731423756cd16d48eb93702de442a50c0",
+      "updated_at": "2026-11-20T03:18:42.086Z"
     },
     "babylonian-astronomical-diaries": {
       "state": "pending",
