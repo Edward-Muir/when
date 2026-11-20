@@ -1,0 +1,15 @@
+{
+  "slug": "st-basils-cathedral-completed",
+  "description": "A painted view of a brick church with a cluster of colourful onion domes, one tall central tower wrapped in scaffolding with small figures on it. Dark stormy sky, a red brick Kremlin-style wall and a clock tower on the right, and figures in dark coats and some with pole weapons on a cobbled square in the foreground. Oil-painting style, filling the whole image edge to edge with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T14:37:38.355Z",
+  "updated_at": "2026-11-20T15:07:06.752Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "karnak-temple-complex-begun": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "71f30dba1cd7c8bd786c375638393f356098ee90975c2f053a1e2b745b9a9b7f",
-      "updated_at": "2026-11-20T14:09:22.529Z"
+      "updated_at": "2026-11-20T15:07:06.439Z"
     },
     "abu-simbel-temples-carved": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5fdb984316f9a9e4d8ecd927beda41cee5ae71fb8914e051c14dcf52b113762c",
-      "updated_at": "2026-11-20T14:12:23.972Z"
+      "updated_at": "2026-11-20T15:07:06.474Z"
     },
     "parthenon-dedicated-athena": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c6f0db0e274fae09c96c7929cbcc0e487c9b2b4e5e88fe1b0566a1f5c4ed9012",
-      "updated_at": "2026-11-20T14:15:52.337Z"
+      "updated_at": "2026-11-20T15:07:06.505Z"
     },
     "prophets-mosque-medina-built": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "252967d80450737194e2a77751d34dcbff68744b9e760fd88faf4ad05b0df752",
-      "updated_at": "2026-11-20T14:18:56.146Z"
+      "updated_at": "2026-11-20T15:07:06.538Z"
     },
     "great-mosque-cordoba-begun": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c502ac40a8f94677d28296fd3a124e2ad7f80eb734dd379219b61c534d135a37",
-      "updated_at": "2026-11-20T14:22:01.628Z"
+      "updated_at": "2026-11-20T15:07:06.569Z"
     },
     "westminster-abbey-consecrated": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0e5509daa450e56b360e5d597d077d2eb83a94143aafe2a272a0485c58cb58d2",
-      "updated_at": "2026-11-20T14:25:06.715Z"
+      "updated_at": "2026-11-20T15:07:06.606Z"
     },
     "florence-cathedral-begun": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1059851a502429f7e37d0e539ac628cc3eb93630445101ebee7d17bde74af29e",
-      "updated_at": "2026-11-20T14:28:16.537Z"
+      "updated_at": "2026-11-20T15:07:06.644Z"
     },
     "st-basils-cathedral-completed": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "cbfbfc31f758596b122a3dd4af38ef081b2ec9b4350dfe46c99ee57d81d4d2f4",
-      "updated_at": "2026-11-20T14:31:23.883Z"
+      "updated_at": "2026-11-20T15:07:06.681Z"
     },
     "st-pauls-cathedral-completed": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e7897e74e24064232dd627a1e8bfc9b3efe539251e112bd996fda4ac187d6b94",
-      "updated_at": "2026-11-20T14:34:30.422Z"
+      "updated_at": "2026-11-20T15:07:06.716Z"
     },
     "sagrada-familia-begun": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "4ed33a54f2ad7bcf05264c917a3c8c4ef576c7be364be19984740dae23bec4ea",
-      "updated_at": "2026-11-20T14:37:38.355Z"
+      "updated_at": "2026-11-20T15:07:06.752Z"
     },
     "salt-lake-temple-dedicated": {
       "state": "pending",
