@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:32:45.475Z",
+  "updated_at": "2026-11-20T01:35:41.434Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-20T01:32:45.475Z"
     },
     "plimpton-322-tablet": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ae9697d0bec8896012d6ed2c6e3ba6fb4bdf774fce8fe4a5a9340dc32c319e00",
+      "updated_at": "2026-11-20T01:35:41.434Z"
     },
     "code-of-hammurabi-carved": {
       "state": "pending",
