@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T14:12:23.972Z",
+  "updated_at": "2026-11-20T14:15:52.337Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-20T14:12:23.972Z"
     },
     "parthenon-dedicated-athena": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c6f0db0e274fae09c96c7929cbcc0e487c9b2b4e5e88fe1b0566a1f5c4ed9012",
+      "updated_at": "2026-11-20T14:15:52.337Z"
     },
     "prophets-mosque-medina-built": {
       "state": "pending",
