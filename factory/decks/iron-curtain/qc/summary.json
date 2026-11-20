@@ -14,11 +14,11 @@
     "description": "A painted scene of a dense crowd of men in suits, overcoats and hats, many with raised hands and small flags, filling the lower half. Behind them stands a stately stone building with a balcony holding a lectern with several microphones. An American flag hangs on one side of the balcony and a white and red banner with a black bear emblem on the other. Rows of windows hold onlookers, and the scene looks mid-20th century."
   },
   "us-cambodia-incursion": {
-    "state": "qc-fail",
-    "reason": "The right-hand soldier's chest tape shows legible painted letters (ARVN). Regenerate with blank or unreadable uniform tapes and patches.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A tracked armoured personnel carrier with a white star leads a column down a red dirt track through dense jungle and bamboo, with infantry walking alongside. In the foreground two helmeted soldiers in camouflage study a paper map on a vehicle hood. The right soldier has a chest name tape with legible letters reading ARVN. The painting fills the frame with no border."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted scene in dense jungle. Two soldiers in olive fatigues and camouflage helmets lean over a folded paper map on the hood of a vehicle, one pointing. Behind them an armoured personnel carrier with a machine-gun mount and bundled gear sits on a dirt track, with more soldiers carrying rifles in the undergrowth. Banana plants and vines fill the background; the painting runs edge to edge with no frame."
   },
   "ogaden-war-somalia-ethiopia": {
     "state": "qc-pass",
@@ -28,18 +28,18 @@
     "description": "A tank with a long gun barrel and a machine gun on its turret rolls through a dusty, dry desert with scrubby bushes and flat-topped hills behind it. Smoke rises in the background and dust is kicked up around its tracks. On the right, several uniformed soldiers in olive fatigues and helmets carry AK-style rifles and walk toward the viewer. On the left, the tail of a transport aircraft opens, and more soldiers are unloading wooden crates and stacking olive ammunition boxes on the sand. A tiny coloured mark sits in the bottom right corner."
   },
   "poland-martial-law-declared": {
-    "state": "qc-fail",
-    "reason": "Two shop signs above the shuttered storefront have painted letters (upper sign reads roughly 'PU RO...', lower sign an 'M'). Repaint the signs blank, or leave them out of the scene, so no lettering shows.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dim snowy city street at night. Soldiers in greatcoats and helmets warm their hands at a burning barrel beside an armoured personnel carrier, with civilians watching from a doorway. Trolley wires hang overhead and the buildings are old and grimy. Two shop signs above the shutters carry painted letter shapes, such as a PU... group on the upper sign and an M on the lower."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painterly, dim winter street with snow on the ground. A dark armoured personnel carrier with a gun turret sits at right, smoke drifting from it. Four soldiers in long greatcoats and helmets gather round a burning oil drum for warmth, and a fifth with a rifle walks on the left. On the left, a few women in shawls stand in a dark doorway of an old stone building with shuttered shopfronts. No visible text or frame."
   },
   "iran-contra-affair-breaks": {
-    "state": "qc-fail",
-    "reason": "The crate has legible stencilled lettering (MILITARY MILITARY and a code of letters and numbers). Redraw the crate with no markings.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark painterly office at night with a desk, lamp, candle, ledgers and papers feeding two paper shredders that spill strips. Through a large window is a wet airfield with a four-engine cargo plane, a forklift, a few figures, and an open wooden crate holding a missile in straw. The crate side carries stencilled lettering reading roughly MILITARY MILITARY and a code like SGN-71."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A dark, painterly night scene. In the foreground on a wooden desk, a hand feeds a sheet of paper into a grey shredder that spills long white paper strips; a tall stack of binders and folders sits beside it under a brass desk lamp. Through a large window, a grey military cargo plane with its rear ramp open stands on a wet tarmac, with a wooden crate banded in metal straps and a cart of missiles in front, and two dark figures walking across the apron."
   },
   "reagan-tear-down-this-wall": {
     "state": "qc-pass",

@@ -1,9 +1,9 @@
 {
   "deck": "iron-curtain",
   "name": "Iron Curtain",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-20T06:12:55.047Z",
-  "updated_at": "2026-11-20T09:13:54.653Z",
+  "updated_at": "2026-11-20T10:07:01.658Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-20T07:09:53.547Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-20T10:07:01.658Z"
     }
   ],
   "slugs": {
@@ -30,11 +34,11 @@
       "updated_at": "2026-11-20T08:07:17.017Z"
     },
     "us-cambodia-incursion": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The right-hand soldier's chest tape shows legible painted letters (ARVN). Regenerate with blank or unreadable uniform tapes and patches.",
+      "reason": null,
       "sha256": "2b8d0c2ba1b2d5423fefabe29d2b69279449f63e449d86cb5597f8ad99392199",
-      "updated_at": "2026-11-20T09:09:08.663Z"
+      "updated_at": "2026-11-20T10:07:01.589Z"
     },
     "ogaden-war-somalia-ethiopia": {
       "state": "qc-pass",
@@ -44,18 +48,18 @@
       "updated_at": "2026-11-20T08:07:17.082Z"
     },
     "poland-martial-law-declared": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Two shop signs above the shuttered storefront have painted letters (upper sign reads roughly 'PU RO...', lower sign an 'M'). Repaint the signs blank, or leave them out of the scene, so no lettering shows.",
+      "reason": null,
       "sha256": "3686404923cc8949397a27336c51415544a691cbe38994d49f859015c4ae194d",
-      "updated_at": "2026-11-20T09:11:31.803Z"
+      "updated_at": "2026-11-20T10:07:01.625Z"
     },
     "iran-contra-affair-breaks": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The crate has legible stencilled lettering (MILITARY MILITARY and a code of letters and numbers). Redraw the crate with no markings.",
+      "reason": null,
       "sha256": "db6618d4db2a9c80cc30bcac3931b01e08b854a51839d4541bd9290e5a2ee4b8",
-      "updated_at": "2026-11-20T09:13:54.653Z"
+      "updated_at": "2026-11-20T10:07:01.658Z"
     },
     "reagan-tear-down-this-wall": {
       "state": "qc-pass",
