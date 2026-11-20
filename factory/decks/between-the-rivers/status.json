@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:26:46.928Z",
+  "updated_at": "2026-11-20T01:29:43.484Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-20T01:26:46.928Z"
     },
     "elamites-sack-ur": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "5c805efe3b4818a4bc1dd42f63932fd4a0961443e6a5f39b2bef50b090933cc4",
+      "updated_at": "2026-11-20T01:29:43.484Z"
     },
     "amorite-dynasty-babylon": {
       "state": "pending",
