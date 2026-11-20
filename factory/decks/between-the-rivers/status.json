@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T03:11:32.405Z",
+  "updated_at": "2026-11-20T03:13:56.825Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-20T03:11:32.405Z"
     },
     "ashur-uballit-frees-assyria": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4fe6e3a48f27b0a9213238eb50c6a3c4a1c559a6a63b0fcc9ff2bf0cef3ac6ba",
+      "updated_at": "2026-11-20T03:13:56.825Z"
     },
     "gilgamesh-epic-standard-version": {
       "state": "pending",
