@@ -21557,7 +21557,10 @@
     "year": 1848,
     "category": "revolution",
     "description": "Chartists massed south of the Thames to march a vast petition for the vote to Parliament, but were turned back by the authorities.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "trafalgar-square-bloody-sunday",
@@ -21565,7 +21568,10 @@
     "year": 1887,
     "category": "revolution",
     "description": "Unemployed workers and radicals marching on London's central square were broken up by police and soldiers.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "coxeys-army-march-washington",
@@ -21573,7 +21579,10 @@
     "year": 1894,
     "category": "revolution",
     "description": "Jobless men led by an Ohio businessman marched to the capital to demand public works jobs during a deep depression.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "woman-suffrage-procession-washington",
@@ -21581,7 +21590,10 @@
     "year": 1913,
     "category": "law",
     "description": "Thousands of women marched down Pennsylvania Avenue for the vote on the eve of a presidential inauguration, facing hostile crowds.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "petrograd-womens-day-protest",
@@ -21589,7 +21601,11 @@
     "year": 1917,
     "category": "revolution",
     "description": "Women textile workers took to the streets for bread and peace, and the unrest grew until the tsar fell.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "first-national-hunger-march",
@@ -21597,7 +21613,10 @@
     "year": 1922,
     "category": "revolution",
     "description": "Unemployed men from across Britain walked to London to demand work and relief, starting a tradition of long marches.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "sacco-vanzetti-worldwide-protests",
@@ -21605,7 +21624,11 @@
     "year": 1927,
     "category": "law",
     "description": "Demonstrations in cities across the world demanded clemency for two Italian-born anarchists facing execution in Massachusetts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "bonus-army-march-washington",
@@ -21613,7 +21636,10 @@
     "year": 1932,
     "category": "revolution",
     "description": "Thousands of jobless First World War veterans camped in the capital to demand early payment of their service bonuses.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "jarrow-march",
@@ -21621,7 +21647,10 @@
     "year": 1936,
     "category": "revolution",
     "description": "Two hundred unemployed shipyard men walked from a northern English town to London carrying a petition for work.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "rosenstrasse-protest-berlin",
@@ -21629,7 +21658,10 @@
     "year": 1943,
     "category": "revolution",
     "description": "Non-Jewish wives gathered outside a Berlin building for days until their detained Jewish husbands were released.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "bengali-language-movement-protests",
@@ -21637,7 +21669,10 @@
     "year": 1952,
     "category": "revolution",
     "description": "Students in Dhaka defied a ban on assemblies to demand official status for their mother tongue, and police fired on them.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Bangladesh"
+    ]
   },
   {
     "name": "first-aldermaston-march",
@@ -21645,7 +21680,10 @@
     "year": 1958,
     "category": "revolution",
     "description": "Campaigners walked for four days from London to a nuclear weapons research site, debuting the peace symbol.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "anpo-protests-japan",
@@ -21653,7 +21691,10 @@
     "year": 1960,
     "category": "revolution",
     "description": "Huge crowds surrounded the parliament in Tokyo to oppose a revised security treaty with the United States.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Japan"
+    ]
   },
   {
     "name": "greenham-common-womens-march",
@@ -21661,7 +21702,10 @@
     "year": 1981,
     "category": "revolution",
     "description": "Women walked from Wales to a Berkshire airbase and set up a peace camp against cruise missiles.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "battle-of-seattle-wto-protests",
@@ -21669,7 +21713,10 @@
     "year": 1999,
     "category": "revolution",
     "description": "Tens of thousands blockaded a global trade summit, bringing the anti-globalisation movement to world attention.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "global-anti-iraq-war-protests",
@@ -21677,7 +21724,11 @@
     "year": 2003,
     "category": "revolution",
     "description": "Millions marched in hundreds of cities worldwide on one weekend in the largest coordinated demonstration in history.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Global"
+    ]
   },
   {
     "name": "occupy-wall-street",
@@ -21685,7 +21736,10 @@
     "year": 2011,
     "category": "revolution",
     "description": "Protesters camped in a New York park against inequality under the slogan We are the 99 percent, inspiring camps worldwide.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "hong-kong-umbrella-movement",
@@ -21693,7 +21747,11 @@
     "year": 2014,
     "category": "revolution",
     "description": "Demonstrators with umbrellas against pepper spray occupied main roads for weeks demanding free elections.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "China",
+      "Hong Kong"
+    ]
   },
   {
     "name": "womens-march-2017",
@@ -21701,7 +21759,11 @@
     "year": 2017,
     "category": "revolution",
     "description": "Millions in Washington and cities across the world marched in pink hats the day after a presidential inauguration.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "woman-life-freedom-protests",
@@ -21709,6 +21771,9 @@
     "year": 2022,
     "category": "revolution",
     "description": "The death of a young woman in police custody over a headscarf sparked nationwide street protests across her country.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Iran"
+    ]
   }
 ]
