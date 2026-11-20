@@ -84,11 +84,11 @@
     "description": "A huge tapering mud-brick mosque with towers and wooden beams jutting from its walls. Figures climb ladders and beams on its face, and a line of people below carries baskets of mud on their heads. A flat floodplain with a river lies to the left under a pale, hazy sky. The style is an earth-toned oil painting. No text, frame or modern machinery is visible."
   },
   "coventry-cathedral-consecrated": {
-    "state": "qc-fail",
-    "reason": "Legible painted lettering (FATHER FORGIVE) on the low wall at lower left of the ruins. Repaint that wall without any text.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An oil painting of a roofless Gothic stone ruin with tall tracery windows and spires on the left, joined to an angular pink-red sandstone modern building with a tall glass wall etched with figures on the right. A charred two-beam wooden cross stands in rubble in the foreground under a dark stormy sky. Small lettering reading FATHER FORGIVE is painted on the low wall at lower left. No frame or border; nothing graphic."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted scene of a tall modern brick church with a large leaded glass wall, joined at its side to a roofless Gothic stone ruin with pointed windows. In the foreground a black cross stands on a stone plinth amid rubble, with a low stone wall at the lower left. A procession of robed clergy and a line of people in mid-century dress stand near the modern entrance under a dark, stormy sky with a shaft of light falling on the ruin."
   },
   "hassan-ii-mosque-inaugurated": {
     "state": "qc-pass",
