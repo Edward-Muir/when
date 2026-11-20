@@ -1,0 +1,18 @@
+{
+  "karnak-temple-complex-begun": {"recognition": "medium", "inferability": "high", "anchors": ["Egyptian pharaohs", "Amun", "two thousand years"], "why": "pharaohs and Amun place it in ancient Egypt"},
+  "abu-simbel-temples-carved": {"recognition": "high", "inferability": "high", "anchors": ["Ramesses II", "Nubian", "colossal statues"], "why": "Ramesses II is ancient Egypt"},
+  "parthenon-dedicated-athena": {"recognition": "high", "inferability": "high", "anchors": ["Athens", "Athena", "Doric"], "why": "classical Greece is obvious"},
+  "prophets-mosque-medina-built": {"recognition": "medium", "inferability": "high", "anchors": ["Muhammad", "Medina"], "why": "Muhammad places it in early 7th century"},
+  "great-mosque-cordoba-begun": {"recognition": "medium", "inferability": "high", "anchors": ["Umayyad", "Muslim Spain"], "why": "Umayyad Muslim Spain means early medieval"},
+  "westminster-abbey-consecrated": {"recognition": "medium", "inferability": "medium", "anchors": ["Romanesque", "royal founder", "coronation church"], "why": "Romanesque abbey implies medieval but not which century"},
+  "florence-cathedral-begun": {"recognition": "medium", "inferability": "medium", "anchors": ["Arnolfo di Cambio", "dome centuries later", "Tuscan"], "why": "Tuscan cathedral implies medieval Italy; Arnolfo is a weak anchor"},
+  "st-basils-cathedral-completed": {"recognition": "high", "inferability": "high", "anchors": ["Ivan the Terrible", "Red Square"], "why": "Ivan the Terrible is 16th century"},
+  "st-pauls-cathedral-completed": {"recognition": "high", "inferability": "high", "anchors": ["Christopher Wren", "fire of London"], "why": "Wren after the great fire places it in late 17th century"},
+  "sagrada-familia-begun": {"recognition": "high", "inferability": "high", "anchors": ["Gaudí", "unfinished"], "why": "Gaudí places it in 19th century"},
+  "salt-lake-temple-dedicated": {"recognition": "medium", "inferability": "high", "anchors": ["Mormon pioneers", "four decades"], "why": "Mormon pioneers imply 19th century"},
+  "great-mosque-djenne-rebuilt": {"recognition": "medium", "inferability": "low", "anchors": ["mud-brick", "Bani River"], "why": "few era clues; rebuilt could be many centuries"},
+  "coventry-cathedral-consecrated": {"recognition": "medium", "inferability": "high", "anchors": ["bombed", "modern cathedral", "medieval predecessor"], "why": "bombing and modern design imply post-WWII"},
+  "hassan-ii-mosque-inaugurated": {"recognition": "low", "inferability": "medium", "anchors": ["huge modern mosque", "tallest minarets"], "why": "tall minaret and scale suggest modern era only vaguely"},
+  "sheikh-zayed-grand-mosque-opens": {"recognition": "medium", "inferability": "medium", "anchors": ["Abu Dhabi", "white marble", "eighty domes"], "why": "Abu Dhabi implies recent oil-era"},
+  "notre-dame-paris-reopens": {"recognition": "high", "inferability": "high", "anchors": ["blaze", "restoration of spire", "worshippers again"], "why": "recent news event"}
+}
