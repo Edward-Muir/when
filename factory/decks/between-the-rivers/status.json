@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:20:36.516Z",
+  "updated_at": "2026-11-20T01:23:44.959Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-20T01:20:36.516Z"
     },
     "enheduanna-hymns-inanna": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2fcc923940a04bf622ee23604351d74f286a130a2fa4dbaac55d086a3dafcfff",
+      "updated_at": "2026-11-20T01:23:44.959Z"
     },
     "naram-sin-victory-stele": {
       "state": "pending",
