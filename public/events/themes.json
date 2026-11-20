@@ -21562,7 +21562,8 @@
       "Russia",
       "United States",
       "Europe"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "kennedy-ich-bin-ein-berliner",
@@ -21574,7 +21575,8 @@
     "regions": [
       "Germany",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "us-cambodia-incursion",
@@ -21587,7 +21589,8 @@
       "Cambodia",
       "United States",
       "Vietnam"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "ogaden-war-somalia-ethiopia",
@@ -21600,7 +21603,8 @@
       "Ethiopia",
       "Somalia"
     ],
-    "year_end": 1978
+    "year_end": 1978,
+    "has_detail": true
   },
   {
     "name": "poland-martial-law-declared",
@@ -21611,7 +21615,8 @@
     "difficulty": "easy",
     "regions": [
       "Poland"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "iran-contra-affair-breaks",
@@ -21624,7 +21629,8 @@
       "Iran",
       "Nicaragua",
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "reagan-tear-down-this-wall",
@@ -21636,6 +21642,7 @@
     "regions": [
       "Germany",
       "United States"
-    ]
+    ],
+    "has_detail": true
   }
 ]
