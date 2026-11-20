@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T17:22:34.655Z",
+  "updated_at": "2026-11-20T17:25:23.997Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-20T17:22:34.655Z"
     },
     "notre-dame-paris-reopens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e1f83ce4a5df13c073ab6a26b9078ad209b10d3bfd9d85cbfacfdda1df4507e2",
+      "updated_at": "2026-11-20T17:25:23.997Z"
     }
   }
 }
