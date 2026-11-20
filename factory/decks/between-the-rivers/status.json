@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:11:59.281Z",
+  "updated_at": "2026-11-20T01:14:50.658Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-20T01:11:59.281Z"
     },
     "cuneiform-writing-emerges": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9e2714c17ab498da1371f5131eccc5e4596d8ac6faa2f72030b3db64d7087b86",
+      "updated_at": "2026-11-20T01:14:50.658Z"
     },
     "royal-tombs-of-ur": {
       "state": "pending",
