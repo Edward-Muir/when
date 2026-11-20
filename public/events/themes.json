@@ -21557,7 +21557,10 @@
     "year": -1971,
     "category": "architecture",
     "description": "Egyptian pharaohs began raising a vast riverside sanctuary to Amun that would be enlarged for some two thousand years.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "abu-simbel-temples-carved",
@@ -21565,7 +21568,10 @@
     "year": -1264,
     "category": "architecture",
     "description": "Ramesses II had two temples cut into a Nubian cliff, fronted by four colossal seated statues of himself.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Egypt"
+    ]
   },
   {
     "name": "parthenon-dedicated-athena",
@@ -21573,7 +21579,10 @@
     "year": -438,
     "category": "architecture",
     "description": "Athens dedicated its marble Doric temple to the goddess on the Acropolis, crowning the city's building programme.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Greece"
+    ]
   },
   {
     "name": "prophets-mosque-medina-built",
@@ -21581,7 +21590,10 @@
     "year": 622,
     "category": "architecture",
     "description": "Muhammad and his followers raised a simple courtyard mosque of palm trunks and mud brick, later enlarged into a great shrine.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Saudi Arabia"
+    ]
   },
   {
     "name": "great-mosque-cordoba-begun",
@@ -21589,7 +21601,10 @@
     "year": 785,
     "category": "architecture",
     "description": "An exiled Umayyad prince began a mosque whose forest of horseshoe arches became the heart of Muslim Spain.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "westminster-abbey-consecrated",
@@ -21597,7 +21612,10 @@
     "year": 1065,
     "category": "architecture",
     "description": "A Romanesque abbey church on the Thames was hallowed days before its royal founder died, and became the coronation church.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "florence-cathedral-begun",
@@ -21605,7 +21623,10 @@
     "year": 1296,
     "category": "architecture",
     "description": "Arnolfo di Cambio laid the foundations of a vast Tuscan cathedral of green, pink and white marble, crowned centuries later by a dome.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "st-basils-cathedral-completed",
@@ -21613,7 +21634,11 @@
     "year": 1561,
     "category": "architecture",
     "description": "Ivan the Terrible's church on Red Square was finished, its onion domes of clashing colour commemorating a conquest.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "st-pauls-cathedral-completed",
@@ -21621,7 +21646,10 @@
     "year": 1710,
     "category": "architecture",
     "description": "Christopher Wren's domed cathedral rose above London after the old church was lost to fire, finished in his lifetime.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "sagrada-familia-begun",
@@ -21629,7 +21657,10 @@
     "year": 1882,
     "category": "architecture",
     "description": "Work started on a Barcelona basilica that Antoni Gaudí took over and reshaped into a soaring, organic, unfinished masterpiece.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Spain"
+    ]
   },
   {
     "name": "salt-lake-temple-dedicated",
@@ -21637,7 +21668,10 @@
     "year": 1893,
     "category": "architecture",
     "description": "Mormon pioneers finished a granite temple with six spires after four decades of building in their desert capital.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "great-mosque-djenne-rebuilt",
@@ -21645,7 +21679,10 @@
     "year": 1907,
     "category": "architecture",
     "description": "Builders raised the world's largest mud-brick building on the Bani River floodplain, its walls bristling with wooden beams.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "regions": [
+      "Mali"
+    ]
   },
   {
     "name": "coventry-cathedral-consecrated",
@@ -21653,7 +21690,10 @@
     "year": 1962,
     "category": "architecture",
     "description": "A bold modern cathedral rose beside the ruins of its bombed medieval predecessor as a symbol of reconciliation.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "hassan-ii-mosque-inaugurated",
@@ -21661,7 +21701,10 @@
     "year": 1993,
     "category": "architecture",
     "description": "A huge mosque rose on a rock above the Atlantic at Casablanca, with one of the tallest minarets in the world.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "Morocco"
+    ]
   },
   {
     "name": "sheikh-zayed-grand-mosque-opens",
@@ -21669,7 +21712,10 @@
     "year": 2007,
     "category": "architecture",
     "description": "Abu Dhabi opened a white-marble mosque with more than eighty domes, one of the largest in the world.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Arab Emirates"
+    ]
   },
   {
     "name": "notre-dame-paris-reopens",
@@ -21677,6 +21723,9 @@
     "year": 2024,
     "category": "architecture",
     "description": "The Paris cathedral welcomed worshippers again after a devastating blaze and a painstaking restoration of its roof and spire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   }
 ]
