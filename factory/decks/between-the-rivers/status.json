@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T01:09:30.879Z",
+  "updated_at": "2026-11-20T01:11:59.281Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-20T01:09:30.879Z"
     },
     "uruk-first-city-walled": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "df19fd8616cddc22e276cb6b0b72b210007941e4f0a2406954843031d80d4d4d",
+      "updated_at": "2026-11-20T01:11:59.281Z"
     },
     "cuneiform-writing-emerges": {
       "state": "pending",
