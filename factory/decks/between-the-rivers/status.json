@@ -1,21 +1,26 @@
 {
   "deck": "between-the-rivers",
   "name": "Between the Rivers",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-19T23:16:40.655Z",
+  "updated_at": "2026-11-20T01:09:30.879Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-19T23:16:40.655Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-20T01:09:30.879Z"
     }
   ],
   "slugs": {
     "eridu-settled-sumer": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "32b1a4bced56d55ea25e130e592b902020b3919d72c4085b589ebe7492613280",
+      "updated_at": "2026-11-20T01:09:30.879Z"
     },
     "uruk-first-city-walled": {
       "state": "pending",
