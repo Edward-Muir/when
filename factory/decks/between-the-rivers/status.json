@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T03:18:42.086Z",
+  "updated_at": "2026-11-20T03:21:05.438Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-20T03:18:42.086Z"
     },
     "babylonian-astronomical-diaries": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3c73679aaec990c0a0361aceefcc89aaadf0778fd950ce3f6c2fe4981d2fd806",
+      "updated_at": "2026-11-20T03:21:05.438Z"
     },
     "tiglath-pileser-iii-reforms": {
       "state": "pending",
