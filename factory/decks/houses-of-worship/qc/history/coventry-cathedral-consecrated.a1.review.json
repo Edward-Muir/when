@@ -1,0 +1,15 @@
+{
+  "slug": "coventry-cathedral-consecrated",
+  "description": "A gothic stone church ruin with a tall tracery window and spires on the left, roofless and broken, beside an angular pink-red sandstone building with a tall glass wall of figure sculptures on the right. A wooden cross made of two timbers stands in rubble in the foreground under a dark stormy sky. Painted in an oil style. Small lettering, apparently reading FATHER FORGIVE, is painted on a low wall at lower left.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted text is visible on the low stone wall at lower left, reading apparently FATHER FORGIVE. Remove or repaint that wall without lettering."
+}

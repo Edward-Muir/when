@@ -1,0 +1,15 @@
+{
+  "slug": "coventry-cathedral-consecrated",
+  "description": "An oil painting of a roofless Gothic stone ruin with tall tracery windows and spires on the left, joined to an angular pink-red sandstone modern building with a tall glass wall etched with figures on the right. A charred two-beam wooden cross stands in rubble in the foreground under a dark stormy sky. Small lettering reading FATHER FORGIVE is painted on the low wall at lower left. No frame or border; nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible painted lettering (FATHER FORGIVE) on the low wall at lower left of the ruins. Repaint that wall without any text."
+}

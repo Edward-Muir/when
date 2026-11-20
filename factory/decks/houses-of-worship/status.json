@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T17:25:23.997Z",
+  "updated_at": "2026-11-20T18:07:41.445Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,46 +86,46 @@
       "updated_at": "2026-11-20T15:07:06.752Z"
     },
     "salt-lake-temple-dedicated": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "39c222b96e7c6886e58e31cf82e16d29ea564558c9f04f699db7be587eb31cea",
-      "updated_at": "2026-11-20T17:09:34.672Z"
+      "updated_at": "2026-11-20T18:07:41.252Z"
     },
     "great-mosque-djenne-rebuilt": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6de95d51bfe88a741eaeedf620e81add46e5e7c2871de78030dd336d4b2b8cde",
-      "updated_at": "2026-11-20T17:12:59.443Z"
+      "updated_at": "2026-11-20T18:07:41.290Z"
     },
     "coventry-cathedral-consecrated": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "Legible painted lettering (FATHER FORGIVE) on the low wall at lower left of the ruins. Repaint that wall without any text.",
       "sha256": "20c966ed843bd63ca759dfa3619bb45b61ac187055ad34d244f376b7b80feed9",
-      "updated_at": "2026-11-20T17:16:46.967Z"
+      "updated_at": "2026-11-20T18:07:41.328Z"
     },
     "hassan-ii-mosque-inaugurated": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d43fb89b2be6d7d05c81eb65c3cc7096a0ce79bd171a9dbdbb0031911bce8dcf",
-      "updated_at": "2026-11-20T17:19:44.781Z"
+      "updated_at": "2026-11-20T18:07:41.366Z"
     },
     "sheikh-zayed-grand-mosque-opens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1d8710a462919436a60fee1d704f4d670860167c44debbae0c30abf02cf7069c",
-      "updated_at": "2026-11-20T17:22:34.655Z"
+      "updated_at": "2026-11-20T18:07:41.405Z"
     },
     "notre-dame-paris-reopens": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e1f83ce4a5df13c073ab6a26b9078ad209b10d3bfd9d85cbfacfdda1df4507e2",
-      "updated_at": "2026-11-20T17:25:23.997Z"
+      "updated_at": "2026-11-20T18:07:41.445Z"
     }
   }
 }

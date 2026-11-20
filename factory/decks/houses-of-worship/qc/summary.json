@@ -68,5 +68,47 @@
     "by": "review",
     "attempts": 1,
     "description": "A dim, candlelit night scene of a crowd of men in 19th-century dark suits and top hats, plus clergy in white and gold vestments, gathered at the edge of a pit. A large rough stone block hangs from ropes over the pit. On the right, workers lean over a wooden trestle table holding a model of a spired, tall-towered church. Torches and lanterns light the scene, with a city skyline under a cloudy dusk sky in the background. I see no legible text, no frame or border, and no gore."
+  },
+  "salt-lake-temple-dedicated": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A grey granite Gothic-style temple with multiple spires and a small gold statue on top stands on a dusty plain with mountains behind it. In the foreground, oxen pull a wooden wagon carrying a large white stone block bound with chains, with men in work clothes and wide-brimmed hats guiding them. A small town of wooden and adobe buildings lies to the left under a dramatic cloudy sky at sunset. There is no visible text, frame or border."
+  },
+  "great-mosque-djenne-rebuilt": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A huge tapering mud-brick mosque with towers and wooden beams jutting from its walls. Figures climb ladders and beams on its face, and a line of people below carries baskets of mud on their heads. A flat floodplain with a river lies to the left under a pale, hazy sky. The style is an earth-toned oil painting. No text, frame or modern machinery is visible."
+  },
+  "coventry-cathedral-consecrated": {
+    "state": "qc-fail",
+    "reason": "Legible painted lettering (FATHER FORGIVE) on the low wall at lower left of the ruins. Repaint that wall without any text.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil painting of a roofless Gothic stone ruin with tall tracery windows and spires on the left, joined to an angular pink-red sandstone modern building with a tall glass wall etched with figures on the right. A charred two-beam wooden cross stands in rubble in the foreground under a dark stormy sky. Small lettering reading FATHER FORGIVE is painted on the low wall at lower left. No frame or border; nothing graphic."
+  },
+  "hassan-ii-mosque-inaugurated": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large white mosque with a tall, square, tiled minaret and green-tiled roofs stands on a rocky shore while surf breaks against the rocks under a stormy sky. In the foreground, several men in robes and turbans or caps sit on the ground assembling geometric tile mosaics, with stacks of tiles and tile fragments around them. A carved, ornamented stone or plaster archway fills the right edge of the frame."
+  },
+  "sheikh-zayed-grand-mosque-opens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large white mosque with several domes, two tall minarets at the sides, and rows of lit arches, seen at dusk or night. Figures in long robes walk across a reflective stone courtyard toward a long dark pool that mirrors the building. The sky is dark blue and there is no visible text or border."
+  },
+  "notre-dame-paris-reopens": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted Gothic cathedral with two western towers, a tall spire over the crossing, and a large rose window on the facade. In the foreground, workers in hard hats and safety harnesses look up at it, one pointing. A dense crowd stands in a stone square before the central doors. A bridge and river sit at right under a heavy, dark cloudy sky, and scaffolding and small figures appear on the left side of the building."
   }
 }
