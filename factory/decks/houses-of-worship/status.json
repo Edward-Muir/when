@@ -1,21 +1,26 @@
 {
   "deck": "houses-of-worship",
   "name": "Houses of Worship",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T12:16:55.566Z",
+  "updated_at": "2026-11-20T14:09:22.529Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-20T12:16:55.566Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-20T14:09:22.529Z"
     }
   ],
   "slugs": {
     "karnak-temple-complex-begun": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "71f30dba1cd7c8bd786c375638393f356098ee90975c2f053a1e2b745b9a9b7f",
+      "updated_at": "2026-11-20T14:09:22.529Z"
     },
     "abu-simbel-temples-carved": {
       "state": "pending",
