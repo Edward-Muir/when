@@ -3,7 +3,7 @@
   "name": "Iron Curtain",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T06:12:55.047Z",
-  "updated_at": "2026-11-20T07:17:12.018Z",
+  "updated_at": "2026-11-20T07:19:40.102Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-20T07:17:12.018Z"
     },
     "poland-martial-law-declared": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9704b1d1a8c491dfe4496e4c57e84c7b3b772a05f5f228aca4d68934b64e742d",
+      "updated_at": "2026-11-20T07:19:40.102Z"
     },
     "iran-contra-affair-breaks": {
       "state": "pending",
