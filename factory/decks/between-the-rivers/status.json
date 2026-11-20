@@ -3,7 +3,7 @@
   "name": "Between the Rivers",
   "stage": "art-in-progress",
   "created_at": "2026-11-19T23:16:40.655Z",
-  "updated_at": "2026-11-20T03:13:56.825Z",
+  "updated_at": "2026-11-20T03:16:18.888Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-20T03:13:56.825Z"
     },
     "gilgamesh-epic-standard-version": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4c07160d9b11afc3e5397e2086ed98819f1402dcdf8b629c69a14373ebf13696",
+      "updated_at": "2026-11-20T03:16:18.888Z"
     },
     "ashurnasirpal-builds-nimrud": {
       "state": "pending",
