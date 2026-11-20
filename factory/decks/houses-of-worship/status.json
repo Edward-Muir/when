@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T17:19:44.781Z",
+  "updated_at": "2026-11-20T17:22:34.655Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-20T17:19:44.781Z"
     },
     "sheikh-zayed-grand-mosque-opens": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1d8710a462919436a60fee1d704f4d670860167c44debbae0c30abf02cf7069c",
+      "updated_at": "2026-11-20T17:22:34.655Z"
     },
     "notre-dame-paris-reopens": {
       "state": "pending",
