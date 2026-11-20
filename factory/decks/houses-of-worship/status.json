@@ -3,7 +3,7 @@
   "name": "Houses of Worship",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T12:16:55.566Z",
-  "updated_at": "2026-11-20T14:15:52.337Z",
+  "updated_at": "2026-11-20T14:18:56.146Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-20T14:15:52.337Z"
     },
     "prophets-mosque-medina-built": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "252967d80450737194e2a77751d34dcbff68744b9e760fd88faf4ad05b0df752",
+      "updated_at": "2026-11-20T14:18:56.146Z"
     },
     "great-mosque-cordoba-begun": {
       "state": "pending",
