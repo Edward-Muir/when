@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T02:18:03.052Z",
+  "updated_at": "2026-11-21T02:20:33.715Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-21T02:18:03.052Z"
     },
     "petrograd-womens-day-protest": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e6ae0482df2ee5bdfa7a952fc9acb92fd3660da3fe4f71e0deb61d5d9da310ae",
+      "updated_at": "2026-11-21T02:20:33.715Z"
     },
     "first-national-hunger-march": {
       "state": "pending",
