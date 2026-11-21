@@ -1,0 +1,15 @@
+{
+  "slug": "golden-state-killer-identified",
+  "description": "A dark, moody oil-style still life on a wooden desk. An open laptop on the left shows a branching family-tree diagram of square and round nodes joined by lines. In front of it sits a worn, thick brown case file with a paper label bearing handwritten marks. Beside them are a small amber glass vial, a brass-rimmed magnifying glass, stacks of loose papers covered in handwritten lines, a pen, and paper clips. The painting fills the frame edge to edge, with no people shown.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The handwritten label on the case file and the lines of script on the loose papers read as painted writing; the image needs the label and papers to carry no legible or text-like marks."
+}

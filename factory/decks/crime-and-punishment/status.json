@@ -3,7 +3,7 @@
   "name": "Crime & Punishment",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T16:18:17.176Z",
-  "updated_at": "2026-11-21T19:26:11.641Z",
+  "updated_at": "2026-11-21T20:08:37.204Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,60 +79,60 @@
       "updated_at": "2026-11-21T18:07:23.869Z"
     },
     "scotland-yard-fingerprint-bureau": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Legible painted text appears on the papers at the bottom ('Unlabeled Print Cards' and other written lines). Regenerate with blank or unreadable paper.",
+      "reason": null,
       "sha256": "3d49b261b16c2924ef846d22d1f4dab3d84cc4ff37500c20554b79404946b146",
-      "updated_at": "2026-11-21T19:09:31.386Z"
+      "updated_at": "2026-11-21T20:08:36.537Z"
     },
     "wireless-catches-crippen": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6d2582fe0cd04f13c061f8d35ce049aea579f882498af397244f398308ed6e35",
-      "updated_at": "2026-11-21T19:11:46.369Z"
+      "updated_at": "2026-11-21T20:08:36.646Z"
     },
     "polygraph-invented": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "97bc37afd7f7c7db53d25558ce8dcb9504b591d49987a2f2bd9b3865c7f0cff4",
-      "updated_at": "2026-11-21T19:14:06.387Z"
+      "updated_at": "2026-11-21T20:08:36.736Z"
     },
     "first-gas-chamber-execution": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c643ca6e397bf892ef810b8bbf45974ebd42754d8ca2c10f6546a3d866e4dac6",
-      "updated_at": "2026-11-21T19:16:38.589Z"
+      "updated_at": "2026-11-21T20:08:36.822Z"
     },
     "first-911-call": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ba9329c3aed1f2d13179d9b1ce3a03687bd0f0e4f1644de3de527606ab3c7f8c",
-      "updated_at": "2026-11-21T19:19:01.529Z"
+      "updated_at": "2026-11-21T20:08:36.907Z"
     },
     "first-lethal-injection-execution": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e6df495b3bd4e0bb1634ac8a17367a5a6b1a1e16436f2342fe9de0e1e617890f",
-      "updated_at": "2026-11-21T19:21:14.856Z"
+      "updated_at": "2026-11-21T20:08:36.994Z"
     },
     "dna-evidence-convicts-killer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "93f94953d60ca558ff685926007979b054ec7901bd6a280050267214545dace6",
-      "updated_at": "2026-11-21T19:23:49.428Z"
+      "updated_at": "2026-11-21T20:08:37.088Z"
     },
     "golden-state-killer-identified": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 1,
-      "reason": null,
+      "reason": "The label on the case file carries readable lettering (it reads like 'Cold Case' with more lines beneath). Paint the label blank or remove it. The loose papers are only text-like scribble and are acceptable.",
       "sha256": "cc1c2c0e8286d28bdad6c67973f01b0b366df2871d174588f9a34382f5d90692",
-      "updated_at": "2026-11-21T19:26:11.641Z"
+      "updated_at": "2026-11-21T20:08:37.204Z"
     }
   }
 }

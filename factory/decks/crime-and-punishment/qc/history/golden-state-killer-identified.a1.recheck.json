@@ -1,0 +1,15 @@
+{
+  "slug": "golden-state-killer-identified",
+  "description": "A dark oil-style still life on a desk: an open laptop showing a branching family-tree diagram, a worn thick case folder with a paper label, stacks of loose papers with lines of script, a small amber vial, a brass magnifying glass and a pen. No people, no frame, fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The label on the case file carries readable lettering (it reads like 'Cold Case' with more lines beneath). Paint the label blank or remove it. The loose papers are only text-like scribble and are acceptable."
+}

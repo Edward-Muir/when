@@ -1,0 +1,15 @@
+{
+  "slug": "first-lethal-injection-execution",
+  "description": "A dim, painted interior of a tiled room with a white padded gurney as the central object. Thick brown leather straps hang from its arms, legs and torso, and a metal IV stand with coiled tubing stands behind it. A barred window sits in the upper left with a faint shadowy figure behind the bars. The walls are grey-green tile, stained and dirty, and the floor is dark. The style is loose oil painting, with no visible text, frame or wall-hung canvas.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
