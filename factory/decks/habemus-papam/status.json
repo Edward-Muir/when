@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:19:06.766Z",
+  "updated_at": "2026-11-21T13:21:52.048Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -44,10 +44,11 @@
       "updated_at": "2026-11-21T13:19:06.766Z"
     },
     "clement-xiv-suppresses-jesuits": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "cb5a982f9c3b9d3862eecea595c28e6ba511e7628e38fe9e09f63bb62eaf162a",
+      "updated_at": "2026-11-21T13:21:52.048Z"
     },
     "pius-ix-elected-pope": {
       "state": "pending",
