@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T04:23:10.522Z",
+  "updated_at": "2026-11-21T04:25:50.235Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -128,10 +128,11 @@
       "updated_at": "2026-11-21T04:23:10.522Z"
     },
     "occupy-wall-street": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7b1a852a920e79e2ad9c3203a2d671eb7634d27b9b0c3d583c5e46d2d1100a63",
+      "updated_at": "2026-11-21T04:25:50.235Z"
     },
     "hong-kong-umbrella-movement": {
       "state": "pending",
