@@ -1,0 +1,72 @@
+{
+  "hammurabi-code-penalties": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large dark stone stele with a rounded top stands in a walled courtyard of tan brick with blue-glazed tile bands and arched doorways. The top carries a relief of a seated, horned-crowned figure facing a standing robed figure. Its face is covered in rows of small carved wedge-like marks. Torches burn at the sides, and a group of robed and spear-carrying people in the foreground gesture toward the stone under a dark, cloudy sky. The painting runs edge to edge with no frame."
+  },
+  "newgate-prison-built": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dimly lit stone gatehouse with crenellated battlements and a tall corner tower, seen at night. A lantern hangs beside a dark arched passage, and a small barred window sits high on the wall. A small arched wooden door is set low on the left. Two figures in dark clothing, possibly guards, stand near the entrance on a wet cobbled street. The painting is an edge-to-edge dark oil style with no visible text or frame."
+  },
+  "bridewell-house-of-correction": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A woman in a headscarf and brown dress sits at a long wooden bench, holding a mallet raised and bent over a tangle of fibre. Behind her a bearded man in a dark doublet stands holding a staff. Other figures sit on benches working on fibres along the walls of a vaulted stone hall with a gothic arched window letting in a shaft of light, a carved stone fireplace and doorway on the right. The style is a dark oil painting. No visible text, no frame."
+  },
+  "paris-lieutenant-general-police": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim, narrow cobbled street at night, lined with half-timbered houses with shuttered windows. A man in a wide plumed hat and dark cloak strides forward holding a long staff, with a second man beside him holding a flaming torch. A group of men in broad hats and cloaks, some with pikes or staves, follows behind. A hanging iron lantern glows above, and smoke drifts through the upper street. No visible text or frame; the painting fills the image edge to edge."
+  },
+  "bow-street-runners-formed": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "Two men in three-cornered hats and dark long coats grab a wild-haired young man in a loose shirt and waistcoat on a narrow cobbled street at night. One officer pins his arm and holds a short wooden cane; the other holds a pair of open handcuffs. Brick townhouses, a lit lantern on a post, iron railings and a dim sky fill the scene. Painterly, dark, oil-paint style, edge to edge with no visible text."
+  },
+  "vidocq-founds-surete": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painting in a dark, candlelit office. A man in a dark frock coat, waistcoat and top hat leans over an open ledger on a wooden table. A ragged, shabby man in a cap cups his hand to the first man's ear as if whispering. The table holds stacks of papers, a box of index cards and a lit candle. A window with pale light is on the right, and a shadowy third figure stands at the far right edge. Small handwriting is on the papers, but it is not legible. No frame or border is visible."
+  },
+  "last-public-hanging-england": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A wooden gallows platform with a noose hanging from a crossbeam stands in front of a grey stone prison wall. A dense crowd of men in top hats and bowler hats, plus women in shawls and bonnets, watches from below in an overcast, smoky street. There is no visible text, frame or border, and no blood or violence."
+  },
+  "bertillon-criminal-measurement": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, oil-painted interior. A seated bearded man in a dark suit has his head measured with steel calipers by a standing man in a waistcoat and white shirt with a watch chain. A wooden box camera sits on a tripod at left, and a desk at right holds papers with small photographs, brass instruments and a book. Light comes from a window at the far right."
+  },
+  "first-electric-chair-execution": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A heavy wooden chair with leather straps, a metal head cap hanging above it and thick cables running to the right, toward a dark panel with two round gauges and a row of switches. It stands empty in a dim room with rough stone walls, a dark wooden door, and a worn floor. The painting is oil-like and fills the whole square with no frame."
+  },
+  "scotland-yard-fingerprint-bureau": {
+    "state": "qc-fail",
+    "reason": "Legible painted text appears on the papers at the bottom ('Unlabeled Print Cards' and other written lines). Regenerate with blank or unreadable paper.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A man in a dark jacket and waistcoat peers through a magnifying glass at his inked fingertips, with fingerprint cards on the desk. Behind are wooden filing cabinets with brass-handled drawers and stacked papers. A glass ink slab with a roller, an ink tube and inkwells sit on the desk. Paper in the bottom right and left carries legible writing such as 'Unlabeled Print Cards'. The painting fills the frame with no border."
+  }
+}
