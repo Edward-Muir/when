@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T04:12:21.785Z",
+  "updated_at": "2026-11-21T04:15:01.385Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-21T04:12:21.785Z"
     },
     "anpo-protests-japan": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "1cc57a42bf80e9e33ce26107f8a375b5bfbfb79fb523a76adea880c0b28f3993",
+      "updated_at": "2026-11-21T04:15:01.385Z"
     },
     "greenham-common-womens-march": {
       "state": "pending",
