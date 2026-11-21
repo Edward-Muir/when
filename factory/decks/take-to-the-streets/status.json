@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T02:23:07.699Z",
+  "updated_at": "2026-11-21T02:25:40.263Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-21T02:23:07.699Z"
     },
     "sacco-vanzetti-worldwide-protests": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "4ac7d61386128dde82a303a6c62191c7e3694ca17f19bd2f1de5e3d7069b6ceb",
+      "updated_at": "2026-11-21T02:25:40.263Z"
     },
     "bonus-army-march-washington": {
       "state": "pending",
