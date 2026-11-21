@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T04:28:38.965Z",
+  "updated_at": "2026-11-21T04:31:19.504Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-21T04:28:38.965Z"
     },
     "womens-march-2017": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0de220eff5e16a481ed4f0615414b27e92ac5a1c7d7fbeb7a5128031a80d1cad",
+      "updated_at": "2026-11-21T04:31:19.504Z"
     },
     "woman-life-freedom-protests": {
       "state": "pending",
