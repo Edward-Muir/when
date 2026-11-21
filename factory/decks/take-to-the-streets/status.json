@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T06:14:41.223Z",
+  "updated_at": "2026-11-21T07:07:13.595Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,11 +86,11 @@
       "updated_at": "2026-11-21T03:07:10.643Z"
     },
     "bengali-language-movement-protests": {
-      "state": "downloaded",
+      "state": "qc-fail",
       "attempts": 2,
-      "reason": "The black banner and the placards (and some shop signs) carry painted Bengali lettering, which breaks the no-text rule. Regenerate with blank placards and no legible script.",
+      "reason": "Shopfront signs at the top left and top right carry Bengali-script-like lettering, which counts as painted-in text. Re-generate with the signs blank or out of view.",
       "sha256": "eec23ad6d78b03fd6f3340ccdb31018bc97fdc5dc2824baca0c8976f97696951",
-      "updated_at": "2026-11-21T06:09:14.710Z"
+      "updated_at": "2026-11-21T07:07:13.521Z"
     },
     "first-aldermaston-march": {
       "state": "qc-pass",
@@ -100,11 +100,11 @@
       "updated_at": "2026-11-21T05:07:22.919Z"
     },
     "anpo-protests-japan": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "The large white banner at upper left carries clearly painted kanji-like brush characters, so there is painted-in text. Repaint with blank banners and placards.",
+      "reason": null,
       "sha256": "fe7ec1e2d41e107b4038948bcf04fab184ece73b51e262cf745afe89bff2ad92",
-      "updated_at": "2026-11-21T06:11:57.626Z"
+      "updated_at": "2026-11-21T07:07:13.564Z"
     },
     "greenham-common-womens-march": {
       "state": "qc-pass",
@@ -135,11 +135,11 @@
       "updated_at": "2026-11-21T05:07:23.079Z"
     },
     "hong-kong-umbrella-movement": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 2,
-      "reason": "Painted Chinese characters are visible on the yellow banner at the left edge, and the white banners beside it carry script-like marks. Repaint with blank banners or none.",
+      "reason": null,
       "sha256": "1a61f8f32a2bba00891efcbb3a2dbffedcd028a65a6242c62dc0ba9eb326b12e",
-      "updated_at": "2026-11-21T06:14:41.223Z"
+      "updated_at": "2026-11-21T07:07:13.595Z"
     },
     "womens-march-2017": {
       "state": "qc-pass",

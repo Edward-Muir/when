@@ -71,10 +71,10 @@
   },
   "bengali-language-movement-protests": {
     "state": "qc-fail",
-    "reason": "The black banner and the placards (and some shop signs) carry painted Bengali lettering, which breaks the no-text rule. Regenerate with blank placards and no legible script.",
+    "reason": "Shopfront signs at the top left and top right carry Bengali-script-like lettering, which counts as painted-in text. Re-generate with the signs blank or out of view.",
     "by": "recheck",
-    "attempts": 1,
-    "description": "Young men and women in white shirts, dhotis and saris march arm in arm down a brick street in low sunlight. A large black banner and several placards above them carry clearly legible Bengali script. Uniformed police with rifles stand at the sides and far end. Oil-painting style, filling the frame edge to edge, no border."
+    "attempts": 2,
+    "description": "A crowd of young men and women in white kurtas, dhotis and saris marches arm in arm down a narrow old-city street, holding a large blank white banner on bamboo poles and blank placards. A line of helmeted police stands in haze at the far end. Shopfronts on both sides carry signs with script-like lettering. Dark painterly oil style, edge to edge, no frame, no violence."
   },
   "first-aldermaston-march": {
     "state": "qc-pass",
@@ -84,11 +84,11 @@
     "description": "A painted scene in heavy rain. A hooded young man in a black duffel coat walks toward the viewer, carrying an acoustic guitar and holding a round peace-symbol sign. Behind him, a long column of men in trench coats, flat caps and dark suits carries similar peace signs, and some hold umbrellas. The muddy, puddled path runs between bare trees under a dark, stormy sky. No visible text, frame or border."
   },
   "anpo-protests-japan": {
-    "state": "qc-fail",
-    "reason": "The large white banner at upper left carries clearly painted kanji-like brush characters, so there is painted-in text. Repaint with blank banners and placards.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark, rainy oil painting of a large crowd of young men in white short-sleeved shirts and dark trousers linking arms and snake-dancing down a wet street. Banners, flags and placards are held up, with Japanese-style brush characters on a white banner at left. A domed, stepped government building resembling the National Diet Building sits behind under stormy, smoky skies. Mid-20th-century feel, no frame."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A painted night scene of a dense crowd of men in white shirts and black trousers, many with white headbands, linking arms and marching toward a large stone building with a stepped roof and columns. Black banners on tall poles rise over the crowd, with lit lamps and street lights, and uniformed police officers stand at the edges. No visible text, frame or border; the painting fills the image edge to edge."
   },
   "greenham-common-womens-march": {
     "state": "qc-pass",
@@ -119,11 +119,11 @@
     "description": "A night scene in a city plaza among bare trees, packed with dome tents and tarps. People sit around a small fire in the centre. Cardboard signs lean against the trees with illegible scrawled marks. Lit glass skyscrapers and a construction crane rise behind. Modern dress and gear. No frame, no blood."
   },
   "hong-kong-umbrella-movement": {
-    "state": "qc-fail",
-    "reason": "Painted Chinese characters are visible on the yellow banner at the left edge, and the white banners beside it carry script-like marks. Repaint with blank banners or none.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A night-time rainy city road packed with young people in dark clothes and face masks holding yellow and black umbrellas. Tents and stacked supplies sit along a central barrier, hazy spray drifts in the middle, and lit skyscrapers rise behind. Banners hang on a railing at left, including a yellow one with clearly painted Chinese characters. Painterly, edge to edge, no frame."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A crowd of protesters holds yellow and black umbrellas on a wide city road. Tents line a central barrier, with boxes and debris piled among them. Tall glass high-rise towers rise on both sides under a dusky sky. White banners hang from an overpass, and a man in goggles and a face mask in the foreground raises a yellow umbrella. No visible text."
   },
   "womens-march-2017": {
     "state": "qc-pass",
