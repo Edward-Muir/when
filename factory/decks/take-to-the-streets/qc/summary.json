@@ -70,11 +70,11 @@
     "description": "A group of women in dark winter coats and headscarves stands close together on a snowy cobbled street, looking up toward a grey stone building with barred windows and a dark arched doorway. Several figures in steel helmets and long dark coats stand in the background at right. The painting is in a dark, painterly style and fills the frame edge to edge. No text, letters or numbers are visible."
   },
   "bengali-language-movement-protests": {
-    "state": "qc-fail",
-    "reason": "Shopfront signs at the top left and top right carry Bengali-script-like lettering, which counts as painted-in text. Re-generate with the signs blank or out of view.",
-    "by": "recheck",
-    "attempts": 2,
-    "description": "A crowd of young men and women in white kurtas, dhotis and saris marches arm in arm down a narrow old-city street, holding a large blank white banner on bamboo poles and blank placards. A line of helmeted police stands in haze at the far end. Shopfronts on both sides carry signs with script-like lettering. Dark painterly oil style, edge to edge, no frame, no violence."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 3,
+    "description": "A painted street scene: three figures in front, a young man in a white shirt on the left, a woman in a white sari in the centre and a young man in a white shirt on the right, walking arm in arm. A black cloth banner on two poles rises above them. Behind them a crowd of young men in light shirts, and a few helmeted figures far back. Colonial-style multi-storey buildings with arched balconies line a sunlit street. No visible text, no frame."
   },
   "first-aldermaston-march": {
     "state": "qc-pass",
