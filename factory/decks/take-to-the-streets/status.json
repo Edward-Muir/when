@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T02:14:55.993Z",
+  "updated_at": "2026-11-21T02:18:03.052Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-21T02:14:55.993Z"
     },
     "woman-suffrage-procession-washington": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d71e672e22836b43dffd4906716b2754f6d1355af1e1efaf05736abf459fbbe8",
+      "updated_at": "2026-11-21T02:18:03.052Z"
     },
     "petrograd-womens-day-protest": {
       "state": "pending",
