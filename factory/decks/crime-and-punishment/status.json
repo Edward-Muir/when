@@ -3,7 +3,7 @@
   "name": "Crime & Punishment",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T16:18:17.176Z",
-  "updated_at": "2026-11-21T17:11:39.566Z",
+  "updated_at": "2026-11-21T17:14:02.169Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-21T17:11:39.566Z"
     },
     "bridewell-house-of-correction": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e90c262ff8803d201168fc6d3e0882030a9194f79ebc305e172e64752bbb43bc",
+      "updated_at": "2026-11-21T17:14:02.169Z"
     },
     "paris-lieutenant-general-police": {
       "state": "pending",
