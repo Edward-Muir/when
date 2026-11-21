@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T03:07:10.643Z",
+  "updated_at": "2026-11-21T04:09:16.616Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,10 +86,11 @@
       "updated_at": "2026-11-21T03:07:10.643Z"
     },
     "bengali-language-movement-protests": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3d6161c063a7fd80ac23e30ae5f174d7b54a58d852b7d7f8eaa3f1475e52270f",
+      "updated_at": "2026-11-21T04:09:16.616Z"
     },
     "first-aldermaston-march": {
       "state": "pending",
