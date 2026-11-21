@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:21:52.048Z",
+  "updated_at": "2026-11-21T13:26:20.814Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-21T13:21:52.048Z"
     },
     "pius-ix-elected-pope": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9c5fa75008c1a6e37e40b90961a28ec62d57bf3842f17f99c444fd74e697f311",
+      "updated_at": "2026-11-21T13:26:20.814Z"
     },
     "papal-infallibility-declared": {
       "state": "pending",
