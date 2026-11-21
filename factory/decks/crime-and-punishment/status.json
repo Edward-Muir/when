@@ -3,7 +3,7 @@
   "name": "Crime & Punishment",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T16:18:17.176Z",
-  "updated_at": "2026-11-21T19:21:14.856Z",
+  "updated_at": "2026-11-21T19:23:49.428Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-21T19:21:14.856Z"
     },
     "dna-evidence-convicts-killer": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "93f94953d60ca558ff685926007979b054ec7901bd6a280050267214545dace6",
+      "updated_at": "2026-11-21T19:23:49.428Z"
     },
     "golden-state-killer-identified": {
       "state": "pending",
