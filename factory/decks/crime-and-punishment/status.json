@@ -1,21 +1,26 @@
 {
   "deck": "crime-and-punishment",
   "name": "Crime & Punishment",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-21T16:18:17.176Z",
-  "updated_at": "2026-11-21T16:18:17.176Z",
+  "updated_at": "2026-11-21T17:09:16.151Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-21T16:18:17.176Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-21T17:09:16.151Z"
     }
   ],
   "slugs": {
     "hammurabi-code-penalties": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "235ca20f0cdad2519b8ac73ea571533a09bf48095597466174c7ed493cf6fb4c",
+      "updated_at": "2026-11-21T17:09:16.151Z"
     },
     "newgate-prison-built": {
       "state": "pending",
