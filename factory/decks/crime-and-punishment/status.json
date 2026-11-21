@@ -3,7 +3,7 @@
   "name": "Crime & Punishment",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T16:18:17.176Z",
-  "updated_at": "2026-11-21T19:16:38.589Z",
+  "updated_at": "2026-11-21T19:19:01.529Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-21T19:16:38.589Z"
     },
     "first-911-call": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ba9329c3aed1f2d13179d9b1ce3a03687bd0f0e4f1644de3de527606ab3c7f8c",
+      "updated_at": "2026-11-21T19:19:01.529Z"
     },
     "first-lethal-injection-execution": {
       "state": "pending",
