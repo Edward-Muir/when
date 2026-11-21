@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:11:54.526Z",
+  "updated_at": "2026-11-21T13:16:16.652Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-21T13:11:54.526Z"
     },
     "council-constance-ends-schism": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2cb3a6727f31d60561f30a07c4e62f216ce5db088526de97e7d182d23a73f363",
+      "updated_at": "2026-11-21T13:16:16.652Z"
     },
     "alexander-vi-elected-pope": {
       "state": "pending",
