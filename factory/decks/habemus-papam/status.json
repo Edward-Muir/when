@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:16:16.652Z",
+  "updated_at": "2026-11-21T13:19:06.766Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-21T13:16:16.652Z"
     },
     "alexander-vi-elected-pope": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7df634850266db145d82ed9374e032040f14c8e9a266fea70b9dbe79e7880af4",
+      "updated_at": "2026-11-21T13:19:06.766Z"
     },
     "clement-xiv-suppresses-jesuits": {
       "state": "pending",
