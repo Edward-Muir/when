@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T02:09:18.385Z",
+  "updated_at": "2026-11-21T02:11:41.880Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-21T02:09:18.385Z"
     },
     "trafalgar-square-bloody-sunday": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "dd1578d204741d6a356fae1060b154af880bbdb2ff9da2851d7c26abcaad96bf",
+      "updated_at": "2026-11-21T02:11:41.880Z"
     },
     "coxeys-army-march-washington": {
       "state": "pending",
