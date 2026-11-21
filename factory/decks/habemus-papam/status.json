@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:36:05.424Z",
+  "updated_at": "2026-11-21T13:38:27.313Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-21T13:36:05.424Z"
     },
     "leo-xiv-elected-first-american-pope": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9ebc337bb6d56838f4f4b55a14561627d5163dcb7a4232625f9c9d72e18e6e8f",
+      "updated_at": "2026-11-21T13:38:27.313Z"
     }
   }
 }
