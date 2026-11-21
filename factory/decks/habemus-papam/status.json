@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:33:38.918Z",
+  "updated_at": "2026-11-21T13:36:05.424Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-21T13:33:38.918Z"
     },
     "francis-elected-first-latin-american-pope": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "37e526e710e36f700f3fc2970718d626f0f5010487492145b4a8a2030e7d3d2d",
+      "updated_at": "2026-11-21T13:36:05.424Z"
     },
     "leo-xiv-elected-first-american-pope": {
       "state": "pending",
