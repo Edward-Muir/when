@@ -1,0 +1,15 @@
+{
+  "slug": "occupy-wall-street",
+  "description": "A night scene in a city plaza among bare trees, packed with dome tents and tarps. People sit around a small fire in the centre. Cardboard signs lean against the trees with illegible scrawled marks. Lit glass skyscrapers and a construction crane rise behind. Modern dress and gear. No frame, no blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "anpo-protests-japan",
+  "description": "A dark, rainy oil painting of a large crowd of young men in white short-sleeved shirts and dark trousers linking arms and snake-dancing down a wet street. Banners, flags and placards are held up, with Japanese-style brush characters on a white banner at left. A domed, stepped government building resembling the National Diet Building sits behind under stormy, smoky skies. Mid-20th-century feel, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The large white banner at upper left carries clearly painted kanji-like brush characters, so there is painted-in text. Repaint with blank banners and placards."
+}

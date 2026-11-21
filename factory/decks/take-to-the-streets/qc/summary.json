@@ -68,5 +68,75 @@
     "by": "review",
     "attempts": 1,
     "description": "A group of women in dark winter coats and headscarves stands close together on a snowy cobbled street, looking up toward a grey stone building with barred windows and a dark arched doorway. Several figures in steel helmets and long dark coats stand in the background at right. The painting is in a dark, painterly style and fills the frame edge to edge. No text, letters or numbers are visible."
+  },
+  "bengali-language-movement-protests": {
+    "state": "qc-fail",
+    "reason": "The black banner and the placards (and some shop signs) carry painted Bengali lettering, which breaks the no-text rule. Regenerate with blank placards and no legible script.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "Young men and women in white shirts, dhotis and saris march arm in arm down a brick street in low sunlight. A large black banner and several placards above them carry clearly legible Bengali script. Uniformed police with rifles stand at the sides and far end. Oil-painting style, filling the frame edge to edge, no border."
+  },
+  "first-aldermaston-march": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted scene in heavy rain. A hooded young man in a black duffel coat walks toward the viewer, carrying an acoustic guitar and holding a round peace-symbol sign. Behind him, a long column of men in trench coats, flat caps and dark suits carries similar peace signs, and some hold umbrellas. The muddy, puddled path runs between bare trees under a dark, stormy sky. No visible text, frame or border."
+  },
+  "anpo-protests-japan": {
+    "state": "qc-fail",
+    "reason": "The large white banner at upper left carries clearly painted kanji-like brush characters, so there is painted-in text. Repaint with blank banners and placards.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dark, rainy oil painting of a large crowd of young men in white short-sleeved shirts and dark trousers linking arms and snake-dancing down a wet street. Banners, flags and placards are held up, with Japanese-style brush characters on a white banner at left. A domed, stepped government building resembling the National Diet Building sits behind under stormy, smoky skies. Mid-20th-century feel, no frame."
+  },
+  "greenham-common-womens-march": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A line of women in dark padded coats and knit hats walks along a muddy path beside a tall chain-link fence topped with barbed wire. The lead woman carries a large patched flag with a peace symbol and a women's symbol. A small child in a knit hat holds the hand of a woman pushing a pram. Scarves are tied to the fence. Behind the fence are a flat field, a distant watchtower and grey buildings under an overcast sky. No visible text, frame or border."
+  },
+  "battle-of-seattle-wto-protests": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A painted scene of a large, pale, translucent elderly woman with long grey hair reaching out one arm above a crowd. Protesters with signs and several people in green sea turtle costumes fill the left and centre, while black-helmeted riot police with shields and batons stand on the right in drifting smoke. Modern glass skyscrapers rise behind, and the signs show no legible text."
+  },
+  "global-anti-iraq-war-protests": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dense crowd of people fills a wide European-style city street lined with tall stone classical buildings with many windows and a domed tower in the distance under an overcast sky. Many people hold rainbow-striped flags, some with purple and blue bands, and a few hold up blank hand-made placards with dark silhouette images. The painting is in an oil-painted style, with people mostly seen from behind in modern jackets and coats. No readable text is visible, and the image runs edge to edge with no frame."
+  },
+  "occupy-wall-street": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A night scene in a city plaza among bare trees, packed with dome tents and tarps. People sit around a small fire in the centre. Cardboard signs lean against the trees with illegible scrawled marks. Lit glass skyscrapers and a construction crane rise behind. Modern dress and gear. No frame, no blood."
+  },
+  "hong-kong-umbrella-movement": {
+    "state": "qc-fail",
+    "reason": "Painted Chinese characters are visible on the yellow banner at the left edge, and the white banners beside it carry script-like marks. Repaint with blank banners or none.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A night-time rainy city road packed with young people in dark clothes and face masks holding yellow and black umbrellas. Tents and stacked supplies sit along a central barrier, hazy spray drifts in the middle, and lit skyscrapers rise behind. Banners hang on a railing at left, including a yellow one with clearly painted Chinese characters. Painterly, edge to edge, no frame."
+  },
+  "womens-march-2017": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dense outdoor crowd, mostly women in pink knitted hats with cat ears, fills a broad street in overcast light. In the foreground a raised hand holds up a blank tan cardboard sign, and many more blank signs are held above the crowd. A domed building, resembling a capitol, sits in the hazy background between bare trees. Painterly, oil-like style, no readable text."
+  },
+  "woman-life-freedom-protests": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A woman with long wavy brown hair stands at the centre front, holding a pair of scissors in one hand and a cut lock of dark hair raised high in the other. Around her, women in headscarves and men raise fists and hair locks on a city street at dusk, with bare trees, apartment blocks, smoke and orange fire glow in the background. It is an oil-painting style image with no visible text, no frame, and no blood or injury."
   }
 }
