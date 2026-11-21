@@ -21557,7 +21557,10 @@
     "year": -1754,
     "category": "law",
     "description": "A Babylonian king had a table of laws carved in stone, setting fixed punishments for crimes from theft to murder.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ]
   },
   {
     "name": "newgate-prison-built",
@@ -21565,7 +21568,10 @@
     "year": 1188,
     "category": "law",
     "description": "A gatehouse in London's old city wall became a jail, starting centuries as the capital's most notorious prison.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "bridewell-house-of-correction",
@@ -21573,7 +21579,10 @@
     "year": 1553,
     "category": "law",
     "description": "A royal palace in London was given over to hold vagrants and petty offenders and set them to work, a model for later prisons.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "paris-lieutenant-general-police",
@@ -21581,7 +21590,10 @@
     "year": 1667,
     "category": "law",
     "description": "Louis XIV created a post to oversee the French capital's streets, lighting and order, giving Paris an early organised police.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "bow-street-runners-formed",
@@ -21589,7 +21601,10 @@
     "year": 1749,
     "category": "law",
     "description": "A London magistrate's small band of paid thief-takers began chasing offenders, an early step toward a professional police.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "vidocq-founds-surete",
@@ -21597,7 +21612,10 @@
     "year": 1812,
     "category": "law",
     "description": "A reformed criminal organised a plainclothes brigade using informers and records to catch thieves, ancestor of detective units.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "last-public-hanging-england",
@@ -21605,7 +21623,10 @@
     "year": 1868,
     "category": "law",
     "description": "A convicted murderer was hanged outside Newgate, the final execution held before a crowd; later ones moved behind prison walls.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "bertillon-criminal-measurement",
@@ -21613,7 +21634,10 @@
     "year": 1879,
     "category": "invention",
     "description": "A Paris police clerk introduced body measurements and photographs to identify repeat offenders, a forerunner of forensic records.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "first-electric-chair-execution",
@@ -21621,7 +21645,10 @@
     "year": 1890,
     "category": "law",
     "description": "A New York murderer became the first person put to death by electric current, in a grim trial of a supposedly humane method.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "scotland-yard-fingerprint-bureau",
@@ -21629,7 +21656,10 @@
     "year": 1901,
     "category": "invention",
     "description": "London's police adopted a filing system for fingerprints, replacing body measurements as the way to identify criminals.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "wireless-catches-crippen",
@@ -21637,7 +21667,11 @@
     "year": 1910,
     "category": "invention",
     "description": "A ship's captain radioed Scotland Yard about a suspicious passenger couple, and a detective overtook them on a faster liner.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "Canada",
+      "United Kingdom"
+    ]
   },
   {
     "name": "polygraph-invented",
@@ -21645,7 +21679,10 @@
     "year": 1921,
     "category": "invention",
     "description": "A California police officer and medical student built a device recording blood pressure and breathing to detect lies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-gas-chamber-execution",
@@ -21653,7 +21690,10 @@
     "year": 1924,
     "category": "law",
     "description": "A Nevada prison put a convicted murderer to death with lethal gas, introducing a new method of capital punishment.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-911-call",
@@ -21661,7 +21701,10 @@
     "year": 1968,
     "category": "invention",
     "description": "A phone call in a small Alabama town tested a single nationwide emergency number for police, fire and medical help.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "first-lethal-injection-execution",
@@ -21669,7 +21712,10 @@
     "year": 1982,
     "category": "law",
     "description": "A Texas prisoner became the first person executed by intravenous drugs, a method presented as more humane.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "dna-evidence-convicts-killer",
@@ -21677,7 +21723,10 @@
     "year": 1988,
     "category": "science",
     "description": "After mass testing of local men, a baker was convicted of two murders in the first case solved by DNA profiling.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "golden-state-killer-identified",
@@ -21685,6 +21734,9 @@
     "year": 2018,
     "category": "science",
     "description": "Investigators matched crime-scene DNA to relatives on a public ancestry database to arrest a suspect in decades-old cases.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ]
   }
 ]
