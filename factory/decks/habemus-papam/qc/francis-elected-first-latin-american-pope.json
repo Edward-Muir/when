@@ -1,0 +1,15 @@
+{
+  "slug": "francis-elected-first-latin-american-pope",
+  "description": "A painted nighttime scene in heavy rain. In the centre, a stone palace facade with an arched balcony framed by red velvet drapes, a warm lit interior behind, and a lectern with microphones on the balcony. A red velvet banner hangs over the balcony rail. Below, a dense crowd holds dark umbrellas and flags, including light-blue-and-white striped Argentine flags and several other flags. Statues stand on the side rooftops, and lamp posts light the square. No visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
