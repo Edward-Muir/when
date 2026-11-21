@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T06:11:57.626Z",
+  "updated_at": "2026-11-21T06:14:41.223Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,11 +135,11 @@
       "updated_at": "2026-11-21T05:07:23.079Z"
     },
     "hong-kong-umbrella-movement": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "Painted Chinese characters are visible on the yellow banner at the left edge, and the white banners beside it carry script-like marks. Repaint with blank banners or none.",
-      "sha256": "6b74077ec3c1b2a35e1a8622000e6ea31bd4e11e549bc46909432bc4159d55cf",
-      "updated_at": "2026-11-21T05:07:23.110Z"
+      "sha256": "1a61f8f32a2bba00891efcbb3a2dbffedcd028a65a6242c62dc0ba9eb326b12e",
+      "updated_at": "2026-11-21T06:14:41.223Z"
     },
     "womens-march-2017": {
       "state": "qc-pass",
