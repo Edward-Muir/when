@@ -21560,7 +21560,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "celestine-v-resigns",
@@ -21571,7 +21572,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "council-constance-ends-schism",
@@ -21583,7 +21585,8 @@
     "regions": [
       "Germany",
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "alexander-vi-elected-pope",
@@ -21595,7 +21598,8 @@
     "regions": [
       "Italy",
       "Vatican City"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "clement-xiv-suppresses-jesuits",
@@ -21606,7 +21610,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pius-ix-elected-pope",
@@ -21617,7 +21622,8 @@
     "difficulty": "medium",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "papal-infallibility-declared",
@@ -21629,7 +21635,8 @@
     "regions": [
       "Italy",
       "Vatican City"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "benedict-xvi-elected-pope",
@@ -21641,7 +21648,8 @@
     "regions": [
       "Italy",
       "Vatican City"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "francis-elected-first-latin-american-pope",
@@ -21653,7 +21661,8 @@
     "regions": [
       "Italy",
       "Vatican City"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "leo-xiv-elected-first-american-pope",
@@ -21665,6 +21674,7 @@
     "regions": [
       "Italy",
       "Vatican City"
-    ]
+    ],
+    "has_detail": true
   }
 ]
