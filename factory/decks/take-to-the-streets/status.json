@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T04:25:50.235Z",
+  "updated_at": "2026-11-21T04:28:38.965Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-21T04:25:50.235Z"
     },
     "hong-kong-umbrella-movement": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6b74077ec3c1b2a35e1a8622000e6ea31bd4e11e549bc46909432bc4159d55cf",
+      "updated_at": "2026-11-21T04:28:38.965Z"
     },
     "womens-march-2017": {
       "state": "pending",
