@@ -112,10 +112,10 @@
     "description": "A man in a white lab coat and gloves, seen from the chest up, holds up a translucent film printed with dark parallel horizontal bands and points at it with a gloved finger. Behind him a bright monitor or light box glows, and a shelf of bottles sits in the dark background. On the bench in front are a rack of small plastic sample tubes, a row of red-filled vials, pipettes and a flask with reddish liquid. The painting is an oil-style image with thick brushwork and fills the whole frame, with no visible text."
   },
   "golden-state-killer-identified": {
-    "state": "qc-fail",
-    "reason": "The label on the case file carries readable lettering (it reads like 'Cold Case' with more lines beneath). Paint the label blank or remove it. The loose papers are only text-like scribble and are acceptable.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "A dark oil-style still life on a desk: an open laptop showing a branching family-tree diagram, a worn thick case folder with a paper label, stacks of loose papers with lines of script, a small amber vial, a brass magnifying glass and a pen. No people, no frame, fills the image edge to edge."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "A dark, painterly still life on a desk. An open silver laptop shows a branching tree of grey nodes and connecting lines on a pale screen. Beside it sit a small glass vial with a DNA helix shape, a brass magnifying glass, a sheet of handwritten paper with illegible scribbles, and a thick, worn stack of old case files with a blank label. No people are shown, and the painting runs edge to edge."
   }
 }
