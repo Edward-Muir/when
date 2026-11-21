@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T05:07:23.173Z",
+  "updated_at": "2026-11-21T06:09:14.710Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,11 +86,11 @@
       "updated_at": "2026-11-21T03:07:10.643Z"
     },
     "bengali-language-movement-protests": {
-      "state": "qc-fail",
-      "attempts": 1,
+      "state": "downloaded",
+      "attempts": 2,
       "reason": "The black banner and the placards (and some shop signs) carry painted Bengali lettering, which breaks the no-text rule. Regenerate with blank placards and no legible script.",
-      "sha256": "3d6161c063a7fd80ac23e30ae5f174d7b54a58d852b7d7f8eaa3f1475e52270f",
-      "updated_at": "2026-11-21T05:07:22.878Z"
+      "sha256": "eec23ad6d78b03fd6f3340ccdb31018bc97fdc5dc2824baca0c8976f97696951",
+      "updated_at": "2026-11-21T06:09:14.710Z"
     },
     "first-aldermaston-march": {
       "state": "qc-pass",
