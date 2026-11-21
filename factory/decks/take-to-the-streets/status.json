@@ -3,7 +3,7 @@
   "name": "Take to the Streets",
   "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-21T02:20:33.715Z",
+  "updated_at": "2026-11-21T02:23:07.699Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-21T02:20:33.715Z"
     },
     "first-national-hunger-march": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "19fbc7757ecf2a726d79700e852dce505c2b3d4ce00a1d2cb541f3b5dc2ecd14",
+      "updated_at": "2026-11-21T02:23:07.699Z"
     },
     "sacco-vanzetti-worldwide-protests": {
       "state": "pending",
