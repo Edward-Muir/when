@@ -1,0 +1,19 @@
+{
+  "hammurabi-code-penalties": {"recognition": "high", "inferability": "high", "anchors": ["Babylonian king", "carved in stone"], "why": "Babylonian lawgiver places it in antiquity"},
+  "newgate-prison-built": {"recognition": "low", "inferability": "medium", "anchors": ["London's old city wall", "gatehouse"], "why": "city wall gatehouse suggests medieval London, but few clues beyond that"},
+  "bridewell-house-of-correction": {"recognition": "low", "inferability": "medium", "anchors": ["royal palace", "vagrants"], "why": "royal palace and vagrants hint at early modern England; 'model for later prisons'"},
+  "paris-lieutenant-general-police": {"recognition": "low", "inferability": "high", "anchors": ["Louis XIV"], "why": "Louis XIV anchors it to the 17th century"},
+  "bow-street-runners-formed": {"recognition": "medium", "inferability": "medium", "anchors": ["thief-takers", "magistrate", "early professional police"], "why": "thief-takers and pre-professional police suggest 18th century"},
+  "vidocq-founds-surete": {"recognition": "medium", "inferability": "medium", "anchors": ["plainclothes brigade", "detective units"], "why": "early detective work implies 19th-century Paris, without a firm anchor"},
+  "last-public-hanging-england": {"recognition": "medium", "inferability": "medium", "anchors": ["Newgate", "hanged"], "why": "Newgate and the move to private executions suggest Victorian era"},
+  "bertillon-criminal-measurement": {"recognition": "medium", "inferability": "medium", "anchors": ["photographs", "forensic records"], "why": "photography plus early forensics points to the late 19th century"},
+  "first-electric-chair-execution": {"recognition": "medium", "inferability": "high", "anchors": ["electric current", "New York"], "why": "electricity as execution method places it in the late 19th century"},
+  "scotland-yard-fingerprint-bureau": {"recognition": "medium", "inferability": "medium", "anchors": ["Scotland Yard", "replacing body measurements"], "why": "follows measurement methods; early 20th century modern policing"},
+  "wireless-catches-crippen": {"recognition": "medium", "inferability": "high", "anchors": ["wireless radio", "liner", "Scotland Yard"], "why": "radio plus ocean liners places it in the early 1900s"},
+  "polygraph-invented": {"recognition": "medium", "inferability": "medium", "anchors": ["California police officer", "blood pressure device"], "why": "modern device, 20th century, but era is broad"},
+  "first-gas-chamber-execution": {"recognition": "low", "inferability": "medium", "anchors": ["Nevada", "lethal gas"], "why": "modern US capital punishment, 20th century"},
+  "first-911-call": {"recognition": "medium", "inferability": "medium", "anchors": ["phone call", "nationwide emergency number"], "why": "telephone-era US, likely mid-to-late 20th century"},
+  "first-lethal-injection-execution": {"recognition": "medium", "inferability": "medium", "anchors": ["Texas", "intravenous drugs"], "why": "modern method, late 20th century"},
+  "dna-evidence-convicts-killer": {"recognition": "medium", "inferability": "high", "anchors": ["DNA profiling"], "why": "DNA profiling places it in the late 20th century"},
+  "golden-state-killer-identified": {"recognition": "medium", "inferability": "high", "anchors": ["public ancestry database", "DNA"], "why": "online ancestry databases mark the 2010s"}
+}
