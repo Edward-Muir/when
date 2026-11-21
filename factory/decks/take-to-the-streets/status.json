@@ -1,21 +1,26 @@
 {
   "deck": "take-to-the-streets",
   "name": "Take to the Streets",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-20T23:16:12.300Z",
-  "updated_at": "2026-11-20T23:16:12.300Z",
+  "updated_at": "2026-11-21T02:09:18.385Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-20T23:16:12.300Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-21T02:09:18.385Z"
     }
   ],
   "slugs": {
     "chartist-kennington-common-rally": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "f1beba5d1c175b76cb05c4edb70988a6d3afdf1de079b3db9303b21261bbabc9",
+      "updated_at": "2026-11-21T02:09:18.385Z"
     },
     "trafalgar-square-bloody-sunday": {
       "state": "pending",
