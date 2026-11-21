@@ -3,7 +3,7 @@
   "name": "Crime & Punishment",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T16:18:17.176Z",
-  "updated_at": "2026-11-21T17:21:53.579Z",
+  "updated_at": "2026-11-21T17:25:33.381Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-21T17:21:53.579Z"
     },
     "last-public-hanging-england": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "33a84d8dfd92ec25c65d21a20ad845db388bde6e13b328b327b1519876f3f097",
+      "updated_at": "2026-11-21T17:25:33.381Z"
     },
     "bertillon-criminal-measurement": {
       "state": "pending",
