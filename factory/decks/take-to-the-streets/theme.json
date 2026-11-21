@@ -1,0 +1,39 @@
+{
+  "id": "take-to-the-streets",
+  "name": "Take to the Streets",
+  "scope": "Yes if it is a famous protest march or demonstration",
+  "boundary": "Take to the Streets: protests and marches; strikes go to Down Tools, racial-equality protests to Civil Rights Road, Gandhi's Salt March to The Raj, armed uprisings to Rise Up!",
+  "neighbours": [
+    "down-tools",
+    "civil-rights",
+    "rise-up"
+  ],
+  "grid": {
+    "categories": [
+      "revolution",
+      "law"
+    ],
+    "eras": [
+      "industrial",
+      "worldWars",
+      "coldWar"
+    ],
+    "regions": [
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Women's March on Versailles (1789)",
+    "Peterloo (1819)",
+    "Chartists rally at Kennington Common (1848)",
+    "Bonus Army marches on Washington (1932)",
+    "Jarrow March (1936)",
+    "First Aldermaston march (1958)",
+    "May 68 in Paris (1968)",
+    "Stonewall (1969)",
+    "People Power Revolution in Manila (1986)",
+    "Tiananmen Square protests (1989)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

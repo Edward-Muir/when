@@ -1,0 +1,15 @@
+{
+  "slug": "occupy-wall-street",
+  "description": "A night scene in a city plaza packed with dome tents, blue tarps and a few lit tents. Several people sit in small groups around a campfire-like glow in the centre. Cardboard signs stand propped against the trees on both sides, covered in scribbled marks. Tall lit glass office towers and a construction crane rise behind the trees.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The cardboard signs carry dense scribbled marks that look like handwriting or lettering. They are not legible at this size, but they may read as painted-in text. Repaint the signs as blank or abstract, or confirm they carry no lettering."
+}

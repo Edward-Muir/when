@@ -1,0 +1,15 @@
+{
+  "slug": "bengali-language-movement-protests",
+  "description": "A crowd marches down a narrow street in an old-looking city. Young men and women in white kurtas, dhotis and saris walk in front, several holding a large blank white banner on poles and blank placards. Behind them, a line of helmeted police stands in smoke, and shopfronts line the street with signs that look like Bengali script. The style is a dark, painterly oil look, with no visible violence or blood.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shopfront signs at the top left and right carry what look like Bengali-script letters, which is painted-in text. Repaint those signs as blank or unreadable shapes, or re-generate the image without legible signage."
+}

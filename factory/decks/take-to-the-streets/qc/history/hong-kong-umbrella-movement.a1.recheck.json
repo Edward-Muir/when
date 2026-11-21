@@ -1,0 +1,15 @@
+{
+  "slug": "hong-kong-umbrella-movement",
+  "description": "A night-time rainy city road packed with young people in dark clothes and face masks holding yellow and black umbrellas. Tents and stacked supplies sit along a central barrier, hazy spray drifts in the middle, and lit skyscrapers rise behind. Banners hang on a railing at left, including a yellow one with clearly painted Chinese characters. Painterly, edge to edge, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted Chinese characters are visible on the yellow banner at the left edge, and the white banners beside it carry script-like marks. Repaint with blank banners or none."
+}
