@@ -3,7 +3,7 @@
   "name": "Habemus Papam",
   "stage": "art-in-progress",
   "created_at": "2026-11-21T12:16:20.816Z",
-  "updated_at": "2026-11-21T13:09:24.147Z",
+  "updated_at": "2026-11-21T13:11:54.526Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -23,10 +23,11 @@
       "updated_at": "2026-11-21T13:09:24.147Z"
     },
     "celestine-v-resigns": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "ec399bc892a7531ca37bd06f181b18ebd8948b732b930ede394d72612fc39ec1",
+      "updated_at": "2026-11-21T13:11:54.526Z"
     },
     "council-constance-ends-schism": {
       "state": "pending",
