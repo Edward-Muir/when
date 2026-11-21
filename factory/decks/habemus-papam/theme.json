@@ -1,0 +1,39 @@
+{
+ "id": "habemus-papam",
+ "name": "Habemus Papam",
+ "scope": "Yes if it is a moment in the history of the papacy",
+ "boundary": "Habemus Papam owns popes and councils; religious beginnings go to Faith Founded, the Crusades to The Crusades.",
+ "neighbours": [
+  "faith-founded",
+  "crusades",
+  "kings-of-france"
+ ],
+ "grid": {
+  "categories": [
+   "figures",
+   "diplomacy"
+  ],
+  "eras": [
+   "medieval",
+   "earlyModern",
+   "industrial"
+  ],
+  "regions": [
+   "Europe"
+  ]
+ },
+ "example_beats": [
+  "Leo I meets Attila (452)",
+  "Gregory I elected (590)",
+  "Leo III crowns Charlemagne (800)",
+  "Gregory VII and Canossa (1077)",
+  "Avignon papacy begins (1309)",
+  "Council of Constance ends the Western Schism (1417)",
+  "Julius II commissions St Peter's (1506)",
+  "Council of Trent opens (1545)",
+  "Papal infallibility declared (1870)",
+  "Lateran Treaty (1929)"
+ ],
+ "appeal": 2,
+ "status": "authoring"
+}

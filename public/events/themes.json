@@ -21550,5 +21550,161 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavey-founds-church-of-satan_it59s3?_a=BAMAMikS0",
     "color": "#202126",
     "text_color": "light"
+  },
+  {
+    "name": "fourth-lateran-council",
+    "friendly_name": "Fourth Lateran Council",
+    "year": 1215,
+    "category": "law",
+    "description": "Innocent III gathered hundreds of bishops in Rome to set doctrine on the Eucharist and require yearly confession.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fourth-lateran-council_w3axge?_a=BAMAMikS0",
+    "color": "#291e1a",
+    "text_color": "light"
+  },
+  {
+    "name": "celestine-v-resigns",
+    "friendly_name": "Celestine V Resigns",
+    "year": 1294,
+    "category": "figures",
+    "description": "A hermit elected pope after a two-year deadlock gave up the office within months, a rare papal abdication.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/celestine-v-resigns_puatu6?_a=BAMAMikS0",
+    "color": "#2a1e1a",
+    "text_color": "light"
+  },
+  {
+    "name": "council-constance-ends-schism",
+    "friendly_name": "Constance Ends the Schism",
+    "year": 1417,
+    "category": "diplomacy",
+    "description": "A council deposed or accepted the rival claimants and elected Martin V, reuniting the Western Church under one pope.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-constance-ends-schism_nq0ofa?_a=BAMAMikS0",
+    "color": "#4b2a1b",
+    "text_color": "light"
+  },
+  {
+    "name": "alexander-vi-elected-pope",
+    "friendly_name": "Borgia Becomes Pope Alexander VI",
+    "year": 1492,
+    "category": "figures",
+    "description": "A Spanish cardinal reputedly bought his way to the papal throne and went on to rule as a notorious pope.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexander-vi-elected-pope_txvk06?_a=BAMAMikS0",
+    "color": "#2a1e1b",
+    "text_color": "light"
+  },
+  {
+    "name": "clement-xiv-suppresses-jesuits",
+    "friendly_name": "Clement XIV Suppresses the Jesuits",
+    "year": 1773,
+    "category": "law",
+    "description": "Under pressure from Catholic monarchs, the pope dissolved the Society of Jesus across the world.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/clement-xiv-suppresses-jesuits_vofc1g?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "pius-ix-elected-pope",
+    "friendly_name": "Pius IX Elected Pope",
+    "year": 1846,
+    "category": "figures",
+    "description": "A reform-minded cardinal became pope and went on to hold the office longer than anyone in history apart from Peter.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pius-ix-elected-pope_vhinyo?_a=BAMAMikS0",
+    "color": "#291e1b",
+    "text_color": "light"
+  },
+  {
+    "name": "papal-infallibility-declared",
+    "friendly_name": "Papal Infallibility Declared",
+    "year": 1870,
+    "category": "law",
+    "description": "The First Vatican Council defined that the pope cannot err when he teaches on faith and morals from his chair.",
+    "difficulty": "medium",
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/papal-infallibility-declared_35umsi?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "benedict-xvi-elected-pope",
+    "friendly_name": "Benedict XVI Is Elected",
+    "year": 2005,
+    "category": "figures",
+    "description": "White smoke rose over the Sistine Chapel as a German cardinal succeeded the long-serving Polish pope.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/benedict-xvi-elected-pope_j0pn5q?_a=BAMAMikS0",
+    "color": "#323235",
+    "text_color": "light"
+  },
+  {
+    "name": "francis-elected-first-latin-american-pope",
+    "friendly_name": "First Latin American Pope Elected",
+    "year": 2013,
+    "category": "figures",
+    "description": "A cardinal from Argentina was chosen days after the pope stepped down, the first Latin American to lead the Church.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/francis-elected-first-latin-american-pope_3iuwcf?_a=BAMAMikS0",
+    "color": "#372824",
+    "text_color": "light"
+  },
+  {
+    "name": "leo-xiv-elected-first-american-pope",
+    "friendly_name": "First American Pope Elected",
+    "year": 2025,
+    "category": "figures",
+    "description": "A cardinal from Chicago was elected after the death of Francis, the first pope born in the United States.",
+    "difficulty": "easy",
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leo-xiv-elected-first-american-pope_52kf9i?_a=BAMAMikS0",
+    "color": "#25201f",
+    "text_color": "light"
   }
 ]
