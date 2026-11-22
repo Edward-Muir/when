@@ -1,0 +1,37 @@
+{
+  "id": "caliphates",
+  "name": "The Caliphs",
+  "scope": "Yes if it is a defining act of a caliph or caliphate",
+  "boundary": "The Caliphs owns the caliphate; Ottoman sultans go to Sublime Porte, the Crusades to The Crusades, schools and libraries to Places of Learning.",
+  "neighbours": [
+    "ottomans",
+    "crusades",
+    "schools"
+  ],
+  "grid": {
+    "categories": [
+      "empires",
+      "figures"
+    ],
+    "eras": [
+      "medieval"
+    ],
+    "regions": [
+      "Middle East & North Africa"
+    ]
+  },
+  "example_beats": [
+    "Death of Muhammad (632)",
+    "Muslims take Jerusalem (637)",
+    "Battle of the Camel (656)",
+    "Battle of Karbala (680)",
+    "Dome of the Rock completed (691)",
+    "Umayyad conquest of Spain (711)",
+    "Abbasid revolution (750)",
+    "Harun al-Rashid becomes caliph (786)",
+    "Cordoba caliphate proclaimed (929)",
+    "Abbasid caliphate restored in Cairo (1261)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

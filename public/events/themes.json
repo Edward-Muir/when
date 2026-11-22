@@ -24505,5 +24505,157 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sydney-metro-opens_1jucif?_a=BAMAMikS0",
     "color": "#212121",
     "text_color": "light"
+  },
+  {
+    "name": "abu-bakr-first-caliph",
+    "friendly_name": "Abu Bakr Becomes First Caliph",
+    "year": 632,
+    "category": "figures",
+    "description": "After the Prophet's death, the community's leaders chose his close companion Abu Bakr as its first successor.",
+    "difficulty": "easy",
+    "regions": [
+      "Saudi Arabia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/abu-bakr-first-caliph_0bsllb?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "rashidun-victory-nahavand",
+    "friendly_name": "Battle of Nahavand",
+    "year": 642,
+    "category": "warfare",
+    "description": "A decisive victory over the Sasanian army under Caliph Umar left the Persian heartland open to conquest.",
+    "difficulty": "easy",
+    "regions": [
+      "Iran",
+      "Saudi Arabia"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rashidun-victory-nahavand_7bdrik?_a=BAMAMikS0",
+    "color": "#4c392d",
+    "text_color": "light"
+  },
+  {
+    "name": "battle-of-the-camel-caliph-ali",
+    "friendly_name": "Battle of the Camel",
+    "year": 656,
+    "category": "warfare",
+    "description": "The first civil war among Muslims began as Caliph Ali's forces defeated an army led by Aisha outside Basra.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-the-camel-caliph-ali_t38fvb?_a=BAMAMikS0",
+    "color": "#3b2e26",
+    "text_color": "light"
+  },
+  {
+    "name": "great-mosque-damascus-begun",
+    "friendly_name": "Great Mosque of Damascus Begun",
+    "year": 706,
+    "category": "architecture",
+    "description": "An Umayyad caliph started a vast mosque on the site of a Christian basilica in his capital.",
+    "difficulty": "easy",
+    "regions": [
+      "Syria"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-mosque-damascus-begun_sc604c?_a=BAMAMikS0",
+    "color": "#432b17",
+    "text_color": "light"
+  },
+  {
+    "name": "samarra-founded-by-mutasim",
+    "friendly_name": "Al-Mu'tasim Founds Samarra",
+    "year": 836,
+    "category": "architecture",
+    "description": "An Abbasid caliph moved his court and Turkish guards to a new palace city north of Baghdad.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarra-founded-by-mutasim_xhd9zz?_a=BAMAMikS0",
+    "color": "#95724c",
+    "text_color": "light"
+  },
+  {
+    "name": "cordoba-caliphate-proclaimed",
+    "friendly_name": "Cordoba Caliphate Proclaimed",
+    "year": 929,
+    "category": "empires",
+    "description": "The emir of Cordoba took the title of caliph, creating a third rival caliphate in the Muslim world.",
+    "difficulty": "easy",
+    "regions": [
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cordoba-caliphate-proclaimed_kiwy2r?_a=BAMAMikS0",
+    "color": "#2a1e19",
+    "text_color": "light"
+  },
+  {
+    "name": "madinat-al-zahra-begun",
+    "friendly_name": "Madinat al-Zahra Palace City Begun",
+    "year": 936,
+    "category": "architecture",
+    "description": "The Cordoban caliph began a royal palace city outside his capital to display the power of his new caliphate.",
+    "difficulty": "easy",
+    "regions": [
+      "Spain"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/madinat-al-zahra-begun_rag358?_a=BAMAMikS0",
+    "color": "#453324",
+    "text_color": "light"
+  },
+  {
+    "name": "buyids-seize-baghdad",
+    "friendly_name": "Buyids Seize Baghdad",
+    "year": 945,
+    "category": "empires",
+    "description": "A Persian dynasty entered the capital and reduced the Abbasid caliph to a figurehead under their control.",
+    "difficulty": "easy",
+    "regions": [
+      "Iran",
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/buyids-seize-baghdad_vyxauw?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "saladin-ends-fatimid-caliphate",
+    "friendly_name": "Saladin Ends the Fatimid Caliphate",
+    "year": 1171,
+    "category": "empires",
+    "description": "Saladin had the sermon read in the name of the Abbasid caliph, ending Shia caliphal rule in Egypt.",
+    "difficulty": "easy",
+    "regions": [
+      "Egypt"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saladin-ends-fatimid-caliphate_bn5uqe?_a=BAMAMikS0",
+    "color": "#291f19",
+    "text_color": "light"
+  },
+  {
+    "name": "khilafat-movement-india",
+    "friendly_name": "Khilafat Movement Begins",
+    "year": 1919,
+    "category": "revolution",
+    "description": "Indian Muslims launched a mass campaign to defend the Ottoman caliph's position after the First World War.",
+    "difficulty": "easy",
+    "regions": [
+      "India"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/khilafat-movement-india_cdrhcw?_a=BAMAMikS0",
+    "color": "#403127",
+    "text_color": "light"
   }
 ]

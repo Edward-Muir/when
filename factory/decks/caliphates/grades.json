@@ -1,0 +1,62 @@
+{
+  "abu-bakr-first-caliph": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Prophet's death", "first successor", "companion"],
+    "why": "death of the Prophet and first successor place it at the start of Islam, 7th century"
+  },
+  "rashidun-victory-nahavand": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Sasanian army", "Caliph Umar", "conquest"],
+    "why": "Sasanian Persia and Caliph Umar place it in the early Islamic conquests"
+  },
+  "battle-of-the-camel-caliph-ali": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Caliph Ali", "first civil war among Muslims", "Aisha"],
+    "why": "Ali and Aisha and the first Muslim civil war point to the earliest Islamic decades"
+  },
+  "great-mosque-damascus-begun": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Umayyad caliph", "Christian basilica"],
+    "why": "Umayyad caliph building over a Christian basilica anchors to early medieval Islam"
+  },
+  "samarra-founded-by-mutasim": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Abbasid caliph", "Turkish guards", "Baghdad"],
+    "why": "Abbasid caliph and Baghdad place it in the medieval Islamic golden age"
+  },
+  "cordoba-caliphate-proclaimed": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["emir of Cordoba", "third rival caliphate"],
+    "why": "a third rival caliphate implies the Abbasid and Fatimid era, medieval"
+  },
+  "madinat-al-zahra-begun": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Cordoban caliph", "new caliphate", "palace city"],
+    "why": "Cordoban caliphate and palace city imply medieval Islamic Spain"
+  },
+  "buyids-seize-baghdad": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Abbasid caliph", "figurehead", "Persian dynasty"],
+    "why": "Abbasid caliph reduced to a figurehead places it in the medieval period"
+  },
+  "saladin-ends-fatimid-caliphate": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Saladin", "Fatimid", "Abbasid caliph"],
+    "why": "Saladin firmly anchors it to the 12th century Crusader era"
+  },
+  "khilafat-movement-india": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["First World War", "Ottoman caliph", "Indian Muslims"],
+    "why": "after the First World War gives the early 20th century directly"
+  }
+}
