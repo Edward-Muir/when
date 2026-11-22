@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:19:18.070Z",
+  "updated_at": "2026-11-22T21:22:06.451Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -51,10 +51,11 @@
       "updated_at": "2026-11-22T21:19:18.070Z"
     },
     "bronze-alloyed-sumer": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d6820ee980fafda05763c2ee53b375b63710de052d202cdbc6b697ee9c9a36ca",
+      "updated_at": "2026-11-22T21:22:06.451Z"
     },
     "glass-made-mesopotamia": {
       "state": "pending",
