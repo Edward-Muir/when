@@ -3,7 +3,7 @@
   "name": "Crowd Roars",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T12:41:22.366Z",
-  "updated_at": "2026-11-22T15:39:24.841Z",
+  "updated_at": "2026-11-22T15:42:38.435Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-22T15:39:24.841Z"
     },
     "concert-for-new-york-city": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0e48ca3f79cb8f347a97f10832ea83486f6775143ad5184094c9f457bd9dfa87",
+      "updated_at": "2026-11-22T15:42:38.435Z"
     },
     "live-8-concerts": {
       "state": "pending",
