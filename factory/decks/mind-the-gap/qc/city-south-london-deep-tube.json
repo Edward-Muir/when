@@ -1,0 +1,15 @@
+{
+  "slug": "city-south-london-deep-tube",
+  "description": "The painting shows a dark, circular iron-ringed tunnel with a small black steam locomotive and a riveted brown carriage. Passengers in top hats and bowler hats sit inside, a driver in a cap leans from the cab, and lanterns hang on the walls. Sparks and steam drift at the front, and there is no visible text or frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The card is about London's first electric deep tube and its scene asks for an electric locomotive, but the locomotive in the painting has a boiler-like cab and steam or smoke wisps, so it reads as a steam train. The tunnel and carriages fit the event, so the subject could pass if the artist is asked to show an electric locomotive with no steam."
+}

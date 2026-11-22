@@ -1,0 +1,15 @@
+{
+  "slug": "mexico-city-metro-opens",
+  "description": "An oil-painted scene on a dim subway platform. An orange-red train with lit windows is on the left. A woman in a patterned dress holds a small child's hand, and a man in a suit points at a white tiled wall covered in large black graffiti-style marks that look like letters. The clothing and hairstyles suggest the mid-20th century. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The wall carries large black letter-like marks, which read as painted text, and the card asks for a stylised animal pictogram on the wall, which is absent. The train and mid-century commuters do fit a metro opening, but the pictogram and the lettering are the wrong content."
+}

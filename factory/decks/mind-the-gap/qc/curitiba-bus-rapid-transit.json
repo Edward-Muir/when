@@ -1,0 +1,15 @@
+{
+  "slug": "curitiba-bus-rapid-transit",
+  "description": "A long red articulated bus runs in a central lane at dusk on a wet city avenue, with a crowd waiting under a roofed shelter on the right. Traffic of old boxy cars fills the side lanes on the left, and tall apartment blocks with lit windows stand under a dark stormy sky. There is no readable text, and the painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "hong-kong-mtr-opens",
+  "description": "Interior of a subway station platform in a painted, oil-style scene. A silver commuter train with a red front panel pulls into the platform, and a crowd of people in 1970s-style shirts, flared trousers and a knee-length skirt waits and boards. A red brick or tiled wall runs down the left, with high-rise residential towers visible through the station opening and a yellow safety line along the platform edge. No legible text or signage is visible, and the painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

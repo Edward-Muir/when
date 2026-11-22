@@ -1,0 +1,15 @@
+{
+  "slug": "madrid-metro-opens",
+  "description": "A painted scene of an early-1900s underground station with white tiled, vaulted walls and hanging lamps. A man in a dark suit and top hat gestures toward a green-and-wood electric carriage with uniformed conductors, while a crowd in flat caps, bowlers and black mantillas stands on the platform. Several advertising posters with painted lettering hang on the tiled walls, and the image runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Advertising posters on the tiled walls carry legible painted lettering (partial words such as 'TÍO' and 'Zarza'-style brand text, and a 'Rioja'-like label on the right). Remove or blur the poster text so no letters or words appear."
+}

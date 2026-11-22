@@ -1,0 +1,217 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "bus-service",
+      "why": "Same event in the same year as the existing card"
+    },
+    {
+      "beat": 1,
+      "decision": "cut",
+      "slug": null,
+      "why": "Passenger rail between towns on a shore line, fame 1; weakest on scope"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "shillibeer-london-omnibus",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "new-york-harlem-horsecar",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": null,
+      "why": "Fame 1, crowded early tramway era; spare cut"
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "london-underground",
+      "why": "Same event in the same year as the existing card"
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "san-francisco-clay-street-cable-car",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "electric-streetcar",
+      "why": "Same event in the same year as the existing card"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "richmond-electric-streetcar-network",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "city-south-london-deep-tube",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "budapest-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "paris-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "new-york-subway-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "buenos-aires-subte-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "madrid-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": null,
+      "why": "Fame 1 metro; cut to ease density"
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "tokyo-ginza-line-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 17,
+      "decision": "cut",
+      "slug": null,
+      "why": "Fame 1 metro; cut to ease density"
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "moscow-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "toronto-yonge-subway-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "rome-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "montreal-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 22,
+      "decision": "new",
+      "slug": "mexico-city-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "curitiba-bus-rapid-transit",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "washington-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "hong-kong-mtr-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "vancouver-skytrain-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 27,
+      "decision": "new",
+      "slug": "singapore-mrt-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "shanghai-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "bogota-transmilenio-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 30,
+      "decision": "reuse",
+      "slug": "delhi-metro",
+      "why": "Same event in the same year as the existing card"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "dubai-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "sydney-metro-opens",
+      "why": "No catalogue card for this event"
+    },
+    {
+      "beat": 33,
+      "decision": "reuse",
+      "slug": "crossrail-elizabeth-line",
+      "why": "Same event in the same year as the existing card"
+    }
+  ],
+  "gates": "PASS  size 30                (want exactly 30)\n  INFO  bins 5/8               (advisory, 6+ is spread)\n  PASS  band 0 5               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1881-1890 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (english-history) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 80 earlier themes:\n        1  english-history        london-underground",
+  "footholds": [
+    "london-underground",
+    "san-francisco-clay-street-cable-car",
+    "paris-metro-opens",
+    "new-york-subway-opens",
+    "moscow-metro-opens"
+  ]
+}
