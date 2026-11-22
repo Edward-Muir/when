@@ -3,7 +3,7 @@
   "name": "Crowd Roars",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T12:41:22.366Z",
-  "updated_at": "2026-11-22T15:19:50.934Z",
+  "updated_at": "2026-11-22T15:23:34.784Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-22T15:19:50.934Z"
     },
     "the-band-last-waltz": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "a566867535889df6075a7b71405ad93d4df0683f078a1867da449dc62cd74078",
+      "updated_at": "2026-11-22T15:23:34.784Z"
     },
     "simon-garfunkel-central-park": {
       "state": "pending",
