@@ -21560,7 +21560,8 @@
     "difficulty": "medium",
     "regions": [
       "Czechia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "lime-plaster-burning",
@@ -21571,7 +21572,8 @@
     "difficulty": "very-hard",
     "regions": [
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "first-copper-smelting-balkans",
@@ -21582,7 +21584,8 @@
     "difficulty": "medium",
     "regions": [
       "Serbia"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "varna-gold-grave-treasure",
@@ -21594,7 +21597,8 @@
     "regions": [
       "Bulgaria"
     ],
-    "year_end": -4340
+    "year_end": -4340,
+    "has_detail": true
   },
   {
     "name": "mesopotamian-kiln-fired-bricks",
@@ -21605,7 +21609,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bronze-alloyed-sumer",
@@ -21616,7 +21621,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "glass-made-mesopotamia",
@@ -21627,7 +21633,8 @@
     "difficulty": "easy",
     "regions": [
       "Iraq"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "mesoamerican-rubber-curing",
@@ -21638,7 +21645,8 @@
     "difficulty": "medium",
     "regions": [
       "Mexico"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "hittite-iron-mastery",
@@ -21650,7 +21658,8 @@
     "regions": [
       "Turkey",
       "Middle East & North Africa"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "roman-concrete-perfected",
@@ -21661,7 +21670,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "glassblowing-invented-syria",
@@ -21673,7 +21683,8 @@
     "regions": [
       "Lebanon",
       "Syria"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "tang-true-porcelain",
@@ -21684,7 +21695,8 @@
     "difficulty": "easy",
     "regions": [
       "China"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "murano-cristallo-glass",
@@ -21695,7 +21707,8 @@
     "difficulty": "easy",
     "regions": [
       "Italy"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "bottger-european-porcelain",
@@ -21706,7 +21719,8 @@
     "difficulty": "easy",
     "regions": [
       "Germany"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "darby-coke-smelting",
@@ -21717,7 +21731,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "parkesine-first-plastic",
@@ -21728,7 +21743,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "polyethylene-discovered-icl",
@@ -21739,7 +21755,8 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "synthetic-diamonds-ge",
@@ -21750,7 +21767,8 @@
     "difficulty": "easy",
     "regions": [
       "United States"
-    ]
+    ],
+    "has_detail": true
   },
   {
     "name": "pilkington-float-glass",
@@ -21761,6 +21779,7 @@
     "difficulty": "easy",
     "regions": [
       "United Kingdom"
-    ]
+    ],
+    "has_detail": true
   }
 ]
