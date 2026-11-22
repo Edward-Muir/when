@@ -25960,5 +25960,120 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nebuchadnezzar-wins-carchemish_cdzpgk?_a=BAMAMikS0",
     "color": "#483123",
     "text_color": "light"
+  },
+  {
+    "name": "kitchen-debate-nixon-khrushchev",
+    "friendly_name": "The Kitchen Debate",
+    "year": 1959,
+    "category": "diplomacy",
+    "description": "At a Moscow trade fair, a US vice president and the Soviet premier argued over rival ways of life beside a model home.",
+    "difficulty": "easy",
+    "regions": [
+      "Russia",
+      "United States",
+      "Europe"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kitchen-debate-nixon-khrushchev_sk1ics?_a=BAMAMikS0",
+    "color": "#24201d",
+    "text_color": "light"
+  },
+  {
+    "name": "kennedy-ich-bin-ein-berliner",
+    "friendly_name": "\"Ich Bin Ein Berliner\"",
+    "year": 1963,
+    "category": "diplomacy",
+    "description": "A US president told a vast crowd in a divided city that he stood with its people, in a speech of Cold War solidarity.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kennedy-ich-bin-ein-berliner_zne6rt?_a=BAMAMikS0",
+    "color": "#3a312a",
+    "text_color": "light"
+  },
+  {
+    "name": "us-cambodia-incursion",
+    "friendly_name": "US Forces Enter Cambodia",
+    "year": 1970,
+    "category": "warfare",
+    "description": "American and South Vietnamese troops crossed the border to strike enemy sanctuaries, sparking protests back home.",
+    "difficulty": "easy",
+    "regions": [
+      "Cambodia",
+      "United States",
+      "Vietnam"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-cambodia-incursion_rg03f8?_a=BAMAMikS0",
+    "color": "#23211c",
+    "text_color": "light"
+  },
+  {
+    "name": "ogaden-war-somalia-ethiopia",
+    "friendly_name": "The Ogaden War",
+    "year": 1977,
+    "category": "warfare",
+    "description": "Somalia invaded Ethiopia, and the Soviet Union switched sides to back Addis Ababa with arms and Cuban troops.",
+    "difficulty": "easy",
+    "regions": [
+      "Ethiopia",
+      "Somalia"
+    ],
+    "year_end": 1978,
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ogaden-war-somalia-ethiopia_qhxqs9?_a=BAMAMikS0",
+    "color": "#2a1e17",
+    "text_color": "light"
+  },
+  {
+    "name": "poland-martial-law-declared",
+    "friendly_name": "Poland Declares Martial Law",
+    "year": 1981,
+    "category": "revolution",
+    "description": "The Polish government banned the independent union and arrested its leaders as tanks and troops took the streets.",
+    "difficulty": "easy",
+    "regions": [
+      "Poland"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/poland-martial-law-declared_7y777a?_a=BAMAMikS0",
+    "color": "#332f30",
+    "text_color": "light"
+  },
+  {
+    "name": "iran-contra-affair-breaks",
+    "friendly_name": "The Iran-Contra Affair Breaks",
+    "year": 1986,
+    "category": "diplomacy",
+    "description": "News broke that secret arms sales to Iran had funded rebels fighting a leftist government in Central America.",
+    "difficulty": "medium",
+    "regions": [
+      "Iran",
+      "Nicaragua",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iran-contra-affair-breaks_uczxn0?_a=BAMAMikS0",
+    "color": "#262424",
+    "text_color": "light"
+  },
+  {
+    "name": "reagan-tear-down-this-wall",
+    "friendly_name": "\"Tear Down This Wall\"",
+    "year": 1987,
+    "category": "diplomacy",
+    "description": "At a divided city's famous gate, the US president called on the Soviet leader to open it and tear down the barrier.",
+    "difficulty": "easy",
+    "regions": [
+      "Germany",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reagan-tear-down-this-wall_zjeayz?_a=BAMAMikS0",
+    "color": "#25201e",
+    "text_color": "light"
   }
 ]

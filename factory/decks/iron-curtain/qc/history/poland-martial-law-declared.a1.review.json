@@ -1,0 +1,15 @@
+{
+  "slug": "poland-martial-law-declared",
+  "description": "A snowy city street at dusk or night. Three men in long greatcoats and a helmeted soldier stand by a metal brazier with a fire burning. Behind them, a shuttered shop front has a faded sign with illegible marks. An armoured personnel carrier with a turret sits on the right, and a soldier with a helmet and rifle stands beside it. A few figures in caps watch from a doorway on the left, and tram wires cross the sky.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The shop sign above the shutters has painted marks that look like lettering but do not resolve into readable words. Check whether a human reviewer reads them as text; if so, repaint or crop the sign. Otherwise the picture matches the card: soldiers, an armoured vehicle, a snowy Polish street, a shuttered shop and onlookers in a doorway."
+}

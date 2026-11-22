@@ -1,0 +1,15 @@
+{
+  "slug": "us-cambodia-incursion",
+  "description": "A tracked armoured personnel carrier with a white star leads a column down a red dirt track through dense jungle and bamboo, with infantry walking alongside. In the foreground two helmeted soldiers in camouflage study a paper map on a vehicle hood. The right soldier has a chest name tape with legible letters reading ARVN. The painting fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The right-hand soldier's chest tape shows legible painted letters (ARVN). Regenerate with blank or unreadable uniform tapes and patches."
+}
