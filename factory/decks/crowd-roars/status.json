@@ -3,7 +3,7 @@
   "name": "Crowd Roars",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T12:41:22.366Z",
-  "updated_at": "2026-11-22T16:07:13.133Z",
+  "updated_at": "2026-11-22T17:10:43.778Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -156,10 +156,11 @@
       "updated_at": "2026-11-22T16:07:13.133Z"
     },
     "beychella-coachella": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3f744e96bdfc2ce14c5c963a90e8a7eb32c09a1d651e31c272eacf7c3a1272c4",
+      "updated_at": "2026-11-22T17:10:43.778Z"
     },
     "one-world-together-at-home": {
       "state": "pending",
