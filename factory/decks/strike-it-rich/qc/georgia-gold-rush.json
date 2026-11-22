@@ -1,0 +1,15 @@
+{
+  "slug": "georgia-gold-rush",
+  "description": "A painting of several men panning for gold in a misty, wooded stream. In the foreground a man in a slouch hat and long coat kneels, holding a metal pan that shows bright gold flakes. Beside him a second man in a hat and waistcoat tends a wooden sluice box in the running water. Behind them many more men with shovels work among tall trees. Shovels and 19th-century dress are the era cues. No visible text, frame or gore; the painting fills the image edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
