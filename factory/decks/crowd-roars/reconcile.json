@@ -1,0 +1,236 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "cardigan-eisteddfod-1176",
+      "why": "Written new."
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "handel-messiah",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 2,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weaker scope (a rehearsal) in a crowded early stretch."
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": "",
+      "why": "A concert series, not one dated performance."
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "beethoven-fifth",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 5,
+      "decision": "reuse",
+      "slug": "beethoven-ninth",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 6,
+      "decision": "cut",
+      "slug": "",
+      "why": "Obscure, and a series of reuse/composer overlap."
+    },
+    {
+      "beat": 7,
+      "decision": "cut",
+      "slug": "",
+      "why": "Obscure debut, close to other 1830s-40s cards."
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "liszt-lisztomania-berlin",
+      "why": "Written new."
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "jenny-lind-america-tour",
+      "why": "Written new."
+    },
+    {
+      "beat": 10,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1, weakest scope."
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "carnegie-hall-opens",
+      "why": "Written new."
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "first-promenade-concert",
+      "why": "Written new."
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "mahler-symphony-of-a-thousand",
+      "why": "Written new."
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "hollywood-bowl-first-season",
+      "why": "Written new."
+    },
+    {
+      "beat": 15,
+      "decision": "reuse",
+      "slug": "rhapsody-in-blue-premiere",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "benny-goodman-carnegie-hall",
+      "why": "Written new."
+    },
+    {
+      "beat": 17,
+      "decision": "new",
+      "slug": "marian-anderson-lincoln-memorial",
+      "why": "Written new."
+    },
+    {
+      "beat": 18,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1, close to 1938/1939 cards."
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "moondog-coronation-ball",
+      "why": "Written new."
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "first-newport-jazz-festival",
+      "why": "Written new."
+    },
+    {
+      "beat": 21,
+      "decision": "cut",
+      "slug": "",
+      "why": "Fame 1, near Newport Jazz and 1950s density."
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "dylan-goes-electric",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 23,
+      "decision": "reuse",
+      "slug": "woodstock",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "first-glastonbury-festival",
+      "why": "Written new."
+    },
+    {
+      "beat": 25,
+      "decision": "new",
+      "slug": "the-band-last-waltz",
+      "why": "Written new."
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "simon-garfunkel-central-park",
+      "why": "Written new."
+    },
+    {
+      "beat": 27,
+      "decision": "reuse",
+      "slug": "live-aid",
+      "why": "Same event in the same year as the existing card."
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "three-tenors-rome",
+      "why": "Written new."
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "freddie-mercury-tribute-concert",
+      "why": "Written new."
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "first-coachella-festival",
+      "why": "Written new."
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "concert-for-new-york-city",
+      "why": "Written new."
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "live-8-concerts",
+      "why": "Written new."
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "tupac-hologram-coachella",
+      "why": "Written new."
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "beychella-coachella",
+      "why": "Written new."
+    },
+    {
+      "beat": 35,
+      "decision": "new",
+      "slug": "one-world-together-at-home",
+      "why": "Written new."
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "taylor-swift-eras-tour-begins",
+      "why": "Written new."
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 6/8               (advisory, 6+ is spread)\n  PASS  band 0 5               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1965-1970 (want 3 or fewer in any 10 years)\n  PASS  shared 3 (great-composers) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 91 earlier themes:\n        3  great-composers        handel-messiah, beethoven-ninth, rhapsody-in-blue-premiere",
+  "footholds": [
+    "beethoven-fifth",
+    "beethoven-ninth",
+    "first-glastonbury-festival",
+    "live-aid",
+    "first-coachella-festival",
+    "taylor-swift-eras-tour-begins"
+  ]
+}
