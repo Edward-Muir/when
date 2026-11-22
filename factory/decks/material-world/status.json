@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:31:11.324Z",
+  "updated_at": "2026-11-22T21:34:12.296Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-22T21:31:11.324Z"
     },
     "roman-concrete-perfected": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "6aea380ebf8426d6fa9932643a800351b641ba4a7db9cbcf0fe2c2e1de8593ce",
+      "updated_at": "2026-11-22T21:34:12.296Z"
     },
     "glassblowing-invented-syria": {
       "state": "pending",
