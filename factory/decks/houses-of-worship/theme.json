@@ -1,0 +1,41 @@
+{
+  "id": "houses-of-worship",
+  "name": "Houses of Worship",
+  "scope": "Yes if it is the building of a famous temple, church, mosque or shrine",
+  "boundary": "Houses of Worship: sacred buildings; spires that set height records go to Tallest in the World, Angkor Wat to Temple Kingdoms, the Golden Temple to Faiths of Asia, the Dome of the Rock to The Caliphs, Hagia Sophia to The Roman Story.",
+  "neighbours": [
+    "skyline",
+    "caliphates",
+    "rome"
+  ],
+  "grid": {
+    "categories": [
+      "architecture",
+      "art"
+    ],
+    "eras": [
+      "ancient",
+      "medieval",
+      "earlyModern"
+    ],
+    "regions": [
+      "Europe",
+      "Middle East & North Africa",
+      "South Asia"
+    ]
+  },
+  "example_beats": [
+    "Parthenon completed (432 BC)",
+    "Pantheon rebuilt (126)",
+    "Great Mosque of Cordoba begun (785)",
+    "Brihadeeswarar Temple completed (1010)",
+    "Notre-Dame begun (1163)",
+    "Florence dome completed (1436)",
+    "St Basil's Cathedral (1561)",
+    "Chartres Cathedral rebuilt (1194)",
+    "Blue Mosque (1616)",
+    "Sagrada Familia begun (1882)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

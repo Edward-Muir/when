@@ -1,0 +1,15 @@
+{
+  "slug": "st-pauls-cathedral-completed",
+  "description": "A large stone cathedral with a silver-grey dome on a colonnaded drum, seen from a rooftop over a city of brick houses with chimneys smoking. In the foreground, a man in a grey periwig and dark coat looks up at the dome, beside a workman in an apron pointing upward with a plumb line. Stormy clouds with shafts of light fill the sky. The painting fills the frame edge to edge with no border or text visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
