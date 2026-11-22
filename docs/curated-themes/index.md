@@ -71,10 +71,14 @@ to `REMINDER_WINDOW_DAYS` (14) ahead and the OS keeps the text as written, so an
 in the body is a promise about a date that may not be decided yet. Generic copy is what buys
 the scheduling freedom.
 
-## Cadence: Mondays and Fridays
+## Cadence: Mondays, Wednesdays and Fridays
 
-Curated themes run twice a week, on Mondays and Fridays; every other day is a seeded theme
-(Everything, category, region, country or pairing). Nothing in the code knows about weekdays:
+Curated themes run three times a week, on Mondays, Wednesdays and Fridays; every other day is
+a seeded theme (Everything, category, region, country or pairing). Wednesdays joined on
+2026-12-02, once the deck factory had 48 finished decks waiting: the hand-built themes kept
+their Mondays and Fridays, and factory decks took the Wednesdays between them. The only code
+that names the weekdays is the factory's slot picker (`CURATED_WEEKDAYS` in
+`scripts/factory/next-slot.js`). Nothing in the game knows about them:
 the cadence exists only in which dates the calendar holds, so changing it means re-publishing
 each unplayed theme's id with new `dates` (dates that have not opened can be dropped freely).
 The current plan is the schedule table at the top of [publish-inputs.md](publish-inputs.md).

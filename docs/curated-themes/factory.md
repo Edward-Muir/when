@@ -536,15 +536,15 @@ Runs on a deck in `ready-to-ship`, or one a crashed run left at `uploaded`. Othe
 - **Scheduling stays a workflow dispatch, never a commit** (a CLAUDE.md rule).
 - **A merged deck** is one whose `factory/decks/<id>/deck.json` is on main. It is pending until its id is on `/api/themes`, so D needs no state of its own.
 - **For each pending deck** (`.claude/skills/deck-factory/schedule.md`):
-  1. `scripts/factory/next-slot.js --deck <id>` reads `/api/themes` and picks the earliest open Monday or Friday, gaps included. The date must open (D-1 10:00Z) more than 48 hours from now, so a validate today and a publish tomorrow both land before it goes live anywhere.
-     - A second pending deck in the same run gets the next slot.
+  1. `scripts/factory/next-slot.js --deck <id>` reads `/api/themes` and picks the earliest open Monday, Wednesday or Friday, gaps included. The date must open (D-1 10:00Z) more than 48 hours from now, so a validate today and a publish tomorrow both land before it goes live anywhere.
+     - A second pending deck gets the next slot, in the same run or a later one: a date in another pending deck's lasting copy counts as held. Until 2026-11-22 only the same run's dispatches counted, and the clone is cleaned between runs, so 19 decks were handed colliding dates.
      - The theme JSON, with its date, goes to `factory/dispatch/<id>.json`, plus a lasting copy in `../when-images/factory-reports/`.
   2. It runs `gh workflow run publish-theme.yml -f mode=validate -F theme=@…` and reads the run's report.
   3. The calendar is the record of the date; nothing is committed.
   4. A deck's `intro` (the popup's blurb and fact, [index.md](index.md#theme-intros)) rides along: `next-slot.js` copies it from `deck.json` into the dispatch. The author stage does not write one yet, so for now it is added to `deck.json` by hand, with the fact checked like a card.
 - **For now D only validates and reports**, with the exact publish command for Edward. Publishing waits for his approval; the settings deny `mode=publish`. He switches it on once he trusts it.
-- `next-slot.js --report` gives the buffer, as days to the first open Monday or Friday. On 2026-10-18 that was 8 days, to 2026-10-26: the gap phase 0 names, plus the eight Sunday themes.
-- **No code needs changing to go beyond Mon/Fri:** curated themes can sit on any date, and no code knows about weekdays. Curated days are added as the buffer allows.
+- `next-slot.js --report` gives the buffer, as days to the first open Monday, Wednesday or Friday. On 2026-10-18 that was 8 days, to 2026-10-26: the gap phase 0 names, plus the eight Sunday themes.
+- **Wednesdays were added on 2026-11-22**, with 48 finished decks waiting: `CURATED_WEEKDAYS` in `next-slot.js` is the one place that names the cadence. Curated themes can sit on any date, and nothing in the game knows about weekdays, so a further day is that constant and a wording pass. The slot picker looks a year ahead, because that day's first open slot was already 169 days out.
 
 ---
 

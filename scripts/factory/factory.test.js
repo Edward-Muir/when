@@ -558,15 +558,51 @@ describe('qc-collect.js', () => {
 });
 
 describe('next-slot', () => {
-  const { slots, opensAt, weekday } = require('./next-slot');
+  const { promised, slots, opensAt, weekday } = require('./next-slot');
 
-  it('offers only Mondays and Fridays that open more than 48 hours away, skipping held dates', () => {
+  it('offers only Mondays, Wednesdays and Fridays that open more than 48 hours away, skipping held dates', () => {
     const now = Date.parse('2026-10-18T20:00:00Z'); // a Sunday
     const open = slots([{ id: 'x', dates: ['2026-10-26'] }], now);
-    assert.ok(open.every((s) => [1, 5].includes(weekday(s.date))));
+    assert.ok(open.every((s) => [1, 3, 5].includes(weekday(s.date))));
     assert.ok(open.every((s) => opensAt(s.date) - now >= 48 * 3600 * 1000));
     assert.equal(open[0].date, '2026-10-23', 'Friday the 23rd opens 22 Oct 10:00Z, 62 hours away');
+    assert.deepEqual(
+      open.slice(0, 4).map((s) => s.date),
+      ['2026-10-23', '2026-10-26', '2026-10-28', '2026-10-30'],
+      'Wednesday the 21st opens in 38 hours, too soon; the 28th is the first Wednesday'
+    );
     assert.equal(open.find((s) => s.date === '2026-10-26').holder, 'x');
+  });
+
+  it('looks a year ahead, so a full calendar still has a next slot', () => {
+    const now = Date.parse('2026-11-22T22:00:00Z');
+    const open = slots([], now);
+    assert.ok(
+      open.some((s) => s.date === '2027-05-10'),
+      '169 days out'
+    );
+  });
+
+  it("holds the dates earlier runs promised to other pending decks, and no one else's", () => {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'next-slot-'));
+    const write = (id, date) =>
+      fs.writeFileSync(
+        path.join(dir, `dispatch-${id}.json`),
+        JSON.stringify({ id, name: id, eventNames: [], dates: [date] })
+      );
+    write('a', '2026-10-23');
+    write('b', '2026-10-26');
+    write('published', '2026-10-28');
+    // `c` is pending but has never been slotted; `published` is no longer pending.
+    const given = promised(dir, ['a', 'b', 'c'], 'b');
+    assert.deepEqual(
+      given.map((t) => t.id),
+      ['a'],
+      "b's own copy and the published deck's are not held against b"
+    );
+    const now = Date.parse('2026-10-18T20:00:00Z');
+    const next = slots(given, now).find((s) => !s.holder);
+    assert.equal(next.date, '2026-10-26', 'the Friday is promised to a, so b gets the Monday');
   });
 });
 

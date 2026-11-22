@@ -30,8 +30,9 @@ day for UTC+13/+14), and `remove` takes a theme id to delete instead of adding o
 
 ## Schedule
 
-Curated themes run on **Mondays and Fridays**. The live calendar is the source of truth; this
-table is the plan it is published from. Themes not in it (`assassinations`, `automata`,
+Curated themes run on **Mondays, Wednesdays and Fridays** (Wednesdays from 2026-12-02, filled
+by factory decks, which are not in this table). The live calendar is the source of truth; this
+table is the plan the hand-built themes are published from. Themes not in it (`assassinations`, `automata`,
 `ciphers`, `kings-of-england`) have already run.
 
 `theme-gap`'s same-year gate, which the publish check does not test, caught one pair in
