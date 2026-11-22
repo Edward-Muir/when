@@ -1,0 +1,15 @@
+{
+  "slug": "flag-first-union-flag",
+  "description": "A painted scene of a wooden sailing ship's deck in a stormy sea under dark clouds. A blue flag with a red upright cross and white diagonal cross flies from a mast or bowsprit. Several men in dark doublets and wide-brimmed hats stand on deck, some looking up and one reaching toward the rigging. Ropes and rigging fill the right side. No visible text, no frame, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

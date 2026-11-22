@@ -1,0 +1,15 @@
+{
+  "slug": "flag-china-five-star-raised",
+  "description": "A painted scene of a large red-and-gold flag with yellow stars flying from a tall pole in front of a red walled gate with a tiled, ornate roof. A dense crowd of dark-clothed people stands in the foreground under a moody, cloudy dusk sky. There are street lamps at the left and no visible text, letters, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
