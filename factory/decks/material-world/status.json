@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:28:12.341Z",
+  "updated_at": "2026-11-22T21:31:11.324Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -72,10 +72,11 @@
       "updated_at": "2026-11-22T21:28:12.341Z"
     },
     "hittite-iron-mastery": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "56407535947b2aac26d42a4ee8c9ec0f8d5f06dd75d610a303fe1e84ffee34a1",
+      "updated_at": "2026-11-22T21:31:11.324Z"
     },
     "roman-concrete-perfected": {
       "state": "pending",
