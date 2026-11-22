@@ -1,0 +1,22 @@
+{
+  "eridu-settled-sumer": {"recognition": "very-low", "inferability": "medium", "anchors": ["Sumerians", "farmers", "oldest city"], "why": "Eridu is obscure, but Sumerians and first farmers place it in the ancient/prehistoric era"},
+  "uruk-first-city-walled": {"recognition": "medium", "inferability": "medium", "anchors": ["first city", "walled", "temples"], "why": "Uruk is known from school, and first city with temples suggests early antiquity"},
+  "cuneiform-writing-emerges": {"recognition": "high", "inferability": "high", "anchors": ["cuneiform", "clay tablets", "first writing"], "why": "Cuneiform as the first writing is taught widely and clearly places it at the dawn of history"},
+  "royal-tombs-of-ur": {"recognition": "medium", "inferability": "high", "anchors": ["Sumerian", "lyres", "gold headdresses"], "why": "Sumerian rulers with human sacrifice tombs place it in the early ancient era"},
+  "urukagina-reforms-lagash": {"recognition": "very-low", "inferability": "high", "anchors": ["Sumerian king", "first recorded reform"], "why": "Obscure, but Sumerian king and first recorded reform place it in early antiquity"},
+  "enheduanna-hymns-inanna": {"recognition": "low", "inferability": "high", "anchors": ["priestess", "Inanna", "first author known by name"], "why": "Goddess Inanna and first named author anchor it to ancient Mesopotamia"},
+  "naram-sin-victory-stele": {"recognition": "low", "inferability": "medium", "anchors": ["king", "King of the Four Quarters", "stele"], "why": "Stele and a king's title suggest antiquity, though no named culture"},
+  "elamites-sack-ur": {"recognition": "very-low", "inferability": "medium", "anchors": ["Elamites", "Ur", "Sumerian dynasty"], "why": "Last great Sumerian dynasty places it in ancient Mesopotamia, late Sumerian"},
+  "amorite-dynasty-babylon": {"recognition": "low", "inferability": "medium", "anchors": ["Amorite", "Babylon", "Mesopotamia"], "why": "Babylon and Mesopotamia give an ancient anchor but not which part"},
+  "plimpton-322-tablet": {"recognition": "low", "inferability": "high", "anchors": ["clay tablet", "before the Greeks"], "why": "Clay tablet and mathematics before the Greeks point to early antiquity"},
+  "code-of-hammurabi-carved": {"recognition": "high", "inferability": "high", "anchors": ["Hammurabi", "eye for an eye", "black stone pillar"], "why": "Famous school topic and Hammurabi is a firm ancient anchor"},
+  "hittites-sack-babylon": {"recognition": "medium", "inferability": "high", "anchors": ["Hittites", "Babylon", "Anatolia"], "why": "Hittites and Babylon are firmly Bronze Age ancient"},
+  "ashur-uballit-frees-assyria": {"recognition": "very-low", "inferability": "high", "anchors": ["Assyria", "pharaoh", "Mitanni"], "why": "Pharaoh, Mitanni and Assyria place it in the ancient Bronze Age"},
+  "gilgamesh-epic-standard-version": {"recognition": "high", "inferability": "high", "anchors": ["Gilgamesh", "Sumerian tales", "great flood"], "why": "Gilgamesh is well known and is ancient, although the standard version is later"},
+  "ashurnasirpal-builds-nimrud": {"recognition": "low", "inferability": "high", "anchors": ["Assyrian king", "Kalhu", "capital"], "why": "Assyrian king places it in the ancient Near East"},
+  "babylonian-astronomical-diaries": {"recognition": "low", "inferability": "high", "anchors": ["Babylon", "priests", "records of the heavens"], "why": "Babylon priests make it ancient"},
+  "tiglath-pileser-iii-reforms": {"recognition": "low", "inferability": "high", "anchors": ["Assyria", "usurper", "conquest"], "why": "Assyrian conquest empire anchors to the ancient Near East"},
+  "sennacherib-palace-nineveh": {"recognition": "low", "inferability": "high", "anchors": ["Assyrian king", "Nineveh", "gardens"], "why": "Assyrian king and Nineveh anchor it in antiquity"},
+  "ashurbanipal-takes-throne": {"recognition": "low", "inferability": "high", "anchors": ["Assyrian king", "scribe", "empire widest extent"], "why": "Assyrian empire at its peak is ancient Near East"},
+  "nebuchadnezzar-wins-carchemish": {"recognition": "medium", "inferability": "high", "anchors": ["Nebuchadnezzar", "Babylon", "Egyptian", "Assyrian"], "why": "Nebuchadnezzar is a famous biblical-era anchor placing it in the ancient first millennium BCE"}
+}
