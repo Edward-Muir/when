@@ -3,7 +3,7 @@
   "name": "Crowd Roars",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T12:41:22.366Z",
-  "updated_at": "2026-11-22T13:31:09.836Z",
+  "updated_at": "2026-11-22T13:33:52.338Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-22T13:31:09.836Z"
     },
     "hollywood-bowl-first-season": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "86c737d24ea2e84477821e9dbff47fb23fa91bfdecf9989899696aaef810e13c",
+      "updated_at": "2026-11-22T13:33:52.338Z"
     },
     "benny-goodman-carnegie-hall": {
       "state": "pending",
