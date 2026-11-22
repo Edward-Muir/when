@@ -1,21 +1,26 @@
 {
   "deck": "material-world",
   "name": "Material World",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T20:19:59.670Z",
+  "updated_at": "2026-11-22T21:08:50.058Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-22T20:19:59.670Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-22T21:08:50.058Z"
     }
   ],
   "slugs": {
     "fired-clay-figurines-venus": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "db621a1b53979892525989bc04566d81a08c300091522123c12188503f844a4a",
+      "updated_at": "2026-11-22T21:08:50.058Z"
     },
     "lime-plaster-burning": {
       "state": "pending",
