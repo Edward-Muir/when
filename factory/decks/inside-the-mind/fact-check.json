@@ -1,0 +1,31 @@
+{
+  "checked": [
+    {"slug":"hippocratics-brain-seat-of-mind","verdict":"ok","field":null,"found":"On the Sacred Disease, c. 400 BC, places thought, joy and madness in the brain","suggestion":"","source":"https://en.wikipedia.org/wiki/On_the_Sacred_Disease"},
+    {"slug":"bethlem-hospital-first-patients","verdict":"unsupported","field":"year","found":"1247 is the founding of the priory, which served pilgrims. Mentally ill patients are first documented in 1403 (some say 1357 or 1377). Name and description claim 1247 as the start of housing the mentally ill. Either retitle to the founding (e.g. 'Bethlem Priory Is Founded', description without the mentally-ill claim) or use 1403.","suggestion":"","source":"https://cms.historicengland.org.uk/research/inclusive-heritage/disability-history/1050-1485/from-bethlehem-to-bedlam"},
+    {"slug":"weyer-witches-mentally-ill","verdict":"ok","field":null,"found":"De praestigiis daemonum, 1563, Johann Weyer","suggestion":"","source":"https://en.wikipedia.org/wiki/Johann_Weyer"},
+    {"slug":"mesmer-animal-magnetism","verdict":"ok","field":null,"found":"Mesmer's magnetic treatment of Franziska Osterlin in Vienna, 1774","suggestion":"","source":"https://en.wikipedia.org/wiki/Franz_Mesmer"},
+    {"slug":"gall-founds-phrenology","verdict":"unsupported","field":"year","found":"Gall developed and began lecturing on phrenology from about 1796; 1810 is the publication of Anatomie et physiologie du systeme nerveux. Sources split; confirm the year the deck wants.","suggestion":"","source":"https://en.wikipedia.org/wiki/Phrenology"},
+    {"slug":"phineas-gage-accident","verdict":"ok","field":null,"found":"13 September 1848","suggestion":"","source":"https://en.wikipedia.org/wiki/Phineas_Gage"},
+    {"slug":"broca-speech-area","verdict":"ok","field":null,"found":"Patient Leborgne (Tan), 1861","suggestion":"","source":"https://en.wikipedia.org/wiki/Broca%27s_area"},
+    {"slug":"wundt-leipzig-psychology-lab","verdict":"ok","field":null,"found":"Leipzig lab, 1879","suggestion":"","source":"https://en.wikipedia.org/wiki/Wilhelm_Wundt"},
+    {"slug":"cajal-neuron-doctrine","verdict":"ok","field":null,"found":"Cajal's 1888 Golgi-stain work on bird cerebellum is the usual start of the neuron doctrine (name is 34 chars)","suggestion":"","source":"https://en.wikipedia.org/wiki/Neuron_doctrine"},
+    {"slug":"james-principles-of-psychology","verdict":"ok","field":null,"found":"Published 1890, two volumes","suggestion":"","source":"https://en.wikipedia.org/wiki/The_Principles_of_Psychology"},
+    {"slug":"binet-simon-intelligence-test","verdict":"ok","field":null,"found":"Binet-Simon scale, 1905","suggestion":"","source":"https://en.wikipedia.org/wiki/Binet%E2%80%93Simon_test"},
+    {"slug":"watson-behaviorist-manifesto","verdict":"ok","field":null,"found":"Psychology as the Behaviorist Views It, 1913","suggestion":"","source":"https://en.wikipedia.org/wiki/Behaviorism"},
+    {"slug":"little-albert-experiment","verdict":"ok","field":null,"found":"Conducted 1919-20, published 1920","suggestion":"","source":"https://en.wikipedia.org/wiki/Little_Albert_experiment"},
+    {"slug":"rorschach-inkblot-test","verdict":"ok","field":null,"found":"Psychodiagnostik, 1921, ten inkblots","suggestion":"","source":"https://en.wikipedia.org/wiki/Rorschach_test"},
+    {"slug":"moniz-first-lobotomy","verdict":"fix","field":"friendly_name","found":"Year 1935 is right (November 1935), but the operation was performed by surgeon Almeida Lima at Moniz's direction, not by Moniz himself","suggestion":"Moniz Orders the First Lobotomy","source":"https://en.wikipedia.org/wiki/Egas_Moniz"},
+    {"slug":"first-electroconvulsive-therapy","verdict":"ok","field":null,"found":"Cerletti and Bini, Rome, April 1938","suggestion":"","source":"https://en.wikipedia.org/wiki/Electroconvulsive_therapy"},
+    {"slug":"maslow-hierarchy-of-needs","verdict":"ok","field":null,"found":"A Theory of Human Motivation, 1943","suggestion":"","source":"https://en.wikipedia.org/wiki/Maslow%27s_hierarchy_of_needs"},
+    {"slug":"cade-lithium-for-mania","verdict":"ok","field":null,"found":"Cade's report, 1949","suggestion":"","source":"https://en.wikipedia.org/wiki/John_Cade"},
+    {"slug":"chlorpromazine-first-antipsychotic","verdict":"ok","field":null,"found":"Delay and Deniker psychiatric trials, 1952","suggestion":"","source":"https://en.wikipedia.org/wiki/Chlorpromazine"},
+    {"slug":"patient-hm-memory-loss","verdict":"ok","field":null,"found":"Surgery by Scoville, 1953","suggestion":"","source":"https://en.wikipedia.org/wiki/Henry_Molaison"},
+    {"slug":"milgram-obedience-experiment","verdict":"ok","field":null,"found":"Experiments began 1961 (published 1963); year is the start","suggestion":"","source":"https://en.wikipedia.org/wiki/Milgram_experiment"},
+    {"slug":"kubler-ross-five-stages-grief","verdict":"ok","field":null,"found":"On Death and Dying, 1969","suggestion":"","source":"https://en.wikipedia.org/wiki/On_Death_and_Dying_(book)"},
+    {"slug":"stanford-prison-experiment","verdict":"ok","field":null,"found":"August 1971, stopped after six days","suggestion":"","source":"https://en.wikipedia.org/wiki/Stanford_prison_experiment"},
+    {"slug":"rosenhan-pseudopatients","verdict":"ok","field":null,"found":"On Being Sane in Insane Places, Science, January 1973","suggestion":"","source":"https://en.wikipedia.org/wiki/Rosenhan_experiment"},
+    {"slug":"gardner-multiple-intelligences","verdict":"ok","field":null,"found":"Frames of Mind, 1983","suggestion":"","source":"https://en.wikipedia.org/wiki/Theory_of_multiple_intelligences"},
+    {"slug":"prozac-reaches-market","verdict":"unsupported","field":"year","found":"FDA approved Prozac on 29 December 1987 but Lilly launched it in the US in early (January) 1988; it reached Belgium in 1986. 'Reaches the market' is arguably 1988. Decide between 1987 (approval, retitle 'FDA Approves Prozac') and 1988.","suggestion":"","source":"https://ebsco.com/research-starters/health-and-medicine/fda-approves-prozac-antidepressant"},
+    {"slug":"optogenetics-switches-neurons","verdict":"ok","field":null,"found":"Boyden, Deisseroth et al., Nature Neuroscience, 2005","suggestion":"","source":"https://en.wikipedia.org/wiki/Optogenetics"}
+  ]
+}

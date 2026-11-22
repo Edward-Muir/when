@@ -1,0 +1,20 @@
+{
+  "slug": "rorschach-inkblot-test",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "13ae95ce3bc95979f1bba52a070a30d18d2f7eb0fbc00d7b2a10cdb65c44833f",
+  "dhash": "7909e1d050e4dc6c",
+  "nearest": {
+    "deck": {
+      "slug": "phineas-gage-accident",
+      "distance": 22
+    },
+    "catalogue": {
+      "slug": "kingdom-of-italy-proclaimed",
+      "distance": 16
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

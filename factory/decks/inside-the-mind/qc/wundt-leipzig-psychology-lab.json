@@ -1,0 +1,15 @@
+{
+  "slug": "wundt-leipzig-psychology-lab",
+  "description": "An oil-painting style scene in a dim, wood-paneled laboratory with shelves of books and glassware. A bearded man in a dark suit and pince-nez leans over a seated young man in a grey waistcoat, both looking at a brass apparatus with two white clock-like dials and wires running to a battery box. The setting suggests the late 19th century. No legible text, no visible frame, and nothing gory.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

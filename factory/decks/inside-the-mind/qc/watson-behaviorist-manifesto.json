@@ -1,0 +1,15 @@
+{
+  "slug": "watson-behaviorist-manifesto",
+  "description": "A white lab rat sits in a small wire cage on a worn wooden lectern. Behind it, a large chalkboard shows a white chalk maze, and a dark jacket hangs over the lectern's left edge. Papers, a pen, an inkwell and a glass of water sit on the desk. The setting is a dim, old-fashioned lecture hall with tiered wooden benches and arched windows. The image is an oil-style painting that fills the frame, with no visible text, frame or wounds.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

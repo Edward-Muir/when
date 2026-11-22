@@ -1,0 +1,15 @@
+{
+  "slug": "cajal-neuron-doctrine",
+  "description": "An older man with a grey-white beard, in a dark suit and apron, sits at a wooden desk drawing a branching, tree-like ink figure on paper with a pen. A brass microscope stands at right beside him. The desk holds glass dishes, slides, ink bottles and pen nibs, and more ink drawings of branching forms lie on sheets at the bottom edge. The background is dark brown and painterly, with a candle-lit, 19th-century studio feel. The painting runs edge to edge. No legible text is visible; the bottle labels are too small to read.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
