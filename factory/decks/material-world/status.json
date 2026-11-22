@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:11:12.947Z",
+  "updated_at": "2026-11-22T21:13:38.826Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-22T21:11:12.947Z"
     },
     "first-copper-smelting-balkans": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "29d67940390f01aca6c92da73fdb34462aa565539e03740430f31a4e22c9c79c",
+      "updated_at": "2026-11-22T21:13:38.826Z"
     },
     "varna-gold-grave-treasure": {
       "state": "pending",
