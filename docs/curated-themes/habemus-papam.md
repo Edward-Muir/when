@@ -28,38 +28,38 @@ The spine had 41 beats; 11 were cut for density in crowded decades or lower fame
 
 ## The 30
 
-|  Year | Slug                                        |         |
-| ----: | ------------------------------------------- | ------- |
-|   325 | `council-nicaea`                            |         |
-|   452 | `pope-leo-meets-attila`                     |         |
-|   590 | `gregory-great-becomes-pope`                |         |
-|   800 | `charlemagne`                               |         |
-|  1054 | `great-schism`                              |         |
-|  1077 | `walk-to-canossa`                           |         |
-|  1122 | `concordat-worms`                           |         |
-|  1215 | `fourth-lateran-council`                    | NEW     |
-|  1294 | `celestine-v-resigns`                       | NEW     |
-|  1309 | `avignon-papacy-begins`                     |         |
-|  1378 | `western-schism-begins`                     |         |
-|  1417 | `council-constance-ends-schism`             | NEW     |
-|  1492 | `alexander-vi-elected-pope`                 | NEW     |
-|  1506 | `st-peters-basilica-begins`                 |         |
-|  1508 | `michelangelo-sistine-chapel`               |         |
-|  1534 | `english-reformation-henry`                 |         |
-|  1545 | `council-trent`                             |         |
-|  1582 | `gregorian-calendar-reform`                 |         |
-|  1633 | `galileos-trial`                            |         |
-|  1773 | `clement-xiv-suppresses-jesuits`            | NEW     |
-|  1804 | `napoleon-coronation`                       |         |
-|  1846 | `pius-ix-elected-pope`                      | NEW     |
-|  1870 | `papal-infallibility-declared`              | NEW     |
-|  1929 | `vatican-city-created`                      |         |
-|  1962 | `second-vatican-council`                    |         |
-|  1978 | `year-three-popes`                          |         |
-|  1981 | `assassination-attempt-on-pope`             |         |
-|  2005 | `benedict-xvi-elected-pope`                 | NEW     |
-|  2013 | `francis-elected-first-latin-american-pope` | NEW     |
-|  2025 | `leo-xiv-elected-first-american-pope`       | NEW     |
+| Year | Slug                                        |     |
+| ---: | ------------------------------------------- | --- |
+|  325 | `council-nicaea`                            |     |
+|  452 | `pope-leo-meets-attila`                     |     |
+|  590 | `gregory-great-becomes-pope`                |     |
+|  800 | `charlemagne`                               |     |
+| 1054 | `great-schism`                              |     |
+| 1077 | `walk-to-canossa`                           |     |
+| 1122 | `concordat-worms`                           |     |
+| 1215 | `fourth-lateran-council`                    | NEW |
+| 1294 | `celestine-v-resigns`                       | NEW |
+| 1309 | `avignon-papacy-begins`                     |     |
+| 1378 | `western-schism-begins`                     |     |
+| 1417 | `council-constance-ends-schism`             | NEW |
+| 1492 | `alexander-vi-elected-pope`                 | NEW |
+| 1506 | `st-peters-basilica-begins`                 |     |
+| 1508 | `michelangelo-sistine-chapel`               |     |
+| 1534 | `english-reformation-henry`                 |     |
+| 1545 | `council-trent`                             |     |
+| 1582 | `gregorian-calendar-reform`                 |     |
+| 1633 | `galileos-trial`                            |     |
+| 1773 | `clement-xiv-suppresses-jesuits`            | NEW |
+| 1804 | `napoleon-coronation`                       |     |
+| 1846 | `pius-ix-elected-pope`                      | NEW |
+| 1870 | `papal-infallibility-declared`              | NEW |
+| 1929 | `vatican-city-created`                      |     |
+| 1962 | `second-vatican-council`                    |     |
+| 1978 | `year-three-popes`                          |     |
+| 1981 | `assassination-attempt-on-pope`             |     |
+| 2005 | `benedict-xvi-elected-pope`                 | NEW |
+| 2013 | `francis-elected-first-latin-american-pope` | NEW |
+| 2025 | `leo-xiv-elected-first-american-pope`       | NEW |
 
 20 reused, 10 new.
 
@@ -74,3 +74,12 @@ under the limit.
 None `unsupported`. One fix applied: the 1492 description said "Renaissance pope", a dating word,
 now "notorious pope". Detail prose for the newest cards (Pius IX, Benedict XVI, Francis, Leo XIV)
 had some claims written from memory, so spot-check them.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Popes, councils and the Vatican, including rival claimants, abdications and elections that reshaped the Church.
+- **Fact:** The word conclave comes from Latin roots meaning together and key, because the cardinals who elect a pope are locked in a room.
+
+Sources: [wordorigins.org](https://www.wordorigins.org/big-list-entries/conclave) (comes from either, or both, the French conclave and the Latin conclave, a locked room or chamber; con- (together) + -clavis (key)).

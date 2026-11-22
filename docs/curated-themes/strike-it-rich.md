@@ -128,3 +128,12 @@ All three are questions about the year, and each card keeps the year it was writ
 
 The fact checker searched for these three, Joachimsthal and Lac de Gras, and checked the other
 19 new cards against the spine's source links without a search of their own.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty rushes and finds of gold, silver and diamonds, in mines, riverbeds, deserts and frozen ground.
+- **Fact:** The carat takes its name from the carob seed, which jewellers used as a balance weight for gems. A carat is now defined as exactly 200 milligrams.
+
+Sources: [en.wikipedia.org](<https://en.wikipedia.org/wiki/Carat_(mass)>) (The Arabic term was borrowed from Greek kerátion, meaning carob seed. A metric carat of 200 milligrams is exactly one-fifth of a gram.); [EN.wikipedia.com](<https://EN.wikipedia.com/wiki/Carat_(unit)>) (Carob seeds were long used as counterweights for gemstones (seen in search summary).).

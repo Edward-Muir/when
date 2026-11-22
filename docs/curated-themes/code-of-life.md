@@ -26,38 +26,38 @@ Edges argued rather than assumed:
 
 ## The 30
 
-|  Year | Slug                              |                |
-| ----: | --------------------------------- | -------------- |
-|  1866 | `mendel-genetics`                 |                |
-|  1869 | `miescher-isolates-nuclein`       | NEW            |
-|  1882 | `flemming-chromosomes-mitosis`    | NEW            |
-|  1900 | `mendel-work-rediscovered`        | NEW            |
-|  1902 | `chromosome-theory-inheritance`   | NEW            |
-|  1909 | `johannsen-coins-gene`            | NEW            |
-|  1910 | `morgan-fruit-fly-linkage`        | NEW            |
-|  1913 | `sturtevant-first-genetic-map`    | NEW            |
-|  1927 | `muller-xray-mutations`           | NEW            |
-|  1928 | `griffith-transforming-principle` | NEW            |
-|  1931 | `mcclintock-crossing-over`        | NEW            |
-|  1941 | `one-gene-one-enzyme`             | NEW            |
-|  1944 | `avery-dna-heredity`              | NEW            |
-|  1952 | `hershey-chase-experiment`        | NEW            |
-|  1953 | `dna-structure`                   | foothold       |
-|  1956 | `human-46-chromosomes`            | NEW            |
-|  1966 | `genetic-code-cracked`            | NEW            |
-|  1970 | `first-restriction-enzyme`        | NEW            |
-|  1973 | `cohen-boyer-recombinant-dna`     | foothold · NEW |
-|  1977 | `dna-sequencing-method`           |                |
-|  1983 | `mullis-invents-pcr`              | NEW            |
-|  1984 | `dna-fingerprinting`              |                |
-|  1990 | `human-genome-project`            |                |
-|  1996 | `dolly-sheep-cloned`              | foothold       |
-|  2003 | `human-genome-completed`          |                |
-|  2006 | `induced-stem-cells-created`      |                |
-|  2012 | `crispr-gene-editing`             | foothold       |
-|  2018 | `he-jiankui-gene-edited-babies`   | foothold · NEW |
-|  2023 | `first-crispr-therapy-approved`   | foothold · NEW |
-|  2025 | `custom-base-editing-infant`      | NEW            |
+| Year | Slug                              |                |
+| ---: | --------------------------------- | -------------- |
+| 1866 | `mendel-genetics`                 |                |
+| 1869 | `miescher-isolates-nuclein`       | NEW            |
+| 1882 | `flemming-chromosomes-mitosis`    | NEW            |
+| 1900 | `mendel-work-rediscovered`        | NEW            |
+| 1902 | `chromosome-theory-inheritance`   | NEW            |
+| 1909 | `johannsen-coins-gene`            | NEW            |
+| 1910 | `morgan-fruit-fly-linkage`        | NEW            |
+| 1913 | `sturtevant-first-genetic-map`    | NEW            |
+| 1927 | `muller-xray-mutations`           | NEW            |
+| 1928 | `griffith-transforming-principle` | NEW            |
+| 1931 | `mcclintock-crossing-over`        | NEW            |
+| 1941 | `one-gene-one-enzyme`             | NEW            |
+| 1944 | `avery-dna-heredity`              | NEW            |
+| 1952 | `hershey-chase-experiment`        | NEW            |
+| 1953 | `dna-structure`                   | foothold       |
+| 1956 | `human-46-chromosomes`            | NEW            |
+| 1966 | `genetic-code-cracked`            | NEW            |
+| 1970 | `first-restriction-enzyme`        | NEW            |
+| 1973 | `cohen-boyer-recombinant-dna`     | foothold · NEW |
+| 1977 | `dna-sequencing-method`           |                |
+| 1983 | `mullis-invents-pcr`              | NEW            |
+| 1984 | `dna-fingerprinting`              |                |
+| 1990 | `human-genome-project`            |                |
+| 1996 | `dolly-sheep-cloned`              | foothold       |
+| 2003 | `human-genome-completed`          |                |
+| 2006 | `induced-stem-cells-created`      |                |
+| 2012 | `crispr-gene-editing`             | foothold       |
+| 2018 | `he-jiankui-gene-edited-babies`   | foothold · NEW |
+| 2023 | `first-crispr-therapy-approved`   | foothold · NEW |
+| 2025 | `custom-base-editing-infant`      | NEW            |
 
 21 of the 30 were authored for this theme, and 9 were already in the catalogue. The footholds
 marked above are the reconciler's easy-labelled cards, before the blind grade moved some
@@ -97,7 +97,7 @@ Mendel's paper sitting for 34 years, Avery's age, Griffith's death in a 1941 bom
 
 The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
 
-- **Blurb:** The experiments, maps and tools that revealed how heredity is written, and then let us edit it.
-- **Fact:** Friedrich Miescher first isolated DNA in 1869 from the pus on discarded surgical bandages, and called it nuclein.
+- **Blurb:** Thirty steps in understanding how genes work, and in learning to read and rewrite DNA.
+- **Fact:** A typical human cell holds about two metres of DNA, packed into a nucleus only around six microns across.
 
-Sources: [Friedrich Miescher (Wikipedia)](https://en.wikipedia.org/wiki/Friedrich_Miescher).
+Sources: [sciencefocus.com](https://www.sciencefocus.com/the-human-body/how-long-is-your-dna) (stretched out the DNA in one cell "would be about 2m long" and fits "into a space just 6 microns across").

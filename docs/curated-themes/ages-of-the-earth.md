@@ -101,3 +101,12 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
 - None unsupported. Worth a look at review: `holocene-epoch-begins` is stored at -11700, the
   "years before 2000" figure used straight as a year; the spine wrote it as -9700 (BCE). The
   deck keeps the existing card's year.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** The eons, eras, periods and epochs that divide the geological time scale of Earth.
+- **Fact:** The Ordovician is named after a Welsh tribe, the Ordovices, and the Permian after the Russian region of Perm.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Ordovician) (The Ordovician, named after the Welsh tribe of the Ordovices); [en.wikipedia.org](https://en.wikipedia.org/wiki/Permian) (named the period after the surrounding Russian region of Perm).

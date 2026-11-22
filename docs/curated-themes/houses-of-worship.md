@@ -27,38 +27,38 @@ Ise, Damascus, Santiago, Milan, Kinkaku-ji, the Temple of Heaven, Selimiye and t
 
 ## The 30
 
-|  Year | Slug                           |                |
-| ----: | ------------------------------ | -------------- |
-| -1971 | `karnak-temple-complex-begun`  | NEW            |
-| -1264 | `abu-simbel-temples-carved`    | foothold · NEW |
-|  -957 | `solomons-temple`              | foothold       |
-|  -438 | `parthenon-dedicated-athena`   | foothold · NEW |
-|   126 | `pantheon-rome-built`          | foothold       |
-|   622 | `prophets-mosque-medina-built` | NEW            |
-|   752 | `nara-todaiji`                 |                |
-|   785 | `great-mosque-cordoba-begun`   | NEW            |
-|   800 | `borobudur-construction`       |                |
-|   970 | `fatimid-al-azhar-mosque`      |                |
-|  1010 | `tanjore-temple`               |                |
-|  1065 | `westminster-abbey-consecrated`| NEW            |
-|  1163 | `notre-dame-construction`      | foothold       |
-|  1194 | `gothic-cathedral-construction`|                |
-|  1200 | `ethiopian-lalibela-churches`  |                |
-|  1248 | `cologne-cathedral-begun`      |                |
-|  1296 | `florence-cathedral-begun`     | NEW            |
-|  1436 | `brunelleschi-dome`            |                |
-|  1506 | `st-peters-basilica-begins`    |                |
-|  1561 | `st-basils-cathedral-completed`| foothold · NEW |
-|  1616 | `istanbul-blue-mosque`         |                |
-|  1710 | `st-pauls-cathedral-completed` | NEW            |
-|  1882 | `sagrada-familia-begun`        | foothold · NEW |
-|  1893 | `salt-lake-temple-dedicated`   | NEW            |
-|  1907 | `great-mosque-djenne-rebuilt`  | NEW            |
-|  1955 | `notre-dame-du-haut`           |                |
-|  1962 | `coventry-cathedral-consecrated`| NEW           |
-|  1993 | `hassan-ii-mosque-inaugurated` | NEW            |
-|  2007 | `sheikh-zayed-grand-mosque-opens`| NEW          |
-|  2024 | `notre-dame-paris-reopens`     | foothold · NEW |
+|  Year | Slug                              |                |
+| ----: | --------------------------------- | -------------- |
+| -1971 | `karnak-temple-complex-begun`     | NEW            |
+| -1264 | `abu-simbel-temples-carved`       | foothold · NEW |
+|  -957 | `solomons-temple`                 | foothold       |
+|  -438 | `parthenon-dedicated-athena`      | foothold · NEW |
+|   126 | `pantheon-rome-built`             | foothold       |
+|   622 | `prophets-mosque-medina-built`    | NEW            |
+|   752 | `nara-todaiji`                    |                |
+|   785 | `great-mosque-cordoba-begun`      | NEW            |
+|   800 | `borobudur-construction`          |                |
+|   970 | `fatimid-al-azhar-mosque`         |                |
+|  1010 | `tanjore-temple`                  |                |
+|  1065 | `westminster-abbey-consecrated`   | NEW            |
+|  1163 | `notre-dame-construction`         | foothold       |
+|  1194 | `gothic-cathedral-construction`   |                |
+|  1200 | `ethiopian-lalibela-churches`     |                |
+|  1248 | `cologne-cathedral-begun`         |                |
+|  1296 | `florence-cathedral-begun`        | NEW            |
+|  1436 | `brunelleschi-dome`               |                |
+|  1506 | `st-peters-basilica-begins`       |                |
+|  1561 | `st-basils-cathedral-completed`   | foothold · NEW |
+|  1616 | `istanbul-blue-mosque`            |                |
+|  1710 | `st-pauls-cathedral-completed`    | NEW            |
+|  1882 | `sagrada-familia-begun`           | foothold · NEW |
+|  1893 | `salt-lake-temple-dedicated`      | NEW            |
+|  1907 | `great-mosque-djenne-rebuilt`     | NEW            |
+|  1955 | `notre-dame-du-haut`              |                |
+|  1962 | `coventry-cathedral-consecrated`  | NEW            |
+|  1993 | `hassan-ii-mosque-inaugurated`    | NEW            |
+|  2007 | `sheikh-zayed-grand-mosque-opens` | NEW            |
+|  2024 | `notre-dame-paris-reopens`        | foothold · NEW |
 
 14 reused cards and 16 new ones. Existing cards that were close but not the same event, so a new
 card was written: `parthenon-completed` (432 BC, not the 438 BC dedication), the existing Abu
@@ -95,5 +95,7 @@ check they got. Nothing is still `unsupported`.
 
 The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
 
-- **Blurb:** Famous temples, churches, cathedrals and mosques, and the centuries it took to build them.
-- **Fact:** The Great Mosque of Djenné is replastered with fresh mud by the townspeople every year, because the rains wear its walls away.
+- **Blurb:** Thirty temples, cathedrals, mosques and shrines, each dated to the start or completion of its building.
+- **Fact:** The Great Hypostyle Hall at Karnak had a roof held up by 134 giant columns, in a hall about 102 metres long and 53 metres wide.
+
+Sources: [guinnessworldrecords.com](<https://www.guinnessworldrecords.com/world-records/largest-hypostyle-(pillared)-hall>) (had a roof supported by 134 giant columns and is 102 m (335 ft) long and 53 m (174 m) wide).

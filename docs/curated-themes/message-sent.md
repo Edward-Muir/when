@@ -24,38 +24,38 @@ pocket gadgets to In Your Pocket. Two edges were argued rather than assumed:
 
 ## The 30
 
-|  Year | Slug                                   |                |
-| ----: | -------------------------------------- | -------------- |
-|  -500 | `postal-system-persia`                 |                |
-|  -490 | `pheidippides-marathon-run`            | NEW            |
-|   -27 | `cursus-publicus-founded`              | NEW            |
-|  1229 | `mongol-yam-relay-network`             | NEW            |
-|  1490 | `postal-system-expansion`              |                |
-|  1588 | `beacon-chain-armada-warning`          | NEW            |
-|  1635 | `royal-mail-opens-to-public`           | NEW            |
-|  1784 | `first-mail-coach-bath-london`         | NEW            |
-|  1794 | `chappe-semaphore-line`                | NEW            |
-|  1837 | `cooke-wheatstone-telegraph`           | NEW            |
-|  1840 | `postage-stamp`                        | foothold       |
-|  1844 | `first-telegraph-message`              | foothold       |
-|  1858 | `first-transatlantic-cable`            | foothold       |
-|  1860 | `pony-express-launches`                | foothold · NEW |
-|  1866 | `transatlantic-cable-completed`        |                |
-|  1876 | `bell-telephone`                       | foothold       |
-|  1896 | `rural-free-delivery-begins`           | NEW            |
-|  1901 | `marconi-transatlantic-radio-signal`   | foothold · NEW |
-|  1911 | `first-official-airmail-flight`        | NEW            |
-|  1917 | `zimmermann-telegram`                  |                |
-|  1918 | `cher-ami-pigeon-message`              | NEW            |
-|  1927 | `transatlantic-radiotelephone-service` | NEW            |
-|  1935 | `china-clipper-pacific-airmail`        | NEW            |
-|  1956 | `tat-1-transatlantic-telephone-cable`  | NEW            |
-|  1962 | `communications-satellite`             |                |
-|  1963 | `zip-codes-introduced`                 | NEW            |
-|  1969 | `dhl-express-courier-founded`          | NEW            |
-|  1973 | `fedex-first-deliveries`               | foothold · NEW |
-|  2006 | `western-union-ends-telegrams`         | NEW            |
-|  2016 | `amazon-first-drone-delivery`          | NEW            |
+| Year | Slug                                   |                |
+| ---: | -------------------------------------- | -------------- |
+| -500 | `postal-system-persia`                 |                |
+| -490 | `pheidippides-marathon-run`            | NEW            |
+|  -27 | `cursus-publicus-founded`              | NEW            |
+| 1229 | `mongol-yam-relay-network`             | NEW            |
+| 1490 | `postal-system-expansion`              |                |
+| 1588 | `beacon-chain-armada-warning`          | NEW            |
+| 1635 | `royal-mail-opens-to-public`           | NEW            |
+| 1784 | `first-mail-coach-bath-london`         | NEW            |
+| 1794 | `chappe-semaphore-line`                | NEW            |
+| 1837 | `cooke-wheatstone-telegraph`           | NEW            |
+| 1840 | `postage-stamp`                        | foothold       |
+| 1844 | `first-telegraph-message`              | foothold       |
+| 1858 | `first-transatlantic-cable`            | foothold       |
+| 1860 | `pony-express-launches`                | foothold · NEW |
+| 1866 | `transatlantic-cable-completed`        |                |
+| 1876 | `bell-telephone`                       | foothold       |
+| 1896 | `rural-free-delivery-begins`           | NEW            |
+| 1901 | `marconi-transatlantic-radio-signal`   | foothold · NEW |
+| 1911 | `first-official-airmail-flight`        | NEW            |
+| 1917 | `zimmermann-telegram`                  |                |
+| 1918 | `cher-ami-pigeon-message`              | NEW            |
+| 1927 | `transatlantic-radiotelephone-service` | NEW            |
+| 1935 | `china-clipper-pacific-airmail`        | NEW            |
+| 1956 | `tat-1-transatlantic-telephone-cable`  | NEW            |
+| 1962 | `communications-satellite`             |                |
+| 1963 | `zip-codes-introduced`                 | NEW            |
+| 1969 | `dhl-express-courier-founded`          | NEW            |
+| 1973 | `fedex-first-deliveries`               | foothold · NEW |
+| 2006 | `western-union-ends-telegrams`         | NEW            |
+| 2016 | `amazon-first-drone-delivery`          | NEW            |
 
 21 of the 30 were authored for this theme. The footholds are the reconciler's picks from the
 spine's fame; band 0 itself is measured by `theme-gap` and moves with the catalogue.
@@ -90,3 +90,14 @@ Still `unsupported` after the fact check, for review:
 Also noted: the mail coach trial ran Bristol to London by way of Bath, so the slug
 `first-mail-coach-bath-london` is loose though the card's text holds; and Cher Ami was found by
 DNA analysis to be male, which is why the name reads "Delivers the Message".
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty ways people have sent news and parcels across distance, by courier, cable, wire, wing and signal.
+- **Fact:** Henry Brown escaped slavery by having himself shipped in a wooden crate from Richmond, Virginia, to Philadelphia. He was known ever after as Box Brown.
+
+Sources: [civilwarstudies.org](https://civilwarstudies.org/articles/Vol_6/box-brown.shtm) (the 3 foot by 2 foot by 2 foot crate; After 27 hours and 300 miles; addressed it to Mr. James McKim in Philadelphia).
+
+Reworded from the writer's draft: sources disagree on the crate's size and the distance.

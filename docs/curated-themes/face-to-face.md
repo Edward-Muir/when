@@ -36,38 +36,38 @@ Edges argued rather than assumed:
 
 ## The 30
 
-|  Year | Slug                                |                |
-| ----: | ----------------------------------- | -------------- |
-|  -138 | `zhang-qian-western-mission`        | foothold · NEW |
-|   -41 | `cleopatra-meets-antony-tarsus`     | foothold · NEW |
-|   166 | `roman-embassy-han-court`           | foothold · NEW |
-|   452 | `pope-leo-meets-attila`             | foothold       |
-|   802 | `abul-abbas-elephant-charlemagne`   | foothold · NEW |
-|   921 | `ibn-fadlan-volga-embassy`          | foothold · NEW |
-|  1077 | `walk-to-canossa`                   |                |
-|  1246 | `carpini-mission-great-khan`        | foothold · NEW |
-|  1287 | `rabban-sauma-embassy-europe`       | foothold · NEW |
-|  1404 | `clavijo-embassy-timur`             | foothold · NEW |
-|  1498 | `vasco-da-gama-india`               | foothold       |
-|  1519 | `cortes-meets-aztecs`               | foothold       |
-|  1520 | `field-of-cloth-of-gold`            |                |
-|  1601 | `matteo-ricci-enters-beijing`       | foothold · NEW |
-|  1615 | `hasekura-embassy-rome`             | foothold · NEW |
-|  1686 | `siamese-embassy-louis-xiv`         | foothold · NEW |
-|  1697 | `peter-great-grand-embassy`         | foothold · NEW |
-|  1793 | `macartney-mission-rebuffed`        |                |
-|  1815 | `congress-vienna`                   | foothold       |
-|  1871 | `iwakura-mission-west`              | NEW            |
-|  1878 | `congress-of-berlin`                |                |
-|  1905 | `bjorko-meeting-kaiser-tsar`        | foothold · NEW |
-|  1938 | `munich-agreement`                  | foothold       |
-|  1943 | `tehran-conference`                 |                |
-|  1945 | `yalta-conference`                  |                |
-|  1955 | `geneva-summit-1955`                |                |
-|  1961 | `vienna-summit-kennedy-khrushchev`  | foothold · NEW |
-|  1972 | `nixon-china`                       | foothold       |
-|  1977 | `sadat-visits-jerusalem`            | foothold · NEW |
-|  1986 | `reykjavik-summit-reagan-gorbachev` | foothold · NEW |
+| Year | Slug                                |                |
+| ---: | ----------------------------------- | -------------- |
+| -138 | `zhang-qian-western-mission`        | foothold · NEW |
+|  -41 | `cleopatra-meets-antony-tarsus`     | foothold · NEW |
+|  166 | `roman-embassy-han-court`           | foothold · NEW |
+|  452 | `pope-leo-meets-attila`             | foothold       |
+|  802 | `abul-abbas-elephant-charlemagne`   | foothold · NEW |
+|  921 | `ibn-fadlan-volga-embassy`          | foothold · NEW |
+| 1077 | `walk-to-canossa`                   |                |
+| 1246 | `carpini-mission-great-khan`        | foothold · NEW |
+| 1287 | `rabban-sauma-embassy-europe`       | foothold · NEW |
+| 1404 | `clavijo-embassy-timur`             | foothold · NEW |
+| 1498 | `vasco-da-gama-india`               | foothold       |
+| 1519 | `cortes-meets-aztecs`               | foothold       |
+| 1520 | `field-of-cloth-of-gold`            |                |
+| 1601 | `matteo-ricci-enters-beijing`       | foothold · NEW |
+| 1615 | `hasekura-embassy-rome`             | foothold · NEW |
+| 1686 | `siamese-embassy-louis-xiv`         | foothold · NEW |
+| 1697 | `peter-great-grand-embassy`         | foothold · NEW |
+| 1793 | `macartney-mission-rebuffed`        |                |
+| 1815 | `congress-vienna`                   | foothold       |
+| 1871 | `iwakura-mission-west`              | NEW            |
+| 1878 | `congress-of-berlin`                |                |
+| 1905 | `bjorko-meeting-kaiser-tsar`        | foothold · NEW |
+| 1938 | `munich-agreement`                  | foothold       |
+| 1943 | `tehran-conference`                 |                |
+| 1945 | `yalta-conference`                  |                |
+| 1955 | `geneva-summit-1955`                |                |
+| 1961 | `vienna-summit-kennedy-khrushchev`  | foothold · NEW |
+| 1972 | `nixon-china`                       | foothold       |
+| 1977 | `sadat-visits-jerusalem`            | foothold · NEW |
+| 1986 | `reykjavik-summit-reagan-gorbachev` | foothold · NEW |
 
 17 of the 30 were written for this theme.
 
@@ -111,3 +111,14 @@ Raised by the detail writer:
   the correction.
 - The detail prose for Cleopatra, Peter the Great, Vienna 1961, Sadat and Reykjavik was
   written from memory rather than searched, and is worth a spot-check.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty summits and embassies in which rulers and their envoys met across borders, cultures and oceans.
+- **Fact:** At the Field of the Cloth of Gold, a temporary palace covering nearly 12,000 square yards was built, and two fountains ran with red wine.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Field_of_the_Cloth_of_Gold) (a temporary palace covering an area of nearly 12,000 square yards (10,000 m2) was erected; 2,800 tents were erected for less distinguished visitors; Red wine...).
+
+Reworded from the writer's draft: the writer hid the summit's name ('one royal summit'), which read oddly; the card's description says none of this.

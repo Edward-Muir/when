@@ -98,3 +98,14 @@ left for review:
   dispute.
 - `peter-proclaimed-emperor` (1721) and the Vladivostok first stone of
   `trans-siberian-railway-begun` were confirmed from search results rather than an opened page.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Russia under the Romanov tsars and empresses, told through their wars, reforms, plots and palaces.
+- **Fact:** Under the beard tax, Russian men who kept their beards carried a copper token as proof of payment. A wealthy merchant could owe 100 rubles a year.
+
+Sources: [mentalfloss.com](https://www.mentalfloss.com/history/time-peter-great-declared-war-facial-hair) (An impoverished beggar could retain his for the meager yearly sum of two kopeks, while a well-off merchant could expect to shell out 100 rubles; payers recei...); [daily.jstor.org](https://daily.jstor.org/peter-the-greats-beard-tax) (It served as proof that the bearer had paid his yearly beard tax: a few kopecks for peasants, a hundred rubles or more for nobles or military officials.).
+
+Reworded from the writer's draft: the 'beggar paid two kopeks' detail is loose across sources.

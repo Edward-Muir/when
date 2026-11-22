@@ -25,38 +25,38 @@ Edges, as the reconciler argued them:
 
 ## The 30
 
-|  Year | Slug                               |                |
-| ----: | ---------------------------------- | -------------- |
-|  1176 | `cardigan-eisteddfod-1176`         | NEW            |
-|  1742 | `handel-messiah`                   | foothold       |
-|  1808 | `beethoven-fifth`                  | foothold       |
-|  1824 | `beethoven-ninth`                  | foothold       |
-|  1841 | `liszt-lisztomania-berlin`         | NEW            |
-|  1850 | `jenny-lind-america-tour`          | NEW            |
-|  1891 | `carnegie-hall-opens`              | NEW            |
-|  1895 | `first-promenade-concert`          | NEW            |
-|  1910 | `mahler-symphony-of-a-thousand`    | NEW            |
-|  1922 | `hollywood-bowl-first-season`      | NEW            |
-|  1924 | `rhapsody-in-blue-premiere`        | foothold       |
-|  1938 | `benny-goodman-carnegie-hall`      | NEW            |
-|  1939 | `marian-anderson-lincoln-memorial` | NEW            |
-|  1952 | `moondog-coronation-ball`          | NEW            |
-|  1954 | `first-newport-jazz-festival`      | NEW            |
-|  1965 | `dylan-goes-electric`              | foothold       |
-|  1969 | `woodstock`                        | foothold       |
-|  1970 | `first-glastonbury-festival`       | NEW            |
-|  1976 | `the-band-last-waltz`              | NEW            |
-|  1981 | `simon-garfunkel-central-park`     | NEW            |
-|  1985 | `live-aid`                         | foothold       |
-|  1990 | `three-tenors-rome`                | NEW            |
-|  1992 | `freddie-mercury-tribute-concert`  | NEW            |
-|  1999 | `first-coachella-festival`         | NEW            |
-|  2001 | `concert-for-new-york-city`        | NEW            |
-|  2005 | `live-8-concerts`                  | NEW            |
-|  2012 | `tupac-hologram-coachella`         | NEW            |
-|  2018 | `beychella-coachella`              | NEW            |
-|  2020 | `one-world-together-at-home`       | NEW            |
-|  2023 | `taylor-swift-eras-tour-begins`    | NEW            |
+| Year | Slug                               |          |
+| ---: | ---------------------------------- | -------- |
+| 1176 | `cardigan-eisteddfod-1176`         | NEW      |
+| 1742 | `handel-messiah`                   | foothold |
+| 1808 | `beethoven-fifth`                  | foothold |
+| 1824 | `beethoven-ninth`                  | foothold |
+| 1841 | `liszt-lisztomania-berlin`         | NEW      |
+| 1850 | `jenny-lind-america-tour`          | NEW      |
+| 1891 | `carnegie-hall-opens`              | NEW      |
+| 1895 | `first-promenade-concert`          | NEW      |
+| 1910 | `mahler-symphony-of-a-thousand`    | NEW      |
+| 1922 | `hollywood-bowl-first-season`      | NEW      |
+| 1924 | `rhapsody-in-blue-premiere`        | foothold |
+| 1938 | `benny-goodman-carnegie-hall`      | NEW      |
+| 1939 | `marian-anderson-lincoln-memorial` | NEW      |
+| 1952 | `moondog-coronation-ball`          | NEW      |
+| 1954 | `first-newport-jazz-festival`      | NEW      |
+| 1965 | `dylan-goes-electric`              | foothold |
+| 1969 | `woodstock`                        | foothold |
+| 1970 | `first-glastonbury-festival`       | NEW      |
+| 1976 | `the-band-last-waltz`              | NEW      |
+| 1981 | `simon-garfunkel-central-park`     | NEW      |
+| 1985 | `live-aid`                         | foothold |
+| 1990 | `three-tenors-rome`                | NEW      |
+| 1992 | `freddie-mercury-tribute-concert`  | NEW      |
+| 1999 | `first-coachella-festival`         | NEW      |
+| 2001 | `concert-for-new-york-city`        | NEW      |
+| 2005 | `live-8-concerts`                  | NEW      |
+| 2012 | `tupac-hologram-coachella`         | NEW      |
+| 2018 | `beychella-coachella`              | NEW      |
+| 2020 | `one-world-together-at-home`       | NEW      |
+| 2023 | `taylor-swift-eras-tour-begins`    | NEW      |
 
 7 footholds reused, 23 new.
 
@@ -74,3 +74,14 @@ the spine's dates were searched once each. The one `fix` (a Live 8 description t
 the year) is applied. The detail writer's list of dates resting on its own knowledge (One World
 18 April 2020, Mercury's death in November 1991, the Carnegie Hall naming, the Hollywood Bowl
 association's founding in October 1920) is worth a glance in review.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty landmark concerts, tours and festivals that drew crowds to stages, fields and stadiums.
+- **Fact:** The Woodstock festival was not held in Woodstock. It took place on a dairy farm in Bethel, New York, in a different county.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Woodstock) (on Max Yasgur's dairy farm in Bethel, New York ... 60 miles (95 km) southwest of the town of Woodstock).
+
+Reworded from the writer's draft: sources give the distance as 40, 43 and 60 miles, so the figure is dropped.

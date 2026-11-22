@@ -101,3 +101,12 @@ Martí and the war with the United States do the same for the rest.
 - **`narino-prints-rights-of-man` (year 1793)**: sources split between 1793 and 1794. The
   printing is most specifically dated to December 1793 and the arrest to August 1794. The deck
   keeps 1793, the printing, which is what the card names.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Rebels, generals and exiles who fought to end European colonial rule in Latin America and the Caribbean.
+- **Fact:** Bolivia takes its name from Simon Bolivar, and so does the bolivar, the currency of Venezuela.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Bolivia) (Bolivia is named after Simón Bolívar, a Venezuelan leader in the Spanish American wars of independence.); [en.wikipedia.org](<https://en.wikipedia.org/wiki/Bol%C3%ADvar_(currency)>) (Named after the hero of South American independence Simón Bolívar; official currency of Venezuela.).

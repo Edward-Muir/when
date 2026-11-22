@@ -124,3 +124,12 @@ Insurance Act (1911) and the US Tax Reform Act (1986).
 - `us-first-federal-income-tax`: the year is confirmed. The description says Congress later let
   the measure lapse, but the 1861 tax was repealed and replaced by the Revenue Act of 1862; it
   was the income tax as a whole that expired, in 1872.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty taxes, tariffs and censuses, showing what states took from their people and how they counted them.
+- **Fact:** England's Exchequer took its name from a chequered cloth spread over a large table, on which counters showed the sums owed to the crown.
+
+Sources: [history.blog.gov.uk](https://history.blog.gov.uk/2013/08/14/the-exchequer-a-chequered-history/) (The Exchequer's rather unusual name was derived from the chequered cloth. The cloth was used to visually record the sums of money that were demanded and rece...); [en.wikipedia.org](https://en.wikipedia.org/wiki/Exchequer) (the table was large, 10 feet by 5 feet; covered by a black cloth bearing stripes in a chequer-pattern).

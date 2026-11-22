@@ -19,38 +19,38 @@ An event is in only if **it is a famous album, named for its release.**
 
 ## The 30
 
-|  Year | Slug | |
-| ----: | ---- | -- |
-|  1956 | `elvis-presley-debut-album` | NEW |
-|  1959 | `miles-davis-kind-of-blue` | NEW |
-|  1963 | `dylan-freewheelin-album` | NEW |
-|  1966 | `beach-boys-pet-sounds` | NEW |
-|  1967 | `beatles-sgt-pepper` | NEW |
-|  1969 | `beatles-abbey-road` | NEW |
-|  1971 | `led-zeppelin-iv-album` | NEW |
-|  1972 | `bowie-ziggy-stardust-album` | NEW |
-|  1973 | `pink-floyd-dark-side-album` | NEW |
-|  1975 | `springsteen-born-to-run-album` | NEW |
-|  1976 | `eagles-hotel-california-album` | NEW |
-|  1977 | `fleetwood-mac-rumours-album` | NEW |
-|  1979 | `pink-floyd-the-wall-album` | NEW |
-|  1980 | `acdc-back-in-black-album` | NEW |
-|  1982 | `michael-jackson-thriller` | foothold |
-|  1984 | `prince-purple-rain-album` | NEW |
-|  1987 | `u2-joshua-tree-album` | NEW |
-|  1989 | `madonna-like-a-prayer-album` | NEW |
-|  1991 | `nevermind-album` | foothold |
-|  1994 | `nas-illmatic-album` | NEW |
-|  1997 | `radiohead-ok-computer-album` | NEW |
-|  1998 | `lauryn-hill-miseducation-album` | NEW |
-|  2002 | `norah-jones-come-away-with-me-album` | NEW |
-|  2006 | `amy-winehouse-back-to-black-album` | NEW |
-|  2011 | `adele-21-album` | NEW |
-|  2013 | `beyonce-surprise-album` | NEW |
-|  2015 | `kendrick-to-pimp-a-butterfly-album` | NEW |
-|  2016 | `beyonce-lemonade-album` | NEW |
-|  2019 | `billie-eilish-debut-album` | NEW |
-|  2020 | `taylor-swift-folklore-album` | NEW |
+| Year | Slug                                  |          |
+| ---: | ------------------------------------- | -------- |
+| 1956 | `elvis-presley-debut-album`           | NEW      |
+| 1959 | `miles-davis-kind-of-blue`            | NEW      |
+| 1963 | `dylan-freewheelin-album`             | NEW      |
+| 1966 | `beach-boys-pet-sounds`               | NEW      |
+| 1967 | `beatles-sgt-pepper`                  | NEW      |
+| 1969 | `beatles-abbey-road`                  | NEW      |
+| 1971 | `led-zeppelin-iv-album`               | NEW      |
+| 1972 | `bowie-ziggy-stardust-album`          | NEW      |
+| 1973 | `pink-floyd-dark-side-album`          | NEW      |
+| 1975 | `springsteen-born-to-run-album`       | NEW      |
+| 1976 | `eagles-hotel-california-album`       | NEW      |
+| 1977 | `fleetwood-mac-rumours-album`         | NEW      |
+| 1979 | `pink-floyd-the-wall-album`           | NEW      |
+| 1980 | `acdc-back-in-black-album`            | NEW      |
+| 1982 | `michael-jackson-thriller`            | foothold |
+| 1984 | `prince-purple-rain-album`            | NEW      |
+| 1987 | `u2-joshua-tree-album`                | NEW      |
+| 1989 | `madonna-like-a-prayer-album`         | NEW      |
+| 1991 | `nevermind-album`                     | foothold |
+| 1994 | `nas-illmatic-album`                  | NEW      |
+| 1997 | `radiohead-ok-computer-album`         | NEW      |
+| 1998 | `lauryn-hill-miseducation-album`      | NEW      |
+| 2002 | `norah-jones-come-away-with-me-album` | NEW      |
+| 2006 | `amy-winehouse-back-to-black-album`   | NEW      |
+| 2011 | `adele-21-album`                      | NEW      |
+| 2013 | `beyonce-surprise-album`              | NEW      |
+| 2015 | `kendrick-to-pimp-a-butterfly-album`  | NEW      |
+| 2016 | `beyonce-lemonade-album`              | NEW      |
+| 2019 | `billie-eilish-debut-album`           | NEW      |
+| 2020 | `taylor-swift-folklore-album`         | NEW      |
 
 Gates: size **30**, band 0 **21**, bins **2/8** (advisory: every card is after 1950, so the deck
 cannot spread across the timeline), same-year pairs **0**, bunching **8 in 1971-1980** (the limit),
@@ -76,3 +76,12 @@ Items worth a second look in review:
   own description and was not independently sourced.
 - Region tags follow where each album was made. `u2-joshua-tree-album` is tagged Ireland only;
   the audit notes its text names America.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty landmark albums across rock, pop, soul and hip-hop, judged as whole records rather than as singles.
+- **Fact:** The Beatles nearly called Abbey Road "Everest", after the brand of cigarettes their engineer Geoff Emerick smoked in the studio.
+
+Sources: [abbeyroad.com](https://www.abbeyroad.com/news/deconstructing-abbey-road-cover-photography-session-2588) (The original working title for Abbey Road was Everest... Engineer Geoff Emerick was smoking Everest cigarettes in the studio.).

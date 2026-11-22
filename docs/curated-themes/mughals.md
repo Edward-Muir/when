@@ -102,8 +102,7 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
   agreement with the emperor is 1771, but sources split on his arrival between late December 1771
   and January 1772. The card sits at 1771.
 - **`last-mughal-emperor-deposed`**: the year. Bahadur Shah was captured in September 1857, and
-  his reign is usually ended there, but the description also names the trial (January to March
-  1858) and the exile to Rangoon (October 1858). The card sits at 1857; a window to 1858 or a
+  his reign is usually ended there, but the description also names the trial (January to March 1858) and the exile to Rangoon (October 1858). The card sits at 1857; a window to 1858 or a
   description that stops at the capture would settle it.
 
 No fixes were made. **The check was thinner than it should be:** the checker ran about four
@@ -135,3 +134,12 @@ Nine pairs sit inside theme-gap's 8-year advisory window. Two clusters are delib
   exactly on the bunching limit.
 - **1565 / 1569 / 1576 / 1582**: Akbar's reign, with the tomb, the new capital, Haldighati and
   the Din-i Ilahi.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Acts of the Delhi sultans and Mughal emperors, in conquest, in stone and at court.
+- **Fact:** Akbar never learned to read, yet he had books read aloud to him every evening and chose his readers partly for their pleasant voices.
+
+Sources: [scroll.in](https://scroll.in/article/767632/scroll_in) (all early attempts to teach Akbar how to read and write failed; the Ain-i-Akbari says he would have books read out to him every evening, readers chosen partl...); [en.wikipedia.org](https://en.wikipedia.org/wiki/Akbar) (although he never learned to read or write, when he retired in the evening, he would have someone read to him).

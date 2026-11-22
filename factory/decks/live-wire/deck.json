@@ -32,5 +32,9 @@
     "hornsdale-power-reserve",
     "hornsea-offshore-wind-farm",
     "iberian-peninsula-blackout"
-  ]
+  ],
+  "intro": {
+    "blurb": "Thirty ways of making, storing and moving electric power, including batteries, generators, grids and blackouts.",
+    "fact": "Japan's grid is split in two. Tokyo and the east run at 50 hertz and the west at 60, so power can cross only through frequency converter stations."
+  }
 }

@@ -105,3 +105,12 @@ Nine neighbouring pairs fall inside theme-gap's 8-year advisory. Two clusters ar
   bunching limit.
 - **1943 / 1944 / 1947** (the bouncing bomb, the Me 262, the AK-47): a bomber raid, a jet and a
   rifle, so a player can order them by the war's course rather than by memory of the year.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Famous weapons and fighting machines, and the clashes where they proved their worth.
+- **Fact:** The word tank was a cover name. Britain picked it to suggest a water container, so that its new armoured vehicles would not give away what they were.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Tank) (The word tank was first applied in a military context to British "landships" in 1915 to keep their nature secret before they entered service. Committee: "we...).

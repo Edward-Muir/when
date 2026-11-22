@@ -31,38 +31,38 @@ Edges argued rather than assumed:
 
 ## The 30
 
-| Year | Slug                              |       |
-| ---: | --------------------------------- | ----- |
-|  632 | `abu-bakr-first-caliph`           | NEW   |
-|  636 | `battle-of-yarmouk`               |       |
-|  638 | `siege-of-jerusalem-638`          |       |
-|  642 | `rashidun-victory-nahavand`       | NEW   |
-|  650 | `quran-compiled`                  |       |
-|  656 | `battle-of-the-camel-caliph-ali`  | NEW   |
-|  661 | `umayyad-caliphate`               |       |
-|  680 | `battle-karbala-husayn`           |       |
-|  691 | `dome-rock-completed`             |       |
-|  706 | `great-mosque-damascus-begun`     | NEW   |
-|  711 | `islamic-conquest-spain`          |       |
-|  717 | `siege-of-constantinople-717`     |       |
-|  732 | `battle-tours`                    |       |
-|  750 | `abbasid-caliphate`               |       |
-|  751 | `battle-of-talas`                 |       |
-|  762 | `baghdad-founded`                 |       |
-|  786 | `harun-al-rashid-caliph`          |       |
-|  836 | `samarra-founded-by-mutasim`      | NEW   |
-|  909 | `fatimid-caliphate-established`   |       |
-|  929 | `cordoba-caliphate-proclaimed`    | NEW   |
-|  936 | `madinat-al-zahra-begun`          | NEW   |
-|  945 | `buyids-seize-baghdad`            | NEW   |
-|  969 | `fatimids-conquer-egypt`          |       |
-| 1031 | `caliphate-cordoba-falls`         |       |
-| 1055 | `seljuk-turks-capture-baghdad`    |       |
-| 1171 | `saladin-ends-fatimid-caliphate`  | NEW   |
-| 1258 | `mongol-baghdad`                  |       |
-| 1919 | `khilafat-movement-india`         | NEW   |
-| 1922 | `ottoman-sultanate-abolished`     |       |
-| 1924 | `islamic-caliphate-abolished`     |       |
+| Year | Slug                             |     |
+| ---: | -------------------------------- | --- |
+|  632 | `abu-bakr-first-caliph`          | NEW |
+|  636 | `battle-of-yarmouk`              |     |
+|  638 | `siege-of-jerusalem-638`         |     |
+|  642 | `rashidun-victory-nahavand`      | NEW |
+|  650 | `quran-compiled`                 |     |
+|  656 | `battle-of-the-camel-caliph-ali` | NEW |
+|  661 | `umayyad-caliphate`              |     |
+|  680 | `battle-karbala-husayn`          |     |
+|  691 | `dome-rock-completed`            |     |
+|  706 | `great-mosque-damascus-begun`    | NEW |
+|  711 | `islamic-conquest-spain`         |     |
+|  717 | `siege-of-constantinople-717`    |     |
+|  732 | `battle-tours`                   |     |
+|  750 | `abbasid-caliphate`              |     |
+|  751 | `battle-of-talas`                |     |
+|  762 | `baghdad-founded`                |     |
+|  786 | `harun-al-rashid-caliph`         |     |
+|  836 | `samarra-founded-by-mutasim`     | NEW |
+|  909 | `fatimid-caliphate-established`  |     |
+|  929 | `cordoba-caliphate-proclaimed`   | NEW |
+|  936 | `madinat-al-zahra-begun`         | NEW |
+|  945 | `buyids-seize-baghdad`           | NEW |
+|  969 | `fatimids-conquer-egypt`         |     |
+| 1031 | `caliphate-cordoba-falls`        |     |
+| 1055 | `seljuk-turks-capture-baghdad`   |     |
+| 1171 | `saladin-ends-fatimid-caliphate` | NEW |
+| 1258 | `mongol-baghdad`                 |     |
+| 1919 | `khilafat-movement-india`        | NEW |
+| 1922 | `ottoman-sultanate-abolished`    |     |
+| 1924 | `islamic-caliphate-abolished`    |     |
 
 20 reused, 10 new.
 
@@ -104,3 +104,12 @@ reviewer's eye:
   and the detail prose describes the proclamation of Abbasid suzerainty without it.
 - The spine's years were written without searches. The agent's follow-up searches covered the
   added beats only; 650 (Quran) and 1147 (Almohads) are traditional or approximate dates.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty defining acts of the caliphs and of the rival caliphates that claimed the title.
+- **Fact:** Caliph Harun al-Rashid sent Charlemagne an elephant named Abul-Abbas, led across the Alps to Aachen by the envoy Isaac.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Abul-Abbas) (The gift was from the Abbasid caliph Harun al-Rashid; the elephant was brought back to Charlemagne by his diplomat Isaac the Jew; they crossed the Alps to Aa...).

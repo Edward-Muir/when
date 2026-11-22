@@ -112,3 +112,12 @@ The 1920s and 1930s carry six cards, from Eskimo Pie to the chocolate chip cooki
 keeps them because those two decades are when the branded sweet arrived, and four of the six
 are footholds. The 1921/1922 pair (Eskimo Pie, Haribo) is one year apart but on different
 continents and of different kinds.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty candies, chocolates, biscuits and desserts that sweetened tables across the world.
+- **Fact:** The cacao tree's botanical genus name, Theobroma, is Greek for food of the gods.
+
+Sources: [apps.cals.arizona.edu](https://apps.cals.arizona.edu/arboretum/taxon.aspx?id=1219) (The genus, Theobroma, can be translated as "Food of the Gods" from the Latin theos, "god", and broma, "food".).

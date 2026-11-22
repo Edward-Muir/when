@@ -69,3 +69,14 @@ new cards were checked from knowledge only. The Poland martial law description s
 government "banned the independent union"; Solidarity was suspended in December 1981 and formally
 banned in 1982. The region audit also notes that `ogaden-war-somalia-ethiopia` names the Soviet
 Union and Cuba and `reagan-tear-down-this-wall` names the Soviet Union, none of which are tagged.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty standoffs, uprisings and proxy wars fought in the shadow of two rival superpower blocs.
+- **Fact:** Steinstücken, an exclave of West Berlin inside East German territory, covered about 12 hectares and had roughly 200 inhabitants.
+
+Sources: [stiftung-berliner-mauer.de](https://www.stiftung-berliner-mauer.de/en/node/9) (Ten West Berlin exclaves lay inside GDR territory. Steinstücken covered roughly 12 hectares and had about 200 inhabitants.).
+
+Reworded from the writer's draft: sources count ten or twelve exclaves, and 'largest' was the writer's inference.

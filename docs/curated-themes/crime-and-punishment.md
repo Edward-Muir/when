@@ -77,3 +77,12 @@ other (1965/1966/1968 and 1921/1923/1924 are the closest); the gates allow it.
   1882 (introduced) and 1883 (first used).
 - Only that card was searched by the checker. The other 16 new cards were checked against the
   checker's own knowledge, not fresh searches.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty milestones in policing, detection and punishment, covering forces, prisons, executions and forensics.
+- **Fact:** The guillotine is named after Joseph-Ignace Guillotin, a physician who opposed the death penalty and did not design the device. Its prototype came from Antoine Louis.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Joseph-Ignace_Guillotin) (Although he did not invent the guillotine and opposed the death penalty. The actual inventor of the prototype was a French physician, Antoine Louis.).

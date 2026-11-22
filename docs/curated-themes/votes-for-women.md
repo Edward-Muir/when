@@ -97,3 +97,14 @@ None unsupported: all 26 new events were checked against sources. Two notes from
 
 `isle-of-man-women-vote` is tagged United Kingdom because `regions.json` has no Isle of Man
 entry, though the island is a Crown dependency, not part of the UK.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty moments in the campaigns and laws that gave women the vote.
+- **Fact:** New Zealand's main suffrage petition ran to more than 500 sheets glued end to end, and stretched over 270 metres when unrolled.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/1893_Women%27s_Suffrage_Petition) (stretching over 270 metres (890 ft); more than 500 individual sheets; nearly 32,000 signatures).
+
+Reworded from the writer's draft: named the petition rather than hiding it, and dropped the signature count, which sources attach to different totals.

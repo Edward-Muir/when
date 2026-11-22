@@ -32,38 +32,38 @@ Edges argued by the reconciler:
 
 Reused cards (already in the catalogue, already illustrated) are marked `foothold`.
 
-|  Year | Slug                               |          |
-| ----: | ---------------------------------- | -------- |
-|   105 | `paper-invented`                   | foothold |
-|   113 | `trajan-column`                    | foothold |
-|   868 | `diamond-sutra-printed`            | foothold |
-|  1040 | `movable-type-china`               | foothold |
-|  1377 | `jikji-korea-printing`             | foothold |
-|  1455 | `gutenberg-bible`                  | foothold |
-|  1470 | `jenson-roman-typeface`            | NEW      |
-|  1476 | `caxton-westminster-press`         | NEW      |
-|  1501 | `aldine-italic-type`               | foothold |
-|  1530 | `garamond-roman-type`              | NEW      |
-|  1605 | `first-printed-newspaper-relation` | foothold |
-|  1640 | `bay-psalm-book`                   | NEW      |
-|  1734 | `caslon-type-specimen`             | NEW      |
-|  1757 | `baskerville-virgil`               | NEW      |
-|  1796 | `lithography-invented`             | foothold |
-|  1816 | `first-sans-serif-typeface`        | NEW      |
-|  1824 | `braille-invented`                 | foothold |
-|  1843 | `rotary-printing-press-hoe`        | foothold |
-|  1868 | `sholes-typewriter-patent`         | NEW      |
-|  1874 | `remington-typewriter-sales`       | NEW      |
-|  1916 | `johnston-london-typeface`         | NEW      |
-|  1927 | `futura-typeface-released`         | NEW      |
-|  1932 | `times-new-roman-debut`            | NEW      |
-|  1957 | `helvetica-released`               | NEW      |
-|  1961 | `ibm-selectric-typewriter`         | NEW      |
-|  1971 | `project-gutenberg-begins`         | NEW      |
-|  1985 | `desktop-publishing-arrives`       | NEW      |
-|  1991 | `unicode-standard-released`        | foothold |
-|  1994 | `comic-sans-created`               | NEW      |
-|  2010 | `emoji-added-to-unicode`           | NEW      |
+| Year | Slug                               |          |
+| ---: | ---------------------------------- | -------- |
+|  105 | `paper-invented`                   | foothold |
+|  113 | `trajan-column`                    | foothold |
+|  868 | `diamond-sutra-printed`            | foothold |
+| 1040 | `movable-type-china`               | foothold |
+| 1377 | `jikji-korea-printing`             | foothold |
+| 1455 | `gutenberg-bible`                  | foothold |
+| 1470 | `jenson-roman-typeface`            | NEW      |
+| 1476 | `caxton-westminster-press`         | NEW      |
+| 1501 | `aldine-italic-type`               | foothold |
+| 1530 | `garamond-roman-type`              | NEW      |
+| 1605 | `first-printed-newspaper-relation` | foothold |
+| 1640 | `bay-psalm-book`                   | NEW      |
+| 1734 | `caslon-type-specimen`             | NEW      |
+| 1757 | `baskerville-virgil`               | NEW      |
+| 1796 | `lithography-invented`             | foothold |
+| 1816 | `first-sans-serif-typeface`        | NEW      |
+| 1824 | `braille-invented`                 | foothold |
+| 1843 | `rotary-printing-press-hoe`        | foothold |
+| 1868 | `sholes-typewriter-patent`         | NEW      |
+| 1874 | `remington-typewriter-sales`       | NEW      |
+| 1916 | `johnston-london-typeface`         | NEW      |
+| 1927 | `futura-typeface-released`         | NEW      |
+| 1932 | `times-new-roman-debut`            | NEW      |
+| 1957 | `helvetica-released`               | NEW      |
+| 1961 | `ibm-selectric-typewriter`         | NEW      |
+| 1971 | `project-gutenberg-begins`         | NEW      |
+| 1985 | `desktop-publishing-arrives`       | NEW      |
+| 1991 | `unicode-standard-released`        | foothold |
+| 1994 | `comic-sans-created`               | NEW      |
+| 2010 | `emoji-added-to-unicode`           | NEW      |
 
 12 reused, 18 new.
 
@@ -78,3 +78,14 @@ None are `unsupported` or `fix`. The checker searched only Times New Roman, the 
 and Johnston; the other new cards rest on its own knowledge, so a reviewer should read their
 years. The spine writer verified only five years by search (1465, 1530, 1605, 1816, 1904) and left
 the rest to recall.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty milestones in how text is made, covering paper, presses, typewriters, typefaces and digital characters.
+- **Fact:** The type cast for the Gutenberg Bible ran to nearly three hundred different characters, including variant letters, ligatures and abbreviations copied from scribes.
+
+Sources: [online-exhibitions.library.columbia.edu](https://online-exhibitions.library.columbia.edu/exhibits/show/type_to_print/gutenberg/biblia_latina) (The font of the 42-line Bible consists of nearly three hundred characters, including variant forms of letters, ligatures); [ndl.go.jp](https://www.ndl.go.jp/incunabula/e/chapter2/index.html) (Gutenberg used about 300 kinds of type, including types for contracted or abbreviated letters and ligatures, as in his manuscript models).
+
+Reworded from the writer's draft: clearer wording, same claim.

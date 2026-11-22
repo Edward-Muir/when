@@ -91,3 +91,12 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
   city's rise is usually placed from about 600 through the 900s.
 - `teotihuacan-city-founded` (-100) and `el-mirador-maya-city-rises` (-300) were passed without
   a direct source in the search results; both rest on Wikipedia's commonly cited dates.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty events from the civilisations of Mesoamerica and the Andes that thrived before European contact.
+- **Fact:** Mesoamerican rubber was made by mixing latex from the rubber tree with the juice of a morning glory vine.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Mesoamerican_rubber_balls) (Ancient rubber was made from latex of the rubber tree (Castilla elastica); the latex was made into rubber by mixing it with the juice of what was likely Ipom...).

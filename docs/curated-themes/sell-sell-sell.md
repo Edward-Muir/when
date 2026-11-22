@@ -94,3 +94,12 @@ The fact check found nothing to fix and nothing unsupported. Caveats it raised, 
 The region tags were written without searches. `vw-think-small-ad` carries Germany beside the
 United States for the car's maker, a weak tag; `coke-hilltop-teach-the-world` carries Italy for
 the filming location.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty famous advertisements, slogans and brand mascots that turned products into household names.
+- **Fact:** Smokey Bear received so much fan mail that the Postal Service gave him a ZIP code of his own, 20252, in Washington, D.C.
+
+Sources: [pbs.org](https://www.pbs.org/video/how-smokey-bear-became-an-icon-and-a-real-life-neighbor-in-washington-dc-5t4xug/) (he received so much fan mail that the U.S. Postal Service gave him his own private D.C. zip code, 20252).

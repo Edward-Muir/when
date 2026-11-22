@@ -77,3 +77,14 @@ Two evidence windows were set (`uruk-first-city-walled`, 3500 to 3100 BCE; `roya
 2600 to 2450 BCE). The detail prose writer reported claims it did not search; a reviewer should
 spot-check the Eridu, Uruk, Urukagina, Enheduanna, Hammurabi, Hittite, Gilgamesh and Carchemish
 entries.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty events from the cities and empires of Sumer, Babylon and Assyria, in the lands of the Tigris and Euphrates.
+- **Fact:** Sumerian and Babylonian scribes counted in sixties, a system that survives in the 60-minute hour and the 360-degree circle.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Sexagesimal) ("there are 360 (six sixties) in a circle"; "one minute is divided into 60 seconds"; system originated with the Sumerians and was passed down to the Babylonians).
+
+Reworded from the writer's draft: the source says the system survives in time and angles, not that it is 'why' a circle has 360 degrees.

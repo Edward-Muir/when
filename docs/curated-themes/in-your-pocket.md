@@ -98,3 +98,14 @@ which gives a player something to reason from.
   1 October 1903; the British and French filings and the Thermos company date from 1904, and
   the card's name says "Patented". Either keep 1904 and rename it "Thermos Flask Launched", or
   move it to 1903.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty gadgets small enough to carry, including phones, cameras, pens, lights and pocket tools.
+- **Fact:** Victorinox, maker of the Swiss Army knife, takes its name from the founder's mother, Victoria, joined to "inox", a name for stainless steel.
+
+Sources: [victorinox.com](https://www.victorinox.com/global/en/History/cms/history) (In memory of his mother, Karl Elsener I chooses her first name Victoria as the brand name).
+
+Reworded from the writer's draft: the source does not call inox a 'standard abbreviation'.

@@ -94,3 +94,12 @@ are traditional rather than certain:
   date the seizure of Astabene, or Parthia, nearer 238 BC. The detail prose presents 247 as the
   epoch, not as the date of the conquest.
 - `modu-shanyu-xiongnu-empire`: 209 BC rests on Sima Qian, who wrote about a century later.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty empires and kingdoms across four continents, each dated to the moment of its founding.
+- **Fact:** Angkor Wat encloses 162.6 hectares, an area that Guinness World Records recognises as the largest religious structure ever built.
+
+Sources: [guinnessworldrecords.com](https://www.guinnessworldrecords.com/world-records/largest-religious-structure) (The largest religious structure ever built is Angkor Wat (City Temple), enclosing 162.6 hectares (401 acres) in Cambodia.).

@@ -96,3 +96,12 @@ flags is famous enough to place on its own.
 
 Two fixes were applied: the Japanese card names the Hinomaru, not the rayed Rising Sun flag, and
 the UAE card says six sheikhdoms (Ras al-Khaimah joined in 1972). Nothing was left unsupported.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty national flags at the moment each was first raised or formally adopted.
+- **Fact:** Qatar's flag is officially 28 units wide and 11 high, the only national flag more than twice as wide as it is tall.
+
+Sources: [guinnessworldrecords.com](https://www.guinnessworldrecords.com/world-records/450708-longest-national-flag-official-aspect-ratio) (Qatar's flag is the only national flag having a width more than twice its height, based on its official ratio of 11:28); [en.wikipedia.org](https://en.wikipedia.org/wiki/Flag_of_Qatar) (is in the ratio of 11:28).

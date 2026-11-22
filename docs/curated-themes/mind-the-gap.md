@@ -22,38 +22,38 @@ An event is in only if **it is the opening of a city metro, tram or bus system.*
 
 ## The 30
 
-|  Year | Slug                                  |                |
-| ----: | ------------------------------------- | -------------- |
-|  1662 | `bus-service`                         |                |
-|  1829 | `shillibeer-london-omnibus`           | NEW            |
-|  1832 | `new-york-harlem-horsecar`            | NEW            |
-|  1863 | `london-underground`                  | foothold       |
-|  1873 | `san-francisco-clay-street-cable-car` | foothold · NEW |
-|  1881 | `electric-streetcar`                  |                |
-|  1888 | `richmond-electric-streetcar-network` | NEW            |
-|  1890 | `city-south-london-deep-tube`         | NEW            |
-|  1896 | `budapest-metro-opens`                | NEW            |
-|  1900 | `paris-metro-opens`                   | foothold · NEW |
-|  1904 | `new-york-subway-opens`               | foothold · NEW |
-|  1913 | `buenos-aires-subte-opens`            | NEW            |
-|  1919 | `madrid-metro-opens`                  | NEW            |
-|  1927 | `tokyo-ginza-line-opens`              | NEW            |
-|  1935 | `moscow-metro-opens`                  | foothold · NEW |
-|  1954 | `toronto-yonge-subway-opens`          | NEW            |
-|  1955 | `rome-metro-opens`                    | NEW            |
-|  1966 | `montreal-metro-opens`                | NEW            |
-|  1969 | `mexico-city-metro-opens`             | NEW            |
-|  1974 | `curitiba-bus-rapid-transit`          | NEW            |
-|  1976 | `washington-metro-opens`              | NEW            |
-|  1979 | `hong-kong-mtr-opens`                 | NEW            |
-|  1985 | `vancouver-skytrain-opens`            | NEW            |
-|  1987 | `singapore-mrt-opens`                 | NEW            |
-|  1993 | `shanghai-metro-opens`                | NEW            |
-|  2000 | `bogota-transmilenio-opens`           | NEW            |
-|  2002 | `delhi-metro`                         |                |
-|  2009 | `dubai-metro-opens`                   | NEW            |
-|  2019 | `sydney-metro-opens`                  | NEW            |
-|  2022 | `crossrail-elizabeth-line`            |                |
+| Year | Slug                                  |                |
+| ---: | ------------------------------------- | -------------- |
+| 1662 | `bus-service`                         |                |
+| 1829 | `shillibeer-london-omnibus`           | NEW            |
+| 1832 | `new-york-harlem-horsecar`            | NEW            |
+| 1863 | `london-underground`                  | foothold       |
+| 1873 | `san-francisco-clay-street-cable-car` | foothold · NEW |
+| 1881 | `electric-streetcar`                  |                |
+| 1888 | `richmond-electric-streetcar-network` | NEW            |
+| 1890 | `city-south-london-deep-tube`         | NEW            |
+| 1896 | `budapest-metro-opens`                | NEW            |
+| 1900 | `paris-metro-opens`                   | foothold · NEW |
+| 1904 | `new-york-subway-opens`               | foothold · NEW |
+| 1913 | `buenos-aires-subte-opens`            | NEW            |
+| 1919 | `madrid-metro-opens`                  | NEW            |
+| 1927 | `tokyo-ginza-line-opens`              | NEW            |
+| 1935 | `moscow-metro-opens`                  | foothold · NEW |
+| 1954 | `toronto-yonge-subway-opens`          | NEW            |
+| 1955 | `rome-metro-opens`                    | NEW            |
+| 1966 | `montreal-metro-opens`                | NEW            |
+| 1969 | `mexico-city-metro-opens`             | NEW            |
+| 1974 | `curitiba-bus-rapid-transit`          | NEW            |
+| 1976 | `washington-metro-opens`              | NEW            |
+| 1979 | `hong-kong-mtr-opens`                 | NEW            |
+| 1985 | `vancouver-skytrain-opens`            | NEW            |
+| 1987 | `singapore-mrt-opens`                 | NEW            |
+| 1993 | `shanghai-metro-opens`                | NEW            |
+| 2000 | `bogota-transmilenio-opens`           | NEW            |
+| 2002 | `delhi-metro`                         |                |
+| 2009 | `dubai-metro-opens`                   | NEW            |
+| 2019 | `sydney-metro-opens`                  | NEW            |
+| 2022 | `crossrail-elizabeth-line`            |                |
 
 ## Gates
 
@@ -75,3 +75,14 @@ Years were confirmed for all 26 checked cards. Three descriptions were marked un
 
 Only the first two remain in the text to review; Rome was reworded and its difficulty set to
 medium because naming Rome places its era.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty openings of city metros, trams, cable cars and bus systems around the world.
+- **Fact:** At Embankment station in London, the northbound Northern line platform plays a recording by the actor Oswald Laurence, kept so that his widow could hear his voice.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Mind_the_gap) (an old "Mind the gap" recording by Oswald Laurence was restored to the curved northbound platform ... so that the actor's widow, Margaret McCollum, could hea...).
+
+Reworded from the writer's draft: 'five continents' was the writer's own count.

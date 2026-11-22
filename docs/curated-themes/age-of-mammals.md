@@ -105,3 +105,14 @@ points to an era, and those make up the deck's hard middle.
   -21000000 is the fallback if the earlier date doesn't hold up.
 - **`dire-wolf-predator`** (-250000) follows the NPS figure for the oldest record. Wikipedia's
   range starts at 125,000 years ago, so the sources disagree.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Mammals that filled the world the dinosaurs left behind, each dated to when it lived.
+- **Fact:** Purgatorius is named after Purgatory Hill in Montana, where its teeth were found.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Purgatorius) (P. unio is from Purgatory Hill (hence the animal's name); originally based on just a few teeth from the Purgatory Hill local fauna, McCone County, Montana).
+
+Reworded from the writer's draft: dropped 'first', which reads as a timing word.

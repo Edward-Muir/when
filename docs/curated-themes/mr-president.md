@@ -107,3 +107,12 @@ Coolidge and Ford. The three fame-1 beats went for being obscure, and the rest t
 bunching gate in the denser stretches. Coolidge's lamplit farmhouse oath (1923) and Ford's
 "long national nightmare" (1974) are the strongest cards that didn't make the cut, and they
 could swap in if a neighbour is ever retired.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty ceremonies in which a new American president took the oath of office.
+- **Fact:** Franklin Pierce is the only president to have said "affirm" rather than "swear" in his oath, a choice the Constitution allows.
+
+Sources: [whitehousehistory.org](https://whitehousehistory.org/photos/presidential-inaugurations-i-do-solemnly-swear-photo-3) (Franklin Pierce became the only president to "affirm" rather than "swear" his oath of office); [law.cornell.edu](https://www.law.cornell.edu/constitution-conan/article-2/section-1/clause-8/oath-of-office-for-the-presidency-generally) (I do solemnly swear (or affirm) that I will faithfully execute the Office of President of the United States).

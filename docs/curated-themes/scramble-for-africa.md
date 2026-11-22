@@ -43,38 +43,38 @@ Rhodes' Pioneer Column to stay inside the bunching limit.
 
 ## The 30
 
-|  Year | Slug                               |                |
-| ----: | ---------------------------------- | -------------- |
-|  -525 | `cambyses-conquers-egypt`          |                |
-|  -332 | `alexander-crowned-pharaoh`        |                |
-|   -48 | `caesar-besieged-alexandria`       | foothold · NEW |
-|   -30 | `rome-annexes-egypt`               | foothold · NEW |
-|   439 | `vandals-take-carthage`            | foothold       |
-|   639 | `arab-conquest-of-egypt`           |                |
-|  1415 | `portugal-captures-ceuta`          | NEW            |
-|  1488 | `dias-cape-good-hope`              | foothold       |
-|  1497 | `da-gama-sails-round-africa`       | foothold · NEW |
-|  1517 | `selim-i-conquers-egypt-mamluks`   | foothold       |
-|  1578 | `alcacer-quibir-sebastian-dies`    | NEW            |
-|  1796 | `mungo-park-reaches-niger`         | NEW            |
-|  1798 | `napoleons-egyptian-campaign`      |                |
-|  1816 | `bombardment-algiers-slaves-freed` |                |
-|  1830 | `france-conquers-algiers`          |                |
-|  1838 | `boers-win-blood-river`            | foothold · NEW |
-|  1855 | `livingstone-sees-victoria-falls`  | foothold · NEW |
-|  1858 | `source-of-nile`                   |                |
-|  1868 | `british-storm-magdala`            | foothold · NEW |
-|  1871 | `livingstone-stanley`              |                |
-|  1879 | `zulu-war`                         |                |
-|  1882 | `british-occupation-egypt`         |                |
-|  1884 | `berlin-conference`                |                |
-|  1896 | `ethiopian-victory-adwa`           |                |
-|  1898 | `fashoda-incident`                 |                |
-|  1899 | `boer-war`                         |                |
-|  1911 | `italy-invades-libya`              | foothold · NEW |
-|  1912 | `treaty-of-fez-morocco`            | NEW            |
-|  1921 | `rif-rout-spain-annual`            | NEW            |
-|  1935 | `italy-invades-ethiopia`           |                |
+| Year | Slug                               |                |
+| ---: | ---------------------------------- | -------------- |
+| -525 | `cambyses-conquers-egypt`          |                |
+| -332 | `alexander-crowned-pharaoh`        |                |
+|  -48 | `caesar-besieged-alexandria`       | foothold · NEW |
+|  -30 | `rome-annexes-egypt`               | foothold · NEW |
+|  439 | `vandals-take-carthage`            | foothold       |
+|  639 | `arab-conquest-of-egypt`           |                |
+| 1415 | `portugal-captures-ceuta`          | NEW            |
+| 1488 | `dias-cape-good-hope`              | foothold       |
+| 1497 | `da-gama-sails-round-africa`       | foothold · NEW |
+| 1517 | `selim-i-conquers-egypt-mamluks`   | foothold       |
+| 1578 | `alcacer-quibir-sebastian-dies`    | NEW            |
+| 1796 | `mungo-park-reaches-niger`         | NEW            |
+| 1798 | `napoleons-egyptian-campaign`      |                |
+| 1816 | `bombardment-algiers-slaves-freed` |                |
+| 1830 | `france-conquers-algiers`          |                |
+| 1838 | `boers-win-blood-river`            | foothold · NEW |
+| 1855 | `livingstone-sees-victoria-falls`  | foothold · NEW |
+| 1858 | `source-of-nile`                   |                |
+| 1868 | `british-storm-magdala`            | foothold · NEW |
+| 1871 | `livingstone-stanley`              |                |
+| 1879 | `zulu-war`                         |                |
+| 1882 | `british-occupation-egypt`         |                |
+| 1884 | `berlin-conference`                |                |
+| 1896 | `ethiopian-victory-adwa`           |                |
+| 1898 | `fashoda-incident`                 |                |
+| 1899 | `boer-war`                         |                |
+| 1911 | `italy-invades-libya`              | foothold · NEW |
+| 1912 | `treaty-of-fez-morocco`            | NEW            |
+| 1921 | `rif-rout-spain-annual`            | NEW            |
+| 1935 | `italy-invades-ethiopia`           |                |
 
 12 of the 30 were authored for this theme. The catalogue already held the Egyptian conquests
 and the famous beats of the 1870s to 1890s, but not the Portuguese in Morocco, the two
@@ -124,3 +124,12 @@ Eight pairs sit inside theme-gap's 8-year advisory window. Two clusters are deli
 - **1911 / 1912** (`italy-invades-libya` → `treaty-of-fez-morocco`): the last two pieces of
   North Africa taken, a year apart. This is the pair most worth splitting if a reviewer wants
   one fewer coin-flip.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty expeditions, conquests and claims by outsiders in Africa, and the resistance they met.
+- **Fact:** Victoria Falls has a Lozi name, Mosi-oa-Tunya, meaning "the smoke that thunders". The curtain of water is about 1,700 metres wide and 108 metres high.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Victoria_Falls) (Lozi name Mosi-oa-Tunya, translated as 'the smoke that thunders'; 'a width of 1,708 m (5,604 ft)'; 'height of 108 metres (354 ft)'); [nationalgeographic.com](https://www.nationalgeographic.com/travel/article/victoria-falls-the-smoke-that-thunders) (the Kalolo-Lozi people 'had their own name for it, Mosi-oa-Tunya, the smoke that thunders'; falls more than 350 feet).

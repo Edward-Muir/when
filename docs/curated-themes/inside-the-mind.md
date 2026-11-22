@@ -83,3 +83,12 @@ there that was not a medical text already owned by another theme.
 The spine writer searched only 14 of its 42 dates, and the fact-checker searched only some of
 the rest, so the other years rest on the agents' own knowledge. The detail-prose writer wrote
 the Stanford Prison, Prozac and Moniz entries from memory and suggests checking those first.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty landmarks in how people have studied, measured and treated the mind and the brain.
+- **Fact:** An adult male brain weighs about 1.5 kilograms and holds roughly 86 billion neurons, alongside about 85 billion cells that are not neurons.
+
+Sources: [pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC2776484/) (the adult male human brain, at an average of 1.5 kg, has 86 billion neurons and 85 billion non-neuronal cells (Azevedo et al.)).
