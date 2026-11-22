@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:22:06.451Z",
+  "updated_at": "2026-11-22T21:25:10.191Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -58,10 +58,11 @@
       "updated_at": "2026-11-22T21:22:06.451Z"
     },
     "glass-made-mesopotamia": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7f4e01fdac9f53094bed995a23bede9753959cd54fa2b7de4a3fc8e4fc131584",
+      "updated_at": "2026-11-22T21:25:10.191Z"
     },
     "mesoamerican-rubber-curing": {
       "state": "pending",
