@@ -1,0 +1,15 @@
+{
+  "slug": "moondog-coronation-ball",
+  "description": "A dim, painted indoor arena with overturned folding chairs, heaps of coats and shoes, and torn paper on a wooden floor. A saxophone on a stand and a microphone sit on a low stage at right. Double doors at the back hang open, one broken, toward a police car with flashing lights. No people, no frame, no readable text, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
