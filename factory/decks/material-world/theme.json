@@ -1,0 +1,42 @@
+{
+  "id": "material-world",
+  "name": "Material World",
+  "scope": "Yes if it is a material people learned to make",
+  "boundary": "Material World: new stuff to make things from, copper and bronze to plastics; fibres such as nylon go to Dress Code, tall-building steel to Tallest in the World, writing surfaces to Letters & Type.",
+  "neighbours": [
+    "dress-code",
+    "skyline",
+    "eureka"
+  ],
+  "grid": {
+    "categories": [
+      "invention",
+      "craft",
+      "science"
+    ],
+    "eras": [
+      "prehistory",
+      "ancient",
+      "industrial"
+    ],
+    "regions": [
+      "Global",
+      "Middle East & North Africa",
+      "Europe"
+    ]
+  },
+  "example_beats": [
+    "Copper is first smelted (5000 BC)",
+    "Bronze in Sumer (3300 BC)",
+    "Glass in Mesopotamia (2500 BC)",
+    "Hittite iron (1400 BC)",
+    "Roman concrete (200 BC)",
+    "Damascus steel (900)",
+    "Bessemer steel process (1856)",
+    "Bakelite, the first plastic (1907)",
+    "Stainless steel (1913)",
+    "Kevlar (1965)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}
