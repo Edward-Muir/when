@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:25:10.191Z",
+  "updated_at": "2026-11-22T21:28:12.341Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -65,10 +65,11 @@
       "updated_at": "2026-11-22T21:25:10.191Z"
     },
     "mesoamerican-rubber-curing": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "3a826080bcdaca7788b624b5ac252c5fcddf0d6327cd2190a1c4ecd2827c8291",
+      "updated_at": "2026-11-22T21:28:12.341Z"
     },
     "hittite-iron-mastery": {
       "state": "pending",
