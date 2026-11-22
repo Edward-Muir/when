@@ -1,0 +1,15 @@
+{
+  "slug": "johannsen-coins-gene",
+  "description": "A dim, warm-lit workshop painting. An older man in a dark coat examines seeds with a magnifying glass in one hand while pinching a bean with the other. Many shallow bowls of beans and seeds fill a wooden table, with an open notebook, fountain pen and a loose lens beside it. Glass jars, a lantern and laboratory glassware sit on shelves behind. The painting runs edge to edge with no visible frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

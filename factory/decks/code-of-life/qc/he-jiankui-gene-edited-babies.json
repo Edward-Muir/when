@@ -1,0 +1,15 @@
+{
+  "slug": "he-jiankui-gene-edited-babies",
+  "description": "A dark, painterly clinical room. A glass micropipette descends from the top into a petri dish holding a small, pale, curled human embryo or early fetus. Two empty stainless-steel bassinets with folded towels sit in the foreground. Wall monitors and an IV-style pole appear at the edges. No visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

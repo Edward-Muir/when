@@ -1,0 +1,15 @@
+{
+  "slug": "genetic-code-cracked",
+  "description": "A man in a pale lab coat, seen from behind and to the side, writes with chalk on a large dark blackboard in a dim laboratory. The board holds a grid of small chalk glyphs in rows and columns, several looking like letter triplets, with circled cells. A string of beads of different shapes hangs at the right edge of the board. Shelves of books, glassware and a retort stand sit in the shadowy room. The painting runs edge to edge, with only the board's own wooden frame visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The chalkboard grid is painted with letter-like triplets (several read as U, A, C, G combinations), which counts as text in the picture. The glyphs should be replaced with abstract non-letter marks or left blurred. The rest of the scene (lab, chalkboard grid, hanging beads) matches the card."
+}

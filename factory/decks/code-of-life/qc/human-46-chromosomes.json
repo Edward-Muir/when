@@ -1,0 +1,15 @@
+{
+  "slug": "human-46-chromosomes",
+  "description": "An oil-painted laboratory scene in warm brown tones. A weathered, older hand holds a pale sheet with rows of dark, short rod-like marks, which look like chromosomes. Behind it stand a brass-and-black compound microscope and, on the wooden bench, a glass petri dish with cultured material, a small amber dropper bottle, and a clear glass jar. A corner shows forceps on a cloth. The painting fills the frame edge to edge, with no visible text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

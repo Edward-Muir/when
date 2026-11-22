@@ -1,0 +1,20 @@
+{
+  "slug": "avery-dna-heredity",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "ed87ae0213c1929a46a6a96726bb9d50812ee3a8b85f228f23c03c32d9a1fc91",
+  "dhash": "9b27697979e36141",
+  "nearest": {
+    "deck": {
+      "slug": "one-gene-one-enzyme",
+      "distance": 21
+    },
+    "catalogue": {
+      "slug": "first-malaria-vaccine-rollout",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

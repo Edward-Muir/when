@@ -1,0 +1,15 @@
+{
+  "slug": "one-gene-one-enzyme",
+  "description": "An oil-style painting on a dark background. A wooden rack holds a row of six glass test tubes, each plugged with fluffy white cotton, and several tubes contain pinkish-orange and grey fuzzy growths over a pale medium. In front stand amber glass bottles with blank paper labels, a clear glass bottle, a glass beaker, a porcelain dish, a flask of yellow liquid, and dried leaves and a glass tube on a worn wooden bench. No legible text, no frame visible, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

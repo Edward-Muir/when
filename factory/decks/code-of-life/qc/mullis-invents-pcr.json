@@ -1,0 +1,15 @@
+{
+  "slug": "mullis-invents-pcr",
+  "description": "Dark interior view from inside an older car, with a three-spoke steering wheel bearing a star emblem, a lit dashboard with round gauges and a radio, looking out a windscreen at a winding forest road at night. Glowing double-helix DNA strands branch and multiply across the windscreen and the night scene above the road. No legible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -25333,5 +25333,324 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/emoji-added-to-unicode_fgj2mz?_a=BAMAMikS0",
     "color": "#202029",
     "text_color": "light"
+  },
+  {
+    "name": "miescher-isolates-nuclein",
+    "friendly_name": "Miescher Isolates Nuclein",
+    "year": 1869,
+    "category": "science",
+    "description": "A Swiss chemist extracted a phosphorus-rich substance from white blood cell nuclei, the first isolation of DNA.",
+    "difficulty": "medium",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/miescher-isolates-nuclein_gs6q3w?_a=BAMAMikS0",
+    "color": "#25201d",
+    "text_color": "light"
+  },
+  {
+    "name": "flemming-chromosomes-mitosis",
+    "friendly_name": "Flemming Watches Chromosomes Divide",
+    "year": 1882,
+    "category": "science",
+    "description": "A German biologist described in detail how threadlike bodies in the nucleus split during cell division.",
+    "difficulty": "very-hard",
+    "regions": [
+      "Germany"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flemming-chromosomes-mitosis_w7chi3?_a=BAMAMikS0",
+    "color": "#2b1d1a",
+    "text_color": "light"
+  },
+  {
+    "name": "mendel-work-rediscovered",
+    "friendly_name": "Mendel's Work Is Rediscovered",
+    "year": 1900,
+    "category": "science",
+    "description": "Botanists independently unearthed the forgotten pea experiments and confirmed the rules of inheritance.",
+    "difficulty": "medium",
+    "regions": [
+      "Austria",
+      "Germany",
+      "Netherlands"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mendel-work-rediscovered_w7adw0?_a=BAMAMikS0",
+    "color": "#26201c",
+    "text_color": "light"
+  },
+  {
+    "name": "chromosome-theory-inheritance",
+    "friendly_name": "Chromosome Theory of Heredity",
+    "year": 1902,
+    "category": "science",
+    "description": "Two biologists separately proposed that Mendel's factors ride on chromosomes, which pair up and separate.",
+    "difficulty": "medium",
+    "regions": [
+      "Germany",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chromosome-theory-inheritance_53o048?_a=BAMAMikS0",
+    "color": "#281f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "johannsen-coins-gene",
+    "friendly_name": "The Word Gene Is Coined",
+    "year": 1909,
+    "category": "science",
+    "description": "A Danish botanist introduced a short name for the units of heredity, giving a new science its central term.",
+    "difficulty": "medium",
+    "regions": [
+      "Denmark"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/johannsen-coins-gene_k7lu9h?_a=BAMAMikS0",
+    "color": "#261f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "morgan-fruit-fly-linkage",
+    "friendly_name": "Morgan's Fruit Flies Reveal Linkage",
+    "year": 1910,
+    "category": "science",
+    "description": "A white-eyed mutant fly in a New York lab showed a trait is tied to a specific chromosome, starting gene mapping.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/morgan-fruit-fly-linkage_1g1nbf?_a=BAMAMikS0",
+    "color": "#281f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "sturtevant-first-genetic-map",
+    "friendly_name": "First Genetic Map Is Drawn",
+    "year": 1913,
+    "category": "science",
+    "description": "A student of Morgan's arranged genes in a line along a fruit fly chromosome by how often they were inherited together.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sturtevant-first-genetic-map_5r9a76?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "muller-xray-mutations",
+    "friendly_name": "X-rays Shown to Cause Mutations",
+    "year": 1927,
+    "category": "science",
+    "description": "Hermann Muller bombarded fruit flies with radiation and proved it sharply increased heritable genetic changes.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/muller-xray-mutations_l79tc7?_a=BAMAMikS0",
+    "color": "#251f1f",
+    "text_color": "light"
+  },
+  {
+    "name": "griffith-transforming-principle",
+    "friendly_name": "Griffith's Transforming Principle",
+    "year": 1928,
+    "category": "science",
+    "description": "Harmless bacteria turned deadly after mixing with dead virulent ones, hinting at a heritable substance passing between cells.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/griffith-transforming-principle_7r52u4?_a=BAMAMikS0",
+    "color": "#26201b",
+    "text_color": "light"
+  },
+  {
+    "name": "mcclintock-crossing-over",
+    "friendly_name": "Crossing Over Seen in Chromosomes",
+    "year": 1931,
+    "category": "science",
+    "description": "Barbara McClintock and a student showed that chromosomes physically swap segments, explaining how traits get shuffled.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mcclintock-crossing-over_06lvld?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "one-gene-one-enzyme",
+    "friendly_name": "One Gene, One Enzyme",
+    "year": 1941,
+    "category": "science",
+    "description": "Experiments on bread mould showed that each gene directs the making of one specific protein enzyme.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/one-gene-one-enzyme_83qlea?_a=BAMAMikS0",
+    "color": "#291f19",
+    "text_color": "light"
+  },
+  {
+    "name": "avery-dna-heredity",
+    "friendly_name": "Avery Shows DNA Carries Heredity",
+    "year": 1944,
+    "category": "science",
+    "description": "Rockefeller Institute researchers identified DNA, not protein, as the substance that transforms bacteria.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/avery-dna-heredity_ih290z?_a=BAMAMikS0",
+    "color": "#281f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "hershey-chase-experiment",
+    "friendly_name": "Hershey-Chase Blender Experiment",
+    "year": 1952,
+    "category": "science",
+    "description": "Viruses labelled with radioactive tags proved that DNA, not protein, enters a bacterium to direct new viruses.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hershey-chase-experiment_v68l96?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "human-46-chromosomes",
+    "friendly_name": "Humans Counted at 46 Chromosomes",
+    "year": 1956,
+    "category": "science",
+    "description": "Better lab methods finally showed that human cells hold 46 chromosomes, not the 48 long assumed.",
+    "difficulty": "medium",
+    "regions": [
+      "Sweden"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/human-46-chromosomes_uqjm7a?_a=BAMAMikS0",
+    "color": "#2a1e18",
+    "text_color": "light"
+  },
+  {
+    "name": "genetic-code-cracked",
+    "friendly_name": "The Genetic Code Is Cracked",
+    "year": 1966,
+    "category": "science",
+    "description": "Researchers completed the dictionary linking each three-letter RNA codon to the amino acid it specifies.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genetic-code-cracked_0lrpip?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "first-restriction-enzyme",
+    "friendly_name": "First Useful Restriction Enzyme",
+    "year": 1970,
+    "category": "science",
+    "description": "Scientists at Johns Hopkins found an enzyme that cuts DNA at a specific sequence, a molecular pair of scissors.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-restriction-enzyme_tyr1v3?_a=BAMAMikS0",
+    "color": "#281f1a",
+    "text_color": "light"
+  },
+  {
+    "name": "cohen-boyer-recombinant-dna",
+    "friendly_name": "Recombinant DNA Is Created",
+    "year": 1973,
+    "category": "science",
+    "description": "Cohen and Boyer spliced a gene from one organism into a bacterium, launching genetic engineering.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cohen-boyer-recombinant-dna_fysgcf?_a=BAMAMikS0",
+    "color": "#24201e",
+    "text_color": "light"
+  },
+  {
+    "name": "mullis-invents-pcr",
+    "friendly_name": "PCR Is Invented",
+    "year": 1983,
+    "category": "invention",
+    "description": "Kary Mullis conceived a way to copy a tiny DNA fragment into billions of copies in a test tube.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mullis-invents-pcr_ena793?_a=BAMAMikS0",
+    "color": "#202123",
+    "text_color": "light"
+  },
+  {
+    "name": "he-jiankui-gene-edited-babies",
+    "friendly_name": "Gene-Edited Babies Announced",
+    "year": 2018,
+    "category": "science",
+    "description": "A Chinese scientist claimed to have created twin girls with edited embryo DNA, prompting worldwide condemnation.",
+    "difficulty": "easy",
+    "regions": [
+      "China"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/he-jiankui-gene-edited-babies_kgl8je?_a=BAMAMikS0",
+    "color": "#222122",
+    "text_color": "light"
+  },
+  {
+    "name": "first-crispr-therapy-approved",
+    "friendly_name": "First CRISPR Therapy Approved",
+    "year": 2023,
+    "category": "medicine",
+    "description": "Regulators cleared a sickle cell treatment that edits patients' own cells, the first licensed use of CRISPR.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom",
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-crispr-therapy-approved_02vpc0?_a=BAMAMikS0",
+    "color": "#261f1d",
+    "text_color": "light"
+  },
+  {
+    "name": "custom-base-editing-infant",
+    "friendly_name": "Custom Base Editing Treats a Baby",
+    "year": 2025,
+    "category": "medicine",
+    "description": "Doctors designed a bespoke gene-editing therapy within months to treat an infant with a rare metabolic disorder.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/custom-base-editing-infant_rghid8?_a=BAMAMikS0",
+    "color": "#232020",
+    "text_color": "light"
   }
 ]

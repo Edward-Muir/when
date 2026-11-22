@@ -1,0 +1,218 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "reuse",
+      "slug": "mendel-genetics",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "miescher-isolates-nuclein",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "flemming-chromosomes-mitosis",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": "",
+      "why": "Weakest on scope and fame 1; thins the dense early run"
+    },
+    {
+      "beat": 4,
+      "decision": "cut",
+      "slug": "",
+      "why": "Theory, not a discovery step; fame 1"
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "mendel-work-rediscovered",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 6,
+      "decision": "new",
+      "slug": "chromosome-theory-inheritance",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 7,
+      "decision": "new",
+      "slug": "johannsen-coins-gene",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "morgan-fruit-fly-linkage",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "sturtevant-first-genetic-map",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "muller-xray-mutations",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "griffith-transforming-principle",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "mcclintock-crossing-over",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 13,
+      "decision": "new",
+      "slug": "one-gene-one-enzyme",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 14,
+      "decision": "new",
+      "slug": "avery-dna-heredity",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 15,
+      "decision": "cut",
+      "slug": "",
+      "why": "Cut to fix bunching in 1944-1953; fame 1"
+    },
+    {
+      "beat": 16,
+      "decision": "new",
+      "slug": "hershey-chase-experiment",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "dna-structure",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 18,
+      "decision": "new",
+      "slug": "human-46-chromosomes",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "genetic-code-cracked",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 20,
+      "decision": "new",
+      "slug": "first-restriction-enzyme",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "cohen-boyer-recombinant-dna",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "dna-sequencing-method",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "mullis-invents-pcr",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 24,
+      "decision": "reuse",
+      "slug": "dna-fingerprinting",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 25,
+      "decision": "reuse",
+      "slug": "human-genome-project",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 26,
+      "decision": "reuse",
+      "slug": "dolly-sheep-cloned",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 27,
+      "decision": "cut",
+      "slug": "",
+      "why": "Within two years of 2003 completion; avoids bunching"
+    },
+    {
+      "beat": 28,
+      "decision": "reuse",
+      "slug": "human-genome-completed",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 29,
+      "decision": "reuse",
+      "slug": "induced-stem-cells-created",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 30,
+      "decision": "reuse",
+      "slug": "crispr-gene-editing",
+      "why": "Same event, same year as existing card"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "he-jiankui-gene-edited-babies",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "first-crispr-therapy-approved",
+      "why": "No catalogue match"
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "custom-base-editing-infant",
+      "why": "No catalogue match"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 3/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1900-1909 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (eureka)      (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 84 earlier themes:\n        1  eureka                 dna-structure\n        1  tamed                  dolly-sheep-cloned",
+  "footholds": [
+    "dna-structure",
+    "cohen-boyer-recombinant-dna",
+    "dolly-sheep-cloned",
+    "crispr-gene-editing",
+    "he-jiankui-gene-edited-babies",
+    "first-crispr-therapy-approved"
+  ]
+}
