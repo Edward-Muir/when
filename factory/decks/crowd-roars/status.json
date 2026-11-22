@@ -3,7 +3,7 @@
   "name": "Crowd Roars",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T12:41:22.366Z",
-  "updated_at": "2026-11-22T15:52:07.795Z",
+  "updated_at": "2026-11-22T16:07:13.133Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -86,74 +86,74 @@
       "updated_at": "2026-11-22T14:07:09.464Z"
     },
     "first-newport-jazz-festival": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "77de247dd71a3c36e55e4369af76cf379ac97e0e4061e34b78dbde3f0db866c7",
-      "updated_at": "2026-11-22T15:17:03.206Z"
+      "updated_at": "2026-11-22T16:07:12.828Z"
     },
     "first-glastonbury-festival": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "63401aebe19694885995252fccb538e92a14cb25ea969471dc8104f62d467da2",
-      "updated_at": "2026-11-22T15:19:50.934Z"
+      "updated_at": "2026-11-22T16:07:12.865Z"
     },
     "the-band-last-waltz": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "a566867535889df6075a7b71405ad93d4df0683f078a1867da449dc62cd74078",
-      "updated_at": "2026-11-22T15:23:34.784Z"
+      "updated_at": "2026-11-22T16:07:12.895Z"
     },
     "simon-garfunkel-central-park": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5d13535ab0071d6c7c277573fdc01d6df4020e43440aba4950bf2d402e6dd426",
-      "updated_at": "2026-11-22T15:28:01.416Z"
+      "updated_at": "2026-11-22T16:07:12.928Z"
     },
     "three-tenors-rome": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "1629bc761ef3ed1d081f8aa75cdb74e263c15760674d1dac6c541bacf4c3f6b3",
-      "updated_at": "2026-11-22T15:32:06.569Z"
+      "updated_at": "2026-11-22T16:07:12.964Z"
     },
     "freddie-mercury-tribute-concert": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "580f4a5151c7444b086858896268ed989a8ae2972dddaeba4a109654424ca1f9",
-      "updated_at": "2026-11-22T15:36:15.381Z"
+      "updated_at": "2026-11-22T16:07:13.004Z"
     },
     "first-coachella-festival": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "5be1d7cb42c8c1463d299f2e9cbbb8f05b16c589a7f8b3fe868deeae3818f210",
-      "updated_at": "2026-11-22T15:39:24.841Z"
+      "updated_at": "2026-11-22T16:07:13.038Z"
     },
     "concert-for-new-york-city": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "0e48ca3f79cb8f347a97f10832ea83486f6775143ad5184094c9f457bd9dfa87",
-      "updated_at": "2026-11-22T15:42:38.435Z"
+      "updated_at": "2026-11-22T16:07:13.071Z"
     },
     "live-8-concerts": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e24632fdce9d831f0d17f34645d39e1ccc321c7fb034163b91c8de1f14ce9d84",
-      "updated_at": "2026-11-22T15:45:53.325Z"
+      "updated_at": "2026-11-22T16:07:13.102Z"
     },
     "tupac-hologram-coachella": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ed25ab1ca9e1dd3cd4f3dd02980ef7254153c5379722bea97912820be9e1b09b",
-      "updated_at": "2026-11-22T15:52:07.795Z"
+      "updated_at": "2026-11-22T16:07:13.133Z"
     },
     "beychella-coachella": {
       "state": "pending",

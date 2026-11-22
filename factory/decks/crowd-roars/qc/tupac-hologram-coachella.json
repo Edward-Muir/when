@@ -1,0 +1,15 @@
+{
+  "slug": "tupac-hologram-coachella",
+  "description": "A large dark outdoor stage at night under a sky with faint stars, with lighting truss and speaker arrays on both sides. A tall rectangular translucent screen stands downstage, and a glowing, ghostly human figure with light beams behind it is projected on it. Tall palm trees sit at the left and right edges, and the ground in front is an empty dark paved expanse with no crowd visible. No text, border or frame is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

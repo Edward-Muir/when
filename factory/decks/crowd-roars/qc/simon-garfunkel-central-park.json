@@ -1,0 +1,15 @@
+{
+  "slug": "simon-garfunkel-central-park",
+  "description": "A night scene of a large open grass lawn in a city park, covered with scattered blankets, folding camp chairs and coolers, with no people visible. A small stage glows with warm light in the distance, with a haze above it. Behind the trees rises a skyline of lit office towers under a dark blue sky. The painting is realistic and painterly, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
