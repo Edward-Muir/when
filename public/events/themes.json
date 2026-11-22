@@ -26777,5 +26777,261 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leo-xiv-elected-first-american-pope_52kf9i?_a=BAMAMikS0",
     "color": "#25201f",
     "text_color": "light"
+  },
+  {
+    "name": "hammurabi-code-penalties",
+    "friendly_name": "Code of Hammurabi Sets Penalties",
+    "year": -1754,
+    "category": "law",
+    "description": "A Babylonian king had a table of laws carved in stone, setting fixed punishments for crimes from theft to murder.",
+    "difficulty": "easy",
+    "regions": [
+      "Iraq"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hammurabi-code-penalties_xxqjd1?_a=BAMAMikS0",
+    "color": "#2c1e14",
+    "text_color": "light"
+  },
+  {
+    "name": "newgate-prison-built",
+    "friendly_name": "Newgate Prison Built in London",
+    "year": 1188,
+    "category": "law",
+    "description": "A gatehouse in London's old city wall became a jail, starting centuries as the capital's most notorious prison.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newgate-prison-built_cbj28b?_a=BAMAMikS0",
+    "color": "#271f1b",
+    "text_color": "light"
+  },
+  {
+    "name": "bridewell-house-of-correction",
+    "friendly_name": "Bridewell Becomes Correction House",
+    "year": 1553,
+    "category": "law",
+    "description": "A royal palace in London was given over to hold vagrants and petty offenders and set them to work, a model for later prisons.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bridewell-house-of-correction_38yd6c?_a=BAMAMikS0",
+    "color": "#271f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "paris-lieutenant-general-police",
+    "friendly_name": "Paris Gets a Police Chief",
+    "year": 1667,
+    "category": "law",
+    "description": "Louis XIV created a post to oversee the French capital's streets, lighting and order, giving Paris an early organised police.",
+    "difficulty": "easy",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paris-lieutenant-general-police_fjfrch?_a=BAMAMikS0",
+    "color": "#232020",
+    "text_color": "light"
+  },
+  {
+    "name": "bow-street-runners-formed",
+    "friendly_name": "Bow Street Runners Form",
+    "year": 1749,
+    "category": "law",
+    "description": "A London magistrate's small band of paid thief-takers began chasing offenders, an early step toward a professional police.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bow-street-runners-formed_pqcorc?_a=BAMAMikS0",
+    "color": "#28221d",
+    "text_color": "light"
+  },
+  {
+    "name": "vidocq-founds-surete",
+    "friendly_name": "Vidocq Founds the Paris Sûreté",
+    "year": 1812,
+    "category": "law",
+    "description": "A reformed criminal organised a plainclothes brigade using informers and records to catch thieves, ancestor of detective units.",
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vidocq-founds-surete_yflbwo?_a=BAMAMikS0",
+    "color": "#25201d",
+    "text_color": "light"
+  },
+  {
+    "name": "last-public-hanging-england",
+    "friendly_name": "Last Public Hanging in England",
+    "year": 1868,
+    "category": "law",
+    "description": "A convicted murderer was hanged outside Newgate, the final execution held before a crowd; later ones moved behind prison walls.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-public-hanging-england_461chz?_a=BAMAMikS0",
+    "color": "#212024",
+    "text_color": "light"
+  },
+  {
+    "name": "bertillon-criminal-measurement",
+    "friendly_name": "Bertillon Measures Criminals",
+    "year": 1879,
+    "category": "invention",
+    "description": "A Paris police clerk introduced body measurements and photographs to identify repeat offenders, a forerunner of forensic records.",
+    "difficulty": "medium",
+    "regions": [
+      "France"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bertillon-criminal-measurement_aikits?_a=BAMAMikS0",
+    "color": "#25201d",
+    "text_color": "light"
+  },
+  {
+    "name": "first-electric-chair-execution",
+    "friendly_name": "First Electric Chair Execution",
+    "year": 1890,
+    "category": "law",
+    "description": "A New York murderer became the first person put to death by electric current, in a grim trial of a supposedly humane method.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-electric-chair-execution_u1rak7?_a=BAMAMikS0",
+    "color": "#24201e",
+    "text_color": "light"
+  },
+  {
+    "name": "scotland-yard-fingerprint-bureau",
+    "friendly_name": "Scotland Yard Fingerprint Bureau",
+    "year": 1901,
+    "category": "invention",
+    "description": "London's police adopted a filing system for fingerprints, replacing body measurements as the way to identify criminals.",
+    "difficulty": "medium",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scotland-yard-fingerprint-bureau_4vdxfe?_a=BAMAMikS0",
+    "color": "#261f1e",
+    "text_color": "light"
+  },
+  {
+    "name": "wireless-catches-crippen",
+    "friendly_name": "Wireless Catches Dr Crippen",
+    "year": 1910,
+    "category": "invention",
+    "description": "A ship's captain radioed Scotland Yard about a suspicious passenger couple, and a detective overtook them on a faster liner.",
+    "difficulty": "easy",
+    "regions": [
+      "Canada",
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wireless-catches-crippen_ybyx0d?_a=BAMAMikS0",
+    "color": "#241f23",
+    "text_color": "light"
+  },
+  {
+    "name": "polygraph-invented",
+    "friendly_name": "Polygraph Invented",
+    "year": 1921,
+    "category": "invention",
+    "description": "A California police officer and medical student built a device recording blood pressure and breathing to detect lies.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/polygraph-invented_dha28f?_a=BAMAMikS0",
+    "color": "#261f1c",
+    "text_color": "light"
+  },
+  {
+    "name": "first-gas-chamber-execution",
+    "friendly_name": "First Gas Chamber Execution",
+    "year": 1924,
+    "category": "law",
+    "description": "A Nevada prison put a convicted murderer to death with lethal gas, introducing a new method of capital punishment.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-gas-chamber-execution_pbusp7?_a=BAMAMikS0",
+    "color": "#24201d",
+    "text_color": "light"
+  },
+  {
+    "name": "first-911-call",
+    "friendly_name": "First 911 Call Is Made",
+    "year": 1968,
+    "category": "invention",
+    "description": "A phone call in a small Alabama town tested a single nationwide emergency number for police, fire and medical help.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-911-call_sdryyc?_a=BAMAMikS0",
+    "color": "#25201f",
+    "text_color": "light"
+  },
+  {
+    "name": "first-lethal-injection-execution",
+    "friendly_name": "First Lethal Injection Execution",
+    "year": 1982,
+    "category": "law",
+    "description": "A Texas prisoner became the first person executed by intravenous drugs, a method presented as more humane.",
+    "difficulty": "medium",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-lethal-injection-execution_6is658?_a=BAMAMikS0",
+    "color": "#22211c",
+    "text_color": "light"
+  },
+  {
+    "name": "dna-evidence-convicts-killer",
+    "friendly_name": "DNA Evidence Convicts a Killer",
+    "year": 1988,
+    "category": "science",
+    "description": "After mass testing of local men, a baker was convicted of two murders in the first case solved by DNA profiling.",
+    "difficulty": "easy",
+    "regions": [
+      "United Kingdom"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dna-evidence-convicts-killer_448vbi?_a=BAMAMikS0",
+    "color": "#22211f",
+    "text_color": "light"
+  },
+  {
+    "name": "golden-state-killer-identified",
+    "friendly_name": "Golden State Killer Identified",
+    "year": 2018,
+    "category": "science",
+    "description": "Investigators matched crime-scene DNA to relatives on a public ancestry database to arrest a suspect in decades-old cases.",
+    "difficulty": "easy",
+    "regions": [
+      "United States"
+    ],
+    "has_detail": true,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/golden-state-killer-identified_nynr6g?_a=BAMAMikS0",
+    "color": "#232022",
+    "text_color": "light"
   }
 ]

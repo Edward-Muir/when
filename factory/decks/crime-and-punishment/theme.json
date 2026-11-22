@@ -1,0 +1,26 @@
+{
+  "id": "crime-and-punishment",
+  "name": "Crime & Punishment",
+  "scope": "Yes if it is a milestone in policing or punishing crime",
+  "boundary": "Crime & Punishment: police, prisons and detection; trials go to Day in Court, invented detectives to Whodunit, robberies to Stolen!",
+  "neighbours": ["day-in-court", "whodunit", "heists"],
+  "grid": {
+    "categories": ["law", "invention"],
+    "eras": ["earlyModern", "industrial", "worldWars"],
+    "regions": ["Global", "Europe", "North America"]
+  },
+  "example_beats": [
+    "Bow Street Runners formed (1749)",
+    "First guillotine execution (1792)",
+    "Metropolitan Police founded (1829)",
+    "Pinkerton agency founded (1850)",
+    "Bertillon's identification system (1879)",
+    "First electric chair execution (1890)",
+    "FBI founded (1908)",
+    "Interpol founded (1923)",
+    "Alcatraz opens as a federal prison (1934)",
+    "DNA fingerprinting developed (1984)"
+  ],
+  "appeal": 2,
+  "status": "queued"
+}

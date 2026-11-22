@@ -1,0 +1,15 @@
+{
+  "slug": "scotland-yard-fingerprint-bureau",
+  "description": "A man in a dark jacket and waistcoat peers through a magnifying glass at his inked fingertips, with fingerprint cards on the desk. Behind are wooden filing cabinets with brass-handled drawers and stacked papers. A glass ink slab with a roller, an ink tube and inkwells sit on the desk. Paper in the bottom right and left carries legible writing such as 'Unlabeled Print Cards'. The painting fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible painted text appears on the papers at the bottom ('Unlabeled Print Cards' and other written lines). Regenerate with blank or unreadable paper."
+}

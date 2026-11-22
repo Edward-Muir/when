@@ -1,0 +1,150 @@
+{
+  "deck": "crime-and-punishment",
+  "name": "Crime & Punishment",
+  "stage": "pr-open",
+  "created_at": "2026-11-21T16:18:17.176Z",
+  "updated_at": "2026-11-22T12:27:58.875Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-21T16:18:17.176Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-21T17:09:16.151Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-21T22:07:43.884Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-22T12:23:48.570Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-22T12:27:58.875Z"
+    }
+  ],
+  "slugs": {
+    "hammurabi-code-penalties": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "235ca20f0cdad2519b8ac73ea571533a09bf48095597466174c7ed493cf6fb4c",
+      "updated_at": "2026-11-21T18:07:23.612Z"
+    },
+    "newgate-prison-built": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "98636e60b3c8afde283b4bcabfd07926b728dfbd9c766dfc871f20aa43e10200",
+      "updated_at": "2026-11-21T18:07:23.652Z"
+    },
+    "bridewell-house-of-correction": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e90c262ff8803d201168fc6d3e0882030a9194f79ebc305e172e64752bbb43bc",
+      "updated_at": "2026-11-21T18:07:23.683Z"
+    },
+    "paris-lieutenant-general-police": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3c4b5d338c399c7b63b9690e05e0da44fbf6acda20192821315005066329f2c1",
+      "updated_at": "2026-11-21T18:07:23.713Z"
+    },
+    "bow-street-runners-formed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e41b5bb2d6faac1bd90cfb13b6d8e8252d19371165efba4c251d353266728248",
+      "updated_at": "2026-11-21T18:07:23.743Z"
+    },
+    "vidocq-founds-surete": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8295801a760dab57ba41a03f66eef07ede21507567661065e68fa830819cb61e",
+      "updated_at": "2026-11-21T18:07:23.775Z"
+    },
+    "last-public-hanging-england": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "33a84d8dfd92ec25c65d21a20ad845db388bde6e13b328b327b1519876f3f097",
+      "updated_at": "2026-11-21T18:07:23.807Z"
+    },
+    "bertillon-criminal-measurement": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "768fd645a849d196b7edb2724dc789501ccc3290e89f0ba67cadbdfd3127299e",
+      "updated_at": "2026-11-21T18:07:23.837Z"
+    },
+    "first-electric-chair-execution": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f2c2bf582267af6d5bddce87105b67ef2c65101b5226e380ac2118dffcce52d9",
+      "updated_at": "2026-11-21T18:07:23.869Z"
+    },
+    "scotland-yard-fingerprint-bureau": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "3d49b261b16c2924ef846d22d1f4dab3d84cc4ff37500c20554b79404946b146",
+      "updated_at": "2026-11-21T20:08:36.537Z"
+    },
+    "wireless-catches-crippen": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6d2582fe0cd04f13c061f8d35ce049aea579f882498af397244f398308ed6e35",
+      "updated_at": "2026-11-21T20:08:36.646Z"
+    },
+    "polygraph-invented": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "97bc37afd7f7c7db53d25558ce8dcb9504b591d49987a2f2bd9b3865c7f0cff4",
+      "updated_at": "2026-11-21T20:08:36.736Z"
+    },
+    "first-gas-chamber-execution": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c643ca6e397bf892ef810b8bbf45974ebd42754d8ca2c10f6546a3d866e4dac6",
+      "updated_at": "2026-11-21T20:08:36.822Z"
+    },
+    "first-911-call": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ba9329c3aed1f2d13179d9b1ce3a03687bd0f0e4f1644de3de527606ab3c7f8c",
+      "updated_at": "2026-11-21T20:08:36.907Z"
+    },
+    "first-lethal-injection-execution": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e6df495b3bd4e0bb1634ac8a17367a5a6b1a1e16436f2342fe9de0e1e617890f",
+      "updated_at": "2026-11-21T20:08:36.994Z"
+    },
+    "dna-evidence-convicts-killer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "93f94953d60ca558ff685926007979b054ec7901bd6a280050267214545dace6",
+      "updated_at": "2026-11-21T20:08:37.088Z"
+    },
+    "golden-state-killer-identified": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "9edb74736b93b0c99b1f089912710187942fb099006595e659a3928f5e54a591",
+      "updated_at": "2026-11-21T22:07:43.884Z"
+    }
+  }
+}

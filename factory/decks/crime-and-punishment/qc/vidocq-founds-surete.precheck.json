@@ -1,0 +1,20 @@
+{
+  "slug": "vidocq-founds-surete",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "8295801a760dab57ba41a03f66eef07ede21507567661065e68fa830819cb61e",
+  "dhash": "363a28ecc910a0e8",
+  "nearest": {
+    "deck": {
+      "slug": "paris-lieutenant-general-police",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "tay-son-rebellion",
+      "distance": 14
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

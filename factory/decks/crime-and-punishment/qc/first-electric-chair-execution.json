@@ -1,0 +1,15 @@
+{
+  "slug": "first-electric-chair-execution",
+  "description": "A heavy wooden chair with leather straps, a metal head cap hanging above it and thick cables running to the right, toward a dark panel with two round gauges and a row of switches. It stands empty in a dim room with rough stone walls, a dark wooden door, and a worn floor. The painting is oil-like and fills the whole square with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
