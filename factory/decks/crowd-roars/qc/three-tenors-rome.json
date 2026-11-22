@@ -1,0 +1,15 @@
+{
+  "slug": "three-tenors-rome",
+  "description": "A dark, night-time open-air stage in front of tall, weathered brick Roman ruins with arched openings and a glowing haze at the base. The stage is empty: a row of music stands with lit lamps, a conductor's podium and a sea of empty chairs for an orchestra or chorus. In the foreground, rows of dark seats face the stage. No people are visible. The image is painted, edge to edge, with no text, frame or border.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The ruins look like the Baths of Caracalla, which fits the venue, but the stage is empty: no three tenors, no performers, and no clear sign of the football-final eve. It reads as a generic open-air concert venue, so the picture does not clearly show this event. Adding the three singers in formal wear at the front of the stage would make it read as this event."
+}

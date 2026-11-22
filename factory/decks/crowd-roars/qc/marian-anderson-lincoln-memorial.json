@@ -1,0 +1,15 @@
+{
+  "slug": "marian-anderson-lincoln-memorial",
+  "description": "An oil-style painting of a columned marble memorial's steps at dusk. In the foreground stands a bank of vintage microphones on tall stands with cables snaking across the steps. Folding chairs are scattered in rows on the plaza, a reflecting pool runs toward the background, and several fedora hats lie on the ground. No people are visible. A tiny mark sits in the bottom-right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

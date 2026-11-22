@@ -1,0 +1,41 @@
+{
+  "id": "crowd-roars",
+  "name": "Crowd Roars",
+  "scope": "Yes if it is a famous concert, tour or music festival",
+  "boundary": "Crowd Roars: a dated live performance or music festival; carnivals and parades go to Let's Celebrate, opera and theatre premieres to On Stage.",
+  "neighbours": [
+    "lets-celebrate",
+    "platinum",
+    "on-stage"
+  ],
+  "grid": {
+    "categories": [
+      "media",
+      "art"
+    ],
+    "eras": [
+      "worldWars",
+      "coldWar",
+      "modern"
+    ],
+    "regions": [
+      "North America",
+      "Europe",
+      "Global"
+    ]
+  },
+  "example_beats": [
+    "Benny Goodman at Carnegie Hall (1938)",
+    "Dylan goes electric at Newport (1965)",
+    "Monterey Pop Festival (1967)",
+    "Woodstock (1969)",
+    "First Glastonbury (1970)",
+    "Concert for Bangladesh (1971)",
+    "Live Aid (1985)",
+    "Three Tenors in Rome (1990)",
+    "Coachella first held (1999)",
+    "Live 8 (2005)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

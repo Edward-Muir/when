@@ -1,0 +1,192 @@
+{
+  "deck": "crowd-roars",
+  "name": "Crowd Roars",
+  "stage": "pr-open",
+  "created_at": "2026-11-22T12:41:22.366Z",
+  "updated_at": "2026-11-22T19:04:06.150Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-22T12:41:22.366Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-22T13:17:42.194Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-22T18:07:05.896Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-22T19:02:26.550Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-22T19:04:06.150Z"
+    }
+  ],
+  "slugs": {
+    "cardigan-eisteddfod-1176": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5bb1dd96c28e77fd300021beec2bd70ada758e20023ea7de1bd76f4c4bdd7444",
+      "updated_at": "2026-11-22T14:07:09.158Z"
+    },
+    "liszt-lisztomania-berlin": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9ead28db44eb3cb5a3ba94874e3b939dd64a9add93dbbc7ffe0d0ceeefcc2366",
+      "updated_at": "2026-11-22T14:07:09.203Z"
+    },
+    "jenny-lind-america-tour": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "69654192017a4f435f0803a47893e42cda4ec3eb8ed152f75a321d31731ed562",
+      "updated_at": "2026-11-22T14:07:09.234Z"
+    },
+    "carnegie-hall-opens": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a71d5e98364c85123febd14602e9bbd7e2dcd8ce3d3195cfe8095318fc2ac03e",
+      "updated_at": "2026-11-22T14:07:09.268Z"
+    },
+    "first-promenade-concert": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "58a78646217d31bbf97956a3963c005f0ab839c3870c7b44b98418c789aa09db",
+      "updated_at": "2026-11-22T14:07:09.300Z"
+    },
+    "mahler-symphony-of-a-thousand": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5d4e54ac2f230e2959433b44d740149b1c60b92270b7bf3cf1fd6addfdcd1339",
+      "updated_at": "2026-11-22T14:07:09.334Z"
+    },
+    "hollywood-bowl-first-season": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "86c737d24ea2e84477821e9dbff47fb23fa91bfdecf9989899696aaef810e13c",
+      "updated_at": "2026-11-22T14:07:09.368Z"
+    },
+    "benny-goodman-carnegie-hall": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3ba549d8e1afc8a6d6369bcfa4ed299ae753df25e47d63c1f5944136734b9242",
+      "updated_at": "2026-11-22T14:07:09.400Z"
+    },
+    "marian-anderson-lincoln-memorial": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "903269f718df126ec95abdfa3a99acbd53ea6749010b5466f951885f73fd1cad",
+      "updated_at": "2026-11-22T14:07:09.432Z"
+    },
+    "moondog-coronation-ball": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dfca6eb8c9a55f4f1c2c04bccbe324a8ba18218880caf572ab307d47192ef4a6",
+      "updated_at": "2026-11-22T14:07:09.464Z"
+    },
+    "first-newport-jazz-festival": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "77de247dd71a3c36e55e4369af76cf379ac97e0e4061e34b78dbde3f0db866c7",
+      "updated_at": "2026-11-22T16:07:12.828Z"
+    },
+    "first-glastonbury-festival": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "63401aebe19694885995252fccb538e92a14cb25ea969471dc8104f62d467da2",
+      "updated_at": "2026-11-22T16:07:12.865Z"
+    },
+    "the-band-last-waltz": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a566867535889df6075a7b71405ad93d4df0683f078a1867da449dc62cd74078",
+      "updated_at": "2026-11-22T16:07:12.895Z"
+    },
+    "simon-garfunkel-central-park": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5d13535ab0071d6c7c277573fdc01d6df4020e43440aba4950bf2d402e6dd426",
+      "updated_at": "2026-11-22T16:07:12.928Z"
+    },
+    "three-tenors-rome": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1629bc761ef3ed1d081f8aa75cdb74e263c15760674d1dac6c541bacf4c3f6b3",
+      "updated_at": "2026-11-22T16:07:12.964Z"
+    },
+    "freddie-mercury-tribute-concert": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "580f4a5151c7444b086858896268ed989a8ae2972dddaeba4a109654424ca1f9",
+      "updated_at": "2026-11-22T16:07:13.004Z"
+    },
+    "first-coachella-festival": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5be1d7cb42c8c1463d299f2e9cbbb8f05b16c589a7f8b3fe868deeae3818f210",
+      "updated_at": "2026-11-22T16:07:13.038Z"
+    },
+    "concert-for-new-york-city": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0e48ca3f79cb8f347a97f10832ea83486f6775143ad5184094c9f457bd9dfa87",
+      "updated_at": "2026-11-22T16:07:13.071Z"
+    },
+    "live-8-concerts": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e24632fdce9d831f0d17f34645d39e1ccc321c7fb034163b91c8de1f14ce9d84",
+      "updated_at": "2026-11-22T16:07:13.102Z"
+    },
+    "tupac-hologram-coachella": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ed25ab1ca9e1dd3cd4f3dd02980ef7254153c5379722bea97912820be9e1b09b",
+      "updated_at": "2026-11-22T16:07:13.133Z"
+    },
+    "beychella-coachella": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3f744e96bdfc2ce14c5c963a90e8a7eb32c09a1d651e31c272eacf7c3a1272c4",
+      "updated_at": "2026-11-22T18:07:05.821Z"
+    },
+    "one-world-together-at-home": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1804b55697de4756e4b93d567d06283739d7ade1106681a433767d05ad9d3ec6",
+      "updated_at": "2026-11-22T18:07:05.862Z"
+    },
+    "taylor-swift-eras-tour-begins": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2fee669c88ac06d246734642e5e42fc877925ff9dddff7d89edd863c3aa4ab7a",
+      "updated_at": "2026-11-22T18:07:05.896Z"
+    }
+  }
+}
