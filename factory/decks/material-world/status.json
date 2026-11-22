@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-22T21:34:12.296Z",
+  "updated_at": "2026-11-22T22:07:44.667Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -16,74 +16,74 @@
   ],
   "slugs": {
     "fired-clay-figurines-venus": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "db621a1b53979892525989bc04566d81a08c300091522123c12188503f844a4a",
-      "updated_at": "2026-11-22T21:08:50.058Z"
+      "updated_at": "2026-11-22T22:07:43.824Z"
     },
     "lime-plaster-burning": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "033648e3740a4fb20b281f7fda7c5e3545540fba56b3ab6b952cfc029f524cef",
-      "updated_at": "2026-11-22T21:11:12.947Z"
+      "updated_at": "2026-11-22T22:07:43.943Z"
     },
     "first-copper-smelting-balkans": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "29d67940390f01aca6c92da73fdb34462aa565539e03740430f31a4e22c9c79c",
-      "updated_at": "2026-11-22T21:13:38.826Z"
+      "updated_at": "2026-11-22T22:07:44.025Z"
     },
     "varna-gold-grave-treasure": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d2df776698bb4061f93b62c240b01b7ee0d6f7b370becca62808b75b070d203c",
-      "updated_at": "2026-11-22T21:16:31.775Z"
+      "updated_at": "2026-11-22T22:07:44.102Z"
     },
     "mesopotamian-kiln-fired-bricks": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "8cb0219628393bdf4c6569b61f054a5b72bb5ee408e3f75385e1451530609790",
-      "updated_at": "2026-11-22T21:19:18.070Z"
+      "updated_at": "2026-11-22T22:07:44.183Z"
     },
     "bronze-alloyed-sumer": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "d6820ee980fafda05763c2ee53b375b63710de052d202cdbc6b697ee9c9a36ca",
-      "updated_at": "2026-11-22T21:22:06.451Z"
+      "updated_at": "2026-11-22T22:07:44.302Z"
     },
     "glass-made-mesopotamia": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7f4e01fdac9f53094bed995a23bede9753959cd54fa2b7de4a3fc8e4fc131584",
-      "updated_at": "2026-11-22T21:25:10.191Z"
+      "updated_at": "2026-11-22T22:07:44.388Z"
     },
     "mesoamerican-rubber-curing": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "3a826080bcdaca7788b624b5ac252c5fcddf0d6327cd2190a1c4ecd2827c8291",
-      "updated_at": "2026-11-22T21:28:12.341Z"
+      "updated_at": "2026-11-22T22:07:44.478Z"
     },
     "hittite-iron-mastery": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "56407535947b2aac26d42a4ee8c9ec0f8d5f06dd75d610a303fe1e84ffee34a1",
-      "updated_at": "2026-11-22T21:31:11.324Z"
+      "updated_at": "2026-11-22T22:07:44.577Z"
     },
     "roman-concrete-perfected": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "6aea380ebf8426d6fa9932643a800351b641ba4a7db9cbcf0fe2c2e1de8593ce",
-      "updated_at": "2026-11-22T21:34:12.296Z"
+      "updated_at": "2026-11-22T22:07:44.667Z"
     },
     "glassblowing-invented-syria": {
       "state": "pending",
