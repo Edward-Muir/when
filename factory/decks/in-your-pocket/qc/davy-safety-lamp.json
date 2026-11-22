@@ -1,0 +1,15 @@
+{
+  "slug": "davy-safety-lamp",
+  "description": "A miner in dark work clothes crouches in a low tunnel with timber supports and rough stone walls. He holds up a lit lantern with a mesh cage around the flame, and his face looks weary and dirty. The painting is dark and painterly, with no visible text, frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -1,0 +1,18 @@
+{
+  "davy-safety-lamp": {"recognition": "medium", "inferability": "medium", "anchors": ["miners", "gauze lamp", "flame"], "why": "flame lamp for miners points to pre-electric industrial era, though not a precise century"},
+  "swiss-army-knife-introduced": {"recognition": "high", "inferability": "medium", "anchors": ["soldiers", "cutler", "folding knife"], "why": "famous object, but text gives only a broad 19th-century-ish feel"},
+  "electric-flashlight-ever-ready": {"recognition": "high", "inferability": "medium", "anchors": ["battery", "bulb"], "why": "battery and bulb imply electric age, late 19th to early 20th century"},
+  "kodak-brownie-camera": {"recognition": "medium", "inferability": "high", "anchors": ["Kodak", "box camera", "a dollar"], "why": "cheap cardboard box camera for families places it in early 20th century photography"},
+  "thermos-vacuum-flask": {"recognition": "medium", "inferability": "medium", "anchors": ["German glassblower", "vacuum bottle", "patent"], "why": "industrial-era invention, but could be several decades"},
+  "leica-i-camera": {"recognition": "medium", "inferability": "high", "anchors": ["Leica", "cine film", "German"], "why": "cine film compact camera places it in early 20th century"},
+  "zippo-lighter-introduced": {"recognition": "high", "inferability": "medium", "anchors": ["Pennsylvania company", "metal lighter"], "why": "well-known brand, but text gives only a 20th-century feel"},
+  "handie-talkie-radio": {"recognition": "low", "inferability": "high", "anchors": ["infantry", "two-way radio", "wires"], "why": "hand-held infantry radio as early step to portable comms points to WWII"},
+  "kodak-instamatic-camera": {"recognition": "medium", "inferability": "medium", "anchors": ["film cartridge", "Kodak"], "why": "cartridge film camera suggests mid-20th century but vague"},
+  "hp-35-pocket-calculator": {"recognition": "medium", "inferability": "high", "anchors": ["pocket calculator", "slide rules obsolete"], "why": "calculator replacing slide rules places it in the 1970s electronics era"},
+  "motorola-dynatac-8000x": {"recognition": "high", "inferability": "high", "anchors": ["first hand-held mobile phone", "ten hours to charge"], "why": "first mobile phone brick clearly 1980s"},
+  "blackberry-email-device": {"recognition": "high", "inferability": "high", "anchors": ["BlackBerry", "email", "tiny keyboard"], "why": "email on a keyboard device points to late 1990s-2000s"},
+  "apple-ipad-introduced": {"recognition": "high", "inferability": "high", "anchors": ["touchscreen tablet", "Apple", "phone and laptop"], "why": "touchscreen tablet bridging phone and laptop is 21st century"},
+  "airpods-wireless-earbuds": {"recognition": "high", "inferability": "high", "anchors": ["cordless earbuds", "paired with a phone", "charging case"], "why": "wireless earbuds paired with phones are 2010s"},
+  "samsung-galaxy-fold": {"recognition": "medium", "inferability": "high", "anchors": ["bendable screen", "smartphone"], "why": "foldable phone screen is clearly recent, late 2010s"},
+  "apple-airtag-tracker": {"recognition": "medium", "inferability": "high", "anchors": ["Apple", "tag found by nearby phones"], "why": "phone-network item tracker is clearly the 2020s"}
+}

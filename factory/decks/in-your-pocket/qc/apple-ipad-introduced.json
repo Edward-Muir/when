@@ -1,0 +1,15 @@
+{
+  "slug": "apple-ipad-introduced",
+  "description": "A dark, oil-painted still life of an upholstered armchair. A black tablet with a thin silver bezel and a single round button at the bottom sits tilted on the arm. A black ceramic mug and a folded newspaper sit on the left arm, and a dark knitted blanket hangs over the right side. The screen is blank grey, and there are no people. The painting fills the whole square edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

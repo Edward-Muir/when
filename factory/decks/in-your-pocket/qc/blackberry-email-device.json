@@ -1,0 +1,15 @@
+{
+  "slug": "blackberry-email-device",
+  "description": "A black handheld device with a small grey-green screen above a dense QWERTY thumb keyboard, with a bronze-tinted metal edge, sits clipped at a dark leather belt or holster on a dark coat. The painting is dark and painterly with heavy brushwork, and the frame is filled edge to edge by the coat and device. No other people or setting are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
