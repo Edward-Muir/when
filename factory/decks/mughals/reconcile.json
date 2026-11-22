@@ -1,0 +1,248 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "qutb-minar-begun-aibak",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 1,
+      "decision": "reuse",
+      "slug": "delhi-sultanate",
+      "why": "same founding of the Delhi Sultanate by Aibak, same year"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "iltutmish-caliphal-investiture",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 3,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1, adjacent to the 1296 Khalji beat"
+    },
+    {
+      "beat": 4,
+      "decision": "new",
+      "slug": "alauddin-khalji-seizes-delhi",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "alauddin-khalji-takes-chittor",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 6,
+      "decision": "cut",
+      "slug": "",
+      "why": "capital move is already part of the reused Tughluq reforms card"
+    },
+    {
+      "beat": 7,
+      "decision": "reuse",
+      "slug": "muhammad-bin-tughlaq-reforms",
+      "why": "existing card is the token-currency and capital-move reforms of Tughluq, same year"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "firoz-shah-founds-firozabad",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "timur-sacks-delhi-1398",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 10,
+      "decision": "cut",
+      "slug": "",
+      "why": "fame 1, weakest of the fifteenth-century spares"
+    },
+    {
+      "beat": 11,
+      "decision": "new",
+      "slug": "bahlul-lodi-founds-lodi-dynasty",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 12,
+      "decision": "new",
+      "slug": "sikandar-lodi-founds-agra",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 13,
+      "decision": "reuse",
+      "slug": "mughal-babur-founds",
+      "why": "Babur winning at Panipat and founding the Mughal Empire, same year"
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": "",
+      "why": "dense decade beside Panipat, lower fame"
+    },
+    {
+      "beat": 15,
+      "decision": "new",
+      "slug": "sher-shah-defeats-humayun-kannauj",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": "",
+      "why": "dense 1550s, fame 1 beside Akbar crowned"
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "mughal-akbar",
+      "why": "Akbar taking the throne and winning Second Panipat, same year"
+    },
+    {
+      "beat": 18,
+      "decision": "cut",
+      "slug": "",
+      "why": "dense 1560s, fame 1"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "humayuns-tomb-begun",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 20,
+      "decision": "reuse",
+      "slug": "mughal-architecture-akbar",
+      "why": "Fatehpur Sikri built by Akbar; its window 1569-1585 covers the beat"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "battle-haldighati-mughals-mewar",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "akbar-din-ilahi",
+      "why": "same proclamation, same year"
+    },
+    {
+      "beat": 23,
+      "decision": "new",
+      "slug": "jahangir-accession-agra",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "jahangir-marries-nur-jahan",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 25,
+      "decision": "cut",
+      "slug": "",
+      "why": "Company business that belongs to The Raj"
+    },
+    {
+      "beat": 26,
+      "decision": "cut",
+      "slug": "",
+      "why": "dense 1630s, fame 1"
+    },
+    {
+      "beat": 27,
+      "decision": "reuse",
+      "slug": "taj-mahal-built",
+      "why": "Taj Mahal begun by Shah Jahan, same year"
+    },
+    {
+      "beat": 28,
+      "decision": "new",
+      "slug": "peacock-throne-unveiled-shah-jahan",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 29,
+      "decision": "new",
+      "slug": "shah-jahan-begins-red-fort",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 30,
+      "decision": "new",
+      "slug": "shah-jahan-begins-jama-masjid-delhi",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "aurangzeb-seizes-throne-agra",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 32,
+      "decision": "new",
+      "slug": "badshahi-mosque-lahore-completed",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 33,
+      "decision": "reuse",
+      "slug": "aurangzeb-orthodox-policies",
+      "why": "reimposition of the jizya by Aurangzeb, same year"
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "aurangzeb-dies-deccan",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 35,
+      "decision": "cut",
+      "slug": "",
+      "why": "Persian shah acting, not a Delhi ruler; belongs to Kings of Kings"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "shah-alam-ii-returns-delhi",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "bahadur-shah-zafar-accession",
+      "why": "written new from the spine beat"
+    },
+    {
+      "beat": 38,
+      "decision": "new",
+      "slug": "last-mughal-emperor-deposed",
+      "why": "written new from the spine beat"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 3/8               (advisory, 6+ is spread)\n  PASS  band 0 6               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1632-1638 (want 3 or fewer in any 10 years)\n  PASS  shared 1 (rise-of-empires) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 74 earlier themes:\n        1  rise-of-empires        mughal-babur-founds",
+  "footholds": [
+    "qutb-minar-begun-aibak",
+    "taj-mahal-built",
+    "mughal-babur-founds",
+    "peacock-throne-unveiled-shah-jahan",
+    "shah-jahan-begins-red-fort",
+    "last-mughal-emperor-deposed"
+  ]
+}
