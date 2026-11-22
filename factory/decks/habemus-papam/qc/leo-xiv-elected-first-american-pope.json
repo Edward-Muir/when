@@ -1,0 +1,15 @@
+{
+  "slug": "leo-xiv-elected-first-american-pope",
+  "description": "A painting at dusk: a thick white smoke plume rises from a small chimney on a low classical building at left. A large domed basilica with a lit facade and statues fills the right side. In the foreground a dense crowd of silhouetted people raises arms and waves flags, mostly American stars-and-stripes, plus yellow-and-white and other flags. Warm orange sky, dark clouds, painterly brushwork, edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
