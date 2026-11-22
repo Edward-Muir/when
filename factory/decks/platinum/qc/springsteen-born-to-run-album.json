@@ -1,0 +1,15 @@
+{
+  "slug": "springsteen-born-to-run-album",
+  "description": "A dark, weathered vintage car with its driver's door open, parked at dusk. On the cracked black leather back seat lie a gold tenor saxophone and a worn sunburst electric guitar, with a crumpled cloth beside them. Behind the car is an ocean with choppy waves, and a pier with a lit Ferris wheel, neon signs and a lone figure walking on the boardwalk. The painting is oil-style and fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

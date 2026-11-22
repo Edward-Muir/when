@@ -1,0 +1,15 @@
+{
+  "slug": "adele-21-album",
+  "description": "An oil-painted dim, rainy interior: a black grand piano with open lid by a tall rain-streaked window showing brick London-style rooftops. Crumpled tissues sit on the piano, sheet music and books on the floor. At left a modern turntable with a vinyl record on a wooden cabinet, plus a gold gramophone trophy and horn. A wingback chair and steaming mug by the window. No people, no frame, no legible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

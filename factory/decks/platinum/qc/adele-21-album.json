@@ -1,0 +1,15 @@
+{
+  "slug": "adele-21-album",
+  "description": "An oil-style painting of a dim, rainy room with a black grand piano, its lid open, beside a tall window showing brick chimneys and rooftops. Crumpled paper balls sit on the piano and scattered sheet music lies on the floor. At left, a wooden cabinet holds an acoustic horn gramophone with a record on it, and a gold gramophone-shaped trophy stands nearby. A wingback armchair and a steaming teacup sit by the window. No people are shown, and there is no visible frame or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "unsure",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The piano, crumpled tissues, record and gold gramophone trophy match the scene, but the room (patterned wallpaper, wingback chair, horn gramophone) reads as early twentieth century rather than 2011. Needs a human look at whether the period feel is acceptable for a 2011 album card."
+}
