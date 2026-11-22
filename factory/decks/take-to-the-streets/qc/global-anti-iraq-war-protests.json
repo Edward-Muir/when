@@ -1,0 +1,15 @@
+{
+  "slug": "global-anti-iraq-war-protests",
+  "description": "A dense crowd of people fills a wide European-style city street lined with tall stone classical buildings with many windows and a domed tower in the distance under an overcast sky. Many people hold rainbow-striped flags, some with purple and blue bands, and a few hold up blank hand-made placards with dark silhouette images. The painting is in an oil-painted style, with people mostly seen from behind in modern jackets and coats. No readable text is visible, and the image runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

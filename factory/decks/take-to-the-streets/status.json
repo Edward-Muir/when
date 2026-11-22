@@ -1,0 +1,171 @@
+{
+  "deck": "take-to-the-streets",
+  "name": "Take to the Streets",
+  "stage": "pr-open",
+  "created_at": "2026-11-20T23:16:12.300Z",
+  "updated_at": "2026-11-21T11:08:49.452Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-20T23:16:12.300Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-21T02:09:18.385Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-21T10:07:00.485Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-21T11:07:12.560Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-21T11:08:49.452Z"
+    }
+  ],
+  "slugs": {
+    "chartist-kennington-common-rally": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f1beba5d1c175b76cb05c4edb70988a6d3afdf1de079b3db9303b21261bbabc9",
+      "updated_at": "2026-11-21T03:07:10.346Z"
+    },
+    "trafalgar-square-bloody-sunday": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dd1578d204741d6a356fae1060b154af880bbdb2ff9da2851d7c26abcaad96bf",
+      "updated_at": "2026-11-21T03:07:10.390Z"
+    },
+    "coxeys-army-march-washington": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9ae298302b05d3461491e5488f2255a1715705d64e2ea1fdaee33e413c0b0195",
+      "updated_at": "2026-11-21T03:07:10.423Z"
+    },
+    "woman-suffrage-procession-washington": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d71e672e22836b43dffd4906716b2754f6d1355af1e1efaf05736abf459fbbe8",
+      "updated_at": "2026-11-21T03:07:10.453Z"
+    },
+    "petrograd-womens-day-protest": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e6ae0482df2ee5bdfa7a952fc9acb92fd3660da3fe4f71e0deb61d5d9da310ae",
+      "updated_at": "2026-11-21T03:07:10.484Z"
+    },
+    "first-national-hunger-march": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "19fbc7757ecf2a726d79700e852dce505c2b3d4ce00a1d2cb541f3b5dc2ecd14",
+      "updated_at": "2026-11-21T03:07:10.518Z"
+    },
+    "sacco-vanzetti-worldwide-protests": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4ac7d61386128dde82a303a6c62191c7e3694ca17f19bd2f1de5e3d7069b6ceb",
+      "updated_at": "2026-11-21T03:07:10.550Z"
+    },
+    "bonus-army-march-washington": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a1f317b23fd9d567a5109aa16518e0d6789b9de0c110cbdc5c16fa27756d945b",
+      "updated_at": "2026-11-21T03:07:10.582Z"
+    },
+    "jarrow-march": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5719237f208faa4038feb2293996c2c653e063d9bfe52fa66519e82b76041e09",
+      "updated_at": "2026-11-21T03:07:10.613Z"
+    },
+    "rosenstrasse-protest-berlin": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8e8328c05db23a7629ca40fef8699c9cd08d17a82f11c131008473f2955baaed",
+      "updated_at": "2026-11-21T03:07:10.643Z"
+    },
+    "bengali-language-movement-protests": {
+      "state": "qc-pass",
+      "attempts": 3,
+      "reason": null,
+      "sha256": "a7ec49f366c60643ba80ef9b59a66df34371073f4eed970f0ed4a7d790e6131b",
+      "updated_at": "2026-11-21T10:07:00.485Z"
+    },
+    "first-aldermaston-march": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c368b301511886d3d6b17e10663fd859fa2d01d7334e179a4c58d2e2f630a7cd",
+      "updated_at": "2026-11-21T05:07:22.919Z"
+    },
+    "anpo-protests-japan": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "fe7ec1e2d41e107b4038948bcf04fab184ece73b51e262cf745afe89bff2ad92",
+      "updated_at": "2026-11-21T07:07:13.564Z"
+    },
+    "greenham-common-womens-march": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fd1becf7ef602589f78c7aa03f4e0a8b48da792633a704d64199dedbd2135ed9",
+      "updated_at": "2026-11-21T05:07:22.982Z"
+    },
+    "battle-of-seattle-wto-protests": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d988b27318bca24be7ae3c8e35dbb187215e4c992f38d147654ebcc853528090",
+      "updated_at": "2026-11-21T05:07:23.013Z"
+    },
+    "global-anti-iraq-war-protests": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ebe62bbf79a0e9d93d696c19b859e2181fd12a239f979e29ffad4ded9d7d3fb3",
+      "updated_at": "2026-11-21T05:07:23.049Z"
+    },
+    "occupy-wall-street": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7b1a852a920e79e2ad9c3203a2d671eb7634d27b9b0c3d583c5e46d2d1100a63",
+      "updated_at": "2026-11-21T05:07:23.079Z"
+    },
+    "hong-kong-umbrella-movement": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "1a61f8f32a2bba00891efcbb3a2dbffedcd028a65a6242c62dc0ba9eb326b12e",
+      "updated_at": "2026-11-21T07:07:13.595Z"
+    },
+    "womens-march-2017": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0de220eff5e16a481ed4f0615414b27e92ac5a1c7d7fbeb7a5128031a80d1cad",
+      "updated_at": "2026-11-21T05:07:23.142Z"
+    },
+    "woman-life-freedom-protests": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3d9e2f0dd874305e71211d5c646d4c1b0660d96878ce5946e7492e318adb6b8b",
+      "updated_at": "2026-11-21T05:07:23.173Z"
+    }
+  }
+}

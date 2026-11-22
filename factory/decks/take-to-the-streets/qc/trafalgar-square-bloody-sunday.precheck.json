@@ -1,0 +1,20 @@
+{
+  "slug": "trafalgar-square-bloody-sunday",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "dd1578d204741d6a356fae1060b154af880bbdb2ff9da2851d7c26abcaad96bf",
+  "dhash": "ab8c6da9d59ccccc",
+  "nearest": {
+    "deck": {
+      "slug": "rosenstrasse-protest-berlin",
+      "distance": 25
+    },
+    "catalogue": {
+      "slug": "bali-bombings",
+      "distance": 15
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}
