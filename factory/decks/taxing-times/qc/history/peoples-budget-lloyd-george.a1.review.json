@@ -1,0 +1,15 @@
+{
+  "slug": "peoples-budget-lloyd-george",
+  "description": "An oil painting in dark, moody tones. An elderly man in a flat cap and an elderly woman in a shawl, both in worn clothes, lean over a table and hold out coins from an open red leather chest overflowing with gold and silver coins. Loose coins are scattered on the wooden desk among papers, ink pots and a quill. Through a window at the upper right, a grey battleship with smoke trails sits on dark water. A faint orange glow sits at the far left edge. Papers at the lower right carry small, partly legible printed lines.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The papers at the lower right carry printed lines, and one reads as a word resembling 'PARLIAMENTARY' across the document. Repaint or regenerate those papers as blank or purely abstract, with no letters."
+}

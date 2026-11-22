@@ -1,0 +1,15 @@
+{
+  "slug": "peoples-budget-lloyd-george",
+  "description": "A dark oil painting of an elderly man in a flat cap and an elderly woman in a shawl, in worn clothes, holding out coins over an open red chest full of coins on a wooden table. Papers, ink pots and a ledger lie on the table, and the ledger's cover has clearly legible lettering reading 'PARLIAMENTARY LEDGER'. Through a window at the right a dreadnought-style battleship sits on stormy water, and an orange glow of fire shows at the left edge. The painting fills the frame with no border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The ledger at the lower right has painted lettering reading 'PARLIAMENTARY LEDGER', and the papers carry printed lines. Repaint the ledger and papers blank, with no letters."
+}
