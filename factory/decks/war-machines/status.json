@@ -1,0 +1,157 @@
+{
+  "deck": "war-machines",
+  "name": "War Machines",
+  "stage": "pr-open",
+  "created_at": "2026-11-13T11:15:21.674Z",
+  "updated_at": "2026-11-14T08:47:43.925Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-13T11:15:21.674Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-14T04:09:50.198Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-14T07:07:38.912Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-14T08:18:09.849Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-14T08:47:43.925Z"
+    }
+  ],
+  "slugs": {
+    "greek-fire-constantinople": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "59cc0c1a4bbf1aeff6b312555b7159cf49d53fbeaed7851fbf80f4c64a0d815c",
+      "updated_at": "2026-11-14T05:07:49.394Z"
+    },
+    "great-bombard-constantinople": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ee8cf12fd3407335f4238b268f86e9a861765e027cdaaf512903cfb3e9132aa8",
+      "updated_at": "2026-11-14T05:07:49.428Z"
+    },
+    "leonardo-armoured-car": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a995a4554201f5eb5f3a9bc71fa963772c6faf0d9aaecdcc01be16ce8276fabd",
+      "updated_at": "2026-11-14T05:07:49.463Z"
+    },
+    "nagashino-matchlock-volleys": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ace7407e091676a0c58f32f174cfde5b8e08c5d2e051f175126d3658e62b450a",
+      "updated_at": "2026-11-14T05:07:49.494Z"
+    },
+    "puckle-gun-patented": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3ad9a27f9aae3d15eba4d6156f0db3f07fbb0691b8b030871776c671380bb135",
+      "updated_at": "2026-11-14T05:07:49.528Z"
+    },
+    "first-aerial-bombing-libya": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c30d206f4bef8178339e0e270f8714f84540f78f9b5d5aa3705bf76a740029a9",
+      "updated_at": "2026-11-14T05:07:49.564Z"
+    },
+    "thompson-submachine-gun": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bbee5b7b55ee2eb31c57dc283d10996fbf962cf7bcb3b41e7b4f59d0fe47df8b",
+      "updated_at": "2026-11-14T05:07:49.602Z"
+    },
+    "spitfire-first-flight": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "ef47d7e8e31d48a68721adbebd95e06cb2e0ab9dfe2744ea0f21e50aa264ece1",
+      "updated_at": "2026-11-14T07:07:38.637Z"
+    },
+    "dambusters-bouncing-bombs": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fccbe203e5c5d887ce46543a186e207e57bae8f815cad27181515223de784f60",
+      "updated_at": "2026-11-14T05:07:49.677Z"
+    },
+    "me-262-jet-fighter-combat": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d5439008886e0b1ce118494a964d24987af15a82fce28a694e9435896e44f382",
+      "updated_at": "2026-11-14T05:07:49.712Z"
+    },
+    "ak-47-designed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9daee7ee6357439561d9328eca5bc8b4fd0037af197433147820527174aaef4a",
+      "updated_at": "2026-11-14T07:07:38.670Z"
+    },
+    "b-52-enters-service": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "056b9b75a3d87bd47382a06537aa6f2c61d117c68ee9da35868300f48b2f6be0",
+      "updated_at": "2026-11-14T07:07:38.702Z"
+    },
+    "m16-rifle-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "043e314f94fcac5b6af11bad999de644af12518140c245441c03d1203be16112",
+      "updated_at": "2026-11-14T07:07:38.735Z"
+    },
+    "f-117-stealth-fighter-service": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9c14fe2ff3c25d6f38565c0110982e1417b843cdb749a50ddef4b82e7ec68e8a",
+      "updated_at": "2026-11-14T07:07:38.770Z"
+    },
+    "b-2-stealth-bomber-first-flight": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1abe3b961ba80cfb82f6f4f2c455f53c41eef83e0fb34d207b7d07564d97bd85",
+      "updated_at": "2026-11-14T07:07:38.803Z"
+    },
+    "patriot-missiles-scuds": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "aa4fa3c2b237d60457f77eb89609fcf6a4cc0e01b97f9dafb694988dd07922b4",
+      "updated_at": "2026-11-14T07:07:38.837Z"
+    },
+    "predator-drone-first-hellfire": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "03f7549a41acdd5c50371623161c5cc9e69809eaccc834e5cbf6a5e62eb659b1",
+      "updated_at": "2026-11-14T07:07:38.874Z"
+    },
+    "mother-of-all-bombs-combat": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7fba1e2581995b7602820a2f77d32d7ac577614b11cdbcc66b67dde38d6f1a14",
+      "updated_at": "2026-11-14T07:07:38.912Z"
+    }
+  }
+}

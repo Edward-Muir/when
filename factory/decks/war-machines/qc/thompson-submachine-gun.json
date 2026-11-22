@@ -1,0 +1,15 @@
+{
+  "slug": "thompson-submachine-gun",
+  "description": "A dark, painterly still life. An open black hard case sits on a worn wooden counter, lined with black fabric and divided into compartments. In it lies a submachine gun with a long barrel, a round drum magazine under the receiver, and wooden grips and stock. A second round drum sits in a compartment to the left. Behind is a dim room with wooden cabinets and glass display cases. No people, no visible text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
