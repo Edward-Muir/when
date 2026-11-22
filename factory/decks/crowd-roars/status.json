@@ -3,7 +3,7 @@
   "name": "Crowd Roars",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T12:41:22.366Z",
-  "updated_at": "2026-11-22T15:32:06.569Z",
+  "updated_at": "2026-11-22T15:36:15.381Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-22T15:32:06.569Z"
     },
     "freddie-mercury-tribute-concert": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "580f4a5151c7444b086858896268ed989a8ae2972dddaeba4a109654424ca1f9",
+      "updated_at": "2026-11-22T15:36:15.381Z"
     },
     "first-coachella-festival": {
       "state": "pending",
