@@ -1,0 +1,21 @@
+{
+  "fired-clay-figurines-venus": {"recognition": "low", "inferability": "medium", "anchors": ["hunter-gatherers", "first ceramic"], "why": "hunter-gatherers and first ceramics point to prehistory, though not precisely"},
+  "lime-plaster-burning": {"recognition": "very-low", "inferability": "low", "anchors": [], "why": "plaster-making could be many eras; only the lack of machinery hints at early times"},
+  "first-copper-smelting-balkans": {"recognition": "low", "inferability": "medium", "anchors": ["first smelting of copper"], "why": "first metal-working points to prehistory or the Chalcolithic"},
+  "varna-gold-grave-treasure": {"recognition": "low", "inferability": "medium", "anchors": ["Black Sea", "hammered gold", "grave goods"], "why": "hammered gold grave goods suggest prehistory, but could be read as many ancient periods"},
+  "mesopotamian-kiln-fired-bricks": {"recognition": "low", "inferability": "high", "anchors": ["Mesopotamia", "great rivers"], "why": "Mesopotamia places it firmly in the ancient world"},
+  "bronze-alloyed-sumer": {"recognition": "medium", "inferability": "high", "anchors": ["Sumer", "Bronze Age"], "why": "Sumer and an age named for bronze anchor it in the ancient Near East"},
+  "glass-made-mesopotamia": {"recognition": "low", "inferability": "high", "anchors": ["Mesopotamia", "first man-made glass"], "why": "Mesopotamia anchors it in antiquity"},
+  "mesoamerican-rubber-curing": {"recognition": "low", "inferability": "medium", "anchors": ["Mesoamerica", "Gulf coast"], "why": "Mesoamerica implies pre-Columbian, but spans millennia"},
+  "hittite-iron-mastery": {"recognition": "medium", "inferability": "high", "anchors": ["Hittites", "Anatolia", "iron age"], "why": "Hittites and a new metal age place it in the ancient Bronze/Iron Age"},
+  "roman-concrete-perfected": {"recognition": "medium", "inferability": "high", "anchors": ["Romans", "volcanic ash"], "why": "Romans anchor it in antiquity"},
+  "glassblowing-invented-syria": {"recognition": "medium", "inferability": "medium", "anchors": ["Syrian coast", "glassblowing pipe"], "why": "pipe-blown glass suggests antiquity but Syria alone leaves the era loose"},
+  "tang-true-porcelain": {"recognition": "medium", "inferability": "high", "anchors": ["Tang", "Chinese"], "why": "Tang dynasty named in the title places it in medieval China"},
+  "murano-cristallo-glass": {"recognition": "low", "inferability": "high", "anchors": ["Murano", "Venetian"], "why": "Venetian glassmakers point to the medieval or Renaissance period"},
+  "bottger-european-porcelain": {"recognition": "low", "inferability": "high", "anchors": ["alchemist", "Saxony", "hard-paste porcelain"], "why": "alchemist in Saxony points to early modern Europe"},
+  "darby-coke-smelting": {"recognition": "medium", "inferability": "high", "anchors": ["ironmaster", "blast furnace", "coke"], "why": "English blast furnace and coke point to the early Industrial Revolution"},
+  "parkesine-first-plastic": {"recognition": "low", "inferability": "high", "anchors": ["great exhibition", "British chemist", "cellulose"], "why": "a great exhibition and chemistry suggest Victorian era"},
+  "polyethylene-discovered-icl": {"recognition": "medium", "inferability": "high", "anchors": ["polyethylene", "high-pressure experiment", "commonest plastic"], "why": "plastics and chemistry labs place it in the 20th century"},
+  "synthetic-diamonds-ge": {"recognition": "low", "inferability": "high", "anchors": ["General Electric", "synthetic"], "why": "a corporate lab making lab-grown gems points to the 20th century"},
+  "pilkington-float-glass": {"recognition": "low", "inferability": "high", "anchors": ["English firm", "molten tin bath", "industrial process"], "why": "an industrial float process suggests the modern era"}
+}
