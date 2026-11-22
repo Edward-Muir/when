@@ -1,0 +1,15 @@
+{
+  "slug": "jenson-roman-typeface",
+  "description": "A dim, painterly interior with a man in a dark gown and close cap standing at a wooden printing press, lifting a pale printed sheet with one hand. In the foreground a wooden tray of metal type sits on a workbench beside a steel tool and dark ink balls, with a lit candle at the left edge. Heavy beams overhead and stacked paper on a side table complete the room. The image fills the frame edge to edge, with no visible border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

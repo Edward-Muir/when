@@ -1,0 +1,15 @@
+{
+  "slug": "garamond-roman-type",
+  "description": "An elderly man with grey hair and a leather apron leans over a wooden workbench, holding a brass-rimmed magnifying glass to his eye while he works on a small steel piece in a vise. Rows of small steel punches stand in wooden racks, with small copper blocks, a hammer and files on the bench. A forge pot with glowing coals, a lit candle and stacked old books sit in a dim, warm workshop. The painting fills the frame edge to edge, with no text or border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

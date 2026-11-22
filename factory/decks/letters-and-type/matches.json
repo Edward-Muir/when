@@ -1,0 +1,2788 @@
+[
+  {
+    "beat": 0,
+    "year": 105,
+    "title": "Cai Lun Presents Paper to the Court",
+    "candidates": [
+      {
+        "name": "paper-invented",
+        "friendly_name": "Paper Invented",
+        "year": 105,
+        "description": "Cai Lun standardized papermaking techniques in Han Dynasty China.",
+        "score": 3,
+        "shared": [
+          "cai",
+          "lun",
+          "paper"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "made"
+        ]
+      },
+      {
+        "name": "tacitus-histories-written",
+        "friendly_name": "Tacitus' Histories Written",
+        "year": 105,
+        "description": "Roman historian Tacitus wrote his Histories covering the turbulent Year of the Four Emperors and its aftermath.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "trajans-bridge-danube",
+        "friendly_name": "Trajan's Bridge Over the Danube",
+        "year": 105,
+        "description": "Apollodorus of Damascus spanned the Danube on stone piers with timber arches, the longest arch bridge for a millennium.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 113,
+    "title": "Trajan's Column Is Inscribed",
+    "candidates": [
+      {
+        "name": "trajan-column",
+        "friendly_name": "Trajan's Column Erected",
+        "year": 113,
+        "description": "Rome erected a triumphal column depicting victories against the Dacians.",
+        "score": 2,
+        "shared": [
+          "trajan",
+          "column"
+        ]
+      },
+      {
+        "name": "roman-currency-debasement",
+        "friendly_name": "Roman Coin Debasement",
+        "year": 64,
+        "year_end": 274,
+        "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "el-mirador-maya-city-rises",
+        "friendly_name": "El Mirador Rises as a Maya City",
+        "year": -300,
+        "year_end": 150,
+        "description": "In the jungles of Guatemala, a Maya city raised huge pyramids, among them La Danta, one of the largest ever built.",
+        "score": 1,
+        "shared": [
+          "them"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "moche-civilization-peru",
+        "friendly_name": "Moche Civilization in Peru",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "moche-mound-construction",
+        "friendly_name": "Moche Mound Platform Completed",
+        "year": 100,
+        "year_end": 800,
+        "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 868,
+    "title": "Diamond Sutra Printed in China",
+    "candidates": [
+      {
+        "name": "diamond-sutra-printed",
+        "friendly_name": "Diamond Sutra Printed",
+        "year": 868,
+        "description": "A Chinese Buddhist scroll became the earliest dated printed book, made with carved woodblocks.",
+        "score": 9,
+        "shared": [
+          "diamond",
+          "sutra",
+          "printed",
+          "scroll",
+          "buddhist",
+          "carved",
+          "woodblocks",
+          "dated",
+          "book"
+        ]
+      },
+      {
+        "name": "java-temple-sculpture",
+        "friendly_name": "Javanese Temple Sculpture",
+        "year": 780,
+        "year_end": 930,
+        "description": "Javanese artisans carved elaborate reliefs at Borobudur and Prambanan, blending Hindu and Buddhist art.",
+        "score": 2,
+        "shared": [
+          "buddhist",
+          "carved"
+        ]
+      },
+      {
+        "name": "ellora-caves",
+        "friendly_name": "Ellora Caves Construction",
+        "year": 650,
+        "year_end": 1000,
+        "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
+        "score": 2,
+        "shared": [
+          "buddhist",
+          "carved"
+        ]
+      },
+      {
+        "name": "playing-cards-tang-china",
+        "friendly_name": "Playing Cards in Tang China",
+        "year": 868,
+        "description": "China developed the earliest playing cards during the Tang dynasty, spreading the games westward over centuries.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "mon-kingdom",
+        "friendly_name": "Mon Kingdom in Burma",
+        "year": 700,
+        "year_end": 1057,
+        "description": "Mon kingdoms in lower Burma established Theravada Buddhist culture that later influenced Burmese civilization.",
+        "score": 1,
+        "shared": [
+          "buddhist"
+        ]
+      },
+      {
+        "name": "horse-collar-technology",
+        "friendly_name": "Horse Collar",
+        "year": 477,
+        "year_end": 1200,
+        "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "dunhuang-mogao-caves",
+        "friendly_name": "Mogao Caves Expanded",
+        "year": 366,
+        "year_end": 1368,
+        "description": "Buddhist monks expanded the Mogao Caves at Dunhuang with hundreds of painted grottoes along the Silk Road.",
+        "score": 1,
+        "shared": [
+          "buddhist"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 1041,
+    "title": "Bi Sheng Invents Movable Type",
+    "candidates": [
+      {
+        "name": "movable-type-china",
+        "friendly_name": "Movable Type Invented",
+        "year": 1040,
+        "description": "Bi Sheng invented movable type printing in China.",
+        "score": 3,
+        "shared": [
+          "sheng",
+          "movable",
+          "type"
+        ]
+      },
+      {
+        "name": "compass-invention-china",
+        "friendly_name": "Magnetic Compass Invented in China",
+        "year": 1040,
+        "year_end": 1117,
+        "description": "Chinese inventors developed the magnetic compass for navigation during the Song Dynasty, later spreading worldwide.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "gunpowder-china-adoption",
+        "friendly_name": "Gunpowder Warfare in China",
+        "year": 1000,
+        "year_end": 1250,
+        "description": "Chinese armies deployed fire arrows, bombs, and early rockets, pioneering gunpowder warfare.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "junk-watertight-bulkheads",
+        "friendly_name": "Junk Watertight Bulkheads",
+        "year": 1000,
+        "year_end": 1279,
+        "description": "Chinese junk builders divided their hulls into sealed compartments with internal bulkheads, so a single breach no longer sank the ship.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "kaifeng-night-markets",
+        "friendly_name": "Kaifeng's Night Markets Glow",
+        "year": 965,
+        "year_end": 1127,
+        "description": "Lamp-lit stalls kept the Song capital trading long past dusk, breaking the curfew that had closed Chinese cities at dark.",
+        "score": 1,
+        "shared": [
+          "chinese"
+        ]
+      },
+      {
+        "name": "almoravid-dynasty-rise",
+        "friendly_name": "Almoravid Dynasty Rises",
+        "year": 1040,
+        "description": "Berber religious reformers founded the Almoravid movement, soon conquering Morocco and Muslim Spain.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1377,
+    "title": "Jikji Printed with Metal Type",
+    "candidates": [
+      {
+        "name": "jikji-korea-printing",
+        "friendly_name": "Jikji: Korean Metal Movable Type",
+        "year": 1377,
+        "description": "Korean monks printed the Jikji using metal movable type, the oldest surviving book printed with this technology.",
+        "score": 6,
+        "shared": [
+          "jikji",
+          "printed",
+          "metal",
+          "type",
+          "korean",
+          "using"
+        ]
+      },
+      {
+        "name": "avignon-papacy-ends",
+        "friendly_name": "Avignon Papacy Ends",
+        "year": 1377,
+        "description": "Pope Gregory XI returned the papacy to Rome after nearly seven decades in France.",
+        "score": 1,
+        "shared": [
+          "decades"
+        ]
+      },
+      {
+        "name": "ragusa-quarantine",
+        "friendly_name": "Quarantine in Ragusa",
+        "year": 1377,
+        "description": "Ragusa (Dubrovnik) enacted the first known quarantine law, requiring ships to isolate for 30 days before entry.",
+        "score": 1,
+        "shared": [
+          "before"
+        ]
+      },
+      {
+        "name": "western-schism-begins",
+        "friendly_name": "Western Schism Begins",
+        "year": 1378,
+        "description": "Rival popes in Rome and Avignon split Western Christianity, each claiming legitimacy.",
+        "score": 1,
+        "shared": [
+          "western"
+        ]
+      },
+      {
+        "name": "tonga-empire",
+        "friendly_name": "Tongan Empire Peak",
+        "year": 1200,
+        "year_end": 1500,
+        "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "western"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "using"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1455,
+    "title": "Gutenberg Bible Printed",
+    "candidates": [
+      {
+        "name": "gutenberg-bible",
+        "friendly_name": "Gutenberg Bible Printed",
+        "year": 1455,
+        "description": "The first major book printed using movable type in Europe.",
+        "score": 7,
+        "shared": [
+          "gutenberg",
+          "bible",
+          "printed",
+          "using",
+          "movable",
+          "type",
+          "europe"
+        ]
+      },
+      {
+        "name": "printing-press-diffusion",
+        "friendly_name": "Printing Press Spreads",
+        "year": 1450,
+        "year_end": 1500,
+        "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
+        "score": 4,
+        "shared": [
+          "gutenberg",
+          "press",
+          "printing",
+          "europe"
+        ]
+      },
+      {
+        "name": "incunabula-books",
+        "friendly_name": "Incunabula: Early Printed Books",
+        "year": 1455,
+        "year_end": 1500,
+        "description": "The first wave of European printed books emerged after Gutenberg's press, transforming knowledge distribution.",
+        "score": 3,
+        "shared": [
+          "gutenberg",
+          "printed",
+          "press"
+        ]
+      },
+      {
+        "name": "gunpowder-military-adoption-europe",
+        "friendly_name": "Gunpowder Reshapes Europe",
+        "year": 1450,
+        "year_end": 1530,
+        "description": "Cannons and handguns reshaped European warfare, ending the dominance of castles and armored knights.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "painting-canvas",
+        "friendly_name": "Painting Canvas",
+        "year": 1410,
+        "year_end": 1600,
+        "description": "Stretched fabric replacing wood panels as a portable, lightweight surface for painting in medieval Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "using"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1465,
+    "title": "First Roman Type Printed in Italy",
+    "candidates": [
+      {
+        "name": "incunabula-books",
+        "friendly_name": "Incunabula: Early Printed Books",
+        "year": 1455,
+        "year_end": 1500,
+        "description": "The first wave of European printed books emerged after Gutenberg's press, transforming knowledge distribution.",
+        "score": 2,
+        "shared": [
+          "printed",
+          "press"
+        ]
+      },
+      {
+        "name": "printing-press-diffusion",
+        "friendly_name": "Printing Press Spreads",
+        "year": 1450,
+        "year_end": 1500,
+        "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
+        "score": 2,
+        "shared": [
+          "press",
+          "printing"
+        ]
+      },
+      {
+        "name": "kazakh-khanate-zhanibek",
+        "friendly_name": "Zhanibek Khan Founds Kazakh Khanate",
+        "year": 1465,
+        "description": "Zhanibek and Kerey Khan broke from the Uzbek Khanate and founded the independent Kazakh Khanate.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ottoman-topkapi-palace",
+        "friendly_name": "Topkapi Palace Construction",
+        "year": 1465,
+        "description": "Sultan Mehmed II began building Topkapi Palace in Constantinople as the primary residence of Ottoman sultans.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "songhai-empire",
+        "friendly_name": "Songhai Empire Established",
+        "year": 1464,
+        "description": "Sunni Ali founded the largest empire in African history, succeeding Mali.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bahmani-sultanate",
+        "friendly_name": "Bahmani Sultanate Peak",
+        "year": 1466,
+        "year_end": 1481,
+        "description": "The Bahmani Sultanate reached its zenith in the Deccan plateau of India before fragmenting into five states.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1470,
+    "title": "Jenson Cuts His Roman Typeface",
+    "candidates": [
+      {
+        "name": "birth-machiavelli",
+        "friendly_name": "Birth of Machiavelli",
+        "year": 1469,
+        "description": "The Italian political theorist whose treatise The Prince founded modern political philosophy.",
+        "score": 1,
+        "shared": [
+          "whose"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "inca-tupac-amaru",
+        "friendly_name": "Inca Conquer Lake Titicaca",
+        "year": 1470,
+        "description": "The Inca conquered the Aymara kingdoms around Lake Titicaca, incorporating the Altiplano into their empire.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "inca-conquer-chimu",
+        "friendly_name": "Inca Conquer the Chimu Kingdom",
+        "year": 1470,
+        "description": "Inca armies took the Chimu realm on the Peruvian coast, its richest rival and the builders of Chan Chan.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "inca-conquest-expansion",
+        "friendly_name": "Inca Conquest Expansion Thupa",
+        "year": 1471,
+        "year_end": 1493,
+        "description": "Topa Inca Yupanqui conquered the Chimor kingdom and expanded the empire into Ecuador and Chile.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1476,
+    "title": "Caxton Opens England's First Press",
+    "candidates": [
+      {
+        "name": "caxton-printed-handbill-ad",
+        "friendly_name": "Caxton's Printed Handbill",
+        "year": 1477,
+        "description": "An English printer posted a printed notice offering his prayer book for sale, among the earliest printed adverts in English.",
+        "score": 2,
+        "shared": [
+          "caxton",
+          "english"
+        ]
+      },
+      {
+        "name": "incunabula-books",
+        "friendly_name": "Incunabula: Early Printed Books",
+        "year": 1455,
+        "year_end": 1500,
+        "description": "The first wave of European printed books emerged after Gutenberg's press, transforming knowledge distribution.",
+        "score": 2,
+        "shared": [
+          "press",
+          "books"
+        ]
+      },
+      {
+        "name": "printing-press-diffusion",
+        "friendly_name": "Printing Press Spreads",
+        "year": 1450,
+        "year_end": 1500,
+        "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
+        "score": 2,
+        "shared": [
+          "press",
+          "printing"
+        ]
+      },
+      {
+        "name": "open-field-system-abandonment",
+        "friendly_name": "Open Field System Declines",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+        "score": 2,
+        "shared": [
+          "england",
+          "began"
+        ]
+      },
+      {
+        "name": "printed-ptolemy-maps",
+        "friendly_name": "Ptolemy's Maps Printed",
+        "year": 1477,
+        "description": "A Bologna press issued the Geographia with engraved maps, putting identical copies of one world picture into many hands.",
+        "score": 1,
+        "shared": [
+          "press"
+        ]
+      },
+      {
+        "name": "treaty-of-picquigny",
+        "friendly_name": "Treaty of Picquigny",
+        "year": 1475,
+        "description": "The kings of England and France agreed a truce that finally closed out their long running conflict over the French crown.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "gunpowder-weapons-adoption",
+        "friendly_name": "Gunpowder Weapons Widely Adopted",
+        "year": 1380,
+        "year_end": 1494,
+        "description": "European armies began deploying cannons and early firearms, transforming siege and battlefield tactics.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1501,
+    "title": "Aldus Introduces Italic Type",
+    "candidates": [
+      {
+        "name": "aldine-italic-type",
+        "friendly_name": "Italic Type Introduced",
+        "year": 1501,
+        "description": "Venetian printer Aldus Manutius introduced slanted italic type and small portable books.",
+        "score": 8,
+        "shared": [
+          "aldus",
+          "italic",
+          "type",
+          "venetian",
+          "printer",
+          "introduced",
+          "slanted",
+          "small"
+        ]
+      },
+      {
+        "name": "first-printed-music-notation",
+        "friendly_name": "Printed Music Notation",
+        "year": 1501,
+        "description": "Ottaviano Petrucci printed the first book of sheet music using movable type for notes.",
+        "score": 1,
+        "shared": [
+          "type"
+        ]
+      },
+      {
+        "name": "safavid-dynasty-founded",
+        "friendly_name": "Safavid Dynasty Founded in Persia",
+        "year": 1501,
+        "description": "Shah Ismail I founded the Safavid dynasty, establishing Shia Islam as Persia's state religion.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "songhai-military-gunpowder",
+        "friendly_name": "Songhai Military Gunpowder Infantry",
+        "year": 1500,
+        "description": "The Songhai Empire employed gunpowder weapons acquired through trans-Saharan trade networks.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "shaybanid-bukhara-captured",
+        "friendly_name": "Shaybanids Capture Bukhara",
+        "year": 1500,
+        "description": "Uzbek Shaybanid forces captured Bukhara and Samarkand, ending Timurid rule in Central Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "joseon-confucian-renaissance",
+        "friendly_name": "Joseon Confucian Renaissance",
+        "year": 1500,
+        "description": "Korea's Joseon dynasty promoted Neo-Confucian scholarship, reshaping education, governance, and social hierarchy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1530,
+    "title": "Garamond's Roman Type Appears",
+    "candidates": [
+      {
+        "name": "antwerp-stock-exchange",
+        "friendly_name": "Antwerp Stock Exchange",
+        "year": 1531,
+        "description": "The Antwerp Bourse became the world's first purpose-built stock exchange for trading commodities and securities.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "kerala-school-mathematics",
+        "friendly_name": "Kerala School Calculus",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "The Kerala school of mathematics in India developed infinite series expansions, anticipating European calculus by centuries.",
+        "score": 1,
+        "shared": [
+          "centuries"
+        ]
+      },
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "augsburg-confession",
+        "friendly_name": "Augsburg Confession",
+        "year": 1530,
+        "description": "Lutheran princes presented their confession of faith to Emperor Charles V, formally establishing Protestant doctrine.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-ivan-terrible",
+        "friendly_name": "Birth of Ivan the Terrible",
+        "year": 1530,
+        "description": "The first crowned Tsar of Russia, who expanded the realm but ruled with notorious cruelty.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1539,
+    "title": "First Press in the Americas",
+    "candidates": [
+      {
+        "name": "falkland-oldest-real-tennis-court-1539",
+        "friendly_name": "Oldest Real Tennis Court",
+        "year": 1539,
+        "description": "King James V built the real tennis court at Falkland Palace, Scotland, now the oldest surviving court in the world.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "tomato-reaches-europe",
+        "friendly_name": "Tomato Reaches Europe",
+        "year": 1540,
+        "description": "Spanish explorers brought the tomato from the Americas to Europe, where it slowly entered local cuisine.",
+        "score": 1,
+        "shared": [
+          "americas"
+        ]
+      },
+      {
+        "name": "benin-art-renaissance",
+        "friendly_name": "Benin Kingdom Art Renaissance",
+        "year": 1504,
+        "year_end": 1550,
+        "description": "The Benin Kingdom produced masterful bronze and ivory sculptures celebrating royal power and spiritual life.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "chester-races-roodee",
+        "friendly_name": "Chester Races at the Roodee",
+        "year": 1539,
+        "description": "Horse racing began at Chester's Roodee course, recognised by Guinness as the oldest racecourse still in operation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1605,
+    "title": "First Printed Newspaper Appears",
+    "candidates": [
+      {
+        "name": "first-printed-newspaper-relation",
+        "friendly_name": "First Printed Newspaper",
+        "year": 1605,
+        "description": "Strasbourg's Relation became the first regularly printed newspaper, spreading news to the public.",
+        "score": 4,
+        "shared": [
+          "printed",
+          "newspaper",
+          "strasbourg",
+          "news"
+        ]
+      },
+      {
+        "name": "cervantes-don-quixote",
+        "friendly_name": "Cervantes Publishes Don Quixote",
+        "year": 1605,
+        "description": "Miguel de Cervantes published Don Quixote in Spain, widely considered the first modern European novel.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gunpowder-plot",
+        "friendly_name": "Gunpowder Plot",
+        "year": 1605,
+        "description": "Guy Fawkes and Catholic conspirators attempted to blow up Parliament and King James I, but the plot was discovered and foiled.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "palmares-republic-zumbi",
+        "friendly_name": "Palmares Quilombo Resists",
+        "year": 1605,
+        "year_end": 1694,
+        "description": "Escaped enslaved Africans established Palmares, the largest quilombo in Brazil, resisting Portuguese colonial rule for nearly a century.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "treaty-london-anglo-spanish",
+        "friendly_name": "Treaty of London (Anglo-Spanish)",
+        "year": 1604,
+        "description": "England and Spain ended nearly two decades of war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dutch-reach-australia",
+        "friendly_name": "Dutch Reach Australia",
+        "year": 1606,
+        "description": "Willem Janszoon became the first European to reach Australia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1640,
+    "title": "Bay Psalm Book Printed",
+    "candidates": [
+      {
+        "name": "puritan-great-migration",
+        "friendly_name": "Puritan Great Migration",
+        "year": 1630,
+        "year_end": 1640,
+        "description": "Thousands of Puritans sailed from England to New England, founding the Massachusetts Bay Colony.",
+        "score": 3,
+        "shared": [
+          "bay",
+          "england",
+          "colony"
+        ]
+      },
+      {
+        "name": "irish-rebellion-of-1641",
+        "friendly_name": "Irish Confederate Rebellion",
+        "year": 1641,
+        "description": "Irish Catholics rose against English and Scottish Protestant settlers, leading to widespread violence and eventually Cromwell's brutal conquest of Ireland.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "court-of-star-chamber-peak",
+        "friendly_name": "Star Chamber at Its Height",
+        "year": 1629,
+        "year_end": 1640,
+        "description": "England's secretive Star Chamber court tried opponents without juries, becoming a symbol of royal abuse.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "trinh-nguyen-civil-war",
+        "friendly_name": "Trinh-Nguyen Civil War in Vietnam",
+        "year": 1627,
+        "year_end": 1672,
+        "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
+        "score": 1,
+        "shared": [
+          "north"
+        ]
+      },
+      {
+        "name": "tokugawa-edo-period-culture",
+        "friendly_name": "Edo Period Cultural Flourishing",
+        "year": 1603,
+        "year_end": 1868,
+        "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "speaking"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "produced"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1714,
+    "title": "Henry Mill's Typewriter Patent",
+    "candidates": [
+      {
+        "name": "treaty-of-rastatt",
+        "friendly_name": "Treaty of Rastatt",
+        "year": 1714,
+        "description": "Austria and France ended the War of Spanish Succession, with Austria gaining the Spanish Netherlands and Italian territories.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mercury-thermometer",
+        "friendly_name": "Mercury Thermometer Invented",
+        "year": 1714,
+        "description": "Daniel Gabriel Fahrenheit invented the mercury-in-glass thermometer, the first reliable tool for measuring temperature.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "george-i-hanoverian-succession",
+        "friendly_name": "Hanoverian Succession",
+        "year": 1714,
+        "description": "The German-speaking Elector of Hanover became George I of Great Britain, passing over dozens of nearer Catholic claimants.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "longitude-act",
+        "friendly_name": "Longitude Act Passed",
+        "year": 1714,
+        "description": "Parliament offered a fortune to anyone who could fix a ship's longitude at sea, a problem that came down to keeping time.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "prussian-discipline-training",
+        "friendly_name": "Prussian Military Training System",
+        "year": 1713,
+        "description": "Frederick William I created Prussia's rigorous military drill system, building Europe's most disciplined army.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-louis-xiv",
+        "friendly_name": "Death of Louis XIV",
+        "year": 1715,
+        "description": "The Sun King died after 72 years on the throne, the longest reign in European history.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1734,
+    "title": "Caslon Issues His Type Specimen",
+    "candidates": [
+      {
+        "name": "voltaire-major-works",
+        "friendly_name": "Voltaire's Philosophical Letters",
+        "year": 1734,
+        "description": "Voltaire published Philosophical Letters, comparing English liberty with French absolutism and sparking controversy.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "linnaeus-taxonomy",
+        "friendly_name": "Linnaeus Creates Taxonomy",
+        "year": 1735,
+        "description": "Carl Linnaeus published his system for classifying living organisms.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "harrison-chronometer-series",
+        "friendly_name": "Harrison Marine Chronometer Series",
+        "year": 1735,
+        "description": "John Harrison built the first of his marine chronometers (H1) to solve the longitude problem for ocean navigation.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "birth-john-adams",
+        "friendly_name": "Birth of John Adams",
+        "year": 1735,
+        "description": "The American Founding Father and second US president who championed independence from Britain.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "birth-paul-revere",
+        "friendly_name": "Birth of Paul Revere",
+        "year": 1735,
+        "description": "The American silversmith and patriot famed for his midnight ride warning of the British advance.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "zenger-libel-acquittal",
+        "friendly_name": "John Peter Zenger Is Acquitted",
+        "year": 1735,
+        "description": "A New York printer won acquittal on a libel charge after his lawyer argued that truth was a defence, a landmark for press freedom.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "french-enlightenment-peak",
+        "friendly_name": "French Enlightenment Flourishes",
+        "year": 1715,
+        "year_end": 1789,
+        "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "ukiyo-e-art-development",
+        "friendly_name": "Ukiyo-e Woodblock Art Development",
+        "year": 1670,
+        "year_end": 1868,
+        "description": "Japanese ukiyo-e woodblock printing flourished in Edo, depicting actors, beauties, and landscapes of the floating world.",
+        "score": 1,
+        "shared": [
+          "printing"
+        ]
+      },
+      {
+        "name": "tswana-kingdoms",
+        "friendly_name": "Tswana Kingdoms Consolidation",
+        "year": 1600,
+        "year_end": 1824,
+        "description": "Tswana-speaking chieftains consolidated kingdoms across present-day Botswana and South Africa.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1757,
+    "title": "Baskerville Prints Virgil",
+    "candidates": [
+      {
+        "name": "battle-plassey",
+        "friendly_name": "Battle of Plassey",
+        "year": 1757,
+        "description": "Robert Clive's victory began British colonial rule in India.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "sextant-refinement",
+        "friendly_name": "Sextant Design Refinement",
+        "year": 1757,
+        "description": "John Bird built improved sextants for the Royal Navy, enabling more precise celestial navigation at sea.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-lafayette",
+        "friendly_name": "Birth of Lafayette",
+        "year": 1757,
+        "description": "The French general who served the American Revolution and championed liberty in the French Revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "seven-years-war-start",
+        "friendly_name": "Seven Years' War Begins",
+        "year": 1756,
+        "description": "A global conflict erupted involving most European great powers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "black-hole-of-calcutta",
+        "friendly_name": "Black Hole of Calcutta",
+        "year": 1756,
+        "description": "British prisoners allegedly died in an overcrowded cell in Calcutta, becoming propaganda justifying British conquest of Bengal.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maratha-expansion-peak",
+        "friendly_name": "Maratha Empire Peaks",
+        "year": 1758,
+        "description": "The Maratha Confederacy reached its greatest territorial extent, controlling much of the Indian subcontinent before defeat at Panipat.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1796,
+    "title": "Senefelder Invents Lithography",
+    "candidates": [
+      {
+        "name": "lithography-invented",
+        "friendly_name": "Lithography Invented",
+        "year": 1796,
+        "description": "Alois Senefelder devised lithography, printing images and text from a flat greased stone surface.",
+        "score": 4,
+        "shared": [
+          "senefelder",
+          "lithography",
+          "flat",
+          "stone"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "used"
+        ]
+      },
+      {
+        "name": "jenner-vaccination-smallpox",
+        "friendly_name": "Jenner's Smallpox Vaccine",
+        "year": 1796,
+        "description": "Edward Jenner demonstrated that cowpox inoculation protected against smallpox, pioneering vaccination.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "death-catherine-the-great",
+        "friendly_name": "Death of Catherine the Great",
+        "year": 1796,
+        "description": "Empress of Russia who expanded the empire and championed the Enlightenment over a 34-year reign.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cuvier-proves-extinction",
+        "friendly_name": "Cuvier Proves Extinction",
+        "year": 1796,
+        "description": "Georges Cuvier showed that fossil animals like mastodons were species that no longer existed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homeopathy-founded",
+        "friendly_name": "Homeopathy Founded",
+        "year": 1796,
+        "description": "Samuel Hahnemann proposed treating illness with highly diluted substances, founding homeopathy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1814,
+    "title": "Steam Press Prints The Times",
+    "candidates": [
+      {
+        "name": "london-beer-flood",
+        "friendly_name": "London Beer Flood",
+        "year": 1814,
+        "description": "A brewery vat explosion released a flood of beer that killed eight people.",
+        "score": 1,
+        "shared": [
+          "london"
+        ]
+      },
+      {
+        "name": "treaty-of-ghent",
+        "friendly_name": "Treaty of Ghent",
+        "year": 1814,
+        "description": "Peace treaty ending the Anglo-American War between the United States and Britain, restoring pre-war boundaries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "restoration-bourbon-monarchy",
+        "friendly_name": "Restoration of Bourbon Monarchy",
+        "year": 1814,
+        "description": "After Napoleon's abdication, the Bourbon dynasty was restored with Louis XVIII taking the French throne.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "british-burn-washington",
+        "friendly_name": "British Burn Washington",
+        "year": 1814,
+        "description": "British troops set fire to the Capitol, the President's House and other public buildings during a wartime raid on the capital.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "barry-rescue-dog-legend",
+        "friendly_name": "Barry the Rescue Dog Dies",
+        "year": 1814,
+        "description": "The St Bernard credited with saving dozens of Alpine travelers died peacefully in retirement in Bern.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-leipzig",
+        "friendly_name": "Battle of Leipzig",
+        "year": 1813,
+        "description": "The largest battle before WWI saw Napoleon defeated by a coalition of European powers.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1816,
+    "title": "First Sans-Serif Typeface Shown",
+    "candidates": [
+      {
+        "name": "shaka-zulu-kingdom",
+        "friendly_name": "Shaka Zulu Founds Zulu Kingdom",
+        "year": 1816,
+        "description": "Shaka unified Zulu clans into a powerful African kingdom.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "year-without-summer",
+        "friendly_name": "Year Without a Summer",
+        "year": 1816,
+        "description": "Volcanic ash from Tambora caused crop failures and famine worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stethoscope-invented",
+        "friendly_name": "Stethoscope Invented",
+        "year": 1816,
+        "description": "French physician René Laënnec invented the stethoscope, revolutionizing the diagnosis of heart and lung conditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electric-telegraph",
+        "friendly_name": "Electric Telegraph",
+        "year": 1816,
+        "description": "Francis Ronalds demonstrated the first working electric telegraph using static electricity.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stirling-engine",
+        "friendly_name": "Stirling Engine",
+        "year": 1816,
+        "description": "Robert Stirling's external combustion engine using cyclic compression and expansion of gas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "barber-of-seville-premieres",
+        "friendly_name": "The Barber of Seville Premieres",
+        "year": 1816,
+        "description": "Rossini's comic opera about a resourceful barber premiered in Rome to a famously disastrous reception before becoming a beloved favorite.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1824,
+    "title": "Louis Braille Devises His Alphabet",
+    "candidates": [
+      {
+        "name": "braille-invented",
+        "friendly_name": "Braille Invented",
+        "year": 1824,
+        "description": "Louis Braille invented a tactile writing system of raised dots that enabled blind people to read and write.",
+        "score": 6,
+        "shared": [
+          "louis",
+          "braille",
+          "blind",
+          "raised",
+          "dots",
+          "read"
+        ]
+      },
+      {
+        "name": "beethoven-ninth",
+        "friendly_name": "Beethoven's Ninth Premieres",
+        "year": 1824,
+        "description": "Beethoven premiered his final symphony, including the Ode to Joy.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "battle-of-ayacucho",
+        "friendly_name": "Battle of Ayacucho",
+        "year": 1824,
+        "description": "South American independence forces decisively defeated Spanish royalists in Peru, effectively ending Spanish colonial rule on the continent.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "sotho-moshoeshoe-reforms",
+        "friendly_name": "Moshoeshoe Reforms Sotho Army",
+        "year": 1824,
+        "description": "King Moshoeshoe I united the Sotho people at Thaba Bosiu, using diplomacy and defense to survive the Mfecane.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dinosaur-fossils",
+        "friendly_name": "First Dinosaur Fossils Identified",
+        "year": 1824,
+        "description": "William Buckland described Megalosaurus, the first dinosaur to be scientifically named.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "portland-cement",
+        "friendly_name": "Portland Cement Patented",
+        "year": 1824,
+        "description": "Joseph Aspdin patented Portland cement, the foundation of modern concrete construction.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1843,
+    "title": "Hoe Patents the Rotary Press",
+    "candidates": [
+      {
+        "name": "rotary-printing-press-hoe",
+        "friendly_name": "Rotary Printing Press",
+        "year": 1843,
+        "description": "Richard Hoe's rotary press printed newspapers far faster by curving type around a spinning cylinder.",
+        "score": 7,
+        "shared": [
+          "hoe",
+          "rotary",
+          "press",
+          "type",
+          "cylinder",
+          "newspapers",
+          "far"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "christmas-carol-published",
+        "friendly_name": "A Christmas Carol Published",
+        "year": 1843,
+        "description": "Charles Dickens published his beloved novella, helping shape modern Christmas traditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "joule-thermodynamics",
+        "friendly_name": "Joule's Law",
+        "year": 1843,
+        "description": "James Joule established the first law of thermodynamics.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "joule-heat-energy",
+        "friendly_name": "Joule Links Heat and Energy",
+        "year": 1843,
+        "description": "James Prescott Joule demonstrated the mechanical equivalent of heat, showing energy conversion between forms.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dobby-mechanism",
+        "friendly_name": "Dobby Loom Control Mechanism",
+        "year": 1843,
+        "description": "The dobby mechanism automated pattern selection on looms, enabling complex woven designs without a full Jacquard setup.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1868,
+    "title": "Sholes Typewriter Patented",
+    "candidates": [
+      {
+        "name": "first-bicycle-race-saint-cloud-1868",
+        "friendly_name": "World's First Bicycle Race",
+        "year": 1868,
+        "description": "On 31 May, Englishman James Moore won the first documented bicycle race, a 1,200 m sprint in the Parc de Saint-Cloud, Paris.",
+        "score": 1,
+        "shared": [
+          "won"
+        ]
+      },
+      {
+        "name": "dynamite-invented",
+        "friendly_name": "Dynamite Invented",
+        "year": 1867,
+        "description": "Alfred Nobel patented dynamite, a safer explosive using nitroglycerin absorbed in diatomaceous earth.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "reinforced-concrete",
+        "friendly_name": "Reinforced Concrete Patented",
+        "year": 1867,
+        "description": "Joseph Monier patented reinforced concrete, embedding iron mesh within concrete for combined strength.",
+        "score": 1,
+        "shared": [
+          "patented"
+        ]
+      },
+      {
+        "name": "stock-ticker",
+        "friendly_name": "Stock Ticker Invented",
+        "year": 1867,
+        "description": "Edward Calahan invented the stock ticker, a telegraph machine printing stock prices on continuous paper tape.",
+        "score": 1,
+        "shared": [
+          "machine"
+        ]
+      },
+      {
+        "name": "birth-marie-curie",
+        "friendly_name": "Birth of Marie Curie",
+        "year": 1867,
+        "description": "The Polish-French physicist who pioneered radioactivity and won Nobel Prizes in physics and chemistry.",
+        "score": 1,
+        "shared": [
+          "won"
+        ]
+      },
+      {
+        "name": "meiji-restoration",
+        "friendly_name": "Meiji Restoration",
+        "year": 1868,
+        "description": "Japan restored imperial rule and began rapid modernization.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1874,
+    "title": "Remington Sells Typewriters",
+    "candidates": [
+      {
+        "name": "qwerty-typewriter",
+        "friendly_name": "QWERTY Typewriter",
+        "year": 1873,
+        "description": "The Sholes and Glidden typewriter introduced the QWERTY keyboard still used today.",
+        "score": 2,
+        "shared": [
+          "typewriter",
+          "qwerty"
+        ]
+      },
+      {
+        "name": "parmelee-automatic-sprinkler",
+        "friendly_name": "Automatic Fire Sprinkler",
+        "year": 1874,
+        "description": "Piano maker Henry Parmelee patented the first practical automatic sprinkler head, designed to protect his own factory.",
+        "score": 1,
+        "shared": [
+          "maker"
+        ]
+      },
+      {
+        "name": "gramme-machine-generator",
+        "friendly_name": "Gramme Machine (Generator)",
+        "year": 1873,
+        "description": "Zénobe Gramme's dynamo was the first commercial electrical generator for industrial power.",
+        "score": 1,
+        "shared": [
+          "commercial"
+        ]
+      },
+      {
+        "name": "first-impressionist-exhibition",
+        "friendly_name": "First Impressionist Exhibition",
+        "year": 1874,
+        "description": "Monet, Renoir, and others held their first independent art exhibition in Paris.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "barbed-wire-invented",
+        "friendly_name": "Barbed Wire Invented",
+        "year": 1874,
+        "description": "Joseph Glidden patented barbed wire, transforming land management and the American West.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "metal-detector",
+        "friendly_name": "Metal Detector",
+        "year": 1874,
+        "description": "Gustave Trouvé's electromagnetic device for locating metal objects hidden underground.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1886,
+    "title": "Linotype Machine Debuts",
+    "candidates": [
+      {
+        "name": "statue-liberty",
+        "friendly_name": "Statue of Liberty Dedicated",
+        "year": 1886,
+        "description": "France's gift to America was unveiled in New York Harbor.",
+        "score": 1,
+        "shared": [
+          "york"
+        ]
+      },
+      {
+        "name": "doyle-study-in-scarlet-holmes",
+        "friendly_name": "Sherlock Holmes Debuts",
+        "year": 1887,
+        "description": "A Study in Scarlet introduces a consulting detective and his doctor friend to the reading public.",
+        "score": 1,
+        "shared": [
+          "debuts"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "haymarket-affair",
+        "friendly_name": "Haymarket Affair",
+        "year": 1886,
+        "description": "Bombing at a Chicago labor rally killed police and workers, leading to controversial trials of anarchists.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mount-tarawera-eruption",
+        "friendly_name": "Mount Tarawera Eruption",
+        "year": 1886,
+        "description": "New Zealand's deadliest volcanic eruption destroyed the famous Pink and White Terraces.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dishwasher-invented",
+        "friendly_name": "Dishwasher Invented",
+        "year": 1886,
+        "description": "Josephine Cochrane invented the first commercially successful dishwasher, debuting at the Chicago World's Fair.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1904,
+    "title": "Offset Printing Adopted",
+    "candidates": [
+      {
+        "name": "original-all-blacks-tour",
+        "friendly_name": "Original All Blacks Tour Britain",
+        "year": 1905,
+        "description": "New Zealand's Original All Blacks toured Britain, winning 34 of 35 games and cementing their black-jersey mystique.",
+        "score": 1,
+        "shared": [
+          "jersey"
+        ]
+      },
+      {
+        "name": "russo-japanese-war",
+        "friendly_name": "Russo-Japanese War",
+        "year": 1904,
+        "year_end": 1905,
+        "description": "Japan defeated Russia, becoming the first Asian power to beat a European nation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "herero-genocide",
+        "friendly_name": "Herero Genocide",
+        "year": 1904,
+        "year_end": 1908,
+        "description": "German colonial forces systematically killed tens of thousands of Herero and Nama people in German South-West Africa, considered the first genocide of the modern era.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "entente-cordiale",
+        "friendly_name": "Entente Cordiale",
+        "year": 1904,
+        "description": "Britain and France signed agreements ending centuries of rivalry.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "general-slocum",
+        "friendly_name": "General Slocum Disaster",
+        "year": 1904,
+        "description": "A steamship fire killed over 1,000 in New York's East River.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "vacuum-tube-diode",
+        "friendly_name": "Vacuum Tube Diode",
+        "year": 1904,
+        "description": "John Ambrose Fleming's valve for detecting radio signals, founding the field of electronics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1916,
+    "title": "Johnston Typeface for London",
+    "candidates": [
+      {
+        "name": "battle-somme",
+        "friendly_name": "Battle of the Somme",
+        "year": 1916,
+        "description": "One of the bloodiest battles in history killed over one million soldiers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-verdun",
+        "friendly_name": "Battle of Verdun",
+        "year": 1916,
+        "description": "Germany's attempt to bleed France white became a symbol of WWI's futility.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-jutland",
+        "friendly_name": "Battle of Jutland",
+        "year": 1916,
+        "description": "The largest naval battle of WWI saw Britain maintain control of the seas.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "easter-rising",
+        "friendly_name": "Irish Easter Rising",
+        "year": 1916,
+        "description": "Irish republicans seized Dublin buildings in an unsuccessful bid for independence.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gallipoli-ends",
+        "friendly_name": "Battle of Gallipoli Ends",
+        "year": 1916,
+        "description": "The Battle of Gallipoli concluded with Ottoman victory as Allied forces evacuated.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dada-movement",
+        "friendly_name": "Dada Movement Begins",
+        "year": 1916,
+        "description": "Artists in Zurich launched an anti-art movement in response to World War I.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1927,
+    "title": "Futura Released",
+    "candidates": [
+      {
+        "name": "first-talking-film",
+        "friendly_name": "First Talking Film Released",
+        "year": 1927,
+        "description": "The Jazz Singer became the first feature-length film with synchronized dialogue.",
+        "score": 2,
+        "shared": [
+          "released",
+          "became"
+        ]
+      },
+      {
+        "name": "quartz-clock",
+        "friendly_name": "Quartz Clock",
+        "year": 1927,
+        "description": "Warren Marrison and J.W. Horton built the first clock regulated by a quartz crystal.",
+        "score": 1,
+        "shared": [
+          "built"
+        ]
+      },
+      {
+        "name": "la-city-hall",
+        "friendly_name": "Los Angeles City Hall Completed",
+        "year": 1928,
+        "description": "The distinctive tower became LA's tallest building for decades.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "ederle-first-woman-channel-swim-1926",
+        "friendly_name": "First Woman Swims the Channel",
+        "year": 1926,
+        "description": "American Gertrude Ederle became the first woman to swim the English Channel, beating the men's record.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "spirit-of-st-louis",
+        "friendly_name": "Lindbergh Crosses Atlantic",
+        "year": 1927,
+        "description": "Charles Lindbergh made the first solo nonstop transatlantic flight.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "heisenbergs-uncertainty-principle",
+        "friendly_name": "Heisenberg's Uncertainty Principle",
+        "year": 1927,
+        "description": "Werner Heisenberg formulated the uncertainty principle, stating position and momentum cannot both be precisely known.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1928,
+    "title": "Gill Sans Released",
+    "candidates": [
+      {
+        "name": "first-talking-film",
+        "friendly_name": "First Talking Film Released",
+        "year": 1927,
+        "description": "The Jazz Singer became the first feature-length film with synchronized dialogue.",
+        "score": 2,
+        "shared": [
+          "released",
+          "became"
+        ]
+      },
+      {
+        "name": "la-city-hall",
+        "friendly_name": "Los Angeles City Hall Completed",
+        "year": 1928,
+        "description": "The distinctive tower became LA's tallest building for decades.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "oxford-english-dictionary",
+        "friendly_name": "Oxford English Dictionary",
+        "year": 1928,
+        "description": "The complete Oxford English Dictionary was published after decades of charting English word histories.",
+        "score": 1,
+        "shared": [
+          "english"
+        ]
+      },
+      {
+        "name": "equal-franchise-act-uk",
+        "friendly_name": "Equal Franchise Act",
+        "year": 1928,
+        "description": "British women gained the vote on the same terms as men, lowering the age for women to twenty-one.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "birth-anne-frank",
+        "friendly_name": "Birth of Anne Frank",
+        "year": 1929,
+        "description": "The German-Dutch diarist whose journal in hiding became the most-read account of the Holocaust.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "birth-audrey-hepburn",
+        "friendly_name": "Birth of Audrey Hepburn",
+        "year": 1929,
+        "description": "The British actress of Roman Holiday and Breakfast at Tiffany's, later a devoted UNICEF humanitarian.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "seeing-eye-guide-dog-school",
+        "friendly_name": "The Seeing Eye School Opens",
+        "year": 1929,
+        "description": "A New Jersey town became home to the first American school training dogs to guide blind handlers.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1931,
+    "title": "Times New Roman Debuts",
+    "candidates": [
+      {
+        "name": "lindbergh-baby-kidnapping",
+        "friendly_name": "Lindbergh Baby Kidnapping",
+        "year": 1932,
+        "description": "Charles Lindberghs 20-month-old son was kidnapped and later found dead in a case that gripped America.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      },
+      {
+        "name": "jet-engine-invented",
+        "friendly_name": "Jet Engine Patented",
+        "year": 1930,
+        "description": "Frank Whittle patented the turbojet engine, which would transform aviation and make global air travel possible.",
+        "score": 1,
+        "shared": [
+          "would"
+        ]
+      },
+      {
+        "name": "statute-westminster",
+        "friendly_name": "Statute of Westminster",
+        "year": 1931,
+        "description": "British dominions gained legislative independence from the UK Parliament.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "japan-invades-manchuria",
+        "friendly_name": "Japan Invades Manchuria",
+        "year": 1931,
+        "description": "Japan seized Manchuria from China, creating puppet state Manchukuo and defying the League of Nations.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "china-great-floods",
+        "friendly_name": "Great China Floods",
+        "year": 1931,
+        "description": "Massive flooding killed up to four million people in central China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electron-microscope",
+        "friendly_name": "Electron Microscope",
+        "year": 1931,
+        "description": "Ernst Ruska's microscope using electron beams for magnification beyond optical limits.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1957,
+    "title": "Helvetica Released",
+    "candidates": [
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 2,
+        "shared": [
+          "spread",
+          "worldwide"
+        ]
+      },
+      {
+        "name": "asian-flu",
+        "friendly_name": "Asian Flu Pandemic",
+        "year": 1957,
+        "year_end": 1958,
+        "description": "An influenza pandemic originating in East Asia killed 1-2 million worldwide.",
+        "score": 1,
+        "shared": [
+          "worldwide"
+        ]
+      },
+      {
+        "name": "mackinac-bridge",
+        "friendly_name": "Mackinac Bridge Opens",
+        "year": 1957,
+        "description": "A five-mile suspension bridge joined Michigan's upper and lower peninsulas across the storm-swept Straits.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "de-stalinization-speech",
+        "friendly_name": "De-Stalinization Speech",
+        "year": 1956,
+        "description": "Khrushchev denounced Stalin's cult of personality and crimes in a secret speech that shocked communists worldwide.",
+        "score": 1,
+        "shared": [
+          "worldwide"
+        ]
+      },
+      {
+        "name": "west-side-story-opens",
+        "friendly_name": "West Side Story Opens",
+        "year": 1957,
+        "description": "The groundbreaking musical reimagining Romeo and Juliet opened on Broadway.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ghana-independence",
+        "friendly_name": "Ghana Independence",
+        "year": 1957,
+        "description": "Ghana became the first sub-Saharan African nation to gain independence from colonial rule.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1961,
+    "title": "IBM Selectric Typewriter Launched",
+    "candidates": [
+      {
+        "name": "amnesty-international-founded",
+        "friendly_name": "Amnesty International Founded",
+        "year": 1961,
+        "description": "A London lawyer launched a global movement to free prisoners of conscience and defend human rights.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "silent-spring-published",
+        "friendly_name": "Silent Spring Published",
+        "year": 1962,
+        "description": "Rachel Carson's book on pesticide dangers launched the modern environmental movement.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "led-invented",
+        "friendly_name": "Visible LED Demonstrated",
+        "year": 1962,
+        "description": "Nick Holonyak Jr. demonstrated the first practical visible-spectrum light-emitting diode at General Electric.",
+        "score": 1,
+        "shared": [
+          "electric"
+        ]
+      },
+      {
+        "name": "satellite-navigation-transit",
+        "friendly_name": "First Satellite Navigation System",
+        "year": 1960,
+        "description": "The U.S. Navy launched Transit, the first satellite navigation system, a precursor to GPS.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "great-leap-forward",
+        "friendly_name": "Great Leap Forward",
+        "year": 1958,
+        "year_end": 1962,
+        "description": "Mao launched a radical campaign to rapidly industrialize China, resulting in history's deadliest famine with an estimated 30-45 million deaths.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "bay-of-pigs",
+        "friendly_name": "Bay of Pigs Invasion",
+        "year": 1961,
+        "description": "A CIA-backed invasion of Cuba by exiles failed disastrously.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1971,
+    "title": "Project Gutenberg Begins",
+    "candidates": [
+      {
+        "name": "first-arcade-video-game",
+        "friendly_name": "First Arcade Video Game",
+        "year": 1971,
+        "description": "Computer Space, created by Nolan Bushnell, became the first commercially sold arcade video game.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "nasdaq-launches",
+        "friendly_name": "NASDAQ Stock Market Opens",
+        "year": 1971,
+        "description": "NASDAQ began as the world's first electronic stock market, trading shares through computers instead of a floor.",
+        "score": 1,
+        "shared": [
+          "electronic"
+        ]
+      },
+      {
+        "name": "first-one-day-international-1971",
+        "friendly_name": "First One-Day International",
+        "year": 1971,
+        "description": "After a washed-out Test, Australia beat England at Melbourne in the first One Day International, watched by 46,000 fans.",
+        "score": 1,
+        "shared": [
+          "out"
+        ]
+      },
+      {
+        "name": "first-ct-scan-patient",
+        "friendly_name": "First CT Scan of a Patient",
+        "year": 1971,
+        "description": "A London hospital used a rotating X-ray machine and a computer to image a woman's brain slice by slice.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "kent-state-shootings",
+        "friendly_name": "Kent State Shootings",
+        "year": 1970,
+        "description": "Ohio National Guard killed four students during anti-Vietnam War protests at Kent State University.",
+        "score": 1,
+        "shared": [
+          "university"
+        ]
+      },
+      {
+        "name": "watergate-break-in",
+        "friendly_name": "Watergate Break-In",
+        "year": 1972,
+        "description": "Burglars connected to Nixon's reelection campaign broke into Democratic headquarters, starting the scandal.",
+        "score": 1,
+        "shared": [
+          "starting"
+        ]
+      },
+      {
+        "name": "pocket-calculator",
+        "friendly_name": "Pocket Calculator",
+        "year": 1970,
+        "description": "Handheld electronic calculators replaced slide rules and mechanical adding machines.",
+        "score": 1,
+        "shared": [
+          "electronic"
+        ]
+      },
+      {
+        "name": "alekseyev-600kg-total-1970",
+        "friendly_name": "Alekseyev Tops 600 kg Total",
+        "year": 1970,
+        "description": "Soviet weightlifter Vasily Alekseyev became the first man to total 600 kg across the three lifts, starting a run of 80 world records.",
+        "score": 1,
+        "shared": [
+          "starting"
+        ]
+      },
+      {
+        "name": "world-trade-center-tops-out",
+        "friendly_name": "WTC North Tower Tops Out",
+        "year": 1972,
+        "description": "The North Tower of New York's World Trade Center topped out, surpassing the Empire State Building as the tallest building on Earth.",
+        "score": 1,
+        "shared": [
+          "out"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1982,
+    "title": "Adobe Systems Founded",
+    "candidates": [
+      {
+        "name": "kbo-league-founded-korea-1982",
+        "friendly_name": "KBO League Founded in Korea",
+        "year": 1982,
+        "description": "South Korea's professional KBO League launched with six franchises, opening its inaugural season in Seoul.",
+        "score": 1,
+        "shared": [
+          "founded"
+        ]
+      },
+      {
+        "name": "assassination-attempt-on-reagan",
+        "friendly_name": "Assassination Attempt on Reagan",
+        "year": 1981,
+        "description": "John Hinckley Jr. shot President Reagan outside a Washington hotel, seriously wounding him. Reagan recovered and served two full terms.",
+        "score": 1,
+        "shared": [
+          "two"
+        ]
+      },
+      {
+        "name": "assassination-attempt-on-pope",
+        "friendly_name": "Assassination Attempt on Pope",
+        "year": 1981,
+        "description": "Turkish gunman Mehmet Ali Agca shot Pope John Paul II in St. Peter's Square. The Pope survived and later forgave his would-be assassin.",
+        "score": 1,
+        "shared": [
+          "would"
+        ]
+      },
+      {
+        "name": "aids-epidemic-recognized",
+        "friendly_name": "AIDS Epidemic Recognized",
+        "year": 1981,
+        "description": "The CDC first reported cases of what would become the AIDS pandemic.",
+        "score": 1,
+        "shared": [
+          "would"
+        ]
+      },
+      {
+        "name": "trivial-pursuit-launched",
+        "friendly_name": "Trivial Pursuit Launched",
+        "year": 1981,
+        "description": "Two Canadians launched Trivial Pursuit, a board game of general-knowledge questions that became a sensation.",
+        "score": 1,
+        "shared": [
+          "two"
+        ]
+      },
+      {
+        "name": "microwave-meals-spread",
+        "friendly_name": "Microwave Cooking Spreads",
+        "year": 1967,
+        "year_end": 1985,
+        "description": "Affordable countertop microwave ovens reached homes, changing how families reheated and cooked food.",
+        "score": 1,
+        "shared": [
+          "how"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1985,
+    "title": "Desktop Publishing Arrives",
+    "candidates": [
+      {
+        "name": "live-aid",
+        "friendly_name": "Live Aid Concert",
+        "year": 1985,
+        "description": "A dual-venue rock concert raised millions for Ethiopian famine relief.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gorbachev-becomes-leader",
+        "friendly_name": "Gorbachev Becomes Leader",
+        "year": 1985,
+        "description": "Mikhail Gorbachev became Soviet leader, initiating reforms that would ultimately end the Cold War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "glasnost-perestroika",
+        "friendly_name": "Glasnost and Perestroika",
+        "year": 1985,
+        "description": "Gorbachev introduced policies of openness and restructuring to reform the Soviet system.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-ozone-hole-discovered",
+        "friendly_name": "First Hole in Ozone Layer",
+        "year": 1985,
+        "description": "Scientists discovered severe ozone depletion over Antarctica, leading to global action on CFCs.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mexico-city-earthquake",
+        "friendly_name": "Mexico City Earthquake",
+        "year": 1985,
+        "description": "A powerful earthquake killed over 10,000 people in the Mexican capital.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nevado-del-ruiz",
+        "friendly_name": "Nevado del Ruiz Eruption",
+        "year": 1985,
+        "description": "A volcanic mudflow buried the Colombian town of Armero, killing 23,000.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1991,
+    "title": "Unicode Standard First Published",
+    "candidates": [
+      {
+        "name": "unicode-standard-released",
+        "friendly_name": "Unicode Standard Released",
+        "year": 1991,
+        "description": "Unicode assigned every character a unique code, letting computers handle the world's writing systems.",
+        "score": 7,
+        "shared": [
+          "unicode",
+          "standard",
+          "released",
+          "character",
+          "every",
+          "writing",
+          "unique"
+        ]
+      },
+      {
+        "name": "nevermind-album",
+        "friendly_name": "Nevermind Album Released",
+        "year": 1991,
+        "description": "Nirvana's album brought grunge and alternative rock to the mainstream.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "pgp-encryption-released",
+        "friendly_name": "PGP Encryption Released",
+        "year": 1991,
+        "description": "Phil Zimmermann gave away Pretty Good Privacy, putting strong encryption in ordinary hands and drawing a federal investigation.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "nelson-mandela-freed",
+        "friendly_name": "Nelson Mandela Released",
+        "year": 1990,
+        "description": "The anti-apartheid leader was freed after 27 years in prison.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "anc-unbanned",
+        "friendly_name": "ANC Unbanned",
+        "year": 1990,
+        "description": "South African government lifted ban on ANC and released Nelson Mandela, beginning end of apartheid.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "first-exoplanet",
+        "friendly_name": "First Exoplanet Discovered",
+        "year": 1992,
+        "description": "Astronomers discovered the first planets orbiting a star outside our solar system.",
+        "score": 1,
+        "shared": [
+          "system"
+        ]
+      },
+      {
+        "name": "black-wednesday-pound",
+        "friendly_name": "Black Wednesday",
+        "year": 1992,
+        "description": "Speculators forced the British pound out of Europe's exchange rate system, costing the government billions.",
+        "score": 1,
+        "shared": [
+          "system"
+        ]
+      },
+      {
+        "name": "przewalski-horses-rewilded",
+        "friendly_name": "Wild Horses Return to Mongolia",
+        "year": 1992,
+        "description": "Captive bred Przewalski's horses were released onto the Mongolian steppe, restoring the last truly wild horse.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1994,
+    "title": "Comic Sans Created",
+    "candidates": [
+      {
+        "name": "mosaic-web-browser",
+        "friendly_name": "Mosaic Web Browser Released",
+        "year": 1993,
+        "description": "NCSA Mosaic launched as the first widely popular graphical web browser, making the Web accessible to ordinary users.",
+        "score": 2,
+        "shared": [
+          "popular",
+          "widely"
+        ]
+      },
+      {
+        "name": "genetically-modified-crop",
+        "friendly_name": "First GMO Crop Approved",
+        "year": 1994,
+        "description": "The Flavr Savr tomato became the first genetically modified food sold, opening debate over GM crops.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      },
+      {
+        "name": "rwanda-tribunal-established",
+        "friendly_name": "Rwanda Genocide Tribunal",
+        "year": 1994,
+        "description": "The United Nations created a court to prosecute those responsible for the Rwandan genocide.",
+        "score": 1,
+        "shared": [
+          "created"
+        ]
+      },
+      {
+        "name": "microsoft-windows-95",
+        "friendly_name": "Windows 95 Released",
+        "year": 1995,
+        "description": "Microsoft launched Windows 95, bringing the graphical desktop interface to the masses.",
+        "score": 1,
+        "shared": [
+          "microsoft"
+        ]
+      },
+      {
+        "name": "mp3-audio-format",
+        "friendly_name": "MP3 Format Created",
+        "year": 1993,
+        "description": "The Fraunhofer Institute released the MP3 audio format, enabling digital music distribution.",
+        "score": 1,
+        "shared": [
+          "created"
+        ]
+      },
+      {
+        "name": "rugby-union-turns-professional",
+        "friendly_name": "Rugby Union Turns Professional",
+        "year": 1995,
+        "description": "The IRB declared rugby union an open game, ending amateurism a century after the split that created rugby league.",
+        "score": 1,
+        "shared": [
+          "created"
+        ]
+      },
+      {
+        "name": "clinton-first-inauguration",
+        "friendly_name": "Bill Clinton Takes Office",
+        "year": 1993,
+        "description": "A young Arkansas governor became the first baby boomer president, in a ceremony featuring a poem by Maya Angelou.",
+        "score": 1,
+        "shared": [
+          "became"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1996,
+    "title": "Verdana Released for the Screen",
+    "candidates": [
+      {
+        "name": "usb-standard",
+        "friendly_name": "USB Standard Released",
+        "year": 1996,
+        "description": "The Universal Serial Bus standard was released, simplifying how devices connect to computers.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "tokyo-subway-attack",
+        "friendly_name": "Tokyo Subway Sarin Attack",
+        "year": 1995,
+        "description": "The Aum Shinrikyo cult released sarin gas on the Tokyo subway, killing 13.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "wifi-standard",
+        "friendly_name": "Wi-Fi Standard Released",
+        "year": 1997,
+        "description": "The IEEE 802.11 standard was released, enabling wireless internet that transformed how we connect.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "deep-blue-beats-kasparov",
+        "friendly_name": "Deep Blue Beats Kasparov",
+        "year": 1997,
+        "description": "IBM's Deep Blue defeated world champion Garry Kasparov, the first computer to beat a top human at chess.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      },
+      {
+        "name": "settlers-of-catan-released",
+        "friendly_name": "Settlers of Catan Released",
+        "year": 1995,
+        "description": "Klaus Teuber's Settlers of Catan launched in Germany, sparking a global revival of modern board gaming.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "microsoft-windows-95",
+        "friendly_name": "Windows 95 Released",
+        "year": 1995,
+        "description": "Microsoft launched Windows 95, bringing the graphical desktop interface to the masses.",
+        "score": 1,
+        "shared": [
+          "released"
+        ]
+      },
+      {
+        "name": "apple-think-different-campaign",
+        "friendly_name": "Apple's Think Different",
+        "year": 1997,
+        "description": "A tribute to rebels and visionaries, with black-and-white portraits, marked a computer maker's co-founder returning.",
+        "score": 1,
+        "shared": [
+          "computer"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2007,
+    "title": "Calibri Becomes the Default Font",
+    "candidates": [
+      {
+        "name": "singapore-flyer",
+        "friendly_name": "Singapore Flyer Opens",
+        "year": 2008,
+        "description": "The world's largest observation wheel at the time opened.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "western-union-ends-telegrams",
+        "friendly_name": "Western Union Ends Telegrams",
+        "year": 2006,
+        "description": "The company that once dominated the telegraph quietly stopped sending telegrams, ending a long era of wired messages.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "iphone-released",
+        "friendly_name": "iPhone Released",
+        "year": 2007,
+        "description": "Apple's smartphone revolutionized mobile technology and communication.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "asean-charter",
+        "friendly_name": "ASEAN Charter",
+        "year": 2007,
+        "description": "Southeast Asian nations adopted a charter giving ASEAN legal status.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lisbon-treaty",
+        "friendly_name": "Treaty of Lisbon",
+        "year": 2007,
+        "description": "The EU reformed its institutions and created a permanent president.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "virginia-tech-shooting",
+        "friendly_name": "Virginia Tech Shooting",
+        "year": 2007,
+        "description": "Gunman killed 32 people at Virginia Tech in the deadliest school shooting in US history.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 2010,
+    "title": "Emoji Added to Unicode",
+    "candidates": [
+      {
+        "name": "wikileaks-cables",
+        "friendly_name": "WikiLeaks Cables",
+        "year": 2010,
+        "description": "WikiLeaks released thousands of classified US diplomatic cables, embarrassing governments worldwide.",
+        "score": 1,
+        "shared": [
+          "worldwide"
+        ]
+      },
+      {
+        "name": "danyang-kunshan-grand-bridge",
+        "friendly_name": "Danyang-Kunshan Grand Bridge Opens",
+        "year": 2010,
+        "description": "The world's longest bridge opened as part of Beijing-Shanghai rail line.",
+        "score": 1,
+        "shared": [
+          "part"
+        ]
+      },
+      {
+        "name": "death-steve-jobs",
+        "friendly_name": "Death of Steve Jobs",
+        "year": 2011,
+        "description": "Apple co-founder Steve Jobs died of cancer, mourned worldwide for revolutionizing personal technology.",
+        "score": 1,
+        "shared": [
+          "worldwide"
+        ]
+      },
+      {
+        "name": "fukushima-disaster",
+        "friendly_name": "Fukushima Nuclear Disaster",
+        "year": 2011,
+        "description": "An earthquake and tsunami caused meltdowns at a Japanese nuclear plant.",
+        "score": 1,
+        "shared": [
+          "japanese"
+        ]
+      },
+      {
+        "name": "instagram-launched",
+        "friendly_name": "Instagram Launched",
+        "year": 2010,
+        "description": "The photo-sharing app that transformed social media was released.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chilean-mine-rescue",
+        "friendly_name": "Chilean Mine Rescue",
+        "year": 2010,
+        "description": "All 33 miners trapped underground for 69 days were rescued in a dramatic televised operation.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

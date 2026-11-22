@@ -1,0 +1,15 @@
+{
+  "slug": "emoji-added-to-unicode",
+  "description": "A painted night street scene in a Japanese town. A hand in the foreground holds a black phone with a home button, its screen showing a grid of emoji: smiley faces, red and pink hearts, a sun, cat faces and a pink blossom. Behind it are paper lanterns, a JR sign reading 東京駅 with 'Tokyo Station' beneath, and a FamilyMart storefront. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Legible text is painted into the scene: the JR sign reads 東京駅 with 'Tokyo Station' beneath it, and a 'FamilyMart' storefront sign is visible on the right. The art needs to be repainted without signage or lettering. The phone's emoji grid is the right subject and the era fits."
+}

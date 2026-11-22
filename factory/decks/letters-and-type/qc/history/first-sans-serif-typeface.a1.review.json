@@ -1,0 +1,15 @@
+{
+  "slug": "first-sans-serif-typeface",
+  "description": "A middle-aged man with grey-brown hair and rolled shirtsleeves, wearing a dark waistcoat, holds up a heavy metal type block bearing a capital A in a dim, brick-walled workshop. Foreground trays hold more metal type, some ornate with scrollwork. A wooden board behind him reads HAND PRESSED with smaller lettering, and a partial word RAW appears at top right. The painting is full-bleed, with no frame or border visible.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Painted text is visible: the board reads HAND PRESSED with smaller lines beneath, and RAW shows at top right. The letter A on the block looks serifed, so it may not read as the plain sans-serif letter the card describes; the ornate type in the trays matches the discarded older letters in the scene."
+}

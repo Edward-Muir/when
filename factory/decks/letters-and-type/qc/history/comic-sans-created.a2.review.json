@@ -1,0 +1,15 @@
+{
+  "slug": "comic-sans-created",
+  "description": "A painted scene of a beige CRT computer on a dark wooden desk. The screen shows a window with a thumbnail strip on the left and a cartoon dog with a speech balloon in the main panel, plus a small warning dialog in the corner. Around the monitor lie pages of pen-inked comic panels, an ink bottle and several brushes. The image fills the frame edge to edge, and there are no people. Speech balloon and dialog contain scribbled, letter-like marks, and small labels appear in the window title and taskbar.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Writing is painted into the image: the speech balloon and the warning dialog carry scribbled, letter-like lines, and the window title bar and taskbar show small labels. Repaint the screen and balloon without any writing, or with blank shapes only."
+}
