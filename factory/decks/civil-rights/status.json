@@ -3,7 +3,7 @@
   "name": "Civil Rights Road",
   "stage": "art-in-progress",
   "created_at": "2026-11-23T05:15:38.621Z",
-  "updated_at": "2026-11-23T06:11:44.903Z",
+  "updated_at": "2026-11-23T06:14:05.074Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -30,10 +30,11 @@
       "updated_at": "2026-11-23T06:11:44.903Z"
     },
     "crandall-school-black-girls": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "51d18fa7d33ff33825d47d0267315d405b8539b84bf9d0e9c9a96dc75ff77d75",
+      "updated_at": "2026-11-23T06:14:05.074Z"
     },
     "fourteenth-amendment-ratified": {
       "state": "pending",
