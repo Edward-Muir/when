@@ -3,7 +3,7 @@
   "name": "Civil Rights Road",
   "stage": "art-in-progress",
   "created_at": "2026-11-23T05:15:38.621Z",
-  "updated_at": "2026-11-23T06:14:05.074Z",
+  "updated_at": "2026-11-23T06:16:25.530Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -37,10 +37,11 @@
       "updated_at": "2026-11-23T06:14:05.074Z"
     },
     "fourteenth-amendment-ratified": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "d782e6b4aacf79e7af7a2ea3df47f37f58c5eae754927079ee87f62c70dadf53",
+      "updated_at": "2026-11-23T06:16:25.530Z"
     },
     "fifteenth-amendment-ratified": {
       "state": "pending",
