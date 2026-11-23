@@ -3,7 +3,7 @@
   "name": "Civil Rights Road",
   "stage": "art-in-progress",
   "created_at": "2026-11-23T05:15:38.621Z",
-  "updated_at": "2026-11-23T09:12:22.848Z",
+  "updated_at": "2026-11-23T09:15:30.922Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -100,10 +100,11 @@
       "updated_at": "2026-11-23T09:12:22.848Z"
     },
     "truman-desegregates-military": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "26aa80737569b83c693c5235387033d666051566054ca7e6158a8b7fac2109f9",
+      "updated_at": "2026-11-23T09:15:30.922Z"
     },
     "mlk-day-signed": {
       "state": "pending",
