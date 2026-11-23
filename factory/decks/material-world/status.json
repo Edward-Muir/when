@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-23T02:33:07.519Z",
+  "updated_at": "2026-11-23T02:35:55.849Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -142,10 +142,11 @@
       "updated_at": "2026-11-23T02:33:07.519Z"
     },
     "pilkington-float-glass": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "c24eb2c88179d82e4e05f3ed9aafe557249b6be17e66ec9244358ae9247ca854",
+      "updated_at": "2026-11-23T02:35:55.849Z"
     }
   }
 }
