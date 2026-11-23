@@ -1,0 +1,15 @@
+{
+  "slug": "mlk-day-signed",
+  "description": "A painted outdoor scene: a dark wooden desk on a sunlit lawn in front of a white columned building with an American flag on a pole. On the desk an open leather folder holds a document with a lettered header and a scribbled signature, a gold pen lies beside it, and a framed photo of a man in a suit speaking at a podium stands behind. Rows of empty folding chairs sit on the grass to the left.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The document on the desk has a visible lettered header that reads like a bill number (H.R. 3706) with a caption beneath and a signature. Painted text must go; the document should be blank or show only unreadable marks."
+}

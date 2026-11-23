@@ -1,0 +1,15 @@
+{
+  "slug": "tutu-nobel-peace-prize",
+  "description": "A dim gothic stone chapel with pointed arches and stained-glass windows showing robed saints. In the foreground, a wooden table holds a rolled parchment tied with a ribbon and a gold medal with a small relief profile. To the right, a folded purple garment with buttons lies over the table edge. No people are visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

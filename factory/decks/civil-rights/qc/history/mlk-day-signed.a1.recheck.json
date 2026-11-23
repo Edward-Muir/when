@@ -1,0 +1,15 @@
+{
+  "slug": "mlk-day-signed",
+  "description": "An oil painting of a dark wooden desk on a sunlit lawn before a white columned building with an American flag. On the desk lie an open book and a document headed with legible 'H.R. 3706', a caption line and a signature, plus a gold pen and a small framed photo of a man in a suit at a podium microphone. Rows of empty folding chairs sit on the grass at left. No border around the painting; nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The document on the desk carries legible painted text ('H.R. 3706' plus a caption line and signature). Make the page blank or only unreadable scribble."
+}

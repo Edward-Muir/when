@@ -68,5 +68,40 @@
     "by": "review",
     "attempts": 1,
     "description": "A man in a dark suit stands at a wooden lectern in a dim, ornate salon with a crystal chandelier, gilt chairs and tall curtained windows, one arm raised as he speaks. Seated and standing rows of Black men in suits fill the room, and a man in an embroidered robe sits at right. There is no visible text, frame or border, and nothing graphic."
+  },
+  "pullman-porters-union": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "A dim meeting hall with brick walls, a wooden podium, and a long table lit by a glowing lantern, with a gavel, newspapers and papers. Cream-topped dark uniform caps sit on the table and chairs, and dark uniform jackets hang over chair backs among rows of empty chairs. An American flag hangs in the background. Painterly style, no people, no letters, no border or frame, nothing graphic."
+  },
+  "executive-order-8802": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A large industrial hangar with a US flag hanging from the rafters and light shafts through haze. Several men in denim overalls and caps work on the riveted metal skin of an aircraft wing or fuselage with pneumatic tools. A partly built propeller plane sits in the background. The workers appear to be Black and white, standing side by side. No visible text, no frame."
+  },
+  "truman-desegregates-military": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dark, oil-painted still life. Five dark olive-green military uniform jackets and caps are lined up on a wooden shelf in front of heavy curtains, with a small American flag partly visible at the top. Below, on a wooden desk, an open document with a cursive signature lies beside a black fountain pen, with a leather folio and stacks of papers around it. No people are shown. The painting runs edge to edge with no frame."
+  },
+  "mlk-day-signed": {
+    "state": "qc-fail",
+    "reason": "The document on the desk carries legible painted text ('H.R. 3706' plus a caption line and signature). Make the page blank or only unreadable scribble.",
+    "by": "recheck",
+    "attempts": 1,
+    "description": "An oil painting of a dark wooden desk on a sunlit lawn before a white columned building with an American flag. On the desk lie an open book and a document headed with legible 'H.R. 3706', a caption line and a signature, plus a gold pen and a small framed photo of a man in a suit at a podium microphone. Rows of empty folding chairs sit on the grass at left. No border around the painting; nothing graphic."
+  },
+  "tutu-nobel-peace-prize": {
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 1,
+    "description": "A dim gothic stone chapel with pointed arches and stained-glass windows showing robed saints. In the foreground, a wooden table holds a rolled parchment tied with a ribbon and a gold medal with a small relief profile. To the right, a folded purple garment with buttons lies over the table edge. No people are visible."
   }
 }
