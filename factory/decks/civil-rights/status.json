@@ -3,7 +3,7 @@
   "name": "Civil Rights Road",
   "stage": "art-in-progress",
   "created_at": "2026-11-23T05:15:38.621Z",
-  "updated_at": "2026-11-23T06:29:51.727Z",
+  "updated_at": "2026-11-23T06:32:11.764Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -79,10 +79,11 @@
       "updated_at": "2026-11-23T06:29:51.727Z"
     },
     "first-pan-african-congress-paris": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "2346a37af6fbb53580f870dc5cafc0b65be2df86e58733604fb4b505036efd66",
+      "updated_at": "2026-11-23T06:32:11.764Z"
     },
     "pullman-porters-union": {
       "state": "pending",
