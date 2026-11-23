@@ -91,11 +91,11 @@
     "description": "A dark, oil-painted still life. Five dark olive-green military uniform jackets and caps are lined up on a wooden shelf in front of heavy curtains, with a small American flag partly visible at the top. Below, on a wooden desk, an open document with a cursive signature lies beside a black fountain pen, with a leather folio and stacks of papers around it. No people are shown. The painting runs edge to edge with no frame."
   },
   "mlk-day-signed": {
-    "state": "qc-fail",
-    "reason": "The document on the desk carries legible painted text ('H.R. 3706' plus a caption line and signature). Make the page blank or only unreadable scribble.",
-    "by": "recheck",
-    "attempts": 1,
-    "description": "An oil painting of a dark wooden desk on a sunlit lawn before a white columned building with an American flag. On the desk lie an open book and a document headed with legible 'H.R. 3706', a caption line and a signature, plus a gold pen and a small framed photo of a man in a suit at a podium microphone. Rows of empty folding chairs sit on the grass at left. No border around the painting; nothing graphic."
+    "state": "qc-pass",
+    "reason": "",
+    "by": "review",
+    "attempts": 2,
+    "description": "An oil-style painting of an outdoor garden with rows of folding chairs on grass, and a dark wooden desk in the foreground. On the desk are an open dark leather folder with a cream paper bearing cursive handwriting, a gold pen, and a small framed dark portrait of a man in a suit with one hand raised at a podium. The scene is dim and the trees and hedges are blurred. The painting fills the frame edge to edge."
   },
   "tutu-nobel-peace-prize": {
     "state": "qc-pass",

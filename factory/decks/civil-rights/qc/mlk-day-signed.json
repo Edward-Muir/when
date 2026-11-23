@@ -1,0 +1,15 @@
+{
+  "slug": "mlk-day-signed",
+  "description": "An oil-style painting of an outdoor garden with rows of folding chairs on grass, and a dark wooden desk in the foreground. On the desk are an open dark leather folder with a cream paper bearing cursive handwriting, a gold pen, and a small framed dark portrait of a man in a suit with one hand raised at a podium. The scene is dim and the trees and hedges are blurred. The painting fills the frame edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}
