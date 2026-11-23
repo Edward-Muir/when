@@ -101,3 +101,12 @@ sea cow graded medium or hard, because nothing in their text dates them.
   at Tizi n'Tichka in 1942, with Morocco's lions gone around 1948. The detail prose says so.
   Moving the card to 1942 would put 4 cards in 1932-1942, over the bunching limit, so the year
   needs Edward's call.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty animals lost to extinction in the human era, several known through their last individual survivors.
+- **Fact:** Steller's sea cow had no teeth at all. It chewed kelp with horny pads, and its bones were dense enough to offset its buoyant blubber.
+
+Sources: [nhm.ac.uk](https://www.nhm.ac.uk/discover/stellers-sea-cow-first-historical-extinction-of-marine-mammal-at-human-hands.html) ("They'd lost their teeth, to be replaced by large horny pads perfect for eating kelp and not much else." and "Their bones had become astonishingly dense to h...).

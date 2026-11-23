@@ -1,0 +1,15 @@
+{
+  "slug": "urukagina-reforms-lagash",
+  "description": "A painted street scene between mud-brick walls in hazy sunlight. A bearded, muscular man with a headband and a fur-fringed skirt raises one arm high while a younger man beside him holds up a clay tablet with wedge-like marks. Around them a crowd of ragged, poor townspeople looks on, and in the foreground a veiled woman in torn dark cloth crouches protectively over a child. On the right, two bearded men in layered robes and heavy jewellery gesture, with stacked pottery jars, baskets of grain and bundled goods piled at their feet. The painting runs edge to edge with no frame, no legible text and no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

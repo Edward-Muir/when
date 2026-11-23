@@ -1,0 +1,20 @@
+{
+  "slug": "patient-hm-memory-loss",
+  "problems": [],
+  "width": 2048,
+  "height": 2048,
+  "sha256": "3afa587522e97642b4516323e73a74fd35fa60c15023c4ac6fc66d778ef3d4cf",
+  "dhash": "8bcbccf266ce5c49",
+  "nearest": {
+    "deck": {
+      "slug": "stanford-prison-experiment",
+      "distance": 24
+    },
+    "catalogue": {
+      "slug": "cathedral-school-emergence",
+      "distance": 18
+    }
+  },
+  "ok": true,
+  "attempt": 1
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "flag-australia-first-flown",
+  "description": "A dark blue flag with a Union Jack canton and white stars flies from a tall pole in a stormy, painterly sky. Below it, a large domed sandstone-coloured building is surrounded by a crowd of people in top hats, long coats and Edwardian dress, some with arms raised. The scene is an oil-painting style, with no visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

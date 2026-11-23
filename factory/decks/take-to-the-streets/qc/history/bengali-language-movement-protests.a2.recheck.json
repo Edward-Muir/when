@@ -1,0 +1,15 @@
+{
+  "slug": "bengali-language-movement-protests",
+  "description": "A crowd of young men and women in white kurtas, dhotis and saris marches arm in arm down a narrow old-city street, holding a large blank white banner on bamboo poles and blank placards. A line of helmeted police stands in haze at the far end. Shopfronts on both sides carry signs with script-like lettering. Dark painterly oil style, edge to edge, no frame, no violence.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Shopfront signs at the top left and top right carry Bengali-script-like lettering, which counts as painted-in text. Re-generate with the signs blank or out of view."
+}

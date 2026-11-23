@@ -1,0 +1,39 @@
+{
+  "id": "between-the-rivers",
+  "name": "Between the Rivers",
+  "scope": "Yes if it is an event of Sumer, Babylon or Assyria",
+  "boundary": "Between the Rivers: Sumer, Babylon and Assyria; Persia from Cyrus on goes to Kings of Kings, sieges to Under Siege, Egypt to Pharaohs, Ashurbanipal's library to Places of Learning.",
+  "neighbours": [
+    "kings-of-kings",
+    "pharaohs",
+    "schools"
+  ],
+  "grid": {
+    "categories": [
+      "empires",
+      "writing",
+      "law"
+    ],
+    "eras": [
+      "prehistory",
+      "ancient"
+    ],
+    "regions": [
+      "Middle East & North Africa"
+    ]
+  },
+  "example_beats": [
+    "Uruk becomes the first city (c. 3500 BC)",
+    "Cuneiform writing emerges (c. 3200 BC)",
+    "Sargon of Akkad founds his empire (2334 BC)",
+    "Code of Ur-Nammu (c. 2100 BC)",
+    "Hammurabi takes the throne (1792 BC)",
+    "Hittites sack Babylon (1595 BC)",
+    "Tiglath-Pileser III revives Assyria (745 BC)",
+    "Sennacherib builds his Nineveh palace (700 BC)",
+    "Fall of Nineveh (612 BC)",
+    "Nebuchadnezzar first takes Jerusalem (597 BC)"
+  ],
+  "appeal": 2,
+  "status": "authoring"
+}

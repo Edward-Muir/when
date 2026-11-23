@@ -112,3 +112,12 @@ Two pairs sit inside theme-gap's 8-year advisory window:
 - Noted but supported: the Templars are dated 1118, 1119 or 1119/20 in different sources; a
   few date Smyth's first Baptist church to 1608; the Church of Satan's 1966 date is called
   disputed by one source; the Waldensians are also dated 1177, or 1170-1177.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty religions, sects and monastic orders, each dated to the moment its founders set out on a new path.
+- **Fact:** Chartreuse liqueur uses 130 different plants, and its recipe is known at any given time only to the two monks who prepare the herbal mixture.
+
+Sources: [en.wikipedia.org](<https://en.wikipedia.org/wiki/Chartreuse_(liqueur)>) (The only formally known element of the recipe is that it uses 130 different plants; known at any given time only to the two monks who prepare the herbal mixt...).

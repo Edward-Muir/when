@@ -1,0 +1,15 @@
+{
+  "slug": "genetic-code-cracked",
+  "description": "A man in a pale lab coat, seen from behind in profile, writes with chalk on a large dark chalkboard in a dim laboratory. The board holds a grid of chalk marks, mostly rune-like glyphs, but the top rows plainly read as characters such as U33, AIC, H33, CnC, L33 and 333. A string of beads of varied shapes hangs at the right edge of the board. Shelves of books and glassware sit in the shadows. The painting runs edge to edge; only the board's own wooden frame is part of the scene.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The chalkboard grid includes readable letters and numbers (e.g. 'U33', 'AIC', 'H33', '333', 'CnC'). Repaint the grid with purely abstract, non-letter, non-numeral marks."
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "moniz-first-lobotomy",
+  "description": "A dim, sepia-toned operating room in oil-paint style. A metal ceiling lamp casts a bright cone of light onto an empty table draped in white cloth. A stainless steel stand with a bowl sits at left, and a tray of surgical instruments and a syringe lies in the right foreground. White coats and a mask hang on a hook against tiled walls. No people are visible, and there is no visible text or frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The scene asks for two surgeons leaning over a draped patient with a slender instrument and a nurse, but the picture shows an empty operating table and instrument tray with no people. It reads as a generic operating theatre that could illustrate any surgery, so it cannot be confirmed as the Moniz frontal lobotomy scene. Adding the surgeons and patient, or a clearer lobotomy instrument, would settle it."
+}

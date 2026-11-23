@@ -1,0 +1,241 @@
+{
+  "deck": "flying-colours",
+  "name": "Flying Colours",
+  "stage": "pr-open",
+  "created_at": "2026-11-02T04:21:23.007Z",
+  "updated_at": "2026-11-12T18:53:52.578Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-02T04:21:23.007Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-02T05:09:06.392Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-03T02:07:11.175Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-12T18:51:43.206Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-12T18:53:52.578Z"
+    }
+  ],
+  "slugs": {
+    "flag-dannebrog-lyndanisse": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "588cd11218648005807139aeee87c2f30c3e648d3582e6b05d6cc310c0265469",
+      "updated_at": "2026-11-02T06:07:40.230Z"
+    },
+    "flag-first-union-flag": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "bf199c7c3a64a4b3d4c4d32c3fbce44f63027a253bc77053e1739a39764c388d",
+      "updated_at": "2026-11-02T06:07:40.261Z"
+    },
+    "flag-grand-union-raised": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "641f49e6a75d1ff6ffc30a6953a7b2fd199bf44a92e7fc6222a0a1859f22fd3a",
+      "updated_at": "2026-11-02T06:07:40.292Z"
+    },
+    "flag-stars-stripes-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d61979903ac4aa700f2761f22d13545c713e397d3a920e564aeaf768f85784e2",
+      "updated_at": "2026-11-02T06:07:40.322Z"
+    },
+    "flag-french-tricolour-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "28eac0f80af1905bc3d38272a05a546f30671544d6f673af3a9f11f85dde2cd2",
+      "updated_at": "2026-11-02T06:07:40.352Z"
+    },
+    "flag-italian-tricolore-first": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7b7d618518a4efe906ce74369db1c893dcb36975641e419fa9ff26298bdddb20",
+      "updated_at": "2026-11-02T06:07:40.382Z"
+    },
+    "flag-union-flag-st-patrick": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "aae50f393d7b0d5458822a42960496dd846fc23ae72a7c91c5a37f38c489533e",
+      "updated_at": "2026-11-02T06:07:40.415Z"
+    },
+    "flag-argentina-belgrano": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8109f1d106b37c4999c573601bc2730eeae03d4985189d0ba500c64d6dffce68",
+      "updated_at": "2026-11-02T06:07:40.449Z"
+    },
+    "flag-greece-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ff7a11a228b5a3c89c8be6e19d0602a6f7b687494eea5e81309acfac50b9a23d",
+      "updated_at": "2026-11-02T06:07:40.485Z"
+    },
+    "flag-irish-tricolour-presented": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "403681f78bf19008717a5c3a9b3337ce5708b332601854a483b099ed0985b030",
+      "updated_at": "2026-11-02T06:07:40.519Z"
+    },
+    "flag-japan-hinomaru-decreed": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3dfc9262ab4e378eca1e6c4e3900e28d36bcfd610ece8860621b395fb667d223",
+      "updated_at": "2026-11-02T16:04:19.411Z"
+    },
+    "flag-brazil-green-gold": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7ddca54fe5178185802249ee95df09bd4c905fdb3be376e12b3c7ad2a3203d9d",
+      "updated_at": "2026-11-02T16:04:19.442Z"
+    },
+    "flag-philippines-unfurled": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d60cb6c02bd226e0e459a79962c7b8f0b0200ed58bf1278e1b6c29270430bf1c",
+      "updated_at": "2026-11-02T16:04:19.472Z"
+    },
+    "flag-australia-first-flown": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5a3fa2ac7a28075ec5342bfeb9e64e91dd97bdd2376eb830152a9157560da159",
+      "updated_at": "2026-11-02T23:07:41.054Z"
+    },
+    "flag-thailand-tricolour-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "26b80fa58a19f0ea20012e38601883915ef79b235c458d552e58a60d352e655c",
+      "updated_at": "2026-11-02T23:07:41.086Z"
+    },
+    "flag-germany-black-red-gold": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ed39304c95cd8f9fc733ac7adbf426858c3627da44e7c33736fcf8322490538b",
+      "updated_at": "2026-11-02T23:07:41.118Z"
+    },
+    "flag-soviet-hammer-sickle": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ad26787dbc6ccd1241bd28f179b9dc7216b77e2ec7c8c72188b6044fbab8a9fc",
+      "updated_at": "2026-11-02T23:07:41.149Z"
+    },
+    "flag-india-tricolour-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d33acb57fda4765e4535e3c963f66d2dde0ea1a30cd0c64dcaf7220191d2f071",
+      "updated_at": "2026-11-02T23:07:41.181Z"
+    },
+    "flag-israel-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "007a3cffec4bdfa90f848f00490bb3419a09df620acc30fc75201d1145daf3bd",
+      "updated_at": "2026-11-02T23:07:41.215Z"
+    },
+    "flag-china-five-star-raised": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "133e33625c774afbe23fed0114e0a895ddc4b978a72d80c7c062285218298840",
+      "updated_at": "2026-11-03T02:07:10.952Z"
+    },
+    "flag-ghana-raised": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e5712a50fed58f77c79233b604983c3fdc0749e6bab1ff6f6592534c7e1fa8c4",
+      "updated_at": "2026-11-02T23:07:41.289Z"
+    },
+    "flag-nepal-double-pennant": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c6824c2d81cda8e64528a64d3d81082f962202590305aa2c5c2487d27049130f",
+      "updated_at": "2026-11-02T23:07:41.324Z"
+    },
+    "flag-canada-maple-leaf": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4a885fe8be5c27ff4a3c4b16d3be2f679b64ceab77fba19f45f56158d0ffc00b",
+      "updated_at": "2026-11-02T23:07:41.356Z"
+    },
+    "flag-uae-raised": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "987ceee879cc2e896a48c8512312310f95c51126284ed046164a60da370aeec3",
+      "updated_at": "2026-11-03T02:07:10.983Z"
+    },
+    "flag-bangladesh-adopted": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "edd43e3f5d6aabd98654345f08de6ce7ef5d3fa4fb1687e162c0c3f7ce59e603",
+      "updated_at": "2026-11-03T02:07:11.013Z"
+    },
+    "flag-zimbabwe-raised": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "70a9427c4152e13c944238542a6e75a7d2190974b231d22fd1c1f1e3a0c46c1c",
+      "updated_at": "2026-11-03T02:07:11.044Z"
+    },
+    "flag-russia-tricolour-returns": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b15b545bd3b8aabd58add9278899928a62915dd3ab2781a3a8136b628fdf7698",
+      "updated_at": "2026-11-03T02:07:11.074Z"
+    },
+    "flag-south-africa-new": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "98cf2ba97ade4c1372a2df2c3a3e2c222e271d07ba217125cab2a4266bbed04a",
+      "updated_at": "2026-11-03T02:07:11.104Z"
+    },
+    "flag-kosovo-unveiled": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b03f2b95e2d1681cdfb5578217a7f248fada4e88a0cb11af170aa2b4fcd8f15d",
+      "updated_at": "2026-11-03T02:07:11.138Z"
+    },
+    "flag-south-sudan-raised": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5bb27e5b5eefd1ffebbf203a3ae94299f61fd80ea4847c6ac3bcf154b7c33e12",
+      "updated_at": "2026-11-03T02:07:11.175Z"
+    }
+  }
+}

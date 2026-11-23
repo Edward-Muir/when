@@ -1,0 +1,15 @@
+{
+  "slug": "us-cambodia-incursion",
+  "description": "A painted scene in dense jungle. Two soldiers in olive fatigues and camouflage helmets lean over a folded paper map on the hood of a vehicle, one pointing. Behind them an armoured personnel carrier with a machine-gun mount and bundled gear sits on a dirt track, with more soldiers carrying rifles in the undergrowth. Banana plants and vines fill the background; the painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

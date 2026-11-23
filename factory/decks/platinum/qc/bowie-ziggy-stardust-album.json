@@ -1,0 +1,15 @@
+{
+  "slug": "bowie-ziggy-stardust-album",
+  "description": "A headless mannequin in a harlequin-patterned jumpsuit and red platform boots stands in a spotlight on a worn wooden stage in an old theatre. A lightning bolt is painted on an ornate gilt standing mirror to the right, and an electric guitar leans against a speaker cabinet on the left, with cables on the floor. Dark red curtains and balcony railings frame the background.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

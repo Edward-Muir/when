@@ -1,0 +1,40 @@
+{
+  "id": "iron-curtain",
+  "name": "Iron Curtain",
+  "scope": "Yes if it is a Cold War crisis or proxy war",
+  "boundary": "Iron Curtain: the blocs' confrontation, the Berlin Wall and the Cuban Missile Crisis included; bombs and arms treaties go to The Atomic Age, alliances to Safety in Numbers, communism's own revolutions to Red Flags, spies to Spy Games.",
+  "neighbours": [
+    "atomic-age",
+    "red-flags",
+    "spy-games"
+  ],
+  "grid": {
+    "categories": [
+      "diplomacy",
+      "warfare",
+      "revolution"
+    ],
+    "eras": [
+      "coldWar"
+    ],
+    "regions": [
+      "Global",
+      "Europe",
+      "East Asia"
+    ]
+  },
+  "example_beats": [
+    "Churchill's Iron Curtain speech (1946)",
+    "Cuban Missile Crisis (1962)",
+    "Berlin Airlift (1948)",
+    "Korean War begins (1950)",
+    "Hungarian uprising (1956)",
+    "Bay of Pigs (1961)",
+    "Gulf of Tonkin incident (1964)",
+    "Prague Spring crushed (1968)",
+    "Soviet invasion of Afghanistan (1979)",
+    "Reagan says 'Tear down this wall' (1987)"
+  ],
+  "appeal": 3,
+  "status": "authoring"
+}

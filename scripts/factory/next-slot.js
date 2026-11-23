@@ -11,10 +11,14 @@
  * A merged deck is one whose factory/decks/<id>/deck.json is on main (this checkout, which the
  * schedule stage keeps at origin/main). It is pending until its id is on /api/themes.
  *
- * Slots are Mondays and Fridays, the curated cadence (docs/curated-themes/index.md), and the
- * earliest open one wins, gaps included. A date is open when no theme holds it and it opens
- * (D-1 10:00Z, midnight in UTC+14) more than SAFETY_HOURS from now, so a validate today and a
- * publish tomorrow still land before it goes live anywhere.
+ * Slots are Mondays, Wednesdays and Fridays, the curated cadence (docs/curated-themes/index.md),
+ * and the earliest open one wins, gaps included. A date is open when no theme holds it and it
+ * opens (D-1 10:00Z, midnight in UTC+14) more than SAFETY_HOURS from now, so a validate today and
+ * a publish tomorrow still land before it goes live anywhere.
+ *
+ * A date already promised to another pending deck is held too. The promise is that deck's lasting
+ * copy in factory-reports/, which outlives the run: the clone is cleaned between runs, so
+ * counting only factory/dispatch/ once gave 19 decks colliding dates (2026-11-22).
  */
 
 const fs = require('fs');
@@ -23,9 +27,10 @@ const path = require('path');
 const { DECKS_DIR, IMAGES_DIR, REPO_ROOT } = require('./config');
 const { parseArgs, readJson, run, writeJson } = require('./cli');
 
-const CURATED_WEEKDAYS = [1, 5]; // Monday, Friday
+const CURATED_WEEKDAYS = [1, 3, 5]; // Monday, Wednesday, Friday
 const SAFETY_HOURS = 48;
-const LOOKAHEAD_DAYS = 120;
+// A year: on 2026-11-22 the first open slot was already 169 days out.
+const LOOKAHEAD_DAYS = 365;
 const DAY = 24 * 3600 * 1000;
 
 const iso = (t) => new Date(t).toISOString().slice(0, 10);
@@ -45,7 +50,7 @@ function taken(themes) {
   return byDate;
 }
 
-/** Mondays and Fridays from the first settable date, with whoever holds each. */
+/** Curated weekdays from the first settable date, with whoever holds each. */
 function slots(themes, now = Date.now()) {
   const byDate = taken(themes);
   const out = [];
@@ -80,6 +85,18 @@ function report(themes, now = Date.now()) {
   };
 }
 
+/**
+ * The dispatches earlier runs wrote for decks that are still pending, read from the lasting
+ * copies. A published deck's copy is ignored: the calendar already holds its date.
+ */
+function promised(reportsDir, pendingIds, exceptId) {
+  return pendingIds
+    .filter((id) => id !== exceptId)
+    .map((id) => path.join(reportsDir, `dispatch-${id}.json`))
+    .filter((file) => fs.existsSync(file))
+    .map((file) => readJson(file));
+}
+
 function mergedDecks() {
   if (!fs.existsSync(DECKS_DIR)) return [];
   return fs
@@ -99,10 +116,10 @@ async function main() {
     if (args.json) return console.log(JSON.stringify(r, null, 2));
     console.log(`Curated days ahead: ${r.scheduled_ahead}, the last on ${r.last_date}`);
     console.log(
-      `Buffer: ${r.buffer_days} days, to the first open Mon/Fri (${r.next_open ? r.next_open.date : 'none in range'})`
+      `Buffer: ${r.buffer_days} days, to the first open Mon/Wed/Fri (${r.next_open ? r.next_open.date : 'none in range'})`
     );
     console.log(
-      `Open Mon/Fri before the last curated day: ${r.gaps.map((g) => g.date).join(', ') || 'none'}`
+      `Open Mon/Wed/Fri before the last curated day: ${r.gaps.map((g) => g.date).join(', ') || 'none'}`
     );
     console.log(
       `Off-cadence days (drift): ${r.drift.map(([d, id]) => `${d} ${id}`).join(', ') || 'none'}`
@@ -125,23 +142,25 @@ async function main() {
           : `${args.deck} has no deck.json on main; it hasn't merged`
       );
     }
-    // Dates handed out earlier in this run are taken too: validate doesn't write the calendar.
-    const dispatchDir = path.join(REPO_ROOT, 'factory', 'dispatch');
-    const given = fs.existsSync(dispatchDir)
-      ? fs
-          .readdirSync(dispatchDir)
-          .filter((f) => f.endsWith('.json') && f !== `${deck.id}.json`)
-          .map((f) => readJson(path.join(dispatchDir, f)))
-      : [];
+    // Dates handed out to other pending decks are taken too, in this run or an earlier one:
+    // validate doesn't write the calendar.
+    const reportsDir = path.join(IMAGES_DIR, 'factory-reports');
+    const given = promised(
+      reportsDir,
+      pending.map((d) => d.id),
+      deck.id
+    );
     const slot = slots([...themes, ...given]).find((s) => !s.holder);
-    if (!slot) throw new Error(`no open Monday or Friday in the next ${LOOKAHEAD_DAYS} days`);
+    if (!slot) {
+      throw new Error(`no open Monday, Wednesday or Friday in the next ${LOOKAHEAD_DAYS} days`);
+    }
     const theme = { id: deck.id, name: deck.name, eventNames: deck.eventNames, dates: [slot.date] };
     // The intro popup's copy rides along when the deck has one (docs/curated-themes/index.md).
     if (deck.intro) theme.intro = deck.intro;
     const out = path.join(REPO_ROOT, 'factory', 'dispatch', `${deck.id}.json`);
     writeJson(out, theme);
     // The clone is cleaned at the start of every stage, so Edward's publish command points here.
-    const keep = path.join(IMAGES_DIR, 'factory-reports', `dispatch-${deck.id}.json`);
+    const keep = path.join(reportsDir, `dispatch-${deck.id}.json`);
     writeJson(keep, theme);
     console.log(
       JSON.stringify({
@@ -165,4 +184,4 @@ async function pendingDecks() {
   return mergedDecks().filter((d) => !onCalendar.has(d.id));
 }
 
-module.exports = { mergedDecks, opensAt, pendingDecks, report, slots, weekday };
+module.exports = { mergedDecks, opensAt, pendingDecks, promised, report, slots, weekday };

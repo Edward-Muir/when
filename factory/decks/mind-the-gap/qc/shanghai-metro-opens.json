@@ -1,0 +1,15 @@
+{
+  "slug": "shanghai-metro-opens",
+  "description": "An oil-painted scene of a dim underground station. Commuters in jackets, shirts and trousers stand on a wet tiled platform, some boarding a red-and-blue train whose doors are open and windows glow. A dark stone column is on the left, stairs lead up in the background, and a framed painting of a city skyline with a tall pearl-shaped tower hangs on the station wall above the tracks. There is no visible text other than a small exit sign with no legible letters.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -106,3 +106,12 @@ decade, and both pairs include a foothold.
 - **`bach-brandenburg-concertos` (description):** the year is confirmed, but sources do not
   support "in hopes of winning a job". Bach was already Kapellmeister at Cöthen and the Margrave
   had asked for compositions; "sent to a Margrave who had asked for his music" would be safer.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty landmark works by great classical composers, spanning sacred music, opera, ballet and symphony.
+- **Fact:** The K numbers on Mozart's works honour Ludwig von Köchel, a botanist who compiled a catalogue of them.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Ludwig_von_Köchel) (Occupations listed include botanist; he published 'a chronological and thematic register of the works of Mozart.').

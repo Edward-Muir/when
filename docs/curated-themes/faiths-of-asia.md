@@ -97,3 +97,12 @@ different countries and different faiths, so they are kept.
 - The spine's years were mostly written from memory, and the fact checker searched only the
   disputed ones; the later cards (Kojiki, Nichiren, Ganden, the Dalai Lama title, the Guru
   Granth Sahib, the 1868 order, Hare Krishna) were marked ok without a search.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty milestones in the religions of Asia, among them Buddhism, Hinduism, Taoism, Shinto and Sikhism.
+- **Fact:** The Rigveda is a collection of ten books holding 1,028 hymns in about 10,600 verses.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Rigveda) (a collection of 10 books (maṇḍalas) with 1,028 hymns (sūktas) in about 10,600 verses).

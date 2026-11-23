@@ -1,0 +1,15 @@
+{
+  "slug": "bengali-language-movement-protests",
+  "description": "A tightly packed crowd of young men and women in white shirts, dhotis and saris marches arm in arm down a brick-and-plaster street in warm low sunlight. Two or three of them wear sandals and walk barefoot in front; a tall black banner and several smaller placards are held above them, covered in dark painted script. Behind them rows of uniformed police with rifles stand in the haze, and the scene is painted in an oil-painting style.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The black banner and the placards carry painted Bengali script (legible lettering on the banner and signs), which breaks the no-text rule. The rest works: the march, the white dress, the police in the background and the 1952 era all match the card, and the image fills the frame edge to edge. Repaint or regenerate with the placards blank or showing no lettering."
+}

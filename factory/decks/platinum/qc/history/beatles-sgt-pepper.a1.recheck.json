@@ -1,0 +1,15 @@
+{
+  "slug": "beatles-sgt-pepper",
+  "description": "A dark, oil-painted crowd of cut-out style figures in mixed dress stands behind four figures in bright military band uniforms with blank faces. A large bass drum sits mid-frame and a smiling clown-faced drum lies lower right. Red flowers in the foreground form large letters reading roughly BEAT. There are palms, a doll and small statues. The painting fills the image edge to edge, with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Flowers in the foreground are arranged into large letters spelling a word (BEAT...), which is painted-in text. Redraw the flowerbed as a guitar shape or plain flowers with no lettering."
+}

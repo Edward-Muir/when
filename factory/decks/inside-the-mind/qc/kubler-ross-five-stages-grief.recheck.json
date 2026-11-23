@@ -1,0 +1,15 @@
+{
+  "slug": "kubler-ross-five-stages-grief",
+  "description": "A dim oil painting of an empty hospital bed with rumpled sheets, a metal bedframe, an IV stand and bag, a drawn curtain, and a bedside cabinet with an articulated desk lamp. A chair in the foreground holds an open notebook and pen. Mid-20th-century hospital cues. No letters, frame, or gore; the painting fills the edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

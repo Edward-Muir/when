@@ -115,8 +115,9 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
 
 The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
 
-- **Blurb:** How doctors learned to look inside, listen to and test the living body.
-- **Fact:** Laennec rolled a sheet of paper into a tube to listen to a patient's heart because
-  he felt it improper to press his ear to a young woman's chest.
+- **Blurb:** Thirty ways of looking inside the body or testing it, including pulse readings, scans and swabs.
+- **Fact:** An early electrocardiograph weighed about 600 pounds and needed five people to run it, with the patient's limbs placed in vats of salt water.
 
-Sources: [Stethoscope (Wikipedia)](https://en.wikipedia.org/wiki/Stethoscope); [René Laennec (Wikipedia)](https://en.wikipedia.org/wiki/Ren%C3%A9_Laennec).
+Sources: [nationalmaglab.org](https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/museum/electrocardiograph-1903/) (His prototype weighed 600 pounds, took five people to operate; required the patient to submerge his arms and legs in vats of conductive saline solution).
+
+Reworded from the writer's draft: 'The first' reads as a timing word; the source describes the early machine.

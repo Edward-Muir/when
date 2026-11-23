@@ -98,3 +98,12 @@ defect, and it is why a single spread bin is expected.
 Caveats the fact check kept as ok: Sahelanthropus's upright walking is disputed (the description
 hedges, the name does not); newer dating may push Australopithecus africanus back to about 3.7
 million years; Homo antecessor's species assignment is provisional.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty human species, ancestors and milestones in the story of how people came to be.
+- **Fact:** Homo naledi takes its species name from the Sesotho word for star, after the Rising Star cave system in South Africa where its bones were found.
+
+Sources: [wits.ac.za](https://www.wits.ac.za/homonaledi/age/questions-and-answers/) (The word "naledi" means "star" in the Sesotho language, and the word "Dinaledi" means "stars".); [humanorigins.si.edu](https://humanorigins.si.edu/evidence/human-fossils/species/homo-naledi) (Fossil hominins were first discovered in the Dinaledi Chamber of the Rising Star Cave system in South Africa.).

@@ -32,38 +32,38 @@ Some edges were argued rather than assumed:
 
 ## The 30
 
-|  Year | Slug                             |                |
-| ----: | -------------------------------- | -------------- |
-|  -209 | `chen-sheng-wu-guang-revolt`     | foothold · NEW |
-|   -73 | `spartacus-revolt`               | foothold       |
-|    60 | `boudica-revolt`                 | foothold · NEW |
-|    66 | `jewish-revolt-begins`           | foothold       |
-|   184 | `yellow-turban-rebellion`        |                |
-|   532 | `nika-riots`                     |                |
-|   869 | `zanj-rebellion-begins`          | foothold · NEW |
-|  1358 | `jacquerie-peasant-revolt`       |                |
-|  1381 | `peasants-revolt-england`        |                |
-|  1524 | `german-peasants-war-begins`     |                |
-|  1536 | `pilgrimage-of-grace-rising`     | foothold · NEW |
-|  1637 | `shimabara-rebellion`            |                |
-|  1680 | `pueblo-revolt-spanish-expelled` | NEW            |
-|  1773 | `pugachev-rebellion`             | foothold · NEW |
-|  1780 | `tupac-amaru-ii-rebellion`       | NEW            |
-|  1786 | `shays-rebellion`                |                |
-|  1789 | `french-revolution-start`        | foothold       |
-|  1798 | `irish-rebellion-of-1798`        |                |
-|  1831 | `nat-turners-rebellion`          |                |
-|  1848 | `spring-of-nations`              |                |
-|  1850 | `taiping-rebellion`              |                |
-|  1871 | `paris-commune`                  |                |
-|  1900 | `boxer-rebellion`                |                |
-|  1905 | `first-russian-revolution`       |                |
-|  1917 | `february-revolution-russia`     |                |
-|  1953 | `east-german-uprising`           |                |
-|  1956 | `hungarian-revolution`           |                |
-|  1976 | `soweto-uprising`                |                |
-|  1994 | `zapatista-uprising-chiapas`     | NEW            |
-|  2011 | `egyptian-revolution-2011`       |                |
+| Year | Slug                             |                |
+| ---: | -------------------------------- | -------------- |
+| -209 | `chen-sheng-wu-guang-revolt`     | foothold · NEW |
+|  -73 | `spartacus-revolt`               | foothold       |
+|   60 | `boudica-revolt`                 | foothold · NEW |
+|   66 | `jewish-revolt-begins`           | foothold       |
+|  184 | `yellow-turban-rebellion`        |                |
+|  532 | `nika-riots`                     |                |
+|  869 | `zanj-rebellion-begins`          | foothold · NEW |
+| 1358 | `jacquerie-peasant-revolt`       |                |
+| 1381 | `peasants-revolt-england`        |                |
+| 1524 | `german-peasants-war-begins`     |                |
+| 1536 | `pilgrimage-of-grace-rising`     | foothold · NEW |
+| 1637 | `shimabara-rebellion`            |                |
+| 1680 | `pueblo-revolt-spanish-expelled` | NEW            |
+| 1773 | `pugachev-rebellion`             | foothold · NEW |
+| 1780 | `tupac-amaru-ii-rebellion`       | NEW            |
+| 1786 | `shays-rebellion`                |                |
+| 1789 | `french-revolution-start`        | foothold       |
+| 1798 | `irish-rebellion-of-1798`        |                |
+| 1831 | `nat-turners-rebellion`          |                |
+| 1848 | `spring-of-nations`              |                |
+| 1850 | `taiping-rebellion`              |                |
+| 1871 | `paris-commune`                  |                |
+| 1900 | `boxer-rebellion`                |                |
+| 1905 | `first-russian-revolution`       |                |
+| 1917 | `february-revolution-russia`     |                |
+| 1953 | `east-german-uprising`           |                |
+| 1956 | `hungarian-revolution`           |                |
+| 1976 | `soweto-uprising`                |                |
+| 1994 | `zapatista-uprising-chiapas`     | NEW            |
+| 2011 | `egyptian-revolution-2011`       |                |
 
 22 were already in the catalogue and 8 were written for this theme.
 
@@ -88,3 +88,12 @@ Swing Riots, the Silesian weavers, Morant Bay and Kronstadt.
 All 8 new cards passed, with no fixes and nothing unsupported. Boudica is dated 60 by most
 sources and 61 by some; the card keeps 60. The checker searched four of the eight (Boudica,
 Zanj, Pueblo, Tupac Amaru II) and passed the other four from well-established dates.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty popular uprisings in which ordinary people turned against those who ruled them.
+- **Fact:** The word jacquerie comes from Jacques, a name nobles used contemptuously for any peasant, possibly after the padded jacket called a jacque.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Jacquerie) (the nobles derided peasants as "Jacques" or "Jacques Bonhomme"; for their padded surplice, called a "jacque").

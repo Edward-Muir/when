@@ -1,0 +1,15 @@
+{
+  "slug": "benedict-xvi-elected-pope",
+  "description": "A painted rooftop with a chimney releasing a thick white plume into a dark, stormy dusk sky. Beyond the roofline a large domed basilica stands over a dense crowd of people holding umbrellas and flags in a square, with a tall obelisk in the middle of the square. There is no visible text, no frame, and no people in close view.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

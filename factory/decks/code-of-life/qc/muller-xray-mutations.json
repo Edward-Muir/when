@@ -1,0 +1,15 @@
+{
+  "slug": "muller-xray-mutations",
+  "description": "A painted laboratory bench scene. A glowing glass vacuum tube on a retort stand dominates the upper centre, with a small corked vial of fruit flies at lower left and a wooden rack of six test tubes holding flies at lower right. Other glassware and copper wires fill the dark background. The style is a dark oil painting, with no visible text, frame or gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

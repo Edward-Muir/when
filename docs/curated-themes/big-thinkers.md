@@ -34,38 +34,38 @@ medieval stretch), and Bacon, Spinoza and Locke (the densest decades of the 1600
 
 ## The 30
 
-| Year | Slug                                     |                |
-| ---: | ---------------------------------------- | -------------- |
-| -479 | `confucius-analects-compiled`            | foothold · NEW |
-| -399 | `trial-of-socrates`                      | foothold       |
-| -380 | `plato-writes-republic`                  | foothold       |
-| -335 | `aristotle-peripatetic-school`           | foothold       |
-| -306 | `epicurus-founds-garden-school`          | NEW            |
-| -300 | `laozi-tao-te-ching`                     | foothold · NEW |
-|  150 | `nagarjuna-middle-way-verses`            | NEW            |
-|  170 | `marcus-aurelius-meditations`            | foothold       |
-|  400 | `augustine-confessions-written`          | NEW            |
-| 1027 | `avicenna-book-of-healing`               | NEW            |
-| 1095 | `al-ghazali-philosophy`                  |                |
-| 1265 | `aquinas-summa`                          |                |
-| 1508 | `wang-yangming-great-awakening`          | NEW            |
-| 1513 | `machiavelli-prince`                     | foothold       |
-| 1580 | `montaigne-essays`                       |                |
-| 1637 | `descartes-discourse-method`             | foothold       |
-| 1651 | `hobbes-leviathan`                       |                |
-| 1739 | `hume-treatise-human-nature`             | NEW            |
-| 1762 | `rousseaus-social-contract`              |                |
-| 1781 | `kant-critique-pure-reason`              | foothold       |
-| 1792 | `wollstonecraft-vindication-rights-woman` | NEW           |
-| 1807 | `hegel-phenomenology-of-spirit`          | NEW            |
-| 1848 | `communist-manifesto`                    | foothold       |
-| 1859 | `mill-on-liberty`                        | NEW            |
-| 1883 | `nietzsche-thus-spoke-zarathustra`       | foothold · NEW |
-| 1909 | `gandhi-hind-swaraj`                     | NEW            |
-| 1921 | `wittgenstein-tractatus`                 | NEW            |
-| 1943 | `sartre-being-and-nothingness`           | NEW            |
-| 1949 | `beauvoir-second-sex`                    | NEW            |
-| 1971 | `rawls-theory-of-justice`                | NEW            |
+| Year | Slug                                      |                |
+| ---: | ----------------------------------------- | -------------- |
+| -479 | `confucius-analects-compiled`             | foothold · NEW |
+| -399 | `trial-of-socrates`                       | foothold       |
+| -380 | `plato-writes-republic`                   | foothold       |
+| -335 | `aristotle-peripatetic-school`            | foothold       |
+| -306 | `epicurus-founds-garden-school`           | NEW            |
+| -300 | `laozi-tao-te-ching`                      | foothold · NEW |
+|  150 | `nagarjuna-middle-way-verses`             | NEW            |
+|  170 | `marcus-aurelius-meditations`             | foothold       |
+|  400 | `augustine-confessions-written`           | NEW            |
+| 1027 | `avicenna-book-of-healing`                | NEW            |
+| 1095 | `al-ghazali-philosophy`                   |                |
+| 1265 | `aquinas-summa`                           |                |
+| 1508 | `wang-yangming-great-awakening`           | NEW            |
+| 1513 | `machiavelli-prince`                      | foothold       |
+| 1580 | `montaigne-essays`                        |                |
+| 1637 | `descartes-discourse-method`              | foothold       |
+| 1651 | `hobbes-leviathan`                        |                |
+| 1739 | `hume-treatise-human-nature`              | NEW            |
+| 1762 | `rousseaus-social-contract`               |                |
+| 1781 | `kant-critique-pure-reason`               | foothold       |
+| 1792 | `wollstonecraft-vindication-rights-woman` | NEW            |
+| 1807 | `hegel-phenomenology-of-spirit`           | NEW            |
+| 1848 | `communist-manifesto`                     | foothold       |
+| 1859 | `mill-on-liberty`                         | NEW            |
+| 1883 | `nietzsche-thus-spoke-zarathustra`        | foothold · NEW |
+| 1909 | `gandhi-hind-swaraj`                      | NEW            |
+| 1921 | `wittgenstein-tractatus`                  | NEW            |
+| 1943 | `sartre-being-and-nothingness`            | NEW            |
+| 1949 | `beauvoir-second-sex`                     | NEW            |
+| 1971 | `rawls-theory-of-justice`                 | NEW            |
 
 13 reused, 17 written for this theme. The footholds are the spine's fame-3 beats.
 
@@ -94,3 +94,12 @@ npm run theme:gap -- --slugs <the 30 above, comma-separated>
   Han.
 - **`avicenna-book-of-healing`** (1027): sources give completion around 1020 and 1027 as the
   publication date, while the description says "completed".
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty defining works and teachings of philosophers who shaped how people think about life and society.
+- **Fact:** The Meditations of Marcus Aurelius has no official title. The emperor probably never meant the notes to be published, and the name now used was given to them by others.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Meditations) (The work has no official title, so 'Meditations' is one of several titles commonly assigned to the collection. It is unlikely that Marcus Aurelius ever inten...).

@@ -1,0 +1,15 @@
+{
+  "slug": "kodak-instamatic-camera",
+  "description": "Oil-painting style scene of two hands handling a black and silver box camera with its top cover lifted off, a flat black rectangular module lying to the right, and a small blue cube (like a flashcube) on rough, straw-like ground against a dark background. No visible text, frame or border; the painting fills the whole image.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

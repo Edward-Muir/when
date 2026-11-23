@@ -110,3 +110,12 @@ worth a glance at review:
   and Turkey.
 - `michael-viii-palaiologos-crowned`: he was proclaimed at Nymphaion in the Empire of Nicaea.
   The card says "Greek exiles in Anatolia" rather than naming a city.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Emperors of Rome and Byzantium, each caught at the moment the throne passed into new hands.
+- **Fact:** The German title Kaiser and the Russian title tsar both descend from Caesar, which began as a Roman family name.
+
+Sources: [en.wikipedia.org](<https://en.wikipedia.org/wiki/Caesar_(title)>) (Both the Russian Tsar and German Kaiser both come from Caesar. / became the word for emperor in some languages, such as German (Kaiser) and Slavic (Tsar).).

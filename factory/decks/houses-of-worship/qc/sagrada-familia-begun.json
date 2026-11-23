@@ -1,0 +1,15 @@
+{
+  "slug": "sagrada-familia-begun",
+  "description": "A dim, candlelit night scene of a crowd of men in 19th-century dark suits and top hats, plus clergy in white and gold vestments, gathered at the edge of a pit. A large rough stone block hangs from ropes over the pit. On the right, workers lean over a wooden trestle table holding a model of a spired, tall-towered church. Torches and lanterns light the scene, with a city skyline under a cloudy dusk sky in the background. I see no legible text, no frame or border, and no gore.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

@@ -107,3 +107,12 @@ inside the bunching cap.
 - `cornwell-scarpetta-postmortem`: the description says the novel launched "the forensic crime
   novel boom". The year and plot are confirmed; the sources praise its forensic detail but do
   not support the boom claim.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Invented crimes and the sleuths who solve them, in detective novels, serials and famous debuts.
+- **Fact:** The Edgar Award, the genre's top prize, is a small bust of Edgar Allan Poe, who gave the award its name.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Mystery_Writers_of_America) (It presents the Edgar Award, a small bust of Edgar Allan Poe, to mystery or crime writers every year.); [en.wikipedia.org](https://en.wikipedia.org/wiki/Edgar_Award) (Named after American writer Edgar Allan Poe, a pioneer in the genre, the awards honor the best in mystery fiction).

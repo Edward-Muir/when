@@ -1,0 +1,15 @@
+{
+  "slug": "madrid-metro-opens",
+  "description": "An oil painting of a tiled, vaulted underground station with hanging bulbs. A man in a dark coat gestures toward a green-and-wood electric carriage with uniformed staff, while a crowd in flat caps, bowlers and black mantillas watches. Large advertising posters on the curved walls show painted words and a bottle. The image runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The posters on the station walls have legible painted lettering (e.g. 'Brea Erdinario', 'Rhoprigno', partial words on the left). Repaint the posters blank or as plain abstract shapes with no letters."
+}

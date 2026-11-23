@@ -1,0 +1,199 @@
+{
+  "deck": "strike-it-rich",
+  "name": "Strike It Rich",
+  "stage": "pr-open",
+  "created_at": "2026-11-13T04:17:49.575Z",
+  "updated_at": "2026-11-14T03:08:59.815Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-13T04:17:49.575Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-13T05:09:07.652Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-14T02:07:18.207Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-14T03:07:01.279Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-14T03:08:59.815Z"
+    }
+  ],
+  "slugs": {
+    "las-medulas-roman-gold-mine": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cbcac9ac2c6208ef60eb0c00bcd5aa7a45eb08384ea3e39fb97b01db50be98c0",
+      "updated_at": "2026-11-13T06:07:10.558Z"
+    },
+    "kutna-hora-silver-strike": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "42e95a7ff8850c149cd02c5ee7e35e322fbc1b6ea0669dc5995f8e2a80384b10",
+      "updated_at": "2026-11-13T06:07:10.592Z"
+    },
+    "joachimsthal-silver-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "28e3f4eb61abd2c2ec6f8183a8149eaebbe086bf77232c5d940e93d08a28f1a0",
+      "updated_at": "2026-11-13T06:07:10.626Z"
+    },
+    "zacatecas-silver-strike": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "655495ce6e44efd600295f2bf5474fd3991b8f628095207394cbc269fb2a1113",
+      "updated_at": "2026-11-13T06:07:10.658Z"
+    },
+    "minas-gerais-gold-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d3fbb06570af2d4b279166c0ec1b3830781051335074e559ed0d4087443f9cdc",
+      "updated_at": "2026-11-13T06:07:10.693Z"
+    },
+    "brazil-diamonds-discovered": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dbf3bfc9f02446ee08b08a39637c5dae4d21238385898ac7901594d9a2af93cb",
+      "updated_at": "2026-11-13T06:07:10.729Z"
+    },
+    "berezovsk-first-russian-gold": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fd33a31eb3539e0a5951aadd15990861ecd45d479fd1e0a8898a3204c531c428",
+      "updated_at": "2026-11-13T06:07:10.777Z"
+    },
+    "reed-gold-nugget-north-carolina": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8bb174fcc600fedb1ce7b33e5f93f03b1a103e391a454a7579e0ed43ba677ad9",
+      "updated_at": "2026-11-13T06:07:10.813Z"
+    },
+    "georgia-gold-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e81b35c1d9d772702560672d3b5875a22179aa0f7e770c838ca3bbf2f33a4aa7",
+      "updated_at": "2026-11-13T06:07:10.849Z"
+    },
+    "eureka-diamond-found": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4bef0c5fb598c523de8e9d0d79b9a83037604640468ea3e6fd0b19ac9b1e56af",
+      "updated_at": "2026-11-13T06:07:10.886Z"
+    },
+    "kimberley-diamond-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8245628f751549d5bdb966311fc34d4bd066a4a85514fefe7cb2cd1c374c4f4f",
+      "updated_at": "2026-11-13T08:07:33.921Z"
+    },
+    "tombstone-silver-strike": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fca0e00ab4426ed02f06b018941e4585606d405dd221880e10bb9845e5697d5c",
+      "updated_at": "2026-11-13T08:07:33.955Z"
+    },
+    "witwatersrand-gold-discovery": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3370489bf6846e90664c119cb4c101b5b237d5cb1d44e7700128ca075c8c9875",
+      "updated_at": "2026-11-13T08:07:33.988Z"
+    },
+    "coolgardie-gold-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "238b87dd2e698d2dbd300bd22fb4fc92a525816f67517be450335c565f45778e",
+      "updated_at": "2026-11-13T08:07:34.019Z"
+    },
+    "nome-beach-gold-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "82aaccdab13cc92102cfad6944b513c994c966f6f0335502de8e85b04ac7c48f",
+      "updated_at": "2026-11-13T08:07:34.053Z"
+    },
+    "cullinan-diamond-found": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d71c8f2932b42673c45dcf7b34b3652de37bceb10f676ed663b67095c4ff5c04",
+      "updated_at": "2026-11-13T08:07:34.088Z"
+    },
+    "namib-diamond-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "b5ab31257a4506feae42df19e70b7236eb211d00f5b5a281ac6b7af0f283af53",
+      "updated_at": "2026-11-13T08:07:34.123Z"
+    },
+    "mir-siberian-diamond-pipe": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a54da1b10ffcacce3853a459860ad2fc7bec255db30309839be01b8ccc45eb7f",
+      "updated_at": "2026-11-13T08:07:34.159Z"
+    },
+    "carlin-trend-gold-discovery": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d9e978e5636ed9eab64a56a106eb54d39a05e12025a81b14b30453da7cd7dc16",
+      "updated_at": "2026-11-13T08:07:34.196Z"
+    },
+    "orapa-diamond-pipe-found": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "24210a51fe219ee847b022c68f6912f8221c7cc624c69fffbb656013fafe2ecb",
+      "updated_at": "2026-11-13T08:07:34.232Z"
+    },
+    "serra-pelada-gold-rush": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e6b76c12eeb9d80dda0ee67aad14cebf4f9093c68350960acca6601fa0fc3a5b",
+      "updated_at": "2026-11-14T02:07:18.110Z"
+    },
+    "argyle-diamond-mine-opens": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e7e791d28b36ef98b1686a4037d90397db3e0e59c16312d6e0c3628d1761cda3",
+      "updated_at": "2026-11-14T02:07:18.143Z"
+    },
+    "lac-de-gras-diamonds-found": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a7d1729e8c5ce9cdd5f48ce3026ae392c21c6e743aad3a81cc558e2df6b83eba",
+      "updated_at": "2026-11-14T02:07:18.174Z"
+    },
+    "lesedi-la-rona-diamond-found": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "fb9ba50ad7c2b4abbc5aa7b25b8637969d6aa750114c0600b9e4c3d3fb7eda7f",
+      "updated_at": "2026-11-14T02:07:18.207Z"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "fourth-lateran-council": {"recognition": "low", "inferability": "medium", "anchors": ["Innocent III", "bishops in Rome", "Eucharist doctrine"], "why": "Innocent III and Church councils point to the medieval era, though few know the council"},
+  "celestine-v-resigns": {"recognition": "low", "inferability": "medium", "anchors": ["hermit pope", "papal abdication"], "why": "papal deadlock and a hermit pope suggest the medieval Church, but nothing firm"},
+  "council-constance-ends-schism": {"recognition": "low", "inferability": "high", "anchors": ["Martin V", "Western Church reunited", "council"], "why": "a council ending a rival-pope schism places it in the late medieval era"},
+  "alexander-vi-elected-pope": {"recognition": "medium", "inferability": "high", "anchors": ["Borgia", "Spanish cardinal", "bought papal throne"], "why": "Borgia is a famous Renaissance name, so the era is clear"},
+  "clement-xiv-suppresses-jesuits": {"recognition": "low", "inferability": "medium", "anchors": ["Catholic monarchs", "Society of Jesus"], "why": "Catholic monarchs pressuring a pope suggest the early modern era, though the exact period is unclear"},
+  "pius-ix-elected-pope": {"recognition": "low", "inferability": "medium", "anchors": ["longest papacy after Peter", "reform-minded cardinal"], "why": "a modern-looking pope with Pius numbering suggests the 19th century, but no firm anchor"},
+  "papal-infallibility-declared": {"recognition": "medium", "inferability": "medium", "anchors": ["First Vatican Council"], "why": "the First Vatican Council implies the modern era, though the exact century is not obvious"},
+  "benedict-xvi-elected-pope": {"recognition": "high", "inferability": "high", "anchors": ["white smoke", "German cardinal", "long-serving Polish pope"], "why": "a Polish pope's successor is John Paul II's, so it places in the 2000s"},
+  "francis-elected-first-latin-american-pope": {"recognition": "high", "inferability": "high", "anchors": ["Argentina", "pope stepped down"], "why": "a pope stepping down and the first Latin American pope point to the 2010s"},
+  "leo-xiv-elected-first-american-pope": {"recognition": "high", "inferability": "high", "anchors": ["death of Francis", "first American pope"], "why": "follows Francis, so the present day"}
+}

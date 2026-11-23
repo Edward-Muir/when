@@ -1,0 +1,15 @@
+{
+  "slug": "johnston-london-typeface",
+  "description": "An oil-painted scene in a dim studio. A man with glasses, rolled shirt sleeves and a dark waistcoat leans over a wooden desk and writes with a pen on paper covered in large block capitals (ABCDEF, GHIJK, and a partial row). Beside him stands a sign-board with a red-brown roundel and a black panel reading UNDERGROUND, with a second line below that reads UNDERGROUN. Ink pots, brushes, rolled papers and books sit around the room, with a window light on the left.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Letters are painted into the picture: the alphabet sheets on the desk show readable capitals, and the sign reads UNDERGROUND with a garbled second line UNDERGROUN. The card needs an image without legible lettering, or with lettering that is not readable."
+}

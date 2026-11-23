@@ -1,0 +1,15 @@
+{
+  "slug": "patriot-missiles-scuds",
+  "description": "A dark night desert scene. A boxy, angled multi-canister missile launcher sits on a military truck, firing a bright fiery missile whose trail arcs up across a black sky. A second streak falls from the upper right, and a faint city skyline glows low on the horizon. Ground is rubble-strewn sand with a small box unit nearby. No people, no visible text beyond a faint painter's mark in the lower right corner.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

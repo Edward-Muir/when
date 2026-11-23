@@ -1,0 +1,171 @@
+{
+  "deck": "between-the-rivers",
+  "name": "Between the Rivers",
+  "stage": "pr-open",
+  "created_at": "2026-11-19T23:16:40.655Z",
+  "updated_at": "2026-11-20T05:08:40.590Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-19T23:16:40.655Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-20T01:09:30.879Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-20T04:07:03.326Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-20T05:07:00.073Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-20T05:08:40.590Z"
+    }
+  ],
+  "slugs": {
+    "eridu-settled-sumer": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "32b1a4bced56d55ea25e130e592b902020b3919d72c4085b589ebe7492613280",
+      "updated_at": "2026-11-20T02:07:19.937Z"
+    },
+    "uruk-first-city-walled": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "df19fd8616cddc22e276cb6b0b72b210007941e4f0a2406954843031d80d4d4d",
+      "updated_at": "2026-11-20T02:07:19.980Z"
+    },
+    "cuneiform-writing-emerges": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9e2714c17ab498da1371f5131eccc5e4596d8ac6faa2f72030b3db64d7087b86",
+      "updated_at": "2026-11-20T02:07:20.018Z"
+    },
+    "royal-tombs-of-ur": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "656706c9a8e2b7fdc4ca80466d940b6d60f780fd256cf34653642207cfed0ba0",
+      "updated_at": "2026-11-20T02:07:20.055Z"
+    },
+    "urukagina-reforms-lagash": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5883e2f93757938dcfb0de8e808beab030687c1b4fa1f929d8d762079d8d269e",
+      "updated_at": "2026-11-20T02:07:20.093Z"
+    },
+    "enheduanna-hymns-inanna": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2fcc923940a04bf622ee23604351d74f286a130a2fa4dbaac55d086a3dafcfff",
+      "updated_at": "2026-11-20T02:07:20.131Z"
+    },
+    "naram-sin-victory-stele": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "df68c4e19dfa10f202aa8874888814f970d0667ca84b54a7f820a5874ebe3d6e",
+      "updated_at": "2026-11-20T02:07:20.178Z"
+    },
+    "elamites-sack-ur": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5c805efe3b4818a4bc1dd42f63932fd4a0961443e6a5f39b2bef50b090933cc4",
+      "updated_at": "2026-11-20T02:07:20.214Z"
+    },
+    "amorite-dynasty-babylon": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "292a45cb144d6b318925ae1daba987e29e8c80ef61fc864294a6c381f00268a8",
+      "updated_at": "2026-11-20T02:07:20.250Z"
+    },
+    "plimpton-322-tablet": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ae9697d0bec8896012d6ed2c6e3ba6fb4bdf774fce8fe4a5a9340dc32c319e00",
+      "updated_at": "2026-11-20T02:07:20.289Z"
+    },
+    "code-of-hammurabi-carved": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4ab4ff7b49f19d2fcb6dda94060de3b6e80d142ba64450c76dd01d097ac1106b",
+      "updated_at": "2026-11-20T04:07:03.010Z"
+    },
+    "hittites-sack-babylon": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c55a958c57009e1cc1fb722ce8c0032c8dc4f43ed1180e67ce7f89fcd370fa99",
+      "updated_at": "2026-11-20T04:07:03.042Z"
+    },
+    "ashur-uballit-frees-assyria": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4fe6e3a48f27b0a9213238eb50c6a3c4a1c559a6a63b0fcc9ff2bf0cef3ac6ba",
+      "updated_at": "2026-11-20T04:07:03.078Z"
+    },
+    "gilgamesh-epic-standard-version": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4c07160d9b11afc3e5397e2086ed98819f1402dcdf8b629c69a14373ebf13696",
+      "updated_at": "2026-11-20T04:07:03.113Z"
+    },
+    "ashurnasirpal-builds-nimrud": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5ebf8affaa3568f9fbc1cd170a5cdff731423756cd16d48eb93702de442a50c0",
+      "updated_at": "2026-11-20T04:07:03.145Z"
+    },
+    "babylonian-astronomical-diaries": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3c73679aaec990c0a0361aceefcc89aaadf0778fd950ce3f6c2fe4981d2fd806",
+      "updated_at": "2026-11-20T04:07:03.179Z"
+    },
+    "tiglath-pileser-iii-reforms": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d5c66fe8a1550a018d90606a4535dc192c247827c5947838f1abbeef8be7d281",
+      "updated_at": "2026-11-20T04:07:03.219Z"
+    },
+    "sennacherib-palace-nineveh": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0ae4eb5bae7986ed9f83e12882cbe2552afcea07561550f95d53d816d4336022",
+      "updated_at": "2026-11-20T04:07:03.255Z"
+    },
+    "ashurbanipal-takes-throne": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3efb446d34f88f17c2700af329bfb0e83d0e162f1b03547101ea846c9c417ba1",
+      "updated_at": "2026-11-20T04:07:03.291Z"
+    },
+    "nebuchadnezzar-wins-carchemish": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ace66e757787f39c880f6e37b4b44ee23eb150955ec8adebeb2f21563789e854",
+      "updated_at": "2026-11-20T04:07:03.326Z"
+    }
+  }
+}

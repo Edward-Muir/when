@@ -1,0 +1,15 @@
+{
+  "slug": "amy-winehouse-back-to-black-album",
+  "description": "An oil-painting style scene of a dim stage lit from above. A dark-haired head or bun rests against the back of a wooden bar stool, with a black leather jacket draped over the stool. A vintage chrome microphone stands on a stand in front of it, and gold trumpets lean against a dark floor speaker cabinet at right. Cables run across a worn wooden floor. A gilded picture frame is visible at the top left, inside the room. No visible text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

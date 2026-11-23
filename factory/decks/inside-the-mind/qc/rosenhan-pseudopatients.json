@@ -1,0 +1,15 @@
+{
+  "slug": "rosenhan-pseudopatients",
+  "description": "A man in a worn grey-beige shirt and trousers sits on a wooden bench, bent over a small notebook and writing with a pen. Behind him a doctor in a white coat and a nurse in a white uniform and cap move through a dim room with tall windows, and two shadowed figures sit at the left edge. Oil-painting style, no visible text, fills the frame edge to edge; the setting and dress suggest a mid-20th-century institution.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

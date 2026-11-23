@@ -1,0 +1,15 @@
+{
+  "slug": "project-gutenberg-begins",
+  "description": "A dark, painterly interior lit by a single desk lamp. In the center is a beige office machine, a keyboard-and-carriage unit with a long strip of perforated paper that spills onto the floor in folds. Behind it are a reel-to-reel tape recorder and a stack of reels, and at left are shelves of small cards or folders. The image fills the frame edge to edge, with no visible border.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

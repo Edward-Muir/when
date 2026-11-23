@@ -1,0 +1,22 @@
+{
+"chartist-kennington-common-rally":{"recognition":"low","inferability":"high","anchors":["Chartists","petition for the vote"],"why":"Chartists place it in 1840s Britain"},
+"trafalgar-square-bloody-sunday":{"recognition":"medium","inferability":"low","anchors":["unemployed workers","police and soldiers"],"why":"Bloody Sunday name is ambiguous; unemployed radicals suggest industrial era but vague"},
+"coxeys-army-march-washington":{"recognition":"low","inferability":"medium","anchors":["jobless","deep depression","public works"],"why":"depression suggests 1890s or 1930s"},
+"woman-suffrage-procession-washington":{"recognition":"medium","inferability":"high","anchors":["woman suffrage","Pennsylvania Avenue","inauguration"],"why":"suffrage movement places it early 20th century US"},
+"petrograd-womens-day-protest":{"recognition":"high","inferability":"high","anchors":["Petrograd","tsar fell"],"why":"tsar falling is 1917 Russia"},
+"first-national-hunger-march":{"recognition":"low","inferability":"medium","anchors":["unemployed","Britain","relief"],"why":"interwar-ish industrial Britain, but vague"},
+"sacco-vanzetti-worldwide-protests":{"recognition":"medium","inferability":"medium","anchors":["anarchists","Massachusetts","execution"],"why":"anarchists and worldwide protests suggest early 20th century"},
+"bonus-army-march-washington":{"recognition":"medium","inferability":"high","anchors":["First World War veterans"],"why":"WWI veterans put it in the 1920s-30s"},
+"jarrow-march":{"recognition":"medium","inferability":"medium","anchors":["unemployed shipyard men","England"],"why":"industrial era unemployment, likely 1930s"},
+"rosenstrasse-protest-berlin":{"recognition":"low","inferability":"high","anchors":["Jewish husbands","Berlin","detained"],"why":"Nazi-era persecution is obvious"},
+"bengali-language-movement-protests":{"recognition":"low","inferability":"medium","anchors":["Dhaka","official status for language"],"why":"post-colonial South Asia, mid-20th century"},
+"first-aldermaston-march":{"recognition":"medium","inferability":"high","anchors":["nuclear weapons","peace symbol"],"why":"nuclear and peace symbol place it in Cold War era"},
+"anpo-protests-japan":{"recognition":"low","inferability":"high","anchors":["security treaty with the United States","Tokyo"],"why":"US-Japan treaty implies postwar era"},
+"greenham-common-womens-march":{"recognition":"medium","inferability":"high","anchors":["cruise missiles","peace camp"],"why":"cruise missiles mean Cold War"},
+"battle-of-seattle-wto-protests":{"recognition":"medium","inferability":"high","anchors":["WTO","anti-globalisation"],"why":"anti-globalisation and global trade summit mark the 1990s"},
+"global-anti-iraq-war-protests":{"recognition":"high","inferability":"high","anchors":["Iraq war","largest coordinated demonstration"],"why":"Iraq war is early 2000s"},
+"occupy-wall-street":{"recognition":"high","inferability":"high","anchors":["Wall Street","99 percent","camps worldwide"],"why":"well known 2010s slogan"},
+"hong-kong-umbrella-movement":{"recognition":"high","inferability":"high","anchors":["Hong Kong","pepper spray","free elections"],"why":"modern era"},
+"womens-march-2017":{"recognition":"high","inferability":"high","anchors":["pink hats","presidential inauguration","worldwide"],"why":"pink hats recognisable, modern"},
+"woman-life-freedom-protests":{"recognition":"medium","inferability":"medium","anchors":["police custody","headscarf"],"why":"modern feel but no explicit anchor"}
+}

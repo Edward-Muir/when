@@ -1,0 +1,15 @@
+{
+  "slug": "golden-state-killer-identified",
+  "description": "A dark, painterly still life on a desk. An open silver laptop shows a branching tree of grey nodes and connecting lines on a pale screen. Beside it sit a small glass vial with a DNA helix shape, a brass magnifying glass, a sheet of handwritten paper with illegible scribbles, and a thick, worn stack of old case files with a blank label. No people are shown, and the painting runs edge to edge.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

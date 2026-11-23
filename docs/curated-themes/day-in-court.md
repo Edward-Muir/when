@@ -20,38 +20,38 @@ Four neighbours own the edges:
 
 ## The 30
 
-|  Year | Slug                               |                |
-| ----: | ---------------------------------- | -------------- |
-|  -399 | `trial-of-socrates`                | foothold       |
-|  1431 | `trial-of-joan-of-arc-rouen`       | foothold · NEW |
-|  1535 | `trial-of-sir-thomas-more`         | foothold · NEW |
-|  1649 | `charles-i-put-on-trial`           | foothold · NEW |
-|  1692 | `salem-witch-trials`               | foothold       |
-|  1735 | `zenger-libel-acquittal`           | NEW            |
-|  1770 | `boston-massacre-soldiers-trial`   | foothold · NEW |
-|  1803 | `marbury-v-madison`                |                |
-|  1841 | `amistad-supreme-court-ruling`     | foothold · NEW |
-|  1857 | `dred-scott-decision`              |                |
-|  1859 | `john-brown-trial-harpers-ferry`   | foothold · NEW |
-|  1894 | `dreyfus-affair`                   |                |
-|  1895 | `oscar-wilde-trials`               | foothold · NEW |
-|  1896 | `plessy-v-ferguson`                |                |
-|  1921 | `sacco-vanzetti-convicted`         | NEW            |
-|  1925 | `scopes-trial`                     |                |
-|  1931 | `al-capone-tax-evasion-conviction` | foothold · NEW |
-|  1935 | `lindbergh-kidnapping-trial`       |                |
-|  1945 | `nuremberg-trials`                 |                |
-|  1954 | `brown-v-board`                    | foothold       |
-|  1961 | `eichmann-trial`                   |                |
-|  1964 | `mandela-sentenced`                |                |
-|  1966 | `miranda-v-arizona`                | foothold       |
-|  1973 | `roe-v-wade`                       | foothold       |
-|  1974 | `us-v-nixon-supreme-court`         | foothold · NEW |
-|  1992 | `rodney-king-officers-acquitted`   | foothold · NEW |
-|  1995 | `oj-simpson-trial`                 | foothold       |
-|  2000 | `bush-v-gore-ruling`               | foothold · NEW |
-|  2015 | `marriage-equality-us`             | foothold       |
-|  2022 | `depp-v-heard-verdict`             | foothold · NEW |
+| Year | Slug                               |                |
+| ---: | ---------------------------------- | -------------- |
+| -399 | `trial-of-socrates`                | foothold       |
+| 1431 | `trial-of-joan-of-arc-rouen`       | foothold · NEW |
+| 1535 | `trial-of-sir-thomas-more`         | foothold · NEW |
+| 1649 | `charles-i-put-on-trial`           | foothold · NEW |
+| 1692 | `salem-witch-trials`               | foothold       |
+| 1735 | `zenger-libel-acquittal`           | NEW            |
+| 1770 | `boston-massacre-soldiers-trial`   | foothold · NEW |
+| 1803 | `marbury-v-madison`                |                |
+| 1841 | `amistad-supreme-court-ruling`     | foothold · NEW |
+| 1857 | `dred-scott-decision`              |                |
+| 1859 | `john-brown-trial-harpers-ferry`   | foothold · NEW |
+| 1894 | `dreyfus-affair`                   |                |
+| 1895 | `oscar-wilde-trials`               | foothold · NEW |
+| 1896 | `plessy-v-ferguson`                |                |
+| 1921 | `sacco-vanzetti-convicted`         | NEW            |
+| 1925 | `scopes-trial`                     |                |
+| 1931 | `al-capone-tax-evasion-conviction` | foothold · NEW |
+| 1935 | `lindbergh-kidnapping-trial`       |                |
+| 1945 | `nuremberg-trials`                 |                |
+| 1954 | `brown-v-board`                    | foothold       |
+| 1961 | `eichmann-trial`                   |                |
+| 1964 | `mandela-sentenced`                |                |
+| 1966 | `miranda-v-arizona`                | foothold       |
+| 1973 | `roe-v-wade`                       | foothold       |
+| 1974 | `us-v-nixon-supreme-court`         | foothold · NEW |
+| 1992 | `rodney-king-officers-acquitted`   | foothold · NEW |
+| 1995 | `oj-simpson-trial`                 | foothold       |
+| 2000 | `bush-v-gore-ruling`               | foothold · NEW |
+| 2015 | `marriage-equality-us`             | foothold       |
+| 2022 | `depp-v-heard-verdict`             | foothold · NEW |
 
 14 of the 30 are new. The catalogue held the landmark American rulings and the great
 20th-century trials, but rarely the trial behind a famous death: it had Joan of Arc's burning,
@@ -85,3 +85,12 @@ node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pend
 
 None. The fact check returned all 14 new cards as supported. It searched the Boston Massacre
 trial, Zenger and Sacco and Vanzetti; the other 11 years rest on well-established dates.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty famous trials and court rulings, argued before juries, judges and justices.
+- **Fact:** The US Supreme Court's chamber has 24 columns of Siena marble from Liguria, Italy, and walls of Ivory Vein marble from Alicante, Spain.
+
+Sources: [supremecourt.gov](https://www.supremecourt.gov/about/buildingfeatures.aspx) (Its 24 columns are Old Convent Quarry Siena marble from Liguria, Italy; its walls and friezes are of Ivory Vein marble from Alicante, Spain).

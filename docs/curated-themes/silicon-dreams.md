@@ -28,8 +28,7 @@ Two edges were argued rather than assumed:
   and Games).
 - **`de-forest-triode-audion`** and **`eccles-jordan-flip-flop`** are components, not
   computers. They are in as the parts every electronic computer was later built from, and they
-  give the deck its only cards between 1890 and 1931. Both carry the patent-filing year (1906,
-  1918) rather than the grant (1908) or the paper (1919).
+  give the deck its only cards between 1890 and 1931. Both carry the patent-filing year (1906, 1918) rather than the grant (1908) or the paper (1919).
 
 Cut from the spine for bunching or fame: TRADIC (1954), the PDP-1 (1960), the PDP-8 (1965), the
 Xerox Alto (1973, though `xerox-alto-gui` exists in the catalogue), the Cray-1 (1976, which put
@@ -101,3 +100,12 @@ and 25 neighbouring pairs fall inside theme-gap's 8-year advisory. Two clusters 
 - **2019 / 2020 / 2022 / 2024** (quantum supremacy, the M1, Frontier, Willow): three kinds of
   machine, quantum, consumer and supercomputer, so a player can order them by what they know
   of each line rather than by memory of the year.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty landmark computers and chips, including tube and relay machines, mainframes, supercomputers and quantum hardware.
+- **Fact:** ENIAC weighed 30 tons and occupied a room measuring 30 by 50 feet.
+
+Sources: [engineering.upenn.edu](https://www.engineering.upenn.edu/about/history-heritage/eniac/) (When fully operational, ENIAC occupied a room 30 by 50 feet in size and weighed 30 tons.).

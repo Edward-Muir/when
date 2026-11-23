@@ -80,7 +80,7 @@ async function main() {
     );
     const r = calendarReport((await response.json()).themes || []);
     say(
-      `- Buffer: **${r.buffer_days} days**, to the first open Monday or Friday (${r.next_open ? r.next_open.date : 'none'}).`,
+      `- Buffer: **${r.buffer_days} days**, to the first open Monday, Wednesday or Friday (${r.next_open ? r.next_open.date : 'none'}).`,
       `- ${r.scheduled_ahead} curated days ahead, the last on ${r.last_date}.`,
       `- Open Mon/Fri before then: ${r.gaps.length ? r.gaps.map((g) => g.date).join(', ') : 'none'}.`,
       `- Off-cadence days (drift): ${r.drift.length ? r.drift.map(([d, id]) => `${d} ${id}`).join(', ') : 'none'}.`

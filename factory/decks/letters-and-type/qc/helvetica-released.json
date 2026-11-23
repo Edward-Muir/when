@@ -1,0 +1,15 @@
+{
+  "slug": "helvetica-released",
+  "description": "An oil-style painting of a man in a white shirt and dark tie bent over a table, arranging large dark cut-out letters on a white sheet under a hanging lamp. Posters with letter grids hang on the dark wall, with scissors, a ruler and paper scraps on the table. The painting runs edge to edge with no visible frame. The shirt, tie and hairstyle suggest mid-20th century.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

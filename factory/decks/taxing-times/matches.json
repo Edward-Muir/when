@@ -1,0 +1,3007 @@
+[
+  {
+    "beat": 0,
+    "year": -196,
+    "title": "Rosetta Stone Decree Remits Taxes",
+    "candidates": [
+      {
+        "name": "nabataean-petra-city",
+        "friendly_name": "Petra Built as Nabataean Capital",
+        "year": -300,
+        "year_end": 106,
+        "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
+        "score": 1,
+        "shared": [
+          "carved"
+        ]
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 1,
+        "shared": [
+          "cutting"
+        ]
+      },
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bactria-silk-road",
+        "friendly_name": "Bactria Kingdom Major Silk Road Hub",
+        "year": -250,
+        "year_end": -130,
+        "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": 2,
+    "title": "Han Dynasty Counts Its People",
+    "candidates": [
+      {
+        "name": "xiongnu-conflicts-han",
+        "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+        "year": -200,
+        "year_end": 89,
+        "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+        "score": 3,
+        "shared": [
+          "han",
+          "dynasty",
+          "china"
+        ]
+      },
+      {
+        "name": "cuju-football-china",
+        "friendly_name": "Cuju Kicking Game in China",
+        "year": -200,
+        "year_end": 220,
+        "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
+        "score": 3,
+        "shared": [
+          "han",
+          "dynasty",
+          "china"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "adena-mound-burials",
+        "friendly_name": "Adena Mound Burial Complex Peak",
+        "year": -300,
+        "year_end": 100,
+        "description": "The Adena culture built conical burial mounds across the Ohio Valley for elite ceremonial interments.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "crucible-steel-wootz",
+        "friendly_name": "Crucible Steel (Wootz) Production",
+        "year": -300,
+        "year_end": 200,
+        "description": "Indian metalworkers developed wootz crucible steel, producing high-carbon steel prized across the ancient world.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "bantu-expansion-africa",
+        "friendly_name": "Bantu Migration Across Africa",
+        "year": -400,
+        "year_end": 500,
+        "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "huangdi-neijing-compiled",
+        "friendly_name": "Huangdi Neijing Compiled",
+        "year": -400,
+        "year_end": 260,
+        "description": "China's foundational medical text outlined theories of the body, disease, and treatment by needling.",
+        "score": 1,
+        "shared": [
+          "china"
+        ]
+      },
+      {
+        "name": "zapotec-empire",
+        "friendly_name": "Zapotec Empire Flourishes",
+        "year": -500,
+        "year_end": 700,
+        "description": "The Zapotec civilization built Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+        "score": 1,
+        "shared": [
+          "earliest"
+        ]
+      },
+      {
+        "name": "scissors-invented",
+        "friendly_name": "Scissors Invented",
+        "year": -1500,
+        "year_end": 100,
+        "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
+        "score": 1,
+        "shared": [
+          "earliest"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": 6,
+    "title": "Quirinius Census of Judea",
+    "candidates": [
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "rome-founds-vigiles",
+        "friendly_name": "Rome Founds the Vigiles",
+        "year": 6,
+        "description": "Emperor Augustus created the Vigiles, a corps of thousands of night watchmen who doubled as the city's firefighters.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nasca-settlement-cahuachi",
+        "friendly_name": "Cahuachi Ceremonial Center",
+        "year": 1,
+        "year_end": 500,
+        "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "petra-nabataean-water-system",
+        "friendly_name": "Petra's Water Channels Carved",
+        "year": -30,
+        "year_end": 106,
+        "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nazca-pottery-style",
+        "friendly_name": "Nazca Polychrome Pottery Flourishes",
+        "year": -100,
+        "year_end": 750,
+        "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": 991,
+    "title": "England Pays the First Danegeld",
+    "candidates": [
+      {
+        "name": "inuit-thule-culture",
+        "friendly_name": "Thule Culture Inuit Expansion",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "lucayan-archipelago",
+        "friendly_name": "Lucayan Settlement of Bahamas",
+        "year": 700,
+        "year_end": 1100,
+        "description": "Taino-related Lucayan people migrated from Hispaniola to settle the Bahamas archipelago by canoe.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "hohokam-canal-network",
+        "friendly_name": "Hohokam Canals Spread",
+        "year": 700,
+        "year_end": 1450,
+        "description": "The Hohokam people expanded a major canal network off a desert river, irrigating land in the Sonoran Desert near modern Phoenix.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "ellora-caves",
+        "friendly_name": "Ellora Caves Construction",
+        "year": 650,
+        "year_end": 1000,
+        "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "gingerbread-reaches-europe",
+        "friendly_name": "Gingerbread Reaches Europe",
+        "year": 992,
+        "description": "An Armenian monk is traditionally said to have taught French bakers to make spiced ginger bread.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 1086,
+    "title": "Domesday Book Compiled",
+    "candidates": [
+      {
+        "name": "domesday-book",
+        "friendly_name": "Domesday Book Compiled",
+        "year": 1086,
+        "description": "William the Conqueror ordered a comprehensive survey of English landholdings for taxation purposes.",
+        "score": 3,
+        "shared": [
+          "domesday",
+          "book",
+          "compiled"
+        ]
+      },
+      {
+        "name": "kingdom-of-bohemia-established",
+        "friendly_name": "Kingdom of Bohemia Established",
+        "year": 1085,
+        "description": "Vratislav II was crowned the first king of Bohemia, the state at the root of the modern Czech lands.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "khorezm-state",
+        "friendly_name": "Khorezm Sultanate Flourishes",
+        "year": 1077,
+        "year_end": 1231,
+        "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "chaco-canyon-great-roads",
+        "friendly_name": "Chaco Canyon Road Network",
+        "year": 1050,
+        "year_end": 1100,
+        "description": "Ancestral Puebloans built a network of wide, straight roads radiating from Chaco Canyon across the desert.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "heavy-plow-adoption",
+        "friendly_name": "Heavy Plow Adoption Europe",
+        "year": 1000,
+        "year_end": 1300,
+        "description": "The heavy plow became widespread across medieval Europe, enabling productive farming on previously uncultivated soils.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "inuit-thule-culture",
+        "friendly_name": "Thule Culture Inuit Expansion",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "marquesas-settlement-east-polynesia",
+        "friendly_name": "Marquesas Islands Settled",
+        "year": 900,
+        "year_end": 1300,
+        "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "dvaravati-period",
+        "friendly_name": "Dvaravati Period",
+        "year": 650,
+        "year_end": 1100,
+        "description": "The Mon Dvaravati kingdom flourished in central Thailand, spreading Theravada Buddhism across mainland Southeast Asia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "nalanda-university",
+        "friendly_name": "Nalanda University Flourishes",
+        "year": 427,
+        "year_end": 1200,
+        "description": "Nalanda in Bihar, India became one of the world's first residential universities, attracting scholars across Asia.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 1188,
+    "title": "Saladin Tithe Raised",
+    "candidates": [
+      {
+        "name": "third-crusade",
+        "friendly_name": "Third Crusade Begins",
+        "year": 1189,
+        "description": "Richard the Lionheart and Saladin faced off for control of the Holy Land.",
+        "score": 2,
+        "shared": [
+          "saladin",
+          "crusade"
+        ]
+      },
+      {
+        "name": "heavy-plow-adoption",
+        "friendly_name": "Heavy Plow Adoption Europe",
+        "year": 1000,
+        "year_end": 1300,
+        "description": "The heavy plow became widespread across medieval Europe, enabling productive farming on previously uncultivated soils.",
+        "score": 2,
+        "shared": [
+          "across",
+          "europe"
+        ]
+      },
+      {
+        "name": "romanesque-architecture-style",
+        "friendly_name": "Romanesque Architecture",
+        "year": 1000,
+        "year_end": 1200,
+        "description": "The Romanesque style emerged in Western Europe with massive stone churches and decorative arcading.",
+        "score": 2,
+        "shared": [
+          "western",
+          "europe"
+        ]
+      },
+      {
+        "name": "battle-of-hattin",
+        "friendly_name": "Battle of Hattin",
+        "year": 1187,
+        "description": "Saladin crushed the Crusader army, leaving Jerusalem defenseless.",
+        "score": 1,
+        "shared": [
+          "saladin"
+        ]
+      },
+      {
+        "name": "saladin-recaptures-jerusalem",
+        "friendly_name": "Saladin Recaptures Jerusalem",
+        "year": 1187,
+        "description": "Saladin retook Jerusalem from the Crusaders after 88 years of Christian rule.",
+        "score": 1,
+        "shared": [
+          "saladin"
+        ]
+      },
+      {
+        "name": "richard-lionheart-crowned",
+        "friendly_name": "Richard the Lionheart Crowned",
+        "year": 1189,
+        "description": "Richard I was crowned at Westminster and left within months for the Third Crusade, spending almost none of his reign in England.",
+        "score": 1,
+        "shared": [
+          "crusade"
+        ]
+      },
+      {
+        "name": "third-crusade-siege-acre",
+        "friendly_name": "Third Crusade Siege of Acre",
+        "year": 1189,
+        "year_end": 1191,
+        "description": "Crusader forces besieged the fortified port for two years before its garrison finally surrendered during the Third Crusade.",
+        "score": 1,
+        "shared": [
+          "crusade"
+        ]
+      },
+      {
+        "name": "cathars-heresy",
+        "friendly_name": "Cathar Heresy Languedoc",
+        "year": 1140,
+        "year_end": 1244,
+        "description": "The Cathar dualist movement gained followers in southern France, later provoking the Albigensian Crusade.",
+        "score": 1,
+        "shared": [
+          "crusade"
+        ]
+      },
+      {
+        "name": "toledo-translation-movement",
+        "friendly_name": "Toledo Translation Movement",
+        "year": 1126,
+        "year_end": 1284,
+        "description": "Scholars in Toledo translated Arabic scientific and philosophical texts into Latin, transmitting classical knowledge to Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "pagan-kingdom",
+        "friendly_name": "Pagan Kingdom Peak",
+        "year": 1113,
+        "year_end": 1287,
+        "description": "The Pagan Kingdom of Burma reached its zenith with massive temple construction across the Bagan plains.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "khorezm-state",
+        "friendly_name": "Khorezm Sultanate Flourishes",
+        "year": 1077,
+        "year_end": 1231,
+        "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "paper-technology-spreads",
+        "friendly_name": "Paper Technology Spreads to Europe",
+        "year": 1056,
+        "year_end": 1340,
+        "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 1215,
+    "title": "Magna Carta Limits Royal Taxes",
+    "candidates": [
+      {
+        "name": "magna-carta",
+        "friendly_name": "Magna Carta Signed",
+        "year": 1215,
+        "description": "English barons forced King John to sign a charter limiting royal power.",
+        "score": 6,
+        "shared": [
+          "magna",
+          "carta",
+          "royal",
+          "barons",
+          "forced",
+          "king"
+        ]
+      },
+      {
+        "name": "university-paris-founding",
+        "friendly_name": "University of Paris Recognized",
+        "year": 1215,
+        "description": "The University of Paris received formal papal recognition, establishing the model for the European university system.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "medieval-marriage-reform",
+        "friendly_name": "Medieval Marriage Law Reform",
+        "year": 1215,
+        "description": "The Fourth Lateran Council standardized marriage laws, requiring public announcements and clerical witnesses.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-kublai-khan",
+        "friendly_name": "Birth of Kublai Khan",
+        "year": 1215,
+        "description": "The Mongol ruler who founded China's Yuan dynasty and reigned over an empire visited by Marco Polo.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-of-bouvines",
+        "friendly_name": "Battle of Bouvines",
+        "year": 1214,
+        "description": "Philip II of France defeated England and the Holy Roman Empire, establishing French dominance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dominic-founds-dominicans",
+        "friendly_name": "Dominic Founds the Dominicans",
+        "year": 1216,
+        "description": "A Castilian priest won approval for an order of preaching friars devoted to teaching and countering heresy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1427,
+    "title": "Florence Orders the Catasto",
+    "candidates": [
+      {
+        "name": "masaccio-fresco-innovation",
+        "friendly_name": "Masaccio's Brancacci Frescoes",
+        "year": 1427,
+        "description": "Masaccio painted the Brancacci Chapel frescoes in Florence, pioneering realistic perspective and light in Renaissance art.",
+        "score": 1,
+        "shared": [
+          "florence"
+        ]
+      },
+      {
+        "name": "double-entry-bookkeeping",
+        "friendly_name": "Double-Entry Bookkeeping",
+        "year": 1300,
+        "year_end": 1494,
+        "description": "Accounting method recording every transaction as both a debit and credit, refined by medieval Italian merchants.",
+        "score": 1,
+        "shared": [
+          "every"
+        ]
+      },
+      {
+        "name": "novgorod-republic",
+        "friendly_name": "Novgorod Republic Golden Age",
+        "year": 1136,
+        "year_end": 1478,
+        "description": "The Novgorod Republic flourished as a major Hanseatic trading partner with a unique democratic veche assembly system.",
+        "score": 1,
+        "shared": [
+          "republic"
+        ]
+      },
+      {
+        "name": "aztec-empire",
+        "friendly_name": "Aztec Empire Established",
+        "year": 1428,
+        "description": "The Triple Alliance formed the Aztec Empire in central Mexico.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "le-dynasty-restoration",
+        "friendly_name": "Le Dynasty Restored",
+        "year": 1428,
+        "description": "Le Loi defeated Ming Chinese forces and founded the Later Le dynasty, restoring Vietnamese independence.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hussite-wars",
+        "friendly_name": "Hussite Wars",
+        "year": 1419,
+        "year_end": 1434,
+        "description": "Czech followers of Jan Hus fought Catholic crusaders using innovative wagon-fort tactics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1634,
+    "title": "Charles I Levies Ship Money",
+    "candidates": [
+      {
+        "name": "wallenstein-assassinated",
+        "friendly_name": "Wallenstein Assassinated",
+        "year": 1634,
+        "description": "The Habsburg emperor's leading general was killed by his own officers once he was suspected of treating with the enemy.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "royal-mail-opens-to-public",
+        "friendly_name": "Royal Mail Opens to the Public",
+        "year": 1635,
+        "description": "A king allowed ordinary people to send letters through the royal postal service, for a fee set by distance.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "court-of-star-chamber-peak",
+        "friendly_name": "Star Chamber at Its Height",
+        "year": 1629,
+        "year_end": 1640,
+        "description": "England's secretive Star Chamber court tried opponents without juries, becoming a symbol of royal abuse.",
+        "score": 1,
+        "shared": [
+          "without"
+        ]
+      },
+      {
+        "name": "mughal-shah-jahan",
+        "friendly_name": "Shah Jahan's Reign and Taj Mahal",
+        "year": 1628,
+        "year_end": 1658,
+        "description": "Shah Jahan ascended the Mughal throne, presiding over an era of architectural splendor including the construction of the Taj Mahal.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "trinh-nguyen-civil-war",
+        "friendly_name": "Trinh-Nguyen Civil War in Vietnam",
+        "year": 1627,
+        "year_end": 1672,
+        "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "spanish-price-revolution",
+        "friendly_name": "Spanish Price Revolution",
+        "year": 1550,
+        "year_end": 1650,
+        "description": "A flood of New World silver caused sustained inflation across Europe over the sixteenth century.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "adil-shahi-dynasty",
+        "friendly_name": "Adil Shahi Dynasty Rules Bijapur",
+        "year": 1490,
+        "year_end": 1686,
+        "description": "Yusuf Adil Shah founded the Adil Shahi dynasty, ruling the Bijapur Sultanate in the Deccan region of India.",
+        "score": 1,
+        "shared": [
+          "ruling"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1696,
+    "title": "Window Tax Introduced in England",
+    "candidates": [
+      {
+        "name": "navigation-acts-england",
+        "friendly_name": "English Navigation Acts",
+        "year": 1651,
+        "year_end": 1696,
+        "description": "England's Navigation Acts required colonial trade to be carried on English ships, establishing a mercantilist framework for the British Empire.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "qing-conquers-mongolia",
+        "friendly_name": "Qing Conquers Outer Mongolia",
+        "year": 1696,
+        "description": "Emperor Kangxi personally led campaigns that defeated the Dzungar Mongols at Zuunmod.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "peter-great-modernizes",
+        "friendly_name": "Peter the Great Modernizes Russia",
+        "year": 1697,
+        "year_end": 1725,
+        "description": "Tsar Peter I westernized Russia and founded St. Petersburg as its new capital.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "treaty-ryswick",
+        "friendly_name": "Treaty of Ryswick",
+        "year": 1697,
+        "description": "The treaty ended the Nine Years' War between France and the Grand Alliance.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "futures-market",
+        "friendly_name": "Rice Futures",
+        "year": 1697,
+        "year_end": 1730,
+        "description": "The Dojima Rice Exchange in Osaka became the world's first organized futures market, standardizing forward contracts for rice trading.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "dojima-rice-exchange",
+        "friendly_name": "Dojima Rice Exchange Established",
+        "year": 1697,
+        "description": "The Dojima Rice Exchange in Osaka became the world's first organized futures trading market.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1698,
+    "title": "Peter the Great Taxes Beards",
+    "candidates": [
+      {
+        "name": "peter-great-grand-embassy",
+        "friendly_name": "Peter the Great's Grand Embassy",
+        "year": 1697,
+        "description": "The young Russian tsar toured Western Europe incognito, working in shipyards and meeting kings to modernise his country.",
+        "score": 5,
+        "shared": [
+          "peter",
+          "great",
+          "russian",
+          "tsar",
+          "his"
+        ]
+      },
+      {
+        "name": "peter-great-embassy-europe",
+        "friendly_name": "Peter the Great Tours Europe",
+        "year": 1697,
+        "description": "Russia's tsar travelled in disguise through Dutch and English shipyards and workshops, hoping to learn skills his country lacked.",
+        "score": 4,
+        "shared": [
+          "peter",
+          "great",
+          "tsar",
+          "his"
+        ]
+      },
+      {
+        "name": "peter-great-reforms",
+        "friendly_name": "Peter the Great's Army Reforms",
+        "year": 1698,
+        "description": "Peter the Great rebuilt Russia's army along European lines after his Grand Embassy tour of the West.",
+        "score": 3,
+        "shared": [
+          "peter",
+          "great",
+          "his"
+        ]
+      },
+      {
+        "name": "peter-great-modernizes",
+        "friendly_name": "Peter the Great Modernizes Russia",
+        "year": 1697,
+        "year_end": 1725,
+        "description": "Tsar Peter I westernized Russia and founded St. Petersburg as its new capital.",
+        "score": 3,
+        "shared": [
+          "peter",
+          "great",
+          "tsar"
+        ]
+      },
+      {
+        "name": "wren-st-pauls-cathedral",
+        "friendly_name": "Wren Designs St Paul's Cathedral",
+        "year": 1675,
+        "year_end": 1710,
+        "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, a project spanning thirty-five years.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "zanzibar-spice-trade",
+        "friendly_name": "Zanzibar Becomes Spice Trade Center",
+        "year": 1698,
+        "description": "Zanzibar emerged as a major Indian Ocean spice trading hub under Omani influence, exporting cloves, nutmeg, and cinnamon.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1712,
+    "title": "Kangxi Freezes China's Land Tax",
+    "candidates": [
+      {
+        "name": "aboriginal-firestick-farming",
+        "friendly_name": "Aboriginal Firestick Farming",
+        "year": -8000,
+        "year_end": 1788,
+        "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+        "score": 1,
+        "shared": [
+          "growth"
+        ]
+      },
+      {
+        "name": "newcomen-steam-engine",
+        "friendly_name": "Newcomen Steam Engine",
+        "year": 1712,
+        "description": "Thomas Newcomen built the first practical steam-powered engine for pumping water from mines.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-rousseau",
+        "friendly_name": "Birth of Rousseau",
+        "year": 1712,
+        "description": "The Swiss-French philosopher whose ideas on the social contract influenced the French Revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "prussian-discipline-training",
+        "friendly_name": "Prussian Military Training System",
+        "year": 1713,
+        "description": "Frederick William I created Prussia's rigorous military drill system, building Europe's most disciplined army.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "treaty-utrecht",
+        "friendly_name": "Treaty of Utrecht",
+        "year": 1713,
+        "description": "The treaties ending the War of Spanish Succession reshaped European power.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-david-hume",
+        "friendly_name": "Birth of David Hume",
+        "year": 1711,
+        "description": "The Scottish philosopher whose empiricism and skepticism deeply influenced Enlightenment thought.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1765,
+    "title": "Stamp Act Passed",
+    "candidates": [
+      {
+        "name": "stamp-act",
+        "friendly_name": "Stamp Act",
+        "year": 1765,
+        "description": "Britain imposed direct taxation on American colonies, sparking protests and the slogan 'no taxation without representation.'",
+        "score": 7,
+        "shared": [
+          "stamp",
+          "act",
+          "american",
+          "colonies",
+          "taxation",
+          "without",
+          "representation"
+        ]
+      },
+      {
+        "name": "birth-eli-whitney",
+        "friendly_name": "Birth of Eli Whitney",
+        "year": 1765,
+        "description": "The American inventor of the cotton gin who pioneered interchangeable parts in manufacturing.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "bakers-chocolate-founded",
+        "friendly_name": "Baker's Chocolate Is Founded",
+        "year": 1764,
+        "description": "An Irish immigrant and a Boston doctor began grinding cocoa beans at a mill, founding a long-lived American chocolate maker.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "parliament"
+        ]
+      },
+      {
+        "name": "burmese-siamese-wars",
+        "friendly_name": "Burmese-Siamese Wars",
+        "year": 1765,
+        "year_end": 1767,
+        "description": "Burma and Siam fought devastating wars, culminating in the Burmese destruction of Ayutthaya.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ukiyo-woodblock-prints",
+        "friendly_name": "Ukiyo-e Color Prints Peak",
+        "year": 1765,
+        "description": "Suzuki Harunobu pioneered full-color nishiki-e woodblock prints, elevating ukiyo-e to its artistic peak.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1767,
+    "title": "Townshend Duties Imposed",
+    "candidates": [
+      {
+        "name": "birth-andrew-jackson",
+        "friendly_name": "Birth of Andrew Jackson",
+        "year": 1767,
+        "description": "The seventh US president and war hero whose populist era reshaped American democracy.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "canal-network-britain",
+        "friendly_name": "Brindley's Canal Network",
+        "year": 1759,
+        "year_end": 1772,
+        "description": "James Brindley built the Bridgewater Canal, launching Britain's canal-building era that fueled the Industrial Revolution.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "ayutthaya-fall",
+        "friendly_name": "Fall of Ayutthaya",
+        "year": 1767,
+        "description": "Burmese forces sacked Ayutthaya, destroying the 400-year-old Siamese capital and its cultural treasures.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "britannica-first",
+        "friendly_name": "First Encyclopedia Britannica",
+        "year": 1768,
+        "description": "The first edition of the English-language encyclopedia was published in Scotland.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hydrogen-discovered",
+        "friendly_name": "Hydrogen Discovered",
+        "year": 1766,
+        "description": "Henry Cavendish isolated hydrogen gas and described its properties, calling it 'inflammable air' in his research.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-voyage-of-james-cook",
+        "friendly_name": "First Voyage of James Cook",
+        "year": 1768,
+        "year_end": 1771,
+        "description": "Captain James Cook departed England on HMS Endeavour to observe the Transit of Venus and explore the Pacific.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1773,
+    "title": "Tea Act Passed",
+    "candidates": [
+      {
+        "name": "intolerable-acts",
+        "friendly_name": "Intolerable Acts Passed",
+        "year": 1774,
+        "description": "Britain passed the Coercive Acts to punish Massachusetts after the Boston Tea Party, pushing American colonies toward revolution.",
+        "score": 3,
+        "shared": [
+          "tea",
+          "passed",
+          "colonies"
+        ]
+      },
+      {
+        "name": "boston-tea-party",
+        "friendly_name": "Boston Tea Party",
+        "year": 1773,
+        "description": "Colonists dumped British tea into Boston Harbor to protest taxation without representation.",
+        "score": 2,
+        "shared": [
+          "tea",
+          "colonists"
+        ]
+      },
+      {
+        "name": "first-continental-congress",
+        "friendly_name": "First Continental Congress",
+        "year": 1774,
+        "description": "Delegates from twelve colonies met in Philadelphia to coordinate a response to British policies, establishing colonial unity.",
+        "score": 1,
+        "shared": [
+          "colonies"
+        ]
+      },
+      {
+        "name": "first-travelers-cheque",
+        "friendly_name": "First Traveler's Cheque",
+        "year": 1772,
+        "description": "The London Credit Exchange Company issued early traveler's cheques usable across European cities.",
+        "score": 1,
+        "shared": [
+          "company"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "parliament"
+        ]
+      },
+      {
+        "name": "pugachev-rebellion",
+        "friendly_name": "Pugachev's Rebellion",
+        "year": 1773,
+        "year_end": 1775,
+        "description": "A Cossack claiming to be the murdered tsar raised serfs and Cossacks and threatened Catherine the Great's throne.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1790,
+    "title": "First US Census",
+    "candidates": [
+      {
+        "name": "washington-first-inauguration",
+        "friendly_name": "Washington Sworn In",
+        "year": 1789,
+        "description": "On a balcony in New York, a Revolutionary War general took the oath to lead the new republic under its Constitution.",
+        "score": 2,
+        "shared": [
+          "republic",
+          "constitution"
+        ]
+      },
+      {
+        "name": "civil-constitution-clergy",
+        "friendly_name": "Civil Constitution of the Clergy",
+        "year": 1790,
+        "description": "The French Revolution subordinated the Catholic Church to the state, requiring clergy to swear loyalty oaths.",
+        "score": 1,
+        "shared": [
+          "constitution"
+        ]
+      },
+      {
+        "name": "first-us-census",
+        "friendly_name": "First U.S. Census",
+        "year": 1790,
+        "description": "The first United States census was authorized by Congress.",
+        "score": 1,
+        "shared": [
+          "census"
+        ]
+      },
+      {
+        "name": "bill-of-rights-us",
+        "friendly_name": "US Bill of Rights Ratified",
+        "year": 1791,
+        "description": "The first ten amendments to the US Constitution were adopted.",
+        "score": 1,
+        "shared": [
+          "constitution"
+        ]
+      },
+      {
+        "name": "tennis-court-oath",
+        "friendly_name": "Tennis Court Oath",
+        "year": 1789,
+        "description": "French National Assembly members swore not to disband until they had written a constitution, defying royal authority.",
+        "score": 1,
+        "shared": [
+          "constitution"
+        ]
+      },
+      {
+        "name": "burke-reflections-published",
+        "friendly_name": "Burke's Reflections Published",
+        "year": 1790,
+        "description": "Edmund Burke published his critique of the French Revolution, founding modern conservatism.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1791,
+    "title": "Hamilton's Whiskey Excise",
+    "candidates": [
+      {
+        "name": "first-bank-united-states",
+        "friendly_name": "First Bank of the United States",
+        "year": 1791,
+        "description": "Alexander Hamilton established the First Bank of the United States to manage government finances and stabilize the economy.",
+        "score": 2,
+        "shared": [
+          "hamilton",
+          "government"
+        ]
+      },
+      {
+        "name": "birth-charles-babbage",
+        "friendly_name": "Birth of Charles Babbage",
+        "year": 1791,
+        "description": "The English mathematician who designed the Analytical Engine, conceiving the first programmable computer.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "birth-michael-faraday",
+        "friendly_name": "Birth of Michael Faraday",
+        "year": 1791,
+        "description": "The English scientist who discovered electromagnetic induction, laying the foundations of electric power.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "birth-samuel-morse",
+        "friendly_name": "Birth of Samuel Morse",
+        "year": 1791,
+        "description": "The American inventor and painter who developed the telegraph and co-created Morse code.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "war-declared-austria",
+        "friendly_name": "War Declared Against Austria",
+        "year": 1792,
+        "description": "Revolutionary France declared war on Austria, beginning over two decades of European revolutionary warfare.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "selective-breeding-animals",
+        "friendly_name": "Selective Breeding of Livestock",
+        "year": 1760,
+        "year_end": 1795,
+        "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
+        "score": 1,
+        "shared": [
+          "farmers"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1799,
+    "title": "Pitt Introduces Income Tax",
+    "candidates": [
+      {
+        "name": "first-british-income-tax",
+        "friendly_name": "First Income Tax Levied",
+        "year": 1799,
+        "description": "Britain introduced the first income tax to fund the wars against Napoleonic France.",
+        "score": 7,
+        "shared": [
+          "income",
+          "tax",
+          "fund",
+          "against",
+          "napoleonic",
+          "france",
+          "britain"
+        ]
+      },
+      {
+        "name": "birth-balzac",
+        "friendly_name": "Birth of Honore de Balzac",
+        "year": 1799,
+        "description": "The French novelist whose vast Human Comedy chronicled the society of post-Napoleonic France.",
+        "score": 2,
+        "shared": [
+          "napoleonic",
+          "france"
+        ]
+      },
+      {
+        "name": "irish-rebellion-of-1798",
+        "friendly_name": "United Irishmen Rebellion",
+        "year": 1798,
+        "description": "Irish republicans inspired by the French Revolution rose against British rule. The failed uprising led to the Act of Union with Britain.",
+        "score": 2,
+        "shared": [
+          "against",
+          "britain"
+        ]
+      },
+      {
+        "name": "act-of-union-ireland",
+        "friendly_name": "Act of Union (Ireland)",
+        "year": 1800,
+        "description": "Britain and Ireland merged their parliaments, creating the United Kingdom of Great Britain and Ireland.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "time"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1801,
+    "title": "First British Census",
+    "candidates": [
+      {
+        "name": "peace-of-amiens",
+        "friendly_name": "Treaty of Amiens",
+        "year": 1802,
+        "description": "Brief peace treaty between Britain and France ending the French Revolutionary Wars temporarily before hostilities resumed.",
+        "score": 2,
+        "shared": [
+          "britain",
+          "france"
+        ]
+      },
+      {
+        "name": "act-of-union-ireland",
+        "friendly_name": "Act of Union (Ireland)",
+        "year": 1800,
+        "description": "Britain and Ireland merged their parliaments, creating the United Kingdom of Great Britain and Ireland.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "surcouf-captures-kent",
+        "friendly_name": "Surcouf Captures the Kent",
+        "year": 1800,
+        "description": "French corsair Robert Surcouf boarded and captured the much larger British merchant ship Kent in the Bay of Bengal with a small, outgunned crew.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "toussaint-louverture-captured",
+        "friendly_name": "Toussaint Louverture Is Captured",
+        "year": 1802,
+        "description": "French forces tricked and arrested the Haitian revolutionary leader and shipped him to a freezing fortress prison in France.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "napoleons-egyptian-campaign",
+        "friendly_name": "Napoleon's Egyptian Campaign",
+        "year": 1798,
+        "year_end": 1801,
+        "description": "Napoleon invaded Egypt to threaten British India, bringing scientists who discovered the Rosetta Stone during the expedition.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "barbary-wars",
+        "friendly_name": "Barbary Wars Begin",
+        "year": 1801,
+        "description": "The United States fought North African pirates to end tribute payments and protect American shipping.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1815,
+    "title": "Corn Laws Enacted",
+    "candidates": [
+      {
+        "name": "treaty-of-ghent",
+        "friendly_name": "Treaty of Ghent",
+        "year": 1814,
+        "description": "Peace treaty ending the Anglo-American War between the United States and Britain, restoring pre-war boundaries.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "battle-new-orleans",
+        "friendly_name": "Battle of New Orleans",
+        "year": 1815,
+        "description": "Andrew Jackson's victory made him a national hero, though peace had already been signed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "napoleon-escapes-elba",
+        "friendly_name": "Napoleon Escapes Elba",
+        "year": 1815,
+        "description": "Napoleon Bonaparte escaped from exile on the island of Elba.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "napoleon-hundred-days",
+        "friendly_name": "Napoleons Hundred Days Begin",
+        "year": 1815,
+        "description": "Napoleon entered Paris with an army of 140,000, beginning his Hundred Days rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "battle-waterloo-napoleon",
+        "friendly_name": "Battle of Waterloo",
+        "year": 1815,
+        "description": "Wellington and Blucher defeated Napoleon at Waterloo, ending his rule and two decades of European war.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mfecane-wars",
+        "friendly_name": "Mfecane Wars and Zulu Expansion",
+        "year": 1815,
+        "year_end": 1840,
+        "description": "The Mfecane devastated southern Africa as Zulu expansion triggered mass migrations and widespread conflict.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1816,
+    "title": "Britain Scraps Its Income Tax",
+    "candidates": [
+      {
+        "name": "congress-vienna",
+        "friendly_name": "Congress of Vienna",
+        "year": 1815,
+        "description": "European powers redrew the map after Napoleon's defeat.",
+        "score": 3,
+        "shared": [
+          "after",
+          "napoleon",
+          "defeat"
+        ]
+      },
+      {
+        "name": "battle-waterloo-napoleon",
+        "friendly_name": "Battle of Waterloo",
+        "year": 1815,
+        "description": "Wellington and Blucher defeated Napoleon at Waterloo, ending his rule and two decades of European war.",
+        "score": 2,
+        "shared": [
+          "napoleon",
+          "ending"
+        ]
+      },
+      {
+        "name": "second-treaty-of-paris",
+        "friendly_name": "Second Treaty of Paris",
+        "year": 1815,
+        "description": "Following the defeat at Waterloo, the allied powers imposed final peace terms on France, closing a long era of continental war.",
+        "score": 2,
+        "shared": [
+          "final",
+          "defeat"
+        ]
+      },
+      {
+        "name": "napoleon-escapes-elba",
+        "friendly_name": "Napoleon Escapes Elba",
+        "year": 1815,
+        "description": "Napoleon Bonaparte escaped from exile on the island of Elba.",
+        "score": 1,
+        "shared": [
+          "napoleon"
+        ]
+      },
+      {
+        "name": "napoleon-hundred-days",
+        "friendly_name": "Napoleons Hundred Days Begin",
+        "year": 1815,
+        "description": "Napoleon entered Paris with an army of 140,000, beginning his Hundred Days rule.",
+        "score": 1,
+        "shared": [
+          "napoleon"
+        ]
+      },
+      {
+        "name": "monroe-first-inauguration",
+        "friendly_name": "Monroe Inaugurated Outdoors",
+        "year": 1817,
+        "description": "The ceremony moved outside to a platform in front of Congress after a seating dispute, opening an era of good feelings.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "enclosure-movement",
+        "friendly_name": "English Parliamentary Enclosure",
+        "year": 1760,
+        "year_end": 1832,
+        "description": "Acts of Parliament consolidated open fields into private holdings, boosting productivity but displacing the rural poor.",
+        "score": 1,
+        "shared": [
+          "parliament"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1842,
+    "title": "Peel Revives Income Tax",
+    "candidates": [
+      {
+        "name": "pilsner-first-brewed",
+        "friendly_name": "First Pilsner Brewed in Bohemia",
+        "year": 1842,
+        "description": "Brewers in Plzen used pale malt and bottom-fermenting yeast to make a clear golden lager that reshaped world beer.",
+        "score": 1,
+        "shared": [
+          "make"
+        ]
+      },
+      {
+        "name": "treaty-nanking",
+        "friendly_name": "Treaty of Nanking",
+        "year": 1842,
+        "description": "China ceded Hong Kong to Britain after the First Opium War.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-anesthesia-surgery",
+        "friendly_name": "First Anesthesia Surgery",
+        "year": 1842,
+        "description": "Crawford Long performed the first surgery using ether anesthesia, though his work wasn't published until later.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "blueprint",
+        "friendly_name": "Blueprint",
+        "year": 1842,
+        "description": "John Herschel's cyanotype process for copying technical drawings, producing white lines on blue paper.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fuel-cell",
+        "friendly_name": "Fuel Cell",
+        "year": 1842,
+        "description": "William Grove generated electricity by combining hydrogen and oxygen in an electrochemical cell.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "superphosphate-fertilizer",
+        "friendly_name": "Superphosphate Fertilizer",
+        "year": 1842,
+        "description": "John Bennet Lawes created the first artificial fertilizer by treating bones with sulfuric acid.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1846,
+    "title": "Corn Laws Repealed",
+    "candidates": [
+      {
+        "name": "corn-laws-repealed-britain",
+        "friendly_name": "Corn Laws Repealed",
+        "year": 1846,
+        "description": "Britain scrapped tariffs on imported grain, a free trade response to famine that reshaped food policy for a century.",
+        "score": 11,
+        "shared": [
+          "corn",
+          "laws",
+          "repealed",
+          "britain",
+          "scrapped",
+          "tariffs",
+          "imported",
+          "grain",
+          "famine",
+          "free",
+          "trade"
+        ]
+      },
+      {
+        "name": "texas-annexed",
+        "friendly_name": "Texas Annexed",
+        "year": 1845,
+        "description": "Texas joined the United States as the 28th state after nine years as an independent republic.",
+        "score": 2,
+        "shared": [
+          "after",
+          "years"
+        ]
+      },
+      {
+        "name": "irish-potato-famine",
+        "friendly_name": "Irish Potato Famine Begins",
+        "year": 1845,
+        "description": "A potato blight caused mass starvation and emigration from Ireland.",
+        "score": 2,
+        "shared": [
+          "famine",
+          "ireland"
+        ]
+      },
+      {
+        "name": "oregon-treaty",
+        "friendly_name": "Oregon Treaty",
+        "year": 1846,
+        "description": "Treaty between the US and Britain establishing the 49th parallel as the border in the Pacific Northwest.",
+        "score": 1,
+        "shared": [
+          "britain"
+        ]
+      },
+      {
+        "name": "baku-first-mechanical-oil-well",
+        "friendly_name": "Baku Drills First Mechanical Well",
+        "year": 1846,
+        "description": "On the Caspian shore, a Russian engineer drilled an oil well with a mechanical rig, years before the American boom.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "oregon-trail-migration",
+        "friendly_name": "Oregon Trail Migration",
+        "year": 1843,
+        "year_end": 1869,
+        "description": "Settlers traveled the Oregon Trail by wagon train, opening the American West to mass migration.",
+        "score": 1,
+        "shared": [
+          "opening"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "trade"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1851,
+    "title": "Window Tax Repealed",
+    "candidates": [
+      {
+        "name": "dirigible-airship",
+        "friendly_name": "Dirigible / Airship",
+        "year": 1852,
+        "description": "Henri Giffard flew the first powered, steerable lighter-than-air craft using a steam engine.",
+        "score": 1,
+        "shared": [
+          "air"
+        ]
+      },
+      {
+        "name": "compound-air-compressor",
+        "friendly_name": "Compound Air Compressor",
+        "year": 1829,
+        "year_end": 1871,
+        "description": "Multi-stage compressor using sequential cylinders to generate higher air pressures efficiently.",
+        "score": 1,
+        "shared": [
+          "air"
+        ]
+      },
+      {
+        "name": "great-exhibition-opens",
+        "friendly_name": "Great Exhibition Opens",
+        "year": 1851,
+        "description": "World's first international exhibition of manufactured products opened in London's Crystal Palace.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "foucault-pendulum",
+        "friendly_name": "Foucault Pendulum",
+        "year": 1851,
+        "description": "Léon Foucault demonstrated Earth's rotation with his famous pendulum.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "public-flush-toilets",
+        "friendly_name": "Public Flush Toilets",
+        "year": 1851,
+        "description": "George Jennings installed the first public flushing lavatories at London's Great Exhibition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "crystal-palace",
+        "friendly_name": "Crystal Palace Built",
+        "year": 1851,
+        "description": "The revolutionary glass and iron structure hosted the Great Exhibition.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1861,
+    "title": "US Levies First Federal Income Tax",
+    "candidates": [
+      {
+        "name": "us-greenbacks-issued",
+        "friendly_name": "US Greenbacks Issued",
+        "year": 1862,
+        "description": "To fund the Civil War, Congress issued unbacked paper dollars nicknamed greenbacks and made them legal tender.",
+        "score": 4,
+        "shared": [
+          "fund",
+          "civil",
+          "war",
+          "congress"
+        ]
+      },
+      {
+        "name": "american-civil-war",
+        "friendly_name": "American Civil War Begins",
+        "year": 1861,
+        "description": "Confederate forces fired on Fort Sumter, beginning a four-year war over slavery and national unity.",
+        "score": 2,
+        "shared": [
+          "civil",
+          "war"
+        ]
+      },
+      {
+        "name": "emancipation-russian-serfs",
+        "friendly_name": "Emancipation of Russian Serfs",
+        "year": 1861,
+        "description": "Tsar Alexander II freed millions of Russian serfs, the largest emancipation in history at the time.",
+        "score": 2,
+        "shared": [
+          "time",
+          "history"
+        ]
+      },
+      {
+        "name": "lincoln-first-inauguration",
+        "friendly_name": "Lincoln Sworn In as President",
+        "year": 1861,
+        "description": "Guarded by soldiers, a lawyer from Illinois pleaded with seceding states in his speech as the nation edged towards war.",
+        "score": 2,
+        "shared": [
+          "war",
+          "nation"
+        ]
+      },
+      {
+        "name": "first-melbourne-cup-1861",
+        "friendly_name": "First Melbourne Cup",
+        "year": 1861,
+        "description": "Archer won the inaugural Melbourne Cup at Flemington, launching Australia's race that stops a nation.",
+        "score": 1,
+        "shared": [
+          "nation"
+        ]
+      },
+      {
+        "name": "battle-antietam",
+        "friendly_name": "Battle of Antietam",
+        "year": 1862,
+        "description": "The bloodiest single day in American history halted Lee's first invasion of the North.",
+        "score": 1,
+        "shared": [
+          "history"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1890,
+    "title": "Hollerith Machines Tally Census",
+    "candidates": [
+      {
+        "name": "hollerith-tabulator-census",
+        "friendly_name": "Hollerith Tabulator Tallies Census",
+        "year": 1890,
+        "description": "Punched cards fed an electric tabulating machine that counted a national population far faster than hand tallying.",
+        "score": 5,
+        "shared": [
+          "hollerith",
+          "census",
+          "punched",
+          "cards",
+          "electric"
+        ]
+      },
+      {
+        "name": "wounded-knee-massacre",
+        "friendly_name": "Wounded Knee Massacre",
+        "year": 1890,
+        "description": "US Army troops killed approximately 300 Lakota Sioux at Wounded Knee, South Dakota, marking the end of the American Indian Wars.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "sherman-antitrust-act",
+        "friendly_name": "Sherman Antitrust Act",
+        "year": 1890,
+        "description": "First US federal law prohibiting monopolistic business practices and promoting fair competition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "bismarck-dismissed",
+        "friendly_name": "Bismarck Dismissed",
+        "year": 1890,
+        "description": "Kaiser Wilhelm II dismissed Chancellor Bismarck, ending the Iron Chancellor's 28-year dominance of German politics.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "motion-picture-camera",
+        "friendly_name": "Motion Picture Camera Invented",
+        "year": 1890,
+        "description": "Thomas Edison and William Dickson unveiled the kinetograph, one of the world's first motion picture cameras.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1909,
+    "title": "Lloyd George's People's Budget",
+    "candidates": [
+      {
+        "name": "instant-coffee-introduced",
+        "friendly_name": "Instant Coffee Introduced",
+        "year": 1909,
+        "description": "Soluble instant coffee reached the mass market, letting people brew a cup by adding hot water.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "union-of-south-africa",
+        "friendly_name": "Union of South Africa",
+        "year": 1910,
+        "description": "Four British colonies merged to form the Union of South Africa as a self-governing dominion.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "messina-earthquake",
+        "friendly_name": "Messina Earthquake",
+        "year": 1908,
+        "description": "An earthquake and tsunami killed over 80,000 people in Sicily and Calabria.",
+        "score": 1,
+        "shared": [
+          "people"
+        ]
+      },
+      {
+        "name": "persia-oil-discovery-masjed-soleiman",
+        "friendly_name": "Oil Found in Persia",
+        "year": 1908,
+        "description": "After years of costly searching, a British-funded drill hit a major oil field in the Middle East.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "naacp-founded",
+        "friendly_name": "NAACP Founded",
+        "year": 1909,
+        "description": "The civil rights organization was established to fight racial discrimination.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "corporate-tax",
+        "friendly_name": "Corporate Tax",
+        "year": 1909,
+        "description": "The United States enacted its first corporate income tax, establishing a 1% tax on net corporate income above $5,000.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1911,
+    "title": "National Insurance Act Passed",
+    "candidates": [
+      {
+        "name": "unemployment-benefits",
+        "friendly_name": "Unemployment Insurance",
+        "year": 1911,
+        "description": "Britain's National Insurance Act created the first compulsory unemployment insurance system, covering certain industries.",
+        "score": 6,
+        "shared": [
+          "national",
+          "insurance",
+          "act",
+          "covering",
+          "unemployment",
+          "benefits"
+        ]
+      },
+      {
+        "name": "maternity-leave",
+        "friendly_name": "Maternity Benefit Act",
+        "year": 1911,
+        "description": "Britain's National Insurance Act included maternity benefits, providing one of the first state-funded supports for new mothers.",
+        "score": 5,
+        "shared": [
+          "national",
+          "insurance",
+          "act",
+          "state",
+          "benefits"
+        ]
+      },
+      {
+        "name": "triangle-shirtwaist-fire",
+        "friendly_name": "Triangle Shirtwaist Factory Fire",
+        "year": 1911,
+        "description": "A factory fire killed 146 garment workers in New York City.",
+        "score": 1,
+        "shared": [
+          "workers"
+        ]
+      },
+      {
+        "name": "anc-founded",
+        "friendly_name": "African National Congress Founded",
+        "year": 1912,
+        "description": "The ANC was founded as the South African Native National Congress to fight for Black rights.",
+        "score": 1,
+        "shared": [
+          "national"
+        ]
+      },
+      {
+        "name": "iaaf-founded-stockholm-1912",
+        "friendly_name": "IAAF Founded in Stockholm",
+        "year": 1912,
+        "description": "Delegates from 17 national federations met after the Stockholm Olympics to found the IAAF, athletics' world governing body.",
+        "score": 1,
+        "shared": [
+          "national"
+        ]
+      },
+      {
+        "name": "oreo-introduced",
+        "friendly_name": "Oreo Is Introduced",
+        "year": 1912,
+        "description": "The National Biscuit Company launched a cream-filled chocolate sandwich cookie that became the best-selling in the world.",
+        "score": 1,
+        "shared": [
+          "national"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1913,
+    "title": "16th Amendment Allows Income Tax",
+    "candidates": [
+      {
+        "name": "us-federal-income-tax",
+        "friendly_name": "US Federal Income Tax",
+        "year": 1913,
+        "description": "The Sixteenth Amendment let the US government levy a permanent federal income tax on its citizens.",
+        "score": 3,
+        "shared": [
+          "amendment",
+          "income",
+          "tax"
+        ]
+      },
+      {
+        "name": "federal-reserve-created",
+        "friendly_name": "Federal Reserve Created",
+        "year": 1913,
+        "description": "US Congress established the Federal Reserve System as the nation's central bank.",
+        "score": 1,
+        "shared": [
+          "congress"
+        ]
+      },
+      {
+        "name": "anc-founded",
+        "friendly_name": "African National Congress Founded",
+        "year": 1912,
+        "description": "The ANC was founded as the South African Native National Congress to fight for Black rights.",
+        "score": 1,
+        "shared": [
+          "congress"
+        ]
+      },
+      {
+        "name": "sperry-gyroscopic-autopilot",
+        "friendly_name": "Gyroscopic Autopilot",
+        "year": 1912,
+        "description": "Lawrence Sperry linked gyroscopes to an aircraft's controls so the plane could hold its course unattended.",
+        "score": 1,
+        "shared": [
+          "could"
+        ]
+      },
+      {
+        "name": "second-balkan-war",
+        "friendly_name": "Second Balkan War",
+        "year": 1913,
+        "description": "Former allies turned on Bulgaria over disputed Macedonian territory, resulting in Bulgaria's defeat and increased tensions leading to World War I.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rite-of-spring",
+        "friendly_name": "Rite of Spring Premiere Riot",
+        "year": 1913,
+        "description": "Stravinsky's revolutionary ballet caused a riot at its Paris premiere.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1930,
+    "title": "Smoot-Hawley Tariff Signed",
+    "candidates": [
+      {
+        "name": "smoot-hawley-tariff",
+        "friendly_name": "Smoot-Hawley Tariff",
+        "year": 1930,
+        "description": "US tariff act raised import duties dramatically, worsening the Great Depression through trade wars.",
+        "score": 6,
+        "shared": [
+          "smoot",
+          "hawley",
+          "tariff",
+          "raised",
+          "duties",
+          "depression"
+        ]
+      },
+      {
+        "name": "sales-tax",
+        "friendly_name": "Sales Tax",
+        "year": 1930,
+        "description": "U.S. states began adopting general sales taxes during the Depression, with Mississippi being the first.",
+        "score": 1,
+        "shared": [
+          "depression"
+        ]
+      },
+      {
+        "name": "east-texas-oil-field-discovery",
+        "friendly_name": "East Texas Oil Field Found",
+        "year": 1930,
+        "description": "A wildcatter's well struck a vast field that flooded the market and crashed prices during the Depression.",
+        "score": 1,
+        "shared": [
+          "depression"
+        ]
+      },
+      {
+        "name": "great-depression-economy",
+        "friendly_name": "Great Depression Begins",
+        "year": 1929,
+        "description": "The Wall Street stock market crash triggered the worst global economic depression of the modern era.",
+        "score": 1,
+        "shared": [
+          "depression"
+        ]
+      },
+      {
+        "name": "gandhi-salt-march",
+        "friendly_name": "Gandhis Salt March",
+        "year": 1930,
+        "description": "Mahatma Gandhi led a 200-mile march to protest British salt monopoly in India.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "child-allowance",
+        "friendly_name": "Child Allowance",
+        "year": 1930,
+        "description": "Belgium introduced one of the first national child allowance systems, providing financial support to families with children.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1935,
+    "title": "Social Security Act Signed",
+    "candidates": [
+      {
+        "name": "social-security-act",
+        "friendly_name": "Social Security Act Signed",
+        "year": 1935,
+        "description": "The US established its social insurance program for the elderly.",
+        "score": 4,
+        "shared": [
+          "social",
+          "security",
+          "act",
+          "signed"
+        ]
+      },
+      {
+        "name": "long-march-begins",
+        "friendly_name": "Long March Begins",
+        "year": 1934,
+        "description": "Chinese Communists began their epic 6,000-mile retreat from Nationalist forces.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "first-television-broadcast",
+        "friendly_name": "First Public Television Broadcast",
+        "year": 1936,
+        "description": "The BBC began the world's first regular high-definition television service.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 1,
+        "shared": [
+          "began"
+        ]
+      },
+      {
+        "name": "alcoholics-anonymous",
+        "friendly_name": "Alcoholics Anonymous Founded",
+        "year": 1935,
+        "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nuremberg-laws",
+        "friendly_name": "Nuremberg Laws",
+        "year": 1935,
+        "description": "Nazi racial laws stripped German Jews of citizenship and banned marriages between Jews and non-Jews.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1943,
+    "title": "Pay-As-You-Go Withholding Begins",
+    "candidates": [
+      {
+        "name": "stalingrad",
+        "friendly_name": "Battle of Stalingrad Ends",
+        "year": 1943,
+        "description": "Soviet forces defeated Germany in a turning point of World War II.",
+        "score": 2,
+        "shared": [
+          "world",
+          "war"
+        ]
+      },
+      {
+        "name": "rosie-riveter-poster",
+        "friendly_name": "Rosie the Riveter Campaign",
+        "year": 1943,
+        "description": "The 'We Can Do It!' poster became a symbol of women entering the workforce during World War II.",
+        "score": 2,
+        "shared": [
+          "world",
+          "war"
+        ]
+      },
+      {
+        "name": "declaration-united-nations",
+        "friendly_name": "Declaration by United Nations",
+        "year": 1942,
+        "description": "Twenty-six nations signed the Declaration by United Nations during World War II.",
+        "score": 2,
+        "shared": [
+          "world",
+          "war"
+        ]
+      },
+      {
+        "name": "internment-japanese-americans",
+        "friendly_name": "Internment of Japanese Americans",
+        "year": 1942,
+        "year_end": 1946,
+        "description": "US government forcibly relocated 120,000 Japanese Americans to internment camps during World War II.",
+        "score": 2,
+        "shared": [
+          "world",
+          "war"
+        ]
+      },
+      {
+        "name": "abstract-expressionism",
+        "friendly_name": "Abstract Expressionism Emerges",
+        "year": 1943,
+        "description": "New York artists pioneered the first major American art movement.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "pentagon-completed",
+        "friendly_name": "Pentagon Completed",
+        "year": 1943,
+        "description": "The world's largest office building was finished in just 16 months.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "oklahoma-premieres",
+        "friendly_name": "Oklahoma Opens on Broadway",
+        "year": 1943,
+        "description": "A Broadway musical set on the American frontier fully integrated song, dance and story, defining the modern book musical.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "battle-monte-cassino-begins",
+        "friendly_name": "Battle of Monte Cassino Begins",
+        "year": 1944,
+        "description": "Allied forces launch the first assault on Monte Cassino, a four-month battle costing 105,000 casualties.",
+        "score": 1,
+        "shared": [
+          "begins"
+        ]
+      },
+      {
+        "name": "battle-of-the-philippine-sea",
+        "friendly_name": "Battle of the Philippine Sea",
+        "year": 1944,
+        "description": "US Navy destroyed Japanese naval aviation in the 'Great Marianas Turkey Shoot,' securing air superiority in the Pacific War.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "casablanca-released",
+        "friendly_name": "Casablanca Released",
+        "year": 1942,
+        "description": "The romantic war film starring Humphrey Bogart became a classic.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "bretton-woods-conference",
+        "friendly_name": "Bretton Woods Conference",
+        "year": 1944,
+        "description": "Allied nations established postwar monetary system with fixed exchange rates and the IMF and World Bank.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "birth-jimi-hendrix",
+        "friendly_name": "Birth of Jimi Hendrix",
+        "year": 1942,
+        "description": "The American guitarist who redefined rock with virtuosic, electrifying playing.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1947,
+    "title": "GATT Cuts World Tariffs",
+    "candidates": [
+      {
+        "name": "gatt-established",
+        "friendly_name": "GATT Established",
+        "year": 1947,
+        "description": "Nations agreed to reduce tariffs and promote free trade.",
+        "score": 4,
+        "shared": [
+          "gatt",
+          "tariffs",
+          "nations",
+          "trade"
+        ]
+      },
+      {
+        "name": "who-founded",
+        "friendly_name": "WHO Founded",
+        "year": 1948,
+        "description": "World Health Organization was established as a UN agency to coordinate international public health.",
+        "score": 2,
+        "shared": [
+          "world",
+          "organization"
+        ]
+      },
+      {
+        "name": "truman-doctrine",
+        "friendly_name": "Truman Doctrine",
+        "year": 1947,
+        "description": "US policy to contain communism by supporting nations resisting Soviet pressure, starting with Greece and Turkey.",
+        "score": 1,
+        "shared": [
+          "nations"
+        ]
+      },
+      {
+        "name": "holography",
+        "friendly_name": "Holography",
+        "year": 1947,
+        "description": "Dennis Gabor invented a technique for creating three-dimensional images using light waves.",
+        "score": 1,
+        "shared": [
+          "three"
+        ]
+      },
+      {
+        "name": "first-un-general-assembly",
+        "friendly_name": "First UN General Assembly",
+        "year": 1946,
+        "description": "The first General Assembly of the United Nations assembles in London with 51 nations represented.",
+        "score": 1,
+        "shared": [
+          "nations"
+        ]
+      },
+      {
+        "name": "universal-declaration-human-rights",
+        "friendly_name": "Universal Human Rights Declared",
+        "year": 1948,
+        "description": "The United Nations adopted a declaration setting out fundamental human rights for all people everywhere.",
+        "score": 1,
+        "shared": [
+          "nations"
+        ]
+      },
+      {
+        "name": "genocide-convention-adopted",
+        "friendly_name": "Genocide Convention Adopted",
+        "year": 1948,
+        "description": "The United Nations made genocide an international crime, pledging to prevent and punish it worldwide.",
+        "score": 1,
+        "shared": [
+          "nations"
+        ]
+      },
+      {
+        "name": "post-war-german-expulsions",
+        "friendly_name": "German Expulsions From the East",
+        "year": 1945,
+        "year_end": 1950,
+        "description": "Millions of ethnic Germans were expelled from Eastern Europe at the close of the Second World War.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1954,
+    "title": "France Introduces VAT",
+    "candidates": [
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 2,
+        "shared": [
+          "spread",
+          "worldwide"
+        ]
+      },
+      {
+        "name": "battle-dien-bien-phu",
+        "friendly_name": "Battle of Điện Biên Phủ",
+        "year": 1954,
+        "description": "Viet Minh forces defeated France, ending French colonial rule in Indochina.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "algerian-war-begins",
+        "friendly_name": "Algerian War Begins",
+        "year": 1954,
+        "description": "The FLN launched attacks against French rule in Algeria, beginning a brutal eight-year war that ended with Algerian independence.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "uss-nautilus-launched",
+        "friendly_name": "USS Nautilus Launched",
+        "year": 1954,
+        "description": "The first nuclear-powered submarine, USS Nautilus, is launched in Groton, Connecticut.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "geneva-accords-indochina",
+        "friendly_name": "Geneva Accords on Indochina",
+        "year": 1954,
+        "description": "France and the Viet Minh signed terms closing their colonial war, splitting Vietnam into a northern and southern zone.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "montgomery-bus-boycott",
+        "friendly_name": "Montgomery Bus Boycott",
+        "year": 1955,
+        "description": "Rosa Parks' arrest sparked a year-long boycott that desegregated Montgomery buses and launched MLK's career.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "geneva-summit-1955",
+        "friendly_name": "Geneva Summit",
+        "year": 1955,
+        "description": "Leaders of the US, USSR, UK, and France met in Geneva, the first superpower summit since Potsdam.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "tv-dinner-launched",
+        "friendly_name": "TV Dinner Launched",
+        "year": 1953,
+        "description": "Swanson sold the first frozen TV dinner in a partitioned tray, reshaping convenient home eating.",
+        "score": 1,
+        "shared": [
+          "launched"
+        ]
+      },
+      {
+        "name": "hogan-triple-major-year-1953",
+        "friendly_name": "Hogan's Triple-Major Year",
+        "year": 1953,
+        "description": "Ben Hogan won the Masters, U.S. Open and Open Championship in a single season, a feat later called the Hogan Slam.",
+        "score": 1,
+        "shared": [
+          "later"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1978,
+    "title": "California Passes Proposition 13",
+    "candidates": [
+      {
+        "name": "iranian-revolution",
+        "friendly_name": "Iranian Revolution",
+        "year": 1978,
+        "year_end": 1979,
+        "description": "Islamic revolutionaries overthrew the Shah and established a theocratic republic.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "year-three-popes",
+        "friendly_name": "Papal Year of Three Popes",
+        "year": 1978,
+        "description": "Pope Paul VI and John Paul I both died, and John Paul II was elected, all within one year.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "camp-david-accords",
+        "friendly_name": "Camp David Accords",
+        "year": 1978,
+        "description": "Egypt and Israel signed a peace agreement brokered by the US.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "reform-opening-china",
+        "friendly_name": "China's Reform and Opening",
+        "year": 1978,
+        "description": "Deng Xiaoping launched economic reforms that transformed China into a market economy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "vietnam-invades-cambodia",
+        "friendly_name": "Vietnam Invades Cambodia",
+        "year": 1978,
+        "description": "Vietnamese forces invaded Cambodia, ending the Khmer Rouge genocide and installing a new government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "jonestown-massacre",
+        "friendly_name": "Jonestown Massacre",
+        "year": 1978,
+        "description": "Over 900 members of a cult died in a mass murder-suicide in Guyana.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1986,
+    "title": "US Tax Reform Act Signed",
+    "candidates": [
+      {
+        "name": "european-union-precursor",
+        "friendly_name": "Single European Act",
+        "year": 1986,
+        "description": "European nations agreed to create a single market.",
+        "score": 1,
+        "shared": [
+          "act"
+        ]
+      },
+      {
+        "name": "lemond-first-us-tour-win-1986",
+        "friendly_name": "LeMond First US Tour Winner",
+        "year": 1986,
+        "description": "Greg LeMond became the first American to win the Tour de France, beating teammate Bernard Hinault.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "reykjavik-summit-reagan-gorbachev",
+        "friendly_name": "Reagan and Gorbachev at Reykjavik",
+        "year": 1986,
+        "description": "The American and Soviet leaders met in an Icelandic house and nearly agreed to abolish all nuclear weapons.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "montreal-protocol",
+        "friendly_name": "Montreal Protocol Signed",
+        "year": 1987,
+        "description": "Nations agreed to phase out ozone-depleting substances in the most successful environmental treaty.",
+        "score": 1,
+        "shared": [
+          "signed"
+        ]
+      },
+      {
+        "name": "glasnost-perestroika",
+        "friendly_name": "Glasnost and Perestroika",
+        "year": 1985,
+        "description": "Gorbachev introduced policies of openness and restructuring to reform the Soviet system.",
+        "score": 1,
+        "shared": [
+          "reform"
+        ]
+      },
+      {
+        "name": "plaza-accord-signed",
+        "friendly_name": "Plaza Accord Signed",
+        "year": 1985,
+        "description": "Five major economies agreed to weaken the US dollar against the yen and mark to fix trade imbalances.",
+        "score": 1,
+        "shared": [
+          "signed"
+        ]
+      },
+      {
+        "name": "adams-nixon-in-china-premiere",
+        "friendly_name": "Adams's Nixon in China Premieres",
+        "year": 1987,
+        "description": "An American composer's opera dramatised a famous diplomatic visit to Beijing, with sung roles for the leaders and their wives.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      },
+      {
+        "name": "crypto-ag-rigged-machines",
+        "friendly_name": "Rigged Cipher Machines Sold",
+        "year": 1970,
+        "year_end": 2018,
+        "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+        "score": 1,
+        "shared": [
+          "american"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1989,
+    "title": "Poll Tax Starts in Scotland",
+    "candidates": [
+      {
+        "name": "hillsborough-disaster",
+        "friendly_name": "Hillsborough Disaster",
+        "year": 1989,
+        "description": "A crowd crush at a football stadium killed 97 people in Sheffield, England.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "iran-iraq-war-ends",
+        "friendly_name": "Iran-Iraq War Ends",
+        "year": 1988,
+        "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+        "score": 1,
+        "shared": [
+          "year"
+        ]
+      },
+      {
+        "name": "lockerbie-bombing",
+        "friendly_name": "Lockerbie Bombing",
+        "year": 1988,
+        "description": "A terrorist bomb destroyed Pan Am Flight 103 over Scotland, killing 270.",
+        "score": 1,
+        "shared": [
+          "scotland"
+        ]
+      },
+      {
+        "name": "channel-tunnel-begins",
+        "friendly_name": "Channel Tunnel Construction Begins",
+        "year": 1988,
+        "description": "Work began on the undersea tunnel connecting England and France.",
+        "score": 1,
+        "shared": [
+          "england"
+        ]
+      },
+      {
+        "name": "japanese-asset-bubble-bursts",
+        "friendly_name": "Japan's Bubble Bursts",
+        "year": 1990,
+        "description": "Japan's inflated stock and property prices collapsed, beginning a long economic stagnation.",
+        "score": 1,
+        "shared": [
+          "property"
+        ]
+      },
+      {
+        "name": "graf-golden-slam-1988",
+        "friendly_name": "Graf's Golden Slam",
+        "year": 1988,
+        "description": "Steffi Graf won all four majors and Olympic gold in one year, the only Golden Slam in tennis history.",
+        "score": 1,
+        "shared": [
+          "year"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1994,
+    "title": "NAFTA Takes Effect",
+    "candidates": [
+      {
+        "name": "zapatista-uprising-chiapas",
+        "friendly_name": "Zapatista Uprising",
+        "year": 1994,
+        "description": "Masked Indigenous rebels seized towns in Chiapas on the day a major trade pact took effect, demanding land and rights.",
+        "score": 1,
+        "shared": [
+          "effect"
+        ]
+      },
+      {
+        "name": "clinton-first-inauguration",
+        "friendly_name": "Bill Clinton Takes Office",
+        "year": 1993,
+        "description": "A young Arkansas governor became the first baby boomer president, in a ceremony featuring a poem by Maya Angelou.",
+        "score": 1,
+        "shared": [
+          "takes"
+        ]
+      },
+      {
+        "name": "apartheid-ends",
+        "friendly_name": "Apartheid Ends in South Africa",
+        "year": 1994,
+        "description": "South Africa held its first democratic elections, ending racial segregation.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "rwandan-genocide",
+        "friendly_name": "Rwandan Genocide",
+        "year": 1994,
+        "description": "Hutu extremists killed approximately 800,000 Tutsis and moderate Hutus.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "pulp-fiction-released",
+        "friendly_name": "Pulp Fiction Released",
+        "year": 1994,
+        "description": "Tarantino's film revitalized independent cinema with its non-linear storytelling.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "amazon-founded",
+        "friendly_name": "Amazon Founded",
+        "year": 1994,
+        "description": "Jeff Bezos founded Amazon as an online bookstore that would become the world's largest retailer.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 2006,
+    "title": "China Abolishes Farm Tax",
+    "candidates": [
+      {
+        "name": "three-gorges-dam",
+        "friendly_name": "Three Gorges Dam Completed",
+        "year": 2006,
+        "description": "The world's largest hydroelectric dam was finished on China's Yangtze River.",
+        "score": 2,
+        "shared": [
+          "china",
+          "world"
+        ]
+      },
+      {
+        "name": "north-korea-nuclear-test",
+        "friendly_name": "North Korea Nuclear Test",
+        "year": 2006,
+        "description": "North Korea conducted its first underground nuclear test, becoming the eighth country to detonate a nuclear device.",
+        "score": 1,
+        "shared": [
+          "country"
+        ]
+      },
+      {
+        "name": "same-sex-marriage-canada",
+        "friendly_name": "Same-Sex Marriage in Canada",
+        "year": 2005,
+        "description": "Canada became the fourth country to legalize same-sex marriage nationwide.",
+        "score": 1,
+        "shared": [
+          "country"
+        ]
+      },
+      {
+        "name": "first-face-transplant",
+        "friendly_name": "First Face Transplant",
+        "year": 2005,
+        "description": "Surgeons in France performed the world's first partial face transplant on a disfigured patient.",
+        "score": 1,
+        "shared": [
+          "world"
+        ]
+      },
+      {
+        "name": "bhutto-assassinated",
+        "friendly_name": "Benazir Bhutto Assassinated",
+        "year": 2007,
+        "description": "The former Pakistani prime minister was killed at an election rally in Rawalpindi after returning from exile.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "kuwait-women-political-rights",
+        "friendly_name": "Kuwait Gives Women the Vote",
+        "year": 2005,
+        "description": "Kuwait's parliament passed a law granting women political rights after years of defeated proposals.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 2021,
+    "title": "Global Minimum Tax Deal Agreed",
+    "candidates": [
+      {
+        "name": "nuclear-fusion-ignition",
+        "friendly_name": "Nuclear Fusion Ignition Achieved",
+        "year": 2022,
+        "description": "Scientists achieved fusion ignition, producing more energy than was input.",
+        "score": 2,
+        "shared": [
+          "more",
+          "than"
+        ]
+      },
+      {
+        "name": "leap-second-retired",
+        "friendly_name": "Leap Second Voted Out",
+        "year": 2022,
+        "description": "The General Conference on Weights and Measures agreed to stop adding leap seconds to civil time worldwide.",
+        "score": 1,
+        "shared": [
+          "agreed"
+        ]
+      },
+      {
+        "name": "capitol-riot-2021",
+        "friendly_name": "Capitol Riot",
+        "year": 2021,
+        "description": "A mob stormed the U.S. Capitol in an attempt to overturn the presidential election results.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "myanmar-coup-2021",
+        "friendly_name": "Myanmar Military Coup",
+        "year": 2021,
+        "description": "Military removes Aung San Suu Kyi and restores military rule.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "us-withdrawal-afghanistan",
+        "friendly_name": "US Withdrawal from Afghanistan",
+        "year": 2021,
+        "description": "US completed chaotic withdrawal from Afghanistan after 20 years of war, with Taliban rapidly taking control.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "texas-winter-storm",
+        "friendly_name": "Texas Winter Storm",
+        "year": 2021,
+        "description": "A severe winter storm caused power grid failures and over 200 deaths in Texas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

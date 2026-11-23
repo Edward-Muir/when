@@ -1,0 +1,15 @@
+{
+  "slug": "vidocq-founds-surete",
+  "description": "A painting in a dark, candlelit office. A man in a dark frock coat, waistcoat and top hat leans over an open ledger on a wooden table. A ragged, shabby man in a cap cups his hand to the first man's ear as if whispering. The table holds stacks of papers, a box of index cards and a lit candle. A window with pale light is on the right, and a shadowy third figure stands at the far right edge. Small handwriting is on the papers, but it is not legible. No frame or border is visible.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

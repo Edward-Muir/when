@@ -1,0 +1,15 @@
+{
+  "slug": "dylan-freewheelin-album",
+  "description": "A snowy city side street at dusk, painted in oils. A lit storefront window on the left has the letters FOLK CITY and candles. Brick tenements with fire escapes line the right, with a VW van and 1950s-60s cars parked. A worn guitar case leans against a black lamppost in the foreground, with footprints in the snow. No people, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The coffeehouse window has the words FOLK CITY painted on it. Repaint the window with no lettering."
+}

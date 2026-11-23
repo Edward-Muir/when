@@ -108,3 +108,12 @@ The fact checker returned 13 ok, 0 fix, 0 unsupported. Softer points worth knowi
 - `viscose-rayon-patented`: some pages say 1894; the Cross, Bevan and Beadle patent is 1892.
 - `jlo-green-versace-dress`: the "inspired image search" claim is Eric Schmidt's own account,
   widely repeated but not independently documented.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Garments, the cloth they are cut from, the looms and dyes behind it, and the fashion houses that dressed the world.
+- **Fact:** Twelve thousand murex sea snails yielded no more than about 1.4 grams of pure purple dye.
+
+Sources: [en.wikipedia.org](https://en.wikipedia.org/wiki/Tyrian_purple) (twelve thousand snails of Murex brandaris yield no more than 1.4 grams (22 grains) of pure dye (Jacoby, citing Friedländer)).

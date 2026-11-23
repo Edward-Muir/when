@@ -1,0 +1,15 @@
+{
+  "slug": "poland-martial-law-declared",
+  "description": "A dim snowy city street at night. Soldiers in greatcoats and helmets warm their hands at a burning barrel beside an armoured personnel carrier, with civilians watching from a doorway. Trolley wires hang overhead and the buildings are old and grimy. Two shop signs above the shutters carry painted letter shapes, such as a PU... group on the upper sign and an M on the lower.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "Two shop signs above the shuttered storefront have painted letters (upper sign reads roughly 'PU RO...', lower sign an 'M'). Repaint the signs blank, or leave them out of the scene, so no lettering shows."
+}

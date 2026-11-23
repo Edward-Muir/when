@@ -1,0 +1,15 @@
+{
+  "slug": "live-8-concerts",
+  "description": "An oil painting of an outdoor concert seen from behind a dense crowd with raised hands and white wristbands. A large lit stage with truss, lights, speaker stacks and glowing video-style panels (one with a guitar) sits under heavy grey clouds. Trees and distant Gothic spires in the background, a few flags in the crowd. No text, no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

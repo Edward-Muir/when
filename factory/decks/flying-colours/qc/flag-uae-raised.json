@@ -1,0 +1,15 @@
+{
+  "slug": "flag-uae-raised",
+  "description": "An oil-style painting at dusk. A flag with a red hoist block and green, white and black horizontal bands flies from a tall white pole on the right, against an orange and dark blue sky. On the left stand a low white modern villa with columns and palm trees, and beyond it a calm sea with a sunset glow.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

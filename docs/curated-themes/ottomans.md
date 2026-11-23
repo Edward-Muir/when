@@ -109,3 +109,12 @@ Nine pairs sit inside theme-gap's 8-year advisory window. Two clusters are delib
 - **1908 / 1914 / 1918 / 1922 / 1924**: the end of the empire happened this fast. Three of the
   five are footholds, and the sultanate (1922) and the caliphate (1924) are two separate
   abolitions that players tend to confuse.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty defining moments of the Ottoman Empire: its battles, sultans, buildings, treaties and reforms.
+- **Fact:** The Sublime Porte was the name of the High Gate to the grand vizier's offices, and it came to mean the whole Ottoman government.
+
+Sources: [encyclopedia.com](https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/sublime-porte) (This term is a French translation of al-Bab al-Ali, which means literally "the High Door." ... the grand vizier of the Ottoman Empire lived and worked in the...).

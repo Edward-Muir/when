@@ -1,0 +1,44 @@
+{
+  "kitchen-debate-nixon-khrushchev": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["Soviet premier", "US vice president", "Moscow trade fair"],
+    "why": "Soviet premier versus US vice president places it in the Cold War"
+  },
+  "kennedy-ich-bin-ein-berliner": {
+    "recognition": "high",
+    "inferability": "high",
+    "anchors": ["Cold War", "divided city", "US president"],
+    "why": "A famous speech, and a divided Berlin with Cold War solidarity points to 1960s"
+  },
+  "us-cambodia-incursion": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["South Vietnamese troops", "protests back home"],
+    "why": "US and South Vietnamese troops mean the Vietnam War era"
+  },
+  "ogaden-war-somalia-ethiopia": {
+    "recognition": "low",
+    "inferability": "high",
+    "anchors": ["Soviet Union", "Cuban troops", "arms"],
+    "why": "Soviet and Cuban involvement in Africa signals the Cold War, though the decade is unclear"
+  },
+  "poland-martial-law-declared": {
+    "recognition": "medium",
+    "inferability": "high",
+    "anchors": ["independent union", "Poland", "tanks"],
+    "why": "An independent union banned in Poland suggests Solidarity and the Communist era"
+  },
+  "iran-contra-affair-breaks": {
+    "recognition": "medium",
+    "inferability": "medium",
+    "anchors": ["Iran arms sales", "leftist government in Central America"],
+    "why": "Cold War Central America clues point to the 1980s, but they are less explicit"
+  },
+  "reagan-tear-down-this-wall": {
+    "recognition": "high",
+    "inferability": "high",
+    "anchors": ["Soviet leader", "divided city", "US president", "wall"],
+    "why": "Famous quote with a Soviet leader and a divided city's wall places it in the late Cold War"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "anpo-protests-japan",
+  "description": "A dense crowd of young men in white shirts and dark trousers links arms and surges down a wet, reflective street toward a large stone neoclassical government building with a stepped central tower. Many hand-held flags and banners rise above them, including white banners with dark brush-like marks and a few placards. Umbrellas and a few men in hats are visible at the edges, and the mood is grey and stormy, painted in a loose oil style. The painting runs edge to edge with no frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "unsure",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The banners and placards carry dark brush-like marks that could be Japanese characters. They are too blurred to read either way, so an artist should confirm they are not legible text. The subject, era and framing otherwise fit the card: a 1960 Tokyo crowd outside a parliament-style building."
+}

@@ -1,0 +1,3077 @@
+[
+  {
+    "beat": 0,
+    "year": -525,
+    "title": "Persia Conquers Egypt",
+    "candidates": [
+      {
+        "name": "cambyses-conquers-egypt",
+        "friendly_name": "Cambyses Conquers Egypt",
+        "year": -525,
+        "description": "Persian king Cambyses II defeated the Egyptian pharaoh at Pelusium, ending native rule and folding Egypt into his empire.",
+        "score": 7,
+        "shared": [
+          "conquers",
+          "egypt",
+          "persian",
+          "native",
+          "pharaoh",
+          "pelusium",
+          "empire"
+        ]
+      },
+      {
+        "name": "kingdom-kush-flourishes",
+        "friendly_name": "Kingdom of Kush Flourishes",
+        "year": -1070,
+        "year_end": 350,
+        "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
+        "score": 3,
+        "shared": [
+          "egypt",
+          "nile",
+          "kingdom"
+        ]
+      },
+      {
+        "name": "phoenician-trade-network",
+        "friendly_name": "Phoenician Trade Network",
+        "year": -1200,
+        "year_end": -332,
+        "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "birth-aeschylus",
+        "friendly_name": "Birth of Aeschylus",
+        "year": -525,
+        "description": "The Greek playwright known as the father of tragedy and author of the Oresteia trilogy.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "greek-trireme",
+        "friendly_name": "The Greek Trireme",
+        "year": -525,
+        "description": "Greek and Phoenician navies built the trireme, a fast three tiered oared warship whose bronze ram dominated Mediterranean sea power for centuries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "milo-croton-wrestling-reign-532-bce",
+        "friendly_name": "Milo of Croton's Wrestling Reign",
+        "year": -532,
+        "year_end": -516,
+        "description": "Milo of Croton won the first of five straight Olympic men's wrestling crowns, becoming antiquity's most famous athlete.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 1,
+    "year": -332,
+    "title": "Alexander Enters Egypt",
+    "candidates": [
+      {
+        "name": "alexander-crowned-pharaoh",
+        "friendly_name": "Alexander Crowned Pharaoh",
+        "year": -332,
+        "description": "Alexander the Great entered Egypt without resistance and was crowned pharaoh at Memphis by the local priesthood.",
+        "score": 3,
+        "shared": [
+          "alexander",
+          "egypt",
+          "without"
+        ]
+      },
+      {
+        "name": "kingdom-kush-flourishes",
+        "friendly_name": "Kingdom of Kush Flourishes",
+        "year": -1070,
+        "year_end": 350,
+        "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
+        "score": 2,
+        "shared": [
+          "egypt",
+          "nile"
+        ]
+      },
+      {
+        "name": "alexander-diving-bell",
+        "friendly_name": "Alexander's Descent in a Bell",
+        "year": -332,
+        "description": "Legend held that Alexander the Great was lowered beneath the sea at Tyre in a glass barrel to watch the fish.",
+        "score": 1,
+        "shared": [
+          "alexander"
+        ]
+      },
+      {
+        "name": "alexanders-siege-tyre",
+        "friendly_name": "Alexander's Siege of Tyre",
+        "year": -332,
+        "description": "Alexander the Great besieged the island stronghold for seven months, building a stone causeway to bring his army to its walls.",
+        "score": 1,
+        "shared": [
+          "alexander"
+        ]
+      },
+      {
+        "name": "alexander-empire",
+        "friendly_name": "Alexander Conquers Persia",
+        "year": -331,
+        "description": "Alexander the Great defeated the Persian Empire at Gaugamela.",
+        "score": 1,
+        "shared": [
+          "alexander"
+        ]
+      },
+      {
+        "name": "alexander-spreading-hellenism",
+        "friendly_name": "Alexander Spreads Hellenism",
+        "year": -336,
+        "year_end": -323,
+        "description": "Alexander's conquests spread Greek language, culture, and philosophy across the Near East and Central Asia.",
+        "score": 1,
+        "shared": [
+          "alexander"
+        ]
+      },
+      {
+        "name": "adena-culture",
+        "friendly_name": "Adena Culture Eastern North America",
+        "year": -500,
+        "year_end": 100,
+        "description": "The Adena culture emerged in the Ohio Valley, building earthen mounds and cultivating early crops.",
+        "score": 1,
+        "shared": [
+          "valley"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 2,
+    "year": -48,
+    "title": "Caesar Arrives in Alexandria",
+    "candidates": [
+      {
+        "name": "cleopatra-caesar-alliance",
+        "friendly_name": "Cleopatra Allies with Julius Caesar",
+        "year": -48,
+        "description": "Cleopatra VII allied with Julius Caesar during Egypt's civil war, securing her throne with Roman support.",
+        "score": 3,
+        "shared": [
+          "caesar",
+          "roman",
+          "egypt"
+        ]
+      },
+      {
+        "name": "battle-pharsalus",
+        "friendly_name": "Battle of Pharsalus",
+        "year": -48,
+        "description": "Caesar decisively defeated Pompey's larger army, winning the Roman civil war.",
+        "score": 2,
+        "shared": [
+          "caesar",
+          "roman"
+        ]
+      },
+      {
+        "name": "alexandria-library-caesar-fire",
+        "friendly_name": "Alexandria's Library Burns",
+        "year": -48,
+        "description": "Fires set during Julius Caesar's siege of Alexandria spread into the harbor district and damaged the great library's collection of scrolls.",
+        "score": 2,
+        "shared": [
+          "caesar",
+          "alexandria"
+        ]
+      },
+      {
+        "name": "crossing-rubicon",
+        "friendly_name": "Caesar Crosses the Rubicon",
+        "year": -49,
+        "description": "Caesar's crossing sparked civil war and the end of the Roman Republic.",
+        "score": 2,
+        "shared": [
+          "caesar",
+          "roman"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 2,
+        "shared": [
+          "roman",
+          "took"
+        ]
+      },
+      {
+        "name": "kingdom-kush-flourishes",
+        "friendly_name": "Kingdom of Kush Flourishes",
+        "year": -1070,
+        "year_end": 350,
+        "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
+        "score": 1,
+        "shared": [
+          "egypt"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 3,
+    "year": -30,
+    "title": "Rome Annexes Egypt",
+    "candidates": [
+      {
+        "name": "battle-actium",
+        "friendly_name": "Battle of Actium",
+        "year": -31,
+        "description": "Octavian defeated Antony and Cleopatra, becoming sole ruler of Rome.",
+        "score": 4,
+        "shared": [
+          "rome",
+          "antony",
+          "cleopatra",
+          "octavian"
+        ]
+      },
+      {
+        "name": "death-cleopatra",
+        "friendly_name": "Death of Cleopatra",
+        "year": -30,
+        "description": "The last pharaoh of Ptolemaic Egypt died, traditionally by asp bite, ending three millennia of pharaonic rule.",
+        "score": 2,
+        "shared": [
+          "egypt",
+          "cleopatra"
+        ]
+      },
+      {
+        "name": "second-triumvirate",
+        "friendly_name": "Second Triumvirate",
+        "year": -43,
+        "year_end": -30,
+        "description": "Octavian, Antony, and Lepidus formed a legal dictatorship to avenge Caesar's death.",
+        "score": 2,
+        "shared": [
+          "antony",
+          "octavian"
+        ]
+      },
+      {
+        "name": "kingdom-kush-flourishes",
+        "friendly_name": "Kingdom of Kush Flourishes",
+        "year": -1070,
+        "year_end": 350,
+        "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
+        "score": 2,
+        "shared": [
+          "egypt",
+          "kingdom"
+        ]
+      },
+      {
+        "name": "virgil-aeneid-composition",
+        "friendly_name": "Virgil Composes the Aeneid",
+        "year": -29,
+        "description": "Virgil composed Rome's national epic linking Roman origins to the Trojan hero Aeneas.",
+        "score": 1,
+        "shared": [
+          "rome"
+        ]
+      },
+      {
+        "name": "meroitic-kingdom-nubia",
+        "friendly_name": "Meroitic Kingdom Rules Nubia",
+        "year": -270,
+        "year_end": 350,
+        "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "roman-argentarii-banking",
+        "friendly_name": "Roman Argentarii Bankers",
+        "year": -400,
+        "year_end": 350,
+        "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
+        "score": 1,
+        "shared": [
+          "took"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 4,
+    "year": 439,
+    "title": "Vandals Seize Carthage",
+    "candidates": [
+      {
+        "name": "vandals-conquer-north-africa",
+        "friendly_name": "Vandals Conquer North Africa",
+        "year": 429,
+        "year_end": 439,
+        "description": "The Vandals crossed into Africa, eventually establishing a kingdom that threatened Rome's grain supply.",
+        "score": 4,
+        "shared": [
+          "vandals",
+          "crossed",
+          "north",
+          "kingdom"
+        ]
+      },
+      {
+        "name": "vandals-take-carthage",
+        "friendly_name": "Vandals Take Carthage",
+        "year": 439,
+        "description": "The Vandals captured Carthage, creating a naval power that would sack Rome in 455.",
+        "score": 3,
+        "shared": [
+          "vandals",
+          "carthage",
+          "captured"
+        ]
+      },
+      {
+        "name": "fremont-culture",
+        "friendly_name": "Fremont Culture of Great Basin",
+        "year": 1,
+        "year_end": 1301,
+        "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+        "score": 2,
+        "shared": [
+          "people",
+          "great"
+        ]
+      },
+      {
+        "name": "germanic-migration-period",
+        "friendly_name": "Germanic Migration Period",
+        "year": 375,
+        "year_end": 568,
+        "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
+        "score": 1,
+        "shared": [
+          "germanic"
+        ]
+      },
+      {
+        "name": "goguryeo-murals-tombs",
+        "friendly_name": "Goguryeo Tomb Murals",
+        "year": 357,
+        "year_end": 668,
+        "description": "The Korean Goguryeo kingdom produced elaborate painted tomb murals depicting daily life and mythology.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "lakhmid-kingdom",
+        "friendly_name": "Lakhmid Kingdom",
+        "year": 293,
+        "year_end": 602,
+        "description": "The Lakhmid Kingdom served as a Sassanid client state in southern Iraq, buffering Persia from Arabian tribes.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "hopewell-culture",
+        "friendly_name": "Hopewell Culture Trade Networks",
+        "year": -200,
+        "year_end": 500,
+        "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+        "score": 1,
+        "shared": [
+          "north"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 5,
+    "year": 533,
+    "title": "Belisarius Invades Vandal Africa",
+    "candidates": [
+      {
+        "name": "digest-of-justinian",
+        "friendly_name": "Digest of Justinian",
+        "year": 533,
+        "description": "Justinian's jurists distilled centuries of Roman legal writing into an authoritative reference work.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "basilica-cistern-built",
+        "friendly_name": "Basilica Cistern Built",
+        "year": 532,
+        "description": "Byzantine builders raised a vast underground cistern in Constantinople to store aqueduct water for the imperial capital.",
+        "score": 1,
+        "shared": [
+          "imperial"
+        ]
+      },
+      {
+        "name": "turfan-oasis-city",
+        "friendly_name": "Gaochang Kingdom at Turfan",
+        "year": 460,
+        "year_end": 640,
+        "description": "The Gaochang kingdom ruled the Turfan oasis, growing rich taxing Silk Road caravans between China and Sogdiana.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "anglo-saxon-migration",
+        "friendly_name": "Anglo-Saxon Migration to Britain",
+        "year": 449,
+        "year_end": 600,
+        "description": "Germanic Angles, Saxons, and Jutes migrated to post-Roman Britain, gradually displacing the native Britons.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "tiwanaku-city",
+        "friendly_name": "Tiwanaku City Flourishes",
+        "year": 375,
+        "year_end": 1000,
+        "description": "The city of Tiwanaku near Lake Titicaca reached its peak with monumental stone architecture and wide trade networks.",
+        "score": 1,
+        "shared": [
+          "near"
+        ]
+      },
+      {
+        "name": "germanic-migration-period",
+        "friendly_name": "Germanic Migration Period",
+        "year": 375,
+        "year_end": 568,
+        "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
+        "score": 1,
+        "shared": [
+          "roman"
+        ]
+      },
+      {
+        "name": "goguryeo-murals-tombs",
+        "friendly_name": "Goguryeo Tomb Murals",
+        "year": 357,
+        "year_end": 668,
+        "description": "The Korean Goguryeo kingdom produced elaborate painted tomb murals depicting daily life and mythology.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "lakhmid-kingdom",
+        "friendly_name": "Lakhmid Kingdom",
+        "year": 293,
+        "year_end": 602,
+        "description": "The Lakhmid Kingdom served as a Sassanid client state in southern Iraq, buffering Persia from Arabian tribes.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      },
+      {
+        "name": "funan-kingdom",
+        "friendly_name": "Funan Kingdom Flourishes",
+        "year": 50,
+        "year_end": 627,
+        "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 6,
+    "year": 639,
+    "title": "Arab Armies Invade Egypt",
+    "candidates": [
+      {
+        "name": "arab-conquest-of-egypt",
+        "friendly_name": "Arab Conquest of Egypt",
+        "year": 639,
+        "year_end": 642,
+        "description": "Amr ibn al-As led Arab forces to conquer Byzantine Egypt, ending over 900 years of Greco-Roman rule and beginning the Islamization of the region.",
+        "score": 4,
+        "shared": [
+          "arab",
+          "egypt",
+          "beginning",
+          "rule"
+        ]
+      },
+      {
+        "name": "arab-conquest-persia",
+        "friendly_name": "Arab Conquest of Persia",
+        "year": 633,
+        "year_end": 651,
+        "description": "Muslim forces conquered the Sasanian Empire, ending 400 years of Persian rule.",
+        "score": 2,
+        "shared": [
+          "arab",
+          "rule"
+        ]
+      },
+      {
+        "name": "siege-of-jerusalem-638",
+        "friendly_name": "Siege of Jerusalem by Arab Forces",
+        "year": 638,
+        "description": "Caliph Umar accepted Jerusalem's surrender, bringing the holy city under Muslim control for the first time.",
+        "score": 1,
+        "shared": [
+          "arab"
+        ]
+      },
+      {
+        "name": "arabic-numerals-india",
+        "friendly_name": "Decimal Numerals Spread",
+        "year": 100,
+        "year_end": 900,
+        "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+        "score": 1,
+        "shared": [
+          "arab"
+        ]
+      },
+      {
+        "name": "hijri-calendar-adopted",
+        "friendly_name": "Hijri Calendar Established",
+        "year": 638,
+        "description": "Caliph Umar fixed the Muslim lunar calendar to count from Muhammad's migration from Mecca to Medina.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "xuanzang-silk-road",
+        "friendly_name": "Xuanzang Travels Silk Road to India",
+        "year": 629,
+        "year_end": 645,
+        "description": "Chinese Buddhist monk Xuanzang traveled overland to India, returning with hundreds of sacred texts after 17 years.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 7,
+    "year": 1270,
+    "title": "A French King Dies at Tunis",
+    "candidates": [
+      {
+        "name": "ethiopian-solomonic-dynasty",
+        "friendly_name": "Solomonic Dynasty Restored",
+        "year": 1270,
+        "description": "Yekuno Amlak overthrew the Zagwe dynasty and restored the Solomonic line claiming descent from King Solomon.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "mississippian-cahokia-settlement",
+        "friendly_name": "Mississippian Settlement at Cahokia",
+        "year": 1050,
+        "year_end": 1350,
+        "description": "Cahokia near modern St. Louis became the largest pre-Columbian settlement north of Mexico.",
+        "score": 1,
+        "shared": [
+          "near"
+        ]
+      },
+      {
+        "name": "hohokam-canal-network",
+        "friendly_name": "Hohokam Canals Spread",
+        "year": 700,
+        "year_end": 1450,
+        "description": "The Hohokam people expanded a major canal network off a desert river, irrigating land in the Sonoran Desert near modern Phoenix.",
+        "score": 1,
+        "shared": [
+          "near"
+        ]
+      },
+      {
+        "name": "pax-mongolica-trade",
+        "friendly_name": "Pax Mongolica Trade Expansion",
+        "year": 1270,
+        "description": "The Pax Mongolica enabled unprecedented Eurasian trade, allowing merchants like Marco Polo to travel safely across Asia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "mongol-administrative-reforms",
+        "friendly_name": "Yuan Administrative Reforms",
+        "year": 1271,
+        "description": "Kublai Khan reorganized China's governance under the Yuan dynasty, blending Mongol and Chinese administrative systems.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "yuan-khanate-founded",
+        "friendly_name": "Yuan Dynasty Founded",
+        "year": 1271,
+        "description": "Kublai Khan proclaimed the Yuan dynasty, making the Mongols rulers of all China for the first time.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 8,
+    "year": 1415,
+    "title": "Portugal Captures Ceuta",
+    "candidates": [
+      {
+        "name": "swahili-kilwa-sultanate",
+        "friendly_name": "Kilwa Sultanate Swahili Peak",
+        "year": 1300,
+        "year_end": 1450,
+        "description": "The Kilwa Sultanate reached its apex as a Swahili trading power on the East African coast.",
+        "score": 3,
+        "shared": [
+          "trading",
+          "african",
+          "coast"
+        ]
+      },
+      {
+        "name": "zimbabwe-trading-network",
+        "friendly_name": "Great Zimbabwe Trade",
+        "year": 1220,
+        "year_end": 1450,
+        "description": "Great Zimbabwe became a major trading center connecting interior African gold and ivory to Swahili coastal ports.",
+        "score": 2,
+        "shared": [
+          "trading",
+          "african"
+        ]
+      },
+      {
+        "name": "painting-canvas",
+        "friendly_name": "Painting Canvas",
+        "year": 1410,
+        "year_end": 1600,
+        "description": "Stretched fabric replacing wood panels as a portable, lightweight surface for painting in medieval Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "gunpowder-europe",
+        "friendly_name": "Gunpowder Warfare in Europe",
+        "year": 1350,
+        "year_end": 1450,
+        "description": "The introduction of gunpowder weapons revolutionized European warfare.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "somali-adal-sultanate",
+        "friendly_name": "Adal Sultanate Emerges in Somalia",
+        "year": 1300,
+        "year_end": 1415,
+        "description": "The Adal Sultanate emerged in the Horn of Africa as an Islamic trading state rivaling Christian Ethiopia.",
+        "score": 1,
+        "shared": [
+          "trading"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "tonga-empire",
+        "friendly_name": "Tongan Empire Peak",
+        "year": 1200,
+        "year_end": 1500,
+        "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "andean-llama-domestication",
+        "friendly_name": "Andean Llama Herding System Peak",
+        "year": 1200,
+        "year_end": 1532,
+        "description": "Andean civilizations perfected llama herding systems for transport, wool, and meat across highland trade networks.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "great-zimbabwe-stone-construction",
+        "friendly_name": "Great Zimbabwe Stone Architecture",
+        "year": 1200,
+        "year_end": 1450,
+        "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+        "score": 1,
+        "shared": [
+          "trading"
+        ]
+      },
+      {
+        "name": "novgorod-republic",
+        "friendly_name": "Novgorod Republic Golden Age",
+        "year": 1136,
+        "year_end": 1478,
+        "description": "The Novgorod Republic flourished as a major Hanseatic trading partner with a unique democratic veche assembly system.",
+        "score": 1,
+        "shared": [
+          "trading"
+        ]
+      },
+      {
+        "name": "great-zimbabwe",
+        "friendly_name": "Great Zimbabwe Built",
+        "year": 1100,
+        "year_end": 1450,
+        "description": "The medieval African city's massive stone structures were constructed.",
+        "score": 1,
+        "shared": [
+          "african"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 9,
+    "year": 1434,
+    "title": "Sailors Pass Cape Bojador",
+    "candidates": [
+      {
+        "name": "joseon-sejong-water-clock",
+        "friendly_name": "Water Clock Jagyeongnu Constructed",
+        "year": 1434,
+        "description": "Korean inventor Jang Yeong-sil built the Jagyeongnu, a self-striking water clock, for King Sejong the Great.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "medici-florentine-bank",
+        "friendly_name": "Medici Bank Leads Europe",
+        "year": 1434,
+        "description": "Under Cosimo de' Medici, the Medici Bank became Europe's largest financial institution with branches across major cities.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "zheng-he-treasure-voyages-end",
+        "friendly_name": "Zheng He Treasure Voyages End",
+        "year": 1433,
+        "description": "Zheng He's seventh and final voyage concluded, after which China withdrew from large-scale maritime exploration.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "joseon-scientific-innovation",
+        "friendly_name": "Joseon Scientific Advances",
+        "year": 1433,
+        "year_end": 1442,
+        "description": "The Joseon Dynasty under King Sejong produced rain gauges, sundials, and celestial globes advancing Korean science.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "armillary-sphere-korean",
+        "friendly_name": "Korean Armillary Sphere Developed",
+        "year": 1433,
+        "description": "Korean astronomers built refined armillary spheres to model celestial movements during King Sejong's reign.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "hussite-wars",
+        "friendly_name": "Hussite Wars",
+        "year": 1419,
+        "year_end": 1434,
+        "description": "Czech followers of Jan Hus fought Catholic crusaders using innovative wagon-fort tactics.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 10,
+    "year": 1488,
+    "title": "Dias Rounds the Cape",
+    "candidates": [
+      {
+        "name": "dias-cape-good-hope",
+        "friendly_name": "Dias Rounds Cape of Good Hope",
+        "year": 1488,
+        "description": "Bartolomeu Dias became the first European to sail around Africa's southern tip.",
+        "score": 6,
+        "shared": [
+          "dias",
+          "rounds",
+          "cape",
+          "around",
+          "southern",
+          "tip"
+        ]
+      },
+      {
+        "name": "birth-titian",
+        "friendly_name": "Birth of Titian",
+        "year": 1488,
+        "description": "The Venetian master painter whose rich color and technique made him the dominant artist of his age.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "court-ballet-origins",
+        "friendly_name": "Court Ballet Origins",
+        "year": 1489,
+        "description": "Elaborate court spectacles in Italian Renaissance courts laid the foundations for ballet as a performing art.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "barid-shahi-dynasty",
+        "friendly_name": "Barid Shahi Dynasty of Bidar",
+        "year": 1487,
+        "year_end": 1542,
+        "description": "The Barid Shahi dynasty established the Bidar Sultanate as one of the five Deccan successor states.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anatomical-drawing",
+        "friendly_name": "Leonardo Anatomical Studies",
+        "year": 1489,
+        "description": "Leonardo da Vinci began detailed anatomical drawings from human dissections, advancing understanding of the body.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "enclosure-movement-begins",
+        "friendly_name": "English Enclosure Movement Begins",
+        "year": 1489,
+        "description": "English landowners began enclosing common fields for sheep grazing, displacing peasant farmers from the land.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 11,
+    "year": 1497,
+    "title": "Da Gama Sails Round Africa",
+    "candidates": [
+      {
+        "name": "vasco-da-gama-india",
+        "friendly_name": "Vasco da Gama Reaches India",
+        "year": 1498,
+        "description": "The Portuguese explorer found a sea route from Europe to India.",
+        "score": 3,
+        "shared": [
+          "gama",
+          "portuguese",
+          "india"
+        ]
+      },
+      {
+        "name": "cabot-north-america",
+        "friendly_name": "Cabot Reaches North America",
+        "year": 1497,
+        "description": "John Cabot explored the coast of North America for England.",
+        "score": 1,
+        "shared": [
+          "coast"
+        ]
+      },
+      {
+        "name": "nautical-table-creation",
+        "friendly_name": "Nautical Tables and Ephemerides",
+        "year": 1496,
+        "description": "Portuguese navigators compiled nautical tables and ephemerides for calculating latitude at sea using celestial observations.",
+        "score": 1,
+        "shared": [
+          "portuguese"
+        ]
+      },
+      {
+        "name": "songhai-expansion",
+        "friendly_name": "Songhai Expands Under Askia",
+        "year": 1493,
+        "year_end": 1528,
+        "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+        "score": 1,
+        "shared": [
+          "africa"
+        ]
+      },
+      {
+        "name": "adil-shahi-dynasty",
+        "friendly_name": "Adil Shahi Dynasty Rules Bijapur",
+        "year": 1490,
+        "year_end": 1686,
+        "description": "Yusuf Adil Shah founded the Adil Shahi dynasty, ruling the Bijapur Sultanate in the Deccan region of India.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "chatham-islands-settlement",
+        "friendly_name": "Chatham Islands Settled",
+        "year": 1400,
+        "year_end": 1500,
+        "description": "Polynesian voyagers settled the remote Chatham Islands east of New Zealand, becoming the Moriori people.",
+        "score": 1,
+        "shared": [
+          "east"
+        ]
+      },
+      {
+        "name": "kerala-school-mathematics",
+        "friendly_name": "Kerala School Calculus",
+        "year": 1400,
+        "year_end": 1600,
+        "description": "The Kerala school of mathematics in India developed infinite series expansions, anticipating European calculus by centuries.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      },
+      {
+        "name": "high-carbon-steel-wootz",
+        "friendly_name": "High Carbon Steel (Wootz)",
+        "year": -600,
+        "year_end": 1700,
+        "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
+        "score": 1,
+        "shared": [
+          "india"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 12,
+    "year": 1517,
+    "title": "Ottomans Conquer Egypt",
+    "candidates": [
+      {
+        "name": "selim-i-conquers-egypt-mamluks",
+        "friendly_name": "Selim I Conquers Mamluk Egypt",
+        "year": 1517,
+        "description": "Sultan Selim defeated the Mamluks and took Cairo, bringing the Arab heartlands and the holy cities under Ottoman rule.",
+        "score": 5,
+        "shared": [
+          "egypt",
+          "sultan",
+          "defeated",
+          "mamluk",
+          "cairo"
+        ]
+      },
+      {
+        "name": "mamluk-sultanate-splendor",
+        "friendly_name": "Mamluk Cairo Architecture",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+        "score": 3,
+        "shared": [
+          "sultan",
+          "mamluk",
+          "cairo"
+        ]
+      },
+      {
+        "name": "mamluk-mosque-lamps",
+        "friendly_name": "Enamelled Mosque Lamps",
+        "year": 1250,
+        "year_end": 1517,
+        "description": "Cairo glassmakers gilded and enamelled oil lamps that hung by the dozen in Mamluk mosques, prized far beyond Egypt.",
+        "score": 3,
+        "shared": [
+          "egypt",
+          "mamluk",
+          "cairo"
+        ]
+      },
+      {
+        "name": "charles-v-king-spain",
+        "friendly_name": "Charles V Becomes King of Spain",
+        "year": 1516,
+        "description": "The Habsburg prince inherited Spain, beginning an empire on which the sun never set.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "qutb-shahi-dynasty",
+        "friendly_name": "Qutb Shahi Dynasty Golconda",
+        "year": 1518,
+        "description": "Sultan Quli founded the Qutb Shahi dynasty at Golconda, which became famous for its diamond trade.",
+        "score": 1,
+        "shared": [
+          "sultan"
+        ]
+      },
+      {
+        "name": "vijayanagara-flowering",
+        "friendly_name": "Vijayanagara Cultural Zenith",
+        "year": 1509,
+        "year_end": 1529,
+        "description": "Under Krishna Deva Raya, the Vijayanagara Empire reached its cultural zenith in art, architecture, and literature.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "vijayanagara-architecture",
+        "friendly_name": "Vijayanagara Temples Peak",
+        "year": 1509,
+        "year_end": 1529,
+        "description": "The Vijayanagara Empire produced monumental Dravidian temple complexes at Hampi under Krishna Deva Raya.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "aztec-peak",
+        "friendly_name": "Aztec Empire Peak",
+        "year": 1502,
+        "year_end": 1520,
+        "description": "The Aztec Empire reached peak power under Moctezuma II, ruling over 5 million people from Tenochtitlan.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "luba-empire",
+        "friendly_name": "Luba Empire Expands",
+        "year": 1500,
+        "year_end": 1750,
+        "description": "The Luba Empire expanded in the Congo basin, establishing a sophisticated system of divine kingship.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "songhai-expansion",
+        "friendly_name": "Songhai Expands Under Askia",
+        "year": 1493,
+        "year_end": 1528,
+        "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "songhai-scholars",
+        "friendly_name": "Songhai Islamic Scholars",
+        "year": 1493,
+        "year_end": 1591,
+        "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "empire"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 13,
+    "year": 1535,
+    "title": "Charles V Takes Tunis",
+    "candidates": [
+      {
+        "name": "timbuktu-learning-center",
+        "friendly_name": "Timbuktu Center of Learning",
+        "year": 1325,
+        "year_end": 1591,
+        "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
+        "score": 2,
+        "shared": [
+          "great",
+          "city"
+        ]
+      },
+      {
+        "name": "pizarro-founds-lima",
+        "friendly_name": "Pizarro Founds Lima",
+        "year": 1535,
+        "description": "Francisco Pizarro founded a colonial capital he called the City of Kings on the Rimac river, later named Lima.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      },
+      {
+        "name": "chili-peppers-spread",
+        "friendly_name": "Chili Peppers Spread Worldwide",
+        "year": 1500,
+        "year_end": 1614,
+        "description": "Traders carried American chili peppers across Asia and Africa, transforming cuisines from India to Korea.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "hawaiian-kingdoms",
+        "friendly_name": "Hawaiian Kingdoms Emerge",
+        "year": 1200,
+        "year_end": 1795,
+        "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "nan-madol-city-construction",
+        "friendly_name": "Nan Madol City Built in Micronesia",
+        "year": 1180,
+        "year_end": 1628,
+        "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+        "score": 1,
+        "shared": [
+          "city"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 14,
+    "year": 1541,
+    "title": "Portuguese Soldiers Reach Ethiopia",
+    "candidates": [
+      {
+        "name": "adil-shahi-dynasty",
+        "friendly_name": "Adil Shahi Dynasty Rules Bijapur",
+        "year": 1490,
+        "year_end": 1686,
+        "description": "Yusuf Adil Shah founded the Adil Shahi dynasty, ruling the Bijapur Sultanate in the Deccan region of India.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      },
+      {
+        "name": "barid-shahi-dynasty",
+        "friendly_name": "Barid Shahi Dynasty of Bidar",
+        "year": 1487,
+        "year_end": 1542,
+        "description": "The Barid Shahi dynasty established the Bidar Sultanate as one of the five Deccan successor states.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      },
+      {
+        "name": "brunei-sultanate-expansion",
+        "friendly_name": "Brunei Sultanate Expansion",
+        "year": 1485,
+        "year_end": 1578,
+        "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
+        "score": 1,
+        "shared": [
+          "sultanate"
+        ]
+      },
+      {
+        "name": "coffee-cultivation-expansion",
+        "friendly_name": "Ottoman Coffee Cultivation",
+        "year": 1454,
+        "year_end": 1554,
+        "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+        "score": 1,
+        "shared": [
+          "ethiopia"
+        ]
+      },
+      {
+        "name": "de-soto-mississippi",
+        "friendly_name": "De Soto Reaches Mississippi",
+        "year": 1541,
+        "description": "Hernando de Soto became the first European to cross the Mississippi River.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "valdivia-founds-santiago",
+        "friendly_name": "Valdivia Founds Santiago",
+        "year": 1541,
+        "description": "Conquistador Pedro de Valdivia founded Santiago at the foot of a hill called Huelen, sheltered by a river bend.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 15,
+    "year": 1578,
+    "title": "Portugal's King Dies in Morocco",
+    "candidates": [
+      {
+        "name": "el-greco-arrives-spain",
+        "friendly_name": "El Greco Arrives in Spain",
+        "year": 1577,
+        "description": "The Greek painter settled in Toledo, where he developed his distinctive elongated, mystical style.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "birth-rubens",
+        "friendly_name": "Birth of Peter Paul Rubens",
+        "year": 1577,
+        "description": "The Flemish master of the Baroque, celebrated for his dynamic, sensuous paintings and altarpieces.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "wars-of-religion-france",
+        "friendly_name": "Wars of Religion in France",
+        "year": 1562,
+        "year_end": 1598,
+        "description": "Decades of civil war between French Catholics and Huguenots devastated France and killed millions.",
+        "score": 1,
+        "shared": [
+          "killed"
+        ]
+      },
+      {
+        "name": "oyo-confederacy-structure",
+        "friendly_name": "Oyo Confederacy Formalized",
+        "year": 1535,
+        "year_end": 1650,
+        "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
+        "score": 1,
+        "shared": [
+          "king"
+        ]
+      },
+      {
+        "name": "adil-shahi-dynasty",
+        "friendly_name": "Adil Shahi Dynasty Rules Bijapur",
+        "year": 1490,
+        "year_end": 1686,
+        "description": "Yusuf Adil Shah founded the Adil Shahi dynasty, ruling the Bijapur Sultanate in the Deccan region of India.",
+        "score": 1,
+        "shared": [
+          "dynasty"
+        ]
+      },
+      {
+        "name": "roman-catacombs-rediscovered",
+        "friendly_name": "Roman Catacombs Rediscovered",
+        "year": 1578,
+        "description": "A collapse on the Via Salaria opened miles of forgotten Christian burial galleries beneath the Roman countryside.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 16,
+    "year": 1770,
+    "title": "Bruce Finds the Blue Nile's Source",
+    "candidates": [
+      {
+        "name": "boston-massacre",
+        "friendly_name": "Boston Massacre",
+        "year": 1770,
+        "description": "British troops fatally shot five Americans including Crispus Attucks, escalating tensions before the Revolution.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "marie-antoinette-wedding",
+        "friendly_name": "Marie Antoinette Marries Louis XVI",
+        "year": 1770,
+        "description": "Marie Antoinette married Louis XVI of France in a proxy wedding.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cook-australia",
+        "friendly_name": "Cook Charts Australia",
+        "year": 1770,
+        "description": "Captain James Cook mapped the east coast of Australia and claimed it for Britain.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lagrange-number-theory",
+        "friendly_name": "Lagrange Advances Number Theory",
+        "year": 1770,
+        "description": "Joseph-Louis Lagrange proved that every positive integer can be expressed as the sum of four squares.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-beethoven",
+        "friendly_name": "Birth of Beethoven",
+        "year": 1770,
+        "description": "The German composer who bridged Classical and Romantic music, creating symphonies even as he went deaf.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-georg-hegel",
+        "friendly_name": "Birth of Georg Hegel",
+        "year": 1770,
+        "description": "The German idealist philosopher whose dialectic shaped modern thought from Marxism to existentialism.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 17,
+    "year": 1788,
+    "title": "African Association Founded",
+    "candidates": [
+      {
+        "name": "marylebone-cricket-club",
+        "friendly_name": "Marylebone Cricket Club Founded",
+        "year": 1787,
+        "description": "The Marylebone Cricket Club formed at Lord's in London, becoming the long-time guardian of cricket's laws.",
+        "score": 3,
+        "shared": [
+          "founded",
+          "london",
+          "club"
+        ]
+      },
+      {
+        "name": "us-constitution",
+        "friendly_name": "US Constitution Ratified",
+        "year": 1788,
+        "description": "The United States adopted its constitution establishing the federal government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-fleet-australia",
+        "friendly_name": "First Fleet Arrives in Australia",
+        "year": 1788,
+        "description": "British ships established a penal colony at Sydney Cove.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lagrange-mechanics",
+        "friendly_name": "Lagrangian Mechanics",
+        "year": 1788,
+        "description": "Lagrange published Mécanique Analytique, reformulating classical mechanics using calculus of variations.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-lord-byron",
+        "friendly_name": "Birth of Lord Byron",
+        "year": 1788,
+        "description": "The English Romantic poet of Don Juan and Childe Harold, as famed for his scandalous life as his verse.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-schopenhauer",
+        "friendly_name": "Birth of Schopenhauer",
+        "year": 1788,
+        "description": "The German philosopher of The World as Will and Representation whose pessimism shaped later thinkers.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 18,
+    "year": 1796,
+    "title": "Mungo Park Reaches the Niger",
+    "candidates": [
+      {
+        "name": "death-catherine-the-great",
+        "friendly_name": "Death of Catherine the Great",
+        "year": 1796,
+        "description": "Empress of Russia who expanded the empire and championed the Enlightenment over a 34-year reign.",
+        "score": 1,
+        "shared": [
+          "great"
+        ]
+      },
+      {
+        "name": "long-distance-travel-improvement",
+        "friendly_name": "Long-Distance Travel Time Decreases",
+        "year": 1750,
+        "year_end": 1800,
+        "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+        "score": 1,
+        "shared": [
+          "long"
+        ]
+      },
+      {
+        "name": "jenner-vaccination-smallpox",
+        "friendly_name": "Jenner's Smallpox Vaccine",
+        "year": 1796,
+        "description": "Edward Jenner demonstrated that cowpox inoculation protected against smallpox, pioneering vaccination.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "lithography-invented",
+        "friendly_name": "Lithography Invented",
+        "year": 1796,
+        "description": "Alois Senefelder devised lithography, printing images and text from a flat greased stone surface.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "cuvier-proves-extinction",
+        "friendly_name": "Cuvier Proves Extinction",
+        "year": 1796,
+        "description": "Georges Cuvier showed that fossil animals like mastodons were species that no longer existed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "homeopathy-founded",
+        "friendly_name": "Homeopathy Founded",
+        "year": 1796,
+        "description": "Samuel Hahnemann proposed treating illness with highly diluted substances, founding homeopathy.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 19,
+    "year": 1798,
+    "title": "Napoleon Invades Egypt",
+    "candidates": [
+      {
+        "name": "napoleons-egyptian-campaign",
+        "friendly_name": "Napoleon's Egyptian Campaign",
+        "year": 1798,
+        "year_end": 1801,
+        "description": "Napoleon invaded Egypt to threaten British India, bringing scientists who discovered the Rosetta Stone during the expedition.",
+        "score": 3,
+        "shared": [
+          "napoleon",
+          "egypt",
+          "bringing"
+        ]
+      },
+      {
+        "name": "rosetta-stone",
+        "friendly_name": "Rosetta Stone Discovered",
+        "year": 1799,
+        "description": "French soldiers found the key to deciphering Egyptian hieroglyphics.",
+        "score": 2,
+        "shared": [
+          "french",
+          "soldiers"
+        ]
+      },
+      {
+        "name": "irish-rebellion-of-1798",
+        "friendly_name": "United Irishmen Rebellion",
+        "year": 1798,
+        "description": "Irish republicans inspired by the French Revolution rose against British rule. The failed uprising led to the Act of Union with Britain.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "birth-balzac",
+        "friendly_name": "Birth of Honore de Balzac",
+        "year": 1799,
+        "description": "The French novelist whose vast Human Comedy chronicled the society of post-Napoleonic France.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "malthus-essay-population",
+        "friendly_name": "Malthus' Essay on Population",
+        "year": 1798,
+        "description": "Thomas Malthus argued that population growth would outpace food supply, influencing economics and Darwin's evolution theory.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "haydn-creation-oratorio",
+        "friendly_name": "Haydn's The Creation Performed",
+        "year": 1798,
+        "description": "An Austrian composer set the biblical story of the world's making for soloists, chorus and orchestra, opening with a famous depiction of chaos.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 20,
+    "year": 1816,
+    "title": "Fleet Bombards Algiers",
+    "candidates": [
+      {
+        "name": "bombardment-algiers-slaves-freed",
+        "friendly_name": "Bombardment of Algiers",
+        "year": 1816,
+        "description": "A British and Dutch fleet bombarded Algiers to force the release of Christian slaves and end Barbary corsair attacks on European shipping.",
+        "score": 7,
+        "shared": [
+          "fleet",
+          "algiers",
+          "british",
+          "dutch",
+          "corsair",
+          "freed",
+          "christian"
+        ]
+      },
+      {
+        "name": "shaka-zulu-kingdom",
+        "friendly_name": "Shaka Zulu Founds Zulu Kingdom",
+        "year": 1816,
+        "description": "Shaka unified Zulu clans into a powerful African kingdom.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "year-without-summer",
+        "friendly_name": "Year Without a Summer",
+        "year": 1816,
+        "description": "Volcanic ash from Tambora caused crop failures and famine worldwide.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stethoscope-invented",
+        "friendly_name": "Stethoscope Invented",
+        "year": 1816,
+        "description": "French physician René Laënnec invented the stethoscope, revolutionizing the diagnosis of heart and lung conditions.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "electric-telegraph",
+        "friendly_name": "Electric Telegraph",
+        "year": 1816,
+        "description": "Francis Ronalds demonstrated the first working electric telegraph using static electricity.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "stirling-engine",
+        "friendly_name": "Stirling Engine",
+        "year": 1816,
+        "description": "Robert Stirling's external combustion engine using cyclic compression and expansion of gas.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 21,
+    "year": 1830,
+    "title": "France Invades Algiers",
+    "candidates": [
+      {
+        "name": "france-conquers-algiers",
+        "friendly_name": "France Conquers Algiers",
+        "year": 1830,
+        "description": "A French invasion force captured Algiers, toppling the Ottoman backed regency and ending three centuries of Barbary corsair power in North Africa.",
+        "score": 5,
+        "shared": [
+          "france",
+          "algiers",
+          "french",
+          "force",
+          "captured"
+        ]
+      },
+      {
+        "name": "july-revolution-france",
+        "friendly_name": "July Revolution in France",
+        "year": 1830,
+        "description": "Three days of revolution in Paris overthrew King Charles X and established the constitutional July Monarchy.",
+        "score": 1,
+        "shared": [
+          "france"
+        ]
+      },
+      {
+        "name": "berlioz-symphonie-fantastique",
+        "friendly_name": "Berlioz's Symphonie Fantastique",
+        "year": 1830,
+        "description": "A French composer premiered a symphony telling of an artist's opium dreams and obsessive love, pioneering the programmatic orchestral work.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "nat-turners-rebellion",
+        "friendly_name": "Nat Turner's Rebellion",
+        "year": 1831,
+        "description": "Enslaved preacher Nat Turner led a violent uprising in Virginia, killing about 60 white people before being captured and executed.",
+        "score": 1,
+        "shared": [
+          "captured"
+        ]
+      },
+      {
+        "name": "metropolitan-police-founded",
+        "friendly_name": "Metropolitan Police Founded",
+        "year": 1829,
+        "description": "Sir Robert Peel established the Metropolitan Police Service in London, creating the first modern professional police force.",
+        "score": 1,
+        "shared": [
+          "force"
+        ]
+      },
+      {
+        "name": "sikh-empire-ranjit-singh",
+        "friendly_name": "Sikh Empire Under Ranjit Singh",
+        "year": 1799,
+        "year_end": 1839,
+        "description": "Ranjit Singh captured Lahore and founded the Sikh Empire, unifying Punjab into a powerful independent state in South Asia.",
+        "score": 1,
+        "shared": [
+          "captured"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 22,
+    "year": 1838,
+    "title": "Boers Win at Blood River",
+    "candidates": [
+      {
+        "name": "duarte-founds-la-trinitaria",
+        "friendly_name": "Duarte Founds La Trinitaria",
+        "year": 1838,
+        "description": "Juan Pablo Duarte formed a secret society in Santo Domingo to win independence from Haitian rule.",
+        "score": 1,
+        "shared": [
+          "win"
+        ]
+      },
+      {
+        "name": "ice-age-theory-proposed",
+        "friendly_name": "Ice Ages Are Discovered",
+        "year": 1837,
+        "description": "Louis Agassiz proposed that vast ice sheets once covered much of Europe and North America.",
+        "score": 1,
+        "shared": [
+          "vast"
+        ]
+      },
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 1,
+        "shared": [
+          "boers"
+        ]
+      },
+      {
+        "name": "mfecane-wars",
+        "friendly_name": "Mfecane Wars and Zulu Expansion",
+        "year": 1815,
+        "year_end": 1840,
+        "description": "The Mfecane devastated southern Africa as Zulu expansion triggered mass migrations and widespread conflict.",
+        "score": 1,
+        "shared": [
+          "zulu"
+        ]
+      },
+      {
+        "name": "trail-of-tears",
+        "friendly_name": "Trail of Tears",
+        "year": 1838,
+        "description": "Forced relocation of Native American nations resulted in thousands of deaths.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "morse-code-invented",
+        "friendly_name": "Morse Code Invented",
+        "year": 1838,
+        "description": "Samuel Morse developed the code that revolutionized long-distance communication.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 23,
+    "year": 1841,
+    "title": "Livingstone Arrives in Africa",
+    "candidates": [
+      {
+        "name": "victoria-white-wedding-gown",
+        "friendly_name": "Victoria's White Wedding Gown",
+        "year": 1840,
+        "description": "A young British queen chose white satin for her wedding, starting the fashion for white bridal dresses.",
+        "score": 2,
+        "shared": [
+          "young",
+          "starting"
+        ]
+      },
+      {
+        "name": "great-trek-south-africa",
+        "friendly_name": "The Great Trek",
+        "year": 1836,
+        "year_end": 1846,
+        "description": "Dutch-descended Boers migrated inland from the British Cape Colony to found new republics.",
+        "score": 2,
+        "shared": [
+          "africa",
+          "cape"
+        ]
+      },
+      {
+        "name": "settlers-found-wellington",
+        "friendly_name": "Settlers Found Wellington",
+        "year": 1840,
+        "description": "New Zealand Company colonists landed at Port Nicholson and founded a settlement that became Wellington.",
+        "score": 1,
+        "shared": [
+          "landed"
+        ]
+      },
+      {
+        "name": "calotype-photography",
+        "friendly_name": "Calotype Photography Invented",
+        "year": 1841,
+        "description": "William Henry Fox Talbot introduced the calotype, the first photographic method producing negatives for multiple prints.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-dvorak",
+        "friendly_name": "Birth of Antonin Dvorak",
+        "year": 1841,
+        "description": "The Czech composer of the New World Symphony who wove folk melody into the Romantic tradition.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-renoir",
+        "friendly_name": "Birth of Renoir",
+        "year": 1841,
+        "description": "The French Impressionist painter celebrated for his luminous, joyful scenes of social life.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 24,
+    "year": 1847,
+    "title": "Abd el-Kader Surrenders",
+    "candidates": [
+      {
+        "name": "birth-thomas-edison",
+        "friendly_name": "Birth of Thomas Edison",
+        "year": 1847,
+        "description": "The prolific American inventor of the phonograph and practical electric light who founded modern R&D.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "baku-first-mechanical-oil-well",
+        "friendly_name": "Baku Drills First Mechanical Well",
+        "year": 1846,
+        "description": "On the Caspian shore, a Russian engineer drilled an oil well with a mechanical rig, years before the American boom.",
+        "score": 1,
+        "shared": [
+          "years"
+        ]
+      },
+      {
+        "name": "liberia-independence",
+        "friendly_name": "Liberia Independence",
+        "year": 1847,
+        "description": "Liberia declared independence, becoming Africa's first republic, founded by freed American slaves.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "gorillas-discovered",
+        "friendly_name": "Gorillas Discovered by Science",
+        "year": 1847,
+        "description": "Western scientists first described gorillas from specimens found in Africa.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nitroglycerin",
+        "friendly_name": "Nitroglycerin",
+        "year": 1847,
+        "description": "Ascanio Sobrero synthesized this powerful but dangerously unstable liquid explosive.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "semmelweis-childbed-fever",
+        "friendly_name": "Semmelweis' Handwashing",
+        "year": 1847,
+        "description": "Ignaz Semmelweis showed that handwashing with chlorinated lime drastically reduced maternal mortality in hospitals.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 25,
+    "year": 1850,
+    "title": "Barth Sets Out Across the Sahara",
+    "candidates": [
+      {
+        "name": "pinkerton-detective-agency",
+        "friendly_name": "Pinkerton Agency Founded",
+        "year": 1850,
+        "description": "Allan Pinkerton founded a private detective agency in Chicago that pursued criminals across the United States.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "chinese-emigration-gold-rush",
+        "friendly_name": "Chinese Emigration to America",
+        "year": 1850,
+        "description": "Chinese laborers emigrated to California during the gold rush, building Chinatowns across the West.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "dover-calais-submarine-cable",
+        "friendly_name": "First Undersea Telegraph Cable",
+        "year": 1851,
+        "description": "An armoured cable laid across the Channel from Dover to Calais carried the first lasting telegraph traffic under the sea.",
+        "score": 1,
+        "shared": [
+          "across"
+        ]
+      },
+      {
+        "name": "taiping-rebellion",
+        "friendly_name": "Taiping Rebellion Begins",
+        "year": 1850,
+        "description": "A Christian-inspired uprising killed 20-30 million people in China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "compromise-slavery",
+        "friendly_name": "Slavery Compromise",
+        "year": 1850,
+        "description": "Congress attempted to balance free and slave state interests as US territories expanded.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "fugitive-slave-act",
+        "friendly_name": "Fugitive Slave Act",
+        "year": 1850,
+        "description": "A US law forced citizens to help capture escaped slaves, deepening sectional conflict before the Civil War.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 26,
+    "year": 1855,
+    "title": "Livingstone Sees Victoria Falls",
+    "candidates": [
+      {
+        "name": "bunsen-burner",
+        "friendly_name": "Bunsen Burner Invented",
+        "year": 1855,
+        "description": "Robert Bunsen invented the laboratory burner that bears his name.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "cholera-london",
+        "friendly_name": "London Cholera Outbreak",
+        "year": 1854,
+        "description": "John Snow traced a deadly cholera outbreak to a contaminated water pump.",
+        "score": 1,
+        "shared": [
+          "water"
+        ]
+      },
+      {
+        "name": "snow-cholera-map",
+        "friendly_name": "Snow's Cholera Map of Soho",
+        "year": 1854,
+        "description": "John Snow plotted cholera deaths as bars on a street plan, showing them clustered around a single water pump.",
+        "score": 1,
+        "shared": [
+          "water"
+        ]
+      },
+      {
+        "name": "florence-nightingale-crimea",
+        "friendly_name": "Florence Nightingale in Crimea",
+        "year": 1855,
+        "year_end": 1856,
+        "description": "Nightingale revolutionized military nursing during the Crimean War, dramatically reducing death rates.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "third-plague-pandemic",
+        "friendly_name": "Third Plague Pandemic",
+        "year": 1855,
+        "year_end": 1960,
+        "description": "A bubonic plague pandemic began in China and spread worldwide.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 27,
+    "year": 1858,
+    "title": "Speke Finds Lake Victoria",
+    "candidates": [
+      {
+        "name": "source-of-nile",
+        "friendly_name": "Source of the Nile Found",
+        "year": 1858,
+        "description": "John Hanning Speke identified Lake Victoria as the source of the Nile.",
+        "score": 5,
+        "shared": [
+          "speke",
+          "lake",
+          "victoria",
+          "source",
+          "nile"
+        ]
+      },
+      {
+        "name": "british-raj-established",
+        "friendly_name": "British Raj Established",
+        "year": 1858,
+        "description": "The British Crown assumed direct control of India after the Sepoy Mutiny.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "sepoy-mutiny",
+        "friendly_name": "Sepoy Mutiny",
+        "year": 1857,
+        "year_end": 1858,
+        "description": "Indian soldiers rebelled against the British East India Company, triggering a widespread uprising that led to direct British Crown rule over India.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "birth-joseph-conrad",
+        "friendly_name": "Birth of Joseph Conrad",
+        "year": 1857,
+        "description": "The Polish-British novelist of Heart of Darkness and Lord Jim, a master of moral ambiguity at sea.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "miracles-at-lourdes",
+        "friendly_name": "Miracles at Lourdes",
+        "year": 1858,
+        "description": "Bernadette Soubirous reported visions of the Virgin Mary in Lourdes, France, creating a major pilgrimage site.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "first-transatlantic-cable",
+        "friendly_name": "First Transatlantic Cable",
+        "year": 1858,
+        "description": "First telegraph cable across the Atlantic connected Europe and North America, though it failed after weeks.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 28,
+    "year": 1868,
+    "title": "British Storm Magdala",
+    "candidates": [
+      {
+        "name": "birth-wilbur-wright",
+        "friendly_name": "Birth of Wilbur Wright",
+        "year": 1867,
+        "description": "The American aviation pioneer who, with his brother Orville, invented and flew the first powered airplane.",
+        "score": 2,
+        "shared": [
+          "who",
+          "his"
+        ]
+      },
+      {
+        "name": "ethiopian-tewodros-reform",
+        "friendly_name": "Tewodros Reunifies Ethiopia",
+        "year": 1855,
+        "year_end": 1868,
+        "description": "Emperor Tewodros II reunified Ethiopia and attempted to modernize the state, ending the Era of Princes.",
+        "score": 2,
+        "shared": [
+          "ethiopian",
+          "emperor"
+        ]
+      },
+      {
+        "name": "grito-de-yara",
+        "friendly_name": "Grito de Yara",
+        "year": 1868,
+        "description": "Carlos Manuel de Cespedes freed his slaves and declared war on Spain, opening Cuba's first long war for independence.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "collins-the-moonstone",
+        "friendly_name": "Collins Publishes The Moonstone",
+        "year": 1868,
+        "description": "A stolen Indian diamond, a bumbling household and the dogged Sergeant Cuff form the first great English detective novel.",
+        "score": 1,
+        "shared": [
+          "indian"
+        ]
+      },
+      {
+        "name": "das-kapital-published",
+        "friendly_name": "Das Kapital Published",
+        "year": 1867,
+        "description": "Karl Marx published his critique of capitalism, providing the theoretical foundation for socialism.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "dominion-canada",
+        "friendly_name": "Dominion of Canada Established",
+        "year": 1867,
+        "description": "Canadian provinces united to form a self-governing dominion within the British Empire.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "birth-frank-lloyd-wright",
+        "friendly_name": "Birth of Frank Lloyd Wright",
+        "year": 1867,
+        "description": "The American architect of Fallingwater who pioneered organic architecture and the Prairie style.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "birth-marie-curie",
+        "friendly_name": "Birth of Marie Curie",
+        "year": 1867,
+        "description": "The Polish-French physicist who pioneered radioactivity and won Nobel Prizes in physics and chemistry.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "birth-henri-matisse",
+        "friendly_name": "Birth of Henri Matisse",
+        "year": 1869,
+        "description": "The French artist who led the Fauvist movement and revolutionized color and form in modern art.",
+        "score": 1,
+        "shared": [
+          "who"
+        ]
+      },
+      {
+        "name": "strauss-blue-danube-waltz",
+        "friendly_name": "Strauss's Blue Danube Waltz",
+        "year": 1867,
+        "description": "A Viennese waltz king unveiled a choral waltz that became the unofficial anthem of his city's music.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "grant-first-inauguration",
+        "friendly_name": "Ulysses S. Grant Inaugurated",
+        "year": 1869,
+        "description": "The victorious Union general became president, and his predecessor refused to attend the ceremony.",
+        "score": 1,
+        "shared": [
+          "his"
+        ]
+      },
+      {
+        "name": "indian-rebellion-famine",
+        "friendly_name": "Orissa Famine",
+        "year": 1866,
+        "year_end": 1868,
+        "description": "A severe famine in India killed over one million people.",
+        "score": 1,
+        "shared": [
+          "indian"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 29,
+    "year": 1871,
+    "title": "Stanley Finds Livingstone",
+    "candidates": [
+      {
+        "name": "livingstone-stanley",
+        "friendly_name": "Stanley Finds Livingstone",
+        "year": 1871,
+        "description": "Henry Morton Stanley found the missing explorer David Livingstone in Africa.",
+        "score": 4,
+        "shared": [
+          "stanley",
+          "finds",
+          "livingstone",
+          "missing"
+        ]
+      },
+      {
+        "name": "italian-unification",
+        "friendly_name": "Italian Unification Completed",
+        "year": 1871,
+        "description": "The Kingdom of Italy unified the Italian peninsula under one government.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "german-unification",
+        "friendly_name": "German Unification",
+        "year": 1871,
+        "description": "Prussia united German states into the German Empire after defeating France.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "paris-commune",
+        "friendly_name": "Paris Commune",
+        "year": 1871,
+        "description": "Radical socialists briefly governed Paris before being violently suppressed.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "treaty-of-frankfurt",
+        "friendly_name": "Treaty of Frankfurt",
+        "year": 1871,
+        "description": "Peace treaty ending the Franco-Prussian War, with France ceding Alsace-Lorraine to Germany.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "peshtigo-fire",
+        "friendly_name": "Peshtigo Fire",
+        "year": 1871,
+        "description": "The deadliest wildfire in American history killed over 1,500 people in Wisconsin.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 30,
+    "year": 1879,
+    "title": "Zulu War and Isandlwana",
+    "candidates": [
+      {
+        "name": "zulu-war",
+        "friendly_name": "Anglo-Zulu War",
+        "year": 1879,
+        "description": "British forces fought the Zulu Kingdom in a short but brutal conflict.",
+        "score": 5,
+        "shared": [
+          "zulu",
+          "war",
+          "british",
+          "forces",
+          "kingdom"
+        ]
+      },
+      {
+        "name": "first-boer-war",
+        "friendly_name": "First Boer War",
+        "year": 1880,
+        "year_end": 1881,
+        "description": "Boer settlers defeated British forces in South Africa, winning independence for the Transvaal Republic after the Battle of Majuba Hill.",
+        "score": 3,
+        "shared": [
+          "war",
+          "british",
+          "forces"
+        ]
+      },
+      {
+        "name": "war-of-the-pacific",
+        "friendly_name": "War of the Pacific",
+        "year": 1879,
+        "year_end": 1884,
+        "description": "Chile fought Bolivia and Peru over nitrate-rich territories, winning coastal lands that left Bolivia landlocked to this day.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "congress-of-berlin",
+        "friendly_name": "Congress of Berlin",
+        "year": 1878,
+        "description": "Major powers redrew Balkan boundaries after the Russo-Turkish War, creating new independent states.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "protest-of-baragua",
+        "friendly_name": "Protest of Baragua",
+        "year": 1878,
+        "description": "General Antonio Maceo refused to accept the peace that ended the Ten Years' War, vowing to keep fighting for Cuba.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "phylloxera-wine-blight",
+        "friendly_name": "Phylloxera Devastates Vineyards",
+        "year": 1863,
+        "year_end": 1900,
+        "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+        "score": 1,
+        "shared": [
+          "before"
+        ]
+      },
+      {
+        "name": "kuba-kingdom-raffia-currency",
+        "friendly_name": "Kuba Raffia Currency",
+        "year": 1625,
+        "year_end": 1892,
+        "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
+        "score": 1,
+        "shared": [
+          "kingdom"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 31,
+    "year": 1882,
+    "title": "Britain Occupies Egypt",
+    "candidates": [
+      {
+        "name": "british-occupation-egypt",
+        "friendly_name": "British Occupation of Egypt",
+        "year": 1882,
+        "description": "Britain occupied Egypt to protect the Suez Canal, beginning decades of colonial control.",
+        "score": 4,
+        "shared": [
+          "britain",
+          "egypt",
+          "british",
+          "control"
+        ]
+      },
+      {
+        "name": "the-ashes-born-1882",
+        "friendly_name": "The Ashes Are Born",
+        "year": 1882,
+        "description": "After Australia's first Test win on English soil at The Oval, a mock obituary in the Sporting Times gave birth to the Ashes.",
+        "score": 1,
+        "shared": [
+          "after"
+        ]
+      },
+      {
+        "name": "birth-john-maynard-keynes",
+        "friendly_name": "Birth of J M Keynes",
+        "year": 1883,
+        "description": "The British economist whose theories on demand and government spending reshaped modern economics.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "first-labor-day",
+        "friendly_name": "First Labor Day",
+        "year": 1882,
+        "description": "New York held the first Labor Day parade honoring workers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "triple-alliance",
+        "friendly_name": "Triple Alliance Formed",
+        "year": 1882,
+        "description": "Germany, Austria-Hungary, and Italy formed a mutual defense pact.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "chinese-exclusion-act",
+        "friendly_name": "Chinese Exclusion Act",
+        "year": 1882,
+        "description": "First US law to ban immigration based on nationality, prohibiting Chinese laborers for ten years.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 32,
+    "year": 1885,
+    "title": "Berlin Conference Carves Up Africa",
+    "candidates": [
+      {
+        "name": "berlin-conference",
+        "friendly_name": "Berlin Conference",
+        "year": 1884,
+        "description": "European powers divided Africa among themselves without African participation.",
+        "score": 6,
+        "shared": [
+          "berlin",
+          "conference",
+          "africa",
+          "european",
+          "powers",
+          "african"
+        ]
+      },
+      {
+        "name": "time-zone-development",
+        "friendly_name": "Time Zone System Development",
+        "year": 1884,
+        "description": "The International Meridian Conference in Washington established standardized time zones and the prime meridian at Greenwich.",
+        "score": 1,
+        "shared": [
+          "conference"
+        ]
+      },
+      {
+        "name": "steel-frame-skyscraper",
+        "friendly_name": "First Steel-Frame Skyscraper",
+        "year": 1885,
+        "description": "The Home Insurance Building in Chicago became the first steel-frame skyscraper, launching the age of tall buildings.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "canadian-pacific-railway",
+        "friendly_name": "Canadian Pacific Railway Completed",
+        "year": 1885,
+        "description": "Canada's transcontinental railway connected the Atlantic to the Pacific.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-dh-lawrence",
+        "friendly_name": "Birth of D H Lawrence",
+        "year": 1885,
+        "description": "The English writer of Sons and Lovers and Lady Chatterley's Lover, known for his frank treatment of sexuality.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "birth-niels-bohr",
+        "friendly_name": "Birth of Niels Bohr",
+        "year": 1885,
+        "description": "The Danish physicist whose model of the atom and work on quantum theory earned him a Nobel Prize.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 33,
+    "year": 1896,
+    "title": "Ethiopia Crushes Italy at Adwa",
+    "candidates": [
+      {
+        "name": "ethiopian-victory-adwa",
+        "friendly_name": "Ethiopian Victory at Adwa",
+        "year": 1896,
+        "description": "Ethiopia defeated Italian forces at Adwa, preserving independence and becoming a symbol of African resistance.",
+        "score": 6,
+        "shared": [
+          "ethiopia",
+          "adwa",
+          "italian",
+          "forces",
+          "ethiopian",
+          "independence"
+        ]
+      },
+      {
+        "name": "antonio-maceo-killed",
+        "friendly_name": "Antonio Maceo Killed in Action",
+        "year": 1896,
+        "description": "The Bronze Titan, Cuba's most feared rebel general, was killed near Havana, a heavy blow to the independence army.",
+        "score": 2,
+        "shared": [
+          "army",
+          "independence"
+        ]
+      },
+      {
+        "name": "puccini-la-boheme-premiere",
+        "friendly_name": "Puccini's La Boheme Premieres",
+        "year": 1896,
+        "description": "An Italian composer's opera of poor young artists in Paris, with a seamstress who dies of illness, opened in Turin.",
+        "score": 1,
+        "shared": [
+          "italian"
+        ]
+      },
+      {
+        "name": "riva-rocci-blood-pressure-cuff",
+        "friendly_name": "Riva-Rocci's Blood Pressure Cuff",
+        "year": 1896,
+        "description": "An Italian doctor wrapped an inflatable cuff around the upper arm, giving a simple, reliable way to read blood pressure.",
+        "score": 1,
+        "shared": [
+          "italian"
+        ]
+      },
+      {
+        "name": "treaty-of-shimonoseki",
+        "friendly_name": "Treaty of Shimonoseki",
+        "year": 1895,
+        "description": "Treaty ending the First Sino-Japanese War, with China ceding Taiwan and recognizing Korean independence.",
+        "score": 1,
+        "shared": [
+          "independence"
+        ]
+      },
+      {
+        "name": "first-modern-olympics",
+        "friendly_name": "First Modern Olympic Games",
+        "year": 1896,
+        "description": "Athens hosted the revival of the ancient Olympic Games.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 34,
+    "year": 1898,
+    "title": "Fashoda Crisis",
+    "candidates": [
+      {
+        "name": "fashoda-incident",
+        "friendly_name": "Fashoda Incident",
+        "year": 1898,
+        "description": "British and French forces confronted each other in Sudan, nearly causing war before France withdrew.",
+        "score": 5,
+        "shared": [
+          "fashoda",
+          "french",
+          "british",
+          "nearly",
+          "war"
+        ]
+      },
+      {
+        "name": "spanish-american-war",
+        "friendly_name": "Spanish-American War",
+        "year": 1898,
+        "description": "The US defeated Spain, gaining control of Cuba, Puerto Rico, and the Philippines.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "treaty-paris-spain-cedes-colonies",
+        "friendly_name": "Spain Loses Cuba and Puerto Rico",
+        "year": 1898,
+        "description": "After a brief war with the United States, Spain ceded its last major American colonies by treaty.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "boer-war",
+        "friendly_name": "Second Boer War Begins",
+        "year": 1899,
+        "description": "Britain fought Dutch settlers in South Africa in a brutal colonial conflict.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "philippine-american-war",
+        "friendly_name": "Philippine-American War",
+        "year": 1899,
+        "year_end": 1902,
+        "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "queen-victorias-diamond-jubilee",
+        "friendly_name": "Queen Victoria's Diamond Jubilee",
+        "year": 1897,
+        "description": "Massive celebrations marked Queen Victoria's 60 years on the throne, showcasing British imperial power.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 35,
+    "year": 1899,
+    "title": "Boer War Begins",
+    "candidates": [
+      {
+        "name": "boer-war",
+        "friendly_name": "Second Boer War Begins",
+        "year": 1899,
+        "description": "Britain fought Dutch settlers in South Africa in a brutal colonial conflict.",
+        "score": 4,
+        "shared": [
+          "boer",
+          "war",
+          "begins",
+          "africa"
+        ]
+      },
+      {
+        "name": "siege-of-mafeking",
+        "friendly_name": "Siege of Mafeking",
+        "year": 1900,
+        "description": "Boer forces besieged the small British garrison town for over two hundred days until a relief column finally broke through.",
+        "score": 4,
+        "shared": [
+          "boer",
+          "two",
+          "british",
+          "over"
+        ]
+      },
+      {
+        "name": "spanish-american-war",
+        "friendly_name": "Spanish-American War",
+        "year": 1898,
+        "description": "The US defeated Spain, gaining control of Cuba, Puerto Rico, and the Philippines.",
+        "score": 2,
+        "shared": [
+          "war",
+          "control"
+        ]
+      },
+      {
+        "name": "fashoda-incident",
+        "friendly_name": "Fashoda Incident",
+        "year": 1898,
+        "description": "British and French forces confronted each other in Sudan, nearly causing war before France withdrew.",
+        "score": 2,
+        "shared": [
+          "war",
+          "british"
+        ]
+      },
+      {
+        "name": "philippine-american-war",
+        "friendly_name": "Philippine-American War",
+        "year": 1899,
+        "year_end": 1902,
+        "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      },
+      {
+        "name": "zeppelin-airship",
+        "friendly_name": "Zeppelin Airship Launched",
+        "year": 1900,
+        "description": "Ferdinand von Zeppelin launched the first rigid airship over Lake Constance in Germany, pioneering lighter-than-air travel.",
+        "score": 1,
+        "shared": [
+          "over"
+        ]
+      },
+      {
+        "name": "first-davis-cup-tennis",
+        "friendly_name": "First Davis Cup",
+        "year": 1900,
+        "description": "The United States beat the British Isles in Boston in the first international team tennis competition, founded by Dwight Davis.",
+        "score": 1,
+        "shared": [
+          "british"
+        ]
+      },
+      {
+        "name": "treaty-paris-spain-cedes-colonies",
+        "friendly_name": "Spain Loses Cuba and Puerto Rico",
+        "year": 1898,
+        "description": "After a brief war with the United States, Spain ceded its last major American colonies by treaty.",
+        "score": 1,
+        "shared": [
+          "war"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 36,
+    "year": 1911,
+    "title": "Italy Invades Libya",
+    "candidates": [
+      {
+        "name": "first-balkan-war",
+        "friendly_name": "First Balkan War",
+        "year": 1912,
+        "year_end": 1913,
+        "description": "The Balkan League of Serbia, Greece, Bulgaria, and Montenegro attacked the Ottoman Empire, driving it out of most of its European territories.",
+        "score": 2,
+        "shared": [
+          "ottoman",
+          "empire"
+        ]
+      },
+      {
+        "name": "anc-founded",
+        "friendly_name": "African National Congress Founded",
+        "year": 1912,
+        "description": "The ANC was founded as the South African Native National Congress to fight for Black rights.",
+        "score": 1,
+        "shared": [
+          "african"
+        ]
+      },
+      {
+        "name": "chinese-revolution",
+        "friendly_name": "Chinese Revolution",
+        "year": 1911,
+        "year_end": 1912,
+        "description": "Revolutionaries overthrew the Qing Dynasty, establishing the Republic of China.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "unemployment-benefits",
+        "friendly_name": "Unemployment Insurance",
+        "year": 1911,
+        "description": "Britain's National Insurance Act created the first compulsory unemployment insurance system, covering certain industries.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "maternity-leave",
+        "friendly_name": "Maternity Benefit Act",
+        "year": 1911,
+        "description": "Britain's National Insurance Act included maternity benefits, providing one of the first state-funded supports for new mothers.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "triangle-shirtwaist-fire",
+        "friendly_name": "Triangle Shirtwaist Factory Fire",
+        "year": 1911,
+        "description": "A factory fire killed 146 garment workers in New York City.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 37,
+    "year": 1912,
+    "title": "Treaty of Fez Makes Morocco French",
+    "candidates": [
+      {
+        "name": "birth-albert-camus",
+        "friendly_name": "Birth of Albert Camus",
+        "year": 1913,
+        "description": "The French author of The Stranger and a Nobel laureate associated with the philosophy of the absurd.",
+        "score": 1,
+        "shared": [
+          "french"
+        ]
+      },
+      {
+        "name": "first-ascent-denali",
+        "friendly_name": "First Ascent of Denali",
+        "year": 1913,
+        "description": "An expedition led by Hudson Stuck and guided by Walter Harper made the first confirmed ascent of Denali, North America's tallest peak.",
+        "score": 1,
+        "shared": [
+          "north"
+        ]
+      },
+      {
+        "name": "first-balkan-war",
+        "friendly_name": "First Balkan War",
+        "year": 1912,
+        "year_end": 1913,
+        "description": "The Balkan League of Serbia, Greece, Bulgaria, and Montenegro attacked the Ottoman Empire, driving it out of most of its European territories.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "girl-scouts-founded",
+        "friendly_name": "Girl Scouts Founded",
+        "year": 1912,
+        "description": "Juliette Gordon Low founded the Girl Scouts in Savannah, Georgia.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "anc-founded",
+        "friendly_name": "African National Congress Founded",
+        "year": 1912,
+        "description": "The ANC was founded as the South African Native National Congress to fight for Black rights.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "last-emperor-china-abdicates",
+        "friendly_name": "Last Emperor of China Abdicates",
+        "year": 1912,
+        "description": "The Xuantong Emperor abdicated, ending over 2,000 years of imperial rule in China.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  },
+  {
+    "beat": 38,
+    "year": 1921,
+    "title": "Rif Fighters Rout Spain at Annual",
+    "candidates": [
+      {
+        "name": "weissmuller-sub-minute-1922",
+        "friendly_name": "Weissmuller Breaks the Minute",
+        "year": 1922,
+        "description": "Johnny Weissmuller became the first man to swim 100m freestyle under one minute, clocking 58.6 seconds.",
+        "score": 2,
+        "shared": [
+          "under",
+          "one"
+        ]
+      },
+      {
+        "name": "bcg-tuberculosis-vaccine",
+        "friendly_name": "BCG Tuberculosis Vaccine",
+        "year": 1921,
+        "description": "The BCG vaccine against tuberculosis was first given to a child, becoming one of the world's most used.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "coleman-earns-pilot-license",
+        "friendly_name": "Coleman Earns Her Pilot License",
+        "year": 1921,
+        "description": "Bessie Coleman earned an international pilot license in France, becoming the first Black woman to hold one anywhere.",
+        "score": 1,
+        "shared": [
+          "one"
+        ]
+      },
+      {
+        "name": "mussolini-power",
+        "friendly_name": "Mussolini Takes Power",
+        "year": 1922,
+        "description": "The March on Rome brought Benito Mussolini to power as Italy's fascist leader.",
+        "score": 1,
+        "shared": [
+          "leader"
+        ]
+      },
+      {
+        "name": "russian-civil-war-ends",
+        "friendly_name": "Russian Civil War Ends",
+        "year": 1922,
+        "description": "The Bolsheviks defeated the White Army and various nationalist movements.",
+        "score": 1,
+        "shared": [
+          "army"
+        ]
+      },
+      {
+        "name": "polish-soviet-war",
+        "friendly_name": "Battle of Warsaw",
+        "year": 1920,
+        "description": "Polish forces broke the Red Army's advance outside the capital, ending Soviet hopes of carrying revolution westward.",
+        "score": 1,
+        "shared": [
+          "army"
+        ]
+      },
+      {
+        "name": "roaring-twenties-era",
+        "friendly_name": "Roaring Twenties Begin",
+        "year": 1920,
+        "year_end": 1929,
+        "description": "Post-WWI prosperity fueled jazz, flappers, and cultural liberation across America and Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "birth-john-paul-ii",
+        "friendly_name": "Birth of Pope John Paul II",
+        "year": 1920,
+        "description": "The Polish pope who led the Catholic Church for decades and helped hasten communism's fall in Europe.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "first-prix-arc-de-triomphe",
+        "friendly_name": "First Prix de l'Arc de Triomphe",
+        "year": 1920,
+        "description": "The Prix de l'Arc de Triomphe was first run at Longchamp in Paris, won by Comrade, becoming Europe's premier race.",
+        "score": 1,
+        "shared": [
+          "europe"
+        ]
+      },
+      {
+        "name": "rugby-football-league-named",
+        "friendly_name": "Rugby Football League Named",
+        "year": 1922,
+        "description": "The Northern Union renamed itself the Rugby Football League, giving the breakaway code its enduring name.",
+        "score": 1,
+        "shared": [
+          "northern"
+        ]
+      },
+      {
+        "name": "magill-endotracheal-tube",
+        "friendly_name": "Magill's Breathing Tube",
+        "year": 1920,
+        "description": "Treating disfigured war veterans, a surgeon devised a flexible tube placed in the windpipe to keep patients breathing safely under anesthesia.",
+        "score": 1,
+        "shared": [
+          "under"
+        ]
+      },
+      {
+        "name": "great-migration-black-americans",
+        "friendly_name": "The Great Migration",
+        "year": 1916,
+        "year_end": 1970,
+        "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
+        "score": 1,
+        "shared": [
+          "northern"
+        ]
+      }
+    ]
+  },
+  {
+    "beat": 39,
+    "year": 1935,
+    "title": "Italy Invades Ethiopia",
+    "candidates": [
+      {
+        "name": "italy-invades-ethiopia",
+        "friendly_name": "Italy Invades Ethiopia",
+        "year": 1935,
+        "description": "Mussolini's forces invaded Ethiopia, using poison gas and exposing League of Nations weakness.",
+        "score": 8,
+        "shared": [
+          "italy",
+          "invades",
+          "ethiopia",
+          "mussolini",
+          "using",
+          "poison",
+          "gas",
+          "forces"
+        ]
+      },
+      {
+        "name": "spanish-civil-war",
+        "friendly_name": "Spanish Civil War Begins",
+        "year": 1936,
+        "description": "Nationalist forces led by Franco rebelled against Spain's Republican government.",
+        "score": 2,
+        "shared": [
+          "against",
+          "forces"
+        ]
+      },
+      {
+        "name": "long-march-begins",
+        "friendly_name": "Long March Begins",
+        "year": 1934,
+        "description": "Chinese Communists began their epic 6,000-mile retreat from Nationalist forces.",
+        "score": 1,
+        "shared": [
+          "forces"
+        ]
+      },
+      {
+        "name": "alcoholics-anonymous",
+        "friendly_name": "Alcoholics Anonymous Founded",
+        "year": 1935,
+        "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "social-security-act",
+        "friendly_name": "Social Security Act Signed",
+        "year": 1935,
+        "description": "The US established its social insurance program for the elderly.",
+        "score": 0,
+        "shared": []
+      },
+      {
+        "name": "nuremberg-laws",
+        "friendly_name": "Nuremberg Laws",
+        "year": 1935,
+        "description": "Nazi racial laws stripped German Jews of citizenship and banned marriages between Jews and non-Jews.",
+        "score": 0,
+        "shared": []
+      }
+    ]
+  }
+]

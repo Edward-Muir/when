@@ -1,0 +1,15 @@
+{
+  "slug": "first-gas-chamber-execution",
+  "description": "A dim, painterly view of a riveted octagonal steel chamber with a round porthole window and a heavy wheel-latched door. Inside sits an empty wooden-and-metal chair with straps. Pipes, a pressure gauge and valves run up the right side. The chamber stands in a dark stone-walled room lit by a single overhead light. No people, no text.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

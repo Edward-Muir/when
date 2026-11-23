@@ -1,0 +1,253 @@
+{
+  "beats": [
+    {
+      "beat": 0,
+      "decision": "new",
+      "slug": "rosetta-stone-tax-decree",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 1,
+      "decision": "new",
+      "slug": "han-dynasty-census",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 2,
+      "decision": "new",
+      "slug": "quirinius-census-judea",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 3,
+      "decision": "new",
+      "slug": "danegeld-first-paid",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 4,
+      "decision": "reuse",
+      "slug": "domesday-book",
+      "why": "same survey, same year"
+    },
+    {
+      "beat": 5,
+      "decision": "new",
+      "slug": "saladin-tithe-levied",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 6,
+      "decision": "reuse",
+      "slug": "magna-carta",
+      "why": "same charter sealed the same year"
+    },
+    {
+      "beat": 7,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 8,
+      "decision": "new",
+      "slug": "ship-money-levied",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 9,
+      "decision": "new",
+      "slug": "window-tax-england",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 10,
+      "decision": "new",
+      "slug": "peter-great-beard-tax",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 11,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 12,
+      "decision": "reuse",
+      "slug": "stamp-act",
+      "why": "same Act, same year"
+    },
+    {
+      "beat": 13,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 14,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 15,
+      "decision": "reuse",
+      "slug": "first-us-census",
+      "why": "same census, same year"
+    },
+    {
+      "beat": 16,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 17,
+      "decision": "reuse",
+      "slug": "first-british-income-tax",
+      "why": "same first income tax, same year"
+    },
+    {
+      "beat": 18,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 19,
+      "decision": "new",
+      "slug": "corn-laws-enacted",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 20,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 21,
+      "decision": "new",
+      "slug": "peel-revives-income-tax",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 22,
+      "decision": "reuse",
+      "slug": "corn-laws-repealed-britain",
+      "why": "same repeal, same year"
+    },
+    {
+      "beat": 23,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 24,
+      "decision": "new",
+      "slug": "us-first-federal-income-tax",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 25,
+      "decision": "reuse",
+      "slug": "hollerith-tabulator-census",
+      "why": "same census tabulation, same year"
+    },
+    {
+      "beat": 26,
+      "decision": "new",
+      "slug": "peoples-budget-lloyd-george",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 27,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 28,
+      "decision": "reuse",
+      "slug": "us-federal-income-tax",
+      "why": "same Sixteenth Amendment, same year"
+    },
+    {
+      "beat": 29,
+      "decision": "reuse",
+      "slug": "smoot-hawley-tariff",
+      "why": "same tariff act, same year"
+    },
+    {
+      "beat": 30,
+      "decision": "reuse",
+      "slug": "social-security-act",
+      "why": "same Act, same year"
+    },
+    {
+      "beat": 31,
+      "decision": "new",
+      "slug": "pay-as-you-go-withholding",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 32,
+      "decision": "reuse",
+      "slug": "gatt-established",
+      "why": "same GATT agreement, same year"
+    },
+    {
+      "beat": 33,
+      "decision": "new",
+      "slug": "france-introduces-vat",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 34,
+      "decision": "new",
+      "slug": "california-proposition-13",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 35,
+      "decision": "cut",
+      "slug": null,
+      "why": "weakest on scope or fame, or in a crowded decade (1760-1850); trimmed to reach 30"
+    },
+    {
+      "beat": 36,
+      "decision": "new",
+      "slug": "scotland-poll-tax",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 37,
+      "decision": "new",
+      "slug": "nafta-takes-effect",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 38,
+      "decision": "new",
+      "slug": "china-abolishes-agricultural-tax",
+      "why": "no catalogue card for this event"
+    },
+    {
+      "beat": 39,
+      "decision": "new",
+      "slug": "global-minimum-corporate-tax-deal",
+      "why": "no catalogue card for this event"
+    }
+  ],
+  "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 7/8               (advisory, 6+ is spread)\n  PASS  band 0 5               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 2 in 2-6      (want 3 or fewer in any 10 years)\n  PASS  shared 2 (english-history) (want 4 or fewer with any one theme)",
+  "overlap": "Overlap against 77 earlier themes:\n        2  english-history        domesday-book, magna-carta\n        1  kings-of-england       magna-carta\n        1  famine                 corn-laws-repealed-britain\n        1  silicon-dreams         hollerith-tabulator-census",
+  "footholds": [
+    "domesday-book",
+    "magna-carta",
+    "stamp-act",
+    "first-us-census",
+    "first-british-income-tax"
+  ]
+}

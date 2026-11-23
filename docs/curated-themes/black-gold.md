@@ -98,6 +98,7 @@ blind grader rated very hard to date from their text.
   - 2015, the US lifts its ban on exporting crude.
 
   All five are lesser-known beats that crowd a stretch already holding three cards.
+
 - **Dropped before reconciling:** Hubbert's 1956 peak-oil forecast. It was the fourth beat in
   1951-1960, and the spine checker allows at most three in any ten years.
 - **Catalogue cards in scope that were left out:**
@@ -119,3 +120,12 @@ Two descriptions were corrected during the fact check:
   previous decade" was a relative dating clue.
 - `exxon-mobil-merger` now says "the largest oil company", because the sources don't support
   "the largest company".
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Oil and gas milestones, covering discoveries, drilling feats, pipelines, tankers, cartels and price shocks.
+- **Fact:** A barrel of oil holds 42 US gallons, a size taken from the tierce, a wine cask that was also used to ship herring, molasses and butter.
+
+Sources: [aoghs.org](https://aoghs.org/transportation/history-of-the-42-gallon-oil-barrel) (defined the wine puncheon as a cask holding 84 gallons and a tierce as holding 42 gallons; a standard container for shipping everything from eel, salmon, her...).

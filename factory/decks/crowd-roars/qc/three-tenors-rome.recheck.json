@@ -1,0 +1,15 @@
+{
+  "slug": "three-tenors-rome",
+  "description": "A night painting of massive ruined brick Roman baths lit in warm orange, with a raised stage in front holding rows of chairs, music stands and microphone stands, and empty audience chairs in the foreground. No people, no text, no frame, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

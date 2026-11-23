@@ -1,0 +1,15 @@
+{
+  "slug": "prince-purple-rain-album",
+  "description": "A dark purple oil-style painting of a stage in thick purple haze. A purple motorcycle sits left of an upright piano, with a ruffled sequined purple jacket draped over the stool. A rain-streaked window with blurred city lights is behind. Mic stands, cables and amplifiers fill the edges; the word 'Marshall' is legibly painted on the left amp. Fills the image edge to edge, no frame, nothing graphic.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "fail",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "fail",
+  "reason": "The brand name 'Marshall' is legibly painted on the amplifier at the left edge. Repaint the amps without lettering. The rest matches the card."
+}

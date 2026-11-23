@@ -1,0 +1,227 @@
+{
+  "deck": "platinum",
+  "name": "Platinum",
+  "stage": "pr-open",
+  "created_at": "2026-11-17T03:20:19.399Z",
+  "updated_at": "2026-11-17T15:09:50.867Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-17T03:20:19.399Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-17T04:10:00.617Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-17T14:07:29.686Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-17T15:07:48.824Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-17T15:09:50.867Z"
+    }
+  ],
+  "slugs": {
+    "elvis-presley-debut-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1ec5e26e8564d57549b8364911c408735e5165df9c84655a58d527e19a8dd814",
+      "updated_at": "2026-11-17T06:08:36.204Z"
+    },
+    "miles-davis-kind-of-blue": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9a251d7bc9511cc20f4ebad2a41d487e17030436eb21411979de5207a2bcd956",
+      "updated_at": "2026-11-17T06:08:36.237Z"
+    },
+    "dylan-freewheelin-album": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "19179beaf9caa8614b30ab0e8750290dac038c37709c067851a19017608a595f",
+      "updated_at": "2026-11-17T08:07:57.015Z"
+    },
+    "beach-boys-pet-sounds": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a9ebdaaf3c5cb72f850ed32aa14e760e3923279d85b30bc22070558b5aaa7e9c",
+      "updated_at": "2026-11-17T06:08:36.301Z"
+    },
+    "beatles-sgt-pepper": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "e4d359e6aa20a5fef6d1b256589fa0fba579bbbf38adb3c6096e049423173a24",
+      "updated_at": "2026-11-17T08:07:57.047Z"
+    },
+    "beatles-abbey-road": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "a95589dad3250392280dc1c741f19e18f90954dc5518e0010b463871a6a2e371",
+      "updated_at": "2026-11-17T06:08:36.368Z"
+    },
+    "led-zeppelin-iv-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3b46790b7ced4310dddaea5db077cf5ab28f46e07d125edf66eb8db24bfb7d9c",
+      "updated_at": "2026-11-17T06:08:36.405Z"
+    },
+    "bowie-ziggy-stardust-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d9d3a68ebfd26022ef7e210f7bc28beac25a2f98cfb75c201a3423425899c123",
+      "updated_at": "2026-11-17T06:08:36.442Z"
+    },
+    "pink-floyd-dark-side-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "d947b36e04f7283520bea27234254e0cfeff810c24b549df474a1a3aa86519e2",
+      "updated_at": "2026-11-17T06:08:36.477Z"
+    },
+    "springsteen-born-to-run-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c9e1e52e71b07d93a69984fb9f57e4faaa6461770067c47028dfb49e55a7f2f8",
+      "updated_at": "2026-11-17T06:08:36.511Z"
+    },
+    "eagles-hotel-california-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e2cb44b4597c4b84839f4e4d45c39a268283a02f2da2de376edcb0cb4c3a846b",
+      "updated_at": "2026-11-17T08:07:57.080Z"
+    },
+    "fleetwood-mac-rumours-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9bbdfcb9baa54879285342e7bc8122ed2c4e341f036d50fb89fd9d216900300d",
+      "updated_at": "2026-11-17T08:07:57.114Z"
+    },
+    "pink-floyd-the-wall-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3935fc1bfbce96227ee933c014a9106ebc38c00ba5cadbd2925346ee1d392da8",
+      "updated_at": "2026-11-17T08:07:57.146Z"
+    },
+    "acdc-back-in-black-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3102494d0c8164c4c9b5a3d1243964810239a62d8965908b3e0a92070819a788",
+      "updated_at": "2026-11-17T08:07:57.179Z"
+    },
+    "prince-purple-rain-album": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "dbb9c0b9c5b4c3f7226ee7290d69249ab13050e009c7db47fbdb6ecb769d5b52",
+      "updated_at": "2026-11-17T10:07:48.442Z"
+    },
+    "u2-joshua-tree-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f7f626224d35f50628b4bf8b58d0b5cf518b7b3757efedfc8a07bd394c54ac45",
+      "updated_at": "2026-11-17T08:07:57.256Z"
+    },
+    "madonna-like-a-prayer-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "39223a392dfde961dab710551edea930ffcdf65f982dbb1bf22a243229d013d6",
+      "updated_at": "2026-11-17T08:07:57.289Z"
+    },
+    "nas-illmatic-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e86149a4420db6596321637b4b46944a239401bcd5cf5fa5882a8f98f9f64015",
+      "updated_at": "2026-11-17T08:07:57.324Z"
+    },
+    "radiohead-ok-computer-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6d3eba342919a8b0cf91e2e1c01eabc8ac07f5bec4c74e6acb4518a79446db6c",
+      "updated_at": "2026-11-17T10:07:48.477Z"
+    },
+    "lauryn-hill-miseducation-album": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "de35db82858de2d2f3a0f4933d32dc15437d7bfcd7bb3779d1c1e584d47fbcdc",
+      "updated_at": "2026-11-17T14:07:29.686Z"
+    },
+    "norah-jones-come-away-with-me-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "71b457fc1083218877dca19687fcfba9617fa0d915a50ca8b2424ee1d34f48d8",
+      "updated_at": "2026-11-17T10:07:48.512Z"
+    },
+    "amy-winehouse-back-to-black-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "3687a81f3596ab4c6898ce6585003255f45224cc015379f9920d29cb24165664",
+      "updated_at": "2026-11-17T10:07:48.544Z"
+    },
+    "adele-21-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c17d0887b478d39e926154eb8cdece6c139abb72eceb663b2b36c44a25f6aca2",
+      "updated_at": "2026-11-17T12:07:48.386Z"
+    },
+    "beyonce-surprise-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0465ac2e0df69c728ad5c7a9dc3982ae76613aabb6fdd566a2601854cda23b4a",
+      "updated_at": "2026-11-17T10:07:48.575Z"
+    },
+    "kendrick-to-pimp-a-butterfly-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8bba051a9223c98bccb46b7920eac0387b5314190fe763f11e34c074abfbc0c0",
+      "updated_at": "2026-11-17T10:07:48.606Z"
+    },
+    "beyonce-lemonade-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0b4ccdfda80733b4c6454449eb799bd4c5b6e049ce0a754a5f0e1527912a9d53",
+      "updated_at": "2026-11-17T12:07:48.418Z"
+    },
+    "billie-eilish-debut-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e2c06997eb3c38a3edb535516a4d4036b3ae51645d8f7749562c5016c6c1b8bd",
+      "updated_at": "2026-11-17T12:07:48.449Z"
+    },
+    "taylor-swift-folklore-album": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "8dab759afc911c3960def10d20cfd7d697534811b3010443c193d94aea91fc48",
+      "updated_at": "2026-11-17T12:07:48.494Z"
+    }
+  }
+}

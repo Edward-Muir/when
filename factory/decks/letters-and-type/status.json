@@ -1,0 +1,157 @@
+{
+  "deck": "letters-and-type",
+  "name": "Letters & Type",
+  "stage": "pr-open",
+  "created_at": "2026-11-18T13:18:46.443Z",
+  "updated_at": "2026-11-18T22:09:16.166Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-18T13:18:46.443Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-18T14:11:42.720Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-18T21:07:31.615Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-18T22:07:33.658Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-18T22:09:16.166Z"
+    }
+  ],
+  "slugs": {
+    "jenson-roman-typeface": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "079318a171467cab06ceaf23ac8e44fa4a156a10934c1bbbbfcf2d6e41ca94ab",
+      "updated_at": "2026-11-18T15:08:38.473Z"
+    },
+    "caxton-westminster-press": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "f01a53e3ff6b7692befd146d933155482d6cbb14be57bdbf1f273131798dbe64",
+      "updated_at": "2026-11-18T15:08:38.513Z"
+    },
+    "garamond-roman-type": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "456060a22fdae7b4f826a2c9240ac0cd0d59d35e24fbebb5195201ad6245a955",
+      "updated_at": "2026-11-18T15:08:38.551Z"
+    },
+    "bay-psalm-book": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "c9ecea05bba43c7b5f9efcbf0f7ae4b0a433fb211f8ebb342385321301573cd7",
+      "updated_at": "2026-11-18T15:08:38.587Z"
+    },
+    "caslon-type-specimen": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5161efb2f767f2632ea52a88f81000dc4f185f74eb3c919ff48d342f03b101f8",
+      "updated_at": "2026-11-18T15:08:38.620Z"
+    },
+    "baskerville-virgil": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cda73fda65739013525e6314b55919c12c74f153bd655ef38af49fe2847d9369",
+      "updated_at": "2026-11-18T15:08:38.659Z"
+    },
+    "first-sans-serif-typeface": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "0800bf12cff828b90ec016047e83809572949c2e02249f6bd7a3953ad4bf5177",
+      "updated_at": "2026-11-18T17:08:06.974Z"
+    },
+    "sholes-typewriter-patent": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "662af2448ce0d02336e1d4950bfc19c2c9a51c6a09be0dbaa2d2548d1062262b",
+      "updated_at": "2026-11-18T15:08:38.738Z"
+    },
+    "remington-typewriter-sales": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "6829309eef4e27bbb9a3129f73b25bb00f9489d8c5f7105e967e565a8958fa54",
+      "updated_at": "2026-11-18T15:08:38.775Z"
+    },
+    "johnston-london-typeface": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "ad5fe577020a9771c9687c8b3c98aa582d2db6521da80f61fca563c7653029c5",
+      "updated_at": "2026-11-18T17:08:07.008Z"
+    },
+    "futura-typeface-released": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "e792b969dbde2d20b0dca4be29f5d5bc7f41763bdca9b99f0c08787818474e10",
+      "updated_at": "2026-11-18T17:08:07.042Z"
+    },
+    "times-new-roman-debut": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "1b6192e2e62ba4e2be437019d54a6740ad250849f6f65ed072c77b60726e2437",
+      "updated_at": "2026-11-18T17:08:07.076Z"
+    },
+    "helvetica-released": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "4ecc24ff2cbb30172dfd80efe688694b7ca3591034bce9a317dea80915b3c7f6",
+      "updated_at": "2026-11-18T17:08:07.110Z"
+    },
+    "ibm-selectric-typewriter": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "53a818609dfa2298d95e3bdb2b0f0c1caf9015aaba25fc35738d0a49ee6ef0cb",
+      "updated_at": "2026-11-18T17:08:07.148Z"
+    },
+    "project-gutenberg-begins": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "76f9e832759e4aacdf9ded225aa579fcc5c9f734624dab4a9017b95c2c8a5b9c",
+      "updated_at": "2026-11-18T17:08:07.184Z"
+    },
+    "desktop-publishing-arrives": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "dce6f437e2fe67177df245d41014923f0c5811d7ab0026a0d65c9d2cf1de431a",
+      "updated_at": "2026-11-18T17:08:07.225Z"
+    },
+    "comic-sans-created": {
+      "state": "qc-pass",
+      "attempts": 3,
+      "reason": null,
+      "sha256": "aa1639800ff8a5d52ed368666af2bf3a2f7590a61a3f81a9c400fa2375986b33",
+      "updated_at": "2026-11-18T21:07:31.615Z"
+    },
+    "emoji-added-to-unicode": {
+      "state": "qc-pass",
+      "attempts": 2,
+      "reason": null,
+      "sha256": "00e0caa28af0168f3ecb22616c7179cae0052fe4b16d532f3c94e571eb93ced6",
+      "updated_at": "2026-11-18T19:07:48.042Z"
+    }
+  }
+}

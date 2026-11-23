@@ -1,0 +1,101 @@
+{
+  "deck": "habemus-papam",
+  "name": "Habemus Papam",
+  "stage": "pr-open",
+  "created_at": "2026-11-21T12:16:20.816Z",
+  "updated_at": "2026-11-21T15:08:38.721Z",
+  "stage_history": [
+    {
+      "stage": "authored",
+      "at": "2026-11-21T12:16:20.816Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-21T13:09:24.147Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-21T14:07:20.888Z"
+    },
+    {
+      "stage": "uploaded",
+      "at": "2026-11-21T15:06:57.927Z"
+    },
+    {
+      "stage": "pr-open",
+      "at": "2026-11-21T15:08:38.721Z"
+    }
+  ],
+  "slugs": {
+    "fourth-lateran-council": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0abecb0006a1b70eff337332dd182982b35d5f6e6bf75d4299050cd0eef234e0",
+      "updated_at": "2026-11-21T14:07:20.564Z"
+    },
+    "celestine-v-resigns": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "ec399bc892a7531ca37bd06f181b18ebd8948b732b930ede394d72612fc39ec1",
+      "updated_at": "2026-11-21T14:07:20.615Z"
+    },
+    "council-constance-ends-schism": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "2cb3a6727f31d60561f30a07c4e62f216ce5db088526de97e7d182d23a73f363",
+      "updated_at": "2026-11-21T14:07:20.650Z"
+    },
+    "alexander-vi-elected-pope": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "7df634850266db145d82ed9374e032040f14c8e9a266fea70b9dbe79e7880af4",
+      "updated_at": "2026-11-21T14:07:20.684Z"
+    },
+    "clement-xiv-suppresses-jesuits": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "cb5a982f9c3b9d3862eecea595c28e6ba511e7628e38fe9e09f63bb62eaf162a",
+      "updated_at": "2026-11-21T14:07:20.718Z"
+    },
+    "pius-ix-elected-pope": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9c5fa75008c1a6e37e40b90961a28ec62d57bf3842f17f99c444fd74e697f311",
+      "updated_at": "2026-11-21T14:07:20.752Z"
+    },
+    "papal-infallibility-declared": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "0c62d74f130c076a1abea65080beb949117904598f79301be0e384033e933624",
+      "updated_at": "2026-11-21T14:07:20.786Z"
+    },
+    "benedict-xvi-elected-pope": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "5628fc440fceeea3c89580cd19f9bebd080cd0ea9d4419f70a5478a6a9d2aa2d",
+      "updated_at": "2026-11-21T14:07:20.819Z"
+    },
+    "francis-elected-first-latin-american-pope": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "37e526e710e36f700f3fc2970718d626f0f5010487492145b4a8a2030e7d3d2d",
+      "updated_at": "2026-11-21T14:07:20.853Z"
+    },
+    "leo-xiv-elected-first-american-pope": {
+      "state": "qc-pass",
+      "attempts": 1,
+      "reason": null,
+      "sha256": "9ebc337bb6d56838f4f4b55a14561627d5163dcb7a4232625f9c9d72e18e6e8f",
+      "updated_at": "2026-11-21T14:07:20.888Z"
+    }
+  }
+}

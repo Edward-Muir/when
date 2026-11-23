@@ -108,3 +108,14 @@ The deck is empty before 1745 and between 1745 and 1800, as the subject is.
   grid built 1927-33, interconnected regional operation from 1933, and one integrated system
   from 1938. The spine writer took 1935 from National Grid's own history, which the fact
   checker could not confirm. Worth a reviewer's call: 1933 is the better-attested start.
+
+## Intro
+
+The popup this theme opens with (rules in [index.md](index.md#theme-intros)).
+
+- **Blurb:** Thirty ways of making, storing and moving electric power, including batteries, generators, grids and blackouts.
+- **Fact:** Japan's grid is split in two. Tokyo and the east run at 50 hertz and the west at 60, so power can cross only through frequency converter stations.
+
+Sources: [spectrum.ieee.org](https://spectrum.ieee.org/why-japans-fragmented-grid-cant-cope) (Eastern Japan, including Tokyo, runs on 50 Hz, while the rest of the country runs at 60 Hz; "Together these three facilities can push up to 1.2 GW of power e...).
+
+Reworded from the writer's draft: the 1.2 gigawatt figure is from 2011 and the link has been enlarged since.

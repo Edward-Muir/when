@@ -1,0 +1,15 @@
+{
+  "slug": "madonna-like-a-prayer-album",
+  "description": "A dim, candle-lit church interior. A dark wooden pew sits in the foreground with a black lace-like cloth or pair of gloves and a wooden rosary with a small cross lying on its seat. Stained-glass windows glow at the back above an altar with rows of lit candles. Black robes hang on a rail on the left wall. No people are visible. The painting is an oil-style artwork edge to edge, with no text or frame.",
+  "checks": {
+    "subject": "unsure",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "unsure",
+  "reason": "The card asks for a gospel choir in long robes singing under a stained-glass window. The picture shows an empty church with robes hung on a rail and no singers. The rosary and lace-like gloves on the pew match the card, but a generic church interior could stand for many religious events, so the subject cannot be confirmed."
+}
