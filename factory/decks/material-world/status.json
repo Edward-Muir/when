@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-23T02:24:32.328Z",
+  "updated_at": "2026-11-23T02:27:26.998Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -121,10 +121,11 @@
       "updated_at": "2026-11-23T02:24:32.328Z"
     },
     "parkesine-first-plastic": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "efb8150c192f12333d35f46617451c572cee3dec90136f57180d1014b2addf21",
+      "updated_at": "2026-11-23T02:27:26.998Z"
     },
     "polyethylene-discovered-icl": {
       "state": "pending",
