@@ -1,21 +1,26 @@
 {
   "deck": "civil-rights",
   "name": "Civil Rights Road",
-  "stage": "authored",
+  "stage": "art-in-progress",
   "created_at": "2026-11-23T05:15:38.621Z",
-  "updated_at": "2026-11-23T05:15:38.621Z",
+  "updated_at": "2026-11-23T06:09:12.118Z",
   "stage_history": [
     {
       "stage": "authored",
       "at": "2026-11-23T05:15:38.621Z"
+    },
+    {
+      "stage": "art-in-progress",
+      "at": "2026-11-23T06:09:12.118Z"
     }
   ],
   "slugs": {
     "free-african-society-founded": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "0703aed37aa76cb0f54d8a72f5fb08a3373b2f15d63797dc47b421b672afa07b",
+      "updated_at": "2026-11-23T06:09:12.118Z"
     },
     "walkers-appeal-pamphlet": {
       "state": "pending",
