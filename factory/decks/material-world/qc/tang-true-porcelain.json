@@ -1,0 +1,15 @@
+{
+  "slug": "tang-true-porcelain",
+  "description": "A painted scene of a man in a brown tunic and trousers, with his hair in a topknot, holding long iron tongs that grip a glowing white bowl over a fire. A dark silhouetted figure stands at right beside a glowing brick kiln. On the left, a table holds rows of white cups and bowls, and another worker stands in the dim background. Arched brick kilns and smoke fill the workshop, and the image runs edge to edge with no visible text or frame.",
+  "checks": {
+    "subject": "pass",
+    "era": "pass",
+    "no_text": "pass",
+    "no_frame": "pass",
+    "not_graphic": "pass",
+    "birth_adult": "pass",
+    "scene_rules": "pass"
+  },
+  "verdict": "pass",
+  "reason": ""
+}

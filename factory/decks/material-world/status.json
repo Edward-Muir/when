@@ -1,9 +1,9 @@
 {
   "deck": "material-world",
   "name": "Material World",
-  "stage": "art-in-progress",
+  "stage": "ready-to-ship",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-23T02:35:55.849Z",
+  "updated_at": "2026-11-23T03:07:12.010Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -12,6 +12,10 @@
     {
       "stage": "art-in-progress",
       "at": "2026-11-22T21:08:50.058Z"
+    },
+    {
+      "stage": "ready-to-ship",
+      "at": "2026-11-23T03:07:12.010Z"
     }
   ],
   "slugs": {
@@ -86,67 +90,67 @@
       "updated_at": "2026-11-22T22:07:44.667Z"
     },
     "glassblowing-invented-syria": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "33f105375ec0e129fe7b2a8b14d5b6238184f90bba8a55effa98a6f17f680597",
-      "updated_at": "2026-11-23T02:09:37.962Z"
+      "updated_at": "2026-11-23T03:07:11.754Z"
     },
     "tang-true-porcelain": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "ea51c98e39949a1da092904da0d23e9b88662f4c202f8e412369168ef33367a8",
-      "updated_at": "2026-11-23T02:12:07.938Z"
+      "updated_at": "2026-11-23T03:07:11.794Z"
     },
     "murano-cristallo-glass": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "81eeaea165201618a5b822a97dcf88e25daaababf592b9005083e91f2f6e213a",
-      "updated_at": "2026-11-23T02:18:48.512Z"
+      "updated_at": "2026-11-23T03:07:11.825Z"
     },
     "bottger-european-porcelain": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "7127d4db9f905c389f03bebef4ef4f212cf279f0641fe107d23348c209519b5c",
-      "updated_at": "2026-11-23T02:21:38.468Z"
+      "updated_at": "2026-11-23T03:07:11.857Z"
     },
     "darby-coke-smelting": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "9df43fefd4a766ba304fbd6c6f4934dc6538eed60e93674d345ef08b2acb83da",
-      "updated_at": "2026-11-23T02:24:32.328Z"
+      "updated_at": "2026-11-23T03:07:11.888Z"
     },
     "parkesine-first-plastic": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "efb8150c192f12333d35f46617451c572cee3dec90136f57180d1014b2addf21",
-      "updated_at": "2026-11-23T02:27:26.998Z"
+      "updated_at": "2026-11-23T03:07:11.919Z"
     },
     "polyethylene-discovered-icl": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "926cfde98b64c81b836d2fdcb62bc7f493605722387ea00c46232ee5897b35d6",
-      "updated_at": "2026-11-23T02:30:17.208Z"
+      "updated_at": "2026-11-23T03:07:11.951Z"
     },
     "synthetic-diamonds-ge": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "e0cbab5ba89b31ed3288f1487e31e78712b057c1122401eb8fb994fc55ebfd84",
-      "updated_at": "2026-11-23T02:33:07.519Z"
+      "updated_at": "2026-11-23T03:07:11.981Z"
     },
     "pilkington-float-glass": {
-      "state": "downloaded",
+      "state": "qc-pass",
       "attempts": 1,
       "reason": null,
       "sha256": "c24eb2c88179d82e4e05f3ed9aafe557249b6be17e66ec9244358ae9247ca854",
-      "updated_at": "2026-11-23T02:35:55.849Z"
+      "updated_at": "2026-11-23T03:07:12.010Z"
     }
   }
 }
