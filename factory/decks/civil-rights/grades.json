@@ -1,0 +1,17 @@
+{
+  "free-african-society-founded": {"recognition": "low", "inferability": "low", "anchors": ["Philadelphia", "Richard Allen"], "why": "obscure; names hint at early America but no firm era"},
+  "walkers-appeal-pamphlet": {"recognition": "low", "inferability": "medium", "anchors": ["clothier", "pamphlet", "Black Americans"], "why": "pamphlet and slavery-era resistance suggest antebellum America"},
+  "crandall-school-black-girls": {"recognition": "low", "inferability": "medium", "anchors": ["academy", "boycott"], "why": "school segregation fight with an academy points to 19th century, not firm"},
+  "fourteenth-amendment-ratified": {"recognition": "high", "inferability": "high", "anchors": ["freed Black Americans", "amendment"], "why": "freed Black Americans places it in Reconstruction"},
+  "fifteenth-amendment-ratified": {"recognition": "high", "inferability": "high", "anchors": ["Black men the franchise", "amendment"], "why": "Reconstruction era voting amendment"},
+  "wells-southern-horrors": {"recognition": "medium", "inferability": "high", "anchors": ["lynching", "Memphis journalist"], "why": "anti-lynching campaign places it in the late 19th century US"},
+  "gandhi-thrown-off-train": {"recognition": "high", "inferability": "high", "anchors": ["Gandhi", "South Africa"], "why": "famous figure as a young lawyer, colonial South Africa"},
+  "du-bois-souls-black-folk": {"recognition": "medium", "inferability": "high", "anchors": ["Du Bois", "colour line", "accommodation"], "why": "Du Bois and the colour line place it around 1900"},
+  "garvey-founds-unia": {"recognition": "medium", "inferability": "high", "anchors": ["Marcus Garvey", "diaspora"], "why": "Garvey is a known figure of the early 20th century"},
+  "first-pan-african-congress-paris": {"recognition": "low", "inferability": "high", "anchors": ["peace conference in Paris", "colonial reform"], "why": "major peace conference plus colonial reform points to after WWI"},
+  "pullman-porters-union": {"recognition": "medium", "inferability": "high", "anchors": ["A. Philip Randolph", "sleeping-car", "Pullman"], "why": "railroad sleeping cars and Randolph place it in early 20th century"},
+  "executive-order-8802": {"recognition": "medium", "inferability": "high", "anchors": ["Roosevelt", "war industries", "march on the capital"], "why": "Roosevelt and war industries point to WWII"},
+  "truman-desegregates-military": {"recognition": "high", "inferability": "high", "anchors": ["Truman", "armed forces"], "why": "Truman places it in the late 1940s"},
+  "mlk-day-signed": {"recognition": "high", "inferability": "high", "anchors": ["slain civil rights leader", "national holiday"], "why": "after King's assassination; clearly late 20th century"},
+  "tutu-nobel-peace-prize": {"recognition": "high", "inferability": "high", "anchors": ["Tutu", "apartheid", "Nobel"], "why": "apartheid era, famous figure"}
+}
