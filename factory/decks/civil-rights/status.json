@@ -3,7 +3,7 @@
   "name": "Civil Rights Road",
   "stage": "art-in-progress",
   "created_at": "2026-11-23T05:15:38.621Z",
-  "updated_at": "2026-11-23T09:17:52.506Z",
+  "updated_at": "2026-11-23T09:21:00.247Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-23T09:17:52.506Z"
     },
     "tutu-nobel-peace-prize": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "b639dcc835a2acc2f714e3396734e338c3942f646368f4074af572924f758c70",
+      "updated_at": "2026-11-23T09:21:00.247Z"
     }
   }
 }
