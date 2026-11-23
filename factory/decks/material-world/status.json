@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-23T02:30:17.208Z",
+  "updated_at": "2026-11-23T02:33:07.519Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -135,10 +135,11 @@
       "updated_at": "2026-11-23T02:30:17.208Z"
     },
     "synthetic-diamonds-ge": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "e0cbab5ba89b31ed3288f1487e31e78712b057c1122401eb8fb994fc55ebfd84",
+      "updated_at": "2026-11-23T02:33:07.519Z"
     },
     "pilkington-float-glass": {
       "state": "pending",
