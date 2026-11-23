@@ -1,0 +1,220 @@
+{
+ "beats": [
+  {
+   "beat": 0,
+   "decision": "new",
+   "slug": "free-african-society-founded"
+  },
+  {
+   "beat": 1,
+   "decision": "new",
+   "slug": "walkers-appeal-pamphlet"
+  },
+  {
+   "beat": 2,
+   "decision": "new",
+   "slug": "crandall-school-black-girls"
+  },
+  {
+   "beat": 3,
+   "decision": "new",
+   "slug": "fourteenth-amendment-ratified"
+  },
+  {
+   "beat": 4,
+   "decision": "new",
+   "slug": "fifteenth-amendment-ratified"
+  },
+  {
+   "beat": 5,
+   "decision": "cut",
+   "slug": "",
+   "why": "weakest in the denser 1860s-70s stretch; spare"
+  },
+  {
+   "beat": 6,
+   "decision": "new",
+   "slug": "wells-southern-horrors"
+  },
+  {
+   "beat": 7,
+   "decision": "new",
+   "slug": "gandhi-thrown-off-train"
+  },
+  {
+   "beat": 8,
+   "decision": "reuse",
+   "slug": "plessy-v-ferguson",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 9,
+   "decision": "new",
+   "slug": "du-bois-souls-black-folk"
+  },
+  {
+   "beat": 10,
+   "decision": "reuse",
+   "slug": "naacp-founded",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 11,
+   "decision": "reuse",
+   "slug": "anc-founded",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 12,
+   "decision": "new",
+   "slug": "garvey-founds-unia"
+  },
+  {
+   "beat": 13,
+   "decision": "new",
+   "slug": "first-pan-african-congress-paris"
+  },
+  {
+   "beat": 14,
+   "decision": "new",
+   "slug": "pullman-porters-union"
+  },
+  {
+   "beat": 15,
+   "decision": "cut",
+   "slug": "",
+   "why": "weak in crowded early-20th-century run"
+  },
+  {
+   "beat": 16,
+   "decision": "cut",
+   "slug": "",
+   "why": "weak in crowded early-20th-century run"
+  },
+  {
+   "beat": 17,
+   "decision": "reuse",
+   "slug": "marian-anderson-lincoln-memorial",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 18,
+   "decision": "new",
+   "slug": "executive-order-8802"
+  },
+  {
+   "beat": 19,
+   "decision": "new",
+   "slug": "truman-desegregates-military"
+  },
+  {
+   "beat": 20,
+   "decision": "reuse",
+   "slug": "brown-v-board",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 21,
+   "decision": "reuse",
+   "slug": "montgomery-bus-boycott",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 22,
+   "decision": "reuse",
+   "slug": "march-on-washington",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 23,
+   "decision": "reuse",
+   "slug": "civil-rights-act",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 24,
+   "decision": "reuse",
+   "slug": "selma-to-montgomery-march",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 25,
+   "decision": "reuse",
+   "slug": "soweto-uprising",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 26,
+   "decision": "new",
+   "slug": "mlk-day-signed"
+  },
+  {
+   "beat": 27,
+   "decision": "new",
+   "slug": "tutu-nobel-peace-prize"
+  },
+  {
+   "beat": 28,
+   "decision": "reuse",
+   "slug": "nelson-mandela-freed",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 29,
+   "decision": "reuse",
+   "slug": "apartheid-ends",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 30,
+   "decision": "cut",
+   "slug": "",
+   "why": "1990s dense; Constitution least famous"
+  },
+  {
+   "beat": 31,
+   "decision": "cut",
+   "slug": "",
+   "why": "least famous, no placeable cue"
+  },
+  {
+   "beat": 32,
+   "decision": "reuse",
+   "slug": "obama-elected",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 33,
+   "decision": "reuse",
+   "slug": "black-lives-matter-founded",
+   "why": "Same event, same year as the existing card."
+  },
+  {
+   "beat": 34,
+   "decision": "cut",
+   "slug": "",
+   "why": "2010s dense; BLM covers it"
+  },
+  {
+   "beat": 35,
+   "decision": "reuse",
+   "slug": "george-floyd-protests",
+   "why": "Same event, same year as the existing card."
+  }
+ ],
+ "gates": "Gates:\n  PASS  size 30                (want exactly 30)\n  INFO  bins 4/8               (advisory, 6+ is spread)\n  PASS  band 0 9               (want 5+)\n  PASS  same-year pairs 0      (want 0)\n  PASS  bunching 3 in 1892-1896 (want 3 or fewer in any 10 years)\n  PASS  shared 2 (day-in-court) (want 4 or fewer with any one theme)",
+ "overlap": "Overlap against 93 earlier themes:\n        2  day-in-court           plessy-v-ferguson, brown-v-board\n        1  crowd-roars            marian-anderson-lincoln-memorial\n        1  rise-up                soweto-uprising",
+ "footholds": [
+  "plessy-v-ferguson",
+  "naacp-founded",
+  "brown-v-board",
+  "montgomery-bus-boycott",
+  "march-on-washington",
+  "civil-rights-act",
+  "selma-to-montgomery-march",
+  "nelson-mandela-freed",
+  "obama-elected",
+  "black-lives-matter-founded",
+  "george-floyd-protests"
+ ]
+}
