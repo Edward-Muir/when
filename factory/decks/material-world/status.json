@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-23T02:21:38.468Z",
+  "updated_at": "2026-11-23T02:24:32.328Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -114,10 +114,11 @@
       "updated_at": "2026-11-23T02:21:38.468Z"
     },
     "darby-coke-smelting": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "9df43fefd4a766ba304fbd6c6f4934dc6538eed60e93674d345ef08b2acb83da",
+      "updated_at": "2026-11-23T02:24:32.328Z"
     },
     "parkesine-first-plastic": {
       "state": "pending",
