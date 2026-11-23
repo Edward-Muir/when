@@ -3,7 +3,7 @@
   "name": "Material World",
   "stage": "art-in-progress",
   "created_at": "2026-11-22T20:19:59.670Z",
-  "updated_at": "2026-11-23T02:18:48.512Z",
+  "updated_at": "2026-11-23T02:21:38.468Z",
   "stage_history": [
     {
       "stage": "authored",
@@ -107,10 +107,11 @@
       "updated_at": "2026-11-23T02:18:48.512Z"
     },
     "bottger-european-porcelain": {
-      "state": "pending",
-      "attempts": 0,
+      "state": "downloaded",
+      "attempts": 1,
       "reason": null,
-      "sha256": null
+      "sha256": "7127d4db9f905c389f03bebef4ef4f212cf279f0641fe107d23348c209519b5c",
+      "updated_at": "2026-11-23T02:21:38.468Z"
     },
     "darby-coke-smelting": {
       "state": "pending",
