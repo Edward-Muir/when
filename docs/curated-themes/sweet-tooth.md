@@ -80,6 +80,14 @@ in 1868-1875**, shared **0** with any earlier theme. Re-measure rather than trus
 node scripts/theme-gap.js --slugs <the 30 above, comma-separated> --include-pending --overlap sweet-tooth
 ```
 
+**Band 0 fell to 4 on 2026-11-23**, under the publish gate of 5, once 20 more decks had landed.
+The bands are quartiles of the whole catalogue, and the landing moved the cutoff to 0.3986, just
+under Nutella (0.3987) and Ben and Jerry's (0.3996). Two of the reused cards still carried
+labels from the old grid, so they were regraded on the placement-first grid, medium to easy:
+`first-chocolate-bar` and `ice-cream-cone-debut` (high recognition, and text that gives the era
+away: a drink turned into a candy by a British firm, and the St. Louis World's Fair). Band 0 is
+**6** after that.
+
 ## Dates the fact check could not support
 
 These three stay, with descriptions that hedge, and are flagged for review:
