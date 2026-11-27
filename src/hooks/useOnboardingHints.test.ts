@@ -35,6 +35,8 @@ const base: UseOnboardingHintsArgs = {
   deckLength: 20,
   timelineLength: 1,
   activeCardName: 'a',
+  passesLeft: 3,
+  passedCount: 0,
   isMultiplayer: false,
   statsOpen: false,
   cardOpen: false,
@@ -194,7 +196,7 @@ describe('the ladder', () => {
     markHintSeen('drag');
   });
 
-  it('walks one rung per placement: wrong, correct, tapCard, stats, swap', () => {
+  it('walks one rung per placement: wrong, correct, tapCard, stats, swap, pass', () => {
     const view = setup({ timelineLength: 5 });
     const rung = (success: boolean) => {
       place(view.rerender, success, { timelineLength: 5 });
@@ -206,8 +208,9 @@ describe('the ladder', () => {
     expect(rung(true)).toBe('tapCard');
     expect(rung(true)).toBe('stats');
     expect(rung(true)).toBe('swap');
+    expect(rung(true)).toBe('pass');
 
-    // Every rung spent. Let the last strip expire on its own, then the sixth placement has
+    // Every rung spent. Let the last strip expire on its own, then the seventh placement has
     // nothing to say — and neither does the next game.
     act(() => jest.advanceTimersByTime(ACTION_HINT_MS));
     expect(view.result.current.active).toBeNull();
@@ -253,9 +256,76 @@ describe('the ladder', () => {
   });
 });
 
-describe('the swap hint', () => {
+describe('the pass hint', () => {
   beforeEach(() => {
+    ['drag', 'wrong', 'correct', 'tapCard', 'stats', 'swap'].forEach((key) =>
+      markHintSeen(key as 'drag')
+    );
+  });
+
+  it('is the last rung, shown once Swap has been taught', () => {
+    const view = setup();
+    place(view.rerender, true);
+    expect(view.result.current.active).toBe('pass');
+    expect(hasSeenHint('pass')).toBe(true);
+  });
+
+  it('waits for Swap to have been seen', () => {
+    localStorage.clear();
     ['drag', 'wrong', 'correct', 'tapCard', 'stats'].forEach((key) => markHintSeen(key as 'drag'));
+    const view = setup({ handLength: 1 });
+    // One card in hand: Swap cannot be taught, so Pass does not jump the queue.
+    place(view.rerender, true, { handLength: 1 });
+    expect(view.result.current.active).toBeNull();
+    expect(hasSeenHint('pass')).toBe(false);
+  });
+
+  it('never shows with no pass to spend, or nothing left to draw', () => {
+    const { result: spent, rerender: rerenderSpent } = setup({ passesLeft: 0 });
+    place(rerenderSpent, true, { passesLeft: 0 });
+    expect(spent.current.active).toBeNull();
+
+    const { result: dry, rerender: rerenderDry } = setup({ deckLength: 0 });
+    place(rerenderDry, true, { deckLength: 0 });
+    expect(dry.current.active).toBeNull();
+    expect(hasSeenHint('pass')).toBe(false);
+  });
+
+  it('hides when a card is passed, and does not return', () => {
+    const view = setup();
+    place(view.rerender, true);
+    expect(view.result.current.active).toBe('pass');
+
+    view.rerender({ ...base, passedCount: 1, passesLeft: 2, activeCardName: 'b' });
+    expect(view.result.current.active).toBeNull();
+
+    place(view.rerender, true, { passedCount: 1, passesLeft: 2 });
+    expect(view.result.current.active).toBeNull();
+  });
+
+  it('is settled by a pass made before it was ever shown', () => {
+    localStorage.clear();
+    markHintSeen('drag');
+    const view = setup();
+    view.rerender({ ...base, passedCount: 1, passesLeft: 2, activeCardName: 'b' });
+    expect(hasSeenHint('pass')).toBe(true);
+    expect(view.result.current.active).toBeNull();
+  });
+
+  it('is not settled by a game that opens with cards already passed', () => {
+    localStorage.clear();
+    // A resumed daily mounts with its passes already made; that is not a pass being used.
+    setup({ passedCount: 2, passesLeft: 1 });
+    expect(hasSeenHint('pass')).toBe(false);
+  });
+});
+
+describe('the swap hint', () => {
+  // `pass` is the rung after this one; seen here, so a settle after `swap` has nothing to add.
+  beforeEach(() => {
+    ['drag', 'wrong', 'correct', 'tapCard', 'stats', 'pass'].forEach((key) =>
+      markHintSeen(key as 'drag')
+    );
   });
 
   it('appears at the settle with no timer, even though the draw changed the top card', () => {
@@ -278,6 +348,15 @@ describe('the swap hint', () => {
     expect(view.result.current.active).toBeNull();
 
     act(() => jest.advanceTimersByTime(ACTION_HINT_MS * 2));
+    expect(view.result.current.active).toBeNull();
+  });
+
+  it('hides when the top card is passed instead', () => {
+    const view = setup();
+    place(view.rerender, true);
+    expect(view.result.current.active).toBe('swap');
+
+    view.rerender({ ...base, passedCount: 1, passesLeft: 2, activeCardName: 'b' });
     expect(view.result.current.active).toBeNull();
   });
 
@@ -333,7 +412,7 @@ describe('hiding when the hint has been answered', () => {
 
 describe('resetting the hints', () => {
   it('re-arms the ladder without a remount, so the menu works mid-game', () => {
-    ['drag', 'wrong', 'correct', 'tapCard', 'stats', 'swap'].forEach((key) =>
+    ['drag', 'wrong', 'correct', 'tapCard', 'stats', 'swap', 'pass'].forEach((key) =>
       markHintSeen(key as 'drag')
     );
     const view = setup();

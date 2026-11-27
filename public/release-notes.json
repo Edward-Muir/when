@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": ["Curated themes now run on Wednesdays as well as Mondays and Fridays."],
+  "unreleased": [
+    "Curated themes now run on Wednesdays as well as Mondays and Fridays.",
+    "Each game now starts with three passes to discard a card, and three correct in a row earn another."
+  ],
   "releases": [
     {
       "version": "1.40.0",

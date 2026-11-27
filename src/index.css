@@ -113,6 +113,10 @@ body {
   .hand-grid .hand-swap {
     justify-self: stretch;
     padding-left: 30px;
+    /* Above the hand's cards (the top one is z-5, a passed one in flight z-6), so a card
+       dealt in or thrown out passes under the buttons and never over the pass count. */
+    position: relative;
+    z-index: 7;
   }
 }
 

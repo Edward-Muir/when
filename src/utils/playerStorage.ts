@@ -84,6 +84,7 @@ export type HintKey =
   | 'tapCard'
   | 'stats'
   | 'swap'
+  | 'pass'
   | 'dailyTab'
   | 'archiveTab'
   | 'customTab'
@@ -92,7 +93,7 @@ export type HintKey =
   | 'reviewEye';
 export type GameHintKey = Extract<
   HintKey,
-  'drag' | 'wrong' | 'correct' | 'closeEnough' | 'tapCard' | 'stats' | 'swap'
+  'drag' | 'wrong' | 'correct' | 'closeEnough' | 'tapCard' | 'stats' | 'swap' | 'pass'
 >;
 export type TabHintKey = Extract<
   HintKey,
@@ -107,6 +108,7 @@ interface HintsSeen {
   tapCard?: boolean;
   stats?: boolean;
   swap?: boolean;
+  pass?: boolean;
   dailyTab?: boolean;
   archiveTab?: boolean;
   customTab?: boolean;
@@ -138,6 +140,8 @@ function getHintSeen(data: HintsSeen, key: HintKey): boolean {
       return data.stats === true;
     case 'swap':
       return data.swap === true;
+    case 'pass':
+      return data.pass === true;
     case 'dailyTab':
       return data.dailyTab === true;
     case 'archiveTab':
@@ -169,6 +173,8 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
       return { ...data, stats: true };
     case 'swap':
       return { ...data, swap: true };
+    case 'pass':
+      return { ...data, pass: true };
     case 'dailyTab':
       return { ...data, dailyTab: true };
     case 'archiveTab':

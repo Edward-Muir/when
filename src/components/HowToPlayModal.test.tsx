@@ -20,6 +20,12 @@ describe('HowToPlayModal', () => {
     expect(screen.queryByText('My Timeline')).toBeNull();
   });
 
+  it('explains the pass, and what it costs on a theme', () => {
+    render(<HowToPlayModal open onDismiss={jest.fn()} />);
+    expect(screen.getByText(/You start with three passes/)).toBeInTheDocument();
+    expect(screen.getByText(/A theme cannot be cleared after a\s+pass/)).toBeInTheDocument();
+  });
+
   it('dismisses from the Got it button', async () => {
     const onDismiss = jest.fn();
     render(<HowToPlayModal open onDismiss={onDismiss} />);

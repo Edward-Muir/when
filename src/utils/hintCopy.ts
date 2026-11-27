@@ -23,6 +23,7 @@ export const HINT_TEXT: Record<GameHintKey, string> = {
   tapCard: 'Tap any card to read about it',
   stats: 'Tap for game stats',
   swap: 'Swap to a different card',
+  pass: 'Stuck? Pass and draw a new card',
 };
 
 export const TAB_HINT_TEXT: Record<TabHintKey, string> = {

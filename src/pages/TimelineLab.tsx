@@ -159,6 +159,8 @@ const TimelineLab: React.FC = () => {
                 currentPlayer={player}
                 isAnimating={false}
                 onCycleHand={noop}
+                onPass={noop}
+                deckLength={1}
                 onCardTap={noop}
               />
             )}
