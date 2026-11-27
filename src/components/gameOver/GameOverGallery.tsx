@@ -12,7 +12,7 @@ import { GAME_OVER_TITLE, getGameOverEyebrow, getGameOverTitle } from '../../uti
 import { getThemeOutcome } from '../../utils/themeOutcome';
 import { getCuratedThemeIdForConfig } from '../../utils/themeReplay';
 import { getImageUrl } from '../../utils/cloudinaryImage';
-import { formatEventYear } from '../../utils/gameLogic';
+import { formatEventYear, passedCount } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
 import LeaderboardSubmit from '../LeaderboardSubmit';
 import { ModalDismissMode } from '../ui/Modal';
@@ -159,11 +159,13 @@ const Score: React.FC<{ gameState: WhenGameState; countUp: boolean }> = ({
 }) => {
   const placed = playerStats(gameState.players[0]).correct;
   const shown = useCountUp(placed, countUp);
-  // Every card of a curated deck is either placed, missed or still undealt, and the hand is
-  // empty at game over, so this is how many there were to place. The Archive shows the same
-  // figure as "High score: N/M".
+  // Every card of a curated deck is either placed, missed, passed or still undealt, and the
+  // hand is empty at game over, so this is how many there were to place. The Archive shows the
+  // same figure as "High score: N/M".
   const deckSize = getCuratedThemeIdForConfig(gameState.lastConfig)
-    ? (gameState.placementHistory?.length ?? 0) + (gameState.deck?.length ?? 0)
+    ? (gameState.placementHistory?.length ?? 0) +
+      (gameState.deck?.length ?? 0) +
+      passedCount(gameState)
     : 0;
   const unit = `${placed === 1 ? 'event' : 'events'} placed`;
   return (

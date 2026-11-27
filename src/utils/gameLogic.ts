@@ -398,6 +398,42 @@ export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): Hist
   return [...hand.slice(0, at), event, ...hand.slice(at)];
 }
 
+/**
+ * The pass: discard the top card of the hand, unplayed, and draw another (`processPass` in
+ * placementLogic.ts). Every player starts a game with `STARTING_PASSES`, and earns one more
+ * each time a run of correct placements reaches a multiple of `PASS_STREAK`.
+ *
+ * Only passes *used* are stored (`Player.passesUsed`). What was earned is read back from the
+ * player's own `placementHistory`, so there is no award step for `useWhenGame.placeCard` and
+ * `settleDailyPlacement` to keep in step, a state with no field has simply used none, and in
+ * multiplayer each player earns from their own run rather than the shared streak.
+ */
+export const STARTING_PASSES = 3;
+export const PASS_STREAK = 3;
+
+/** Passes earned by a placement history: one each time a correct run hits `PASS_STREAK`. */
+export function passesAwarded(history: readonly boolean[]): number {
+  let run = 0;
+  let awarded = 0;
+  for (const correct of history) {
+    run = correct ? run + 1 : 0;
+    if (run > 0 && run % PASS_STREAK === 0) awarded++;
+  }
+  return awarded;
+}
+
+/** Passes a player can still spend. */
+export function passesLeft(player: Player | undefined): number {
+  if (!player) return 0;
+  const earned = STARTING_PASSES + passesAwarded(player.placementHistory);
+  return Math.max(0, earned - (player.passesUsed ?? 0));
+}
+
+/** How many cards have been passed this game. */
+export function passedCount(state: { passedCards?: HistoricalEvent[] }): number {
+  return state.passedCards?.length ?? 0;
+}
+
 // Get next active (non-eliminated) player index
 export function getNextActivePlayerIndex(currentIndex: number, players: Player[]): number {
   const playerCount = players.length;
@@ -444,6 +480,7 @@ export function initializePlayers(
       hasWon: false,
       isEliminated: false,
       placementHistory: [],
+      passesUsed: 0,
     });
   }
 

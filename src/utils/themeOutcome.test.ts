@@ -42,6 +42,23 @@ const run = (correct: number, mistakes: number) => [
 ];
 
 describe('getThemeOutcome', () => {
+  // The pass's cost on a curated day: a card taken out of the theme unplayed means the theme
+  // was not got through, however cleanly the rest went.
+  it('is never survived once a card has been passed', () => {
+    const passedCards = [{ name: 'skipped' }];
+    const noMistakes = state(run(20, 0), { passedCards } as Partial<WhenGameState>);
+    expect(getThemeOutcome(noMistakes)).toEqual({ survived: false, perfect: false });
+
+    const withSpare = state(run(20, DAILY_HAND_SIZE - 1), {
+      passedCards,
+    } as Partial<WhenGameState>);
+    expect(getThemeOutcome(withSpare).survived).toBe(false);
+  });
+
+  it('is unaffected by an empty list of passed cards', () => {
+    expect(getThemeOutcome(state(run(20, 0), { passedCards: [] })).perfect).toBe(true);
+  });
+
   it('is not survived when the hand emptied on mistakes alone', () => {
     expect(getThemeOutcome(state(run(30, DAILY_HAND_SIZE)))).toEqual({
       survived: false,

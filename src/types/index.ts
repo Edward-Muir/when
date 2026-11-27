@@ -136,6 +136,12 @@ export interface Player {
   hasWon: boolean;
   isEliminated?: boolean;
   placementHistory: boolean[];
+  /**
+   * Passes this player has spent this game. What they have left is derived from it
+   * (`passesLeft` in utils/gameLogic.ts), never stored. Optional, and absent means none:
+   * states built before the pass existed, and test and dev-page literals, lack it.
+   */
+  passesUsed?: number;
 }
 
 export type GamePhase = 'loading' | 'modeSelect' | 'transitioning' | 'playing' | 'gameOver';
@@ -192,6 +198,12 @@ export interface WhenGameState {
   placementHistory: boolean[];
   /** Incorrectly placed cards, shown as tombstones at their true position (ignored by placement rules). */
   failedPlacements: FailedPlacement[];
+  /**
+   * Cards passed this game, in order: discarded unplayed, never placed and never missed.
+   * They are gone for the game, and a curated theme cannot be cleared once this is non-empty
+   * (`themeOutcome.ts`). Optional for the same reason as `Player.passesUsed`.
+   */
+  passedCards?: HistoricalEvent[];
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
   animationPhase: AnimationPhase;

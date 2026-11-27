@@ -157,6 +157,17 @@ describe('the score', () => {
     expect(screen.getByText('of 6 events placed')).toBeInTheDocument();
   });
 
+  it('counts a passed card as part of the deck, though it was never placed', () => {
+    renderGallery(
+      game({
+        lastConfig: { mode: 'suddenDeath', suddenDeathHandSize: 5, curatedThemeId: 'a-theme' },
+        deck: [card('undealt', 1800)],
+        passedCards: [card('passed-one', 1700), card('passed-two', 1750)],
+      } as Partial<WhenGameState>)
+    );
+    expect(screen.getByText('of 8 events placed')).toBeInTheDocument();
+  });
+
   it('says which game it was', () => {
     renderGallery(game());
     expect(screen.getByText('Custom game')).toBeInTheDocument();
