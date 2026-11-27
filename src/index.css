@@ -108,8 +108,7 @@ body {
   }
   /* The swap button is centred in what the fan leaves of the right column, not in the whole
      column: the cards fanned behind the hand card reach 24px to its right (and their turned
-     corners a few more), and with a 168px card a button centred in the column sits on them
-     at 360px wide. */
+     corners a few more), and a button centred in the column sits on them at 360px wide. */
   .hand-grid .hand-swap {
     justify-self: stretch;
     padding-left: 30px;
@@ -117,6 +116,14 @@ body {
        dealt in or thrown out passes under the buttons and never over the pass count. */
     position: relative;
     z-index: 7;
+  }
+  /* Below 360px the column is narrower than the padding plus a 44px button (68px at 320), so
+     the buttons give up 8px of their clearance and sit on the fan's outer corner. They are
+     above the cards, so nothing is hidden but a sliver of the deepest one. */
+  @media (max-width: 359px) {
+    .hand-grid .hand-swap {
+      padding-left: 22px;
+    }
   }
 }
 
@@ -409,7 +416,7 @@ body {
   --board-gutter: 6rem; /* w-24 */
   --board-gap: 0.75rem; /* pl-3 */
   /* The card in hand, a square. Must match SQUARE_CARD_CLASS in cardSize.ts. */
-  --hand-card: 168px;
+  --hand-card: 184px;
   --board-card: 280px; /* Card.tsx, size="landscape", sm: */
   --board-col: calc(var(--board-gutter) + var(--board-gap) + var(--board-card)); /* 388px */
   --board-inset: calc(50% - var(--board-col) / 2);

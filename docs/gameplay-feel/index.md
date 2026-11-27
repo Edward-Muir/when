@@ -331,7 +331,7 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
   which is the case the number is for (a curated theme starts at 24). Empty, it is a dashed
   outline with a muted 0, and Pass is disabled. It has no caption and is not a button: the
   counter above it keeps the "cards left" label and still opens the stats.
-- **The pile is the real art of the deck's next three cards**, `deck[0]` on top, at 30px. It
+- **The pile is the real art of the deck's next three cards**, `deck[0]` on top, at 40px. It
   was first an ink card back with a frame; the maintainer asked for the art, on the grounds
   that it makes plain what the pile is and that nobody can read a card at that size. It uses
   the `thumbnail` rung, which `useImagePrefetch` has already warmed for the next five deck

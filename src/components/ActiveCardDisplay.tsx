@@ -71,8 +71,9 @@ export function deckOrigin(pile: Box | null, hand: Box | null): DeckOrigin | nul
 }
 
 /**
- * Where a drawn card starts, on its way to `depth` places behind the top card: on the deck
- * pile in the bar's left panel, the pile's size, so it is seen to be dealt from the deck. No
+ * Where a drawn card starts, on its way to `depth` places behind the top card: on the top card
+ * of the deck pile in the bar's left panel, at that card's size, so it is seen to be dealt
+ * from the deck. No
  * fade. The card is opaque from its first frame, which keeps this clear of the framer opacity
  * flicker in the Android WebView (docs/mobile-ios).
  *
@@ -90,7 +91,11 @@ function arrivalPose(depth: number, origin: DeckOrigin | null) {
 /** How a drawn card travels from the deck: a soft spring, about a third of a second. */
 const ARRIVE = { type: 'spring' as const, stiffness: 260, damping: 28 };
 
-/** The deck pile `GameInfoCompact` renders in the same bar. */
+/**
+ * The deck pile `GameInfoCompact` renders in the same bar: its top card, which is the first in
+ * the pile, or the pile itself once the deck is empty.
+ */
+const DECK_TOP_SELECTOR = '[data-testid="deck-pile"] [data-testid="deck-card"]';
 const DECK_PILE_SELECTOR = '[data-testid="deck-pile"]';
 
 /**
@@ -105,7 +110,9 @@ function useDeckOrigin(handRef: React.RefObject<HTMLDivElement | null>) {
   const origin = useRef<DeckOrigin | null>(null);
   useLayoutEffect(() => {
     const hand = handRef.current?.getBoundingClientRect() ?? null;
-    const pileEl = document.querySelector<HTMLElement>(DECK_PILE_SELECTOR);
+    const pileEl =
+      document.querySelector<HTMLElement>(DECK_TOP_SELECTOR) ??
+      document.querySelector<HTMLElement>(DECK_PILE_SELECTOR);
     if (!pileEl || !hand) {
       origin.current = null;
       return;

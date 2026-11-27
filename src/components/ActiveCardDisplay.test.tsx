@@ -171,12 +171,13 @@ describe('the passed card', () => {
 });
 
 describe('where a drawn card is dealt from', () => {
-  // The bar at 402px wide: a 36x40 pile in the left panel, the 168px hand card in the middle.
-  const pile = { left: 40, top: 930, width: 36, height: 40 };
-  const hand = { left: 117, top: 824, width: 168, height: 168 };
+  // The bar at 402px wide: the pile's 40px top card in the left panel, the 184px hand card
+  // in the middle.
+  const pile = { left: 38, top: 930, width: 40, height: 40 };
+  const hand = { left: 109, top: 808, width: 184, height: 184 };
 
   it('is the pile, centre to centre, at the pile’s size', () => {
-    expect(deckOrigin(pile, hand)).toEqual({ x: 58 - 201, y: 950 - 908, scale: 36 / 168 });
+    expect(deckOrigin(pile, hand)).toEqual({ x: 58 - 201, y: 950 - 900, scale: 40 / 184 });
   });
 
   it('is nowhere when the pile or the hand cannot be measured', () => {

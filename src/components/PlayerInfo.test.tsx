@@ -181,6 +181,13 @@ describe('the deck pile', () => {
     );
     const layers = art().map((tile) => Number(tile.style.zIndex));
     expect(layers).toEqual([...layers].sort((a, b) => b - a));
+    // Each card under the top one steps down and to the left.
+    const px = (value: string) => parseFloat(value);
+    const tops = art().map((tile) => px(tile.style.top));
+    const lefts = art().map((tile) => px(tile.style.left));
+    expect(tops).toEqual([...tops].sort((a, b) => a - b));
+    expect(lefts).toEqual([...lefts].sort((a, b) => b - a));
+    expect(new Set(tops).size).toBe(3);
   });
 
   it('shows only as many cards as the deck still has', () => {
@@ -195,6 +202,13 @@ describe('the deck pile', () => {
     fireEvent.error(image);
     expect(within(pile()).queryAllByRole('presentation')).toHaveLength(0);
     expect(art()).toHaveLength(2);
+  });
+
+  it('keeps the count on a corner badge, off the art', () => {
+    render(<DeckPile deck={deckOf(24)} />);
+    const badge = screen.getByText('24');
+    expect(badge).toHaveClass('absolute', '-right-2', '-top-1.5');
+    art().forEach((tile) => expect(tile).not.toContainElement(badge));
   });
 
   it('shows an empty outline and a muted zero when the deck runs dry', () => {

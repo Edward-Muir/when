@@ -10,7 +10,7 @@ Full-width vertical stack:
 (no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
   └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right, light/dark under Home
-Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
+Bottom bar (`hand-bar`: the 184px hand card + 16px, pb-safe) — counter, hand card, swap button
 ```
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
@@ -49,14 +49,21 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
 
 - **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
   written. Landscape on the timeline (240×80 on a phone, 280×96 from `sm`; art across the left
-  70%, title on the right); a 168px square in the hand. A smaller 228×70 timeline card and a
-  140px hand card were both tried and reverted.
+  70%, title on the right); a 184px square in the hand. A smaller 228×70 timeline card and a
+  140px hand card were both tried and reverted. The hand card was 168px, exactly the width of
+  the landscape card's painting, until the maintainer asked for it a tenth larger; a dragged
+  card's painting now eases down 16px as it opens, which `HandDragOverlay` interpolates. The
+  larger card leaves 68px a side at 320px wide, so below 360px the hand buttons give up 8px
+  of clearance and sit on the fan's outer corner (`.hand-swap` in `index.css`).
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
   its left and the swap button, with the pass button above it, sits in the space on its right,
-  at every width. Under the counter, in the same column, is the deck pile (36×40px: the art of the
-  deck's next three cards as 30px tiles, with the count on a dark plate over the top one):
-  136px of the bar's 168 with the counter above it. The counter used
+  at every width. Under the counter, in the same column, is the deck pile (46px square: the art of the
+  deck's next three cards as 40px tiles, each stepping 3px down and left of the one above,
+  with the count on an ink badge at the pile's top right corner): about 142px of the bar's
+  184 with the counter above it. The count was first a plate over the top tile, on a 30px
+  tile straight below one another; it hid most of the art, and the maintainer asked for the
+  corner badge, the larger tiles and the down-left step. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
   edge and the swap button 40px beside it. The middle column is the card's width whether or not
   there is a card, so the counter does not move between turns. The swap button is centred in

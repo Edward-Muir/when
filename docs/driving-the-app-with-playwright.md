@@ -86,7 +86,7 @@ await page.waitForTimeout(2500);
 The app has almost **no `data-testid`s**, so rely on these stable handles:
 
 - **Active card (the drag handle):** `div.cursor-grab` (first match). Its
-  `innerText` (first line) is the event's `friendly_name`. It is a 168px square in the middle of the screen; once lifted
+  `innerText` (first line) is the event's `friendly_name`. It is a 184px square in the middle of the screen; once lifted
   it is `invisible` in the hand and the drag overlay is the landscape card, centred on the
   pointer.
 - **Placed timeline markers:** `[data-timeline-year]`. The attribute value is

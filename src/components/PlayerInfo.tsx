@@ -189,6 +189,11 @@ function deckAriaLabel(count: number): string {
 
 /** How many of the deck's next cards show their art in the pile. */
 const PILE_ART_CARDS = 3;
+/** A pile card's side, and how far each card under the top one peeks out, down and left. */
+const PILE_CARD_PX = 40;
+const PILE_STEP_PX = 3;
+/** The pile's box: the top card plus the two steps the deepest card sits out by. */
+const PILE_PX = PILE_CARD_PX + (PILE_ART_CARDS - 1) * PILE_STEP_PX;
 
 /**
  * One card of the pile: its painting, or a blank tile if it has none or it fails to load.
@@ -202,11 +207,14 @@ const PileArt: React.FC<{ event: HistoricalEvent; depth: number }> = ({ event, d
   return (
     <div
       data-testid="deck-card"
-      className="absolute left-[3px] h-[30px] w-[30px] overflow-hidden rounded-[4px] border border-border bg-surface"
-      // Each card sits 3px lower than the one above it, and dimmer, never more transparent:
-      // the hand's fan does the same, for the same reason.
+      className="absolute overflow-hidden rounded-[5px] border border-border bg-surface"
+      // The top card sits at the pile's top right, under the count; each card below it steps
+      // down and to the left, and is dimmer, never more transparent, as the hand's fan is.
       style={{
-        top: 2 + depth * 3,
+        width: PILE_CARD_PX,
+        height: PILE_CARD_PX,
+        top: depth * PILE_STEP_PX,
+        left: (PILE_ART_CARDS - 1 - depth) * PILE_STEP_PX,
         zIndex: PILE_ART_CARDS - depth,
         filter: depth ? `brightness(${1 - depth * 0.2})` : undefined,
       }}
@@ -225,12 +233,12 @@ const PileArt: React.FC<{ event: HistoricalEvent; depth: number }> = ({ event, d
 };
 
 /**
- * The deck: the paintings of its next few cards, stacked, with the cards left to draw over
- * them. It is where a drawn card comes from (`ActiveCardDisplay` finds this element by its
- * test id and deals from its centre). Real art rather than a card back, at the maintainer's
- * request: at 30px nobody can read a card from it, and it makes plain what the pile is. It
- * dips as a card leaves; transform only, like `StreakBolt`. Not a button: the counter above
- * opens the stats.
+ * The deck: the paintings of its next few cards, stacked, with the cards left to draw on a
+ * badge at its top right corner, clear of the art. It is where a drawn card comes from
+ * (`ActiveCardDisplay` finds the top card by its test id and deals from its centre). Real art
+ * rather than a card back, at the maintainer's request: at this size nobody can read a card
+ * from it, and it makes plain what the pile is. It dips as a card leaves; transform only,
+ * like `StreakBolt`. Not a button: the counter above opens the stats.
  *
  * The top painting is `deck[0]`. After a miss a catch-up draw can deal a card from further
  * down (`catchUp.ts`), so now and then the card dealt is not the one that was showing. That
@@ -259,38 +267,28 @@ export const DeckPile: React.FC<{ deck: HistoricalEvent[] }> = ({ deck }) => {
       role="img"
       aria-label={deckAriaLabel(count)}
       animate={dip}
-      className="relative h-10 w-9"
+      className="relative"
+      style={{ width: PILE_PX, height: PILE_PX }}
     >
       {empty ? (
-        <svg viewBox="0 0 36 40" fill="none" className="h-10 w-9 text-text" aria-hidden>
-          <rect
-            data-testid="deck-outline"
-            x="3.75"
-            y="2.75"
-            width="28.5"
-            height="28.5"
-            rx="4"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            strokeDasharray="4 3"
-            opacity="0.4"
-          />
-        </svg>
+        <div
+          data-testid="deck-outline"
+          className="absolute right-0 top-0 rounded-[5px] border-[1.5px] border-dashed border-text-muted opacity-50"
+          style={{ width: PILE_CARD_PX, height: PILE_CARD_PX }}
+        />
       ) : (
         deck
           .slice(0, PILE_ART_CARDS)
           .map((event, depth) => <PileArt key={event.name} event={event} depth={depth} />)
       )}
-      {/* The count, over the top card. On a painting it needs a plate of its own to be read;
-          `bg-black/60` is a plain colour, so the opacity modifier is safe here. */}
-      <span className="absolute inset-x-0 top-[2px] z-[4] flex h-[30px] items-center justify-center">
-        <span
-          className={`rounded px-1 font-mono text-[10px] font-bold leading-[14px] ${
-            empty ? 'text-text-muted' : 'bg-black/60 text-white'
-          }`}
-        >
-          {deckCountLabel(count)}
-        </span>
+      {/* The count, on the pile's top right corner like the pass count on its button, so the
+          art under it stays visible. Ink where that one is gold: it counts, it does not offer. */}
+      <span
+        className={`absolute -right-2 -top-1.5 z-[4] flex h-4 min-w-4 items-center justify-center rounded-full px-1 font-body text-[10px] font-semibold leading-none ring-2 ring-bg ${
+          empty ? 'bg-border text-text-muted' : 'bg-text text-bg'
+        }`}
+      >
+        {deckCountLabel(count)}
       </span>
     </motion.div>
   );
