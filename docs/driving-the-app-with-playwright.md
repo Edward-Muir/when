@@ -212,7 +212,7 @@ const pos = await page.$$eval('[data-timeline-year]', (els) =>
     return r.top + r.height / 2;
   })
 );
-const handTop = cardBox.y - 8; // the hand bar starts 8px above the square hand card
+const handTop = cardBox.y + 8; // the hand card stands 8px over the hand bar's top edge
 let targetY;
 if (pos.length === 0)
   targetY = (140 + handTop - 30) / 2; // empty timeline

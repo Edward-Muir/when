@@ -10,7 +10,7 @@ Full-width vertical stack:
 (no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
   └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right, light/dark under Home
-Bottom bar (`hand-bar`: the 184px hand card + 16px, pb-safe) — counter, hand card, swap button
+Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-safe) — counter, hand card, swap button
 ```
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
@@ -53,6 +53,11 @@ Bottom bar (`hand-bar`: the 184px hand card + 16px, pb-safe) — counter, hand c
   140px hand card were both tried and reverted. The hand card was 168px, exactly the width of
   the landscape card's painting, until the maintainer asked for it a tenth larger; a dragged
   card's painting now eases down 16px as it opens, which `HandDragOverlay` interpolates. The
+  bar did not grow with it: the card keeps 8px below and stands 8px over the bar's top edge
+  (`--hand-overlap`), across the line between the hand and the timeline, so the timeline
+  lost no height. The "Later" label and the hint strip moved from 8px to 16px above the bar
+  to clear the card and the fan's corners, and a tucked hand drops by the overlap plus 8px so no
+  sliver shows above the edge. The
   larger card leaves 68px a side at 320px wide, so below 360px the hand buttons give up 8px
   of clearance and sit on the fan's outer corner (`.hand-swap` in `index.css`).
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
