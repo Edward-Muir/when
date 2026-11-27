@@ -174,6 +174,33 @@ describe('the pass button', () => {
   });
 });
 
+describe('the hand count', () => {
+  const handCount = () => screen.getByTestId('hand-count');
+
+  it('shows the cards in hand, in the gold of the deck and pass counts', () => {
+    setup();
+    expect(handCount()).toHaveTextContent('3');
+    expect(handCount()).toHaveClass('bg-accent', 'text-white');
+    expect(screen.getByText('3 cards in hand')).toHaveClass('sr-only');
+  });
+
+  it('shows the true count for a hand wider than the fan', () => {
+    const hand = ['a', 'b', 'c', 'd', 'e', 'f', 'g'].map((name, i) => card(name, 1000 + i));
+    setup({ currentPlayer: player(hand) });
+    expect(handCount()).toHaveTextContent('7');
+  });
+
+  it('follows the hand down, and is muted when it is empty', () => {
+    const { rerender } = setup();
+    rerender({ currentPlayer: player([a]) });
+    expect(handCount()).toHaveTextContent('1');
+    expect(screen.getByText('1 card in hand')).toBeInTheDocument();
+    rerender({ currentPlayer: player([]) });
+    expect(handCount()).toHaveTextContent('0');
+    expect(handCount()).toHaveClass('bg-border', 'text-text-muted');
+  });
+});
+
 describe('the top card while a placement animates', () => {
   // The drag handle is the element carrying dnd-kit's attributes; its parent is what hides.
   const handle = () => screen.getByRole('button', { name: /^a$/ });
