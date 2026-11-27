@@ -104,6 +104,15 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   lines) and must stay so after the shard loads and after scrolling to the end.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
+- **Hand buttons:** Swap is `button[aria-label="Cycle to next card"]` and Pass, below it, is
+  `button[aria-label="Pass this card"]`. The passes left are `[data-testid="pass-count"]`, and
+  a passed card on its way out is `[data-testid="passed-card"]` for about 0.4 s. Both buttons
+  are disabled during a drag and while a placement animates. The cards fanned behind the top
+  one are `[data-hand-fan]`.
+- **The dev server pauses for about a third of a second whenever the deck changes** (a pass,
+  a correct placement). That is React's development build diffing the `state` prop for its
+  performance track (`addObjectDiffToProperties` in a CPU profile), not the app. Time
+  animations against `npm run build` served statically, never against `npm start`.
 - **Bottom-left counters:** big number = cards left; 📏 = timeline length, including the
   starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
   the "Timeline Stats" popup.
@@ -124,14 +133,15 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
 - **A control nudged by a transform can never be clicked without `force: true`.**
   `animate-hint-glow` (infinite scale) and `animate-hint-lift` (infinite bob) never let
   Playwright's actionability check call the element "stable", so the click times out after 30 s.
-  This looks like a broken selector and is not: a real tap works fine. It bites the swap button,
+  This looks like a broken selector and is not: a real tap works fine. It bites the swap and pass buttons,
   the Play button, the bottom-left counter and the top hand card, each while its hint is up.
   On a fresh install **"Play Daily Challenge" carries `animate-hint-glow`**, so click it with
   `{ force: true }`.
   The Daily card's eye is **not** affected: `animate-hint-halo` animates box-shadow only, so the
   element never moves and it clicks normally (measured at ~50 ms).
 - **The in-game ladder is one pill per placement**, shown when the placement animation
-  settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap`.
+  settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap` →
+  `pass`.
   Do **not** pause between drags to "let a hint appear": a test that waits never sees the
   pills race each other, which is where bugs hide. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
   the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the

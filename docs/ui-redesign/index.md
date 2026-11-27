@@ -53,12 +53,17 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
   140px hand card were both tried and reverted.
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
-  its left and the swap button sits in the space on its right, at every width. The counter used
+  its left and the swap button, with the pass button below it, sits in the space on its right,
+  at every width. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
   edge and the swap button 40px beside it. The middle column is the card's width whether or not
   there is a card, so the counter does not move between turns. The swap button is centred in
   what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
-  the column it sat on the fanned cards at 360px wide.
+  the column it sat on the fanned cards at 360px wide. Swap keeps the top place and Pass, the
+  one that cannot be undone, is below it, 12px apart. The pass count is a badge on the
+  button's top corner, flush with its right edge: one pixel further out and it clips at 320px
+  wide. `.hand-swap` is z-7, above the hand's cards, so a card dealt in or thrown out passes
+  under the buttons.
 - The bottom bar's drop zone id is **`bottom-bar-zone`** — the Playwright selectors depend
   on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
@@ -439,7 +444,7 @@ and do not improve performance, while hints of this shape do.
 
 - **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
   `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `closeEnough`, `tapCard`,
-  `stats`, `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`,
+  `stats`, `swap`, `pass`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`,
   `reviewEye`). Switch-based
   accessors, because the `security/detect-object-injection` rule forbids indexing by a
   variable key. Note `stats` (the in-game counter hint), `statsTab` (the home tab's strip) and
@@ -481,11 +486,14 @@ and do not improve performance, while hints of this shape do.
 - **The ladder is settle-driven: one hint per placement.** Every time a placement settles
   (`isAnimating` goes false with an outcome pending) the highest-priority unseen, eligible
   rung of `SETTLE_PRIORITY` is shown, **replacing** whatever is up: `wrong` → `correct` →
-  `tapCard` → `stats` → `swap`. So each hint gets a player action of its own and nothing
-  stacks, and a first game teaches the whole loop in four or five moves. The idle drag nudge
+  `tapCard` → `stats` → `swap` → `pass`. So each hint gets a player action of its own and
+  nothing stacks, and a first game teaches the whole loop in five or six moves. The idle drag nudge
   (`DRAG_NUDGE_MS` after play starts) is the only timer-driven hint; `drag` is marked on
   the first drag whether or not the strip ever showed. `swap` needs a hand worth cycling
-  and either a miss or four placements, so a perfect run reaches it. An outcome that lands on
+  and either a miss or four placements, so a perfect run reaches it. `pass` comes after `swap`
+  (the free way out of a card before the costly one) and needs a pass to spend and a card to
+  draw; using the pass button marks it seen whether or not the strip ever showed, the `drag`
+  rule. An outcome that lands on
   the game-ending placement is discarded unmarked and returns next game.
 - **Do not gate a hint on a timer fed by a churning boolean.** An eligibility boolean flips on
   every drag frame and animation transition, so an effect that restarts a quiet-gap timer on
@@ -512,8 +520,8 @@ and do not improve performance, while hints of this shape do.
   is the class of change that stalls the iOS swipe. Custom is `panels/CustomPanel.tsx` like the
   other four tabs, so every strip has an `active` prop to gate on.
 - **The nudge animations** are `animate-hint-lift` (card bob, for `drag`) and one shared
-  `animate-hint-glow` (a gentle swell plus brightness) with four homes, in `index.css`: the
-  swap button, which is also filled gold; the Daily Play button while the start-screen strip
+  `animate-hint-glow` (a gentle swell plus brightness) with five homes, in `index.css`: the
+  swap and pass buttons, each also filled gold for its own hint; the Daily Play button while the start-screen strip
   is up; the top hand card's wrapper for `tapCard`; and the bottom-left counter for `stats`.
   The counter also takes `bg-border` while it glows — it is transparent otherwise, and the
   animation is transform and filter only, so without a surface to swell there is nothing to

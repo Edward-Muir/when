@@ -215,7 +215,7 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
   to 25% to break near-ties. The catalogue-wide crowding term in `score` is deliberately
   unused, because the real board replaces it.
 - **A miss still draws nothing.** The leaderboard's red-square cap and `themeOutcome.ts`
-  depend on that.
+  depend on that. A pass always draws, and is never a catch-up draw: see [The pass](#the-pass).
 - **The rest of the deck keeps its order.** A pick lifts one card out, so the remaining deck
   is always the composed deck minus every card seen. Daily resume (`dailyProgress.ts`) rebuilds
   it that way and checks that the opening deal is the deck's front and that every seen card is
@@ -267,6 +267,62 @@ at struggle > 0.
   as well, and helps strong players most (+0.33 at σ 0.08, +0.06 at σ 0.5); that was
   accepted. Slot 1 was rejected: it adds more blanket easing but less catch-up (+0.34 against
   +0.46 at σ 0.3), and it swaps the card the player is looking at.
+
+## The pass
+
+A player holding a card they cannot place had no move but to guess. The pass gives them one:
+the button below Swap discards the top card unplayed and draws another. Every player starts a
+game with three (`STARTING_PASSES`) and earns one more each time a run of correct placements
+reaches a multiple of three (`PASS_STREAK`), with no cap. It runs in every mode, the Daily
+included. The rules are `processPass` in `placementLogic.ts` and the helpers beside
+`STARTING_PASSES` in `gameLogic.ts`.
+
+- **A passed card is gone for the game**, and that is its cost on a curated day: a theme
+  cannot be cleared once any card has been passed (`themeOutcome.ts`), and "N of M events
+  placed" keeps M as the true deck size, so M is out of reach after a pass. Sending the card
+  to the bottom of the deck was considered and rejected by the maintainer for exactly this
+  reason: the pass should cost something on a theme.
+- **Only passes used are stored** (`Player.passesUsed`). Passes left are
+  `STARTING_PASSES + passesAwarded(placementHistory) - passesUsed`. There is no award step, so
+  `useWhenGame.placeCard` and `settleDailyPlacement` cannot drift apart, a state with no field
+  has used none, and in multiplayer each player earns from their own run, not from the shared
+  `currentStreak`.
+- **A pass is not a placement.** It leaves the placement history, the streak, the score, the
+  turn and the leaderboard result alone. The leaderboard API needed no change.
+- **A pass is one synchronous commit and never sets `isAnimating`.** The daily save only
+  writes when nothing is animating, so an animating pass could be seen and then taken back by
+  closing the app. The throw is presentation only, a copy of the card in `ActiveCardDisplay`.
+- **A pass is refused on an empty deck**, and that guard is load-bearing. `themeOutcome.ts` and
+  the leaderboard's red-square cap both rely on a hand shrinking only on a miss or a dry-deck
+  hit. A pass that discarded without drawing would be a third way.
+- **The draw is the top of the deck, never a catch-up draw.** Struggle only decays on a hit,
+  so an eased pass would be eased twice, and catch-up is meant to stay invisible. The drawn
+  card lands at `DRAW_SLOT` like every other draw: the next card in the hand steps up and the
+  new one arrives behind it.
+- **Passed cards are recorded**: `passedCards` on the state, `passed` slugs in the daily
+  progress and board saves. Daily resume rebuilds the deck as the composed deck minus every
+  card seen, and a passed card is seen. Without the list a passed opening card fails the
+  opening check and the daily is dealt again to a player who knows the answers.
+  `placementLogic.test.ts` holds the property test for the invariant.
+- **`minDeckSize` is unchanged.** Raising it would stop thin Custom decks and existing
+  challenge codes that start today. `DAILY_SPOILER_DEPTH` grew by `STARTING_PASSES`.
+- **Neither hand button works during a drag.** The drop places whatever is on top of the hand
+  at that moment, so a second finger on Swap placed a card the player never dragged, and one
+  on Pass would discard the card in their hand. A 450 ms cooldown stops a double tap spending
+  two passes.
+- **The throw is a ghost, not an `AnimatePresence` exit.** The top card's element also
+  unmounts on a swap and on every placement, and an exiting `DraggableCard` would register the
+  drag id twice. It animates transform only.
+- **A drawn card deals in**, on a pass and on a correct placement alike: it starts a little to
+  the right of its slot, turned and small, and springs in. `useDrawnCards` finds it by
+  comparing the hand's names with the last render for the same player, so a swap, a miss, the
+  first paint, a resumed daily and a multiplayer hand-off animate nothing. The travel is
+  short because at 360px there are about 40px between the card and the buttons, and it never
+  comes from above, where the hint strip sits. The fade is the framer opacity animation the
+  fan already used; it has not been checked in the Android app (see the WebView note below).
+- **An earned pass is announced only by the badge popping.** It is driven by the count, not by
+  a streak tier, so it lives in `ActiveCardDisplay` and not in `streakFeedback.ts`.
+- **No warning is shown when a pass forfeits a theme clear.** It is stated on How to Play only.
 
 ## Tombstones
 
