@@ -412,7 +412,7 @@ export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): Hist
  * `settleDailyPlacement` to keep in step, a state with no field has simply used none, and in
  * multiplayer each player earns from their own run rather than the shared streak.
  */
-export const STARTING_PASSES = 3;
+export const STARTING_PASSES = 1;
 export const PASS_STREAK = 3;
 
 /** Passes earned by a placement history: one each time a correct run hits `PASS_STREAK`. */

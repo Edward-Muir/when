@@ -57,6 +57,8 @@ function setup(overrides: Partial<Props> = {}) {
 const passButton = () => screen.getByRole('button', { name: 'Pass this card' });
 const swapButton = () => screen.getByRole('button', { name: 'Cycle to next card' });
 const count = () => screen.getByTestId('pass-count');
+/** The start of the Pass button's description, as `passStatus` words it. */
+const passesLeftText = (n: number) => (n === 1 ? '1 pass left' : `${n} passes left`);
 
 beforeEach(() => {
   setReducedMotion(false);
@@ -72,17 +74,18 @@ describe('the pass button', () => {
     setup();
     expect(count()).toHaveTextContent(String(STARTING_PASSES));
     expect(passButton()).toHaveAccessibleDescription(
-      `${STARTING_PASSES} passes left, 3 more in a row for another`
+      `${passesLeftText(STARTING_PASSES)}, 3 more in a row for another`
     );
   });
 
   it('counts down as passes are spent and up as streaks earn them', () => {
-    const { rerender } = setup({ currentPlayer: player([a, b, c], { passesUsed: 2 }) });
+    const passesUsed = STARTING_PASSES - 1;
+    const { rerender } = setup({ currentPlayer: player([a, b, c], { passesUsed }) });
     expect(count()).toHaveTextContent('1');
     expect(passButton()).toHaveAccessibleDescription('1 pass left, 3 more in a row for another');
 
     rerender({
-      currentPlayer: player([a, b, c], { passesUsed: 2, placementHistory: [true, true, true] }),
+      currentPlayer: player([a, b, c], { passesUsed, placementHistory: [true, true, true] }),
     });
     // The badge takes the new count when the ring's gold reaches it, about half a second on.
     act(() => jest.advanceTimersByTime(600));
@@ -246,7 +249,7 @@ describe('the pass ring', () => {
     const { rerender } = setup({ currentPlayer: withHistory([true]) });
     expect(lit()).toHaveLength(1);
     expect(passButton()).toHaveAccessibleDescription(
-      `${STARTING_PASSES} passes left, 2 more in a row for another`
+      `${passesLeftText(STARTING_PASSES)}, 2 more in a row for another`
     );
 
     rerender({ currentPlayer: withHistory([true, true]) });
@@ -310,7 +313,7 @@ describe('the pass ring', () => {
     it('tells a screen reader the true count from the first frame', () => {
       earn();
       expect(passButton()).toHaveAccessibleDescription(
-        `${STARTING_PASSES + 1} passes left, 3 more in a row for another`
+        `${passesLeftText(STARTING_PASSES + 1)}, 3 more in a row for another`
       );
     });
 

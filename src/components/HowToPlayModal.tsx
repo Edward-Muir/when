@@ -119,7 +119,7 @@ const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
             <span className="mx-0.5 inline-flex h-5 w-5 -translate-y-0.5 items-center justify-center rounded-full border border-border bg-surface align-middle">
               <SkipForward className="h-3 w-3 text-text" />
             </span>{' '}
-            to pass: the card is discarded and you draw a new one. You start with three passes, and
+            to pass: the card is discarded and you draw a new one. You start with one pass, and
             every three correct in a row earns another. A theme cannot be cleared after a pass.
           </p>
           <p className="text-xs text-text-muted font-body leading-relaxed">
