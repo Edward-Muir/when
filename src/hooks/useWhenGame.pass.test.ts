@@ -182,10 +182,11 @@ describe('useWhenGame - the pass', () => {
   });
 
   it('refuses a pass when there is nothing left to draw', async () => {
-    // The smallest deck a three-card hand can be dealt from: seed, hand and two draws.
-    const result = await start(6);
-    pass(result);
-    pass(result);
+    // Seed, hand and three draws. Three right placements take the draws, so the deck is dry
+    // with passes still in hand, and the empty deck is the only thing that can refuse one.
+    const result = await start(7);
+    for (let i = 0; i < 3; i++) place(result, true);
+    expect(left(result)).toBeGreaterThan(0);
     expect(result.current.state.deck).toHaveLength(0);
     const dry = result.current.state;
 

@@ -256,9 +256,9 @@ describe('processPass', () => {
   });
 
   it('adds to the cards already passed, in order', () => {
-    const update = processPass(
-      playing([player(0, [h2, h3], { passesUsed: 1 })], [d1], { passedCards: [h1] })
-    );
+    // One pass spent, and a run of three has earned the next.
+    const earned = { passesUsed: 1, placementHistory: [true, true, true] };
+    const update = processPass(playing([player(0, [h2, h3], earned)], [d1], { passedCards: [h1] }));
     expect(names(update!.passedCards)).toEqual(['h1', 'h2']);
     expect(update!.players[0].passesUsed).toBe(2);
   });

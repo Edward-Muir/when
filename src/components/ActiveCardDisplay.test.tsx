@@ -57,6 +57,8 @@ function setup(overrides: Partial<Props> = {}) {
 const passButton = () => screen.getByRole('button', { name: 'Pass this card' });
 const swapButton = () => screen.getByRole('button', { name: 'Cycle to next card' });
 const count = () => screen.getByTestId('pass-count');
+/** The start of the Pass button's description, as `passStatus` words it. */
+const passesLeftText = (n: number) => (n === 1 ? '1 pass left' : `${n} passes left`);
 
 beforeEach(() => {
   setReducedMotion(false);
@@ -72,17 +74,18 @@ describe('the pass button', () => {
     setup();
     expect(count()).toHaveTextContent(String(STARTING_PASSES));
     expect(passButton()).toHaveAccessibleDescription(
-      `${STARTING_PASSES} passes left, 3 more in a row for another`
+      `${passesLeftText(STARTING_PASSES)}, 3 more in a row for another`
     );
   });
 
   it('counts down as passes are spent and up as streaks earn them', () => {
-    const { rerender } = setup({ currentPlayer: player([a, b, c], { passesUsed: 2 }) });
+    const passesUsed = STARTING_PASSES - 1;
+    const { rerender } = setup({ currentPlayer: player([a, b, c], { passesUsed }) });
     expect(count()).toHaveTextContent('1');
     expect(passButton()).toHaveAccessibleDescription('1 pass left, 3 more in a row for another');
 
     rerender({
-      currentPlayer: player([a, b, c], { passesUsed: 2, placementHistory: [true, true, true] }),
+      currentPlayer: player([a, b, c], { passesUsed, placementHistory: [true, true, true] }),
     });
     // The badge takes the new count when the ring's gold reaches it, about half a second on.
     act(() => jest.advanceTimersByTime(600));
@@ -174,6 +177,33 @@ describe('the pass button', () => {
   });
 });
 
+describe('the hand count', () => {
+  const handCount = () => screen.getByTestId('hand-count');
+
+  it('shows the cards in hand, in the gold of the deck and pass counts', () => {
+    setup();
+    expect(handCount()).toHaveTextContent('3');
+    expect(handCount()).toHaveClass('bg-accent', 'text-white');
+    expect(screen.getByText('3 cards in hand')).toHaveClass('sr-only');
+  });
+
+  it('shows the true count for a hand wider than the fan', () => {
+    const hand = ['a', 'b', 'c', 'd', 'e', 'f', 'g'].map((name, i) => card(name, 1000 + i));
+    setup({ currentPlayer: player(hand) });
+    expect(handCount()).toHaveTextContent('7');
+  });
+
+  it('follows the hand down, and is muted when it is empty', () => {
+    const { rerender } = setup();
+    rerender({ currentPlayer: player([a]) });
+    expect(handCount()).toHaveTextContent('1');
+    expect(screen.getByText('1 card in hand')).toBeInTheDocument();
+    rerender({ currentPlayer: player([]) });
+    expect(handCount()).toHaveTextContent('0');
+    expect(handCount()).toHaveClass('bg-border', 'text-text-muted');
+  });
+});
+
 describe('the top card while a placement animates', () => {
   // The drag handle is the element carrying dnd-kit's attributes; its parent is what hides.
   const handle = () => screen.getByRole('button', { name: /^a$/ });
@@ -219,7 +249,7 @@ describe('the pass ring', () => {
     const { rerender } = setup({ currentPlayer: withHistory([true]) });
     expect(lit()).toHaveLength(1);
     expect(passButton()).toHaveAccessibleDescription(
-      `${STARTING_PASSES} passes left, 2 more in a row for another`
+      `${passesLeftText(STARTING_PASSES)}, 2 more in a row for another`
     );
 
     rerender({ currentPlayer: withHistory([true, true]) });
@@ -283,7 +313,7 @@ describe('the pass ring', () => {
     it('tells a screen reader the true count from the first frame', () => {
       earn();
       expect(passButton()).toHaveAccessibleDescription(
-        `${STARTING_PASSES + 1} passes left, 3 more in a row for another`
+        `${passesLeftText(STARTING_PASSES + 1)}, 3 more in a row for another`
       );
     });
 

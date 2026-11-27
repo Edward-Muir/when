@@ -22,7 +22,7 @@ describe('HowToPlayModal', () => {
 
   it('explains the pass, and what it costs on a theme', () => {
     render(<HowToPlayModal open onDismiss={jest.fn()} />);
-    expect(screen.getByText(/You start with three passes/)).toBeInTheDocument();
+    expect(screen.getByText(/You start with one pass/)).toBeInTheDocument();
     expect(screen.getByText(/A theme cannot be cleared after a\s+pass/)).toBeInTheDocument();
   });
 

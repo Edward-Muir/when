@@ -69,9 +69,11 @@ Bottom bar (`hand-bar`: 174px, which the 174px hand card stands 8px over, pb-saf
   glow. The panel used to lead with a gold fan icon carrying the number of cards in hand and
   a "cards left" label, and the counter led a miss by dropping that number at the red flash.
   The maintainer removed all of it once the hand card grew to 184px: the fanned hand beside
-  the panel already shows the cards, and five things in a 100px column read as clutter. A
-  hand of more than five (Custom only) therefore shows no count on the bar; the stats popup
-  still has it. Don't bring the number back without asking.
+  the panel already shows the cards, and five things in a 100px column read as clutter. The
+  number came back on 2026-11-27, at the maintainer's request, as a badge on the hand's top
+  right corner (`HandBadge.tsx`, rendered by `ActiveCardDisplay`): the same gold pill as the deck's
+  count and the pass count, so the three read as one set, and it gives a hand of more than
+  five (Custom only) its true count. It is not in the left panel; don't put it back there.
 - **The buttons are centred in the bar, not on the hand card.** The grid's row is the card's
   height and the card stands 8px over the bar's top edge, so a column centred on the card sat
   8px high in the bar: the pass count nearly touched the line while space went spare under

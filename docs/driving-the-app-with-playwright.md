@@ -124,8 +124,8 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
 - **Bottom-left counters:** 📏 = timeline length, including the starting card (so one more
   than the score), `[data-testid="timeline-counter"]`; ⚡ = current streak,
   `[data-testid="streak-counter"]`, shown from 0. The row is one button,
-  `aria-label` starting "Game stats", and tapping it opens the "Timeline Stats" popup. There
-  is no hand count on the bar any more: count `[data-hand-fan]` plus one, or open the popup.
+  `aria-label` starting "Game stats", and tapping it opens the "Timeline Stats" popup. The
+  hand count is the badge on the hand's top right corner, `[data-testid="hand-count"]`.
 - **Pass ring:** `[data-testid="pass-ring"]` on the Pass button, `data-lit` = segments lit
   (0 to 2, or 3 for the first 170 ms of an earn). While a pass is being earned,
   `[data-testid="pass-count"]` shows the old count for half a second, then

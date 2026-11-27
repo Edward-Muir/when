@@ -302,9 +302,9 @@ interface GameInfoCompactProps {
  *
  * It used to lead with a fan icon carrying the number of cards in hand and a "cards left"
  * label. The maintainer removed both once the hand card grew: the fanned hand beside this
- * panel already shows the cards, and the panel had become crowded. The number is still in the
- * stats popup these counters open. A hand of more than five (Custom only) therefore shows no
- * count on the bar, since the fan stops at five.
+ * panel already shows the cards, and the panel had become crowded. The number is now a badge
+ * on the hand itself (`HandBadge`, rendered by `ActiveCardDisplay`), and in the stats popup these
+ * counters open.
  */
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   currentPlayer,
