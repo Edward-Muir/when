@@ -152,6 +152,21 @@ describe('the pass button', () => {
     );
   });
 
+  it('is named "Pass", and swap "Cycle", each under its own button', () => {
+    setup();
+    const passName = screen.getByText('Pass');
+    const cycleName = screen.getByText('Cycle');
+    const after = (a: Element, b: Element) =>
+      Boolean(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING);
+    // Pass button, its name, the Cycle button, its name: in that order down the column.
+    expect(after(passButton(), passName)).toBe(true);
+    expect(after(passName, swapButton())).toBe(true);
+    expect(after(swapButton(), cycleName)).toBe(true);
+    // The buttons carry their own labels for a screen reader.
+    [passName, cycleName].forEach((name) => expect(name).toHaveAttribute('aria-hidden', 'true'));
+    expect(passButton()).not.toContainElement(passName);
+  });
+
   it('sits above swap', () => {
     setup();
     const position = passButton().compareDocumentPosition(swapButton());

@@ -331,7 +331,7 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
 - **The pile shows the cards left to draw, capped at "30+"** (`DECK_COUNT_CAP`). An ordinary
   day's deck is thousands deep, so the true number would be noise; a small deck counts down,
   which is the case the number is for (a curated theme starts at 24). Empty, it is a dashed
-  outline with a muted 0, and Pass is disabled. It is captioned "deck" (it had no caption at first, and the maintainer asked for
+  outline with a muted 0, and Pass is disabled. It is captioned "Deck" (it had no caption at first, and the maintainer asked for
   one), and it is not a button: the counters above it still open the stats.
 - **The pile is the real art of the deck's next three cards**, `deck[0]` on top, at 40px. It
   was first an ink card back with a frame; the maintainer asked for the art, on the grounds

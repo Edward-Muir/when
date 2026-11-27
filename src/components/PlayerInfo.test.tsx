@@ -172,9 +172,9 @@ describe('the deck pile', () => {
     expect(screen.getByRole('button')).not.toContainElement(pile());
   });
 
-  it('is captioned "deck", under the pile and outside it', () => {
+  it('is captioned "Deck", under the pile and outside it', () => {
     renderPanel();
-    const caption = screen.getByText('deck');
+    const caption = screen.getByText('Deck');
     expect(pile()).not.toContainElement(caption);
     expect(pile().compareDocumentPosition(caption) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     // The pile already names itself to a screen reader.

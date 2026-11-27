@@ -165,6 +165,9 @@ function useDrawnCards(player: Player): ReadonlySet<string> {
   return drawn;
 }
 
+/** The name under each hand button: the same type as the deck pile's "Deck" caption. */
+const HAND_LABEL_CLASS = 'text-sm text-text font-body';
+
 /** The shared look of the two round buttons beside the hand. */
 function handButtonClass(nudged: boolean): string {
   // The darker fill is for a press, and for a pointer that can hover. A bare `hover:` sticks
@@ -577,45 +580,59 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
         )}
       </div>
 
-      {/* Pass and, below it, Swap: beside the card, never on it, so they cover neither art nor
-          title. 48px each and 20px apart: at 44px and 12px a thumb landed between them, or on
-          the wrong one. Pass is the upper one: it cannot be undone, so it sits further from a
-          resting thumb than Swap, which can. */}
-      <div className="hand-swap flex flex-col items-center justify-center gap-5 pointer-events-auto">
-        {/* The ring and the badge are siblings of the button, not children, so a disabled
-            button's dimming does not take them with it. */}
-        <div className="relative flex">
-          <button
-            onClick={pass}
-            disabled={!canPass}
-            className={handButtonClass(passNudge)}
-            aria-label="Pass this card"
-            aria-describedby={passesId}
-          >
-            <SkipForward
-              className={`w-[22px] h-[22px] ${passNudge ? 'text-white' : 'text-text'}`}
-            />
-          </button>
-          <PassStatus player={currentPlayer} nudged={passNudge} still={reduceMotion === true} />
-          <span id={passesId} className="sr-only">
-            {passStatus(passes, PASS_STREAK - passProgress(currentPlayer.placementHistory))}
+      {/* Pass and, below it, Cycle: beside the card, never on it, so they cover neither art nor
+          title. 48px each: at 44px and 12px apart a thumb landed between them, or on the wrong
+          one. Pass is the upper one: it cannot be undone, so it sits further from a resting
+          thumb than Cycle, which can. Each is named under it, in the type of the "Deck"
+          caption opposite: a returning player had no way to tell what the new button did. The
+          names are hidden from a screen reader, which has each button's own label. */}
+      <div className="hand-swap flex flex-col items-center justify-center gap-3 pointer-events-auto">
+        <div className="flex flex-col items-center gap-1">
+          {/* The ring and the badge are siblings of the button, not children, so a disabled
+              button's dimming does not take them with it. */}
+          <div className="relative flex">
+            <button
+              onClick={pass}
+              disabled={!canPass}
+              className={handButtonClass(passNudge)}
+              aria-label="Pass this card"
+              aria-describedby={passesId}
+            >
+              <SkipForward
+                className={`w-[22px] h-[22px] ${passNudge ? 'text-white' : 'text-text'}`}
+              />
+            </button>
+            <PassStatus player={currentPlayer} nudged={passNudge} still={reduceMotion === true} />
+            <span id={passesId} className="sr-only">
+              {passStatus(passes, PASS_STREAK - passProgress(currentPlayer.placementHistory))}
+            </span>
+          </div>
+          <span aria-hidden className={HAND_LABEL_CLASS}>
+            Pass
           </span>
         </div>
 
-        <button
-          onClick={cycle}
-          disabled={!canCycle}
-          className={handButtonClass(cycleNudge)}
-          aria-label="Cycle to next card"
-        >
-          <motion.span
-            className="flex"
-            animate={{ rotate: turns * 180 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+        <div className="flex flex-col items-center gap-1">
+          <button
+            onClick={cycle}
+            disabled={!canCycle}
+            className={handButtonClass(cycleNudge)}
+            aria-label="Cycle to next card"
           >
-            <RefreshCw className={`w-[22px] h-[22px] ${cycleNudge ? 'text-white' : 'text-text'}`} />
-          </motion.span>
-        </button>
+            <motion.span
+              className="flex"
+              animate={{ rotate: turns * 180 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+            >
+              <RefreshCw
+                className={`w-[22px] h-[22px] ${cycleNudge ? 'text-white' : 'text-text'}`}
+              />
+            </motion.span>
+          </button>
+          <span aria-hidden className={HAND_LABEL_CLASS}>
+            Cycle
+          </span>
+        </div>
       </div>
     </>
   );

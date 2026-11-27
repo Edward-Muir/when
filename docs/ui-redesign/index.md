@@ -64,13 +64,21 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   length and, beside it, the streak, always shown and starting at 0 (it was hidden at zero
   briefly, and put back: a counter that comes and goes shifts the row and is one more moving
   thing in the bar); under it is the deck pile and
-  its "deck" caption. The row is the button that opens the stats and takes the `stats` hint's
+  its "Deck" caption. The row is the button that opens the stats and takes the `stats` hint's
   glow. The panel used to lead with a gold fan icon carrying the number of cards in hand and
   a "cards left" label, and the counter led a miss by dropping that number at the red flash.
   The maintainer removed all of it once the hand card grew to 184px: the fanned hand beside
   the panel already shows the cards, and five things in a 100px column read as clutter. A
   hand of more than five (Custom only) therefore shows no count on the bar; the stats popup
   still has it. Don't bring the number back without asking.
+- **Each hand control is named under it**: "Pass", "Cycle" and, opposite, "Deck", capitalised,
+  in one type. The maintainer asked for the names because a returning player has already
+  been through the hints and had no way to tell what the new Pass button did; the one-shot
+  hint only comes after their next placement. "Cycle" is the maintainer's word for the
+  button, and matches `cycleHand` and its `aria-label`; the hint strip and How to Play still
+  say "swap", which is worth aligning one way or the other. The names are `aria-hidden`: each
+  control has its own label. With them the buttons are 12px apart as groups, which leaves 36px
+  from the bottom of Pass to the top of Cycle.
 - **The hand bar's controls are sized for a thumb and spaced so nothing crowds.** Pass and
   Swap are 48px with 20px between them (`--hand-button`); at 44px and 12px, which meets the
   minimum on paper, the maintainer was tapping between them or hitting the wrong one. The
@@ -87,7 +95,7 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   deck's next three cards as 56px tiles, each stepping 3px down and left of the one above,
   with the count on a gold badge at the pile's top right corner, the same accent as the pass
   count; an ink badge was tried and read as black, outside the theme): about 148px of the
-  card's 184 with the counter row above it and the "deck" caption below. The count was first a plate over the top tile, on a 30px
+  card's 184 with the counter row above it and the "Deck" caption below. The count was first a plate over the top tile, on a 30px
   tile straight below one another; it hid most of the art, and the maintainer asked for the
   corner badge, the larger tiles and the down-left step. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left

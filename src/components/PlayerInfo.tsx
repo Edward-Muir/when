@@ -226,7 +226,7 @@ const PileArt: React.FC<{ event: HistoricalEvent; depth: number }> = ({ event, d
  * rather than a card back, at the maintainer's request: at this size nobody can read a card
  * from it, and it makes plain what the pile is. It dips as a card leaves; transform only,
  * like `StreakBolt`. Not a button: the counter above opens the stats. `GameInfoCompact`
- * captions it "deck".
+ * captions it "Deck".
  *
  * The top painting is `deck[0]`. After a miss a catch-up draw can deal a card from further
  * down (`catchUp.ts`), so now and then the card dealt is not the one that was showing. That
@@ -347,7 +347,7 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
       <div className="flex flex-col items-center gap-1.5">
         <DeckPile deck={deck} />
         <span aria-hidden className="text-sm text-text font-body">
-          deck
+          Deck
         </span>
       </div>
     </div>
