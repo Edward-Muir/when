@@ -1,11 +1,8 @@
 {
-  "version": "1.41.0",
+  "version": "1.42.0",
   "date": "2026-11-27",
   "notes": [
-    "Curated themes now run on Wednesdays as well as Mondays and Fridays.",
-    "Each game now starts with three passes to discard a card, and three correct in a row earn another.",
-    "The hand now shows the deck, and each new card is dealt from it.",
-    "The cards in hand are a little larger.",
-    "The hand bar is tidier, and a ring on the Pass button shows progress to the next pass."
+    "The next card now arrives while a placed card is still landing.",
+    "The cards in hand are slightly smaller, to give the buttons beside them more room."
   ]
 }

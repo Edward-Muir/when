@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.42.0](https://github.com/Edward-Muir/when/compare/v1.41.0...v1.42.0) (2026-11-27)
+
+
+### Features
+
+* **hand:** deal the next card as the placed one lands, and give the hand room ([#159](https://github.com/Edward-Muir/when/issues/159)) ([86fa76a](https://github.com/Edward-Muir/when/commit/86fa76a8397c00639b397414a4d36f0a8f81fc3a))
+
 ## [1.41.0](https://github.com/Edward-Muir/when/compare/v1.40.0...v1.41.0) (2026-11-27)
 
 
