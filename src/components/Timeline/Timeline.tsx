@@ -521,10 +521,12 @@ const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
 
-      {/* Fixed "Later" indicator at bottom with fade */}
+      {/* Fixed "Later" indicator at bottom with fade. 16px up, not 8: the hand card stands 8px
+          over the bar's top edge (`--hand-overlap`) and the corners of the cards fanned behind
+          it rise almost 8px more, which is where an 8px label sat. */}
       <div className="absolute bottom-0 left-0 right-0 z-30 pointer-events-none">
         <div className="h-12 bg-gradient-to-t from-bg via-bg/90 to-transparent" />
-        <div className="absolute bottom-2 left-0 right-0 text-center text-text-muted/70 text-sm font-medium font-body">
+        <div className="absolute bottom-4 left-0 right-0 text-center text-text-muted/70 text-sm font-medium font-body">
           Later ↓
         </div>
       </div>

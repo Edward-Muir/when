@@ -5,6 +5,7 @@ import { buildDailyConfig, buildDailyDeck } from '../utils/dailyConfig';
 import { getTodayDailyProgress } from '../utils/dailyProgress';
 import { getTodayResult } from '../utils/playerStorage';
 import { HistoricalEvent, WhenGameState } from '../types';
+import { STARTING_PASSES, passesLeft } from '../utils/gameLogic';
 
 // The catalogue and the calendar are network calls; see useWhenGame.test.ts.
 jest.mock('../utils/eventLoader', () => ({
@@ -87,6 +88,25 @@ describe('resuming the daily', () => {
     startDaily(second.result);
 
     expect(view(second.result.current.state)).toEqual(left);
+  });
+
+  it('a pass is saved at once, and cannot be taken back by relaunching', async () => {
+    const first = await mount();
+    startDaily(first.result);
+    const before = first.result.current.state.players[0].hand[0].name;
+    act(() => first.result.current.passCard());
+    const left = first.result.current.state;
+    expect(names(left.players[0].hand)).not.toContain(before);
+    first.unmount();
+
+    const second = await mount();
+    startDaily(second.result);
+    const back = second.result.current.state;
+
+    expect(view(back)).toEqual(view(left));
+    expect(names(back.passedCards ?? [])).toEqual([before]);
+    expect(passesLeft(back.players[0])).toBe(STARTING_PASSES - 1);
+    expect(names(back.deck)).not.toContain(before);
   });
 
   it('a move is saved the moment the card is dropped, already settled', async () => {

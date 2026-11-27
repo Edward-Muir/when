@@ -34,6 +34,13 @@ export interface DailyProgressSnapshot {
   /** The hand in order, so a cycled hand comes back the way it was left. */
   hand: string[];
   failed: StoredFailure[];
+  /**
+   * Cards passed, in order. They are neither on the board, in the hand nor missed, so without
+   * this list a restore would put them back in the deck, and a passed opening card would fail
+   * the opening check and drop the save. Its length is also the passes spent. Optional: a save
+   * written before the pass existed has none.
+   */
+  passed?: string[];
   placementHistory: boolean[];
   currentStreak: number;
   bestStreak: number;
@@ -61,6 +68,7 @@ export function buildDailyProgressSnapshot(state: WhenGameState): DailyProgressS
       timelineLength: failure.timelineLength,
       seq: failure.seq,
     })),
+    passed: (state.passedCards ?? []).map((event) => event.name),
     placementHistory: [...state.placementHistory],
     currentStreak: state.currentStreak,
     bestStreak: state.bestStreak,
@@ -99,7 +107,7 @@ export function getTodayDailyProgress(
     if (snapshot?.date !== dateString) return null;
     const arrays = [snapshot.timeline, snapshot.hand, snapshot.failed, snapshot.placementHistory];
     if (!arrays.every(Array.isArray) || typeof snapshot.seedEventName !== 'string') return null;
-    return snapshot;
+    return { ...snapshot, passed: Array.isArray(snapshot.passed) ? snapshot.passed : [] };
   } catch {
     // localStorage may be disabled or data corrupted - fail silently
     return null;
@@ -114,9 +122,13 @@ export function getTodayDailyProgress(
  * card and the first hand are the first 1 + H cards, where H, the hand size, is the hand plus the
  * misses (a hit draws a replacement, a miss does not). And every later draw is either the top
  * card or a catch-up draw (`catchUp.ts`) at most CATCH_UP_REACH cards further, which takes one
- * card and leaves the rest in order. So every card a player has seen (the board, the hand and
- * the misses) lies within the first N + CATCH_UP_REACH - 1 of the composed deck, and the rest
- * of the deck is the composed deck minus those N in order, which is why it never needs storing.
+ * card and leaves the rest in order. So every card a player has seen (the board, the hand, the
+ * misses and the cards passed) lies within the first N + CATCH_UP_REACH - 1 of the composed
+ * deck, and the rest of the deck is the composed deck minus those N in order, which is why it
+ * never needs storing.
+ *
+ * A pass (`processPass`) keeps both: it draws the top card, and it leaves the hand the same
+ * size, so H is still the hand plus the misses. The passed card counts as seen.
  *
  * A deploy that changed the catalogue, the difficulty index or today's theme almost always
  * reshuffles the opening or moves a seen card out of reach, and fails the check. A change that
@@ -128,7 +140,12 @@ function matchDealtCards(
   snapshot: DailyProgressSnapshot,
   composedDeck: HistoricalEvent[]
 ): Map<string, HistoricalEvent> | null {
-  const seen = [...snapshot.timeline, ...snapshot.hand, ...snapshot.failed.map((f) => f.name)];
+  const seen = [
+    ...snapshot.timeline,
+    ...snapshot.hand,
+    ...snapshot.failed.map((f) => f.name),
+    ...(snapshot.passed ?? []),
+  ];
   if (composedDeck.length < seen.length || composedDeck[0]?.name !== snapshot.seedEventName) {
     return null;
   }
@@ -175,6 +192,7 @@ export function restoreDailyProgress(
   const byName = matchDealtCards(snapshot, composedDeck);
   if (!byName) return null;
   const resolve = (name: string) => byName.get(name) as HistoricalEvent;
+  const passed = snapshot.passed ?? [];
 
   const isGameOver = snapshot.phase === 'gameOver';
   return {
@@ -191,6 +209,7 @@ export function restoreDailyProgress(
       timelineLength: failure.timelineLength,
       seq: failure.seq,
     })),
+    passedCards: passed.map(resolve),
     lastPlacementResult: null,
     isAnimating: false,
     animationPhase: null,
@@ -203,6 +222,7 @@ export function restoreDailyProgress(
         hasWon: false,
         isEliminated: isGameOver,
         placementHistory: [...snapshot.placementHistory],
+        passesUsed: passed.length,
       },
     ],
     currentPlayerIndex: 0,

@@ -2,9 +2,11 @@ import {
   calculatePlacementResult,
   processCorrectPlacement,
   processIncorrectPlacement,
+  processPass,
 } from './placementLogic';
 import { HistoricalEvent, Player, WhenGameState } from '../types';
 import { buildDifficultyIndex } from './difficultyScore';
+import { STARTING_PASSES, passesLeft, seededRandom } from './gameLogic';
 
 function ev(name: string, year: number, yearEnd?: number): HistoricalEvent {
   return {
@@ -101,7 +103,8 @@ describe('processCorrectPlacement', () => {
   it('single player: draws a replacement and ends the round', () => {
     const update = processCorrectPlacement(stateWith([player(0, [h1, h2])], [d1, d2]), h1);
 
-    expect(names(update.players[0].hand)).toEqual(['h2', 'd1']);
+    // The drawn card lands on top of the hand, ahead of the card that was second.
+    expect(names(update.players[0].hand)).toEqual(['d1', 'h2']);
     expect(names(update.deck)).toEqual(['d2']);
     expect(update.players[0].placementHistory).toEqual([true]);
     expect(update).toMatchObject({
@@ -125,9 +128,9 @@ describe('processCorrectPlacement', () => {
       timeline: [ev('seed', 1200), ev('placed', 1500)],
     });
 
-    expect(names(processCorrectPlacement(state, h1).players[0].hand)).toEqual(['h2', 'wedged']);
+    expect(names(processCorrectPlacement(state, h1).players[0].hand)).toEqual(['wedged', 'h2']);
     const update = processCorrectPlacement(state, h1, index);
-    expect(names(update.players[0].hand)).toEqual(['h2', 'open']);
+    expect(names(update.players[0].hand)).toEqual(['open', 'h2']);
     expect(names(update.deck)).toEqual(['wedged']);
   });
 
@@ -221,5 +224,126 @@ describe('processIncorrectPlacement', () => {
       activePlayersAtRoundStart: 2,
       currentPlayerIndex: 0,
     });
+  });
+});
+
+describe('processPass', () => {
+  const playing = (
+    players: Player[],
+    deck: HistoricalEvent[],
+    extra: Partial<WhenGameState> = {}
+  ) => stateWith(players, deck, { phase: 'playing', isAnimating: false, timeline: [], ...extra });
+
+  it('discards the active card and draws the new one onto the top of the hand', () => {
+    const update = processPass(playing([player(0, [h1, h2, h3])], [d1, d2]));
+
+    expect(names(update!.players[0].hand)).toEqual(['d1', 'h2', 'h3']);
+    expect(names(update!.deck)).toEqual(['d2']);
+    expect(names(update!.passedCards)).toEqual(['h1']);
+    expect(update!.players[0].passesUsed).toBe(1);
+  });
+
+  it('is not a placement: no history, and the update carries no turn', () => {
+    const update = processPass(playing([player(0, [h1, h2])], [d1]));
+
+    expect(update!.players[0].placementHistory).toEqual([]);
+    expect(Object.keys(update!).sort()).toEqual(['deck', 'passedCards', 'players']);
+  });
+
+  it('replaces the only card of a one-card hand', () => {
+    const update = processPass(playing([player(0, [h1])], [d1]));
+    expect(names(update!.players[0].hand)).toEqual(['d1']);
+  });
+
+  it('adds to the cards already passed, in order', () => {
+    const update = processPass(
+      playing([player(0, [h2, h3], { passesUsed: 1 })], [d1], { passedCards: [h1] })
+    );
+    expect(names(update!.passedCards)).toEqual(['h1', 'h2']);
+    expect(update!.players[0].passesUsed).toBe(2);
+  });
+
+  it('is refused with no pass left, and granted again once a streak earns one', () => {
+    const spent = { passesUsed: STARTING_PASSES };
+    expect(processPass(playing([player(0, [h1, h2], spent)], [d1]))).toBeNull();
+
+    const earned = { ...spent, placementHistory: [true, true, true] };
+    expect(processPass(playing([player(0, [h1, h2], earned)], [d1]))).not.toBeNull();
+  });
+
+  // Load-bearing: a pass that discarded without drawing would shrink the hand, which only a
+  // miss or a dry-deck hit may do (themeOutcome.ts, the leaderboard's red-square cap).
+  it('is refused on an empty deck', () => {
+    expect(processPass(playing([player(0, [h1, h2])], []))).toBeNull();
+  });
+
+  it('is refused mid-animation, outside play, and for an eliminated player', () => {
+    const seat = () => [player(0, [h1, h2])];
+    expect(processPass(playing(seat(), [d1], { isAnimating: true }))).toBeNull();
+    expect(processPass(playing(seat(), [d1], { phase: 'gameOver' }))).toBeNull();
+    expect(processPass(playing([player(0, [h1], { isEliminated: true })], [d1]))).toBeNull();
+  });
+
+  it('spends only the current player’s pass, and leaves the other seat alone', () => {
+    const other = player(0, [h1]);
+    const state = playing([other, player(1, [h2, h3])], [d1], { currentPlayerIndex: 1 });
+    const update = processPass(state);
+
+    expect(update!.players[0]).toBe(other);
+    expect(names(update!.players[1].hand)).toEqual(['d1', 'h3']);
+    expect(passesLeft(update!.players[1])).toBe(STARTING_PASSES - 1);
+    expect(passesLeft(update!.players[0])).toBe(STARTING_PASSES);
+  });
+
+  /**
+   * The invariant daily resume is built on: at every moment the board, the hand, the misses,
+   * the passed cards and the undealt deck are exactly the composed deck, and the undealt part
+   * is still in composed order. A random mix of hits, misses, passes and swaps must keep it.
+   */
+  it('keeps every card accounted for through any mix of moves', () => {
+    const HAND = 5;
+    for (let trial = 0; trial < 60; trial++) {
+      const random = seededRandom(9000 + trial);
+      const composed = Array.from({ length: 40 }, (_, i) => ev(`c${i}`, 1000 + i * 7));
+      const index = buildDifficultyIndex(composed);
+      let state = playing([player(0, composed.slice(1, 1 + HAND))], composed.slice(1 + HAND), {
+        timeline: [composed[0]],
+        passedCards: [],
+      });
+      const missed: HistoricalEvent[] = [];
+
+      for (let move = 0; move < 80 && state.players[0].hand.length > 0; move++) {
+        const hand = state.players[0].hand;
+        const dry = state.deck.length === 0;
+        const roll = random();
+        // What the move should do to the hand: only a miss or a dry-deck hit shrinks it.
+        let shrinks = false;
+        if (roll < 0.25) {
+          state = { ...state, ...(processPass(state) ?? {}) };
+        } else if (roll < 0.4) {
+          const [first, ...rest] = hand;
+          state = { ...state, players: [{ ...state.players[0], hand: [...rest, first] }] };
+        } else if (roll < 0.8) {
+          const placed = { ...state, timeline: [...state.timeline, hand[0]] };
+          state = { ...placed, ...processCorrectPlacement(placed, hand[0], index) };
+          shrinks = dry;
+        } else {
+          missed.push(hand[0]);
+          state = { ...state, ...processIncorrectPlacement(state, hand[0]) };
+          shrinks = true;
+        }
+        expect(state.players[0].hand).toHaveLength(hand.length - (shrinks ? 1 : 0));
+
+        const seen = [
+          ...state.timeline,
+          ...state.players[0].hand,
+          ...missed,
+          ...(state.passedCards ?? []),
+        ];
+        const seenNames = new Set(names(seen));
+        expect(seenNames.size).toBe(seen.length);
+        expect(names(state.deck)).toEqual(names(composed.filter((c) => !seenNames.has(c.name))));
+      }
+    }
   });
 });

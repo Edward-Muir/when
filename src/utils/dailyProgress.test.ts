@@ -10,7 +10,7 @@ import {
   saveDailyProgress,
   settleDailyPlacement,
 } from './dailyProgress';
-import { calculatePlacementResult } from './placementLogic';
+import { calculatePlacementResult, processPass } from './placementLogic';
 import { buildDailyConfig } from './dailyConfig';
 import { getLocalDateString } from './puzzleDate';
 import { buildDifficultyIndex } from './difficultyScore';
@@ -94,7 +94,7 @@ describe('settleDailyPlacement', () => {
     const after = play(dealt(), 0); // h1 (1200) before the seed (1500)
 
     expect(names(after.timeline)).toEqual(['h1', 'seed']);
-    expect(names(after.players[0].hand)).toEqual(['h2', 'd1', 'h3']); // drawn behind the active card
+    expect(names(after.players[0].hand)).toEqual(['d1', 'h2', 'h3']); // drawn onto the top
     expect(names(after.deck)).toEqual(['d2', 'd3']);
     expect(after.placementHistory).toEqual([true]);
     expect(after.currentStreak).toBe(1);
@@ -124,7 +124,7 @@ describe('settleDailyPlacement', () => {
 
     // d1 (1900) and d3 (1400) each sit one catalogue event from a neighbour; d2 (1100) has
     // three events' clearance before the seed, so it is drawn ahead of the top card.
-    expect(names(state.players[0].hand)).toEqual(['h3', 'd2']);
+    expect(names(state.players[0].hand)).toEqual(['d2', 'h3']);
     expect(names(state.deck)).toEqual(['d1', 'd3']);
   });
 
@@ -276,7 +276,7 @@ describe('the entry points', () => {
     saveDailyProgress(buildDailyProgressSnapshot(state));
 
     const resumed = resumeDailyProgress(DECK, CONFIG);
-    expect(names(resumed!.players[0].hand)).toEqual(['h3', 'd2']);
+    expect(names(resumed!.players[0].hand)).toEqual(['d2', 'h3']);
     expect(names(resumed!.deck)).toEqual(['d1', 'd3']);
     expect(canResumeDailyProgress(getTodayDailyProgress(TODAY), DECK)).toBe(true);
   });
@@ -297,5 +297,92 @@ describe('the entry points', () => {
 
     expect(resumeDailyProgress([DECK[1], DECK[0], ...DECK.slice(2)], CONFIG)).toBeNull();
     expect(localStorage.getItem(KEY)).toBeNull();
+  });
+});
+
+describe('a daily with passes', () => {
+  /** Pass the hand's top card, as `useWhenGame.passCard` does. */
+  const pass = (state: WhenGameState): WhenGameState => ({ ...state, ...processPass(state)! });
+  const resumed = (state: WhenGameState) =>
+    restoreDailyProgress(buildDailyProgressSnapshot(state), DECK, CONFIG);
+
+  it('saves the cards passed, in order', () => {
+    const snapshot = buildDailyProgressSnapshot(pass(pass(dealt())));
+    // The second pass discards the card the first one drew.
+    expect(snapshot!.passed).toEqual(['h1', 'd1']);
+    expect(snapshot!.hand).toEqual(['d2', 'h2', 'h3']);
+  });
+
+  // h1 is in the opening deal. It is no longer on the board, in the hand or missed, so without
+  // the passed list the opening check would fail and the daily would be dealt again.
+  it('resumes after a card of the opening hand was passed', () => {
+    const left = pass(dealt());
+    const restored = resumed(left);
+
+    expect(restored).not.toBeNull();
+    expect(names(restored!.players[0].hand)).toEqual(['d1', 'h2', 'h3']);
+    expect(names(restored!.deck)).toEqual(['d2', 'd3']);
+    expect(names(restored!.passedCards ?? [])).toEqual(['h1']);
+    expect(restored!.players[0].passesUsed).toBe(1);
+  });
+
+  it('does not resume the same game with the passed list lost', () => {
+    const snapshot = buildDailyProgressSnapshot(pass(dealt()))!;
+    expect(restoreDailyProgress({ ...snapshot, passed: undefined }, DECK, CONFIG)).toBeNull();
+  });
+
+  it('never deals a passed card again', () => {
+    const left = play(pass(dealt()), 2); // h1 passed, then d1 (1900) placed after the seed
+    const restored = resumed(left)!;
+
+    const inPlay = [...restored.timeline, ...restored.players[0].hand, ...restored.deck];
+    expect(names(inPlay)).not.toContain('h1');
+    expect(names(restored.deck)).toEqual(names(left.deck));
+  });
+
+  it('refuses a save that lists a card as both passed and held', () => {
+    const snapshot = buildDailyProgressSnapshot(pass(dealt()))!;
+    expect(restoreDailyProgress({ ...snapshot, passed: ['h2'] }, DECK, CONFIG)).toBeNull();
+  });
+
+  it('resumes a save written before the pass existed, with every pass unspent', () => {
+    const old = { ...buildDailyProgressSnapshot(play(dealt(), 0))! };
+    delete old.passed;
+    localStorage.setItem(KEY, JSON.stringify(old));
+
+    expect(getTodayDailyProgress(TODAY)!.passed).toEqual([]);
+    const restored = resumeDailyProgress(DECK, CONFIG)!;
+    expect(restored.passedCards).toEqual([]);
+    expect(restored.players[0].passesUsed).toBe(0);
+  });
+
+  it('round-trips at every step of a game that mixes passes with placements', () => {
+    const filler = Array.from({ length: 24 }, (_, i) => event(`f${i}`, 2000 + i * 3));
+    const long = [...DECK, ...filler];
+    let state = dealt({ deck: long.slice(4) });
+    const moves = ['pass', 'hit', 'pass', 'miss', 'hit', 'pass', 'hit', 'hit'] as const;
+    /** Where the top card belongs, or a slot where it does not. */
+    const slot = (current: WhenGameState, right: boolean) => {
+      const { timeline } = current;
+      const correct = calculatePlacementResult(
+        timeline,
+        current.players[0].hand[0],
+        0
+      ).correctPosition;
+      const wrong = correct === 0 ? timeline.length : 0;
+      return right ? correct : wrong;
+    };
+
+    for (const move of moves) {
+      state = move === 'pass' ? pass(state) : play(state, slot(state, move === 'hit'));
+      expect(state.phase).toBe('playing');
+      const restored = restoreDailyProgress(buildDailyProgressSnapshot(state), long, CONFIG);
+      expect(restored).not.toBeNull();
+      expect(names(restored!.players[0].hand)).toEqual(names(state.players[0].hand));
+      expect(names(restored!.deck)).toEqual(names(state.deck));
+      expect(names(restored!.passedCards ?? [])).toEqual(names(state.passedCards ?? []));
+      expect(restored!.players[0].passesUsed).toBe(state.players[0].passesUsed);
+    }
+    expect(state.passedCards).toHaveLength(3);
   });
 });

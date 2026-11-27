@@ -10,8 +10,13 @@ import {
   formatEventYearParts,
   seededRandom,
   addToHand,
+  passesAwarded,
+  passProgress,
+  passesLeft,
+  passedCount,
+  STARTING_PASSES,
 } from './gameLogic';
-import { HistoricalEvent } from '../types';
+import { HistoricalEvent, Player } from '../types';
 
 function ev(name: string, year: number, yearEnd?: number): HistoricalEvent {
   return {
@@ -330,12 +335,76 @@ describe('addToHand', () => {
   const names = (hand: HistoricalEvent[]) => hand.map((e) => e.name);
   const [a, b, c, drawn] = ['a', 'b', 'c', 'drawn'].map((n, i) => ev(n, 1000 + i));
 
-  it('puts a drawn card directly behind the active card', () => {
-    expect(names(addToHand([a, b, c], drawn))).toEqual(['a', 'drawn', 'b', 'c']);
+  it('puts a drawn card on top of the hand, ahead of every card held', () => {
+    expect(names(addToHand([a, b, c], drawn))).toEqual(['drawn', 'a', 'b', 'c']);
   });
 
-  it('appends to a hand too short to have a second slot', () => {
-    expect(names(addToHand([a], drawn))).toEqual(['a', 'drawn']);
+  it('deals into a one-card hand and an empty one alike', () => {
+    expect(names(addToHand([a], drawn))).toEqual(['drawn', 'a']);
     expect(names(addToHand([], drawn))).toEqual(['drawn']);
+  });
+});
+
+describe('passes', () => {
+  const run = (...lengths: number[]) =>
+    lengths.flatMap((length, i) => [
+      ...Array(length).fill(true),
+      ...(i < lengths.length - 1 ? [false] : []),
+    ]);
+  const seated = (extra: Partial<Player> = {}): Player => ({
+    id: 0,
+    name: 'P',
+    hand: [],
+    hasWon: false,
+    placementHistory: [],
+    ...extra,
+  });
+
+  it('awards one each time a correct run reaches a multiple of three', () => {
+    expect(passesAwarded([])).toBe(0);
+    expect(passesAwarded(run(2))).toBe(0);
+    expect(passesAwarded(run(3))).toBe(1);
+    expect(passesAwarded(run(4))).toBe(1);
+    expect(passesAwarded(run(6))).toBe(2);
+    expect(passesAwarded(run(9))).toBe(3);
+  });
+
+  it('starts the count again after a miss', () => {
+    expect(passesAwarded(run(2, 2))).toBe(0);
+    expect(passesAwarded(run(3, 2))).toBe(1);
+    expect(passesAwarded(run(3, 3))).toBe(2);
+    expect(passesAwarded(run(5, 4))).toBe(2);
+  });
+
+  it('measures progress to the next pass as the run so far, less the passes it has earned', () => {
+    expect(passProgress([])).toBe(0);
+    expect(passProgress(run(1))).toBe(1);
+    expect(passProgress(run(2))).toBe(2);
+    expect(passProgress(run(3))).toBe(0);
+    expect(passProgress(run(4))).toBe(1);
+    expect(passProgress(run(8))).toBe(2);
+  });
+
+  it('starts progress again after a miss, and has none on one', () => {
+    expect(passProgress(run(2, 1))).toBe(1);
+    expect(passProgress([true, true, false])).toBe(0);
+  });
+
+  it('leaves a player the starting passes, plus what they earned, less what they spent', () => {
+    expect(passesLeft(seated())).toBe(STARTING_PASSES);
+    expect(passesLeft(seated({ passesUsed: 1 }))).toBe(STARTING_PASSES - 1);
+    expect(passesLeft(seated({ placementHistory: run(6), passesUsed: 1 }))).toBe(
+      STARTING_PASSES + 1
+    );
+  });
+
+  it('never goes below none, and gives nobody none', () => {
+    expect(passesLeft(seated({ passesUsed: STARTING_PASSES + 4 }))).toBe(0);
+    expect(passesLeft(undefined)).toBe(0);
+  });
+
+  it('counts the cards passed, none on a state from before the pass', () => {
+    expect(passedCount({})).toBe(0);
+    expect(passedCount({ passedCards: [ev('a', 1), ev('b', 2)] })).toBe(2);
   });
 });

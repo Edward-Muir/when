@@ -10,7 +10,7 @@ Full-width vertical stack:
 (no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
   └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right, light/dark under Home
-Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand card, swap button
+Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-safe) — counter, hand card, swap button
 ```
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
@@ -49,16 +49,66 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
 
 - **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
   written. Landscape on the timeline (240×80 on a phone, 280×96 from `sm`; art across the left
-  70%, title on the right); a 168px square in the hand. A smaller 228×70 timeline card and a
-  140px hand card were both tried and reverted.
+  70%, title on the right); a 184px square in the hand. A smaller 228×70 timeline card and a
+  140px hand card were both tried and reverted. The hand card was 168px, exactly the width of
+  the landscape card's painting, until the maintainer asked for it a tenth larger; a dragged
+  card's painting now eases down 16px as it opens, which `HandDragOverlay` interpolates. The
+  bar did not grow with it: the card keeps 8px below and stands 8px over the bar's top edge
+  (`--hand-overlap`), across the line between the hand and the timeline, so the timeline
+  lost no height. The "Later" label and the hint strip moved from 8px to 16px above the bar
+  to clear the card and the fan's corners, and a tucked hand drops by the overlap plus 8px so no
+  sliver shows above the edge. The
+  larger card leaves 68px a side at 320px wide, so below 360px the hand buttons give up 8px
+  of clearance and sit on the fan's outer corner (`.hand-swap` in `index.css`).
+- **The hand bar's left panel is two counters and the deck.** One row holds the timeline
+  length and, beside it, the streak, always shown and starting at 0 (it was hidden at zero
+  briefly, and put back: a counter that comes and goes shifts the row and is one more moving
+  thing in the bar); under it is the deck pile and
+  its "Deck" caption. The row is the button that opens the stats and takes the `stats` hint's
+  glow. The panel used to lead with a gold fan icon carrying the number of cards in hand and
+  a "cards left" label, and the counter led a miss by dropping that number at the red flash.
+  The maintainer removed all of it once the hand card grew to 184px: the fanned hand beside
+  the panel already shows the cards, and five things in a 100px column read as clutter. A
+  hand of more than five (Custom only) therefore shows no count on the bar; the stats popup
+  still has it. Don't bring the number back without asking.
+- **Each hand control is named under it**: "Pass", "Cycle" and, opposite, "Deck", capitalised,
+  in one type. The maintainer asked for the names because a returning player has already
+  been through the hints and had no way to tell what the new Pass button did; the one-shot
+  hint only comes after their next placement. "Cycle" is the maintainer's word for the
+  button, and matches `cycleHand` and its `aria-label`. It was "Swap" before, and the hint
+  strip and How to Play now say "cycle" too; only the hint's storage key is still `swap`, so
+  nobody who has seen it is shown it again. The names are `aria-hidden`: each
+  control has its own label. With them the buttons are 12px apart as groups, which leaves 36px
+  from the bottom of Pass to the top of Cycle.
+- **The hand bar's controls are sized for a thumb and spaced so nothing crowds.** Pass and
+  Swap are 48px with 20px between them (`--hand-button`); at 44px and 12px, which meets the
+  minimum on paper, the maintainer was tapping between them or hitting the wrong one. The
+  pile's cards are 56px (`--pile-card`), which makes the pile about as wide as the counter row
+  above it, with 16px between the counters and the pile and 6px between the pile and its
+  caption. Under 360px wide the columns beside the hand card are 68px, so both variables fall
+  back to 44px and 40px there. That override sits after the `:root` block in `index.css`,
+  because the two have the same specificity and the later one wins; placed before it, the
+  narrow sizes silently never applied.
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
-  its left and the swap button sits in the space on its right, at every width. The counter used
+  its left and the swap button, with the pass button above it, sits in the space on its right,
+  at every width. Under the counter, in the same column, is the deck pile (62px square: the art of the
+  deck's next three cards as 56px tiles, each stepping 3px down and left of the one above,
+  with the count on a gold badge at the pile's top right corner, the same accent as the pass
+  count; an ink badge was tried and read as black, outside the theme): about 148px of the
+  card's 184 with the counter row above it and the "Deck" caption below. The count was first a plate over the top tile, on a 30px
+  tile straight below one another; it hid most of the art, and the maintainer asked for the
+  corner badge, the larger tiles and the down-left step. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
   edge and the swap button 40px beside it. The middle column is the card's width whether or not
   there is a card, so the counter does not move between turns. The swap button is centred in
   what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
-  the column it sat on the fanned cards at 360px wide.
+  the column it sat on the fanned cards at 360px wide. Pass is the upper of the two, 20px above
+  Swap: it cannot be undone, so it sits further from a resting thumb. Pass below Swap was
+  tried and the maintainer preferred this. The pass count is a badge on the
+  button's top corner, flush with its right edge: one pixel further out and it clips at 320px
+  wide. `.hand-swap` is z-7, above the hand's cards, so a card dealt in or thrown out passes
+  under the buttons.
 - The bottom bar's drop zone id is **`bottom-bar-zone`** — the Playwright selectors depend
   on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
@@ -439,7 +489,7 @@ and do not improve performance, while hints of this shape do.
 
 - **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
   `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `closeEnough`, `tapCard`,
-  `stats`, `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`,
+  `stats`, `swap`, `pass`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`,
   `reviewEye`). Switch-based
   accessors, because the `security/detect-object-injection` rule forbids indexing by a
   variable key. Note `stats` (the in-game counter hint), `statsTab` (the home tab's strip) and
@@ -481,11 +531,14 @@ and do not improve performance, while hints of this shape do.
 - **The ladder is settle-driven: one hint per placement.** Every time a placement settles
   (`isAnimating` goes false with an outcome pending) the highest-priority unseen, eligible
   rung of `SETTLE_PRIORITY` is shown, **replacing** whatever is up: `wrong` → `correct` →
-  `tapCard` → `stats` → `swap`. So each hint gets a player action of its own and nothing
-  stacks, and a first game teaches the whole loop in four or five moves. The idle drag nudge
+  `tapCard` → `stats` → `swap` → `pass`. So each hint gets a player action of its own and
+  nothing stacks, and a first game teaches the whole loop in five or six moves. The idle drag nudge
   (`DRAG_NUDGE_MS` after play starts) is the only timer-driven hint; `drag` is marked on
   the first drag whether or not the strip ever showed. `swap` needs a hand worth cycling
-  and either a miss or four placements, so a perfect run reaches it. An outcome that lands on
+  and either a miss or four placements, so a perfect run reaches it. `pass` comes after `swap`
+  (the free way out of a card before the costly one) and needs a pass to spend and a card to
+  draw; using the pass button marks it seen whether or not the strip ever showed, the `drag`
+  rule. An outcome that lands on
   the game-ending placement is discarded unmarked and returns next game.
 - **Do not gate a hint on a timer fed by a churning boolean.** An eligibility boolean flips on
   every drag frame and animation transition, so an effect that restarts a quiet-gap timer on
@@ -512,8 +565,8 @@ and do not improve performance, while hints of this shape do.
   is the class of change that stalls the iOS swipe. Custom is `panels/CustomPanel.tsx` like the
   other four tabs, so every strip has an `active` prop to gate on.
 - **The nudge animations** are `animate-hint-lift` (card bob, for `drag`) and one shared
-  `animate-hint-glow` (a gentle swell plus brightness) with four homes, in `index.css`: the
-  swap button, which is also filled gold; the Daily Play button while the start-screen strip
+  `animate-hint-glow` (a gentle swell plus brightness) with five homes, in `index.css`: the
+  swap and pass buttons, each also filled gold for its own hint; the Daily Play button while the start-screen strip
   is up; the top hand card's wrapper for `tapCard`; and the bottom-left counter for `stats`.
   The counter also takes `bg-border` while it glows — it is transparent otherwise, and the
   animation is transform and filter only, so without a surface to swell there is nothing to

@@ -30,6 +30,7 @@ import GameHud from './GameHud';
 import HintStrip from './HintStrip';
 import HandBar from './HandBar';
 import { hintText } from '../utils/hintCopy';
+import { passedCount, passesLeft } from '../utils/gameLogic';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import { useThemeIntro } from '../hooks/useThemeIntro';
 import ThemeIntroPopup from './ThemeIntroPopup';
@@ -137,6 +138,7 @@ interface GameProps {
   state: WhenGameState;
   onPlacement: (index: number) => PlacementResult | null;
   onCycleHand: () => void;
+  onPass: () => void;
   pendingPopup: GamePopupData | null;
   showDescriptionPopup: (event: HistoricalEvent) => void;
   showGameOverPopup: () => void;
@@ -164,6 +166,7 @@ const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
   onCycleHand,
+  onPass,
   pendingPopup,
   showDescriptionPopup,
   showGameOverPopup,
@@ -276,7 +279,7 @@ const Game: React.FC<GameProps> = ({
   const themeIntro = useThemeIntro(state);
 
   // The one-shot hints: the idle drag nudge, then one strip per placement walking the ladder
-  // wrong / correct -> tap a card -> the counter -> swap. All the conditions live in the
+  // wrong / correct -> tap a card -> the counter -> swap -> pass. All the conditions live in the
   // hook; this component only mounts the strip and passes the glow target its key.
   const hints = useOnboardingHints({
     phase: state.phase,
@@ -287,6 +290,8 @@ const Game: React.FC<GameProps> = ({
     deckLength: state.deck.length,
     timelineLength: state.timeline.length,
     activeCardName: activeCard?.name,
+    passesLeft: passesLeft(currentPlayer),
+    passedCount: passedCount(state),
     isMultiplayer: state.players.length > 1,
     statsOpen: showStatsPopup,
     cardOpen: isCardPopupOpen(pendingPopup),
@@ -443,10 +448,10 @@ const Game: React.FC<GameProps> = ({
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
                     timelineLength={state.timeline.length}
+                    deck={state.deck}
                     onStatsClick={() => setShowStatsPopup(true)}
                     currentStreak={state.currentStreak}
                     nudge={hints.active}
-                    placementInFlight={state.isAnimating ? state.lastPlacementResult : null}
                   />
                 </div>
 
@@ -457,6 +462,8 @@ const Game: React.FC<GameProps> = ({
                     currentPlayer={currentPlayer}
                     isAnimating={state.isAnimating}
                     onCycleHand={onCycleHand}
+                    onPass={onPass}
+                    deckLength={state.deck.length}
                     onCardTap={handleActiveCardTap}
                     nudge={hints.active}
                   />

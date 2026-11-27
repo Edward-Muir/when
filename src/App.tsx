@@ -8,6 +8,7 @@ import { isDailyReminderSupported, resyncDailyReminders } from './utils/dailyRem
 import { useWhenGame } from './hooks/useWhenGame';
 import { useImagePrefetch } from './hooks/useImagePrefetch';
 import { CATCH_UP_REACH } from './utils/catchUp';
+import { STARTING_PASSES } from './utils/gameLogic';
 import { pickIntroEvents } from './utils/introEvents';
 import { GameConfig } from './types';
 import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
@@ -26,11 +27,12 @@ import GameStartTransition from './components/GameStartTransition';
 // there is no turn cap — a strong run can consume far more than 15 cards. 15 covers the
 // opening (seed + 5-card hand) plus a typical run's early draws, which is the window where
 // a spoiler would actually be noticed. After a miss a catch-up draw can reach up to
-// CATCH_UP_REACH cards further (utils/catchUp.ts), so the guard covers that much more.
+// CATCH_UP_REACH cards further (utils/catchUp.ts), so the guard covers that much more. Each
+// pass draws one more card, and every game can spend its starting passes from the first move.
 //
 // Exported so src/utils/introSpoilerGuard.test.ts measures the real guard instead of a
 // hand-copied mirror of this number.
-export const DAILY_SPOILER_DEPTH = 15 + CATCH_UP_REACH;
+export const DAILY_SPOILER_DEPTH = 15 + STARTING_PASSES + CATCH_UP_REACH;
 
 /** A daily deck this small is kept out of the intro in full, like a curated one. */
 export const THIN_DAILY_DECK = 60;
@@ -139,6 +141,7 @@ function App({
     completeTransition,
     placeCard,
     cycleHand,
+    passCard,
     resetGame,
     restartGame,
     gameKey,
@@ -274,6 +277,7 @@ function App({
           state={state}
           onPlacement={placeCard}
           onCycleHand={cycleHand}
+          onPass={passCard}
           pendingPopup={pendingPopup}
           showDescriptionPopup={showDescriptionPopup}
           showGameOverPopup={showGameOverPopup}

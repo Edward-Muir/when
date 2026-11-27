@@ -86,7 +86,7 @@ await page.waitForTimeout(2500);
 The app has almost **no `data-testid`s**, so rely on these stable handles:
 
 - **Active card (the drag handle):** `div.cursor-grab` (first match). Its
-  `innerText` (first line) is the event's `friendly_name`. It is a 168px square in the middle of the screen; once lifted
+  `innerText` (first line) is the event's `friendly_name`. It is a 184px square in the middle of the screen; once lifted
   it is `invisible` in the hand and the drag overlay is the landscape card, centred on the
   pointer.
 - **Placed timeline markers:** `[data-timeline-year]`. The attribute value is
@@ -104,9 +104,28 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   lines) and must stay so after the shard loads and after scrolling to the end.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
-- **Bottom-left counters:** big number = cards left; 📏 = timeline length, including the
-  starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
-  the "Timeline Stats" popup.
+- **Hand buttons:** Swap is `button[aria-label="Cycle to next card"]` and Pass, above it, is
+  `button[aria-label="Pass this card"]`. The passes left are `[data-testid="pass-count"]`, and
+  a passed card on its way out is `[data-testid="passed-card"]` for about 0.4 s. Both buttons
+  are disabled during a drag and while a placement animates. The cards fanned behind the top
+  one are `[data-hand-fan]`.
+- **The deck pile** is `[data-testid="deck-pile"]`, under the bottom-left counter. Its text is
+  the cards left to draw, or `30+` above thirty, and a drawn card's first frame sits on it.
+  Its tiles are `[data-testid="deck-card"]`, the next card first.
+- **The dev server pauses for about a third of a second whenever the deck changes** (a pass,
+  a correct placement). That is React's development build diffing the `state` prop for its
+  performance track (`addObjectDiffToProperties` in a CPU profile), not the app. Time
+  animations against `npm run build` served statically, never against `npm start`.
+- **Bottom-left counters:** 📏 = timeline length, including the starting card (so one more
+  than the score), `[data-testid="timeline-counter"]`; ⚡ = current streak,
+  `[data-testid="streak-counter"]`, shown from 0. The row is one button,
+  `aria-label` starting "Game stats", and tapping it opens the "Timeline Stats" popup. There
+  is no hand count on the bar any more: count `[data-hand-fan]` plus one, or open the popup.
+- **Pass ring:** `[data-testid="pass-ring"]` on the Pass button, `data-lit` = segments lit
+  (0 to 2, or 3 for the first 170 ms of an earn). While a pass is being earned,
+  `[data-testid="pass-count"]` shows the old count for half a second, then
+  `[data-testid="pass-earned"]` (the "+1") is up for 0.75 s: wait about 1.3 s after the
+  placement settles before reading the count.
 - **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
   label under the "When?" wordmark at the top left of the board in game (`div[title]`). A
   game has no top bar: the only control is `[aria-label="Go home"]`, top right.
@@ -124,14 +143,15 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
 - **A control nudged by a transform can never be clicked without `force: true`.**
   `animate-hint-glow` (infinite scale) and `animate-hint-lift` (infinite bob) never let
   Playwright's actionability check call the element "stable", so the click times out after 30 s.
-  This looks like a broken selector and is not: a real tap works fine. It bites the swap button,
+  This looks like a broken selector and is not: a real tap works fine. It bites the swap and pass buttons,
   the Play button, the bottom-left counter and the top hand card, each while its hint is up.
   On a fresh install **"Play Daily Challenge" carries `animate-hint-glow`**, so click it with
   `{ force: true }`.
   The Daily card's eye is **not** affected: `animate-hint-halo` animates box-shadow only, so the
   element never moves and it clicks normally (measured at ~50 ms).
 - **The in-game ladder is one pill per placement**, shown when the placement animation
-  settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap`.
+  settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap` →
+  `pass`.
   Do **not** pause between drags to "let a hint appear": a test that waits never sees the
   pills race each other, which is where bugs hide. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
   the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the
@@ -199,7 +219,7 @@ const pos = await page.$$eval('[data-timeline-year]', (els) =>
     return r.top + r.height / 2;
   })
 );
-const handTop = cardBox.y - 8; // the hand bar starts 8px above the square hand card
+const handTop = cardBox.y + 8; // the hand card stands 8px over the hand bar's top edge
 let targetY;
 if (pos.length === 0)
   targetY = (140 + handTop - 30) / 2; // empty timeline
@@ -242,7 +262,7 @@ A tall viewport (height ≥ 1200) also helps by fitting more markers at once.
 ## 7. Modes, scoring & the daily
 
 - **Game phases:** `loading → modeSelect → transitioning → playing → gameOver`.
-- **One rule-set for every game:** a hand of 5, shown as "cards left". Correct
+- **One rule-set for every game:** a hand of 5, shown as the fanned cards in the hand bar. Correct
   placement → the card stays, a replacement is drawn, streak +1. Wrong placement →
   a grey tombstone at the card's true slot, hand −1, streak resets. **Game over when
   the hand is empty** (5 misses), or when a small deck runs dry ("Theme Cleared!" /
