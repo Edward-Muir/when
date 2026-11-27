@@ -175,14 +175,20 @@ function handButtonClass(nudged: boolean): string {
   const fill = nudged
     ? 'animate-hint-glow bg-accent border-accent'
     : 'bg-surface border-border active:bg-border [@media(hover:hover)]:hover:bg-border';
-  return `w-11 h-11 min-w-11 min-h-11 shrink-0 rounded-full
+  // The size is `--hand-button` (index.css): 48px, or 44px on a screen under 360px wide.
+  return `w-[var(--hand-button)] h-[var(--hand-button)] min-w-[var(--hand-button)]
+    min-h-[var(--hand-button)] shrink-0 rounded-full
     border shadow-sm flex items-center justify-center
     disabled:opacity-40 disabled:cursor-not-allowed
     active:scale-[0.92] active:shadow-none
     transition-[transform,background-color,box-shadow] duration-100 ${fill}`;
 }
 
-/** The ring's circle: on the 44px button's 1px border, 2.5px wide. */
+/**
+ * The ring's circle, in the units of a 44-unit viewBox: on the button's 1px border, 2.5 wide.
+ * The SVG fills the button, so at the 48px button it is drawn a little larger and still sits
+ * on the border.
+ */
 const RING_RADIUS = 20.75;
 const RING_LENGTH = 2 * Math.PI * RING_RADIUS;
 /** The space between two segments, along the circle. */
@@ -286,7 +292,7 @@ const PassRing: React.FC<{ history: readonly boolean[]; phase: EarnPhase }> = ({
       aria-hidden
       viewBox="0 0 44 44"
       fill="none"
-      className="pointer-events-none absolute inset-0 h-11 w-11 overflow-visible"
+      className="pointer-events-none absolute inset-0 h-full w-full overflow-visible"
     >
       {Array.from({ length: PASS_STREAK }, (_, i) => (
         <circle
@@ -572,9 +578,10 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
       </div>
 
       {/* Pass and, below it, Swap: beside the card, never on it, so they cover neither art nor
-          title. 44px each, the minimum touch target, and 12px apart. Pass is the upper one: it
-          cannot be undone, so it sits further from a resting thumb than Swap, which can. */}
-      <div className="hand-swap flex flex-col items-center justify-center gap-3 pointer-events-auto">
+          title. 48px each and 20px apart: at 44px and 12px a thumb landed between them, or on
+          the wrong one. Pass is the upper one: it cannot be undone, so it sits further from a
+          resting thumb than Swap, which can. */}
+      <div className="hand-swap flex flex-col items-center justify-center gap-5 pointer-events-auto">
         {/* The ring and the badge are siblings of the button, not children, so a disabled
             button's dimming does not take them with it. */}
         <div className="relative flex">
@@ -585,7 +592,9 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
             aria-label="Pass this card"
             aria-describedby={passesId}
           >
-            <SkipForward className={`w-5 h-5 ${passNudge ? 'text-white' : 'text-text'}`} />
+            <SkipForward
+              className={`w-[22px] h-[22px] ${passNudge ? 'text-white' : 'text-text'}`}
+            />
           </button>
           <PassStatus player={currentPlayer} nudged={passNudge} still={reduceMotion === true} />
           <span id={passesId} className="sr-only">
@@ -604,7 +613,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
             animate={{ rotate: turns * 180 }}
             transition={{ type: 'spring', stiffness: 400, damping: 30 }}
           >
-            <RefreshCw className={`w-5 h-5 ${cycleNudge ? 'text-white' : 'text-text'}`} />
+            <RefreshCw className={`w-[22px] h-[22px] ${cycleNudge ? 'text-white' : 'text-text'}`} />
           </motion.span>
         </button>
       </div>

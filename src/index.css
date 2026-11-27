@@ -426,9 +426,24 @@ body {
   --hand-card: 184px;
   /* How far the hand card stands above the hand bar's top edge (see `.hand-bar`). */
   --hand-overlap: 8px;
+  /* The Pass and Swap buttons beside the hand, and a card of the deck pile opposite them. Both
+     are a size up from the 44px and 40px they began at: the buttons were close enough to tap
+     the wrong one, and the pile is meant to be about as wide as the counters above it. */
+  --hand-button: 48px;
+  --pile-card: 56px;
   --board-card: 280px; /* Card.tsx, size="landscape", sm: */
   --board-col: calc(var(--board-gutter) + var(--board-gap) + var(--board-card)); /* 388px */
   --board-inset: calc(50% - var(--board-col) / 2);
+}
+
+/* Below 360px the columns beside the hand card are 68px wide, which the larger button and the
+   larger pile do not fit, so both keep the sizes they began at. After the `:root` block above
+   on purpose: the two have the same specificity, so the later one wins. */
+@media (max-width: 359px) {
+  :root {
+    --hand-button: 44px;
+    --pile-card: 40px;
+  }
 }
 
 @layer utilities {

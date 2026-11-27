@@ -71,13 +71,22 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   the panel already shows the cards, and five things in a 100px column read as clutter. A
   hand of more than five (Custom only) therefore shows no count on the bar; the stats popup
   still has it. Don't bring the number back without asking.
+- **The hand bar's controls are sized for a thumb and spaced so nothing crowds.** Pass and
+  Swap are 48px with 20px between them (`--hand-button`); at 44px and 12px, which meets the
+  minimum on paper, the maintainer was tapping between them or hitting the wrong one. The
+  pile's cards are 56px (`--pile-card`), which makes the pile about as wide as the counter row
+  above it, with 16px between the counters and the pile and 6px between the pile and its
+  caption. Under 360px wide the columns beside the hand card are 68px, so both variables fall
+  back to 44px and 40px there. That override sits after the `:root` block in `index.css`,
+  because the two have the same specificity and the later one wins; placed before it, the
+  narrow sizes silently never applied.
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
   its left and the swap button, with the pass button above it, sits in the space on its right,
-  at every width. Under the counter, in the same column, is the deck pile (46px square: the art of the
-  deck's next three cards as 40px tiles, each stepping 3px down and left of the one above,
+  at every width. Under the counter, in the same column, is the deck pile (62px square: the art of the
+  deck's next three cards as 56px tiles, each stepping 3px down and left of the one above,
   with the count on a gold badge at the pile's top right corner, the same accent as the pass
-  count; an ink badge was tried and read as black, outside the theme): about 120px of the
+  count; an ink badge was tried and read as black, outside the theme): about 148px of the
   card's 184 with the counter row above it and the "deck" caption below. The count was first a plate over the top tile, on a 30px
   tile straight below one another; it hid most of the art, and the maintainer asked for the
   corner badge, the larger tiles and the down-left step. The counter used
@@ -85,7 +94,7 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   edge and the swap button 40px beside it. The middle column is the card's width whether or not
   there is a card, so the counter does not move between turns. The swap button is centred in
   what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
-  the column it sat on the fanned cards at 360px wide. Pass is the upper of the two, 12px above
+  the column it sat on the fanned cards at 360px wide. Pass is the upper of the two, 20px above
   Swap: it cannot be undone, so it sits further from a resting thumb. Pass below Swap was
   tried and the maintainer preferred this. The pass count is a badge on the
   button's top corner, flush with its right edge: one pixel further out and it clips at 320px

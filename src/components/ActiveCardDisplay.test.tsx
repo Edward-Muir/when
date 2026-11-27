@@ -144,6 +144,14 @@ describe('the pass button', () => {
     expect(swapButton()).toHaveClass('animate-hint-glow', 'bg-accent');
   });
 
+  it('takes its size, like swap, from the one variable the stylesheet sets', () => {
+    setup();
+    // 48px, or 44px on a narrow screen (index.css). A fixed size here would undo both.
+    [passButton(), swapButton()].forEach((button) =>
+      expect(button).toHaveClass('w-[var(--hand-button)]', 'h-[var(--hand-button)]')
+    );
+  });
+
   it('sits above swap', () => {
     setup();
     const position = passButton().compareDocumentPosition(swapButton());

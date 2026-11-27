@@ -172,11 +172,15 @@ function deckAriaLabel(count: number): string {
 
 /** How many of the deck's next cards show their art in the pile. */
 const PILE_ART_CARDS = 3;
-/** A pile card's side, and how far each card under the top one peeks out, down and left. */
-const PILE_CARD_PX = 40;
+/**
+ * A pile card's side: `--pile-card` in index.css, 56px, or 40px on a screen under 360px wide.
+ * At 56px the pile is about as wide as the counters above it.
+ */
+const PILE_CARD = 'var(--pile-card)';
+/** How far each card under the top one peeks out, down and left. */
 const PILE_STEP_PX = 3;
 /** The pile's box: the top card plus the two steps the deepest card sits out by. */
-const PILE_PX = PILE_CARD_PX + (PILE_ART_CARDS - 1) * PILE_STEP_PX;
+const PILE_BOX = `calc(${PILE_CARD} + ${(PILE_ART_CARDS - 1) * PILE_STEP_PX}px)`;
 
 /**
  * One card of the pile: its painting, or a blank tile if it has none or it fails to load.
@@ -194,8 +198,8 @@ const PileArt: React.FC<{ event: HistoricalEvent; depth: number }> = ({ event, d
       // The top card sits at the pile's top right, under the count; each card below it steps
       // down and to the left, and is dimmer, never more transparent, as the hand's fan is.
       style={{
-        width: PILE_CARD_PX,
-        height: PILE_CARD_PX,
+        width: PILE_CARD,
+        height: PILE_CARD,
         top: depth * PILE_STEP_PX,
         left: (PILE_ART_CARDS - 1 - depth) * PILE_STEP_PX,
         zIndex: PILE_ART_CARDS - depth,
@@ -252,13 +256,13 @@ export const DeckPile: React.FC<{ deck: HistoricalEvent[] }> = ({ deck }) => {
       aria-label={deckAriaLabel(count)}
       animate={dip}
       className="relative"
-      style={{ width: PILE_PX, height: PILE_PX }}
+      style={{ width: PILE_BOX, height: PILE_BOX }}
     >
       {empty ? (
         <div
           data-testid="deck-outline"
           className="absolute right-0 top-0 rounded-[5px] border-[1.5px] border-dashed border-text-muted opacity-50"
-          style={{ width: PILE_CARD_PX, height: PILE_CARD_PX }}
+          style={{ width: PILE_CARD, height: PILE_CARD }}
         />
       ) : (
         deck
@@ -335,12 +339,12 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   );
 
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-center gap-4">
       {counters}
       {/* The pile and its name. The caption is outside the pile so it neither dips with it
           nor moves the point a card is dealt from, and it is hidden from a screen reader,
           which has the pile's own label. */}
-      <div className="flex flex-col items-center gap-0.5">
+      <div className="flex flex-col items-center gap-1.5">
         <DeckPile deck={deck} />
         <span aria-hidden className="text-sm text-text font-body">
           deck
