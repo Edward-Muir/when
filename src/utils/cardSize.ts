@@ -3,21 +3,22 @@
  *
  * The landscape card is a timeline row's card (and the drop ghost, the Archive's day card and
  * what a dragged card becomes). The square is the card in hand. A smaller landscape card
- * (228 x 70) and a 140px hand card were both tried and reverted; the hand card was 168px until
- * the maintainer asked for it a tenth larger.
+ * (228 x 70) and a 140px hand card were both tried and reverted. The hand card was 168px, then
+ * 184px when the maintainer asked for it a tenth larger, then 174px when that crowded the
+ * controls beside it.
  *
  * Changing either one is not just these strings:
  *
  * - The hand bar's height and its grid are built on `--hand-card` in index.css.
  * - The board column's desktop centring is built on `--board-card` (the `sm` width).
  * - At phone size the landscape card's painting (70% of its width) is 168px, a little narrower
- *   than the square, so a dragged card's painting eases down by 16px as it opens
+ *   than the square, so a dragged card's painting eases down by 6px as it opens
  *   (HandDragOverlay.tsx interpolates from whatever width it was picked up at).
  *
  * The class strings are whole literals so Tailwind can see them.
  */
 export const LANDSCAPE_CARD_CLASS = 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]';
-export const SQUARE_CARD_CLASS = 'w-[184px] h-[184px]';
+export const SQUARE_CARD_CLASS = 'w-[174px] h-[174px]';
 
 /** The landscape card's size in px, below and from Tailwind's `sm` breakpoint (640px). */
 export const LANDSCAPE_CARD = {

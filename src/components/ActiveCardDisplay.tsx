@@ -165,6 +165,8 @@ function useDrawnCards(player: Player): ReadonlySet<string> {
   return drawn;
 }
 
+const ignoreTap = () => {};
+
 /** The name under each hand button: the same type as the deck pile's "Deck" caption. */
 const HAND_LABEL_CLASS = 'text-sm text-text font-body';
 
@@ -435,6 +437,12 @@ interface ActiveCardDisplayProps {
   activeCard: HistoricalEvent;
   currentPlayer: Player;
   isAnimating: boolean;
+  /**
+   * The top card is the one just played and is on its way to the board, so the hand must not
+   * show it too. False when the hand given is already the one the turn will settle into
+   * (`Game`'s `handOnShow`): then the top card is the next one, shown at once, and only locked.
+   */
+  topHidden?: boolean;
   onCycleHand: () => void;
   /** Spend a pass: the engine discards the active card and draws another, or refuses. */
   onPass: () => void;
@@ -452,6 +460,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   activeCard,
   currentPlayer,
   isAnimating,
+  topHidden = false,
   onCycleHand,
   onPass,
   deckLength,
@@ -551,9 +560,11 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           >
             <DraggableCard
               event={activeCard}
-              onTap={onCardTap}
+              // Locked while a placement animates, and deaf to a tap: `onCardTap` opens the
+              // engine's active card, which until the turn commits is the one just played.
+              onTap={isAnimating ? ignoreTap : onCardTap}
               disabled={isAnimating}
-              isHidden={isAnimating}
+              isHidden={topHidden}
               size="square"
               priority
             />

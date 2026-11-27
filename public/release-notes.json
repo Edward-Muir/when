@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "The next card now arrives while a placed card is still landing.",
+    "The cards in hand are slightly smaller, to give the buttons beside them more room."
+  ],
   "releases": [
     {
       "version": "1.41.0",
