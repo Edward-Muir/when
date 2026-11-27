@@ -130,13 +130,12 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) 
 };
 
 /**
- * The streak, beside the timeline counter. Absent at zero: a fresh game, or one just after a
- * miss, has no streak to show, and the bar is quieter without a "0". It pops in with the first
- * correct placement, which is the keyed remount below doing what it does on every change.
+ * The streak, beside the timeline counter. Always there, from 0: it was hidden at zero for a
+ * while, and the maintainer put it back, because a counter that comes and goes shifts the row
+ * each time and is one more thing moving in the bar. The pop on a new number stays.
  */
 const StreakBolt: React.FC<{ streak: number }> = ({ streak }) => {
   const config = getStreakFeedback(streak);
-  if (streak <= 0) return null;
 
   return (
     <div

@@ -61,7 +61,9 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   larger card leaves 68px a side at 320px wide, so below 360px the hand buttons give up 8px
   of clearance and sit on the fan's outer corner (`.hand-swap` in `index.css`).
 - **The hand bar's left panel is two counters and the deck.** One row holds the timeline
-  length and, beside it, the streak, which is absent at zero; under it is the deck pile and
+  length and, beside it, the streak, always shown and starting at 0 (it was hidden at zero
+  briefly, and put back: a counter that comes and goes shifts the row and is one more moving
+  thing in the bar); under it is the deck pile and
   its "deck" caption. The row is the button that opens the stats and takes the `stats` hint's
   glow. The panel used to lead with a gold fan icon carrying the number of cards in hand and
   a "cards left" label, and the counter led a miss by dropping that number at the red flash.

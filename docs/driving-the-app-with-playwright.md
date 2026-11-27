@@ -118,7 +118,7 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   animations against `npm run build` served statically, never against `npm start`.
 - **Bottom-left counters:** 📏 = timeline length, including the starting card (so one more
   than the score), `[data-testid="timeline-counter"]`; ⚡ = current streak,
-  `[data-testid="streak-counter"]`, absent while the streak is 0. The row is one button,
+  `[data-testid="streak-counter"]`, shown from 0. The row is one button,
   `aria-label` starting "Game stats", and tapping it opens the "Timeline Stats" popup. There
   is no hand count on the bar any more: count `[data-hand-fan]` plus one, or open the popup.
 - **Pass ring:** `[data-testid="pass-ring"]` on the Pass button, `data-lit` = segments lit

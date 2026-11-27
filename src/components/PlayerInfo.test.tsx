@@ -65,13 +65,14 @@ describe('the hand bar counters', () => {
     expect(row).not.toHaveClass('flex-col');
   });
 
-  it('leave the streak out at zero', () => {
+  // It was hidden at zero once; a counter that comes and goes moves the row about.
+  it('show the streak from the start, at zero', () => {
     renderPanel({ currentStreak: 0 });
-    expect(screen.queryByTestId('streak-counter')).toBeNull();
+    expect(screen.getByTestId('streak-counter')).toHaveTextContent('0');
     expect(screen.getByTestId('timeline-counter')).toBeInTheDocument();
   });
 
-  it('bring the streak in with the first correct placement', () => {
+  it('show the streak as it grows', () => {
     renderPanel({ currentStreak: 1 });
     expect(screen.getByTestId('streak-counter')).toHaveTextContent('1');
   });
