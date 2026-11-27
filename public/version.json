@@ -1,7 +1,11 @@
 {
-  "version": "1.40.0",
-  "date": "2026-11-19",
+  "version": "1.41.0",
+  "date": "2026-11-27",
   "notes": [
-    "The game screen gives the timeline more room."
+    "Curated themes now run on Wednesdays as well as Mondays and Fridays.",
+    "Each game now starts with three passes to discard a card, and three correct in a row earn another.",
+    "The hand now shows the deck, and each new card is dealt from it.",
+    "The cards in hand are a little larger.",
+    "The hand bar is tidier, and a ring on the Pass button shows progress to the next pass."
   ]
 }

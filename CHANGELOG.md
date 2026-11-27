@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.41.0](https://github.com/Edward-Muir/when/compare/v1.40.0...v1.41.0) (2026-11-27)
+
+
+### Features
+
+* **hand:** add the pass, a deck pile and a roomier hand bar ([#158](https://github.com/Edward-Muir/when/issues/158)) ([e670ffb](https://github.com/Edward-Muir/when/commit/e670ffb87b7f24ec8f6b143b7abb2b002f22ef46))
+
 ## [1.40.0](https://github.com/Edward-Muir/when/compare/v1.39.0...v1.40.0) (2026-11-19)
 
 
