@@ -106,13 +106,13 @@ describe('useWhenGame - the pass', () => {
     expect(result.current.state.passedCards).toEqual([]);
   });
 
-  it('discards the active card and draws the top of the deck behind the next one', async () => {
+  it('discards the active card and draws the top of the deck in its place', async () => {
     const result = await start();
     expect(hand(result)).toEqual(['event-1810', 'event-1820', 'event-1830']);
 
     pass(result);
 
-    expect(hand(result)).toEqual(['event-1820', 'event-1840', 'event-1830']);
+    expect(hand(result)).toEqual(['event-1840', 'event-1820', 'event-1830']);
     expect(result.current.state.deck[0].name).toBe('event-1850');
     expect(result.current.state.passedCards!.map((e) => e.name)).toEqual(['event-1810']);
     expect(left(result)).toBe(STARTING_PASSES - 1);

@@ -221,7 +221,7 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
   it that way and checks that the opening deal is the deck's front and that every seen card is
   within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
   reason.
-- **Every drawn card goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`),
+- **Every card drawn after a placement goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`; a pass is the exception, see [The pass](#the-pass)),
   eased or not, so where a card lands never gives away that it was eased. It is played on the
   next turn, close to the board it was picked for; room is measured at draw time, so it is an
   upper bound.
@@ -271,7 +271,7 @@ at struggle > 0.
 ## The pass
 
 A player holding a card they cannot place had no move but to guess. The pass gives them one:
-the button below Swap discards the top card unplayed and draws another. Every player starts a
+the button above Swap discards the top card unplayed and draws another in its place. Every player starts a
 game with three (`STARTING_PASSES`) and earns one more each time a run of correct placements
 reaches a multiple of three (`PASS_STREAK`), with no cap. It runs in every mode, the Daily
 included. The rules are `processPass` in `placementLogic.ts` and the helpers beside
@@ -296,9 +296,11 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
   the leaderboard's red-square cap both rely on a hand shrinking only on a miss or a dry-deck
   hit. A pass that discarded without drawing would be a third way.
 - **The draw is the top of the deck, never a catch-up draw.** Struggle only decays on a hit,
-  so an eased pass would be eased twice, and catch-up is meant to stay invisible. The drawn
-  card lands at `DRAW_SLOT` like every other draw: the next card in the hand steps up and the
-  new one arrives behind it.
+  so an eased pass would be eased twice, and catch-up is meant to stay invisible.
+- **The drawn card goes on top of the hand, not to `DRAW_SLOT`.** It was first built to land
+  behind the next card like every other draw, and the maintainer reversed it: a pass asks for
+  a different card to play now, and showing the card that was second reads as a swap.
+  `DRAW_SLOT` exists so a catch-up draw is not played at once, which a pass never is.
 - **Passed cards are recorded**: `passedCards` on the state, `passed` slugs in the daily
   progress and board saves. Daily resume rebuilds the deck as the composed deck minus every
   card seen, and a passed card is seen. Without the list a passed opening card fails the

@@ -233,10 +233,10 @@ describe('processPass', () => {
     extra: Partial<WhenGameState> = {}
   ) => stateWith(players, deck, { phase: 'playing', isAnimating: false, timeline: [], ...extra });
 
-  it('discards the active card, steps the next one up and draws behind it', () => {
+  it('discards the active card and draws the new one onto the top of the hand', () => {
     const update = processPass(playing([player(0, [h1, h2, h3])], [d1, d2]));
 
-    expect(names(update!.players[0].hand)).toEqual(['h2', 'd1', 'h3']);
+    expect(names(update!.players[0].hand)).toEqual(['d1', 'h2', 'h3']);
     expect(names(update!.deck)).toEqual(['d2']);
     expect(names(update!.passedCards)).toEqual(['h1']);
     expect(update!.players[0].passesUsed).toBe(1);
@@ -249,7 +249,7 @@ describe('processPass', () => {
     expect(Object.keys(update!).sort()).toEqual(['deck', 'passedCards', 'players']);
   });
 
-  it('puts the drawn card on top of a one-card hand', () => {
+  it('replaces the only card of a one-card hand', () => {
     const update = processPass(playing([player(0, [h1])], [d1]));
     expect(names(update!.players[0].hand)).toEqual(['d1']);
   });
@@ -289,7 +289,7 @@ describe('processPass', () => {
     const update = processPass(state);
 
     expect(update!.players[0]).toBe(other);
-    expect(names(update!.players[1].hand)).toEqual(['h3', 'd1']);
+    expect(names(update!.players[1].hand)).toEqual(['d1', 'h3']);
     expect(passesLeft(update!.players[1])).toBe(STARTING_PASSES - 1);
     expect(passesLeft(update!.players[0])).toBe(STARTING_PASSES);
   });

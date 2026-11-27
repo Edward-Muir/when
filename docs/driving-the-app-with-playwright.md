@@ -104,7 +104,7 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   lines) and must stay so after the shard loads and after scrolling to the end.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
-- **Hand buttons:** Swap is `button[aria-label="Cycle to next card"]` and Pass, below it, is
+- **Hand buttons:** Swap is `button[aria-label="Cycle to next card"]` and Pass, above it, is
   `button[aria-label="Pass this card"]`. The passes left are `[data-testid="pass-count"]`, and
   a passed card on its way out is `[data-testid="passed-card"]` for about 0.4 s. Both buttons
   are disabled during a drag and while a placement animates. The cards fanned behind the top

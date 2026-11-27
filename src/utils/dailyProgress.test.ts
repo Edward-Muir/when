@@ -308,8 +308,9 @@ describe('a daily with passes', () => {
 
   it('saves the cards passed, in order', () => {
     const snapshot = buildDailyProgressSnapshot(pass(pass(dealt())));
-    expect(snapshot!.passed).toEqual(['h1', 'h2']);
-    expect(snapshot!.hand).toEqual(['d1', 'd2', 'h3']);
+    // The second pass discards the card the first one drew.
+    expect(snapshot!.passed).toEqual(['h1', 'd1']);
+    expect(snapshot!.hand).toEqual(['d2', 'h2', 'h3']);
   });
 
   // h1 is in the opening deal. It is no longer on the board, in the hand or missed, so without
@@ -319,7 +320,7 @@ describe('a daily with passes', () => {
     const restored = resumed(left);
 
     expect(restored).not.toBeNull();
-    expect(names(restored!.players[0].hand)).toEqual(['h2', 'd1', 'h3']);
+    expect(names(restored!.players[0].hand)).toEqual(['d1', 'h2', 'h3']);
     expect(names(restored!.deck)).toEqual(['d2', 'd3']);
     expect(names(restored!.passedCards ?? [])).toEqual(['h1']);
     expect(restored!.players[0].passesUsed).toBe(1);
@@ -331,7 +332,7 @@ describe('a daily with passes', () => {
   });
 
   it('never deals a passed card again', () => {
-    const left = play(pass(dealt()), 2); // h1 passed, then h2 (1800) placed after the seed
+    const left = play(pass(dealt()), 2); // h1 passed, then d1 (1900) placed after the seed
     const restored = resumed(left)!;
 
     const inPlay = [...restored.timeline, ...restored.players[0].hand, ...restored.deck];
@@ -359,11 +360,22 @@ describe('a daily with passes', () => {
     const filler = Array.from({ length: 24 }, (_, i) => event(`f${i}`, 2000 + i * 3));
     const long = [...DECK, ...filler];
     let state = dealt({ deck: long.slice(4) });
-    const moves = ['pass', 0, 'pass', 1, 0, 'pass', 2, 1] as const;
+    const moves = ['pass', 'hit', 'pass', 'miss', 'hit', 'pass', 'hit', 'hit'] as const;
+    /** Where the top card belongs, or a slot where it does not. */
+    const slot = (current: WhenGameState, right: boolean) => {
+      const { timeline } = current;
+      const correct = calculatePlacementResult(
+        timeline,
+        current.players[0].hand[0],
+        0
+      ).correctPosition;
+      const wrong = correct === 0 ? timeline.length : 0;
+      return right ? correct : wrong;
+    };
 
     for (const move of moves) {
-      state = move === 'pass' ? pass(state) : play(state, move);
-      if (state.phase !== 'playing') break;
+      state = move === 'pass' ? pass(state) : play(state, slot(state, move === 'hit'));
+      expect(state.phase).toBe('playing');
       const restored = restoreDailyProgress(buildDailyProgressSnapshot(state), long, CONFIG);
       expect(restored).not.toBeNull();
       expect(names(restored!.players[0].hand)).toEqual(names(state.players[0].hand));

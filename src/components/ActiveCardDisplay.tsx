@@ -286,25 +286,10 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
         )}
       </div>
 
-      {/* Swap and, below it, Pass: beside the card, never on it, so they cover neither art nor
-          title. 44px each, the minimum touch target, and 12px apart. Swap keeps the top place
-          it has always had; Pass, the one that cannot be undone, is the further reach. */}
+      {/* Pass and, below it, Swap: beside the card, never on it, so they cover neither art nor
+          title. 44px each, the minimum touch target, and 12px apart. Pass is the upper one: it
+          cannot be undone, so it sits further from a resting thumb than Swap, which can. */}
       <div className="hand-swap flex flex-col items-center justify-center gap-3 pointer-events-auto">
-        <button
-          onClick={cycle}
-          disabled={!canCycle}
-          className={handButtonClass(cycleNudge)}
-          aria-label="Cycle to next card"
-        >
-          <motion.span
-            className="flex"
-            animate={{ rotate: turns * 180 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-          >
-            <RefreshCw className={`w-5 h-5 ${cycleNudge ? 'text-white' : 'text-text'}`} />
-          </motion.span>
-        </button>
-
         {/* The badge is a sibling of the button, not a child, so a disabled button's dimming
             does not take the count with it. */}
         <div className="relative flex">
@@ -322,6 +307,21 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
             {passes === 1 ? '1 pass left' : `${passes} passes left`}
           </span>
         </div>
+
+        <button
+          onClick={cycle}
+          disabled={!canCycle}
+          className={handButtonClass(cycleNudge)}
+          aria-label="Cycle to next card"
+        >
+          <motion.span
+            className="flex"
+            animate={{ rotate: turns * 180 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+          >
+            <RefreshCw className={`w-5 h-5 ${cycleNudge ? 'text-white' : 'text-text'}`} />
+          </motion.span>
+        </button>
       </div>
     </>
   );

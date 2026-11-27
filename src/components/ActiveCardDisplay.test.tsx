@@ -140,9 +140,9 @@ describe('the pass button', () => {
     expect(swapButton()).toHaveClass('animate-hint-glow', 'bg-accent');
   });
 
-  it('sits below swap', () => {
+  it('sits above swap', () => {
     setup();
-    const position = swapButton().compareDocumentPosition(passButton());
+    const position = passButton().compareDocumentPosition(swapButton());
     expect(position & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   });
 });
@@ -153,7 +153,7 @@ describe('the passed card', () => {
     expect(screen.queryByTestId('passed-card')).toBeNull();
 
     fireEvent.click(passButton());
-    rerender({ activeCard: b, currentPlayer: player([b, d, c], { passesUsed: 1 }) });
+    rerender({ activeCard: d, currentPlayer: player([d, b, c], { passesUsed: 1 }) });
 
     const thrown = screen.getByTestId('passed-card');
     expect(thrown).toHaveTextContent('a');

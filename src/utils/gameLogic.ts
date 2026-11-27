@@ -382,13 +382,14 @@ export function minDeckSize(playerCount: number, handSize: number): number {
 }
 
 /**
- * Where a drawn card enters the hand: directly behind the active card.
+ * Where a card drawn after a placement enters the hand: directly behind the active card.
  *
- * Every draw lands here, so a catch-up draw (`catchUp.ts`) is indistinguishable from a normal
+ * Every such draw lands here, so a catch-up draw (`catchUp.ts`) is indistinguishable from a normal
  * one, and is played while the board still looks like the one it was picked for. Measured
  * against the back of the hand, it adds a little to catch-up's own lift and a little blanket
  * easing; the active slot was rejected because it added mostly the latter (see
- * docs/gameplay-feel).
+ * docs/gameplay-feel). A pass is the one draw that does not land here: its card goes on top
+ * (`processPass`), and it is never a catch-up draw.
  */
 export const DRAW_SLOT = 1;
 

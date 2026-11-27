@@ -53,14 +53,15 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
   140px hand card were both tried and reverted.
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
-  its left and the swap button, with the pass button below it, sits in the space on its right,
+  its left and the swap button, with the pass button above it, sits in the space on its right,
   at every width. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
   edge and the swap button 40px beside it. The middle column is the card's width whether or not
   there is a card, so the counter does not move between turns. The swap button is centred in
   what the fan leaves of the right column (`.hand-swap`), not in the whole column: centred in
-  the column it sat on the fanned cards at 360px wide. Swap keeps the top place and Pass, the
-  one that cannot be undone, is below it, 12px apart. The pass count is a badge on the
+  the column it sat on the fanned cards at 360px wide. Pass is the upper of the two, 12px above
+  Swap: it cannot be undone, so it sits further from a resting thumb. Pass below Swap was
+  tried and the maintainer preferred this. The pass count is a badge on the
   button's top corner, flush with its right edge: one pixel further out and it clips at 320px
   wide. `.hand-swap` is z-7, above the hand's cards, so a card dealt in or thrown out passes
   under the buttons.
