@@ -161,6 +161,15 @@ describe('the deck pile', () => {
     expect(screen.getByRole('button')).not.toContainElement(pile());
   });
 
+  it('is captioned "deck", under the pile and outside it', () => {
+    renderWithHand(5);
+    const caption = screen.getByText('deck');
+    expect(pile()).not.toContainElement(caption);
+    expect(pile().compareDocumentPosition(caption) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    // The pile already names itself to a screen reader.
+    expect(caption).toHaveAttribute('aria-hidden', 'true');
+  });
+
   it.each([
     [1, '1', '1 card in the deck'],
     [24, '24', '24 cards in the deck'],
