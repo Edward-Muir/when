@@ -94,7 +94,7 @@ describe('settleDailyPlacement', () => {
     const after = play(dealt(), 0); // h1 (1200) before the seed (1500)
 
     expect(names(after.timeline)).toEqual(['h1', 'seed']);
-    expect(names(after.players[0].hand)).toEqual(['h2', 'd1', 'h3']); // drawn behind the active card
+    expect(names(after.players[0].hand)).toEqual(['d1', 'h2', 'h3']); // drawn onto the top
     expect(names(after.deck)).toEqual(['d2', 'd3']);
     expect(after.placementHistory).toEqual([true]);
     expect(after.currentStreak).toBe(1);
@@ -124,7 +124,7 @@ describe('settleDailyPlacement', () => {
 
     // d1 (1900) and d3 (1400) each sit one catalogue event from a neighbour; d2 (1100) has
     // three events' clearance before the seed, so it is drawn ahead of the top card.
-    expect(names(state.players[0].hand)).toEqual(['h3', 'd2']);
+    expect(names(state.players[0].hand)).toEqual(['d2', 'h3']);
     expect(names(state.deck)).toEqual(['d1', 'd3']);
   });
 
@@ -276,7 +276,7 @@ describe('the entry points', () => {
     saveDailyProgress(buildDailyProgressSnapshot(state));
 
     const resumed = resumeDailyProgress(DECK, CONFIG);
-    expect(names(resumed!.players[0].hand)).toEqual(['h3', 'd2']);
+    expect(names(resumed!.players[0].hand)).toEqual(['d2', 'h3']);
     expect(names(resumed!.deck)).toEqual(['d1', 'd3']);
     expect(canResumeDailyProgress(getTodayDailyProgress(TODAY), DECK)).toBe(true);
   });

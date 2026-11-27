@@ -221,10 +221,10 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
   it that way and checks that the opening deal is the deck's front and that every seen card is
   within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
   reason.
-- **Every card drawn after a placement goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`; a pass is the exception, see [The pass](#the-pass)),
-  eased or not, so where a card lands never gives away that it was eased. It is played on the
-  next turn, close to the board it was picked for; room is measured at draw time, so it is an
-  upper bound.
+- **Every drawn card goes on top of the hand, as the active card** (`DRAW_SLOT = 0` in
+  `gameLogic.ts`), eased or not, so where a card lands never gives away that it was eased. It
+  is played at once, on the board it was picked for. It was slot 2 until the deck pile went on
+  screen; see the slot table below for why it moved.
 
 **Measured against a player model that never sees room.** 60 Dailies × 20 runs. The simulated
 player guesses each card's year with error proportional to its age (`age · e^(σz)`, σ scaled
@@ -253,20 +253,23 @@ at struggle > 0.
 - **The score effect is small, by design**: about half an event per game from catch-up alone,
   because only the draws right after a miss are eased. Help that lasts longer, with one level
   of decay per 2 hits, raised this to +0.6 to +1.8 events.
-- **Drawn cards go to slot 2, not the back and not slot 1.** Same model and seeds, every draw
-  placed at each slot, average player (σ 0.15):
+- **Drawn cards go on top (slot 1), not to slot 2 and not to the back.** Same model and
+  seeds, every draw placed at each slot, average player (σ 0.15):
 
-  | every draw goes to | no catch-up | with catch-up | catch-up's own lift | blanket easing |
-  | ------------------ | ----------- | ------------- | ------------------- | -------------- |
-  | back (before)      | 16.20       | 16.78         | +0.58               | 0              |
-  | **slot 2**         | 16.48       | **17.16**     | **+0.68**           | +0.27          |
-  | slot 1 (active)    | 16.60       | 17.20         | +0.59               | +0.40          |
+  | every draw goes to  | no catch-up | with catch-up | catch-up's own lift | blanket easing |
+  | ------------------- | ----------- | ------------- | ------------------- | -------------- |
+  | back (original)     | 16.20       | 16.78         | +0.58               | 0              |
+  | slot 2 (before)     | 16.48       | 17.16         | +0.68               | +0.27          |
+  | **slot 1 (active)** | 16.60       | **17.20**     | +0.59               | **+0.40**      |
 
   Moving every draw, not only eased ones, is the point: eased-only would mark the eased cards,
-  and measured it changed scores by under 0.05 anyway. Slot 2 is a mild easing for everyone
-  as well, and helps strong players most (+0.33 at σ 0.08, +0.06 at σ 0.5); that was
-  accepted. Slot 1 was rejected: it adds more blanket easing but less catch-up (+0.34 against
-  +0.46 at σ 0.3), and it swaps the card the player is looking at.
+  and measured it changed scores by under 0.05 anyway. Slot 2 was the first choice, on this
+  table: slot 1 adds more blanket easing but less catch-up (+0.34 against +0.46 at σ 0.3), and
+  it changes the card the player is looking at. The maintainer moved every draw to slot 1
+  once the deck pile and the deal from it were on screen. A card seen leaving the deck and
+  tucking in behind another reads as wrong, and "the card you drew is the card you play" is
+  now the intent rather than a cost. The two rows are 0.04 events a game apart, so nothing was
+  re-measured. Don't move it back for the score.
 
 ## The pass
 
@@ -297,10 +300,9 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
   hit. A pass that discarded without drawing would be a third way.
 - **The draw is the top of the deck, never a catch-up draw.** Struggle only decays on a hit,
   so an eased pass would be eased twice, and catch-up is meant to stay invisible.
-- **The drawn card goes on top of the hand, not to `DRAW_SLOT`.** It was first built to land
-  behind the next card like every other draw, and the maintainer reversed it: a pass asks for
-  a different card to play now, and showing the card that was second reads as a swap.
-  `DRAW_SLOT` exists so a catch-up draw is not played at once, which a pass never is.
+- **The drawn card goes on top of the hand**, like every other draw (`DRAW_SLOT`). A pass
+  asks for a different card to play now; landing behind the next card, as the first build
+  did, showed a card the player already held and read as a swap.
 - **Passed cards are recorded**: `passedCards` on the state, `passed` slugs in the daily
   progress and board saves. Daily resume rebuilds the deck as the composed deck minus every
   card seen, and a passed card is seen. Without the list a passed opening card fails the

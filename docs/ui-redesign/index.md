@@ -60,7 +60,8 @@ Bottom bar (`hand-bar`: the 184px hand card + 16px, pb-safe) — counter, hand c
   its left and the swap button, with the pass button above it, sits in the space on its right,
   at every width. Under the counter, in the same column, is the deck pile (46px square: the art of the
   deck's next three cards as 40px tiles, each stepping 3px down and left of the one above,
-  with the count on an ink badge at the pile's top right corner): about 142px of the bar's
+  with the count on a gold badge at the pile's top right corner, the same accent as the pass
+  count; an ink badge was tried and read as black, outside the theme): about 142px of the bar's
   184 with the counter above it. The count was first a plate over the top tile, on a 30px
   tile straight below one another; it hid most of the art, and the maintainer asked for the
   corner badge, the larger tiles and the down-left step. The counter used

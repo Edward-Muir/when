@@ -334,12 +334,12 @@ describe('addToHand', () => {
   const names = (hand: HistoricalEvent[]) => hand.map((e) => e.name);
   const [a, b, c, drawn] = ['a', 'b', 'c', 'drawn'].map((n, i) => ev(n, 1000 + i));
 
-  it('puts a drawn card directly behind the active card', () => {
-    expect(names(addToHand([a, b, c], drawn))).toEqual(['a', 'drawn', 'b', 'c']);
+  it('puts a drawn card on top of the hand, ahead of every card held', () => {
+    expect(names(addToHand([a, b, c], drawn))).toEqual(['drawn', 'a', 'b', 'c']);
   });
 
-  it('appends to a hand too short to have a second slot', () => {
-    expect(names(addToHand([a], drawn))).toEqual(['a', 'drawn']);
+  it('deals into a one-card hand and an empty one alike', () => {
+    expect(names(addToHand([a], drawn))).toEqual(['drawn', 'a']);
     expect(names(addToHand([], drawn))).toEqual(['drawn']);
   });
 });

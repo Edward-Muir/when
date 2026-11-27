@@ -103,7 +103,8 @@ describe('processCorrectPlacement', () => {
   it('single player: draws a replacement and ends the round', () => {
     const update = processCorrectPlacement(stateWith([player(0, [h1, h2])], [d1, d2]), h1);
 
-    expect(names(update.players[0].hand)).toEqual(['h2', 'd1']);
+    // The drawn card lands on top of the hand, ahead of the card that was second.
+    expect(names(update.players[0].hand)).toEqual(['d1', 'h2']);
     expect(names(update.deck)).toEqual(['d2']);
     expect(update.players[0].placementHistory).toEqual([true]);
     expect(update).toMatchObject({
@@ -127,9 +128,9 @@ describe('processCorrectPlacement', () => {
       timeline: [ev('seed', 1200), ev('placed', 1500)],
     });
 
-    expect(names(processCorrectPlacement(state, h1).players[0].hand)).toEqual(['h2', 'wedged']);
+    expect(names(processCorrectPlacement(state, h1).players[0].hand)).toEqual(['wedged', 'h2']);
     const update = processCorrectPlacement(state, h1, index);
-    expect(names(update.players[0].hand)).toEqual(['h2', 'open']);
+    expect(names(update.players[0].hand)).toEqual(['open', 'h2']);
     expect(names(update.deck)).toEqual(['wedged']);
   });
 

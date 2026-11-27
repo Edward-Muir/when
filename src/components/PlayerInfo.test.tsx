@@ -208,6 +208,8 @@ describe('the deck pile', () => {
     render(<DeckPile deck={deckOf(24)} />);
     const badge = screen.getByText('24');
     expect(badge).toHaveClass('absolute', '-right-2', '-top-1.5');
+    // The app's accent, like the pass count: never a colour from outside the theme.
+    expect(badge).toHaveClass('bg-accent', 'text-white');
     art().forEach((tile) => expect(tile).not.toContainElement(badge));
   });
 

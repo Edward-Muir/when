@@ -382,18 +382,21 @@ export function minDeckSize(playerCount: number, handSize: number): number {
 }
 
 /**
- * Where a card drawn after a placement enters the hand: directly behind the active card.
+ * Where a drawn card enters the hand: on top, as the active card.
  *
- * Every such draw lands here, so a catch-up draw (`catchUp.ts`) is indistinguishable from a normal
- * one, and is played while the board still looks like the one it was picked for. Measured
- * against the back of the hand, it adds a little to catch-up's own lift and a little blanket
- * easing; the active slot was rejected because it added mostly the latter (see
- * docs/gameplay-feel). A pass is the one draw that does not land here: its card goes on top
- * (`processPass`), and it is never a catch-up draw.
+ * Every draw lands here (after a placement, on a pass, on a reprieve), so a catch-up draw
+ * (`catchUp.ts`) is indistinguishable from a normal one, and is played at once, on the very
+ * board it was picked for.
+ *
+ * It was slot 2, directly behind the active card, until the deck pile went on screen: a card
+ * seen flying out of the deck and tucking in behind another reads as wrong, so the maintainer
+ * moved every draw to the top. The measurement that had preferred slot 2 put the two within
+ * 0.04 events a game of each other (docs/gameplay-feel), and its other objection, that a draw
+ * to the top changes the card the player is looking at, is now the intent.
  */
-export const DRAW_SLOT = 1;
+export const DRAW_SLOT = 0;
 
-/** Add a drawn card to a hand at DRAW_SLOT, or at the end of a shorter hand. */
+/** Add a drawn card to a hand at DRAW_SLOT. */
 export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): HistoricalEvent[] {
   const at = Math.min(DRAW_SLOT, hand.length);
   return [...hand.slice(0, at), event, ...hand.slice(at)];

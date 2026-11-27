@@ -142,10 +142,8 @@ export interface PassStateUpdate {
  * Not a placement, so nothing here records one or passes the turn: the placement history, the
  * streak, the score and whose turn it is are all left alone.
  *
- * The drawn card takes the passed card's place on top of the hand, not `DRAW_SLOT`. A pass
- * asks for a different card to play now, and a draw that landed behind the next card would
- * show the player one they already held. `DRAW_SLOT`'s reason does not apply here: it exists
- * so a catch-up draw is not played at once, and a pass is never a catch-up draw.
+ * The drawn card takes the passed card's place on top of the hand, like every other draw
+ * (`DRAW_SLOT`). A pass asks for a different card to play now.
  *
  * Refused on an empty deck, and that guard is load-bearing: `themeOutcome.ts` and the
  * leaderboard's red-square cap both rely on a hand shrinking only on a miss or a dry-deck hit,
@@ -169,7 +167,7 @@ export function processPass(state: WhenGameState): PassStateUpdate | null {
     player === currentPlayer
       ? {
           ...player,
-          hand: [card, ...removeFromHand(player.hand, activeCard.name)],
+          hand: addToHand(removeFromHand(player.hand, activeCard.name), card),
           passesUsed: (player.passesUsed ?? 0) + 1,
         }
       : player

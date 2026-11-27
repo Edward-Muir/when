@@ -282,10 +282,11 @@ export const DeckPile: React.FC<{ deck: HistoricalEvent[] }> = ({ deck }) => {
           .map((event, depth) => <PileArt key={event.name} event={event} depth={depth} />)
       )}
       {/* The count, on the pile's top right corner like the pass count on its button, so the
-          art under it stays visible. Ink where that one is gold: it counts, it does not offer. */}
+          art under it stays visible, and in the same gold: the app's accent, as the hand icon
+          above it is. It was ink at first, which read as plain black and outside the theme. */}
       <span
         className={`absolute -right-2 -top-1.5 z-[4] flex h-4 min-w-4 items-center justify-center rounded-full px-1 font-body text-[10px] font-semibold leading-none ring-2 ring-bg ${
-          empty ? 'bg-border text-text-muted' : 'bg-text text-bg'
+          empty ? 'bg-border text-text-muted' : 'bg-accent text-white'
         }`}
       >
         {deckCountLabel(count)}
