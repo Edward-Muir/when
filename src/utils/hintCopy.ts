@@ -22,7 +22,8 @@ export const HINT_TEXT: Record<GameHintKey, string> = {
   closeEnough: 'Close enough. That one spans years.',
   tapCard: 'Tap any card to read about it',
   stats: 'Tap for game stats',
-  swap: 'Swap to a different card',
+  // The key is still `swap`, the button's first name; players see it labelled "Cycle".
+  swap: 'Cycle to a different card',
   pass: 'Stuck? Pass and draw a new card',
 };
 

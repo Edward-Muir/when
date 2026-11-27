@@ -112,7 +112,7 @@ const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
             <span className="mx-0.5 inline-flex h-5 w-5 -translate-y-0.5 items-center justify-center rounded-full border border-border bg-surface align-middle">
               <RefreshCw className="h-3 w-3 text-text" />
             </span>{' '}
-            on your hand to swap to a different card.
+            on your hand to cycle to a different card.
           </p>
           <p className="text-xs text-text-muted font-body leading-relaxed">
             Tap{' '}

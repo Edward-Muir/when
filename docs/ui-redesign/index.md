@@ -75,8 +75,9 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   in one type. The maintainer asked for the names because a returning player has already
   been through the hints and had no way to tell what the new Pass button did; the one-shot
   hint only comes after their next placement. "Cycle" is the maintainer's word for the
-  button, and matches `cycleHand` and its `aria-label`; the hint strip and How to Play still
-  say "swap", which is worth aligning one way or the other. The names are `aria-hidden`: each
+  button, and matches `cycleHand` and its `aria-label`. It was "Swap" before, and the hint
+  strip and How to Play now say "cycle" too; only the hint's storage key is still `swap`, so
+  nobody who has seen it is shown it again. The names are `aria-hidden`: each
   control has its own label. With them the buttons are 12px apart as groups, which leaves 36px
   from the bottom of Pass to the top of Cycle.
 - **The hand bar's controls are sized for a thumb and spaced so nothing crowds.** Pass and
