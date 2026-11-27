@@ -21,7 +21,9 @@ interface HintStripProps {
  * screen reader announces the hint once without stealing focus.
  *
  * Floating: sits at z-[35], above the timeline's z-30 "Later" fade and below the z-40
- * bottom bar, so it never covers the hand card and tracks the bar's height. It is one line
+ * bottom bar, so it never covers the hand card and tracks the bar's height. 16px above the
+ * bar, to clear the hand card, which stands 8px over the bar's edge with the fan's corners
+ * above that (`--hand-overlap` in index.css). It is one line
  * and never grows: the copy in `hintCopy.ts` is kept short enough for a 375px phone, and
  * `truncate` is only the safety net. Not a `fixed bottom-20` toast: that lands on the card.
  * The positioned wrapper is a plain div because framer writes `transform` inline, which
@@ -45,7 +47,7 @@ const HintStrip: React.FC<HintStripProps> = ({
       aria-live="polite"
       className={
         floating
-          ? 'absolute bottom-2 inset-x-0 z-[35] flex justify-center px-2 pointer-events-none'
+          ? 'absolute bottom-4 inset-x-0 z-[35] flex justify-center px-2 pointer-events-none'
           : 'w-full'
       }
     >

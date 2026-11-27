@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Check, RefreshCw, X } from 'lucide-react';
+import { ArrowDown, Check, RefreshCw, X, SkipForward } from 'lucide-react';
 import Modal from './ui/Modal';
 
 const textClass = 'text-sm text-text font-body leading-relaxed';
@@ -112,7 +112,15 @@ const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
             <span className="mx-0.5 inline-flex h-5 w-5 -translate-y-0.5 items-center justify-center rounded-full border border-border bg-surface align-middle">
               <RefreshCw className="h-3 w-3 text-text" />
             </span>{' '}
-            on your hand to swap to a different card.
+            on your hand to cycle to a different card.
+          </p>
+          <p className="text-xs text-text-muted font-body leading-relaxed">
+            Tap{' '}
+            <span className="mx-0.5 inline-flex h-5 w-5 -translate-y-0.5 items-center justify-center rounded-full border border-border bg-surface align-middle">
+              <SkipForward className="h-3 w-3 text-text" />
+            </span>{' '}
+            to pass: the card is discarded and you draw a new one. You start with three passes, and
+            every three correct in a row earns another. A theme cannot be cleared after a pass.
           </p>
           <p className="text-xs text-text-muted font-body leading-relaxed">
             Tap any card to read about the event.

@@ -28,7 +28,8 @@ import { DifficultyIndex, RECOGNITION_RANK } from './difficultyScore';
  * and `themeOutcome.ts` both rely on that. The pick is a pure function of the deck, the board
  * and the history, with no RNG. It removes one card and keeps the rest in order, so the
  * remaining deck is always the composed deck minus every card seen. Daily resume rebuilds it
- * from exactly that (`dailyProgress.ts`).
+ * from exactly that (`dailyProgress.ts`). A pass (`processPass`) is never a catch-up draw: it
+ * takes the top card, and the card it discards counts as seen.
  */
 
 export const MAX_STRUGGLE = 3;

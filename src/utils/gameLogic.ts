@@ -382,20 +382,71 @@ export function minDeckSize(playerCount: number, handSize: number): number {
 }
 
 /**
- * Where a drawn card enters the hand: directly behind the active card.
+ * Where a drawn card enters the hand: on top, as the active card.
  *
- * Every draw lands here, so a catch-up draw (`catchUp.ts`) is indistinguishable from a normal
- * one, and is played while the board still looks like the one it was picked for. Measured
- * against the back of the hand, it adds a little to catch-up's own lift and a little blanket
- * easing; the active slot was rejected because it added mostly the latter (see
- * docs/gameplay-feel).
+ * Every draw lands here (after a placement, on a pass, on a reprieve), so a catch-up draw
+ * (`catchUp.ts`) is indistinguishable from a normal one, and is played at once, on the very
+ * board it was picked for.
+ *
+ * It was slot 2, directly behind the active card, until the deck pile went on screen: a card
+ * seen flying out of the deck and tucking in behind another reads as wrong, so the maintainer
+ * moved every draw to the top. The measurement that had preferred slot 2 put the two within
+ * 0.04 events a game of each other (docs/gameplay-feel), and its other objection, that a draw
+ * to the top changes the card the player is looking at, is now the intent.
  */
-export const DRAW_SLOT = 1;
+export const DRAW_SLOT = 0;
 
-/** Add a drawn card to a hand at DRAW_SLOT, or at the end of a shorter hand. */
+/** Add a drawn card to a hand at DRAW_SLOT. */
 export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): HistoricalEvent[] {
   const at = Math.min(DRAW_SLOT, hand.length);
   return [...hand.slice(0, at), event, ...hand.slice(at)];
+}
+
+/**
+ * The pass: discard the top card of the hand, unplayed, and draw another (`processPass` in
+ * placementLogic.ts). Every player starts a game with `STARTING_PASSES`, and earns one more
+ * each time a run of correct placements reaches a multiple of `PASS_STREAK`.
+ *
+ * Only passes *used* are stored (`Player.passesUsed`). What was earned is read back from the
+ * player's own `placementHistory`, so there is no award step for `useWhenGame.placeCard` and
+ * `settleDailyPlacement` to keep in step, a state with no field has simply used none, and in
+ * multiplayer each player earns from their own run rather than the shared streak.
+ */
+export const STARTING_PASSES = 3;
+export const PASS_STREAK = 3;
+
+/** Passes earned by a placement history: one each time a correct run hits `PASS_STREAK`. */
+export function passesAwarded(history: readonly boolean[]): number {
+  let run = 0;
+  let awarded = 0;
+  for (const correct of history) {
+    run = correct ? run + 1 : 0;
+    if (run > 0 && run % PASS_STREAK === 0) awarded++;
+  }
+  return awarded;
+}
+
+/**
+ * How far a placement history is towards its next pass: the correct placements in the run it
+ * ends on that have not yet earned one, from 0 to `PASS_STREAK - 1`. The Pass button's ring
+ * shows it. The same count `passesAwarded` keeps, so the ring empties exactly when a pass lands.
+ */
+export function passProgress(history: readonly boolean[]): number {
+  let run = 0;
+  for (let i = history.length - 1; i >= 0 && history.at(i); i--) run++;
+  return run % PASS_STREAK;
+}
+
+/** Passes a player can still spend. */
+export function passesLeft(player: Player | undefined): number {
+  if (!player) return 0;
+  const earned = STARTING_PASSES + passesAwarded(player.placementHistory);
+  return Math.max(0, earned - (player.passesUsed ?? 0));
+}
+
+/** How many cards have been passed this game. */
+export function passedCount(state: { passedCards?: HistoricalEvent[] }): number {
+  return state.passedCards?.length ?? 0;
 }
 
 // Get next active (non-eliminated) player index
@@ -444,6 +495,7 @@ export function initializePlayers(
       hasWon: false,
       isEliminated: false,
       placementHistory: [],
+      passesUsed: 0,
     });
   }
 

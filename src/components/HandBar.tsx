@@ -21,7 +21,8 @@ function bottomBarHeightClass(phase: GamePhase): string {
 
 /**
  * The bar at the bottom of a game: the hand while playing, the result buttons at game over.
- * `hand-bar` (index.css) is the square hand card plus the safe-area inset. The bar is in
+ * `hand-bar` (index.css) is a little shorter than the square hand card needs, so the card
+ * stands over the bar's top edge, plus the safe-area inset. The bar is in
  * place from the first frame: sliding it up at the start of a game was tried and read as a
  * pop-in.
  *

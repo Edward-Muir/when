@@ -36,6 +36,7 @@ export function useSaveDailyResult(state: WhenGameState) {
     state.players,
     state.timeline,
     state.failedPlacements,
+    state.passedCards,
     state.seedEventName,
     state.placementHistory,
     state.bestStreak,

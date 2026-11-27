@@ -10,6 +10,11 @@ import { getCuratedThemeIdForConfig } from './themeReplay';
  * nothing left to draw (see `processCorrectPlacement`). So a game that ended with fewer
  * mistakes than the hand size can only have got there by emptying the deck.
  *
+ * A pass (`processPass`) does not disturb that arithmetic, because it always draws: it is
+ * refused on an empty deck, so it never shrinks a hand. What it does is take a card out of the
+ * theme unplayed, and a theme with a card skipped has not been got through. So any pass at all
+ * rules out a clear, however the game then ends. That is the pass's cost on a curated day.
+ *
  * That makes this exact, with no new state to track. What it is NOT is a claim that the
  * player saw every card: a run that draws the last card and then misses five times also
  * exhausts the pool, with five mistakes. The honest reading is "you got through the theme
@@ -31,7 +36,7 @@ export interface ThemeOutcome {
 const NOT_A_THEME: ThemeOutcome = { survived: false, perfect: false };
 
 export function getThemeOutcome(state: WhenGameState): ThemeOutcome {
-  const { lastConfig, players, placementHistory } = state;
+  const { lastConfig, players, placementHistory, passedCards } = state;
 
   // Multiplayer has round reprieves and eliminations, so "the hand emptied" does not imply a
   // fixed mistake count. No menu builds a multiplayer game, but a challenge code with
@@ -52,7 +57,7 @@ export function getThemeOutcome(state: WhenGameState): ThemeOutcome {
       : DAILY_HAND_SIZE;
 
   const mistakes = (placementHistory ?? []).filter((correct) => !correct).length;
-  const survived = mistakes < handSize;
+  const survived = mistakes < handSize && (passedCards?.length ?? 0) === 0;
 
   return { survived, perfect: survived && mistakes === 0 };
 }

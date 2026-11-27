@@ -39,6 +39,12 @@ export interface DailyBoardSnapshot {
   seedEventName?: string;
   /** Misplaced cards, shown as tombstones at their true position. */
   failed: StoredFailure[];
+  /**
+   * Cards passed during the game. Nothing shows them on a reopened board; they are kept so
+   * the restored state still says whether its curated theme was cleared (`themeOutcome.ts`).
+   * Optional: a board saved before the pass existed has none.
+   */
+  passed?: string[];
   /** One entry per attempt, in turn order — what the share's emoji grid is built from. */
   placementHistory: boolean[];
   bestStreak: number;
@@ -64,6 +70,7 @@ export function buildDailyBoardSnapshot(state: WhenGameState): DailyBoardSnapsho
       timelineLength: failure.timelineLength,
       seq: failure.seq,
     })),
+    passed: (state.passedCards ?? []).map((event) => event.name),
     placementHistory: [...placementHistory],
     bestStreak,
   };
@@ -91,6 +98,7 @@ export function getTodayDailyBoard(
     return {
       ...snapshot,
       failed: Array.isArray(snapshot.failed) ? snapshot.failed : [],
+      passed: Array.isArray(snapshot.passed) ? snapshot.passed : [],
       placementHistory: Array.isArray(snapshot.placementHistory) ? snapshot.placementHistory : [],
       bestStreak: snapshot.bestStreak ?? 0,
     };
@@ -133,6 +141,10 @@ export function restoreDailyBoard(
     ];
   });
 
+  const passedCards = (snapshot.passed ?? [])
+    .map(resolve)
+    .filter((event): event is HistoricalEvent => event !== undefined);
+
   // `lastConfig` carries the daily seed and the single seated player, which is what lets the
   // bottom bar's Share reproduce the message the game ended on (`generateShareText`) and the
   // TopBar name the day's theme. The snapshot only reads back on its own date, so today's
@@ -148,6 +160,7 @@ export function restoreDailyBoard(
     deck: [],
     placementHistory: [...snapshot.placementHistory],
     failedPlacements,
+    passedCards,
     lastPlacementResult: null,
     isAnimating: false,
     animationPhase: null,
@@ -159,6 +172,7 @@ export function restoreDailyBoard(
         hand: [],
         hasWon: false,
         placementHistory: [...snapshot.placementHistory],
+        passesUsed: passedCards.length,
       },
     ],
     currentPlayerIndex: 0,

@@ -9,6 +9,7 @@ import {
   drawCard,
   getNextActivePlayerIndex,
   processEndOfRound,
+  passesLeft,
 } from './gameLogic';
 import { drawCatchUp } from './catchUp';
 import { DifficultyIndex } from './difficultyScore';
@@ -125,6 +126,53 @@ export function processIncorrectPlacement(
   event: HistoricalEvent
 ): PlacementStateUpdate {
   return resolveTurn(state, event, false, (hand) => hand, state.deck);
+}
+
+/** What a pass changes: one hand, the deck, and the list of cards passed. */
+export interface PassStateUpdate {
+  players: Player[];
+  deck: HistoricalEvent[];
+  passedCards: HistoricalEvent[];
+}
+
+/**
+ * Pass the active card: it is discarded unplayed and the top of the deck is drawn in its
+ * place. Returns null when the pass is refused.
+ *
+ * Not a placement, so nothing here records one or passes the turn: the placement history, the
+ * streak, the score and whose turn it is are all left alone.
+ *
+ * The drawn card takes the passed card's place on top of the hand, like every other draw
+ * (`DRAW_SLOT`). A pass asks for a different card to play now.
+ *
+ * Refused on an empty deck, and that guard is load-bearing: `themeOutcome.ts` and the
+ * leaderboard's red-square cap both rely on a hand shrinking only on a miss or a dry-deck hit,
+ * and a pass that discarded without drawing would be a third way.
+ *
+ * The draw is always the top card, never a catch-up draw. Struggle only decays on a hit, so an
+ * eased pass would be eased twice, and catch-up is meant to stay invisible (docs/gameplay-feel).
+ * Passed cards are recorded because daily resume rebuilds the deck as the composed deck minus
+ * every card seen (`dailyProgress.ts`).
+ */
+export function processPass(state: WhenGameState): PassStateUpdate | null {
+  const current = state.players.at(state.currentPlayerIndex);
+  const validation = validatePlacement(state, current);
+  if (!validation || passesLeft(validation.currentPlayer) <= 0) return null;
+
+  const { card, newDeck } = drawCard(state.deck);
+  if (!card) return null;
+
+  const { activeCard, currentPlayer } = validation;
+  const players = state.players.map((player) =>
+    player === currentPlayer
+      ? {
+          ...player,
+          hand: addToHand(removeFromHand(player.hand, activeCard.name), card),
+          passesUsed: (player.passesUsed ?? 0) + 1,
+        }
+      : player
+  );
+  return { players, deck: newDeck, passedCards: [...(state.passedCards ?? []), activeCard] };
 }
 
 /**

@@ -215,16 +215,16 @@ decision**: there is no UI cue, nothing on How to Play, and nothing in share tex
   to 25% to break near-ties. The catalogue-wide crowding term in `score` is deliberately
   unused, because the real board replaces it.
 - **A miss still draws nothing.** The leaderboard's red-square cap and `themeOutcome.ts`
-  depend on that.
+  depend on that. A pass always draws, and is never a catch-up draw: see [The pass](#the-pass).
 - **The rest of the deck keeps its order.** A pick lifts one card out, so the remaining deck
   is always the composed deck minus every card seen. Daily resume (`dailyProgress.ts`) rebuilds
   it that way and checks that the opening deal is the deck's front and that every seen card is
   within reach. The intro spoiler guard reaches `CATCH_UP_REACH` cards deeper for the same
   reason.
-- **Every drawn card goes directly behind the active card** (`DRAW_SLOT` in `gameLogic.ts`),
-  eased or not, so where a card lands never gives away that it was eased. It is played on the
-  next turn, close to the board it was picked for; room is measured at draw time, so it is an
-  upper bound.
+- **Every drawn card goes on top of the hand, as the active card** (`DRAW_SLOT = 0` in
+  `gameLogic.ts`), eased or not, so where a card lands never gives away that it was eased. It
+  is played at once, on the board it was picked for. It was slot 2 until the deck pile went on
+  screen; see the slot table below for why it moved.
 
 **Measured against a player model that never sees room.** 60 Dailies × 20 runs. The simulated
 player guesses each card's year with error proportional to its age (`age · e^(σz)`, σ scaled
@@ -253,20 +253,137 @@ at struggle > 0.
 - **The score effect is small, by design**: about half an event per game from catch-up alone,
   because only the draws right after a miss are eased. Help that lasts longer, with one level
   of decay per 2 hits, raised this to +0.6 to +1.8 events.
-- **Drawn cards go to slot 2, not the back and not slot 1.** Same model and seeds, every draw
-  placed at each slot, average player (σ 0.15):
+- **Drawn cards go on top (slot 1), not to slot 2 and not to the back.** Same model and
+  seeds, every draw placed at each slot, average player (σ 0.15):
 
-  | every draw goes to | no catch-up | with catch-up | catch-up's own lift | blanket easing |
-  | ------------------ | ----------- | ------------- | ------------------- | -------------- |
-  | back (before)      | 16.20       | 16.78         | +0.58               | 0              |
-  | **slot 2**         | 16.48       | **17.16**     | **+0.68**           | +0.27          |
-  | slot 1 (active)    | 16.60       | 17.20         | +0.59               | +0.40          |
+  | every draw goes to  | no catch-up | with catch-up | catch-up's own lift | blanket easing |
+  | ------------------- | ----------- | ------------- | ------------------- | -------------- |
+  | back (original)     | 16.20       | 16.78         | +0.58               | 0              |
+  | slot 2 (before)     | 16.48       | 17.16         | +0.68               | +0.27          |
+  | **slot 1 (active)** | 16.60       | **17.20**     | +0.59               | **+0.40**      |
 
   Moving every draw, not only eased ones, is the point: eased-only would mark the eased cards,
-  and measured it changed scores by under 0.05 anyway. Slot 2 is a mild easing for everyone
-  as well, and helps strong players most (+0.33 at σ 0.08, +0.06 at σ 0.5); that was
-  accepted. Slot 1 was rejected: it adds more blanket easing but less catch-up (+0.34 against
-  +0.46 at σ 0.3), and it swaps the card the player is looking at.
+  and measured it changed scores by under 0.05 anyway. Slot 2 was the first choice, on this
+  table: slot 1 adds more blanket easing but less catch-up (+0.34 against +0.46 at σ 0.3), and
+  it changes the card the player is looking at. The maintainer moved every draw to slot 1
+  once the deck pile and the deal from it were on screen. A card seen leaving the deck and
+  tucking in behind another reads as wrong, and "the card you drew is the card you play" is
+  now the intent rather than a cost. The two rows are 0.04 events a game apart, so nothing was
+  re-measured. Don't move it back for the score.
+
+## The pass
+
+A player holding a card they cannot place had no move but to guess. The pass gives them one:
+the button above Swap discards the top card unplayed and draws another in its place. Every player starts a
+game with three (`STARTING_PASSES`) and earns one more each time a run of correct placements
+reaches a multiple of three (`PASS_STREAK`), with no cap. It runs in every mode, the Daily
+included. The rules are `processPass` in `placementLogic.ts` and the helpers beside
+`STARTING_PASSES` in `gameLogic.ts`.
+
+- **A passed card is gone for the game**, and that is its cost on a curated day: a theme
+  cannot be cleared once any card has been passed (`themeOutcome.ts`), and "N of M events
+  placed" keeps M as the true deck size, so M is out of reach after a pass. Sending the card
+  to the bottom of the deck was considered and rejected by the maintainer for exactly this
+  reason: the pass should cost something on a theme.
+- **Only passes used are stored** (`Player.passesUsed`). Passes left are
+  `STARTING_PASSES + passesAwarded(placementHistory) - passesUsed`. There is no award step, so
+  `useWhenGame.placeCard` and `settleDailyPlacement` cannot drift apart, a state with no field
+  has used none, and in multiplayer each player earns from their own run, not from the shared
+  `currentStreak`.
+- **A pass is not a placement.** It leaves the placement history, the streak, the score, the
+  turn and the leaderboard result alone. The leaderboard API needed no change.
+- **A pass is one synchronous commit and never sets `isAnimating`.** The daily save only
+  writes when nothing is animating, so an animating pass could be seen and then taken back by
+  closing the app. The throw is presentation only, a copy of the card in `ActiveCardDisplay`.
+- **A pass is refused on an empty deck**, and that guard is load-bearing. `themeOutcome.ts` and
+  the leaderboard's red-square cap both rely on a hand shrinking only on a miss or a dry-deck
+  hit. A pass that discarded without drawing would be a third way.
+- **The draw is the top of the deck, never a catch-up draw.** Struggle only decays on a hit,
+  so an eased pass would be eased twice, and catch-up is meant to stay invisible.
+- **The drawn card goes on top of the hand**, like every other draw (`DRAW_SLOT`). A pass
+  asks for a different card to play now; landing behind the next card, as the first build
+  did, showed a card the player already held and read as a swap.
+- **Passed cards are recorded**: `passedCards` on the state, `passed` slugs in the daily
+  progress and board saves. Daily resume rebuilds the deck as the composed deck minus every
+  card seen, and a passed card is seen. Without the list a passed opening card fails the
+  opening check and the daily is dealt again to a player who knows the answers.
+  `placementLogic.test.ts` holds the property test for the invariant.
+- **`minDeckSize` is unchanged.** Raising it would stop thin Custom decks and existing
+  challenge codes that start today. `DAILY_SPOILER_DEPTH` grew by `STARTING_PASSES`.
+- **Neither hand button works during a drag.** The drop places whatever is on top of the hand
+  at that moment, so a second finger on Swap placed a card the player never dragged, and one
+  on Pass would discard the card in their hand. A 450 ms cooldown stops a double tap spending
+  two passes.
+- **The throw is a ghost, not an `AnimatePresence` exit.** The top card's element also
+  unmounts on a swap and on every placement, and an exiting `DraggableCard` would register the
+  drag id twice. It animates transform only.
+- **The hand moves with the placement, not after it** (`WhenGameState.settling`, `handOnShow`
+  in `Game.tsx`). The engine still commits a turn when its animation ends: 0.6 s after a
+  correct drop, 1.3 to 2.1 s after a miss. The hand bar used to wait for that commit, so a
+  placement read as flash, pause, then draw, and the maintainer asked for one movement. Now
+  `placeCard` works out the settled state the moment the card is dropped
+  (`settleDailyPlacement`, the function the daily save already used for exactly that) and the
+  bar shows its hand and deck at once: the new card is on its way from the pile 44 ms after
+  the drop and in place by about 330 ms, inside the green flash. A miss shows the next card
+  straight away. Three things to keep:
+  - **It is display only.** `players` and `deck` hold the real state until the commit, and
+    input stays locked until then: the shown card cannot be dragged, Pass and Cycle are
+    disabled, and a tap on the card is ignored, because `onCardTap` would open the engine's
+    active card, which is still the one just played.
+  - **The preview must equal the commit**, or the hand would visibly change twice.
+    `useWhenGame.settling.test.ts` pins that through hits, misses and catch-up draws.
+  - **No preview in multiplayer, or when the placement empties the hand.** Those keep the old
+    behaviour: the top card stays hidden until the turn commits (`topHidden`).
+    The lock itself is the next thing a player waits on, most of all after a miss. Lifting it
+    means letting a second placement start while the first is still animating, which is an
+    engine change and was not attempted.
+- **A drawn card is dealt from the deck pile**, on a pass and on a correct placement alike. The
+  pile is `DeckPile` in the hand bar's left panel (`PlayerInfo.tsx`); the card starts on it,
+  the pile's size, and springs to its place in the hand in about a third of a second.
+  `useDrawnCards` finds the card by comparing the hand's names with the last render for the
+  same player, so a swap, a miss, the first paint, a resumed daily and a multiplayer hand-off
+  animate nothing. `useDeckOrigin` measures the pile after every commit and the drawn card
+  reads the last commit's value at mount; it uses `offsetWidth`, because the pile dips as a
+  card leaves and a rect would measure it mid-dip. The card is opaque throughout, which
+  replaced an opacity fade and keeps it clear of the Android WebView flicker. The first
+  version slid in 34px from the right of its slot with a fade; that survives only as the
+  fallback for a page with no pile to measure.
+- **The pile shows the cards left to draw, capped at "30+"** (`DECK_COUNT_CAP`). An ordinary
+  day's deck is thousands deep, so the true number would be noise; a small deck counts down,
+  which is the case the number is for (a curated theme starts at 24). Empty, it is a dashed
+  outline with a muted 0, and Pass is disabled. It is captioned "Deck" (it had no caption at first, and the maintainer asked for
+  one), and it is not a button: the counters above it still open the stats.
+- **The pile is the real art of the deck's next three cards**, `deck[0]` on top, at 40px. It
+  was first an ink card back with a frame; the maintainer asked for the art, on the grounds
+  that it makes plain what the pile is and that nobody can read a card at that size. It uses
+  the `thumbnail` rung, which `useImagePrefetch` has already warmed for the next five deck
+  cards, so it adds no request and no transformation. Don't give it a rung of its own.
+- **The pile can show a card that is not the one dealt.** After a miss a catch-up draw may
+  take a card from further down, and the top painting stays where it was. That is accepted:
+  catch-up stays silent in every way a player could act on.
+- **A ring on the Pass button shows progress to the next pass** (`PassRing`,
+  `passProgress`): three segments on the button's own border, one lit for each correct
+  placement in a row. It exists because the button looked plain and the earning rule was
+  nowhere on screen; the alternative, a gold-filled button, was passed over because gold fill
+  is how a hint points at a button. The gaps sit under the count badge and at thirds from it,
+  so the badge hides a gap and the last segment runs up to the badge it is about to raise. It
+  stays visible on a spent or disabled button, and steps aside while the pass hint has the
+  button filled gold.
+- **An earned pass is a small event of its own** (`usePassEarn`, `EarnPhase`), in three
+  beats: the ring shows complete (170 ms); its gold runs round both sides of the button into
+  the count badge, thickening as it shortens (330 ms); the badge takes the new count at twice
+  its size and settles, throwing off a ring of gold and a "+1" that lifts away. The first
+  version only held the ring full and then emptied it, and the maintainer asked for the gold
+  to be seen gathering into the "+1". Three things in it are deliberate:
+  - **The badge's count is held back until the gold lands.** Only the display lags; the pass
+    is spendable, and announced to a screen reader, from the first frame.
+  - **The earn is noticed during render, not in an effect.** An effect let one frame of the
+    finished state paint first, and the badge jumped to the new count and back.
+  - **The badge's spring is firm** (damping 24). A looser one shrank it to a dot on the
+    rebound.
+    It follows pass progress, not a streak tier, so it lives in `ActiveCardDisplay` and not in
+    `streakFeedback.ts`. Under reduced motion the count simply changes.
+- **No warning is shown when a pass forfeits a theme clear.** It is stated on How to Play only.
 
 ## Tombstones
 

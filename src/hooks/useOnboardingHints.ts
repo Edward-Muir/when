@@ -11,7 +11,7 @@ import {
 export const DRAG_NUDGE_MS = 4000;
 /** How long the wrong/correct strips stay up: a statement about what just happened. */
 export const OUTCOME_HINT_MS = 4000;
-/** How long the tap-a-card, stats and swap strips stay up: each asks for a tap. */
+/** How long the tap-a-card, stats, swap and pass strips stay up: each asks for a tap. */
 export const ACTION_HINT_MS = 6000;
 
 /** Every hint except the idle drag nudge. These are chosen at a placement's settle. */
@@ -19,7 +19,7 @@ export type SettleHintKey = Exclude<GameHintKey, 'drag'>;
 
 /**
  * The ladder, in the order it is walked. One rung per placement: the outcome of what they
- * just did, then the three things nothing else in the UI explains.
+ * just did, then the four things nothing else in the UI explains.
  */
 export const SETTLE_PRIORITY: SettleHintKey[] = [
   'wrong',
@@ -28,6 +28,7 @@ export const SETTLE_PRIORITY: SettleHintKey[] = [
   'tapCard',
   'stats',
   'swap',
+  'pass',
 ];
 
 /** When several hints are eligible at once, this is the order that wins. */
@@ -45,6 +46,7 @@ interface SeenState {
   tapCard: boolean;
   stats: boolean;
   swap: boolean;
+  pass: boolean;
 }
 
 interface PendingOutcome {
@@ -61,6 +63,9 @@ interface SettleContext {
   timelineLength: number;
   statsOpen: boolean;
   cardOpen: boolean;
+  /** Passes the player could spend now, and cards left for a pass to draw. */
+  passesLeft: number;
+  deckLength: number;
 }
 
 export interface UseOnboardingHintsArgs {
@@ -74,6 +79,10 @@ export interface UseOnboardingHintsArgs {
   timelineLength: number;
   /** The top hand card's name; a change while the swap hint shows means they used it. */
   activeCardName: string | undefined;
+  /** Passes the current player has left (`passesLeft` in utils/gameLogic.ts). */
+  passesLeft: number;
+  /** Cards passed so far this game; a rise means the pass button was used. */
+  passedCount: number;
   /** Multiplayer keeps its popup flow; the strips stay off. */
   isMultiplayer: boolean;
   /** The in-game stats popup is open, so the counter hint has nothing left to ask for. */
@@ -100,6 +109,7 @@ function readSeen(): SeenState {
     tapCard: hasSeenHint('tapCard'),
     stats: hasSeenHint('stats'),
     swap: hasSeenHint('swap'),
+    pass: hasSeenHint('pass'),
   };
 }
 
@@ -120,6 +130,8 @@ function withSeen(prev: SeenState, key: GameHintKey): SeenState {
       return { ...prev, stats: true };
     case 'swap':
       return { ...prev, swap: true };
+    case 'pass':
+      return { ...prev, pass: true };
   }
 }
 
@@ -152,10 +164,17 @@ function isStatsEligible(seen: SeenState, ctx: SettleContext): boolean {
   return !seen.stats && !ctx.statsOpen && seen.tapCard;
 }
 
-// Last, and the only rung with a gate beyond the previous one: it needs a hand worth cycling,
+// The only rung so far with a gate beyond the previous one: it needs a hand worth cycling,
 // and it waits for a miss or four placements so a perfect run still reaches it.
 function isSwapEligible(seen: SeenState, ctx: SettleContext): boolean {
   return !seen.swap && seen.stats && ctx.handLength >= 2 && (seen.wrong || ctx.timelineLength >= 4);
+}
+
+// Last. It follows `swap` because Swap is the free way out of a card and Pass the costly one,
+// and it needs something to spend and something to draw. A player who has already passed has
+// this marked seen by the "they used it" effect, so it never tells them what they know.
+function isPassEligible(seen: SeenState, ctx: SettleContext): boolean {
+  return !seen.pass && seen.swap && ctx.passesLeft > 0 && ctx.deckLength > 0;
 }
 
 function isSettleEligible(
@@ -177,6 +196,8 @@ function isSettleEligible(
       return isStatsEligible(seen, ctx);
     case 'swap':
       return isSwapEligible(seen, ctx);
+    case 'pass':
+      return isPassEligible(seen, ctx);
   }
 }
 
@@ -199,6 +220,7 @@ function hintDurationMs(key: SettleHintKey): number {
     case 'tapCard':
     case 'stats':
     case 'swap':
+    case 'pass':
       return ACTION_HINT_MS;
   }
 }
@@ -211,12 +233,13 @@ function hintDurationMs(key: SettleHintKey): number {
  * goes false with an outcome pending) the highest-priority unseen, eligible rung of
  * `SETTLE_PRIORITY` is shown, replacing whatever is up. So each hint gets a player action of
  * its own and nothing stacks: a miss teaches `wrong`, the next hit `correct`, then `tapCard`,
- * then `stats`, then `swap`. The idle drag nudge is the only timer-driven hint left. There is
+ * then `stats`, then `swap`, then `pass`. The idle drag nudge is the only timer-driven hint left. There is
  * deliberately no rules modal first: it was an essay nobody read, and the strips teach the
  * same loop at the moment each part matters.
  *
  * `drag` is marked seen on the first drag whether or not the strip was ever shown, so a
- * player who never idles skips it entirely. The settle hints are marked when shown. An
+ * player who never idles skips it entirely. `pass` follows the same rule: the first pass marks
+ * it, shown or not. The settle hints are otherwise marked when shown. An
  * outcome that lands on the game-ending placement is discarded unmarked, so it returns next
  * game.
  *
@@ -237,7 +260,9 @@ function hintDurationMs(key: SettleHintKey): number {
  *    false and swaps in the newly drawn card in one `setState`, so `activeCardName` has
  *    already changed by the time `swap` is shown. The "they swapped, hide it" effect
  *    therefore compares against `swapCardRef`, baselined at the instant `swap` is shown — not
- *    against last render's value, which would kill the hint the moment it appeared.
+ *    against last render's value, which would kill the hint the moment it appeared. A pass
+ *    also changes the top card, so it hides a showing `swap` strip too; that is fine, the
+ *    strip was marked seen when it appeared.
  * 4. **No timer gated on a churning boolean.** A cooldown timer whose effect cleanup restarts
  *    it every time an eligibility boolean flips — which happens on every drag frame and
  *    animation transition — never reaches its quiet gap, so the hint never fires in real
@@ -255,6 +280,8 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     deckLength,
     timelineLength,
     activeCardName,
+    passesLeft,
+    passedCount,
     isMultiplayer,
     statsOpen,
     cardOpen,
@@ -275,6 +302,8 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
   const lastResultRef = useRef(lastPlacementResult);
   /** The top card at the instant `swap` was shown. See hazard 3. */
   const swapCardRef = useRef<string | undefined>(undefined);
+  /** Cards passed as of the last render, so a rise can be told from a re-render. */
+  const passedRef = useRef(passedCount);
   const hideTimerRef = useRef<number | null>(null);
 
   const clearHideTimer = useCallback(() => {
@@ -358,6 +387,8 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
       timelineLength,
       statsOpen,
       cardOpen,
+      passesLeft,
+      deckLength,
     });
     if (!key) return;
     swapCardRef.current = activeCardName; // baseline for effect 6 — hazard 3
@@ -370,6 +401,8 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     timelineLength,
     statsOpen,
     cardOpen,
+    passesLeft,
+    deckLength,
     activeCardName,
     show,
   ]);
@@ -390,7 +423,18 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     if (active === 'swap' && activeCardName !== swapCardRef.current) hide();
   }, [active, activeCardName, hide]);
 
-  // 7. An explicit reset (the menu's "Reset Hints") re-arms the ladder without a remount.
+  // 7. Using the pass button answers its hint, and settles it for good whether or not the
+  //    strip was ever shown: the `drag` rule, for a player who finds the button unprompted.
+  //    Reads `seenRef`, not `seen`, for the same reason the settle effect does.
+  useEffect(() => {
+    const used = passedCount > passedRef.current;
+    passedRef.current = passedCount;
+    if (!used) return;
+    if (!seenRef.current.pass) markSeen('pass');
+    if (activeRef.current === 'pass') hide();
+  }, [passedCount, markSeen, hide]);
+
+  // 8. An explicit reset (the menu's "Reset Hints") re-arms the ladder without a remount.
   useEffect(
     () =>
       subscribeHintsReset(() => {
@@ -403,7 +447,7 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
     [clearHideTimer]
   );
 
-  // 8. Leaving play (game over, or the screen unmounting) clears everything.
+  // 9. Leaving play (game over, or the screen unmounting) clears everything.
   useEffect(() => {
     if (playing) return;
     clearHideTimer();

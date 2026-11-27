@@ -12,7 +12,7 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
+import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData, Player } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
@@ -30,6 +30,7 @@ import GameHud from './GameHud';
 import HintStrip from './HintStrip';
 import HandBar from './HandBar';
 import { hintText } from '../utils/hintCopy';
+import { passedCount, passesLeft } from '../utils/gameLogic';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import { useThemeIntro } from '../hooks/useThemeIntro';
 import ThemeIntroPopup from './ThemeIntroPopup';
@@ -133,10 +134,34 @@ function isCardPopupOpen(pendingPopup: GamePopupData | null): boolean {
   return pendingPopup?.type === 'description';
 }
 
+/**
+ * The hand and deck the bottom bar shows. While a single-player placement animates, that is
+ * the pair the turn will settle into (`state.settling`), so the next card is dealt, and the
+ * deck gives it up, as the placed card lands. The player asked for exactly this: one movement,
+ * not a flash, a wait and then a draw.
+ *
+ * `topHidden` is the old behaviour, kept for when there is nothing to show ahead: multiplayer,
+ * which has no preview, and a placement that empties the hand. There the top card is still the
+ * one just played, so it stays hidden until the turn commits.
+ *
+ * A function for the same reason as the helpers above: `Game` sits on the complexity ceiling.
+ */
+function handOnShow(
+  state: WhenGameState,
+  currentPlayer: Player
+): { player: Player; deck: HistoricalEvent[]; topHidden: boolean } {
+  const ahead = state.isAnimating ? state.settling : undefined;
+  if (ahead && ahead.player.hand.length > 0) {
+    return { player: ahead.player, deck: ahead.deck, topHidden: false };
+  }
+  return { player: currentPlayer, deck: state.deck, topHidden: state.isAnimating };
+}
+
 interface GameProps {
   state: WhenGameState;
   onPlacement: (index: number) => PlacementResult | null;
   onCycleHand: () => void;
+  onPass: () => void;
   pendingPopup: GamePopupData | null;
   showDescriptionPopup: (event: HistoricalEvent) => void;
   showGameOverPopup: () => void;
@@ -164,6 +189,7 @@ const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
   onCycleHand,
+  onPass,
   pendingPopup,
   showDescriptionPopup,
   showGameOverPopup,
@@ -276,7 +302,7 @@ const Game: React.FC<GameProps> = ({
   const themeIntro = useThemeIntro(state);
 
   // The one-shot hints: the idle drag nudge, then one strip per placement walking the ladder
-  // wrong / correct -> tap a card -> the counter -> swap. All the conditions live in the
+  // wrong / correct -> tap a card -> the counter -> swap -> pass. All the conditions live in the
   // hook; this component only mounts the strip and passes the glow target its key.
   const hints = useOnboardingHints({
     phase: state.phase,
@@ -287,6 +313,8 @@ const Game: React.FC<GameProps> = ({
     deckLength: state.deck.length,
     timelineLength: state.timeline.length,
     activeCardName: activeCard?.name,
+    passesLeft: passesLeft(currentPlayer),
+    passedCount: passedCount(state),
     isMultiplayer: state.players.length > 1,
     statsOpen: showStatsPopup,
     cardOpen: isCardPopupOpen(pendingPopup),
@@ -350,6 +378,8 @@ const Game: React.FC<GameProps> = ({
       warmLeaderboard(getLocalDateString());
     }
   }, [state.gameMode, state.isReview]);
+
+  const shown = handOnShow(state, currentPlayer);
 
   const handleActiveCardTap = () => {
     if (activeCard) showDescriptionPopup(activeCard);
@@ -443,20 +473,23 @@ const Game: React.FC<GameProps> = ({
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
                     timelineLength={state.timeline.length}
+                    deck={shown.deck}
                     onStatsClick={() => setShowStatsPopup(true)}
                     currentStreak={state.currentStreak}
                     nudge={hints.active}
-                    placementInFlight={state.isAnimating ? state.lastPlacementResult : null}
                   />
                 </div>
 
-                {/* The hand card in the middle of the screen, and the swap button on its right */}
+                {/* The hand card in the middle of the screen, and the buttons on its right */}
                 {activeCard && (
                   <ActiveCardDisplay
-                    activeCard={activeCard}
-                    currentPlayer={currentPlayer}
+                    activeCard={shown.player.hand[0]}
+                    currentPlayer={shown.player}
                     isAnimating={state.isAnimating}
+                    topHidden={shown.topHidden}
                     onCycleHand={onCycleHand}
+                    onPass={onPass}
+                    deckLength={shown.deck.length}
                     onCardTap={handleActiveCardTap}
                     nudge={hints.active}
                   />

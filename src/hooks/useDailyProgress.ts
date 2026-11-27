@@ -10,7 +10,8 @@ import {
  * Keep today's unfinished daily saved (`utils/dailyProgress.ts`), and drop the save once the
  * game is over, by which point `useSaveDailyResult` has recorded the day as played.
  *
- * Only settled states are written here: the deal, a cycled hand, the end of each placement.
+ * Only settled states are written here: the deal, a cycled hand, a pass, the end of each
+ * placement. A pass is a single commit that never animates, so it is saved in the same breath.
  * The placement itself is saved earlier, from `placeCard`, the moment the card is dropped; see
  * `settleDailyPlacement` for why waiting for the animation would reopen the cheat.
  */
@@ -35,6 +36,7 @@ export function useDailyProgress(state: WhenGameState) {
     state.timeline,
     state.players,
     state.failedPlacements,
+    state.passedCards,
     state.placementHistory,
   ]);
 }

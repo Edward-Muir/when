@@ -153,3 +153,31 @@ describe('restoreDailyBoard', () => {
     expect(restoreDailyBoard(snapshot(), [event('unrelated', 1900)])).toBeNull();
   });
 });
+
+describe('a board with passed cards', () => {
+  const passedCards = [event('placed-late', 1800)];
+  const catalogue = [...CATALOGUE, event('placed-late', 1800)];
+
+  it('keeps them through a save and a restore', () => {
+    const snapshot = buildDailyBoardSnapshot(makeGameState({ passedCards }));
+    expect(snapshot!.passed).toEqual(['placed-late']);
+
+    const restored = restoreDailyBoard(snapshot, catalogue)!;
+    expect(restored.passedCards!.map((e) => e.name)).toEqual(['placed-late']);
+    expect(restored.players[0].passesUsed).toBe(1);
+  });
+
+  it('reads a board saved before the pass existed as having none', () => {
+    const old: Partial<DailyBoardSnapshot> = { ...buildDailyBoardSnapshot(makeGameState())! };
+    delete old.passed;
+    localStorage.setItem(KEY, JSON.stringify(old));
+
+    expect(getTodayDailyBoard()!.passed).toEqual([]);
+    expect(restoreDailyBoard(getTodayDailyBoard(), catalogue)!.passedCards).toEqual([]);
+  });
+
+  it('skips a passed card the catalogue no longer carries', () => {
+    const snapshot = { ...buildDailyBoardSnapshot(makeGameState())!, passed: ['gone'] };
+    expect(restoreDailyBoard(snapshot, catalogue)!.passedCards).toEqual([]);
+  });
+});

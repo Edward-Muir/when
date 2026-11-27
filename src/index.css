@@ -86,11 +86,13 @@ body {
   .pb-safe {
     padding-bottom: env(safe-area-inset-bottom);
   }
-  /* The hand bar while a game is in play: the square hand card (`--hand-card`) with 8px above
-     and below. The inset is added, not absorbed, because `pb-safe` pads inside this height and
-     a home-indicator inset would otherwise squeeze the card out of the bar. */
+  /* The hand bar while a game is in play. It is shorter than the hand card needs: the card
+     keeps 8px below it and stands `--hand-overlap` above the bar's top edge, over the line
+     between the hand and the timeline, so a larger card costs the timeline no height. The
+     inset is added, not absorbed, because `pb-safe` pads inside this height and a
+     home-indicator inset would otherwise squeeze the card out of the bar. */
   .hand-bar {
-    height: calc(var(--hand-card) + 16px + env(safe-area-inset-bottom));
+    height: calc(var(--hand-card) + 8px - var(--hand-overlap) + env(safe-area-inset-bottom));
   }
   /* What sits in the hand bar: the hand card in the middle of the screen, the counter centred
      in the space on its left and the swap button in the space on its right. The middle column
@@ -105,14 +107,35 @@ body {
     width: 100%;
     max-width: 402px;
     margin-inline: auto;
+    /* Pinned 8px above the bar's floor, not centred in it: the grid is the card's height, so
+       its top stands `--hand-overlap` over the bar's top edge. The bar paints its children
+       over its own border, so the card covers the line where it crosses it. */
+    align-self: flex-end;
+    margin-bottom: 8px;
   }
   /* The swap button is centred in what the fan leaves of the right column, not in the whole
      column: the cards fanned behind the hand card reach 24px to its right (and their turned
-     corners a few more), and with a 168px card a button centred in the column sits on them
-     at 360px wide. */
+     corners a few more), and a button centred in the column sits on them at 360px wide. */
   .hand-grid .hand-swap {
     justify-self: stretch;
     padding-left: 30px;
+    /* Above the hand's cards (the top one is z-5, a passed one in flight z-6), so a card
+       dealt in or thrown out passes under the buttons and never over the pass count. */
+    position: relative;
+    z-index: 7;
+    /* Down by the hand card's overlap. The grid's row is the card's height and the card stands
+       `--hand-overlap` over the bar's top edge, so a column centred on the card sat that much
+       too high in the bar: the pass count nearly touched the line while the space under
+       "Cycle" went spare. This centres the buttons in the bar itself. */
+    top: var(--hand-overlap);
+  }
+  /* Below 360px the column is narrower than the padding plus a 44px button (73px at 320), so
+     the buttons give up 8px of their clearance and sit on the fan's outer corner. They are
+     above the cards, so nothing is hidden but a sliver of the deepest one. */
+  @media (max-width: 359px) {
+    .hand-grid .hand-swap {
+      padding-left: 22px;
+    }
   }
 }
 
@@ -405,10 +428,27 @@ body {
   --board-gutter: 6rem; /* w-24 */
   --board-gap: 0.75rem; /* pl-3 */
   /* The card in hand, a square. Must match SQUARE_CARD_CLASS in cardSize.ts. */
-  --hand-card: 168px;
+  --hand-card: 174px;
+  /* How far the hand card stands above the hand bar's top edge (see `.hand-bar`). */
+  --hand-overlap: 8px;
+  /* The Pass and Swap buttons beside the hand, and a card of the deck pile opposite them. Both
+     are a size up from the 44px and 40px they began at: the buttons were close enough to tap
+     the wrong one, and the pile is meant to be about as wide as the counters above it. */
+  --hand-button: 48px;
+  --pile-card: 56px;
   --board-card: 280px; /* Card.tsx, size="landscape", sm: */
   --board-col: calc(var(--board-gutter) + var(--board-gap) + var(--board-card)); /* 388px */
   --board-inset: calc(50% - var(--board-col) / 2);
+}
+
+/* Below 360px the columns beside the hand card are 73px wide, which the larger button and the
+   larger pile do not fit, so both keep the sizes they began at. After the `:root` block above
+   on purpose: the two have the same specificity, so the later one wins. */
+@media (max-width: 359px) {
+  :root {
+    --hand-button: 44px;
+    --pile-card: 40px;
+  }
 }
 
 @layer utilities {
@@ -862,7 +902,18 @@ input,
 }
 
 .hand-bar-hidden {
-  margin-bottom: calc(-1 * (var(--hand-card) + 16px));
+  margin-bottom: calc(-1 * (var(--hand-card) + 8px - var(--hand-overlap)));
+}
+
+/* Tucked away, the hand drops by its overlap and 8px more, back to where it sat under the
+   bar's edge before it overlapped it: the corners of the fanned cards rise almost 8px above
+   the hand card, and would otherwise show along the bottom of the screen. */
+.hand-grid {
+  transition: transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.hand-bar-hidden .hand-grid {
+  transform: translateY(calc(var(--hand-overlap) + 8px));
 }
 
 /* Respect reduced motion preference */
@@ -882,7 +933,8 @@ input,
     animation: none;
   }
 
-  .hand-bar-slide {
+  .hand-bar-slide,
+  .hand-grid {
     transition: none;
   }
 

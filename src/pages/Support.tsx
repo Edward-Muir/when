@@ -37,6 +37,11 @@ const Support: React.FC = () => (
         Get it wrong and it moves to its true spot as a grey marker, and your hand is one card
         smaller. The game ends when your hand is empty. Build the longest timeline!
       </p>
+      <p className={`${answerClass} mt-2`}>
+        Stuck on a card? Pass it: the card is discarded and you draw another. You start each game
+        with three passes, and every three correct in a row earns one more. On a curated theme, a
+        game with a pass cannot count as clearing the theme.
+      </p>
     </div>
 
     <div className={faqCardClass}>

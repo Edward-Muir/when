@@ -33,6 +33,7 @@ import {
   calculatePlacementResult,
   processCorrectPlacement,
   processIncorrectPlacement,
+  processPass,
   buildPopupData,
   PlacementStateUpdate,
 } from '../utils/placementLogic';
@@ -49,6 +50,8 @@ interface UseWhenGameReturn {
   completeTransition: () => void;
   placeCard: (insertionIndex: number) => PlacementResult | null;
   cycleHand: () => void;
+  /** Discard the active card unplayed and draw another, if the player has a pass to spend. */
+  passCard: () => void;
   resetGame: () => void;
   restartGame: (options?: StartOptions) => void;
   /** Bumped on every deal, so the board can remount on a restart that skips the intro. */
@@ -90,6 +93,7 @@ const initialState: WhenGameState = {
   deck: [],
   placementHistory: [],
   failedPlacements: [],
+  passedCards: [],
   lastPlacementResult: null,
   isAnimating: false,
   animationPhase: null,
@@ -137,6 +141,7 @@ function applyTurnUpdate(
     players: update.players,
     deck: update.deck,
     winners: update.winners,
+    settling: undefined,
     isAnimating: false,
     animationPhase: null,
     ...(deferTurn ? {} : turn),
@@ -297,6 +302,7 @@ export function useWhenGame(): UseWhenGameReturn {
         deck: remainingDeck,
         placementHistory: [],
         failedPlacements: [],
+        passedCards: [],
         lastPlacementResult: null,
         isAnimating: false,
         animationPhase: null,
@@ -339,7 +345,15 @@ export function useWhenGame(): UseWhenGameReturn {
 
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
-      saveDailyPlacement(state, activeCard, insertionIndex, result, difficultyIndex);
+      const settled = saveDailyPlacement(
+        state,
+        activeCard,
+        insertionIndex,
+        result,
+        difficultyIndex
+      );
+      // What the hand bar shows until the turn commits: see `WhenGameState.settling`.
+      const settling = settled ? { player: settled.players[0], deck: settled.deck } : undefined;
 
       // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
       // the tombstone reveal + miss banner instead of a blocking popup.
@@ -361,6 +375,7 @@ export function useWhenGame(): UseWhenGameReturn {
         setState((prev) => ({
           ...prev,
           timeline: newTimeline,
+          settling,
           isAnimating: true,
           animationPhase: 'flash',
           placementHistory: [...prev.placementHistory, true],
@@ -387,6 +402,7 @@ export function useWhenGame(): UseWhenGameReturn {
         setState((prev) => ({
           ...prev,
           timeline: tempTimeline,
+          settling,
           isAnimating: true,
           animationPhase: 'flash',
           placementHistory: [...prev.placementHistory, false],
@@ -466,6 +482,16 @@ export function useWhenGame(): UseWhenGameReturn {
     });
   }, [state.isAnimating, state.phase]);
 
+  // One synchronous change, like `cycleHand`, and never `isAnimating`: the daily save only
+  // writes when nothing is animating, so an animating pass could be seen, then undone by
+  // closing the app. The throw is presentation only (`ActiveCardDisplay`).
+  const passCard = useCallback(() => {
+    setState((prev) => {
+      const update = processPass(prev);
+      return update ? { ...prev, ...update } : prev;
+    });
+  }, []);
+
   const completeTransition = useCallback(() => {
     setState((prev) => {
       if (prev.phase !== 'transitioning') return prev;
@@ -544,6 +570,7 @@ export function useWhenGame(): UseWhenGameReturn {
     completeTransition,
     placeCard,
     cycleHand,
+    passCard,
     resetGame,
     restartGame,
     gameKey,

@@ -95,6 +95,7 @@ function seedStorage() {
     'tapCard',
     'stats',
     'swap',
+    'pass',
     'dailyTab',
     'archiveTab',
     'customTab',

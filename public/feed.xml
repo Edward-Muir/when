@@ -5,8 +5,22 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 15:33:13 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 16:41:02 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.42.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.42.0</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>**hand:** deal the next card as the placed one lands, and give the hand room (<a href="https://github.com/Edward-Muir/when/issues/159">#159</a>) (<a href="https://github.com/Edward-Muir/when/commit/86fa76a8397c00639b397414a4d36f0a8f81fc3a">86fa76a</a>)</li></ul>]]></description>
+    </item>
+    <item>
+      <title>When? v1.41.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.41.0</guid>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>**hand:** add the pass, a deck pile and a roomier hand bar (<a href="https://github.com/Edward-Muir/when/issues/158">#158</a>) (<a href="https://github.com/Edward-Muir/when/commit/e670ffb87b7f24ec8f6b143b7abb2b002f22ef46">e670ffb</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.40.0</title>
       <link>https://play-when.com</link>
@@ -62,20 +76,6 @@
       <guid isPermaLink="false">when-v1.33.2</guid>
       <pubDate>Sun, 11 Oct 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>**art:** new artwork for 44 cards found by the art audit (<a href="https://github.com/Edward-Muir/when/issues/81">#81</a>) (<a href="https://github.com/Edward-Muir/when/commit/dcdbc5d16fb88499b7bddf349d5868a447dc0f26">dcdbc5d</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.33.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.33.1</guid>
-      <pubDate>Sat, 10 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>act on the 2026-10 player card reports: new art for 26 cards, text and year fixes (<a href="https://github.com/Edward-Muir/when/issues/80">#80</a>) (<a href="https://github.com/Edward-Muir/when/commit/36c06c3d9ebc7261519e3836ef792528a29f4aca">36c06c3</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.33.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.33.0</guid>
-      <pubDate>Wed, 07 Oct 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>the Archive lists every daily from the last 30 days (<a href="https://github.com/Edward-Muir/when/issues/77">#77</a>) (<a href="https://github.com/Edward-Muir/when/commit/c4398e2b74c450ecae974f2b50f139341ff7c2a5">c4398e2</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,7 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Player, PlacementResult } from '../types';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useAnimationControls, useReducedMotion } from 'framer-motion';
+import { HistoricalEvent, Player } from '../types';
+import { getImageUrl } from '../utils/cloudinaryImage';
 import { Users, Ruler, Zap } from 'lucide-react';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { GameHintKey } from '../utils/playerStorage';
@@ -128,36 +129,19 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) 
   );
 };
 
-// Enlarged hand icon for compact game info display
-const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
-  <div className="relative w-10 h-10">
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      className="w-10 h-10 text-accent"
-    >
-      <HandCardFan count={count} />
-    </svg>
-    <span
-      className={`absolute inset-0 flex items-center justify-center text-sm font-bold ${
-        // No card behind it at zero, so match the counters alongside; the shadow only
-        // exists to lift the number off a card.
-        count === 0 ? 'text-text-muted' : 'text-white drop-shadow-md'
-      }`}
-    >
-      {count}
-    </span>
-  </div>
-);
-
-// Streak lightning bolt indicator
+/**
+ * The streak, beside the timeline counter. Always there, from 0: it was hidden at zero for a
+ * while, and the maintainer put it back, because a counter that comes and goes shifts the row
+ * each time and is one more thing moving in the bar. The pop on a new number stays.
+ */
 const StreakBolt: React.FC<{ streak: number }> = ({ streak }) => {
   const config = getStreakFeedback(streak);
 
   return (
-    <div className={`flex items-center gap-1 ${config.boltColorClass}`}>
+    <div
+      data-testid="streak-counter"
+      className={`flex items-center gap-1 ${config.boltColorClass}`}
+    >
       <motion.div
         key={streak}
         initial={{ scale: 1.3 }}
@@ -165,10 +149,137 @@ const StreakBolt: React.FC<{ streak: number }> = ({ streak }) => {
         transition={{ type: 'spring', stiffness: 400, damping: 15 }}
         className={`flex items-center gap-0.5 ${config.boltAnimationClass}`}
       >
-        <Zap className={`w-3.5 h-3.5 ${config.boltFilled ? 'fill-current' : ''}`} />
-        <span className="font-mono text-xs font-bold">{streak}</span>
+        <Zap className={`w-4 h-4 ${config.boltFilled ? 'fill-current' : ''}`} />
+        <span className="font-mono text-sm font-bold">{streak}</span>
       </motion.div>
     </div>
+  );
+};
+
+/** The deck's count stops here: an ordinary day's deck is thousands of cards deep. */
+export const DECK_COUNT_CAP = 30;
+
+/** What the pile says: the true count up to the cap, then "30+". */
+export function deckCountLabel(count: number): string {
+  return count > DECK_COUNT_CAP ? `${DECK_COUNT_CAP}+` : String(Math.max(0, count));
+}
+
+function deckAriaLabel(count: number): string {
+  if (count <= 0) return 'The deck is empty';
+  if (count > DECK_COUNT_CAP) return `More than ${DECK_COUNT_CAP} cards in the deck`;
+  return count === 1 ? '1 card in the deck' : `${count} cards in the deck`;
+}
+
+/** How many of the deck's next cards show their art in the pile. */
+const PILE_ART_CARDS = 3;
+/**
+ * A pile card's side: `--pile-card` in index.css, 56px, or 40px on a screen under 360px wide.
+ * At 56px the pile is about as wide as the counters above it.
+ */
+const PILE_CARD = 'var(--pile-card)';
+/** How far each card under the top one peeks out, down and left. */
+const PILE_STEP_PX = 3;
+/** The pile's box: the top card plus the two steps the deepest card sits out by. */
+const PILE_BOX = `calc(${PILE_CARD} + ${(PILE_ART_CARDS - 1) * PILE_STEP_PX}px)`;
+
+/**
+ * One card of the pile: its painting, or a blank tile if it has none or it fails to load.
+ * The `thumbnail` rung, the same URL the hand and the board ask for, and one
+ * `useImagePrefetch` has already warmed for the next five deck cards, so the pile costs no
+ * request of its own. Never add a rung for it (docs/cloudinary-cost-controls.md).
+ */
+const PileArt: React.FC<{ event: HistoricalEvent; depth: number }> = ({ event, depth }) => {
+  const [failed, setFailed] = useState(false);
+  const src = failed ? undefined : getImageUrl(event.image_url, 'thumbnail');
+  return (
+    <div
+      data-testid="deck-card"
+      className="absolute overflow-hidden rounded-[5px] border border-border bg-surface"
+      // The top card sits at the pile's top right, under the count; each card below it steps
+      // down and to the left, and is dimmer, never more transparent, as the hand's fan is.
+      style={{
+        width: PILE_CARD,
+        height: PILE_CARD,
+        top: depth * PILE_STEP_PX,
+        left: (PILE_ART_CARDS - 1 - depth) * PILE_STEP_PX,
+        zIndex: PILE_ART_CARDS - depth,
+        filter: depth ? `brightness(${1 - depth * 0.2})` : undefined,
+      }}
+    >
+      {src && (
+        <img
+          src={src}
+          alt=""
+          draggable={false}
+          className="h-full w-full object-cover"
+          onError={() => setFailed(true)}
+        />
+      )}
+    </div>
+  );
+};
+
+/**
+ * The deck: the paintings of its next few cards, stacked, with the cards left to draw on a
+ * badge at its top right corner, clear of the art. It is where a drawn card comes from
+ * (`ActiveCardDisplay` finds the top card by its test id and deals from its centre). Real art
+ * rather than a card back, at the maintainer's request: at this size nobody can read a card
+ * from it, and it makes plain what the pile is. It dips as a card leaves; transform only,
+ * like `StreakBolt`. Not a button: the counter above opens the stats. `GameInfoCompact`
+ * captions it "Deck".
+ *
+ * The top painting is `deck[0]`. After a miss a catch-up draw can deal a card from further
+ * down (`catchUp.ts`), so now and then the card dealt is not the one that was showing. That
+ * is accepted; at this size it does not read as anything.
+ */
+export const DeckPile: React.FC<{ deck: HistoricalEvent[] }> = ({ deck }) => {
+  const count = deck.length;
+  const reduceMotion = useReducedMotion();
+  const dip = useAnimationControls();
+  const previous = useRef<number | null>(null);
+  useEffect(() => {
+    const fell = previous.current !== null && count < previous.current;
+    previous.current = count;
+    if (fell && !reduceMotion) {
+      void dip.start({
+        scale: [0.86, 1],
+        transition: { type: 'spring', stiffness: 400, damping: 15 },
+      });
+    }
+  }, [count, reduceMotion, dip]);
+  const empty = count <= 0;
+
+  return (
+    <motion.div
+      data-testid="deck-pile"
+      role="img"
+      aria-label={deckAriaLabel(count)}
+      animate={dip}
+      className="relative"
+      style={{ width: PILE_BOX, height: PILE_BOX }}
+    >
+      {empty ? (
+        <div
+          data-testid="deck-outline"
+          className="absolute right-0 top-0 rounded-[5px] border-[1.5px] border-dashed border-text-muted opacity-50"
+          style={{ width: PILE_CARD, height: PILE_CARD }}
+        />
+      ) : (
+        deck
+          .slice(0, PILE_ART_CARDS)
+          .map((event, depth) => <PileArt key={event.name} event={event} depth={depth} />)
+      )}
+      {/* The count, on the pile's top right corner like the pass count on its button, so the
+          art under it stays visible, and in the same gold: the app's accent, as the hand icon
+          above it is. It was ink at first, which read as plain black and outside the theme. */}
+      <span
+        className={`absolute -right-2 -top-1.5 z-[4] flex h-4 min-w-4 items-center justify-center rounded-full px-1 font-body text-[10px] font-semibold leading-none ring-2 ring-bg ${
+          empty ? 'bg-border text-text-muted' : 'bg-accent text-white'
+        }`}
+      >
+        {deckCountLabel(count)}
+      </span>
+    </motion.div>
   );
 };
 
@@ -177,74 +288,70 @@ interface GameInfoCompactProps {
   currentPlayer: Player;
   isMultiplayer: boolean;
   timelineLength: number;
+  /** The cards left to draw, next first: the deck pile under the counters shows them. */
+  deck: HistoricalEvent[];
   onStatsClick?: () => void;
   currentStreak?: number;
-  /** The onboarding hint on screen: `stats` glows this counter. */
+  /** The onboarding hint on screen: `stats` glows the counters. */
   nudge?: GameHintKey | null;
-  /** The placement currently animating, or null once it has settled. Lets a miss lead. */
-  placementInFlight?: PlacementResult | null;
 }
 
+/**
+ * The hand bar's left panel: the timeline length and the streak on one line, and the deck
+ * under them.
+ *
+ * It used to lead with a fan icon carrying the number of cards in hand and a "cards left"
+ * label. The maintainer removed both once the hand card grew: the fanned hand beside this
+ * panel already shows the cards, and the panel had become crowded. The number is still in the
+ * stats popup these counters open. A hand of more than five (Custom only) therefore shows no
+ * count on the bar, since the fan stops at five.
+ */
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   currentPlayer,
   isMultiplayer,
   timelineLength,
+  deck,
   onStatsClick,
   currentStreak = 0,
   nudge = null,
-  placementInFlight = null,
 }) => {
-  const showTimelineStats = !isMultiplayer;
-
-  // A miss is decided at the red flash, but the hand does not actually shrink until the
-  // tombstone has finished travelling to its true slot, 1.3-2.1s later (the stage-3
-  // timeout in useWhenGame's placeCard). Lead the state so the card leaves this counter
-  // with the flash, like the streak bolt beside it already does. The caller nulls this
-  // prop in the same setState that commits the shrunken hand, so the lead is withdrawn on
-  // the exact tick it stops being one — the number never double-counts or flickers.
-  const missInFlight = placementInFlight !== null && !placementInFlight.success;
-  const cardsLeft = Math.max(0, currentPlayer.hand.length - (missInFlight ? 1 : 0));
   // `bg-border` is not decoration: the button is transparent, and `animate-hint-glow` is
   // transform and filter only, so without a surface to swell there is nothing to see.
   const nudgeClass = nudge === 'stats' ? 'animate-hint-glow bg-border' : '';
 
-  const content = (
-    <>
-      {/* Player name (if multiplayer) */}
-      {isMultiplayer && (
-        <span className="text-sm font-medium text-text font-body">{currentPlayer.name}</span>
-      )}
-
-      {/* Hand count with enlarged icon */}
-      <HandCardsIconLarge count={cardsLeft} />
-      <span className="text-sm text-text font-body">cards left</span>
-
-      {/* Timeline stats + streak for single-player */}
-      {showTimelineStats && (
-        <div className="flex items-center gap-2 text-xs text-text-muted font-body">
-          <div className="flex items-center gap-1">
-            <Ruler className="w-3.5 h-3.5" />
-            <span className="font-mono">{timelineLength}</span>
-          </div>
-          <StreakBolt streak={currentStreak} />
-        </div>
-      )}
-    </>
+  // Single player: the two counters, as the button that opens the stats. Every `button` is
+  // at least 44px tall (index.css), which is what makes one short row a fair touch target.
+  // Multiplayer has no counters, only whose turn it is.
+  const counters = isMultiplayer ? (
+    <span className="text-sm font-medium text-text font-body">{currentPlayer.name}</span>
+  ) : (
+    <button
+      onClick={onStatsClick}
+      aria-label={`Game stats: ${timelineLength} in the timeline, streak ${currentStreak}`}
+      className={`flex items-center justify-center gap-2.5 px-2 -mx-2 rounded-md text-sm text-text-muted font-body active:bg-border transition-colors cursor-pointer ${nudgeClass}`}
+    >
+      <span data-testid="timeline-counter" className="flex items-center gap-1">
+        <Ruler className="w-4 h-4" />
+        <span className="font-mono">{timelineLength}</span>
+      </span>
+      <StreakBolt streak={currentStreak} />
+    </button>
   );
 
-  // Wrap in tappable button for single-player
-  if (showTimelineStats) {
-    return (
-      <button
-        onClick={onStatsClick}
-        className={`flex flex-col items-center gap-0.5 px-2 py-1 -mx-2 rounded-md hover:bg-border/50 active:bg-border transition-colors cursor-pointer ${nudgeClass}`}
-      >
-        {content}
-      </button>
-    );
-  }
-
-  return <div className="flex flex-col items-center gap-0.5">{content}</div>;
+  return (
+    <div className="flex flex-col items-center gap-4">
+      {counters}
+      {/* The pile and its name. The caption is outside the pile so it neither dips with it
+          nor moves the point a card is dealt from, and it is hidden from a screen reader,
+          which has the pile's own label. */}
+      <div className="flex flex-col items-center gap-1.5">
+        <DeckPile deck={deck} />
+        <span aria-hidden className="text-sm text-text font-body">
+          Deck
+        </span>
+      </div>
+    </div>
+  );
 };
 
 export default PlayerInfo;
