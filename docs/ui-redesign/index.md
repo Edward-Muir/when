@@ -54,7 +54,9 @@ Bottom bar (`hand-bar`: the 168px hand card + 16px, pb-safe) — counter, hand c
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
   its left and the swap button, with the pass button above it, sits in the space on its right,
-  at every width. The counter used
+  at every width. Under the counter, in the same column, is the deck pile (36×40px: the art of the
+  deck's next three cards as 30px tiles, with the count on a dark plate over the top one):
+  136px of the bar's 168 with the counter above it. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left
   edge and the swap button 40px beside it. The middle column is the card's width whether or not
   there is a card, so the counter does not move between turns. The swap button is centred in

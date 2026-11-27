@@ -448,6 +448,7 @@ const Game: React.FC<GameProps> = ({
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
                     timelineLength={state.timeline.length}
+                    deck={state.deck}
                     onStatsClick={() => setShowStatsPopup(true)}
                     currentStreak={state.currentStreak}
                     nudge={hints.active}

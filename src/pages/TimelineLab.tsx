@@ -150,6 +150,7 @@ const TimelineLab: React.FC = () => {
                 currentPlayer={player}
                 isMultiplayer={false}
                 timelineLength={board.events.length}
+                deck={hand}
                 currentStreak={3}
               />
             </div>

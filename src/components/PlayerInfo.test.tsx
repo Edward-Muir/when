@@ -1,7 +1,8 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { GameInfoCompact } from './PlayerInfo';
+import { fireEvent, render, screen, within } from '@testing-library/react';
+import { DeckPile, GameInfoCompact, deckCountLabel } from './PlayerInfo';
 import { HistoricalEvent, PlacementResult, Player } from '../types';
+import { getImageUrl } from '../utils/cloudinaryImage';
 
 type InFlight = { placementInFlight: PlacementResult | null };
 
@@ -29,7 +30,10 @@ const card = (i: number): HistoricalEvent => ({
   category: 'science',
   description: 'A thing that happened',
   difficulty: 'medium',
+  image_url: `https://res.cloudinary.com/dscb8inz1/image/upload/v1/events/event-${i}.png`,
 });
+
+const deckOf = (size: number): HistoricalEvent[] => Array.from({ length: size }, (_, i) => card(i));
 
 const playerWithHand = (size: number): Player => ({
   id: 0,
@@ -55,6 +59,8 @@ const renderWithHand = (size: number, animation: Partial<InFlight> = {}) =>
       // timeline length and the streak all render as bare text in this widget.
       timelineLength={99}
       currentStreak={42}
+      // Above the cap, so the pile reads "30+" and never collides with a number under test.
+      deck={deckOf(77)}
       {...animation}
     />
   );
@@ -139,5 +145,68 @@ describe('GameInfoCompact leads a miss', () => {
     renderWithHand(1, { placementInFlight: placement(false) });
     expect(screen.queryAllByTestId('hand-card')).toHaveLength(0);
     expect(screen.getByText('0')).toHaveClass('text-text-muted');
+  });
+});
+
+describe('the deck pile', () => {
+  const pile = () => screen.getByTestId('deck-pile');
+  const art = () => screen.queryAllByTestId('deck-card');
+
+  it('sits under the hand counter', () => {
+    renderWithHand(5);
+    expect(pile()).toHaveTextContent('30+');
+    const counter = screen.getByText('cards left');
+    expect(counter.compareDocumentPosition(pile()) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    // Not part of the button that opens the stats.
+    expect(screen.getByRole('button')).not.toContainElement(pile());
+  });
+
+  it.each([
+    [1, '1', '1 card in the deck'],
+    [24, '24', '24 cards in the deck'],
+    [30, '30', '30 cards in the deck'],
+    [31, '30+', 'More than 30 cards in the deck'],
+    [3000, '30+', 'More than 30 cards in the deck'],
+  ])('shows %i cards as "%s"', (count, text, label) => {
+    render(<DeckPile deck={deckOf(count)} />);
+    expect(pile()).toHaveTextContent(text);
+    expect(screen.getByRole('img', { name: label })).toBe(pile());
+  });
+
+  it('shows the paintings of the next three cards, the next one on top', () => {
+    render(<DeckPile deck={deckOf(24)} />);
+    const images = within(pile()).getAllByRole('presentation');
+    expect(images.map((img) => img.getAttribute('src'))).toEqual(
+      [0, 1, 2].map((i) => getImageUrl(card(i).image_url, 'thumbnail'))
+    );
+    const layers = art().map((tile) => Number(tile.style.zIndex));
+    expect(layers).toEqual([...layers].sort((a, b) => b - a));
+  });
+
+  it('shows only as many cards as the deck still has', () => {
+    render(<DeckPile deck={deckOf(2)} />);
+    expect(art()).toHaveLength(2);
+  });
+
+  it('leaves a blank card where a painting is missing or fails to load', () => {
+    render(<DeckPile deck={[{ ...card(0), image_url: undefined }, card(1)]} />);
+    expect(art()).toHaveLength(2);
+    const [image] = within(pile()).getAllByRole('presentation');
+    fireEvent.error(image);
+    expect(within(pile()).queryAllByRole('presentation')).toHaveLength(0);
+    expect(art()).toHaveLength(2);
+  });
+
+  it('shows an empty outline and a muted zero when the deck runs dry', () => {
+    render(<DeckPile deck={[]} />);
+    expect(pile()).toHaveTextContent('0');
+    expect(screen.getByRole('img', { name: 'The deck is empty' })).toBe(pile());
+    expect(screen.getByText('0')).toHaveClass('text-text-muted');
+    expect(screen.getByTestId('deck-outline')).toBeInTheDocument();
+    expect(art()).toHaveLength(0);
+  });
+
+  it('never shows a negative count', () => {
+    expect(deckCountLabel(-3)).toBe('0');
   });
 });

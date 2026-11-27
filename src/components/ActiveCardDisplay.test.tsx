@@ -1,6 +1,6 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { useReducedMotion } from 'framer-motion';
-import ActiveCardDisplay from './ActiveCardDisplay';
+import ActiveCardDisplay, { deckOrigin } from './ActiveCardDisplay';
 import { HistoricalEvent, Player } from '../types';
 import { STARTING_PASSES } from '../utils/gameLogic';
 
@@ -167,5 +167,22 @@ describe('the passed card', () => {
     fireEvent.click(passButton());
     expect(onPass).toHaveBeenCalledTimes(1);
     expect(screen.queryByTestId('passed-card')).toBeNull();
+  });
+});
+
+describe('where a drawn card is dealt from', () => {
+  // The bar at 402px wide: a 36x40 pile in the left panel, the 168px hand card in the middle.
+  const pile = { left: 40, top: 930, width: 36, height: 40 };
+  const hand = { left: 117, top: 824, width: 168, height: 168 };
+
+  it('is the pile, centre to centre, at the pile’s size', () => {
+    expect(deckOrigin(pile, hand)).toEqual({ x: 58 - 201, y: 950 - 908, scale: 36 / 168 });
+  });
+
+  it('is nowhere when the pile or the hand cannot be measured', () => {
+    expect(deckOrigin(null, hand)).toBeNull();
+    expect(deckOrigin(pile, null)).toBeNull();
+    expect(deckOrigin({ ...pile, width: 0 }, hand)).toBeNull();
+    expect(deckOrigin(pile, { ...hand, width: 0 })).toBeNull();
   });
 });

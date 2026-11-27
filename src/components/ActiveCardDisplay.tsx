@@ -1,4 +1,4 @@
-import { useEffect, useId, useRef, useState } from 'react';
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useDndContext } from '@dnd-kit/core';
 import { RefreshCw, SkipForward } from 'lucide-react';
@@ -38,28 +38,93 @@ function fanPose(depth: number) {
     filter: `brightness(${1 - depth * 0.1})`,
     opacity: 1,
     scale: 1,
+    y: 0,
+  };
+}
+
+/** Where the deck pile is, as a hand card would have to be moved and shrunk to sit on it. */
+export interface DeckOrigin {
+  x: number;
+  y: number;
+  scale: number;
+}
+
+interface Box {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
+/**
+ * The move from the hand card's resting place to the deck pile: centre to centre, and scaled
+ * to the pile's width. Null when either cannot be measured, which sends the draw down the
+ * short fallback slide.
+ */
+export function deckOrigin(pile: Box | null, hand: Box | null): DeckOrigin | null {
+  if (!pile || !hand || pile.width <= 0 || hand.width <= 0) return null;
+  return {
+    x: pile.left + pile.width / 2 - (hand.left + hand.width / 2),
+    y: pile.top + pile.height / 2 - (hand.top + hand.height / 2),
+    scale: pile.width / hand.width,
   };
 }
 
 /**
- * Where a drawn card starts, `depth` places behind the top card: a little to the right of its
- * slot, turned and small, so it reads as dealt into the hand rather than appearing in it. The
- * travel is short on purpose. At 360px wide there are about 40px between the card and the
- * buttons, and the card must not come from above, where the hint strip sits.
+ * Where a drawn card starts, on its way to `depth` places behind the top card: on the deck
+ * pile in the bar's left panel, the pile's size, so it is seen to be dealt from the deck. No
+ * fade. The card is opaque from its first frame, which keeps this clear of the framer opacity
+ * flicker in the Android WebView (docs/mobile-ios).
+ *
+ * With no pile to measure it falls back to a short slide from the right of its slot, with a
+ * fade, which is what a draw looked like before the deck was on screen.
  */
-function arrivalPose(depth: number) {
+function arrivalPose(depth: number, origin: DeckOrigin | null) {
   const rest = fanPose(depth);
-  return { ...rest, x: rest.x + 34, rotate: rest.rotate + 7, scale: 0.94, opacity: 0 };
+  if (!origin) {
+    return { ...rest, x: rest.x + 34, rotate: rest.rotate + 7, scale: 0.94, opacity: 0 };
+  }
+  return { ...rest, x: origin.x, y: origin.y, rotate: 0, scale: origin.scale };
 }
 
-/** How a drawn card settles: a soft spring, starting a beat after the hand closes up. */
-const ARRIVE = {
-  type: 'spring' as const,
-  stiffness: 360,
-  damping: 30,
-  delay: 0.06,
-  opacity: { duration: 0.1, delay: 0.06 },
-};
+/** How a drawn card travels from the deck: a soft spring, about a third of a second. */
+const ARRIVE = { type: 'spring' as const, stiffness: 260, damping: 28 };
+
+/** The deck pile `GameInfoCompact` renders in the same bar. */
+const DECK_PILE_SELECTOR = '[data-testid="deck-pile"]';
+
+/**
+ * Keeps the deck pile's position relative to the hand measured, for the next draw to start
+ * from. Measured after every commit, so the value a newly drawn card reads at mount is the
+ * last commit's; that is always there, because nothing is drawn on a hand's first paint. The
+ * pile is in a sibling cell of the bar's grid, so it is found in the document, not by a ref.
+ * `offsetWidth`, not the rect's width: the pile dips as a card leaves it, and a rect would
+ * measure it mid-dip.
+ */
+function useDeckOrigin(handRef: React.RefObject<HTMLDivElement | null>) {
+  const origin = useRef<DeckOrigin | null>(null);
+  useLayoutEffect(() => {
+    const hand = handRef.current?.getBoundingClientRect() ?? null;
+    const pileEl = document.querySelector<HTMLElement>(DECK_PILE_SELECTOR);
+    if (!pileEl || !hand) {
+      origin.current = null;
+      return;
+    }
+    const rect = pileEl.getBoundingClientRect();
+    const width = pileEl.offsetWidth;
+    const height = pileEl.offsetHeight;
+    origin.current = deckOrigin(
+      {
+        left: rect.left + rect.width / 2 - width / 2,
+        top: rect.top + rect.height / 2 - height / 2,
+        width,
+        height,
+      },
+      hand
+    );
+  });
+  return origin;
+}
 
 /** A passed card's way out: a small hop, then off the bottom of the screen, turning. */
 const THROW = {
@@ -185,6 +250,9 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   const { haptics } = useHaptics();
   const passesId = useId();
   const drawn = useDrawnCards(currentPlayer);
+  // The top card's box: the hand's resting place, which the deal from the deck is measured to.
+  const topRef = useRef<HTMLDivElement | null>(null);
+  const origin = useDeckOrigin(topRef);
   // The card just passed, shown falling away. Presentation only: the engine has already
   // discarded it, in one commit, so the daily save never sees a pass in flight.
   const [thrown, setThrown] = useState<HistoricalEvent | null>(null);
@@ -213,11 +281,13 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   const fanInitial = (name: string, depth: number) => {
     if (!settled.current) return false;
     return drawn.has(name) && !reduceMotion
-      ? arrivalPose(depth)
+      ? arrivalPose(depth, origin.current)
       : { ...fanPose(depth), opacity: 0 };
   };
   const topDrawn = drawn.has(activeCard.name) && !reduceMotion;
-  const topInitial = topDrawn ? arrivalPose(0) : { x: FAN_STEP_PX, rotate: FAN_STEP_DEG };
+  const topInitial = topDrawn
+    ? arrivalPose(0, origin.current)
+    : { x: FAN_STEP_PX, rotate: FAN_STEP_DEG };
   const cardNudgeClass = topCardNudgeClass(nudge);
   const fanned = currentPlayer.hand.slice(1, MAX_FAN_CARDS);
 
@@ -248,11 +318,11 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
         {/* Top card (active, draggable). The hint's bob goes on this wrapper, not the drag
               handle: dnd-kit measures the activator node. The shuffle goes on a wrapper of its
               own inside it, because the hint animates this one's transform in CSS. */}
-        <div className={`relative z-[5] ${cardNudgeClass}`}>
+        <div ref={topRef} className={`relative z-[5] ${cardNudgeClass}`}>
           <motion.div
             key={activeCard.name}
             initial={settled.current ? topInitial : false}
-            animate={{ x: 0, rotate: 0, scale: 1, opacity: 1 }}
+            animate={{ x: 0, y: 0, rotate: 0, scale: 1, opacity: 1 }}
             transition={topDrawn ? arrive : shuffle}
           >
             <DraggableCard

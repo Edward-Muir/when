@@ -109,6 +109,9 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   a passed card on its way out is `[data-testid="passed-card"]` for about 0.4 s. Both buttons
   are disabled during a drag and while a placement animates. The cards fanned behind the top
   one are `[data-hand-fan]`.
+- **The deck pile** is `[data-testid="deck-pile"]`, under the bottom-left counter. Its text is
+  the cards left to draw, or `30+` above thirty, and a drawn card's first frame sits on it.
+  Its tiles are `[data-testid="deck-card"]`, the next card first.
 - **The dev server pauses for about a third of a second whenever the deck changes** (a pass,
   a correct placement). That is React's development build diffing the `state` prop for its
   performance track (`addObjectDiffToProperties` in a CPU profile), not the app. Time

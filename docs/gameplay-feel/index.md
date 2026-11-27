@@ -315,13 +315,30 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
 - **The throw is a ghost, not an `AnimatePresence` exit.** The top card's element also
   unmounts on a swap and on every placement, and an exiting `DraggableCard` would register the
   drag id twice. It animates transform only.
-- **A drawn card deals in**, on a pass and on a correct placement alike: it starts a little to
-  the right of its slot, turned and small, and springs in. `useDrawnCards` finds it by
-  comparing the hand's names with the last render for the same player, so a swap, a miss, the
-  first paint, a resumed daily and a multiplayer hand-off animate nothing. The travel is
-  short because at 360px there are about 40px between the card and the buttons, and it never
-  comes from above, where the hint strip sits. The fade is the framer opacity animation the
-  fan already used; it has not been checked in the Android app (see the WebView note below).
+- **A drawn card is dealt from the deck pile**, on a pass and on a correct placement alike. The
+  pile is `DeckPile` in the hand bar's left panel (`PlayerInfo.tsx`); the card starts on it,
+  the pile's size, and springs to its place in the hand in about a third of a second.
+  `useDrawnCards` finds the card by comparing the hand's names with the last render for the
+  same player, so a swap, a miss, the first paint, a resumed daily and a multiplayer hand-off
+  animate nothing. `useDeckOrigin` measures the pile after every commit and the drawn card
+  reads the last commit's value at mount; it uses `offsetWidth`, because the pile dips as a
+  card leaves and a rect would measure it mid-dip. The card is opaque throughout, which
+  replaced an opacity fade and keeps it clear of the Android WebView flicker. The first
+  version slid in 34px from the right of its slot with a fade; that survives only as the
+  fallback for a page with no pile to measure.
+- **The pile shows the cards left to draw, capped at "30+"** (`DECK_COUNT_CAP`). An ordinary
+  day's deck is thousands deep, so the true number would be noise; a small deck counts down,
+  which is the case the number is for (a curated theme starts at 24). Empty, it is a dashed
+  outline with a muted 0, and Pass is disabled. It has no caption and is not a button: the
+  counter above it keeps the "cards left" label and still opens the stats.
+- **The pile is the real art of the deck's next three cards**, `deck[0]` on top, at 30px. It
+  was first an ink card back with a frame; the maintainer asked for the art, on the grounds
+  that it makes plain what the pile is and that nobody can read a card at that size. It uses
+  the `thumbnail` rung, which `useImagePrefetch` has already warmed for the next five deck
+  cards, so it adds no request and no transformation. Don't give it a rung of its own.
+- **The pile can show a card that is not the one dealt.** After a miss a catch-up draw may
+  take a card from further down, and the top painting stays where it was. That is accepted:
+  catch-up stays silent in every way a player could act on.
 - **An earned pass is announced only by the badge popping.** It is driven by the count, not by
   a streak tier, so it lives in `ActiveCardDisplay` and not in `streakFeedback.ts`.
 - **No warning is shown when a pass forfeits a theme clear.** It is stated on How to Play only.
