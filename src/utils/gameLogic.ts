@@ -426,6 +426,17 @@ export function passesAwarded(history: readonly boolean[]): number {
   return awarded;
 }
 
+/**
+ * How far a placement history is towards its next pass: the correct placements in the run it
+ * ends on that have not yet earned one, from 0 to `PASS_STREAK - 1`. The Pass button's ring
+ * shows it. The same count `passesAwarded` keeps, so the ring empties exactly when a pass lands.
+ */
+export function passProgress(history: readonly boolean[]): number {
+  let run = 0;
+  for (let i = history.length - 1; i >= 0 && history.at(i); i--) run++;
+  return run % PASS_STREAK;
+}
+
 /** Passes a player can still spend. */
 export function passesLeft(player: Player | undefined): number {
   if (!player) return 0;

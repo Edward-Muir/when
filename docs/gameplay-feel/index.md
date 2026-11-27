@@ -331,9 +331,8 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
 - **The pile shows the cards left to draw, capped at "30+"** (`DECK_COUNT_CAP`). An ordinary
   day's deck is thousands deep, so the true number would be noise; a small deck counts down,
   which is the case the number is for (a curated theme starts at 24). Empty, it is a dashed
-  outline with a muted 0, and Pass is disabled. It is captioned "deck" in the type of the
-  "cards left" label above it (it had no caption at first, and the maintainer asked for
-  one), and it is not a button: the counter above it still opens the stats.
+  outline with a muted 0, and Pass is disabled. It is captioned "deck" (it had no caption at first, and the maintainer asked for
+  one), and it is not a button: the counters above it still open the stats.
 - **The pile is the real art of the deck's next three cards**, `deck[0]` on top, at 40px. It
   was first an ink card back with a frame; the maintainer asked for the art, on the grounds
   that it makes plain what the pile is and that nobody can read a card at that size. It uses
@@ -342,8 +341,18 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
 - **The pile can show a card that is not the one dealt.** After a miss a catch-up draw may
   take a card from further down, and the top painting stays where it was. That is accepted:
   catch-up stays silent in every way a player could act on.
-- **An earned pass is announced only by the badge popping.** It is driven by the count, not by
-  a streak tier, so it lives in `ActiveCardDisplay` and not in `streakFeedback.ts`.
+- **A ring on the Pass button shows progress to the next pass** (`PassRing`,
+  `passProgress`): three segments on the button's own border, one lit for each correct
+  placement in a row. It exists because the button looked plain and the earning rule was
+  nowhere on screen; the alternative, a gold-filled button, was passed over because gold fill
+  is how a hint points at a button. The gaps sit under the count badge and at thirds from it,
+  so the badge hides a gap and the last segment runs up to the badge it is about to raise.
+  When a pass lands the run is back at zero, so the ring is held full for 0.42s before it
+  clears. It stays visible on a spent or disabled button, and steps aside while the pass
+  hint has the button filled gold.
+- **An earned pass is announced by the ring completing and the badge popping**, nothing more.
+  Both follow pass progress, not a streak tier, so they live in `ActiveCardDisplay` and not
+  in `streakFeedback.ts`.
 - **No warning is shown when a pass forfeits a theme clear.** It is stated on How to Play only.
 
 ## Tombstones

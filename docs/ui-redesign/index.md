@@ -60,14 +60,23 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   sliver shows above the edge. The
   larger card leaves 68px a side at 320px wide, so below 360px the hand buttons give up 8px
   of clearance and sit on the fan's outer corner (`.hand-swap` in `index.css`).
+- **The hand bar's left panel is two counters and the deck.** One row holds the timeline
+  length and, beside it, the streak, which is absent at zero; under it is the deck pile and
+  its "deck" caption. The row is the button that opens the stats and takes the `stats` hint's
+  glow. The panel used to lead with a gold fan icon carrying the number of cards in hand and
+  a "cards left" label, and the counter led a miss by dropping that number at the red flash.
+  The maintainer removed all of it once the hand card grew to 184px: the fanned hand beside
+  the panel already shows the cards, and five things in a 100px column read as clutter. A
+  hand of more than five (Custom only) therefore shows no count on the bar; the stats popup
+  still has it. Don't bring the number back without asking.
 - **The hand bar is laid out on the screen, not on the board column** (`.hand-grid` in
   `index.css`): the hand card is centred on the screen, the counter is centred in the space on
   its left and the swap button, with the pass button above it, sits in the space on its right,
   at every width. Under the counter, in the same column, is the deck pile (46px square: the art of the
   deck's next three cards as 40px tiles, each stepping 3px down and left of the one above,
   with the count on a gold badge at the pile's top right corner, the same accent as the pass
-  count; an ink badge was tried and read as black, outside the theme): about 164px of the
-  card's 184 with the counter above it and the "deck" caption below. The count was first a plate over the top tile, on a 30px
+  count; an ink badge was tried and read as black, outside the theme): about 120px of the
+  card's 184 with the counter row above it and the "deck" caption below. The count was first a plate over the top tile, on a 30px
   tile straight below one another; it hid most of the art, and the maintainer asked for the
   corner badge, the larger tiles and the down-left step. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left

@@ -1,10 +1,8 @@
 import React from 'react';
 import { fireEvent, render, screen, within } from '@testing-library/react';
-import { DeckPile, GameInfoCompact, deckCountLabel } from './PlayerInfo';
-import { HistoricalEvent, PlacementResult, Player } from '../types';
+import PlayerInfo, { DeckPile, GameInfoCompact, deckCountLabel } from './PlayerInfo';
+import { HistoricalEvent, Player } from '../types';
 import { getImageUrl } from '../utils/cloudinaryImage';
-
-type InFlight = { placementInFlight: PlacementResult | null };
 
 // jsdom has no matchMedia; framer's useReducedMotion reads it.
 beforeEach(() => {
@@ -43,65 +41,103 @@ const playerWithHand = (size: number): Player => ({
   placementHistory: [],
 });
 
-const placement = (success: boolean): PlacementResult => ({
-  success,
-  event: card(0),
-  correctPosition: 0,
-  attemptedPosition: 1,
-});
-
-const renderWithHand = (size: number, animation: Partial<InFlight> = {}) =>
+const renderPanel = (props: Partial<React.ComponentProps<typeof GameInfoCompact>> = {}) =>
   render(
     <GameInfoCompact
-      currentPlayer={playerWithHand(size)}
+      currentPlayer={playerWithHand(5)}
       isMultiplayer={false}
-      // Distinct from any hand size under test, and from each other: the hand count, the
-      // timeline length and the streak all render as bare text in this widget.
+      // Distinct from each other and from the pile's count, which is above its cap and so
+      // reads "30+": all three render as bare text in this panel.
       timelineLength={99}
       currentStreak={42}
-      // Above the cap, so the pile reads "30+" and never collides with a number under test.
       deck={deckOf(77)}
-      {...animation}
+      {...props}
     />
   );
 
-const fannedCards = () => screen.getAllByTestId('hand-card');
+describe('the hand bar counters', () => {
+  it('show the timeline length and the streak on one line', () => {
+    renderPanel();
+    const row = screen.getByRole('button');
+    expect(within(row).getByTestId('timeline-counter')).toHaveTextContent('99');
+    expect(within(row).getByTestId('streak-counter')).toHaveTextContent('42');
+    expect(row).toHaveClass('flex', 'items-center');
+    expect(row).not.toHaveClass('flex-col');
+  });
 
-describe('GameInfoCompact hand counter', () => {
+  it('leave the streak out at zero', () => {
+    renderPanel({ currentStreak: 0 });
+    expect(screen.queryByTestId('streak-counter')).toBeNull();
+    expect(screen.getByTestId('timeline-counter')).toBeInTheDocument();
+  });
+
+  it('bring the streak in with the first correct placement', () => {
+    renderPanel({ currentStreak: 1 });
+    expect(screen.getByTestId('streak-counter')).toHaveTextContent('1');
+  });
+
+  it('no longer show the hand: no fan icon, no count and no "cards left"', () => {
+    renderPanel();
+    expect(screen.queryAllByTestId('hand-card')).toHaveLength(0);
+    expect(screen.queryByText('cards left')).toBeNull();
+    expect(screen.queryByText('5')).toBeNull();
+  });
+
+  it('open the stats, and say what they hold to a screen reader', () => {
+    const onStatsClick = jest.fn();
+    renderPanel({ onStatsClick });
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Game stats: 99 in the timeline, streak 42' })
+    );
+    expect(onStatsClick).toHaveBeenCalledTimes(1);
+  });
+
+  it('glow for the stats hint', () => {
+    renderPanel({ nudge: 'stats' });
+    expect(screen.getByRole('button')).toHaveClass('animate-hint-glow', 'bg-border');
+  });
+
+  it('give way to the player’s name in multiplayer', () => {
+    renderPanel({ isMultiplayer: true });
+    expect(screen.queryByRole('button')).toBeNull();
+    expect(screen.getByText('Player 1')).toBeInTheDocument();
+    expect(screen.getByTestId('deck-pile')).toBeInTheDocument();
+  });
+});
+
+// The fan is still drawn by the players list (the default export), one small icon a player.
+describe('the hand fan icon', () => {
+  const renderList = (size: number) =>
+    render(
+      <PlayerInfo
+        players={[playerWithHand(size)]}
+        currentPlayerIndex={0}
+        turnNumber={1}
+        roundNumber={1}
+      />
+    );
+  const fannedCards = () => screen.getAllByTestId('hand-card');
+
   it.each([1, 2, 3, 4, 5])('draws one card per card in hand (%i)', (size) => {
-    renderWithHand(size);
+    renderList(size);
     expect(fannedCards()).toHaveLength(size);
     expect(screen.getByText(String(size))).toBeInTheDocument();
   });
 
   it('caps the fan at five cards but still shows the true count', () => {
-    renderWithHand(7);
+    renderList(7);
     expect(fannedCards()).toHaveLength(5);
     expect(screen.getByText('7')).toBeInTheDocument();
   });
 
   it('draws no cards when the hand empties', () => {
-    renderWithHand(0);
+    renderList(0);
     // queryAllByTestId, not the getAllByTestId helper: that one throws on zero matches.
     expect(screen.queryAllByTestId('hand-card')).toHaveLength(0);
   });
 
-  it('mutes the number when there is no card behind it', () => {
-    renderWithHand(0);
-    const zero = screen.getByText('0');
-    expect(zero).toHaveClass('text-text-muted');
-    expect(zero).not.toHaveClass('text-white');
-  });
-
-  it('keeps the number light while it sits on a card', () => {
-    renderWithHand(3);
-    const three = screen.getByText('3');
-    expect(three).toHaveClass('text-white');
-    expect(three).not.toHaveClass('text-text-muted');
-  });
-
   it('keeps the whole fan inside the 24x24 viewBox', () => {
-    renderWithHand(5);
+    renderList(5);
     const halfStroke = 0.75;
 
     fannedCards().forEach((rect) => {
@@ -122,47 +158,21 @@ describe('GameInfoCompact hand counter', () => {
   });
 });
 
-describe('GameInfoCompact leads a miss', () => {
-  it('drops a card as soon as the miss animation starts', () => {
-    renderWithHand(5, { placementInFlight: placement(false) });
-    expect(fannedCards()).toHaveLength(4);
-    expect(screen.getByText('4')).toBeInTheDocument();
-  });
-
-  it('does not lead a correct placement', () => {
-    renderWithHand(5, { placementInFlight: placement(true) });
-    expect(fannedCards()).toHaveLength(5);
-    expect(screen.getByText('5')).toBeInTheDocument();
-  });
-
-  it('stops leading once the animation settles and the hand has really shrunk', () => {
-    renderWithHand(4, { placementInFlight: null });
-    expect(fannedCards()).toHaveLength(4);
-    expect(screen.getByText('4')).toBeInTheDocument();
-  });
-
-  it('shows the empty-hand state while the last card is still travelling', () => {
-    renderWithHand(1, { placementInFlight: placement(false) });
-    expect(screen.queryAllByTestId('hand-card')).toHaveLength(0);
-    expect(screen.getByText('0')).toHaveClass('text-text-muted');
-  });
-});
-
 describe('the deck pile', () => {
   const pile = () => screen.getByTestId('deck-pile');
   const art = () => screen.queryAllByTestId('deck-card');
 
-  it('sits under the hand counter', () => {
-    renderWithHand(5);
+  it('sits under the counters', () => {
+    renderPanel();
     expect(pile()).toHaveTextContent('30+');
-    const counter = screen.getByText('cards left');
+    const counter = screen.getByTestId('timeline-counter');
     expect(counter.compareDocumentPosition(pile()) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     // Not part of the button that opens the stats.
     expect(screen.getByRole('button')).not.toContainElement(pile());
   });
 
   it('is captioned "deck", under the pile and outside it', () => {
-    renderWithHand(5);
+    renderPanel();
     const caption = screen.getByText('deck');
     expect(pile()).not.toContainElement(caption);
     expect(pile().compareDocumentPosition(caption) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();

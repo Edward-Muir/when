@@ -4,7 +4,7 @@ import { useDndContext } from '@dnd-kit/core';
 import { RefreshCw, SkipForward } from 'lucide-react';
 import { HistoricalEvent, Player } from '../types';
 import { GameHintKey } from '../utils/playerStorage';
-import { passesLeft } from '../utils/gameLogic';
+import { PASS_STREAK, passProgress, passesAwarded, passesLeft } from '../utils/gameLogic';
 import { useHaptics } from '../hooks/useHaptics';
 import DraggableCard from './DraggableCard';
 import Card from './Card';
@@ -180,6 +180,88 @@ function handButtonClass(nudged: boolean): string {
     disabled:opacity-40 disabled:cursor-not-allowed
     active:scale-[0.92] active:shadow-none
     transition-[transform,background-color,box-shadow] duration-100 ${fill}`;
+}
+
+/** The ring's circle: on the 44px button's 1px border, 2.5px wide. */
+const RING_RADIUS = 20.75;
+const RING_LENGTH = 2 * Math.PI * RING_RADIUS;
+/** The space between two segments, along the circle. */
+const RING_GAP = 7;
+/** Where the first segment starts, clockwise from twelve o'clock: under the count badge. */
+const RING_START_DEG = 45;
+/** How long a completed ring stays lit before it clears. */
+const RING_FULL_MS = 420;
+
+/**
+ * Progress to the next pass, drawn on the Pass button's own border: one segment for each
+ * correct placement in a row, `PASS_STREAK` in all. It makes the earning rule visible where
+ * the pass is spent, and it is why the button is not plain.
+ *
+ * - The gaps sit at the count badge's corner and at thirds from it, so the badge covers a
+ *   gap, not a segment, and the last segment to light runs up to the badge it is about to
+ *   raise.
+ * - When a pass is earned the history's run is back at zero, so the ring would simply
+ *   empty. It is held full for a beat first, in step with the badge's pop, so the third
+ *   placement is seen to complete it.
+ * - A sibling of the button, like the badge: a spent or disabled button still shows how
+ *   close the next pass is.
+ * - It follows pass progress, not a streak tier, so it lives here and not in
+ *   `streakFeedback.ts`. Colour only: no transform, and nothing to do under reduced motion
+ *   but skip the beat.
+ */
+const PassRing: React.FC<{ history: readonly boolean[]; still: boolean }> = ({
+  history,
+  still,
+}) => {
+  const progress = passProgress(history);
+  const awarded = passesAwarded(history);
+  const previous = useRef(awarded);
+  const [full, setFull] = useState(false);
+  useEffect(() => {
+    const earned = awarded > previous.current;
+    previous.current = awarded;
+    if (!earned || still) return undefined;
+    setFull(true);
+    const timer = window.setTimeout(() => setFull(false), RING_FULL_MS);
+    return () => window.clearTimeout(timer);
+  }, [awarded, still]);
+  const lit = full ? PASS_STREAK : progress;
+  const step = RING_LENGTH / PASS_STREAK;
+
+  return (
+    <svg
+      data-testid="pass-ring"
+      data-lit={lit}
+      aria-hidden
+      viewBox="0 0 44 44"
+      fill="none"
+      className="pointer-events-none absolute inset-0 h-11 w-11"
+    >
+      {Array.from({ length: PASS_STREAK }, (_, i) => (
+        <circle
+          key={i}
+          data-testid="pass-ring-segment"
+          data-lit={i < lit}
+          cx="22"
+          cy="22"
+          r={RING_RADIUS}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeDasharray={`${step - RING_GAP} ${RING_LENGTH - step + RING_GAP}`}
+          strokeDashoffset={-(i * step + RING_GAP / 2)}
+          transform={`rotate(${RING_START_DEG - 90} 22 22)`}
+          stroke={i < lit ? 'var(--color-accent)' : 'var(--color-border)'}
+          className="transition-[stroke] duration-200"
+        />
+      ))}
+    </svg>
+  );
+};
+
+/** What a screen reader hears for the Pass button: what is left, and what earns the next. */
+function passStatus(passes: number, toNext: number): string {
+  const left = passes === 1 ? '1 pass left' : `${passes} passes left`;
+  return `${left}, ${toNext} more in a row for another`;
 }
 
 /**
@@ -367,8 +449,8 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           title. 44px each, the minimum touch target, and 12px apart. Pass is the upper one: it
           cannot be undone, so it sits further from a resting thumb than Swap, which can. */}
       <div className="hand-swap flex flex-col items-center justify-center gap-3 pointer-events-auto">
-        {/* The badge is a sibling of the button, not a child, so a disabled button's dimming
-            does not take the count with it. */}
+        {/* The ring and the badge are siblings of the button, not children, so a disabled
+            button's dimming does not take them with it. */}
         <div className="relative flex">
           <button
             onClick={pass}
@@ -379,9 +461,13 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           >
             <SkipForward className={`w-5 h-5 ${passNudge ? 'text-white' : 'text-text'}`} />
           </button>
+          {/* Not while the hint has the button filled gold: gold on gold says nothing. */}
+          {!passNudge && (
+            <PassRing history={currentPlayer.placementHistory} still={reduceMotion === true} />
+          )}
           <PassBadge count={passes} still={reduceMotion === true} />
           <span id={passesId} className="sr-only">
-            {passes === 1 ? '1 pass left' : `${passes} passes left`}
+            {passStatus(passes, PASS_STREAK - passProgress(currentPlayer.placementHistory))}
           </span>
         </div>
 

@@ -116,9 +116,13 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   a correct placement). That is React's development build diffing the `state` prop for its
   performance track (`addObjectDiffToProperties` in a CPU profile), not the app. Time
   animations against `npm run build` served statically, never against `npm start`.
-- **Bottom-left counters:** big number = cards left; 📏 = timeline length, including the
-  starting card (so one more than the score); ⚡ = current streak. Tapping the counter opens
-  the "Timeline Stats" popup.
+- **Bottom-left counters:** 📏 = timeline length, including the starting card (so one more
+  than the score), `[data-testid="timeline-counter"]`; ⚡ = current streak,
+  `[data-testid="streak-counter"]`, absent while the streak is 0. The row is one button,
+  `aria-label` starting "Game stats", and tapping it opens the "Timeline Stats" popup. There
+  is no hand count on the bar any more: count `[data-hand-fan]` plus one, or open the popup.
+- **Pass ring:** `[data-testid="pass-ring"]` on the Pass button, `data-lit` = segments lit
+  (0 to 2, or 3 for under half a second when a pass is earned).
 - **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
   label under the "When?" wordmark at the top left of the board in game (`div[title]`). A
   game has no top bar: the only control is `[aria-label="Go home"]`, top right.
@@ -255,7 +259,7 @@ A tall viewport (height ≥ 1200) also helps by fitting more markers at once.
 ## 7. Modes, scoring & the daily
 
 - **Game phases:** `loading → modeSelect → transitioning → playing → gameOver`.
-- **One rule-set for every game:** a hand of 5, shown as "cards left". Correct
+- **One rule-set for every game:** a hand of 5, shown as the fanned cards in the hand bar. Correct
   placement → the card stays, a replacement is drawn, streak +1. Wrong placement →
   a grey tombstone at the card's true slot, hand −1, streak resets. **Game over when
   the hand is empty** (5 misses), or when a small deck runs dry ("Theme Cleared!" /

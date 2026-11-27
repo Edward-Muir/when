@@ -71,13 +71,15 @@ describe('the pass button', () => {
   it('shows the passes left, and says so to a screen reader', () => {
     setup();
     expect(count()).toHaveTextContent(String(STARTING_PASSES));
-    expect(passButton()).toHaveAccessibleDescription(`${STARTING_PASSES} passes left`);
+    expect(passButton()).toHaveAccessibleDescription(
+      `${STARTING_PASSES} passes left, 3 more in a row for another`
+    );
   });
 
   it('counts down as passes are spent and up as streaks earn them', () => {
     const { rerender } = setup({ currentPlayer: player([a, b, c], { passesUsed: 2 }) });
     expect(count()).toHaveTextContent('1');
-    expect(passButton()).toHaveAccessibleDescription('1 pass left');
+    expect(passButton()).toHaveAccessibleDescription('1 pass left, 3 more in a row for another');
 
     rerender({
       currentPlayer: player([a, b, c], { passesUsed: 2, placementHistory: [true, true, true] }),
@@ -144,6 +146,72 @@ describe('the pass button', () => {
     setup();
     const position = passButton().compareDocumentPosition(swapButton());
     expect(position & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+  });
+});
+
+describe('the pass ring', () => {
+  const ring = () => screen.getByTestId('pass-ring');
+  const lit = () =>
+    screen.getAllByTestId('pass-ring-segment').filter((s) => s.getAttribute('data-lit') === 'true');
+  const withHistory = (placementHistory: boolean[], extra: Partial<Player> = {}) =>
+    player([a, b, c], { placementHistory, ...extra });
+
+  it('has three segments, none lit before a correct placement', () => {
+    setup();
+    expect(screen.getAllByTestId('pass-ring-segment')).toHaveLength(3);
+    expect(lit()).toHaveLength(0);
+  });
+
+  it('lights one segment for each correct placement in a row', () => {
+    const { rerender } = setup({ currentPlayer: withHistory([true]) });
+    expect(lit()).toHaveLength(1);
+    expect(passButton()).toHaveAccessibleDescription(
+      `${STARTING_PASSES} passes left, 2 more in a row for another`
+    );
+
+    rerender({ currentPlayer: withHistory([true, true]) });
+    expect(lit()).toHaveLength(2);
+  });
+
+  it('empties on a miss', () => {
+    const { rerender } = setup({ currentPlayer: withHistory([true, true]) });
+    rerender({ currentPlayer: withHistory([true, true, false]) });
+    expect(lit()).toHaveLength(0);
+  });
+
+  it('shows full for a beat when the third in a row earns a pass, then clears', () => {
+    const { rerender } = setup({ currentPlayer: withHistory([true, true]) });
+    rerender({ currentPlayer: withHistory([true, true, true]) });
+    expect(lit()).toHaveLength(3);
+    expect(count()).toHaveTextContent(String(STARTING_PASSES + 1));
+
+    act(() => jest.advanceTimersByTime(500));
+    expect(lit()).toHaveLength(0);
+  });
+
+  it('clears at once under reduced motion', () => {
+    setReducedMotion(true);
+    const { rerender } = setup({ currentPlayer: withHistory([true, true]) });
+    rerender({ currentPlayer: withHistory([true, true, true]) });
+    expect(lit()).toHaveLength(0);
+  });
+
+  it('is not full on a game that opens with a pass already earned', () => {
+    // A resumed daily: the run was made before this screen mounted.
+    setup({ currentPlayer: withHistory([true, true, true, true]) });
+    expect(lit()).toHaveLength(1);
+  });
+
+  it('still shows with no pass left, outside the dimmed button', () => {
+    setup({ currentPlayer: withHistory([true], { passesUsed: STARTING_PASSES }) });
+    expect(passButton()).toBeDisabled();
+    expect(passButton()).not.toContainElement(ring());
+    expect(lit()).toHaveLength(1);
+  });
+
+  it('steps aside while the hint has the button filled gold', () => {
+    setup({ nudge: 'pass' });
+    expect(screen.queryByTestId('pass-ring')).toBeNull();
   });
 });
 

@@ -11,6 +11,7 @@ import {
   seededRandom,
   addToHand,
   passesAwarded,
+  passProgress,
   passesLeft,
   passedCount,
   STARTING_PASSES,
@@ -373,6 +374,20 @@ describe('passes', () => {
     expect(passesAwarded(run(3, 2))).toBe(1);
     expect(passesAwarded(run(3, 3))).toBe(2);
     expect(passesAwarded(run(5, 4))).toBe(2);
+  });
+
+  it('measures progress to the next pass as the run so far, less the passes it has earned', () => {
+    expect(passProgress([])).toBe(0);
+    expect(passProgress(run(1))).toBe(1);
+    expect(passProgress(run(2))).toBe(2);
+    expect(passProgress(run(3))).toBe(0);
+    expect(passProgress(run(4))).toBe(1);
+    expect(passProgress(run(8))).toBe(2);
+  });
+
+  it('starts progress again after a miss, and has none on one', () => {
+    expect(passProgress(run(2, 1))).toBe(1);
+    expect(passProgress([true, true, false])).toBe(0);
   });
 
   it('leaves a player the starting passes, plus what they earned, less what they spent', () => {

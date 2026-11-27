@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimationControls, useReducedMotion } from 'framer-motion';
-import { HistoricalEvent, Player, PlacementResult } from '../types';
+import { HistoricalEvent, Player } from '../types';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import { Users, Ruler, Zap } from 'lucide-react';
 import { getStreakFeedback } from '../utils/streakFeedback';
@@ -129,36 +129,20 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) 
   );
 };
 
-// Enlarged hand icon for compact game info display
-const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
-  <div className="relative w-10 h-10">
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      className="w-10 h-10 text-accent"
-    >
-      <HandCardFan count={count} />
-    </svg>
-    <span
-      className={`absolute inset-0 flex items-center justify-center text-sm font-bold ${
-        // No card behind it at zero, so match the counters alongside; the shadow only
-        // exists to lift the number off a card.
-        count === 0 ? 'text-text-muted' : 'text-white drop-shadow-md'
-      }`}
-    >
-      {count}
-    </span>
-  </div>
-);
-
-// Streak lightning bolt indicator
+/**
+ * The streak, beside the timeline counter. Absent at zero: a fresh game, or one just after a
+ * miss, has no streak to show, and the bar is quieter without a "0". It pops in with the first
+ * correct placement, which is the keyed remount below doing what it does on every change.
+ */
 const StreakBolt: React.FC<{ streak: number }> = ({ streak }) => {
   const config = getStreakFeedback(streak);
+  if (streak <= 0) return null;
 
   return (
-    <div className={`flex items-center gap-1 ${config.boltColorClass}`}>
+    <div
+      data-testid="streak-counter"
+      className={`flex items-center gap-1 ${config.boltColorClass}`}
+    >
       <motion.div
         key={streak}
         initial={{ scale: 1.3 }}
@@ -166,8 +150,8 @@ const StreakBolt: React.FC<{ streak: number }> = ({ streak }) => {
         transition={{ type: 'spring', stiffness: 400, damping: 15 }}
         className={`flex items-center gap-0.5 ${config.boltAnimationClass}`}
       >
-        <Zap className={`w-3.5 h-3.5 ${config.boltFilled ? 'fill-current' : ''}`} />
-        <span className="font-mono text-xs font-bold">{streak}</span>
+        <Zap className={`w-4 h-4 ${config.boltFilled ? 'fill-current' : ''}`} />
+        <span className="font-mono text-sm font-bold">{streak}</span>
       </motion.div>
     </div>
   );
@@ -301,16 +285,24 @@ interface GameInfoCompactProps {
   currentPlayer: Player;
   isMultiplayer: boolean;
   timelineLength: number;
-  /** The cards left to draw, next first: the deck pile under the counter shows them. */
+  /** The cards left to draw, next first: the deck pile under the counters shows them. */
   deck: HistoricalEvent[];
   onStatsClick?: () => void;
   currentStreak?: number;
-  /** The onboarding hint on screen: `stats` glows this counter. */
+  /** The onboarding hint on screen: `stats` glows the counters. */
   nudge?: GameHintKey | null;
-  /** The placement currently animating, or null once it has settled. Lets a miss lead. */
-  placementInFlight?: PlacementResult | null;
 }
 
+/**
+ * The hand bar's left panel: the timeline length and the streak on one line, and the deck
+ * under them.
+ *
+ * It used to lead with a fan icon carrying the number of cards in hand and a "cards left"
+ * label. The maintainer removed both once the hand card grew: the fanned hand beside this
+ * panel already shows the cards, and the panel had become crowded. The number is still in the
+ * stats popup these counters open. A hand of more than five (Custom only) therefore shows no
+ * count on the bar, since the fan stops at five.
+ */
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   currentPlayer,
   isMultiplayer,
@@ -319,64 +311,36 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   onStatsClick,
   currentStreak = 0,
   nudge = null,
-  placementInFlight = null,
 }) => {
-  const showTimelineStats = !isMultiplayer;
-
-  // A miss is decided at the red flash, but the hand does not actually shrink until the
-  // tombstone has finished travelling to its true slot, 1.3-2.1s later (the stage-3
-  // timeout in useWhenGame's placeCard). Lead the state so the card leaves this counter
-  // with the flash, like the streak bolt beside it already does. The caller nulls this
-  // prop in the same setState that commits the shrunken hand, so the lead is withdrawn on
-  // the exact tick it stops being one — the number never double-counts or flickers.
-  const missInFlight = placementInFlight !== null && !placementInFlight.success;
-  const cardsLeft = Math.max(0, currentPlayer.hand.length - (missInFlight ? 1 : 0));
   // `bg-border` is not decoration: the button is transparent, and `animate-hint-glow` is
   // transform and filter only, so without a surface to swell there is nothing to see.
   const nudgeClass = nudge === 'stats' ? 'animate-hint-glow bg-border' : '';
 
-  const content = (
-    <>
-      {/* Player name (if multiplayer) */}
-      {isMultiplayer && (
-        <span className="text-sm font-medium text-text font-body">{currentPlayer.name}</span>
-      )}
-
-      {/* Hand count with enlarged icon */}
-      <HandCardsIconLarge count={cardsLeft} />
-      <span className="text-sm text-text font-body">cards left</span>
-
-      {/* Timeline stats + streak for single-player */}
-      {showTimelineStats && (
-        <div className="flex items-center gap-2 text-xs text-text-muted font-body">
-          <div className="flex items-center gap-1">
-            <Ruler className="w-3.5 h-3.5" />
-            <span className="font-mono">{timelineLength}</span>
-          </div>
-          <StreakBolt streak={currentStreak} />
-        </div>
-      )}
-    </>
-  );
-
-  // The counter is a tappable button for single-player; the deck sits under it either way.
-  const counter = showTimelineStats ? (
+  // Single player: the two counters, as the button that opens the stats. Every `button` is
+  // at least 44px tall (index.css), which is what makes one short row a fair touch target.
+  // Multiplayer has no counters, only whose turn it is.
+  const counters = isMultiplayer ? (
+    <span className="text-sm font-medium text-text font-body">{currentPlayer.name}</span>
+  ) : (
     <button
       onClick={onStatsClick}
-      className={`flex flex-col items-center gap-0.5 px-2 py-1 -mx-2 rounded-md hover:bg-border/50 active:bg-border transition-colors cursor-pointer ${nudgeClass}`}
+      aria-label={`Game stats: ${timelineLength} in the timeline, streak ${currentStreak}`}
+      className={`flex items-center justify-center gap-2.5 px-2 -mx-2 rounded-md text-sm text-text-muted font-body active:bg-border transition-colors cursor-pointer ${nudgeClass}`}
     >
-      {content}
+      <span data-testid="timeline-counter" className="flex items-center gap-1">
+        <Ruler className="w-4 h-4" />
+        <span className="font-mono">{timelineLength}</span>
+      </span>
+      <StreakBolt streak={currentStreak} />
     </button>
-  ) : (
-    <div className="flex flex-col items-center gap-0.5">{content}</div>
   );
 
   return (
     <div className="flex flex-col items-center gap-2">
-      {counter}
+      {counters}
       {/* The pile and its name. The caption is outside the pile so it neither dips with it
           nor moves the point a card is dealt from, and it is hidden from a screen reader,
-          which has the pile's own label. Lower case and the same type as "cards left". */}
+          which has the pile's own label. */}
       <div className="flex flex-col items-center gap-0.5">
         <DeckPile deck={deck} />
         <span aria-hidden className="text-sm text-text font-body">

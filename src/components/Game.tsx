@@ -452,7 +452,6 @@ const Game: React.FC<GameProps> = ({
                     onStatsClick={() => setShowStatsPopup(true)}
                     currentStreak={state.currentStreak}
                     nudge={hints.active}
-                    placementInFlight={state.isAnimating ? state.lastPlacementResult : null}
                   />
                 </div>
 
