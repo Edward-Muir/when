@@ -805,3 +805,83 @@ three. Two are now retired and the third has its window, so the notes are gone w
 | `windmill-introduction`        | wrong-year      | Weedley 1185 is right; the clashing 1180 duplicates the report came from were since retired.               |
 | `maori-settlement-new-zealand` | wrong-year      | 1280 is defensible; the clash was its 1300 twin, retired above.                                            |
 | `human-genome-project`         | other           | Text is right (launched 1990). The double-helix art reads as 1953, so the card is in the art remake batch. |
+
+## 2026-10-18 dHash near-duplicate pass
+
+Found while building the deck factory's QC precheck (`scripts/factory/image-precheck.py`), whose
+64-bit dHash cache covers all 6,406 files in `when-images/downsampled_generated_images/`.
+Ordinary catalogue images sit 7 or more apart from their nearest neighbour; **14 pairs (28 images)
+sit within 5**. This pass checked each pair against the live Cloudinary assets, fetched at the
+`thumbnail` rung only (`c_fill,f_auto,g_auto,h_400,q_auto:good,w_400`, 16 fetches, 16 × 200), and
+looked at every picture. Nothing was changed: no art, no event data. Following
+[card-reports/](../card-reports/index.md#open-reports), the local file was not trusted to stand in
+for the live asset; each live thumbnail was also hashed and compared with its local file.
+
+**One live swap: `tunnelling-shield` (1818) shows Charles Darwin.** An old man with finches, a
+journal and specimen jars is the picture of the retired `darwin-evolution-origin`, whose local file
+is hash-identical. Marc Brunel's shield is not pictured anywhere. It is the only live card whose art
+is wrong; it is not on the October audit's list, which had no reason to suspect it because the
+duplicate lives on a retired card.
+
+**The headline pairs are false alarms.** `arpanet-created` and `khorezm-state` are two different
+live pictures (an ARPANET control room; a robed ruler over a domed city), each right for its card.
+`bosman-ruling-1995` (a player walking out of a stadium tunnel with boots) and `civil-rights-act`
+(the Capitol at sunset) are different pictures too: distance 5 is two dark, vignetted oil paintings
+sharing a coarse gradient, so **a dHash of 5 is not by itself proof of a duplicate**. The measured
+threshold of 6 holds for catching true duplicates, but anything between 1 and 5 needs eyes.
+
+| Pair (dHash distance)                                                    | Live `public_id`s                                                        | What the live pictures show                                                                     | Verdict                                                                                                           |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `arpanet-created` / `khorezm-state` (0)                                  | `arpanet-created_lxp13r` / `khorezm-state_gkrjzc`                        | ARPANET control room with a map on the wall / robed Khorezm ruler over a domed city             | **Fine.** The two _local_ files are byte-identical (the Khorezm picture), so local `arpanet-created.jpg` is wrong |
+| `bosman-ruling-1995` / `civil-rights-act` (5)                            | `bosman-ruling-1995_uihvgi` / `civil-rights-act_jhkyuh`                  | Footballer leaving a stadium tunnel / the Capitol at sunset                                     | **Fine.** Different pictures; false positive                                                                      |
+| `darwin-evolution-origin` (retired) / `tunnelling-shield` (0)            | `darwin-evolution-origin_khnye4` (not live) / `tunnelling-shield_xdw8jx` | Darwin with finches on both                                                                     | **Swap: `tunnelling-shield` shows Darwin.** Remake                                                                |
+| `aztec-tenochtitlan-founding` / `dante-divine-comedy` (retired) (0)      | `aztec-tenochtitlan-founding_wi3hqd` / not live                          | Eagle on a nopal cactus above Lake Texcoco                                                      | **Orphan only.** Live Aztec is right; Dante's retired record holds the Aztec picture                              |
+| `cyrus-cylinder` / `persian-empire-cyrus` (retired) (0)                  | `cyrus-cylinder_kylmmx` / not live                                       | Helmeted Achaemenid king reading a cuneiform scroll                                             | **Orphan only.** Live art fits                                                                                    |
+| `dias-cape-rounding` (retired) / `han-expansion` (0)                     | not live / `han-expansion_gemooq`                                        | Armoured Han cavalry commander with banners crossing a desert                                   | **Orphan only.** Live art fits                                                                                    |
+| `eyeglass-improvements` / `heavy-plow` (retired) (0)                     | `eyeglass-improvements_wxuvcp` / not live                                | Old scholar with round spectacles and an illuminated manuscript                                 | **Orphan only.** Live art fits; the retired plough record holds the eyeglass picture                              |
+| `louis-xiv-personal-rule` / `stirrup-east-asia` (retired) (0)            | `louis-xiv-personal-rule_n3rtvw` / not live                              | Louis XIV in coronation robes before bowing courtiers                                           | **Orphan only.** Live art fits                                                                                    |
+| `bantu-expansion` (retired) / `hard-disk-drive` (0)                      | not live / `hard-disk-drive_hpbfir`                                      | Live: an open hard-disk platter with actuator arm. Local file: an early stacked-platter cabinet | **Fine.** The live asset is a different render from its local file (distance 27); its subject is right            |
+| `dutch-golden-age-trade` (retired) / `polyethylene` (1)                  | not live / `polyethylene_kiyqwh`                                         | Chemist holding a flask of white solid                                                          | **Orphan only.** Live art fits                                                                                    |
+| `chosroes-i-anushirvan` / `chosroes-i-anushirvan-full` (1)               | `chosroes-i-anushirvan_bdt52a` / no record                               | Crowned king enthroned between fire bowls                                                       | **Orphan only.** `-full` is a stray variant file                                                                  |
+| `basilica-cistern-built` / `basilica-cistern-built-v2` (0)               | `basilica-cistern-built` / no record                                     | Workers raising a column in the cistern                                                         | **Orphan only.** `-v2` is a stray duplicate                                                                       |
+| `tchaikovsky-swan-lake` / `Generated Image April 04, 2026 - 10_21AM` (0) | `tchaikovsky-swan-lake_xczwfe` / no record                               | Ballerina in white with swan corps                                                              | **Orphan only.** The other file is an unrenamed download                                                          |
+| `dover-calais-submarine-cable` / `_stale_unused_image` (0)               | `dover-calais-submarine-cable_xryx5b` / no record                        | Cable ship paying out armoured cable, Dover cliffs behind                                       | **Orphan only.** Live art fits; the other file is a stale leftover                                                |
+
+**"Retired" means in `deprecated.json`**, which is absent from the manifest, so those records are
+unreachable in play. Every "orphan only" pair is a leftover file or a retired card that kept a
+duplicate of a live card's art; none affects a player. For the orphans, the live thumbnail's hash
+equals its own local file's (or sits within 1 of it), so the live card and its local file agree.
+
+### Recommended remake list (1)
+
+| Card                | Why                                                                                                     | Brief for the scene                                                                                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `tunnelling-shield` | Live art is Darwin and his finches, a swap before upload: the local file already held the wrong picture | Marc Brunel's shield: an iron frame of compartments with miners cutting soft ground beneath the Thames, lantern-lit; no portraits, and nothing that needs a caption |
+
+When it is remade, follow the card-report precedent: generate it through the
+`--remake` scene path, keep the replaced source in `when-images/_replaced/`, delete the old
+`tunnelling-shield_xdw8jx` asset (checked: no other event's `image_url` points at it), and
+re-extract its colour with `extract_event_colors.py --force --slugs tunnelling-shield`, because the
+baked `#24201e` came from the Darwin picture.
+
+### Local-file drift to know about
+
+These do not reach players, but they are traps for anyone re-uploading from `when-images`:
+
+- Local `arpanet-created.jpg` is the Khorezm picture, byte-identical to `khorezm-state.jpg`. The
+  live ARPANET asset is right. Re-uploading the local file would **create** a swap.
+- Local `hard-disk-drive.jpg` and `civil-rights-act.jpg` are different renders from their live
+  assets (distances 27 and 25), and `bantu-expansion.jpg` duplicates the former.
+- Most of the 14 pairs involve files for retired cards (`heavy-plow`, `stirrup-east-asia`,
+  `dante-divine-comedy`, and others) that still sit in `downsampled_generated_images/`, so the
+  factory's precheck will keep reporting them. Excluding retired slugs from its catalogue hash
+  would silence these without hiding a real swap.
+
+### What this pass did not cover
+
+It looked only at pairs within a distance of 5. A swap whose duplicate lives on a card that was
+itself remade, or an off-by-one rename whose partner picture was never generated, would not show
+here. The cheap next lead stays the one in
+[card-reports/](../card-reports/index.md#open-reports): look at the alphabetical neighbours of
+`tunnelling-shield` (`tunnel-boring-machine` and its neighbours in the local file list) before
+trusting that this is a single card.
