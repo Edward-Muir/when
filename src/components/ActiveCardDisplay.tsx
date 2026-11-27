@@ -189,8 +189,73 @@ const RING_LENGTH = 2 * Math.PI * RING_RADIUS;
 const RING_GAP = 7;
 /** Where the first segment starts, clockwise from twelve o'clock: under the count badge. */
 const RING_START_DEG = 45;
-/** How long a completed ring stays lit before it clears. */
-const RING_FULL_MS = 420;
+
+/**
+ * An earned pass, as it is shown: the ring completes, its gold runs round both sides of the
+ * button into the count badge, and the badge bursts as the count goes up.
+ *
+ * - `full`: all three segments lit, long enough to register that the third placement did it.
+ * - `gather`: the gold leaves the far side of the ring first and closes on the badge.
+ * - `pop`: the badge takes the new count, with a ring of gold thrown off it and a "+1".
+ *
+ * The count on the badge is held back until `pop`, so the number changes when the gold
+ * arrives and not half a second before it. Only what is shown lags: the pass itself is in the
+ * hand, and spendable, from the first frame.
+ */
+type EarnPhase = 'idle' | 'full' | 'gather' | 'pop';
+const EARN_FULL_MS = 170;
+const EARN_GATHER_MS = 330;
+const EARN_POP_MS = 750;
+
+/**
+ * Walks the phases above each time the history earns a pass. Mounting with passes already
+ * earned (a resumed daily) is not an earn. Under reduced motion it never leaves `idle`: the
+ * count simply changes.
+ *
+ * The earn is noticed during render, not in an effect. An effect runs after the commit that
+ * brought the new history, and that commit would paint one frame of the finished state (the
+ * new count, an empty ring) before the animation began: the badge visibly jumped and jumped
+ * back. Setting state while rendering makes React render again before it paints.
+ */
+function usePassEarn(history: readonly boolean[], still: boolean): EarnPhase {
+  const awarded = passesAwarded(history);
+  const [seen, setSeen] = useState(awarded);
+  const [phase, setPhase] = useState<EarnPhase>('idle');
+  if (awarded !== seen) {
+    setSeen(awarded);
+    setPhase(awarded > seen && !still ? 'full' : 'idle');
+  }
+  // One value for the whole of one earn: it changes when an earn starts and when it is over,
+  // and not as the phases advance, so the timers below are set once and left to run.
+  const earning = phase === 'idle' ? null : seen;
+  useEffect(() => {
+    if (earning === null) return undefined;
+    const timers = [
+      window.setTimeout(() => setPhase('gather'), EARN_FULL_MS),
+      window.setTimeout(() => setPhase('pop'), EARN_FULL_MS + EARN_GATHER_MS),
+      window.setTimeout(() => setPhase('idle'), EARN_FULL_MS + EARN_GATHER_MS + EARN_POP_MS),
+    ];
+    return () => timers.forEach((timer) => window.clearTimeout(timer));
+  }, [earning]);
+  return phase;
+}
+
+/** A point on the ring, `deg` clockwise from twelve o'clock. */
+function ringPoint(deg: number): string {
+  const rad = (deg * Math.PI) / 180;
+  const x = 22 + RING_RADIUS * Math.sin(rad);
+  const y = 22 - RING_RADIUS * Math.cos(rad);
+  return `${x.toFixed(2)} ${y.toFixed(2)}`;
+}
+
+/**
+ * The two halves of the ring, each drawn from the badge's corner round to the point opposite
+ * it. Drawn from the badge, so shortening one pulls its far end in towards the badge.
+ */
+const GATHER_ARCS = [1, 0].map(
+  (sweep) =>
+    `M ${ringPoint(RING_START_DEG)} A ${RING_RADIUS} ${RING_RADIUS} 0 0 ${sweep} ${ringPoint(RING_START_DEG + 180)}`
+);
 
 /**
  * Progress to the next pass, drawn on the Pass button's own border: one segment for each
@@ -200,32 +265,18 @@ const RING_FULL_MS = 420;
  * - The gaps sit at the count badge's corner and at thirds from it, so the badge covers a
  *   gap, not a segment, and the last segment to light runs up to the badge it is about to
  *   raise.
- * - When a pass is earned the history's run is back at zero, so the ring would simply
- *   empty. It is held full for a beat first, in step with the badge's pop, so the third
- *   placement is seen to complete it.
  * - A sibling of the button, like the badge: a spent or disabled button still shows how
  *   close the next pass is.
+ * - While a pass is being earned it is lit in full, then its gold is drawn off into the badge
+ *   (`EarnPhase`). The gold thickens as it shortens, so it reads as gathered, not erased.
  * - It follows pass progress, not a streak tier, so it lives here and not in
- *   `streakFeedback.ts`. Colour only: no transform, and nothing to do under reduced motion
- *   but skip the beat.
+ *   `streakFeedback.ts`.
  */
-const PassRing: React.FC<{ history: readonly boolean[]; still: boolean }> = ({
+const PassRing: React.FC<{ history: readonly boolean[]; phase: EarnPhase }> = ({
   history,
-  still,
+  phase,
 }) => {
-  const progress = passProgress(history);
-  const awarded = passesAwarded(history);
-  const previous = useRef(awarded);
-  const [full, setFull] = useState(false);
-  useEffect(() => {
-    const earned = awarded > previous.current;
-    previous.current = awarded;
-    if (!earned || still) return undefined;
-    setFull(true);
-    const timer = window.setTimeout(() => setFull(false), RING_FULL_MS);
-    return () => window.clearTimeout(timer);
-  }, [awarded, still]);
-  const lit = full ? PASS_STREAK : progress;
+  const lit = phase === 'full' ? PASS_STREAK : phase === 'idle' ? passProgress(history) : 0;
   const step = RING_LENGTH / PASS_STREAK;
 
   return (
@@ -235,7 +286,7 @@ const PassRing: React.FC<{ history: readonly boolean[]; still: boolean }> = ({
       aria-hidden
       viewBox="0 0 44 44"
       fill="none"
-      className="pointer-events-none absolute inset-0 h-11 w-11"
+      className="pointer-events-none absolute inset-0 h-11 w-11 overflow-visible"
     >
       {Array.from({ length: PASS_STREAK }, (_, i) => (
         <circle
@@ -251,9 +302,23 @@ const PassRing: React.FC<{ history: readonly boolean[]; still: boolean }> = ({
           strokeDashoffset={-(i * step + RING_GAP / 2)}
           transform={`rotate(${RING_START_DEG - 90} 22 22)`}
           stroke={i < lit ? 'var(--color-accent)' : 'var(--color-border)'}
-          className="transition-[stroke] duration-200"
+          // The gold arrives softly and leaves at once: the gather below takes over from it.
+          className={i < lit ? 'transition-[stroke] duration-150' : ''}
         />
       ))}
+      {phase === 'gather' &&
+        GATHER_ARCS.map((d) => (
+          <motion.path
+            key={d}
+            data-testid="pass-ring-gather"
+            d={d}
+            stroke="var(--color-accent)"
+            strokeLinecap="round"
+            initial={{ pathLength: 1, strokeWidth: 2.5 }}
+            animate={{ pathLength: 0.02, strokeWidth: 5 }}
+            transition={{ duration: EARN_GATHER_MS / 1000, ease: [0.5, 0, 0.9, 0.4] }}
+          />
+        ))}
     </svg>
   );
 };
@@ -265,8 +330,8 @@ function passStatus(passes: number, toNext: number): string {
 }
 
 /**
- * The passes left, on the corner of the Pass button. It pops when a pass is earned, which is
- * the only announcement an earned pass gets. Transform only, like `StreakBolt`.
+ * The passes left, on the corner of the Pass button. It pops when the count rises, hard, as
+ * the gathered ring lands in it. Transform only, like `StreakBolt`.
  */
 const PassBadge: React.FC<{ count: number; still: boolean }> = ({ count, still }) => {
   const previous = useRef<number | null>(null);
@@ -280,15 +345,76 @@ const PassBadge: React.FC<{ count: number; still: boolean }> = ({ count, still }
       key={count}
       data-testid="pass-count"
       aria-hidden
-      initial={grew && !still ? { scale: 1.6 } : false}
+      initial={grew && !still ? { scale: 2.1 } : false}
       animate={{ scale: 1 }}
-      transition={{ type: 'spring', stiffness: 400, damping: 15 }}
-      className={`pointer-events-none absolute -top-1 right-0 flex h-4 min-w-4 items-center
+      // Firm enough that the rebound stays near full size: a looser spring shrank the badge
+      // to a dot on its way back.
+      transition={{ type: 'spring', stiffness: 520, damping: 24 }}
+      className={`pointer-events-none absolute -top-1 right-0 z-[1] flex h-4 min-w-4 items-center
         justify-center rounded-full px-1 font-body text-[10px] font-semibold leading-none
         ring-2 ring-bg ${tone}`}
     >
       {count}
     </motion.span>
+  );
+};
+
+/**
+ * What the badge throws off as the pass lands: a ring of gold opening out from it, and a
+ * "+1" that lifts away. Mounted only for the `pop` phase, at the badge's own corner. These two
+ * do fade, which nothing else on the button does: they are leaving, and they are outside any
+ * Modal, where the Android WebView's opacity flicker lives (docs/mobile-ios).
+ */
+const PassEarned: React.FC = () => (
+  <span
+    data-testid="pass-earned"
+    aria-hidden
+    className="pointer-events-none absolute -top-1 right-0 flex h-4 w-4 items-center justify-center"
+  >
+    <motion.span
+      className="absolute h-4 w-4 rounded-full border-2 border-accent"
+      initial={{ scale: 0.8, opacity: 0.9 }}
+      animate={{ scale: 3, opacity: 0 }}
+      transition={{ duration: 0.45, ease: 'easeOut' }}
+    />
+    <motion.span
+      className="absolute font-body text-xs font-bold text-accent"
+      initial={{ y: -6, scale: 0.5, opacity: 0 }}
+      animate={{ y: [-6, -20, -26], scale: [0.5, 1.25, 1], opacity: [0, 1, 0] }}
+      transition={{ duration: EARN_POP_MS / 1000, times: [0, 0.3, 1], ease: 'easeOut' }}
+    >
+      +1
+    </motion.span>
+  </span>
+);
+
+/**
+ * Everything on the Pass button that is not the button: the progress ring, the count badge,
+ * and the moment a pass is earned. Siblings of the button, not children, so a disabled
+ * button's dimming does not take them with it. A component of its own so the earn's timers
+ * and its lagging count stay out of `ActiveCardDisplay`.
+ */
+const PassStatus: React.FC<{ player: Player; nudged: boolean; still: boolean }> = ({
+  player,
+  nudged,
+  still,
+}) => {
+  const phase = usePassEarn(player.placementHistory, still);
+  const { haptics } = useHaptics();
+  useEffect(() => {
+    if (phase === 'pop') haptics.light();
+  }, [phase, haptics]);
+  // The count the badge shows: one short of the truth until the gold reaches it.
+  const arriving = phase === 'full' || phase === 'gather';
+  const shown = Math.max(0, passesLeft(player) - (arriving ? 1 : 0));
+
+  return (
+    <>
+      {/* Not while the hint has the button filled gold: gold on gold says nothing. */}
+      {!nudged && <PassRing history={player.placementHistory} phase={phase} />}
+      <PassBadge count={shown} still={still} />
+      {phase === 'pop' && <PassEarned />}
+    </>
   );
 };
 
@@ -461,11 +587,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           >
             <SkipForward className={`w-5 h-5 ${passNudge ? 'text-white' : 'text-text'}`} />
           </button>
-          {/* Not while the hint has the button filled gold: gold on gold says nothing. */}
-          {!passNudge && (
-            <PassRing history={currentPlayer.placementHistory} still={reduceMotion === true} />
-          )}
-          <PassBadge count={passes} still={reduceMotion === true} />
+          <PassStatus player={currentPlayer} nudged={passNudge} still={reduceMotion === true} />
           <span id={passesId} className="sr-only">
             {passStatus(passes, PASS_STREAK - passProgress(currentPlayer.placementHistory))}
           </span>

@@ -346,13 +346,23 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
   placement in a row. It exists because the button looked plain and the earning rule was
   nowhere on screen; the alternative, a gold-filled button, was passed over because gold fill
   is how a hint points at a button. The gaps sit under the count badge and at thirds from it,
-  so the badge hides a gap and the last segment runs up to the badge it is about to raise.
-  When a pass lands the run is back at zero, so the ring is held full for 0.42s before it
-  clears. It stays visible on a spent or disabled button, and steps aside while the pass
-  hint has the button filled gold.
-- **An earned pass is announced by the ring completing and the badge popping**, nothing more.
-  Both follow pass progress, not a streak tier, so they live in `ActiveCardDisplay` and not
-  in `streakFeedback.ts`.
+  so the badge hides a gap and the last segment runs up to the badge it is about to raise. It
+  stays visible on a spent or disabled button, and steps aside while the pass hint has the
+  button filled gold.
+- **An earned pass is a small event of its own** (`usePassEarn`, `EarnPhase`), in three
+  beats: the ring shows complete (170 ms); its gold runs round both sides of the button into
+  the count badge, thickening as it shortens (330 ms); the badge takes the new count at twice
+  its size and settles, throwing off a ring of gold and a "+1" that lifts away. The first
+  version only held the ring full and then emptied it, and the maintainer asked for the gold
+  to be seen gathering into the "+1". Three things in it are deliberate:
+  - **The badge's count is held back until the gold lands.** Only the display lags; the pass
+    is spendable, and announced to a screen reader, from the first frame.
+  - **The earn is noticed during render, not in an effect.** An effect let one frame of the
+    finished state paint first, and the badge jumped to the new count and back.
+  - **The badge's spring is firm** (damping 24). A looser one shrank it to a dot on the
+    rebound.
+    It follows pass progress, not a streak tier, so it lives in `ActiveCardDisplay` and not in
+    `streakFeedback.ts`. Under reduced motion the count simply changes.
 - **No warning is shown when a pass forfeits a theme clear.** It is stated on How to Play only.
 
 ## Tombstones

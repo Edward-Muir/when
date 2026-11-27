@@ -122,7 +122,10 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   `aria-label` starting "Game stats", and tapping it opens the "Timeline Stats" popup. There
   is no hand count on the bar any more: count `[data-hand-fan]` plus one, or open the popup.
 - **Pass ring:** `[data-testid="pass-ring"]` on the Pass button, `data-lit` = segments lit
-  (0 to 2, or 3 for under half a second when a pass is earned).
+  (0 to 2, or 3 for the first 170 ms of an earn). While a pass is being earned,
+  `[data-testid="pass-count"]` shows the old count for half a second, then
+  `[data-testid="pass-earned"]` (the "+1") is up for 0.75 s: wait about 1.3 s after the
+  placement settles before reading the count.
 - **Theme name:** the Daily card's band on Home shows the day's theme, and so does the
   label under the "When?" wordmark at the top left of the board in game (`div[title]`). A
   game has no top bar: the only control is `[aria-label="Go home"]`, top right.

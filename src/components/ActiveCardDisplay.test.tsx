@@ -84,6 +84,8 @@ describe('the pass button', () => {
     rerender({
       currentPlayer: player([a, b, c], { passesUsed: 2, placementHistory: [true, true, true] }),
     });
+    // The badge takes the new count when the ring's gold reaches it, about half a second on.
+    act(() => jest.advanceTimersByTime(600));
     expect(count()).toHaveTextContent('2');
   });
 
@@ -179,27 +181,76 @@ describe('the pass ring', () => {
     expect(lit()).toHaveLength(0);
   });
 
-  it('shows full for a beat when the third in a row earns a pass, then clears', () => {
-    const { rerender } = setup({ currentPlayer: withHistory([true, true]) });
-    rerender({ currentPlayer: withHistory([true, true, true]) });
-    expect(lit()).toHaveLength(3);
-    expect(count()).toHaveTextContent(String(STARTING_PASSES + 1));
+  describe('when the third in a row earns a pass', () => {
+    const earn = () => {
+      const view = setup({ currentPlayer: withHistory([true, true]) });
+      view.rerender({ currentPlayer: withHistory([true, true, true]) });
+      return view;
+    };
+    const gathering = () => screen.queryAllByTestId('pass-ring-gather');
+    const earned = () => screen.queryByTestId('pass-earned');
 
-    act(() => jest.advanceTimersByTime(500));
-    expect(lit()).toHaveLength(0);
-  });
+    it('first shows the ring complete, the count not yet raised', () => {
+      earn();
+      expect(lit()).toHaveLength(3);
+      expect(count()).toHaveTextContent(String(STARTING_PASSES));
+      expect(gathering()).toHaveLength(0);
+    });
 
-  it('clears at once under reduced motion', () => {
-    setReducedMotion(true);
-    const { rerender } = setup({ currentPlayer: withHistory([true, true]) });
-    rerender({ currentPlayer: withHistory([true, true, true]) });
-    expect(lit()).toHaveLength(0);
+    it('then draws the gold off both sides of the ring towards the badge', () => {
+      earn();
+      act(() => jest.advanceTimersByTime(200));
+      expect(lit()).toHaveLength(0);
+      expect(gathering()).toHaveLength(2);
+      expect(count()).toHaveTextContent(String(STARTING_PASSES));
+      expect(earned()).toBeNull();
+    });
+
+    it('then raises the count as the gold lands, with a +1', () => {
+      earn();
+      act(() => jest.advanceTimersByTime(520));
+      expect(gathering()).toHaveLength(0);
+      expect(count()).toHaveTextContent(String(STARTING_PASSES + 1));
+      expect(earned()).toHaveTextContent('+1');
+    });
+
+    it('and leaves an empty ring and the new count behind', () => {
+      earn();
+      act(() => jest.advanceTimersByTime(1500));
+      expect(lit()).toHaveLength(0);
+      expect(earned()).toBeNull();
+      expect(count()).toHaveTextContent(String(STARTING_PASSES + 1));
+    });
+
+    it('lets the pass be spent at once, whatever the badge is still showing', () => {
+      const { onPass } = earn();
+      expect(passButton()).toBeEnabled();
+      fireEvent.click(passButton());
+      expect(onPass).toHaveBeenCalledTimes(1);
+    });
+
+    it('tells a screen reader the true count from the first frame', () => {
+      earn();
+      expect(passButton()).toHaveAccessibleDescription(
+        `${STARTING_PASSES + 1} passes left, 3 more in a row for another`
+      );
+    });
+
+    it('simply changes the count under reduced motion', () => {
+      setReducedMotion(true);
+      earn();
+      expect(lit()).toHaveLength(0);
+      expect(count()).toHaveTextContent(String(STARTING_PASSES + 1));
+      expect(gathering()).toHaveLength(0);
+      expect(earned()).toBeNull();
+    });
   });
 
   it('is not full on a game that opens with a pass already earned', () => {
     // A resumed daily: the run was made before this screen mounted.
     setup({ currentPlayer: withHistory([true, true, true, true]) });
     expect(lit()).toHaveLength(1);
+    expect(count()).toHaveTextContent(String(STARTING_PASSES + 1));
   });
 
   it('still shows with no pass left, outside the dimmed button', () => {
