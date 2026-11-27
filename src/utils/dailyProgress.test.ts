@@ -262,6 +262,33 @@ describe('the entry points', () => {
     expect(saved?.failed.map((f) => f.name)).toEqual(['h1']);
   });
 
+  it('saveDailyPlacement hands back the settled state, for the hand bar to show at once', () => {
+    const state = dealt();
+    const card = state.players[0].hand[0];
+    const result = calculatePlacementResult(state.timeline, card, 0);
+    const settled = saveDailyPlacement(state, card, 0, result, INDEX);
+
+    expect(settled).toEqual(settleDailyPlacement(state, card, 0, result, INDEX));
+  });
+
+  it('saveDailyPlacement settles a custom game too, without saving it', () => {
+    const state = dealt({ gameMode: 'suddenDeath' });
+    const card = state.players[0].hand[0];
+    const result = calculatePlacementResult(state.timeline, card, 0);
+
+    expect(saveDailyPlacement(state, card, 0, result, INDEX)).not.toBeNull();
+    expect(localStorage.getItem(KEY)).toBeNull();
+  });
+
+  it('saveDailyPlacement has nothing to settle in multiplayer', () => {
+    const state = dealt({ players: [dealt().players[0], { ...dealt().players[0], id: 1 }] });
+    const card = state.players[0].hand[0];
+    const result = calculatePlacementResult(state.timeline, card, 0);
+
+    expect(saveDailyPlacement(state, card, 0, result, INDEX)).toBeNull();
+    expect(localStorage.getItem(KEY)).toBeNull();
+  });
+
   it('saveDailyPlacement ignores a custom game', () => {
     const state = dealt({ gameMode: 'suddenDeath' });
     const card = state.players[0].hand[0];

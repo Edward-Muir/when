@@ -204,6 +204,13 @@ export interface WhenGameState {
    * (`themeOutcome.ts`). Optional for the same reason as `Player.passesUsed`.
    */
   passedCards?: HistoricalEvent[];
+  /**
+   * Single player, while a placement animates: the hand and deck the turn will settle into,
+   * worked out the moment the card is dropped. The hand bar shows these at once, so the next
+   * card is dealt while the placed one is still landing, not after it. Display only: `players`
+   * and `deck` keep the real state until the turn commits, which clears this.
+   */
+  settling?: { player: Player; deck: HistoricalEvent[] };
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
   animationPhase: AnimationPhase;

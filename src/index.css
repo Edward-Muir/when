@@ -123,8 +123,13 @@ body {
        dealt in or thrown out passes under the buttons and never over the pass count. */
     position: relative;
     z-index: 7;
+    /* Down by the hand card's overlap. The grid's row is the card's height and the card stands
+       `--hand-overlap` over the bar's top edge, so a column centred on the card sat that much
+       too high in the bar: the pass count nearly touched the line while the space under
+       "Cycle" went spare. This centres the buttons in the bar itself. */
+    top: var(--hand-overlap);
   }
-  /* Below 360px the column is narrower than the padding plus a 44px button (68px at 320), so
+  /* Below 360px the column is narrower than the padding plus a 44px button (73px at 320), so
      the buttons give up 8px of their clearance and sit on the fan's outer corner. They are
      above the cards, so nothing is hidden but a sliver of the deepest one. */
   @media (max-width: 359px) {
@@ -423,7 +428,7 @@ body {
   --board-gutter: 6rem; /* w-24 */
   --board-gap: 0.75rem; /* pl-3 */
   /* The card in hand, a square. Must match SQUARE_CARD_CLASS in cardSize.ts. */
-  --hand-card: 184px;
+  --hand-card: 174px;
   /* How far the hand card stands above the hand bar's top edge (see `.hand-bar`). */
   --hand-overlap: 8px;
   /* The Pass and Swap buttons beside the hand, and a card of the deck pile opposite them. Both
@@ -436,7 +441,7 @@ body {
   --board-inset: calc(50% - var(--board-col) / 2);
 }
 
-/* Below 360px the columns beside the hand card are 68px wide, which the larger button and the
+/* Below 360px the columns beside the hand card are 73px wide, which the larger button and the
    larger pile do not fit, so both keep the sizes they began at. After the `:root` block above
    on purpose: the two have the same specificity, so the later one wins. */
 @media (max-width: 359px) {

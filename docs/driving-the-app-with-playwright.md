@@ -86,7 +86,7 @@ await page.waitForTimeout(2500);
 The app has almost **no `data-testid`s**, so rely on these stable handles:
 
 - **Active card (the drag handle):** `div.cursor-grab` (first match). Its
-  `innerText` (first line) is the event's `friendly_name`. It is a 184px square in the middle of the screen; once lifted
+  `innerText` (first line) is the event's `friendly_name`. It is a 174px square in the middle of the screen; once lifted
   it is `invisible` in the hand and the drag overlay is the landscape card, centred on the
   pointer.
 - **Placed timeline markers:** `[data-timeline-year]`. The attribute value is
@@ -109,6 +109,11 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   a passed card on its way out is `[data-testid="passed-card"]` for about 0.4 s. Both buttons
   are disabled during a drag and while a placement animates. The cards fanned behind the top
   one are `[data-hand-fan]`.
+- **The hand shows the next card as soon as a card is dropped**, not when the placement
+  settles. For the 0.6 s of a correct placement, and the 1.3 to 2.1 s of a miss, the top hand
+  card is the next one but locked: its handle is `div.cursor-not-allowed`, not
+  `div.cursor-grab`, and a tap on it does nothing. Wait for `div.cursor-grab` before the next
+  drag, and read the card's name before the drop if the script needs the one just played.
 - **The deck pile** is `[data-testid="deck-pile"]`, under the bottom-left counter. Its text is
   the cards left to draw, or `30+` above thirty, and a drawn card's first frame sits on it.
   Its tiles are `[data-testid="deck-card"]`, the next card first.

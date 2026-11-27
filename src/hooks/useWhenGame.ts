@@ -141,6 +141,7 @@ function applyTurnUpdate(
     players: update.players,
     deck: update.deck,
     winners: update.winners,
+    settling: undefined,
     isAnimating: false,
     animationPhase: null,
     ...(deferTurn ? {} : turn),
@@ -344,7 +345,15 @@ export function useWhenGame(): UseWhenGameReturn {
 
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
-      saveDailyPlacement(state, activeCard, insertionIndex, result, difficultyIndex);
+      const settled = saveDailyPlacement(
+        state,
+        activeCard,
+        insertionIndex,
+        result,
+        difficultyIndex
+      );
+      // What the hand bar shows until the turn commits: see `WhenGameState.settling`.
+      const settling = settled ? { player: settled.players[0], deck: settled.deck } : undefined;
 
       // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
       // the tombstone reveal + miss banner instead of a blocking popup.
@@ -366,6 +375,7 @@ export function useWhenGame(): UseWhenGameReturn {
         setState((prev) => ({
           ...prev,
           timeline: newTimeline,
+          settling,
           isAnimating: true,
           animationPhase: 'flash',
           placementHistory: [...prev.placementHistory, true],
@@ -392,6 +402,7 @@ export function useWhenGame(): UseWhenGameReturn {
         setState((prev) => ({
           ...prev,
           timeline: tempTimeline,
+          settling,
           isAnimating: true,
           animationPhase: 'flash',
           placementHistory: [...prev.placementHistory, false],

@@ -53,7 +53,7 @@ interface HandDragOverlayProps {
  * What the player carries: one card that changes shape, never two cards swapping.
  *
  * The hand shows a square painting; the board takes landscape rows. The landscape card's art is
- * 70% of its width: 168px at phone size against the square's 184, so the painting eases to
+ * 70% of its width: 168px at phone size against the square's 174, so the painting eases to
  * the row's width as the frame closes. Everything here is a function of one number, `morph`:
  *
  *  - the frame closes from the square to the landscape box, centred on the finger;

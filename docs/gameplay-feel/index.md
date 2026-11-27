@@ -317,6 +317,26 @@ included. The rules are `processPass` in `placementLogic.ts` and the helpers bes
 - **The throw is a ghost, not an `AnimatePresence` exit.** The top card's element also
   unmounts on a swap and on every placement, and an exiting `DraggableCard` would register the
   drag id twice. It animates transform only.
+- **The hand moves with the placement, not after it** (`WhenGameState.settling`, `handOnShow`
+  in `Game.tsx`). The engine still commits a turn when its animation ends: 0.6 s after a
+  correct drop, 1.3 to 2.1 s after a miss. The hand bar used to wait for that commit, so a
+  placement read as flash, pause, then draw, and the maintainer asked for one movement. Now
+  `placeCard` works out the settled state the moment the card is dropped
+  (`settleDailyPlacement`, the function the daily save already used for exactly that) and the
+  bar shows its hand and deck at once: the new card is on its way from the pile 44 ms after
+  the drop and in place by about 330 ms, inside the green flash. A miss shows the next card
+  straight away. Three things to keep:
+  - **It is display only.** `players` and `deck` hold the real state until the commit, and
+    input stays locked until then: the shown card cannot be dragged, Pass and Cycle are
+    disabled, and a tap on the card is ignored, because `onCardTap` would open the engine's
+    active card, which is still the one just played.
+  - **The preview must equal the commit**, or the hand would visibly change twice.
+    `useWhenGame.settling.test.ts` pins that through hits, misses and catch-up draws.
+  - **No preview in multiplayer, or when the placement empties the hand.** Those keep the old
+    behaviour: the top card stays hidden until the turn commits (`topHidden`).
+    The lock itself is the next thing a player waits on, most of all after a miss. Lifting it
+    means letting a second placement start while the first is still animating, which is an
+    engine change and was not attempted.
 - **A drawn card is dealt from the deck pile**, on a pass and on a correct placement alike. The
   pile is `DeckPile` in the hand bar's left panel (`PlayerInfo.tsx`); the card starts on it,
   the pile's size, and springs to its place in the hand in about a third of a second.

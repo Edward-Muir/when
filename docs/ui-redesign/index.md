@@ -10,7 +10,7 @@ Full-width vertical stack:
 (no top bar: the root is `pt-safe` and the board starts under the status bar)
 Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
   └ GameHud (floating, z-[34]): the wordmark with the theme under it top-left, Home top-right, light/dark under Home
-Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-safe) — counter, hand card, swap button
+Bottom bar (`hand-bar`: 174px, which the 174px hand card stands 8px over, pb-safe) — counter, hand card, swap button
 ```
 
 - **A game has no top bar and no menu.** The bar cost the timeline 56px plus the inset, so it
@@ -49,16 +49,17 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
 
 - **Cards have two shapes**, and `src/utils/cardSize.ts` is the one place their sizes are
   written. Landscape on the timeline (240×80 on a phone, 280×96 from `sm`; art across the left
-  70%, title on the right); a 184px square in the hand. A smaller 228×70 timeline card and a
+  70%, title on the right); a 174px square in the hand. A smaller 228×70 timeline card and a
   140px hand card were both tried and reverted. The hand card was 168px, exactly the width of
   the landscape card's painting, until the maintainer asked for it a tenth larger; a dragged
-  card's painting now eases down 16px as it opens, which `HandDragOverlay` interpolates. The
+  card's painting eased down 16px as it opened, which `HandDragOverlay` interpolates. It came
+  back to 174px (0.95×, a 6px ease) when 184px crowded the controls beside it. The
   bar did not grow with it: the card keeps 8px below and stands 8px over the bar's top edge
   (`--hand-overlap`), across the line between the hand and the timeline, so the timeline
   lost no height. The "Later" label and the hint strip moved from 8px to 16px above the bar
   to clear the card and the fan's corners, and a tucked hand drops by the overlap plus 8px so no
   sliver shows above the edge. The
-  larger card leaves 68px a side at 320px wide, so below 360px the hand buttons give up 8px
+  card leaves 73px a side at 320px wide, so below 360px the hand buttons give up 8px
   of clearance and sit on the fan's outer corner (`.hand-swap` in `index.css`).
 - **The hand bar's left panel is two counters and the deck.** One row holds the timeline
   length and, beside it, the streak, always shown and starting at 0 (it was hidden at zero
@@ -71,6 +72,12 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   the panel already shows the cards, and five things in a 100px column read as clutter. A
   hand of more than five (Custom only) therefore shows no count on the bar; the stats popup
   still has it. Don't bring the number back without asking.
+- **The buttons are centred in the bar, not on the hand card.** The grid's row is the card's
+  height and the card stands 8px over the bar's top edge, so a column centred on the card sat
+  8px high in the bar: the pass count nearly touched the line while space went spare under
+  "Cycle". `.hand-swap` is moved down by `--hand-overlap`, which leaves 9px above the Pass
+  button and 9px below the "Cycle" name. The left panel was left alone: its top is a 44px tap
+  area with small text in the middle of it, so it already reads as balanced.
 - **Each hand control is named under it**: "Pass", "Cycle" and, opposite, "Deck", capitalised,
   in one type. The maintainer asked for the names because a returning player has already
   been through the hints and had no way to tell what the new Pass button did; the one-shot
@@ -96,7 +103,7 @@ Bottom bar (`hand-bar`: 184px, which the 184px hand card stands 8px over, pb-saf
   deck's next three cards as 56px tiles, each stepping 3px down and left of the one above,
   with the count on a gold badge at the pile's top right corner, the same accent as the pass
   count; an ink badge was tried and read as black, outside the theme): about 148px of the
-  card's 184 with the counter row above it and the "Deck" caption below. The count was first a plate over the top tile, on a 30px
+  card's 174 with the counter row above it and the "Deck" caption below. The count was first a plate over the top tile, on a 30px
   tile straight below one another; it hid most of the art, and the maintainer asked for the
   corner badge, the larger tiles and the down-left step. The counter used
   to sit in a 96px box matching the year gutter, with the hand card on the timeline cards' left

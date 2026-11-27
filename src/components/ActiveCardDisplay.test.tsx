@@ -174,6 +174,34 @@ describe('the pass button', () => {
   });
 });
 
+describe('the top card while a placement animates', () => {
+  // The drag handle is the element carrying dnd-kit's attributes; its parent is what hides.
+  const handle = () => screen.getByRole('button', { name: /^a$/ });
+
+  it('is shown, when the hand given is already the one the turn settles into', () => {
+    setup({ isAnimating: true });
+    // eslint-disable-next-line testing-library/no-node-access -- the wrapper is what hides
+    expect(handle().parentElement).not.toHaveClass('invisible');
+  });
+
+  it('is hidden when it is the card just played', () => {
+    setup({ isAnimating: true, topHidden: true });
+    // eslint-disable-next-line testing-library/no-node-access -- the wrapper is what hides
+    expect(handle().parentElement).toHaveClass('invisible');
+  });
+
+  it('ignores a tap until the turn commits, then answers one', () => {
+    const onCardTap = jest.fn();
+    const { rerender } = setup({ isAnimating: true, onCardTap });
+    fireEvent.click(handle());
+    expect(onCardTap).not.toHaveBeenCalled();
+
+    rerender({ isAnimating: false, onCardTap });
+    fireEvent.click(handle());
+    expect(onCardTap).toHaveBeenCalledTimes(1);
+  });
+});
+
 describe('the pass ring', () => {
   const ring = () => screen.getByTestId('pass-ring');
   const lit = () =>

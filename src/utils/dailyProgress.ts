@@ -253,8 +253,11 @@ export function resumeDailyProgress(
 }
 
 /**
- * `placeCard`'s entry point: save where a daily placement will settle, at the moment the card
- * is dropped. A no-op for any other game.
+ * `placeCard`'s entry point, at the moment the card is dropped: work out where a single-player
+ * placement will settle, save it if this is the daily, and hand it back. Null in multiplayer.
+ *
+ * The caller shows the settled hand and deck straight away (`WhenGameState.settling`), in
+ * every mode, which is why this no longer returns nothing and no longer stops at the daily.
  */
 export function saveDailyPlacement(
   state: WhenGameState,
@@ -262,10 +265,11 @@ export function saveDailyPlacement(
   insertionIndex: number,
   result: PlacementResult,
   index: DifficultyIndex
-): void {
-  if (state.gameMode !== 'daily' || state.players.length !== 1) return;
+): WhenGameState | null {
+  if (state.players.length !== 1) return null;
   const settled = settleDailyPlacement(state, activeCard, insertionIndex, result, index);
-  saveDailyProgress(buildDailyProgressSnapshot(settled));
+  if (state.gameMode === 'daily') saveDailyProgress(buildDailyProgressSnapshot(settled));
+  return settled;
 }
 
 /**
@@ -274,7 +278,8 @@ export function saveDailyPlacement(
  * `placeCard` reaches the same state through timers, but a miss shows the card's true position
  * about a second before it settles. Saving only the settled state would let a player who sees
  * that and closes the app take the move back, so `placeCard` saves this the moment the card is
- * dropped. Mirrors the single-player steps of both timer paths in `useWhenGame.placeCard`; a
+ * dropped. The same state is what the hand bar shows while the placement animates, in every
+ * mode: the next card arrives with the flash, not after it. Mirrors the single-player steps of both timer paths in `useWhenGame.placeCard`; a
  * change to either belongs in both.
  */
 export function settleDailyPlacement(
