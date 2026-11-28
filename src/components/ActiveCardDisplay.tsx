@@ -7,6 +7,7 @@ import { GameHintKey } from '../utils/playerStorage';
 import { PASS_STREAK, passProgress, passesAwarded, passesLeft } from '../utils/gameLogic';
 import { useHaptics } from '../hooks/useHaptics';
 import DraggableCard from './DraggableCard';
+import HandBadge, { COUNT_PILL } from './HandBadge';
 import Card from './Card';
 
 /** `drag` bobs the top card; `tapCard` glows it. Same wrapper either way. */
@@ -361,9 +362,7 @@ const PassBadge: React.FC<{ count: number; still: boolean }> = ({ count, still }
       // Firm enough that the rebound stays near full size: a looser spring shrank the badge
       // to a dot on its way back.
       transition={{ type: 'spring', stiffness: 520, damping: 24 }}
-      className={`pointer-events-none absolute -top-1 right-0 z-[1] flex h-4 min-w-4 items-center
-        justify-center rounded-full px-1 font-body text-[10px] font-semibold leading-none
-        ring-2 ring-bg ${tone}`}
+      className={`pointer-events-none absolute -top-1 right-0 z-[1] ${COUNT_PILL} ${tone}`}
     >
       {count}
     </motion.span>
@@ -589,6 +588,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
             <Card event={thrown} size="square" priority />
           </motion.div>
         )}
+        <HandBadge count={currentPlayer.hand.length} />
       </div>
 
       {/* Pass and, below it, Cycle: beside the card, never on it, so they cover neither art nor

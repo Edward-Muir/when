@@ -39,8 +39,8 @@ const Support: React.FC = () => (
       </p>
       <p className={`${answerClass} mt-2`}>
         Stuck on a card? Pass it: the card is discarded and you draw another. You start each game
-        with three passes, and every three correct in a row earns one more. On a curated theme, a
-        game with a pass cannot count as clearing the theme.
+        with one pass, and every three correct in a row earns one more. On a curated theme, a game
+        with a pass cannot count as clearing the theme.
       </p>
     </div>
 

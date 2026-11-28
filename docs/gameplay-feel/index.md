@@ -275,7 +275,7 @@ at struggle > 0.
 
 A player holding a card they cannot place had no move but to guess. The pass gives them one:
 the button above Swap discards the top card unplayed and draws another in its place. Every player starts a
-game with three (`STARTING_PASSES`) and earns one more each time a run of correct placements
+game with one (`STARTING_PASSES`; it was three until 2026-11-27, when the maintainer cut it) and earns one more each time a run of correct placements
 reaches a multiple of three (`PASS_STREAK`), with no cap. It runs in every mode, the Daily
 included. The rules are `processPass` in `placementLogic.ts` and the helpers beside
 `STARTING_PASSES` in `gameLogic.ts`.

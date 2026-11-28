@@ -334,7 +334,9 @@ describe('a daily with passes', () => {
     restoreDailyProgress(buildDailyProgressSnapshot(state), DECK, CONFIG);
 
   it('saves the cards passed, in order', () => {
-    const snapshot = buildDailyProgressSnapshot(pass(pass(dealt())));
+    // A run of three has earned a second pass.
+    const seat = { ...dealt().players[0], placementHistory: [true, true, true] };
+    const snapshot = buildDailyProgressSnapshot(pass(pass(dealt({ players: [seat] }))));
     // The second pass discards the card the first one drew.
     expect(snapshot!.passed).toEqual(['h1', 'd1']);
     expect(snapshot!.hand).toEqual(['d2', 'h2', 'h3']);
@@ -387,7 +389,11 @@ describe('a daily with passes', () => {
     const filler = Array.from({ length: 24 }, (_, i) => event(`f${i}`, 2000 + i * 3));
     const long = [...DECK, ...filler];
     let state = dealt({ deck: long.slice(4) });
-    const moves = ['pass', 'hit', 'pass', 'miss', 'hit', 'pass', 'hit', 'hit'] as const;
+    // Each pass after the first is earned by the three hits before it.
+    const moves = [
+      ...['pass', 'hit', 'hit', 'hit', 'pass', 'miss'],
+      ...['hit', 'hit', 'hit', 'pass', 'hit'],
+    ] as ('pass' | 'hit' | 'miss')[];
     /** Where the top card belongs, or a slot where it does not. */
     const slot = (current: WhenGameState, right: boolean) => {
       const { timeline } = current;
